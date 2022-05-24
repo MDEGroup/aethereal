@@ -42,8 +42,10 @@ public class LibraryMigration {
 	private AetherDownloader dowloader = new AetherDownloader(4);
 	private static String MAVEN_FOLDER = "temp";
 	private static String OUTPUT_FOLDER = "generate_strings";
+	private static String INPUT_FILE = "result_client";
 	
-	public LibraryMigration(String mavenFolder, String outPutFolder) {
+	public LibraryMigration(String inputFile, String mavenFolder, String outPutFolder) {
+		INPUT_FILE = inputFile;
 		MAVEN_FOLDER = mavenFolder;
 		OUTPUT_FOLDER = outPutFolder;
 	}
@@ -62,7 +64,7 @@ public class LibraryMigration {
 	}
 
 	public void run() {
-		try (LineIterator it = FileUtils.lineIterator(Paths.get("result_client").toFile(), "UTF-8")) {
+		try (LineIterator it = FileUtils.lineIterator(Paths.get(INPUT_FILE).toFile(), "UTF-8")) {
 			while (it.hasNext()) {
 				try {
 					// Each line in the form "source","target"
@@ -154,6 +156,8 @@ public class LibraryMigration {
 		HelpFormatter formatter = new HelpFormatter();
 
 		Options opts = new Options()
+				.addOption(Option.builder("input_file").desc("The csv input file").hasArg()
+						.argName("input_file").build())
 				.addOption(Option.builder("maven_folder").desc("A temporary folder to store the maven repository").hasArg()
 						.argName("maven_folder").build())
 				.addOption(Option.builder("output_folder").desc("An existing folder to store the json file coming fron the analysis").hasArg()
@@ -162,7 +166,7 @@ public class LibraryMigration {
 		CommandLine cmd;
 		try {
 			cmd = parser.parse(opts, args);
-			LibraryMigration lm = new LibraryMigration(cmd.getOptionValue("maven_folder", MAVEN_FOLDER), cmd.getOptionValue("output_folder", OUTPUT_FOLDER));
+			LibraryMigration lm = new LibraryMigration(cmd.getOptionValue("input_file", INPUT_FILE), cmd.getOptionValue("maven_folder", MAVEN_FOLDER), cmd.getOptionValue("output_folder", OUTPUT_FOLDER));
 			lm.run();
 		} catch (ParseException e) {
 			System.err.println(e.getMessage());
