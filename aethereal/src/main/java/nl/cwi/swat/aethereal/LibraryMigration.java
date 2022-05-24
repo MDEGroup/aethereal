@@ -64,14 +64,16 @@ public class LibraryMigration {
 	}
 
 	public void run() {
+		String c1 = "";
+		String c2 = "";
 		try (LineIterator it = FileUtils.lineIterator(Paths.get(INPUT_FILE).toFile(), "UTF-8")) {
 			while (it.hasNext()) {
 				try {
 					// Each line in the form "source","target"
 					String line = it.nextLine();
 					String[] fields = line.split(",");
-					String c1 = fields[0];
-					String c2 = fields[1];
+					c1 = fields[0];
+					c2 = fields[1];
 					List<String> libRemoved = Arrays.asList(fields[2].split(" "));
 					List<String> libAdded = Arrays.asList(fields[3].split(" "));
 					Set<String> libAddedNoVers = libAdded.stream().map(z -> z.substring(0, z.lastIndexOf(":")))
@@ -95,7 +97,8 @@ public class LibraryMigration {
 					serialize(migrationTuples, c1, c2);
 					System.out.println(String.format("%s vs %s", c1, c2));
 				} catch (Exception e) {
-
+					System.err.println(e.getMessage());
+					System.err.println(String.format("Skip %s - %s migration pair. This exception does not block the mining process", c1, c2));
 				}
 				break;
 			}
