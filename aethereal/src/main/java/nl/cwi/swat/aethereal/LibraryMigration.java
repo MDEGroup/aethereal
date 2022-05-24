@@ -100,7 +100,6 @@ public class LibraryMigration {
 					System.err.println(e.getMessage());
 					System.err.println(String.format("Skip %s - %s migration pair. This exception does not block the mining process", c1, c2));
 				}
-				break;
 			}
 		} catch (IOException e) {
 			e.printStackTrace();
