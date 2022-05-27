@@ -3,6 +3,7 @@ package nl.cwi.swat.aethereal;
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
@@ -27,6 +28,8 @@ import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.LineIterator;
 import org.eclipse.aether.artifact.Artifact;
 import org.eclipse.aether.artifact.DefaultArtifact;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import com.google.common.collect.Multimap;
 import com.google.gson.Gson;
@@ -38,12 +41,13 @@ import nl.cwi.swat.aethereal.rascal.RascalM3;
 
 public class LibraryMigration {
 	private RascalM3 extractorM3 = new RascalM3();
+	private static Logger LOGGER = LoggerFactory.getLogger(LibraryMigration.class);
 
 	private AetherDownloader dowloader = new AetherDownloader(4);
 	private static String MAVEN_FOLDER = "temp";
 	private static String OUTPUT_FOLDER = "generate_strings";
-	private static String INPUT_FILE = "result_client";
-	
+	private static String INPUT_FILE = "result_client.csv";
+
 	public LibraryMigration(String inputFile, String mavenFolder, String outPutFolder) {
 		INPUT_FILE = inputFile;
 		MAVEN_FOLDER = mavenFolder;
@@ -74,6 +78,10 @@ public class LibraryMigration {
 					String[] fields = line.split(",");
 					c1 = fields[0];
 					c2 = fields[1];
+					if (Files.exists(Paths.get(OUTPUT_FOLDER, String.format("%s_MYSEP_%s.json", c1, c2)))) {
+						LOGGER.info(String.format("ALREADY EXISTS %s_MYSEP_%s.json", c1, c2));
+						continue;
+					}
 					List<String> libRemoved = Arrays.asList(fields[2].split(" "));
 					List<String> libAdded = Arrays.asList(fields[3].split(" "));
 					Set<String> libAddedNoVers = libAdded.stream().map(z -> z.substring(0, z.lastIndexOf(":")))
@@ -95,10 +103,10 @@ public class LibraryMigration {
 					migrationTuples.addAll(mineLib(libA, c1, c2, ChangeType.ADDED));
 					migrationTuples.addAll(mineLib(libU, c1, c2, ChangeType.UPDATED));
 					serialize(migrationTuples, c1, c2);
-					System.out.println(String.format("%s vs %s", c1, c2));
+					LOGGER.info(String.format("%s vs %s", c1, c2));
 				} catch (Exception e) {
-					System.err.println(e.getMessage());
-					System.err.println(String.format("Skip %s - %s migration pair. This exception does not block the mining process", c1, c2));
+					LOGGER.error(String.format(
+							"Skip %s - %s migration pair. This exception does not block the mining process: %s", c1, c2, e.getMessage()));
 				}
 			}
 		} catch (IOException e) {
@@ -154,27 +162,30 @@ public class LibraryMigration {
 	}
 
 	public static void main(String[] args) {
-		
+
 		HelpFormatter formatter = new HelpFormatter();
 
 		Options opts = new Options()
-				.addOption(Option.builder("input_file").desc("The csv input file").hasArg()
-						.argName("input_file").build())
-				.addOption(Option.builder("maven_folder").desc("A temporary folder to store the maven repository").hasArg()
-						.argName("maven_folder").build())
-				.addOption(Option.builder("output_folder").desc("An existing folder to store the json file coming fron the analysis").hasArg()
+				.addOption(
+						Option.builder("input_file").desc("The csv input file").hasArg().argName("input_file").build())
+				.addOption(Option.builder("maven_folder").desc("A temporary folder to store the maven repository")
+						.hasArg().argName("maven_folder").build())
+				.addOption(Option.builder("output_folder")
+						.desc("An existing folder to store the json file coming fron the analysis").hasArg()
 						.argName("output_folder").build());
 		CommandLineParser parser = new DefaultParser();
 		CommandLine cmd;
 		try {
 			cmd = parser.parse(opts, args);
-			LibraryMigration lm = new LibraryMigration(cmd.getOptionValue("input_file", INPUT_FILE), cmd.getOptionValue("maven_folder", MAVEN_FOLDER), cmd.getOptionValue("output_folder", OUTPUT_FOLDER));
+			LibraryMigration lm = new LibraryMigration(cmd.getOptionValue("input_file", INPUT_FILE),
+					cmd.getOptionValue("maven_folder", MAVEN_FOLDER),
+					cmd.getOptionValue("output_folder", OUTPUT_FOLDER));
 			lm.run();
 		} catch (ParseException e) {
-			System.err.println(e.getMessage());
+			LOGGER.error(e.getMessage());
 			formatter.printHelp("aethereal", opts);
 		}
-		
+
 	}
 
 	public Map<String, String> getMDsContainingMIs(Multimap<String, String> libMD_MI, Set<String> usedMI) {
@@ -192,10 +203,8 @@ public class LibraryMigration {
 		AtomicInteger count = new AtomicInteger(0);
 		Path p = Paths.get(filePath);
 		if (p.toFile().isFile() && p.toString().endsWith(".jar") && !p.toString().contains("-sources")) {
-			// && !Paths.get(p.toAbsolutePath().toString() + ".m3").toFile().exists()) {
 			String jar = p.toAbsolutePath().toString();
 			String dest = p.toAbsolutePath().toString() + ".m3";
-//			System.out.println("Building M3 model for" + count.incrementAndGet() + jar);
 			IValue m3model = null;
 			if (Paths.get(jar + ".m3").toFile().exists())
 				m3model = extractorM3.deserializeM3(jar);
