@@ -20,6 +20,8 @@ import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.LineIterator;
 import org.eclipse.aether.artifact.Artifact;
 import org.eclipse.aether.artifact.DefaultArtifact;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import com.google.common.collect.ArrayListMultimap;
 import com.google.common.collect.Lists;
@@ -37,6 +39,7 @@ public class LocalCollector implements MavenCollector {
 	private static final String LINKS_FILE = DATASET_PATH + "links_all.csv";
 	private static final String RELEASE_FILE = DATASET_PATH + "release_all.csv";
 	private static final String REMOTE_DATASET = "https://zenodo.org/record/1489120/files/maven-data.csv.tar.xz";
+	private static Logger LOGGER = LoggerFactory.getLogger(AetherCollector.class);
 
 
 	public LocalCollector() {
@@ -47,7 +50,7 @@ public class LocalCollector implements MavenCollector {
 	public List<Artifact> collectAvailableVersions(String coordinates) {
 		List<Artifact> ret = new ArrayList<>();
 
-		System.out.println("Looking for {} versions in {}"+ coordinates+ VERSIONS_FILE);
+		LOGGER.info("Looking for {} versions in {}", coordinates, VERSIONS_FILE);
 		try (LineIterator it = FileUtils.lineIterator(Paths.get(VERSIONS_FILE).toFile(), "UTF-8");
 				LineIterator it2 = FileUtils.lineIterator(Paths.get(RELEASE_FILE).toFile(), "UTF-8");) {
 			while (it.hasNext()) {
@@ -80,7 +83,7 @@ public class LocalCollector implements MavenCollector {
 //			}
 			return ret;
 		} catch (IOException e) {
-			System.err.println("Couldn't read {}"+VERSIONS_FILE+ e);
+			LOGGER.error("Couldn't read {}"+VERSIONS_FILE+ e);
 			return Lists.newArrayList();
 		}
 	}
@@ -94,7 +97,7 @@ public class LocalCollector implements MavenCollector {
 	public List<Artifact> collectClientsOf(Artifact artifact) {
 		List<Artifact> ret = new ArrayList<>();
 
-		System.out.println("Looking for clients of {} in {}"+artifact+ LINKS_FILE);
+		LOGGER.info("Looking for clients of {} in {}"+artifact+ LINKS_FILE);
 		try (LineIterator it = FileUtils.lineIterator(Paths.get(LINKS_FILE).toFile(), "UTF-8");
 				LineIterator it2 = FileUtils.lineIterator(Paths.get(RELEASE_FILE).toFile(), "UTF-8");) {
 			while (it.hasNext()) {
@@ -121,7 +124,7 @@ public class LocalCollector implements MavenCollector {
 
 			return ret;
 		} catch (IOException e) {
-			System.err.println("Couldn't read {}"+ LINKS_FILE+ e);
+			LOGGER.error("Couldn't read {}", LINKS_FILE+ e);
 			return Lists.newArrayList();
 		}
 	}
@@ -130,7 +133,7 @@ public class LocalCollector implements MavenCollector {
 	public Multimap<Artifact, Artifact> collectClientsOf(String coordinates) {
 		Multimap<Artifact, Artifact> ret = ArrayListMultimap.create();
 
-		System.out.println("Looking for clients of any version of {} in {}"+ coordinates+ LINKS_FILE);
+		LOGGER.info("Looking for clients of any version of {} in {}", coordinates, LINKS_FILE);
 		try (LineIterator it = FileUtils.lineIterator(Paths.get(LINKS_FILE).toFile(), "UTF-8")) {
 			while (it.hasNext()) {
 				// Each line in the form "source","target","scope"
@@ -147,7 +150,7 @@ public class LocalCollector implements MavenCollector {
 
 			return ret;
 		} catch (IOException e) {
-			System.err.println("Couldn't read {}"+ LINKS_FILE+ e);
+			LOGGER.error("Couldn't read {}", LINKS_FILE+ e);
 			return null;
 		}
 	}
@@ -163,7 +166,7 @@ public class LocalCollector implements MavenCollector {
 			return;
 		}
 
-		System.err.println("Couldn't find the Maven Dependency Graph. I will download and extract it for you (~1.1GB).");
+		LOGGER.error("Couldn't find the Maven Dependency Graph. I will download and extract it for you (~1.1GB).");
 
 		try {
 //			System.err.println("Downloading archive from {} to {}"+ REMOTE_DATASET+ DATASET_PATH);
@@ -181,21 +184,21 @@ public class LocalCollector implements MavenCollector {
 						try (OutputStream o = Files.newOutputStream(Paths.get(LINKS_FILE))) {
 							IOUtils.copy(arch, o);
 						} catch (IOException e) {
-							System.err.println("Couldn't write destination file"+ e);
+							LOGGER.error("Couldn't write destination file"+ e);
 						}
 					} else if (entry.getName().equals("maven-data.csv/next_all.csv")) {
 						try (OutputStream o = Files.newOutputStream(Paths.get(VERSIONS_FILE))) {
 							IOUtils.copy(arch, o);
 						} catch (IOException e) {
-							System.err.println("Couldn't write destination file"+ e);
+							LOGGER.error("Couldn't write destination file"+ e);
 						}
 					}
 				}
 			} catch (IOException e) {
-				System.err.println("Couldn't extract dataset archive"+ e);
+				LOGGER.error("Couldn't extract dataset archive"+ e);
 			}
 		} catch (IOException e) {
-			System.err.println("Couldn't extract dataset archive"+ e);
+			LOGGER.error("Couldn't extract dataset archive"+ e);
 		}
 	}
 
@@ -205,7 +208,7 @@ public class LocalCollector implements MavenCollector {
 
 	@Override
 	public boolean checkArtifact(String coordinate) {
-		System.out.println("Looking for {} version in {}"+ coordinate+ VERSIONS_FILE);
+		LOGGER.info("Looking for {} version in {}", coordinate, VERSIONS_FILE);
 		try (LineIterator it = FileUtils.lineIterator(Paths.get(VERSIONS_FILE).toFile(), "UTF-8")) {
 			while (it.hasNext()) {
 				// Each line in the form "source","target"
@@ -218,7 +221,7 @@ public class LocalCollector implements MavenCollector {
 			}
 			return false;
 		} catch (IOException e) {
-			System.err.println("Couldn't read {}"+ VERSIONS_FILE+ e);
+			LOGGER.error("Couldn't read {}",VERSIONS_FILE+ e);
 			return false;
 		}
 	}
