@@ -1,0 +1,144 @@
+[
+  {
+    "coordinatesV1": "com.softwaremill.reactivekafka:reactive-kafka-core_2.11:0.10.1",
+    "coordinatesV2": "com.softwaremill.reactivekafka:reactive-kafka-core_2.11:0.9.0",
+    "caller": "|java+method:///com/softwaremill/react/kafka/ReactiveKafka/consumeWithOffsetSink(com.softwaremill.react.kafka.ConsumerProperties,akka.actor.ActorSystem)|",
+    "called": "|java+method:///akka/stream/actor/ActorPublisher$/apply(akka.actor.ActorRef)|",
+    "v1Body": [
+      "|java+method:///com/softwaremill/react/kafka/ConsumerWithActor/actor()|",
+      "|java+method:///com/softwaremill/react/kafka/ReactiveKafka$/ConsumerDefaultDispatcher()|",
+      "|java+method:///com/softwaremill/react/kafka/ConsumerProperties/noAutoCommit()|",
+      "|java+method:///com/softwaremill/react/kafka/ReactiveKafka/consumerActorWithConsumer(com.softwaremill.react.kafka.ConsumerProperties,java.lang.String,akka.actor.ActorSystem)|",
+      "|java+method:///com/softwaremill/react/kafka/commit/CommitSink$/create$default$3()|",
+      "|java+constructor:///com/softwaremill/react/kafka/PublisherWithCommitSink/PublisherWithCommitSink(org.reactivestreams.Publisher,akka.actor.ActorRef,com.softwaremill.react.kafka.commit.KafkaSink)|",
+      "|java+method:///akka/stream/actor/ActorPublisher$/apply(akka.actor.ActorRef)|",
+      "|java+method:///com/softwaremill/react/kafka/commit/CommitSink$/create(akka.actor.ActorRef,com.softwaremill.react.kafka.ConsumerProperties,scala.Option,akka.actor.ActorSystem)|"
+    ],
+    "v2Body": [
+      "|java+method:///scala/collection/immutable/Map$/apply(scala.collection.Seq)|",
+      "|java+method:///scala/Predef$/Map()|",
+      "|java+method:///scala/Predef$/Set()|",
+      "|java+method:///com/softwaremill/react/kafka/ReactiveKafka/consumeWithOffsetSink(com.softwaremill.react.kafka.ConsumerProperties,scala.collection.immutable.Set,scala.collection.immutable.Map,akka.actor.ActorSystem)|",
+      "|java+method:///scala/collection/immutable/Set$/apply(scala.collection.Seq)|"
+    ],
+    "affectedLib": "com.typesafe.akka:akka-stream-experimental_2.11:2.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.softwaremill.reactivekafka:reactive-kafka-core_2.11:0.10.1",
+    "coordinatesV2": "com.softwaremill.reactivekafka:reactive-kafka-core_2.11:0.9.0",
+    "caller": "|java+method:///com/softwaremill/react/kafka/ReactiveKafka/consumerActorProps(com.softwaremill.react.kafka.ConsumerProperties)|",
+    "called": "|java+method:///akka/actor/Props$/apply(scala.Function0,scala.reflect.ClassTag)|",
+    "v1Body": [
+      "|java+method:///scala/reflect/ClassTag$/apply(java.lang.Class)|",
+      "|java+method:///akka/actor/Props$/apply(scala.Function0,scala.reflect.ClassTag)|",
+      "|java+constructor:///com/softwaremill/react/kafka/ReactiveKafkaConsumer/ReactiveKafkaConsumer(com.softwaremill.react.kafka.ConsumerProperties)|",
+      "|java+constructor:///com/softwaremill/react/kafka/ReactiveKafka$$anonfun$consumerActorProps$1/ReactiveKafka$$anonfun$consumerActorProps$1(com.softwaremill.react.kafka.ReactiveKafka,com.softwaremill.react.kafka.ReactiveKafkaConsumer)|"
+    ],
+    "v2Body": [
+      "|java+method:///scala/reflect/ClassTag$/apply(java.lang.Class)|",
+      "|java+method:///akka/actor/Props$/apply(scala.Function0,scala.reflect.ClassTag)|",
+      "|java+method:///com/softwaremill/react/kafka/ReactiveKafkaConsumer$/apply(com.softwaremill.react.kafka.ConsumerProperties)|",
+      "|java+constructor:///com/softwaremill/react/kafka/ReactiveKafka$$anonfun$consumerActorProps$1/ReactiveKafka$$anonfun$consumerActorProps$1(com.softwaremill.react.kafka.ReactiveKafka,com.softwaremill.react.kafka.ReactiveKafkaConsumer)|"
+    ],
+    "affectedLib": "com.typesafe.akka:akka-actor_2.11:2.3.14",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.softwaremill.reactivekafka:reactive-kafka-core_2.11:0.9.0",
+    "coordinatesV2": "com.softwaremill.reactivekafka:reactive-kafka-core_2.11:0.10.1",
+    "caller": "|java+constructor:///kafka/producer/ReactiveKafkaProducer/ReactiveKafkaProducer(com.softwaremill.react.kafka.ProducerProperties)|",
+    "called": "|java+constructor:///org/apache/kafka/clients/producer/KafkaProducer/KafkaProducer(java.util.Properties,org.apache.kafka.common.serialization.Serializer,org.apache.kafka.common.serialization.Serializer)|",
+    "v1Body": [
+      "|java+method:///scala/Product$class/$init$(scala.Product)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///scala/Product$class/$init$(scala.Product)|",
+      "|java+method:///com/softwaremill/react/kafka/ProducerProperties/rawProperties()|",
+      "|java+method:///com/softwaremill/react/kafka/ProducerProperties/valueSerializer()|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///com/softwaremill/react/kafka/ProducerProperties/keySerializer()|",
+      "|java+constructor:///org/apache/kafka/clients/producer/KafkaProducer/KafkaProducer(java.util.Properties,org.apache.kafka.common.serialization.Serializer,org.apache.kafka.common.serialization.Serializer)|"
+    ],
+    "affectedLib": "org.apache.kafka:kafka-clients:0.9.0.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.softwaremill.reactivekafka:reactive-kafka-core_2.11:0.9.0",
+    "coordinatesV2": "com.softwaremill.reactivekafka:reactive-kafka-core_2.11:0.10.1",
+    "caller": "|java+method:///com/softwaremill/react/kafka/KafkaActorPublisher/com$softwaremill$react$kafka$KafkaActorPublisher$$getIterator()|",
+    "called": "|java+method:///org/apache/kafka/clients/consumer/ConsumerRecords/iterator()|",
+    "v1Body": [
+      "|java+method:///scala/Some/x()|",
+      "|java+method:///org/apache/kafka/clients/consumer/KafkaConsumer/poll(long)|",
+      "|java+method:///java/lang/Object/equals(java.lang.Object)|",
+      "|java+method:///com/softwaremill/react/kafka/KafkaActorPublisher/pollTimeoutMs()|",
+      "|java+method:///com/softwaremill/react/kafka/KafkaActorPublisher/consumer()|",
+      "|java+method:///com/softwaremill/react/kafka/KafkaActorPublisher/buffer()|",
+      "|java+constructor:///scala/MatchError/MatchError(java.lang.Object)|",
+      "|java+method:///org/apache/kafka/clients/consumer/ConsumerRecords/iterator()|"
+    ],
+    "v2Body": [
+      "|java+method:///scala/Some/x()|",
+      "|java+method:///com/softwaremill/react/kafka/KafkaActorPublisher/closed()|",
+      "|java+method:///java/lang/Object/equals(java.lang.Object)|",
+      "|java+method:///org/apache/kafka/clients/consumer/Consumer/poll(long)|",
+      "|java+method:///scala/collection/Iterator$/empty()|",
+      "|java+method:///com/softwaremill/react/kafka/KafkaActorPublisher/pollTimeoutMs()|",
+      "|java+method:///com/softwaremill/react/kafka/KafkaActorPublisher/consumer()|",
+      "|java+method:///com/softwaremill/react/kafka/KafkaActorPublisher/buffer()|",
+      "|java+constructor:///scala/MatchError/MatchError(java.lang.Object)|",
+      "|java+method:///org/apache/kafka/clients/consumer/ConsumerRecords/iterator()|",
+      "|java+method:///scala/package$/Iterator()|",
+      "|java+method:///scala/collection/JavaConversions$/asScalaIterator(java.util.Iterator)|"
+    ],
+    "affectedLib": "org.apache.kafka:kafka-clients:0.9.0.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.softwaremill.reactivekafka:reactive-kafka-core_2.11:0.9.0",
+    "coordinatesV2": "com.softwaremill.reactivekafka:reactive-kafka-core_2.11:0.10.1",
+    "caller": "|java+method:///com/softwaremill/react/kafka/KafkaActorSubscriber/com$softwaremill$react$kafka$KafkaActorSubscriber$$processElement(com.softwaremill.react.kafka.ProducerMessage)|",
+    "called": "|java+constructor:///org/apache/kafka/clients/producer/ProducerRecord/ProducerRecord(java.lang.String,java.lang.Integer,java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///scala/Some/x()|",
+      "|java+method:///java/lang/Object/equals(java.lang.Object)|",
+      "|java+method:///kafka/producer/ReactiveKafkaProducer/props()|",
+      "|java+method:///com/softwaremill/react/kafka/ProducerMessage/key()|",
+      "|java+method:///com/softwaremill/react/kafka/KafkaActorSubscriber/richProducer()|",
+      "|java+method:///com/softwaremill/react/kafka/ProducerProperties/partitionizer()|",
+      "|java+method:///kafka/producer/ReactiveKafkaProducer/producer()|",
+      "|java+method:///org/apache/kafka/clients/producer/KafkaProducer/send(org.apache.kafka.clients.producer.ProducerRecord)|",
+      "|java+method:///com/softwaremill/react/kafka/ProducerMessage/value()|",
+      "|java+method:///scala/runtime/BoxesRunTime/unboxToInt(java.lang.Object)|",
+      "|java+constructor:///scala/MatchError/MatchError(java.lang.Object)|",
+      "|java+constructor:///org/apache/kafka/clients/producer/ProducerRecord/ProducerRecord(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///scala/Predef$/int2Integer(int)|",
+      "|java+constructor:///org/apache/kafka/clients/producer/ProducerRecord/ProducerRecord(java.lang.String,java.lang.Integer,java.lang.Object,java.lang.Object)|",
+      "|java+method:///com/softwaremill/react/kafka/ProducerProperties/topic()|",
+      "|java+method:///scala/Function1/apply(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///scala/Some/x()|",
+      "|java+method:///java/lang/Object/equals(java.lang.Object)|",
+      "|java+method:///kafka/producer/ReactiveKafkaProducer/props()|",
+      "|java+method:///com/softwaremill/react/kafka/KafkaActorSubscriber/richProducer()|",
+      "|java+constructor:///com/softwaremill/react/kafka/KafkaActorSubscriber$$anon$1/KafkaActorSubscriber$$anon$1(com.softwaremill.react.kafka.KafkaActorSubscriber)|",
+      "|java+method:///com/softwaremill/react/kafka/ProducerProperties/partitionizer()|",
+      "|java+method:///kafka/producer/ReactiveKafkaProducer/producer()|",
+      "|java+method:///com/softwaremill/react/kafka/ProducerMessage/value()|",
+      "|java+method:///scala/runtime/BoxesRunTime/unboxToInt(java.lang.Object)|",
+      "|java+method:///org/apache/kafka/clients/producer/KafkaProducer/send(org.apache.kafka.clients.producer.ProducerRecord,org.apache.kafka.clients.producer.Callback)|",
+      "|java+method:///com/softwaremill/react/kafka/ProducerMessage/key()|",
+      "|java+constructor:///scala/MatchError/MatchError(java.lang.Object)|",
+      "|java+constructor:///org/apache/kafka/clients/producer/ProducerRecord/ProducerRecord(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///scala/Predef$/int2Integer(int)|",
+      "|java+constructor:///org/apache/kafka/clients/producer/ProducerRecord/ProducerRecord(java.lang.String,java.lang.Integer,java.lang.Object,java.lang.Object)|",
+      "|java+method:///com/softwaremill/react/kafka/ProducerProperties/topic()|",
+      "|java+method:///scala/Function1/apply(java.lang.Object)|"
+    ],
+    "affectedLib": "org.apache.kafka:kafka-clients:0.9.0.1",
+    "change": "UPDATED"
+  }
+]

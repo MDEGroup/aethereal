@@ -1,0 +1,112 @@
+[
+  {
+    "coordinatesV1": "org.apache.metamodel:MetaModel-hadoop:4.4.0-RC1",
+    "coordinatesV2": "org.apache.metamodel:MetaModel-hadoop:4.4.0",
+    "caller": "|java+method:///org/apache/metamodel/util/HdfsResource/getSize()|",
+    "called": "|java+method:///org/apache/hadoop/fs/FileSystem/getContentSummary(org.apache.hadoop.fs.Path)|",
+    "v1Body": [
+      "|java+method:///org/apache/hadoop/fs/FileSystem/getFileStatus(org.apache.hadoop.fs.Path)|",
+      "|java+method:///org/apache/hadoop/fs/FileStatus/getLen()|",
+      "|java+method:///org/apache/metamodel/util/HdfsResource/getHadoopPath()|",
+      "|java+method:///org/apache/metamodel/util/HdfsResource/getHadoopFileSystem()|",
+      "|java+method:///org/apache/metamodel/util/FileHelper/safeClose(java.lang.Object%5B%5D)|",
+      "|java+method:///org/apache/metamodel/util/HdfsResource/wrapException(java.lang.Exception)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/hadoop/fs/ContentSummary/getLength()|",
+      "|java+method:///org/apache/hadoop/fs/FileSystem/getFileStatus(org.apache.hadoop.fs.Path)|",
+      "|java+method:///org/apache/hadoop/fs/FileSystem/getContentSummary(org.apache.hadoop.fs.Path)|",
+      "|java+method:///org/apache/hadoop/fs/FileStatus/getLen()|",
+      "|java+method:///org/apache/metamodel/util/HdfsResource/getHadoopPath()|",
+      "|java+method:///org/apache/metamodel/util/HdfsResource/getHadoopFileSystem()|",
+      "|java+method:///org/apache/metamodel/util/FileHelper/safeClose(java.lang.Object%5B%5D)|",
+      "|java+method:///org/apache/metamodel/util/HdfsResource/wrapException(java.lang.Exception)|",
+      "|java+method:///org/apache/hadoop/fs/FileSystem/isFile(org.apache.hadoop.fs.Path)|"
+    ],
+    "affectedLib": "org.apache.hadoop:hadoop-common:2.7.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.metamodel:MetaModel-hadoop:4.4.0-RC1",
+    "coordinatesV2": "org.apache.metamodel:MetaModel-hadoop:4.4.0",
+    "caller": "|java+method:///org/apache/metamodel/util/HdfsResource/read()|",
+    "called": "|java+method:///org/apache/hadoop/fs/FileSystem/open(org.apache.hadoop.fs.Path)|",
+    "v1Body": [
+      "|java+method:///org/apache/metamodel/util/HdfsResource/getHadoopPath()|",
+      "|java+constructor:///org/apache/metamodel/util/HdfsResource$HdfsFileInputStream/HdfsResource$HdfsFileInputStream(java.io.InputStream,org.apache.hadoop.fs.FileSystem)|",
+      "|java+method:///org/apache/metamodel/util/HdfsResource/getHadoopFileSystem()|",
+      "|java+method:///org/apache/metamodel/util/HdfsResource/wrapException(java.lang.Exception)|",
+      "|java+method:///org/apache/hadoop/fs/FileSystem/open(org.apache.hadoop.fs.Path)|",
+      "|java+method:///org/apache/hadoop/fs/FileSystem/isFile(org.apache.hadoop.fs.Path)|",
+      "|java+method:///org/apache/metamodel/util/FileHelper/safeClose(java.lang.Object%5B%5D)|",
+      "|java+constructor:///org/apache/metamodel/util/HdfsResource$HdfsDirectoryInputStream/HdfsResource$HdfsDirectoryInputStream(org.apache.metamodel.util.HdfsResource,org.apache.hadoop.fs.Path,org.apache.hadoop.fs.FileSystem)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/metamodel/util/HdfsResource$HdfsDirectoryInputStream/HdfsResource$HdfsDirectoryInputStream(org.apache.hadoop.fs.Path,org.apache.hadoop.fs.FileSystem)|",
+      "|java+method:///org/apache/metamodel/util/HdfsResource/getHadoopPath()|",
+      "|java+constructor:///org/apache/metamodel/util/HdfsResource$HdfsFileInputStream/HdfsResource$HdfsFileInputStream(java.io.InputStream,org.apache.hadoop.fs.FileSystem)|",
+      "|java+method:///org/apache/metamodel/util/HdfsResource/getHadoopFileSystem()|",
+      "|java+method:///org/apache/metamodel/util/FileHelper/safeClose(java.lang.Object%5B%5D)|",
+      "|java+method:///org/apache/metamodel/util/HdfsResource/wrapException(java.lang.Exception)|",
+      "|java+method:///org/apache/hadoop/fs/FileSystem/open(org.apache.hadoop.fs.Path)|",
+      "|java+method:///org/apache/hadoop/fs/FileSystem/isFile(org.apache.hadoop.fs.Path)|"
+    ],
+    "affectedLib": "org.apache.hadoop:hadoop-common:2.7.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.metamodel:MetaModel-hadoop:4.4.0-RC1",
+    "coordinatesV2": "org.apache.metamodel:MetaModel-hadoop:4.4.0",
+    "caller": "|java+method:///org/apache/metamodel/util/HdfsResource/getSize()|",
+    "called": "|java+method:///org/apache/metamodel/util/FileHelper/safeClose(java.lang.Object%5B%5D)|",
+    "v1Body": [
+      "|java+method:///org/apache/hadoop/fs/FileSystem/getFileStatus(org.apache.hadoop.fs.Path)|",
+      "|java+method:///org/apache/hadoop/fs/FileStatus/getLen()|",
+      "|java+method:///org/apache/metamodel/util/HdfsResource/getHadoopPath()|",
+      "|java+method:///org/apache/metamodel/util/HdfsResource/getHadoopFileSystem()|",
+      "|java+method:///org/apache/metamodel/util/FileHelper/safeClose(java.lang.Object%5B%5D)|",
+      "|java+method:///org/apache/metamodel/util/HdfsResource/wrapException(java.lang.Exception)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/hadoop/fs/ContentSummary/getLength()|",
+      "|java+method:///org/apache/hadoop/fs/FileSystem/getFileStatus(org.apache.hadoop.fs.Path)|",
+      "|java+method:///org/apache/hadoop/fs/FileSystem/getContentSummary(org.apache.hadoop.fs.Path)|",
+      "|java+method:///org/apache/hadoop/fs/FileStatus/getLen()|",
+      "|java+method:///org/apache/metamodel/util/HdfsResource/getHadoopPath()|",
+      "|java+method:///org/apache/metamodel/util/HdfsResource/getHadoopFileSystem()|",
+      "|java+method:///org/apache/metamodel/util/FileHelper/safeClose(java.lang.Object%5B%5D)|",
+      "|java+method:///org/apache/metamodel/util/HdfsResource/wrapException(java.lang.Exception)|",
+      "|java+method:///org/apache/hadoop/fs/FileSystem/isFile(org.apache.hadoop.fs.Path)|"
+    ],
+    "affectedLib": "org.apache.metamodel:MetaModel-core:4.4.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.metamodel:MetaModel-hadoop:4.4.0-RC1",
+    "coordinatesV2": "org.apache.metamodel:MetaModel-hadoop:4.4.0",
+    "caller": "|java+method:///org/apache/metamodel/util/HdfsResource/read()|",
+    "called": "|java+method:///org/apache/metamodel/util/FileHelper/safeClose(java.lang.Object%5B%5D)|",
+    "v1Body": [
+      "|java+method:///org/apache/metamodel/util/HdfsResource/getHadoopPath()|",
+      "|java+constructor:///org/apache/metamodel/util/HdfsResource$HdfsFileInputStream/HdfsResource$HdfsFileInputStream(java.io.InputStream,org.apache.hadoop.fs.FileSystem)|",
+      "|java+method:///org/apache/metamodel/util/HdfsResource/getHadoopFileSystem()|",
+      "|java+method:///org/apache/metamodel/util/HdfsResource/wrapException(java.lang.Exception)|",
+      "|java+method:///org/apache/hadoop/fs/FileSystem/open(org.apache.hadoop.fs.Path)|",
+      "|java+method:///org/apache/hadoop/fs/FileSystem/isFile(org.apache.hadoop.fs.Path)|",
+      "|java+method:///org/apache/metamodel/util/FileHelper/safeClose(java.lang.Object%5B%5D)|",
+      "|java+constructor:///org/apache/metamodel/util/HdfsResource$HdfsDirectoryInputStream/HdfsResource$HdfsDirectoryInputStream(org.apache.metamodel.util.HdfsResource,org.apache.hadoop.fs.Path,org.apache.hadoop.fs.FileSystem)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/metamodel/util/HdfsResource$HdfsDirectoryInputStream/HdfsResource$HdfsDirectoryInputStream(org.apache.hadoop.fs.Path,org.apache.hadoop.fs.FileSystem)|",
+      "|java+method:///org/apache/metamodel/util/HdfsResource/getHadoopPath()|",
+      "|java+constructor:///org/apache/metamodel/util/HdfsResource$HdfsFileInputStream/HdfsResource$HdfsFileInputStream(java.io.InputStream,org.apache.hadoop.fs.FileSystem)|",
+      "|java+method:///org/apache/metamodel/util/HdfsResource/getHadoopFileSystem()|",
+      "|java+method:///org/apache/metamodel/util/FileHelper/safeClose(java.lang.Object%5B%5D)|",
+      "|java+method:///org/apache/metamodel/util/HdfsResource/wrapException(java.lang.Exception)|",
+      "|java+method:///org/apache/hadoop/fs/FileSystem/open(org.apache.hadoop.fs.Path)|",
+      "|java+method:///org/apache/hadoop/fs/FileSystem/isFile(org.apache.hadoop.fs.Path)|"
+    ],
+    "affectedLib": "org.apache.metamodel:MetaModel-core:4.4.0",
+    "change": "UPDATED"
+  }
+]

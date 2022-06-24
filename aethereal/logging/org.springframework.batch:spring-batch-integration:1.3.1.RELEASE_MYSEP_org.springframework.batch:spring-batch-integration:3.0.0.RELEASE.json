@@ -1,0 +1,184 @@
+[
+  {
+    "coordinatesV1": "org.springframework.batch:spring-batch-integration:1.3.1.RELEASE",
+    "coordinatesV2": "org.springframework.batch:spring-batch-integration:3.0.0.RELEASE",
+    "caller": "|java+method:///org/springframework/batch/integration/chunk/ChunkMessageChannelItemWriter/write(java.util.List)|",
+    "called": "|java+constructor:///org/springframework/messaging/support/GenericMessage/GenericMessage(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/logging/Log/debug(java.lang.Object)|",
+      "|java+method:///org/springframework/batch/integration/chunk/ChunkMessageChannelItemWriter/getNextResult()|",
+      "|java+method:///org/springframework/batch/integration/chunk/ChunkMessageChannelItemWriter$LocalState/getRequest(java.util.List)|",
+      "|java+method:///org/springframework/integration/core/MessagingOperations/send(org.springframework.integration.Message)|",
+      "|java+constructor:///org/springframework/integration/message/GenericMessage/GenericMessage(java.lang.Object)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/springframework/batch/integration/chunk/ChunkMessageChannelItemWriter$LocalState/incrementExpected()|",
+      "|java+method:///org/springframework/batch/integration/chunk/ChunkMessageChannelItemWriter$LocalState/getExpecting()|",
+      "|java+method:///java/util/List/isEmpty()|",
+      "|java+method:///org/apache/commons/logging/Log/isDebugEnabled()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/logging/Log/debug(java.lang.Object)|",
+      "|java+method:///org/springframework/batch/integration/chunk/ChunkMessageChannelItemWriter/getNextResult()|",
+      "|java+constructor:///org/springframework/messaging/support/GenericMessage/GenericMessage(java.lang.Object)|",
+      "|java+method:///org/springframework/integration/core/MessagingTemplate/send(org.springframework.messaging.Message)|",
+      "|java+method:///org/springframework/batch/integration/chunk/ChunkMessageChannelItemWriter$LocalState/getRequest(java.util.List)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/springframework/batch/integration/chunk/ChunkMessageChannelItemWriter$LocalState/incrementExpected()|",
+      "|java+method:///org/springframework/batch/integration/chunk/ChunkMessageChannelItemWriter$LocalState/getExpecting()|",
+      "|java+method:///java/util/List/isEmpty()|",
+      "|java+method:///org/apache/commons/logging/Log/isDebugEnabled()|"
+    ],
+    "affectedLib": "org.springframework:spring-messaging:4.0.5.RELEASE",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.springframework.batch:spring-batch-integration:1.3.1.RELEASE",
+    "coordinatesV2": "org.springframework.batch:spring-batch-integration:3.0.0.RELEASE",
+    "caller": "|java+constructor:///org/springframework/batch/integration/async/StepExecutionInterceptor/StepExecutionInterceptor()|",
+    "called": "|java+constructor:///org/springframework/messaging/support/ChannelInterceptorAdapter/ChannelInterceptorAdapter()|",
+    "v1Body": [
+      "|java+constructor:///org/springframework/integration/channel/interceptor/ChannelInterceptorAdapter/ChannelInterceptorAdapter()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/springframework/messaging/support/ChannelInterceptorAdapter/ChannelInterceptorAdapter()|"
+    ],
+    "affectedLib": "org.springframework:spring-messaging:4.0.5.RELEASE",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.springframework.batch:spring-batch-integration:1.3.1.RELEASE",
+    "coordinatesV2": "org.springframework.batch:spring-batch-integration:3.0.0.RELEASE",
+    "caller": "|java+constructor:///org/springframework/batch/integration/chunk/MessageSourcePollerInterceptor/MessageSourcePollerInterceptor(org.springframework.integration.core.MessageSource)|",
+    "called": "|java+constructor:///org/springframework/messaging/support/ChannelInterceptorAdapter/ChannelInterceptorAdapter()|",
+    "v1Body": [
+      "|java+constructor:///org/springframework/integration/channel/interceptor/ChannelInterceptorAdapter/ChannelInterceptorAdapter()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/springframework/messaging/support/ChannelInterceptorAdapter/ChannelInterceptorAdapter()|"
+    ],
+    "affectedLib": "org.springframework:spring-messaging:4.0.5.RELEASE",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.springframework.batch:spring-batch-integration:1.3.1.RELEASE",
+    "coordinatesV2": "org.springframework.batch:spring-batch-integration:3.0.0.RELEASE",
+    "caller": "|java+constructor:///org/springframework/batch/integration/chunk/MessageSourcePollerInterceptor/MessageSourcePollerInterceptor()|",
+    "called": "|java+constructor:///org/springframework/messaging/support/ChannelInterceptorAdapter/ChannelInterceptorAdapter()|",
+    "v1Body": [
+      "|java+constructor:///org/springframework/integration/channel/interceptor/ChannelInterceptorAdapter/ChannelInterceptorAdapter()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/springframework/messaging/support/ChannelInterceptorAdapter/ChannelInterceptorAdapter()|"
+    ],
+    "affectedLib": "org.springframework:spring-messaging:4.0.5.RELEASE",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.springframework.batch:spring-batch-integration:1.3.1.RELEASE",
+    "coordinatesV2": "org.springframework.batch:spring-batch-integration:3.0.0.RELEASE",
+    "caller": "|java+method:///org/springframework/batch/integration/partition/MessageChannelPartitionHandler/handle(org.springframework.batch.core.partition.StepExecutionSplitter,org.springframework.batch.core.StepExecution)|",
+    "called": "|java+method:///org/springframework/batch/core/StepExecution/getJobExecutionId()|",
+    "v1Body": [
+      "|java+method:///org/springframework/batch/integration/partition/MessageChannelPartitionHandler/createMessage(int,int,org.springframework.batch.integration.partition.StepExecutionRequest,org.springframework.integration.core.PollableChannel)|",
+      "|java+method:///org/apache/commons/logging/Log/isDebugEnabled()|",
+      "|java+constructor:///org/springframework/batch/integration/partition/StepExecutionRequest/StepExecutionRequest(java.lang.String,java.lang.Long,java.lang.Long)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/util/Set/iterator()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///org/springframework/integration/Message/getPayload()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/apache/commons/logging/Log/debug(java.lang.Object)|",
+      "|java+constructor:///org/springframework/integration/channel/QueueChannel/QueueChannel()|",
+      "|java+method:///org/springframework/batch/core/partition/StepExecutionSplitter/split(org.springframework.batch.core.StepExecution,int)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/util/Set/size()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/springframework/batch/core/StepExecution/getJobExecutionId()|",
+      "|java+method:///org/springframework/integration/core/MessagingOperations/send(org.springframework.integration.Message)|",
+      "|java+method:///org/springframework/integration/core/MessagingOperations/receive(org.springframework.integration.core.PollableChannel)|",
+      "|java+method:///org/springframework/batch/core/StepExecution/getId()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/logging/Log/isDebugEnabled()|",
+      "|java+method:///org/springframework/messaging/Message/getPayload()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/springframework/batch/core/StepExecution/getJobExecutionId()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/springframework/batch/core/StepExecution/getId()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/apache/commons/logging/Log/debug(java.lang.Object)|",
+      "|java+constructor:///org/springframework/integration/channel/QueueChannel/QueueChannel()|",
+      "|java+method:///org/springframework/batch/core/partition/StepExecutionSplitter/split(org.springframework.batch.core.StepExecution,int)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/util/Set/size()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/springframework/integration/core/MessagingTemplate/receive(java.lang.Object)|",
+      "|java+method:///org/springframework/batch/integration/partition/MessageChannelPartitionHandler/createMessage(int,int,org.springframework.batch.integration.partition.StepExecutionRequest,org.springframework.messaging.PollableChannel)|",
+      "|java+constructor:///org/springframework/batch/integration/partition/StepExecutionRequest/StepExecutionRequest(java.lang.String,java.lang.Long,java.lang.Long)|",
+      "|java+method:///org/springframework/integration/core/MessagingTemplate/send(org.springframework.messaging.Message)|",
+      "|java+constructor:///org/springframework/integration/MessageTimeoutException/MessageTimeoutException(java.lang.String)|",
+      "|java+method:///java/util/Set/iterator()|"
+    ],
+    "affectedLib": "org.springframework.batch:spring-batch-core:3.0.0.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.springframework.batch:spring-batch-integration:1.3.1.RELEASE",
+    "coordinatesV2": "org.springframework.batch:spring-batch-integration:3.0.0.RELEASE",
+    "caller": "|java+method:///org/springframework/batch/integration/partition/MessageChannelPartitionHandler/handle(org.springframework.batch.core.partition.StepExecutionSplitter,org.springframework.batch.core.StepExecution)|",
+    "called": "|java+constructor:///org/springframework/integration/MessageTimeoutException/MessageTimeoutException(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/springframework/batch/integration/partition/MessageChannelPartitionHandler/createMessage(int,int,org.springframework.batch.integration.partition.StepExecutionRequest,org.springframework.integration.core.PollableChannel)|",
+      "|java+method:///org/apache/commons/logging/Log/isDebugEnabled()|",
+      "|java+constructor:///org/springframework/batch/integration/partition/StepExecutionRequest/StepExecutionRequest(java.lang.String,java.lang.Long,java.lang.Long)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/util/Set/iterator()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///org/springframework/integration/Message/getPayload()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/apache/commons/logging/Log/debug(java.lang.Object)|",
+      "|java+constructor:///org/springframework/integration/channel/QueueChannel/QueueChannel()|",
+      "|java+method:///org/springframework/batch/core/partition/StepExecutionSplitter/split(org.springframework.batch.core.StepExecution,int)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/util/Set/size()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/springframework/batch/core/StepExecution/getJobExecutionId()|",
+      "|java+method:///org/springframework/integration/core/MessagingOperations/send(org.springframework.integration.Message)|",
+      "|java+method:///org/springframework/integration/core/MessagingOperations/receive(org.springframework.integration.core.PollableChannel)|",
+      "|java+method:///org/springframework/batch/core/StepExecution/getId()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/logging/Log/isDebugEnabled()|",
+      "|java+method:///org/springframework/messaging/Message/getPayload()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/springframework/batch/core/StepExecution/getJobExecutionId()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/springframework/batch/core/StepExecution/getId()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/apache/commons/logging/Log/debug(java.lang.Object)|",
+      "|java+constructor:///org/springframework/integration/channel/QueueChannel/QueueChannel()|",
+      "|java+method:///org/springframework/batch/core/partition/StepExecutionSplitter/split(org.springframework.batch.core.StepExecution,int)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/util/Set/size()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/springframework/integration/core/MessagingTemplate/receive(java.lang.Object)|",
+      "|java+method:///org/springframework/batch/integration/partition/MessageChannelPartitionHandler/createMessage(int,int,org.springframework.batch.integration.partition.StepExecutionRequest,org.springframework.messaging.PollableChannel)|",
+      "|java+constructor:///org/springframework/batch/integration/partition/StepExecutionRequest/StepExecutionRequest(java.lang.String,java.lang.Long,java.lang.Long)|",
+      "|java+method:///org/springframework/integration/core/MessagingTemplate/send(org.springframework.messaging.Message)|",
+      "|java+constructor:///org/springframework/integration/MessageTimeoutException/MessageTimeoutException(java.lang.String)|",
+      "|java+method:///java/util/Set/iterator()|"
+    ],
+    "affectedLib": "org.springframework.integration:spring-integration-core:4.0.1.RELEASE",
+    "change": "UPDATED"
+  }
+]

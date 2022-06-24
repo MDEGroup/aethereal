@@ -1,0 +1,284 @@
+[
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-integration-memcached:4.0.5",
+    "coordinatesV2": "org.jasig.cas:cas-server-integration-memcached:4.0.0",
+    "caller": "|java+method:///org/jasig/cas/ticket/registry/support/kryo/KryoTranscoder/initialize()|",
+    "called": "|java+constructor:///com/esotericsoftware/kryo/serialize/DateSerializer/DateSerializer()|",
+    "v1Body": [
+      "|java+method:///com/esotericsoftware/kryo/Kryo/register(java.lang.Class)|",
+      "|java+method:///com/esotericsoftware/kryo/Kryo/setRegistrationOptional(boolean)|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+constructor:///com/esotericsoftware/kryo/serialize/DateSerializer/DateSerializer()|",
+      "|java+method:///com/esotericsoftware/kryo/Kryo/register(java.lang.Class,com.esotericsoftware.kryo.Serializer)|",
+      "|java+method:///java/util/Set/iterator()|",
+      "|java+constructor:///org/jasig/cas/ticket/registry/support/kryo/serial/URLSerializer/URLSerializer(com.esotericsoftware.kryo.Kryo)|",
+      "|java+constructor:///com/esotericsoftware/kryo/serialize/ClassSerializer/ClassSerializer(com.esotericsoftware.kryo.Kryo)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+constructor:///org/jasig/cas/ticket/registry/support/kryo/serial/SimpleWebApplicationServiceSerializer/SimpleWebApplicationServiceSerializer(com.esotericsoftware.kryo.Kryo)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/Map/keySet()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/esotericsoftware/kryo/Kryo/register(java.lang.Class)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/util/Map$Entry/getKey()|",
+      "|java+method:///com/esotericsoftware/kryo/Kryo/setRegistrationRequired(boolean)|",
+      "|java+constructor:///org/jasig/cas/ticket/registry/support/kryo/serial/RegisteredServiceSerializer/RegisteredServiceSerializer()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+constructor:///com/esotericsoftware/kryo/serializers/DefaultSerializers$ClassSerializer/DefaultSerializers$ClassSerializer()|",
+      "|java+method:///de/javakaffee/kryoserializers/UnmodifiableCollectionsSerializer/registerSerializers(com.esotericsoftware.kryo.Kryo)|",
+      "|java+method:///java/util/Set/iterator()|",
+      "|java+constructor:///com/esotericsoftware/kryo/serializers/DefaultSerializers$DateSerializer/DefaultSerializers$DateSerializer()|",
+      "|java+method:///java/util/Map/entrySet()|",
+      "|java+method:///com/esotericsoftware/kryo/Kryo/setAutoReset(boolean)|",
+      "|java+constructor:///de/javakaffee/kryoserializers/jodatime/JodaDateTimeSerializer/JodaDateTimeSerializer()|",
+      "|java+constructor:///org/jasig/cas/ticket/registry/support/kryo/serial/URLSerializer/URLSerializer()|",
+      "|java+constructor:///org/jasig/cas/ticket/registry/support/kryo/serial/SimpleWebApplicationServiceSerializer/SimpleWebApplicationServiceSerializer()|",
+      "|java+method:///com/esotericsoftware/kryo/Kryo/register(java.lang.Class,com.esotericsoftware.kryo.Serializer)|",
+      "|java+method:///java/util/Map$Entry/getValue()|",
+      "|java+method:///com/esotericsoftware/kryo/Kryo/setReferences(boolean)|"
+    ],
+    "affectedLib": "com.googlecode:kryo:1.04",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-integration-memcached:4.0.5",
+    "coordinatesV2": "org.jasig.cas:cas-server-integration-memcached:4.0.0",
+    "caller": "|java+constructor:///org/jasig/cas/ticket/registry/support/kryo/KryoTranscoder/KryoTranscoder(int)|",
+    "called": "|java+constructor:///com/esotericsoftware/kryo/Kryo/Kryo()|",
+    "v1Body": [
+      "|java+constructor:///com/esotericsoftware/kryo/Kryo/Kryo()|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/esotericsoftware/kryo/Kryo/Kryo()|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String)|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "com.googlecode:kryo:1.04",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-integration-memcached:4.0.5",
+    "coordinatesV2": "org.jasig.cas:cas-server-integration-memcached:4.0.0",
+    "caller": "|java+method:///org/jasig/cas/ticket/registry/support/kryo/KryoTranscoder/decode(net.spy.memcached.CachedData)|",
+    "called": "|java+method:///com/esotericsoftware/kryo/Kryo/readClassAndObject(java.nio.ByteBuffer)|",
+    "v1Body": [
+      "|java+method:///com/esotericsoftware/kryo/Kryo/readClassAndObject(java.nio.ByteBuffer)|",
+      "|java+method:///net/spy/memcached/CachedData/getData()|",
+      "|java+method:///java/nio/ByteBuffer/wrap(byte%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/io/IOUtils/closeQuietly(java.io.InputStream)|",
+      "|java+constructor:///java/io/ByteArrayInputStream/ByteArrayInputStream(byte%5B%5D)|",
+      "|java+method:///net/spy/memcached/CachedData/getData()|",
+      "|java+constructor:///com/esotericsoftware/kryo/io/Input/Input(java.io.InputStream)|",
+      "|java+method:///com/esotericsoftware/kryo/Kryo/readClassAndObject(com.esotericsoftware.kryo.io.Input)|"
+    ],
+    "affectedLib": "com.googlecode:kryo:1.04",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-integration-memcached:4.0.0",
+    "coordinatesV2": "org.jasig.cas:cas-server-integration-memcached:4.0.5",
+    "caller": "|java+method:///org/jasig/cas/ticket/registry/support/kryo/KryoTranscoder/initialize()|",
+    "called": "|java+method:///com/esotericsoftware/kryo/Kryo/setRegistrationRequired(boolean)|",
+    "v1Body": [
+      "|java+method:///com/esotericsoftware/kryo/Kryo/register(java.lang.Class)|",
+      "|java+method:///com/esotericsoftware/kryo/Kryo/setRegistrationOptional(boolean)|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+constructor:///com/esotericsoftware/kryo/serialize/DateSerializer/DateSerializer()|",
+      "|java+method:///com/esotericsoftware/kryo/Kryo/register(java.lang.Class,com.esotericsoftware.kryo.Serializer)|",
+      "|java+method:///java/util/Set/iterator()|",
+      "|java+constructor:///org/jasig/cas/ticket/registry/support/kryo/serial/URLSerializer/URLSerializer(com.esotericsoftware.kryo.Kryo)|",
+      "|java+constructor:///com/esotericsoftware/kryo/serialize/ClassSerializer/ClassSerializer(com.esotericsoftware.kryo.Kryo)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+constructor:///org/jasig/cas/ticket/registry/support/kryo/serial/SimpleWebApplicationServiceSerializer/SimpleWebApplicationServiceSerializer(com.esotericsoftware.kryo.Kryo)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/Map/keySet()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/esotericsoftware/kryo/Kryo/register(java.lang.Class)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/util/Map$Entry/getKey()|",
+      "|java+method:///com/esotericsoftware/kryo/Kryo/setRegistrationRequired(boolean)|",
+      "|java+constructor:///org/jasig/cas/ticket/registry/support/kryo/serial/RegisteredServiceSerializer/RegisteredServiceSerializer()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+constructor:///com/esotericsoftware/kryo/serializers/DefaultSerializers$ClassSerializer/DefaultSerializers$ClassSerializer()|",
+      "|java+method:///de/javakaffee/kryoserializers/UnmodifiableCollectionsSerializer/registerSerializers(com.esotericsoftware.kryo.Kryo)|",
+      "|java+method:///java/util/Set/iterator()|",
+      "|java+constructor:///com/esotericsoftware/kryo/serializers/DefaultSerializers$DateSerializer/DefaultSerializers$DateSerializer()|",
+      "|java+method:///java/util/Map/entrySet()|",
+      "|java+method:///com/esotericsoftware/kryo/Kryo/setAutoReset(boolean)|",
+      "|java+constructor:///de/javakaffee/kryoserializers/jodatime/JodaDateTimeSerializer/JodaDateTimeSerializer()|",
+      "|java+constructor:///org/jasig/cas/ticket/registry/support/kryo/serial/URLSerializer/URLSerializer()|",
+      "|java+constructor:///org/jasig/cas/ticket/registry/support/kryo/serial/SimpleWebApplicationServiceSerializer/SimpleWebApplicationServiceSerializer()|",
+      "|java+method:///com/esotericsoftware/kryo/Kryo/register(java.lang.Class,com.esotericsoftware.kryo.Serializer)|",
+      "|java+method:///java/util/Map$Entry/getValue()|",
+      "|java+method:///com/esotericsoftware/kryo/Kryo/setReferences(boolean)|"
+    ],
+    "affectedLib": "com.esotericsoftware:kryo:3.0.2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-integration-memcached:4.0.0",
+    "coordinatesV2": "org.jasig.cas:cas-server-integration-memcached:4.0.5",
+    "caller": "|java+constructor:///org/jasig/cas/ticket/registry/support/kryo/KryoTranscoder/KryoTranscoder(int)|",
+    "called": "|java+constructor:///com/esotericsoftware/kryo/Kryo/Kryo()|",
+    "v1Body": [
+      "|java+constructor:///com/esotericsoftware/kryo/Kryo/Kryo()|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/esotericsoftware/kryo/Kryo/Kryo()|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String)|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "com.esotericsoftware:kryo:3.0.2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-integration-memcached:4.0.0",
+    "coordinatesV2": "org.jasig.cas:cas-server-integration-memcached:4.0.5",
+    "caller": "|java+method:///org/jasig/cas/ticket/registry/support/kryo/KryoTranscoder/decode(net.spy.memcached.CachedData)|",
+    "called": "|java+method:///com/esotericsoftware/kryo/Kryo/readClassAndObject(com.esotericsoftware.kryo.io.Input)|",
+    "v1Body": [
+      "|java+method:///com/esotericsoftware/kryo/Kryo/readClassAndObject(java.nio.ByteBuffer)|",
+      "|java+method:///net/spy/memcached/CachedData/getData()|",
+      "|java+method:///java/nio/ByteBuffer/wrap(byte%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/io/IOUtils/closeQuietly(java.io.InputStream)|",
+      "|java+constructor:///java/io/ByteArrayInputStream/ByteArrayInputStream(byte%5B%5D)|",
+      "|java+method:///net/spy/memcached/CachedData/getData()|",
+      "|java+constructor:///com/esotericsoftware/kryo/io/Input/Input(java.io.InputStream)|",
+      "|java+method:///com/esotericsoftware/kryo/Kryo/readClassAndObject(com.esotericsoftware.kryo.io.Input)|"
+    ],
+    "affectedLib": "com.esotericsoftware:kryo:3.0.2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-integration-memcached:4.0.0",
+    "coordinatesV2": "org.jasig.cas:cas-server-integration-memcached:4.0.5",
+    "caller": "|java+method:///org/jasig/cas/ticket/registry/support/kryo/KryoTranscoder/encode(java.lang.Object)|",
+    "called": "|java+method:///com/esotericsoftware/kryo/Kryo/writeClassAndObject(com.esotericsoftware.kryo.io.Output,java.lang.Object)|",
+    "v1Body": [
+      "|java+constructor:///net/spy/memcached/CachedData/CachedData(int,byte%5B%5D,int)|",
+      "|java+method:///org/jasig/cas/ticket/registry/support/kryo/KryoTranscoder/encodeToBytes(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/esotericsoftware/kryo/io/Output/flush()|",
+      "|java+constructor:///net/spy/memcached/CachedData/CachedData(int,byte%5B%5D,int)|",
+      "|java+method:///com/esotericsoftware/kryo/Kryo/writeClassAndObject(com.esotericsoftware.kryo.io.Output,java.lang.Object)|",
+      "|java+method:///org/apache/commons/io/IOUtils/closeQuietly(java.io.OutputStream)|",
+      "|java+method:///java/io/ByteArrayOutputStream/toByteArray()|",
+      "|java+constructor:///java/io/ByteArrayOutputStream/ByteArrayOutputStream()|",
+      "|java+constructor:///com/esotericsoftware/kryo/io/Output/Output(java.io.OutputStream)|"
+    ],
+    "affectedLib": "com.esotericsoftware:kryo:3.0.2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-integration-memcached:4.0.0",
+    "coordinatesV2": "org.jasig.cas:cas-server-integration-memcached:4.0.5",
+    "caller": "|java+method:///org/jasig/cas/ticket/registry/support/kryo/KryoTranscoder/initialize()|",
+    "called": "|java+method:///de/javakaffee/kryoserializers/UnmodifiableCollectionsSerializer/registerSerializers(com.esotericsoftware.kryo.Kryo)|",
+    "v1Body": [
+      "|java+method:///com/esotericsoftware/kryo/Kryo/register(java.lang.Class)|",
+      "|java+method:///com/esotericsoftware/kryo/Kryo/setRegistrationOptional(boolean)|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+constructor:///com/esotericsoftware/kryo/serialize/DateSerializer/DateSerializer()|",
+      "|java+method:///com/esotericsoftware/kryo/Kryo/register(java.lang.Class,com.esotericsoftware.kryo.Serializer)|",
+      "|java+method:///java/util/Set/iterator()|",
+      "|java+constructor:///org/jasig/cas/ticket/registry/support/kryo/serial/URLSerializer/URLSerializer(com.esotericsoftware.kryo.Kryo)|",
+      "|java+constructor:///com/esotericsoftware/kryo/serialize/ClassSerializer/ClassSerializer(com.esotericsoftware.kryo.Kryo)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+constructor:///org/jasig/cas/ticket/registry/support/kryo/serial/SimpleWebApplicationServiceSerializer/SimpleWebApplicationServiceSerializer(com.esotericsoftware.kryo.Kryo)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/Map/keySet()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/esotericsoftware/kryo/Kryo/register(java.lang.Class)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/util/Map$Entry/getKey()|",
+      "|java+method:///com/esotericsoftware/kryo/Kryo/setRegistrationRequired(boolean)|",
+      "|java+constructor:///org/jasig/cas/ticket/registry/support/kryo/serial/RegisteredServiceSerializer/RegisteredServiceSerializer()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+constructor:///com/esotericsoftware/kryo/serializers/DefaultSerializers$ClassSerializer/DefaultSerializers$ClassSerializer()|",
+      "|java+method:///de/javakaffee/kryoserializers/UnmodifiableCollectionsSerializer/registerSerializers(com.esotericsoftware.kryo.Kryo)|",
+      "|java+method:///java/util/Set/iterator()|",
+      "|java+constructor:///com/esotericsoftware/kryo/serializers/DefaultSerializers$DateSerializer/DefaultSerializers$DateSerializer()|",
+      "|java+method:///java/util/Map/entrySet()|",
+      "|java+method:///com/esotericsoftware/kryo/Kryo/setAutoReset(boolean)|",
+      "|java+constructor:///de/javakaffee/kryoserializers/jodatime/JodaDateTimeSerializer/JodaDateTimeSerializer()|",
+      "|java+constructor:///org/jasig/cas/ticket/registry/support/kryo/serial/URLSerializer/URLSerializer()|",
+      "|java+constructor:///org/jasig/cas/ticket/registry/support/kryo/serial/SimpleWebApplicationServiceSerializer/SimpleWebApplicationServiceSerializer()|",
+      "|java+method:///com/esotericsoftware/kryo/Kryo/register(java.lang.Class,com.esotericsoftware.kryo.Serializer)|",
+      "|java+method:///java/util/Map$Entry/getValue()|",
+      "|java+method:///com/esotericsoftware/kryo/Kryo/setReferences(boolean)|"
+    ],
+    "affectedLib": "de.javakaffee:kryo-serializers:0.33",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-integration-memcached:4.0.0",
+    "coordinatesV2": "org.jasig.cas:cas-server-integration-memcached:4.0.5",
+    "caller": "|java+method:///org/jasig/cas/ticket/registry/support/kryo/KryoTranscoder/encode(java.lang.Object)|",
+    "called": "|java+constructor:///net/spy/memcached/CachedData/CachedData(int,byte%5B%5D,int)|",
+    "v1Body": [
+      "|java+constructor:///net/spy/memcached/CachedData/CachedData(int,byte%5B%5D,int)|",
+      "|java+method:///org/jasig/cas/ticket/registry/support/kryo/KryoTranscoder/encodeToBytes(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/esotericsoftware/kryo/io/Output/flush()|",
+      "|java+constructor:///net/spy/memcached/CachedData/CachedData(int,byte%5B%5D,int)|",
+      "|java+method:///com/esotericsoftware/kryo/Kryo/writeClassAndObject(com.esotericsoftware.kryo.io.Output,java.lang.Object)|",
+      "|java+method:///org/apache/commons/io/IOUtils/closeQuietly(java.io.OutputStream)|",
+      "|java+method:///java/io/ByteArrayOutputStream/toByteArray()|",
+      "|java+constructor:///java/io/ByteArrayOutputStream/ByteArrayOutputStream()|",
+      "|java+constructor:///com/esotericsoftware/kryo/io/Output/Output(java.io.OutputStream)|"
+    ],
+    "affectedLib": "net.spy:spymemcached:2.11.7",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-integration-memcached:4.0.0",
+    "coordinatesV2": "org.jasig.cas:cas-server-integration-memcached:4.0.5",
+    "caller": "|java+method:///org/jasig/cas/monitor/MemcachedMonitor/observe()|",
+    "called": "|java+constructor:///org/jasig/cas/monitor/CacheStatus/CacheStatus(org.jasig.cas.monitor.StatusCode,java.lang.String,org.jasig.cas.monitor.CacheStatistics%5B%5D)|",
+    "v1Body": [
+      "|java+method:///net/spy/memcached/MemcachedClientIF/getUnavailableServers()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///net/spy/memcached/MemcachedClientIF/getAvailableServers()|",
+      "|java+method:///java/util/Collection/size()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/jasig/cas/monitor/MemcachedMonitor/getStatistics()|",
+      "|java+method:///org/jasig/cas/monitor/MemcachedMonitor/observe()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///org/jasig/cas/monitor/CacheStatus/CacheStatus(org.jasig.cas.monitor.StatusCode,java.lang.String,org.jasig.cas.monitor.CacheStatistics%5B%5D)|",
+      "|java+method:///org/jasig/cas/monitor/AbstractCacheMonitor/observe()|"
+    ],
+    "v2Body": [
+      "|java+method:///net/spy/memcached/MemcachedClientIF/getUnavailableServers()|",
+      "|java+method:///net/spy/memcached/MemcachedClientIF/getAvailableServers()|",
+      "|java+method:///java/util/Collection/size()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder(java.lang.String)|",
+      "|java+method:///org/jasig/cas/monitor/MemcachedMonitor/getStatistics()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///org/jasig/cas/monitor/CacheStatus/CacheStatus(org.jasig.cas.monitor.StatusCode,java.lang.String,org.jasig.cas.monitor.CacheStatistics%5B%5D)|",
+      "|java+method:///org/jasig/cas/monitor/AbstractCacheMonitor/observe()|"
+    ],
+    "affectedLib": "org.jasig.cas:cas-server-core:4.0.5",
+    "change": "UPDATED"
+  }
+]

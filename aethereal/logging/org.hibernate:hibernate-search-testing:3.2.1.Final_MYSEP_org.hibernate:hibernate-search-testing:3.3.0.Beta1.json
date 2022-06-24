@@ -1,0 +1,71 @@
+[
+  {
+    "coordinatesV1": "org.hibernate:hibernate-search-testing:3.2.1.Final",
+    "coordinatesV2": "org.hibernate:hibernate-search-testing:3.3.0.Beta1",
+    "caller": "|java+method:///org/hibernate/search/test/SearchTestCase/setUp()|",
+    "called": "|java+method:///org/hibernate/testing/junit/functional/annotations/HibernateTestCase/setUp()|",
+    "v1Body": [
+      "|java+method:///org/hibernate/search/test/SearchTestCase/getXmlFiles()|",
+      "|java+method:///org/hibernate/search/test/SearchTestCase/buildSessionFactory(java.lang.Class%5B%5D,java.lang.String%5B%5D,java.lang.String%5B%5D)|",
+      "|java+method:///org/hibernate/search/test/SearchTestCase/getAnnotatedPackages()|",
+      "|java+method:///org/hibernate/search/test/SearchTestCase/ensureIndexesAreEmpty()|",
+      "|java+method:///org/hibernate/search/test/SearchTestCase/getMappings()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/hibernate/testing/junit/functional/annotations/HibernateTestCase/setUp()|",
+      "|java+method:///org/hibernate/search/test/SearchTestCase/ensureIndexesAreEmpty()|"
+    ],
+    "affectedLib": "org.hibernate:hibernate-testing:3.6.0.Beta3",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.hibernate:hibernate-search-testing:3.2.1.Final",
+    "coordinatesV2": "org.hibernate:hibernate-search-testing:3.3.0.Beta1",
+    "caller": "|java+constructor:///org/hibernate/search/test/SearchTestCase/SearchTestCase()|",
+    "called": "|java+constructor:///org/hibernate/testing/junit/functional/annotations/HibernateTestCase/HibernateTestCase()|",
+    "v1Body": [
+      "|java+constructor:///org/hibernate/search/test/TestCase/TestCase()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/hibernate/testing/junit/functional/annotations/HibernateTestCase/HibernateTestCase()|"
+    ],
+    "affectedLib": "org.hibernate:hibernate-testing:3.6.0.Beta3",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.hibernate:hibernate-search-testing:3.2.1.Final",
+    "coordinatesV2": "org.hibernate:hibernate-search-testing:3.3.0.Beta1",
+    "caller": "|java+method:///org/hibernate/search/test/SearchTestCase/ensureIndexesAreEmpty()|",
+    "called": "|java+method:///org/hibernate/search/Search/getFullTextSession(org.hibernate.Session)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+method:///org/hibernate/search/FullTextSession/beginTransaction()|",
+      "|java+method:///org/hibernate/Transaction/commit()|",
+      "|java+method:///java/lang/Class/getAnnotation(java.lang.Class)|",
+      "|java+method:///org/hibernate/search/test/SearchTestCase/getMappings()|",
+      "|java+method:///org/hibernate/search/Search/getFullTextSession(org.hibernate.Session)|",
+      "|java+method:///org/hibernate/search/test/SearchTestCase/getCfg()|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///org/hibernate/cfg/Configuration/getProperty(java.lang.String)|",
+      "|java+method:///org/hibernate/search/FullTextSession/purgeAll(java.lang.Class)|",
+      "|java+method:///org/hibernate/search/FullTextSession/close()|",
+      "|java+method:///org/hibernate/search/test/SearchTestCase/openSession()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+method:///org/hibernate/search/FullTextSession/beginTransaction()|",
+      "|java+method:///org/hibernate/Transaction/commit()|",
+      "|java+method:///java/lang/Class/getAnnotation(java.lang.Class)|",
+      "|java+method:///org/hibernate/search/Search/getFullTextSession(org.hibernate.Session)|",
+      "|java+method:///org/hibernate/search/test/SearchTestCase/getCfg()|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///org/hibernate/cfg/Configuration/getProperty(java.lang.String)|",
+      "|java+method:///org/hibernate/search/test/SearchTestCase/getAnnotatedClasses()|",
+      "|java+method:///org/hibernate/search/FullTextSession/purgeAll(java.lang.Class)|",
+      "|java+method:///org/hibernate/search/FullTextSession/close()|",
+      "|java+method:///org/hibernate/search/test/SearchTestCase/openSession()|"
+    ],
+    "affectedLib": "org.hibernate:hibernate-search:3.3.0.Beta1",
+    "change": "UPDATED"
+  }
+]

@@ -1,0 +1,141 @@
+[
+  {
+    "coordinatesV1": "net.lightbody.bmp:browsermob-proxy:2.0-beta-8",
+    "coordinatesV2": "net.lightbody.bmp:browsermob-proxy:2.0-beta-9",
+    "caller": "|java+constructor:///net/lightbody/bmp/proxy/util/Log/Log(java.lang.Class)|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/util/logging/Logger/getLogger(java.lang.String)|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.String)|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.5.3",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "net.lightbody.bmp:browsermob-proxy:2.0-beta-8",
+    "coordinatesV2": "net.lightbody.bmp:browsermob-proxy:2.0-beta-9",
+    "caller": "|java+constructor:///net/lightbody/bmp/proxy/util/Log/Log()|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/lang/StackTraceElement/getClassName()|",
+      "|java+method:///java/util/logging/Logger/getLogger(java.lang.String)|",
+      "|java+method:///java/lang/Exception/getStackTrace()|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+constructor:///java/lang/Exception/Exception()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/StackTraceElement/getClassName()|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.String)|",
+      "|java+method:///java/lang/Exception/getStackTrace()|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+constructor:///java/lang/Exception/Exception()|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.5.3",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "net.lightbody.bmp:browsermob-proxy:2.0-beta-8",
+    "coordinatesV2": "net.lightbody.bmp:browsermob-proxy:2.0-beta-9",
+    "caller": "|java+method:///net/lightbody/bmp/proxy/guice/ConfigModule/configure(com.google.inject.Binder)|",
+    "called": "|java+method:///net/sf/uadetector/service/UADetectorServiceFactory/getCachingAndUpdatingParser()|",
+    "v1Body": [
+      "|java+method:///java/io/IOException/printStackTrace()|",
+      "|java+method:///joptsimple/OptionParser/printHelpOn(java.io.OutputStream)|",
+      "|java+method:///java/util/Arrays/asList(java.lang.Object%5B%5D)|",
+      "|java+method:///java/lang/System/exit(int)|",
+      "|java+method:///com/google/inject/Binder/bind(com.google.inject.Key)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///joptsimple/OptionParser/accepts(java.lang.String,java.lang.String)|",
+      "|java+method:///joptsimple/ArgumentAcceptingOptionSpec/ofType(java.lang.Class)|",
+      "|java+method:///joptsimple/OptionParser/parse(java.lang.String%5B%5D)|",
+      "|java+method:///java/lang/Integer/intValue()|",
+      "|java+method:///com/google/inject/binder/LinkedBindingBuilder/toInstance(java.lang.Object)|",
+      "|java+method:///com/google/inject/Key/get(java.lang.Class,java.lang.annotation.Annotation)|",
+      "|java+method:///joptsimple/OptionSpecBuilder/withOptionalArg()|",
+      "|java+method:///cz/mallat/uasparser/OnlineUpdateUASparser/setUpdateInterval(long)|",
+      "|java+method:///joptsimple/ArgumentAcceptingOptionSpec/defaultsTo(java.lang.Object,java.lang.Object%5B%5D)|",
+      "|java+method:///joptsimple/OptionSet/has(java.lang.String)|",
+      "|java+constructor:///net/lightbody/bmp/proxy/guice/NamedImpl/NamedImpl(java.lang.String)|",
+      "|java+method:///joptsimple/ArgumentAcceptingOptionSpec/value(joptsimple.OptionSet)|",
+      "|java+method:///joptsimple/OptionParser/acceptsAll(java.util.Collection,java.lang.String)|",
+      "|java+constructor:///joptsimple/OptionParser/OptionParser()|"
+    ],
+    "v2Body": [
+      "|java+method:///joptsimple/OptionParser/parse(java.lang.String%5B%5D)|",
+      "|java+method:///java/io/IOException/printStackTrace()|",
+      "|java+method:///joptsimple/OptionParser/printHelpOn(java.io.OutputStream)|",
+      "|java+method:///java/util/Arrays/asList(java.lang.Object%5B%5D)|",
+      "|java+method:///java/lang/System/exit(int)|",
+      "|java+method:///com/google/inject/Binder/bind(com.google.inject.Key)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///joptsimple/OptionParser/accepts(java.lang.String,java.lang.String)|",
+      "|java+method:///joptsimple/ArgumentAcceptingOptionSpec/ofType(java.lang.Class)|",
+      "|java+method:///com/google/inject/binder/LinkedBindingBuilder/toInstance(java.lang.Object)|",
+      "|java+method:///com/google/inject/Key/get(java.lang.Class,java.lang.annotation.Annotation)|",
+      "|java+method:///joptsimple/OptionSpecBuilder/withOptionalArg()|",
+      "|java+method:///net/sf/uadetector/service/UADetectorServiceFactory/getCachingAndUpdatingParser()|",
+      "|java+method:///joptsimple/ArgumentAcceptingOptionSpec/defaultsTo(java.lang.Object,java.lang.Object%5B%5D)|",
+      "|java+method:///joptsimple/OptionSet/has(java.lang.String)|",
+      "|java+constructor:///net/lightbody/bmp/proxy/guice/NamedImpl/NamedImpl(java.lang.String)|",
+      "|java+method:///joptsimple/ArgumentAcceptingOptionSpec/value(joptsimple.OptionSet)|",
+      "|java+method:///joptsimple/OptionParser/acceptsAll(java.util.Collection,java.lang.String)|",
+      "|java+constructor:///joptsimple/OptionParser/OptionParser()|"
+    ],
+    "affectedLib": "net.sf.uadetector:uadetector-resources:2013.10",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "net.lightbody.bmp:browsermob-proxy:2.0-beta-8",
+    "coordinatesV2": "net.lightbody.bmp:browsermob-proxy:2.0-beta-9",
+    "caller": "|java+initializer:///net/lightbody/bmp/proxy/http/BrowserMobHttpClient/BrowserMobHttpClient$initializer|",
+    "called": "|java+method:///net/sf/uadetector/service/UADetectorServiceFactory/getCachingAndUpdatingParser()|",
+    "v1Body": [
+      "|java+constructor:///net/lightbody/bmp/proxy/util/Log/Log()|",
+      "|java+constructor:///cz/mallat/uasparser/UASparser/UASparser()|",
+      "|java+method:///net/lightbody/bmp/proxy/util/Log/severe(java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///cz/mallat/uasparser/CachingOnlineUpdateUASparser/CachingOnlineUpdateUASparser()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///net/lightbody/bmp/proxy/util/Log/Log()|",
+      "|java+method:///net/sf/uadetector/service/UADetectorServiceFactory/getCachingAndUpdatingParser()|"
+    ],
+    "affectedLib": "net.sf.uadetector:uadetector-resources:2013.10",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "net.lightbody.bmp:browsermob-proxy:2.0-beta-8",
+    "coordinatesV2": "net.lightbody.bmp:browsermob-proxy:2.0-beta-9",
+    "caller": "|java+method:///net/lightbody/bmp/proxy/ProxyServer/seleniumProxy()|",
+    "called": "|java+constructor:///org/openqa/selenium/Proxy/Proxy()|",
+    "v1Body": [
+      "|java+method:///java/net/InetAddress/getLocalHost()|",
+      "|java+constructor:///org/openqa/selenium/Proxy/Proxy()|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///org/openqa/selenium/Proxy/setProxyType(org.openqa.selenium.Proxy$ProxyType)|",
+      "|java+method:///org/openqa/selenium/Proxy/setSslProxy(java.lang.String)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///java/net/InetAddress/getCanonicalHostName()|",
+      "|java+method:///net/lightbody/bmp/proxy/ProxyServer/getPort()|",
+      "|java+method:///org/openqa/selenium/Proxy/setHttpProxy(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///org/openqa/selenium/Proxy/setProxyType(org.openqa.selenium.Proxy$ProxyType)|",
+      "|java+method:///org/openqa/selenium/Proxy/setSslProxy(java.lang.String)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///java/net/InetAddress/getCanonicalHostName()|",
+      "|java+method:///net/lightbody/bmp/proxy/ProxyServer/getPort()|",
+      "|java+method:///org/openqa/selenium/Proxy/setHttpProxy(java.lang.String)|",
+      "|java+constructor:///org/openqa/selenium/Proxy/Proxy()|",
+      "|java+method:///net/lightbody/bmp/proxy/ProxyServer/getLocalHost()|"
+    ],
+    "affectedLib": "org.seleniumhq.selenium:selenium-api:2.37.1",
+    "change": "UPDATED"
+  }
+]

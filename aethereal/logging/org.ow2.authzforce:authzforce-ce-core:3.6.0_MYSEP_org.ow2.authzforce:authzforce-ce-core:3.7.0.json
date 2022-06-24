@@ -1,0 +1,70 @@
+[
+  {
+    "coordinatesV1": "org.ow2.authzforce:authzforce-ce-core:3.6.0",
+    "coordinatesV2": "org.ow2.authzforce:authzforce-ce-core:3.7.0",
+    "caller": "|java+method:///com/sun/xacml/ParsingException/getIndeterminateResult()|",
+    "called": "|java+constructor:///org/ow2/authzforce/core/pdp/api/StatusHelper/StatusHelper(java.lang.String,java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///org/ow2/authzforce/core/StatusHelper/StatusHelper(java.lang.String,java.lang.String)|",
+      "|java+constructor:///org/ow2/authzforce/core/DecisionResult/DecisionResult(oasis.names.tc.xacml._3_0.core.schema.wd_17.Status)|",
+      "|java+method:///com/sun/xacml/ParsingException/getMessage()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/ow2/authzforce/core/pdp/api/StatusHelper/StatusHelper(java.lang.String,java.lang.String)|",
+      "|java+method:///com/sun/xacml/ParsingException/getMessage()|",
+      "|java+constructor:///org/ow2/authzforce/core/pdp/impl/BaseDecisionResult/BaseDecisionResult(oasis.names.tc.xacml._3_0.core.schema.wd_17.Status)|"
+    ],
+    "affectedLib": "org.ow2.authzforce:authzforce-ce-core-pdp-api:3.6.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.ow2.authzforce:authzforce-ce-core:3.6.0",
+    "coordinatesV2": "org.ow2.authzforce:authzforce-ce-core:3.7.0",
+    "caller": "|java+constructor:///com/sun/xacml/NotFunction/NotFunction()|",
+    "called": "|java+constructor:///org/ow2/authzforce/core/pdp/api/FirstOrderFunction$SingleParameterTyped/FirstOrderFunction$SingleParameterTyped(java.lang.String,org.ow2.authzforce.core.pdp.api.Datatype,boolean,java.util.List)|",
+    "v1Body": [
+      "|java+constructor:///org/ow2/authzforce/core/func/FirstOrderFunction$SingleParameterTyped/FirstOrderFunction$SingleParameterTyped(java.lang.String,org.ow2.authzforce.core.value.Datatype,boolean,java.util.List)|",
+      "|java+method:///java/util/Collections/singletonList(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Collections/singletonList(java.lang.Object)|",
+      "|java+constructor:///org/ow2/authzforce/core/pdp/api/FirstOrderFunction$SingleParameterTyped/FirstOrderFunction$SingleParameterTyped(java.lang.String,org.ow2.authzforce.core.pdp.api.Datatype,boolean,java.util.List)|"
+    ],
+    "affectedLib": "org.ow2.authzforce:authzforce-ce-core-pdp-api:3.6.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.ow2.authzforce:authzforce-ce-core:3.6.0",
+    "coordinatesV2": "org.ow2.authzforce:authzforce-ce-core:3.7.0",
+    "caller": "|java+constructor:///com/sun/xacml/TimeInRangeFunction/TimeInRangeFunction()|",
+    "called": "|java+constructor:///org/ow2/authzforce/core/pdp/api/FirstOrderFunction$SingleParameterTyped/FirstOrderFunction$SingleParameterTyped(java.lang.String,org.ow2.authzforce.core.pdp.api.Datatype,boolean,java.util.List)|",
+    "v1Body": [
+      "|java+constructor:///org/ow2/authzforce/core/func/FirstOrderFunction$SingleParameterTyped/FirstOrderFunction$SingleParameterTyped(java.lang.String,org.ow2.authzforce.core.value.Datatype,boolean,java.util.List)|",
+      "|java+method:///java/util/Arrays/asList(java.lang.Object%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Arrays/asList(java.lang.Object%5B%5D)|",
+      "|java+constructor:///org/ow2/authzforce/core/pdp/api/FirstOrderFunction$SingleParameterTyped/FirstOrderFunction$SingleParameterTyped(java.lang.String,org.ow2.authzforce.core.pdp.api.Datatype,boolean,java.util.List)|"
+    ],
+    "affectedLib": "org.ow2.authzforce:authzforce-ce-core-pdp-api:3.6.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.ow2.authzforce:authzforce-ce-core:3.6.0",
+    "coordinatesV2": "org.ow2.authzforce:authzforce-ce-core:3.7.0",
+    "caller": "|java+constructor:///com/sun/xacml/StringNormalizeFunction/StringNormalizeFunction(java.lang.String,com.sun.xacml.StringNormalizeFunction$StringNormalizer)|",
+    "called": "|java+constructor:///org/ow2/authzforce/core/pdp/api/FirstOrderFunction$SingleParameterTyped/FirstOrderFunction$SingleParameterTyped(java.lang.String,org.ow2.authzforce.core.pdp.api.Datatype,boolean,java.util.List)|",
+    "v1Body": [
+      "|java+constructor:///org/ow2/authzforce/core/func/FirstOrderFunction$SingleParameterTyped/FirstOrderFunction$SingleParameterTyped(java.lang.String,org.ow2.authzforce.core.value.Datatype,boolean,java.util.List)|",
+      "|java+method:///java/util/Collections/singletonList(java.lang.Object)|",
+      "|java+constructor:///com/sun/xacml/StringNormalizeFunction$CallFactory/StringNormalizeFunction$CallFactory(org.ow2.authzforce.core.func.FunctionSignature$SingleParameterTyped,com.sun.xacml.StringNormalizeFunction$StringNormalizer)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/sun/xacml/StringNormalizeFunction$CallFactory/StringNormalizeFunction$CallFactory(org.ow2.authzforce.core.pdp.api.FunctionSignature$SingleParameterTyped,com.sun.xacml.StringNormalizeFunction$StringNormalizer)|",
+      "|java+method:///java/util/Collections/singletonList(java.lang.Object)|",
+      "|java+constructor:///org/ow2/authzforce/core/pdp/api/FirstOrderFunction$SingleParameterTyped/FirstOrderFunction$SingleParameterTyped(java.lang.String,org.ow2.authzforce.core.pdp.api.Datatype,boolean,java.util.List)|"
+    ],
+    "affectedLib": "org.ow2.authzforce:authzforce-ce-core-pdp-api:3.6.1",
+    "change": "ADDED"
+  }
+]

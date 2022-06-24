@@ -1,0 +1,30 @@
+[
+  {
+    "coordinatesV1": "org.jiucai:appframework:2.2.0",
+    "coordinatesV2": "org.jiucai:appframework:2.2.1",
+    "caller": "|java+method:///org/jiucai/appframework/common/crypto/AES/encrypt(java.lang.String,java.lang.String)|",
+    "called": "|java+method:///org/bouncycastle/util/encoders/Hex/toHexString(byte%5B%5D)|",
+    "v1Body": [
+      "|java+method:///javax/crypto/KeyGenerator/generateKey()|",
+      "|java+constructor:///javax/crypto/spec/SecretKeySpec/SecretKeySpec(byte%5B%5D,java.lang.String)|",
+      "|java+constructor:///java/security/SecureRandom/SecureRandom(byte%5B%5D)|",
+      "|java+method:///javax/crypto/SecretKey/getEncoded()|",
+      "|java+method:///javax/crypto/Cipher/init(int,java.security.Key)|",
+      "|java+method:///javax/crypto/Cipher/doFinal(byte%5B%5D)|",
+      "|java+method:///javax/crypto/Cipher/getInstance(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/lang/String/getBytes(java.lang.String)|",
+      "|java+method:///javax/crypto/KeyGenerator/init(int,java.security.SecureRandom)|",
+      "|java+method:///javax/crypto/KeyGenerator/getInstance(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/jiucai/appframework/common/crypto/AES/encrypt(byte%5B%5D,byte%5B%5D)|",
+      "|java+method:///org/apache/commons/lang/StringUtils/isBlank(java.lang.String)|",
+      "|java+method:///org/bouncycastle/util/encoders/Hex/toHexString(byte%5B%5D)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/lang/String/getBytes(java.lang.String)|"
+    ],
+    "affectedLib": "org.bouncycastle:bcprov-ext-jdk15on:1.53",
+    "change": "UPDATED"
+  }
+]

@@ -1,0 +1,43 @@
+[
+  {
+    "coordinatesV1": "org.molgenis:molgenis-security-core:6.1.0",
+    "coordinatesV2": "org.molgenis:molgenis-security-core:7.0.0-RC1",
+    "caller": "|java+method:///org/molgenis/security/core/utils/SecurityUtils/currentUserIsAuthenticated()|",
+    "called": "|java+method:///org/springframework/security/core/context/SecurityContextHolder/getContext()|",
+    "v1Body": [
+      "|java+method:///org/springframework/security/core/context/SecurityContext/getAuthentication()|",
+      "|java+method:///org/springframework/security/core/context/SecurityContextHolder/getContext()|",
+      "|java+method:///org/springframework/security/core/Authentication/isAuthenticated()|",
+      "|java+method:///org/molgenis/security/core/utils/SecurityUtils/currentUserHasRole(java.lang.String%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/springframework/security/core/context/SecurityContext/getAuthentication()|",
+      "|java+method:///org/molgenis/security/core/utils/SecurityUtils/currentUserIsAnonymous()|",
+      "|java+method:///org/springframework/security/core/context/SecurityContextHolder/getContext()|",
+      "|java+method:///org/springframework/security/core/Authentication/isAuthenticated()|"
+    ],
+    "affectedLib": "org.springframework.security:spring-security-core:5.0.7.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.molgenis:molgenis-security-core:6.1.0",
+    "coordinatesV2": "org.molgenis:molgenis-security-core:7.0.0-RC1",
+    "caller": "|java+constructor:///org/molgenis/security/core/runas/SystemSecurityToken/SystemSecurityToken()|",
+    "called": "|java+constructor:///org/springframework/security/authentication/UsernamePasswordAuthenticationToken/UsernamePasswordAuthenticationToken(java.lang.Object,java.lang.Object,java.util.Collection)|",
+    "v1Body": [
+      "|java+constructor:///org/springframework/security/authentication/UsernamePasswordAuthenticationToken/UsernamePasswordAuthenticationToken(java.lang.Object,java.lang.Object,java.util.Collection)|",
+      "|java+method:///java/util/Arrays/asList(java.lang.Object%5B%5D)|",
+      "|java+constructor:///org/springframework/security/core/userdetails/User/User(java.lang.String,java.lang.String,java.util.Collection)|",
+      "|java+constructor:///org/springframework/security/core/authority/SimpleGrantedAuthority/SimpleGrantedAuthority(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/springframework/security/authentication/UsernamePasswordAuthenticationToken/UsernamePasswordAuthenticationToken(java.lang.Object,java.lang.Object,java.util.Collection)|",
+      "|java+method:///java/util/Arrays/asList(java.lang.Object%5B%5D)|",
+      "|java+constructor:///org/springframework/security/core/userdetails/User/User(java.lang.String,java.lang.String,java.util.Collection)|",
+      "|java+constructor:///org/springframework/security/core/authority/SimpleGrantedAuthority/SimpleGrantedAuthority(java.lang.String)|",
+      "|java+method:///java/util/Collections/singletonList(java.lang.Object)|"
+    ],
+    "affectedLib": "org.springframework.security:spring-security-core:5.0.7.RELEASE",
+    "change": "UPDATED"
+  }
+]

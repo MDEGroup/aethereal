@@ -1,0 +1,389 @@
+[
+  {
+    "coordinatesV1": "org.hibernate:hibernate-ehcache:4.0.0.Alpha2",
+    "coordinatesV2": "org.hibernate:hibernate-ehcache:3.6.10.Final",
+    "caller": "|java+initializer:///org/hibernate/cache/EhCache/EhCache$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+method:///org/jboss/logging/Logger/getMessageLogger(java.lang.Class,java.lang.String)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.6.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.hibernate:hibernate-ehcache:4.0.0.Alpha2",
+    "coordinatesV2": "org.hibernate:hibernate-ehcache:3.6.10.Final",
+    "caller": "|java+initializer:///org/hibernate/cache/EhCacheProvider/EhCacheProvider$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+method:///org/jboss/logging/Logger/getMessageLogger(java.lang.Class,java.lang.String)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.6.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.hibernate:hibernate-ehcache:3.6.10.Final",
+    "coordinatesV2": "org.hibernate:hibernate-ehcache:4.0.0.Alpha2",
+    "caller": "|java+initializer:///org/hibernate/cache/EhCache/EhCache$initializer|",
+    "called": "|java+method:///org/jboss/logging/Logger/getMessageLogger(java.lang.Class,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+method:///org/jboss/logging/Logger/getMessageLogger(java.lang.Class,java.lang.String)|"
+    ],
+    "affectedLib": "org.jboss.logging:jboss-logging:3.0.0.Beta5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.hibernate:hibernate-ehcache:3.6.10.Final",
+    "coordinatesV2": "org.hibernate:hibernate-ehcache:4.0.0.Alpha2",
+    "caller": "|java+initializer:///org/hibernate/cache/SingletonEhCacheProvider/SingletonEhCacheProvider$initializer|",
+    "called": "|java+method:///org/jboss/logging/Logger/getMessageLogger(java.lang.Class,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/util/logging/Logger/getLogger(java.lang.String)|",
+      "|java+method:///java/lang/Class/getName()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+method:///org/jboss/logging/Logger/getMessageLogger(java.lang.Class,java.lang.String)|"
+    ],
+    "affectedLib": "org.jboss.logging:jboss-logging:3.0.0.Beta5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.hibernate:hibernate-ehcache:3.6.10.Final",
+    "coordinatesV2": "org.hibernate:hibernate-ehcache:4.0.0.Alpha2",
+    "caller": "|java+initializer:///org/hibernate/cache/EhCacheProvider/EhCacheProvider$initializer|",
+    "called": "|java+method:///org/jboss/logging/Logger/getMessageLogger(java.lang.Class,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+method:///org/jboss/logging/Logger/getMessageLogger(java.lang.Class,java.lang.String)|"
+    ],
+    "affectedLib": "org.jboss.logging:jboss-logging:3.0.0.Beta5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.hibernate:hibernate-ehcache:3.6.10.Final",
+    "coordinatesV2": "org.hibernate:hibernate-ehcache:4.0.0.Alpha2",
+    "caller": "|java+method:///org/hibernate/cache/EhCacheProvider/loadResource(java.lang.String)|",
+    "called": "|java+method:///org/hibernate/internal/util/ConfigHelper/locateConfig(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+method:///org/hibernate/util/ConfigHelper/locateConfig(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///org/slf4j/Logger/isDebugEnabled()|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/hibernate/internal/util/ConfigHelper/locateConfig(java.lang.String)|",
+      "|java+method:///org/hibernate/cache/EhCacheLogger/debugf(java.lang.String,java.lang.Object,java.lang.Object)|"
+    ],
+    "affectedLib": "org.hibernate:hibernate-core:4.0.0.Alpha2",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.hibernate:hibernate-ehcache:3.6.10.Final",
+    "coordinatesV2": "org.hibernate:hibernate-ehcache:4.0.0.Alpha2",
+    "caller": "|java+method:///org/hibernate/cache/EhCache/get(java.lang.Object)|",
+    "called": "|java+constructor:///org/hibernate/cache/CacheException/CacheException(java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+method:///net/sf/ehcache/Element/getObjectValue()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///org/hibernate/cache/CacheException/CacheException(java.lang.Throwable)|",
+      "|java+method:///net/sf/ehcache/Ehcache/get(java.lang.Object)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///org/slf4j/Logger/isDebugEnabled()|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "v2Body": [
+      "|java+method:///net/sf/ehcache/Element/getObjectValue()|",
+      "|java+method:///org/hibernate/cache/EhCacheLogger/debugf(java.lang.String,java.lang.Object)|",
+      "|java+constructor:///org/hibernate/cache/CacheException/CacheException(java.lang.Throwable)|",
+      "|java+method:///net/sf/ehcache/Ehcache/get(java.lang.Object)|"
+    ],
+    "affectedLib": "org.hibernate:hibernate-core:4.0.0.Alpha2",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.hibernate:hibernate-ehcache:3.6.10.Final",
+    "coordinatesV2": "org.hibernate:hibernate-ehcache:4.0.0.Alpha2",
+    "caller": "|java+method:///org/hibernate/cache/SingletonEhCacheProvider/buildCache(java.lang.String,java.util.Properties)|",
+    "called": "|java+constructor:///org/hibernate/cache/CacheException/CacheException(java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///java/util/logging/Logger/warning(java.lang.String)|",
+      "|java+constructor:///org/hibernate/cache/CacheException/CacheException(java.lang.Throwable)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///org/hibernate/cache/EhCache/EhCache(net.sf.ehcache.Ehcache)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/util/logging/Logger/fine(java.lang.String)|",
+      "|java+method:///net/sf/ehcache/CacheManager/addCache(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///net/sf/ehcache/CacheManager/getEhcache(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///net/sf/ehcache/CacheManager/addCache(java.lang.String)|",
+      "|java+method:///org/hibernate/cache/EhCacheLogger/debugf(java.lang.String,java.lang.Object)|",
+      "|java+constructor:///org/hibernate/cache/CacheException/CacheException(java.lang.Throwable)|",
+      "|java+constructor:///org/hibernate/cache/EhCache/EhCache(net.sf.ehcache.Ehcache)|",
+      "|java+method:///org/hibernate/cache/EhCacheLogger/unableToFindEhCacheConfiguration(java.lang.String)|",
+      "|java+method:///net/sf/ehcache/CacheManager/getEhcache(java.lang.String)|"
+    ],
+    "affectedLib": "org.hibernate:hibernate-core:4.0.0.Alpha2",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.hibernate:hibernate-ehcache:3.6.10.Final",
+    "coordinatesV2": "org.hibernate:hibernate-ehcache:4.0.0.Alpha2",
+    "caller": "|java+method:///org/hibernate/cache/EhCacheProvider/buildCache(java.lang.String,java.util.Properties)|",
+    "called": "|java+constructor:///org/hibernate/cache/CacheException/CacheException(java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///org/hibernate/cache/EhCache/EhCache(net.sf.ehcache.Ehcache)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+method:///net/sf/ehcache/CacheManager/addCache(java.lang.String)|",
+      "|java+method:///net/sf/ehcache/CacheManager/getCache(java.lang.String)|",
+      "|java+constructor:///org/hibernate/cache/CacheException/CacheException(java.lang.Throwable)|"
+    ],
+    "v2Body": [
+      "|java+method:///net/sf/ehcache/CacheManager/addCache(java.lang.String)|",
+      "|java+method:///org/hibernate/cache/EhCacheLogger/debugf(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/hibernate/cache/EhCacheLogger/unableToFindConfiguration(java.lang.String)|",
+      "|java+constructor:///org/hibernate/cache/EhCache/EhCache(net.sf.ehcache.Ehcache)|",
+      "|java+method:///net/sf/ehcache/CacheManager/getCache(java.lang.String)|",
+      "|java+constructor:///org/hibernate/cache/CacheException/CacheException(java.lang.Throwable)|"
+    ],
+    "affectedLib": "org.hibernate:hibernate-core:4.0.0.Alpha2",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.hibernate:hibernate-ehcache:3.6.10.Final",
+    "coordinatesV2": "org.hibernate:hibernate-ehcache:4.0.0.Alpha2",
+    "caller": "|java+method:///org/hibernate/cache/EhCacheProvider/start(java.util.Properties)|",
+    "called": "|java+constructor:///org/hibernate/cache/CacheException/CacheException(java.lang.String,java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///java/util/Properties/get(java.lang.Object)|",
+      "|java+constructor:///net/sf/ehcache/CacheManager/CacheManager(java.net.URL)|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String)|",
+      "|java+method:///org/hibernate/util/StringHelper/isEmpty(java.lang.String)|",
+      "|java+method:///net/sf/ehcache/CacheException/getMessage()|",
+      "|java+constructor:///net/sf/ehcache/CacheManager/CacheManager()|",
+      "|java+method:///org/hibernate/cache/EhCacheProvider/loadResource(java.lang.String)|",
+      "|java+method:///java/lang/String/startsWith(java.lang.String)|",
+      "|java+constructor:///org/hibernate/cache/CacheException/CacheException(java.lang.String,java.lang.Throwable)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Properties/get(java.lang.Object)|",
+      "|java+constructor:///net/sf/ehcache/CacheManager/CacheManager(java.net.URL)|",
+      "|java+method:///org/hibernate/cache/EhCacheLogger/attemptToRestartAlreadyStartedEhCacheProvider()|",
+      "|java+method:///org/hibernate/internal/util/StringHelper/isEmpty(java.lang.String)|",
+      "|java+method:///net/sf/ehcache/CacheException/getMessage()|",
+      "|java+constructor:///net/sf/ehcache/CacheManager/CacheManager()|",
+      "|java+method:///org/hibernate/cache/EhCacheProvider/loadResource(java.lang.String)|",
+      "|java+method:///java/lang/String/startsWith(java.lang.String)|",
+      "|java+constructor:///org/hibernate/cache/CacheException/CacheException(java.lang.String,java.lang.Throwable)|"
+    ],
+    "affectedLib": "org.hibernate:hibernate-core:4.0.0.Alpha2",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.hibernate:hibernate-ehcache:3.6.10.Final",
+    "coordinatesV2": "org.hibernate:hibernate-ehcache:4.0.0.Alpha2",
+    "caller": "|java+constructor:///org/hibernate/cache/SingletonEhCacheRegionFactory/SingletonEhCacheRegionFactory(java.util.Properties)|",
+    "called": "|java+constructor:///net/sf/ehcache/hibernate/SingletonEhCacheRegionFactory/SingletonEhCacheRegionFactory(java.util.Properties)|",
+    "v1Body": [
+      "|java+constructor:///org/hibernate/cache/DelegatingRegionFactory/DelegatingRegionFactory(org.hibernate.cache.RegionFactory)|",
+      "|java+constructor:///net/sf/ehcache/hibernate/SingletonEhCacheRegionFactory/SingletonEhCacheRegionFactory(java.util.Properties)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///net/sf/ehcache/hibernate/SingletonEhCacheRegionFactory/SingletonEhCacheRegionFactory(java.util.Properties)|",
+      "|java+constructor:///org/hibernate/cache/AbstractEhCacheRegionFactory/AbstractEhCacheRegionFactory(org.hibernate.cache.RegionFactory)|"
+    ],
+    "affectedLib": "net.sf.ehcache:ehcache-core:2.3.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.hibernate:hibernate-ehcache:3.6.10.Final",
+    "coordinatesV2": "org.hibernate:hibernate-ehcache:4.0.0.Alpha2",
+    "caller": "|java+constructor:///org/hibernate/cache/EhCacheRegionFactory/EhCacheRegionFactory(java.util.Properties)|",
+    "called": "|java+constructor:///net/sf/ehcache/hibernate/EhCacheRegionFactory/EhCacheRegionFactory(java.util.Properties)|",
+    "v1Body": [
+      "|java+constructor:///net/sf/ehcache/hibernate/EhCacheRegionFactory/EhCacheRegionFactory(java.util.Properties)|",
+      "|java+constructor:///org/hibernate/cache/DelegatingRegionFactory/DelegatingRegionFactory(org.hibernate.cache.RegionFactory)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///net/sf/ehcache/hibernate/EhCacheRegionFactory/EhCacheRegionFactory(java.util.Properties)|",
+      "|java+constructor:///org/hibernate/cache/AbstractEhCacheRegionFactory/AbstractEhCacheRegionFactory(org.hibernate.cache.RegionFactory)|"
+    ],
+    "affectedLib": "net.sf.ehcache:ehcache-core:2.3.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.hibernate:hibernate-ehcache:3.6.10.Final",
+    "coordinatesV2": "org.hibernate:hibernate-ehcache:4.0.0.Alpha2",
+    "caller": "|java+method:///org/hibernate/cache/EhCacheProvider/buildCache(java.lang.String,java.util.Properties)|",
+    "called": "|java+method:///net/sf/ehcache/CacheManager/addCache(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///org/hibernate/cache/EhCache/EhCache(net.sf.ehcache.Ehcache)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+method:///net/sf/ehcache/CacheManager/addCache(java.lang.String)|",
+      "|java+method:///net/sf/ehcache/CacheManager/getCache(java.lang.String)|",
+      "|java+constructor:///org/hibernate/cache/CacheException/CacheException(java.lang.Throwable)|"
+    ],
+    "v2Body": [
+      "|java+method:///net/sf/ehcache/CacheManager/addCache(java.lang.String)|",
+      "|java+method:///org/hibernate/cache/EhCacheLogger/debugf(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/hibernate/cache/EhCacheLogger/unableToFindConfiguration(java.lang.String)|",
+      "|java+constructor:///org/hibernate/cache/EhCache/EhCache(net.sf.ehcache.Ehcache)|",
+      "|java+method:///net/sf/ehcache/CacheManager/getCache(java.lang.String)|",
+      "|java+constructor:///org/hibernate/cache/CacheException/CacheException(java.lang.Throwable)|"
+    ],
+    "affectedLib": "net.sf.ehcache:ehcache-core:2.3.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.hibernate:hibernate-ehcache:3.6.10.Final",
+    "coordinatesV2": "org.hibernate:hibernate-ehcache:4.0.0.Alpha2",
+    "caller": "|java+method:///org/hibernate/cache/SingletonEhCacheProvider/buildCache(java.lang.String,java.util.Properties)|",
+    "called": "|java+method:///net/sf/ehcache/CacheManager/getEhcache(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/util/logging/Logger/warning(java.lang.String)|",
+      "|java+constructor:///org/hibernate/cache/CacheException/CacheException(java.lang.Throwable)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///org/hibernate/cache/EhCache/EhCache(net.sf.ehcache.Ehcache)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/util/logging/Logger/fine(java.lang.String)|",
+      "|java+method:///net/sf/ehcache/CacheManager/addCache(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///net/sf/ehcache/CacheManager/getEhcache(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///net/sf/ehcache/CacheManager/addCache(java.lang.String)|",
+      "|java+method:///org/hibernate/cache/EhCacheLogger/debugf(java.lang.String,java.lang.Object)|",
+      "|java+constructor:///org/hibernate/cache/CacheException/CacheException(java.lang.Throwable)|",
+      "|java+constructor:///org/hibernate/cache/EhCache/EhCache(net.sf.ehcache.Ehcache)|",
+      "|java+method:///org/hibernate/cache/EhCacheLogger/unableToFindEhCacheConfiguration(java.lang.String)|",
+      "|java+method:///net/sf/ehcache/CacheManager/getEhcache(java.lang.String)|"
+    ],
+    "affectedLib": "net.sf.ehcache:ehcache-core:2.3.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.hibernate:hibernate-ehcache:3.6.10.Final",
+    "coordinatesV2": "org.hibernate:hibernate-ehcache:4.0.0.Alpha2",
+    "caller": "|java+method:///org/hibernate/cache/SingletonEhCacheProvider/loadResource(java.lang.String)|",
+    "called": "|java+method:///net/sf/ehcache/util/ClassLoaderUtil/getStandardClassLoader()|",
+    "v1Body": [
+      "|java+method:///java/util/logging/Logger/fine(java.lang.String)|",
+      "|java+method:///java/util/logging/Logger/warning(java.lang.String)|",
+      "|java+method:///java/lang/ClassLoader/getResource(java.lang.String)|",
+      "|java+method:///net/sf/ehcache/util/ClassLoaderUtil/getStandardClassLoader()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/Class/getResource(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/util/logging/Logger/isLoggable(java.util.logging.Level)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/ClassLoader/getResource(java.lang.String)|",
+      "|java+method:///org/hibernate/cache/EhCacheLogger/unableToLoadConfiguration(java.lang.String)|",
+      "|java+method:///java/lang/Class/getResource(java.lang.String)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///org/hibernate/cache/EhCacheLogger/debugf(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/hibernate/cache/EhCacheLogger/isEnabled(org.jboss.logging.Logger$Level)|",
+      "|java+method:///net/sf/ehcache/util/ClassLoaderUtil/getStandardClassLoader()|",
+      "|java+method:///org/hibernate/cache/EhCacheLogger/isDebugEnabled()|"
+    ],
+    "affectedLib": "net.sf.ehcache:ehcache-core:2.3.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.hibernate:hibernate-ehcache:3.6.10.Final",
+    "coordinatesV2": "org.hibernate:hibernate-ehcache:4.0.0.Alpha2",
+    "caller": "|java+method:///org/hibernate/cache/EhCacheProvider/start(java.util.Properties)|",
+    "called": "|java+constructor:///net/sf/ehcache/CacheManager/CacheManager()|",
+    "v1Body": [
+      "|java+method:///java/util/Properties/get(java.lang.Object)|",
+      "|java+constructor:///net/sf/ehcache/CacheManager/CacheManager(java.net.URL)|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String)|",
+      "|java+method:///org/hibernate/util/StringHelper/isEmpty(java.lang.String)|",
+      "|java+method:///net/sf/ehcache/CacheException/getMessage()|",
+      "|java+constructor:///net/sf/ehcache/CacheManager/CacheManager()|",
+      "|java+method:///org/hibernate/cache/EhCacheProvider/loadResource(java.lang.String)|",
+      "|java+method:///java/lang/String/startsWith(java.lang.String)|",
+      "|java+constructor:///org/hibernate/cache/CacheException/CacheException(java.lang.String,java.lang.Throwable)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Properties/get(java.lang.Object)|",
+      "|java+constructor:///net/sf/ehcache/CacheManager/CacheManager(java.net.URL)|",
+      "|java+method:///org/hibernate/cache/EhCacheLogger/attemptToRestartAlreadyStartedEhCacheProvider()|",
+      "|java+method:///org/hibernate/internal/util/StringHelper/isEmpty(java.lang.String)|",
+      "|java+method:///net/sf/ehcache/CacheException/getMessage()|",
+      "|java+constructor:///net/sf/ehcache/CacheManager/CacheManager()|",
+      "|java+method:///org/hibernate/cache/EhCacheProvider/loadResource(java.lang.String)|",
+      "|java+method:///java/lang/String/startsWith(java.lang.String)|",
+      "|java+constructor:///org/hibernate/cache/CacheException/CacheException(java.lang.String,java.lang.Throwable)|"
+    ],
+    "affectedLib": "net.sf.ehcache:ehcache-core:2.3.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.hibernate:hibernate-ehcache:3.6.10.Final",
+    "coordinatesV2": "org.hibernate:hibernate-ehcache:4.0.0.Alpha2",
+    "caller": "|java+method:///org/hibernate/cache/SingletonEhCacheProvider/start(java.util.Properties)|",
+    "called": "|java+method:///net/sf/ehcache/CacheManager/create()|",
+    "v1Body": [
+      "|java+method:///java/util/Properties/get(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/String/length()|",
+      "|java+method:///net/sf/ehcache/CacheManager/create(java.net.URL)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/String/startsWith(java.lang.String)|",
+      "|java+method:///org/hibernate/cache/SingletonEhCacheProvider/loadResource(java.lang.String)|",
+      "|java+method:///java/util/logging/Logger/fine(java.lang.String)|",
+      "|java+method:///net/sf/ehcache/CacheManager/create()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/util/logging/Logger/isLoggable(java.util.logging.Level)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Properties/get(java.lang.Object)|",
+      "|java+method:///org/hibernate/cache/EhCacheLogger/isDebugEnabled()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/hibernate/cache/EhCacheLogger/debugf(java.lang.String,java.lang.Object)|",
+      "|java+method:///java/lang/String/length()|",
+      "|java+method:///net/sf/ehcache/CacheManager/create(java.net.URL)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/String/startsWith(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/hibernate/cache/SingletonEhCacheProvider/loadResource(java.lang.String)|",
+      "|java+method:///net/sf/ehcache/CacheManager/create()|"
+    ],
+    "affectedLib": "net.sf.ehcache:ehcache-core:2.3.1",
+    "change": "UPDATED"
+  }
+]

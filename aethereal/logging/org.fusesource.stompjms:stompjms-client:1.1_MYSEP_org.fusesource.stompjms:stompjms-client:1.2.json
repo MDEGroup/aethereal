@@ -1,0 +1,277 @@
+[
+  {
+    "coordinatesV1": "org.fusesource.stompjms:stompjms-client:1.2",
+    "coordinatesV2": "org.fusesource.stompjms:stompjms-client:1.1",
+    "caller": "|java+initializer:///org/fusesource/stompjms/jndi/ReadOnlyContext/ReadOnlyContext$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+constructor:///org/fusesource/stompjms/jndi/NameParserImpl/NameParserImpl()|",
+      "|java+method:///java/lang/Class/desiredAssertionStatus()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/fusesource/stompjms/jndi/NameParserImpl/NameParserImpl()|",
+      "|java+method:///java/lang/Class/desiredAssertionStatus()|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.6.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.fusesource.stompjms:stompjms-client:1.1",
+    "coordinatesV2": "org.fusesource.stompjms:stompjms-client:1.2",
+    "caller": "|java+constructor:///org/fusesource/stompjms/StompJmsMessageConsumer/StompJmsMessageConsumer(org.fusesource.hawtbuf.AsciiBuffer,org.fusesource.stompjms.StompJmsSession,org.fusesource.stompjms.StompJmsDestination,java.lang.String)|",
+    "called": "|java+method:///org/fusesource/hawtdispatch/Dispatch/createSource(org.fusesource.hawtdispatch.EventAggregator,org.fusesource.hawtdispatch.DispatchQueue)|",
+    "v1Body": [
+      "|java+constructor:///java/util/concurrent/locks/ReentrantLock/ReentrantLock()|",
+      "|java+constructor:///org/fusesource/stompjms/MessageQueue/MessageQueue()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/fusesource/stompjms/client/callback/Connection/getDispatchQueue()|",
+      "|java+constructor:///java/util/concurrent/locks/ReentrantLock/ReentrantLock()|",
+      "|java+method:///org/fusesource/hawtdispatch/CustomDispatchSource/setEventHandler(java.lang.Runnable)|",
+      "|java+constructor:///org/fusesource/stompjms/MessageQueue/MessageQueue()|",
+      "|java+method:///org/fusesource/hawtdispatch/Dispatch/createSource(org.fusesource.hawtdispatch.EventAggregator,org.fusesource.hawtdispatch.DispatchQueue)|",
+      "|java+constructor:///org/fusesource/stompjms/StompJmsMessageConsumer$2/StompJmsMessageConsumer$2(org.fusesource.stompjms.StompJmsMessageConsumer,org.fusesource.hawtbuf.AsciiBuffer)|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///org/fusesource/hawtdispatch/CustomDispatchSource/resume()|",
+      "|java+constructor:///org/fusesource/stompjms/StompJmsMessageConsumer$1/StompJmsMessageConsumer$1(org.fusesource.stompjms.StompJmsMessageConsumer)|"
+    ],
+    "affectedLib": "org.fusesource.hawtdispatch:hawtdispatch:1.4",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.fusesource.stompjms:stompjms-client:1.1",
+    "coordinatesV2": "org.fusesource.stompjms:stompjms-client:1.2",
+    "caller": "|java+method:///org/fusesource/stompjms/message/StompJmsMessage/getBooleanHeader(org.fusesource.hawtbuf.AsciiBuffer)|",
+    "called": "|java+method:///org/fusesource/hawtbuf/AsciiBuffer/toString()|",
+    "v1Body": [
+      "|java+method:///org/fusesource/hawtbuf/AsciiBuffer/toString()|",
+      "|java+method:///java/lang/Boolean/parseBoolean(java.lang.String)|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+method:///java/lang/Boolean/valueOf(boolean)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/fusesource/hawtbuf/AsciiBuffer/toString()|",
+      "|java+method:///java/lang/Boolean/parseBoolean(java.lang.String)|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+method:///org/fusesource/stompjms/client/StompFrame/headerMap()|",
+      "|java+method:///java/lang/Boolean/valueOf(boolean)|"
+    ],
+    "affectedLib": "org.fusesource.hawtbuf:hawtbuf:1.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.fusesource.stompjms:stompjms-client:1.1",
+    "coordinatesV2": "org.fusesource.stompjms:stompjms-client:1.2",
+    "caller": "|java+method:///org/fusesource/stompjms/message/StompJmsMessage/setDestinationHeader(org.fusesource.hawtbuf.AsciiBuffer,org.fusesource.stompjms.StompJmsDestination)|",
+    "called": "|java+method:///org/fusesource/hawtbuf/Buffer/ascii(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/fusesource/stompjms/StompJmsDestination/toString()|",
+      "|java+method:///org/fusesource/hawtbuf/Buffer/ascii(java.lang.String)|",
+      "|java+method:///java/util/Map/remove(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/fusesource/stompjms/StompJmsDestination/toString()|",
+      "|java+method:///org/fusesource/hawtbuf/Buffer/ascii(java.lang.String)|",
+      "|java+method:///org/fusesource/stompjms/client/StompFrame/headerMap()|",
+      "|java+method:///java/util/Map/remove(java.lang.Object)|"
+    ],
+    "affectedLib": "org.fusesource.hawtbuf:hawtbuf:1.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.fusesource.stompjms:stompjms-client:1.1",
+    "coordinatesV2": "org.fusesource.stompjms:stompjms-client:1.2",
+    "caller": "|java+method:///org/fusesource/stompjms/message/StompJmsMessage/setIntegerHeader(org.fusesource.hawtbuf.AsciiBuffer,java.lang.Integer)|",
+    "called": "|java+method:///org/fusesource/hawtbuf/Buffer/ascii(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/lang/Integer/toString()|",
+      "|java+method:///org/fusesource/hawtbuf/Buffer/ascii(java.lang.String)|",
+      "|java+method:///java/util/Map/remove(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/lang/Integer/toString()|",
+      "|java+method:///org/fusesource/hawtbuf/Buffer/ascii(java.lang.String)|",
+      "|java+method:///org/fusesource/stompjms/client/StompFrame/headerMap()|",
+      "|java+method:///java/util/Map/remove(java.lang.Object)|"
+    ],
+    "affectedLib": "org.fusesource.hawtbuf:hawtbuf:1.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.fusesource.stompjms:stompjms-client:1.1",
+    "coordinatesV2": "org.fusesource.stompjms:stompjms-client:1.2",
+    "caller": "|java+method:///org/fusesource/stompjms/message/StompJmsMessage/getStringHeader(org.fusesource.hawtbuf.AsciiBuffer)|",
+    "called": "|java+method:///org/fusesource/hawtbuf/AsciiBuffer/toString()|",
+    "v1Body": [
+      "|java+method:///org/fusesource/hawtbuf/AsciiBuffer/toString()|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/fusesource/hawtbuf/AsciiBuffer/toString()|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+method:///org/fusesource/stompjms/client/StompFrame/headerMap()|"
+    ],
+    "affectedLib": "org.fusesource.hawtbuf:hawtbuf:1.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.fusesource.stompjms:stompjms-client:1.1",
+    "coordinatesV2": "org.fusesource.stompjms:stompjms-client:1.2",
+    "caller": "|java+method:///org/fusesource/stompjms/message/StompJmsMessage/setBytesHeader(org.fusesource.hawtbuf.AsciiBuffer,byte%5B%5D)|",
+    "called": "|java+method:///org/fusesource/hawtbuf/Buffer/ascii()|",
+    "v1Body": [
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///org/fusesource/hawtbuf/Buffer/Buffer(byte%5B%5D)|",
+      "|java+method:///org/fusesource/hawtbuf/Buffer/deepCopy()|",
+      "|java+method:///org/fusesource/hawtbuf/Buffer/ascii()|",
+      "|java+method:///java/util/Map/remove(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///org/fusesource/hawtbuf/Buffer/Buffer(byte%5B%5D)|",
+      "|java+method:///org/fusesource/hawtbuf/Buffer/deepCopy()|",
+      "|java+method:///org/fusesource/stompjms/client/StompFrame/headerMap()|",
+      "|java+method:///org/fusesource/hawtbuf/Buffer/ascii()|",
+      "|java+method:///java/util/Map/remove(java.lang.Object)|"
+    ],
+    "affectedLib": "org.fusesource.hawtbuf:hawtbuf:1.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.fusesource.stompjms:stompjms-client:1.1",
+    "coordinatesV2": "org.fusesource.stompjms:stompjms-client:1.2",
+    "caller": "|java+method:///org/fusesource/stompjms/message/StompJmsMessage/setLongHeader(org.fusesource.hawtbuf.AsciiBuffer,java.lang.Long)|",
+    "called": "|java+method:///org/fusesource/hawtbuf/Buffer/ascii(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/lang/Long/toString()|",
+      "|java+method:///org/fusesource/hawtbuf/Buffer/ascii(java.lang.String)|",
+      "|java+method:///java/util/Map/remove(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/lang/Long/toString()|",
+      "|java+method:///org/fusesource/hawtbuf/Buffer/ascii(java.lang.String)|",
+      "|java+method:///org/fusesource/stompjms/client/StompFrame/headerMap()|",
+      "|java+method:///java/util/Map/remove(java.lang.Object)|"
+    ],
+    "affectedLib": "org.fusesource.hawtbuf:hawtbuf:1.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.fusesource.stompjms:stompjms-client:1.1",
+    "coordinatesV2": "org.fusesource.stompjms:stompjms-client:1.2",
+    "caller": "|java+method:///org/fusesource/stompjms/message/StompJmsMessage/getLongHeader(org.fusesource.hawtbuf.AsciiBuffer)|",
+    "called": "|java+method:///org/fusesource/hawtbuf/AsciiBuffer/toString()|",
+    "v1Body": [
+      "|java+method:///org/fusesource/hawtbuf/AsciiBuffer/toString()|",
+      "|java+method:///java/lang/Long/parseLong(java.lang.String)|",
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/fusesource/hawtbuf/AsciiBuffer/toString()|",
+      "|java+method:///java/lang/Long/parseLong(java.lang.String)|",
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+method:///org/fusesource/stompjms/client/StompFrame/headerMap()|"
+    ],
+    "affectedLib": "org.fusesource.hawtbuf:hawtbuf:1.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.fusesource.stompjms:stompjms-client:1.1",
+    "coordinatesV2": "org.fusesource.stompjms:stompjms-client:1.2",
+    "caller": "|java+method:///org/fusesource/stompjms/StompJmsSession/getNextMessageId()|",
+    "called": "|java+method:///org/fusesource/hawtbuf/ByteArrayOutputStream/write(org.fusesource.hawtbuf.Buffer)|",
+    "v1Body": [
+      "|java+method:///org/fusesource/stompjms/channel/StompChannel/getSession()|",
+      "|java+constructor:///org/fusesource/hawtbuf/ByteArrayOutputStream/ByteArrayOutputStream(int)|",
+      "|java+method:///org/fusesource/hawtbuf/ByteArrayOutputStream/toBuffer()|",
+      "|java+method:///org/fusesource/hawtbuf/Buffer/ascii(java.lang.String)|",
+      "|java+method:///org/fusesource/hawtbuf/ByteArrayOutputStream/write(int)|",
+      "|java+method:///org/fusesource/hawtbuf/Buffer/ascii()|",
+      "|java+method:///org/fusesource/hawtbuf/AsciiBuffer/length()|",
+      "|java+method:///org/fusesource/hawtbuf/ByteArrayOutputStream/write(org.fusesource.hawtbuf.Buffer)|",
+      "|java+method:///java/lang/Long/toString(long)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/fusesource/hawtbuf/ByteArrayOutputStream/ByteArrayOutputStream(int)|",
+      "|java+method:///org/fusesource/hawtbuf/ByteArrayOutputStream/toBuffer()|",
+      "|java+method:///org/fusesource/hawtbuf/Buffer/ascii(java.lang.String)|",
+      "|java+method:///org/fusesource/hawtbuf/ByteArrayOutputStream/write(int)|",
+      "|java+method:///org/fusesource/stompjms/StompChannel/sessionId()|",
+      "|java+method:///org/fusesource/hawtbuf/Buffer/ascii()|",
+      "|java+method:///org/fusesource/hawtbuf/AsciiBuffer/length()|",
+      "|java+method:///org/fusesource/hawtbuf/ByteArrayOutputStream/write(org.fusesource.hawtbuf.Buffer)|",
+      "|java+method:///java/lang/Long/toString(long)|"
+    ],
+    "affectedLib": "org.fusesource.hawtbuf:hawtbuf:1.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.fusesource.stompjms:stompjms-client:1.1",
+    "coordinatesV2": "org.fusesource.stompjms:stompjms-client:1.2",
+    "caller": "|java+method:///org/fusesource/stompjms/message/StompJmsMessage/setStringHeader(org.fusesource.hawtbuf.AsciiBuffer,java.lang.String)|",
+    "called": "|java+method:///org/fusesource/hawtbuf/Buffer/ascii(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/fusesource/hawtbuf/Buffer/ascii(java.lang.String)|",
+      "|java+method:///java/util/Map/remove(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/fusesource/hawtbuf/Buffer/ascii(java.lang.String)|",
+      "|java+method:///org/fusesource/stompjms/client/StompFrame/headerMap()|",
+      "|java+method:///java/util/Map/remove(java.lang.Object)|"
+    ],
+    "affectedLib": "org.fusesource.hawtbuf:hawtbuf:1.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.fusesource.stompjms:stompjms-client:1.1",
+    "coordinatesV2": "org.fusesource.stompjms:stompjms-client:1.2",
+    "caller": "|java+method:///org/fusesource/stompjms/message/StompJmsMessage/getIntegerHeader(org.fusesource.hawtbuf.AsciiBuffer)|",
+    "called": "|java+method:///org/fusesource/hawtbuf/AsciiBuffer/toString()|",
+    "v1Body": [
+      "|java+method:///org/fusesource/hawtbuf/AsciiBuffer/toString()|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+method:///java/lang/Integer/parseInt(java.lang.String)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/fusesource/hawtbuf/AsciiBuffer/toString()|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+method:///org/fusesource/stompjms/client/StompFrame/headerMap()|",
+      "|java+method:///java/lang/Integer/parseInt(java.lang.String)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|"
+    ],
+    "affectedLib": "org.fusesource.hawtbuf:hawtbuf:1.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.fusesource.stompjms:stompjms-client:1.1",
+    "coordinatesV2": "org.fusesource.stompjms:stompjms-client:1.2",
+    "caller": "|java+method:///org/fusesource/stompjms/message/StompJmsMessage/getDestinationHeader(org.fusesource.hawtbuf.AsciiBuffer)|",
+    "called": "|java+method:///org/fusesource/hawtbuf/AsciiBuffer/toString()|",
+    "v1Body": [
+      "|java+method:///org/fusesource/hawtbuf/AsciiBuffer/toString()|",
+      "|java+method:///org/fusesource/stompjms/StompJmsDestination/createDestination(java.lang.String)|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/fusesource/hawtbuf/AsciiBuffer/toString()|",
+      "|java+method:///org/fusesource/stompjms/StompJmsDestination/createDestination(java.lang.String)|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+method:///org/fusesource/stompjms/client/StompFrame/headerMap()|"
+    ],
+    "affectedLib": "org.fusesource.hawtbuf:hawtbuf:1.6",
+    "change": "UPDATED"
+  }
+]

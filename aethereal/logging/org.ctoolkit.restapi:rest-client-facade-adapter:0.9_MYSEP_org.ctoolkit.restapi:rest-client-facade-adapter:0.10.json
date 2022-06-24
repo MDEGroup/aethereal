@@ -1,0 +1,69 @@
+[
+  {
+    "coordinatesV1": "org.ctoolkit.restapi:rest-client-facade-adapter:0.9",
+    "coordinatesV2": "org.ctoolkit.restapi:rest-client-facade-adapter:0.10",
+    "caller": "|java+method:///org/ctoolkit/restapi/client/adapter/ResourceFacadeAdapter/newInstance(java.lang.Class,java.util.Map,java.util.Locale)|",
+    "called": "|java+constructor:///org/ctoolkit/restapi/client/ClientErrorException/ClientErrorException(int,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/lang/Class/getSimpleName()|",
+      "|java+method:///ma/glasnost/orika/MapperFacade/map(java.lang.Object,java.lang.Class)|",
+      "|java+method:///java/lang/Class/newInstance()|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.Throwable)|",
+      "|java+method:///org/ctoolkit/restapi/client/adapter/ResourceFacadeAdapter/checkNotNull(java.lang.Object)|",
+      "|java+method:///org/ctoolkit/restapi/client/RestExecutorAdaptee/executeNew(java.util.Locale,java.lang.String,java.util.Map)|",
+      "|java+method:///org/ctoolkit/restapi/client/adapter/ResourceFacadeAdapter/prepareUpdateException(java.io.IOException,java.lang.Class,java.lang.Object)|",
+      "|java+method:///org/ctoolkit/restapi/client/adapter/ResourceFacadeAdapter/adaptee(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/ctoolkit/restapi/client/adapter/NewInstanceRequest/NewInstanceRequest(java.lang.Class,org.ctoolkit.restapi.client.adapter.ResourceFacadeAdapter,org.ctoolkit.restapi.client.adaptee.NewExecutorAdaptee,java.lang.Object)|",
+      "|java+method:///java/lang/Class/getSimpleName()|",
+      "|java+method:///org/ctoolkit/restapi/client/adapter/ResourceFacadeAdapter/adaptee(java.lang.Class,java.lang.Class)|",
+      "|java+method:///java/io/IOException/getMessage()|",
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object)|",
+      "|java+constructor:///org/ctoolkit/restapi/client/ClientErrorException/ClientErrorException(int,java.lang.String)|",
+      "|java+method:///org/ctoolkit/restapi/client/adaptee/NewExecutorAdaptee/prepareNew(java.lang.String,java.util.Map,java.util.Locale)|"
+    ],
+    "affectedLib": "org.ctoolkit.restapi:rest-client-facade-api:0.8",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.ctoolkit.restapi:rest-client-facade-adapter:0.9",
+    "coordinatesV2": "org.ctoolkit.restapi:rest-client-facade-adapter:0.10",
+    "caller": "|java+method:///org/ctoolkit/restapi/client/googleapis/GoogleApiCredentialFactory/authorize(java.util.Collection,java.lang.String)|",
+    "called": "|java+method:///com/google/api/client/googleapis/auth/oauth2/GoogleCredential$Builder/setServiceAccountPrivateKeyFromP12File(java.io.File)|",
+    "v1Body": [
+      "|java+method:///com/google/api/client/googleapis/auth/oauth2/GoogleCredential$Builder/build()|",
+      "|java+method:///com/google/api/client/googleapis/auth/oauth2/GoogleCredential$Builder/setServiceAccountId(java.lang.String)|",
+      "|java+method:///java/lang/Class/getResource(java.lang.String)|",
+      "|java+constructor:///java/io/File/File(java.lang.String)|",
+      "|java+method:///com/google/api/client/googleapis/auth/oauth2/GoogleCredential$Builder/setServiceAccountScopes(java.util.Collection)|",
+      "|java+method:///java/net/URL/getPath()|",
+      "|java+method:///org/ctoolkit/restapi/client/googleapis/GoogleApiCredentialFactory/getJsonFactory()|",
+      "|java+method:///org/ctoolkit/restapi/client/googleapis/GoogleApiCredentialFactory$ConfiguredGoogleCredential/setTransport(com.google.api.client.http.HttpTransport)|",
+      "|java+method:///com/google/api/client/googleapis/auth/oauth2/GoogleCredential$Builder/setJsonFactory(com.google.api.client.json.JsonFactory)|",
+      "|java+constructor:///java/lang/NullPointerException/NullPointerException()|",
+      "|java+constructor:///org/ctoolkit/restapi/client/googleapis/GoogleApiCredentialFactory$ConfiguredGoogleCredential/GoogleApiCredentialFactory$ConfiguredGoogleCredential(org.ctoolkit.restapi.client.googleapis.GoogleApiCredentialFactory,org.ctoolkit.restapi.client.googleapis.GoogleApiCredentialFactory$1)|",
+      "|java+method:///com/google/api/client/googleapis/auth/oauth2/GoogleCredential$Builder/setServiceAccountPrivateKeyFromP12File(java.io.File)|",
+      "|java+method:///org/ctoolkit/restapi/client/googleapis/GoogleApiCredentialFactory/getHttpTransport()|",
+      "|java+method:///com/google/api/client/googleapis/auth/oauth2/GoogleCredential$Builder/setServiceAccountUser(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/ctoolkit/restapi/client/googleapis/GoogleApiCredentialFactory/getServiceAccountPrivateKeyP12Resource()|",
+      "|java+method:///com/google/api/client/googleapis/auth/oauth2/GoogleCredential$Builder/build()|",
+      "|java+method:///com/google/api/client/googleapis/auth/oauth2/GoogleCredential$Builder/setServiceAccountId(java.lang.String)|",
+      "|java+constructor:///java/io/File/File(java.lang.String)|",
+      "|java+method:///com/google/api/client/googleapis/auth/oauth2/GoogleCredential$Builder/setServiceAccountScopes(java.util.Collection)|",
+      "|java+method:///java/net/URL/getPath()|",
+      "|java+method:///org/ctoolkit/restapi/client/googleapis/GoogleApiCredentialFactory/getJsonFactory()|",
+      "|java+method:///org/ctoolkit/restapi/client/googleapis/GoogleApiCredentialFactory$ConfiguredGoogleCredential/setTransport(com.google.api.client.http.HttpTransport)|",
+      "|java+method:///com/google/api/client/googleapis/auth/oauth2/GoogleCredential$Builder/setJsonFactory(com.google.api.client.json.JsonFactory)|",
+      "|java+constructor:///java/lang/NullPointerException/NullPointerException()|",
+      "|java+constructor:///org/ctoolkit/restapi/client/googleapis/GoogleApiCredentialFactory$ConfiguredGoogleCredential/GoogleApiCredentialFactory$ConfiguredGoogleCredential(org.ctoolkit.restapi.client.googleapis.GoogleApiCredentialFactory,org.ctoolkit.restapi.client.googleapis.GoogleApiCredentialFactory$1)|",
+      "|java+method:///com/google/api/client/googleapis/auth/oauth2/GoogleCredential$Builder/setServiceAccountPrivateKeyFromP12File(java.io.File)|",
+      "|java+method:///org/ctoolkit/restapi/client/googleapis/GoogleApiCredentialFactory/getHttpTransport()|",
+      "|java+method:///com/google/api/client/googleapis/auth/oauth2/GoogleCredential$Builder/setServiceAccountUser(java.lang.String)|"
+    ],
+    "affectedLib": "com.google.api-client:google-api-client:1.21.0",
+    "change": "UPDATED"
+  }
+]

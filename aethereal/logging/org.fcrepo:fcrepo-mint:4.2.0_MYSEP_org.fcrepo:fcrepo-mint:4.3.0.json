@@ -1,0 +1,101 @@
+[
+  {
+    "coordinatesV1": "org.fcrepo:fcrepo-mint:4.2.0",
+    "coordinatesV2": "org.fcrepo:fcrepo-mint:4.3.0",
+    "caller": "|java+method:///org/fcrepo/mint/HttpPidMinter/buildClient()|",
+    "called": "|java+constructor:///org/apache/http/auth/UsernamePasswordCredentials/UsernamePasswordCredentials(java.lang.String,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/apache/http/impl/client/HttpClientBuilder/setConnectionManager(org.apache.http.conn.HttpClientConnectionManager)|",
+      "|java+constructor:///org/apache/http/impl/conn/PoolingHttpClientConnectionManager/PoolingHttpClientConnectionManager()|",
+      "|java+method:///org/apache/commons/lang/StringUtils/isBlank(java.lang.String)|",
+      "|java+method:///java/net/URI/getPort()|",
+      "|java+method:///java/net/URI/create(java.lang.String)|",
+      "|java+method:///org/apache/http/impl/client/HttpClientBuilder/useSystemProperties()|",
+      "|java+method:///org/apache/http/impl/client/HttpClientBuilder/build()|",
+      "|java+method:///org/apache/http/client/CredentialsProvider/setCredentials(org.apache.http.auth.AuthScope,org.apache.http.auth.Credentials)|",
+      "|java+method:///org/apache/http/impl/client/HttpClientBuilder/create()|",
+      "|java+method:///org/apache/http/impl/client/HttpClientBuilder/setDefaultCredentialsProvider(org.apache.http.client.CredentialsProvider)|",
+      "|java+constructor:///org/apache/http/auth/AuthScope/AuthScope(java.lang.String,int)|",
+      "|java+constructor:///org/apache/http/impl/client/BasicCredentialsProvider/BasicCredentialsProvider()|",
+      "|java+constructor:///org/apache/http/auth/UsernamePasswordCredentials/UsernamePasswordCredentials(java.lang.String,java.lang.String)|",
+      "|java+method:///java/net/URI/getHost()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/http/impl/client/HttpClientBuilder/setConnectionManager(org.apache.http.conn.HttpClientConnectionManager)|",
+      "|java+method:///org/apache/commons/lang/StringUtils/isBlank(java.lang.String)|",
+      "|java+method:///java/net/URI/getPort()|",
+      "|java+method:///java/net/URI/create(java.lang.String)|",
+      "|java+method:///org/apache/http/impl/client/HttpClientBuilder/useSystemProperties()|",
+      "|java+method:///org/apache/http/impl/client/HttpClientBuilder/build()|",
+      "|java+method:///org/apache/http/client/CredentialsProvider/setCredentials(org.apache.http.auth.AuthScope,org.apache.http.auth.Credentials)|",
+      "|java+method:///org/apache/http/impl/client/HttpClientBuilder/create()|",
+      "|java+method:///org/apache/http/impl/client/HttpClientBuilder/setDefaultCredentialsProvider(org.apache.http.client.CredentialsProvider)|",
+      "|java+constructor:///org/apache/http/auth/AuthScope/AuthScope(java.lang.String,int)|",
+      "|java+constructor:///org/apache/http/impl/client/BasicCredentialsProvider/BasicCredentialsProvider()|",
+      "|java+constructor:///org/apache/http/auth/UsernamePasswordCredentials/UsernamePasswordCredentials(java.lang.String,java.lang.String)|",
+      "|java+method:///java/net/URI/getHost()|"
+    ],
+    "affectedLib": "org.apache.httpcomponents:httpclient:4.3.3",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.fcrepo:fcrepo-mint:4.2.0",
+    "coordinatesV2": "org.fcrepo:fcrepo-mint:4.3.0",
+    "caller": "|java+constructor:///org/fcrepo/mint/HttpPidMinter/HttpPidMinter(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)|",
+    "called": "|java+constructor:///org/apache/http/impl/conn/PoolingHttpClientConnectionManager/PoolingHttpClientConnectionManager()|",
+    "v1Body": [
+      "|java+method:///org/fcrepo/mint/HttpPidMinter/buildClient()|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/commons/lang/StringUtils/isBlank(java.lang.String)|",
+      "|java+method:///javax/xml/xpath/XPathFactory/newInstance()|",
+      "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean,java.lang.Object)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///javax/xml/xpath/XPath/compile(java.lang.String)|",
+      "|java+method:///javax/xml/xpath/XPathFactory/newXPath()|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/fcrepo/mint/HttpPidMinter/buildClient()|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///org/apache/http/impl/conn/PoolingHttpClientConnectionManager/PoolingHttpClientConnectionManager()|",
+      "|java+method:///org/apache/commons/lang/StringUtils/isBlank(java.lang.String)|",
+      "|java+method:///javax/xml/xpath/XPathFactory/newInstance()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///javax/xml/xpath/XPath/compile(java.lang.String)|",
+      "|java+method:///javax/xml/xpath/XPathFactory/newXPath()|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String,java.lang.Throwable)|"
+    ],
+    "affectedLib": "org.apache.httpcomponents:httpclient:4.3.3",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.fcrepo:fcrepo-mint:4.2.0",
+    "coordinatesV2": "org.fcrepo:fcrepo-mint:4.3.0",
+    "caller": "|java+method:///org/fcrepo/mint/HttpPidMinter/minterRequest()|",
+    "called": "|java+constructor:///org/apache/http/client/methods/HttpPut/HttpPut(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/lang/String/hashCode()|",
+      "|java+constructor:///org/apache/http/client/methods/HttpPut/HttpPut(java.lang.String)|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+constructor:///org/apache/http/client/methods/HttpGet/HttpGet(java.lang.String)|",
+      "|java+constructor:///org/apache/http/client/methods/HttpPost/HttpPost(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/String/hashCode()|",
+      "|java+method:///java/lang/String/toUpperCase()|",
+      "|java+constructor:///org/apache/http/client/methods/HttpPut/HttpPut(java.lang.String)|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+constructor:///org/apache/http/client/methods/HttpGet/HttpGet(java.lang.String)|",
+      "|java+constructor:///org/apache/http/client/methods/HttpPost/HttpPost(java.lang.String)|"
+    ],
+    "affectedLib": "org.apache.httpcomponents:httpclient:4.3.3",
+    "change": "ADDED"
+  }
+]

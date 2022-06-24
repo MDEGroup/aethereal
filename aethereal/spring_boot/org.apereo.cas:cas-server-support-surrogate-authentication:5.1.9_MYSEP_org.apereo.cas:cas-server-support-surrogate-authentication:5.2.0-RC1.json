@@ -1,0 +1,74 @@
+[
+  {
+    "coordinatesV1": "org.apereo.cas:cas-server-support-surrogate-authentication:5.1.9",
+    "coordinatesV2": "org.apereo.cas:cas-server-support-surrogate-authentication:5.2.0-RC1",
+    "caller": "|java+method:///org/apereo/cas/web/flow/SurrogateWebflowEventResolver/resolveInternal(org.springframework.webflow.execution.RequestContext)|",
+    "called": "|java+constructor:///org/springframework/webflow/execution/Event/Event(java.lang.Object,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/springframework/webflow/execution/RequestContext/getFlowScope()|",
+      "|java+method:///java/lang/Boolean/valueOf(boolean)|",
+      "|java+method:///java/util/Collections/singleton(java.lang.Object)|",
+      "|java+constructor:///org/springframework/webflow/execution/Event/Event(java.lang.Object,java.lang.String)|",
+      "|java+method:///java/lang/Boolean/booleanValue()|",
+      "|java+method:///org/springframework/webflow/core/collection/MutableAttributeMap/getBoolean(java.lang.String,java.lang.Boolean)|",
+      "|java+method:///org/springframework/webflow/core/collection/MutableAttributeMap/remove(java.lang.String)|",
+      "|java+method:///org/apereo/cas/web/flow/SurrogateWebflowEventResolver/loadSurrogates(org.springframework.webflow.execution.RequestContext)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/springframework/webflow/execution/RequestContext/getFlowScope()|",
+      "|java+method:///org/apereo/cas/util/CollectionUtils/wrapSet(java.lang.Object)|",
+      "|java+constructor:///org/springframework/webflow/execution/Event/Event(java.lang.Object,java.lang.String)|",
+      "|java+method:///java/lang/Boolean/booleanValue()|",
+      "|java+method:///org/springframework/webflow/core/collection/MutableAttributeMap/getBoolean(java.lang.String,java.lang.Boolean)|",
+      "|java+method:///org/springframework/webflow/core/collection/MutableAttributeMap/remove(java.lang.String)|",
+      "|java+method:///org/apereo/cas/web/flow/SurrogateWebflowEventResolver/loadSurrogates(org.springframework.webflow.execution.RequestContext)|"
+    ],
+    "affectedLib": "org.springframework.webflow:spring-webflow:2.4.5.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apereo.cas:cas-server-support-surrogate-authentication:5.1.9",
+    "coordinatesV2": "org.apereo.cas:cas-server-support-surrogate-authentication:5.2.0-RC1",
+    "caller": "|java+method:///org/apereo/cas/web/flow/SurrogateInitialAuthenticationAction/convertToSurrogateCredential(org.springframework.webflow.execution.RequestContext,org.apereo.cas.authentication.UsernamePasswordCredential)|",
+    "called": "|java+method:///org/apache/commons/lang3/StringUtils/isBlank(java.lang.CharSequence)|",
+    "v1Body": [
+      "|java+method:///org/apereo/cas/authentication/UsernamePasswordCredential/setUsername(java.lang.String)|",
+      "|java+method:///org/apereo/cas/authentication/SurrogateUsernamePasswordCredential/setPassword(java.lang.String)|",
+      "|java+method:///org/apereo/cas/authentication/SurrogateUsernamePasswordCredential/setRememberMe(boolean)|",
+      "|java+method:///org/apereo/cas/web/support/WebUtils/putCredential(org.springframework.webflow.execution.RequestContext,org.apereo.cas.authentication.Credential)|",
+      "|java+method:///org/springframework/webflow/execution/RequestContext/getFlowScope()|",
+      "|java+method:///org/apereo/cas/authentication/SurrogateUsernamePasswordCredential/setSurrogateUsername(java.lang.String)|",
+      "|java+method:///java/lang/String/substring(int,int)|",
+      "|java+method:///java/lang/String/indexOf(java.lang.String)|",
+      "|java+method:///java/lang/String/substring(int)|",
+      "|java+method:///org/apereo/cas/authentication/UsernamePasswordCredential/getUsername()|",
+      "|java+method:///org/apereo/cas/authentication/RememberMeCredential/isRememberMe()|",
+      "|java+method:///org/apereo/cas/authentication/SurrogateUsernamePasswordCredential/setUsername(java.lang.String)|",
+      "|java+method:///org/springframework/webflow/core/collection/MutableAttributeMap/put(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/apache/commons/lang3/StringUtils/isBlank(java.lang.CharSequence)|",
+      "|java+method:///org/apereo/cas/authentication/UsernamePasswordCredential/getPassword()|",
+      "|java+method:///java/lang/Boolean/valueOf(boolean)|",
+      "|java+constructor:///org/apereo/cas/authentication/SurrogateUsernamePasswordCredential/SurrogateUsernamePasswordCredential()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apereo/cas/authentication/UsernamePasswordCredential/setUsername(java.lang.String)|",
+      "|java+method:///org/apereo/cas/authentication/SurrogateUsernamePasswordCredential/setPassword(java.lang.String)|",
+      "|java+method:///org/apereo/cas/authentication/SurrogateUsernamePasswordCredential/setRememberMe(boolean)|",
+      "|java+method:///org/apereo/cas/web/support/WebUtils/putCredential(org.springframework.webflow.execution.RequestContext,org.apereo.cas.authentication.Credential)|",
+      "|java+method:///org/springframework/webflow/execution/RequestContext/getFlowScope()|",
+      "|java+method:///org/apereo/cas/authentication/SurrogateUsernamePasswordCredential/setSurrogateUsername(java.lang.String)|",
+      "|java+method:///java/lang/String/substring(int,int)|",
+      "|java+method:///java/lang/String/indexOf(java.lang.String)|",
+      "|java+constructor:///org/apereo/cas/authentication/SurrogateUsernamePasswordCredential/SurrogateUsernamePasswordCredential()|",
+      "|java+method:///java/lang/String/substring(int)|",
+      "|java+method:///org/apereo/cas/authentication/UsernamePasswordCredential/getUsername()|",
+      "|java+method:///org/apereo/cas/authentication/RememberMeCredential/isRememberMe()|",
+      "|java+method:///org/apereo/cas/authentication/SurrogateUsernamePasswordCredential/setUsername(java.lang.String)|",
+      "|java+method:///org/springframework/webflow/core/collection/MutableAttributeMap/put(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/apache/commons/lang3/StringUtils/isBlank(java.lang.CharSequence)|",
+      "|java+method:///org/apereo/cas/authentication/UsernamePasswordCredential/getPassword()|"
+    ],
+    "affectedLib": "org.apache.commons:commons-lang3:3.6",
+    "change": "UPDATED"
+  }
+]

@@ -1,0 +1,55 @@
+[
+  {
+    "coordinatesV1": "net.java.dev.activeobjects:activeobjects-test:0.9-m44",
+    "coordinatesV2": "net.java.dev.activeobjects:activeobjects-test:0.9-m45",
+    "caller": "|java+method:///net/java/ao/test/ActiveObjectsIntegrationTest/executeUpdate(java.lang.String,net.java.ao.test.ActiveObjectsIntegrationTest$UpdateCallback)|",
+    "called": "|java+method:///net/java/ao/sql/SqlUtils/closeQuietly(java.sql.Statement,java.sql.Connection)|",
+    "v1Body": [
+      "|java+method:///java/sql/PreparedStatement/executeUpdate()|",
+      "|java+method:///net/java/ao/DatabaseProvider/getConnection()|",
+      "|java+method:///net/java/ao/test/ActiveObjectsIntegrationTest$UpdateCallback/setParameters(java.sql.PreparedStatement)|",
+      "|java+method:///net/java/ao/EntityManager/getProvider()|",
+      "|java+method:///net/java/ao/Common/closeQuietly(java.sql.Connection)|",
+      "|java+method:///java/sql/Connection/prepareStatement(java.lang.String)|",
+      "|java+method:///net/java/ao/Common/closeQuietly(java.sql.Statement)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/sql/Connection/prepareStatement(java.lang.String)|",
+      "|java+method:///net/java/ao/sql/SqlUtils/closeQuietly(java.sql.Statement,java.sql.Connection)|",
+      "|java+method:///java/sql/PreparedStatement/executeUpdate()|",
+      "|java+method:///net/java/ao/DatabaseProvider/getConnection()|",
+      "|java+method:///net/java/ao/test/ActiveObjectsIntegrationTest$UpdateCallback/setParameters(java.sql.PreparedStatement)|",
+      "|java+method:///net/java/ao/EntityManager/getProvider()|"
+    ],
+    "affectedLib": "net.java.dev.activeobjects:activeobjects:0.9-m45",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "net.java.dev.activeobjects:activeobjects-test:0.9-m44",
+    "coordinatesV2": "net.java.dev.activeobjects:activeobjects-test:0.9-m45",
+    "caller": "|java+method:///net/java/ao/test/ActiveObjectsIntegrationTest/executeStatement(java.lang.String,net.java.ao.test.ActiveObjectsIntegrationTest$StatementCallback)|",
+    "called": "|java+method:///net/java/ao/DatabaseProvider/getConnection()|",
+    "v1Body": [
+      "|java+method:///net/java/ao/Common/closeQuietly(java.sql.ResultSet)|",
+      "|java+method:///net/java/ao/DatabaseProvider/getConnection()|",
+      "|java+method:///net/java/ao/test/ActiveObjectsIntegrationTest$StatementCallback/setParameters(java.sql.PreparedStatement)|",
+      "|java+method:///net/java/ao/EntityManager/getProvider()|",
+      "|java+method:///net/java/ao/Common/closeQuietly(java.sql.Connection)|",
+      "|java+method:///java/sql/PreparedStatement/executeQuery()|",
+      "|java+method:///net/java/ao/test/ActiveObjectsIntegrationTest$StatementCallback/processResult(java.sql.ResultSet)|",
+      "|java+method:///java/sql/Connection/prepareStatement(java.lang.String)|",
+      "|java+method:///net/java/ao/Common/closeQuietly(java.sql.Statement)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/sql/Connection/prepareStatement(java.lang.String)|",
+      "|java+method:///net/java/ao/sql/SqlUtils/closeQuietly(java.sql.ResultSet,java.sql.Statement,java.sql.Connection)|",
+      "|java+method:///net/java/ao/DatabaseProvider/getConnection()|",
+      "|java+method:///net/java/ao/test/ActiveObjectsIntegrationTest$StatementCallback/setParameters(java.sql.PreparedStatement)|",
+      "|java+method:///net/java/ao/EntityManager/getProvider()|",
+      "|java+method:///java/sql/PreparedStatement/executeQuery()|",
+      "|java+method:///net/java/ao/test/ActiveObjectsIntegrationTest$StatementCallback/processResult(java.sql.ResultSet)|"
+    ],
+    "affectedLib": "net.java.dev.activeobjects:activeobjects:0.9-m45",
+    "change": "UPDATED"
+  }
+]

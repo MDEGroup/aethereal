@@ -1,0 +1,60 @@
+[
+  {
+    "coordinatesV1": "ru.yandex.qatools.camelot:camelot-core:2.2.1",
+    "coordinatesV2": "ru.yandex.qatools.camelot:camelot-core:2.3",
+    "caller": "|java+method:///ru/yandex/qatools/camelot/hazelcast/HazelcastAggregationRepository/get(org.apache.camel.CamelContext,java.lang.String)|",
+    "called": "|java+constructor:///ru/yandex/qatools/camelot/api/error/RepositoryUnreachableException/RepositoryUnreachableException(java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///ru/yandex/qatools/camelot/hazelcast/HazelcastAggregationRepository/debug(java.lang.String,java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///ru/yandex/qatools/camelot/hazelcast/HazelcastAggregationRepository/toExchange(org.apache.camel.CamelContext,org.apache.camel.impl.DefaultExchangeHolder)|",
+      "|java+method:///java/lang/StringBuilder/append(long)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///com/hazelcast/core/IMap/tryLock(java.lang.Object,long,java.util.concurrent.TimeUnit)|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String)|",
+      "|java+method:///com/hazelcast/core/IMap/get(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///ru/yandex/qatools/camelot/hazelcast/HazelcastAggregationRepository/error(java.lang.String,java.lang.Exception,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///ru/yandex/qatools/camelot/hazelcast/HazelcastAggregationRepository/tryLock(java.lang.String)|",
+      "|java+method:///ru/yandex/qatools/camelot/hazelcast/HazelcastAggregationRepository/debug(java.lang.String,java.lang.String)|",
+      "|java+method:///ru/yandex/qatools/camelot/hazelcast/HazelcastAggregationRepository/toExchange(org.apache.camel.CamelContext,org.apache.camel.impl.DefaultExchangeHolder)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+constructor:///ru/yandex/qatools/camelot/api/error/RepositoryLockWaitException/RepositoryLockWaitException(java.lang.String)|",
+      "|java+constructor:///ru/yandex/qatools/camelot/api/error/RepositoryUnreachableException/RepositoryUnreachableException(java.lang.Throwable)|",
+      "|java+method:///com/hazelcast/core/IMap/get(java.lang.Object)|",
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+constructor:///ru/yandex/qatools/camelot/api/error/RepositoryFailureException/RepositoryFailureException(java.lang.String,java.lang.Throwable)|"
+    ],
+    "affectedLib": "ru.yandex.qatools.camelot:camelot-api:2.3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "ru.yandex.qatools.camelot:camelot-core:2.2.1",
+    "coordinatesV2": "ru.yandex.qatools.camelot:camelot-core:2.3",
+    "caller": "|java+method:///ru/yandex/qatools/camelot/hazelcast/HazelcastAggregationRepository/lock(java.lang.String)|",
+    "called": "|java+constructor:///ru/yandex/qatools/camelot/api/error/RepositoryUnreachableException/RepositoryUnreachableException(java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///ru/yandex/qatools/camelot/hazelcast/HazelcastAggregationRepository/debug(java.lang.String,java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(long)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///com/hazelcast/core/IMap/tryLock(java.lang.Object,long,java.util.concurrent.TimeUnit)|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///ru/yandex/qatools/camelot/hazelcast/HazelcastAggregationRepository/error(java.lang.String,java.lang.Exception,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///ru/yandex/qatools/camelot/hazelcast/HazelcastAggregationRepository/tryLock(java.lang.String)|",
+      "|java+method:///ru/yandex/qatools/camelot/hazelcast/HazelcastAggregationRepository/debug(java.lang.String,java.lang.String)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+constructor:///ru/yandex/qatools/camelot/api/error/RepositoryLockWaitException/RepositoryLockWaitException(java.lang.String)|",
+      "|java+constructor:///ru/yandex/qatools/camelot/api/error/RepositoryUnreachableException/RepositoryUnreachableException(java.lang.Throwable)|",
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+constructor:///ru/yandex/qatools/camelot/api/error/RepositoryFailureException/RepositoryFailureException(java.lang.String,java.lang.Throwable)|"
+    ],
+    "affectedLib": "ru.yandex.qatools.camelot:camelot-api:2.3",
+    "change": "UPDATED"
+  }
+]

@@ -1,0 +1,125 @@
+[
+  {
+    "coordinatesV1": "com.yammer.metrics:metrics-jersey:2.2.0",
+    "coordinatesV2": "com.yammer.metrics:metrics-jersey:3.0.0-BETA1",
+    "caller": "|java+method:///com/yammer/metrics/jersey/InstrumentedResourceMethodDispatchProvider$ExceptionMeteredRequestDispatcher/dispatch(java.lang.Object,com.sun.jersey.api.core.HttpContext)|",
+    "called": "|java+method:///com/yammer/metrics/Meter/mark()|",
+    "v1Body": [
+      "|java+method:///java/lang/Class/isAssignableFrom(java.lang.Class)|",
+      "|java+method:///java/lang/Exception/getCause()|",
+      "|java+method:///com/yammer/metrics/core/Meter/mark()|",
+      "|java+method:///com/sun/jersey/spi/dispatch/RequestDispatcher/dispatch(java.lang.Object,com.sun.jersey.api.core.HttpContext)|",
+      "|java+method:///com/yammer/metrics/jersey/InstrumentedResourceMethodDispatchProvider/access$000(java.lang.Exception)|",
+      "|java+method:///java/lang/Object/getClass()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Class/isAssignableFrom(java.lang.Class)|",
+      "|java+method:///com/yammer/metrics/jersey/InstrumentedResourceMethodDispatchProvider/access$000(java.lang.Throwable)|",
+      "|java+method:///com/yammer/metrics/Meter/mark()|",
+      "|java+method:///com/sun/jersey/spi/dispatch/RequestDispatcher/dispatch(java.lang.Object,com.sun.jersey.api.core.HttpContext)|",
+      "|java+method:///java/lang/Throwable/getCause()|",
+      "|java+method:///java/lang/Object/getClass()|"
+    ],
+    "affectedLib": "com.yammer.metrics:metrics-core:3.0.0-BETA1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.yammer.metrics:metrics-jersey:2.2.0",
+    "coordinatesV2": "com.yammer.metrics:metrics-jersey:3.0.0-BETA1",
+    "caller": "|java+method:///com/yammer/metrics/jersey/InstrumentedResourceMethodDispatchProvider$TimedRequestDispatcher/dispatch(java.lang.Object,com.sun.jersey.api.core.HttpContext)|",
+    "called": "|java+method:///com/yammer/metrics/Timer/time()|",
+    "v1Body": [
+      "|java+method:///com/yammer/metrics/core/Timer/time()|",
+      "|java+method:///com/yammer/metrics/core/TimerContext/stop()|",
+      "|java+method:///com/sun/jersey/spi/dispatch/RequestDispatcher/dispatch(java.lang.Object,com.sun.jersey.api.core.HttpContext)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/yammer/metrics/Timer/time()|",
+      "|java+method:///com/sun/jersey/spi/dispatch/RequestDispatcher/dispatch(java.lang.Object,com.sun.jersey.api.core.HttpContext)|",
+      "|java+method:///com/yammer/metrics/Timer$Context/stop()|"
+    ],
+    "affectedLib": "com.yammer.metrics:metrics-core:3.0.0-BETA1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.yammer.metrics:metrics-jersey:2.2.0",
+    "coordinatesV2": "com.yammer.metrics:metrics-jersey:3.0.0-BETA1",
+    "caller": "|java+method:///com/yammer/metrics/jersey/InstrumentedResourceMethodDispatchProvider$MeteredRequestDispatcher/dispatch(java.lang.Object,com.sun.jersey.api.core.HttpContext)|",
+    "called": "|java+method:///com/yammer/metrics/Meter/mark()|",
+    "v1Body": [
+      "|java+method:///com/yammer/metrics/core/Meter/mark()|",
+      "|java+method:///com/sun/jersey/spi/dispatch/RequestDispatcher/dispatch(java.lang.Object,com.sun.jersey.api.core.HttpContext)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/yammer/metrics/Meter/mark()|",
+      "|java+method:///com/sun/jersey/spi/dispatch/RequestDispatcher/dispatch(java.lang.Object,com.sun.jersey.api.core.HttpContext)|"
+    ],
+    "affectedLib": "com.yammer.metrics:metrics-core:3.0.0-BETA1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.yammer.metrics:metrics-jersey:2.2.0",
+    "coordinatesV2": "com.yammer.metrics:metrics-jersey:3.0.0-BETA1",
+    "caller": "|java+method:///com/yammer/metrics/jersey/InstrumentedResourceMethodDispatchProvider/create(com.sun.jersey.api.model.AbstractResourceMethod)|",
+    "called": "|java+method:///com/yammer/metrics/MetricRegistry/meter(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///com/yammer/metrics/annotation/ExceptionMetered/eventType()|",
+      "|java+method:///com/yammer/metrics/annotation/Timed/name()|",
+      "|java+constructor:///com/yammer/metrics/jersey/InstrumentedResourceMethodDispatchProvider$TimedRequestDispatcher/InstrumentedResourceMethodDispatchProvider$TimedRequestDispatcher(com.sun.jersey.spi.dispatch.RequestDispatcher,com.yammer.metrics.core.Timer,com.yammer.metrics.jersey.InstrumentedResourceMethodDispatchProvider$1)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///com/yammer/metrics/annotation/Metered/rateUnit()|",
+      "|java+method:///java/lang/reflect/Method/getName()|",
+      "|java+method:///com/yammer/metrics/Metrics/newTimer(com.yammer.metrics.core.MetricName,java.util.concurrent.TimeUnit,java.util.concurrent.TimeUnit)|",
+      "|java+method:///com/yammer/metrics/annotation/Metered/eventType()|",
+      "|java+method:///com/sun/jersey/spi/container/ResourceMethodDispatchProvider/create(com.sun.jersey.api.model.AbstractResourceMethod)|",
+      "|java+method:///com/yammer/metrics/annotation/Metered/type()|",
+      "|java+method:///com/yammer/metrics/Metrics/newMeter(com.yammer.metrics.core.MetricName,java.lang.String,java.util.concurrent.TimeUnit)|",
+      "|java+method:///com/sun/jersey/api/model/AbstractResource/getResourceClass()|",
+      "|java+method:///com/yammer/metrics/annotation/ExceptionMetered/type()|",
+      "|java+method:///com/yammer/metrics/core/MetricName/chooseGroup(java.lang.String,java.lang.Class)|",
+      "|java+constructor:///com/yammer/metrics/jersey/InstrumentedResourceMethodDispatchProvider$MeteredRequestDispatcher/InstrumentedResourceMethodDispatchProvider$MeteredRequestDispatcher(com.sun.jersey.spi.dispatch.RequestDispatcher,com.yammer.metrics.core.Meter,com.yammer.metrics.jersey.InstrumentedResourceMethodDispatchProvider$1)|",
+      "|java+method:///java/lang/reflect/Method/getAnnotation(java.lang.Class)|",
+      "|java+method:///com/yammer/metrics/annotation/ExceptionMetered/group()|",
+      "|java+method:///com/yammer/metrics/core/MetricName/chooseType(java.lang.String,java.lang.Class)|",
+      "|java+method:///com/yammer/metrics/annotation/Metered/group()|",
+      "|java+method:///com/sun/jersey/api/model/AbstractResourceMethod/getDeclaringResource()|",
+      "|java+method:///com/yammer/metrics/annotation/ExceptionMetered/rateUnit()|",
+      "|java+method:///java/lang/reflect/Method/isAnnotationPresent(java.lang.Class)|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///com/yammer/metrics/annotation/Timed/durationUnit()|",
+      "|java+method:///com/yammer/metrics/annotation/Metered/name()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///com/yammer/metrics/annotation/Timed/type()|",
+      "|java+constructor:///com/yammer/metrics/core/MetricName/MetricName(java.lang.String,java.lang.String,java.lang.String)|",
+      "|java+method:///com/yammer/metrics/annotation/ExceptionMetered/cause()|",
+      "|java+method:///com/yammer/metrics/annotation/ExceptionMetered/name()|",
+      "|java+method:///com/yammer/metrics/annotation/Timed/group()|",
+      "|java+constructor:///com/yammer/metrics/jersey/InstrumentedResourceMethodDispatchProvider$ExceptionMeteredRequestDispatcher/InstrumentedResourceMethodDispatchProvider$ExceptionMeteredRequestDispatcher(com.sun.jersey.spi.dispatch.RequestDispatcher,com.yammer.metrics.core.Meter,java.lang.Class,com.yammer.metrics.jersey.InstrumentedResourceMethodDispatchProvider$1)|",
+      "|java+method:///com/sun/jersey/api/model/AbstractResourceMethod/getMethod()|",
+      "|java+method:///com/yammer/metrics/annotation/Timed/rateUnit()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///com/yammer/metrics/core/MetricName/chooseName(java.lang.String,java.lang.reflect.Method)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/yammer/metrics/annotation/Metered/absolute()|",
+      "|java+method:///com/yammer/metrics/annotation/Timed/name()|",
+      "|java+constructor:///com/yammer/metrics/jersey/InstrumentedResourceMethodDispatchProvider$TimedRequestDispatcher/InstrumentedResourceMethodDispatchProvider$TimedRequestDispatcher(com.sun.jersey.spi.dispatch.RequestDispatcher,com.yammer.metrics.Timer,com.yammer.metrics.jersey.InstrumentedResourceMethodDispatchProvider$1)|",
+      "|java+method:///java/lang/reflect/Method/getAnnotation(java.lang.Class)|",
+      "|java+constructor:///com/yammer/metrics/jersey/InstrumentedResourceMethodDispatchProvider$ExceptionMeteredRequestDispatcher/InstrumentedResourceMethodDispatchProvider$ExceptionMeteredRequestDispatcher(com.sun.jersey.spi.dispatch.RequestDispatcher,com.yammer.metrics.Meter,java.lang.Class,com.yammer.metrics.jersey.InstrumentedResourceMethodDispatchProvider$1)|",
+      "|java+method:///com/yammer/metrics/annotation/Timed/absolute()|",
+      "|java+method:///com/yammer/metrics/MetricRegistry/timer(java.lang.String)|",
+      "|java+method:///com/yammer/metrics/annotation/Metered/name()|",
+      "|java+method:///com/yammer/metrics/MetricRegistry/meter(java.lang.String)|",
+      "|java+method:///com/yammer/metrics/jersey/InstrumentedResourceMethodDispatchProvider/chooseName(java.lang.String,boolean,com.sun.jersey.api.model.AbstractResourceMethod,java.lang.String%5B%5D)|",
+      "|java+method:///com/sun/jersey/api/model/AbstractResourceMethod/getMethod()|",
+      "|java+method:///com/sun/jersey/spi/container/ResourceMethodDispatchProvider/create(com.sun.jersey.api.model.AbstractResourceMethod)|",
+      "|java+method:///com/yammer/metrics/annotation/ExceptionMetered/absolute()|",
+      "|java+method:///java/lang/reflect/Method/isAnnotationPresent(java.lang.Class)|",
+      "|java+constructor:///com/yammer/metrics/jersey/InstrumentedResourceMethodDispatchProvider$MeteredRequestDispatcher/InstrumentedResourceMethodDispatchProvider$MeteredRequestDispatcher(com.sun.jersey.spi.dispatch.RequestDispatcher,com.yammer.metrics.Meter,com.yammer.metrics.jersey.InstrumentedResourceMethodDispatchProvider$1)|",
+      "|java+method:///com/yammer/metrics/annotation/ExceptionMetered/cause()|",
+      "|java+method:///com/yammer/metrics/annotation/ExceptionMetered/name()|"
+    ],
+    "affectedLib": "com.yammer.metrics:metrics-core:3.0.0-BETA1",
+    "change": "UPDATED"
+  }
+]

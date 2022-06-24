@@ -1,0 +1,146 @@
+[
+  {
+    "coordinatesV1": "org.apache.abdera:abdera-bundle:0.4.0-incubating",
+    "coordinatesV2": "org.apache.abdera:abdera-bundle:1.0",
+    "caller": "|java+method:///org/apache/abdera/parser/stax/FOMEntry/setContent(java.lang.String,java.lang.String)|",
+    "called": "|java+constructor:///javax/activation/MimeType/MimeType(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/apache/abdera/model/Content/setValue(java.lang.String)|",
+      "|java+method:///org/apache/abdera/parser/stax/FOMFactory/newContent(javax.activation.MimeType)|",
+      "|java+constructor:///javax/activation/MimeType/MimeType(java.lang.String)|",
+      "|java+method:///org/apache/abdera/parser/stax/FOMEntry/setContentElement(org.apache.abdera.model.Content)|",
+      "|java+constructor:///org/apache/abdera/util/MimeTypeParseException/MimeTypeParseException(javax.activation.MimeTypeParseException)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/abdera/model/Content/setMimeType(java.lang.String)|",
+      "|java+method:///org/apache/abdera/model/Content/setValue(java.lang.String)|",
+      "|java+method:///org/apache/abdera/parser/stax/FOMFactory/newContent(javax.activation.MimeType)|",
+      "|java+constructor:///javax/activation/MimeType/MimeType(java.lang.String)|",
+      "|java+method:///org/apache/abdera/parser/stax/FOMEntry/setContentElement(org.apache.abdera.model.Content)|",
+      "|java+constructor:///org/apache/abdera/util/MimeTypeParseException/MimeTypeParseException(javax.activation.MimeTypeParseException)|"
+    ],
+    "affectedLib": "javax.activation:activation:1.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.abdera:abdera-bundle:0.4.0-incubating",
+    "coordinatesV2": "org.apache.abdera:abdera-bundle:1.0",
+    "caller": "|java+method:///org/apache/abdera/parser/stax/FOMEntry/setContent(javax.activation.DataHandler,java.lang.String)|",
+    "called": "|java+method:///javax/activation/DataHandler/getInputStream()|",
+    "v1Body": [
+      "|java+method:///org/apache/abdera/model/Content/setMimeType(java.lang.String)|",
+      "|java+method:///org/apache/abdera/parser/stax/FOMEntry/setContentElement(org.apache.abdera.model.Content)|",
+      "|java+method:///org/apache/abdera/model/Content/setDataHandler(javax.activation.DataHandler)|",
+      "|java+method:///org/apache/abdera/parser/stax/FOMFactory/newContent(org.apache.abdera.model.Content$Type)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/abdera/parser/stax/FOMEntry/setContent(java.io.InputStream,java.lang.String)|",
+      "|java+method:///org/apache/abdera/model/Content/setMimeType(java.lang.String)|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.Throwable)|",
+      "|java+method:///org/apache/abdera/parser/stax/FOMEntry/setContentElement(org.apache.abdera.model.Content)|",
+      "|java+method:///org/apache/abdera/util/MimeTypeHelper/isText(java.lang.String)|",
+      "|java+method:///org/apache/abdera/model/Content/setDataHandler(javax.activation.DataHandler)|",
+      "|java+method:///org/apache/abdera/parser/stax/FOMFactory/newContent(org.apache.abdera.model.Content$Type)|",
+      "|java+method:///javax/activation/DataHandler/getInputStream()|"
+    ],
+    "affectedLib": "javax.activation:activation:1.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.abdera:abdera-bundle:0.4.0-incubating",
+    "coordinatesV2": "org.apache.abdera:abdera-bundle:1.0",
+    "caller": "|java+method:///org/apache/abdera/util/MimeTypeHelper/isFeed(java.lang.String)|",
+    "called": "|java+method:///javax/activation/MimeType/getParameter(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/lang/String/equalsIgnoreCase(java.lang.String)|",
+      "|java+method:///java/lang/String/toLowerCase()|",
+      "|java+method:///javax/activation/MimeType/getParameter(java.lang.String)|",
+      "|java+constructor:///javax/activation/MimeType/MimeType(java.lang.String)|",
+      "|java+method:///org/apache/abdera/util/MimeTypeHelper/isMatch(javax.activation.MimeType,javax.activation.MimeType)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/String/toLowerCase()|",
+      "|java+method:///javax/activation/MimeType/getParameter(java.lang.String)|",
+      "|java+constructor:///javax/activation/MimeType/MimeType(java.lang.String)|",
+      "|java+method:///org/apache/abdera/util/MimeTypeHelper/isMatch(javax.activation.MimeType,javax.activation.MimeType)|",
+      "|java+method:///org/apache/abdera/util/MimeTypeHelper/isMatchType(java.lang.String,java.lang.String)|"
+    ],
+    "affectedLib": "javax.activation:activation:1.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.abdera:abdera-bundle:0.4.0-incubating",
+    "coordinatesV2": "org.apache.abdera:abdera-bundle:1.0",
+    "caller": "|java+method:///org/apache/abdera/parser/stax/FOMEntry/setContent(org.apache.abdera.model.Element,java.lang.String)|",
+    "called": "|java+constructor:///javax/activation/MimeType/MimeType(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/apache/abdera/parser/stax/FOMFactory/newContent(javax.activation.MimeType)|",
+      "|java+constructor:///javax/activation/MimeType/MimeType(java.lang.String)|",
+      "|java+method:///org/apache/abdera/parser/stax/FOMEntry/setContentElement(org.apache.abdera.model.Content)|",
+      "|java+method:///org/apache/abdera/model/Content/setValueElement(org.apache.abdera.model.Element)|",
+      "|java+constructor:///org/apache/abdera/util/MimeTypeParseException/MimeTypeParseException(javax.activation.MimeTypeParseException)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/abdera/parser/stax/FOMFactory/newContent(javax.activation.MimeType)|",
+      "|java+constructor:///javax/activation/MimeType/MimeType(java.lang.String)|",
+      "|java+method:///org/apache/abdera/parser/stax/FOMEntry/setContentElement(org.apache.abdera.model.Content)|",
+      "|java+method:///org/apache/abdera/model/Content/setValueElement(org.apache.abdera.model.Element)|",
+      "|java+method:///org/apache/abdera/util/MimeTypeHelper/isText(java.lang.String)|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException()|",
+      "|java+constructor:///org/apache/abdera/util/MimeTypeParseException/MimeTypeParseException(javax.activation.MimeTypeParseException)|"
+    ],
+    "affectedLib": "javax.activation:activation:1.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.abdera:abdera-bundle:0.4.0-incubating",
+    "coordinatesV2": "org.apache.abdera:abdera-bundle:1.0",
+    "caller": "|java+method:///org/apache/abdera/parser/stax/FOMEntry/setContent(java.io.InputStream,java.lang.String)|",
+    "called": "|java+constructor:///javax/activation/DataHandler/DataHandler(javax.activation.DataSource)|",
+    "v1Body": [
+      "|java+method:///org/apache/abdera/parser/stax/FOMEntry/setContent(javax.activation.DataHandler,java.lang.String)|",
+      "|java+constructor:///javax/activation/DataHandler/DataHandler(javax.activation.DataSource)|",
+      "|java+constructor:///org/apache/abdera/i18n/text/io/InputStreamDataSource/InputStreamDataSource(java.io.InputStream,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.Throwable)|",
+      "|java+method:///org/apache/abdera/parser/stax/FOMEntry/setContent(javax.activation.DataHandler,java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/apache/abdera/parser/stax/FOMEntry/setContent(java.lang.String,java.lang.String)|",
+      "|java+method:///java/io/InputStreamReader/read(char%5B%5D)|",
+      "|java+method:///org/apache/abdera/model/Document/getCharset()|",
+      "|java+method:///org/apache/abdera/util/MimeTypeHelper/isText(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///java/io/InputStreamReader/InputStreamReader(java.io.InputStream,java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(char%5B%5D,int,int)|",
+      "|java+method:///org/apache/abdera/parser/stax/FOMEntry/getDocument()|",
+      "|java+method:///org/apache/abdera/util/MimeTypeHelper/getCharset(java.lang.String)|",
+      "|java+constructor:///javax/activation/DataHandler/DataHandler(javax.activation.DataSource)|",
+      "|java+constructor:///org/apache/abdera/i18n/text/io/InputStreamDataSource/InputStreamDataSource(java.io.InputStream,java.lang.String)|"
+    ],
+    "affectedLib": "javax.activation:activation:1.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.abdera:abdera-bundle:0.4.0-incubating",
+    "coordinatesV2": "org.apache.abdera:abdera-bundle:1.0",
+    "caller": "|java+method:///org/apache/abdera/util/MimeTypeHelper/isEntry(java.lang.String)|",
+    "called": "|java+method:///javax/activation/MimeType/getParameter(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/lang/String/equalsIgnoreCase(java.lang.String)|",
+      "|java+method:///java/lang/String/toLowerCase()|",
+      "|java+method:///javax/activation/MimeType/getParameter(java.lang.String)|",
+      "|java+constructor:///javax/activation/MimeType/MimeType(java.lang.String)|",
+      "|java+method:///org/apache/abdera/util/MimeTypeHelper/isMatch(javax.activation.MimeType,javax.activation.MimeType)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/String/toLowerCase()|",
+      "|java+method:///javax/activation/MimeType/getParameter(java.lang.String)|",
+      "|java+constructor:///javax/activation/MimeType/MimeType(java.lang.String)|",
+      "|java+method:///org/apache/abdera/util/MimeTypeHelper/isMatch(javax.activation.MimeType,javax.activation.MimeType)|",
+      "|java+method:///org/apache/abdera/util/MimeTypeHelper/isMatchType(java.lang.String,java.lang.String)|"
+    ],
+    "affectedLib": "javax.activation:activation:1.1",
+    "change": "ADDED"
+  }
+]

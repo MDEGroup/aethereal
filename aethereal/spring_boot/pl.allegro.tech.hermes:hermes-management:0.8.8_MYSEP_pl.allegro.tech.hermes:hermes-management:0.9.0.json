@@ -1,0 +1,218 @@
+[
+  {
+    "coordinatesV1": "pl.allegro.tech.hermes:hermes-management:0.8.8",
+    "coordinatesV2": "pl.allegro.tech.hermes:hermes-management:0.9.0",
+    "caller": "|java+method:///pl/allegro/tech/hermes/management/api/SchemaEndpoint/get(java.lang.String,int)|",
+    "called": "|java+method:///pl/allegro/tech/hermes/schema/SchemaVersion/valueOf(int)|",
+    "v1Body": [
+      "|java+method:///pl/allegro/tech/hermes/management/domain/topic/schema/SchemaSourceService/getSchemaSource(java.lang.String,pl.allegro.tech.hermes.domain.topic.schema.SchemaVersion)|",
+      "|java+method:///javax/ws/rs/core/Response$ResponseBuilder/build()|",
+      "|java+method:///java/util/Optional/map(java.util.function.Function)|",
+      "|java+method:///java/util/Optional/orElse(java.lang.Object)|",
+      "|java+method:///javax/ws/rs/core/Response/noContent()|",
+      "|java+method:///pl/allegro/tech/hermes/domain/topic/schema/SchemaVersion/valueOf(int)|"
+    ],
+    "v2Body": [
+      "|java+method:///javax/ws/rs/core/Response/noContent()|",
+      "|java+method:///pl/allegro/tech/hermes/schema/SchemaVersion/valueOf(int)|",
+      "|java+method:///pl/allegro/tech/hermes/management/domain/topic/schema/SchemaService/getSchema(java.lang.String,pl.allegro.tech.hermes.schema.SchemaVersion)|",
+      "|java+method:///javax/ws/rs/core/Response$ResponseBuilder/build()|",
+      "|java+method:///java/util/Optional/map(java.util.function.Function)|",
+      "|java+method:///java/util/Optional/orElse(java.lang.Object)|"
+    ],
+    "affectedLib": "pl.allegro.tech.hermes:hermes-schema:0.9.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "pl.allegro.tech.hermes:hermes-management:0.8.8",
+    "coordinatesV2": "pl.allegro.tech.hermes:hermes-management:0.9.0",
+    "caller": "|java+method:///pl/allegro/tech/hermes/management/domain/topic/validator/TopicValidator/ensureUpdatedTopicIsValid(pl.allegro.tech.hermes.api.Topic,pl.allegro.tech.hermes.api.Topic)|",
+    "called": "|java+method:///pl/allegro/tech/hermes/schema/SchemaRepository/getLatestAvroSchema(pl.allegro.tech.hermes.api.Topic)|",
+    "v1Body": [
+      "|java+method:///pl/allegro/tech/hermes/api/Topic/getContentType()|",
+      "|java+method:///pl/allegro/tech/hermes/management/domain/topic/validator/TopicValidator/contentTypeChanged(pl.allegro.tech.hermes.api.Topic,pl.allegro.tech.hermes.api.Topic)|",
+      "|java+method:///pl/allegro/tech/hermes/management/domain/topic/validator/TopicValidator/migrationFromJsonTypeFlagChangedToFalse(pl.allegro.tech.hermes.api.Topic,pl.allegro.tech.hermes.api.Topic)|",
+      "|java+constructor:///pl/allegro/tech/hermes/management/domain/topic/validator/TopicValidationException/TopicValidationException(java.lang.String,java.lang.Exception)|",
+      "|java+constructor:///pl/allegro/tech/hermes/management/domain/topic/validator/TopicValidationException/TopicValidationException(java.lang.String)|",
+      "|java+method:///pl/allegro/tech/hermes/management/domain/topic/validator/TopicValidator/migrationFromJsonTypeFlagChangedToTrue(pl.allegro.tech.hermes.api.Topic,pl.allegro.tech.hermes.api.Topic)|",
+      "|java+method:///pl/allegro/tech/hermes/domain/topic/schema/SchemaRepository/getAvroSchema(pl.allegro.tech.hermes.api.Topic)|"
+    ],
+    "v2Body": [
+      "|java+method:///pl/allegro/tech/hermes/api/Topic/getContentType()|",
+      "|java+method:///pl/allegro/tech/hermes/management/domain/topic/validator/TopicValidator/contentTypeChanged(pl.allegro.tech.hermes.api.Topic,pl.allegro.tech.hermes.api.Topic)|",
+      "|java+method:///pl/allegro/tech/hermes/management/domain/topic/validator/TopicValidator/migrationFromJsonTypeFlagChangedToFalse(pl.allegro.tech.hermes.api.Topic,pl.allegro.tech.hermes.api.Topic)|",
+      "|java+method:///pl/allegro/tech/hermes/management/domain/topic/validator/TopicValidator/migrationFromJsonTypeFlagChangedToTrue(pl.allegro.tech.hermes.api.Topic,pl.allegro.tech.hermes.api.Topic)|",
+      "|java+constructor:///pl/allegro/tech/hermes/management/domain/topic/validator/TopicValidationException/TopicValidationException(java.lang.String,java.lang.Exception)|",
+      "|java+method:///pl/allegro/tech/hermes/schema/SchemaRepository/getLatestAvroSchema(pl.allegro.tech.hermes.api.Topic)|",
+      "|java+constructor:///pl/allegro/tech/hermes/management/domain/topic/validator/TopicValidationException/TopicValidationException(java.lang.String)|"
+    ],
+    "affectedLib": "pl.allegro.tech.hermes:hermes-schema:0.9.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "pl.allegro.tech.hermes:hermes-management:0.8.8",
+    "coordinatesV2": "pl.allegro.tech.hermes:hermes-management:0.9.0",
+    "caller": "|java+method:///pl/allegro/tech/hermes/management/infrastructure/kafka/service/KafkaSingleMessageReader/convertAvroToJson(pl.allegro.tech.hermes.api.Topic,byte%5B%5D)|",
+    "called": "|java+method:///pl/allegro/tech/hermes/schema/SchemaRepository/getAvroSchema(pl.allegro.tech.hermes.api.Topic,pl.allegro.tech.hermes.schema.SchemaVersion)|",
+    "v1Body": [
+      "|java+method:///pl/allegro/tech/hermes/common/message/serialization/SchemaAwarePayload/getSchemaVersion()|",
+      "|java+method:///pl/allegro/tech/hermes/api/Topic/isSchemaVersionAwareSerializationEnabled()|",
+      "|java+method:///pl/allegro/tech/hermes/domain/topic/schema/SchemaRepository/getAvroSchema(pl.allegro.tech.hermes.api.Topic,pl.allegro.tech.hermes.domain.topic.schema.SchemaVersion)|",
+      "|java+method:///pl/allegro/tech/hermes/common/message/serialization/SchemaAwarePayload/getPayload()|",
+      "|java+method:///tech/allegro/schema/json2avro/converter/JsonAvroConverter/convertToJson(byte%5B%5D,org.apache.avro.Schema)|",
+      "|java+method:///pl/allegro/tech/hermes/common/message/serialization/SchemaAwareSerDe/deserialize(byte%5B%5D)|",
+      "|java+method:///pl/allegro/tech/hermes/domain/topic/schema/SchemaRepository/getAvroSchema(pl.allegro.tech.hermes.api.Topic)|",
+      "|java+method:///pl/allegro/tech/hermes/domain/topic/schema/CompiledSchema/getSchema()|"
+    ],
+    "v2Body": [
+      "|java+method:///pl/allegro/tech/hermes/schema/SchemaRepository/getAvroSchema(pl.allegro.tech.hermes.api.Topic,pl.allegro.tech.hermes.schema.SchemaVersion)|",
+      "|java+method:///pl/allegro/tech/hermes/schema/CompiledSchema/getSchema()|",
+      "|java+method:///pl/allegro/tech/hermes/schema/SchemaRepository/getLatestAvroSchema(pl.allegro.tech.hermes.api.Topic)|",
+      "|java+method:///pl/allegro/tech/hermes/common/message/wrapper/SchemaAwareSerDe/deserialize(byte%5B%5D)|",
+      "|java+method:///pl/allegro/tech/hermes/common/message/wrapper/SchemaAwarePayload/getSchemaVersion()|",
+      "|java+method:///pl/allegro/tech/hermes/api/Topic/isSchemaVersionAwareSerializationEnabled()|",
+      "|java+method:///pl/allegro/tech/hermes/common/message/wrapper/SchemaAwarePayload/getPayload()|",
+      "|java+method:///tech/allegro/schema/json2avro/converter/JsonAvroConverter/convertToJson(byte%5B%5D,org.apache.avro.Schema)|"
+    ],
+    "affectedLib": "pl.allegro.tech.hermes:hermes-schema:0.9.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "pl.allegro.tech.hermes:hermes-management:0.8.8",
+    "coordinatesV2": "pl.allegro.tech.hermes:hermes-management:0.9.0",
+    "caller": "|java+method:///pl/allegro/tech/hermes/management/domain/subscription/SubscriptionService/getSubscriptionDetails(pl.allegro.tech.hermes.api.TopicName,java.lang.String)|",
+    "called": "|java+method:///pl/allegro/tech/hermes/api/Subscription/anonymize()|",
+    "v1Body": [
+      "|java+method:///pl/allegro/tech/hermes/api/Subscription/anonymizePassword()|",
+      "|java+method:///pl/allegro/tech/hermes/domain/subscription/SubscriptionRepository/getSubscriptionDetails(pl.allegro.tech.hermes.api.TopicName,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///pl/allegro/tech/hermes/api/Subscription/anonymize()|",
+      "|java+method:///pl/allegro/tech/hermes/domain/subscription/SubscriptionRepository/getSubscriptionDetails(pl.allegro.tech.hermes.api.TopicName,java.lang.String)|"
+    ],
+    "affectedLib": "pl.allegro.tech.hermes:hermes-api:0.9.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "pl.allegro.tech.hermes:hermes-management:0.8.8",
+    "coordinatesV2": "pl.allegro.tech.hermes:hermes-management:0.9.0",
+    "caller": "|java+method:///pl/allegro/tech/hermes/management/api/mappers/RuntimeExceptionMapper/toResponse(java.lang.RuntimeException)|",
+    "called": "|java+constructor:///pl/allegro/tech/hermes/api/ErrorDescription/ErrorDescription(java.lang.String,pl.allegro.tech.hermes.api.ErrorCode)|",
+    "v1Body": [
+      "|java+method:///javax/ws/rs/core/Response/status(javax.ws.rs.core.Response$Status)|",
+      "|java+method:///javax/ws/rs/core/Response$ResponseBuilder/entity(java.lang.Object)|",
+      "|java+method:///java/lang/RuntimeException/getMessage()|",
+      "|java+method:///com/google/common/base/Throwables/getStackTraceAsString(java.lang.Throwable)|",
+      "|java+method:///org/boon/Maps/map(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)|",
+      "|java+method:///javax/ws/rs/core/Response$ResponseBuilder/type(javax.ws.rs.core.MediaType)|",
+      "|java+method:///javax/ws/rs/core/Response$ResponseBuilder/build()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Class/getSimpleName()|",
+      "|java+method:///javax/ws/rs/core/Response$ResponseBuilder/entity(java.lang.Object)|",
+      "|java+method:///java/lang/RuntimeException/getMessage()|",
+      "|java+constructor:///pl/allegro/tech/hermes/api/ErrorDescription/ErrorDescription(java.lang.String,pl.allegro.tech.hermes.api.ErrorCode)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///javax/ws/rs/core/Response/status(javax.ws.rs.core.Response$Status)|",
+      "|java+method:///javax/ws/rs/core/Response$ResponseBuilder/type(javax.ws.rs.core.MediaType)|",
+      "|java+method:///javax/ws/rs/core/Response$ResponseBuilder/build()|"
+    ],
+    "affectedLib": "pl.allegro.tech.hermes:hermes-api:0.9.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "pl.allegro.tech.hermes:hermes-management:0.8.8",
+    "coordinatesV2": "pl.allegro.tech.hermes:hermes-management:0.9.0",
+    "caller": "|java+method:///pl/allegro/tech/hermes/management/config/MessageConfiguration/messageContentWrapper()|",
+    "called": "|java+constructor:///pl/allegro/tech/hermes/common/message/wrapper/AvroMessageContentWrapper/AvroMessageContentWrapper(java.time.Clock)|",
+    "v1Body": [
+      "|java+constructor:///pl/allegro/tech/hermes/common/message/wrapper/MessageContentWrapper/MessageContentWrapper(pl.allegro.tech.hermes.common.message.wrapper.JsonMessageContentWrapper,pl.allegro.tech.hermes.common.message.wrapper.AvroMessageContentWrapper)|",
+      "|java+method:///pl/allegro/tech/hermes/management/config/MessageConfiguration/jsonMessageContentWrapper()|",
+      "|java+constructor:///pl/allegro/tech/hermes/common/message/wrapper/AvroMessageContentWrapper/AvroMessageContentWrapper(java.time.Clock)|"
+    ],
+    "v2Body": [
+      "|java+method:///pl/allegro/tech/hermes/management/config/MessageConfiguration/jsonMessageContentWrapper()|",
+      "|java+constructor:///pl/allegro/tech/hermes/common/message/wrapper/MessageContentWrapper/MessageContentWrapper(pl.allegro.tech.hermes.common.message.wrapper.JsonMessageContentWrapper,pl.allegro.tech.hermes.common.message.wrapper.AvroMessageContentWrapper,pl.allegro.tech.hermes.schema.SchemaRepository)|",
+      "|java+constructor:///pl/allegro/tech/hermes/common/message/wrapper/AvroMessageContentWrapper/AvroMessageContentWrapper(java.time.Clock)|"
+    ],
+    "affectedLib": "pl.allegro.tech.hermes:hermes-common:0.9.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "pl.allegro.tech.hermes:hermes-management:0.8.8",
+    "coordinatesV2": "pl.allegro.tech.hermes:hermes-management:0.9.0",
+    "caller": "|java+method:///pl/allegro/tech/hermes/management/config/StorageConfiguration/ensureInitPathExists()|",
+    "called": "|java+method:///pl/allegro/tech/hermes/infrastructure/zookeeper/ZookeeperPaths/groupsPath()|",
+    "v1Body": [
+      "|java+method:///org/apache/curator/utils/EnsurePath/ensure(org.apache.curator.CuratorZookeeperClient)|",
+      "|java+method:///org/apache/curator/framework/CuratorFramework/getZookeeperClient()|",
+      "|java+method:///pl/allegro/tech/hermes/infrastructure/zookeeper/ZookeeperPaths/groupsPath()|",
+      "|java+method:///pl/allegro/tech/hermes/management/config/StorageConfiguration/storageZookeeper()|",
+      "|java+method:///pl/allegro/tech/hermes/management/config/StorageConfiguration/zookeeperPaths()|",
+      "|java+constructor:///org/apache/curator/utils/EnsurePath/EnsurePath(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///pl/allegro/tech/hermes/infrastructure/zookeeper/ZookeeperPaths/groupsPath()|",
+      "|java+method:///pl/allegro/tech/hermes/management/config/StorageConfiguration/storageZookeeper()|",
+      "|java+method:///org/apache/curator/framework/api/CreateBuilder/creatingParentsIfNeeded()|",
+      "|java+method:///org/apache/curator/framework/api/ProtectACLCreateModePathAndBytesable/forPath(java.lang.String)|",
+      "|java+method:///org/apache/curator/framework/CuratorFramework/checkExists()|",
+      "|java+method:///org/apache/curator/framework/api/ExistsBuilder/forPath(java.lang.String)|",
+      "|java+method:///org/apache/curator/framework/CuratorFramework/create()|",
+      "|java+method:///pl/allegro/tech/hermes/management/config/StorageConfiguration/zookeeperPaths()|"
+    ],
+    "affectedLib": "pl.allegro.tech.hermes:hermes-common:0.9.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "pl.allegro.tech.hermes:hermes-management:0.8.8",
+    "coordinatesV2": "pl.allegro.tech.hermes:hermes-management:0.9.0",
+    "caller": "|java+method:///pl/allegro/tech/hermes/management/infrastructure/kafka/service/retransmit/KafkaTimestampExtractor/unwrapContent(byte%5B%5D)|",
+    "called": "|java+method:///pl/allegro/tech/hermes/common/message/wrapper/MessageContentWrapper/unwrapAvro(byte%5B%5D,pl.allegro.tech.hermes.api.Topic)|",
+    "v1Body": [
+      "|java+method:///pl/allegro/tech/hermes/common/kafka/KafkaTopic/contentType()|",
+      "|java+method:///pl/allegro/tech/hermes/api/ContentType/ordinal()|",
+      "|java+method:///pl/allegro/tech/hermes/common/message/wrapper/MessageContentWrapper/unwrapAvro(byte%5B%5D,pl.allegro.tech.hermes.api.Topic,pl.allegro.tech.hermes.common.message.AvroSchemaSource)|",
+      "|java+constructor:///pl/allegro/tech/hermes/common/message/wrapper/UnsupportedContentTypeException/UnsupportedContentTypeException(pl.allegro.tech.hermes.api.Topic)|",
+      "|java+method:///pl/allegro/tech/hermes/common/message/wrapper/MessageContentWrapper/unwrapJson(byte%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///pl/allegro/tech/hermes/common/kafka/KafkaTopic/contentType()|",
+      "|java+method:///pl/allegro/tech/hermes/common/message/wrapper/MessageContentWrapper/unwrapAvro(byte%5B%5D,pl.allegro.tech.hermes.api.Topic)|",
+      "|java+method:///pl/allegro/tech/hermes/api/ContentType/ordinal()|",
+      "|java+constructor:///pl/allegro/tech/hermes/common/message/wrapper/UnsupportedContentTypeException/UnsupportedContentTypeException(pl.allegro.tech.hermes.api.Topic)|",
+      "|java+method:///pl/allegro/tech/hermes/common/message/wrapper/MessageContentWrapper/unwrapJson(byte%5B%5D)|"
+    ],
+    "affectedLib": "pl.allegro.tech.hermes:hermes-common:0.9.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "pl.allegro.tech.hermes:hermes-management:0.8.8",
+    "coordinatesV2": "pl.allegro.tech.hermes:hermes-management:0.9.0",
+    "caller": "|java+method:///pl/allegro/tech/hermes/management/infrastructure/kafka/service/KafkaSingleMessageReader/convertAvroToJson(pl.allegro.tech.hermes.api.Topic,byte%5B%5D)|",
+    "called": "|java+method:///pl/allegro/tech/hermes/common/message/wrapper/SchemaAwareSerDe/deserialize(byte%5B%5D)|",
+    "v1Body": [
+      "|java+method:///pl/allegro/tech/hermes/common/message/serialization/SchemaAwarePayload/getSchemaVersion()|",
+      "|java+method:///pl/allegro/tech/hermes/api/Topic/isSchemaVersionAwareSerializationEnabled()|",
+      "|java+method:///pl/allegro/tech/hermes/domain/topic/schema/SchemaRepository/getAvroSchema(pl.allegro.tech.hermes.api.Topic,pl.allegro.tech.hermes.domain.topic.schema.SchemaVersion)|",
+      "|java+method:///pl/allegro/tech/hermes/common/message/serialization/SchemaAwarePayload/getPayload()|",
+      "|java+method:///tech/allegro/schema/json2avro/converter/JsonAvroConverter/convertToJson(byte%5B%5D,org.apache.avro.Schema)|",
+      "|java+method:///pl/allegro/tech/hermes/common/message/serialization/SchemaAwareSerDe/deserialize(byte%5B%5D)|",
+      "|java+method:///pl/allegro/tech/hermes/domain/topic/schema/SchemaRepository/getAvroSchema(pl.allegro.tech.hermes.api.Topic)|",
+      "|java+method:///pl/allegro/tech/hermes/domain/topic/schema/CompiledSchema/getSchema()|"
+    ],
+    "v2Body": [
+      "|java+method:///pl/allegro/tech/hermes/schema/SchemaRepository/getAvroSchema(pl.allegro.tech.hermes.api.Topic,pl.allegro.tech.hermes.schema.SchemaVersion)|",
+      "|java+method:///pl/allegro/tech/hermes/schema/CompiledSchema/getSchema()|",
+      "|java+method:///pl/allegro/tech/hermes/schema/SchemaRepository/getLatestAvroSchema(pl.allegro.tech.hermes.api.Topic)|",
+      "|java+method:///pl/allegro/tech/hermes/common/message/wrapper/SchemaAwareSerDe/deserialize(byte%5B%5D)|",
+      "|java+method:///pl/allegro/tech/hermes/common/message/wrapper/SchemaAwarePayload/getSchemaVersion()|",
+      "|java+method:///pl/allegro/tech/hermes/api/Topic/isSchemaVersionAwareSerializationEnabled()|",
+      "|java+method:///pl/allegro/tech/hermes/common/message/wrapper/SchemaAwarePayload/getPayload()|",
+      "|java+method:///tech/allegro/schema/json2avro/converter/JsonAvroConverter/convertToJson(byte%5B%5D,org.apache.avro.Schema)|"
+    ],
+    "affectedLib": "pl.allegro.tech.hermes:hermes-common:0.9.0",
+    "change": "UPDATED"
+  }
+]

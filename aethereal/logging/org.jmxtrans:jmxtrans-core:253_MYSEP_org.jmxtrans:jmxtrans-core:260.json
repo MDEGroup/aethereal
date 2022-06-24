@@ -1,0 +1,322 @@
+[
+  {
+    "coordinatesV1": "org.jmxtrans:jmxtrans-core:253",
+    "coordinatesV2": "org.jmxtrans:jmxtrans-core:260",
+    "caller": "|java+method:///com/googlecode/jmxtrans/JmxTransformer/stopServices()|",
+    "called": "|java+method:///com/googlecode/jmxtrans/util/WatchDir/stopService()|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+constructor:///com/googlecode/jmxtrans/exceptions/LifecycleException/LifecycleException(java.lang.Throwable)|",
+      "|java+method:///java/lang/Thread/sleep(long)|",
+      "|java+method:///com/googlecode/jmxtrans/util/WatchDir/stopService()|",
+      "|java+method:///org/quartz/Scheduler/shutdown(boolean)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/lang/InterruptedException/getMessage()|",
+      "|java+method:///com/googlecode/jmxtrans/JmxTransformer/stopServers()|",
+      "|java+method:///java/lang/Exception/getMessage()|",
+      "|java+method:///com/googlecode/jmxtrans/JmxTransformer/stopWriterAndClearMasterServerList()|",
+      "|java+method:///org/quartz/Scheduler/isStarted()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+constructor:///com/googlecode/jmxtrans/exceptions/LifecycleException/LifecycleException(java.lang.Throwable)|",
+      "|java+method:///java/lang/Thread/sleep(long)|",
+      "|java+method:///com/googlecode/jmxtrans/util/WatchDir/stopService()|",
+      "|java+method:///com/google/common/util/concurrent/MoreExecutors/shutdownAndAwaitTermination(java.util.concurrent.ExecutorService,long,java.util.concurrent.TimeUnit)|",
+      "|java+method:///org/quartz/Scheduler/shutdown(boolean)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/lang/InterruptedException/getMessage()|",
+      "|java+method:///java/lang/Thread/currentThread()|",
+      "|java+method:///java/lang/Thread/interrupt()|",
+      "|java+method:///com/googlecode/jmxtrans/JmxTransformer/stopWriterAndClearMasterServerList()|",
+      "|java+method:///org/quartz/Scheduler/isStarted()|"
+    ],
+    "affectedLib": "org.jmxtrans:jmxtrans-utils:260",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jmxtrans:jmxtrans-core:253",
+    "coordinatesV2": "org.jmxtrans:jmxtrans-core:260",
+    "caller": "|java+method:///com/googlecode/jmxtrans/JmxTransformer/main(java.lang.String%5B%5D)|",
+    "called": "|java+method:///com/googlecode/jmxtrans/classloader/ClassLoaderEnricher/add(java.io.File)|",
+    "v1Body": [
+      "|java+constructor:///com/googlecode/jmxtrans/guice/JmxTransModule/JmxTransModule(com.googlecode.jmxtrans.cli.JmxTransConfiguration)|",
+      "|java+method:///com/google/inject/Injector/getInstance(java.lang.Class)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+constructor:///com/googlecode/jmxtrans/classloader/ClassLoaderEnricher/ClassLoaderEnricher()|",
+      "|java+method:///com/googlecode/jmxtrans/JmxTransformer/doMain()|",
+      "|java+method:///com/googlecode/jmxtrans/classloader/ClassLoaderEnricher/add(java.io.File)|",
+      "|java+method:///com/google/inject/Guice/createInjector(com.google.inject.Module%5B%5D)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///com/googlecode/jmxtrans/cli/JmxTransConfiguration/getAdditionalJars()|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+constructor:///com/googlecode/jmxtrans/cli/CliArgumentParser/CliArgumentParser()|",
+      "|java+method:///com/googlecode/jmxtrans/cli/JmxTransConfiguration/isHelp()|",
+      "|java+method:///com/googlecode/jmxtrans/cli/CliArgumentParser/parseOptions(java.lang.String%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/googlecode/jmxtrans/cli/JmxTransConfiguration/isHelp()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///com/googlecode/jmxtrans/guice/JmxTransModule/createInjector(com.googlecode.jmxtrans.cli.JmxTransConfiguration)|",
+      "|java+constructor:///com/googlecode/jmxtrans/classloader/ClassLoaderEnricher/ClassLoaderEnricher()|",
+      "|java+method:///com/googlecode/jmxtrans/JmxTransformer/doMain()|",
+      "|java+method:///com/googlecode/jmxtrans/classloader/ClassLoaderEnricher/add(java.io.File)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/lang/Iterable/iterator()|",
+      "|java+constructor:///com/googlecode/jmxtrans/cli/JCommanderArgumentParser/JCommanderArgumentParser()|",
+      "|java+method:///com/google/inject/Injector/getInstance(java.lang.Class)|",
+      "|java+method:///com/googlecode/jmxtrans/cli/JmxTransConfiguration/getAdditionalJars()|",
+      "|java+method:///com/googlecode/jmxtrans/cli/JCommanderArgumentParser/parseOptions(java.lang.String%5B%5D)|"
+    ],
+    "affectedLib": "org.jmxtrans:jmxtrans-utils:260",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jmxtrans:jmxtrans-core:253",
+    "coordinatesV2": "org.jmxtrans:jmxtrans-core:260",
+    "caller": "|java+constructor:///com/googlecode/jmxtrans/model/naming/typename/PrependingTypeNameValuesStringBuilder/PrependingTypeNameValuesStringBuilder(java.lang.String,java.util.List)|",
+    "called": "|java+method:///com/google/common/collect/ImmutableList/copyOf(java.util.Collection)|",
+    "v1Body": [
+      "|java+constructor:///com/googlecode/jmxtrans/model/naming/typename/TypeNameValuesStringBuilder/TypeNameValuesStringBuilder(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/googlecode/jmxtrans/model/naming/typename/TypeNameValuesStringBuilder/TypeNameValuesStringBuilder(java.lang.String)|",
+      "|java+method:///com/google/common/collect/ImmutableList/copyOf(java.util.Collection)|"
+    ],
+    "affectedLib": "com.google.guava:guava:19.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jmxtrans:jmxtrans-core:253",
+    "coordinatesV2": "org.jmxtrans:jmxtrans-core:260",
+    "caller": "|java+constructor:///com/googlecode/jmxtrans/model/output/BaseOutputWriter/BaseOutputWriter(com.google.common.collect.ImmutableList,boolean,java.lang.Boolean,java.util.Map)|",
+    "called": "|java+method:///com/google/common/collect/ImmutableList/copyOf(java.util.Collection)|",
+    "v1Body": [
+      "|java+method:///com/googlecode/jmxtrans/model/output/Settings/getBooleanSetting(java.util.Map,java.lang.String)|",
+      "|java+method:///java/util/Collections/emptyMap()|",
+      "|java+method:///com/google/common/base/MoreObjects/firstNonNull(java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+method:///java/util/Collections/emptyList()|",
+      "|java+method:///com/googlecode/jmxtrans/model/output/BaseOutputWriter/firstNonNull(java.lang.Object,java.lang.Object,java.lang.Object)|",
+      "|java+method:///com/googlecode/jmxtrans/model/PropertyResolver/resolveMap(java.util.Map)|",
+      "|java+constructor:///com/googlecode/jmxtrans/model/results/IdentityValueTransformer/IdentityValueTransformer()|",
+      "|java+method:///java/lang/Boolean/valueOf(boolean)|",
+      "|java+method:///com/googlecode/jmxtrans/model/output/Settings/getBooleanSetting(java.util.Map,java.lang.String,java.lang.Boolean)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///com/google/common/collect/ImmutableList/copyOf(java.util.Collection)|",
+      "|java+method:///java/lang/Boolean/booleanValue()|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+constructor:///com/googlecode/jmxtrans/model/results/BooleanAsNumberValueTransformer/BooleanAsNumberValueTransformer(java.lang.Number,java.lang.Number)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/googlecode/jmxtrans/model/output/Settings/getBooleanSetting(java.util.Map,java.lang.String)|",
+      "|java+method:///java/util/Collections/emptyMap()|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String)|",
+      "|java+method:///com/google/common/base/MoreObjects/firstNonNull(java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/util/Collections/emptyList()|",
+      "|java+constructor:///com/googlecode/jmxtrans/model/results/IdentityValueTransformer/IdentityValueTransformer()|",
+      "|java+method:///java/lang/Boolean/valueOf(boolean)|",
+      "|java+method:///java/util/Map/isEmpty()|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+method:///com/google/common/collect/ImmutableMap/copyOf(java.util.Map)|",
+      "|java+method:///com/googlecode/jmxtrans/model/output/BaseOutputWriter/firstNonNull(java.lang.Object,java.lang.Object,java.lang.Object)|",
+      "|java+method:///com/googlecode/jmxtrans/model/output/Settings/getBooleanSetting(java.util.Map,java.lang.String,java.lang.Boolean)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///com/google/common/collect/ImmutableList/copyOf(java.util.Collection)|",
+      "|java+method:///java/lang/Boolean/booleanValue()|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+constructor:///com/googlecode/jmxtrans/model/results/BooleanAsNumberValueTransformer/BooleanAsNumberValueTransformer(java.lang.Number,java.lang.Number)|"
+    ],
+    "affectedLib": "com.google.guava:guava:19.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jmxtrans:jmxtrans-core:253",
+    "coordinatesV2": "org.jmxtrans:jmxtrans-core:260",
+    "caller": "|java+method:///com/googlecode/jmxtrans/JmxTransformer/stopServices()|",
+    "called": "|java+method:///com/google/common/util/concurrent/MoreExecutors/shutdownAndAwaitTermination(java.util.concurrent.ExecutorService,long,java.util.concurrent.TimeUnit)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+constructor:///com/googlecode/jmxtrans/exceptions/LifecycleException/LifecycleException(java.lang.Throwable)|",
+      "|java+method:///java/lang/Thread/sleep(long)|",
+      "|java+method:///com/googlecode/jmxtrans/util/WatchDir/stopService()|",
+      "|java+method:///org/quartz/Scheduler/shutdown(boolean)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/lang/InterruptedException/getMessage()|",
+      "|java+method:///com/googlecode/jmxtrans/JmxTransformer/stopServers()|",
+      "|java+method:///java/lang/Exception/getMessage()|",
+      "|java+method:///com/googlecode/jmxtrans/JmxTransformer/stopWriterAndClearMasterServerList()|",
+      "|java+method:///org/quartz/Scheduler/isStarted()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+constructor:///com/googlecode/jmxtrans/exceptions/LifecycleException/LifecycleException(java.lang.Throwable)|",
+      "|java+method:///java/lang/Thread/sleep(long)|",
+      "|java+method:///com/googlecode/jmxtrans/util/WatchDir/stopService()|",
+      "|java+method:///com/google/common/util/concurrent/MoreExecutors/shutdownAndAwaitTermination(java.util.concurrent.ExecutorService,long,java.util.concurrent.TimeUnit)|",
+      "|java+method:///org/quartz/Scheduler/shutdown(boolean)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/lang/InterruptedException/getMessage()|",
+      "|java+method:///java/lang/Thread/currentThread()|",
+      "|java+method:///java/lang/Thread/interrupt()|",
+      "|java+method:///com/googlecode/jmxtrans/JmxTransformer/stopWriterAndClearMasterServerList()|",
+      "|java+method:///org/quartz/Scheduler/isStarted()|"
+    ],
+    "affectedLib": "com.google.guava:guava:19.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jmxtrans:jmxtrans-core:253",
+    "coordinatesV2": "org.jmxtrans:jmxtrans-core:260",
+    "caller": "|java+method:///com/googlecode/jmxtrans/model/Server$Builder/build()|",
+    "called": "|java+method:///com/google/common/collect/ImmutableList/copyOf(java.util.Collection)|",
+    "v1Body": [
+      "|java+constructor:///com/googlecode/jmxtrans/model/Server/Server(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.Integer,java.lang.Integer,boolean,java.util.List)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/List/isEmpty()|",
+      "|java+constructor:///com/googlecode/jmxtrans/model/Server/Server(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.Integer,java.lang.Integer,boolean,java.util.List,com.google.common.collect.ImmutableList,org.apache.commons.pool.KeyedObjectPool)|",
+      "|java+constructor:///com/googlecode/jmxtrans/model/Server/Server(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.Integer,java.lang.Integer,boolean,java.util.List,java.util.List,org.apache.commons.pool.KeyedObjectPool)|",
+      "|java+method:///com/google/common/collect/ImmutableList/copyOf(java.util.Collection)|"
+    ],
+    "affectedLib": "com.google.guava:guava:19.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jmxtrans:jmxtrans-core:253",
+    "coordinatesV2": "org.jmxtrans:jmxtrans-core:260",
+    "caller": "|java+constructor:///com/googlecode/jmxtrans/model/Query$Builder/Query$Builder()|",
+    "called": "|java+method:///com/google/common/collect/Sets/newLinkedHashSet()|",
+    "v1Body": [
+      "|java+method:///com/google/common/collect/Lists/newArrayList()|",
+      "|java+method:///com/google/common/collect/Sets/newHashSet()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/common/collect/Lists/newArrayList()|",
+      "|java+method:///com/google/common/collect/Sets/newLinkedHashSet()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "com.google.guava:guava:19.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jmxtrans:jmxtrans-core:253",
+    "coordinatesV2": "org.jmxtrans:jmxtrans-core:260",
+    "caller": "|java+method:///com/googlecode/jmxtrans/model/Query$Builder/build()|",
+    "called": "|java+method:///com/google/common/collect/ImmutableList/copyOf(java.util.Collection)|",
+    "v1Body": [
+      "|java+constructor:///com/googlecode/jmxtrans/model/Query/Query(java.lang.String,java.util.List,java.util.List,java.util.Set,java.lang.String,boolean,boolean,boolean,java.util.List)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/List/isEmpty()|",
+      "|java+constructor:///com/googlecode/jmxtrans/model/Query/Query(java.lang.String,java.util.List,java.util.List,java.util.Set,java.lang.String,boolean,boolean,boolean,java.util.List)|",
+      "|java+method:///com/google/common/collect/ImmutableList/copyOf(java.util.Collection)|",
+      "|java+constructor:///com/googlecode/jmxtrans/model/Query/Query(java.lang.String,java.util.List,java.util.List,java.util.Set,java.lang.String,boolean,boolean,boolean,com.google.common.collect.ImmutableList)|"
+    ],
+    "affectedLib": "com.google.guava:guava:19.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jmxtrans:jmxtrans-core:253",
+    "coordinatesV2": "org.jmxtrans:jmxtrans-core:260",
+    "caller": "|java+method:///com/googlecode/jmxtrans/JmxTransformer/stopWriterAndClearMasterServerList()|",
+    "called": "|java+method:///com/google/common/collect/ImmutableList/iterator()|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+method:///com/google/common/collect/ImmutableList/of()|",
+      "|java+method:///java/lang/Class/getSimpleName()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///com/googlecode/jmxtrans/model/Server/getQueries()|",
+      "|java+method:///com/googlecode/jmxtrans/model/OutputWriter/stop()|",
+      "|java+method:///java/lang/Iterable/iterator()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String)|",
+      "|java+method:///com/googlecode/jmxtrans/model/Query/getOutputWriterInstances()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///com/google/common/collect/ImmutableSet/iterator()|",
+      "|java+method:///com/google/common/collect/ImmutableList/iterator()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/lang/Object/getClass()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///com/google/common/collect/ImmutableList/of()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///com/googlecode/jmxtrans/model/Server/getOutputWriters()|",
+      "|java+method:///com/googlecode/jmxtrans/model/Server/getQueries()|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Object)|",
+      "|java+method:///java/lang/Iterable/iterator()|",
+      "|java+method:///com/googlecode/jmxtrans/model/Query/getOutputWriterInstances()|",
+      "|java+method:///com/googlecode/jmxtrans/model/OutputWriter/close()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///com/google/common/collect/ImmutableSet/iterator()|",
+      "|java+method:///com/google/common/collect/ImmutableList/iterator()|"
+    ],
+    "affectedLib": "com.google.guava:guava:19.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jmxtrans:jmxtrans-core:253",
+    "coordinatesV2": "org.jmxtrans:jmxtrans-core:260",
+    "caller": "|java+method:///com/googlecode/jmxtrans/jmx/JmxUtils/processServer(com.googlecode.jmxtrans.model.Server)|",
+    "called": "|java+method:///com/google/common/collect/ImmutableSet/iterator()|",
+    "v1Body": [
+      "|java+method:///com/googlecode/jmxtrans/model/Query/runOutputWritersForQuery(com.googlecode.jmxtrans.model.Server,java.lang.Iterable)|",
+      "|java+method:///com/googlecode/jmxtrans/model/Server/execute(com.googlecode.jmxtrans.model.Query,stormpot.Timeout)|",
+      "|java+constructor:///java/util/ArrayList/ArrayList(int)|",
+      "|java+method:///com/googlecode/jmxtrans/model/Server/isQueriesMultiThreaded()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///com/google/common/collect/ImmutableSet/size()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///com/googlecode/jmxtrans/model/Server/getQueries()|",
+      "|java+method:///com/googlecode/jmxtrans/model/Server/getNumQueryThreads()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+constructor:///stormpot/Timeout/Timeout(long,java.util.concurrent.TimeUnit)|",
+      "|java+method:///java/util/concurrent/Executors/newFixedThreadPool(int)|",
+      "|java+method:///org/slf4j/Logger/isDebugEnabled()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+method:///java/util/concurrent/ExecutorService/invokeAll(java.util.Collection)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///com/googlecode/jmxtrans/jmx/JmxUtils/shutdownAndAwaitTermination(java.util.concurrent.ExecutorService)|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+method:///java/util/concurrent/Executors/callable(java.lang.Runnable)|",
+      "|java+method:///com/google/common/collect/ImmutableSet/iterator()|",
+      "|java+constructor:///com/googlecode/jmxtrans/jmx/ProcessQueryThread/ProcessQueryThread(com.googlecode.jmxtrans.model.Server,com.googlecode.jmxtrans.model.Query)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+constructor:///com/googlecode/jmxtrans/jmx/ProcessQueryThread/ProcessQueryThread(com.googlecode.jmxtrans.jmx.ResultProcessor,com.googlecode.jmxtrans.model.Server,com.googlecode.jmxtrans.model.Query)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///com/googlecode/jmxtrans/model/Server/getQueries()|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///com/google/common/collect/ImmutableSet/iterator()|",
+      "|java+method:///java/util/concurrent/ThreadPoolExecutor/submit(java.lang.Runnable)|"
+    ],
+    "affectedLib": "com.google.guava:guava:19.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jmxtrans:jmxtrans-core:253",
+    "coordinatesV2": "org.jmxtrans:jmxtrans-core:260",
+    "caller": "|java+method:///com/googlecode/jmxtrans/util/PlaceholderResolverJsonNodeFactory/textNode(java.lang.String)|",
+    "called": "|java+method:///com/fasterxml/jackson/databind/node/JsonNodeFactory/textNode(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///com/googlecode/jmxtrans/util/PlaceholderResolverJsonNodeFactory/textNode(java.lang.String)|",
+      "|java+method:///com/fasterxml/jackson/databind/node/JsonNodeFactory/textNode(java.lang.String)|",
+      "|java+method:///com/googlecode/jmxtrans/model/PropertyResolver/resolveProps(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/googlecode/jmxtrans/util/PlaceholderResolverJsonNodeFactory/textNode(java.lang.String)|",
+      "|java+method:///com/googlecode/jmxtrans/util/PropertyResolver/resolveProps(java.lang.String)|",
+      "|java+method:///com/fasterxml/jackson/databind/node/JsonNodeFactory/textNode(java.lang.String)|"
+    ],
+    "affectedLib": "com.fasterxml.jackson.core:jackson-databind:2.7.4",
+    "change": "UPDATED"
+  }
+]

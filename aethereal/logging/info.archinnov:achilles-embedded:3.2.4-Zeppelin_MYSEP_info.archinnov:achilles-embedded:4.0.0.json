@@ -1,0 +1,254 @@
+[
+  {
+    "coordinatesV1": "info.archinnov:achilles-embedded:4.0.0",
+    "coordinatesV2": "info.archinnov:achilles-embedded:3.2.4-Zeppelin",
+    "caller": "|java+method:///info/archinnov/achilles/script/ScriptExecutor/loadScriptAsLines(java.lang.String)|",
+    "called": "|java+method:///info/archinnov/achilles/internal/validation/Validator/validateNotNull(java.lang.Object,java.lang.String,java.lang.Object%5B%5D)|",
+    "v1Body": [
+      "|java+method:///java/util/Scanner/hasNextLine()|",
+      "|java+constructor:///java/util/Scanner/Scanner(java.io.InputStream)|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/Class/getResourceAsStream(java.lang.String)|",
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/String/trim()|",
+      "|java+method:///org/apache/commons/lang3/StringUtils/isNotBlank(java.lang.CharSequence)|",
+      "|java+method:///java/util/Scanner/nextLine()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///info/archinnov/achilles/internal/validation/Validator/validateNotNull(java.lang.Object,java.lang.String,java.lang.Object%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///info/archinnov/achilles/script/ScriptExecutor/loadScriptAsLines(java.lang.String,java.util.Map)|"
+    ],
+    "affectedLib": "info.archinnov:achilles-core:3.2.4-Zeppelin",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "info.archinnov:achilles-embedded:4.0.0",
+    "coordinatesV2": "info.archinnov:achilles-embedded:3.2.4-Zeppelin",
+    "caller": "|java+method:///info/archinnov/achilles/script/ScriptExecutor/executeAsync(java.lang.String)|",
+    "called": "|java+method:///info/archinnov/achilles/internal/async/AsyncUtils/buildInterruptible(com.google.common.util.concurrent.ListenableFuture)|",
+    "v1Body": [
+      "|java+method:///info/archinnov/achilles/internal/async/AsyncUtils/buildInterruptible(com.google.common.util.concurrent.ListenableFuture)|",
+      "|java+method:///com/datastax/driver/core/Session/executeAsync(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///info/archinnov/achilles/internals/futures/FutureUtils/toCompletableFuture(com.google.common.util.concurrent.ListenableFuture,java.util.concurrent.ExecutorService)|",
+      "|java+method:///com/datastax/driver/core/Session/executeAsync(java.lang.String)|"
+    ],
+    "affectedLib": "info.archinnov:achilles-core:3.2.4-Zeppelin",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "info.archinnov:achilles-embedded:4.0.0",
+    "coordinatesV2": "info.archinnov:achilles-embedded:3.2.4-Zeppelin",
+    "caller": "|java+method:///info/archinnov/achilles/script/ScriptExecutor/executeScript(java.lang.String)|",
+    "called": "|java+method:///info/archinnov/achilles/query/cql/NativeQueryValidator/isDMLStatement(com.datastax.driver.core.RegularStatement)|",
+    "v1Body": [
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///info/archinnov/achilles/query/cql/NativeQueryValidator/isDMLStatement(com.datastax.driver.core.RegularStatement)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///com/datastax/driver/core/SimpleStatement/getQueryString()|",
+      "|java+method:///info/archinnov/achilles/script/ScriptExecutor/loadScriptAsLines(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///com/datastax/driver/core/Session/execute(com.datastax.driver.core.Statement)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///info/archinnov/achilles/script/ScriptExecutor/buildStatements(java.util.List)|"
+    ],
+    "v2Body": [
+      "|java+method:///info/archinnov/achilles/script/ScriptExecutor/executeScriptTemplate(java.lang.String,java.util.Map)|"
+    ],
+    "affectedLib": "info.archinnov:achilles-core:3.2.4-Zeppelin",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "info.archinnov:achilles-embedded:4.0.0",
+    "coordinatesV2": "info.archinnov:achilles-embedded:3.2.4-Zeppelin",
+    "caller": "|java+method:///info/archinnov/achilles/script/ScriptExecutor/executeAsync(com.datastax.driver.core.Statement)|",
+    "called": "|java+method:///info/archinnov/achilles/internal/async/AsyncUtils/buildInterruptible(com.google.common.util.concurrent.ListenableFuture)|",
+    "v1Body": [
+      "|java+method:///info/archinnov/achilles/internal/async/AsyncUtils/buildInterruptible(com.google.common.util.concurrent.ListenableFuture)|",
+      "|java+method:///com/datastax/driver/core/Session/executeAsync(com.datastax.driver.core.Statement)|"
+    ],
+    "v2Body": [
+      "|java+method:///info/archinnov/achilles/internals/futures/FutureUtils/toCompletableFuture(com.google.common.util.concurrent.ListenableFuture,java.util.concurrent.ExecutorService)|",
+      "|java+method:///com/datastax/driver/core/Session/executeAsync(com.datastax.driver.core.Statement)|"
+    ],
+    "affectedLib": "info.archinnov:achilles-core:3.2.4-Zeppelin",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "info.archinnov:achilles-embedded:4.0.0",
+    "coordinatesV2": "info.archinnov:achilles-embedded:3.2.4-Zeppelin",
+    "caller": "|java+method:///info/archinnov/achilles/embedded/CassandraEmbeddedServerBuilder/withScript(java.lang.String)|",
+    "called": "|java+method:///info/archinnov/achilles/internal/validation/Validator/validateNotBlank(java.lang.String,java.lang.String,java.lang.Object%5B%5D)|",
+    "v1Body": [
+      "|java+method:///info/archinnov/achilles/internal/validation/Validator/validateNotBlank(java.lang.String,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///java/lang/String/trim()|",
+      "|java+method:///java/util/List/add(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/String/trim()|",
+      "|java+method:///info/archinnov/achilles/validation/Validator/validateNotBlank(java.lang.String,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///java/util/List/add(java.lang.Object)|"
+    ],
+    "affectedLib": "info.archinnov:achilles-core:3.2.4-Zeppelin",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "info.archinnov:achilles-embedded:4.0.0",
+    "coordinatesV2": "info.archinnov:achilles-embedded:3.2.4-Zeppelin",
+    "caller": "|java+method:///info/archinnov/achilles/embedded/OrderedShutdownHook/callShutDown()|",
+    "called": "|java+method:///info/archinnov/achilles/persistence/PersistenceManagerFactory/shutDown()|",
+    "v1Body": [
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///com/datastax/driver/core/CloseFuture/force()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///info/archinnov/achilles/persistence/PersistenceManagerFactory/shutDown()|",
+      "|java+method:///com/datastax/driver/core/Cluster/closeAsync()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///com/datastax/driver/core/Cluster/getClusterName()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/concurrent/ConcurrentLinkedQueue/iterator()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Set/forEach(java.util.function.Consumer)|",
+      "|java+method:///java/util/Queue/forEach(java.util.function.Consumer)|"
+    ],
+    "affectedLib": "info.archinnov:achilles-core:3.2.4-Zeppelin",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "info.archinnov:achilles-embedded:3.2.4-Zeppelin",
+    "coordinatesV2": "info.archinnov:achilles-embedded:4.0.0",
+    "caller": "|java+method:///info/archinnov/achilles/script/ScriptExecutor/executeAsync(com.datastax.driver.core.Statement)|",
+    "called": "|java+method:///info/archinnov/achilles/internals/futures/FutureUtils/toCompletableFuture(com.google.common.util.concurrent.ListenableFuture,java.util.concurrent.ExecutorService)|",
+    "v1Body": [
+      "|java+method:///info/archinnov/achilles/internal/async/AsyncUtils/buildInterruptible(com.google.common.util.concurrent.ListenableFuture)|",
+      "|java+method:///com/datastax/driver/core/Session/executeAsync(com.datastax.driver.core.Statement)|"
+    ],
+    "v2Body": [
+      "|java+method:///info/archinnov/achilles/internals/futures/FutureUtils/toCompletableFuture(com.google.common.util.concurrent.ListenableFuture,java.util.concurrent.ExecutorService)|",
+      "|java+method:///com/datastax/driver/core/Session/executeAsync(com.datastax.driver.core.Statement)|"
+    ],
+    "affectedLib": "info.archinnov:achilles-common:4.0.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "info.archinnov:achilles-embedded:3.2.4-Zeppelin",
+    "coordinatesV2": "info.archinnov:achilles-embedded:4.0.0",
+    "caller": "|java+method:///info/archinnov/achilles/script/ScriptExecutor/executeAsync(java.lang.String)|",
+    "called": "|java+method:///info/archinnov/achilles/internals/futures/FutureUtils/toCompletableFuture(com.google.common.util.concurrent.ListenableFuture,java.util.concurrent.ExecutorService)|",
+    "v1Body": [
+      "|java+method:///info/archinnov/achilles/internal/async/AsyncUtils/buildInterruptible(com.google.common.util.concurrent.ListenableFuture)|",
+      "|java+method:///com/datastax/driver/core/Session/executeAsync(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///info/archinnov/achilles/internals/futures/FutureUtils/toCompletableFuture(com.google.common.util.concurrent.ListenableFuture,java.util.concurrent.ExecutorService)|",
+      "|java+method:///com/datastax/driver/core/Session/executeAsync(java.lang.String)|"
+    ],
+    "affectedLib": "info.archinnov:achilles-common:4.0.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "info.archinnov:achilles-embedded:3.2.4-Zeppelin",
+    "coordinatesV2": "info.archinnov:achilles-embedded:4.0.0",
+    "caller": "|java+initializer:///info/archinnov/achilles/embedded/AchillesInitializer/AchillesInitializer$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///java/util/regex/Pattern/compile(java.lang.String)|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/regex/Pattern/compile(java.lang.String)|",
+      "|java+constructor:///java/util/concurrent/atomic/AtomicBoolean/AtomicBoolean(boolean)|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "info.archinnov:achilles-embedded:3.2.4-Zeppelin",
+    "coordinatesV2": "info.archinnov:achilles-embedded:4.0.0",
+    "caller": "|java+initializer:///info/archinnov/achilles/script/ScriptExecutor/ScriptExecutor$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/regex/Pattern/compile(java.lang.String)|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.String)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "info.archinnov:achilles-embedded:3.2.4-Zeppelin",
+    "coordinatesV2": "info.archinnov:achilles-embedded:4.0.0",
+    "caller": "|java+initializer:///info/archinnov/achilles/embedded/CassandraEmbeddedServer/CassandraEmbeddedServer$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.String)|",
+      "|java+constructor:///info/archinnov/achilles/embedded/AchillesInitializer/AchillesInitializer()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+constructor:///info/archinnov/achilles/embedded/AchillesInitializer/AchillesInitializer()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "info.archinnov:achilles-embedded:3.2.4-Zeppelin",
+    "coordinatesV2": "info.archinnov:achilles-embedded:4.0.0",
+    "caller": "|java+method:///info/archinnov/achilles/embedded/AchillesInitializer/createCluster(java.lang.String,int,info.archinnov.achilles.type.TypedMap)|",
+    "called": "|java+method:///com/datastax/driver/core/Cluster$Builder/addContactPoint(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///com/datastax/driver/core/Cluster$Builder/addContactPoint(java.lang.String)|",
+      "|java+method:///com/datastax/driver/core/Cluster$Builder/build()|",
+      "|java+method:///com/datastax/driver/core/Cluster$Builder/withLoadBalancingPolicy(com.datastax.driver.core.policies.LoadBalancingPolicy)|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///com/datastax/driver/core/Cluster$Builder/withReconnectionPolicy(com.datastax.driver.core.policies.ReconnectionPolicy)|",
+      "|java+method:///com/datastax/driver/core/Cluster$Builder/withCompression(com.datastax.driver.core.ProtocolOptions$Compression)|",
+      "|java+method:///com/datastax/driver/core/Cluster$Builder/withProtocolVersion(com.datastax.driver.core.ProtocolVersion)|",
+      "|java+method:///info/archinnov/achilles/type/TypedMap/getTyped(java.lang.String)|",
+      "|java+method:///com/datastax/driver/core/Cluster$Builder/withRetryPolicy(com.datastax.driver.core.policies.RetryPolicy)|",
+      "|java+method:///org/slf4j/Logger/isDebugEnabled()|",
+      "|java+method:///info/archinnov/achilles/embedded/ServerStarter/getShutdownHook()|",
+      "|java+method:///info/archinnov/achilles/embedded/OrderedShutdownHook/addCluster(com.datastax.driver.core.Cluster)|",
+      "|java+method:///com/datastax/driver/core/Cluster$Builder/withPort(int)|",
+      "|java+method:///com/datastax/driver/core/Cluster$Builder/withClusterName(java.lang.String)|",
+      "|java+method:///com/datastax/driver/core/Cluster/builder()|",
+      "|java+method:///java/lang/Integer/valueOf(int)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/datastax/driver/core/Cluster$Builder/addContactPoint(java.lang.String)|",
+      "|java+method:///com/datastax/driver/core/Cluster$Builder/build()|",
+      "|java+method:///com/datastax/driver/core/Cluster$Builder/withLoadBalancingPolicy(com.datastax.driver.core.policies.LoadBalancingPolicy)|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///com/datastax/driver/core/Cluster$Builder/withReconnectionPolicy(com.datastax.driver.core.policies.ReconnectionPolicy)|",
+      "|java+method:///com/datastax/driver/core/Cluster$Builder/withCompression(com.datastax.driver.core.ProtocolOptions$Compression)|",
+      "|java+method:///info/archinnov/achilles/type/TypedMap/getTyped(java.lang.String)|",
+      "|java+method:///com/datastax/driver/core/Cluster$Builder/withRetryPolicy(com.datastax.driver.core.policies.RetryPolicy)|",
+      "|java+method:///org/slf4j/Logger/isDebugEnabled()|",
+      "|java+method:///info/archinnov/achilles/embedded/ServerStarter/getShutdownHook()|",
+      "|java+method:///info/archinnov/achilles/embedded/OrderedShutdownHook/addCluster(com.datastax.driver.core.Cluster)|",
+      "|java+method:///com/datastax/driver/core/Cluster$Builder/withPort(int)|",
+      "|java+method:///com/datastax/driver/core/Cluster$Builder/withClusterName(java.lang.String)|",
+      "|java+method:///com/datastax/driver/core/Cluster/builder()|",
+      "|java+method:///java/lang/Integer/valueOf(int)|"
+    ],
+    "affectedLib": "com.datastax.cassandra:cassandra-driver-core:2.2.0-rc3",
+    "change": "UPDATED"
+  }
+]

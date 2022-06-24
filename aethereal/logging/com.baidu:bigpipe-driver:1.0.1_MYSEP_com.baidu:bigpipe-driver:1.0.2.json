@@ -1,0 +1,90 @@
+[
+  {
+    "coordinatesV1": "com.baidu:bigpipe-driver:1.0.2",
+    "coordinatesV2": "com.baidu:bigpipe-driver:1.0.1",
+    "caller": "|java+method:///com/baidu/bigpipe/common/support/JsonUtils/json2Object(java.lang.String,java.lang.Class)|",
+    "called": "|java+method:///org/codehaus/jackson/map/DeserializationConfig/without(org.codehaus.jackson.map.DeserializationConfig$Feature%5B%5D)|",
+    "v1Body": [
+      "|java+method:///com/baidu/bigpipe/common/support/JsonUtils$ObjectMapperExt/getDeserializationConfig()|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///com/baidu/bigpipe/common/support/JsonUtils$ObjectMapperExt/readValue(java.lang.String,java.lang.Class)|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/codehaus/jackson/map/DeserializationConfig/without(org.codehaus.jackson.map.DeserializationConfig$Feature%5B%5D)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/Exception/getMessage()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///com/google/gson/Gson/fromJson(java.lang.String,java.lang.Class)|"
+    ],
+    "affectedLib": "org.codehaus.jackson:jackson-mapper-asl:1.9.9",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.baidu:bigpipe-driver:1.0.1",
+    "coordinatesV2": "com.baidu:bigpipe-driver:1.0.2",
+    "caller": "|java+initializer:///com/baidu/bigpipe/common/support/JsonUtils/JsonUtils$initializer|",
+    "called": "|java+method:///com/google/gson/GsonBuilder/create()|",
+    "v1Body": [
+      "|java+constructor:///com/baidu/bigpipe/common/support/JsonUtils$ObjectMapperExt/JsonUtils$ObjectMapperExt(com.baidu.bigpipe.common.support.JsonUtils$1)|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///com/google/gson/GsonBuilder/create()|",
+      "|java+constructor:///com/google/gson/GsonBuilder/GsonBuilder()|"
+    ],
+    "affectedLib": "com.google.code.gson:gson:1.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.baidu:bigpipe-driver:1.0.1",
+    "coordinatesV2": "com.baidu:bigpipe-driver:1.0.2",
+    "caller": "|java+method:///com/baidu/bigpipe/common/support/JsonUtils/toJson(java.lang.Object,boolean)|",
+    "called": "|java+method:///com/google/gson/Gson/toJson(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///com/baidu/bigpipe/common/support/JsonUtils$ObjectMapperExt/writeValueAsString(java.lang.Object,org.codehaus.jackson.map.annotate.JsonSerialize$Inclusion)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///com/baidu/bigpipe/common/support/JsonUtils$ObjectMapperExt/writeValueAsString(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/Exception/getMessage()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///com/google/gson/Gson/toJson(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/Exception/getMessage()|"
+    ],
+    "affectedLib": "com.google.code.gson:gson:1.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.baidu:bigpipe-driver:1.0.1",
+    "coordinatesV2": "com.baidu:bigpipe-driver:1.0.2",
+    "caller": "|java+method:///com/baidu/bigpipe/common/support/JsonUtils/json2Object(java.lang.String,java.lang.Class)|",
+    "called": "|java+method:///com/google/gson/Gson/fromJson(java.lang.String,java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///com/baidu/bigpipe/common/support/JsonUtils$ObjectMapperExt/getDeserializationConfig()|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///com/baidu/bigpipe/common/support/JsonUtils$ObjectMapperExt/readValue(java.lang.String,java.lang.Class)|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/codehaus/jackson/map/DeserializationConfig/without(org.codehaus.jackson.map.DeserializationConfig$Feature%5B%5D)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/Exception/getMessage()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///com/google/gson/Gson/fromJson(java.lang.String,java.lang.Class)|"
+    ],
+    "affectedLib": "com.google.code.gson:gson:1.5",
+    "change": "ADDED"
+  }
+]

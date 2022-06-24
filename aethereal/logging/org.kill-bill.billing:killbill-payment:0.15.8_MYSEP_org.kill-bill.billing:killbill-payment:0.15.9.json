@@ -1,0 +1,110 @@
+[
+  {
+    "coordinatesV1": "org.kill-bill.billing:killbill-payment:0.15.8",
+    "coordinatesV2": "org.kill-bill.billing:killbill-payment:0.15.9",
+    "caller": "|java+method:///org/killbill/billing/payment/dispatcher/CallableWithRequestData/call()|",
+    "called": "|java+method:///org/apache/shiro/util/ThreadContext/bind(org.apache.shiro.mgt.SecurityManager)|",
+    "v1Body": [
+      "|java+method:///org/killbill/commons/request/Request/setPerThreadRequestData(org.killbill.commons.request.RequestData)|",
+      "|java+method:///org/killbill/commons/request/Request/resetPerThreadRequestData()|",
+      "|java+method:///java/util/concurrent/Callable/call()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/shiro/util/ThreadContext/bind(org.apache.shiro.subject.Subject)|",
+      "|java+method:///org/apache/shiro/util/ThreadContext/unbindSubject()|",
+      "|java+method:///org/apache/shiro/util/ThreadContext/unbindSecurityManager()|",
+      "|java+method:///org/killbill/commons/request/Request/setPerThreadRequestData(org.killbill.commons.request.RequestData)|",
+      "|java+method:///org/apache/shiro/util/ThreadContext/bind(org.apache.shiro.mgt.SecurityManager)|",
+      "|java+method:///org/killbill/commons/request/Request/resetPerThreadRequestData()|",
+      "|java+method:///java/util/concurrent/Callable/call()|"
+    ],
+    "affectedLib": "org.apache.shiro:shiro-core:1.2.3",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.kill-bill.billing:killbill-payment:0.15.8",
+    "coordinatesV2": "org.kill-bill.billing:killbill-payment:0.15.9",
+    "caller": "|java+method:///org/killbill/billing/payment/dispatcher/PluginDispatcher/dispatchWithTimeout(java.util.concurrent.Callable,long,java.util.concurrent.TimeUnit)|",
+    "called": "|java+method:///org/apache/shiro/util/ThreadContext/getSubject()|",
+    "v1Body": [
+      "|java+method:///org/killbill/billing/payment/dispatcher/PluginDispatcher$PluginDispatcherReturnType/getReturnType()|",
+      "|java+method:///org/killbill/billing/payment/core/PaymentExecutors/getPluginExecutorService()|",
+      "|java+method:///org/killbill/commons/request/Request/getPerThreadRequestData()|",
+      "|java+method:///java/util/concurrent/ExecutorService/submit(java.util.concurrent.Callable)|",
+      "|java+method:///org/killbill/billing/payment/dispatcher/PluginDispatcher$WithProfilingPluginDispatcherReturnType/getProfilingData()|",
+      "|java+method:///org/killbill/commons/profiling/Profiling/getPerThreadProfilingData()|",
+      "|java+method:///org/killbill/commons/profiling/ProfilingData/merge(org.killbill.commons.profiling.ProfilingData)|",
+      "|java+constructor:///org/killbill/billing/payment/dispatcher/CallableWithRequestData/CallableWithRequestData(org.killbill.commons.request.RequestData,java.util.concurrent.Callable)|",
+      "|java+method:///java/util/concurrent/Future/get(long,java.util.concurrent.TimeUnit)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/concurrent/Future/get(long,java.util.concurrent.TimeUnit)|",
+      "|java+method:///org/killbill/billing/payment/dispatcher/PluginDispatcher$PluginDispatcherReturnType/getReturnType()|",
+      "|java+method:///org/apache/shiro/util/ThreadContext/getSubject()|",
+      "|java+method:///org/apache/shiro/util/ThreadContext/getSecurityManager()|",
+      "|java+constructor:///org/killbill/billing/payment/dispatcher/CallableWithRequestData/CallableWithRequestData(org.killbill.commons.request.RequestData,org.apache.shiro.mgt.SecurityManager,org.apache.shiro.subject.Subject,java.util.concurrent.Callable)|",
+      "|java+method:///org/killbill/billing/payment/core/PaymentExecutors/getPluginExecutorService()|",
+      "|java+method:///org/killbill/commons/request/Request/getPerThreadRequestData()|",
+      "|java+method:///java/util/concurrent/ExecutorService/submit(java.util.concurrent.Callable)|",
+      "|java+method:///org/killbill/billing/payment/dispatcher/PluginDispatcher$WithProfilingPluginDispatcherReturnType/getProfilingData()|",
+      "|java+method:///org/killbill/commons/profiling/Profiling/getPerThreadProfilingData()|",
+      "|java+method:///org/killbill/commons/profiling/ProfilingData/merge(org.killbill.commons.profiling.ProfilingData)|"
+    ],
+    "affectedLib": "org.apache.shiro:shiro-core:1.2.3",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.kill-bill.billing:killbill-payment:0.15.8",
+    "coordinatesV2": "org.kill-bill.billing:killbill-payment:0.15.9",
+    "caller": "|java+method:///org/killbill/billing/payment/dispatcher/CallableWithRequestData/call()|",
+    "called": "|java+method:///org/killbill/commons/request/Request/setPerThreadRequestData(org.killbill.commons.request.RequestData)|",
+    "v1Body": [
+      "|java+method:///org/killbill/commons/request/Request/setPerThreadRequestData(org.killbill.commons.request.RequestData)|",
+      "|java+method:///org/killbill/commons/request/Request/resetPerThreadRequestData()|",
+      "|java+method:///java/util/concurrent/Callable/call()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/shiro/util/ThreadContext/bind(org.apache.shiro.subject.Subject)|",
+      "|java+method:///org/apache/shiro/util/ThreadContext/unbindSubject()|",
+      "|java+method:///org/apache/shiro/util/ThreadContext/unbindSecurityManager()|",
+      "|java+method:///org/killbill/commons/request/Request/setPerThreadRequestData(org.killbill.commons.request.RequestData)|",
+      "|java+method:///org/apache/shiro/util/ThreadContext/bind(org.apache.shiro.mgt.SecurityManager)|",
+      "|java+method:///org/killbill/commons/request/Request/resetPerThreadRequestData()|",
+      "|java+method:///java/util/concurrent/Callable/call()|"
+    ],
+    "affectedLib": "org.kill-bill.commons:killbill-concurrent:0.10",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.kill-bill.billing:killbill-payment:0.15.8",
+    "coordinatesV2": "org.kill-bill.billing:killbill-payment:0.15.9",
+    "caller": "|java+method:///org/killbill/billing/payment/dispatcher/PluginDispatcher/dispatchWithTimeout(java.util.concurrent.Callable,long,java.util.concurrent.TimeUnit)|",
+    "called": "|java+method:///org/killbill/commons/profiling/Profiling/getPerThreadProfilingData()|",
+    "v1Body": [
+      "|java+method:///org/killbill/billing/payment/dispatcher/PluginDispatcher$PluginDispatcherReturnType/getReturnType()|",
+      "|java+method:///org/killbill/billing/payment/core/PaymentExecutors/getPluginExecutorService()|",
+      "|java+method:///org/killbill/commons/request/Request/getPerThreadRequestData()|",
+      "|java+method:///java/util/concurrent/ExecutorService/submit(java.util.concurrent.Callable)|",
+      "|java+method:///org/killbill/billing/payment/dispatcher/PluginDispatcher$WithProfilingPluginDispatcherReturnType/getProfilingData()|",
+      "|java+method:///org/killbill/commons/profiling/Profiling/getPerThreadProfilingData()|",
+      "|java+method:///org/killbill/commons/profiling/ProfilingData/merge(org.killbill.commons.profiling.ProfilingData)|",
+      "|java+constructor:///org/killbill/billing/payment/dispatcher/CallableWithRequestData/CallableWithRequestData(org.killbill.commons.request.RequestData,java.util.concurrent.Callable)|",
+      "|java+method:///java/util/concurrent/Future/get(long,java.util.concurrent.TimeUnit)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/concurrent/Future/get(long,java.util.concurrent.TimeUnit)|",
+      "|java+method:///org/killbill/billing/payment/dispatcher/PluginDispatcher$PluginDispatcherReturnType/getReturnType()|",
+      "|java+method:///org/apache/shiro/util/ThreadContext/getSubject()|",
+      "|java+method:///org/apache/shiro/util/ThreadContext/getSecurityManager()|",
+      "|java+constructor:///org/killbill/billing/payment/dispatcher/CallableWithRequestData/CallableWithRequestData(org.killbill.commons.request.RequestData,org.apache.shiro.mgt.SecurityManager,org.apache.shiro.subject.Subject,java.util.concurrent.Callable)|",
+      "|java+method:///org/killbill/billing/payment/core/PaymentExecutors/getPluginExecutorService()|",
+      "|java+method:///org/killbill/commons/request/Request/getPerThreadRequestData()|",
+      "|java+method:///java/util/concurrent/ExecutorService/submit(java.util.concurrent.Callable)|",
+      "|java+method:///org/killbill/billing/payment/dispatcher/PluginDispatcher$WithProfilingPluginDispatcherReturnType/getProfilingData()|",
+      "|java+method:///org/killbill/commons/profiling/Profiling/getPerThreadProfilingData()|",
+      "|java+method:///org/killbill/commons/profiling/ProfilingData/merge(org.killbill.commons.profiling.ProfilingData)|"
+    ],
+    "affectedLib": "org.kill-bill.commons:killbill-concurrent:0.10",
+    "change": "UPDATED"
+  }
+]

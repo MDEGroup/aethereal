@@ -1,0 +1,212 @@
+[
+  {
+    "coordinatesV1": "org.cryptomator:cryptofs:1.4.5",
+    "coordinatesV2": "org.cryptomator:cryptofs:1.5.0",
+    "caller": "|java+initializer:///org/cryptomator/cryptofs/migration/Migrators/Migrators$initializer|",
+    "called": "|java+method:///org/cryptomator/cryptolib/Cryptors/version1(java.security.SecureRandom)|",
+    "v1Body": [
+      "|java+method:///org/cryptomator/cryptofs/migration/DaggerMigrationComponent$Builder/secureRandomModule(org.cryptomator.cryptolib.common.SecureRandomModule)|",
+      "|java+method:///org/cryptomator/cryptofs/migration/DaggerMigrationComponent/builder()|",
+      "|java+method:///org/cryptomator/cryptofs/migration/Migrators/strongSecureRandom()|",
+      "|java+constructor:///org/cryptomator/cryptolib/common/SecureRandomModule/SecureRandomModule(java.security.SecureRandom)|",
+      "|java+method:///org/cryptomator/cryptofs/migration/DaggerMigrationComponent$Builder/build()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/cryptomator/cryptolib/Cryptors/version1(java.security.SecureRandom)|",
+      "|java+constructor:///org/cryptomator/cryptofs/migration/MigrationModule/MigrationModule(org.cryptomator.cryptolib.api.CryptorProvider)|",
+      "|java+method:///org/cryptomator/cryptofs/migration/DaggerMigrationComponent/builder()|",
+      "|java+method:///org/cryptomator/cryptofs/migration/Migrators/strongSecureRandom()|",
+      "|java+method:///org/cryptomator/cryptofs/migration/DaggerMigrationComponent$Builder/migrationModule(org.cryptomator.cryptofs.migration.MigrationModule)|",
+      "|java+method:///org/cryptomator/cryptofs/migration/DaggerMigrationComponent$Builder/build()|"
+    ],
+    "affectedLib": "org.cryptomator:cryptolib:1.2.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.cryptomator:cryptofs:1.4.5",
+    "coordinatesV2": "org.cryptomator:cryptofs:1.5.0",
+    "caller": "|java+method:///org/cryptomator/cryptofs/CryptoFileSystemModule_ProvideCryptoFileSystemPropertiesFactory/proxyProvideCryptoFileSystemProperties(org.cryptomator.cryptofs.CryptoFileSystemModule)|",
+    "called": "|java+method:///dagger/internal/Preconditions/checkNotNull(java.lang.Object,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/cryptomator/cryptofs/CryptoFileSystemModule/provideCryptoFileSystemProperties()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/cryptomator/cryptofs/CryptoFileSystemModule/provideCryptoFileSystemProperties()|",
+      "|java+method:///dagger/internal/Preconditions/checkNotNull(java.lang.Object,java.lang.String)|"
+    ],
+    "affectedLib": "com.google.dagger:dagger:2.15",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.cryptomator:cryptofs:1.4.5",
+    "coordinatesV2": "org.cryptomator:cryptofs:1.5.0",
+    "caller": "|java+method:///org/cryptomator/cryptofs/OpenCryptoFileModule_ProvideOnCloseFactory/proxyProvideOnClose(org.cryptomator.cryptofs.OpenCryptoFileModule)|",
+    "called": "|java+method:///dagger/internal/Preconditions/checkNotNull(java.lang.Object,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/cryptomator/cryptofs/OpenCryptoFileModule/provideOnClose()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/cryptomator/cryptofs/OpenCryptoFileModule/provideOnClose()|",
+      "|java+method:///dagger/internal/Preconditions/checkNotNull(java.lang.Object,java.lang.String)|"
+    ],
+    "affectedLib": "com.google.dagger:dagger:2.15",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.cryptomator:cryptofs:1.4.5",
+    "coordinatesV2": "org.cryptomator:cryptofs:1.5.0",
+    "caller": "|java+method:///org/cryptomator/cryptofs/OpenCryptoFileModule_ProvidePathFactory/proxyProvidePath(org.cryptomator.cryptofs.OpenCryptoFileModule)|",
+    "called": "|java+method:///dagger/internal/Preconditions/checkNotNull(java.lang.Object,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/cryptomator/cryptofs/OpenCryptoFileModule/providePath()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/cryptomator/cryptofs/OpenCryptoFileModule/providePath()|",
+      "|java+method:///dagger/internal/Preconditions/checkNotNull(java.lang.Object,java.lang.String)|"
+    ],
+    "affectedLib": "com.google.dagger:dagger:2.15",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.cryptomator:cryptofs:1.4.5",
+    "coordinatesV2": "org.cryptomator:cryptofs:1.5.0",
+    "caller": "|java+method:///org/cryptomator/cryptofs/CryptoFileSystemModule_ProvidePathToVaultFactory/proxyProvidePathToVault(org.cryptomator.cryptofs.CryptoFileSystemModule)|",
+    "called": "|java+method:///dagger/internal/Preconditions/checkNotNull(java.lang.Object,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/cryptomator/cryptofs/CryptoFileSystemModule/providePathToVault()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/cryptomator/cryptofs/CryptoFileSystemModule/providePathToVault()|",
+      "|java+method:///dagger/internal/Preconditions/checkNotNull(java.lang.Object,java.lang.String)|"
+    ],
+    "affectedLib": "com.google.dagger:dagger:2.15",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.cryptomator:cryptofs:1.4.5",
+    "coordinatesV2": "org.cryptomator:cryptofs:1.5.0",
+    "caller": "|java+method:///org/cryptomator/cryptofs/OpenCryptoFileFactoryModule_ProvideFileChannelFactory/proxyProvideFileChannel(org.cryptomator.cryptofs.OpenCryptoFileFactoryModule,java.nio.file.Path,java.lang.Object)|",
+    "called": "|java+method:///dagger/internal/Preconditions/checkNotNull(java.lang.Object,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/cryptomator/cryptofs/OpenCryptoFileFactoryModule/provideFileChannel(java.nio.file.Path,org.cryptomator.cryptofs.EffectiveOpenOptions)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/cryptomator/cryptofs/OpenCryptoFileFactoryModule/provideFileChannel(java.nio.file.Path,org.cryptomator.cryptofs.EffectiveOpenOptions)|",
+      "|java+method:///dagger/internal/Preconditions/checkNotNull(java.lang.Object,java.lang.String)|"
+    ],
+    "affectedLib": "com.google.dagger:dagger:2.15",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.cryptomator:cryptofs:1.4.5",
+    "coordinatesV2": "org.cryptomator:cryptofs:1.5.0",
+    "caller": "|java+method:///org/cryptomator/cryptofs/OpenCryptoFileModule_ProvideOptionsFactory/proxyProvideOptions(org.cryptomator.cryptofs.OpenCryptoFileModule)|",
+    "called": "|java+method:///dagger/internal/Preconditions/checkNotNull(java.lang.Object,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/cryptomator/cryptofs/OpenCryptoFileModule/provideOptions()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/cryptomator/cryptofs/OpenCryptoFileModule/provideOptions()|",
+      "|java+method:///dagger/internal/Preconditions/checkNotNull(java.lang.Object,java.lang.String)|"
+    ],
+    "affectedLib": "com.google.dagger:dagger:2.15",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.cryptomator:cryptofs:1.4.5",
+    "coordinatesV2": "org.cryptomator:cryptofs:1.5.0",
+    "caller": "|java+method:///org/cryptomator/cryptofs/migration/MigrationModule_ProvideVersion6MigratorFactory/proxyProvideVersion6Migrator(org.cryptomator.cryptofs.migration.MigrationModule,org.cryptomator.cryptofs.migration.v6.Version6Migrator)|",
+    "called": "|java+method:///dagger/internal/Preconditions/checkNotNull(java.lang.Object,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/cryptomator/cryptofs/migration/MigrationModule/provideVersion6Migrator(org.cryptomator.cryptofs.migration.v6.Version6Migrator)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/cryptomator/cryptofs/migration/MigrationModule/provideVersion6Migrator(org.cryptomator.cryptofs.migration.v6.Version6Migrator)|",
+      "|java+method:///dagger/internal/Preconditions/checkNotNull(java.lang.Object,java.lang.String)|"
+    ],
+    "affectedLib": "com.google.dagger:dagger:2.15",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.cryptomator:cryptofs:1.4.5",
+    "coordinatesV2": "org.cryptomator:cryptofs:1.5.0",
+    "caller": "|java+method:///org/cryptomator/cryptofs/OpenCryptoFileFactoryModule_ProvideFileSizeFactory/proxyProvideFileSize(org.cryptomator.cryptofs.OpenCryptoFileFactoryModule,java.nio.channels.FileChannel,org.cryptomator.cryptolib.api.Cryptor)|",
+    "called": "|java+method:///dagger/internal/Preconditions/checkNotNull(java.lang.Object,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/cryptomator/cryptofs/OpenCryptoFileFactoryModule/provideFileSize(java.nio.channels.FileChannel,org.cryptomator.cryptolib.api.Cryptor)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/cryptomator/cryptofs/OpenCryptoFileFactoryModule/provideFileSize(java.nio.channels.FileChannel,org.cryptomator.cryptolib.api.Cryptor)|",
+      "|java+method:///dagger/internal/Preconditions/checkNotNull(java.lang.Object,java.lang.String)|"
+    ],
+    "affectedLib": "com.google.dagger:dagger:2.15",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.cryptomator:cryptofs:1.4.5",
+    "coordinatesV2": "org.cryptomator:cryptofs:1.5.0",
+    "caller": "|java+method:///org/cryptomator/cryptofs/CryptoFileSystemModule_ProvideCryptorFactory/proxyProvideCryptor(org.cryptomator.cryptofs.CryptoFileSystemModule,org.cryptomator.cryptolib.api.CryptorProvider,java.nio.file.Path,org.cryptomator.cryptofs.CryptoFileSystemProperties)|",
+    "called": "|java+method:///dagger/internal/Preconditions/checkNotNull(java.lang.Object,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/cryptomator/cryptofs/CryptoFileSystemModule/provideCryptor(org.cryptomator.cryptolib.api.CryptorProvider,java.nio.file.Path,org.cryptomator.cryptofs.CryptoFileSystemProperties)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/cryptomator/cryptofs/CryptoFileSystemModule/provideCryptor(org.cryptomator.cryptolib.api.CryptorProvider,java.nio.file.Path,org.cryptomator.cryptofs.CryptoFileSystemProperties)|",
+      "|java+method:///dagger/internal/Preconditions/checkNotNull(java.lang.Object,java.lang.String)|"
+    ],
+    "affectedLib": "com.google.dagger:dagger:2.15",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.cryptomator:cryptofs:1.4.5",
+    "coordinatesV2": "org.cryptomator:cryptofs:1.5.0",
+    "caller": "|java+method:///org/cryptomator/cryptofs/CryptoFileSystemProviderModule_ProvideCryptorProviderFactory/proxyProvideCryptorProvider(org.cryptomator.cryptofs.CryptoFileSystemProviderModule)|",
+    "called": "|java+method:///dagger/internal/Preconditions/checkNotNull(java.lang.Object,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/cryptomator/cryptofs/CryptoFileSystemProviderModule/provideCryptorProvider()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/cryptomator/cryptofs/CryptoFileSystemProviderModule/provideCryptorProvider()|",
+      "|java+method:///dagger/internal/Preconditions/checkNotNull(java.lang.Object,java.lang.String)|"
+    ],
+    "affectedLib": "com.google.dagger:dagger:2.15",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.cryptomator:cryptofs:1.4.5",
+    "coordinatesV2": "org.cryptomator:cryptofs:1.5.0",
+    "caller": "|java+method:///org/cryptomator/cryptofs/CryptoFileSystemProviderModule_ProvideCryptoFileSystemProviderFactory/proxyProvideCryptoFileSystemProvider(org.cryptomator.cryptofs.CryptoFileSystemProviderModule)|",
+    "called": "|java+method:///dagger/internal/Preconditions/checkNotNull(java.lang.Object,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/cryptomator/cryptofs/CryptoFileSystemProviderModule/provideCryptoFileSystemProvider()|"
+    ],
+    "v2Body": [
+      "|java+method:///dagger/internal/Preconditions/checkNotNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///org/cryptomator/cryptofs/CryptoFileSystemProviderModule/provideCryptoFileSystemProvider()|"
+    ],
+    "affectedLib": "com.google.dagger:dagger:2.15",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.cryptomator:cryptofs:1.4.5",
+    "coordinatesV2": "org.cryptomator:cryptofs:1.5.0",
+    "caller": "|java+method:///org/cryptomator/cryptofs/CryptoPathFactory/splitPath(java.lang.String)|",
+    "called": "|java+method:///com/google/common/base/Splitter/omitEmptyStrings()|",
+    "v1Body": [
+      "|java+method:///java/util/stream/StreamSupport/stream(java.util.Spliterator,boolean)|",
+      "|java+constructor:///java/util/StringTokenizer/StringTokenizer(java.lang.String,java.lang.String)|",
+      "|java+method:///java/util/Spliterators/spliteratorUnknownSize(java.util.Iterator,int)|",
+      "|java+constructor:///org/cryptomator/cryptofs/CryptoPathFactory$1/CryptoPathFactory$1(org.cryptomator.cryptofs.CryptoPathFactory,java.util.StringTokenizer)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/stream/StreamSupport/stream(java.util.Spliterator,boolean)|",
+      "|java+method:///com/google/common/base/Splitter/split(java.lang.CharSequence)|",
+      "|java+method:///java/util/Spliterators/spliteratorUnknownSize(java.util.Iterator,int)|",
+      "|java+method:///java/lang/Iterable/iterator()|",
+      "|java+method:///com/google/common/base/Splitter/on(java.lang.String)|",
+      "|java+method:///com/google/common/base/Splitter/omitEmptyStrings()|"
+    ],
+    "affectedLib": "com.google.guava:guava:23.6-jre",
+    "change": "UPDATED"
+  }
+]

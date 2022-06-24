@@ -1,0 +1,53 @@
+[
+  {
+    "coordinatesV1": "org.resthub:springmvc-router:1.1.1",
+    "coordinatesV2": "org.resthub:springmvc-router:1.2.0",
+    "caller": "|java+constructor:///org/resthub/web/springmvc/router/RouterConfigurationSupport/RouterConfigurationSupport()|",
+    "called": "|java+constructor:///org/springframework/web/servlet/config/annotation/DelegatingWebMvcConfiguration/DelegatingWebMvcConfiguration()|",
+    "v1Body": [
+      "|java+constructor:///org/springframework/web/servlet/config/annotation/WebMvcConfigurationSupport/WebMvcConfigurationSupport()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/springframework/web/servlet/config/annotation/DelegatingWebMvcConfiguration/DelegatingWebMvcConfiguration()|"
+    ],
+    "affectedLib": "org.springframework:spring-webmvc:3.2.6.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.resthub:springmvc-router:1.1.1",
+    "coordinatesV2": "org.resthub:springmvc-router:1.2.0",
+    "caller": "|java+method:///org/resthub/web/springmvc/router/RouterConfigurationSupport/requestMappingHandlerMapping()|",
+    "called": "|java+method:///org/springframework/web/servlet/mvc/method/annotation/RequestMappingHandlerMapping/setContentNegotiationManager(org.springframework.web.accept.ContentNegotiationManager)|",
+    "v1Body": [
+      "|java+method:///org/resthub/web/springmvc/router/RouterConfigurationSupport/getInterceptors()|",
+      "|java+method:///org/springframework/web/servlet/mvc/method/annotation/RequestMappingHandlerMapping/setOrder(int)|",
+      "|java+constructor:///org/springframework/web/servlet/mvc/method/annotation/RequestMappingHandlerMapping/RequestMappingHandlerMapping()|",
+      "|java+method:///org/springframework/web/servlet/mvc/method/annotation/RequestMappingHandlerMapping/setInterceptors(java.lang.Object%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/resthub/web/springmvc/router/RouterConfigurationSupport/mvcContentNegotiationManager()|",
+      "|java+method:///org/resthub/web/springmvc/router/RouterConfigurationSupport/getInterceptors()|",
+      "|java+method:///org/springframework/web/servlet/mvc/method/annotation/RequestMappingHandlerMapping/setContentNegotiationManager(org.springframework.web.accept.ContentNegotiationManager)|",
+      "|java+method:///org/springframework/web/servlet/mvc/method/annotation/RequestMappingHandlerMapping/setOrder(int)|",
+      "|java+constructor:///org/springframework/web/servlet/mvc/method/annotation/RequestMappingHandlerMapping/RequestMappingHandlerMapping()|",
+      "|java+method:///org/springframework/web/servlet/mvc/method/annotation/RequestMappingHandlerMapping/setInterceptors(java.lang.Object%5B%5D)|"
+    ],
+    "affectedLib": "org.springframework:spring-webmvc:3.2.6.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.resthub:springmvc-router:1.1.1",
+    "coordinatesV2": "org.resthub:springmvc-router:1.2.0",
+    "caller": "|java+initializer:///org/resthub/web/springmvc/router/HTTPRequestAdapter/HTTPRequestAdapter$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+constructor:///java/lang/ThreadLocal/ThreadLocal()|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "UPDATED"
+  }
+]

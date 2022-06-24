@@ -1,0 +1,26 @@
+[
+  {
+    "coordinatesV1": "org.meridor.perspective:perspective-openstack:1.1.1",
+    "coordinatesV2": "org.meridor.perspective:perspective-openstack:1.1.2",
+    "caller": "|java+method:///org/meridor/perspective/openstack/ListImagesOperation/createOrModifyImage(org.jclouds.openstack.nova.v2_0.domain.Image,org.meridor.perspective.config.Cloud,java.lang.String)|",
+    "called": "|java+method:///org/meridor/perspective/worker/misc/IdGenerator/getImageId(org.meridor.perspective.config.Cloud,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/meridor/perspective/openstack/ListImagesOperation/createImage(org.jclouds.openstack.nova.v2_0.domain.Image,java.lang.String,java.lang.String)|",
+      "|java+method:///org/jclouds/openstack/nova/v2_0/domain/Image/getId()|",
+      "|java+method:///org/meridor/perspective/worker/misc/IdGenerator/getImageId(org.meridor.perspective.config.Cloud,java.lang.String)|",
+      "|java+method:///org/meridor/perspective/worker/misc/IdGenerator/getProjectId(org.meridor.perspective.config.Cloud,java.lang.String)|",
+      "|java+method:///java/util/Optional/isPresent()|",
+      "|java+method:///org/meridor/perspective/framework/storage/ImagesAware/getImage(java.lang.String)|",
+      "|java+method:///org/meridor/perspective/openstack/ListImagesOperation/updateImages(org.meridor.perspective.beans.Image,org.jclouds.openstack.nova.v2_0.domain.Image,java.lang.String,java.lang.String)|",
+      "|java+method:///java/util/Optional/get()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/jclouds/openstack/nova/v2_0/domain/Image/getId()|",
+      "|java+method:///org/meridor/perspective/framework/storage/Storage/executeSynchronized(java.lang.String,long,java.util.function.Supplier)|",
+      "|java+method:///org/meridor/perspective/worker/misc/IdGenerator/getImageId(org.meridor.perspective.config.Cloud,java.lang.String)|",
+      "|java+method:///org/meridor/perspective/worker/misc/IdGenerator/getProjectId(org.meridor.perspective.config.Cloud,java.lang.String)|"
+    ],
+    "affectedLib": "org.meridor.perspective:perspective-worker:1.1.2",
+    "change": "UPDATED"
+  }
+]

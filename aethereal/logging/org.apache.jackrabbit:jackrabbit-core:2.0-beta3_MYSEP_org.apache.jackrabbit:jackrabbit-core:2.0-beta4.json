@@ -1,0 +1,93 @@
+[
+  {
+    "coordinatesV1": "org.apache.jackrabbit:jackrabbit-core:2.0-beta3",
+    "coordinatesV2": "org.apache.jackrabbit:jackrabbit-core:2.0-beta4",
+    "caller": "|java+initializer:///org/apache/jackrabbit/core/observation/ObservationDispatcher/ObservationDispatcher$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+constructor:///org/apache/jackrabbit/core/observation/DispatchAction/DispatchAction(org.apache.jackrabbit.core.observation.EventStateCollection,java.util.Collection)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/System/getProperty(java.lang.String,java.lang.String)|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///java/lang/Integer/parseInt(java.lang.String)|",
+      "|java+constructor:///org/apache/jackrabbit/core/observation/DispatchAction/DispatchAction(org.apache.jackrabbit.core.observation.EventStateCollection,java.util.Collection)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.5.8",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.jackrabbit:jackrabbit-core:2.0-beta3",
+    "coordinatesV2": "org.apache.jackrabbit:jackrabbit-core:2.0-beta4",
+    "caller": "|java+constructor:///org/apache/jackrabbit/core/observation/ObservationDispatcher/ObservationDispatcher()|",
+    "called": "|java+method:///org/apache/commons/collections/BufferUtils/blockingBuffer(org.apache.commons.collections.Buffer)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/jackrabbit/core/observation/EventDispatcher/EventDispatcher()|",
+      "|java+method:///java/lang/Thread/setDaemon(boolean)|",
+      "|java+constructor:///java/lang/Thread/Thread(java.lang.Runnable,java.lang.String)|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///java/lang/Thread/start()|",
+      "|java+method:///org/apache/commons/collections/BufferUtils/blockingBuffer(org.apache.commons.collections.Buffer)|",
+      "|java+constructor:///org/apache/commons/collections/buffer/UnboundedFifoBuffer/UnboundedFifoBuffer()|",
+      "|java+constructor:///java/util/HashSet/HashSet()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/jackrabbit/core/observation/EventDispatcher/EventDispatcher()|",
+      "|java+constructor:///java/util/concurrent/atomic/AtomicInteger/AtomicInteger()|",
+      "|java+method:///java/lang/Thread/setDaemon(boolean)|",
+      "|java+constructor:///java/lang/Thread/Thread(java.lang.Runnable,java.lang.String)|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///java/lang/Thread/start()|",
+      "|java+method:///org/apache/commons/collections/BufferUtils/blockingBuffer(org.apache.commons.collections.Buffer)|",
+      "|java+constructor:///org/apache/commons/collections/buffer/UnboundedFifoBuffer/UnboundedFifoBuffer()|",
+      "|java+constructor:///java/util/HashSet/HashSet()|"
+    ],
+    "affectedLib": "commons-collections:commons-collections:3.2.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.jackrabbit:jackrabbit-core:2.0-beta3",
+    "coordinatesV2": "org.apache.jackrabbit:jackrabbit-core:2.0-beta4",
+    "caller": "|java+method:///org/apache/jackrabbit/core/query/lucene/JackrabbitParser/setTextFilterClasses(java.lang.String)|",
+    "called": "|java+constructor:///org/apache/tika/parser/html/HtmlParser/HtmlParser()|",
+    "v1Body": [
+      "|java+constructor:///org/apache/tika/parser/xml/XMLParser/XMLParser()|",
+      "|java+constructor:///java/util/StringTokenizer/StringTokenizer(java.lang.String,java.lang.String)|",
+      "|java+constructor:///org/apache/tika/parser/opendocument/OpenOfficeParser/OpenOfficeParser()|",
+      "|java+constructor:///org/apache/tika/parser/rtf/RTFParser/RTFParser()|",
+      "|java+constructor:///org/apache/tika/parser/microsoft/OfficeParser/OfficeParser()|",
+      "|java+constructor:///org/apache/tika/parser/txt/TXTParser/TXTParser()|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+constructor:///org/apache/tika/parser/pdf/PDFParser/PDFParser()|",
+      "|java+method:///java/util/StringTokenizer/nextToken()|",
+      "|java+method:///java/util/StringTokenizer/hasMoreTokens()|",
+      "|java+method:///org/apache/tika/parser/AutoDetectParser/setParsers(java.util.Map)|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Object)|",
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///org/apache/tika/parser/html/HtmlParser/HtmlParser()|",
+      "|java+constructor:///org/apache/tika/parser/image/ImageParser/ImageParser()|",
+      "|java+constructor:///java/util/HashMap/HashMap()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/tika/parser/xml/XMLParser/XMLParser()|",
+      "|java+constructor:///java/util/StringTokenizer/StringTokenizer(java.lang.String,java.lang.String)|",
+      "|java+constructor:///org/apache/tika/parser/rtf/RTFParser/RTFParser()|",
+      "|java+constructor:///org/apache/tika/parser/microsoft/OfficeParser/OfficeParser()|",
+      "|java+constructor:///org/apache/tika/parser/txt/TXTParser/TXTParser()|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+constructor:///org/apache/tika/parser/pdf/PDFParser/PDFParser()|",
+      "|java+method:///java/util/StringTokenizer/nextToken()|",
+      "|java+method:///java/util/StringTokenizer/hasMoreTokens()|",
+      "|java+method:///org/apache/tika/parser/AutoDetectParser/setParsers(java.util.Map)|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Object)|",
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///org/apache/tika/parser/html/HtmlParser/HtmlParser()|",
+      "|java+constructor:///org/apache/tika/parser/image/ImageParser/ImageParser()|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+constructor:///org/apache/tika/parser/odf/OpenDocumentParser/OpenDocumentParser()|"
+    ],
+    "affectedLib": "org.apache.tika:tika-parsers:0.5",
+    "change": "UPDATED"
+  }
+]

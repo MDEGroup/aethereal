@@ -1,0 +1,340 @@
+[
+  {
+    "coordinatesV1": "com.networknt:eventuate-client:1.3.5",
+    "coordinatesV2": "com.networknt:eventuate-client:1.3.4",
+    "caller": "|java+method:///com/networknt/eventuate/client/KafkaAggregateSubscriptions/subscribe(java.lang.String,java.util.Map,com.networknt.eventuate.common.SubscriberOptions,java.util.function.Function)|",
+    "called": "|java+method:///com/networknt/eventuate/cdccore/kafka/consumer/CdcKafkaConsumer/start()|",
+    "v1Body": [
+      "|java+method:///java/util/stream/Stream/map(java.util.function.Function)|",
+      "|java+method:///com/networknt/eventuate/cdccore/kafka/consumer/CdcKafkaConsumer/start()|",
+      "|java+method:///com/networknt/eventuate/client/KafkaAggregateSubscriptions/addConsumer(com.networknt.eventuate.cdccore.kafka.consumer.CdcKafkaConsumer)|",
+      "|java+method:///java/util/stream/Collectors/toList()|",
+      "|java+method:///java/util/Map/keySet()|",
+      "|java+method:///java/util/concurrent/CompletableFuture/completedFuture(java.lang.Object)|",
+      "|java+constructor:///com/networknt/eventuate/cdccore/kafka/consumer/CdcKafkaConsumer/CdcKafkaConsumer(java.lang.String,java.util.function.BiConsumer,java.util.List,java.lang.String)|",
+      "|java+method:///java/util/Set/stream()|",
+      "|java+method:///java/util/stream/Stream/collect(java.util.stream.Collector)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/stream/Stream/map(java.util.function.Function)|",
+      "|java+method:///com/networknt/eventuate/kafka/consumer/EventuateKafkaConsumer/start()|",
+      "|java+method:///java/util/stream/Collectors/toList()|",
+      "|java+method:///java/util/Map/keySet()|",
+      "|java+method:///com/networknt/eventuate/client/KafkaAggregateSubscriptions/addConsumer(com.networknt.eventuate.kafka.consumer.EventuateKafkaConsumer)|",
+      "|java+constructor:///com/networknt/eventuate/kafka/consumer/EventuateKafkaConsumer/EventuateKafkaConsumer(java.lang.String,java.util.function.BiConsumer,java.util.List)|",
+      "|java+method:///java/util/concurrent/CompletableFuture/completedFuture(java.lang.Object)|",
+      "|java+method:///java/util/Set/stream()|",
+      "|java+method:///java/util/stream/Stream/collect(java.util.stream.Collector)|"
+    ],
+    "affectedLib": "com.networknt:eventuate-cdccore:1.3.4",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.networknt:eventuate-client:1.3.5",
+    "coordinatesV2": "com.networknt:eventuate-client:1.3.4",
+    "caller": "|java+method:///com/networknt/eventuate/client/EventuateLocalPublishAggregateCrud/toPublishedEvent(java.lang.String,java.lang.String,com.networknt.eventuate.common.impl.EventIdTypeAndData)|",
+    "called": "|java+constructor:///com/networknt/eventuate/cdccore/PublishedEvent/PublishedEvent(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///com/networknt/eventuate/common/Int128/toString()|",
+      "|java+method:///com/networknt/eventuate/common/impl/EventIdTypeAndData/getEventType()|",
+      "|java+method:///com/networknt/eventuate/common/impl/EventIdTypeAndData/getId()|",
+      "|java+method:///com/networknt/eventuate/common/impl/EventIdTypeAndData/getEventData()|",
+      "|java+constructor:///com/networknt/eventuate/cdccore/PublishedEvent/PublishedEvent(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/networknt/eventuate/common/Int128/toString()|",
+      "|java+method:///com/networknt/eventuate/common/impl/EventIdTypeAndData/getEventType()|",
+      "|java+constructor:///com/networknt/eventuate/cdc/common/PublishedEvent/PublishedEvent(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,com.networknt.eventuate.cdc.common.BinlogFileOffset,java.util.Optional)|",
+      "|java+method:///com/networknt/eventuate/common/impl/EventIdTypeAndData/getMetadata()|",
+      "|java+method:///com/networknt/eventuate/common/impl/EventIdTypeAndData/getId()|",
+      "|java+method:///com/networknt/eventuate/common/impl/EventIdTypeAndData/getEventData()|"
+    ],
+    "affectedLib": "com.networknt:eventuate-cdccore:1.3.4",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.networknt:eventuate-client:1.3.5",
+    "coordinatesV2": "com.networknt:eventuate-client:1.3.4",
+    "caller": "|java+constructor:///com/networknt/eventuate/client/EventuateLocalPublishAggregateCrud/EventuateLocalPublishAggregateCrud(javax.sql.DataSource)|",
+    "called": "|java+constructor:///com/networknt/eventuate/cdccore/kafka/producer/CdcKafkaProducer/CdcKafkaProducer()|",
+    "v1Body": [
+      "|java+constructor:///com/networknt/eventuate/cdccore/kafka/producer/CdcKafkaProducer/CdcKafkaProducer()|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+constructor:///com/networknt/eventuate/jdbc/AbstractEventuateJdbcAggregateStore/AbstractEventuateJdbcAggregateStore(javax.sql.DataSource)|",
+      "|java+constructor:///java/util/concurrent/atomic/AtomicLong/AtomicLong()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+constructor:///com/networknt/eventuate/kafka/producer/EventuateKafkaProducer/EventuateKafkaProducer()|",
+      "|java+constructor:///com/networknt/eventuate/jdbc/AbstractEventuateJdbcAggregateStore/AbstractEventuateJdbcAggregateStore(javax.sql.DataSource)|",
+      "|java+constructor:///java/util/concurrent/atomic/AtomicLong/AtomicLong()|"
+    ],
+    "affectedLib": "com.networknt:eventuate-cdccore:1.3.4",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.networknt:eventuate-client:1.3.5",
+    "coordinatesV2": "com.networknt:eventuate-client:1.3.4",
+    "caller": "|java+method:///com/networknt/eventuate/client/EventuateLocalPublishAggregateCrud/lambda$publish$12(java.lang.String,java.lang.String,com.networknt.eventuate.common.impl.EventIdTypeAndData)|",
+    "called": "|java+method:///com/networknt/eventuate/cdccore/kafka/producer/CdcKafkaProducer/send(java.lang.String,java.lang.String,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///com/networknt/eventuate/cdccore/kafka/producer/CdcKafkaProducer/send(java.lang.String,java.lang.String,java.lang.String)|",
+      "|java+method:///com/networknt/eventuate/client/EventuateLocalPublishAggregateCrud/toJson(com.networknt.eventuate.cdccore.PublishedEvent)|",
+      "|java+method:///com/networknt/eventuate/client/EventuateLocalPublishAggregateCrud/toPublishedEvent(java.lang.String,java.lang.String,com.networknt.eventuate.common.impl.EventIdTypeAndData)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/networknt/eventuate/client/EventuateLocalPublishAggregateCrud/toPublishedEvent(java.lang.String,java.lang.String,com.networknt.eventuate.common.impl.EventIdTypeAndData)|",
+      "|java+method:///com/networknt/eventuate/kafka/producer/EventuateKafkaProducer/send(java.lang.String,java.lang.String,java.lang.String)|",
+      "|java+method:///com/networknt/eventuate/client/EventuateLocalPublishAggregateCrud/toJson(com.networknt.eventuate.cdc.common.PublishedEvent)|"
+    ],
+    "affectedLib": "com.networknt:eventuate-cdccore:1.3.4",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.networknt:eventuate-client:1.3.4",
+    "coordinatesV2": "com.networknt:eventuate-client:1.3.5",
+    "caller": "|java+method:///com/networknt/eventuate/client/KafkaAggregateSubscriptions/subscribe(java.lang.String,java.util.Map,com.networknt.eventuate.common.SubscriberOptions,java.util.function.Function)|",
+    "called": "|java+method:///com/networknt/eventuate/kafka/consumer/EventuateKafkaConsumer/start()|",
+    "v1Body": [
+      "|java+method:///java/util/stream/Stream/map(java.util.function.Function)|",
+      "|java+method:///com/networknt/eventuate/cdccore/kafka/consumer/CdcKafkaConsumer/start()|",
+      "|java+method:///com/networknt/eventuate/client/KafkaAggregateSubscriptions/addConsumer(com.networknt.eventuate.cdccore.kafka.consumer.CdcKafkaConsumer)|",
+      "|java+method:///java/util/stream/Collectors/toList()|",
+      "|java+method:///java/util/Map/keySet()|",
+      "|java+method:///java/util/concurrent/CompletableFuture/completedFuture(java.lang.Object)|",
+      "|java+constructor:///com/networknt/eventuate/cdccore/kafka/consumer/CdcKafkaConsumer/CdcKafkaConsumer(java.lang.String,java.util.function.BiConsumer,java.util.List,java.lang.String)|",
+      "|java+method:///java/util/Set/stream()|",
+      "|java+method:///java/util/stream/Stream/collect(java.util.stream.Collector)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/stream/Stream/map(java.util.function.Function)|",
+      "|java+method:///com/networknt/eventuate/kafka/consumer/EventuateKafkaConsumer/start()|",
+      "|java+method:///java/util/stream/Collectors/toList()|",
+      "|java+method:///java/util/Map/keySet()|",
+      "|java+method:///com/networknt/eventuate/client/KafkaAggregateSubscriptions/addConsumer(com.networknt.eventuate.kafka.consumer.EventuateKafkaConsumer)|",
+      "|java+constructor:///com/networknt/eventuate/kafka/consumer/EventuateKafkaConsumer/EventuateKafkaConsumer(java.lang.String,java.util.function.BiConsumer,java.util.List)|",
+      "|java+method:///java/util/concurrent/CompletableFuture/completedFuture(java.lang.Object)|",
+      "|java+method:///java/util/Set/stream()|",
+      "|java+method:///java/util/stream/Stream/collect(java.util.stream.Collector)|"
+    ],
+    "affectedLib": "com.networknt:eventuate-kafka:1.3.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.networknt:eventuate-client:1.3.4",
+    "coordinatesV2": "com.networknt:eventuate-client:1.3.5",
+    "caller": "|java+constructor:///com/networknt/eventuate/client/EventuateLocalPublishAggregateCrud/EventuateLocalPublishAggregateCrud(javax.sql.DataSource)|",
+    "called": "|java+constructor:///com/networknt/eventuate/kafka/producer/EventuateKafkaProducer/EventuateKafkaProducer()|",
+    "v1Body": [
+      "|java+constructor:///com/networknt/eventuate/cdccore/kafka/producer/CdcKafkaProducer/CdcKafkaProducer()|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+constructor:///com/networknt/eventuate/jdbc/AbstractEventuateJdbcAggregateStore/AbstractEventuateJdbcAggregateStore(javax.sql.DataSource)|",
+      "|java+constructor:///java/util/concurrent/atomic/AtomicLong/AtomicLong()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+constructor:///com/networknt/eventuate/kafka/producer/EventuateKafkaProducer/EventuateKafkaProducer()|",
+      "|java+constructor:///com/networknt/eventuate/jdbc/AbstractEventuateJdbcAggregateStore/AbstractEventuateJdbcAggregateStore(javax.sql.DataSource)|",
+      "|java+constructor:///java/util/concurrent/atomic/AtomicLong/AtomicLong()|"
+    ],
+    "affectedLib": "com.networknt:eventuate-kafka:1.3.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.networknt:eventuate-client:1.3.4",
+    "coordinatesV2": "com.networknt:eventuate-client:1.3.5",
+    "caller": "|java+method:///com/networknt/eventuate/client/EventuateLocalPublishAggregateCrud/lambda$publish$12(java.lang.String,java.lang.String,com.networknt.eventuate.common.impl.EventIdTypeAndData)|",
+    "called": "|java+method:///com/networknt/eventuate/kafka/producer/EventuateKafkaProducer/send(java.lang.String,java.lang.String,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///com/networknt/eventuate/cdccore/kafka/producer/CdcKafkaProducer/send(java.lang.String,java.lang.String,java.lang.String)|",
+      "|java+method:///com/networknt/eventuate/client/EventuateLocalPublishAggregateCrud/toJson(com.networknt.eventuate.cdccore.PublishedEvent)|",
+      "|java+method:///com/networknt/eventuate/client/EventuateLocalPublishAggregateCrud/toPublishedEvent(java.lang.String,java.lang.String,com.networknt.eventuate.common.impl.EventIdTypeAndData)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/networknt/eventuate/client/EventuateLocalPublishAggregateCrud/toPublishedEvent(java.lang.String,java.lang.String,com.networknt.eventuate.common.impl.EventIdTypeAndData)|",
+      "|java+method:///com/networknt/eventuate/kafka/producer/EventuateKafkaProducer/send(java.lang.String,java.lang.String,java.lang.String)|",
+      "|java+method:///com/networknt/eventuate/client/EventuateLocalPublishAggregateCrud/toJson(com.networknt.eventuate.cdc.common.PublishedEvent)|"
+    ],
+    "affectedLib": "com.networknt:eventuate-kafka:1.3.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.networknt:eventuate-client:1.3.4",
+    "coordinatesV2": "com.networknt:eventuate-client:1.3.5",
+    "caller": "|java+method:///com/networknt/eventuate/client/EventuateLocalPublishAggregateCrud/toPublishedEvent(java.lang.String,java.lang.String,com.networknt.eventuate.common.impl.EventIdTypeAndData)|",
+    "called": "|java+constructor:///com/networknt/eventuate/cdc/common/PublishedEvent/PublishedEvent(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,com.networknt.eventuate.cdc.common.BinlogFileOffset,java.util.Optional)|",
+    "v1Body": [
+      "|java+method:///com/networknt/eventuate/common/Int128/toString()|",
+      "|java+method:///com/networknt/eventuate/common/impl/EventIdTypeAndData/getEventType()|",
+      "|java+method:///com/networknt/eventuate/common/impl/EventIdTypeAndData/getId()|",
+      "|java+method:///com/networknt/eventuate/common/impl/EventIdTypeAndData/getEventData()|",
+      "|java+constructor:///com/networknt/eventuate/cdccore/PublishedEvent/PublishedEvent(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/networknt/eventuate/common/Int128/toString()|",
+      "|java+method:///com/networknt/eventuate/common/impl/EventIdTypeAndData/getEventType()|",
+      "|java+constructor:///com/networknt/eventuate/cdc/common/PublishedEvent/PublishedEvent(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,com.networknt.eventuate.cdc.common.BinlogFileOffset,java.util.Optional)|",
+      "|java+method:///com/networknt/eventuate/common/impl/EventIdTypeAndData/getMetadata()|",
+      "|java+method:///com/networknt/eventuate/common/impl/EventIdTypeAndData/getId()|",
+      "|java+method:///com/networknt/eventuate/common/impl/EventIdTypeAndData/getEventData()|"
+    ],
+    "affectedLib": "com.networknt:cdc-common:1.3.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.networknt:eventuate-client:1.3.4",
+    "coordinatesV2": "com.networknt:eventuate-client:1.3.5",
+    "caller": "|java+constructor:///com/networknt/eventuate/client/EventuateLocalPublishAggregateCrud/EventuateLocalPublishAggregateCrud(javax.sql.DataSource)|",
+    "called": "|java+constructor:///com/networknt/eventuate/jdbc/AbstractEventuateJdbcAggregateStore/AbstractEventuateJdbcAggregateStore(javax.sql.DataSource)|",
+    "v1Body": [
+      "|java+constructor:///com/networknt/eventuate/cdccore/kafka/producer/CdcKafkaProducer/CdcKafkaProducer()|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+constructor:///com/networknt/eventuate/jdbc/AbstractEventuateJdbcAggregateStore/AbstractEventuateJdbcAggregateStore(javax.sql.DataSource)|",
+      "|java+constructor:///java/util/concurrent/atomic/AtomicLong/AtomicLong()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+constructor:///com/networknt/eventuate/kafka/producer/EventuateKafkaProducer/EventuateKafkaProducer()|",
+      "|java+constructor:///com/networknt/eventuate/jdbc/AbstractEventuateJdbcAggregateStore/AbstractEventuateJdbcAggregateStore(javax.sql.DataSource)|",
+      "|java+constructor:///java/util/concurrent/atomic/AtomicLong/AtomicLong()|"
+    ],
+    "affectedLib": "com.networknt:eventuate-jdbc:1.3.5",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.networknt:eventuate-client:1.3.4",
+    "coordinatesV2": "com.networknt:eventuate-client:1.3.5",
+    "caller": "|java+method:///com/networknt/eventuate/client/EventuateLocalPublishAggregateCrud/toPublishedEvent(java.lang.String,java.lang.String,com.networknt.eventuate.common.impl.EventIdTypeAndData)|",
+    "called": "|java+method:///com/networknt/eventuate/common/Int128/toString()|",
+    "v1Body": [
+      "|java+method:///com/networknt/eventuate/common/Int128/toString()|",
+      "|java+method:///com/networknt/eventuate/common/impl/EventIdTypeAndData/getEventType()|",
+      "|java+method:///com/networknt/eventuate/common/impl/EventIdTypeAndData/getId()|",
+      "|java+method:///com/networknt/eventuate/common/impl/EventIdTypeAndData/getEventData()|",
+      "|java+constructor:///com/networknt/eventuate/cdccore/PublishedEvent/PublishedEvent(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/networknt/eventuate/common/Int128/toString()|",
+      "|java+method:///com/networknt/eventuate/common/impl/EventIdTypeAndData/getEventType()|",
+      "|java+constructor:///com/networknt/eventuate/cdc/common/PublishedEvent/PublishedEvent(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,com.networknt.eventuate.cdc.common.BinlogFileOffset,java.util.Optional)|",
+      "|java+method:///com/networknt/eventuate/common/impl/EventIdTypeAndData/getMetadata()|",
+      "|java+method:///com/networknt/eventuate/common/impl/EventIdTypeAndData/getId()|",
+      "|java+method:///com/networknt/eventuate/common/impl/EventIdTypeAndData/getEventData()|"
+    ],
+    "affectedLib": "com.networknt:eventuate-common:1.3.5",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.networknt:eventuate-client:1.3.4",
+    "coordinatesV2": "com.networknt:eventuate-client:1.3.5",
+    "caller": "|java+method:///com/networknt/eventuate/client/EventuateLocalPublishAggregateCrud/toSerializedEvent(com.networknt.eventuate.common.impl.EventIdTypeAndData,java.lang.String,java.lang.String)|",
+    "called": "|java+constructor:///com/networknt/eventuate/common/EventContext/EventContext(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+constructor:///com/networknt/eventuate/common/EventContext/EventContext(java.lang.String)|",
+      "|java+method:///com/networknt/eventuate/common/impl/EventIdTypeAndData/getEventType()|",
+      "|java+method:///java/util/concurrent/atomic/AtomicLong/getAndIncrement()|",
+      "|java+constructor:///com/networknt/eventuate/common/impl/SerializedEvent/SerializedEvent(com.networknt.eventuate.common.Int128,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.Integer,java.lang.Long,com.networknt.eventuate.common.EventContext)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///com/networknt/eventuate/common/impl/EventIdTypeAndData/getId()|",
+      "|java+method:///com/networknt/eventuate/common/impl/EventIdTypeAndData/getEventData()|",
+      "|java+method:///java/lang/String/hashCode()|",
+      "|java+method:///com/networknt/eventuate/common/Int128/asString()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+constructor:///com/networknt/eventuate/common/EventContext/EventContext(java.lang.String)|",
+      "|java+method:///com/networknt/eventuate/common/impl/EventIdTypeAndData/getEventType()|",
+      "|java+method:///java/util/concurrent/atomic/AtomicLong/getAndIncrement()|",
+      "|java+method:///com/networknt/eventuate/common/impl/EventIdTypeAndData/getMetadata()|",
+      "|java+constructor:///com/networknt/eventuate/common/impl/SerializedEvent/SerializedEvent(com.networknt.eventuate.common.Int128,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.Integer,java.lang.Long,com.networknt.eventuate.common.EventContext,java.util.Optional)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///com/networknt/eventuate/common/impl/EventIdTypeAndData/getId()|",
+      "|java+method:///com/networknt/eventuate/common/impl/EventIdTypeAndData/getEventData()|",
+      "|java+method:///java/lang/String/hashCode()|",
+      "|java+method:///com/networknt/eventuate/common/Int128/asString()|"
+    ],
+    "affectedLib": "com.networknt:eventuate-common:1.3.5",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.networknt:eventuate-client:1.3.4",
+    "coordinatesV2": "com.networknt:eventuate-client:1.3.5",
+    "caller": "|java+method:///com/networknt/eventuate/client/KafkaAggregateSubscriptions/toSerializedEvent(org.apache.kafka.clients.consumer.ConsumerRecord)|",
+    "called": "|java+constructor:///com/networknt/eventuate/common/impl/SerializedEvent/SerializedEvent(com.networknt.eventuate.common.Int128,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.Integer,java.lang.Long,com.networknt.eventuate.common.EventContext,java.util.Optional)|",
+    "v1Body": [
+      "|java+method:///org/apache/kafka/clients/consumer/ConsumerRecord/offset()|",
+      "|java+method:///com/networknt/eventuate/client/KafkaAggregateSubscriptions/makeEventToken(java.lang.String,java.lang.String,int,long)|",
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.Throwable)|",
+      "|java+method:///com/networknt/eventuate/cdccore/PublishedEvent/getEventType()|",
+      "|java+method:///org/apache/kafka/clients/consumer/ConsumerRecord/partition()|",
+      "|java+constructor:///com/fasterxml/jackson/databind/ObjectMapper/ObjectMapper()|",
+      "|java+method:///org/apache/kafka/clients/consumer/ConsumerRecord/value()|",
+      "|java+method:///com/networknt/eventuate/cdccore/PublishedEvent/getId()|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///com/networknt/eventuate/cdccore/PublishedEvent/getEntityType()|",
+      "|java+method:///com/networknt/eventuate/cdccore/PublishedEvent/getEntityId()|",
+      "|java+method:///com/networknt/eventuate/cdccore/PublishedEvent/getEventData()|",
+      "|java+constructor:///com/networknt/eventuate/common/EventContext/EventContext(java.lang.String)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/readValue(java.lang.String,java.lang.Class)|",
+      "|java+method:///com/networknt/eventuate/common/Int128/fromString(java.lang.String)|",
+      "|java+method:///org/apache/kafka/clients/consumer/ConsumerRecord/topic()|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///com/networknt/eventuate/common/impl/SerializedEvent/SerializedEvent(com.networknt.eventuate.common.Int128,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.Integer,java.lang.Long,com.networknt.eventuate.common.EventContext)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/networknt/eventuate/cdc/common/PublishedEvent/getId()|",
+      "|java+method:///com/networknt/eventuate/cdc/common/PublishedEvent/getEntityType()|",
+      "|java+method:///com/networknt/eventuate/cdc/common/PublishedEvent/getEntityId()|",
+      "|java+method:///org/apache/kafka/clients/consumer/ConsumerRecord/offset()|",
+      "|java+method:///com/networknt/eventuate/cdc/common/PublishedEvent/getEventType()|",
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///com/networknt/eventuate/common/impl/JSonMapper/fromJson(java.lang.String,java.lang.Class)|",
+      "|java+method:///org/apache/kafka/clients/consumer/ConsumerRecord/partition()|",
+      "|java+constructor:///com/networknt/eventuate/common/impl/SerializedEvent/SerializedEvent(com.networknt.eventuate.common.Int128,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.Integer,java.lang.Long,com.networknt.eventuate.common.EventContext,java.util.Optional)|",
+      "|java+method:///com/networknt/eventuate/cdc/common/PublishedEvent/getEventData()|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///com/networknt/eventuate/common/Int128/fromString(java.lang.String)|",
+      "|java+method:///com/networknt/eventuate/cdc/common/PublishedEvent/getMetadata()|",
+      "|java+method:///org/apache/kafka/clients/consumer/ConsumerRecord/topic()|",
+      "|java+method:///com/networknt/eventuate/client/EtopEventContext/make(java.lang.String,java.lang.String,int,long)|",
+      "|java+method:///org/apache/kafka/clients/consumer/ConsumerRecord/value()|"
+    ],
+    "affectedLib": "com.networknt:eventuate-common:1.3.5",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.networknt:eventuate-client:1.3.4",
+    "coordinatesV2": "com.networknt:eventuate-client:1.3.5",
+    "caller": "|java+method:///com/networknt/eventuate/client/EventuateLocalDBAggregateCrud/toSerializedEvent(com.networknt.eventuate.common.impl.EventIdTypeAndData,java.lang.String,java.lang.String)|",
+    "called": "|java+constructor:///com/networknt/eventuate/common/EventContext/EventContext(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+constructor:///com/networknt/eventuate/common/EventContext/EventContext(java.lang.String)|",
+      "|java+method:///com/networknt/eventuate/common/impl/EventIdTypeAndData/getEventType()|",
+      "|java+method:///java/util/concurrent/atomic/AtomicLong/getAndIncrement()|",
+      "|java+constructor:///com/networknt/eventuate/common/impl/SerializedEvent/SerializedEvent(com.networknt.eventuate.common.Int128,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.Integer,java.lang.Long,com.networknt.eventuate.common.EventContext)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///com/networknt/eventuate/common/impl/EventIdTypeAndData/getId()|",
+      "|java+method:///com/networknt/eventuate/common/impl/EventIdTypeAndData/getEventData()|",
+      "|java+method:///java/lang/String/hashCode()|",
+      "|java+method:///com/networknt/eventuate/common/Int128/asString()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+constructor:///com/networknt/eventuate/common/EventContext/EventContext(java.lang.String)|",
+      "|java+method:///com/networknt/eventuate/common/impl/EventIdTypeAndData/getEventType()|",
+      "|java+method:///java/util/concurrent/atomic/AtomicLong/getAndIncrement()|",
+      "|java+method:///com/networknt/eventuate/common/impl/EventIdTypeAndData/getMetadata()|",
+      "|java+constructor:///com/networknt/eventuate/common/impl/SerializedEvent/SerializedEvent(com.networknt.eventuate.common.Int128,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.Integer,java.lang.Long,com.networknt.eventuate.common.EventContext,java.util.Optional)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///com/networknt/eventuate/common/impl/EventIdTypeAndData/getId()|",
+      "|java+method:///com/networknt/eventuate/common/impl/EventIdTypeAndData/getEventData()|",
+      "|java+method:///java/lang/String/hashCode()|",
+      "|java+method:///com/networknt/eventuate/common/Int128/asString()|"
+    ],
+    "affectedLib": "com.networknt:eventuate-common:1.3.5",
+    "change": "UPDATED"
+  }
+]

@@ -1,0 +1,183 @@
+[
+  {
+    "coordinatesV1": "me.bazhenov.groovy-shell:groovy-shell-server:1.7",
+    "coordinatesV2": "me.bazhenov.groovy-shell:groovy-shell-server:1.7.2",
+    "caller": "|java+constructor:///me/bazhenov/groovysh/GroovyShellService/GroovyShellService(int)|",
+    "called": "|java+method:///jline/TerminalFactory/registerFlavor(jline.TerminalFactory$Flavor,java.lang.Class)|",
+    "v1Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///jline/TerminalFactory/registerFlavor(jline.TerminalFactory$Flavor,java.lang.Class)|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///jline/TerminalFactory/registerFlavor(jline.TerminalFactory$Flavor,java.lang.Class)|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+constructor:///me/bazhenov/groovysh/thread/DefaultGroovyshThreadFactory/DefaultGroovyshThreadFactory()|"
+    ],
+    "affectedLib": "jline:jline:2.14.2",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "me.bazhenov.groovy-shell:groovy-shell-server:1.7",
+    "coordinatesV2": "me.bazhenov.groovy-shell:groovy-shell-server:1.7.2",
+    "caller": "|java+method:///me/bazhenov/groovysh/GroovyShellCommand/start(org.apache.sshd.server.Environment)|",
+    "called": "|java+constructor:///org/codehaus/groovy/tools/shell/Groovysh/Groovysh(groovy.lang.Binding,org.codehaus.groovy.tools.shell.IO)|",
+    "v1Body": [
+      "|java+constructor:///org/codehaus/groovy/tools/shell/Groovysh/Groovysh(groovy.lang.Binding,org.codehaus.groovy.tools.shell.IO)|",
+      "|java+method:///java/lang/Object/toString()|",
+      "|java+method:///java/lang/Thread/start()|",
+      "|java+constructor:///me/bazhenov/groovysh/GroovyShellCommand$2/GroovyShellCommand$2(me.bazhenov.groovysh.GroovyShellCommand,org.apache.sshd.server.Environment,org.codehaus.groovy.tools.shell.Groovysh)|",
+      "|java+method:///org/codehaus/groovy/tools/shell/Groovysh/setErrorHook(groovy.lang.Closure)|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///java/lang/Thread/Thread(java.lang.Runnable,java.lang.String)|",
+      "|java+method:///org/codehaus/groovy/tools/shell/IO/setVerbosity(org.codehaus.groovy.tools.shell.IO$Verbosity)|",
+      "|java+constructor:///me/bazhenov/groovysh/TtyFilterOutputStream/TtyFilterOutputStream(java.io.OutputStream)|",
+      "|java+method:///me/bazhenov/groovysh/GroovyShellCommand/loadDefaultScripts(org.codehaus.groovy.tools.shell.Groovysh)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///org/codehaus/groovy/tools/shell/IO/IO(java.io.InputStream,java.io.OutputStream,java.io.OutputStream)|",
+      "|java+method:///java/io/PrintStream/println(java.lang.String)|",
+      "|java+method:///org/apache/sshd/server/session/ServerSession/setAttribute(org.apache.sshd.common.Session$AttributeKey,java.lang.Object)|",
+      "|java+method:///org/apache/sshd/common/io/IoSession/getRemoteAddress()|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///me/bazhenov/groovysh/GroovyShellCommand/createBinding(java.util.Map,java.io.OutputStream,java.io.OutputStream)|",
+      "|java+method:///org/apache/sshd/server/session/ServerSession/getIoSession()|",
+      "|java+method:///me/bazhenov/groovysh/GroovyShellCommand/createPrintStream(java.io.OutputStream)|",
+      "|java+constructor:///me/bazhenov/groovysh/GroovyShellCommand$1/GroovyShellCommand$1(me.bazhenov.groovysh.GroovyShellCommand,java.lang.Object,org.codehaus.groovy.tools.shell.Groovysh)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/Exception/getMessage()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/codehaus/groovy/tools/shell/Groovysh/Groovysh(groovy.lang.Binding,org.codehaus.groovy.tools.shell.IO)|",
+      "|java+method:///me/bazhenov/groovysh/thread/ServerSessionAwareThreadFactory/newThread(java.lang.Runnable,org.apache.sshd.server.session.ServerSession)|",
+      "|java+method:///java/lang/Thread/start()|",
+      "|java+constructor:///me/bazhenov/groovysh/GroovyShellCommand$2/GroovyShellCommand$2(me.bazhenov.groovysh.GroovyShellCommand,org.apache.sshd.server.Environment,org.codehaus.groovy.tools.shell.Groovysh)|",
+      "|java+method:///org/codehaus/groovy/tools/shell/Groovysh/setErrorHook(groovy.lang.Closure)|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/codehaus/groovy/tools/shell/IO/setVerbosity(org.codehaus.groovy.tools.shell.IO$Verbosity)|",
+      "|java+constructor:///me/bazhenov/groovysh/TtyFilterOutputStream/TtyFilterOutputStream(java.io.OutputStream)|",
+      "|java+method:///me/bazhenov/groovysh/GroovyShellCommand/loadDefaultScripts(org.codehaus.groovy.tools.shell.Groovysh)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///org/codehaus/groovy/tools/shell/IO/IO(java.io.InputStream,java.io.OutputStream,java.io.OutputStream)|",
+      "|java+method:///java/io/PrintStream/println(java.lang.String)|",
+      "|java+method:///org/apache/sshd/server/session/ServerSession/setAttribute(org.apache.sshd.common.AttributeStore$AttributeKey,java.lang.Object)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///me/bazhenov/groovysh/GroovyShellCommand/createBinding(java.util.Map,java.io.OutputStream,java.io.OutputStream)|",
+      "|java+method:///me/bazhenov/groovysh/GroovyShellCommand/createPrintStream(java.io.OutputStream)|",
+      "|java+constructor:///me/bazhenov/groovysh/GroovyShellCommand$1/GroovyShellCommand$1(me.bazhenov.groovysh.GroovyShellCommand,java.lang.Object,org.codehaus.groovy.tools.shell.Groovysh)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/Exception/getMessage()|"
+    ],
+    "affectedLib": "org.codehaus.groovy:groovy-all:2.4.7",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "me.bazhenov.groovy-shell:groovy-shell-server:1.7",
+    "coordinatesV2": "me.bazhenov.groovy-shell:groovy-shell-server:1.7.2",
+    "caller": "|java+method:///me/bazhenov/groovysh/GroovyShellService/buildSshServer()|",
+    "called": "|java+method:///org/apache/sshd/common/PropertyResolverUtils/updateProperty(org.apache.sshd.common.PropertyResolver,java.lang.String,long)|",
+    "v1Body": [
+      "|java+method:///java/util/concurrent/TimeUnit/toMillis(long)|",
+      "|java+method:///java/lang/Long/toString(long)|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+constructor:///me/bazhenov/groovysh/GroovyShellService$1/GroovyShellService$1(me.bazhenov.groovysh.GroovyShellService)|",
+      "|java+method:///org/apache/sshd/SshServer/setShellFactory(org.apache.sshd.common.Factory)|",
+      "|java+method:///org/apache/sshd/SshServer/setPort(int)|",
+      "|java+method:///org/apache/sshd/server/session/SessionFactory/addListener(org.apache.sshd.common.SessionListener)|",
+      "|java+constructor:///org/apache/sshd/server/keyprovider/SimpleGeneratorHostKeyProvider/SimpleGeneratorHostKeyProvider(java.lang.String)|",
+      "|java+constructor:///me/bazhenov/groovysh/GroovyShellService$GroovyShellFactory/GroovyShellService$GroovyShellFactory(me.bazhenov.groovysh.GroovyShellService)|",
+      "|java+method:///org/apache/sshd/SshServer/setHost(java.lang.String)|",
+      "|java+method:///org/apache/sshd/SshServer/setKeyPairProvider(org.apache.sshd.common.KeyPairProvider)|",
+      "|java+method:///org/apache/sshd/SshServer/setUpDefaultServer()|",
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///me/bazhenov/groovysh/GroovyShellService/configureAuthentication(org.apache.sshd.SshServer)|",
+      "|java+constructor:///org/apache/sshd/server/session/SessionFactory/SessionFactory()|",
+      "|java+method:///org/apache/sshd/SshServer/setSessionFactory(org.apache.sshd.server.session.SessionFactory)|",
+      "|java+method:///org/apache/sshd/SshServer/setProperties(java.util.Map)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/sshd/server/SshServer/setShellFactory(org.apache.sshd.common.Factory)|",
+      "|java+method:///java/util/concurrent/TimeUnit/toMillis(long)|",
+      "|java+method:///org/apache/sshd/server/SshServer/setHost(java.lang.String)|",
+      "|java+method:///org/apache/sshd/server/SshServer/setUpDefaultServer()|",
+      "|java+constructor:///me/bazhenov/groovysh/GroovyShellService$GroovyShellFactory/GroovyShellService$GroovyShellFactory(me.bazhenov.groovysh.GroovyShellService)|",
+      "|java+method:///org/apache/sshd/server/SshServer/setPort(int)|",
+      "|java+method:///org/apache/sshd/server/SshServer/addSessionListener(org.apache.sshd.common.session.SessionListener)|",
+      "|java+constructor:///org/apache/sshd/server/keyprovider/SimpleGeneratorHostKeyProvider/SimpleGeneratorHostKeyProvider(java.nio.file.Path)|",
+      "|java+constructor:///java/io/File/File(java.lang.String)|",
+      "|java+constructor:///me/bazhenov/groovysh/GroovyShellService$1/GroovyShellService$1(me.bazhenov.groovysh.GroovyShellService)|",
+      "|java+method:///org/apache/sshd/server/SshServer/setKeyPairProvider(org.apache.sshd.common.keyprovider.KeyPairProvider)|",
+      "|java+method:///java/io/File/toPath()|",
+      "|java+method:///org/apache/sshd/common/PropertyResolverUtils/updateProperty(org.apache.sshd.common.PropertyResolver,java.lang.String,long)|",
+      "|java+method:///me/bazhenov/groovysh/GroovyShellService/configureAuthentication(org.apache.sshd.server.SshServer)|"
+    ],
+    "affectedLib": "org.apache.sshd:sshd-core:1.4.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "me.bazhenov.groovy-shell:groovy-shell-server:1.7",
+    "coordinatesV2": "me.bazhenov.groovy-shell:groovy-shell-server:1.7.2",
+    "caller": "|java+method:///me/bazhenov/groovysh/GroovyShellService/destroy()|",
+    "called": "|java+method:///org/apache/sshd/server/SshServer/stop(boolean)|",
+    "v1Body": [
+      "|java+method:///org/apache/sshd/SshServer/stop(boolean)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/sshd/server/SshServer/stop(boolean)|"
+    ],
+    "affectedLib": "org.apache.sshd:sshd-core:1.4.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "me.bazhenov.groovy-shell:groovy-shell-server:1.7",
+    "coordinatesV2": "me.bazhenov.groovy-shell:groovy-shell-server:1.7.2",
+    "caller": "|java+method:///me/bazhenov/groovysh/GroovyShellCommand$3/call()|",
+    "called": "|java+method:///org/apache/sshd/server/SshServer/getActiveSessions()|",
+    "v1Body": [
+      "|java+method:///me/bazhenov/groovysh/GroovyShellCommand/access$100(me.bazhenov.groovysh.GroovyShellCommand)|",
+      "|java+method:///org/apache/sshd/SshServer/getActiveSessions()|",
+      "|java+method:///me/bazhenov/groovysh/GroovyShellCommand$3/call()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/sshd/server/SshServer/getActiveSessions()|",
+      "|java+method:///me/bazhenov/groovysh/GroovyShellCommand/access$100(me.bazhenov.groovysh.GroovyShellCommand)|",
+      "|java+method:///me/bazhenov/groovysh/GroovyShellCommand$3/call()|"
+    ],
+    "affectedLib": "org.apache.sshd:sshd-core:1.4.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "me.bazhenov.groovy-shell:groovy-shell-server:1.7",
+    "coordinatesV2": "me.bazhenov.groovy-shell:groovy-shell-server:1.7.2",
+    "caller": "|java+initializer:///me/bazhenov/groovysh/GroovyShellService/GroovyShellService$initializer|",
+    "called": "|java+constructor:///org/apache/sshd/common/AttributeStore$AttributeKey/AttributeStore$AttributeKey()|",
+    "v1Body": [
+      "|java+constructor:///org/apache/sshd/common/Session$AttributeKey/Session$AttributeKey()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/sshd/common/AttributeStore$AttributeKey/AttributeStore$AttributeKey()|"
+    ],
+    "affectedLib": "org.apache.sshd:sshd-core:1.4.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "me.bazhenov.groovy-shell:groovy-shell-server:1.7",
+    "coordinatesV2": "me.bazhenov.groovy-shell:groovy-shell-server:1.7.2",
+    "caller": "|java+method:///me/bazhenov/groovysh/GroovyShellService/start()|",
+    "called": "|java+method:///org/apache/sshd/server/SshServer/start()|",
+    "v1Body": [
+      "|java+method:///me/bazhenov/groovysh/GroovyShellService/buildSshServer()|",
+      "|java+method:///org/apache/sshd/SshServer/start()|"
+    ],
+    "v2Body": [
+      "|java+method:///me/bazhenov/groovysh/GroovyShellService/buildSshServer()|",
+      "|java+method:///org/apache/sshd/server/SshServer/start()|"
+    ],
+    "affectedLib": "org.apache.sshd:sshd-core:1.4.0",
+    "change": "UPDATED"
+  }
+]

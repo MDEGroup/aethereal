@@ -1,0 +1,403 @@
+[
+  {
+    "coordinatesV1": "pl.project13.maven:git-commit-id-plugin:2.2.0",
+    "coordinatesV2": "pl.project13.maven:git-commit-id-plugin:2.1.4",
+    "caller": "|java+method:///pl/project13/maven/git/GitCommitIdMojo/initProperties()|",
+    "called": "|java+method:///org/apache/maven/project/MavenProject/getProperties()|",
+    "v1Body": [
+      "|java+method:///pl/project13/maven/git/GitCommitIdMojo/log(java.lang.String,java.lang.String%5B%5D)|",
+      "|java+constructor:///java/util/Properties/Properties()|",
+      "|java+method:///org/apache/maven/project/MavenProject/getProperties()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/util/Properties/Properties()|",
+      "|java+method:///org/apache/maven/project/MavenProject/getProperties()|"
+    ],
+    "affectedLib": "org.apache.maven:maven-project:2.2.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "pl.project13.maven:git-commit-id-plugin:2.1.4",
+    "coordinatesV2": "pl.project13.maven:git-commit-id-plugin:2.2.0",
+    "caller": "|java+constructor:///pl/project13/maven/git/log/MavenLoggerBridge/MavenLoggerBridge(org.apache.maven.plugin.logging.Log,boolean)|",
+    "called": "|java+constructor:///org/slf4j/impl/SimpleLoggerFactory/SimpleLoggerFactory()|",
+    "v1Body": [
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/slf4j/impl/SimpleLoggerFactory/SimpleLoggerFactory()|",
+      "|java+method:///pl/project13/maven/git/log/MavenLoggerBridge/setSimpleLoggerPorperties()|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///org/slf4j/impl/SimpleLoggerFactory/getLogger(java.lang.String)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-simple:1.7.12",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "pl.project13.maven:git-commit-id-plugin:2.1.4",
+    "coordinatesV2": "pl.project13.maven:git-commit-id-plugin:2.2.0",
+    "caller": "|java+method:///pl/project13/maven/git/GitCommitIdMojo/execute()|",
+    "called": "|java+method:///org/apache/maven/project/MavenProject/getBasedir()|",
+    "v1Body": [
+      "|java+method:///pl/project13/maven/git/GitCommitIdMojo/log(java.lang.String,java.lang.String%5B%5D)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///pl/project13/maven/git/GitCommitIdMojo/initProperties()|",
+      "|java+method:///pl/project13/maven/git/GitCommitIdMojo/isPomProject(org.apache.maven.project.MavenProject)|",
+      "|java+method:///pl/project13/maven/git/GitCommitIdMojo/throwWhenRequiredDirectoryNotFound(java.io.File,java.lang.Boolean,java.lang.String)|",
+      "|java+method:///pl/project13/maven/git/GitCommitIdMojo/loadGitData(java.util.Properties)|",
+      "|java+method:///pl/project13/maven/git/GitCommitIdMojo/logProperties(java.util.Properties)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///pl/project13/maven/git/GitCommitIdMojo/loadBuildTimeData(java.util.Properties)|",
+      "|java+method:///pl/project13/maven/git/GitCommitIdMojo/lookupGitDirectory()|",
+      "|java+method:///pl/project13/maven/git/GitCommitIdMojo/appendPropertiesToMaven(java.util.Properties)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/Boolean/valueOf(boolean)|",
+      "|java+method:///java/io/File/getAbsolutePath()|",
+      "|java+constructor:///org/apache/maven/plugin/MojoExecutionException/MojoExecutionException(java.lang.String,java.lang.Exception)|",
+      "|java+method:///pl/project13/maven/git/GitCommitIdMojo/generatePropertiesFile(java.util.Properties,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///pl/project13/maven/git/log/LoggerBridge/setVerbose(boolean)|",
+      "|java+method:///pl/project13/maven/git/CommitIdGenerationModeEnum/getValue(java.lang.String)|",
+      "|java+method:///pl/project13/maven/git/GitCommitIdMojo/isPomProject(org.apache.maven.project.MavenProject)|",
+      "|java+method:///pl/project13/maven/git/GitCommitIdMojo/filter(java.util.Properties,java.util.List)|",
+      "|java+method:///pl/project13/maven/git/GitCommitIdMojo/throwWhenRequiredDirectoryNotFound(java.io.File,java.lang.Boolean,java.lang.String)|",
+      "|java+method:///pl/project13/maven/git/GitCommitIdMojo/loadBuildVersionAndTimeData(java.util.Properties)|",
+      "|java+method:///pl/project13/maven/git/GitCommitIdMojo/maybeGeneratePropertiesFile(java.util.Properties,java.io.File,java.lang.String)|",
+      "|java+method:///pl/project13/maven/git/GitCommitIdMojo/loadShortDescribe(java.util.Properties)|",
+      "|java+method:///pl/project13/maven/git/GitCommitIdMojo/lookupGitDirectory()|",
+      "|java+method:///pl/project13/maven/git/GitCommitIdMojo/filterNot(java.util.Properties,java.util.List)|",
+      "|java+method:///pl/project13/maven/git/GitCommitIdMojo/appendPropertiesToReactorProjects(java.util.Properties,java.lang.String)|",
+      "|java+constructor:///pl/project13/maven/git/GitDescribeConfig/GitDescribeConfig()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/String/trim()|",
+      "|java+method:///pl/project13/maven/git/GitCommitIdMojo/log(java.lang.String%5B%5D)|",
+      "|java+method:///pl/project13/maven/git/GitCommitIdMojo/initProperties()|",
+      "|java+method:///pl/project13/maven/git/GitCommitIdMojo/handlePluginFailure(java.lang.Exception)|",
+      "|java+method:///pl/project13/maven/git/log/LoggerBridge/warn(java.lang.Object%5B%5D)|",
+      "|java+method:///pl/project13/maven/git/GitCommitIdMojo/loadGitData(java.util.Properties)|",
+      "|java+method:///org/apache/maven/project/MavenProject/getBasedir()|",
+      "|java+method:///org/apache/maven/execution/MavenSession/getExecutionRootDirectory()|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///java/lang/Exception/printStackTrace()|",
+      "|java+method:///pl/project13/maven/git/GitCommitIdMojo/logProperties(java.util.Properties)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///pl/project13/maven/git/CommitIdGenerationModeEnum/ordinal()|",
+      "|java+method:///java/lang/Boolean/valueOf(boolean)|",
+      "|java+method:///java/io/File/getAbsolutePath()|",
+      "|java+method:///pl/project13/maven/git/GitCommitIdMojo/loadBuildHostData(java.util.Properties)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/apache/maven/execution/MavenSession/getCurrentProject()|"
+    ],
+    "affectedLib": "org.apache.maven:maven-core:3.1.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "pl.project13.maven:git-commit-id-plugin:2.1.4",
+    "coordinatesV2": "pl.project13.maven:git-commit-id-plugin:2.2.0",
+    "caller": "|java+method:///pl/project13/maven/git/GitCommitIdMojo/initProperties()|",
+    "called": "|java+method:///org/apache/maven/project/MavenProject/getProperties()|",
+    "v1Body": [
+      "|java+method:///pl/project13/maven/git/GitCommitIdMojo/log(java.lang.String,java.lang.String%5B%5D)|",
+      "|java+constructor:///java/util/Properties/Properties()|",
+      "|java+method:///org/apache/maven/project/MavenProject/getProperties()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/util/Properties/Properties()|",
+      "|java+method:///org/apache/maven/project/MavenProject/getProperties()|"
+    ],
+    "affectedLib": "org.apache.maven:maven-core:3.1.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "pl.project13.maven:git-commit-id-plugin:2.1.4",
+    "coordinatesV2": "pl.project13.maven:git-commit-id-plugin:2.2.0",
+    "caller": "|java+method:///pl/project13/jgit/DescribeCommand/findHeadObjectId(org.eclipse.jgit.lib.Repository)|",
+    "called": "|java+method:///org/eclipse/jgit/revwalk/RevWalk/lookupCommit(org.eclipse.jgit.lib.AnyObjectId)|",
+    "v1Body": [
+      "|java+method:///org/eclipse/jgit/revwalk/RevCommit/getName()|",
+      "|java+method:///org/eclipse/jgit/lib/Repository/resolve(java.lang.String)|",
+      "|java+method:///pl/project13/jgit/DescribeCommand/log(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+constructor:///org/eclipse/jgit/revwalk/RevWalk/RevWalk(org.eclipse.jgit.lib.Repository)|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/eclipse/jgit/revwalk/RevWalk/lookupCommit(org.eclipse.jgit.lib.AnyObjectId)|",
+      "|java+method:///org/eclipse/jgit/revwalk/RevWalk/dispose()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/eclipse/jgit/revwalk/RevCommit/getName()|",
+      "|java+constructor:///org/eclipse/jgit/revwalk/RevWalk/RevWalk(org.eclipse.jgit.lib.Repository)|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/eclipse/jgit/lib/Repository/resolve(java.lang.String)|",
+      "|java+method:///pl/project13/jgit/DescribeCommand/log(java.lang.Object%5B%5D)|",
+      "|java+method:///org/eclipse/jgit/revwalk/RevWalk/lookupCommit(org.eclipse.jgit.lib.AnyObjectId)|",
+      "|java+method:///org/eclipse/jgit/revwalk/RevWalk/dispose()|"
+    ],
+    "affectedLib": "org.eclipse.jgit:org.eclipse.jgit:4.0.0.201506090130-r",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "pl.project13.maven:git-commit-id-plugin:2.1.4",
+    "coordinatesV2": "pl.project13.maven:git-commit-id-plugin:2.2.0",
+    "caller": "|java+constructor:///pl/project13/jgit/DescribeCommand/DescribeCommand(org.eclipse.jgit.lib.Repository,boolean)|",
+    "called": "|java+constructor:///org/eclipse/jgit/api/GitCommand/GitCommand(org.eclipse.jgit.lib.Repository)|",
+    "v1Body": [
+      "|java+method:///com/google/common/base/Optional/absent()|",
+      "|java+constructor:///org/eclipse/jgit/api/GitCommand/GitCommand(org.eclipse.jgit.lib.Repository)|",
+      "|java+method:///pl/project13/jgit/DescribeCommand/initDefaultLoggerBridge(boolean)|",
+      "|java+method:///pl/project13/jgit/DescribeCommand/setVerbose(boolean)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/common/base/Optional/absent()|",
+      "|java+constructor:///org/eclipse/jgit/api/GitCommand/GitCommand(org.eclipse.jgit.lib.Repository)|",
+      "|java+method:///pl/project13/jgit/DescribeCommand/initDefaultLoggerBridge(boolean)|",
+      "|java+constructor:///pl/project13/jgit/JGitCommon/JGitCommon()|",
+      "|java+method:///pl/project13/jgit/DescribeCommand/setVerbose(boolean)|"
+    ],
+    "affectedLib": "org.eclipse.jgit:org.eclipse.jgit:4.0.0.201506090130-r",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "pl.project13.maven:git-commit-id-plugin:2.1.4",
+    "coordinatesV2": "pl.project13.maven:git-commit-id-plugin:2.2.0",
+    "caller": "|java+method:///pl/project13/jgit/DescribeCommand/findDirtyState(org.eclipse.jgit.lib.Repository)|",
+    "called": "|java+method:///org/eclipse/jgit/api/StatusCommand/call()|",
+    "v1Body": [
+      "|java+method:///org/eclipse/jgit/api/Status/getModified()|",
+      "|java+method:///org/eclipse/jgit/api/Status/getConflicting()|",
+      "|java+method:///org/eclipse/jgit/api/Status/getChanged()|",
+      "|java+method:///org/eclipse/jgit/api/Git/status()|",
+      "|java+method:///java/lang/Boolean/valueOf(boolean)|",
+      "|java+method:///org/eclipse/jgit/api/Status/getMissing()|",
+      "|java+method:///org/eclipse/jgit/api/Git/wrap(org.eclipse.jgit.lib.Repository)|",
+      "|java+method:///java/util/Set/isEmpty()|",
+      "|java+method:///org/eclipse/jgit/api/Status/getAdded()|",
+      "|java+method:///org/eclipse/jgit/api/Status/getRemoved()|",
+      "|java+method:///pl/project13/jgit/DescribeCommand/log(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///org/eclipse/jgit/api/StatusCommand/call()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/eclipse/jgit/api/Status/getModified()|",
+      "|java+method:///org/eclipse/jgit/api/Status/getConflicting()|",
+      "|java+method:///org/eclipse/jgit/api/Status/getChanged()|",
+      "|java+method:///org/eclipse/jgit/api/Git/status()|",
+      "|java+method:///java/lang/Boolean/valueOf(boolean)|",
+      "|java+method:///org/eclipse/jgit/api/StatusCommand/call()|",
+      "|java+method:///pl/project13/jgit/DescribeCommand/log(java.lang.Object%5B%5D)|",
+      "|java+method:///org/eclipse/jgit/api/Status/getMissing()|",
+      "|java+method:///org/eclipse/jgit/api/Git/wrap(org.eclipse.jgit.lib.Repository)|",
+      "|java+method:///java/util/Set/isEmpty()|",
+      "|java+method:///org/eclipse/jgit/api/Status/getAdded()|",
+      "|java+method:///org/eclipse/jgit/api/Status/getRemoved()|"
+    ],
+    "affectedLib": "org.eclipse.jgit:org.eclipse.jgit:4.0.0.201506090130-r",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "pl.project13.maven:git-commit-id-plugin:2.1.4",
+    "coordinatesV2": "pl.project13.maven:git-commit-id-plugin:2.2.0",
+    "caller": "|java+method:///pl/project13/jgit/DescribeCommand/call()|",
+    "called": "|java+method:///org/eclipse/jgit/lib/Repository/newObjectReader()|",
+    "v1Body": [
+      "|java+method:///pl/project13/jgit/DescribeCommand/findHeadObjectId(org.eclipse.jgit.lib.Repository)|",
+      "|java+constructor:///pl/project13/jgit/DescribeResult/DescribeResult(org.eclipse.jgit.lib.ObjectReader,org.eclipse.jgit.lib.ObjectId,boolean,com.google.common.base.Optional)|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///pl/project13/jgit/DescribeCommand/log(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///pl/project13/jgit/DescribeCommand/findDirtyState(org.eclipse.jgit.lib.Repository)|",
+      "|java+method:///org/eclipse/jgit/revwalk/RevCommit/getId()|",
+      "|java+method:///pl/project13/jgit/DescribeCommand/findTagObjectIds(org.eclipse.jgit.lib.Repository,boolean)|",
+      "|java+method:///pl/project13/jgit/DescribeCommand/findCommitsUntilSomeTag(org.eclipse.jgit.lib.Repository,org.eclipse.jgit.revwalk.RevCommit,java.util.Map)|",
+      "|java+method:///pl/project13/jgit/DescribeCommand/call()|",
+      "|java+method:///pl/project13/jgit/DescribeCommand/createDescribeResult(org.eclipse.jgit.lib.ObjectReader,org.eclipse.jgit.lib.ObjectId,boolean,pl.project13.maven.git.util.Pair)|",
+      "|java+method:///pl/project13/maven/git/util/Pair/of(java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/eclipse/jgit/lib/Repository/newObjectReader()|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///java/util/List/get(int)|",
+      "|java+method:///pl/project13/jgit/DescribeCommand/foundZeroTags(java.util.Map)|",
+      "|java+method:///pl/project13/jgit/DescribeResult/withCommitIdAbbrev(int)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+constructor:///pl/project13/jgit/DescribeResult/DescribeResult(java.lang.String,boolean,com.google.common.base.Optional)|",
+      "|java+method:///pl/project13/jgit/DescribeCommand/hasTags(org.eclipse.jgit.lib.ObjectId,java.util.Map)|",
+      "|java+method:///pl/project13/jgit/DescribeCommand/distanceBetween(org.eclipse.jgit.lib.Repository,org.eclipse.jgit.revwalk.RevCommit,org.eclipse.jgit.revwalk.RevCommit)|"
+    ],
+    "v2Body": [
+      "|java+method:///pl/project13/jgit/DescribeCommand/findTagObjectIds(org.eclipse.jgit.lib.Repository,boolean)|",
+      "|java+method:///pl/project13/jgit/DescribeCommand/findHeadObjectId(org.eclipse.jgit.lib.Repository)|",
+      "|java+constructor:///pl/project13/jgit/DescribeResult/DescribeResult(org.eclipse.jgit.lib.ObjectReader,org.eclipse.jgit.lib.ObjectId,boolean,com.google.common.base.Optional)|",
+      "|java+method:///pl/project13/jgit/JGitCommon/distanceBetween(org.eclipse.jgit.lib.Repository,org.eclipse.jgit.revwalk.RevCommit,org.eclipse.jgit.revwalk.RevCommit)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///pl/project13/jgit/JGitCommon/findCommitsUntilSomeTag(org.eclipse.jgit.lib.Repository,org.eclipse.jgit.revwalk.RevCommit,java.util.Map)|",
+      "|java+method:///pl/project13/jgit/DescribeCommand/log(java.lang.Object%5B%5D)|",
+      "|java+method:///pl/project13/jgit/DescribeCommand/findDirtyState(org.eclipse.jgit.lib.Repository)|",
+      "|java+method:///pl/project13/jgit/DescribeCommand/hasTags(org.eclipse.jgit.lib.ObjectId,java.util.Map)|",
+      "|java+method:///org/eclipse/jgit/revwalk/RevCommit/getId()|",
+      "|java+method:///pl/project13/jgit/DescribeCommand/call()|",
+      "|java+method:///pl/project13/jgit/DescribeCommand/createDescribeResult(org.eclipse.jgit.lib.ObjectReader,org.eclipse.jgit.lib.ObjectId,boolean,pl.project13.maven.git.util.Pair)|",
+      "|java+method:///java/util/List/isEmpty()|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+method:///pl/project13/maven/git/util/Pair/of(java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/eclipse/jgit/lib/Repository/newObjectReader()|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///java/util/List/get(int)|",
+      "|java+method:///pl/project13/jgit/DescribeCommand/foundZeroTags(java.util.Map)|",
+      "|java+method:///pl/project13/jgit/DescribeResult/withCommitIdAbbrev(int)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+constructor:///pl/project13/jgit/DescribeResult/DescribeResult(java.lang.String,boolean,com.google.common.base.Optional)|"
+    ],
+    "affectedLib": "org.eclipse.jgit:org.eclipse.jgit:4.0.0.201506090130-r",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "pl.project13.maven:git-commit-id-plugin:2.1.4",
+    "coordinatesV2": "pl.project13.maven:git-commit-id-plugin:2.2.0",
+    "caller": "|java+method:///pl/project13/jgit/DescribeCommand/match(java.lang.String)|",
+    "called": "|java+method:///com/google/common/base/Optional/fromNullable(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///com/google/common/base/Optional/or(java.lang.Object)|",
+      "|java+method:///pl/project13/jgit/DescribeCommand/log(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///com/google/common/base/Optional/fromNullable(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///com/google/common/base/Optional/or(java.lang.Object)|",
+      "|java+method:///pl/project13/jgit/DescribeCommand/log(java.lang.Object%5B%5D)|",
+      "|java+method:///com/google/common/base/Optional/fromNullable(java.lang.Object)|"
+    ],
+    "affectedLib": "com.google.guava:guava:18.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "pl.project13.maven:git-commit-id-plugin:2.1.4",
+    "coordinatesV2": "pl.project13.maven:git-commit-id-plugin:2.2.0",
+    "caller": "|java+method:///pl/project13/jgit/DescribeCommand/dirty(java.lang.String)|",
+    "called": "|java+method:///com/google/common/base/Optional/fromNullable(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///com/google/common/base/Optional/or(java.lang.Object)|",
+      "|java+method:///pl/project13/jgit/DescribeCommand/log(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///com/google/common/base/Optional/fromNullable(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/common/base/Optional/or(java.lang.Object)|",
+      "|java+method:///pl/project13/jgit/DescribeCommand/log(java.lang.Object%5B%5D)|",
+      "|java+method:///com/google/common/base/Optional/fromNullable(java.lang.Object)|"
+    ],
+    "affectedLib": "com.google.guava:guava:18.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "pl.project13.maven:git-commit-id-plugin:2.1.4",
+    "coordinatesV2": "pl.project13.maven:git-commit-id-plugin:2.2.0",
+    "caller": "|java+constructor:///pl/project13/jgit/DescribeResult/DescribeResult(org.eclipse.jgit.lib.ObjectReader,java.lang.String,int,org.eclipse.jgit.lib.ObjectId)|",
+    "called": "|java+method:///com/google/common/base/Optional/absent()|",
+    "v1Body": [
+      "|java+method:///com/google/common/base/Optional/absent()|",
+      "|java+constructor:///pl/project13/jgit/DescribeResult/DescribeResult(org.eclipse.jgit.lib.ObjectReader,java.lang.String,int,org.eclipse.jgit.lib.ObjectId,boolean,com.google.common.base.Optional)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/common/base/Optional/absent()|",
+      "|java+constructor:///pl/project13/jgit/DescribeResult/DescribeResult(org.eclipse.jgit.lib.ObjectReader,java.lang.String,int,org.eclipse.jgit.lib.ObjectId,boolean,com.google.common.base.Optional,boolean)|"
+    ],
+    "affectedLib": "com.google.guava:guava:18.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "pl.project13.maven:git-commit-id-plugin:2.1.4",
+    "coordinatesV2": "pl.project13.maven:git-commit-id-plugin:2.2.0",
+    "caller": "|java+method:///pl/project13/jgit/DescribeCommand/abbrev(java.lang.Integer)|",
+    "called": "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///java/lang/Integer/intValue()|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean,java.lang.Object)|",
+      "|java+method:///pl/project13/jgit/DescribeCommand/log(java.lang.String,java.lang.Object%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Integer/intValue()|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean,java.lang.Object)|",
+      "|java+method:///pl/project13/jgit/DescribeCommand/log(java.lang.Object%5B%5D)|"
+    ],
+    "affectedLib": "com.google.guava:guava:18.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "pl.project13.maven:git-commit-id-plugin:2.1.4",
+    "coordinatesV2": "pl.project13.maven:git-commit-id-plugin:2.2.0",
+    "caller": "|java+constructor:///pl/project13/jgit/DescribeCommand/DescribeCommand(org.eclipse.jgit.lib.Repository,boolean)|",
+    "called": "|java+method:///com/google/common/base/Optional/absent()|",
+    "v1Body": [
+      "|java+method:///com/google/common/base/Optional/absent()|",
+      "|java+constructor:///org/eclipse/jgit/api/GitCommand/GitCommand(org.eclipse.jgit.lib.Repository)|",
+      "|java+method:///pl/project13/jgit/DescribeCommand/initDefaultLoggerBridge(boolean)|",
+      "|java+method:///pl/project13/jgit/DescribeCommand/setVerbose(boolean)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/common/base/Optional/absent()|",
+      "|java+constructor:///org/eclipse/jgit/api/GitCommand/GitCommand(org.eclipse.jgit.lib.Repository)|",
+      "|java+method:///pl/project13/jgit/DescribeCommand/initDefaultLoggerBridge(boolean)|",
+      "|java+constructor:///pl/project13/jgit/JGitCommon/JGitCommon()|",
+      "|java+method:///pl/project13/jgit/DescribeCommand/setVerbose(boolean)|"
+    ],
+    "affectedLib": "com.google.guava:guava:18.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "pl.project13.maven:git-commit-id-plugin:2.1.4",
+    "coordinatesV2": "pl.project13.maven:git-commit-id-plugin:2.2.0",
+    "caller": "|java+method:///pl/project13/maven/git/GitRepositoryState/toJson()|",
+    "called": "|java+method:///com/google/common/base/Joiner/on(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder(java.lang.String)|",
+      "|java+method:///pl/project13/maven/git/GitRepositoryState/appendProperty(java.lang.StringBuilder,java.lang.String,java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///com/google/common/base/Joiner/on(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder(java.lang.String)|",
+      "|java+method:///com/google/common/base/Joiner/join(java.lang.Iterable)|",
+      "|java+method:///pl/project13/maven/git/GitRepositoryState/appendProperty(java.lang.StringBuilder,java.lang.String,java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "affectedLib": "com.google.guava:guava:18.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "pl.project13.maven:git-commit-id-plugin:2.1.4",
+    "coordinatesV2": "pl.project13.maven:git-commit-id-plugin:2.2.0",
+    "caller": "|java+constructor:///pl/project13/jgit/DescribeResult/DescribeResult(org.eclipse.jgit.lib.ObjectReader,java.lang.String,int,org.eclipse.jgit.lib.ObjectId,boolean,java.lang.String)|",
+    "called": "|java+method:///com/google/common/base/Optional/of(java.lang.Object)|",
+    "v1Body": [
+      "|java+constructor:///pl/project13/jgit/DescribeResult/DescribeResult(org.eclipse.jgit.lib.ObjectReader,java.lang.String,int,org.eclipse.jgit.lib.ObjectId,boolean,com.google.common.base.Optional)|",
+      "|java+method:///com/google/common/base/Optional/of(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///pl/project13/jgit/DescribeResult/DescribeResult(org.eclipse.jgit.lib.ObjectReader,java.lang.String,int,org.eclipse.jgit.lib.ObjectId,boolean,com.google.common.base.Optional,boolean)|",
+      "|java+method:///com/google/common/base/Optional/of(java.lang.Object)|"
+    ],
+    "affectedLib": "com.google.guava:guava:18.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "pl.project13.maven:git-commit-id-plugin:2.1.4",
+    "coordinatesV2": "pl.project13.maven:git-commit-id-plugin:2.2.0",
+    "caller": "|java+constructor:///pl/project13/maven/git/GitCommitIdMojo/GitCommitIdMojo()|",
+    "called": "|java+constructor:///org/apache/maven/plugin/AbstractMojo/AbstractMojo()|",
+    "v1Body": [
+      "|java+constructor:///org/apache/maven/plugin/AbstractMojo/AbstractMojo()|",
+      "|java+method:///pl/project13/maven/git/GitCommitIdMojo/getLog()|",
+      "|java+constructor:///pl/project13/maven/git/log/MavenLoggerBridge/MavenLoggerBridge(org.apache.maven.plugin.logging.Log,boolean)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Collections/emptyList()|",
+      "|java+constructor:///org/apache/maven/plugin/AbstractMojo/AbstractMojo()|",
+      "|java+method:///pl/project13/maven/git/GitCommitIdMojo/getLog()|",
+      "|java+constructor:///pl/project13/maven/git/log/MavenLoggerBridge/MavenLoggerBridge(org.apache.maven.plugin.logging.Log,boolean)|"
+    ],
+    "affectedLib": "org.apache.maven:maven-plugin-api:3.1.1",
+    "change": "UPDATED"
+  }
+]

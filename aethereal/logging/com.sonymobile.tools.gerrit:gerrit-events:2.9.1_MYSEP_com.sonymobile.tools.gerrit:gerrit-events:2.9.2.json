@@ -1,0 +1,53 @@
+[
+  {
+    "coordinatesV1": "com.sonymobile.tools.gerrit:gerrit-events:2.9.2",
+    "coordinatesV2": "com.sonymobile.tools.gerrit:gerrit-events:2.9.1",
+    "caller": "|java+method:///com/sonymobile/tools/gerrit/gerritevents/ssh/SshUtil/parsePrivateKeyFile(java.io.File)|",
+    "called": "|java+method:///com/sshtools/j2ssh/transport/publickey/SshPrivateKeyFile/parse(java.io.File)|",
+    "v1Body": [
+      "|java+method:///com/sshtools/j2ssh/transport/publickey/SshPrivateKeyFile/parse(java.io.File)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/sshtools/publickey/SshPrivateKeyFileFactory/parse(byte%5B%5D)|",
+      "|java+method:///java/nio/file/Files/readAllBytes(java.nio.file.Path)|",
+      "|java+method:///java/io/File/toPath()|"
+    ],
+    "affectedLib": "sshtools:j2ssh-core:0.2.2",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.sonymobile.tools.gerrit:gerrit-events:2.9.2",
+    "coordinatesV2": "com.sonymobile.tools.gerrit:gerrit-events:2.9.1",
+    "caller": "|java+method:///com/sonymobile/tools/gerrit/gerritevents/ssh/SshUtil/checkPassPhrase(java.io.File,java.lang.String)|",
+    "called": "|java+method:///com/sshtools/j2ssh/transport/publickey/SshPrivateKeyFile/toPrivateKey(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///com/sonymobile/tools/gerrit/gerritevents/ssh/SshUtil/parsePrivateKeyFile(java.io.File)|",
+      "|java+method:///com/sshtools/j2ssh/transport/publickey/SshPrivateKeyFile/toPrivateKey(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/String/trim()|",
+      "|java+method:///com/sonymobile/tools/gerrit/gerritevents/ssh/SshUtil/parsePrivateKeyFile(java.io.File)|",
+      "|java+method:///java/lang/String/isEmpty()|",
+      "|java+method:///com/sshtools/publickey/SshPrivateKeyFile/toKeyPair(java.lang.String)|",
+      "|java+method:///com/sshtools/publickey/SshPrivateKeyFile/isPassphraseProtected()|"
+    ],
+    "affectedLib": "sshtools:j2ssh-core:0.2.2",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.sonymobile.tools.gerrit:gerrit-events:2.9.1",
+    "coordinatesV2": "com.sonymobile.tools.gerrit:gerrit-events:2.9.2",
+    "caller": "|java+method:///com/sonymobile/tools/gerrit/gerritevents/ssh/SshUtil/parsePrivateKeyFile(java.io.File)|",
+    "called": "|java+method:///com/sshtools/publickey/SshPrivateKeyFileFactory/parse(byte%5B%5D)|",
+    "v1Body": [
+      "|java+method:///com/sshtools/j2ssh/transport/publickey/SshPrivateKeyFile/parse(java.io.File)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/sshtools/publickey/SshPrivateKeyFileFactory/parse(byte%5B%5D)|",
+      "|java+method:///java/nio/file/Files/readAllBytes(java.nio.file.Path)|",
+      "|java+method:///java/io/File/toPath()|"
+    ],
+    "affectedLib": "com.sshtools:j2ssh-maverick:1.5.2",
+    "change": "ADDED"
+  }
+]

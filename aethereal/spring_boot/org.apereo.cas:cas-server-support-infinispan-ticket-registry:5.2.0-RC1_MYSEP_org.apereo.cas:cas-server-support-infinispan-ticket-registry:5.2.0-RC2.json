@@ -1,0 +1,29 @@
+[
+  {
+    "coordinatesV1": "org.apereo.cas:cas-server-support-infinispan-ticket-registry:5.2.0-RC1",
+    "coordinatesV2": "org.apereo.cas:cas-server-support-infinispan-ticket-registry:5.2.0-RC2",
+    "caller": "|java+method:///org/apereo/cas/ticket/registry/config/InfinispanTicketRegistryConfiguration/cacheManager()|",
+    "called": "|java+constructor:///org/infinispan/manager/DefaultCacheManager/DefaultCacheManager(java.io.InputStream)|",
+    "v1Body": [
+      "|java+method:///org/apereo/cas/configuration/model/support/infinispan/InfinispanProperties/getConfigLocation()|",
+      "|java+method:///org/apereo/cas/configuration/model/core/ticket/registry/TicketRegistryProperties/getInfinispan()|",
+      "|java+method:///org/apereo/cas/configuration/model/core/util/TicketProperties/getRegistry()|",
+      "|java+method:///org/apereo/cas/configuration/CasConfigurationProperties/getTicket()|",
+      "|java+constructor:///org/infinispan/manager/DefaultCacheManager/DefaultCacheManager(java.io.InputStream)|",
+      "|java+method:///com/google/common/base/Throwables/propagate(java.lang.Throwable)|",
+      "|java+method:///org/springframework/core/io/Resource/getInputStream()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apereo/cas/configuration/model/support/infinispan/InfinispanProperties/getConfigLocation()|",
+      "|java+method:///org/springframework/core/io/Resource/getInputStream()|",
+      "|java+method:///org/apereo/cas/configuration/model/core/ticket/registry/TicketRegistryProperties/getInfinispan()|",
+      "|java+method:///org/apereo/cas/configuration/model/core/util/TicketProperties/getRegistry()|",
+      "|java+method:///org/apereo/cas/configuration/CasConfigurationProperties/getTicket()|",
+      "|java+constructor:///org/infinispan/manager/DefaultCacheManager/DefaultCacheManager(java.io.InputStream)|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/lang/Exception/getMessage()|"
+    ],
+    "affectedLib": "org.infinispan:infinispan-core:9.0.3.Final",
+    "change": "UPDATED"
+  }
+]

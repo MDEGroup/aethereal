@@ -1,0 +1,221 @@
+[
+  {
+    "coordinatesV1": "org.jclouds.karaf:commands:1.2.2",
+    "coordinatesV2": "org.jclouds.karaf:commands:1.3.1",
+    "caller": "|java+method:///org/jclouds/karaf/commands/blobstore/BlobStoreCommandSupport/getBlobStore()|",
+    "called": "|java+method:///org/jclouds/karaf/utils/blobstore/BlobStoreHelper/getBlobStore(java.lang.String,java.util.List)|",
+    "v1Body": [
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/util/List/get(int)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///org/jclouds/rest/RestContext/getId()|",
+      "|java+method:///org/jclouds/blobstore/BlobStoreContext/getProviderSpecificContext()|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/length()|",
+      "|java+method:///org/jclouds/blobstore/BlobStore/getContext()|",
+      "|java+method:///java/util/List/iterator()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/jclouds/karaf/utils/blobstore/BlobStoreHelper/getBlobStore(java.lang.String,java.util.List)|"
+    ],
+    "affectedLib": "org.jclouds.karaf:utils:1.3.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.jclouds.karaf:commands:1.2.2",
+    "coordinatesV2": "org.jclouds.karaf:commands:1.3.1",
+    "caller": "|java+method:///org/jclouds/karaf/commands/compute/completer/ComputeCompleterSupport/getService()|",
+    "called": "|java+method:///org/jclouds/karaf/utils/compute/ComputeHelper/getComputeService(java.lang.String,java.util.List)|",
+    "v1Body": [
+      "|java+method:///org/jclouds/karaf/commands/compute/ComputeHelper/getComputeService(java.lang.String,java.util.List)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/jclouds/karaf/utils/compute/ComputeHelper/getComputeService(java.lang.String,java.util.List)|"
+    ],
+    "affectedLib": "org.jclouds.karaf:utils:1.3.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.jclouds.karaf:commands:1.2.2",
+    "coordinatesV2": "org.jclouds.karaf:commands:1.3.1",
+    "caller": "|java+method:///org/jclouds/karaf/commands/compute/ComputeCommandSupport/getComputeService()|",
+    "called": "|java+method:///org/jclouds/karaf/utils/compute/ComputeHelper/getComputeService(java.lang.String,java.util.List)|",
+    "v1Body": [
+      "|java+method:///org/jclouds/karaf/commands/compute/ComputeHelper/getComputeService(java.lang.String,java.util.List)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/jclouds/karaf/utils/compute/ComputeHelper/getComputeService(java.lang.String,java.util.List)|"
+    ],
+    "affectedLib": "org.jclouds.karaf:utils:1.3.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.jclouds.karaf:commands:1.2.2",
+    "coordinatesV2": "org.jclouds.karaf:commands:1.3.1",
+    "caller": "|java+method:///org/jclouds/karaf/commands/compute/NodeCreateCommand/doExecute()|",
+    "called": "|java+method:///org/jclouds/compute/options/TemplateOptions/as(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/jclouds/ec2/compute/options/EC2TemplateOptions/keyPair(java.lang.String)|",
+      "|java+method:///org/jclouds/karaf/commands/compute/NodeCreateCommand/getComputeService()|",
+      "|java+method:///org/jclouds/compute/ComputeService/createNodesInGroup(java.lang.String,int,org.jclouds.compute.domain.Template)|",
+      "|java+method:///org/jclouds/compute/options/TemplateOptions/as(java.lang.Class)|",
+      "|java+method:///java/util/Set/isEmpty()|",
+      "|java+method:///org/jclouds/ec2/compute/options/EC2TemplateOptions/securityGroups(java.lang.Iterable)|",
+      "|java+method:///org/jclouds/compute/domain/TemplateBuilder/any()|",
+      "|java+method:///org/jclouds/compute/domain/TemplateBuilder/build()|",
+      "|java+method:///org/jclouds/compute/RunNodesException/getMessage()|",
+      "|java+method:///org/jclouds/compute/domain/TemplateBuilder/imageId(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/io/PrintStream/println(java.lang.String)|",
+      "|java+method:///org/jclouds/compute/domain/TemplateBuilder/hardwareId(java.lang.String)|",
+      "|java+method:///org/jclouds/ec2/compute/options/EC2TemplateOptions/noKeyPair()|",
+      "|java+method:///org/jclouds/compute/domain/TemplateBuilder/smallest()|",
+      "|java+method:///org/jclouds/compute/domain/TemplateBuilder/biggest()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/jclouds/compute/ComputeService/templateBuilder()|",
+      "|java+method:///org/jclouds/karaf/commands/compute/ComputeHelper/printNodes(java.util.Set,java.lang.String,java.io.PrintStream)|",
+      "|java+method:///org/jclouds/compute/domain/TemplateBuilder/fastest()|",
+      "|java+method:///org/jclouds/compute/domain/Template/getOptions()|",
+      "|java+method:///org/jclouds/compute/domain/TemplateBuilder/locationId(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Integer/intValue()|",
+      "|java+method:///org/jclouds/ec2/compute/options/EC2TemplateOptions/keyPair(java.lang.String)|",
+      "|java+method:///org/jclouds/compute/ComputeService/createNodesInGroup(java.lang.String,int,org.jclouds.compute.domain.Template)|",
+      "|java+method:///org/jclouds/compute/options/TemplateOptions/as(java.lang.Class)|",
+      "|java+method:///java/util/Set/isEmpty()|",
+      "|java+method:///org/jclouds/ec2/compute/options/EC2TemplateOptions/securityGroups(java.lang.Iterable)|",
+      "|java+method:///org/jclouds/compute/domain/TemplateBuilder/fastest()|",
+      "|java+method:///org/jclouds/compute/domain/TemplateBuilder/any()|",
+      "|java+method:///org/jclouds/compute/domain/TemplateBuilder/build()|",
+      "|java+method:///org/jclouds/compute/RunNodesException/getMessage()|",
+      "|java+method:///org/jclouds/compute/domain/TemplateBuilder/imageId(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/io/PrintStream/println(java.lang.String)|",
+      "|java+method:///org/jclouds/compute/domain/TemplateBuilder/hardwareId(java.lang.String)|",
+      "|java+method:///org/jclouds/ec2/compute/options/EC2TemplateOptions/noKeyPair()|",
+      "|java+method:///org/jclouds/compute/domain/TemplateBuilder/smallest()|",
+      "|java+method:///org/jclouds/compute/domain/TemplateBuilder/biggest()|",
+      "|java+method:///org/jclouds/karaf/commands/compute/NodeCreateCommand/printNodes(java.util.Set,java.lang.String,java.io.PrintStream)|",
+      "|java+method:///org/jclouds/karaf/commands/compute/NodeCreateCommand/getComputeService()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/jclouds/compute/ComputeService/templateBuilder()|",
+      "|java+method:///org/jclouds/compute/domain/Template/getOptions()|",
+      "|java+method:///org/jclouds/compute/domain/TemplateBuilder/locationId(java.lang.String)|"
+    ],
+    "affectedLib": "org.jclouds:jclouds-compute:1.3.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jclouds.karaf:commands:1.2.2",
+    "coordinatesV2": "org.jclouds.karaf:commands:1.3.1",
+    "caller": "|java+constructor:///org/jclouds/karaf/commands/compute/completer/ComputeCompleterSupport/ComputeCompleterSupport()|",
+    "called": "|java+constructor:///org/apache/karaf/shell/console/completer/StringsCompleter/StringsCompleter()|",
+    "v1Body": [
+      "|java+constructor:///java/util/LinkedHashSet/LinkedHashSet()|",
+      "|java+method:///java/util/concurrent/Executors/newSingleThreadExecutor()|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+constructor:///org/apache/karaf/shell/console/completer/StringsCompleter/StringsCompleter()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+constructor:///org/apache/karaf/shell/console/completer/StringsCompleter/StringsCompleter()|"
+    ],
+    "affectedLib": "org.apache.karaf.shell:org.apache.karaf.shell.console:2.2.5",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jclouds.karaf:commands:1.2.2",
+    "coordinatesV2": "org.jclouds.karaf:commands:1.3.1",
+    "caller": "|java+method:///org/jclouds/karaf/commands/compute/completer/ComputeCompleterSupport/complete(java.lang.String,int,java.util.List)|",
+    "called": "|java+method:///org/apache/karaf/shell/console/completer/StringsCompleter/complete(java.lang.String,int,java.util.List)|",
+    "v1Body": [
+      "|java+method:///java/util/SortedSet/add(java.lang.Object)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/apache/karaf/shell/console/completer/StringsCompleter/complete(java.lang.String,int,java.util.List)|",
+      "|java+method:///org/apache/karaf/shell/console/completer/StringsCompleter/getStrings()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/Set/iterator()|",
+      "|java+method:///java/lang/String/startsWith(java.lang.String)|",
+      "|java+method:///org/jclouds/karaf/commands/compute/completer/ComputeCompleterSupport/updateCache()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/SortedSet/add(java.lang.Object)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/apache/karaf/shell/console/completer/StringsCompleter/complete(java.lang.String,int,java.util.List)|",
+      "|java+method:///org/apache/karaf/shell/console/completer/StringsCompleter/getStrings()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/Set/iterator()|",
+      "|java+method:///java/lang/String/startsWith(java.lang.String)|",
+      "|java+method:///java/util/SortedSet/clear()|"
+    ],
+    "affectedLib": "org.apache.karaf.shell:org.apache.karaf.shell.console:2.2.5",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jclouds.karaf:commands:1.2.2",
+    "coordinatesV2": "org.jclouds.karaf:commands:1.3.1",
+    "caller": "|java+method:///org/jclouds/karaf/commands/compute/NodeCreateCommand/doExecute()|",
+    "called": "|java+method:///org/jclouds/ec2/compute/options/EC2TemplateOptions/securityGroups(java.lang.Iterable)|",
+    "v1Body": [
+      "|java+method:///org/jclouds/ec2/compute/options/EC2TemplateOptions/keyPair(java.lang.String)|",
+      "|java+method:///org/jclouds/karaf/commands/compute/NodeCreateCommand/getComputeService()|",
+      "|java+method:///org/jclouds/compute/ComputeService/createNodesInGroup(java.lang.String,int,org.jclouds.compute.domain.Template)|",
+      "|java+method:///org/jclouds/compute/options/TemplateOptions/as(java.lang.Class)|",
+      "|java+method:///java/util/Set/isEmpty()|",
+      "|java+method:///org/jclouds/ec2/compute/options/EC2TemplateOptions/securityGroups(java.lang.Iterable)|",
+      "|java+method:///org/jclouds/compute/domain/TemplateBuilder/any()|",
+      "|java+method:///org/jclouds/compute/domain/TemplateBuilder/build()|",
+      "|java+method:///org/jclouds/compute/RunNodesException/getMessage()|",
+      "|java+method:///org/jclouds/compute/domain/TemplateBuilder/imageId(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/io/PrintStream/println(java.lang.String)|",
+      "|java+method:///org/jclouds/compute/domain/TemplateBuilder/hardwareId(java.lang.String)|",
+      "|java+method:///org/jclouds/ec2/compute/options/EC2TemplateOptions/noKeyPair()|",
+      "|java+method:///org/jclouds/compute/domain/TemplateBuilder/smallest()|",
+      "|java+method:///org/jclouds/compute/domain/TemplateBuilder/biggest()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/jclouds/compute/ComputeService/templateBuilder()|",
+      "|java+method:///org/jclouds/karaf/commands/compute/ComputeHelper/printNodes(java.util.Set,java.lang.String,java.io.PrintStream)|",
+      "|java+method:///org/jclouds/compute/domain/TemplateBuilder/fastest()|",
+      "|java+method:///org/jclouds/compute/domain/Template/getOptions()|",
+      "|java+method:///org/jclouds/compute/domain/TemplateBuilder/locationId(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Integer/intValue()|",
+      "|java+method:///org/jclouds/ec2/compute/options/EC2TemplateOptions/keyPair(java.lang.String)|",
+      "|java+method:///org/jclouds/compute/ComputeService/createNodesInGroup(java.lang.String,int,org.jclouds.compute.domain.Template)|",
+      "|java+method:///org/jclouds/compute/options/TemplateOptions/as(java.lang.Class)|",
+      "|java+method:///java/util/Set/isEmpty()|",
+      "|java+method:///org/jclouds/ec2/compute/options/EC2TemplateOptions/securityGroups(java.lang.Iterable)|",
+      "|java+method:///org/jclouds/compute/domain/TemplateBuilder/fastest()|",
+      "|java+method:///org/jclouds/compute/domain/TemplateBuilder/any()|",
+      "|java+method:///org/jclouds/compute/domain/TemplateBuilder/build()|",
+      "|java+method:///org/jclouds/compute/RunNodesException/getMessage()|",
+      "|java+method:///org/jclouds/compute/domain/TemplateBuilder/imageId(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/io/PrintStream/println(java.lang.String)|",
+      "|java+method:///org/jclouds/compute/domain/TemplateBuilder/hardwareId(java.lang.String)|",
+      "|java+method:///org/jclouds/ec2/compute/options/EC2TemplateOptions/noKeyPair()|",
+      "|java+method:///org/jclouds/compute/domain/TemplateBuilder/smallest()|",
+      "|java+method:///org/jclouds/compute/domain/TemplateBuilder/biggest()|",
+      "|java+method:///org/jclouds/karaf/commands/compute/NodeCreateCommand/printNodes(java.util.Set,java.lang.String,java.io.PrintStream)|",
+      "|java+method:///org/jclouds/karaf/commands/compute/NodeCreateCommand/getComputeService()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/jclouds/compute/ComputeService/templateBuilder()|",
+      "|java+method:///org/jclouds/compute/domain/Template/getOptions()|",
+      "|java+method:///org/jclouds/compute/domain/TemplateBuilder/locationId(java.lang.String)|"
+    ],
+    "affectedLib": "org.jclouds.api:ec2:1.3.1",
+    "change": "UPDATED"
+  }
+]

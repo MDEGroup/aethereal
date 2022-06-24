@@ -1,0 +1,95 @@
+[
+  {
+    "coordinatesV1": "org.mule:mule-core:2.0.1",
+    "coordinatesV2": "org.mule:mule-core:2.0.2",
+    "caller": "|java+initializer:///org/mule/lifecycle/GenericLifecycleManager/GenericLifecycleManager$initializer|",
+    "called": "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|",
+    "v1Body": [
+      "|java+constructor:///org/mule/lifecycle/phases/NotInLifecyclePhase/NotInLifecyclePhase()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/mule/lifecycle/phases/NotInLifecyclePhase/NotInLifecyclePhase()|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:jcl104-over-slf4j:1.5.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.mule:mule-core:2.0.1",
+    "coordinatesV2": "org.mule:mule-core:2.0.2",
+    "caller": "|java+constructor:///org/mule/registry/AbstractRegistry/AbstractRegistry(java.lang.String)|",
+    "called": "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/mule/config/i18n/CoreMessages/objectIsNull(java.lang.String)|",
+      "|java+constructor:///edu/emory/mathcs/backport/java/util/concurrent/ConcurrentHashMap/ConcurrentHashMap(int)|",
+      "|java+constructor:///java/lang/NullPointerException/NullPointerException(java.lang.String)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///org/mule/registry/AbstractRegistry/createLifecycleManager()|",
+      "|java+method:///org/mule/config/i18n/Message/getMessage()|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/mule/config/i18n/CoreMessages/objectIsNull(java.lang.String)|",
+      "|java+constructor:///edu/emory/mathcs/backport/java/util/concurrent/ConcurrentHashMap/ConcurrentHashMap(int)|",
+      "|java+constructor:///org/mule/api/MuleRuntimeException/MuleRuntimeException(org.mule.config.i18n.Message)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///org/mule/registry/AbstractRegistry/createLifecycleManager()|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:jcl104-over-slf4j:1.5.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.mule:mule-core:2.0.1",
+    "coordinatesV2": "org.mule:mule-core:2.0.2",
+    "caller": "|java+initializer:///org/mule/DefaultMuleMessage/DefaultMuleMessage$initializer|",
+    "called": "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///org/mule/util/ClassUtils/loadClass(java.lang.String,java.lang.Class)|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:jcl104-over-slf4j:1.5.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.mule:mule-core:2.0.1",
+    "coordinatesV2": "org.mule:mule-core:2.0.2",
+    "caller": "|java+constructor:///org/mule/routing/filters/RegExFilter/RegExFilter(java.lang.String)|",
+    "called": "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///java/util/regex/Pattern/compile(java.lang.String)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/regex/Pattern/compile(java.lang.String)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:jcl104-over-slf4j:1.5.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.mule:mule-core:2.0.1",
+    "coordinatesV2": "org.mule:mule-core:2.0.2",
+    "caller": "|java+constructor:///org/mule/routing/filters/RegExFilter/RegExFilter()|",
+    "called": "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|",
+    "v1Body": [
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:jcl104-over-slf4j:1.5.0",
+    "change": "UPDATED"
+  }
+]

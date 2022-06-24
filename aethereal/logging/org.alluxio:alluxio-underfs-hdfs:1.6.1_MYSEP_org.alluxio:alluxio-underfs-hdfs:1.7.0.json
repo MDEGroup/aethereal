@@ -1,0 +1,376 @@
+[
+  {
+    "coordinatesV1": "org.alluxio:alluxio-underfs-hdfs:1.7.0",
+    "coordinatesV2": "org.alluxio:alluxio-underfs-hdfs:1.6.1",
+    "caller": "|java+method:///alluxio/underfs/hdfs/HdfsUnderFileSystemFactory/create(java.lang.String,alluxio.underfs.UnderFileSystemConfiguration)|",
+    "called": "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///alluxio/underfs/hdfs/HdfsUnderFileSystem/createInstance(alluxio.AlluxioURI,alluxio.underfs.UnderFileSystemConfiguration)|",
+      "|java+constructor:///alluxio/AlluxioURI/AlluxioURI(java.lang.String)|",
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///alluxio/underfs/hdfs/HdfsUnderFileSystem/createInstance(alluxio.AlluxioURI,alluxio.underfs.UnderFileSystemConfiguration)|",
+      "|java+constructor:///alluxio/AlluxioURI/AlluxioURI(java.lang.String)|",
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|"
+    ],
+    "affectedLib": "com.google.guava:guava:14.0.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.alluxio:alluxio-underfs-hdfs:1.7.0",
+    "coordinatesV2": "org.alluxio:alluxio-underfs-hdfs:1.6.1",
+    "caller": "|java+method:///alluxio/underfs/hdfs/HdfsUnderFileSystem/listStatus(java.lang.String)|",
+    "called": "|java+constructor:///alluxio/underfs/UfsFileStatus/UfsFileStatus(java.lang.String,long,long,java.lang.String,java.lang.String,short)|",
+    "v1Body": [
+      "|java+method:///org/apache/hadoop/fs/Path/getName()|",
+      "|java+method:///org/apache/hadoop/fs/FileStatus/getPath()|",
+      "|java+method:///org/apache/hadoop/fs/FileStatus/getModificationTime()|",
+      "|java+method:///org/apache/hadoop/fs/FileStatus/getOwner()|",
+      "|java+method:///org/apache/hadoop/fs/FileStatus/getGroup()|",
+      "|java+method:///org/apache/hadoop/fs/permission/FsPermission/toShort()|",
+      "|java+method:///org/apache/hadoop/fs/FileStatus/isDir()|",
+      "|java+method:///org/apache/hadoop/fs/FileStatus/getLen()|",
+      "|java+constructor:///alluxio/underfs/UfsDirectoryStatus/UfsDirectoryStatus(java.lang.String,java.lang.String,java.lang.String,short)|",
+      "|java+method:///org/apache/hadoop/fs/FileStatus/getPermission()|",
+      "|java+constructor:///alluxio/underfs/UfsFileStatus/UfsFileStatus(java.lang.String,long,long,java.lang.String,java.lang.String,short)|",
+      "|java+method:///alluxio/underfs/hdfs/HdfsUnderFileSystem/listStatusInternal(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/hadoop/fs/Path/getName()|",
+      "|java+method:///org/apache/hadoop/fs/FileStatus/getPath()|",
+      "|java+method:///org/apache/hadoop/fs/FileStatus/getModificationTime()|",
+      "|java+method:///org/apache/hadoop/fs/FileStatus/getOwner()|",
+      "|java+method:///alluxio/underfs/hdfs/HdfsUnderFileSystem/listStatusInternal(java.lang.String)|",
+      "|java+constructor:///alluxio/underfs/UfsFileStatus/UfsFileStatus(java.lang.String,java.lang.String,long,long,java.lang.String,java.lang.String,short)|",
+      "|java+method:///alluxio/util/UnderFileSystemUtils/approximateContentHash(long,long)|",
+      "|java+method:///org/apache/hadoop/fs/FileStatus/getGroup()|",
+      "|java+method:///org/apache/hadoop/fs/permission/FsPermission/toShort()|",
+      "|java+method:///org/apache/hadoop/fs/FileStatus/isDir()|",
+      "|java+method:///org/apache/hadoop/fs/FileStatus/getLen()|",
+      "|java+constructor:///alluxio/underfs/UfsDirectoryStatus/UfsDirectoryStatus(java.lang.String,java.lang.String,java.lang.String,short)|",
+      "|java+method:///org/apache/hadoop/fs/FileStatus/getPermission()|"
+    ],
+    "affectedLib": "org.alluxio:alluxio-core-common:1.6.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.alluxio:alluxio-underfs-hdfs:1.7.0",
+    "coordinatesV2": "org.alluxio:alluxio-underfs-hdfs:1.6.1",
+    "caller": "|java+method:///alluxio/underfs/hdfs/HdfsUnderFileSystemFactory/create(java.lang.String,alluxio.underfs.UnderFileSystemConfiguration)|",
+    "called": "|java+constructor:///alluxio/AlluxioURI/AlluxioURI(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///alluxio/underfs/hdfs/HdfsUnderFileSystem/createInstance(alluxio.AlluxioURI,alluxio.underfs.UnderFileSystemConfiguration)|",
+      "|java+constructor:///alluxio/AlluxioURI/AlluxioURI(java.lang.String)|",
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///alluxio/underfs/hdfs/HdfsUnderFileSystem/createInstance(alluxio.AlluxioURI,alluxio.underfs.UnderFileSystemConfiguration)|",
+      "|java+constructor:///alluxio/AlluxioURI/AlluxioURI(java.lang.String)|",
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|"
+    ],
+    "affectedLib": "org.alluxio:alluxio-core-common:1.6.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.alluxio:alluxio-underfs-hdfs:1.7.0",
+    "coordinatesV2": "org.alluxio:alluxio-underfs-hdfs:1.6.1",
+    "caller": "|java+method:///alluxio/underfs/hdfs/HdfsUnderFileSystem/getFileStatus(java.lang.String)|",
+    "called": "|java+constructor:///alluxio/underfs/UfsFileStatus/UfsFileStatus(java.lang.String,long,long,java.lang.String,java.lang.String,short)|",
+    "v1Body": [
+      "|java+method:///org/apache/hadoop/fs/FileStatus/getModificationTime()|",
+      "|java+method:///org/apache/hadoop/fs/FileSystem/getFileStatus(org.apache.hadoop.fs.Path)|",
+      "|java+method:///org/apache/hadoop/fs/FileStatus/getOwner()|",
+      "|java+method:///org/apache/hadoop/fs/FileStatus/getLen()|",
+      "|java+method:///org/apache/hadoop/fs/FileStatus/getPermission()|",
+      "|java+constructor:///alluxio/underfs/UfsFileStatus/UfsFileStatus(java.lang.String,long,long,java.lang.String,java.lang.String,short)|",
+      "|java+method:///org/apache/hadoop/fs/FileStatus/getGroup()|",
+      "|java+method:///org/apache/hadoop/fs/permission/FsPermission/toShort()|",
+      "|java+constructor:///org/apache/hadoop/fs/Path/Path(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/hadoop/fs/FileStatus/getModificationTime()|",
+      "|java+method:///org/apache/hadoop/fs/FileSystem/getFileStatus(org.apache.hadoop.fs.Path)|",
+      "|java+method:///org/apache/hadoop/fs/FileStatus/getOwner()|",
+      "|java+method:///org/apache/hadoop/fs/FileStatus/getLen()|",
+      "|java+method:///org/apache/hadoop/fs/FileStatus/getPermission()|",
+      "|java+constructor:///alluxio/underfs/UfsFileStatus/UfsFileStatus(java.lang.String,java.lang.String,long,long,java.lang.String,java.lang.String,short)|",
+      "|java+method:///alluxio/util/UnderFileSystemUtils/approximateContentHash(long,long)|",
+      "|java+method:///org/apache/hadoop/fs/FileStatus/getGroup()|",
+      "|java+method:///org/apache/hadoop/fs/permission/FsPermission/toShort()|",
+      "|java+constructor:///org/apache/hadoop/fs/Path/Path(java.lang.String)|"
+    ],
+    "affectedLib": "org.alluxio:alluxio-core-common:1.6.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.alluxio:alluxio-underfs-hdfs:1.7.0",
+    "coordinatesV2": "org.alluxio:alluxio-underfs-hdfs:1.6.1",
+    "caller": "|java+method:///alluxio/underfs/hdfs/HdfsUnderFileSystem/open(java.lang.String,alluxio.underfs.options.OpenOptions)|",
+    "called": "|java+constructor:///alluxio/retry/CountingRetry/CountingRetry(int)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///org/apache/hadoop/fs/FSDataInputStream/seek(long)|",
+      "|java+method:///org/apache/hadoop/fs/FSDataInputStream/close()|",
+      "|java+method:///alluxio/underfs/options/OpenOptions/getOffset()|",
+      "|java+method:///java/io/IOException/getMessage()|",
+      "|java+constructor:///alluxio/retry/CountingRetry/CountingRetry(int)|",
+      "|java+method:///alluxio/retry/RetryPolicy/attemptRetry()|",
+      "|java+method:///org/apache/hadoop/fs/FileSystem/open(org.apache.hadoop.fs.Path)|",
+      "|java+constructor:///org/apache/hadoop/fs/Path/Path(java.lang.String)|",
+      "|java+method:///alluxio/retry/RetryPolicy/getRetryCount()|",
+      "|java+method:///java/lang/Integer/valueOf(int)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///org/apache/hadoop/fs/FSDataInputStream/seek(long)|",
+      "|java+method:///org/apache/hadoop/fs/FSDataInputStream/close()|",
+      "|java+method:///alluxio/underfs/options/OpenOptions/getOffset()|",
+      "|java+method:///java/io/IOException/getMessage()|",
+      "|java+constructor:///alluxio/retry/CountingRetry/CountingRetry(int)|",
+      "|java+constructor:///alluxio/underfs/hdfs/HdfsUnderFileInputStream/HdfsUnderFileInputStream(org.apache.hadoop.fs.FSDataInputStream)|",
+      "|java+method:///alluxio/retry/RetryPolicy/attemptRetry()|",
+      "|java+method:///org/apache/hadoop/fs/FileSystem/open(org.apache.hadoop.fs.Path)|",
+      "|java+constructor:///org/apache/hadoop/fs/Path/Path(java.lang.String)|",
+      "|java+method:///alluxio/retry/RetryPolicy/getRetryCount()|",
+      "|java+method:///java/lang/Integer/valueOf(int)|"
+    ],
+    "affectedLib": "org.alluxio:alluxio-core-common:1.6.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.alluxio:alluxio-underfs-hdfs:1.7.0",
+    "coordinatesV2": "org.alluxio:alluxio-underfs-hdfs:1.6.1",
+    "caller": "|java+constructor:///alluxio/underfs/hdfs/HdfsUnderFileSystem/HdfsUnderFileSystem(alluxio.AlluxioURI,alluxio.underfs.UnderFileSystemConfiguration,org.apache.hadoop.conf.Configuration)|",
+    "called": "|java+constructor:///alluxio/underfs/BaseUnderFileSystem/BaseUnderFileSystem(alluxio.AlluxioURI,alluxio.underfs.UnderFileSystemConfiguration)|",
+    "v1Body": [
+      "|java+method:///org/apache/hadoop/fs/Path/getFileSystem(org.apache.hadoop.conf.Configuration)|",
+      "|java+constructor:///alluxio/underfs/BaseUnderFileSystem/BaseUnderFileSystem(alluxio.AlluxioURI,alluxio.underfs.UnderFileSystemConfiguration)|",
+      "|java+method:///org/apache/hadoop/security/UserGroupInformation/setConfiguration(org.apache.hadoop.conf.Configuration)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///alluxio/AlluxioURI/toString()|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///org/apache/hadoop/fs/Path/Path(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/hadoop/conf/Configuration/getClassLoader()|",
+      "|java+method:///org/apache/hadoop/fs/Path/getFileSystem(org.apache.hadoop.conf.Configuration)|",
+      "|java+constructor:///alluxio/underfs/BaseUnderFileSystem/BaseUnderFileSystem(alluxio.AlluxioURI,alluxio.underfs.UnderFileSystemConfiguration)|",
+      "|java+method:///java/lang/Thread/setContextClassLoader(java.lang.ClassLoader)|",
+      "|java+method:///org/apache/hadoop/security/UserGroupInformation/setConfiguration(org.apache.hadoop.conf.Configuration)|",
+      "|java+method:///java/lang/Thread/currentThread()|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///alluxio/AlluxioURI/toString()|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/lang/Thread/getContextClassLoader()|",
+      "|java+constructor:///org/apache/hadoop/fs/Path/Path(java.lang.String)|"
+    ],
+    "affectedLib": "org.alluxio:alluxio-core-common:1.6.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.alluxio:alluxio-underfs-hdfs:1.7.0",
+    "coordinatesV2": "org.alluxio:alluxio-underfs-hdfs:1.6.1",
+    "caller": "|java+method:///alluxio/underfs/hdfs/HdfsUnderFileSystem/getFileLocations(java.lang.String,alluxio.underfs.options.FileLocationOptions)|",
+    "called": "|java+method:///alluxio/underfs/UnderFileSystemConfiguration/getValue(alluxio.PropertyKey)|",
+    "v1Body": [
+      "|java+method:///org/apache/hadoop/fs/FileSystem/getFileBlockLocations(org.apache.hadoop.fs.FileStatus,long,long)|",
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///alluxio/underfs/options/FileLocationOptions/getOffset()|",
+      "|java+method:///java/lang/Boolean/valueOf(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/apache/hadoop/fs/FileSystem/getFileStatus(org.apache.hadoop.fs.Path)|",
+      "|java+method:///org/apache/hadoop/fs/BlockLocation/getHosts()|",
+      "|java+method:///java/io/IOException/getMessage()|",
+      "|java+method:///java/util/Collections/addAll(java.util.Collection,java.lang.Object%5B%5D)|",
+      "|java+method:///alluxio/underfs/UnderFileSystemConfiguration/getValue(alluxio.PropertyKey)|",
+      "|java+constructor:///org/apache/hadoop/fs/Path/Path(java.lang.String)|",
+      "|java+method:///java/lang/Boolean/booleanValue()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/hadoop/fs/FileSystem/getFileBlockLocations(org.apache.hadoop.fs.FileStatus,long,long)|",
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///alluxio/underfs/options/FileLocationOptions/getOffset()|",
+      "|java+method:///java/lang/Boolean/valueOf(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/apache/hadoop/fs/BlockLocation/getHosts()|",
+      "|java+method:///java/io/IOException/getMessage()|",
+      "|java+method:///alluxio/underfs/UnderFileSystemConfiguration/getValue(alluxio.PropertyKey)|",
+      "|java+constructor:///org/apache/hadoop/fs/Path/Path(java.lang.String)|",
+      "|java+method:///java/lang/Boolean/booleanValue()|",
+      "|java+method:///java/util/Collections/addAll(java.util.Collection,java.lang.Object%5B%5D)|",
+      "|java+constructor:///org/apache/hadoop/fs/FileStatus/FileStatus(long,boolean,int,long,long,long,org.apache.hadoop.fs.permission.FsPermission,java.lang.String,java.lang.String,org.apache.hadoop.fs.Path)|"
+    ],
+    "affectedLib": "org.alluxio:alluxio-core-common:1.6.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.alluxio:alluxio-underfs-hdfs:1.6.1",
+    "coordinatesV2": "org.alluxio:alluxio-underfs-hdfs:1.7.0",
+    "caller": "|java+method:///alluxio/underfs/hdfs/HdfsUnderFileSystem/listStatus(java.lang.String)|",
+    "called": "|java+method:///org/apache/hadoop/fs/Path/getName()|",
+    "v1Body": [
+      "|java+method:///org/apache/hadoop/fs/Path/getName()|",
+      "|java+method:///org/apache/hadoop/fs/FileStatus/getPath()|",
+      "|java+method:///org/apache/hadoop/fs/FileStatus/getModificationTime()|",
+      "|java+method:///org/apache/hadoop/fs/FileStatus/getOwner()|",
+      "|java+method:///org/apache/hadoop/fs/FileStatus/getGroup()|",
+      "|java+method:///org/apache/hadoop/fs/permission/FsPermission/toShort()|",
+      "|java+method:///org/apache/hadoop/fs/FileStatus/isDir()|",
+      "|java+method:///org/apache/hadoop/fs/FileStatus/getLen()|",
+      "|java+constructor:///alluxio/underfs/UfsDirectoryStatus/UfsDirectoryStatus(java.lang.String,java.lang.String,java.lang.String,short)|",
+      "|java+method:///org/apache/hadoop/fs/FileStatus/getPermission()|",
+      "|java+constructor:///alluxio/underfs/UfsFileStatus/UfsFileStatus(java.lang.String,long,long,java.lang.String,java.lang.String,short)|",
+      "|java+method:///alluxio/underfs/hdfs/HdfsUnderFileSystem/listStatusInternal(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/hadoop/fs/Path/getName()|",
+      "|java+method:///org/apache/hadoop/fs/FileStatus/getPath()|",
+      "|java+method:///org/apache/hadoop/fs/FileStatus/getModificationTime()|",
+      "|java+method:///org/apache/hadoop/fs/FileStatus/getOwner()|",
+      "|java+method:///alluxio/underfs/hdfs/HdfsUnderFileSystem/listStatusInternal(java.lang.String)|",
+      "|java+constructor:///alluxio/underfs/UfsFileStatus/UfsFileStatus(java.lang.String,java.lang.String,long,long,java.lang.String,java.lang.String,short)|",
+      "|java+method:///alluxio/util/UnderFileSystemUtils/approximateContentHash(long,long)|",
+      "|java+method:///org/apache/hadoop/fs/FileStatus/getGroup()|",
+      "|java+method:///org/apache/hadoop/fs/permission/FsPermission/toShort()|",
+      "|java+method:///org/apache/hadoop/fs/FileStatus/isDir()|",
+      "|java+method:///org/apache/hadoop/fs/FileStatus/getLen()|",
+      "|java+constructor:///alluxio/underfs/UfsDirectoryStatus/UfsDirectoryStatus(java.lang.String,java.lang.String,java.lang.String,short)|",
+      "|java+method:///org/apache/hadoop/fs/FileStatus/getPermission()|"
+    ],
+    "affectedLib": "org.apache.hadoop:hadoop-common:2.2.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.alluxio:alluxio-underfs-hdfs:1.6.1",
+    "coordinatesV2": "org.alluxio:alluxio-underfs-hdfs:1.7.0",
+    "caller": "|java+method:///alluxio/underfs/hdfs/HdfsUnderFileSystem/getFileStatus(java.lang.String)|",
+    "called": "|java+constructor:///org/apache/hadoop/fs/Path/Path(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/apache/hadoop/fs/FileStatus/getModificationTime()|",
+      "|java+method:///org/apache/hadoop/fs/FileSystem/getFileStatus(org.apache.hadoop.fs.Path)|",
+      "|java+method:///org/apache/hadoop/fs/FileStatus/getOwner()|",
+      "|java+method:///org/apache/hadoop/fs/FileStatus/getLen()|",
+      "|java+method:///org/apache/hadoop/fs/FileStatus/getPermission()|",
+      "|java+constructor:///alluxio/underfs/UfsFileStatus/UfsFileStatus(java.lang.String,long,long,java.lang.String,java.lang.String,short)|",
+      "|java+method:///org/apache/hadoop/fs/FileStatus/getGroup()|",
+      "|java+method:///org/apache/hadoop/fs/permission/FsPermission/toShort()|",
+      "|java+constructor:///org/apache/hadoop/fs/Path/Path(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/hadoop/fs/FileStatus/getModificationTime()|",
+      "|java+method:///org/apache/hadoop/fs/FileSystem/getFileStatus(org.apache.hadoop.fs.Path)|",
+      "|java+method:///org/apache/hadoop/fs/FileStatus/getOwner()|",
+      "|java+method:///org/apache/hadoop/fs/FileStatus/getLen()|",
+      "|java+method:///org/apache/hadoop/fs/FileStatus/getPermission()|",
+      "|java+constructor:///alluxio/underfs/UfsFileStatus/UfsFileStatus(java.lang.String,java.lang.String,long,long,java.lang.String,java.lang.String,short)|",
+      "|java+method:///alluxio/util/UnderFileSystemUtils/approximateContentHash(long,long)|",
+      "|java+method:///org/apache/hadoop/fs/FileStatus/getGroup()|",
+      "|java+method:///org/apache/hadoop/fs/permission/FsPermission/toShort()|",
+      "|java+constructor:///org/apache/hadoop/fs/Path/Path(java.lang.String)|"
+    ],
+    "affectedLib": "org.apache.hadoop:hadoop-common:2.2.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.alluxio:alluxio-underfs-hdfs:1.6.1",
+    "coordinatesV2": "org.alluxio:alluxio-underfs-hdfs:1.7.0",
+    "caller": "|java+method:///alluxio/underfs/hdfs/HdfsUnderFileSystem/open(java.lang.String,alluxio.underfs.options.OpenOptions)|",
+    "called": "|java+method:///org/apache/hadoop/fs/FileSystem/open(org.apache.hadoop.fs.Path)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///org/apache/hadoop/fs/FSDataInputStream/seek(long)|",
+      "|java+method:///org/apache/hadoop/fs/FSDataInputStream/close()|",
+      "|java+method:///alluxio/underfs/options/OpenOptions/getOffset()|",
+      "|java+method:///java/io/IOException/getMessage()|",
+      "|java+constructor:///alluxio/retry/CountingRetry/CountingRetry(int)|",
+      "|java+method:///alluxio/retry/RetryPolicy/attemptRetry()|",
+      "|java+method:///org/apache/hadoop/fs/FileSystem/open(org.apache.hadoop.fs.Path)|",
+      "|java+constructor:///org/apache/hadoop/fs/Path/Path(java.lang.String)|",
+      "|java+method:///alluxio/retry/RetryPolicy/getRetryCount()|",
+      "|java+method:///java/lang/Integer/valueOf(int)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///org/apache/hadoop/fs/FSDataInputStream/seek(long)|",
+      "|java+method:///org/apache/hadoop/fs/FSDataInputStream/close()|",
+      "|java+method:///alluxio/underfs/options/OpenOptions/getOffset()|",
+      "|java+method:///java/io/IOException/getMessage()|",
+      "|java+constructor:///alluxio/retry/CountingRetry/CountingRetry(int)|",
+      "|java+constructor:///alluxio/underfs/hdfs/HdfsUnderFileInputStream/HdfsUnderFileInputStream(org.apache.hadoop.fs.FSDataInputStream)|",
+      "|java+method:///alluxio/retry/RetryPolicy/attemptRetry()|",
+      "|java+method:///org/apache/hadoop/fs/FileSystem/open(org.apache.hadoop.fs.Path)|",
+      "|java+constructor:///org/apache/hadoop/fs/Path/Path(java.lang.String)|",
+      "|java+method:///alluxio/retry/RetryPolicy/getRetryCount()|",
+      "|java+method:///java/lang/Integer/valueOf(int)|"
+    ],
+    "affectedLib": "org.apache.hadoop:hadoop-common:2.2.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.alluxio:alluxio-underfs-hdfs:1.6.1",
+    "coordinatesV2": "org.alluxio:alluxio-underfs-hdfs:1.7.0",
+    "caller": "|java+constructor:///alluxio/underfs/hdfs/HdfsUnderFileSystem/HdfsUnderFileSystem(alluxio.AlluxioURI,alluxio.underfs.UnderFileSystemConfiguration,org.apache.hadoop.conf.Configuration)|",
+    "called": "|java+constructor:///org/apache/hadoop/fs/Path/Path(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/apache/hadoop/fs/Path/getFileSystem(org.apache.hadoop.conf.Configuration)|",
+      "|java+constructor:///alluxio/underfs/BaseUnderFileSystem/BaseUnderFileSystem(alluxio.AlluxioURI,alluxio.underfs.UnderFileSystemConfiguration)|",
+      "|java+method:///org/apache/hadoop/security/UserGroupInformation/setConfiguration(org.apache.hadoop.conf.Configuration)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///alluxio/AlluxioURI/toString()|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///org/apache/hadoop/fs/Path/Path(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/hadoop/conf/Configuration/getClassLoader()|",
+      "|java+method:///org/apache/hadoop/fs/Path/getFileSystem(org.apache.hadoop.conf.Configuration)|",
+      "|java+constructor:///alluxio/underfs/BaseUnderFileSystem/BaseUnderFileSystem(alluxio.AlluxioURI,alluxio.underfs.UnderFileSystemConfiguration)|",
+      "|java+method:///java/lang/Thread/setContextClassLoader(java.lang.ClassLoader)|",
+      "|java+method:///org/apache/hadoop/security/UserGroupInformation/setConfiguration(org.apache.hadoop.conf.Configuration)|",
+      "|java+method:///java/lang/Thread/currentThread()|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///alluxio/AlluxioURI/toString()|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/lang/Thread/getContextClassLoader()|",
+      "|java+constructor:///org/apache/hadoop/fs/Path/Path(java.lang.String)|"
+    ],
+    "affectedLib": "org.apache.hadoop:hadoop-common:2.2.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.alluxio:alluxio-underfs-hdfs:1.6.1",
+    "coordinatesV2": "org.alluxio:alluxio-underfs-hdfs:1.7.0",
+    "caller": "|java+method:///alluxio/underfs/hdfs/HdfsUnderFileSystem/getFileLocations(java.lang.String,alluxio.underfs.options.FileLocationOptions)|",
+    "called": "|java+constructor:///org/apache/hadoop/fs/Path/Path(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/apache/hadoop/fs/FileSystem/getFileBlockLocations(org.apache.hadoop.fs.FileStatus,long,long)|",
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///alluxio/underfs/options/FileLocationOptions/getOffset()|",
+      "|java+method:///java/lang/Boolean/valueOf(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/apache/hadoop/fs/FileSystem/getFileStatus(org.apache.hadoop.fs.Path)|",
+      "|java+method:///org/apache/hadoop/fs/BlockLocation/getHosts()|",
+      "|java+method:///java/io/IOException/getMessage()|",
+      "|java+method:///java/util/Collections/addAll(java.util.Collection,java.lang.Object%5B%5D)|",
+      "|java+method:///alluxio/underfs/UnderFileSystemConfiguration/getValue(alluxio.PropertyKey)|",
+      "|java+constructor:///org/apache/hadoop/fs/Path/Path(java.lang.String)|",
+      "|java+method:///java/lang/Boolean/booleanValue()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/hadoop/fs/FileSystem/getFileBlockLocations(org.apache.hadoop.fs.FileStatus,long,long)|",
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///alluxio/underfs/options/FileLocationOptions/getOffset()|",
+      "|java+method:///java/lang/Boolean/valueOf(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/apache/hadoop/fs/BlockLocation/getHosts()|",
+      "|java+method:///java/io/IOException/getMessage()|",
+      "|java+method:///alluxio/underfs/UnderFileSystemConfiguration/getValue(alluxio.PropertyKey)|",
+      "|java+constructor:///org/apache/hadoop/fs/Path/Path(java.lang.String)|",
+      "|java+method:///java/lang/Boolean/booleanValue()|",
+      "|java+method:///java/util/Collections/addAll(java.util.Collection,java.lang.Object%5B%5D)|",
+      "|java+constructor:///org/apache/hadoop/fs/FileStatus/FileStatus(long,boolean,int,long,long,long,org.apache.hadoop.fs.permission.FsPermission,java.lang.String,java.lang.String,org.apache.hadoop.fs.Path)|"
+    ],
+    "affectedLib": "org.apache.hadoop:hadoop-common:2.2.0",
+    "change": "ADDED"
+  }
+]

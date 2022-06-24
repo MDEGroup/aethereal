@@ -1,0 +1,27 @@
+[
+  {
+    "coordinatesV1": "org.codehaus.sonar:sonar-squid:1.12",
+    "coordinatesV2": "org.codehaus.sonar:sonar-squid:2.0RC1",
+    "caller": "|java+constructor:///org/sonar/squid/Squid/Squid(org.sonar.squid.api.SquidConfiguration)|",
+    "called": "|java+constructor:///org/sonar/graph/DirectedGraph/DirectedGraph()|",
+    "v1Body": [
+      "|java+method:///org/picocontainer/MutablePicoContainer/addComponent(java.lang.Object)|",
+      "|java+constructor:///org/sonar/squid/api/SourceProject/SourceProject(java.lang.String)|",
+      "|java+constructor:///org/sonar/squid/indexer/SquidIndex/SquidIndex()|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+constructor:///org/picocontainer/DefaultPicoContainer/DefaultPicoContainer()|",
+      "|java+method:///org/sonar/squid/indexer/SquidIndex/index(org.sonar.squid.api.SourceCode)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/picocontainer/MutablePicoContainer/addComponent(java.lang.Object)|",
+      "|java+constructor:///org/sonar/squid/api/SourceProject/SourceProject(java.lang.String)|",
+      "|java+constructor:///org/sonar/graph/DirectedGraph/DirectedGraph()|",
+      "|java+constructor:///org/sonar/squid/indexer/SquidIndex/SquidIndex()|",
+      "|java+constructor:///org/picocontainer/containers/TransientPicoContainer/TransientPicoContainer()|",
+      "|java+method:///org/sonar/squid/indexer/SquidIndex/index(org.sonar.squid.api.SourceCode)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "org.codehaus.sonar:sonar-graph:2.0RC1",
+    "change": "ADDED"
+  }
+]

@@ -1,0 +1,73 @@
+[
+  {
+    "coordinatesV1": "org.axonframework:axon-core:2.0-m1",
+    "coordinatesV2": "org.axonframework:axon-core:2.0-m2",
+    "caller": "|java+method:///org/axonframework/eventhandling/scheduling/quartz/FireEventJob/execute(org.quartz.JobExecutionContext)|",
+    "called": "|java+constructor:///org/quartz/JobExecutionException/JobExecutionException(java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+method:///org/axonframework/eventhandling/scheduling/EventTriggerCallback/beforePublication(org.axonframework.domain.EventMessage)|",
+      "|java+method:///org/quartz/JobDataMap/get(java.lang.Object)|",
+      "|java+method:///org/quartz/Scheduler/getContext()|",
+      "|java+constructor:///org/quartz/JobExecutionException/JobExecutionException(java.lang.Throwable)|",
+      "|java+method:///org/axonframework/eventhandling/scheduling/EventTriggerCallback/afterPublicationSuccess()|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String)|",
+      "|java+method:///org/quartz/JobExecutionContext/getScheduler()|",
+      "|java+method:///org/quartz/SchedulerContext/get(java.lang.Object)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String)|",
+      "|java+method:///org/quartz/JobExecutionContext/getJobDetail()|",
+      "|java+method:///org/axonframework/eventhandling/scheduling/EventTriggerCallback/afterPublicationFailure(java.lang.RuntimeException)|",
+      "|java+method:///org/axonframework/eventhandling/EventBus/publish(org.axonframework.domain.EventMessage%5B%5D)|",
+      "|java+method:///org/quartz/JobDetail/getJobDataMap()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Object)|",
+      "|java+method:///java/lang/Class/getSimpleName()|",
+      "|java+method:///org/quartz/JobExecutionContext/getScheduler()|",
+      "|java+method:///org/quartz/SchedulerContext/get(java.lang.Object)|",
+      "|java+method:///org/quartz/JobDataMap/get(java.lang.Object)|",
+      "|java+method:///org/quartz/Scheduler/getContext()|",
+      "|java+method:///org/axonframework/domain/EventMessage/getPayloadType()|",
+      "|java+method:///org/axonframework/eventhandling/TransactionManager/startTransaction()|",
+      "|java+method:///org/quartz/JobExecutionContext/getJobDetail()|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/axonframework/eventhandling/scheduling/quartz/FireEventJob/doCommit(org.axonframework.eventhandling.TransactionManager,java.lang.Object)|",
+      "|java+method:///org/axonframework/eventhandling/scheduling/quartz/FireEventJob/createMessage(java.lang.Object)|",
+      "|java+constructor:///org/quartz/JobExecutionException/JobExecutionException(java.lang.Throwable)|",
+      "|java+method:///org/axonframework/eventhandling/EventBus/publish(org.axonframework.domain.EventMessage%5B%5D)|",
+      "|java+method:///org/slf4j/Logger/isInfoEnabled()|",
+      "|java+method:///org/quartz/JobDetail/getJobDataMap()|"
+    ],
+    "affectedLib": "org.quartz-scheduler:quartz:2.1.4",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.axonframework:axon-core:2.0-m1",
+    "coordinatesV2": "org.axonframework:axon-core:2.0-m2",
+    "caller": "|java+method:///org/axonframework/saga/annotation/AsyncAnnotatedSagaManager/handle(org.axonframework.domain.EventMessage)|",
+    "called": "|java+method:///com/lmax/disruptor/dsl/Disruptor/publishEvent(com.lmax.disruptor.EventTranslator)|",
+    "v1Body": [
+      "|java+method:///org/axonframework/saga/annotation/SagaAnnotationInspector/findHandlerConfiguration(org.axonframework.domain.EventMessage)|",
+      "|java+method:///org/axonframework/saga/annotation/HandlerConfiguration/getCreationPolicy()|",
+      "|java+constructor:///org/axonframework/saga/annotation/AsyncAnnotatedSagaManager$SagaProcessingEventTranslator/AsyncAnnotatedSagaManager$SagaProcessingEventTranslator(org.axonframework.domain.EventMessage,org.axonframework.saga.annotation.SagaAnnotationInspector,org.axonframework.saga.annotation.HandlerConfiguration,org.axonframework.saga.annotation.AbstractAnnotatedSaga,org.axonframework.saga.annotation.AsyncAnnotatedSagaManager$1)|",
+      "|java+method:///org/axonframework/saga/annotation/SagaAnnotationInspector/getSagaType()|",
+      "|java+method:///com/lmax/disruptor/dsl/Disruptor/publishEvent(com.lmax.disruptor.EventTranslator)|",
+      "|java+method:///org/axonframework/saga/annotation/HandlerConfiguration/isHandlerAvailable()|",
+      "|java+method:///org/axonframework/saga/SagaFactory/createSaga(java.lang.Class)|",
+      "|java+method:///org/axonframework/saga/annotation/SagaCreationPolicy/ordinal()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/axonframework/saga/annotation/SagaMethodMessageHandlerInspector/getSagaType()|",
+      "|java+method:///org/axonframework/saga/annotation/SagaMethodMessageHandler/getCreationPolicy()|",
+      "|java+constructor:///org/axonframework/saga/annotation/AsyncAnnotatedSagaManager$SagaProcessingEventTranslator/AsyncAnnotatedSagaManager$SagaProcessingEventTranslator(org.axonframework.domain.EventMessage,org.axonframework.saga.annotation.SagaMethodMessageHandlerInspector,org.axonframework.saga.annotation.SagaMethodMessageHandler,org.axonframework.saga.annotation.AbstractAnnotatedSaga,org.axonframework.saga.annotation.AsyncAnnotatedSagaManager$1)|",
+      "|java+method:///org/axonframework/saga/annotation/SagaMethodMessageHandlerInspector/getMessageHandler(org.axonframework.domain.EventMessage)|",
+      "|java+method:///com/lmax/disruptor/dsl/Disruptor/publishEvent(com.lmax.disruptor.EventTranslator)|",
+      "|java+method:///org/axonframework/saga/annotation/SagaMethodMessageHandler/isHandlerAvailable()|",
+      "|java+method:///org/axonframework/saga/SagaFactory/createSaga(java.lang.Class)|",
+      "|java+method:///org/axonframework/saga/annotation/SagaCreationPolicy/ordinal()|"
+    ],
+    "affectedLib": "com.googlecode.disruptor:disruptor:2.10.1",
+    "change": "UPDATED"
+  }
+]

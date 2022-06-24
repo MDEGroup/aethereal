@@ -1,0 +1,165 @@
+[
+  {
+    "coordinatesV1": "com.netflix.curator:curator-client:1.0.20",
+    "coordinatesV2": "com.netflix.curator:curator-client:1.1.0",
+    "caller": "|java+constructor:///com/netflix/curator/CuratorZookeeperClient/CuratorZookeeperClient(java.lang.String,int,int,org.apache.zookeeper.Watcher,com.netflix.curator.RetryPolicy)|",
+    "called": "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object)|",
+    "v1Body": [
+      "|java+constructor:///com/netflix/curator/ensemble/fixed/FixedEnsembleProvider/FixedEnsembleProvider(java.lang.String)|",
+      "|java+constructor:///com/netflix/curator/utils/DefaultZookeeperFactory/DefaultZookeeperFactory()|",
+      "|java+constructor:///com/netflix/curator/CuratorZookeeperClient/CuratorZookeeperClient(com.netflix.curator.utils.ZookeeperFactory,com.netflix.curator.ensemble.EnsembleProvider,int,int,org.apache.zookeeper.Watcher,com.netflix.curator.RetryPolicy)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/util/concurrent/atomic/AtomicReference/AtomicReference()|",
+      "|java+constructor:///java/util/concurrent/atomic/AtomicBoolean/AtomicBoolean(boolean)|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///com/netflix/curator/CuratorZookeeperClient/setRetryPolicy(com.netflix.curator.RetryPolicy)|",
+      "|java+constructor:///java/util/concurrent/atomic/AtomicReference/AtomicReference(java.lang.Object)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object)|",
+      "|java+constructor:///com/netflix/curator/ConnectionState/ConnectionState(java.lang.String,int,int,org.apache.zookeeper.Watcher,java.util.concurrent.atomic.AtomicReference)|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+constructor:///com/netflix/curator/utils/DefaultTracerDriver/DefaultTracerDriver()|"
+    ],
+    "affectedLib": "com.google.guava:guava:10.0.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.netflix.curator:curator-client:1.0.20",
+    "coordinatesV2": "com.netflix.curator:curator-client:1.1.0",
+    "caller": "|java+method:///com/netflix/curator/CuratorZookeeperClient/blockUntilConnectedOrTimedOut()|",
+    "called": "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+method:///com/google/common/base/Preconditions/checkState(boolean,java.lang.Object)|",
+      "|java+method:///com/netflix/curator/CuratorZookeeperClient/internalBlockUntilConnectedOrTimedOut()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///com/netflix/curator/TimeTrace/commit()|",
+      "|java+method:///java/lang/StringBuilder/append(boolean)|",
+      "|java+method:///com/netflix/curator/CuratorZookeeperClient/startTracer(java.lang.String)|",
+      "|java+method:///com/netflix/curator/ConnectionState/isConnected()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/util/concurrent/atomic/AtomicBoolean/get()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+method:///com/netflix/curator/CuratorZookeeperClient/internalBlockUntilConnectedOrTimedOut()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///com/netflix/curator/TimeTrace/commit()|",
+      "|java+method:///java/lang/StringBuilder/append(boolean)|",
+      "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean)|",
+      "|java+method:///com/netflix/curator/CuratorZookeeperClient/startTracer(java.lang.String)|",
+      "|java+method:///com/netflix/curator/ConnectionState/isConnected()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/util/concurrent/atomic/AtomicBoolean/get()|"
+    ],
+    "affectedLib": "com.google.guava:guava:10.0.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.netflix.curator:curator-client:1.0.20",
+    "coordinatesV2": "com.netflix.curator:curator-client:1.1.0",
+    "caller": "|java+method:///com/netflix/curator/CuratorZookeeperClient/setRetryPolicy(com.netflix.curator.RetryPolicy)|",
+    "called": "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///java/util/concurrent/atomic/AtomicReference/set(java.lang.Object)|",
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/concurrent/atomic/AtomicReference/set(java.lang.Object)|",
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object)|"
+    ],
+    "affectedLib": "com.google.guava:guava:10.0.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.netflix.curator:curator-client:1.0.20",
+    "coordinatesV2": "com.netflix.curator:curator-client:1.1.0",
+    "caller": "|java+method:///com/netflix/curator/HandleHolder$1/getZooKeeper()|",
+    "called": "|java+constructor:///org/apache/zookeeper/ZooKeeper/ZooKeeper(java.lang.String,int,org.apache.zookeeper.Watcher)|",
+    "v1Body": [
+      "|java+method:///com/netflix/curator/HandleHolder/access$402(com.netflix.curator.HandleHolder,com.netflix.curator.HandleHolder$Helper)|",
+      "|java+method:///com/netflix/curator/utils/ZookeeperFactory/newZooKeeper(java.lang.String,int,org.apache.zookeeper.Watcher)|",
+      "|java+constructor:///com/netflix/curator/HandleHolder$1$1/HandleHolder$1$1(com.netflix.curator.HandleHolder$1)|",
+      "|java+method:///com/netflix/curator/HandleHolder/access$100(com.netflix.curator.HandleHolder)|",
+      "|java+method:///com/netflix/curator/HandleHolder/access$200(com.netflix.curator.HandleHolder)|",
+      "|java+method:///com/netflix/curator/HandleHolder/access$300(com.netflix.curator.HandleHolder)|",
+      "|java+method:///com/netflix/curator/HandleHolder/access$000(com.netflix.curator.HandleHolder)|",
+      "|java+method:///com/netflix/curator/ensemble/EnsembleProvider/getConnectionString()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/netflix/curator/HandleHolder/access$302(com.netflix.curator.HandleHolder,com.netflix.curator.HandleHolder$Helper)|",
+      "|java+constructor:///com/netflix/curator/HandleHolder$1$1/HandleHolder$1$1(com.netflix.curator.HandleHolder$1)|",
+      "|java+method:///com/netflix/curator/HandleHolder/access$000(com.netflix.curator.HandleHolder)|",
+      "|java+method:///com/netflix/curator/HandleHolder/access$100(com.netflix.curator.HandleHolder)|",
+      "|java+method:///com/netflix/curator/HandleHolder/access$200(com.netflix.curator.HandleHolder)|",
+      "|java+constructor:///org/apache/zookeeper/ZooKeeper/ZooKeeper(java.lang.String,int,org.apache.zookeeper.Watcher)|"
+    ],
+    "affectedLib": "org.apache.zookeeper:zookeeper:3.4.2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.netflix.curator:curator-client:1.0.20",
+    "coordinatesV2": "com.netflix.curator:curator-client:1.1.0",
+    "caller": "|java+method:///com/netflix/curator/ConnectionState/getZooKeeper()|",
+    "called": "|java+constructor:///org/apache/zookeeper/KeeperException$ConnectionLossException/KeeperException$ConnectionLossException()|",
+    "v1Body": [
+      "|java+constructor:///com/netflix/curator/SessionFailRetryLoop$SessionFailedException/SessionFailRetryLoop$SessionFailedException()|",
+      "|java+method:///com/netflix/curator/SessionFailRetryLoop/sessionForThreadHasFailed()|",
+      "|java+method:///java/lang/Boolean/getBoolean(java.lang.String)|",
+      "|java+method:///com/netflix/curator/ConnectionState/handleNewConnectionString()|",
+      "|java+method:///com/netflix/curator/HandleHolder/getZooKeeper()|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///java/lang/System/currentTimeMillis()|",
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+constructor:///org/apache/zookeeper/KeeperException$ConnectionLossException/KeeperException$ConnectionLossException()|",
+      "|java+method:///com/netflix/curator/HandleHolder/getConnectionString()|",
+      "|java+method:///com/netflix/curator/HandleHolder/hasNewConnectionString()|",
+      "|java+method:///java/util/concurrent/atomic/AtomicBoolean/get()|",
+      "|java+method:///com/netflix/curator/drivers/TracerDriver/addCount(java.lang.String,int)|",
+      "|java+method:///java/util/Queue/poll()|",
+      "|java+method:///java/util/concurrent/atomic/AtomicReference/get()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/zookeeper/KeeperException$ConnectionLossException/KeeperException$ConnectionLossException()|",
+      "|java+method:///com/netflix/curator/HandleHolder/getZooKeeper()|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/lang/System/currentTimeMillis()|",
+      "|java+method:///java/util/concurrent/atomic/AtomicBoolean/get()|",
+      "|java+method:///com/netflix/curator/drivers/TracerDriver/addCount(java.lang.String,int)|",
+      "|java+method:///java/util/Queue/poll()|",
+      "|java+method:///java/util/concurrent/atomic/AtomicReference/get()|"
+    ],
+    "affectedLib": "org.apache.zookeeper:zookeeper:3.4.2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.netflix.curator:curator-client:1.0.20",
+    "coordinatesV2": "com.netflix.curator:curator-client:1.1.0",
+    "caller": "|java+constructor:///com/netflix/curator/CuratorZookeeperClient/CuratorZookeeperClient(java.lang.String,int,int,org.apache.zookeeper.Watcher,com.netflix.curator.RetryPolicy)|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+constructor:///com/netflix/curator/ensemble/fixed/FixedEnsembleProvider/FixedEnsembleProvider(java.lang.String)|",
+      "|java+constructor:///com/netflix/curator/utils/DefaultZookeeperFactory/DefaultZookeeperFactory()|",
+      "|java+constructor:///com/netflix/curator/CuratorZookeeperClient/CuratorZookeeperClient(com.netflix.curator.utils.ZookeeperFactory,com.netflix.curator.ensemble.EnsembleProvider,int,int,org.apache.zookeeper.Watcher,com.netflix.curator.RetryPolicy)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/util/concurrent/atomic/AtomicReference/AtomicReference()|",
+      "|java+constructor:///java/util/concurrent/atomic/AtomicBoolean/AtomicBoolean(boolean)|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///com/netflix/curator/CuratorZookeeperClient/setRetryPolicy(com.netflix.curator.RetryPolicy)|",
+      "|java+constructor:///java/util/concurrent/atomic/AtomicReference/AtomicReference(java.lang.Object)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object)|",
+      "|java+constructor:///com/netflix/curator/ConnectionState/ConnectionState(java.lang.String,int,int,org.apache.zookeeper.Watcher,java.util.concurrent.atomic.AtomicReference)|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+constructor:///com/netflix/curator/utils/DefaultTracerDriver/DefaultTracerDriver()|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.6.3",
+    "change": "UPDATED"
+  }
+]

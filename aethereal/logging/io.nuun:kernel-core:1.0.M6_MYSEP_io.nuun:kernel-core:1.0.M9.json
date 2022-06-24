@@ -1,0 +1,288 @@
+[
+  {
+    "coordinatesV1": "io.nuun:kernel-core:1.0.M9",
+    "coordinatesV2": "io.nuun:kernel-core:1.0.M6",
+    "caller": "|java+method:///io/nuun/kernel/core/internal/KernelCore/start()|",
+    "called": "|java+method:///com/google/inject/Guice/createInjector(com.google.inject.Stage,com.google.inject.Module%5B%5D)|",
+    "v1Body": [
+      "|java+method:///com/google/inject/Injector/getInstance(java.lang.Class)|",
+      "|java+constructor:///io/nuun/kernel/core/KernelException/KernelException(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///com/google/inject/Guice/createInjector(com.google.inject.Stage,com.google.inject.Module%5B%5D)|",
+      "|java+method:///io/nuun/kernel/core/internal/ExtensionManager/starting()|",
+      "|java+method:///io/nuun/kernel/api/Plugin/start(io.nuun.kernel.api.plugin.context.Context)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///com/google/inject/Injector/injectMembers(java.lang.Object)|",
+      "|java+method:///io/nuun/kernel/core/internal/ExtensionManager/started()|"
+    ],
+    "v2Body": [
+      "|java+method:///io/nuun/kernel/core/internal/KernelCore/isInitialized()|",
+      "|java+constructor:///io/nuun/kernel/core/KernelException/KernelException(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///io/nuun/kernel/core/internal/KernelCore/createMainInjector()|",
+      "|java+method:///io/nuun/kernel/core/internal/ExtensionManager/started()|",
+      "|java+method:///io/nuun/kernel/core/internal/ExtensionManager/starting()|",
+      "|java+method:///io/nuun/kernel/core/internal/KernelCore/bindAndStartPlugins()|"
+    ],
+    "affectedLib": "org.sonatype.sisu:sisu-guice:3.1.3",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "io.nuun:kernel-core:1.0.M9",
+    "coordinatesV2": "io.nuun:kernel-core:1.0.M6",
+    "caller": "|java+constructor:///io/nuun/kernel/core/internal/KernelCore/KernelCore(io.nuun.kernel.core.internal.KernelConfigurationInternal)|",
+    "called": "|java+method:///com/google/common/collect/Maps/newConcurrentMap()|",
+    "v1Body": [
+      "|java+method:///java/util/Collections/synchronizedMap(java.util.Map)|",
+      "|java+constructor:///io/nuun/kernel/core/internal/InitContextInternal/InitContextInternal(java.lang.String,java.util.Map,io.nuun.kernel.api.config.ClasspathScanMode)|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.String)|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/append(char)|",
+      "|java+method:///com/google/common/collect/Maps/newConcurrentMap()|",
+      "|java+method:///io/nuun/kernel/core/internal/KernelConfigurationInternal/apply(io.nuun.kernel.core.internal.KernelCore)|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/util/concurrent/atomic/AtomicInteger/getAndIncrement()|",
+      "|java+constructor:///io/nuun/kernel/core/internal/PluginRegistry/PluginRegistry()|",
+      "|java+constructor:///io/nuun/kernel/core/internal/AliasMap/AliasMap()|",
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/util/Collections/synchronizedList(java.util.List)|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+method:///io/nuun/kernel/core/internal/KernelCore/name()|"
+    ],
+    "v2Body": [
+      "|java+method:///io/nuun/kernel/core/internal/KernelConfigurationInternal/kernelParams()|",
+      "|java+constructor:///io/nuun/kernel/core/internal/RequestHandler/RequestHandler(java.util.Map,io.nuun.kernel.api.config.KernelOptions)|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/append(char)|",
+      "|java+method:///io/nuun/kernel/api/config/KernelOptions/get(io.nuun.kernel.api.config.KernelOption)|",
+      "|java+method:///java/util/concurrent/atomic/AtomicInteger/getAndIncrement()|",
+      "|java+constructor:///io/nuun/kernel/core/internal/PluginRegistry/PluginRegistry()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///io/nuun/kernel/core/internal/AliasMap/toMap()|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+method:///io/nuun/kernel/core/internal/KernelCore/name()|",
+      "|java+method:///io/nuun/kernel/core/internal/KernelConfigurationInternal/options()|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.String)|",
+      "|java+method:///java/lang/Boolean/booleanValue()|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///io/nuun/kernel/core/internal/injection/ModuleHandler/ModuleHandler(io.nuun.kernel.core.internal.KernelConfigurationInternal)|"
+    ],
+    "affectedLib": "com.google.guava:guava:13.0.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "io.nuun:kernel-core:1.0.M9",
+    "coordinatesV2": "io.nuun:kernel-core:1.0.M6",
+    "caller": "|java+method:///io/nuun/kernel/core/internal/scanner/AbstractClasspathScanner/postTreatment(java.util.Collection)|",
+    "called": "|java+method:///com/google/common/collect/Collections2/filter(java.util.Collection,com.google.common.base.Predicate)|",
+    "v1Body": [
+      "|java+constructor:///io/nuun/kernel/core/KernelException/KernelException(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///com/google/common/collect/Collections2/filter(java.util.Collection,com.google.common.base.Predicate)|",
+      "|java+method:///java/util/Collection/iterator()|",
+      "|java+constructor:///io/nuun/kernel/core/internal/scanner/AbstractClasspathScanner$IgnorePredicate/AbstractClasspathScanner$IgnorePredicate(boolean)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/common/collect/Lists/newArrayList()|",
+      "|java+constructor:///io/nuun/kernel/core/internal/scanner/IgnorePredicate/IgnorePredicate(boolean)|",
+      "|java+method:///com/google/common/collect/Collections2/filter(java.util.Collection,com.google.common.base.Predicate)|"
+    ],
+    "affectedLib": "com.google.guava:guava:13.0.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "io.nuun:kernel-core:1.0.M9",
+    "coordinatesV2": "io.nuun:kernel-core:1.0.M6",
+    "caller": "|java+constructor:///io/nuun/kernel/core/internal/FacetRegistry/FacetRegistry(java.util.Collection)|",
+    "called": "|java+method:///com/google/common/collect/ArrayListMultimap/create()|",
+    "v1Body": [
+      "|java+method:///java/lang/Class/getInterfaces()|",
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///io/nuun/kernel/core/internal/FacetRegistry/isFacet(java.lang.Class)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///com/google/common/collect/ArrayListMultimap/create()|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///java/util/Collection/iterator()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///com/google/common/collect/ListMultimap/put(java.lang.Object,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///com/google/common/collect/ArrayListMultimap/create()|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///java/util/Collection/iterator()|",
+      "|java+method:///io/nuun/kernel/core/internal/FacetRegistry/collectFacets(io.nuun.kernel.api.Plugin)|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+constructor:///java/util/HashMap/HashMap()|"
+    ],
+    "affectedLib": "com.google.guava:guava:13.0.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "io.nuun:kernel-core:1.0.M6",
+    "coordinatesV2": "io.nuun:kernel-core:1.0.M9",
+    "caller": "|java+constructor:///io/nuun/kernel/core/internal/KernelCore/KernelCore(io.nuun.kernel.core.internal.KernelConfigurationInternal)|",
+    "called": "|java+method:///io/nuun/kernel/api/config/KernelOptions/get(io.nuun.kernel.api.config.KernelOption)|",
+    "v1Body": [
+      "|java+method:///java/util/Collections/synchronizedMap(java.util.Map)|",
+      "|java+constructor:///io/nuun/kernel/core/internal/InitContextInternal/InitContextInternal(java.lang.String,java.util.Map,io.nuun.kernel.api.config.ClasspathScanMode)|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.String)|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/append(char)|",
+      "|java+method:///com/google/common/collect/Maps/newConcurrentMap()|",
+      "|java+method:///io/nuun/kernel/core/internal/KernelConfigurationInternal/apply(io.nuun.kernel.core.internal.KernelCore)|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/util/concurrent/atomic/AtomicInteger/getAndIncrement()|",
+      "|java+constructor:///io/nuun/kernel/core/internal/PluginRegistry/PluginRegistry()|",
+      "|java+constructor:///io/nuun/kernel/core/internal/AliasMap/AliasMap()|",
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/util/Collections/synchronizedList(java.util.List)|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+method:///io/nuun/kernel/core/internal/KernelCore/name()|"
+    ],
+    "v2Body": [
+      "|java+method:///io/nuun/kernel/core/internal/KernelConfigurationInternal/kernelParams()|",
+      "|java+constructor:///io/nuun/kernel/core/internal/RequestHandler/RequestHandler(java.util.Map,io.nuun.kernel.api.config.KernelOptions)|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/append(char)|",
+      "|java+method:///io/nuun/kernel/api/config/KernelOptions/get(io.nuun.kernel.api.config.KernelOption)|",
+      "|java+method:///java/util/concurrent/atomic/AtomicInteger/getAndIncrement()|",
+      "|java+constructor:///io/nuun/kernel/core/internal/PluginRegistry/PluginRegistry()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///io/nuun/kernel/core/internal/AliasMap/toMap()|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+method:///io/nuun/kernel/core/internal/KernelCore/name()|",
+      "|java+method:///io/nuun/kernel/core/internal/KernelConfigurationInternal/options()|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.String)|",
+      "|java+method:///java/lang/Boolean/booleanValue()|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///io/nuun/kernel/core/internal/injection/ModuleHandler/ModuleHandler(io.nuun.kernel.core.internal.KernelConfigurationInternal)|"
+    ],
+    "affectedLib": "io.nuun:kernel-specs:1.0.M9",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.nuun:kernel-core:1.0.M6",
+    "coordinatesV2": "io.nuun:kernel-core:1.0.M9",
+    "caller": "|java+method:///io/nuun/kernel/core/internal/KernelConfigurationInternal/param(java.lang.String,java.lang.String)|",
+    "called": "|java+method:///io/nuun/kernel/api/config/KernelOptions/get(io.nuun.kernel.api.config.KernelOption)|",
+    "v1Body": [
+      "|java+method:///io/nuun/kernel/core/internal/KernelConfigurationInternal/cleanParamsSize()|",
+      "|java+method:///java/util/List/add(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///io/nuun/kernel/core/internal/AliasMap/put(java.lang.String,java.lang.String)|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///io/nuun/kernel/api/config/KernelOptions/get(io.nuun.kernel.api.config.KernelOption)|"
+    ],
+    "affectedLib": "io.nuun:kernel-specs:1.0.M9",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.nuun:kernel-core:1.0.M6",
+    "coordinatesV2": "io.nuun:kernel-core:1.0.M9",
+    "caller": "|java+constructor:///io/nuun/kernel/core/internal/KernelConfigurationInternal/KernelConfigurationInternal()|",
+    "called": "|java+constructor:///io/nuun/kernel/api/config/KernelOptions/KernelOptions()|",
+    "v1Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///io/nuun/kernel/api/config/KernelOptions/KernelOptions()|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+constructor:///io/nuun/kernel/core/internal/AliasMap/AliasMap()|",
+      "|java+constructor:///java/util/ArrayList/ArrayList()|"
+    ],
+    "affectedLib": "io.nuun:kernel-specs:1.0.M9",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.nuun:kernel-core:1.0.M6",
+    "coordinatesV2": "io.nuun:kernel-core:1.0.M9",
+    "caller": "|java+constructor:///io/nuun/kernel/core/internal/KernelConfigurationInternal/KernelConfigurationInternal()|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///io/nuun/kernel/api/config/KernelOptions/KernelOptions()|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+constructor:///io/nuun/kernel/core/internal/AliasMap/AliasMap()|",
+      "|java+constructor:///java/util/ArrayList/ArrayList()|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.16",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.nuun:kernel-core:1.0.M6",
+    "coordinatesV2": "io.nuun:kernel-core:1.0.M9",
+    "caller": "|java+constructor:///io/nuun/kernel/core/internal/KernelCore/KernelCore(io.nuun.kernel.core.internal.KernelConfigurationInternal)|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/util/Collections/synchronizedMap(java.util.Map)|",
+      "|java+constructor:///io/nuun/kernel/core/internal/InitContextInternal/InitContextInternal(java.lang.String,java.util.Map,io.nuun.kernel.api.config.ClasspathScanMode)|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.String)|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/append(char)|",
+      "|java+method:///com/google/common/collect/Maps/newConcurrentMap()|",
+      "|java+method:///io/nuun/kernel/core/internal/KernelConfigurationInternal/apply(io.nuun.kernel.core.internal.KernelCore)|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/util/concurrent/atomic/AtomicInteger/getAndIncrement()|",
+      "|java+constructor:///io/nuun/kernel/core/internal/PluginRegistry/PluginRegistry()|",
+      "|java+constructor:///io/nuun/kernel/core/internal/AliasMap/AliasMap()|",
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/util/Collections/synchronizedList(java.util.List)|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+method:///io/nuun/kernel/core/internal/KernelCore/name()|"
+    ],
+    "v2Body": [
+      "|java+method:///io/nuun/kernel/core/internal/KernelConfigurationInternal/kernelParams()|",
+      "|java+constructor:///io/nuun/kernel/core/internal/RequestHandler/RequestHandler(java.util.Map,io.nuun.kernel.api.config.KernelOptions)|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/append(char)|",
+      "|java+method:///io/nuun/kernel/api/config/KernelOptions/get(io.nuun.kernel.api.config.KernelOption)|",
+      "|java+method:///java/util/concurrent/atomic/AtomicInteger/getAndIncrement()|",
+      "|java+constructor:///io/nuun/kernel/core/internal/PluginRegistry/PluginRegistry()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///io/nuun/kernel/core/internal/AliasMap/toMap()|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+method:///io/nuun/kernel/core/internal/KernelCore/name()|",
+      "|java+method:///io/nuun/kernel/core/internal/KernelConfigurationInternal/options()|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.String)|",
+      "|java+method:///java/lang/Boolean/booleanValue()|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///io/nuun/kernel/core/internal/injection/ModuleHandler/ModuleHandler(io.nuun.kernel.core.internal.KernelConfigurationInternal)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.16",
+    "change": "UPDATED"
+  }
+]

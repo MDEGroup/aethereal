@@ -1,0 +1,175 @@
+[
+  {
+    "coordinatesV1": "org.apache.directory.server:apacheds-kerberos-shared:1.5.1",
+    "coordinatesV2": "org.apache.directory.server:apacheds-kerberos-shared:1.5.2",
+    "caller": "|java+method:///org/apache/directory/server/kerberos/shared/keytab/KeytabDecoder/getKeyBlock(org.apache.mina.common.ByteBuffer,int)|",
+    "called": "|java+method:///org/apache/mina/common/ByteBuffer/getUnsignedShort()|",
+    "v1Body": [
+      "|java+constructor:///org/apache/directory/server/kerberos/shared/messages/value/EncryptionKey/EncryptionKey(org.apache.directory.server.kerberos.shared.crypto.encryption.EncryptionType,byte%5B%5D,int)|",
+      "|java+method:///org/apache/mina/common/ByteBuffer/getUnsignedShort()|",
+      "|java+method:///org/apache/directory/server/kerberos/shared/keytab/KeytabDecoder/getCountedBytes(org.apache.mina.common.ByteBuffer)|",
+      "|java+method:///org/apache/directory/server/kerberos/shared/crypto/encryption/EncryptionType/getTypeByOrdinal(int)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/directory/server/kerberos/shared/messages/value/EncryptionKey/EncryptionKey(org.apache.directory.server.kerberos.shared.crypto.encryption.EncryptionType,byte%5B%5D)|",
+      "|java+method:///org/apache/mina/common/ByteBuffer/getUnsignedShort()|",
+      "|java+method:///org/apache/directory/server/kerberos/shared/keytab/KeytabDecoder/getCountedBytes(org.apache.mina.common.ByteBuffer)|",
+      "|java+method:///org/apache/directory/server/kerberos/shared/crypto/encryption/EncryptionType/getTypeByOrdinal(int)|"
+    ],
+    "affectedLib": "org.apache.mina:mina-core:1.1.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.directory.server:apacheds-kerberos-shared:1.5.1",
+    "coordinatesV2": "org.apache.directory.server:apacheds-kerberos-shared:1.5.2",
+    "caller": "|java+method:///org/apache/directory/server/kerberos/shared/store/MultiBaseSearch/changePassword(javax.security.auth.kerberos.KerberosPrincipal,java.lang.String)|",
+    "called": "|java+constructor:///org/apache/directory/server/protocol/shared/ServiceConfigurationException/ServiceConfigurationException(java.lang.String,java.lang.Throwable)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/directory/server/protocol/shared/ServiceConfigurationException/ServiceConfigurationException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///javax/naming/spi/InitialContextFactory/getInitialContext(java.util.Hashtable)|",
+      "|java+constructor:///org/apache/directory/server/kerberos/shared/store/operations/ChangePassword/ChangePassword(javax.security.auth.kerberos.KerberosPrincipal,java.lang.String)|",
+      "|java+method:///java/util/Hashtable/get(java.lang.Object)|",
+      "|java+method:///java/util/Hashtable/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///javax/security/auth/kerberos/KerberosPrincipal/getRealm()|",
+      "|java+method:///org/apache/directory/server/kerberos/shared/store/MultiBaseSearch/execute(javax.naming.directory.DirContext,org.apache.directory.server.protocol.shared.store.ContextOperation)|",
+      "|java+method:///org/apache/directory/server/protocol/shared/catalog/Catalog/getBaseDn(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/directory/server/protocol/shared/ServiceConfigurationException/ServiceConfigurationException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///org/apache/directory/server/kerberos/shared/store/operations/ChangePassword/ChangePassword(javax.security.auth.kerberos.KerberosPrincipal,java.lang.String)|",
+      "|java+method:///org/apache/directory/server/kerberos/shared/store/MultiBaseSearch/execute(javax.naming.directory.DirContext,org.apache.directory.server.protocol.shared.store.ContextOperation)|",
+      "|java+method:///org/apache/directory/server/kerberos/shared/store/MultiBaseSearch/getDirContext(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///javax/security/auth/kerberos/KerberosPrincipal/getRealm()|"
+    ],
+    "affectedLib": "org.apache.directory.server:apacheds-protocol-shared:1.5.2",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.directory.server:apacheds-kerberos-shared:1.5.1",
+    "coordinatesV2": "org.apache.directory.server:apacheds-kerberos-shared:1.5.2",
+    "caller": "|java+method:///org/apache/directory/server/kerberos/shared/store/MultiBaseSearch/getPrincipal(javax.security.auth.kerberos.KerberosPrincipal)|",
+    "called": "|java+constructor:///org/apache/directory/server/protocol/shared/ServiceConfigurationException/ServiceConfigurationException(java.lang.String,java.lang.Throwable)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/directory/server/protocol/shared/ServiceConfigurationException/ServiceConfigurationException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///javax/naming/spi/InitialContextFactory/getInitialContext(java.util.Hashtable)|",
+      "|java+method:///java/util/Hashtable/get(java.lang.Object)|",
+      "|java+method:///java/util/Hashtable/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///javax/security/auth/kerberos/KerberosPrincipal/getRealm()|",
+      "|java+method:///org/apache/directory/server/kerberos/shared/store/MultiBaseSearch/execute(javax.naming.directory.DirContext,org.apache.directory.server.protocol.shared.store.ContextOperation)|",
+      "|java+method:///org/apache/directory/server/protocol/shared/catalog/Catalog/getBaseDn(java.lang.String)|",
+      "|java+constructor:///org/apache/directory/server/kerberos/shared/store/operations/GetPrincipal/GetPrincipal(javax.security.auth.kerberos.KerberosPrincipal)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/directory/server/protocol/shared/ServiceConfigurationException/ServiceConfigurationException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/directory/server/kerberos/shared/store/MultiBaseSearch/getDirContext(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///javax/security/auth/kerberos/KerberosPrincipal/getRealm()|",
+      "|java+method:///org/apache/directory/server/kerberos/shared/store/MultiBaseSearch/execute(javax.naming.directory.DirContext,org.apache.directory.server.protocol.shared.store.ContextOperation)|",
+      "|java+constructor:///org/apache/directory/server/kerberos/shared/store/operations/GetPrincipal/GetPrincipal(javax.security.auth.kerberos.KerberosPrincipal)|"
+    ],
+    "affectedLib": "org.apache.directory.server:apacheds-protocol-shared:1.5.2",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.directory.server:apacheds-kerberos-shared:1.5.1",
+    "coordinatesV2": "org.apache.directory.server:apacheds-kerberos-shared:1.5.2",
+    "caller": "|java+method:///org/apache/directory/server/kerberos/shared/store/MultiBaseSearch/deletePrincipal(javax.security.auth.kerberos.KerberosPrincipal)|",
+    "called": "|java+constructor:///org/apache/directory/server/protocol/shared/ServiceConfigurationException/ServiceConfigurationException(java.lang.String,java.lang.Throwable)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/directory/server/protocol/shared/ServiceConfigurationException/ServiceConfigurationException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///javax/naming/spi/InitialContextFactory/getInitialContext(java.util.Hashtable)|",
+      "|java+method:///java/util/Hashtable/get(java.lang.Object)|",
+      "|java+constructor:///org/apache/directory/server/kerberos/shared/store/operations/DeletePrincipal/DeletePrincipal(javax.security.auth.kerberos.KerberosPrincipal)|",
+      "|java+method:///java/util/Hashtable/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///javax/security/auth/kerberos/KerberosPrincipal/getRealm()|",
+      "|java+method:///org/apache/directory/server/kerberos/shared/store/MultiBaseSearch/execute(javax.naming.directory.DirContext,org.apache.directory.server.protocol.shared.store.ContextOperation)|",
+      "|java+method:///org/apache/directory/server/protocol/shared/catalog/Catalog/getBaseDn(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/directory/server/protocol/shared/ServiceConfigurationException/ServiceConfigurationException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/directory/server/kerberos/shared/store/MultiBaseSearch/execute(javax.naming.directory.DirContext,org.apache.directory.server.protocol.shared.store.ContextOperation)|",
+      "|java+method:///org/apache/directory/server/kerberos/shared/store/MultiBaseSearch/getDirContext(java.lang.String)|",
+      "|java+constructor:///org/apache/directory/server/kerberos/shared/store/operations/DeletePrincipal/DeletePrincipal(javax.security.auth.kerberos.KerberosPrincipal)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///javax/security/auth/kerberos/KerberosPrincipal/getRealm()|"
+    ],
+    "affectedLib": "org.apache.directory.server:apacheds-protocol-shared:1.5.2",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.directory.server:apacheds-kerberos-shared:1.5.1",
+    "coordinatesV2": "org.apache.directory.server:apacheds-kerberos-shared:1.5.2",
+    "caller": "|java+method:///org/apache/directory/server/kerberos/shared/store/MultiBaseSearch/getAllPrincipals(java.lang.String)|",
+    "called": "|java+constructor:///org/apache/directory/server/protocol/shared/ServiceConfigurationException/ServiceConfigurationException(java.lang.String,java.lang.Throwable)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/directory/server/protocol/shared/ServiceConfigurationException/ServiceConfigurationException(java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///org/apache/directory/server/kerberos/shared/store/operations/GetAllPrincipals/GetAllPrincipals()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///javax/naming/spi/InitialContextFactory/getInitialContext(java.util.Hashtable)|",
+      "|java+method:///java/util/Hashtable/get(java.lang.Object)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/util/Hashtable/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/apache/directory/server/kerberos/shared/store/MultiBaseSearch/execute(javax.naming.directory.DirContext,org.apache.directory.server.protocol.shared.store.ContextOperation)|",
+      "|java+method:///org/apache/directory/server/protocol/shared/catalog/Catalog/getBaseDn(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/directory/server/protocol/shared/ServiceConfigurationException/ServiceConfigurationException(java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///org/apache/directory/server/kerberos/shared/store/operations/GetAllPrincipals/GetAllPrincipals()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/apache/directory/server/kerberos/shared/store/MultiBaseSearch/execute(javax.naming.directory.DirContext,org.apache.directory.server.protocol.shared.store.ContextOperation)|",
+      "|java+method:///org/apache/directory/server/kerberos/shared/store/MultiBaseSearch/getDirContext(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "affectedLib": "org.apache.directory.server:apacheds-protocol-shared:1.5.2",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.directory.server:apacheds-kerberos-shared:1.5.1",
+    "coordinatesV2": "org.apache.directory.server:apacheds-kerberos-shared:1.5.2",
+    "caller": "|java+method:///org/apache/directory/server/kerberos/shared/store/MultiBaseSearch/addPrincipal(org.apache.directory.server.kerberos.shared.store.PrincipalStoreEntry)|",
+    "called": "|java+constructor:///org/apache/directory/server/protocol/shared/ServiceConfigurationException/ServiceConfigurationException(java.lang.String,java.lang.Throwable)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/directory/server/protocol/shared/ServiceConfigurationException/ServiceConfigurationException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/apache/directory/server/kerberos/shared/store/PrincipalStoreEntry/getRealmName()|",
+      "|java+constructor:///org/apache/directory/server/kerberos/shared/store/operations/AddPrincipal/AddPrincipal(org.apache.directory.server.kerberos.shared.store.PrincipalStoreEntry)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///javax/naming/spi/InitialContextFactory/getInitialContext(java.util.Hashtable)|",
+      "|java+method:///java/util/Hashtable/get(java.lang.Object)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/util/Hashtable/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/apache/directory/server/kerberos/shared/store/MultiBaseSearch/execute(javax.naming.directory.DirContext,org.apache.directory.server.protocol.shared.store.ContextOperation)|",
+      "|java+method:///org/apache/directory/server/protocol/shared/catalog/Catalog/getBaseDn(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/directory/server/protocol/shared/ServiceConfigurationException/ServiceConfigurationException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/apache/directory/server/kerberos/shared/store/PrincipalStoreEntry/getRealmName()|",
+      "|java+constructor:///org/apache/directory/server/kerberos/shared/store/operations/AddPrincipal/AddPrincipal(org.apache.directory.server.kerberos.shared.store.PrincipalStoreEntry)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/apache/directory/server/kerberos/shared/store/MultiBaseSearch/execute(javax.naming.directory.DirContext,org.apache.directory.server.protocol.shared.store.ContextOperation)|",
+      "|java+method:///org/apache/directory/server/kerberos/shared/store/MultiBaseSearch/getDirContext(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "affectedLib": "org.apache.directory.server:apacheds-protocol-shared:1.5.2",
+    "change": "UPDATED"
+  }
+]

@@ -1,0 +1,432 @@
+[
+  {
+    "coordinatesV1": "org.springframework.data:spring-data-redis:1.0.0.RELEASE",
+    "coordinatesV2": "org.springframework.data:spring-data-redis:1.0.1.RELEASE",
+    "caller": "|java+method:///org/springframework/data/redis/connection/jedis/JedisConnection/rPush(byte%5B%5D,byte%5B%5D)|",
+    "called": "|java+method:///redis/clients/jedis/BinaryTransaction/rpush(byte%5B%5D,byte%5B%5D)|",
+    "v1Body": [
+      "|java+method:///redis/clients/jedis/Jedis/rpush(byte%5B%5D,byte%5B%5D)|",
+      "|java+method:///redis/clients/jedis/Pipeline/rpush(byte%5B%5D,byte%5B%5D)|",
+      "|java+method:///org/springframework/data/redis/connection/jedis/JedisConnection/isQueueing()|",
+      "|java+method:///org/springframework/data/redis/connection/jedis/JedisConnection/isPipelined()|",
+      "|java+method:///redis/clients/jedis/BinaryTransaction/rpush(byte%5B%5D,byte%5B%5D)|",
+      "|java+method:///org/springframework/data/redis/connection/jedis/JedisConnection/convertJedisAccessException(java.lang.Exception)|"
+    ],
+    "v2Body": [
+      "|java+method:///redis/clients/jedis/Jedis/rpush(byte%5B%5D,byte%5B%5D%5B%5D)|",
+      "|java+method:///redis/clients/jedis/Pipeline/rpush(byte%5B%5D,byte%5B%5D)|",
+      "|java+method:///org/springframework/data/redis/connection/jedis/JedisConnection/isQueueing()|",
+      "|java+method:///org/springframework/data/redis/connection/jedis/JedisConnection/isPipelined()|",
+      "|java+method:///redis/clients/jedis/BinaryTransaction/rpush(byte%5B%5D,byte%5B%5D)|",
+      "|java+method:///org/springframework/data/redis/connection/jedis/JedisConnection/convertJedisAccessException(java.lang.Exception)|"
+    ],
+    "affectedLib": "redis.clients:jedis:2.1.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.springframework.data:spring-data-redis:1.0.0.RELEASE",
+    "coordinatesV2": "org.springframework.data:spring-data-redis:1.0.1.RELEASE",
+    "caller": "|java+method:///org/springframework/data/redis/connection/jedis/JedisConnection/zCount(byte%5B%5D,double,double)|",
+    "called": "|java+method:///redis/clients/jedis/Pipeline/zcount(byte%5B%5D,double,double)|",
+    "v1Body": [
+      "|java+method:///redis/clients/jedis/BinaryTransaction/zcount(byte%5B%5D,double,double)|",
+      "|java+method:///org/springframework/data/redis/connection/jedis/JedisConnection/isQueueing()|",
+      "|java+method:///redis/clients/jedis/Jedis/zcount(byte%5B%5D,double,double)|",
+      "|java+method:///redis/clients/jedis/Pipeline/zcount(byte%5B%5D,double,double)|",
+      "|java+method:///org/springframework/data/redis/connection/jedis/JedisConnection/convertJedisAccessException(java.lang.Exception)|"
+    ],
+    "v2Body": [
+      "|java+method:///redis/clients/jedis/BinaryTransaction/zcount(byte%5B%5D,double,double)|",
+      "|java+method:///org/springframework/data/redis/connection/jedis/JedisConnection/isQueueing()|",
+      "|java+method:///redis/clients/jedis/Jedis/zcount(byte%5B%5D,double,double)|",
+      "|java+method:///org/springframework/data/redis/connection/jedis/JedisConnection/isPipelined()|",
+      "|java+method:///redis/clients/jedis/Pipeline/zcount(byte%5B%5D,double,double)|",
+      "|java+method:///org/springframework/data/redis/connection/jedis/JedisConnection/convertJedisAccessException(java.lang.Exception)|"
+    ],
+    "affectedLib": "redis.clients:jedis:2.1.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.springframework.data:spring-data-redis:1.0.0.RELEASE",
+    "coordinatesV2": "org.springframework.data:spring-data-redis:1.0.1.RELEASE",
+    "caller": "|java+method:///org/springframework/data/redis/connection/jedis/JedisConnection/closePipeline()|",
+    "called": "|java+method:///redis/clients/jedis/Pipeline/syncAndReturnAll()|",
+    "v1Body": [
+      "|java+method:///redis/clients/jedis/Pipeline/syncAndReturnAll()|",
+      "|java+method:///java/util/List/isEmpty()|",
+      "|java+method:///java/util/Collections/emptyList()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/springframework/data/redis/connection/RedisPipelineException/RedisPipelineException(java.lang.Exception,java.util.List)|",
+      "|java+method:///redis/clients/jedis/Pipeline/syncAndReturnAll()|",
+      "|java+method:///java/util/List/isEmpty()|",
+      "|java+method:///java/util/Collections/emptyList()|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///java/util/List/get(int)|",
+      "|java+method:///java/util/List/set(int,java.lang.Object)|",
+      "|java+method:///org/springframework/data/redis/connection/jedis/JedisConnection/convertJedisAccessException(java.lang.Exception)|"
+    ],
+    "affectedLib": "redis.clients:jedis:2.1.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.springframework.data:spring-data-redis:1.0.0.RELEASE",
+    "coordinatesV2": "org.springframework.data:spring-data-redis:1.0.1.RELEASE",
+    "caller": "|java+method:///org/springframework/data/redis/connection/jedis/JedisConnection/zRem(byte%5B%5D,byte%5B%5D)|",
+    "called": "|java+method:///redis/clients/jedis/Pipeline/zrem(byte%5B%5D,byte%5B%5D)|",
+    "v1Body": [
+      "|java+method:///redis/clients/jedis/Pipeline/zrem(byte%5B%5D,byte%5B%5D)|",
+      "|java+method:///redis/clients/jedis/Jedis/zrem(byte%5B%5D,byte%5B%5D)|",
+      "|java+method:///org/springframework/data/redis/connection/jedis/JedisConnection/isQueueing()|",
+      "|java+method:///redis/clients/jedis/BinaryTransaction/zrem(byte%5B%5D,byte%5B%5D)|",
+      "|java+method:///org/springframework/data/redis/connection/jedis/JedisConnection/isPipelined()|",
+      "|java+method:///org/springframework/data/redis/connection/jedis/JedisUtils/convertCodeReply(java.lang.Number)|",
+      "|java+method:///org/springframework/data/redis/connection/jedis/JedisConnection/convertJedisAccessException(java.lang.Exception)|"
+    ],
+    "v2Body": [
+      "|java+method:///redis/clients/jedis/Pipeline/zrem(byte%5B%5D,byte%5B%5D)|",
+      "|java+method:///redis/clients/jedis/Jedis/zrem(byte%5B%5D,byte%5B%5D%5B%5D)|",
+      "|java+method:///org/springframework/data/redis/connection/jedis/JedisConnection/isQueueing()|",
+      "|java+method:///redis/clients/jedis/BinaryTransaction/zrem(byte%5B%5D,byte%5B%5D)|",
+      "|java+method:///org/springframework/data/redis/connection/jedis/JedisConnection/isPipelined()|",
+      "|java+method:///org/springframework/data/redis/connection/jedis/JedisUtils/convertCodeReply(java.lang.Number)|",
+      "|java+method:///org/springframework/data/redis/connection/jedis/JedisConnection/convertJedisAccessException(java.lang.Exception)|"
+    ],
+    "affectedLib": "redis.clients:jedis:2.1.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.springframework.data:spring-data-redis:1.0.0.RELEASE",
+    "coordinatesV2": "org.springframework.data:spring-data-redis:1.0.1.RELEASE",
+    "caller": "|java+method:///org/springframework/data/redis/connection/jedis/JedisConnection/lPush(byte%5B%5D,byte%5B%5D)|",
+    "called": "|java+method:///redis/clients/jedis/BinaryTransaction/lpush(byte%5B%5D,byte%5B%5D)|",
+    "v1Body": [
+      "|java+method:///redis/clients/jedis/BinaryTransaction/lpush(byte%5B%5D,byte%5B%5D)|",
+      "|java+method:///redis/clients/jedis/Jedis/lpush(byte%5B%5D,byte%5B%5D)|",
+      "|java+method:///org/springframework/data/redis/connection/jedis/JedisConnection/isPipelined()|",
+      "|java+method:///org/springframework/data/redis/connection/jedis/JedisConnection/convertJedisAccessException(java.lang.Exception)|",
+      "|java+method:///redis/clients/jedis/Pipeline/lpush(byte%5B%5D,byte%5B%5D)|",
+      "|java+method:///org/springframework/data/redis/connection/jedis/JedisConnection/isQueueing()|"
+    ],
+    "v2Body": [
+      "|java+method:///redis/clients/jedis/BinaryTransaction/lpush(byte%5B%5D,byte%5B%5D)|",
+      "|java+method:///redis/clients/jedis/Jedis/lpush(byte%5B%5D,byte%5B%5D%5B%5D)|",
+      "|java+method:///org/springframework/data/redis/connection/jedis/JedisConnection/isPipelined()|",
+      "|java+method:///org/springframework/data/redis/connection/jedis/JedisConnection/convertJedisAccessException(java.lang.Exception)|",
+      "|java+method:///redis/clients/jedis/Pipeline/lpush(byte%5B%5D,byte%5B%5D)|",
+      "|java+method:///org/springframework/data/redis/connection/jedis/JedisConnection/isQueueing()|"
+    ],
+    "affectedLib": "redis.clients:jedis:2.1.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.springframework.data:spring-data-redis:1.0.0.RELEASE",
+    "coordinatesV2": "org.springframework.data:spring-data-redis:1.0.1.RELEASE",
+    "caller": "|java+method:///org/springframework/data/redis/connection/jedis/JedisConnection/sAdd(byte%5B%5D,byte%5B%5D)|",
+    "called": "|java+method:///redis/clients/jedis/Pipeline/sadd(byte%5B%5D,byte%5B%5D)|",
+    "v1Body": [
+      "|java+method:///redis/clients/jedis/BinaryTransaction/sadd(byte%5B%5D,byte%5B%5D)|",
+      "|java+method:///java/lang/Boolean/valueOf(boolean)|",
+      "|java+method:///org/springframework/data/redis/connection/jedis/JedisConnection/isPipelined()|",
+      "|java+method:///redis/clients/jedis/Pipeline/sadd(byte%5B%5D,byte%5B%5D)|",
+      "|java+method:///org/springframework/data/redis/connection/jedis/JedisConnection/isQueueing()|",
+      "|java+method:///java/lang/Long/longValue()|",
+      "|java+method:///org/springframework/data/redis/connection/jedis/JedisConnection/convertJedisAccessException(java.lang.Exception)|",
+      "|java+method:///redis/clients/jedis/Jedis/sadd(byte%5B%5D,byte%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///redis/clients/jedis/BinaryTransaction/sadd(byte%5B%5D,byte%5B%5D)|",
+      "|java+method:///java/lang/Boolean/valueOf(boolean)|",
+      "|java+method:///org/springframework/data/redis/connection/jedis/JedisConnection/isPipelined()|",
+      "|java+method:///redis/clients/jedis/Pipeline/sadd(byte%5B%5D,byte%5B%5D)|",
+      "|java+method:///redis/clients/jedis/Jedis/sadd(byte%5B%5D,byte%5B%5D%5B%5D)|",
+      "|java+method:///org/springframework/data/redis/connection/jedis/JedisConnection/convertJedisAccessException(java.lang.Exception)|",
+      "|java+method:///org/springframework/data/redis/connection/jedis/JedisConnection/isQueueing()|",
+      "|java+method:///java/lang/Long/longValue()|"
+    ],
+    "affectedLib": "redis.clients:jedis:2.1.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.springframework.data:spring-data-redis:1.0.0.RELEASE",
+    "coordinatesV2": "org.springframework.data:spring-data-redis:1.0.1.RELEASE",
+    "caller": "|java+method:///org/springframework/data/redis/connection/jedis/JedisConnection/flushDb()|",
+    "called": "|java+method:///redis/clients/jedis/BinaryTransaction/flushDB()|",
+    "v1Body": [
+      "|java+method:///redis/clients/jedis/Jedis/flushDB()|",
+      "|java+method:///org/springframework/data/redis/connection/jedis/JedisConnection/isQueueing()|",
+      "|java+method:///org/springframework/data/redis/connection/jedis/JedisConnection/isPipelined()|",
+      "|java+constructor:///java/lang/UnsupportedOperationException/UnsupportedOperationException()|",
+      "|java+method:///org/springframework/data/redis/connection/jedis/JedisConnection/convertJedisAccessException(java.lang.Exception)|"
+    ],
+    "v2Body": [
+      "|java+method:///redis/clients/jedis/Pipeline/flushDB()|",
+      "|java+method:///redis/clients/jedis/Jedis/flushDB()|",
+      "|java+method:///org/springframework/data/redis/connection/jedis/JedisConnection/isQueueing()|",
+      "|java+method:///redis/clients/jedis/BinaryTransaction/flushDB()|",
+      "|java+method:///org/springframework/data/redis/connection/jedis/JedisConnection/isPipelined()|",
+      "|java+method:///org/springframework/data/redis/connection/jedis/JedisConnection/convertJedisAccessException(java.lang.Exception)|"
+    ],
+    "affectedLib": "redis.clients:jedis:2.1.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.springframework.data:spring-data-redis:1.0.0.RELEASE",
+    "coordinatesV2": "org.springframework.data:spring-data-redis:1.0.1.RELEASE",
+    "caller": "|java+method:///org/springframework/data/redis/connection/jedis/JedisConnection/sRem(byte%5B%5D,byte%5B%5D)|",
+    "called": "|java+method:///redis/clients/jedis/BinaryTransaction/srem(byte%5B%5D,byte%5B%5D)|",
+    "v1Body": [
+      "|java+method:///redis/clients/jedis/Pipeline/srem(byte%5B%5D,byte%5B%5D)|",
+      "|java+method:///redis/clients/jedis/Jedis/srem(byte%5B%5D,byte%5B%5D)|",
+      "|java+method:///org/springframework/data/redis/connection/jedis/JedisConnection/isPipelined()|",
+      "|java+method:///org/springframework/data/redis/connection/jedis/JedisUtils/convertCodeReply(java.lang.Number)|",
+      "|java+method:///org/springframework/data/redis/connection/jedis/JedisConnection/convertJedisAccessException(java.lang.Exception)|",
+      "|java+method:///redis/clients/jedis/BinaryTransaction/srem(byte%5B%5D,byte%5B%5D)|",
+      "|java+method:///org/springframework/data/redis/connection/jedis/JedisConnection/isQueueing()|"
+    ],
+    "v2Body": [
+      "|java+method:///redis/clients/jedis/Pipeline/srem(byte%5B%5D,byte%5B%5D)|",
+      "|java+method:///redis/clients/jedis/Jedis/srem(byte%5B%5D,byte%5B%5D%5B%5D)|",
+      "|java+method:///org/springframework/data/redis/connection/jedis/JedisConnection/isPipelined()|",
+      "|java+method:///org/springframework/data/redis/connection/jedis/JedisUtils/convertCodeReply(java.lang.Number)|",
+      "|java+method:///org/springframework/data/redis/connection/jedis/JedisConnection/convertJedisAccessException(java.lang.Exception)|",
+      "|java+method:///redis/clients/jedis/BinaryTransaction/srem(byte%5B%5D,byte%5B%5D)|",
+      "|java+method:///org/springframework/data/redis/connection/jedis/JedisConnection/isQueueing()|"
+    ],
+    "affectedLib": "redis.clients:jedis:2.1.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.springframework.data:spring-data-redis:1.0.0.RELEASE",
+    "coordinatesV2": "org.springframework.data:spring-data-redis:1.0.1.RELEASE",
+    "caller": "|java+method:///org/springframework/data/redis/connection/jedis/JedisConnection/flushAll()|",
+    "called": "|java+method:///redis/clients/jedis/BinaryTransaction/flushAll()|",
+    "v1Body": [
+      "|java+method:///redis/clients/jedis/Jedis/flushAll()|",
+      "|java+method:///org/springframework/data/redis/connection/jedis/JedisConnection/isQueueing()|",
+      "|java+method:///org/springframework/data/redis/connection/jedis/JedisConnection/isPipelined()|",
+      "|java+constructor:///java/lang/UnsupportedOperationException/UnsupportedOperationException()|",
+      "|java+method:///org/springframework/data/redis/connection/jedis/JedisConnection/convertJedisAccessException(java.lang.Exception)|"
+    ],
+    "v2Body": [
+      "|java+method:///redis/clients/jedis/BinaryTransaction/flushAll()|",
+      "|java+method:///redis/clients/jedis/Jedis/flushAll()|",
+      "|java+method:///redis/clients/jedis/Pipeline/flushAll()|",
+      "|java+method:///org/springframework/data/redis/connection/jedis/JedisConnection/isQueueing()|",
+      "|java+method:///org/springframework/data/redis/connection/jedis/JedisConnection/isPipelined()|",
+      "|java+method:///org/springframework/data/redis/connection/jedis/JedisConnection/convertJedisAccessException(java.lang.Exception)|"
+    ],
+    "affectedLib": "redis.clients:jedis:2.1.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.springframework.data:spring-data-redis:1.0.0.RELEASE",
+    "coordinatesV2": "org.springframework.data:spring-data-redis:1.0.1.RELEASE",
+    "caller": "|java+method:///org/springframework/data/redis/connection/jedis/JedisConnection/dbSize()|",
+    "called": "|java+method:///redis/clients/jedis/Pipeline/dbSize()|",
+    "v1Body": [
+      "|java+method:///redis/clients/jedis/Jedis/dbSize()|",
+      "|java+method:///org/springframework/data/redis/connection/jedis/JedisConnection/isQueueing()|",
+      "|java+method:///org/springframework/data/redis/connection/jedis/JedisConnection/isPipelined()|",
+      "|java+constructor:///java/lang/UnsupportedOperationException/UnsupportedOperationException()|",
+      "|java+method:///org/springframework/data/redis/connection/jedis/JedisConnection/convertJedisAccessException(java.lang.Exception)|"
+    ],
+    "v2Body": [
+      "|java+method:///redis/clients/jedis/BinaryTransaction/dbSize()|",
+      "|java+method:///redis/clients/jedis/Jedis/dbSize()|",
+      "|java+method:///org/springframework/data/redis/connection/jedis/JedisConnection/isQueueing()|",
+      "|java+method:///redis/clients/jedis/Pipeline/dbSize()|",
+      "|java+method:///org/springframework/data/redis/connection/jedis/JedisConnection/isPipelined()|",
+      "|java+method:///org/springframework/data/redis/connection/jedis/JedisConnection/convertJedisAccessException(java.lang.Exception)|"
+    ],
+    "affectedLib": "redis.clients:jedis:2.1.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.springframework.data:spring-data-redis:1.0.0.RELEASE",
+    "coordinatesV2": "org.springframework.data:spring-data-redis:1.0.1.RELEASE",
+    "caller": "|java+method:///org/springframework/data/redis/connection/jedis/JedisConnection/zInterStore(byte%5B%5D,byte%5B%5D%5B%5D)|",
+    "called": "|java+method:///redis/clients/jedis/BinaryTransaction/zinterstore(byte%5B%5D,byte%5B%5D%5B%5D)|",
+    "v1Body": [
+      "|java+method:///redis/clients/jedis/BinaryTransaction/zinterstore(byte%5B%5D,byte%5B%5D%5B%5D)|",
+      "|java+method:///redis/clients/jedis/Pipeline/zinterstore(byte%5B%5D,byte%5B%5D%5B%5D)|",
+      "|java+method:///org/springframework/data/redis/connection/jedis/JedisConnection/convertJedisAccessException(java.lang.Exception)|",
+      "|java+method:///redis/clients/jedis/Jedis/zinterstore(byte%5B%5D,byte%5B%5D%5B%5D)|",
+      "|java+method:///org/springframework/data/redis/connection/jedis/JedisConnection/isQueueing()|"
+    ],
+    "v2Body": [
+      "|java+method:///redis/clients/jedis/BinaryTransaction/zinterstore(byte%5B%5D,byte%5B%5D%5B%5D)|",
+      "|java+method:///redis/clients/jedis/Pipeline/zinterstore(byte%5B%5D,byte%5B%5D%5B%5D)|",
+      "|java+method:///org/springframework/data/redis/connection/jedis/JedisConnection/isPipelined()|",
+      "|java+method:///org/springframework/data/redis/connection/jedis/JedisConnection/convertJedisAccessException(java.lang.Exception)|",
+      "|java+method:///redis/clients/jedis/Jedis/zinterstore(byte%5B%5D,byte%5B%5D%5B%5D)|",
+      "|java+method:///org/springframework/data/redis/connection/jedis/JedisConnection/isQueueing()|"
+    ],
+    "affectedLib": "redis.clients:jedis:2.1.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.springframework.data:spring-data-redis:1.0.0.RELEASE",
+    "coordinatesV2": "org.springframework.data:spring-data-redis:1.0.1.RELEASE",
+    "caller": "|java+method:///org/springframework/data/redis/connection/jedis/JedisConnection/hDel(byte%5B%5D,byte%5B%5D)|",
+    "called": "|java+method:///redis/clients/jedis/BinaryTransaction/hdel(byte%5B%5D,byte%5B%5D)|",
+    "v1Body": [
+      "|java+method:///redis/clients/jedis/Pipeline/hdel(byte%5B%5D,byte%5B%5D)|",
+      "|java+method:///redis/clients/jedis/Jedis/hdel(byte%5B%5D,byte%5B%5D)|",
+      "|java+method:///org/springframework/data/redis/connection/jedis/JedisConnection/isQueueing()|",
+      "|java+method:///redis/clients/jedis/BinaryTransaction/hdel(byte%5B%5D,byte%5B%5D)|",
+      "|java+method:///org/springframework/data/redis/connection/jedis/JedisConnection/isPipelined()|",
+      "|java+method:///org/springframework/data/redis/connection/jedis/JedisUtils/convertCodeReply(java.lang.Number)|",
+      "|java+method:///org/springframework/data/redis/connection/jedis/JedisConnection/convertJedisAccessException(java.lang.Exception)|"
+    ],
+    "v2Body": [
+      "|java+method:///redis/clients/jedis/Pipeline/hdel(byte%5B%5D,byte%5B%5D)|",
+      "|java+method:///redis/clients/jedis/Jedis/hdel(byte%5B%5D,byte%5B%5D%5B%5D)|",
+      "|java+method:///org/springframework/data/redis/connection/jedis/JedisConnection/isQueueing()|",
+      "|java+method:///redis/clients/jedis/BinaryTransaction/hdel(byte%5B%5D,byte%5B%5D)|",
+      "|java+method:///org/springframework/data/redis/connection/jedis/JedisConnection/isPipelined()|",
+      "|java+method:///org/springframework/data/redis/connection/jedis/JedisUtils/convertCodeReply(java.lang.Number)|",
+      "|java+method:///org/springframework/data/redis/connection/jedis/JedisConnection/convertJedisAccessException(java.lang.Exception)|"
+    ],
+    "affectedLib": "redis.clients:jedis:2.1.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.springframework.data:spring-data-redis:1.0.0.RELEASE",
+    "coordinatesV2": "org.springframework.data:spring-data-redis:1.0.1.RELEASE",
+    "caller": "|java+method:///org/springframework/data/redis/core/RedisConnectionUtils/doGetConnection(org.springframework.data.redis.connection.RedisConnectionFactory,boolean,boolean)|",
+    "called": "|java+method:///org/springframework/transaction/support/TransactionSynchronizationManager/bindResource(java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/logging/Log/debug(java.lang.Object)|",
+      "|java+method:///org/springframework/transaction/support/TransactionSynchronizationManager/registerSynchronization(org.springframework.transaction.support.TransactionSynchronization)|",
+      "|java+constructor:///org/springframework/data/redis/core/RedisConnectionUtils$RedisConnectionHolder/RedisConnectionUtils$RedisConnectionHolder(org.springframework.data.redis.connection.RedisConnection)|",
+      "|java+method:///org/apache/commons/logging/Log/isDebugEnabled()|",
+      "|java+method:///org/springframework/transaction/support/TransactionSynchronizationManager/getResource(java.lang.Object)|",
+      "|java+method:///org/springframework/data/redis/connection/RedisConnectionFactory/getConnection()|",
+      "|java+method:///org/springframework/data/redis/core/RedisConnectionUtils$RedisConnectionHolder/getConnection()|",
+      "|java+method:///org/springframework/transaction/support/TransactionSynchronizationManager/isSynchronizationActive()|",
+      "|java+method:///org/springframework/util/Assert/notNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///org/springframework/transaction/support/TransactionSynchronizationManager/bindResource(java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|",
+      "|java+constructor:///org/springframework/data/redis/core/RedisConnectionUtils$RedisConnectionSynchronization/RedisConnectionUtils$RedisConnectionSynchronization(org.springframework.data.redis.core.RedisConnectionUtils$RedisConnectionHolder,org.springframework.data.redis.connection.RedisConnectionFactory,boolean)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/logging/Log/debug(java.lang.Object)|",
+      "|java+constructor:///org/springframework/data/redis/core/RedisConnectionUtils$RedisConnectionHolder/RedisConnectionUtils$RedisConnectionHolder(org.springframework.data.redis.connection.RedisConnection)|",
+      "|java+method:///org/apache/commons/logging/Log/isDebugEnabled()|",
+      "|java+method:///org/springframework/transaction/support/TransactionSynchronizationManager/getResource(java.lang.Object)|",
+      "|java+method:///org/springframework/data/redis/connection/RedisConnectionFactory/getConnection()|",
+      "|java+method:///org/springframework/data/redis/core/RedisConnectionUtils$RedisConnectionHolder/getConnection()|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|",
+      "|java+method:///org/springframework/util/Assert/notNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///org/springframework/transaction/support/TransactionSynchronizationManager/bindResource(java.lang.Object,java.lang.Object)|"
+    ],
+    "affectedLib": "org.springframework:spring-tx:3.1.1.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.springframework.data:spring-data-redis:1.0.0.RELEASE",
+    "coordinatesV2": "org.springframework.data:spring-data-redis:1.0.1.RELEASE",
+    "caller": "|java+constructor:///org/springframework/data/redis/serializer/GenericToStringSerializer/GenericToStringSerializer(java.lang.Class,java.nio.charset.Charset)|",
+    "called": "|java+constructor:///org/springframework/core/convert/support/DefaultConversionService/DefaultConversionService()|",
+    "v1Body": [
+      "|java+constructor:///org/springframework/data/redis/serializer/GenericToStringSerializer$Converter/GenericToStringSerializer$Converter(org.springframework.data.redis.serializer.GenericToStringSerializer,org.springframework.core.convert.ConversionService)|",
+      "|java+method:///org/springframework/core/convert/support/ConversionServiceFactory/createDefaultConversionService()|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///org/springframework/util/Assert/notNull(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/springframework/data/redis/serializer/GenericToStringSerializer$Converter/GenericToStringSerializer$Converter(org.springframework.data.redis.serializer.GenericToStringSerializer,org.springframework.core.convert.ConversionService)|",
+      "|java+constructor:///org/springframework/core/convert/support/DefaultConversionService/DefaultConversionService()|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///org/springframework/util/Assert/notNull(java.lang.Object)|"
+    ],
+    "affectedLib": "org.springframework:spring-core:3.1.1.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.springframework.data:spring-data-redis:1.0.0.RELEASE",
+    "coordinatesV2": "org.springframework.data:spring-data-redis:1.0.1.RELEASE",
+    "caller": "|java+method:///org/springframework/data/redis/core/AbstractOperations/rawKey(java.lang.Object)|",
+    "called": "|java+method:///org/springframework/util/Assert/notNull(java.lang.Object,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/springframework/util/Assert/notNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///org/springframework/data/redis/serializer/RedisSerializer/serialize(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/springframework/data/redis/core/AbstractOperations/keySerializer()|",
+      "|java+method:///org/springframework/util/Assert/notNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///org/springframework/data/redis/serializer/RedisSerializer/serialize(java.lang.Object)|"
+    ],
+    "affectedLib": "org.springframework:spring-core:3.1.1.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.springframework.data:spring-data-redis:1.0.0.RELEASE",
+    "coordinatesV2": "org.springframework.data:spring-data-redis:1.0.1.RELEASE",
+    "caller": "|java+initializer:///org/springframework/data/redis/connection/jedis/JedisConnection/JedisConnection$initializer|",
+    "called": "|java+method:///org/springframework/util/ReflectionUtils/findMethod(java.lang.Class,java.lang.String,java.lang.Class%5B%5D)|",
+    "v1Body": [
+      "|java+method:///org/springframework/util/ReflectionUtils/makeAccessible(java.lang.reflect.Field)|",
+      "|java+method:///org/springframework/util/ReflectionUtils/findField(java.lang.Class,java.lang.String,java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/springframework/util/ReflectionUtils/makeAccessible(java.lang.reflect.Field)|",
+      "|java+method:///org/springframework/util/ReflectionUtils/makeAccessible(java.lang.reflect.Method)|",
+      "|java+method:///org/springframework/util/ReflectionUtils/findField(java.lang.Class,java.lang.String,java.lang.Class)|",
+      "|java+method:///org/springframework/util/ReflectionUtils/findMethod(java.lang.Class,java.lang.String,java.lang.Class%5B%5D)|"
+    ],
+    "affectedLib": "org.springframework:spring-core:3.1.1.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.springframework.data:spring-data-redis:1.0.0.RELEASE",
+    "coordinatesV2": "org.springframework.data:spring-data-redis:1.0.1.RELEASE",
+    "caller": "|java+method:///org/springframework/data/redis/core/RedisConnectionUtils/doGetConnection(org.springframework.data.redis.connection.RedisConnectionFactory,boolean,boolean)|",
+    "called": "|java+method:///org/springframework/util/Assert/notNull(java.lang.Object,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/logging/Log/debug(java.lang.Object)|",
+      "|java+method:///org/springframework/transaction/support/TransactionSynchronizationManager/registerSynchronization(org.springframework.transaction.support.TransactionSynchronization)|",
+      "|java+constructor:///org/springframework/data/redis/core/RedisConnectionUtils$RedisConnectionHolder/RedisConnectionUtils$RedisConnectionHolder(org.springframework.data.redis.connection.RedisConnection)|",
+      "|java+method:///org/apache/commons/logging/Log/isDebugEnabled()|",
+      "|java+method:///org/springframework/transaction/support/TransactionSynchronizationManager/getResource(java.lang.Object)|",
+      "|java+method:///org/springframework/data/redis/connection/RedisConnectionFactory/getConnection()|",
+      "|java+method:///org/springframework/data/redis/core/RedisConnectionUtils$RedisConnectionHolder/getConnection()|",
+      "|java+method:///org/springframework/transaction/support/TransactionSynchronizationManager/isSynchronizationActive()|",
+      "|java+method:///org/springframework/util/Assert/notNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///org/springframework/transaction/support/TransactionSynchronizationManager/bindResource(java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|",
+      "|java+constructor:///org/springframework/data/redis/core/RedisConnectionUtils$RedisConnectionSynchronization/RedisConnectionUtils$RedisConnectionSynchronization(org.springframework.data.redis.core.RedisConnectionUtils$RedisConnectionHolder,org.springframework.data.redis.connection.RedisConnectionFactory,boolean)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/logging/Log/debug(java.lang.Object)|",
+      "|java+constructor:///org/springframework/data/redis/core/RedisConnectionUtils$RedisConnectionHolder/RedisConnectionUtils$RedisConnectionHolder(org.springframework.data.redis.connection.RedisConnection)|",
+      "|java+method:///org/apache/commons/logging/Log/isDebugEnabled()|",
+      "|java+method:///org/springframework/transaction/support/TransactionSynchronizationManager/getResource(java.lang.Object)|",
+      "|java+method:///org/springframework/data/redis/connection/RedisConnectionFactory/getConnection()|",
+      "|java+method:///org/springframework/data/redis/core/RedisConnectionUtils$RedisConnectionHolder/getConnection()|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|",
+      "|java+method:///org/springframework/util/Assert/notNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///org/springframework/transaction/support/TransactionSynchronizationManager/bindResource(java.lang.Object,java.lang.Object)|"
+    ],
+    "affectedLib": "org.springframework:spring-core:3.1.1.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.springframework.data:spring-data-redis:1.0.0.RELEASE",
+    "coordinatesV2": "org.springframework.data:spring-data-redis:1.0.1.RELEASE",
+    "caller": "|java+method:///org/springframework/data/redis/core/AbstractOperations/rawHashKey(java.lang.Object)|",
+    "called": "|java+method:///org/springframework/util/Assert/notNull(java.lang.Object,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/springframework/util/Assert/notNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///org/springframework/data/redis/serializer/RedisSerializer/serialize(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/springframework/util/Assert/notNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///org/springframework/data/redis/serializer/RedisSerializer/serialize(java.lang.Object)|",
+      "|java+method:///org/springframework/data/redis/core/AbstractOperations/hashKeySerializer()|"
+    ],
+    "affectedLib": "org.springframework:spring-core:3.1.1.RELEASE",
+    "change": "UPDATED"
+  }
+]

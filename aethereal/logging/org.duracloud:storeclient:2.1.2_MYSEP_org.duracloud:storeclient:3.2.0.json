@@ -1,0 +1,156 @@
+[
+  {
+    "coordinatesV1": "org.duracloud:storeclient:2.1.2",
+    "coordinatesV2": "org.duracloud:storeclient:3.2.0",
+    "caller": "|java+constructor:///org/duracloud/client/ContentIterator/ContentIterator(org.duracloud.client.ContentStore,java.lang.String,java.lang.String,long)|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/duracloud/client/ContentIterator/buildContentList(java.lang.String)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///org/duracloud/client/ContentIterator/retryBuildContentList(java.lang.String)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.duracloud:storeclient:2.1.2",
+    "coordinatesV2": "org.duracloud:storeclient:3.2.0",
+    "caller": "|java+constructor:///org/duracloud/client/ContentStoreImpl/ContentStoreImpl(java.lang.String,org.duracloud.storage.domain.StorageProviderType,java.lang.String,org.duracloud.common.web.RestHttpHelper)|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+constructor:///org/duracloud/client/ContentStoreImpl$1/ContentStoreImpl$1(org.duracloud.client.ContentStoreImpl)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.duracloud:storeclient:2.1.2",
+    "coordinatesV2": "org.duracloud:storeclient:3.2.0",
+    "caller": "|java+method:///org/duracloud/client/ContentStoreManagerImpl/getStorageAccounts()|",
+    "called": "|java+method:///org/duracloud/common/web/RestHttpHelper/get(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/duracloud/common/web/RestHttpHelper/get(java.lang.String)|",
+      "|java+method:///org/duracloud/storage/domain/StorageAccountManager/initialize(java.io.InputStream)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+constructor:///java/io/ByteArrayInputStream/ByteArrayInputStream(byte%5B%5D)|",
+      "|java+constructor:///org/duracloud/error/ContentStoreException/ContentStoreException(java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///org/duracloud/storage/domain/StorageAccountManager/StorageAccountManager()|",
+      "|java+method:///java/lang/String/getBytes()|",
+      "|java+method:///org/duracloud/client/ContentStoreManagerImpl/getRestHelper()|",
+      "|java+method:///org/duracloud/common/web/RestHttpHelper$HttpResponse/getStatusCode()|",
+      "|java+method:///org/duracloud/common/web/RestHttpHelper$HttpResponse/getResponseBody()|",
+      "|java+constructor:///org/duracloud/storage/error/StorageException/StorageException(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/Exception/getMessage()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/duracloud/storage/xml/StorageAccountsDocumentBinding/StorageAccountsDocumentBinding()|",
+      "|java+method:///org/duracloud/common/web/RestHttpHelper/get(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+constructor:///java/io/ByteArrayInputStream/ByteArrayInputStream(byte%5B%5D)|",
+      "|java+constructor:///org/duracloud/error/ContentStoreException/ContentStoreException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/duracloud/client/ContentStoreManagerImpl/getRestHelper()|",
+      "|java+method:///org/duracloud/common/web/RestHttpHelper$HttpResponse/getStatusCode()|",
+      "|java+method:///org/duracloud/common/web/RestHttpHelper$HttpResponse/getResponseBody()|",
+      "|java+constructor:///org/duracloud/storage/error/StorageException/StorageException(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/duracloud/storage/domain/StorageAccountManager/initialize(java.util.List)|",
+      "|java+method:///java/lang/String/getBytes(java.lang.String)|",
+      "|java+constructor:///org/duracloud/storage/domain/StorageAccountManager/StorageAccountManager()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/duracloud/storage/xml/StorageAccountsDocumentBinding/createStorageAccountsFromXml(java.io.InputStream)|",
+      "|java+method:///java/lang/Exception/getMessage()|"
+    ],
+    "affectedLib": "org.duracloud:common:3.2.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.duracloud:storeclient:2.1.2",
+    "coordinatesV2": "org.duracloud:storeclient:3.2.0",
+    "caller": "|java+method:///org/duracloud/client/ContentStoreImpl/checkResponse(org.duracloud.common.web.RestHttpHelper$HttpResponse,int)|",
+    "called": "|java+method:///org/duracloud/common/web/RestHttpHelper$HttpResponse/getResponseBody()|",
+    "v1Body": [
+      "|java+constructor:///org/duracloud/error/InvalidIdException/InvalidIdException(java.lang.String)|",
+      "|java+constructor:///org/duracloud/error/NotFoundException/NotFoundException(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/duracloud/common/web/RestHttpHelper$HttpResponse/getStatusCode()|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+method:///org/duracloud/common/web/RestHttpHelper$HttpResponse/getResponseBody()|",
+      "|java+constructor:///org/duracloud/error/ContentStoreException/ContentStoreException(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///org/duracloud/error/UnauthorizedException/UnauthorizedException(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/duracloud/error/InvalidIdException/InvalidIdException(java.lang.String)|",
+      "|java+constructor:///org/duracloud/error/NotFoundException/NotFoundException(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/duracloud/common/web/RestHttpHelper$HttpResponse/getStatusCode()|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+method:///org/duracloud/common/web/RestHttpHelper$HttpResponse/getResponseBody()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///org/duracloud/error/UnauthorizedException/UnauthorizedException(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///org/duracloud/error/ContentStoreException/ContentStoreException(java.lang.String)|",
+      "|java+constructor:///org/duracloud/error/ContentStateException/ContentStateException(java.lang.String)|"
+    ],
+    "affectedLib": "org.duracloud:common:3.2.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.duracloud:storeclient:2.1.2",
+    "coordinatesV2": "org.duracloud:storeclient:3.2.0",
+    "caller": "|java+method:///org/duracloud/client/ContentStoreManagerImpl/getStorageAccounts()|",
+    "called": "|java+constructor:///org/duracloud/storage/error/StorageException/StorageException(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/duracloud/common/web/RestHttpHelper/get(java.lang.String)|",
+      "|java+method:///org/duracloud/storage/domain/StorageAccountManager/initialize(java.io.InputStream)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+constructor:///java/io/ByteArrayInputStream/ByteArrayInputStream(byte%5B%5D)|",
+      "|java+constructor:///org/duracloud/error/ContentStoreException/ContentStoreException(java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///org/duracloud/storage/domain/StorageAccountManager/StorageAccountManager()|",
+      "|java+method:///java/lang/String/getBytes()|",
+      "|java+method:///org/duracloud/client/ContentStoreManagerImpl/getRestHelper()|",
+      "|java+method:///org/duracloud/common/web/RestHttpHelper$HttpResponse/getStatusCode()|",
+      "|java+method:///org/duracloud/common/web/RestHttpHelper$HttpResponse/getResponseBody()|",
+      "|java+constructor:///org/duracloud/storage/error/StorageException/StorageException(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/Exception/getMessage()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/duracloud/storage/xml/StorageAccountsDocumentBinding/StorageAccountsDocumentBinding()|",
+      "|java+method:///org/duracloud/common/web/RestHttpHelper/get(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+constructor:///java/io/ByteArrayInputStream/ByteArrayInputStream(byte%5B%5D)|",
+      "|java+constructor:///org/duracloud/error/ContentStoreException/ContentStoreException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/duracloud/client/ContentStoreManagerImpl/getRestHelper()|",
+      "|java+method:///org/duracloud/common/web/RestHttpHelper$HttpResponse/getStatusCode()|",
+      "|java+method:///org/duracloud/common/web/RestHttpHelper$HttpResponse/getResponseBody()|",
+      "|java+constructor:///org/duracloud/storage/error/StorageException/StorageException(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/duracloud/storage/domain/StorageAccountManager/initialize(java.util.List)|",
+      "|java+method:///java/lang/String/getBytes(java.lang.String)|",
+      "|java+constructor:///org/duracloud/storage/domain/StorageAccountManager/StorageAccountManager()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/duracloud/storage/xml/StorageAccountsDocumentBinding/createStorageAccountsFromXml(java.io.InputStream)|",
+      "|java+method:///java/lang/Exception/getMessage()|"
+    ],
+    "affectedLib": "org.duracloud:storageprovider:3.2.0",
+    "change": "UPDATED"
+  }
+]

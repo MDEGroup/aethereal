@@ -1,0 +1,625 @@
+[
+  {
+    "coordinatesV1": "org.springframework.data:spring-data-neo4j:4.1.0.RELEASE",
+    "coordinatesV2": "org.springframework.data:spring-data-neo4j:4.0.0.RELEASE",
+    "caller": "|java+method:///org/springframework/data/neo4j/mapping/Neo4jMappingContext/createPersistentProperty(java.lang.reflect.Field,java.beans.PropertyDescriptor,org.springframework.data.neo4j.mapping.Neo4jPersistentEntity,org.springframework.data.mapping.model.SimpleTypeHolder)|",
+    "called": "|java+method:///org/neo4j/ogm/metadata/MetaData/classInfo(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/springframework/data/neo4j/mapping/Neo4jPersistentEntity/getType()|",
+      "|java+method:///org/springframework/data/neo4j/mapping/Neo4jMappingContext/updateSimpleTypeHolder(org.springframework.data.mapping.model.SimpleTypeHolder,java.lang.reflect.Field)|",
+      "|java+method:///org/neo4j/ogm/metadata/info/ClassInfo/propertyFieldByName(java.lang.String)|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+method:///org/neo4j/ogm/metadata/info/ClassInfo/getField(org.neo4j.ogm.metadata.info.FieldInfo)|",
+      "|java+method:///org/neo4j/ogm/metadata/info/ClassInfo/name()|",
+      "|java+method:///org/neo4j/ogm/metadata/MetaData/classInfo(java.lang.String)|",
+      "|java+constructor:///org/springframework/data/neo4j/mapping/Neo4jPersistentProperty/Neo4jPersistentProperty(org.neo4j.ogm.metadata.info.ClassInfo,java.lang.reflect.Field,java.beans.PropertyDescriptor,org.springframework.data.mapping.PersistentEntity,org.springframework.data.mapping.model.SimpleTypeHolder)|",
+      "|java+method:///org/neo4j/ogm/metadata/info/ClassInfo/relationshipFieldByName(java.lang.String)|",
+      "|java+method:///java/beans/PropertyDescriptor/getName()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/neo4j/ogm/MetaData/classInfo(java.lang.String)|",
+      "|java+method:///org/springframework/data/neo4j/mapping/Neo4jPersistentEntity/getType()|",
+      "|java+method:///org/springframework/data/neo4j/mapping/Neo4jMappingContext/updateSimpleTypeHolder(org.springframework.data.mapping.model.SimpleTypeHolder,java.lang.reflect.Field)|",
+      "|java+method:///org/neo4j/ogm/metadata/ClassInfo/name()|",
+      "|java+method:///java/beans/PropertyDescriptor/getName()|",
+      "|java+constructor:///org/springframework/data/neo4j/mapping/Neo4jPersistentProperty/Neo4jPersistentProperty(org.neo4j.ogm.metadata.ClassInfo,java.lang.reflect.Field,java.beans.PropertyDescriptor,org.springframework.data.mapping.PersistentEntity,org.springframework.data.mapping.model.SimpleTypeHolder)|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+method:///org/neo4j/ogm/metadata/ClassInfo/relationshipFieldByName(java.lang.String)|",
+      "|java+method:///org/neo4j/ogm/metadata/ClassInfo/getField(org.neo4j.ogm.metadata.FieldInfo)|",
+      "|java+method:///org/neo4j/ogm/metadata/ClassInfo/propertyFieldByName(java.lang.String)|"
+    ],
+    "affectedLib": "org.neo4j:neo4j-ogm:1.1.2",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.springframework.data:spring-data-neo4j:4.1.0.RELEASE",
+    "coordinatesV2": "org.springframework.data:spring-data-neo4j:4.0.0.RELEASE",
+    "caller": "|java+method:///org/springframework/data/neo4j/repository/query/derived/CypherFinderQuery/addPart(org.springframework.data.repository.query.parser.Part,org.neo4j.ogm.cypher.BooleanOperator)|",
+    "called": "|java+method:///org/neo4j/ogm/cypher/Filters/add(org.neo4j.ogm.cypher.Filter%5B%5D)|",
+    "v1Body": [
+      "|java+constructor:///org/neo4j/ogm/cypher/Filter/Filter()|",
+      "|java+method:///org/neo4j/ogm/cypher/Filters/add(org.neo4j.ogm.cypher.Filter%5B%5D)|",
+      "|java+method:///org/neo4j/ogm/cypher/Filter/setPropertyPosition(java.lang.Integer)|",
+      "|java+method:///org/springframework/data/repository/query/parser/Part/getProperty()|",
+      "|java+method:///org/springframework/data/mapping/PropertyPath/getLeafProperty()|",
+      "|java+method:///org/springframework/data/mapping/PropertyPath/getSegment()|",
+      "|java+method:///org/springframework/data/mapping/PropertyPath/getType()|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///org/springframework/data/util/TypeInformation/getType()|",
+      "|java+method:///org/springframework/data/neo4j/repository/query/derived/CypherFinderQuery/convertToComparisonOperator(org.springframework.data.repository.query.parser.Part$Type)|",
+      "|java+method:///org/springframework/data/mapping/PropertyPath/next()|",
+      "|java+method:///org/neo4j/ogm/cypher/Filter/setComparisonOperator(org.neo4j.ogm.cypher.ComparisonOperator)|",
+      "|java+method:///org/neo4j/ogm/cypher/Filter/setNestedPropertyType(java.lang.Class)|",
+      "|java+method:///org/neo4j/ogm/cypher/Filter/setNestedPropertyName(java.lang.String)|",
+      "|java+method:///org/neo4j/ogm/cypher/Filter/setPropertyName(java.lang.String)|",
+      "|java+method:///org/springframework/data/repository/query/parser/Part/getType()|",
+      "|java+method:///org/springframework/data/mapping/PropertyPath/getOwningType()|",
+      "|java+method:///org/neo4j/ogm/cypher/Filter/setBooleanOperator(org.neo4j.ogm.cypher.BooleanOperator)|",
+      "|java+method:///org/neo4j/ogm/cypher/Filter/setOwnerEntityType(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/neo4j/ogm/cypher/Filter/Filter()|",
+      "|java+method:///org/neo4j/ogm/cypher/Filters/add(org.neo4j.ogm.cypher.Filter%5B%5D)|",
+      "|java+method:///org/neo4j/ogm/cypher/Filter/setPropertyPosition(java.lang.Integer)|",
+      "|java+method:///org/springframework/data/mapping/PropertyPath/getLeafProperty()|",
+      "|java+method:///org/springframework/data/mapping/PropertyPath/getSegment()|",
+      "|java+method:///org/springframework/data/mapping/PropertyPath/getType()|",
+      "|java+method:///org/neo4j/ogm/cypher/Filter/setNegated(boolean)|",
+      "|java+method:///org/springframework/data/util/TypeInformation/getType()|",
+      "|java+method:///org/springframework/data/neo4j/repository/query/derived/CypherFinderQuery/convertToComparisonOperator(org.springframework.data.repository.query.parser.Part$Type)|",
+      "|java+method:///org/springframework/data/mapping/PropertyPath/next()|",
+      "|java+method:///org/neo4j/ogm/cypher/Filter/setComparisonOperator(org.neo4j.ogm.cypher.ComparisonOperator)|",
+      "|java+method:///org/neo4j/ogm/cypher/Filter/setNestedPropertyType(java.lang.Class)|",
+      "|java+method:///org/neo4j/ogm/cypher/Filter/setNestedPropertyName(java.lang.String)|",
+      "|java+method:///org/springframework/data/repository/query/parser/Part/getProperty()|",
+      "|java+method:///org/springframework/data/repository/query/parser/Part$Type/name()|",
+      "|java+method:///org/neo4j/ogm/cypher/Filter/setPropertyName(java.lang.String)|",
+      "|java+method:///org/springframework/data/repository/query/parser/Part/getType()|",
+      "|java+method:///org/springframework/data/mapping/PropertyPath/getOwningType()|",
+      "|java+method:///org/neo4j/ogm/cypher/Filter/setBooleanOperator(org.neo4j.ogm.cypher.BooleanOperator)|",
+      "|java+method:///org/neo4j/ogm/cypher/Filter/setOwnerEntityType(java.lang.Class)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///java/lang/String/startsWith(java.lang.String)|"
+    ],
+    "affectedLib": "org.neo4j:neo4j-ogm:1.1.2",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.springframework.data:spring-data-neo4j:4.1.0.RELEASE",
+    "coordinatesV2": "org.springframework.data:spring-data-neo4j:4.0.0.RELEASE",
+    "caller": "|java+method:///org/springframework/data/neo4j/template/Neo4jTemplate/loadAllByProperty(java.lang.Class,java.lang.String,java.lang.Object,int)|",
+    "called": "|java+constructor:///org/neo4j/ogm/cypher/Filter/Filter(java.lang.String,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/neo4j/ogm/session/Session/loadAll(java.lang.Class,org.neo4j.ogm.cypher.Filter,int)|",
+      "|java+constructor:///org/neo4j/ogm/cypher/Filter/Filter(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/springframework/data/neo4j/template/Neo4jOgmExceptionTranslator/translateExceptionIfPossible(java.lang.Exception)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/neo4j/ogm/session/Session/loadAll(java.lang.Class,org.neo4j.ogm.cypher.Filter,int)|",
+      "|java+constructor:///org/neo4j/ogm/cypher/Filter/Filter(java.lang.String,java.lang.Object)|"
+    ],
+    "affectedLib": "org.neo4j:neo4j-ogm:1.1.2",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.springframework.data:spring-data-neo4j:4.1.0.RELEASE",
+    "coordinatesV2": "org.springframework.data:spring-data-neo4j:4.0.0.RELEASE",
+    "caller": "|java+method:///org/springframework/data/neo4j/mapping/Neo4jMappingContext/shouldUpdateSimpleTypes(org.springframework.data.mapping.model.SimpleTypeHolder,java.lang.reflect.Field,java.lang.Class)|",
+    "called": "|java+method:///org/neo4j/ogm/metadata/MetaData/classInfo(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/lang/Class/isInterface()|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+method:///org/neo4j/ogm/metadata/MetaData/classInfo(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/springframework/data/mapping/model/SimpleTypeHolder/isSimpleType(java.lang.Class)|",
+      "|java+method:///java/lang/reflect/Field/isAnnotationPresent(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Class/isInterface()|",
+      "|java+method:///org/neo4j/ogm/MetaData/classInfo(java.lang.String)|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/springframework/data/mapping/model/SimpleTypeHolder/isSimpleType(java.lang.Class)|",
+      "|java+method:///java/lang/reflect/Field/isAnnotationPresent(java.lang.Class)|"
+    ],
+    "affectedLib": "org.neo4j:neo4j-ogm:1.1.2",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.springframework.data:spring-data-neo4j:4.1.0.RELEASE",
+    "coordinatesV2": "org.springframework.data:spring-data-neo4j:4.0.0.RELEASE",
+    "caller": "|java+method:///org/springframework/data/neo4j/repository/GraphRepositoryImpl/findAll(org.springframework.data.domain.Pageable,int)|",
+    "called": "|java+constructor:///org/neo4j/ogm/cypher/query/Pagination/Pagination(int,int)|",
+    "v1Body": [
+      "|java+method:///org/springframework/data/neo4j/repository/GraphRepositoryImpl/updatePage(org.springframework.data.domain.Pageable,java.util.List)|",
+      "|java+constructor:///java/util/ArrayList/ArrayList(java.util.Collection)|",
+      "|java+method:///org/springframework/data/neo4j/repository/GraphRepositoryImpl/convert(org.springframework.data.domain.Sort)|",
+      "|java+constructor:///org/neo4j/ogm/cypher/query/Pagination/Pagination(int,int)|",
+      "|java+method:///org/springframework/data/domain/Pageable/getPageSize()|",
+      "|java+method:///org/springframework/data/domain/Pageable/getPageNumber()|",
+      "|java+method:///org/neo4j/ogm/session/Session/loadAll(java.lang.Class,org.neo4j.ogm.cypher.query.SortOrder,org.neo4j.ogm.cypher.query.Pagination,int)|",
+      "|java+method:///org/springframework/data/domain/Pageable/getSort()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList(java.util.Collection)|",
+      "|java+method:///org/springframework/data/neo4j/repository/GraphRepositoryImpl/convert(org.springframework.data.domain.Sort)|",
+      "|java+constructor:///org/neo4j/ogm/cypher/query/Pagination/Pagination(int,int)|",
+      "|java+method:///org/springframework/data/domain/Pageable/getPageSize()|",
+      "|java+method:///org/springframework/data/domain/Pageable/getPageNumber()|",
+      "|java+method:///org/springframework/data/domain/Pageable/getSort()|",
+      "|java+method:///org/springframework/data/neo4j/repository/GraphRepositoryImpl/updatePage(org.springframework.data.domain.Pageable,java.util.List)|",
+      "|java+method:///org/springframework/data/neo4j/template/Neo4jOperations/loadAll(java.lang.Class,org.neo4j.ogm.cypher.query.SortOrder,org.neo4j.ogm.cypher.query.Pagination,int)|"
+    ],
+    "affectedLib": "org.neo4j:neo4j-ogm:1.1.2",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.springframework.data:spring-data-neo4j:4.1.0.RELEASE",
+    "coordinatesV2": "org.springframework.data:spring-data-neo4j:4.0.0.RELEASE",
+    "caller": "|java+method:///org/springframework/data/neo4j/repository/query/QueryResultGraphRepositoryQuery/mapToConcreteType(java.lang.Class,java.lang.String,java.util.Map)|",
+    "called": "|java+constructor:///org/neo4j/ogm/cypher/query/RowModelQuery/RowModelQuery(java.lang.String,java.util.Map)|",
+    "v1Body": [
+      "|java+constructor:///org/springframework/data/neo4j/repository/query/QueryResultGraphRepositoryQuery$1/QueryResultGraphRepositoryQuery$1(org.springframework.data.neo4j.repository.query.QueryResultGraphRepositoryQuery,org.neo4j.ogm.cypher.query.RowModelQuery,java.lang.Class)|",
+      "|java+constructor:///org/neo4j/ogm/cypher/query/RowModelQuery/RowModelQuery(java.lang.String,java.util.Map)|",
+      "|java+method:///org/neo4j/ogm/session/Session/doInTransaction(org.neo4j.ogm.session.GraphCallback)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/springframework/data/neo4j/repository/query/QueryResultGraphRepositoryQuery$1/QueryResultGraphRepositoryQuery$1(org.springframework.data.neo4j.repository.query.QueryResultGraphRepositoryQuery,java.lang.String,java.util.Map,java.lang.Class)|",
+      "|java+method:///org/neo4j/ogm/session/Session/doInTransaction(org.neo4j.ogm.session.GraphCallback)|"
+    ],
+    "affectedLib": "org.neo4j:neo4j-ogm:1.1.2",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.springframework.data:spring-data-neo4j:4.1.0.RELEASE",
+    "coordinatesV2": "org.springframework.data:spring-data-neo4j:4.0.0.RELEASE",
+    "caller": "|java+method:///org/springframework/data/neo4j/template/Neo4jTemplate/loadAllByProperty(java.lang.Class,java.lang.String,java.lang.Object)|",
+    "called": "|java+constructor:///org/neo4j/ogm/cypher/Filter/Filter(java.lang.String,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/neo4j/ogm/session/Session/loadAll(java.lang.Class,org.neo4j.ogm.cypher.Filter)|",
+      "|java+constructor:///org/neo4j/ogm/cypher/Filter/Filter(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/springframework/data/neo4j/template/Neo4jOgmExceptionTranslator/translateExceptionIfPossible(java.lang.Exception)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/neo4j/ogm/session/Session/loadAll(java.lang.Class,org.neo4j.ogm.cypher.Filter)|",
+      "|java+constructor:///org/neo4j/ogm/cypher/Filter/Filter(java.lang.String,java.lang.Object)|"
+    ],
+    "affectedLib": "org.neo4j:neo4j-ogm:1.1.2",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.springframework.data:spring-data-neo4j:4.0.0.RELEASE",
+    "coordinatesV2": "org.springframework.data:spring-data-neo4j:4.1.0.RELEASE",
+    "caller": "|java+method:///org/springframework/data/neo4j/mapping/Neo4jMappingContext/createPersistentProperty(java.lang.reflect.Field,java.beans.PropertyDescriptor,org.springframework.data.neo4j.mapping.Neo4jPersistentEntity,org.springframework.data.mapping.model.SimpleTypeHolder)|",
+    "called": "|java+method:///org/neo4j/ogm/metadata/ClassInfo/getField(org.neo4j.ogm.metadata.FieldInfo)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/springframework/data/neo4j/mapping/Neo4jPersistentEntity/getType()|",
+      "|java+method:///org/springframework/data/neo4j/mapping/Neo4jMappingContext/updateSimpleTypeHolder(org.springframework.data.mapping.model.SimpleTypeHolder,java.lang.reflect.Field)|",
+      "|java+method:///org/neo4j/ogm/metadata/info/ClassInfo/propertyFieldByName(java.lang.String)|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+method:///org/neo4j/ogm/metadata/info/ClassInfo/getField(org.neo4j.ogm.metadata.info.FieldInfo)|",
+      "|java+method:///org/neo4j/ogm/metadata/info/ClassInfo/name()|",
+      "|java+method:///org/neo4j/ogm/metadata/MetaData/classInfo(java.lang.String)|",
+      "|java+constructor:///org/springframework/data/neo4j/mapping/Neo4jPersistentProperty/Neo4jPersistentProperty(org.neo4j.ogm.metadata.info.ClassInfo,java.lang.reflect.Field,java.beans.PropertyDescriptor,org.springframework.data.mapping.PersistentEntity,org.springframework.data.mapping.model.SimpleTypeHolder)|",
+      "|java+method:///org/neo4j/ogm/metadata/info/ClassInfo/relationshipFieldByName(java.lang.String)|",
+      "|java+method:///java/beans/PropertyDescriptor/getName()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/neo4j/ogm/MetaData/classInfo(java.lang.String)|",
+      "|java+method:///org/springframework/data/neo4j/mapping/Neo4jPersistentEntity/getType()|",
+      "|java+method:///org/springframework/data/neo4j/mapping/Neo4jMappingContext/updateSimpleTypeHolder(org.springframework.data.mapping.model.SimpleTypeHolder,java.lang.reflect.Field)|",
+      "|java+method:///org/neo4j/ogm/metadata/ClassInfo/name()|",
+      "|java+method:///java/beans/PropertyDescriptor/getName()|",
+      "|java+constructor:///org/springframework/data/neo4j/mapping/Neo4jPersistentProperty/Neo4jPersistentProperty(org.neo4j.ogm.metadata.ClassInfo,java.lang.reflect.Field,java.beans.PropertyDescriptor,org.springframework.data.mapping.PersistentEntity,org.springframework.data.mapping.model.SimpleTypeHolder)|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+method:///org/neo4j/ogm/metadata/ClassInfo/relationshipFieldByName(java.lang.String)|",
+      "|java+method:///org/neo4j/ogm/metadata/ClassInfo/getField(org.neo4j.ogm.metadata.FieldInfo)|",
+      "|java+method:///org/neo4j/ogm/metadata/ClassInfo/propertyFieldByName(java.lang.String)|"
+    ],
+    "affectedLib": "org.neo4j:neo4j-ogm-core:2.0.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.springframework.data:spring-data-neo4j:4.0.0.RELEASE",
+    "coordinatesV2": "org.springframework.data:spring-data-neo4j:4.1.0.RELEASE",
+    "caller": "|java+method:///org/springframework/data/neo4j/repository/query/derived/CypherFinderQuery/addPart(org.springframework.data.repository.query.parser.Part,org.neo4j.ogm.cypher.BooleanOperator)|",
+    "called": "|java+method:///org/neo4j/ogm/cypher/Filters/add(org.neo4j.ogm.cypher.Filter%5B%5D)|",
+    "v1Body": [
+      "|java+constructor:///org/neo4j/ogm/cypher/Filter/Filter()|",
+      "|java+method:///org/neo4j/ogm/cypher/Filters/add(org.neo4j.ogm.cypher.Filter%5B%5D)|",
+      "|java+method:///org/neo4j/ogm/cypher/Filter/setPropertyPosition(java.lang.Integer)|",
+      "|java+method:///org/springframework/data/repository/query/parser/Part/getProperty()|",
+      "|java+method:///org/springframework/data/mapping/PropertyPath/getLeafProperty()|",
+      "|java+method:///org/springframework/data/mapping/PropertyPath/getSegment()|",
+      "|java+method:///org/springframework/data/mapping/PropertyPath/getType()|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///org/springframework/data/util/TypeInformation/getType()|",
+      "|java+method:///org/springframework/data/neo4j/repository/query/derived/CypherFinderQuery/convertToComparisonOperator(org.springframework.data.repository.query.parser.Part$Type)|",
+      "|java+method:///org/springframework/data/mapping/PropertyPath/next()|",
+      "|java+method:///org/neo4j/ogm/cypher/Filter/setComparisonOperator(org.neo4j.ogm.cypher.ComparisonOperator)|",
+      "|java+method:///org/neo4j/ogm/cypher/Filter/setNestedPropertyType(java.lang.Class)|",
+      "|java+method:///org/neo4j/ogm/cypher/Filter/setNestedPropertyName(java.lang.String)|",
+      "|java+method:///org/neo4j/ogm/cypher/Filter/setPropertyName(java.lang.String)|",
+      "|java+method:///org/springframework/data/repository/query/parser/Part/getType()|",
+      "|java+method:///org/springframework/data/mapping/PropertyPath/getOwningType()|",
+      "|java+method:///org/neo4j/ogm/cypher/Filter/setBooleanOperator(org.neo4j.ogm.cypher.BooleanOperator)|",
+      "|java+method:///org/neo4j/ogm/cypher/Filter/setOwnerEntityType(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/neo4j/ogm/cypher/Filter/Filter()|",
+      "|java+method:///org/neo4j/ogm/cypher/Filters/add(org.neo4j.ogm.cypher.Filter%5B%5D)|",
+      "|java+method:///org/neo4j/ogm/cypher/Filter/setPropertyPosition(java.lang.Integer)|",
+      "|java+method:///org/springframework/data/mapping/PropertyPath/getLeafProperty()|",
+      "|java+method:///org/springframework/data/mapping/PropertyPath/getSegment()|",
+      "|java+method:///org/springframework/data/mapping/PropertyPath/getType()|",
+      "|java+method:///org/neo4j/ogm/cypher/Filter/setNegated(boolean)|",
+      "|java+method:///org/springframework/data/util/TypeInformation/getType()|",
+      "|java+method:///org/springframework/data/neo4j/repository/query/derived/CypherFinderQuery/convertToComparisonOperator(org.springframework.data.repository.query.parser.Part$Type)|",
+      "|java+method:///org/springframework/data/mapping/PropertyPath/next()|",
+      "|java+method:///org/neo4j/ogm/cypher/Filter/setComparisonOperator(org.neo4j.ogm.cypher.ComparisonOperator)|",
+      "|java+method:///org/neo4j/ogm/cypher/Filter/setNestedPropertyType(java.lang.Class)|",
+      "|java+method:///org/neo4j/ogm/cypher/Filter/setNestedPropertyName(java.lang.String)|",
+      "|java+method:///org/springframework/data/repository/query/parser/Part/getProperty()|",
+      "|java+method:///org/springframework/data/repository/query/parser/Part$Type/name()|",
+      "|java+method:///org/neo4j/ogm/cypher/Filter/setPropertyName(java.lang.String)|",
+      "|java+method:///org/springframework/data/repository/query/parser/Part/getType()|",
+      "|java+method:///org/springframework/data/mapping/PropertyPath/getOwningType()|",
+      "|java+method:///org/neo4j/ogm/cypher/Filter/setBooleanOperator(org.neo4j.ogm.cypher.BooleanOperator)|",
+      "|java+method:///org/neo4j/ogm/cypher/Filter/setOwnerEntityType(java.lang.Class)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///java/lang/String/startsWith(java.lang.String)|"
+    ],
+    "affectedLib": "org.neo4j:neo4j-ogm-core:2.0.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.springframework.data:spring-data-neo4j:4.0.0.RELEASE",
+    "coordinatesV2": "org.springframework.data:spring-data-neo4j:4.1.0.RELEASE",
+    "caller": "|java+method:///org/springframework/data/neo4j/template/Neo4jTemplate/execute(java.lang.String)|",
+    "called": "|java+method:///org/neo4j/ogm/session/Utils/map(java.lang.Object%5B%5D)|",
+    "v1Body": [
+      "|java+method:///org/neo4j/ogm/session/Session/execute(java.lang.String)|",
+      "|java+method:///org/springframework/data/neo4j/template/Neo4jOgmExceptionTranslator/translateExceptionIfPossible(java.lang.Exception)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/neo4j/ogm/session/Utils/map(java.lang.Object%5B%5D)|",
+      "|java+method:///org/neo4j/ogm/session/Session/query(java.lang.String,java.util.Map)|",
+      "|java+method:///org/neo4j/ogm/model/Result/queryStatistics()|"
+    ],
+    "affectedLib": "org.neo4j:neo4j-ogm-core:2.0.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.springframework.data:spring-data-neo4j:4.0.0.RELEASE",
+    "coordinatesV2": "org.springframework.data:spring-data-neo4j:4.1.0.RELEASE",
+    "caller": "|java+method:///org/springframework/data/neo4j/template/Neo4jTemplate/loadAllByProperty(java.lang.Class,java.lang.String,java.lang.Object,int)|",
+    "called": "|java+constructor:///org/neo4j/ogm/cypher/Filter/Filter(java.lang.String,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/neo4j/ogm/session/Session/loadAll(java.lang.Class,org.neo4j.ogm.cypher.Filter,int)|",
+      "|java+constructor:///org/neo4j/ogm/cypher/Filter/Filter(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/springframework/data/neo4j/template/Neo4jOgmExceptionTranslator/translateExceptionIfPossible(java.lang.Exception)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/neo4j/ogm/session/Session/loadAll(java.lang.Class,org.neo4j.ogm.cypher.Filter,int)|",
+      "|java+constructor:///org/neo4j/ogm/cypher/Filter/Filter(java.lang.String,java.lang.Object)|"
+    ],
+    "affectedLib": "org.neo4j:neo4j-ogm-core:2.0.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.springframework.data:spring-data-neo4j:4.0.0.RELEASE",
+    "coordinatesV2": "org.springframework.data:spring-data-neo4j:4.1.0.RELEASE",
+    "caller": "|java+method:///org/springframework/data/neo4j/mapping/Neo4jMappingContext/shouldUpdateSimpleTypes(org.springframework.data.mapping.model.SimpleTypeHolder,java.lang.reflect.Field,java.lang.Class)|",
+    "called": "|java+method:///org/neo4j/ogm/MetaData/classInfo(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/lang/Class/isInterface()|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+method:///org/neo4j/ogm/metadata/MetaData/classInfo(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/springframework/data/mapping/model/SimpleTypeHolder/isSimpleType(java.lang.Class)|",
+      "|java+method:///java/lang/reflect/Field/isAnnotationPresent(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Class/isInterface()|",
+      "|java+method:///org/neo4j/ogm/MetaData/classInfo(java.lang.String)|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/springframework/data/mapping/model/SimpleTypeHolder/isSimpleType(java.lang.Class)|",
+      "|java+method:///java/lang/reflect/Field/isAnnotationPresent(java.lang.Class)|"
+    ],
+    "affectedLib": "org.neo4j:neo4j-ogm-core:2.0.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.springframework.data:spring-data-neo4j:4.0.0.RELEASE",
+    "coordinatesV2": "org.springframework.data:spring-data-neo4j:4.1.0.RELEASE",
+    "caller": "|java+method:///org/springframework/data/neo4j/repository/GraphRepositoryImpl/findAll(org.springframework.data.domain.Pageable,int)|",
+    "called": "|java+constructor:///org/neo4j/ogm/cypher/query/Pagination/Pagination(int,int)|",
+    "v1Body": [
+      "|java+method:///org/springframework/data/neo4j/repository/GraphRepositoryImpl/updatePage(org.springframework.data.domain.Pageable,java.util.List)|",
+      "|java+constructor:///java/util/ArrayList/ArrayList(java.util.Collection)|",
+      "|java+method:///org/springframework/data/neo4j/repository/GraphRepositoryImpl/convert(org.springframework.data.domain.Sort)|",
+      "|java+constructor:///org/neo4j/ogm/cypher/query/Pagination/Pagination(int,int)|",
+      "|java+method:///org/springframework/data/domain/Pageable/getPageSize()|",
+      "|java+method:///org/springframework/data/domain/Pageable/getPageNumber()|",
+      "|java+method:///org/neo4j/ogm/session/Session/loadAll(java.lang.Class,org.neo4j.ogm.cypher.query.SortOrder,org.neo4j.ogm.cypher.query.Pagination,int)|",
+      "|java+method:///org/springframework/data/domain/Pageable/getSort()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList(java.util.Collection)|",
+      "|java+method:///org/springframework/data/neo4j/repository/GraphRepositoryImpl/convert(org.springframework.data.domain.Sort)|",
+      "|java+constructor:///org/neo4j/ogm/cypher/query/Pagination/Pagination(int,int)|",
+      "|java+method:///org/springframework/data/domain/Pageable/getPageSize()|",
+      "|java+method:///org/springframework/data/domain/Pageable/getPageNumber()|",
+      "|java+method:///org/springframework/data/domain/Pageable/getSort()|",
+      "|java+method:///org/springframework/data/neo4j/repository/GraphRepositoryImpl/updatePage(org.springframework.data.domain.Pageable,java.util.List)|",
+      "|java+method:///org/springframework/data/neo4j/template/Neo4jOperations/loadAll(java.lang.Class,org.neo4j.ogm.cypher.query.SortOrder,org.neo4j.ogm.cypher.query.Pagination,int)|"
+    ],
+    "affectedLib": "org.neo4j:neo4j-ogm-core:2.0.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.springframework.data:spring-data-neo4j:4.0.0.RELEASE",
+    "coordinatesV2": "org.springframework.data:spring-data-neo4j:4.1.0.RELEASE",
+    "caller": "|java+method:///org/springframework/data/neo4j/repository/query/QueryResultProxy/invoke(java.lang.Object,java.lang.reflect.Method,java.lang.Object%5B%5D)|",
+    "called": "|java+method:///org/neo4j/ogm/session/Utils/coerceTypes(java.lang.Class,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///java/util/regex/Matcher/group(int)|",
+      "|java+method:///java/lang/String/toLowerCase()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/util/regex/Matcher/matches()|",
+      "|java+method:///java/lang/reflect/Method/getAnnotation(java.lang.Class)|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+method:///java/lang/reflect/Method/isAnnotationPresent(java.lang.Class)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/String/concat(java.lang.String)|",
+      "|java+method:///java/util/regex/Pattern/matcher(java.lang.CharSequence)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/neo4j/ogm/annotation/Property/name()|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String)|",
+      "|java+method:///java/lang/String/substring(int,int)|",
+      "|java+method:///java/lang/reflect/Method/getName()|",
+      "|java+method:///java/lang/String/substring(int)|",
+      "|java+method:///org/springframework/data/neo4j/repository/query/QueryResultProxy/isNotTraditionalGetter(java.lang.reflect.Method)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/regex/Matcher/group(int)|",
+      "|java+method:///org/neo4j/ogm/session/Utils/coerceTypes(java.lang.Class,java.lang.Object)|",
+      "|java+method:///java/lang/String/toLowerCase()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/util/regex/Matcher/matches()|",
+      "|java+method:///java/lang/reflect/Method/getAnnotation(java.lang.Class)|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+method:///java/lang/reflect/Method/isAnnotationPresent(java.lang.Class)|",
+      "|java+method:///java/lang/reflect/Method/getReturnType()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/String/concat(java.lang.String)|",
+      "|java+method:///java/util/regex/Pattern/matcher(java.lang.CharSequence)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/neo4j/ogm/annotation/Property/name()|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String)|",
+      "|java+method:///java/lang/String/substring(int,int)|",
+      "|java+method:///java/lang/reflect/Method/getName()|",
+      "|java+method:///java/lang/String/substring(int)|",
+      "|java+method:///org/springframework/data/neo4j/repository/query/QueryResultProxy/isNotTraditionalGetter(java.lang.reflect.Method)|"
+    ],
+    "affectedLib": "org.neo4j:neo4j-ogm-core:2.0.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.springframework.data:spring-data-neo4j:4.0.0.RELEASE",
+    "coordinatesV2": "org.springframework.data:spring-data-neo4j:4.1.0.RELEASE",
+    "caller": "|java+method:///org/springframework/data/neo4j/config/Neo4jConfiguration/getSession()|",
+    "called": "|java+method:///org/neo4j/ogm/session/SessionFactory/openSession()|",
+    "v1Body": [
+      "|java+method:///org/springframework/data/neo4j/config/Neo4jConfiguration/constructSession(org.springframework.data.neo4j.server.Neo4jServer)|",
+      "|java+method:///org/springframework/data/neo4j/config/Neo4jConfiguration/neo4jServer()|",
+      "|java+method:///org/springframework/util/Assert/notNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///org/springframework/data/neo4j/config/Neo4jConfiguration/getSessionFactory()|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/neo4j/ogm/session/SessionFactory/openSession()|",
+      "|java+method:///org/springframework/util/Assert/notNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///org/springframework/data/neo4j/config/Neo4jConfiguration/getSessionFactory()|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String)|"
+    ],
+    "affectedLib": "org.neo4j:neo4j-ogm-core:2.0.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.springframework.data:spring-data-neo4j:4.0.0.RELEASE",
+    "coordinatesV2": "org.springframework.data:spring-data-neo4j:4.1.0.RELEASE",
+    "caller": "|java+method:///org/springframework/data/neo4j/template/Neo4jTemplate/loadAllByProperty(java.lang.Class,java.lang.String,java.lang.Object)|",
+    "called": "|java+constructor:///org/neo4j/ogm/cypher/Filter/Filter(java.lang.String,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/neo4j/ogm/session/Session/loadAll(java.lang.Class,org.neo4j.ogm.cypher.Filter)|",
+      "|java+constructor:///org/neo4j/ogm/cypher/Filter/Filter(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/springframework/data/neo4j/template/Neo4jOgmExceptionTranslator/translateExceptionIfPossible(java.lang.Exception)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/neo4j/ogm/session/Session/loadAll(java.lang.Class,org.neo4j.ogm.cypher.Filter)|",
+      "|java+constructor:///org/neo4j/ogm/cypher/Filter/Filter(java.lang.String,java.lang.Object)|"
+    ],
+    "affectedLib": "org.neo4j:neo4j-ogm-core:2.0.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.springframework.data:spring-data-neo4j:4.0.0.RELEASE",
+    "coordinatesV2": "org.springframework.data:spring-data-neo4j:4.1.0.RELEASE",
+    "caller": "|java+constructor:///org/springframework/data/neo4j/transaction/Neo4jTransactionStatus/Neo4jTransactionStatus(org.neo4j.ogm.session.Session,org.springframework.transaction.TransactionDefinition)|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/neo4j/ogm/session/Session/beginTransaction()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///org/neo4j/ogm/session/transaction/Transaction/status()|",
+      "|java+method:///org/neo4j/ogm/session/transaction/Transaction$Status/equals(java.lang.Object)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String)|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/springframework/transaction/TransactionDefinition/getPropagationBehavior()|",
+      "|java+method:///org/neo4j/ogm/session/Session/getTransaction()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+method:///org/neo4j/ogm/session/Session/beginTransaction()|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String)|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/neo4j/ogm/transaction/Transaction$Status/equals(java.lang.Object)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/neo4j/ogm/transaction/Transaction/status()|",
+      "|java+method:///org/springframework/transaction/TransactionDefinition/getPropagationBehavior()|",
+      "|java+method:///org/neo4j/ogm/session/Session/getTransaction()|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.19",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.springframework.data:spring-data-neo4j:4.0.0.RELEASE",
+    "coordinatesV2": "org.springframework.data:spring-data-neo4j:4.1.0.RELEASE",
+    "caller": "|java+method:///org/springframework/data/neo4j/repository/query/GraphRepositoryQuery/execute(java.lang.Object%5B%5D)|",
+    "called": "|java+method:///org/springframework/data/repository/query/ResultProcessor/withDynamicProjection(org.springframework.data.repository.query.ParameterAccessor)|",
+    "v1Body": [
+      "|java+method:///org/springframework/data/neo4j/repository/query/GraphRepositoryQuery/resolveParams(java.lang.Object%5B%5D)|",
+      "|java+method:///org/springframework/data/neo4j/repository/query/GraphQueryMethod/getMethod()|",
+      "|java+method:///org/springframework/data/neo4j/repository/query/GraphRepositoryQuery/getQueryString()|",
+      "|java+method:///org/springframework/data/neo4j/repository/query/GraphQueryMethod/resolveConcreteReturnType()|",
+      "|java+method:///java/lang/reflect/Method/getReturnType()|",
+      "|java+method:///org/springframework/data/neo4j/repository/query/GraphRepositoryQuery/execute(java.lang.Class,java.lang.Class,java.lang.String,java.util.Map)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/springframework/data/neo4j/repository/query/GraphQueryMethod/getResultProcessor()|",
+      "|java+method:///java/lang/Object/equals(java.lang.Object)|",
+      "|java+method:///org/springframework/data/neo4j/repository/query/GraphRepositoryQuery/resolveParams(java.lang.Object%5B%5D)|",
+      "|java+method:///org/springframework/data/repository/query/ResultProcessor/withDynamicProjection(org.springframework.data.repository.query.ParameterAccessor)|",
+      "|java+method:///org/springframework/data/repository/query/ResultProcessor/processResult(java.lang.Object)|",
+      "|java+method:///org/springframework/data/neo4j/repository/query/GraphQueryMethod/getMethod()|",
+      "|java+method:///org/springframework/data/neo4j/repository/query/GraphRepositoryQuery/getQueryString()|",
+      "|java+method:///org/springframework/data/neo4j/repository/query/GraphQueryMethod/resolveConcreteReturnType()|",
+      "|java+method:///java/lang/reflect/Method/getReturnType()|",
+      "|java+method:///org/springframework/data/neo4j/repository/query/GraphQueryMethod/getParameters()|",
+      "|java+constructor:///org/springframework/data/repository/query/ParametersParameterAccessor/ParametersParameterAccessor(org.springframework.data.repository.query.Parameters,java.lang.Object%5B%5D)|",
+      "|java+method:///org/springframework/data/neo4j/repository/query/GraphRepositoryQuery/execute(java.lang.Class,java.lang.Class,java.lang.String,java.util.Map)|"
+    ],
+    "affectedLib": "org.springframework.data:spring-data-commons:1.12.0.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.springframework.data:spring-data-neo4j:4.0.0.RELEASE",
+    "coordinatesV2": "org.springframework.data:spring-data-neo4j:4.1.0.RELEASE",
+    "caller": "|java+method:///org/springframework/data/neo4j/repository/query/derived/CypherFinderQuery/addPart(org.springframework.data.repository.query.parser.Part,org.neo4j.ogm.cypher.BooleanOperator)|",
+    "called": "|java+method:///org/springframework/data/mapping/PropertyPath/getLeafProperty()|",
+    "v1Body": [
+      "|java+constructor:///org/neo4j/ogm/cypher/Filter/Filter()|",
+      "|java+method:///org/neo4j/ogm/cypher/Filters/add(org.neo4j.ogm.cypher.Filter%5B%5D)|",
+      "|java+method:///org/neo4j/ogm/cypher/Filter/setPropertyPosition(java.lang.Integer)|",
+      "|java+method:///org/springframework/data/repository/query/parser/Part/getProperty()|",
+      "|java+method:///org/springframework/data/mapping/PropertyPath/getLeafProperty()|",
+      "|java+method:///org/springframework/data/mapping/PropertyPath/getSegment()|",
+      "|java+method:///org/springframework/data/mapping/PropertyPath/getType()|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///org/springframework/data/util/TypeInformation/getType()|",
+      "|java+method:///org/springframework/data/neo4j/repository/query/derived/CypherFinderQuery/convertToComparisonOperator(org.springframework.data.repository.query.parser.Part$Type)|",
+      "|java+method:///org/springframework/data/mapping/PropertyPath/next()|",
+      "|java+method:///org/neo4j/ogm/cypher/Filter/setComparisonOperator(org.neo4j.ogm.cypher.ComparisonOperator)|",
+      "|java+method:///org/neo4j/ogm/cypher/Filter/setNestedPropertyType(java.lang.Class)|",
+      "|java+method:///org/neo4j/ogm/cypher/Filter/setNestedPropertyName(java.lang.String)|",
+      "|java+method:///org/neo4j/ogm/cypher/Filter/setPropertyName(java.lang.String)|",
+      "|java+method:///org/springframework/data/repository/query/parser/Part/getType()|",
+      "|java+method:///org/springframework/data/mapping/PropertyPath/getOwningType()|",
+      "|java+method:///org/neo4j/ogm/cypher/Filter/setBooleanOperator(org.neo4j.ogm.cypher.BooleanOperator)|",
+      "|java+method:///org/neo4j/ogm/cypher/Filter/setOwnerEntityType(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/neo4j/ogm/cypher/Filter/Filter()|",
+      "|java+method:///org/neo4j/ogm/cypher/Filters/add(org.neo4j.ogm.cypher.Filter%5B%5D)|",
+      "|java+method:///org/neo4j/ogm/cypher/Filter/setPropertyPosition(java.lang.Integer)|",
+      "|java+method:///org/springframework/data/mapping/PropertyPath/getLeafProperty()|",
+      "|java+method:///org/springframework/data/mapping/PropertyPath/getSegment()|",
+      "|java+method:///org/springframework/data/mapping/PropertyPath/getType()|",
+      "|java+method:///org/neo4j/ogm/cypher/Filter/setNegated(boolean)|",
+      "|java+method:///org/springframework/data/util/TypeInformation/getType()|",
+      "|java+method:///org/springframework/data/neo4j/repository/query/derived/CypherFinderQuery/convertToComparisonOperator(org.springframework.data.repository.query.parser.Part$Type)|",
+      "|java+method:///org/springframework/data/mapping/PropertyPath/next()|",
+      "|java+method:///org/neo4j/ogm/cypher/Filter/setComparisonOperator(org.neo4j.ogm.cypher.ComparisonOperator)|",
+      "|java+method:///org/neo4j/ogm/cypher/Filter/setNestedPropertyType(java.lang.Class)|",
+      "|java+method:///org/neo4j/ogm/cypher/Filter/setNestedPropertyName(java.lang.String)|",
+      "|java+method:///org/springframework/data/repository/query/parser/Part/getProperty()|",
+      "|java+method:///org/springframework/data/repository/query/parser/Part$Type/name()|",
+      "|java+method:///org/neo4j/ogm/cypher/Filter/setPropertyName(java.lang.String)|",
+      "|java+method:///org/springframework/data/repository/query/parser/Part/getType()|",
+      "|java+method:///org/springframework/data/mapping/PropertyPath/getOwningType()|",
+      "|java+method:///org/neo4j/ogm/cypher/Filter/setBooleanOperator(org.neo4j.ogm.cypher.BooleanOperator)|",
+      "|java+method:///org/neo4j/ogm/cypher/Filter/setOwnerEntityType(java.lang.Class)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///java/lang/String/startsWith(java.lang.String)|"
+    ],
+    "affectedLib": "org.springframework.data:spring-data-commons:1.12.0.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.springframework.data:spring-data-neo4j:4.0.0.RELEASE",
+    "coordinatesV2": "org.springframework.data:spring-data-neo4j:4.1.0.RELEASE",
+    "caller": "|java+method:///org/springframework/data/neo4j/mapping/Neo4jMappingContext/shouldUpdateSimpleTypes(org.springframework.data.mapping.model.SimpleTypeHolder,java.lang.reflect.Field,java.lang.Class)|",
+    "called": "|java+method:///org/springframework/data/mapping/model/SimpleTypeHolder/isSimpleType(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///java/lang/Class/isInterface()|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+method:///org/neo4j/ogm/metadata/MetaData/classInfo(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/springframework/data/mapping/model/SimpleTypeHolder/isSimpleType(java.lang.Class)|",
+      "|java+method:///java/lang/reflect/Field/isAnnotationPresent(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Class/isInterface()|",
+      "|java+method:///org/neo4j/ogm/MetaData/classInfo(java.lang.String)|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/springframework/data/mapping/model/SimpleTypeHolder/isSimpleType(java.lang.Class)|",
+      "|java+method:///java/lang/reflect/Field/isAnnotationPresent(java.lang.Class)|"
+    ],
+    "affectedLib": "org.springframework.data:spring-data-commons:1.12.0.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.springframework.data:spring-data-neo4j:4.0.0.RELEASE",
+    "coordinatesV2": "org.springframework.data:spring-data-neo4j:4.1.0.RELEASE",
+    "caller": "|java+method:///org/springframework/data/neo4j/template/Neo4jOgmExceptionTranslator/translateExceptionIfPossible(java.lang.Exception)|",
+    "called": "|java+constructor:///org/springframework/transaction/NoTransactionException/NoTransactionException(java.lang.String,java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///org/neo4j/ogm/exception/NotFoundException/getMessage()|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.Throwable)|",
+      "|java+method:///org/neo4j/ogm/session/result/ResultProcessingException/getMessage()|",
+      "|java+method:///java/lang/RuntimeException/getMessage()|",
+      "|java+constructor:///org/springframework/transaction/NoTransactionException/NoTransactionException(java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///org/springframework/data/neo4j/template/UncategorizedGraphStoreException/UncategorizedGraphStoreException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/neo4j/ogm/session/transaction/TransactionException/getMessage()|",
+      "|java+method:///org/neo4j/ogm/exception/InvalidDepthException/getMessage()|",
+      "|java+method:///org/neo4j/ogm/metadata/MappingException/getMessage()|",
+      "|java+constructor:///org/springframework/dao/DataRetrievalFailureException/DataRetrievalFailureException(java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///org/springframework/dao/InvalidDataAccessApiUsageException/InvalidDataAccessApiUsageException(java.lang.String,java.lang.Throwable)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/neo4j/ogm/exception/NotFoundException/getMessage()|",
+      "|java+method:///org/neo4j/ogm/exception/ResultProcessingException/getMessage()|",
+      "|java+method:///org/neo4j/ogm/exception/TransactionException/getMessage()|",
+      "|java+constructor:///org/springframework/transaction/NoTransactionException/NoTransactionException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/neo4j/ogm/exception/InvalidDepthException/getMessage()|",
+      "|java+constructor:///org/springframework/dao/DataRetrievalFailureException/DataRetrievalFailureException(java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///org/springframework/dao/InvalidDataAccessApiUsageException/InvalidDataAccessApiUsageException(java.lang.String,java.lang.Throwable)|"
+    ],
+    "affectedLib": "org.springframework:spring-tx:4.2.5.RELEASE",
+    "change": "UPDATED"
+  }
+]

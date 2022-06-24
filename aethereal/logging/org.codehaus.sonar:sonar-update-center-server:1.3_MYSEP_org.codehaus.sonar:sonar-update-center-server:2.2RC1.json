@@ -1,0 +1,48 @@
+[
+  {
+    "coordinatesV1": "org.codehaus.sonar:sonar-update-center-server:1.3",
+    "coordinatesV2": "org.codehaus.sonar:sonar-update-center-server:2.2RC1",
+    "caller": "|java+method:///org/sonar/updatecenter/server/Server/start()|",
+    "called": "|java+method:///org/sonar/updatecenter/UpdateCenterSerializer/toProperties(org.sonar.updatecenter.UpdateCenter,java.io.File)|",
+    "v1Body": [
+      "|java+method:///org/sonar/updatecenter/server/Configuration/getWorkingDir()|",
+      "|java+constructor:///org/sonar/updatecenter/server/HttpDownloader/HttpDownloader(java.io.File)|",
+      "|java+method:///org/sonar/updatecenter/server/Server/generateMetadata(org.sonar.updatecenter.server.Configuration,org.sonar.updatecenter.common.UpdateCenter)|",
+      "|java+method:///org/sonar/updatecenter/server/Configuration/log()|",
+      "|java+method:///org/sonar/updatecenter/server/Server/downloadReleases(org.sonar.updatecenter.server.HttpDownloader,org.sonar.updatecenter.common.UpdateCenter)|",
+      "|java+method:///java/lang/System/getProperties()|",
+      "|java+method:///org/sonar/updatecenter/server/Server/buildFromPartialMetadata(org.sonar.updatecenter.server.Configuration,org.sonar.updatecenter.server.HttpDownloader)|",
+      "|java+constructor:///org/sonar/updatecenter/server/Configuration/Configuration(java.util.Properties)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/sonar/updatecenter/Release/getVersion()|",
+      "|java+method:///org/sonar/updatecenter/UpdateCenterSerializer/toProperties(org.sonar.updatecenter.UpdateCenter,java.io.File)|",
+      "|java+method:///org/sonar/updatecenter/server/Configuration/getOutputFile()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/sonar/updatecenter/server/Downloader/download(java.lang.String,boolean)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String)|",
+      "|java+method:///org/sonar/updatecenter/Release/getDownloadUrl()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/apache/commons/lang/StringUtils/isNotBlank(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/util/Set/iterator()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+constructor:///org/sonar/updatecenter/PluginManifest/PluginManifest(java.io.File)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/sonar/updatecenter/server/Configuration/getWorkingDir()|",
+      "|java+method:///org/sonar/updatecenter/UpdateCenterDeserializer/fromProperties(java.io.File)|",
+      "|java+method:///org/sonar/updatecenter/server/Configuration/getSourceUrl()|",
+      "|java+method:///org/sonar/updatecenter/Plugin/getKey()|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///org/sonar/updatecenter/server/Downloader/Downloader(java.io.File)|",
+      "|java+method:///java/lang/System/getProperties()|",
+      "|java+method:///org/sonar/updatecenter/Plugin/getLastRelease()|",
+      "|java+method:///org/sonar/updatecenter/Plugin/merge(org.sonar.updatecenter.PluginManifest)|",
+      "|java+constructor:///org/sonar/updatecenter/server/Configuration/Configuration(java.util.Properties)|",
+      "|java+method:///org/sonar/updatecenter/UpdateCenter/getPlugins()|"
+    ],
+    "affectedLib": "org.codehaus.sonar:sonar-update-center:2.2RC1",
+    "change": "ADDED"
+  }
+]

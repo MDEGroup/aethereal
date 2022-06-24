@@ -1,0 +1,160 @@
+[
+  {
+    "coordinatesV1": "org.codehaus.sonar:sonar-plugin-api:1.10RC2",
+    "coordinatesV2": "org.codehaus.sonar:sonar-plugin-api:1.10M2",
+    "caller": "|java+method:///org/sonar/api/rules/RulesManager/getPluginRulesIndexedByKey(java.lang.String)|",
+    "called": "|java+method:///org/sonar/commons/rules/RulesDao/getRulesByPlugin(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/sonar/commons/rules/RulesDao/getRulesByPlugin(java.lang.String)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///org/sonar/commons/rules/Rule/getKey()|",
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+constructor:///java/util/HashMap/HashMap()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+method:///org/sonar/api/rules/Rule/getKey()|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+method:///org/sonar/api/database/daos/RulesDao/getRulesByPlugin(java.lang.String)|"
+    ],
+    "affectedLib": "org.codehaus.sonar:sonar-commons:1.10M2",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.codehaus.sonar:sonar-plugin-api:1.10RC2",
+    "coordinatesV2": "org.codehaus.sonar:sonar-plugin-api:1.10M2",
+    "caller": "|java+method:///org/sonar/api/rules/AbstractImportableRulesRepository/loadProvidedProfile(java.lang.String,java.lang.String)|",
+    "called": "|java+constructor:///org/sonar/commons/rules/RulesProfile/RulesProfile(java.lang.String,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/lang/Class/getResourceAsStream(java.lang.String)|",
+      "|java+constructor:///org/sonar/api/utils/SonarException/SonarException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/sonar/api/rules/AbstractImportableRulesRepository/getInitialReferential()|",
+      "|java+constructor:///java/io/IOException/IOException(java.lang.String)|",
+      "|java+method:///org/sonar/api/rules/AbstractImportableRulesRepository/importConfiguration(java.lang.String,java.util.List)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///org/sonar/commons/rules/RulesProfile/RulesProfile(java.lang.String,java.lang.String)|",
+      "|java+method:///org/apache/commons/io/IOUtils/toString(java.io.InputStream,java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/sonar/commons/rules/RulesProfile/setActiveRules(java.util.List)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/lang/Object/getClass()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Class/getResourceAsStream(java.lang.String)|",
+      "|java+constructor:///org/sonar/api/utils/SonarException/SonarException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/sonar/api/rules/AbstractImportableRulesRepository/getInitialReferential()|",
+      "|java+constructor:///java/io/IOException/IOException(java.lang.String)|",
+      "|java+method:///org/sonar/api/rules/AbstractImportableRulesRepository/importConfiguration(java.lang.String,java.util.List)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/sonar/api/profiles/RulesProfile/setActiveRules(java.util.List)|",
+      "|java+constructor:///org/sonar/api/profiles/RulesProfile/RulesProfile(java.lang.String,java.lang.String)|",
+      "|java+method:///org/apache/commons/io/IOUtils/toString(java.io.InputStream,java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/lang/Object/getClass()|"
+    ],
+    "affectedLib": "org.codehaus.sonar:sonar-commons:1.10M2",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.codehaus.sonar:sonar-plugin-api:1.10RC2",
+    "coordinatesV2": "org.codehaus.sonar:sonar-plugin-api:1.10M2",
+    "caller": "|java+initializer:///org/sonar/api/rules/Iso9126RulesCategories/Iso9126RulesCategories$initializer|",
+    "called": "|java+constructor:///org/sonar/commons/rules/RulesCategory/RulesCategory(java.lang.String,java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///org/sonar/commons/rules/RulesCategory/RulesCategory(java.lang.String,java.lang.String)|",
+      "|java+method:///java/util/Arrays/asList(java.lang.Object%5B%5D)|",
+      "|java+method:///java/util/Collections/unmodifiableList(java.util.List)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Arrays/asList(java.lang.Object%5B%5D)|",
+      "|java+constructor:///org/sonar/api/rules/RulesCategory/RulesCategory(java.lang.String,java.lang.String)|",
+      "|java+method:///java/util/Collections/unmodifiableList(java.util.List)|"
+    ],
+    "affectedLib": "org.codehaus.sonar:sonar-commons:1.10M2",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.codehaus.sonar:sonar-plugin-api:1.10RC2",
+    "coordinatesV2": "org.codehaus.sonar:sonar-plugin-api:1.10M2",
+    "caller": "|java+method:///org/sonar/api/rules/StandardProfileXmlParser/buildActiveRulesFromProfile(org.sonar.api.rules.xml.Profile,java.util.List)|",
+    "called": "|java+constructor:///org/sonar/commons/rules/ActiveRule/ActiveRule(org.sonar.commons.rules.RulesProfile,org.sonar.commons.rules.Rule,org.sonar.commons.rules.RulePriority)|",
+    "v1Body": [
+      "|java+method:///org/sonar/commons/rules/Rule/getConfigKey()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/util/List/isEmpty()|",
+      "|java+method:///org/sonar/commons/rules/ActiveRule/setActiveRuleParams(java.util.List)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+constructor:///org/sonar/commons/rules/ActiveRule/ActiveRule(org.sonar.commons.rules.RulesProfile,org.sonar.commons.rules.Rule,org.sonar.commons.rules.RulePriority)|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///org/sonar/api/rules/xml/Profile/getRules()|",
+      "|java+method:///org/sonar/api/rules/StandardProfileXmlParser/getActiveRuleParams(org.sonar.api.rules.xml.Rule,org.sonar.commons.rules.Rule,org.sonar.commons.rules.ActiveRule)|",
+      "|java+method:///org/sonar/api/rules/StandardProfileXmlParser/getRulePriority(org.sonar.api.rules.xml.Rule)|",
+      "|java+method:///org/sonar/api/rules/xml/Rule/getKey()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/util/List/isEmpty()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+constructor:///org/sonar/api/rules/ActiveRule/ActiveRule(org.sonar.api.profiles.RulesProfile,org.sonar.api.rules.Rule,org.sonar.api.rules.RulePriority)|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///org/sonar/api/rules/StandardProfileXmlParser/getActiveRuleParams(org.sonar.api.rules.xml.Rule,org.sonar.api.rules.Rule,org.sonar.api.rules.ActiveRule)|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///org/sonar/api/rules/Rule/getConfigKey()|",
+      "|java+method:///org/sonar/api/rules/StandardProfileXmlParser/getRulePriority(org.sonar.api.rules.xml.Rule)|",
+      "|java+method:///org/sonar/api/rules/xml/Rule/getKey()|",
+      "|java+method:///org/sonar/api/rules/ActiveRule/setActiveRuleParams(java.util.List)|",
+      "|java+method:///org/sonar/api/rules/xml/Profile/getRules()|"
+    ],
+    "affectedLib": "org.codehaus.sonar:sonar-commons:1.10M2",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.codehaus.sonar:sonar-plugin-api:1.10RC2",
+    "coordinatesV2": "org.codehaus.sonar:sonar-plugin-api:1.10M2",
+    "caller": "|java+method:///org/sonar/api/rules/StandardProfileXmlParser/importConfiguration(java.lang.String)|",
+    "called": "|java+constructor:///org/sonar/commons/rules/RulesProfile/RulesProfile()|",
+    "v1Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+constructor:///org/sonar/api/utils/SonarException/SonarException(java.lang.String)|",
+      "|java+method:///org/sonar/api/rules/StandardProfileXmlParser/buildProfileFromXml(java.lang.String)|",
+      "|java+method:///org/apache/commons/lang/StringUtils/isBlank(java.lang.String)|",
+      "|java+constructor:///org/sonar/commons/rules/RulesProfile/RulesProfile()|",
+      "|java+method:///org/sonar/api/rules/StandardProfileXmlParser/buildActiveRulesFromProfile(org.sonar.api.rules.xml.Profile,java.util.List)|",
+      "|java+method:///org/sonar/api/rules/xml/Profile/getLanguage()|",
+      "|java+method:///org/sonar/commons/rules/RulesProfile/setLanguage(java.lang.String)|",
+      "|java+method:///org/sonar/commons/rules/RulesProfile/setActiveRules(java.util.List)|",
+      "|java+method:///org/sonar/commons/rules/RulesProfile/getName()|",
+      "|java+method:///org/sonar/api/rules/xml/Profile/getName()|",
+      "|java+method:///org/sonar/commons/rules/RulesProfile/setName(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/sonar/api/profiles/RulesProfile/setName(java.lang.String)|",
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+constructor:///org/sonar/api/utils/SonarException/SonarException(java.lang.String)|",
+      "|java+method:///org/sonar/api/rules/StandardProfileXmlParser/buildProfileFromXml(java.lang.String)|",
+      "|java+method:///org/sonar/api/rules/xml/Profile/getLanguage()|",
+      "|java+method:///org/sonar/api/profiles/RulesProfile/setLanguage(java.lang.String)|",
+      "|java+method:///org/apache/commons/lang/StringUtils/isBlank(java.lang.String)|",
+      "|java+method:///org/sonar/api/profiles/RulesProfile/setActiveRules(java.util.List)|",
+      "|java+constructor:///org/sonar/api/profiles/RulesProfile/RulesProfile()|",
+      "|java+method:///org/sonar/api/profiles/RulesProfile/getName()|",
+      "|java+method:///org/sonar/api/rules/xml/Profile/getName()|",
+      "|java+method:///org/sonar/api/rules/StandardProfileXmlParser/buildActiveRulesFromProfile(org.sonar.api.rules.xml.Profile,java.util.List)|"
+    ],
+    "affectedLib": "org.codehaus.sonar:sonar-commons:1.10M2",
+    "change": "REMOVED"
+  }
+]

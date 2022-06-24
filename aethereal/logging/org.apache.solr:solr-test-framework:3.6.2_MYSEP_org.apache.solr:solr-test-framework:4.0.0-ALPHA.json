@@ -1,0 +1,436 @@
+[
+  {
+    "coordinatesV1": "org.apache.solr:solr-test-framework:3.6.2",
+    "coordinatesV2": "org.apache.solr:solr-test-framework:4.0.0-ALPHA",
+    "caller": "|java+initializer:///org/apache/solr/util/AbstractSolrTestCase/AbstractSolrTestCase$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/junit/rules/RuleChain/outerRule(org.junit.rules.TestRule)|",
+      "|java+constructor:///org/apache/lucene/util/SystemPropertiesRestoreRule/SystemPropertiesRestoreRule()|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/carrotsearch/randomizedtesting/rules/SystemPropertiesRestoreRule/SystemPropertiesRestoreRule()|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///org/junit/rules/RuleChain/outerRule(org.junit.rules.TestRule)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.6.4",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.solr:solr-test-framework:3.6.2",
+    "coordinatesV2": "org.apache.solr:solr-test-framework:4.0.0-ALPHA",
+    "caller": "|java+initializer:///org/apache/solr/SolrTestCaseJ4/SolrTestCaseJ4$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/solr/SolrTestCaseJ4$IRange/SolrTestCaseJ4$IRange(int,int)|",
+      "|java+method:///org/junit/rules/RuleChain/outerRule(org.junit.rules.TestRule)|",
+      "|java+constructor:///org/apache/lucene/util/SystemPropertiesRestoreRule/SystemPropertiesRestoreRule()|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/carrotsearch/randomizedtesting/rules/SystemPropertiesRestoreRule/SystemPropertiesRestoreRule()|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+constructor:///org/apache/solr/SolrTestCaseJ4$IRange/SolrTestCaseJ4$IRange(int,int)|",
+      "|java+method:///org/junit/rules/RuleChain/outerRule(org.junit.rules.TestRule)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.6.4",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.solr:solr-test-framework:3.6.2",
+    "coordinatesV2": "org.apache.solr:solr-test-framework:4.0.0-ALPHA",
+    "caller": "|java+method:///org/apache/solr/util/TestHarness$Initializer/initialize()|",
+    "called": "|java+method:///org/apache/solr/core/SolrResourceLoader/locateSolrHome()|",
+    "v1Body": [
+      "|java+method:///org/apache/solr/core/SolrResourceLoader/locateSolrHome()|",
+      "|java+method:///org/apache/solr/core/SolrConfig/getResourceLoader()|",
+      "|java+constructor:///org/apache/solr/core/CoreDescriptor/CoreDescriptor(org.apache.solr.core.CoreContainer,java.lang.String,java.lang.String)|",
+      "|java+method:///org/apache/solr/core/SolrResourceLoader/getInstanceDir()|",
+      "|java+constructor:///org/apache/solr/core/SolrCore/SolrCore(java.lang.String,java.lang.String,org.apache.solr.core.SolrConfig,org.apache.solr.schema.IndexSchema,org.apache.solr.core.CoreDescriptor)|",
+      "|java+constructor:///org/apache/solr/core/SolrResourceLoader/SolrResourceLoader(java.lang.String)|",
+      "|java+method:///org/apache/solr/core/SolrConfig/getResourceName()|",
+      "|java+constructor:///org/apache/solr/core/CoreContainer/CoreContainer(org.apache.solr.core.SolrResourceLoader)|",
+      "|java+method:///org/apache/solr/core/CoreDescriptor/setSchemaName(java.lang.String)|",
+      "|java+method:///org/apache/solr/core/CoreDescriptor/setConfigName(java.lang.String)|",
+      "|java+method:///org/apache/solr/schema/IndexSchema/getResourceName()|",
+      "|java+method:///org/apache/solr/core/CoreContainer/register(java.lang.String,org.apache.solr.core.SolrCore,boolean)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/solr/core/SolrResourceLoader/locateSolrHome()|",
+      "|java+method:///org/apache/solr/core/SolrConfig/getResourceLoader()|",
+      "|java+method:///org/apache/solr/core/CoreContainer/setLogging(org.apache.solr.logging.LogWatcher)|",
+      "|java+method:///org/apache/solr/logging/LogWatcher/registerListener(org.apache.solr.logging.ListenerConfig,org.apache.solr.core.CoreContainer)|",
+      "|java+constructor:///org/apache/solr/logging/ListenerConfig/ListenerConfig()|",
+      "|java+constructor:///org/apache/solr/core/CoreDescriptor/CoreDescriptor(org.apache.solr.core.CoreContainer,java.lang.String,java.lang.String)|",
+      "|java+method:///org/apache/solr/core/SolrResourceLoader/getInstanceDir()|",
+      "|java+constructor:///org/apache/solr/core/SolrCore/SolrCore(java.lang.String,java.lang.String,org.apache.solr.core.SolrConfig,org.apache.solr.schema.IndexSchema,org.apache.solr.core.CoreDescriptor)|",
+      "|java+constructor:///org/apache/solr/core/SolrResourceLoader/SolrResourceLoader(java.lang.String)|",
+      "|java+method:///org/apache/solr/update/UpdateLog/recoverFromLog()|",
+      "|java+method:///org/apache/solr/core/CoreContainer/getZkController()|",
+      "|java+method:///org/apache/solr/core/SolrConfig/getResourceName()|",
+      "|java+method:///org/apache/solr/core/SolrCore/getUpdateHandler()|",
+      "|java+method:///org/apache/solr/core/CoreDescriptor/setSchemaName(java.lang.String)|",
+      "|java+method:///org/apache/solr/schema/IndexSchema/getResourceName()|",
+      "|java+method:///org/apache/solr/core/CoreContainer/register(java.lang.String,org.apache.solr.core.SolrCore,boolean)|",
+      "|java+constructor:///org/apache/solr/util/TestHarness$Initializer$1/TestHarness$Initializer$1(org.apache.solr.util.TestHarness$Initializer,org.apache.solr.core.SolrResourceLoader)|",
+      "|java+constructor:///org/apache/solr/logging/jul/JulWatcher/JulWatcher(java.lang.String)|",
+      "|java+method:///org/apache/solr/core/CoreDescriptor/setConfigName(java.lang.String)|",
+      "|java+method:///org/apache/solr/update/UpdateHandler/getUpdateLog()|"
+    ],
+    "affectedLib": "org.apache.solr:solr-core:4.0.0-ALPHA",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.solr:solr-test-framework:3.6.2",
+    "coordinatesV2": "org.apache.solr:solr-test-framework:4.0.0-ALPHA",
+    "caller": "|java+constructor:///org/apache/solr/util/TestHarness/TestHarness(java.lang.String,org.apache.solr.core.CoreContainer$Initializer)|",
+    "called": "|java+method:///org/apache/solr/core/CoreContainer/getCore(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/apache/solr/core/CoreContainer/getCore(java.lang.String)|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.Throwable)|",
+      "|java+constructor:///org/apache/solr/handler/XmlUpdateRequestHandler/XmlUpdateRequestHandler()|",
+      "|java+method:///javax/xml/xpath/XPathFactory/newInstance()|",
+      "|java+method:///javax/xml/parsers/DocumentBuilderFactory/newDocumentBuilder()|",
+      "|java+method:///javax/xml/parsers/DocumentBuilderFactory/newInstance()|",
+      "|java+method:///javax/xml/xpath/XPathFactory/newXPath()|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///org/apache/solr/core/SolrCore/close()|",
+      "|java+method:///org/apache/solr/handler/XmlUpdateRequestHandler/init(org.apache.solr.common.util.NamedList)|",
+      "|java+method:///org/apache/solr/core/CoreContainer$Initializer/initialize()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/lang/ThreadLocal/ThreadLocal()|",
+      "|java+method:///org/apache/solr/core/CoreContainer/getCore(java.lang.String)|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.Throwable)|",
+      "|java+method:///org/apache/solr/handler/UpdateRequestHandler/init(org.apache.solr.common.util.NamedList)|",
+      "|java+method:///org/apache/solr/core/CoreContainer$Initializer/initialize()|",
+      "|java+constructor:///org/apache/solr/handler/UpdateRequestHandler/UpdateRequestHandler()|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///org/apache/solr/core/SolrCore/close()|"
+    ],
+    "affectedLib": "org.apache.solr:solr-core:4.0.0-ALPHA",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.solr:solr-test-framework:3.6.2",
+    "coordinatesV2": "org.apache.solr:solr-test-framework:4.0.0-ALPHA",
+    "caller": "|java+method:///org/apache/solr/util/TestHarness/update(java.lang.String)|",
+    "called": "|java+constructor:///org/apache/solr/servlet/DirectSolrConnection/DirectSolrConnection(org.apache.solr.core.SolrCore)|",
+    "v1Body": [
+      "|java+method:///org/apache/solr/handler/XmlUpdateRequestHandler/doLegacyUpdate(java.io.InputStream,java.lang.String,java.io.Writer)|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.Throwable)|",
+      "|java+constructor:///java/io/ByteArrayInputStream/ByteArrayInputStream(byte%5B%5D)|",
+      "|java+constructor:///java/io/StringWriter/StringWriter(int)|",
+      "|java+method:///java/lang/String/getBytes(java.lang.String)|",
+      "|java+method:///java/io/StringWriter/toString()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/solr/servlet/DirectSolrConnection/DirectSolrConnection(org.apache.solr.core.SolrCore)|",
+      "|java+constructor:///org/apache/solr/common/SolrException/SolrException(org.apache.solr.common.SolrException$ErrorCode,java.lang.Throwable)|",
+      "|java+method:///org/apache/solr/servlet/DirectSolrConnection/request(org.apache.solr.request.SolrRequestHandler,org.apache.solr.common.params.SolrParams,java.lang.String)|",
+      "|java+method:///org/apache/solr/core/SolrCore/getRequestHandler(java.lang.String)|"
+    ],
+    "affectedLib": "org.apache.solr:solr-core:4.0.0-ALPHA",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.solr:solr-test-framework:3.6.2",
+    "coordinatesV2": "org.apache.solr:solr-test-framework:4.0.0-ALPHA",
+    "caller": "|java+method:///org/apache/solr/SolrJettyTestBase/createJetty(java.lang.String,java.lang.String,java.lang.String)|",
+    "called": "|java+constructor:///org/apache/solr/client/solrj/embedded/JettySolrRunner/JettySolrRunner(java.lang.String,java.lang.String,int,java.lang.String,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/apache/solr/client/solrj/embedded/JettySolrRunner/getLocalPort()|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+method:///org/apache/solr/SolrJettyTestBase/initCore(java.lang.String,java.lang.String,java.lang.String)|",
+      "|java+method:///org/apache/solr/client/solrj/embedded/JettySolrRunner/start()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/System/setProperty(java.lang.String,java.lang.String)|",
+      "|java+method:///java/io/File/getCanonicalPath()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///org/apache/solr/client/solrj/embedded/JettySolrRunner/JettySolrRunner(java.lang.String,int,java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String)|",
+      "|java+method:///org/apache/solr/SolrJettyTestBase/ignoreException(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/solr/client/solrj/embedded/JettySolrRunner/getLocalPort()|",
+      "|java+constructor:///org/apache/solr/client/solrj/embedded/JettySolrRunner/JettySolrRunner(java.lang.String,java.lang.String,int,java.lang.String,java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+method:///org/apache/solr/SolrJettyTestBase/initCore(java.lang.String,java.lang.String,java.lang.String)|",
+      "|java+method:///org/apache/solr/client/solrj/embedded/JettySolrRunner/start()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/System/setProperty(java.lang.String,java.lang.String)|",
+      "|java+method:///java/io/File/getCanonicalPath()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String)|",
+      "|java+method:///org/apache/solr/SolrJettyTestBase/ignoreException(java.lang.String)|"
+    ],
+    "affectedLib": "org.apache.solr:solr-core:4.0.0-ALPHA",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.solr:solr-test-framework:3.6.2",
+    "coordinatesV2": "org.apache.solr:solr-test-framework:4.0.0-ALPHA",
+    "caller": "|java+method:///org/apache/solr/SolrTestCaseJ4/createSort(org.apache.solr.schema.IndexSchema,java.util.List,java.lang.String%5B%5D)|",
+    "called": "|java+method:///org/apache/solr/schema/IndexSchema/getField(java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///org/apache/solr/SolrTestCaseJ4/createComparator(java.lang.String,boolean,boolean,boolean,boolean)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/solr/schema/SchemaField/sortMissingLast()|",
+      "|java+method:///org/apache/solr/schema/SchemaField/sortMissingFirst()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/apache/lucene/util/SmartRandom/nextBoolean()|",
+      "|java+method:///java/util/List/get(int)|",
+      "|java+method:///java/lang/StringBuilder/length()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///org/apache/solr/schema/IndexSchema/getField(java.lang.String)|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/append(char)|",
+      "|java+method:///org/apache/lucene/util/SmartRandom/nextInt(int)|",
+      "|java+method:///org/apache/solr/SolrTestCaseJ4/createComparator(java.util.List)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/solr/SolrTestCaseJ4/random()|",
+      "|java+method:///org/apache/solr/schema/SchemaField/sortMissingLast()|",
+      "|java+method:///java/util/Random/nextInt(int)|",
+      "|java+method:///org/apache/solr/schema/SchemaField/sortMissingFirst()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/util/List/get(int)|",
+      "|java+method:///java/lang/StringBuilder/length()|",
+      "|java+method:///org/apache/solr/SolrTestCaseJ4/createComparator(java.util.List)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/apache/solr/SolrTestCaseJ4/createComparator(java.lang.String,boolean,boolean,boolean,boolean)|",
+      "|java+method:///java/util/Random/nextBoolean()|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///org/apache/solr/schema/IndexSchema/getField(java.lang.String)|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/append(char)|"
+    ],
+    "affectedLib": "org.apache.solr:solr-core:4.0.0-ALPHA",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.solr:solr-test-framework:3.6.2",
+    "coordinatesV2": "org.apache.solr:solr-test-framework:4.0.0-ALPHA",
+    "caller": "|java+method:///org/apache/solr/SolrJettyTestBase/createNewSolrServer()|",
+    "called": "|java+constructor:///org/apache/solr/client/solrj/embedded/EmbeddedSolrServer/EmbeddedSolrServer(org.apache.solr.core.CoreContainer,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/apache/solr/client/solrj/impl/CommonsHttpSolrServer/setConnectionTimeout(int)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///org/apache/solr/client/solrj/embedded/EmbeddedSolrServer/EmbeddedSolrServer(org.apache.solr.core.CoreContainer,java.lang.String)|",
+      "|java+method:///org/apache/solr/util/TestHarness/getCoreContainer()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/apache/solr/client/solrj/impl/CommonsHttpSolrServer/setMaxTotalConnections(int)|",
+      "|java+method:///org/apache/solr/client/solrj/impl/CommonsHttpSolrServer/setDefaultMaxConnectionsPerHost(int)|",
+      "|java+constructor:///org/apache/solr/client/solrj/impl/CommonsHttpSolrServer/CommonsHttpSolrServer(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.Throwable)|",
+      "|java+method:///java/lang/StringBuilder/append(int)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/solr/client/solrj/impl/HttpSolrServer/setMaxTotalConnections(int)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///org/apache/solr/client/solrj/embedded/EmbeddedSolrServer/EmbeddedSolrServer(org.apache.solr.core.CoreContainer,java.lang.String)|",
+      "|java+constructor:///org/apache/solr/client/solrj/impl/HttpSolrServer/HttpSolrServer(java.lang.String)|",
+      "|java+method:///org/apache/solr/client/solrj/impl/HttpSolrServer/setConnectionTimeout(int)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.Throwable)|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+method:///org/apache/solr/client/solrj/impl/HttpSolrServer/setDefaultMaxConnectionsPerHost(int)|",
+      "|java+method:///org/apache/solr/util/TestHarness/getCoreContainer()|"
+    ],
+    "affectedLib": "org.apache.solr:solr-core:4.0.0-ALPHA",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.solr:solr-test-framework:3.6.2",
+    "coordinatesV2": "org.apache.solr:solr-test-framework:4.0.0-ALPHA",
+    "caller": "|java+constructor:///org/apache/solr/core/MockDirectoryFactory/MockDirectoryFactory()|",
+    "called": "|java+constructor:///org/apache/solr/core/CachingDirectoryFactory/CachingDirectoryFactory()|",
+    "v1Body": [
+      "|java+constructor:///org/apache/solr/core/DirectoryFactory/DirectoryFactory()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/solr/core/CachingDirectoryFactory/CachingDirectoryFactory()|"
+    ],
+    "affectedLib": "org.apache.solr:solr-core:4.0.0-ALPHA",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.solr:solr-test-framework:3.6.2",
+    "coordinatesV2": "org.apache.solr:solr-test-framework:4.0.0-ALPHA",
+    "caller": "|java+method:///org/apache/solr/SolrTestCaseJ4/updateJ(java.lang.String,org.apache.solr.common.params.SolrParams)|",
+    "called": "|java+constructor:///org/apache/solr/servlet/DirectSolrConnection/DirectSolrConnection(org.apache.solr.core.SolrCore)|",
+    "v1Body": [
+      "|java+method:///org/apache/solr/request/SolrRequestHandler/init(org.apache.solr.common.util.NamedList)|",
+      "|java+method:///org/apache/solr/util/TestHarness/getCore()|",
+      "|java+constructor:///org/apache/solr/servlet/DirectSolrConnection/DirectSolrConnection(org.apache.solr.core.SolrCore)|",
+      "|java+method:///org/apache/solr/servlet/DirectSolrConnection/request(org.apache.solr.request.SolrRequestHandler,org.apache.solr.common.params.SolrParams,java.lang.String)|",
+      "|java+method:///org/apache/solr/core/SolrCore/getRequestHandler(java.lang.String)|",
+      "|java+constructor:///org/apache/solr/handler/JsonUpdateRequestHandler/JsonUpdateRequestHandler()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/solr/common/params/ModifiableSolrParams/set(java.lang.String,java.lang.String%5B%5D)|",
+      "|java+method:///org/apache/solr/common/params/ModifiableSolrParams/get(java.lang.String)|",
+      "|java+method:///org/apache/solr/SolrTestCaseJ4/params(java.lang.String%5B%5D)|",
+      "|java+method:///org/apache/solr/request/SolrRequestHandler/init(org.apache.solr.common.util.NamedList)|",
+      "|java+method:///org/apache/solr/util/TestHarness/getCore()|",
+      "|java+constructor:///org/apache/solr/servlet/DirectSolrConnection/DirectSolrConnection(org.apache.solr.core.SolrCore)|",
+      "|java+method:///org/apache/solr/servlet/DirectSolrConnection/request(org.apache.solr.request.SolrRequestHandler,org.apache.solr.common.params.SolrParams,java.lang.String)|",
+      "|java+constructor:///org/apache/solr/handler/JsonUpdateRequestHandler/JsonUpdateRequestHandler()|",
+      "|java+constructor:///org/apache/solr/common/params/ModifiableSolrParams/ModifiableSolrParams(org.apache.solr.common.params.SolrParams)|",
+      "|java+method:///org/apache/solr/core/SolrCore/getRequestHandler(java.lang.String)|"
+    ],
+    "affectedLib": "org.apache.solr:solr-core:4.0.0-ALPHA",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.solr:solr-test-framework:3.6.2",
+    "coordinatesV2": "org.apache.solr:solr-test-framework:4.0.0-ALPHA",
+    "caller": "|java+method:///org/apache/solr/BaseDistributedSearchTestCase/createServers(int)|",
+    "called": "|java+method:///org/apache/solr/client/solrj/embedded/JettySolrRunner/getLocalPort()|",
+    "v1Body": [
+      "|java+method:///org/apache/solr/client/solrj/embedded/JettySolrRunner/getLocalPort()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/apache/solr/BaseDistributedSearchTestCase/createNewSolrServer(int)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/append(char)|",
+      "|java+method:///java/lang/StringBuilder/length()|",
+      "|java+method:///org/apache/solr/BaseDistributedSearchTestCase/createJetty(java.io.File,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/solr/client/solrj/embedded/JettySolrRunner/getLocalPort()|",
+      "|java+method:///org/apache/solr/BaseDistributedSearchTestCase/getSchemaFile()|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/length()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/solr/BaseDistributedSearchTestCase/getSolrConfigFile()|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/append(char)|",
+      "|java+method:///org/apache/solr/BaseDistributedSearchTestCase/createNewSolrServer(int)|",
+      "|java+method:///org/apache/solr/BaseDistributedSearchTestCase/createJetty(java.io.File,java.lang.String,java.lang.String,java.lang.String,java.lang.String)|"
+    ],
+    "affectedLib": "org.apache.solr:solr-core:4.0.0-ALPHA",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.solr:solr-test-framework:3.6.2",
+    "coordinatesV2": "org.apache.solr:solr-test-framework:4.0.0-ALPHA",
+    "caller": "|java+method:///org/apache/solr/BaseDistributedSearchTestCase/destroyServers()|",
+    "called": "|java+method:///org/apache/solr/client/solrj/embedded/JettySolrRunner/stop()|",
+    "v1Body": [
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/apache/solr/client/solrj/embedded/JettySolrRunner/stop()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/List/clear()|",
+      "|java+method:///java/util/List/iterator()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/apache/solr/client/solrj/embedded/JettySolrRunner/stop()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/List/clear()|",
+      "|java+method:///org/apache/solr/client/solrj/impl/HttpSolrServer/shutdown()|",
+      "|java+method:///java/util/List/iterator()|"
+    ],
+    "affectedLib": "org.apache.solr:solr-core:4.0.0-ALPHA",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.solr:solr-test-framework:3.6.2",
+    "coordinatesV2": "org.apache.solr:solr-test-framework:4.0.0-ALPHA",
+    "caller": "|java+method:///org/apache/solr/analysis/MockTokenizerFactory/create(java.io.Reader)|",
+    "called": "|java+constructor:///org/apache/lucene/analysis/MockTokenizer/MockTokenizer(java.io.Reader,org.apache.lucene.util.automaton.CharacterRunAutomaton,boolean)|",
+    "v1Body": [
+      "|java+method:///org/apache/lucene/analysis/MockTokenizer/setEnableChecks(boolean)|",
+      "|java+constructor:///org/apache/lucene/analysis/MockTokenizer/MockTokenizer(java.io.Reader,int,boolean)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/lucene/analysis/MockTokenizer/MockTokenizer(java.io.Reader,org.apache.lucene.util.automaton.CharacterRunAutomaton,boolean)|",
+      "|java+method:///org/apache/lucene/analysis/MockTokenizer/setEnableChecks(boolean)|"
+    ],
+    "affectedLib": "org.apache.lucene:lucene-test-framework:4.0.0-ALPHA",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.solr:solr-test-framework:3.6.2",
+    "coordinatesV2": "org.apache.solr:solr-test-framework:4.0.0-ALPHA",
+    "caller": "|java+constructor:///org/apache/solr/SolrTestCaseJ4/SolrTestCaseJ4()|",
+    "called": "|java+constructor:///org/apache/lucene/util/LuceneTestCase/LuceneTestCase()|",
+    "v1Body": [
+      "|java+constructor:///org/apache/lucene/util/SystemPropertiesRestoreRule/SystemPropertiesRestoreRule()|",
+      "|java+method:///org/junit/rules/RuleChain/outerRule(org.junit.rules.TestRule)|",
+      "|java+constructor:///org/apache/lucene/util/LuceneTestCase/LuceneTestCase()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/carrotsearch/randomizedtesting/rules/SystemPropertiesRestoreRule/SystemPropertiesRestoreRule()|",
+      "|java+method:///org/junit/rules/RuleChain/outerRule(org.junit.rules.TestRule)|",
+      "|java+constructor:///org/apache/lucene/util/LuceneTestCase/LuceneTestCase()|"
+    ],
+    "affectedLib": "org.apache.lucene:lucene-test-framework:4.0.0-ALPHA",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.solr:solr-test-framework:3.6.2",
+    "coordinatesV2": "org.apache.solr:solr-test-framework:4.0.0-ALPHA",
+    "caller": "|java+constructor:///org/apache/solr/util/AbstractSolrTestCase/AbstractSolrTestCase()|",
+    "called": "|java+constructor:///org/apache/lucene/util/LuceneTestCase/LuceneTestCase()|",
+    "v1Body": [
+      "|java+constructor:///org/apache/lucene/util/SystemPropertiesRestoreRule/SystemPropertiesRestoreRule()|",
+      "|java+method:///org/junit/rules/RuleChain/outerRule(org.junit.rules.TestRule)|",
+      "|java+constructor:///org/apache/lucene/util/LuceneTestCase/LuceneTestCase()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/carrotsearch/randomizedtesting/rules/SystemPropertiesRestoreRule/SystemPropertiesRestoreRule()|",
+      "|java+method:///org/junit/rules/RuleChain/outerRule(org.junit.rules.TestRule)|",
+      "|java+constructor:///org/apache/lucene/util/LuceneTestCase/LuceneTestCase()|"
+    ],
+    "affectedLib": "org.apache.lucene:lucene-test-framework:4.0.0-ALPHA",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.solr:solr-test-framework:3.6.2",
+    "coordinatesV2": "org.apache.solr:solr-test-framework:4.0.0-ALPHA",
+    "caller": "|java+method:///org/apache/solr/SolrTestCaseJ4$FVal/getFloat()|",
+    "called": "|java+method:///org/apache/lucene/util/LuceneTestCase/random()|",
+    "v1Body": [
+      "|java+method:///org/apache/lucene/util/SmartRandom/nextFloat()|",
+      "|java+method:///org/apache/solr/SolrTestCaseJ4/access$100()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/lucene/util/LuceneTestCase/random()|",
+      "|java+method:///java/util/Random/nextFloat()|"
+    ],
+    "affectedLib": "org.apache.lucene:lucene-test-framework:4.0.0-ALPHA",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.solr:solr-test-framework:3.6.2",
+    "coordinatesV2": "org.apache.solr:solr-test-framework:4.0.0-ALPHA",
+    "caller": "|java+method:///org/apache/solr/SolrTestCaseJ4$Vals/between(int,int)|",
+    "called": "|java+method:///org/apache/lucene/util/LuceneTestCase/random()|",
+    "v1Body": [
+      "|java+method:///org/apache/solr/SolrTestCaseJ4/access$000()|",
+      "|java+method:///org/apache/lucene/util/SmartRandom/nextInt(int)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Random/nextInt(int)|",
+      "|java+method:///org/apache/lucene/util/LuceneTestCase/random()|"
+    ],
+    "affectedLib": "org.apache.lucene:lucene-test-framework:4.0.0-ALPHA",
+    "change": "UPDATED"
+  }
+]

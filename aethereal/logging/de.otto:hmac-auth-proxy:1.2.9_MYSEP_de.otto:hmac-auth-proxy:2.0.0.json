@@ -1,0 +1,70 @@
+[
+  {
+    "coordinatesV1": "de.otto:hmac-auth-proxy:2.0.0",
+    "coordinatesV2": "de.otto:hmac-auth-proxy:1.2.9",
+    "caller": "|java+method:///de/otto/hmac/proxy/ProxyResource/webResourceWithAuth(com.google.common.io.ByteSource,java.lang.String,java.net.URI)|",
+    "called": "|java+method:///de/otto/hmac/authentication/HMACJerseyClient/create()|",
+    "v1Body": [
+      "|java+constructor:///javax/ws/rs/WebApplicationException/WebApplicationException(java.lang.Throwable)|",
+      "|java+method:///java/net/URI/toString()|",
+      "|java+method:///de/otto/hmac/proxy/ProxyConfiguration/getPassword()|",
+      "|java+method:///java/net/URI/getPath()|",
+      "|java+method:///de/otto/hmac/authentication/HMACJerseyClient/auth(java.lang.String,java.lang.String)|",
+      "|java+method:///de/otto/hmac/authentication/HMACJerseyClient/withMethod(java.lang.String)|",
+      "|java+method:///de/otto/hmac/authentication/HMACJerseyClient/create()|",
+      "|java+method:///de/otto/hmac/authentication/HMACJerseyClient/withBody(com.google.common.io.ByteSource)|",
+      "|java+method:///de/otto/hmac/authentication/HMACJerseyClient/authenticatedResource(java.lang.String)|",
+      "|java+method:///de/otto/hmac/proxy/ProxyConfiguration/getUser()|",
+      "|java+method:///de/otto/hmac/authentication/HMACJerseyClient/withUri(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///javax/ws/rs/WebApplicationException/WebApplicationException(java.lang.Throwable)|",
+      "|java+method:///java/net/URI/toString()|",
+      "|java+method:///de/otto/hmac/proxy/ProxyConfiguration/getPassword()|",
+      "|java+method:///java/net/URI/getPath()|",
+      "|java+method:///de/otto/hmac/authentication/jersey/HMACJerseyClient/create()|",
+      "|java+method:///de/otto/hmac/proxy/ProxyConfiguration/getUser()|",
+      "|java+method:///de/otto/hmac/authentication/jersey/HMACJerseyClient/withUri(java.lang.String)|",
+      "|java+method:///de/otto/hmac/authentication/jersey/HMACJerseyClient/withBody(com.google.common.io.ByteSource)|",
+      "|java+method:///de/otto/hmac/authentication/jersey/HMACJerseyClient/authenticatedResource(java.lang.String)|",
+      "|java+method:///de/otto/hmac/authentication/jersey/HMACJerseyClient/auth(java.lang.String,java.lang.String)|",
+      "|java+method:///de/otto/hmac/authentication/jersey/HMACJerseyClient/withMethod(java.lang.String)|"
+    ],
+    "affectedLib": "de.otto:hmac-auth-client:1.2.9",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "de.otto:hmac-auth-proxy:1.2.9",
+    "coordinatesV2": "de.otto:hmac-auth-proxy:2.0.0",
+    "caller": "|java+method:///de/otto/hmac/proxy/ProxyResource/webResourceWithAuth(com.google.common.io.ByteSource,java.lang.String,java.net.URI)|",
+    "called": "|java+method:///de/otto/hmac/authentication/jersey/HMACJerseyClient/authenticatedResource(java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///javax/ws/rs/WebApplicationException/WebApplicationException(java.lang.Throwable)|",
+      "|java+method:///java/net/URI/toString()|",
+      "|java+method:///de/otto/hmac/proxy/ProxyConfiguration/getPassword()|",
+      "|java+method:///java/net/URI/getPath()|",
+      "|java+method:///de/otto/hmac/authentication/HMACJerseyClient/auth(java.lang.String,java.lang.String)|",
+      "|java+method:///de/otto/hmac/authentication/HMACJerseyClient/withMethod(java.lang.String)|",
+      "|java+method:///de/otto/hmac/authentication/HMACJerseyClient/create()|",
+      "|java+method:///de/otto/hmac/authentication/HMACJerseyClient/withBody(com.google.common.io.ByteSource)|",
+      "|java+method:///de/otto/hmac/authentication/HMACJerseyClient/authenticatedResource(java.lang.String)|",
+      "|java+method:///de/otto/hmac/proxy/ProxyConfiguration/getUser()|",
+      "|java+method:///de/otto/hmac/authentication/HMACJerseyClient/withUri(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///javax/ws/rs/WebApplicationException/WebApplicationException(java.lang.Throwable)|",
+      "|java+method:///java/net/URI/toString()|",
+      "|java+method:///de/otto/hmac/proxy/ProxyConfiguration/getPassword()|",
+      "|java+method:///java/net/URI/getPath()|",
+      "|java+method:///de/otto/hmac/authentication/jersey/HMACJerseyClient/create()|",
+      "|java+method:///de/otto/hmac/proxy/ProxyConfiguration/getUser()|",
+      "|java+method:///de/otto/hmac/authentication/jersey/HMACJerseyClient/withUri(java.lang.String)|",
+      "|java+method:///de/otto/hmac/authentication/jersey/HMACJerseyClient/withBody(com.google.common.io.ByteSource)|",
+      "|java+method:///de/otto/hmac/authentication/jersey/HMACJerseyClient/authenticatedResource(java.lang.String)|",
+      "|java+method:///de/otto/hmac/authentication/jersey/HMACJerseyClient/auth(java.lang.String,java.lang.String)|",
+      "|java+method:///de/otto/hmac/authentication/jersey/HMACJerseyClient/withMethod(java.lang.String)|"
+    ],
+    "affectedLib": "de.otto:hmac-auth-jersey-client:2.0.0",
+    "change": "ADDED"
+  }
+]

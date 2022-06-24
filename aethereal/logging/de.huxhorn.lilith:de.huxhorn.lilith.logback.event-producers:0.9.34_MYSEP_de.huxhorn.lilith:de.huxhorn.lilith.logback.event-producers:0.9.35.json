@@ -1,0 +1,64 @@
+[
+  {
+    "coordinatesV1": "de.huxhorn.lilith:de.huxhorn.lilith.logback.event-producers:0.9.34",
+    "coordinatesV2": "de.huxhorn.lilith:de.huxhorn.lilith.logback.event-producers:0.9.35",
+    "caller": "|java+constructor:///de/huxhorn/lilith/logback/producer/LogbackAccessStreamEventProducer/LogbackAccessStreamEventProducer(de.huxhorn.lilith.data.eventsource.SourceIdentifier,de.huxhorn.sulky.buffers.AppendOperation,java.io.InputStream)|",
+    "called": "|java+constructor:///de/huxhorn/lilith/data/access/logback/LogbackAccessAdapter/LogbackAccessAdapter()|",
+    "v1Body": [
+      "|java+constructor:///de/huxhorn/lilith/logback/producer/AbstractLogbackStreamEventProducer/AbstractLogbackStreamEventProducer(de.huxhorn.lilith.data.eventsource.SourceIdentifier,de.huxhorn.sulky.buffers.AppendOperation,java.io.InputStream)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///de/huxhorn/lilith/data/access/logback/LogbackAccessAdapter/LogbackAccessAdapter()|",
+      "|java+constructor:///de/huxhorn/lilith/logback/producer/AbstractLogbackStreamEventProducer/AbstractLogbackStreamEventProducer(de.huxhorn.lilith.data.eventsource.SourceIdentifier,de.huxhorn.sulky.buffers.AppendOperation,java.io.InputStream)|"
+    ],
+    "affectedLib": "de.huxhorn.lilith:de.huxhorn.lilith.logback.access-adapter:0.9.35",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "de.huxhorn.lilith:de.huxhorn.lilith.logback.event-producers:0.9.34",
+    "coordinatesV2": "de.huxhorn.lilith:de.huxhorn.lilith.logback.event-producers:0.9.35",
+    "caller": "|java+method:///de/huxhorn/lilith/logback/producer/LogbackAccessStreamEventProducer/postprocessEvent(java.lang.Object)|",
+    "called": "|java+method:///de/huxhorn/lilith/data/access/logback/LogbackAccessAdapter/convert(ch.qos.logback.access.spi.AccessEvent)|",
+    "v1Body": [
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+method:///org/slf4j/Logger/isInfoEnabled()|",
+      "|java+method:///de/huxhorn/lilith/logback/producer/LogbackAccessStreamEventProducer/postprocessEvent(java.lang.Object)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+method:///org/slf4j/Logger/isInfoEnabled()|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String,java.lang.Object)|",
+      "|java+method:///de/huxhorn/lilith/data/access/logback/LogbackAccessAdapter/convert(ch.qos.logback.access.spi.AccessEvent)|",
+      "|java+method:///de/huxhorn/lilith/logback/producer/LogbackAccessStreamEventProducer/postprocessEvent(java.lang.Object)|"
+    ],
+    "affectedLib": "de.huxhorn.lilith:de.huxhorn.lilith.logback.access-adapter:0.9.35",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "de.huxhorn.lilith:de.huxhorn.lilith.logback.event-producers:0.9.34",
+    "coordinatesV2": "de.huxhorn.lilith:de.huxhorn.lilith.logback.event-producers:0.9.35",
+    "caller": "|java+method:///de/huxhorn/lilith/logback/producer/LogbackLoggingStreamEventProducer/postprocessEvent(java.lang.Object)|",
+    "called": "|java+method:///de/huxhorn/lilith/data/logging/logback/LogbackLoggingAdapter/convert(ch.qos.logback.classic.spi.LoggingEvent,boolean)|",
+    "v1Body": [
+      "|java+method:///de/huxhorn/lilith/data/logging/logback/LogbackLoggingAdapter/convert(ch.qos.logback.classic.spi.LoggingEvent)|",
+      "|java+method:///org/slf4j/Logger/isInfoEnabled()|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+method:///de/huxhorn/lilith/logback/producer/LogbackLoggingStreamEventProducer/postprocessEvent(java.lang.Object)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/isInfoEnabled()|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+method:///de/huxhorn/lilith/logback/producer/LogbackLoggingStreamEventProducer/postprocessEvent(java.lang.Object)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///de/huxhorn/lilith/data/logging/logback/LogbackLoggingAdapter/convert(ch.qos.logback.classic.spi.LoggingEvent,boolean)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String,java.lang.Object)|"
+    ],
+    "affectedLib": "de.huxhorn.lilith:de.huxhorn.lilith.logback.logging-adapter:0.9.35",
+    "change": "UPDATED"
+  }
+]

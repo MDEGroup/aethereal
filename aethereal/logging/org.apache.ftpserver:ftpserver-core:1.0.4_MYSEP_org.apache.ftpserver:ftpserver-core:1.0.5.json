@@ -1,0 +1,28 @@
+[
+  {
+    "coordinatesV1": "org.apache.ftpserver:ftpserver-core:1.0.4",
+    "coordinatesV2": "org.apache.ftpserver:ftpserver-core:1.0.5",
+    "caller": "|java+method:///org/apache/ftpserver/command/impl/STAT/execute(org.apache.ftpserver.impl.FtpIoSession,org.apache.ftpserver.impl.FtpServerContext,org.apache.ftpserver.ftplet.FtpRequest)|",
+    "called": "|java+constructor:///org/apache/ftpserver/ftplet/DefaultFtpReply/DefaultFtpReply(int,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/apache/ftpserver/impl/FtpIoSession/resetState()|",
+      "|java+method:///org/apache/ftpserver/impl/FtpIoSession/write(java.lang.Object)|",
+      "|java+method:///org/apache/ftpserver/impl/LocalizedFtpReply/translate(org.apache.ftpserver.impl.FtpIoSession,org.apache.ftpserver.ftplet.FtpRequest,org.apache.ftpserver.impl.FtpServerContext,int,java.lang.String,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/ftpserver/ftplet/FtpRequest/getArgument()|",
+      "|java+method:///org/apache/ftpserver/command/impl/listing/DirectoryLister/listFiles(org.apache.ftpserver.command.impl.listing.ListArgument,org.apache.ftpserver.ftplet.FileSystemView,org.apache.ftpserver.command.impl.listing.FileFormater)|",
+      "|java+method:///org/apache/ftpserver/command/impl/listing/ListArgumentParser/parse(java.lang.String)|",
+      "|java+method:///org/apache/ftpserver/impl/FtpIoSession/resetState()|",
+      "|java+method:///org/apache/ftpserver/ftplet/FtpFile/doesExist()|",
+      "|java+method:///org/apache/ftpserver/impl/FtpIoSession/write(java.lang.Object)|",
+      "|java+method:///org/apache/ftpserver/impl/LocalizedFtpReply/translate(org.apache.ftpserver.impl.FtpIoSession,org.apache.ftpserver.ftplet.FtpRequest,org.apache.ftpserver.impl.FtpServerContext,int,java.lang.String,java.lang.String)|",
+      "|java+method:///org/apache/ftpserver/ftplet/FileSystemView/getFile(java.lang.String)|",
+      "|java+constructor:///org/apache/ftpserver/ftplet/DefaultFtpReply/DefaultFtpReply(int,java.lang.String)|",
+      "|java+method:///org/apache/ftpserver/command/impl/listing/ListArgument/getFile()|",
+      "|java+method:///org/apache/ftpserver/impl/FtpIoSession/getFileSystemView()|"
+    ],
+    "affectedLib": "org.apache.ftpserver:ftplet-api:1.0.5",
+    "change": "UPDATED"
+  }
+]

@@ -1,0 +1,71 @@
+[
+  {
+    "coordinatesV1": "org.jasig.service.persondir:person-directory-impl:1.7.0",
+    "coordinatesV2": "org.jasig.service.persondir:person-directory-impl:1.7.1-M1",
+    "caller": "|java+method:///org/jasig/services/persondir/support/CaseInsensitiveNamedPersonImpl/createImmutableAttributeMap(int)|",
+    "called": "|java+constructor:///org/apache/commons/collections4/map/CaseInsensitiveMap/CaseInsensitiveMap(int)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/commons/collections4/map/CaseInsensitiveMap/CaseInsensitiveMap(int)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/collections4/map/ListOrderedMap/listOrderedMap(java.util.Map)|",
+      "|java+constructor:///org/apache/commons/collections4/map/CaseInsensitiveMap/CaseInsensitiveMap(int)|"
+    ],
+    "affectedLib": "org.apache.commons:commons-collections4:4.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.jasig.service.persondir:person-directory-impl:1.7.0",
+    "coordinatesV2": "org.jasig.service.persondir:person-directory-impl:1.7.1-M1",
+    "caller": "|java+method:///org/jasig/services/persondir/support/CaseInsensitiveAttributeNamedPersonImpl/createImmutableAttributeMap(int)|",
+    "called": "|java+constructor:///org/apache/commons/collections4/map/CaseInsensitiveMap/CaseInsensitiveMap(int)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/commons/collections4/map/CaseInsensitiveMap/CaseInsensitiveMap(int)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/collections4/map/ListOrderedMap/listOrderedMap(java.util.Map)|",
+      "|java+constructor:///org/apache/commons/collections4/map/CaseInsensitiveMap/CaseInsensitiveMap(int)|"
+    ],
+    "affectedLib": "org.apache.commons:commons-collections4:4.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.jasig.service.persondir:person-directory-impl:1.7.0",
+    "coordinatesV2": "org.jasig.service.persondir:person-directory-impl:1.7.1-M1",
+    "caller": "|java+constructor:///org/jasig/services/persondir/support/web/RequestAttributeSourceFilter/RequestAttributeSourceFilter()|",
+    "called": "|java+constructor:///org/springframework/web/filter/GenericFilterBean/GenericFilterBean()|",
+    "v1Body": [
+      "|java+method:///java/util/Collections/emptyMap()|",
+      "|java+constructor:///org/springframework/web/filter/GenericFilterBean/GenericFilterBean()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Collections/emptyMap()|",
+      "|java+method:///java/util/Arrays/asList(java.lang.Object%5B%5D)|",
+      "|java+method:///java/nio/charset/Charset/name()|",
+      "|java+constructor:///org/springframework/web/filter/GenericFilterBean/GenericFilterBean()|",
+      "|java+constructor:///java/util/HashSet/HashSet(java.util.Collection)|"
+    ],
+    "affectedLib": "org.springframework:spring-web:4.1.6.RELEASE",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.jasig.service.persondir:person-directory-impl:1.7.0",
+    "coordinatesV2": "org.jasig.service.persondir:person-directory-impl:1.7.1-M1",
+    "caller": "|java+constructor:///org/jasig/services/persondir/support/BasePersonImpl/BasePersonImpl(java.util.Map)|",
+    "called": "|java+method:///org/apache/commons/lang3/Validate/notNull(java.lang.Object,java.lang.String,java.lang.Object%5B%5D)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/lang3/Validate/notNull(java.lang.Object,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+constructor:///java/util/HashMap/HashMap(java.util.Map)|",
+      "|java+method:///org/jasig/services/persondir/support/BasePersonImpl/buildImmutableAttributeMap(java.util.Map)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/lang3/Validate/notNull(java.lang.Object,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///java/util/Collections/unmodifiableMap(java.util.Map)|",
+      "|java+method:///org/jasig/services/persondir/support/BasePersonImpl/buildImmutableAttributeMap(java.util.Map)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "org.apache.commons:commons-lang3:3.4",
+    "change": "ADDED"
+  }
+]

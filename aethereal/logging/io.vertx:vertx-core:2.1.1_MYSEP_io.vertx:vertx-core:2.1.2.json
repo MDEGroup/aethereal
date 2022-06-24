@@ -1,0 +1,130 @@
+[
+  {
+    "coordinatesV1": "io.vertx:vertx-core:2.1.1",
+    "coordinatesV2": "io.vertx:vertx-core:2.1.2",
+    "caller": "|java+method:///org/vertx/java/core/http/impl/VertxHttpHandler/safeObject(java.lang.Object,io.netty.buffer.ByteBufAllocator)|",
+    "called": "|java+constructor:///io/netty/handler/codec/http/DefaultHttpContent/DefaultHttpContent(io.netty.buffer.ByteBuf)|",
+    "v1Body": [
+      "|java+constructor:///java/lang/IllegalStateException/IllegalStateException(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///io/netty/buffer/ByteBuf/isDirect()|",
+      "|java+constructor:///org/vertx/java/core/http/impl/ws/DefaultWebSocketFrame/DefaultWebSocketFrame(org.vertx.java.core.http.WebSocketFrame$FrameType,io.netty.buffer.ByteBuf,boolean)|",
+      "|java+constructor:///org/vertx/java/core/http/impl/AssembledLastHttpContent/AssembledLastHttpContent(io.netty.buffer.ByteBuf,io.netty.handler.codec.http.HttpHeaders)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/vertx/java/core/http/impl/VertxHttpHandler/safeBuffer(io.netty.buffer.ByteBufHolder,io.netty.buffer.ByteBufAllocator)|",
+      "|java+method:///io/netty/handler/codec/http/HttpContent/content()|",
+      "|java+constructor:///io/netty/handler/codec/http/DefaultHttpContent/DefaultHttpContent(io.netty.buffer.ByteBuf)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///io/netty/handler/codec/http/websocketx/WebSocketFrame/isFinalFragment()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///io/netty/handler/codec/http/LastHttpContent/trailingHeaders()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/lang/IllegalStateException/IllegalStateException(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///io/netty/buffer/ByteBuf/isDirect()|",
+      "|java+method:///io/netty/handler/codec/http/LastHttpContent/getDecoderResult()|",
+      "|java+constructor:///org/vertx/java/core/http/impl/ws/DefaultWebSocketFrame/DefaultWebSocketFrame(org.vertx.java.core.http.WebSocketFrame$FrameType,io.netty.buffer.ByteBuf,boolean)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/vertx/java/core/http/impl/VertxHttpHandler/safeBuffer(io.netty.buffer.ByteBufHolder,io.netty.buffer.ByteBufAllocator)|",
+      "|java+constructor:///org/vertx/java/core/http/impl/AssembledLastHttpContent/AssembledLastHttpContent(io.netty.buffer.ByteBuf,io.netty.handler.codec.http.HttpHeaders,io.netty.handler.codec.DecoderResult)|",
+      "|java+method:///io/netty/handler/codec/http/HttpContent/content()|",
+      "|java+constructor:///io/netty/handler/codec/http/DefaultHttpContent/DefaultHttpContent(io.netty.buffer.ByteBuf)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///io/netty/handler/codec/http/websocketx/WebSocketFrame/isFinalFragment()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///io/netty/handler/codec/http/LastHttpContent/trailingHeaders()|"
+    ],
+    "affectedLib": "io.netty:netty-all:4.0.27.Final",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "io.vertx:vertx-core:2.1.1",
+    "coordinatesV2": "io.vertx:vertx-core:2.1.2",
+    "caller": "|java+method:///org/vertx/java/core/http/impl/DefaultHttpServerResponse/setStatusCode(int)|",
+    "called": "|java+constructor:///io/netty/handler/codec/http/HttpResponseStatus/HttpResponseStatus(int,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///io/netty/handler/codec/http/HttpResponse/setStatus(io.netty.handler.codec.http.HttpResponseStatus)|",
+      "|java+method:///io/netty/handler/codec/http/HttpResponse/getStatus()|",
+      "|java+method:///io/netty/handler/codec/http/HttpResponseStatus/reasonPhrase()|",
+      "|java+constructor:///io/netty/handler/codec/http/HttpResponseStatus/HttpResponseStatus(int,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///io/netty/handler/codec/http/HttpResponse/setStatus(io.netty.handler.codec.http.HttpResponseStatus)|",
+      "|java+method:///io/netty/handler/codec/http/HttpResponseStatus/valueOf(int)|",
+      "|java+constructor:///io/netty/handler/codec/http/HttpResponseStatus/HttpResponseStatus(int,java.lang.String)|"
+    ],
+    "affectedLib": "io.netty:netty-all:4.0.27.Final",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "io.vertx:vertx-core:2.1.1",
+    "coordinatesV2": "io.vertx:vertx-core:2.1.2",
+    "caller": "|java+method:///org/vertx/java/core/http/impl/VertxHttpHandler/channelRead(org.vertx.java.core.net.impl.ConnectionBase,org.vertx.java.core.impl.DefaultContext,io.netty.channel.ChannelHandlerContext,java.lang.Object)|",
+    "called": "|java+method:///io/netty/handler/codec/DecoderResult/cause()|",
+    "v1Body": [
+      "|java+method:///org/vertx/java/core/http/impl/VertxHttpHandler/doMessageReceived(org.vertx.java.core.net.impl.ConnectionBase,io.netty.channel.ChannelHandlerContext,java.lang.Object)|",
+      "|java+method:///io/netty/channel/ChannelHandlerContext/pipeline()|",
+      "|java+method:///io/netty/channel/Channel/eventLoop()|",
+      "|java+method:///org/vertx/java/core/impl/VertxInternal/setContext(org.vertx.java.core.impl.DefaultContext)|",
+      "|java+method:///io/netty/channel/ChannelPipeline/fireExceptionCaught(java.lang.Throwable)|",
+      "|java+method:///org/vertx/java/core/impl/DefaultContext/execute(java.lang.Runnable)|",
+      "|java+method:///org/vertx/java/core/impl/DefaultContext/reportException(java.lang.Throwable)|",
+      "|java+constructor:///org/vertx/java/core/http/impl/VertxHttpHandler$1/VertxHttpHandler$1(org.vertx.java.core.http.impl.VertxHttpHandler,org.vertx.java.core.net.impl.ConnectionBase,io.netty.channel.ChannelHandlerContext,java.lang.Object,org.vertx.java.core.impl.DefaultContext)|",
+      "|java+method:///org/vertx/java/core/impl/DefaultContext/isOnCorrectWorker(io.netty.channel.EventLoop)|",
+      "|java+method:///io/netty/channel/ChannelHandlerContext/channel()|"
+    ],
+    "v2Body": [
+      "|java+method:///io/netty/handler/codec/DecoderResult/cause()|",
+      "|java+method:///org/vertx/java/core/http/impl/VertxHttpHandler/doMessageReceived(org.vertx.java.core.net.impl.ConnectionBase,io.netty.channel.ChannelHandlerContext,java.lang.Object)|",
+      "|java+method:///io/netty/channel/ChannelHandlerContext/pipeline()|",
+      "|java+method:///io/netty/channel/Channel/eventLoop()|",
+      "|java+method:///org/vertx/java/core/impl/VertxInternal/setContext(org.vertx.java.core.impl.DefaultContext)|",
+      "|java+method:///io/netty/channel/ChannelPipeline/fireExceptionCaught(java.lang.Throwable)|",
+      "|java+method:///io/netty/handler/codec/http/HttpObject/getDecoderResult()|",
+      "|java+method:///org/vertx/java/core/impl/DefaultContext/reportException(java.lang.Throwable)|",
+      "|java+constructor:///org/vertx/java/core/http/impl/VertxHttpHandler$1/VertxHttpHandler$1(org.vertx.java.core.http.impl.VertxHttpHandler,org.vertx.java.core.net.impl.ConnectionBase,io.netty.channel.ChannelHandlerContext,java.lang.Object,org.vertx.java.core.impl.DefaultContext)|",
+      "|java+method:///org/vertx/java/core/impl/DefaultContext/isOnCorrectWorker(io.netty.channel.EventLoop)|",
+      "|java+method:///io/netty/channel/ChannelHandlerContext/channel()|",
+      "|java+method:///io/netty/handler/codec/DecoderResult/isFailure()|",
+      "|java+method:///org/vertx/java/core/impl/DefaultContext/execute(java.lang.Runnable)|"
+    ],
+    "affectedLib": "io.netty:netty-all:4.0.27.Final",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "io.vertx:vertx-core:2.1.1",
+    "coordinatesV2": "io.vertx:vertx-core:2.1.2",
+    "caller": "|java+method:///org/vertx/java/core/http/impl/DefaultHttpServerResponse/end0(io.netty.buffer.ByteBuf)|",
+    "called": "|java+constructor:///io/netty/handler/codec/http/DefaultLastHttpContent/DefaultLastHttpContent(io.netty.buffer.ByteBuf,boolean)|",
+    "v1Body": [
+      "|java+method:///org/vertx/java/core/http/impl/DefaultHttpServerResponse/closeConnAfterWrite()|",
+      "|java+constructor:///io/netty/handler/codec/http/DefaultLastHttpContent/DefaultLastHttpContent(io.netty.buffer.ByteBuf,boolean)|",
+      "|java+method:///org/vertx/java/core/http/impl/DefaultHttpServerResponse/checkWritten()|",
+      "|java+constructor:///org/vertx/java/core/http/impl/AssembledFullHttpResponse/AssembledFullHttpResponse(io.netty.handler.codec.http.HttpResponse,io.netty.buffer.ByteBuf,io.netty.handler.codec.http.HttpHeaders)|",
+      "|java+method:///io/netty/buffer/ByteBuf/isReadable()|",
+      "|java+constructor:///org/vertx/java/core/http/impl/AssembledLastHttpContent/AssembledLastHttpContent(io.netty.buffer.ByteBuf,io.netty.handler.codec.http.HttpHeaders)|",
+      "|java+method:///org/vertx/java/core/http/impl/ServerConnection/write(java.lang.Object)|",
+      "|java+method:///org/vertx/java/core/http/impl/DefaultHttpServerResponse/prepareHeaders()|",
+      "|java+method:///io/netty/handler/codec/http/LastHttpContent/trailingHeaders()|",
+      "|java+method:///org/vertx/java/core/http/impl/ServerConnection/responseComplete()|",
+      "|java+constructor:///org/vertx/java/core/http/impl/AssembledFullHttpResponse/AssembledFullHttpResponse(io.netty.handler.codec.http.HttpResponse,io.netty.buffer.ByteBuf)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/vertx/java/core/http/impl/DefaultHttpServerResponse/closeConnAfterWrite()|",
+      "|java+constructor:///org/vertx/java/core/http/impl/AssembledLastHttpContent/AssembledLastHttpContent(io.netty.buffer.ByteBuf,io.netty.handler.codec.http.HttpHeaders,io.netty.handler.codec.DecoderResult)|",
+      "|java+constructor:///io/netty/handler/codec/http/DefaultLastHttpContent/DefaultLastHttpContent(io.netty.buffer.ByteBuf,boolean)|",
+      "|java+method:///org/vertx/java/core/http/impl/DefaultHttpServerResponse/checkWritten()|",
+      "|java+method:///io/netty/handler/codec/http/LastHttpContent/getDecoderResult()|",
+      "|java+constructor:///org/vertx/java/core/http/impl/AssembledFullHttpResponse/AssembledFullHttpResponse(io.netty.handler.codec.http.HttpResponse,io.netty.buffer.ByteBuf,io.netty.handler.codec.http.HttpHeaders,io.netty.handler.codec.DecoderResult)|",
+      "|java+method:///io/netty/buffer/ByteBuf/isReadable()|",
+      "|java+method:///org/vertx/java/core/http/impl/ServerConnection/write(java.lang.Object)|",
+      "|java+method:///org/vertx/java/core/http/impl/DefaultHttpServerResponse/prepareHeaders()|",
+      "|java+method:///io/netty/handler/codec/http/LastHttpContent/trailingHeaders()|",
+      "|java+method:///org/vertx/java/core/http/impl/ServerConnection/responseComplete()|",
+      "|java+constructor:///org/vertx/java/core/http/impl/AssembledFullHttpResponse/AssembledFullHttpResponse(io.netty.handler.codec.http.HttpResponse,io.netty.buffer.ByteBuf)|"
+    ],
+    "affectedLib": "io.netty:netty-all:4.0.27.Final",
+    "change": "ADDED"
+  }
+]

@@ -1,0 +1,158 @@
+[
+  {
+    "coordinatesV1": "io.apiman:apiman-common-auth:1.2.4.Final",
+    "coordinatesV2": "io.apiman:apiman-common-auth:1.2.1.Final",
+    "caller": "|java+method:///io/apiman/common/auth/AuthTokenUtil/fromJSON(java.lang.String)|",
+    "called": "|java+method:///org/codehaus/jackson/map/ObjectMapper/reader(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/codehaus/jackson/map/ObjectMapper/reader(java.lang.Class)|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.Throwable)|",
+      "|java+method:///org/codehaus/jackson/map/ObjectReader/readValue(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/fasterxml/jackson/databind/ObjectReader/readValue(java.lang.String)|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.Throwable)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/reader(java.lang.Class)|"
+    ],
+    "affectedLib": "org.codehaus.jackson:jackson-mapper-asl:1.9.9",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "io.apiman:apiman-common-auth:1.2.4.Final",
+    "coordinatesV2": "io.apiman:apiman-common-auth:1.2.1.Final",
+    "caller": "|java+initializer:///io/apiman/common/auth/AuthTokenUtil/AuthTokenUtil$initializer|",
+    "called": "|java+constructor:///org/codehaus/jackson/map/ObjectMapper/ObjectMapper()|",
+    "v1Body": [
+      "|java+constructor:///org/codehaus/jackson/map/ObjectMapper/ObjectMapper()|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+constructor:///io/apiman/common/auth/AuthTokenUtil$1/AuthTokenUtil$1()|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///java/util/ServiceLoader/iterator()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/ServiceLoader/load(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+constructor:///io/apiman/common/auth/AuthTokenUtil$1/AuthTokenUtil$1()|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///java/util/ServiceLoader/iterator()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+constructor:///com/fasterxml/jackson/databind/ObjectMapper/ObjectMapper()|",
+      "|java+method:///java/util/ServiceLoader/load(java.lang.Class)|"
+    ],
+    "affectedLib": "org.codehaus.jackson:jackson-mapper-asl:1.9.9",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "io.apiman:apiman-common-auth:1.2.4.Final",
+    "coordinatesV2": "io.apiman:apiman-common-auth:1.2.1.Final",
+    "caller": "|java+method:///io/apiman/common/auth/AuthTokenUtil/toJSON(io.apiman.common.auth.AuthToken)|",
+    "called": "|java+method:///org/codehaus/jackson/map/ObjectWriter/writeValueAsString(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/codehaus/jackson/map/ObjectMapper/writer()|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.Throwable)|",
+      "|java+method:///org/codehaus/jackson/map/ObjectWriter/writeValueAsString(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.Throwable)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectWriter/writeValueAsString(java.lang.Object)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/writer()|"
+    ],
+    "affectedLib": "org.codehaus.jackson:jackson-mapper-asl:1.9.9",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "io.apiman:apiman-common-auth:1.2.1.Final",
+    "coordinatesV2": "io.apiman:apiman-common-auth:1.2.4.Final",
+    "caller": "|java+method:///io/apiman/common/auth/AuthTokenUtil/fromJSON(java.lang.String)|",
+    "called": "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/reader(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/codehaus/jackson/map/ObjectMapper/reader(java.lang.Class)|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.Throwable)|",
+      "|java+method:///org/codehaus/jackson/map/ObjectReader/readValue(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/fasterxml/jackson/databind/ObjectReader/readValue(java.lang.String)|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.Throwable)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/reader(java.lang.Class)|"
+    ],
+    "affectedLib": "com.fasterxml.jackson.core:jackson-databind:2.5.4",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "io.apiman:apiman-common-auth:1.2.1.Final",
+    "coordinatesV2": "io.apiman:apiman-common-auth:1.2.4.Final",
+    "caller": "|java+initializer:///io/apiman/common/auth/AuthTokenUtil/AuthTokenUtil$initializer|",
+    "called": "|java+constructor:///com/fasterxml/jackson/databind/ObjectMapper/ObjectMapper()|",
+    "v1Body": [
+      "|java+constructor:///org/codehaus/jackson/map/ObjectMapper/ObjectMapper()|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+constructor:///io/apiman/common/auth/AuthTokenUtil$1/AuthTokenUtil$1()|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///java/util/ServiceLoader/iterator()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/ServiceLoader/load(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+constructor:///io/apiman/common/auth/AuthTokenUtil$1/AuthTokenUtil$1()|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///java/util/ServiceLoader/iterator()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+constructor:///com/fasterxml/jackson/databind/ObjectMapper/ObjectMapper()|",
+      "|java+method:///java/util/ServiceLoader/load(java.lang.Class)|"
+    ],
+    "affectedLib": "com.fasterxml.jackson.core:jackson-databind:2.5.4",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "io.apiman:apiman-common-auth:1.2.1.Final",
+    "coordinatesV2": "io.apiman:apiman-common-auth:1.2.4.Final",
+    "caller": "|java+method:///io/apiman/common/auth/AuthTokenUtil/toJSON(io.apiman.common.auth.AuthToken)|",
+    "called": "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/writer()|",
+    "v1Body": [
+      "|java+method:///org/codehaus/jackson/map/ObjectMapper/writer()|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.Throwable)|",
+      "|java+method:///org/codehaus/jackson/map/ObjectWriter/writeValueAsString(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.Throwable)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectWriter/writeValueAsString(java.lang.Object)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/writer()|"
+    ],
+    "affectedLib": "com.fasterxml.jackson.core:jackson-databind:2.5.4",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "io.apiman:apiman-common-auth:1.2.1.Final",
+    "coordinatesV2": "io.apiman:apiman-common-auth:1.2.4.Final",
+    "caller": "|java+initializer:///io/apiman/common/auth/AuthTokenUtil/AuthTokenUtil$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+constructor:///org/codehaus/jackson/map/ObjectMapper/ObjectMapper()|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+constructor:///io/apiman/common/auth/AuthTokenUtil$1/AuthTokenUtil$1()|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///java/util/ServiceLoader/iterator()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/ServiceLoader/load(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+constructor:///io/apiman/common/auth/AuthTokenUtil$1/AuthTokenUtil$1()|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///java/util/ServiceLoader/iterator()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+constructor:///com/fasterxml/jackson/databind/ObjectMapper/ObjectMapper()|",
+      "|java+method:///java/util/ServiceLoader/load(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.7",
+    "change": "UPDATED"
+  }
+]

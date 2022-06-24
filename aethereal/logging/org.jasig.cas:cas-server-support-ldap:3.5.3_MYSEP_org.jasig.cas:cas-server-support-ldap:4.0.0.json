@@ -1,0 +1,330 @@
+[
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-support-ldap:4.0.0",
+    "coordinatesV2": "org.jasig.cas:cas-server-support-ldap:3.5.3",
+    "caller": "|java+method:///org/jasig/cas/adaptors/ldap/services/LdapServiceRegistryDao/save(org.jasig.cas.services.RegisteredService)|",
+    "called": "|java+method:///org/springframework/ldap/core/DirContextAdapter/getNameInNamespace()|",
+    "v1Body": [
+      "|java+method:///org/springframework/ldap/core/DirContextAdapter/getNameInNamespace()|",
+      "|java+method:///org/jasig/cas/adaptors/ldap/services/LdapServiceMapper/doMapToContext(org.jasig.cas.services.RegisteredService,org.springframework.ldap.core.DirContextAdapter)|",
+      "|java+method:///org/jasig/cas/services/RegisteredServiceImpl/setId(long)|",
+      "|java+method:///org/jasig/cas/adaptors/ldap/services/LdapServiceMapper/createCtx(java.lang.String,org.jasig.cas.services.RegisteredService)|",
+      "|java+method:///org/jasig/cas/services/RegisteredServiceImpl/getId()|",
+      "|java+method:///org/springframework/ldap/core/LdapTemplate/bind(java.lang.String,java.lang.Object,javax.naming.directory.Attributes)|",
+      "|java+method:///org/jasig/cas/adaptors/ldap/services/LdapServiceRegistryDao/update(org.jasig.cas.services.RegisteredServiceImpl)|",
+      "|java+method:///java/lang/String/hashCode()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/jasig/cas/adaptors/ldap/services/LdapServiceRegistryDao/update(org.jasig.cas.services.RegisteredService)|",
+      "|java+constructor:///org/ldaptive/AddOperation/AddOperation(org.ldaptive.Connection)|",
+      "|java+method:///org/ldaptive/AddOperation/execute(org.ldaptive.Request)|",
+      "|java+method:///org/ldaptive/LdapException/getMessage()|",
+      "|java+method:///org/ldaptive/ConnectionFactory/getConnection()|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/jasig/cas/util/LdapUtils/closeConnection(org.ldaptive.Connection)|",
+      "|java+method:///org/ldaptive/LdapEntry/getDn()|",
+      "|java+method:///org/jasig/cas/adaptors/ldap/services/LdapRegisteredServiceMapper/mapFromRegisteredService(java.lang.String,org.jasig.cas.services.RegisteredService)|",
+      "|java+method:///org/ldaptive/LdapEntry/getAttributes()|",
+      "|java+method:///org/ldaptive/SearchRequest/getBaseDn()|",
+      "|java+method:///org/jasig/cas/services/RegisteredService/getId()|",
+      "|java+constructor:///org/ldaptive/AddRequest/AddRequest(java.lang.String,java.util.Collection)|"
+    ],
+    "affectedLib": "org.springframework.ldap:spring-ldap-core:1.3.1.RELEASE",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-support-ldap:4.0.0",
+    "coordinatesV2": "org.jasig.cas:cas-server-support-ldap:3.5.3",
+    "caller": "|java+method:///org/jasig/cas/adaptors/ldap/services/LdapServiceRegistryDao/delete(org.jasig.cas.services.RegisteredService)|",
+    "called": "|java+method:///org/springframework/ldap/core/LdapTemplate/unbind(java.lang.String,boolean)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///org/springframework/ldap/core/LdapTemplate/unbind(java.lang.String,boolean)|",
+      "|java+method:///org/springframework/ldap/filter/Filter/encode()|",
+      "|java+method:///org/jasig/cas/services/RegisteredService/getId()|",
+      "|java+method:///org/jasig/cas/adaptors/ldap/services/LdapServiceRegistryDao/findDn(java.lang.String)|",
+      "|java+method:///org/jasig/cas/adaptors/ldap/services/LdapServiceMapper/getSearchFilter(java.lang.Long)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/ldaptive/DeleteOperation/DeleteOperation(org.ldaptive.Connection)|",
+      "|java+method:///org/ldaptive/ConnectionFactory/getConnection()|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/jasig/cas/util/LdapUtils/closeConnection(org.ldaptive.Connection)|",
+      "|java+method:///org/jasig/cas/services/RegisteredService/getId()|",
+      "|java+method:///org/ldaptive/Response/getResult()|",
+      "|java+constructor:///org/ldaptive/DeleteRequest/DeleteRequest(java.lang.String)|",
+      "|java+method:///org/ldaptive/LdapEntry/getDn()|",
+      "|java+method:///org/jasig/cas/adaptors/ldap/services/LdapServiceRegistryDao/hasResults(org.ldaptive.Response)|",
+      "|java+method:///org/jasig/cas/adaptors/ldap/services/LdapServiceRegistryDao/searchForServiceById(org.ldaptive.Connection,long)|",
+      "|java+method:///org/ldaptive/Response/getResultCode()|",
+      "|java+method:///org/ldaptive/SearchResult/getEntry()|",
+      "|java+method:///org/ldaptive/DeleteOperation/execute(org.ldaptive.Request)|",
+      "|java+method:///org/ldaptive/LdapException/getMessage()|"
+    ],
+    "affectedLib": "org.springframework.ldap:spring-ldap-core:1.3.1.RELEASE",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-support-ldap:4.0.0",
+    "coordinatesV2": "org.jasig.cas:cas-server-support-ldap:3.5.3",
+    "caller": "|java+method:///org/jasig/cas/adaptors/ldap/services/LdapServiceRegistryDao/load()|",
+    "called": "|java+method:///org/springframework/ldap/core/LdapTemplate/search(java.lang.String,java.lang.String,javax.naming.directory.SearchControls,org.springframework.ldap.core.ContextMapper)|",
+    "v1Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///org/springframework/ldap/core/LdapTemplate/search(java.lang.String,java.lang.String,javax.naming.directory.SearchControls,org.springframework.ldap.core.ContextMapper)|",
+      "|java+method:///org/springframework/ldap/filter/Filter/encode()|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/jasig/cas/adaptors/ldap/services/LdapServiceMapper/getLoadFilter()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/ldaptive/SearchResult/getEntries()|",
+      "|java+method:///org/ldaptive/LdapException/getMessage()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/jasig/cas/adaptors/ldap/services/LdapRegisteredServiceMapper/mapToRegisteredService(org.ldaptive.LdapEntry)|",
+      "|java+method:///org/ldaptive/Response/getResult()|",
+      "|java+method:///java/util/Collection/iterator()|",
+      "|java+method:///org/jasig/cas/adaptors/ldap/services/LdapServiceRegistryDao/hasResults(org.ldaptive.Response)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/jasig/cas/adaptors/ldap/services/LdapServiceRegistryDao/executeSearchOperation(org.ldaptive.Connection,org.ldaptive.SearchFilter)|",
+      "|java+method:///org/ldaptive/ConnectionFactory/getConnection()|",
+      "|java+constructor:///org/ldaptive/SearchFilter/SearchFilter(java.lang.String)|",
+      "|java+constructor:///java/util/LinkedList/LinkedList()|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///org/jasig/cas/util/LdapUtils/closeConnection(org.ldaptive.Connection)|"
+    ],
+    "affectedLib": "org.springframework.ldap:spring-ldap-core:1.3.1.RELEASE",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-support-ldap:4.0.0",
+    "coordinatesV2": "org.jasig.cas:cas-server-support-ldap:3.5.3",
+    "caller": "|java+method:///org/jasig/cas/adaptors/ldap/services/LdapServiceRegistryDao/findServiceById(long)|",
+    "called": "|java+method:///org/springframework/ldap/core/LdapTemplate/lookup(java.lang.String,org.springframework.ldap.core.ContextMapper)|",
+    "v1Body": [
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///org/springframework/ldap/filter/Filter/encode()|",
+      "|java+method:///org/springframework/ldap/core/LdapTemplate/lookup(java.lang.String,org.springframework.ldap.core.ContextMapper)|",
+      "|java+method:///org/jasig/cas/adaptors/ldap/services/LdapServiceRegistryDao/findDn(java.lang.String)|",
+      "|java+method:///org/jasig/cas/adaptors/ldap/services/LdapServiceMapper/getSearchFilter(java.lang.Long)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/ldaptive/LdapException/getMessage()|",
+      "|java+method:///org/ldaptive/ConnectionFactory/getConnection()|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/jasig/cas/util/LdapUtils/closeConnection(org.ldaptive.Connection)|",
+      "|java+method:///org/jasig/cas/adaptors/ldap/services/LdapRegisteredServiceMapper/mapToRegisteredService(org.ldaptive.LdapEntry)|",
+      "|java+method:///org/ldaptive/Response/getResult()|",
+      "|java+method:///org/jasig/cas/adaptors/ldap/services/LdapServiceRegistryDao/hasResults(org.ldaptive.Response)|",
+      "|java+method:///org/jasig/cas/adaptors/ldap/services/LdapServiceRegistryDao/searchForServiceById(org.ldaptive.Connection,long)|",
+      "|java+method:///org/ldaptive/SearchResult/getEntry()|"
+    ],
+    "affectedLib": "org.springframework.ldap:spring-ldap-core:1.3.1.RELEASE",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-support-ldap:3.5.3",
+    "coordinatesV2": "org.jasig.cas:cas-server-support-ldap:4.0.0",
+    "caller": "|java+method:///org/jasig/cas/adaptors/ldap/remote/RemoteAddressNonInteractiveCredentialsAction/constructCredentialsFromRequest(org.springframework.webflow.execution.RequestContext)|",
+    "called": "|java+method:///org/jasig/cas/web/support/WebUtils/getHttpServletRequest(org.springframework.webflow.execution.RequestContext)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/logging/Log/debug(java.lang.Object)|",
+      "|java+constructor:///org/jasig/cas/adaptors/ldap/remote/RemoteAddressCredentials/RemoteAddressCredentials(java.lang.String)|",
+      "|java+method:///org/springframework/util/StringUtils/hasText(java.lang.String)|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getRemoteAddr()|",
+      "|java+method:///org/jasig/cas/web/support/WebUtils/getHttpServletRequest(org.springframework.webflow.execution.RequestContext)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/logging/Log/debug(java.lang.Object)|",
+      "|java+method:///org/springframework/util/StringUtils/hasText(java.lang.String)|",
+      "|java+constructor:///org/jasig/cas/adaptors/ldap/remote/RemoteAddressCredential/RemoteAddressCredential(java.lang.String)|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getRemoteAddr()|",
+      "|java+method:///org/jasig/cas/web/support/WebUtils/getHttpServletRequest(org.springframework.webflow.execution.RequestContext)|"
+    ],
+    "affectedLib": "org.jasig.cas:cas-server-core:4.0.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-support-ldap:3.5.3",
+    "coordinatesV2": "org.jasig.cas:cas-server-support-ldap:4.0.0",
+    "caller": "|java+constructor:///org/jasig/cas/adaptors/ldap/remote/RemoteAddressAuthenticationHandler/RemoteAddressAuthenticationHandler()|",
+    "called": "|java+constructor:///org/jasig/cas/authentication/AbstractAuthenticationHandler/AbstractAuthenticationHandler()|",
+    "v1Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+constructor:///org/jasig/cas/authentication/AbstractAuthenticationHandler/AbstractAuthenticationHandler()|",
+      "|java+method:///java/lang/Object/getClass()|"
+    ],
+    "affectedLib": "org.jasig.cas:cas-server-core:4.0.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-support-ldap:3.5.3",
+    "coordinatesV2": "org.jasig.cas:cas-server-support-ldap:4.0.0",
+    "caller": "|java+method:///org/jasig/cas/adaptors/ldap/services/LdapServiceRegistryDao/save(org.jasig.cas.services.RegisteredService)|",
+    "called": "|java+constructor:///org/ldaptive/AddOperation/AddOperation(org.ldaptive.Connection)|",
+    "v1Body": [
+      "|java+method:///org/springframework/ldap/core/DirContextAdapter/getNameInNamespace()|",
+      "|java+method:///org/jasig/cas/adaptors/ldap/services/LdapServiceMapper/doMapToContext(org.jasig.cas.services.RegisteredService,org.springframework.ldap.core.DirContextAdapter)|",
+      "|java+method:///org/jasig/cas/services/RegisteredServiceImpl/setId(long)|",
+      "|java+method:///org/jasig/cas/adaptors/ldap/services/LdapServiceMapper/createCtx(java.lang.String,org.jasig.cas.services.RegisteredService)|",
+      "|java+method:///org/jasig/cas/services/RegisteredServiceImpl/getId()|",
+      "|java+method:///org/springframework/ldap/core/LdapTemplate/bind(java.lang.String,java.lang.Object,javax.naming.directory.Attributes)|",
+      "|java+method:///org/jasig/cas/adaptors/ldap/services/LdapServiceRegistryDao/update(org.jasig.cas.services.RegisteredServiceImpl)|",
+      "|java+method:///java/lang/String/hashCode()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/jasig/cas/adaptors/ldap/services/LdapServiceRegistryDao/update(org.jasig.cas.services.RegisteredService)|",
+      "|java+constructor:///org/ldaptive/AddOperation/AddOperation(org.ldaptive.Connection)|",
+      "|java+method:///org/ldaptive/AddOperation/execute(org.ldaptive.Request)|",
+      "|java+method:///org/ldaptive/LdapException/getMessage()|",
+      "|java+method:///org/ldaptive/ConnectionFactory/getConnection()|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/jasig/cas/util/LdapUtils/closeConnection(org.ldaptive.Connection)|",
+      "|java+method:///org/ldaptive/LdapEntry/getDn()|",
+      "|java+method:///org/jasig/cas/adaptors/ldap/services/LdapRegisteredServiceMapper/mapFromRegisteredService(java.lang.String,org.jasig.cas.services.RegisteredService)|",
+      "|java+method:///org/ldaptive/LdapEntry/getAttributes()|",
+      "|java+method:///org/ldaptive/SearchRequest/getBaseDn()|",
+      "|java+method:///org/jasig/cas/services/RegisteredService/getId()|",
+      "|java+constructor:///org/ldaptive/AddRequest/AddRequest(java.lang.String,java.util.Collection)|"
+    ],
+    "affectedLib": "org.ldaptive:ldaptive:1.0.3",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-support-ldap:3.5.3",
+    "coordinatesV2": "org.jasig.cas:cas-server-support-ldap:4.0.0",
+    "caller": "|java+method:///org/jasig/cas/adaptors/ldap/services/LdapServiceRegistryDao/delete(org.jasig.cas.services.RegisteredService)|",
+    "called": "|java+constructor:///org/ldaptive/DeleteRequest/DeleteRequest(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///org/springframework/ldap/core/LdapTemplate/unbind(java.lang.String,boolean)|",
+      "|java+method:///org/springframework/ldap/filter/Filter/encode()|",
+      "|java+method:///org/jasig/cas/services/RegisteredService/getId()|",
+      "|java+method:///org/jasig/cas/adaptors/ldap/services/LdapServiceRegistryDao/findDn(java.lang.String)|",
+      "|java+method:///org/jasig/cas/adaptors/ldap/services/LdapServiceMapper/getSearchFilter(java.lang.Long)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/ldaptive/DeleteOperation/DeleteOperation(org.ldaptive.Connection)|",
+      "|java+method:///org/ldaptive/ConnectionFactory/getConnection()|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/jasig/cas/util/LdapUtils/closeConnection(org.ldaptive.Connection)|",
+      "|java+method:///org/jasig/cas/services/RegisteredService/getId()|",
+      "|java+method:///org/ldaptive/Response/getResult()|",
+      "|java+constructor:///org/ldaptive/DeleteRequest/DeleteRequest(java.lang.String)|",
+      "|java+method:///org/ldaptive/LdapEntry/getDn()|",
+      "|java+method:///org/jasig/cas/adaptors/ldap/services/LdapServiceRegistryDao/hasResults(org.ldaptive.Response)|",
+      "|java+method:///org/jasig/cas/adaptors/ldap/services/LdapServiceRegistryDao/searchForServiceById(org.ldaptive.Connection,long)|",
+      "|java+method:///org/ldaptive/Response/getResultCode()|",
+      "|java+method:///org/ldaptive/SearchResult/getEntry()|",
+      "|java+method:///org/ldaptive/DeleteOperation/execute(org.ldaptive.Request)|",
+      "|java+method:///org/ldaptive/LdapException/getMessage()|"
+    ],
+    "affectedLib": "org.ldaptive:ldaptive:1.0.3",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-support-ldap:3.5.3",
+    "coordinatesV2": "org.jasig.cas:cas-server-support-ldap:4.0.0",
+    "caller": "|java+method:///org/jasig/cas/adaptors/ldap/services/LdapServiceRegistryDao/load()|",
+    "called": "|java+method:///org/ldaptive/SearchResult/getEntries()|",
+    "v1Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///org/springframework/ldap/core/LdapTemplate/search(java.lang.String,java.lang.String,javax.naming.directory.SearchControls,org.springframework.ldap.core.ContextMapper)|",
+      "|java+method:///org/springframework/ldap/filter/Filter/encode()|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/jasig/cas/adaptors/ldap/services/LdapServiceMapper/getLoadFilter()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/ldaptive/SearchResult/getEntries()|",
+      "|java+method:///org/ldaptive/LdapException/getMessage()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/jasig/cas/adaptors/ldap/services/LdapRegisteredServiceMapper/mapToRegisteredService(org.ldaptive.LdapEntry)|",
+      "|java+method:///org/ldaptive/Response/getResult()|",
+      "|java+method:///java/util/Collection/iterator()|",
+      "|java+method:///org/jasig/cas/adaptors/ldap/services/LdapServiceRegistryDao/hasResults(org.ldaptive.Response)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/jasig/cas/adaptors/ldap/services/LdapServiceRegistryDao/executeSearchOperation(org.ldaptive.Connection,org.ldaptive.SearchFilter)|",
+      "|java+method:///org/ldaptive/ConnectionFactory/getConnection()|",
+      "|java+constructor:///org/ldaptive/SearchFilter/SearchFilter(java.lang.String)|",
+      "|java+constructor:///java/util/LinkedList/LinkedList()|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///org/jasig/cas/util/LdapUtils/closeConnection(org.ldaptive.Connection)|"
+    ],
+    "affectedLib": "org.ldaptive:ldaptive:1.0.3",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-support-ldap:3.5.3",
+    "coordinatesV2": "org.jasig.cas:cas-server-support-ldap:4.0.0",
+    "caller": "|java+method:///org/jasig/cas/adaptors/ldap/services/LdapServiceRegistryDao/findServiceById(long)|",
+    "called": "|java+method:///org/ldaptive/SearchResult/getEntry()|",
+    "v1Body": [
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///org/springframework/ldap/filter/Filter/encode()|",
+      "|java+method:///org/springframework/ldap/core/LdapTemplate/lookup(java.lang.String,org.springframework.ldap.core.ContextMapper)|",
+      "|java+method:///org/jasig/cas/adaptors/ldap/services/LdapServiceRegistryDao/findDn(java.lang.String)|",
+      "|java+method:///org/jasig/cas/adaptors/ldap/services/LdapServiceMapper/getSearchFilter(java.lang.Long)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/ldaptive/LdapException/getMessage()|",
+      "|java+method:///org/ldaptive/ConnectionFactory/getConnection()|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/jasig/cas/util/LdapUtils/closeConnection(org.ldaptive.Connection)|",
+      "|java+method:///org/jasig/cas/adaptors/ldap/services/LdapRegisteredServiceMapper/mapToRegisteredService(org.ldaptive.LdapEntry)|",
+      "|java+method:///org/ldaptive/Response/getResult()|",
+      "|java+method:///org/jasig/cas/adaptors/ldap/services/LdapServiceRegistryDao/hasResults(org.ldaptive.Response)|",
+      "|java+method:///org/jasig/cas/adaptors/ldap/services/LdapServiceRegistryDao/searchForServiceById(org.ldaptive.Connection,long)|",
+      "|java+method:///org/ldaptive/SearchResult/getEntry()|"
+    ],
+    "affectedLib": "org.ldaptive:ldaptive:1.0.3",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-support-ldap:3.5.3",
+    "coordinatesV2": "org.jasig.cas:cas-server-support-ldap:4.0.0",
+    "caller": "|java+constructor:///org/jasig/cas/adaptors/ldap/services/LdapServiceRegistryDao/LdapServiceRegistryDao()|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///javax/naming/directory/SearchControls/setSearchScope(int)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+constructor:///org/jasig/cas/adaptors/ldap/services/DefaultLdapServiceMapper/DefaultLdapServiceMapper()|",
+      "|java+constructor:///javax/naming/directory/SearchControls/SearchControls()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/jasig/cas/adaptors/ldap/services/DefaultLdapServiceMapper/DefaultLdapServiceMapper()|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-support-ldap:3.5.3",
+    "coordinatesV2": "org.jasig.cas:cas-server-support-ldap:4.0.0",
+    "caller": "|java+constructor:///org/jasig/cas/adaptors/ldap/remote/RemoteAddressAuthenticationHandler/RemoteAddressAuthenticationHandler()|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+constructor:///org/jasig/cas/authentication/AbstractAuthenticationHandler/AbstractAuthenticationHandler()|",
+      "|java+method:///java/lang/Object/getClass()|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "ADDED"
+  }
+]

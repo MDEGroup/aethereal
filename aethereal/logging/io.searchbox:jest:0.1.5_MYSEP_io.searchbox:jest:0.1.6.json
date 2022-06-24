@@ -1,0 +1,477 @@
+[
+  {
+    "coordinatesV1": "io.searchbox:jest:0.1.5",
+    "coordinatesV2": "io.searchbox:jest:0.1.6",
+    "caller": "|java+initializer:///io/searchbox/client/http/JestHttpClient/JestHttpClient$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/http/client/entity/EntityBuilder/create()|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///org/apache/http/client/entity/EntityBuilder/setText(java.lang.String)|",
+      "|java+method:///org/apache/http/client/entity/EntityBuilder/build()|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.12",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "io.searchbox:jest:0.1.5",
+    "coordinatesV2": "io.searchbox:jest:0.1.6",
+    "caller": "|java+constructor:///io/searchbox/client/config/HttpClientConfig$Builder/HttpClientConfig$Builder(java.lang.String)|",
+    "called": "|java+method:///org/apache/http/conn/ssl/SSLConnectionSocketFactory/getSocketFactory()|",
+    "v1Body": [
+      "|java+constructor:///io/searchbox/client/config/ClientConfig$AbstractBuilder/ClientConfig$AbstractBuilder(java.lang.String)|",
+      "|java+constructor:///java/util/HashMap/HashMap()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///io/searchbox/client/config/ClientConfig$AbstractBuilder/ClientConfig$AbstractBuilder(java.lang.String)|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+method:///org/apache/http/conn/socket/PlainConnectionSocketFactory/getSocketFactory()|",
+      "|java+constructor:///org/apache/http/impl/conn/SystemDefaultRoutePlanner/SystemDefaultRoutePlanner(java.net.ProxySelector)|",
+      "|java+method:///org/apache/http/conn/ssl/SSLConnectionSocketFactory/getSocketFactory()|",
+      "|java+method:///java/net/ProxySelector/getDefault()|"
+    ],
+    "affectedLib": "org.apache.httpcomponents:httpclient:4.4.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "io.searchbox:jest:0.1.5",
+    "coordinatesV2": "io.searchbox:jest:0.1.6",
+    "caller": "|java+constructor:///io/searchbox/client/config/HttpClientConfig$Builder/HttpClientConfig$Builder(java.util.Collection)|",
+    "called": "|java+method:///org/apache/http/conn/ssl/SSLConnectionSocketFactory/getSocketFactory()|",
+    "v1Body": [
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+constructor:///io/searchbox/client/config/ClientConfig$AbstractBuilder/ClientConfig$AbstractBuilder(java.util.Collection)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+method:///org/apache/http/conn/socket/PlainConnectionSocketFactory/getSocketFactory()|",
+      "|java+constructor:///io/searchbox/client/config/ClientConfig$AbstractBuilder/ClientConfig$AbstractBuilder(java.util.Collection)|",
+      "|java+constructor:///org/apache/http/impl/conn/SystemDefaultRoutePlanner/SystemDefaultRoutePlanner(java.net.ProxySelector)|",
+      "|java+method:///org/apache/http/conn/ssl/SSLConnectionSocketFactory/getSocketFactory()|",
+      "|java+method:///java/net/ProxySelector/getDefault()|"
+    ],
+    "affectedLib": "org.apache.httpcomponents:httpclient:4.4.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "io.searchbox:jest:0.1.5",
+    "coordinatesV2": "io.searchbox:jest:0.1.6",
+    "caller": "|java+method:///io/searchbox/client/http/JestHttpClient/execute(io.searchbox.action.Action)|",
+    "called": "|java+method:///org/apache/http/impl/client/CloseableHttpClient/execute(org.apache.http.client.methods.HttpUriRequest)|",
+    "v1Body": [
+      "|java+method:///org/apache/http/HttpResponse/getStatusLine()|",
+      "|java+method:///java/lang/String/equalsIgnoreCase(java.lang.String)|",
+      "|java+method:///io/searchbox/client/http/JestHttpClient/deserializeResponse(org.apache.http.HttpResponse,io.searchbox.action.Action)|",
+      "|java+method:///org/apache/http/impl/client/CloseableHttpClient/execute(org.apache.http.client.methods.HttpUriRequest)|",
+      "|java+constructor:///org/apache/http/entity/StringEntity/StringEntity(java.lang.String)|",
+      "|java+method:///org/apache/http/StatusLine/getStatusCode()|",
+      "|java+method:///org/apache/http/HttpResponse/getEntity()|",
+      "|java+method:///org/apache/http/client/methods/HttpUriRequest/getMethod()|",
+      "|java+method:///io/searchbox/client/http/JestHttpClient/prepareRequest(io.searchbox.action.Action)|",
+      "|java+method:///org/apache/http/HttpResponse/setEntity(org.apache.http.HttpEntity)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/http/HttpResponse/getStatusLine()|",
+      "|java+method:///java/lang/String/equalsIgnoreCase(java.lang.String)|",
+      "|java+method:///io/searchbox/client/http/JestHttpClient/deserializeResponse(org.apache.http.HttpResponse,io.searchbox.action.Action)|",
+      "|java+method:///org/apache/http/impl/client/CloseableHttpClient/execute(org.apache.http.client.methods.HttpUriRequest)|",
+      "|java+method:///org/apache/http/StatusLine/getStatusCode()|",
+      "|java+method:///org/apache/http/HttpResponse/getEntity()|",
+      "|java+method:///org/apache/http/client/methods/HttpUriRequest/getMethod()|",
+      "|java+method:///io/searchbox/client/http/JestHttpClient/prepareRequest(io.searchbox.action.Action)|",
+      "|java+method:///org/apache/http/HttpResponse/setEntity(org.apache.http.HttpEntity)|"
+    ],
+    "affectedLib": "org.apache.httpcomponents:httpclient:4.4.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "io.searchbox:jest:0.1.5",
+    "coordinatesV2": "io.searchbox:jest:0.1.6",
+    "caller": "|java+constructor:///io/searchbox/client/config/HttpClientConfig$Builder/HttpClientConfig$Builder(io.searchbox.client.config.HttpClientConfig)|",
+    "called": "|java+method:///org/apache/http/conn/ssl/SSLConnectionSocketFactory/getSocketFactory()|",
+    "v1Body": [
+      "|java+method:///io/searchbox/client/config/HttpClientConfig/access$500(io.searchbox.client.config.HttpClientConfig)|",
+      "|java+method:///io/searchbox/client/config/HttpClientConfig/access$400(io.searchbox.client.config.HttpClientConfig)|",
+      "|java+method:///io/searchbox/client/config/HttpClientConfig/access$300(io.searchbox.client.config.HttpClientConfig)|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+constructor:///io/searchbox/client/config/ClientConfig$AbstractBuilder/ClientConfig$AbstractBuilder(io.searchbox.client.config.ClientConfig)|"
+    ],
+    "v2Body": [
+      "|java+method:///io/searchbox/client/config/HttpClientConfig/access$900(io.searchbox.client.config.HttpClientConfig)|",
+      "|java+method:///io/searchbox/client/config/HttpClientConfig/access$800(io.searchbox.client.config.HttpClientConfig)|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+method:///org/apache/http/conn/socket/PlainConnectionSocketFactory/getSocketFactory()|",
+      "|java+constructor:///org/apache/http/impl/conn/SystemDefaultRoutePlanner/SystemDefaultRoutePlanner(java.net.ProxySelector)|",
+      "|java+method:///io/searchbox/client/config/HttpClientConfig/access$1000(io.searchbox.client.config.HttpClientConfig)|",
+      "|java+constructor:///io/searchbox/client/config/ClientConfig$AbstractBuilder/ClientConfig$AbstractBuilder(io.searchbox.client.config.ClientConfig)|",
+      "|java+method:///org/apache/http/conn/ssl/SSLConnectionSocketFactory/getSocketFactory()|",
+      "|java+method:///java/net/ProxySelector/getDefault()|"
+    ],
+    "affectedLib": "org.apache.httpcomponents:httpclient:4.4.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "io.searchbox:jest:0.1.5",
+    "coordinatesV2": "io.searchbox:jest:0.1.6",
+    "caller": "|java+method:///io/searchbox/client/JestClientFactory/createHttpClient(org.apache.http.conn.HttpClientConnectionManager)|",
+    "called": "|java+method:///org/apache/http/impl/client/HttpClients/custom()|",
+    "v1Body": [
+      "|java+method:///org/apache/http/impl/client/HttpClientBuilder/setRoutePlanner(org.apache.http.conn.routing.HttpRoutePlanner)|",
+      "|java+method:///io/searchbox/client/JestClientFactory/configureHttpClient(org.apache.http.impl.client.HttpClientBuilder)|",
+      "|java+method:///org/apache/http/impl/client/HttpClientBuilder/setConnectionManager(org.apache.http.conn.HttpClientConnectionManager)|",
+      "|java+method:///org/apache/http/impl/client/HttpClientBuilder/setDefaultRequestConfig(org.apache.http.client.config.RequestConfig)|",
+      "|java+method:///io/searchbox/client/JestClientFactory/createRequestConfig()|",
+      "|java+method:///org/apache/http/impl/client/HttpClientBuilder/build()|",
+      "|java+method:///io/searchbox/client/JestClientFactory/getRoutePlanner()|",
+      "|java+method:///org/apache/http/impl/client/HttpClients/custom()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/http/impl/client/HttpClientBuilder/setRoutePlanner(org.apache.http.conn.routing.HttpRoutePlanner)|",
+      "|java+method:///org/apache/http/impl/client/HttpClientBuilder/setDefaultCredentialsProvider(org.apache.http.client.CredentialsProvider)|",
+      "|java+method:///io/searchbox/client/JestClientFactory/configureHttpClient(org.apache.http.impl.client.HttpClientBuilder)|",
+      "|java+method:///io/searchbox/client/JestClientFactory/getRequestConfig()|",
+      "|java+method:///io/searchbox/client/config/HttpClientConfig/getProxyAuthenticationStrategy()|",
+      "|java+method:///org/apache/http/impl/client/HttpClientBuilder/build()|",
+      "|java+method:///io/searchbox/client/JestClientFactory/getRoutePlanner()|",
+      "|java+method:///org/apache/http/impl/client/HttpClients/custom()|",
+      "|java+method:///org/apache/http/impl/client/HttpClientBuilder/setConnectionManager(org.apache.http.conn.HttpClientConnectionManager)|",
+      "|java+method:///org/apache/http/impl/client/HttpClientBuilder/setProxyAuthenticationStrategy(org.apache.http.client.AuthenticationStrategy)|",
+      "|java+method:///org/apache/http/impl/client/HttpClientBuilder/setDefaultRequestConfig(org.apache.http.client.config.RequestConfig)|",
+      "|java+method:///io/searchbox/client/config/HttpClientConfig/getCredentialsProvider()|"
+    ],
+    "affectedLib": "org.apache.httpcomponents:httpclient:4.4.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "io.searchbox:jest:0.1.5",
+    "coordinatesV2": "io.searchbox:jest:0.1.6",
+    "caller": "|java+initializer:///io/searchbox/client/http/JestHttpClient/JestHttpClient$initializer|",
+    "called": "|java+method:///org/apache/http/client/entity/EntityBuilder/create()|",
+    "v1Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/http/client/entity/EntityBuilder/create()|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///org/apache/http/client/entity/EntityBuilder/setText(java.lang.String)|",
+      "|java+method:///org/apache/http/client/entity/EntityBuilder/build()|"
+    ],
+    "affectedLib": "org.apache.httpcomponents:httpclient:4.4.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "io.searchbox:jest:0.1.5",
+    "coordinatesV2": "io.searchbox:jest:0.1.6",
+    "caller": "|java+initializer:///io/searchbox/client/http/JestHttpClient/JestHttpClient$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/http/client/entity/EntityBuilder/create()|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///org/apache/http/client/entity/EntityBuilder/setText(java.lang.String)|",
+      "|java+method:///org/apache/http/client/entity/EntityBuilder/build()|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "io.searchbox:jest:0.1.5",
+    "coordinatesV2": "io.searchbox:jest:0.1.6",
+    "caller": "|java+method:///io/searchbox/client/JestClientFactory/getObject()|",
+    "called": "|java+method:///org/apache/http/impl/nio/client/HttpAsyncClientBuilder/build()|",
+    "v1Body": [
+      "|java+method:///io/searchbox/client/config/idle/IdleConnectionReaper/startAsync()|",
+      "|java+constructor:///java/util/LinkedHashSet/LinkedHashSet()|",
+      "|java+method:///org/apache/http/impl/client/HttpClients/createDefault()|",
+      "|java+method:///io/searchbox/client/config/HttpClientConfig/isDiscoveryEnabled()|",
+      "|java+method:///io/searchbox/client/config/HttpClientConfig/getServerList()|",
+      "|java+method:///io/searchbox/client/http/JestHttpClient/setGson(com.google.gson.Gson)|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+method:///io/searchbox/client/JestClientFactory/getRoutePlanner()|",
+      "|java+method:///org/apache/http/impl/nio/client/HttpAsyncClientBuilder/build()|",
+      "|java+method:///io/searchbox/client/config/HttpClientConfig/getGson()|",
+      "|java+constructor:///io/searchbox/client/config/discovery/NodeChecker/NodeChecker(io.searchbox.client.config.ClientConfig,io.searchbox.client.JestClient)|",
+      "|java+constructor:///io/searchbox/client/config/idle/HttpReapableConnectionManager/HttpReapableConnectionManager(org.apache.http.conn.HttpClientConnectionManager)|",
+      "|java+method:///io/searchbox/client/config/HttpClientConfig/getMaxConnectionIdleTime()|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String)|",
+      "|java+constructor:///io/searchbox/client/config/idle/IdleConnectionReaper/IdleConnectionReaper(io.searchbox.client.config.ClientConfig,io.searchbox.client.config.idle.ReapableConnectionManager)|",
+      "|java+method:///io/searchbox/client/config/discovery/NodeChecker/startAsync()|",
+      "|java+method:///io/searchbox/client/http/JestHttpClient/setAsyncClient(org.apache.http.impl.nio.client.CloseableHttpAsyncClient)|",
+      "|java+method:///io/searchbox/client/JestClientFactory/createConnectionManager()|",
+      "|java+method:///io/searchbox/client/http/JestHttpClient/setServers(java.util.Set)|",
+      "|java+method:///io/searchbox/client/config/idle/IdleConnectionReaper/awaitRunning()|",
+      "|java+method:///java/util/LinkedHashSet/add(java.lang.Object)|",
+      "|java+method:///io/searchbox/client/http/JestHttpClient/setIdleConnectionReaper(io.searchbox.client.config.idle.IdleConnectionReaper)|",
+      "|java+constructor:///io/searchbox/client/http/JestHttpClient/JestHttpClient()|",
+      "|java+method:///io/searchbox/client/JestClientFactory/createHttpClient(org.apache.http.conn.HttpClientConnectionManager)|",
+      "|java+method:///io/searchbox/client/http/JestHttpClient/setNodeChecker(io.searchbox.client.config.discovery.NodeChecker)|",
+      "|java+method:///org/apache/http/impl/nio/client/HttpAsyncClients/custom()|",
+      "|java+method:///io/searchbox/client/http/JestHttpClient/setHttpClient(org.apache.http.impl.client.CloseableHttpClient)|",
+      "|java+method:///org/apache/http/impl/nio/client/HttpAsyncClientBuilder/setRoutePlanner(org.apache.http.conn.routing.HttpRoutePlanner)|",
+      "|java+method:///io/searchbox/client/config/discovery/NodeChecker/awaitRunning()|"
+    ],
+    "v2Body": [
+      "|java+method:///io/searchbox/client/config/HttpClientConfig/getGson()|",
+      "|java+method:///io/searchbox/client/config/HttpClientConfig$Builder/build()|",
+      "|java+method:///io/searchbox/client/JestClientFactory/getConnectionManager()|",
+      "|java+method:///io/searchbox/client/config/HttpClientConfig/isDiscoveryEnabled()|",
+      "|java+method:///io/searchbox/client/config/idle/IdleConnectionReaper/awaitRunning()|",
+      "|java+method:///io/searchbox/client/config/HttpClientConfig/getServerList()|",
+      "|java+method:///io/searchbox/client/http/JestHttpClient/setGson(com.google.gson.Gson)|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+method:///io/searchbox/client/JestClientFactory/getRoutePlanner()|",
+      "|java+method:///org/apache/http/impl/nio/client/HttpAsyncClientBuilder/build()|",
+      "|java+method:///io/searchbox/client/config/HttpClientConfig/isRequestCompressionEnabled()|",
+      "|java+constructor:///io/searchbox/client/config/idle/HttpReapableConnectionManager/HttpReapableConnectionManager(org.apache.http.conn.HttpClientConnectionManager)|",
+      "|java+method:///io/searchbox/client/config/HttpClientConfig/getMaxConnectionIdleTime()|",
+      "|java+constructor:///io/searchbox/client/config/discovery/NodeChecker/NodeChecker(io.searchbox.client.JestClient,io.searchbox.client.config.ClientConfig)|",
+      "|java+method:///io/searchbox/client/config/idle/IdleConnectionReaper/startAsync()|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String)|",
+      "|java+constructor:///io/searchbox/client/config/HttpClientConfig$Builder/HttpClientConfig$Builder(java.lang.String)|",
+      "|java+constructor:///io/searchbox/client/config/idle/IdleConnectionReaper/IdleConnectionReaper(io.searchbox.client.config.ClientConfig,io.searchbox.client.config.idle.ReapableConnectionManager)|",
+      "|java+method:///io/searchbox/client/config/discovery/NodeChecker/startAsync()|",
+      "|java+method:///io/searchbox/client/http/JestHttpClient/setAsyncClient(org.apache.http.impl.nio.client.CloseableHttpAsyncClient)|",
+      "|java+method:///io/searchbox/client/http/JestHttpClient/setRequestCompressionEnabled(boolean)|",
+      "|java+method:///io/searchbox/client/http/JestHttpClient/setServers(java.util.Set)|",
+      "|java+method:///io/searchbox/client/http/JestHttpClient/setIdleConnectionReaper(io.searchbox.client.config.idle.IdleConnectionReaper)|",
+      "|java+constructor:///io/searchbox/client/http/JestHttpClient/JestHttpClient()|",
+      "|java+method:///io/searchbox/client/JestClientFactory/createHttpClient(org.apache.http.conn.HttpClientConnectionManager)|",
+      "|java+method:///io/searchbox/client/http/JestHttpClient/setNodeChecker(io.searchbox.client.config.discovery.NodeChecker)|",
+      "|java+method:///org/apache/http/impl/nio/client/HttpAsyncClients/custom()|",
+      "|java+method:///io/searchbox/client/http/JestHttpClient/setHttpClient(org.apache.http.impl.client.CloseableHttpClient)|",
+      "|java+method:///org/apache/http/impl/nio/client/HttpAsyncClientBuilder/setRoutePlanner(org.apache.http.conn.routing.HttpRoutePlanner)|",
+      "|java+method:///io/searchbox/client/config/discovery/NodeChecker/awaitRunning()|"
+    ],
+    "affectedLib": "org.apache.httpcomponents:httpasyncclient:4.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.searchbox:jest:0.1.5",
+    "coordinatesV2": "io.searchbox:jest:0.1.6",
+    "caller": "|java+method:///io/searchbox/client/http/JestHttpClient/executeAsync(io.searchbox.action.Action,io.searchbox.client.JestResultHandler)|",
+    "called": "|java+method:///org/apache/http/impl/nio/client/CloseableHttpAsyncClient/execute(org.apache.http.client.methods.HttpUriRequest,org.apache.http.concurrent.FutureCallback)|",
+    "v1Body": [
+      "|java+constructor:///io/searchbox/client/http/JestHttpClient$1/JestHttpClient$1(io.searchbox.client.http.JestHttpClient,io.searchbox.action.Action,io.searchbox.client.JestResultHandler)|",
+      "|java+method:///org/apache/http/impl/nio/client/CloseableHttpAsyncClient/start()|",
+      "|java+method:///io/searchbox/client/http/JestHttpClient/prepareRequest(io.searchbox.action.Action)|",
+      "|java+method:///org/apache/http/impl/nio/client/CloseableHttpAsyncClient/execute(org.apache.http.client.methods.HttpUriRequest,org.apache.http.concurrent.FutureCallback)|",
+      "|java+method:///org/apache/http/impl/nio/client/CloseableHttpAsyncClient/isRunning()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///io/searchbox/client/http/JestHttpClient$DefaultCallback/JestHttpClient$DefaultCallback(io.searchbox.client.http.JestHttpClient,io.searchbox.action.Action,io.searchbox.client.JestResultHandler)|",
+      "|java+method:///org/apache/http/impl/nio/client/CloseableHttpAsyncClient/start()|",
+      "|java+method:///io/searchbox/client/http/JestHttpClient/prepareRequest(io.searchbox.action.Action)|",
+      "|java+method:///org/apache/http/impl/nio/client/CloseableHttpAsyncClient/execute(org.apache.http.client.methods.HttpUriRequest,org.apache.http.concurrent.FutureCallback)|",
+      "|java+method:///org/apache/http/impl/nio/client/CloseableHttpAsyncClient/isRunning()|"
+    ],
+    "affectedLib": "org.apache.httpcomponents:httpasyncclient:4.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.searchbox:jest:0.1.5",
+    "coordinatesV2": "io.searchbox:jest:0.1.6",
+    "caller": "|java+method:///io/searchbox/client/JestClientFactory/getObject()|",
+    "called": "|java+constructor:///io/searchbox/client/config/idle/IdleConnectionReaper/IdleConnectionReaper(io.searchbox.client.config.ClientConfig,io.searchbox.client.config.idle.ReapableConnectionManager)|",
+    "v1Body": [
+      "|java+method:///io/searchbox/client/config/idle/IdleConnectionReaper/startAsync()|",
+      "|java+constructor:///java/util/LinkedHashSet/LinkedHashSet()|",
+      "|java+method:///org/apache/http/impl/client/HttpClients/createDefault()|",
+      "|java+method:///io/searchbox/client/config/HttpClientConfig/isDiscoveryEnabled()|",
+      "|java+method:///io/searchbox/client/config/HttpClientConfig/getServerList()|",
+      "|java+method:///io/searchbox/client/http/JestHttpClient/setGson(com.google.gson.Gson)|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+method:///io/searchbox/client/JestClientFactory/getRoutePlanner()|",
+      "|java+method:///org/apache/http/impl/nio/client/HttpAsyncClientBuilder/build()|",
+      "|java+method:///io/searchbox/client/config/HttpClientConfig/getGson()|",
+      "|java+constructor:///io/searchbox/client/config/discovery/NodeChecker/NodeChecker(io.searchbox.client.config.ClientConfig,io.searchbox.client.JestClient)|",
+      "|java+constructor:///io/searchbox/client/config/idle/HttpReapableConnectionManager/HttpReapableConnectionManager(org.apache.http.conn.HttpClientConnectionManager)|",
+      "|java+method:///io/searchbox/client/config/HttpClientConfig/getMaxConnectionIdleTime()|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String)|",
+      "|java+constructor:///io/searchbox/client/config/idle/IdleConnectionReaper/IdleConnectionReaper(io.searchbox.client.config.ClientConfig,io.searchbox.client.config.idle.ReapableConnectionManager)|",
+      "|java+method:///io/searchbox/client/config/discovery/NodeChecker/startAsync()|",
+      "|java+method:///io/searchbox/client/http/JestHttpClient/setAsyncClient(org.apache.http.impl.nio.client.CloseableHttpAsyncClient)|",
+      "|java+method:///io/searchbox/client/JestClientFactory/createConnectionManager()|",
+      "|java+method:///io/searchbox/client/http/JestHttpClient/setServers(java.util.Set)|",
+      "|java+method:///io/searchbox/client/config/idle/IdleConnectionReaper/awaitRunning()|",
+      "|java+method:///java/util/LinkedHashSet/add(java.lang.Object)|",
+      "|java+method:///io/searchbox/client/http/JestHttpClient/setIdleConnectionReaper(io.searchbox.client.config.idle.IdleConnectionReaper)|",
+      "|java+constructor:///io/searchbox/client/http/JestHttpClient/JestHttpClient()|",
+      "|java+method:///io/searchbox/client/JestClientFactory/createHttpClient(org.apache.http.conn.HttpClientConnectionManager)|",
+      "|java+method:///io/searchbox/client/http/JestHttpClient/setNodeChecker(io.searchbox.client.config.discovery.NodeChecker)|",
+      "|java+method:///org/apache/http/impl/nio/client/HttpAsyncClients/custom()|",
+      "|java+method:///io/searchbox/client/http/JestHttpClient/setHttpClient(org.apache.http.impl.client.CloseableHttpClient)|",
+      "|java+method:///org/apache/http/impl/nio/client/HttpAsyncClientBuilder/setRoutePlanner(org.apache.http.conn.routing.HttpRoutePlanner)|",
+      "|java+method:///io/searchbox/client/config/discovery/NodeChecker/awaitRunning()|"
+    ],
+    "v2Body": [
+      "|java+method:///io/searchbox/client/config/HttpClientConfig/getGson()|",
+      "|java+method:///io/searchbox/client/config/HttpClientConfig$Builder/build()|",
+      "|java+method:///io/searchbox/client/JestClientFactory/getConnectionManager()|",
+      "|java+method:///io/searchbox/client/config/HttpClientConfig/isDiscoveryEnabled()|",
+      "|java+method:///io/searchbox/client/config/idle/IdleConnectionReaper/awaitRunning()|",
+      "|java+method:///io/searchbox/client/config/HttpClientConfig/getServerList()|",
+      "|java+method:///io/searchbox/client/http/JestHttpClient/setGson(com.google.gson.Gson)|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+method:///io/searchbox/client/JestClientFactory/getRoutePlanner()|",
+      "|java+method:///org/apache/http/impl/nio/client/HttpAsyncClientBuilder/build()|",
+      "|java+method:///io/searchbox/client/config/HttpClientConfig/isRequestCompressionEnabled()|",
+      "|java+constructor:///io/searchbox/client/config/idle/HttpReapableConnectionManager/HttpReapableConnectionManager(org.apache.http.conn.HttpClientConnectionManager)|",
+      "|java+method:///io/searchbox/client/config/HttpClientConfig/getMaxConnectionIdleTime()|",
+      "|java+constructor:///io/searchbox/client/config/discovery/NodeChecker/NodeChecker(io.searchbox.client.JestClient,io.searchbox.client.config.ClientConfig)|",
+      "|java+method:///io/searchbox/client/config/idle/IdleConnectionReaper/startAsync()|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String)|",
+      "|java+constructor:///io/searchbox/client/config/HttpClientConfig$Builder/HttpClientConfig$Builder(java.lang.String)|",
+      "|java+constructor:///io/searchbox/client/config/idle/IdleConnectionReaper/IdleConnectionReaper(io.searchbox.client.config.ClientConfig,io.searchbox.client.config.idle.ReapableConnectionManager)|",
+      "|java+method:///io/searchbox/client/config/discovery/NodeChecker/startAsync()|",
+      "|java+method:///io/searchbox/client/http/JestHttpClient/setAsyncClient(org.apache.http.impl.nio.client.CloseableHttpAsyncClient)|",
+      "|java+method:///io/searchbox/client/http/JestHttpClient/setRequestCompressionEnabled(boolean)|",
+      "|java+method:///io/searchbox/client/http/JestHttpClient/setServers(java.util.Set)|",
+      "|java+method:///io/searchbox/client/http/JestHttpClient/setIdleConnectionReaper(io.searchbox.client.config.idle.IdleConnectionReaper)|",
+      "|java+constructor:///io/searchbox/client/http/JestHttpClient/JestHttpClient()|",
+      "|java+method:///io/searchbox/client/JestClientFactory/createHttpClient(org.apache.http.conn.HttpClientConnectionManager)|",
+      "|java+method:///io/searchbox/client/http/JestHttpClient/setNodeChecker(io.searchbox.client.config.discovery.NodeChecker)|",
+      "|java+method:///org/apache/http/impl/nio/client/HttpAsyncClients/custom()|",
+      "|java+method:///io/searchbox/client/http/JestHttpClient/setHttpClient(org.apache.http.impl.client.CloseableHttpClient)|",
+      "|java+method:///org/apache/http/impl/nio/client/HttpAsyncClientBuilder/setRoutePlanner(org.apache.http.conn.routing.HttpRoutePlanner)|",
+      "|java+method:///io/searchbox/client/config/discovery/NodeChecker/awaitRunning()|"
+    ],
+    "affectedLib": "io.searchbox:jest-common:0.1.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.searchbox:jest:0.1.5",
+    "coordinatesV2": "io.searchbox:jest:0.1.6",
+    "caller": "|java+constructor:///io/searchbox/client/config/HttpClientConfig$Builder/HttpClientConfig$Builder(io.searchbox.client.config.HttpClientConfig)|",
+    "called": "|java+constructor:///io/searchbox/client/config/ClientConfig$AbstractBuilder/ClientConfig$AbstractBuilder(io.searchbox.client.config.ClientConfig)|",
+    "v1Body": [
+      "|java+method:///io/searchbox/client/config/HttpClientConfig/access$500(io.searchbox.client.config.HttpClientConfig)|",
+      "|java+method:///io/searchbox/client/config/HttpClientConfig/access$400(io.searchbox.client.config.HttpClientConfig)|",
+      "|java+method:///io/searchbox/client/config/HttpClientConfig/access$300(io.searchbox.client.config.HttpClientConfig)|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+constructor:///io/searchbox/client/config/ClientConfig$AbstractBuilder/ClientConfig$AbstractBuilder(io.searchbox.client.config.ClientConfig)|"
+    ],
+    "v2Body": [
+      "|java+method:///io/searchbox/client/config/HttpClientConfig/access$900(io.searchbox.client.config.HttpClientConfig)|",
+      "|java+method:///io/searchbox/client/config/HttpClientConfig/access$800(io.searchbox.client.config.HttpClientConfig)|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+method:///org/apache/http/conn/socket/PlainConnectionSocketFactory/getSocketFactory()|",
+      "|java+constructor:///org/apache/http/impl/conn/SystemDefaultRoutePlanner/SystemDefaultRoutePlanner(java.net.ProxySelector)|",
+      "|java+method:///io/searchbox/client/config/HttpClientConfig/access$1000(io.searchbox.client.config.HttpClientConfig)|",
+      "|java+constructor:///io/searchbox/client/config/ClientConfig$AbstractBuilder/ClientConfig$AbstractBuilder(io.searchbox.client.config.ClientConfig)|",
+      "|java+method:///org/apache/http/conn/ssl/SSLConnectionSocketFactory/getSocketFactory()|",
+      "|java+method:///java/net/ProxySelector/getDefault()|"
+    ],
+    "affectedLib": "io.searchbox:jest-common:0.1.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.searchbox:jest:0.1.5",
+    "coordinatesV2": "io.searchbox:jest:0.1.6",
+    "caller": "|java+constructor:///io/searchbox/client/config/HttpClientConfig$Builder/HttpClientConfig$Builder(java.lang.String)|",
+    "called": "|java+constructor:///io/searchbox/client/config/ClientConfig$AbstractBuilder/ClientConfig$AbstractBuilder(java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///io/searchbox/client/config/ClientConfig$AbstractBuilder/ClientConfig$AbstractBuilder(java.lang.String)|",
+      "|java+constructor:///java/util/HashMap/HashMap()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///io/searchbox/client/config/ClientConfig$AbstractBuilder/ClientConfig$AbstractBuilder(java.lang.String)|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+method:///org/apache/http/conn/socket/PlainConnectionSocketFactory/getSocketFactory()|",
+      "|java+constructor:///org/apache/http/impl/conn/SystemDefaultRoutePlanner/SystemDefaultRoutePlanner(java.net.ProxySelector)|",
+      "|java+method:///org/apache/http/conn/ssl/SSLConnectionSocketFactory/getSocketFactory()|",
+      "|java+method:///java/net/ProxySelector/getDefault()|"
+    ],
+    "affectedLib": "io.searchbox:jest-common:0.1.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.searchbox:jest:0.1.5",
+    "coordinatesV2": "io.searchbox:jest:0.1.6",
+    "caller": "|java+constructor:///io/searchbox/client/config/HttpClientConfig/HttpClientConfig(io.searchbox.client.config.HttpClientConfig$Builder)|",
+    "called": "|java+constructor:///io/searchbox/client/config/ClientConfig/ClientConfig(io.searchbox.client.config.ClientConfig$AbstractBuilder)|",
+    "v1Body": [
+      "|java+constructor:///io/searchbox/client/config/ClientConfig/ClientConfig(io.searchbox.client.config.ClientConfig$AbstractBuilder)|",
+      "|java+method:///io/searchbox/client/config/HttpClientConfig$Builder/access$200(io.searchbox.client.config.HttpClientConfig$Builder)|",
+      "|java+method:///io/searchbox/client/config/HttpClientConfig$Builder/access$100(io.searchbox.client.config.HttpClientConfig$Builder)|",
+      "|java+method:///io/searchbox/client/config/HttpClientConfig$Builder/access$000(io.searchbox.client.config.HttpClientConfig$Builder)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///io/searchbox/client/config/ClientConfig/ClientConfig(io.searchbox.client.config.ClientConfig$AbstractBuilder)|",
+      "|java+method:///io/searchbox/client/config/HttpClientConfig$Builder/access$700(io.searchbox.client.config.HttpClientConfig$Builder)|",
+      "|java+method:///io/searchbox/client/config/HttpClientConfig$Builder/access$600(io.searchbox.client.config.HttpClientConfig$Builder)|",
+      "|java+method:///io/searchbox/client/config/HttpClientConfig$Builder/access$500(io.searchbox.client.config.HttpClientConfig$Builder)|",
+      "|java+method:///io/searchbox/client/config/HttpClientConfig$Builder/access$400(io.searchbox.client.config.HttpClientConfig$Builder)|",
+      "|java+method:///io/searchbox/client/config/HttpClientConfig$Builder/access$300(io.searchbox.client.config.HttpClientConfig$Builder)|",
+      "|java+method:///io/searchbox/client/config/HttpClientConfig$Builder/access$200(io.searchbox.client.config.HttpClientConfig$Builder)|",
+      "|java+method:///io/searchbox/client/config/HttpClientConfig$Builder/access$100(io.searchbox.client.config.HttpClientConfig$Builder)|",
+      "|java+method:///io/searchbox/client/config/HttpClientConfig$Builder/access$000(io.searchbox.client.config.HttpClientConfig$Builder)|"
+    ],
+    "affectedLib": "io.searchbox:jest-common:0.1.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.searchbox:jest:0.1.5",
+    "coordinatesV2": "io.searchbox:jest:0.1.6",
+    "caller": "|java+method:///io/searchbox/client/http/JestHttpClient/shutdownClient()|",
+    "called": "|java+method:///io/searchbox/client/AbstractJestClient/shutdownClient()|",
+    "v1Body": [
+      "|java+method:///org/apache/http/impl/client/CloseableHttpClient/close()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String)|",
+      "|java+method:///org/apache/http/impl/nio/client/CloseableHttpAsyncClient/close()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///io/searchbox/client/AbstractJestClient/shutdownClient()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/Exception/getMessage()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/http/impl/client/CloseableHttpClient/close()|",
+      "|java+method:///io/searchbox/client/AbstractJestClient/shutdownClient()|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/apache/http/impl/nio/client/CloseableHttpAsyncClient/close()|"
+    ],
+    "affectedLib": "io.searchbox:jest-common:0.1.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.searchbox:jest:0.1.5",
+    "coordinatesV2": "io.searchbox:jest:0.1.6",
+    "caller": "|java+constructor:///io/searchbox/client/http/JestHttpClient/JestHttpClient()|",
+    "called": "|java+constructor:///io/searchbox/client/AbstractJestClient/AbstractJestClient()|",
+    "v1Body": [
+      "|java+constructor:///io/searchbox/client/AbstractJestClient/AbstractJestClient()|",
+      "|java+method:///java/nio/charset/Charset/forName(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///io/searchbox/client/AbstractJestClient/AbstractJestClient()|",
+      "|java+method:///org/apache/http/entity/ContentType/withCharset(java.lang.String)|"
+    ],
+    "affectedLib": "io.searchbox:jest-common:0.1.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.searchbox:jest:0.1.5",
+    "coordinatesV2": "io.searchbox:jest:0.1.6",
+    "caller": "|java+constructor:///io/searchbox/client/config/HttpClientConfig$Builder/HttpClientConfig$Builder(java.util.Collection)|",
+    "called": "|java+constructor:///io/searchbox/client/config/ClientConfig$AbstractBuilder/ClientConfig$AbstractBuilder(java.util.Collection)|",
+    "v1Body": [
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+constructor:///io/searchbox/client/config/ClientConfig$AbstractBuilder/ClientConfig$AbstractBuilder(java.util.Collection)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+method:///org/apache/http/conn/socket/PlainConnectionSocketFactory/getSocketFactory()|",
+      "|java+constructor:///io/searchbox/client/config/ClientConfig$AbstractBuilder/ClientConfig$AbstractBuilder(java.util.Collection)|",
+      "|java+constructor:///org/apache/http/impl/conn/SystemDefaultRoutePlanner/SystemDefaultRoutePlanner(java.net.ProxySelector)|",
+      "|java+method:///org/apache/http/conn/ssl/SSLConnectionSocketFactory/getSocketFactory()|",
+      "|java+method:///java/net/ProxySelector/getDefault()|"
+    ],
+    "affectedLib": "io.searchbox:jest-common:0.1.6",
+    "change": "UPDATED"
+  }
+]

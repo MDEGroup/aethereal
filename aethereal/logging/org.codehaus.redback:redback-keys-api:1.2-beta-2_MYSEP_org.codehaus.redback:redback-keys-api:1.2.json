@@ -1,0 +1,28 @@
+[
+  {
+    "coordinatesV1": "org.codehaus.redback:redback-keys-api:1.2-beta-2",
+    "coordinatesV2": "org.codehaus.redback:redback-keys-api:1.2",
+    "caller": "|java+method:///org/codehaus/plexus/redback/keys/AbstractKeyManager/generateUUID()|",
+    "called": "|java+method:///org/codehaus/plexus/digest/Hex/encode(byte%5B%5D)|",
+    "v1Body": [
+      "|java+method:///java/security/SecureRandom/getInstance(java.lang.String,java.lang.String)|",
+      "|java+constructor:///java/util/Random/Random()|",
+      "|java+method:///java/security/SecureRandom/nextBytes(byte%5B%5D)|",
+      "|java+method:///java/util/Random/nextBytes(byte%5B%5D)|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/codehaus/plexus/digest/Hex/encode(byte%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/codehaus/plexus/redback/keys/AbstractKeyManager/isRandomMode()|",
+      "|java+method:///java/security/SecureRandom/getInstance(java.lang.String)|",
+      "|java+constructor:///java/util/Random/Random()|",
+      "|java+method:///java/security/SecureRandom/nextBytes(byte%5B%5D)|",
+      "|java+method:///org/codehaus/plexus/redback/keys/AbstractKeyManager/setRandomMode(boolean)|",
+      "|java+method:///java/util/Random/nextBytes(byte%5B%5D)|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/codehaus/plexus/digest/Hex/encode(byte%5B%5D)|"
+    ],
+    "affectedLib": "org.codehaus.plexus:plexus-digest:1.1",
+    "change": "UPDATED"
+  }
+]

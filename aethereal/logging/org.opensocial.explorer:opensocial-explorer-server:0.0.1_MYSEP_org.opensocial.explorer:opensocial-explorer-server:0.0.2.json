@@ -1,0 +1,47 @@
+[
+  {
+    "coordinatesV1": "org.opensocial.explorer:opensocial-explorer-server:0.0.1",
+    "coordinatesV2": "org.opensocial.explorer:opensocial-explorer-server:0.0.2",
+    "caller": "|java+constructor:///org/opensocial/explorer/server/modules/ExplorerPropertiesModule/ExplorerPropertiesModule()|",
+    "called": "|java+constructor:///org/apache/shindig/common/PropertiesModule/PropertiesModule(java.util.Properties)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/shindig/common/PropertiesModule/PropertiesModule(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/opensocial/explorer/server/modules/ExplorerPropertiesModule/mergeProperties(java.util.Properties%5B%5D)|",
+      "|java+constructor:///org/apache/shindig/common/PropertiesModule/PropertiesModule(java.util.Properties)|",
+      "|java+method:///org/opensocial/explorer/server/modules/ExplorerPropertiesModule/readPropertyFile(java.lang.String)|",
+      "|java+method:///org/opensocial/explorer/server/modules/ExplorerPropertiesModule/getDefaultPropertiesPath()|"
+    ],
+    "affectedLib": "org.apache.shindig:shindig-common:2.5.0-update1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.opensocial.explorer:opensocial-explorer-server:0.0.1",
+    "coordinatesV2": "org.opensocial.explorer:opensocial-explorer-server:0.0.2",
+    "caller": "|java+method:///org/opensocial/explorer/server/modules/ExplorerOAuthModule/configure()|",
+    "called": "|java+constructor:///org/apache/shindig/gadgets/oauth/OAuthModule/OAuthModule()|",
+    "v1Body": [
+      "|java+constructor:///org/apache/shindig/gadgets/oauth2/OAuth2Module/OAuth2Module()|",
+      "|java+method:///com/google/inject/util/Modules/override(com.google.inject.Module%5B%5D)|",
+      "|java+method:///com/google/inject/util/Modules$OverriddenModuleBuilder/with(com.google.inject.Module%5B%5D)|",
+      "|java+constructor:///org/apache/shindig/gadgets/oauth2/persistence/sample/OAuth2PersistenceModule/OAuth2PersistenceModule()|",
+      "|java+constructor:///org/opensocial/explorer/server/modules/ExplorerOAuthModule$1/ExplorerOAuthModule$1(org.opensocial.explorer.server.modules.ExplorerOAuthModule)|",
+      "|java+constructor:///org/opensocial/explorer/server/modules/ExplorerOAuthModule$2/ExplorerOAuthModule$2(org.opensocial.explorer.server.modules.ExplorerOAuthModule)|",
+      "|java+method:///org/opensocial/explorer/server/modules/ExplorerOAuthModule/install(com.google.inject.Module)|",
+      "|java+constructor:///org/apache/shindig/gadgets/oauth/OAuthModule/OAuthModule()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/shindig/gadgets/oauth2/OAuth2Module/OAuth2Module()|",
+      "|java+method:///com/google/inject/util/Modules/override(com.google.inject.Module%5B%5D)|",
+      "|java+method:///com/google/inject/util/Modules$OverriddenModuleBuilder/with(com.google.inject.Module%5B%5D)|",
+      "|java+constructor:///org/apache/shindig/gadgets/oauth2/persistence/sample/OAuth2PersistenceModule/OAuth2PersistenceModule()|",
+      "|java+constructor:///org/apache/shindig/gadgets/oauth/OAuthModule/OAuthModule()|",
+      "|java+constructor:///org/opensocial/explorer/server/modules/ExplorerOAuthModule$OAuthModuleOverride/ExplorerOAuthModule$OAuthModuleOverride(org.opensocial.explorer.server.modules.ExplorerOAuthModule$1)|",
+      "|java+method:///org/opensocial/explorer/server/modules/ExplorerOAuthModule/install(com.google.inject.Module)|",
+      "|java+constructor:///org/opensocial/explorer/server/modules/ExplorerOAuthModule$OAuth2PersistenceModuleOverride/ExplorerOAuthModule$OAuth2PersistenceModuleOverride(org.opensocial.explorer.server.modules.ExplorerOAuthModule$1)|"
+    ],
+    "affectedLib": "org.apache.shindig:shindig-gadgets:2.5.0-update1",
+    "change": "UPDATED"
+  }
+]

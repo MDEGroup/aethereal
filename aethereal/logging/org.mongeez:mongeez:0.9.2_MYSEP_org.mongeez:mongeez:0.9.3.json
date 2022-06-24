@@ -1,0 +1,306 @@
+[
+  {
+    "coordinatesV1": "org.mongeez:mongeez:0.9.3",
+    "coordinatesV2": "org.mongeez:mongeez:0.9.2",
+    "caller": "|java+constructor:///org/mongeez/reader/XmlChangeSetReader/XmlChangeSetReader()|",
+    "called": "|java+method:///org/apache/commons/digester/Digester/addSetNext(java.lang.String,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/digester/Digester/addSetProperties(java.lang.String)|",
+      "|java+method:///org/apache/commons/digester/Digester/setValidating(boolean)|",
+      "|java+method:///org/apache/commons/digester/Digester/addSetNext(java.lang.String,java.lang.String)|",
+      "|java+constructor:///org/apache/commons/digester/Digester/Digester()|",
+      "|java+method:///org/apache/commons/digester/Digester/addBeanPropertySetter(java.lang.String,java.lang.String)|",
+      "|java+method:///org/apache/commons/digester/Digester/addObjectCreate(java.lang.String,java.lang.Class)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/digester3/Digester/setValidating(boolean)|",
+      "|java+constructor:///org/apache/commons/digester3/Digester/Digester()|",
+      "|java+method:///org/apache/commons/digester3/Digester/addObjectCreate(java.lang.String,java.lang.Class)|",
+      "|java+method:///org/apache/commons/digester3/Digester/addBeanPropertySetter(java.lang.String,java.lang.String)|",
+      "|java+method:///org/apache/commons/digester3/Digester/addSetNext(java.lang.String,java.lang.String)|",
+      "|java+method:///org/apache/commons/digester3/Digester/addSetProperties(java.lang.String)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "commons-digester:commons-digester:2.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.mongeez:mongeez:0.9.3",
+    "coordinatesV2": "org.mongeez:mongeez:0.9.2",
+    "caller": "|java+method:///org/mongeez/reader/XmlChangeSetReader/getChangeSets(org.springframework.core.io.Resource)|",
+    "called": "|java+method:///org/apache/commons/digester/Digester/parse(java.io.InputStream)|",
+    "v1Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///org/mongeez/commands/ChangeSetList/getList()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/apache/commons/digester/Digester/parse(java.io.InputStream)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///org/mongeez/reader/ChangeSetReaderUtil/populateChangeSetResourceInfo(org.mongeez.commands.ChangeSet,org.springframework.core.io.Resource)|",
+      "|java+method:///org/apache/log4j/Logger/error(java.lang.Object,java.lang.Throwable)|",
+      "|java+method:///org/springframework/core/io/Resource/getInputStream()|",
+      "|java+method:///java/util/List/addAll(java.util.Collection)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///org/mongeez/commands/ChangeSetList/getList()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///org/mongeez/reader/ChangeSetReaderUtil/populateChangeSetResourceInfo(org.mongeez.commands.ChangeSet,org.springframework.core.io.Resource)|",
+      "|java+method:///org/apache/commons/digester3/Digester/parse(java.io.InputStream)|",
+      "|java+method:///org/springframework/core/io/Resource/getInputStream()|",
+      "|java+method:///java/util/List/addAll(java.util.Collection)|"
+    ],
+    "affectedLib": "commons-digester:commons-digester:2.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.mongeez:mongeez:0.9.3",
+    "coordinatesV2": "org.mongeez:mongeez:0.9.2",
+    "caller": "|java+method:///org/mongeez/reader/FilesetXMLReader/getFiles(org.springframework.core.io.Resource)|",
+    "called": "|java+method:///org/apache/commons/digester/Digester/addSetNext(java.lang.String,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/mongeez/commands/ChangeFile/getPath()|",
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/apache/log4j/Logger/info(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+method:///org/apache/commons/digester/Digester/setValidating(boolean)|",
+      "|java+method:///org/apache/commons/digester/Digester/addSetNext(java.lang.String,java.lang.String)|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///org/springframework/core/io/Resource/getInputStream()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+constructor:///org/apache/commons/digester/Digester/Digester()|",
+      "|java+method:///org/mongeez/commands/ChangeFileSet/getChangeFiles()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///org/apache/commons/digester/Digester/addObjectCreate(java.lang.String,java.lang.Class)|",
+      "|java+method:///org/apache/log4j/Logger/error(java.lang.Object,java.lang.Throwable)|",
+      "|java+method:///org/springframework/core/io/Resource/createRelative(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/apache/commons/digester/Digester/addSetProperties(java.lang.String)|",
+      "|java+method:///org/apache/commons/digester/Digester/parse(java.io.InputStream)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/mongeez/commands/ChangeFile/getPath()|",
+      "|java+method:///org/apache/commons/digester3/Digester/setValidating(boolean)|",
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///org/apache/commons/digester3/Digester/addObjectCreate(java.lang.String,java.lang.Class)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String)|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///org/springframework/core/io/Resource/getInputStream()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/mongeez/commands/ChangeFileSet/getChangeFiles()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///org/apache/commons/digester3/Digester/addSetNext(java.lang.String,java.lang.String)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///org/springframework/core/io/Resource/createRelative(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+constructor:///org/apache/commons/digester3/Digester/Digester()|",
+      "|java+method:///org/apache/commons/digester3/Digester/parse(java.io.InputStream)|",
+      "|java+method:///org/apache/commons/digester3/Digester/addSetProperties(java.lang.String)|"
+    ],
+    "affectedLib": "commons-digester:commons-digester:2.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.mongeez:mongeez:0.9.2",
+    "coordinatesV2": "org.mongeez:mongeez:0.9.3",
+    "caller": "|java+constructor:///org/mongeez/reader/XmlChangeSetReader/XmlChangeSetReader()|",
+    "called": "|java+method:///org/apache/commons/digester3/Digester/addObjectCreate(java.lang.String,java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/digester/Digester/addSetProperties(java.lang.String)|",
+      "|java+method:///org/apache/commons/digester/Digester/setValidating(boolean)|",
+      "|java+method:///org/apache/commons/digester/Digester/addSetNext(java.lang.String,java.lang.String)|",
+      "|java+constructor:///org/apache/commons/digester/Digester/Digester()|",
+      "|java+method:///org/apache/commons/digester/Digester/addBeanPropertySetter(java.lang.String,java.lang.String)|",
+      "|java+method:///org/apache/commons/digester/Digester/addObjectCreate(java.lang.String,java.lang.Class)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/digester3/Digester/setValidating(boolean)|",
+      "|java+constructor:///org/apache/commons/digester3/Digester/Digester()|",
+      "|java+method:///org/apache/commons/digester3/Digester/addObjectCreate(java.lang.String,java.lang.Class)|",
+      "|java+method:///org/apache/commons/digester3/Digester/addBeanPropertySetter(java.lang.String,java.lang.String)|",
+      "|java+method:///org/apache/commons/digester3/Digester/addSetNext(java.lang.String,java.lang.String)|",
+      "|java+method:///org/apache/commons/digester3/Digester/addSetProperties(java.lang.String)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "org.apache.commons:commons-digester3:3.2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.mongeez:mongeez:0.9.2",
+    "coordinatesV2": "org.mongeez:mongeez:0.9.3",
+    "caller": "|java+method:///org/mongeez/reader/XmlChangeSetReader/getChangeSets(org.springframework.core.io.Resource)|",
+    "called": "|java+method:///org/apache/commons/digester3/Digester/parse(java.io.InputStream)|",
+    "v1Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///org/mongeez/commands/ChangeSetList/getList()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/apache/commons/digester/Digester/parse(java.io.InputStream)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///org/mongeez/reader/ChangeSetReaderUtil/populateChangeSetResourceInfo(org.mongeez.commands.ChangeSet,org.springframework.core.io.Resource)|",
+      "|java+method:///org/apache/log4j/Logger/error(java.lang.Object,java.lang.Throwable)|",
+      "|java+method:///org/springframework/core/io/Resource/getInputStream()|",
+      "|java+method:///java/util/List/addAll(java.util.Collection)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///org/mongeez/commands/ChangeSetList/getList()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///org/mongeez/reader/ChangeSetReaderUtil/populateChangeSetResourceInfo(org.mongeez.commands.ChangeSet,org.springframework.core.io.Resource)|",
+      "|java+method:///org/apache/commons/digester3/Digester/parse(java.io.InputStream)|",
+      "|java+method:///org/springframework/core/io/Resource/getInputStream()|",
+      "|java+method:///java/util/List/addAll(java.util.Collection)|"
+    ],
+    "affectedLib": "org.apache.commons:commons-digester3:3.2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.mongeez:mongeez:0.9.2",
+    "coordinatesV2": "org.mongeez:mongeez:0.9.3",
+    "caller": "|java+method:///org/mongeez/reader/FilesetXMLReader/getFiles(org.springframework.core.io.Resource)|",
+    "called": "|java+method:///org/apache/commons/digester3/Digester/parse(java.io.InputStream)|",
+    "v1Body": [
+      "|java+method:///org/mongeez/commands/ChangeFile/getPath()|",
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/apache/log4j/Logger/info(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+method:///org/apache/commons/digester/Digester/setValidating(boolean)|",
+      "|java+method:///org/apache/commons/digester/Digester/addSetNext(java.lang.String,java.lang.String)|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///org/springframework/core/io/Resource/getInputStream()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+constructor:///org/apache/commons/digester/Digester/Digester()|",
+      "|java+method:///org/mongeez/commands/ChangeFileSet/getChangeFiles()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///org/apache/commons/digester/Digester/addObjectCreate(java.lang.String,java.lang.Class)|",
+      "|java+method:///org/apache/log4j/Logger/error(java.lang.Object,java.lang.Throwable)|",
+      "|java+method:///org/springframework/core/io/Resource/createRelative(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/apache/commons/digester/Digester/addSetProperties(java.lang.String)|",
+      "|java+method:///org/apache/commons/digester/Digester/parse(java.io.InputStream)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/mongeez/commands/ChangeFile/getPath()|",
+      "|java+method:///org/apache/commons/digester3/Digester/setValidating(boolean)|",
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///org/apache/commons/digester3/Digester/addObjectCreate(java.lang.String,java.lang.Class)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String)|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///org/springframework/core/io/Resource/getInputStream()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/mongeez/commands/ChangeFileSet/getChangeFiles()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///org/apache/commons/digester3/Digester/addSetNext(java.lang.String,java.lang.String)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///org/springframework/core/io/Resource/createRelative(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+constructor:///org/apache/commons/digester3/Digester/Digester()|",
+      "|java+method:///org/apache/commons/digester3/Digester/parse(java.io.InputStream)|",
+      "|java+method:///org/apache/commons/digester3/Digester/addSetProperties(java.lang.String)|"
+    ],
+    "affectedLib": "org.apache.commons:commons-digester3:3.2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.mongeez:mongeez:0.9.2",
+    "coordinatesV2": "org.mongeez:mongeez:0.9.3",
+    "caller": "|java+constructor:///org/mongeez/ChangeSetExecutor/ChangeSetExecutor(com.mongodb.Mongo,java.lang.String,org.mongeez.MongoAuth)|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|",
+      "|java+constructor:///org/mongeez/dao/MongeezDao/MongeezDao(com.mongodb.Mongo,java.lang.String,org.mongeez.MongoAuth)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+constructor:///org/mongeez/dao/MongeezDao/MongeezDao(com.mongodb.Mongo,java.lang.String,org.mongeez.MongoAuth)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.mongeez:mongeez:0.9.2",
+    "coordinatesV2": "org.mongeez:mongeez:0.9.3",
+    "caller": "|java+initializer:///org/mongeez/reader/FormattedJavascriptChangeSetReader/FormattedJavascriptChangeSetReader$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///java/util/regex/Pattern/compile(java.lang.String,int)|",
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/regex/Pattern/compile(java.lang.String,int)|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.mongeez:mongeez:0.9.2",
+    "coordinatesV2": "org.mongeez:mongeez:0.9.3",
+    "caller": "|java+initializer:///org/mongeez/reader/FilesetXMLReader/FilesetXMLReader$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.mongeez:mongeez:0.9.2",
+    "coordinatesV2": "org.mongeez:mongeez:0.9.3",
+    "caller": "|java+initializer:///org/mongeez/reader/XmlChangeSetReader/XmlChangeSetReader$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.mongeez:mongeez:0.9.2",
+    "coordinatesV2": "org.mongeez:mongeez:0.9.3",
+    "caller": "|java+initializer:///org/mongeez/Mongeez/Mongeez$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.2",
+    "change": "ADDED"
+  }
+]

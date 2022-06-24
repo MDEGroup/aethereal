@@ -1,0 +1,42 @@
+[
+  {
+    "coordinatesV1": "com.washingtonpost.dropwizard:dropwizard-peer-authenticator:1.0.2",
+    "coordinatesV2": "com.washingtonpost.dropwizard:dropwizard-peer-authenticator:2.1.0",
+    "caller": "|java+method:///com/washingtonpost/dw/auth/AllowedPeerConfiguration/createCachingAuthenticator(com.codahale.metrics.MetricRegistry)|",
+    "called": "|java+constructor:///io/dropwizard/auth/CachingAuthenticator/CachingAuthenticator(com.codahale.metrics.MetricRegistry,io.dropwizard.auth.Authenticator,com.google.common.cache.CacheBuilderSpec)|",
+    "v1Body": [
+      "|java+method:///com/washingtonpost/dw/auth/AllowedPeerConfiguration/createAuthenticator()|",
+      "|java+method:///jersey/repackaged/com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///io/dropwizard/auth/CachingAuthenticator/CachingAuthenticator(com.codahale.metrics.MetricRegistry,io.dropwizard.auth.Authenticator,com.google.common.cache.CacheBuilderSpec)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/washingtonpost/dw/auth/AllowedPeerConfiguration/createAuthenticator()|",
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///io/dropwizard/auth/CachingAuthenticator/CachingAuthenticator(com.codahale.metrics.MetricRegistry,io.dropwizard.auth.Authenticator,com.google.common.cache.CacheBuilderSpec)|"
+    ],
+    "affectedLib": "io.dropwizard:dropwizard-auth:0.9.2",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.washingtonpost.dropwizard:dropwizard-peer-authenticator:1.0.2",
+    "coordinatesV2": "com.washingtonpost.dropwizard:dropwizard-peer-authenticator:2.1.0",
+    "caller": "|java+method:///com/washingtonpost/dw/auth/AllowedPeerConfiguration/registerAuthenticator(io.dropwizard.setup.Environment)|",
+    "called": "|java+constructor:///io/dropwizard/auth/PermitAllAuthorizer/PermitAllAuthorizer()|",
+    "v1Body": [
+      "|java+method:///io/dropwizard/setup/Environment/jersey()|",
+      "|java+method:///io/dropwizard/setup/Environment/metrics()|",
+      "|java+method:///io/dropwizard/auth/AuthFactory/binder(io.dropwizard.auth.AuthFactory)|",
+      "|java+method:///com/washingtonpost/dw/auth/AllowedPeerConfiguration/createAuthenticator()|",
+      "|java+constructor:///io/dropwizard/auth/basic/BasicAuthFactory/BasicAuthFactory(io.dropwizard.auth.Authenticator,java.lang.String,java.lang.Class)|",
+      "|java+method:///jersey/repackaged/com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|",
+      "|java+method:///com/washingtonpost/dw/auth/AllowedPeerConfiguration/createCachingAuthenticator(com.codahale.metrics.MetricRegistry)|",
+      "|java+method:///io/dropwizard/jersey/setup/JerseyEnvironment/register(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/washingtonpost/dw/auth/AllowedPeerConfiguration/registerAuthenticator(io.dropwizard.setup.Environment,io.dropwizard.auth.Authorizer)|",
+      "|java+constructor:///io/dropwizard/auth/PermitAllAuthorizer/PermitAllAuthorizer()|"
+    ],
+    "affectedLib": "io.dropwizard:dropwizard-auth:0.9.2",
+    "change": "UPDATED"
+  }
+]

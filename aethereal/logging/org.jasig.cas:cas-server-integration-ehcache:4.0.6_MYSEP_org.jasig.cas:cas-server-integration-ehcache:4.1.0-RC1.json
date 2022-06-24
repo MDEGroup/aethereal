@@ -1,0 +1,962 @@
+[
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-integration-ehcache:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-integration-ehcache:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/ticket/registry/EhCacheTicketRegistry/serviceTicketCount()|",
+    "called": "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|",
+    "v1Body": [
+      "|java+method:///net/sf/ehcache/Cache/getKeysWithExpiryCheck()|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///org/jasig/cas/ticket/registry/AbstractDistributedTicketRegistry/serviceTicketCount()|",
+      "|java+method:///org/apache/commons/lang/BooleanUtils/toInteger(boolean,int,int)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/aspectj/runtime/internal/Conversions/intValue(java.lang.Object)|",
+      "|java+constructor:///org/jasig/cas/ticket/registry/EhCacheTicketRegistry$AjcClosure15/EhCacheTicketRegistry$AjcClosure15(java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.jasig.inspektr:inspektr-aspects:1.2.GA",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-integration-ehcache:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-integration-ehcache:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/ticket/registry/EhCacheTicketRegistry/addTicket(org.jasig.cas.ticket.Ticket)|",
+    "called": "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder(java.lang.String)|",
+      "|java+method:///org/jasig/cas/ticket/Ticket/getId()|",
+      "|java+method:///net/sf/ehcache/Cache/getName()|",
+      "|java+constructor:///net/sf/ehcache/Element/Element(java.io.Serializable,java.io.Serializable)|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///net/sf/ehcache/Cache/put(net.sf.ehcache.Element)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///org/jasig/cas/ticket/registry/EhCacheTicketRegistry$AjcClosure1/EhCacheTicketRegistry$AjcClosure1(java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.jasig.inspektr:inspektr-aspects:1.2.GA",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-integration-ehcache:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-integration-ehcache:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/monitor/EhCacheStatistics/toString(java.lang.StringBuilder)|",
+    "called": "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|",
+    "v1Body": [
+      "|java+constructor:///java/util/Formatter/Formatter(java.lang.Appendable)|",
+      "|java+method:///org/jasig/cas/monitor/EhCacheStatistics/getName()|",
+      "|java+method:///java/lang/Double/valueOf(double)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+method:///java/util/Formatter/close()|",
+      "|java+method:///java/lang/StringBuilder/append(char)|",
+      "|java+method:///org/jasig/cas/monitor/EhCacheStatistics/getPercentFree()|",
+      "|java+method:///java/lang/StringBuilder/append(long)|",
+      "|java+method:///java/util/Formatter/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/cas/monitor/EhCacheStatistics/getEvictions()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+constructor:///org/jasig/cas/monitor/EhCacheStatistics$AjcClosure11/EhCacheStatistics$AjcClosure11(java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.jasig.inspektr:inspektr-aspects:1.2.GA",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-integration-ehcache:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-integration-ehcache:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/monitor/EhCacheStatistics/getCapacity()|",
+    "called": "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|",
+    "v1Body": [
+      "|java+method:///net/sf/ehcache/config/CacheConfiguration/getMaxElementsOnDisk()|",
+      "|java+method:///net/sf/ehcache/config/CacheConfiguration/getMaxBytesLocalDisk()|",
+      "|java+method:///net/sf/ehcache/Cache/getCacheConfiguration()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///org/jasig/cas/monitor/EhCacheStatistics$AjcClosure3/EhCacheStatistics$AjcClosure3(java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+method:///org/aspectj/runtime/internal/Conversions/longValue(java.lang.Object)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.jasig.inspektr:inspektr-aspects:1.2.GA",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-integration-ehcache:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-integration-ehcache:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/ticket/registry/EhCacheTicketRegistry/toString()|",
+    "called": "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|",
+    "v1Body": [
+      "|java+method:///org/springframework/core/style/ToStringCreator/append(java.lang.String,java.lang.Object)|",
+      "|java+constructor:///org/springframework/core/style/ToStringCreator/ToStringCreator(java.lang.Object)|",
+      "|java+method:///org/springframework/core/style/ToStringCreator/toString()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///org/jasig/cas/ticket/registry/EhCacheTicketRegistry$AjcClosure9/EhCacheTicketRegistry$AjcClosure9(java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.jasig.inspektr:inspektr-aspects:1.2.GA",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-integration-ehcache:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-integration-ehcache:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/ticket/registry/EhCacheTicketRegistry/sessionCount()|",
+    "called": "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|",
+    "v1Body": [
+      "|java+method:///org/jasig/cas/ticket/registry/AbstractDistributedTicketRegistry/sessionCount()|",
+      "|java+method:///net/sf/ehcache/Cache/getKeysWithExpiryCheck()|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///org/apache/commons/lang/BooleanUtils/toInteger(boolean,int,int)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/aspectj/runtime/internal/Conversions/intValue(java.lang.Object)|",
+      "|java+constructor:///org/jasig/cas/ticket/registry/EhCacheTicketRegistry$AjcClosure13/EhCacheTicketRegistry$AjcClosure13(java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.jasig.inspektr:inspektr-aspects:1.2.GA",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-integration-ehcache:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-integration-ehcache:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/ticket/registry/EhCacheTicketRegistry/deleteTicket(java.lang.String)|",
+    "called": "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|",
+    "v1Body": [
+      "|java+method:///net/sf/ehcache/Cache/remove(java.io.Serializable)|",
+      "|java+method:///org/apache/commons/lang/StringUtils/isBlank(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+constructor:///org/jasig/cas/ticket/registry/EhCacheTicketRegistry$AjcClosure3/EhCacheTicketRegistry$AjcClosure3(java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+method:///org/aspectj/runtime/internal/Conversions/booleanValue(java.lang.Object)|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.jasig.inspektr:inspektr-aspects:1.2.GA",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-integration-ehcache:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-integration-ehcache:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/ticket/registry/EhCacheTicketRegistry/afterPropertiesSet()|",
+    "called": "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|",
+    "v1Body": [
+      "|java+method:///net/sf/ehcache/config/CacheConfiguration/getMaxElementsOnDisk()|",
+      "|java+method:///net/sf/ehcache/config/CacheConfiguration/isOverflowToDisk()|",
+      "|java+constructor:///org/springframework/beans/BeanInstantiationException/BeanInstantiationException(java.lang.Class,java.lang.String)|",
+      "|java+method:///net/sf/ehcache/config/CacheConfiguration/getTimeToIdleSeconds()|",
+      "|java+method:///net/sf/ehcache/CacheManager/getName()|",
+      "|java+method:///net/sf/ehcache/Cache/getCacheManager()|",
+      "|java+method:///java/lang/Boolean/valueOf(boolean)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///org/slf4j/Logger/isDebugEnabled()|",
+      "|java+method:///net/sf/ehcache/Cache/getCacheConfiguration()|",
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///net/sf/ehcache/config/CacheConfiguration/getTimeToLiveSeconds()|",
+      "|java+method:///net/sf/ehcache/config/CacheConfiguration/getMaxEntriesLocalHeap()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///org/jasig/cas/ticket/registry/EhCacheTicketRegistry$AjcClosure11/EhCacheTicketRegistry$AjcClosure11(java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.jasig.inspektr:inspektr-aspects:1.2.GA",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-integration-ehcache:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-integration-ehcache:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/ticket/registry/EhCacheTicketRegistry/getTicket(java.lang.String)|",
+    "called": "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|",
+    "v1Body": [
+      "|java+method:///net/sf/ehcache/Element/getObjectValue()|",
+      "|java+method:///net/sf/ehcache/Cache/get(java.io.Serializable)|",
+      "|java+method:///org/jasig/cas/ticket/registry/EhCacheTicketRegistry/getProxiedTicketInstance(org.jasig.cas.ticket.Ticket)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+constructor:///org/jasig/cas/ticket/registry/EhCacheTicketRegistry$AjcClosure5/EhCacheTicketRegistry$AjcClosure5(java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.jasig.inspektr:inspektr-aspects:1.2.GA",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-integration-ehcache:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-integration-ehcache:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/ticket/registry/EhCacheTicketRegistry/getTickets()|",
+    "called": "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|",
+    "v1Body": [
+      "|java+method:///net/sf/ehcache/Element/getObjectValue()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///net/sf/ehcache/Cache/getKeysWithExpiryCheck()|",
+      "|java+constructor:///java/util/HashSet/HashSet(int)|",
+      "|java+method:///java/util/Collection/size()|",
+      "|java+method:///java/util/Map/values()|",
+      "|java+method:///java/util/Collection/add(java.lang.Object)|",
+      "|java+method:///java/util/Collection/iterator()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///net/sf/ehcache/Cache/getAll(java.util.Collection)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///org/jasig/cas/ticket/registry/EhCacheTicketRegistry$AjcClosure7/EhCacheTicketRegistry$AjcClosure7(java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.jasig.inspektr:inspektr-aspects:1.2.GA",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-integration-ehcache:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-integration-ehcache:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/monitor/EhCacheStatistics/getName()|",
+    "called": "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|",
+    "v1Body": [
+      "|java+method:///net/sf/ehcache/Cache/getName()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+constructor:///org/jasig/cas/monitor/EhCacheStatistics$AjcClosure9/EhCacheStatistics$AjcClosure9(java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.jasig.inspektr:inspektr-aspects:1.2.GA",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-integration-ehcache:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-integration-ehcache:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/monitor/EhCacheStatistics/getSize()|",
+    "called": "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|",
+    "v1Body": [
+      "|java+method:///net/sf/ehcache/statistics/StatisticsGateway/getLocalHeapSizeInBytes()|",
+      "|java+method:///net/sf/ehcache/Cache/getStatistics()|",
+      "|java+method:///net/sf/ehcache/Cache/getMemoryStoreSize()|",
+      "|java+method:///net/sf/ehcache/statistics/StatisticsGateway/getLocalDiskSizeInBytes()|",
+      "|java+method:///net/sf/ehcache/Cache/getDiskStoreSize()|",
+      "|java+method:///net/sf/ehcache/statistics/StatisticsGateway/getLocalOffHeapSizeInBytes()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///org/jasig/cas/monitor/EhCacheStatistics$AjcClosure1/EhCacheStatistics$AjcClosure1(java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+method:///org/aspectj/runtime/internal/Conversions/longValue(java.lang.Object)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.jasig.inspektr:inspektr-aspects:1.2.GA",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-integration-ehcache:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-integration-ehcache:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/monitor/EhCacheStatistics/getEvictions()|",
+    "called": "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|",
+    "v1Body": [
+      "|java+method:///net/sf/ehcache/statistics/StatisticsGateway/cacheEvictedCount()|",
+      "|java+method:///net/sf/ehcache/Cache/getStatistics()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///org/jasig/cas/monitor/EhCacheStatistics$AjcClosure5/EhCacheStatistics$AjcClosure5(java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+method:///org/aspectj/runtime/internal/Conversions/longValue(java.lang.Object)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.jasig.inspektr:inspektr-aspects:1.2.GA",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-integration-ehcache:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-integration-ehcache:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/monitor/EhCacheStatistics/getPercentFree()|",
+    "called": "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|",
+    "v1Body": [
+      "|java+method:///org/jasig/cas/monitor/EhCacheStatistics/getCapacity()|",
+      "|java+method:///org/jasig/cas/monitor/EhCacheStatistics/getSize()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/aspectj/runtime/internal/Conversions/intValue(java.lang.Object)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+constructor:///org/jasig/cas/monitor/EhCacheStatistics$AjcClosure7/EhCacheStatistics$AjcClosure7(java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.jasig.inspektr:inspektr-aspects:1.2.GA",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-integration-ehcache:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-integration-ehcache:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/monitor/EhCacheStatistics/toString(java.lang.StringBuilder)|",
+    "called": "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+constructor:///java/util/Formatter/Formatter(java.lang.Appendable)|",
+      "|java+method:///org/jasig/cas/monitor/EhCacheStatistics/getName()|",
+      "|java+method:///java/lang/Double/valueOf(double)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+method:///java/util/Formatter/close()|",
+      "|java+method:///java/lang/StringBuilder/append(char)|",
+      "|java+method:///org/jasig/cas/monitor/EhCacheStatistics/getPercentFree()|",
+      "|java+method:///java/lang/StringBuilder/append(long)|",
+      "|java+method:///java/util/Formatter/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/cas/monitor/EhCacheStatistics/getEvictions()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+constructor:///org/jasig/cas/monitor/EhCacheStatistics$AjcClosure11/EhCacheStatistics$AjcClosure11(java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.aspectj:aspectjrt:1.8.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-integration-ehcache:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-integration-ehcache:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/monitor/EhCacheStatistics/getSize()|",
+    "called": "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///net/sf/ehcache/statistics/StatisticsGateway/getLocalHeapSizeInBytes()|",
+      "|java+method:///net/sf/ehcache/Cache/getStatistics()|",
+      "|java+method:///net/sf/ehcache/Cache/getMemoryStoreSize()|",
+      "|java+method:///net/sf/ehcache/statistics/StatisticsGateway/getLocalDiskSizeInBytes()|",
+      "|java+method:///net/sf/ehcache/Cache/getDiskStoreSize()|",
+      "|java+method:///net/sf/ehcache/statistics/StatisticsGateway/getLocalOffHeapSizeInBytes()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///org/jasig/cas/monitor/EhCacheStatistics$AjcClosure1/EhCacheStatistics$AjcClosure1(java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+method:///org/aspectj/runtime/internal/Conversions/longValue(java.lang.Object)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.aspectj:aspectjrt:1.8.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-integration-ehcache:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-integration-ehcache:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/monitor/EhCacheStatistics/getPercentFree()|",
+    "called": "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/jasig/cas/monitor/EhCacheStatistics/getCapacity()|",
+      "|java+method:///org/jasig/cas/monitor/EhCacheStatistics/getSize()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/aspectj/runtime/internal/Conversions/intValue(java.lang.Object)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+constructor:///org/jasig/cas/monitor/EhCacheStatistics$AjcClosure7/EhCacheStatistics$AjcClosure7(java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.aspectj:aspectjrt:1.8.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-integration-ehcache:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-integration-ehcache:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/monitor/EhCacheStatistics/getCapacity()|",
+    "called": "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///net/sf/ehcache/config/CacheConfiguration/getMaxElementsOnDisk()|",
+      "|java+method:///net/sf/ehcache/config/CacheConfiguration/getMaxBytesLocalDisk()|",
+      "|java+method:///net/sf/ehcache/Cache/getCacheConfiguration()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///org/jasig/cas/monitor/EhCacheStatistics$AjcClosure3/EhCacheStatistics$AjcClosure3(java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+method:///org/aspectj/runtime/internal/Conversions/longValue(java.lang.Object)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.aspectj:aspectjrt:1.8.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-integration-ehcache:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-integration-ehcache:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/ticket/registry/EhCacheTicketRegistry/addTicket(org.jasig.cas.ticket.Ticket)|",
+    "called": "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder(java.lang.String)|",
+      "|java+method:///org/jasig/cas/ticket/Ticket/getId()|",
+      "|java+method:///net/sf/ehcache/Cache/getName()|",
+      "|java+constructor:///net/sf/ehcache/Element/Element(java.io.Serializable,java.io.Serializable)|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///net/sf/ehcache/Cache/put(net.sf.ehcache.Element)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///org/jasig/cas/ticket/registry/EhCacheTicketRegistry$AjcClosure1/EhCacheTicketRegistry$AjcClosure1(java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.aspectj:aspectjrt:1.8.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-integration-ehcache:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-integration-ehcache:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/ticket/registry/EhCacheTicketRegistry/sessionCount()|",
+    "called": "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/jasig/cas/ticket/registry/AbstractDistributedTicketRegistry/sessionCount()|",
+      "|java+method:///net/sf/ehcache/Cache/getKeysWithExpiryCheck()|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///org/apache/commons/lang/BooleanUtils/toInteger(boolean,int,int)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/aspectj/runtime/internal/Conversions/intValue(java.lang.Object)|",
+      "|java+constructor:///org/jasig/cas/ticket/registry/EhCacheTicketRegistry$AjcClosure13/EhCacheTicketRegistry$AjcClosure13(java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.aspectj:aspectjrt:1.8.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-integration-ehcache:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-integration-ehcache:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/ticket/registry/EhCacheTicketRegistry/deleteTicket(java.lang.String)|",
+    "called": "|java+method:///org/aspectj/runtime/internal/Conversions/booleanValue(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///net/sf/ehcache/Cache/remove(java.io.Serializable)|",
+      "|java+method:///org/apache/commons/lang/StringUtils/isBlank(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+constructor:///org/jasig/cas/ticket/registry/EhCacheTicketRegistry$AjcClosure3/EhCacheTicketRegistry$AjcClosure3(java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+method:///org/aspectj/runtime/internal/Conversions/booleanValue(java.lang.Object)|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.aspectj:aspectjrt:1.8.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-integration-ehcache:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-integration-ehcache:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/ticket/registry/EhCacheTicketRegistry/getTicket(java.lang.String)|",
+    "called": "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///net/sf/ehcache/Element/getObjectValue()|",
+      "|java+method:///net/sf/ehcache/Cache/get(java.io.Serializable)|",
+      "|java+method:///org/jasig/cas/ticket/registry/EhCacheTicketRegistry/getProxiedTicketInstance(org.jasig.cas.ticket.Ticket)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+constructor:///org/jasig/cas/ticket/registry/EhCacheTicketRegistry$AjcClosure5/EhCacheTicketRegistry$AjcClosure5(java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.aspectj:aspectjrt:1.8.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-integration-ehcache:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-integration-ehcache:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/monitor/EhCacheStatistics/getEvictions()|",
+    "called": "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///net/sf/ehcache/statistics/StatisticsGateway/cacheEvictedCount()|",
+      "|java+method:///net/sf/ehcache/Cache/getStatistics()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///org/jasig/cas/monitor/EhCacheStatistics$AjcClosure5/EhCacheStatistics$AjcClosure5(java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+method:///org/aspectj/runtime/internal/Conversions/longValue(java.lang.Object)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.aspectj:aspectjrt:1.8.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-integration-ehcache:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-integration-ehcache:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/ticket/registry/EhCacheTicketRegistry/serviceTicketCount()|",
+    "called": "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///net/sf/ehcache/Cache/getKeysWithExpiryCheck()|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///org/jasig/cas/ticket/registry/AbstractDistributedTicketRegistry/serviceTicketCount()|",
+      "|java+method:///org/apache/commons/lang/BooleanUtils/toInteger(boolean,int,int)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/aspectj/runtime/internal/Conversions/intValue(java.lang.Object)|",
+      "|java+constructor:///org/jasig/cas/ticket/registry/EhCacheTicketRegistry$AjcClosure15/EhCacheTicketRegistry$AjcClosure15(java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.aspectj:aspectjrt:1.8.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-integration-ehcache:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-integration-ehcache:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/ticket/registry/EhCacheTicketRegistry/toString()|",
+    "called": "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/springframework/core/style/ToStringCreator/append(java.lang.String,java.lang.Object)|",
+      "|java+constructor:///org/springframework/core/style/ToStringCreator/ToStringCreator(java.lang.Object)|",
+      "|java+method:///org/springframework/core/style/ToStringCreator/toString()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///org/jasig/cas/ticket/registry/EhCacheTicketRegistry$AjcClosure9/EhCacheTicketRegistry$AjcClosure9(java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.aspectj:aspectjrt:1.8.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-integration-ehcache:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-integration-ehcache:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/ticket/registry/EhCacheTicketRegistry/afterPropertiesSet()|",
+    "called": "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///net/sf/ehcache/config/CacheConfiguration/getMaxElementsOnDisk()|",
+      "|java+method:///net/sf/ehcache/config/CacheConfiguration/isOverflowToDisk()|",
+      "|java+constructor:///org/springframework/beans/BeanInstantiationException/BeanInstantiationException(java.lang.Class,java.lang.String)|",
+      "|java+method:///net/sf/ehcache/config/CacheConfiguration/getTimeToIdleSeconds()|",
+      "|java+method:///net/sf/ehcache/CacheManager/getName()|",
+      "|java+method:///net/sf/ehcache/Cache/getCacheManager()|",
+      "|java+method:///java/lang/Boolean/valueOf(boolean)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///org/slf4j/Logger/isDebugEnabled()|",
+      "|java+method:///net/sf/ehcache/Cache/getCacheConfiguration()|",
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///net/sf/ehcache/config/CacheConfiguration/getTimeToLiveSeconds()|",
+      "|java+method:///net/sf/ehcache/config/CacheConfiguration/getMaxEntriesLocalHeap()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///org/jasig/cas/ticket/registry/EhCacheTicketRegistry$AjcClosure11/EhCacheTicketRegistry$AjcClosure11(java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.aspectj:aspectjrt:1.8.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-integration-ehcache:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-integration-ehcache:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/ticket/registry/EhCacheTicketRegistry/getTickets()|",
+    "called": "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///net/sf/ehcache/Element/getObjectValue()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///net/sf/ehcache/Cache/getKeysWithExpiryCheck()|",
+      "|java+constructor:///java/util/HashSet/HashSet(int)|",
+      "|java+method:///java/util/Collection/size()|",
+      "|java+method:///java/util/Map/values()|",
+      "|java+method:///java/util/Collection/add(java.lang.Object)|",
+      "|java+method:///java/util/Collection/iterator()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///net/sf/ehcache/Cache/getAll(java.util.Collection)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///org/jasig/cas/ticket/registry/EhCacheTicketRegistry$AjcClosure7/EhCacheTicketRegistry$AjcClosure7(java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.aspectj:aspectjrt:1.8.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-integration-ehcache:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-integration-ehcache:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/monitor/EhCacheStatistics/getName()|",
+    "called": "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///net/sf/ehcache/Cache/getName()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+constructor:///org/jasig/cas/monitor/EhCacheStatistics$AjcClosure9/EhCacheStatistics$AjcClosure9(java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.aspectj:aspectjrt:1.8.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-integration-ehcache:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-integration-ehcache:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/monitor/EhCacheStatistics/toString(java.lang.StringBuilder)|",
+    "called": "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+constructor:///java/util/Formatter/Formatter(java.lang.Appendable)|",
+      "|java+method:///org/jasig/cas/monitor/EhCacheStatistics/getName()|",
+      "|java+method:///java/lang/Double/valueOf(double)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+method:///java/util/Formatter/close()|",
+      "|java+method:///java/lang/StringBuilder/append(char)|",
+      "|java+method:///org/jasig/cas/monitor/EhCacheStatistics/getPercentFree()|",
+      "|java+method:///java/lang/StringBuilder/append(long)|",
+      "|java+method:///java/util/Formatter/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/cas/monitor/EhCacheStatistics/getEvictions()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+constructor:///org/jasig/cas/monitor/EhCacheStatistics$AjcClosure11/EhCacheStatistics$AjcClosure11(java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.aspectj:aspectjweaver:1.8.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-integration-ehcache:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-integration-ehcache:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/monitor/EhCacheStatistics/getSize()|",
+    "called": "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///net/sf/ehcache/statistics/StatisticsGateway/getLocalHeapSizeInBytes()|",
+      "|java+method:///net/sf/ehcache/Cache/getStatistics()|",
+      "|java+method:///net/sf/ehcache/Cache/getMemoryStoreSize()|",
+      "|java+method:///net/sf/ehcache/statistics/StatisticsGateway/getLocalDiskSizeInBytes()|",
+      "|java+method:///net/sf/ehcache/Cache/getDiskStoreSize()|",
+      "|java+method:///net/sf/ehcache/statistics/StatisticsGateway/getLocalOffHeapSizeInBytes()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///org/jasig/cas/monitor/EhCacheStatistics$AjcClosure1/EhCacheStatistics$AjcClosure1(java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+method:///org/aspectj/runtime/internal/Conversions/longValue(java.lang.Object)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.aspectj:aspectjweaver:1.8.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-integration-ehcache:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-integration-ehcache:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/monitor/EhCacheStatistics/getPercentFree()|",
+    "called": "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/jasig/cas/monitor/EhCacheStatistics/getCapacity()|",
+      "|java+method:///org/jasig/cas/monitor/EhCacheStatistics/getSize()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/aspectj/runtime/internal/Conversions/intValue(java.lang.Object)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+constructor:///org/jasig/cas/monitor/EhCacheStatistics$AjcClosure7/EhCacheStatistics$AjcClosure7(java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.aspectj:aspectjweaver:1.8.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-integration-ehcache:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-integration-ehcache:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/monitor/EhCacheStatistics/getCapacity()|",
+    "called": "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///net/sf/ehcache/config/CacheConfiguration/getMaxElementsOnDisk()|",
+      "|java+method:///net/sf/ehcache/config/CacheConfiguration/getMaxBytesLocalDisk()|",
+      "|java+method:///net/sf/ehcache/Cache/getCacheConfiguration()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///org/jasig/cas/monitor/EhCacheStatistics$AjcClosure3/EhCacheStatistics$AjcClosure3(java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+method:///org/aspectj/runtime/internal/Conversions/longValue(java.lang.Object)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.aspectj:aspectjweaver:1.8.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-integration-ehcache:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-integration-ehcache:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/ticket/registry/EhCacheTicketRegistry/addTicket(org.jasig.cas.ticket.Ticket)|",
+    "called": "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder(java.lang.String)|",
+      "|java+method:///org/jasig/cas/ticket/Ticket/getId()|",
+      "|java+method:///net/sf/ehcache/Cache/getName()|",
+      "|java+constructor:///net/sf/ehcache/Element/Element(java.io.Serializable,java.io.Serializable)|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///net/sf/ehcache/Cache/put(net.sf.ehcache.Element)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///org/jasig/cas/ticket/registry/EhCacheTicketRegistry$AjcClosure1/EhCacheTicketRegistry$AjcClosure1(java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.aspectj:aspectjweaver:1.8.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-integration-ehcache:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-integration-ehcache:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/ticket/registry/EhCacheTicketRegistry/sessionCount()|",
+    "called": "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/jasig/cas/ticket/registry/AbstractDistributedTicketRegistry/sessionCount()|",
+      "|java+method:///net/sf/ehcache/Cache/getKeysWithExpiryCheck()|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///org/apache/commons/lang/BooleanUtils/toInteger(boolean,int,int)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/aspectj/runtime/internal/Conversions/intValue(java.lang.Object)|",
+      "|java+constructor:///org/jasig/cas/ticket/registry/EhCacheTicketRegistry$AjcClosure13/EhCacheTicketRegistry$AjcClosure13(java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.aspectj:aspectjweaver:1.8.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-integration-ehcache:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-integration-ehcache:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/ticket/registry/EhCacheTicketRegistry/deleteTicket(java.lang.String)|",
+    "called": "|java+method:///org/aspectj/runtime/internal/Conversions/booleanValue(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///net/sf/ehcache/Cache/remove(java.io.Serializable)|",
+      "|java+method:///org/apache/commons/lang/StringUtils/isBlank(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+constructor:///org/jasig/cas/ticket/registry/EhCacheTicketRegistry$AjcClosure3/EhCacheTicketRegistry$AjcClosure3(java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+method:///org/aspectj/runtime/internal/Conversions/booleanValue(java.lang.Object)|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.aspectj:aspectjweaver:1.8.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-integration-ehcache:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-integration-ehcache:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/ticket/registry/EhCacheTicketRegistry/getTicket(java.lang.String)|",
+    "called": "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///net/sf/ehcache/Element/getObjectValue()|",
+      "|java+method:///net/sf/ehcache/Cache/get(java.io.Serializable)|",
+      "|java+method:///org/jasig/cas/ticket/registry/EhCacheTicketRegistry/getProxiedTicketInstance(org.jasig.cas.ticket.Ticket)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+constructor:///org/jasig/cas/ticket/registry/EhCacheTicketRegistry$AjcClosure5/EhCacheTicketRegistry$AjcClosure5(java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.aspectj:aspectjweaver:1.8.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-integration-ehcache:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-integration-ehcache:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/monitor/EhCacheStatistics/getEvictions()|",
+    "called": "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///net/sf/ehcache/statistics/StatisticsGateway/cacheEvictedCount()|",
+      "|java+method:///net/sf/ehcache/Cache/getStatistics()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///org/jasig/cas/monitor/EhCacheStatistics$AjcClosure5/EhCacheStatistics$AjcClosure5(java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+method:///org/aspectj/runtime/internal/Conversions/longValue(java.lang.Object)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.aspectj:aspectjweaver:1.8.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-integration-ehcache:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-integration-ehcache:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/ticket/registry/EhCacheTicketRegistry/serviceTicketCount()|",
+    "called": "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///net/sf/ehcache/Cache/getKeysWithExpiryCheck()|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///org/jasig/cas/ticket/registry/AbstractDistributedTicketRegistry/serviceTicketCount()|",
+      "|java+method:///org/apache/commons/lang/BooleanUtils/toInteger(boolean,int,int)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/aspectj/runtime/internal/Conversions/intValue(java.lang.Object)|",
+      "|java+constructor:///org/jasig/cas/ticket/registry/EhCacheTicketRegistry$AjcClosure15/EhCacheTicketRegistry$AjcClosure15(java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.aspectj:aspectjweaver:1.8.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-integration-ehcache:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-integration-ehcache:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/ticket/registry/EhCacheTicketRegistry/toString()|",
+    "called": "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/springframework/core/style/ToStringCreator/append(java.lang.String,java.lang.Object)|",
+      "|java+constructor:///org/springframework/core/style/ToStringCreator/ToStringCreator(java.lang.Object)|",
+      "|java+method:///org/springframework/core/style/ToStringCreator/toString()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///org/jasig/cas/ticket/registry/EhCacheTicketRegistry$AjcClosure9/EhCacheTicketRegistry$AjcClosure9(java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.aspectj:aspectjweaver:1.8.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-integration-ehcache:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-integration-ehcache:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/ticket/registry/EhCacheTicketRegistry/afterPropertiesSet()|",
+    "called": "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///net/sf/ehcache/config/CacheConfiguration/getMaxElementsOnDisk()|",
+      "|java+method:///net/sf/ehcache/config/CacheConfiguration/isOverflowToDisk()|",
+      "|java+constructor:///org/springframework/beans/BeanInstantiationException/BeanInstantiationException(java.lang.Class,java.lang.String)|",
+      "|java+method:///net/sf/ehcache/config/CacheConfiguration/getTimeToIdleSeconds()|",
+      "|java+method:///net/sf/ehcache/CacheManager/getName()|",
+      "|java+method:///net/sf/ehcache/Cache/getCacheManager()|",
+      "|java+method:///java/lang/Boolean/valueOf(boolean)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///org/slf4j/Logger/isDebugEnabled()|",
+      "|java+method:///net/sf/ehcache/Cache/getCacheConfiguration()|",
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///net/sf/ehcache/config/CacheConfiguration/getTimeToLiveSeconds()|",
+      "|java+method:///net/sf/ehcache/config/CacheConfiguration/getMaxEntriesLocalHeap()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///org/jasig/cas/ticket/registry/EhCacheTicketRegistry$AjcClosure11/EhCacheTicketRegistry$AjcClosure11(java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.aspectj:aspectjweaver:1.8.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-integration-ehcache:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-integration-ehcache:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/ticket/registry/EhCacheTicketRegistry/getTickets()|",
+    "called": "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///net/sf/ehcache/Element/getObjectValue()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///net/sf/ehcache/Cache/getKeysWithExpiryCheck()|",
+      "|java+constructor:///java/util/HashSet/HashSet(int)|",
+      "|java+method:///java/util/Collection/size()|",
+      "|java+method:///java/util/Map/values()|",
+      "|java+method:///java/util/Collection/add(java.lang.Object)|",
+      "|java+method:///java/util/Collection/iterator()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///net/sf/ehcache/Cache/getAll(java.util.Collection)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///org/jasig/cas/ticket/registry/EhCacheTicketRegistry$AjcClosure7/EhCacheTicketRegistry$AjcClosure7(java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.aspectj:aspectjweaver:1.8.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-integration-ehcache:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-integration-ehcache:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/monitor/EhCacheStatistics/getName()|",
+    "called": "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///net/sf/ehcache/Cache/getName()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+constructor:///org/jasig/cas/monitor/EhCacheStatistics$AjcClosure9/EhCacheStatistics$AjcClosure9(java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.aspectj:aspectjweaver:1.8.6",
+    "change": "UPDATED"
+  }
+]

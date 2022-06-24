@@ -1,0 +1,2737 @@
+[
+  {
+    "coordinatesV1": "com.hp.hpl.jena:jena:2.6.0",
+    "coordinatesV2": "com.hp.hpl.jena:jena:2.5.7",
+    "caller": "|java+constructor:///com/hp/hpl/jena/graph/query/BufferPipe/BufferPipe()|",
+    "called": "|java+constructor:///EDU/oswego/cs/dl/util/concurrent/BoundedBuffer/BoundedBuffer(int)|",
+    "v1Body": [
+      "|java+constructor:///EDU/oswego/cs/dl/util/concurrent/BoundedBuffer/BoundedBuffer(int)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/util/concurrent/ArrayBlockingQueue/ArrayBlockingQueue(int)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "com.hp.hpl.jena:concurrent-jena:1.3.2",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.hp.hpl.jena:jena:2.6.0",
+    "coordinatesV2": "com.hp.hpl.jena:jena:2.5.7",
+    "caller": "|java+method:///com/hp/hpl/jena/graph/query/PatternStageBase$PatternStageThread/put(com.hp.hpl.jena.graph.query.PatternStageBase$Work)|",
+    "called": "|java+method:///EDU/oswego/cs/dl/util/concurrent/BoundedBuffer/put(java.lang.Object)|",
+    "v1Body": [
+      "|java+constructor:///com/hp/hpl/jena/graph/query/BufferPipe$BoundedBufferPutException/BufferPipe$BoundedBufferPutException(java.lang.Exception)|",
+      "|java+method:///EDU/oswego/cs/dl/util/concurrent/BoundedBuffer/put(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/concurrent/BlockingQueue/put(java.lang.Object)|",
+      "|java+constructor:///com/hp/hpl/jena/graph/query/BufferPipe$BoundedBufferPutException/BufferPipe$BoundedBufferPutException(java.lang.Exception)|"
+    ],
+    "affectedLib": "com.hp.hpl.jena:concurrent-jena:1.3.2",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.hp.hpl.jena:jena:2.6.0",
+    "coordinatesV2": "com.hp.hpl.jena:jena:2.5.7",
+    "caller": "|java+method:///com/hp/hpl/jena/graph/query/BufferPipe/fetch()|",
+    "called": "|java+method:///EDU/oswego/cs/dl/util/concurrent/BoundedBuffer/take()|",
+    "v1Body": [
+      "|java+method:///EDU/oswego/cs/dl/util/concurrent/BoundedBuffer/take()|",
+      "|java+constructor:///com/hp/hpl/jena/graph/query/BufferPipe$BoundedBufferTakeException/BufferPipe$BoundedBufferTakeException(java.lang.Exception)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/hp/hpl/jena/graph/query/BufferPipe$BoundedBufferTakeException/BufferPipe$BoundedBufferTakeException(java.lang.Exception)|",
+      "|java+method:///java/util/concurrent/BlockingQueue/take()|"
+    ],
+    "affectedLib": "com.hp.hpl.jena:concurrent-jena:1.3.2",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.hp.hpl.jena:jena:2.6.0",
+    "coordinatesV2": "com.hp.hpl.jena:jena:2.5.7",
+    "caller": "|java+constructor:///com/hp/hpl/jena/shared/LockMRSW/LockMRSW()|",
+    "called": "|java+constructor:///EDU/oswego/cs/dl/util/concurrent/SynchronizedInt/SynchronizedInt(int)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/logging/Log/debug(java.lang.Object)|",
+      "|java+method:///java/lang/Thread/getName()|",
+      "|java+method:///java/util/Map/size()|",
+      "|java+constructor:///EDU/oswego/cs/dl/util/concurrent/WriterPreferenceReadWriteLock/WriterPreferenceReadWriteLock()|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+method:///java/lang/StringBuffer/toString()|",
+      "|java+method:///java/lang/StringBuffer/append(java.lang.String)|",
+      "|java+method:///org/apache/commons/logging/Log/isDebugEnabled()|",
+      "|java+constructor:///EDU/oswego/cs/dl/util/concurrent/SynchronizedInt/SynchronizedInt(int)|",
+      "|java+method:///java/lang/Thread/currentThread()|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+constructor:///java/lang/StringBuffer/StringBuffer()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/Thread/getName()|",
+      "|java+method:///java/lang/Thread/currentThread()|",
+      "|java+method:///java/util/Map/size()|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+constructor:///java/util/concurrent/locks/ReentrantReadWriteLock/ReentrantReadWriteLock()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///java/util/concurrent/atomic/AtomicInteger/AtomicInteger(int)|",
+      "|java+method:///org/slf4j/Logger/isDebugEnabled()|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "affectedLib": "com.hp.hpl.jena:concurrent-jena:1.3.2",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.hp.hpl.jena:jena:2.6.0",
+    "coordinatesV2": "com.hp.hpl.jena:jena:2.5.7",
+    "caller": "|java+method:///com/hp/hpl/jena/shared/LockMutex/enterCriticalSection(boolean)|",
+    "called": "|java+method:///EDU/oswego/cs/dl/util/concurrent/Mutex/acquire()|",
+    "v1Body": [
+      "|java+constructor:///com/hp/hpl/jena/shared/JenaException/JenaException(java.lang.String)|",
+      "|java+method:///EDU/oswego/cs/dl/util/concurrent/Mutex/acquire()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/concurrent/locks/Lock/lock()|"
+    ],
+    "affectedLib": "com.hp.hpl.jena:concurrent-jena:1.3.2",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.hp.hpl.jena:jena:2.6.0",
+    "coordinatesV2": "com.hp.hpl.jena:jena:2.5.7",
+    "caller": "|java+method:///com/hp/hpl/jena/graph/query/PatternStageBase$PatternStageThread/get()|",
+    "called": "|java+method:///EDU/oswego/cs/dl/util/concurrent/BoundedBuffer/take()|",
+    "v1Body": [
+      "|java+method:///EDU/oswego/cs/dl/util/concurrent/BoundedBuffer/take()|",
+      "|java+constructor:///com/hp/hpl/jena/graph/query/BufferPipe$BoundedBufferTakeException/BufferPipe$BoundedBufferTakeException(java.lang.Exception)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/hp/hpl/jena/graph/query/BufferPipe$BoundedBufferTakeException/BufferPipe$BoundedBufferTakeException(java.lang.Exception)|",
+      "|java+method:///java/util/concurrent/BlockingQueue/take()|"
+    ],
+    "affectedLib": "com.hp.hpl.jena:concurrent-jena:1.3.2",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.hp.hpl.jena:jena:2.6.0",
+    "coordinatesV2": "com.hp.hpl.jena:jena:2.5.7",
+    "caller": "|java+constructor:///com/hp/hpl/jena/graph/query/PatternStageBase$PatternStageThread/PatternStageBase$PatternStageThread(com.hp.hpl.jena.graph.query.PatternStageBase,java.lang.String)|",
+    "called": "|java+constructor:///EDU/oswego/cs/dl/util/concurrent/BoundedBuffer/BoundedBuffer(int)|",
+    "v1Body": [
+      "|java+constructor:///EDU/oswego/cs/dl/util/concurrent/BoundedBuffer/BoundedBuffer(int)|",
+      "|java+constructor:///java/lang/Thread/Thread(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/util/concurrent/ArrayBlockingQueue/ArrayBlockingQueue(int)|",
+      "|java+constructor:///java/lang/Thread/Thread(java.lang.String)|"
+    ],
+    "affectedLib": "com.hp.hpl.jena:concurrent-jena:1.3.2",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.hp.hpl.jena:jena:2.6.0",
+    "coordinatesV2": "com.hp.hpl.jena:jena:2.5.7",
+    "caller": "|java+method:///com/hp/hpl/jena/graph/query/BufferPipe/putAny(java.lang.Object)|",
+    "called": "|java+method:///EDU/oswego/cs/dl/util/concurrent/BoundedBuffer/put(java.lang.Object)|",
+    "v1Body": [
+      "|java+constructor:///com/hp/hpl/jena/graph/query/BufferPipe$BoundedBufferPutException/BufferPipe$BoundedBufferPutException(java.lang.Exception)|",
+      "|java+method:///EDU/oswego/cs/dl/util/concurrent/BoundedBuffer/put(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/concurrent/BlockingQueue/put(java.lang.Object)|",
+      "|java+constructor:///com/hp/hpl/jena/graph/query/BufferPipe$BoundedBufferPutException/BufferPipe$BoundedBufferPutException(java.lang.Exception)|"
+    ],
+    "affectedLib": "com.hp.hpl.jena:concurrent-jena:1.3.2",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.hp.hpl.jena:jena:2.6.0",
+    "coordinatesV2": "com.hp.hpl.jena:jena:2.5.7",
+    "caller": "|java+constructor:///com/hp/hpl/jena/shared/LockMutex/LockMutex()|",
+    "called": "|java+constructor:///EDU/oswego/cs/dl/util/concurrent/Mutex/Mutex()|",
+    "v1Body": [
+      "|java+constructor:///EDU/oswego/cs/dl/util/concurrent/Mutex/Mutex()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/util/concurrent/locks/ReentrantLock/ReentrantLock()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "com.hp.hpl.jena:concurrent-jena:1.3.2",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.hp.hpl.jena:jena:2.6.0",
+    "coordinatesV2": "com.hp.hpl.jena:jena:2.5.7",
+    "caller": "|java+method:///com/hp/hpl/jena/shared/LockMutex/leaveCriticalSection()|",
+    "called": "|java+method:///EDU/oswego/cs/dl/util/concurrent/Mutex/release()|",
+    "v1Body": [
+      "|java+method:///EDU/oswego/cs/dl/util/concurrent/Mutex/release()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/concurrent/locks/Lock/unlock()|"
+    ],
+    "affectedLib": "com.hp.hpl.jena:concurrent-jena:1.3.2",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.hp.hpl.jena:jena:2.6.0",
+    "coordinatesV2": "com.hp.hpl.jena:jena:2.5.7",
+    "caller": "|java+initializer:///jena/dbquery/dbquery$initializer|",
+    "called": "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///jena/dbquery/class$(java.lang.String)|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "commons-logging:commons-logging:1.1.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.hp.hpl.jena:jena:2.6.0",
+    "coordinatesV2": "com.hp.hpl.jena:jena:2.5.7",
+    "caller": "|java+initializer:///com/hp/hpl/jena/reasoner/rulesys/impl/FRuleEngine/FRuleEngine$initializer|",
+    "called": "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///com/hp/hpl/jena/reasoner/rulesys/impl/FRuleEngine/class$(java.lang.String)|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "commons-logging:commons-logging:1.1.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.hp.hpl.jena:jena:2.6.0",
+    "coordinatesV2": "com.hp.hpl.jena:jena:2.5.7",
+    "caller": "|java+initializer:///com/hp/hpl/jena/db/impl/SQLCache/SQLCache$initializer|",
+    "called": "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///com/hp/hpl/jena/db/impl/SQLCache/class$(java.lang.String)|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "commons-logging:commons-logging:1.1.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.hp.hpl.jena:jena:2.6.0",
+    "coordinatesV2": "com.hp.hpl.jena:jena:2.5.7",
+    "caller": "|java+initializer:///com/hp/hpl/jena/regression/testNTripleReader/testNTripleReader$initializer|",
+    "called": "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///com/hp/hpl/jena/regression/testNTripleReader/class$(java.lang.String)|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "commons-logging:commons-logging:1.1.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.hp.hpl.jena:jena:2.6.0",
+    "coordinatesV2": "com.hp.hpl.jena:jena:2.5.7",
+    "caller": "|java+initializer:///com/hp/hpl/jena/reasoner/rulesys/impl/RETETerminal/RETETerminal$initializer|",
+    "called": "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///com/hp/hpl/jena/reasoner/rulesys/impl/RETETerminal/class$(java.lang.String)|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "commons-logging:commons-logging:1.1.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.hp.hpl.jena:jena:2.6.0",
+    "coordinatesV2": "com.hp.hpl.jena:jena:2.5.7",
+    "caller": "|java+method:///com/hp/hpl/jena/util/ModelLoader/loadModel(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)|",
+    "called": "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///com/hp/hpl/jena/util/ModelLoader/connectToDB(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)|",
+      "|java+method:///com/hp/hpl/jena/util/FileManager/get()|",
+      "|java+method:///com/hp/hpl/jena/util/ModelLoader/class$(java.lang.String)|",
+      "|java+method:///org/apache/commons/logging/Log/warn(java.lang.Object,java.lang.Throwable)|",
+      "|java+method:///com/hp/hpl/jena/rdf/model/ModelFactory/createDefaultModel()|",
+      "|java+method:///org/apache/commons/logging/Log/fatal(java.lang.Object)|",
+      "|java+method:///com/hp/hpl/jena/util/ModelLoader/guessLang(java.lang.String)|",
+      "|java+method:///com/hp/hpl/jena/util/FileManager/readModel(com.hp.hpl.jena.rdf.model.Model,java.lang.String,java.lang.String,java.lang.String)|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|",
+      "|java+method:///com/hp/hpl/jena/rdf/model/Model/setReaderClassName(java.lang.String,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/hp/hpl/jena/util/ModelLoader/connectToDB(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)|",
+      "|java+method:///com/hp/hpl/jena/util/FileManager/get()|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///com/hp/hpl/jena/rdf/model/ModelFactory/createDefaultModel()|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String)|",
+      "|java+method:///com/hp/hpl/jena/util/ModelLoader/guessLang(java.lang.String)|",
+      "|java+method:///com/hp/hpl/jena/util/FileManager/readModel(com.hp.hpl.jena.rdf.model.Model,java.lang.String,java.lang.String,java.lang.String)|",
+      "|java+method:///com/hp/hpl/jena/rdf/model/Model/setReaderClassName(java.lang.String,java.lang.String)|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///java/lang/Class/getName()|"
+    ],
+    "affectedLib": "commons-logging:commons-logging:1.1.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.hp.hpl.jena:jena:2.6.0",
+    "coordinatesV2": "com.hp.hpl.jena:jena:2.5.7",
+    "caller": "|java+initializer:///com/hp/hpl/jena/reasoner/rulesys/OWLFBRuleReasoner/OWLFBRuleReasoner$initializer|",
+    "called": "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///com/hp/hpl/jena/reasoner/rulesys/OWLFBRuleReasoner/class$(java.lang.String)|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "commons-logging:commons-logging:1.1.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.hp.hpl.jena:jena:2.6.0",
+    "coordinatesV2": "com.hp.hpl.jena:jena:2.5.7",
+    "caller": "|java+initializer:///com/hp/hpl/jena/db/impl/ResultSetReifIterator/ResultSetReifIterator$initializer|",
+    "called": "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///com/hp/hpl/jena/db/impl/ResultSetReifIterator/class$(java.lang.String)|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "commons-logging:commons-logging:1.1.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.hp.hpl.jena:jena:2.6.0",
+    "coordinatesV2": "com.hp.hpl.jena:jena:2.5.7",
+    "caller": "|java+initializer:///com/hp/hpl/jena/reasoner/rulesys/Functor/Functor$initializer|",
+    "called": "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|",
+    "v1Body": [
+      "|java+constructor:///com/hp/hpl/jena/reasoner/rulesys/Functor$1/Functor$1()|",
+      "|java+method:///com/hp/hpl/jena/reasoner/rulesys/Functor/class$(java.lang.String)|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+constructor:///com/hp/hpl/jena/reasoner/rulesys/Functor$1/Functor$1()|"
+    ],
+    "affectedLib": "commons-logging:commons-logging:1.1.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.hp.hpl.jena:jena:2.6.0",
+    "coordinatesV2": "com.hp.hpl.jena:jena:2.5.7",
+    "caller": "|java+initializer:///com/hp/hpl/jena/rdf/model/impl/NTripleWriter/NTripleWriter$initializer|",
+    "called": "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///com/hp/hpl/jena/rdf/model/impl/NTripleWriter/class$(java.lang.String)|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "commons-logging:commons-logging:1.1.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.hp.hpl.jena:jena:2.6.0",
+    "coordinatesV2": "com.hp.hpl.jena:jena:2.5.7",
+    "caller": "|java+method:///com/hp/hpl/jena/n3/JenaReaderBase/read(com.hp.hpl.jena.rdf.model.Model,java.lang.String)|",
+    "called": "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|",
+    "v1Body": [
+      "|java+constructor:///com/hp/hpl/jena/shared/JenaException/JenaException(java.lang.Throwable)|",
+      "|java+method:///org/apache/commons/logging/Log/warn(java.lang.Object)|",
+      "|java+constructor:///java/net/URL/URL(java.lang.String)|",
+      "|java+constructor:///java/io/InputStreamReader/InputStreamReader(java.io.InputStream,java.lang.String)|",
+      "|java+method:///java/net/URLConnection/getInputStream()|",
+      "|java+method:///java/net/URLConnection/getContentEncoding()|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///com/hp/hpl/jena/n3/JenaReaderBase/read(com.hp.hpl.jena.rdf.model.Model,java.io.Reader,java.lang.String)|",
+      "|java+method:///java/net/URL/openConnection()|",
+      "|java+method:///com/hp/hpl/jena/rdf/model/RDFErrorHandler/error(java.lang.Exception)|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/hp/hpl/jena/shared/JenaException/JenaException(java.lang.Throwable)|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String)|",
+      "|java+constructor:///java/io/InputStreamReader/InputStreamReader(java.io.InputStream,java.lang.String)|",
+      "|java+method:///java/net/URLConnection/getInputStream()|",
+      "|java+method:///java/net/URLConnection/getContentEncoding()|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///com/hp/hpl/jena/rdf/model/RDFErrorHandler/error(java.lang.Exception)|",
+      "|java+method:///com/hp/hpl/jena/n3/JenaReaderBase/read(com.hp.hpl.jena.rdf.model.Model,java.io.Reader,java.lang.String)|",
+      "|java+method:///java/net/URL/openConnection()|",
+      "|java+constructor:///java/net/URL/URL(java.lang.String)|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "commons-logging:commons-logging:1.1.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.hp.hpl.jena:jena:2.6.0",
+    "coordinatesV2": "com.hp.hpl.jena:jena:2.5.7",
+    "caller": "|java+initializer:///com/hp/hpl/jena/util/ModelLoader/ModelLoader$initializer|",
+    "called": "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///com/hp/hpl/jena/util/ModelLoader/class$(java.lang.String)|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "commons-logging:commons-logging:1.1.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.hp.hpl.jena:jena:2.6.0",
+    "coordinatesV2": "com.hp.hpl.jena:jena:2.5.7",
+    "caller": "|java+initializer:///com/hp/hpl/jena/ontology/impl/OntResourceImpl/OntResourceImpl$initializer|",
+    "called": "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|",
+    "v1Body": [
+      "|java+constructor:///com/hp/hpl/jena/ontology/impl/OntResourceImpl$1/OntResourceImpl$1()|",
+      "|java+method:///com/hp/hpl/jena/vocabulary/RDFS/getURI()|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|",
+      "|java+method:///com/hp/hpl/jena/ontology/impl/OntResourceImpl/class$(java.lang.String)|",
+      "|java+method:///com/hp/hpl/jena/vocabulary/RDF/getURI()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/hp/hpl/jena/ontology/impl/OntResourceImpl$1/OntResourceImpl$1()|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///com/hp/hpl/jena/vocabulary/RDFS/getURI()|",
+      "|java+method:///com/hp/hpl/jena/vocabulary/RDF/getURI()|"
+    ],
+    "affectedLib": "commons-logging:commons-logging:1.1.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.hp.hpl.jena:jena:2.6.0",
+    "coordinatesV2": "com.hp.hpl.jena:jena:2.5.7",
+    "caller": "|java+initializer:///com/hp/hpl/jena/xmloutput/impl/Unparser/Unparser$initializer|",
+    "called": "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///java/lang/String/length()|",
+      "|java+method:///com/hp/hpl/jena/vocabulary/RDF/getURI()|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|",
+      "|java+constructor:///com/hp/hpl/jena/rdf/model/impl/PropertyImpl/PropertyImpl(java.lang.String,java.lang.String)|",
+      "|java+constructor:///java/lang/Integer/Integer(int)|",
+      "|java+method:///com/hp/hpl/jena/rdf/model/Property/getNameSpace()|",
+      "|java+method:///com/hp/hpl/jena/xmloutput/impl/Unparser/class$(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/hp/hpl/jena/vocabulary/RDF/getURI()|",
+      "|java+method:///com/hp/hpl/jena/rdf/model/Property/getNameSpace()|",
+      "|java+constructor:///com/hp/hpl/jena/rdf/model/impl/PropertyImpl/PropertyImpl(java.lang.String,java.lang.String)|",
+      "|java+constructor:///java/lang/Integer/Integer(int)|",
+      "|java+method:///java/lang/String/length()|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "commons-logging:commons-logging:1.1.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.hp.hpl.jena:jena:2.6.0",
+    "coordinatesV2": "com.hp.hpl.jena:jena:2.5.7",
+    "caller": "|java+initializer:///com/hp/hpl/jena/util/LocatorURL/LocatorURL$initializer|",
+    "called": "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///com/hp/hpl/jena/util/LocatorURL/class$(java.lang.String)|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "commons-logging:commons-logging:1.1.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.hp.hpl.jena:jena:2.6.0",
+    "coordinatesV2": "com.hp.hpl.jena:jena:2.5.7",
+    "caller": "|java+method:///com/hp/hpl/jena/util/ModelLoader/loadModel(com.hp.hpl.jena.rdf.model.Model,java.lang.String,java.lang.String)|",
+    "called": "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///com/hp/hpl/jena/util/FileManager/get()|",
+      "|java+method:///com/hp/hpl/jena/util/ModelLoader/class$(java.lang.String)|",
+      "|java+method:///org/apache/commons/logging/Log/warn(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuffer/toString()|",
+      "|java+method:///com/hp/hpl/jena/util/FileManager/readModel(com.hp.hpl.jena.rdf.model.Model,java.lang.String,java.lang.String,java.lang.String)|",
+      "|java+method:///java/lang/StringBuffer/append(java.lang.String)|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|",
+      "|java+constructor:///java/lang/StringBuffer/StringBuffer()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/hp/hpl/jena/util/FileManager/get()|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///com/hp/hpl/jena/util/FileManager/readModel(com.hp.hpl.jena.rdf.model.Model,java.lang.String,java.lang.String,java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "affectedLib": "commons-logging:commons-logging:1.1.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.hp.hpl.jena:jena:2.6.0",
+    "coordinatesV2": "com.hp.hpl.jena:jena:2.5.7",
+    "caller": "|java+initializer:///com/hp/hpl/jena/rdf/model/impl/RDFListImpl/RDFListImpl$initializer|",
+    "called": "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///com/hp/hpl/jena/rdf/model/impl/RDFListImpl/class$(java.lang.String)|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|",
+      "|java+constructor:///com/hp/hpl/jena/rdf/model/impl/RDFListImpl$1/RDFListImpl$1()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+constructor:///com/hp/hpl/jena/rdf/model/impl/RDFListImpl$1/RDFListImpl$1()|"
+    ],
+    "affectedLib": "commons-logging:commons-logging:1.1.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.hp.hpl.jena:jena:2.6.0",
+    "coordinatesV2": "com.hp.hpl.jena:jena:2.5.7",
+    "caller": "|java+initializer:///com/hp/hpl/jena/db/impl/PSet_TripleStore_RDB/PSet_TripleStore_RDB$initializer|",
+    "called": "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///com/hp/hpl/jena/db/impl/PSet_TripleStore_RDB/class$(java.lang.String)|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "commons-logging:commons-logging:1.1.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.hp.hpl.jena:jena:2.6.0",
+    "coordinatesV2": "com.hp.hpl.jena:jena:2.5.7",
+    "caller": "|java+initializer:///com/hp/hpl/jena/n3/N3JenaWriterCommon/N3JenaWriterCommon$initializer|",
+    "called": "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///com/hp/hpl/jena/rdf/model/Property/getURI()|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+method:///com/hp/hpl/jena/n3/N3JenaWriterCommon/class$(java.lang.String)|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///com/hp/hpl/jena/rdf/model/Property/getURI()|",
+      "|java+constructor:///java/util/HashMap/HashMap()|"
+    ],
+    "affectedLib": "commons-logging:commons-logging:1.1.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.hp.hpl.jena:jena:2.6.0",
+    "coordinatesV2": "com.hp.hpl.jena:jena:2.5.7",
+    "caller": "|java+method:///com/hp/hpl/jena/util/ModelLoader/connectToDB(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)|",
+    "called": "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///java/lang/Class/forName(java.lang.String)|",
+      "|java+method:///com/hp/hpl/jena/db/ModelRDB/open(com.hp.hpl.jena.db.IDBConnection,java.lang.String)|",
+      "|java+method:///com/hp/hpl/jena/rdf/model/ModelFactory/createSimpleRDBConnection(java.lang.String,java.lang.String,java.lang.String,java.lang.String)|",
+      "|java+method:///org/apache/commons/logging/Log/error(java.lang.Object,java.lang.Throwable)|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|",
+      "|java+method:///java/lang/Class/newInstance()|",
+      "|java+method:///com/hp/hpl/jena/util/ModelLoader/class$(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Class/forName(java.lang.String)|",
+      "|java+method:///java/lang/Class/newInstance()|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///com/hp/hpl/jena/db/ModelRDB/open(com.hp.hpl.jena.db.IDBConnection,java.lang.String)|",
+      "|java+method:///com/hp/hpl/jena/rdf/model/ModelFactory/createSimpleRDBConnection(java.lang.String,java.lang.String,java.lang.String,java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|"
+    ],
+    "affectedLib": "commons-logging:commons-logging:1.1.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.hp.hpl.jena:jena:2.6.0",
+    "coordinatesV2": "com.hp.hpl.jena:jena:2.5.7",
+    "caller": "|java+initializer:///com/hp/hpl/jena/reasoner/rulesys/Rule/Rule$initializer|",
+    "called": "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///com/hp/hpl/jena/reasoner/rulesys/Rule/class$(java.lang.String)|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "commons-logging:commons-logging:1.1.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.hp.hpl.jena:jena:2.6.0",
+    "coordinatesV2": "com.hp.hpl.jena:jena:2.5.7",
+    "caller": "|java+method:///com/hp/hpl/jena/util/junit/TestFactoryManifest/oneManifest(java.lang.String)|",
+    "called": "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///com/hp/hpl/jena/util/junit/Manifest/apply(com.hp.hpl.jena.util.junit.ManifestItemHandler)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/apache/commons/logging/Log/warn(java.lang.Object,java.lang.Throwable)|",
+      "|java+method:///com/hp/hpl/jena/shared/JenaException/getMessage()|",
+      "|java+method:///junit/framework/TestSuite/setName(java.lang.String)|",
+      "|java+method:///com/hp/hpl/jena/util/junit/TestFactoryManifest/oneManifest(java.lang.String)|",
+      "|java+method:///com/hp/hpl/jena/util/junit/Manifest/includedManifests()|",
+      "|java+constructor:///com/hp/hpl/jena/util/junit/Manifest/Manifest(java.lang.String)|",
+      "|java+method:///java/lang/StringBuffer/append(java.lang.String)|",
+      "|java+method:///com/hp/hpl/jena/util/junit/TestFactoryManifest/class$(java.lang.String)|",
+      "|java+method:///com/hp/hpl/jena/util/junit/Manifest/getName()|",
+      "|java+constructor:///junit/framework/TestSuite/TestSuite()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///com/hp/hpl/jena/util/junit/TestUtils/safeName(java.lang.String)|",
+      "|java+method:///junit/framework/TestSuite/addTest(junit.framework.Test)|",
+      "|java+method:///java/lang/StringBuffer/toString()|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|",
+      "|java+constructor:///java/lang/StringBuffer/StringBuffer()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/hp/hpl/jena/util/junit/Manifest/apply(com.hp.hpl.jena.util.junit.ManifestItemHandler)|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///junit/framework/TestSuite/setName(java.lang.String)|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///com/hp/hpl/jena/util/junit/TestFactoryManifest/oneManifest(java.lang.String)|",
+      "|java+method:///junit/framework/TestSuite/addTest(junit.framework.Test)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///com/hp/hpl/jena/util/junit/Manifest/includedManifests()|",
+      "|java+constructor:///com/hp/hpl/jena/util/junit/Manifest/Manifest(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///com/hp/hpl/jena/shared/JenaException/getMessage()|",
+      "|java+method:///com/hp/hpl/jena/util/junit/Manifest/getName()|",
+      "|java+constructor:///junit/framework/TestSuite/TestSuite()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///com/hp/hpl/jena/util/junit/TestUtils/safeName(java.lang.String)|"
+    ],
+    "affectedLib": "commons-logging:commons-logging:1.1.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.hp.hpl.jena:jena:2.6.0",
+    "coordinatesV2": "com.hp.hpl.jena:jena:2.5.7",
+    "caller": "|java+initializer:///com/hp/hpl/jena/db/impl/DriverRDB/DriverRDB$initializer|",
+    "called": "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///com/hp/hpl/jena/db/impl/DriverRDB/class$(java.lang.String)|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "commons-logging:commons-logging:1.1.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.hp.hpl.jena:jena:2.6.0",
+    "coordinatesV2": "com.hp.hpl.jena:jena:2.5.7",
+    "caller": "|java+method:///com/hp/hpl/jena/shared/uuid/JenaUUID/parse(java.lang.String)|",
+    "called": "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///com/hp/hpl/jena/shared/uuid/JenaUUID/class$(java.lang.String)|",
+      "|java+method:///com/hp/hpl/jena/shared/uuid/Bits/unpack(java.lang.String,int,int)|",
+      "|java+method:///org/apache/commons/logging/Log/warn(java.lang.Object)|",
+      "|java+method:///java/lang/String/charAt(int)|",
+      "|java+method:///com/hp/hpl/jena/shared/uuid/UUID_V4_Gen/parse$(java.lang.String)|",
+      "|java+constructor:///java/lang/UnsupportedOperationException/UnsupportedOperationException(java.lang.String)|",
+      "|java+method:///java/lang/String/substring(int)|",
+      "|java+method:///java/lang/StringBuffer/append(int)|",
+      "|java+method:///java/lang/String/startsWith(java.lang.String)|",
+      "|java+constructor:///com/hp/hpl/jena/shared/uuid/JenaUUID$FormatException/JenaUUID$FormatException(java.lang.String)|",
+      "|java+method:///java/lang/String/toLowerCase()|",
+      "|java+method:///java/lang/String/length()|",
+      "|java+method:///com/hp/hpl/jena/shared/uuid/UUID_V1_Gen/parse$(java.lang.String)|",
+      "|java+method:///com/hp/hpl/jena/shared/uuid/JenaUUID/nil()|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuffer/toString()|",
+      "|java+method:///com/hp/hpl/jena/shared/uuid/JenaUUID/strNil()|",
+      "|java+method:///java/lang/StringBuffer/append(java.lang.String)|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|",
+      "|java+constructor:///java/lang/StringBuffer/StringBuffer()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/hp/hpl/jena/shared/uuid/UUID_V4_Gen/parse$(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///java/lang/UnsupportedOperationException/UnsupportedOperationException(java.lang.String)|",
+      "|java+method:///java/lang/String/substring(int)|",
+      "|java+method:///java/lang/String/startsWith(java.lang.String)|",
+      "|java+method:///com/hp/hpl/jena/shared/uuid/JenaUUID/strNil()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///com/hp/hpl/jena/shared/uuid/Bits/unpack(java.lang.String,int,int)|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String)|",
+      "|java+constructor:///com/hp/hpl/jena/shared/uuid/JenaUUID$FormatException/JenaUUID$FormatException(java.lang.String)|",
+      "|java+method:///java/lang/String/toLowerCase()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/String/charAt(int)|",
+      "|java+method:///java/lang/String/length()|",
+      "|java+method:///com/hp/hpl/jena/shared/uuid/UUID_V1_Gen/parse$(java.lang.String)|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///com/hp/hpl/jena/shared/uuid/JenaUUID/nil()|"
+    ],
+    "affectedLib": "commons-logging:commons-logging:1.1.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.hp.hpl.jena:jena:2.6.0",
+    "coordinatesV2": "com.hp.hpl.jena:jena:2.5.7",
+    "caller": "|java+initializer:///com/hp/hpl/jena/util/FileManager/FileManager$initializer|",
+    "called": "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///com/hp/hpl/jena/util/FileManager/class$(java.lang.String)|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "commons-logging:commons-logging:1.1.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.hp.hpl.jena:jena:2.6.0",
+    "coordinatesV2": "com.hp.hpl.jena:jena:2.5.7",
+    "caller": "|java+initializer:///com/hp/hpl/jena/util/LocatorZip/LocatorZip$initializer|",
+    "called": "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///com/hp/hpl/jena/util/LocatorZip/class$(java.lang.String)|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "commons-logging:commons-logging:1.1.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.hp.hpl.jena:jena:2.6.0",
+    "coordinatesV2": "com.hp.hpl.jena:jena:2.5.7",
+    "caller": "|java+method:///jena/schemagen/getComment(com.hp.hpl.jena.rdf.model.Resource)|",
+    "called": "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/logging/Log/debug(java.lang.Object)|",
+      "|java+method:///com/hp/hpl/jena/rdf/model/NodeIterator/hasNext()|",
+      "|java+method:///java/lang/String/trim()|",
+      "|java+method:///com/hp/hpl/jena/rdf/model/Literal/getLexicalForm()|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///java/lang/StringBuffer/append(java.lang.String)|",
+      "|java+method:///com/hp/hpl/jena/ontology/OntModel/listObjectsOfProperty(com.hp.hpl.jena.rdf.model.Resource,com.hp.hpl.jena.rdf.model.Property)|",
+      "|java+method:///java/lang/StringBuffer/append(java.lang.Object)|",
+      "|java+method:///com/hp/hpl/jena/rdf/model/NodeIterator/nextNode()|",
+      "|java+method:///java/lang/StringBuffer/toString()|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|",
+      "|java+constructor:///java/lang/StringBuffer/StringBuffer()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+method:///com/hp/hpl/jena/rdf/model/NodeIterator/hasNext()|",
+      "|java+method:///com/hp/hpl/jena/rdf/model/Literal/getLexicalForm()|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///com/hp/hpl/jena/ontology/OntModel/listObjectsOfProperty(com.hp.hpl.jena.rdf.model.Resource,com.hp.hpl.jena.rdf.model.Property)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuffer/append(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuffer/StringBuffer()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/String/trim()|",
+      "|java+method:///com/hp/hpl/jena/rdf/model/NodeIterator/nextNode()|",
+      "|java+method:///java/lang/StringBuffer/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/lang/Object/getClass()|"
+    ],
+    "affectedLib": "commons-logging:commons-logging:1.1.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.hp.hpl.jena:jena:2.6.0",
+    "coordinatesV2": "com.hp.hpl.jena:jena:2.5.7",
+    "caller": "|java+initializer:///com/hp/hpl/jena/util/LocatorFile/LocatorFile$initializer|",
+    "called": "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///com/hp/hpl/jena/util/LocatorFile/class$(java.lang.String)|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "commons-logging:commons-logging:1.1.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.hp.hpl.jena:jena:2.6.0",
+    "coordinatesV2": "com.hp.hpl.jena:jena:2.5.7",
+    "caller": "|java+initializer:///com/hp/hpl/jena/rdf/model/impl/PropertyImpl/PropertyImpl$initializer|",
+    "called": "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///com/hp/hpl/jena/rdf/model/impl/PropertyImpl/class$(java.lang.String)|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|",
+      "|java+constructor:///com/hp/hpl/jena/rdf/model/impl/PropertyImpl$1/PropertyImpl$1()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+constructor:///com/hp/hpl/jena/rdf/model/impl/PropertyImpl$1/PropertyImpl$1()|"
+    ],
+    "affectedLib": "commons-logging:commons-logging:1.1.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.hp.hpl.jena:jena:2.6.0",
+    "coordinatesV2": "com.hp.hpl.jena:jena:2.5.7",
+    "caller": "|java+initializer:///com/hp/hpl/jena/reasoner/rulesys/impl/RETEConflictSet/RETEConflictSet$initializer|",
+    "called": "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///com/hp/hpl/jena/reasoner/rulesys/impl/RETEConflictSet/class$(java.lang.String)|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "commons-logging:commons-logging:1.1.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.hp.hpl.jena:jena:2.6.0",
+    "coordinatesV2": "com.hp.hpl.jena:jena:2.5.7",
+    "caller": "|java+initializer:///com/hp/hpl/jena/ontology/OntDocumentManager/OntDocumentManager$initializer|",
+    "called": "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///com/hp/hpl/jena/ontology/OntDocumentManager/class$(java.lang.String)|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "commons-logging:commons-logging:1.1.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.hp.hpl.jena:jena:2.6.0",
+    "coordinatesV2": "com.hp.hpl.jena:jena:2.5.7",
+    "caller": "|java+initializer:///com/hp/hpl/jena/rdf/arp/DOM2Model/DOM2Model$initializer|",
+    "called": "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|",
+      "|java+method:///com/hp/hpl/jena/rdf/arp/DOM2Model/class$(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "commons-logging:commons-logging:1.1.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.hp.hpl.jena:jena:2.6.0",
+    "coordinatesV2": "com.hp.hpl.jena:jena:2.5.7",
+    "caller": "|java+initializer:///com/hp/hpl/jena/reasoner/rulesys/FBRuleInfGraph/FBRuleInfGraph$initializer|",
+    "called": "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///com/hp/hpl/jena/reasoner/rulesys/FBRuleInfGraph/class$(java.lang.String)|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "commons-logging:commons-logging:1.1.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.hp.hpl.jena:jena:2.6.0",
+    "coordinatesV2": "com.hp.hpl.jena:jena:2.5.7",
+    "caller": "|java+initializer:///com/hp/hpl/jena/regression/testReaderInterface/testReaderInterface$initializer|",
+    "called": "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|",
+      "|java+method:///com/hp/hpl/jena/regression/testReaderInterface/class$(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "commons-logging:commons-logging:1.1.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.hp.hpl.jena:jena:2.6.0",
+    "coordinatesV2": "com.hp.hpl.jena:jena:2.5.7",
+    "caller": "|java+initializer:///com/hp/hpl/jena/reasoner/rulesys/LPBackwardRuleInfGraph/LPBackwardRuleInfGraph$initializer|",
+    "called": "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///com/hp/hpl/jena/reasoner/rulesys/LPBackwardRuleInfGraph/class$(java.lang.String)|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "commons-logging:commons-logging:1.1.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.hp.hpl.jena:jena:2.6.0",
+    "coordinatesV2": "com.hp.hpl.jena:jena:2.5.7",
+    "caller": "|java+initializer:///com/hp/hpl/jena/util/FileUtils/FileUtils$initializer|",
+    "called": "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/logging/Log/warn(java.lang.Object)|",
+      "|java+method:///com/hp/hpl/jena/util/FileUtils/class$(java.lang.String)|",
+      "|java+method:///java/nio/charset/Charset/forName(java.lang.String)|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String)|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///java/nio/charset/Charset/forName(java.lang.String)|"
+    ],
+    "affectedLib": "commons-logging:commons-logging:1.1.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.hp.hpl.jena:jena:2.6.0",
+    "coordinatesV2": "com.hp.hpl.jena:jena:2.5.7",
+    "caller": "|java+initializer:///com/hp/hpl/jena/graph/query/PatternStageBase/PatternStageBase$initializer|",
+    "called": "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|",
+    "v1Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///com/hp/hpl/jena/JenaRuntime/getSystemProperty(java.lang.String,java.lang.String)|",
+      "|java+method:///com/hp/hpl/jena/graph/query/PatternStageBase/class$(java.lang.String)|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///com/hp/hpl/jena/JenaRuntime/getSystemProperty(java.lang.String,java.lang.String)|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|"
+    ],
+    "affectedLib": "commons-logging:commons-logging:1.1.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.hp.hpl.jena:jena:2.6.0",
+    "coordinatesV2": "com.hp.hpl.jena:jena:2.5.7",
+    "caller": "|java+method:///com/hp/hpl/jena/n3/JenaReaderBase/checkReader(java.io.Reader)|",
+    "called": "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///java/lang/String/equalsIgnoreCase(java.lang.String)|",
+      "|java+method:///org/apache/commons/logging/Log/warn(java.lang.Object)|",
+      "|java+method:///java/io/FileReader/getEncoding()|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/String/equalsIgnoreCase(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String)|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///java/io/FileReader/getEncoding()|",
+      "|java+method:///java/lang/Object/getClass()|"
+    ],
+    "affectedLib": "commons-logging:commons-logging:1.1.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.hp.hpl.jena:jena:2.6.0",
+    "coordinatesV2": "com.hp.hpl.jena:jena:2.5.7",
+    "caller": "|java+initializer:///com/hp/hpl/jena/shared/LockMRSW/LockMRSW$initializer|",
+    "called": "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///com/hp/hpl/jena/shared/LockMRSW/class$(java.lang.String)|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "commons-logging:commons-logging:1.1.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.hp.hpl.jena:jena:2.6.0",
+    "coordinatesV2": "com.hp.hpl.jena:jena:2.5.7",
+    "caller": "|java+initializer:///com/hp/hpl/jena/util/tuple/TupleSet/TupleSet$initializer|",
+    "called": "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|",
+      "|java+method:///com/hp/hpl/jena/util/tuple/TupleSet/class$(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "commons-logging:commons-logging:1.1.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.hp.hpl.jena:jena:2.6.0",
+    "coordinatesV2": "com.hp.hpl.jena:jena:2.5.7",
+    "caller": "|java+initializer:///com/hp/hpl/jena/rdf/model/impl/NTripleReader/NTripleReader$initializer|",
+    "called": "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///com/hp/hpl/jena/rdf/model/impl/NTripleReader/class$(java.lang.String)|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "commons-logging:commons-logging:1.1.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.hp.hpl.jena:jena:2.6.0",
+    "coordinatesV2": "com.hp.hpl.jena:jena:2.5.7",
+    "caller": "|java+initializer:///com/hp/hpl/jena/util/cache/RandCache/RandCache$initializer|",
+    "called": "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///com/hp/hpl/jena/util/cache/RandCache/class$(java.lang.String)|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "commons-logging:commons-logging:1.1.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.hp.hpl.jena:jena:2.6.0",
+    "coordinatesV2": "com.hp.hpl.jena:jena:2.5.7",
+    "caller": "|java+initializer:///com/hp/hpl/jena/reasoner/rulesys/impl/LPBRuleEngine/LPBRuleEngine$initializer|",
+    "called": "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///com/hp/hpl/jena/reasoner/rulesys/impl/LPBRuleEngine/class$(java.lang.String)|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "commons-logging:commons-logging:1.1.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.hp.hpl.jena:jena:2.6.0",
+    "coordinatesV2": "com.hp.hpl.jena:jena:2.5.7",
+    "caller": "|java+initializer:///com/hp/hpl/jena/db/impl/ResultSetTripleIterator/ResultSetTripleIterator$initializer|",
+    "called": "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///com/hp/hpl/jena/db/impl/ResultSetTripleIterator/class$(java.lang.String)|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "commons-logging:commons-logging:1.1.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.hp.hpl.jena:jena:2.6.0",
+    "coordinatesV2": "com.hp.hpl.jena:jena:2.5.7",
+    "caller": "|java+method:///com/hp/hpl/jena/util/LocationMapper/initFromPath(java.lang.String,boolean)|",
+    "called": "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/logging/Log/debug(java.lang.Object)|",
+      "|java+method:///org/apache/commons/logging/Log/warn(java.lang.Object)|",
+      "|java+method:///com/hp/hpl/jena/util/LocationMapper/class$(java.lang.String)|",
+      "|java+method:///java/lang/String/length()|",
+      "|java+method:///com/hp/hpl/jena/util/FileManager/addLocatorClassLoader(java.lang.ClassLoader)|",
+      "|java+method:///java/lang/StringBuffer/toString()|",
+      "|java+method:///com/hp/hpl/jena/util/LocationMapper/processConfig(com.hp.hpl.jena.rdf.model.Model)|",
+      "|java+method:///com/hp/hpl/jena/util/FileManager/openNoMap(java.lang.String)|",
+      "|java+method:///java/util/StringTokenizer/nextToken()|",
+      "|java+method:///java/util/StringTokenizer/hasMoreTokens()|",
+      "|java+constructor:///com/hp/hpl/jena/util/FileManager/FileManager()|",
+      "|java+method:///com/hp/hpl/jena/rdf/model/Model/read(java.io.InputStream,java.lang.String,java.lang.String)|",
+      "|java+method:///com/hp/hpl/jena/shared/JenaException/getMessage()|",
+      "|java+constructor:///java/util/StringTokenizer/StringTokenizer(java.lang.String,java.lang.String)|",
+      "|java+method:///com/hp/hpl/jena/rdf/model/ModelFactory/createDefaultModel()|",
+      "|java+method:///com/hp/hpl/jena/util/FileUtils/guessLang(java.lang.String)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///java/lang/Class/getClassLoader()|",
+      "|java+method:///com/hp/hpl/jena/util/FileManager/addLocatorFile()|",
+      "|java+method:///java/lang/StringBuffer/append(java.lang.String)|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|",
+      "|java+constructor:///java/lang/StringBuffer/StringBuffer()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String)|",
+      "|java+method:///com/hp/hpl/jena/util/FileManager/addLocatorClassLoader(java.lang.ClassLoader)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///com/hp/hpl/jena/util/LocationMapper/processConfig(com.hp.hpl.jena.rdf.model.Model)|",
+      "|java+method:///com/hp/hpl/jena/util/FileManager/openNoMap(java.lang.String)|",
+      "|java+method:///java/util/StringTokenizer/nextToken()|",
+      "|java+method:///com/hp/hpl/jena/util/FileManager/addLocatorFile()|",
+      "|java+method:///java/util/StringTokenizer/hasMoreTokens()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///com/hp/hpl/jena/util/FileManager/FileManager()|",
+      "|java+method:///com/hp/hpl/jena/rdf/model/Model/read(java.io.InputStream,java.lang.String,java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///com/hp/hpl/jena/shared/JenaException/getMessage()|",
+      "|java+constructor:///java/util/StringTokenizer/StringTokenizer(java.lang.String,java.lang.String)|",
+      "|java+method:///java/lang/String/length()|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///com/hp/hpl/jena/rdf/model/ModelFactory/createDefaultModel()|",
+      "|java+method:///com/hp/hpl/jena/util/FileUtils/guessLang(java.lang.String)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///java/lang/Class/getClassLoader()|"
+    ],
+    "affectedLib": "commons-logging:commons-logging:1.1.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.hp.hpl.jena:jena:2.6.0",
+    "coordinatesV2": "com.hp.hpl.jena:jena:2.5.7",
+    "caller": "|java+initializer:///com/hp/hpl/jena/reasoner/rulesys/BasicForwardRuleInfGraph/BasicForwardRuleInfGraph$initializer|",
+    "called": "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///com/hp/hpl/jena/reasoner/rulesys/BasicForwardRuleInfGraph/class$(java.lang.String)|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "commons-logging:commons-logging:1.1.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.hp.hpl.jena:jena:2.6.0",
+    "coordinatesV2": "com.hp.hpl.jena:jena:2.5.7",
+    "caller": "|java+initializer:///com/hp/hpl/jena/ontology/impl/OntModelImpl/OntModelImpl$initializer|",
+    "called": "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///com/hp/hpl/jena/ontology/impl/OntModelImpl/class$(java.lang.String)|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "commons-logging:commons-logging:1.1.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.hp.hpl.jena:jena:2.6.0",
+    "coordinatesV2": "com.hp.hpl.jena:jena:2.5.7",
+    "caller": "|java+initializer:///com/hp/hpl/jena/db/impl/PSet_ReifStore_RDB/PSet_ReifStore_RDB$initializer|",
+    "called": "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///com/hp/hpl/jena/db/impl/PSet_ReifStore_RDB/class$(java.lang.String)|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "commons-logging:commons-logging:1.1.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.hp.hpl.jena:jena:2.6.0",
+    "coordinatesV2": "com.hp.hpl.jena:jena:2.5.7",
+    "caller": "|java+initializer:///com/hp/hpl/jena/xmloutput/impl/BaseXMLWriter/BaseXMLWriter$initializer|",
+    "called": "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///com/hp/hpl/jena/JenaRuntime/getSystemProperty(java.lang.String)|",
+      "|java+method:///com/hp/hpl/jena/xmloutput/impl/BaseXMLWriter/class$(java.lang.String)|",
+      "|java+method:///com/hp/hpl/jena/iri/IRIFactory/jenaImplementation()|",
+      "|java+method:///java/lang/String/toCharArray()|",
+      "|java+method:///com/hp/hpl/jena/vocabulary/RDF/getURI()|",
+      "|java+constructor:///java/util/HashSet/HashSet()|",
+      "|java+method:///java/util/Set/add(java.lang.Object)|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|",
+      "|java+constructor:///com/hp/hpl/jena/rdf/model/impl/RDFDefaultErrorHandler/RDFDefaultErrorHandler()|",
+      "|java+constructor:///com/hp/hpl/jena/xmloutput/impl/BaseXMLWriter$1/BaseXMLWriter$1()|",
+      "|java+method:///java/util/regex/Pattern/compile(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///com/hp/hpl/jena/JenaRuntime/getSystemProperty(java.lang.String)|",
+      "|java+method:///com/hp/hpl/jena/iri/IRIFactory/jenaImplementation()|",
+      "|java+method:///java/lang/String/toCharArray()|",
+      "|java+method:///com/hp/hpl/jena/vocabulary/RDF/getURI()|",
+      "|java+constructor:///java/util/HashSet/HashSet()|",
+      "|java+method:///java/util/Set/add(java.lang.Object)|",
+      "|java+constructor:///com/hp/hpl/jena/rdf/model/impl/RDFDefaultErrorHandler/RDFDefaultErrorHandler()|",
+      "|java+constructor:///com/hp/hpl/jena/xmloutput/impl/BaseXMLWriter$1/BaseXMLWriter$1()|",
+      "|java+method:///java/util/regex/Pattern/compile(java.lang.String)|"
+    ],
+    "affectedLib": "commons-logging:commons-logging:1.1.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.hp.hpl.jena:jena:2.6.0",
+    "coordinatesV2": "com.hp.hpl.jena:jena:2.5.7",
+    "caller": "|java+initializer:///com/hp/hpl/jena/util/LocatorClassLoader/LocatorClassLoader$initializer|",
+    "called": "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///com/hp/hpl/jena/util/LocatorClassLoader/class$(java.lang.String)|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "commons-logging:commons-logging:1.1.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.hp.hpl.jena:jena:2.6.0",
+    "coordinatesV2": "com.hp.hpl.jena:jena:2.5.7",
+    "caller": "|java+initializer:///com/hp/hpl/jena/regression/Regression/Regression$initializer|",
+    "called": "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///com/hp/hpl/jena/regression/Regression/class$(java.lang.String)|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "commons-logging:commons-logging:1.1.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.hp.hpl.jena:jena:2.6.0",
+    "coordinatesV2": "com.hp.hpl.jena:jena:2.5.7",
+    "caller": "|java+initializer:///com/hp/hpl/jena/reasoner/rulesys/impl/BFRuleContext/BFRuleContext$initializer|",
+    "called": "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///com/hp/hpl/jena/reasoner/rulesys/impl/BFRuleContext/class$(java.lang.String)|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "commons-logging:commons-logging:1.1.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.hp.hpl.jena:jena:2.6.0",
+    "coordinatesV2": "com.hp.hpl.jena:jena:2.5.7",
+    "caller": "|java+initializer:///com/hp/hpl/jena/util/junit/Manifest/Manifest$initializer|",
+    "called": "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///com/hp/hpl/jena/util/junit/Manifest/class$(java.lang.String)|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "commons-logging:commons-logging:1.1.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.hp.hpl.jena:jena:2.6.0",
+    "coordinatesV2": "com.hp.hpl.jena:jena:2.5.7",
+    "caller": "|java+initializer:///com/hp/hpl/jena/db/impl/DBQueryStageCompiler/DBQueryStageCompiler$initializer|",
+    "called": "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///com/hp/hpl/jena/db/impl/DBQueryStageCompiler/class$(java.lang.String)|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "commons-logging:commons-logging:1.1.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.hp.hpl.jena:jena:2.6.0",
+    "coordinatesV2": "com.hp.hpl.jena:jena:2.5.7",
+    "caller": "|java+initializer:///com/hp/hpl/jena/reasoner/rulesys/impl/LPInterpreter/LPInterpreter$initializer|",
+    "called": "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///com/hp/hpl/jena/reasoner/rulesys/impl/LPInterpreter/class$(java.lang.String)|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "commons-logging:commons-logging:1.1.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.hp.hpl.jena:jena:2.6.0",
+    "coordinatesV2": "com.hp.hpl.jena:jena:2.5.7",
+    "caller": "|java+initializer:///com/hp/hpl/jena/reasoner/rulesys/impl/RETEEngine/RETEEngine$initializer|",
+    "called": "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///com/hp/hpl/jena/reasoner/rulesys/impl/RETEEngine/class$(java.lang.String)|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "commons-logging:commons-logging:1.1.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.hp.hpl.jena:jena:2.6.0",
+    "coordinatesV2": "com.hp.hpl.jena:jena:2.5.7",
+    "caller": "|java+initializer:///com/hp/hpl/jena/rdf/model/impl/RDFDefaultErrorHandler/RDFDefaultErrorHandler$initializer|",
+    "called": "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///com/hp/hpl/jena/rdf/model/impl/RDFDefaultErrorHandler/class$(java.lang.String)|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "commons-logging:commons-logging:1.1.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.hp.hpl.jena:jena:2.6.0",
+    "coordinatesV2": "com.hp.hpl.jena:jena:2.5.7",
+    "caller": "|java+initializer:///com/hp/hpl/jena/db/impl/ResultSetIterator/ResultSetIterator$initializer|",
+    "called": "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///com/hp/hpl/jena/db/impl/ResultSetIterator/class$(java.lang.String)|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "commons-logging:commons-logging:1.1.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.hp.hpl.jena:jena:2.6.0",
+    "coordinatesV2": "com.hp.hpl.jena:jena:2.5.7",
+    "caller": "|java+initializer:///com/hp/hpl/jena/util/LocationMapper/LocationMapper$initializer|",
+    "called": "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///com/hp/hpl/jena/util/LocationMapper/class$(java.lang.String)|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "commons-logging:commons-logging:1.1.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.hp.hpl.jena:jena:2.6.0",
+    "coordinatesV2": "com.hp.hpl.jena:jena:2.5.7",
+    "caller": "|java+method:///com/hp/hpl/jena/rdf/arp/JenaReader/setProperty(java.lang.String,java.lang.Object)|",
+    "called": "|java+constructor:///org/xml/sax/SAXNotSupportedException/SAXNotSupportedException(java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///com/hp/hpl/jena/shared/JenaException/JenaException(java.lang.Throwable)|",
+      "|java+method:///org/apache/xerces/parsers/SAXParser/getFeature(java.lang.String)|",
+      "|java+constructor:///org/xml/sax/SAXNotSupportedException/SAXNotSupportedException(java.lang.String)|",
+      "|java+method:///org/apache/xerces/parsers/SAXParser/setProperty(java.lang.String,java.lang.Object)|",
+      "|java+method:///com/hp/hpl/jena/rdf/arp/JenaReader/setArpProperty(java.lang.String,java.lang.Object)|",
+      "|java+method:///java/lang/StringBuffer/toString()|",
+      "|java+method:///com/hp/hpl/jena/rdf/arp/impl/RDFXMLParser/getSAXParser()|",
+      "|java+method:///org/apache/xerces/parsers/SAXParser/getProperty(java.lang.String)|",
+      "|java+method:///java/lang/String/substring(int)|",
+      "|java+method:///java/lang/String/startsWith(java.lang.String)|",
+      "|java+constructor:///java/lang/Boolean/Boolean(boolean)|",
+      "|java+method:///org/apache/xerces/parsers/SAXParser/setFeature(java.lang.String,boolean)|",
+      "|java+method:///java/lang/StringBuffer/append(java.lang.String)|",
+      "|java+constructor:///com/hp/hpl/jena/shared/UnknownPropertyException/UnknownPropertyException(java.lang.String)|",
+      "|java+method:///java/lang/Boolean/booleanValue()|",
+      "|java+method:///com/hp/hpl/jena/rdf/model/RDFErrorHandler/error(java.lang.Exception)|",
+      "|java+constructor:///java/lang/StringBuffer/StringBuffer()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/hp/hpl/jena/shared/JenaException/JenaException(java.lang.Throwable)|",
+      "|java+method:///org/apache/xerces/parsers/SAXParser/getFeature(java.lang.String)|",
+      "|java+constructor:///org/xml/sax/SAXNotSupportedException/SAXNotSupportedException(java.lang.String)|",
+      "|java+method:///org/apache/xerces/parsers/SAXParser/setProperty(java.lang.String,java.lang.Object)|",
+      "|java+method:///com/hp/hpl/jena/rdf/arp/impl/RDFXMLParser/getSAXParser()|",
+      "|java+method:///java/lang/String/substring(int)|",
+      "|java+method:///java/lang/String/startsWith(java.lang.String)|",
+      "|java+method:///org/apache/xerces/parsers/SAXParser/setFeature(java.lang.String,boolean)|",
+      "|java+constructor:///java/lang/Boolean/Boolean(boolean)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///com/hp/hpl/jena/rdf/arp/JenaReader/setArpProperty(java.lang.String,java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/apache/xerces/parsers/SAXParser/getProperty(java.lang.String)|",
+      "|java+constructor:///com/hp/hpl/jena/shared/UnknownPropertyException/UnknownPropertyException(java.lang.String)|",
+      "|java+method:///java/lang/Boolean/booleanValue()|",
+      "|java+method:///com/hp/hpl/jena/rdf/model/RDFErrorHandler/error(java.lang.Exception)|"
+    ],
+    "affectedLib": "xerces:xmlParserAPIs:2.0.2",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.hp.hpl.jena:jena:2.6.0",
+    "coordinatesV2": "com.hp.hpl.jena:jena:2.5.7",
+    "caller": "|java+method:///com/hp/hpl/jena/rdf/arp/impl/SAX2RDFImpl/endElement(java.lang.String,java.lang.String,java.lang.String)|",
+    "called": "|java+constructor:///org/xml/sax/SAXParseException/SAXParseException(java.lang.String,org.xml.sax.Locator)|",
+    "v1Body": [
+      "|java+method:///com/hp/hpl/jena/rdf/arp/impl/SAX2RDFImpl/getLocator()|",
+      "|java+method:///com/hp/hpl/jena/rdf/arp/impl/SAX2RDFImpl/close()|",
+      "|java+method:///com/hp/hpl/jena/rdf/arp/impl/XMLHandler/endElement(java.lang.String,java.lang.String,java.lang.String)|",
+      "|java+constructor:///org/xml/sax/SAXParseException/SAXParseException(java.lang.String,org.xml.sax.Locator)|",
+      "|java+method:///java/lang/StringBuffer/toString()|",
+      "|java+constructor:///java/lang/StringBuffer/StringBuffer()|",
+      "|java+method:///com/hp/hpl/jena/rdf/arp/impl/SAX2RDFImpl/fatalError(org.xml.sax.SAXParseException)|",
+      "|java+method:///java/lang/StringBuffer/append(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/hp/hpl/jena/rdf/arp/impl/SAX2RDFImpl/getLocator()|",
+      "|java+method:///com/hp/hpl/jena/rdf/arp/impl/XMLHandler/endElement(java.lang.String,java.lang.String,java.lang.String)|",
+      "|java+constructor:///org/xml/sax/SAXParseException/SAXParseException(java.lang.String,org.xml.sax.Locator)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///com/hp/hpl/jena/rdf/arp/impl/SAX2RDFImpl/fatalError(org.xml.sax.SAXParseException)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///com/hp/hpl/jena/rdf/arp/impl/SAX2RDFImpl/close()|"
+    ],
+    "affectedLib": "xerces:xmlParserAPIs:2.0.2",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.hp.hpl.jena:jena:2.5.7",
+    "coordinatesV2": "com.hp.hpl.jena:jena:2.6.0",
+    "caller": "|java+initializer:///jena/dbquery/dbquery$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///jena/dbquery/class$(java.lang.String)|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.5.6",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.hp.hpl.jena:jena:2.5.7",
+    "coordinatesV2": "com.hp.hpl.jena:jena:2.6.0",
+    "caller": "|java+initializer:///com/hp/hpl/jena/reasoner/rulesys/impl/FRuleEngine/FRuleEngine$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///com/hp/hpl/jena/reasoner/rulesys/impl/FRuleEngine/class$(java.lang.String)|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.5.6",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.hp.hpl.jena:jena:2.5.7",
+    "coordinatesV2": "com.hp.hpl.jena:jena:2.6.0",
+    "caller": "|java+initializer:///com/hp/hpl/jena/db/impl/SQLCache/SQLCache$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///com/hp/hpl/jena/db/impl/SQLCache/class$(java.lang.String)|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.5.6",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.hp.hpl.jena:jena:2.5.7",
+    "coordinatesV2": "com.hp.hpl.jena:jena:2.6.0",
+    "caller": "|java+initializer:///com/hp/hpl/jena/regression/testNTripleReader/testNTripleReader$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///com/hp/hpl/jena/regression/testNTripleReader/class$(java.lang.String)|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.5.6",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.hp.hpl.jena:jena:2.5.7",
+    "coordinatesV2": "com.hp.hpl.jena:jena:2.6.0",
+    "caller": "|java+initializer:///com/hp/hpl/jena/reasoner/rulesys/impl/RETETerminal/RETETerminal$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///com/hp/hpl/jena/reasoner/rulesys/impl/RETETerminal/class$(java.lang.String)|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.5.6",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.hp.hpl.jena:jena:2.5.7",
+    "coordinatesV2": "com.hp.hpl.jena:jena:2.6.0",
+    "caller": "|java+method:///com/hp/hpl/jena/util/ModelLoader/loadModel(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///com/hp/hpl/jena/util/ModelLoader/connectToDB(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)|",
+      "|java+method:///com/hp/hpl/jena/util/FileManager/get()|",
+      "|java+method:///com/hp/hpl/jena/util/ModelLoader/class$(java.lang.String)|",
+      "|java+method:///org/apache/commons/logging/Log/warn(java.lang.Object,java.lang.Throwable)|",
+      "|java+method:///com/hp/hpl/jena/rdf/model/ModelFactory/createDefaultModel()|",
+      "|java+method:///org/apache/commons/logging/Log/fatal(java.lang.Object)|",
+      "|java+method:///com/hp/hpl/jena/util/ModelLoader/guessLang(java.lang.String)|",
+      "|java+method:///com/hp/hpl/jena/util/FileManager/readModel(com.hp.hpl.jena.rdf.model.Model,java.lang.String,java.lang.String,java.lang.String)|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|",
+      "|java+method:///com/hp/hpl/jena/rdf/model/Model/setReaderClassName(java.lang.String,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/hp/hpl/jena/util/ModelLoader/connectToDB(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)|",
+      "|java+method:///com/hp/hpl/jena/util/FileManager/get()|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///com/hp/hpl/jena/rdf/model/ModelFactory/createDefaultModel()|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String)|",
+      "|java+method:///com/hp/hpl/jena/util/ModelLoader/guessLang(java.lang.String)|",
+      "|java+method:///com/hp/hpl/jena/util/FileManager/readModel(com.hp.hpl.jena.rdf.model.Model,java.lang.String,java.lang.String,java.lang.String)|",
+      "|java+method:///com/hp/hpl/jena/rdf/model/Model/setReaderClassName(java.lang.String,java.lang.String)|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///java/lang/Class/getName()|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.5.6",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.hp.hpl.jena:jena:2.5.7",
+    "coordinatesV2": "com.hp.hpl.jena:jena:2.6.0",
+    "caller": "|java+initializer:///com/hp/hpl/jena/reasoner/rulesys/OWLFBRuleReasoner/OWLFBRuleReasoner$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///com/hp/hpl/jena/reasoner/rulesys/OWLFBRuleReasoner/class$(java.lang.String)|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.5.6",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.hp.hpl.jena:jena:2.5.7",
+    "coordinatesV2": "com.hp.hpl.jena:jena:2.6.0",
+    "caller": "|java+initializer:///com/hp/hpl/jena/db/impl/ResultSetReifIterator/ResultSetReifIterator$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///com/hp/hpl/jena/db/impl/ResultSetReifIterator/class$(java.lang.String)|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.5.6",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.hp.hpl.jena:jena:2.5.7",
+    "coordinatesV2": "com.hp.hpl.jena:jena:2.6.0",
+    "caller": "|java+initializer:///com/hp/hpl/jena/reasoner/rulesys/Functor/Functor$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+constructor:///com/hp/hpl/jena/reasoner/rulesys/Functor$1/Functor$1()|",
+      "|java+method:///com/hp/hpl/jena/reasoner/rulesys/Functor/class$(java.lang.String)|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+constructor:///com/hp/hpl/jena/reasoner/rulesys/Functor$1/Functor$1()|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.5.6",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.hp.hpl.jena:jena:2.5.7",
+    "coordinatesV2": "com.hp.hpl.jena:jena:2.6.0",
+    "caller": "|java+initializer:///com/hp/hpl/jena/rdf/model/impl/NTripleWriter/NTripleWriter$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///com/hp/hpl/jena/rdf/model/impl/NTripleWriter/class$(java.lang.String)|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.5.6",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.hp.hpl.jena:jena:2.5.7",
+    "coordinatesV2": "com.hp.hpl.jena:jena:2.6.0",
+    "caller": "|java+method:///com/hp/hpl/jena/n3/JenaReaderBase/read(com.hp.hpl.jena.rdf.model.Model,java.lang.String)|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+constructor:///com/hp/hpl/jena/shared/JenaException/JenaException(java.lang.Throwable)|",
+      "|java+method:///org/apache/commons/logging/Log/warn(java.lang.Object)|",
+      "|java+constructor:///java/net/URL/URL(java.lang.String)|",
+      "|java+constructor:///java/io/InputStreamReader/InputStreamReader(java.io.InputStream,java.lang.String)|",
+      "|java+method:///java/net/URLConnection/getInputStream()|",
+      "|java+method:///java/net/URLConnection/getContentEncoding()|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///com/hp/hpl/jena/n3/JenaReaderBase/read(com.hp.hpl.jena.rdf.model.Model,java.io.Reader,java.lang.String)|",
+      "|java+method:///java/net/URL/openConnection()|",
+      "|java+method:///com/hp/hpl/jena/rdf/model/RDFErrorHandler/error(java.lang.Exception)|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/hp/hpl/jena/shared/JenaException/JenaException(java.lang.Throwable)|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String)|",
+      "|java+constructor:///java/io/InputStreamReader/InputStreamReader(java.io.InputStream,java.lang.String)|",
+      "|java+method:///java/net/URLConnection/getInputStream()|",
+      "|java+method:///java/net/URLConnection/getContentEncoding()|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///com/hp/hpl/jena/rdf/model/RDFErrorHandler/error(java.lang.Exception)|",
+      "|java+method:///com/hp/hpl/jena/n3/JenaReaderBase/read(com.hp.hpl.jena.rdf.model.Model,java.io.Reader,java.lang.String)|",
+      "|java+method:///java/net/URL/openConnection()|",
+      "|java+constructor:///java/net/URL/URL(java.lang.String)|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.5.6",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.hp.hpl.jena:jena:2.5.7",
+    "coordinatesV2": "com.hp.hpl.jena:jena:2.6.0",
+    "caller": "|java+initializer:///com/hp/hpl/jena/util/ModelLoader/ModelLoader$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///com/hp/hpl/jena/util/ModelLoader/class$(java.lang.String)|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.5.6",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.hp.hpl.jena:jena:2.5.7",
+    "coordinatesV2": "com.hp.hpl.jena:jena:2.6.0",
+    "caller": "|java+initializer:///com/hp/hpl/jena/ontology/impl/OntResourceImpl/OntResourceImpl$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+constructor:///com/hp/hpl/jena/ontology/impl/OntResourceImpl$1/OntResourceImpl$1()|",
+      "|java+method:///com/hp/hpl/jena/vocabulary/RDFS/getURI()|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|",
+      "|java+method:///com/hp/hpl/jena/ontology/impl/OntResourceImpl/class$(java.lang.String)|",
+      "|java+method:///com/hp/hpl/jena/vocabulary/RDF/getURI()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/hp/hpl/jena/ontology/impl/OntResourceImpl$1/OntResourceImpl$1()|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///com/hp/hpl/jena/vocabulary/RDFS/getURI()|",
+      "|java+method:///com/hp/hpl/jena/vocabulary/RDF/getURI()|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.5.6",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.hp.hpl.jena:jena:2.5.7",
+    "coordinatesV2": "com.hp.hpl.jena:jena:2.6.0",
+    "caller": "|java+initializer:///com/hp/hpl/jena/xmloutput/impl/Unparser/Unparser$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///java/lang/String/length()|",
+      "|java+method:///com/hp/hpl/jena/vocabulary/RDF/getURI()|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|",
+      "|java+constructor:///com/hp/hpl/jena/rdf/model/impl/PropertyImpl/PropertyImpl(java.lang.String,java.lang.String)|",
+      "|java+constructor:///java/lang/Integer/Integer(int)|",
+      "|java+method:///com/hp/hpl/jena/rdf/model/Property/getNameSpace()|",
+      "|java+method:///com/hp/hpl/jena/xmloutput/impl/Unparser/class$(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/hp/hpl/jena/vocabulary/RDF/getURI()|",
+      "|java+method:///com/hp/hpl/jena/rdf/model/Property/getNameSpace()|",
+      "|java+constructor:///com/hp/hpl/jena/rdf/model/impl/PropertyImpl/PropertyImpl(java.lang.String,java.lang.String)|",
+      "|java+constructor:///java/lang/Integer/Integer(int)|",
+      "|java+method:///java/lang/String/length()|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.5.6",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.hp.hpl.jena:jena:2.5.7",
+    "coordinatesV2": "com.hp.hpl.jena:jena:2.6.0",
+    "caller": "|java+initializer:///com/hp/hpl/jena/util/LocatorURL/LocatorURL$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///com/hp/hpl/jena/util/LocatorURL/class$(java.lang.String)|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.5.6",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.hp.hpl.jena:jena:2.5.7",
+    "coordinatesV2": "com.hp.hpl.jena:jena:2.6.0",
+    "caller": "|java+method:///com/hp/hpl/jena/util/ModelLoader/loadModel(com.hp.hpl.jena.rdf.model.Model,java.lang.String,java.lang.String)|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///com/hp/hpl/jena/util/FileManager/get()|",
+      "|java+method:///com/hp/hpl/jena/util/ModelLoader/class$(java.lang.String)|",
+      "|java+method:///org/apache/commons/logging/Log/warn(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuffer/toString()|",
+      "|java+method:///com/hp/hpl/jena/util/FileManager/readModel(com.hp.hpl.jena.rdf.model.Model,java.lang.String,java.lang.String,java.lang.String)|",
+      "|java+method:///java/lang/StringBuffer/append(java.lang.String)|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|",
+      "|java+constructor:///java/lang/StringBuffer/StringBuffer()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/hp/hpl/jena/util/FileManager/get()|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///com/hp/hpl/jena/util/FileManager/readModel(com.hp.hpl.jena.rdf.model.Model,java.lang.String,java.lang.String,java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.5.6",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.hp.hpl.jena:jena:2.5.7",
+    "coordinatesV2": "com.hp.hpl.jena:jena:2.6.0",
+    "caller": "|java+initializer:///com/hp/hpl/jena/rdf/model/impl/RDFListImpl/RDFListImpl$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///com/hp/hpl/jena/rdf/model/impl/RDFListImpl/class$(java.lang.String)|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|",
+      "|java+constructor:///com/hp/hpl/jena/rdf/model/impl/RDFListImpl$1/RDFListImpl$1()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+constructor:///com/hp/hpl/jena/rdf/model/impl/RDFListImpl$1/RDFListImpl$1()|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.5.6",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.hp.hpl.jena:jena:2.5.7",
+    "coordinatesV2": "com.hp.hpl.jena:jena:2.6.0",
+    "caller": "|java+initializer:///com/hp/hpl/jena/db/impl/PSet_TripleStore_RDB/PSet_TripleStore_RDB$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///com/hp/hpl/jena/db/impl/PSet_TripleStore_RDB/class$(java.lang.String)|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.5.6",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.hp.hpl.jena:jena:2.5.7",
+    "coordinatesV2": "com.hp.hpl.jena:jena:2.6.0",
+    "caller": "|java+initializer:///com/hp/hpl/jena/n3/N3JenaWriterCommon/N3JenaWriterCommon$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///com/hp/hpl/jena/rdf/model/Property/getURI()|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+method:///com/hp/hpl/jena/n3/N3JenaWriterCommon/class$(java.lang.String)|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///com/hp/hpl/jena/rdf/model/Property/getURI()|",
+      "|java+constructor:///java/util/HashMap/HashMap()|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.5.6",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.hp.hpl.jena:jena:2.5.7",
+    "coordinatesV2": "com.hp.hpl.jena:jena:2.6.0",
+    "caller": "|java+method:///com/hp/hpl/jena/util/ModelLoader/connectToDB(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///java/lang/Class/forName(java.lang.String)|",
+      "|java+method:///com/hp/hpl/jena/db/ModelRDB/open(com.hp.hpl.jena.db.IDBConnection,java.lang.String)|",
+      "|java+method:///com/hp/hpl/jena/rdf/model/ModelFactory/createSimpleRDBConnection(java.lang.String,java.lang.String,java.lang.String,java.lang.String)|",
+      "|java+method:///org/apache/commons/logging/Log/error(java.lang.Object,java.lang.Throwable)|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|",
+      "|java+method:///java/lang/Class/newInstance()|",
+      "|java+method:///com/hp/hpl/jena/util/ModelLoader/class$(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Class/forName(java.lang.String)|",
+      "|java+method:///java/lang/Class/newInstance()|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///com/hp/hpl/jena/db/ModelRDB/open(com.hp.hpl.jena.db.IDBConnection,java.lang.String)|",
+      "|java+method:///com/hp/hpl/jena/rdf/model/ModelFactory/createSimpleRDBConnection(java.lang.String,java.lang.String,java.lang.String,java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.5.6",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.hp.hpl.jena:jena:2.5.7",
+    "coordinatesV2": "com.hp.hpl.jena:jena:2.6.0",
+    "caller": "|java+initializer:///com/hp/hpl/jena/reasoner/rulesys/Rule/Rule$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///com/hp/hpl/jena/reasoner/rulesys/Rule/class$(java.lang.String)|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.5.6",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.hp.hpl.jena:jena:2.5.7",
+    "coordinatesV2": "com.hp.hpl.jena:jena:2.6.0",
+    "caller": "|java+method:///com/hp/hpl/jena/util/junit/TestFactoryManifest/oneManifest(java.lang.String)|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///com/hp/hpl/jena/util/junit/Manifest/apply(com.hp.hpl.jena.util.junit.ManifestItemHandler)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/apache/commons/logging/Log/warn(java.lang.Object,java.lang.Throwable)|",
+      "|java+method:///com/hp/hpl/jena/shared/JenaException/getMessage()|",
+      "|java+method:///junit/framework/TestSuite/setName(java.lang.String)|",
+      "|java+method:///com/hp/hpl/jena/util/junit/TestFactoryManifest/oneManifest(java.lang.String)|",
+      "|java+method:///com/hp/hpl/jena/util/junit/Manifest/includedManifests()|",
+      "|java+constructor:///com/hp/hpl/jena/util/junit/Manifest/Manifest(java.lang.String)|",
+      "|java+method:///java/lang/StringBuffer/append(java.lang.String)|",
+      "|java+method:///com/hp/hpl/jena/util/junit/TestFactoryManifest/class$(java.lang.String)|",
+      "|java+method:///com/hp/hpl/jena/util/junit/Manifest/getName()|",
+      "|java+constructor:///junit/framework/TestSuite/TestSuite()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///com/hp/hpl/jena/util/junit/TestUtils/safeName(java.lang.String)|",
+      "|java+method:///junit/framework/TestSuite/addTest(junit.framework.Test)|",
+      "|java+method:///java/lang/StringBuffer/toString()|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|",
+      "|java+constructor:///java/lang/StringBuffer/StringBuffer()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/hp/hpl/jena/util/junit/Manifest/apply(com.hp.hpl.jena.util.junit.ManifestItemHandler)|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///junit/framework/TestSuite/setName(java.lang.String)|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///com/hp/hpl/jena/util/junit/TestFactoryManifest/oneManifest(java.lang.String)|",
+      "|java+method:///junit/framework/TestSuite/addTest(junit.framework.Test)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///com/hp/hpl/jena/util/junit/Manifest/includedManifests()|",
+      "|java+constructor:///com/hp/hpl/jena/util/junit/Manifest/Manifest(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///com/hp/hpl/jena/shared/JenaException/getMessage()|",
+      "|java+method:///com/hp/hpl/jena/util/junit/Manifest/getName()|",
+      "|java+constructor:///junit/framework/TestSuite/TestSuite()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///com/hp/hpl/jena/util/junit/TestUtils/safeName(java.lang.String)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.5.6",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.hp.hpl.jena:jena:2.5.7",
+    "coordinatesV2": "com.hp.hpl.jena:jena:2.6.0",
+    "caller": "|java+initializer:///com/hp/hpl/jena/db/impl/DriverRDB/DriverRDB$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///com/hp/hpl/jena/db/impl/DriverRDB/class$(java.lang.String)|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.5.6",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.hp.hpl.jena:jena:2.5.7",
+    "coordinatesV2": "com.hp.hpl.jena:jena:2.6.0",
+    "caller": "|java+method:///com/hp/hpl/jena/shared/uuid/JenaUUID/parse(java.lang.String)|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///com/hp/hpl/jena/shared/uuid/JenaUUID/class$(java.lang.String)|",
+      "|java+method:///com/hp/hpl/jena/shared/uuid/Bits/unpack(java.lang.String,int,int)|",
+      "|java+method:///org/apache/commons/logging/Log/warn(java.lang.Object)|",
+      "|java+method:///java/lang/String/charAt(int)|",
+      "|java+method:///com/hp/hpl/jena/shared/uuid/UUID_V4_Gen/parse$(java.lang.String)|",
+      "|java+constructor:///java/lang/UnsupportedOperationException/UnsupportedOperationException(java.lang.String)|",
+      "|java+method:///java/lang/String/substring(int)|",
+      "|java+method:///java/lang/StringBuffer/append(int)|",
+      "|java+method:///java/lang/String/startsWith(java.lang.String)|",
+      "|java+constructor:///com/hp/hpl/jena/shared/uuid/JenaUUID$FormatException/JenaUUID$FormatException(java.lang.String)|",
+      "|java+method:///java/lang/String/toLowerCase()|",
+      "|java+method:///java/lang/String/length()|",
+      "|java+method:///com/hp/hpl/jena/shared/uuid/UUID_V1_Gen/parse$(java.lang.String)|",
+      "|java+method:///com/hp/hpl/jena/shared/uuid/JenaUUID/nil()|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuffer/toString()|",
+      "|java+method:///com/hp/hpl/jena/shared/uuid/JenaUUID/strNil()|",
+      "|java+method:///java/lang/StringBuffer/append(java.lang.String)|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|",
+      "|java+constructor:///java/lang/StringBuffer/StringBuffer()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/hp/hpl/jena/shared/uuid/UUID_V4_Gen/parse$(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///java/lang/UnsupportedOperationException/UnsupportedOperationException(java.lang.String)|",
+      "|java+method:///java/lang/String/substring(int)|",
+      "|java+method:///java/lang/String/startsWith(java.lang.String)|",
+      "|java+method:///com/hp/hpl/jena/shared/uuid/JenaUUID/strNil()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///com/hp/hpl/jena/shared/uuid/Bits/unpack(java.lang.String,int,int)|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String)|",
+      "|java+constructor:///com/hp/hpl/jena/shared/uuid/JenaUUID$FormatException/JenaUUID$FormatException(java.lang.String)|",
+      "|java+method:///java/lang/String/toLowerCase()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/String/charAt(int)|",
+      "|java+method:///java/lang/String/length()|",
+      "|java+method:///com/hp/hpl/jena/shared/uuid/UUID_V1_Gen/parse$(java.lang.String)|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///com/hp/hpl/jena/shared/uuid/JenaUUID/nil()|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.5.6",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.hp.hpl.jena:jena:2.5.7",
+    "coordinatesV2": "com.hp.hpl.jena:jena:2.6.0",
+    "caller": "|java+initializer:///com/hp/hpl/jena/util/FileManager/FileManager$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///com/hp/hpl/jena/util/FileManager/class$(java.lang.String)|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.5.6",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.hp.hpl.jena:jena:2.5.7",
+    "coordinatesV2": "com.hp.hpl.jena:jena:2.6.0",
+    "caller": "|java+initializer:///com/hp/hpl/jena/util/LocatorZip/LocatorZip$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///com/hp/hpl/jena/util/LocatorZip/class$(java.lang.String)|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.5.6",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.hp.hpl.jena:jena:2.5.7",
+    "coordinatesV2": "com.hp.hpl.jena:jena:2.6.0",
+    "caller": "|java+method:///jena/schemagen/getComment(com.hp.hpl.jena.rdf.model.Resource)|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/logging/Log/debug(java.lang.Object)|",
+      "|java+method:///com/hp/hpl/jena/rdf/model/NodeIterator/hasNext()|",
+      "|java+method:///java/lang/String/trim()|",
+      "|java+method:///com/hp/hpl/jena/rdf/model/Literal/getLexicalForm()|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///java/lang/StringBuffer/append(java.lang.String)|",
+      "|java+method:///com/hp/hpl/jena/ontology/OntModel/listObjectsOfProperty(com.hp.hpl.jena.rdf.model.Resource,com.hp.hpl.jena.rdf.model.Property)|",
+      "|java+method:///java/lang/StringBuffer/append(java.lang.Object)|",
+      "|java+method:///com/hp/hpl/jena/rdf/model/NodeIterator/nextNode()|",
+      "|java+method:///java/lang/StringBuffer/toString()|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|",
+      "|java+constructor:///java/lang/StringBuffer/StringBuffer()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+method:///com/hp/hpl/jena/rdf/model/NodeIterator/hasNext()|",
+      "|java+method:///com/hp/hpl/jena/rdf/model/Literal/getLexicalForm()|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///com/hp/hpl/jena/ontology/OntModel/listObjectsOfProperty(com.hp.hpl.jena.rdf.model.Resource,com.hp.hpl.jena.rdf.model.Property)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuffer/append(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuffer/StringBuffer()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/String/trim()|",
+      "|java+method:///com/hp/hpl/jena/rdf/model/NodeIterator/nextNode()|",
+      "|java+method:///java/lang/StringBuffer/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/lang/Object/getClass()|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.5.6",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.hp.hpl.jena:jena:2.5.7",
+    "coordinatesV2": "com.hp.hpl.jena:jena:2.6.0",
+    "caller": "|java+initializer:///com/hp/hpl/jena/util/LocatorFile/LocatorFile$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///com/hp/hpl/jena/util/LocatorFile/class$(java.lang.String)|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.5.6",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.hp.hpl.jena:jena:2.5.7",
+    "coordinatesV2": "com.hp.hpl.jena:jena:2.6.0",
+    "caller": "|java+initializer:///com/hp/hpl/jena/rdf/model/impl/PropertyImpl/PropertyImpl$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///com/hp/hpl/jena/rdf/model/impl/PropertyImpl/class$(java.lang.String)|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|",
+      "|java+constructor:///com/hp/hpl/jena/rdf/model/impl/PropertyImpl$1/PropertyImpl$1()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+constructor:///com/hp/hpl/jena/rdf/model/impl/PropertyImpl$1/PropertyImpl$1()|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.5.6",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.hp.hpl.jena:jena:2.5.7",
+    "coordinatesV2": "com.hp.hpl.jena:jena:2.6.0",
+    "caller": "|java+initializer:///com/hp/hpl/jena/reasoner/rulesys/impl/RETEConflictSet/RETEConflictSet$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///com/hp/hpl/jena/reasoner/rulesys/impl/RETEConflictSet/class$(java.lang.String)|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.5.6",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.hp.hpl.jena:jena:2.5.7",
+    "coordinatesV2": "com.hp.hpl.jena:jena:2.6.0",
+    "caller": "|java+initializer:///com/hp/hpl/jena/ontology/OntDocumentManager/OntDocumentManager$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///com/hp/hpl/jena/ontology/OntDocumentManager/class$(java.lang.String)|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.5.6",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.hp.hpl.jena:jena:2.5.7",
+    "coordinatesV2": "com.hp.hpl.jena:jena:2.6.0",
+    "caller": "|java+initializer:///com/hp/hpl/jena/rdf/arp/DOM2Model/DOM2Model$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|",
+      "|java+method:///com/hp/hpl/jena/rdf/arp/DOM2Model/class$(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.5.6",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.hp.hpl.jena:jena:2.5.7",
+    "coordinatesV2": "com.hp.hpl.jena:jena:2.6.0",
+    "caller": "|java+initializer:///com/hp/hpl/jena/reasoner/rulesys/FBRuleInfGraph/FBRuleInfGraph$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///com/hp/hpl/jena/reasoner/rulesys/FBRuleInfGraph/class$(java.lang.String)|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.5.6",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.hp.hpl.jena:jena:2.5.7",
+    "coordinatesV2": "com.hp.hpl.jena:jena:2.6.0",
+    "caller": "|java+initializer:///com/hp/hpl/jena/regression/testReaderInterface/testReaderInterface$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|",
+      "|java+method:///com/hp/hpl/jena/regression/testReaderInterface/class$(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.5.6",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.hp.hpl.jena:jena:2.5.7",
+    "coordinatesV2": "com.hp.hpl.jena:jena:2.6.0",
+    "caller": "|java+initializer:///com/hp/hpl/jena/reasoner/rulesys/LPBackwardRuleInfGraph/LPBackwardRuleInfGraph$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///com/hp/hpl/jena/reasoner/rulesys/LPBackwardRuleInfGraph/class$(java.lang.String)|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.5.6",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.hp.hpl.jena:jena:2.5.7",
+    "coordinatesV2": "com.hp.hpl.jena:jena:2.6.0",
+    "caller": "|java+initializer:///com/hp/hpl/jena/util/FileUtils/FileUtils$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/logging/Log/warn(java.lang.Object)|",
+      "|java+method:///com/hp/hpl/jena/util/FileUtils/class$(java.lang.String)|",
+      "|java+method:///java/nio/charset/Charset/forName(java.lang.String)|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String)|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///java/nio/charset/Charset/forName(java.lang.String)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.5.6",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.hp.hpl.jena:jena:2.5.7",
+    "coordinatesV2": "com.hp.hpl.jena:jena:2.6.0",
+    "caller": "|java+initializer:///com/hp/hpl/jena/graph/query/PatternStageBase/PatternStageBase$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///com/hp/hpl/jena/JenaRuntime/getSystemProperty(java.lang.String,java.lang.String)|",
+      "|java+method:///com/hp/hpl/jena/graph/query/PatternStageBase/class$(java.lang.String)|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///com/hp/hpl/jena/JenaRuntime/getSystemProperty(java.lang.String,java.lang.String)|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.5.6",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.hp.hpl.jena:jena:2.5.7",
+    "coordinatesV2": "com.hp.hpl.jena:jena:2.6.0",
+    "caller": "|java+method:///com/hp/hpl/jena/n3/JenaReaderBase/checkReader(java.io.Reader)|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///java/lang/String/equalsIgnoreCase(java.lang.String)|",
+      "|java+method:///org/apache/commons/logging/Log/warn(java.lang.Object)|",
+      "|java+method:///java/io/FileReader/getEncoding()|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/String/equalsIgnoreCase(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String)|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///java/io/FileReader/getEncoding()|",
+      "|java+method:///java/lang/Object/getClass()|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.5.6",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.hp.hpl.jena:jena:2.5.7",
+    "coordinatesV2": "com.hp.hpl.jena:jena:2.6.0",
+    "caller": "|java+initializer:///com/hp/hpl/jena/shared/LockMRSW/LockMRSW$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///com/hp/hpl/jena/shared/LockMRSW/class$(java.lang.String)|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.5.6",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.hp.hpl.jena:jena:2.5.7",
+    "coordinatesV2": "com.hp.hpl.jena:jena:2.6.0",
+    "caller": "|java+initializer:///com/hp/hpl/jena/util/tuple/TupleSet/TupleSet$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|",
+      "|java+method:///com/hp/hpl/jena/util/tuple/TupleSet/class$(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.5.6",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.hp.hpl.jena:jena:2.5.7",
+    "coordinatesV2": "com.hp.hpl.jena:jena:2.6.0",
+    "caller": "|java+initializer:///com/hp/hpl/jena/rdf/model/impl/NTripleReader/NTripleReader$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///com/hp/hpl/jena/rdf/model/impl/NTripleReader/class$(java.lang.String)|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.5.6",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.hp.hpl.jena:jena:2.5.7",
+    "coordinatesV2": "com.hp.hpl.jena:jena:2.6.0",
+    "caller": "|java+initializer:///com/hp/hpl/jena/util/cache/RandCache/RandCache$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///com/hp/hpl/jena/util/cache/RandCache/class$(java.lang.String)|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.5.6",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.hp.hpl.jena:jena:2.5.7",
+    "coordinatesV2": "com.hp.hpl.jena:jena:2.6.0",
+    "caller": "|java+initializer:///com/hp/hpl/jena/reasoner/rulesys/impl/LPBRuleEngine/LPBRuleEngine$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///com/hp/hpl/jena/reasoner/rulesys/impl/LPBRuleEngine/class$(java.lang.String)|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.5.6",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.hp.hpl.jena:jena:2.5.7",
+    "coordinatesV2": "com.hp.hpl.jena:jena:2.6.0",
+    "caller": "|java+initializer:///com/hp/hpl/jena/db/impl/ResultSetTripleIterator/ResultSetTripleIterator$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///com/hp/hpl/jena/db/impl/ResultSetTripleIterator/class$(java.lang.String)|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.5.6",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.hp.hpl.jena:jena:2.5.7",
+    "coordinatesV2": "com.hp.hpl.jena:jena:2.6.0",
+    "caller": "|java+method:///com/hp/hpl/jena/util/LocationMapper/initFromPath(java.lang.String,boolean)|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/logging/Log/debug(java.lang.Object)|",
+      "|java+method:///org/apache/commons/logging/Log/warn(java.lang.Object)|",
+      "|java+method:///com/hp/hpl/jena/util/LocationMapper/class$(java.lang.String)|",
+      "|java+method:///java/lang/String/length()|",
+      "|java+method:///com/hp/hpl/jena/util/FileManager/addLocatorClassLoader(java.lang.ClassLoader)|",
+      "|java+method:///java/lang/StringBuffer/toString()|",
+      "|java+method:///com/hp/hpl/jena/util/LocationMapper/processConfig(com.hp.hpl.jena.rdf.model.Model)|",
+      "|java+method:///com/hp/hpl/jena/util/FileManager/openNoMap(java.lang.String)|",
+      "|java+method:///java/util/StringTokenizer/nextToken()|",
+      "|java+method:///java/util/StringTokenizer/hasMoreTokens()|",
+      "|java+constructor:///com/hp/hpl/jena/util/FileManager/FileManager()|",
+      "|java+method:///com/hp/hpl/jena/rdf/model/Model/read(java.io.InputStream,java.lang.String,java.lang.String)|",
+      "|java+method:///com/hp/hpl/jena/shared/JenaException/getMessage()|",
+      "|java+constructor:///java/util/StringTokenizer/StringTokenizer(java.lang.String,java.lang.String)|",
+      "|java+method:///com/hp/hpl/jena/rdf/model/ModelFactory/createDefaultModel()|",
+      "|java+method:///com/hp/hpl/jena/util/FileUtils/guessLang(java.lang.String)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///java/lang/Class/getClassLoader()|",
+      "|java+method:///com/hp/hpl/jena/util/FileManager/addLocatorFile()|",
+      "|java+method:///java/lang/StringBuffer/append(java.lang.String)|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|",
+      "|java+constructor:///java/lang/StringBuffer/StringBuffer()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String)|",
+      "|java+method:///com/hp/hpl/jena/util/FileManager/addLocatorClassLoader(java.lang.ClassLoader)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///com/hp/hpl/jena/util/LocationMapper/processConfig(com.hp.hpl.jena.rdf.model.Model)|",
+      "|java+method:///com/hp/hpl/jena/util/FileManager/openNoMap(java.lang.String)|",
+      "|java+method:///java/util/StringTokenizer/nextToken()|",
+      "|java+method:///com/hp/hpl/jena/util/FileManager/addLocatorFile()|",
+      "|java+method:///java/util/StringTokenizer/hasMoreTokens()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///com/hp/hpl/jena/util/FileManager/FileManager()|",
+      "|java+method:///com/hp/hpl/jena/rdf/model/Model/read(java.io.InputStream,java.lang.String,java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///com/hp/hpl/jena/shared/JenaException/getMessage()|",
+      "|java+constructor:///java/util/StringTokenizer/StringTokenizer(java.lang.String,java.lang.String)|",
+      "|java+method:///java/lang/String/length()|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///com/hp/hpl/jena/rdf/model/ModelFactory/createDefaultModel()|",
+      "|java+method:///com/hp/hpl/jena/util/FileUtils/guessLang(java.lang.String)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///java/lang/Class/getClassLoader()|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.5.6",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.hp.hpl.jena:jena:2.5.7",
+    "coordinatesV2": "com.hp.hpl.jena:jena:2.6.0",
+    "caller": "|java+initializer:///com/hp/hpl/jena/reasoner/rulesys/BasicForwardRuleInfGraph/BasicForwardRuleInfGraph$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///com/hp/hpl/jena/reasoner/rulesys/BasicForwardRuleInfGraph/class$(java.lang.String)|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.5.6",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.hp.hpl.jena:jena:2.5.7",
+    "coordinatesV2": "com.hp.hpl.jena:jena:2.6.0",
+    "caller": "|java+initializer:///com/hp/hpl/jena/ontology/impl/OntModelImpl/OntModelImpl$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///com/hp/hpl/jena/ontology/impl/OntModelImpl/class$(java.lang.String)|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.5.6",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.hp.hpl.jena:jena:2.5.7",
+    "coordinatesV2": "com.hp.hpl.jena:jena:2.6.0",
+    "caller": "|java+initializer:///com/hp/hpl/jena/db/impl/PSet_ReifStore_RDB/PSet_ReifStore_RDB$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///com/hp/hpl/jena/db/impl/PSet_ReifStore_RDB/class$(java.lang.String)|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.5.6",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.hp.hpl.jena:jena:2.5.7",
+    "coordinatesV2": "com.hp.hpl.jena:jena:2.6.0",
+    "caller": "|java+initializer:///com/hp/hpl/jena/xmloutput/impl/BaseXMLWriter/BaseXMLWriter$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///com/hp/hpl/jena/JenaRuntime/getSystemProperty(java.lang.String)|",
+      "|java+method:///com/hp/hpl/jena/xmloutput/impl/BaseXMLWriter/class$(java.lang.String)|",
+      "|java+method:///com/hp/hpl/jena/iri/IRIFactory/jenaImplementation()|",
+      "|java+method:///java/lang/String/toCharArray()|",
+      "|java+method:///com/hp/hpl/jena/vocabulary/RDF/getURI()|",
+      "|java+constructor:///java/util/HashSet/HashSet()|",
+      "|java+method:///java/util/Set/add(java.lang.Object)|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|",
+      "|java+constructor:///com/hp/hpl/jena/rdf/model/impl/RDFDefaultErrorHandler/RDFDefaultErrorHandler()|",
+      "|java+constructor:///com/hp/hpl/jena/xmloutput/impl/BaseXMLWriter$1/BaseXMLWriter$1()|",
+      "|java+method:///java/util/regex/Pattern/compile(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///com/hp/hpl/jena/JenaRuntime/getSystemProperty(java.lang.String)|",
+      "|java+method:///com/hp/hpl/jena/iri/IRIFactory/jenaImplementation()|",
+      "|java+method:///java/lang/String/toCharArray()|",
+      "|java+method:///com/hp/hpl/jena/vocabulary/RDF/getURI()|",
+      "|java+constructor:///java/util/HashSet/HashSet()|",
+      "|java+method:///java/util/Set/add(java.lang.Object)|",
+      "|java+constructor:///com/hp/hpl/jena/rdf/model/impl/RDFDefaultErrorHandler/RDFDefaultErrorHandler()|",
+      "|java+constructor:///com/hp/hpl/jena/xmloutput/impl/BaseXMLWriter$1/BaseXMLWriter$1()|",
+      "|java+method:///java/util/regex/Pattern/compile(java.lang.String)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.5.6",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.hp.hpl.jena:jena:2.5.7",
+    "coordinatesV2": "com.hp.hpl.jena:jena:2.6.0",
+    "caller": "|java+initializer:///com/hp/hpl/jena/util/LocatorClassLoader/LocatorClassLoader$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///com/hp/hpl/jena/util/LocatorClassLoader/class$(java.lang.String)|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.5.6",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.hp.hpl.jena:jena:2.5.7",
+    "coordinatesV2": "com.hp.hpl.jena:jena:2.6.0",
+    "caller": "|java+initializer:///com/hp/hpl/jena/regression/Regression/Regression$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///com/hp/hpl/jena/regression/Regression/class$(java.lang.String)|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.5.6",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.hp.hpl.jena:jena:2.5.7",
+    "coordinatesV2": "com.hp.hpl.jena:jena:2.6.0",
+    "caller": "|java+initializer:///com/hp/hpl/jena/reasoner/rulesys/impl/BFRuleContext/BFRuleContext$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///com/hp/hpl/jena/reasoner/rulesys/impl/BFRuleContext/class$(java.lang.String)|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.5.6",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.hp.hpl.jena:jena:2.5.7",
+    "coordinatesV2": "com.hp.hpl.jena:jena:2.6.0",
+    "caller": "|java+initializer:///com/hp/hpl/jena/util/junit/Manifest/Manifest$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///com/hp/hpl/jena/util/junit/Manifest/class$(java.lang.String)|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.5.6",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.hp.hpl.jena:jena:2.5.7",
+    "coordinatesV2": "com.hp.hpl.jena:jena:2.6.0",
+    "caller": "|java+initializer:///com/hp/hpl/jena/db/impl/DBQueryStageCompiler/DBQueryStageCompiler$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///com/hp/hpl/jena/db/impl/DBQueryStageCompiler/class$(java.lang.String)|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.5.6",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.hp.hpl.jena:jena:2.5.7",
+    "coordinatesV2": "com.hp.hpl.jena:jena:2.6.0",
+    "caller": "|java+initializer:///com/hp/hpl/jena/reasoner/rulesys/impl/LPInterpreter/LPInterpreter$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///com/hp/hpl/jena/reasoner/rulesys/impl/LPInterpreter/class$(java.lang.String)|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.5.6",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.hp.hpl.jena:jena:2.5.7",
+    "coordinatesV2": "com.hp.hpl.jena:jena:2.6.0",
+    "caller": "|java+initializer:///com/hp/hpl/jena/reasoner/rulesys/impl/RETEEngine/RETEEngine$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///com/hp/hpl/jena/reasoner/rulesys/impl/RETEEngine/class$(java.lang.String)|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.5.6",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.hp.hpl.jena:jena:2.5.7",
+    "coordinatesV2": "com.hp.hpl.jena:jena:2.6.0",
+    "caller": "|java+initializer:///com/hp/hpl/jena/rdf/model/impl/RDFDefaultErrorHandler/RDFDefaultErrorHandler$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///com/hp/hpl/jena/rdf/model/impl/RDFDefaultErrorHandler/class$(java.lang.String)|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.5.6",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.hp.hpl.jena:jena:2.5.7",
+    "coordinatesV2": "com.hp.hpl.jena:jena:2.6.0",
+    "caller": "|java+initializer:///com/hp/hpl/jena/db/impl/ResultSetIterator/ResultSetIterator$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///com/hp/hpl/jena/db/impl/ResultSetIterator/class$(java.lang.String)|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.5.6",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.hp.hpl.jena:jena:2.5.7",
+    "coordinatesV2": "com.hp.hpl.jena:jena:2.6.0",
+    "caller": "|java+initializer:///com/hp/hpl/jena/util/LocationMapper/LocationMapper$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///com/hp/hpl/jena/util/LocationMapper/class$(java.lang.String)|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.5.6",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.hp.hpl.jena:jena:2.5.7",
+    "coordinatesV2": "com.hp.hpl.jena:jena:2.6.0",
+    "caller": "|java+method:///jena/dbquery/doSelectQuery(com.hp.hpl.jena.query.Query,com.hp.hpl.jena.query.QueryExecution,com.hp.hpl.jena.sparql.resultset.ResultsFormat)|",
+    "called": "|java+method:///com/hp/hpl/jena/query/ResultSetFormatter/out(java.io.OutputStream,com.hp.hpl.jena.query.ResultSet,com.hp.hpl.jena.shared.PrefixMapping)|",
+    "v1Body": [
+      "|java+method:///com/hp/hpl/jena/query/QueryExecution/execSelect()|",
+      "|java+method:///com/hp/hpl/jena/query/ResultSetFormatter/outputAsXML(java.io.OutputStream,com.hp.hpl.jena.query.ResultSet)|",
+      "|java+method:///org/apache/commons/logging/Log/warn(java.lang.Object)|",
+      "|java+method:///java/io/PrintStream/println(java.lang.String)|",
+      "|java+method:///com/hp/hpl/jena/rdf/model/Model/setNsPrefix(java.lang.String,java.lang.String)|",
+      "|java+method:///com/hp/hpl/jena/query/Query/getPrefixMapping()|",
+      "|java+method:///java/lang/StringBuffer/append(java.lang.Object)|",
+      "|java+method:///com/hp/hpl/jena/rdf/model/Model/setNsPrefixes(com.hp.hpl.jena.shared.PrefixMapping)|",
+      "|java+method:///java/lang/StringBuffer/toString()|",
+      "|java+method:///com/hp/hpl/jena/query/ResultSetFormatter/consume(com.hp.hpl.jena.query.ResultSet)|",
+      "|java+method:///java/lang/StringBuffer/append(int)|",
+      "|java+constructor:///java/lang/StringBuffer/StringBuffer()|",
+      "|java+method:///com/hp/hpl/jena/query/ResultSetFactory/makeRewindable(com.hp.hpl.jena.query.ResultSet)|",
+      "|java+method:///java/io/PrintStream/flush()|",
+      "|java+method:///com/hp/hpl/jena/query/ResultSetFormatter/toModel(com.hp.hpl.jena.query.ResultSet)|",
+      "|java+method:///com/hp/hpl/jena/query/ResultSetFormatter/out(java.io.OutputStream,com.hp.hpl.jena.query.ResultSet,com.hp.hpl.jena.shared.PrefixMapping)|",
+      "|java+method:///java/lang/StringBuffer/append(java.lang.String)|",
+      "|java+method:///com/hp/hpl/jena/rdf/model/RDFWriter/write(com.hp.hpl.jena.rdf.model.Model,java.io.OutputStream,java.lang.String)|",
+      "|java+method:///com/hp/hpl/jena/rdf/model/Model/getWriter(java.lang.String)|",
+      "|java+method:///com/hp/hpl/jena/sparql/vocabulary/ResultSetGraphVocab/getURI()|",
+      "|java+method:///com/hp/hpl/jena/sparql/resultset/ResultsFormat/equals(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/hp/hpl/jena/query/QueryExecution/execSelect()|",
+      "|java+method:///com/hp/hpl/jena/rdf/model/Model/setNsPrefix(java.lang.String,java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+method:///com/hp/hpl/jena/query/Query/getPrefixMapping()|",
+      "|java+method:///com/hp/hpl/jena/rdf/model/Model/setNsPrefixes(com.hp.hpl.jena.shared.PrefixMapping)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///com/hp/hpl/jena/query/ResultSetFormatter/out(java.io.OutputStream,com.hp.hpl.jena.query.ResultSet,com.hp.hpl.jena.shared.PrefixMapping)|",
+      "|java+method:///java/io/PrintStream/flush()|",
+      "|java+method:///com/hp/hpl/jena/query/ResultSetFormatter/toModel(com.hp.hpl.jena.query.ResultSet)|",
+      "|java+method:///com/hp/hpl/jena/query/ResultSetFormatter/outputAsXML(java.io.OutputStream,com.hp.hpl.jena.query.ResultSet)|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/io/PrintStream/println(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///com/hp/hpl/jena/query/ResultSetFormatter/consume(com.hp.hpl.jena.query.ResultSet)|",
+      "|java+method:///com/hp/hpl/jena/rdf/model/RDFWriter/write(com.hp.hpl.jena.rdf.model.Model,java.io.OutputStream,java.lang.String)|",
+      "|java+method:///com/hp/hpl/jena/rdf/model/Model/getWriter(java.lang.String)|",
+      "|java+method:///com/hp/hpl/jena/sparql/vocabulary/ResultSetGraphVocab/getURI()|",
+      "|java+method:///com/hp/hpl/jena/sparql/resultset/ResultsFormat/equals(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///com/hp/hpl/jena/query/ResultSetFactory/makeRewindable(com.hp.hpl.jena.query.ResultSet)|"
+    ],
+    "affectedLib": "com.hp.hpl.jena:arq:2.7.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.hp.hpl.jena:jena:2.5.7",
+    "coordinatesV2": "com.hp.hpl.jena:jena:2.6.0",
+    "caller": "|java+method:///jena/dbquery/doAskQuery(com.hp.hpl.jena.query.Query,com.hp.hpl.jena.query.QueryExecution,com.hp.hpl.jena.sparql.resultset.ResultsFormat)|",
+    "called": "|java+method:///com/hp/hpl/jena/query/ResultSetFormatter/outputAsRDF(java.io.OutputStream,java.lang.String,boolean)|",
+    "v1Body": [
+      "|java+method:///com/hp/hpl/jena/query/ResultSetFormatter/outputAsRDF(java.io.OutputStream,java.lang.String,boolean)|",
+      "|java+method:///java/io/PrintStream/flush()|",
+      "|java+method:///com/hp/hpl/jena/query/QueryExecution/execAsk()|",
+      "|java+method:///java/io/PrintStream/println(java.lang.String)|",
+      "|java+method:///java/lang/StringBuffer/toString()|",
+      "|java+method:///com/hp/hpl/jena/sparql/resultset/ResultsFormat/getSymbol()|",
+      "|java+method:///java/lang/StringBuffer/append(java.lang.String)|",
+      "|java+method:///com/hp/hpl/jena/sparql/resultset/ResultsFormat/equals(java.lang.Object)|",
+      "|java+constructor:///java/lang/StringBuffer/StringBuffer()|",
+      "|java+method:///com/hp/hpl/jena/query/ResultSetFormatter/outputAsXML(java.io.OutputStream,boolean)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/hp/hpl/jena/query/ResultSetFormatter/outputAsRDF(java.io.OutputStream,java.lang.String,boolean)|",
+      "|java+method:///java/io/PrintStream/flush()|",
+      "|java+method:///com/hp/hpl/jena/query/QueryExecution/execAsk()|",
+      "|java+method:///com/hp/hpl/jena/sparql/resultset/ResultsFormat/getSymbol()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///com/hp/hpl/jena/sparql/resultset/ResultsFormat/equals(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/io/PrintStream/println(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///com/hp/hpl/jena/query/ResultSetFormatter/outputAsXML(java.io.OutputStream,boolean)|"
+    ],
+    "affectedLib": "com.hp.hpl.jena:arq:2.7.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.hp.hpl.jena:jena:2.5.7",
+    "coordinatesV2": "com.hp.hpl.jena:jena:2.6.0",
+    "caller": "|java+method:///jena/dbquery/exec1(java.lang.String)|",
+    "called": "|java+method:///com/hp/hpl/jena/query/QueryFactory/create(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///com/hp/hpl/jena/util/FileManager/get()|",
+      "|java+method:///jena/dbquery/getRDBModel()|",
+      "|java+method:///java/io/PrintStream/println(java.lang.String)|",
+      "|java+method:///jena/cmdline/CommandLine/getValue(jena.cmdline.ArgDecl)|",
+      "|java+method:///jena/dbquery/getCommandLine()|",
+      "|java+method:///jena/util/DBcmd/getRDBModel()|",
+      "|java+method:///jena/cmdline/CommandLine/contains(jena.cmdline.ArgDecl)|",
+      "|java+method:///java/lang/StringBuffer/append(double)|",
+      "|java+method:///com/hp/hpl/jena/rdf/model/ModelFactory/createDefaultModel()|",
+      "|java+method:///com/hp/hpl/jena/query/QueryExecutionFactory/create(com.hp.hpl.jena.query.Query,com.hp.hpl.jena.rdf.model.Model)|",
+      "|java+method:///java/lang/StringBuffer/toString()|",
+      "|java+method:///com/hp/hpl/jena/query/QueryExecution/close()|",
+      "|java+method:///java/lang/String/startsWith(java.lang.String)|",
+      "|java+method:///java/lang/System/currentTimeMillis()|",
+      "|java+method:///java/lang/StringBuffer/append(java.lang.String)|",
+      "|java+method:///com/hp/hpl/jena/query/QueryFactory/create(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuffer/StringBuffer()|",
+      "|java+method:///jena/dbquery/doQuery(com.hp.hpl.jena.query.Query,com.hp.hpl.jena.query.QueryExecution,com.hp.hpl.jena.sparql.resultset.ResultsFormat)|",
+      "|java+method:///com/hp/hpl/jena/util/FileManager/readWholeFileAsUTF8(java.lang.String)|",
+      "|java+method:///java/lang/String/substring(int)|",
+      "|java+method:///java/lang/Integer/parseInt(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/hp/hpl/jena/util/FileManager/get()|",
+      "|java+method:///jena/dbquery/getRDBModel()|",
+      "|java+method:///jena/cmdline/CommandLine/getValue(jena.cmdline.ArgDecl)|",
+      "|java+method:///jena/dbquery/getCommandLine()|",
+      "|java+method:///jena/util/DBcmd/getRDBModel()|",
+      "|java+method:///jena/cmdline/CommandLine/contains(jena.cmdline.ArgDecl)|",
+      "|java+method:///com/hp/hpl/jena/rdf/model/ModelFactory/createDefaultModel()|",
+      "|java+method:///com/hp/hpl/jena/query/QueryExecutionFactory/create(com.hp.hpl.jena.query.Query,com.hp.hpl.jena.rdf.model.Model)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///com/hp/hpl/jena/query/QueryExecution/close()|",
+      "|java+method:///java/lang/String/startsWith(java.lang.String)|",
+      "|java+method:///java/lang/System/currentTimeMillis()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///jena/dbquery/doQuery(com.hp.hpl.jena.query.Query,com.hp.hpl.jena.query.QueryExecution,com.hp.hpl.jena.sparql.resultset.ResultsFormat)|",
+      "|java+method:///com/hp/hpl/jena/util/FileManager/readWholeFileAsUTF8(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/io/PrintStream/println(java.lang.String)|",
+      "|java+method:///java/lang/String/substring(int)|",
+      "|java+method:///java/lang/Integer/parseInt(java.lang.String)|",
+      "|java+method:///com/hp/hpl/jena/query/QueryFactory/create(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(double)|"
+    ],
+    "affectedLib": "com.hp.hpl.jena:arq:2.7.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.hp.hpl.jena:jena:2.5.7",
+    "coordinatesV2": "com.hp.hpl.jena:jena:2.6.0",
+    "caller": "|java+method:///com/hp/hpl/jena/n3/IRIResolver/resolveFileURL(java.lang.String)|",
+    "called": "|java+method:///com/hp/hpl/jena/iri/IRI/resolve(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///com/hp/hpl/jena/iri/IRI/toString()|",
+      "|java+method:///java/lang/String/equalsIgnoreCase(java.lang.String)|",
+      "|java+method:///com/hp/hpl/jena/iri/IRI/resolve(java.lang.String)|",
+      "|java+method:///java/lang/StringBuffer/toString()|",
+      "|java+method:///com/hp/hpl/jena/n3/IRIResolver/resolveFileURL(java.lang.String)|",
+      "|java+method:///java/lang/StringBuffer/append(java.lang.String)|",
+      "|java+method:///com/hp/hpl/jena/iri/IRI/getScheme()|",
+      "|java+constructor:///java/lang/StringBuffer/StringBuffer()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/hp/hpl/jena/iri/IRI/toString()|",
+      "|java+method:///java/lang/String/equalsIgnoreCase(java.lang.String)|",
+      "|java+method:///com/hp/hpl/jena/iri/IRI/getScheme()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///com/hp/hpl/jena/iri/IRI/resolve(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///com/hp/hpl/jena/n3/IRIResolver/resolveFileURL(java.lang.String)|"
+    ],
+    "affectedLib": "com.hp.hpl.jena:iri:0.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.hp.hpl.jena:jena:2.5.7",
+    "coordinatesV2": "com.hp.hpl.jena:jena:2.6.0",
+    "caller": "|java+initializer:///com/hp/hpl/jena/n3/IRIResolver/IRIResolver$initializer|",
+    "called": "|java+constructor:///com/hp/hpl/jena/iri/IRIFactory/IRIFactory(com.hp.hpl.jena.iri.IRIFactory)|",
+    "v1Body": [
+      "|java+method:///com/hp/hpl/jena/iri/IRIException/getMessage()|",
+      "|java+method:///java/io/PrintStream/println(java.lang.String)|",
+      "|java+method:///com/hp/hpl/jena/iri/IRIFactory/create(java.lang.String)|",
+      "|java+constructor:///com/hp/hpl/jena/iri/IRIFactory/IRIFactory(com.hp.hpl.jena.iri.IRIFactory)|",
+      "|java+method:///java/lang/StringBuffer/toString()|",
+      "|java+method:///com/hp/hpl/jena/iri/IRIFactory/construct(java.lang.String)|",
+      "|java+method:///com/hp/hpl/jena/iri/IRIFactory/jenaImplementation()|",
+      "|java+method:///java/lang/StringBuffer/append(java.lang.String)|",
+      "|java+method:///com/hp/hpl/jena/iri/IRIFactory/setSameSchemeRelativeReferences(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuffer/StringBuffer()|",
+      "|java+method:///com/hp/hpl/jena/util/FileUtils/toURL(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/hp/hpl/jena/iri/IRIException/getMessage()|",
+      "|java+method:///com/hp/hpl/jena/iri/IRIFactory/create(java.lang.String)|",
+      "|java+constructor:///com/hp/hpl/jena/iri/IRIFactory/IRIFactory(com.hp.hpl.jena.iri.IRIFactory)|",
+      "|java+method:///com/hp/hpl/jena/iri/IRIFactory/construct(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///com/hp/hpl/jena/iri/IRIFactory/jenaImplementation()|",
+      "|java+method:///com/hp/hpl/jena/iri/IRIFactory/setSameSchemeRelativeReferences(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/io/PrintStream/println(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///com/hp/hpl/jena/util/FileUtils/toURL(java.lang.String)|"
+    ],
+    "affectedLib": "com.hp.hpl.jena:iri:0.6",
+    "change": "UPDATED"
+  }
+]

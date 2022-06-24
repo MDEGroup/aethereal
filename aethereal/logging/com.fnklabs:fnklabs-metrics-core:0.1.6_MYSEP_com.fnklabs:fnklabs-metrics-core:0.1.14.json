@@ -1,0 +1,33 @@
+[
+  {
+    "coordinatesV1": "com.fnklabs:fnklabs-metrics-core:0.1.6",
+    "coordinatesV2": "com.fnklabs:fnklabs-metrics-core:0.1.14",
+    "caller": "|java+initializer:///com/fnklabs/metrics/MetricsFactory/MetricsFactory$initializer|",
+    "called": "|java+method:///com/typesafe/config/ConfigFactory/load(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/lang/Class/forName(java.lang.String)|",
+      "|java+constructor:///com/fnklabs/metrics/CanNotFindOrCreateMetricsBinder/CanNotFindOrCreateMetricsBinder(java.lang.ReflectiveOperationException)|",
+      "|java+method:///java/lang/Class/newInstance()|",
+      "|java+method:///java/util/Set/size()|",
+      "|java+method:///com/fnklabs/metrics/MetricsFactory/findPossibleStaticBinderPathSet()|",
+      "|java+constructor:///com/fnklabs/metrics/MultipleBindersException/MultipleBindersException()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Class/forName(java.lang.String)|",
+      "|java+method:///com/typesafe/config/Config/getString(java.lang.String)|",
+      "|java+method:///java/util/Set/size()|",
+      "|java+method:///com/typesafe/config/Config/getInt(java.lang.String)|",
+      "|java+method:///com/fnklabs/metrics/MetricsFactory/findPossibleStaticBinderPathSet()|",
+      "|java+constructor:///com/fnklabs/metrics/MultipleBindersException/MultipleBindersException()|",
+      "|java+method:///com/typesafe/config/ConfigFactory/load(java.lang.String)|",
+      "|java+method:///java/util/concurrent/TimeUnit/valueOf(java.lang.String)|",
+      "|java+method:///com/typesafe/config/Config/hasPath(java.lang.String)|",
+      "|java+method:///java/lang/reflect/Constructor/newInstance(java.lang.Object%5B%5D)|",
+      "|java+constructor:///com/fnklabs/metrics/CanNotFindOrCreateMetricsBinder/CanNotFindOrCreateMetricsBinder(java.lang.ReflectiveOperationException)|",
+      "|java+constructor:///com/fnklabs/metrics/Configuration/Configuration(java.util.concurrent.TimeUnit,java.util.concurrent.TimeUnit,int,java.util.concurrent.TimeUnit)|",
+      "|java+method:///java/lang/Class/getDeclaredConstructor(java.lang.Class%5B%5D)|"
+    ],
+    "affectedLib": "com.typesafe:config:1.3.1",
+    "change": "ADDED"
+  }
+]

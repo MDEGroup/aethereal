@@ -1,0 +1,1723 @@
+[
+  {
+    "coordinatesV1": "org.apache.servicemix.bundles:org.apache.servicemix.bundles.docker-java:2.1.3_1",
+    "coordinatesV2": "org.apache.servicemix.bundles:org.apache.servicemix.bundles.docker-java:3.0.6_1",
+    "caller": "|java+method:///com/github/dockerjava/jaxrs/AuthCmdExec/execute(com.github.dockerjava.api.command.AuthCmd)|",
+    "called": "|java+method:///javax/ws/rs/client/Entity/entity(java.lang.Object,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///com/github/dockerjava/jaxrs/AuthCmdExec/getBaseResource()|",
+      "|java+method:///javax/ws/rs/core/Response/getStatus()|",
+      "|java+method:///javax/ws/rs/client/Invocation$Builder/accept(java.lang.String%5B%5D)|",
+      "|java+method:///org/slf4j/Logger/trace(java.lang.String,java.lang.Object)|",
+      "|java+method:///javax/ws/rs/client/WebTarget/path(java.lang.String)|",
+      "|java+method:///com/github/dockerjava/api/command/AuthCmd/getAuthConfig()|",
+      "|java+method:///javax/ws/rs/core/Response/readEntity(java.lang.Class)|",
+      "|java+method:///javax/ws/rs/client/Invocation$Builder/post(javax.ws.rs.client.Entity)|",
+      "|java+constructor:///com/github/dockerjava/api/UnauthorizedException/UnauthorizedException(java.lang.String)|",
+      "|java+method:///javax/ws/rs/client/Entity/entity(java.lang.Object,java.lang.String)|",
+      "|java+method:///javax/ws/rs/client/WebTarget/request()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/github/dockerjava/jaxrs/AuthCmdExec/getBaseResource()|",
+      "|java+method:///javax/ws/rs/core/Response/getStatus()|",
+      "|java+method:///javax/ws/rs/client/Invocation$Builder/accept(java.lang.String%5B%5D)|",
+      "|java+method:///org/slf4j/Logger/trace(java.lang.String,java.lang.Object)|",
+      "|java+method:///javax/ws/rs/client/WebTarget/path(java.lang.String)|",
+      "|java+method:///com/github/dockerjava/api/command/AuthCmd/getAuthConfig()|",
+      "|java+method:///javax/ws/rs/core/Response/readEntity(java.lang.Class)|",
+      "|java+constructor:///com/github/dockerjava/api/exception/UnauthorizedException/UnauthorizedException(java.lang.String)|",
+      "|java+method:///javax/ws/rs/client/Invocation$Builder/post(javax.ws.rs.client.Entity)|",
+      "|java+method:///javax/ws/rs/client/Entity/entity(java.lang.Object,java.lang.String)|",
+      "|java+method:///javax/ws/rs/client/WebTarget/request()|"
+    ],
+    "affectedLib": "javax.ws.rs:javax.ws.rs-api:2.0.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.servicemix.bundles:org.apache.servicemix.bundles.docker-java:2.1.3_1",
+    "coordinatesV2": "org.apache.servicemix.bundles:org.apache.servicemix.bundles.docker-java:3.0.6_1",
+    "caller": "|java+method:///com/github/dockerjava/jaxrs/BuildImageCmdExec/callbackNotifier(com.github.dockerjava.api.command.BuildImageCmd,com.github.dockerjava.api.async.ResultCallback)|",
+    "called": "|java+method:///javax/ws/rs/client/Entity/entity(java.lang.Object,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///javax/ws/rs/client/WebTarget/property(java.lang.String,java.lang.Object)|",
+      "|java+method:///com/github/dockerjava/api/command/BuildImageCmd/hasPullEnabled()|",
+      "|java+method:///com/github/dockerjava/api/command/BuildImageCmd/hasRemoveEnabled()|",
+      "|java+method:///com/github/dockerjava/api/command/BuildImageCmd/getTag()|",
+      "|java+method:///com/github/dockerjava/api/command/BuildImageCmd/getMemory()|",
+      "|java+method:///com/github/dockerjava/api/command/BuildImageCmd/hasNoCacheEnabled()|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///javax/ws/rs/client/Invocation$Builder/accept(java.lang.String%5B%5D)|",
+      "|java+method:///org/slf4j/Logger/trace(java.lang.String,java.lang.Object)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+constructor:///com/github/dockerjava/jaxrs/async/POSTCallbackNotifier/POSTCallbackNotifier(com.github.dockerjava.core.async.ResponseStreamProcessor,com.github.dockerjava.api.async.ResultCallback,javax.ws.rs.client.Invocation$Builder,javax.ws.rs.client.Entity)|",
+      "|java+method:///com/github/dockerjava/api/command/BuildImageCmd/isQuiet()|",
+      "|java+constructor:///com/github/dockerjava/core/async/JsonStreamProcessor/JsonStreamProcessor(java.lang.Class)|",
+      "|java+method:///com/github/dockerjava/api/command/BuildImageCmd/getPathToDockerfile()|",
+      "|java+method:///com/github/dockerjava/jaxrs/BuildImageCmdExec/getBaseResource()|",
+      "|java+method:///java/net/URI/toString()|",
+      "|java+method:///com/github/dockerjava/api/command/BuildImageCmd/getCpushares()|",
+      "|java+method:///com/github/dockerjava/api/command/BuildImageCmd/getTarInputStream()|",
+      "|java+method:///com/github/dockerjava/api/command/BuildImageCmd/getCpusetcpus()|",
+      "|java+method:///com/github/dockerjava/api/command/BuildImageCmd/getRemote()|",
+      "|java+method:///com/github/dockerjava/jaxrs/BuildImageCmdExec/resourceWithOptionalAuthConfig(com.github.dockerjava.api.command.BuildImageCmd,javax.ws.rs.client.Invocation$Builder)|",
+      "|java+method:///com/github/dockerjava/api/command/BuildImageCmd/isForcerm()|",
+      "|java+method:///javax/ws/rs/client/WebTarget/request()|",
+      "|java+method:///javax/ws/rs/client/WebTarget/queryParam(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///javax/ws/rs/client/Entity/entity(java.lang.Object,java.lang.String)|",
+      "|java+method:///javax/ws/rs/client/WebTarget/path(java.lang.String)|",
+      "|java+method:///com/github/dockerjava/api/command/BuildImageCmd/getMemswap()|"
+    ],
+    "v2Body": [
+      "|java+method:///javax/ws/rs/client/WebTarget/property(java.lang.String,java.lang.Object)|",
+      "|java+method:///com/github/dockerjava/api/command/BuildImageCmd/getTag()|",
+      "|java+method:///com/github/dockerjava/api/command/BuildImageCmd/getMemory()|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///javax/ws/rs/client/Invocation$Builder/accept(java.lang.String%5B%5D)|",
+      "|java+method:///org/slf4j/Logger/trace(java.lang.String,java.lang.Object)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///com/github/dockerjava/api/command/BuildImageCmd/getBuildArgs()|",
+      "|java+constructor:///com/github/dockerjava/jaxrs/async/POSTCallbackNotifier/POSTCallbackNotifier(com.github.dockerjava.core.async.ResponseStreamProcessor,com.github.dockerjava.api.async.ResultCallback,javax.ws.rs.client.Invocation$Builder,javax.ws.rs.client.Entity)|",
+      "|java+method:///com/github/dockerjava/api/command/BuildImageCmd/isQuiet()|",
+      "|java+method:///com/github/dockerjava/api/command/BuildImageCmd/getPathToDockerfile()|",
+      "|java+method:///com/github/dockerjava/jaxrs/BuildImageCmdExec/getBaseResource()|",
+      "|java+method:///com/github/dockerjava/api/command/BuildImageCmd/hasPullEnabled()|",
+      "|java+method:///com/github/dockerjava/jaxrs/BuildImageCmdExec/booleanQueryParam(javax.ws.rs.client.WebTarget,java.lang.String,java.lang.Boolean)|",
+      "|java+method:///com/github/dockerjava/api/command/BuildImageCmd/hasRemoveEnabled()|",
+      "|java+method:///com/github/dockerjava/api/command/BuildImageCmd/getShmsize()|",
+      "|java+method:///java/net/URLEncoder/encode(java.lang.String,java.lang.String)|",
+      "|java+method:///java/net/URI/toString()|",
+      "|java+method:///com/github/dockerjava/api/command/BuildImageCmd/getCpushares()|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.Throwable)|",
+      "|java+method:///com/github/dockerjava/api/command/BuildImageCmd/hasNoCacheEnabled()|",
+      "|java+method:///java/util/Map/isEmpty()|",
+      "|java+method:///com/github/dockerjava/api/command/BuildImageCmd/getTarInputStream()|",
+      "|java+method:///com/github/dockerjava/api/command/BuildImageCmd/getCpusetcpus()|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/writeValueAsString(java.lang.Object)|",
+      "|java+method:///com/github/dockerjava/api/command/BuildImageCmd/getRemote()|",
+      "|java+method:///com/github/dockerjava/jaxrs/BuildImageCmdExec/resourceWithOptionalAuthConfig(com.github.dockerjava.api.command.BuildImageCmd,javax.ws.rs.client.Invocation$Builder)|",
+      "|java+method:///com/github/dockerjava/api/command/BuildImageCmd/isForcerm()|",
+      "|java+method:///javax/ws/rs/client/WebTarget/request()|",
+      "|java+method:///javax/ws/rs/client/WebTarget/queryParam(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///javax/ws/rs/client/Entity/entity(java.lang.Object,java.lang.String)|",
+      "|java+method:///javax/ws/rs/client/WebTarget/path(java.lang.String)|",
+      "|java+method:///com/github/dockerjava/api/command/BuildImageCmd/getMemswap()|",
+      "|java+method:///java/lang/Boolean/booleanValue()|",
+      "|java+constructor:///com/github/dockerjava/core/async/JsonStreamProcessor/JsonStreamProcessor(java.lang.Class)|"
+    ],
+    "affectedLib": "javax.ws.rs:javax.ws.rs-api:2.0.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.servicemix.bundles:org.apache.servicemix.bundles.docker-java:2.1.3_1",
+    "coordinatesV2": "org.apache.servicemix.bundles:org.apache.servicemix.bundles.docker-java:3.0.6_1",
+    "caller": "|java+method:///com/github/dockerjava/jaxrs/CommitCmdExec/execute(com.github.dockerjava.api.command.CommitCmd)|",
+    "called": "|java+method:///javax/ws/rs/client/Entity/entity(java.lang.Object,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///com/fasterxml/jackson/databind/JsonNode/asText()|",
+      "|java+method:///com/github/dockerjava/api/command/CommitCmd/getRepository()|",
+      "|java+method:///com/github/dockerjava/api/command/CommitCmd/getTag()|",
+      "|java+method:///javax/ws/rs/client/Invocation$Builder/accept(java.lang.String%5B%5D)|",
+      "|java+method:///com/github/dockerjava/api/command/CommitCmd/getContainerId()|",
+      "|java+method:///org/slf4j/Logger/trace(java.lang.String,java.lang.Object)|",
+      "|java+method:///javax/ws/rs/client/WebTarget/path(java.lang.String)|",
+      "|java+method:///com/github/dockerjava/jaxrs/CommitCmdExec/getBaseResource()|",
+      "|java+method:///com/github/dockerjava/api/command/CommitCmd/getMessage()|",
+      "|java+method:///javax/ws/rs/client/Invocation$Builder/post(javax.ws.rs.client.Entity,java.lang.Class)|",
+      "|java+method:///com/github/dockerjava/api/command/CommitCmd/getAuthor()|",
+      "|java+method:///com/fasterxml/jackson/databind/node/ObjectNode/get(java.lang.String)|",
+      "|java+method:///com/github/dockerjava/api/command/CommitCmd/hasPauseEnabled()|",
+      "|java+method:///javax/ws/rs/client/WebTarget/request()|",
+      "|java+method:///javax/ws/rs/client/WebTarget/queryParam(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///javax/ws/rs/client/Entity/entity(java.lang.Object,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/fasterxml/jackson/databind/JsonNode/asText()|",
+      "|java+method:///com/github/dockerjava/api/command/CommitCmd/getRepository()|",
+      "|java+method:///com/github/dockerjava/jaxrs/CommitCmdExec/booleanQueryParam(javax.ws.rs.client.WebTarget,java.lang.String,java.lang.Boolean)|",
+      "|java+method:///com/github/dockerjava/api/command/CommitCmd/getTag()|",
+      "|java+method:///javax/ws/rs/client/Invocation$Builder/accept(java.lang.String%5B%5D)|",
+      "|java+method:///com/github/dockerjava/api/command/CommitCmd/getContainerId()|",
+      "|java+method:///org/slf4j/Logger/trace(java.lang.String,java.lang.Object)|",
+      "|java+method:///javax/ws/rs/client/WebTarget/path(java.lang.String)|",
+      "|java+method:///com/github/dockerjava/jaxrs/CommitCmdExec/getBaseResource()|",
+      "|java+method:///com/github/dockerjava/api/command/CommitCmd/getMessage()|",
+      "|java+method:///javax/ws/rs/client/Invocation$Builder/post(javax.ws.rs.client.Entity,java.lang.Class)|",
+      "|java+method:///com/github/dockerjava/api/command/CommitCmd/getAuthor()|",
+      "|java+method:///com/fasterxml/jackson/databind/node/ObjectNode/get(java.lang.String)|",
+      "|java+method:///com/github/dockerjava/api/command/CommitCmd/hasPauseEnabled()|",
+      "|java+method:///javax/ws/rs/client/WebTarget/request()|",
+      "|java+method:///javax/ws/rs/client/WebTarget/queryParam(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///javax/ws/rs/client/Entity/entity(java.lang.Object,java.lang.String)|"
+    ],
+    "affectedLib": "javax.ws.rs:javax.ws.rs-api:2.0.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.servicemix.bundles:org.apache.servicemix.bundles.docker-java:2.1.3_1",
+    "coordinatesV2": "org.apache.servicemix.bundles:org.apache.servicemix.bundles.docker-java:3.0.6_1",
+    "caller": "|java+initializer:///com/github/dockerjava/jaxrs/BuildImageCmdExec/BuildImageCmdExec$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+constructor:///com/fasterxml/jackson/databind/ObjectMapper/ObjectMapper()|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.21",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.servicemix.bundles:org.apache.servicemix.bundles.docker-java:2.1.3_1",
+    "coordinatesV2": "org.apache.servicemix.bundles:org.apache.servicemix.bundles.docker-java:3.0.6_1",
+    "caller": "|java+method:///com/github/dockerjava/core/LocalDirectorySSLConfig/getSSLContext()|",
+    "called": "|java+method:///org/glassfish/jersey/SslConfigurator/createSSLContext()|",
+    "v1Body": [
+      "|java+method:///org/glassfish/jersey/SslConfigurator/keyStore(java.security.KeyStore)|",
+      "|java+method:///org/glassfish/jersey/SslConfigurator/createSSLContext()|",
+      "|java+method:///com/github/dockerjava/core/CertificateUtils/verifyCertificatesExist(java.lang.String)|",
+      "|java+method:///org/glassfish/jersey/SslConfigurator/trustStore(java.security.KeyStore)|",
+      "|java+method:///java/security/Security/addProvider(java.security.Provider)|",
+      "|java+method:///com/github/dockerjava/core/CertificateUtils/createTrustStore(java.lang.String)|",
+      "|java+constructor:///com/github/dockerjava/api/DockerClientException/DockerClientException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/lang/System/getProperty(java.lang.String)|",
+      "|java+method:///java/lang/System/setProperty(java.lang.String,java.lang.String)|",
+      "|java+method:///org/glassfish/jersey/SslConfigurator/newInstance(boolean)|",
+      "|java+method:///org/glassfish/jersey/SslConfigurator/keyStorePassword(java.lang.String)|",
+      "|java+method:///java/lang/Exception/getMessage()|",
+      "|java+constructor:///org/bouncycastle/jce/provider/BouncyCastleProvider/BouncyCastleProvider()|",
+      "|java+method:///com/github/dockerjava/core/CertificateUtils/createKeyStore(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/glassfish/jersey/SslConfigurator/keyStore(java.security.KeyStore)|",
+      "|java+method:///org/glassfish/jersey/SslConfigurator/createSSLContext()|",
+      "|java+method:///com/github/dockerjava/core/util/CertificateUtils/createTrustStore(java.lang.String)|",
+      "|java+constructor:///org/bouncycastle/jce/provider/BouncyCastleProvider/BouncyCastleProvider()|",
+      "|java+method:///com/github/dockerjava/core/util/CertificateUtils/verifyCertificatesExist(java.lang.String)|",
+      "|java+method:///java/nio/file/Paths/get(java.lang.String,java.lang.String%5B%5D)|",
+      "|java+constructor:///com/github/dockerjava/api/exception/DockerClientException/DockerClientException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/lang/System/setProperty(java.lang.String,java.lang.String)|",
+      "|java+method:///org/glassfish/jersey/SslConfigurator/newInstance(boolean)|",
+      "|java+method:///com/github/dockerjava/core/util/CertificateUtils/createKeyStore(java.lang.String,java.lang.String)|",
+      "|java+method:///org/glassfish/jersey/SslConfigurator/keyStorePassword(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/glassfish/jersey/SslConfigurator/trustStore(java.security.KeyStore)|",
+      "|java+method:///java/nio/file/Files/readAllBytes(java.nio.file.Path)|",
+      "|java+method:///java/security/Security/addProvider(java.security.Provider)|",
+      "|java+method:///java/lang/System/getProperty(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///java/lang/String/String(byte%5B%5D)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/Exception/getMessage()|"
+    ],
+    "affectedLib": "org.glassfish.jersey.core:jersey-common:2.23.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.servicemix.bundles:org.apache.servicemix.bundles.docker-java:2.1.3_1",
+    "coordinatesV2": "org.apache.servicemix.bundles:org.apache.servicemix.bundles.docker-java:3.0.6_1",
+    "caller": "|java+method:///com/github/dockerjava/jaxrs/AbstrDockerCmdExec/registryConfigs(com.github.dockerjava.api.model.AuthConfigurations)|",
+    "called": "|java+method:///org/apache/commons/codec/binary/Base64/encodeBase64String(byte%5B%5D)|",
+    "v1Body": [
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.Throwable)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/writeValueAsString(java.lang.Object)|",
+      "|java+method:///org/apache/commons/codec/binary/Base64/encodeBase64String(byte%5B%5D)|",
+      "|java+constructor:///com/fasterxml/jackson/databind/ObjectMapper/ObjectMapper()|",
+      "|java+method:///com/github/dockerjava/api/model/AuthConfigurations/getConfigs()|",
+      "|java+method:///java/lang/String/getBytes()|",
+      "|java+method:///com/github/dockerjava/core/RemoteApiVersion/isGreaterOrEqual(com.github.dockerjava.core.RemoteApiVersion)|",
+      "|java+method:///com/github/dockerjava/core/DockerClientConfig/getVersion()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/valueToTree(java.lang.Object)|",
+      "|java+method:///com/fasterxml/jackson/databind/node/ObjectNode/toString()|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.Throwable)|",
+      "|java+method:///com/fasterxml/jackson/databind/node/ObjectNode/setAll(com.fasterxml.jackson.databind.node.ObjectNode)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/writeValueAsString(java.lang.Object)|",
+      "|java+method:///com/github/dockerjava/core/DockerClientConfig/getApiVersion()|",
+      "|java+constructor:///com/fasterxml/jackson/databind/ObjectMapper/ObjectMapper()|",
+      "|java+method:///com/github/dockerjava/api/model/AuthConfigurations/getConfigs()|",
+      "|java+method:///java/lang/String/getBytes()|",
+      "|java+method:///com/github/dockerjava/core/RemoteApiVersion/isGreaterOrEqual(com.github.dockerjava.core.RemoteApiVersion)|",
+      "|java+method:///com/github/dockerjava/core/RemoteApiVersion/equals(java.lang.Object)|",
+      "|java+method:///org/apache/commons/codec/binary/Base64/encodeBase64String(byte%5B%5D)|"
+    ],
+    "affectedLib": "commons-codec:commons-codec:1.10",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.servicemix.bundles:org.apache.servicemix.bundles.docker-java:2.1.3_1",
+    "coordinatesV2": "org.apache.servicemix.bundles:org.apache.servicemix.bundles.docker-java:3.0.6_1",
+    "caller": "|java+method:///com/github/dockerjava/core/AuthConfigFile/decodeAuth(java.lang.String,com.github.dockerjava.api.model.AuthConfig)|",
+    "called": "|java+method:///org/apache/commons/codec/binary/Base64/decodeBase64(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/lang/String/split(java.lang.String,int)|",
+      "|java+constructor:///java/io/IOException/IOException(java.lang.String)|",
+      "|java+constructor:///java/lang/String/String(byte%5B%5D,java.nio.charset.Charset)|",
+      "|java+method:///com/github/dockerjava/api/model/AuthConfig/setUsername(java.lang.String)|",
+      "|java+method:///com/github/dockerjava/api/model/AuthConfig/setPassword(java.lang.String)|",
+      "|java+method:///java/nio/charset/Charset/forName(java.lang.String)|",
+      "|java+method:///org/apache/commons/codec/binary/Base64/decodeBase64(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/String/split(java.lang.String,int)|",
+      "|java+constructor:///java/io/IOException/IOException(java.lang.String)|",
+      "|java+method:///com/github/dockerjava/api/model/AuthConfig/withUsername(java.lang.String)|",
+      "|java+constructor:///java/lang/String/String(byte%5B%5D,java.nio.charset.Charset)|",
+      "|java+method:///com/github/dockerjava/api/model/AuthConfig/withPassword(java.lang.String)|",
+      "|java+method:///java/nio/charset/Charset/forName(java.lang.String)|",
+      "|java+method:///org/apache/commons/codec/binary/Base64/decodeBase64(java.lang.String)|"
+    ],
+    "affectedLib": "commons-codec:commons-codec:1.10",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.servicemix.bundles:org.apache.servicemix.bundles.docker-java:2.1.3_1",
+    "coordinatesV2": "org.apache.servicemix.bundles:org.apache.servicemix.bundles.docker-java:3.0.6_1",
+    "caller": "|java+method:///com/github/dockerjava/core/command/CreateContainerCmdImpl/withPortBindings(com.github.dockerjava.api.model.Ports)|",
+    "called": "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///com/github/dockerjava/api/model/HostConfig/setPortBindings(com.github.dockerjava.api.model.Ports)|",
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/github/dockerjava/api/model/HostConfig/withPortBindings(com.github.dockerjava.api.model.Ports)|",
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|"
+    ],
+    "affectedLib": "com.google.guava:guava:19.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.servicemix.bundles:org.apache.servicemix.bundles.docker-java:2.1.3_1",
+    "coordinatesV2": "org.apache.servicemix.bundles:org.apache.servicemix.bundles.docker-java:3.0.6_1",
+    "caller": "|java+method:///com/github/dockerjava/core/command/CreateContainerCmdImpl/withCapAdd(com.github.dockerjava.api.model.Capability%5B%5D)|",
+    "called": "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///com/github/dockerjava/api/model/HostConfig/setCapAdd(com.github.dockerjava.api.model.Capability%5B%5D)|",
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/github/dockerjava/api/model/HostConfig/withCapAdd(com.github.dockerjava.api.model.Capability%5B%5D)|",
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|"
+    ],
+    "affectedLib": "com.google.guava:guava:19.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.servicemix.bundles:org.apache.servicemix.bundles.docker-java:2.1.3_1",
+    "coordinatesV2": "org.apache.servicemix.bundles:org.apache.servicemix.bundles.docker-java:3.0.6_1",
+    "caller": "|java+method:///com/github/dockerjava/core/command/CreateContainerCmdImpl/withHostName(java.lang.String)|",
+    "called": "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///com/github/dockerjava/core/command/CreateContainerCmdImpl/withHostName(java.lang.String)|",
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|"
+    ],
+    "affectedLib": "com.google.guava:guava:19.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.servicemix.bundles:org.apache.servicemix.bundles.docker-java:2.1.3_1",
+    "coordinatesV2": "org.apache.servicemix.bundles:org.apache.servicemix.bundles.docker-java:3.0.6_1",
+    "caller": "|java+constructor:///com/github/dockerjava/api/model/RestartPolicy/RestartPolicy(int,java.lang.String)|",
+    "called": "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "com.google.guava:guava:19.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.servicemix.bundles:org.apache.servicemix.bundles.docker-java:2.1.3_1",
+    "coordinatesV2": "org.apache.servicemix.bundles:org.apache.servicemix.bundles.docker-java:3.0.6_1",
+    "caller": "|java+method:///com/github/dockerjava/core/command/CreateContainerCmdImpl/withCmd(java.lang.String%5B%5D)|",
+    "called": "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///com/github/dockerjava/core/command/CreateContainerCmdImpl/withCmd(java.lang.String%5B%5D)|",
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|"
+    ],
+    "affectedLib": "com.google.guava:guava:19.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.servicemix.bundles:org.apache.servicemix.bundles.docker-java:2.1.3_1",
+    "coordinatesV2": "org.apache.servicemix.bundles:org.apache.servicemix.bundles.docker-java:3.0.6_1",
+    "caller": "|java+constructor:///com/github/dockerjava/core/command/BuildImageCmdImpl/BuildImageCmdImpl(com.github.dockerjava.api.command.BuildImageCmd$Exec,java.io.File)|",
+    "called": "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+constructor:///java/io/File/File(java.io.File,java.lang.String)|",
+      "|java+method:///java/io/File/isDirectory()|",
+      "|java+method:///com/github/dockerjava/core/command/BuildImageCmdImpl/withDockerfile(java.io.File)|",
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|",
+      "|java+method:///com/github/dockerjava/core/command/BuildImageCmdImpl/withBaseDirectory(java.io.File)|",
+      "|java+constructor:///com/github/dockerjava/core/command/AbstrAsyncDockerCmd/AbstrAsyncDockerCmd(com.github.dockerjava.api.command.DockerCmdAsyncExec)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/io/File/File(java.io.File,java.lang.String)|",
+      "|java+method:///java/io/File/isDirectory()|",
+      "|java+method:///com/github/dockerjava/core/command/BuildImageCmdImpl/withDockerfile(java.io.File)|",
+      "|java+method:///java/lang/Boolean/valueOf(boolean)|",
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|",
+      "|java+method:///com/github/dockerjava/core/command/BuildImageCmdImpl/withBaseDirectory(java.io.File)|",
+      "|java+constructor:///com/github/dockerjava/core/command/AbstrAsyncDockerCmd/AbstrAsyncDockerCmd(com.github.dockerjava.api.command.DockerCmdAsyncExec)|"
+    ],
+    "affectedLib": "com.google.guava:guava:19.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.servicemix.bundles:org.apache.servicemix.bundles.docker-java:2.1.3_1",
+    "coordinatesV2": "org.apache.servicemix.bundles:org.apache.servicemix.bundles.docker-java:3.0.6_1",
+    "caller": "|java+method:///com/github/dockerjava/core/command/CreateContainerCmdImpl/withExposedPorts(com.github.dockerjava.api.model.ExposedPort%5B%5D)|",
+    "called": "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///com/github/dockerjava/core/command/CreateContainerCmdImpl/withExposedPorts(com.github.dockerjava.api.model.ExposedPort%5B%5D)|",
+      "|java+constructor:///com/github/dockerjava/api/model/ExposedPorts/ExposedPorts(com.github.dockerjava.api.model.ExposedPort%5B%5D)|",
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/github/dockerjava/api/model/ExposedPorts/ExposedPorts(com.github.dockerjava.api.model.ExposedPort%5B%5D)|",
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|"
+    ],
+    "affectedLib": "com.google.guava:guava:19.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.servicemix.bundles:org.apache.servicemix.bundles.docker-java:2.1.3_1",
+    "coordinatesV2": "org.apache.servicemix.bundles:org.apache.servicemix.bundles.docker-java:3.0.6_1",
+    "caller": "|java+method:///com/github/dockerjava/core/command/CreateContainerCmdImpl/withName(java.lang.String)|",
+    "called": "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|",
+      "|java+method:///com/github/dockerjava/core/command/CreateContainerCmdImpl/withName(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|"
+    ],
+    "affectedLib": "com.google.guava:guava:19.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.servicemix.bundles:org.apache.servicemix.bundles.docker-java:2.1.3_1",
+    "coordinatesV2": "org.apache.servicemix.bundles:org.apache.servicemix.bundles.docker-java:3.0.6_1",
+    "caller": "|java+method:///com/github/dockerjava/core/command/CreateContainerCmdImpl/withLogConfig(com.github.dockerjava.api.model.LogConfig)|",
+    "called": "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///com/github/dockerjava/api/model/HostConfig/setLogConfig(com.github.dockerjava.api.model.LogConfig)|",
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/github/dockerjava/api/model/HostConfig/withLogConfig(com.github.dockerjava.api.model.LogConfig)|",
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|"
+    ],
+    "affectedLib": "com.google.guava:guava:19.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.servicemix.bundles:org.apache.servicemix.bundles.docker-java:2.1.3_1",
+    "coordinatesV2": "org.apache.servicemix.bundles:org.apache.servicemix.bundles.docker-java:3.0.6_1",
+    "caller": "|java+method:///com/github/dockerjava/core/command/CreateContainerCmdImpl/withMacAddress(java.lang.String)|",
+    "called": "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///com/github/dockerjava/core/command/CreateContainerCmdImpl/withMacAddress(java.lang.String)|",
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|"
+    ],
+    "affectedLib": "com.google.guava:guava:19.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.servicemix.bundles:org.apache.servicemix.bundles.docker-java:2.1.3_1",
+    "coordinatesV2": "org.apache.servicemix.bundles:org.apache.servicemix.bundles.docker-java:3.0.6_1",
+    "caller": "|java+method:///com/github/dockerjava/core/command/CreateContainerCmdImpl/withVolumesFrom(com.github.dockerjava.api.model.VolumesFrom%5B%5D)|",
+    "called": "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///com/github/dockerjava/core/command/CreateContainerCmdImpl/withVolumesFrom(com.github.dockerjava.api.model.VolumesFrom%5B%5D)|",
+      "|java+method:///com/github/dockerjava/api/model/HostConfig/setVolumesFrom(com.github.dockerjava.api.model.VolumesFrom%5B%5D)|",
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/github/dockerjava/api/model/HostConfig/withVolumesFrom(com.github.dockerjava.api.model.VolumesFrom%5B%5D)|",
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|"
+    ],
+    "affectedLib": "com.google.guava:guava:19.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.servicemix.bundles:org.apache.servicemix.bundles.docker-java:2.1.3_1",
+    "coordinatesV2": "org.apache.servicemix.bundles:org.apache.servicemix.bundles.docker-java:3.0.6_1",
+    "caller": "|java+method:///com/github/dockerjava/core/command/CreateContainerCmdImpl/withPidMode(java.lang.String)|",
+    "called": "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|",
+      "|java+method:///com/github/dockerjava/api/model/HostConfig/setPidMode(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/github/dockerjava/api/model/HostConfig/withPidMode(java.lang.String)|",
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|"
+    ],
+    "affectedLib": "com.google.guava:guava:19.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.servicemix.bundles:org.apache.servicemix.bundles.docker-java:2.1.3_1",
+    "coordinatesV2": "org.apache.servicemix.bundles:org.apache.servicemix.bundles.docker-java:3.0.6_1",
+    "caller": "|java+method:///com/github/dockerjava/core/command/CreateContainerCmdImpl/withLxcConf(com.github.dockerjava.api.model.LxcConf%5B%5D)|",
+    "called": "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///com/github/dockerjava/api/model/HostConfig/setLxcConf(com.github.dockerjava.api.model.LxcConf%5B%5D)|",
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|",
+      "|java+method:///com/github/dockerjava/api/model/HostConfig/withLxcConf(com.github.dockerjava.api.model.LxcConf%5B%5D)|"
+    ],
+    "affectedLib": "com.google.guava:guava:19.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.servicemix.bundles:org.apache.servicemix.bundles.docker-java:2.1.3_1",
+    "coordinatesV2": "org.apache.servicemix.bundles:org.apache.servicemix.bundles.docker-java:3.0.6_1",
+    "caller": "|java+method:///com/github/dockerjava/core/command/CreateContainerCmdImpl/withPortBindings(com.github.dockerjava.api.model.PortBinding%5B%5D)|",
+    "called": "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+constructor:///com/github/dockerjava/api/model/Ports/Ports(com.github.dockerjava.api.model.PortBinding%5B%5D)|",
+      "|java+method:///com/github/dockerjava/api/model/HostConfig/setPortBindings(com.github.dockerjava.api.model.Ports)|",
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/github/dockerjava/api/model/Ports/Ports(com.github.dockerjava.api.model.PortBinding%5B%5D)|",
+      "|java+method:///com/github/dockerjava/api/model/HostConfig/withPortBindings(com.github.dockerjava.api.model.Ports)|",
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|"
+    ],
+    "affectedLib": "com.google.guava:guava:19.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.servicemix.bundles:org.apache.servicemix.bundles.docker-java:2.1.3_1",
+    "coordinatesV2": "org.apache.servicemix.bundles:org.apache.servicemix.bundles.docker-java:3.0.6_1",
+    "caller": "|java+method:///com/github/dockerjava/core/command/CreateContainerCmdImpl/withDevices(com.github.dockerjava.api.model.Device%5B%5D)|",
+    "called": "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///com/github/dockerjava/api/model/HostConfig/setDevices(com.github.dockerjava.api.model.Device%5B%5D)|",
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|",
+      "|java+method:///com/github/dockerjava/api/model/HostConfig/withDevices(com.github.dockerjava.api.model.Device%5B%5D)|"
+    ],
+    "affectedLib": "com.google.guava:guava:19.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.servicemix.bundles:org.apache.servicemix.bundles.docker-java:2.1.3_1",
+    "coordinatesV2": "org.apache.servicemix.bundles:org.apache.servicemix.bundles.docker-java:3.0.6_1",
+    "caller": "|java+method:///com/github/dockerjava/core/command/CreateContainerCmdImpl/withVolumes(com.github.dockerjava.api.model.Volume%5B%5D)|",
+    "called": "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|",
+      "|java+method:///com/github/dockerjava/core/command/CreateContainerCmdImpl/withVolumes(com.github.dockerjava.api.model.Volume%5B%5D)|",
+      "|java+constructor:///com/github/dockerjava/api/model/Volumes/Volumes(com.github.dockerjava.api.model.Volume%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///com/github/dockerjava/api/model/Volumes/Volumes(com.github.dockerjava.api.model.Volume%5B%5D)|"
+    ],
+    "affectedLib": "com.google.guava:guava:19.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.servicemix.bundles:org.apache.servicemix.bundles.docker-java:2.1.3_1",
+    "coordinatesV2": "org.apache.servicemix.bundles:org.apache.servicemix.bundles.docker-java:3.0.6_1",
+    "caller": "|java+method:///com/github/dockerjava/core/command/CreateContainerCmdImpl/withPortSpecs(java.lang.String%5B%5D)|",
+    "called": "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///com/github/dockerjava/core/command/CreateContainerCmdImpl/withPortSpecs(java.lang.String%5B%5D)|",
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|"
+    ],
+    "affectedLib": "com.google.guava:guava:19.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.servicemix.bundles:org.apache.servicemix.bundles.docker-java:2.1.3_1",
+    "coordinatesV2": "org.apache.servicemix.bundles:org.apache.servicemix.bundles.docker-java:3.0.6_1",
+    "caller": "|java+method:///com/github/dockerjava/core/command/CreateContainerCmdImpl/withLabels(java.util.Map)|",
+    "called": "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|",
+      "|java+method:///com/github/dockerjava/core/command/CreateContainerCmdImpl/withLabels(java.util.Map)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|"
+    ],
+    "affectedLib": "com.google.guava:guava:19.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.servicemix.bundles:org.apache.servicemix.bundles.docker-java:2.1.3_1",
+    "coordinatesV2": "org.apache.servicemix.bundles:org.apache.servicemix.bundles.docker-java:3.0.6_1",
+    "caller": "|java+method:///com/github/dockerjava/core/command/CreateContainerCmdImpl/withEntrypoint(java.lang.String%5B%5D)|",
+    "called": "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///com/github/dockerjava/core/command/CreateContainerCmdImpl/withEntrypoint(java.lang.String%5B%5D)|",
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|"
+    ],
+    "affectedLib": "com.google.guava:guava:19.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.servicemix.bundles:org.apache.servicemix.bundles.docker-java:2.1.3_1",
+    "coordinatesV2": "org.apache.servicemix.bundles:org.apache.servicemix.bundles.docker-java:3.0.6_1",
+    "caller": "|java+method:///com/github/dockerjava/core/command/CreateContainerCmdImpl/withExtraHosts(java.lang.String%5B%5D)|",
+    "called": "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///com/github/dockerjava/api/model/HostConfig/setExtraHosts(java.lang.String%5B%5D)|",
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/github/dockerjava/api/model/HostConfig/withExtraHosts(java.lang.String%5B%5D)|",
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|"
+    ],
+    "affectedLib": "com.google.guava:guava:19.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.servicemix.bundles:org.apache.servicemix.bundles.docker-java:2.1.3_1",
+    "coordinatesV2": "org.apache.servicemix.bundles:org.apache.servicemix.bundles.docker-java:3.0.6_1",
+    "caller": "|java+method:///com/github/dockerjava/core/command/CreateContainerCmdImpl/withCpusetMems(java.lang.String)|",
+    "called": "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/github/dockerjava/api/model/HostConfig/withCpusetMems(java.lang.String)|",
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|"
+    ],
+    "affectedLib": "com.google.guava:guava:19.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.servicemix.bundles:org.apache.servicemix.bundles.docker-java:2.1.3_1",
+    "coordinatesV2": "org.apache.servicemix.bundles:org.apache.servicemix.bundles.docker-java:3.0.6_1",
+    "caller": "|java+method:///com/github/dockerjava/core/command/CreateContainerCmdImpl/withDomainName(java.lang.String)|",
+    "called": "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|",
+      "|java+method:///com/github/dockerjava/core/command/CreateContainerCmdImpl/withDomainName(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|"
+    ],
+    "affectedLib": "com.google.guava:guava:19.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.servicemix.bundles:org.apache.servicemix.bundles.docker-java:2.1.3_1",
+    "coordinatesV2": "org.apache.servicemix.bundles:org.apache.servicemix.bundles.docker-java:3.0.6_1",
+    "caller": "|java+method:///com/github/dockerjava/core/command/CreateContainerCmdImpl/withUlimits(com.github.dockerjava.api.model.Ulimit%5B%5D)|",
+    "called": "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///com/github/dockerjava/api/model/HostConfig/setUlimits(com.github.dockerjava.api.model.Ulimit%5B%5D)|",
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|",
+      "|java+method:///com/github/dockerjava/api/model/HostConfig/withUlimits(com.github.dockerjava.api.model.Ulimit%5B%5D)|"
+    ],
+    "affectedLib": "com.google.guava:guava:19.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.servicemix.bundles:org.apache.servicemix.bundles.docker-java:2.1.3_1",
+    "coordinatesV2": "org.apache.servicemix.bundles:org.apache.servicemix.bundles.docker-java:3.0.6_1",
+    "caller": "|java+method:///com/github/dockerjava/core/dockerfile/Dockerfile/getStatements()|",
+    "called": "|java+method:///com/google/common/base/Optional/presentInstances(java.lang.Iterable)|",
+    "v1Body": [
+      "|java+method:///com/google/common/base/Optional/presentInstances(java.lang.Iterable)|",
+      "|java+constructor:///com/github/dockerjava/core/dockerfile/Dockerfile$LineTransformer/Dockerfile$LineTransformer(com.github.dockerjava.core.dockerfile.Dockerfile$1)|",
+      "|java+method:///org/apache/commons/io/FileUtils/readLines(java.io.File)|",
+      "|java+method:///com/google/common/collect/Collections2/transform(java.util.Collection,com.google.common.base.Function)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///java/util/Collection/size()|",
+      "|java+constructor:///com/github/dockerjava/api/DockerClientException/DockerClientException(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/common/base/Optional/presentInstances(java.lang.Iterable)|",
+      "|java+constructor:///com/github/dockerjava/core/dockerfile/Dockerfile$LineTransformer/Dockerfile$LineTransformer(com.github.dockerjava.core.dockerfile.Dockerfile$1)|",
+      "|java+method:///org/apache/commons/io/FileUtils/readLines(java.io.File)|",
+      "|java+method:///com/google/common/collect/Collections2/transform(java.util.Collection,com.google.common.base.Function)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///java/util/Collection/size()|",
+      "|java+constructor:///com/github/dockerjava/api/exception/DockerClientException/DockerClientException(java.lang.String)|"
+    ],
+    "affectedLib": "com.google.guava:guava:19.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.servicemix.bundles:org.apache.servicemix.bundles.docker-java:2.1.3_1",
+    "coordinatesV2": "org.apache.servicemix.bundles:org.apache.servicemix.bundles.docker-java:3.0.6_1",
+    "caller": "|java+method:///com/github/dockerjava/core/command/CreateContainerCmdImpl/withWorkingDir(java.lang.String)|",
+    "called": "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///com/github/dockerjava/core/command/CreateContainerCmdImpl/withWorkingDir(java.lang.String)|",
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|"
+    ],
+    "affectedLib": "com.google.guava:guava:19.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.servicemix.bundles:org.apache.servicemix.bundles.docker-java:2.1.3_1",
+    "coordinatesV2": "org.apache.servicemix.bundles:org.apache.servicemix.bundles.docker-java:3.0.6_1",
+    "caller": "|java+method:///com/github/dockerjava/core/command/CreateContainerCmdImpl/withLinks(com.github.dockerjava.api.model.Link%5B%5D)|",
+    "called": "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///com/github/dockerjava/api/model/HostConfig/setLinks(com.github.dockerjava.api.model.Link%5B%5D)|",
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|",
+      "|java+method:///com/github/dockerjava/core/command/CreateContainerCmdImpl/withLinks(com.github.dockerjava.api.model.Link%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/github/dockerjava/api/model/HostConfig/setLinks(com.github.dockerjava.api.model.Link%5B%5D)|",
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|"
+    ],
+    "affectedLib": "com.google.guava:guava:19.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.servicemix.bundles:org.apache.servicemix.bundles.docker-java:2.1.3_1",
+    "coordinatesV2": "org.apache.servicemix.bundles:org.apache.servicemix.bundles.docker-java:3.0.6_1",
+    "caller": "|java+method:///com/github/dockerjava/core/command/CreateContainerCmdImpl/withBlkioWeight(java.lang.Integer)|",
+    "called": "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/github/dockerjava/api/model/HostConfig/withBlkioWeight(java.lang.Integer)|",
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|"
+    ],
+    "affectedLib": "com.google.guava:guava:19.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.servicemix.bundles:org.apache.servicemix.bundles.docker-java:2.1.3_1",
+    "coordinatesV2": "org.apache.servicemix.bundles:org.apache.servicemix.bundles.docker-java:3.0.6_1",
+    "caller": "|java+method:///com/github/dockerjava/core/command/CreateContainerCmdImpl/withDns(java.lang.String%5B%5D)|",
+    "called": "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///com/github/dockerjava/core/command/CreateContainerCmdImpl/withDns(java.lang.String%5B%5D)|",
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|",
+      "|java+method:///com/github/dockerjava/api/model/HostConfig/setDns(java.lang.String%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|",
+      "|java+method:///com/github/dockerjava/api/model/HostConfig/withDns(java.lang.String%5B%5D)|"
+    ],
+    "affectedLib": "com.google.guava:guava:19.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.servicemix.bundles:org.apache.servicemix.bundles.docker-java:2.1.3_1",
+    "coordinatesV2": "org.apache.servicemix.bundles:org.apache.servicemix.bundles.docker-java:3.0.6_1",
+    "caller": "|java+method:///com/github/dockerjava/core/command/CreateContainerCmdImpl/withOomKillDisable(java.lang.Boolean)|",
+    "called": "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|",
+      "|java+method:///com/github/dockerjava/api/model/HostConfig/withOomKillDisable(java.lang.Boolean)|"
+    ],
+    "affectedLib": "com.google.guava:guava:19.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.servicemix.bundles:org.apache.servicemix.bundles.docker-java:2.1.3_1",
+    "coordinatesV2": "org.apache.servicemix.bundles:org.apache.servicemix.bundles.docker-java:3.0.6_1",
+    "caller": "|java+constructor:///com/github/dockerjava/api/model/Ulimit/Ulimit(java.lang.String,int,int)|",
+    "called": "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "com.google.guava:guava:19.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.servicemix.bundles:org.apache.servicemix.bundles.docker-java:2.1.3_1",
+    "coordinatesV2": "org.apache.servicemix.bundles:org.apache.servicemix.bundles.docker-java:3.0.6_1",
+    "caller": "|java+method:///com/github/dockerjava/core/command/CreateContainerCmdImpl/withUser(java.lang.String)|",
+    "called": "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|",
+      "|java+method:///com/github/dockerjava/core/command/CreateContainerCmdImpl/withUser(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|"
+    ],
+    "affectedLib": "com.google.guava:guava:19.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.servicemix.bundles:org.apache.servicemix.bundles.docker-java:2.1.3_1",
+    "coordinatesV2": "org.apache.servicemix.bundles:org.apache.servicemix.bundles.docker-java:3.0.6_1",
+    "caller": "|java+constructor:///com/github/dockerjava/core/command/BuildImageCmdImpl/BuildImageCmdImpl(com.github.dockerjava.api.command.BuildImageCmd$Exec,java.io.InputStream)|",
+    "called": "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///com/github/dockerjava/core/command/BuildImageCmdImpl/withTarInputStream(java.io.InputStream)|",
+      "|java+constructor:///com/github/dockerjava/core/command/AbstrAsyncDockerCmd/AbstrAsyncDockerCmd(com.github.dockerjava.api.command.DockerCmdAsyncExec)|",
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/github/dockerjava/core/command/BuildImageCmdImpl/withTarInputStream(java.io.InputStream)|",
+      "|java+constructor:///com/github/dockerjava/core/command/AbstrAsyncDockerCmd/AbstrAsyncDockerCmd(com.github.dockerjava.api.command.DockerCmdAsyncExec)|",
+      "|java+method:///java/lang/Boolean/valueOf(boolean)|",
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|"
+    ],
+    "affectedLib": "com.google.guava:guava:19.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.servicemix.bundles:org.apache.servicemix.bundles.docker-java:2.1.3_1",
+    "coordinatesV2": "org.apache.servicemix.bundles:org.apache.servicemix.bundles.docker-java:3.0.6_1",
+    "caller": "|java+method:///com/github/dockerjava/core/command/CreateContainerCmdImpl/withEnv(java.lang.String%5B%5D)|",
+    "called": "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///com/github/dockerjava/core/command/CreateContainerCmdImpl/withEnv(java.lang.String%5B%5D)|",
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|"
+    ],
+    "affectedLib": "com.google.guava:guava:19.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.servicemix.bundles:org.apache.servicemix.bundles.docker-java:2.1.3_1",
+    "coordinatesV2": "org.apache.servicemix.bundles:org.apache.servicemix.bundles.docker-java:3.0.6_1",
+    "caller": "|java+method:///com/github/dockerjava/core/command/CreateContainerCmdImpl/withImage(java.lang.String)|",
+    "called": "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|",
+      "|java+method:///com/github/dockerjava/core/command/CreateContainerCmdImpl/withImage(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|"
+    ],
+    "affectedLib": "com.google.guava:guava:19.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.servicemix.bundles:org.apache.servicemix.bundles.docker-java:2.1.3_1",
+    "coordinatesV2": "org.apache.servicemix.bundles:org.apache.servicemix.bundles.docker-java:3.0.6_1",
+    "caller": "|java+method:///com/github/dockerjava/core/command/CreateContainerCmdImpl/withCapDrop(com.github.dockerjava.api.model.Capability%5B%5D)|",
+    "called": "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///com/github/dockerjava/api/model/HostConfig/setCapDrop(com.github.dockerjava.api.model.Capability%5B%5D)|",
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|",
+      "|java+method:///com/github/dockerjava/api/model/HostConfig/withCapDrop(com.github.dockerjava.api.model.Capability%5B%5D)|"
+    ],
+    "affectedLib": "com.google.guava:guava:19.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.servicemix.bundles:org.apache.servicemix.bundles.docker-java:2.1.3_1",
+    "coordinatesV2": "org.apache.servicemix.bundles:org.apache.servicemix.bundles.docker-java:3.0.6_1",
+    "caller": "|java+method:///com/github/dockerjava/core/command/CreateContainerCmdImpl/withDnsSearch(java.lang.String%5B%5D)|",
+    "called": "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|",
+      "|java+method:///com/github/dockerjava/api/model/HostConfig/setDnsSearch(java.lang.String%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/github/dockerjava/api/model/HostConfig/withDnsSearch(java.lang.String%5B%5D)|",
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|"
+    ],
+    "affectedLib": "com.google.guava:guava:19.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.servicemix.bundles:org.apache.servicemix.bundles.docker-java:2.1.3_1",
+    "coordinatesV2": "org.apache.servicemix.bundles:org.apache.servicemix.bundles.docker-java:3.0.6_1",
+    "caller": "|java+method:///com/github/dockerjava/core/command/CreateContainerCmdImpl/withRestartPolicy(com.github.dockerjava.api.model.RestartPolicy)|",
+    "called": "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|",
+      "|java+method:///com/github/dockerjava/api/model/HostConfig/setRestartPolicy(com.github.dockerjava.api.model.RestartPolicy)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/github/dockerjava/api/model/HostConfig/withRestartPolicy(com.github.dockerjava.api.model.RestartPolicy)|",
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|"
+    ],
+    "affectedLib": "com.google.guava:guava:19.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.servicemix.bundles:org.apache.servicemix.bundles.docker-java:2.1.3_1",
+    "coordinatesV2": "org.apache.servicemix.bundles:org.apache.servicemix.bundles.docker-java:3.0.6_1",
+    "caller": "|java+method:///com/github/dockerjava/core/command/CreateContainerCmdImpl/withContainerIDFile(java.lang.String)|",
+    "called": "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///com/github/dockerjava/api/model/HostConfig/setContainerIDFile(java.lang.String)|",
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/github/dockerjava/api/model/HostConfig/withContainerIDFile(java.lang.String)|",
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|"
+    ],
+    "affectedLib": "com.google.guava:guava:19.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.servicemix.bundles:org.apache.servicemix.bundles.docker-java:2.1.3_1",
+    "coordinatesV2": "org.apache.servicemix.bundles:org.apache.servicemix.bundles.docker-java:3.0.6_1",
+    "caller": "|java+method:///com/github/dockerjava/core/dockerfile/DockerfileStatement$Add/create(java.lang.String)|",
+    "called": "|java+method:///com/google/common/base/Optional/absent()|",
+    "v1Body": [
+      "|java+method:///com/google/common/base/Optional/absent()|",
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///java/lang/String/replaceAll(java.lang.String,java.lang.String)|",
+      "|java+method:///java/lang/String/trim()|",
+      "|java+method:///com/google/common/base/Optional/of(java.lang.Object)|",
+      "|java+method:///java/util/Collection/isEmpty()|",
+      "|java+method:///org/apache/commons/lang/StringUtils/equals(java.lang.String,java.lang.String)|",
+      "|java+constructor:///com/github/dockerjava/api/DockerClientException/DockerClientException(java.lang.String)|",
+      "|java+method:///java/util/regex/Matcher/group()|",
+      "|java+method:///java/util/Collection/add(java.lang.Object)|",
+      "|java+method:///java/util/regex/Matcher/find()|",
+      "|java+method:///java/util/regex/Pattern/matcher(java.lang.CharSequence)|",
+      "|java+constructor:///com/github/dockerjava/core/dockerfile/DockerfileStatement$Add/DockerfileStatement$Add(java.util.Collection,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/common/base/Optional/absent()|",
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///java/lang/String/replaceAll(java.lang.String,java.lang.String)|",
+      "|java+method:///java/lang/String/trim()|",
+      "|java+method:///com/google/common/base/Optional/of(java.lang.Object)|",
+      "|java+method:///java/util/Collection/isEmpty()|",
+      "|java+method:///org/apache/commons/lang/StringUtils/equals(java.lang.String,java.lang.String)|",
+      "|java+constructor:///com/github/dockerjava/api/exception/DockerClientException/DockerClientException(java.lang.String)|",
+      "|java+method:///java/util/regex/Matcher/group()|",
+      "|java+method:///java/util/Collection/add(java.lang.Object)|",
+      "|java+method:///java/util/regex/Matcher/find()|",
+      "|java+method:///java/util/regex/Pattern/matcher(java.lang.CharSequence)|",
+      "|java+constructor:///com/github/dockerjava/core/dockerfile/DockerfileStatement$Add/DockerfileStatement$Add(java.util.Collection,java.lang.String)|"
+    ],
+    "affectedLib": "com.google.guava:guava:19.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.servicemix.bundles:org.apache.servicemix.bundles.docker-java:2.1.3_1",
+    "coordinatesV2": "org.apache.servicemix.bundles:org.apache.servicemix.bundles.docker-java:3.0.6_1",
+    "caller": "|java+method:///com/github/dockerjava/core/command/CreateContainerCmdImpl/withNetworkMode(java.lang.String)|",
+    "called": "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///com/github/dockerjava/api/model/HostConfig/setNetworkMode(java.lang.String)|",
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/github/dockerjava/api/model/HostConfig/withNetworkMode(java.lang.String)|",
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|"
+    ],
+    "affectedLib": "com.google.guava:guava:19.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.servicemix.bundles:org.apache.servicemix.bundles.docker-java:2.1.3_1",
+    "coordinatesV2": "org.apache.servicemix.bundles:org.apache.servicemix.bundles.docker-java:3.0.6_1",
+    "caller": "|java+method:///com/github/dockerjava/core/DockerClientImpl/authConfig()|",
+    "called": "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///com/github/dockerjava/core/DockerClientConfig/getUsername()|",
+      "|java+constructor:///com/github/dockerjava/api/model/AuthConfig/AuthConfig()|",
+      "|java+method:///com/github/dockerjava/api/model/AuthConfig/setUsername(java.lang.String)|",
+      "|java+method:///com/github/dockerjava/api/model/AuthConfig/setPassword(java.lang.String)|",
+      "|java+method:///com/github/dockerjava/core/DockerClientConfig/getEmail()|",
+      "|java+method:///com/github/dockerjava/api/model/AuthConfig/setServerAddress(java.lang.String)|",
+      "|java+method:///com/github/dockerjava/core/DockerClientConfig/getPassword()|",
+      "|java+method:///com/github/dockerjava/api/model/AuthConfig/setEmail(java.lang.String)|",
+      "|java+method:///com/github/dockerjava/core/DockerClientConfig/getServerAddress()|",
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/github/dockerjava/api/model/AuthConfig/AuthConfig()|",
+      "|java+method:///com/github/dockerjava/core/DockerClientConfig/getRegistryPassword()|",
+      "|java+method:///com/github/dockerjava/api/model/AuthConfig/withRegistryAddress(java.lang.String)|",
+      "|java+method:///com/github/dockerjava/api/model/AuthConfig/withUsername(java.lang.String)|",
+      "|java+method:///com/github/dockerjava/api/model/AuthConfig/withEmail(java.lang.String)|",
+      "|java+method:///com/github/dockerjava/api/model/AuthConfig/withPassword(java.lang.String)|",
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|",
+      "|java+method:///com/github/dockerjava/core/DockerClientConfig/getRegistryUrl()|",
+      "|java+method:///com/github/dockerjava/core/DockerClientConfig/getRegistryUsername()|",
+      "|java+method:///com/github/dockerjava/core/DockerClientConfig/getRegistryEmail()|"
+    ],
+    "affectedLib": "com.google.guava:guava:19.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.servicemix.bundles:org.apache.servicemix.bundles.docker-java:2.1.3_1",
+    "coordinatesV2": "org.apache.servicemix.bundles:org.apache.servicemix.bundles.docker-java:3.0.6_1",
+    "caller": "|java+method:///com/github/dockerjava/core/dockerfile/DockerfileStatement$Env/create(java.lang.String)|",
+    "called": "|java+method:///com/google/common/base/Optional/absent()|",
+    "v1Body": [
+      "|java+method:///com/google/common/base/Optional/absent()|",
+      "|java+method:///java/lang/String/trim()|",
+      "|java+method:///com/google/common/base/Optional/of(java.lang.Object)|",
+      "|java+constructor:///com/github/dockerjava/api/DockerClientException/DockerClientException(java.lang.String)|",
+      "|java+method:///java/util/regex/Matcher/find()|",
+      "|java+method:///java/util/regex/Pattern/matcher(java.lang.CharSequence)|",
+      "|java+method:///java/util/regex/Matcher/groupCount()|",
+      "|java+constructor:///com/github/dockerjava/core/dockerfile/DockerfileStatement$Env/DockerfileStatement$Env(java.util.regex.Matcher)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/common/base/Optional/absent()|",
+      "|java+method:///java/lang/String/trim()|",
+      "|java+method:///com/google/common/base/Optional/of(java.lang.Object)|",
+      "|java+constructor:///com/github/dockerjava/api/exception/DockerClientException/DockerClientException(java.lang.String)|",
+      "|java+method:///java/util/regex/Matcher/find()|",
+      "|java+method:///java/util/regex/Pattern/matcher(java.lang.CharSequence)|",
+      "|java+method:///java/util/regex/Matcher/groupCount()|",
+      "|java+constructor:///com/github/dockerjava/core/dockerfile/DockerfileStatement$Env/DockerfileStatement$Env(java.util.regex.Matcher)|"
+    ],
+    "affectedLib": "com.google.guava:guava:19.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.servicemix.bundles:org.apache.servicemix.bundles.docker-java:2.1.3_1",
+    "coordinatesV2": "org.apache.servicemix.bundles:org.apache.servicemix.bundles.docker-java:3.0.6_1",
+    "caller": "|java+method:///com/github/dockerjava/core/command/BuildImageCmdImpl/withDockerfile(java.io.File)|",
+    "called": "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///com/github/dockerjava/core/dockerfile/Dockerfile$ScannedResult/buildDockerFolderTar(java.io.File)|",
+      "|java+constructor:///com/github/dockerjava/core/dockerfile/Dockerfile/Dockerfile(java.io.File)|",
+      "|java+method:///com/github/dockerjava/core/dockerfile/Dockerfile/parse()|",
+      "|java+method:///com/github/dockerjava/core/command/BuildImageCmdImpl/withDockerfile(java.io.File)|",
+      "|java+method:///java/io/File/exists()|",
+      "|java+method:///java/io/File/getParentFile()|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.Throwable)|",
+      "|java+method:///com/github/dockerjava/core/command/BuildImageCmdImpl/withTarInputStream(java.io.InputStream)|",
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object)|",
+      "|java+method:///com/github/dockerjava/core/command/BuildImageCmdImpl/withBaseDirectory(java.io.File)|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|",
+      "|java+method:///java/io/File/isFile()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/github/dockerjava/core/dockerfile/Dockerfile/Dockerfile(java.io.File,java.io.File)|",
+      "|java+method:///com/github/dockerjava/core/dockerfile/Dockerfile/parse()|",
+      "|java+method:///com/github/dockerjava/core/command/BuildImageCmdImpl/withDockerfile(java.io.File)|",
+      "|java+method:///java/io/File/exists()|",
+      "|java+method:///com/github/dockerjava/core/dockerfile/Dockerfile$ScannedResult/buildDockerFolderTar()|",
+      "|java+method:///java/io/File/getParentFile()|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.Throwable)|",
+      "|java+method:///com/github/dockerjava/core/command/BuildImageCmdImpl/withTarInputStream(java.io.InputStream)|",
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object)|",
+      "|java+method:///com/github/dockerjava/core/command/BuildImageCmdImpl/withBaseDirectory(java.io.File)|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|",
+      "|java+method:///java/io/File/isFile()|"
+    ],
+    "affectedLib": "com.google.guava:guava:19.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.servicemix.bundles:org.apache.servicemix.bundles.docker-java:2.1.3_1",
+    "coordinatesV2": "org.apache.servicemix.bundles:org.apache.servicemix.bundles.docker-java:3.0.6_1",
+    "caller": "|java+method:///com/github/dockerjava/core/command/CreateContainerCmdImpl/withCpuPeriod(java.lang.Integer)|",
+    "called": "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|",
+      "|java+method:///com/github/dockerjava/api/model/HostConfig/withCpuPeriod(java.lang.Integer)|"
+    ],
+    "affectedLib": "com.google.guava:guava:19.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.servicemix.bundles:org.apache.servicemix.bundles.docker-java:2.1.3_1",
+    "coordinatesV2": "org.apache.servicemix.bundles:org.apache.servicemix.bundles.docker-java:3.0.6_1",
+    "caller": "|java+constructor:///com/github/dockerjava/core/dockerfile/Dockerfile$ScannedResult/Dockerfile$ScannedResult(com.github.dockerjava.core.dockerfile.Dockerfile)|",
+    "called": "|java+method:///org/apache/commons/io/FileUtils/listFiles(java.io.File,org.apache.commons.io.filefilter.IOFileFilter,org.apache.commons.io.filefilter.IOFileFilter)|",
+    "v1Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///com/github/dockerjava/core/dockerfile/Dockerfile$ScannedResult/effectiveMatchingIgnorePattern(java.io.File)|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///com/github/dockerjava/core/dockerfile/Dockerfile$ScannedResult/processEnvStatement(com.github.dockerjava.core.dockerfile.DockerfileStatement$Env)|",
+      "|java+method:///com/github/dockerjava/core/dockerfile/Dockerfile/getIgnores()|",
+      "|java+method:///com/github/dockerjava/core/dockerfile/Dockerfile$ScannedResult/processAddStatement(com.github.dockerjava.core.dockerfile.DockerfileStatement$Add)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+method:///com/github/dockerjava/core/dockerfile/Dockerfile/getStatements()|",
+      "|java+constructor:///com/github/dockerjava/api/DockerClientException/DockerClientException(java.lang.String)|",
+      "|java+method:///java/lang/Iterable/iterator()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/github/dockerjava/core/dockerfile/Dockerfile/access$100(com.github.dockerjava.core.dockerfile.Dockerfile)|",
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///com/github/dockerjava/core/dockerfile/Dockerfile/getIgnores()|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+constructor:///com/github/dockerjava/api/exception/DockerClientException/DockerClientException(java.lang.String)|",
+      "|java+method:///com/github/dockerjava/core/dockerfile/Dockerfile$ScannedResult/effectiveMatchingIgnorePattern(java.io.File)|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///java/util/Collection/iterator()|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///org/apache/commons/io/FileUtils/listFiles(java.io.File,org.apache.commons.io.filefilter.IOFileFilter,org.apache.commons.io.filefilter.IOFileFilter)|"
+    ],
+    "affectedLib": "commons-io:commons-io:2.5",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.servicemix.bundles:org.apache.servicemix.bundles.docker-java:2.1.3_1",
+    "coordinatesV2": "org.apache.servicemix.bundles:org.apache.servicemix.bundles.docker-java:3.0.6_1",
+    "caller": "|java+method:///com/github/dockerjava/core/dockerfile/Dockerfile/getIgnores()|",
+    "called": "|java+method:///org/apache/commons/io/FileUtils/readLines(java.io.File)|",
+    "v1Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+constructor:///java/io/File/File(java.io.File,java.lang.String)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/apache/commons/io/FileUtils/readLines(java.io.File)|",
+      "|java+method:///java/lang/String/trim()|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///java/io/File/exists()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///com/github/dockerjava/core/dockerfile/Dockerfile/getDockerFolder()|",
+      "|java+method:///org/apache/commons/io/FilenameUtils/normalize(java.lang.String)|",
+      "|java+constructor:///com/github/dockerjava/api/DockerClientException/DockerClientException(java.lang.String)|",
+      "|java+method:///java/lang/String/isEmpty()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+constructor:///java/io/File/File(java.io.File,java.lang.String)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/apache/commons/io/FileUtils/readLines(java.io.File)|",
+      "|java+method:///java/lang/String/trim()|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///java/io/File/exists()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///org/apache/commons/io/FilenameUtils/normalize(java.lang.String)|",
+      "|java+constructor:///com/github/dockerjava/api/exception/DockerClientException/DockerClientException(java.lang.String)|",
+      "|java+method:///java/lang/String/isEmpty()|"
+    ],
+    "affectedLib": "commons-io:commons-io:2.5",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.servicemix.bundles:org.apache.servicemix.bundles.docker-java:2.1.3_1",
+    "coordinatesV2": "org.apache.servicemix.bundles:org.apache.servicemix.bundles.docker-java:3.0.6_1",
+    "caller": "|java+method:///com/github/dockerjava/core/dockerfile/Dockerfile/getStatements()|",
+    "called": "|java+method:///org/apache/commons/io/FileUtils/readLines(java.io.File)|",
+    "v1Body": [
+      "|java+method:///com/google/common/base/Optional/presentInstances(java.lang.Iterable)|",
+      "|java+constructor:///com/github/dockerjava/core/dockerfile/Dockerfile$LineTransformer/Dockerfile$LineTransformer(com.github.dockerjava.core.dockerfile.Dockerfile$1)|",
+      "|java+method:///org/apache/commons/io/FileUtils/readLines(java.io.File)|",
+      "|java+method:///com/google/common/collect/Collections2/transform(java.util.Collection,com.google.common.base.Function)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///java/util/Collection/size()|",
+      "|java+constructor:///com/github/dockerjava/api/DockerClientException/DockerClientException(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/common/base/Optional/presentInstances(java.lang.Iterable)|",
+      "|java+constructor:///com/github/dockerjava/core/dockerfile/Dockerfile$LineTransformer/Dockerfile$LineTransformer(com.github.dockerjava.core.dockerfile.Dockerfile$1)|",
+      "|java+method:///org/apache/commons/io/FileUtils/readLines(java.io.File)|",
+      "|java+method:///com/google/common/collect/Collections2/transform(java.util.Collection,com.google.common.base.Function)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///java/util/Collection/size()|",
+      "|java+constructor:///com/github/dockerjava/api/exception/DockerClientException/DockerClientException(java.lang.String)|"
+    ],
+    "affectedLib": "commons-io:commons-io:2.5",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.servicemix.bundles:org.apache.servicemix.bundles.docker-java:2.1.3_1",
+    "coordinatesV2": "org.apache.servicemix.bundles:org.apache.servicemix.bundles.docker-java:3.0.6_1",
+    "caller": "|java+method:///com/github/dockerjava/core/AuthConfigFile/loadConfig(java.io.File)|",
+    "called": "|java+method:///org/apache/commons/io/FileUtils/readLines(java.io.File)|",
+    "v1Body": [
+      "|java+method:///com/github/dockerjava/api/model/AuthConfig/setServerAddress(java.lang.String)|",
+      "|java+method:///com/github/dockerjava/api/model/AuthConfig/setAuth(java.lang.String)|",
+      "|java+method:///org/apache/commons/io/FileUtils/readLines(java.io.File)|",
+      "|java+method:///com/github/dockerjava/api/model/AuthConfig/setEmail(java.lang.String)|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///com/github/dockerjava/core/AuthConfigFile/decodeAuth(java.lang.String,com.github.dockerjava.api.model.AuthConfig)|",
+      "|java+method:///java/util/List/get(int)|",
+      "|java+method:///java/util/Map$Entry/getValue()|",
+      "|java+method:///java/lang/String/split(java.lang.String)|",
+      "|java+constructor:///java/io/IOException/IOException(java.lang.String)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///com/github/dockerjava/core/AuthConfigFile/addConfig(com.github.dockerjava.api.model.AuthConfig)|",
+      "|java+method:///java/util/Map$Entry/getKey()|",
+      "|java+constructor:///com/github/dockerjava/api/model/AuthConfig/AuthConfig()|",
+      "|java+method:///java/io/File/exists()|",
+      "|java+constructor:///com/github/dockerjava/core/AuthConfigFile/AuthConfigFile()|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/readValue(java.io.File,com.fasterxml.jackson.core.type.TypeReference)|",
+      "|java+method:///java/util/Set/iterator()|",
+      "|java+method:///java/util/Map/entrySet()|",
+      "|java+method:///com/github/dockerjava/api/model/AuthConfig/getAuth()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/github/dockerjava/api/model/AuthConfig/withAuth(java.lang.String)|",
+      "|java+method:///org/apache/commons/io/FileUtils/readLines(java.io.File)|",
+      "|java+method:///com/github/dockerjava/api/model/AuthConfig/withRegistryAddress(java.lang.String)|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///com/github/dockerjava/core/AuthConfigFile/decodeAuth(java.lang.String,com.github.dockerjava.api.model.AuthConfig)|",
+      "|java+method:///java/util/List/get(int)|",
+      "|java+method:///java/util/Map$Entry/getValue()|",
+      "|java+method:///java/lang/String/split(java.lang.String)|",
+      "|java+constructor:///java/io/IOException/IOException(java.lang.String)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///com/github/dockerjava/core/AuthConfigFile/addConfig(com.github.dockerjava.api.model.AuthConfig)|",
+      "|java+method:///java/util/Map$Entry/getKey()|",
+      "|java+constructor:///com/github/dockerjava/api/model/AuthConfig/AuthConfig()|",
+      "|java+method:///java/io/File/exists()|",
+      "|java+constructor:///com/github/dockerjava/core/AuthConfigFile/AuthConfigFile()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///com/github/dockerjava/api/model/AuthConfig/withEmail(java.lang.String)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/readValue(java.io.File,com.fasterxml.jackson.core.type.TypeReference)|",
+      "|java+method:///java/util/Set/iterator()|",
+      "|java+method:///java/util/Map/entrySet()|",
+      "|java+method:///com/github/dockerjava/api/model/AuthConfig/getAuth()|"
+    ],
+    "affectedLib": "commons-io:commons-io:2.5",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.servicemix.bundles:org.apache.servicemix.bundles.docker-java:2.1.3_1",
+    "coordinatesV2": "org.apache.servicemix.bundles:org.apache.servicemix.bundles.docker-java:3.0.6_1",
+    "caller": "|java+method:///com/github/dockerjava/core/dockerfile/Dockerfile$ScannedResult/buildDockerFolderTar(java.io.File)|",
+    "called": "|java+method:///org/apache/commons/io/FileUtils/deleteQuietly(java.io.File)|",
+    "v1Body": [
+      "|java+constructor:///com/github/dockerjava/core/dockerfile/Dockerfile$ScannedResult$1/Dockerfile$ScannedResult$1(com.github.dockerjava.core.dockerfile.Dockerfile$ScannedResult,java.io.InputStream,java.io.File)|",
+      "|java+method:///com/github/dockerjava/core/CompressArchiveUtil/archiveTARFiles(java.io.File,java.lang.Iterable,java.lang.String)|",
+      "|java+method:///java/util/UUID/randomUUID()|",
+      "|java+constructor:///com/github/dockerjava/api/DockerClientException/DockerClientException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/apache/commons/io/FileUtils/deleteQuietly(java.io.File)|",
+      "|java+method:///java/util/UUID/toString()|",
+      "|java+method:///org/apache/commons/io/FileUtils/openInputStream(java.io.File)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/github/dockerjava/core/util/CompressArchiveUtil/archiveTARFiles(java.io.File,java.lang.Iterable,java.lang.String)|",
+      "|java+constructor:///com/github/dockerjava/core/dockerfile/Dockerfile$ScannedResult$1/Dockerfile$ScannedResult$1(com.github.dockerjava.core.dockerfile.Dockerfile$ScannedResult,java.io.FileInputStream,java.io.File)|",
+      "|java+method:///java/util/UUID/randomUUID()|",
+      "|java+constructor:///com/github/dockerjava/api/exception/DockerClientException/DockerClientException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/apache/commons/io/FileUtils/deleteQuietly(java.io.File)|",
+      "|java+method:///java/io/File/length()|",
+      "|java+method:///java/util/UUID/toString()|",
+      "|java+method:///org/apache/commons/io/FileUtils/openInputStream(java.io.File)|"
+    ],
+    "affectedLib": "commons-io:commons-io:2.5",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.servicemix.bundles:org.apache.servicemix.bundles.docker-java:2.1.3_1",
+    "coordinatesV2": "org.apache.servicemix.bundles:org.apache.servicemix.bundles.docker-java:3.0.6_1",
+    "caller": "|java+method:///com/github/dockerjava/api/model/Ports$Serializer/serialize(com.github.dockerjava.api.model.Ports,com.fasterxml.jackson.core.JsonGenerator,com.fasterxml.jackson.databind.SerializerProvider)|",
+    "called": "|java+method:///com/fasterxml/jackson/core/JsonGenerator/writeStringField(java.lang.String,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///com/fasterxml/jackson/core/JsonGenerator/writeEndObject()|",
+      "|java+method:///java/util/Map$Entry/getKey()|",
+      "|java+method:///com/fasterxml/jackson/core/JsonGenerator/writeEndArray()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///com/fasterxml/jackson/core/JsonGenerator/writeNull()|",
+      "|java+method:///com/github/dockerjava/api/model/Ports/getBindings()|",
+      "|java+method:///java/util/Map$Entry/getValue()|",
+      "|java+method:///com/github/dockerjava/api/model/Ports$Binding/getHostIp()|",
+      "|java+method:///java/util/Map/entrySet()|",
+      "|java+method:///com/github/dockerjava/api/model/ExposedPort/toString()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///com/fasterxml/jackson/core/JsonGenerator/writeFieldName(java.lang.String)|",
+      "|java+method:///com/fasterxml/jackson/core/JsonGenerator/writeStartArray()|",
+      "|java+method:///com/fasterxml/jackson/core/JsonGenerator/writeStartObject()|",
+      "|java+method:///com/fasterxml/jackson/core/JsonGenerator/writeStringField(java.lang.String,java.lang.String)|",
+      "|java+method:///java/lang/Integer/toString()|",
+      "|java+method:///java/util/Set/iterator()|",
+      "|java+method:///com/github/dockerjava/api/model/Ports$Binding/getHostPort()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/fasterxml/jackson/core/JsonGenerator/writeEndObject()|",
+      "|java+method:///java/util/Map$Entry/getKey()|",
+      "|java+method:///com/fasterxml/jackson/core/JsonGenerator/writeStringField(java.lang.String,java.lang.String)|",
+      "|java+method:///com/fasterxml/jackson/core/JsonGenerator/writeEndArray()|",
+      "|java+method:///java/util/Set/iterator()|",
+      "|java+method:///com/fasterxml/jackson/core/JsonGenerator/writeNull()|",
+      "|java+method:///com/github/dockerjava/api/model/Ports/getBindings()|",
+      "|java+method:///java/util/Map$Entry/getValue()|",
+      "|java+method:///com/github/dockerjava/api/model/Ports$Binding/getHostIp()|",
+      "|java+method:///java/util/Map/entrySet()|",
+      "|java+method:///com/github/dockerjava/api/model/ExposedPort/toString()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///com/fasterxml/jackson/core/JsonGenerator/writeFieldName(java.lang.String)|",
+      "|java+method:///com/fasterxml/jackson/core/JsonGenerator/writeStartArray()|",
+      "|java+method:///com/fasterxml/jackson/core/JsonGenerator/writeStartObject()|",
+      "|java+method:///com/github/dockerjava/api/model/Ports$Binding/getHostPortSpec()|",
+      "|java+method:///java/util/Iterator/next()|"
+    ],
+    "affectedLib": "com.fasterxml.jackson.core:jackson-core:2.6.4",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.servicemix.bundles:org.apache.servicemix.bundles.docker-java:2.1.3_1",
+    "coordinatesV2": "org.apache.servicemix.bundles:org.apache.servicemix.bundles.docker-java:3.0.6_1",
+    "caller": "|java+method:///com/github/dockerjava/core/async/JsonStreamProcessor/processResponseStream(java.io.InputStream,com.github.dockerjava.api.async.ResultCallback)|",
+    "called": "|java+method:///com/fasterxml/jackson/core/JsonFactory/createParser(java.io.InputStream)|",
+    "v1Body": [
+      "|java+method:///com/github/dockerjava/api/async/ResultCallback/onStart(java.io.Closeable)|",
+      "|java+method:///com/github/dockerjava/api/async/ResultCallback/onComplete()|",
+      "|java+method:///com/github/dockerjava/api/async/ResultCallback/onError(java.lang.Throwable)|",
+      "|java+method:///com/fasterxml/jackson/core/JsonFactory/createParser(java.io.InputStream)|",
+      "|java+method:///com/github/dockerjava/api/async/ResultCallback/onNext(java.lang.Object)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/configure(com.fasterxml.jackson.core.JsonParser$Feature,boolean)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/readValue(com.fasterxml.jackson.core.JsonParser,java.lang.Class)|",
+      "|java+method:///com/fasterxml/jackson/core/JsonParser/nextToken()|",
+      "|java+method:///java/io/InputStream/close()|",
+      "|java+method:///com/fasterxml/jackson/core/JsonParser/isClosed()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/github/dockerjava/api/async/ResultCallback/onStart(java.io.Closeable)|",
+      "|java+method:///com/github/dockerjava/api/async/ResultCallback/onComplete()|",
+      "|java+method:///com/github/dockerjava/api/async/ResultCallback/onError(java.lang.Throwable)|",
+      "|java+method:///com/fasterxml/jackson/core/JsonFactory/createParser(java.io.InputStream)|",
+      "|java+method:///com/github/dockerjava/api/async/ResultCallback/onNext(java.lang.Object)|",
+      "|java+method:///java/lang/Boolean/valueOf(boolean)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/readTree(com.fasterxml.jackson.core.JsonParser)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/configure(com.fasterxml.jackson.core.JsonParser$Feature,boolean)|",
+      "|java+method:///java/lang/Boolean/booleanValue()|",
+      "|java+method:///com/fasterxml/jackson/core/JsonParser/nextToken()|",
+      "|java+method:///com/fasterxml/jackson/databind/node/ObjectNode/isEmpty(com.fasterxml.jackson.databind.SerializerProvider)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/treeToValue(com.fasterxml.jackson.core.TreeNode,java.lang.Class)|",
+      "|java+method:///java/io/InputStream/close()|",
+      "|java+method:///com/fasterxml/jackson/core/JsonParser/isClosed()|"
+    ],
+    "affectedLib": "com.fasterxml.jackson.core:jackson-core:2.6.4",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.servicemix.bundles:org.apache.servicemix.bundles.docker-java:2.1.3_1",
+    "coordinatesV2": "org.apache.servicemix.bundles:org.apache.servicemix.bundles.docker-java:3.0.6_1",
+    "caller": "|java+method:///com/github/dockerjava/api/model/Ports$Deserializer/deserialize(com.fasterxml.jackson.core.JsonParser,com.fasterxml.jackson.databind.DeserializationContext)|",
+    "called": "|java+method:///com/fasterxml/jackson/databind/JsonNode/fields()|",
+    "v1Body": [
+      "|java+method:///com/fasterxml/jackson/databind/JsonNode/size()|",
+      "|java+method:///com/fasterxml/jackson/databind/JsonNode/get(java.lang.String)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/util/Map$Entry/getKey()|",
+      "|java+method:///com/fasterxml/jackson/core/ObjectCodec/readTree(com.fasterxml.jackson.core.JsonParser)|",
+      "|java+method:///com/github/dockerjava/api/model/Ports$Deserializer/deserialize(com.fasterxml.jackson.core.JsonParser,com.fasterxml.jackson.databind.DeserializationContext)|",
+      "|java+method:///com/fasterxml/jackson/databind/node/NullNode/getInstance()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///com/fasterxml/jackson/databind/JsonNode/asInt()|",
+      "|java+method:///com/github/dockerjava/api/model/ExposedPort/parse(java.lang.String)|",
+      "|java+method:///java/util/Map$Entry/getValue()|",
+      "|java+method:///com/fasterxml/jackson/databind/JsonNode/fields()|",
+      "|java+method:///com/fasterxml/jackson/core/JsonParser/getCodec()|",
+      "|java+constructor:///com/github/dockerjava/api/model/Ports$Binding/Ports$Binding(java.lang.String,java.lang.Integer)|",
+      "|java+method:///com/fasterxml/jackson/databind/JsonNode/get(int)|",
+      "|java+method:///com/fasterxml/jackson/databind/JsonNode/equals(java.lang.Object)|",
+      "|java+constructor:///com/github/dockerjava/api/model/Ports/Ports()|",
+      "|java+method:///com/github/dockerjava/api/model/Ports/bind(com.github.dockerjava.api.model.ExposedPort,com.github.dockerjava.api.model.Ports$Binding)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///com/fasterxml/jackson/databind/JsonNode/textValue()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/fasterxml/jackson/databind/JsonNode/size()|",
+      "|java+method:///com/fasterxml/jackson/databind/JsonNode/get(java.lang.String)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/util/Map$Entry/getKey()|",
+      "|java+method:///com/fasterxml/jackson/core/ObjectCodec/readTree(com.fasterxml.jackson.core.JsonParser)|",
+      "|java+method:///com/github/dockerjava/api/model/Ports$Deserializer/deserialize(com.fasterxml.jackson.core.JsonParser,com.fasterxml.jackson.databind.DeserializationContext)|",
+      "|java+method:///com/fasterxml/jackson/databind/JsonNode/get(int)|",
+      "|java+method:///com/fasterxml/jackson/databind/node/NullNode/getInstance()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///com/github/dockerjava/api/model/ExposedPort/parse(java.lang.String)|",
+      "|java+method:///java/util/Map$Entry/getValue()|",
+      "|java+method:///com/fasterxml/jackson/databind/JsonNode/fields()|",
+      "|java+method:///com/fasterxml/jackson/core/JsonParser/getCodec()|",
+      "|java+method:///com/fasterxml/jackson/databind/JsonNode/equals(java.lang.Object)|",
+      "|java+constructor:///com/github/dockerjava/api/model/Ports/Ports()|",
+      "|java+method:///com/github/dockerjava/api/model/Ports/bind(com.github.dockerjava.api.model.ExposedPort,com.github.dockerjava.api.model.Ports$Binding)|",
+      "|java+constructor:///com/github/dockerjava/api/model/Ports$Binding/Ports$Binding(java.lang.String,java.lang.String)|",
+      "|java+method:///com/fasterxml/jackson/databind/JsonNode/textValue()|"
+    ],
+    "affectedLib": "com.fasterxml.jackson.core:jackson-databind:2.6.4",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.servicemix.bundles:org.apache.servicemix.bundles.docker-java:2.1.3_1",
+    "coordinatesV2": "org.apache.servicemix.bundles:org.apache.servicemix.bundles.docker-java:3.0.6_1",
+    "caller": "|java+method:///com/github/dockerjava/jaxrs/AbstrDockerCmdExec/registryConfigs(com.github.dockerjava.api.model.AuthConfigurations)|",
+    "called": "|java+constructor:///com/fasterxml/jackson/databind/ObjectMapper/ObjectMapper()|",
+    "v1Body": [
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.Throwable)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/writeValueAsString(java.lang.Object)|",
+      "|java+method:///org/apache/commons/codec/binary/Base64/encodeBase64String(byte%5B%5D)|",
+      "|java+constructor:///com/fasterxml/jackson/databind/ObjectMapper/ObjectMapper()|",
+      "|java+method:///com/github/dockerjava/api/model/AuthConfigurations/getConfigs()|",
+      "|java+method:///java/lang/String/getBytes()|",
+      "|java+method:///com/github/dockerjava/core/RemoteApiVersion/isGreaterOrEqual(com.github.dockerjava.core.RemoteApiVersion)|",
+      "|java+method:///com/github/dockerjava/core/DockerClientConfig/getVersion()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/valueToTree(java.lang.Object)|",
+      "|java+method:///com/fasterxml/jackson/databind/node/ObjectNode/toString()|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.Throwable)|",
+      "|java+method:///com/fasterxml/jackson/databind/node/ObjectNode/setAll(com.fasterxml.jackson.databind.node.ObjectNode)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/writeValueAsString(java.lang.Object)|",
+      "|java+method:///com/github/dockerjava/core/DockerClientConfig/getApiVersion()|",
+      "|java+constructor:///com/fasterxml/jackson/databind/ObjectMapper/ObjectMapper()|",
+      "|java+method:///com/github/dockerjava/api/model/AuthConfigurations/getConfigs()|",
+      "|java+method:///java/lang/String/getBytes()|",
+      "|java+method:///com/github/dockerjava/core/RemoteApiVersion/isGreaterOrEqual(com.github.dockerjava.core.RemoteApiVersion)|",
+      "|java+method:///com/github/dockerjava/core/RemoteApiVersion/equals(java.lang.Object)|",
+      "|java+method:///org/apache/commons/codec/binary/Base64/encodeBase64String(byte%5B%5D)|"
+    ],
+    "affectedLib": "com.fasterxml.jackson.core:jackson-databind:2.6.4",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.servicemix.bundles:org.apache.servicemix.bundles.docker-java:2.1.3_1",
+    "coordinatesV2": "org.apache.servicemix.bundles:org.apache.servicemix.bundles.docker-java:3.0.6_1",
+    "caller": "|java+method:///com/github/dockerjava/core/async/JsonStreamProcessor/processResponseStream(java.io.InputStream,com.github.dockerjava.api.async.ResultCallback)|",
+    "called": "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/treeToValue(com.fasterxml.jackson.core.TreeNode,java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///com/github/dockerjava/api/async/ResultCallback/onStart(java.io.Closeable)|",
+      "|java+method:///com/github/dockerjava/api/async/ResultCallback/onComplete()|",
+      "|java+method:///com/github/dockerjava/api/async/ResultCallback/onError(java.lang.Throwable)|",
+      "|java+method:///com/fasterxml/jackson/core/JsonFactory/createParser(java.io.InputStream)|",
+      "|java+method:///com/github/dockerjava/api/async/ResultCallback/onNext(java.lang.Object)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/configure(com.fasterxml.jackson.core.JsonParser$Feature,boolean)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/readValue(com.fasterxml.jackson.core.JsonParser,java.lang.Class)|",
+      "|java+method:///com/fasterxml/jackson/core/JsonParser/nextToken()|",
+      "|java+method:///java/io/InputStream/close()|",
+      "|java+method:///com/fasterxml/jackson/core/JsonParser/isClosed()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/github/dockerjava/api/async/ResultCallback/onStart(java.io.Closeable)|",
+      "|java+method:///com/github/dockerjava/api/async/ResultCallback/onComplete()|",
+      "|java+method:///com/github/dockerjava/api/async/ResultCallback/onError(java.lang.Throwable)|",
+      "|java+method:///com/fasterxml/jackson/core/JsonFactory/createParser(java.io.InputStream)|",
+      "|java+method:///com/github/dockerjava/api/async/ResultCallback/onNext(java.lang.Object)|",
+      "|java+method:///java/lang/Boolean/valueOf(boolean)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/readTree(com.fasterxml.jackson.core.JsonParser)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/configure(com.fasterxml.jackson.core.JsonParser$Feature,boolean)|",
+      "|java+method:///java/lang/Boolean/booleanValue()|",
+      "|java+method:///com/fasterxml/jackson/core/JsonParser/nextToken()|",
+      "|java+method:///com/fasterxml/jackson/databind/node/ObjectNode/isEmpty(com.fasterxml.jackson.databind.SerializerProvider)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/treeToValue(com.fasterxml.jackson.core.TreeNode,java.lang.Class)|",
+      "|java+method:///java/io/InputStream/close()|",
+      "|java+method:///com/fasterxml/jackson/core/JsonParser/isClosed()|"
+    ],
+    "affectedLib": "com.fasterxml.jackson.core:jackson-databind:2.6.4",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.servicemix.bundles:org.apache.servicemix.bundles.docker-java:2.1.3_1",
+    "coordinatesV2": "org.apache.servicemix.bundles:org.apache.servicemix.bundles.docker-java:3.0.6_1",
+    "caller": "|java+method:///com/github/dockerjava/jaxrs/CommitCmdExec/execute(com.github.dockerjava.api.command.CommitCmd)|",
+    "called": "|java+method:///com/fasterxml/jackson/databind/node/ObjectNode/get(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///com/fasterxml/jackson/databind/JsonNode/asText()|",
+      "|java+method:///com/github/dockerjava/api/command/CommitCmd/getRepository()|",
+      "|java+method:///com/github/dockerjava/api/command/CommitCmd/getTag()|",
+      "|java+method:///javax/ws/rs/client/Invocation$Builder/accept(java.lang.String%5B%5D)|",
+      "|java+method:///com/github/dockerjava/api/command/CommitCmd/getContainerId()|",
+      "|java+method:///org/slf4j/Logger/trace(java.lang.String,java.lang.Object)|",
+      "|java+method:///javax/ws/rs/client/WebTarget/path(java.lang.String)|",
+      "|java+method:///com/github/dockerjava/jaxrs/CommitCmdExec/getBaseResource()|",
+      "|java+method:///com/github/dockerjava/api/command/CommitCmd/getMessage()|",
+      "|java+method:///javax/ws/rs/client/Invocation$Builder/post(javax.ws.rs.client.Entity,java.lang.Class)|",
+      "|java+method:///com/github/dockerjava/api/command/CommitCmd/getAuthor()|",
+      "|java+method:///com/fasterxml/jackson/databind/node/ObjectNode/get(java.lang.String)|",
+      "|java+method:///com/github/dockerjava/api/command/CommitCmd/hasPauseEnabled()|",
+      "|java+method:///javax/ws/rs/client/WebTarget/request()|",
+      "|java+method:///javax/ws/rs/client/WebTarget/queryParam(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///javax/ws/rs/client/Entity/entity(java.lang.Object,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/fasterxml/jackson/databind/JsonNode/asText()|",
+      "|java+method:///com/github/dockerjava/api/command/CommitCmd/getRepository()|",
+      "|java+method:///com/github/dockerjava/jaxrs/CommitCmdExec/booleanQueryParam(javax.ws.rs.client.WebTarget,java.lang.String,java.lang.Boolean)|",
+      "|java+method:///com/github/dockerjava/api/command/CommitCmd/getTag()|",
+      "|java+method:///javax/ws/rs/client/Invocation$Builder/accept(java.lang.String%5B%5D)|",
+      "|java+method:///com/github/dockerjava/api/command/CommitCmd/getContainerId()|",
+      "|java+method:///org/slf4j/Logger/trace(java.lang.String,java.lang.Object)|",
+      "|java+method:///javax/ws/rs/client/WebTarget/path(java.lang.String)|",
+      "|java+method:///com/github/dockerjava/jaxrs/CommitCmdExec/getBaseResource()|",
+      "|java+method:///com/github/dockerjava/api/command/CommitCmd/getMessage()|",
+      "|java+method:///javax/ws/rs/client/Invocation$Builder/post(javax.ws.rs.client.Entity,java.lang.Class)|",
+      "|java+method:///com/github/dockerjava/api/command/CommitCmd/getAuthor()|",
+      "|java+method:///com/fasterxml/jackson/databind/node/ObjectNode/get(java.lang.String)|",
+      "|java+method:///com/github/dockerjava/api/command/CommitCmd/hasPauseEnabled()|",
+      "|java+method:///javax/ws/rs/client/WebTarget/request()|",
+      "|java+method:///javax/ws/rs/client/WebTarget/queryParam(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///javax/ws/rs/client/Entity/entity(java.lang.Object,java.lang.String)|"
+    ],
+    "affectedLib": "com.fasterxml.jackson.core:jackson-databind:2.6.4",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.servicemix.bundles:org.apache.servicemix.bundles.docker-java:2.1.3_1",
+    "coordinatesV2": "org.apache.servicemix.bundles:org.apache.servicemix.bundles.docker-java:3.0.6_1",
+    "caller": "|java+method:///com/github/dockerjava/api/model/Binds$Deserializer/deserialize(com.fasterxml.jackson.core.JsonParser,com.fasterxml.jackson.databind.DeserializationContext)|",
+    "called": "|java+method:///com/fasterxml/jackson/databind/JsonNode/elements()|",
+    "v1Body": [
+      "|java+method:///com/github/dockerjava/api/model/Bind/parse(java.lang.String)|",
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/util/Map$Entry/getKey()|",
+      "|java+method:///com/fasterxml/jackson/core/ObjectCodec/readTree(com.fasterxml.jackson.core.JsonParser)|",
+      "|java+method:///com/fasterxml/jackson/databind/JsonNode/equals(java.lang.Object)|",
+      "|java+method:///com/fasterxml/jackson/databind/node/NullNode/getInstance()|",
+      "|java+method:///java/util/List/toArray(java.lang.Object%5B%5D)|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///java/util/Map$Entry/getValue()|",
+      "|java+method:///com/fasterxml/jackson/databind/JsonNode/fields()|",
+      "|java+method:///com/fasterxml/jackson/core/JsonParser/getCodec()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+constructor:///com/github/dockerjava/api/model/Binds/Binds(com.github.dockerjava.api.model.Bind%5B%5D)|",
+      "|java+method:///com/github/dockerjava/api/model/Binds$Deserializer/deserialize(com.fasterxml.jackson.core.JsonParser,com.fasterxml.jackson.databind.DeserializationContext)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/github/dockerjava/api/model/Bind/parse(java.lang.String)|",
+      "|java+method:///com/fasterxml/jackson/databind/JsonNode/asText()|",
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///com/fasterxml/jackson/core/ObjectCodec/readTree(com.fasterxml.jackson.core.JsonParser)|",
+      "|java+method:///java/util/List/toArray(java.lang.Object%5B%5D)|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///com/fasterxml/jackson/databind/JsonNode/elements()|",
+      "|java+method:///com/fasterxml/jackson/core/JsonParser/getCodec()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+constructor:///com/github/dockerjava/api/model/Binds/Binds(com.github.dockerjava.api.model.Bind%5B%5D)|",
+      "|java+method:///com/github/dockerjava/api/model/Binds$Deserializer/deserialize(com.fasterxml.jackson.core.JsonParser,com.fasterxml.jackson.databind.DeserializationContext)|"
+    ],
+    "affectedLib": "com.fasterxml.jackson.core:jackson-databind:2.6.4",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.servicemix.bundles:org.apache.servicemix.bundles.docker-java:2.1.3_1",
+    "coordinatesV2": "org.apache.servicemix.bundles:org.apache.servicemix.bundles.docker-java:3.0.6_1",
+    "caller": "|java+method:///com/github/dockerjava/jaxrs/BuildImageCmdExec/callbackNotifier(com.github.dockerjava.api.command.BuildImageCmd,com.github.dockerjava.api.async.ResultCallback)|",
+    "called": "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/writeValueAsString(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///javax/ws/rs/client/WebTarget/property(java.lang.String,java.lang.Object)|",
+      "|java+method:///com/github/dockerjava/api/command/BuildImageCmd/hasPullEnabled()|",
+      "|java+method:///com/github/dockerjava/api/command/BuildImageCmd/hasRemoveEnabled()|",
+      "|java+method:///com/github/dockerjava/api/command/BuildImageCmd/getTag()|",
+      "|java+method:///com/github/dockerjava/api/command/BuildImageCmd/getMemory()|",
+      "|java+method:///com/github/dockerjava/api/command/BuildImageCmd/hasNoCacheEnabled()|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///javax/ws/rs/client/Invocation$Builder/accept(java.lang.String%5B%5D)|",
+      "|java+method:///org/slf4j/Logger/trace(java.lang.String,java.lang.Object)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+constructor:///com/github/dockerjava/jaxrs/async/POSTCallbackNotifier/POSTCallbackNotifier(com.github.dockerjava.core.async.ResponseStreamProcessor,com.github.dockerjava.api.async.ResultCallback,javax.ws.rs.client.Invocation$Builder,javax.ws.rs.client.Entity)|",
+      "|java+method:///com/github/dockerjava/api/command/BuildImageCmd/isQuiet()|",
+      "|java+constructor:///com/github/dockerjava/core/async/JsonStreamProcessor/JsonStreamProcessor(java.lang.Class)|",
+      "|java+method:///com/github/dockerjava/api/command/BuildImageCmd/getPathToDockerfile()|",
+      "|java+method:///com/github/dockerjava/jaxrs/BuildImageCmdExec/getBaseResource()|",
+      "|java+method:///java/net/URI/toString()|",
+      "|java+method:///com/github/dockerjava/api/command/BuildImageCmd/getCpushares()|",
+      "|java+method:///com/github/dockerjava/api/command/BuildImageCmd/getTarInputStream()|",
+      "|java+method:///com/github/dockerjava/api/command/BuildImageCmd/getCpusetcpus()|",
+      "|java+method:///com/github/dockerjava/api/command/BuildImageCmd/getRemote()|",
+      "|java+method:///com/github/dockerjava/jaxrs/BuildImageCmdExec/resourceWithOptionalAuthConfig(com.github.dockerjava.api.command.BuildImageCmd,javax.ws.rs.client.Invocation$Builder)|",
+      "|java+method:///com/github/dockerjava/api/command/BuildImageCmd/isForcerm()|",
+      "|java+method:///javax/ws/rs/client/WebTarget/request()|",
+      "|java+method:///javax/ws/rs/client/WebTarget/queryParam(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///javax/ws/rs/client/Entity/entity(java.lang.Object,java.lang.String)|",
+      "|java+method:///javax/ws/rs/client/WebTarget/path(java.lang.String)|",
+      "|java+method:///com/github/dockerjava/api/command/BuildImageCmd/getMemswap()|"
+    ],
+    "v2Body": [
+      "|java+method:///javax/ws/rs/client/WebTarget/property(java.lang.String,java.lang.Object)|",
+      "|java+method:///com/github/dockerjava/api/command/BuildImageCmd/getTag()|",
+      "|java+method:///com/github/dockerjava/api/command/BuildImageCmd/getMemory()|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///javax/ws/rs/client/Invocation$Builder/accept(java.lang.String%5B%5D)|",
+      "|java+method:///org/slf4j/Logger/trace(java.lang.String,java.lang.Object)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///com/github/dockerjava/api/command/BuildImageCmd/getBuildArgs()|",
+      "|java+constructor:///com/github/dockerjava/jaxrs/async/POSTCallbackNotifier/POSTCallbackNotifier(com.github.dockerjava.core.async.ResponseStreamProcessor,com.github.dockerjava.api.async.ResultCallback,javax.ws.rs.client.Invocation$Builder,javax.ws.rs.client.Entity)|",
+      "|java+method:///com/github/dockerjava/api/command/BuildImageCmd/isQuiet()|",
+      "|java+method:///com/github/dockerjava/api/command/BuildImageCmd/getPathToDockerfile()|",
+      "|java+method:///com/github/dockerjava/jaxrs/BuildImageCmdExec/getBaseResource()|",
+      "|java+method:///com/github/dockerjava/api/command/BuildImageCmd/hasPullEnabled()|",
+      "|java+method:///com/github/dockerjava/jaxrs/BuildImageCmdExec/booleanQueryParam(javax.ws.rs.client.WebTarget,java.lang.String,java.lang.Boolean)|",
+      "|java+method:///com/github/dockerjava/api/command/BuildImageCmd/hasRemoveEnabled()|",
+      "|java+method:///com/github/dockerjava/api/command/BuildImageCmd/getShmsize()|",
+      "|java+method:///java/net/URLEncoder/encode(java.lang.String,java.lang.String)|",
+      "|java+method:///java/net/URI/toString()|",
+      "|java+method:///com/github/dockerjava/api/command/BuildImageCmd/getCpushares()|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.Throwable)|",
+      "|java+method:///com/github/dockerjava/api/command/BuildImageCmd/hasNoCacheEnabled()|",
+      "|java+method:///java/util/Map/isEmpty()|",
+      "|java+method:///com/github/dockerjava/api/command/BuildImageCmd/getTarInputStream()|",
+      "|java+method:///com/github/dockerjava/api/command/BuildImageCmd/getCpusetcpus()|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/writeValueAsString(java.lang.Object)|",
+      "|java+method:///com/github/dockerjava/api/command/BuildImageCmd/getRemote()|",
+      "|java+method:///com/github/dockerjava/jaxrs/BuildImageCmdExec/resourceWithOptionalAuthConfig(com.github.dockerjava.api.command.BuildImageCmd,javax.ws.rs.client.Invocation$Builder)|",
+      "|java+method:///com/github/dockerjava/api/command/BuildImageCmd/isForcerm()|",
+      "|java+method:///javax/ws/rs/client/WebTarget/request()|",
+      "|java+method:///javax/ws/rs/client/WebTarget/queryParam(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///javax/ws/rs/client/Entity/entity(java.lang.Object,java.lang.String)|",
+      "|java+method:///javax/ws/rs/client/WebTarget/path(java.lang.String)|",
+      "|java+method:///com/github/dockerjava/api/command/BuildImageCmd/getMemswap()|",
+      "|java+method:///java/lang/Boolean/booleanValue()|",
+      "|java+constructor:///com/github/dockerjava/core/async/JsonStreamProcessor/JsonStreamProcessor(java.lang.Class)|"
+    ],
+    "affectedLib": "com.fasterxml.jackson.core:jackson-databind:2.6.4",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.servicemix.bundles:org.apache.servicemix.bundles.docker-java:2.1.3_1",
+    "coordinatesV2": "org.apache.servicemix.bundles:org.apache.servicemix.bundles.docker-java:3.0.6_1",
+    "caller": "|java+method:///com/github/dockerjava/core/AuthConfigFile/loadConfig(java.io.File)|",
+    "called": "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/readValue(java.io.File,com.fasterxml.jackson.core.type.TypeReference)|",
+    "v1Body": [
+      "|java+method:///com/github/dockerjava/api/model/AuthConfig/setServerAddress(java.lang.String)|",
+      "|java+method:///com/github/dockerjava/api/model/AuthConfig/setAuth(java.lang.String)|",
+      "|java+method:///org/apache/commons/io/FileUtils/readLines(java.io.File)|",
+      "|java+method:///com/github/dockerjava/api/model/AuthConfig/setEmail(java.lang.String)|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///com/github/dockerjava/core/AuthConfigFile/decodeAuth(java.lang.String,com.github.dockerjava.api.model.AuthConfig)|",
+      "|java+method:///java/util/List/get(int)|",
+      "|java+method:///java/util/Map$Entry/getValue()|",
+      "|java+method:///java/lang/String/split(java.lang.String)|",
+      "|java+constructor:///java/io/IOException/IOException(java.lang.String)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///com/github/dockerjava/core/AuthConfigFile/addConfig(com.github.dockerjava.api.model.AuthConfig)|",
+      "|java+method:///java/util/Map$Entry/getKey()|",
+      "|java+constructor:///com/github/dockerjava/api/model/AuthConfig/AuthConfig()|",
+      "|java+method:///java/io/File/exists()|",
+      "|java+constructor:///com/github/dockerjava/core/AuthConfigFile/AuthConfigFile()|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/readValue(java.io.File,com.fasterxml.jackson.core.type.TypeReference)|",
+      "|java+method:///java/util/Set/iterator()|",
+      "|java+method:///java/util/Map/entrySet()|",
+      "|java+method:///com/github/dockerjava/api/model/AuthConfig/getAuth()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/github/dockerjava/api/model/AuthConfig/withAuth(java.lang.String)|",
+      "|java+method:///org/apache/commons/io/FileUtils/readLines(java.io.File)|",
+      "|java+method:///com/github/dockerjava/api/model/AuthConfig/withRegistryAddress(java.lang.String)|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///com/github/dockerjava/core/AuthConfigFile/decodeAuth(java.lang.String,com.github.dockerjava.api.model.AuthConfig)|",
+      "|java+method:///java/util/List/get(int)|",
+      "|java+method:///java/util/Map$Entry/getValue()|",
+      "|java+method:///java/lang/String/split(java.lang.String)|",
+      "|java+constructor:///java/io/IOException/IOException(java.lang.String)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///com/github/dockerjava/core/AuthConfigFile/addConfig(com.github.dockerjava.api.model.AuthConfig)|",
+      "|java+method:///java/util/Map$Entry/getKey()|",
+      "|java+constructor:///com/github/dockerjava/api/model/AuthConfig/AuthConfig()|",
+      "|java+method:///java/io/File/exists()|",
+      "|java+constructor:///com/github/dockerjava/core/AuthConfigFile/AuthConfigFile()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///com/github/dockerjava/api/model/AuthConfig/withEmail(java.lang.String)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/readValue(java.io.File,com.fasterxml.jackson.core.type.TypeReference)|",
+      "|java+method:///java/util/Set/iterator()|",
+      "|java+method:///java/util/Map/entrySet()|",
+      "|java+method:///com/github/dockerjava/api/model/AuthConfig/getAuth()|"
+    ],
+    "affectedLib": "com.fasterxml.jackson.core:jackson-databind:2.6.4",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.servicemix.bundles:org.apache.servicemix.bundles.docker-java:2.1.3_1",
+    "coordinatesV2": "org.apache.servicemix.bundles:org.apache.servicemix.bundles.docker-java:3.0.6_1",
+    "caller": "|java+initializer:///com/github/dockerjava/jaxrs/BuildImageCmdExec/BuildImageCmdExec$initializer|",
+    "called": "|java+constructor:///com/fasterxml/jackson/databind/ObjectMapper/ObjectMapper()|",
+    "v1Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+constructor:///com/fasterxml/jackson/databind/ObjectMapper/ObjectMapper()|"
+    ],
+    "affectedLib": "com.fasterxml.jackson.core:jackson-databind:2.6.4",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.servicemix.bundles:org.apache.servicemix.bundles.docker-java:2.1.3_1",
+    "coordinatesV2": "org.apache.servicemix.bundles:org.apache.servicemix.bundles.docker-java:3.0.6_1",
+    "caller": "|java+method:///com/github/dockerjava/core/LocalDirectorySSLConfig/getSSLContext()|",
+    "called": "|java+constructor:///org/bouncycastle/jce/provider/BouncyCastleProvider/BouncyCastleProvider()|",
+    "v1Body": [
+      "|java+method:///org/glassfish/jersey/SslConfigurator/keyStore(java.security.KeyStore)|",
+      "|java+method:///org/glassfish/jersey/SslConfigurator/createSSLContext()|",
+      "|java+method:///com/github/dockerjava/core/CertificateUtils/verifyCertificatesExist(java.lang.String)|",
+      "|java+method:///org/glassfish/jersey/SslConfigurator/trustStore(java.security.KeyStore)|",
+      "|java+method:///java/security/Security/addProvider(java.security.Provider)|",
+      "|java+method:///com/github/dockerjava/core/CertificateUtils/createTrustStore(java.lang.String)|",
+      "|java+constructor:///com/github/dockerjava/api/DockerClientException/DockerClientException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/lang/System/getProperty(java.lang.String)|",
+      "|java+method:///java/lang/System/setProperty(java.lang.String,java.lang.String)|",
+      "|java+method:///org/glassfish/jersey/SslConfigurator/newInstance(boolean)|",
+      "|java+method:///org/glassfish/jersey/SslConfigurator/keyStorePassword(java.lang.String)|",
+      "|java+method:///java/lang/Exception/getMessage()|",
+      "|java+constructor:///org/bouncycastle/jce/provider/BouncyCastleProvider/BouncyCastleProvider()|",
+      "|java+method:///com/github/dockerjava/core/CertificateUtils/createKeyStore(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/glassfish/jersey/SslConfigurator/keyStore(java.security.KeyStore)|",
+      "|java+method:///org/glassfish/jersey/SslConfigurator/createSSLContext()|",
+      "|java+method:///com/github/dockerjava/core/util/CertificateUtils/createTrustStore(java.lang.String)|",
+      "|java+constructor:///org/bouncycastle/jce/provider/BouncyCastleProvider/BouncyCastleProvider()|",
+      "|java+method:///com/github/dockerjava/core/util/CertificateUtils/verifyCertificatesExist(java.lang.String)|",
+      "|java+method:///java/nio/file/Paths/get(java.lang.String,java.lang.String%5B%5D)|",
+      "|java+constructor:///com/github/dockerjava/api/exception/DockerClientException/DockerClientException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/lang/System/setProperty(java.lang.String,java.lang.String)|",
+      "|java+method:///org/glassfish/jersey/SslConfigurator/newInstance(boolean)|",
+      "|java+method:///com/github/dockerjava/core/util/CertificateUtils/createKeyStore(java.lang.String,java.lang.String)|",
+      "|java+method:///org/glassfish/jersey/SslConfigurator/keyStorePassword(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/glassfish/jersey/SslConfigurator/trustStore(java.security.KeyStore)|",
+      "|java+method:///java/nio/file/Files/readAllBytes(java.nio.file.Path)|",
+      "|java+method:///java/security/Security/addProvider(java.security.Provider)|",
+      "|java+method:///java/lang/System/getProperty(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///java/lang/String/String(byte%5B%5D)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/Exception/getMessage()|"
+    ],
+    "affectedLib": "org.bouncycastle:bcprov-jdk15on:1.54",
+    "change": "UPDATED"
+  }
+]

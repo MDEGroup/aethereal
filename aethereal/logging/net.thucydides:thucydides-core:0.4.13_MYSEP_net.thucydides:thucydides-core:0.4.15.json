@@ -1,0 +1,972 @@
+[
+  {
+    "coordinatesV1": "net.thucydides:thucydides-core:0.4.15",
+    "coordinatesV2": "net.thucydides:thucydides-core:0.4.13",
+    "caller": "|java+method:///net/thucydides/core/steps/AnnotatedStepDescription/getNameFromStepAnnotationIn(java.lang.reflect.Method)|",
+    "called": "|java+method:///org/apache/commons/lang/StringUtils/isEmpty(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/lang/StringUtils/isEmpty(java.lang.String)|",
+      "|java+method:///java/lang/reflect/Method/getAnnotation(java.lang.Class)|",
+      "|java+method:///net/thucydides/core/annotations/Step/value()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/reflect/Method/getAnnotation(java.lang.Class)|",
+      "|java+method:///net/thucydides/core/annotations/Step/value()|",
+      "|java+method:///org/apache/commons/lang3/StringUtils/isEmpty(java.lang.CharSequence)|"
+    ],
+    "affectedLib": "commons-lang:commons-lang:2.6",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "net.thucydides:thucydides-core:0.4.15",
+    "coordinatesV2": "net.thucydides:thucydides-core:0.4.13",
+    "caller": "|java+method:///net/thucydides/core/pages/WebElementFacade/getTextValue()|",
+    "called": "|java+method:///org/apache/commons/lang/StringUtils/isEmpty(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/lang/StringUtils/isEmpty(java.lang.String)|",
+      "|java+method:///net/thucydides/core/pages/WebElementFacade/getValue()|",
+      "|java+method:///org/openqa/selenium/WebElement/getText()|",
+      "|java+method:///net/thucydides/core/pages/WebElementFacade/waitUntilVisible()|"
+    ],
+    "v2Body": [
+      "|java+method:///net/thucydides/core/pages/WebElementFacade/waitUntilPresent()|",
+      "|java+method:///net/thucydides/core/pages/WebElementFacade/isVisible()|",
+      "|java+method:///net/thucydides/core/pages/WebElementFacade/getValue()|",
+      "|java+method:///org/apache/commons/lang3/StringUtils/isEmpty(java.lang.CharSequence)|",
+      "|java+method:///org/openqa/selenium/WebElement/getText()|"
+    ],
+    "affectedLib": "commons-lang:commons-lang:2.6",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "net.thucydides:thucydides-core:0.4.15",
+    "coordinatesV2": "net.thucydides:thucydides-core:0.4.13",
+    "caller": "|java+method:///net/thucydides/core/model/ReportNamer/appendToIfNotNull(java.lang.String,java.lang.String)|",
+    "called": "|java+method:///org/apache/commons/lang/StringUtils/isNotEmpty(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/commons/lang/StringUtils/isNotEmpty(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/commons/lang3/StringUtils/isNotEmpty(java.lang.CharSequence)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "affectedLib": "commons-lang:commons-lang:2.6",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "net.thucydides:thucydides-core:0.4.15",
+    "coordinatesV2": "net.thucydides:thucydides-core:0.4.13",
+    "caller": "|java+method:///net/thucydides/core/pages/PageObject/updateUrlWithBaseUrlIfDefined(java.lang.String)|",
+    "called": "|java+method:///org/apache/commons/lang/StringUtils/isEmpty(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///net/thucydides/core/ThucydidesSystemProperty/getPropertyName()|",
+      "|java+method:///org/apache/commons/lang/StringUtils/isEmpty(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///net/thucydides/core/pages/PageObject/replaceHost(java.lang.String,java.lang.String)|",
+      "|java+method:///java/lang/System/getProperty(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///net/thucydides/core/ThucydidesSystemProperty/getPropertyName()|",
+      "|java+method:///net/thucydides/core/pages/PageObject/replaceHost(java.lang.String,java.lang.String)|",
+      "|java+method:///java/lang/System/getProperty(java.lang.String)|",
+      "|java+method:///org/apache/commons/lang3/StringUtils/isEmpty(java.lang.CharSequence)|"
+    ],
+    "affectedLib": "commons-lang:commons-lang:2.6",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "net.thucydides:thucydides-core:0.4.15",
+    "coordinatesV2": "net.thucydides:thucydides-core:0.4.13",
+    "caller": "|java+method:///net/thucydides/core/model/StoryTestResults/getTitle()|",
+    "called": "|java+method:///org/apache/commons/lang/StringUtils/capitalize(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/lang/StringUtils/capitalize(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/lang3/StringUtils/capitalize(java.lang.String)|"
+    ],
+    "affectedLib": "commons-lang:commons-lang:2.6",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "net.thucydides:thucydides-core:0.4.15",
+    "coordinatesV2": "net.thucydides:thucydides-core:0.4.13",
+    "caller": "|java+method:///net/thucydides/core/model/StoryTestResults/getFormattedIssues()|",
+    "called": "|java+method:///org/apache/commons/lang/StringUtils/join(java.util.Collection,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///net/thucydides/core/model/StoryTestResults/getFormatter()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///ch/lambdaj/Lambda/sort(java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///ch/lambdaj/Lambda/on(java.lang.Class)|",
+      "|java+method:///net/thucydides/core/model/StoryTestResults/getIssues()|",
+      "|java+method:///org/apache/commons/lang/StringUtils/join(java.util.Collection,java.lang.String)|",
+      "|java+method:///java/lang/String/toString()|",
+      "|java+method:///java/util/Set/isEmpty()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///net/thucydides/core/reports/html/Formatter/addLinks(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///net/thucydides/core/model/StoryTestResults/getFormatter()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///ch/lambdaj/Lambda/sort(java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///ch/lambdaj/Lambda/on(java.lang.Class)|",
+      "|java+method:///net/thucydides/core/model/StoryTestResults/getIssues()|",
+      "|java+method:///java/lang/String/toString()|",
+      "|java+method:///java/util/Set/isEmpty()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/apache/commons/lang3/StringUtils/join(java.lang.Iterable,java.lang.String)|",
+      "|java+method:///net/thucydides/core/reports/html/Formatter/addLinks(java.lang.String)|"
+    ],
+    "affectedLib": "commons-lang:commons-lang:2.6",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "net.thucydides:thucydides-core:0.4.15",
+    "coordinatesV2": "net.thucydides:thucydides-core:0.4.13",
+    "caller": "|java+method:///net/thucydides/core/steps/AnnotatedStepDescription/stepName()|",
+    "called": "|java+method:///org/apache/commons/lang/StringUtils/isEmpty(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/lang/StringUtils/isEmpty(java.lang.String)|",
+      "|java+method:///net/thucydides/core/steps/AnnotatedStepDescription/getAnnotatedTitle()|",
+      "|java+method:///net/thucydides/core/steps/AnnotatedStepDescription/getAnnotatedStepName()|",
+      "|java+method:///net/thucydides/core/util/NameConverter/humanize(java.lang.String)|",
+      "|java+method:///net/thucydides/core/steps/ExecutedStepDescription/getName()|"
+    ],
+    "v2Body": [
+      "|java+method:///net/thucydides/core/steps/AnnotatedStepDescription/getAnnotatedTitle()|",
+      "|java+method:///net/thucydides/core/steps/AnnotatedStepDescription/getAnnotatedStepName()|",
+      "|java+method:///net/thucydides/core/steps/ExecutedStepDescription/getName()|",
+      "|java+method:///net/thucydides/core/util/NameConverter/humanize(java.lang.String)|",
+      "|java+method:///org/apache/commons/lang3/StringUtils/isEmpty(java.lang.CharSequence)|"
+    ],
+    "affectedLib": "commons-lang:commons-lang:2.6",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "net.thucydides:thucydides-core:0.4.15",
+    "coordinatesV2": "net.thucydides:thucydides-core:0.4.13",
+    "caller": "|java+method:///net/thucydides/core/steps/StepInterceptor/readableFormOf(java.lang.Object)|",
+    "called": "|java+method:///org/apache/commons/lang/ArrayUtils/toString(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///java/lang/Class/isArray()|",
+      "|java+method:///java/lang/Object/toString()|",
+      "|java+method:///org/apache/commons/lang/ArrayUtils/toString(java.lang.Object)|",
+      "|java+method:///java/lang/Object/getClass()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Class/isArray()|",
+      "|java+method:///org/apache/commons/lang3/ArrayUtils/toString(java.lang.Object)|",
+      "|java+method:///java/lang/Object/toString()|",
+      "|java+method:///java/lang/Object/getClass()|"
+    ],
+    "affectedLib": "commons-lang:commons-lang:2.6",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "net.thucydides:thucydides-core:0.4.15",
+    "coordinatesV2": "net.thucydides:thucydides-core:0.4.13",
+    "caller": "|java+method:///net/thucydides/core/model/ErrorMessageFormatter/getShortErrorMessage()|",
+    "called": "|java+method:///org/apache/commons/lang/StringUtils/trimToEmpty(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///net/thucydides/core/model/ErrorMessageFormatter/replaceDoubleQuotes(java.lang.String)|",
+      "|java+method:///java/lang/String/split(java.lang.String)|",
+      "|java+method:///org/apache/commons/lang/StringUtils/trimToEmpty(java.lang.String)|",
+      "|java+method:///net/thucydides/core/model/ErrorMessageFormatter/removeLeadingExceptionFrom(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///net/thucydides/core/model/ErrorMessageFormatter/replaceDoubleQuotes(java.lang.String)|",
+      "|java+method:///java/lang/String/split(java.lang.String)|",
+      "|java+method:///org/apache/commons/lang3/StringUtils/trimToEmpty(java.lang.String)|",
+      "|java+method:///net/thucydides/core/model/ErrorMessageFormatter/removeLeadingExceptionFrom(java.lang.String)|"
+    ],
+    "affectedLib": "commons-lang:commons-lang:2.6",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "net.thucydides:thucydides-core:0.4.15",
+    "coordinatesV2": "net.thucydides:thucydides-core:0.4.13",
+    "caller": "|java+method:///net/thucydides/core/resources/FileResources/directoryIn(java.lang.String)|",
+    "called": "|java+method:///org/apache/commons/lang/StringUtils/lastIndexOf(java.lang.String,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/lang/String/substring(int,int)|",
+      "|java+method:///java/lang/String/contains(java.lang.CharSequence)|",
+      "|java+method:///org/apache/commons/lang/StringUtils/lastIndexOf(java.lang.String,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/lang3/StringUtils/lastIndexOf(java.lang.CharSequence,java.lang.CharSequence)|",
+      "|java+method:///java/lang/String/substring(int,int)|",
+      "|java+method:///java/lang/String/contains(java.lang.CharSequence)|"
+    ],
+    "affectedLib": "commons-lang:commons-lang:2.6",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "net.thucydides:thucydides-core:0.4.15",
+    "coordinatesV2": "net.thucydides:thucydides-core:0.4.13",
+    "caller": "|java+method:///net/thucydides/core/pages/Pages/getDefaultBaseUrl()|",
+    "called": "|java+method:///org/apache/commons/lang/StringUtils/isNotEmpty(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/lang/StringUtils/isNotEmpty(java.lang.String)|",
+      "|java+method:///net/thucydides/core/pages/PageConfiguration/getCurrentConfiguration()|",
+      "|java+method:///net/thucydides/core/pages/PageConfiguration/getBaseUrl()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/lang3/StringUtils/isNotEmpty(java.lang.CharSequence)|",
+      "|java+method:///net/thucydides/core/pages/PageConfiguration/getCurrentConfiguration()|",
+      "|java+method:///net/thucydides/core/pages/PageConfiguration/getBaseUrl()|"
+    ],
+    "affectedLib": "commons-lang:commons-lang:2.6",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "net.thucydides:thucydides-core:0.4.15",
+    "coordinatesV2": "net.thucydides:thucydides-core:0.4.13",
+    "caller": "|java+method:///net/thucydides/core/util/NameConverter/humanize(java.lang.String)|",
+    "called": "|java+method:///org/apache/commons/lang/StringUtils/capitalize(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///net/thucydides/core/util/NameConverter/splitCamelCase(java.lang.String)|",
+      "|java+method:///java/lang/String/replaceAll(java.lang.String,java.lang.String)|",
+      "|java+method:///java/lang/String/trim()|",
+      "|java+method:///net/thucydides/core/util/NameConverter/humanizeNameWithParameters(java.lang.String)|",
+      "|java+method:///java/lang/String/contains(java.lang.CharSequence)|",
+      "|java+method:///java/util/Locale/getDefault()|",
+      "|java+method:///java/lang/String/toLowerCase(java.util.Locale)|",
+      "|java+method:///java/lang/String/length()|",
+      "|java+method:///net/thucydides/core/util/NameConverter/thereAreParametersIn(java.lang.String)|",
+      "|java+method:///org/apache/commons/lang/StringUtils/capitalize(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///net/thucydides/core/util/NameConverter/splitCamelCase(java.lang.String)|",
+      "|java+method:///java/lang/String/replaceAll(java.lang.String,java.lang.String)|",
+      "|java+method:///java/lang/String/trim()|",
+      "|java+method:///net/thucydides/core/util/NameConverter/thereAreParametersIn(java.lang.String)|",
+      "|java+method:///net/thucydides/core/util/NameConverter/humanizeNameWithParameters(java.lang.String)|",
+      "|java+method:///org/apache/commons/lang3/StringUtils/capitalize(java.lang.String)|",
+      "|java+method:///java/lang/String/contains(java.lang.CharSequence)|",
+      "|java+method:///java/util/Locale/getDefault()|",
+      "|java+method:///java/lang/String/toLowerCase(java.util.Locale)|",
+      "|java+method:///java/lang/String/length()|"
+    ],
+    "affectedLib": "commons-lang:commons-lang:2.6",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "net.thucydides:thucydides-core:0.4.15",
+    "coordinatesV2": "net.thucydides:thucydides-core:0.4.13",
+    "caller": "|java+method:///net/thucydides/core/model/TestOutcome/getFormattedIssues()|",
+    "called": "|java+method:///org/apache/commons/lang/StringUtils/join(java.util.Collection,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///net/thucydides/core/model/TestOutcome/getFormatter()|",
+      "|java+method:///net/thucydides/core/model/TestOutcome/getIssues()|",
+      "|java+method:///ch/lambdaj/Lambda/sort(java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///ch/lambdaj/Lambda/on(java.lang.Class)|",
+      "|java+method:///org/apache/commons/lang/StringUtils/join(java.util.Collection,java.lang.String)|",
+      "|java+method:///java/lang/String/toString()|",
+      "|java+method:///java/util/Set/isEmpty()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///net/thucydides/core/reports/html/Formatter/addLinks(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///net/thucydides/core/model/TestOutcome/getFormatter()|",
+      "|java+method:///net/thucydides/core/model/TestOutcome/getIssues()|",
+      "|java+method:///ch/lambdaj/Lambda/sort(java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///ch/lambdaj/Lambda/on(java.lang.Class)|",
+      "|java+method:///java/lang/String/toString()|",
+      "|java+method:///java/util/Set/isEmpty()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/apache/commons/lang3/StringUtils/join(java.lang.Iterable,java.lang.String)|",
+      "|java+method:///net/thucydides/core/reports/html/Formatter/addLinks(java.lang.String)|"
+    ],
+    "affectedLib": "commons-lang:commons-lang:2.6",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "net.thucydides:thucydides-core:0.4.15",
+    "coordinatesV2": "net.thucydides:thucydides-core:0.4.13",
+    "caller": "|java+method:///net/thucydides/core/resources/FileResources/findTargetSubdirectoryFrom(java.lang.String)|",
+    "called": "|java+method:///org/apache/commons/lang/StringUtils/lastIndexOf(java.lang.String,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/lang/String/length()|",
+      "|java+method:///net/thucydides/core/resources/FileResources/directoryIn(java.lang.String)|",
+      "|java+method:///java/lang/String/substring(int)|",
+      "|java+method:///org/apache/commons/lang/StringUtils/lastIndexOf(java.lang.String,java.lang.String)|",
+      "|java+method:///net/thucydides/core/resources/FileResources/stripLeadingSeparatorFrom(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/lang3/StringUtils/lastIndexOf(java.lang.CharSequence,java.lang.CharSequence)|",
+      "|java+method:///java/lang/String/length()|",
+      "|java+method:///net/thucydides/core/resources/FileResources/directoryIn(java.lang.String)|",
+      "|java+method:///java/lang/String/substring(int)|",
+      "|java+method:///net/thucydides/core/resources/FileResources/stripLeadingSeparatorFrom(java.lang.String)|"
+    ],
+    "affectedLib": "commons-lang:commons-lang:2.6",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "net.thucydides:thucydides-core:0.4.15",
+    "coordinatesV2": "net.thucydides:thucydides-core:0.4.13",
+    "caller": "|java+method:///net/thucydides/core/reports/xml/TestOutcomeConverter/writeErrorMessageAndException(com.thoughtworks.xstream.io.HierarchicalStreamWriter,net.thucydides.core.model.TestStep)|",
+    "called": "|java+method:///org/apache/commons/lang/StringUtils/isEmpty(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/lang/StringUtils/isEmpty(java.lang.String)|",
+      "|java+method:///net/thucydides/core/model/TestStep/getErrorMessage()|",
+      "|java+method:///net/thucydides/core/reports/xml/TestOutcomeConverter/writeErrorMessageNode(com.thoughtworks.xstream.io.HierarchicalStreamWriter,java.lang.String)|",
+      "|java+method:///net/thucydides/core/reports/xml/TestOutcomeConverter/writeExceptionNode(com.thoughtworks.xstream.io.HierarchicalStreamWriter,java.lang.Throwable)|",
+      "|java+method:///net/thucydides/core/model/TestStep/getException()|"
+    ],
+    "v2Body": [
+      "|java+method:///net/thucydides/core/model/TestStep/getErrorMessage()|",
+      "|java+method:///net/thucydides/core/reports/xml/TestOutcomeConverter/writeErrorMessageNode(com.thoughtworks.xstream.io.HierarchicalStreamWriter,java.lang.String)|",
+      "|java+method:///net/thucydides/core/reports/xml/TestOutcomeConverter/writeExceptionNode(com.thoughtworks.xstream.io.HierarchicalStreamWriter,java.lang.Throwable)|",
+      "|java+method:///net/thucydides/core/model/TestStep/getException()|",
+      "|java+method:///org/apache/commons/lang3/StringUtils/isEmpty(java.lang.CharSequence)|"
+    ],
+    "affectedLib": "commons-lang:commons-lang:2.6",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "net.thucydides:thucydides-core:0.4.15",
+    "coordinatesV2": "net.thucydides:thucydides-core:0.4.13",
+    "caller": "|java+method:///net/thucydides/core/csv/InstanceBuilder/invokeConstructorFor(java.lang.Class,java.lang.Object%5B%5D)|",
+    "called": "|java+method:///org/apache/commons/lang/ArrayUtils/toString(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///java/lang/reflect/Constructor/newInstance(java.lang.Object%5B%5D)|",
+      "|java+constructor:///java/lang/IllegalStateException/IllegalStateException(java.lang.String)|",
+      "|java+method:///java/lang/reflect/Constructor/getParameterTypes()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/commons/lang/ArrayUtils/toString(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/lang/Class/getDeclaredConstructors()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/reflect/Constructor/newInstance(java.lang.Object%5B%5D)|",
+      "|java+method:///java/lang/reflect/Constructor/getParameterTypes()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///java/lang/IllegalStateException/IllegalStateException(java.lang.String)|",
+      "|java+method:///org/apache/commons/lang3/ArrayUtils/toString(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/lang/Class/getDeclaredConstructors()|"
+    ],
+    "affectedLib": "commons-lang:commons-lang:2.6",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "net.thucydides:thucydides-core:0.4.15",
+    "coordinatesV2": "net.thucydides:thucydides-core:0.4.13",
+    "caller": "|java+method:///net/thucydides/core/resources/FileResources/filenameIn(java.lang.String)|",
+    "called": "|java+method:///org/apache/commons/lang/StringUtils/lastIndexOf(java.lang.String,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/lang/String/substring(int)|",
+      "|java+method:///java/lang/String/contains(java.lang.CharSequence)|",
+      "|java+method:///org/apache/commons/lang/StringUtils/lastIndexOf(java.lang.String,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/lang3/StringUtils/lastIndexOf(java.lang.CharSequence,java.lang.CharSequence)|",
+      "|java+method:///java/lang/String/substring(int)|",
+      "|java+method:///java/lang/String/contains(java.lang.CharSequence)|"
+    ],
+    "affectedLib": "commons-lang:commons-lang:2.6",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "net.thucydides:thucydides-core:0.4.15",
+    "coordinatesV2": "net.thucydides:thucydides-core:0.4.13",
+    "caller": "|java+method:///net/thucydides/core/ThucydidesSystemProperties/isEmpty(net.thucydides.core.ThucydidesSystemProperty)|",
+    "called": "|java+method:///org/apache/commons/lang/StringUtils/isEmpty(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///net/thucydides/core/ThucydidesSystemProperty/getPropertyName()|",
+      "|java+method:///org/apache/commons/lang/StringUtils/isEmpty(java.lang.String)|",
+      "|java+method:///java/lang/System/getProperty(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///net/thucydides/core/ThucydidesSystemProperty/getPropertyName()|",
+      "|java+method:///java/lang/System/getProperty(java.lang.String)|",
+      "|java+method:///org/apache/commons/lang3/StringUtils/isEmpty(java.lang.CharSequence)|"
+    ],
+    "affectedLib": "commons-lang:commons-lang:2.6",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "net.thucydides:thucydides-core:0.4.15",
+    "coordinatesV2": "net.thucydides:thucydides-core:0.4.13",
+    "caller": "|java+method:///net/thucydides/core/resources/FileResources/findTargetFileFrom(java.lang.String)|",
+    "called": "|java+method:///org/apache/commons/lang/StringUtils/lastIndexOf(java.lang.String,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/lang/String/length()|",
+      "|java+method:///java/lang/String/substring(int)|",
+      "|java+method:///net/thucydides/core/resources/FileResources/filenameIn(java.lang.String)|",
+      "|java+method:///org/apache/commons/lang/StringUtils/lastIndexOf(java.lang.String,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/lang3/StringUtils/lastIndexOf(java.lang.CharSequence,java.lang.CharSequence)|",
+      "|java+method:///java/lang/String/length()|",
+      "|java+method:///java/lang/String/substring(int)|",
+      "|java+method:///net/thucydides/core/resources/FileResources/filenameIn(java.lang.String)|"
+    ],
+    "affectedLib": "commons-lang:commons-lang:2.6",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "net.thucydides:thucydides-core:0.4.15",
+    "coordinatesV2": "net.thucydides:thucydides-core:0.4.13",
+    "caller": "|java+method:///net/thucydides/core/pages/components/FileToUpload/windowsNative(java.lang.String)|",
+    "called": "|java+method:///org/apache/commons/lang/StringUtils/replace(java.lang.String,java.lang.String,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/lang/String/charAt(int)|",
+      "|java+method:///java/lang/String/substring(int)|",
+      "|java+method:///org/apache/commons/lang/StringUtils/replace(java.lang.String,java.lang.String,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/String/charAt(int)|",
+      "|java+method:///org/apache/commons/lang3/StringUtils/replace(java.lang.String,java.lang.String,java.lang.String)|",
+      "|java+method:///java/lang/String/substring(int)|"
+    ],
+    "affectedLib": "commons-lang:commons-lang:2.6",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "net.thucydides:thucydides-core:0.4.15",
+    "coordinatesV2": "net.thucydides:thucydides-core:0.4.13",
+    "caller": "|java+method:///net/thucydides/core/steps/AnnotatedStepDescription/groupName()|",
+    "called": "|java+method:///org/apache/commons/lang/StringUtils/isEmpty(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/lang/StringUtils/isEmpty(java.lang.String)|",
+      "|java+method:///net/thucydides/core/steps/AnnotatedStepDescription/getGroupName()|",
+      "|java+method:///net/thucydides/core/steps/AnnotatedStepDescription/stepName()|"
+    ],
+    "v2Body": [
+      "|java+method:///net/thucydides/core/steps/AnnotatedStepDescription/getGroupName()|",
+      "|java+method:///net/thucydides/core/steps/AnnotatedStepDescription/stepName()|",
+      "|java+method:///org/apache/commons/lang3/StringUtils/isEmpty(java.lang.CharSequence)|"
+    ],
+    "affectedLib": "commons-lang:commons-lang:2.6",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "net.thucydides:thucydides-core:0.4.15",
+    "coordinatesV2": "net.thucydides:thucydides-core:0.4.13",
+    "caller": "|java+method:///net/thucydides/core/csv/FieldName/inNormalizedForm()|",
+    "called": "|java+method:///org/apache/commons/lang/StringUtils/capitalize(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/lang/String/split(java.lang.String)|",
+      "|java+method:///java/lang/String/toLowerCase()|",
+      "|java+method:///java/lang/String/trim()|",
+      "|java+method:///java/lang/StringBuffer/toString()|",
+      "|java+method:///org/apache/commons/lang/StringUtils/capitalize(java.lang.String)|",
+      "|java+method:///java/lang/StringBuffer/append(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuffer/StringBuffer()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/String/split(java.lang.String)|",
+      "|java+method:///java/lang/String/toLowerCase()|",
+      "|java+method:///java/lang/String/trim()|",
+      "|java+method:///java/lang/StringBuffer/toString()|",
+      "|java+method:///org/apache/commons/lang3/StringUtils/capitalize(java.lang.String)|",
+      "|java+method:///java/lang/StringBuffer/append(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuffer/StringBuffer()|"
+    ],
+    "affectedLib": "commons-lang:commons-lang:2.6",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "net.thucydides:thucydides-core:0.4.13",
+    "coordinatesV2": "net.thucydides:thucydides-core:0.4.15",
+    "caller": "|java+method:///net/thucydides/core/steps/AnnotatedStepDescription/getNameFromStepAnnotationIn(java.lang.reflect.Method)|",
+    "called": "|java+method:///org/apache/commons/lang3/StringUtils/isEmpty(java.lang.CharSequence)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/lang/StringUtils/isEmpty(java.lang.String)|",
+      "|java+method:///java/lang/reflect/Method/getAnnotation(java.lang.Class)|",
+      "|java+method:///net/thucydides/core/annotations/Step/value()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/reflect/Method/getAnnotation(java.lang.Class)|",
+      "|java+method:///net/thucydides/core/annotations/Step/value()|",
+      "|java+method:///org/apache/commons/lang3/StringUtils/isEmpty(java.lang.CharSequence)|"
+    ],
+    "affectedLib": "org.apache.commons:commons-lang3:3.0.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "net.thucydides:thucydides-core:0.4.13",
+    "coordinatesV2": "net.thucydides:thucydides-core:0.4.15",
+    "caller": "|java+method:///net/thucydides/core/model/ReportNamer/appendToIfNotNull(java.lang.String,java.lang.String)|",
+    "called": "|java+method:///org/apache/commons/lang3/StringUtils/isNotEmpty(java.lang.CharSequence)|",
+    "v1Body": [
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/commons/lang/StringUtils/isNotEmpty(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/commons/lang3/StringUtils/isNotEmpty(java.lang.CharSequence)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "affectedLib": "org.apache.commons:commons-lang3:3.0.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "net.thucydides:thucydides-core:0.4.13",
+    "coordinatesV2": "net.thucydides:thucydides-core:0.4.15",
+    "caller": "|java+method:///net/thucydides/core/pages/WebElementFacade/getTextValue()|",
+    "called": "|java+method:///org/apache/commons/lang3/StringUtils/isEmpty(java.lang.CharSequence)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/lang/StringUtils/isEmpty(java.lang.String)|",
+      "|java+method:///net/thucydides/core/pages/WebElementFacade/getValue()|",
+      "|java+method:///org/openqa/selenium/WebElement/getText()|",
+      "|java+method:///net/thucydides/core/pages/WebElementFacade/waitUntilVisible()|"
+    ],
+    "v2Body": [
+      "|java+method:///net/thucydides/core/pages/WebElementFacade/waitUntilPresent()|",
+      "|java+method:///net/thucydides/core/pages/WebElementFacade/isVisible()|",
+      "|java+method:///net/thucydides/core/pages/WebElementFacade/getValue()|",
+      "|java+method:///org/apache/commons/lang3/StringUtils/isEmpty(java.lang.CharSequence)|",
+      "|java+method:///org/openqa/selenium/WebElement/getText()|"
+    ],
+    "affectedLib": "org.apache.commons:commons-lang3:3.0.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "net.thucydides:thucydides-core:0.4.13",
+    "coordinatesV2": "net.thucydides:thucydides-core:0.4.15",
+    "caller": "|java+method:///net/thucydides/core/pages/PageObject/updateUrlWithBaseUrlIfDefined(java.lang.String)|",
+    "called": "|java+method:///org/apache/commons/lang3/StringUtils/isEmpty(java.lang.CharSequence)|",
+    "v1Body": [
+      "|java+method:///net/thucydides/core/ThucydidesSystemProperty/getPropertyName()|",
+      "|java+method:///org/apache/commons/lang/StringUtils/isEmpty(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///net/thucydides/core/pages/PageObject/replaceHost(java.lang.String,java.lang.String)|",
+      "|java+method:///java/lang/System/getProperty(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///net/thucydides/core/ThucydidesSystemProperty/getPropertyName()|",
+      "|java+method:///net/thucydides/core/pages/PageObject/replaceHost(java.lang.String,java.lang.String)|",
+      "|java+method:///java/lang/System/getProperty(java.lang.String)|",
+      "|java+method:///org/apache/commons/lang3/StringUtils/isEmpty(java.lang.CharSequence)|"
+    ],
+    "affectedLib": "org.apache.commons:commons-lang3:3.0.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "net.thucydides:thucydides-core:0.4.13",
+    "coordinatesV2": "net.thucydides:thucydides-core:0.4.15",
+    "caller": "|java+method:///net/thucydides/core/model/StoryTestResults/getTitle()|",
+    "called": "|java+method:///org/apache/commons/lang3/StringUtils/capitalize(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/lang/StringUtils/capitalize(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/lang3/StringUtils/capitalize(java.lang.String)|"
+    ],
+    "affectedLib": "org.apache.commons:commons-lang3:3.0.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "net.thucydides:thucydides-core:0.4.13",
+    "coordinatesV2": "net.thucydides:thucydides-core:0.4.15",
+    "caller": "|java+method:///net/thucydides/core/steps/AnnotatedStepDescription/stepName()|",
+    "called": "|java+method:///org/apache/commons/lang3/StringUtils/isEmpty(java.lang.CharSequence)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/lang/StringUtils/isEmpty(java.lang.String)|",
+      "|java+method:///net/thucydides/core/steps/AnnotatedStepDescription/getAnnotatedTitle()|",
+      "|java+method:///net/thucydides/core/steps/AnnotatedStepDescription/getAnnotatedStepName()|",
+      "|java+method:///net/thucydides/core/util/NameConverter/humanize(java.lang.String)|",
+      "|java+method:///net/thucydides/core/steps/ExecutedStepDescription/getName()|"
+    ],
+    "v2Body": [
+      "|java+method:///net/thucydides/core/steps/AnnotatedStepDescription/getAnnotatedTitle()|",
+      "|java+method:///net/thucydides/core/steps/AnnotatedStepDescription/getAnnotatedStepName()|",
+      "|java+method:///net/thucydides/core/steps/ExecutedStepDescription/getName()|",
+      "|java+method:///net/thucydides/core/util/NameConverter/humanize(java.lang.String)|",
+      "|java+method:///org/apache/commons/lang3/StringUtils/isEmpty(java.lang.CharSequence)|"
+    ],
+    "affectedLib": "org.apache.commons:commons-lang3:3.0.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "net.thucydides:thucydides-core:0.4.13",
+    "coordinatesV2": "net.thucydides:thucydides-core:0.4.15",
+    "caller": "|java+method:///net/thucydides/core/model/StoryTestResults/getFormattedIssues()|",
+    "called": "|java+method:///org/apache/commons/lang3/StringUtils/join(java.lang.Iterable,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///net/thucydides/core/model/StoryTestResults/getFormatter()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///ch/lambdaj/Lambda/sort(java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///ch/lambdaj/Lambda/on(java.lang.Class)|",
+      "|java+method:///net/thucydides/core/model/StoryTestResults/getIssues()|",
+      "|java+method:///org/apache/commons/lang/StringUtils/join(java.util.Collection,java.lang.String)|",
+      "|java+method:///java/lang/String/toString()|",
+      "|java+method:///java/util/Set/isEmpty()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///net/thucydides/core/reports/html/Formatter/addLinks(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///net/thucydides/core/model/StoryTestResults/getFormatter()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///ch/lambdaj/Lambda/sort(java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///ch/lambdaj/Lambda/on(java.lang.Class)|",
+      "|java+method:///net/thucydides/core/model/StoryTestResults/getIssues()|",
+      "|java+method:///java/lang/String/toString()|",
+      "|java+method:///java/util/Set/isEmpty()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/apache/commons/lang3/StringUtils/join(java.lang.Iterable,java.lang.String)|",
+      "|java+method:///net/thucydides/core/reports/html/Formatter/addLinks(java.lang.String)|"
+    ],
+    "affectedLib": "org.apache.commons:commons-lang3:3.0.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "net.thucydides:thucydides-core:0.4.13",
+    "coordinatesV2": "net.thucydides:thucydides-core:0.4.15",
+    "caller": "|java+method:///net/thucydides/core/steps/StepInterceptor/readableFormOf(java.lang.Object)|",
+    "called": "|java+method:///org/apache/commons/lang3/ArrayUtils/toString(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///java/lang/Class/isArray()|",
+      "|java+method:///java/lang/Object/toString()|",
+      "|java+method:///org/apache/commons/lang/ArrayUtils/toString(java.lang.Object)|",
+      "|java+method:///java/lang/Object/getClass()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Class/isArray()|",
+      "|java+method:///org/apache/commons/lang3/ArrayUtils/toString(java.lang.Object)|",
+      "|java+method:///java/lang/Object/toString()|",
+      "|java+method:///java/lang/Object/getClass()|"
+    ],
+    "affectedLib": "org.apache.commons:commons-lang3:3.0.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "net.thucydides:thucydides-core:0.4.13",
+    "coordinatesV2": "net.thucydides:thucydides-core:0.4.15",
+    "caller": "|java+method:///net/thucydides/core/model/ErrorMessageFormatter/getShortErrorMessage()|",
+    "called": "|java+method:///org/apache/commons/lang3/StringUtils/trimToEmpty(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///net/thucydides/core/model/ErrorMessageFormatter/replaceDoubleQuotes(java.lang.String)|",
+      "|java+method:///java/lang/String/split(java.lang.String)|",
+      "|java+method:///org/apache/commons/lang/StringUtils/trimToEmpty(java.lang.String)|",
+      "|java+method:///net/thucydides/core/model/ErrorMessageFormatter/removeLeadingExceptionFrom(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///net/thucydides/core/model/ErrorMessageFormatter/replaceDoubleQuotes(java.lang.String)|",
+      "|java+method:///java/lang/String/split(java.lang.String)|",
+      "|java+method:///org/apache/commons/lang3/StringUtils/trimToEmpty(java.lang.String)|",
+      "|java+method:///net/thucydides/core/model/ErrorMessageFormatter/removeLeadingExceptionFrom(java.lang.String)|"
+    ],
+    "affectedLib": "org.apache.commons:commons-lang3:3.0.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "net.thucydides:thucydides-core:0.4.13",
+    "coordinatesV2": "net.thucydides:thucydides-core:0.4.15",
+    "caller": "|java+method:///net/thucydides/core/pages/Pages/getDefaultBaseUrl()|",
+    "called": "|java+method:///org/apache/commons/lang3/StringUtils/isNotEmpty(java.lang.CharSequence)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/lang/StringUtils/isNotEmpty(java.lang.String)|",
+      "|java+method:///net/thucydides/core/pages/PageConfiguration/getCurrentConfiguration()|",
+      "|java+method:///net/thucydides/core/pages/PageConfiguration/getBaseUrl()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/lang3/StringUtils/isNotEmpty(java.lang.CharSequence)|",
+      "|java+method:///net/thucydides/core/pages/PageConfiguration/getCurrentConfiguration()|",
+      "|java+method:///net/thucydides/core/pages/PageConfiguration/getBaseUrl()|"
+    ],
+    "affectedLib": "org.apache.commons:commons-lang3:3.0.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "net.thucydides:thucydides-core:0.4.13",
+    "coordinatesV2": "net.thucydides:thucydides-core:0.4.15",
+    "caller": "|java+method:///net/thucydides/core/resources/FileResources/directoryIn(java.lang.String)|",
+    "called": "|java+method:///org/apache/commons/lang3/StringUtils/lastIndexOf(java.lang.CharSequence,java.lang.CharSequence)|",
+    "v1Body": [
+      "|java+method:///java/lang/String/substring(int,int)|",
+      "|java+method:///java/lang/String/contains(java.lang.CharSequence)|",
+      "|java+method:///org/apache/commons/lang/StringUtils/lastIndexOf(java.lang.String,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/lang3/StringUtils/lastIndexOf(java.lang.CharSequence,java.lang.CharSequence)|",
+      "|java+method:///java/lang/String/substring(int,int)|",
+      "|java+method:///java/lang/String/contains(java.lang.CharSequence)|"
+    ],
+    "affectedLib": "org.apache.commons:commons-lang3:3.0.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "net.thucydides:thucydides-core:0.4.13",
+    "coordinatesV2": "net.thucydides:thucydides-core:0.4.15",
+    "caller": "|java+method:///net/thucydides/core/util/NameConverter/humanize(java.lang.String)|",
+    "called": "|java+method:///org/apache/commons/lang3/StringUtils/capitalize(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///net/thucydides/core/util/NameConverter/splitCamelCase(java.lang.String)|",
+      "|java+method:///java/lang/String/replaceAll(java.lang.String,java.lang.String)|",
+      "|java+method:///java/lang/String/trim()|",
+      "|java+method:///net/thucydides/core/util/NameConverter/humanizeNameWithParameters(java.lang.String)|",
+      "|java+method:///java/lang/String/contains(java.lang.CharSequence)|",
+      "|java+method:///java/util/Locale/getDefault()|",
+      "|java+method:///java/lang/String/toLowerCase(java.util.Locale)|",
+      "|java+method:///java/lang/String/length()|",
+      "|java+method:///net/thucydides/core/util/NameConverter/thereAreParametersIn(java.lang.String)|",
+      "|java+method:///org/apache/commons/lang/StringUtils/capitalize(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///net/thucydides/core/util/NameConverter/splitCamelCase(java.lang.String)|",
+      "|java+method:///java/lang/String/replaceAll(java.lang.String,java.lang.String)|",
+      "|java+method:///java/lang/String/trim()|",
+      "|java+method:///net/thucydides/core/util/NameConverter/thereAreParametersIn(java.lang.String)|",
+      "|java+method:///net/thucydides/core/util/NameConverter/humanizeNameWithParameters(java.lang.String)|",
+      "|java+method:///org/apache/commons/lang3/StringUtils/capitalize(java.lang.String)|",
+      "|java+method:///java/lang/String/contains(java.lang.CharSequence)|",
+      "|java+method:///java/util/Locale/getDefault()|",
+      "|java+method:///java/lang/String/toLowerCase(java.util.Locale)|",
+      "|java+method:///java/lang/String/length()|"
+    ],
+    "affectedLib": "org.apache.commons:commons-lang3:3.0.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "net.thucydides:thucydides-core:0.4.13",
+    "coordinatesV2": "net.thucydides:thucydides-core:0.4.15",
+    "caller": "|java+method:///net/thucydides/core/resources/FileResources/findTargetSubdirectoryFrom(java.lang.String)|",
+    "called": "|java+method:///org/apache/commons/lang3/StringUtils/lastIndexOf(java.lang.CharSequence,java.lang.CharSequence)|",
+    "v1Body": [
+      "|java+method:///java/lang/String/length()|",
+      "|java+method:///net/thucydides/core/resources/FileResources/directoryIn(java.lang.String)|",
+      "|java+method:///java/lang/String/substring(int)|",
+      "|java+method:///org/apache/commons/lang/StringUtils/lastIndexOf(java.lang.String,java.lang.String)|",
+      "|java+method:///net/thucydides/core/resources/FileResources/stripLeadingSeparatorFrom(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/lang3/StringUtils/lastIndexOf(java.lang.CharSequence,java.lang.CharSequence)|",
+      "|java+method:///java/lang/String/length()|",
+      "|java+method:///net/thucydides/core/resources/FileResources/directoryIn(java.lang.String)|",
+      "|java+method:///java/lang/String/substring(int)|",
+      "|java+method:///net/thucydides/core/resources/FileResources/stripLeadingSeparatorFrom(java.lang.String)|"
+    ],
+    "affectedLib": "org.apache.commons:commons-lang3:3.0.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "net.thucydides:thucydides-core:0.4.13",
+    "coordinatesV2": "net.thucydides:thucydides-core:0.4.15",
+    "caller": "|java+method:///net/thucydides/core/model/TestOutcome/getFormattedIssues()|",
+    "called": "|java+method:///org/apache/commons/lang3/StringUtils/join(java.lang.Iterable,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///net/thucydides/core/model/TestOutcome/getFormatter()|",
+      "|java+method:///net/thucydides/core/model/TestOutcome/getIssues()|",
+      "|java+method:///ch/lambdaj/Lambda/sort(java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///ch/lambdaj/Lambda/on(java.lang.Class)|",
+      "|java+method:///org/apache/commons/lang/StringUtils/join(java.util.Collection,java.lang.String)|",
+      "|java+method:///java/lang/String/toString()|",
+      "|java+method:///java/util/Set/isEmpty()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///net/thucydides/core/reports/html/Formatter/addLinks(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///net/thucydides/core/model/TestOutcome/getFormatter()|",
+      "|java+method:///net/thucydides/core/model/TestOutcome/getIssues()|",
+      "|java+method:///ch/lambdaj/Lambda/sort(java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///ch/lambdaj/Lambda/on(java.lang.Class)|",
+      "|java+method:///java/lang/String/toString()|",
+      "|java+method:///java/util/Set/isEmpty()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/apache/commons/lang3/StringUtils/join(java.lang.Iterable,java.lang.String)|",
+      "|java+method:///net/thucydides/core/reports/html/Formatter/addLinks(java.lang.String)|"
+    ],
+    "affectedLib": "org.apache.commons:commons-lang3:3.0.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "net.thucydides:thucydides-core:0.4.13",
+    "coordinatesV2": "net.thucydides:thucydides-core:0.4.15",
+    "caller": "|java+method:///net/thucydides/core/reports/xml/TestOutcomeConverter/writeErrorMessageAndException(com.thoughtworks.xstream.io.HierarchicalStreamWriter,net.thucydides.core.model.TestStep)|",
+    "called": "|java+method:///org/apache/commons/lang3/StringUtils/isEmpty(java.lang.CharSequence)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/lang/StringUtils/isEmpty(java.lang.String)|",
+      "|java+method:///net/thucydides/core/model/TestStep/getErrorMessage()|",
+      "|java+method:///net/thucydides/core/reports/xml/TestOutcomeConverter/writeErrorMessageNode(com.thoughtworks.xstream.io.HierarchicalStreamWriter,java.lang.String)|",
+      "|java+method:///net/thucydides/core/reports/xml/TestOutcomeConverter/writeExceptionNode(com.thoughtworks.xstream.io.HierarchicalStreamWriter,java.lang.Throwable)|",
+      "|java+method:///net/thucydides/core/model/TestStep/getException()|"
+    ],
+    "v2Body": [
+      "|java+method:///net/thucydides/core/model/TestStep/getErrorMessage()|",
+      "|java+method:///net/thucydides/core/reports/xml/TestOutcomeConverter/writeErrorMessageNode(com.thoughtworks.xstream.io.HierarchicalStreamWriter,java.lang.String)|",
+      "|java+method:///net/thucydides/core/reports/xml/TestOutcomeConverter/writeExceptionNode(com.thoughtworks.xstream.io.HierarchicalStreamWriter,java.lang.Throwable)|",
+      "|java+method:///net/thucydides/core/model/TestStep/getException()|",
+      "|java+method:///org/apache/commons/lang3/StringUtils/isEmpty(java.lang.CharSequence)|"
+    ],
+    "affectedLib": "org.apache.commons:commons-lang3:3.0.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "net.thucydides:thucydides-core:0.4.13",
+    "coordinatesV2": "net.thucydides:thucydides-core:0.4.15",
+    "caller": "|java+method:///net/thucydides/core/csv/InstanceBuilder/invokeConstructorFor(java.lang.Class,java.lang.Object%5B%5D)|",
+    "called": "|java+method:///org/apache/commons/lang3/ArrayUtils/toString(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///java/lang/reflect/Constructor/newInstance(java.lang.Object%5B%5D)|",
+      "|java+constructor:///java/lang/IllegalStateException/IllegalStateException(java.lang.String)|",
+      "|java+method:///java/lang/reflect/Constructor/getParameterTypes()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/commons/lang/ArrayUtils/toString(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/lang/Class/getDeclaredConstructors()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/reflect/Constructor/newInstance(java.lang.Object%5B%5D)|",
+      "|java+method:///java/lang/reflect/Constructor/getParameterTypes()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///java/lang/IllegalStateException/IllegalStateException(java.lang.String)|",
+      "|java+method:///org/apache/commons/lang3/ArrayUtils/toString(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/lang/Class/getDeclaredConstructors()|"
+    ],
+    "affectedLib": "org.apache.commons:commons-lang3:3.0.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "net.thucydides:thucydides-core:0.4.13",
+    "coordinatesV2": "net.thucydides:thucydides-core:0.4.15",
+    "caller": "|java+method:///net/thucydides/core/ThucydidesSystemProperties/isEmpty(net.thucydides.core.ThucydidesSystemProperty)|",
+    "called": "|java+method:///org/apache/commons/lang3/StringUtils/isEmpty(java.lang.CharSequence)|",
+    "v1Body": [
+      "|java+method:///net/thucydides/core/ThucydidesSystemProperty/getPropertyName()|",
+      "|java+method:///org/apache/commons/lang/StringUtils/isEmpty(java.lang.String)|",
+      "|java+method:///java/lang/System/getProperty(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///net/thucydides/core/ThucydidesSystemProperty/getPropertyName()|",
+      "|java+method:///java/lang/System/getProperty(java.lang.String)|",
+      "|java+method:///org/apache/commons/lang3/StringUtils/isEmpty(java.lang.CharSequence)|"
+    ],
+    "affectedLib": "org.apache.commons:commons-lang3:3.0.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "net.thucydides:thucydides-core:0.4.13",
+    "coordinatesV2": "net.thucydides:thucydides-core:0.4.15",
+    "caller": "|java+method:///net/thucydides/core/resources/FileResources/filenameIn(java.lang.String)|",
+    "called": "|java+method:///org/apache/commons/lang3/StringUtils/lastIndexOf(java.lang.CharSequence,java.lang.CharSequence)|",
+    "v1Body": [
+      "|java+method:///java/lang/String/substring(int)|",
+      "|java+method:///java/lang/String/contains(java.lang.CharSequence)|",
+      "|java+method:///org/apache/commons/lang/StringUtils/lastIndexOf(java.lang.String,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/lang3/StringUtils/lastIndexOf(java.lang.CharSequence,java.lang.CharSequence)|",
+      "|java+method:///java/lang/String/substring(int)|",
+      "|java+method:///java/lang/String/contains(java.lang.CharSequence)|"
+    ],
+    "affectedLib": "org.apache.commons:commons-lang3:3.0.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "net.thucydides:thucydides-core:0.4.13",
+    "coordinatesV2": "net.thucydides:thucydides-core:0.4.15",
+    "caller": "|java+method:///net/thucydides/core/resources/FileResources/findTargetFileFrom(java.lang.String)|",
+    "called": "|java+method:///org/apache/commons/lang3/StringUtils/lastIndexOf(java.lang.CharSequence,java.lang.CharSequence)|",
+    "v1Body": [
+      "|java+method:///java/lang/String/length()|",
+      "|java+method:///java/lang/String/substring(int)|",
+      "|java+method:///net/thucydides/core/resources/FileResources/filenameIn(java.lang.String)|",
+      "|java+method:///org/apache/commons/lang/StringUtils/lastIndexOf(java.lang.String,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/lang3/StringUtils/lastIndexOf(java.lang.CharSequence,java.lang.CharSequence)|",
+      "|java+method:///java/lang/String/length()|",
+      "|java+method:///java/lang/String/substring(int)|",
+      "|java+method:///net/thucydides/core/resources/FileResources/filenameIn(java.lang.String)|"
+    ],
+    "affectedLib": "org.apache.commons:commons-lang3:3.0.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "net.thucydides:thucydides-core:0.4.13",
+    "coordinatesV2": "net.thucydides:thucydides-core:0.4.15",
+    "caller": "|java+method:///net/thucydides/core/pages/components/FileToUpload/windowsNative(java.lang.String)|",
+    "called": "|java+method:///org/apache/commons/lang3/StringUtils/replace(java.lang.String,java.lang.String,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/lang/String/charAt(int)|",
+      "|java+method:///java/lang/String/substring(int)|",
+      "|java+method:///org/apache/commons/lang/StringUtils/replace(java.lang.String,java.lang.String,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/String/charAt(int)|",
+      "|java+method:///org/apache/commons/lang3/StringUtils/replace(java.lang.String,java.lang.String,java.lang.String)|",
+      "|java+method:///java/lang/String/substring(int)|"
+    ],
+    "affectedLib": "org.apache.commons:commons-lang3:3.0.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "net.thucydides:thucydides-core:0.4.13",
+    "coordinatesV2": "net.thucydides:thucydides-core:0.4.15",
+    "caller": "|java+method:///net/thucydides/core/steps/AnnotatedStepDescription/groupName()|",
+    "called": "|java+method:///org/apache/commons/lang3/StringUtils/isEmpty(java.lang.CharSequence)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/lang/StringUtils/isEmpty(java.lang.String)|",
+      "|java+method:///net/thucydides/core/steps/AnnotatedStepDescription/getGroupName()|",
+      "|java+method:///net/thucydides/core/steps/AnnotatedStepDescription/stepName()|"
+    ],
+    "v2Body": [
+      "|java+method:///net/thucydides/core/steps/AnnotatedStepDescription/getGroupName()|",
+      "|java+method:///net/thucydides/core/steps/AnnotatedStepDescription/stepName()|",
+      "|java+method:///org/apache/commons/lang3/StringUtils/isEmpty(java.lang.CharSequence)|"
+    ],
+    "affectedLib": "org.apache.commons:commons-lang3:3.0.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "net.thucydides:thucydides-core:0.4.13",
+    "coordinatesV2": "net.thucydides:thucydides-core:0.4.15",
+    "caller": "|java+method:///net/thucydides/core/csv/FieldName/inNormalizedForm()|",
+    "called": "|java+method:///org/apache/commons/lang3/StringUtils/capitalize(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/lang/String/split(java.lang.String)|",
+      "|java+method:///java/lang/String/toLowerCase()|",
+      "|java+method:///java/lang/String/trim()|",
+      "|java+method:///java/lang/StringBuffer/toString()|",
+      "|java+method:///org/apache/commons/lang/StringUtils/capitalize(java.lang.String)|",
+      "|java+method:///java/lang/StringBuffer/append(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuffer/StringBuffer()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/String/split(java.lang.String)|",
+      "|java+method:///java/lang/String/toLowerCase()|",
+      "|java+method:///java/lang/String/trim()|",
+      "|java+method:///java/lang/StringBuffer/toString()|",
+      "|java+method:///org/apache/commons/lang3/StringUtils/capitalize(java.lang.String)|",
+      "|java+method:///java/lang/StringBuffer/append(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuffer/StringBuffer()|"
+    ],
+    "affectedLib": "org.apache.commons:commons-lang3:3.0.1",
+    "change": "ADDED"
+  }
+]

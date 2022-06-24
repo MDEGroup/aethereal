@@ -1,0 +1,36 @@
+[
+  {
+    "coordinatesV1": "org.sonatype.nexus:nexus-rest-api:1.1-M1",
+    "coordinatesV2": "org.sonatype.nexus:nexus-rest-api:1.1.0",
+    "caller": "|java+method:///org/sonatype/nexus/rest/AbstractResourceStoreContentPlexusResource/serialize(org.restlet.Context,org.restlet.data.Request,org.restlet.resource.Variant,java.lang.Object)|",
+    "called": "|java+constructor:///org/sonatype/plexus/rest/representation/VelocityRepresentation/VelocityRepresentation(org.restlet.Context,java.lang.String,java.util.Map,org.restlet.data.MediaType)|",
+    "v1Body": [
+      "|java+method:///org/apache/velocity/app/VelocityEngine/setProperty(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/sonatype/nexus/rest/AbstractResourceStoreContentPlexusResource/sortContentListResource(java.util.Collection)|",
+      "|java+constructor:///org/sonatype/nexus/rest/RestletLogChute/RestletLogChute(org.restlet.Context)|",
+      "|java+method:///org/restlet/data/MediaType/equals(java.lang.Object)|",
+      "|java+constructor:///org/restlet/ext/velocity/TemplateRepresentation/TemplateRepresentation(java.lang.String,java.util.Map,org.restlet.data.MediaType)|",
+      "|java+method:///org/restlet/resource/Variant/getMediaType()|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+method:///java/util/HashMap/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/restlet/ext/velocity/TemplateRepresentation/getEngine()|",
+      "|java+method:///org/sonatype/nexus/rest/model/ContentListResourceResponse/getData()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/sonatype/nexus/rest/AbstractResourceStoreContentPlexusResource/getNexus()|",
+      "|java+method:///org/sonatype/nexus/rest/AbstractResourceStoreContentPlexusResource/sortContentListResource(java.util.Collection)|",
+      "|java+method:///org/restlet/data/Request/getRootRef()|",
+      "|java+method:///org/restlet/data/MediaType/equals(java.lang.Object)|",
+      "|java+method:///org/sonatype/nexus/Nexus/getSystemStatus()|",
+      "|java+method:///org/sonatype/nexus/rest/model/ContentListResourceResponse/getData()|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+method:///java/util/HashMap/put(java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///org/sonatype/plexus/rest/representation/VelocityRepresentation/VelocityRepresentation(org.restlet.Context,java.lang.String,java.util.Map,org.restlet.data.MediaType)|",
+      "|java+method:///org/restlet/resource/Variant/getMediaType()|",
+      "|java+method:///org/restlet/data/Reference/getPath()|",
+      "|java+method:///org/sonatype/nexus/SystemStatus/getVersion()|"
+    ],
+    "affectedLib": "org.sonatype.plexus:plexus-restlet-bridge:1.5",
+    "change": "UPDATED"
+  }
+]

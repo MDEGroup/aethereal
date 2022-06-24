@@ -1,0 +1,39 @@
+[
+  {
+    "coordinatesV1": "org.apereo.cas:cas-server-support-rest:5.1.3",
+    "coordinatesV2": "org.apereo.cas:cas-server-support-rest:5.1.7",
+    "caller": "|java+method:///org/apereo/cas/support/rest/TicketsResource/createServiceTicket(org.springframework.util.MultiValueMap,java.lang.String)|",
+    "called": "|java+constructor:///org/springframework/http/ResponseEntity/ResponseEntity(java.lang.Object,org.springframework.http.HttpStatus)|",
+    "v1Body": [
+      "|java+method:///org/apereo/cas/authentication/AuthenticationSystemSupport/getPrincipalElectionStrategy()|",
+      "|java+constructor:///org/apereo/cas/authentication/DefaultAuthenticationResultBuilder/DefaultAuthenticationResultBuilder(org.apereo.cas.authentication.PrincipalElectionStrategy)|",
+      "|java+method:///org/apereo/cas/authentication/AuthenticationResultBuilder/build(org.apereo.cas.authentication.principal.Service)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/apereo/cas/ticket/registry/TicketRegistrySupport/getAuthenticationFrom(java.lang.String)|",
+      "|java+method:///java/lang/Exception/getMessage()|",
+      "|java+method:///org/apereo/cas/CentralAuthenticationService/grantServiceTicket(java.lang.String,org.apereo.cas.authentication.principal.Service,org.apereo.cas.authentication.AuthenticationResult)|",
+      "|java+method:///org/apereo/cas/authentication/AuthenticationResultBuilder/collect(org.apereo.cas.authentication.Authentication)|",
+      "|java+constructor:///org/springframework/http/ResponseEntity/ResponseEntity(java.lang.Object,org.springframework.http.HttpStatus)|",
+      "|java+method:///org/springframework/util/MultiValueMap/getFirst(java.lang.Object)|",
+      "|java+method:///org/apereo/cas/ticket/ServiceTicket/getId()|",
+      "|java+method:///org/apereo/cas/authentication/principal/ServiceFactory/createService(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apereo/cas/ticket/TicketGrantingTicket/getAuthentication()|",
+      "|java+method:///org/apereo/cas/authentication/AuthenticationSystemSupport/getPrincipalElectionStrategy()|",
+      "|java+constructor:///org/apereo/cas/authentication/DefaultAuthenticationResultBuilder/DefaultAuthenticationResultBuilder(org.apereo.cas.authentication.PrincipalElectionStrategy)|",
+      "|java+method:///org/apereo/cas/CentralAuthenticationService/getTicket(java.lang.String)|",
+      "|java+method:///org/apereo/cas/authentication/AuthenticationResultBuilder/build(org.apereo.cas.authentication.principal.Service)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/lang/Exception/getMessage()|",
+      "|java+method:///org/apereo/cas/CentralAuthenticationService/grantServiceTicket(java.lang.String,org.apereo.cas.authentication.principal.Service,org.apereo.cas.authentication.AuthenticationResult)|",
+      "|java+method:///org/apereo/cas/authentication/AuthenticationResultBuilder/collect(org.apereo.cas.authentication.Authentication)|",
+      "|java+constructor:///org/springframework/http/ResponseEntity/ResponseEntity(java.lang.Object,org.springframework.http.HttpStatus)|",
+      "|java+method:///org/springframework/util/MultiValueMap/getFirst(java.lang.Object)|",
+      "|java+method:///org/apereo/cas/ticket/ServiceTicket/getId()|",
+      "|java+method:///org/apereo/cas/authentication/principal/ServiceFactory/createService(java.lang.String)|"
+    ],
+    "affectedLib": "org.springframework:spring-web:4.3.11.RELEASE",
+    "change": "UPDATED"
+  }
+]

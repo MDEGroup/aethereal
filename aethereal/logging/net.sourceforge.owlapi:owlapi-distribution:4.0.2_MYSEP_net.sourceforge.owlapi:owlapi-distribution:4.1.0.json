@@ -1,0 +1,52 @@
+[
+  {
+    "coordinatesV1": "net.sourceforge.owlapi:owlapi-distribution:4.0.2",
+    "coordinatesV2": "net.sourceforge.owlapi:owlapi-distribution:4.1.0",
+    "caller": "|java+method:///uk/ac/manchester/cs/owl/owlapi/OWLAPIImplModule/configure()|",
+    "called": "|java+method:///com/google/inject/assistedinject/FactoryModuleBuilder/build(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///uk/ac/manchester/cs/owl/owlapi/OWLAPIImplModule/multibind(java.lang.Class,java.lang.Class%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/inject/assistedinject/FactoryModuleBuilder/build(java.lang.Class)|",
+      "|java+method:///com/google/inject/binder/LinkedBindingBuilder/toInstance(java.lang.Object)|",
+      "|java+method:///uk/ac/manchester/cs/owl/owlapi/OWLAPIImplModule/multibind(java.lang.Class,java.lang.Class%5B%5D)|",
+      "|java+constructor:///com/google/inject/assistedinject/FactoryModuleBuilder/FactoryModuleBuilder()|",
+      "|java+method:///uk/ac/manchester/cs/owl/owlapi/OWLAPIImplModule/bind(java.lang.Class)|",
+      "|java+method:///com/google/inject/binder/ScopedBindingBuilder/asEagerSingleton()|",
+      "|java+method:///com/google/inject/binder/AnnotatedBindingBuilder/annotatedWith(java.lang.Class)|",
+      "|java+method:///com/google/inject/binder/AnnotatedBindingBuilder/to(java.lang.Class)|",
+      "|java+method:///com/google/inject/binder/LinkedBindingBuilder/to(java.lang.Class)|",
+      "|java+method:///uk/ac/manchester/cs/owl/owlapi/OWLAPIImplModule/install(com.google.inject.Module)|",
+      "|java+method:///java/lang/Boolean/valueOf(boolean)|",
+      "|java+method:///com/google/inject/assistedinject/FactoryModuleBuilder/implement(java.lang.Class,java.lang.Class)|"
+    ],
+    "affectedLib": "com.google.inject.extensions:guice-assistedinject:4.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "net.sourceforge.owlapi:owlapi-distribution:4.0.2",
+    "coordinatesV2": "net.sourceforge.owlapi:owlapi-distribution:4.1.0",
+    "caller": "|java+constructor:///org/semanticweb/owlapi/rdf/RDFRendererBase/RDFRendererBase(org.semanticweb.owlapi.model.OWLOntology,org.semanticweb.owlapi.model.OWLDocumentFormat)|",
+    "called": "|java+constructor:///gnu/trove/map/custom_hash/TObjectIntCustomHashMap/TObjectIntCustomHashMap(gnu.trove.strategy.HashingStrategy)|",
+    "v1Body": [
+      "|java+constructor:///gnu/trove/map/custom_hash/TObjectIntCustomHashMap/TObjectIntCustomHashMap(gnu.trove.strategy.HashingStrategy)|",
+      "|java+constructor:///gnu/trove/strategy/IdentityHashingStrategy/IdentityHashingStrategy()|",
+      "|java+method:///org/semanticweb/owlapi/rdf/RDFRendererBase/initPrettyTypes()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///gnu/trove/map/custom_hash/TObjectIntCustomHashMap/TObjectIntCustomHashMap(gnu.trove.strategy.HashingStrategy)|",
+      "|java+method:///org/semanticweb/owlapi/model/OWLOntology/accept(org.semanticweb.owlapi.model.OWLObjectVisitor)|",
+      "|java+constructor:///gnu/trove/strategy/IdentityHashingStrategy/IdentityHashingStrategy()|",
+      "|java+constructor:///org/semanticweb/owlapi/util/AlwaysOutputId/AlwaysOutputId()|",
+      "|java+constructor:///org/semanticweb/owlapi/util/OWLAnonymousIndividualsWithMultipleOccurrences/OWLAnonymousIndividualsWithMultipleOccurrences()|",
+      "|java+method:///org/semanticweb/owlapi/io/AnonymousIndividualProperties/shouldSaveIdsForAllAnonymousIndividuals()|",
+      "|java+constructor:///java/util/concurrent/atomic/AtomicInteger/AtomicInteger(int)|",
+      "|java+method:///org/semanticweb/owlapi/rdf/RDFRendererBase/initPrettyTypes()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "net.sf.trove4j:trove4j:3.0.3",
+    "change": "ADDED"
+  }
+]

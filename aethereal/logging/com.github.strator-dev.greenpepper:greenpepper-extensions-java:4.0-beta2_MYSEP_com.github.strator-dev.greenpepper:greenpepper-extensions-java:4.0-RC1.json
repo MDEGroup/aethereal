@@ -1,0 +1,93 @@
+[
+  {
+    "coordinatesV1": "com.github.strator-dev.greenpepper:greenpepper-extensions-java:4.0-beta2",
+    "coordinatesV2": "com.github.strator-dev.greenpepper:greenpepper-extensions-java:4.0-RC1",
+    "caller": "|java+method:///com/greenpepper/runner/repository/AtlassianRepository/loadDocument(java.lang.String)|",
+    "called": "|java+method:///org/jsoup/Jsoup/parse(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///com/greenpepper/util/URIUtil/raw(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/trace(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/net/URI/create(java.lang.String)|",
+      "|java+method:///com/greenpepper/runner/repository/AtlassianRepository/loadHtmlDocument(java.lang.String)|",
+      "|java+method:///com/greenpepper/runner/repository/AtlassianRepository/retrieveSpecification(java.net.URI)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/jsoup/Jsoup/parse(java.lang.String)|",
+      "|java+method:///com/greenpepper/util/URIUtil/raw(java.lang.String)|",
+      "|java+method:///org/apache/commons/lang3/StringUtils/equals(java.lang.CharSequence,java.lang.CharSequence)|",
+      "|java+method:///org/jsoup/nodes/Element/text()|",
+      "|java+method:///org/slf4j/Logger/trace(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/net/URI/create(java.lang.String)|",
+      "|java+method:///com/greenpepper/runner/repository/AtlassianRepository/loadHtmlDocument(java.lang.String)|",
+      "|java+method:///org/jsoup/nodes/Element/hasText()|",
+      "|java+method:///com/greenpepper/runner/repository/AtlassianRepository/retrieveSpecification(java.net.URI)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/jsoup/select/Elements/iterator()|",
+      "|java+constructor:///com/greenpepper/repository/DocumentNotFoundException/DocumentNotFoundException(java.lang.String)|",
+      "|java+constructor:///com/greenpepper/repository/RepositoryException/RepositoryException(java.lang.String)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/jsoup/nodes/Document/select(java.lang.String)|"
+    ],
+    "affectedLib": "org.jsoup:jsoup:1.8.3",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.github.strator-dev.greenpepper:greenpepper-extensions-java:4.0-beta2",
+    "coordinatesV2": "com.github.strator-dev.greenpepper:greenpepper-extensions-java:4.0-RC1",
+    "caller": "|java+method:///com/greenpepper/runner/repository/AtlassianRepository/loadDocument(java.lang.String)|",
+    "called": "|java+constructor:///com/greenpepper/repository/DocumentNotFoundException/DocumentNotFoundException(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///com/greenpepper/util/URIUtil/raw(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/trace(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/net/URI/create(java.lang.String)|",
+      "|java+method:///com/greenpepper/runner/repository/AtlassianRepository/loadHtmlDocument(java.lang.String)|",
+      "|java+method:///com/greenpepper/runner/repository/AtlassianRepository/retrieveSpecification(java.net.URI)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/jsoup/Jsoup/parse(java.lang.String)|",
+      "|java+method:///com/greenpepper/util/URIUtil/raw(java.lang.String)|",
+      "|java+method:///org/apache/commons/lang3/StringUtils/equals(java.lang.CharSequence,java.lang.CharSequence)|",
+      "|java+method:///org/jsoup/nodes/Element/text()|",
+      "|java+method:///org/slf4j/Logger/trace(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/net/URI/create(java.lang.String)|",
+      "|java+method:///com/greenpepper/runner/repository/AtlassianRepository/loadHtmlDocument(java.lang.String)|",
+      "|java+method:///org/jsoup/nodes/Element/hasText()|",
+      "|java+method:///com/greenpepper/runner/repository/AtlassianRepository/retrieveSpecification(java.net.URI)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/jsoup/select/Elements/iterator()|",
+      "|java+constructor:///com/greenpepper/repository/DocumentNotFoundException/DocumentNotFoundException(java.lang.String)|",
+      "|java+constructor:///com/greenpepper/repository/RepositoryException/RepositoryException(java.lang.String)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/jsoup/nodes/Document/select(java.lang.String)|"
+    ],
+    "affectedLib": "com.github.strator-dev.greenpepper:greenpepper-core:4.0-RC1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.github.strator-dev.greenpepper:greenpepper-extensions-java:4.0-beta2",
+    "coordinatesV2": "com.github.strator-dev.greenpepper:greenpepper-extensions-java:4.0-RC1",
+    "caller": "|java+method:///com/greenpepper/runner/repository/VFSRepository/createHtmlDocument(org.apache.commons.vfs.FileObject)|",
+    "called": "|java+method:///com/greenpepper/util/IOUtil/closeQuietly(java.io.Closeable)|",
+    "v1Body": [
+      "|java+method:///com/greenpepper/html/HtmlDocumentBuilder/build(java.io.Reader)|",
+      "|java+method:///com/greenpepper/html/HtmlDocumentBuilder/tablesAndLists()|",
+      "|java+method:///org/apache/commons/vfs/FileObject/getContent()|",
+      "|java+method:///org/apache/commons/vfs/FileContent/getInputStream()|",
+      "|java+constructor:///java/io/InputStreamReader/InputStreamReader(java.io.InputStream)|",
+      "|java+method:///com/greenpepper/util/IOUtil/closeQuietly(java.io.Closeable)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/greenpepper/html/HtmlDocumentBuilder/build(java.io.Reader)|",
+      "|java+method:///com/greenpepper/html/HtmlDocumentBuilder/tablesAndLists()|",
+      "|java+method:///java/net/URL/toString()|",
+      "|java+method:///org/apache/commons/vfs/FileObject/getContent()|",
+      "|java+method:///org/apache/commons/vfs/FileContent/getInputStream()|",
+      "|java+constructor:///java/io/InputStreamReader/InputStreamReader(java.io.InputStream)|",
+      "|java+method:///com/greenpepper/document/Document/setUri(java.lang.String)|",
+      "|java+method:///com/greenpepper/util/IOUtil/closeQuietly(java.io.Closeable)|",
+      "|java+method:///org/apache/commons/vfs/FileObject/getURL()|"
+    ],
+    "affectedLib": "com.github.strator-dev.greenpepper:greenpepper-core:4.0-RC1",
+    "change": "UPDATED"
+  }
+]

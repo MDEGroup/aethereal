@@ -1,0 +1,130 @@
+[
+  {
+    "coordinatesV1": "org.sonarsource.sslr-squid-bridge:sslr-squid-bridge:2.7.0.377",
+    "coordinatesV2": "org.sonarsource.sslr-squid-bridge:sslr-squid-bridge:2.6.1",
+    "caller": "|java+method:///org/sonar/squidbridge/annotations/AnnotationBasedRulesDefinition/newRule(java.lang.Class,boolean)|",
+    "called": "|java+method:///org/sonar/api/utils/AnnotationUtils/getAnnotation(java.lang.Object,java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/sonar/check/Rule/key()|",
+      "|java+method:///org/apache/commons/lang/StringUtils/isEmpty(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/Class/getCanonicalName()|",
+      "|java+method:///org/sonar/check/Rule/cardinality()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+constructor:///java/lang/IllegalStateException/IllegalStateException(java.lang.String)|",
+      "|java+method:///org/sonar/api/server/rule/RulesDefinition$NewRepository/rule(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/sonar/api/utils/AnnotationUtils/getAnnotation(java.lang.Object,java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/sonar/check/Rule/key()|",
+      "|java+method:///org/apache/commons/lang/StringUtils/isEmpty(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/Class/getCanonicalName()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+constructor:///java/lang/IllegalStateException/IllegalStateException(java.lang.String)|",
+      "|java+method:///org/sonar/api/server/rule/RulesDefinition$NewRepository/rule(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/sonar/api/utils/AnnotationUtils/getAnnotation(java.lang.Object,java.lang.Class)|"
+    ],
+    "affectedLib": "org.codehaus.sonar:sonar-plugin-api:4.5.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.sonarsource.sslr-squid-bridge:sslr-squid-bridge:2.6.1",
+    "coordinatesV2": "org.sonarsource.sslr-squid-bridge:sslr-squid-bridge:2.7.0.377",
+    "caller": "|java+method:///org/sonar/squidbridge/annotations/AnnotationBasedRulesDefinition/addRuleClasses(boolean,java.lang.Iterable)|",
+    "called": "|java+method:///com/google/common/collect/Lists/newArrayList()|",
+    "v1Body": [
+      "|java+method:///org/sonar/squidbridge/annotations/AnnotationBasedRulesDefinition/addRuleClasses(boolean,boolean,java.lang.Iterable)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/sonar/squidbridge/annotations/AnnotationBasedRulesDefinition/newRule(java.lang.Class,boolean)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///com/google/common/collect/Lists/newArrayList()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/sonar/squidbridge/annotations/AnnotationBasedRulesDefinition/setupExternalNames(java.util.Collection)|",
+      "|java+method:///java/lang/Iterable/iterator()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///org/sonar/squidbridge/rules/ExternalDescriptionLoader/addHtmlDescription(org.sonar.api.server.rule.RulesDefinition$NewRule)|",
+      "|java+method:///org/sonar/api/server/rule/RulesDefinitionAnnotationLoader/load(org.sonar.api.server.rule.RulesDefinition$NewExtendedRepository,java.lang.Class%5B%5D)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/sonar/api/server/rule/RulesDefinition$NewRule/setTemplate(boolean)|",
+      "|java+method:///org/sonar/squidbridge/annotations/AnnotationBasedRulesDefinition/setupRemediationFunction(org.sonar.api.server.rule.RulesDefinition$NewRule,java.lang.Class)|",
+      "|java+method:///com/google/common/collect/Iterables/toArray(java.lang.Iterable,java.lang.Class)|",
+      "|java+constructor:///org/sonar/api/server/rule/RulesDefinitionAnnotationLoader/RulesDefinitionAnnotationLoader()|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/sonar/api/utils/AnnotationUtils/getAnnotation(java.lang.Object,java.lang.Class)|"
+    ],
+    "affectedLib": "com.google.guava:guava:21.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.sonarsource.sslr-squid-bridge:sslr-squid-bridge:2.6.1",
+    "coordinatesV2": "org.sonarsource.sslr-squid-bridge:sslr-squid-bridge:2.7.0.377",
+    "caller": "|java+method:///org/sonar/squidbridge/rules/SqaleXmlLoader/reader(java.lang.String)|",
+    "called": "|java+method:///com/google/common/io/Resources/getResource(java.lang.Class,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///com/google/common/io/Resources/getResource(java.lang.Class,java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///com/google/common/io/Resources/newReaderSupplier(java.net.URL,java.nio.charset.Charset)|",
+      "|java+method:///com/google/common/io/InputSupplier/getInput()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///com/google/common/io/Resources/asCharSource(java.net.URL,java.nio.charset.Charset)|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///com/google/common/io/Resources/getResource(java.lang.Class,java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///com/google/common/io/CharSource/openBufferedStream()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|"
+    ],
+    "affectedLib": "com.google.guava:guava:21.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.sonarsource.sslr-squid-bridge:sslr-squid-bridge:2.6.1",
+    "coordinatesV2": "org.sonarsource.sslr-squid-bridge:sslr-squid-bridge:2.7.0.377",
+    "caller": "|java+method:///org/sonar/squidbridge/annotations/AnnotationBasedRulesDefinition/newRule(java.lang.Class,boolean)|",
+    "called": "|java+method:///org/apache/commons/lang/StringUtils/isEmpty(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/sonar/check/Rule/key()|",
+      "|java+method:///org/apache/commons/lang/StringUtils/isEmpty(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/Class/getCanonicalName()|",
+      "|java+method:///org/sonar/check/Rule/cardinality()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+constructor:///java/lang/IllegalStateException/IllegalStateException(java.lang.String)|",
+      "|java+method:///org/sonar/api/server/rule/RulesDefinition$NewRepository/rule(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/sonar/api/utils/AnnotationUtils/getAnnotation(java.lang.Object,java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/sonar/check/Rule/key()|",
+      "|java+method:///org/apache/commons/lang/StringUtils/isEmpty(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/Class/getCanonicalName()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+constructor:///java/lang/IllegalStateException/IllegalStateException(java.lang.String)|",
+      "|java+method:///org/sonar/api/server/rule/RulesDefinition$NewRepository/rule(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/sonar/api/utils/AnnotationUtils/getAnnotation(java.lang.Object,java.lang.Class)|"
+    ],
+    "affectedLib": "commons-lang:commons-lang:2.6",
+    "change": "ADDED"
+  }
+]

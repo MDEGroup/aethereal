@@ -1,0 +1,78 @@
+[
+  {
+    "coordinatesV1": "com.github.rest-driver:rest-server-driver:1.1.22",
+    "coordinatesV2": "com.github.rest-driver:rest-server-driver:1.1.21",
+    "caller": "|java+method:///com/github/restdriver/serverdriver/Json/asJson(java.lang.String)|",
+    "called": "|java+method:///org/codehaus/jackson/map/ObjectMapper/readTree(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/codehaus/jackson/map/ObjectMapper/readTree(java.lang.String)|",
+      "|java+method:///java/lang/String/substring(int,int)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///com/github/restdriver/serverdriver/http/exception/RuntimeMappingException/RuntimeMappingException(java.lang.String,java.lang.Exception)|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/String/substring(int,int)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///com/github/restdriver/serverdriver/http/exception/RuntimeMappingException/RuntimeMappingException(java.lang.String,java.lang.Exception)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/readTree(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "affectedLib": "org.codehaus.jackson:jackson-mapper-asl:1.9.5",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.github.rest-driver:rest-server-driver:1.1.22",
+    "coordinatesV2": "com.github.rest-driver:rest-server-driver:1.1.21",
+    "caller": "|java+initializer:///com/github/restdriver/serverdriver/Json/Json$initializer|",
+    "called": "|java+constructor:///org/codehaus/jackson/map/ObjectMapper/ObjectMapper()|",
+    "v1Body": [
+      "|java+constructor:///org/codehaus/jackson/map/ObjectMapper/ObjectMapper()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/fasterxml/jackson/databind/ObjectMapper/ObjectMapper()|"
+    ],
+    "affectedLib": "org.codehaus.jackson:jackson-mapper-asl:1.9.5",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.github.rest-driver:rest-server-driver:1.1.21",
+    "coordinatesV2": "com.github.rest-driver:rest-server-driver:1.1.22",
+    "caller": "|java+method:///com/github/restdriver/serverdriver/Json/asJson(java.lang.String)|",
+    "called": "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/readTree(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/codehaus/jackson/map/ObjectMapper/readTree(java.lang.String)|",
+      "|java+method:///java/lang/String/substring(int,int)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///com/github/restdriver/serverdriver/http/exception/RuntimeMappingException/RuntimeMappingException(java.lang.String,java.lang.Exception)|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/String/substring(int,int)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///com/github/restdriver/serverdriver/http/exception/RuntimeMappingException/RuntimeMappingException(java.lang.String,java.lang.Exception)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/readTree(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "affectedLib": "com.fasterxml.jackson.core:jackson-databind:2.0.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.github.rest-driver:rest-server-driver:1.1.21",
+    "coordinatesV2": "com.github.rest-driver:rest-server-driver:1.1.22",
+    "caller": "|java+initializer:///com/github/restdriver/serverdriver/Json/Json$initializer|",
+    "called": "|java+constructor:///com/fasterxml/jackson/databind/ObjectMapper/ObjectMapper()|",
+    "v1Body": [
+      "|java+constructor:///org/codehaus/jackson/map/ObjectMapper/ObjectMapper()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/fasterxml/jackson/databind/ObjectMapper/ObjectMapper()|"
+    ],
+    "affectedLib": "com.fasterxml.jackson.core:jackson-databind:2.0.0",
+    "change": "ADDED"
+  }
+]

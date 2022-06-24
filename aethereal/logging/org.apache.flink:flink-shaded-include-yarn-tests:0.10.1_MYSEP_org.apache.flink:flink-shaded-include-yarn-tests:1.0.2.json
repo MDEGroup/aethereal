@@ -1,0 +1,196 @@
+[
+  {
+    "coordinatesV1": "org.apache.flink:flink-shaded-include-yarn-tests:1.0.2",
+    "coordinatesV2": "org.apache.flink:flink-shaded-include-yarn-tests:0.10.1",
+    "caller": "|java+method:///org/apache/hadoop/security/authentication/server/PseudoAuthenticationHandler/getUserName(javax.servlet.http.HttpServletRequest)|",
+    "called": "|java+method:///org/apache/http/client/utils/URLEncodedUtils/parse(java.lang.String,java.nio.charset.Charset)|",
+    "v1Body": [
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///org/apache/http/NameValuePair/getValue()|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getQueryString()|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///org/apache/http/client/utils/URLEncodedUtils/parse(java.lang.String,java.nio.charset.Charset)|",
+      "|java+method:///org/apache/http/NameValuePair/getName()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/apache/flink/hadoop/shaded/org/apache/http/client/utils/URLEncodedUtils/parse(java.lang.String,java.nio.charset.Charset)|",
+      "|java+method:///org/apache/flink/hadoop/shaded/org/apache/http/NameValuePair/getName()|",
+      "|java+method:///org/apache/flink/hadoop/shaded/org/apache/http/NameValuePair/getValue()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getQueryString()|",
+      "|java+method:///java/util/List/iterator()|"
+    ],
+    "affectedLib": "org.apache.httpcomponents:httpclient:4.2",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.apache.flink:flink-shaded-include-yarn-tests:1.0.2",
+    "coordinatesV2": "org.apache.flink:flink-shaded-include-yarn-tests:0.10.1",
+    "caller": "|java+method:///org/apache/hadoop/yarn/server/webproxy/WebAppProxyServlet/proxyLink(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.net.URI,javax.servlet.http.Cookie,java.lang.String)|",
+    "called": "|java+constructor:///org/apache/commons/httpclient/HttpClient/HttpClient(org.apache.commons.httpclient.params.HttpClientParams)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/logging/Log/debug(java.lang.Object)|",
+      "|java+method:///org/apache/commons/httpclient/params/HttpClientParams/setCookiePolicy(java.lang.String)|",
+      "|java+method:///org/apache/commons/httpclient/HostConfiguration/setLocalAddress(java.net.InetAddress)|",
+      "|java+method:///java/net/URLEncoder/encode(java.lang.String,java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/commons/httpclient/HttpClient/executeMethod(org.apache.commons.httpclient.HostConfiguration,org.apache.commons.httpclient.HttpMethod)|",
+      "|java+constructor:///org/apache/commons/httpclient/HostConfiguration/HostConfiguration()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/net/InetAddress/toString()|",
+      "|java+method:///org/apache/commons/httpclient/URI/getEscapedURI()|",
+      "|java+method:///javax/servlet/http/HttpServletResponse/getOutputStream()|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getHeader(java.lang.String)|",
+      "|java+constructor:///org/apache/commons/httpclient/methods/GetMethod/GetMethod(java.lang.String)|",
+      "|java+method:///java/util/HashSet/contains(java.lang.Object)|",
+      "|java+method:///javax/servlet/http/HttpServletResponse/setHeader(java.lang.String,java.lang.String)|",
+      "|java+constructor:///org/apache/commons/httpclient/params/HttpClientParams/HttpClientParams()|",
+      "|java+method:///java/net/URI/toString()|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getRemoteUser()|",
+      "|java+method:///org/apache/commons/logging/Log/isDebugEnabled()|",
+      "|java+constructor:///org/apache/commons/httpclient/URI/URI(java.lang.String,boolean)|",
+      "|java+method:///org/apache/commons/httpclient/HttpMethod/getResponseHeaders()|",
+      "|java+method:///org/apache/commons/httpclient/params/HttpClientParams/setBooleanParameter(java.lang.String,boolean)|",
+      "|java+method:///javax/servlet/http/HttpServletResponse/addCookie(javax.servlet.http.Cookie)|",
+      "|java+method:///java/lang/String/isEmpty()|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getHeaderNames()|",
+      "|java+method:///org/apache/commons/httpclient/HttpMethod/releaseConnection()|",
+      "|java+method:///org/apache/commons/httpclient/Header/getName()|",
+      "|java+method:///org/apache/commons/httpclient/Header/getValue()|",
+      "|java+method:///java/util/Enumeration/hasMoreElements()|",
+      "|java+method:///java/util/Enumeration/nextElement()|",
+      "|java+method:///org/apache/commons/httpclient/HttpMethod/setRequestHeader(java.lang.String,java.lang.String)|",
+      "|java+method:///org/apache/hadoop/io/IOUtils/copyBytes(java.io.InputStream,java.io.OutputStream,int,boolean)|",
+      "|java+method:///javax/servlet/http/HttpServletResponse/setStatus(int)|",
+      "|java+method:///org/apache/commons/httpclient/HttpMethod/getResponseBodyAsStream()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///org/apache/commons/httpclient/HttpClient/HttpClient(org.apache.commons.httpclient.params.HttpClientParams)|",
+      "|java+method:///java/net/InetAddress/getByName(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/logging/Log/debug(java.lang.Object)|",
+      "|java+method:///org/apache/flink/hadoop/shaded/org/apache/commons/httpclient/URI/getEscapedURI()|",
+      "|java+method:///org/apache/flink/hadoop/shaded/org/apache/commons/httpclient/Header/getValue()|",
+      "|java+method:///javax/servlet/http/HttpServletResponse/setHeader(java.lang.String,java.lang.String)|",
+      "|java+method:///java/net/URLEncoder/encode(java.lang.String,java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/flink/hadoop/shaded/org/apache/commons/httpclient/HostConfiguration/setLocalAddress(java.net.InetAddress)|",
+      "|java+method:///org/apache/flink/hadoop/shaded/org/apache/commons/httpclient/HttpMethod/setRequestHeader(java.lang.String,java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/net/InetAddress/toString()|",
+      "|java+constructor:///org/apache/flink/hadoop/shaded/org/apache/commons/httpclient/URI/URI(java.lang.String,boolean)|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getHeaderNames()|",
+      "|java+method:///java/util/Enumeration/hasMoreElements()|",
+      "|java+constructor:///org/apache/flink/hadoop/shaded/org/apache/commons/httpclient/params/HttpClientParams/HttpClientParams()|",
+      "|java+method:///javax/servlet/http/HttpServletResponse/setStatus(int)|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getHeader(java.lang.String)|",
+      "|java+method:///java/util/HashSet/contains(java.lang.Object)|",
+      "|java+method:///java/net/URI/toString()|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getRemoteUser()|",
+      "|java+method:///org/apache/commons/logging/Log/isDebugEnabled()|",
+      "|java+constructor:///org/apache/flink/hadoop/shaded/org/apache/commons/httpclient/methods/GetMethod/GetMethod(java.lang.String)|",
+      "|java+method:///org/apache/flink/hadoop/shaded/org/apache/commons/httpclient/HttpMethod/releaseConnection()|",
+      "|java+method:///org/apache/flink/hadoop/shaded/org/apache/commons/httpclient/Header/getName()|",
+      "|java+method:///org/apache/flink/hadoop/shaded/org/apache/commons/httpclient/params/HttpClientParams/setCookiePolicy(java.lang.String)|",
+      "|java+constructor:///org/apache/flink/hadoop/shaded/org/apache/commons/httpclient/HttpClient/HttpClient(org.apache.flink.hadoop.shaded.org.apache.commons.httpclient.params.HttpClientParams)|",
+      "|java+method:///org/apache/flink/hadoop/shaded/org/apache/commons/httpclient/HttpMethod/getResponseBodyAsStream()|",
+      "|java+method:///javax/servlet/http/HttpServletResponse/addCookie(javax.servlet.http.Cookie)|",
+      "|java+method:///java/lang/String/isEmpty()|",
+      "|java+constructor:///org/apache/flink/hadoop/shaded/org/apache/commons/httpclient/HostConfiguration/HostConfiguration()|",
+      "|java+method:///javax/servlet/http/HttpServletResponse/getOutputStream()|",
+      "|java+method:///java/util/Enumeration/nextElement()|",
+      "|java+method:///org/apache/flink/hadoop/shaded/org/apache/commons/httpclient/HttpMethod/getResponseHeaders()|",
+      "|java+method:///org/apache/flink/hadoop/shaded/org/apache/commons/httpclient/params/HttpClientParams/setBooleanParameter(java.lang.String,boolean)|",
+      "|java+method:///org/apache/hadoop/io/IOUtils/copyBytes(java.io.InputStream,java.io.OutputStream,int,boolean)|",
+      "|java+method:///org/apache/flink/hadoop/shaded/org/apache/commons/httpclient/HttpClient/executeMethod(org.apache.flink.hadoop.shaded.org.apache.commons.httpclient.HostConfiguration,org.apache.flink.hadoop.shaded.org.apache.commons.httpclient.HttpMethod)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/net/InetAddress/getByName(java.lang.String)|"
+    ],
+    "affectedLib": "commons-httpclient:commons-httpclient:3.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.apache.flink:flink-shaded-include-yarn-tests:1.0.2",
+    "coordinatesV2": "org.apache.flink:flink-shaded-include-yarn-tests:0.10.1",
+    "caller": "|java+method:///org/apache/hadoop/util/ServletUtil/getDecodedPath(javax.servlet.http.HttpServletRequest,java.lang.String)|",
+    "called": "|java+method:///org/apache/commons/httpclient/util/URIUtil/decode(java.lang.String,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/httpclient/util/URIUtil/decode(java.lang.String,java.lang.String)|",
+      "|java+constructor:///java/lang/AssertionError/AssertionError(java.lang.Object)|",
+      "|java+method:///org/apache/hadoop/util/ServletUtil/getRawPath(javax.servlet.http.HttpServletRequest,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/lang/AssertionError/AssertionError(java.lang.Object)|",
+      "|java+method:///org/apache/flink/hadoop/shaded/org/apache/commons/httpclient/util/URIUtil/decode(java.lang.String,java.lang.String)|",
+      "|java+method:///org/apache/hadoop/util/ServletUtil/getRawPath(javax.servlet.http.HttpServletRequest,java.lang.String)|"
+    ],
+    "affectedLib": "commons-httpclient:commons-httpclient:3.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.apache.flink:flink-shaded-include-yarn-tests:1.0.2",
+    "coordinatesV2": "org.apache.flink:flink-shaded-include-yarn-tests:0.10.1",
+    "caller": "|java+method:///org/apache/hadoop/mapred/JobEndNotifier/httpNotification(java.lang.String,int)|",
+    "called": "|java+method:///org/apache/commons/httpclient/HttpClient/executeMethod(org.apache.commons.httpclient.HttpMethod)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/commons/httpclient/methods/GetMethod/GetMethod(java.lang.String)|",
+      "|java+method:///org/apache/commons/httpclient/params/HttpClientParams/setConnectionManagerTimeout(long)|",
+      "|java+method:///org/apache/commons/httpclient/HttpClient/executeMethod(org.apache.commons.httpclient.HttpMethod)|",
+      "|java+constructor:///org/apache/commons/httpclient/URI/URI(java.lang.String,boolean)|",
+      "|java+method:///org/apache/commons/httpclient/params/HttpClientParams/setSoTimeout(int)|",
+      "|java+constructor:///org/apache/commons/httpclient/HttpClient/HttpClient()|",
+      "|java+method:///org/apache/commons/httpclient/HttpMethod/setRequestHeader(java.lang.String,java.lang.String)|",
+      "|java+method:///org/apache/commons/httpclient/URI/getEscapedURI()|",
+      "|java+method:///org/apache/commons/httpclient/HttpClient/getParams()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/flink/hadoop/shaded/org/apache/commons/httpclient/methods/GetMethod/GetMethod(java.lang.String)|",
+      "|java+method:///org/apache/flink/hadoop/shaded/org/apache/commons/httpclient/HttpClient/getParams()|",
+      "|java+method:///org/apache/flink/hadoop/shaded/org/apache/commons/httpclient/HttpMethod/setRequestHeader(java.lang.String,java.lang.String)|",
+      "|java+method:///org/apache/flink/hadoop/shaded/org/apache/commons/httpclient/params/HttpClientParams/setConnectionManagerTimeout(long)|",
+      "|java+constructor:///org/apache/flink/hadoop/shaded/org/apache/commons/httpclient/URI/URI(java.lang.String,boolean)|",
+      "|java+method:///org/apache/flink/hadoop/shaded/org/apache/commons/httpclient/params/HttpClientParams/setSoTimeout(int)|",
+      "|java+constructor:///org/apache/flink/hadoop/shaded/org/apache/commons/httpclient/HttpClient/HttpClient()|",
+      "|java+method:///org/apache/flink/hadoop/shaded/org/apache/commons/httpclient/HttpClient/executeMethod(org.apache.flink.hadoop.shaded.org.apache.commons.httpclient.HttpMethod)|",
+      "|java+method:///org/apache/flink/hadoop/shaded/org/apache/commons/httpclient/URI/getEscapedURI()|"
+    ],
+    "affectedLib": "commons-httpclient:commons-httpclient:3.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.apache.flink:flink-shaded-include-yarn-tests:1.0.2",
+    "coordinatesV2": "org.apache.flink:flink-shaded-include-yarn-tests:0.10.1",
+    "caller": "|java+method:///org/apache/hadoop/util/ServletUtil/encodePath(java.lang.String)|",
+    "called": "|java+method:///org/apache/commons/httpclient/util/URIUtil/encodePath(java.lang.String,java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///java/lang/AssertionError/AssertionError(java.lang.Object)|",
+      "|java+method:///org/apache/commons/httpclient/util/URIUtil/encodePath(java.lang.String,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/flink/hadoop/shaded/org/apache/commons/httpclient/util/URIUtil/encodePath(java.lang.String,java.lang.String)|",
+      "|java+constructor:///java/lang/AssertionError/AssertionError(java.lang.Object)|"
+    ],
+    "affectedLib": "commons-httpclient:commons-httpclient:3.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.apache.flink:flink-shaded-include-yarn-tests:1.0.2",
+    "coordinatesV2": "org.apache.flink:flink-shaded-include-yarn-tests:0.10.1",
+    "caller": "|java+method:///org/apache/hadoop/util/ServletUtil/encodeQueryValue(java.lang.String)|",
+    "called": "|java+method:///org/apache/commons/httpclient/util/URIUtil/encodeWithinQuery(java.lang.String,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/httpclient/util/URIUtil/encodeWithinQuery(java.lang.String,java.lang.String)|",
+      "|java+constructor:///java/lang/AssertionError/AssertionError(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/lang/AssertionError/AssertionError(java.lang.Object)|",
+      "|java+method:///org/apache/flink/hadoop/shaded/org/apache/commons/httpclient/util/URIUtil/encodeWithinQuery(java.lang.String,java.lang.String)|"
+    ],
+    "affectedLib": "commons-httpclient:commons-httpclient:3.1",
+    "change": "REMOVED"
+  }
+]

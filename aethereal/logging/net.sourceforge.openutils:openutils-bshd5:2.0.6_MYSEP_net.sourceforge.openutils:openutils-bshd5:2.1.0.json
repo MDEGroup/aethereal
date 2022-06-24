@@ -1,0 +1,67 @@
+[
+  {
+    "coordinatesV1": "net.sourceforge.openutils:openutils-bshd5:2.0.6",
+    "coordinatesV2": "net.sourceforge.openutils:openutils-bshd5:2.1.0",
+    "caller": "|java+method:///it/openutils/dao/hibernate/HibernateDAOImpl$HibernateCallbackForExecution/doInHibernate(org.hibernate.Session)|",
+    "called": "|java+method:///org/hibernate/criterion/ProjectionList/add(org.hibernate.criterion.Projection)|",
+    "v1Body": [
+      "|java+method:///org/hibernate/Criteria/setProjection(org.hibernate.criterion.Projection)|",
+      "|java+method:///org/hibernate/Criteria/list()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/hibernate/criterion/ProjectionList/add(org.hibernate.criterion.Projection)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/hibernate/Criteria/setMaxResults(int)|",
+      "|java+method:///org/hibernate/Criteria/setResultTransformer(org.hibernate.transform.ResultTransformer)|",
+      "|java+method:///org/hibernate/Criteria/add(org.hibernate.criterion.Criterion)|",
+      "|java+method:///org/hibernate/criterion/Property/forName(java.lang.String)|",
+      "|java+method:///org/hibernate/criterion/Projections/projectionList()|",
+      "|java+method:///org/hibernate/Criteria/setFirstResult(int)|",
+      "|java+method:///java/util/List/isEmpty()|",
+      "|java+method:///org/hibernate/Session/createCriteria(java.lang.Class)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///org/hibernate/Criteria/addOrder(org.hibernate.criterion.Order)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///it/openutils/hibernate/example/EnhancedExample/create(org.hibernate.Criteria,java.lang.Object,java.util.Map)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/hibernate/Criteria/setProjection(org.hibernate.criterion.Projection)|",
+      "|java+method:///org/hibernate/Criteria/list()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///it/openutils/hibernate/example/FilterMetadataSupport/create(org.hibernate.Session)|",
+      "|java+method:///org/hibernate/criterion/ProjectionList/add(org.hibernate.criterion.Projection)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/hibernate/Criteria/setResultTransformer(org.hibernate.transform.ResultTransformer)|",
+      "|java+method:///org/hibernate/Criteria/addOrder(org.hibernate.criterion.Order)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///org/hibernate/Criteria/add(org.hibernate.criterion.Criterion)|",
+      "|java+method:///org/hibernate/criterion/Property/forName(java.lang.String)|",
+      "|java+method:///org/hibernate/criterion/Projections/projectionList()|",
+      "|java+method:///org/hibernate/Criteria/setFirstResult(int)|",
+      "|java+method:///org/hibernate/Criteria/setMaxResults(int)|",
+      "|java+constructor:///it/openutils/hibernate/example/FilterMetadataSupport/FilterMetadataSupport(java.lang.Object,java.util.Map)|",
+      "|java+method:///it/openutils/dao/hibernate/HibernateDAOImpl$HibernateCallbackForExecution/doInHibernate(org.hibernate.Session)|",
+      "|java+method:///org/springframework/util/CollectionUtils/isEmpty(java.util.Collection)|"
+    ],
+    "affectedLib": "org.hibernate:hibernate-core:3.5.6-Final",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "net.sourceforge.openutils:openutils-bshd5:2.0.6",
+    "coordinatesV2": "net.sourceforge.openutils:openutils-bshd5:2.1.0",
+    "caller": "|java+method:///it/openutils/dao/hibernate/HibernateDAOImpl/findFilteredProperties(java.lang.Object,org.hibernate.criterion.Order%5B%5D,java.util.Map,int,int,java.util.List,java.util.List)|",
+    "called": "|java+method:///org/springframework/orm/hibernate3/HibernateTemplate/execute(org.springframework.orm.hibernate3.HibernateCallback)|",
+    "v1Body": [
+      "|java+constructor:///it/openutils/dao/hibernate/HibernateDAOImpl$HibernateCallbackForExecution/HibernateDAOImpl$HibernateCallbackForExecution(it.openutils.dao.hibernate.HibernateDAOImpl,java.lang.Object,int,int,java.util.Map,org.hibernate.criterion.Order%5B%5D,java.util.List,java.util.List,it.openutils.dao.hibernate.HibernateDAOImpl$1)|",
+      "|java+method:///it/openutils/dao/hibernate/HibernateDAOImpl/getDefaultOrder()|",
+      "|java+method:///org/springframework/orm/hibernate3/HibernateTemplate/execute(org.springframework.orm.hibernate3.HibernateCallback)|",
+      "|java+method:///it/openutils/dao/hibernate/HibernateDAOImpl/getHibernateTemplate()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///it/openutils/dao/hibernate/HibernateDAOImpl$HibernateCallbackForExecution/HibernateDAOImpl$HibernateCallbackForExecution(it.openutils.dao.hibernate.HibernateDAOImpl,java.lang.Object,int,int,java.util.Map,org.hibernate.criterion.Order%5B%5D,java.util.List,java.util.List,it.openutils.dao.hibernate.HibernateDAOImpl$1)|",
+      "|java+method:///org/springframework/orm/hibernate3/HibernateTemplate/execute(org.springframework.orm.hibernate3.HibernateCallback)|",
+      "|java+method:///it/openutils/dao/hibernate/HibernateDAOImpl/getHibernateTemplate()|"
+    ],
+    "affectedLib": "org.springframework:spring-orm:3.0.0.RELEASE",
+    "change": "UPDATED"
+  }
+]

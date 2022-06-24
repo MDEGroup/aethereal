@@ -1,0 +1,44 @@
+[
+  {
+    "coordinatesV1": "org.duracloud:chunk:2.1.2",
+    "coordinatesV2": "org.duracloud:chunk:3.2.0",
+    "caller": "|java+method:///org/duracloud/chunk/FileChunker/addContent(java.lang.String,java.lang.String,java.lang.String,java.io.File)|",
+    "called": "|java+method:///org/duracloud/storage/util/StorageProviderUtil/createContentProperties(java.lang.String,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/duracloud/chunk/FileChunker/getInputStream(java.io.File)|",
+      "|java+method:///org/duracloud/chunk/FileChunker/addContent(java.lang.String,java.lang.String,java.lang.String,long,java.io.InputStream)|",
+      "|java+method:///java/io/File/length()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/duracloud/storage/util/StorageProviderUtil/createContentProperties(java.lang.String,java.lang.String)|",
+      "|java+method:///org/duracloud/chunk/FileChunker/addContent(java.lang.String,java.lang.String,java.lang.String,long,java.io.InputStream,java.util.Map)|",
+      "|java+method:///org/duracloud/chunk/FileChunker/getInputStream(java.io.File)|",
+      "|java+method:///java/io/File/getAbsolutePath()|",
+      "|java+method:///java/io/File/length()|"
+    ],
+    "affectedLib": "org.duracloud:storageprovider:3.2.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.duracloud:chunk:2.1.2",
+    "coordinatesV2": "org.duracloud:chunk:3.2.0",
+    "caller": "|java+method:///org/duracloud/chunk/FileChunker/doAddContent(java.io.File,java.lang.String,java.io.File)|",
+    "called": "|java+method:///org/duracloud/storage/util/StorageProviderUtil/createContentProperties(java.lang.String,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/duracloud/chunk/FileChunker/getContentId(java.io.File,java.io.File)|",
+      "|java+method:///org/duracloud/chunk/FileChunker/doAddContent(java.lang.String,java.lang.String,java.lang.String,long,java.io.InputStream)|",
+      "|java+method:///org/duracloud/chunk/FileChunker/getInputStream(java.io.File)|",
+      "|java+method:///java/io/File/length()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/duracloud/storage/util/StorageProviderUtil/createContentProperties(java.lang.String,java.lang.String)|",
+      "|java+method:///org/duracloud/chunk/FileChunker/getContentId(java.io.File,java.io.File)|",
+      "|java+method:///org/duracloud/chunk/FileChunker/getInputStream(java.io.File)|",
+      "|java+method:///java/io/File/getAbsolutePath()|",
+      "|java+method:///java/io/File/length()|",
+      "|java+method:///org/duracloud/chunk/FileChunker/doAddContent(java.lang.String,java.lang.String,java.lang.String,long,java.io.InputStream,java.util.Map)|"
+    ],
+    "affectedLib": "org.duracloud:storageprovider:3.2.0",
+    "change": "UPDATED"
+  }
+]

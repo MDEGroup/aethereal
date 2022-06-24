@@ -1,0 +1,310 @@
+[
+  {
+    "coordinatesV1": "com.github.mheath:nats-client:0.5.Beta2",
+    "coordinatesV2": "com.github.mheath:nats-client:0.5.Beta1",
+    "caller": "|java+constructor:///nats/codec/ServerCodec/ServerCodec()|",
+    "called": "|java+constructor:///io/netty/channel/CombinedChannelHandler/CombinedChannelHandler()|",
+    "v1Body": [
+      "|java+constructor:///io/netty/channel/CombinedChannelHandler/CombinedChannelHandler()|",
+      "|java+method:///nats/codec/ServerCodec/init(io.netty.channel.ChannelInboundHandler,io.netty.channel.ChannelOutboundHandler)|",
+      "|java+constructor:///nats/codec/ClientFrameDecoder/ClientFrameDecoder()|",
+      "|java+constructor:///nats/codec/ServerFrameEncoder/ServerFrameEncoder()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///io/netty/channel/CombinedChannelDuplexHandler/CombinedChannelDuplexHandler()|",
+      "|java+method:///nats/codec/ServerCodec/init(io.netty.channel.ChannelStateHandler,io.netty.channel.ChannelOperationHandler)|",
+      "|java+constructor:///nats/codec/ClientFrameDecoder/ClientFrameDecoder()|",
+      "|java+constructor:///nats/codec/ServerFrameEncoder/ServerFrameEncoder()|"
+    ],
+    "affectedLib": "io.netty:netty:4.0.0.Alpha8",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.github.mheath:nats-client:0.5.Beta2",
+    "coordinatesV2": "com.github.mheath:nats-client:0.5.Beta1",
+    "caller": "|java+constructor:///nats/codec/ServerFrameEncoder/ServerFrameEncoder()|",
+    "called": "|java+constructor:///io/netty/handler/codec/MessageToByteEncoder/MessageToByteEncoder(java.lang.Class%5B%5D)|",
+    "v1Body": [
+      "|java+constructor:///io/netty/handler/codec/MessageToByteEncoder/MessageToByteEncoder(java.lang.Class%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///io/netty/handler/codec/MessageToByteEncoder/MessageToByteEncoder()|"
+    ],
+    "affectedLib": "io.netty:netty:4.0.0.Alpha8",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.github.mheath:nats-client:0.5.Beta2",
+    "coordinatesV2": "com.github.mheath:nats-client:0.5.Beta1",
+    "caller": "|java+constructor:///nats/client/NatsImpl/NatsImpl(nats.client.NatsConnector)|",
+    "called": "|java+constructor:///io/netty/channel/socket/nio/NioEventLoopGroup/NioEventLoopGroup()|",
+    "v1Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+constructor:///io/netty/channel/socket/nio/NioEventLoopGroup/NioEventLoopGroup()|",
+      "|java+constructor:///nats/client/ServerList/ServerList()|",
+      "|java+method:///nats/client/ServerList/addServers(java.lang.Iterable)|",
+      "|java+method:///java/util/List/addAll(java.util.Collection)|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+constructor:///java/util/LinkedList/LinkedList()|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+constructor:///java/util/concurrent/atomic/AtomicInteger/AtomicInteger()|",
+      "|java+method:///nats/client/NatsImpl/connect()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+constructor:///nats/client/ServerList/ServerList()|",
+      "|java+method:///nats/client/ServerList/addServers(java.lang.Iterable)|",
+      "|java+method:///java/util/List/addAll(java.util.Collection)|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+constructor:///java/util/LinkedList/LinkedList()|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+constructor:///io/netty/channel/nio/NioEventLoopGroup/NioEventLoopGroup()|",
+      "|java+constructor:///java/util/concurrent/atomic/AtomicInteger/AtomicInteger()|",
+      "|java+method:///nats/client/NatsImpl/connect()|"
+    ],
+    "affectedLib": "io.netty:netty:4.0.0.Alpha8",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.github.mheath:nats-client:0.5.Beta2",
+    "coordinatesV2": "com.github.mheath:nats-client:0.5.Beta1",
+    "caller": "|java+constructor:///nats/codec/ClientCodec/ClientCodec(int)|",
+    "called": "|java+constructor:///io/netty/channel/CombinedChannelHandler/CombinedChannelHandler()|",
+    "v1Body": [
+      "|java+method:///nats/codec/ClientCodec/init(io.netty.channel.ChannelInboundHandler,io.netty.channel.ChannelOutboundHandler)|",
+      "|java+constructor:///nats/codec/ServerFrameDecoder/ServerFrameDecoder(int)|",
+      "|java+constructor:///io/netty/channel/CombinedChannelHandler/CombinedChannelHandler()|",
+      "|java+constructor:///nats/codec/ClientFrameEncoder/ClientFrameEncoder()|"
+    ],
+    "v2Body": [
+      "|java+method:///nats/codec/ClientCodec/init(io.netty.channel.ChannelStateHandler,io.netty.channel.ChannelOperationHandler)|",
+      "|java+constructor:///nats/codec/ServerFrameDecoder/ServerFrameDecoder(int)|",
+      "|java+constructor:///io/netty/channel/CombinedChannelDuplexHandler/CombinedChannelDuplexHandler()|",
+      "|java+constructor:///nats/codec/ClientFrameEncoder/ClientFrameEncoder()|"
+    ],
+    "affectedLib": "io.netty:netty:4.0.0.Alpha8",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.github.mheath:nats-client:0.5.Beta2",
+    "coordinatesV2": "com.github.mheath:nats-client:0.5.Beta1",
+    "caller": "|java+constructor:///nats/codec/ClientFrameEncoder/ClientFrameEncoder()|",
+    "called": "|java+constructor:///io/netty/handler/codec/MessageToByteEncoder/MessageToByteEncoder(java.lang.Class%5B%5D)|",
+    "v1Body": [
+      "|java+constructor:///org/codehaus/jackson/map/ObjectMapper/ObjectMapper()|",
+      "|java+constructor:///io/netty/handler/codec/MessageToByteEncoder/MessageToByteEncoder(java.lang.Class%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/codehaus/jackson/map/ObjectMapper/ObjectMapper()|",
+      "|java+constructor:///io/netty/handler/codec/MessageToByteEncoder/MessageToByteEncoder()|"
+    ],
+    "affectedLib": "io.netty:netty:4.0.0.Alpha8",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.github.mheath:nats-client:0.5.Beta2",
+    "coordinatesV2": "com.github.mheath:nats-client:0.5.Beta1",
+    "caller": "|java+constructor:///nats/codec/AbstractClientInboundMessageHandlerAdapter/AbstractClientInboundMessageHandlerAdapter()|",
+    "called": "|java+constructor:///io/netty/channel/ChannelInboundMessageHandlerAdapter/ChannelInboundMessageHandlerAdapter(java.lang.Class%5B%5D)|",
+    "v1Body": [
+      "|java+constructor:///io/netty/channel/ChannelInboundMessageHandlerAdapter/ChannelInboundMessageHandlerAdapter(java.lang.Class%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///io/netty/channel/ChannelInboundMessageHandlerAdapter/ChannelInboundMessageHandlerAdapter()|"
+    ],
+    "affectedLib": "io.netty:netty:4.0.0.Alpha8",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.github.mheath:nats-client:0.5.Beta2",
+    "coordinatesV2": "com.github.mheath:nats-client:0.5.Beta1",
+    "caller": "|java+method:///nats/client/NatsImpl/connect()|",
+    "called": "|java+method:///io/netty/bootstrap/Bootstrap/connect()|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///io/netty/bootstrap/Bootstrap/group(io.netty.channel.EventLoopGroup)|",
+      "|java+method:///io/netty/channel/ChannelFuture/addListener(io.netty.channel.ChannelFutureListener)|",
+      "|java+method:///nats/client/ServerList$Server/getUser()|",
+      "|java+method:///io/netty/bootstrap/Bootstrap/handler(io.netty.channel.ChannelHandler)|",
+      "|java+constructor:///io/netty/bootstrap/Bootstrap/Bootstrap()|",
+      "|java+method:///nats/client/ServerList/nextServer()|",
+      "|java+method:///io/netty/bootstrap/Bootstrap/channel(java.lang.Class)|",
+      "|java+constructor:///nats/client/NatsImpl$1/NatsImpl$1(nats.client.NatsImpl,nats.client.ServerList$Server)|",
+      "|java+method:///nats/client/ServerList$Server/getAddress()|",
+      "|java+constructor:///nats/client/NatsImpl$NatsChannelInitializer/NatsImpl$NatsChannelInitializer(nats.client.NatsImpl,nats.client.NatsImpl$1)|",
+      "|java+method:///io/netty/bootstrap/Bootstrap/connect()|",
+      "|java+method:///io/netty/bootstrap/Bootstrap/remoteAddress(java.net.SocketAddress)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///io/netty/bootstrap/Bootstrap/group(io.netty.channel.EventLoopGroup)|",
+      "|java+method:///nats/client/ServerList$Server/getUser()|",
+      "|java+method:///io/netty/bootstrap/Bootstrap/handler(io.netty.channel.ChannelHandler)|",
+      "|java+method:///io/netty/channel/ChannelFuture/addListener(io.netty.util.concurrent.GenericFutureListener)|",
+      "|java+constructor:///io/netty/bootstrap/Bootstrap/Bootstrap()|",
+      "|java+method:///nats/client/ServerList/nextServer()|",
+      "|java+method:///io/netty/bootstrap/Bootstrap/channel(java.lang.Class)|",
+      "|java+constructor:///nats/client/NatsImpl$1/NatsImpl$1(nats.client.NatsImpl,nats.client.ServerList$Server)|",
+      "|java+method:///nats/client/ServerList$Server/getAddress()|",
+      "|java+constructor:///nats/client/NatsImpl$NatsChannelInitializer/NatsImpl$NatsChannelInitializer(nats.client.NatsImpl,nats.client.NatsImpl$1)|",
+      "|java+method:///io/netty/bootstrap/Bootstrap/connect()|",
+      "|java+method:///io/netty/bootstrap/Bootstrap/remoteAddress(java.net.SocketAddress)|"
+    ],
+    "affectedLib": "io.netty:netty:4.0.0.Alpha8",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.github.mheath:nats-client:0.5.Beta1",
+    "coordinatesV2": "com.github.mheath:nats-client:0.5.Beta2",
+    "caller": "|java+constructor:///nats/codec/ServerCodec/ServerCodec()|",
+    "called": "|java+constructor:///io/netty/channel/CombinedChannelDuplexHandler/CombinedChannelDuplexHandler()|",
+    "v1Body": [
+      "|java+constructor:///io/netty/channel/CombinedChannelHandler/CombinedChannelHandler()|",
+      "|java+method:///nats/codec/ServerCodec/init(io.netty.channel.ChannelInboundHandler,io.netty.channel.ChannelOutboundHandler)|",
+      "|java+constructor:///nats/codec/ClientFrameDecoder/ClientFrameDecoder()|",
+      "|java+constructor:///nats/codec/ServerFrameEncoder/ServerFrameEncoder()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///io/netty/channel/CombinedChannelDuplexHandler/CombinedChannelDuplexHandler()|",
+      "|java+method:///nats/codec/ServerCodec/init(io.netty.channel.ChannelStateHandler,io.netty.channel.ChannelOperationHandler)|",
+      "|java+constructor:///nats/codec/ClientFrameDecoder/ClientFrameDecoder()|",
+      "|java+constructor:///nats/codec/ServerFrameEncoder/ServerFrameEncoder()|"
+    ],
+    "affectedLib": "io.netty:netty-all:4.0.0.CR1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.github.mheath:nats-client:0.5.Beta1",
+    "coordinatesV2": "com.github.mheath:nats-client:0.5.Beta2",
+    "caller": "|java+constructor:///nats/client/NatsImpl/NatsImpl(nats.client.NatsConnector)|",
+    "called": "|java+constructor:///io/netty/channel/nio/NioEventLoopGroup/NioEventLoopGroup()|",
+    "v1Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+constructor:///io/netty/channel/socket/nio/NioEventLoopGroup/NioEventLoopGroup()|",
+      "|java+constructor:///nats/client/ServerList/ServerList()|",
+      "|java+method:///nats/client/ServerList/addServers(java.lang.Iterable)|",
+      "|java+method:///java/util/List/addAll(java.util.Collection)|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+constructor:///java/util/LinkedList/LinkedList()|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+constructor:///java/util/concurrent/atomic/AtomicInteger/AtomicInteger()|",
+      "|java+method:///nats/client/NatsImpl/connect()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+constructor:///nats/client/ServerList/ServerList()|",
+      "|java+method:///nats/client/ServerList/addServers(java.lang.Iterable)|",
+      "|java+method:///java/util/List/addAll(java.util.Collection)|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+constructor:///java/util/LinkedList/LinkedList()|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+constructor:///io/netty/channel/nio/NioEventLoopGroup/NioEventLoopGroup()|",
+      "|java+constructor:///java/util/concurrent/atomic/AtomicInteger/AtomicInteger()|",
+      "|java+method:///nats/client/NatsImpl/connect()|"
+    ],
+    "affectedLib": "io.netty:netty-all:4.0.0.CR1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.github.mheath:nats-client:0.5.Beta1",
+    "coordinatesV2": "com.github.mheath:nats-client:0.5.Beta2",
+    "caller": "|java+constructor:///nats/codec/ServerFrameEncoder/ServerFrameEncoder()|",
+    "called": "|java+constructor:///io/netty/handler/codec/MessageToByteEncoder/MessageToByteEncoder()|",
+    "v1Body": [
+      "|java+constructor:///io/netty/handler/codec/MessageToByteEncoder/MessageToByteEncoder(java.lang.Class%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///io/netty/handler/codec/MessageToByteEncoder/MessageToByteEncoder()|"
+    ],
+    "affectedLib": "io.netty:netty-all:4.0.0.CR1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.github.mheath:nats-client:0.5.Beta1",
+    "coordinatesV2": "com.github.mheath:nats-client:0.5.Beta2",
+    "caller": "|java+constructor:///nats/codec/ClientFrameEncoder/ClientFrameEncoder()|",
+    "called": "|java+constructor:///io/netty/handler/codec/MessageToByteEncoder/MessageToByteEncoder()|",
+    "v1Body": [
+      "|java+constructor:///org/codehaus/jackson/map/ObjectMapper/ObjectMapper()|",
+      "|java+constructor:///io/netty/handler/codec/MessageToByteEncoder/MessageToByteEncoder(java.lang.Class%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/codehaus/jackson/map/ObjectMapper/ObjectMapper()|",
+      "|java+constructor:///io/netty/handler/codec/MessageToByteEncoder/MessageToByteEncoder()|"
+    ],
+    "affectedLib": "io.netty:netty-all:4.0.0.CR1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.github.mheath:nats-client:0.5.Beta1",
+    "coordinatesV2": "com.github.mheath:nats-client:0.5.Beta2",
+    "caller": "|java+constructor:///nats/codec/ClientCodec/ClientCodec(int)|",
+    "called": "|java+constructor:///io/netty/channel/CombinedChannelDuplexHandler/CombinedChannelDuplexHandler()|",
+    "v1Body": [
+      "|java+method:///nats/codec/ClientCodec/init(io.netty.channel.ChannelInboundHandler,io.netty.channel.ChannelOutboundHandler)|",
+      "|java+constructor:///nats/codec/ServerFrameDecoder/ServerFrameDecoder(int)|",
+      "|java+constructor:///io/netty/channel/CombinedChannelHandler/CombinedChannelHandler()|",
+      "|java+constructor:///nats/codec/ClientFrameEncoder/ClientFrameEncoder()|"
+    ],
+    "v2Body": [
+      "|java+method:///nats/codec/ClientCodec/init(io.netty.channel.ChannelStateHandler,io.netty.channel.ChannelOperationHandler)|",
+      "|java+constructor:///nats/codec/ServerFrameDecoder/ServerFrameDecoder(int)|",
+      "|java+constructor:///io/netty/channel/CombinedChannelDuplexHandler/CombinedChannelDuplexHandler()|",
+      "|java+constructor:///nats/codec/ClientFrameEncoder/ClientFrameEncoder()|"
+    ],
+    "affectedLib": "io.netty:netty-all:4.0.0.CR1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.github.mheath:nats-client:0.5.Beta1",
+    "coordinatesV2": "com.github.mheath:nats-client:0.5.Beta2",
+    "caller": "|java+constructor:///nats/codec/AbstractClientInboundMessageHandlerAdapter/AbstractClientInboundMessageHandlerAdapter()|",
+    "called": "|java+constructor:///io/netty/channel/ChannelInboundMessageHandlerAdapter/ChannelInboundMessageHandlerAdapter()|",
+    "v1Body": [
+      "|java+constructor:///io/netty/channel/ChannelInboundMessageHandlerAdapter/ChannelInboundMessageHandlerAdapter(java.lang.Class%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///io/netty/channel/ChannelInboundMessageHandlerAdapter/ChannelInboundMessageHandlerAdapter()|"
+    ],
+    "affectedLib": "io.netty:netty-all:4.0.0.CR1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.github.mheath:nats-client:0.5.Beta1",
+    "coordinatesV2": "com.github.mheath:nats-client:0.5.Beta2",
+    "caller": "|java+method:///nats/client/NatsImpl/connect()|",
+    "called": "|java+method:///io/netty/bootstrap/Bootstrap/connect()|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///io/netty/bootstrap/Bootstrap/group(io.netty.channel.EventLoopGroup)|",
+      "|java+method:///io/netty/channel/ChannelFuture/addListener(io.netty.channel.ChannelFutureListener)|",
+      "|java+method:///nats/client/ServerList$Server/getUser()|",
+      "|java+method:///io/netty/bootstrap/Bootstrap/handler(io.netty.channel.ChannelHandler)|",
+      "|java+constructor:///io/netty/bootstrap/Bootstrap/Bootstrap()|",
+      "|java+method:///nats/client/ServerList/nextServer()|",
+      "|java+method:///io/netty/bootstrap/Bootstrap/channel(java.lang.Class)|",
+      "|java+constructor:///nats/client/NatsImpl$1/NatsImpl$1(nats.client.NatsImpl,nats.client.ServerList$Server)|",
+      "|java+method:///nats/client/ServerList$Server/getAddress()|",
+      "|java+constructor:///nats/client/NatsImpl$NatsChannelInitializer/NatsImpl$NatsChannelInitializer(nats.client.NatsImpl,nats.client.NatsImpl$1)|",
+      "|java+method:///io/netty/bootstrap/Bootstrap/connect()|",
+      "|java+method:///io/netty/bootstrap/Bootstrap/remoteAddress(java.net.SocketAddress)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///io/netty/bootstrap/Bootstrap/group(io.netty.channel.EventLoopGroup)|",
+      "|java+method:///nats/client/ServerList$Server/getUser()|",
+      "|java+method:///io/netty/bootstrap/Bootstrap/handler(io.netty.channel.ChannelHandler)|",
+      "|java+method:///io/netty/channel/ChannelFuture/addListener(io.netty.util.concurrent.GenericFutureListener)|",
+      "|java+constructor:///io/netty/bootstrap/Bootstrap/Bootstrap()|",
+      "|java+method:///nats/client/ServerList/nextServer()|",
+      "|java+method:///io/netty/bootstrap/Bootstrap/channel(java.lang.Class)|",
+      "|java+constructor:///nats/client/NatsImpl$1/NatsImpl$1(nats.client.NatsImpl,nats.client.ServerList$Server)|",
+      "|java+method:///nats/client/ServerList$Server/getAddress()|",
+      "|java+constructor:///nats/client/NatsImpl$NatsChannelInitializer/NatsImpl$NatsChannelInitializer(nats.client.NatsImpl,nats.client.NatsImpl$1)|",
+      "|java+method:///io/netty/bootstrap/Bootstrap/connect()|",
+      "|java+method:///io/netty/bootstrap/Bootstrap/remoteAddress(java.net.SocketAddress)|"
+    ],
+    "affectedLib": "io.netty:netty-all:4.0.0.CR1",
+    "change": "ADDED"
+  }
+]

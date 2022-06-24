@@ -1,0 +1,24 @@
+[
+  {
+    "coordinatesV1": "org.zalando:riptide-spring-boot-starter:2.7.1",
+    "coordinatesV2": "org.zalando:riptide-spring-boot-starter:2.8.0",
+    "caller": "|java+method:///org/zalando/riptide/spring/RiptidePostProcessor/setEnvironment(org.springframework.core.env.Environment)|",
+    "called": "|java+method:///com/google/common/collect/Lists/newArrayList(java.lang.Iterable)|",
+    "v1Body": [
+      "|java+method:///org/springframework/core/env/ConfigurableEnvironment/getConversionService()|",
+      "|java+method:///org/springframework/boot/bind/PropertiesConfigurationFactory/getObject()|",
+      "|java+method:///org/springframework/boot/bind/PropertiesConfigurationFactory/setTargetName(java.lang.String)|",
+      "|java+method:///org/springframework/boot/bind/PropertiesConfigurationFactory/setPropertySources(org.springframework.core.env.PropertySources)|",
+      "|java+constructor:///org/springframework/boot/bind/PropertiesConfigurationFactory/PropertiesConfigurationFactory(java.lang.Class)|",
+      "|java+method:///org/springframework/boot/bind/PropertiesConfigurationFactory/setConversionService(org.springframework.core.convert.ConversionService)|",
+      "|java+method:///org/springframework/core/env/ConfigurableEnvironment/getPropertySources()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/zalando/riptide/spring/RiptidePostProcessor/parse(org.springframework.core.env.ConfigurableEnvironment,java.util.Collection)|",
+      "|java+method:///com/google/common/collect/Lists/newArrayList(java.lang.Iterable)|",
+      "|java+method:///java/util/ServiceLoader/load(java.lang.Class)|"
+    ],
+    "affectedLib": "com.google.guava:guava:25.0-jre",
+    "change": "UPDATED"
+  }
+]

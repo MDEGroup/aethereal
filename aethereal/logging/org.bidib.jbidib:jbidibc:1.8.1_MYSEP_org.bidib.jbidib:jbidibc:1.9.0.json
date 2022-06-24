@@ -1,0 +1,88 @@
+[
+  {
+    "coordinatesV1": "org.bidib.jbidib:jbidibc:1.8.1",
+    "coordinatesV2": "org.bidib.jbidib:jbidibc:1.9.0",
+    "caller": "|java+initializer:///org/bidib/jbidibc/core/utils/ByteUtils/ByteUtils$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///java/lang/String/toCharArray()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///java/lang/String/toCharArray()|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.21",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.bidib.jbidib:jbidibc:1.8.1",
+    "coordinatesV2": "org.bidib.jbidib:jbidibc:1.9.0",
+    "caller": "|java+method:///org/bidib/jbidibc/core/AbstractBidib/registerListeners(java.util.Set,java.util.Set,java.util.Set)|",
+    "called": "|java+method:///org/apache/commons/collections4/CollectionUtils/isNotEmpty(java.util.Collection)|",
+    "v1Body": [
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/bidib/jbidibc/core/BidibMessageProcessor/addNodeListener(org.bidib.jbidibc.core.NodeListener)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String)|",
+      "|java+method:///org/apache/commons/collections4/CollectionUtils/isNotEmpty(java.util.Collection)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/bidib/jbidibc/core/BidibMessageProcessor/addMessageListener(org.bidib.jbidibc.core.MessageListener)|",
+      "|java+method:///java/util/Set/iterator()|",
+      "|java+method:///org/bidib/jbidibc/core/node/RootNode/addTransferListener(org.bidib.jbidibc.core.node.listener.TransferListener)|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String)|",
+      "|java+method:///org/bidib/jbidibc/core/AbstractBidib/getRootNode()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/bidib/jbidibc/core/BidibMessageProcessor/addNodeListener(org.bidib.jbidibc.core.NodeListener)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String)|",
+      "|java+method:///org/apache/commons/collections4/CollectionUtils/isNotEmpty(java.util.Collection)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/bidib/jbidibc/core/BidibMessageProcessor/addMessageListener(org.bidib.jbidibc.core.MessageListener)|",
+      "|java+method:///java/util/Set/iterator()|",
+      "|java+constructor:///java/util/HashSet/HashSet(java.util.Collection)|"
+    ],
+    "affectedLib": "org.apache.commons:commons-collections4:4.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.bidib.jbidib:jbidibc:1.8.1",
+    "coordinatesV2": "org.bidib.jbidib:jbidibc:1.9.0",
+    "caller": "|java+method:///org/bidib/jbidibc/core/node/NodeFactory/getRootNode()|",
+    "called": "|java+method:///org/apache/commons/collections4/CollectionUtils/isNotEmpty(java.util.Collection)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/bidib/jbidibc/core/node/RootNode/setRequestFactory(org.bidib.jbidibc.core.message.RequestFactory)|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///org/bidib/jbidibc/core/BidibInterface/getResponseTimeout()|",
+      "|java+constructor:///org/bidib/jbidibc/core/node/RootNode/RootNode(org.bidib.jbidibc.core.MessageReceiver,boolean)|",
+      "|java+method:///org/bidib/jbidibc/core/node/RootNode/setResponseTimeout(int)|",
+      "|java+method:///org/bidib/jbidibc/core/node/RootNode/setBidib(org.bidib.jbidibc.core.BidibInterface)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/bidib/jbidibc/core/node/RootNode/setRequestFactory(org.bidib.jbidibc.core.message.RequestFactory)|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String)|",
+      "|java+method:///org/apache/commons/collections4/CollectionUtils/isNotEmpty(java.util.Collection)|",
+      "|java+method:///java/util/Set/iterator()|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/bidib/jbidibc/core/node/RootNode/addTransferListener(org.bidib.jbidibc.core.node.listener.TransferListener)|",
+      "|java+method:///org/bidib/jbidibc/core/BidibInterface/getResponseTimeout()|",
+      "|java+constructor:///org/bidib/jbidibc/core/node/RootNode/RootNode(org.bidib.jbidibc.core.MessageReceiver,boolean)|",
+      "|java+method:///org/bidib/jbidibc/core/node/RootNode/setResponseTimeout(int)|",
+      "|java+method:///org/bidib/jbidibc/core/node/RootNode/setBidib(org.bidib.jbidibc.core.BidibInterface)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/bidib/jbidibc/core/BidibInterface/getTransferListeners()|"
+    ],
+    "affectedLib": "org.apache.commons:commons-collections4:4.1",
+    "change": "UPDATED"
+  }
+]

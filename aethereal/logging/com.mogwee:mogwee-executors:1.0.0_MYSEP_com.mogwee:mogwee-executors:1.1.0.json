@@ -1,0 +1,136 @@
+[
+  {
+    "coordinatesV1": "com.mogwee:mogwee-executors:1.1.0",
+    "coordinatesV2": "com.mogwee:mogwee-executors:1.0.0",
+    "caller": "|java+method:///com/mogwee/executors/WrappedRunnable/run()|",
+    "called": "|java+method:///com/mogwee/logging/Logger/debugf(java.lang.String,java.lang.Object%5B%5D)|",
+    "v1Body": [
+      "|java+method:///java/lang/Runnable/run()|",
+      "|java+method:///java/lang/Thread/currentThread()|",
+      "|java+method:///com/mogwee/logging/Logger/errorf(java.lang.Throwable,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///com/mogwee/logging/Logger/debugf(java.lang.String,java.lang.Object%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/Thread/currentThread()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/Runnable/run()|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|"
+    ],
+    "affectedLib": "com.mogwee:mogwee-logging:1.0.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.mogwee:mogwee-executors:1.1.0",
+    "coordinatesV2": "com.mogwee:mogwee-executors:1.0.0",
+    "caller": "|java+method:///com/mogwee/executors/WrappedCallable/call()|",
+    "called": "|java+method:///com/mogwee/logging/Logger/debugf(java.lang.Throwable,java.lang.String,java.lang.Object%5B%5D)|",
+    "v1Body": [
+      "|java+method:///java/lang/Thread/currentThread()|",
+      "|java+method:///com/mogwee/logging/Logger/errorf(java.lang.Throwable,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///java/util/concurrent/Callable/call()|",
+      "|java+method:///com/mogwee/logging/Logger/debugf(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///com/mogwee/logging/Logger/debugf(java.lang.Throwable,java.lang.String,java.lang.Object%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/Thread/currentThread()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/util/concurrent/Callable/call()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "affectedLib": "com.mogwee:mogwee-logging:1.0.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.mogwee:mogwee-executors:1.1.0",
+    "coordinatesV2": "com.mogwee:mogwee-executors:1.0.0",
+    "caller": "|java+initializer:///com/mogwee/executors/LoggingExecutor/LoggingExecutor$initializer|",
+    "called": "|java+method:///com/mogwee/logging/Logger/getLogger()|",
+    "v1Body": [
+      "|java+method:///com/mogwee/logging/Logger/getLogger()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "com.mogwee:mogwee-logging:1.0.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.mogwee:mogwee-executors:1.1.0",
+    "coordinatesV2": "com.mogwee:mogwee-executors:1.0.0",
+    "caller": "|java+initializer:///com/mogwee/executors/FailsafeScheduledExecutor/FailsafeScheduledExecutor$initializer|",
+    "called": "|java+method:///com/mogwee/logging/Logger/getLogger()|",
+    "v1Body": [
+      "|java+method:///com/mogwee/logging/Logger/getLogger()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "com.mogwee:mogwee-logging:1.0.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.mogwee:mogwee-executors:1.0.0",
+    "coordinatesV2": "com.mogwee:mogwee-executors:1.1.0",
+    "caller": "|java+initializer:///com/mogwee/executors/LoggingExecutor/LoggingExecutor$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///com/mogwee/logging/Logger/getLogger()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.6.4",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.mogwee:mogwee-executors:1.0.0",
+    "coordinatesV2": "com.mogwee:mogwee-executors:1.1.0",
+    "caller": "|java+initializer:///com/mogwee/executors/FailsafeScheduledExecutor/FailsafeScheduledExecutor$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///com/mogwee/logging/Logger/getLogger()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.6.4",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.mogwee:mogwee-executors:1.0.0",
+    "coordinatesV2": "com.mogwee:mogwee-executors:1.1.0",
+    "caller": "|java+initializer:///com/mogwee/executors/LoggingExecutor/LoggingExecutor$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///com/mogwee/logging/Logger/getLogger()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.5.11",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.mogwee:mogwee-executors:1.0.0",
+    "coordinatesV2": "com.mogwee:mogwee-executors:1.1.0",
+    "caller": "|java+initializer:///com/mogwee/executors/FailsafeScheduledExecutor/FailsafeScheduledExecutor$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///com/mogwee/logging/Logger/getLogger()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.5.11",
+    "change": "ADDED"
+  }
+]

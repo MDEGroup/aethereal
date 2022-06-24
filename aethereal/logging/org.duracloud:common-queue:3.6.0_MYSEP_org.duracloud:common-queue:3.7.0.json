@@ -1,0 +1,88 @@
+[
+  {
+    "coordinatesV1": "org.duracloud:common-queue:3.6.0",
+    "coordinatesV2": "org.duracloud:common-queue:3.7.0",
+    "caller": "|java+method:///org/duracloud/common/queue/aws/SQSTaskQueue/sendBatchMessages(java.util.Set)|",
+    "called": "|java+method:///com/amazonaws/services/sqs/model/SendMessageBatchRequest/withEntries(java.util.Collection)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///com/amazonaws/services/sqs/model/SendMessageBatchRequest/withQueueUrl(java.lang.String)|",
+      "|java+method:///java/util/Set/size()|",
+      "|java+method:///com/amazonaws/services/sqs/AmazonSQSClient/sendMessageBatch(com.amazonaws.services.sqs.model.SendMessageBatchRequest)|",
+      "|java+constructor:///com/amazonaws/services/sqs/model/SendMessageBatchRequest/SendMessageBatchRequest()|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///com/amazonaws/services/sqs/model/SendMessageBatchRequest/withEntries(java.util.Collection)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/amazonaws/services/sqs/model/SendMessageBatchRequest/withQueueUrl(java.lang.String)|",
+      "|java+constructor:///org/duracloud/common/error/DuraCloudRuntimeException/DuraCloudRuntimeException(java.lang.Throwable)|",
+      "|java+method:///java/util/Set/size()|",
+      "|java+constructor:///org/duracloud/common/retry/Retrier/Retrier(int,int,int)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+constructor:///org/duracloud/common/queue/aws/SQSTaskQueue$2/SQSTaskQueue$2(org.duracloud.common.queue.aws.SQSTaskQueue,com.amazonaws.services.sqs.model.SendMessageBatchRequest)|",
+      "|java+method:///org/duracloud/common/retry/Retrier/execute(org.duracloud.common.retry.Retriable)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///com/amazonaws/services/sqs/model/SendMessageBatchRequest/withEntries(java.util.Collection)|",
+      "|java+method:///java/lang/Exception/getMessage()|",
+      "|java+constructor:///com/amazonaws/services/sqs/model/SendMessageBatchRequest/SendMessageBatchRequest()|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String,java.lang.Object,java.lang.Object)|"
+    ],
+    "affectedLib": "com.amazonaws:aws-java-sdk-sqs:1.10.20",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.duracloud:common-queue:3.6.0",
+    "coordinatesV2": "org.duracloud:common-queue:3.7.0",
+    "caller": "|java+method:///org/duracloud/common/queue/aws/SQSTaskQueue/sendBatchMessages(java.util.Set)|",
+    "called": "|java+constructor:///org/duracloud/common/error/DuraCloudRuntimeException/DuraCloudRuntimeException(java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///com/amazonaws/services/sqs/model/SendMessageBatchRequest/withQueueUrl(java.lang.String)|",
+      "|java+method:///java/util/Set/size()|",
+      "|java+method:///com/amazonaws/services/sqs/AmazonSQSClient/sendMessageBatch(com.amazonaws.services.sqs.model.SendMessageBatchRequest)|",
+      "|java+constructor:///com/amazonaws/services/sqs/model/SendMessageBatchRequest/SendMessageBatchRequest()|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///com/amazonaws/services/sqs/model/SendMessageBatchRequest/withEntries(java.util.Collection)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/amazonaws/services/sqs/model/SendMessageBatchRequest/withQueueUrl(java.lang.String)|",
+      "|java+constructor:///org/duracloud/common/error/DuraCloudRuntimeException/DuraCloudRuntimeException(java.lang.Throwable)|",
+      "|java+method:///java/util/Set/size()|",
+      "|java+constructor:///org/duracloud/common/retry/Retrier/Retrier(int,int,int)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+constructor:///org/duracloud/common/queue/aws/SQSTaskQueue$2/SQSTaskQueue$2(org.duracloud.common.queue.aws.SQSTaskQueue,com.amazonaws.services.sqs.model.SendMessageBatchRequest)|",
+      "|java+method:///org/duracloud/common/retry/Retrier/execute(org.duracloud.common.retry.Retriable)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///com/amazonaws/services/sqs/model/SendMessageBatchRequest/withEntries(java.util.Collection)|",
+      "|java+method:///java/lang/Exception/getMessage()|",
+      "|java+constructor:///com/amazonaws/services/sqs/model/SendMessageBatchRequest/SendMessageBatchRequest()|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String,java.lang.Object,java.lang.Object)|"
+    ],
+    "affectedLib": "org.duracloud:common:3.7.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.duracloud:common-queue:3.6.0",
+    "coordinatesV2": "org.duracloud:common-queue:3.7.0",
+    "caller": "|java+method:///org/duracloud/common/queue/aws/SQSTaskQueue/put(org.duracloud.common.queue.task.Task)|",
+    "called": "|java+constructor:///org/duracloud/common/error/DuraCloudRuntimeException/DuraCloudRuntimeException(java.lang.Throwable)|",
+    "v1Body": [
+      "|java+constructor:///com/amazonaws/services/sqs/model/SendMessageRequest/SendMessageRequest(java.lang.String,java.lang.String)|",
+      "|java+method:///com/amazonaws/services/sqs/AmazonSQSClient/sendMessage(com.amazonaws.services.sqs.model.SendMessageRequest)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/duracloud/common/queue/aws/SQSTaskQueue/unmarshallTask(org.duracloud.common.queue.task.Task)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/duracloud/common/error/DuraCloudRuntimeException/DuraCloudRuntimeException(java.lang.Throwable)|",
+      "|java+constructor:///org/duracloud/common/retry/Retrier/Retrier(int,int,int)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///org/duracloud/common/retry/Retrier/execute(org.duracloud.common.retry.Retriable)|",
+      "|java+constructor:///org/duracloud/common/queue/aws/SQSTaskQueue$1/SQSTaskQueue$1(org.duracloud.common.queue.aws.SQSTaskQueue,java.lang.String)|",
+      "|java+method:///org/duracloud/common/queue/aws/SQSTaskQueue/unmarshallTask(org.duracloud.common.queue.task.Task)|",
+      "|java+method:///java/lang/Exception/getMessage()|"
+    ],
+    "affectedLib": "org.duracloud:common:3.7.0",
+    "change": "UPDATED"
+  }
+]

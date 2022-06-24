@@ -1,0 +1,103 @@
+[
+  {
+    "coordinatesV1": "net.sf.ehcache:ehcache-jcache:1.2",
+    "coordinatesV2": "net.sf.ehcache:ehcache-jcache:1.4.0-beta1",
+    "caller": "|java+initializer:///net/sf/ehcache/jcache/JCache/JCache$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///java/util/logging/Logger/getLogger(java.lang.String)|",
+      "|java+method:///java/lang/Class/getName()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.6.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "net.sf.ehcache:ehcache-jcache:1.2",
+    "coordinatesV2": "net.sf.ehcache:ehcache-jcache:1.4.0-beta1",
+    "caller": "|java+initializer:///net/sf/ehcache/jcache/JCacheManager/JCacheManager$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///java/util/logging/Logger/getLogger(java.lang.String)|",
+      "|java+method:///java/lang/Class/getName()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.6.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "net.sf.ehcache:ehcache-jcache:1.2",
+    "coordinatesV2": "net.sf.ehcache:ehcache-jcache:1.4.0-beta1",
+    "caller": "|java+method:///net/sf/ehcache/jcache/JCache/get(java.lang.Object)|",
+    "called": "|java+method:///net/sf/ehcache/Element/getValue()|",
+    "v1Body": [
+      "|java+method:///net/sf/ehcache/jcache/JCache/get(java.lang.Object,net.sf.ehcache.jcache.loader.JCacheLoader)|"
+    ],
+    "v2Body": [
+      "|java+method:///net/sf/ehcache/jcache/JCache/getFromLoader(java.lang.Object)|",
+      "|java+method:///net/sf/ehcache/Element/getValue()|",
+      "|java+method:///net/sf/ehcache/Ehcache/get(java.lang.Object)|",
+      "|java+method:///net/sf/ehcache/jcache/JCache/checkKey(java.lang.Object)|",
+      "|java+method:///net/sf/ehcache/jcache/JCache/checkStatusStarted()|"
+    ],
+    "affectedLib": "net.sf.ehcache:ehcache-core:2.5.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "net.sf.ehcache:ehcache-jcache:1.2",
+    "coordinatesV2": "net.sf.ehcache:ehcache-jcache:1.4.0-beta1",
+    "caller": "|java+method:///net/sf/ehcache/jcache/JCache/put(java.lang.Object,java.lang.Object)|",
+    "called": "|java+constructor:///net/sf/ehcache/Element/Element(java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///net/sf/ehcache/jcache/JCache/put(java.lang.Object,java.lang.Object,int)|"
+    ],
+    "v2Body": [
+      "|java+method:///net/sf/ehcache/jcache/JCache/checkValue(java.lang.Object)|",
+      "|java+constructor:///net/sf/ehcache/Element/Element(java.lang.Object,java.lang.Object)|",
+      "|java+method:///net/sf/ehcache/jcache/JCache/checkKey(java.lang.Object)|",
+      "|java+method:///net/sf/ehcache/Ehcache/put(net.sf.ehcache.Element)|",
+      "|java+method:///net/sf/ehcache/jcache/JCache/checkStatusStarted()|"
+    ],
+    "affectedLib": "net.sf.ehcache:ehcache-core:2.5.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "net.sf.ehcache:ehcache-jcache:1.2",
+    "coordinatesV2": "net.sf.ehcache:ehcache-jcache:1.4.0-beta1",
+    "caller": "|java+method:///net/sf/ehcache/jcache/JCacheEntry/getValue()|",
+    "called": "|java+method:///net/sf/ehcache/Element/getValue()|",
+    "v1Body": [
+      "|java+method:///net/sf/ehcache/Element/getObjectValue()|"
+    ],
+    "v2Body": [
+      "|java+method:///net/sf/ehcache/Element/getValue()|"
+    ],
+    "affectedLib": "net.sf.ehcache:ehcache-core:2.5.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "net.sf.ehcache:ehcache-jcache:1.2",
+    "coordinatesV2": "net.sf.ehcache:ehcache-jcache:1.4.0-beta1",
+    "caller": "|java+method:///net/sf/ehcache/jcache/JCacheManager/shutdown()|",
+    "called": "|java+method:///net/sf/ehcache/CacheManager/shutdown()|",
+    "v1Body": [
+      "|java+method:///java/util/logging/Logger/fine(java.lang.String)|",
+      "|java+method:///net/sf/ehcache/CacheManager/shutdown()|",
+      "|java+method:///net/sf/ehcache/Status/equals(net.sf.ehcache.Status)|",
+      "|java+method:///java/util/logging/Logger/isLoggable(java.util.logging.Level)|"
+    ],
+    "v2Body": [
+      "|java+method:///net/sf/ehcache/jcache/JCacheManager/getStatus()|",
+      "|java+method:///java/util/HashSet/clear()|",
+      "|java+method:///net/sf/ehcache/CacheManager/shutdown()|",
+      "|java+method:///java/util/HashMap/clear()|",
+      "|java+constructor:///java/lang/IllegalStateException/IllegalStateException()|"
+    ],
+    "affectedLib": "net.sf.ehcache:ehcache-core:2.5.0",
+    "change": "UPDATED"
+  }
+]

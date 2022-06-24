@@ -1,0 +1,27 @@
+[
+  {
+    "coordinatesV1": "net.java.dev.activeobjects:activeobjects-test:0.9.21",
+    "coordinatesV2": "net.java.dev.activeobjects:activeobjects-test:0.9.28",
+    "caller": "|java+method:///net/java/ao/test/DbUtils/executeUpdate(net.java.ao.EntityManager,java.lang.String,net.java.ao.test.DbUtils$UpdateCallback)|",
+    "called": "|java+method:///net/java/ao/sql/SqlUtils/closeQuietly(java.sql.Statement,java.sql.Connection)|",
+    "v1Body": [
+      "|java+method:///java/sql/Connection/prepareStatement(java.lang.String)|",
+      "|java+method:///java/sql/PreparedStatement/executeUpdate()|",
+      "|java+method:///net/java/ao/DatabaseProvider/getConnection()|",
+      "|java+method:///net/java/ao/EntityManager/getProvider()|",
+      "|java+method:///net/java/ao/test/DbUtils$UpdateCallback/setParameters(java.sql.PreparedStatement)|",
+      "|java+method:///net/java/ao/sql/SqlUtils/closeQuietly(java.sql.Statement,java.sql.Connection)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/sql/PreparedStatement/executeUpdate()|",
+      "|java+method:///net/java/ao/DatabaseProvider/getConnection()|",
+      "|java+method:///net/java/ao/EntityManager/getProvider()|",
+      "|java+method:///java/sql/Connection/prepareStatement(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+method:///net/java/ao/test/DbUtils$UpdateCallback/setParameters(java.sql.PreparedStatement)|",
+      "|java+method:///net/java/ao/sql/SqlUtils/closeQuietly(java.sql.Statement,java.sql.Connection)|"
+    ],
+    "affectedLib": "net.java.dev.activeobjects:activeobjects:0.9.28",
+    "change": "UPDATED"
+  }
+]

@@ -1,0 +1,1652 @@
+[
+  {
+    "coordinatesV1": "ch.tatool:tatool-app:1.3",
+    "coordinatesV2": "ch.tatool:tatool-app:1.2.1",
+    "caller": "|java+method:///ch/tatool/app/service/impl/UserAccountDAO/loadAccount(ch.tatool.app.data.UserAccountImpl)|",
+    "called": "|java+method:///org/springframework/orm/hibernate3/HibernateTemplate/load(java.lang.Object,java.io.Serializable)|",
+    "v1Body": [
+      "|java+method:///ch/tatool/app/service/impl/UserAccountDAO/setScriptType(ch.tatool.app.data.UserAccountImpl)|",
+      "|java+method:///ch/tatool/app/data/UserAccountImpl/setId(java.lang.Long)|",
+      "|java+method:///ch/tatool/app/service/impl/UserAccountDAO/getHibernateTemplate()|",
+      "|java+method:///org/springframework/orm/hibernate3/HibernateTemplate/save(java.lang.Object)|",
+      "|java+method:///org/springframework/orm/hibernate3/HibernateTemplate/load(java.lang.Object,java.io.Serializable)|",
+      "|java+method:///java/lang/Long/longValue()|",
+      "|java+constructor:///java/util/Random/Random()|",
+      "|java+method:///java/util/Random/nextLong()|",
+      "|java+method:///java/lang/Math/abs(long)|",
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///ch/tatool/app/data/UserAccountImpl/getId()|"
+    ],
+    "v2Body": [
+      "|java+method:///ch/tatool/app/data/UserAccountImpl/setId(java.lang.Long)|",
+      "|java+method:///org/hibernate/Session/save(java.lang.Object)|",
+      "|java+method:///java/lang/Long/longValue()|",
+      "|java+method:///org/hibernate/Session/load(java.lang.Object,java.io.Serializable)|",
+      "|java+constructor:///java/util/Random/Random()|",
+      "|java+method:///java/util/Random/nextLong()|",
+      "|java+method:///org/hibernate/SessionFactory/getCurrentSession()|",
+      "|java+method:///java/lang/Math/abs(long)|",
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///ch/tatool/app/data/UserAccountImpl/getId()|"
+    ],
+    "affectedLib": "org.springframework:spring:2.5.6",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "ch.tatool:tatool-app:1.3",
+    "coordinatesV2": "ch.tatool:tatool-app:1.2.1",
+    "caller": "|java+method:///ch/tatool/app/service/impl/DataServiceImpl/getSessionCount(ch.tatool.data.Module,boolean)|",
+    "called": "|java+method:///org/springframework/transaction/support/TransactionTemplate/execute(org.springframework.transaction.support.TransactionCallback)|",
+    "v1Body": [
+      "|java+method:///ch/tatool/app/data/ModuleImpl/getTransactionTemplate()|",
+      "|java+constructor:///ch/tatool/app/service/impl/DataServiceImpl$6/DataServiceImpl$6(ch.tatool.app.service.impl.DataServiceImpl,ch.tatool.app.data.ModuleImpl,boolean)|",
+      "|java+method:///java/lang/Long/longValue()|",
+      "|java+method:///org/springframework/transaction/support/TransactionTemplate/execute(org.springframework.transaction.support.TransactionCallback)|"
+    ],
+    "v2Body": [
+      "|java+method:///ch/tatool/app/data/ModuleImpl/getTransactionTemplate()|",
+      "|java+method:///java/lang/Long/longValue()|",
+      "|java+constructor:///ch/tatool/app/service/impl/DataServiceImpl$11/DataServiceImpl$11(ch.tatool.app.service.impl.DataServiceImpl,ch.tatool.app.data.ModuleImpl,boolean)|",
+      "|java+method:///org/springframework/transaction/support/TransactionTemplate/execute(org.springframework.transaction.support.TransactionCallback)|"
+    ],
+    "affectedLib": "org.springframework:spring:2.5.6",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "ch.tatool:tatool-app:1.3",
+    "coordinatesV2": "ch.tatool:tatool-app:1.2.1",
+    "caller": "|java+method:///ch/tatool/app/service/impl/ModuleServiceImpl/getModuleExportersFromXML(byte%5B%5D)|",
+    "called": "|java+constructor:///org/springframework/core/io/ByteArrayResource/ByteArrayResource(byte%5B%5D)|",
+    "v1Body": [
+      "|java+method:///org/springframework/beans/factory/xml/XmlBeanFactory/containsBean(java.lang.String)|",
+      "|java+method:///org/springframework/beans/factory/xml/XmlBeanFactory/getBean(java.lang.String)|",
+      "|java+method:///java/util/Collections/emptyMap()|",
+      "|java+constructor:///org/springframework/core/io/ByteArrayResource/ByteArrayResource(byte%5B%5D)|",
+      "|java+constructor:///org/springframework/beans/factory/xml/XmlBeanFactory/XmlBeanFactory(org.springframework.core.io.Resource)|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String,java.lang.Throwable)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Collections/emptyMap()|",
+      "|java+constructor:///org/springframework/core/io/ByteArrayResource/ByteArrayResource(byte%5B%5D)|",
+      "|java+method:///org/springframework/context/ApplicationContext/containsBean(java.lang.String)|",
+      "|java+method:///org/springframework/context/ApplicationContext/getBean(java.lang.String)|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///org/springframework/context/support/GenericXmlApplicationContext/GenericXmlApplicationContext(org.springframework.core.io.Resource%5B%5D)|"
+    ],
+    "affectedLib": "org.springframework:spring:2.5.6",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "ch.tatool:tatool-app:1.3",
+    "coordinatesV2": "ch.tatool:tatool-app:1.2.1",
+    "caller": "|java+method:///ch/tatool/app/service/impl/TrialDAO/loadAllTrials(ch.tatool.app.data.ModuleImpl)|",
+    "called": "|java+method:///org/springframework/orm/hibernate3/HibernateTemplate/execute(org.springframework.orm.hibernate3.HibernateCallback)|",
+    "v1Body": [
+      "|java+constructor:///ch/tatool/app/service/impl/TrialDAO$1/TrialDAO$1(ch.tatool.app.service.impl.TrialDAO,ch.tatool.app.data.ModuleImpl)|",
+      "|java+method:///org/springframework/orm/hibernate3/HibernateTemplate/execute(org.springframework.orm.hibernate3.HibernateCallback)|",
+      "|java+method:///ch/tatool/app/service/impl/TrialDAO/getHibernateTemplate()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/hibernate/Session/createQuery(java.lang.String)|",
+      "|java+method:///org/hibernate/Query/list()|",
+      "|java+method:///org/hibernate/SessionFactory/getCurrentSession()|",
+      "|java+method:///org/hibernate/Query/setParameter(java.lang.String,java.lang.Object)|"
+    ],
+    "affectedLib": "org.springframework:spring:2.5.6",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "ch.tatool:tatool-app:1.3",
+    "coordinatesV2": "ch.tatool:tatool-app:1.2.1",
+    "caller": "|java+method:///ch/tatool/app/service/impl/TrialDAO/getTrials(ch.tatool.app.data.ModuleImpl,ch.tatool.data.ModuleSession,java.lang.String,java.lang.String,int,int)|",
+    "called": "|java+method:///org/springframework/orm/hibernate3/HibernateTemplate/execute(org.springframework.orm.hibernate3.HibernateCallback)|",
+    "v1Body": [
+      "|java+constructor:///ch/tatool/app/service/impl/TrialDAO$3/TrialDAO$3(ch.tatool.app.service.impl.TrialDAO,ch.tatool.app.data.ModuleImpl,ch.tatool.data.ModuleSession,java.lang.String,java.lang.String,int,int)|",
+      "|java+method:///org/springframework/orm/hibernate3/HibernateTemplate/execute(org.springframework.orm.hibernate3.HibernateCallback)|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String)|",
+      "|java+method:///ch/tatool/app/service/impl/TrialDAO/getHibernateTemplate()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/hibernate/Session/createQuery(java.lang.String)|",
+      "|java+method:///org/hibernate/Query/setFirstResult(int)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/hibernate/Query/list()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/hibernate/Session/update(java.lang.Object)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/hibernate/Query/setMaxResults(int)|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String)|",
+      "|java+method:///org/hibernate/SessionFactory/getCurrentSession()|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///org/hibernate/Query/setParameter(java.lang.String,java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///ch/tatool/data/Trial/setSession(ch.tatool.data.ModuleSession)|"
+    ],
+    "affectedLib": "org.springframework:spring:2.5.6",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "ch.tatool:tatool-app:1.3",
+    "coordinatesV2": "ch.tatool:tatool-app:1.2.1",
+    "caller": "|java+method:///ch/tatool/app/service/impl/TrialDAO/getTrials(ch.tatool.data.ModuleSession)|",
+    "called": "|java+method:///org/springframework/orm/hibernate3/HibernateTemplate/execute(org.springframework.orm.hibernate3.HibernateCallback)|",
+    "v1Body": [
+      "|java+method:///org/springframework/orm/hibernate3/HibernateTemplate/execute(org.springframework.orm.hibernate3.HibernateCallback)|",
+      "|java+constructor:///ch/tatool/app/service/impl/TrialDAO$2/TrialDAO$2(ch.tatool.app.service.impl.TrialDAO,ch.tatool.data.ModuleSession)|",
+      "|java+method:///ch/tatool/app/service/impl/TrialDAO/getHibernateTemplate()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/hibernate/Session/createQuery(java.lang.String)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/hibernate/Query/list()|",
+      "|java+method:///ch/tatool/data/Trial/setSession(ch.tatool.data.ModuleSession)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/hibernate/Session/update(java.lang.Object)|",
+      "|java+method:///org/hibernate/SessionFactory/getCurrentSession()|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///org/hibernate/Query/setParameter(java.lang.String,java.lang.Object)|"
+    ],
+    "affectedLib": "org.springframework:spring:2.5.6",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "ch.tatool:tatool-app:1.3",
+    "coordinatesV2": "ch.tatool:tatool-app:1.2.1",
+    "caller": "|java+method:///ch/tatool/app/service/impl/TrialDAO/getTrials(ch.tatool.data.ModuleSession,ch.tatool.element.Node,int)|",
+    "called": "|java+method:///org/springframework/orm/hibernate3/HibernateTemplate/findByCriteria(org.hibernate.criterion.DetachedCriteria,int,int)|",
+    "v1Body": [
+      "|java+method:///org/springframework/orm/hibernate3/HibernateTemplate/findByCriteria(org.hibernate.criterion.DetachedCriteria,int,int)|",
+      "|java+method:///org/hibernate/criterion/DetachedCriteria/forClass(java.lang.Class)|",
+      "|java+method:///ch/tatool/element/Node/getId()|",
+      "|java+method:///org/hibernate/criterion/Property/eq(java.lang.Object)|",
+      "|java+method:///org/hibernate/criterion/DetachedCriteria/addOrder(org.hibernate.criterion.Order)|",
+      "|java+method:///ch/tatool/app/service/impl/TrialDAO/getHibernateTemplate()|",
+      "|java+method:///org/hibernate/criterion/Order/desc(java.lang.String)|",
+      "|java+method:///org/hibernate/criterion/Property/forName(java.lang.String)|",
+      "|java+method:///org/hibernate/criterion/DetachedCriteria/add(org.hibernate.criterion.Criterion)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/hibernate/Criteria/list()|",
+      "|java+method:///org/hibernate/criterion/DetachedCriteria/forClass(java.lang.Class)|",
+      "|java+method:///org/hibernate/criterion/Property/eq(java.lang.Object)|",
+      "|java+method:///org/hibernate/criterion/Order/desc(java.lang.String)|",
+      "|java+method:///org/hibernate/criterion/Property/forName(java.lang.String)|",
+      "|java+method:///org/hibernate/criterion/DetachedCriteria/add(org.hibernate.criterion.Criterion)|",
+      "|java+method:///org/hibernate/criterion/DetachedCriteria/getExecutableCriteria(org.hibernate.Session)|",
+      "|java+method:///ch/tatool/element/Node/getId()|",
+      "|java+method:///org/hibernate/Criteria/setMaxResults(int)|",
+      "|java+method:///org/hibernate/SessionFactory/getCurrentSession()|",
+      "|java+method:///org/hibernate/criterion/DetachedCriteria/addOrder(org.hibernate.criterion.Order)|"
+    ],
+    "affectedLib": "org.springframework:spring:2.5.6",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "ch.tatool:tatool-app:1.3",
+    "coordinatesV2": "ch.tatool:tatool-app:1.2.1",
+    "caller": "|java+method:///ch/tatool/app/App/main(java.lang.String%5B%5D)|",
+    "called": "|java+constructor:///org/springframework/context/support/ClassPathXmlApplicationContext/ClassPathXmlApplicationContext(java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///org/springframework/context/support/ClassPathXmlApplicationContext/ClassPathXmlApplicationContext(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/springframework/context/support/ClassPathXmlApplicationContext/ClassPathXmlApplicationContext(java.lang.String)|",
+      "|java+method:///java/lang/System/setProperty(java.lang.String,java.lang.String)|"
+    ],
+    "affectedLib": "org.springframework:spring:2.5.6",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "ch.tatool:tatool-app:1.3",
+    "coordinatesV2": "ch.tatool:tatool-app:1.2.1",
+    "caller": "|java+method:///ch/tatool/app/service/impl/UserAccountDAO/deleteAccount(ch.tatool.app.data.UserAccountImpl)|",
+    "called": "|java+method:///org/springframework/orm/hibernate3/HibernateTemplate/delete(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///ch/tatool/app/service/impl/UserAccountDAO/getHibernateTemplate()|",
+      "|java+method:///org/springframework/orm/hibernate3/HibernateTemplate/delete(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/hibernate/Session/delete(java.lang.Object)|",
+      "|java+method:///org/hibernate/SessionFactory/getCurrentSession()|"
+    ],
+    "affectedLib": "org.springframework:spring:2.5.6",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "ch.tatool:tatool-app:1.3",
+    "coordinatesV2": "ch.tatool:tatool-app:1.2.1",
+    "caller": "|java+method:///ch/tatool/app/service/impl/ModuleSessionDAO/findLastSession(ch.tatool.app.data.ModuleImpl)|",
+    "called": "|java+method:///org/springframework/orm/hibernate3/HibernateTemplate/execute(org.springframework.orm.hibernate3.HibernateCallback)|",
+    "v1Body": [
+      "|java+constructor:///ch/tatool/app/service/impl/ModuleSessionDAO$3/ModuleSessionDAO$3(ch.tatool.app.service.impl.ModuleSessionDAO,ch.tatool.app.data.ModuleImpl)|",
+      "|java+method:///ch/tatool/app/service/impl/ModuleSessionDAO/getHibernateTemplate()|",
+      "|java+method:///org/springframework/orm/hibernate3/HibernateTemplate/execute(org.springframework.orm.hibernate3.HibernateCallback)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/hibernate/Criteria/list()|",
+      "|java+method:///org/hibernate/Criteria/add(org.hibernate.criterion.Criterion)|",
+      "|java+method:///org/hibernate/Session/createCriteria(java.lang.Class)|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///org/hibernate/criterion/Restrictions/eq(java.lang.String,java.lang.Object)|",
+      "|java+method:///java/util/List/get(int)|",
+      "|java+method:///org/hibernate/criterion/Order/desc(java.lang.String)|",
+      "|java+method:///org/hibernate/Criteria/setFetchSize(int)|",
+      "|java+method:///org/hibernate/SessionFactory/getCurrentSession()|",
+      "|java+method:///org/hibernate/Criteria/addOrder(org.hibernate.criterion.Order)|"
+    ],
+    "affectedLib": "org.springframework:spring:2.5.6",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "ch.tatool:tatool-app:1.3",
+    "coordinatesV2": "ch.tatool:tatool-app:1.2.1",
+    "caller": "|java+method:///ch/tatool/app/service/impl/ModuleDAO/saveModule(ch.tatool.app.data.ModuleImpl)|",
+    "called": "|java+method:///org/springframework/orm/hibernate3/HibernateTemplate/saveOrUpdate(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///ch/tatool/app/service/impl/ModuleDAO/getHibernateTemplate()|",
+      "|java+method:///org/springframework/orm/hibernate3/HibernateTemplate/saveOrUpdate(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/hibernate/Session/saveOrUpdate(java.lang.Object)|",
+      "|java+method:///org/hibernate/SessionFactory/getCurrentSession()|"
+    ],
+    "affectedLib": "org.springframework:spring:2.5.6",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "ch.tatool:tatool-app:1.3",
+    "coordinatesV2": "ch.tatool:tatool-app:1.2.1",
+    "caller": "|java+method:///ch/tatool/app/service/impl/UserAccountDAO/shutdown()|",
+    "called": "|java+method:///org/springframework/orm/hibernate3/HibernateTemplate/execute(org.springframework.orm.hibernate3.HibernateCallback)|",
+    "v1Body": [
+      "|java+method:///ch/tatool/app/service/impl/UserAccountDAO/getHibernateTemplate()|",
+      "|java+constructor:///ch/tatool/app/service/impl/UserAccountDAO$3/UserAccountDAO$3(ch.tatool.app.service.impl.UserAccountDAO)|",
+      "|java+method:///org/springframework/orm/hibernate3/HibernateTemplate/execute(org.springframework.orm.hibernate3.HibernateCallback)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/hibernate/SQLQuery/executeUpdate()|",
+      "|java+method:///org/hibernate/Session/createSQLQuery(java.lang.String)|",
+      "|java+method:///org/hibernate/SessionFactory/getCurrentSession()|"
+    ],
+    "affectedLib": "org.springframework:spring:2.5.6",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "ch.tatool:tatool-app:1.3",
+    "coordinatesV2": "ch.tatool:tatool-app:1.2.1",
+    "caller": "|java+constructor:///ch/tatool/app/service/impl/ModuleSessionDAO/ModuleSessionDAO()|",
+    "called": "|java+constructor:///org/springframework/orm/hibernate3/support/HibernateDaoSupport/HibernateDaoSupport()|",
+    "v1Body": [
+      "|java+constructor:///org/springframework/orm/hibernate3/support/HibernateDaoSupport/HibernateDaoSupport()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "org.springframework:spring:2.5.6",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "ch.tatool:tatool-app:1.3",
+    "coordinatesV2": "ch.tatool:tatool-app:1.2.1",
+    "caller": "|java+method:///ch/tatool/app/service/impl/ModuleSessionDAO/findDistinctSessionPropertyNames(ch.tatool.app.data.ModuleImpl)|",
+    "called": "|java+method:///org/springframework/orm/hibernate3/HibernateTemplate/execute(org.springframework.orm.hibernate3.HibernateCallback)|",
+    "v1Body": [
+      "|java+constructor:///ch/tatool/app/service/impl/ModuleSessionDAO$5/ModuleSessionDAO$5(ch.tatool.app.service.impl.ModuleSessionDAO,ch.tatool.app.data.ModuleImpl)|",
+      "|java+method:///ch/tatool/app/service/impl/ModuleSessionDAO/getHibernateTemplate()|",
+      "|java+method:///org/springframework/orm/hibernate3/HibernateTemplate/execute(org.springframework.orm.hibernate3.HibernateCallback)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/hibernate/Session/createQuery(java.lang.String)|",
+      "|java+method:///org/hibernate/Query/list()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/hibernate/SessionFactory/getCurrentSession()|",
+      "|java+method:///org/hibernate/Query/setParameter(java.lang.String,java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "affectedLib": "org.springframework:spring:2.5.6",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "ch.tatool:tatool-app:1.3",
+    "coordinatesV2": "ch.tatool:tatool-app:1.2.1",
+    "caller": "|java+method:///ch/tatool/app/service/impl/ModuleDAO/deleteModule(ch.tatool.data.Module)|",
+    "called": "|java+method:///org/springframework/orm/hibernate3/HibernateTemplate/delete(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///ch/tatool/app/service/impl/ModuleDAO/getHibernateTemplate()|",
+      "|java+method:///org/springframework/orm/hibernate3/HibernateTemplate/delete(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/hibernate/Session/delete(java.lang.Object)|",
+      "|java+method:///org/hibernate/SessionFactory/getCurrentSession()|"
+    ],
+    "affectedLib": "org.springframework:spring:2.5.6",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "ch.tatool:tatool-app:1.3",
+    "coordinatesV2": "ch.tatool:tatool-app:1.2.1",
+    "caller": "|java+method:///ch/tatool/app/service/impl/DataServiceImpl/findDistinctSessionPropertyNames(ch.tatool.data.Module)|",
+    "called": "|java+method:///org/springframework/transaction/support/TransactionTemplate/execute(org.springframework.transaction.support.TransactionCallback)|",
+    "v1Body": [
+      "|java+method:///ch/tatool/app/data/ModuleImpl/getTransactionTemplate()|",
+      "|java+constructor:///ch/tatool/app/service/impl/DataServiceImpl$9/DataServiceImpl$9(ch.tatool.app.service.impl.DataServiceImpl,ch.tatool.app.data.ModuleImpl)|",
+      "|java+method:///org/springframework/transaction/support/TransactionTemplate/execute(org.springframework.transaction.support.TransactionCallback)|"
+    ],
+    "v2Body": [
+      "|java+method:///ch/tatool/app/data/ModuleImpl/getTransactionTemplate()|",
+      "|java+constructor:///ch/tatool/app/service/impl/DataServiceImpl$14/DataServiceImpl$14(ch.tatool.app.service.impl.DataServiceImpl,ch.tatool.app.data.ModuleImpl)|",
+      "|java+method:///org/springframework/transaction/support/TransactionTemplate/execute(org.springframework.transaction.support.TransactionCallback)|"
+    ],
+    "affectedLib": "org.springframework:spring:2.5.6",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "ch.tatool:tatool-app:1.3",
+    "coordinatesV2": "ch.tatool:tatool-app:1.2.1",
+    "caller": "|java+method:///ch/tatool/app/service/impl/TrialDAO/saveTrial(ch.tatool.data.Module,ch.tatool.data.ModuleSession,ch.tatool.data.Trial)|",
+    "called": "|java+method:///org/springframework/orm/hibernate3/HibernateTemplate/update(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///ch/tatool/data/Trial/setSession(ch.tatool.data.ModuleSession)|",
+      "|java+method:///org/springframework/orm/hibernate3/HibernateTemplate/save(java.lang.Object)|",
+      "|java+method:///ch/tatool/app/data/ModuleSessionImpl/getTrials()|",
+      "|java+method:///org/springframework/orm/hibernate3/HibernateTemplate/update(java.lang.Object)|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///ch/tatool/app/service/impl/TrialDAO/getHibernateTemplate()|",
+      "|java+method:///java/util/List/indexOf(java.lang.Object)|",
+      "|java+method:///ch/tatool/data/Trial/setIndex(int)|",
+      "|java+method:///ch/tatool/data/Trial/getId()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/hibernate/Session/save(java.lang.Object)|",
+      "|java+method:///ch/tatool/data/Trial/setSession(ch.tatool.data.ModuleSession)|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///org/hibernate/SessionFactory/getCurrentSession()|",
+      "|java+method:///java/util/List/indexOf(java.lang.Object)|",
+      "|java+method:///ch/tatool/data/Trial/setIndex(int)|",
+      "|java+method:///ch/tatool/data/Trial/getId()|",
+      "|java+method:///org/hibernate/Session/update(java.lang.Object)|",
+      "|java+method:///ch/tatool/app/data/ModuleSessionImpl/getTrials()|"
+    ],
+    "affectedLib": "org.springframework:spring:2.5.6",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "ch.tatool:tatool-app:1.3",
+    "coordinatesV2": "ch.tatool:tatool-app:1.2.1",
+    "caller": "|java+method:///ch/tatool/app/service/impl/ModuleSessionDAO/deleteSession(ch.tatool.app.data.ModuleImpl,ch.tatool.data.ModuleSession)|",
+    "called": "|java+method:///org/springframework/orm/hibernate3/HibernateTemplate/delete(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///ch/tatool/app/service/impl/ModuleSessionDAO/getHibernateTemplate()|",
+      "|java+method:///org/springframework/orm/hibernate3/HibernateTemplate/delete(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/hibernate/Session/delete(java.lang.Object)|",
+      "|java+method:///org/hibernate/SessionFactory/getCurrentSession()|"
+    ],
+    "affectedLib": "org.springframework:spring:2.5.6",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "ch.tatool:tatool-app:1.3",
+    "coordinatesV2": "ch.tatool:tatool-app:1.2.1",
+    "caller": "|java+method:///ch/tatool/app/service/impl/ModuleSessionDAO/getSessions(ch.tatool.app.data.ModuleImpl)|",
+    "called": "|java+method:///org/springframework/orm/hibernate3/HibernateTemplate/execute(org.springframework.orm.hibernate3.HibernateCallback)|",
+    "v1Body": [
+      "|java+constructor:///ch/tatool/app/service/impl/ModuleSessionDAO$1/ModuleSessionDAO$1(ch.tatool.app.service.impl.ModuleSessionDAO,ch.tatool.app.data.ModuleImpl)|",
+      "|java+method:///ch/tatool/app/service/impl/ModuleSessionDAO/getHibernateTemplate()|",
+      "|java+method:///org/springframework/orm/hibernate3/HibernateTemplate/execute(org.springframework.orm.hibernate3.HibernateCallback)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/hibernate/Session/createQuery(java.lang.String)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/hibernate/Query/list()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///ch/tatool/data/ModuleSession/setModule(ch.tatool.data.Module)|",
+      "|java+method:///org/hibernate/SessionFactory/getCurrentSession()|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///org/hibernate/Query/setParameter(java.lang.String,java.lang.Object)|"
+    ],
+    "affectedLib": "org.springframework:spring:2.5.6",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "ch.tatool:tatool-app:1.3",
+    "coordinatesV2": "ch.tatool:tatool-app:1.2.1",
+    "caller": "|java+method:///ch/tatool/app/service/impl/ModuleSessionDAO/findLastSessionIndex(ch.tatool.app.data.ModuleImpl)|",
+    "called": "|java+method:///org/springframework/orm/hibernate3/HibernateTemplate/execute(org.springframework.orm.hibernate3.HibernateCallback)|",
+    "v1Body": [
+      "|java+constructor:///ch/tatool/app/service/impl/ModuleSessionDAO$2/ModuleSessionDAO$2(ch.tatool.app.service.impl.ModuleSessionDAO,ch.tatool.app.data.ModuleImpl)|",
+      "|java+method:///ch/tatool/app/service/impl/ModuleSessionDAO/getHibernateTemplate()|",
+      "|java+method:///org/springframework/orm/hibernate3/HibernateTemplate/execute(org.springframework.orm.hibernate3.HibernateCallback)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/hibernate/Session/createQuery(java.lang.String)|",
+      "|java+method:///org/hibernate/Query/uniqueResult()|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///org/hibernate/SessionFactory/getCurrentSession()|",
+      "|java+method:///org/hibernate/Query/setParameter(java.lang.String,java.lang.Object)|"
+    ],
+    "affectedLib": "org.springframework:spring:2.5.6",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "ch.tatool:tatool-app:1.3",
+    "coordinatesV2": "ch.tatool:tatool-app:1.2.1",
+    "caller": "|java+method:///ch/tatool/app/service/impl/ModuleDAO/deleteModule(ch.tatool.app.service.impl.ModuleInfoImpl)|",
+    "called": "|java+method:///org/springframework/orm/hibernate3/HibernateTemplate/execute(org.springframework.orm.hibernate3.HibernateCallback)|",
+    "v1Body": [
+      "|java+method:///ch/tatool/app/service/impl/ModuleDAO/getHibernateTemplate()|",
+      "|java+method:///org/springframework/orm/hibernate3/HibernateTemplate/execute(org.springframework.orm.hibernate3.HibernateCallback)|",
+      "|java+constructor:///ch/tatool/app/service/impl/ModuleDAO$2/ModuleDAO$2(ch.tatool.app.service.impl.ModuleDAO,ch.tatool.app.service.impl.ModuleInfoImpl)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/hibernate/Session/createQuery(java.lang.String)|",
+      "|java+constructor:///ch/tatool/app/data/ModuleSessionImpl/ModuleSessionImpl()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/hibernate/Session/load(java.lang.Object,java.io.Serializable)|",
+      "|java+method:///org/hibernate/Session/delete(java.lang.Object)|",
+      "|java+method:///org/hibernate/SessionFactory/getCurrentSession()|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///org/hibernate/Query/setParameter(java.lang.String,java.lang.Object)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///ch/tatool/app/service/impl/ModuleDAO/loadModule(ch.tatool.app.service.impl.ModuleInfoImpl)|",
+      "|java+constructor:///ch/tatool/app/data/TrialImpl/TrialImpl()|",
+      "|java+method:///org/hibernate/Query/list()|",
+      "|java+method:///ch/tatool/app/service/impl/ModuleInfoImpl/getId()|",
+      "|java+method:///org/hibernate/Session/flush()|"
+    ],
+    "affectedLib": "org.springframework:spring:2.5.6",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "ch.tatool:tatool-app:1.3",
+    "coordinatesV2": "ch.tatool:tatool-app:1.2.1",
+    "caller": "|java+method:///ch/tatool/app/service/impl/UserAccountDAO/saveAccount(ch.tatool.app.data.UserAccountImpl)|",
+    "called": "|java+method:///org/springframework/orm/hibernate3/HibernateTemplate/saveOrUpdate(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///ch/tatool/app/service/impl/UserAccountDAO/getHibernateTemplate()|",
+      "|java+method:///org/springframework/orm/hibernate3/HibernateTemplate/saveOrUpdate(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/hibernate/Session/saveOrUpdate(java.lang.Object)|",
+      "|java+method:///org/hibernate/SessionFactory/getCurrentSession()|"
+    ],
+    "affectedLib": "org.springframework:spring:2.5.6",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "ch.tatool:tatool-app:1.3",
+    "coordinatesV2": "ch.tatool:tatool-app:1.2.1",
+    "caller": "|java+method:///ch/tatool/app/service/impl/ModuleSessionDAO/getSessionCount(ch.tatool.app.data.ModuleImpl,boolean)|",
+    "called": "|java+method:///org/springframework/orm/hibernate3/HibernateTemplate/execute(org.springframework.orm.hibernate3.HibernateCallback)|",
+    "v1Body": [
+      "|java+constructor:///ch/tatool/app/service/impl/ModuleSessionDAO$4/ModuleSessionDAO$4(ch.tatool.app.service.impl.ModuleSessionDAO,boolean,ch.tatool.app.data.ModuleImpl)|",
+      "|java+method:///ch/tatool/app/service/impl/ModuleSessionDAO/getHibernateTemplate()|",
+      "|java+method:///org/springframework/orm/hibernate3/HibernateTemplate/execute(org.springframework.orm.hibernate3.HibernateCallback)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/hibernate/Session/createQuery(java.lang.String)|",
+      "|java+method:///java/lang/String/valueOf(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder(java.lang.String)|",
+      "|java+method:///org/hibernate/Query/uniqueResult()|",
+      "|java+method:///org/hibernate/SessionFactory/getCurrentSession()|",
+      "|java+method:///org/hibernate/Query/setParameter(java.lang.String,java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "affectedLib": "org.springframework:spring:2.5.6",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "ch.tatool:tatool-app:1.3",
+    "coordinatesV2": "ch.tatool:tatool-app:1.2.1",
+    "caller": "|java+method:///ch/tatool/app/service/impl/ModuleSessionDAO/saveSession(ch.tatool.app.data.ModuleImpl,ch.tatool.data.ModuleSession)|",
+    "called": "|java+method:///org/springframework/orm/hibernate3/HibernateTemplate/update(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/springframework/orm/hibernate3/HibernateTemplate/save(java.lang.Object)|",
+      "|java+method:///ch/tatool/app/service/impl/ModuleSessionDAO/getHibernateTemplate()|",
+      "|java+method:///org/springframework/orm/hibernate3/HibernateTemplate/update(java.lang.Object)|",
+      "|java+method:///ch/tatool/data/ModuleSession/setModule(ch.tatool.data.Module)|",
+      "|java+method:///ch/tatool/app/service/impl/ModuleSessionDAO/findLastSessionIndex(ch.tatool.app.data.ModuleImpl)|",
+      "|java+method:///ch/tatool/data/ModuleSession/setIndex(int)|",
+      "|java+method:///ch/tatool/data/ModuleSession/getId()|",
+      "|java+method:///java/lang/Integer/intValue()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/hibernate/Session/save(java.lang.Object)|",
+      "|java+method:///org/hibernate/Session/update(java.lang.Object)|",
+      "|java+method:///ch/tatool/data/ModuleSession/setModule(ch.tatool.data.Module)|",
+      "|java+method:///org/hibernate/SessionFactory/getCurrentSession()|",
+      "|java+method:///ch/tatool/app/service/impl/ModuleSessionDAO/findLastSessionIndex(ch.tatool.app.data.ModuleImpl)|",
+      "|java+method:///ch/tatool/data/ModuleSession/setIndex(int)|",
+      "|java+method:///ch/tatool/data/ModuleSession/getId()|",
+      "|java+method:///java/lang/Integer/intValue()|"
+    ],
+    "affectedLib": "org.springframework:spring:2.5.6",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "ch.tatool:tatool-app:1.3",
+    "coordinatesV2": "ch.tatool:tatool-app:1.2.1",
+    "caller": "|java+method:///ch/tatool/app/service/impl/DataServiceImpl/getTrials(ch.tatool.data.Module,ch.tatool.data.ModuleSession,java.lang.String,java.lang.String,int,int)|",
+    "called": "|java+method:///org/springframework/transaction/support/TransactionTemplate/execute(org.springframework.transaction.support.TransactionCallback)|",
+    "v1Body": [
+      "|java+method:///ch/tatool/app/data/ModuleImpl/getTransactionTemplate()|",
+      "|java+constructor:///ch/tatool/app/service/impl/DataServiceImpl$7/DataServiceImpl$7(ch.tatool.app.service.impl.DataServiceImpl,ch.tatool.app.data.ModuleImpl,ch.tatool.data.ModuleSession,java.lang.String,java.lang.String,int,int)|",
+      "|java+method:///org/springframework/transaction/support/TransactionTemplate/execute(org.springframework.transaction.support.TransactionCallback)|"
+    ],
+    "v2Body": [
+      "|java+method:///ch/tatool/app/data/ModuleImpl/getTransactionTemplate()|",
+      "|java+constructor:///ch/tatool/app/service/impl/DataServiceImpl$12/DataServiceImpl$12(ch.tatool.app.service.impl.DataServiceImpl,ch.tatool.app.data.ModuleImpl,ch.tatool.data.ModuleSession,java.lang.String,java.lang.String,int,int)|",
+      "|java+method:///org/springframework/transaction/support/TransactionTemplate/execute(org.springframework.transaction.support.TransactionCallback)|"
+    ],
+    "affectedLib": "org.springframework:spring:2.5.6",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "ch.tatool:tatool-app:1.3",
+    "coordinatesV2": "ch.tatool:tatool-app:1.2.1",
+    "caller": "|java+method:///ch/tatool/app/service/impl/ModuleDAO/addModuleProperties(ch.tatool.app.data.ModuleImpl,java.util.Map)|",
+    "called": "|java+method:///org/springframework/orm/hibernate3/HibernateTemplate/execute(org.springframework.orm.hibernate3.HibernateCallback)|",
+    "v1Body": [
+      "|java+method:///ch/tatool/app/service/impl/ModuleDAO/getHibernateTemplate()|",
+      "|java+constructor:///ch/tatool/app/service/impl/ModuleDAO$3/ModuleDAO$3(ch.tatool.app.service.impl.ModuleDAO,ch.tatool.app.data.ModuleImpl,java.util.Map)|",
+      "|java+method:///org/springframework/orm/hibernate3/HibernateTemplate/execute(org.springframework.orm.hibernate3.HibernateCallback)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+method:///org/hibernate/Session/update(java.lang.Object)|",
+      "|java+method:///java/util/Set/iterator()|",
+      "|java+method:///org/hibernate/SessionFactory/getCurrentSession()|",
+      "|java+method:///org/hibernate/Session/save(java.lang.Object)|",
+      "|java+method:///ch/tatool/app/data/ModuleImpl/getModuleProperties()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/Map/keySet()|"
+    ],
+    "affectedLib": "org.springframework:spring:2.5.6",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "ch.tatool:tatool-app:1.3",
+    "coordinatesV2": "ch.tatool:tatool-app:1.2.1",
+    "caller": "|java+method:///ch/tatool/app/service/impl/TrialDAO/deleteTrial(ch.tatool.data.Module,ch.tatool.data.ModuleSession,ch.tatool.data.Trial)|",
+    "called": "|java+method:///org/springframework/orm/hibernate3/HibernateTemplate/delete(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///java/util/Iterator/remove()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/lang/Long/equals(java.lang.Object)|",
+      "|java+method:///ch/tatool/data/Trial/getId()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///ch/tatool/app/data/ModuleSessionImpl/getTrials()|",
+      "|java+method:///org/springframework/orm/hibernate3/HibernateTemplate/delete(java.lang.Object)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///ch/tatool/app/service/impl/TrialDAO/getHibernateTemplate()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Iterator/remove()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/lang/Long/equals(java.lang.Object)|",
+      "|java+method:///ch/tatool/data/Trial/getId()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///ch/tatool/app/data/ModuleSessionImpl/getTrials()|",
+      "|java+method:///org/hibernate/Session/delete(java.lang.Object)|",
+      "|java+method:///org/hibernate/SessionFactory/getCurrentSession()|",
+      "|java+method:///java/util/List/iterator()|"
+    ],
+    "affectedLib": "org.springframework:spring:2.5.6",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "ch.tatool:tatool-app:1.3",
+    "coordinatesV2": "ch.tatool:tatool-app:1.2.1",
+    "caller": "|java+method:///ch/tatool/app/service/impl/ModuleDAO/getModules(ch.tatool.app.data.UserAccountImpl)|",
+    "called": "|java+method:///org/springframework/orm/hibernate3/HibernateTemplate/execute(org.springframework.orm.hibernate3.HibernateCallback)|",
+    "v1Body": [
+      "|java+method:///ch/tatool/app/service/impl/ModuleDAO/getHibernateTemplate()|",
+      "|java+constructor:///ch/tatool/app/service/impl/ModuleDAO$1/ModuleDAO$1(ch.tatool.app.service.impl.ModuleDAO,ch.tatool.app.data.UserAccountImpl)|",
+      "|java+method:///org/springframework/orm/hibernate3/HibernateTemplate/execute(org.springframework.orm.hibernate3.HibernateCallback)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/hibernate/Session/createQuery(java.lang.String)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///ch/tatool/app/service/impl/ModuleInfoImpl/setAccount(ch.tatool.app.data.UserAccountImpl)|",
+      "|java+constructor:///ch/tatool/app/service/impl/ModuleInfoImpl/ModuleInfoImpl()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///ch/tatool/app/service/impl/ModuleInfoImpl/setName(java.lang.String)|",
+      "|java+method:///org/hibernate/SessionFactory/getCurrentSession()|",
+      "|java+method:///java/util/Set/add(java.lang.Object)|",
+      "|java+method:///ch/tatool/app/data/UserAccountImpl/getId()|",
+      "|java+method:///org/hibernate/Query/list()|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///ch/tatool/app/service/impl/ModuleInfoImpl/setId(java.lang.Long)|",
+      "|java+constructor:///java/util/TreeSet/TreeSet()|",
+      "|java+method:///org/hibernate/Query/setParameter(java.lang.String,java.lang.Object)|"
+    ],
+    "affectedLib": "org.springframework:spring:2.5.6",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "ch.tatool:tatool-app:1.3",
+    "coordinatesV2": "ch.tatool:tatool-app:1.2.1",
+    "caller": "|java+method:///ch/tatool/app/service/impl/DataServiceImpl/findDistinctTrialPropertyNames(ch.tatool.data.Module)|",
+    "called": "|java+method:///org/springframework/transaction/support/TransactionTemplate/execute(org.springframework.transaction.support.TransactionCallback)|",
+    "v1Body": [
+      "|java+method:///ch/tatool/app/data/ModuleImpl/getTransactionTemplate()|",
+      "|java+constructor:///ch/tatool/app/service/impl/DataServiceImpl$8/DataServiceImpl$8(ch.tatool.app.service.impl.DataServiceImpl,ch.tatool.app.data.ModuleImpl)|",
+      "|java+method:///org/springframework/transaction/support/TransactionTemplate/execute(org.springframework.transaction.support.TransactionCallback)|"
+    ],
+    "v2Body": [
+      "|java+method:///ch/tatool/app/data/ModuleImpl/getTransactionTemplate()|",
+      "|java+constructor:///ch/tatool/app/service/impl/DataServiceImpl$13/DataServiceImpl$13(ch.tatool.app.service.impl.DataServiceImpl,ch.tatool.app.data.ModuleImpl)|",
+      "|java+method:///org/springframework/transaction/support/TransactionTemplate/execute(org.springframework.transaction.support.TransactionCallback)|"
+    ],
+    "affectedLib": "org.springframework:spring:2.5.6",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "ch.tatool:tatool-app:1.3",
+    "coordinatesV2": "ch.tatool:tatool-app:1.2.1",
+    "caller": "|java+method:///ch/tatool/app/service/impl/TrialDAO/getLastTrialIndex(ch.tatool.data.ModuleSession)|",
+    "called": "|java+method:///org/springframework/orm/hibernate3/HibernateTemplate/execute(org.springframework.orm.hibernate3.HibernateCallback)|",
+    "v1Body": [
+      "|java+method:///java/lang/Integer/intValue()|",
+      "|java+method:///java/util/List/isEmpty()|",
+      "|java+method:///org/springframework/orm/hibernate3/HibernateTemplate/execute(org.springframework.orm.hibernate3.HibernateCallback)|",
+      "|java+method:///java/util/List/get(int)|",
+      "|java+constructor:///ch/tatool/app/service/impl/TrialDAO$4/TrialDAO$4(ch.tatool.app.service.impl.TrialDAO,ch.tatool.data.ModuleSession)|",
+      "|java+method:///ch/tatool/app/service/impl/TrialDAO/getHibernateTemplate()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Integer/intValue()|",
+      "|java+method:///org/hibernate/Session/createQuery(java.lang.String)|",
+      "|java+method:///org/hibernate/Query/list()|",
+      "|java+method:///java/util/List/isEmpty()|",
+      "|java+method:///java/util/List/get(int)|",
+      "|java+method:///org/hibernate/SessionFactory/getCurrentSession()|",
+      "|java+method:///org/hibernate/Query/setParameter(java.lang.String,java.lang.Object)|"
+    ],
+    "affectedLib": "org.springframework:spring:2.5.6",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "ch.tatool:tatool-app:1.3",
+    "coordinatesV2": "ch.tatool:tatool-app:1.2.1",
+    "caller": "|java+constructor:///ch/tatool/app/service/impl/TrialDAO/TrialDAO()|",
+    "called": "|java+constructor:///org/springframework/orm/hibernate3/support/HibernateDaoSupport/HibernateDaoSupport()|",
+    "v1Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+constructor:///org/springframework/orm/hibernate3/support/HibernateDaoSupport/HibernateDaoSupport()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "org.springframework:spring:2.5.6",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "ch.tatool:tatool-app:1.3",
+    "coordinatesV2": "ch.tatool:tatool-app:1.2.1",
+    "caller": "|java+method:///ch/tatool/app/service/impl/DataServiceImpl/insertTrial(ch.tatool.data.ModuleSession,ch.tatool.data.Trial)|",
+    "called": "|java+method:///org/springframework/transaction/support/TransactionTemplate/execute(org.springframework.transaction.support.TransactionCallback)|",
+    "v1Body": [
+      "|java+method:///ch/tatool/app/data/ModuleImpl/getTransactionTemplate()|",
+      "|java+method:///ch/tatool/data/ModuleSession/getModule()|",
+      "|java+method:///org/springframework/transaction/support/TransactionTemplate/execute(org.springframework.transaction.support.TransactionCallback)|",
+      "|java+constructor:///ch/tatool/app/service/impl/DataServiceImpl$5/DataServiceImpl$5(ch.tatool.app.service.impl.DataServiceImpl,ch.tatool.app.data.ModuleImpl,ch.tatool.data.ModuleSession,ch.tatool.data.Trial)|"
+    ],
+    "v2Body": [
+      "|java+method:///ch/tatool/app/data/ModuleImpl/getTransactionTemplate()|",
+      "|java+method:///ch/tatool/data/ModuleSession/getModule()|",
+      "|java+method:///org/springframework/transaction/support/TransactionTemplate/execute(org.springframework.transaction.support.TransactionCallback)|",
+      "|java+constructor:///ch/tatool/app/service/impl/DataServiceImpl$6/DataServiceImpl$6(ch.tatool.app.service.impl.DataServiceImpl,ch.tatool.app.data.ModuleImpl,ch.tatool.data.ModuleSession,ch.tatool.data.Trial)|"
+    ],
+    "affectedLib": "org.springframework:spring:2.5.6",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "ch.tatool:tatool-app:1.3",
+    "coordinatesV2": "ch.tatool:tatool-app:1.2.1",
+    "caller": "|java+method:///ch/tatool/app/service/impl/ModuleServiceImpl/createModule(ch.tatool.data.UserAccount,java.util.Map,java.util.Map,java.util.Map)|",
+    "called": "|java+method:///org/springframework/transaction/support/TransactionTemplate/execute(org.springframework.transaction.support.TransactionCallback)|",
+    "v1Body": [
+      "|java+method:///ch/tatool/app/data/ModuleImpl/setModuleExporters(java.util.Map)|",
+      "|java+method:///ch/tatool/app/data/ModuleImpl/setAccount(ch.tatool.app.data.UserAccountImpl)|",
+      "|java+method:///ch/tatool/app/data/UserAccountImpl/getId()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+constructor:///ch/tatool/app/service/impl/ModuleServiceImpl$2/ModuleServiceImpl$2(ch.tatool.app.service.impl.ModuleServiceImpl,ch.tatool.app.data.UserAccountImpl,ch.tatool.app.data.ModuleImpl)|",
+      "|java+method:///java/lang/StringBuilder/append(long)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/System/currentTimeMillis()|",
+      "|java+method:///ch/tatool/app/data/ModuleImpl/setAccountId(java.lang.Long)|",
+      "|java+method:///ch/tatool/app/service/impl/ModuleServiceImpl/initializeModule(ch.tatool.app.data.ModuleImpl)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///ch/tatool/app/data/UserAccountImpl/getTransactionTemplate()|",
+      "|java+method:///ch/tatool/app/data/ModuleImpl/getModuleProperties()|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String)|",
+      "|java+method:///ch/tatool/app/data/ModuleImpl/setName(java.lang.String)|",
+      "|java+method:///ch/tatool/app/data/ModuleImpl/setBinaryModuleProperties(java.util.Map)|",
+      "|java+constructor:///ch/tatool/app/data/ModuleImpl/ModuleImpl()|",
+      "|java+method:///org/springframework/transaction/support/TransactionTemplate/execute(org.springframework.transaction.support.TransactionCallback)|",
+      "|java+method:///ch/tatool/app/data/ModuleImpl/setModuleProperties(java.util.Map)|"
+    ],
+    "v2Body": [
+      "|java+method:///ch/tatool/app/data/ModuleImpl/setModuleExporters(java.util.Map)|",
+      "|java+method:///ch/tatool/app/data/ModuleImpl/setAccount(ch.tatool.app.data.UserAccountImpl)|",
+      "|java+method:///ch/tatool/app/data/UserAccountImpl/getId()|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+constructor:///ch/tatool/app/service/impl/ModuleServiceImpl$2/ModuleServiceImpl$2(ch.tatool.app.service.impl.ModuleServiceImpl,ch.tatool.app.data.UserAccountImpl,ch.tatool.app.data.ModuleImpl)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(long)|",
+      "|java+method:///java/lang/System/currentTimeMillis()|",
+      "|java+method:///ch/tatool/app/data/ModuleImpl/setAccountId(java.lang.Long)|",
+      "|java+method:///ch/tatool/app/service/impl/ModuleServiceImpl/initializeModule(ch.tatool.app.data.ModuleImpl)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///ch/tatool/app/data/UserAccountImpl/getTransactionTemplate()|",
+      "|java+method:///ch/tatool/app/data/ModuleImpl/getModuleProperties()|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String)|",
+      "|java+method:///ch/tatool/app/data/ModuleImpl/setName(java.lang.String)|",
+      "|java+method:///ch/tatool/app/data/ModuleImpl/setBinaryModuleProperties(java.util.Map)|",
+      "|java+constructor:///ch/tatool/app/data/ModuleImpl/ModuleImpl()|",
+      "|java+method:///org/springframework/transaction/support/TransactionTemplate/execute(org.springframework.transaction.support.TransactionCallback)|",
+      "|java+method:///ch/tatool/app/data/ModuleImpl/setModuleProperties(java.util.Map)|"
+    ],
+    "affectedLib": "org.springframework:spring:2.5.6",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "ch.tatool:tatool-app:1.3",
+    "coordinatesV2": "ch.tatool:tatool-app:1.2.1",
+    "caller": "|java+method:///ch/tatool/app/service/impl/ModuleDAO/loadModule(ch.tatool.app.service.impl.ModuleInfoImpl)|",
+    "called": "|java+method:///org/springframework/orm/hibernate3/HibernateTemplate/get(java.lang.Class,java.io.Serializable)|",
+    "v1Body": [
+      "|java+method:///ch/tatool/app/service/impl/ModuleDAO/getHibernateTemplate()|",
+      "|java+method:///ch/tatool/app/data/ModuleImpl/setAccount(ch.tatool.app.data.UserAccountImpl)|",
+      "|java+method:///org/springframework/orm/hibernate3/HibernateTemplate/get(java.lang.Class,java.io.Serializable)|",
+      "|java+method:///ch/tatool/app/data/ModuleImpl/getAccountId()|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String)|",
+      "|java+method:///ch/tatool/app/data/UserAccountImpl/getId()|",
+      "|java+method:///java/lang/Long/equals(java.lang.Object)|",
+      "|java+method:///ch/tatool/app/service/impl/ModuleInfoImpl/getId()|",
+      "|java+method:///ch/tatool/app/service/impl/ModuleInfoImpl/getAccount()|"
+    ],
+    "v2Body": [
+      "|java+method:///ch/tatool/app/data/ModuleImpl/setAccount(ch.tatool.app.data.UserAccountImpl)|",
+      "|java+method:///org/hibernate/Session/get(java.lang.Class,java.io.Serializable)|",
+      "|java+method:///ch/tatool/app/data/ModuleImpl/getAccountId()|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String)|",
+      "|java+method:///org/hibernate/SessionFactory/getCurrentSession()|",
+      "|java+method:///ch/tatool/app/data/UserAccountImpl/getId()|",
+      "|java+method:///java/lang/Long/equals(java.lang.Object)|",
+      "|java+method:///ch/tatool/app/service/impl/ModuleInfoImpl/getId()|",
+      "|java+method:///ch/tatool/app/service/impl/ModuleInfoImpl/getAccount()|"
+    ],
+    "affectedLib": "org.springframework:spring:2.5.6",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "ch.tatool:tatool-app:1.3",
+    "coordinatesV2": "ch.tatool:tatool-app:1.2.1",
+    "caller": "|java+constructor:///ch/tatool/app/service/impl/ModuleDAO/ModuleDAO()|",
+    "called": "|java+constructor:///org/springframework/orm/hibernate3/support/HibernateDaoSupport/HibernateDaoSupport()|",
+    "v1Body": [
+      "|java+constructor:///org/springframework/orm/hibernate3/support/HibernateDaoSupport/HibernateDaoSupport()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "org.springframework:spring:2.5.6",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "ch.tatool:tatool-app:1.3",
+    "coordinatesV2": "ch.tatool:tatool-app:1.2.1",
+    "caller": "|java+method:///ch/tatool/app/service/impl/UserAccountServiceImpl/loadAccount(ch.tatool.data.UserAccount$Info,java.lang.String)|",
+    "called": "|java+constructor:///org/springframework/transaction/support/TransactionTemplate/TransactionTemplate(org.springframework.transaction.PlatformTransactionManager)|",
+    "v1Body": [
+      "|java+method:///ch/tatool/app/util/ContextUtils/createBeanFactory(java.lang.String,java.util.Properties)|",
+      "|java+method:///ch/tatool/app/data/UserAccountImpl/setId(java.lang.Long)|",
+      "|java+method:///ch/tatool/app/data/UserAccountImpl/setBeanFactory(org.springframework.beans.factory.BeanFactory)|",
+      "|java+method:///java/lang/String/length()|",
+      "|java+constructor:///ch/tatool/app/service/impl/UserAccountServiceImpl$1/UserAccountServiceImpl$1(ch.tatool.app.service.impl.UserAccountServiceImpl,ch.tatool.app.data.UserAccountImpl)|",
+      "|java+constructor:///org/springframework/transaction/support/TransactionTemplate/TransactionTemplate(org.springframework.transaction.PlatformTransactionManager)|",
+      "|java+constructor:///java/util/Properties/Properties()|",
+      "|java+method:///ch/tatool/app/data/UserAccountImpl$InfoImpl/getFolder()|",
+      "|java+method:///ch/tatool/app/data/UserAccountImpl/setName(java.lang.String)|",
+      "|java+constructor:///ch/tatool/app/data/UserAccountImpl/UserAccountImpl()|",
+      "|java+constructor:///java/io/File/File(java.io.File,java.lang.String)|",
+      "|java+method:///java/util/Properties/setProperty(java.lang.String,java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String)|",
+      "|java+method:///ch/tatool/app/data/UserAccountImpl$InfoImpl/getId()|",
+      "|java+method:///ch/tatool/app/data/UserAccountImpl/setPassword(java.lang.String)|",
+      "|java+method:///org/springframework/beans/factory/BeanFactory/getBean(java.lang.String)|",
+      "|java+method:///ch/tatool/app/service/impl/UserAccountServiceImpl/changeLocale(ch.tatool.app.data.UserAccountImpl)|",
+      "|java+method:///ch/tatool/app/data/UserAccountImpl/setFolder(java.io.File)|",
+      "|java+method:///ch/tatool/app/data/UserAccountImpl/setTransactionTemplate(org.springframework.transaction.support.TransactionTemplate)|",
+      "|java+method:///ch/tatool/app/data/UserAccountImpl$InfoImpl/getName()|",
+      "|java+method:///java/io/File/getAbsolutePath()|",
+      "|java+method:///org/springframework/transaction/support/TransactionTemplate/execute(org.springframework.transaction.support.TransactionCallback)|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///ch/tatool/app/util/ContextUtils/createBeanFactory(java.lang.String,java.util.Properties)|",
+      "|java+method:///ch/tatool/app/data/UserAccountImpl/setId(java.lang.Long)|",
+      "|java+method:///ch/tatool/app/data/UserAccountImpl$InfoImpl/getVersion()|",
+      "|java+method:///ch/tatool/app/data/UserAccountImpl/setBeanFactory(org.springframework.beans.factory.BeanFactory)|",
+      "|java+method:///java/lang/String/length()|",
+      "|java+constructor:///ch/tatool/app/service/impl/UserAccountServiceImpl$1/UserAccountServiceImpl$1(ch.tatool.app.service.impl.UserAccountServiceImpl,ch.tatool.app.data.UserAccountImpl)|",
+      "|java+constructor:///java/util/Properties/Properties()|",
+      "|java+method:///ch/tatool/app/data/UserAccountImpl$InfoImpl/getFolder()|",
+      "|java+method:///ch/tatool/app/data/UserAccountImpl/setName(java.lang.String)|",
+      "|java+constructor:///ch/tatool/app/data/UserAccountImpl/UserAccountImpl()|",
+      "|java+constructor:///java/io/File/File(java.io.File,java.lang.String)|",
+      "|java+method:///java/util/Properties/setProperty(java.lang.String,java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String)|",
+      "|java+method:///ch/tatool/app/data/UserAccountImpl$InfoImpl/getId()|",
+      "|java+method:///ch/tatool/app/data/UserAccountImpl/setPassword(java.lang.String)|",
+      "|java+method:///org/springframework/beans/factory/BeanFactory/getBean(java.lang.String)|",
+      "|java+method:///ch/tatool/app/service/impl/UserAccountServiceImpl/changeLocale(ch.tatool.app.data.UserAccountImpl)|",
+      "|java+method:///ch/tatool/app/data/UserAccountImpl/setFolder(java.io.File)|",
+      "|java+method:///ch/tatool/app/data/UserAccountImpl/setTransactionTemplate(org.springframework.transaction.support.TransactionTemplate)|",
+      "|java+method:///ch/tatool/app/data/UserAccountImpl/setVersion(java.lang.String)|",
+      "|java+constructor:///org/springframework/transaction/support/TransactionTemplate/TransactionTemplate(org.springframework.transaction.PlatformTransactionManager)|",
+      "|java+method:///ch/tatool/app/data/UserAccountImpl$InfoImpl/getName()|",
+      "|java+method:///java/io/File/getAbsolutePath()|",
+      "|java+method:///org/springframework/transaction/support/TransactionTemplate/execute(org.springframework.transaction.support.TransactionCallback)|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String)|"
+    ],
+    "affectedLib": "org.springframework:spring:2.5.6",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "ch.tatool:tatool-app:1.3",
+    "coordinatesV2": "ch.tatool:tatool-app:1.2.1",
+    "caller": "|java+constructor:///ch/tatool/app/service/impl/UserAccountDAO/UserAccountDAO()|",
+    "called": "|java+constructor:///org/springframework/orm/hibernate3/support/HibernateDaoSupport/HibernateDaoSupport()|",
+    "v1Body": [
+      "|java+constructor:///org/springframework/orm/hibernate3/support/HibernateDaoSupport/HibernateDaoSupport()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "org.springframework:spring:2.5.6",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "ch.tatool:tatool-app:1.3",
+    "coordinatesV2": "ch.tatool:tatool-app:1.2.1",
+    "caller": "|java+method:///ch/tatool/app/service/impl/TrialDAO/findDistinctTrialPropertyNames(ch.tatool.app.data.ModuleImpl)|",
+    "called": "|java+method:///org/springframework/orm/hibernate3/HibernateTemplate/execute(org.springframework.orm.hibernate3.HibernateCallback)|",
+    "v1Body": [
+      "|java+constructor:///ch/tatool/app/service/impl/TrialDAO$5/TrialDAO$5(ch.tatool.app.service.impl.TrialDAO,ch.tatool.app.data.ModuleImpl)|",
+      "|java+method:///org/springframework/orm/hibernate3/HibernateTemplate/execute(org.springframework.orm.hibernate3.HibernateCallback)|",
+      "|java+method:///ch/tatool/app/service/impl/TrialDAO/getHibernateTemplate()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/hibernate/Session/createQuery(java.lang.String)|",
+      "|java+method:///org/hibernate/Query/list()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/hibernate/SessionFactory/getCurrentSession()|",
+      "|java+method:///org/hibernate/Query/setParameter(java.lang.String,java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "affectedLib": "org.springframework:spring:2.5.6",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "ch.tatool:tatool-app:1.3",
+    "coordinatesV2": "ch.tatool:tatool-app:1.2.1",
+    "caller": "|java+method:///ch/tatool/app/service/impl/UserAccountDAO/setAccountPassword(ch.tatool.app.data.UserAccountImpl,java.lang.String)|",
+    "called": "|java+method:///org/springframework/orm/hibernate3/HibernateTemplate/execute(org.springframework.orm.hibernate3.HibernateCallback)|",
+    "v1Body": [
+      "|java+method:///ch/tatool/app/service/impl/UserAccountDAO/getHibernateTemplate()|",
+      "|java+method:///org/springframework/orm/hibernate3/HibernateTemplate/execute(org.springframework.orm.hibernate3.HibernateCallback)|",
+      "|java+constructor:///ch/tatool/app/service/impl/UserAccountDAO$1/UserAccountDAO$1(ch.tatool.app.service.impl.UserAccountDAO,ch.tatool.app.data.UserAccountImpl,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/dbcp/BasicDataSource/getUsername()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/springframework/orm/hibernate3/SessionFactoryUtils/getDataSource(org.hibernate.SessionFactory)|",
+      "|java+method:///org/hibernate/SQLQuery/executeUpdate()|",
+      "|java+method:///org/hibernate/Session/createSQLQuery(java.lang.String)|",
+      "|java+method:///ch/tatool/app/data/UserAccountImpl/setPasswordProtected(boolean)|",
+      "|java+method:///ch/tatool/app/data/UserAccountImpl/setPassword(java.lang.String)|",
+      "|java+method:///org/apache/commons/dbcp/BasicDataSource/setPassword(java.lang.String)|",
+      "|java+method:///java/lang/String/isEmpty()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/hibernate/SessionFactory/getCurrentSession()|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "affectedLib": "org.springframework:spring:2.5.6",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "ch.tatool:tatool-app:1.2.1",
+    "coordinatesV2": "ch.tatool:tatool-app:1.3",
+    "caller": "|java+method:///ch/tatool/app/service/impl/UserAccountDAO/setAccountPassword(ch.tatool.app.data.UserAccountImpl,java.lang.String)|",
+    "called": "|java+method:///org/springframework/orm/hibernate3/SessionFactoryUtils/getDataSource(org.hibernate.SessionFactory)|",
+    "v1Body": [
+      "|java+method:///ch/tatool/app/service/impl/UserAccountDAO/getHibernateTemplate()|",
+      "|java+method:///org/springframework/orm/hibernate3/HibernateTemplate/execute(org.springframework.orm.hibernate3.HibernateCallback)|",
+      "|java+constructor:///ch/tatool/app/service/impl/UserAccountDAO$1/UserAccountDAO$1(ch.tatool.app.service.impl.UserAccountDAO,ch.tatool.app.data.UserAccountImpl,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/dbcp/BasicDataSource/getUsername()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/springframework/orm/hibernate3/SessionFactoryUtils/getDataSource(org.hibernate.SessionFactory)|",
+      "|java+method:///org/hibernate/SQLQuery/executeUpdate()|",
+      "|java+method:///org/hibernate/Session/createSQLQuery(java.lang.String)|",
+      "|java+method:///ch/tatool/app/data/UserAccountImpl/setPasswordProtected(boolean)|",
+      "|java+method:///ch/tatool/app/data/UserAccountImpl/setPassword(java.lang.String)|",
+      "|java+method:///org/apache/commons/dbcp/BasicDataSource/setPassword(java.lang.String)|",
+      "|java+method:///java/lang/String/isEmpty()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/hibernate/SessionFactory/getCurrentSession()|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "affectedLib": "org.springframework:spring-orm:3.1.3.RELEASE",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "ch.tatool:tatool-app:1.2.1",
+    "coordinatesV2": "ch.tatool:tatool-app:1.3",
+    "caller": "|java+method:///ch/tatool/app/service/impl/DataServiceImpl/getSessionCount(ch.tatool.data.Module,boolean)|",
+    "called": "|java+method:///org/springframework/transaction/support/TransactionTemplate/execute(org.springframework.transaction.support.TransactionCallback)|",
+    "v1Body": [
+      "|java+method:///ch/tatool/app/data/ModuleImpl/getTransactionTemplate()|",
+      "|java+constructor:///ch/tatool/app/service/impl/DataServiceImpl$6/DataServiceImpl$6(ch.tatool.app.service.impl.DataServiceImpl,ch.tatool.app.data.ModuleImpl,boolean)|",
+      "|java+method:///java/lang/Long/longValue()|",
+      "|java+method:///org/springframework/transaction/support/TransactionTemplate/execute(org.springframework.transaction.support.TransactionCallback)|"
+    ],
+    "v2Body": [
+      "|java+method:///ch/tatool/app/data/ModuleImpl/getTransactionTemplate()|",
+      "|java+method:///java/lang/Long/longValue()|",
+      "|java+constructor:///ch/tatool/app/service/impl/DataServiceImpl$11/DataServiceImpl$11(ch.tatool.app.service.impl.DataServiceImpl,ch.tatool.app.data.ModuleImpl,boolean)|",
+      "|java+method:///org/springframework/transaction/support/TransactionTemplate/execute(org.springframework.transaction.support.TransactionCallback)|"
+    ],
+    "affectedLib": "org.springframework:spring-tx:3.1.3.RELEASE",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "ch.tatool:tatool-app:1.2.1",
+    "coordinatesV2": "ch.tatool:tatool-app:1.3",
+    "caller": "|java+method:///ch/tatool/app/service/impl/DataServiceImpl/loadAllTrials(ch.tatool.data.Module)|",
+    "called": "|java+method:///org/springframework/transaction/support/TransactionTemplate/execute(org.springframework.transaction.support.TransactionCallback)|",
+    "v1Body": [
+      "|java+method:///ch/tatool/app/data/ModuleImpl/getTrialDAO()|",
+      "|java+method:///ch/tatool/app/service/impl/TrialDAO/loadAllTrials(ch.tatool.app.data.ModuleImpl)|"
+    ],
+    "v2Body": [
+      "|java+method:///ch/tatool/app/data/ModuleImpl/getTransactionTemplate()|",
+      "|java+constructor:///ch/tatool/app/service/impl/DataServiceImpl$8/DataServiceImpl$8(ch.tatool.app.service.impl.DataServiceImpl,ch.tatool.app.data.ModuleImpl)|",
+      "|java+method:///org/springframework/transaction/support/TransactionTemplate/execute(org.springframework.transaction.support.TransactionCallback)|"
+    ],
+    "affectedLib": "org.springframework:spring-tx:3.1.3.RELEASE",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "ch.tatool:tatool-app:1.2.1",
+    "coordinatesV2": "ch.tatool:tatool-app:1.3",
+    "caller": "|java+method:///ch/tatool/app/service/impl/DataServiceImpl/getLastSession(ch.tatool.data.Module)|",
+    "called": "|java+method:///org/springframework/transaction/support/TransactionTemplate/execute(org.springframework.transaction.support.TransactionCallback)|",
+    "v1Body": [
+      "|java+method:///ch/tatool/app/service/impl/ModuleSessionDAO/findLastSession(ch.tatool.app.data.ModuleImpl)|",
+      "|java+method:///ch/tatool/app/data/ModuleImpl/getSessionDAO()|"
+    ],
+    "v2Body": [
+      "|java+method:///ch/tatool/app/data/ModuleImpl/getTransactionTemplate()|",
+      "|java+constructor:///ch/tatool/app/service/impl/DataServiceImpl$10/DataServiceImpl$10(ch.tatool.app.service.impl.DataServiceImpl,ch.tatool.app.data.ModuleImpl)|",
+      "|java+method:///org/springframework/transaction/support/TransactionTemplate/execute(org.springframework.transaction.support.TransactionCallback)|"
+    ],
+    "affectedLib": "org.springframework:spring-tx:3.1.3.RELEASE",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "ch.tatool:tatool-app:1.2.1",
+    "coordinatesV2": "ch.tatool:tatool-app:1.3",
+    "caller": "|java+method:///ch/tatool/app/service/impl/DataServiceImpl/getTrials(ch.tatool.data.Module,ch.tatool.data.ModuleSession,java.lang.String,java.lang.String,int,int)|",
+    "called": "|java+method:///org/springframework/transaction/support/TransactionTemplate/execute(org.springframework.transaction.support.TransactionCallback)|",
+    "v1Body": [
+      "|java+method:///ch/tatool/app/data/ModuleImpl/getTransactionTemplate()|",
+      "|java+constructor:///ch/tatool/app/service/impl/DataServiceImpl$7/DataServiceImpl$7(ch.tatool.app.service.impl.DataServiceImpl,ch.tatool.app.data.ModuleImpl,ch.tatool.data.ModuleSession,java.lang.String,java.lang.String,int,int)|",
+      "|java+method:///org/springframework/transaction/support/TransactionTemplate/execute(org.springframework.transaction.support.TransactionCallback)|"
+    ],
+    "v2Body": [
+      "|java+method:///ch/tatool/app/data/ModuleImpl/getTransactionTemplate()|",
+      "|java+constructor:///ch/tatool/app/service/impl/DataServiceImpl$12/DataServiceImpl$12(ch.tatool.app.service.impl.DataServiceImpl,ch.tatool.app.data.ModuleImpl,ch.tatool.data.ModuleSession,java.lang.String,java.lang.String,int,int)|",
+      "|java+method:///org/springframework/transaction/support/TransactionTemplate/execute(org.springframework.transaction.support.TransactionCallback)|"
+    ],
+    "affectedLib": "org.springframework:spring-tx:3.1.3.RELEASE",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "ch.tatool:tatool-app:1.2.1",
+    "coordinatesV2": "ch.tatool:tatool-app:1.3",
+    "caller": "|java+method:///ch/tatool/app/service/impl/DataServiceImpl/findDistinctTrialPropertyNames(ch.tatool.data.Module)|",
+    "called": "|java+method:///org/springframework/transaction/support/TransactionTemplate/execute(org.springframework.transaction.support.TransactionCallback)|",
+    "v1Body": [
+      "|java+method:///ch/tatool/app/data/ModuleImpl/getTransactionTemplate()|",
+      "|java+constructor:///ch/tatool/app/service/impl/DataServiceImpl$8/DataServiceImpl$8(ch.tatool.app.service.impl.DataServiceImpl,ch.tatool.app.data.ModuleImpl)|",
+      "|java+method:///org/springframework/transaction/support/TransactionTemplate/execute(org.springframework.transaction.support.TransactionCallback)|"
+    ],
+    "v2Body": [
+      "|java+method:///ch/tatool/app/data/ModuleImpl/getTransactionTemplate()|",
+      "|java+constructor:///ch/tatool/app/service/impl/DataServiceImpl$13/DataServiceImpl$13(ch.tatool.app.service.impl.DataServiceImpl,ch.tatool.app.data.ModuleImpl)|",
+      "|java+method:///org/springframework/transaction/support/TransactionTemplate/execute(org.springframework.transaction.support.TransactionCallback)|"
+    ],
+    "affectedLib": "org.springframework:spring-tx:3.1.3.RELEASE",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "ch.tatool:tatool-app:1.2.1",
+    "coordinatesV2": "ch.tatool:tatool-app:1.3",
+    "caller": "|java+method:///ch/tatool/app/service/impl/DataServiceImpl/findDistinctSessionPropertyNames(ch.tatool.data.Module)|",
+    "called": "|java+method:///org/springframework/transaction/support/TransactionTemplate/execute(org.springframework.transaction.support.TransactionCallback)|",
+    "v1Body": [
+      "|java+method:///ch/tatool/app/data/ModuleImpl/getTransactionTemplate()|",
+      "|java+constructor:///ch/tatool/app/service/impl/DataServiceImpl$9/DataServiceImpl$9(ch.tatool.app.service.impl.DataServiceImpl,ch.tatool.app.data.ModuleImpl)|",
+      "|java+method:///org/springframework/transaction/support/TransactionTemplate/execute(org.springframework.transaction.support.TransactionCallback)|"
+    ],
+    "v2Body": [
+      "|java+method:///ch/tatool/app/data/ModuleImpl/getTransactionTemplate()|",
+      "|java+constructor:///ch/tatool/app/service/impl/DataServiceImpl$14/DataServiceImpl$14(ch.tatool.app.service.impl.DataServiceImpl,ch.tatool.app.data.ModuleImpl)|",
+      "|java+method:///org/springframework/transaction/support/TransactionTemplate/execute(org.springframework.transaction.support.TransactionCallback)|"
+    ],
+    "affectedLib": "org.springframework:spring-tx:3.1.3.RELEASE",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "ch.tatool:tatool-app:1.2.1",
+    "coordinatesV2": "ch.tatool:tatool-app:1.3",
+    "caller": "|java+method:///ch/tatool/app/service/impl/DataServiceImpl/getSessions(ch.tatool.data.Module)|",
+    "called": "|java+method:///org/springframework/transaction/support/TransactionTemplate/execute(org.springframework.transaction.support.TransactionCallback)|",
+    "v1Body": [
+      "|java+method:///ch/tatool/app/data/ModuleImpl/getSessionDAO()|",
+      "|java+method:///ch/tatool/app/service/impl/ModuleSessionDAO/getSessions(ch.tatool.app.data.ModuleImpl)|"
+    ],
+    "v2Body": [
+      "|java+method:///ch/tatool/app/data/ModuleImpl/getTransactionTemplate()|",
+      "|java+constructor:///ch/tatool/app/service/impl/DataServiceImpl$5/DataServiceImpl$5(ch.tatool.app.service.impl.DataServiceImpl,ch.tatool.app.data.ModuleImpl)|",
+      "|java+method:///org/springframework/transaction/support/TransactionTemplate/execute(org.springframework.transaction.support.TransactionCallback)|"
+    ],
+    "affectedLib": "org.springframework:spring-tx:3.1.3.RELEASE",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "ch.tatool:tatool-app:1.2.1",
+    "coordinatesV2": "ch.tatool:tatool-app:1.3",
+    "caller": "|java+method:///ch/tatool/app/service/impl/DataServiceImpl/getTrials(ch.tatool.data.Module,ch.tatool.data.ModuleSession,ch.tatool.element.Node,int)|",
+    "called": "|java+method:///org/springframework/transaction/support/TransactionTemplate/execute(org.springframework.transaction.support.TransactionCallback)|",
+    "v1Body": [
+      "|java+method:///ch/tatool/app/data/ModuleImpl/getTrialDAO()|",
+      "|java+method:///ch/tatool/app/service/impl/TrialDAO/getTrials(ch.tatool.data.ModuleSession,ch.tatool.element.Node,int)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///ch/tatool/app/service/impl/DataServiceImpl$9/DataServiceImpl$9(ch.tatool.app.service.impl.DataServiceImpl,ch.tatool.app.data.ModuleImpl,ch.tatool.data.ModuleSession,ch.tatool.element.Node,int)|",
+      "|java+method:///ch/tatool/app/data/ModuleImpl/getTransactionTemplate()|",
+      "|java+method:///org/springframework/transaction/support/TransactionTemplate/execute(org.springframework.transaction.support.TransactionCallback)|"
+    ],
+    "affectedLib": "org.springframework:spring-tx:3.1.3.RELEASE",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "ch.tatool:tatool-app:1.2.1",
+    "coordinatesV2": "ch.tatool:tatool-app:1.3",
+    "caller": "|java+method:///ch/tatool/app/service/impl/DataServiceImpl/insertTrial(ch.tatool.data.ModuleSession,ch.tatool.data.Trial)|",
+    "called": "|java+method:///org/springframework/transaction/support/TransactionTemplate/execute(org.springframework.transaction.support.TransactionCallback)|",
+    "v1Body": [
+      "|java+method:///ch/tatool/app/data/ModuleImpl/getTransactionTemplate()|",
+      "|java+method:///ch/tatool/data/ModuleSession/getModule()|",
+      "|java+method:///org/springframework/transaction/support/TransactionTemplate/execute(org.springframework.transaction.support.TransactionCallback)|",
+      "|java+constructor:///ch/tatool/app/service/impl/DataServiceImpl$5/DataServiceImpl$5(ch.tatool.app.service.impl.DataServiceImpl,ch.tatool.app.data.ModuleImpl,ch.tatool.data.ModuleSession,ch.tatool.data.Trial)|"
+    ],
+    "v2Body": [
+      "|java+method:///ch/tatool/app/data/ModuleImpl/getTransactionTemplate()|",
+      "|java+method:///ch/tatool/data/ModuleSession/getModule()|",
+      "|java+method:///org/springframework/transaction/support/TransactionTemplate/execute(org.springframework.transaction.support.TransactionCallback)|",
+      "|java+constructor:///ch/tatool/app/service/impl/DataServiceImpl$6/DataServiceImpl$6(ch.tatool.app.service.impl.DataServiceImpl,ch.tatool.app.data.ModuleImpl,ch.tatool.data.ModuleSession,ch.tatool.data.Trial)|"
+    ],
+    "affectedLib": "org.springframework:spring-tx:3.1.3.RELEASE",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "ch.tatool:tatool-app:1.2.1",
+    "coordinatesV2": "ch.tatool:tatool-app:1.3",
+    "caller": "|java+method:///ch/tatool/app/service/impl/ModuleServiceImpl/createModule(ch.tatool.data.UserAccount,java.util.Map,java.util.Map,java.util.Map)|",
+    "called": "|java+method:///org/springframework/transaction/support/TransactionTemplate/execute(org.springframework.transaction.support.TransactionCallback)|",
+    "v1Body": [
+      "|java+method:///ch/tatool/app/data/ModuleImpl/setModuleExporters(java.util.Map)|",
+      "|java+method:///ch/tatool/app/data/ModuleImpl/setAccount(ch.tatool.app.data.UserAccountImpl)|",
+      "|java+method:///ch/tatool/app/data/UserAccountImpl/getId()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+constructor:///ch/tatool/app/service/impl/ModuleServiceImpl$2/ModuleServiceImpl$2(ch.tatool.app.service.impl.ModuleServiceImpl,ch.tatool.app.data.UserAccountImpl,ch.tatool.app.data.ModuleImpl)|",
+      "|java+method:///java/lang/StringBuilder/append(long)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/System/currentTimeMillis()|",
+      "|java+method:///ch/tatool/app/data/ModuleImpl/setAccountId(java.lang.Long)|",
+      "|java+method:///ch/tatool/app/service/impl/ModuleServiceImpl/initializeModule(ch.tatool.app.data.ModuleImpl)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///ch/tatool/app/data/UserAccountImpl/getTransactionTemplate()|",
+      "|java+method:///ch/tatool/app/data/ModuleImpl/getModuleProperties()|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String)|",
+      "|java+method:///ch/tatool/app/data/ModuleImpl/setName(java.lang.String)|",
+      "|java+method:///ch/tatool/app/data/ModuleImpl/setBinaryModuleProperties(java.util.Map)|",
+      "|java+constructor:///ch/tatool/app/data/ModuleImpl/ModuleImpl()|",
+      "|java+method:///org/springframework/transaction/support/TransactionTemplate/execute(org.springframework.transaction.support.TransactionCallback)|",
+      "|java+method:///ch/tatool/app/data/ModuleImpl/setModuleProperties(java.util.Map)|"
+    ],
+    "v2Body": [
+      "|java+method:///ch/tatool/app/data/ModuleImpl/setModuleExporters(java.util.Map)|",
+      "|java+method:///ch/tatool/app/data/ModuleImpl/setAccount(ch.tatool.app.data.UserAccountImpl)|",
+      "|java+method:///ch/tatool/app/data/UserAccountImpl/getId()|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+constructor:///ch/tatool/app/service/impl/ModuleServiceImpl$2/ModuleServiceImpl$2(ch.tatool.app.service.impl.ModuleServiceImpl,ch.tatool.app.data.UserAccountImpl,ch.tatool.app.data.ModuleImpl)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(long)|",
+      "|java+method:///java/lang/System/currentTimeMillis()|",
+      "|java+method:///ch/tatool/app/data/ModuleImpl/setAccountId(java.lang.Long)|",
+      "|java+method:///ch/tatool/app/service/impl/ModuleServiceImpl/initializeModule(ch.tatool.app.data.ModuleImpl)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///ch/tatool/app/data/UserAccountImpl/getTransactionTemplate()|",
+      "|java+method:///ch/tatool/app/data/ModuleImpl/getModuleProperties()|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String)|",
+      "|java+method:///ch/tatool/app/data/ModuleImpl/setName(java.lang.String)|",
+      "|java+method:///ch/tatool/app/data/ModuleImpl/setBinaryModuleProperties(java.util.Map)|",
+      "|java+constructor:///ch/tatool/app/data/ModuleImpl/ModuleImpl()|",
+      "|java+method:///org/springframework/transaction/support/TransactionTemplate/execute(org.springframework.transaction.support.TransactionCallback)|",
+      "|java+method:///ch/tatool/app/data/ModuleImpl/setModuleProperties(java.util.Map)|"
+    ],
+    "affectedLib": "org.springframework:spring-tx:3.1.3.RELEASE",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "ch.tatool:tatool-app:1.2.1",
+    "coordinatesV2": "ch.tatool:tatool-app:1.3",
+    "caller": "|java+method:///ch/tatool/app/service/impl/DataServiceImpl/getTrials(ch.tatool.data.ModuleSession)|",
+    "called": "|java+method:///org/springframework/transaction/support/TransactionTemplate/execute(org.springframework.transaction.support.TransactionCallback)|",
+    "v1Body": [
+      "|java+method:///ch/tatool/app/data/ModuleImpl/getTrialDAO()|",
+      "|java+method:///ch/tatool/data/ModuleSession/getModule()|",
+      "|java+method:///ch/tatool/app/service/impl/TrialDAO/getTrials(ch.tatool.data.ModuleSession)|"
+    ],
+    "v2Body": [
+      "|java+method:///ch/tatool/app/data/ModuleImpl/getTransactionTemplate()|",
+      "|java+method:///ch/tatool/data/ModuleSession/getModule()|",
+      "|java+constructor:///ch/tatool/app/service/impl/DataServiceImpl$7/DataServiceImpl$7(ch.tatool.app.service.impl.DataServiceImpl,ch.tatool.app.data.ModuleImpl,ch.tatool.data.ModuleSession)|",
+      "|java+method:///org/springframework/transaction/support/TransactionTemplate/execute(org.springframework.transaction.support.TransactionCallback)|"
+    ],
+    "affectedLib": "org.springframework:spring-tx:3.1.3.RELEASE",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "ch.tatool:tatool-app:1.2.1",
+    "coordinatesV2": "ch.tatool:tatool-app:1.3",
+    "caller": "|java+method:///ch/tatool/app/service/impl/UserAccountServiceImpl/loadAccount(ch.tatool.data.UserAccount$Info,java.lang.String)|",
+    "called": "|java+constructor:///org/springframework/transaction/support/TransactionTemplate/TransactionTemplate(org.springframework.transaction.PlatformTransactionManager)|",
+    "v1Body": [
+      "|java+method:///ch/tatool/app/util/ContextUtils/createBeanFactory(java.lang.String,java.util.Properties)|",
+      "|java+method:///ch/tatool/app/data/UserAccountImpl/setId(java.lang.Long)|",
+      "|java+method:///ch/tatool/app/data/UserAccountImpl/setBeanFactory(org.springframework.beans.factory.BeanFactory)|",
+      "|java+method:///java/lang/String/length()|",
+      "|java+constructor:///ch/tatool/app/service/impl/UserAccountServiceImpl$1/UserAccountServiceImpl$1(ch.tatool.app.service.impl.UserAccountServiceImpl,ch.tatool.app.data.UserAccountImpl)|",
+      "|java+constructor:///org/springframework/transaction/support/TransactionTemplate/TransactionTemplate(org.springframework.transaction.PlatformTransactionManager)|",
+      "|java+constructor:///java/util/Properties/Properties()|",
+      "|java+method:///ch/tatool/app/data/UserAccountImpl$InfoImpl/getFolder()|",
+      "|java+method:///ch/tatool/app/data/UserAccountImpl/setName(java.lang.String)|",
+      "|java+constructor:///ch/tatool/app/data/UserAccountImpl/UserAccountImpl()|",
+      "|java+constructor:///java/io/File/File(java.io.File,java.lang.String)|",
+      "|java+method:///java/util/Properties/setProperty(java.lang.String,java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String)|",
+      "|java+method:///ch/tatool/app/data/UserAccountImpl$InfoImpl/getId()|",
+      "|java+method:///ch/tatool/app/data/UserAccountImpl/setPassword(java.lang.String)|",
+      "|java+method:///org/springframework/beans/factory/BeanFactory/getBean(java.lang.String)|",
+      "|java+method:///ch/tatool/app/service/impl/UserAccountServiceImpl/changeLocale(ch.tatool.app.data.UserAccountImpl)|",
+      "|java+method:///ch/tatool/app/data/UserAccountImpl/setFolder(java.io.File)|",
+      "|java+method:///ch/tatool/app/data/UserAccountImpl/setTransactionTemplate(org.springframework.transaction.support.TransactionTemplate)|",
+      "|java+method:///ch/tatool/app/data/UserAccountImpl$InfoImpl/getName()|",
+      "|java+method:///java/io/File/getAbsolutePath()|",
+      "|java+method:///org/springframework/transaction/support/TransactionTemplate/execute(org.springframework.transaction.support.TransactionCallback)|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///ch/tatool/app/util/ContextUtils/createBeanFactory(java.lang.String,java.util.Properties)|",
+      "|java+method:///ch/tatool/app/data/UserAccountImpl/setId(java.lang.Long)|",
+      "|java+method:///ch/tatool/app/data/UserAccountImpl$InfoImpl/getVersion()|",
+      "|java+method:///ch/tatool/app/data/UserAccountImpl/setBeanFactory(org.springframework.beans.factory.BeanFactory)|",
+      "|java+method:///java/lang/String/length()|",
+      "|java+constructor:///ch/tatool/app/service/impl/UserAccountServiceImpl$1/UserAccountServiceImpl$1(ch.tatool.app.service.impl.UserAccountServiceImpl,ch.tatool.app.data.UserAccountImpl)|",
+      "|java+constructor:///java/util/Properties/Properties()|",
+      "|java+method:///ch/tatool/app/data/UserAccountImpl$InfoImpl/getFolder()|",
+      "|java+method:///ch/tatool/app/data/UserAccountImpl/setName(java.lang.String)|",
+      "|java+constructor:///ch/tatool/app/data/UserAccountImpl/UserAccountImpl()|",
+      "|java+constructor:///java/io/File/File(java.io.File,java.lang.String)|",
+      "|java+method:///java/util/Properties/setProperty(java.lang.String,java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String)|",
+      "|java+method:///ch/tatool/app/data/UserAccountImpl$InfoImpl/getId()|",
+      "|java+method:///ch/tatool/app/data/UserAccountImpl/setPassword(java.lang.String)|",
+      "|java+method:///org/springframework/beans/factory/BeanFactory/getBean(java.lang.String)|",
+      "|java+method:///ch/tatool/app/service/impl/UserAccountServiceImpl/changeLocale(ch.tatool.app.data.UserAccountImpl)|",
+      "|java+method:///ch/tatool/app/data/UserAccountImpl/setFolder(java.io.File)|",
+      "|java+method:///ch/tatool/app/data/UserAccountImpl/setTransactionTemplate(org.springframework.transaction.support.TransactionTemplate)|",
+      "|java+method:///ch/tatool/app/data/UserAccountImpl/setVersion(java.lang.String)|",
+      "|java+constructor:///org/springframework/transaction/support/TransactionTemplate/TransactionTemplate(org.springframework.transaction.PlatformTransactionManager)|",
+      "|java+method:///ch/tatool/app/data/UserAccountImpl$InfoImpl/getName()|",
+      "|java+method:///java/io/File/getAbsolutePath()|",
+      "|java+method:///org/springframework/transaction/support/TransactionTemplate/execute(org.springframework.transaction.support.TransactionCallback)|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String)|"
+    ],
+    "affectedLib": "org.springframework:spring-tx:3.1.3.RELEASE",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "ch.tatool:tatool-app:1.2.1",
+    "coordinatesV2": "ch.tatool:tatool-app:1.3",
+    "caller": "|java+method:///ch/tatool/app/export/ServerDataExporter/uploadFiles(java.awt.Component,ch.tatool.data.Module,org.apache.http.HttpEntity)|",
+    "called": "|java+constructor:///org/apache/http/impl/client/DefaultHttpClient/DefaultHttpClient(org.apache.http.params.HttpParams)|",
+    "v1Body": [
+      "|java+method:///org/apache/http/HttpResponse/getStatusLine()|",
+      "|java+method:///org/apache/commons/io/IOUtils/toString(java.io.InputStream)|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+method:///java/io/IOException/getMessage()|",
+      "|java+method:///ch/tatool/data/Module/getModuleProperties()|",
+      "|java+constructor:///org/apache/http/impl/client/DefaultHttpClient/DefaultHttpClient(org.apache.http.params.HttpParams)|",
+      "|java+constructor:///org/apache/http/client/methods/HttpPost/HttpPost(java.lang.String)|",
+      "|java+method:///org/apache/http/HttpResponse/getEntity()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///ch/tatool/app/export/ServerDataExporter/getUrl()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/io/IOException/toString()|",
+      "|java+method:///ch/tatool/export/DataExporterError/setErrorReason(java.lang.String)|",
+      "|java+method:///ch/tatool/export/DataExporterError/setErrorType(int)|",
+      "|java+method:///org/apache/http/conn/ClientConnectionManager/shutdown()|",
+      "|java+method:///org/apache/http/client/methods/HttpPost/setEntity(org.apache.http.HttpEntity)|",
+      "|java+constructor:///org/apache/http/params/BasicHttpParams/BasicHttpParams()|",
+      "|java+method:///org/apache/http/HttpEntity/getContent()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/apache/http/impl/client/DefaultHttpClient/getConnectionManager()|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/apache/http/params/HttpConnectionParams/setSoTimeout(org.apache.http.params.HttpParams,int)|",
+      "|java+method:///org/apache/http/StatusLine/getReasonPhrase()|",
+      "|java+method:///org/apache/http/StatusLine/getStatusCode()|",
+      "|java+method:///org/apache/http/params/HttpConnectionParams/setConnectionTimeout(org.apache.http.params.HttpParams,int)|",
+      "|java+method:///org/apache/http/impl/client/DefaultHttpClient/execute(org.apache.http.client.methods.HttpUriRequest)|",
+      "|java+method:///org/slf4j/Logger/isDebugEnabled()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/http/HttpResponse/getStatusLine()|",
+      "|java+method:///org/apache/commons/io/IOUtils/toString(java.io.InputStream)|",
+      "|java+method:///java/lang/String/valueOf(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+method:///java/io/IOException/getMessage()|",
+      "|java+method:///org/apache/http/impl/client/DefaultHttpClient/getConnectionManager()|",
+      "|java+constructor:///org/apache/http/impl/client/DefaultHttpClient/DefaultHttpClient(org.apache.http.params.HttpParams)|",
+      "|java+constructor:///org/apache/http/client/methods/HttpPost/HttpPost(java.lang.String)|",
+      "|java+method:///org/apache/http/HttpResponse/getEntity()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///ch/tatool/app/export/ServerDataExporter/getUrl()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/io/IOException/toString()|",
+      "|java+method:///ch/tatool/export/DataExporterError/setErrorReason(java.lang.String)|",
+      "|java+method:///ch/tatool/export/DataExporterError/setErrorType(int)|",
+      "|java+method:///org/apache/http/conn/ClientConnectionManager/shutdown()|",
+      "|java+method:///org/apache/http/client/methods/HttpPost/setEntity(org.apache.http.HttpEntity)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder(java.lang.String)|",
+      "|java+constructor:///org/apache/http/params/BasicHttpParams/BasicHttpParams()|",
+      "|java+method:///org/apache/http/HttpEntity/getContent()|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/apache/http/params/HttpConnectionParams/setSoTimeout(org.apache.http.params.HttpParams,int)|",
+      "|java+method:///org/apache/http/StatusLine/getReasonPhrase()|",
+      "|java+method:///org/apache/http/StatusLine/getStatusCode()|",
+      "|java+method:///org/apache/http/params/HttpConnectionParams/setConnectionTimeout(org.apache.http.params.HttpParams,int)|",
+      "|java+method:///org/apache/http/impl/client/DefaultHttpClient/execute(org.apache.http.client.methods.HttpUriRequest)|",
+      "|java+method:///org/slf4j/Logger/isDebugEnabled()|"
+    ],
+    "affectedLib": "org.apache.httpcomponents:httpclient:4.2.2",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "ch.tatool:tatool-app:1.2.1",
+    "coordinatesV2": "ch.tatool:tatool-app:1.3",
+    "caller": "|java+method:///ch/tatool/app/service/impl/ModuleSessionDAO/findLastSession(ch.tatool.app.data.ModuleImpl)|",
+    "called": "|java+method:///org/hibernate/criterion/Order/desc(java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///ch/tatool/app/service/impl/ModuleSessionDAO$3/ModuleSessionDAO$3(ch.tatool.app.service.impl.ModuleSessionDAO,ch.tatool.app.data.ModuleImpl)|",
+      "|java+method:///ch/tatool/app/service/impl/ModuleSessionDAO/getHibernateTemplate()|",
+      "|java+method:///org/springframework/orm/hibernate3/HibernateTemplate/execute(org.springframework.orm.hibernate3.HibernateCallback)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/hibernate/Criteria/list()|",
+      "|java+method:///org/hibernate/Criteria/add(org.hibernate.criterion.Criterion)|",
+      "|java+method:///org/hibernate/Session/createCriteria(java.lang.Class)|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///org/hibernate/criterion/Restrictions/eq(java.lang.String,java.lang.Object)|",
+      "|java+method:///java/util/List/get(int)|",
+      "|java+method:///org/hibernate/criterion/Order/desc(java.lang.String)|",
+      "|java+method:///org/hibernate/Criteria/setFetchSize(int)|",
+      "|java+method:///org/hibernate/SessionFactory/getCurrentSession()|",
+      "|java+method:///org/hibernate/Criteria/addOrder(org.hibernate.criterion.Order)|"
+    ],
+    "affectedLib": "org.hibernate:hibernate-core:4.1.8.Final",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "ch.tatool:tatool-app:1.2.1",
+    "coordinatesV2": "ch.tatool:tatool-app:1.3",
+    "caller": "|java+method:///ch/tatool/app/service/impl/TrialDAO/getTrials(ch.tatool.data.ModuleSession,ch.tatool.element.Node,int)|",
+    "called": "|java+method:///org/hibernate/criterion/Property/eq(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/springframework/orm/hibernate3/HibernateTemplate/findByCriteria(org.hibernate.criterion.DetachedCriteria,int,int)|",
+      "|java+method:///org/hibernate/criterion/DetachedCriteria/forClass(java.lang.Class)|",
+      "|java+method:///ch/tatool/element/Node/getId()|",
+      "|java+method:///org/hibernate/criterion/Property/eq(java.lang.Object)|",
+      "|java+method:///org/hibernate/criterion/DetachedCriteria/addOrder(org.hibernate.criterion.Order)|",
+      "|java+method:///ch/tatool/app/service/impl/TrialDAO/getHibernateTemplate()|",
+      "|java+method:///org/hibernate/criterion/Order/desc(java.lang.String)|",
+      "|java+method:///org/hibernate/criterion/Property/forName(java.lang.String)|",
+      "|java+method:///org/hibernate/criterion/DetachedCriteria/add(org.hibernate.criterion.Criterion)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/hibernate/Criteria/list()|",
+      "|java+method:///org/hibernate/criterion/DetachedCriteria/forClass(java.lang.Class)|",
+      "|java+method:///org/hibernate/criterion/Property/eq(java.lang.Object)|",
+      "|java+method:///org/hibernate/criterion/Order/desc(java.lang.String)|",
+      "|java+method:///org/hibernate/criterion/Property/forName(java.lang.String)|",
+      "|java+method:///org/hibernate/criterion/DetachedCriteria/add(org.hibernate.criterion.Criterion)|",
+      "|java+method:///org/hibernate/criterion/DetachedCriteria/getExecutableCriteria(org.hibernate.Session)|",
+      "|java+method:///ch/tatool/element/Node/getId()|",
+      "|java+method:///org/hibernate/Criteria/setMaxResults(int)|",
+      "|java+method:///org/hibernate/SessionFactory/getCurrentSession()|",
+      "|java+method:///org/hibernate/criterion/DetachedCriteria/addOrder(org.hibernate.criterion.Order)|"
+    ],
+    "affectedLib": "org.hibernate:hibernate-core:4.1.8.Final",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "ch.tatool:tatool-app:1.2.1",
+    "coordinatesV2": "ch.tatool:tatool-app:1.3",
+    "caller": "|java+method:///ch/tatool/app/export/ServerDataExporter/getHttpEntity(ch.tatool.data.Module,int,java.util.List,java.util.List)|",
+    "called": "|java+method:///org/apache/http/entity/mime/MultipartEntity/addPart(java.lang.String,org.apache.http.entity.mime.content.ContentBody)|",
+    "v1Body": [
+      "|java+method:///ch/tatool/data/Module/getUserAccount()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///ch/tatool/data/UserAccount/getName()|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+method:///ch/tatool/app/export/ServerDataExporter$FileBodyExt/setFilename(java.lang.String)|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+constructor:///org/apache/http/entity/mime/content/StringBody/StringBody(java.lang.String,java.nio.charset.Charset)|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///org/apache/http/entity/mime/MultipartEntity/addPart(java.lang.String,org.apache.http.entity.mime.content.ContentBody)|",
+      "|java+constructor:///org/apache/http/entity/mime/MultipartEntity/MultipartEntity()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/util/List/get(int)|",
+      "|java+constructor:///ch/tatool/app/export/ServerDataExporter$FileBodyExt/ServerDataExporter$FileBodyExt(ch.tatool.app.export.ServerDataExporter,java.io.File)|",
+      "|java+method:///java/nio/charset/Charset/forName(java.lang.String)|",
+      "|java+method:///ch/tatool/data/Module/getModuleProperties()|",
+      "|java+method:///java/lang/String/isEmpty()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/String/valueOf(int)|"
+    ],
+    "v2Body": [
+      "|java+method:///ch/tatool/data/Module/getUserAccount()|",
+      "|java+method:///ch/tatool/data/UserAccount/getName()|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+method:///ch/tatool/app/export/ServerDataExporter$FileBodyExt/setFilename(java.lang.String)|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+constructor:///org/apache/http/entity/mime/content/StringBody/StringBody(java.lang.String,java.nio.charset.Charset)|",
+      "|java+method:///java/util/List/size()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder(java.lang.String)|",
+      "|java+method:///org/apache/http/entity/mime/MultipartEntity/addPart(java.lang.String,org.apache.http.entity.mime.content.ContentBody)|",
+      "|java+constructor:///org/apache/http/entity/mime/MultipartEntity/MultipartEntity()|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/util/List/get(int)|",
+      "|java+constructor:///ch/tatool/app/export/ServerDataExporter$FileBodyExt/ServerDataExporter$FileBodyExt(ch.tatool.app.export.ServerDataExporter,java.io.File)|",
+      "|java+method:///java/nio/charset/Charset/forName(java.lang.String)|",
+      "|java+method:///ch/tatool/data/Module/getModuleProperties()|",
+      "|java+method:///java/lang/String/isEmpty()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/String/valueOf(int)|"
+    ],
+    "affectedLib": "org.apache.httpcomponents:httpmime:4.2.2",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "ch.tatool:tatool-app:1.2.1",
+    "coordinatesV2": "ch.tatool:tatool-app:1.3",
+    "caller": "|java+constructor:///ch/tatool/app/service/impl/TrialDAO/TrialDAO()|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+constructor:///org/springframework/orm/hibernate3/support/HibernateDaoSupport/HibernateDaoSupport()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.2",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "ch.tatool:tatool-app:1.2.1",
+    "coordinatesV2": "ch.tatool:tatool-app:1.3",
+    "caller": "|java+method:///ch/tatool/app/export/CSVTrialDataExport/exportData(ch.tatool.data.Module,int)|",
+    "called": "|java+method:///au/com/bytecode/opencsv/CSVWriter/writeAll(java.util.List)|",
+    "v1Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList(java.util.Collection)|",
+      "|java+method:///java/lang/String/split(java.lang.String)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///java/io/OutputStreamWriter/OutputStreamWriter(java.io.OutputStream,java.lang.String)|",
+      "|java+method:///au/com/bytecode/opencsv/CSVWriter/writeNext(java.lang.String%5B%5D)|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///au/com/bytecode/opencsv/CSVWriter/writeAll(java.util.List)|",
+      "|java+method:///ch/tatool/app/export/CSVTrialDataExport/getDataForTrial(ch.tatool.data.ModuleSession,ch.tatool.data.Trial)|",
+      "|java+method:///au/com/bytecode/opencsv/CSVWriter/close()|",
+      "|java+constructor:///java/util/HashSet/HashSet()|",
+      "|java+method:///ch/tatool/data/DataService/getTrials(ch.tatool.data.ModuleSession)|",
+      "|java+constructor:///java/io/FileOutputStream/FileOutputStream(java.io.File,boolean)|",
+      "|java+method:///ch/tatool/data/ModuleSession/getIndex()|",
+      "|java+method:///java/util/HashSet/add(java.lang.Object)|",
+      "|java+method:///java/util/List/addAll(java.util.Collection)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/Collections/sort(java.util.List,java.util.Comparator)|",
+      "|java+method:///java/util/List/toArray(java.lang.Object%5B%5D)|",
+      "|java+method:///ch/tatool/data/DataService/getSessions(ch.tatool.data.Module)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///ch/tatool/app/export/CSVTrialDataExport/initBaseProperties(ch.tatool.data.Module)|",
+      "|java+method:///ch/tatool/app/export/CSVTrialDataExport/initTrialProperties(ch.tatool.data.Module)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/util/HashSet/size()|",
+      "|java+method:///java/util/List/clear()|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///java/io/File/createTempFile(java.lang.String,java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///au/com/bytecode/opencsv/CSVWriter/CSVWriter(java.io.Writer,char)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList(java.util.Collection)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///java/io/OutputStreamWriter/OutputStreamWriter(java.io.OutputStream,java.lang.String)|",
+      "|java+method:///au/com/bytecode/opencsv/CSVWriter/writeNext(java.lang.String%5B%5D)|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///ch/tatool/app/export/CSVTrialDataExport/initBaseProperties(ch.tatool.data.Module)|",
+      "|java+method:///au/com/bytecode/opencsv/CSVWriter/writeAll(java.util.List)|",
+      "|java+method:///ch/tatool/app/export/CSVTrialDataExport/getDataForTrial(ch.tatool.data.ModuleSession,ch.tatool.data.Trial)|",
+      "|java+method:///au/com/bytecode/opencsv/CSVWriter/close()|",
+      "|java+constructor:///java/util/HashSet/HashSet()|",
+      "|java+method:///ch/tatool/data/DataService/getTrials(ch.tatool.data.ModuleSession)|",
+      "|java+constructor:///java/io/FileOutputStream/FileOutputStream(java.io.File,boolean)|",
+      "|java+method:///ch/tatool/data/ModuleSession/getIndex()|",
+      "|java+method:///java/lang/String/split(java.lang.String)|",
+      "|java+method:///java/lang/String/valueOf(java.lang.Object)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder(java.lang.String)|",
+      "|java+method:///java/util/HashSet/add(java.lang.Object)|",
+      "|java+method:///java/util/List/addAll(java.util.Collection)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/Collections/sort(java.util.List,java.util.Comparator)|",
+      "|java+method:///java/util/List/toArray(java.lang.Object%5B%5D)|",
+      "|java+method:///ch/tatool/data/DataService/getSessions(ch.tatool.data.Module)|",
+      "|java+method:///ch/tatool/app/export/CSVTrialDataExport/initTrialProperties(ch.tatool.data.Module)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/util/HashSet/size()|",
+      "|java+method:///java/util/List/clear()|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///java/io/File/createTempFile(java.lang.String,java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///au/com/bytecode/opencsv/CSVWriter/CSVWriter(java.io.Writer,char)|"
+    ],
+    "affectedLib": "net.sf.opencsv:opencsv:2.3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "ch.tatool:tatool-app:1.2.1",
+    "coordinatesV2": "ch.tatool:tatool-app:1.3",
+    "caller": "|java+method:///ch/tatool/app/export/FileDataExporter/exportData(java.awt.Component,ch.tatool.data.Module,int,ch.tatool.export.DataExporterError)|",
+    "called": "|java+method:///org/apache/commons/io/FileUtils/copyFile(java.io.File,java.io.File)|",
+    "v1Body": [
+      "|java+method:///ch/tatool/data/Module/getUserAccount()|",
+      "|java+method:///ch/tatool/app/export/CSVTrialDataExport/setCSVParameters(char)|",
+      "|java+method:///ch/tatool/app/export/CSVTrialDataExport/exportData(ch.tatool.data.Module,int)|",
+      "|java+method:///java/io/IOException/getMessage()|",
+      "|java+constructor:///java/io/File/File(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///java/text/SimpleDateFormat/SimpleDateFormat(java.lang.String)|",
+      "|java+method:///ch/tatool/app/export/FileDataExporter/removeSpecialCharacters(java.lang.String)|",
+      "|java+method:///java/io/File/delete()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/text/SimpleDateFormat/format(java.util.Date)|",
+      "|java+method:///ch/tatool/app/export/FileDataExporter/getStorageDirectory(java.awt.Component)|",
+      "|java+method:///ch/tatool/data/UserAccount/getName()|",
+      "|java+method:///org/apache/commons/io/FileUtils/copyFile(java.io.File,java.io.File)|",
+      "|java+method:///ch/tatool/data/Messages/getLocale()|",
+      "|java+method:///ch/tatool/export/DataExporterError/setErrorReason(java.lang.String)|",
+      "|java+method:///ch/tatool/export/DataExporterError/setErrorType(int)|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+constructor:///java/util/Date/Date()|",
+      "|java+method:///java/util/Locale/getLanguage()|",
+      "|java+method:///ch/tatool/data/DataService/getMessages()|",
+      "|java+method:///java/lang/System/getProperty(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///ch/tatool/app/export/CSVTrialDataExport/CSVTrialDataExport(ch.tatool.data.DataService)|",
+      "|java+method:///ch/tatool/app/export/FileDataExporter/getPath()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///ch/tatool/data/Module/getName()|"
+    ],
+    "v2Body": [
+      "|java+method:///ch/tatool/data/Module/getUserAccount()|",
+      "|java+method:///java/lang/String/valueOf(java.lang.Object)|",
+      "|java+method:///ch/tatool/app/export/CSVTrialDataExport/setCSVParameters(char)|",
+      "|java+method:///ch/tatool/app/export/CSVTrialDataExport/exportData(ch.tatool.data.Module,int)|",
+      "|java+method:///java/io/IOException/getMessage()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder(java.lang.String)|",
+      "|java+constructor:///java/io/File/File(java.lang.String)|",
+      "|java+method:///java/lang/System/getProperty(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///java/text/SimpleDateFormat/SimpleDateFormat(java.lang.String)|",
+      "|java+method:///ch/tatool/app/export/FileDataExporter/removeSpecialCharacters(java.lang.String)|",
+      "|java+method:///java/io/File/delete()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/text/SimpleDateFormat/format(java.util.Date)|",
+      "|java+method:///ch/tatool/app/export/FileDataExporter/getStorageDirectory(java.awt.Component)|",
+      "|java+method:///ch/tatool/data/UserAccount/getName()|",
+      "|java+method:///org/apache/commons/io/FileUtils/copyFile(java.io.File,java.io.File)|",
+      "|java+method:///ch/tatool/data/Messages/getLocale()|",
+      "|java+method:///ch/tatool/export/DataExporterError/setErrorReason(java.lang.String)|",
+      "|java+method:///ch/tatool/export/DataExporterError/setErrorType(int)|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+constructor:///java/util/Date/Date()|",
+      "|java+method:///java/util/Locale/getLanguage()|",
+      "|java+method:///ch/tatool/data/DataService/getMessages()|",
+      "|java+constructor:///ch/tatool/app/export/CSVTrialDataExport/CSVTrialDataExport(ch.tatool.data.DataService)|",
+      "|java+method:///ch/tatool/app/export/FileDataExporter/getPath()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///ch/tatool/data/Module/getName()|"
+    ],
+    "affectedLib": "commons-io:commons-io:2.4",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "ch.tatool:tatool-app:1.2.1",
+    "coordinatesV2": "ch.tatool:tatool-app:1.3",
+    "caller": "|java+method:///ch/tatool/app/export/ServerDataExporter/uploadFiles(java.awt.Component,ch.tatool.data.Module,org.apache.http.HttpEntity)|",
+    "called": "|java+method:///org/apache/commons/io/IOUtils/toString(java.io.InputStream)|",
+    "v1Body": [
+      "|java+method:///org/apache/http/HttpResponse/getStatusLine()|",
+      "|java+method:///org/apache/commons/io/IOUtils/toString(java.io.InputStream)|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+method:///java/io/IOException/getMessage()|",
+      "|java+method:///ch/tatool/data/Module/getModuleProperties()|",
+      "|java+constructor:///org/apache/http/impl/client/DefaultHttpClient/DefaultHttpClient(org.apache.http.params.HttpParams)|",
+      "|java+constructor:///org/apache/http/client/methods/HttpPost/HttpPost(java.lang.String)|",
+      "|java+method:///org/apache/http/HttpResponse/getEntity()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///ch/tatool/app/export/ServerDataExporter/getUrl()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/io/IOException/toString()|",
+      "|java+method:///ch/tatool/export/DataExporterError/setErrorReason(java.lang.String)|",
+      "|java+method:///ch/tatool/export/DataExporterError/setErrorType(int)|",
+      "|java+method:///org/apache/http/conn/ClientConnectionManager/shutdown()|",
+      "|java+method:///org/apache/http/client/methods/HttpPost/setEntity(org.apache.http.HttpEntity)|",
+      "|java+constructor:///org/apache/http/params/BasicHttpParams/BasicHttpParams()|",
+      "|java+method:///org/apache/http/HttpEntity/getContent()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/apache/http/impl/client/DefaultHttpClient/getConnectionManager()|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/apache/http/params/HttpConnectionParams/setSoTimeout(org.apache.http.params.HttpParams,int)|",
+      "|java+method:///org/apache/http/StatusLine/getReasonPhrase()|",
+      "|java+method:///org/apache/http/StatusLine/getStatusCode()|",
+      "|java+method:///org/apache/http/params/HttpConnectionParams/setConnectionTimeout(org.apache.http.params.HttpParams,int)|",
+      "|java+method:///org/apache/http/impl/client/DefaultHttpClient/execute(org.apache.http.client.methods.HttpUriRequest)|",
+      "|java+method:///org/slf4j/Logger/isDebugEnabled()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/http/HttpResponse/getStatusLine()|",
+      "|java+method:///org/apache/commons/io/IOUtils/toString(java.io.InputStream)|",
+      "|java+method:///java/lang/String/valueOf(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+method:///java/io/IOException/getMessage()|",
+      "|java+method:///org/apache/http/impl/client/DefaultHttpClient/getConnectionManager()|",
+      "|java+constructor:///org/apache/http/impl/client/DefaultHttpClient/DefaultHttpClient(org.apache.http.params.HttpParams)|",
+      "|java+constructor:///org/apache/http/client/methods/HttpPost/HttpPost(java.lang.String)|",
+      "|java+method:///org/apache/http/HttpResponse/getEntity()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///ch/tatool/app/export/ServerDataExporter/getUrl()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/io/IOException/toString()|",
+      "|java+method:///ch/tatool/export/DataExporterError/setErrorReason(java.lang.String)|",
+      "|java+method:///ch/tatool/export/DataExporterError/setErrorType(int)|",
+      "|java+method:///org/apache/http/conn/ClientConnectionManager/shutdown()|",
+      "|java+method:///org/apache/http/client/methods/HttpPost/setEntity(org.apache.http.HttpEntity)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder(java.lang.String)|",
+      "|java+constructor:///org/apache/http/params/BasicHttpParams/BasicHttpParams()|",
+      "|java+method:///org/apache/http/HttpEntity/getContent()|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/apache/http/params/HttpConnectionParams/setSoTimeout(org.apache.http.params.HttpParams,int)|",
+      "|java+method:///org/apache/http/StatusLine/getReasonPhrase()|",
+      "|java+method:///org/apache/http/StatusLine/getStatusCode()|",
+      "|java+method:///org/apache/http/params/HttpConnectionParams/setConnectionTimeout(org.apache.http.params.HttpParams,int)|",
+      "|java+method:///org/apache/http/impl/client/DefaultHttpClient/execute(org.apache.http.client.methods.HttpUriRequest)|",
+      "|java+method:///org/slf4j/Logger/isDebugEnabled()|"
+    ],
+    "affectedLib": "commons-io:commons-io:2.4",
+    "change": "UPDATED"
+  }
+]

@@ -1,0 +1,328 @@
+[
+  {
+    "coordinatesV1": "com.lordofthejars:nosqlunit-mongodb:0.13.1",
+    "coordinatesV2": "com.lordofthejars:nosqlunit-mongodb:0.7.6",
+    "caller": "|java+method:///com/lordofthejars/nosqlunit/mongodb/InMemoryMongoDbLifecycleManager/fongo(java.lang.String)|",
+    "called": "|java+constructor:///com/foursquare/fongo/Fongo/Fongo(java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///com/foursquare/fongo/Fongo/Fongo(java.lang.String)|",
+      "|java+method:///com/foursquare/fongo/Fongo/getMongo()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/github/fakemongo/Fongo/getMongo()|",
+      "|java+constructor:///com/github/fakemongo/Fongo/Fongo(java.lang.String)|"
+    ],
+    "affectedLib": "com.foursquare:fongo:1.0.7",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.lordofthejars:nosqlunit-mongodb:0.13.1",
+    "coordinatesV2": "com.lordofthejars:nosqlunit-mongodb:0.7.6",
+    "caller": "|java+method:///com/lordofthejars/nosqlunit/mongodb/shard/ShardedManagedMongoDb/getMongosMongoClient()|",
+    "called": "|java+constructor:///com/mongodb/MongoClient/MongoClient(java.lang.String,int)|",
+    "v1Body": [
+      "|java+method:///com/lordofthejars/nosqlunit/mongodb/shard/ManagedMongosLifecycleManager/getHost()|",
+      "|java+constructor:///com/mongodb/MongoClient/MongoClient(java.lang.String,int)|",
+      "|java+method:///com/lordofthejars/nosqlunit/mongodb/shard/ShardedGroup/getFirstMongosServer()|",
+      "|java+method:///com/lordofthejars/nosqlunit/mongodb/shard/ManagedMongosLifecycleManager/getPort()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/lordofthejars/nosqlunit/mongodb/shard/ManagedMongosLifecycleManager/getHost()|",
+      "|java+constructor:///com/mongodb/ServerAddress/ServerAddress(java.lang.String,int)|",
+      "|java+method:///com/mongodb/MongoCredential/createCredential(java.lang.String,java.lang.String,char%5B%5D)|",
+      "|java+method:///com/lordofthejars/nosqlunit/mongodb/shard/ShardedGroup/getPassword()|",
+      "|java+method:///java/util/Arrays/asList(java.lang.Object%5B%5D)|",
+      "|java+method:///java/lang/String/toCharArray()|",
+      "|java+constructor:///com/mongodb/MongoClient/MongoClient(java.lang.String,int)|",
+      "|java+constructor:///com/mongodb/MongoClient/MongoClient(com.mongodb.ServerAddress,java.util.List)|",
+      "|java+method:///com/lordofthejars/nosqlunit/mongodb/shard/ShardedGroup/getUsername()|",
+      "|java+method:///com/lordofthejars/nosqlunit/mongodb/shard/ShardedGroup/getFirstMongosServer()|",
+      "|java+method:///com/lordofthejars/nosqlunit/mongodb/shard/ShardedGroup/isAuthenticationSet()|",
+      "|java+method:///com/lordofthejars/nosqlunit/mongodb/shard/ManagedMongosLifecycleManager/getPort()|"
+    ],
+    "affectedLib": "org.mongodb:mongo-java-driver:2.10.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.lordofthejars:nosqlunit-mongodb:0.13.1",
+    "coordinatesV2": "com.lordofthejars:nosqlunit-mongodb:0.7.6",
+    "caller": "|java+method:///com/lordofthejars/nosqlunit/mongodb/ReplicationMongoDbConfigurationBuilder/addDefaultSeed()|",
+    "called": "|java+constructor:///com/mongodb/ServerAddress/ServerAddress(java.lang.String,int)|",
+    "v1Body": [
+      "|java+constructor:///com/mongodb/ServerAddress/ServerAddress(java.lang.String,int)|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.Throwable)|",
+      "|java+method:///java/util/List/add(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/mongodb/ServerAddress/ServerAddress(java.lang.String,int)|",
+      "|java+method:///java/util/List/add(java.lang.Object)|"
+    ],
+    "affectedLib": "org.mongodb:mongo-java-driver:2.10.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.lordofthejars:nosqlunit-mongodb:0.13.1",
+    "coordinatesV2": "com.lordofthejars:nosqlunit-mongodb:0.7.6",
+    "caller": "|java+method:///com/lordofthejars/nosqlunit/mongodb/replicaset/ReplicaSetManagedMongoDb/getDefaultMongoClient()|",
+    "called": "|java+constructor:///com/mongodb/MongoClient/MongoClient(java.lang.String,int)|",
+    "v1Body": [
+      "|java+method:///com/lordofthejars/nosqlunit/mongodb/replicaset/ReplicaSetGroup/getDefaultConnection()|",
+      "|java+method:///com/lordofthejars/nosqlunit/mongodb/ManagedMongoDbLifecycleManager/getPort()|",
+      "|java+method:///com/lordofthejars/nosqlunit/mongodb/ManagedMongoDbLifecycleManager/getHost()|",
+      "|java+constructor:///com/mongodb/MongoClient/MongoClient(java.lang.String,int)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/lordofthejars/nosqlunit/mongodb/replicaset/ReplicaSetGroup/getUsername()|",
+      "|java+constructor:///com/mongodb/ServerAddress/ServerAddress(java.lang.String,int)|",
+      "|java+method:///com/mongodb/MongoCredential/createCredential(java.lang.String,java.lang.String,char%5B%5D)|",
+      "|java+constructor:///com/mongodb/MongoClient/MongoClient(com.mongodb.ServerAddress,java.util.List)|",
+      "|java+method:///com/lordofthejars/nosqlunit/mongodb/replicaset/ReplicaSetGroup/getPassword()|",
+      "|java+method:///com/lordofthejars/nosqlunit/mongodb/replicaset/ReplicaSetGroup/getDefaultConnection()|",
+      "|java+method:///java/util/Arrays/asList(java.lang.Object%5B%5D)|",
+      "|java+method:///com/lordofthejars/nosqlunit/mongodb/ManagedMongoDbLifecycleManager/getPort()|",
+      "|java+method:///com/lordofthejars/nosqlunit/mongodb/replicaset/ReplicaSetGroup/isAuthenticationSet()|",
+      "|java+method:///java/lang/String/toCharArray()|",
+      "|java+method:///com/lordofthejars/nosqlunit/mongodb/ManagedMongoDbLifecycleManager/getHost()|",
+      "|java+constructor:///com/mongodb/MongoClient/MongoClient(java.lang.String,int)|"
+    ],
+    "affectedLib": "org.mongodb:mongo-java-driver:2.10.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.lordofthejars:nosqlunit-mongodb:0.13.1",
+    "coordinatesV2": "com.lordofthejars:nosqlunit-mongodb:0.7.6",
+    "caller": "|java+method:///com/lordofthejars/nosqlunit/mongodb/MongoDbConfigurationBuilder/build()|",
+    "called": "|java+constructor:///com/mongodb/Mongo/Mongo(java.lang.String,int)|",
+    "v1Body": [
+      "|java+constructor:///java/lang/IllegalStateException/IllegalStateException(java.lang.Throwable)|",
+      "|java+method:///com/lordofthejars/nosqlunit/mongodb/MongoDbConfiguration/getPort()|",
+      "|java+method:///com/lordofthejars/nosqlunit/mongodb/MongoDbConfiguration/getHost()|",
+      "|java+constructor:///com/mongodb/Mongo/Mongo(java.lang.String,int)|",
+      "|java+method:///com/lordofthejars/nosqlunit/mongodb/MongoDbConfiguration/setMongo(com.mongodb.Mongo)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/lordofthejars/nosqlunit/mongodb/MongoDbConfiguration/getPort()|",
+      "|java+method:///com/mongodb/MongoCredential/createCredential(java.lang.String,java.lang.String,char%5B%5D)|",
+      "|java+constructor:///com/mongodb/MongoClient/MongoClient(com.mongodb.ServerAddress,java.util.List)|",
+      "|java+method:///com/lordofthejars/nosqlunit/mongodb/MongoDbConfiguration/getDatabaseName()|",
+      "|java+method:///com/lordofthejars/nosqlunit/mongodb/MongoDbConfiguration/getHost()|",
+      "|java+method:///java/util/Arrays/asList(java.lang.Object%5B%5D)|",
+      "|java+method:///com/lordofthejars/nosqlunit/mongodb/MongoDbConfiguration/getUsername()|",
+      "|java+method:///java/lang/String/toCharArray()|",
+      "|java+method:///com/lordofthejars/nosqlunit/mongodb/MongoDbConfiguration/getPassword()|",
+      "|java+method:///com/lordofthejars/nosqlunit/mongodb/MongoDbConfiguration/setMongo(com.mongodb.Mongo)|",
+      "|java+constructor:///com/mongodb/MongoClient/MongoClient(java.lang.String,int)|",
+      "|java+method:///com/lordofthejars/nosqlunit/mongodb/MongoDbConfiguration/isAuthenticateParametersSet()|",
+      "|java+constructor:///com/mongodb/ServerAddress/ServerAddress(java.lang.String,int)|"
+    ],
+    "affectedLib": "org.mongodb:mongo-java-driver:2.10.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.lordofthejars:nosqlunit-mongodb:0.13.1",
+    "coordinatesV2": "com.lordofthejars:nosqlunit-mongodb:0.7.6",
+    "caller": "|java+method:///com/lordofthejars/nosqlunit/mongodb/MongoDbCommands/shutdown(java.lang.String,int)|",
+    "called": "|java+method:///com/mongodb/DB/command(com.mongodb.DBObject)|",
+    "v1Body": [
+      "|java+constructor:///java/lang/IllegalStateException/IllegalStateException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///com/mongodb/Mongo/getDB(java.lang.String)|",
+      "|java+constructor:///com/mongodb/Mongo/Mongo(java.lang.String,int)|",
+      "|java+method:///com/mongodb/Mongo/close()|",
+      "|java+method:///com/mongodb/CommandResult/throwOnError()|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///com/mongodb/DB/command(com.mongodb.DBObject)|",
+      "|java+constructor:///com/mongodb/BasicDBObject/BasicDBObject(java.lang.String,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/lang/IllegalStateException/IllegalStateException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///com/mongodb/CommandResult/throwOnError()|",
+      "|java+method:///com/mongodb/MongoClient/getDB(java.lang.String)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+constructor:///com/mongodb/BasicDBObject/BasicDBObject(java.lang.String,java.lang.Object)|",
+      "|java+constructor:///com/mongodb/MongoClient/MongoClient(java.lang.String,int)|",
+      "|java+method:///com/mongodb/DB/command(com.mongodb.DBObject)|",
+      "|java+method:///com/mongodb/MongoClient/close()|"
+    ],
+    "affectedLib": "org.mongodb:mongo-java-driver:2.10.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.lordofthejars:nosqlunit-mongodb:0.13.1",
+    "coordinatesV2": "com.lordofthejars:nosqlunit-mongodb:0.7.6",
+    "caller": "|java+method:///com/lordofthejars/nosqlunit/mongodb/MongoOperation/deleteAllElements(com.mongodb.DB)|",
+    "called": "|java+method:///com/mongodb/DBCollection/drop()|",
+    "v1Body": [
+      "|java+method:///com/mongodb/DB/getCollection(java.lang.String)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///com/mongodb/DBCollection/drop()|",
+      "|java+method:///java/util/Set/iterator()|",
+      "|java+method:///com/mongodb/DB/getCollectionNames()|",
+      "|java+method:///com/lordofthejars/nosqlunit/mongodb/MongoOperation/isNotASystemCollection(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/mongodb/DBCollection/remove(com.mongodb.DBObject)|",
+      "|java+method:///com/mongodb/DB/getCollection(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/Set/iterator()|",
+      "|java+method:///com/mongodb/DB/getCollectionNames()|",
+      "|java+method:///com/lordofthejars/nosqlunit/mongodb/MongoOperation/isNotASystemCollection(java.lang.String)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+constructor:///com/mongodb/BasicDBObject/BasicDBObject(int)|"
+    ],
+    "affectedLib": "org.mongodb:mongo-java-driver:2.10.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.lordofthejars:nosqlunit-mongodb:0.13.1",
+    "coordinatesV2": "com.lordofthejars:nosqlunit-mongodb:0.7.6",
+    "caller": "|java+method:///com/lordofthejars/nosqlunit/mongodb/MongoDbLowLevelOps/assertThatConnectionIsPossible(java.lang.String,int)|",
+    "called": "|java+method:///com/mongodb/DB/getStats()|",
+    "v1Body": [
+      "|java+method:///com/mongodb/Mongo/getDB(java.lang.String)|",
+      "|java+constructor:///com/mongodb/Mongo/Mongo(java.lang.String,int)|",
+      "|java+method:///com/mongodb/DB/getStats()|",
+      "|java+method:///com/mongodb/Mongo/close()|",
+      "|java+method:///java/util/concurrent/TimeUnit/sleep(long)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/mongodb/Mongo/getDB(java.lang.String)|",
+      "|java+method:///com/mongodb/DB/getStats()|",
+      "|java+method:///com/mongodb/Mongo/close()|",
+      "|java+method:///java/util/concurrent/TimeUnit/sleep(long)|",
+      "|java+constructor:///com/mongodb/MongoClient/MongoClient(java.lang.String,int)|"
+    ],
+    "affectedLib": "org.mongodb:mongo-java-driver:2.10.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.lordofthejars:nosqlunit-mongodb:0.13.1",
+    "coordinatesV2": "com.lordofthejars:nosqlunit-mongodb:0.7.6",
+    "caller": "|java+method:///com/lordofthejars/nosqlunit/mongodb/MongoDbCommands/shardCollection(com.mongodb.Mongo,java.lang.String,com.mongodb.DBObject)|",
+    "called": "|java+method:///com/mongodb/DB/command(com.mongodb.DBObject)|",
+    "v1Body": [
+      "|java+method:///com/mongodb/BasicDBObject/put(java.lang.String,java.lang.Object)|",
+      "|java+method:///com/mongodb/DB/command(com.mongodb.DBObject)|",
+      "|java+constructor:///com/mongodb/BasicDBObject/BasicDBObject(java.lang.String,java.lang.Object)|",
+      "|java+method:///com/lordofthejars/nosqlunit/mongodb/MongoDbCommands/getAdminDatabase(com.mongodb.Mongo)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/mongodb/DB/command(com.mongodb.DBObject)|",
+      "|java+constructor:///com/mongodb/BasicDBObject/BasicDBObject(java.lang.String,java.lang.Object)|",
+      "|java+method:///com/lordofthejars/nosqlunit/mongodb/MongoDbCommands/getAdminDatabase(com.mongodb.Mongo)|",
+      "|java+method:///com/mongodb/BasicDBObject/put(java.lang.Object,java.lang.Object)|"
+    ],
+    "affectedLib": "org.mongodb:mongo-java-driver:2.10.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.lordofthejars:nosqlunit-mongodb:0.13.1",
+    "coordinatesV2": "com.lordofthejars:nosqlunit-mongodb:0.7.6",
+    "caller": "|java+method:///com/lordofthejars/nosqlunit/mongodb/DefaultInsertionStrategy/insertData(com.mongodb.BasicDBList,com.mongodb.DB,java.lang.String)|",
+    "called": "|java+method:///com/mongodb/DBCollection/insert(com.mongodb.DBObject%5B%5D)|",
+    "v1Body": [
+      "|java+method:///com/mongodb/DB/getCollection(java.lang.String)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///com/mongodb/DBCollection/insert(com.mongodb.DBObject%5B%5D)|",
+      "|java+method:///com/mongodb/BasicDBList/iterator()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/mongodb/DB/getCollection(java.lang.String)|",
+      "|java+method:///com/mongodb/DBObject/get(java.lang.String)|",
+      "|java+constructor:///com/mongodb/DBRef/DBRef(java.lang.String,java.lang.Object)|",
+      "|java+method:///com/mongodb/DBRef/getId()|",
+      "|java+method:///com/mongodb/DBObject/put(java.lang.String,java.lang.Object)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///com/mongodb/BasicDBList/put(java.lang.String,java.lang.Object)|",
+      "|java+method:///com/mongodb/DBRef/getCollectionName()|",
+      "|java+method:///com/mongodb/BasicDBList/iterator()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///com/mongodb/DBObject/keySet()|",
+      "|java+method:///com/mongodb/DBCollection/insert(com.mongodb.DBObject%5B%5D)|",
+      "|java+method:///java/util/Set/iterator()|"
+    ],
+    "affectedLib": "org.mongodb:mongo-java-driver:2.10.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.lordofthejars:nosqlunit-mongodb:0.13.1",
+    "coordinatesV2": "com.lordofthejars:nosqlunit-mongodb:0.7.6",
+    "caller": "|java+method:///com/lordofthejars/nosqlunit/mongodb/ReplicationMongoDbConfigurationBuilder/seed(java.lang.String,int)|",
+    "called": "|java+constructor:///com/mongodb/ServerAddress/ServerAddress(java.lang.String,int)|",
+    "v1Body": [
+      "|java+constructor:///com/mongodb/ServerAddress/ServerAddress(java.lang.String,int)|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.Throwable)|",
+      "|java+method:///java/util/List/add(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/mongodb/ServerAddress/ServerAddress(java.lang.String,int)|",
+      "|java+method:///java/util/List/add(java.lang.Object)|"
+    ],
+    "affectedLib": "org.mongodb:mongo-java-driver:2.10.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.lordofthejars:nosqlunit-mongodb:0.13.1",
+    "coordinatesV2": "com.lordofthejars:nosqlunit-mongodb:0.7.6",
+    "caller": "|java+method:///com/lordofthejars/nosqlunit/mongodb/MongoOperation/getMongoDb()|",
+    "called": "|java+method:///com/mongodb/DB/isAuthenticated()|",
+    "v1Body": [
+      "|java+method:///com/lordofthejars/nosqlunit/mongodb/MongoDbConfiguration/isAuthenticateParametersSet()|",
+      "|java+method:///com/mongodb/Mongo/getDB(java.lang.String)|",
+      "|java+method:///com/lordofthejars/nosqlunit/mongodb/MongoDbConfiguration/getDatabaseName()|",
+      "|java+method:///com/mongodb/DB/authenticate(java.lang.String,char%5B%5D)|",
+      "|java+method:///com/lordofthejars/nosqlunit/mongodb/MongoDbConfiguration/getUsername()|",
+      "|java+method:///java/lang/String/toCharArray()|",
+      "|java+method:///com/lordofthejars/nosqlunit/mongodb/MongoDbConfiguration/getPassword()|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|",
+      "|java+method:///com/mongodb/DB/isAuthenticated()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/mongodb/Mongo/getDB(java.lang.String)|",
+      "|java+method:///com/lordofthejars/nosqlunit/mongodb/MongoDbConfiguration/getDatabaseName()|"
+    ],
+    "affectedLib": "org.mongodb:mongo-java-driver:2.10.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.lordofthejars:nosqlunit-mongodb:0.7.6",
+    "coordinatesV2": "com.lordofthejars:nosqlunit-mongodb:0.13.1",
+    "caller": "|java+method:///com/lordofthejars/nosqlunit/mongodb/InMemoryMongoDbLifecycleManager/fongo(java.lang.String)|",
+    "called": "|java+constructor:///com/github/fakemongo/Fongo/Fongo(java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///com/foursquare/fongo/Fongo/Fongo(java.lang.String)|",
+      "|java+method:///com/foursquare/fongo/Fongo/getMongo()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/github/fakemongo/Fongo/getMongo()|",
+      "|java+constructor:///com/github/fakemongo/Fongo/Fongo(java.lang.String)|"
+    ],
+    "affectedLib": "com.github.fakemongo:fongo:2.0.6",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.lordofthejars:nosqlunit-mongodb:0.7.6",
+    "coordinatesV2": "com.lordofthejars:nosqlunit-mongodb:0.13.1",
+    "caller": "|java+method:///com/lordofthejars/nosqlunit/mongodb/SpringMongoDbRule/definedMongo(java.lang.Object)|",
+    "called": "|java+method:///com/lordofthejars/nosqlunit/core/PropertyGetter/propertyByType(java.lang.Object,java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/springframework/context/ApplicationContext/getBeansOfType(java.lang.Class)|",
+      "|java+method:///ch/lambdaj/collection/LambdaCollections/with(java.util.Map)|",
+      "|java+method:///ch/lambdaj/collection/LambdaMap/values()|",
+      "|java+method:///com/lordofthejars/nosqlunit/core/PropertyGetter/propertyByType(java.lang.Object,java.lang.Class)|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|",
+      "|java+method:///ch/lambdaj/collection/LambdaCollection/first(org.hamcrest.Matcher)|",
+      "|java+method:///org/hamcrest/CoreMatchers/anything()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/lordofthejars/nosqlunit/core/PropertyGetter/propertyByType(java.lang.Object,java.lang.Class)|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|",
+      "|java+method:///com/lordofthejars/nosqlunit/util/SpringUtils/getBeanOfType(org.springframework.context.ApplicationContext,java.lang.Class)|"
+    ],
+    "affectedLib": "com.lordofthejars:nosqlunit-core:0.13.1",
+    "change": "UPDATED"
+  }
+]

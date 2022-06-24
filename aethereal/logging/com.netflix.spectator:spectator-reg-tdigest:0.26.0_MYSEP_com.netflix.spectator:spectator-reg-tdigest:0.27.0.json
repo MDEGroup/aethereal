@@ -1,0 +1,42 @@
+[
+  {
+    "coordinatesV1": "com.netflix.spectator:spectator-reg-tdigest:0.27.0",
+    "coordinatesV2": "com.netflix.spectator:spectator-reg-tdigest:0.26.0",
+    "caller": "|java+method:///com/netflix/spectator/tdigest/TDigestModule/configure()|",
+    "called": "|java+method:///com/netflix/archaius/guice/ArchaiusModule/forProxy(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///com/netflix/spectator/tdigest/TDigestModule/install(com.google.inject.Module)|",
+      "|java+method:///com/google/inject/binder/AnnotatedBindingBuilder/asEagerSingleton()|",
+      "|java+method:///com/netflix/archaius/guice/ArchaiusModule/forProxy(java.lang.Class)|",
+      "|java+method:///com/netflix/spectator/tdigest/TDigestModule/bind(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/inject/binder/AnnotatedBindingBuilder/asEagerSingleton()|",
+      "|java+method:///com/netflix/spectator/tdigest/TDigestModule/bind(java.lang.Class)|"
+    ],
+    "affectedLib": "com.netflix.archaius:archaius2-guice:2.0.0-rc.18",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.netflix.spectator:spectator-reg-tdigest:0.26.0",
+    "coordinatesV2": "com.netflix.spectator:spectator-reg-tdigest:0.27.0",
+    "caller": "|java+method:///com/netflix/spectator/tdigest/TDigestModule/providesWriter(com.netflix.spectator.tdigest.TDigestConfig)|",
+    "called": "|java+method:///com/amazonaws/services/kinesis/AmazonKinesisClient/setEndpoint(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///com/netflix/spectator/tdigest/TDigestConfig/endpoint()|",
+      "|java+constructor:///com/netflix/spectator/tdigest/KinesisTDigestWriter/KinesisTDigestWriter(com.amazonaws.services.kinesis.AmazonKinesisClient,java.lang.String)|",
+      "|java+method:///com/netflix/spectator/tdigest/TDigestConfig/stream()|",
+      "|java+method:///com/amazonaws/services/kinesis/AmazonKinesisClient/setEndpoint(java.lang.String)|",
+      "|java+constructor:///com/amazonaws/services/kinesis/AmazonKinesisClient/AmazonKinesisClient()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/netflix/spectator/tdigest/KinesisTDigestWriter/KinesisTDigestWriter(com.amazonaws.services.kinesis.AmazonKinesisClient,java.lang.String)|",
+      "|java+method:///com/netflix/spectator/tdigest/TDigestConfig/getEndpoint()|",
+      "|java+method:///com/amazonaws/services/kinesis/AmazonKinesisClient/setEndpoint(java.lang.String)|",
+      "|java+method:///com/netflix/spectator/tdigest/TDigestConfig/getStream()|",
+      "|java+constructor:///com/amazonaws/services/kinesis/AmazonKinesisClient/AmazonKinesisClient()|"
+    ],
+    "affectedLib": "com.amazonaws:aws-java-sdk-kinesis:1.10.2",
+    "change": "UPDATED"
+  }
+]

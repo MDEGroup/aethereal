@@ -1,0 +1,188 @@
+[
+  {
+    "coordinatesV1": "com.mysema.querydsl:querydsl-lucene:2.1.2",
+    "coordinatesV2": "com.mysema.querydsl:querydsl-lucene:2.2.0-beta1",
+    "caller": "|java+method:///com/mysema/query/lucene/AbstractLuceneQuery/iterate()|",
+    "called": "|java+method:///org/apache/lucene/search/Searcher/search(org.apache.lucene.search.Query,org.apache.lucene.search.Filter,int,org.apache.lucene.search.Sort)|",
+    "v1Body": [
+      "|java+method:///com/mysema/query/QueryModifiers/getOffset()|",
+      "|java+method:///com/mysema/query/support/QueryMixin/getMetadata()|",
+      "|java+method:///com/mysema/query/QueryModifiers/getLimit()|",
+      "|java+method:///com/mysema/query/lucene/AbstractLuceneQuery/createQuery()|",
+      "|java+constructor:///com/mysema/commons/lang/EmptyCloseableIterator/EmptyCloseableIterator()|",
+      "|java+method:///java/util/List/isEmpty()|",
+      "|java+constructor:///com/mysema/query/QueryException/QueryException(java.lang.Throwable)|",
+      "|java+method:///org/apache/lucene/search/Searcher/search(org.apache.lucene.search.Query,int)|",
+      "|java+method:///org/apache/lucene/search/Searcher/search(org.apache.lucene.search.Query,org.apache.lucene.search.Filter,int,org.apache.lucene.search.Sort)|",
+      "|java+method:///com/mysema/query/QueryMetadata/getOrderBy()|",
+      "|java+method:///java/lang/Long/intValue()|",
+      "|java+method:///com/mysema/query/lucene/AbstractLuceneQuery/maxDoc()|",
+      "|java+method:///com/mysema/query/QueryMetadata/getModifiers()|",
+      "|java+constructor:///com/mysema/query/lucene/ResultIterator/ResultIterator(org.apache.lucene.search.ScoreDoc%5B%5D,int,org.apache.lucene.search.Searcher,org.apache.commons.collections15.Transformer)|",
+      "|java+method:///com/mysema/query/lucene/LuceneSerializer/toSort(java.util.List)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/mysema/query/QueryModifiers/getOffset()|",
+      "|java+method:///com/mysema/query/support/QueryMixin/getMetadata()|",
+      "|java+method:///com/mysema/query/QueryModifiers/getLimit()|",
+      "|java+method:///com/mysema/query/lucene/AbstractLuceneQuery/createQuery()|",
+      "|java+constructor:///com/mysema/commons/lang/EmptyCloseableIterator/EmptyCloseableIterator()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+method:///java/util/List/isEmpty()|",
+      "|java+constructor:///com/mysema/query/QueryException/QueryException(java.lang.Throwable)|",
+      "|java+method:///org/apache/lucene/search/Searcher/search(org.apache.lucene.search.Query,org.apache.lucene.search.Filter,int,org.apache.lucene.search.Sort)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///com/mysema/query/QueryMetadata/getOrderBy()|",
+      "|java+method:///java/lang/Long/intValue()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///com/mysema/query/lucene/AbstractLuceneQuery/maxDoc()|",
+      "|java+method:///com/mysema/query/QueryMetadata/getModifiers()|",
+      "|java+constructor:///com/mysema/query/QueryException/QueryException(java.lang.String)|",
+      "|java+method:///org/apache/lucene/search/Searcher/search(org.apache.lucene.search.Query,org.apache.lucene.search.Filter,int)|",
+      "|java+constructor:///com/mysema/query/lucene/ResultIterator/ResultIterator(org.apache.lucene.search.ScoreDoc%5B%5D,int,org.apache.lucene.search.Searcher,org.apache.commons.collections15.Transformer)|",
+      "|java+method:///com/mysema/query/lucene/LuceneSerializer/toSort(java.util.List)|"
+    ],
+    "affectedLib": "org.apache.lucene:lucene-core:3.0.3",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.mysema.querydsl:querydsl-lucene:2.1.2",
+    "coordinatesV2": "com.mysema.querydsl:querydsl-lucene:2.2.0-beta1",
+    "caller": "|java+method:///com/mysema/query/lucene/AbstractLuceneQuery/uniqueResult()|",
+    "called": "|java+method:///org/apache/lucene/search/Searcher/search(org.apache.lucene.search.Query,org.apache.lucene.search.Filter,int)|",
+    "v1Body": [
+      "|java+method:///com/mysema/query/lucene/AbstractLuceneQuery/createQuery()|",
+      "|java+method:///org/apache/commons/collections15/Transformer/transform(java.lang.Object)|",
+      "|java+method:///org/apache/lucene/search/Searcher/doc(int)|",
+      "|java+constructor:///com/mysema/query/QueryException/QueryException(java.lang.Throwable)|",
+      "|java+method:///com/mysema/query/lucene/AbstractLuceneQuery/maxDoc()|",
+      "|java+method:///org/apache/lucene/search/Searcher/search(org.apache.lucene.search.Query,int)|",
+      "|java+constructor:///com/mysema/query/NonUniqueResultException/NonUniqueResultException()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/mysema/query/lucene/AbstractLuceneQuery/createQuery()|",
+      "|java+method:///org/apache/commons/collections15/Transformer/transform(java.lang.Object)|",
+      "|java+method:///org/apache/lucene/search/Searcher/doc(int)|",
+      "|java+constructor:///com/mysema/query/QueryException/QueryException(java.lang.Throwable)|",
+      "|java+method:///com/mysema/query/lucene/AbstractLuceneQuery/maxDoc()|",
+      "|java+method:///org/apache/lucene/search/Searcher/search(org.apache.lucene.search.Query,org.apache.lucene.search.Filter,int)|",
+      "|java+constructor:///com/mysema/query/NonUniqueResultException/NonUniqueResultException()|"
+    ],
+    "affectedLib": "org.apache.lucene:lucene-core:3.0.3",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.mysema.querydsl:querydsl-lucene:2.1.2",
+    "coordinatesV2": "com.mysema.querydsl:querydsl-lucene:2.2.0-beta1",
+    "caller": "|java+method:///com/mysema/query/lucene/AbstractLuceneQuery/innerCount()|",
+    "called": "|java+method:///org/apache/lucene/search/Searcher/search(org.apache.lucene.search.Query,org.apache.lucene.search.Filter,int)|",
+    "v1Body": [
+      "|java+method:///com/mysema/query/lucene/AbstractLuceneQuery/createQuery()|",
+      "|java+constructor:///com/mysema/query/QueryException/QueryException(java.lang.Throwable)|",
+      "|java+method:///org/apache/lucene/search/Searcher/search(org.apache.lucene.search.Query,int)|",
+      "|java+method:///org/apache/lucene/search/Searcher/maxDoc()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/mysema/query/lucene/AbstractLuceneQuery/createQuery()|",
+      "|java+constructor:///com/mysema/query/QueryException/QueryException(java.lang.Throwable)|",
+      "|java+method:///org/apache/lucene/search/Searcher/search(org.apache.lucene.search.Query,org.apache.lucene.search.Filter,int)|",
+      "|java+method:///org/apache/lucene/search/Searcher/maxDoc()|"
+    ],
+    "affectedLib": "org.apache.lucene:lucene-core:3.0.3",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.mysema.querydsl:querydsl-lucene:2.1.2",
+    "coordinatesV2": "com.mysema.querydsl:querydsl-lucene:2.2.0-beta1",
+    "caller": "|java+method:///com/mysema/query/lucene/AbstractLuceneQuery/iterate()|",
+    "called": "|java+constructor:///com/mysema/query/QueryException/QueryException(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///com/mysema/query/QueryModifiers/getOffset()|",
+      "|java+method:///com/mysema/query/support/QueryMixin/getMetadata()|",
+      "|java+method:///com/mysema/query/QueryModifiers/getLimit()|",
+      "|java+method:///com/mysema/query/lucene/AbstractLuceneQuery/createQuery()|",
+      "|java+constructor:///com/mysema/commons/lang/EmptyCloseableIterator/EmptyCloseableIterator()|",
+      "|java+method:///java/util/List/isEmpty()|",
+      "|java+constructor:///com/mysema/query/QueryException/QueryException(java.lang.Throwable)|",
+      "|java+method:///org/apache/lucene/search/Searcher/search(org.apache.lucene.search.Query,int)|",
+      "|java+method:///org/apache/lucene/search/Searcher/search(org.apache.lucene.search.Query,org.apache.lucene.search.Filter,int,org.apache.lucene.search.Sort)|",
+      "|java+method:///com/mysema/query/QueryMetadata/getOrderBy()|",
+      "|java+method:///java/lang/Long/intValue()|",
+      "|java+method:///com/mysema/query/lucene/AbstractLuceneQuery/maxDoc()|",
+      "|java+method:///com/mysema/query/QueryMetadata/getModifiers()|",
+      "|java+constructor:///com/mysema/query/lucene/ResultIterator/ResultIterator(org.apache.lucene.search.ScoreDoc%5B%5D,int,org.apache.lucene.search.Searcher,org.apache.commons.collections15.Transformer)|",
+      "|java+method:///com/mysema/query/lucene/LuceneSerializer/toSort(java.util.List)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/mysema/query/QueryModifiers/getOffset()|",
+      "|java+method:///com/mysema/query/support/QueryMixin/getMetadata()|",
+      "|java+method:///com/mysema/query/QueryModifiers/getLimit()|",
+      "|java+method:///com/mysema/query/lucene/AbstractLuceneQuery/createQuery()|",
+      "|java+constructor:///com/mysema/commons/lang/EmptyCloseableIterator/EmptyCloseableIterator()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+method:///java/util/List/isEmpty()|",
+      "|java+constructor:///com/mysema/query/QueryException/QueryException(java.lang.Throwable)|",
+      "|java+method:///org/apache/lucene/search/Searcher/search(org.apache.lucene.search.Query,org.apache.lucene.search.Filter,int,org.apache.lucene.search.Sort)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///com/mysema/query/QueryMetadata/getOrderBy()|",
+      "|java+method:///java/lang/Long/intValue()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///com/mysema/query/lucene/AbstractLuceneQuery/maxDoc()|",
+      "|java+method:///com/mysema/query/QueryMetadata/getModifiers()|",
+      "|java+constructor:///com/mysema/query/QueryException/QueryException(java.lang.String)|",
+      "|java+method:///org/apache/lucene/search/Searcher/search(org.apache.lucene.search.Query,org.apache.lucene.search.Filter,int)|",
+      "|java+constructor:///com/mysema/query/lucene/ResultIterator/ResultIterator(org.apache.lucene.search.ScoreDoc%5B%5D,int,org.apache.lucene.search.Searcher,org.apache.commons.collections15.Transformer)|",
+      "|java+method:///com/mysema/query/lucene/LuceneSerializer/toSort(java.util.List)|"
+    ],
+    "affectedLib": "com.mysema.querydsl:querydsl-core:2.2.0-beta1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.mysema.querydsl:querydsl-lucene:2.1.2",
+    "coordinatesV2": "com.mysema.querydsl:querydsl-lucene:2.2.0-beta1",
+    "caller": "|java+method:///com/mysema/query/lucene/AbstractLuceneQuery/uniqueResult()|",
+    "called": "|java+constructor:///com/mysema/query/NonUniqueResultException/NonUniqueResultException()|",
+    "v1Body": [
+      "|java+method:///com/mysema/query/lucene/AbstractLuceneQuery/createQuery()|",
+      "|java+method:///org/apache/commons/collections15/Transformer/transform(java.lang.Object)|",
+      "|java+method:///org/apache/lucene/search/Searcher/doc(int)|",
+      "|java+constructor:///com/mysema/query/QueryException/QueryException(java.lang.Throwable)|",
+      "|java+method:///com/mysema/query/lucene/AbstractLuceneQuery/maxDoc()|",
+      "|java+method:///org/apache/lucene/search/Searcher/search(org.apache.lucene.search.Query,int)|",
+      "|java+constructor:///com/mysema/query/NonUniqueResultException/NonUniqueResultException()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/mysema/query/lucene/AbstractLuceneQuery/createQuery()|",
+      "|java+method:///org/apache/commons/collections15/Transformer/transform(java.lang.Object)|",
+      "|java+method:///org/apache/lucene/search/Searcher/doc(int)|",
+      "|java+constructor:///com/mysema/query/QueryException/QueryException(java.lang.Throwable)|",
+      "|java+method:///com/mysema/query/lucene/AbstractLuceneQuery/maxDoc()|",
+      "|java+method:///org/apache/lucene/search/Searcher/search(org.apache.lucene.search.Query,org.apache.lucene.search.Filter,int)|",
+      "|java+constructor:///com/mysema/query/NonUniqueResultException/NonUniqueResultException()|"
+    ],
+    "affectedLib": "com.mysema.querydsl:querydsl-core:2.2.0-beta1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.mysema.querydsl:querydsl-lucene:2.1.2",
+    "coordinatesV2": "com.mysema.querydsl:querydsl-lucene:2.2.0-beta1",
+    "caller": "|java+method:///com/mysema/query/lucene/AbstractLuceneQuery/innerCount()|",
+    "called": "|java+constructor:///com/mysema/query/QueryException/QueryException(java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///com/mysema/query/lucene/AbstractLuceneQuery/createQuery()|",
+      "|java+constructor:///com/mysema/query/QueryException/QueryException(java.lang.Throwable)|",
+      "|java+method:///org/apache/lucene/search/Searcher/search(org.apache.lucene.search.Query,int)|",
+      "|java+method:///org/apache/lucene/search/Searcher/maxDoc()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/mysema/query/lucene/AbstractLuceneQuery/createQuery()|",
+      "|java+constructor:///com/mysema/query/QueryException/QueryException(java.lang.Throwable)|",
+      "|java+method:///org/apache/lucene/search/Searcher/search(org.apache.lucene.search.Query,org.apache.lucene.search.Filter,int)|",
+      "|java+method:///org/apache/lucene/search/Searcher/maxDoc()|"
+    ],
+    "affectedLib": "com.mysema.querydsl:querydsl-core:2.2.0-beta1",
+    "change": "UPDATED"
+  }
+]

@@ -1,0 +1,83 @@
+[
+  {
+    "coordinatesV1": "org.testifyproject:core:1.0.0",
+    "coordinatesV2": "org.testifyproject:core:0.9.9",
+    "caller": "|java+initializer:///org/testifyproject/core/util/ReflectionUtil/ReflectionUtil$initializer|",
+    "called": "|java+constructor:///org/testifyproject/bytebuddy/ByteBuddy/ByteBuddy()|",
+    "v1Body": [
+      "|java+constructor:///org/testifyproject/core/util/ReflectionUtil/ReflectionUtil()|",
+      "|java+constructor:///org/testifyproject/bytebuddy/ByteBuddy/ByteBuddy()|",
+      "|java+constructor:///java/util/concurrent/ConcurrentHashMap/ConcurrentHashMap()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/testifyproject/core/util/ReflectionUtil/ReflectionUtil()|"
+    ],
+    "affectedLib": "org.testifyproject.external:external-bytebuddy:0.9.8",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.testifyproject:core:0.9.9",
+    "coordinatesV2": "org.testifyproject:core:1.0.0",
+    "caller": "|java+method:///org/testifyproject/core/ClientInstanceBuilder/build(java.lang.String,org.testifyproject.annotation.Application)|",
+    "called": "|java+method:///org/testifyproject/guava/common/collect/ImmutableMap$Builder/build()|",
+    "v1Body": [
+      "|java+method:///org/testifyproject/core/ClientInstanceBuilder/createClientProvider(java.lang.String,org.testifyproject.annotation.Application)|",
+      "|java+method:///org/testifyproject/guava/common/collect/ImmutableMap$Builder/build()|",
+      "|java+method:///org/testifyproject/core/DefaultClientInstance/of(java.lang.String,org.testifyproject.annotation.Application,org.testifyproject.Instance,org.testifyproject.Instance,java.util.Map)|",
+      "|java+method:///org/testifyproject/core/ClientInstanceBuilder/createClient(java.lang.String,org.testifyproject.annotation.Application)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/testifyproject/annotation/Application/clientSupplierName()|",
+      "|java+method:///org/testifyproject/core/DefaultInstance/of(java.lang.Object,java.lang.String,java.lang.Class)|",
+      "|java+method:///org/testifyproject/guava/common/collect/ImmutableMap$Builder/build()|",
+      "|java+method:///org/testifyproject/core/DefaultClientInstance/of(java.lang.String,org.testifyproject.annotation.Application,org.testifyproject.Instance,org.testifyproject.Instance,java.util.Map)|",
+      "|java+method:///org/testifyproject/annotation/Application/clientName()|"
+    ],
+    "affectedLib": "org.testifyproject.external:external-guava:1.0.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.testifyproject:core:0.9.9",
+    "coordinatesV2": "org.testifyproject:core:1.0.0",
+    "caller": "|java+method:///org/testifyproject/core/DefaultServiceInstance/getService(java.lang.reflect.Type,java.lang.annotation.Annotation%5B%5D)|",
+    "called": "|java+method:///org/testifyproject/guava/common/reflect/TypeToken/of(java.lang.reflect.Type)|",
+    "v1Body": [
+      "|java+method:///java/lang/Object/equals(java.lang.Object)|",
+      "|java+method:///java/util/stream/Stream/collect(java.util.stream.Collector)|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///java/util/Map/values()|",
+      "|java+method:///java/util/stream/Stream/filter(java.util.function.Predicate)|",
+      "|java+method:///java/lang/Boolean/valueOf(boolean)|",
+      "|java+method:///org/testifyproject/core/ServiceKey/of(java.lang.reflect.Type)|",
+      "|java+method:///java/lang/reflect/Type/getTypeName()|",
+      "|java+method:///org/testifyproject/guava/common/reflect/TypeToken/getRawType()|",
+      "|java+method:///org/testifyproject/core/util/ExceptionUtil/raise(java.lang.Boolean,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+method:///java/util/Collection/stream()|",
+      "|java+method:///java/util/stream/Collectors/toList()|",
+      "|java+method:///org/testifyproject/guava/common/reflect/TypeToken/of(java.lang.reflect.Type)|",
+      "|java+method:///org/testifyproject/annotation/Name/value()|",
+      "|java+method:///org/testifyproject/core/ServiceKey/of(java.lang.reflect.Type,java.lang.String)|",
+      "|java+method:///java/lang/annotation/Annotation/annotationType()|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///java/util/List/get(int)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Object/equals(java.lang.Object)|",
+      "|java+method:///org/testifyproject/guava/common/reflect/TypeToken/getRawType()|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+method:///java/util/Collection/stream()|",
+      "|java+method:///java/util/Map/values()|",
+      "|java+method:///java/util/stream/Stream/filter(java.util.function.Predicate)|",
+      "|java+method:///java/util/stream/Stream/findFirst()|",
+      "|java+method:///java/util/Optional/orElse(java.lang.Object)|",
+      "|java+method:///org/testifyproject/core/ServiceKey/of(java.lang.reflect.Type)|",
+      "|java+method:///org/testifyproject/guava/common/reflect/TypeToken/of(java.lang.reflect.Type)|",
+      "|java+method:///org/testifyproject/annotation/Name/value()|",
+      "|java+method:///org/testifyproject/core/ServiceKey/of(java.lang.reflect.Type,java.lang.String)|",
+      "|java+method:///java/lang/annotation/Annotation/annotationType()|"
+    ],
+    "affectedLib": "org.testifyproject.external:external-guava:1.0.0",
+    "change": "UPDATED"
+  }
+]

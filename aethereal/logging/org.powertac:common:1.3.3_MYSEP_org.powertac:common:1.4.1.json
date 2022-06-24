@@ -1,0 +1,2135 @@
+[
+  {
+    "coordinatesV1": "org.powertac:common:1.4.1",
+    "coordinatesV2": "org.powertac:common:1.3.3",
+    "caller": "|java+method:///org/powertac/common/TimeService/setClockParameters(java.util.Map)|",
+    "called": "|java+constructor:///org/apache/commons/configuration/MapConfiguration/MapConfiguration(java.util.Map)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/configuration/MapConfiguration/getLong(java.lang.String,long)|",
+      "|java+constructor:///org/apache/commons/configuration/MapConfiguration/MapConfiguration(java.util.Map)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/configuration2/MapConfiguration/getLong(java.lang.String,long)|",
+      "|java+constructor:///org/apache/commons/configuration2/MapConfiguration/MapConfiguration(java.util.Map)|"
+    ],
+    "affectedLib": "commons-configuration:commons-configuration:1.10",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.powertac:common:1.3.3",
+    "coordinatesV2": "org.powertac:common:1.4.1",
+    "caller": "|java+initializer:///org/powertac/common/config/Configurator/Configurator$initializer|",
+    "called": "|java+constructor:///org/apache/commons/configuration2/io/ClasspathLocationStrategy/ClasspathLocationStrategy()|",
+    "v1Body": [
+      "|java+method:///org/apache/logging/log4j/LogManager/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/commons/configuration2/io/ClasspathLocationStrategy/ClasspathLocationStrategy()|",
+      "|java+method:///org/apache/logging/log4j/LogManager/getLogger(java.lang.Class)|",
+      "|java+constructor:///java/util/LinkedList/LinkedList()|",
+      "|java+constructor:///org/apache/commons/configuration2/io/BasePathLocationStrategy/BasePathLocationStrategy()|",
+      "|java+constructor:///org/apache/commons/configuration2/io/CombinedLocationStrategy/CombinedLocationStrategy(java.util.Collection)|",
+      "|java+constructor:///org/apache/commons/configuration2/convert/DefaultListDelimiterHandler/DefaultListDelimiterHandler(char)|",
+      "|java+method:///java/util/LinkedList/add(java.lang.Object)|"
+    ],
+    "affectedLib": "org.apache.commons:commons-configuration2:2.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.powertac:common:1.3.3",
+    "coordinatesV2": "org.powertac:common:1.4.1",
+    "caller": "|java+method:///org/powertac/common/TimeService/setClockParameters(java.util.Map)|",
+    "called": "|java+constructor:///org/apache/commons/configuration2/MapConfiguration/MapConfiguration(java.util.Map)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/configuration/MapConfiguration/getLong(java.lang.String,long)|",
+      "|java+constructor:///org/apache/commons/configuration/MapConfiguration/MapConfiguration(java.util.Map)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/configuration2/MapConfiguration/getLong(java.lang.String,long)|",
+      "|java+constructor:///org/apache/commons/configuration2/MapConfiguration/MapConfiguration(java.util.Map)|"
+    ],
+    "affectedLib": "org.apache.commons:commons-configuration2:2.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.powertac:common:1.3.3",
+    "coordinatesV2": "org.powertac:common:1.4.1",
+    "caller": "|java+constructor:///org/powertac/common/Order/Order()|",
+    "called": "|java+method:///org/powertac/common/state/StateLogging/aspectOf()|",
+    "v1Body": [
+      "|java+constructor:///org/powertac/common/state/XStreamStateLoggable/XStreamStateLoggable()|",
+      "|java+method:///org/powertac/common/IdGenerator/createId()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/powertac/common/state/XStreamStateLoggable/XStreamStateLoggable()|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/powertac/common/state/StateLogging/newstate(org.aspectj.lang.JoinPoint)|",
+      "|java+method:///org/powertac/common/IdGenerator/createId()|",
+      "|java+method:///org/powertac/common/state/StateLogging/aspectOf()|"
+    ],
+    "affectedLib": "org.powertac:powertac-aop:1.4.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.powertac:common:1.3.3",
+    "coordinatesV2": "org.powertac:common:1.4.1",
+    "caller": "|java+constructor:///org/powertac/common/msg/BalancingControlEvent/BalancingControlEvent(org.powertac.common.TariffSpecification,double,double,int)|",
+    "called": "|java+method:///org/powertac/common/state/StateLogging/aspectOf()|",
+    "v1Body": [
+      "|java+constructor:///org/powertac/common/msg/ControlEvent/ControlEvent(org.powertac.common.Broker,org.powertac.common.TariffSpecification,int)|",
+      "|java+method:///org/powertac/common/TariffSpecification/getBroker()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/Conversions/doubleObject(double)|",
+      "|java+constructor:///org/powertac/common/msg/ControlEvent/ControlEvent(org.powertac.common.Broker,org.powertac.common.TariffSpecification,int)|",
+      "|java+method:///org/powertac/common/TariffSpecification/getBroker()|",
+      "|java+method:///org/powertac/common/state/StateLogging/newstate(org.aspectj.lang.JoinPoint)|",
+      "|java+method:///org/aspectj/runtime/internal/Conversions/intObject(int)|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object%5B%5D)|",
+      "|java+method:///org/powertac/common/state/StateLogging/aspectOf()|"
+    ],
+    "affectedLib": "org.powertac:powertac-aop:1.4.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.powertac:common:1.3.3",
+    "coordinatesV2": "org.powertac:common:1.4.1",
+    "caller": "|java+constructor:///org/powertac/common/TariffTransaction/TariffTransaction(org.powertac.common.Broker,int,org.powertac.common.TariffTransaction$Type,org.powertac.common.TariffSpecification,org.powertac.common.CustomerInfo,int,double,double,boolean)|",
+    "called": "|java+method:///org/powertac/common/state/StateLogging/aspectOf()|",
+    "v1Body": [
+      "|java+constructor:///org/powertac/common/BrokerTransaction/BrokerTransaction(int,org.powertac.common.Broker)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/Conversions/doubleObject(double)|",
+      "|java+method:///org/aspectj/runtime/internal/Conversions/booleanObject(boolean)|",
+      "|java+constructor:///org/powertac/common/BrokerTransaction/BrokerTransaction(int,org.powertac.common.Broker)|",
+      "|java+method:///org/powertac/common/state/StateLogging/newstate(org.aspectj.lang.JoinPoint)|",
+      "|java+method:///org/aspectj/runtime/internal/Conversions/intObject(int)|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object%5B%5D)|",
+      "|java+method:///org/powertac/common/state/StateLogging/aspectOf()|"
+    ],
+    "affectedLib": "org.powertac:powertac-aop:1.4.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.powertac:common:1.3.3",
+    "coordinatesV2": "org.powertac:common:1.4.1",
+    "caller": "|java+method:///org/powertac/common/TimeService/setCurrentTime(org.joda.time.base.AbstractDateTime)|",
+    "called": "|java+method:///org/powertac/common/state/StateLogging/setstate(org.aspectj.lang.JoinPoint)|",
+    "v1Body": [
+      "|java+constructor:///org/joda/time/Instant/Instant(java.lang.Object)|",
+      "|java+method:///org/apache/logging/log4j/Logger/debug(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+method:///org/powertac/common/TimeService/setCurrentTime(org.joda.time.Instant)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/joda/time/base/AbstractDateTime/toString()|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/joda/time/Instant/Instant(java.lang.Object)|",
+      "|java+method:///org/apache/logging/log4j/Logger/debug(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+method:///org/powertac/common/TimeService/setCurrentTime(org.joda.time.Instant)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder(java.lang.String)|",
+      "|java+method:///org/powertac/common/state/StateLogging/setstate(org.aspectj.lang.JoinPoint)|",
+      "|java+method:///org/joda/time/base/AbstractDateTime/toString()|",
+      "|java+method:///org/powertac/common/state/StateLogging/aspectOf()|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "affectedLib": "org.powertac:powertac-aop:1.4.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.powertac:common:1.3.3",
+    "coordinatesV2": "org.powertac:common:1.4.1",
+    "caller": "|java+method:///org/powertac/common/TimeService/setCurrentTime(org.joda.time.Instant)|",
+    "called": "|java+method:///org/powertac/common/state/StateLogging/setstate(org.aspectj.lang.JoinPoint)|",
+    "v1Body": [
+      "|java+constructor:///org/joda/time/DateTime/DateTime(java.lang.Object,org.joda.time.DateTimeZone)|",
+      "|java+method:///org/apache/logging/log4j/Logger/debug(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/joda/time/Instant/toString()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/joda/time/DateTime/DateTime(java.lang.Object,org.joda.time.DateTimeZone)|",
+      "|java+method:///org/apache/logging/log4j/Logger/debug(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder(java.lang.String)|",
+      "|java+method:///org/powertac/common/state/StateLogging/setstate(org.aspectj.lang.JoinPoint)|",
+      "|java+method:///org/joda/time/Instant/toString()|",
+      "|java+method:///org/powertac/common/state/StateLogging/aspectOf()|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "affectedLib": "org.powertac:powertac-aop:1.4.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.powertac:common:1.3.3",
+    "coordinatesV2": "org.powertac:common:1.4.1",
+    "caller": "|java+constructor:///org/powertac/common/CapacityTransaction/CapacityTransaction(org.powertac.common.Broker,int,int,double,double,double)|",
+    "called": "|java+method:///org/powertac/common/state/StateLogging/aspectOf()|",
+    "v1Body": [
+      "|java+constructor:///org/powertac/common/BrokerTransaction/BrokerTransaction(int,org.powertac.common.Broker)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/Conversions/doubleObject(double)|",
+      "|java+constructor:///org/powertac/common/BrokerTransaction/BrokerTransaction(int,org.powertac.common.Broker)|",
+      "|java+method:///org/powertac/common/state/StateLogging/newstate(org.aspectj.lang.JoinPoint)|",
+      "|java+method:///org/aspectj/runtime/internal/Conversions/intObject(int)|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object%5B%5D)|",
+      "|java+method:///org/powertac/common/state/StateLogging/aspectOf()|"
+    ],
+    "affectedLib": "org.powertac:powertac-aop:1.4.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.powertac:common:1.3.3",
+    "coordinatesV2": "org.powertac:common:1.4.1",
+    "caller": "|java+constructor:///org/powertac/common/msg/EconomicControlEvent/EconomicControlEvent()|",
+    "called": "|java+method:///org/powertac/common/state/StateLogging/aspectOf()|",
+    "v1Body": [
+      "|java+constructor:///org/powertac/common/msg/ControlEvent/ControlEvent()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/powertac/common/state/StateLogging/aspectOf()|",
+      "|java+constructor:///org/powertac/common/msg/ControlEvent/ControlEvent()|",
+      "|java+method:///org/powertac/common/state/StateLogging/newstate(org.aspectj.lang.JoinPoint)|"
+    ],
+    "affectedLib": "org.powertac:powertac-aop:1.4.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.powertac:common:1.3.3",
+    "coordinatesV2": "org.powertac:common:1.4.1",
+    "caller": "|java+method:///org/powertac/common/CustomerInfo/withDownRegulationKW(double)|",
+    "called": "|java+method:///org/powertac/common/state/StateLogging/setstate(org.aspectj.lang.JoinPoint)|",
+    "v1Body": [
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/powertac/common/CustomerInfo/getName()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/apache/logging/log4j/Logger/error(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(double)|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/Conversions/doubleObject(double)|",
+      "|java+method:///java/lang/String/valueOf(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/powertac/common/CustomerInfo/getName()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder(java.lang.String)|",
+      "|java+method:///org/powertac/common/state/StateLogging/setstate(org.aspectj.lang.JoinPoint)|",
+      "|java+method:///org/apache/logging/log4j/Logger/error(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(double)|",
+      "|java+method:///org/powertac/common/state/StateLogging/aspectOf()|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "affectedLib": "org.powertac:powertac-aop:1.4.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.powertac:common:1.3.3",
+    "coordinatesV2": "org.powertac:common:1.4.1",
+    "caller": "|java+constructor:///org/powertac/common/BankTransaction/BankTransaction(org.powertac.common.Broker,double,int)|",
+    "called": "|java+method:///org/powertac/common/state/StateLogging/aspectOf()|",
+    "v1Body": [
+      "|java+constructor:///org/powertac/common/BrokerTransaction/BrokerTransaction(int,org.powertac.common.Broker)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/Conversions/doubleObject(double)|",
+      "|java+constructor:///org/powertac/common/BrokerTransaction/BrokerTransaction(int,org.powertac.common.Broker)|",
+      "|java+method:///org/powertac/common/state/StateLogging/newstate(org.aspectj.lang.JoinPoint)|",
+      "|java+method:///org/aspectj/runtime/internal/Conversions/intObject(int)|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object%5B%5D)|",
+      "|java+method:///org/powertac/common/state/StateLogging/aspectOf()|"
+    ],
+    "affectedLib": "org.powertac:powertac-aop:1.4.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.powertac:common:1.3.3",
+    "coordinatesV2": "org.powertac:common:1.4.1",
+    "caller": "|java+constructor:///org/powertac/common/msg/MarketBootstrapData/MarketBootstrapData(double%5B%5D,double%5B%5D)|",
+    "called": "|java+method:///org/powertac/common/state/StateLogging/aspectOf()|",
+    "v1Body": [
+      "|java+method:///org/powertac/common/IdGenerator/createId()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/powertac/common/state/StateLogging/newstate(org.aspectj.lang.JoinPoint)|",
+      "|java+method:///org/powertac/common/IdGenerator/createId()|",
+      "|java+method:///org/powertac/common/state/StateLogging/aspectOf()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "org.powertac:powertac-aop:1.4.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.powertac:common:1.3.3",
+    "coordinatesV2": "org.powertac:common:1.4.1",
+    "caller": "|java+constructor:///org/powertac/common/msg/TariffRevoke/TariffRevoke(org.powertac.common.Broker,org.powertac.common.TariffSpecification)|",
+    "called": "|java+method:///org/powertac/common/state/StateLogging/aspectOf()|",
+    "v1Body": [
+      "|java+constructor:///org/powertac/common/msg/TariffUpdate/TariffUpdate(org.powertac.common.Broker,org.powertac.common.TariffSpecification)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/powertac/common/msg/TariffUpdate/TariffUpdate(org.powertac.common.Broker,org.powertac.common.TariffSpecification)|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/powertac/common/state/StateLogging/newstate(org.aspectj.lang.JoinPoint)|",
+      "|java+method:///org/powertac/common/state/StateLogging/aspectOf()|"
+    ],
+    "affectedLib": "org.powertac:powertac-aop:1.4.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.powertac:common:1.3.3",
+    "coordinatesV2": "org.powertac:common:1.4.1",
+    "caller": "|java+constructor:///org/powertac/common/msg/BalancingOrder/BalancingOrder(org.powertac.common.Broker,org.powertac.common.TariffSpecification,double,double)|",
+    "called": "|java+method:///org/powertac/common/state/StateLogging/aspectOf()|",
+    "v1Body": [
+      "|java+constructor:///org/powertac/common/msg/TariffUpdate/TariffUpdate(org.powertac.common.Broker,org.powertac.common.TariffSpecification)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/Conversions/doubleObject(double)|",
+      "|java+constructor:///org/powertac/common/msg/TariffUpdate/TariffUpdate(org.powertac.common.Broker,org.powertac.common.TariffSpecification)|",
+      "|java+method:///org/powertac/common/state/StateLogging/newstate(org.aspectj.lang.JoinPoint)|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object%5B%5D)|",
+      "|java+method:///org/powertac/common/state/StateLogging/aspectOf()|"
+    ],
+    "affectedLib": "org.powertac:powertac-aop:1.4.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.powertac:common:1.3.3",
+    "coordinatesV2": "org.powertac:common:1.4.1",
+    "caller": "|java+constructor:///org/powertac/common/HourlyCharge/HourlyCharge(org.joda.time.Instant,double)|",
+    "called": "|java+method:///org/powertac/common/state/StateLogging/aspectOf()|",
+    "v1Body": [
+      "|java+constructor:///org/powertac/common/state/XStreamStateLoggable/XStreamStateLoggable()|",
+      "|java+method:///org/powertac/common/IdGenerator/createId()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/Conversions/doubleObject(double)|",
+      "|java+constructor:///org/powertac/common/state/XStreamStateLoggable/XStreamStateLoggable()|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/powertac/common/state/StateLogging/newstate(org.aspectj.lang.JoinPoint)|",
+      "|java+method:///org/powertac/common/IdGenerator/createId()|",
+      "|java+method:///org/powertac/common/state/StateLogging/aspectOf()|"
+    ],
+    "affectedLib": "org.powertac:powertac-aop:1.4.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.powertac:common:1.3.3",
+    "coordinatesV2": "org.powertac:common:1.4.1",
+    "caller": "|java+constructor:///org/powertac/common/MarketTransaction/MarketTransaction(org.powertac.common.Broker,int,int,double,double)|",
+    "called": "|java+method:///org/powertac/common/state/StateLogging/aspectOf()|",
+    "v1Body": [
+      "|java+constructor:///org/powertac/common/BrokerTransaction/BrokerTransaction(int,org.powertac.common.Broker)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/Conversions/doubleObject(double)|",
+      "|java+constructor:///org/powertac/common/BrokerTransaction/BrokerTransaction(int,org.powertac.common.Broker)|",
+      "|java+method:///org/powertac/common/state/StateLogging/newstate(org.aspectj.lang.JoinPoint)|",
+      "|java+method:///org/aspectj/runtime/internal/Conversions/intObject(int)|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object%5B%5D)|",
+      "|java+method:///org/powertac/common/state/StateLogging/aspectOf()|"
+    ],
+    "affectedLib": "org.powertac:powertac-aop:1.4.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.powertac:common:1.3.3",
+    "coordinatesV2": "org.powertac:common:1.4.1",
+    "caller": "|java+constructor:///org/powertac/common/msg/EconomicControlEvent/EconomicControlEvent(org.powertac.common.TariffSpecification,double,int)|",
+    "called": "|java+method:///org/powertac/common/state/StateLogging/aspectOf()|",
+    "v1Body": [
+      "|java+constructor:///org/powertac/common/msg/ControlEvent/ControlEvent(org.powertac.common.Broker,org.powertac.common.TariffSpecification,int)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/powertac/common/TariffSpecification/getBroker()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/apache/logging/log4j/Logger/error(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(double)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/powertac/common/TariffSpecification/hasRegulationRate()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/Conversions/doubleObject(double)|",
+      "|java+constructor:///org/powertac/common/msg/ControlEvent/ControlEvent(org.powertac.common.Broker,org.powertac.common.TariffSpecification,int)|",
+      "|java+method:///org/powertac/common/TariffSpecification/getBroker()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder(java.lang.String)|",
+      "|java+method:///org/powertac/common/state/StateLogging/newstate(org.aspectj.lang.JoinPoint)|",
+      "|java+method:///org/aspectj/runtime/internal/Conversions/intObject(int)|",
+      "|java+method:///org/apache/logging/log4j/Logger/error(java.lang.String)|",
+      "|java+method:///org/powertac/common/state/StateLogging/aspectOf()|",
+      "|java+method:///java/lang/StringBuilder/append(double)|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object%5B%5D)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/powertac/common/TariffSpecification/hasRegulationRate()|"
+    ],
+    "affectedLib": "org.powertac:powertac-aop:1.4.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.powertac:common:1.3.3",
+    "coordinatesV2": "org.powertac:common:1.4.1",
+    "caller": "|java+method:///org/powertac/common/Broker/addMarketPosition(org.powertac.common.MarketPosition,int)|",
+    "called": "|java+method:///org/powertac/common/state/StateLogging/setstate(org.aspectj.lang.JoinPoint)|",
+    "v1Body": [
+      "|java+method:///java/util/HashMap/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/util/HashMap/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/powertac/common/state/StateLogging/setstate(org.aspectj.lang.JoinPoint)|",
+      "|java+method:///org/aspectj/runtime/internal/Conversions/intObject(int)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///org/powertac/common/state/StateLogging/aspectOf()|"
+    ],
+    "affectedLib": "org.powertac:powertac-aop:1.4.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.powertac:common:1.3.3",
+    "coordinatesV2": "org.powertac:common:1.4.1",
+    "caller": "|java+method:///org/powertac/common/CustomerInfo/withControllableKW(double)|",
+    "called": "|java+method:///org/powertac/common/state/StateLogging/setstate(org.aspectj.lang.JoinPoint)|",
+    "v1Body": [
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/powertac/common/CustomerInfo/getName()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/apache/logging/log4j/Logger/error(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(double)|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/Conversions/doubleObject(double)|",
+      "|java+method:///java/lang/String/valueOf(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/powertac/common/CustomerInfo/getName()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder(java.lang.String)|",
+      "|java+method:///org/powertac/common/state/StateLogging/setstate(org.aspectj.lang.JoinPoint)|",
+      "|java+method:///org/apache/logging/log4j/Logger/error(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(double)|",
+      "|java+method:///org/powertac/common/state/StateLogging/aspectOf()|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "affectedLib": "org.powertac:powertac-aop:1.4.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.powertac:common:1.3.3",
+    "coordinatesV2": "org.powertac:common:1.4.1",
+    "caller": "|java+constructor:///org/powertac/common/CashPosition/CashPosition(org.powertac.common.Broker,double,int)|",
+    "called": "|java+method:///org/powertac/common/state/StateLogging/aspectOf()|",
+    "v1Body": [
+      "|java+constructor:///org/powertac/common/BrokerTransaction/BrokerTransaction(int,org.powertac.common.Broker)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/Conversions/doubleObject(double)|",
+      "|java+constructor:///org/powertac/common/BrokerTransaction/BrokerTransaction(int,org.powertac.common.Broker)|",
+      "|java+method:///org/powertac/common/state/StateLogging/newstate(org.aspectj.lang.JoinPoint)|",
+      "|java+method:///org/aspectj/runtime/internal/Conversions/intObject(int)|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object%5B%5D)|",
+      "|java+method:///org/powertac/common/state/StateLogging/aspectOf()|"
+    ],
+    "affectedLib": "org.powertac:powertac-aop:1.4.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.powertac:common:1.3.3",
+    "coordinatesV2": "org.powertac:common:1.4.1",
+    "caller": "|java+constructor:///org/powertac/common/Tariff/Tariff(org.powertac.common.TariffSpecification)|",
+    "called": "|java+method:///org/powertac/common/state/StateLogging/aspectOf()|",
+    "v1Body": [
+      "|java+method:///org/powertac/common/TariffSpecification/getExpiration()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/powertac/common/TariffSpecification/getBroker()|",
+      "|java+method:///org/powertac/common/TariffSpecification/getId()|",
+      "|java+method:///org/powertac/common/Rate/getId()|",
+      "|java+method:///org/powertac/common/TariffSpecification/getRegulationRates()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/powertac/common/TariffSpecification/getRates()|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+constructor:///java/util/TreeSet/TreeSet()|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+method:///java/util/HashMap/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/powertac/common/Tariff/getId()|",
+      "|java+method:///java/lang/StringBuilder/append(long)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/apache/logging/log4j/Logger/warn(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/powertac/common/TariffSpecification/getExpiration()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///org/powertac/common/TariffSpecification/getBroker()|",
+      "|java+method:///org/powertac/common/TariffSpecification/getId()|",
+      "|java+method:///org/powertac/common/Rate/getId()|",
+      "|java+method:///org/powertac/common/TariffSpecification/getRegulationRates()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder(java.lang.String)|",
+      "|java+method:///org/powertac/common/state/StateLogging/newstate(org.aspectj.lang.JoinPoint)|",
+      "|java+method:///org/powertac/common/TariffSpecification/getRates()|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+constructor:///java/util/TreeSet/TreeSet()|",
+      "|java+method:///org/powertac/common/state/StateLogging/aspectOf()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+method:///java/util/HashMap/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/powertac/common/Tariff/getId()|",
+      "|java+method:///java/lang/StringBuilder/append(long)|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/apache/logging/log4j/Logger/warn(java.lang.String)|"
+    ],
+    "affectedLib": "org.powertac:powertac-aop:1.4.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.powertac:common:1.3.3",
+    "coordinatesV2": "org.powertac:common:1.4.1",
+    "caller": "|java+method:///org/powertac/common/Competition/addBroker(java.lang.String)|",
+    "called": "|java+method:///org/powertac/common/state/StateLogging/setstate(org.aspectj.lang.JoinPoint)|",
+    "v1Body": [
+      "|java+method:///java/util/ArrayList/add(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/powertac/common/state/StateLogging/setstate(org.aspectj.lang.JoinPoint)|",
+      "|java+method:///java/util/ArrayList/add(java.lang.Object)|",
+      "|java+method:///org/powertac/common/state/StateLogging/aspectOf()|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object)|"
+    ],
+    "affectedLib": "org.powertac:powertac-aop:1.4.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.powertac:common:1.3.3",
+    "coordinatesV2": "org.powertac:common:1.4.1",
+    "caller": "|java+method:///org/powertac/common/Tariff/addHourlyCharge(org.powertac.common.HourlyCharge,long)|",
+    "called": "|java+method:///org/powertac/common/state/StateLogging/setstate(org.aspectj.lang.JoinPoint)|",
+    "v1Body": [
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/powertac/common/Rate/addHourlyCharge(org.powertac.common.HourlyCharge)|",
+      "|java+method:///java/lang/StringBuilder/append(long)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/apache/logging/log4j/Logger/error(java.lang.String)|",
+      "|java+method:///java/util/HashMap/get(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/Conversions/longObject(long)|",
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/powertac/common/Rate/addHourlyCharge(org.powertac.common.HourlyCharge)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder(java.lang.String)|",
+      "|java+method:///org/apache/logging/log4j/Logger/error(java.lang.String)|",
+      "|java+method:///org/powertac/common/state/StateLogging/aspectOf()|",
+      "|java+method:///java/util/HashMap/get(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/powertac/common/state/StateLogging/setstate(org.aspectj.lang.JoinPoint)|",
+      "|java+method:///java/lang/StringBuilder/append(long)|"
+    ],
+    "affectedLib": "org.powertac:powertac-aop:1.4.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.powertac:common:1.3.3",
+    "coordinatesV2": "org.powertac:common:1.4.1",
+    "caller": "|java+constructor:///org/powertac/common/msg/BalanceReport/BalanceReport(int,double)|",
+    "called": "|java+method:///org/powertac/common/state/StateLogging/aspectOf()|",
+    "v1Body": [
+      "|java+method:///org/powertac/common/IdGenerator/createId()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/Conversions/doubleObject(double)|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/powertac/common/state/StateLogging/newstate(org.aspectj.lang.JoinPoint)|",
+      "|java+method:///org/aspectj/runtime/internal/Conversions/intObject(int)|",
+      "|java+method:///org/powertac/common/IdGenerator/createId()|",
+      "|java+method:///org/powertac/common/state/StateLogging/aspectOf()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "org.powertac:powertac-aop:1.4.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.powertac:common:1.3.3",
+    "coordinatesV2": "org.powertac:common:1.4.1",
+    "caller": "|java+constructor:///org/powertac/common/RegulationRate/RegulationRate()|",
+    "called": "|java+method:///org/powertac/common/state/StateLogging/aspectOf()|",
+    "v1Body": [
+      "|java+constructor:///org/powertac/common/RateCore/RateCore()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/powertac/common/RateCore/RateCore()|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/powertac/common/state/StateLogging/newstate(org.aspectj.lang.JoinPoint)|",
+      "|java+method:///org/powertac/common/state/StateLogging/aspectOf()|"
+    ],
+    "affectedLib": "org.powertac:powertac-aop:1.4.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.powertac:common:1.3.3",
+    "coordinatesV2": "org.powertac:common:1.4.1",
+    "caller": "|java+method:///org/powertac/common/Rate/addHourlyCharge(org.powertac.common.HourlyCharge,boolean)|",
+    "called": "|java+method:///org/powertac/common/state/StateLogging/setstate(org.aspectj.lang.JoinPoint)|",
+    "v1Body": [
+      "|java+method:///java/util/TreeSet/headSet(java.lang.Object)|",
+      "|java+method:///org/powertac/common/HourlyCharge/setRateId(long)|",
+      "|java+method:///java/lang/Object/toString()|",
+      "|java+method:///java/util/SortedSet/size()|",
+      "|java+method:///org/apache/logging/log4j/Logger/info(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/powertac/common/Rate/getId()|",
+      "|java+method:///org/powertac/common/HourlyCharge/getValue()|",
+      "|java+method:///java/lang/StringBuilder/append(long)|",
+      "|java+method:///org/powertac/common/HourlyCharge/getId()|",
+      "|java+method:///java/lang/Math/signum(double)|",
+      "|java+method:///java/util/TreeSet/remove(java.lang.Object)|",
+      "|java+method:///org/powertac/common/HourlyCharge/getAtTime()|",
+      "|java+method:///org/apache/logging/log4j/Logger/error(java.lang.String)|",
+      "|java+method:///org/powertac/common/Rate$ProbeCharge/setAtTime(org.joda.time.Instant)|",
+      "|java+method:///org/joda/time/Instant/plus(long)|",
+      "|java+method:///org/apache/logging/log4j/Logger/debug(java.lang.String)|",
+      "|java+method:///org/powertac/common/Rate/toString()|",
+      "|java+method:///org/joda/time/Instant/getMillis()|",
+      "|java+method:///org/powertac/common/Rate/getCurrentTime()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/joda/time/Instant/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/util/SortedSet/last()|",
+      "|java+constructor:///org/joda/time/Instant/Instant(long)|",
+      "|java+constructor:///org/powertac/common/Rate$ProbeCharge/Rate$ProbeCharge(org.powertac.common.Rate,org.joda.time.Instant,double)|",
+      "|java+method:///java/lang/StringBuilder/append(double)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/util/TreeSet/add(java.lang.Object)|",
+      "|java+method:///org/apache/logging/log4j/Logger/warn(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/TreeSet/headSet(java.lang.Object)|",
+      "|java+method:///java/lang/Object/toString()|",
+      "|java+method:///java/util/SortedSet/size()|",
+      "|java+method:///org/apache/logging/log4j/Logger/info(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/powertac/common/Rate/getId()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder(java.lang.String)|",
+      "|java+method:///org/powertac/common/HourlyCharge/getValue()|",
+      "|java+method:///org/powertac/common/HourlyCharge/getId()|",
+      "|java+method:///java/lang/Math/signum(double)|",
+      "|java+method:///org/joda/time/Instant/toString()|",
+      "|java+method:///java/util/TreeSet/remove(java.lang.Object)|",
+      "|java+method:///org/powertac/common/HourlyCharge/getAtTime()|",
+      "|java+method:///org/apache/logging/log4j/Logger/error(java.lang.String)|",
+      "|java+method:///org/powertac/common/state/StateLogging/aspectOf()|",
+      "|java+method:///org/powertac/common/HourlyCharge/setRateId(long)|",
+      "|java+method:///org/aspectj/runtime/internal/Conversions/booleanObject(boolean)|",
+      "|java+method:///org/powertac/common/Rate$ProbeCharge/setAtTime(org.joda.time.Instant)|",
+      "|java+method:///org/joda/time/Instant/plus(long)|",
+      "|java+method:///org/apache/logging/log4j/Logger/debug(java.lang.String)|",
+      "|java+method:///org/powertac/common/Rate/toString()|",
+      "|java+method:///org/joda/time/Instant/getMillis()|",
+      "|java+method:///org/powertac/common/Rate/getCurrentTime()|",
+      "|java+method:///org/powertac/common/state/StateLogging/setstate(org.aspectj.lang.JoinPoint)|",
+      "|java+method:///java/lang/StringBuilder/append(long)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/util/SortedSet/last()|",
+      "|java+constructor:///org/joda/time/Instant/Instant(long)|",
+      "|java+constructor:///org/powertac/common/Rate$ProbeCharge/Rate$ProbeCharge(org.powertac.common.Rate,org.joda.time.Instant,double)|",
+      "|java+method:///java/lang/StringBuilder/append(double)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/util/TreeSet/add(java.lang.Object)|",
+      "|java+method:///org/apache/logging/log4j/Logger/warn(java.lang.String)|"
+    ],
+    "affectedLib": "org.powertac:powertac-aop:1.4.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.powertac:common:1.3.3",
+    "coordinatesV2": "org.powertac:common:1.4.1",
+    "caller": "|java+constructor:///org/powertac/common/msg/BrokerAuthentication/BrokerAuthentication(java.lang.String,java.lang.String)|",
+    "called": "|java+method:///org/powertac/common/state/StateLogging/aspectOf()|",
+    "v1Body": [
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/powertac/common/state/StateLogging/newstate(org.aspectj.lang.JoinPoint)|",
+      "|java+method:///org/powertac/common/state/StateLogging/aspectOf()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "org.powertac:powertac-aop:1.4.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.powertac:common:1.3.3",
+    "coordinatesV2": "org.powertac:common:1.4.1",
+    "caller": "|java+constructor:///org/powertac/common/msg/OrderStatus/OrderStatus(org.powertac.common.Broker,long,org.powertac.common.msg.OrderStatus$Status)|",
+    "called": "|java+method:///org/powertac/common/state/StateLogging/aspectOf()|",
+    "v1Body": [
+      "|java+constructor:///org/powertac/common/state/XStreamStateLoggable/XStreamStateLoggable()|",
+      "|java+method:///org/powertac/common/IdGenerator/createId()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/Conversions/longObject(long)|",
+      "|java+constructor:///org/powertac/common/state/XStreamStateLoggable/XStreamStateLoggable()|",
+      "|java+method:///org/powertac/common/state/StateLogging/newstate(org.aspectj.lang.JoinPoint)|",
+      "|java+method:///org/powertac/common/IdGenerator/createId()|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object%5B%5D)|",
+      "|java+method:///org/powertac/common/state/StateLogging/aspectOf()|"
+    ],
+    "affectedLib": "org.powertac:powertac-aop:1.4.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.powertac:common:1.3.3",
+    "coordinatesV2": "org.powertac:common:1.4.1",
+    "caller": "|java+constructor:///org/powertac/common/msg/CustomerBootstrapData/CustomerBootstrapData(org.powertac.common.CustomerInfo,org.powertac.common.enumerations.PowerType,double%5B%5D)|",
+    "called": "|java+method:///org/powertac/common/state/StateLogging/aspectOf()|",
+    "v1Body": [
+      "|java+method:///org/powertac/common/CustomerInfo/getName()|",
+      "|java+method:///org/powertac/common/IdGenerator/createId()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/powertac/common/CustomerInfo/getName()|",
+      "|java+method:///org/powertac/common/state/StateLogging/newstate(org.aspectj.lang.JoinPoint)|",
+      "|java+method:///org/powertac/common/IdGenerator/createId()|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object%5B%5D)|",
+      "|java+method:///org/powertac/common/state/StateLogging/aspectOf()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "org.powertac:powertac-aop:1.4.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.powertac:common:1.3.3",
+    "coordinatesV2": "org.powertac:common:1.4.1",
+    "caller": "|java+constructor:///org/powertac/common/msg/VariableRateUpdate/VariableRateUpdate(org.powertac.common.Broker,org.powertac.common.Rate,org.powertac.common.HourlyCharge)|",
+    "called": "|java+method:///org/powertac/common/state/StateLogging/aspectOf()|",
+    "v1Body": [
+      "|java+constructor:///org/powertac/common/msg/TariffUpdate/TariffUpdate(org.powertac.common.Broker,long)|",
+      "|java+method:///org/powertac/common/Rate/getId()|",
+      "|java+method:///org/powertac/common/Rate/getTariffId()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/powertac/common/msg/TariffUpdate/TariffUpdate(org.powertac.common.Broker,long)|",
+      "|java+method:///org/powertac/common/Rate/getId()|",
+      "|java+method:///org/powertac/common/Rate/getTariffId()|",
+      "|java+method:///org/powertac/common/state/StateLogging/newstate(org.aspectj.lang.JoinPoint)|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object%5B%5D)|",
+      "|java+method:///org/powertac/common/state/StateLogging/aspectOf()|"
+    ],
+    "affectedLib": "org.powertac:powertac-aop:1.4.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.powertac:common:1.3.3",
+    "coordinatesV2": "org.powertac:common:1.4.1",
+    "caller": "|java+constructor:///org/powertac/common/msg/TariffRevoke/TariffRevoke()|",
+    "called": "|java+method:///org/powertac/common/state/StateLogging/aspectOf()|",
+    "v1Body": [
+      "|java+constructor:///org/powertac/common/msg/TariffUpdate/TariffUpdate()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/powertac/common/state/StateLogging/aspectOf()|",
+      "|java+method:///org/powertac/common/state/StateLogging/newstate(org.aspectj.lang.JoinPoint)|",
+      "|java+constructor:///org/powertac/common/msg/TariffUpdate/TariffUpdate()|"
+    ],
+    "affectedLib": "org.powertac:powertac-aop:1.4.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.powertac:common:1.3.3",
+    "coordinatesV2": "org.powertac:common:1.4.1",
+    "caller": "|java+constructor:///org/powertac/common/msg/TariffStatus/TariffStatus(org.powertac.common.Broker,long,long,org.powertac.common.msg.TariffStatus$Status)|",
+    "called": "|java+method:///org/powertac/common/state/StateLogging/aspectOf()|",
+    "v1Body": [
+      "|java+constructor:///org/powertac/common/TariffMessage/TariffMessage(org.powertac.common.Broker)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/powertac/common/state/StateLogging/newstate(org.aspectj.lang.JoinPoint)|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object%5B%5D)|",
+      "|java+method:///org/powertac/common/state/StateLogging/aspectOf()|",
+      "|java+constructor:///org/powertac/common/TariffMessage/TariffMessage(org.powertac.common.Broker)|",
+      "|java+method:///org/aspectj/runtime/internal/Conversions/longObject(long)|"
+    ],
+    "affectedLib": "org.powertac:powertac-aop:1.4.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.powertac:common:1.3.3",
+    "coordinatesV2": "org.powertac:common:1.4.1",
+    "caller": "|java+constructor:///org/powertac/common/MarketPosition/MarketPosition(org.powertac.common.Broker,int,double)|",
+    "called": "|java+method:///org/powertac/common/state/StateLogging/aspectOf()|",
+    "v1Body": [
+      "|java+method:///org/powertac/common/IdGenerator/createId()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/Conversions/doubleObject(double)|",
+      "|java+method:///org/powertac/common/state/StateLogging/newstate(org.aspectj.lang.JoinPoint)|",
+      "|java+method:///org/aspectj/runtime/internal/Conversions/intObject(int)|",
+      "|java+method:///org/powertac/common/IdGenerator/createId()|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object%5B%5D)|",
+      "|java+method:///org/powertac/common/state/StateLogging/aspectOf()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "org.powertac:powertac-aop:1.4.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.powertac:common:1.3.3",
+    "coordinatesV2": "org.powertac:common:1.4.1",
+    "caller": "|java+constructor:///org/powertac/common/msg/BalancingControlEvent/BalancingControlEvent()|",
+    "called": "|java+method:///org/powertac/common/state/StateLogging/aspectOf()|",
+    "v1Body": [
+      "|java+constructor:///org/powertac/common/msg/ControlEvent/ControlEvent()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/powertac/common/state/StateLogging/aspectOf()|",
+      "|java+constructor:///org/powertac/common/msg/ControlEvent/ControlEvent()|",
+      "|java+method:///org/powertac/common/state/StateLogging/newstate(org.aspectj.lang.JoinPoint)|"
+    ],
+    "affectedLib": "org.powertac:powertac-aop:1.4.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.powertac:common:1.3.3",
+    "coordinatesV2": "org.powertac:common:1.4.1",
+    "caller": "|java+constructor:///org/powertac/common/TariffSpecification/TariffSpecification()|",
+    "called": "|java+method:///org/powertac/common/state/StateLogging/aspectOf()|",
+    "v1Body": [
+      "|java+constructor:///org/powertac/common/TariffMessage/TariffMessage()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/powertac/common/state/StateLogging/newstate(org.aspectj.lang.JoinPoint)|",
+      "|java+method:///org/powertac/common/state/StateLogging/aspectOf()|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///org/powertac/common/TariffMessage/TariffMessage()|"
+    ],
+    "affectedLib": "org.powertac:powertac-aop:1.4.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.powertac:common:1.3.3",
+    "coordinatesV2": "org.powertac:common:1.4.1",
+    "caller": "|java+constructor:///org/powertac/common/ClearedTrade/ClearedTrade(int,double,double,org.joda.time.Instant)|",
+    "called": "|java+method:///org/powertac/common/state/StateLogging/aspectOf()|",
+    "v1Body": [
+      "|java+method:///org/powertac/common/IdGenerator/createId()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/Conversions/doubleObject(double)|",
+      "|java+method:///org/powertac/common/state/StateLogging/newstate(org.aspectj.lang.JoinPoint)|",
+      "|java+method:///org/aspectj/runtime/internal/Conversions/intObject(int)|",
+      "|java+method:///org/powertac/common/IdGenerator/createId()|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object%5B%5D)|",
+      "|java+method:///org/powertac/common/state/StateLogging/aspectOf()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "org.powertac:powertac-aop:1.4.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.powertac:common:1.3.3",
+    "coordinatesV2": "org.powertac:common:1.4.1",
+    "caller": "|java+method:///org/powertac/common/Competition/withSimulationBaseTime(long)|",
+    "called": "|java+method:///org/powertac/common/state/StateLogging/setstate(org.aspectj.lang.JoinPoint)|",
+    "v1Body": [
+      "|java+constructor:///org/joda/time/Instant/Instant(long)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/Conversions/longObject(long)|",
+      "|java+method:///org/powertac/common/state/StateLogging/setstate(org.aspectj.lang.JoinPoint)|",
+      "|java+constructor:///org/joda/time/Instant/Instant(long)|",
+      "|java+method:///org/powertac/common/state/StateLogging/aspectOf()|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object)|"
+    ],
+    "affectedLib": "org.powertac:powertac-aop:1.4.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.powertac:common:1.3.3",
+    "coordinatesV2": "org.powertac:common:1.4.1",
+    "caller": "|java+constructor:///org/powertac/common/Rate/Rate()|",
+    "called": "|java+method:///org/powertac/common/state/StateLogging/aspectOf()|",
+    "v1Body": [
+      "|java+constructor:///org/powertac/common/RateCore/RateCore()|",
+      "|java+constructor:///org/joda/time/Instant/Instant(long)|",
+      "|java+constructor:///org/powertac/common/Rate$ProbeCharge/Rate$ProbeCharge(org.powertac.common.Rate,org.joda.time.Instant,double)|",
+      "|java+constructor:///java/util/TreeSet/TreeSet()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/powertac/common/RateCore/RateCore()|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/powertac/common/state/StateLogging/newstate(org.aspectj.lang.JoinPoint)|",
+      "|java+constructor:///org/joda/time/Instant/Instant(long)|",
+      "|java+method:///org/powertac/common/state/StateLogging/aspectOf()|",
+      "|java+constructor:///org/powertac/common/Rate$ProbeCharge/Rate$ProbeCharge(org.powertac.common.Rate,org.joda.time.Instant,double)|",
+      "|java+constructor:///java/util/TreeSet/TreeSet()|"
+    ],
+    "affectedLib": "org.powertac:powertac-aop:1.4.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.powertac:common:1.3.3",
+    "coordinatesV2": "org.powertac:common:1.4.1",
+    "caller": "|java+constructor:///org/powertac/common/msg/SimEnd/SimEnd()|",
+    "called": "|java+method:///org/powertac/common/state/StateLogging/aspectOf()|",
+    "v1Body": [
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/powertac/common/state/StateLogging/newstate(org.aspectj.lang.JoinPoint)|",
+      "|java+method:///org/powertac/common/state/StateLogging/aspectOf()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "org.powertac:powertac-aop:1.4.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.powertac:common:1.3.3",
+    "coordinatesV2": "org.powertac:common:1.4.1",
+    "caller": "|java+constructor:///org/powertac/common/HourlyCharge/HourlyCharge()|",
+    "called": "|java+method:///org/powertac/common/state/StateLogging/aspectOf()|",
+    "v1Body": [
+      "|java+constructor:///org/powertac/common/state/XStreamStateLoggable/XStreamStateLoggable()|",
+      "|java+method:///org/powertac/common/IdGenerator/createId()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/powertac/common/state/XStreamStateLoggable/XStreamStateLoggable()|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/powertac/common/state/StateLogging/newstate(org.aspectj.lang.JoinPoint)|",
+      "|java+method:///org/powertac/common/IdGenerator/createId()|",
+      "|java+method:///org/powertac/common/state/StateLogging/aspectOf()|"
+    ],
+    "affectedLib": "org.powertac:powertac-aop:1.4.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.powertac:common:1.3.3",
+    "coordinatesV2": "org.powertac:common:1.4.1",
+    "caller": "|java+constructor:///org/powertac/common/msg/VariableRateUpdate/VariableRateUpdate()|",
+    "called": "|java+method:///org/powertac/common/state/StateLogging/aspectOf()|",
+    "v1Body": [
+      "|java+constructor:///org/powertac/common/msg/TariffUpdate/TariffUpdate()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/powertac/common/state/StateLogging/aspectOf()|",
+      "|java+method:///org/powertac/common/state/StateLogging/newstate(org.aspectj.lang.JoinPoint)|",
+      "|java+constructor:///org/powertac/common/msg/TariffUpdate/TariffUpdate()|"
+    ],
+    "affectedLib": "org.powertac:powertac-aop:1.4.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.powertac:common:1.3.3",
+    "coordinatesV2": "org.powertac:common:1.4.1",
+    "caller": "|java+constructor:///org/powertac/common/WeatherForecastPrediction/WeatherForecastPrediction(int,double,double,double,double)|",
+    "called": "|java+method:///org/powertac/common/state/StateLogging/aspectOf()|",
+    "v1Body": [
+      "|java+method:///org/powertac/common/IdGenerator/createId()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/Conversions/doubleObject(double)|",
+      "|java+method:///org/powertac/common/state/StateLogging/newstate(org.aspectj.lang.JoinPoint)|",
+      "|java+method:///org/aspectj/runtime/internal/Conversions/intObject(int)|",
+      "|java+method:///org/powertac/common/IdGenerator/createId()|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object%5B%5D)|",
+      "|java+method:///org/powertac/common/state/StateLogging/aspectOf()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "org.powertac:powertac-aop:1.4.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.powertac:common:1.3.3",
+    "coordinatesV2": "org.powertac:common:1.4.1",
+    "caller": "|java+constructor:///org/powertac/common/DistributionTransaction/DistributionTransaction(org.powertac.common.Broker,int,int,int,double,double)|",
+    "called": "|java+method:///org/powertac/common/state/StateLogging/aspectOf()|",
+    "v1Body": [
+      "|java+constructor:///org/powertac/common/BrokerTransaction/BrokerTransaction(int,org.powertac.common.Broker)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/Conversions/doubleObject(double)|",
+      "|java+constructor:///org/powertac/common/BrokerTransaction/BrokerTransaction(int,org.powertac.common.Broker)|",
+      "|java+method:///org/powertac/common/state/StateLogging/newstate(org.aspectj.lang.JoinPoint)|",
+      "|java+method:///org/aspectj/runtime/internal/Conversions/intObject(int)|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object%5B%5D)|",
+      "|java+method:///org/powertac/common/state/StateLogging/aspectOf()|"
+    ],
+    "affectedLib": "org.powertac:powertac-aop:1.4.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.powertac:common:1.3.3",
+    "coordinatesV2": "org.powertac:common:1.4.1",
+    "caller": "|java+method:///org/powertac/common/CustomerInfo/withStorageCapacity(double)|",
+    "called": "|java+method:///org/powertac/common/state/StateLogging/setstate(org.aspectj.lang.JoinPoint)|",
+    "v1Body": [
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/powertac/common/CustomerInfo/getName()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/apache/logging/log4j/Logger/error(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(double)|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/Conversions/doubleObject(double)|",
+      "|java+method:///java/lang/String/valueOf(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/powertac/common/CustomerInfo/getName()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder(java.lang.String)|",
+      "|java+method:///org/powertac/common/state/StateLogging/setstate(org.aspectj.lang.JoinPoint)|",
+      "|java+method:///org/apache/logging/log4j/Logger/error(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(double)|",
+      "|java+method:///org/powertac/common/state/StateLogging/aspectOf()|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "affectedLib": "org.powertac:powertac-aop:1.4.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.powertac:common:1.3.3",
+    "coordinatesV2": "org.powertac:common:1.4.1",
+    "caller": "|java+method:///org/powertac/common/TariffSpecification/addSupersedes(long)|",
+    "called": "|java+method:///org/powertac/common/state/StateLogging/setstate(org.aspectj.lang.JoinPoint)|",
+    "v1Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///java/util/List/add(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/Conversions/longObject(long)|",
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///org/powertac/common/state/StateLogging/setstate(org.aspectj.lang.JoinPoint)|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///org/powertac/common/state/StateLogging/aspectOf()|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object)|"
+    ],
+    "affectedLib": "org.powertac:powertac-aop:1.4.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.powertac:common:1.3.3",
+    "coordinatesV2": "org.powertac:common:1.4.1",
+    "caller": "|java+constructor:///org/powertac/common/msg/TariffExpire/TariffExpire(org.powertac.common.Broker,org.powertac.common.TariffSpecification,org.joda.time.Instant)|",
+    "called": "|java+method:///org/powertac/common/state/StateLogging/aspectOf()|",
+    "v1Body": [
+      "|java+constructor:///org/powertac/common/msg/TariffUpdate/TariffUpdate(org.powertac.common.Broker,org.powertac.common.TariffSpecification)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/powertac/common/msg/TariffUpdate/TariffUpdate(org.powertac.common.Broker,org.powertac.common.TariffSpecification)|",
+      "|java+method:///org/powertac/common/state/StateLogging/newstate(org.aspectj.lang.JoinPoint)|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object%5B%5D)|",
+      "|java+method:///org/powertac/common/state/StateLogging/aspectOf()|"
+    ],
+    "affectedLib": "org.powertac:powertac-aop:1.4.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.powertac:common:1.3.3",
+    "coordinatesV2": "org.powertac:common:1.4.1",
+    "caller": "|java+constructor:///org/powertac/common/msg/TimeslotUpdate/TimeslotUpdate(org.joda.time.Instant,int,int)|",
+    "called": "|java+method:///org/powertac/common/state/StateLogging/aspectOf()|",
+    "v1Body": [
+      "|java+method:///org/powertac/common/IdGenerator/createId()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/powertac/common/state/StateLogging/newstate(org.aspectj.lang.JoinPoint)|",
+      "|java+method:///org/aspectj/runtime/internal/Conversions/intObject(int)|",
+      "|java+method:///org/powertac/common/IdGenerator/createId()|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object%5B%5D)|",
+      "|java+method:///org/powertac/common/state/StateLogging/aspectOf()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "org.powertac:powertac-aop:1.4.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.powertac:common:1.3.3",
+    "coordinatesV2": "org.powertac:common:1.4.1",
+    "caller": "|java+constructor:///org/powertac/common/Order/Order(org.powertac.common.Broker,int,double,java.lang.Double)|",
+    "called": "|java+method:///org/powertac/common/state/StateLogging/aspectOf()|",
+    "v1Body": [
+      "|java+method:///org/powertac/common/Competition/currentCompetition()|",
+      "|java+constructor:///org/powertac/common/state/XStreamStateLoggable/XStreamStateLoggable()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/powertac/common/IdGenerator/createId()|",
+      "|java+method:///java/lang/Math/abs(double)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(double)|",
+      "|java+method:///org/powertac/common/Competition/getMinimumOrderQuantity()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/apache/logging/log4j/Logger/warn(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/Conversions/doubleObject(double)|",
+      "|java+method:///org/powertac/common/Competition/currentCompetition()|",
+      "|java+constructor:///org/powertac/common/state/XStreamStateLoggable/XStreamStateLoggable()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder(java.lang.String)|",
+      "|java+method:///org/powertac/common/state/StateLogging/newstate(org.aspectj.lang.JoinPoint)|",
+      "|java+method:///org/aspectj/runtime/internal/Conversions/intObject(int)|",
+      "|java+method:///org/powertac/common/IdGenerator/createId()|",
+      "|java+method:///org/powertac/common/state/StateLogging/aspectOf()|",
+      "|java+method:///java/lang/Math/abs(double)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(double)|",
+      "|java+method:///org/powertac/common/Competition/getMinimumOrderQuantity()|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object%5B%5D)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/apache/logging/log4j/Logger/warn(java.lang.String)|"
+    ],
+    "affectedLib": "org.powertac:powertac-aop:1.4.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.powertac:common:1.3.3",
+    "coordinatesV2": "org.powertac:common:1.4.1",
+    "caller": "|java+method:///org/powertac/common/Rate/withMaxCurtailment(double)|",
+    "called": "|java+method:///org/powertac/common/state/StateLogging/setstate(org.aspectj.lang.JoinPoint)|",
+    "v1Body": [
+      "|java+method:///java/lang/Math/min(double,double)|",
+      "|java+method:///java/lang/Math/max(double,double)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/Conversions/doubleObject(double)|",
+      "|java+method:///java/lang/Math/min(double,double)|",
+      "|java+method:///java/lang/Math/max(double,double)|",
+      "|java+method:///org/powertac/common/state/StateLogging/setstate(org.aspectj.lang.JoinPoint)|",
+      "|java+method:///org/powertac/common/state/StateLogging/aspectOf()|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object)|"
+    ],
+    "affectedLib": "org.powertac:powertac-aop:1.4.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.powertac:common:1.3.3",
+    "coordinatesV2": "org.powertac:common:1.4.1",
+    "caller": "|java+method:///org/powertac/common/CustomerInfo/withUpRegulationKW(double)|",
+    "called": "|java+method:///org/powertac/common/state/StateLogging/setstate(org.aspectj.lang.JoinPoint)|",
+    "v1Body": [
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/powertac/common/CustomerInfo/getName()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/apache/logging/log4j/Logger/error(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(double)|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/Conversions/doubleObject(double)|",
+      "|java+method:///java/lang/String/valueOf(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/powertac/common/CustomerInfo/getName()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder(java.lang.String)|",
+      "|java+method:///org/powertac/common/state/StateLogging/setstate(org.aspectj.lang.JoinPoint)|",
+      "|java+method:///org/apache/logging/log4j/Logger/error(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(double)|",
+      "|java+method:///org/powertac/common/state/StateLogging/aspectOf()|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "affectedLib": "org.powertac:powertac-aop:1.4.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.powertac:common:1.3.3",
+    "coordinatesV2": "org.powertac:common:1.4.1",
+    "caller": "|java+constructor:///org/powertac/common/msg/BalancingOrder/BalancingOrder()|",
+    "called": "|java+method:///org/powertac/common/state/StateLogging/aspectOf()|",
+    "v1Body": [
+      "|java+constructor:///org/powertac/common/msg/TariffUpdate/TariffUpdate()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/powertac/common/state/StateLogging/aspectOf()|",
+      "|java+method:///org/powertac/common/state/StateLogging/newstate(org.aspectj.lang.JoinPoint)|",
+      "|java+constructor:///org/powertac/common/msg/TariffUpdate/TariffUpdate()|"
+    ],
+    "affectedLib": "org.powertac:powertac-aop:1.4.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.powertac:common:1.3.3",
+    "coordinatesV2": "org.powertac:common:1.4.1",
+    "caller": "|java+constructor:///org/powertac/common/OrderbookOrder/OrderbookOrder(double,java.lang.Double)|",
+    "called": "|java+method:///org/powertac/common/state/StateLogging/aspectOf()|",
+    "v1Body": [
+      "|java+method:///org/powertac/common/IdGenerator/createId()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/Conversions/doubleObject(double)|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/powertac/common/state/StateLogging/newstate(org.aspectj.lang.JoinPoint)|",
+      "|java+method:///org/powertac/common/IdGenerator/createId()|",
+      "|java+method:///org/powertac/common/state/StateLogging/aspectOf()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "org.powertac:powertac-aop:1.4.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.powertac:common:1.3.3",
+    "coordinatesV2": "org.powertac:common:1.4.1",
+    "caller": "|java+constructor:///org/powertac/common/msg/DistributionReport/DistributionReport()|",
+    "called": "|java+method:///org/powertac/common/state/StateLogging/aspectOf()|",
+    "v1Body": [
+      "|java+constructor:///org/powertac/common/state/XStreamStateLoggable/XStreamStateLoggable()|",
+      "|java+method:///org/powertac/common/IdGenerator/createId()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/powertac/common/state/XStreamStateLoggable/XStreamStateLoggable()|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/powertac/common/state/StateLogging/newstate(org.aspectj.lang.JoinPoint)|",
+      "|java+method:///org/powertac/common/IdGenerator/createId()|",
+      "|java+method:///org/powertac/common/state/StateLogging/aspectOf()|"
+    ],
+    "affectedLib": "org.powertac:powertac-aop:1.4.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.powertac:common:1.3.3",
+    "coordinatesV2": "org.powertac:common:1.4.1",
+    "caller": "|java+constructor:///org/powertac/common/CustomerInfo/CustomerInfo(java.lang.String,int)|",
+    "called": "|java+method:///org/powertac/common/state/StateLogging/aspectOf()|",
+    "v1Body": [
+      "|java+method:///org/powertac/common/IdGenerator/createId()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/powertac/common/state/StateLogging/newstate(org.aspectj.lang.JoinPoint)|",
+      "|java+method:///org/aspectj/runtime/internal/Conversions/intObject(int)|",
+      "|java+method:///org/powertac/common/IdGenerator/createId()|",
+      "|java+method:///org/powertac/common/state/StateLogging/aspectOf()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "org.powertac:powertac-aop:1.4.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.powertac:common:1.3.3",
+    "coordinatesV2": "org.powertac:common:1.4.1",
+    "caller": "|java+constructor:///org/powertac/common/Orderbook/Orderbook(int,java.lang.Double,org.joda.time.Instant)|",
+    "called": "|java+method:///org/powertac/common/state/StateLogging/aspectOf()|",
+    "v1Body": [
+      "|java+method:///org/powertac/common/IdGenerator/createId()|",
+      "|java+constructor:///java/util/TreeSet/TreeSet()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/powertac/common/state/StateLogging/newstate(org.aspectj.lang.JoinPoint)|",
+      "|java+method:///org/aspectj/runtime/internal/Conversions/intObject(int)|",
+      "|java+method:///org/powertac/common/IdGenerator/createId()|",
+      "|java+method:///org/powertac/common/state/StateLogging/aspectOf()|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+constructor:///java/util/TreeSet/TreeSet()|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object%5B%5D)|"
+    ],
+    "affectedLib": "org.powertac:powertac-aop:1.4.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.powertac:common:1.3.3",
+    "coordinatesV2": "org.powertac:common:1.4.1",
+    "caller": "|java+constructor:///org/powertac/common/WeatherForecast/WeatherForecast(int,java.util.List)|",
+    "called": "|java+method:///org/powertac/common/state/StateLogging/aspectOf()|",
+    "v1Body": [
+      "|java+method:///org/powertac/common/IdGenerator/createId()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/powertac/common/state/StateLogging/newstate(org.aspectj.lang.JoinPoint)|",
+      "|java+method:///org/aspectj/runtime/internal/Conversions/intObject(int)|",
+      "|java+method:///org/powertac/common/IdGenerator/createId()|",
+      "|java+method:///org/powertac/common/state/StateLogging/aspectOf()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "org.powertac:powertac-aop:1.4.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.powertac:common:1.3.3",
+    "coordinatesV2": "org.powertac:common:1.4.1",
+    "caller": "|java+constructor:///org/powertac/common/msg/SimPause/SimPause()|",
+    "called": "|java+method:///org/powertac/common/state/StateLogging/aspectOf()|",
+    "v1Body": [
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/powertac/common/state/StateLogging/newstate(org.aspectj.lang.JoinPoint)|",
+      "|java+method:///org/powertac/common/state/StateLogging/aspectOf()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "org.powertac:powertac-aop:1.4.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.powertac:common:1.3.3",
+    "coordinatesV2": "org.powertac:common:1.4.1",
+    "caller": "|java+constructor:///org/powertac/common/msg/DistributionReport/DistributionReport(int,double,double)|",
+    "called": "|java+method:///org/powertac/common/state/StateLogging/aspectOf()|",
+    "v1Body": [
+      "|java+constructor:///org/powertac/common/state/XStreamStateLoggable/XStreamStateLoggable()|",
+      "|java+method:///org/powertac/common/IdGenerator/createId()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/Conversions/doubleObject(double)|",
+      "|java+constructor:///org/powertac/common/state/XStreamStateLoggable/XStreamStateLoggable()|",
+      "|java+method:///org/powertac/common/state/StateLogging/newstate(org.aspectj.lang.JoinPoint)|",
+      "|java+method:///org/aspectj/runtime/internal/Conversions/intObject(int)|",
+      "|java+method:///org/powertac/common/IdGenerator/createId()|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object%5B%5D)|",
+      "|java+method:///org/powertac/common/state/StateLogging/aspectOf()|"
+    ],
+    "affectedLib": "org.powertac:powertac-aop:1.4.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.powertac:common:1.3.3",
+    "coordinatesV2": "org.powertac:common:1.4.1",
+    "caller": "|java+method:///org/powertac/common/Orderbook/addBid(org.powertac.common.OrderbookOrder)|",
+    "called": "|java+method:///org/powertac/common/state/StateLogging/setstate(org.aspectj.lang.JoinPoint)|",
+    "v1Body": [
+      "|java+method:///java/util/SortedSet/add(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/SortedSet/add(java.lang.Object)|",
+      "|java+method:///org/powertac/common/state/StateLogging/setstate(org.aspectj.lang.JoinPoint)|",
+      "|java+method:///org/powertac/common/state/StateLogging/aspectOf()|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object)|"
+    ],
+    "affectedLib": "org.powertac:powertac-aop:1.4.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.powertac:common:1.3.3",
+    "coordinatesV2": "org.powertac:common:1.4.1",
+    "caller": "|java+constructor:///org/powertac/common/msg/SimResume/SimResume(org.joda.time.Instant)|",
+    "called": "|java+method:///org/powertac/common/state/StateLogging/aspectOf()|",
+    "v1Body": [
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/powertac/common/state/StateLogging/newstate(org.aspectj.lang.JoinPoint)|",
+      "|java+method:///org/powertac/common/state/StateLogging/aspectOf()|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "org.powertac:powertac-aop:1.4.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.powertac:common:1.3.3",
+    "coordinatesV2": "org.powertac:common:1.4.1",
+    "caller": "|java+constructor:///org/powertac/common/TariffSpecification/TariffSpecification(org.powertac.common.Broker,org.powertac.common.enumerations.PowerType)|",
+    "called": "|java+method:///org/powertac/common/state/StateLogging/aspectOf()|",
+    "v1Body": [
+      "|java+constructor:///org/powertac/common/TariffMessage/TariffMessage(org.powertac.common.Broker)|",
+      "|java+constructor:///java/util/ArrayList/ArrayList()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/powertac/common/TariffMessage/TariffMessage(org.powertac.common.Broker)|",
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/powertac/common/state/StateLogging/newstate(org.aspectj.lang.JoinPoint)|",
+      "|java+method:///org/powertac/common/state/StateLogging/aspectOf()|"
+    ],
+    "affectedLib": "org.powertac:powertac-aop:1.4.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.powertac:common:1.3.3",
+    "coordinatesV2": "org.powertac:common:1.4.1",
+    "caller": "|java+method:///org/powertac/common/TariffSpecification/addRate(org.powertac.common.RateCore)|",
+    "called": "|java+method:///org/powertac/common/state/StateLogging/setstate(org.aspectj.lang.JoinPoint)|",
+    "v1Body": [
+      "|java+method:///org/powertac/common/RateCore/setTariffId(long)|",
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///java/util/List/add(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/powertac/common/RateCore/setTariffId(long)|",
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///org/powertac/common/state/StateLogging/setstate(org.aspectj.lang.JoinPoint)|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///org/powertac/common/state/StateLogging/aspectOf()|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object)|"
+    ],
+    "affectedLib": "org.powertac:powertac-aop:1.4.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.powertac:common:1.3.3",
+    "coordinatesV2": "org.powertac:common:1.4.1",
+    "caller": "|java+constructor:///org/powertac/common/WeatherReport/WeatherReport(int,double,double,double,double)|",
+    "called": "|java+method:///org/powertac/common/state/StateLogging/aspectOf()|",
+    "v1Body": [
+      "|java+method:///org/powertac/common/IdGenerator/createId()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/Conversions/doubleObject(double)|",
+      "|java+method:///org/powertac/common/state/StateLogging/newstate(org.aspectj.lang.JoinPoint)|",
+      "|java+method:///org/aspectj/runtime/internal/Conversions/intObject(int)|",
+      "|java+method:///org/powertac/common/IdGenerator/createId()|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object%5B%5D)|",
+      "|java+method:///org/powertac/common/state/StateLogging/aspectOf()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "org.powertac:powertac-aop:1.4.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.powertac:common:1.3.3",
+    "coordinatesV2": "org.powertac:common:1.4.1",
+    "caller": "|java+method:///org/powertac/common/Orderbook/addAsk(org.powertac.common.OrderbookOrder)|",
+    "called": "|java+method:///org/powertac/common/state/StateLogging/setstate(org.aspectj.lang.JoinPoint)|",
+    "v1Body": [
+      "|java+method:///java/util/SortedSet/add(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/SortedSet/add(java.lang.Object)|",
+      "|java+method:///org/powertac/common/state/StateLogging/setstate(org.aspectj.lang.JoinPoint)|",
+      "|java+method:///org/powertac/common/state/StateLogging/aspectOf()|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object)|"
+    ],
+    "affectedLib": "org.powertac:powertac-aop:1.4.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.powertac:common:1.3.3",
+    "coordinatesV2": "org.powertac:common:1.4.1",
+    "caller": "|java+constructor:///org/powertac/common/Competition/Competition(java.lang.String)|",
+    "called": "|java+method:///org/powertac/common/state/StateLogging/aspectOf()|",
+    "v1Body": [
+      "|java+constructor:///org/joda/time/DateTime/DateTime(int,int,int,int,int,int,int,org.joda.time.DateTimeZone)|",
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///org/joda/time/DateTime/toInstant()|",
+      "|java+method:///org/powertac/common/IdGenerator/createId()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/joda/time/DateTime/DateTime(int,int,int,int,int,int,int,org.joda.time.DateTimeZone)|",
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///org/joda/time/DateTime/toInstant()|",
+      "|java+method:///org/powertac/common/state/StateLogging/newstate(org.aspectj.lang.JoinPoint)|",
+      "|java+method:///org/powertac/common/IdGenerator/createId()|",
+      "|java+method:///org/powertac/common/state/StateLogging/aspectOf()|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "org.powertac:powertac-aop:1.4.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.powertac:common:1.3.3",
+    "coordinatesV2": "org.powertac:common:1.4.1",
+    "caller": "|java+constructor:///org/powertac/common/msg/BrokerAuthentication/BrokerAuthentication(org.powertac.common.Broker)|",
+    "called": "|java+method:///org/powertac/common/state/StateLogging/aspectOf()|",
+    "v1Body": [
+      "|java+method:///org/powertac/common/Broker/getUsername()|",
+      "|java+method:///org/powertac/common/Broker/getPassword()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/powertac/common/Broker/getUsername()|",
+      "|java+method:///org/powertac/common/Broker/getPassword()|",
+      "|java+method:///org/powertac/common/state/StateLogging/newstate(org.aspectj.lang.JoinPoint)|",
+      "|java+method:///org/powertac/common/state/StateLogging/aspectOf()|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "org.powertac:powertac-aop:1.4.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.powertac:common:1.3.3",
+    "coordinatesV2": "org.powertac:common:1.4.1",
+    "caller": "|java+method:///org/powertac/common/CustomerInfo/setPopulation(java.lang.Integer)|",
+    "called": "|java+method:///org/powertac/common/state/StateLogging/setstate(org.aspectj.lang.JoinPoint)|",
+    "v1Body": [
+      "|java+method:///java/lang/Integer/intValue()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Integer/intValue()|",
+      "|java+method:///org/powertac/common/state/StateLogging/setstate(org.aspectj.lang.JoinPoint)|",
+      "|java+method:///org/powertac/common/state/StateLogging/aspectOf()|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object)|"
+    ],
+    "affectedLib": "org.powertac:powertac-aop:1.4.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.powertac:common:1.3.3",
+    "coordinatesV2": "org.powertac:common:1.4.1",
+    "caller": "|java+constructor:///org/powertac/common/Broker/Broker(java.lang.String)|",
+    "called": "|java+method:///org/powertac/common/state/StateLogging/aspectOf()|",
+    "v1Body": [
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+method:///org/powertac/common/IdGenerator/createId()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+method:///org/powertac/common/state/StateLogging/newstate(org.aspectj.lang.JoinPoint)|",
+      "|java+method:///org/powertac/common/IdGenerator/createId()|",
+      "|java+method:///org/powertac/common/state/StateLogging/aspectOf()|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "org.powertac:powertac-aop:1.4.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.powertac:common:1.3.3",
+    "coordinatesV2": "org.powertac:common:1.4.1",
+    "caller": "|java+constructor:///org/powertac/common/BalancingTransaction/BalancingTransaction(org.powertac.common.Broker,int,double,double)|",
+    "called": "|java+method:///org/powertac/common/state/StateLogging/aspectOf()|",
+    "v1Body": [
+      "|java+constructor:///org/powertac/common/BrokerTransaction/BrokerTransaction(int,org.powertac.common.Broker)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/Conversions/doubleObject(double)|",
+      "|java+constructor:///org/powertac/common/BrokerTransaction/BrokerTransaction(int,org.powertac.common.Broker)|",
+      "|java+method:///org/powertac/common/state/StateLogging/newstate(org.aspectj.lang.JoinPoint)|",
+      "|java+method:///org/aspectj/runtime/internal/Conversions/intObject(int)|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object%5B%5D)|",
+      "|java+method:///org/powertac/common/state/StateLogging/aspectOf()|"
+    ],
+    "affectedLib": "org.powertac:powertac-aop:1.4.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.powertac:common:1.3.3",
+    "coordinatesV2": "org.powertac:common:1.4.1",
+    "caller": "|java+constructor:///org/powertac/common/msg/SimStart/SimStart(org.joda.time.Instant)|",
+    "called": "|java+method:///org/powertac/common/state/StateLogging/aspectOf()|",
+    "v1Body": [
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/powertac/common/state/StateLogging/newstate(org.aspectj.lang.JoinPoint)|",
+      "|java+method:///org/powertac/common/state/StateLogging/aspectOf()|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "org.powertac:powertac-aop:1.4.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.powertac:common:1.3.3",
+    "coordinatesV2": "org.powertac:common:1.4.1",
+    "caller": "|java+method:///org/powertac/common/Competition/addCustomer(org.powertac.common.CustomerInfo)|",
+    "called": "|java+method:///org/powertac/common/state/StateLogging/setstate(org.aspectj.lang.JoinPoint)|",
+    "v1Body": [
+      "|java+method:///java/util/ArrayList/add(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/powertac/common/state/StateLogging/setstate(org.aspectj.lang.JoinPoint)|",
+      "|java+method:///java/util/ArrayList/add(java.lang.Object)|",
+      "|java+method:///org/powertac/common/state/StateLogging/aspectOf()|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object)|"
+    ],
+    "affectedLib": "org.powertac:powertac-aop:1.4.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.powertac:common:1.3.3",
+    "coordinatesV2": "org.powertac:common:1.4.1",
+    "caller": "|java+constructor:///org/powertac/common/Broker/Broker(java.lang.String,boolean,boolean)|",
+    "called": "|java+method:///org/powertac/common/state/StateLogging/aspectOf()|",
+    "v1Body": [
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+method:///org/powertac/common/IdGenerator/createId()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/Conversions/booleanObject(boolean)|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+method:///org/powertac/common/state/StateLogging/newstate(org.aspectj.lang.JoinPoint)|",
+      "|java+method:///org/powertac/common/IdGenerator/createId()|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object%5B%5D)|",
+      "|java+method:///org/powertac/common/state/StateLogging/aspectOf()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "org.powertac:powertac-aop:1.4.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.powertac:common:1.3.3",
+    "coordinatesV2": "org.powertac:common:1.4.1",
+    "caller": "|java+initializer:///org/powertac/common/TariffSpecification/TariffSpecification$initializer|",
+    "called": "|java+method:///org/apache/logging/log4j/LogManager/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/logging/log4j/LogManager/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/logging/log4j/LogManager/getLogger(java.lang.Class)|",
+      "|java+method:///org/powertac/common/TariffSpecification/ajc$preClinit()|"
+    ],
+    "affectedLib": "org.apache.logging.log4j:log4j-api:2.7",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.powertac:common:1.3.3",
+    "coordinatesV2": "org.powertac:common:1.4.1",
+    "caller": "|java+initializer:///org/powertac/common/msg/EconomicControlEvent/EconomicControlEvent$initializer|",
+    "called": "|java+method:///org/apache/logging/log4j/LogManager/getLogger(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/apache/logging/log4j/LogManager/getLogger(java.lang.String)|",
+      "|java+method:///java/lang/Class/getName()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/powertac/common/msg/EconomicControlEvent/ajc$preClinit()|",
+      "|java+method:///org/apache/logging/log4j/LogManager/getLogger(java.lang.String)|",
+      "|java+method:///java/lang/Class/getName()|"
+    ],
+    "affectedLib": "org.apache.logging.log4j:log4j-api:2.7",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.powertac:common:1.3.3",
+    "coordinatesV2": "org.powertac:common:1.4.1",
+    "caller": "|java+initializer:///org/powertac/common/Order/Order$initializer|",
+    "called": "|java+method:///org/apache/logging/log4j/LogManager/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/logging/log4j/LogManager/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/logging/log4j/LogManager/getLogger(java.lang.Class)|",
+      "|java+method:///org/powertac/common/Order/ajc$preClinit()|"
+    ],
+    "affectedLib": "org.apache.logging.log4j:log4j-api:2.7",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.powertac:common:1.3.3",
+    "coordinatesV2": "org.powertac:common:1.4.1",
+    "caller": "|java+initializer:///org/powertac/common/config/Configurator/Configurator$initializer|",
+    "called": "|java+method:///org/apache/logging/log4j/LogManager/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/logging/log4j/LogManager/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/commons/configuration2/io/ClasspathLocationStrategy/ClasspathLocationStrategy()|",
+      "|java+method:///org/apache/logging/log4j/LogManager/getLogger(java.lang.Class)|",
+      "|java+constructor:///java/util/LinkedList/LinkedList()|",
+      "|java+constructor:///org/apache/commons/configuration2/io/BasePathLocationStrategy/BasePathLocationStrategy()|",
+      "|java+constructor:///org/apache/commons/configuration2/io/CombinedLocationStrategy/CombinedLocationStrategy(java.util.Collection)|",
+      "|java+constructor:///org/apache/commons/configuration2/convert/DefaultListDelimiterHandler/DefaultListDelimiterHandler(char)|",
+      "|java+method:///java/util/LinkedList/add(java.lang.Object)|"
+    ],
+    "affectedLib": "org.apache.logging.log4j:log4j-api:2.7",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.powertac:common:1.3.3",
+    "coordinatesV2": "org.powertac:common:1.4.1",
+    "caller": "|java+initializer:///org/powertac/common/CustomerInfo/CustomerInfo$initializer|",
+    "called": "|java+method:///org/apache/logging/log4j/LogManager/getLogger(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/apache/logging/log4j/LogManager/getLogger(java.lang.String)|",
+      "|java+method:///java/lang/Class/getName()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/powertac/common/CustomerInfo/ajc$preClinit()|",
+      "|java+method:///org/apache/logging/log4j/LogManager/getLogger(java.lang.String)|",
+      "|java+method:///java/lang/Class/getName()|"
+    ],
+    "affectedLib": "org.apache.logging.log4j:log4j-api:2.7",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.powertac:common:1.3.3",
+    "coordinatesV2": "org.powertac:common:1.4.1",
+    "caller": "|java+method:///org/powertac/util/MessageDispatcher/dispatch(java.lang.Object,java.lang.String,java.lang.Object%5B%5D)|",
+    "called": "|java+method:///org/apache/logging/log4j/LogManager/getLogger(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/lang/NoSuchMethodException/toString()|",
+      "|java+method:///org/apache/logging/log4j/Logger/debug(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/Throwable/getStackTrace()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/apache/logging/log4j/Logger/error(java.lang.String)|",
+      "|java+method:///java/lang/reflect/Method/invoke(java.lang.Object,java.lang.Object%5B%5D)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/reflect/InvocationTargetException/getTargetException()|",
+      "|java+method:///java/lang/Class/getMethod(java.lang.String,java.lang.Class%5B%5D)|",
+      "|java+method:///org/apache/logging/log4j/LogManager/getLogger(java.lang.String)|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///java/lang/Exception/toString()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/NoSuchMethodException/toString()|",
+      "|java+method:///org/apache/logging/log4j/Logger/debug(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/Throwable/getStackTrace()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder(java.lang.String)|",
+      "|java+method:///org/apache/logging/log4j/Logger/error(java.lang.String)|",
+      "|java+method:///java/lang/reflect/Method/invoke(java.lang.Object,java.lang.Object%5B%5D)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/reflect/InvocationTargetException/getTargetException()|",
+      "|java+method:///java/lang/Class/getMethod(java.lang.String,java.lang.Class%5B%5D)|",
+      "|java+method:///org/apache/logging/log4j/LogManager/getLogger(java.lang.String)|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///java/lang/Exception/toString()|"
+    ],
+    "affectedLib": "org.apache.logging.log4j:log4j-api:2.7",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.powertac:common:1.3.3",
+    "coordinatesV2": "org.powertac:common:1.4.1",
+    "caller": "|java+initializer:///org/powertac/common/Tariff/Tariff$initializer|",
+    "called": "|java+method:///org/apache/logging/log4j/LogManager/getLogger(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/apache/logging/log4j/LogManager/getLogger(java.lang.String)|",
+      "|java+method:///java/lang/Class/getName()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/logging/log4j/LogManager/getLogger(java.lang.String)|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+method:///org/powertac/common/Tariff/ajc$preClinit()|"
+    ],
+    "affectedLib": "org.apache.logging.log4j:log4j-api:2.7",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.powertac:common:1.3.3",
+    "coordinatesV2": "org.powertac:common:1.4.1",
+    "caller": "|java+initializer:///org/powertac/common/Rate/Rate$initializer|",
+    "called": "|java+method:///org/apache/logging/log4j/LogManager/getLogger(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/apache/logging/log4j/LogManager/getLogger(java.lang.String)|",
+      "|java+method:///java/lang/Class/getName()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/powertac/common/Rate/ajc$preClinit()|",
+      "|java+method:///org/apache/logging/log4j/LogManager/getLogger(java.lang.String)|",
+      "|java+method:///java/lang/Class/getName()|"
+    ],
+    "affectedLib": "org.apache.logging.log4j:log4j-api:2.7",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.powertac:common:1.3.3",
+    "coordinatesV2": "org.powertac:common:1.4.1",
+    "caller": "|java+initializer:///org/powertac/common/TimeService/TimeService$initializer|",
+    "called": "|java+method:///org/apache/logging/log4j/LogManager/getLogger(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/apache/logging/log4j/LogManager/getLogger(java.lang.String)|",
+      "|java+method:///java/lang/Class/getName()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/powertac/common/TimeService/ajc$preClinit()|",
+      "|java+method:///org/apache/logging/log4j/LogManager/getLogger(java.lang.String)|",
+      "|java+method:///java/lang/Class/getName()|"
+    ],
+    "affectedLib": "org.apache.logging.log4j:log4j-api:2.7",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.powertac:common:1.3.3",
+    "coordinatesV2": "org.powertac:common:1.4.1",
+    "caller": "|java+constructor:///org/powertac/common/Competition/Competition(java.lang.String)|",
+    "called": "|java+constructor:///org/joda/time/DateTime/DateTime(int,int,int,int,int,int,int,org.joda.time.DateTimeZone)|",
+    "v1Body": [
+      "|java+constructor:///org/joda/time/DateTime/DateTime(int,int,int,int,int,int,int,org.joda.time.DateTimeZone)|",
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///org/joda/time/DateTime/toInstant()|",
+      "|java+method:///org/powertac/common/IdGenerator/createId()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/joda/time/DateTime/DateTime(int,int,int,int,int,int,int,org.joda.time.DateTimeZone)|",
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///org/joda/time/DateTime/toInstant()|",
+      "|java+method:///org/powertac/common/state/StateLogging/newstate(org.aspectj.lang.JoinPoint)|",
+      "|java+method:///org/powertac/common/IdGenerator/createId()|",
+      "|java+method:///org/powertac/common/state/StateLogging/aspectOf()|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "joda-time:joda-time:2.9.7",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.powertac:common:1.3.3",
+    "coordinatesV2": "org.powertac:common:1.4.1",
+    "caller": "|java+method:///org/powertac/common/TimeService/setCurrentTime(org.joda.time.Instant)|",
+    "called": "|java+constructor:///org/joda/time/DateTime/DateTime(java.lang.Object,org.joda.time.DateTimeZone)|",
+    "v1Body": [
+      "|java+constructor:///org/joda/time/DateTime/DateTime(java.lang.Object,org.joda.time.DateTimeZone)|",
+      "|java+method:///org/apache/logging/log4j/Logger/debug(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/joda/time/Instant/toString()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/joda/time/DateTime/DateTime(java.lang.Object,org.joda.time.DateTimeZone)|",
+      "|java+method:///org/apache/logging/log4j/Logger/debug(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder(java.lang.String)|",
+      "|java+method:///org/powertac/common/state/StateLogging/setstate(org.aspectj.lang.JoinPoint)|",
+      "|java+method:///org/joda/time/Instant/toString()|",
+      "|java+method:///org/powertac/common/state/StateLogging/aspectOf()|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "affectedLib": "joda-time:joda-time:2.9.7",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.powertac:common:1.3.3",
+    "coordinatesV2": "org.powertac:common:1.4.1",
+    "caller": "|java+method:///org/powertac/common/TimeService/setCurrentTime(org.joda.time.base.AbstractDateTime)|",
+    "called": "|java+method:///org/joda/time/base/AbstractDateTime/toString()|",
+    "v1Body": [
+      "|java+constructor:///org/joda/time/Instant/Instant(java.lang.Object)|",
+      "|java+method:///org/apache/logging/log4j/Logger/debug(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+method:///org/powertac/common/TimeService/setCurrentTime(org.joda.time.Instant)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/joda/time/base/AbstractDateTime/toString()|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/joda/time/Instant/Instant(java.lang.Object)|",
+      "|java+method:///org/apache/logging/log4j/Logger/debug(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+method:///org/powertac/common/TimeService/setCurrentTime(org.joda.time.Instant)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder(java.lang.String)|",
+      "|java+method:///org/powertac/common/state/StateLogging/setstate(org.aspectj.lang.JoinPoint)|",
+      "|java+method:///org/joda/time/base/AbstractDateTime/toString()|",
+      "|java+method:///org/powertac/common/state/StateLogging/aspectOf()|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "affectedLib": "joda-time:joda-time:2.9.7",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.powertac:common:1.3.3",
+    "coordinatesV2": "org.powertac:common:1.4.1",
+    "caller": "|java+method:///org/powertac/common/TimeService/setCurrentTime()|",
+    "called": "|java+constructor:///org/joda/time/Instant/Instant(long)|",
+    "v1Body": [
+      "|java+method:///org/apache/logging/log4j/Logger/debug(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/powertac/common/TimeService/setCurrentTime(org.joda.time.Instant)|",
+      "|java+method:///java/lang/StringBuilder/append(long)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///org/joda/time/Instant/Instant()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+method:///org/joda/time/Instant/getMillis()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+constructor:///org/joda/time/Instant/Instant(long)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/logging/log4j/Logger/debug(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/powertac/common/TimeService/setCurrentTime(org.joda.time.Instant)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(long)|",
+      "|java+constructor:///org/joda/time/Instant/Instant()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+method:///org/joda/time/Instant/getMillis()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+constructor:///org/joda/time/Instant/Instant(long)|"
+    ],
+    "affectedLib": "joda-time:joda-time:2.9.7",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.powertac:common:1.3.3",
+    "coordinatesV2": "org.powertac:common:1.4.1",
+    "caller": "|java+method:///org/powertac/common/Rate/addHourlyCharge(org.powertac.common.HourlyCharge,boolean)|",
+    "called": "|java+constructor:///org/joda/time/Instant/Instant(long)|",
+    "v1Body": [
+      "|java+method:///java/util/TreeSet/headSet(java.lang.Object)|",
+      "|java+method:///org/powertac/common/HourlyCharge/setRateId(long)|",
+      "|java+method:///java/lang/Object/toString()|",
+      "|java+method:///java/util/SortedSet/size()|",
+      "|java+method:///org/apache/logging/log4j/Logger/info(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/powertac/common/Rate/getId()|",
+      "|java+method:///org/powertac/common/HourlyCharge/getValue()|",
+      "|java+method:///java/lang/StringBuilder/append(long)|",
+      "|java+method:///org/powertac/common/HourlyCharge/getId()|",
+      "|java+method:///java/lang/Math/signum(double)|",
+      "|java+method:///java/util/TreeSet/remove(java.lang.Object)|",
+      "|java+method:///org/powertac/common/HourlyCharge/getAtTime()|",
+      "|java+method:///org/apache/logging/log4j/Logger/error(java.lang.String)|",
+      "|java+method:///org/powertac/common/Rate$ProbeCharge/setAtTime(org.joda.time.Instant)|",
+      "|java+method:///org/joda/time/Instant/plus(long)|",
+      "|java+method:///org/apache/logging/log4j/Logger/debug(java.lang.String)|",
+      "|java+method:///org/powertac/common/Rate/toString()|",
+      "|java+method:///org/joda/time/Instant/getMillis()|",
+      "|java+method:///org/powertac/common/Rate/getCurrentTime()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/joda/time/Instant/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/util/SortedSet/last()|",
+      "|java+constructor:///org/joda/time/Instant/Instant(long)|",
+      "|java+constructor:///org/powertac/common/Rate$ProbeCharge/Rate$ProbeCharge(org.powertac.common.Rate,org.joda.time.Instant,double)|",
+      "|java+method:///java/lang/StringBuilder/append(double)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/util/TreeSet/add(java.lang.Object)|",
+      "|java+method:///org/apache/logging/log4j/Logger/warn(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/TreeSet/headSet(java.lang.Object)|",
+      "|java+method:///java/lang/Object/toString()|",
+      "|java+method:///java/util/SortedSet/size()|",
+      "|java+method:///org/apache/logging/log4j/Logger/info(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/powertac/common/Rate/getId()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder(java.lang.String)|",
+      "|java+method:///org/powertac/common/HourlyCharge/getValue()|",
+      "|java+method:///org/powertac/common/HourlyCharge/getId()|",
+      "|java+method:///java/lang/Math/signum(double)|",
+      "|java+method:///org/joda/time/Instant/toString()|",
+      "|java+method:///java/util/TreeSet/remove(java.lang.Object)|",
+      "|java+method:///org/powertac/common/HourlyCharge/getAtTime()|",
+      "|java+method:///org/apache/logging/log4j/Logger/error(java.lang.String)|",
+      "|java+method:///org/powertac/common/state/StateLogging/aspectOf()|",
+      "|java+method:///org/powertac/common/HourlyCharge/setRateId(long)|",
+      "|java+method:///org/aspectj/runtime/internal/Conversions/booleanObject(boolean)|",
+      "|java+method:///org/powertac/common/Rate$ProbeCharge/setAtTime(org.joda.time.Instant)|",
+      "|java+method:///org/joda/time/Instant/plus(long)|",
+      "|java+method:///org/apache/logging/log4j/Logger/debug(java.lang.String)|",
+      "|java+method:///org/powertac/common/Rate/toString()|",
+      "|java+method:///org/joda/time/Instant/getMillis()|",
+      "|java+method:///org/powertac/common/Rate/getCurrentTime()|",
+      "|java+method:///org/powertac/common/state/StateLogging/setstate(org.aspectj.lang.JoinPoint)|",
+      "|java+method:///java/lang/StringBuilder/append(long)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/util/SortedSet/last()|",
+      "|java+constructor:///org/joda/time/Instant/Instant(long)|",
+      "|java+constructor:///org/powertac/common/Rate$ProbeCharge/Rate$ProbeCharge(org.powertac.common.Rate,org.joda.time.Instant,double)|",
+      "|java+method:///java/lang/StringBuilder/append(double)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/util/TreeSet/add(java.lang.Object)|",
+      "|java+method:///org/apache/logging/log4j/Logger/warn(java.lang.String)|"
+    ],
+    "affectedLib": "joda-time:joda-time:2.9.7",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.powertac:common:1.3.3",
+    "coordinatesV2": "org.powertac:common:1.4.1",
+    "caller": "|java+method:///org/powertac/common/Rate/getValue(org.joda.time.base.AbstractInstant,org.powertac.common.TariffEvaluationHelper)|",
+    "called": "|java+constructor:///org/joda/time/Instant/Instant(long)|",
+    "v1Body": [
+      "|java+constructor:///org/joda/time/Instant/Instant(java.lang.Object)|",
+      "|java+method:///java/util/SortedSet/size()|",
+      "|java+method:///org/joda/time/Instant/getMillis()|",
+      "|java+method:///org/powertac/common/HourlyCharge/getValue()|",
+      "|java+method:///java/lang/StringBuilder/append(long)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/powertac/common/HourlyCharge/getAtTime()|",
+      "|java+constructor:///org/powertac/common/Rate$ProbeCharge/Rate$ProbeCharge(org.powertac.common.Rate,org.joda.time.Instant,double)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/powertac/common/TariffEvaluationHelper/getWeightedValue(org.powertac.common.Rate)|",
+      "|java+method:///java/util/TreeSet/headSet(java.lang.Object)|",
+      "|java+method:///org/powertac/common/Rate$ProbeCharge/setAtTime(org.joda.time.Instant)|",
+      "|java+method:///org/joda/time/Instant/plus(long)|",
+      "|java+method:///org/apache/logging/log4j/Logger/debug(java.lang.String)|",
+      "|java+method:///java/util/TreeSet/size()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/joda/time/base/AbstractInstant/getMillis()|",
+      "|java+method:///java/util/SortedSet/last()|",
+      "|java+constructor:///org/joda/time/Instant/Instant(long)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/joda/time/Instant/Instant(java.lang.Object)|",
+      "|java+method:///java/util/SortedSet/size()|",
+      "|java+method:///org/joda/time/Instant/getMillis()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder(java.lang.String)|",
+      "|java+method:///org/powertac/common/HourlyCharge/getValue()|",
+      "|java+method:///java/lang/StringBuilder/append(long)|",
+      "|java+method:///org/powertac/common/HourlyCharge/getAtTime()|",
+      "|java+constructor:///org/powertac/common/Rate$ProbeCharge/Rate$ProbeCharge(org.powertac.common.Rate,org.joda.time.Instant,double)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/powertac/common/TariffEvaluationHelper/getWeightedValue(org.powertac.common.Rate)|",
+      "|java+method:///java/util/TreeSet/headSet(java.lang.Object)|",
+      "|java+method:///org/powertac/common/Rate$ProbeCharge/setAtTime(org.joda.time.Instant)|",
+      "|java+method:///org/joda/time/Instant/plus(long)|",
+      "|java+method:///org/apache/logging/log4j/Logger/debug(java.lang.String)|",
+      "|java+method:///java/util/TreeSet/size()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/joda/time/base/AbstractInstant/getMillis()|",
+      "|java+method:///java/util/SortedSet/last()|",
+      "|java+constructor:///org/joda/time/Instant/Instant(long)|"
+    ],
+    "affectedLib": "joda-time:joda-time:2.9.7",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.powertac:common:1.3.3",
+    "coordinatesV2": "org.powertac:common:1.4.1",
+    "caller": "|java+method:///org/powertac/common/Competition/withSimulationBaseTime(long)|",
+    "called": "|java+constructor:///org/joda/time/Instant/Instant(long)|",
+    "v1Body": [
+      "|java+constructor:///org/joda/time/Instant/Instant(long)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/Conversions/longObject(long)|",
+      "|java+method:///org/powertac/common/state/StateLogging/setstate(org.aspectj.lang.JoinPoint)|",
+      "|java+constructor:///org/joda/time/Instant/Instant(long)|",
+      "|java+method:///org/powertac/common/state/StateLogging/aspectOf()|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object)|"
+    ],
+    "affectedLib": "joda-time:joda-time:2.9.7",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.powertac:common:1.3.3",
+    "coordinatesV2": "org.powertac:common:1.4.1",
+    "caller": "|java+constructor:///org/powertac/common/Rate/Rate()|",
+    "called": "|java+constructor:///org/joda/time/Instant/Instant(long)|",
+    "v1Body": [
+      "|java+constructor:///org/powertac/common/RateCore/RateCore()|",
+      "|java+constructor:///org/joda/time/Instant/Instant(long)|",
+      "|java+constructor:///org/powertac/common/Rate$ProbeCharge/Rate$ProbeCharge(org.powertac.common.Rate,org.joda.time.Instant,double)|",
+      "|java+constructor:///java/util/TreeSet/TreeSet()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/powertac/common/RateCore/RateCore()|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/powertac/common/state/StateLogging/newstate(org.aspectj.lang.JoinPoint)|",
+      "|java+constructor:///org/joda/time/Instant/Instant(long)|",
+      "|java+method:///org/powertac/common/state/StateLogging/aspectOf()|",
+      "|java+constructor:///org/powertac/common/Rate$ProbeCharge/Rate$ProbeCharge(org.powertac.common.Rate,org.joda.time.Instant,double)|",
+      "|java+constructor:///java/util/TreeSet/TreeSet()|"
+    ],
+    "affectedLib": "joda-time:joda-time:2.9.7",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.powertac:common:1.3.3",
+    "coordinatesV2": "org.powertac:common:1.4.1",
+    "caller": "|java+method:///org/powertac/common/XMLMessageConverter/afterPropertiesSet()|",
+    "called": "|java+method:///com/thoughtworks/xstream/XStream/aliasSystemAttribute(java.lang.String,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/apache/logging/log4j/Logger/info(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///com/thoughtworks/xstream/XStream/processAnnotations(java.lang.Class)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+constructor:///com/thoughtworks/xstream/XStream/XStream()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///com/thoughtworks/xstream/XStream/autodetectAnnotations(boolean)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///org/powertac/common/XMLMessageConverter/findMyTypes(java.lang.String)|",
+      "|java+method:///com/thoughtworks/xstream/XStream/aliasSystemAttribute(java.lang.String,java.lang.String)|",
+      "|java+method:///org/apache/logging/log4j/Logger/error(java.lang.String,java.lang.Throwable)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/apache/logging/log4j/Logger/info(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///com/thoughtworks/xstream/XStream/processAnnotations(java.lang.Class)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder(java.lang.String)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+constructor:///com/thoughtworks/xstream/XStream/XStream()|",
+      "|java+method:///com/thoughtworks/xstream/XStream/autodetectAnnotations(boolean)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///org/powertac/common/XMLMessageConverter/findMyTypes(java.lang.String)|",
+      "|java+method:///com/thoughtworks/xstream/XStream/aliasSystemAttribute(java.lang.String,java.lang.String)|",
+      "|java+method:///org/apache/logging/log4j/Logger/error(java.lang.String,java.lang.Throwable)|"
+    ],
+    "affectedLib": "com.thoughtworks.xstream:xstream:1.4.9",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.powertac:common:1.3.3",
+    "coordinatesV2": "org.powertac:common:1.4.1",
+    "caller": "|java+method:///org/powertac/common/XMLMessageConverter/findMyTypes(java.lang.String)|",
+    "called": "|java+constructor:///org/springframework/core/type/classreading/CachingMetadataReaderFactory/CachingMetadataReaderFactory(org.springframework.core.io.ResourceLoader)|",
+    "v1Body": [
+      "|java+method:///java/lang/Class/forName(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/springframework/core/io/support/ResourcePatternResolver/getResources(java.lang.String)|",
+      "|java+method:///org/powertac/common/XMLMessageConverter/resolveBasePackage(java.lang.String)|",
+      "|java+method:///org/springframework/core/type/classreading/MetadataReaderFactory/getMetadataReader(org.springframework.core.io.Resource)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/springframework/core/io/Resource/isReadable()|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///org/springframework/core/type/classreading/MetadataReader/getClassMetadata()|",
+      "|java+method:///org/springframework/core/type/ClassMetadata/getClassName()|",
+      "|java+constructor:///org/springframework/core/io/support/PathMatchingResourcePatternResolver/PathMatchingResourcePatternResolver()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///org/springframework/core/type/classreading/CachingMetadataReaderFactory/CachingMetadataReaderFactory(org.springframework.core.io.ResourceLoader)|",
+      "|java+constructor:///java/util/ArrayList/ArrayList()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Class/forName(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/springframework/core/io/support/ResourcePatternResolver/getResources(java.lang.String)|",
+      "|java+method:///org/powertac/common/XMLMessageConverter/resolveBasePackage(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder(java.lang.String)|",
+      "|java+method:///org/springframework/core/type/classreading/MetadataReaderFactory/getMetadataReader(org.springframework.core.io.Resource)|",
+      "|java+method:///org/springframework/core/io/Resource/isReadable()|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///org/springframework/core/type/classreading/MetadataReader/getClassMetadata()|",
+      "|java+method:///org/springframework/core/type/ClassMetadata/getClassName()|",
+      "|java+constructor:///org/springframework/core/io/support/PathMatchingResourcePatternResolver/PathMatchingResourcePatternResolver()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///org/springframework/core/type/classreading/CachingMetadataReaderFactory/CachingMetadataReaderFactory(org.springframework.core.io.ResourceLoader)|",
+      "|java+constructor:///java/util/ArrayList/ArrayList()|"
+    ],
+    "affectedLib": "org.springframework:spring-core:4.3.6.RELEASE",
+    "change": "UPDATED"
+  }
+]

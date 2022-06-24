@@ -1,0 +1,42 @@
+[
+  {
+    "coordinatesV1": "org.apereo.cas:cas-server-support-hazelcast-monitor:5.2.0-RC1",
+    "coordinatesV2": "org.apereo.cas:cas-server-support-hazelcast-monitor:5.2.0-RC2",
+    "caller": "|java+method:///org/apereo/cas/monitor/HazelcastMonitor/getStatistics()|",
+    "called": "|java+method:///com/hazelcast/core/Hazelcast/getHazelcastInstanceByName(java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///com/hazelcast/core/HazelcastInstance/getConfig()|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///java/util/Map/keySet()|",
+      "|java+method:///com/hazelcast/config/Config/getMapConfigs()|",
+      "|java+method:///org/apereo/cas/configuration/model/core/util/TicketProperties/getRegistry()|",
+      "|java+method:///org/apereo/cas/configuration/model/core/ticket/registry/TicketRegistryProperties/getHazelcast()|",
+      "|java+method:///com/hazelcast/core/Hazelcast/getHazelcastInstanceByName(java.lang.String)|",
+      "|java+method:///java/util/Set/forEach(java.util.function.Consumer)|",
+      "|java+method:///java/util/List/toArray(java.lang.Object%5B%5D)|",
+      "|java+method:///org/apereo/cas/configuration/model/support/hazelcast/HazelcastProperties$Cluster/getInstanceName()|",
+      "|java+method:///org/apereo/cas/configuration/model/support/hazelcast/HazelcastProperties/getCluster()|",
+      "|java+method:///org/apereo/cas/configuration/CasConfigurationProperties/getTicket()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///com/hazelcast/core/HazelcastInstance/getConfig()|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/apereo/cas/configuration/model/support/hazelcast/HazelcastClusterProperties/getInstanceName()|",
+      "|java+method:///org/apereo/cas/configuration/model/support/hazelcast/HazelcastTicketRegistryProperties/getCluster()|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///java/util/Map/keySet()|",
+      "|java+method:///com/hazelcast/config/Config/getMapConfigs()|",
+      "|java+method:///java/util/List/toArray(java.lang.Object%5B%5D)|",
+      "|java+method:///org/apereo/cas/configuration/model/core/util/TicketProperties/getRegistry()|",
+      "|java+method:///org/apereo/cas/configuration/CasConfigurationProperties/getTicket()|",
+      "|java+method:///org/apereo/cas/configuration/model/core/ticket/registry/TicketRegistryProperties/getHazelcast()|",
+      "|java+method:///com/hazelcast/core/Hazelcast/getHazelcastInstanceByName(java.lang.String)|",
+      "|java+method:///java/util/Set/forEach(java.util.function.Consumer)|"
+    ],
+    "affectedLib": "com.hazelcast:hazelcast:3.8.3",
+    "change": "UPDATED"
+  }
+]

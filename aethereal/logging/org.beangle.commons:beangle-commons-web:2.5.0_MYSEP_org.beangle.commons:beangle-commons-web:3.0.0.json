@@ -1,0 +1,1059 @@
+[
+  {
+    "coordinatesV1": "org.beangle.commons:beangle-commons-web:3.0.0",
+    "coordinatesV2": "org.beangle.commons:beangle-commons-web:2.5.0",
+    "caller": "|java+constructor:///org/beangle/commons/web/url/UrlBuilder/UrlBuilder(java.lang.String)|",
+    "called": "|java+method:///org/apache/commons/lang/StringUtils/isEmpty(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/lang/StringUtils/isEmpty(java.lang.String)|",
+      "|java+method:///java/lang/String/trim()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/String/trim()|",
+      "|java+method:///org/beangle/commons/lang/Strings/isEmpty(java.lang.CharSequence)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "commons-lang:commons-lang:2.6",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.beangle.commons:beangle-commons-web:3.0.0",
+    "coordinatesV2": "org.beangle.commons:beangle-commons-web:2.5.0",
+    "caller": "|java+method:///org/beangle/commons/web/io/DefaultStreamDownloader/download(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.io.File,java.lang.String)|",
+    "called": "|java+method:///org/apache/commons/lang/Validate/isTrue(boolean,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/lang/Validate/isTrue(boolean,java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/commons/lang/Validate/notNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///org/beangle/commons/web/io/DefaultStreamDownloader/download(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.io.InputStream,java.lang.String,java.lang.String)|",
+      "|java+method:///java/io/File/exists()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/io/File/getAbsolutePath()|",
+      "|java+constructor:///java/io/FileInputStream/FileInputStream(java.io.File)|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/beangle/commons/lang/Assert/isTrue(boolean,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/beangle/commons/web/io/DefaultStreamDownloader/download(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.io.InputStream,java.lang.String,java.lang.String)|",
+      "|java+method:///java/io/File/exists()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/io/File/getAbsolutePath()|",
+      "|java+method:///org/beangle/commons/lang/Assert/notNull(java.lang.Object,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+constructor:///java/io/FileInputStream/FileInputStream(java.io.File)|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "affectedLib": "commons-lang:commons-lang:2.6",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.beangle.commons:beangle-commons-web:3.0.0",
+    "coordinatesV2": "org.beangle.commons:beangle-commons-web:2.5.0",
+    "caller": "|java+method:///org/beangle/commons/web/url/UrlBuilder/buildUrl()|",
+    "called": "|java+method:///org/apache/commons/lang/ObjectUtils/equals(java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/lang/ObjectUtils/equals(java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+method:///org/beangle/commons/web/url/UrlBuilder/buildRequestUrl()|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/append(char)|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+method:///org/beangle/commons/web/url/UrlBuilder/buildRequestUrl()|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/append(char)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/beangle/commons/lang/Objects/equals(java.lang.Object,java.lang.Object)|"
+    ],
+    "affectedLib": "commons-lang:commons-lang:2.6",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.beangle.commons:beangle-commons-web:3.0.0",
+    "coordinatesV2": "org.beangle.commons:beangle-commons-web:2.5.0",
+    "caller": "|java+constructor:///org/beangle/commons/web/filter/AntPathRequestMatcher/AntPathRequestMatcher(java.lang.String,java.lang.String)|",
+    "called": "|java+method:///org/apache/commons/lang/StringUtils/isNotEmpty(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/lang/String/toLowerCase()|",
+      "|java+method:///org/apache/commons/lang/StringUtils/isNotEmpty(java.lang.String)|",
+      "|java+method:///org/apache/commons/lang/Validate/notEmpty(java.lang.String,java.lang.String)|",
+      "|java+method:///org/beangle/http/HttpMethod/valueOf(java.lang.String)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/String/toLowerCase()|",
+      "|java+method:///org/beangle/commons/http/HttpMethod/valueOf(java.lang.String)|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///org/beangle/commons/lang/Assert/notEmpty(java.lang.CharSequence,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///org/beangle/commons/lang/Strings/isNotEmpty(java.lang.CharSequence)|"
+    ],
+    "affectedLib": "commons-lang:commons-lang:2.6",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.beangle.commons:beangle-commons-web:3.0.0",
+    "coordinatesV2": "org.beangle.commons:beangle-commons-web:2.5.0",
+    "caller": "|java+constructor:///org/beangle/commons/web/filter/RegexRequestMatcher/RegexRequestMatcher(java.lang.String,java.lang.String,boolean)|",
+    "called": "|java+method:///org/apache/commons/lang/StringUtils/isNotEmpty(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/util/regex/Pattern/compile(java.lang.String,int)|",
+      "|java+method:///java/util/regex/Pattern/compile(java.lang.String)|",
+      "|java+method:///org/apache/commons/lang/StringUtils/isNotEmpty(java.lang.String)|",
+      "|java+method:///org/beangle/http/HttpMethod/valueOf(java.lang.String)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/regex/Pattern/compile(java.lang.String,int)|",
+      "|java+method:///java/util/regex/Pattern/compile(java.lang.String)|",
+      "|java+method:///org/beangle/commons/http/HttpMethod/valueOf(java.lang.String)|",
+      "|java+method:///org/beangle/commons/lang/Strings/isNotEmpty(java.lang.CharSequence)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "commons-lang:commons-lang:2.6",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.beangle.commons:beangle-commons-web:3.0.0",
+    "coordinatesV2": "org.beangle.commons:beangle-commons-web:2.5.0",
+    "caller": "|java+method:///org/beangle/commons/web/util/RequestUtils/getServletPath(javax.servlet.http.HttpServletRequest)|",
+    "called": "|java+method:///org/apache/commons/lang/StringUtils/isNotEmpty(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///javax/servlet/http/HttpServletRequest/getServletPath()|",
+      "|java+method:///java/lang/String/indexOf(int,int)|",
+      "|java+method:///java/lang/String/length()|",
+      "|java+method:///org/apache/commons/lang/StringUtils/isNotEmpty(java.lang.String)|",
+      "|java+method:///java/lang/String/substring(int)|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getRequestURI()|"
+    ],
+    "v2Body": [
+      "|java+method:///javax/servlet/http/HttpServletRequest/getServletPath()|",
+      "|java+method:///java/lang/String/length()|",
+      "|java+method:///org/beangle/commons/lang/Strings/isNotEmpty(java.lang.CharSequence)|",
+      "|java+method:///java/lang/String/indexOf(int,int)|",
+      "|java+method:///java/lang/String/substring(int)|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getRequestURI()|"
+    ],
+    "affectedLib": "commons-lang:commons-lang:2.6",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.beangle.commons:beangle-commons-web:3.0.0",
+    "coordinatesV2": "org.beangle.commons:beangle-commons-web:2.5.0",
+    "caller": "|java+method:///org/beangle/commons/web/util/RedirectUtils/isValidRedirectUrl(java.lang.String)|",
+    "called": "|java+method:///org/apache/commons/lang/StringUtils/isBlank(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/lang/String/toLowerCase()|",
+      "|java+method:///org/apache/commons/lang/StringUtils/isBlank(java.lang.String)|",
+      "|java+method:///java/lang/String/startsWith(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/String/toLowerCase()|",
+      "|java+method:///java/lang/String/startsWith(java.lang.String)|",
+      "|java+method:///org/beangle/commons/lang/Strings/isBlank(java.lang.CharSequence)|"
+    ],
+    "affectedLib": "commons-lang:commons-lang:2.6",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.beangle.commons:beangle-commons-web:3.0.0",
+    "coordinatesV2": "org.beangle.commons:beangle-commons-web:2.5.0",
+    "caller": "|java+method:///org/beangle/commons/web/io/DefaultStreamDownloader/addContent(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String)|",
+    "called": "|java+method:///org/apache/commons/lang/StringUtils/substringAfterLast(java.lang.String,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///javax/servlet/http/HttpServletResponse/setHeader(java.lang.String,java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/commons/lang/StringUtils/substringAfterLast(java.lang.String,java.lang.String)|",
+      "|java+method:///org/beangle/commons/web/util/RequestUtils/encodeAttachName(javax.servlet.http.HttpServletRequest,java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///javax/servlet/http/HttpServletResponse/setContentType(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/beangle/http/mime/MimeTypeProvider/getMimeType(java.lang.String,java.lang.String)|",
+      "|java+method:///javax/servlet/http/HttpServletResponse/getContentType()|"
+    ],
+    "v2Body": [
+      "|java+method:///javax/servlet/http/HttpServletResponse/setHeader(java.lang.String,java.lang.String)|",
+      "|java+method:///org/beangle/commons/http/mime/MimeTypeProvider/getMimeType(java.lang.String,java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///javax/servlet/http/HttpServletResponse/getContentType()|",
+      "|java+method:///org/beangle/commons/web/util/RequestUtils/encodeAttachName(javax.servlet.http.HttpServletRequest,java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///javax/servlet/http/HttpServletResponse/setContentType(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/beangle/commons/lang/Strings/substringAfterLast(java.lang.String,java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object,java.lang.Object)|"
+    ],
+    "affectedLib": "commons-lang:commons-lang:2.6",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.beangle.commons:beangle-commons-web:3.0.0",
+    "coordinatesV2": "org.beangle.commons:beangle-commons-web:2.5.0",
+    "caller": "|java+method:///org/beangle/commons/web/filter/GenericHttpFilter/initParams(javax.servlet.FilterConfig)|",
+    "called": "|java+method:///org/apache/commons/lang/StringUtils/join(java.util.Collection,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///javax/servlet/FilterConfig/getFilterName()|",
+      "|java+constructor:///javax/servlet/ServletException/ServletException(java.lang.String)|",
+      "|java+method:///javax/servlet/FilterConfig/getInitParameter(java.lang.String)|",
+      "|java+method:///javax/servlet/FilterConfig/getInitParameterNames()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/util/Set/remove(java.lang.Object)|",
+      "|java+method:///org/apache/commons/lang/StringUtils/join(java.util.Collection,java.lang.String)|",
+      "|java+method:///java/util/Enumeration/nextElement()|",
+      "|java+constructor:///java/util/HashSet/HashSet(java.util.Collection)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/util/Set/size()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/util/Set/isEmpty()|",
+      "|java+method:///org/apache/commons/beanutils/PropertyUtils/setProperty(java.lang.Object,java.lang.String,java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/util/Enumeration/hasMoreElements()|"
+    ],
+    "v2Body": [
+      "|java+method:///javax/servlet/FilterConfig/getFilterName()|",
+      "|java+constructor:///javax/servlet/ServletException/ServletException(java.lang.String)|",
+      "|java+method:///javax/servlet/FilterConfig/getInitParameter(java.lang.String)|",
+      "|java+method:///javax/servlet/FilterConfig/getInitParameterNames()|",
+      "|java+method:///org/beangle/commons/lang/Strings/join(java.util.Collection,java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/util/Set/remove(java.lang.Object)|",
+      "|java+method:///java/util/Enumeration/nextElement()|",
+      "|java+constructor:///java/util/HashSet/HashSet(java.util.Collection)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/util/Set/size()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/util/Set/isEmpty()|",
+      "|java+method:///org/apache/commons/beanutils/PropertyUtils/setProperty(java.lang.Object,java.lang.String,java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/util/Enumeration/hasMoreElements()|"
+    ],
+    "affectedLib": "commons-lang:commons-lang:2.6",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.beangle.commons:beangle-commons-web:3.0.0",
+    "coordinatesV2": "org.beangle.commons:beangle-commons-web:2.5.0",
+    "caller": "|java+method:///org/beangle/commons/web/filter/GenericHttpFilter/init(javax.servlet.FilterConfig)|",
+    "called": "|java+method:///org/apache/commons/lang/Validate/notNull(java.lang.Object,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+method:///javax/servlet/FilterConfig/getFilterName()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/commons/lang/Validate/notNull(java.lang.Object,java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/beangle/commons/web/filter/GenericHttpFilter/initFilterBean()|",
+      "|java+method:///org/beangle/commons/web/filter/GenericHttpFilter/initParams(javax.servlet.FilterConfig)|",
+      "|java+method:///org/slf4j/Logger/isDebugEnabled()|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+method:///javax/servlet/FilterConfig/getFilterName()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/beangle/commons/web/filter/GenericHttpFilter/initFilterBean()|",
+      "|java+method:///org/slf4j/Logger/isDebugEnabled()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/beangle/commons/lang/Assert/notNull(java.lang.Object,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///org/beangle/commons/web/filter/GenericHttpFilter/initParams(javax.servlet.FilterConfig)|"
+    ],
+    "affectedLib": "commons-lang:commons-lang:2.6",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.beangle.commons:beangle-commons-web:3.0.0",
+    "coordinatesV2": "org.beangle.commons:beangle-commons-web:2.5.0",
+    "caller": "|java+method:///org/beangle/commons/web/io/DefaultStreamDownloader/init()|",
+    "called": "|java+method:///org/apache/commons/lang/Validate/notNull(java.lang.Object,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/lang/Validate/notNull(java.lang.Object,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/beangle/commons/lang/Assert/notNull(java.lang.Object,java.lang.String,java.lang.Object%5B%5D)|"
+    ],
+    "affectedLib": "commons-lang:commons-lang:2.6",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.beangle.commons:beangle-commons-web:3.0.0",
+    "coordinatesV2": "org.beangle.commons:beangle-commons-web:2.5.0",
+    "caller": "|java+method:///org/beangle/commons/web/io/SplitStreamDownloader/download(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.io.InputStream,java.lang.String,java.lang.String)|",
+    "called": "|java+method:///org/apache/commons/lang/time/StopWatch/getTime()|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/lang/StringUtils/substringAfter(java.lang.String,java.lang.String)|",
+      "|java+method:///java/io/InputStream/available()|",
+      "|java+method:///javax/servlet/http/HttpServletResponse/setHeader(java.lang.String,java.lang.String)|",
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///javax/servlet/http/HttpServletResponse/setContentLength(int)|",
+      "|java+method:///org/apache/commons/lang/StringUtils/isNotEmpty(java.lang.String)|",
+      "|java+constructor:///org/apache/commons/lang/time/StopWatch/StopWatch()|",
+      "|java+method:///java/lang/StringBuilder/append(long)|",
+      "|java+method:///org/beangle/commons/web/io/SplitStreamDownloader/addContent(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/io/InputStream/read(byte%5B%5D,int,int)|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getHeader(java.lang.String)|",
+      "|java+method:///org/beangle/commons/web/io/SplitStreamDownloader/array(java.lang.Object%5B%5D)|",
+      "|java+method:///java/lang/Long/parseLong(java.lang.String)|",
+      "|java+method:///java/lang/String/split(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///org/apache/commons/io/IOUtils/closeQuietly(java.io.InputStream)|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+method:///org/beangle/commons/web/io/SplitStreamDownloader/maxStep(long,long,int)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///javax/servlet/http/HttpServletResponse/reset()|",
+      "|java+method:///org/beangle/commons/web/io/SplitStreamDownloader/getAttachName(java.lang.String,java.lang.String)|",
+      "|java+method:///java/io/OutputStream/write(byte%5B%5D,int,int)|",
+      "|java+method:///org/apache/commons/lang/time/StopWatch/start()|",
+      "|java+method:///javax/servlet/http/HttpServletResponse/getOutputStream()|",
+      "|java+method:///org/slf4j/Logger/isDebugEnabled()|",
+      "|java+method:///org/apache/commons/lang/time/StopWatch/getTime()|",
+      "|java+method:///java/lang/StringBuilder/append(float)|",
+      "|java+method:///javax/servlet/http/HttpServletResponse/setStatus(int)|",
+      "|java+method:///java/io/InputStream/skip(long)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/io/InputStream/available()|",
+      "|java+method:///javax/servlet/http/HttpServletResponse/setHeader(java.lang.String,java.lang.String)|",
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///javax/servlet/http/HttpServletResponse/setContentLength(int)|",
+      "|java+method:///java/lang/StringBuilder/append(long)|",
+      "|java+method:///org/beangle/commons/lang/Strings/substringAfter(java.lang.String,java.lang.String)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///java/lang/StringBuilder/append(float)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/io/InputStream/read(byte%5B%5D,int,int)|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getHeader(java.lang.String)|",
+      "|java+method:///org/beangle/commons/web/io/SplitStreamDownloader/array(java.lang.Object%5B%5D)|",
+      "|java+method:///java/lang/Long/parseLong(java.lang.String)|",
+      "|java+method:///java/lang/String/split(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///org/apache/commons/io/IOUtils/closeQuietly(java.io.InputStream)|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/beangle/commons/lang/time/Stopwatch/start()|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+method:///org/beangle/commons/lang/time/Stopwatch/elapsedMillis()|",
+      "|java+method:///org/beangle/commons/web/io/SplitStreamDownloader/maxStep(long,long,int)|",
+      "|java+method:///org/beangle/commons/web/io/SplitStreamDownloader/addContent(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String)|",
+      "|java+method:///org/beangle/commons/lang/Strings/isNotEmpty(java.lang.CharSequence)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///javax/servlet/http/HttpServletResponse/reset()|",
+      "|java+method:///org/beangle/commons/web/io/SplitStreamDownloader/getAttachName(java.lang.String,java.lang.String)|",
+      "|java+method:///java/io/OutputStream/write(byte%5B%5D,int,int)|",
+      "|java+method:///org/slf4j/Logger/isDebugEnabled()|",
+      "|java+method:///javax/servlet/http/HttpServletResponse/getOutputStream()|",
+      "|java+constructor:///org/beangle/commons/lang/time/Stopwatch/Stopwatch()|",
+      "|java+method:///javax/servlet/http/HttpServletResponse/setStatus(int)|",
+      "|java+method:///java/io/InputStream/skip(long)|"
+    ],
+    "affectedLib": "commons-lang:commons-lang:2.6",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.beangle.commons:beangle-commons-web:3.0.0",
+    "coordinatesV2": "org.beangle.commons:beangle-commons-web:2.5.0",
+    "caller": "|java+method:///org/beangle/commons/web/filter/CharacterEncodingFilter/init(javax.servlet.FilterConfig)|",
+    "called": "|java+method:///org/apache/commons/lang/StringUtils/isNotBlank(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///javax/servlet/FilterConfig/getInitParameter(java.lang.String)|",
+      "|java+method:///org/apache/commons/lang/StringUtils/isNotBlank(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///javax/servlet/FilterConfig/getInitParameter(java.lang.String)|",
+      "|java+method:///org/beangle/commons/lang/Strings/isNotBlank(java.lang.CharSequence)|"
+    ],
+    "affectedLib": "commons-lang:commons-lang:2.6",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.beangle.commons:beangle-commons-web:3.0.0",
+    "coordinatesV2": "org.beangle.commons:beangle-commons-web:2.5.0",
+    "caller": "|java+method:///org/beangle/commons/web/url/UrlRender/renderUri(java.lang.String,java.lang.String)|",
+    "called": "|java+method:///org/apache/commons/lang/StringUtils/isEmpty(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/lang/StringUtils/isEmpty(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/String/indexOf(java.lang.String,int)|",
+      "|java+method:///java/lang/String/substring(int,int)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/String/substring(int)|",
+      "|java+method:///java/lang/StringBuilder/append(char)|",
+      "|java+method:///java/lang/String/startsWith(java.lang.String)|",
+      "|java+method:///java/lang/String/length()|",
+      "|java+method:///org/apache/commons/lang/Validate/notNull(java.lang.Object)|",
+      "|java+method:///java/lang/String/lastIndexOf(java.lang.String)|",
+      "|java+method:///java/lang/String/indexOf(int)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/beangle/commons/lang/Assert/notNull(java.lang.Object)|",
+      "|java+method:///java/lang/String/length()|",
+      "|java+method:///java/lang/String/indexOf(java.lang.String,int)|",
+      "|java+method:///java/lang/String/substring(int,int)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/beangle/commons/lang/Strings/isEmpty(java.lang.CharSequence)|",
+      "|java+method:///java/lang/String/substring(int)|",
+      "|java+method:///java/lang/StringBuilder/append(char)|",
+      "|java+method:///java/lang/String/startsWith(java.lang.String)|",
+      "|java+method:///java/lang/String/lastIndexOf(java.lang.String)|",
+      "|java+method:///java/lang/String/indexOf(int)|"
+    ],
+    "affectedLib": "commons-lang:commons-lang:2.6",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.beangle.commons:beangle-commons-web:3.0.0",
+    "coordinatesV2": "org.beangle.commons:beangle-commons-web:2.5.0",
+    "caller": "|java+method:///org/beangle/commons/web/io/DefaultStreamDownloader/getAttachName(java.lang.String,java.lang.String)|",
+    "called": "|java+method:///org/apache/commons/lang/StringUtils/substringAfterLast(java.lang.String,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/commons/lang/StringUtils/substringAfterLast(java.lang.String,java.lang.String)|",
+      "|java+method:///org/apache/commons/lang/StringUtils/isBlank(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/beangle/commons/web/io/DefaultStreamDownloader/getFileName(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/String/endsWith(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/beangle/commons/lang/Strings/substringAfterLast(java.lang.String,java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/beangle/commons/lang/Strings/isBlank(java.lang.CharSequence)|",
+      "|java+method:///org/beangle/commons/web/io/DefaultStreamDownloader/getFileName(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/String/endsWith(java.lang.String)|"
+    ],
+    "affectedLib": "commons-lang:commons-lang:2.6",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.beangle.commons:beangle-commons-web:2.5.0",
+    "coordinatesV2": "org.beangle.commons:beangle-commons-web:3.0.0",
+    "caller": "|java+method:///org/beangle/commons/web/filter/AntPathRequestMatcher/matches(javax.servlet.http.HttpServletRequest)|",
+    "called": "|java+method:///org/springframework/util/AntPathMatcher/match(java.lang.String,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/lang/String/toLowerCase()|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getServletPath()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getPathInfo()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/beangle/http/HttpMethod/valueOf(java.lang.String)|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getMethod()|",
+      "|java+method:///org/springframework/util/AntPathMatcher/match(java.lang.String,java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/String/toLowerCase()|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getServletPath()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getPathInfo()|",
+      "|java+method:///org/beangle/commons/http/HttpMethod/valueOf(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getMethod()|",
+      "|java+method:///org/springframework/util/AntPathMatcher/match(java.lang.String,java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "affectedLib": "org.springframework:spring-core:3.1.1.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.beangle.commons:beangle-commons-web:2.5.0",
+    "coordinatesV2": "org.beangle.commons:beangle-commons-web:3.0.0",
+    "caller": "|java+method:///org/beangle/commons/web/spring/XmlWebApplicationContext/loadBeanDefinitions(org.springframework.beans.factory.support.DefaultListableBeanFactory)|",
+    "called": "|java+constructor:///org/springframework/beans/factory/xml/XmlBeanDefinitionReader/XmlBeanDefinitionReader(org.springframework.beans.factory.support.BeanDefinitionRegistry)|",
+    "v1Body": [
+      "|java+method:///org/springframework/beans/factory/xml/XmlBeanDefinitionReader/setEnvironment(org.springframework.core.env.Environment)|",
+      "|java+constructor:///org/springframework/beans/factory/xml/XmlBeanDefinitionReader/XmlBeanDefinitionReader(org.springframework.beans.factory.support.BeanDefinitionRegistry)|",
+      "|java+method:///org/beangle/commons/web/spring/XmlWebApplicationContext/loadBeanDefinitions(org.springframework.beans.factory.xml.XmlBeanDefinitionReader)|",
+      "|java+method:///org/beangle/commons/web/spring/XmlWebApplicationContext/getEnvironment()|",
+      "|java+method:///org/springframework/beans/factory/xml/XmlBeanDefinitionReader/setEntityResolver(org.xml.sax.EntityResolver)|",
+      "|java+method:///org/springframework/beans/factory/xml/XmlBeanDefinitionReader/setResourceLoader(org.springframework.core.io.ResourceLoader)|",
+      "|java+constructor:///org/springframework/beans/factory/xml/ResourceEntityResolver/ResourceEntityResolver(org.springframework.core.io.ResourceLoader)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/springframework/beans/factory/xml/XmlBeanDefinitionReader/setEnvironment(org.springframework.core.env.Environment)|",
+      "|java+constructor:///org/springframework/beans/factory/xml/XmlBeanDefinitionReader/XmlBeanDefinitionReader(org.springframework.beans.factory.support.BeanDefinitionRegistry)|",
+      "|java+method:///org/beangle/commons/web/spring/XmlWebApplicationContext/loadBeanDefinitions(org.springframework.beans.factory.xml.XmlBeanDefinitionReader)|",
+      "|java+method:///org/springframework/beans/factory/xml/XmlBeanDefinitionReader/setValidating(boolean)|",
+      "|java+method:///org/beangle/commons/web/spring/XmlWebApplicationContext/getEnvironment()|",
+      "|java+method:///org/springframework/beans/factory/xml/XmlBeanDefinitionReader/setEntityResolver(org.xml.sax.EntityResolver)|",
+      "|java+method:///org/springframework/beans/factory/xml/XmlBeanDefinitionReader/setResourceLoader(org.springframework.core.io.ResourceLoader)|",
+      "|java+constructor:///org/springframework/beans/factory/xml/ResourceEntityResolver/ResourceEntityResolver(org.springframework.core.io.ResourceLoader)|"
+    ],
+    "affectedLib": "org.springframework:spring-beans:3.1.1.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.beangle.commons:beangle-commons-web:2.5.0",
+    "coordinatesV2": "org.beangle.commons:beangle-commons-web:3.0.0",
+    "caller": "|java+constructor:///org/beangle/commons/web/url/UrlBuilder/UrlBuilder(java.lang.String)|",
+    "called": "|java+method:///org/beangle/commons/lang/Strings/isEmpty(java.lang.CharSequence)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/lang/StringUtils/isEmpty(java.lang.String)|",
+      "|java+method:///java/lang/String/trim()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/String/trim()|",
+      "|java+method:///org/beangle/commons/lang/Strings/isEmpty(java.lang.CharSequence)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "org.beangle.commons:beangle-commons-core:3.0.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.beangle.commons:beangle-commons-web:2.5.0",
+    "coordinatesV2": "org.beangle.commons:beangle-commons-web:3.0.0",
+    "caller": "|java+constructor:///org/beangle/commons/web/filter/RegexRequestMatcher/RegexRequestMatcher(java.lang.String,java.lang.String,boolean)|",
+    "called": "|java+method:///org/beangle/commons/lang/Strings/isNotEmpty(java.lang.CharSequence)|",
+    "v1Body": [
+      "|java+method:///java/util/regex/Pattern/compile(java.lang.String,int)|",
+      "|java+method:///java/util/regex/Pattern/compile(java.lang.String)|",
+      "|java+method:///org/apache/commons/lang/StringUtils/isNotEmpty(java.lang.String)|",
+      "|java+method:///org/beangle/http/HttpMethod/valueOf(java.lang.String)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/regex/Pattern/compile(java.lang.String,int)|",
+      "|java+method:///java/util/regex/Pattern/compile(java.lang.String)|",
+      "|java+method:///org/beangle/commons/http/HttpMethod/valueOf(java.lang.String)|",
+      "|java+method:///org/beangle/commons/lang/Strings/isNotEmpty(java.lang.CharSequence)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "org.beangle.commons:beangle-commons-core:3.0.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.beangle.commons:beangle-commons-web:2.5.0",
+    "coordinatesV2": "org.beangle.commons:beangle-commons-web:3.0.0",
+    "caller": "|java+method:///org/beangle/commons/web/util/RequestUtils/getServletPath(javax.servlet.http.HttpServletRequest)|",
+    "called": "|java+method:///org/beangle/commons/lang/Strings/isNotEmpty(java.lang.CharSequence)|",
+    "v1Body": [
+      "|java+method:///javax/servlet/http/HttpServletRequest/getServletPath()|",
+      "|java+method:///java/lang/String/indexOf(int,int)|",
+      "|java+method:///java/lang/String/length()|",
+      "|java+method:///org/apache/commons/lang/StringUtils/isNotEmpty(java.lang.String)|",
+      "|java+method:///java/lang/String/substring(int)|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getRequestURI()|"
+    ],
+    "v2Body": [
+      "|java+method:///javax/servlet/http/HttpServletRequest/getServletPath()|",
+      "|java+method:///java/lang/String/length()|",
+      "|java+method:///org/beangle/commons/lang/Strings/isNotEmpty(java.lang.CharSequence)|",
+      "|java+method:///java/lang/String/indexOf(int,int)|",
+      "|java+method:///java/lang/String/substring(int)|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getRequestURI()|"
+    ],
+    "affectedLib": "org.beangle.commons:beangle-commons-core:3.0.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.beangle.commons:beangle-commons-web:2.5.0",
+    "coordinatesV2": "org.beangle.commons:beangle-commons-web:3.0.0",
+    "caller": "|java+method:///org/beangle/commons/web/util/RedirectUtils/isValidRedirectUrl(java.lang.String)|",
+    "called": "|java+method:///org/beangle/commons/lang/Strings/isBlank(java.lang.CharSequence)|",
+    "v1Body": [
+      "|java+method:///java/lang/String/toLowerCase()|",
+      "|java+method:///org/apache/commons/lang/StringUtils/isBlank(java.lang.String)|",
+      "|java+method:///java/lang/String/startsWith(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/String/toLowerCase()|",
+      "|java+method:///java/lang/String/startsWith(java.lang.String)|",
+      "|java+method:///org/beangle/commons/lang/Strings/isBlank(java.lang.CharSequence)|"
+    ],
+    "affectedLib": "org.beangle.commons:beangle-commons-core:3.0.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.beangle.commons:beangle-commons-web:2.5.0",
+    "coordinatesV2": "org.beangle.commons:beangle-commons-web:3.0.0",
+    "caller": "|java+method:///org/beangle/commons/web/filter/GenericHttpFilter/initParams(javax.servlet.FilterConfig)|",
+    "called": "|java+method:///org/beangle/commons/lang/Strings/join(java.util.Collection,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///javax/servlet/FilterConfig/getFilterName()|",
+      "|java+constructor:///javax/servlet/ServletException/ServletException(java.lang.String)|",
+      "|java+method:///javax/servlet/FilterConfig/getInitParameter(java.lang.String)|",
+      "|java+method:///javax/servlet/FilterConfig/getInitParameterNames()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/util/Set/remove(java.lang.Object)|",
+      "|java+method:///org/apache/commons/lang/StringUtils/join(java.util.Collection,java.lang.String)|",
+      "|java+method:///java/util/Enumeration/nextElement()|",
+      "|java+constructor:///java/util/HashSet/HashSet(java.util.Collection)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/util/Set/size()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/util/Set/isEmpty()|",
+      "|java+method:///org/apache/commons/beanutils/PropertyUtils/setProperty(java.lang.Object,java.lang.String,java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/util/Enumeration/hasMoreElements()|"
+    ],
+    "v2Body": [
+      "|java+method:///javax/servlet/FilterConfig/getFilterName()|",
+      "|java+constructor:///javax/servlet/ServletException/ServletException(java.lang.String)|",
+      "|java+method:///javax/servlet/FilterConfig/getInitParameter(java.lang.String)|",
+      "|java+method:///javax/servlet/FilterConfig/getInitParameterNames()|",
+      "|java+method:///org/beangle/commons/lang/Strings/join(java.util.Collection,java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/util/Set/remove(java.lang.Object)|",
+      "|java+method:///java/util/Enumeration/nextElement()|",
+      "|java+constructor:///java/util/HashSet/HashSet(java.util.Collection)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/util/Set/size()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/util/Set/isEmpty()|",
+      "|java+method:///org/apache/commons/beanutils/PropertyUtils/setProperty(java.lang.Object,java.lang.String,java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/util/Enumeration/hasMoreElements()|"
+    ],
+    "affectedLib": "org.beangle.commons:beangle-commons-core:3.0.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.beangle.commons:beangle-commons-web:2.5.0",
+    "coordinatesV2": "org.beangle.commons:beangle-commons-web:3.0.0",
+    "caller": "|java+method:///org/beangle/commons/web/io/SplitStreamDownloader/download(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.io.InputStream,java.lang.String,java.lang.String)|",
+    "called": "|java+method:///org/beangle/commons/lang/time/Stopwatch/start()|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/lang/StringUtils/substringAfter(java.lang.String,java.lang.String)|",
+      "|java+method:///java/io/InputStream/available()|",
+      "|java+method:///javax/servlet/http/HttpServletResponse/setHeader(java.lang.String,java.lang.String)|",
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///javax/servlet/http/HttpServletResponse/setContentLength(int)|",
+      "|java+method:///org/apache/commons/lang/StringUtils/isNotEmpty(java.lang.String)|",
+      "|java+constructor:///org/apache/commons/lang/time/StopWatch/StopWatch()|",
+      "|java+method:///java/lang/StringBuilder/append(long)|",
+      "|java+method:///org/beangle/commons/web/io/SplitStreamDownloader/addContent(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/io/InputStream/read(byte%5B%5D,int,int)|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getHeader(java.lang.String)|",
+      "|java+method:///org/beangle/commons/web/io/SplitStreamDownloader/array(java.lang.Object%5B%5D)|",
+      "|java+method:///java/lang/Long/parseLong(java.lang.String)|",
+      "|java+method:///java/lang/String/split(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///org/apache/commons/io/IOUtils/closeQuietly(java.io.InputStream)|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+method:///org/beangle/commons/web/io/SplitStreamDownloader/maxStep(long,long,int)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///javax/servlet/http/HttpServletResponse/reset()|",
+      "|java+method:///org/beangle/commons/web/io/SplitStreamDownloader/getAttachName(java.lang.String,java.lang.String)|",
+      "|java+method:///java/io/OutputStream/write(byte%5B%5D,int,int)|",
+      "|java+method:///org/apache/commons/lang/time/StopWatch/start()|",
+      "|java+method:///javax/servlet/http/HttpServletResponse/getOutputStream()|",
+      "|java+method:///org/slf4j/Logger/isDebugEnabled()|",
+      "|java+method:///org/apache/commons/lang/time/StopWatch/getTime()|",
+      "|java+method:///java/lang/StringBuilder/append(float)|",
+      "|java+method:///javax/servlet/http/HttpServletResponse/setStatus(int)|",
+      "|java+method:///java/io/InputStream/skip(long)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/io/InputStream/available()|",
+      "|java+method:///javax/servlet/http/HttpServletResponse/setHeader(java.lang.String,java.lang.String)|",
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///javax/servlet/http/HttpServletResponse/setContentLength(int)|",
+      "|java+method:///java/lang/StringBuilder/append(long)|",
+      "|java+method:///org/beangle/commons/lang/Strings/substringAfter(java.lang.String,java.lang.String)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///java/lang/StringBuilder/append(float)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/io/InputStream/read(byte%5B%5D,int,int)|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getHeader(java.lang.String)|",
+      "|java+method:///org/beangle/commons/web/io/SplitStreamDownloader/array(java.lang.Object%5B%5D)|",
+      "|java+method:///java/lang/Long/parseLong(java.lang.String)|",
+      "|java+method:///java/lang/String/split(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///org/apache/commons/io/IOUtils/closeQuietly(java.io.InputStream)|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/beangle/commons/lang/time/Stopwatch/start()|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+method:///org/beangle/commons/lang/time/Stopwatch/elapsedMillis()|",
+      "|java+method:///org/beangle/commons/web/io/SplitStreamDownloader/maxStep(long,long,int)|",
+      "|java+method:///org/beangle/commons/web/io/SplitStreamDownloader/addContent(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String)|",
+      "|java+method:///org/beangle/commons/lang/Strings/isNotEmpty(java.lang.CharSequence)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///javax/servlet/http/HttpServletResponse/reset()|",
+      "|java+method:///org/beangle/commons/web/io/SplitStreamDownloader/getAttachName(java.lang.String,java.lang.String)|",
+      "|java+method:///java/io/OutputStream/write(byte%5B%5D,int,int)|",
+      "|java+method:///org/slf4j/Logger/isDebugEnabled()|",
+      "|java+method:///javax/servlet/http/HttpServletResponse/getOutputStream()|",
+      "|java+constructor:///org/beangle/commons/lang/time/Stopwatch/Stopwatch()|",
+      "|java+method:///javax/servlet/http/HttpServletResponse/setStatus(int)|",
+      "|java+method:///java/io/InputStream/skip(long)|"
+    ],
+    "affectedLib": "org.beangle.commons:beangle-commons-core:3.0.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.beangle.commons:beangle-commons-web:2.5.0",
+    "coordinatesV2": "org.beangle.commons:beangle-commons-web:3.0.0",
+    "caller": "|java+method:///org/beangle/commons/web/filter/CharacterEncodingFilter/init(javax.servlet.FilterConfig)|",
+    "called": "|java+method:///org/beangle/commons/lang/Strings/isNotBlank(java.lang.CharSequence)|",
+    "v1Body": [
+      "|java+method:///javax/servlet/FilterConfig/getInitParameter(java.lang.String)|",
+      "|java+method:///org/apache/commons/lang/StringUtils/isNotBlank(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///javax/servlet/FilterConfig/getInitParameter(java.lang.String)|",
+      "|java+method:///org/beangle/commons/lang/Strings/isNotBlank(java.lang.CharSequence)|"
+    ],
+    "affectedLib": "org.beangle.commons:beangle-commons-core:3.0.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.beangle.commons:beangle-commons-web:2.5.0",
+    "coordinatesV2": "org.beangle.commons:beangle-commons-web:3.0.0",
+    "caller": "|java+method:///org/beangle/commons/web/spring/ContextLoader/configureAndRefreshApplicationContext(org.springframework.context.ConfigurableApplicationContext,javax.servlet.ServletContext)|",
+    "called": "|java+method:///org/beangle/commons/lang/Objects/toString(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///javax/servlet/ServletContext/getServletContextName()|",
+      "|java+method:///org/springframework/context/ConfigurableApplicationContext/setId(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/springframework/context/support/AbstractRefreshableConfigApplicationContext/setConfigLocation(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/springframework/context/ConfigurableApplicationContext/refresh()|",
+      "|java+method:///org/springframework/util/ObjectUtils/getDisplayString(java.lang.Object)|",
+      "|java+method:///org/beangle/commons/web/spring/ContextLoader/customizeContext(javax.servlet.ServletContext,org.springframework.context.ConfigurableApplicationContext)|",
+      "|java+method:///javax/servlet/ServletContext/getInitParameter(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/beangle/commons/lang/Objects/toString(java.lang.Object)|",
+      "|java+method:///javax/servlet/ServletContext/getServletContextName()|",
+      "|java+method:///org/springframework/context/ConfigurableApplicationContext/setId(java.lang.String)|",
+      "|java+method:///org/springframework/context/ConfigurableApplicationContext/refresh()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/springframework/context/support/AbstractRefreshableConfigApplicationContext/setConfigLocation(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/beangle/commons/web/spring/ContextLoader/customizeContext(javax.servlet.ServletContext,org.springframework.context.ConfigurableApplicationContext)|",
+      "|java+method:///javax/servlet/ServletContext/getInitParameter(java.lang.String)|"
+    ],
+    "affectedLib": "org.beangle.commons:beangle-commons-core:3.0.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.beangle.commons:beangle-commons-web:2.5.0",
+    "coordinatesV2": "org.beangle.commons:beangle-commons-web:3.0.0",
+    "caller": "|java+method:///org/beangle/commons/web/io/DefaultStreamDownloader/download(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.io.File,java.lang.String)|",
+    "called": "|java+method:///org/beangle/commons/lang/Assert/isTrue(boolean,java.lang.String,java.lang.Object%5B%5D)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/lang/Validate/isTrue(boolean,java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/commons/lang/Validate/notNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///org/beangle/commons/web/io/DefaultStreamDownloader/download(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.io.InputStream,java.lang.String,java.lang.String)|",
+      "|java+method:///java/io/File/exists()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/io/File/getAbsolutePath()|",
+      "|java+constructor:///java/io/FileInputStream/FileInputStream(java.io.File)|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/beangle/commons/lang/Assert/isTrue(boolean,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/beangle/commons/web/io/DefaultStreamDownloader/download(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.io.InputStream,java.lang.String,java.lang.String)|",
+      "|java+method:///java/io/File/exists()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/io/File/getAbsolutePath()|",
+      "|java+method:///org/beangle/commons/lang/Assert/notNull(java.lang.Object,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+constructor:///java/io/FileInputStream/FileInputStream(java.io.File)|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "affectedLib": "org.beangle.commons:beangle-commons-core:3.0.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.beangle.commons:beangle-commons-web:2.5.0",
+    "coordinatesV2": "org.beangle.commons:beangle-commons-web:3.0.0",
+    "caller": "|java+method:///org/beangle/commons/web/spring/ContextLoader/createApplicationContext(javax.servlet.ServletContext)|",
+    "called": "|java+method:///org/beangle/commons/lang/reflect/Reflections/newInstance(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///java/lang/Class/isAssignableFrom(java.lang.Class)|",
+      "|java+constructor:///org/springframework/context/ApplicationContextException/ApplicationContextException(java.lang.String)|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/springframework/beans/BeanUtils/instantiateClass(java.lang.Class)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/beangle/commons/web/spring/ContextLoader/determineContextClass(javax.servlet.ServletContext)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Class/isAssignableFrom(java.lang.Class)|",
+      "|java+constructor:///org/springframework/context/ApplicationContextException/ApplicationContextException(java.lang.String)|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/beangle/commons/lang/reflect/Reflections/newInstance(java.lang.Class)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/beangle/commons/web/spring/ContextLoader/determineContextClass(javax.servlet.ServletContext)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|"
+    ],
+    "affectedLib": "org.beangle.commons:beangle-commons-core:3.0.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.beangle.commons:beangle-commons-web:2.5.0",
+    "coordinatesV2": "org.beangle.commons:beangle-commons-web:3.0.0",
+    "caller": "|java+method:///org/beangle/commons/web/url/UrlBuilder/buildUrl()|",
+    "called": "|java+method:///org/beangle/commons/lang/Objects/equals(java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/lang/ObjectUtils/equals(java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+method:///org/beangle/commons/web/url/UrlBuilder/buildRequestUrl()|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/append(char)|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+method:///org/beangle/commons/web/url/UrlBuilder/buildRequestUrl()|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/append(char)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/beangle/commons/lang/Objects/equals(java.lang.Object,java.lang.Object)|"
+    ],
+    "affectedLib": "org.beangle.commons:beangle-commons-core:3.0.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.beangle.commons:beangle-commons-web:2.5.0",
+    "coordinatesV2": "org.beangle.commons:beangle-commons-web:3.0.0",
+    "caller": "|java+constructor:///org/beangle/commons/web/filter/AntPathRequestMatcher/AntPathRequestMatcher(java.lang.String,java.lang.String)|",
+    "called": "|java+method:///org/beangle/commons/lang/Strings/isNotEmpty(java.lang.CharSequence)|",
+    "v1Body": [
+      "|java+method:///java/lang/String/toLowerCase()|",
+      "|java+method:///org/apache/commons/lang/StringUtils/isNotEmpty(java.lang.String)|",
+      "|java+method:///org/apache/commons/lang/Validate/notEmpty(java.lang.String,java.lang.String)|",
+      "|java+method:///org/beangle/http/HttpMethod/valueOf(java.lang.String)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/String/toLowerCase()|",
+      "|java+method:///org/beangle/commons/http/HttpMethod/valueOf(java.lang.String)|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///org/beangle/commons/lang/Assert/notEmpty(java.lang.CharSequence,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///org/beangle/commons/lang/Strings/isNotEmpty(java.lang.CharSequence)|"
+    ],
+    "affectedLib": "org.beangle.commons:beangle-commons-core:3.0.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.beangle.commons:beangle-commons-web:2.5.0",
+    "coordinatesV2": "org.beangle.commons:beangle-commons-web:3.0.0",
+    "caller": "|java+method:///org/beangle/commons/web/io/DefaultStreamDownloader/addContent(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String)|",
+    "called": "|java+method:///org/beangle/commons/lang/Strings/substringAfterLast(java.lang.String,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///javax/servlet/http/HttpServletResponse/setHeader(java.lang.String,java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/commons/lang/StringUtils/substringAfterLast(java.lang.String,java.lang.String)|",
+      "|java+method:///org/beangle/commons/web/util/RequestUtils/encodeAttachName(javax.servlet.http.HttpServletRequest,java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///javax/servlet/http/HttpServletResponse/setContentType(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/beangle/http/mime/MimeTypeProvider/getMimeType(java.lang.String,java.lang.String)|",
+      "|java+method:///javax/servlet/http/HttpServletResponse/getContentType()|"
+    ],
+    "v2Body": [
+      "|java+method:///javax/servlet/http/HttpServletResponse/setHeader(java.lang.String,java.lang.String)|",
+      "|java+method:///org/beangle/commons/http/mime/MimeTypeProvider/getMimeType(java.lang.String,java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///javax/servlet/http/HttpServletResponse/getContentType()|",
+      "|java+method:///org/beangle/commons/web/util/RequestUtils/encodeAttachName(javax.servlet.http.HttpServletRequest,java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///javax/servlet/http/HttpServletResponse/setContentType(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/beangle/commons/lang/Strings/substringAfterLast(java.lang.String,java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object,java.lang.Object)|"
+    ],
+    "affectedLib": "org.beangle.commons:beangle-commons-core:3.0.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.beangle.commons:beangle-commons-web:2.5.0",
+    "coordinatesV2": "org.beangle.commons:beangle-commons-web:3.0.0",
+    "caller": "|java+method:///org/beangle/commons/web/filter/GenericHttpFilter/init(javax.servlet.FilterConfig)|",
+    "called": "|java+method:///org/beangle/commons/lang/Assert/notNull(java.lang.Object,java.lang.String,java.lang.Object%5B%5D)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+method:///javax/servlet/FilterConfig/getFilterName()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/commons/lang/Validate/notNull(java.lang.Object,java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/beangle/commons/web/filter/GenericHttpFilter/initFilterBean()|",
+      "|java+method:///org/beangle/commons/web/filter/GenericHttpFilter/initParams(javax.servlet.FilterConfig)|",
+      "|java+method:///org/slf4j/Logger/isDebugEnabled()|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+method:///javax/servlet/FilterConfig/getFilterName()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/beangle/commons/web/filter/GenericHttpFilter/initFilterBean()|",
+      "|java+method:///org/slf4j/Logger/isDebugEnabled()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/beangle/commons/lang/Assert/notNull(java.lang.Object,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///org/beangle/commons/web/filter/GenericHttpFilter/initParams(javax.servlet.FilterConfig)|"
+    ],
+    "affectedLib": "org.beangle.commons:beangle-commons-core:3.0.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.beangle.commons:beangle-commons-web:2.5.0",
+    "coordinatesV2": "org.beangle.commons:beangle-commons-web:3.0.0",
+    "caller": "|java+method:///org/beangle/commons/web/io/DefaultStreamDownloader/init()|",
+    "called": "|java+method:///org/beangle/commons/lang/Assert/notNull(java.lang.Object,java.lang.String,java.lang.Object%5B%5D)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/lang/Validate/notNull(java.lang.Object,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/beangle/commons/lang/Assert/notNull(java.lang.Object,java.lang.String,java.lang.Object%5B%5D)|"
+    ],
+    "affectedLib": "org.beangle.commons:beangle-commons-core:3.0.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.beangle.commons:beangle-commons-web:2.5.0",
+    "coordinatesV2": "org.beangle.commons:beangle-commons-web:3.0.0",
+    "caller": "|java+method:///org/beangle/commons/web/url/UrlRender/renderUri(java.lang.String,java.lang.String)|",
+    "called": "|java+method:///org/beangle/commons/lang/Assert/notNull(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/lang/StringUtils/isEmpty(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/String/indexOf(java.lang.String,int)|",
+      "|java+method:///java/lang/String/substring(int,int)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/String/substring(int)|",
+      "|java+method:///java/lang/StringBuilder/append(char)|",
+      "|java+method:///java/lang/String/startsWith(java.lang.String)|",
+      "|java+method:///java/lang/String/length()|",
+      "|java+method:///org/apache/commons/lang/Validate/notNull(java.lang.Object)|",
+      "|java+method:///java/lang/String/lastIndexOf(java.lang.String)|",
+      "|java+method:///java/lang/String/indexOf(int)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/beangle/commons/lang/Assert/notNull(java.lang.Object)|",
+      "|java+method:///java/lang/String/length()|",
+      "|java+method:///java/lang/String/indexOf(java.lang.String,int)|",
+      "|java+method:///java/lang/String/substring(int,int)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/beangle/commons/lang/Strings/isEmpty(java.lang.CharSequence)|",
+      "|java+method:///java/lang/String/substring(int)|",
+      "|java+method:///java/lang/StringBuilder/append(char)|",
+      "|java+method:///java/lang/String/startsWith(java.lang.String)|",
+      "|java+method:///java/lang/String/lastIndexOf(java.lang.String)|",
+      "|java+method:///java/lang/String/indexOf(int)|"
+    ],
+    "affectedLib": "org.beangle.commons:beangle-commons-core:3.0.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.beangle.commons:beangle-commons-web:2.5.0",
+    "coordinatesV2": "org.beangle.commons:beangle-commons-web:3.0.0",
+    "caller": "|java+method:///org/beangle/commons/web/io/DefaultStreamDownloader/getAttachName(java.lang.String,java.lang.String)|",
+    "called": "|java+method:///org/beangle/commons/lang/Strings/substringAfterLast(java.lang.String,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/commons/lang/StringUtils/substringAfterLast(java.lang.String,java.lang.String)|",
+      "|java+method:///org/apache/commons/lang/StringUtils/isBlank(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/beangle/commons/web/io/DefaultStreamDownloader/getFileName(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/String/endsWith(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/beangle/commons/lang/Strings/substringAfterLast(java.lang.String,java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/beangle/commons/lang/Strings/isBlank(java.lang.CharSequence)|",
+      "|java+method:///org/beangle/commons/web/io/DefaultStreamDownloader/getFileName(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/String/endsWith(java.lang.String)|"
+    ],
+    "affectedLib": "org.beangle.commons:beangle-commons-core:3.0.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.beangle.commons:beangle-commons-web:2.5.0",
+    "coordinatesV2": "org.beangle.commons:beangle-commons-web:3.0.0",
+    "caller": "|java+method:///org/beangle/commons/web/spring/ContextLoader/createApplicationContext(javax.servlet.ServletContext)|",
+    "called": "|java+constructor:///org/springframework/context/ApplicationContextException/ApplicationContextException(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/lang/Class/isAssignableFrom(java.lang.Class)|",
+      "|java+constructor:///org/springframework/context/ApplicationContextException/ApplicationContextException(java.lang.String)|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/springframework/beans/BeanUtils/instantiateClass(java.lang.Class)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/beangle/commons/web/spring/ContextLoader/determineContextClass(javax.servlet.ServletContext)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Class/isAssignableFrom(java.lang.Class)|",
+      "|java+constructor:///org/springframework/context/ApplicationContextException/ApplicationContextException(java.lang.String)|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/beangle/commons/lang/reflect/Reflections/newInstance(java.lang.Class)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/beangle/commons/web/spring/ContextLoader/determineContextClass(javax.servlet.ServletContext)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|"
+    ],
+    "affectedLib": "org.springframework:spring-context:3.1.1.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.beangle.commons:beangle-commons-web:2.5.0",
+    "coordinatesV2": "org.beangle.commons:beangle-commons-web:3.0.0",
+    "caller": "|java+method:///org/beangle/commons/web/spring/ContextLoader/configureAndRefreshApplicationContext(org.springframework.context.ConfigurableApplicationContext,javax.servlet.ServletContext)|",
+    "called": "|java+method:///org/springframework/context/support/AbstractRefreshableConfigApplicationContext/setConfigLocation(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///javax/servlet/ServletContext/getServletContextName()|",
+      "|java+method:///org/springframework/context/ConfigurableApplicationContext/setId(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/springframework/context/support/AbstractRefreshableConfigApplicationContext/setConfigLocation(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/springframework/context/ConfigurableApplicationContext/refresh()|",
+      "|java+method:///org/springframework/util/ObjectUtils/getDisplayString(java.lang.Object)|",
+      "|java+method:///org/beangle/commons/web/spring/ContextLoader/customizeContext(javax.servlet.ServletContext,org.springframework.context.ConfigurableApplicationContext)|",
+      "|java+method:///javax/servlet/ServletContext/getInitParameter(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/beangle/commons/lang/Objects/toString(java.lang.Object)|",
+      "|java+method:///javax/servlet/ServletContext/getServletContextName()|",
+      "|java+method:///org/springframework/context/ConfigurableApplicationContext/setId(java.lang.String)|",
+      "|java+method:///org/springframework/context/ConfigurableApplicationContext/refresh()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/springframework/context/support/AbstractRefreshableConfigApplicationContext/setConfigLocation(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/beangle/commons/web/spring/ContextLoader/customizeContext(javax.servlet.ServletContext,org.springframework.context.ConfigurableApplicationContext)|",
+      "|java+method:///javax/servlet/ServletContext/getInitParameter(java.lang.String)|"
+    ],
+    "affectedLib": "org.springframework:spring-context:3.1.1.RELEASE",
+    "change": "UPDATED"
+  }
+]

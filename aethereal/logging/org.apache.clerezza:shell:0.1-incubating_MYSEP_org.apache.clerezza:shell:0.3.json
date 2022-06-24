@@ -1,0 +1,1782 @@
+[
+  {
+    "coordinatesV1": "org.apache.clerezza:shell:0.1-incubating",
+    "coordinatesV2": "org.apache.clerezza:shell:0.3",
+    "caller": "|java+method:///org/apache/clerezza/shell/ConsoleShell/activate(org.osgi.service.component.ComponentContext)|",
+    "called": "|java+method:///scala/tools/jline/TerminalFactory/create()|",
+    "v1Body": [
+      "|java+method:///org/apache/clerezza/shell/ConsoleShell/shellOption_$eq(scala.Option)|",
+      "|java+method:///java/nio/channels/Channels/newInputStream(java.nio.channels.ReadableByteChannel)|",
+      "|java+method:///org/apache/clerezza/shell/ConsoleShell/bundleContext_$eq(org.osgi.framework.BundleContext)|",
+      "|java+constructor:///java/io/FileInputStream/FileInputStream(java.io.FileDescriptor)|",
+      "|java+method:///org/apache/clerezza/shell/ConsoleShell/factory()|",
+      "|java+constructor:///scala/Some/Some(java.lang.Object)|",
+      "|java+method:///org/apache/clerezza/shell/ConsoleShell/bundleContext()|",
+      "|java+method:///org/apache/clerezza/shell/Shell/start()|",
+      "|java+constructor:///org/apache/clerezza/shell/InterruptibleInputStream/InterruptibleInputStream(java.io.InputStream)|",
+      "|java+method:///org/apache/clerezza/shell/ConsoleShell/interruptibleIn_$eq(org.apache.clerezza.shell.InterruptibleInputStream)|",
+      "|java+method:///java/lang/Object/equals(java.lang.Object)|",
+      "|java+method:///org/apache/clerezza/shell/ShellFactory/createShell(java.io.InputStream,java.io.OutputStream)|",
+      "|java+method:///org/osgi/service/component/ComponentContext/getBundleContext()|",
+      "|java+method:///org/apache/clerezza/shell/ConsoleShell/interruptibleIn()|",
+      "|java+method:///java/io/FileInputStream/getChannel()|",
+      "|java+method:///scala/collection/TraversableLike/withFilter(scala.Function1)|",
+      "|java+method:///org/osgi/framework/BundleContext/getBundles()|",
+      "|java+method:///org/osgi/framework/BundleContext/getProperty(java.lang.String)|",
+      "|java+constructor:///org/apache/clerezza/shell/ConsoleShell$$anonfun$activate$1/ConsoleShell$$anonfun$activate$1(org.apache.clerezza.shell.ConsoleShell)|",
+      "|java+constructor:///org/apache/clerezza/shell/ConsoleShell$$anonfun$activate$2/ConsoleShell$$anonfun$activate$2(org.apache.clerezza.shell.ConsoleShell)|",
+      "|java+constructor:///org/apache/clerezza/shell/ConsoleShell$$anonfun$activate$3/ConsoleShell$$anonfun$activate$3(org.apache.clerezza.shell.ConsoleShell)|",
+      "|java+method:///scala/collection/generic/FilterMonadic/foreach(scala.Function1)|",
+      "|java+method:///scala/collection/generic/FilterMonadic/withFilter(scala.Function1)|",
+      "|java+method:///scala/Predef$/refArrayOps(java.lang.Object%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/clerezza/shell/ConsoleShell/shellOption_$eq(scala.Option)|",
+      "|java+method:///org/osgi/framework/BundleContext/getBundles()|",
+      "|java+method:///org/apache/clerezza/shell/ConsoleShell/bundleContext_$eq(org.osgi.framework.BundleContext)|",
+      "|java+constructor:///java/io/FileInputStream/FileInputStream(java.io.FileDescriptor)|",
+      "|java+method:///org/apache/clerezza/shell/ConsoleShell/factory()|",
+      "|java+constructor:///scala/Some/Some(java.lang.Object)|",
+      "|java+method:///org/apache/clerezza/shell/ConsoleShell/bundleContext()|",
+      "|java+method:///scala/collection/mutable/ArrayOps/withFilter(scala.Function1)|",
+      "|java+constructor:///org/apache/clerezza/shell/InterruptibleInputStream/InterruptibleInputStream(java.io.InputStream)|",
+      "|java+method:///org/apache/clerezza/shell/ConsoleShell/interruptibleIn_$eq(org.apache.clerezza.shell.InterruptibleInputStream)|",
+      "|java+method:///java/lang/Object/equals(java.lang.Object)|",
+      "|java+method:///org/osgi/service/component/ComponentContext/getBundleContext()|",
+      "|java+method:///org/apache/clerezza/shell/ConsoleShell/interruptibleIn()|",
+      "|java+method:///java/io/FileInputStream/getChannel()|",
+      "|java+method:///java/nio/channels/Channels/newInputStream(java.nio.channels.ReadableByteChannel)|",
+      "|java+method:///scala/tools/jline/TerminalFactory/create()|",
+      "|java+method:///java/lang/System/console()|",
+      "|java+method:///org/osgi/framework/BundleContext/getProperty(java.lang.String)|",
+      "|java+constructor:///org/apache/clerezza/shell/ConsoleShell$$anonfun$activate$1/ConsoleShell$$anonfun$activate$1(org.apache.clerezza.shell.ConsoleShell)|",
+      "|java+constructor:///org/apache/clerezza/shell/ConsoleShell$$anonfun$activate$2/ConsoleShell$$anonfun$activate$2(org.apache.clerezza.shell.ConsoleShell)|",
+      "|java+constructor:///org/apache/clerezza/shell/ConsoleShell$$anonfun$activate$3/ConsoleShell$$anonfun$activate$3(org.apache.clerezza.shell.ConsoleShell)|",
+      "|java+method:///scala/collection/generic/FilterMonadic/foreach(scala.Function1)|",
+      "|java+method:///org/apache/clerezza/shell/Shell/start()|",
+      "|java+method:///org/apache/clerezza/shell/ShellFactory/createShell(java.io.InputStream,java.io.OutputStream,scala.Option)|",
+      "|java+method:///scala/collection/generic/FilterMonadic/withFilter(scala.Function1)|",
+      "|java+method:///scala/Predef$/refArrayOps(java.lang.Object%5B%5D)|"
+    ],
+    "affectedLib": "org.scala-lang:jline:2.10.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.clerezza:shell:0.1-incubating",
+    "coordinatesV2": "org.apache.clerezza:shell:0.3",
+    "caller": "|java+method:///org/apache/clerezza/shell/Shell$$anon$1/$qmark()|",
+    "called": "|java+method:///scala/actors/InternalActor$class/$qmark(scala.actors.InternalActor)|",
+    "v1Body": [
+      "|java+method:///scala/actors/Actor$class/$qmark(scala.actors.Actor)|"
+    ],
+    "v2Body": [
+      "|java+method:///scala/actors/InternalActor$class/$qmark(scala.actors.InternalActor)|"
+    ],
+    "affectedLib": "org.scala-lang:scala-actors:2.10.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.clerezza:shell:0.1-incubating",
+    "coordinatesV2": "org.apache.clerezza:shell:0.3",
+    "caller": "|java+method:///org/apache/clerezza/shell/InterruptibleInputStream$$anon$1/unlinkFrom(scala.actors.AbstractActor)|",
+    "called": "|java+method:///scala/actors/InternalActor$class/unlinkFrom(scala.actors.InternalActor,scala.actors.AbstractActor)|",
+    "v1Body": [
+      "|java+method:///scala/actors/Actor$class/unlinkFrom(scala.actors.Actor,scala.actors.AbstractActor)|"
+    ],
+    "v2Body": [
+      "|java+method:///scala/actors/InternalActor$class/unlinkFrom(scala.actors.InternalActor,scala.actors.AbstractActor)|"
+    ],
+    "affectedLib": "org.scala-lang:scala-actors:2.10.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.clerezza:shell:0.1-incubating",
+    "coordinatesV2": "org.apache.clerezza:shell:0.3",
+    "caller": "|java+method:///org/apache/clerezza/shell/InterruptibleInputStream$$anon$1/exitLinked(java.lang.Object)|",
+    "called": "|java+method:///scala/actors/InternalActor$class/exitLinked(scala.actors.InternalActor,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///scala/actors/Actor$class/exitLinked(scala.actors.Actor,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///scala/actors/InternalActor$class/exitLinked(scala.actors.InternalActor,java.lang.Object)|"
+    ],
+    "affectedLib": "org.scala-lang:scala-actors:2.10.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.clerezza:shell:0.1-incubating",
+    "coordinatesV2": "org.apache.clerezza:shell:0.3",
+    "caller": "|java+method:///org/apache/clerezza/shell/Shell$$anon$1/exiting()|",
+    "called": "|java+method:///scala/actors/InternalActor$class/exiting(scala.actors.InternalActor)|",
+    "v1Body": [
+      "|java+method:///scala/actors/Actor$class/exiting(scala.actors.Actor)|"
+    ],
+    "v2Body": [
+      "|java+method:///scala/actors/InternalActor$class/exiting(scala.actors.InternalActor)|"
+    ],
+    "affectedLib": "org.scala-lang:scala-actors:2.10.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.clerezza:shell:0.1-incubating",
+    "coordinatesV2": "org.apache.clerezza:shell:0.3",
+    "caller": "|java+method:///org/apache/clerezza/shell/InterruptibleInputStream$$anon$1/exit(scala.actors.AbstractActor,java.lang.Object)|",
+    "called": "|java+method:///scala/actors/InternalActor$class/exit(scala.actors.InternalActor,scala.actors.AbstractActor,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///scala/actors/Actor$class/exit(scala.actors.Actor,scala.actors.AbstractActor,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///scala/actors/InternalActor$class/exit(scala.actors.InternalActor,scala.actors.AbstractActor,java.lang.Object)|"
+    ],
+    "affectedLib": "org.scala-lang:scala-actors:2.10.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.clerezza:shell:0.1-incubating",
+    "coordinatesV2": "org.apache.clerezza:shell:0.3",
+    "caller": "|java+method:///org/apache/clerezza/shell/Shell$$anon$1/$bang$qmark(long,java.lang.Object)|",
+    "called": "|java+method:///scala/actors/ActorCanReply$class/$bang$qmark(scala.actors.ActorCanReply,long,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///scala/actors/ActorCanReply$class/$bang$qmark(scala.actors.AbstractActor,long,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///scala/actors/ActorCanReply$class/$bang$qmark(scala.actors.ActorCanReply,long,java.lang.Object)|"
+    ],
+    "affectedLib": "org.scala-lang:scala-actors:2.10.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.clerezza:shell:0.1-incubating",
+    "coordinatesV2": "org.apache.clerezza:shell:0.3",
+    "caller": "|java+method:///org/apache/clerezza/shell/InterruptibleInputStream$$anon$1/exit()|",
+    "called": "|java+method:///scala/actors/InternalActor$class/exit(scala.actors.InternalActor)|",
+    "v1Body": [
+      "|java+method:///scala/actors/Actor$class/exit(scala.actors.Actor)|"
+    ],
+    "v2Body": [
+      "|java+method:///scala/actors/InternalActor$class/exit(scala.actors.InternalActor)|"
+    ],
+    "affectedLib": "org.scala-lang:scala-actors:2.10.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.clerezza:shell:0.1-incubating",
+    "coordinatesV2": "org.apache.clerezza:shell:0.3",
+    "caller": "|java+method:///org/apache/clerezza/shell/InterruptibleInputStream$$anon$1/link(scala.actors.AbstractActor)|",
+    "called": "|java+method:///scala/actors/InternalActor$class/link(scala.actors.InternalActor,scala.actors.AbstractActor)|",
+    "v1Body": [
+      "|java+method:///scala/actors/Actor$class/link(scala.actors.Actor,scala.actors.AbstractActor)|"
+    ],
+    "v2Body": [
+      "|java+method:///scala/actors/InternalActor$class/link(scala.actors.InternalActor,scala.actors.AbstractActor)|"
+    ],
+    "affectedLib": "org.scala-lang:scala-actors:2.10.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.clerezza:shell:0.1-incubating",
+    "coordinatesV2": "org.apache.clerezza:shell:0.3",
+    "caller": "|java+method:///org/apache/clerezza/shell/Shell$$anon$1/linkTo(scala.actors.AbstractActor)|",
+    "called": "|java+method:///scala/actors/InternalActor$class/linkTo(scala.actors.InternalActor,scala.actors.AbstractActor)|",
+    "v1Body": [
+      "|java+method:///scala/actors/Actor$class/linkTo(scala.actors.Actor,scala.actors.AbstractActor)|"
+    ],
+    "v2Body": [
+      "|java+method:///scala/actors/InternalActor$class/linkTo(scala.actors.InternalActor,scala.actors.AbstractActor)|"
+    ],
+    "affectedLib": "org.scala-lang:scala-actors:2.10.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.clerezza:shell:0.1-incubating",
+    "coordinatesV2": "org.apache.clerezza:shell:0.3",
+    "caller": "|java+method:///org/apache/clerezza/shell/InterruptibleInputStream$$anon$1/getState()|",
+    "called": "|java+method:///scala/actors/InternalActor$class/getState(scala.actors.InternalActor)|",
+    "v1Body": [
+      "|java+method:///scala/actors/Actor$class/getState(scala.actors.Actor)|"
+    ],
+    "v2Body": [
+      "|java+method:///scala/actors/InternalActor$class/getState(scala.actors.InternalActor)|"
+    ],
+    "affectedLib": "org.scala-lang:scala-actors:2.10.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.clerezza:shell:0.1-incubating",
+    "coordinatesV2": "org.apache.clerezza:shell:0.3",
+    "caller": "|java+method:///org/apache/clerezza/shell/Shell$$anon$1/forward(java.lang.Object)|",
+    "called": "|java+method:///scala/actors/InternalReplyReactor$class/forward(scala.actors.InternalReplyReactor,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///scala/actors/ReplyReactor$class/forward(scala.actors.ReplyReactor,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///scala/actors/InternalReplyReactor$class/forward(scala.actors.InternalReplyReactor,java.lang.Object)|"
+    ],
+    "affectedLib": "org.scala-lang:scala-actors:2.10.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.clerezza:shell:0.1-incubating",
+    "coordinatesV2": "org.apache.clerezza:shell:0.3",
+    "caller": "|java+method:///org/apache/clerezza/shell/Shell$$anon$1/$bang(java.lang.Object)|",
+    "called": "|java+method:///scala/actors/InternalReplyReactor$class/$bang(scala.actors.InternalReplyReactor,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///scala/actors/ReplyReactor$class/$bang(scala.actors.ReplyReactor,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///scala/actors/InternalReplyReactor$class/$bang(scala.actors.InternalReplyReactor,java.lang.Object)|"
+    ],
+    "affectedLib": "org.scala-lang:scala-actors:2.10.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.clerezza:shell:0.1-incubating",
+    "coordinatesV2": "org.apache.clerezza:shell:0.3",
+    "caller": "|java+constructor:///org/apache/clerezza/shell/InterruptibleInputStream$$anon$1/InterruptibleInputStream$$anon$1(org.apache.clerezza.shell.InterruptibleInputStream)|",
+    "called": "|java+method:///scala/actors/InternalReplyReactor$class/$init$(scala.actors.InternalReplyReactor)|",
+    "v1Body": [
+      "|java+method:///scala/actors/ReplyReactor$class/$init$(scala.actors.ReplyReactor)|",
+      "|java+method:///scala/actors/Combinators$class/$init$(scala.actors.Combinators)|",
+      "|java+method:///scala/actors/Actor$class/$init$(scala.actors.Actor)|",
+      "|java+method:///scala/actors/AbstractActor$class/$init$(scala.actors.AbstractActor)|",
+      "|java+method:///scala/actors/ActorCanReply$class/$init$(scala.actors.AbstractActor)|",
+      "|java+method:///scala/actors/Reactor$class/$init$(scala.actors.Reactor)|",
+      "|java+method:///scala/actors/ReactorCanReply$class/$init$(scala.actors.ReplyReactor)|",
+      "|java+constructor:///java/lang/NullPointerException/NullPointerException()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///scala/actors/InternalActor$class/$init$(scala.actors.InternalActor)|",
+      "|java+method:///scala/actors/Combinators$class/$init$(scala.actors.Combinators)|",
+      "|java+method:///scala/actors/Actor$class/$init$(scala.actors.Actor)|",
+      "|java+method:///scala/actors/AbstractActor$class/$init$(scala.actors.AbstractActor)|",
+      "|java+method:///scala/actors/Reactor$class/$init$(scala.actors.Reactor)|",
+      "|java+method:///scala/actors/ReactorCanReply$class/$init$(scala.actors.InternalReplyReactor)|",
+      "|java+method:///scala/actors/ActorCanReply$class/$init$(scala.actors.ActorCanReply)|",
+      "|java+method:///scala/actors/ReplyReactor$class/$init$(scala.actors.ReplyReactor)|",
+      "|java+method:///scala/actors/InternalReplyReactor$class/$init$(scala.actors.InternalReplyReactor)|",
+      "|java+constructor:///java/lang/NullPointerException/NullPointerException()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "org.scala-lang:scala-actors:2.10.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.clerezza:shell:0.1-incubating",
+    "coordinatesV2": "org.apache.clerezza:shell:0.3",
+    "caller": "|java+method:///org/apache/clerezza/shell/InterruptibleInputStream$$anon$1/reply(java.lang.Object)|",
+    "called": "|java+method:///scala/actors/InternalReplyReactor$class/reply(scala.actors.InternalReplyReactor,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///scala/actors/ReplyReactor$class/reply(scala.actors.ReplyReactor,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///scala/actors/InternalReplyReactor$class/reply(scala.actors.InternalReplyReactor,java.lang.Object)|"
+    ],
+    "affectedLib": "org.scala-lang:scala-actors:2.10.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.clerezza:shell:0.1-incubating",
+    "coordinatesV2": "org.apache.clerezza:shell:0.3",
+    "caller": "|java+method:///org/apache/clerezza/shell/InterruptibleInputStream$$anon$1/scheduleActor(scala.PartialFunction,java.lang.Object)|",
+    "called": "|java+method:///scala/actors/InternalActor$class/scheduleActor(scala.actors.InternalActor,scala.PartialFunction,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///scala/actors/Actor$class/scheduleActor(scala.actors.Actor,scala.PartialFunction,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///scala/actors/InternalActor$class/scheduleActor(scala.actors.InternalActor,scala.PartialFunction,java.lang.Object)|"
+    ],
+    "affectedLib": "org.scala-lang:scala-actors:2.10.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.clerezza:shell:0.1-incubating",
+    "coordinatesV2": "org.apache.clerezza:shell:0.3",
+    "caller": "|java+method:///org/apache/clerezza/shell/InterruptibleInputStream$$anon$1/linkTo(scala.actors.AbstractActor)|",
+    "called": "|java+method:///scala/actors/InternalActor$class/linkTo(scala.actors.InternalActor,scala.actors.AbstractActor)|",
+    "v1Body": [
+      "|java+method:///scala/actors/Actor$class/linkTo(scala.actors.Actor,scala.actors.AbstractActor)|"
+    ],
+    "v2Body": [
+      "|java+method:///scala/actors/InternalActor$class/linkTo(scala.actors.InternalActor,scala.actors.AbstractActor)|"
+    ],
+    "affectedLib": "org.scala-lang:scala-actors:2.10.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.clerezza:shell:0.1-incubating",
+    "coordinatesV2": "org.apache.clerezza:shell:0.3",
+    "caller": "|java+method:///org/apache/clerezza/shell/InterruptibleInputStream$$anon$1/forward(java.lang.Object)|",
+    "called": "|java+method:///scala/actors/InternalReplyReactor$class/forward(scala.actors.InternalReplyReactor,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///scala/actors/ReplyReactor$class/forward(scala.actors.ReplyReactor,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///scala/actors/InternalReplyReactor$class/forward(scala.actors.InternalReplyReactor,java.lang.Object)|"
+    ],
+    "affectedLib": "org.scala-lang:scala-actors:2.10.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.clerezza:shell:0.1-incubating",
+    "coordinatesV2": "org.apache.clerezza:shell:0.3",
+    "caller": "|java+method:///org/apache/clerezza/shell/Shell$$anon$1/onTerminate(scala.Function0)|",
+    "called": "|java+method:///scala/actors/InternalActor$class/onTerminate(scala.actors.InternalActor,scala.Function0)|",
+    "v1Body": [
+      "|java+method:///scala/actors/Actor$class/onTerminate(scala.actors.Actor,scala.Function0)|"
+    ],
+    "v2Body": [
+      "|java+method:///scala/actors/InternalActor$class/onTerminate(scala.actors.InternalActor,scala.Function0)|"
+    ],
+    "affectedLib": "org.scala-lang:scala-actors:2.10.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.clerezza:shell:0.1-incubating",
+    "coordinatesV2": "org.apache.clerezza:shell:0.3",
+    "caller": "|java+method:///org/apache/clerezza/shell/InterruptibleInputStream/read()|",
+    "called": "|java+method:///scala/actors/Actor$/self()|",
+    "v1Body": [
+      "|java+method:///org/apache/clerezza/shell/InterruptibleInputStream/org$apache$clerezza$shell$InterruptibleInputStream$$Read()|",
+      "|java+constructor:///org/apache/clerezza/shell/InterruptibleInputStream$$anonfun$read$1/InterruptibleInputStream$$anonfun$read$1(org.apache.clerezza.shell.InterruptibleInputStream)|",
+      "|java+method:///scala/actors/ReplyReactor/$bang(java.lang.Object)|",
+      "|java+method:///org/apache/clerezza/shell/InterruptibleInputStream/readerActor()|",
+      "|java+method:///scala/actors/Actor/receive(scala.PartialFunction)|",
+      "|java+method:///scala/runtime/BoxesRunTime/unboxToInt(java.lang.Object)|",
+      "|java+method:///scala/actors/Actor$/self()|"
+    ],
+    "v2Body": [
+      "|java+method:///scala/actors/Actor/$bang(java.lang.Object)|",
+      "|java+method:///org/apache/clerezza/shell/InterruptibleInputStream/org$apache$clerezza$shell$InterruptibleInputStream$$Read()|",
+      "|java+constructor:///org/apache/clerezza/shell/InterruptibleInputStream$$anonfun$read$1/InterruptibleInputStream$$anonfun$read$1(org.apache.clerezza.shell.InterruptibleInputStream)|",
+      "|java+method:///org/apache/clerezza/shell/InterruptibleInputStream/readerActor()|",
+      "|java+method:///scala/actors/Actor/receive(scala.PartialFunction)|",
+      "|java+method:///scala/runtime/BoxesRunTime/unboxToInt(java.lang.Object)|",
+      "|java+method:///scala/actors/Actor$/self()|"
+    ],
+    "affectedLib": "org.scala-lang:scala-actors:2.10.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.clerezza:shell:0.1-incubating",
+    "coordinatesV2": "org.apache.clerezza:shell:0.3",
+    "caller": "|java+method:///org/apache/clerezza/shell/Shell$$anon$1/reactWithin(long,scala.PartialFunction)|",
+    "called": "|java+method:///scala/actors/InternalActor$class/reactWithin(scala.actors.InternalActor,long,scala.PartialFunction)|",
+    "v1Body": [
+      "|java+method:///scala/actors/Actor$class/reactWithin(scala.actors.Actor,long,scala.PartialFunction)|"
+    ],
+    "v2Body": [
+      "|java+method:///scala/actors/InternalActor$class/reactWithin(scala.actors.InternalActor,long,scala.PartialFunction)|"
+    ],
+    "affectedLib": "org.scala-lang:scala-actors:2.10.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.clerezza:shell:0.1-incubating",
+    "coordinatesV2": "org.apache.clerezza:shell:0.3",
+    "caller": "|java+method:///org/apache/clerezza/shell/InterruptibleInputStream$$anon$1/$qmark()|",
+    "called": "|java+method:///scala/actors/InternalActor$class/$qmark(scala.actors.InternalActor)|",
+    "v1Body": [
+      "|java+method:///scala/actors/Actor$class/$qmark(scala.actors.Actor)|"
+    ],
+    "v2Body": [
+      "|java+method:///scala/actors/InternalActor$class/$qmark(scala.actors.InternalActor)|"
+    ],
+    "affectedLib": "org.scala-lang:scala-actors:2.10.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.clerezza:shell:0.1-incubating",
+    "coordinatesV2": "org.apache.clerezza:shell:0.3",
+    "caller": "|java+method:///org/apache/clerezza/shell/InterruptibleInputStream$$anon$1/exiting()|",
+    "called": "|java+method:///scala/actors/InternalActor$class/exiting(scala.actors.InternalActor)|",
+    "v1Body": [
+      "|java+method:///scala/actors/Actor$class/exiting(scala.actors.Actor)|"
+    ],
+    "v2Body": [
+      "|java+method:///scala/actors/InternalActor$class/exiting(scala.actors.InternalActor)|"
+    ],
+    "affectedLib": "org.scala-lang:scala-actors:2.10.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.clerezza:shell:0.1-incubating",
+    "coordinatesV2": "org.apache.clerezza:shell:0.3",
+    "caller": "|java+method:///org/apache/clerezza/shell/Shell$$anon$1/unlinkFrom(scala.actors.AbstractActor)|",
+    "called": "|java+method:///scala/actors/InternalActor$class/unlinkFrom(scala.actors.InternalActor,scala.actors.AbstractActor)|",
+    "v1Body": [
+      "|java+method:///scala/actors/Actor$class/unlinkFrom(scala.actors.Actor,scala.actors.AbstractActor)|"
+    ],
+    "v2Body": [
+      "|java+method:///scala/actors/InternalActor$class/unlinkFrom(scala.actors.InternalActor,scala.actors.AbstractActor)|"
+    ],
+    "affectedLib": "org.scala-lang:scala-actors:2.10.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.clerezza:shell:0.1-incubating",
+    "coordinatesV2": "org.apache.clerezza:shell:0.3",
+    "caller": "|java+method:///org/apache/clerezza/shell/InterruptibleInputStream$$anon$1/receiveWithin(long,scala.PartialFunction)|",
+    "called": "|java+method:///scala/actors/InternalActor$class/receiveWithin(scala.actors.InternalActor,long,scala.PartialFunction)|",
+    "v1Body": [
+      "|java+method:///scala/actors/Actor$class/receiveWithin(scala.actors.Actor,long,scala.PartialFunction)|"
+    ],
+    "v2Body": [
+      "|java+method:///scala/actors/InternalActor$class/receiveWithin(scala.actors.InternalActor,long,scala.PartialFunction)|"
+    ],
+    "affectedLib": "org.scala-lang:scala-actors:2.10.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.clerezza:shell:0.1-incubating",
+    "coordinatesV2": "org.apache.clerezza:shell:0.3",
+    "caller": "|java+method:///org/apache/clerezza/shell/InterruptibleInputStream$$anon$1/unlink(scala.actors.AbstractActor)|",
+    "called": "|java+method:///scala/actors/InternalActor$class/unlink(scala.actors.InternalActor,scala.actors.AbstractActor)|",
+    "v1Body": [
+      "|java+method:///scala/actors/Actor$class/unlink(scala.actors.Actor,scala.actors.AbstractActor)|"
+    ],
+    "v2Body": [
+      "|java+method:///scala/actors/InternalActor$class/unlink(scala.actors.InternalActor,scala.actors.AbstractActor)|"
+    ],
+    "affectedLib": "org.scala-lang:scala-actors:2.10.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.clerezza:shell:0.1-incubating",
+    "coordinatesV2": "org.apache.clerezza:shell:0.3",
+    "caller": "|java+method:///org/apache/clerezza/shell/InterruptibleInputStream$$anon$1/resumeReceiver(scala.Tuple2,scala.PartialFunction,boolean)|",
+    "called": "|java+method:///scala/actors/InternalReplyReactor$class/resumeReceiver(scala.actors.InternalReplyReactor,scala.Tuple2,scala.PartialFunction,boolean)|",
+    "v1Body": [
+      "|java+method:///scala/actors/ReplyReactor$class/resumeReceiver(scala.actors.ReplyReactor,scala.Tuple2,scala.PartialFunction,boolean)|"
+    ],
+    "v2Body": [
+      "|java+method:///scala/actors/InternalReplyReactor$class/resumeReceiver(scala.actors.InternalReplyReactor,scala.Tuple2,scala.PartialFunction,boolean)|"
+    ],
+    "affectedLib": "org.scala-lang:scala-actors:2.10.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.clerezza:shell:0.1-incubating",
+    "coordinatesV2": "org.apache.clerezza:shell:0.3",
+    "caller": "|java+method:///org/apache/clerezza/shell/InterruptibleInputStream$$anon$1/$bang$bang(java.lang.Object,scala.PartialFunction)|",
+    "called": "|java+method:///scala/actors/ActorCanReply$class/$bang$bang(scala.actors.ActorCanReply,java.lang.Object,scala.PartialFunction)|",
+    "v1Body": [
+      "|java+method:///scala/actors/ActorCanReply/$bang$bang(java.lang.Object,scala.PartialFunction)|",
+      "|java+method:///scala/actors/ActorCanReply$class/$bang$bang(scala.actors.AbstractActor,java.lang.Object,scala.PartialFunction)|"
+    ],
+    "v2Body": [
+      "|java+method:///scala/actors/ActorCanReply$class/$bang$bang(scala.actors.ActorCanReply,java.lang.Object,scala.PartialFunction)|",
+      "|java+method:///org/apache/clerezza/shell/InterruptibleInputStream$$anon$1/$bang$bang(java.lang.Object,scala.PartialFunction)|"
+    ],
+    "affectedLib": "org.scala-lang:scala-actors:2.10.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.clerezza:shell:0.1-incubating",
+    "coordinatesV2": "org.apache.clerezza:shell:0.3",
+    "caller": "|java+method:///org/apache/clerezza/shell/Shell$$anon$1/exitLinked(java.lang.Object)|",
+    "called": "|java+method:///scala/actors/InternalActor$class/exitLinked(scala.actors.InternalActor,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///scala/actors/Actor$class/exitLinked(scala.actors.Actor,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///scala/actors/InternalActor$class/exitLinked(scala.actors.InternalActor,java.lang.Object)|"
+    ],
+    "affectedLib": "org.scala-lang:scala-actors:2.10.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.clerezza:shell:0.1-incubating",
+    "coordinatesV2": "org.apache.clerezza:shell:0.3",
+    "caller": "|java+method:///org/apache/clerezza/shell/Shell$$anon$1/scheduleActor(scala.PartialFunction,java.lang.Object)|",
+    "called": "|java+method:///scala/actors/InternalActor$class/scheduleActor(scala.actors.InternalActor,scala.PartialFunction,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///scala/actors/Actor$class/scheduleActor(scala.actors.Actor,scala.PartialFunction,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///scala/actors/InternalActor$class/scheduleActor(scala.actors.InternalActor,scala.PartialFunction,java.lang.Object)|"
+    ],
+    "affectedLib": "org.scala-lang:scala-actors:2.10.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.clerezza:shell:0.1-incubating",
+    "coordinatesV2": "org.apache.clerezza:shell:0.3",
+    "caller": "|java+method:///org/apache/clerezza/shell/InterruptibleInputStream$$anon$1/startSearch(java.lang.Object,scala.actors.OutputChannel,scala.PartialFunction)|",
+    "called": "|java+method:///scala/actors/InternalActor$class/startSearch(scala.actors.InternalActor,java.lang.Object,scala.actors.OutputChannel,scala.PartialFunction)|",
+    "v1Body": [
+      "|java+method:///scala/actors/Actor$class/startSearch(scala.actors.Actor,java.lang.Object,scala.actors.OutputChannel,scala.PartialFunction)|"
+    ],
+    "v2Body": [
+      "|java+method:///scala/actors/InternalActor$class/startSearch(scala.actors.InternalActor,java.lang.Object,scala.actors.OutputChannel,scala.PartialFunction)|"
+    ],
+    "affectedLib": "org.scala-lang:scala-actors:2.10.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.clerezza:shell:0.1-incubating",
+    "coordinatesV2": "org.apache.clerezza:shell:0.3",
+    "caller": "|java+method:///org/apache/clerezza/shell/InterruptibleInputStream$$anon$1/scala$actors$Actor$$super$start()|",
+    "called": "|java+method:///scala/actors/InternalActor$class/start(scala.actors.InternalActor)|",
+    "v1Body": [
+      "|java+method:///scala/actors/Reactor$class/start(scala.actors.Reactor)|"
+    ],
+    "v2Body": [
+      "|java+method:///scala/actors/InternalActor$class/start(scala.actors.InternalActor)|"
+    ],
+    "affectedLib": "org.scala-lang:scala-actors:2.10.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.clerezza:shell:0.1-incubating",
+    "coordinatesV2": "org.apache.clerezza:shell:0.3",
+    "caller": "|java+method:///org/apache/clerezza/shell/InterruptibleInputStream$$anon$1/$bang$bang(java.lang.Object)|",
+    "called": "|java+method:///scala/actors/ActorCanReply$class/$bang$bang(scala.actors.ActorCanReply,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///scala/actors/ActorCanReply$class/$bang$bang(scala.actors.AbstractActor,java.lang.Object)|",
+      "|java+method:///scala/actors/ActorCanReply/$bang$bang(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/clerezza/shell/InterruptibleInputStream$$anon$1/$bang$bang(java.lang.Object)|",
+      "|java+method:///scala/actors/ActorCanReply$class/$bang$bang(scala.actors.ActorCanReply,java.lang.Object)|"
+    ],
+    "affectedLib": "org.scala-lang:scala-actors:2.10.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.clerezza:shell:0.1-incubating",
+    "coordinatesV2": "org.apache.clerezza:shell:0.3",
+    "caller": "|java+method:///org/apache/clerezza/shell/Shell$$anon$1/$bang$qmark(java.lang.Object)|",
+    "called": "|java+method:///scala/actors/ActorCanReply$class/$bang$qmark(scala.actors.ActorCanReply,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///scala/actors/ActorCanReply$class/$bang$qmark(scala.actors.AbstractActor,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///scala/actors/ActorCanReply$class/$bang$qmark(scala.actors.ActorCanReply,java.lang.Object)|"
+    ],
+    "affectedLib": "org.scala-lang:scala-actors:2.10.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.clerezza:shell:0.1-incubating",
+    "coordinatesV2": "org.apache.clerezza:shell:0.3",
+    "caller": "|java+method:///org/apache/clerezza/shell/Shell$$anon$1/exit(java.lang.Object)|",
+    "called": "|java+method:///scala/actors/InternalActor$class/exit(scala.actors.InternalActor,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///scala/actors/Actor$class/exit(scala.actors.Actor,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///scala/actors/InternalActor$class/exit(scala.actors.InternalActor,java.lang.Object)|"
+    ],
+    "affectedLib": "org.scala-lang:scala-actors:2.10.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.clerezza:shell:0.1-incubating",
+    "coordinatesV2": "org.apache.clerezza:shell:0.3",
+    "caller": "|java+method:///org/apache/clerezza/shell/InterruptibleInputStream$$anon$1/link(scala.Function0)|",
+    "called": "|java+method:///scala/actors/InternalActor$class/link(scala.actors.InternalActor,scala.Function0)|",
+    "v1Body": [
+      "|java+method:///scala/actors/Actor$class/link(scala.actors.Actor,scala.Function0)|"
+    ],
+    "v2Body": [
+      "|java+method:///scala/actors/InternalActor$class/link(scala.actors.InternalActor,scala.Function0)|"
+    ],
+    "affectedLib": "org.scala-lang:scala-actors:2.10.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.clerezza:shell:0.1-incubating",
+    "coordinatesV2": "org.apache.clerezza:shell:0.3",
+    "caller": "|java+method:///org/apache/clerezza/shell/Shell$$anon$1/reply(java.lang.Object)|",
+    "called": "|java+method:///scala/actors/InternalReplyReactor$class/reply(scala.actors.InternalReplyReactor,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///scala/actors/ReplyReactor$class/reply(scala.actors.ReplyReactor,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///scala/actors/InternalReplyReactor$class/reply(scala.actors.InternalReplyReactor,java.lang.Object)|"
+    ],
+    "affectedLib": "org.scala-lang:scala-actors:2.10.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.clerezza:shell:0.1-incubating",
+    "coordinatesV2": "org.apache.clerezza:shell:0.3",
+    "caller": "|java+method:///org/apache/clerezza/shell/InterruptibleInputStream$$anon$1/dostart()|",
+    "called": "|java+method:///scala/actors/InternalActor$class/dostart(scala.actors.InternalActor)|",
+    "v1Body": [
+      "|java+method:///scala/actors/Actor$class/dostart(scala.actors.Actor)|"
+    ],
+    "v2Body": [
+      "|java+method:///scala/actors/InternalActor$class/dostart(scala.actors.InternalActor)|"
+    ],
+    "affectedLib": "org.scala-lang:scala-actors:2.10.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.clerezza:shell:0.1-incubating",
+    "coordinatesV2": "org.apache.clerezza:shell:0.3",
+    "caller": "|java+method:///org/apache/clerezza/shell/InterruptibleInputStream$$anon$1/exitLinked()|",
+    "called": "|java+method:///scala/actors/InternalActor$class/exitLinked(scala.actors.InternalActor)|",
+    "v1Body": [
+      "|java+method:///scala/actors/Actor$class/exitLinked(scala.actors.Actor)|"
+    ],
+    "v2Body": [
+      "|java+method:///scala/actors/InternalActor$class/exitLinked(scala.actors.InternalActor)|"
+    ],
+    "affectedLib": "org.scala-lang:scala-actors:2.10.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.clerezza:shell:0.1-incubating",
+    "coordinatesV2": "org.apache.clerezza:shell:0.3",
+    "caller": "|java+method:///org/apache/clerezza/shell/InterruptibleInputStream$$anon$1/onTerminate(scala.Function0)|",
+    "called": "|java+method:///scala/actors/InternalActor$class/onTerminate(scala.actors.InternalActor,scala.Function0)|",
+    "v1Body": [
+      "|java+method:///scala/actors/Actor$class/onTerminate(scala.actors.Actor,scala.Function0)|"
+    ],
+    "v2Body": [
+      "|java+method:///scala/actors/InternalActor$class/onTerminate(scala.actors.InternalActor,scala.Function0)|"
+    ],
+    "affectedLib": "org.scala-lang:scala-actors:2.10.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.clerezza:shell:0.1-incubating",
+    "coordinatesV2": "org.apache.clerezza:shell:0.3",
+    "caller": "|java+method:///org/apache/clerezza/shell/InterruptibleInputStream$$anon$1/react(scala.PartialFunction)|",
+    "called": "|java+method:///scala/actors/InternalActor$class/react(scala.actors.InternalActor,scala.PartialFunction)|",
+    "v1Body": [
+      "|java+method:///scala/actors/Actor$class/react(scala.actors.Actor,scala.PartialFunction)|"
+    ],
+    "v2Body": [
+      "|java+method:///scala/actors/InternalActor$class/react(scala.actors.InternalActor,scala.PartialFunction)|"
+    ],
+    "affectedLib": "org.scala-lang:scala-actors:2.10.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.clerezza:shell:0.1-incubating",
+    "coordinatesV2": "org.apache.clerezza:shell:0.3",
+    "caller": "|java+method:///org/apache/clerezza/shell/Shell$$anon$1/resumeReceiver(scala.Tuple2,scala.PartialFunction,boolean)|",
+    "called": "|java+method:///scala/actors/InternalReplyReactor$class/resumeReceiver(scala.actors.InternalReplyReactor,scala.Tuple2,scala.PartialFunction,boolean)|",
+    "v1Body": [
+      "|java+method:///scala/actors/ReplyReactor$class/resumeReceiver(scala.actors.ReplyReactor,scala.Tuple2,scala.PartialFunction,boolean)|"
+    ],
+    "v2Body": [
+      "|java+method:///scala/actors/InternalReplyReactor$class/resumeReceiver(scala.actors.InternalReplyReactor,scala.Tuple2,scala.PartialFunction,boolean)|"
+    ],
+    "affectedLib": "org.scala-lang:scala-actors:2.10.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.clerezza:shell:0.1-incubating",
+    "coordinatesV2": "org.apache.clerezza:shell:0.3",
+    "caller": "|java+method:///org/apache/clerezza/shell/Shell$$anon$1/$bang$bang(java.lang.Object)|",
+    "called": "|java+method:///scala/actors/ActorCanReply$class/$bang$bang(scala.actors.ActorCanReply,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///scala/actors/ActorCanReply$class/$bang$bang(scala.actors.AbstractActor,java.lang.Object)|",
+      "|java+method:///scala/actors/ActorCanReply/$bang$bang(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/clerezza/shell/Shell$$anon$1/$bang$bang(java.lang.Object)|",
+      "|java+method:///scala/actors/ActorCanReply$class/$bang$bang(scala.actors.ActorCanReply,java.lang.Object)|"
+    ],
+    "affectedLib": "org.scala-lang:scala-actors:2.10.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.clerezza:shell:0.1-incubating",
+    "coordinatesV2": "org.apache.clerezza:shell:0.3",
+    "caller": "|java+method:///org/apache/clerezza/shell/InterruptibleInputStream$$anon$1/exit(java.lang.Object)|",
+    "called": "|java+method:///scala/actors/InternalActor$class/exit(scala.actors.InternalActor,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///scala/actors/Actor$class/exit(scala.actors.Actor,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///scala/actors/InternalActor$class/exit(scala.actors.InternalActor,java.lang.Object)|"
+    ],
+    "affectedLib": "org.scala-lang:scala-actors:2.10.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.clerezza:shell:0.1-incubating",
+    "coordinatesV2": "org.apache.clerezza:shell:0.3",
+    "caller": "|java+method:///org/apache/clerezza/shell/Shell$$anon$1/searchMailbox(scala.actors.MQueue,scala.PartialFunction,boolean)|",
+    "called": "|java+method:///scala/actors/InternalActor$class/searchMailbox(scala.actors.InternalActor,scala.actors.MQueue,scala.PartialFunction,boolean)|",
+    "v1Body": [
+      "|java+method:///scala/actors/Actor$class/searchMailbox(scala.actors.Actor,scala.actors.MQueue,scala.PartialFunction,boolean)|"
+    ],
+    "v2Body": [
+      "|java+method:///scala/actors/InternalActor$class/searchMailbox(scala.actors.InternalActor,scala.actors.MQueue,scala.PartialFunction,boolean)|"
+    ],
+    "affectedLib": "org.scala-lang:scala-actors:2.10.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.clerezza:shell:0.1-incubating",
+    "coordinatesV2": "org.apache.clerezza:shell:0.3",
+    "caller": "|java+method:///org/apache/clerezza/shell/InterruptibleInputStream$$anon$1/makeReaction(scala.Function0,scala.PartialFunction,java.lang.Object)|",
+    "called": "|java+method:///scala/actors/InternalActor$class/makeReaction(scala.actors.InternalActor,scala.Function0,scala.PartialFunction,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///scala/actors/Actor$class/makeReaction(scala.actors.Actor,scala.Function0,scala.PartialFunction,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///scala/actors/InternalActor$class/makeReaction(scala.actors.InternalActor,scala.Function0,scala.PartialFunction,java.lang.Object)|"
+    ],
+    "affectedLib": "org.scala-lang:scala-actors:2.10.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.clerezza:shell:0.1-incubating",
+    "coordinatesV2": "org.apache.clerezza:shell:0.3",
+    "caller": "|java+method:///org/apache/clerezza/shell/Shell$$anon$1/start()|",
+    "called": "|java+method:///scala/actors/Actor$class/start(scala.actors.Actor)|",
+    "v1Body": [
+      "|java+method:///scala/actors/Actor$class/start(scala.actors.Actor)|",
+      "|java+method:///scala/actors/Actor/start()|"
+    ],
+    "v2Body": [
+      "|java+method:///scala/actors/Actor$class/start(scala.actors.Actor)|",
+      "|java+method:///org/apache/clerezza/shell/Shell$$anon$1/start()|"
+    ],
+    "affectedLib": "org.scala-lang:scala-actors:2.10.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.clerezza:shell:0.1-incubating",
+    "coordinatesV2": "org.apache.clerezza:shell:0.3",
+    "caller": "|java+method:///org/apache/clerezza/shell/InterruptibleInputStream$$anon$1/reactWithin(long,scala.PartialFunction)|",
+    "called": "|java+method:///scala/actors/InternalActor$class/reactWithin(scala.actors.InternalActor,long,scala.PartialFunction)|",
+    "v1Body": [
+      "|java+method:///scala/actors/Actor$class/reactWithin(scala.actors.Actor,long,scala.PartialFunction)|"
+    ],
+    "v2Body": [
+      "|java+method:///scala/actors/InternalActor$class/reactWithin(scala.actors.InternalActor,long,scala.PartialFunction)|"
+    ],
+    "affectedLib": "org.scala-lang:scala-actors:2.10.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.clerezza:shell:0.1-incubating",
+    "coordinatesV2": "org.apache.clerezza:shell:0.3",
+    "caller": "|java+method:///org/apache/clerezza/shell/Shell$$anon$1/link(scala.actors.AbstractActor)|",
+    "called": "|java+method:///scala/actors/InternalActor$class/link(scala.actors.InternalActor,scala.actors.AbstractActor)|",
+    "v1Body": [
+      "|java+method:///scala/actors/Actor$class/link(scala.actors.Actor,scala.actors.AbstractActor)|"
+    ],
+    "v2Body": [
+      "|java+method:///scala/actors/InternalActor$class/link(scala.actors.InternalActor,scala.actors.AbstractActor)|"
+    ],
+    "affectedLib": "org.scala-lang:scala-actors:2.10.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.clerezza:shell:0.1-incubating",
+    "coordinatesV2": "org.apache.clerezza:shell:0.3",
+    "caller": "|java+method:///org/apache/clerezza/shell/InterruptibleInputStream$$anon$1/start()|",
+    "called": "|java+method:///scala/actors/Actor$class/start(scala.actors.Actor)|",
+    "v1Body": [
+      "|java+method:///scala/actors/Actor$class/start(scala.actors.Actor)|",
+      "|java+method:///scala/actors/Actor/start()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/clerezza/shell/InterruptibleInputStream$$anon$1/start()|",
+      "|java+method:///scala/actors/Actor$class/start(scala.actors.Actor)|"
+    ],
+    "affectedLib": "org.scala-lang:scala-actors:2.10.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.clerezza:shell:0.1-incubating",
+    "coordinatesV2": "org.apache.clerezza:shell:0.3",
+    "caller": "|java+method:///org/apache/clerezza/shell/InterruptibleInputStream$$anon$1/searchMailbox(scala.actors.MQueue,scala.PartialFunction,boolean)|",
+    "called": "|java+method:///scala/actors/InternalActor$class/searchMailbox(scala.actors.InternalActor,scala.actors.MQueue,scala.PartialFunction,boolean)|",
+    "v1Body": [
+      "|java+method:///scala/actors/Actor$class/searchMailbox(scala.actors.Actor,scala.actors.MQueue,scala.PartialFunction,boolean)|"
+    ],
+    "v2Body": [
+      "|java+method:///scala/actors/InternalActor$class/searchMailbox(scala.actors.InternalActor,scala.actors.MQueue,scala.PartialFunction,boolean)|"
+    ],
+    "affectedLib": "org.scala-lang:scala-actors:2.10.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.clerezza:shell:0.1-incubating",
+    "coordinatesV2": "org.apache.clerezza:shell:0.3",
+    "caller": "|java+method:///org/apache/clerezza/shell/Shell$$anon$1/startSearch(java.lang.Object,scala.actors.OutputChannel,scala.PartialFunction)|",
+    "called": "|java+method:///scala/actors/InternalActor$class/startSearch(scala.actors.InternalActor,java.lang.Object,scala.actors.OutputChannel,scala.PartialFunction)|",
+    "v1Body": [
+      "|java+method:///scala/actors/Actor$class/startSearch(scala.actors.Actor,java.lang.Object,scala.actors.OutputChannel,scala.PartialFunction)|"
+    ],
+    "v2Body": [
+      "|java+method:///scala/actors/InternalActor$class/startSearch(scala.actors.InternalActor,java.lang.Object,scala.actors.OutputChannel,scala.PartialFunction)|"
+    ],
+    "affectedLib": "org.scala-lang:scala-actors:2.10.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.clerezza:shell:0.1-incubating",
+    "coordinatesV2": "org.apache.clerezza:shell:0.3",
+    "caller": "|java+method:///org/apache/clerezza/shell/Shell$$anon$1/exit(scala.actors.AbstractActor,java.lang.Object)|",
+    "called": "|java+method:///scala/actors/InternalActor$class/exit(scala.actors.InternalActor,scala.actors.AbstractActor,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///scala/actors/Actor$class/exit(scala.actors.Actor,scala.actors.AbstractActor,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///scala/actors/InternalActor$class/exit(scala.actors.InternalActor,scala.actors.AbstractActor,java.lang.Object)|"
+    ],
+    "affectedLib": "org.scala-lang:scala-actors:2.10.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.clerezza:shell:0.1-incubating",
+    "coordinatesV2": "org.apache.clerezza:shell:0.3",
+    "caller": "|java+method:///org/apache/clerezza/shell/Shell$$anon$1/link(scala.Function0)|",
+    "called": "|java+method:///scala/actors/InternalActor$class/link(scala.actors.InternalActor,scala.Function0)|",
+    "v1Body": [
+      "|java+method:///scala/actors/Actor$class/link(scala.actors.Actor,scala.Function0)|"
+    ],
+    "v2Body": [
+      "|java+method:///scala/actors/InternalActor$class/link(scala.actors.InternalActor,scala.Function0)|"
+    ],
+    "affectedLib": "org.scala-lang:scala-actors:2.10.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.clerezza:shell:0.1-incubating",
+    "coordinatesV2": "org.apache.clerezza:shell:0.3",
+    "caller": "|java+method:///org/apache/clerezza/shell/Shell$$anon$1/receiveWithin(long,scala.PartialFunction)|",
+    "called": "|java+method:///scala/actors/InternalActor$class/receiveWithin(scala.actors.InternalActor,long,scala.PartialFunction)|",
+    "v1Body": [
+      "|java+method:///scala/actors/Actor$class/receiveWithin(scala.actors.Actor,long,scala.PartialFunction)|"
+    ],
+    "v2Body": [
+      "|java+method:///scala/actors/InternalActor$class/receiveWithin(scala.actors.InternalActor,long,scala.PartialFunction)|"
+    ],
+    "affectedLib": "org.scala-lang:scala-actors:2.10.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.clerezza:shell:0.1-incubating",
+    "coordinatesV2": "org.apache.clerezza:shell:0.3",
+    "caller": "|java+method:///org/apache/clerezza/shell/Shell$$anon$1/dostart()|",
+    "called": "|java+method:///scala/actors/InternalActor$class/dostart(scala.actors.InternalActor)|",
+    "v1Body": [
+      "|java+method:///scala/actors/Actor$class/dostart(scala.actors.Actor)|"
+    ],
+    "v2Body": [
+      "|java+method:///scala/actors/InternalActor$class/dostart(scala.actors.InternalActor)|"
+    ],
+    "affectedLib": "org.scala-lang:scala-actors:2.10.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.clerezza:shell:0.1-incubating",
+    "coordinatesV2": "org.apache.clerezza:shell:0.3",
+    "caller": "|java+constructor:///org/apache/clerezza/shell/Shell$$anon$1/Shell$$anon$1(org.apache.clerezza.shell.Shell)|",
+    "called": "|java+method:///scala/actors/InternalReplyReactor$class/$init$(scala.actors.InternalReplyReactor)|",
+    "v1Body": [
+      "|java+method:///scala/actors/ReplyReactor$class/$init$(scala.actors.ReplyReactor)|",
+      "|java+method:///scala/actors/Combinators$class/$init$(scala.actors.Combinators)|",
+      "|java+method:///scala/actors/Actor$class/$init$(scala.actors.Actor)|",
+      "|java+method:///scala/actors/AbstractActor$class/$init$(scala.actors.AbstractActor)|",
+      "|java+method:///scala/actors/Reactor$class/$init$(scala.actors.Reactor)|",
+      "|java+method:///scala/actors/ReactorCanReply$class/$init$(scala.actors.ReplyReactor)|",
+      "|java+method:///scala/actors/ActorCanReply$class/$init$(scala.actors.AbstractActor)|",
+      "|java+method:///scala/actors/DaemonActor$class/$init$(scala.actors.DaemonActor)|",
+      "|java+constructor:///java/lang/NullPointerException/NullPointerException()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///scala/actors/InternalActor$class/$init$(scala.actors.InternalActor)|",
+      "|java+method:///scala/actors/Combinators$class/$init$(scala.actors.Combinators)|",
+      "|java+method:///scala/actors/Actor$class/$init$(scala.actors.Actor)|",
+      "|java+method:///scala/actors/AbstractActor$class/$init$(scala.actors.AbstractActor)|",
+      "|java+method:///scala/actors/Reactor$class/$init$(scala.actors.Reactor)|",
+      "|java+method:///scala/actors/DaemonActor$class/$init$(scala.actors.DaemonActor)|",
+      "|java+method:///scala/actors/ReactorCanReply$class/$init$(scala.actors.InternalReplyReactor)|",
+      "|java+method:///scala/actors/ActorCanReply$class/$init$(scala.actors.ActorCanReply)|",
+      "|java+method:///scala/actors/ReplyReactor$class/$init$(scala.actors.ReplyReactor)|",
+      "|java+method:///scala/actors/InternalReplyReactor$class/$init$(scala.actors.InternalReplyReactor)|",
+      "|java+constructor:///java/lang/NullPointerException/NullPointerException()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "org.scala-lang:scala-actors:2.10.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.clerezza:shell:0.1-incubating",
+    "coordinatesV2": "org.apache.clerezza:shell:0.3",
+    "caller": "|java+method:///org/apache/clerezza/shell/InterruptibleInputStream$$anon$1/$bang(java.lang.Object)|",
+    "called": "|java+method:///scala/actors/InternalReplyReactor$class/$bang(scala.actors.InternalReplyReactor,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///scala/actors/ReplyReactor$class/$bang(scala.actors.ReplyReactor,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///scala/actors/InternalReplyReactor$class/$bang(scala.actors.InternalReplyReactor,java.lang.Object)|"
+    ],
+    "affectedLib": "org.scala-lang:scala-actors:2.10.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.clerezza:shell:0.1-incubating",
+    "coordinatesV2": "org.apache.clerezza:shell:0.3",
+    "caller": "|java+method:///org/apache/clerezza/shell/InterruptibleInputStream$$anon$1/$bang$qmark(java.lang.Object)|",
+    "called": "|java+method:///scala/actors/ActorCanReply$class/$bang$qmark(scala.actors.ActorCanReply,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///scala/actors/ActorCanReply$class/$bang$qmark(scala.actors.AbstractActor,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///scala/actors/ActorCanReply$class/$bang$qmark(scala.actors.ActorCanReply,java.lang.Object)|"
+    ],
+    "affectedLib": "org.scala-lang:scala-actors:2.10.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.clerezza:shell:0.1-incubating",
+    "coordinatesV2": "org.apache.clerezza:shell:0.3",
+    "caller": "|java+method:///org/apache/clerezza/shell/Shell$$anon$1/getState()|",
+    "called": "|java+method:///scala/actors/InternalActor$class/getState(scala.actors.InternalActor)|",
+    "v1Body": [
+      "|java+method:///scala/actors/Actor$class/getState(scala.actors.Actor)|"
+    ],
+    "v2Body": [
+      "|java+method:///scala/actors/InternalActor$class/getState(scala.actors.InternalActor)|"
+    ],
+    "affectedLib": "org.scala-lang:scala-actors:2.10.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.clerezza:shell:0.1-incubating",
+    "coordinatesV2": "org.apache.clerezza:shell:0.3",
+    "caller": "|java+method:///org/apache/clerezza/shell/Shell$$anon$1/scala$actors$Actor$$super$start()|",
+    "called": "|java+method:///scala/actors/InternalActor$class/start(scala.actors.InternalActor)|",
+    "v1Body": [
+      "|java+method:///scala/actors/Reactor$class/start(scala.actors.Reactor)|"
+    ],
+    "v2Body": [
+      "|java+method:///scala/actors/InternalActor$class/start(scala.actors.InternalActor)|"
+    ],
+    "affectedLib": "org.scala-lang:scala-actors:2.10.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.clerezza:shell:0.1-incubating",
+    "coordinatesV2": "org.apache.clerezza:shell:0.3",
+    "caller": "|java+method:///org/apache/clerezza/shell/Shell$$anon$1/$bang$bang(java.lang.Object,scala.PartialFunction)|",
+    "called": "|java+method:///scala/actors/ActorCanReply$class/$bang$bang(scala.actors.ActorCanReply,java.lang.Object,scala.PartialFunction)|",
+    "v1Body": [
+      "|java+method:///scala/actors/ActorCanReply/$bang$bang(java.lang.Object,scala.PartialFunction)|",
+      "|java+method:///scala/actors/ActorCanReply$class/$bang$bang(scala.actors.AbstractActor,java.lang.Object,scala.PartialFunction)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/clerezza/shell/Shell$$anon$1/$bang$bang(java.lang.Object,scala.PartialFunction)|",
+      "|java+method:///scala/actors/ActorCanReply$class/$bang$bang(scala.actors.ActorCanReply,java.lang.Object,scala.PartialFunction)|"
+    ],
+    "affectedLib": "org.scala-lang:scala-actors:2.10.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.clerezza:shell:0.1-incubating",
+    "coordinatesV2": "org.apache.clerezza:shell:0.3",
+    "caller": "|java+method:///org/apache/clerezza/shell/Shell$$anon$1/makeReaction(scala.Function0,scala.PartialFunction,java.lang.Object)|",
+    "called": "|java+method:///scala/actors/InternalActor$class/makeReaction(scala.actors.InternalActor,scala.Function0,scala.PartialFunction,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///scala/actors/Actor$class/makeReaction(scala.actors.Actor,scala.Function0,scala.PartialFunction,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///scala/actors/InternalActor$class/makeReaction(scala.actors.InternalActor,scala.Function0,scala.PartialFunction,java.lang.Object)|"
+    ],
+    "affectedLib": "org.scala-lang:scala-actors:2.10.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.clerezza:shell:0.1-incubating",
+    "coordinatesV2": "org.apache.clerezza:shell:0.3",
+    "caller": "|java+method:///org/apache/clerezza/shell/InterruptibleInputStream$$anon$1/receive(scala.PartialFunction)|",
+    "called": "|java+method:///scala/actors/InternalActor$class/receive(scala.actors.InternalActor,scala.PartialFunction)|",
+    "v1Body": [
+      "|java+method:///scala/actors/Actor$class/receive(scala.actors.Actor,scala.PartialFunction)|"
+    ],
+    "v2Body": [
+      "|java+method:///scala/actors/InternalActor$class/receive(scala.actors.InternalActor,scala.PartialFunction)|"
+    ],
+    "affectedLib": "org.scala-lang:scala-actors:2.10.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.clerezza:shell:0.1-incubating",
+    "coordinatesV2": "org.apache.clerezza:shell:0.3",
+    "caller": "|java+method:///org/apache/clerezza/shell/Shell$$anon$1/exitLinked()|",
+    "called": "|java+method:///scala/actors/InternalActor$class/exitLinked(scala.actors.InternalActor)|",
+    "v1Body": [
+      "|java+method:///scala/actors/Actor$class/exitLinked(scala.actors.Actor)|"
+    ],
+    "v2Body": [
+      "|java+method:///scala/actors/InternalActor$class/exitLinked(scala.actors.InternalActor)|"
+    ],
+    "affectedLib": "org.scala-lang:scala-actors:2.10.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.clerezza:shell:0.1-incubating",
+    "coordinatesV2": "org.apache.clerezza:shell:0.3",
+    "caller": "|java+method:///org/apache/clerezza/shell/Shell$$anon$1/receive(scala.PartialFunction)|",
+    "called": "|java+method:///scala/actors/InternalActor$class/receive(scala.actors.InternalActor,scala.PartialFunction)|",
+    "v1Body": [
+      "|java+method:///scala/actors/Actor$class/receive(scala.actors.Actor,scala.PartialFunction)|"
+    ],
+    "v2Body": [
+      "|java+method:///scala/actors/InternalActor$class/receive(scala.actors.InternalActor,scala.PartialFunction)|"
+    ],
+    "affectedLib": "org.scala-lang:scala-actors:2.10.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.clerezza:shell:0.1-incubating",
+    "coordinatesV2": "org.apache.clerezza:shell:0.3",
+    "caller": "|java+method:///org/apache/clerezza/shell/Shell$$anon$1/exit()|",
+    "called": "|java+method:///scala/actors/InternalActor$class/exit(scala.actors.InternalActor)|",
+    "v1Body": [
+      "|java+method:///scala/actors/Actor$class/exit(scala.actors.Actor)|"
+    ],
+    "v2Body": [
+      "|java+method:///scala/actors/InternalActor$class/exit(scala.actors.InternalActor)|"
+    ],
+    "affectedLib": "org.scala-lang:scala-actors:2.10.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.clerezza:shell:0.1-incubating",
+    "coordinatesV2": "org.apache.clerezza:shell:0.3",
+    "caller": "|java+method:///org/apache/clerezza/shell/Shell$$anon$1/react(scala.PartialFunction)|",
+    "called": "|java+method:///scala/actors/InternalActor$class/react(scala.actors.InternalActor,scala.PartialFunction)|",
+    "v1Body": [
+      "|java+method:///scala/actors/Actor$class/react(scala.actors.Actor,scala.PartialFunction)|"
+    ],
+    "v2Body": [
+      "|java+method:///scala/actors/InternalActor$class/react(scala.actors.InternalActor,scala.PartialFunction)|"
+    ],
+    "affectedLib": "org.scala-lang:scala-actors:2.10.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.clerezza:shell:0.1-incubating",
+    "coordinatesV2": "org.apache.clerezza:shell:0.3",
+    "caller": "|java+method:///org/apache/clerezza/shell/InterruptibleInputStream$$anon$1/$bang$qmark(long,java.lang.Object)|",
+    "called": "|java+method:///scala/actors/ActorCanReply$class/$bang$qmark(scala.actors.ActorCanReply,long,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///scala/actors/ActorCanReply$class/$bang$qmark(scala.actors.AbstractActor,long,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///scala/actors/ActorCanReply$class/$bang$qmark(scala.actors.ActorCanReply,long,java.lang.Object)|"
+    ],
+    "affectedLib": "org.scala-lang:scala-actors:2.10.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.clerezza:shell:0.1-incubating",
+    "coordinatesV2": "org.apache.clerezza:shell:0.3",
+    "caller": "|java+method:///org/apache/clerezza/shell/Shell$$anon$1/unlink(scala.actors.AbstractActor)|",
+    "called": "|java+method:///scala/actors/InternalActor$class/unlink(scala.actors.InternalActor,scala.actors.AbstractActor)|",
+    "v1Body": [
+      "|java+method:///scala/actors/Actor$class/unlink(scala.actors.Actor,scala.actors.AbstractActor)|"
+    ],
+    "v2Body": [
+      "|java+method:///scala/actors/InternalActor$class/unlink(scala.actors.InternalActor,scala.actors.AbstractActor)|"
+    ],
+    "affectedLib": "org.scala-lang:scala-actors:2.10.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.clerezza:shell:0.1-incubating",
+    "coordinatesV2": "org.apache.clerezza:shell:0.3",
+    "caller": "|java+method:///org/apache/clerezza/shell/OsgiDsl/headers(org.osgi.framework.Bundle)|",
+    "called": "|java+method:///scala/collection/JavaConversions$/dictionaryAsScalaMap(java.util.Dictionary)|",
+    "v1Body": [
+      "|java+method:///scala/collection/JavaConversions$/dictionaryAsScalaMap(java.util.Dictionary)|",
+      "|java+method:///org/osgi/framework/Bundle/getHeaders()|",
+      "|java+method:///scala/collection/IterableLike/foreach(scala.Function1)|",
+      "|java+constructor:///org/apache/clerezza/shell/OsgiDsl$$anonfun$headers$1/OsgiDsl$$anonfun$headers$1(org.apache.clerezza.shell.OsgiDsl)|"
+    ],
+    "v2Body": [
+      "|java+method:///scala/collection/JavaConversions$/dictionaryAsScalaMap(java.util.Dictionary)|",
+      "|java+method:///org/osgi/framework/Bundle/getHeaders()|",
+      "|java+method:///scala/collection/generic/FilterMonadic/foreach(scala.Function1)|",
+      "|java+method:///scala/collection/mutable/Map/withFilter(scala.Function1)|",
+      "|java+constructor:///org/apache/clerezza/shell/OsgiDsl$$anonfun$headers$1/OsgiDsl$$anonfun$headers$1(org.apache.clerezza.shell.OsgiDsl)|",
+      "|java+constructor:///org/apache/clerezza/shell/OsgiDsl$$anonfun$headers$2/OsgiDsl$$anonfun$headers$2(org.apache.clerezza.shell.OsgiDsl)|"
+    ],
+    "affectedLib": "org.scala-lang:scala-library:2.10.3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.clerezza:shell:0.1-incubating",
+    "coordinatesV2": "org.apache.clerezza:shell:0.3",
+    "caller": "|java+method:///org/apache/clerezza/shell/OsgiDsl$$anonfun$headers$1/apply(java.lang.Object)|",
+    "called": "|java+method:///scala/runtime/BoxesRunTime/boxToBoolean(boolean)|",
+    "v1Body": [
+      "|java+method:///org/apache/clerezza/shell/OsgiDsl$$anonfun$headers$1/apply(scala.Tuple2)|"
+    ],
+    "v2Body": [
+      "|java+method:///scala/runtime/BoxesRunTime/boxToBoolean(boolean)|",
+      "|java+method:///org/apache/clerezza/shell/OsgiDsl$$anonfun$headers$1/apply(scala.Tuple2)|"
+    ],
+    "affectedLib": "org.scala-lang:scala-library:2.10.3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.clerezza:shell:0.1-incubating",
+    "coordinatesV2": "org.apache.clerezza:shell:0.3",
+    "caller": "|java+method:///org/apache/clerezza/shell/InterruptibleInputStream$Read$/productIterator()|",
+    "called": "|java+method:///scala/runtime/ScalaRunTime$/typedProductIterator(scala.Product)|",
+    "v1Body": [
+      "|java+method:///scala/Product$class/productIterator(scala.Product)|"
+    ],
+    "v2Body": [
+      "|java+method:///scala/runtime/ScalaRunTime$/typedProductIterator(scala.Product)|"
+    ],
+    "affectedLib": "org.scala-lang:scala-library:2.10.3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.clerezza:shell:0.1-incubating",
+    "coordinatesV2": "org.apache.clerezza:shell:0.3",
+    "caller": "|java+constructor:///org/apache/clerezza/shell/InterruptibleInputStream$$anon$1$$anonfun$act$1$$anonfun$apply$1/InterruptibleInputStream$$anon$1$$anonfun$act$1$$anonfun$apply$1(org.apache.clerezza.shell.InterruptibleInputStream$$anon$1$$anonfun$act$1)|",
+    "called": "|java+constructor:///scala/runtime/AbstractPartialFunction$mcVL$sp/AbstractPartialFunction$mcVL$sp()|",
+    "v1Body": [
+      "|java+method:///scala/Function1$class/$init$(scala.Function1)|",
+      "|java+method:///scala/PartialFunction$class/$init$(scala.PartialFunction)|",
+      "|java+constructor:///java/lang/NullPointerException/NullPointerException()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///scala/runtime/AbstractPartialFunction$mcVL$sp/AbstractPartialFunction$mcVL$sp()|",
+      "|java+constructor:///java/lang/NullPointerException/NullPointerException()|"
+    ],
+    "affectedLib": "org.scala-lang:scala-library:2.10.3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.clerezza:shell:0.1-incubating",
+    "coordinatesV2": "org.apache.clerezza:shell:0.3",
+    "caller": "|java+constructor:///org/apache/clerezza/shell/InterruptibleInputStream$$anonfun$read$1/InterruptibleInputStream$$anonfun$read$1(org.apache.clerezza.shell.InterruptibleInputStream)|",
+    "called": "|java+constructor:///scala/runtime/AbstractPartialFunction$mcIL$sp/AbstractPartialFunction$mcIL$sp()|",
+    "v1Body": [
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///scala/Function1$class/$init$(scala.Function1)|",
+      "|java+method:///scala/PartialFunction$class/$init$(scala.PartialFunction)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///scala/runtime/AbstractPartialFunction$mcIL$sp/AbstractPartialFunction$mcIL$sp()|"
+    ],
+    "affectedLib": "org.scala-lang:scala-library:2.10.3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.clerezza:shell:0.1-incubating",
+    "coordinatesV2": "org.apache.clerezza:shell:0.3",
+    "caller": "|java+method:///org/apache/clerezza/shell/Shell$$anon$1/act()|",
+    "called": "|java+method:///scala/Predef$/println(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///scala/Predef$/println(java.lang.Object)|",
+      "|java+constructor:///org/apache/clerezza/shell/Shell$$anon$1$$anonfun$act$1/Shell$$anon$1$$anonfun$act$1(org.apache.clerezza.shell.Shell$$anon$1)|",
+      "|java+method:///org/apache/clerezza/shell/Shell/org$apache$clerezza$shell$Shell$$terminationListeners()|",
+      "|java+method:///scala/Array$/apply(scala.collection.Seq,scala.reflect.ClassManifest)|",
+      "|java+method:///org/apache/clerezza/shell/Shell/interpreterLoop()|",
+      "|java+method:///scala/Predef$/wrapRefArray(java.lang.Object%5B%5D)|",
+      "|java+method:///scala/tools/nsc/InterpreterLoop/main(java.lang.String%5B%5D)|",
+      "|java+method:///scala/collection/IterableLike/foreach(scala.Function1)|",
+      "|java+method:///scala/reflect/ClassManifest$/classType(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///scala/reflect/ClassTag$/apply(java.lang.Class)|",
+      "|java+method:///scala/Predef$/println(java.lang.Object)|",
+      "|java+constructor:///org/apache/clerezza/shell/Shell$$anon$1$$anonfun$act$1/Shell$$anon$1$$anonfun$act$1(org.apache.clerezza.shell.Shell$$anon$1)|",
+      "|java+method:///scala/Array$/apply(scala.collection.Seq,scala.reflect.ClassTag)|",
+      "|java+method:///org/apache/clerezza/shell/Shell/org$apache$clerezza$shell$Shell$$terminationListeners()|",
+      "|java+method:///scala/collection/immutable/Set/foreach(scala.Function1)|",
+      "|java+method:///org/apache/clerezza/shell/Shell/interpreterLoop()|",
+      "|java+method:///scala/tools/nsc/interpreter/ILoop/process(java.lang.String%5B%5D)|"
+    ],
+    "affectedLib": "org.scala-lang:scala-library:2.10.3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.clerezza:shell:0.1-incubating",
+    "coordinatesV2": "org.apache.clerezza:shell:0.3",
+    "caller": "|java+method:///org/apache/clerezza/shell/InterruptibleInputStream/read()|",
+    "called": "|java+method:///scala/runtime/BoxesRunTime/unboxToInt(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/apache/clerezza/shell/InterruptibleInputStream/org$apache$clerezza$shell$InterruptibleInputStream$$Read()|",
+      "|java+constructor:///org/apache/clerezza/shell/InterruptibleInputStream$$anonfun$read$1/InterruptibleInputStream$$anonfun$read$1(org.apache.clerezza.shell.InterruptibleInputStream)|",
+      "|java+method:///scala/actors/ReplyReactor/$bang(java.lang.Object)|",
+      "|java+method:///org/apache/clerezza/shell/InterruptibleInputStream/readerActor()|",
+      "|java+method:///scala/actors/Actor/receive(scala.PartialFunction)|",
+      "|java+method:///scala/runtime/BoxesRunTime/unboxToInt(java.lang.Object)|",
+      "|java+method:///scala/actors/Actor$/self()|"
+    ],
+    "v2Body": [
+      "|java+method:///scala/actors/Actor/$bang(java.lang.Object)|",
+      "|java+method:///org/apache/clerezza/shell/InterruptibleInputStream/org$apache$clerezza$shell$InterruptibleInputStream$$Read()|",
+      "|java+constructor:///org/apache/clerezza/shell/InterruptibleInputStream$$anonfun$read$1/InterruptibleInputStream$$anonfun$read$1(org.apache.clerezza.shell.InterruptibleInputStream)|",
+      "|java+method:///org/apache/clerezza/shell/InterruptibleInputStream/readerActor()|",
+      "|java+method:///scala/actors/Actor/receive(scala.PartialFunction)|",
+      "|java+method:///scala/runtime/BoxesRunTime/unboxToInt(java.lang.Object)|",
+      "|java+method:///scala/actors/Actor$/self()|"
+    ],
+    "affectedLib": "org.scala-lang:scala-library:2.10.3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.clerezza:shell:0.1-incubating",
+    "coordinatesV2": "org.apache.clerezza:shell:0.3",
+    "caller": "|java+method:///org/apache/clerezza/shell/ConsoleShell/activate(org.osgi.service.component.ComponentContext)|",
+    "called": "|java+method:///scala/Predef$/refArrayOps(java.lang.Object%5B%5D)|",
+    "v1Body": [
+      "|java+method:///org/apache/clerezza/shell/ConsoleShell/shellOption_$eq(scala.Option)|",
+      "|java+method:///java/nio/channels/Channels/newInputStream(java.nio.channels.ReadableByteChannel)|",
+      "|java+method:///org/apache/clerezza/shell/ConsoleShell/bundleContext_$eq(org.osgi.framework.BundleContext)|",
+      "|java+constructor:///java/io/FileInputStream/FileInputStream(java.io.FileDescriptor)|",
+      "|java+method:///org/apache/clerezza/shell/ConsoleShell/factory()|",
+      "|java+constructor:///scala/Some/Some(java.lang.Object)|",
+      "|java+method:///org/apache/clerezza/shell/ConsoleShell/bundleContext()|",
+      "|java+method:///org/apache/clerezza/shell/Shell/start()|",
+      "|java+constructor:///org/apache/clerezza/shell/InterruptibleInputStream/InterruptibleInputStream(java.io.InputStream)|",
+      "|java+method:///org/apache/clerezza/shell/ConsoleShell/interruptibleIn_$eq(org.apache.clerezza.shell.InterruptibleInputStream)|",
+      "|java+method:///java/lang/Object/equals(java.lang.Object)|",
+      "|java+method:///org/apache/clerezza/shell/ShellFactory/createShell(java.io.InputStream,java.io.OutputStream)|",
+      "|java+method:///org/osgi/service/component/ComponentContext/getBundleContext()|",
+      "|java+method:///org/apache/clerezza/shell/ConsoleShell/interruptibleIn()|",
+      "|java+method:///java/io/FileInputStream/getChannel()|",
+      "|java+method:///scala/collection/TraversableLike/withFilter(scala.Function1)|",
+      "|java+method:///org/osgi/framework/BundleContext/getBundles()|",
+      "|java+method:///org/osgi/framework/BundleContext/getProperty(java.lang.String)|",
+      "|java+constructor:///org/apache/clerezza/shell/ConsoleShell$$anonfun$activate$1/ConsoleShell$$anonfun$activate$1(org.apache.clerezza.shell.ConsoleShell)|",
+      "|java+constructor:///org/apache/clerezza/shell/ConsoleShell$$anonfun$activate$2/ConsoleShell$$anonfun$activate$2(org.apache.clerezza.shell.ConsoleShell)|",
+      "|java+constructor:///org/apache/clerezza/shell/ConsoleShell$$anonfun$activate$3/ConsoleShell$$anonfun$activate$3(org.apache.clerezza.shell.ConsoleShell)|",
+      "|java+method:///scala/collection/generic/FilterMonadic/foreach(scala.Function1)|",
+      "|java+method:///scala/collection/generic/FilterMonadic/withFilter(scala.Function1)|",
+      "|java+method:///scala/Predef$/refArrayOps(java.lang.Object%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/clerezza/shell/ConsoleShell/shellOption_$eq(scala.Option)|",
+      "|java+method:///org/osgi/framework/BundleContext/getBundles()|",
+      "|java+method:///org/apache/clerezza/shell/ConsoleShell/bundleContext_$eq(org.osgi.framework.BundleContext)|",
+      "|java+constructor:///java/io/FileInputStream/FileInputStream(java.io.FileDescriptor)|",
+      "|java+method:///org/apache/clerezza/shell/ConsoleShell/factory()|",
+      "|java+constructor:///scala/Some/Some(java.lang.Object)|",
+      "|java+method:///org/apache/clerezza/shell/ConsoleShell/bundleContext()|",
+      "|java+method:///scala/collection/mutable/ArrayOps/withFilter(scala.Function1)|",
+      "|java+constructor:///org/apache/clerezza/shell/InterruptibleInputStream/InterruptibleInputStream(java.io.InputStream)|",
+      "|java+method:///org/apache/clerezza/shell/ConsoleShell/interruptibleIn_$eq(org.apache.clerezza.shell.InterruptibleInputStream)|",
+      "|java+method:///java/lang/Object/equals(java.lang.Object)|",
+      "|java+method:///org/osgi/service/component/ComponentContext/getBundleContext()|",
+      "|java+method:///org/apache/clerezza/shell/ConsoleShell/interruptibleIn()|",
+      "|java+method:///java/io/FileInputStream/getChannel()|",
+      "|java+method:///java/nio/channels/Channels/newInputStream(java.nio.channels.ReadableByteChannel)|",
+      "|java+method:///scala/tools/jline/TerminalFactory/create()|",
+      "|java+method:///java/lang/System/console()|",
+      "|java+method:///org/osgi/framework/BundleContext/getProperty(java.lang.String)|",
+      "|java+constructor:///org/apache/clerezza/shell/ConsoleShell$$anonfun$activate$1/ConsoleShell$$anonfun$activate$1(org.apache.clerezza.shell.ConsoleShell)|",
+      "|java+constructor:///org/apache/clerezza/shell/ConsoleShell$$anonfun$activate$2/ConsoleShell$$anonfun$activate$2(org.apache.clerezza.shell.ConsoleShell)|",
+      "|java+constructor:///org/apache/clerezza/shell/ConsoleShell$$anonfun$activate$3/ConsoleShell$$anonfun$activate$3(org.apache.clerezza.shell.ConsoleShell)|",
+      "|java+method:///scala/collection/generic/FilterMonadic/foreach(scala.Function1)|",
+      "|java+method:///org/apache/clerezza/shell/Shell/start()|",
+      "|java+method:///org/apache/clerezza/shell/ShellFactory/createShell(java.io.InputStream,java.io.OutputStream,scala.Option)|",
+      "|java+method:///scala/collection/generic/FilterMonadic/withFilter(scala.Function1)|",
+      "|java+method:///scala/Predef$/refArrayOps(java.lang.Object%5B%5D)|"
+    ],
+    "affectedLib": "org.scala-lang:scala-library:2.10.3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.clerezza:shell:0.1-incubating",
+    "coordinatesV2": "org.apache.clerezza:shell:0.3",
+    "caller": "|java+method:///org/apache/clerezza/shell/OsgiDsl/ps()|",
+    "called": "|java+method:///scala/Predef$/refArrayOps(java.lang.Object%5B%5D)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/clerezza/shell/OsgiDsl$$anonfun$ps$1/OsgiDsl$$anonfun$ps$1(org.apache.clerezza.shell.OsgiDsl)|",
+      "|java+method:///org/osgi/framework/BundleContext/getBundles()|",
+      "|java+method:///org/apache/clerezza/shell/OsgiDsl/bundleContext()|",
+      "|java+method:///scala/collection/IndexedSeqOptimized/foreach(scala.Function1)|",
+      "|java+method:///scala/Predef$/refArrayOps(java.lang.Object%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/clerezza/shell/OsgiDsl$$anonfun$ps$1/OsgiDsl$$anonfun$ps$1(org.apache.clerezza.shell.OsgiDsl)|",
+      "|java+method:///org/osgi/framework/BundleContext/getBundles()|",
+      "|java+method:///org/apache/clerezza/shell/OsgiDsl/bundleContext()|",
+      "|java+method:///scala/collection/mutable/ArrayOps/foreach(scala.Function1)|",
+      "|java+method:///scala/Predef$/refArrayOps(java.lang.Object%5B%5D)|"
+    ],
+    "affectedLib": "org.scala-lang:scala-library:2.10.3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.clerezza:shell:0.1-incubating",
+    "coordinatesV2": "org.apache.clerezza:shell:0.3",
+    "caller": "|java+method:///org/apache/clerezza/shell/Shell$$anon$2$$anonfun$createInterpreter$1$$anonfun$apply$mcV$sp$2/apply(java.lang.String)|",
+    "called": "|java+method:///scala/collection/mutable/StringBuilder/append(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///scala/tools/nsc/Interpreter/interpret(java.lang.String)|",
+      "|java+method:///org/apache/clerezza/shell/Shell$$anon$2/interpreter()|",
+      "|java+method:///org/apache/clerezza/shell/Shell$$anon$2$$anonfun$createInterpreter$1/org$apache$clerezza$shell$Shell$$anon$$anonfun$$$outer()|",
+      "|java+constructor:///scala/collection/mutable/StringBuilder/StringBuilder()|",
+      "|java+method:///scala/collection/mutable/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///scala/collection/mutable/StringBuilder/toString()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/clerezza/shell/Shell$$anon$2/intp()|",
+      "|java+method:///org/apache/clerezza/shell/Shell$$anon$2$$anonfun$createInterpreter$1/org$apache$clerezza$shell$Shell$$anon$$anonfun$$$outer()|",
+      "|java+method:///scala/tools/nsc/interpreter/IMain/interpret(java.lang.String)|",
+      "|java+constructor:///scala/collection/mutable/StringBuilder/StringBuilder()|",
+      "|java+method:///scala/collection/mutable/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///scala/collection/mutable/StringBuilder/toString()|"
+    ],
+    "affectedLib": "org.scala-lang:scala-library:2.10.3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.clerezza:shell:0.1-incubating",
+    "coordinatesV2": "org.apache.clerezza:shell:0.3",
+    "caller": "|java+method:///org/apache/clerezza/shell/Shell$$anon$2$$anonfun$1$$anonfun$apply$1/apply(java.lang.String)|",
+    "called": "|java+method:///scala/Tuple2/_1$mcZ$sp()|",
+    "v1Body": [
+      "|java+method:///org/apache/clerezza/shell/ShellCommand/execute(java.lang.String,java.io.OutputStream)|",
+      "|java+constructor:///scala/tools/nsc/InterpreterControl$Result/InterpreterControl$Result(scala.tools.nsc.InterpreterLoop,boolean,scala.Option)|",
+      "|java+method:///scala/Tuple2/_1()|",
+      "|java+method:///scala/Tuple2/_2()|",
+      "|java+method:///org/apache/clerezza/shell/Shell$$anon$2$$anonfun$1/org$apache$clerezza$shell$Shell$$anon$$anonfun$$$outer()|",
+      "|java+constructor:///scala/MatchError/MatchError(java.lang.Object)|",
+      "|java+constructor:///scala/Tuple2/Tuple2(java.lang.Object,java.lang.Object)|",
+      "|java+method:///scala/runtime/BoxesRunTime/unboxToBoolean(java.lang.Object)|",
+      "|java+method:///org/apache/clerezza/shell/Shell$$anon$2/org$apache$clerezza$shell$Shell$$anon$$$outer()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/clerezza/shell/ShellCommand/execute(java.lang.String,java.io.OutputStream)|",
+      "|java+method:///scala/Tuple2/_2()|",
+      "|java+method:///scala/runtime/BoxesRunTime/boxToBoolean(boolean)|",
+      "|java+method:///org/apache/clerezza/shell/Shell$$anon$2/org$apache$clerezza$shell$Shell$$anon$$$outer()|",
+      "|java+constructor:///scala/MatchError/MatchError(java.lang.Object)|",
+      "|java+constructor:///scala/tools/nsc/interpreter/LoopCommands$Result/LoopCommands$Result(scala.tools.nsc.interpreter.LoopCommands,boolean,scala.Option)|",
+      "|java+constructor:///scala/Tuple2/Tuple2(java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/apache/clerezza/shell/Shell$$anon$2$$anonfun$1/org$apache$clerezza$shell$Shell$$anon$$anonfun$$$outer()|",
+      "|java+method:///scala/Tuple2/_1$mcZ$sp()|"
+    ],
+    "affectedLib": "org.scala-lang:scala-library:2.10.3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.clerezza:shell:0.1-incubating",
+    "coordinatesV2": "org.apache.clerezza:shell:0.3",
+    "caller": "|java+method:///org/apache/clerezza/shell/OsgiDsl/update(java.lang.String)|",
+    "called": "|java+method:///scala/Predef$/refArrayOps(java.lang.Object%5B%5D)|",
+    "v1Body": [
+      "|java+method:///org/apache/clerezza/shell/OsgiDsl/bundleContext()|",
+      "|java+constructor:///org/apache/clerezza/shell/OsgiDsl$$anonfun$update$1/OsgiDsl$$anonfun$update$1(org.apache.clerezza.shell.OsgiDsl,java.lang.String)|",
+      "|java+method:///scala/collection/generic/FilterMonadic/foreach(scala.Function1)|",
+      "|java+constructor:///org/apache/clerezza/shell/OsgiDsl$$anonfun$update$2/OsgiDsl$$anonfun$update$2(org.apache.clerezza.shell.OsgiDsl)|",
+      "|java+method:///scala/Predef$/refArrayOps(java.lang.Object%5B%5D)|",
+      "|java+method:///scala/collection/TraversableLike/withFilter(scala.Function1)|",
+      "|java+method:///org/osgi/framework/BundleContext/getBundles()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/osgi/framework/BundleContext/getBundles()|",
+      "|java+method:///org/apache/clerezza/shell/OsgiDsl/bundleContext()|",
+      "|java+constructor:///org/apache/clerezza/shell/OsgiDsl$$anonfun$update$1/OsgiDsl$$anonfun$update$1(org.apache.clerezza.shell.OsgiDsl,java.lang.String)|",
+      "|java+method:///scala/collection/generic/FilterMonadic/foreach(scala.Function1)|",
+      "|java+constructor:///org/apache/clerezza/shell/OsgiDsl$$anonfun$update$2/OsgiDsl$$anonfun$update$2(org.apache.clerezza.shell.OsgiDsl)|",
+      "|java+method:///scala/collection/mutable/ArrayOps/withFilter(scala.Function1)|",
+      "|java+method:///scala/Predef$/refArrayOps(java.lang.Object%5B%5D)|"
+    ],
+    "affectedLib": "org.scala-lang:scala-library:2.10.3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.clerezza:shell:0.1-incubating",
+    "coordinatesV2": "org.apache.clerezza:shell:0.3",
+    "caller": "|java+method:///org/apache/clerezza/shell/Shell/bind(java.lang.String,java.lang.String,java.lang.Object)|",
+    "called": "|java+constructor:///scala/Tuple3/Tuple3(java.lang.Object,java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/apache/clerezza/shell/Shell/org$apache$clerezza$shell$Shell$$bindings()|",
+      "|java+method:///scala/collection/SetLike/$plus(java.lang.Object)|",
+      "|java+method:///org/apache/clerezza/shell/Shell/org$apache$clerezza$shell$Shell$$bindings_$eq(scala.collection.immutable.Set)|",
+      "|java+constructor:///scala/Tuple3/Tuple3(java.lang.Object,java.lang.Object,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///scala/collection/immutable/Set/$plus(java.lang.Object)|",
+      "|java+method:///org/apache/clerezza/shell/Shell/org$apache$clerezza$shell$Shell$$bindings()|",
+      "|java+method:///org/apache/clerezza/shell/Shell/org$apache$clerezza$shell$Shell$$bindings_$eq(scala.collection.immutable.Set)|",
+      "|java+constructor:///scala/Tuple3/Tuple3(java.lang.Object,java.lang.Object,java.lang.Object)|"
+    ],
+    "affectedLib": "org.scala-lang:scala-library:2.10.3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.clerezza:shell:0.1-incubating",
+    "coordinatesV2": "org.apache.clerezza:shell:0.3",
+    "caller": "|java+method:///org/apache/clerezza/shell/ShellFactory$$anon$1$$anonfun$run$1/apply(org.apache.clerezza.shell.ShellCustomizer)|",
+    "called": "|java+method:///scala/collection/immutable/List/foreach(scala.Function1)|",
+    "v1Body": [
+      "|java+method:///scala/collection/LinearSeqOptimized/foreach(scala.Function1)|",
+      "|java+method:///org/apache/clerezza/shell/ShellCustomizer/bindings(org.apache.clerezza.shell.Shell$Environment)|",
+      "|java+method:///org/apache/clerezza/shell/ShellCustomizer/imports()|",
+      "|java+constructor:///org/apache/clerezza/shell/ShellFactory$$anon$1$$anonfun$run$1$$anonfun$apply$1/ShellFactory$$anon$1$$anonfun$run$1$$anonfun$apply$1(org.apache.clerezza.shell.ShellFactory$$anon$1$$anonfun$run$1)|",
+      "|java+constructor:///org/apache/clerezza/shell/ShellFactory$$anon$1$$anonfun$run$1$$anonfun$apply$2/ShellFactory$$anon$1$$anonfun$run$1$$anonfun$apply$2(org.apache.clerezza.shell.ShellFactory$$anon$1$$anonfun$run$1)|"
+    ],
+    "v2Body": [
+      "|java+method:///scala/collection/immutable/List/foreach(scala.Function1)|",
+      "|java+method:///org/apache/clerezza/shell/ShellCustomizer/bindings(org.apache.clerezza.shell.Shell$Environment)|",
+      "|java+method:///org/apache/clerezza/shell/ShellCustomizer/imports()|",
+      "|java+constructor:///org/apache/clerezza/shell/ShellFactory$$anon$1$$anonfun$run$1$$anonfun$apply$1/ShellFactory$$anon$1$$anonfun$run$1$$anonfun$apply$1(org.apache.clerezza.shell.ShellFactory$$anon$1$$anonfun$run$1)|",
+      "|java+constructor:///org/apache/clerezza/shell/ShellFactory$$anon$1$$anonfun$run$1$$anonfun$apply$2/ShellFactory$$anon$1$$anonfun$run$1$$anonfun$apply$2(org.apache.clerezza.shell.ShellFactory$$anon$1$$anonfun$run$1)|"
+    ],
+    "affectedLib": "org.scala-lang:scala-library:2.10.3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.clerezza:shell:0.1-incubating",
+    "coordinatesV2": "org.apache.clerezza:shell:0.3",
+    "caller": "|java+constructor:///org/apache/clerezza/shell/OsgiDsl$$anonfun$headers$1/OsgiDsl$$anonfun$headers$1(org.apache.clerezza.shell.OsgiDsl)|",
+    "called": "|java+constructor:///scala/runtime/AbstractFunction1/AbstractFunction1()|",
+    "v1Body": [
+      "|java+constructor:///scala/runtime/AbstractFunction1/AbstractFunction1()|",
+      "|java+constructor:///java/lang/NullPointerException/NullPointerException()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///scala/runtime/AbstractFunction1/AbstractFunction1()|"
+    ],
+    "affectedLib": "org.scala-lang:scala-library:2.10.3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.clerezza:shell:0.1-incubating",
+    "coordinatesV2": "org.apache.clerezza:shell:0.3",
+    "caller": "|java+method:///org/apache/clerezza/shell/Shell$$anon$2/printWelcome()|",
+    "called": "|java+method:///scala/collection/immutable/StringOps/stripMargin()|",
+    "v1Body": [
+      "|java+method:///scala/Predef$/augmentString(java.lang.String)|",
+      "|java+method:///scala/util/PropertiesTrait/versionString()|",
+      "|java+method:///scala/collection/immutable/StringLike/format(scala.collection.Seq)|",
+      "|java+method:///org/apache/clerezza/shell/Shell$$anon$2/plushln(java.lang.Object)|",
+      "|java+method:///scala/collection/immutable/StringLike/stripMargin()|",
+      "|java+method:///scala/Predef$/genericWrapArray(java.lang.Object)|",
+      "|java+method:///scala/util/PropertiesTrait/javaVmName()|",
+      "|java+method:///scala/util/PropertiesTrait/javaVersion()|"
+    ],
+    "v2Body": [
+      "|java+method:///scala/Predef$/augmentString(java.lang.String)|",
+      "|java+method:///org/apache/clerezza/shell/Shell$$anon$2/echo(java.lang.String)|",
+      "|java+method:///scala/tools/nsc/Properties$/javaVersion()|",
+      "|java+method:///scala/tools/nsc/Properties$/javaVmName()|",
+      "|java+method:///scala/Predef$/genericWrapArray(java.lang.Object)|",
+      "|java+method:///scala/tools/nsc/Properties$/versionString()|",
+      "|java+constructor:///scala/collection/immutable/StringOps/StringOps(java.lang.String)|",
+      "|java+method:///scala/collection/immutable/StringOps/stripMargin()|",
+      "|java+method:///scala/collection/immutable/StringOps/format(scala.collection.Seq)|"
+    ],
+    "affectedLib": "org.scala-lang:scala-library:2.10.3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.clerezza:shell:0.1-incubating",
+    "coordinatesV2": "org.apache.clerezza:shell:0.3",
+    "caller": "|java+method:///org/apache/clerezza/shell/InterruptibleInputStream$Stop$/productIterator()|",
+    "called": "|java+method:///scala/runtime/ScalaRunTime$/typedProductIterator(scala.Product)|",
+    "v1Body": [
+      "|java+method:///scala/Product$class/productIterator(scala.Product)|"
+    ],
+    "v2Body": [
+      "|java+method:///scala/runtime/ScalaRunTime$/typedProductIterator(scala.Product)|"
+    ],
+    "affectedLib": "org.scala-lang:scala-library:2.10.3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.clerezza:shell:0.1-incubating",
+    "coordinatesV2": "org.apache.clerezza:shell:0.3",
+    "caller": "|java+method:///org/apache/clerezza/shell/Shell$$anon$2$$anonfun$createInterpreter$1$$anonfun$apply$mcV$sp$2/apply(java.lang.String)|",
+    "called": "|java+method:///scala/tools/nsc/interpreter/IMain/interpret(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///scala/tools/nsc/Interpreter/interpret(java.lang.String)|",
+      "|java+method:///org/apache/clerezza/shell/Shell$$anon$2/interpreter()|",
+      "|java+method:///org/apache/clerezza/shell/Shell$$anon$2$$anonfun$createInterpreter$1/org$apache$clerezza$shell$Shell$$anon$$anonfun$$$outer()|",
+      "|java+constructor:///scala/collection/mutable/StringBuilder/StringBuilder()|",
+      "|java+method:///scala/collection/mutable/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///scala/collection/mutable/StringBuilder/toString()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/clerezza/shell/Shell$$anon$2/intp()|",
+      "|java+method:///org/apache/clerezza/shell/Shell$$anon$2$$anonfun$createInterpreter$1/org$apache$clerezza$shell$Shell$$anon$$anonfun$$$outer()|",
+      "|java+method:///scala/tools/nsc/interpreter/IMain/interpret(java.lang.String)|",
+      "|java+constructor:///scala/collection/mutable/StringBuilder/StringBuilder()|",
+      "|java+method:///scala/collection/mutable/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///scala/collection/mutable/StringBuilder/toString()|"
+    ],
+    "affectedLib": "org.scala-lang:scala-compiler:2.10.3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.clerezza:shell:0.1-incubating",
+    "coordinatesV2": "org.apache.clerezza:shell:0.3",
+    "caller": "|java+method:///org/apache/clerezza/shell/Shell$$anon$2$$anonfun$1$$anonfun$apply$1/apply(java.lang.String)|",
+    "called": "|java+constructor:///scala/tools/nsc/interpreter/LoopCommands$Result/LoopCommands$Result(scala.tools.nsc.interpreter.LoopCommands,boolean,scala.Option)|",
+    "v1Body": [
+      "|java+method:///org/apache/clerezza/shell/ShellCommand/execute(java.lang.String,java.io.OutputStream)|",
+      "|java+constructor:///scala/tools/nsc/InterpreterControl$Result/InterpreterControl$Result(scala.tools.nsc.InterpreterLoop,boolean,scala.Option)|",
+      "|java+method:///scala/Tuple2/_1()|",
+      "|java+method:///scala/Tuple2/_2()|",
+      "|java+method:///org/apache/clerezza/shell/Shell$$anon$2$$anonfun$1/org$apache$clerezza$shell$Shell$$anon$$anonfun$$$outer()|",
+      "|java+constructor:///scala/MatchError/MatchError(java.lang.Object)|",
+      "|java+constructor:///scala/Tuple2/Tuple2(java.lang.Object,java.lang.Object)|",
+      "|java+method:///scala/runtime/BoxesRunTime/unboxToBoolean(java.lang.Object)|",
+      "|java+method:///org/apache/clerezza/shell/Shell$$anon$2/org$apache$clerezza$shell$Shell$$anon$$$outer()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/clerezza/shell/ShellCommand/execute(java.lang.String,java.io.OutputStream)|",
+      "|java+method:///scala/Tuple2/_2()|",
+      "|java+method:///scala/runtime/BoxesRunTime/boxToBoolean(boolean)|",
+      "|java+method:///org/apache/clerezza/shell/Shell$$anon$2/org$apache$clerezza$shell$Shell$$anon$$$outer()|",
+      "|java+constructor:///scala/MatchError/MatchError(java.lang.Object)|",
+      "|java+constructor:///scala/tools/nsc/interpreter/LoopCommands$Result/LoopCommands$Result(scala.tools.nsc.interpreter.LoopCommands,boolean,scala.Option)|",
+      "|java+constructor:///scala/Tuple2/Tuple2(java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/apache/clerezza/shell/Shell$$anon$2$$anonfun$1/org$apache$clerezza$shell$Shell$$anon$$anonfun$$$outer()|",
+      "|java+method:///scala/Tuple2/_1$mcZ$sp()|"
+    ],
+    "affectedLib": "org.scala-lang:scala-compiler:2.10.3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.clerezza:shell:0.1-incubating",
+    "coordinatesV2": "org.apache.clerezza:shell:0.3",
+    "caller": "|java+method:///org/apache/clerezza/shell/Shell$$anon$2$$anonfun$2/apply()|",
+    "called": "|java+constructor:///scala/tools/nsc/interpreter/JLineCompletion/JLineCompletion(scala.tools.nsc.interpreter.IMain)|",
+    "v1Body": [
+      "|java+method:///org/apache/clerezza/shell/Shell$$anon$2/CommandImplicits()|",
+      "|java+method:///scala/tools/nsc/InterpreterLoop$CommandImplicits$/u2ir(scala.runtime.BoxedUnit)|",
+      "|java+method:///org/apache/clerezza/shell/Shell$$anon$2$$anonfun$2/apply()|",
+      "|java+method:///org/apache/clerezza/shell/Shell$$anon$2/printHelp()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/clerezza/shell/Shell$$anon$2/intp()|",
+      "|java+constructor:///scala/tools/nsc/interpreter/JLineCompletion/JLineCompletion(scala.tools.nsc.interpreter.IMain)|",
+      "|java+method:///org/apache/clerezza/shell/Shell$$anon$2$$anonfun$2/apply()|"
+    ],
+    "affectedLib": "org.scala-lang:scala-compiler:2.10.3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.clerezza:shell:0.1-incubating",
+    "coordinatesV2": "org.apache.clerezza:shell:0.3",
+    "caller": "|java+constructor:///org/apache/clerezza/shell/Shell$$anon$2/Shell$$anon$2(org.apache.clerezza.shell.Shell)|",
+    "called": "|java+constructor:///scala/tools/nsc/interpreter/ILoop/ILoop(java.io.BufferedReader,java.io.PrintWriter)|",
+    "v1Body": [
+      "|java+method:///org/apache/clerezza/shell/Shell/inStream()|",
+      "|java+method:///scala/Predef$/wrapRefArray(java.lang.Object%5B%5D)|",
+      "|java+method:///scala/collection/immutable/List/$colon$colon$colon(scala.collection.immutable.List)|",
+      "|java+method:///scala/collection/immutable/List$/apply(scala.collection.Seq)|",
+      "|java+constructor:///scala/tools/nsc/InterpreterControl$NoArgs/InterpreterControl$NoArgs(scala.tools.nsc.InterpreterLoop,java.lang.String,java.lang.String,scala.Function0)|",
+      "|java+method:///scala/collection/immutable/Set$/canBuildFrom()|",
+      "|java+constructor:///java/io/PrintWriter/PrintWriter(java.io.OutputStream,boolean)|",
+      "|java+constructor:///org/apache/clerezza/shell/Shell$$anon$2$$anonfun$4/Shell$$anon$2$$anonfun$4(org.apache.clerezza.shell.Shell$$anon$2)|",
+      "|java+constructor:///org/apache/clerezza/shell/Shell$$anon$2$$anonfun$9/Shell$$anon$2$$anonfun$9(org.apache.clerezza.shell.Shell$$anon$2)|",
+      "|java+constructor:///org/apache/clerezza/shell/Shell$$anon$2$$anonfun$5/Shell$$anon$2$$anonfun$5(org.apache.clerezza.shell.Shell$$anon$2)|",
+      "|java+constructor:///org/apache/clerezza/shell/Shell$$anon$2$$anonfun$1/Shell$$anon$2$$anonfun$1(org.apache.clerezza.shell.Shell$$anon$2)|",
+      "|java+constructor:///org/apache/clerezza/shell/Shell$$anon$2$$anonfun$6/Shell$$anon$2$$anonfun$6(org.apache.clerezza.shell.Shell$$anon$2)|",
+      "|java+constructor:///org/apache/clerezza/shell/Shell$$anon$2$$anonfun$2/Shell$$anon$2$$anonfun$2(org.apache.clerezza.shell.Shell$$anon$2)|",
+      "|java+constructor:///org/apache/clerezza/shell/Shell$$anon$2$$anonfun$7/Shell$$anon$2$$anonfun$7(org.apache.clerezza.shell.Shell$$anon$2)|",
+      "|java+constructor:///org/apache/clerezza/shell/Shell$$anon$2$$anonfun$3/Shell$$anon$2$$anonfun$3(org.apache.clerezza.shell.Shell$$anon$2)|",
+      "|java+constructor:///org/apache/clerezza/shell/Shell$$anon$2$$anonfun$8/Shell$$anon$2$$anonfun$8(org.apache.clerezza.shell.Shell$$anon$2)|",
+      "|java+constructor:///scala/tools/nsc/InterpreterLoop/InterpreterLoop(java.io.BufferedReader,java.io.PrintWriter)|",
+      "|java+constructor:///org/apache/clerezza/shell/Shell$$anon$2$$anonfun$10/Shell$$anon$2$$anonfun$10(org.apache.clerezza.shell.Shell$$anon$2)|",
+      "|java+constructor:///java/io/InputStreamReader/InputStreamReader(java.io.InputStream)|",
+      "|java+constructor:///scala/tools/nsc/InterpreterControl$OneArg/InterpreterControl$OneArg(scala.tools.nsc.InterpreterLoop,java.lang.String,java.lang.String,scala.Function1)|",
+      "|java+method:///scala/collection/TraversableLike/map(scala.Function1,scala.collection.generic.CanBuildFrom)|",
+      "|java+constructor:///java/io/BufferedReader/BufferedReader(java.io.Reader)|",
+      "|java+constructor:///scala/tools/nsc/InterpreterControl$VarArgs/InterpreterControl$VarArgs(scala.tools.nsc.InterpreterLoop,java.lang.String,java.lang.String,scala.Function1)|",
+      "|java+constructor:///scala/tools/nsc/InterpreterControl$LineArg/InterpreterControl$LineArg(scala.tools.nsc.InterpreterLoop,java.lang.String,java.lang.String,scala.Function1)|",
+      "|java+constructor:///java/lang/NullPointerException/NullPointerException()|",
+      "|java+method:///scala/collection/TraversableOnce/toList()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/clerezza/shell/Shell/inStream()|",
+      "|java+constructor:///java/io/InputStreamReader/InputStreamReader(java.io.InputStream)|",
+      "|java+constructor:///scala/tools/nsc/interpreter/ILoop/ILoop(java.io.BufferedReader,java.io.PrintWriter)|",
+      "|java+constructor:///java/io/BufferedReader/BufferedReader(java.io.Reader)|",
+      "|java+constructor:///java/lang/NullPointerException/NullPointerException()|",
+      "|java+constructor:///java/io/PrintWriter/PrintWriter(java.io.OutputStream,boolean)|"
+    ],
+    "affectedLib": "org.scala-lang:scala-compiler:2.10.3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.clerezza:shell:0.1-incubating",
+    "coordinatesV2": "org.apache.clerezza:shell:0.3",
+    "caller": "|java+method:///org/apache/clerezza/shell/Shell$$anon$2/printWelcome()|",
+    "called": "|java+method:///scala/tools/nsc/Properties$/javaVersion()|",
+    "v1Body": [
+      "|java+method:///scala/Predef$/augmentString(java.lang.String)|",
+      "|java+method:///scala/util/PropertiesTrait/versionString()|",
+      "|java+method:///scala/collection/immutable/StringLike/format(scala.collection.Seq)|",
+      "|java+method:///org/apache/clerezza/shell/Shell$$anon$2/plushln(java.lang.Object)|",
+      "|java+method:///scala/collection/immutable/StringLike/stripMargin()|",
+      "|java+method:///scala/Predef$/genericWrapArray(java.lang.Object)|",
+      "|java+method:///scala/util/PropertiesTrait/javaVmName()|",
+      "|java+method:///scala/util/PropertiesTrait/javaVersion()|"
+    ],
+    "v2Body": [
+      "|java+method:///scala/Predef$/augmentString(java.lang.String)|",
+      "|java+method:///org/apache/clerezza/shell/Shell$$anon$2/echo(java.lang.String)|",
+      "|java+method:///scala/tools/nsc/Properties$/javaVersion()|",
+      "|java+method:///scala/tools/nsc/Properties$/javaVmName()|",
+      "|java+method:///scala/Predef$/genericWrapArray(java.lang.Object)|",
+      "|java+method:///scala/tools/nsc/Properties$/versionString()|",
+      "|java+constructor:///scala/collection/immutable/StringOps/StringOps(java.lang.String)|",
+      "|java+method:///scala/collection/immutable/StringOps/stripMargin()|",
+      "|java+method:///scala/collection/immutable/StringOps/format(scala.collection.Seq)|"
+    ],
+    "affectedLib": "org.scala-lang:scala-compiler:2.10.3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.clerezza:shell:0.1-incubating",
+    "coordinatesV2": "org.apache.clerezza:shell:0.3",
+    "caller": "|java+method:///org/apache/clerezza/shell/Shell$$anon$2$$anonfun$1/apply(org.apache.clerezza.shell.ShellCommand)|",
+    "called": "|java+constructor:///scala/tools/nsc/interpreter/LoopCommands$LineCmd/LoopCommands$LineCmd(scala.tools.nsc.interpreter.LoopCommands,java.lang.String,java.lang.String,java.lang.String,scala.Function1)|",
+    "v1Body": [
+      "|java+method:///org/apache/clerezza/shell/ShellCommand/description()|",
+      "|java+constructor:///org/apache/clerezza/shell/Shell$$anon$2$$anonfun$1$$anonfun$apply$1/Shell$$anon$2$$anonfun$1$$anonfun$apply$1(org.apache.clerezza.shell.Shell$$anon$2$$anonfun$1,org.apache.clerezza.shell.ShellCommand)|",
+      "|java+method:///org/apache/clerezza/shell/ShellCommand/command()|",
+      "|java+constructor:///scala/tools/nsc/InterpreterControl$LineArg/InterpreterControl$LineArg(scala.tools.nsc.InterpreterLoop,java.lang.String,java.lang.String,scala.Function1)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/clerezza/shell/ShellCommand/description()|",
+      "|java+constructor:///org/apache/clerezza/shell/Shell$$anon$2$$anonfun$1$$anonfun$apply$1/Shell$$anon$2$$anonfun$1$$anonfun$apply$1(org.apache.clerezza.shell.Shell$$anon$2$$anonfun$1,org.apache.clerezza.shell.ShellCommand)|",
+      "|java+method:///org/apache/clerezza/shell/ShellCommand/command()|",
+      "|java+constructor:///scala/tools/nsc/interpreter/LoopCommands$LineCmd/LoopCommands$LineCmd(scala.tools.nsc.interpreter.LoopCommands,java.lang.String,java.lang.String,java.lang.String,scala.Function1)|"
+    ],
+    "affectedLib": "org.scala-lang:scala-compiler:2.10.3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.clerezza:shell:0.1-incubating",
+    "coordinatesV2": "org.apache.clerezza:shell:0.3",
+    "caller": "|java+method:///org/apache/clerezza/shell/Shell$$anon$2$$anonfun$createInterpreter$1$$anonfun$apply$mcV$sp$1/apply(scala.Tuple3)|",
+    "called": "|java+method:///scala/tools/nsc/interpreter/IMain/bind(java.lang.String,java.lang.String,java.lang.Object,scala.collection.immutable.List)|",
+    "v1Body": [
+      "|java+method:///scala/tools/nsc/Interpreter/bind(java.lang.String,java.lang.String,java.lang.Object)|",
+      "|java+method:///scala/Tuple3/_1()|",
+      "|java+method:///scala/Tuple3/_2()|",
+      "|java+method:///org/apache/clerezza/shell/Shell$$anon$2$$anonfun$createInterpreter$1/org$apache$clerezza$shell$Shell$$anon$$anonfun$$$outer()|",
+      "|java+method:///scala/Tuple3/_3()|",
+      "|java+method:///org/apache/clerezza/shell/Shell$$anon$2/interpreter()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/clerezza/shell/Shell$$anon$2/intp()|",
+      "|java+method:///scala/Tuple3/_1()|",
+      "|java+method:///scala/Tuple3/_2()|",
+      "|java+method:///scala/Tuple3/_3()|",
+      "|java+method:///scala/tools/nsc/interpreter/IMain/bind(java.lang.String,java.lang.String,java.lang.Object,scala.collection.immutable.List)|",
+      "|java+method:///org/apache/clerezza/shell/Shell$$anon$2$$anonfun$createInterpreter$1/org$apache$clerezza$shell$Shell$$anon$$anonfun$$$outer()|",
+      "|java+method:///scala/tools/nsc/interpreter/IMain/bind$default$4()|"
+    ],
+    "affectedLib": "org.scala-lang:scala-compiler:2.10.3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.clerezza:shell:0.1-incubating",
+    "coordinatesV2": "org.apache.clerezza:shell:0.3",
+    "caller": "|java+method:///org/apache/clerezza/shell/Shell$$anon$1/act()|",
+    "called": "|java+method:///scala/tools/nsc/interpreter/ILoop/process(java.lang.String%5B%5D)|",
+    "v1Body": [
+      "|java+method:///scala/Predef$/println(java.lang.Object)|",
+      "|java+constructor:///org/apache/clerezza/shell/Shell$$anon$1$$anonfun$act$1/Shell$$anon$1$$anonfun$act$1(org.apache.clerezza.shell.Shell$$anon$1)|",
+      "|java+method:///org/apache/clerezza/shell/Shell/org$apache$clerezza$shell$Shell$$terminationListeners()|",
+      "|java+method:///scala/Array$/apply(scala.collection.Seq,scala.reflect.ClassManifest)|",
+      "|java+method:///org/apache/clerezza/shell/Shell/interpreterLoop()|",
+      "|java+method:///scala/Predef$/wrapRefArray(java.lang.Object%5B%5D)|",
+      "|java+method:///scala/tools/nsc/InterpreterLoop/main(java.lang.String%5B%5D)|",
+      "|java+method:///scala/collection/IterableLike/foreach(scala.Function1)|",
+      "|java+method:///scala/reflect/ClassManifest$/classType(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///scala/reflect/ClassTag$/apply(java.lang.Class)|",
+      "|java+method:///scala/Predef$/println(java.lang.Object)|",
+      "|java+constructor:///org/apache/clerezza/shell/Shell$$anon$1$$anonfun$act$1/Shell$$anon$1$$anonfun$act$1(org.apache.clerezza.shell.Shell$$anon$1)|",
+      "|java+method:///scala/Array$/apply(scala.collection.Seq,scala.reflect.ClassTag)|",
+      "|java+method:///org/apache/clerezza/shell/Shell/org$apache$clerezza$shell$Shell$$terminationListeners()|",
+      "|java+method:///scala/collection/immutable/Set/foreach(scala.Function1)|",
+      "|java+method:///org/apache/clerezza/shell/Shell/interpreterLoop()|",
+      "|java+method:///scala/tools/nsc/interpreter/ILoop/process(java.lang.String%5B%5D)|"
+    ],
+    "affectedLib": "org.scala-lang:scala-compiler:2.10.3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.clerezza:shell:0.1-incubating",
+    "coordinatesV2": "org.apache.clerezza:shell:0.3",
+    "caller": "|java+method:///org/apache/clerezza/shell/Shell/stop()|",
+    "called": "|java+method:///scala/tools/nsc/interpreter/ILoop/closeInterpreter()|",
+    "v1Body": [
+      "|java+method:///scala/tools/nsc/InterpreterLoop/command(java.lang.String)|",
+      "|java+method:///org/apache/clerezza/shell/Shell/interpreterLoop()|",
+      "|java+method:///scala/tools/nsc/InterpreterLoop/closeInterpreter()|"
+    ],
+    "v2Body": [
+      "|java+method:///scala/tools/nsc/interpreter/ILoop/closeInterpreter()|",
+      "|java+method:///org/apache/clerezza/shell/Shell/interpreterLoop()|",
+      "|java+method:///scala/tools/nsc/interpreter/ILoop/command(java.lang.String)|"
+    ],
+    "affectedLib": "org.scala-lang:scala-compiler:2.10.3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.clerezza:shell:0.1-incubating",
+    "coordinatesV2": "org.apache.clerezza:shell:0.3",
+    "caller": "|java+method:///org/apache/clerezza/shell/Shell$$anon$2/createInterpreter()|",
+    "called": "|java+method:///scala/tools/nsc/interpreter/IMain/beQuietDuring(scala.Function0)|",
+    "v1Body": [
+      "|java+method:///org/apache/clerezza/scala/scripting/InterpreterFactory/createInterpreter(java.io.PrintWriter)|",
+      "|java+constructor:///org/apache/clerezza/shell/Shell$$anon$2$$anonfun$createInterpreter$1/Shell$$anon$2$$anonfun$createInterpreter$1(org.apache.clerezza.shell.Shell$$anon$2)|",
+      "|java+method:///org/apache/clerezza/shell/Shell$$anon$2/interpreter_$eq(scala.tools.nsc.Interpreter)|",
+      "|java+method:///org/apache/clerezza/shell/Shell$$anon$2/out()|",
+      "|java+method:///scala/tools/nsc/Interpreter/beQuietDuring(scala.Function0)|",
+      "|java+method:///org/apache/clerezza/shell/Shell$$anon$2/interpreter()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/clerezza/scala/scripting/InterpreterFactory/createInterpreter(java.io.PrintWriter)|",
+      "|java+constructor:///org/apache/clerezza/shell/Shell$$anon$2$$anonfun$createInterpreter$1/Shell$$anon$2$$anonfun$createInterpreter$1(org.apache.clerezza.shell.Shell$$anon$2)|",
+      "|java+method:///org/apache/clerezza/shell/Shell$$anon$2/intp()|",
+      "|java+method:///org/apache/clerezza/shell/Shell$$anon$2/intp_$eq(scala.tools.nsc.interpreter.IMain)|",
+      "|java+method:///scala/tools/nsc/interpreter/IMain/beQuietDuring(scala.Function0)|",
+      "|java+method:///org/apache/clerezza/shell/Shell$$anon$2/out()|"
+    ],
+    "affectedLib": "org.scala-lang:scala-compiler:2.10.3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.clerezza:shell:0.1-incubating",
+    "coordinatesV2": "org.apache.clerezza:shell:0.3",
+    "caller": "|java+method:///org/apache/clerezza/shell/Shell$$anon$2/createInterpreter()|",
+    "called": "|java+method:///org/apache/clerezza/scala/scripting/InterpreterFactory/createInterpreter(java.io.PrintWriter)|",
+    "v1Body": [
+      "|java+method:///org/apache/clerezza/scala/scripting/InterpreterFactory/createInterpreter(java.io.PrintWriter)|",
+      "|java+constructor:///org/apache/clerezza/shell/Shell$$anon$2$$anonfun$createInterpreter$1/Shell$$anon$2$$anonfun$createInterpreter$1(org.apache.clerezza.shell.Shell$$anon$2)|",
+      "|java+method:///org/apache/clerezza/shell/Shell$$anon$2/interpreter_$eq(scala.tools.nsc.Interpreter)|",
+      "|java+method:///org/apache/clerezza/shell/Shell$$anon$2/out()|",
+      "|java+method:///scala/tools/nsc/Interpreter/beQuietDuring(scala.Function0)|",
+      "|java+method:///org/apache/clerezza/shell/Shell$$anon$2/interpreter()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/clerezza/scala/scripting/InterpreterFactory/createInterpreter(java.io.PrintWriter)|",
+      "|java+constructor:///org/apache/clerezza/shell/Shell$$anon$2$$anonfun$createInterpreter$1/Shell$$anon$2$$anonfun$createInterpreter$1(org.apache.clerezza.shell.Shell$$anon$2)|",
+      "|java+method:///org/apache/clerezza/shell/Shell$$anon$2/intp()|",
+      "|java+method:///org/apache/clerezza/shell/Shell$$anon$2/intp_$eq(scala.tools.nsc.interpreter.IMain)|",
+      "|java+method:///scala/tools/nsc/interpreter/IMain/beQuietDuring(scala.Function0)|",
+      "|java+method:///org/apache/clerezza/shell/Shell$$anon$2/out()|"
+    ],
+    "affectedLib": "org.apache.clerezza.scala:script-engine:0.3",
+    "change": "UPDATED"
+  }
+]

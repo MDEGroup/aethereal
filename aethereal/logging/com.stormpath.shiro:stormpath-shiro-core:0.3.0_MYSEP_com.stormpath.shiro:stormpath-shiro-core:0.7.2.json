@@ -1,0 +1,202 @@
+[
+  {
+    "coordinatesV1": "com.stormpath.shiro:stormpath-shiro-core:0.3.0",
+    "coordinatesV2": "com.stormpath.shiro:stormpath-shiro-core:0.7.2",
+    "caller": "|java+method:///com/stormpath/shiro/realm/ApplicationRealm/createAuthenticationRequest(org.apache.shiro.authc.UsernamePasswordToken)|",
+    "called": "|java+constructor:///com/stormpath/sdk/impl/authc/DefaultUsernamePasswordRequest/DefaultUsernamePasswordRequest(java.lang.String,char%5B%5D)|",
+    "v1Body": [
+      "|java+constructor:///com/stormpath/sdk/authc/UsernamePasswordRequest/UsernamePasswordRequest(java.lang.String,char%5B%5D,java.lang.String)|",
+      "|java+method:///org/apache/shiro/authc/UsernamePasswordToken/getHost()|",
+      "|java+method:///org/apache/shiro/authc/UsernamePasswordToken/getUsername()|",
+      "|java+method:///org/apache/shiro/authc/UsernamePasswordToken/getPassword()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/stormpath/sdk/impl/authc/DefaultUsernamePasswordRequest/DefaultUsernamePasswordRequest(java.lang.String,char%5B%5D)|",
+      "|java+method:///org/apache/shiro/authc/UsernamePasswordToken/getHost()|",
+      "|java+method:///com/stormpath/sdk/impl/authc/DefaultUsernamePasswordRequest/setHost(java.lang.String)|",
+      "|java+method:///org/apache/shiro/authc/UsernamePasswordToken/getUsername()|",
+      "|java+method:///org/apache/shiro/authc/UsernamePasswordToken/getPassword()|"
+    ],
+    "affectedLib": "com.stormpath.sdk:stormpath-sdk-impl:1.1.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.stormpath.shiro:stormpath-shiro-core:0.3.0",
+    "coordinatesV2": "com.stormpath.shiro:stormpath-shiro-core:0.7.2",
+    "caller": "|java+method:///com/stormpath/shiro/client/ClientFactory/setApiKeyProperties(java.util.Properties)|",
+    "called": "|java+method:///com/stormpath/sdk/api/ApiKeys/builder()|",
+    "v1Body": [
+      "|java+method:///com/stormpath/sdk/client/ClientBuilder/setApiKeyProperties(java.util.Properties)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/stormpath/sdk/client/ClientBuilder/setApiKey(com.stormpath.sdk.api.ApiKey)|",
+      "|java+method:///com/stormpath/sdk/api/ApiKeyBuilder/setProperties(java.util.Properties)|",
+      "|java+method:///com/stormpath/sdk/api/ApiKeyBuilder/build()|",
+      "|java+method:///com/stormpath/sdk/api/ApiKeys/builder()|"
+    ],
+    "affectedLib": "com.stormpath.sdk:stormpath-sdk-api:1.1.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.stormpath.shiro:stormpath-shiro-core:0.3.0",
+    "coordinatesV2": "com.stormpath.shiro:stormpath-shiro-core:0.7.2",
+    "caller": "|java+method:///com/stormpath/shiro/client/ClientFactory/setApiKeyReader(java.io.Reader)|",
+    "called": "|java+method:///com/stormpath/sdk/api/ApiKeys/builder()|",
+    "v1Body": [
+      "|java+method:///com/stormpath/sdk/client/ClientBuilder/setApiKeyReader(java.io.Reader)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/stormpath/sdk/client/ClientBuilder/setApiKey(com.stormpath.sdk.api.ApiKey)|",
+      "|java+method:///com/stormpath/sdk/api/ApiKeyBuilder/setReader(java.io.Reader)|",
+      "|java+method:///com/stormpath/sdk/api/ApiKeyBuilder/build()|",
+      "|java+method:///com/stormpath/sdk/api/ApiKeys/builder()|"
+    ],
+    "affectedLib": "com.stormpath.sdk:stormpath-sdk-api:1.1.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.stormpath.shiro:stormpath-shiro-core:0.3.0",
+    "coordinatesV2": "com.stormpath.shiro:stormpath-shiro-core:0.7.2",
+    "caller": "|java+method:///com/stormpath/shiro/client/ClientFactory/setApiKeySecretPropertyName(java.lang.String)|",
+    "called": "|java+method:///com/stormpath/sdk/api/ApiKeys/builder()|",
+    "v1Body": [
+      "|java+method:///com/stormpath/sdk/client/ClientBuilder/setApiKeySecretPropertyName(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/stormpath/sdk/client/ClientBuilder/setApiKey(com.stormpath.sdk.api.ApiKey)|",
+      "|java+method:///com/stormpath/sdk/api/ApiKeyBuilder/setSecretPropertyName(java.lang.String)|",
+      "|java+method:///com/stormpath/sdk/api/ApiKeyBuilder/build()|",
+      "|java+method:///com/stormpath/sdk/api/ApiKeys/builder()|"
+    ],
+    "affectedLib": "com.stormpath.sdk:stormpath-sdk-api:1.1.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.stormpath.shiro:stormpath-shiro-core:0.3.0",
+    "coordinatesV2": "com.stormpath.shiro:stormpath-shiro-core:0.7.2",
+    "caller": "|java+method:///com/stormpath/shiro/client/ClientFactory/setApiKeyInputStream(java.io.InputStream)|",
+    "called": "|java+method:///com/stormpath/sdk/api/ApiKeys/builder()|",
+    "v1Body": [
+      "|java+method:///com/stormpath/sdk/client/ClientBuilder/setApiKeyInputStream(java.io.InputStream)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/stormpath/sdk/api/ApiKeyBuilder/setInputStream(java.io.InputStream)|",
+      "|java+method:///com/stormpath/sdk/client/ClientBuilder/setApiKey(com.stormpath.sdk.api.ApiKey)|",
+      "|java+method:///com/stormpath/sdk/api/ApiKeyBuilder/build()|",
+      "|java+method:///com/stormpath/sdk/api/ApiKeys/builder()|"
+    ],
+    "affectedLib": "com.stormpath.sdk:stormpath-sdk-api:1.1.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.stormpath.shiro:stormpath-shiro-core:0.3.0",
+    "coordinatesV2": "com.stormpath.shiro:stormpath-shiro-core:0.7.2",
+    "caller": "|java+method:///com/stormpath/shiro/client/ClientFactory/setApiKeyIdPropertyName(java.lang.String)|",
+    "called": "|java+method:///com/stormpath/sdk/api/ApiKeys/builder()|",
+    "v1Body": [
+      "|java+method:///com/stormpath/sdk/client/ClientBuilder/setApiKeyIdPropertyName(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/stormpath/sdk/api/ApiKeyBuilder/setIdPropertyName(java.lang.String)|",
+      "|java+method:///com/stormpath/sdk/client/ClientBuilder/setApiKey(com.stormpath.sdk.api.ApiKey)|",
+      "|java+method:///com/stormpath/sdk/api/ApiKeyBuilder/build()|",
+      "|java+method:///com/stormpath/sdk/api/ApiKeys/builder()|"
+    ],
+    "affectedLib": "com.stormpath.sdk:stormpath-sdk-api:1.1.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.stormpath.shiro:stormpath-shiro-core:0.3.0",
+    "coordinatesV2": "com.stormpath.shiro:stormpath-shiro-core:0.7.2",
+    "caller": "|java+method:///com/stormpath/shiro/client/ClientFactory/setApiKeyFileLocation(java.lang.String)|",
+    "called": "|java+method:///com/stormpath/sdk/api/ApiKeys/builder()|",
+    "v1Body": [
+      "|java+method:///com/stormpath/sdk/client/ClientBuilder/setApiKeyFileLocation(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/stormpath/sdk/client/ClientBuilder/setApiKey(com.stormpath.sdk.api.ApiKey)|",
+      "|java+method:///com/stormpath/sdk/api/ApiKeys/builder()|",
+      "|java+method:///com/stormpath/sdk/api/ApiKeyBuilder/setFileLocation(java.lang.String)|",
+      "|java+method:///com/stormpath/sdk/api/ApiKeyBuilder/build()|"
+    ],
+    "affectedLib": "com.stormpath.sdk:stormpath-sdk-api:1.1.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.stormpath.shiro:stormpath-shiro-core:0.3.0",
+    "coordinatesV2": "com.stormpath.shiro:stormpath-shiro-core:0.7.2",
+    "caller": "|java+constructor:///com/stormpath/shiro/client/ClientFactory/ClientFactory()|",
+    "called": "|java+method:///com/stormpath/sdk/client/Clients/builder()|",
+    "v1Body": [
+      "|java+constructor:///org/apache/shiro/util/AbstractFactory/AbstractFactory()|",
+      "|java+constructor:///com/stormpath/sdk/client/ClientBuilder/ClientBuilder()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/shiro/util/AbstractFactory/AbstractFactory()|",
+      "|java+method:///com/stormpath/sdk/client/Clients/builder()|"
+    ],
+    "affectedLib": "com.stormpath.sdk:stormpath-sdk-api:1.1.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.stormpath.shiro:stormpath-shiro-core:0.3.0",
+    "coordinatesV2": "com.stormpath.shiro:stormpath-shiro-core:0.7.2",
+    "caller": "|java+constructor:///com/stormpath/shiro/realm/ApplicationRealm/ApplicationRealm()|",
+    "called": "|java+constructor:///org/apache/shiro/realm/AuthorizingRealm/AuthorizingRealm()|",
+    "v1Body": [
+      "|java+constructor:///org/apache/shiro/authc/credential/AllowAllCredentialsMatcher/AllowAllCredentialsMatcher()|",
+      "|java+constructor:///com/stormpath/shiro/realm/DefaultGroupRoleResolver/DefaultGroupRoleResolver()|",
+      "|java+method:///com/stormpath/shiro/realm/ApplicationRealm/setCredentialsMatcher(org.apache.shiro.authc.credential.CredentialsMatcher)|",
+      "|java+method:///com/stormpath/shiro/realm/ApplicationRealm/setGroupRoleResolver(com.stormpath.shiro.realm.GroupRoleResolver)|",
+      "|java+constructor:///org/apache/shiro/realm/AuthorizingRealm/AuthorizingRealm()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/stormpath/shiro/realm/AccountCustomDataPermissionResolver/AccountCustomDataPermissionResolver()|",
+      "|java+constructor:///org/apache/shiro/authc/credential/AllowAllCredentialsMatcher/AllowAllCredentialsMatcher()|",
+      "|java+method:///com/stormpath/shiro/realm/ApplicationRealm/setApplicationResolver(com.stormpath.shiro.realm.ApplicationResolver)|",
+      "|java+method:///com/stormpath/shiro/realm/ApplicationRealm/setCredentialsMatcher(org.apache.shiro.authc.credential.CredentialsMatcher)|",
+      "|java+method:///com/stormpath/shiro/realm/ApplicationRealm/setGroupPermissionResolver(com.stormpath.shiro.realm.GroupPermissionResolver)|",
+      "|java+method:///com/stormpath/shiro/realm/ApplicationRealm/setAccountPermissionResolver(com.stormpath.shiro.realm.AccountPermissionResolver)|",
+      "|java+constructor:///com/stormpath/shiro/realm/DefaultApplicationResolver/DefaultApplicationResolver()|",
+      "|java+constructor:///com/stormpath/shiro/realm/DefaultGroupRoleResolver/DefaultGroupRoleResolver()|",
+      "|java+constructor:///com/stormpath/shiro/realm/GroupCustomDataPermissionResolver/GroupCustomDataPermissionResolver()|",
+      "|java+method:///com/stormpath/shiro/realm/ApplicationRealm/setGroupRoleResolver(com.stormpath.shiro.realm.GroupRoleResolver)|",
+      "|java+constructor:///org/apache/shiro/realm/AuthorizingRealm/AuthorizingRealm()|"
+    ],
+    "affectedLib": "org.apache.shiro:shiro-core:1.3.2",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.stormpath.shiro:stormpath-shiro-core:0.3.0",
+    "coordinatesV2": "com.stormpath.shiro:stormpath-shiro-core:0.7.2",
+    "caller": "|java+method:///com/stormpath/shiro/realm/ApplicationRealm/onInit()|",
+    "called": "|java+method:///org/apache/shiro/realm/AuthorizingRealm/onInit()|",
+    "v1Body": [
+      "|java+method:///com/stormpath/shiro/realm/ApplicationRealm/assertState()|",
+      "|java+method:///org/apache/shiro/realm/AuthorizingRealm/onInit()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/stormpath/shiro/realm/ApplicationRealm/assertState()|",
+      "|java+method:///com/stormpath/shiro/realm/ApplicationRealm/ensureApplicationReference()|",
+      "|java+method:///org/apache/shiro/realm/AuthorizingRealm/onInit()|"
+    ],
+    "affectedLib": "org.apache.shiro:shiro-core:1.3.2",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.stormpath.shiro:stormpath-shiro-core:0.3.0",
+    "coordinatesV2": "com.stormpath.shiro:stormpath-shiro-core:0.7.2",
+    "caller": "|java+constructor:///com/stormpath/shiro/client/ClientFactory/ClientFactory()|",
+    "called": "|java+constructor:///org/apache/shiro/util/AbstractFactory/AbstractFactory()|",
+    "v1Body": [
+      "|java+constructor:///org/apache/shiro/util/AbstractFactory/AbstractFactory()|",
+      "|java+constructor:///com/stormpath/sdk/client/ClientBuilder/ClientBuilder()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/shiro/util/AbstractFactory/AbstractFactory()|",
+      "|java+method:///com/stormpath/sdk/client/Clients/builder()|"
+    ],
+    "affectedLib": "org.apache.shiro:shiro-core:1.3.2",
+    "change": "UPDATED"
+  }
+]

@@ -1,0 +1,235 @@
+[
+  {
+    "coordinatesV1": "org.keycloak:keycloak-spring-security-adapter:1.5.1.Final",
+    "coordinatesV2": "org.keycloak:keycloak-spring-security-adapter:1.6.0.Final",
+    "caller": "|java+method:///org/keycloak/adapters/springsecurity/facade/WrappedHttpServletRequest/getCookie(java.lang.String)|",
+    "called": "|java+constructor:///org/keycloak/adapters/spi/HttpFacade$Cookie/HttpFacade$Cookie(java.lang.String,java.lang.String,int,java.lang.String,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///javax/servlet/http/Cookie/getVersion()|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getCookies()|",
+      "|java+method:///javax/servlet/http/Cookie/getDomain()|",
+      "|java+method:///javax/servlet/http/Cookie/getPath()|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///javax/servlet/http/Cookie/getName()|",
+      "|java+method:///javax/servlet/http/Cookie/getValue()|",
+      "|java+constructor:///org/keycloak/adapters/HttpFacade$Cookie/HttpFacade$Cookie(java.lang.String,java.lang.String,int,java.lang.String,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/keycloak/adapters/spi/HttpFacade$Cookie/HttpFacade$Cookie(java.lang.String,java.lang.String,int,java.lang.String,java.lang.String)|",
+      "|java+method:///javax/servlet/http/Cookie/getVersion()|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getCookies()|",
+      "|java+method:///javax/servlet/http/Cookie/getDomain()|",
+      "|java+method:///javax/servlet/http/Cookie/getPath()|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///javax/servlet/http/Cookie/getName()|",
+      "|java+method:///javax/servlet/http/Cookie/getValue()|"
+    ],
+    "affectedLib": "org.keycloak:keycloak-adapter-spi:1.6.0.Final",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.keycloak:keycloak-spring-security-adapter:1.5.1.Final",
+    "coordinatesV2": "org.keycloak:keycloak-spring-security-adapter:1.6.0.Final",
+    "caller": "|java+method:///org/keycloak/adapters/springsecurity/token/SpringSecurityTokenStore/isCached(org.keycloak.adapters.RequestAuthenticator)|",
+    "called": "|java+method:///org/keycloak/KeycloakSecurityContext/getRealm()|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/keycloak/KeycloakSecurityContext/getToken()|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/springframework/security/core/context/SecurityContextHolder/getContext()|",
+      "|java+method:///org/keycloak/adapters/KeycloakDeployment/getRealm()|",
+      "|java+method:///org/keycloak/KeycloakSecurityContext/getRealm()|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///org/keycloak/adapters/springsecurity/token/SpringSecurityTokenStore/logout()|",
+      "|java+method:///java/lang/Class/isAssignableFrom(java.lang.Class)|",
+      "|java+method:///org/springframework/security/core/context/SecurityContext/getAuthentication()|",
+      "|java+method:///org/keycloak/adapters/KeycloakAccount/getKeycloakSecurityContext()|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String)|",
+      "|java+method:///org/keycloak/adapters/springsecurity/token/KeycloakAuthenticationToken/getAccount()|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+method:///org/keycloak/representations/AccessToken/isExpired()|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/setAttribute(java.lang.String,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/keycloak/KeycloakSecurityContext/getToken()|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String)|",
+      "|java+method:///org/keycloak/adapters/OidcKeycloakAccount/getKeycloakSecurityContext()|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/springframework/security/core/context/SecurityContextHolder/getContext()|",
+      "|java+method:///org/keycloak/adapters/KeycloakDeployment/getRealm()|",
+      "|java+method:///org/keycloak/KeycloakSecurityContext/getRealm()|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///org/keycloak/adapters/springsecurity/token/SpringSecurityTokenStore/logout()|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+method:///java/lang/Class/isAssignableFrom(java.lang.Class)|",
+      "|java+method:///org/springframework/security/core/context/SecurityContext/getAuthentication()|",
+      "|java+method:///org/keycloak/adapters/springsecurity/token/KeycloakAuthenticationToken/getAccount()|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+method:///org/keycloak/representations/AccessToken/isExpired()|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/setAttribute(java.lang.String,java.lang.Object)|"
+    ],
+    "affectedLib": "org.keycloak:keycloak-core:1.6.0.Final",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.keycloak:keycloak-spring-security-adapter:1.5.1.Final",
+    "coordinatesV2": "org.keycloak:keycloak-spring-security-adapter:1.6.0.Final",
+    "caller": "|java+method:///org/keycloak/adapters/springsecurity/authentication/KeycloakLogoutHandler/handleSingleSignOut(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,org.keycloak.adapters.springsecurity.token.KeycloakAuthenticationToken)|",
+    "called": "|java+method:///org/keycloak/adapters/RefreshableKeycloakSecurityContext/logout(org.keycloak.adapters.KeycloakDeployment)|",
+    "v1Body": [
+      "|java+method:///org/keycloak/adapters/RefreshableKeycloakSecurityContext/logout(org.keycloak.adapters.KeycloakDeployment)|",
+      "|java+method:///org/keycloak/adapters/KeycloakAccount/getKeycloakSecurityContext()|",
+      "|java+method:///org/keycloak/adapters/springsecurity/token/KeycloakAuthenticationToken/getAccount()|",
+      "|java+method:///org/keycloak/adapters/springsecurity/AdapterDeploymentContextBean/getDeployment()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/keycloak/adapters/OidcKeycloakAccount/getKeycloakSecurityContext()|",
+      "|java+method:///org/keycloak/adapters/RefreshableKeycloakSecurityContext/logout(org.keycloak.adapters.KeycloakDeployment)|",
+      "|java+method:///org/keycloak/adapters/springsecurity/token/KeycloakAuthenticationToken/getAccount()|",
+      "|java+method:///org/keycloak/adapters/springsecurity/AdapterDeploymentContextBean/getDeployment()|"
+    ],
+    "affectedLib": "org.keycloak:keycloak-adapter-core:1.6.0.Final",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.keycloak:keycloak-spring-security-adapter:1.5.1.Final",
+    "coordinatesV2": "org.keycloak:keycloak-spring-security-adapter:1.6.0.Final",
+    "caller": "|java+method:///org/keycloak/adapters/springsecurity/filter/KeycloakAuthenticationProcessingFilter/attemptAuthentication(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)|",
+    "called": "|java+method:///org/keycloak/adapters/RequestAuthenticator/authenticate()|",
+    "v1Body": [
+      "|java+method:///org/keycloak/adapters/RequestAuthenticator/authenticate()|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/springframework/security/core/context/SecurityContextHolder/getContext()|",
+      "|java+method:///org/springframework/util/Assert/notNull(java.lang.Object,java.lang.String)|",
+      "|java+constructor:///org/keycloak/adapters/springsecurity/facade/SimpleHttpFacade/SimpleHttpFacade(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)|",
+      "|java+method:///org/keycloak/adapters/RequestAuthenticator/getChallenge()|",
+      "|java+method:///org/keycloak/adapters/springsecurity/AdapterDeploymentContextBean/getDeployment()|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+method:///org/springframework/security/core/context/SecurityContext/getAuthentication()|",
+      "|java+constructor:///org/keycloak/adapters/springsecurity/authentication/SpringSecurityRequestAuthenticator/SpringSecurityRequestAuthenticator(org.keycloak.adapters.HttpFacade,javax.servlet.http.HttpServletRequest,org.keycloak.adapters.KeycloakDeployment,org.keycloak.adapters.AdapterTokenStore,int)|",
+      "|java+method:///org/keycloak/adapters/AuthOutcome/equals(java.lang.Object)|",
+      "|java+method:///org/keycloak/adapters/springsecurity/token/AdapterTokenStoreFactory/createAdapterTokenStore(org.keycloak.adapters.KeycloakDeployment,javax.servlet.http.HttpServletRequest)|",
+      "|java+method:///org/springframework/security/authentication/AuthenticationManager/authenticate(org.springframework.security.core.Authentication)|",
+      "|java+method:///org/keycloak/adapters/AuthChallenge/challenge(org.keycloak.adapters.HttpFacade)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/keycloak/adapters/springsecurity/token/AdapterTokenStoreFactory/createAdapterTokenStore(org.keycloak.adapters.KeycloakDeployment,javax.servlet.http.HttpServletRequest)|",
+      "|java+method:///org/keycloak/adapters/RequestAuthenticator/authenticate()|",
+      "|java+constructor:///org/keycloak/adapters/springsecurity/authentication/SpringSecurityRequestAuthenticator/SpringSecurityRequestAuthenticator(org.keycloak.adapters.spi.HttpFacade,javax.servlet.http.HttpServletRequest,org.keycloak.adapters.KeycloakDeployment,org.keycloak.adapters.AdapterTokenStore,int)|",
+      "|java+method:///org/keycloak/adapters/spi/AuthOutcome/equals(java.lang.Object)|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///org/keycloak/adapters/springsecurity/KeycloakAuthenticationException/KeycloakAuthenticationException(java.lang.String)|",
+      "|java+method:///org/springframework/security/core/context/SecurityContextHolder/getContext()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/keycloak/adapters/spi/AuthChallenge/challenge(org.keycloak.adapters.spi.HttpFacade)|",
+      "|java+method:///org/springframework/util/Assert/notNull(java.lang.Object,java.lang.String)|",
+      "|java+constructor:///org/keycloak/adapters/springsecurity/facade/SimpleHttpFacade/SimpleHttpFacade(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)|",
+      "|java+method:///org/keycloak/adapters/RequestAuthenticator/getChallenge()|",
+      "|java+method:///org/keycloak/adapters/springsecurity/AdapterDeploymentContextBean/getDeployment()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+method:///org/springframework/security/core/context/SecurityContext/getAuthentication()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///org/springframework/security/authentication/AuthenticationManager/authenticate(org.springframework.security.core.Authentication)|"
+    ],
+    "affectedLib": "org.keycloak:keycloak-adapter-core:1.6.0.Final",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.keycloak:keycloak-spring-security-adapter:1.5.1.Final",
+    "coordinatesV2": "org.keycloak:keycloak-spring-security-adapter:1.6.0.Final",
+    "caller": "|java+method:///org/keycloak/adapters/springsecurity/filter/KeycloakPreAuthActionsFilter/doFilter(javax.servlet.ServletRequest,javax.servlet.ServletResponse,javax.servlet.FilterChain)|",
+    "called": "|java+constructor:///org/keycloak/adapters/PreAuthActionsHandler/PreAuthActionsHandler(org.keycloak.adapters.spi.UserSessionManagement,org.keycloak.adapters.AdapterDeploymentContext,org.keycloak.adapters.spi.HttpFacade)|",
+    "v1Body": [
+      "|java+method:///javax/servlet/FilterChain/doFilter(javax.servlet.ServletRequest,javax.servlet.ServletResponse)|",
+      "|java+constructor:///org/keycloak/adapters/PreAuthActionsHandler/PreAuthActionsHandler(org.keycloak.adapters.UserSessionManagement,org.keycloak.adapters.AdapterDeploymentContext,org.keycloak.adapters.HttpFacade)|",
+      "|java+method:///org/keycloak/adapters/PreAuthActionsHandler/handleRequest()|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getRequestURI()|",
+      "|java+constructor:///org/keycloak/adapters/springsecurity/facade/SimpleHttpFacade/SimpleHttpFacade(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///javax/servlet/FilterChain/doFilter(javax.servlet.ServletRequest,javax.servlet.ServletResponse)|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+constructor:///org/keycloak/adapters/PreAuthActionsHandler/PreAuthActionsHandler(org.keycloak.adapters.spi.UserSessionManagement,org.keycloak.adapters.AdapterDeploymentContext,org.keycloak.adapters.spi.HttpFacade)|",
+      "|java+method:///org/keycloak/adapters/PreAuthActionsHandler/handleRequest()|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getRequestURI()|",
+      "|java+constructor:///org/keycloak/adapters/springsecurity/facade/SimpleHttpFacade/SimpleHttpFacade(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)|"
+    ],
+    "affectedLib": "org.keycloak:keycloak-adapter-core:1.6.0.Final",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.keycloak:keycloak-spring-security-adapter:1.5.1.Final",
+    "coordinatesV2": "org.keycloak:keycloak-spring-security-adapter:1.6.0.Final",
+    "caller": "|java+method:///org/keycloak/adapters/springsecurity/authentication/SpringSecurityRequestAuthenticator/completeBearerAuthentication(org.keycloak.KeycloakPrincipal,java.lang.String)|",
+    "called": "|java+method:///org/keycloak/adapters/AdapterUtils/getRolesFromSecurityContext(org.keycloak.adapters.RefreshableKeycloakSecurityContext)|",
+    "v1Body": [
+      "|java+method:///org/keycloak/adapters/AdapterUtils/getRolesFromSecurityContext(org.keycloak.adapters.RefreshableKeycloakSecurityContext)|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/keycloak/KeycloakPrincipal/getKeycloakSecurityContext()|",
+      "|java+method:///org/springframework/security/core/context/SecurityContext/setAuthentication(org.springframework.security.core.Authentication)|",
+      "|java+constructor:///org/keycloak/adapters/springsecurity/account/SimpleKeycloakAccount/SimpleKeycloakAccount(java.security.Principal,java.util.Set,org.keycloak.adapters.RefreshableKeycloakSecurityContext)|",
+      "|java+method:///org/springframework/security/core/context/SecurityContextHolder/getContext()|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+constructor:///org/keycloak/adapters/springsecurity/token/KeycloakAuthenticationToken/KeycloakAuthenticationToken(org.keycloak.adapters.KeycloakAccount)|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/setAttribute(java.lang.String,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/keycloak/adapters/AdapterUtils/getRolesFromSecurityContext(org.keycloak.adapters.RefreshableKeycloakSecurityContext)|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/keycloak/KeycloakPrincipal/getKeycloakSecurityContext()|",
+      "|java+method:///org/springframework/security/core/context/SecurityContext/setAuthentication(org.springframework.security.core.Authentication)|",
+      "|java+constructor:///org/keycloak/adapters/springsecurity/account/SimpleKeycloakAccount/SimpleKeycloakAccount(java.security.Principal,java.util.Set,org.keycloak.adapters.RefreshableKeycloakSecurityContext)|",
+      "|java+method:///org/springframework/security/core/context/SecurityContextHolder/getContext()|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+constructor:///org/keycloak/adapters/springsecurity/token/KeycloakAuthenticationToken/KeycloakAuthenticationToken(org.keycloak.adapters.spi.KeycloakAccount)|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/setAttribute(java.lang.String,java.lang.Object)|"
+    ],
+    "affectedLib": "org.keycloak:keycloak-adapter-core:1.6.0.Final",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.keycloak:keycloak-spring-security-adapter:1.5.1.Final",
+    "coordinatesV2": "org.keycloak:keycloak-spring-security-adapter:1.6.0.Final",
+    "caller": "|java+method:///org/keycloak/adapters/springsecurity/authentication/SpringSecurityRequestAuthenticator/createOAuthAuthenticator()|",
+    "called": "|java+constructor:///org/keycloak/adapters/OAuthRequestAuthenticator/OAuthRequestAuthenticator(org.keycloak.adapters.RequestAuthenticator,org.keycloak.adapters.spi.HttpFacade,org.keycloak.adapters.KeycloakDeployment,int,org.keycloak.adapters.spi.AdapterSessionStore)|",
+    "v1Body": [
+      "|java+constructor:///org/keycloak/adapters/OAuthRequestAuthenticator/OAuthRequestAuthenticator(org.keycloak.adapters.RequestAuthenticator,org.keycloak.adapters.HttpFacade,org.keycloak.adapters.KeycloakDeployment,int,org.keycloak.adapters.AdapterTokenStore)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/keycloak/adapters/OAuthRequestAuthenticator/OAuthRequestAuthenticator(org.keycloak.adapters.RequestAuthenticator,org.keycloak.adapters.spi.HttpFacade,org.keycloak.adapters.KeycloakDeployment,int,org.keycloak.adapters.spi.AdapterSessionStore)|"
+    ],
+    "affectedLib": "org.keycloak:keycloak-adapter-core:1.6.0.Final",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.keycloak:keycloak-spring-security-adapter:1.5.1.Final",
+    "coordinatesV2": "org.keycloak:keycloak-spring-security-adapter:1.6.0.Final",
+    "caller": "|java+method:///org/keycloak/adapters/springsecurity/authentication/SpringSecurityRequestAuthenticator/completeOAuthAuthentication(org.keycloak.KeycloakPrincipal)|",
+    "called": "|java+method:///org/keycloak/adapters/AdapterUtils/getRolesFromSecurityContext(org.keycloak.adapters.RefreshableKeycloakSecurityContext)|",
+    "v1Body": [
+      "|java+method:///org/keycloak/adapters/AdapterUtils/getRolesFromSecurityContext(org.keycloak.adapters.RefreshableKeycloakSecurityContext)|",
+      "|java+method:///org/keycloak/KeycloakPrincipal/getKeycloakSecurityContext()|",
+      "|java+constructor:///org/keycloak/adapters/springsecurity/account/SimpleKeycloakAccount/SimpleKeycloakAccount(java.security.Principal,java.util.Set,org.keycloak.adapters.RefreshableKeycloakSecurityContext)|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+method:///org/keycloak/adapters/AdapterTokenStore/saveAccountInfo(org.keycloak.adapters.KeycloakAccount)|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/setAttribute(java.lang.String,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/keycloak/adapters/AdapterUtils/getRolesFromSecurityContext(org.keycloak.adapters.RefreshableKeycloakSecurityContext)|",
+      "|java+method:///org/keycloak/KeycloakPrincipal/getKeycloakSecurityContext()|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/setAttribute(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/keycloak/adapters/AdapterTokenStore/saveAccountInfo(org.keycloak.adapters.OidcKeycloakAccount)|",
+      "|java+constructor:///org/keycloak/adapters/springsecurity/account/SimpleKeycloakAccount/SimpleKeycloakAccount(java.security.Principal,java.util.Set,org.keycloak.adapters.RefreshableKeycloakSecurityContext)|"
+    ],
+    "affectedLib": "org.keycloak:keycloak-adapter-core:1.6.0.Final",
+    "change": "UPDATED"
+  }
+]

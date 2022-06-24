@@ -1,0 +1,226 @@
+[
+  {
+    "coordinatesV1": "org.apache.hama:hama-core:0.4.0-incubating",
+    "coordinatesV2": "org.apache.hama:hama-core:0.3.0-incubating",
+    "caller": "|java+method:///org/apache/hama/zookeeper/QuorumPeer/run(org.apache.hadoop.conf.Configuration)|",
+    "called": "|java+constructor:///org/apache/zookeeper/server/quorum/QuorumPeerConfig/QuorumPeerConfig()|",
+    "v1Body": [
+      "|java+method:///org/apache/zookeeper/server/quorum/QuorumPeerConfig/parseProperties(java.util.Properties)|",
+      "|java+method:///org/apache/hama/zookeeper/QuorumPeer/writeMyID(java.util.Properties)|",
+      "|java+method:///java/lang/System/exit(int)|",
+      "|java+constructor:///org/apache/zookeeper/server/quorum/QuorumPeerConfig/QuorumPeerConfig()|",
+      "|java+method:///org/apache/commons/logging/Log/error(java.lang.Object,java.lang.Throwable)|",
+      "|java+constructor:///org/apache/hama/HamaConfiguration/HamaConfiguration(org.apache.hadoop.conf.Configuration)|",
+      "|java+method:///org/apache/hama/zookeeper/QuorumPeer/runZKServer(org.apache.zookeeper.server.quorum.QuorumPeerConfig)|",
+      "|java+method:///org/apache/hama/zookeeper/QuorumPeer/makeZKProps(org.apache.hadoop.conf.Configuration)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/hama/bsp/BSPMaster/getAddress(org.apache.hadoop.conf.Configuration)|",
+      "|java+method:///java/io/PrintStream/println(java.lang.String)|",
+      "|java+method:///org/apache/commons/logging/Log/info(java.lang.Object)|",
+      "|java+method:///java/lang/System/exit(int)|",
+      "|java+method:///org/apache/commons/logging/Log/error(java.lang.Object,java.lang.Throwable)|",
+      "|java+constructor:///org/apache/hama/HamaConfiguration/HamaConfiguration(org.apache.hadoop.conf.Configuration)|",
+      "|java+method:///org/apache/hama/zookeeper/QuorumPeer/runZooKeeper(org.apache.hadoop.conf.Configuration)|"
+    ],
+    "affectedLib": "org.apache.hadoop:zookeeper:3.3.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.apache.hama:hama-core:0.3.0-incubating",
+    "coordinatesV2": "org.apache.hama:hama-core:0.4.0-incubating",
+    "caller": "|java+method:///org/apache/hama/bsp/GroomServer/close()|",
+    "called": "|java+method:///org/apache/zookeeper/ZooKeeper/close()|",
+    "v1Body": [
+      "|java+method:///org/apache/hadoop/ipc/Server/stop()|",
+      "|java+method:///org/apache/hadoop/ipc/RPC/stopProxy(org.apache.hadoop.ipc.VersionedProtocol)|",
+      "|java+method:///org/apache/hama/bsp/BSPPeer/close()|",
+      "|java+method:///org/apache/hama/bsp/GroomServer/cleanupStorage()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/hadoop/ipc/Server/stop()|",
+      "|java+method:///org/apache/hadoop/ipc/RPC/stopProxy(org.apache.hadoop.ipc.VersionedProtocol)|",
+      "|java+method:///org/apache/hama/bsp/GroomServer/cleanupStorage()|",
+      "|java+method:///org/apache/zookeeper/ZooKeeper/close()|",
+      "|java+method:///java/lang/InterruptedException/printStackTrace()|"
+    ],
+    "affectedLib": "org.apache.zookeeper:zookeeper:3.3.3",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.hama:hama-core:0.3.0-incubating",
+    "coordinatesV2": "org.apache.hama:hama-core:0.4.0-incubating",
+    "caller": "|java+constructor:///org/apache/hama/bsp/GroomServer/GroomServer(org.apache.hadoop.conf.Configuration)|",
+    "called": "|java+constructor:///org/apache/zookeeper/ZooKeeper/ZooKeeper(java.lang.String,int,org.apache.zookeeper.Watcher)|",
+    "v1Body": [
+      "|java+method:///org/apache/hama/bsp/BSPMaster/getAddress(org.apache.hadoop.conf.Configuration)|",
+      "|java+method:///org/apache/commons/logging/Log/info(java.lang.Object)|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/hama/bsp/BSPMaster/getAddress(org.apache.hadoop.conf.Configuration)|",
+      "|java+method:///java/io/PrintStream/println(java.lang.String)|",
+      "|java+method:///org/apache/commons/logging/Log/info(java.lang.Object)|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+method:///java/lang/System/exit(int)|",
+      "|java+constructor:///org/apache/zookeeper/ZooKeeper/ZooKeeper(java.lang.String,int,org.apache.zookeeper.Watcher)|",
+      "|java+method:///org/apache/hadoop/conf/Configuration/getInt(java.lang.String,int)|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///org/apache/hama/zookeeper/QuorumPeer/getZKQuorumServersString(org.apache.hadoop.conf.Configuration)|",
+      "|java+method:///org/apache/commons/logging/Log/error(java.lang.Object,java.lang.Throwable)|"
+    ],
+    "affectedLib": "org.apache.zookeeper:zookeeper:3.3.3",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.hama:hama-core:0.3.0-incubating",
+    "coordinatesV2": "org.apache.hama:hama-core:0.4.0-incubating",
+    "caller": "|java+method:///org/apache/hama/bsp/BSPMaster/shutdown()|",
+    "called": "|java+method:///org/apache/zookeeper/ZooKeeper/close()|",
+    "v1Body": [
+      "|java+method:///org/apache/hadoop/ipc/Server/stop()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/hadoop/ipc/Server/stop()|",
+      "|java+method:///org/apache/zookeeper/ZooKeeper/close()|",
+      "|java+method:///java/lang/InterruptedException/printStackTrace()|"
+    ],
+    "affectedLib": "org.apache.zookeeper:zookeeper:3.3.3",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.hama:hama-core:0.3.0-incubating",
+    "coordinatesV2": "org.apache.hama:hama-core:0.4.0-incubating",
+    "caller": "|java+constructor:///org/apache/hama/http/HttpServer/HttpServer(java.lang.String,java.lang.String,int,boolean,org.apache.hadoop.conf.Configuration)|",
+    "called": "|java+constructor:///org/mortbay/jetty/handler/ContextHandlerCollection/ContextHandlerCollection()|",
+    "v1Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///org/mortbay/jetty/webapp/WebAppContext/setContextPath(java.lang.String)|",
+      "|java+method:///org/apache/hama/http/HttpServer/createBaseListener(org.apache.hadoop.conf.Configuration)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///org/mortbay/jetty/webapp/WebAppContext/WebAppContext()|",
+      "|java+method:///org/mortbay/jetty/Connector/setHost(java.lang.String)|",
+      "|java+method:///org/mortbay/jetty/Server/addConnector(org.mortbay.jetty.Connector)|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+method:///org/apache/hama/http/HttpServer/addDefaultServlets()|",
+      "|java+method:///org/mortbay/jetty/Server/addHandler(org.mortbay.jetty.Handler)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/System/setProperty(java.lang.String,java.lang.String)|",
+      "|java+constructor:///org/mortbay/jetty/Server/Server()|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/mortbay/jetty/Connector/setPort(int)|",
+      "|java+method:///org/apache/hama/http/HttpServer/addDefaultApps(org.mortbay.jetty.handler.ContextHandlerCollection,java.lang.String)|",
+      "|java+method:///org/mortbay/jetty/Server/setThreadPool(org.mortbay.thread.ThreadPool)|",
+      "|java+method:///org/mortbay/jetty/Server/setHandler(org.mortbay.jetty.Handler)|",
+      "|java+method:///org/mortbay/jetty/webapp/WebAppContext/setWar(java.lang.String)|",
+      "|java+constructor:///org/mortbay/thread/BoundedThreadPool/BoundedThreadPool()|",
+      "|java+method:///org/apache/hama/http/HttpServer/getWebAppsPath()|",
+      "|java+constructor:///org/mortbay/jetty/handler/ContextHandlerCollection/ContextHandlerCollection()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///org/mortbay/jetty/webapp/WebAppContext/setContextPath(java.lang.String)|",
+      "|java+method:///org/apache/hama/http/HttpServer/createBaseListener(org.apache.hadoop.conf.Configuration)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///org/mortbay/jetty/webapp/WebAppContext/WebAppContext()|",
+      "|java+method:///org/mortbay/jetty/Connector/setHost(java.lang.String)|",
+      "|java+method:///org/mortbay/jetty/Server/addConnector(org.mortbay.jetty.Connector)|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+method:///org/apache/hama/http/HttpServer/addDefaultServlets()|",
+      "|java+method:///org/mortbay/jetty/Server/addHandler(org.mortbay.jetty.Handler)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/System/setProperty(java.lang.String,java.lang.String)|",
+      "|java+method:///org/mortbay/jetty/webapp/WebAppContext/setWar(java.lang.String)|",
+      "|java+constructor:///org/mortbay/jetty/Server/Server()|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/mortbay/jetty/Connector/setPort(int)|",
+      "|java+method:///org/apache/hama/http/HttpServer/addDefaultApps(org.mortbay.jetty.handler.ContextHandlerCollection,java.lang.String)|",
+      "|java+constructor:///org/mortbay/thread/QueuedThreadPool/QueuedThreadPool()|",
+      "|java+method:///org/mortbay/jetty/Server/setThreadPool(org.mortbay.thread.ThreadPool)|",
+      "|java+method:///org/mortbay/jetty/Server/setHandler(org.mortbay.jetty.Handler)|",
+      "|java+method:///org/apache/hama/http/HttpServer/getWebAppsPath()|",
+      "|java+constructor:///org/mortbay/jetty/handler/ContextHandlerCollection/ContextHandlerCollection()|"
+    ],
+    "affectedLib": "org.mortbay.jetty:jetty:6.1.14",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.hama:hama-core:0.3.0-incubating",
+    "coordinatesV2": "org.apache.hama:hama-core:0.4.0-incubating",
+    "caller": "|java+method:///org/apache/hama/http/HttpServer/setThreads(int,int)|",
+    "called": "|java+method:///org/mortbay/thread/QueuedThreadPool/setMaxThreads(int)|",
+    "v1Body": [
+      "|java+method:///org/mortbay/thread/BoundedThreadPool/setMaxThreads(int)|",
+      "|java+method:///org/mortbay/thread/BoundedThreadPool/setMinThreads(int)|",
+      "|java+method:///org/mortbay/jetty/Server/getThreadPool()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/mortbay/thread/QueuedThreadPool/setMaxThreads(int)|",
+      "|java+method:///org/mortbay/thread/QueuedThreadPool/setMinThreads(int)|",
+      "|java+method:///org/mortbay/jetty/Server/getThreadPool()|"
+    ],
+    "affectedLib": "org.mortbay.jetty:jetty-util:6.1.14",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.hama:hama-core:0.3.0-incubating",
+    "coordinatesV2": "org.apache.hama:hama-core:0.4.0-incubating",
+    "caller": "|java+constructor:///org/apache/hama/http/HttpServer/HttpServer(java.lang.String,java.lang.String,int,boolean,org.apache.hadoop.conf.Configuration)|",
+    "called": "|java+constructor:///org/mortbay/thread/QueuedThreadPool/QueuedThreadPool()|",
+    "v1Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///org/mortbay/jetty/webapp/WebAppContext/setContextPath(java.lang.String)|",
+      "|java+method:///org/apache/hama/http/HttpServer/createBaseListener(org.apache.hadoop.conf.Configuration)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///org/mortbay/jetty/webapp/WebAppContext/WebAppContext()|",
+      "|java+method:///org/mortbay/jetty/Connector/setHost(java.lang.String)|",
+      "|java+method:///org/mortbay/jetty/Server/addConnector(org.mortbay.jetty.Connector)|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+method:///org/apache/hama/http/HttpServer/addDefaultServlets()|",
+      "|java+method:///org/mortbay/jetty/Server/addHandler(org.mortbay.jetty.Handler)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/System/setProperty(java.lang.String,java.lang.String)|",
+      "|java+constructor:///org/mortbay/jetty/Server/Server()|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/mortbay/jetty/Connector/setPort(int)|",
+      "|java+method:///org/apache/hama/http/HttpServer/addDefaultApps(org.mortbay.jetty.handler.ContextHandlerCollection,java.lang.String)|",
+      "|java+method:///org/mortbay/jetty/Server/setThreadPool(org.mortbay.thread.ThreadPool)|",
+      "|java+method:///org/mortbay/jetty/Server/setHandler(org.mortbay.jetty.Handler)|",
+      "|java+method:///org/mortbay/jetty/webapp/WebAppContext/setWar(java.lang.String)|",
+      "|java+constructor:///org/mortbay/thread/BoundedThreadPool/BoundedThreadPool()|",
+      "|java+method:///org/apache/hama/http/HttpServer/getWebAppsPath()|",
+      "|java+constructor:///org/mortbay/jetty/handler/ContextHandlerCollection/ContextHandlerCollection()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///org/mortbay/jetty/webapp/WebAppContext/setContextPath(java.lang.String)|",
+      "|java+method:///org/apache/hama/http/HttpServer/createBaseListener(org.apache.hadoop.conf.Configuration)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///org/mortbay/jetty/webapp/WebAppContext/WebAppContext()|",
+      "|java+method:///org/mortbay/jetty/Connector/setHost(java.lang.String)|",
+      "|java+method:///org/mortbay/jetty/Server/addConnector(org.mortbay.jetty.Connector)|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+method:///org/apache/hama/http/HttpServer/addDefaultServlets()|",
+      "|java+method:///org/mortbay/jetty/Server/addHandler(org.mortbay.jetty.Handler)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/System/setProperty(java.lang.String,java.lang.String)|",
+      "|java+method:///org/mortbay/jetty/webapp/WebAppContext/setWar(java.lang.String)|",
+      "|java+constructor:///org/mortbay/jetty/Server/Server()|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/mortbay/jetty/Connector/setPort(int)|",
+      "|java+method:///org/apache/hama/http/HttpServer/addDefaultApps(org.mortbay.jetty.handler.ContextHandlerCollection,java.lang.String)|",
+      "|java+constructor:///org/mortbay/thread/QueuedThreadPool/QueuedThreadPool()|",
+      "|java+method:///org/mortbay/jetty/Server/setThreadPool(org.mortbay.thread.ThreadPool)|",
+      "|java+method:///org/mortbay/jetty/Server/setHandler(org.mortbay.jetty.Handler)|",
+      "|java+method:///org/apache/hama/http/HttpServer/getWebAppsPath()|",
+      "|java+constructor:///org/mortbay/jetty/handler/ContextHandlerCollection/ContextHandlerCollection()|"
+    ],
+    "affectedLib": "org.mortbay.jetty:jetty-util:6.1.14",
+    "change": "UPDATED"
+  }
+]

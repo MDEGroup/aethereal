@@ -1,0 +1,70 @@
+[
+  {
+    "coordinatesV1": "org.apache.drill.exec:drill-jdbc:1.2.0",
+    "coordinatesV2": "org.apache.drill.exec:drill-jdbc:1.4.0",
+    "caller": "|java+method:///org/apache/drill/jdbc/impl/DrillAccessorList/generateAccessors(org.apache.drill.jdbc.impl.DrillCursor,org.apache.drill.exec.record.RecordBatchLoader)|",
+    "called": "|java+constructor:///org/apache/drill/exec/vector/accessor/BoundCheckingAccessor/BoundCheckingAccessor(org.apache.drill.exec.vector.ValueVector,org.apache.drill.exec.vector.accessor.SqlAccessor)|",
+    "v1Body": [
+      "|java+method:///org/apache/drill/exec/record/VectorWrapper/getValueVector()|",
+      "|java+method:///org/apache/drill/exec/record/BatchSchema/getFieldCount()|",
+      "|java+constructor:///org/apache/drill/jdbc/impl/TypeConvertingSqlAccessor/TypeConvertingSqlAccessor(org.apache.drill.exec.vector.accessor.SqlAccessor)|",
+      "|java+constructor:///org/apache/drill/jdbc/impl/AvaticaDrillSqlAccessor/AvaticaDrillSqlAccessor(org.apache.drill.exec.vector.accessor.SqlAccessor,org.apache.drill.jdbc.impl.DrillCursor)|",
+      "|java+constructor:///org/apache/drill/exec/vector/accessor/BoundCheckingAccessor/BoundCheckingAccessor(org.apache.drill.exec.vector.ValueVector,org.apache.drill.exec.vector.accessor.SqlAccessor)|",
+      "|java+method:///org/apache/drill/exec/record/RecordBatchLoader/getValueAccessorById(java.lang.Class,int%5B%5D)|",
+      "|java+method:///org/apache/drill/exec/record/RecordBatchLoader/getSchema()|",
+      "|java+method:///org/apache/drill/exec/expr/TypeHelper/getSqlAccessor(org.apache.drill.exec.vector.ValueVector)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/drill/exec/record/BatchSchema/getFieldCount()|",
+      "|java+constructor:///org/apache/drill/jdbc/impl/TypeConvertingSqlAccessor/TypeConvertingSqlAccessor(org.apache.drill.exec.vector.accessor.SqlAccessor)|",
+      "|java+constructor:///org/apache/drill/jdbc/impl/AvaticaDrillSqlAccessor/AvaticaDrillSqlAccessor(org.apache.drill.exec.vector.accessor.SqlAccessor,org.apache.drill.jdbc.impl.DrillCursor)|",
+      "|java+constructor:///org/apache/drill/exec/vector/accessor/BoundCheckingAccessor/BoundCheckingAccessor(org.apache.drill.exec.vector.ValueVector,org.apache.drill.exec.vector.accessor.SqlAccessor)|",
+      "|java+method:///org/apache/drill/exec/record/RecordBatchLoader/getValueAccessorById(java.lang.Class,int%5B%5D)|",
+      "|java+method:///org/apache/drill/exec/record/RecordBatchLoader/getSchema()|",
+      "|java+method:///org/apache/drill/exec/expr/TypeHelper/getSqlAccessor(org.apache.drill.exec.vector.ValueVector)|",
+      "|java+method:///org/apache/drill/jdbc/impl/DrillAccessorList/clearLastColumnIndexedInRow()|",
+      "|java+method:///org/apache/drill/exec/record/VectorWrapper/getValueVector()|"
+    ],
+    "affectedLib": "org.apache.drill.exec:drill-java-exec:1.4.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.drill.exec:drill-jdbc:1.2.0",
+    "coordinatesV2": "org.apache.drill.exec:drill-jdbc:1.4.0",
+    "caller": "|java+method:///org/apache/drill/jdbc/impl/DrillConnectionImpl/cleanup()|",
+    "called": "|java+method:///org/apache/drill/exec/server/Drillbit/close()|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/apache/drill/exec/server/Drillbit/close()|",
+      "|java+method:///org/apache/drill/exec/server/RemoteServiceSet/close()|",
+      "|java+method:///org/apache/drill/exec/memory/BufferAllocator/close()|",
+      "|java+method:///org/apache/drill/exec/client/DrillClient/close()|",
+      "|java+method:///org/apache/drill/jdbc/impl/DrillStatementRegistry/close()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/drill/exec/server/Drillbit/close()|",
+      "|java+method:///org/apache/drill/jdbc/impl/DrillConnectionImpl/closeOrWarn(java.lang.AutoCloseable,java.lang.String,org.slf4j.Logger)|",
+      "|java+method:///org/apache/drill/jdbc/impl/DrillStatementRegistry/close()|"
+    ],
+    "affectedLib": "org.apache.drill.exec:drill-java-exec:1.4.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.drill.exec:drill-jdbc:1.2.0",
+    "coordinatesV2": "org.apache.drill.exec:drill-jdbc:1.4.0",
+    "caller": "|java+method:///org/apache/drill/jdbc/impl/DrillResultSetImpl/getQueryId()|",
+    "called": "|java+method:///org/apache/drill/exec/proto/helper/QueryIdHelper/getQueryId(org.apache.drill.exec.proto.UserBitShared$QueryId)|",
+    "v1Body": [
+      "|java+method:///org/apache/drill/jdbc/impl/DrillResultSetImpl$ResultsListener/getQueryId()|",
+      "|java+method:///org/apache/drill/exec/proto/helper/QueryIdHelper/getQueryId(org.apache.drill.exec.proto.UserBitShared$QueryId)|",
+      "|java+method:///org/apache/drill/jdbc/impl/DrillResultSetImpl/checkNotClosed()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/drill/jdbc/impl/DrillResultSetImpl$ResultsListener/getQueryId()|",
+      "|java+method:///org/apache/drill/jdbc/impl/DrillResultSetImpl/throwIfClosed()|",
+      "|java+method:///org/apache/drill/exec/proto/helper/QueryIdHelper/getQueryId(org.apache.drill.exec.proto.UserBitShared$QueryId)|"
+    ],
+    "affectedLib": "org.apache.drill.exec:drill-java-exec:1.4.0",
+    "change": "UPDATED"
+  }
+]

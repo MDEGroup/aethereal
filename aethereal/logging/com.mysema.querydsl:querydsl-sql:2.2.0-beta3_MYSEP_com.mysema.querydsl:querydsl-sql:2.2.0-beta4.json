@@ -1,0 +1,96 @@
+[
+  {
+    "coordinatesV1": "com.mysema.querydsl:querydsl-sql:2.2.0-beta3",
+    "coordinatesV2": "com.mysema.querydsl:querydsl-sql:2.2.0-beta4",
+    "caller": "|java+method:///com/mysema/query/sql/AbstractSQLQuery/iterate(com.mysema.query.types.Expression%5B%5D)|",
+    "called": "|java+method:///com/mysema/query/support/QueryMixin/addToProjection(com.mysema.query.types.Expression%5B%5D)|",
+    "v1Body": [
+      "|java+method:///com/mysema/query/sql/AbstractSQLQuery/iterateMultiple()|",
+      "|java+method:///com/mysema/query/support/QueryMixin/addToProjection(com.mysema.query.types.Expression%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/mysema/query/support/QueryMixin/getMetadata()|",
+      "|java+method:///com/mysema/query/sql/AbstractSQLQuery/iterateMultiple(com.mysema.query.QueryMetadata)|",
+      "|java+method:///com/mysema/query/support/QueryMixin/addToProjection(com.mysema.query.types.Expression%5B%5D)|"
+    ],
+    "affectedLib": "com.mysema.querydsl:querydsl-core:2.2.0-beta4",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.mysema.querydsl:querydsl-sql:2.2.0-beta3",
+    "coordinatesV2": "com.mysema.querydsl:querydsl-sql:2.2.0-beta4",
+    "caller": "|java+method:///com/mysema/query/sql/AbstractSQLSubQuery/rightJoin(com.mysema.query.types.SubQueryExpression,com.mysema.query.types.Path)|",
+    "called": "|java+method:///com/mysema/query/support/QueryMixin/rightJoin(com.mysema.query.types.SubQueryExpression,com.mysema.query.types.Path)|",
+    "v1Body": [
+      "|java+method:///com/mysema/query/support/QueryMixin/leftJoin(com.mysema.query.types.SubQueryExpression,com.mysema.query.types.Path)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/mysema/query/support/QueryMixin/rightJoin(com.mysema.query.types.SubQueryExpression,com.mysema.query.types.Path)|"
+    ],
+    "affectedLib": "com.mysema.querydsl:querydsl-core:2.2.0-beta4",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.mysema.querydsl:querydsl-sql:2.2.0-beta3",
+    "coordinatesV2": "com.mysema.querydsl:querydsl-sql:2.2.0-beta4",
+    "caller": "|java+method:///com/mysema/query/sql/AbstractSQLSubQuery/rightJoin(com.mysema.query.sql.RelationalPath)|",
+    "called": "|java+method:///com/mysema/query/support/QueryMixin/rightJoin(com.mysema.query.types.EntityPath)|",
+    "v1Body": [
+      "|java+method:///com/mysema/query/support/QueryMixin/leftJoin(com.mysema.query.types.EntityPath)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/mysema/query/support/QueryMixin/rightJoin(com.mysema.query.types.EntityPath)|"
+    ],
+    "affectedLib": "com.mysema.querydsl:querydsl-core:2.2.0-beta4",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.mysema.querydsl:querydsl-sql:2.2.0-beta3",
+    "coordinatesV2": "com.mysema.querydsl:querydsl-sql:2.2.0-beta4",
+    "caller": "|java+method:///com/mysema/query/sql/AbstractSQLQuery/iterate(com.mysema.query.types.Expression)|",
+    "called": "|java+constructor:///com/mysema/query/types/QBean/QBean(java.lang.Class,java.util.Map)|",
+    "v1Body": [
+      "|java+method:///com/mysema/query/types/Expression/getType()|",
+      "|java+method:///java/lang/reflect/Field/get(java.lang.Object)|",
+      "|java+method:///java/lang/reflect/Field/setAccessible(boolean)|",
+      "|java+method:///com/mysema/query/sql/AbstractSQLQuery/iterate(com.mysema.query.types.Expression)|",
+      "|java+constructor:///com/mysema/query/QueryException/QueryException(java.lang.Throwable)|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+method:///com/mysema/query/support/QueryMixin/convert(com.mysema.query.types.Expression)|",
+      "|java+constructor:///com/mysema/query/types/QBean/QBean(java.lang.Class,java.util.Map)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///java/lang/Class/getFields()|",
+      "|java+method:///java/lang/Class/isAssignableFrom(java.lang.Class)|",
+      "|java+method:///com/mysema/query/sql/AbstractSQLQuery/iterateSingle(com.mysema.query.types.Expression)|",
+      "|java+method:///java/lang/reflect/Field/getName()|",
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/lang/reflect/Field/getType()|",
+      "|java+method:///java/lang/reflect/Modifier/isStatic(int)|",
+      "|java+method:///java/lang/reflect/Field/getModifiers()|",
+      "|java+method:///com/mysema/query/support/QueryMixin/addToProjection(com.mysema.query.types.Expression%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/reflect/Field/get(java.lang.Object)|",
+      "|java+method:///java/lang/reflect/Field/setAccessible(boolean)|",
+      "|java+constructor:///com/mysema/query/QueryException/QueryException(java.lang.Throwable)|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+method:///com/mysema/query/support/QueryMixin/convert(com.mysema.query.types.Expression)|",
+      "|java+constructor:///com/mysema/query/types/QBean/QBean(java.lang.Class,java.util.Map)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///java/lang/Class/getFields()|",
+      "|java+method:///java/lang/Class/isAssignableFrom(java.lang.Class)|",
+      "|java+method:///com/mysema/query/types/Expression/getType()|",
+      "|java+method:///com/mysema/query/support/QueryMixin/getMetadata()|",
+      "|java+method:///java/lang/reflect/Field/getName()|",
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///com/mysema/query/sql/AbstractSQLQuery/iterate(com.mysema.query.types.Expression)|",
+      "|java+method:///com/mysema/query/sql/AbstractSQLQuery/iterateSingle(com.mysema.query.QueryMetadata,com.mysema.query.types.Expression)|",
+      "|java+method:///java/lang/reflect/Field/getType()|",
+      "|java+method:///java/lang/reflect/Modifier/isStatic(int)|",
+      "|java+method:///java/lang/reflect/Field/getModifiers()|",
+      "|java+method:///com/mysema/query/support/QueryMixin/addToProjection(com.mysema.query.types.Expression%5B%5D)|"
+    ],
+    "affectedLib": "com.mysema.querydsl:querydsl-core:2.2.0-beta4",
+    "change": "UPDATED"
+  }
+]

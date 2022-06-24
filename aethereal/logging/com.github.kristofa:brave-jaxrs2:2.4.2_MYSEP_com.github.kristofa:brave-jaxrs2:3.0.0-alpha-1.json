@@ -1,0 +1,66 @@
+[
+  {
+    "coordinatesV1": "com.github.kristofa:brave-jaxrs2:3.0.0-alpha-1",
+    "coordinatesV2": "com.github.kristofa:brave-jaxrs2:2.4.2",
+    "caller": "|java+method:///com/github/kristofa/brave/jaxrs2/BraveClientRequestFilter/filter(javax.ws.rs.client.ClientRequestContext)|",
+    "called": "|java+method:///com/github/kristofa/brave/client/ClientRequestInterceptor/handle(com.github.kristofa.brave.ClientRequestAdapter,com.google.common.base.Optional)|",
+    "v1Body": [
+      "|java+method:///com/github/kristofa/brave/client/ClientRequestInterceptor/handle(com.github.kristofa.brave.ClientRequestAdapter,com.google.common.base.Optional)|",
+      "|java+constructor:///com/github/kristofa/brave/jaxrs2/JaxRS2ClientRequestAdapter/JaxRS2ClientRequestAdapter(javax.ws.rs.client.ClientRequestContext)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/github/kristofa/brave/client/ClientRequestInterceptor/handle(com.github.kristofa.brave.client.ClientRequestAdapter,java.lang.String)|",
+      "|java+constructor:///com/github/kristofa/brave/jaxrs2/JaxRS2ClientRequestAdapter/JaxRS2ClientRequestAdapter(javax.ws.rs.client.ClientRequestContext)|"
+    ],
+    "affectedLib": "com.github.kristofa:brave-client:2.4.2",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.github.kristofa:brave-jaxrs2:3.0.0-alpha-1",
+    "coordinatesV2": "com.github.kristofa:brave-jaxrs2:2.4.2",
+    "caller": "|java+method:///com/github/kristofa/brave/jaxrs2/BraveClientResponseFilter/filter(javax.ws.rs.client.ClientRequestContext,javax.ws.rs.client.ClientResponseContext)|",
+    "called": "|java+method:///com/github/kristofa/brave/client/ClientResponseInterceptor/handle(com.github.kristofa.brave.ClientResponseAdapter)|",
+    "v1Body": [
+      "|java+method:///com/github/kristofa/brave/client/ClientResponseInterceptor/handle(com.github.kristofa.brave.ClientResponseAdapter)|",
+      "|java+constructor:///com/github/kristofa/brave/jaxrs2/JaxRS2ClientResponseAdapter/JaxRS2ClientResponseAdapter(javax.ws.rs.client.ClientResponseContext)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/github/kristofa/brave/client/ClientResponseInterceptor/handle(com.github.kristofa.brave.client.ClientResponseAdapter)|",
+      "|java+constructor:///com/github/kristofa/brave/jaxrs2/JaxRS2ClientResponseAdapter/JaxRS2ClientResponseAdapter(javax.ws.rs.client.ClientResponseContext)|"
+    ],
+    "affectedLib": "com.github.kristofa:brave-client:2.4.2",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.github.kristofa:brave-jaxrs2:2.4.2",
+    "coordinatesV2": "com.github.kristofa:brave-jaxrs2:3.0.0-alpha-1",
+    "caller": "|java+method:///com/github/kristofa/brave/jaxrs2/BraveClientRequestFilter/filter(javax.ws.rs.client.ClientRequestContext)|",
+    "called": "|java+method:///com/github/kristofa/brave/client/ClientRequestInterceptor/handle(com.github.kristofa.brave.client.ClientRequestAdapter,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///com/github/kristofa/brave/client/ClientRequestInterceptor/handle(com.github.kristofa.brave.ClientRequestAdapter,com.google.common.base.Optional)|",
+      "|java+constructor:///com/github/kristofa/brave/jaxrs2/JaxRS2ClientRequestAdapter/JaxRS2ClientRequestAdapter(javax.ws.rs.client.ClientRequestContext)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/github/kristofa/brave/client/ClientRequestInterceptor/handle(com.github.kristofa.brave.client.ClientRequestAdapter,java.lang.String)|",
+      "|java+constructor:///com/github/kristofa/brave/jaxrs2/JaxRS2ClientRequestAdapter/JaxRS2ClientRequestAdapter(javax.ws.rs.client.ClientRequestContext)|"
+    ],
+    "affectedLib": "com.github.kristofa:brave-http:3.0.0-alpha-1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.github.kristofa:brave-jaxrs2:2.4.2",
+    "coordinatesV2": "com.github.kristofa:brave-jaxrs2:3.0.0-alpha-1",
+    "caller": "|java+method:///com/github/kristofa/brave/jaxrs2/BraveClientResponseFilter/filter(javax.ws.rs.client.ClientRequestContext,javax.ws.rs.client.ClientResponseContext)|",
+    "called": "|java+method:///com/github/kristofa/brave/client/ClientResponseInterceptor/handle(com.github.kristofa.brave.client.ClientResponseAdapter)|",
+    "v1Body": [
+      "|java+method:///com/github/kristofa/brave/client/ClientResponseInterceptor/handle(com.github.kristofa.brave.ClientResponseAdapter)|",
+      "|java+constructor:///com/github/kristofa/brave/jaxrs2/JaxRS2ClientResponseAdapter/JaxRS2ClientResponseAdapter(javax.ws.rs.client.ClientResponseContext)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/github/kristofa/brave/client/ClientResponseInterceptor/handle(com.github.kristofa.brave.client.ClientResponseAdapter)|",
+      "|java+constructor:///com/github/kristofa/brave/jaxrs2/JaxRS2ClientResponseAdapter/JaxRS2ClientResponseAdapter(javax.ws.rs.client.ClientResponseContext)|"
+    ],
+    "affectedLib": "com.github.kristofa:brave-http:3.0.0-alpha-1",
+    "change": "ADDED"
+  }
+]

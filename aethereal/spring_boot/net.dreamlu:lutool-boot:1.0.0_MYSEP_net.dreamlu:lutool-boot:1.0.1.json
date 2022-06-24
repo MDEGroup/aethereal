@@ -1,0 +1,63 @@
+[
+  {
+    "coordinatesV1": "net.dreamlu:lutool-boot:1.0.0",
+    "coordinatesV2": "net.dreamlu:lutool-boot:1.0.1",
+    "caller": "|java+method:///net/dreamlu/boot/error/DreamErrorAttributes/resolveException(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.Object,java.lang.Exception)|",
+    "called": "|java+method:///net/dreamlu/tool/util/JsonUtils/getInstance()|",
+    "v1Body": [
+      "|java+method:///net/dreamlu/boot/error/ExceptionTranslator/handle(java.lang.Throwable)|",
+      "|java+constructor:///org/springframework/web/servlet/ModelAndView/ModelAndView(org.springframework.web.servlet.View,java.util.Map)|",
+      "|java+method:///org/springframework/web/servlet/view/json/MappingJackson2JsonView/setContentType(java.lang.String)|",
+      "|java+method:///org/springframework/web/servlet/view/json/MappingJackson2JsonView/setObjectMapper(com.fasterxml.jackson.databind.ObjectMapper)|",
+      "|java+method:///net/dreamlu/boot/properties/DreamProperties/getMvc()|",
+      "|java+method:///net/dreamlu/boot/properties/DreamProperties$Mvc/getContentType()|",
+      "|java+method:///net/dreamlu/tool/util/BeanUtils/toMap(java.lang.Object)|",
+      "|java+method:///net/dreamlu/tool/util/JsonUtils/getInstance()|",
+      "|java+constructor:///org/springframework/web/servlet/view/json/MappingJackson2JsonView/MappingJackson2JsonView()|",
+      "|java+method:///net/dreamlu/boot/result/Results/failure(java.lang.String)|",
+      "|java+method:///org/springframework/boot/autoconfigure/web/DefaultErrorAttributes/resolveException(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.Object,java.lang.Exception)|"
+    ],
+    "v2Body": [
+      "|java+method:///net/dreamlu/boot/error/ExceptionTranslator/handle(java.lang.Throwable)|",
+      "|java+constructor:///org/springframework/web/servlet/ModelAndView/ModelAndView(org.springframework.web.servlet.View,java.util.Map)|",
+      "|java+method:///org/springframework/web/servlet/view/json/MappingJackson2JsonView/setContentType(java.lang.String)|",
+      "|java+method:///org/springframework/web/servlet/view/json/MappingJackson2JsonView/setObjectMapper(com.fasterxml.jackson.databind.ObjectMapper)|",
+      "|java+method:///net/dreamlu/boot/properties/DreamProperties/getMvc()|",
+      "|java+method:///net/dreamlu/boot/properties/DreamProperties$Mvc/getContentType()|",
+      "|java+method:///net/dreamlu/tool/util/BeanUtils/toMap(java.lang.Object)|",
+      "|java+method:///net/dreamlu/tool/util/JsonUtils/getInstance()|",
+      "|java+constructor:///org/springframework/web/servlet/view/json/MappingJackson2JsonView/MappingJackson2JsonView()|",
+      "|java+method:///org/springframework/boot/autoconfigure/web/DefaultErrorAttributes/resolveException(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.Object,java.lang.Exception)|"
+    ],
+    "affectedLib": "net.dreamlu:lutool-core:1.0.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "net.dreamlu:lutool-boot:1.0.0",
+    "coordinatesV2": "net.dreamlu:lutool-boot:1.0.1",
+    "caller": "|java+method:///net/dreamlu/boot/error/ExceptionTranslator/getMessage(java.lang.Throwable,java.util.Locale,java.lang.Object%5B%5D)|",
+    "called": "|java+method:///net/dreamlu/tool/util/StringUtils/isBlank(java.lang.CharSequence)|",
+    "v1Body": [
+      "|java+method:///org/springframework/context/NoSuchMessageException/getMessage()|",
+      "|java+method:///net/dreamlu/boot/exception/LocalizedException/getLocaleMessage()|",
+      "|java+method:///java/lang/Throwable/getMessage()|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String)|",
+      "|java+method:///org/springframework/context/MessageSource/getMessage(java.lang.String,java.lang.Object%5B%5D,java.util.Locale)|",
+      "|java+method:///java/lang/Object/getClass()|"
+    ],
+    "v2Body": [
+      "|java+method:///net/dreamlu/tool/util/StringUtils/isBlank(java.lang.CharSequence)|",
+      "|java+method:///org/springframework/context/NoSuchMessageException/getMessage()|",
+      "|java+method:///net/dreamlu/boot/exception/LocalizedException/getLocaleMessage()|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String)|",
+      "|java+method:///java/lang/Throwable/getMessage()|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+method:///org/springframework/context/MessageSource/getMessage(java.lang.String,java.lang.Object%5B%5D,java.util.Locale)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///net/dreamlu/boot/result/Results/failure(java.lang.String)|"
+    ],
+    "affectedLib": "net.dreamlu:lutool-core:1.0.1",
+    "change": "UPDATED"
+  }
+]

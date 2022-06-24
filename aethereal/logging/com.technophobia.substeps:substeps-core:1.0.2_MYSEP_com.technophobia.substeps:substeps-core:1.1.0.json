@@ -1,0 +1,104 @@
+[
+  {
+    "coordinatesV1": "com.technophobia.substeps:substeps-core:1.0.2",
+    "coordinatesV2": "com.technophobia.substeps:substeps-core:1.1.0",
+    "caller": "|java+constructor:///com/technophobia/substeps/report/DefaultExecutionReportBuilder/DefaultExecutionReportBuilder()|",
+    "called": "|java+constructor:///com/technophobia/substeps/report/ExecutionReportBuilder/ExecutionReportBuilder()|",
+    "v1Body": [
+      "|java+method:///java/util/Properties/setProperty(java.lang.String,java.lang.String)|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+constructor:///java/util/Properties/Properties()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Properties/setProperty(java.lang.String,java.lang.String)|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+constructor:///java/util/Properties/Properties()|",
+      "|java+constructor:///com/technophobia/substeps/report/ExecutionReportBuilder/ExecutionReportBuilder()|",
+      "|java+constructor:///com/technophobia/substeps/report/ReportData/ReportData()|"
+    ],
+    "affectedLib": "com.technophobia.substeps:substeps-core-api:1.1.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.technophobia.substeps:substeps-core:1.0.2",
+    "coordinatesV2": "com.technophobia.substeps:substeps-core:1.1.0",
+    "caller": "|java+constructor:///com/technophobia/substeps/report/ExecutionStats/ExecutionStats()|",
+    "called": "|java+constructor:///com/technophobia/substeps/execution/AbstractExecutionNodeVisitor/AbstractExecutionNodeVisitor()|",
+    "v1Body": [
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+constructor:///com/technophobia/substeps/report/TestCounterSet/TestCounterSet()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+constructor:///com/technophobia/substeps/report/TestCounterSet/TestCounterSet()|",
+      "|java+constructor:///com/technophobia/substeps/execution/AbstractExecutionNodeVisitor/AbstractExecutionNodeVisitor()|"
+    ],
+    "affectedLib": "com.technophobia.substeps:substeps-core-api:1.1.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.technophobia.substeps:substeps-core:1.0.2",
+    "coordinatesV2": "com.technophobia.substeps:substeps-core:1.1.0",
+    "caller": "|java+method:///com/technophobia/substeps/runner/ExecutionNodeRunner/run()|",
+    "called": "|java+method:///com/technophobia/substeps/runner/ExecutionContext/put(com.technophobia.substeps.model.Scope,java.lang.String,java.lang.Object)|",
+    "v1Body": [
+      "|java+constructor:///java/lang/IllegalStateException/IllegalStateException(java.lang.String)|",
+      "|java+method:///com/technophobia/substeps/execution/ExecutionNodeResult/setFailed(java.lang.Throwable)|",
+      "|java+method:///com/technophobia/substeps/runner/ExecutionNodeRunner/addFailure(java.util.List,com.technophobia.substeps.runner.SubstepExecutionFailure)|",
+      "|java+method:///com/technophobia/substeps/runner/ExecutionContext/put(com.technophobia.substeps.model.Scope,java.lang.String,java.lang.Object)|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+constructor:///com/technophobia/substeps/runner/SubstepExecutionFailure/SubstepExecutionFailure(java.lang.Throwable,com.technophobia.substeps.execution.ExecutionNode)|",
+      "|java+method:///com/technophobia/substeps/runner/ExecutionNodeRunner/runExecutionNodeHierarchy(com.technophobia.substeps.model.Scope,com.technophobia.substeps.execution.ExecutionNode)|",
+      "|java+method:///com/technophobia/substeps/execution/ExecutionNode/getResult()|",
+      "|java+method:///com/technophobia/substeps/runner/INotificationDistributor/notifyNodeFailed(com.technophobia.substeps.execution.ExecutionNode,java.lang.Throwable)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/technophobia/substeps/runner/node/RootNodeRunner/run(com.technophobia.substeps.execution.node.IExecutionNode,com.technophobia.substeps.execution.node.RootNodeExecutionContext)|",
+      "|java+method:///com/technophobia/substeps/execution/node/RootNodeExecutionContext/addFailure(com.technophobia.substeps.runner.SubstepExecutionFailure)|",
+      "|java+constructor:///java/lang/IllegalStateException/IllegalStateException(java.lang.String)|",
+      "|java+method:///com/technophobia/substeps/execution/ExecutionNodeResult/setFailed(java.lang.Throwable)|",
+      "|java+method:///com/technophobia/substeps/runner/ExecutionContext/put(com.technophobia.substeps.model.Scope,java.lang.String,java.lang.Object)|",
+      "|java+method:///com/technophobia/substeps/execution/node/RootNode/getResult()|",
+      "|java+method:///com/technophobia/substeps/execution/node/RootNodeExecutionContext/getFailures()|",
+      "|java+constructor:///com/technophobia/substeps/runner/SubstepExecutionFailure/SubstepExecutionFailure(java.lang.Throwable,com.technophobia.substeps.execution.node.IExecutionNode)|",
+      "|java+method:///com/technophobia/substeps/execution/node/RootNodeExecutionContext/haveTestsBeenRun()|",
+      "|java+method:///com/technophobia/substeps/runner/INotificationDistributor/notifyNodeFailed(com.technophobia.substeps.execution.node.IExecutionNode,java.lang.Throwable)|"
+    ],
+    "affectedLib": "com.technophobia.substeps:substeps-core-api:1.1.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.technophobia.substeps:substeps-core:1.0.2",
+    "coordinatesV2": "com.technophobia.substeps:substeps-core:1.1.0",
+    "caller": "|java+constructor:///com/technophobia/substeps/runner/TagManager/TagManager(java.lang.String)|",
+    "called": "|java+constructor:///com/technophobia/substeps/execution/AbstractExecutionNodeVisitor/AbstractExecutionNodeVisitor()|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+method:///com/technophobia/substeps/runner/TagManager/parseTextValue(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///java/util/HashSet/HashSet()|",
+      "|java+method:///com/technophobia/substeps/runner/TagManager/insertCommandLineTags()|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/String/length()|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+method:///com/technophobia/substeps/runner/TagManager/parseTextValue(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///com/technophobia/substeps/execution/AbstractExecutionNodeVisitor/AbstractExecutionNodeVisitor()|",
+      "|java+constructor:///java/util/HashSet/HashSet()|",
+      "|java+method:///com/technophobia/substeps/runner/TagManager/insertCommandLineTags()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/String/length()|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "com.technophobia.substeps:substeps-core-api:1.1.0",
+    "change": "ADDED"
+  }
+]

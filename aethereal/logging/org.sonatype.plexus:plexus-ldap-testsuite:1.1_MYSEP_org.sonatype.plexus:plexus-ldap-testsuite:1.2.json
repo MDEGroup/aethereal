@@ -1,0 +1,83 @@
+[
+  {
+    "coordinatesV1": "org.sonatype.plexus:plexus-ldap-testsuite:1.1",
+    "coordinatesV2": "org.sonatype.plexus:plexus-ldap-testsuite:1.2",
+    "caller": "|java+method:///org/sonatype/ldaptestsuite/LdapServer/stop()|",
+    "called": "|java+constructor:///org/codehaus/plexus/personality/plexus/lifecycle/phase/StoppingException/StoppingException(java.lang.String,java.lang.Throwable)|",
+    "v1Body": [
+      "|java+constructor:///org/codehaus/plexus/personality/plexus/lifecycle/phase/StoppingException/StoppingException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/apache/directory/server/ldap/LdapService/stop()|",
+      "|java+method:///org/apache/directory/server/core/DirectoryService/shutdown()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/sonatype/ldaptestsuite/LdapServer/dispose()|",
+      "|java+constructor:///org/codehaus/plexus/personality/plexus/lifecycle/phase/StoppingException/StoppingException(java.lang.String,java.lang.Throwable)|"
+    ],
+    "affectedLib": "org.codehaus.plexus:plexus-container-default:1.0-beta-3.0.5",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.sonatype.plexus:plexus-ldap-testsuite:1.1",
+    "coordinatesV2": "org.sonatype.plexus:plexus-ldap-testsuite:1.2",
+    "caller": "|java+method:///org/sonatype/ldaptestsuite/LdapServer/start()|",
+    "called": "|java+constructor:///org/codehaus/plexus/personality/plexus/lifecycle/phase/StartingException/StartingException(java.lang.String,java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///org/codehaus/plexus/util/IOUtil/close(java.io.InputStream)|",
+      "|java+method:///org/sonatype/ldaptestsuite/LdapServer/getPartitions()|",
+      "|java+method:///org/apache/directory/server/core/DirectoryService/getWorkingDirectory()|",
+      "|java+method:///org/apache/directory/server/ldap/LdapService/start()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/sonatype/ldaptestsuite/LdapServer/importLdif(java.io.InputStream)|",
+      "|java+method:///org/sonatype/ldaptestsuite/LdapServer/addAdditionalSchema()|",
+      "|java+method:///org/apache/directory/server/core/DirectoryService/startup()|",
+      "|java+method:///org/sonatype/ldaptestsuite/Partition/getLdifFile()|",
+      "|java+constructor:///org/codehaus/plexus/personality/plexus/lifecycle/phase/StartingException/StartingException(java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/apache/directory/server/ldap/LdapService/addExtendedOperationHandler(org.apache.directory.server.ldap.ExtendedOperationHandler)|",
+      "|java+method:///org/sonatype/ldaptestsuite/LdapServer/stop()|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+constructor:///java/io/FileInputStream/FileInputStream(java.io.File)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+constructor:///org/apache/directory/server/ldap/handlers/extended/StoredProcedureExtendedOperationHandler/StoredProcedureExtendedOperationHandler()|",
+      "|java+method:///org/codehaus/plexus/logging/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/sonatype/ldaptestsuite/LdapServer/configureDirectoryService()|",
+      "|java+constructor:///org/apache/directory/server/ldap/handlers/extended/StartTlsHandler/StartTlsHandler()|",
+      "|java+method:///org/sonatype/ldaptestsuite/LdapServer/configureLdapServer()|",
+      "|java+method:///org/sonatype/ldaptestsuite/LdapServer/setContexts(java.lang.String,java.lang.String)|",
+      "|java+method:///org/sonatype/ldaptestsuite/LdapServer/doDelete(java.io.File)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/Exception/getMessage()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/codehaus/plexus/util/IOUtil/close(java.io.InputStream)|",
+      "|java+method:///org/sonatype/ldaptestsuite/LdapServer/getPartitions()|",
+      "|java+method:///org/sonatype/ldaptestsuite/LdapServer/init()|",
+      "|java+method:///org/apache/directory/server/ldap/LdapService/start()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/sonatype/ldaptestsuite/LdapServer/importLdif(java.io.InputStream)|",
+      "|java+method:///org/sonatype/ldaptestsuite/LdapServer/addAdditionalSchema()|",
+      "|java+method:///org/apache/directory/server/core/DirectoryService/startup()|",
+      "|java+method:///org/sonatype/ldaptestsuite/Partition/getLdifFile()|",
+      "|java+constructor:///org/codehaus/plexus/personality/plexus/lifecycle/phase/StartingException/StartingException(java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/apache/directory/server/ldap/LdapService/addExtendedOperationHandler(org.apache.directory.server.ldap.ExtendedOperationHandler)|",
+      "|java+method:///org/sonatype/ldaptestsuite/LdapServer/stop()|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+constructor:///java/io/FileInputStream/FileInputStream(java.io.File)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+constructor:///org/apache/directory/server/ldap/handlers/extended/StoredProcedureExtendedOperationHandler/StoredProcedureExtendedOperationHandler()|",
+      "|java+method:///org/codehaus/plexus/logging/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/sonatype/ldaptestsuite/LdapServer/configureDirectoryService()|",
+      "|java+constructor:///org/apache/directory/server/ldap/handlers/extended/StartTlsHandler/StartTlsHandler()|",
+      "|java+method:///org/sonatype/ldaptestsuite/LdapServer/configureLdapServer()|",
+      "|java+method:///org/sonatype/ldaptestsuite/LdapServer/setContexts(java.lang.String,java.lang.String)|",
+      "|java+method:///org/sonatype/ldaptestsuite/LdapServer/doDelete(java.io.File)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/Exception/getMessage()|"
+    ],
+    "affectedLib": "org.codehaus.plexus:plexus-container-default:1.0-beta-3.0.5",
+    "change": "UPDATED"
+  }
+]

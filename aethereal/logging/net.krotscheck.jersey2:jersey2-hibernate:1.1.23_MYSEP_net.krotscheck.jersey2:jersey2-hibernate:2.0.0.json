@@ -1,0 +1,30 @@
+[
+  {
+    "coordinatesV1": "net.krotscheck.jersey2:jersey2-hibernate:1.1.23",
+    "coordinatesV2": "net.krotscheck.jersey2:jersey2-hibernate:2.0.0",
+    "caller": "|java+method:///net/krotscheck/jersey2/hibernate/factory/HibernateSessionFactoryFactory/provide()|",
+    "called": "|java+method:///org/hibernate/boot/MetadataSources/buildMetadata()|",
+    "v1Body": [
+      "|java+method:///org/hibernate/cfg/Configuration/buildSessionFactory(org.hibernate.service.ServiceRegistry)|",
+      "|java+method:///net/krotscheck/jersey2/hibernate/factory/HibernateSessionFactoryFactory/injectEventListeners(org.hibernate.service.ServiceRegistry)|",
+      "|java+method:///org/hibernate/internal/SessionFactoryImpl/getServiceRegistry()|",
+      "|java+method:///org/hibernate/boot/registry/StandardServiceRegistryBuilder/applySettings(java.util.Map)|",
+      "|java+method:///org/slf4j/Logger/trace(java.lang.String)|",
+      "|java+constructor:///org/hibernate/boot/registry/StandardServiceRegistryBuilder/StandardServiceRegistryBuilder()|",
+      "|java+method:///org/hibernate/cfg/Configuration/getProperties()|",
+      "|java+method:///org/hibernate/boot/registry/StandardServiceRegistryBuilder/build()|",
+      "|java+method:///net/krotscheck/jersey2/hibernate/factory/HibernateSessionFactoryFactory/provide()|"
+    ],
+    "v2Body": [
+      "|java+method:///net/krotscheck/jersey2/hibernate/factory/HibernateSessionFactoryFactory/injectEventListeners(org.hibernate.service.ServiceRegistry)|",
+      "|java+method:///org/hibernate/internal/SessionFactoryImpl/getServiceRegistry()|",
+      "|java+method:///org/hibernate/boot/Metadata/buildSessionFactory()|",
+      "|java+method:///org/hibernate/boot/MetadataSources/buildMetadata()|",
+      "|java+method:///net/krotscheck/jersey2/hibernate/factory/HibernateSessionFactoryFactory/provide()|",
+      "|java+method:///org/slf4j/Logger/trace(java.lang.String)|",
+      "|java+constructor:///org/hibernate/boot/MetadataSources/MetadataSources(org.hibernate.service.ServiceRegistry)|"
+    ],
+    "affectedLib": "org.hibernate:hibernate-core:5.0.6.Final",
+    "change": "UPDATED"
+  }
+]

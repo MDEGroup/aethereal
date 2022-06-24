@@ -1,0 +1,66 @@
+[
+  {
+    "coordinatesV1": "org.cometd.java:cometd-java-common:2.4.0.beta1",
+    "coordinatesV2": "org.cometd.java:cometd-java-common:2.4.0.beta2",
+    "caller": "|java+initializer:///org/cometd/common/AbstractClientSession/AbstractClientSession$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/eclipse/jetty/util/log/Log/getLogger(java.lang.Class)|",
+      "|java+constructor:///java/util/concurrent/atomic/AtomicLong/AtomicLong(long)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/util/concurrent/atomic/AtomicLong/AtomicLong(long)|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.6.2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.cometd.java:cometd-java-common:2.4.0.beta1",
+    "coordinatesV2": "org.cometd.java:cometd-java-common:2.4.0.beta2",
+    "caller": "|java+method:///org/cometd/common/AbstractClientSession/receive(org.cometd.bayeux.Message$Mutable)|",
+    "called": "|java+method:///org/cometd/bayeux/ChannelId/getWilds()|",
+    "v1Body": [
+      "|java+method:///org/cometd/common/AbstractClientSession/extendRcv(org.cometd.bayeux.Message$Mutable)|",
+      "|java+method:///org/cometd/common/AbstractClientSession$AbstractSessionChannel/notifyMessageListeners(org.cometd.bayeux.Message)|",
+      "|java+method:///org/cometd/common/AbstractClientSession/getReleasableChannel(java.lang.String)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/cometd/common/AbstractClientSession$MarkableReference/getReference()|",
+      "|java+method:///org/cometd/common/AbstractClientSession$MarkableReference/isMarked()|",
+      "|java+method:///org/cometd/bayeux/ChannelId/matches(org.cometd.bayeux.ChannelId)|",
+      "|java+method:///org/cometd/common/AbstractClientSession/newChannelId(java.lang.String)|",
+      "|java+method:///org/cometd/bayeux/ChannelId/getWilds()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/cometd/common/AbstractClientSession$AbstractSessionChannel/getChannelId()|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///org/cometd/bayeux/Message$Mutable/getChannel()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/cometd/common/AbstractClientSession$AbstractSessionChannel/release()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/cometd/common/AbstractClientSession/extendRcv(org.cometd.bayeux.Message$Mutable)|",
+      "|java+method:///org/cometd/common/AbstractClientSession$AbstractSessionChannel/notifyMessageListeners(org.cometd.bayeux.Message)|",
+      "|java+method:///org/cometd/common/AbstractClientSession/getReleasableChannel(java.lang.String)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/cometd/common/AbstractClientSession$MarkableReference/getReference()|",
+      "|java+method:///org/cometd/common/AbstractClientSession$MarkableReference/isMarked()|",
+      "|java+method:///org/cometd/bayeux/ChannelId/getWilds()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/cometd/common/AbstractClientSession$AbstractSessionChannel/getChannelId()|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///org/cometd/bayeux/Message$Mutable/getChannel()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/cometd/common/AbstractClientSession$AbstractSessionChannel/release()|"
+    ],
+    "affectedLib": "org.cometd.java:bayeux-api:2.4.0.beta2",
+    "change": "UPDATED"
+  }
+]

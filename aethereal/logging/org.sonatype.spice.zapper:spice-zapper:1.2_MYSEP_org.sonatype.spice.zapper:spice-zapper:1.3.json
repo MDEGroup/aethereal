@@ -1,0 +1,293 @@
+[
+  {
+    "coordinatesV1": "org.sonatype.spice.zapper:spice-zapper:1.3",
+    "coordinatesV2": "org.sonatype.spice.zapper:spice-zapper:1.2",
+    "caller": "|java+method:///org/sonatype/spice/zapper/internal/zapper/ZapperPayload/createSegmentFooter()|",
+    "called": "|java+method:///com/google/protobuf/ByteString/copyFrom(byte%5B%5D)|",
+    "v1Body": [
+      "|java+method:///org/sonatype/spice/zapper/internal/protobuf/protos/ZapperProtos$SegmentFooter/newBuilder()|",
+      "|java+method:///com/google/protobuf/ByteString/copyFrom(byte%5B%5D)|",
+      "|java+method:///org/sonatype/spice/zapper/hash/Hash/getHashAlgorithmIdentifier()|",
+      "|java+method:///org/sonatype/spice/zapper/internal/protobuf/protos/ZapperProtos$SegmentFooter$Builder/build()|",
+      "|java+method:///org/sonatype/spice/zapper/internal/protobuf/protos/ZapperProtos$Hash$Builder/build()|",
+      "|java+method:///org/sonatype/spice/zapper/hash/HashAlgorithmIdentifier/stringValue()|",
+      "|java+method:///org/sonatype/spice/zapper/internal/protobuf/protos/ZapperProtos$SegmentFooter$Builder/addHashes(org.sonatype.spice.zapper.internal.protobuf.protos.ZapperProtos$Hash)|",
+      "|java+method:///org/sonatype/spice/zapper/internal/protobuf/protos/ZapperProtos$Hash/newBuilder()|",
+      "|java+method:///org/sonatype/spice/zapper/hash/Hash/byteValue()|",
+      "|java+method:///org/sonatype/spice/zapper/internal/protobuf/protos/ZapperProtos$Hash$Builder/setHashBytes(com.google.protobuf.ByteString)|",
+      "|java+method:///org/sonatype/spice/zapper/internal/protobuf/protos/ZapperProtos$Hash$Builder/setHashAlg(java.lang.String)|",
+      "|java+method:///org/sonatype/spice/zapper/internal/protobuf/protos/ZapperProtos$SegmentFooter/toByteArray()|",
+      "|java+method:///org/sonatype/spice/zapper/internal/SegmentPayload/getHash()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/sonatype/spice/zapper/internal/hawtbuf/SegmentFooter/addHashes(org.sonatype.spice.zapper.internal.hawtbuf.Hash)|",
+      "|java+method:///org/sonatype/spice/zapper/hash/Hash/byteValue()|",
+      "|java+constructor:///org/sonatype/spice/zapper/internal/hawtbuf/SegmentFooter/SegmentFooter()|",
+      "|java+constructor:///org/sonatype/spice/zapper/internal/hawtbuf/Hash/Hash()|",
+      "|java+constructor:///org/fusesource/hawtbuf/Buffer/Buffer(byte%5B%5D)|",
+      "|java+method:///org/sonatype/spice/zapper/hash/Hash/getHashAlgorithmIdentifier()|",
+      "|java+method:///org/sonatype/spice/zapper/internal/hawtbuf/Hash/setHashBytes(org.fusesource.hawtbuf.Buffer)|",
+      "|java+method:///org/sonatype/spice/zapper/internal/hawtbuf/Hash/setHashAlg(java.lang.String)|",
+      "|java+method:///org/sonatype/spice/zapper/internal/SegmentPayload/getHash()|",
+      "|java+method:///org/sonatype/spice/zapper/internal/hawtbuf/SegmentFooter/toFramedByteArray()|",
+      "|java+method:///org/sonatype/spice/zapper/hash/HashAlgorithmIdentifier/stringValue()|"
+    ],
+    "affectedLib": "com.google.protobuf:protobuf-java:2.4.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.sonatype.spice.zapper:spice-zapper:1.3",
+    "coordinatesV2": "org.sonatype.spice.zapper:spice-zapper:1.2",
+    "caller": "|java+method:///org/sonatype/spice/zapper/codec/MatchingCodecSelector$MatchingCodecSelectorBuilder/add(java.util.regex.Pattern,org.sonatype.spice.zapper.codec.Codec)|",
+    "called": "|java+method:///org/sonatype/sisu/charger/internal/Check/notNull(java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///java/util/LinkedHashMap/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/sonatype/sisu/charger/internal/Check/notNull(java.lang.Object,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/LinkedHashMap/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object)|"
+    ],
+    "affectedLib": "org.sonatype.sisu:sisu-charger:1.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.sonatype.spice.zapper:spice-zapper:1.3",
+    "coordinatesV2": "org.sonatype.spice.zapper:spice-zapper:1.2",
+    "caller": "|java+method:///org/sonatype/spice/zapper/internal/transport/AbstractChargerClient/doUpload(org.sonatype.spice.zapper.internal.Transfer,org.sonatype.spice.zapper.internal.Protocol,int)|",
+    "called": "|java+constructor:///org/sonatype/sisu/charger/internal/AllArrivedChargeStrategy/AllArrivedChargeStrategy()|",
+    "v1Body": [
+      "|java+method:///org/sonatype/sisu/charger/ChargeFuture/getResult()|",
+      "|java+constructor:///java/util/ArrayList/ArrayList(int)|",
+      "|java+constructor:///java/io/IOException/IOException(java.lang.String)|",
+      "|java+method:///java/io/IOException/initCause(java.lang.Throwable)|",
+      "|java+method:///org/sonatype/spice/zapper/internal/transport/AbstractChargerClient/getExceptionHandler()|",
+      "|java+constructor:///org/sonatype/sisu/charger/internal/AllArrivedChargeStrategy/AllArrivedChargeStrategy()|",
+      "|java+method:///org/sonatype/spice/zapper/internal/transport/AbstractChargerClient/createCallable(org.sonatype.spice.zapper.internal.transport.TrackIdentifier,org.sonatype.spice.zapper.internal.Transfer,org.sonatype.spice.zapper.internal.Protocol,org.sonatype.spice.zapper.internal.PayloadSupplier)|",
+      "|java+method:///org/sonatype/spice/zapper/internal/Transfer/getNextTrackIdentifier()|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///org/sonatype/sisu/charger/Charger/submit(java.util.List,org.sonatype.sisu.charger.ExceptionHandler,org.sonatype.sisu.charger.ChargeStrategy,org.sonatype.sisu.charger.CallableExecutor)|",
+      "|java+method:///java/io/IOException/getCause()|",
+      "|java+method:///org/sonatype/spice/zapper/internal/Transfer/getPayloadSupplier()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/concurrent/ExecutorService/invokeAll(java.util.Collection)|",
+      "|java+constructor:///java/util/ArrayList/ArrayList(int)|",
+      "|java+constructor:///java/io/IOException/IOException(java.lang.String)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/io/IOException/initCause(java.lang.Throwable)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/sonatype/spice/zapper/internal/transport/AbstractChargerClient/createCallable(org.sonatype.spice.zapper.internal.transport.TrackIdentifier,org.sonatype.spice.zapper.internal.Transfer,org.sonatype.spice.zapper.internal.Protocol,org.sonatype.spice.zapper.internal.PayloadSupplier)|",
+      "|java+method:///org/sonatype/spice/zapper/internal/Transfer/getPayloadSupplier()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/util/concurrent/ExecutorService/shutdownNow()|",
+      "|java+method:///org/sonatype/spice/zapper/internal/Transfer/getNextTrackIdentifier()|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///org/sonatype/spice/zapper/internal/transport/AbstractChargerClient/getParameters()|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///java/util/concurrent/Future/get()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/sonatype/spice/zapper/Parameters/getMaximumTrackCount()|",
+      "|java+method:///java/util/concurrent/Executors/newFixedThreadPool(int)|",
+      "|java+method:///java/lang/Exception/toString()|"
+    ],
+    "affectedLib": "org.sonatype.sisu:sisu-charger:1.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.sonatype.spice.zapper:spice-zapper:1.3",
+    "coordinatesV2": "org.sonatype.spice.zapper:spice-zapper:1.2",
+    "caller": "|java+method:///org/sonatype/spice/zapper/codec/MatchingCodecSelector$MatchingCodecSelectorBuilder/add(java.lang.String,org.sonatype.spice.zapper.codec.Codec)|",
+    "called": "|java+method:///org/sonatype/sisu/charger/internal/Check/notNull(java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///java/util/regex/Pattern/compile(java.lang.String)|",
+      "|java+method:///org/sonatype/sisu/charger/internal/Check/notNull(java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/sonatype/spice/zapper/codec/MatchingCodecSelector$MatchingCodecSelectorBuilder/add(java.util.regex.Pattern,org.sonatype.spice.zapper.codec.Codec)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/regex/Pattern/compile(java.lang.String)|",
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object)|",
+      "|java+method:///org/sonatype/spice/zapper/codec/MatchingCodecSelector$MatchingCodecSelectorBuilder/add(java.util.regex.Pattern,org.sonatype.spice.zapper.codec.Codec)|"
+    ],
+    "affectedLib": "org.sonatype.sisu:sisu-charger:1.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.sonatype.spice.zapper:spice-zapper:1.3",
+    "coordinatesV2": "org.sonatype.spice.zapper:spice-zapper:1.2",
+    "caller": "|java+constructor:///org/sonatype/spice/zapper/internal/transport/AbstractChargerClient/AbstractChargerClient(org.sonatype.spice.zapper.Parameters,java.lang.String)|",
+    "called": "|java+constructor:///org/sonatype/sisu/charger/internal/DefaultCharger/DefaultCharger()|",
+    "v1Body": [
+      "|java+constructor:///org/sonatype/sisu/charger/internal/DefaultCharger/DefaultCharger()|",
+      "|java+constructor:///org/sonatype/spice/zapper/internal/transport/SimpleCallableExecutor/SimpleCallableExecutor(int)|",
+      "|java+method:///org/sonatype/spice/zapper/Parameters/getMaximumTrackCount()|",
+      "|java+constructor:///org/sonatype/spice/zapper/internal/transport/AbstractClient/AbstractClient(org.sonatype.spice.zapper.Parameters,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/sonatype/spice/zapper/internal/transport/AbstractClient/AbstractClient(org.sonatype.spice.zapper.Parameters,java.lang.String)|"
+    ],
+    "affectedLib": "org.sonatype.sisu:sisu-charger:1.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.sonatype.spice.zapper:spice-zapper:1.2",
+    "coordinatesV2": "org.sonatype.spice.zapper:spice-zapper:1.3",
+    "caller": "|java+method:///org/sonatype/spice/zapper/codec/MatchingCodecSelector$MatchingCodecSelectorBuilder/add(java.util.regex.Pattern,org.sonatype.spice.zapper.codec.Codec)|",
+    "called": "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///java/util/LinkedHashMap/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/sonatype/sisu/charger/internal/Check/notNull(java.lang.Object,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/LinkedHashMap/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object)|"
+    ],
+    "affectedLib": "com.google.guava:guava:16.0.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.sonatype.spice.zapper:spice-zapper:1.2",
+    "coordinatesV2": "org.sonatype.spice.zapper:spice-zapper:1.3",
+    "caller": "|java+method:///org/sonatype/spice/zapper/codec/MatchingCodecSelector$MatchingCodecSelectorBuilder/add(java.lang.String,org.sonatype.spice.zapper.codec.Codec)|",
+    "called": "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///java/util/regex/Pattern/compile(java.lang.String)|",
+      "|java+method:///org/sonatype/sisu/charger/internal/Check/notNull(java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/sonatype/spice/zapper/codec/MatchingCodecSelector$MatchingCodecSelectorBuilder/add(java.util.regex.Pattern,org.sonatype.spice.zapper.codec.Codec)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/regex/Pattern/compile(java.lang.String)|",
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object)|",
+      "|java+method:///org/sonatype/spice/zapper/codec/MatchingCodecSelector$MatchingCodecSelectorBuilder/add(java.util.regex.Pattern,org.sonatype.spice.zapper.codec.Codec)|"
+    ],
+    "affectedLib": "com.google.guava:guava:16.0.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.sonatype.spice.zapper:spice-zapper:1.2",
+    "coordinatesV2": "org.sonatype.spice.zapper:spice-zapper:1.3",
+    "caller": "|java+method:///org/sonatype/spice/zapper/client/hc4/Hc4Client/upload(org.sonatype.spice.zapper.internal.Payload,org.sonatype.spice.zapper.client.hc4.Hc4Track)|",
+    "called": "|java+method:///org/apache/http/client/protocol/HttpClientContext/setCredentialsProvider(org.apache.http.client.CredentialsProvider)|",
+    "v1Body": [
+      "|java+method:///org/sonatype/spice/zapper/CodecSelector/selectCodecs(org.sonatype.spice.zapper.ZFile)|",
+      "|java+method:///org/apache/http/client/HttpClient/execute(org.apache.http.client.methods.HttpUriRequest)|",
+      "|java+constructor:///java/io/IOException/IOException(java.lang.String)|",
+      "|java+method:///org/sonatype/spice/zapper/internal/transport/TrackIdentifier/stringValue()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/http/client/methods/HttpPut/addHeader(java.lang.String,java.lang.String)|",
+      "|java+method:///org/apache/http/client/methods/HttpPut/setEntity(org.apache.http.HttpEntity)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///org/sonatype/spice/zapper/Path/stringValue()|",
+      "|java+method:///org/sonatype/spice/zapper/internal/Payload/getTransferIdentifier()|",
+      "|java+method:///org/apache/http/StatusLine/getStatusCode()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/sonatype/spice/zapper/Parameters/getCodecSelector()|",
+      "|java+method:///org/apache/http/HttpResponse/getStatusLine()|",
+      "|java+method:///org/sonatype/spice/zapper/internal/Payload/getPath()|",
+      "|java+method:///org/sonatype/spice/zapper/internal/Segment/getZFile()|",
+      "|java+constructor:///org/apache/http/client/methods/HttpPut/HttpPut(java.lang.String)|",
+      "|java+method:///java/lang/Class/cast(java.lang.Object)|",
+      "|java+constructor:///org/sonatype/spice/zapper/client/hc4/ZapperEntity/ZapperEntity(org.sonatype.spice.zapper.internal.Payload,java.util.List)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/sonatype/spice/zapper/client/hc4/Hc4Client/getParameters()|",
+      "|java+method:///org/sonatype/spice/zapper/internal/TransferIdentifier/stringValue()|",
+      "|java+method:///org/sonatype/spice/zapper/client/hc4/Hc4Client/getRemoteUrl()|",
+      "|java+method:///org/apache/http/StatusLine/getReasonPhrase()|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///org/sonatype/spice/zapper/internal/SegmentPayload/getSegment()|",
+      "|java+method:///org/sonatype/spice/zapper/client/hc4/Hc4Track/getIdentifier()|",
+      "|java+constructor:///org/sonatype/spice/zapper/client/hc4/ZapperEntity/ZapperEntity(org.sonatype.spice.zapper.internal.Payload)|",
+      "|java+method:///org/apache/http/util/EntityUtils/consume(org.apache.http.HttpEntity)|",
+      "|java+method:///org/apache/http/HttpResponse/getEntity()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/sonatype/spice/zapper/CodecSelector/selectCodecs(org.sonatype.spice.zapper.ZFile)|",
+      "|java+constructor:///java/io/IOException/IOException(java.lang.String)|",
+      "|java+method:///org/sonatype/spice/zapper/internal/transport/TrackIdentifier/stringValue()|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///org/apache/http/impl/client/CloseableHttpClient/execute(org.apache.http.client.methods.HttpUriRequest,org.apache.http.protocol.HttpContext)|",
+      "|java+method:///org/sonatype/spice/zapper/internal/Payload/getTransferIdentifier()|",
+      "|java+method:///java/net/URI/getScheme()|",
+      "|java+method:///java/net/URI/getHost()|",
+      "|java+method:///org/apache/http/StatusLine/getStatusCode()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/sonatype/spice/zapper/Parameters/getCodecSelector()|",
+      "|java+method:///org/apache/http/HttpResponse/getStatusLine()|",
+      "|java+method:///org/sonatype/spice/zapper/internal/Payload/getPath()|",
+      "|java+method:///org/apache/http/client/protocol/HttpClientContext/setAuthCache(org.apache.http.client.AuthCache)|",
+      "|java+method:///org/apache/http/client/protocol/HttpClientContext/setCredentialsProvider(org.apache.http.client.CredentialsProvider)|",
+      "|java+constructor:///org/apache/http/client/protocol/HttpClientContext/HttpClientContext()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///org/apache/http/HttpHost/HttpHost(java.lang.String,int,java.lang.String)|",
+      "|java+method:///org/apache/http/client/methods/HttpPut/getURI()|",
+      "|java+method:///org/apache/http/client/methods/HttpPut/addHeader(java.lang.String,java.lang.String)|",
+      "|java+method:///org/apache/http/client/AuthCache/put(org.apache.http.HttpHost,org.apache.http.auth.AuthScheme)|",
+      "|java+method:///org/sonatype/spice/zapper/internal/Segment/getZFile()|",
+      "|java+constructor:///org/apache/http/client/methods/HttpPut/HttpPut(java.lang.String)|",
+      "|java+constructor:///org/apache/http/impl/client/BasicAuthCache/BasicAuthCache()|",
+      "|java+method:///org/apache/http/client/methods/HttpPut/setEntity(org.apache.http.HttpEntity)|",
+      "|java+method:///org/sonatype/spice/zapper/Path/stringValue()|",
+      "|java+method:///java/net/URI/getPort()|",
+      "|java+method:///java/lang/Class/cast(java.lang.Object)|",
+      "|java+constructor:///org/sonatype/spice/zapper/client/hc4/ZapperEntity/ZapperEntity(org.sonatype.spice.zapper.internal.Payload,java.util.List)|",
+      "|java+constructor:///org/apache/http/impl/auth/BasicScheme/BasicScheme()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/sonatype/spice/zapper/client/hc4/Hc4Client/getParameters()|",
+      "|java+method:///org/sonatype/spice/zapper/internal/TransferIdentifier/stringValue()|",
+      "|java+method:///org/sonatype/spice/zapper/client/hc4/Hc4Client/getRemoteUrl()|",
+      "|java+method:///org/apache/http/client/protocol/HttpClientContext/getAuthCache()|",
+      "|java+method:///org/apache/http/StatusLine/getReasonPhrase()|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///org/sonatype/spice/zapper/internal/SegmentPayload/getSegment()|",
+      "|java+method:///org/sonatype/spice/zapper/client/hc4/Hc4Track/getIdentifier()|",
+      "|java+constructor:///org/sonatype/spice/zapper/client/hc4/ZapperEntity/ZapperEntity(org.sonatype.spice.zapper.internal.Payload)|",
+      "|java+method:///org/apache/http/util/EntityUtils/consume(org.apache.http.HttpEntity)|",
+      "|java+method:///org/apache/http/HttpResponse/getEntity()|"
+    ],
+    "affectedLib": "org.apache.httpcomponents:httpclient:4.3.5",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.sonatype.spice.zapper:spice-zapper:1.2",
+    "coordinatesV2": "org.sonatype.spice.zapper:spice-zapper:1.3",
+    "caller": "|java+method:///org/sonatype/spice/zapper/client/hc4/Hc4ClientBuilder/build()|",
+    "called": "|java+method:///org/apache/http/impl/conn/PoolingHttpClientConnectionManager/setMaxTotal(int)|",
+    "v1Body": [
+      "|java+method:///org/apache/http/impl/conn/tsccm/ThreadSafeClientConnManager/setDefaultMaxPerRoute(int)|",
+      "|java+method:///org/apache/http/params/HttpParams/setParameter(java.lang.String,java.lang.Object)|",
+      "|java+constructor:///org/apache/http/conn/scheme/Scheme/Scheme(java.lang.String,int,org.apache.http.conn.scheme.SchemeSocketFactory)|",
+      "|java+constructor:///org/apache/http/impl/client/DefaultHttpClient/DefaultHttpClient(org.apache.http.conn.ClientConnectionManager)|",
+      "|java+method:///org/apache/http/conn/scheme/PlainSocketFactory/getSocketFactory()|",
+      "|java+method:///org/apache/http/conn/ssl/SSLSocketFactory/getSocketFactory()|",
+      "|java+method:///org/apache/http/impl/client/DefaultHttpClient/setCredentialsProvider(org.apache.http.client.CredentialsProvider)|",
+      "|java+method:///org/apache/http/impl/conn/tsccm/ThreadSafeClientConnManager/setMaxTotal(int)|",
+      "|java+method:///org/sonatype/spice/zapper/Parameters/getMaximumTrackCount()|",
+      "|java+method:///org/apache/http/impl/client/DefaultHttpClient/getParams()|",
+      "|java+method:///org/apache/http/conn/scheme/SchemeRegistry/register(org.apache.http.conn.scheme.Scheme)|",
+      "|java+constructor:///org/apache/http/conn/scheme/SchemeRegistry/SchemeRegistry()|",
+      "|java+constructor:///org/apache/http/impl/conn/tsccm/ThreadSafeClientConnManager/ThreadSafeClientConnManager(org.apache.http.conn.scheme.SchemeRegistry)|",
+      "|java+constructor:///org/sonatype/spice/zapper/client/hc4/Hc4Client/Hc4Client(org.sonatype.spice.zapper.Parameters,java.lang.String,org.apache.http.client.HttpClient)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/http/config/RegistryBuilder/create()|",
+      "|java+method:///org/apache/http/impl/client/HttpClientBuilder/setConnectionManager(org.apache.http.conn.HttpClientConnectionManager)|",
+      "|java+constructor:///org/apache/http/impl/conn/PoolingHttpClientConnectionManager/PoolingHttpClientConnectionManager(org.apache.http.config.Registry)|",
+      "|java+method:///org/apache/http/impl/conn/PoolingHttpClientConnectionManager/setMaxTotal(int)|",
+      "|java+method:///org/sonatype/spice/zapper/Parameters/getMaximumTrackCount()|",
+      "|java+constructor:///org/sonatype/spice/zapper/client/hc4/Hc4Client/Hc4Client(org.sonatype.spice.zapper.Parameters,java.lang.String,org.apache.http.impl.client.CloseableHttpClient,org.apache.http.client.CredentialsProvider)|",
+      "|java+method:///org/apache/http/conn/ssl/SSLConnectionSocketFactory/getSystemSocketFactory()|",
+      "|java+method:///org/apache/http/impl/client/HttpClientBuilder/setUserAgent(java.lang.String)|",
+      "|java+method:///org/apache/http/config/RegistryBuilder/build()|",
+      "|java+method:///org/apache/http/impl/client/HttpClientBuilder/build()|",
+      "|java+method:///org/apache/http/config/RegistryBuilder/register(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/apache/http/impl/conn/PoolingHttpClientConnectionManager/setDefaultMaxPerRoute(int)|",
+      "|java+method:///org/apache/http/impl/client/HttpClientBuilder/create()|",
+      "|java+method:///org/apache/http/impl/client/HttpClientBuilder/setDefaultCredentialsProvider(org.apache.http.client.CredentialsProvider)|",
+      "|java+method:///org/apache/http/conn/socket/PlainConnectionSocketFactory/getSocketFactory()|",
+      "|java+method:///org/apache/http/impl/client/HttpClientBuilder/setProxy(org.apache.http.HttpHost)|"
+    ],
+    "affectedLib": "org.apache.httpcomponents:httpclient:4.3.5",
+    "change": "UPDATED"
+  }
+]

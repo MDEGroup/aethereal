@@ -1,0 +1,160 @@
+[
+  {
+    "coordinatesV1": "org.apache.directory.server:apacheds-core-avl:1.5.5",
+    "coordinatesV2": "org.apache.directory.server:apacheds-core-avl:1.5.4",
+    "caller": "|java+method:///org/apache/directory/server/core/avltree/AvlTreeCursor/get()|",
+    "called": "|java+constructor:///org/apache/directory/server/core/cursor/InvalidCursorPositionException/InvalidCursorPositionException()|",
+    "v1Body": [
+      "|java+method:///org/apache/directory/server/core/avltree/AvlTreeCursor/checkNotClosed(java.lang.String)|",
+      "|java+method:///org/apache/directory/server/core/avltree/LinkedAvlNode/getKey()|",
+      "|java+constructor:///org/apache/directory/server/core/cursor/InvalidCursorPositionException/InvalidCursorPositionException()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/directory/server/core/avltree/AvlTreeCursor/checkNotClosed(java.lang.String)|",
+      "|java+method:///org/apache/directory/server/core/avltree/LinkedAvlNode/getKey()|",
+      "|java+constructor:///org/apache/directory/shared/ldap/cursor/InvalidCursorPositionException/InvalidCursorPositionException()|"
+    ],
+    "affectedLib": "org.apache.directory.server:apacheds-core-cursor:1.5.4",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.apache.directory.server:apacheds-core-avl:1.5.5",
+    "coordinatesV2": "org.apache.directory.server:apacheds-core-avl:1.5.4",
+    "caller": "|java+constructor:///org/apache/directory/server/core/avltree/AvlTreeCursor/AvlTreeCursor(org.apache.directory.server.core.avltree.AvlTree)|",
+    "called": "|java+constructor:///org/apache/directory/server/core/cursor/AbstractCursor/AbstractCursor()|",
+    "v1Body": [
+      "|java+constructor:///org/apache/directory/server/core/cursor/AbstractCursor/AbstractCursor()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/directory/shared/ldap/cursor/AbstractCursor/AbstractCursor()|"
+    ],
+    "affectedLib": "org.apache.directory.server:apacheds-core-cursor:1.5.4",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.apache.directory.server:apacheds-core-avl:1.5.4",
+    "coordinatesV2": "org.apache.directory.server:apacheds-core-avl:1.5.5",
+    "caller": "|java+method:///org/apache/directory/server/core/avltree/AvlTreeCursor/get()|",
+    "called": "|java+constructor:///org/apache/directory/shared/ldap/cursor/InvalidCursorPositionException/InvalidCursorPositionException()|",
+    "v1Body": [
+      "|java+method:///org/apache/directory/server/core/avltree/AvlTreeCursor/checkNotClosed(java.lang.String)|",
+      "|java+method:///org/apache/directory/server/core/avltree/LinkedAvlNode/getKey()|",
+      "|java+constructor:///org/apache/directory/server/core/cursor/InvalidCursorPositionException/InvalidCursorPositionException()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/directory/server/core/avltree/AvlTreeCursor/checkNotClosed(java.lang.String)|",
+      "|java+method:///org/apache/directory/server/core/avltree/LinkedAvlNode/getKey()|",
+      "|java+constructor:///org/apache/directory/shared/ldap/cursor/InvalidCursorPositionException/InvalidCursorPositionException()|"
+    ],
+    "affectedLib": "org.apache.directory.shared:shared-cursor:0.9.15",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.directory.server:apacheds-core-avl:1.5.4",
+    "coordinatesV2": "org.apache.directory.server:apacheds-core-avl:1.5.5",
+    "caller": "|java+constructor:///org/apache/directory/server/core/avltree/AvlTreeCursor/AvlTreeCursor(org.apache.directory.server.core.avltree.AvlTree)|",
+    "called": "|java+constructor:///org/apache/directory/shared/ldap/cursor/AbstractCursor/AbstractCursor()|",
+    "v1Body": [
+      "|java+constructor:///org/apache/directory/server/core/cursor/AbstractCursor/AbstractCursor()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/directory/shared/ldap/cursor/AbstractCursor/AbstractCursor()|"
+    ],
+    "affectedLib": "org.apache.directory.shared:shared-cursor:0.9.15",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.directory.server:apacheds-core-avl:1.5.4",
+    "coordinatesV2": "org.apache.directory.server:apacheds-core-avl:1.5.5",
+    "caller": "|java+method:///org/apache/directory/server/core/avltree/AvlTreeMarshaller/serialize(org.apache.directory.server.core.avltree.AvlTree)|",
+    "called": "|java+method:///org/apache/directory/shared/ldap/util/StringTools/dumpBytes(byte%5B%5D)|",
+    "v1Body": [
+      "|java+method:///org/apache/directory/server/core/avltree/AvlTree/getSize()|",
+      "|java+method:///org/apache/directory/server/core/avltree/AvlTree/getRoot()|",
+      "|java+method:///java/io/DataOutputStream/writeInt(int)|",
+      "|java+method:///java/io/IOException/printStackTrace()|",
+      "|java+method:///java/io/DataOutputStream/close()|",
+      "|java+method:///org/apache/directory/server/core/avltree/AvlTree/isEmpty()|",
+      "|java+method:///java/io/DataOutputStream/flush()|",
+      "|java+constructor:///java/io/ByteArrayOutputStream/ByteArrayOutputStream()|",
+      "|java+method:///java/io/DataOutputStream/writeByte(int)|",
+      "|java+method:///org/apache/directory/server/core/avltree/LinkedAvlNode/setIndex(int)|",
+      "|java+method:///org/apache/directory/server/core/avltree/AvlTree/getFirst()|",
+      "|java+constructor:///java/io/DataOutputStream/DataOutputStream(java.io.OutputStream)|",
+      "|java+method:///java/io/ByteArrayOutputStream/toByteArray()|",
+      "|java+method:///org/apache/directory/server/core/avltree/AvlTreeMarshaller/writeTree(org.apache.directory.server.core.avltree.LinkedAvlNode,java.io.DataOutputStream)|",
+      "|java+method:///org/apache/directory/server/core/avltree/LinkedAvlNode/getIndex()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/directory/server/core/avltree/AvlTree/getSize()|",
+      "|java+method:///org/apache/directory/server/core/avltree/AvlTree/getRoot()|",
+      "|java+method:///java/io/DataOutputStream/writeInt(int)|",
+      "|java+method:///java/io/IOException/printStackTrace()|",
+      "|java+method:///java/io/DataOutputStream/close()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/io/DataOutputStream/flush()|",
+      "|java+method:///org/apache/directory/server/core/avltree/AvlTreeMarshaller/deserialize(byte%5B%5D)|",
+      "|java+constructor:///java/io/ByteArrayOutputStream/ByteArrayOutputStream()|",
+      "|java+method:///java/io/DataOutputStream/writeByte(int)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/apache/directory/server/core/avltree/LinkedAvlNode/setIndex(int)|",
+      "|java+method:///org/apache/directory/server/core/avltree/AvlTree/getFirst()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/io/PrintStream/println(java.lang.String)|",
+      "|java+method:///org/apache/directory/shared/ldap/util/StringTools/dumpBytes(byte%5B%5D)|",
+      "|java+method:///org/apache/directory/server/core/avltree/AvlTree/isEmpty()|",
+      "|java+constructor:///java/io/DataOutputStream/DataOutputStream(java.io.OutputStream)|",
+      "|java+method:///java/io/ByteArrayOutputStream/toByteArray()|",
+      "|java+method:///org/apache/directory/server/core/avltree/AvlTreeMarshaller/writeTree(org.apache.directory.server.core.avltree.LinkedAvlNode,java.io.DataOutputStream)|",
+      "|java+method:///org/apache/directory/server/core/avltree/LinkedAvlNode/getIndex()|"
+    ],
+    "affectedLib": "org.apache.directory.shared:shared-ldap:0.9.15",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.directory.server:apacheds-core-avl:1.5.4",
+    "coordinatesV2": "org.apache.directory.server:apacheds-core-avl:1.5.5",
+    "caller": "|java+method:///org/apache/directory/server/core/avltree/AvlTreeMarshaller/deserialize(byte%5B%5D)|",
+    "called": "|java+method:///org/apache/directory/shared/ldap/util/StringTools/dumpBytes(byte%5B%5D)|",
+    "v1Body": [
+      "|java+method:///java/io/DataInputStream/readByte()|",
+      "|java+constructor:///java/io/IOException/IOException(java.lang.String)|",
+      "|java+method:///java/io/DataInputStream/readInt()|",
+      "|java+constructor:///java/io/ByteArrayInputStream/ByteArrayInputStream(byte%5B%5D)|",
+      "|java+constructor:///org/apache/directory/server/core/avltree/AvlTree/AvlTree(java.util.Comparator)|",
+      "|java+method:///org/apache/directory/server/core/avltree/AvlTree/setLast(org.apache.directory.server.core.avltree.LinkedAvlNode)|",
+      "|java+method:///org/apache/directory/server/core/avltree/AvlTreeMarshaller/deserialize(byte%5B%5D)|",
+      "|java+method:///org/apache/directory/server/core/avltree/AvlTreeMarshaller/readTree(java.io.DataInputStream,org.apache.directory.server.core.avltree.LinkedAvlNode,org.apache.directory.server.core.avltree.LinkedAvlNode%5B%5D)|",
+      "|java+method:///org/apache/directory/server/core/avltree/LinkedAvlNode/setNext(org.apache.directory.server.core.avltree.LinkedAvlNode)|",
+      "|java+method:///org/apache/directory/server/core/avltree/AvlTree/setRoot(org.apache.directory.server.core.avltree.LinkedAvlNode)|",
+      "|java+method:///org/apache/directory/server/core/avltree/LinkedAvlNode/setPrevious(org.apache.directory.server.core.avltree.LinkedAvlNode)|",
+      "|java+constructor:///java/io/DataInputStream/DataInputStream(java.io.InputStream)|",
+      "|java+method:///org/apache/directory/server/core/avltree/AvlTree/setFirst(org.apache.directory.server.core.avltree.LinkedAvlNode)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/io/DataInputStream/readByte()|",
+      "|java+method:///java/lang/Class/getSimpleName()|",
+      "|java+constructor:///java/io/IOException/IOException(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///java/io/DataInputStream/readInt()|",
+      "|java+constructor:///java/io/ByteArrayInputStream/ByteArrayInputStream(byte%5B%5D)|",
+      "|java+method:///org/apache/directory/shared/ldap/util/StringTools/dumpBytes(byte%5B%5D)|",
+      "|java+constructor:///org/apache/directory/server/core/avltree/AvlTree/AvlTree(java.util.Comparator)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///sun/reflect/Reflection/getCallerClass(int)|",
+      "|java+method:///org/apache/directory/server/core/avltree/AvlTree/setLast(org.apache.directory.server.core.avltree.LinkedAvlNode)|",
+      "|java+method:///org/apache/directory/server/core/avltree/AvlTreeMarshaller/deserialize(byte%5B%5D)|",
+      "|java+method:///org/apache/directory/server/core/avltree/AvlTreeMarshaller/readTree(java.io.DataInputStream,org.apache.directory.server.core.avltree.LinkedAvlNode,org.apache.directory.server.core.avltree.LinkedAvlNode%5B%5D)|",
+      "|java+method:///org/apache/directory/server/core/avltree/LinkedAvlNode/setNext(org.apache.directory.server.core.avltree.LinkedAvlNode)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/apache/directory/server/core/avltree/AvlTree/setRoot(org.apache.directory.server.core.avltree.LinkedAvlNode)|",
+      "|java+method:///org/apache/directory/server/core/avltree/LinkedAvlNode/setPrevious(org.apache.directory.server.core.avltree.LinkedAvlNode)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/io/PrintStream/println(java.lang.String)|",
+      "|java+constructor:///java/io/DataInputStream/DataInputStream(java.io.InputStream)|",
+      "|java+method:///org/apache/directory/server/core/avltree/AvlTree/setFirst(org.apache.directory.server.core.avltree.LinkedAvlNode)|"
+    ],
+    "affectedLib": "org.apache.directory.shared:shared-ldap:0.9.15",
+    "change": "UPDATED"
+  }
+]

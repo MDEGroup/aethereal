@@ -1,0 +1,88 @@
+[
+  {
+    "coordinatesV1": "com.netflix.astyanax:astyanax:1.56.24",
+    "coordinatesV2": "com.netflix.astyanax:astyanax:1.56.18",
+    "caller": "|java+initializer:///com/netflix/astyanax/thrift/ThriftSyncConnectionFactoryImpl/ThriftSyncConnectionFactoryImpl$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///java/util/concurrent/Executors/newCachedThreadPool(java.util.concurrent.ThreadFactory)|",
+      "|java+method:///com/google/common/util/concurrent/ThreadFactoryBuilder/build()|",
+      "|java+method:///com/google/common/util/concurrent/ThreadFactoryBuilder/setDaemon(boolean)|",
+      "|java+constructor:///com/google/common/util/concurrent/ThreadFactoryBuilder/ThreadFactoryBuilder()|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.6.4",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.netflix.astyanax:astyanax:1.56.24",
+    "coordinatesV2": "com.netflix.astyanax:astyanax:1.56.18",
+    "caller": "|java+method:///com/netflix/astyanax/AstyanaxContext$Builder/buildKeyspace(com.netflix.astyanax.AstyanaxTypeFactory)|",
+    "called": "|java+method:///org/apache/commons/lang/StringUtils/join(java.util.Collection,java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///com/netflix/astyanax/connectionpool/impl/NodeDiscoveryImpl/NodeDiscoveryImpl(java.lang.String,int,com.google.common.base.Supplier,com.netflix.astyanax.connectionpool.ConnectionPool)|",
+      "|java+method:///com/netflix/astyanax/AstyanaxContext$Builder/createConnectionPool(com.netflix.astyanax.connectionpool.ConnectionFactory)|",
+      "|java+method:///com/netflix/astyanax/AstyanaxConfiguration/getDiscoveryDelayInSeconds()|",
+      "|java+method:///com/netflix/astyanax/connectionpool/ConnectionPoolConfiguration/getLocalDatacenter()|",
+      "|java+constructor:///com/netflix/astyanax/impl/RingDescribeHostSupplier/RingDescribeHostSupplier(com.netflix.astyanax.Keyspace,int,java.lang.String)|",
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|",
+      "|java+method:///com/netflix/astyanax/AstyanaxContext$Builder/getNodeDiscoveryType()|",
+      "|java+method:///org/apache/commons/lang/StringUtils/join(java.util.Collection,java.lang.String)|",
+      "|java+method:///com/netflix/astyanax/AstyanaxTypeFactory/createKeyspace(java.lang.String,com.netflix.astyanax.connectionpool.ConnectionPool,com.netflix.astyanax.AstyanaxConfiguration,com.netflix.astyanax.KeyspaceTracerFactory)|",
+      "|java+method:///java/util/Arrays/asList(java.lang.Object%5B%5D)|",
+      "|java+constructor:///com/netflix/astyanax/AstyanaxContext/AstyanaxContext(com.netflix.astyanax.AstyanaxContext$Builder,java.lang.Object,com.netflix.astyanax.AstyanaxContext$1)|",
+      "|java+method:///com/netflix/astyanax/connectionpool/ConnectionPoolConfiguration/getPort()|",
+      "|java+method:///com/netflix/astyanax/AstyanaxTypeFactory/createConnectionFactory(com.netflix.astyanax.AstyanaxConfiguration,com.netflix.astyanax.connectionpool.ConnectionPoolConfiguration,com.netflix.astyanax.KeyspaceTracerFactory,com.netflix.astyanax.connectionpool.ConnectionPoolMonitor)|",
+      "|java+method:///com/netflix/astyanax/connectionpool/NodeDiscoveryType/ordinal()|",
+      "|java+constructor:///com/netflix/astyanax/impl/FilteringHostSupplier/FilteringHostSupplier(com.google.common.base.Supplier,com.google.common.base.Supplier)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/netflix/astyanax/connectionpool/impl/NodeDiscoveryImpl/NodeDiscoveryImpl(java.lang.String,int,com.google.common.base.Supplier,com.netflix.astyanax.connectionpool.ConnectionPool)|",
+      "|java+method:///com/netflix/astyanax/AstyanaxContext$Builder/createConnectionPool(com.netflix.astyanax.connectionpool.ConnectionFactory)|",
+      "|java+method:///com/netflix/astyanax/connectionpool/ConnectionPoolConfiguration/initialize()|",
+      "|java+method:///com/netflix/astyanax/AstyanaxConfiguration/getDiscoveryDelayInSeconds()|",
+      "|java+method:///com/netflix/astyanax/connectionpool/ConnectionPoolConfiguration/getLocalDatacenter()|",
+      "|java+constructor:///com/netflix/astyanax/impl/RingDescribeHostSupplier/RingDescribeHostSupplier(com.netflix.astyanax.Keyspace,int,java.lang.String)|",
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|",
+      "|java+method:///com/netflix/astyanax/AstyanaxContext$Builder/getNodeDiscoveryType()|",
+      "|java+method:///org/apache/commons/lang/StringUtils/join(java.util.Collection,java.lang.String)|",
+      "|java+method:///com/netflix/astyanax/AstyanaxTypeFactory/createKeyspace(java.lang.String,com.netflix.astyanax.connectionpool.ConnectionPool,com.netflix.astyanax.AstyanaxConfiguration,com.netflix.astyanax.KeyspaceTracerFactory)|",
+      "|java+method:///java/util/Arrays/asList(java.lang.Object%5B%5D)|",
+      "|java+constructor:///com/netflix/astyanax/AstyanaxContext/AstyanaxContext(com.netflix.astyanax.AstyanaxContext$Builder,java.lang.Object,com.netflix.astyanax.AstyanaxContext$1)|",
+      "|java+method:///com/netflix/astyanax/connectionpool/ConnectionPoolConfiguration/getPort()|",
+      "|java+method:///com/netflix/astyanax/AstyanaxTypeFactory/createConnectionFactory(com.netflix.astyanax.AstyanaxConfiguration,com.netflix.astyanax.connectionpool.ConnectionPoolConfiguration,com.netflix.astyanax.KeyspaceTracerFactory,com.netflix.astyanax.connectionpool.ConnectionPoolMonitor)|",
+      "|java+method:///com/netflix/astyanax/connectionpool/NodeDiscoveryType/ordinal()|",
+      "|java+constructor:///com/netflix/astyanax/impl/FilteringHostSupplier/FilteringHostSupplier(com.google.common.base.Supplier,com.google.common.base.Supplier)|"
+    ],
+    "affectedLib": "commons-lang:commons-lang:2.4",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.netflix.astyanax:astyanax:1.56.24",
+    "coordinatesV2": "com.netflix.astyanax:astyanax:1.56.18",
+    "caller": "|java+method:///com/netflix/astyanax/connectionpool/impl/TokenPartitionedTopology/toString()|",
+    "called": "|java+method:///org/apache/commons/lang/StringUtils/join(java.util.Collection,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/util/concurrent/atomic/AtomicReference/get()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///org/apache/commons/lang/StringUtils/join(java.util.Collection,java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/common/collect/Lists/transform(java.util.List,com.google.common.base.Function)|",
+      "|java+constructor:///com/netflix/astyanax/connectionpool/impl/TokenPartitionedTopology$4/TokenPartitionedTopology$4(com.netflix.astyanax.connectionpool.impl.TokenPartitionedTopology)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/util/concurrent/atomic/AtomicReference/get()|",
+      "|java+method:///org/apache/commons/lang/StringUtils/join(java.util.Collection,java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "affectedLib": "commons-lang:commons-lang:2.4",
+    "change": "REMOVED"
+  }
+]

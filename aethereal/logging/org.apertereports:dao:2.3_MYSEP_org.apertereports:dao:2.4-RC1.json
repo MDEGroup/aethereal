@@ -1,0 +1,69 @@
+[
+  {
+    "coordinatesV1": "org.apertereports:dao:2.3",
+    "coordinatesV2": "org.apertereports:dao:2.4-RC1",
+    "caller": "|java+initializer:///org/apertereports/dao/utils/SQLUtil/SQLUtil$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apertereports/dao/utils/SQLUtil/configureSessions()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///org/apertereports/dao/utils/SQLUtil/configureSessions()|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.4.2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apertereports:dao:2.3",
+    "coordinatesV2": "org.apertereports:dao:2.4-RC1",
+    "caller": "|java+method:///org/apertereports/dao/utils/WHS/p()|",
+    "called": "|java+constructor:///org/apertereports/common/exception/ARRuntimeException/ARRuntimeException(java.lang.Exception)|",
+    "v1Body": [
+      "|java+method:///org/hibernate/Transaction/commit()|",
+      "|java+method:///org/hibernate/Session/beginTransaction()|",
+      "|java+method:///org/hibernate/Session/close()|",
+      "|java+method:///org/hibernate/Transaction/rollback()|",
+      "|java+method:///org/apertereports/dao/utils/SQLUtil/getSession()|",
+      "|java+constructor:///org/apertereports/common/exception/AperteReportsRuntimeException/AperteReportsRuntimeException(java.lang.Exception)|",
+      "|java+method:///org/apertereports/dao/utils/WHS/lambda()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apertereports/common/exception/ARRuntimeException/ARRuntimeException(java.lang.Exception)|",
+      "|java+method:///org/hibernate/Transaction/commit()|",
+      "|java+method:///org/hibernate/Session/beginTransaction()|",
+      "|java+method:///org/apertereports/dao/utils/WHS/lambda()|",
+      "|java+method:///org/hibernate/Session/close()|",
+      "|java+method:///org/hibernate/Transaction/rollback()|",
+      "|java+method:///org/apertereports/dao/utils/SQLUtil/getSession()|"
+    ],
+    "affectedLib": "org.apertereports:common:2.4-RC1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apertereports:dao:2.3",
+    "coordinatesV2": "org.apertereports:dao:2.4-RC1",
+    "caller": "|java+method:///org/apertereports/dao/utils/SQLUtil/configureSessions()|",
+    "called": "|java+constructor:///org/apertereports/common/exception/ARRuntimeException/ARRuntimeException(java.lang.Exception)|",
+    "v1Body": [
+      "|java+method:///org/hibernate/SessionFactory/getStatistics()|",
+      "|java+method:///org/apertereports/common/utils/ExceptionUtils/logSevereException(java.lang.Exception)|",
+      "|java+method:///org/hibernate/cfg/Configuration/buildSessionFactory()|",
+      "|java+constructor:///org/hibernate/cfg/AnnotationConfiguration/AnnotationConfiguration()|",
+      "|java+method:///org/hibernate/stat/Statistics/setStatisticsEnabled(boolean)|",
+      "|java+constructor:///org/apertereports/common/exception/AperteReportsRuntimeException/AperteReportsRuntimeException(java.lang.Exception)|",
+      "|java+method:///org/hibernate/cfg/Configuration/configure(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/hibernate/SessionFactory/getStatistics()|",
+      "|java+constructor:///org/apertereports/common/exception/ARRuntimeException/ARRuntimeException(java.lang.Exception)|",
+      "|java+method:///org/hibernate/cfg/Configuration/configure(java.lang.String)|",
+      "|java+method:///org/hibernate/cfg/Configuration/buildSessionFactory()|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///org/hibernate/cfg/AnnotationConfiguration/AnnotationConfiguration()|",
+      "|java+method:///org/hibernate/stat/Statistics/setStatisticsEnabled(boolean)|"
+    ],
+    "affectedLib": "org.apertereports:common:2.4-RC1",
+    "change": "ADDED"
+  }
+]

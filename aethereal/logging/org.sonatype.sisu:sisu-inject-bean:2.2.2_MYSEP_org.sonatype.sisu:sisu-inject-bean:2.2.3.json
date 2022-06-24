@@ -1,0 +1,882 @@
+[
+  {
+    "coordinatesV1": "org.sonatype.sisu:sisu-inject-bean:2.2.2",
+    "coordinatesV2": "org.sonatype.sisu:sisu-inject-bean:2.2.3",
+    "caller": "|java+method:///org/sonatype/inject/Sisu/lookup(java.lang.Class,java.lang.Class)|",
+    "called": "|java+method:///org/sonatype/guice/bean/containers/SisuGuice/lookup(com.google.inject.Key)|",
+    "v1Body": [
+      "|java+method:///org/sonatype/guice/bean/containers/SisuContainer/lookup(com.google.inject.Key)|",
+      "|java+method:///com/google/inject/Key/get(java.lang.Class,java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/sonatype/guice/bean/containers/SisuGuice/lookup(com.google.inject.Key)|",
+      "|java+method:///com/google/inject/Key/get(java.lang.Class,java.lang.Class)|"
+    ],
+    "affectedLib": "org.sonatype.sisu.inject:guice-bean-containers:2.2.3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.sonatype.sisu:sisu-inject-bean:2.2.2",
+    "coordinatesV2": "org.sonatype.sisu:sisu-inject-bean:2.2.3",
+    "caller": "|java+method:///org/sonatype/guice/bean/containers/SisuActivator/addingBundle(org.osgi.framework.Bundle,org.osgi.framework.BundleEvent)|",
+    "called": "|java+constructor:///org/sonatype/guice/bean/containers/SisuActivator$BundleInjector/SisuActivator$BundleInjector(org.osgi.framework.Bundle)|",
+    "v1Body": [
+      "|java+method:///java/util/Dictionary/get(java.lang.Object)|",
+      "|java+method:///org/osgi/framework/Bundle/getHeaders()|",
+      "|java+method:///org/osgi/framework/Bundle/getSymbolicName()|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///org/sonatype/guice/bean/containers/SisuActivator/getBundleInjectorService(org.osgi.framework.Bundle)|",
+      "|java+method:///java/lang/String/contains(java.lang.CharSequence)|",
+      "|java+constructor:///org/sonatype/guice/bean/containers/SisuActivator$BundleInjector/SisuActivator$BundleInjector(org.osgi.framework.Bundle)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/sonatype/guice/bean/containers/SisuActivator/needsScanning(org.osgi.framework.Bundle)|",
+      "|java+method:///org/osgi/framework/Bundle/getSymbolicName()|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///org/sonatype/guice/bean/containers/SisuActivator/getBundleInjectorService(org.osgi.framework.Bundle)|",
+      "|java+method:///org/sonatype/guice/bean/reflect/Logs/warn(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///org/sonatype/guice/bean/containers/SisuActivator$BundleInjector/SisuActivator$BundleInjector(org.osgi.framework.Bundle)|"
+    ],
+    "affectedLib": "org.sonatype.sisu.inject:guice-bean-containers:2.2.3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.sonatype.sisu:sisu-inject-bean:2.2.2",
+    "coordinatesV2": "org.sonatype.sisu:sisu-inject-bean:2.2.3",
+    "caller": "|java+method:///org/sonatype/inject/Sisu/lookup(java.lang.Class,java.lang.String)|",
+    "called": "|java+method:///org/sonatype/guice/bean/containers/SisuGuice/lookup(com.google.inject.Key)|",
+    "v1Body": [
+      "|java+method:///com/google/inject/Key/get(java.lang.Class,java.lang.annotation.Annotation)|",
+      "|java+method:///org/sonatype/guice/bean/containers/SisuContainer/lookup(com.google.inject.Key)|",
+      "|java+method:///com/google/inject/name/Names/named(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/inject/Key/get(java.lang.Class,java.lang.annotation.Annotation)|",
+      "|java+method:///org/sonatype/guice/bean/containers/SisuGuice/lookup(com.google.inject.Key)|",
+      "|java+method:///com/google/inject/name/Names/named(java.lang.String)|"
+    ],
+    "affectedLib": "org.sonatype.sisu.inject:guice-bean-containers:2.2.3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.sonatype.sisu:sisu-inject-bean:2.2.2",
+    "coordinatesV2": "org.sonatype.sisu:sisu-inject-bean:2.2.3",
+    "caller": "|java+method:///org/sonatype/inject/Sisu/inject(java.lang.Object)|",
+    "called": "|java+method:///org/sonatype/guice/bean/containers/SisuGuice/inject(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/sonatype/guice/bean/containers/SisuContainer/inject(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/sonatype/guice/bean/containers/SisuGuice/inject(java.lang.Object)|"
+    ],
+    "affectedLib": "org.sonatype.sisu.inject:guice-bean-containers:2.2.3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.sonatype.sisu:sisu-inject-bean:2.2.2",
+    "coordinatesV2": "org.sonatype.sisu:sisu-inject-bean:2.2.3",
+    "caller": "|java+method:///org/sonatype/guice/bean/containers/InjectedTest/setUp()|",
+    "called": "|java+constructor:///org/sonatype/guice/bean/containers/InjectedTest$SetUpModule/InjectedTest$SetUpModule(org.sonatype.guice.bean.containers.InjectedTest)|",
+    "v1Body": [
+      "|java+constructor:///org/sonatype/guice/bean/containers/InjectedTest$TestModule/InjectedTest$TestModule(org.sonatype.guice.bean.containers.InjectedTest)|",
+      "|java+method:///com/google/inject/Guice/createInjector(com.google.inject.Module%5B%5D)|",
+      "|java+constructor:///org/sonatype/guice/bean/reflect/URLClassSpace/URLClassSpace(java.lang.ClassLoader)|",
+      "|java+constructor:///org/sonatype/guice/bean/binders/SpaceModule/SpaceModule(org.sonatype.guice.bean.reflect.ClassSpace,org.sonatype.inject.BeanScanning)|",
+      "|java+constructor:///org/sonatype/guice/bean/binders/WireModule/WireModule(com.google.inject.Module%5B%5D)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///java/lang/Class/getClassLoader()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/sonatype/guice/bean/containers/InjectedTest/space()|",
+      "|java+constructor:///org/sonatype/guice/bean/containers/InjectedTest$SetUpModule/InjectedTest$SetUpModule(org.sonatype.guice.bean.containers.InjectedTest)|",
+      "|java+method:///org/sonatype/guice/bean/containers/InjectedTest/scanning()|",
+      "|java+method:///com/google/inject/Guice/createInjector(com.google.inject.Module%5B%5D)|",
+      "|java+constructor:///org/sonatype/guice/bean/binders/SpaceModule/SpaceModule(org.sonatype.guice.bean.reflect.ClassSpace,org.sonatype.inject.BeanScanning)|",
+      "|java+constructor:///org/sonatype/guice/bean/binders/WireModule/WireModule(com.google.inject.Module%5B%5D)|"
+    ],
+    "affectedLib": "org.sonatype.sisu.inject:guice-bean-containers:2.2.3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.sonatype.sisu:sisu-inject-bean:2.2.2",
+    "coordinatesV2": "org.sonatype.sisu:sisu-inject-bean:2.2.3",
+    "caller": "|java+method:///org/sonatype/inject/Sisu/lookup(java.lang.Class,java.lang.annotation.Annotation)|",
+    "called": "|java+method:///org/sonatype/guice/bean/containers/SisuGuice/lookup(com.google.inject.Key)|",
+    "v1Body": [
+      "|java+method:///com/google/inject/Key/get(java.lang.Class,java.lang.annotation.Annotation)|",
+      "|java+method:///org/sonatype/guice/bean/containers/SisuContainer/lookup(com.google.inject.Key)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/inject/Key/get(java.lang.Class,java.lang.annotation.Annotation)|",
+      "|java+method:///org/sonatype/guice/bean/containers/SisuGuice/lookup(com.google.inject.Key)|"
+    ],
+    "affectedLib": "org.sonatype.sisu.inject:guice-bean-containers:2.2.3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.sonatype.sisu:sisu-inject-bean:2.2.2",
+    "coordinatesV2": "org.sonatype.sisu:sisu-inject-bean:2.2.3",
+    "caller": "|java+method:///org/sonatype/guice/bean/containers/Main/boot(java.lang.Class,java.lang.String%5B%5D)|",
+    "called": "|java+method:///org/sonatype/guice/bean/containers/Main/boot(java.util.Map,java.lang.String%5B%5D)|",
+    "v1Body": [
+      "|java+method:///com/google/inject/Injector/getInstance(java.lang.Class)|",
+      "|java+method:///org/sonatype/guice/bean/containers/Main/boot(java.util.Properties,java.lang.String%5B%5D)|",
+      "|java+method:///java/lang/System/getProperties()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/sonatype/guice/bean/containers/Main/boot(java.util.Map,java.lang.String%5B%5D)|",
+      "|java+method:///com/google/inject/Injector/getInstance(java.lang.Class)|",
+      "|java+method:///java/lang/System/getProperties()|"
+    ],
+    "affectedLib": "org.sonatype.sisu.inject:guice-bean-containers:2.2.3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.sonatype.sisu:sisu-inject-bean:2.2.2",
+    "coordinatesV2": "org.sonatype.sisu:sisu-inject-bean:2.2.3",
+    "caller": "|java+method:///org/sonatype/guice/bean/containers/InjectedTestCase/setUp()|",
+    "called": "|java+constructor:///org/sonatype/guice/bean/containers/InjectedTestCase$SetUpModule/InjectedTestCase$SetUpModule(org.sonatype.guice.bean.containers.InjectedTestCase)|",
+    "v1Body": [
+      "|java+method:///com/google/inject/Guice/createInjector(com.google.inject.Module%5B%5D)|",
+      "|java+constructor:///org/sonatype/guice/bean/containers/InjectedTestCase$TestModule/InjectedTestCase$TestModule(org.sonatype.guice.bean.containers.InjectedTestCase)|",
+      "|java+constructor:///org/sonatype/guice/bean/reflect/URLClassSpace/URLClassSpace(java.lang.ClassLoader)|",
+      "|java+constructor:///org/sonatype/guice/bean/binders/SpaceModule/SpaceModule(org.sonatype.guice.bean.reflect.ClassSpace,org.sonatype.inject.BeanScanning)|",
+      "|java+constructor:///org/sonatype/guice/bean/binders/WireModule/WireModule(com.google.inject.Module%5B%5D)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///java/lang/Class/getClassLoader()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/inject/Guice/createInjector(com.google.inject.Module%5B%5D)|",
+      "|java+method:///org/sonatype/guice/bean/containers/InjectedTestCase/space()|",
+      "|java+constructor:///org/sonatype/guice/bean/containers/InjectedTestCase$SetUpModule/InjectedTestCase$SetUpModule(org.sonatype.guice.bean.containers.InjectedTestCase)|",
+      "|java+constructor:///org/sonatype/guice/bean/binders/SpaceModule/SpaceModule(org.sonatype.guice.bean.reflect.ClassSpace,org.sonatype.inject.BeanScanning)|",
+      "|java+constructor:///org/sonatype/guice/bean/binders/WireModule/WireModule(com.google.inject.Module%5B%5D)|",
+      "|java+method:///org/sonatype/guice/bean/containers/InjectedTestCase/scanning()|"
+    ],
+    "affectedLib": "org.sonatype.sisu.inject:guice-bean-containers:2.2.3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.sonatype.sisu:sisu-inject-bean:2.2.2",
+    "coordinatesV2": "org.sonatype.sisu:sisu-inject-bean:2.2.3",
+    "caller": "|java+method:///org/sonatype/inject/Sisu/lookup(java.lang.Class)|",
+    "called": "|java+method:///org/sonatype/guice/bean/containers/SisuGuice/lookup(com.google.inject.Key)|",
+    "v1Body": [
+      "|java+method:///org/sonatype/guice/bean/containers/SisuContainer/lookup(com.google.inject.Key)|",
+      "|java+method:///com/google/inject/Key/get(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/sonatype/guice/bean/containers/SisuGuice/lookup(com.google.inject.Key)|",
+      "|java+method:///com/google/inject/Key/get(java.lang.Class)|"
+    ],
+    "affectedLib": "org.sonatype.sisu.inject:guice-bean-containers:2.2.3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.sonatype.sisu:sisu-inject-bean:2.2.2",
+    "coordinatesV2": "org.sonatype.sisu:sisu-inject-bean:2.2.3",
+    "caller": "|java+method:///org/sonatype/guice/bean/containers/Main/main(java.lang.String%5B%5D)|",
+    "called": "|java+method:///org/sonatype/guice/bean/containers/Main/boot(java.util.Map,java.lang.String%5B%5D)|",
+    "v1Body": [
+      "|java+method:///org/sonatype/guice/bean/containers/Main/boot(java.util.Properties,java.lang.String%5B%5D)|",
+      "|java+method:///java/lang/System/getProperties()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/sonatype/guice/bean/containers/Main/boot(java.util.Map,java.lang.String%5B%5D)|",
+      "|java+method:///java/lang/System/getProperties()|"
+    ],
+    "affectedLib": "org.sonatype.sisu.inject:guice-bean-containers:2.2.3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.sonatype.sisu:sisu-inject-bean:2.2.2",
+    "coordinatesV2": "org.sonatype.sisu:sisu-inject-bean:2.2.3",
+    "caller": "|java+method:///org/sonatype/guice/bean/containers/Main/boot(java.util.Map,java.lang.String%5B%5D)|",
+    "called": "|java+constructor:///org/sonatype/guice/bean/containers/Main/Main(java.util.Map,java.lang.String%5B%5D)|",
+    "v1Body": [
+      "|java+method:///org/sonatype/guice/bean/containers/SisuContainer/context(org.sonatype.guice.bean.containers.SisuContext)|",
+      "|java+constructor:///org/sonatype/guice/bean/containers/Main/Main(java.util.Map,java.lang.String%5B%5D)|",
+      "|java+method:///com/google/inject/Guice/createInjector(com.google.inject.Module%5B%5D)|",
+      "|java+method:///org/sonatype/guice/bean/containers/Main/selectScanning(java.util.Map)|",
+      "|java+method:///org/sonatype/guice/bean/containers/Main/wire(org.sonatype.inject.BeanScanning,com.google.inject.Module%5B%5D)|",
+      "|java+constructor:///org/sonatype/guice/bean/containers/SisuStaticContext/SisuStaticContext(com.google.inject.Injector)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/sonatype/guice/bean/containers/Main/Main(java.util.Map,java.lang.String%5B%5D)|",
+      "|java+method:///com/google/inject/Guice/createInjector(com.google.inject.Module%5B%5D)|",
+      "|java+method:///org/sonatype/guice/bean/containers/Main/wire(org.sonatype.inject.BeanScanning,com.google.inject.Module%5B%5D)|",
+      "|java+method:///org/sonatype/guice/bean/containers/Main/selectScanning(java.util.Map)|"
+    ],
+    "affectedLib": "org.sonatype.sisu.inject:guice-bean-containers:2.2.3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.sonatype.sisu:sisu-inject-bean:2.2.2",
+    "coordinatesV2": "org.sonatype.sisu:sisu-inject-bean:2.2.3",
+    "caller": "|java+initializer:///org/sonatype/guice/bean/binders/ParameterKeys/ParameterKeys$initializer|",
+    "called": "|java+method:///com/google/inject/Key/get(java.lang.Class,java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///com/google/inject/Key/get(java.lang.reflect.Type,java.lang.Class)|",
+      "|java+method:///com/google/inject/util/Types/mapOf(java.lang.reflect.Type,java.lang.reflect.Type)|",
+      "|java+method:///com/google/inject/Key/get(java.lang.Class,java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/inject/Key/get(java.lang.Class,java.lang.Class)|"
+    ],
+    "affectedLib": "org.sonatype.sisu:sisu-guice:3.0.3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.sonatype.sisu:sisu-inject-bean:2.2.2",
+    "coordinatesV2": "org.sonatype.sisu:sisu-inject-bean:2.2.3",
+    "caller": "|java+method:///org/sonatype/inject/Sisu/lookup(java.lang.Class,java.lang.Class)|",
+    "called": "|java+method:///com/google/inject/Key/get(java.lang.Class,java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/sonatype/guice/bean/containers/SisuContainer/lookup(com.google.inject.Key)|",
+      "|java+method:///com/google/inject/Key/get(java.lang.Class,java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/sonatype/guice/bean/containers/SisuGuice/lookup(com.google.inject.Key)|",
+      "|java+method:///com/google/inject/Key/get(java.lang.Class,java.lang.Class)|"
+    ],
+    "affectedLib": "org.sonatype.sisu:sisu-guice:3.0.3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.sonatype.sisu:sisu-inject-bean:2.2.2",
+    "coordinatesV2": "org.sonatype.sisu:sisu-inject-bean:2.2.3",
+    "caller": "|java+method:///org/sonatype/guice/bean/binders/DependencyAnalyzer/visit(com.google.inject.spi.LinkedKeyBinding)|",
+    "called": "|java+method:///com/google/inject/Key/getAnnotationType()|",
+    "v1Body": [
+      "|java+method:///com/google/inject/spi/LinkedKeyBinding/getLinkedKey()|",
+      "|java+method:///org/sonatype/guice/bean/binders/DependencyAnalyzer/visit(com.google.inject.spi.LinkedKeyBinding)|",
+      "|java+method:///org/sonatype/guice/bean/binders/DependencyAnalyzer/analyzeImplementation(com.google.inject.TypeLiteral)|",
+      "|java+method:///com/google/inject/Key/getAnnotationType()|",
+      "|java+method:///com/google/inject/Key/getTypeLiteral()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/inject/spi/LinkedKeyBinding/getLinkedKey()|",
+      "|java+method:///org/sonatype/guice/bean/binders/DependencyAnalyzer/visit(com.google.inject.spi.LinkedKeyBinding)|",
+      "|java+method:///com/google/inject/Key/getAnnotationType()|",
+      "|java+method:///org/sonatype/guice/bean/binders/DependencyAnalyzer/analyzeImplementation(com.google.inject.TypeLiteral,boolean)|",
+      "|java+method:///com/google/inject/Key/getTypeLiteral()|"
+    ],
+    "affectedLib": "org.sonatype.sisu:sisu-guice:3.0.3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.sonatype.sisu:sisu-inject-bean:2.2.2",
+    "coordinatesV2": "org.sonatype.sisu:sisu-inject-bean:2.2.3",
+    "caller": "|java+method:///org/sonatype/inject/Sisu/lookup(java.lang.Class,java.lang.String)|",
+    "called": "|java+method:///com/google/inject/name/Names/named(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///com/google/inject/Key/get(java.lang.Class,java.lang.annotation.Annotation)|",
+      "|java+method:///org/sonatype/guice/bean/containers/SisuContainer/lookup(com.google.inject.Key)|",
+      "|java+method:///com/google/inject/name/Names/named(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/inject/Key/get(java.lang.Class,java.lang.annotation.Annotation)|",
+      "|java+method:///org/sonatype/guice/bean/containers/SisuGuice/lookup(com.google.inject.Key)|",
+      "|java+method:///com/google/inject/name/Names/named(java.lang.String)|"
+    ],
+    "affectedLib": "org.sonatype.sisu:sisu-guice:3.0.3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.sonatype.sisu:sisu-inject-bean:2.2.2",
+    "coordinatesV2": "org.sonatype.sisu:sisu-inject-bean:2.2.3",
+    "caller": "|java+method:///org/sonatype/guice/bean/containers/InjectedTest/setUp()|",
+    "called": "|java+method:///com/google/inject/Guice/createInjector(com.google.inject.Module%5B%5D)|",
+    "v1Body": [
+      "|java+constructor:///org/sonatype/guice/bean/containers/InjectedTest$TestModule/InjectedTest$TestModule(org.sonatype.guice.bean.containers.InjectedTest)|",
+      "|java+method:///com/google/inject/Guice/createInjector(com.google.inject.Module%5B%5D)|",
+      "|java+constructor:///org/sonatype/guice/bean/reflect/URLClassSpace/URLClassSpace(java.lang.ClassLoader)|",
+      "|java+constructor:///org/sonatype/guice/bean/binders/SpaceModule/SpaceModule(org.sonatype.guice.bean.reflect.ClassSpace,org.sonatype.inject.BeanScanning)|",
+      "|java+constructor:///org/sonatype/guice/bean/binders/WireModule/WireModule(com.google.inject.Module%5B%5D)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///java/lang/Class/getClassLoader()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/sonatype/guice/bean/containers/InjectedTest/space()|",
+      "|java+constructor:///org/sonatype/guice/bean/containers/InjectedTest$SetUpModule/InjectedTest$SetUpModule(org.sonatype.guice.bean.containers.InjectedTest)|",
+      "|java+method:///org/sonatype/guice/bean/containers/InjectedTest/scanning()|",
+      "|java+method:///com/google/inject/Guice/createInjector(com.google.inject.Module%5B%5D)|",
+      "|java+constructor:///org/sonatype/guice/bean/binders/SpaceModule/SpaceModule(org.sonatype.guice.bean.reflect.ClassSpace,org.sonatype.inject.BeanScanning)|",
+      "|java+constructor:///org/sonatype/guice/bean/binders/WireModule/WireModule(com.google.inject.Module%5B%5D)|"
+    ],
+    "affectedLib": "org.sonatype.sisu:sisu-guice:3.0.3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.sonatype.sisu:sisu-inject-bean:2.2.2",
+    "coordinatesV2": "org.sonatype.sisu:sisu-inject-bean:2.2.3",
+    "caller": "|java+method:///org/sonatype/inject/Sisu/lookup(java.lang.Class,java.lang.annotation.Annotation)|",
+    "called": "|java+method:///com/google/inject/Key/get(java.lang.Class,java.lang.annotation.Annotation)|",
+    "v1Body": [
+      "|java+method:///com/google/inject/Key/get(java.lang.Class,java.lang.annotation.Annotation)|",
+      "|java+method:///org/sonatype/guice/bean/containers/SisuContainer/lookup(com.google.inject.Key)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/inject/Key/get(java.lang.Class,java.lang.annotation.Annotation)|",
+      "|java+method:///org/sonatype/guice/bean/containers/SisuGuice/lookup(com.google.inject.Key)|"
+    ],
+    "affectedLib": "org.sonatype.sisu:sisu-guice:3.0.3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.sonatype.sisu:sisu-inject-bean:2.2.2",
+    "coordinatesV2": "org.sonatype.sisu:sisu-inject-bean:2.2.3",
+    "caller": "|java+method:///org/sonatype/guice/bean/containers/InjectedTestCase/setUp()|",
+    "called": "|java+method:///com/google/inject/Guice/createInjector(com.google.inject.Module%5B%5D)|",
+    "v1Body": [
+      "|java+method:///com/google/inject/Guice/createInjector(com.google.inject.Module%5B%5D)|",
+      "|java+constructor:///org/sonatype/guice/bean/containers/InjectedTestCase$TestModule/InjectedTestCase$TestModule(org.sonatype.guice.bean.containers.InjectedTestCase)|",
+      "|java+constructor:///org/sonatype/guice/bean/reflect/URLClassSpace/URLClassSpace(java.lang.ClassLoader)|",
+      "|java+constructor:///org/sonatype/guice/bean/binders/SpaceModule/SpaceModule(org.sonatype.guice.bean.reflect.ClassSpace,org.sonatype.inject.BeanScanning)|",
+      "|java+constructor:///org/sonatype/guice/bean/binders/WireModule/WireModule(com.google.inject.Module%5B%5D)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///java/lang/Class/getClassLoader()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/inject/Guice/createInjector(com.google.inject.Module%5B%5D)|",
+      "|java+method:///org/sonatype/guice/bean/containers/InjectedTestCase/space()|",
+      "|java+constructor:///org/sonatype/guice/bean/containers/InjectedTestCase$SetUpModule/InjectedTestCase$SetUpModule(org.sonatype.guice.bean.containers.InjectedTestCase)|",
+      "|java+constructor:///org/sonatype/guice/bean/binders/SpaceModule/SpaceModule(org.sonatype.guice.bean.reflect.ClassSpace,org.sonatype.inject.BeanScanning)|",
+      "|java+constructor:///org/sonatype/guice/bean/binders/WireModule/WireModule(com.google.inject.Module%5B%5D)|",
+      "|java+method:///org/sonatype/guice/bean/containers/InjectedTestCase/scanning()|"
+    ],
+    "affectedLib": "org.sonatype.sisu:sisu-guice:3.0.3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.sonatype.sisu:sisu-inject-bean:2.2.2",
+    "coordinatesV2": "org.sonatype.sisu:sisu-inject-bean:2.2.3",
+    "caller": "|java+method:///org/sonatype/guice/bean/binders/DependencyAnalyzer/analyzeDependencies(java.util.Collection)|",
+    "called": "|java+method:///com/google/inject/Key/hasAttributes()|",
+    "v1Body": [
+      "|java+method:///java/lang/Class/getSimpleName()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///com/google/inject/Key/hasAttributes()|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///com/google/inject/TypeLiteral/getRawType()|",
+      "|java+method:///org/sonatype/guice/bean/reflect/TypeParameters/get(com.google.inject.TypeLiteral,int)|",
+      "|java+method:///java/util/Collection/iterator()|",
+      "|java+method:///java/util/Set/add(java.lang.Object)|",
+      "|java+method:///com/google/inject/Key/getTypeLiteral()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///com/google/inject/spi/Dependency/getKey()|",
+      "|java+method:///com/google/inject/Key/getAnnotationType()|",
+      "|java+method:///com/google/inject/Key/ofType(com.google.inject.TypeLiteral)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/sonatype/guice/bean/binders/DependencyAnalyzer/requireKey(com.google.inject.Key)|",
+      "|java+method:///java/lang/Class/getSimpleName()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///com/google/inject/Key/hasAttributes()|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///com/google/inject/Key/getAnnotationType()|",
+      "|java+method:///java/util/Collection/iterator()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///com/google/inject/spi/Dependency/getKey()|"
+    ],
+    "affectedLib": "org.sonatype.sisu:sisu-guice:3.0.3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.sonatype.sisu:sisu-inject-bean:2.2.2",
+    "coordinatesV2": "org.sonatype.sisu:sisu-inject-bean:2.2.3",
+    "caller": "|java+method:///org/sonatype/guice/bean/binders/WireModule/configure(com.google.inject.Binder)|",
+    "called": "|java+method:///com/google/inject/spi/Elements/getElements(com.google.inject.Module%5B%5D)|",
+    "v1Body": [
+      "|java+constructor:///org/sonatype/guice/bean/binders/ElementAnalyzer/ElementAnalyzer(com.google.inject.Binder)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/sonatype/guice/bean/binders/ElementAnalyzer/apply(org.sonatype.guice.bean.binders.Wiring)|",
+      "|java+method:///com/google/inject/spi/Element/acceptVisitor(com.google.inject.spi.ElementVisitor)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///org/sonatype/guice/bean/binders/WireModule/wiring(com.google.inject.Binder)|",
+      "|java+method:///com/google/inject/spi/Elements/getElements(com.google.inject.Module%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/sonatype/guice/bean/binders/ElementAnalyzer/apply(org.sonatype.guice.bean.binders.Wiring)|",
+      "|java+method:///com/google/inject/spi/Element/acceptVisitor(com.google.inject.spi.ElementVisitor)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/sonatype/guice/bean/binders/WireModule/getAnalyzer(com.google.inject.Binder)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///org/sonatype/guice/bean/binders/WireModule/wiring(com.google.inject.Binder)|",
+      "|java+method:///com/google/inject/spi/Elements/getElements(com.google.inject.Module%5B%5D)|"
+    ],
+    "affectedLib": "org.sonatype.sisu:sisu-guice:3.0.3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.sonatype.sisu:sisu-inject-bean:2.2.2",
+    "coordinatesV2": "org.sonatype.sisu:sisu-inject-bean:2.2.3",
+    "caller": "|java+method:///org/sonatype/guice/bean/locators/InjectorPublisher/subscribe(com.google.inject.TypeLiteral,org.sonatype.guice.bean.locators.spi.BindingSubscriber)|",
+    "called": "|java+method:///com/google/inject/TypeLiteral/get(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///com/google/inject/TypeLiteral/get(java.lang.Class)|",
+      "|java+method:///org/sonatype/guice/bean/locators/InjectorPublisher/getImplicitBinding(com.google.inject.TypeLiteral,java.lang.Class)|",
+      "|java+method:///org/sonatype/guice/bean/locators/InjectorPublisher/publishBindings(com.google.inject.TypeLiteral,org.sonatype.guice.bean.locators.spi.BindingSubscriber,com.google.inject.TypeLiteral)|",
+      "|java+method:///org/sonatype/guice/bean/reflect/ClassSpace/loadedClass(java.lang.Class)|",
+      "|java+method:///com/google/inject/TypeLiteral/getRawType()|",
+      "|java+method:///org/sonatype/guice/bean/locators/InjectorPublisher/isVisible(com.google.inject.Binding)|",
+      "|java+method:///com/google/inject/TypeLiteral/getType()|",
+      "|java+method:///org/sonatype/guice/bean/locators/spi/BindingSubscriber/add(com.google.inject.Binding,int)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/inject/TypeLiteral/get(java.lang.Class)|",
+      "|java+method:///org/sonatype/guice/bean/locators/InjectorPublisher/publishBindings(com.google.inject.TypeLiteral,org.sonatype.guice.bean.locators.spi.BindingSubscriber,com.google.inject.TypeLiteral)|",
+      "|java+method:///com/google/inject/TypeLiteral/getRawType()|",
+      "|java+method:///com/google/inject/TypeLiteral/getType()|"
+    ],
+    "affectedLib": "org.sonatype.sisu:sisu-guice:3.0.3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.sonatype.sisu:sisu-inject-bean:2.2.2",
+    "coordinatesV2": "org.sonatype.sisu:sisu-inject-bean:2.2.3",
+    "caller": "|java+method:///org/sonatype/guice/bean/inject/BeanListener/hear(com.google.inject.TypeLiteral,com.google.inject.spi.TypeEncounter)|",
+    "called": "|java+constructor:///com/google/inject/ProvisionException/ProvisionException(java.lang.String,java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///org/sonatype/guice/bean/inject/BeanBinder/bindBean(com.google.inject.TypeLiteral,com.google.inject.spi.TypeEncounter)|",
+      "|java+method:///com/google/inject/spi/TypeEncounter/addError(java.lang.Throwable)|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/sonatype/guice/bean/reflect/BeanProperties/iterator()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/sonatype/guice/bean/reflect/BeanProperty/getName()|",
+      "|java+method:///com/google/inject/TypeLiteral/getRawType()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+constructor:///java/util/HashSet/HashSet()|",
+      "|java+method:///java/util/Set/add(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///com/google/inject/spi/TypeEncounter/register(com.google.inject.MembersInjector)|",
+      "|java+constructor:///org/sonatype/guice/bean/reflect/BeanProperties/BeanProperties(java.lang.Class)|",
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+constructor:///org/sonatype/guice/bean/inject/BeanInjector/BeanInjector(java.util.List)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/sonatype/guice/bean/inject/PropertyBinder/bindProperty(org.sonatype.guice.bean.reflect.BeanProperty)|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+constructor:///com/google/inject/ProvisionException/ProvisionException(java.lang.String,java.lang.Throwable)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/sonatype/guice/bean/inject/BeanBinder/bindBean(com.google.inject.TypeLiteral,com.google.inject.spi.TypeEncounter)|",
+      "|java+method:///com/google/inject/spi/TypeEncounter/addError(java.lang.Throwable)|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/sonatype/guice/bean/reflect/BeanProperties/iterator()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/sonatype/guice/bean/reflect/BeanProperty/getName()|",
+      "|java+method:///com/google/inject/TypeLiteral/getRawType()|",
+      "|java+method:///java/util/Set/remove(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+constructor:///java/util/HashSet/HashSet()|",
+      "|java+method:///java/util/Set/add(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///com/google/inject/spi/TypeEncounter/register(com.google.inject.MembersInjector)|",
+      "|java+constructor:///org/sonatype/guice/bean/reflect/BeanProperties/BeanProperties(java.lang.Class)|",
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+constructor:///org/sonatype/guice/bean/inject/BeanInjector/BeanInjector(java.util.List)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/sonatype/guice/bean/inject/PropertyBinder/bindProperty(org.sonatype.guice.bean.reflect.BeanProperty)|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+constructor:///com/google/inject/ProvisionException/ProvisionException(java.lang.String,java.lang.Throwable)|"
+    ],
+    "affectedLib": "org.sonatype.sisu:sisu-guice:3.0.3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.sonatype.sisu:sisu-inject-bean:2.2.2",
+    "coordinatesV2": "org.sonatype.sisu:sisu-inject-bean:2.2.3",
+    "caller": "|java+method:///org/sonatype/guice/bean/binders/DependencyVerifier/visit(com.google.inject.spi.LinkedKeyBinding)|",
+    "called": "|java+method:///com/google/inject/Key/getAnnotationType()|",
+    "v1Body": [
+      "|java+method:///com/google/inject/spi/LinkedKeyBinding/getLinkedKey()|",
+      "|java+method:///org/sonatype/guice/bean/binders/DependencyVerifier/visit(com.google.inject.spi.LinkedKeyBinding)|",
+      "|java+method:///org/sonatype/guice/bean/binders/DependencyVerifier/verify(com.google.inject.TypeLiteral)|",
+      "|java+method:///com/google/inject/Key/getTypeLiteral()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/inject/spi/LinkedKeyBinding/getLinkedKey()|",
+      "|java+method:///org/sonatype/guice/bean/binders/DependencyVerifier/verifyImplementation(com.google.inject.TypeLiteral)|",
+      "|java+method:///com/google/inject/Key/getAnnotationType()|",
+      "|java+method:///org/sonatype/guice/bean/binders/DependencyVerifier/visit(com.google.inject.spi.LinkedKeyBinding)|",
+      "|java+method:///com/google/inject/Key/getTypeLiteral()|"
+    ],
+    "affectedLib": "org.sonatype.sisu:sisu-guice:3.0.3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.sonatype.sisu:sisu-inject-bean:2.2.2",
+    "coordinatesV2": "org.sonatype.sisu:sisu-inject-bean:2.2.3",
+    "caller": "|java+method:///org/sonatype/guice/bean/binders/ElementAnalyzer/visit(com.google.inject.Binding)|",
+    "called": "|java+method:///com/google/inject/Key/getAnnotationType()|",
+    "v1Body": [
+      "|java+method:///com/google/inject/Binding/acceptTargetVisitor(com.google.inject.spi.BindingTargetVisitor)|",
+      "|java+method:///com/google/inject/Binding/getKey()|",
+      "|java+method:///com/google/inject/Binding/applyTo(com.google.inject.Binder)|",
+      "|java+method:///com/google/inject/Key/equals(java.lang.Object)|",
+      "|java+method:///java/util/Set/contains(java.lang.Object)|",
+      "|java+method:///org/sonatype/guice/bean/binders/ElementAnalyzer/visit(com.google.inject.Binding)|",
+      "|java+method:///java/lang/Boolean/booleanValue()|",
+      "|java+method:///org/sonatype/guice/bean/binders/ElementAnalyzer/mergeParameters(com.google.inject.Binding)|",
+      "|java+method:///java/util/Set/add(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/inject/Binding/acceptTargetVisitor(com.google.inject.spi.BindingTargetVisitor)|",
+      "|java+method:///com/google/inject/Binding/getKey()|",
+      "|java+method:///com/google/inject/Binding/applyTo(com.google.inject.Binder)|",
+      "|java+method:///org/sonatype/guice/bean/reflect/Logs/debug(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/util/Set/contains(java.lang.Object)|",
+      "|java+method:///org/sonatype/guice/bean/binders/ElementAnalyzer/visit(com.google.inject.Binding)|",
+      "|java+method:///com/google/inject/Key/getAnnotationType()|",
+      "|java+method:///java/lang/Boolean/booleanValue()|",
+      "|java+method:///org/sonatype/guice/bean/binders/ElementAnalyzer/mergeParameters(com.google.inject.Binding)|",
+      "|java+method:///java/util/Set/add(java.lang.Object)|"
+    ],
+    "affectedLib": "org.sonatype.sisu:sisu-guice:3.0.3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.sonatype.sisu:sisu-inject-bean:2.2.2",
+    "coordinatesV2": "org.sonatype.sisu:sisu-inject-bean:2.2.3",
+    "caller": "|java+method:///org/sonatype/guice/bean/locators/DefaultBeanLocator/locate(com.google.inject.Key)|",
+    "called": "|java+method:///com/google/inject/Key/getAnnotationType()|",
+    "v1Body": [
+      "|java+constructor:///org/sonatype/guice/bean/locators/LocatedBeans/LocatedBeans(com.google.inject.Key,org.sonatype.guice.bean.locators.RankedBindings)|",
+      "|java+method:///com/google/inject/Key/getTypeLiteral()|",
+      "|java+method:///org/sonatype/guice/bean/locators/DefaultBeanLocator/bindingsForType(com.google.inject.TypeLiteral)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/sonatype/guice/bean/locators/LocatedBeans/LocatedBeans(com.google.inject.Key,org.sonatype.guice.bean.locators.RankedBindings,org.sonatype.guice.bean.locators.ImplicitBindings)|",
+      "|java+method:///org/sonatype/guice/bean/reflect/TypeParameters/isImplicit(com.google.inject.TypeLiteral)|",
+      "|java+method:///com/google/inject/Key/getAnnotationType()|",
+      "|java+method:///com/google/inject/Key/getTypeLiteral()|",
+      "|java+method:///org/sonatype/guice/bean/locators/DefaultBeanLocator/bindingsForType(com.google.inject.TypeLiteral)|"
+    ],
+    "affectedLib": "org.sonatype.sisu:sisu-guice:3.0.3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.sonatype.sisu:sisu-inject-bean:2.2.2",
+    "coordinatesV2": "org.sonatype.sisu:sisu-inject-bean:2.2.3",
+    "caller": "|java+method:///org/sonatype/guice/bean/binders/ElementAnalyzer/apply(org.sonatype.guice.bean.binders.Wiring)|",
+    "called": "|java+method:///com/google/inject/Key/getAnnotationType()|",
+    "v1Body": [
+      "|java+method:///java/util/Set/addAll(java.util.Collection)|",
+      "|java+method:///org/sonatype/guice/bean/binders/ElementAnalyzer/apply(org.sonatype.guice.bean.binders.Wiring)|",
+      "|java+method:///java/util/Set/removeAll(java.util.Collection)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/Set/iterator()|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///org/sonatype/guice/bean/binders/DependencyAnalyzer/getRequiredKeys()|",
+      "|java+method:///org/sonatype/guice/bean/binders/ElementAnalyzer/bindParameters(java.util.Set)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/sonatype/guice/bean/binders/Wiring/wire(com.google.inject.Key)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/sonatype/guice/bean/binders/ElementAnalyzer/apply(org.sonatype.guice.bean.binders.Wiring)|",
+      "|java+method:///org/sonatype/guice/bean/binders/DependencyAnalyzer/findMissingKeys(java.util.Set)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+constructor:///org/sonatype/guice/bean/binders/MergedProperties/MergedProperties(java.util.List)|",
+      "|java+method:///org/sonatype/guice/bean/binders/ElementAnalyzer/wireParameters(com.google.inject.Key,java.util.Map)|",
+      "|java+method:///org/sonatype/guice/bean/binders/ElementAnalyzer/ignoreKeys(java.util.Set)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/sonatype/guice/bean/binders/Wiring/wire(com.google.inject.Key)|",
+      "|java+method:///com/google/inject/Key/getAnnotationType()|",
+      "|java+method:///java/util/Set/iterator()|"
+    ],
+    "affectedLib": "org.sonatype.sisu:sisu-guice:3.0.3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.sonatype.sisu:sisu-inject-bean:2.2.2",
+    "coordinatesV2": "org.sonatype.sisu:sisu-inject-bean:2.2.3",
+    "caller": "|java+constructor:///org/sonatype/guice/bean/locators/WildcardKey/WildcardKey(java.lang.Class,java.lang.annotation.Annotation)|",
+    "called": "|java+constructor:///com/google/inject/Key/Key(java.lang.annotation.Annotation)|",
+    "v1Body": [
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+method:///com/google/inject/name/Names/named(java.lang.String)|",
+      "|java+constructor:///com/google/inject/Key/Key(java.lang.annotation.Annotation)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/sonatype/guice/bean/locators/WildcardKey$Wrapped/WildcardKey$Wrapped(java.lang.Class)|",
+      "|java+constructor:///com/google/inject/Key/Key(java.lang.annotation.Annotation)|"
+    ],
+    "affectedLib": "org.sonatype.sisu:sisu-guice:3.0.3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.sonatype.sisu:sisu-inject-bean:2.2.2",
+    "coordinatesV2": "org.sonatype.sisu:sisu-inject-bean:2.2.3",
+    "caller": "|java+method:///org/sonatype/guice/bean/binders/QualifiedTypeBinder/bindProviderType(java.lang.Class)|",
+    "called": "|java+method:///com/google/inject/Key/ofType(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/sonatype/guice/bean/binders/QualifiedTypeBinder/getSuperTypeParameters(java.lang.Class,java.lang.Class)|",
+      "|java+method:///org/sonatype/guice/bean/binders/QualifiedTypeBinder/getBindingName(java.lang.Class)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///com/google/inject/binder/LinkedBindingBuilder/toProvider(java.lang.Class)|",
+      "|java+method:///java/lang/Class/getAnnotation(java.lang.Class)|",
+      "|java+method:///com/google/inject/binder/ScopedBindingBuilder/in(com.google.inject.Scope)|",
+      "|java+method:///java/lang/Class/isAnnotationPresent(java.lang.Class)|",
+      "|java+method:///com/google/inject/Key/ofType(java.lang.Class)|",
+      "|java+method:///org/sonatype/guice/bean/binders/QualifiedTypeBinder/getBindingKey(com.google.inject.TypeLiteral,java.lang.annotation.Annotation)|",
+      "|java+method:///com/google/inject/binder/LinkedBindingBuilder/to(com.google.inject.Key)|",
+      "|java+method:///com/google/inject/Binder/addError(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///com/google/inject/binder/ScopedBindingBuilder/asEagerSingleton()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///com/google/inject/Binder/bind(com.google.inject.Key)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///javax/enterprise/inject/Typed/value()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/sonatype/guice/bean/binders/QualifiedTypeBinder/getSuperTypeParameters(java.lang.Class,java.lang.Class)|",
+      "|java+method:///org/sonatype/guice/bean/binders/QualifiedTypeBinder/getBindingTypes(java.lang.Class)|",
+      "|java+method:///org/sonatype/guice/bean/binders/QualifiedTypeBinder/getBindingName(java.lang.Class)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///com/google/inject/binder/LinkedBindingBuilder/toProvider(java.lang.Class)|",
+      "|java+method:///com/google/inject/binder/ScopedBindingBuilder/in(com.google.inject.Scope)|",
+      "|java+method:///java/lang/Class/isAnnotationPresent(java.lang.Class)|",
+      "|java+method:///com/google/inject/Key/ofType(java.lang.Class)|",
+      "|java+method:///org/sonatype/guice/bean/binders/QualifiedTypeBinder/getBindingKey(com.google.inject.TypeLiteral,java.lang.annotation.Annotation)|",
+      "|java+method:///com/google/inject/binder/LinkedBindingBuilder/to(com.google.inject.Key)|",
+      "|java+method:///com/google/inject/Binder/addError(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///com/google/inject/binder/ScopedBindingBuilder/asEagerSingleton()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///com/google/inject/Binder/bind(com.google.inject.Key)|"
+    ],
+    "affectedLib": "org.sonatype.sisu:sisu-guice:3.0.3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.sonatype.sisu:sisu-inject-bean:2.2.2",
+    "coordinatesV2": "org.sonatype.sisu:sisu-inject-bean:2.2.3",
+    "caller": "|java+method:///org/sonatype/guice/bean/binders/DependencyAnalyzer/visit(com.google.inject.spi.ProviderKeyBinding)|",
+    "called": "|java+method:///com/google/inject/Key/getAnnotationType()|",
+    "v1Body": [
+      "|java+method:///org/sonatype/guice/bean/binders/DependencyAnalyzer/visit(com.google.inject.spi.ProviderKeyBinding)|",
+      "|java+method:///com/google/inject/spi/ProviderKeyBinding/getProviderKey()|",
+      "|java+method:///org/sonatype/guice/bean/binders/DependencyAnalyzer/analyzeImplementation(com.google.inject.TypeLiteral)|",
+      "|java+method:///com/google/inject/Key/getAnnotationType()|",
+      "|java+method:///com/google/inject/Key/getTypeLiteral()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/sonatype/guice/bean/binders/DependencyAnalyzer/visit(com.google.inject.spi.ProviderKeyBinding)|",
+      "|java+method:///com/google/inject/spi/ProviderKeyBinding/getProviderKey()|",
+      "|java+method:///com/google/inject/Key/getAnnotationType()|",
+      "|java+method:///org/sonatype/guice/bean/binders/DependencyAnalyzer/analyzeImplementation(com.google.inject.TypeLiteral,boolean)|",
+      "|java+method:///com/google/inject/Key/getTypeLiteral()|"
+    ],
+    "affectedLib": "org.sonatype.sisu:sisu-guice:3.0.3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.sonatype.sisu:sisu-inject-bean:2.2.2",
+    "coordinatesV2": "org.sonatype.sisu:sisu-inject-bean:2.2.3",
+    "caller": "|java+method:///org/sonatype/guice/bean/binders/DependencyAnalyzer/visit(com.google.inject.spi.ProviderInstanceBinding)|",
+    "called": "|java+method:///com/google/inject/TypeLiteral/get(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///com/google/inject/TypeLiteral/get(java.lang.Class)|",
+      "|java+method:///org/sonatype/guice/bean/reflect/DeferredProvider/getImplementationClass()|",
+      "|java+method:///org/sonatype/guice/bean/binders/DependencyAnalyzer/analyzeDependencies(java.util.Collection)|",
+      "|java+method:///com/google/inject/spi/ProviderInstanceBinding/getProviderInstance()|",
+      "|java+method:///com/google/inject/spi/ProviderInstanceBinding/getDependencies()|",
+      "|java+method:///org/sonatype/guice/bean/binders/DependencyAnalyzer/analyzeImplementation(com.google.inject.TypeLiteral)|",
+      "|java+method:///java/lang/Boolean/valueOf(boolean)|",
+      "|java+method:///org/sonatype/guice/bean/reflect/DeferredClass/load()|",
+      "|java+method:///org/sonatype/guice/bean/binders/DependencyAnalyzer/visit(com.google.inject.spi.ProviderInstanceBinding)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/inject/TypeLiteral/get(java.lang.Class)|",
+      "|java+method:///org/sonatype/guice/bean/reflect/DeferredProvider/getImplementationClass()|",
+      "|java+method:///org/sonatype/guice/bean/binders/DependencyAnalyzer/analyzeDependencies(java.util.Collection)|",
+      "|java+method:///com/google/inject/spi/ProviderInstanceBinding/getProviderInstance()|",
+      "|java+method:///com/google/inject/spi/ProviderInstanceBinding/getDependencies()|",
+      "|java+method:///java/lang/Boolean/valueOf(boolean)|",
+      "|java+method:///org/sonatype/guice/bean/binders/DependencyAnalyzer/analyzeImplementation(com.google.inject.TypeLiteral,boolean)|",
+      "|java+method:///org/sonatype/guice/bean/reflect/DeferredClass/load()|",
+      "|java+method:///org/sonatype/guice/bean/binders/DependencyAnalyzer/visit(com.google.inject.spi.ProviderInstanceBinding)|"
+    ],
+    "affectedLib": "org.sonatype.sisu:sisu-guice:3.0.3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.sonatype.sisu:sisu-inject-bean:2.2.2",
+    "coordinatesV2": "org.sonatype.sisu:sisu-inject-bean:2.2.3",
+    "caller": "|java+method:///org/sonatype/guice/bean/binders/LocatorWiring/bindListImport(com.google.inject.Key)|",
+    "called": "|java+method:///com/google/inject/Key/get(com.google.inject.TypeLiteral,java.lang.Class)|",
+    "v1Body": [
+      "|java+constructor:///org/sonatype/guice/bean/binders/BeanListProvider/BeanListProvider(com.google.inject.Key)|",
+      "|java+method:///com/google/inject/binder/LinkedBindingBuilder/toProvider(com.google.inject.Provider)|",
+      "|java+method:///com/google/inject/Binder/bind(com.google.inject.Key)|",
+      "|java+method:///com/google/inject/Key/get(com.google.inject.TypeLiteral)|",
+      "|java+method:///com/google/inject/Key/getAnnotation()|",
+      "|java+method:///org/sonatype/guice/bean/reflect/TypeParameters/get(com.google.inject.TypeLiteral)|",
+      "|java+method:///com/google/inject/Key/getTypeLiteral()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/inject/Key/get(com.google.inject.TypeLiteral,java.lang.Class)|",
+      "|java+constructor:///org/sonatype/guice/bean/binders/BeanEntryProvider/BeanEntryProvider(com.google.inject.Key)|",
+      "|java+method:///java/lang/Class/isAnnotationPresent(java.lang.Class)|",
+      "|java+constructor:///org/sonatype/guice/bean/binders/BeanListProvider/BeanListProvider(com.google.inject.Key)|",
+      "|java+method:///com/google/inject/binder/LinkedBindingBuilder/toProvider(com.google.inject.Provider)|",
+      "|java+method:///com/google/inject/Binder/bind(com.google.inject.Key)|",
+      "|java+method:///com/google/inject/TypeLiteral/getRawType()|",
+      "|java+method:///com/google/inject/Key/get(com.google.inject.TypeLiteral)|",
+      "|java+method:///com/google/inject/Key/getAnnotation()|",
+      "|java+method:///org/sonatype/guice/bean/reflect/TypeParameters/get(com.google.inject.TypeLiteral)|",
+      "|java+method:///com/google/inject/Key/getTypeLiteral()|"
+    ],
+    "affectedLib": "org.sonatype.sisu:sisu-guice:3.0.3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.sonatype.sisu:sisu-inject-bean:2.2.2",
+    "coordinatesV2": "org.sonatype.sisu:sisu-inject-bean:2.2.3",
+    "caller": "|java+method:///org/sonatype/guice/bean/binders/QualifiedTypeBinder/bindQualifiedType(java.lang.Class)|",
+    "called": "|java+method:///com/google/inject/Key/ofType(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///java/lang/Class/getInterfaces()|",
+      "|java+method:///java/lang/Class/getSuperclass()|",
+      "|java+constructor:///org/sonatype/guice/bean/locators/WildcardKey/WildcardKey(java.lang.Class,java.lang.annotation.Annotation)|",
+      "|java+method:///org/sonatype/guice/bean/binders/QualifiedTypeBinder/getBindingName(java.lang.Class)|",
+      "|java+method:///java/lang/Class/getAnnotation(java.lang.Class)|",
+      "|java+method:///java/lang/Class/isAnnotationPresent(java.lang.Class)|",
+      "|java+method:///com/google/inject/Key/ofType(java.lang.Class)|",
+      "|java+method:///org/sonatype/guice/bean/binders/QualifiedTypeBinder/getBindingKey(com.google.inject.TypeLiteral,java.lang.annotation.Annotation)|",
+      "|java+method:///com/google/inject/Binder/bind(com.google.inject.Key)|",
+      "|java+method:///com/google/inject/binder/ScopedBindingBuilder/asEagerSingleton()|",
+      "|java+method:///com/google/inject/Binder/bind(java.lang.Class)|",
+      "|java+method:///com/google/inject/binder/LinkedBindingBuilder/to(java.lang.Class)|",
+      "|java+method:///javax/enterprise/inject/Typed/value()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/sonatype/guice/bean/binders/QualifiedTypeBinder/getBindingTypes(java.lang.Class)|",
+      "|java+constructor:///org/sonatype/guice/bean/locators/WildcardKey/WildcardKey(java.lang.Class,java.lang.annotation.Annotation)|",
+      "|java+method:///org/sonatype/guice/bean/binders/QualifiedTypeBinder/getBindingName(java.lang.Class)|",
+      "|java+method:///java/lang/Class/isAnnotationPresent(java.lang.Class)|",
+      "|java+method:///com/google/inject/Key/ofType(java.lang.Class)|",
+      "|java+method:///org/sonatype/guice/bean/binders/QualifiedTypeBinder/getBindingKey(com.google.inject.TypeLiteral,java.lang.annotation.Annotation)|",
+      "|java+method:///com/google/inject/Binder/bind(com.google.inject.Key)|",
+      "|java+method:///com/google/inject/binder/ScopedBindingBuilder/asEagerSingleton()|",
+      "|java+method:///com/google/inject/Binder/bind(java.lang.Class)|",
+      "|java+method:///com/google/inject/binder/LinkedBindingBuilder/to(java.lang.Class)|"
+    ],
+    "affectedLib": "org.sonatype.sisu:sisu-guice:3.0.3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.sonatype.sisu:sisu-inject-bean:2.2.2",
+    "coordinatesV2": "org.sonatype.sisu:sisu-inject-bean:2.2.3",
+    "caller": "|java+method:///org/sonatype/inject/Sisu/lookup(java.lang.Class)|",
+    "called": "|java+method:///com/google/inject/Key/get(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/sonatype/guice/bean/containers/SisuContainer/lookup(com.google.inject.Key)|",
+      "|java+method:///com/google/inject/Key/get(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/sonatype/guice/bean/containers/SisuGuice/lookup(com.google.inject.Key)|",
+      "|java+method:///com/google/inject/Key/get(java.lang.Class)|"
+    ],
+    "affectedLib": "org.sonatype.sisu:sisu-guice:3.0.3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.sonatype.sisu:sisu-inject-bean:2.2.2",
+    "coordinatesV2": "org.sonatype.sisu:sisu-inject-bean:2.2.3",
+    "caller": "|java+method:///org/sonatype/guice/bean/binders/LocatorWiring/bindBeanImport(com.google.inject.Key)|",
+    "called": "|java+method:///com/google/inject/Key/getAnnotationType()|",
+    "v1Body": [
+      "|java+method:///com/google/inject/Key/get(com.google.inject.TypeLiteral,java.lang.Class)|",
+      "|java+method:///org/sonatype/guice/bean/binders/LocatorWiring/isImplicit(com.google.inject.Key)|",
+      "|java+constructor:///org/sonatype/guice/bean/binders/PlaceholderBeanProvider/PlaceholderBeanProvider(com.google.inject.Key)|",
+      "|java+method:///com/google/inject/name/Named/value()|",
+      "|java+method:///java/lang/String/length()|",
+      "|java+constructor:///org/sonatype/guice/bean/binders/BeanProvider/BeanProvider(com.google.inject.Key)|",
+      "|java+method:///com/google/inject/binder/LinkedBindingBuilder/toProvider(com.google.inject.Provider)|",
+      "|java+method:///com/google/inject/Binder/bind(com.google.inject.Key)|",
+      "|java+method:///java/lang/String/contains(java.lang.CharSequence)|",
+      "|java+method:///com/google/inject/Key/getAnnotation()|",
+      "|java+method:///com/google/inject/Key/getTypeLiteral()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/sonatype/guice/bean/binders/LocatorWiring/bindImplicitType(com.google.inject.TypeLiteral)|",
+      "|java+method:///com/google/inject/Key/get(com.google.inject.TypeLiteral,java.lang.Class)|",
+      "|java+constructor:///org/sonatype/guice/bean/binders/PlaceholderBeanProvider/PlaceholderBeanProvider(com.google.inject.Key)|",
+      "|java+method:///com/google/inject/name/Named/value()|",
+      "|java+method:///java/lang/String/length()|",
+      "|java+constructor:///org/sonatype/guice/bean/binders/BeanProvider/BeanProvider(com.google.inject.Key)|",
+      "|java+method:///com/google/inject/binder/LinkedBindingBuilder/toProvider(com.google.inject.Provider)|",
+      "|java+method:///com/google/inject/Binder/bind(com.google.inject.Key)|",
+      "|java+method:///com/google/inject/Key/getAnnotationType()|",
+      "|java+method:///com/google/inject/Key/getAnnotation()|",
+      "|java+method:///com/google/inject/Key/getTypeLiteral()|"
+    ],
+    "affectedLib": "org.sonatype.sisu:sisu-guice:3.0.3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.sonatype.sisu:sisu-inject-bean:2.2.2",
+    "coordinatesV2": "org.sonatype.sisu:sisu-inject-bean:2.2.3",
+    "caller": "|java+method:///org/sonatype/guice/bean/containers/Main/boot(java.util.Map,java.lang.String%5B%5D)|",
+    "called": "|java+method:///com/google/inject/Guice/createInjector(com.google.inject.Module%5B%5D)|",
+    "v1Body": [
+      "|java+method:///org/sonatype/guice/bean/containers/SisuContainer/context(org.sonatype.guice.bean.containers.SisuContext)|",
+      "|java+constructor:///org/sonatype/guice/bean/containers/Main/Main(java.util.Map,java.lang.String%5B%5D)|",
+      "|java+method:///com/google/inject/Guice/createInjector(com.google.inject.Module%5B%5D)|",
+      "|java+method:///org/sonatype/guice/bean/containers/Main/selectScanning(java.util.Map)|",
+      "|java+method:///org/sonatype/guice/bean/containers/Main/wire(org.sonatype.inject.BeanScanning,com.google.inject.Module%5B%5D)|",
+      "|java+constructor:///org/sonatype/guice/bean/containers/SisuStaticContext/SisuStaticContext(com.google.inject.Injector)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/sonatype/guice/bean/containers/Main/Main(java.util.Map,java.lang.String%5B%5D)|",
+      "|java+method:///com/google/inject/Guice/createInjector(com.google.inject.Module%5B%5D)|",
+      "|java+method:///org/sonatype/guice/bean/containers/Main/wire(org.sonatype.inject.BeanScanning,com.google.inject.Module%5B%5D)|",
+      "|java+method:///org/sonatype/guice/bean/containers/Main/selectScanning(java.util.Map)|"
+    ],
+    "affectedLib": "org.sonatype.sisu:sisu-guice:3.0.3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.sonatype.sisu:sisu-inject-bean:2.2.2",
+    "coordinatesV2": "org.sonatype.sisu:sisu-inject-bean:2.2.3",
+    "caller": "|java+method:///org/sonatype/guice/bean/binders/PlaceholderBeanProvider/get()|",
+    "called": "|java+method:///com/google/inject/name/Names/named(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/sonatype/guice/bean/binders/PlaceholderBeanProvider/interpolate(java.lang.String)|",
+      "|java+method:///com/google/inject/name/Named/value()|",
+      "|java+method:///com/google/inject/Key/get(com.google.inject.TypeLiteral,java.lang.annotation.Annotation)|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///com/google/inject/spi/TypeConverter/convert(java.lang.String,com.google.inject.TypeLiteral)|",
+      "|java+method:///org/sonatype/guice/bean/binders/BeanProvider/get(org.sonatype.guice.bean.locators.BeanLocator,com.google.inject.Key)|",
+      "|java+method:///com/google/inject/TypeLiteral/getRawType()|",
+      "|java+method:///com/google/inject/name/Names/named(java.lang.String)|",
+      "|java+method:///com/google/inject/Key/getAnnotation()|",
+      "|java+method:///com/google/inject/Key/getTypeLiteral()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/sonatype/guice/bean/binders/PlaceholderBeanProvider/normalize(java.lang.Object)|",
+      "|java+method:///com/google/inject/name/Named/value()|",
+      "|java+method:///com/google/inject/Key/get(com.google.inject.TypeLiteral,java.lang.annotation.Annotation)|",
+      "|java+method:///org/sonatype/guice/bean/binders/PlaceholderBeanProvider/interpolate(java.lang.String,java.lang.Class)|",
+      "|java+method:///com/google/inject/Key/ofType(java.lang.Class)|",
+      "|java+method:///com/google/inject/spi/TypeConverter/convert(java.lang.String,com.google.inject.TypeLiteral)|",
+      "|java+method:///org/sonatype/guice/bean/binders/BeanProvider/get(org.sonatype.guice.bean.locators.BeanLocator,com.google.inject.Key)|",
+      "|java+method:///com/google/inject/TypeLiteral/getRawType()|",
+      "|java+method:///com/google/inject/Key/getAnnotation()|",
+      "|java+method:///com/google/inject/Key/getTypeLiteral()|",
+      "|java+method:///org/sonatype/guice/bean/binders/TypeConverterMap/getTypeConverter(com.google.inject.TypeLiteral)|",
+      "|java+method:///com/google/inject/name/Names/named(java.lang.String)|"
+    ],
+    "affectedLib": "org.sonatype.sisu:sisu-guice:3.0.3",
+    "change": "UPDATED"
+  }
+]

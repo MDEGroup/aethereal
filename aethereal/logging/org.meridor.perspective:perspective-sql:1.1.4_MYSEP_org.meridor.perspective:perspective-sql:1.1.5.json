@@ -1,0 +1,73 @@
+[
+  {
+    "coordinatesV1": "org.meridor.perspective:perspective-sql:1.1.4",
+    "coordinatesV2": "org.meridor.perspective:perspective-sql:1.1.5",
+    "caller": "|java+method:///org/meridor/perspective/sql/impl/QueryProcessorImpl/process(org.meridor.perspective.sql.Query)|",
+    "called": "|java+method:///org/meridor/perspective/sql/DataContainer/empty()|",
+    "v1Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///java/sql/SQLException/getMessage()|",
+      "|java+method:///org/meridor/perspective/sql/ExecutionResult/getData()|",
+      "|java+method:///java/util/Collections/emptyList()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/sql/SQLSyntaxErrorException/getMessage()|",
+      "|java+method:///java/sql/SQLDataException/getMessage()|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///java/util/Collections/singletonList(java.lang.Object)|",
+      "|java+method:///org/meridor/perspective/sql/impl/QueryProcessorImpl/executeTasks(java.util.Iterator,org.meridor.perspective.sql.ExecutionResult)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///org/meridor/perspective/sql/impl/QueryProcessorImpl/parseSQL(java.lang.String)|",
+      "|java+method:///org/meridor/perspective/sql/impl/QueryProcessorImpl/getQueryResult(org.meridor.perspective.sql.QueryStatus,int,java.util.List,java.lang.String)|",
+      "|java+method:///org/meridor/perspective/sql/ExecutionResult/getCount()|",
+      "|java+method:///org/meridor/perspective/sql/impl/QueryProcessorImpl/prepareSQL(org.meridor.perspective.sql.Query)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/util/Queue/iterator()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///org/meridor/perspective/sql/impl/QueryProcessorImpl/getQueryResult(org.meridor.perspective.sql.QueryStatus,int,org.meridor.perspective.sql.DataContainer,java.lang.String)|",
+      "|java+method:///java/sql/SQLException/getMessage()|",
+      "|java+method:///org/meridor/perspective/sql/ExecutionResult/getData()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/sql/SQLSyntaxErrorException/getMessage()|",
+      "|java+method:///java/sql/SQLDataException/getMessage()|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///java/util/Collections/singletonList(java.lang.Object)|",
+      "|java+method:///org/meridor/perspective/sql/impl/QueryProcessorImpl/executeTasks(java.util.Iterator,org.meridor.perspective.sql.ExecutionResult)|",
+      "|java+method:///org/meridor/perspective/sql/impl/QueryProcessorImpl/parseSQL(java.lang.String)|",
+      "|java+method:///org/meridor/perspective/sql/ExecutionResult/getCount()|",
+      "|java+method:///org/meridor/perspective/sql/impl/QueryProcessorImpl/prepareSQL(org.meridor.perspective.sql.Query)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/util/Queue/iterator()|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///org/meridor/perspective/sql/DataContainer/empty()|"
+    ],
+    "affectedLib": "org.meridor.perspective:perspective-beans:1.1.5",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.meridor.perspective:perspective-sql:1.1.4",
+    "coordinatesV2": "org.meridor.perspective:perspective-sql:1.1.5",
+    "caller": "|java+method:///org/meridor/perspective/sql/impl/task/LimitTask/execute(org.meridor.perspective.sql.ExecutionResult)|",
+    "called": "|java+constructor:///org/meridor/perspective/sql/DataContainer/DataContainer(org.meridor.perspective.sql.DataContainer,java.util.function.Function)|",
+    "v1Body": [
+      "|java+method:///org/meridor/perspective/sql/ExecutionResult/setCount(int)|",
+      "|java+method:///java/util/stream/Stream/collect(java.util.stream.Collector)|",
+      "|java+constructor:///org/meridor/perspective/sql/ExecutionResult/ExecutionResult()|",
+      "|java+method:///org/meridor/perspective/sql/ExecutionResult/getData()|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///org/meridor/perspective/sql/ExecutionResult/setData(java.util.List)|",
+      "|java+method:///java/util/stream/Stream/limit(long)|",
+      "|java+method:///java/util/stream/Stream/skip(long)|",
+      "|java+method:///java/util/stream/Collectors/toList()|",
+      "|java+method:///java/util/List/stream()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/meridor/perspective/sql/DataContainer/DataContainer(org.meridor.perspective.sql.DataContainer,java.util.function.Function)|",
+      "|java+constructor:///org/meridor/perspective/sql/impl/task/LimitTask$1/LimitTask$1(org.meridor.perspective.sql.impl.task.LimitTask,org.meridor.perspective.sql.DataContainer)|",
+      "|java+method:///org/meridor/perspective/sql/ExecutionResult/getData()|"
+    ],
+    "affectedLib": "org.meridor.perspective:perspective-beans:1.1.5",
+    "change": "UPDATED"
+  }
+]

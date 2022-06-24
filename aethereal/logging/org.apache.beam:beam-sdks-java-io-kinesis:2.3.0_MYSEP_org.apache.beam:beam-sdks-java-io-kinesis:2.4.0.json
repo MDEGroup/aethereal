@@ -1,0 +1,516 @@
+[
+  {
+    "coordinatesV1": "org.apache.beam:beam-sdks-java-io-kinesis:2.3.0",
+    "coordinatesV2": "org.apache.beam:beam-sdks-java-io-kinesis:2.4.0",
+    "caller": "|java+constructor:///org/apache/beam/sdk/io/kinesis/StartingPoint/StartingPoint(org.joda.time.Instant)|",
+    "called": "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/apache/beam/sdks/java/io/kinesis/repackaged/com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "com.google.guava:guava:20.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.beam:beam-sdks-java-io-kinesis:2.3.0",
+    "coordinatesV2": "org.apache.beam:beam-sdks-java-io-kinesis:2.4.0",
+    "caller": "|java+method:///org/apache/beam/sdk/io/kinesis/ShardReadersPool/allShardsUpToDate()|",
+    "called": "|java+method:///com/google/common/collect/ImmutableMap/values()|",
+    "v1Body": [
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/util/Map/values()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/apache/beam/sdk/io/kinesis/ShardRecordsIterator/isUpToDate()|",
+      "|java+method:///java/util/Collection/iterator()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///com/google/common/collect/ImmutableMap/values()|",
+      "|java+method:///org/apache/beam/sdk/io/kinesis/ShardRecordsIterator/isUpToDate()|",
+      "|java+method:///java/util/concurrent/atomic/AtomicReference/get()|",
+      "|java+method:///com/google/common/collect/ImmutableCollection/iterator()|"
+    ],
+    "affectedLib": "com.google.guava:guava:20.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.beam:beam-sdks-java-io-kinesis:2.3.0",
+    "coordinatesV2": "org.apache.beam:beam-sdks-java-io-kinesis:2.4.0",
+    "caller": "|java+constructor:///org/apache/beam/sdk/io/kinesis/SimplifiedKinesisClient/SimplifiedKinesisClient(com.amazonaws.services.kinesis.AmazonKinesis,com.amazonaws.services.cloudwatch.AmazonCloudWatch)|",
+    "called": "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/apache/beam/sdks/java/io/kinesis/repackaged/com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "com.google.guava:guava:20.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.beam:beam-sdks-java-io-kinesis:2.3.0",
+    "coordinatesV2": "org.apache.beam:beam-sdks-java-io-kinesis:2.4.0",
+    "caller": "|java+method:///org/apache/beam/sdk/io/kinesis/RecordFilter/apply(java.util.List,org.apache.beam.sdk.io.kinesis.ShardCheckpoint)|",
+    "called": "|java+method:///com/google/common/collect/Lists/newArrayList()|",
+    "v1Body": [
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/apache/beam/sdk/io/kinesis/ShardCheckpoint/isBeforeOrAt(org.apache.beam.sdk.io.kinesis.KinesisRecord)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///org/apache/beam/sdks/java/io/kinesis/repackaged/com/google/common/collect/Lists/newArrayList()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///com/google/common/collect/Lists/newArrayList()|",
+      "|java+method:///org/apache/beam/sdk/io/kinesis/ShardCheckpoint/isBeforeOrAt(org.apache.beam.sdk.io.kinesis.KinesisRecord)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///java/util/List/iterator()|"
+    ],
+    "affectedLib": "com.google.guava:guava:20.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.beam:beam-sdks-java-io-kinesis:2.3.0",
+    "coordinatesV2": "org.apache.beam:beam-sdks-java-io-kinesis:2.4.0",
+    "caller": "|java+constructor:///org/apache/beam/sdk/io/kinesis/ShardCheckpoint/ShardCheckpoint(java.lang.String,java.lang.String,com.amazonaws.services.kinesis.model.ShardIteratorType,java.lang.String,java.lang.Long,org.joda.time.Instant)|",
+    "called": "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/apache/beam/sdks/java/io/kinesis/repackaged/com/google/common/base/Preconditions/checkArgument(boolean,java.lang.Object)|",
+      "|java+method:///org/apache/beam/sdks/java/io/kinesis/repackaged/com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean,java.lang.Object)|",
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "com.google.guava:guava:20.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.beam:beam-sdks-java-io-kinesis:2.3.0",
+    "coordinatesV2": "org.apache.beam:beam-sdks-java-io-kinesis:2.4.0",
+    "caller": "|java+constructor:///org/apache/beam/sdk/io/kinesis/StaticCheckpointGenerator/StaticCheckpointGenerator(org.apache.beam.sdk.io.kinesis.KinesisReaderCheckpoint)|",
+    "called": "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/apache/beam/sdks/java/io/kinesis/repackaged/com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "com.google.guava:guava:20.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.beam:beam-sdks-java-io-kinesis:2.3.0",
+    "coordinatesV2": "org.apache.beam:beam-sdks-java-io-kinesis:2.4.0",
+    "caller": "|java+method:///org/apache/beam/sdk/io/kinesis/ShardReadersPool/start()|",
+    "called": "|java+method:///com/google/common/collect/ImmutableMap/values()|",
+    "v1Body": [
+      "|java+constructor:///java/util/concurrent/LinkedBlockingQueue/LinkedBlockingQueue(int)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/util/concurrent/ExecutorService/submit(java.lang.Runnable)|",
+      "|java+method:///java/util/Map/size()|",
+      "|java+method:///java/util/Map/values()|",
+      "|java+method:///org/apache/beam/sdk/io/kinesis/ShardReadersPool/createShardIterator(org.apache.beam.sdk.io.kinesis.SimplifiedKinesisClient,org.apache.beam.sdk.io.kinesis.ShardCheckpoint)|",
+      "|java+method:///org/apache/beam/sdk/io/kinesis/KinesisReaderCheckpoint/iterator()|",
+      "|java+method:///org/apache/beam/sdk/io/kinesis/ShardCheckpoint/getShardId()|",
+      "|java+method:///java/util/Collection/iterator()|",
+      "|java+method:///org/apache/beam/sdks/java/io/kinesis/repackaged/com/google/common/collect/ImmutableMap$Builder/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/apache/beam/sdks/java/io/kinesis/repackaged/com/google/common/collect/ImmutableMap/builder()|",
+      "|java+method:///org/apache/beam/sdks/java/io/kinesis/repackaged/com/google/common/collect/ImmutableMap$Builder/build()|",
+      "|java+method:///java/util/concurrent/Executors/newFixedThreadPool(int)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/common/collect/ImmutableMap/builder()|",
+      "|java+method:///org/apache/beam/sdk/io/kinesis/ShardReadersPool/startReadingShards(java.lang.Iterable)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///com/google/common/collect/ImmutableMap/isEmpty()|",
+      "|java+method:///com/google/common/collect/ImmutableMap$Builder/build()|",
+      "|java+constructor:///java/util/concurrent/ArrayBlockingQueue/ArrayBlockingQueue(int)|",
+      "|java+method:///com/google/common/collect/ImmutableMap$Builder/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///com/google/common/collect/ImmutableMap/size()|",
+      "|java+method:///com/google/common/collect/ImmutableMap/values()|",
+      "|java+method:///org/apache/beam/sdk/io/kinesis/ShardReadersPool/createShardIterator(org.apache.beam.sdk.io.kinesis.SimplifiedKinesisClient,org.apache.beam.sdk.io.kinesis.ShardCheckpoint)|",
+      "|java+method:///org/apache/beam/sdk/io/kinesis/ShardCheckpoint/getShardId()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/concurrent/atomic/AtomicReference/set(java.lang.Object)|",
+      "|java+method:///org/apache/beam/sdk/io/kinesis/KinesisReaderCheckpoint/iterator()|",
+      "|java+method:///java/util/concurrent/atomic/AtomicReference/get()|"
+    ],
+    "affectedLib": "com.google.guava:guava:20.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.beam:beam-sdks-java-io-kinesis:2.3.0",
+    "coordinatesV2": "org.apache.beam:beam-sdks-java-io-kinesis:2.4.0",
+    "caller": "|java+method:///org/apache/beam/sdk/io/kinesis/SimplifiedKinesisClient/lambda$listShards$1(java.lang.String)|",
+    "called": "|java+method:///com/google/common/collect/Lists/newArrayList()|",
+    "v1Body": [
+      "|java+method:///com/amazonaws/services/kinesis/model/Shard/getShardId()|",
+      "|java+method:///com/amazonaws/services/kinesis/model/DescribeStreamResult/getStreamDescription()|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///java/util/List/addAll(java.util.Collection)|",
+      "|java+method:///com/amazonaws/services/kinesis/AmazonKinesis/describeStream(java.lang.String,java.lang.String)|",
+      "|java+method:///com/amazonaws/services/kinesis/model/StreamDescription/getHasMoreShards()|",
+      "|java+method:///org/apache/beam/sdks/java/io/kinesis/repackaged/com/google/common/collect/Lists/newArrayList()|",
+      "|java+method:///java/lang/Boolean/booleanValue()|",
+      "|java+method:///com/amazonaws/services/kinesis/model/StreamDescription/getShards()|",
+      "|java+method:///java/util/List/get(int)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/amazonaws/services/kinesis/model/Shard/getShardId()|",
+      "|java+method:///com/google/common/collect/Lists/newArrayList()|",
+      "|java+method:///com/amazonaws/services/kinesis/model/DescribeStreamResult/getStreamDescription()|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///java/util/List/addAll(java.util.Collection)|",
+      "|java+method:///com/amazonaws/services/kinesis/AmazonKinesis/describeStream(java.lang.String,java.lang.String)|",
+      "|java+method:///com/amazonaws/services/kinesis/model/StreamDescription/getHasMoreShards()|",
+      "|java+method:///java/lang/Boolean/booleanValue()|",
+      "|java+method:///com/amazonaws/services/kinesis/model/StreamDescription/getShards()|",
+      "|java+method:///java/util/List/get(int)|"
+    ],
+    "affectedLib": "com.google.guava:guava:20.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.beam:beam-sdks-java-io-kinesis:2.3.0",
+    "coordinatesV2": "org.apache.beam:beam-sdks-java-io-kinesis:2.4.0",
+    "caller": "|java+method:///org/apache/beam/sdk/io/kinesis/KinesisSource/validate()|",
+    "called": "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/apache/beam/sdks/java/io/kinesis/repackaged/com/google/common/base/Preconditions/checkNotNull(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object)|"
+    ],
+    "affectedLib": "com.google.guava:guava:20.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.beam:beam-sdks-java-io-kinesis:2.3.0",
+    "coordinatesV2": "org.apache.beam:beam-sdks-java-io-kinesis:2.4.0",
+    "caller": "|java+constructor:///org/apache/beam/sdk/io/kinesis/KinesisReaderCheckpoint/KinesisReaderCheckpoint(java.lang.Iterable)|",
+    "called": "|java+method:///com/google/common/collect/ImmutableList/copyOf(java.lang.Iterable)|",
+    "v1Body": [
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///org/apache/beam/sdks/java/io/kinesis/repackaged/com/google/common/collect/ImmutableList/copyOf(java.lang.Iterable)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/common/collect/ImmutableList/copyOf(java.lang.Iterable)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "com.google.guava:guava:20.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.beam:beam-sdks-java-io-kinesis:2.3.0",
+    "coordinatesV2": "org.apache.beam:beam-sdks-java-io-kinesis:2.4.0",
+    "caller": "|java+constructor:///org/apache/beam/sdk/io/kinesis/KinesisReader/KinesisReader(org.apache.beam.sdk.io.kinesis.SimplifiedKinesisClient,org.apache.beam.sdk.io.kinesis.CheckpointGenerator,org.apache.beam.sdk.io.kinesis.KinesisSource,org.joda.time.Duration,org.joda.time.Duration)|",
+    "called": "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/apache/beam/sdk/io/kinesis/CustomOptional/absent()|",
+      "|java+method:///org/apache/beam/sdks/java/io/kinesis/repackaged/com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///org/apache/beam/sdk/io/UnboundedSource$UnboundedReader/UnboundedSource$UnboundedReader()|",
+      "|java+method:///org/apache/beam/sdk/transforms/Min/ofLongs()|",
+      "|java+constructor:///org/apache/beam/sdk/util/MovingFunction/MovingFunction(long,long,int,int,org.apache.beam.sdk.transforms.Combine$BinaryCombineLongFn)|",
+      "|java+constructor:///org/joda/time/Instant/Instant(long)|",
+      "|java+method:///org/joda/time/Duration/getMillis()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/beam/sdk/io/kinesis/CustomOptional/absent()|",
+      "|java+method:///org/joda/time/Instant/now()|",
+      "|java+constructor:///org/apache/beam/sdk/io/UnboundedSource$UnboundedReader/UnboundedSource$UnboundedReader()|",
+      "|java+method:///org/apache/beam/sdk/transforms/Min/ofLongs()|",
+      "|java+constructor:///org/apache/beam/sdk/util/MovingFunction/MovingFunction(long,long,int,int,org.apache.beam.sdk.transforms.Combine$BinaryCombineLongFn)|",
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///org/joda/time/Instant/Instant(long)|",
+      "|java+method:///org/joda/time/Instant/minus(org.joda.time.ReadableDuration)|",
+      "|java+method:///org/joda/time/Duration/getMillis()|"
+    ],
+    "affectedLib": "com.google.guava:guava:20.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.beam:beam-sdks-java-io-kinesis:2.3.0",
+    "coordinatesV2": "org.apache.beam:beam-sdks-java-io-kinesis:2.4.0",
+    "caller": "|java+method:///org/apache/beam/sdk/io/kinesis/ShardReadersPool/lambda$getCheckpointMark$1(org.apache.beam.sdk.io.kinesis.ShardRecordsIterator)|",
+    "called": "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/apache/beam/sdks/java/io/kinesis/repackaged/com/google/common/base/Preconditions/checkArgument(boolean,java.lang.Object)|",
+      "|java+method:///org/apache/beam/sdk/io/kinesis/ShardRecordsIterator/getCheckpoint()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/beam/sdk/io/kinesis/ShardRecordsIterator/getCheckpoint()|",
+      "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean,java.lang.Object)|"
+    ],
+    "affectedLib": "com.google.guava:guava:20.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.beam:beam-sdks-java-io-kinesis:2.3.0",
+    "coordinatesV2": "org.apache.beam:beam-sdks-java-io-kinesis:2.4.0",
+    "caller": "|java+method:///org/apache/beam/sdk/io/kinesis/ShardReadersPool/getCheckpointMark()|",
+    "called": "|java+method:///com/google/common/collect/ImmutableMap/values()|",
+    "v1Body": [
+      "|java+method:///java/util/stream/Stream/map(java.util.function.Function)|",
+      "|java+constructor:///org/apache/beam/sdk/io/kinesis/KinesisReaderCheckpoint/KinesisReaderCheckpoint(java.lang.Iterable)|",
+      "|java+method:///java/util/stream/Stream/collect(java.util.stream.Collector)|",
+      "|java+method:///java/util/Map/values()|",
+      "|java+method:///java/util/Collection/stream()|",
+      "|java+method:///java/util/stream/Collectors/toList()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/stream/Stream/map(java.util.function.Function)|",
+      "|java+constructor:///org/apache/beam/sdk/io/kinesis/KinesisReaderCheckpoint/KinesisReaderCheckpoint(java.lang.Iterable)|",
+      "|java+method:///java/util/stream/Stream/collect(java.util.stream.Collector)|",
+      "|java+method:///com/google/common/collect/ImmutableCollection/stream()|",
+      "|java+method:///java/util/stream/Collectors/toList()|",
+      "|java+method:///com/google/common/collect/ImmutableMap/values()|",
+      "|java+method:///java/util/concurrent/atomic/AtomicReference/get()|"
+    ],
+    "affectedLib": "com.google.guava:guava:20.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.beam:beam-sdks-java-io-kinesis:2.3.0",
+    "coordinatesV2": "org.apache.beam:beam-sdks-java-io-kinesis:2.4.0",
+    "caller": "|java+method:///org/apache/beam/sdk/io/kinesis/KinesisIO$Read/withMaxNumRecords(long)|",
+    "called": "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean,java.lang.String,long)|",
+    "v1Body": [
+      "|java+method:///org/apache/beam/sdk/io/kinesis/KinesisIO$Read/toBuilder()|",
+      "|java+method:///org/apache/beam/sdk/io/kinesis/KinesisIO$Read$Builder/setMaxNumRecords(long)|",
+      "|java+method:///org/apache/beam/sdks/java/io/kinesis/repackaged/com/google/common/base/Preconditions/checkArgument(boolean,java.lang.String,long)|",
+      "|java+method:///org/apache/beam/sdk/io/kinesis/KinesisIO$Read$Builder/build()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/beam/sdk/io/kinesis/KinesisIO$Read/toBuilder()|",
+      "|java+method:///org/apache/beam/sdk/io/kinesis/KinesisIO$Read$Builder/build()|",
+      "|java+method:///org/apache/beam/sdk/io/kinesis/KinesisIO$Read$Builder/setMaxNumRecords(long)|",
+      "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean,java.lang.String,long)|"
+    ],
+    "affectedLib": "com.google.guava:guava:20.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.beam:beam-sdks-java-io-kinesis:2.3.0",
+    "coordinatesV2": "org.apache.beam:beam-sdks-java-io-kinesis:2.4.0",
+    "caller": "|java+method:///org/apache/beam/sdk/io/kinesis/KinesisSource/split(int,org.apache.beam.sdk.options.PipelineOptions)|",
+    "called": "|java+method:///com/google/common/collect/Lists/newArrayList()|",
+    "v1Body": [
+      "|java+constructor:///org/apache/beam/sdk/io/kinesis/KinesisSource/KinesisSource(org.apache.beam.sdk.io.kinesis.AWSClientsProvider,org.apache.beam.sdk.io.kinesis.CheckpointGenerator,java.lang.String,org.joda.time.Duration)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/apache/beam/sdk/io/kinesis/SimplifiedKinesisClient/from(org.apache.beam.sdk.io.kinesis.AWSClientsProvider)|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+constructor:///org/apache/beam/sdk/io/kinesis/StaticCheckpointGenerator/StaticCheckpointGenerator(org.apache.beam.sdk.io.kinesis.KinesisReaderCheckpoint)|",
+      "|java+method:///org/apache/beam/sdk/io/kinesis/CheckpointGenerator/generate(org.apache.beam.sdk.io.kinesis.SimplifiedKinesisClient)|",
+      "|java+method:///org/apache/beam/sdk/io/kinesis/KinesisReaderCheckpoint/splitInto(int)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///org/apache/beam/sdks/java/io/kinesis/repackaged/com/google/common/collect/Lists/newArrayList()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/beam/sdk/io/kinesis/KinesisSource/KinesisSource(org.apache.beam.sdk.io.kinesis.AWSClientsProvider,org.apache.beam.sdk.io.kinesis.CheckpointGenerator,java.lang.String,org.joda.time.Duration)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///com/google/common/collect/Lists/newArrayList()|",
+      "|java+method:///org/apache/beam/sdk/io/kinesis/SimplifiedKinesisClient/from(org.apache.beam.sdk.io.kinesis.AWSClientsProvider)|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+constructor:///org/apache/beam/sdk/io/kinesis/StaticCheckpointGenerator/StaticCheckpointGenerator(org.apache.beam.sdk.io.kinesis.KinesisReaderCheckpoint)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///org/apache/beam/sdk/io/kinesis/CheckpointGenerator/generate(org.apache.beam.sdk.io.kinesis.SimplifiedKinesisClient)|",
+      "|java+method:///org/apache/beam/sdk/io/kinesis/KinesisReaderCheckpoint/splitInto(int)|",
+      "|java+method:///java/util/Iterator/next()|"
+    ],
+    "affectedLib": "com.google.guava:guava:20.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.beam:beam-sdks-java-io-kinesis:2.3.0",
+    "coordinatesV2": "org.apache.beam:beam-sdks-java-io-kinesis:2.4.0",
+    "caller": "|java+constructor:///org/apache/beam/sdk/io/kinesis/StartingPoint/StartingPoint(com.amazonaws.services.kinesis.clientlibrary.lib.worker.InitialPositionInStream)|",
+    "called": "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/apache/beam/sdks/java/io/kinesis/repackaged/com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "com.google.guava:guava:20.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.beam:beam-sdks-java-io-kinesis:2.3.0",
+    "coordinatesV2": "org.apache.beam:beam-sdks-java-io-kinesis:2.4.0",
+    "caller": "|java+constructor:///org/apache/beam/sdk/io/kinesis/ShardRecordsIterator/ShardRecordsIterator(org.apache.beam.sdk.io.kinesis.ShardCheckpoint,org.apache.beam.sdk.io.kinesis.SimplifiedKinesisClient,org.apache.beam.sdk.io.kinesis.RecordFilter)|",
+    "called": "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/apache/beam/sdk/io/kinesis/ShardCheckpoint/getStreamName()|",
+      "|java+method:///org/apache/beam/sdk/io/kinesis/ShardCheckpoint/getShardIterator(org.apache.beam.sdk.io.kinesis.SimplifiedKinesisClient)|",
+      "|java+method:///org/apache/beam/sdks/java/io/kinesis/repackaged/com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///java/util/concurrent/atomic/AtomicLong/AtomicLong(long)|",
+      "|java+constructor:///java/util/concurrent/atomic/AtomicReference/AtomicReference(java.lang.Object)|",
+      "|java+method:///org/apache/beam/sdk/io/kinesis/ShardCheckpoint/getShardId()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/beam/sdk/io/kinesis/ShardCheckpoint/getStreamName()|",
+      "|java+method:///org/apache/beam/sdk/io/kinesis/ShardCheckpoint/getShardIterator(org.apache.beam.sdk.io.kinesis.SimplifiedKinesisClient)|",
+      "|java+constructor:///java/util/concurrent/atomic/AtomicLong/AtomicLong(long)|",
+      "|java+constructor:///java/util/concurrent/atomic/AtomicReference/AtomicReference(java.lang.Object)|",
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/apache/beam/sdk/io/kinesis/ShardCheckpoint/getShardId()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "com.google.guava:guava:20.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.beam:beam-sdks-java-io-kinesis:2.3.0",
+    "coordinatesV2": "org.apache.beam:beam-sdks-java-io-kinesis:2.4.0",
+    "caller": "|java+method:///org/apache/beam/sdk/io/kinesis/KinesisIO$Read/withMaxReadTime(org.joda.time.Duration)|",
+    "called": "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/apache/beam/sdks/java/io/kinesis/repackaged/com/google/common/base/Preconditions/checkArgument(boolean,java.lang.Object)|",
+      "|java+method:///org/apache/beam/sdk/io/kinesis/KinesisIO$Read$Builder/setMaxReadTime(org.joda.time.Duration)|",
+      "|java+method:///org/apache/beam/sdk/io/kinesis/KinesisIO$Read/toBuilder()|",
+      "|java+method:///org/apache/beam/sdk/io/kinesis/KinesisIO$Read$Builder/build()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/beam/sdk/io/kinesis/KinesisIO$Read$Builder/setMaxReadTime(org.joda.time.Duration)|",
+      "|java+method:///org/apache/beam/sdk/io/kinesis/KinesisIO$Read/toBuilder()|",
+      "|java+method:///org/apache/beam/sdk/io/kinesis/KinesisIO$Read$Builder/build()|",
+      "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean,java.lang.Object)|"
+    ],
+    "affectedLib": "com.google.guava:guava:20.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.beam:beam-sdks-java-io-kinesis:2.3.0",
+    "coordinatesV2": "org.apache.beam:beam-sdks-java-io-kinesis:2.4.0",
+    "caller": "|java+method:///org/apache/beam/sdk/io/kinesis/KinesisIO$Read/withUpToDateThreshold(org.joda.time.Duration)|",
+    "called": "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/apache/beam/sdks/java/io/kinesis/repackaged/com/google/common/base/Preconditions/checkArgument(boolean,java.lang.Object)|",
+      "|java+method:///org/apache/beam/sdk/io/kinesis/KinesisIO$Read$Builder/setUpToDateThreshold(org.joda.time.Duration)|",
+      "|java+method:///org/apache/beam/sdk/io/kinesis/KinesisIO$Read/toBuilder()|",
+      "|java+method:///org/apache/beam/sdk/io/kinesis/KinesisIO$Read$Builder/build()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/beam/sdk/io/kinesis/KinesisIO$Read$Builder/setUpToDateThreshold(org.joda.time.Duration)|",
+      "|java+method:///org/apache/beam/sdk/io/kinesis/KinesisIO$Read/toBuilder()|",
+      "|java+method:///org/apache/beam/sdk/io/kinesis/KinesisIO$Read$Builder/build()|",
+      "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean,java.lang.Object)|"
+    ],
+    "affectedLib": "com.google.guava:guava:20.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.beam:beam-sdks-java-io-kinesis:2.3.0",
+    "coordinatesV2": "org.apache.beam:beam-sdks-java-io-kinesis:2.4.0",
+    "caller": "|java+method:///org/apache/beam/sdk/io/kinesis/KinesisReaderCheckpoint/splitInto(int)|",
+    "called": "|java+method:///com/google/common/collect/Lists/newArrayList()|",
+    "v1Body": [
+      "|java+method:///org/apache/beam/sdk/io/kinesis/KinesisReaderCheckpoint/divideAndRoundUp(int,int)|",
+      "|java+constructor:///org/apache/beam/sdk/io/kinesis/KinesisReaderCheckpoint/KinesisReaderCheckpoint(java.lang.Iterable)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///org/apache/beam/sdks/java/io/kinesis/repackaged/com/google/common/collect/Lists/partition(java.util.List,int)|",
+      "|java+method:///org/apache/beam/sdks/java/io/kinesis/repackaged/com/google/common/collect/Lists/newArrayList()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/beam/sdk/io/kinesis/KinesisReaderCheckpoint/divideAndRoundUp(int,int)|",
+      "|java+constructor:///org/apache/beam/sdk/io/kinesis/KinesisReaderCheckpoint/KinesisReaderCheckpoint(java.lang.Iterable)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///com/google/common/collect/Lists/partition(java.util.List,int)|",
+      "|java+method:///com/google/common/collect/Lists/newArrayList()|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///java/util/List/iterator()|"
+    ],
+    "affectedLib": "com.google.guava:guava:20.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.beam:beam-sdks-java-io-kinesis:2.3.0",
+    "coordinatesV2": "org.apache.beam:beam-sdks-java-io-kinesis:2.4.0",
+    "caller": "|java+constructor:///org/apache/beam/sdk/io/kinesis/KinesisReader/KinesisReader(org.apache.beam.sdk.io.kinesis.SimplifiedKinesisClient,org.apache.beam.sdk.io.kinesis.CheckpointGenerator,org.apache.beam.sdk.io.kinesis.KinesisSource,org.joda.time.Duration,org.joda.time.Duration)|",
+    "called": "|java+constructor:///org/apache/beam/sdk/util/MovingFunction/MovingFunction(long,long,int,int,org.apache.beam.sdk.transforms.Combine$BinaryCombineLongFn)|",
+    "v1Body": [
+      "|java+method:///org/apache/beam/sdk/io/kinesis/CustomOptional/absent()|",
+      "|java+method:///org/apache/beam/sdks/java/io/kinesis/repackaged/com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///org/apache/beam/sdk/io/UnboundedSource$UnboundedReader/UnboundedSource$UnboundedReader()|",
+      "|java+method:///org/apache/beam/sdk/transforms/Min/ofLongs()|",
+      "|java+constructor:///org/apache/beam/sdk/util/MovingFunction/MovingFunction(long,long,int,int,org.apache.beam.sdk.transforms.Combine$BinaryCombineLongFn)|",
+      "|java+constructor:///org/joda/time/Instant/Instant(long)|",
+      "|java+method:///org/joda/time/Duration/getMillis()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/beam/sdk/io/kinesis/CustomOptional/absent()|",
+      "|java+method:///org/joda/time/Instant/now()|",
+      "|java+constructor:///org/apache/beam/sdk/io/UnboundedSource$UnboundedReader/UnboundedSource$UnboundedReader()|",
+      "|java+method:///org/apache/beam/sdk/transforms/Min/ofLongs()|",
+      "|java+constructor:///org/apache/beam/sdk/util/MovingFunction/MovingFunction(long,long,int,int,org.apache.beam.sdk.transforms.Combine$BinaryCombineLongFn)|",
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///org/joda/time/Instant/Instant(long)|",
+      "|java+method:///org/joda/time/Instant/minus(org.joda.time.ReadableDuration)|",
+      "|java+method:///org/joda/time/Duration/getMillis()|"
+    ],
+    "affectedLib": "org.apache.beam:beam-sdks-java-core:2.4.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.beam:beam-sdks-java-io-kinesis:2.3.0",
+    "coordinatesV2": "org.apache.beam:beam-sdks-java-io-kinesis:2.4.0",
+    "caller": "|java+method:///org/apache/beam/sdk/io/kinesis/KinesisIO$Read/expand(org.apache.beam.sdk.values.PBegin)|",
+    "called": "|java+method:///org/apache/beam/sdk/values/PBegin/apply(org.apache.beam.sdk.transforms.PTransform)|",
+    "v1Body": [
+      "|java+method:///org/apache/beam/sdk/io/kinesis/KinesisIO$Read/getInitialPosition()|",
+      "|java+method:///org/apache/beam/sdk/io/kinesis/KinesisIO/access$100(com.amazonaws.services.kinesis.AmazonKinesis,java.lang.String)|",
+      "|java+method:///org/apache/beam/sdk/io/kinesis/KinesisIO$Read/getStreamName()|",
+      "|java+constructor:///org/apache/beam/sdk/io/kinesis/KinesisSource/KinesisSource(org.apache.beam.sdk.io.kinesis.AWSClientsProvider,java.lang.String,org.apache.beam.sdk.io.kinesis.StartingPoint,org.joda.time.Duration)|",
+      "|java+method:///org/apache/beam/sdk/io/kinesis/KinesisIO$Read/getMaxNumRecords()|",
+      "|java+method:///org/apache/beam/sdk/io/BoundedReadFromUnboundedSource/withMaxNumRecords(long)|",
+      "|java+method:///org/apache/beam/sdks/java/io/kinesis/repackaged/com/google/common/base/Preconditions/checkArgument(boolean,java.lang.String,java.lang.Object)|",
+      "|java+method:///org/apache/beam/sdk/io/kinesis/AWSClientsProvider/getKinesisClient()|",
+      "|java+method:///org/apache/beam/sdk/io/Read$Unbounded/withMaxReadTime(org.joda.time.Duration)|",
+      "|java+method:///org/apache/beam/sdk/io/kinesis/KinesisIO$Read/getAWSClientsProvider()|",
+      "|java+method:///org/apache/beam/sdk/values/PBegin/apply(org.apache.beam.sdk.transforms.PTransform)|",
+      "|java+method:///org/apache/beam/sdk/io/Read/from(org.apache.beam.sdk.io.UnboundedSource)|",
+      "|java+method:///org/apache/beam/sdk/io/kinesis/KinesisIO$Read/getMaxReadTime()|",
+      "|java+method:///org/apache/beam/sdk/io/kinesis/KinesisIO$Read/getUpToDateThreshold()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/beam/sdk/io/kinesis/KinesisIO$Read/getInitialPosition()|",
+      "|java+method:///org/apache/beam/sdk/io/kinesis/KinesisIO$Read/getStreamName()|",
+      "|java+constructor:///org/apache/beam/sdk/io/kinesis/KinesisSource/KinesisSource(org.apache.beam.sdk.io.kinesis.AWSClientsProvider,java.lang.String,org.apache.beam.sdk.io.kinesis.StartingPoint,org.joda.time.Duration)|",
+      "|java+method:///org/apache/beam/sdk/io/kinesis/KinesisIO$Read/getMaxNumRecords()|",
+      "|java+method:///org/apache/beam/sdk/io/BoundedReadFromUnboundedSource/withMaxNumRecords(long)|",
+      "|java+method:///org/apache/beam/sdk/io/Read$Unbounded/withMaxReadTime(org.joda.time.Duration)|",
+      "|java+method:///org/apache/beam/sdk/io/kinesis/KinesisIO$Read/getAWSClientsProvider()|",
+      "|java+method:///org/apache/beam/sdk/values/PBegin/apply(org.apache.beam.sdk.transforms.PTransform)|",
+      "|java+method:///org/apache/beam/sdk/io/Read/from(org.apache.beam.sdk.io.UnboundedSource)|",
+      "|java+method:///org/apache/beam/sdk/io/kinesis/KinesisIO$Read/getMaxReadTime()|",
+      "|java+method:///org/apache/beam/sdk/io/kinesis/KinesisIO$Read/getUpToDateThreshold()|"
+    ],
+    "affectedLib": "org.apache.beam:beam-sdks-java-core:2.4.0",
+    "change": "UPDATED"
+  }
+]

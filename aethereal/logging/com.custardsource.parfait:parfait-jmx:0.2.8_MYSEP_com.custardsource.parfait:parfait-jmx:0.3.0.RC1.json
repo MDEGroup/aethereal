@@ -1,0 +1,74 @@
+[
+  {
+    "coordinatesV1": "com.custardsource.parfait:parfait-jmx:0.2.8",
+    "coordinatesV2": "com.custardsource.parfait:parfait-jmx:0.3.0.RC1",
+    "caller": "|java+initializer:///com/custardsource/parfait/jmx/MonitoredMBeanAttributeFactory/MonitoredMBeanAttributeFactory$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.String)|",
+      "|java+method:///java/lang/Class/getName()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.String)|",
+      "|java+method:///java/lang/Class/getName()|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.6.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.custardsource.parfait:parfait-jmx:0.2.8",
+    "coordinatesV2": "com.custardsource.parfait:parfait-jmx:0.3.0.RC1",
+    "caller": "|java+method:///com/custardsource/parfait/jmx/MonitoredMBeanAttributeFactory/getObject()|",
+    "called": "|java+constructor:///com/custardsource/parfait/MonitoredConstant/MonitoredConstant(java.lang.String,java.lang.String,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///com/custardsource/parfait/jmx/MonitoredMBeanAttributeFactory/isConstant()|",
+      "|java+method:///com/custardsource/parfait/jmx/MonitoredMBeanAttributeFactory/getAttributeValue()|",
+      "|java+method:///javax/management/MBeanAttributeInfo/getName()|",
+      "|java+constructor:///com/custardsource/parfait/MonitoredConstant/MonitoredConstant(java.lang.String,java.lang.String,java.lang.Object)|",
+      "|java+method:///com/google/common/base/Preconditions/checkState(boolean,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+constructor:///java/lang/UnsupportedOperationException/UnsupportedOperationException(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+constructor:///com/custardsource/parfait/jmx/MonitoredMBeanAttributeFactory$1/MonitoredMBeanAttributeFactory$1(com.custardsource.parfait.jmx.MonitoredMBeanAttributeFactory)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///javax/management/openmbean/CompositeType/getType(java.lang.String)|",
+      "|java+method:///javax/management/MBeanServer/getAttribute(javax.management.ObjectName,java.lang.String)|",
+      "|java+method:///javax/management/MBeanInfo/getAttributes()|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///javax/management/openmbean/CompositeData/getCompositeType()|",
+      "|java+method:///com/custardsource/parfait/jmx/MonitoredMBeanAttributeFactory/getObject()|",
+      "|java+method:///javax/management/MBeanServer/getMBeanInfo(javax.management.ObjectName)|",
+      "|java+constructor:///com/custardsource/parfait/PollingMonitoredValue/PollingMonitoredValue(java.lang.String,java.lang.String,com.custardsource.parfait.MonitorableRegistry,int,com.custardsource.parfait.Poller,com.custardsource.parfait.ValueSemantics,javax.measure.unit.Unit)|",
+      "|java+method:///javax/management/MBeanAttributeInfo/getType()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///com/google/common/base/Strings/isNullOrEmpty(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/custardsource/parfait/jmx/MonitoredMBeanAttributeFactory/isConstant()|",
+      "|java+constructor:///com/custardsource/parfait/PollingMonitoredValue/PollingMonitoredValue(java.lang.String,java.lang.String,com.custardsource.parfait.MonitorableRegistry,int,com.google.common.base.Supplier,com.custardsource.parfait.ValueSemantics,javax.measure.unit.Unit)|",
+      "|java+method:///com/custardsource/parfait/jmx/MonitoredMBeanAttributeFactory/getAttributeValue()|",
+      "|java+method:///javax/management/MBeanAttributeInfo/getName()|",
+      "|java+constructor:///com/custardsource/parfait/MonitoredConstant/MonitoredConstant(java.lang.String,java.lang.String,java.lang.Object)|",
+      "|java+method:///com/google/common/base/Preconditions/checkState(boolean,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+constructor:///java/lang/UnsupportedOperationException/UnsupportedOperationException(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+constructor:///com/custardsource/parfait/jmx/MonitoredMBeanAttributeFactory$1/MonitoredMBeanAttributeFactory$1(com.custardsource.parfait.jmx.MonitoredMBeanAttributeFactory)|",
+      "|java+method:///javax/management/MBeanAttributeInfo/getType()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///javax/management/openmbean/CompositeType/getType(java.lang.String)|",
+      "|java+method:///javax/management/MBeanServer/getAttribute(javax.management.ObjectName,java.lang.String)|",
+      "|java+method:///javax/management/MBeanInfo/getAttributes()|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///javax/management/openmbean/CompositeData/getCompositeType()|",
+      "|java+method:///com/custardsource/parfait/jmx/MonitoredMBeanAttributeFactory/getObject()|",
+      "|java+method:///javax/management/MBeanServer/getMBeanInfo(javax.management.ObjectName)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///com/google/common/base/Strings/isNullOrEmpty(java.lang.String)|"
+    ],
+    "affectedLib": "com.custardsource.parfait:parfait-core:0.3.0.RC1",
+    "change": "UPDATED"
+  }
+]

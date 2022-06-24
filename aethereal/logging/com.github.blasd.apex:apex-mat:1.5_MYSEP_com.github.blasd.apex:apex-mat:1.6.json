@@ -1,0 +1,224 @@
+[
+  {
+    "coordinatesV1": "com.github.blasd.apex:apex-mat:1.5",
+    "coordinatesV2": "com.github.blasd.apex:apex-mat:1.6",
+    "caller": "|java+constructor:///org/eclipse/mat/parser/index/IndexWriter$IntArray1NWriter/IndexWriter$IntArray1NWriter(int,java.io.File)|",
+    "called": "|java+method:///io/cormoran/buffer/ApexBufferHelper/makeIntBuffer(int)|",
+    "v1Body": [
+      "|java+method:///java/nio/channels/FileChannel/map(java.nio.channels.FileChannel$MapMode,long,long)|",
+      "|java+method:///org/eclipse/mat/parser/index/IndexWriter$IntIndexStreamer/openStream(java.io.DataOutputStream,long)|",
+      "|java+method:///java/nio/MappedByteBuffer/asIntBuffer()|",
+      "|java+method:///java/lang/Exception/printStackTrace()|",
+      "|java+constructor:///java/io/RandomAccessFile/RandomAccessFile(java.io.File,java.lang.String)|",
+      "|java+constructor:///org/eclipse/mat/parser/index/IndexWriter$IntIndexStreamer/IndexWriter$IntIndexStreamer()|",
+      "|java+constructor:///java/io/DataOutputStream/DataOutputStream(java.io.OutputStream)|",
+      "|java+constructor:///java/io/BufferedOutputStream/BufferedOutputStream(java.io.OutputStream)|",
+      "|java+method:///java/io/RandomAccessFile/getChannel()|",
+      "|java+method:///java/nio/channels/FileChannel/size()|",
+      "|java+method:///org/eclipse/mat/parser/index/IndexWriter/access$100(java.lang.String,int)|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+constructor:///java/io/FileOutputStream/FileOutputStream(java.io.File)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/eclipse/mat/parser/index/IndexWriter$IntIndexStreamer/IndexWriter$IntIndexStreamer()|",
+      "|java+method:///org/eclipse/mat/parser/index/IndexWriter$IntIndexStreamer/openStream(java.io.DataOutputStream,long)|",
+      "|java+method:///java/lang/Exception/printStackTrace()|",
+      "|java+method:///io/cormoran/buffer/ApexBufferHelper/makeIntBuffer(int)|",
+      "|java+constructor:///java/io/DataOutputStream/DataOutputStream(java.io.OutputStream)|",
+      "|java+constructor:///java/io/BufferedOutputStream/BufferedOutputStream(java.io.OutputStream)|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+constructor:///java/io/FileOutputStream/FileOutputStream(java.io.File)|"
+    ],
+    "affectedLib": "com.github.blasd.apex:apex-java:1.6",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.github.blasd.apex:apex-mat:1.5",
+    "coordinatesV2": "com.github.blasd.apex:apex-mat:1.6",
+    "caller": "|java+method:///org/eclipse/mat/parser/index/IndexWriter$RoaringIdentifier/sort()|",
+    "called": "|java+method:///blasd/apex/core/logging/ApexLogHelper/getNiceMemory(long)|",
+    "v1Body": [
+      "|java+method:///org/eclipse/mat/parser/index/IndexWriter$RawIdentifier/sort()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/eclipse/mat/parser/index/IndexWriter$RawIdentifier/sort()|",
+      "|java+method:///org/roaringbitmap/longlong/Roaring64NavigableMap/runOptimize()|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///blasd/apex/core/logging/ApexLogHelper/getNiceMemory(long)|",
+      "|java+method:///org/roaringbitmap/longlong/Roaring64NavigableMap/serializedSizeInBytes()|"
+    ],
+    "affectedLib": "com.github.blasd.apex:apex-java:1.6",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.github.blasd.apex:apex-mat:1.5",
+    "coordinatesV2": "com.github.blasd.apex:apex-mat:1.6",
+    "caller": "|java+constructor:///org/eclipse/mat/parser/index/IndexWriter$IntIndexCollectorUncompressed/IndexWriter$IntIndexCollectorUncompressed(int)|",
+    "called": "|java+method:///io/cormoran/buffer/ApexBufferHelper/makeIntBuffer(int)|",
+    "v1Body": [
+      "|java+method:///java/nio/channels/FileChannel/map(java.nio.channels.FileChannel$MapMode,long,long)|",
+      "|java+constructor:///java/io/RandomAccessFile/RandomAccessFile(java.io.File,java.lang.String)|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.Throwable)|",
+      "|java+method:///java/nio/MappedByteBuffer/asIntBuffer()|",
+      "|java+method:///java/lang/Exception/printStackTrace()|",
+      "|java+method:///java/io/RandomAccessFile/getChannel()|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///java/nio/channels/FileChannel/size()|",
+      "|java+method:///org/eclipse/mat/parser/index/IndexWriter/access$100(java.lang.String,int)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.Throwable)|",
+      "|java+method:///java/lang/Exception/printStackTrace()|",
+      "|java+method:///io/cormoran/buffer/ApexBufferHelper/makeIntBuffer(int)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "com.github.blasd.apex:apex-java:1.6",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.github.blasd.apex:apex-mat:1.5",
+    "coordinatesV2": "com.github.blasd.apex:apex-mat:1.6",
+    "caller": "|java+method:///org/eclipse/mat/parser/index/IndexWriter$RoaringIdentifier/size()|",
+    "called": "|java+method:///org/roaringbitmap/longlong/Roaring64NavigableMap/getLongCardinality()|",
+    "v1Body": [
+      "|java+method:///org/eclipse/mat/parser/index/longroaring/MutableTreeRoaringBitmap/getCardinality()|",
+      "|java+method:///org/eclipse/mat/parser/index/IndexWriter$RawIdentifier/size()|",
+      "|java+constructor:///java/lang/AssertionError/AssertionError()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/lang/IllegalStateException/IllegalStateException(java.lang.String)|",
+      "|java+method:///org/eclipse/mat/parser/index/IndexWriter$RawIdentifier/size()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(long)|",
+      "|java+constructor:///java/lang/AssertionError/AssertionError()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/roaringbitmap/longlong/Roaring64NavigableMap/getLongCardinality()|"
+    ],
+    "affectedLib": "org.roaringbitmap:RoaringBitmap:0.6.51",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.github.blasd.apex:apex-mat:1.5",
+    "coordinatesV2": "com.github.blasd.apex:apex-mat:1.6",
+    "caller": "|java+method:///org/eclipse/mat/parser/index/IndexWriter$RoaringIdentifier/get(int)|",
+    "called": "|java+method:///org/roaringbitmap/longlong/Roaring64NavigableMap/select(long)|",
+    "v1Body": [
+      "|java+method:///org/eclipse/mat/parser/index/longroaring/MutableTreeRoaringBitmap/select(long)|",
+      "|java+method:///org/eclipse/mat/parser/index/IndexWriter$RawIdentifier/get(int)|",
+      "|java+constructor:///java/lang/AssertionError/AssertionError()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/eclipse/mat/parser/index/IndexWriter$RawIdentifier/get(int)|",
+      "|java+method:///org/roaringbitmap/longlong/Roaring64NavigableMap/select(long)|",
+      "|java+constructor:///java/lang/AssertionError/AssertionError()|"
+    ],
+    "affectedLib": "org.roaringbitmap:RoaringBitmap:0.6.51",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.github.blasd.apex:apex-mat:1.5",
+    "coordinatesV2": "com.github.blasd.apex:apex-mat:1.6",
+    "caller": "|java+method:///org/eclipse/mat/parser/index/IndexWriter$RoaringIdentifier/sort()|",
+    "called": "|java+method:///org/roaringbitmap/longlong/Roaring64NavigableMap/serializedSizeInBytes()|",
+    "v1Body": [
+      "|java+method:///org/eclipse/mat/parser/index/IndexWriter$RawIdentifier/sort()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/eclipse/mat/parser/index/IndexWriter$RawIdentifier/sort()|",
+      "|java+method:///org/roaringbitmap/longlong/Roaring64NavigableMap/runOptimize()|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///blasd/apex/core/logging/ApexLogHelper/getNiceMemory(long)|",
+      "|java+method:///org/roaringbitmap/longlong/Roaring64NavigableMap/serializedSizeInBytes()|"
+    ],
+    "affectedLib": "org.roaringbitmap:RoaringBitmap:0.6.51",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.github.blasd.apex:apex-mat:1.5",
+    "coordinatesV2": "com.github.blasd.apex:apex-mat:1.6",
+    "caller": "|java+method:///org/eclipse/mat/parser/index/IndexWriter$RoaringIdentifier/reverse(long)|",
+    "called": "|java+method:///org/roaringbitmap/longlong/Roaring64NavigableMap/select(long)|",
+    "v1Body": [
+      "|java+method:///org/eclipse/mat/parser/index/longroaring/MutableTreeRoaringBitmap/select(long)|",
+      "|java+method:///org/eclipse/mat/parser/index/longroaring/MutableTreeRoaringBitmap/rankLong(long)|",
+      "|java+method:///org/eclipse/mat/parser/index/IndexWriter$RawIdentifier/reverse(long)|",
+      "|java+constructor:///java/lang/AssertionError/AssertionError()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/roaringbitmap/longlong/Roaring64NavigableMap/rankLong(long)|",
+      "|java+method:///it/unimi/dsi/fastutil/longs/Long2IntMap/clear()|",
+      "|java+method:///it/unimi/dsi/fastutil/longs/Long2IntMap/put(long,int)|",
+      "|java+method:///it/unimi/dsi/fastutil/longs/Long2IntMap/size()|",
+      "|java+method:///it/unimi/dsi/fastutil/longs/Long2IntMap/get(long)|",
+      "|java+constructor:///java/lang/AssertionError/AssertionError()|",
+      "|java+method:///org/eclipse/mat/parser/index/IndexWriter$RawIdentifier/reverse(long)|",
+      "|java+method:///org/roaringbitmap/longlong/Roaring64NavigableMap/select(long)|"
+    ],
+    "affectedLib": "org.roaringbitmap:RoaringBitmap:0.6.51",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.github.blasd.apex:apex-mat:1.5",
+    "coordinatesV2": "com.github.blasd.apex:apex-mat:1.6",
+    "caller": "|java+method:///org/eclipse/mat/parser/index/IndexWriter$RoaringIdentifier/iterator()|",
+    "called": "|java+method:///org/roaringbitmap/longlong/Roaring64NavigableMap/getLongIterator()|",
+    "v1Body": [
+      "|java+constructor:///org/eclipse/mat/parser/index/IndexWriter$RoaringIdentifier$1/IndexWriter$RoaringIdentifier$1(org.eclipse.mat.parser.index.IndexWriter$RoaringIdentifier)|",
+      "|java+constructor:///org/eclipse/mat/parser/index/IndexWriter$RoaringIdentifier$2/IndexWriter$RoaringIdentifier$2(org.eclipse.mat.parser.index.IndexWriter$RoaringIdentifier,org.eclipse.mat.parser.index.longroaring.LongIterator,org.eclipse.mat.collect.IteratorLong)|",
+      "|java+method:///org/eclipse/mat/parser/index/IndexWriter$RawIdentifier/iterator()|",
+      "|java+method:///org/eclipse/mat/parser/index/longroaring/MutableTreeRoaringBitmap/iterator()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/eclipse/mat/parser/index/IndexWriter$RoaringIdentifier$1/IndexWriter$RoaringIdentifier$1(org.eclipse.mat.parser.index.IndexWriter$RoaringIdentifier)|",
+      "|java+constructor:///org/eclipse/mat/parser/index/IndexWriter$RoaringIdentifier$2/IndexWriter$RoaringIdentifier$2(org.eclipse.mat.parser.index.IndexWriter$RoaringIdentifier,org.roaringbitmap.longlong.LongIterator,org.eclipse.mat.collect.IteratorLong)|",
+      "|java+method:///org/eclipse/mat/parser/index/IndexWriter$RawIdentifier/iterator()|",
+      "|java+method:///org/roaringbitmap/longlong/Roaring64NavigableMap/getLongIterator()|"
+    ],
+    "affectedLib": "org.roaringbitmap:RoaringBitmap:0.6.51",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.github.blasd.apex:apex-mat:1.5",
+    "coordinatesV2": "com.github.blasd.apex:apex-mat:1.6",
+    "caller": "|java+method:///org/eclipse/mat/parser/index/IndexWriter$RoaringIdentifier/add(long)|",
+    "called": "|java+constructor:///org/roaringbitmap/RoaringBitmapSupplier/RoaringBitmapSupplier()|",
+    "v1Body": [
+      "|java+method:///java/lang/Boolean/getBoolean(java.lang.String)|",
+      "|java+constructor:///org/eclipse/mat/parser/index/IndexWriter$RawIdentifier/IndexWriter$RawIdentifier()|",
+      "|java+constructor:///org/eclipse/mat/parser/index/longroaring/MutableTreeRoaringBitmap/MutableTreeRoaringBitmap()|",
+      "|java+method:///org/eclipse/mat/parser/index/longroaring/MutableTreeRoaringBitmap/addLong(long)|",
+      "|java+method:///org/eclipse/mat/parser/index/IndexWriter$RawIdentifier/add(long)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Boolean/getBoolean(java.lang.String)|",
+      "|java+constructor:///org/roaringbitmap/longlong/Roaring64NavigableMap/Roaring64NavigableMap(boolean,org.roaringbitmap.BitmapDataProviderSupplier)|",
+      "|java+constructor:///org/eclipse/mat/parser/index/IndexWriter$RawIdentifier/IndexWriter$RawIdentifier()|",
+      "|java+method:///org/eclipse/mat/parser/index/IndexWriter$RawIdentifier/add(long)|",
+      "|java+constructor:///org/roaringbitmap/RoaringBitmapSupplier/RoaringBitmapSupplier()|",
+      "|java+method:///org/roaringbitmap/longlong/Roaring64NavigableMap/addLong(long)|"
+    ],
+    "affectedLib": "org.roaringbitmap:RoaringBitmap:0.6.51",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.github.blasd.apex:apex-mat:1.5",
+    "coordinatesV2": "com.github.blasd.apex:apex-mat:1.6",
+    "caller": "|java+method:///org/eclipse/mat/parser/index/IndexWriter$RoaringIdentifier/getNext(int,int)|",
+    "called": "|java+method:///org/roaringbitmap/longlong/Roaring64NavigableMap/select(long)|",
+    "v1Body": [
+      "|java+method:///org/eclipse/mat/parser/index/longroaring/MutableTreeRoaringBitmap/select(long)|",
+      "|java+method:///java/util/Arrays/equals(long%5B%5D,long%5B%5D)|",
+      "|java+method:///org/eclipse/mat/parser/index/IndexWriter$RawIdentifier/getNext(int,int)|",
+      "|java+constructor:///java/lang/AssertionError/AssertionError()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Arrays/equals(long%5B%5D,long%5B%5D)|",
+      "|java+method:///org/roaringbitmap/longlong/Roaring64NavigableMap/select(long)|",
+      "|java+method:///org/eclipse/mat/parser/index/IndexWriter$RawIdentifier/getNext(int,int)|",
+      "|java+constructor:///java/lang/AssertionError/AssertionError()|"
+    ],
+    "affectedLib": "org.roaringbitmap:RoaringBitmap:0.6.51",
+    "change": "UPDATED"
+  }
+]

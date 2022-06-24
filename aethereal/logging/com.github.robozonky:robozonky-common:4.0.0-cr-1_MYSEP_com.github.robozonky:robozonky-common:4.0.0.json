@@ -1,0 +1,46 @@
+[
+  {
+    "coordinatesV1": "com.github.robozonky:robozonky-common:4.0.0-cr-1",
+    "coordinatesV2": "com.github.robozonky:robozonky-common:4.0.0",
+    "caller": "|java+method:///com/github/robozonky/util/LocalhostAddress/getLatestSource()|",
+    "called": "|java+method:///org/apache/commons/io/IOUtils/toString(java.net.URL,java.nio.charset.Charset)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/io/BufferedReader/close()|",
+      "|java+method:///java/net/URL/openStream()|",
+      "|java+constructor:///java/io/InputStreamReader/InputStreamReader(java.io.InputStream,java.nio.charset.Charset)|",
+      "|java+method:///java/lang/Throwable/addSuppressed(java.lang.Throwable)|",
+      "|java+constructor:///java/net/URL/URL(java.lang.String)|",
+      "|java+constructor:///java/io/BufferedReader/BufferedReader(java.io.Reader)|",
+      "|java+method:///java/io/BufferedReader/readLine()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/lang/String/trim()|",
+      "|java+constructor:///java/net/URL/URL(java.lang.String)|",
+      "|java+method:///org/apache/commons/io/IOUtils/toString(java.net.URL,java.nio.charset.Charset)|"
+    ],
+    "affectedLib": "commons-io:commons-io:2.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.github.robozonky:robozonky-common:4.0.0-cr-1",
+    "coordinatesV2": "com.github.robozonky:robozonky-common:4.0.0",
+    "caller": "|java+method:///com/github/robozonky/common/secrets/KeyStoreSecretProvider/set(java.lang.String,java.io.Reader)|",
+    "called": "|java+method:///org/apache/commons/io/IOUtils/toString(java.io.Reader)|",
+    "v1Body": [
+      "|java+method:///com/github/robozonky/util/IOUtils/toString(java.io.Reader)|",
+      "|java+method:///com/github/robozonky/common/secrets/KeyStoreSecretProvider/set(java.lang.String,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/lang/IllegalStateException/IllegalStateException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///com/github/robozonky/common/secrets/KeyStoreSecretProvider/set(java.lang.String,java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/apache/commons/io/IOUtils/toString(java.io.Reader)|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "affectedLib": "commons-io:commons-io:2.5",
+    "change": "ADDED"
+  }
+]

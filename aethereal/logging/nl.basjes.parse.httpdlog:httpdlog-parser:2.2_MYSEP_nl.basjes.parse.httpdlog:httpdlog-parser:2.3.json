@@ -1,0 +1,83 @@
+[
+  {
+    "coordinatesV1": "nl.basjes.parse.httpdlog:httpdlog-parser:2.2",
+    "coordinatesV2": "nl.basjes.parse.httpdlog:httpdlog-parser:2.3",
+    "caller": "|java+constructor:///nl/basjes/parse/httpdlog/dissectors/TimeStampDissector/TimeStampDissector(java.lang.String)|",
+    "called": "|java+constructor:///nl/basjes/parse/core/Dissector/Dissector()|",
+    "v1Body": [
+      "|java+constructor:///nl/basjes/parse/core/Dissector/Dissector()|",
+      "|java+method:///nl/basjes/parse/httpdlog/dissectors/TimeStampDissector/setDateTimePattern(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///nl/basjes/parse/core/Dissector/Dissector()|",
+      "|java+method:///java/lang/String/trim()|",
+      "|java+method:///java/lang/String/isEmpty()|",
+      "|java+method:///nl/basjes/parse/httpdlog/dissectors/TimeStampDissector/setDateTimePattern(java.lang.String)|"
+    ],
+    "affectedLib": "nl.basjes.parse:parser-core:2.3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "nl.basjes.parse.httpdlog:httpdlog-parser:2.2",
+    "coordinatesV2": "nl.basjes.parse.httpdlog:httpdlog-parser:2.3",
+    "caller": "|java+constructor:///nl/basjes/parse/httpdlog/HttpdLoglineParser/HttpdLoglineParser(java.lang.Class,java.lang.String)|",
+    "called": "|java+constructor:///nl/basjes/parse/core/Parser/Parser(java.lang.Class)|",
+    "v1Body": [
+      "|java+constructor:///nl/basjes/parse/httpdlog/HttpdLogFormatDissector/HttpdLogFormatDissector(java.lang.String)|",
+      "|java+constructor:///nl/basjes/parse/httpdlog/dissectors/TimeStampDissector/TimeStampDissector(java.lang.String)|",
+      "|java+method:///nl/basjes/parse/httpdlog/HttpdLoglineParser/setRootType(java.lang.String)|",
+      "|java+method:///nl/basjes/parse/httpdlog/HttpdLoglineParser/addDissector(nl.basjes.parse.core.Dissector)|",
+      "|java+constructor:///nl/basjes/parse/core/Parser/Parser(java.lang.Class)|",
+      "|java+constructor:///nl/basjes/parse/httpdlog/dissectors/QueryStringFieldDissector/QueryStringFieldDissector()|",
+      "|java+constructor:///nl/basjes/parse/httpdlog/dissectors/HttpFirstLineDissector/HttpFirstLineDissector()|",
+      "|java+constructor:///nl/basjes/parse/httpdlog/dissectors/ResponseSetCookieDissector/ResponseSetCookieDissector()|",
+      "|java+constructor:///nl/basjes/parse/httpdlog/dissectors/ResponseSetCookieListDissector/ResponseSetCookieListDissector()|",
+      "|java+constructor:///nl/basjes/parse/httpdlog/dissectors/HttpUriDissector/HttpUriDissector()|",
+      "|java+constructor:///nl/basjes/parse/httpdlog/dissectors/ModUniqueIdDissector/ModUniqueIdDissector()|",
+      "|java+constructor:///nl/basjes/parse/httpdlog/dissectors/RequestCookieListDissector/RequestCookieListDissector()|"
+    ],
+    "v2Body": [
+      "|java+method:///nl/basjes/parse/httpdlog/HttpdLoglineParser/setupDissectors(java.lang.String,java.lang.String)|",
+      "|java+constructor:///nl/basjes/parse/core/Parser/Parser(java.lang.Class)|"
+    ],
+    "affectedLib": "nl.basjes.parse:parser-core:2.3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "nl.basjes.parse.httpdlog:httpdlog-parser:2.2",
+    "coordinatesV2": "nl.basjes.parse.httpdlog:httpdlog-parser:2.3",
+    "caller": "|java+method:///nl/basjes/parse/httpdlog/HttpdLogFormatDissector/dissect(nl.basjes.parse.core.Parsable,java.lang.String)|",
+    "called": "|java+constructor:///nl/basjes/parse/core/exceptions/DissectionFailure/DissectionFailure(java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///nl/basjes/parse/core/exceptions/DissectionFailure/DissectionFailure(java.lang.String)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/util/List/isEmpty()|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String)|",
+      "|java+method:///nl/basjes/parse/httpdlog/dissectors/tokenformat/TokenFormatDissector/getLogFormat()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///nl/basjes/parse/httpdlog/dissectors/tokenformat/TokenFormatDissector/dissect(nl.basjes.parse.core.Parsable,java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/util/List/get(int)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///nl/basjes/parse/core/exceptions/DissectionFailure/DissectionFailure(java.lang.String)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+method:///java/util/List/isEmpty()|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String)|",
+      "|java+method:///nl/basjes/parse/httpdlog/dissectors/tokenformat/TokenFormatDissector/getLogFormat()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///nl/basjes/parse/httpdlog/dissectors/tokenformat/TokenFormatDissector/dissect(nl.basjes.parse.core.Parsable,java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/util/List/get(int)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "affectedLib": "nl.basjes.parse:parser-core:2.3",
+    "change": "UPDATED"
+  }
+]

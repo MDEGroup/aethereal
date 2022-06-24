@@ -1,0 +1,160 @@
+[
+  {
+    "coordinatesV1": "org.apache.directory.shared:shared-ldap-schema-converter:1.0.0-M1",
+    "coordinatesV2": "org.apache.directory.shared:shared-ldap-schema-converter:1.0.0-M4",
+    "caller": "|java+method:///org/apache/directory/shared/converter/schema/SchemaElementImpl/descToLdif()|",
+    "called": "|java+method:///org/apache/directory/shared/util/Strings/isEmpty(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/apache/directory/shared/ldap/model/ldif/LdifUtils/convertAttributesToLdif(org.apache.directory.shared.ldap.model.entry.Entry)|",
+      "|java+method:///org/apache/directory/shared/util/Strings/isEmpty(java.lang.String)|",
+      "|java+method:///org/apache/directory/shared/ldap/model/entry/Entry/put(org.apache.directory.shared.ldap.model.entry.EntryAttribute%5B%5D)|",
+      "|java+constructor:///org/apache/directory/shared/ldap/model/entry/DefaultEntryAttribute/DefaultEntryAttribute(java.lang.String,java.lang.String%5B%5D)|",
+      "|java+constructor:///org/apache/directory/shared/ldap/model/entry/DefaultEntry/DefaultEntry()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/directory/shared/ldap/model/ldif/LdifUtils/convertAttributesToLdif(org.apache.directory.shared.ldap.model.entry.Entry)|",
+      "|java+method:///org/apache/directory/shared/ldap/model/entry/Entry/put(org.apache.directory.shared.ldap.model.entry.Attribute%5B%5D)|",
+      "|java+constructor:///org/apache/directory/shared/ldap/model/entry/DefaultAttribute/DefaultAttribute(java.lang.String,java.lang.String%5B%5D)|",
+      "|java+method:///org/apache/directory/shared/util/Strings/isEmpty(java.lang.String)|",
+      "|java+constructor:///org/apache/directory/shared/ldap/model/entry/DefaultEntry/DefaultEntry()|"
+    ],
+    "affectedLib": "org.apache.directory.shared:shared-util:1.0.0-M4",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.directory.shared:shared-ldap-schema-converter:1.0.0-M1",
+    "coordinatesV2": "org.apache.directory.shared:shared-ldap-schema-converter:1.0.0-M4",
+    "caller": "|java+method:///org/apache/directory/shared/converter/schema/SchemaElementImpl/nameToLdif()|",
+    "called": "|java+constructor:///org/apache/directory/shared/ldap/model/entry/DefaultEntry/DefaultEntry()|",
+    "v1Body": [
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/apache/directory/shared/ldap/model/ldif/LdifUtils/convertAttributesToLdif(org.apache.directory.shared.ldap.model.entry.Entry)|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/apache/directory/shared/ldap/model/entry/Entry/put(org.apache.directory.shared.ldap.model.entry.EntryAttribute%5B%5D)|",
+      "|java+constructor:///org/apache/directory/shared/ldap/model/entry/DefaultEntry/DefaultEntry()|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///org/apache/directory/shared/ldap/model/entry/EntryAttribute/add(java.lang.String%5B%5D)|",
+      "|java+constructor:///org/apache/directory/shared/ldap/model/entry/DefaultEntryAttribute/DefaultEntryAttribute(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/apache/directory/shared/ldap/model/entry/Attribute/add(java.lang.String%5B%5D)|",
+      "|java+method:///org/apache/directory/shared/ldap/model/ldif/LdifUtils/convertAttributesToLdif(org.apache.directory.shared.ldap.model.entry.Entry)|",
+      "|java+method:///org/apache/directory/shared/ldap/model/entry/Entry/put(org.apache.directory.shared.ldap.model.entry.Attribute%5B%5D)|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+constructor:///org/apache/directory/shared/ldap/model/entry/DefaultAttribute/DefaultAttribute(java.lang.String)|",
+      "|java+constructor:///org/apache/directory/shared/ldap/model/entry/DefaultEntry/DefaultEntry()|",
+      "|java+method:///java/util/List/iterator()|"
+    ],
+    "affectedLib": "org.apache.directory.shared:shared-ldap-model:1.0.0-M4",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.directory.shared:shared-ldap-schema-converter:1.0.0-M1",
+    "coordinatesV2": "org.apache.directory.shared:shared-ldap-schema-converter:1.0.0-M4",
+    "caller": "|java+method:///org/apache/directory/shared/converter/schema/AttributeTypeHolder/dnToLdif(java.lang.String)|",
+    "called": "|java+constructor:///org/apache/directory/shared/ldap/model/entry/DefaultEntry/DefaultEntry(java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/directory/shared/ldap/model/entry/DefaultEntry/DefaultEntry(org.apache.directory.shared.ldap.model.name.Dn)|",
+      "|java+constructor:///org/apache/directory/shared/ldap/model/name/Dn/Dn(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/directory/shared/ldap/model/name/Rdn/escapeValue(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/apache/directory/shared/ldap/model/ldif/LdifUtils/convertEntryToLdif(org.apache.directory.shared.ldap.model.entry.Entry)|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/directory/shared/ldap/model/name/Rdn/escapeValue(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///org/apache/directory/shared/ldap/model/entry/DefaultEntry/DefaultEntry(java.lang.String)|",
+      "|java+method:///org/apache/directory/shared/ldap/model/ldif/LdifUtils/convertToLdif(org.apache.directory.shared.ldap.model.entry.Entry)|"
+    ],
+    "affectedLib": "org.apache.directory.shared:shared-ldap-model:1.0.0-M4",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.directory.shared:shared-ldap-schema-converter:1.0.0-M1",
+    "coordinatesV2": "org.apache.directory.shared:shared-ldap-schema-converter:1.0.0-M4",
+    "caller": "|java+method:///org/apache/directory/shared/converter/schema/SchemaElementImpl/descToLdif()|",
+    "called": "|java+constructor:///org/apache/directory/shared/ldap/model/entry/DefaultEntry/DefaultEntry()|",
+    "v1Body": [
+      "|java+method:///org/apache/directory/shared/ldap/model/ldif/LdifUtils/convertAttributesToLdif(org.apache.directory.shared.ldap.model.entry.Entry)|",
+      "|java+method:///org/apache/directory/shared/util/Strings/isEmpty(java.lang.String)|",
+      "|java+method:///org/apache/directory/shared/ldap/model/entry/Entry/put(org.apache.directory.shared.ldap.model.entry.EntryAttribute%5B%5D)|",
+      "|java+constructor:///org/apache/directory/shared/ldap/model/entry/DefaultEntryAttribute/DefaultEntryAttribute(java.lang.String,java.lang.String%5B%5D)|",
+      "|java+constructor:///org/apache/directory/shared/ldap/model/entry/DefaultEntry/DefaultEntry()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/directory/shared/ldap/model/ldif/LdifUtils/convertAttributesToLdif(org.apache.directory.shared.ldap.model.entry.Entry)|",
+      "|java+method:///org/apache/directory/shared/ldap/model/entry/Entry/put(org.apache.directory.shared.ldap.model.entry.Attribute%5B%5D)|",
+      "|java+constructor:///org/apache/directory/shared/ldap/model/entry/DefaultAttribute/DefaultAttribute(java.lang.String,java.lang.String%5B%5D)|",
+      "|java+method:///org/apache/directory/shared/util/Strings/isEmpty(java.lang.String)|",
+      "|java+constructor:///org/apache/directory/shared/ldap/model/entry/DefaultEntry/DefaultEntry()|"
+    ],
+    "affectedLib": "org.apache.directory.shared:shared-ldap-model:1.0.0-M4",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.directory.shared:shared-ldap-schema-converter:1.0.0-M1",
+    "coordinatesV2": "org.apache.directory.shared:shared-ldap-schema-converter:1.0.0-M4",
+    "caller": "|java+method:///org/apache/directory/shared/converter/schema/SchemaElementImpl/extensionsToLdif(java.lang.String)|",
+    "called": "|java+constructor:///org/apache/directory/shared/ldap/model/entry/DefaultEntry/DefaultEntry()|",
+    "v1Body": [
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/directory/shared/ldap/model/ldif/LdifUtils/convertAttributesToLdif(org.apache.directory.shared.ldap.model.entry.Entry)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/util/Set/iterator()|",
+      "|java+constructor:///org/apache/directory/shared/ldap/model/entry/DefaultEntry/DefaultEntry()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/apache/directory/shared/ldap/model/entry/EntryAttribute/add(java.lang.String%5B%5D)|",
+      "|java+constructor:///org/apache/directory/shared/ldap/model/entry/DefaultEntryAttribute/DefaultEntryAttribute(java.lang.String)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/Map/keySet()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/apache/directory/shared/ldap/model/ldif/LdifUtils/convertAttributesToLdif(org.apache.directory.shared.ldap.model.entry.Entry)|",
+      "|java+constructor:///org/apache/directory/shared/ldap/model/entry/DefaultAttribute/DefaultAttribute(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/util/Set/iterator()|",
+      "|java+constructor:///org/apache/directory/shared/ldap/model/entry/DefaultEntry/DefaultEntry()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/directory/shared/ldap/model/entry/Attribute/add(java.lang.String%5B%5D)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/Map/keySet()|"
+    ],
+    "affectedLib": "org.apache.directory.shared:shared-ldap-model:1.0.0-M4",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.directory.shared:shared-ldap-schema-converter:1.0.0-M1",
+    "coordinatesV2": "org.apache.directory.shared:shared-ldap-schema-converter:1.0.0-M4",
+    "caller": "|java+method:///org/apache/directory/shared/converter/schema/ObjectClassHolder/dnToLdif(java.lang.String)|",
+    "called": "|java+constructor:///org/apache/directory/shared/ldap/model/entry/DefaultEntry/DefaultEntry(java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/directory/shared/ldap/model/entry/DefaultEntry/DefaultEntry(org.apache.directory.shared.ldap.model.name.Dn)|",
+      "|java+constructor:///org/apache/directory/shared/ldap/model/name/Dn/Dn(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/directory/shared/ldap/model/name/Rdn/escapeValue(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/apache/directory/shared/ldap/model/ldif/LdifUtils/convertEntryToLdif(org.apache.directory.shared.ldap.model.entry.Entry)|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/directory/shared/ldap/model/name/Rdn/escapeValue(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///org/apache/directory/shared/ldap/model/entry/DefaultEntry/DefaultEntry(java.lang.String)|",
+      "|java+method:///org/apache/directory/shared/ldap/model/ldif/LdifUtils/convertToLdif(org.apache.directory.shared.ldap.model.entry.Entry)|"
+    ],
+    "affectedLib": "org.apache.directory.shared:shared-ldap-model:1.0.0-M4",
+    "change": "UPDATED"
+  }
+]

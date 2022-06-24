@@ -1,0 +1,418 @@
+[
+  {
+    "coordinatesV1": "org.apache.syncope:syncope-common:1.2.2",
+    "coordinatesV2": "org.apache.syncope:syncope-common:1.1.4",
+    "caller": "|java+method:///org/apache/syncope/common/to/SchemaTO/getMandatoryCondition()|",
+    "called": "|java+method:///org/apache/commons/lang/StringUtils/isNotBlank(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/lang/StringUtils/isNotBlank(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/lang3/StringUtils/isNotBlank(java.lang.CharSequence)|"
+    ],
+    "affectedLib": "commons-lang:commons-lang:2.6",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.apache.syncope:syncope-common:1.2.2",
+    "coordinatesV2": "org.apache.syncope:syncope-common:1.1.4",
+    "caller": "|java+method:///org/apache/syncope/common/AbstractBaseBean/toString()|",
+    "called": "|java+method:///org/apache/commons/lang/builder/ReflectionToStringBuilder/toString(java.lang.Object,org.apache.commons.lang.builder.ToStringStyle)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/lang/builder/ReflectionToStringBuilder/toString(java.lang.Object,org.apache.commons.lang.builder.ToStringStyle)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/lang3/builder/ReflectionToStringBuilder/toString(java.lang.Object,org.apache.commons.lang3.builder.ToStringStyle)|"
+    ],
+    "affectedLib": "commons-lang:commons-lang:2.6",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.apache.syncope:syncope-common:1.2.2",
+    "coordinatesV2": "org.apache.syncope:syncope-common:1.1.4",
+    "caller": "|java+method:///org/apache/syncope/common/AbstractBaseBean/hashCode()|",
+    "called": "|java+method:///org/apache/commons/lang/builder/HashCodeBuilder/reflectionHashCode(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/lang/builder/HashCodeBuilder/reflectionHashCode(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/lang3/builder/HashCodeBuilder/reflectionHashCode(java.lang.Object,java.lang.String%5B%5D)|"
+    ],
+    "affectedLib": "commons-lang:commons-lang:2.6",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.apache.syncope:syncope-common:1.2.2",
+    "coordinatesV2": "org.apache.syncope:syncope-common:1.1.4",
+    "caller": "|java+method:///org/apache/syncope/common/types/AuditLoggerName/fromLoggerName(java.lang.String)|",
+    "called": "|java+method:///org/apache/commons/lang/StringUtils/isBlank(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/syncope/common/types/SyncopeLoggerType/getPrefix()|",
+      "|java+method:///org/apache/commons/lang/StringUtils/isBlank(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///java/text/ParseException/ParseException(java.lang.String,int)|",
+      "|java+method:///java/lang/String/startsWith(java.lang.String)|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|",
+      "|java+method:///org/apache/syncope/common/types/AuditElements$Category/valueOf(java.lang.String)|",
+      "|java+constructor:///org/apache/syncope/common/types/AuditLoggerName/AuditLoggerName(org.apache.syncope.common.types.AuditElements$Category,java.lang.Enum,org.apache.syncope.common.types.AuditElements$Result)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/String/split(java.lang.String)|",
+      "|java+method:///org/apache/syncope/common/types/AuditElements$Category/getSubCategory()|",
+      "|java+method:///java/lang/Enum/valueOf(java.lang.Class,java.lang.String)|",
+      "|java+method:///org/apache/syncope/common/types/AuditElements$Result/valueOf(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/syncope/common/to/EventCategoryTO/getEvents()|",
+      "|java+method:///org/apache/syncope/common/to/EventCategoryTO/getType()|",
+      "|java+method:///org/apache/commons/lang3/StringUtils/isBlank(java.lang.CharSequence)|",
+      "|java+method:///org/apache/syncope/common/to/EventCategoryTO/getCategory()|",
+      "|java+method:///java/lang/String/replaceAll(java.lang.String,java.lang.String)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///java/text/ParseException/ParseException(java.lang.String,int)|",
+      "|java+method:///java/lang/String/startsWith(java.lang.String)|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|",
+      "|java+method:///java/util/Map$Entry/getValue()|",
+      "|java+method:///org/apache/syncope/common/util/LoggerEventUtils/parseEventCategory(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/util/Map$Entry/getKey()|",
+      "|java+constructor:///org/apache/syncope/common/types/AuditLoggerName/AuditLoggerName(org.apache.syncope.common.types.AuditElements$EventCategoryType,java.lang.String,java.lang.String,java.lang.String,org.apache.syncope.common.types.AuditElements$Result)|",
+      "|java+method:///java/util/List/isEmpty()|",
+      "|java+method:///org/apache/syncope/common/to/EventCategoryTO/getSubcategory()|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///org/apache/syncope/common/types/LoggerType/getPrefix()|"
+    ],
+    "affectedLib": "commons-lang:commons-lang:2.6",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.apache.syncope:syncope-common:1.2.2",
+    "coordinatesV2": "org.apache.syncope:syncope-common:1.1.4",
+    "caller": "|java+method:///org/apache/syncope/common/to/UserTO$1/accept(java.lang.reflect.Field)|",
+    "called": "|java+method:///org/apache/commons/lang/builder/ReflectionToStringBuilder/accept(java.lang.reflect.Field)|",
+    "v1Body": [
+      "|java+method:///java/lang/reflect/Field/getName()|",
+      "|java+method:///org/apache/commons/lang/builder/ReflectionToStringBuilder/accept(java.lang.reflect.Field)|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/reflect/Field/getName()|",
+      "|java+method:///org/apache/commons/lang3/builder/ReflectionToStringBuilder/accept(java.lang.reflect.Field)|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|"
+    ],
+    "affectedLib": "commons-lang:commons-lang:2.6",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.apache.syncope:syncope-common:1.2.2",
+    "coordinatesV2": "org.apache.syncope:syncope-common:1.1.4",
+    "caller": "|java+method:///org/apache/syncope/common/AbstractBaseBean/equals(java.lang.Object)|",
+    "called": "|java+method:///org/apache/commons/lang/builder/EqualsBuilder/reflectionEquals(java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/lang/builder/EqualsBuilder/reflectionEquals(java.lang.Object,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/lang3/builder/EqualsBuilder/reflectionEquals(java.lang.Object,java.lang.Object,java.lang.String%5B%5D)|"
+    ],
+    "affectedLib": "commons-lang:commons-lang:2.6",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.apache.syncope:syncope-common:1.1.4",
+    "coordinatesV2": "org.apache.syncope:syncope-common:1.2.2",
+    "caller": "|java+method:///org/apache/syncope/common/to/SchemaTO/getMandatoryCondition()|",
+    "called": "|java+method:///org/apache/commons/lang3/StringUtils/isNotBlank(java.lang.CharSequence)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/lang/StringUtils/isNotBlank(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/lang3/StringUtils/isNotBlank(java.lang.CharSequence)|"
+    ],
+    "affectedLib": "org.apache.commons:commons-lang3:3.3.2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.syncope:syncope-common:1.1.4",
+    "coordinatesV2": "org.apache.syncope:syncope-common:1.2.2",
+    "caller": "|java+method:///org/apache/syncope/common/AbstractBaseBean/toString()|",
+    "called": "|java+method:///org/apache/commons/lang3/builder/ReflectionToStringBuilder/toString(java.lang.Object,org.apache.commons.lang3.builder.ToStringStyle)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/lang/builder/ReflectionToStringBuilder/toString(java.lang.Object,org.apache.commons.lang.builder.ToStringStyle)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/lang3/builder/ReflectionToStringBuilder/toString(java.lang.Object,org.apache.commons.lang3.builder.ToStringStyle)|"
+    ],
+    "affectedLib": "org.apache.commons:commons-lang3:3.3.2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.syncope:syncope-common:1.1.4",
+    "coordinatesV2": "org.apache.syncope:syncope-common:1.2.2",
+    "caller": "|java+method:///org/apache/syncope/common/AbstractBaseBean/hashCode()|",
+    "called": "|java+method:///org/apache/commons/lang3/builder/HashCodeBuilder/reflectionHashCode(java.lang.Object,java.lang.String%5B%5D)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/lang/builder/HashCodeBuilder/reflectionHashCode(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/lang3/builder/HashCodeBuilder/reflectionHashCode(java.lang.Object,java.lang.String%5B%5D)|"
+    ],
+    "affectedLib": "org.apache.commons:commons-lang3:3.3.2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.syncope:syncope-common:1.1.4",
+    "coordinatesV2": "org.apache.syncope:syncope-common:1.2.2",
+    "caller": "|java+method:///org/apache/syncope/common/types/ConnConfProperty/compareTo(org.apache.syncope.common.types.ConnConfProperty)|",
+    "called": "|java+method:///org/apache/commons/lang3/ObjectUtils/compare(java.lang.Comparable,java.lang.Comparable)|",
+    "v1Body": [
+      "|java+method:///org/apache/syncope/common/types/ConnConfProperty/getSchema()|",
+      "|java+method:///org/apache/syncope/common/types/ConnConfPropSchema/compareTo(org.apache.syncope.common.types.ConnConfPropSchema)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/syncope/common/types/ConnConfProperty/getSchema()|",
+      "|java+method:///org/apache/commons/lang3/ObjectUtils/compare(java.lang.Comparable,java.lang.Comparable)|"
+    ],
+    "affectedLib": "org.apache.commons:commons-lang3:3.3.2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.syncope:syncope-common:1.1.4",
+    "coordinatesV2": "org.apache.syncope:syncope-common:1.2.2",
+    "caller": "|java+method:///org/apache/syncope/common/util/AttributableOperations/apply(org.apache.syncope.common.to.UserTO,org.apache.syncope.common.mod.UserMod)|",
+    "called": "|java+method:///org/apache/commons/lang3/SerializationUtils/clone(java.io.Serializable)|",
+    "v1Body": [
+      "|java+method:///org/apache/syncope/common/to/MembershipTO/setRoleId(long)|",
+      "|java+constructor:///org/apache/syncope/common/to/MembershipTO/MembershipTO()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/apache/syncope/common/to/UserTO/getMembershipMap()|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+method:///org/apache/syncope/common/to/UserTO/setUsername(java.lang.String)|",
+      "|java+method:///java/util/Set/iterator()|",
+      "|java+method:///org/apache/syncope/common/to/UserTO/setPassword(java.lang.String)|",
+      "|java+method:///org/apache/syncope/common/mod/UserMod/getUsername()|",
+      "|java+method:///org/apache/syncope/common/util/AttributableOperations/clone(org.apache.syncope.common.to.AbstractAttributableTO)|",
+      "|java+method:///org/apache/syncope/common/mod/UserMod/getId()|",
+      "|java+method:///org/apache/syncope/common/mod/UserMod/getPassword()|",
+      "|java+method:///org/apache/syncope/common/mod/UserMod/getMembershipsToBeRemoved()|",
+      "|java+method:///org/apache/syncope/common/mod/UserMod/getMembershipsToBeAdded()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/apache/syncope/common/to/UserTO/getId()|",
+      "|java+method:///org/apache/syncope/common/util/AttributableOperations/apply(org.apache.syncope.common.to.AbstractAttributableTO,org.apache.syncope.common.mod.AbstractAttributableMod,org.apache.syncope.common.to.AbstractAttributableTO)|",
+      "|java+method:///org/apache/syncope/common/mod/MembershipMod/getRole()|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|",
+      "|java+method:///org/apache/syncope/common/to/UserTO/removeMembership(org.apache.syncope.common.to.MembershipTO)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/syncope/common/to/MembershipTO/setRoleId(long)|",
+      "|java+constructor:///org/apache/syncope/common/to/MembershipTO/MembershipTO()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/apache/syncope/common/to/UserTO/getMembershipMap()|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+method:///org/apache/syncope/common/mod/UserMod/getMembershipsToRemove()|",
+      "|java+method:///org/apache/syncope/common/mod/UserMod/getMembershipsToAdd()|",
+      "|java+method:///org/apache/syncope/common/to/UserTO/setUsername(java.lang.String)|",
+      "|java+method:///java/util/Set/iterator()|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|",
+      "|java+method:///org/apache/syncope/common/mod/UserMod/getUsername()|",
+      "|java+method:///org/apache/syncope/common/mod/UserMod/getId()|",
+      "|java+method:///org/apache/syncope/common/mod/UserMod/getPassword()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/apache/syncope/common/to/UserTO/getId()|",
+      "|java+method:///org/apache/syncope/common/util/AttributableOperations/apply(org.apache.syncope.common.to.AbstractAttributableTO,org.apache.syncope.common.mod.AbstractAttributableMod,org.apache.syncope.common.to.AbstractAttributableTO)|",
+      "|java+method:///org/apache/syncope/common/mod/MembershipMod/getRole()|",
+      "|java+method:///org/apache/syncope/common/to/UserTO/setPassword(java.lang.String)|",
+      "|java+method:///org/apache/commons/lang3/SerializationUtils/clone(java.io.Serializable)|",
+      "|java+method:///java/util/List/remove(java.lang.Object)|",
+      "|java+method:///org/apache/syncope/common/to/UserTO/getMemberships()|"
+    ],
+    "affectedLib": "org.apache.commons:commons-lang3:3.3.2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.syncope:syncope-common:1.1.4",
+    "coordinatesV2": "org.apache.syncope:syncope-common:1.2.2",
+    "caller": "|java+method:///org/apache/syncope/common/types/AuditLoggerName/fromLoggerName(java.lang.String)|",
+    "called": "|java+method:///org/apache/commons/lang3/StringUtils/isBlank(java.lang.CharSequence)|",
+    "v1Body": [
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/syncope/common/types/SyncopeLoggerType/getPrefix()|",
+      "|java+method:///org/apache/commons/lang/StringUtils/isBlank(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///java/text/ParseException/ParseException(java.lang.String,int)|",
+      "|java+method:///java/lang/String/startsWith(java.lang.String)|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|",
+      "|java+method:///org/apache/syncope/common/types/AuditElements$Category/valueOf(java.lang.String)|",
+      "|java+constructor:///org/apache/syncope/common/types/AuditLoggerName/AuditLoggerName(org.apache.syncope.common.types.AuditElements$Category,java.lang.Enum,org.apache.syncope.common.types.AuditElements$Result)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/String/split(java.lang.String)|",
+      "|java+method:///org/apache/syncope/common/types/AuditElements$Category/getSubCategory()|",
+      "|java+method:///java/lang/Enum/valueOf(java.lang.Class,java.lang.String)|",
+      "|java+method:///org/apache/syncope/common/types/AuditElements$Result/valueOf(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/syncope/common/to/EventCategoryTO/getEvents()|",
+      "|java+method:///org/apache/syncope/common/to/EventCategoryTO/getType()|",
+      "|java+method:///org/apache/commons/lang3/StringUtils/isBlank(java.lang.CharSequence)|",
+      "|java+method:///org/apache/syncope/common/to/EventCategoryTO/getCategory()|",
+      "|java+method:///java/lang/String/replaceAll(java.lang.String,java.lang.String)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///java/text/ParseException/ParseException(java.lang.String,int)|",
+      "|java+method:///java/lang/String/startsWith(java.lang.String)|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|",
+      "|java+method:///java/util/Map$Entry/getValue()|",
+      "|java+method:///org/apache/syncope/common/util/LoggerEventUtils/parseEventCategory(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/util/Map$Entry/getKey()|",
+      "|java+constructor:///org/apache/syncope/common/types/AuditLoggerName/AuditLoggerName(org.apache.syncope.common.types.AuditElements$EventCategoryType,java.lang.String,java.lang.String,java.lang.String,org.apache.syncope.common.types.AuditElements$Result)|",
+      "|java+method:///java/util/List/isEmpty()|",
+      "|java+method:///org/apache/syncope/common/to/EventCategoryTO/getSubcategory()|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///org/apache/syncope/common/types/LoggerType/getPrefix()|"
+    ],
+    "affectedLib": "org.apache.commons:commons-lang3:3.3.2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.syncope:syncope-common:1.1.4",
+    "coordinatesV2": "org.apache.syncope:syncope-common:1.2.2",
+    "caller": "|java+method:///org/apache/syncope/common/to/UserTO$1/accept(java.lang.reflect.Field)|",
+    "called": "|java+method:///org/apache/commons/lang3/builder/ReflectionToStringBuilder/accept(java.lang.reflect.Field)|",
+    "v1Body": [
+      "|java+method:///java/lang/reflect/Field/getName()|",
+      "|java+method:///org/apache/commons/lang/builder/ReflectionToStringBuilder/accept(java.lang.reflect.Field)|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/reflect/Field/getName()|",
+      "|java+method:///org/apache/commons/lang3/builder/ReflectionToStringBuilder/accept(java.lang.reflect.Field)|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|"
+    ],
+    "affectedLib": "org.apache.commons:commons-lang3:3.3.2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.syncope:syncope-common:1.1.4",
+    "coordinatesV2": "org.apache.syncope:syncope-common:1.2.2",
+    "caller": "|java+method:///org/apache/syncope/common/AbstractBaseBean/equals(java.lang.Object)|",
+    "called": "|java+method:///org/apache/commons/lang3/builder/EqualsBuilder/reflectionEquals(java.lang.Object,java.lang.Object,java.lang.String%5B%5D)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/lang/builder/EqualsBuilder/reflectionEquals(java.lang.Object,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/lang3/builder/EqualsBuilder/reflectionEquals(java.lang.Object,java.lang.Object,java.lang.String%5B%5D)|"
+    ],
+    "affectedLib": "org.apache.commons:commons-lang3:3.3.2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.syncope:syncope-common:1.1.4",
+    "coordinatesV2": "org.apache.syncope:syncope-common:1.2.2",
+    "caller": "|java+method:///org/apache/syncope/common/util/AttributableOperations/diff(org.apache.syncope.common.to.UserTO,org.apache.syncope.common.to.UserTO,boolean)|",
+    "called": "|java+method:///org/apache/commons/lang3/StringUtils/isNotBlank(java.lang.CharSequence)|",
+    "v1Body": [
+      "|java+method:///org/apache/syncope/common/mod/MembershipMod/setRole(long)|",
+      "|java+method:///org/apache/syncope/common/mod/MembershipMod/setResourcesToBeAdded(java.util.Set)|",
+      "|java+method:///org/apache/syncope/common/mod/MembershipMod/addVirtualAttributeToBeUpdated(org.apache.syncope.common.mod.AttributeMod)|",
+      "|java+method:///org/apache/syncope/common/mod/AttributeMod/setSchema(java.lang.String)|",
+      "|java+method:///java/util/Map$Entry/getKey()|",
+      "|java+method:///org/apache/syncope/common/to/MembershipTO/getDerivedAttributes()|",
+      "|java+method:///org/apache/syncope/common/to/UserTO/getUsername()|",
+      "|java+method:///org/apache/syncope/common/mod/MembershipMod/addDerivedAttributeToBeAdded(java.lang.String)|",
+      "|java+method:///org/apache/syncope/common/to/MembershipTO/getRoleId()|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///java/util/Set/iterator()|",
+      "|java+method:///java/util/Map/containsKey(java.lang.Object)|",
+      "|java+method:///org/apache/syncope/common/to/MembershipTO/getVirtualAttributes()|",
+      "|java+method:///java/util/Map$Entry/getValue()|",
+      "|java+method:///org/apache/syncope/common/mod/UserMod/addMembershipToBeAdded(org.apache.syncope.common.mod.MembershipMod)|",
+      "|java+constructor:///java/util/HashSet/HashSet(java.util.Collection)|",
+      "|java+method:///org/apache/syncope/common/mod/UserMod/addMembershipToBeRemoved(java.lang.Long)|",
+      "|java+method:///org/apache/syncope/common/mod/UserMod/setUsername(java.lang.String)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/apache/syncope/common/mod/MembershipMod/addAttributeToBeRemoved(java.lang.String)|",
+      "|java+method:///org/apache/syncope/common/mod/UserMod/setPassword(java.lang.String)|",
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///org/apache/syncope/common/to/UserTO/getMembershipMap()|",
+      "|java+method:///org/apache/syncope/common/mod/MembershipMod/isEmpty()|",
+      "|java+method:///org/apache/syncope/common/util/AttributableOperations/diff(org.apache.syncope.common.to.AbstractAttributableTO,org.apache.syncope.common.to.AbstractAttributableTO,org.apache.syncope.common.mod.AbstractAttributableMod,boolean)|",
+      "|java+method:///org/apache/syncope/common/mod/AttributeMod/isEmpty()|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+method:///org/apache/syncope/common/mod/MembershipMod/addAttributeToBeUpdated(org.apache.syncope.common.mod.AttributeMod)|",
+      "|java+constructor:///org/apache/syncope/common/mod/UserMod/UserMod()|",
+      "|java+method:///org/apache/syncope/common/to/AttributeTO/getSchema()|",
+      "|java+method:///org/apache/syncope/common/to/AttributeTO/getValues()|",
+      "|java+method:///java/util/Set/removeAll(java.util.Collection)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/apache/syncope/common/to/UserTO/getPassword()|",
+      "|java+method:///java/util/Map/keySet()|",
+      "|java+method:///org/apache/syncope/common/mod/AttributeMod/setValuesToBeAdded(java.util.List)|",
+      "|java+method:///org/apache/syncope/common/to/MembershipTO/getAttributes()|",
+      "|java+constructor:///org/apache/syncope/common/mod/MembershipMod/MembershipMod()|",
+      "|java+method:///org/apache/syncope/common/to/MembershipTO/getResources()|",
+      "|java+method:///org/apache/syncope/common/to/MembershipTO/getId()|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///java/util/Map/entrySet()|",
+      "|java+constructor:///org/apache/syncope/common/mod/AttributeMod/AttributeMod()|",
+      "|java+method:///org/apache/syncope/common/mod/AttributeMod/getSchema()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/syncope/common/mod/MembershipMod/setRole(long)|",
+      "|java+method:///org/apache/syncope/common/mod/MembershipMod/getVirAttrsToUpdate()|",
+      "|java+method:///org/apache/syncope/common/to/MembershipTO/getVirAttrs()|",
+      "|java+method:///org/apache/syncope/common/mod/AttributeMod/setSchema(java.lang.String)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/util/Map$Entry/getKey()|",
+      "|java+method:///org/apache/syncope/common/mod/UserMod/setSecurityAnswer(java.lang.String)|",
+      "|java+method:///org/apache/syncope/common/to/UserTO/getUsername()|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+method:///java/util/List/addAll(java.util.Collection)|",
+      "|java+method:///org/apache/syncope/common/to/UserTO/getSecurityAnswer()|",
+      "|java+method:///java/util/Set/iterator()|",
+      "|java+method:///java/util/Map/containsKey(java.lang.Object)|",
+      "|java+constructor:///org/apache/syncope/common/mod/MembershipMod/MembershipMod()|",
+      "|java+constructor:///java/util/HashSet/HashSet(java.util.Collection)|",
+      "|java+method:///org/apache/syncope/common/mod/UserMod/setUsername(java.lang.String)|",
+      "|java+method:///org/apache/syncope/common/mod/MembershipMod/getAttrsToUpdate()|",
+      "|java+method:///org/apache/syncope/common/mod/UserMod/setPassword(java.lang.String)|",
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///org/apache/syncope/common/mod/UserMod/setSecurityQuestion(java.lang.Long)|",
+      "|java+method:///org/apache/syncope/common/to/UserTO/getMembershipMap()|",
+      "|java+method:///org/apache/syncope/common/mod/MembershipMod/isEmpty()|",
+      "|java+method:///java/lang/Long/equals(java.lang.Object)|",
+      "|java+method:///org/apache/syncope/common/util/AttributableOperations/diff(org.apache.syncope.common.to.AbstractAttributableTO,org.apache.syncope.common.to.AbstractAttributableTO,org.apache.syncope.common.mod.AbstractAttributableMod,boolean)|",
+      "|java+method:///org/apache/syncope/common/mod/AttributeMod/isEmpty()|",
+      "|java+constructor:///org/apache/syncope/common/mod/UserMod/UserMod()|",
+      "|java+method:///org/apache/syncope/common/mod/UserMod/getMembershipsToRemove()|",
+      "|java+method:///org/apache/syncope/common/to/AttributeTO/getSchema()|",
+      "|java+method:///org/apache/syncope/common/mod/UserMod/getMembershipsToAdd()|",
+      "|java+method:///org/apache/syncope/common/to/AttributeTO/getValues()|",
+      "|java+method:///java/util/Set/removeAll(java.util.Collection)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/apache/syncope/common/to/UserTO/getPassword()|",
+      "|java+method:///java/util/Map/keySet()|",
+      "|java+method:///org/apache/syncope/common/to/MembershipTO/getDerAttrs()|",
+      "|java+method:///org/apache/syncope/common/mod/MembershipMod/getDerAttrsToAdd()|",
+      "|java+method:///org/apache/syncope/common/to/MembershipTO/getRoleId()|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///org/apache/commons/lang3/StringUtils/isNotBlank(java.lang.CharSequence)|",
+      "|java+method:///org/apache/syncope/common/to/MembershipTO/getAttrs()|",
+      "|java+method:///org/apache/syncope/common/to/MembershipTO/equals(java.lang.Object)|",
+      "|java+method:///java/util/Map$Entry/getValue()|",
+      "|java+method:///org/apache/syncope/common/mod/AttributeMod/getValuesToBeAdded()|",
+      "|java+method:///org/apache/syncope/common/to/MembershipTO/getId()|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///org/apache/syncope/common/to/UserTO/getSecurityQuestion()|",
+      "|java+method:///java/util/Map/entrySet()|",
+      "|java+method:///org/apache/syncope/common/mod/MembershipMod/getAttrsToRemove()|",
+      "|java+constructor:///org/apache/syncope/common/mod/AttributeMod/AttributeMod()|",
+      "|java+method:///java/util/Set/add(java.lang.Object)|",
+      "|java+method:///org/apache/syncope/common/mod/AttributeMod/getSchema()|"
+    ],
+    "affectedLib": "org.apache.commons:commons-lang3:3.3.2",
+    "change": "ADDED"
+  }
+]

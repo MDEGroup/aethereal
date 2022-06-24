@@ -1,0 +1,166 @@
+[
+  {
+    "coordinatesV1": "org.apache.servicemix.jbi:org.apache.servicemix.jbi.runtime:1.5.0",
+    "coordinatesV2": "org.apache.servicemix.jbi:org.apache.servicemix.jbi.runtime:1.4.0",
+    "caller": "|java+initializer:///org/apache/servicemix/jbi/runtime/impl/utils/DOMUtil/DOMUtil$initializer|",
+    "called": "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|",
+    "v1Body": [
+      "|java+constructor:///java/util/concurrent/ConcurrentLinkedQueue/ConcurrentLinkedQueue()|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+constructor:///java/util/concurrent/ConcurrentLinkedQueue/ConcurrentLinkedQueue()|"
+    ],
+    "affectedLib": "commons-logging:commons-logging:1.1.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.apache.servicemix.jbi:org.apache.servicemix.jbi.runtime:1.4.0",
+    "coordinatesV2": "org.apache.servicemix.jbi:org.apache.servicemix.jbi.runtime:1.5.0",
+    "caller": "|java+constructor:///org/apache/servicemix/jbi/runtime/impl/AbstractComponentContext/AbstractComponentContext(org.apache.servicemix.jbi.runtime.impl.ComponentRegistryImpl)|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.6.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.servicemix.jbi:org.apache.servicemix.jbi.runtime:1.4.0",
+    "coordinatesV2": "org.apache.servicemix.jbi:org.apache.servicemix.jbi.runtime:1.5.0",
+    "caller": "|java+constructor:///org/apache/servicemix/jbi/runtime/impl/ComponentContextImpl/ComponentContextImpl(org.apache.servicemix.jbi.runtime.impl.ComponentRegistryImpl,org.apache.servicemix.jbi.runtime.ComponentWrapper,java.util.Map)|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///java/lang/System/getProperty(java.lang.String,java.lang.String)|",
+      "|java+method:///org/apache/servicemix/nmr/api/NMR/getEndpointRegistry()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///java/util/concurrent/ArrayBlockingQueue/ArrayBlockingQueue(int)|",
+      "|java+constructor:///org/apache/servicemix/jbi/runtime/impl/EndpointImpl/EndpointImpl(java.util.Map)|",
+      "|java+constructor:///java/io/File/File(java.lang.String,java.lang.String)|",
+      "|java+method:///java/io/File/mkdirs()|",
+      "|java+constructor:///org/apache/servicemix/jbi/runtime/impl/AbstractComponentContext/AbstractComponentContext(org.apache.servicemix.jbi.runtime.impl.ComponentRegistryImpl)|",
+      "|java+method:///org/apache/servicemix/jbi/runtime/impl/EndpointImpl/getChannel()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///org/apache/servicemix/jbi/runtime/impl/DeliveryChannelImpl/DeliveryChannelImpl(org.apache.servicemix.jbi.runtime.impl.AbstractComponentContext,org.apache.servicemix.nmr.api.Channel,java.util.concurrent.BlockingQueue)|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+method:///java/lang/System/getProperty(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/apache/servicemix/nmr/api/EndpointRegistry/register(org.apache.servicemix.nmr.api.Endpoint,java.util.Map)|",
+      "|java+method:///org/apache/servicemix/jbi/runtime/impl/EndpointImpl/setQueue(java.util.concurrent.BlockingQueue)|",
+      "|java+method:///org/apache/servicemix/jbi/runtime/impl/ComponentRegistryImpl/getNmr()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/System/getProperty(java.lang.String,java.lang.String)|",
+      "|java+method:///org/apache/servicemix/nmr/api/NMR/getEndpointRegistry()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///java/util/concurrent/ArrayBlockingQueue/ArrayBlockingQueue(int)|",
+      "|java+constructor:///org/apache/servicemix/jbi/runtime/impl/EndpointImpl/EndpointImpl(java.util.Map)|",
+      "|java+constructor:///java/io/File/File(java.lang.String,java.lang.String)|",
+      "|java+method:///java/io/File/mkdirs()|",
+      "|java+constructor:///org/apache/servicemix/jbi/runtime/impl/AbstractComponentContext/AbstractComponentContext(org.apache.servicemix.jbi.runtime.impl.ComponentRegistryImpl)|",
+      "|java+method:///org/apache/servicemix/jbi/runtime/impl/EndpointImpl/getChannel()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///org/apache/servicemix/jbi/runtime/impl/DeliveryChannelImpl/DeliveryChannelImpl(org.apache.servicemix.jbi.runtime.impl.AbstractComponentContext,org.apache.servicemix.nmr.api.Channel,java.util.concurrent.BlockingQueue)|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///java/lang/System/getProperty(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/apache/servicemix/nmr/api/EndpointRegistry/register(org.apache.servicemix.nmr.api.Endpoint,java.util.Map)|",
+      "|java+method:///org/apache/servicemix/jbi/runtime/impl/EndpointImpl/setQueue(java.util.concurrent.BlockingQueue)|",
+      "|java+method:///org/apache/servicemix/jbi/runtime/impl/ComponentRegistryImpl/getNmr()|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.6.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.servicemix.jbi:org.apache.servicemix.jbi.runtime:1.4.0",
+    "coordinatesV2": "org.apache.servicemix.jbi:org.apache.servicemix.jbi.runtime:1.5.0",
+    "caller": "|java+constructor:///org/apache/servicemix/jbi/runtime/impl/ServiceEndpointImpl/ServiceEndpointImpl(javax.xml.namespace.QName,java.lang.String)|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.6.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.servicemix.jbi:org.apache.servicemix.jbi.runtime:1.4.0",
+    "coordinatesV2": "org.apache.servicemix.jbi:org.apache.servicemix.jbi.runtime:1.5.0",
+    "caller": "|java+constructor:///org/apache/servicemix/jbi/runtime/impl/ComponentRegistryImpl/ComponentRegistryImpl()|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+constructor:///java/util/concurrent/ConcurrentHashMap/ConcurrentHashMap()|",
+      "|java+constructor:///org/apache/servicemix/nmr/core/ServiceRegistryImpl/ServiceRegistryImpl()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/util/concurrent/ConcurrentHashMap/ConcurrentHashMap()|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+constructor:///org/apache/servicemix/nmr/core/ServiceRegistryImpl/ServiceRegistryImpl()|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.6.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.servicemix.jbi:org.apache.servicemix.jbi.runtime:1.4.0",
+    "coordinatesV2": "org.apache.servicemix.jbi:org.apache.servicemix.jbi.runtime:1.5.0",
+    "caller": "|java+constructor:///org/apache/servicemix/jbi/runtime/impl/ServiceEndpointImpl/ServiceEndpointImpl(java.util.Map)|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/servicemix/jbi/runtime/impl/ServiceEndpointImpl/getQNames(java.lang.Object)|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+method:///org/apache/servicemix/jbi/runtime/impl/ServiceEndpointImpl/getQName(java.lang.Object)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/servicemix/jbi/runtime/impl/ServiceEndpointImpl/getQNames(java.lang.Object)|",
+      "|java+method:///org/apache/servicemix/jbi/runtime/impl/ServiceEndpointImpl/getQName(java.lang.Object)|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.6.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.servicemix.jbi:org.apache.servicemix.jbi.runtime:1.4.0",
+    "coordinatesV2": "org.apache.servicemix.jbi:org.apache.servicemix.jbi.runtime:1.5.0",
+    "caller": "|java+initializer:///org/apache/servicemix/jbi/runtime/impl/utils/DOMUtil/DOMUtil$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+constructor:///java/util/concurrent/ConcurrentLinkedQueue/ConcurrentLinkedQueue()|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+constructor:///java/util/concurrent/ConcurrentLinkedQueue/ConcurrentLinkedQueue()|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.6.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.servicemix.jbi:org.apache.servicemix.jbi.runtime:1.4.0",
+    "coordinatesV2": "org.apache.servicemix.jbi:org.apache.servicemix.jbi.runtime:1.5.0",
+    "caller": "|java+constructor:///org/apache/servicemix/jbi/runtime/impl/ComponentRegistryImpl/ComponentRegistryImpl()|",
+    "called": "|java+constructor:///org/apache/servicemix/nmr/core/ServiceRegistryImpl/ServiceRegistryImpl()|",
+    "v1Body": [
+      "|java+constructor:///java/util/concurrent/ConcurrentHashMap/ConcurrentHashMap()|",
+      "|java+constructor:///org/apache/servicemix/nmr/core/ServiceRegistryImpl/ServiceRegistryImpl()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/util/concurrent/ConcurrentHashMap/ConcurrentHashMap()|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+constructor:///org/apache/servicemix/nmr/core/ServiceRegistryImpl/ServiceRegistryImpl()|"
+    ],
+    "affectedLib": "org.apache.servicemix.nmr:org.apache.servicemix.nmr.core:1.5.0",
+    "change": "UPDATED"
+  }
+]

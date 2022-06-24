@@ -1,0 +1,30 @@
+[
+  {
+    "coordinatesV1": "org.apache.directory.server:apacheds-interceptors-hash:2.0.0-M12",
+    "coordinatesV2": "org.apache.directory.server:apacheds-interceptors-hash:2.0.0-M21",
+    "caller": "|java+method:///org/apache/directory/server/core/hash/PasswordHashingInterceptor/includeHashedPassword(org.apache.directory.api.ldap.model.entry.Attribute)|",
+    "called": "|java+method:///org/apache/directory/api/ldap/model/password/PasswordUtil/createStoragePassword(byte%5B%5D,org.apache.directory.api.ldap.model.constants.LdapSecurityConstants)|",
+    "v1Body": [
+      "|java+method:///org/apache/directory/api/ldap/model/entry/Attribute/add(byte%5B%5D%5B%5D)|",
+      "|java+method:///org/apache/directory/api/ldap/model/entry/Attribute/get()|",
+      "|java+method:///org/apache/directory/api/ldap/model/password/PasswordUtil/findAlgorithm(byte%5B%5D)|",
+      "|java+method:///org/apache/directory/api/ldap/model/password/PasswordUtil/createStoragePassword(byte%5B%5D,org.apache.directory.api.ldap.model.constants.LdapSecurityConstants)|",
+      "|java+method:///org/apache/directory/api/ldap/model/entry/BinaryValue/getValue()|",
+      "|java+method:///org/apache/directory/api/ldap/model/entry/Attribute/clear()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/directory/api/ldap/model/entry/Attribute/add(byte%5B%5D%5B%5D)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/apache/directory/api/ldap/model/password/PasswordUtil/findAlgorithm(byte%5B%5D)|",
+      "|java+constructor:///org/apache/directory/api/ldap/model/entry/DefaultAttribute/DefaultAttribute(org.apache.directory.api.ldap.model.schema.AttributeType)|",
+      "|java+method:///org/apache/directory/api/ldap/model/entry/Attribute/getAttributeType()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/apache/directory/api/ldap/model/entry/BinaryValue/getValue()|",
+      "|java+method:///org/apache/directory/api/ldap/model/entry/Attribute/iterator()|",
+      "|java+method:///org/apache/directory/api/ldap/model/entry/Value/getValue()|",
+      "|java+method:///org/apache/directory/api/ldap/model/password/PasswordUtil/createStoragePassword(byte%5B%5D,org.apache.directory.api.ldap.model.constants.LdapSecurityConstants)|"
+    ],
+    "affectedLib": "org.apache.directory.api:api-ldap-model:1.0.0-M33",
+    "change": "UPDATED"
+  }
+]

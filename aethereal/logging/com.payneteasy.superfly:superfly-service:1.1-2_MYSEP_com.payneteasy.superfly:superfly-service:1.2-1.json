@@ -1,0 +1,106 @@
+[
+  {
+    "coordinatesV1": "com.payneteasy.superfly:superfly-service:1.2-1",
+    "coordinatesV2": "com.payneteasy.superfly:superfly-service:1.1-2",
+    "caller": "|java+method:///com/payneteasy/superfly/service/impl/UserServiceImpl/changeUserRoles(long,java.util.Collection,java.util.Collection,java.util.Collection)|",
+    "called": "|java+method:///org/springframework/util/StringUtils/collectionToCommaDelimitedString(java.util.Collection)|",
+    "v1Body": [
+      "|java+method:///com/payneteasy/superfly/service/NotificationService/notifyAboutUsersChanged()|",
+      "|java+method:///com/payneteasy/superfly/model/RoutineResult/isOk()|",
+      "|java+method:///com/payneteasy/superfly/dao/UserDao/changeUserRoles(long,java.lang.String,java.lang.String,java.lang.String)|",
+      "|java+method:///java/util/Collection/retainAll(java.util.Collection)|",
+      "|java+constructor:///java/util/HashSet/HashSet(java.util.Collection)|",
+      "|java+method:///org/springframework/util/StringUtils/collectionToCommaDelimitedString(java.util.Collection)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/payneteasy/superfly/service/NotificationService/notifyAboutUsersChanged()|",
+      "|java+method:///com/payneteasy/superfly/model/RoutineResult/isOk()|",
+      "|java+method:///com/payneteasy/superfly/dao/UserDao/changeUserRoles(long,java.lang.String,java.lang.String,java.lang.String)|",
+      "|java+method:///com/payneteasy/superfly/service/LoggerSink/info(org.slf4j.Logger,java.lang.String,boolean,java.lang.String)|",
+      "|java+method:///java/util/Collection/retainAll(java.util.Collection)|",
+      "|java+method:///java/lang/String/valueOf(long)|",
+      "|java+constructor:///java/util/HashSet/HashSet(java.util.Collection)|",
+      "|java+method:///org/springframework/util/StringUtils/collectionToCommaDelimitedString(java.util.Collection)|"
+    ],
+    "affectedLib": "org.springframework:spring:2.5.6.SEC01",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.payneteasy.superfly:superfly-service:1.1-2",
+    "coordinatesV2": "com.payneteasy.superfly:superfly-service:1.2-1",
+    "caller": "|java+method:///com/payneteasy/superfly/service/impl/UserServiceImpl/changeUserRoles(long,java.util.Collection,java.util.Collection,java.util.Collection)|",
+    "called": "|java+method:///org/springframework/util/StringUtils/collectionToCommaDelimitedString(java.util.Collection)|",
+    "v1Body": [
+      "|java+method:///com/payneteasy/superfly/service/NotificationService/notifyAboutUsersChanged()|",
+      "|java+method:///com/payneteasy/superfly/model/RoutineResult/isOk()|",
+      "|java+method:///com/payneteasy/superfly/dao/UserDao/changeUserRoles(long,java.lang.String,java.lang.String,java.lang.String)|",
+      "|java+method:///java/util/Collection/retainAll(java.util.Collection)|",
+      "|java+constructor:///java/util/HashSet/HashSet(java.util.Collection)|",
+      "|java+method:///org/springframework/util/StringUtils/collectionToCommaDelimitedString(java.util.Collection)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/payneteasy/superfly/service/NotificationService/notifyAboutUsersChanged()|",
+      "|java+method:///com/payneteasy/superfly/model/RoutineResult/isOk()|",
+      "|java+method:///com/payneteasy/superfly/dao/UserDao/changeUserRoles(long,java.lang.String,java.lang.String,java.lang.String)|",
+      "|java+method:///com/payneteasy/superfly/service/LoggerSink/info(org.slf4j.Logger,java.lang.String,boolean,java.lang.String)|",
+      "|java+method:///java/util/Collection/retainAll(java.util.Collection)|",
+      "|java+method:///java/lang/String/valueOf(long)|",
+      "|java+constructor:///java/util/HashSet/HashSet(java.util.Collection)|",
+      "|java+method:///org/springframework/util/StringUtils/collectionToCommaDelimitedString(java.util.Collection)|"
+    ],
+    "affectedLib": "org.springframework:spring-core:3.0.2.RELEASE",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.payneteasy.superfly:superfly-service:1.1-2",
+    "coordinatesV2": "com.payneteasy.superfly:superfly-service:1.2-1",
+    "caller": "|java+method:///com/payneteasy/superfly/service/impl/InternalSSOServiceImpl/authenticate(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)|",
+    "called": "|java+constructor:///com/payneteasy/superfly/api/SSOUser/SSOUser(java.lang.String,java.util.Map,java.util.Map)|",
+    "v1Body": [
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/util/Collections/emptyMap()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/util/List/isEmpty()|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///com/payneteasy/superfly/model/AuthRole/getRoleName()|",
+      "|java+method:///com/payneteasy/superfly/service/impl/InternalSSOServiceImpl/convertToSSOActions(java.util.List)|",
+      "|java+constructor:///com/payneteasy/superfly/api/SSORole/SSORole(java.lang.String)|",
+      "|java+method:///java/util/List/get(int)|",
+      "|java+method:///com/payneteasy/superfly/model/AuthRole/getActions()|",
+      "|java+constructor:///com/payneteasy/superfly/api/SSOUser/SSOUser(java.lang.String,java.util.Map,java.util.Map)|",
+      "|java+constructor:///java/util/HashMap/HashMap(int)|",
+      "|java+method:///com/payneteasy/superfly/model/AuthRole/getSessionId()|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///com/payneteasy/superfly/api/SSOUser/setSessionId(java.lang.String)|",
+      "|java+method:///com/payneteasy/superfly/dao/UserDao/authenticate(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)|",
+      "|java+method:///java/lang/String/valueOf(long)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/util/Collections/emptyMap()|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///com/payneteasy/superfly/lockout/LockoutStrategy/checkLoginsFailed(java.lang.String,com.payneteasy.superfly.model.LockoutType)|",
+      "|java+method:///com/payneteasy/superfly/service/impl/InternalSSOServiceImpl/convertToSSOActions(java.util.List)|",
+      "|java+constructor:///com/payneteasy/superfly/api/SSORole/SSORole(java.lang.String)|",
+      "|java+method:///java/util/List/get(int)|",
+      "|java+method:///com/payneteasy/superfly/model/AuthRole/getActions()|",
+      "|java+constructor:///com/payneteasy/superfly/api/SSOUser/SSOUser(java.lang.String,java.util.Map,java.util.Map)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///com/payneteasy/superfly/service/LoggerSink/info(org.slf4j.Logger,java.lang.String,boolean,java.lang.String)|",
+      "|java+method:///java/util/List/isEmpty()|",
+      "|java+method:///com/payneteasy/superfly/password/SaltSource/getSalt(java.lang.String)|",
+      "|java+method:///com/payneteasy/superfly/model/AuthRole/getRoleName()|",
+      "|java+method:///com/payneteasy/superfly/password/PasswordEncoder/encode(java.lang.String,java.lang.String)|",
+      "|java+constructor:///java/util/HashMap/HashMap(int)|",
+      "|java+method:///com/payneteasy/superfly/model/AuthRole/getSessionId()|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///com/payneteasy/superfly/api/SSOUser/setSessionId(java.lang.String)|",
+      "|java+method:///com/payneteasy/superfly/dao/UserDao/authenticate(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)|",
+      "|java+method:///java/lang/String/valueOf(long)|"
+    ],
+    "affectedLib": "com.payneteasy.superfly:superfly-remote-api:1.2-1",
+    "change": "UPDATED"
+  }
+]

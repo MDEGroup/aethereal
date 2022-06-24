@@ -1,0 +1,73 @@
+[
+  {
+    "coordinatesV1": "com.omertron:themoviedbapi:3.4",
+    "coordinatesV2": "com.omertron:themoviedbapi:4.1",
+    "caller": "|java+constructor:///com/omertron/themoviedbapi/TheMovieDbApi/TheMovieDbApi(java.lang.String)|",
+    "called": "|java+method:///org/yamj/api/common/http/SimpleHttpClientBuilder/build()|",
+    "v1Body": [
+      "|java+constructor:///com/omertron/themoviedbapi/tools/ApiUrl/ApiUrl(com.omertron.themoviedbapi.TheMovieDbApi,java.lang.String)|",
+      "|java+method:///com/omertron/themoviedbapi/wrapper/WrapperConfig/getTmdbConfiguration()|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/readValue(java.lang.String,java.lang.Class)|",
+      "|java+constructor:///com/omertron/themoviedbapi/MovieDbException/MovieDbException(com.omertron.themoviedbapi.MovieDbException$MovieDbExceptionType,java.lang.String,java.lang.Throwable)|",
+      "|java+method:///com/omertron/themoviedbapi/tools/ApiUrl/buildUrl()|",
+      "|java+method:///com/omertron/themoviedbapi/tools/WebBrowser/request(java.net.URL)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/omertron/themoviedbapi/TheMovieDbApi/TheMovieDbApi(java.lang.String,org.apache.http.client.HttpClient)|",
+      "|java+constructor:///org/yamj/api/common/http/SimpleHttpClientBuilder/SimpleHttpClientBuilder()|",
+      "|java+method:///org/yamj/api/common/http/SimpleHttpClientBuilder/build()|"
+    ],
+    "affectedLib": "org.yamj:api-common:2.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.omertron:themoviedbapi:3.4",
+    "coordinatesV2": "com.omertron:themoviedbapi:4.1",
+    "caller": "|java+initializer:///com/omertron/themoviedbapi/tools/ApiUrl/ApiUrl$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///java/util/List/add(java.lang.Object)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.12",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.omertron:themoviedbapi:3.4",
+    "coordinatesV2": "com.omertron:themoviedbapi:4.1",
+    "caller": "|java+method:///com/omertron/themoviedbapi/model/Language/equals(java.lang.Object)|",
+    "called": "|java+constructor:///org/apache/commons/lang3/builder/EqualsBuilder/EqualsBuilder()|",
+    "v1Body": [
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///java/lang/Object/getClass()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/commons/lang3/builder/EqualsBuilder/EqualsBuilder()|",
+      "|java+method:///org/apache/commons/lang3/builder/EqualsBuilder/isEquals()|",
+      "|java+method:///org/apache/commons/lang3/builder/EqualsBuilder/append(java.lang.Object,java.lang.Object)|"
+    ],
+    "affectedLib": "org.apache.commons:commons-lang3:3.4",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.omertron:themoviedbapi:3.4",
+    "coordinatesV2": "com.omertron:themoviedbapi:4.1",
+    "caller": "|java+method:///com/omertron/themoviedbapi/model/Language/hashCode()|",
+    "called": "|java+constructor:///org/apache/commons/lang3/builder/HashCodeBuilder/HashCodeBuilder()|",
+    "v1Body": [
+      "|java+method:///java/lang/String/hashCode()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/lang3/builder/HashCodeBuilder/append(java.lang.Object)|",
+      "|java+constructor:///org/apache/commons/lang3/builder/HashCodeBuilder/HashCodeBuilder()|",
+      "|java+method:///org/apache/commons/lang3/builder/HashCodeBuilder/toHashCode()|"
+    ],
+    "affectedLib": "org.apache.commons:commons-lang3:3.4",
+    "change": "UPDATED"
+  }
+]

@@ -1,0 +1,23 @@
+[
+  {
+    "coordinatesV1": "net.java.dev.activeobjects:activeobjects-test:0.9-m50",
+    "coordinatesV2": "net.java.dev.activeobjects:activeobjects-test:0.9-m51",
+    "caller": "|java+method:///net/java/ao/test/ActiveObjectsIntegrationTest/getTableName(java.lang.Class,boolean)|",
+    "called": "|java+method:///net/java/ao/DatabaseProvider/withSchema(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///net/java/ao/schema/TableNameConverter/getName(java.lang.Class)|",
+      "|java+method:///net/java/ao/EntityManager/getTableNameConverter()|",
+      "|java+method:///net/java/ao/EntityManager/getProvider()|",
+      "|java+method:///net/java/ao/DatabaseProvider/withSchema(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///net/java/ao/schema/NameConverters/getTableNameConverter()|",
+      "|java+method:///net/java/ao/EntityManager/getProvider()|",
+      "|java+method:///net/java/ao/DatabaseProvider/withSchema(java.lang.String)|",
+      "|java+method:///net/java/ao/schema/TableNameConverter/getName(java.lang.Class)|",
+      "|java+method:///net/java/ao/EntityManager/getNameConverters()|"
+    ],
+    "affectedLib": "net.java.dev.activeobjects:activeobjects:0.9-m51",
+    "change": "UPDATED"
+  }
+]

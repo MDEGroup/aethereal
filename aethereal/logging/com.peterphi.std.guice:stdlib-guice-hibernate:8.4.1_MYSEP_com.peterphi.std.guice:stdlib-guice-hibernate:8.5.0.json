@@ -1,0 +1,26 @@
+[
+  {
+    "coordinatesV1": "com.peterphi.std.guice:stdlib-guice-hibernate:8.4.1",
+    "coordinatesV2": "com.peterphi.std.guice:stdlib-guice-hibernate:8.5.0",
+    "caller": "|java+method:///com/peterphi/std/guice/hibernate/dao/HibernateDao/getByUniqueProperty(java.lang.String,java.lang.Object)|",
+    "called": "|java+constructor:///com/peterphi/std/guice/restclient/jaxb/webquery/WebQuery/WebQuery()|",
+    "v1Body": [
+      "|java+method:///org/hibernate/Criteria/add(org.hibernate.criterion.Criterion)|",
+      "|java+method:///com/peterphi/std/guice/hibernate/webquery/impl/QPropertyRef/getName()|",
+      "|java+method:///com/peterphi/std/guice/hibernate/webquery/impl/QCriteriaBuilder/getProperty(java.lang.String)|",
+      "|java+method:///com/peterphi/std/guice/hibernate/webquery/impl/QCriteriaBuilder/appendTo(org.hibernate.Criteria,boolean,boolean)|",
+      "|java+method:///com/peterphi/std/guice/hibernate/dao/HibernateDao/createCriteria()|",
+      "|java+method:///org/hibernate/criterion/Restrictions/eq(java.lang.String,java.lang.Object)|",
+      "|java+method:///com/peterphi/std/guice/hibernate/dao/HibernateDao/getQEntity()|",
+      "|java+constructor:///com/peterphi/std/guice/hibernate/webquery/impl/QCriteriaBuilder/QCriteriaBuilder(com.peterphi.std.guice.hibernate.webquery.impl.QEntity)|",
+      "|java+method:///com/peterphi/std/guice/hibernate/dao/HibernateDao/uniqueResult(org.hibernate.Criteria)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/peterphi/std/guice/restclient/jaxb/webquery/WebQuery/eq(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///com/peterphi/std/guice/hibernate/dao/HibernateDao/uniqueResult(com.peterphi.std.guice.restclient.jaxb.webquery.WebQuery)|",
+      "|java+constructor:///com/peterphi/std/guice/restclient/jaxb/webquery/WebQuery/WebQuery()|"
+    ],
+    "affectedLib": "com.peterphi.std.guice:stdlib-guice-restclient:8.5.0",
+    "change": "UPDATED"
+  }
+]

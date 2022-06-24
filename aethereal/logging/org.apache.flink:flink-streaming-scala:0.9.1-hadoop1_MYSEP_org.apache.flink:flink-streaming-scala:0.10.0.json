@@ -1,0 +1,387 @@
+[
+  {
+    "coordinatesV1": "org.apache.flink:flink-streaming-scala:0.10.0",
+    "coordinatesV2": "org.apache.flink:flink-streaming-scala:0.9.1-hadoop1",
+    "caller": "|java+method:///org/apache/flink/streaming/api/scala/DataStream/print()|",
+    "called": "|java+method:///org/apache/flink/streaming/api/datastream/DataStream/print()|",
+    "v1Body": [
+      "|java+method:///org/apache/flink/streaming/api/datastream/DataStream/print()|",
+      "|java+method:///org/apache/flink/streaming/api/scala/package$/javaToScalaStream(org.apache.flink.streaming.api.datastream.DataStream)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/flink/streaming/api/datastream/DataStream/print()|"
+    ],
+    "affectedLib": "org.apache.flink:flink-streaming-core:0.9.1-hadoop1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.apache.flink:flink-streaming-scala:0.10.0",
+    "coordinatesV2": "org.apache.flink:flink-streaming-scala:0.9.1-hadoop1",
+    "caller": "|java+method:///org/apache/flink/streaming/api/scala/DataStream/addSink(org.apache.flink.streaming.api.functions.sink.SinkFunction)|",
+    "called": "|java+method:///org/apache/flink/streaming/api/datastream/DataStream/addSink(org.apache.flink.streaming.api.functions.sink.SinkFunction)|",
+    "v1Body": [
+      "|java+method:///org/apache/flink/streaming/api/datastream/DataStream/addSink(org.apache.flink.streaming.api.functions.sink.SinkFunction)|",
+      "|java+method:///org/apache/flink/streaming/api/scala/package$/javaToScalaStream(org.apache.flink.streaming.api.datastream.DataStream)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/flink/streaming/api/datastream/DataStream/addSink(org.apache.flink.streaming.api.functions.sink.SinkFunction)|"
+    ],
+    "affectedLib": "org.apache.flink:flink-streaming-core:0.9.1-hadoop1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.apache.flink:flink-streaming-scala:0.10.0",
+    "coordinatesV2": "org.apache.flink:flink-streaming-scala:0.9.1-hadoop1",
+    "caller": "|java+method:///org/apache/flink/streaming/api/scala/DataStream/partitionByHash(scala.Function1,org.apache.flink.api.common.typeinfo.TypeInformation)|",
+    "called": "|java+method:///org/apache/flink/streaming/api/datastream/DataStream/partitionByHash(org.apache.flink.api.java.functions.KeySelector)|",
+    "v1Body": [
+      "|java+method:///org/apache/flink/streaming/api/datastream/DataStream/partitionByHash(org.apache.flink.api.java.functions.KeySelector)|",
+      "|java+constructor:///org/apache/flink/streaming/api/scala/DataStream$$anon$2/DataStream$$anon$2(org.apache.flink.streaming.api.scala.DataStream,scala.Function1)|",
+      "|java+method:///org/apache/flink/streaming/api/scala/package$/javaToScalaStream(org.apache.flink.streaming.api.datastream.DataStream)|",
+      "|java+method:///org/apache/flink/streaming/api/scala/DataStream/clean(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/flink/streaming/api/datastream/DataStream/partitionByHash(org.apache.flink.api.java.functions.KeySelector)|",
+      "|java+constructor:///org/apache/flink/streaming/api/scala/DataStream$$anon$2/DataStream$$anon$2(org.apache.flink.streaming.api.scala.DataStream,org.apache.flink.api.common.typeinfo.TypeInformation,scala.Function1)|",
+      "|java+method:///org/apache/flink/streaming/api/scala/package$/javaToScalaStream(org.apache.flink.streaming.api.datastream.DataStream)|",
+      "|java+method:///org/apache/flink/streaming/api/scala/DataStream/clean(java.lang.Object)|"
+    ],
+    "affectedLib": "org.apache.flink:flink-streaming-core:0.9.1-hadoop1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.apache.flink:flink-streaming-scala:0.10.0",
+    "coordinatesV2": "org.apache.flink:flink-streaming-scala:0.9.1-hadoop1",
+    "caller": "|java+method:///org/apache/flink/streaming/api/scala/DataStream/writeToSocket(java.lang.String,java.lang.Integer,org.apache.flink.streaming.util.serialization.SerializationSchema)|",
+    "called": "|java+method:///org/apache/flink/streaming/api/datastream/DataStream/writeToSocket(java.lang.String,int,org.apache.flink.streaming.util.serialization.SerializationSchema)|",
+    "v1Body": [
+      "|java+method:///org/apache/flink/streaming/api/datastream/DataStream/writeToSocket(java.lang.String,int,org.apache.flink.streaming.util.serialization.SerializationSchema)|",
+      "|java+method:///org/apache/flink/streaming/api/scala/package$/javaToScalaStream(org.apache.flink.streaming.api.datastream.DataStream)|",
+      "|java+method:///scala/Predef$/Integer2int(java.lang.Integer)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/flink/streaming/api/datastream/DataStream/writeToSocket(java.lang.String,int,org.apache.flink.streaming.util.serialization.SerializationSchema)|",
+      "|java+method:///scala/Predef$/Integer2int(java.lang.Integer)|"
+    ],
+    "affectedLib": "org.apache.flink:flink-streaming-core:0.9.1-hadoop1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.apache.flink:flink-streaming-scala:0.10.0",
+    "coordinatesV2": "org.apache.flink:flink-streaming-scala:0.9.1-hadoop1",
+    "caller": "|java+method:///org/apache/flink/streaming/api/scala/StreamExecutionEnvironment/fromCollection(scala.collection.Seq,scala.reflect.ClassTag,org.apache.flink.api.common.typeinfo.TypeInformation)|",
+    "called": "|java+method:///org/apache/flink/streaming/api/environment/StreamExecutionEnvironment/addSource(org.apache.flink.streaming.api.functions.source.SourceFunction)|",
+    "v1Body": [
+      "|java+method:///scala/collection/JavaConversions$/asJavaCollection(scala.collection.Iterable)|",
+      "|java+constructor:///org/apache/flink/streaming/api/scala/StreamExecutionEnvironment$$anonfun$fromCollection$1/StreamExecutionEnvironment$$anonfun$fromCollection$1(org.apache.flink.streaming.api.scala.StreamExecutionEnvironment)|",
+      "|java+method:///org/apache/flink/streaming/api/environment/StreamExecutionEnvironment/addSource(org.apache.flink.streaming.api.functions.source.SourceFunction)|",
+      "|java+constructor:///org/apache/flink/streaming/api/functions/source/FromElementsFunction/FromElementsFunction(java.util.Collection)|",
+      "|java+method:///scala/Predef$/require(boolean,scala.Function0)|",
+      "|java+method:///scala/Predef$/implicitly(java.lang.Object)|",
+      "|java+method:///org/apache/flink/streaming/api/datastream/DataStreamSource/returns(org.apache.flink.api.common.typeinfo.TypeInformation)|",
+      "|java+method:///org/apache/flink/streaming/api/scala/package$/javaToScalaStream(org.apache.flink.streaming.api.datastream.DataStream)|"
+    ],
+    "v2Body": [
+      "|java+method:///scala/collection/JavaConversions$/asJavaCollection(scala.collection.Iterable)|",
+      "|java+constructor:///org/apache/flink/streaming/api/scala/StreamExecutionEnvironment$$anonfun$fromCollection$1/StreamExecutionEnvironment$$anonfun$fromCollection$1(org.apache.flink.streaming.api.scala.StreamExecutionEnvironment)|",
+      "|java+method:///org/apache/flink/streaming/api/environment/StreamExecutionEnvironment/fromCollection(java.util.Collection,org.apache.flink.api.common.typeinfo.TypeInformation)|",
+      "|java+method:///org/apache/flink/streaming/api/scala/package$/javaToScalaStream(org.apache.flink.streaming.api.datastream.DataStream)|",
+      "|java+method:///scala/Predef$/require(boolean,scala.Function0)|",
+      "|java+method:///scala/Predef$/implicitly(java.lang.Object)|"
+    ],
+    "affectedLib": "org.apache.flink:flink-streaming-core:0.9.1-hadoop1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.apache.flink:flink-streaming-scala:0.10.0",
+    "coordinatesV2": "org.apache.flink:flink-streaming-scala:0.9.1-hadoop1",
+    "caller": "|java+method:///org/apache/flink/streaming/api/scala/DataStream/split(org.apache.flink.streaming.api.collector.selector.OutputSelector)|",
+    "called": "|java+method:///org/apache/flink/streaming/api/datastream/DataStream/split(org.apache.flink.streaming.api.collector.selector.OutputSelector)|",
+    "v1Body": [
+      "|java+method:///org/apache/flink/streaming/api/datastream/DataStream/split(org.apache.flink.streaming.api.collector.selector.OutputSelector)|",
+      "|java+method:///org/apache/flink/streaming/api/scala/package$/javaToScalaSplitStream(org.apache.flink.streaming.api.datastream.SplitDataStream)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/flink/streaming/api/scala/package$/javaToScalaSplitStream(org.apache.flink.streaming.api.datastream.SplitStream)|",
+      "|java+method:///org/apache/flink/streaming/api/datastream/DataStream/split(org.apache.flink.streaming.api.collector.selector.OutputSelector)|"
+    ],
+    "affectedLib": "org.apache.flink:flink-streaming-core:0.9.1-hadoop1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.apache.flink:flink-streaming-scala:0.10.0",
+    "coordinatesV2": "org.apache.flink:flink-streaming-scala:0.9.1-hadoop1",
+    "caller": "|java+method:///org/apache/flink/streaming/api/scala/DataStream/writeAsCsv(java.lang.String,long,java.lang.String,java.lang.String,org.apache.flink.core.fs.FileSystem$WriteMode)|",
+    "called": "|java+method:///org/apache/flink/streaming/api/datastream/DataStream/getType()|",
+    "v1Body": [
+      "|java+method:///org/apache/flink/streaming/api/datastream/DataStream/getType()|",
+      "|java+constructor:///org/apache/flink/api/scala/operators/ScalaCsvOutputFormat/ScalaCsvOutputFormat(org.apache.flink.core.fs.Path,java.lang.String,java.lang.String)|",
+      "|java+method:///scala/Predef$/require(boolean,scala.Function0)|",
+      "|java+constructor:///org/apache/flink/core/fs/Path/Path(java.lang.String)|",
+      "|java+method:///org/apache/flink/api/common/typeinfo/TypeInformation/isTupleType()|",
+      "|java+method:///org/apache/flink/api/scala/operators/ScalaCsvOutputFormat/setWriteMode(org.apache.flink.core.fs.FileSystem$WriteMode)|",
+      "|java+method:///org/apache/flink/streaming/api/scala/package$/javaToScalaStream(org.apache.flink.streaming.api.datastream.DataStream)|",
+      "|java+constructor:///org/apache/flink/streaming/api/scala/DataStream$$anonfun$writeAsCsv$1/DataStream$$anonfun$writeAsCsv$1(org.apache.flink.streaming.api.scala.DataStream)|",
+      "|java+method:///org/apache/flink/streaming/api/datastream/DataStream/write(org.apache.flink.api.common.io.OutputFormat,long)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/flink/streaming/api/datastream/DataStream/getType()|",
+      "|java+constructor:///org/apache/flink/api/scala/operators/ScalaCsvOutputFormat/ScalaCsvOutputFormat(org.apache.flink.core.fs.Path,java.lang.String,java.lang.String)|",
+      "|java+method:///scala/Predef$/require(boolean,scala.Function0)|",
+      "|java+constructor:///org/apache/flink/core/fs/Path/Path(java.lang.String)|",
+      "|java+method:///org/apache/flink/api/common/typeinfo/TypeInformation/isTupleType()|",
+      "|java+method:///org/apache/flink/api/scala/operators/ScalaCsvOutputFormat/setWriteMode(org.apache.flink.core.fs.FileSystem$WriteMode)|",
+      "|java+constructor:///org/apache/flink/streaming/api/scala/DataStream$$anonfun$writeAsCsv$1/DataStream$$anonfun$writeAsCsv$1(org.apache.flink.streaming.api.scala.DataStream)|",
+      "|java+method:///org/apache/flink/streaming/api/datastream/DataStream/write(org.apache.flink.api.common.io.OutputFormat,long)|"
+    ],
+    "affectedLib": "org.apache.flink:flink-streaming-core:0.9.1-hadoop1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.apache.flink:flink-streaming-scala:0.10.0",
+    "coordinatesV2": "org.apache.flink:flink-streaming-scala:0.9.1-hadoop1",
+    "caller": "|java+method:///org/apache/flink/streaming/api/scala/StreamExecutionEnvironment/enableCheckpointing(long)|",
+    "called": "|java+method:///org/apache/flink/streaming/api/environment/StreamExecutionEnvironment/enableCheckpointing(long)|",
+    "v1Body": [
+      "|java+method:///org/apache/flink/streaming/api/environment/StreamExecutionEnvironment/enableCheckpointing(long)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/flink/streaming/api/scala/StreamExecutionEnvironment/enableCheckpointing(long,org.apache.flink.streaming.api.CheckpointingMode)|"
+    ],
+    "affectedLib": "org.apache.flink:flink-streaming-core:0.9.1-hadoop1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.apache.flink:flink-streaming-scala:0.10.0",
+    "coordinatesV2": "org.apache.flink:flink-streaming-scala:0.9.1-hadoop1",
+    "caller": "|java+method:///org/apache/flink/streaming/api/scala/DataStream/writeAsText(java.lang.String,long)|",
+    "called": "|java+method:///org/apache/flink/streaming/api/datastream/DataStream/writeAsText(java.lang.String,long)|",
+    "v1Body": [
+      "|java+method:///org/apache/flink/streaming/api/datastream/DataStream/writeAsText(java.lang.String,long)|",
+      "|java+method:///org/apache/flink/streaming/api/scala/package$/javaToScalaStream(org.apache.flink.streaming.api.datastream.DataStream)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/flink/streaming/api/datastream/DataStream/writeAsText(java.lang.String,long)|"
+    ],
+    "affectedLib": "org.apache.flink:flink-streaming-core:0.9.1-hadoop1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.apache.flink:flink-streaming-scala:0.10.0",
+    "coordinatesV2": "org.apache.flink:flink-streaming-scala:0.9.1-hadoop1",
+    "caller": "|java+method:///org/apache/flink/streaming/api/scala/DataStream/connect(org.apache.flink.streaming.api.scala.DataStream)|",
+    "called": "|java+method:///org/apache/flink/streaming/api/datastream/DataStream/connect(org.apache.flink.streaming.api.datastream.DataStream)|",
+    "v1Body": [
+      "|java+method:///org/apache/flink/streaming/api/datastream/DataStream/connect(org.apache.flink.streaming.api.datastream.DataStream)|",
+      "|java+method:///org/apache/flink/streaming/api/scala/package$/javaToScalaConnectedStream(org.apache.flink.streaming.api.datastream.ConnectedDataStream)|",
+      "|java+method:///org/apache/flink/streaming/api/scala/DataStream/getJavaStream()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/flink/streaming/api/scala/package$/javaToScalaConnectedStream(org.apache.flink.streaming.api.datastream.ConnectedStreams)|",
+      "|java+method:///org/apache/flink/streaming/api/datastream/DataStream/connect(org.apache.flink.streaming.api.datastream.DataStream)|",
+      "|java+method:///org/apache/flink/streaming/api/scala/DataStream/getJavaStream()|"
+    ],
+    "affectedLib": "org.apache.flink:flink-streaming-core:0.9.1-hadoop1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.apache.flink:flink-streaming-scala:0.9.1-hadoop1",
+    "coordinatesV2": "org.apache.flink:flink-streaming-scala:0.10.0",
+    "caller": "|java+method:///org/apache/flink/streaming/api/scala/DataStream/print()|",
+    "called": "|java+method:///org/apache/flink/streaming/api/datastream/DataStream/print()|",
+    "v1Body": [
+      "|java+method:///org/apache/flink/streaming/api/datastream/DataStream/print()|",
+      "|java+method:///org/apache/flink/streaming/api/scala/package$/javaToScalaStream(org.apache.flink.streaming.api.datastream.DataStream)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/flink/streaming/api/datastream/DataStream/print()|"
+    ],
+    "affectedLib": "org.apache.flink:flink-streaming-java:0.10.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.flink:flink-streaming-scala:0.9.1-hadoop1",
+    "coordinatesV2": "org.apache.flink:flink-streaming-scala:0.10.0",
+    "caller": "|java+method:///org/apache/flink/streaming/api/scala/DataStream/addSink(org.apache.flink.streaming.api.functions.sink.SinkFunction)|",
+    "called": "|java+method:///org/apache/flink/streaming/api/datastream/DataStream/addSink(org.apache.flink.streaming.api.functions.sink.SinkFunction)|",
+    "v1Body": [
+      "|java+method:///org/apache/flink/streaming/api/datastream/DataStream/addSink(org.apache.flink.streaming.api.functions.sink.SinkFunction)|",
+      "|java+method:///org/apache/flink/streaming/api/scala/package$/javaToScalaStream(org.apache.flink.streaming.api.datastream.DataStream)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/flink/streaming/api/datastream/DataStream/addSink(org.apache.flink.streaming.api.functions.sink.SinkFunction)|"
+    ],
+    "affectedLib": "org.apache.flink:flink-streaming-java:0.10.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.flink:flink-streaming-scala:0.9.1-hadoop1",
+    "coordinatesV2": "org.apache.flink:flink-streaming-scala:0.10.0",
+    "caller": "|java+method:///org/apache/flink/streaming/api/scala/DataStream/partitionByHash(scala.Function1,org.apache.flink.api.common.typeinfo.TypeInformation)|",
+    "called": "|java+method:///org/apache/flink/streaming/api/datastream/DataStream/partitionByHash(org.apache.flink.api.java.functions.KeySelector)|",
+    "v1Body": [
+      "|java+method:///org/apache/flink/streaming/api/datastream/DataStream/partitionByHash(org.apache.flink.api.java.functions.KeySelector)|",
+      "|java+constructor:///org/apache/flink/streaming/api/scala/DataStream$$anon$2/DataStream$$anon$2(org.apache.flink.streaming.api.scala.DataStream,scala.Function1)|",
+      "|java+method:///org/apache/flink/streaming/api/scala/package$/javaToScalaStream(org.apache.flink.streaming.api.datastream.DataStream)|",
+      "|java+method:///org/apache/flink/streaming/api/scala/DataStream/clean(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/flink/streaming/api/datastream/DataStream/partitionByHash(org.apache.flink.api.java.functions.KeySelector)|",
+      "|java+constructor:///org/apache/flink/streaming/api/scala/DataStream$$anon$2/DataStream$$anon$2(org.apache.flink.streaming.api.scala.DataStream,org.apache.flink.api.common.typeinfo.TypeInformation,scala.Function1)|",
+      "|java+method:///org/apache/flink/streaming/api/scala/package$/javaToScalaStream(org.apache.flink.streaming.api.datastream.DataStream)|",
+      "|java+method:///org/apache/flink/streaming/api/scala/DataStream/clean(java.lang.Object)|"
+    ],
+    "affectedLib": "org.apache.flink:flink-streaming-java:0.10.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.flink:flink-streaming-scala:0.9.1-hadoop1",
+    "coordinatesV2": "org.apache.flink:flink-streaming-scala:0.10.0",
+    "caller": "|java+method:///org/apache/flink/streaming/api/scala/DataStream/writeToSocket(java.lang.String,java.lang.Integer,org.apache.flink.streaming.util.serialization.SerializationSchema)|",
+    "called": "|java+method:///org/apache/flink/streaming/api/datastream/DataStream/writeToSocket(java.lang.String,int,org.apache.flink.streaming.util.serialization.SerializationSchema)|",
+    "v1Body": [
+      "|java+method:///org/apache/flink/streaming/api/datastream/DataStream/writeToSocket(java.lang.String,int,org.apache.flink.streaming.util.serialization.SerializationSchema)|",
+      "|java+method:///org/apache/flink/streaming/api/scala/package$/javaToScalaStream(org.apache.flink.streaming.api.datastream.DataStream)|",
+      "|java+method:///scala/Predef$/Integer2int(java.lang.Integer)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/flink/streaming/api/datastream/DataStream/writeToSocket(java.lang.String,int,org.apache.flink.streaming.util.serialization.SerializationSchema)|",
+      "|java+method:///scala/Predef$/Integer2int(java.lang.Integer)|"
+    ],
+    "affectedLib": "org.apache.flink:flink-streaming-java:0.10.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.flink:flink-streaming-scala:0.9.1-hadoop1",
+    "coordinatesV2": "org.apache.flink:flink-streaming-scala:0.10.0",
+    "caller": "|java+method:///org/apache/flink/streaming/api/scala/StreamExecutionEnvironment/fromCollection(scala.collection.Seq,scala.reflect.ClassTag,org.apache.flink.api.common.typeinfo.TypeInformation)|",
+    "called": "|java+method:///org/apache/flink/streaming/api/environment/StreamExecutionEnvironment/fromCollection(java.util.Collection,org.apache.flink.api.common.typeinfo.TypeInformation)|",
+    "v1Body": [
+      "|java+method:///scala/collection/JavaConversions$/asJavaCollection(scala.collection.Iterable)|",
+      "|java+constructor:///org/apache/flink/streaming/api/scala/StreamExecutionEnvironment$$anonfun$fromCollection$1/StreamExecutionEnvironment$$anonfun$fromCollection$1(org.apache.flink.streaming.api.scala.StreamExecutionEnvironment)|",
+      "|java+method:///org/apache/flink/streaming/api/environment/StreamExecutionEnvironment/addSource(org.apache.flink.streaming.api.functions.source.SourceFunction)|",
+      "|java+constructor:///org/apache/flink/streaming/api/functions/source/FromElementsFunction/FromElementsFunction(java.util.Collection)|",
+      "|java+method:///scala/Predef$/require(boolean,scala.Function0)|",
+      "|java+method:///scala/Predef$/implicitly(java.lang.Object)|",
+      "|java+method:///org/apache/flink/streaming/api/datastream/DataStreamSource/returns(org.apache.flink.api.common.typeinfo.TypeInformation)|",
+      "|java+method:///org/apache/flink/streaming/api/scala/package$/javaToScalaStream(org.apache.flink.streaming.api.datastream.DataStream)|"
+    ],
+    "v2Body": [
+      "|java+method:///scala/collection/JavaConversions$/asJavaCollection(scala.collection.Iterable)|",
+      "|java+constructor:///org/apache/flink/streaming/api/scala/StreamExecutionEnvironment$$anonfun$fromCollection$1/StreamExecutionEnvironment$$anonfun$fromCollection$1(org.apache.flink.streaming.api.scala.StreamExecutionEnvironment)|",
+      "|java+method:///org/apache/flink/streaming/api/environment/StreamExecutionEnvironment/fromCollection(java.util.Collection,org.apache.flink.api.common.typeinfo.TypeInformation)|",
+      "|java+method:///org/apache/flink/streaming/api/scala/package$/javaToScalaStream(org.apache.flink.streaming.api.datastream.DataStream)|",
+      "|java+method:///scala/Predef$/require(boolean,scala.Function0)|",
+      "|java+method:///scala/Predef$/implicitly(java.lang.Object)|"
+    ],
+    "affectedLib": "org.apache.flink:flink-streaming-java:0.10.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.flink:flink-streaming-scala:0.9.1-hadoop1",
+    "coordinatesV2": "org.apache.flink:flink-streaming-scala:0.10.0",
+    "caller": "|java+method:///org/apache/flink/streaming/api/scala/DataStream/split(org.apache.flink.streaming.api.collector.selector.OutputSelector)|",
+    "called": "|java+method:///org/apache/flink/streaming/api/datastream/DataStream/split(org.apache.flink.streaming.api.collector.selector.OutputSelector)|",
+    "v1Body": [
+      "|java+method:///org/apache/flink/streaming/api/datastream/DataStream/split(org.apache.flink.streaming.api.collector.selector.OutputSelector)|",
+      "|java+method:///org/apache/flink/streaming/api/scala/package$/javaToScalaSplitStream(org.apache.flink.streaming.api.datastream.SplitDataStream)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/flink/streaming/api/scala/package$/javaToScalaSplitStream(org.apache.flink.streaming.api.datastream.SplitStream)|",
+      "|java+method:///org/apache/flink/streaming/api/datastream/DataStream/split(org.apache.flink.streaming.api.collector.selector.OutputSelector)|"
+    ],
+    "affectedLib": "org.apache.flink:flink-streaming-java:0.10.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.flink:flink-streaming-scala:0.9.1-hadoop1",
+    "coordinatesV2": "org.apache.flink:flink-streaming-scala:0.10.0",
+    "caller": "|java+method:///org/apache/flink/streaming/api/scala/DataStream/writeAsCsv(java.lang.String,long,java.lang.String,java.lang.String,org.apache.flink.core.fs.FileSystem$WriteMode)|",
+    "called": "|java+method:///org/apache/flink/streaming/api/datastream/DataStream/getType()|",
+    "v1Body": [
+      "|java+method:///org/apache/flink/streaming/api/datastream/DataStream/getType()|",
+      "|java+constructor:///org/apache/flink/api/scala/operators/ScalaCsvOutputFormat/ScalaCsvOutputFormat(org.apache.flink.core.fs.Path,java.lang.String,java.lang.String)|",
+      "|java+method:///scala/Predef$/require(boolean,scala.Function0)|",
+      "|java+constructor:///org/apache/flink/core/fs/Path/Path(java.lang.String)|",
+      "|java+method:///org/apache/flink/api/common/typeinfo/TypeInformation/isTupleType()|",
+      "|java+method:///org/apache/flink/api/scala/operators/ScalaCsvOutputFormat/setWriteMode(org.apache.flink.core.fs.FileSystem$WriteMode)|",
+      "|java+method:///org/apache/flink/streaming/api/scala/package$/javaToScalaStream(org.apache.flink.streaming.api.datastream.DataStream)|",
+      "|java+constructor:///org/apache/flink/streaming/api/scala/DataStream$$anonfun$writeAsCsv$1/DataStream$$anonfun$writeAsCsv$1(org.apache.flink.streaming.api.scala.DataStream)|",
+      "|java+method:///org/apache/flink/streaming/api/datastream/DataStream/write(org.apache.flink.api.common.io.OutputFormat,long)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/flink/streaming/api/datastream/DataStream/getType()|",
+      "|java+constructor:///org/apache/flink/api/scala/operators/ScalaCsvOutputFormat/ScalaCsvOutputFormat(org.apache.flink.core.fs.Path,java.lang.String,java.lang.String)|",
+      "|java+method:///scala/Predef$/require(boolean,scala.Function0)|",
+      "|java+constructor:///org/apache/flink/core/fs/Path/Path(java.lang.String)|",
+      "|java+method:///org/apache/flink/api/common/typeinfo/TypeInformation/isTupleType()|",
+      "|java+method:///org/apache/flink/api/scala/operators/ScalaCsvOutputFormat/setWriteMode(org.apache.flink.core.fs.FileSystem$WriteMode)|",
+      "|java+constructor:///org/apache/flink/streaming/api/scala/DataStream$$anonfun$writeAsCsv$1/DataStream$$anonfun$writeAsCsv$1(org.apache.flink.streaming.api.scala.DataStream)|",
+      "|java+method:///org/apache/flink/streaming/api/datastream/DataStream/write(org.apache.flink.api.common.io.OutputFormat,long)|"
+    ],
+    "affectedLib": "org.apache.flink:flink-streaming-java:0.10.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.flink:flink-streaming-scala:0.9.1-hadoop1",
+    "coordinatesV2": "org.apache.flink:flink-streaming-scala:0.10.0",
+    "caller": "|java+method:///org/apache/flink/streaming/api/scala/DataStream/writeAsText(java.lang.String,long)|",
+    "called": "|java+method:///org/apache/flink/streaming/api/datastream/DataStream/writeAsText(java.lang.String,long)|",
+    "v1Body": [
+      "|java+method:///org/apache/flink/streaming/api/datastream/DataStream/writeAsText(java.lang.String,long)|",
+      "|java+method:///org/apache/flink/streaming/api/scala/package$/javaToScalaStream(org.apache.flink.streaming.api.datastream.DataStream)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/flink/streaming/api/datastream/DataStream/writeAsText(java.lang.String,long)|"
+    ],
+    "affectedLib": "org.apache.flink:flink-streaming-java:0.10.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.flink:flink-streaming-scala:0.9.1-hadoop1",
+    "coordinatesV2": "org.apache.flink:flink-streaming-scala:0.10.0",
+    "caller": "|java+method:///org/apache/flink/streaming/api/scala/DataStream/connect(org.apache.flink.streaming.api.scala.DataStream)|",
+    "called": "|java+method:///org/apache/flink/streaming/api/datastream/DataStream/connect(org.apache.flink.streaming.api.datastream.DataStream)|",
+    "v1Body": [
+      "|java+method:///org/apache/flink/streaming/api/datastream/DataStream/connect(org.apache.flink.streaming.api.datastream.DataStream)|",
+      "|java+method:///org/apache/flink/streaming/api/scala/package$/javaToScalaConnectedStream(org.apache.flink.streaming.api.datastream.ConnectedDataStream)|",
+      "|java+method:///org/apache/flink/streaming/api/scala/DataStream/getJavaStream()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/flink/streaming/api/scala/package$/javaToScalaConnectedStream(org.apache.flink.streaming.api.datastream.ConnectedStreams)|",
+      "|java+method:///org/apache/flink/streaming/api/datastream/DataStream/connect(org.apache.flink.streaming.api.datastream.DataStream)|",
+      "|java+method:///org/apache/flink/streaming/api/scala/DataStream/getJavaStream()|"
+    ],
+    "affectedLib": "org.apache.flink:flink-streaming-java:0.10.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.flink:flink-streaming-scala:0.9.1-hadoop1",
+    "coordinatesV2": "org.apache.flink:flink-streaming-scala:0.10.0",
+    "caller": "|java+method:///org/apache/flink/streaming/api/scala/DataStream/writeAsCsv(java.lang.String,long,java.lang.String,java.lang.String,org.apache.flink.core.fs.FileSystem$WriteMode)|",
+    "called": "|java+constructor:///org/apache/flink/api/scala/operators/ScalaCsvOutputFormat/ScalaCsvOutputFormat(org.apache.flink.core.fs.Path,java.lang.String,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/apache/flink/streaming/api/datastream/DataStream/getType()|",
+      "|java+constructor:///org/apache/flink/api/scala/operators/ScalaCsvOutputFormat/ScalaCsvOutputFormat(org.apache.flink.core.fs.Path,java.lang.String,java.lang.String)|",
+      "|java+method:///scala/Predef$/require(boolean,scala.Function0)|",
+      "|java+constructor:///org/apache/flink/core/fs/Path/Path(java.lang.String)|",
+      "|java+method:///org/apache/flink/api/common/typeinfo/TypeInformation/isTupleType()|",
+      "|java+method:///org/apache/flink/api/scala/operators/ScalaCsvOutputFormat/setWriteMode(org.apache.flink.core.fs.FileSystem$WriteMode)|",
+      "|java+method:///org/apache/flink/streaming/api/scala/package$/javaToScalaStream(org.apache.flink.streaming.api.datastream.DataStream)|",
+      "|java+constructor:///org/apache/flink/streaming/api/scala/DataStream$$anonfun$writeAsCsv$1/DataStream$$anonfun$writeAsCsv$1(org.apache.flink.streaming.api.scala.DataStream)|",
+      "|java+method:///org/apache/flink/streaming/api/datastream/DataStream/write(org.apache.flink.api.common.io.OutputFormat,long)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/flink/streaming/api/datastream/DataStream/getType()|",
+      "|java+constructor:///org/apache/flink/api/scala/operators/ScalaCsvOutputFormat/ScalaCsvOutputFormat(org.apache.flink.core.fs.Path,java.lang.String,java.lang.String)|",
+      "|java+method:///scala/Predef$/require(boolean,scala.Function0)|",
+      "|java+constructor:///org/apache/flink/core/fs/Path/Path(java.lang.String)|",
+      "|java+method:///org/apache/flink/api/common/typeinfo/TypeInformation/isTupleType()|",
+      "|java+method:///org/apache/flink/api/scala/operators/ScalaCsvOutputFormat/setWriteMode(org.apache.flink.core.fs.FileSystem$WriteMode)|",
+      "|java+constructor:///org/apache/flink/streaming/api/scala/DataStream$$anonfun$writeAsCsv$1/DataStream$$anonfun$writeAsCsv$1(org.apache.flink.streaming.api.scala.DataStream)|",
+      "|java+method:///org/apache/flink/streaming/api/datastream/DataStream/write(org.apache.flink.api.common.io.OutputFormat,long)|"
+    ],
+    "affectedLib": "org.apache.flink:flink-scala:0.10.0",
+    "change": "UPDATED"
+  }
+]

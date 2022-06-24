@@ -1,0 +1,61 @@
+[
+  {
+    "coordinatesV1": "net.java.dev.activeobjects:activeobjects-test:0.9-m18",
+    "coordinatesV2": "net.java.dev.activeobjects:activeobjects-test:0.9-m19",
+    "caller": "|java+method:///net/java/ao/test/junit/ActiveObjectTransactionMethodRule/updateDatabase()|",
+    "called": "|java+method:///net/java/ao/EntityManager/migrate(java.lang.Class%5B%5D)|",
+    "v1Body": [
+      "|java+method:///net/java/ao/test/jdbc/DatabaseUpdater/update(net.java.ao.EntityManager)|",
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///net/java/ao/test/jdbc/Data/value()|",
+      "|java+method:///java/lang/Class/isAnnotationPresent(java.lang.Class)|",
+      "|java+method:///java/util/Map/containsKey(java.lang.Object)|",
+      "|java+method:///net/java/ao/test/junit/ActiveObjectTransactionMethodRule/getTestClass()|",
+      "|java+method:///net/java/ao/test/junit/ActiveObjectTransactionMethodRule/newInstance(java.lang.Class)|",
+      "|java+method:///net/java/ao/EntityManager/migrate(java.lang.Class%5B%5D)|",
+      "|java+method:///java/lang/Object/equals(java.lang.Object)|",
+      "|java+method:///java/lang/Class/getAnnotation(java.lang.Class)|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///net/java/ao/test/jdbc/DatabaseUpdater/update(net.java.ao.EntityManager)|",
+      "|java+method:///net/java/ao/test/junit/ActiveObjectTransactionMethodRule/isDataAnnotationPresent()|",
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///net/java/ao/test/junit/ActiveObjectTransactionMethodRule/getDataAnnotationDefaultValue()|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+method:///net/java/ao/test/junit/ActiveObjectTransactionMethodRule/getDataAnnotationValue()|",
+      "|java+method:///java/util/Map/containsKey(java.lang.Object)|",
+      "|java+method:///net/java/ao/test/junit/ActiveObjectTransactionMethodRule/newInstance(java.lang.Class)|",
+      "|java+method:///net/java/ao/EntityManager/migrate(java.lang.Class%5B%5D)|",
+      "|java+method:///java/lang/Object/equals(java.lang.Object)|"
+    ],
+    "affectedLib": "net.java.dev.activeobjects:activeobjects:0.9-m19",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "net.java.dev.activeobjects:activeobjects-test:0.9-m18",
+    "coordinatesV2": "net.java.dev.activeobjects:activeobjects-test:0.9-m19",
+    "caller": "|java+method:///net/java/ao/test/ActiveObjectsIntegrationTest/checkSql(boolean,java.util.concurrent.Callable)|",
+    "called": "|java+method:///net/java/ao/DatabaseProvider/removeSqlListener(net.java.ao.DatabaseProvider$SqlListener)|",
+    "v1Body": [
+      "|java+method:///net/java/ao/test/SqlTracker/isSqlExecuted()|",
+      "|java+method:///net/java/ao/event/EventManager/unregister(java.lang.Object)|",
+      "|java+method:///junit/framework/Assert/assertEquals(boolean,boolean)|",
+      "|java+method:///net/java/ao/event/EventManager/register(java.lang.Object)|",
+      "|java+method:///java/util/concurrent/Callable/call()|",
+      "|java+constructor:///net/java/ao/test/SqlTracker/SqlTracker()|",
+      "|java+method:///net/java/ao/EntityManager/getEventManager()|"
+    ],
+    "v2Body": [
+      "|java+method:///net/java/ao/test/SqlTracker/isSqlExecuted()|",
+      "|java+method:///junit/framework/Assert/assertEquals(boolean,boolean)|",
+      "|java+method:///net/java/ao/DatabaseProvider/addSqlListener(net.java.ao.DatabaseProvider$SqlListener)|",
+      "|java+method:///net/java/ao/DatabaseProvider/removeSqlListener(net.java.ao.DatabaseProvider$SqlListener)|",
+      "|java+method:///java/util/concurrent/Callable/call()|",
+      "|java+method:///net/java/ao/EntityManager/getProvider()|",
+      "|java+constructor:///net/java/ao/test/SqlTracker/SqlTracker()|"
+    ],
+    "affectedLib": "net.java.dev.activeobjects:activeobjects:0.9-m19",
+    "change": "UPDATED"
+  }
+]

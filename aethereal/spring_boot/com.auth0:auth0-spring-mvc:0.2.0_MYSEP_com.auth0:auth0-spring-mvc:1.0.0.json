@@ -1,0 +1,207 @@
+[
+  {
+    "coordinatesV1": "com.auth0:auth0-spring-mvc:1.0.0",
+    "coordinatesV2": "com.auth0:auth0-spring-mvc:0.2.0",
+    "caller": "|java+constructor:///com/auth0/web/Auth0ClientImpl/Auth0ClientImpl(com.auth0.web.Auth0Config)|",
+    "called": "|java+method:///org/apache/commons/lang3/Validate/notNull(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///com/auth0/web/Auth0Config/getDomain()|",
+      "|java+method:///com/auth0/web/Auth0Config/getClientId()|",
+      "|java+constructor:///com/auth0/Auth0/Auth0(java.lang.String,java.lang.String,java.lang.String)|",
+      "|java+method:///org/apache/commons/lang3/Validate/notNull(java.lang.Object)|",
+      "|java+constructor:///com/auth0/authentication/AuthenticationAPIClient/AuthenticationAPIClient(com.auth0.Auth0)|",
+      "|java+method:///com/auth0/web/Auth0Config/getClientSecret()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/auth0/Auth0ClientImpl/Auth0ClientImpl(java.lang.String,java.lang.String,java.lang.String)|",
+      "|java+method:///com/auth0/web/Auth0Config/getDomain()|",
+      "|java+method:///com/auth0/web/Auth0Config/getClientId()|",
+      "|java+method:///com/auth0/web/Auth0Config/getClientSecret()|"
+    ],
+    "affectedLib": "org.apache.commons:commons-lang3:3.3.2",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.auth0:auth0-spring-mvc:1.0.0",
+    "coordinatesV2": "com.auth0:auth0-spring-mvc:0.2.0",
+    "caller": "|java+method:///com/auth0/web/Auth0Filter/doFilter(javax.servlet.ServletRequest,javax.servlet.ServletResponse,javax.servlet.FilterChain)|",
+    "called": "|java+method:///com/auth0/jwt/JWTVerifier/verify(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+method:///java/security/SignatureException/getLocalizedMessage()|",
+      "|java+method:///com/auth0/web/Auth0Filter/onSuccess(javax.servlet.ServletRequest,javax.servlet.ServletResponse,javax.servlet.FilterChain,com.auth0.web.Auth0User)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/IllegalStateException/getLocalizedMessage()|",
+      "|java+method:///com/auth0/web/SessionUtils/getAuth0User(javax.servlet.http.HttpServletRequest)|",
+      "|java+method:///com/auth0/web/Auth0Filter/tokensExist(com.auth0.web.Tokens)|",
+      "|java+method:///java/security/NoSuchAlgorithmException/getLocalizedMessage()|",
+      "|java+method:///com/auth0/jwt/JWTVerifyException/getLocalizedMessage()|",
+      "|java+method:///java/io/IOException/getLocalizedMessage()|",
+      "|java+method:///com/auth0/jwt/JWTVerifier/verify(java.lang.String)|",
+      "|java+method:///com/auth0/web/Auth0Filter/onReject(javax.servlet.http.HttpServletResponse)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///com/auth0/web/Tokens/getIdToken()|",
+      "|java+method:///com/auth0/web/SessionUtils/getTokens(javax.servlet.http.HttpServletRequest)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/security/InvalidKeyException/getLocalizedMessage()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/security/SignatureException/getLocalizedMessage()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/IllegalStateException/getLocalizedMessage()|",
+      "|java+constructor:///com/auth0/Auth0Exception/Auth0Exception(java.lang.String)|",
+      "|java+method:///com/auth0/jwt/JWTVerifyException/getLocalizedMessage()|",
+      "|java+method:///java/io/IOException/getLocalizedMessage()|",
+      "|java+method:///com/auth0/jwt/JWTVerifier/verify(java.lang.String)|",
+      "|java+method:///com/auth0/web/Auth0Filter/onReject(javax.servlet.http.HttpServletResponse)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///com/auth0/Tokens/getIdToken()|",
+      "|java+method:///com/auth0/SessionUtils/getTokens(javax.servlet.http.HttpServletRequest)|",
+      "|java+method:///com/auth0/web/Auth0Filter/onSuccess(javax.servlet.ServletRequest,javax.servlet.ServletResponse,javax.servlet.FilterChain,com.auth0.Auth0User)|",
+      "|java+method:///com/auth0/web/Auth0Filter/tokensExist(com.auth0.Tokens)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/security/InvalidKeyException/getLocalizedMessage()|",
+      "|java+method:///java/security/NoSuchAlgorithmException/getLocalizedMessage()|",
+      "|java+method:///com/auth0/SessionUtils/getAuth0User(javax.servlet.http.HttpServletRequest)|"
+    ],
+    "affectedLib": "com.auth0:java-jwt:2.2.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.auth0:auth0-spring-mvc:1.0.0",
+    "coordinatesV2": "com.auth0:auth0-spring-mvc:0.2.0",
+    "caller": "|java+constructor:///com/auth0/web/Auth0ClientImpl/Auth0ClientImpl(com.auth0.web.Auth0Config)|",
+    "called": "|java+constructor:///com/auth0/authentication/AuthenticationAPIClient/AuthenticationAPIClient(com.auth0.Auth0)|",
+    "v1Body": [
+      "|java+method:///com/auth0/web/Auth0Config/getDomain()|",
+      "|java+method:///com/auth0/web/Auth0Config/getClientId()|",
+      "|java+constructor:///com/auth0/Auth0/Auth0(java.lang.String,java.lang.String,java.lang.String)|",
+      "|java+method:///org/apache/commons/lang3/Validate/notNull(java.lang.Object)|",
+      "|java+constructor:///com/auth0/authentication/AuthenticationAPIClient/AuthenticationAPIClient(com.auth0.Auth0)|",
+      "|java+method:///com/auth0/web/Auth0Config/getClientSecret()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/auth0/Auth0ClientImpl/Auth0ClientImpl(java.lang.String,java.lang.String,java.lang.String)|",
+      "|java+method:///com/auth0/web/Auth0Config/getDomain()|",
+      "|java+method:///com/auth0/web/Auth0Config/getClientId()|",
+      "|java+method:///com/auth0/web/Auth0Config/getClientSecret()|"
+    ],
+    "affectedLib": "com.auth0:auth0:0.4.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.auth0:auth0-spring-mvc:0.2.0",
+    "coordinatesV2": "com.auth0:auth0-spring-mvc:1.0.0",
+    "caller": "|java+method:///com/auth0/web/Auth0CallbackHandler/isValidState(javax.servlet.http.HttpServletRequest)|",
+    "called": "|java+method:///com/auth0/NonceUtils/matchesNonceInStorage(javax.servlet.http.HttpServletRequest,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///javax/servlet/http/HttpServletRequest/getParameter(java.lang.String)|",
+      "|java+method:///com/auth0/web/NonceUtils/matchesNonceInStorage(javax.servlet.http.HttpServletRequest,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///javax/servlet/http/HttpServletRequest/getParameter(java.lang.String)|",
+      "|java+method:///com/auth0/NonceUtils/matchesNonceInStorage(javax.servlet.http.HttpServletRequest,java.lang.String)|"
+    ],
+    "affectedLib": "com.auth0:mvc-auth-commons:0.1.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.auth0:auth0-spring-mvc:0.2.0",
+    "coordinatesV2": "com.auth0:auth0-spring-mvc:1.0.0",
+    "caller": "|java+constructor:///com/auth0/web/Auth0ClientImpl/Auth0ClientImpl(com.auth0.web.Auth0Config)|",
+    "called": "|java+constructor:///com/auth0/Auth0ClientImpl/Auth0ClientImpl(java.lang.String,java.lang.String,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///com/auth0/web/Auth0Config/getDomain()|",
+      "|java+method:///com/auth0/web/Auth0Config/getClientId()|",
+      "|java+constructor:///com/auth0/Auth0/Auth0(java.lang.String,java.lang.String,java.lang.String)|",
+      "|java+method:///org/apache/commons/lang3/Validate/notNull(java.lang.Object)|",
+      "|java+constructor:///com/auth0/authentication/AuthenticationAPIClient/AuthenticationAPIClient(com.auth0.Auth0)|",
+      "|java+method:///com/auth0/web/Auth0Config/getClientSecret()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/auth0/Auth0ClientImpl/Auth0ClientImpl(java.lang.String,java.lang.String,java.lang.String)|",
+      "|java+method:///com/auth0/web/Auth0Config/getDomain()|",
+      "|java+method:///com/auth0/web/Auth0Config/getClientId()|",
+      "|java+method:///com/auth0/web/Auth0Config/getClientSecret()|"
+    ],
+    "affectedLib": "com.auth0:mvc-auth-commons:0.1.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.auth0:auth0-spring-mvc:0.2.0",
+    "coordinatesV2": "com.auth0:auth0-spring-mvc:1.0.0",
+    "caller": "|java+method:///com/auth0/web/Auth0Filter/doFilter(javax.servlet.ServletRequest,javax.servlet.ServletResponse,javax.servlet.FilterChain)|",
+    "called": "|java+method:///com/auth0/SessionUtils/getAuth0User(javax.servlet.http.HttpServletRequest)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+method:///java/security/SignatureException/getLocalizedMessage()|",
+      "|java+method:///com/auth0/web/Auth0Filter/onSuccess(javax.servlet.ServletRequest,javax.servlet.ServletResponse,javax.servlet.FilterChain,com.auth0.web.Auth0User)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/IllegalStateException/getLocalizedMessage()|",
+      "|java+method:///com/auth0/web/SessionUtils/getAuth0User(javax.servlet.http.HttpServletRequest)|",
+      "|java+method:///com/auth0/web/Auth0Filter/tokensExist(com.auth0.web.Tokens)|",
+      "|java+method:///java/security/NoSuchAlgorithmException/getLocalizedMessage()|",
+      "|java+method:///com/auth0/jwt/JWTVerifyException/getLocalizedMessage()|",
+      "|java+method:///java/io/IOException/getLocalizedMessage()|",
+      "|java+method:///com/auth0/jwt/JWTVerifier/verify(java.lang.String)|",
+      "|java+method:///com/auth0/web/Auth0Filter/onReject(javax.servlet.http.HttpServletResponse)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///com/auth0/web/Tokens/getIdToken()|",
+      "|java+method:///com/auth0/web/SessionUtils/getTokens(javax.servlet.http.HttpServletRequest)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/security/InvalidKeyException/getLocalizedMessage()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/security/SignatureException/getLocalizedMessage()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/IllegalStateException/getLocalizedMessage()|",
+      "|java+constructor:///com/auth0/Auth0Exception/Auth0Exception(java.lang.String)|",
+      "|java+method:///com/auth0/jwt/JWTVerifyException/getLocalizedMessage()|",
+      "|java+method:///java/io/IOException/getLocalizedMessage()|",
+      "|java+method:///com/auth0/jwt/JWTVerifier/verify(java.lang.String)|",
+      "|java+method:///com/auth0/web/Auth0Filter/onReject(javax.servlet.http.HttpServletResponse)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///com/auth0/Tokens/getIdToken()|",
+      "|java+method:///com/auth0/SessionUtils/getTokens(javax.servlet.http.HttpServletRequest)|",
+      "|java+method:///com/auth0/web/Auth0Filter/onSuccess(javax.servlet.ServletRequest,javax.servlet.ServletResponse,javax.servlet.FilterChain,com.auth0.Auth0User)|",
+      "|java+method:///com/auth0/web/Auth0Filter/tokensExist(com.auth0.Tokens)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/security/InvalidKeyException/getLocalizedMessage()|",
+      "|java+method:///java/security/NoSuchAlgorithmException/getLocalizedMessage()|",
+      "|java+method:///com/auth0/SessionUtils/getAuth0User(javax.servlet.http.HttpServletRequest)|"
+    ],
+    "affectedLib": "com.auth0:mvc-auth-commons:0.1.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.auth0:auth0-spring-mvc:0.2.0",
+    "coordinatesV2": "com.auth0:auth0-spring-mvc:1.0.0",
+    "caller": "|java+method:///com/auth0/web/Auth0CallbackHandler/handle(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)|",
+    "called": "|java+method:///com/auth0/NonceUtils/removeNonceFromStorage(javax.servlet.http.HttpServletRequest)|",
+    "v1Body": [
+      "|java+method:///com/auth0/web/Auth0CallbackHandler/onFailure(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.Exception)|",
+      "|java+method:///com/auth0/web/Auth0Client/getUserProfile(com.auth0.web.Tokens)|",
+      "|java+method:///com/auth0/web/Auth0CallbackHandler/store(com.auth0.web.Tokens,com.auth0.web.Auth0User,javax.servlet.http.HttpServletRequest)|",
+      "|java+method:///com/auth0/web/Auth0CallbackHandler/onSuccess(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)|",
+      "|java+method:///com/auth0/web/NonceUtils/removeNonceFromStorage(javax.servlet.http.HttpServletRequest)|",
+      "|java+method:///com/auth0/web/Auth0CallbackHandler/isValidRequest(javax.servlet.http.HttpServletRequest)|",
+      "|java+constructor:///java/lang/IllegalStateException/IllegalStateException(java.lang.String)|",
+      "|java+method:///com/auth0/web/Auth0CallbackHandler/fetchTokens(javax.servlet.http.HttpServletRequest)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/auth0/web/Auth0CallbackHandler/store(com.auth0.Tokens,com.auth0.Auth0User,javax.servlet.http.HttpServletRequest)|",
+      "|java+method:///com/auth0/web/Auth0CallbackHandler/onSuccess(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)|",
+      "|java+method:///com/auth0/web/Auth0CallbackHandler/isValidRequest(javax.servlet.http.HttpServletRequest)|",
+      "|java+method:///com/auth0/NonceUtils/removeNonceFromStorage(javax.servlet.http.HttpServletRequest)|",
+      "|java+constructor:///java/lang/IllegalStateException/IllegalStateException(java.lang.String)|",
+      "|java+method:///com/auth0/web/Auth0CallbackHandler/fetchTokens(javax.servlet.http.HttpServletRequest)|",
+      "|java+method:///com/auth0/web/Auth0CallbackHandler/onFailure(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.Exception)|",
+      "|java+method:///com/auth0/Auth0Client/getUserProfile(com.auth0.Tokens)|"
+    ],
+    "affectedLib": "com.auth0:mvc-auth-commons:0.1.0",
+    "change": "ADDED"
+  }
+]

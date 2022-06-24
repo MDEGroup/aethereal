@@ -1,0 +1,19 @@
+[
+  {
+    "coordinatesV1": "com.revolsys.open:com.revolsys.open.core:2012.07.31.RELEASE",
+    "coordinatesV2": "com.revolsys.open:com.revolsys.open.core:2012.11.01.RELEASE",
+    "caller": "|java+method:///com/revolsys/jdbc/JdbcUtils/getConnection(javax.sql.DataSource)|",
+    "called": "|java+method:///org/springframework/jdbc/datasource/DataSourceUtils/getConnection(javax.sql.DataSource)|",
+    "v1Body": [
+      "|java+method:///javax/sql/DataSource/getConnection()|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String,java.lang.Throwable)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/springframework/jdbc/datasource/DataSourceUtils/getConnection(javax.sql.DataSource)|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String,java.lang.Throwable)|"
+    ],
+    "affectedLib": "org.springframework:spring-jdbc:3.0.7.RELEASE",
+    "change": "ADDED"
+  }
+]

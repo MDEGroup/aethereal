@@ -1,0 +1,91 @@
+[
+  {
+    "coordinatesV1": "org.hibernate:hibernate-validator:4.3.0.Alpha1",
+    "coordinatesV2": "org.hibernate:hibernate-validator:4.2.0.Final",
+    "caller": "|java+method:///org/hibernate/validator/messageinterpolation/ValueFormatterMessageInterpolator/interpolateValidatedValue(java.lang.String,java.lang.Object,java.util.Locale)|",
+    "called": "|java+constructor:///javax/validation/ValidationException/ValidationException(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/lang/String/valueOf(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/String/length()|",
+      "|java+method:///java/util/IllegalFormatException/getMessage()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/String/format(java.util.Locale,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///java/lang/String/substring(int,int)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/String/indexOf(java.lang.String)|",
+      "|java+constructor:///javax/validation/ValidationException/ValidationException(java.lang.String)|",
+      "|java+constructor:///javax/validation/ValidationException/ValidationException(java.lang.String,java.lang.Throwable)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/hibernate/validator/internal/util/logging/Log/throwInvalidFormat(java.lang.String,java.util.IllegalFormatException)|",
+      "|java+method:///java/lang/String/valueOf(java.lang.Object)|",
+      "|java+method:///java/lang/String/length()|",
+      "|java+method:///java/util/IllegalFormatException/getMessage()|",
+      "|java+method:///java/lang/String/format(java.util.Locale,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///java/lang/String/substring(int,int)|",
+      "|java+method:///org/hibernate/validator/internal/util/logging/Log/getMissingFormatStringInTemplateException(java.lang.String)|",
+      "|java+method:///java/lang/String/indexOf(java.lang.String)|"
+    ],
+    "affectedLib": "javax.validation:validation-api:1.0.0.GA",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.hibernate:hibernate-validator:4.2.0.Final",
+    "coordinatesV2": "org.hibernate:hibernate-validator:4.3.0.Alpha1",
+    "caller": "|java+initializer:///org/hibernate/validator/resourceloading/PlatformResourceBundleLocator/PlatformResourceBundleLocator$initializer|",
+    "called": "|java+method:///org/jboss/logging/Logger/getLogger(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/hibernate/validator/util/LoggerFactory/make()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/jboss/logging/Logger/getLogger(java.lang.String)|",
+      "|java+method:///java/lang/Class/getName()|"
+    ],
+    "affectedLib": "org.jboss.logging:jboss-logging:3.1.0.CR2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.hibernate:hibernate-validator:4.2.0.Final",
+    "coordinatesV2": "org.hibernate:hibernate-validator:4.3.0.Alpha1",
+    "caller": "|java+method:///org/hibernate/validator/resourceloading/PlatformResourceBundleLocator/getResourceBundle(java.util.Locale)|",
+    "called": "|java+method:///org/jboss/logging/Logger/debugf(java.lang.String,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/hibernate/validator/util/ReflectionHelper/getClassLoaderFromClass(java.lang.Class)|",
+      "|java+method:///org/slf4j/Logger/isDebugEnabled()|",
+      "|java+method:///org/hibernate/validator/util/ReflectionHelper/getClassLoaderFromContext()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+method:///org/hibernate/validator/resourceloading/PlatformResourceBundleLocator/loadBundle(java.lang.ClassLoader,java.util.Locale,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/hibernate/validator/resourceloading/PlatformResourceBundleLocator/loadBundle(java.lang.ClassLoader,java.util.Locale,java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/jboss/logging/Logger/debugf(java.lang.String,java.lang.Object)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/hibernate/validator/resourceloading/PlatformResourceBundleLocator$GetClassLoader/fromContext()|",
+      "|java+method:///org/hibernate/validator/resourceloading/PlatformResourceBundleLocator$GetClassLoader/fromClass(java.lang.Class)|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "affectedLib": "org.jboss.logging:jboss-logging:3.1.0.CR2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.hibernate:hibernate-validator:4.2.0.Final",
+    "coordinatesV2": "org.hibernate:hibernate-validator:4.3.0.Alpha1",
+    "caller": "|java+method:///org/hibernate/validator/resourceloading/PlatformResourceBundleLocator/loadBundle(java.lang.ClassLoader,java.util.Locale,java.lang.String)|",
+    "called": "|java+method:///org/jboss/logging/Logger/trace(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///java/util/ResourceBundle/getBundle(java.lang.String,java.util.Locale,java.lang.ClassLoader)|",
+      "|java+method:///org/slf4j/Logger/trace(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/jboss/logging/Logger/trace(java.lang.Object)|",
+      "|java+method:///java/util/ResourceBundle/getBundle(java.lang.String,java.util.Locale,java.lang.ClassLoader)|"
+    ],
+    "affectedLib": "org.jboss.logging:jboss-logging:3.1.0.CR2",
+    "change": "ADDED"
+  }
+]

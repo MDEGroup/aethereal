@@ -1,0 +1,142 @@
+[
+  {
+    "coordinatesV1": "com.github.yamingd.argo:argo-util:2.2.0",
+    "coordinatesV2": "com.github.yamingd.argo:argo-util:2.1",
+    "caller": "|java+initializer:///com/argo/util/json/JsonUtil/JsonUtil$initializer|",
+    "called": "|java+constructor:///com/google/gson/GsonBuilder/GsonBuilder()|",
+    "v1Body": [
+      "|java+method:///com/google/gson/GsonBuilder/setDateFormat(java.lang.String)|",
+      "|java+constructor:///com/argo/util/json/NaturalDeserializer/NaturalDeserializer()|",
+      "|java+method:///com/google/gson/GsonBuilder/create()|",
+      "|java+method:///com/google/gson/GsonBuilder/registerTypeAdapter(java.lang.reflect.Type,java.lang.Object)|",
+      "|java+constructor:///org/msgpack/MessagePack/MessagePack()|",
+      "|java+constructor:///com/google/gson/GsonBuilder/GsonBuilder()|",
+      "|java+method:///com/google/gson/GsonBuilder/excludeFieldsWithoutExposeAnnotation()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/msgpack/MessagePack/MessagePack()|"
+    ],
+    "affectedLib": "com.google.code.gson:gson:2.3.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.github.yamingd.argo:argo-util:2.2.0",
+    "coordinatesV2": "com.github.yamingd.argo:argo-util:2.1",
+    "caller": "|java+method:///com/argo/util/json/JsonUtil/toJson(java.lang.Object)|",
+    "called": "|java+method:///com/google/gson/Gson/toJson(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///com/google/gson/Gson/toJson(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/alibaba/fastjson/JSON/toJSONString(java.lang.Object)|"
+    ],
+    "affectedLib": "com.google.code.gson:gson:2.3.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.github.yamingd.argo:argo-util:2.2.0",
+    "coordinatesV2": "com.github.yamingd.argo:argo-util:2.1",
+    "caller": "|java+method:///com/argo/util/json/JsonUtil/asT(java.lang.Class,java.lang.String)|",
+    "called": "|java+method:///com/google/gson/Gson/fromJson(java.lang.String,java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///com/google/gson/Gson/fromJson(java.lang.String,java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/alibaba/fastjson/JSON/parseObject(java.lang.String,java.lang.Class)|"
+    ],
+    "affectedLib": "com.google.code.gson:gson:2.3.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.github.yamingd.argo:argo-util:2.2.0",
+    "coordinatesV2": "com.github.yamingd.argo:argo-util:2.1",
+    "caller": "|java+method:///com/argo/util/json/JsonUtil/asList(java.lang.String,java.lang.Object%5B%5D)|",
+    "called": "|java+method:///com/google/gson/Gson/fromJson(java.lang.String,java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///java/util/Arrays/asList(java.lang.Object%5B%5D)|",
+      "|java+method:///com/google/gson/Gson/fromJson(java.lang.String,java.lang.Class)|",
+      "|java+method:///java/lang/Object/getClass()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Arrays/asList(java.lang.Object%5B%5D)|",
+      "|java+method:///com/alibaba/fastjson/JSON/parseObject(java.lang.String,java.lang.Class)|",
+      "|java+method:///java/lang/Object/getClass()|"
+    ],
+    "affectedLib": "com.google.code.gson:gson:2.3.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.github.yamingd.argo:argo-util:2.2.0",
+    "coordinatesV2": "com.github.yamingd.argo:argo-util:2.1",
+    "caller": "|java+method:///com/argo/util/json/JsonUtil/asMap(java.lang.String)|",
+    "called": "|java+method:///com/google/gson/Gson/fromJson(java.lang.String,java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///com/google/gson/Gson/fromJson(java.lang.String,java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/alibaba/fastjson/JSON/parseObject(java.lang.String,java.lang.Class)|"
+    ],
+    "affectedLib": "com.google.code.gson:gson:2.3.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.github.yamingd.argo:argo-util:2.1",
+    "coordinatesV2": "com.github.yamingd.argo:argo-util:2.2.0",
+    "caller": "|java+method:///com/argo/util/json/JsonUtil/toJson(java.lang.Object)|",
+    "called": "|java+method:///com/alibaba/fastjson/JSON/toJSONString(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///com/google/gson/Gson/toJson(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/alibaba/fastjson/JSON/toJSONString(java.lang.Object)|"
+    ],
+    "affectedLib": "com.alibaba:fastjson:1.2.8",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.github.yamingd.argo:argo-util:2.1",
+    "coordinatesV2": "com.github.yamingd.argo:argo-util:2.2.0",
+    "caller": "|java+method:///com/argo/util/json/JsonUtil/asT(java.lang.Class,java.lang.String)|",
+    "called": "|java+method:///com/alibaba/fastjson/JSON/parseObject(java.lang.String,java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///com/google/gson/Gson/fromJson(java.lang.String,java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/alibaba/fastjson/JSON/parseObject(java.lang.String,java.lang.Class)|"
+    ],
+    "affectedLib": "com.alibaba:fastjson:1.2.8",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.github.yamingd.argo:argo-util:2.1",
+    "coordinatesV2": "com.github.yamingd.argo:argo-util:2.2.0",
+    "caller": "|java+method:///com/argo/util/json/JsonUtil/asList(java.lang.String,java.lang.Object%5B%5D)|",
+    "called": "|java+method:///com/alibaba/fastjson/JSON/parseObject(java.lang.String,java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///java/util/Arrays/asList(java.lang.Object%5B%5D)|",
+      "|java+method:///com/google/gson/Gson/fromJson(java.lang.String,java.lang.Class)|",
+      "|java+method:///java/lang/Object/getClass()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Arrays/asList(java.lang.Object%5B%5D)|",
+      "|java+method:///com/alibaba/fastjson/JSON/parseObject(java.lang.String,java.lang.Class)|",
+      "|java+method:///java/lang/Object/getClass()|"
+    ],
+    "affectedLib": "com.alibaba:fastjson:1.2.8",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.github.yamingd.argo:argo-util:2.1",
+    "coordinatesV2": "com.github.yamingd.argo:argo-util:2.2.0",
+    "caller": "|java+method:///com/argo/util/json/JsonUtil/asMap(java.lang.String)|",
+    "called": "|java+method:///com/alibaba/fastjson/JSON/parseObject(java.lang.String,java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///com/google/gson/Gson/fromJson(java.lang.String,java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/alibaba/fastjson/JSON/parseObject(java.lang.String,java.lang.Class)|"
+    ],
+    "affectedLib": "com.alibaba:fastjson:1.2.8",
+    "change": "ADDED"
+  }
+]

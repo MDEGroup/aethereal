@@ -1,0 +1,21 @@
+[
+  {
+    "coordinatesV1": "org.apache.james:apache-james-imap-api:0.2",
+    "coordinatesV2": "org.apache.james:apache-james-imap-api:0.2-M1",
+    "caller": "|java+method:///org/apache/james/imap/api/message/MessageFlags/names(javax.mail.Flags)|",
+    "called": "|java+method:///javax/mail/Flags/contains(javax.mail.Flags$Flag)|",
+    "v1Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///java/util/Collection/add(java.lang.Object)|",
+      "|java+method:///javax/mail/Flags/contains(javax.mail.Flags$Flag)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///javax/mail/Flags/getUserFlags()|",
+      "|java+method:///java/util/Collection/add(java.lang.Object)|",
+      "|java+method:///javax/mail/Flags/contains(javax.mail.Flags$Flag)|"
+    ],
+    "affectedLib": "javax.mail:mail:1.4.3",
+    "change": "REMOVED"
+  }
+]

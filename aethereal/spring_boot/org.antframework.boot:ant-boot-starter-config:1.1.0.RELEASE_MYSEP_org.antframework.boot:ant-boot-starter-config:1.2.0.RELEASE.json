@@ -1,0 +1,46 @@
+[
+  {
+    "coordinatesV1": "org.antframework.boot:ant-boot-starter-config:1.2.0.RELEASE",
+    "coordinatesV2": "org.antframework.boot:ant-boot-starter-config:1.1.0.RELEASE",
+    "caller": "|java+method:///org/antframework/boot/config/boot/ConfigcenterApplicationListener/onApplicationEvent(org.springframework.boot.context.event.ApplicationEnvironmentPreparedEvent)|",
+    "called": "|java+constructor:///org/antframework/configcenter/client/ConfigContext/ConfigContext(org.antframework.configcenter.client.ConfigContext$InitParams)|",
+    "v1Body": [
+      "|java+method:///org/springframework/core/env/MutablePropertySources/addLast(org.springframework.core.env.PropertySource)|",
+      "|java+method:///org/antframework/boot/config/boot/ConfigcenterApplicationListener/buildPropertySource(org.antframework.configcenter.client.ConfigContext)|",
+      "|java+method:///org/springframework/core/env/ConfigurableEnvironment/getPropertySources()|",
+      "|java+method:///org/antframework/boot/config/ConfigContextHolder/init(org.antframework.configcenter.client.ConfigContext)|",
+      "|java+method:///org/springframework/boot/context/event/ApplicationEnvironmentPreparedEvent/getEnvironment()|",
+      "|java+constructor:///org/antframework/configcenter/client/ConfigContext/ConfigContext(org.antframework.configcenter.client.ConfigContext$InitParams)|",
+      "|java+method:///org/antframework/boot/config/boot/ConfigcenterApplicationListener/buildInitParams()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/System/setProperty(java.lang.String,java.lang.String)|",
+      "|java+method:///org/antframework/boot/core/Apps/getConfigPath()|",
+      "|java+method:///org/antframework/boot/core/Apps/getAppId()|"
+    ],
+    "affectedLib": "org.antframework.configcenter:configcenter-client:1.1.0.RELEASE",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.antframework.boot:ant-boot-starter-config:1.1.0.RELEASE",
+    "coordinatesV2": "org.antframework.boot:ant-boot-starter-config:1.2.0.RELEASE",
+    "caller": "|java+method:///org/antframework/boot/config/boot/ConfigcenterApplicationListener/onApplicationEvent(org.springframework.boot.context.event.ApplicationEnvironmentPreparedEvent)|",
+    "called": "|java+method:///org/antframework/boot/core/Apps/getAppId()|",
+    "v1Body": [
+      "|java+method:///org/springframework/core/env/MutablePropertySources/addLast(org.springframework.core.env.PropertySource)|",
+      "|java+method:///org/antframework/boot/config/boot/ConfigcenterApplicationListener/buildPropertySource(org.antframework.configcenter.client.ConfigContext)|",
+      "|java+method:///org/springframework/core/env/ConfigurableEnvironment/getPropertySources()|",
+      "|java+method:///org/antframework/boot/config/ConfigContextHolder/init(org.antframework.configcenter.client.ConfigContext)|",
+      "|java+method:///org/springframework/boot/context/event/ApplicationEnvironmentPreparedEvent/getEnvironment()|",
+      "|java+constructor:///org/antframework/configcenter/client/ConfigContext/ConfigContext(org.antframework.configcenter.client.ConfigContext$InitParams)|",
+      "|java+method:///org/antframework/boot/config/boot/ConfigcenterApplicationListener/buildInitParams()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/System/setProperty(java.lang.String,java.lang.String)|",
+      "|java+method:///org/antframework/boot/core/Apps/getConfigPath()|",
+      "|java+method:///org/antframework/boot/core/Apps/getAppId()|"
+    ],
+    "affectedLib": "org.antframework.boot:ant-boot-core:1.2.0.RELEASE",
+    "change": "UPDATED"
+  }
+]

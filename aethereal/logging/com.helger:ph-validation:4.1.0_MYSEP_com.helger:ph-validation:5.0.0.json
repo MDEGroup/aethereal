@@ -1,0 +1,106 @@
+[
+  {
+    "coordinatesV1": "com.helger:ph-validation:4.1.0",
+    "coordinatesV2": "com.helger:ph-validation:5.0.0",
+    "caller": "|java+constructor:///com/helger/validation/validator/string/StringValidatorChainAND/StringValidatorChainAND(com.helger.validation.validator.IStringValidator%5B%5D)|",
+    "called": "|java+constructor:///com/helger/commons/collection/ext/CommonsArrayList/CommonsArrayList(java.lang.Object%5B%5D)|",
+    "v1Body": [
+      "|java+constructor:///com/helger/validation/validator/string/AbstractStringValidator/AbstractStringValidator()|",
+      "|java+method:///com/helger/commons/collection/CollectionHelper/newList(java.lang.Object%5B%5D)|",
+      "|java+method:///com/helger/commons/ValueEnforcer/notEmptyNoNullValue(java.lang.Object%5B%5D,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/helger/commons/collection/ext/CommonsArrayList/CommonsArrayList(java.lang.Object%5B%5D)|",
+      "|java+constructor:///com/helger/validation/validator/string/AbstractStringValidator/AbstractStringValidator()|",
+      "|java+method:///com/helger/commons/ValueEnforcer/notEmptyNoNullValue(java.lang.Object%5B%5D,java.lang.String)|"
+    ],
+    "affectedLib": "com.helger:ph-commons:8.1.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.helger:ph-validation:4.1.0",
+    "coordinatesV2": "com.helger:ph-validation:5.0.0",
+    "caller": "|java+constructor:///com/helger/validation/validator/string/StringValidatorChainOR/StringValidatorChainOR(com.helger.validation.validator.IStringValidator%5B%5D)|",
+    "called": "|java+constructor:///com/helger/commons/collection/ext/CommonsArrayList/CommonsArrayList(java.lang.Object%5B%5D)|",
+    "v1Body": [
+      "|java+constructor:///com/helger/validation/validator/string/AbstractStringValidator/AbstractStringValidator()|",
+      "|java+method:///com/helger/commons/collection/CollectionHelper/newList(java.lang.Object%5B%5D)|",
+      "|java+method:///com/helger/commons/ValueEnforcer/notEmptyNoNullValue(java.lang.Object%5B%5D,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/helger/commons/collection/ext/CommonsArrayList/CommonsArrayList(java.lang.Object%5B%5D)|",
+      "|java+constructor:///com/helger/validation/validator/string/AbstractStringValidator/AbstractStringValidator()|",
+      "|java+method:///com/helger/commons/ValueEnforcer/notEmptyNoNullValue(java.lang.Object%5B%5D,java.lang.String)|"
+    ],
+    "affectedLib": "com.helger:ph-commons:8.1.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.helger:ph-validation:4.1.0",
+    "coordinatesV2": "com.helger:ph-validation:5.0.0",
+    "caller": "|java+method:///com/helger/validation/validator/string/AbstractStringDateTimeValidator/validate(java.lang.String)|",
+    "called": "|java+method:///com/helger/datetime/format/PDTFormatPatterns/getDefaultPatternDateTime(java.util.Locale)|",
+    "v1Body": [
+      "|java+method:///com/helger/validation/validator/string/AbstractStringDateTimeValidator/getParseLocale()|",
+      "|java+constructor:///com/helger/validation/result/ValidationResultError/ValidationResultError(com.helger.commons.text.display.IHasDisplayText,java.lang.Object)|",
+      "|java+method:///com/helger/datetime/format/PDTFromString/getDefaultDateTimeFromString(java.lang.String,java.util.Locale)|",
+      "|java+method:///com/helger/validation/result/ValidationResultSuccess/getInstance()|",
+      "|java+method:///com/helger/datetime/format/PDTFormatPatterns/getDefaultPatternDateTime(java.util.Locale)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/helger/validation/validator/string/AbstractStringDateTimeValidator/getParseLocale()|",
+      "|java+constructor:///com/helger/validation/result/ValidationResultError/ValidationResultError(com.helger.commons.text.display.IHasDisplayText,java.lang.Object)|",
+      "|java+method:///com/helger/datetime/format/PDTFormatter/getDefaultFormatterDateTime(java.util.Locale)|",
+      "|java+method:///com/helger/datetime/format/PDTFromString/getZonedDateTimeFromString(java.lang.String,java.time.format.DateTimeFormatter)|",
+      "|java+method:///com/helger/datetime/format/PDTFromString/getLocalDateTimeFromString(java.lang.String,java.util.Locale)|",
+      "|java+method:///com/helger/validation/result/ValidationResultSuccess/getInstance()|",
+      "|java+method:///com/helger/datetime/format/PDTFormatPatterns/getDefaultPatternDateTime(java.util.Locale)|"
+    ],
+    "affectedLib": "com.helger:ph-datetime:5.0.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.helger:ph-validation:4.1.0",
+    "coordinatesV2": "com.helger:ph-validation:5.0.0",
+    "caller": "|java+method:///com/helger/validation/validator/string/AbstractStringTimeValidator/validate(java.lang.String)|",
+    "called": "|java+method:///com/helger/datetime/format/PDTFromString/getLocalTimeFromString(java.lang.String,java.util.Locale)|",
+    "v1Body": [
+      "|java+method:///com/helger/datetime/format/PDTFromString/getDefaultTimeFromString(java.lang.String,java.util.Locale)|",
+      "|java+method:///com/helger/validation/result/ValidationResultSuccess/getInstance()|",
+      "|java+constructor:///com/helger/validation/result/ValidationResultError/ValidationResultError(com.helger.commons.text.display.IHasDisplayText,java.lang.Object%5B%5D)|",
+      "|java+method:///com/helger/validation/validator/string/AbstractStringTimeValidator/getParseLocale()|",
+      "|java+method:///com/helger/datetime/format/PDTFormatPatterns/getDefaultPatternTime(java.util.Locale)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/helger/validation/result/ValidationResultSuccess/getInstance()|",
+      "|java+constructor:///com/helger/validation/result/ValidationResultError/ValidationResultError(com.helger.commons.text.display.IHasDisplayText,java.lang.Object%5B%5D)|",
+      "|java+method:///com/helger/validation/validator/string/AbstractStringTimeValidator/getParseLocale()|",
+      "|java+method:///com/helger/datetime/format/PDTFromString/getLocalTimeFromString(java.lang.String,java.util.Locale)|",
+      "|java+method:///com/helger/datetime/format/PDTFormatPatterns/getDefaultPatternTime(java.util.Locale)|"
+    ],
+    "affectedLib": "com.helger:ph-datetime:5.0.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.helger:ph-validation:4.1.0",
+    "coordinatesV2": "com.helger:ph-validation:5.0.0",
+    "caller": "|java+method:///com/helger/validation/validator/string/AbstractStringDateValidator/validate(java.lang.String)|",
+    "called": "|java+method:///com/helger/datetime/format/PDTFromString/getLocalDateFromString(java.lang.String,java.util.Locale)|",
+    "v1Body": [
+      "|java+method:///com/helger/datetime/format/PDTFromString/getDefaultDateFromString(java.lang.String,java.util.Locale)|",
+      "|java+method:///com/helger/validation/result/ValidationResultSuccess/getInstance()|",
+      "|java+constructor:///com/helger/validation/result/ValidationResultError/ValidationResultError(com.helger.commons.text.display.IHasDisplayText,java.lang.Object)|",
+      "|java+method:///com/helger/validation/validator/string/AbstractStringDateValidator/getParseLocale()|",
+      "|java+method:///com/helger/datetime/format/PDTFormatPatterns/getDefaultPatternDate(java.util.Locale)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/helger/validation/result/ValidationResultSuccess/getInstance()|",
+      "|java+constructor:///com/helger/validation/result/ValidationResultError/ValidationResultError(com.helger.commons.text.display.IHasDisplayText,java.lang.Object)|",
+      "|java+method:///com/helger/datetime/format/PDTFromString/getLocalDateFromString(java.lang.String,java.util.Locale)|",
+      "|java+method:///com/helger/validation/validator/string/AbstractStringDateValidator/getParseLocale()|",
+      "|java+method:///com/helger/datetime/format/PDTFormatPatterns/getDefaultPatternDate(java.util.Locale)|"
+    ],
+    "affectedLib": "com.helger:ph-datetime:5.0.0",
+    "change": "UPDATED"
+  }
+]

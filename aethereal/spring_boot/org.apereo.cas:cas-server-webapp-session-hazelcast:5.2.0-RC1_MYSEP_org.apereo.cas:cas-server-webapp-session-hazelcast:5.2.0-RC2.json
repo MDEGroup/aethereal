@@ -1,0 +1,43 @@
+[
+  {
+    "coordinatesV1": "org.apereo.cas:cas-server-webapp-session-hazelcast:5.2.0-RC1",
+    "coordinatesV2": "org.apereo.cas:cas-server-webapp-session-hazelcast:5.2.0-RC2",
+    "caller": "|java+method:///org/apereo/cas/config/HazelcastSessionConfiguration/hazelcastInstance()|",
+    "called": "|java+method:///com/hazelcast/core/Hazelcast/newHazelcastInstance(com.hazelcast.config.Config)|",
+    "v1Body": [
+      "|java+method:///com/hazelcast/config/Config/setInstanceName(java.lang.String)|",
+      "|java+method:///java/lang/Class/getSimpleName()|",
+      "|java+method:///org/apereo/cas/configuration/model/webapp/WebflowProperties$Session/getHzLocation()|",
+      "|java+constructor:///com/hazelcast/config/XmlConfigBuilder/XmlConfigBuilder(java.io.InputStream)|",
+      "|java+method:///org/apereo/cas/configuration/CasConfigurationProperties/getWebflow()|",
+      "|java+method:///com/hazelcast/core/Hazelcast/newHazelcastInstance(com.hazelcast.config.Config)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///com/hazelcast/config/Config/setProperty(java.lang.String,java.lang.String)|",
+      "|java+method:///org/apereo/cas/configuration/model/webapp/WebflowProperties/getSession()|",
+      "|java+method:///com/google/common/base/Throwables/propagate(java.lang.Throwable)|",
+      "|java+method:///org/springframework/core/io/Resource/getInputStream()|",
+      "|java+method:///com/hazelcast/config/Config/setConfigurationUrl(java.net.URL)|",
+      "|java+method:///com/hazelcast/config/XmlConfigBuilder/build()|",
+      "|java+method:///org/springframework/core/io/Resource/getURL()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/hazelcast/config/Config/setInstanceName(java.lang.String)|",
+      "|java+method:///java/lang/Class/getSimpleName()|",
+      "|java+method:///org/apereo/cas/configuration/model/webapp/WebflowProperties$Session/getHzLocation()|",
+      "|java+constructor:///com/hazelcast/config/XmlConfigBuilder/XmlConfigBuilder(java.io.InputStream)|",
+      "|java+method:///org/apereo/cas/configuration/CasConfigurationProperties/getWebflow()|",
+      "|java+method:///com/hazelcast/core/Hazelcast/newHazelcastInstance(com.hazelcast.config.Config)|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///com/hazelcast/config/Config/setProperty(java.lang.String,java.lang.String)|",
+      "|java+method:///org/springframework/core/io/Resource/getInputStream()|",
+      "|java+method:///com/hazelcast/config/Config/setConfigurationUrl(java.net.URL)|",
+      "|java+method:///com/hazelcast/config/XmlConfigBuilder/build()|",
+      "|java+method:///org/springframework/core/io/Resource/getURL()|",
+      "|java+method:///java/lang/Exception/getMessage()|",
+      "|java+method:///org/apereo/cas/configuration/model/webapp/WebflowProperties/getSession()|"
+    ],
+    "affectedLib": "com.hazelcast:hazelcast:3.8.3",
+    "change": "UPDATED"
+  }
+]

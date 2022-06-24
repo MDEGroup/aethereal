@@ -1,0 +1,45 @@
+[
+  {
+    "coordinatesV1": "io.gravitee.gateway.standalone:gravitee-gateway-standalone-container:1.17.0",
+    "coordinatesV2": "io.gravitee.gateway.standalone:gravitee-gateway-standalone-container:1.18.0",
+    "caller": "|java+method:///io/gravitee/gateway/standalone/vertx/VertxFactory/getObject()|",
+    "called": "|java+method:///io/vertx/micrometer/backends/BackendRegistries/getDefaultNow()|",
+    "v1Body": [
+      "|java+method:///io/vertx/core/Vertx/registerVerticleFactory(io.vertx.core.spi.VerticleFactory)|",
+      "|java+method:///io/gravitee/gateway/standalone/vertx/VertxFactory/getObject()|",
+      "|java+method:///io/vertx/core/Vertx/vertx()|"
+    ],
+    "v2Body": [
+      "|java+method:///io/gravitee/gateway/standalone/vertx/VertxFactory/configureMetrics(io.vertx.core.VertxOptions)|",
+      "|java+method:///org/springframework/core/env/Environment/getProperty(java.lang.String,java.lang.Class,java.lang.Object)|",
+      "|java+method:///java/net/InetAddress/getLocalHost()|",
+      "|java+method:///io/vertx/micrometer/backends/BackendRegistries/getDefaultNow()|",
+      "|java+method:///io/micrometer/core/instrument/MeterRegistry$Config/commonTags(java.lang.String%5B%5D)|",
+      "|java+constructor:///io/micrometer/core/instrument/binder/system/FileDescriptorMetrics/FileDescriptorMetrics()|",
+      "|java+method:///io/gravitee/gateway/standalone/vertx/VertxFactory/getObject()|",
+      "|java+method:///io/micrometer/core/instrument/MeterRegistry$Config/meterFilter(io.micrometer.core.instrument.config.MeterFilter)|",
+      "|java+method:///io/micrometer/core/instrument/binder/jvm/JvmGcMetrics/bindTo(io.micrometer.core.instrument.MeterRegistry)|",
+      "|java+method:///io/micrometer/core/instrument/binder/system/ProcessorMetrics/bindTo(io.micrometer.core.instrument.MeterRegistry)|",
+      "|java+method:///io/micrometer/core/instrument/binder/system/FileDescriptorMetrics/bindTo(io.micrometer.core.instrument.MeterRegistry)|",
+      "|java+method:///io/vertx/core/Vertx/vertx(io.vertx.core.VertxOptions)|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///io/vertx/core/Vertx/registerVerticleFactory(io.vertx.core.spi.VerticleFactory)|",
+      "|java+method:///io/micrometer/core/instrument/binder/jvm/ClassLoaderMetrics/bindTo(io.micrometer.core.instrument.MeterRegistry)|",
+      "|java+method:///io/micrometer/core/instrument/binder/jvm/JvmThreadMetrics/bindTo(io.micrometer.core.instrument.MeterRegistry)|",
+      "|java+method:///io/micrometer/core/instrument/binder/jvm/JvmMemoryMetrics/bindTo(io.micrometer.core.instrument.MeterRegistry)|",
+      "|java+constructor:///io/vertx/core/VertxOptions/VertxOptions()|",
+      "|java+constructor:///io/gravitee/gateway/standalone/vertx/VertxFactory$RenameVertxFilter/VertxFactory$RenameVertxFilter(io.gravitee.gateway.standalone.vertx.VertxFactory,io.gravitee.gateway.standalone.vertx.VertxFactory$1)|",
+      "|java+method:///java/lang/Boolean/valueOf(boolean)|",
+      "|java+method:///java/net/InetAddress/getHostName()|",
+      "|java+constructor:///io/micrometer/core/instrument/binder/jvm/JvmMemoryMetrics/JvmMemoryMetrics()|",
+      "|java+constructor:///io/micrometer/core/instrument/binder/jvm/JvmGcMetrics/JvmGcMetrics()|",
+      "|java+constructor:///io/micrometer/core/instrument/binder/jvm/ClassLoaderMetrics/ClassLoaderMetrics()|",
+      "|java+constructor:///io/micrometer/core/instrument/binder/jvm/JvmThreadMetrics/JvmThreadMetrics()|",
+      "|java+method:///java/lang/Boolean/booleanValue()|",
+      "|java+constructor:///io/micrometer/core/instrument/binder/system/ProcessorMetrics/ProcessorMetrics()|",
+      "|java+method:///io/micrometer/core/instrument/MeterRegistry/config()|"
+    ],
+    "affectedLib": "io.vertx:vertx-micrometer-metrics:3.5.2",
+    "change": "ADDED"
+  }
+]

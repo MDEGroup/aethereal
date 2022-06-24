@@ -1,0 +1,67 @@
+[
+  {
+    "coordinatesV1": "org.jasig.cas.client:cas-client-integration-jboss:3.2.0",
+    "coordinatesV2": "org.jasig.cas.client:cas-client-integration-jboss:3.4.1",
+    "caller": "|java+constructor:///org/jasig/cas/client/jboss/authentication/WebAuthenticationFilter/WebAuthenticationFilter()|",
+    "called": "|java+constructor:///org/jasig/cas/client/util/AbstractCasFilter/AbstractCasFilter(org.jasig.cas.client.Protocol)|",
+    "v1Body": [
+      "|java+constructor:///org/jasig/cas/client/util/AbstractCasFilter/AbstractCasFilter()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/jasig/cas/client/util/AbstractCasFilter/AbstractCasFilter(org.jasig.cas.client.Protocol)|"
+    ],
+    "affectedLib": "org.jasig.cas.client:cas-client-core:3.4.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas.client:cas-client-integration-jboss:3.2.0",
+    "coordinatesV2": "org.jasig.cas.client:cas-client-integration-jboss:3.4.1",
+    "caller": "|java+method:///org/jasig/cas/client/jboss/authentication/WebAuthenticationFilter/doFilter(javax.servlet.ServletRequest,javax.servlet.ServletResponse,javax.servlet.FilterChain)|",
+    "called": "|java+method:///org/jasig/cas/client/util/CommonUtils/safeGetParameter(javax.servlet.http.HttpServletRequest,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///javax/servlet/http/HttpServletRequest/getUserPrincipal()|",
+      "|java+method:///javax/servlet/http/HttpServletResponse/sendError(int,java.lang.String)|",
+      "|java+constructor:///org/jboss/web/tomcat/security/login/WebAuthentication/WebAuthentication()|",
+      "|java+method:///org/jasig/cas/client/jboss/authentication/WebAuthenticationFilter/getArtifactParameterName()|",
+      "|java+constructor:///java/security/GeneralSecurityException/GeneralSecurityException(java.lang.String)|",
+      "|java+method:///org/jasig/cas/client/util/CommonUtils/safeGetParameter(javax.servlet.http.HttpServletRequest,java.lang.String)|",
+      "|java+method:///javax/servlet/http/HttpSession/setAttribute(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/jboss/web/tomcat/security/login/WebAuthentication/login(java.lang.String,java.lang.Object)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///javax/servlet/FilterChain/doFilter(javax.servlet.ServletRequest,javax.servlet.ServletResponse)|",
+      "|java+method:///javax/servlet/http/HttpSession/getAttribute(java.lang.String)|",
+      "|java+method:///org/apache/commons/logging/Log/debug(java.lang.Object)|",
+      "|java+method:///javax/servlet/http/HttpSession/removeAttribute(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/jasig/cas/client/jaas/AssertionPrincipal/getAssertion()|",
+      "|java+method:///org/apache/commons/logging/Log/info(java.lang.Object)|",
+      "|java+method:///java/security/GeneralSecurityException/getMessage()|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getSession()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/jasig/cas/client/jboss/authentication/WebAuthenticationFilter/constructServiceUrl(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)|"
+    ],
+    "v2Body": [
+      "|java+method:///javax/servlet/http/HttpServletResponse/sendError(int,java.lang.String)|",
+      "|java+constructor:///org/jboss/web/tomcat/security/login/WebAuthentication/WebAuthentication()|",
+      "|java+method:///javax/servlet/http/HttpSession/removeAttribute(java.lang.String)|",
+      "|java+method:///org/jasig/cas/client/jboss/authentication/WebAuthenticationFilter/getProtocol()|",
+      "|java+constructor:///java/security/GeneralSecurityException/GeneralSecurityException(java.lang.String)|",
+      "|java+method:///org/jasig/cas/client/util/CommonUtils/safeGetParameter(javax.servlet.http.HttpServletRequest,java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String)|",
+      "|java+method:///org/jasig/cas/client/jaas/AssertionPrincipal/getAssertion()|",
+      "|java+method:///javax/servlet/http/HttpSession/setAttribute(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/jboss/web/tomcat/security/login/WebAuthentication/login(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/jasig/cas/client/jboss/authentication/WebAuthenticationFilter/constructServiceUrl(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getUserPrincipal()|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///javax/servlet/FilterChain/doFilter(javax.servlet.ServletRequest,javax.servlet.ServletResponse)|",
+      "|java+method:///javax/servlet/http/HttpSession/getAttribute(java.lang.String)|",
+      "|java+method:///java/security/GeneralSecurityException/getMessage()|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getSession()|",
+      "|java+method:///org/jasig/cas/client/Protocol/getArtifactParameterName()|"
+    ],
+    "affectedLib": "org.jasig.cas.client:cas-client-core:3.4.1",
+    "change": "UPDATED"
+  }
+]

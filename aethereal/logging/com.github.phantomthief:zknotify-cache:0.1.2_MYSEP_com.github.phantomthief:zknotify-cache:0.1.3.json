@@ -1,0 +1,101 @@
+[
+  {
+    "coordinatesV1": "com.github.phantomthief:zknotify-cache:0.1.2",
+    "coordinatesV2": "com.github.phantomthief:zknotify-cache:0.1.3",
+    "caller": "|java+method:///com/github/phantomthief/zookeeper/broadcast/ZkBroadcaster/broadcast(java.lang.String,java.lang.String)|",
+    "called": "|java+method:///com/google/common/base/Throwables/throwIfUnchecked(java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///org/apache/curator/framework/CuratorFramework/setData()|",
+      "|java+method:///java/util/function/Supplier/get()|",
+      "|java+method:///org/apache/curator/utils/ZKPaths/makePath(java.lang.String,java.lang.String)|",
+      "|java+method:///com/google/common/base/Throwables/propagate(java.lang.Throwable)|",
+      "|java+method:///org/apache/curator/framework/api/SetDataBuilder/forPath(java.lang.String,byte%5B%5D)|",
+      "|java+method:///org/apache/curator/framework/api/CreateBuilder/creatingParentsIfNeeded()|",
+      "|java+method:///org/apache/curator/framework/api/ProtectACLCreateModePathAndBytesable/forPath(java.lang.String,byte%5B%5D)|",
+      "|java+method:///java/lang/String/getBytes()|",
+      "|java+method:///org/apache/curator/framework/CuratorFramework/create()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/curator/framework/CuratorFramework/setData()|",
+      "|java+method:///java/util/function/Supplier/get()|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.Throwable)|",
+      "|java+method:///org/apache/curator/utils/ZKPaths/makePath(java.lang.String,java.lang.String)|",
+      "|java+method:///org/apache/curator/framework/api/SetDataBuilder/forPath(java.lang.String,byte%5B%5D)|",
+      "|java+method:///org/apache/curator/framework/api/CreateBuilder/creatingParentsIfNeeded()|",
+      "|java+method:///org/apache/curator/framework/api/ProtectACLCreateModePathAndBytesable/forPath(java.lang.String,byte%5B%5D)|",
+      "|java+method:///org/apache/curator/framework/CuratorFramework/create()|",
+      "|java+method:///com/google/common/base/Throwables/throwIfUnchecked(java.lang.Throwable)|",
+      "|java+method:///java/lang/String/getBytes()|"
+    ],
+    "affectedLib": "com.google.guava:guava:20.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.github.phantomthief:zknotify-cache:0.1.2",
+    "coordinatesV2": "com.github.phantomthief:zknotify-cache:0.1.3",
+    "caller": "|java+method:///com/github/phantomthief/localcache/impl/ZkNotifyReloadCache/init()|",
+    "called": "|java+method:///com/google/common/util/concurrent/ThreadFactoryBuilder/setPriority(int)|",
+    "v1Body": [
+      "|java+method:///com/google/common/util/concurrent/ThreadFactoryBuilder/setPriority(int)|",
+      "|java+method:///java/util/function/Supplier/get()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///com/google/common/util/concurrent/ThreadFactoryBuilder/ThreadFactoryBuilder()|",
+      "|java+method:///com/google/common/util/concurrent/ThreadFactoryBuilder/setNameFormat(java.lang.String)|",
+      "|java+method:///java/util/concurrent/Executors/newScheduledThreadPool(int,java.util.concurrent.ThreadFactory)|",
+      "|java+method:///com/github/phantomthief/zookeeper/broadcast/ZkBroadcaster/subscribe(java.lang.String,java.lang.Runnable)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///com/google/common/util/concurrent/ThreadFactoryBuilder/build()|",
+      "|java+method:///java/util/concurrent/ScheduledExecutorService/scheduleWithFixedDelay(java.lang.Runnable,long,long,java.util.concurrent.TimeUnit)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Set/forEach(java.util.function.Consumer)|",
+      "|java+method:///com/google/common/util/concurrent/ThreadFactoryBuilder/setPriority(int)|",
+      "|java+method:///java/util/function/Supplier/get()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///com/google/common/util/concurrent/ThreadFactoryBuilder/ThreadFactoryBuilder()|",
+      "|java+method:///com/google/common/util/concurrent/ThreadFactoryBuilder/setNameFormat(java.lang.String)|",
+      "|java+method:///java/util/concurrent/Executors/newScheduledThreadPool(int,java.util.concurrent.ThreadFactory)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///com/google/common/util/concurrent/ThreadFactoryBuilder/build()|",
+      "|java+method:///java/util/concurrent/ScheduledExecutorService/scheduleWithFixedDelay(java.lang.Runnable,long,long,java.util.concurrent.TimeUnit)|"
+    ],
+    "affectedLib": "com.google.guava:guava:20.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.github.phantomthief:zknotify-cache:0.1.2",
+    "coordinatesV2": "com.github.phantomthief:zknotify-cache:0.1.3",
+    "caller": "|java+method:///com/github/phantomthief/zookeeper/broadcast/ZkBroadcaster/subscribe(java.lang.String,java.lang.Runnable)|",
+    "called": "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///java/util/concurrent/ConcurrentMap/computeIfAbsent(java.lang.Object,java.util.function.Function)|",
+      "|java+method:///java/util/concurrent/ConcurrentMap/compute(java.lang.Object,java.util.function.BiFunction)|",
+      "|java+constructor:///java/lang/NullPointerException/NullPointerException()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/concurrent/ConcurrentMap/computeIfAbsent(java.lang.Object,java.util.function.Function)|",
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object)|",
+      "|java+method:///java/util/concurrent/ConcurrentMap/compute(java.lang.Object,java.util.function.BiFunction)|"
+    ],
+    "affectedLib": "com.google.guava:guava:20.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.github.phantomthief:zknotify-cache:0.1.2",
+    "coordinatesV2": "com.github.phantomthief:zknotify-cache:0.1.3",
+    "caller": "|java+method:///com/github/phantomthief/localcache/impl/ZkNotifyReloadCache$Builder/ensure()|",
+    "called": "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Set/isEmpty()|",
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|"
+    ],
+    "affectedLib": "com.google.guava:guava:20.0",
+    "change": "ADDED"
+  }
+]

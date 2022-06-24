@@ -1,0 +1,225 @@
+[
+  {
+    "coordinatesV1": "org.apache.servicemix.nmr:org.apache.servicemix.nmr.core:1.5.0",
+    "coordinatesV2": "org.apache.servicemix.nmr:org.apache.servicemix.nmr.core:1.4.0",
+    "caller": "|java+constructor:///org/apache/servicemix/nmr/core/ServiceRegistryImpl/ServiceRegistryImpl()|",
+    "called": "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|",
+    "v1Body": [
+      "|java+constructor:///java/util/concurrent/ConcurrentHashMap/ConcurrentHashMap()|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/util/concurrent/ConcurrentHashMap/ConcurrentHashMap()|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "commons-logging:commons-logging:1.1.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.apache.servicemix.nmr:org.apache.servicemix.nmr.core:1.4.0",
+    "coordinatesV2": "org.apache.servicemix.nmr:org.apache.servicemix.nmr.core:1.5.0",
+    "caller": "|java+constructor:///org/apache/servicemix/nmr/core/ChannelImpl/ChannelImpl(org.apache.servicemix.nmr.api.internal.InternalEndpoint,org.apache.servicemix.executors.Executor,org.apache.servicemix.nmr.api.NMR)|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+constructor:///java/util/concurrent/atomic/AtomicBoolean/AtomicBoolean()|",
+      "|java+method:///java/lang/Object/toString()|",
+      "|java+method:///org/apache/servicemix/nmr/api/NMR/getEndpointRegistry()|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+method:///org/apache/servicemix/nmr/api/EndpointRegistry/getProperties(java.lang.Object)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/util/concurrent/atomic/AtomicBoolean/AtomicBoolean()|",
+      "|java+method:///java/lang/Object/toString()|",
+      "|java+method:///org/apache/servicemix/nmr/api/NMR/getEndpointRegistry()|",
+      "|java+method:///org/apache/servicemix/nmr/api/EndpointRegistry/getProperties(java.lang.Object)|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.6.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.servicemix.nmr:org.apache.servicemix.nmr.core:1.4.0",
+    "coordinatesV2": "org.apache.servicemix.nmr:org.apache.servicemix.nmr.core:1.5.0",
+    "caller": "|java+constructor:///org/apache/servicemix/nmr/core/ServiceRegistryImpl/ServiceRegistryImpl()|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+constructor:///java/util/concurrent/ConcurrentHashMap/ConcurrentHashMap()|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/util/concurrent/ConcurrentHashMap/ConcurrentHashMap()|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.6.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.servicemix.nmr:org.apache.servicemix.nmr.core:1.4.0",
+    "coordinatesV2": "org.apache.servicemix.nmr:org.apache.servicemix.nmr.core:1.5.0",
+    "caller": "|java+constructor:///org/apache/servicemix/nmr/core/security/JaasAuthenticationService/JaasAuthenticationService()|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.6.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.servicemix.nmr:org.apache.servicemix.nmr.core:1.4.0",
+    "coordinatesV2": "org.apache.servicemix.nmr:org.apache.servicemix.nmr.core:1.5.0",
+    "caller": "|java+method:///org/apache/servicemix/nmr/core/ServiceRegistryImpl/unregister(java.lang.Object,java.util.Map)|",
+    "called": "|java+constructor:///org/apache/servicemix/nmr/api/ServiceMixException/ServiceMixException(java.lang.String,java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/logging/Log/warn(java.lang.Object,java.lang.Throwable)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///java/lang/AssertionError/AssertionError(java.lang.Object)|",
+      "|java+method:///java/util/concurrent/ConcurrentMap/remove(java.lang.Object)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+constructor:///org/apache/servicemix/nmr/api/ServiceMixException/ServiceMixException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/apache/servicemix/nmr/core/ServiceRegistryImpl/doUnregister(java.lang.Object,java.util.Map)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///java/lang/AssertionError/AssertionError(java.lang.Object)|",
+      "|java+method:///java/util/concurrent/ConcurrentMap/remove(java.lang.Object)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+constructor:///org/apache/servicemix/nmr/api/ServiceMixException/ServiceMixException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/apache/servicemix/nmr/core/ServiceRegistryImpl/doUnregister(java.lang.Object,java.util.Map)|"
+    ],
+    "affectedLib": "org.apache.servicemix.nmr:org.apache.servicemix.nmr.api:1.5.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.servicemix.nmr:org.apache.servicemix.nmr.core:1.4.0",
+    "coordinatesV2": "org.apache.servicemix.nmr:org.apache.servicemix.nmr.core:1.5.0",
+    "caller": "|java+method:///org/apache/servicemix/nmr/core/ServiceRegistryImpl/register(java.lang.Object,java.util.Map)|",
+    "called": "|java+constructor:///org/apache/servicemix/nmr/api/ServiceMixException/ServiceMixException(java.lang.String,java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///org/apache/servicemix/nmr/core/ServiceRegistryImpl/doRegister(java.lang.Object,java.util.Map)|",
+      "|java+method:///org/apache/commons/logging/Log/warn(java.lang.Object,java.lang.Throwable)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///java/lang/AssertionError/AssertionError(java.lang.Object)|",
+      "|java+method:///java/util/concurrent/ConcurrentMap/remove(java.lang.Object)|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+constructor:///org/apache/servicemix/nmr/api/ServiceMixException/ServiceMixException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/util/concurrent/ConcurrentMap/putIfAbsent(java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/apache/servicemix/nmr/core/ServiceRegistryImpl/doRegister(java.lang.Object,java.util.Map)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///java/lang/AssertionError/AssertionError(java.lang.Object)|",
+      "|java+method:///java/util/concurrent/ConcurrentMap/remove(java.lang.Object)|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+constructor:///org/apache/servicemix/nmr/api/ServiceMixException/ServiceMixException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/util/concurrent/ConcurrentMap/putIfAbsent(java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "affectedLib": "org.apache.servicemix.nmr:org.apache.servicemix.nmr.api:1.5.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.servicemix.nmr:org.apache.servicemix.nmr.core:1.4.0",
+    "coordinatesV2": "org.apache.servicemix.nmr:org.apache.servicemix.nmr.core:1.5.0",
+    "caller": "|java+method:///org/apache/servicemix/nmr/core/FlowRegistryImpl/dispatch(org.apache.servicemix.nmr.api.internal.InternalExchange)|",
+    "called": "|java+constructor:///org/apache/servicemix/nmr/api/ServiceMixException/ServiceMixException(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/apache/servicemix/nmr/api/security/AuthorizationService/getAcls(java.lang.String,javax.xml.namespace.QName)|",
+      "|java+method:///java/lang/Boolean/valueOf(java.lang.String)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/apache/servicemix/nmr/api/internal/InternalExchange/getOperation()|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+method:///org/apache/servicemix/nmr/core/FlowRegistryImpl/internalDispatch(org.apache.servicemix.nmr.api.internal.InternalExchange,org.apache.servicemix.nmr.api.internal.InternalEndpoint,boolean)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/apache/servicemix/nmr/api/internal/InternalReference/choose(org.apache.servicemix.nmr.api.EndpointRegistry)|",
+      "|java+method:///org/apache/servicemix/nmr/api/internal/InternalExchange/getDestination()|",
+      "|java+method:///org/apache/servicemix/nmr/api/internal/InternalExchange/getIn()|",
+      "|java+method:///org/apache/servicemix/nmr/api/Message/getSecuritySubject()|",
+      "|java+constructor:///org/apache/servicemix/nmr/api/ServiceMixException/ServiceMixException(java.lang.String)|",
+      "|java+method:///org/apache/servicemix/nmr/api/internal/InternalEndpoint/getId()|",
+      "|java+method:///org/apache/servicemix/nmr/api/internal/InternalExchange/getTarget()|",
+      "|java+method:///javax/security/auth/Subject/getPrincipals()|",
+      "|java+method:///java/util/Set/size()|",
+      "|java+method:///org/apache/servicemix/nmr/api/internal/InternalExchange/getRole()|",
+      "|java+method:///org/apache/servicemix/nmr/api/internal/InternalExchange/getSource()|",
+      "|java+method:///java/util/Set/retainAll(java.util.Collection)|",
+      "|java+method:///org/apache/servicemix/nmr/api/internal/InternalEndpoint/getMetaData()|",
+      "|java+method:///java/lang/Iterable/iterator()|",
+      "|java+method:///java/util/Set/contains(java.lang.Object)|",
+      "|java+constructor:///java/lang/AssertionError/AssertionError()|",
+      "|java+method:///java/lang/Boolean/booleanValue()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/servicemix/nmr/api/security/AuthorizationService/getAcls(java.lang.String,javax.xml.namespace.QName)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/apache/servicemix/nmr/api/internal/InternalExchange/getRole()|",
+      "|java+method:///org/apache/servicemix/nmr/api/internal/InternalExchange/getOperation()|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+method:///org/apache/servicemix/nmr/api/internal/InternalExchange/getSource()|",
+      "|java+method:///org/apache/servicemix/nmr/core/FlowRegistryImpl/internalDispatch(org.apache.servicemix.nmr.api.internal.InternalExchange,org.apache.servicemix.nmr.api.internal.InternalEndpoint,boolean)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/apache/servicemix/nmr/api/internal/InternalReference/choose(org.apache.servicemix.nmr.api.EndpointRegistry)|",
+      "|java+method:///org/apache/servicemix/nmr/api/internal/InternalExchange/getDestination()|",
+      "|java+method:///java/util/Set/iterator()|",
+      "|java+method:///org/apache/servicemix/nmr/api/internal/InternalExchange/getIn()|",
+      "|java+method:///org/apache/servicemix/nmr/api/Message/getSecuritySubject()|",
+      "|java+constructor:///org/apache/servicemix/nmr/api/ServiceMixException/ServiceMixException(java.lang.String)|",
+      "|java+method:///org/apache/servicemix/nmr/api/internal/InternalEndpoint/getId()|",
+      "|java+method:///org/apache/servicemix/nmr/api/internal/InternalExchange/getTarget()|",
+      "|java+method:///javax/security/auth/Subject/getPrincipals()|",
+      "|java+method:///java/lang/Object/equals(java.lang.Object)|",
+      "|java+method:///java/lang/Boolean/valueOf(java.lang.String)|",
+      "|java+method:///org/apache/servicemix/nmr/api/internal/InternalEndpoint/getMetaData()|",
+      "|java+method:///java/lang/Iterable/iterator()|",
+      "|java+method:///java/util/Set/contains(java.lang.Object)|",
+      "|java+constructor:///java/lang/AssertionError/AssertionError()|",
+      "|java+method:///java/lang/Boolean/booleanValue()|"
+    ],
+    "affectedLib": "org.apache.servicemix.nmr:org.apache.servicemix.nmr.api:1.5.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.servicemix.nmr:org.apache.servicemix.nmr.core:1.4.0",
+    "coordinatesV2": "org.apache.servicemix.nmr:org.apache.servicemix.nmr.core:1.5.0",
+    "caller": "|java+method:///org/apache/servicemix/nmr/core/ServiceMix/createExecutorFactory()|",
+    "called": "|java+constructor:///org/apache/servicemix/executors/impl/ExecutorFactoryImpl/ExecutorFactoryImpl()|",
+    "v1Body": [
+      "|java+method:///org/apache/servicemix/executors/impl/ExecutorFactoryImpl/getDefaultConfig()|",
+      "|java+constructor:///org/apache/servicemix/executors/impl/ExecutorFactoryImpl/ExecutorFactoryImpl()|",
+      "|java+method:///org/apache/servicemix/executors/impl/ExecutorConfig/setBypassIfSynchronous(boolean)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/servicemix/executors/impl/ExecutorConfig/setBypassIfSynchronous(java.lang.Boolean)|",
+      "|java+method:///org/apache/servicemix/executors/impl/ExecutorFactoryImpl/getDefaultConfig()|",
+      "|java+constructor:///org/apache/servicemix/executors/impl/ExecutorFactoryImpl/ExecutorFactoryImpl()|",
+      "|java+method:///java/lang/Boolean/valueOf(boolean)|"
+    ],
+    "affectedLib": "org.apache.servicemix:servicemix-utils:1.5.0",
+    "change": "UPDATED"
+  }
+]

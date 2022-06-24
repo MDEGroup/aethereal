@@ -1,0 +1,52 @@
+[
+  {
+    "coordinatesV1": "org.apereo.cas:cas-server-support-generic-remote-webflow:5.3.0-RC1",
+    "coordinatesV2": "org.apereo.cas:cas-server-support-generic-remote-webflow:5.3.0-RC4",
+    "caller": "|java+method:///org/apereo/cas/config/CasRemoteAuthenticationConfiguration/remoteAddressPrincipalFactory()|",
+    "called": "|java+method:///org/apereo/cas/authentication/principal/PrincipalFactoryUtils/newPrincipalFactory()|",
+    "v1Body": [
+      "|java+constructor:///org/apereo/cas/authentication/principal/DefaultPrincipalFactory/DefaultPrincipalFactory()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apereo/cas/authentication/principal/PrincipalFactoryUtils/newPrincipalFactory()|"
+    ],
+    "affectedLib": "org.apereo.cas:cas-server-core-authentication-api:5.3.0-RC4",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apereo.cas:cas-server-support-generic-remote-webflow:5.3.0-RC1",
+    "coordinatesV2": "org.apereo.cas:cas-server-support-generic-remote-webflow:5.3.0-RC4",
+    "caller": "|java+method:///org/apereo/cas/adaptors/generic/remote/RemoteAddressAuthenticationHandler/authenticate(org.apereo.cas.authentication.Credential)|",
+    "called": "|java+constructor:///org/apereo/cas/authentication/DefaultAuthenticationHandlerExecutionResult/DefaultAuthenticationHandlerExecutionResult(org.apereo.cas.authentication.AuthenticationHandler,org.apereo.cas.authentication.CredentialMetaData,org.apereo.cas.authentication.principal.Principal)|",
+    "v1Body": [
+      "|java+method:///org/apereo/cas/adaptors/generic/remote/RemoteAddressCredential/getRemoteAddress()|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/apereo/cas/adaptors/generic/remote/RemoteAddressAuthenticationHandler/containsAddress(java.net.InetAddress,java.net.InetAddress,java.net.InetAddress)|",
+      "|java+constructor:///org/apereo/cas/authentication/DefaultHandlerResult/DefaultHandlerResult(org.apereo.cas.authentication.AuthenticationHandler,org.apereo.cas.authentication.CredentialMetaData,org.apereo.cas.authentication.principal.Principal)|",
+      "|java+constructor:///javax/security/auth/login/FailedLoginException/FailedLoginException(java.lang.String)|",
+      "|java+method:///org/apereo/cas/adaptors/generic/remote/RemoteAddressCredential/getId()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/String/trim()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/apereo/cas/authentication/principal/PrincipalFactory/createPrincipal(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/net/InetAddress/getByName(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apereo/cas/adaptors/generic/remote/RemoteAddressCredential/getRemoteAddress()|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/apereo/cas/adaptors/generic/remote/RemoteAddressAuthenticationHandler/containsAddress(java.net.InetAddress,java.net.InetAddress,java.net.InetAddress)|",
+      "|java+constructor:///javax/security/auth/login/FailedLoginException/FailedLoginException(java.lang.String)|",
+      "|java+method:///org/apereo/cas/adaptors/generic/remote/RemoteAddressCredential/getId()|",
+      "|java+constructor:///org/apereo/cas/authentication/DefaultAuthenticationHandlerExecutionResult/DefaultAuthenticationHandlerExecutionResult(org.apereo.cas.authentication.AuthenticationHandler,org.apereo.cas.authentication.CredentialMetaData,org.apereo.cas.authentication.principal.Principal)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/String/trim()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/apereo/cas/authentication/principal/PrincipalFactory/createPrincipal(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/net/InetAddress/getByName(java.lang.String)|"
+    ],
+    "affectedLib": "org.apereo.cas:cas-server-core-authentication-api:5.3.0-RC4",
+    "change": "UPDATED"
+  }
+]

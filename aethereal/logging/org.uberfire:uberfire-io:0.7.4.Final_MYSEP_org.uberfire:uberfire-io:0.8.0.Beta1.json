@@ -1,0 +1,248 @@
+[
+  {
+    "coordinatesV1": "org.uberfire:uberfire-io:0.7.4.Final",
+    "coordinatesV2": "org.uberfire:uberfire-io:0.8.0.Beta1",
+    "caller": "|java+constructor:///org/uberfire/io/impl/cluster/helix/ClusterServiceHelix/ClusterServiceHelix(java.lang.String,java.lang.String,java.lang.String,java.lang.String,org.uberfire.commons.message.MessageHandlerResolver)|",
+    "called": "|java+method:///org/uberfire/commons/lifecycle/PriorityDisposableRegistry/register(org.uberfire.commons.lifecycle.PriorityDisposable)|",
+    "v1Body": [
+      "|java+method:///org/uberfire/io/impl/cluster/helix/ClusterServiceHelix/addMessageHandlerResolver(org.uberfire.commons.message.MessageHandlerResolver)|",
+      "|java+constructor:///java/util/concurrent/ConcurrentHashMap/ConcurrentHashMap()|",
+      "|java+constructor:///java/util/concurrent/locks/ReentrantLock/ReentrantLock(boolean)|",
+      "|java+method:///org/uberfire/io/impl/cluster/helix/ClusterServiceHelix/start()|",
+      "|java+method:///org/apache/helix/HelixManagerFactory/getZKHelixManager(java.lang.String,java.lang.String,org.apache.helix.InstanceType,java.lang.String)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/uberfire/io/impl/cluster/helix/ClusterServiceHelix/addMessageHandlerResolver(org.uberfire.commons.message.MessageHandlerResolver)|",
+      "|java+constructor:///java/util/concurrent/ConcurrentHashMap/ConcurrentHashMap()|",
+      "|java+constructor:///java/util/concurrent/locks/ReentrantLock/ReentrantLock(boolean)|",
+      "|java+method:///org/uberfire/io/impl/cluster/helix/ClusterServiceHelix/start()|",
+      "|java+method:///org/uberfire/commons/lifecycle/PriorityDisposableRegistry/register(org.uberfire.commons.lifecycle.PriorityDisposable)|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///org/uberfire/io/impl/cluster/helix/ClusterServiceHelix/getZkHelixManager(java.lang.String,java.lang.String,java.lang.String)|"
+    ],
+    "affectedLib": "org.uberfire:uberfire-commons:0.8.0.Beta1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.uberfire:uberfire-io:0.7.4.Final",
+    "coordinatesV2": "org.uberfire:uberfire-io:0.8.0.Beta1",
+    "caller": "|java+constructor:///org/uberfire/io/impl/AbstractIOService/AbstractIOService(java.lang.String)|",
+    "called": "|java+method:///org/uberfire/commons/lifecycle/PriorityDisposableRegistry/register(org.uberfire.commons.lifecycle.PriorityDisposable)|",
+    "v1Body": [
+      "|java+constructor:///org/uberfire/io/lock/BatchLockControl/BatchLockControl()|",
+      "|java+constructor:///java/util/concurrent/ConcurrentHashMap/ConcurrentHashMap()|",
+      "|java+method:///java/util/Collections/newSetFromMap(java.util.Map)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/uberfire/io/lock/BatchLockControl/BatchLockControl()|",
+      "|java+constructor:///java/util/concurrent/ConcurrentHashMap/ConcurrentHashMap()|",
+      "|java+method:///java/util/Collections/newSetFromMap(java.util.Map)|",
+      "|java+method:///org/uberfire/commons/lifecycle/PriorityDisposableRegistry/register(org.uberfire.commons.lifecycle.PriorityDisposable)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "org.uberfire:uberfire-commons:0.8.0.Beta1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.uberfire:uberfire-io:0.7.4.Final",
+    "coordinatesV2": "org.uberfire:uberfire-io:0.8.0.Beta1",
+    "caller": "|java+method:///org/uberfire/io/impl/cluster/IOServiceClusterImpl$2$1/onReply(org.uberfire.commons.message.MessageType,java.util.Map)|",
+    "called": "|java+method:///org/uberfire/commons/async/SimpleAsyncExecutorService/getUnmanagedInstance()|",
+    "v1Body": [
+      "|java+method:///org/uberfire/commons/async/SimpleAsyncExecutorService/getUnmanagedInstance()|",
+      "|java+constructor:///org/uberfire/io/impl/cluster/IOServiceClusterImpl$2$1$1/IOServiceClusterImpl$2$1$1(org.uberfire.io.impl.cluster.IOServiceClusterImpl$2$1,java.util.Map)|",
+      "|java+method:///java/util/concurrent/atomic/AtomicBoolean/get()|",
+      "|java+method:///org/uberfire/commons/async/SimpleAsyncExecutorService/execute(java.lang.Runnable)|",
+      "|java+method:///java/util/concurrent/atomic/AtomicBoolean/set(boolean)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/uberfire/commons/async/SimpleAsyncExecutorService/getUnmanagedInstance()|",
+      "|java+constructor:///org/uberfire/io/impl/cluster/IOServiceClusterImpl$2$1$1/IOServiceClusterImpl$2$1$1(org.uberfire.io.impl.cluster.IOServiceClusterImpl$2$1,java.util.Map)|",
+      "|java+method:///org/uberfire/commons/async/DisposableExecutor/execute(java.lang.Runnable)|",
+      "|java+method:///java/util/concurrent/atomic/AtomicBoolean/get()|",
+      "|java+method:///java/util/concurrent/atomic/AtomicBoolean/set(boolean)|"
+    ],
+    "affectedLib": "org.uberfire:uberfire-commons:0.8.0.Beta1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.uberfire:uberfire-io:0.7.4.Final",
+    "coordinatesV2": "org.uberfire:uberfire-io:0.8.0.Beta1",
+    "caller": "|java+constructor:///org/uberfire/io/impl/cluster/FileSystemSyncLock/FileSystemSyncLock(java.lang.String,org.uberfire.java.nio.file.FileSystem)|",
+    "called": "|java+constructor:///org/uberfire/commons/cluster/LockExecuteNotifyAsyncReleaseTemplate/LockExecuteNotifyAsyncReleaseTemplate()|",
+    "v1Body": [
+      "|java+method:///org/uberfire/java/nio/file/Path/toUri()|",
+      "|java+method:///java/lang/Object/toString()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/uberfire/java/nio/base/FileSystemId/id()|",
+      "|java+method:///org/uberfire/java/nio/file/FileSystem/getRootDirectories()|",
+      "|java+constructor:///org/uberfire/commons/cluster/LockExecuteNotifyAsyncReleaseTemplate/LockExecuteNotifyAsyncReleaseTemplate()|",
+      "|java+method:///java/net/URI/getScheme()|",
+      "|java+method:///java/lang/Iterable/iterator()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/uberfire/java/nio/file/Path/toUri()|",
+      "|java+method:///java/lang/Object/toString()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/uberfire/java/nio/base/FileSystemId/id()|",
+      "|java+method:///org/uberfire/java/nio/file/FileSystem/getRootDirectories()|",
+      "|java+constructor:///org/uberfire/commons/cluster/LockExecuteNotifyAsyncReleaseTemplate/LockExecuteNotifyAsyncReleaseTemplate()|",
+      "|java+method:///org/uberfire/java/nio/file/Path/getFileSystem()|",
+      "|java+method:///java/net/URI/getScheme()|",
+      "|java+method:///java/lang/Iterable/iterator()|"
+    ],
+    "affectedLib": "org.uberfire:uberfire-commons:0.8.0.Beta1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.uberfire:uberfire-io:0.7.4.Final",
+    "coordinatesV2": "org.uberfire:uberfire-io:0.8.0.Beta1",
+    "caller": "|java+constructor:///org/uberfire/io/impl/AbstractIOService/AbstractIOService(org.uberfire.io.IOWatchService)|",
+    "called": "|java+method:///org/uberfire/commons/lifecycle/PriorityDisposableRegistry/register(org.uberfire.commons.lifecycle.PriorityDisposable)|",
+    "v1Body": [
+      "|java+constructor:///org/uberfire/io/lock/BatchLockControl/BatchLockControl()|",
+      "|java+constructor:///java/util/concurrent/ConcurrentHashMap/ConcurrentHashMap()|",
+      "|java+method:///java/util/Collections/newSetFromMap(java.util.Map)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/uberfire/io/lock/BatchLockControl/BatchLockControl()|",
+      "|java+constructor:///java/util/concurrent/ConcurrentHashMap/ConcurrentHashMap()|",
+      "|java+method:///java/util/Collections/newSetFromMap(java.util.Map)|",
+      "|java+method:///org/uberfire/commons/lifecycle/PriorityDisposableRegistry/register(org.uberfire.commons.lifecycle.PriorityDisposable)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "org.uberfire:uberfire-commons:0.8.0.Beta1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.uberfire:uberfire-io:0.7.4.Final",
+    "coordinatesV2": "org.uberfire:uberfire-io:0.8.0.Beta1",
+    "caller": "|java+constructor:///org/uberfire/io/impl/cluster/IOServiceClusterImpl/IOServiceClusterImpl(org.uberfire.io.IOService,org.uberfire.commons.cluster.ClusterServiceFactory,boolean)|",
+    "called": "|java+method:///org/uberfire/commons/lifecycle/PriorityDisposableRegistry/register(org.uberfire.commons.lifecycle.PriorityDisposable)|",
+    "v1Body": [
+      "|java+method:///org/uberfire/commons/cluster/ClusterServiceFactory/build(org.uberfire.commons.message.MessageHandlerResolver)|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+constructor:///java/util/concurrent/ConcurrentHashMap/ConcurrentHashMap()|",
+      "|java+method:///org/uberfire/io/impl/cluster/IOServiceClusterImpl/start()|",
+      "|java+method:///org/uberfire/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|",
+      "|java+method:///java/lang/Boolean/valueOf(boolean)|",
+      "|java+method:///org/uberfire/commons/validation/PortablePreconditions/checkNotNull(java.lang.String,java.lang.Object)|",
+      "|java+method:///java/util/Collections/newSetFromMap(java.util.Map)|",
+      "|java+constructor:///org/uberfire/io/impl/cluster/IOServiceClusterImpl$1/IOServiceClusterImpl$1(org.uberfire.io.impl.cluster.IOServiceClusterImpl)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/uberfire/commons/cluster/ClusterServiceFactory/build(org.uberfire.commons.message.MessageHandlerResolver)|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+constructor:///java/util/concurrent/ConcurrentHashMap/ConcurrentHashMap()|",
+      "|java+method:///org/uberfire/io/impl/cluster/IOServiceClusterImpl/start()|",
+      "|java+method:///org/uberfire/commons/validation/Preconditions/checkInstanceOf(java.lang.String,java.lang.Object,java.lang.Class)|",
+      "|java+method:///java/lang/Boolean/valueOf(boolean)|",
+      "|java+method:///org/uberfire/commons/validation/PortablePreconditions/checkNotNull(java.lang.String,java.lang.Object)|",
+      "|java+method:///java/util/Collections/newSetFromMap(java.util.Map)|",
+      "|java+method:///org/uberfire/commons/lifecycle/PriorityDisposableRegistry/register(org.uberfire.commons.lifecycle.PriorityDisposable)|",
+      "|java+constructor:///org/uberfire/io/impl/cluster/IOServiceClusterImpl$1/IOServiceClusterImpl$1(org.uberfire.io.impl.cluster.IOServiceClusterImpl)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "org.uberfire:uberfire-commons:0.8.0.Beta1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.uberfire:uberfire-io:0.7.4.Final",
+    "coordinatesV2": "org.uberfire:uberfire-io:0.8.0.Beta1",
+    "caller": "|java+constructor:///org/uberfire/io/impl/AbstractIOService/AbstractIOService()|",
+    "called": "|java+method:///org/uberfire/commons/lifecycle/PriorityDisposableRegistry/register(org.uberfire.commons.lifecycle.PriorityDisposable)|",
+    "v1Body": [
+      "|java+constructor:///org/uberfire/io/lock/BatchLockControl/BatchLockControl()|",
+      "|java+constructor:///java/util/concurrent/ConcurrentHashMap/ConcurrentHashMap()|",
+      "|java+method:///java/util/Collections/newSetFromMap(java.util.Map)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/uberfire/io/lock/BatchLockControl/BatchLockControl()|",
+      "|java+constructor:///java/util/concurrent/ConcurrentHashMap/ConcurrentHashMap()|",
+      "|java+method:///java/util/Collections/newSetFromMap(java.util.Map)|",
+      "|java+method:///org/uberfire/commons/lifecycle/PriorityDisposableRegistry/register(org.uberfire.commons.lifecycle.PriorityDisposable)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "org.uberfire:uberfire-commons:0.8.0.Beta1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.uberfire:uberfire-io:0.7.4.Final",
+    "coordinatesV2": "org.uberfire:uberfire-io:0.8.0.Beta1",
+    "caller": "|java+constructor:///org/uberfire/io/impl/AbstractIOService/AbstractIOService(java.lang.String,org.uberfire.io.IOWatchService)|",
+    "called": "|java+method:///org/uberfire/commons/lifecycle/PriorityDisposableRegistry/register(org.uberfire.commons.lifecycle.PriorityDisposable)|",
+    "v1Body": [
+      "|java+constructor:///org/uberfire/io/lock/BatchLockControl/BatchLockControl()|",
+      "|java+constructor:///java/util/concurrent/ConcurrentHashMap/ConcurrentHashMap()|",
+      "|java+method:///java/util/Collections/newSetFromMap(java.util.Map)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/uberfire/io/lock/BatchLockControl/BatchLockControl()|",
+      "|java+constructor:///java/util/concurrent/ConcurrentHashMap/ConcurrentHashMap()|",
+      "|java+method:///java/util/Collections/newSetFromMap(java.util.Map)|",
+      "|java+method:///org/uberfire/commons/lifecycle/PriorityDisposableRegistry/register(org.uberfire.commons.lifecycle.PriorityDisposable)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "org.uberfire:uberfire-commons:0.8.0.Beta1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.uberfire:uberfire-io:0.7.4.Final",
+    "coordinatesV2": "org.uberfire:uberfire-io:0.8.0.Beta1",
+    "caller": "|java+method:///org/uberfire/io/impl/cluster/IOServiceClusterImpl$QueryFileSystemMessageHandler/handleMessage(org.uberfire.commons.message.MessageType,java.util.Map)|",
+    "called": "|java+constructor:///org/uberfire/commons/data/Pair/Pair(java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+constructor:///org/uberfire/commons/data/Pair/Pair(java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/uberfire/io/impl/IOServiceLockable/getFileSystems()|",
+      "|java+method:///java/lang/Object/toString()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+method:///org/uberfire/io/impl/cluster/IOServiceClusterImpl/access$000(org.uberfire.io.impl.cluster.IOServiceClusterImpl)|",
+      "|java+method:///org/uberfire/java/nio/file/FileSystem/getRootDirectories()|",
+      "|java+method:///java/util/Set/iterator()|",
+      "|java+constructor:///java/util/HashSet/HashSet()|",
+      "|java+method:///java/util/Set/add(java.lang.Object)|",
+      "|java+method:///org/uberfire/java/nio/file/Path/toUri()|",
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+method:///java/net/URI/getScheme()|",
+      "|java+method:///java/lang/Iterable/iterator()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/uberfire/java/nio/base/FileSystemId/id()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/uberfire/io/impl/cluster/ClusterMessageType/equals(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/uberfire/commons/data/Pair/Pair(java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/uberfire/io/impl/IOServiceLockable/getFileSystems()|",
+      "|java+method:///java/lang/Object/toString()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+method:///org/uberfire/java/nio/file/FileSystem/getRootDirectories()|",
+      "|java+method:///java/util/Set/iterator()|",
+      "|java+constructor:///java/util/HashSet/HashSet()|",
+      "|java+method:///java/util/Set/add(java.lang.Object)|",
+      "|java+method:///org/uberfire/java/nio/file/Path/toUri()|",
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+method:///java/net/URI/getScheme()|",
+      "|java+method:///java/lang/Iterable/iterator()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/uberfire/java/nio/base/FileSystemId/id()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/uberfire/io/impl/cluster/ClusterMessageType/equals(java.lang.Object)|"
+    ],
+    "affectedLib": "org.uberfire:uberfire-commons:0.8.0.Beta1",
+    "change": "UPDATED"
+  }
+]

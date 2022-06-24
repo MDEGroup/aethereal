@@ -1,0 +1,187 @@
+[
+  {
+    "coordinatesV1": "org.apache.archiva:archiva-security:1.4-M3",
+    "coordinatesV2": "org.apache.archiva:archiva-security:1.4-M2",
+    "caller": "|java+method:///org/apache/archiva/security/DefaultUserRepositories/getAccessibleRepositoryIds(java.lang.String,java.lang.String)|",
+    "called": "|java+method:///org/apache/archiva/configuration/Configuration/getManagedRepositories()|",
+    "v1Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/codehaus/plexus/redback/system/SecuritySystem/isAuthorized(org.codehaus.plexus.redback.system.SecuritySession,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/apache/archiva/configuration/ManagedRepositoryConfiguration/getId()|",
+      "|java+method:///org/apache/archiva/security/DefaultUserRepositories/createSession(java.lang.String)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/apache/archiva/configuration/ArchivaConfiguration/getConfiguration()|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///org/slf4j/Logger/isDebugEnabled()|",
+      "|java+method:///org/apache/archiva/configuration/Configuration/getManagedRepositories()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/codehaus/plexus/redback/authorization/AuthorizationException/getMessage()|",
+      "|java+method:///com/google/common/collect/Lists/newArrayList(java.lang.Object%5B%5D)|",
+      "|java+method:///java/util/List/add(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList(int)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/apache/archiva/admin/model/beans/ManagedRepository/getId()|",
+      "|java+method:///org/apache/archiva/security/DefaultUserRepositories/getAccessibleRepositories(java.lang.String,java.lang.String)|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///java/util/List/iterator()|"
+    ],
+    "affectedLib": "org.apache.archiva:archiva-configuration:1.4-M2",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.apache.archiva:archiva-security:1.4-M3",
+    "coordinatesV2": "org.apache.archiva:archiva-security:1.4-M2",
+    "caller": "|java+constructor:///org/apache/archiva/security/DefaultUserRepositories/DefaultUserRepositories()|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.6.4",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.apache.archiva:archiva-security:1.4-M3",
+    "coordinatesV2": "org.apache.archiva:archiva-security:1.4-M2",
+    "caller": "|java+method:///org/apache/archiva/security/DefaultUserRepositories/createSession(java.lang.String)|",
+    "called": "|java+constructor:///org/codehaus/plexus/redback/system/DefaultSecuritySession/DefaultSecuritySession(org.codehaus.plexus.redback.authentication.AuthenticationResult,org.codehaus.plexus.redback.users.User)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/archiva/security/AccessDeniedException/AccessDeniedException(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///org/codehaus/plexus/redback/system/DefaultSecuritySession/DefaultSecuritySession(org.codehaus.plexus.redback.authentication.AuthenticationResult,org.codehaus.plexus.redback.users.User)|",
+      "|java+constructor:///org/codehaus/plexus/redback/authentication/AuthenticationResult/AuthenticationResult(boolean,java.lang.Object,java.lang.Exception)|",
+      "|java+constructor:///org/apache/archiva/security/PrincipalNotFoundException/PrincipalNotFoundException(java.lang.String)|",
+      "|java+constructor:///org/apache/archiva/security/ArchivaSecurityException/ArchivaSecurityException(java.lang.String)|",
+      "|java+method:///org/codehaus/plexus/redback/users/User/getFullName()|",
+      "|java+method:///org/codehaus/plexus/redback/users/UserManager/findUser(java.lang.String)|",
+      "|java+method:///org/codehaus/plexus/redback/users/User/isLocked()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/codehaus/plexus/redback/system/SecuritySystem/getUserManager()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/archiva/redback/system/DefaultSecuritySession/DefaultSecuritySession(org.apache.archiva.redback.authentication.AuthenticationResult,org.apache.archiva.redback.users.User)|",
+      "|java+method:///org/apache/archiva/redback/system/SecuritySystem/getUserManager()|",
+      "|java+constructor:///org/apache/archiva/security/AccessDeniedException/AccessDeniedException(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///org/apache/archiva/redback/authentication/AuthenticationResult/AuthenticationResult(boolean,java.lang.Object,java.lang.Exception)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///org/apache/archiva/security/ArchivaSecurityException/ArchivaSecurityException(java.lang.String)|",
+      "|java+constructor:///org/apache/archiva/security/PrincipalNotFoundException/PrincipalNotFoundException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/apache/archiva/redback/users/User/getFullName()|",
+      "|java+method:///org/apache/archiva/redback/users/UserManager/findUser(java.lang.String)|",
+      "|java+method:///org/apache/archiva/redback/users/User/isLocked()|"
+    ],
+    "affectedLib": "org.codehaus.redback:redback-system:1.4",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.apache.archiva:archiva-security:1.4-M3",
+    "coordinatesV2": "org.apache.archiva:archiva-security:1.4-M2",
+    "caller": "|java+method:///org/apache/archiva/security/ArchivaServletAuthenticator/isAuthorized(java.lang.String,java.lang.String,java.lang.String)|",
+    "called": "|java+constructor:///org/codehaus/plexus/redback/system/DefaultSecuritySession/DefaultSecuritySession(org.codehaus.plexus.redback.authentication.AuthenticationResult,org.codehaus.plexus.redback.users.User)|",
+    "v1Body": [
+      "|java+method:///org/codehaus/plexus/redback/users/UserNotFoundException/getMessage()|",
+      "|java+method:///org/codehaus/plexus/redback/users/UserManager/findUser(java.lang.String)|",
+      "|java+constructor:///org/codehaus/plexus/redback/system/DefaultSecuritySession/DefaultSecuritySession(org.codehaus.plexus.redback.authentication.AuthenticationResult,org.codehaus.plexus.redback.users.User)|",
+      "|java+method:///org/codehaus/plexus/redback/system/SecuritySystem/isAuthorized(org.codehaus.plexus.redback.system.SecuritySession,java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///org/codehaus/plexus/redback/authentication/AuthenticationResult/AuthenticationResult(boolean,java.lang.Object,java.lang.Exception)|",
+      "|java+method:///org/codehaus/plexus/redback/users/User/isLocked()|",
+      "|java+constructor:///org/codehaus/plexus/redback/authorization/UnauthorizedException/UnauthorizedException(java.lang.String)|",
+      "|java+method:///org/codehaus/plexus/redback/authorization/AuthorizationException/getMessage()|",
+      "|java+method:///org/codehaus/plexus/redback/system/SecuritySystem/getUserManager()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/archiva/redback/system/DefaultSecuritySession/DefaultSecuritySession(org.apache.archiva.redback.authentication.AuthenticationResult,org.apache.archiva.redback.users.User)|",
+      "|java+method:///org/apache/archiva/redback/system/SecuritySystem/getUserManager()|",
+      "|java+method:///org/apache/archiva/redback/users/UserNotFoundException/getMessage()|",
+      "|java+method:///org/apache/archiva/redback/authorization/AuthorizationException/getMessage()|",
+      "|java+constructor:///org/apache/archiva/redback/authentication/AuthenticationResult/AuthenticationResult(boolean,java.lang.Object,java.lang.Exception)|",
+      "|java+method:///org/apache/archiva/redback/system/SecuritySystem/isAuthorized(org.apache.archiva.redback.system.SecuritySession,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/apache/archiva/redback/users/UserManager/findUser(java.lang.String)|",
+      "|java+method:///org/apache/archiva/redback/users/User/isLocked()|",
+      "|java+constructor:///org/apache/archiva/redback/authorization/UnauthorizedException/UnauthorizedException(java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///org/apache/archiva/redback/authorization/UnauthorizedException/UnauthorizedException(java.lang.String)|"
+    ],
+    "affectedLib": "org.codehaus.redback:redback-system:1.4",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.apache.archiva:archiva-security:1.4-M2",
+    "coordinatesV2": "org.apache.archiva:archiva-security:1.4-M3",
+    "caller": "|java+method:///org/apache/archiva/security/DefaultUserRepositories/createSession(java.lang.String)|",
+    "called": "|java+constructor:///org/apache/archiva/redback/system/DefaultSecuritySession/DefaultSecuritySession(org.apache.archiva.redback.authentication.AuthenticationResult,org.apache.archiva.redback.users.User)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/archiva/security/AccessDeniedException/AccessDeniedException(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///org/codehaus/plexus/redback/system/DefaultSecuritySession/DefaultSecuritySession(org.codehaus.plexus.redback.authentication.AuthenticationResult,org.codehaus.plexus.redback.users.User)|",
+      "|java+constructor:///org/codehaus/plexus/redback/authentication/AuthenticationResult/AuthenticationResult(boolean,java.lang.Object,java.lang.Exception)|",
+      "|java+constructor:///org/apache/archiva/security/PrincipalNotFoundException/PrincipalNotFoundException(java.lang.String)|",
+      "|java+constructor:///org/apache/archiva/security/ArchivaSecurityException/ArchivaSecurityException(java.lang.String)|",
+      "|java+method:///org/codehaus/plexus/redback/users/User/getFullName()|",
+      "|java+method:///org/codehaus/plexus/redback/users/UserManager/findUser(java.lang.String)|",
+      "|java+method:///org/codehaus/plexus/redback/users/User/isLocked()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/codehaus/plexus/redback/system/SecuritySystem/getUserManager()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/archiva/redback/system/DefaultSecuritySession/DefaultSecuritySession(org.apache.archiva.redback.authentication.AuthenticationResult,org.apache.archiva.redback.users.User)|",
+      "|java+method:///org/apache/archiva/redback/system/SecuritySystem/getUserManager()|",
+      "|java+constructor:///org/apache/archiva/security/AccessDeniedException/AccessDeniedException(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///org/apache/archiva/redback/authentication/AuthenticationResult/AuthenticationResult(boolean,java.lang.Object,java.lang.Exception)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///org/apache/archiva/security/ArchivaSecurityException/ArchivaSecurityException(java.lang.String)|",
+      "|java+constructor:///org/apache/archiva/security/PrincipalNotFoundException/PrincipalNotFoundException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/apache/archiva/redback/users/User/getFullName()|",
+      "|java+method:///org/apache/archiva/redback/users/UserManager/findUser(java.lang.String)|",
+      "|java+method:///org/apache/archiva/redback/users/User/isLocked()|"
+    ],
+    "affectedLib": "org.apache.archiva.redback:redback-system:2.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.archiva:archiva-security:1.4-M2",
+    "coordinatesV2": "org.apache.archiva:archiva-security:1.4-M3",
+    "caller": "|java+method:///org/apache/archiva/security/ArchivaServletAuthenticator/isAuthorized(java.lang.String,java.lang.String,java.lang.String)|",
+    "called": "|java+constructor:///org/apache/archiva/redback/system/DefaultSecuritySession/DefaultSecuritySession(org.apache.archiva.redback.authentication.AuthenticationResult,org.apache.archiva.redback.users.User)|",
+    "v1Body": [
+      "|java+method:///org/codehaus/plexus/redback/users/UserNotFoundException/getMessage()|",
+      "|java+method:///org/codehaus/plexus/redback/users/UserManager/findUser(java.lang.String)|",
+      "|java+constructor:///org/codehaus/plexus/redback/system/DefaultSecuritySession/DefaultSecuritySession(org.codehaus.plexus.redback.authentication.AuthenticationResult,org.codehaus.plexus.redback.users.User)|",
+      "|java+method:///org/codehaus/plexus/redback/system/SecuritySystem/isAuthorized(org.codehaus.plexus.redback.system.SecuritySession,java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///org/codehaus/plexus/redback/authentication/AuthenticationResult/AuthenticationResult(boolean,java.lang.Object,java.lang.Exception)|",
+      "|java+method:///org/codehaus/plexus/redback/users/User/isLocked()|",
+      "|java+constructor:///org/codehaus/plexus/redback/authorization/UnauthorizedException/UnauthorizedException(java.lang.String)|",
+      "|java+method:///org/codehaus/plexus/redback/authorization/AuthorizationException/getMessage()|",
+      "|java+method:///org/codehaus/plexus/redback/system/SecuritySystem/getUserManager()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/archiva/redback/system/DefaultSecuritySession/DefaultSecuritySession(org.apache.archiva.redback.authentication.AuthenticationResult,org.apache.archiva.redback.users.User)|",
+      "|java+method:///org/apache/archiva/redback/system/SecuritySystem/getUserManager()|",
+      "|java+method:///org/apache/archiva/redback/users/UserNotFoundException/getMessage()|",
+      "|java+method:///org/apache/archiva/redback/authorization/AuthorizationException/getMessage()|",
+      "|java+constructor:///org/apache/archiva/redback/authentication/AuthenticationResult/AuthenticationResult(boolean,java.lang.Object,java.lang.Exception)|",
+      "|java+method:///org/apache/archiva/redback/system/SecuritySystem/isAuthorized(org.apache.archiva.redback.system.SecuritySession,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/apache/archiva/redback/users/UserManager/findUser(java.lang.String)|",
+      "|java+method:///org/apache/archiva/redback/users/User/isLocked()|",
+      "|java+constructor:///org/apache/archiva/redback/authorization/UnauthorizedException/UnauthorizedException(java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///org/apache/archiva/redback/authorization/UnauthorizedException/UnauthorizedException(java.lang.String)|"
+    ],
+    "affectedLib": "org.apache.archiva.redback:redback-system:2.0",
+    "change": "ADDED"
+  }
+]

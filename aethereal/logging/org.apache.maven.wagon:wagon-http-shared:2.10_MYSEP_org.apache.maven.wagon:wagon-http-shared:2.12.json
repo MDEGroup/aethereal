@@ -1,0 +1,79 @@
+[
+  {
+    "coordinatesV1": "org.apache.maven.wagon:wagon-http-shared:2.12",
+    "coordinatesV2": "org.apache.maven.wagon:wagon-http-shared:2.10",
+    "caller": "|java+method:///org/apache/maven/wagon/shared/http/EncodingUtil/encodeURLToString(java.lang.String,java.lang.String%5B%5D)|",
+    "called": "|java+method:///org/apache/commons/lang/StringUtils/split(java.lang.String,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/maven/wagon/shared/http/EncodingUtil/encodeURLToString(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder(java.lang.String)|",
+      "|java+method:///org/apache/commons/lang/StringUtils/split(java.lang.String,java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(char)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/String/endsWith(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/String/split(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/maven/wagon/shared/http/EncodingUtil/encodeURLToString(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(char)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/String/endsWith(java.lang.String)|"
+    ],
+    "affectedLib": "commons-lang:commons-lang:2.6",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.apache.maven.wagon:wagon-http-shared:2.12",
+    "coordinatesV2": "org.apache.maven.wagon:wagon-http-shared:2.10",
+    "caller": "|java+method:///org/apache/maven/wagon/shared/http/HtmlFileListParser/isAcceptableLink(java.lang.String)|",
+    "called": "|java+method:///org/apache/commons/lang/StringUtils/isEmpty(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/lang/StringUtils/isEmpty(java.lang.String)|",
+      "|java+method:///java/util/regex/Matcher/find()|",
+      "|java+method:///java/util/regex/Pattern/matcher(java.lang.CharSequence)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/String/length()|",
+      "|java+method:///java/util/regex/Matcher/find()|",
+      "|java+method:///java/util/regex/Pattern/matcher(java.lang.CharSequence)|"
+    ],
+    "affectedLib": "commons-lang:commons-lang:2.6",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.apache.maven.wagon:wagon-http-shared:2.12",
+    "coordinatesV2": "org.apache.maven.wagon:wagon-http-shared:2.10",
+    "caller": "|java+method:///org/apache/maven/wagon/shared/http/HtmlFileListParser/cleanLink(java.net.URI,java.lang.String)|",
+    "called": "|java+method:///org/apache/commons/lang/StringUtils/isEmpty(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/net/URI/normalize()|",
+      "|java+constructor:///java/net/URI/URI(java.lang.String)|",
+      "|java+method:///org/apache/commons/lang/StringUtils/isEmpty(java.lang.String)|",
+      "|java+method:///java/net/URI/relativize(java.net.URI)|",
+      "|java+method:///java/lang/String/length()|",
+      "|java+method:///java/net/URI/getPath()|",
+      "|java+method:///java/net/URI/resolve(java.net.URI)|",
+      "|java+method:///java/lang/String/substring(int)|",
+      "|java+method:///java/net/URLDecoder/decode(java.lang.String,java.lang.String)|",
+      "|java+method:///java/lang/String/startsWith(java.lang.String)|",
+      "|java+method:///java/net/URI/toASCIIString()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/net/URI/normalize()|",
+      "|java+constructor:///java/net/URI/URI(java.lang.String)|",
+      "|java+method:///java/net/URI/relativize(java.net.URI)|",
+      "|java+method:///java/lang/String/length()|",
+      "|java+method:///java/net/URI/getPath()|",
+      "|java+method:///java/net/URI/resolve(java.net.URI)|",
+      "|java+method:///java/lang/String/substring(int)|",
+      "|java+method:///java/net/URLDecoder/decode(java.lang.String,java.lang.String)|",
+      "|java+method:///java/lang/String/startsWith(java.lang.String)|",
+      "|java+method:///java/net/URI/toASCIIString()|"
+    ],
+    "affectedLib": "commons-lang:commons-lang:2.6",
+    "change": "REMOVED"
+  }
+]

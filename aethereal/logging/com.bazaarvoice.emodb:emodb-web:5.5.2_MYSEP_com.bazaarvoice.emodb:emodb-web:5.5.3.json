@@ -1,0 +1,36 @@
+[
+  {
+    "coordinatesV1": "com.bazaarvoice.emodb:emodb-web:5.5.2",
+    "coordinatesV2": "com.bazaarvoice.emodb:emodb-web:5.5.3",
+    "caller": "|java+method:///com/bazaarvoice/emodb/web/resources/blob/BlobStoreResource1/createTable(java.lang.String,com.bazaarvoice.emodb.web.resources.sor.TableOptionsParam,java.util.Map,com.bazaarvoice.emodb.web.resources.sor.AuditParam,javax.ws.rs.core.UriInfo,com.bazaarvoice.emodb.auth.jersey.Subject)|",
+    "called": "|java+method:///com/bazaarvoice/emodb/auth/jersey/Subject/hasPermission(java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///com/bazaarvoice/emodb/web/auth/resource/CreateTableResource/CreateTableResource(java.lang.String,java.lang.String,java.util.Map)|",
+      "|java+method:///com/bazaarvoice/emodb/web/resources/blob/BlobStoreResource1/getRequired(io.dropwizard.jersey.params.AbstractParam,java.lang.String)|",
+      "|java+method:///com/bazaarvoice/emodb/datacenter/api/DataCenters/getSelf()|",
+      "|java+method:///com/bazaarvoice/emodb/sor/api/TableOptions/getPlacement()|",
+      "|java+constructor:///javax/ws/rs/WebApplicationException/WebApplicationException(javax.ws.rs.core.Response)|",
+      "|java+method:///com/bazaarvoice/emodb/auth/jersey/Subject/hasPermission(java.lang.String)|",
+      "|java+constructor:///com/bazaarvoice/emodb/common/api/UnauthorizedException/UnauthorizedException()|",
+      "|java+method:///javax/ws/rs/core/UriInfo/getRequestUri()|",
+      "|java+method:///com/bazaarvoice/emodb/web/resources/blob/BlobStoreResource1/redirectTo(com.bazaarvoice.emodb.datacenter.api.DataCenter,java.net.URI)|",
+      "|java+method:///com/bazaarvoice/emodb/web/auth/Permissions/createBlobTable(com.bazaarvoice.emodb.web.auth.resource.CreateTableResource)|",
+      "|java+method:///com/bazaarvoice/emodb/datacenter/api/DataCenter/isSystem()|",
+      "|java+method:///com/bazaarvoice/emodb/blob/api/BlobStore/createTable(java.lang.String,com.bazaarvoice.emodb.sor.api.TableOptions,java.util.Map,com.bazaarvoice.emodb.sor.api.Audit)|",
+      "|java+method:///com/bazaarvoice/emodb/web/resources/SuccessResponse/instance()|",
+      "|java+method:///com/bazaarvoice/emodb/datacenter/api/DataCenters/getSystem()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/bazaarvoice/emodb/web/auth/resource/CreateTableResource/CreateTableResource(java.lang.String,java.lang.String,java.util.Map)|",
+      "|java+method:///com/bazaarvoice/emodb/web/resources/blob/BlobStoreResource1/getRequired(io.dropwizard.jersey.params.AbstractParam,java.lang.String)|",
+      "|java+method:///com/bazaarvoice/emodb/blob/api/BlobStore/createTable(java.lang.String,com.bazaarvoice.emodb.sor.api.TableOptions,java.util.Map,com.bazaarvoice.emodb.sor.api.Audit)|",
+      "|java+method:///com/bazaarvoice/emodb/web/resources/SuccessResponse/instance()|",
+      "|java+method:///com/bazaarvoice/emodb/sor/api/TableOptions/getPlacement()|",
+      "|java+method:///com/bazaarvoice/emodb/auth/jersey/Subject/hasPermission(java.lang.String)|",
+      "|java+constructor:///com/bazaarvoice/emodb/common/api/UnauthorizedException/UnauthorizedException()|",
+      "|java+method:///com/bazaarvoice/emodb/web/auth/Permissions/createBlobTable(com.bazaarvoice.emodb.web.auth.resource.CreateTableResource)|"
+    ],
+    "affectedLib": "com.bazaarvoice.emodb:emodb-auth-core:5.5.3",
+    "change": "UPDATED"
+  }
+]

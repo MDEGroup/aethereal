@@ -1,0 +1,3001 @@
+[
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+method:///org/docx4j/fonts/fop/fonts/autodetect/FontInfoFinder/find(java.net.URL,org.docx4j.fonts.fop.fonts.FontResolver,org.docx4j.fonts.fop.fonts.FontCache)|",
+    "called": "|java+method:///org/apache/commons/io/IOUtils/closeQuietly(java.io.InputStream)|",
+    "v1Body": [
+      "|java+method:///org/docx4j/fonts/fop/fonts/autodetect/FontInfoFinder/getFontInfoFromCustomFont(java.net.URL,org.docx4j.fonts.fop.fonts.CustomFont,org.docx4j.fonts.fop.fonts.FontCache)|",
+      "|java+method:///org/docx4j/fonts/fop/fonts/truetype/TTFFile/getTTCnames(org.docx4j.fonts.fop.fonts.truetype.FontFileReader)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/docx4j/fonts/fop/fonts/FontCache/isFailedFont(java.lang.String,long)|",
+      "|java+method:///org/apache/commons/logging/Log/isDebugEnabled()|",
+      "|java+method:///org/docx4j/fonts/fop/fonts/FontCache/containsFont(java.lang.String)|",
+      "|java+method:///java/util/List/size()|",
+      "|java+constructor:///org/docx4j/fonts/fop/fonts/truetype/FontFileReader/FontFileReader(java.io.InputStream)|",
+      "|java+method:///java/util/List/toArray(java.lang.Object%5B%5D)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/docx4j/fonts/fop/fonts/FontCache/getLastModified(java.net.URL)|",
+      "|java+method:///org/docx4j/fonts/fop/fonts/FontLoader/loadFont(java.net.URL,java.lang.String,boolean,org.docx4j.fonts.fop.fonts.EncodingMode,org.docx4j.fonts.fop.fonts.FontResolver)|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+constructor:///org/docx4j/fonts/fop/fonts/truetype/TTFFile/TTFFile()|",
+      "|java+constructor:///org/docx4j/fonts/fop/fonts/truetype/TTFFontLoader/TTFFontLoader(java.lang.String,java.lang.String,boolean,org.docx4j.fonts.fop.fonts.EncodingMode,boolean,org.docx4j.fonts.fop.fonts.FontResolver)|",
+      "|java+method:///org/apache/commons/logging/Log/debug(java.lang.Object)|",
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///org/apache/commons/io/IOUtils/closeQuietly(java.io.InputStream)|",
+      "|java+method:///java/net/URL/toExternalForm()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/String/trim()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/docx4j/fonts/fop/fonts/FontCache/registerFailedFont(java.lang.String,long)|",
+      "|java+method:///org/docx4j/fonts/fop/fonts/FontEventListener/fontLoadingErrorAtAutoDetection(java.lang.Object,java.lang.String,java.lang.Exception)|",
+      "|java+method:///org/docx4j/fonts/fop/fonts/CustomFont/setEventListener(org.docx4j.fonts.fop.fonts.FontEventListener)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///org/docx4j/fonts/fop/fonts/FontLoader/openFontUri(org.docx4j.fonts.fop.fonts.FontResolver,java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/String/endsWith(java.lang.String)|",
+      "|java+method:///org/docx4j/fonts/fop/fonts/truetype/TTFFontLoader/getFont()|",
+      "|java+method:///org/docx4j/fonts/fop/fonts/FontCache/getFontInfos(java.lang.String,long)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+method:///org/docx4j/fonts/fop/fonts/autodetect/FontInfoFinder/getFontInfoFromCustomFont(java.net.URL,org.docx4j.fonts.fop.fonts.CustomFont,org.docx4j.fonts.fop.fonts.FontCache)|",
+      "|java+method:///org/docx4j/fonts/fop/fonts/truetype/TTFFile/getTTCnames(org.docx4j.fonts.fop.fonts.truetype.FontFileReader)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/docx4j/fonts/fop/fonts/FontCache/isFailedFont(java.lang.String,long)|",
+      "|java+method:///org/docx4j/fonts/fop/fonts/FontCache/containsFont(java.lang.String)|",
+      "|java+method:///java/util/List/size()|",
+      "|java+constructor:///org/docx4j/fonts/fop/fonts/truetype/FontFileReader/FontFileReader(java.io.InputStream)|",
+      "|java+method:///java/util/List/toArray(java.lang.Object%5B%5D)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/docx4j/fonts/fop/fonts/FontCache/getLastModified(java.net.URL)|",
+      "|java+method:///org/docx4j/fonts/fop/fonts/FontLoader/loadFont(java.net.URL,java.lang.String,boolean,org.docx4j.fonts.fop.fonts.EncodingMode,org.docx4j.fonts.fop.fonts.FontResolver)|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///org/slf4j/Logger/isDebugEnabled()|",
+      "|java+constructor:///org/docx4j/fonts/fop/fonts/truetype/TTFFile/TTFFile()|",
+      "|java+constructor:///org/docx4j/fonts/fop/fonts/truetype/TTFFontLoader/TTFFontLoader(java.lang.String,java.lang.String,boolean,org.docx4j.fonts.fop.fonts.EncodingMode,boolean,org.docx4j.fonts.fop.fonts.FontResolver)|",
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///org/apache/commons/io/IOUtils/closeQuietly(java.io.InputStream)|",
+      "|java+method:///java/net/URL/toExternalForm()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/String/trim()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/docx4j/fonts/fop/fonts/FontCache/registerFailedFont(java.lang.String,long)|",
+      "|java+method:///org/docx4j/fonts/fop/fonts/FontEventListener/fontLoadingErrorAtAutoDetection(java.lang.Object,java.lang.String,java.lang.Exception)|",
+      "|java+method:///org/docx4j/fonts/fop/fonts/CustomFont/setEventListener(org.docx4j.fonts.fop.fonts.FontEventListener)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///org/docx4j/fonts/fop/fonts/FontLoader/openFontUri(org.docx4j.fonts.fop.fonts.FontResolver,java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/String/endsWith(java.lang.String)|",
+      "|java+method:///org/docx4j/fonts/fop/fonts/truetype/TTFFontLoader/getFont()|",
+      "|java+method:///org/docx4j/fonts/fop/fonts/FontCache/getFontInfos(java.lang.String,long)|"
+    ],
+    "affectedLib": "commons-io:commons-io:1.3.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+method:///org/docx4j/openpackaging/packages/OpcPackage/save(java.io.File,java.lang.String)|",
+    "called": "|java+method:///org/apache/commons/io/IOUtils/closeQuietly(java.io.OutputStream)|",
+    "v1Body": [
+      "|java+method:///org/docx4j/jaxb/NamespacePrefixMapperUtils/setProperty(javax.xml.bind.Marshaller,java.lang.Object)|",
+      "|java+method:///java/io/File/getName()|",
+      "|java+method:///javax/xml/bind/Marshaller/marshal(java.lang.Object,java.io.OutputStream)|",
+      "|java+method:///javax/xml/bind/Marshaller/setProperty(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/docx4j/openpackaging/io/SaveToZipFile/save(java.io.File)|",
+      "|java+method:///javax/xml/bind/JAXBContext/createMarshaller()|",
+      "|java+constructor:///org/docx4j/convert/out/flatOpcXml/FlatOpcXmlCreator/FlatOpcXmlCreator(org.docx4j.openpackaging.packages.OpcPackage)|",
+      "|java+constructor:///java/io/FileOutputStream/FileOutputStream(java.io.File)|",
+      "|java+method:///java/lang/String/endsWith(java.lang.String)|",
+      "|java+method:///org/docx4j/convert/out/flatOpcXml/FlatOpcXmlCreator/get()|",
+      "|java+constructor:///org/docx4j/openpackaging/exceptions/Docx4JException/Docx4JException(java.lang.String,java.lang.Exception)|",
+      "|java+constructor:///org/docx4j/openpackaging/io/SaveToZipFile/SaveToZipFile(org.docx4j.openpackaging.packages.OpcPackage)|",
+      "|java+method:///org/docx4j/jaxb/NamespacePrefixMapperUtils/getPrefixMapper()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/io/File/getName()|",
+      "|java+method:///org/docx4j/openpackaging/io3/Save/save(java.io.OutputStream)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///org/docx4j/convert/out/flatOpcXml/FlatOpcXmlCreator/FlatOpcXmlCreator(org.docx4j.openpackaging.packages.OpcPackage)|",
+      "|java+constructor:///org/docx4j/openpackaging/io3/Save/Save(org.docx4j.openpackaging.packages.OpcPackage)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/docx4j/convert/out/flatOpcXml/FlatOpcXmlCreator/get()|",
+      "|java+constructor:///org/docx4j/openpackaging/exceptions/Docx4JException/Docx4JException(java.lang.String,java.lang.Exception)|",
+      "|java+method:///org/docx4j/convert/out/flatOpcXml/FlatOpcXmlCreator/marshal(java.io.OutputStream)|",
+      "|java+method:///org/apache/commons/io/IOUtils/closeQuietly(java.io.OutputStream)|",
+      "|java+method:///java/io/File/getPath()|",
+      "|java+constructor:///java/io/FileOutputStream/FileOutputStream(java.io.File)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/String/endsWith(java.lang.String)|"
+    ],
+    "affectedLib": "commons-io:commons-io:1.3.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+constructor:///org/docx4j/fonts/fop/fonts/autodetect/FontFileFinder/FontFileFinder()|",
+    "called": "|java+constructor:///org/apache/commons/io/DirectoryWalker/DirectoryWalker(org.apache.commons.io.filefilter.IOFileFilter,org.apache.commons.io.filefilter.IOFileFilter,int)|",
+    "v1Body": [
+      "|java+method:///org/docx4j/fonts/fop/fonts/autodetect/FontFileFinder/getFileFilter()|",
+      "|java+method:///org/docx4j/fonts/fop/fonts/autodetect/FontFileFinder/getDirectoryFilter()|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|",
+      "|java+constructor:///org/apache/commons/io/DirectoryWalker/DirectoryWalker(org.apache.commons.io.filefilter.IOFileFilter,org.apache.commons.io.filefilter.IOFileFilter,int)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///org/docx4j/fonts/fop/fonts/autodetect/FontFileFinder/getFileFilter()|",
+      "|java+method:///org/docx4j/fonts/fop/fonts/autodetect/FontFileFinder/getDirectoryFilter()|",
+      "|java+constructor:///org/apache/commons/io/DirectoryWalker/DirectoryWalker(org.apache.commons.io.filefilter.IOFileFilter,org.apache.commons.io.filefilter.IOFileFilter,int)|"
+    ],
+    "affectedLib": "commons-io:commons-io:1.3.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+method:///org/docx4j/openpackaging/parts/WordprocessingML/BinaryPart/getBuffer()|",
+    "called": "|java+method:///org/apache/commons/io/IOUtils/closeQuietly(java.io.InputStream)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/io/IOUtils/closeQuietly(java.io.InputStream)|",
+      "|java+method:///org/docx4j/utils/BufferUtil/readInputStream(java.io.InputStream)|",
+      "|java+method:///java/util/zip/ZipFile/getInputStream(java.util.zip.ZipEntry)|",
+      "|java+method:///java/util/zip/ZipFile/getEntry(java.lang.String)|",
+      "|java+constructor:///java/lang/ref/SoftReference/SoftReference(java.lang.Object)|",
+      "|java+constructor:///java/util/zip/ZipFile/ZipFile(java.lang.String)|",
+      "|java+method:///org/apache/log4j/Logger/error(java.lang.Object)|",
+      "|java+method:///java/lang/ref/Reference/get()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/log4j/Logger/debug(java.lang.Object)|",
+      "|java+method:///java/nio/ByteBuffer/rewind()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/util/zip/ZipFile/close()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/docx4j/openpackaging/parts/WordprocessingML/BinaryPart/getPackage()|",
+      "|java+method:///java/io/IOException/getMessage()|",
+      "|java+method:///org/docx4j/openpackaging/parts/WordprocessingML/BinaryPart/setContentLengthAsLoaded(long)|",
+      "|java+constructor:///java/lang/ref/SoftReference/SoftReference(java.lang.Object)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/lang/String/substring(int)|",
+      "|java+method:///java/lang/ref/Reference/get()|",
+      "|java+method:///org/apache/commons/io/IOUtils/closeQuietly(java.io.InputStream)|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String)|",
+      "|java+method:///org/docx4j/openpackaging/io3/stores/PartStore/loadPart(java.lang.String)|",
+      "|java+method:///org/docx4j/openpackaging/packages/OpcPackage/getSourcePartStore()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/docx4j/openpackaging/exceptions/Docx4JException/getMessage()|",
+      "|java+method:///org/docx4j/openpackaging/io3/stores/PartStore/getPartSize(java.lang.String)|",
+      "|java+method:///org/docx4j/utils/BufferUtil/readInputStream(java.io.InputStream)|",
+      "|java+method:///java/nio/ByteBuffer/rewind()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/docx4j/openpackaging/parts/PartName/getName()|"
+    ],
+    "affectedLib": "commons-io:commons-io:1.3.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+method:///org/docx4j/fonts/fop/fonts/FontCache/saveTo(java.io.File)|",
+    "called": "|java+method:///org/apache/commons/io/IOUtils/closeQuietly(java.io.OutputStream)|",
+    "v1Body": [
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/docx4j/fonts/fop/util/LogUtil/handleException(org.apache.commons.logging.Log,java.lang.Exception,boolean)|",
+      "|java+method:///java/io/ObjectOutputStream/writeObject(java.lang.Object)|",
+      "|java+method:///org/apache/commons/logging/Log/isTraceEnabled()|",
+      "|java+constructor:///java/io/FileOutputStream/FileOutputStream(java.io.File)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/apache/commons/logging/Log/trace(java.lang.Object)|",
+      "|java+method:///org/apache/commons/io/IOUtils/closeQuietly(java.io.OutputStream)|",
+      "|java+method:///java/io/File/getCanonicalPath()|",
+      "|java+constructor:///java/io/ObjectOutputStream/ObjectOutputStream(java.io.OutputStream)|",
+      "|java+constructor:///java/io/BufferedOutputStream/BufferedOutputStream(java.io.OutputStream)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/isTraceEnabled()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/slf4j/Logger/trace(java.lang.String)|",
+      "|java+method:///java/io/ObjectOutputStream/writeObject(java.lang.Object)|",
+      "|java+method:///org/apache/commons/io/IOUtils/closeQuietly(java.io.OutputStream)|",
+      "|java+method:///java/io/File/getCanonicalPath()|",
+      "|java+constructor:///java/io/ObjectOutputStream/ObjectOutputStream(java.io.OutputStream)|",
+      "|java+constructor:///java/io/BufferedOutputStream/BufferedOutputStream(java.io.OutputStream)|",
+      "|java+method:///org/docx4j/fonts/fop/util/LogUtil/handleException(org.slf4j.Logger,java.lang.Exception,boolean)|",
+      "|java+constructor:///java/io/FileOutputStream/FileOutputStream(java.io.File)|"
+    ],
+    "affectedLib": "commons-io:commons-io:1.3.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+method:///org/docx4j/convert/out/flatOpcXml/FlatOpcXmlCreator/main(java.lang.String%5B%5D)|",
+    "called": "|java+method:///org/apache/commons/io/FileUtils/writeStringToFile(java.io.File,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/io/PrintStream/println(java.lang.String)|",
+      "|java+constructor:///java/io/File/File(java.lang.String)|",
+      "|java+constructor:///org/docx4j/convert/out/flatOpcXml/FlatOpcXmlCreator/FlatOpcXmlCreator(org.docx4j.openpackaging.packages.OpcPackage)|",
+      "|java+method:///org/docx4j/XmlUtils/marshaltoString(java.lang.Object,boolean,boolean,javax.xml.bind.JAXBContext)|",
+      "|java+method:///org/docx4j/openpackaging/packages/WordprocessingMLPackage/load(java.io.File)|",
+      "|java+method:///org/docx4j/convert/out/flatOpcXml/FlatOpcXmlCreator/get()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/docx4j/convert/out/flatOpcXml/FlatOpcXmlCreator/get()|",
+      "|java+method:///org/apache/commons/io/FileUtils/writeStringToFile(java.io.File,java.lang.String)|",
+      "|java+constructor:///java/io/File/File(java.lang.String)|",
+      "|java+method:///org/docx4j/openpackaging/packages/OpcPackage/load(java.io.File)|",
+      "|java+constructor:///org/docx4j/convert/out/flatOpcXml/FlatOpcXmlCreator/FlatOpcXmlCreator(org.docx4j.openpackaging.packages.OpcPackage)|",
+      "|java+method:///org/docx4j/XmlUtils/marshaltoString(java.lang.Object,boolean,boolean,javax.xml.bind.JAXBContext)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/System/getProperty(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|"
+    ],
+    "affectedLib": "commons-io:commons-io:1.3.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+method:///org/docx4j/fonts/fop/fonts/type1/PFMFile/load(java.io.InputStream)|",
+    "called": "|java+method:///org/apache/commons/io/IOUtils/toByteArray(java.io.InputStream)|",
+    "v1Body": [
+      "|java+method:///org/docx4j/fonts/fop/fonts/type1/PFMFile/loadExtension(org.docx4j.fonts.fop.fonts.type1.PFMInputStream)|",
+      "|java+method:///java/lang/String/equalsIgnoreCase(java.lang.String)|",
+      "|java+method:///org/docx4j/fonts/fop/fonts/type1/PFMFile/loadHeader(org.docx4j.fonts.fop.fonts.type1.PFMInputStream)|",
+      "|java+constructor:///java/io/IOException/IOException(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///java/io/ByteArrayInputStream/ByteArrayInputStream(byte%5B%5D)|",
+      "|java+method:///org/docx4j/fonts/fop/fonts/type1/PFMInputStream/readByte()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/apache/commons/io/IOUtils/toByteArray(java.io.InputStream)|",
+      "|java+constructor:///org/docx4j/fonts/fop/fonts/type1/PFMInputStream/PFMInputStream(java.io.InputStream)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/io/InputStream/read(byte%5B%5D)|",
+      "|java+method:///org/apache/commons/logging/Log/warn(java.lang.Object)|",
+      "|java+method:///java/io/InputStream/reset()|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+method:///org/docx4j/fonts/fop/fonts/type1/PFMInputStream/readShort()|",
+      "|java+method:///java/io/InputStream/mark(int)|",
+      "|java+constructor:///java/lang/String/String(byte%5B%5D,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/docx4j/fonts/fop/fonts/type1/PFMFile/loadExtension(org.docx4j.fonts.fop.fonts.type1.PFMInputStream)|",
+      "|java+method:///java/lang/String/equalsIgnoreCase(java.lang.String)|",
+      "|java+method:///org/docx4j/fonts/fop/fonts/type1/PFMFile/loadHeader(org.docx4j.fonts.fop.fonts.type1.PFMInputStream)|",
+      "|java+method:///java/io/InputStream/read(byte%5B%5D)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///java/io/ByteArrayInputStream/ByteArrayInputStream(byte%5B%5D)|",
+      "|java+method:///org/docx4j/fonts/fop/fonts/type1/PFMInputStream/readByte()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/apache/commons/io/IOUtils/toByteArray(java.io.InputStream)|",
+      "|java+constructor:///org/docx4j/fonts/fop/fonts/type1/PFMInputStream/PFMInputStream(java.io.InputStream)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///java/io/IOException/IOException(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String)|",
+      "|java+method:///java/io/InputStream/reset()|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+method:///org/docx4j/fonts/fop/fonts/type1/PFMInputStream/readShort()|",
+      "|java+method:///java/io/InputStream/mark(int)|",
+      "|java+constructor:///java/lang/String/String(byte%5B%5D,java.lang.String)|"
+    ],
+    "affectedLib": "commons-io:commons-io:1.3.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+method:///org/docx4j/fonts/fop/fonts/FontCache/getLastModified(java.net.URL)|",
+    "called": "|java+method:///org/apache/commons/io/IOUtils/closeQuietly(java.io.InputStream)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/logging/Log/debug(java.lang.Object)|",
+      "|java+method:///java/net/URL/openConnection()|",
+      "|java+method:///org/apache/commons/io/IOUtils/closeQuietly(java.io.InputStream)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/io/IOException/getMessage()|",
+      "|java+method:///java/net/URLConnection/getLastModified()|",
+      "|java+method:///java/net/URLConnection/getInputStream()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+method:///java/net/URL/openConnection()|",
+      "|java+method:///org/apache/commons/io/IOUtils/closeQuietly(java.io.InputStream)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/io/IOException/getMessage()|",
+      "|java+method:///java/net/URLConnection/getLastModified()|",
+      "|java+method:///java/net/URLConnection/getInputStream()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "affectedLib": "commons-io:commons-io:1.3.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+constructor:///org/docx4j/fonts/fop/fonts/autodetect/FontFileFinder/FontFileFinder(int)|",
+    "called": "|java+constructor:///org/apache/commons/io/DirectoryWalker/DirectoryWalker(org.apache.commons.io.filefilter.IOFileFilter,org.apache.commons.io.filefilter.IOFileFilter,int)|",
+    "v1Body": [
+      "|java+method:///org/docx4j/fonts/fop/fonts/autodetect/FontFileFinder/getFileFilter()|",
+      "|java+method:///org/docx4j/fonts/fop/fonts/autodetect/FontFileFinder/getDirectoryFilter()|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|",
+      "|java+constructor:///org/apache/commons/io/DirectoryWalker/DirectoryWalker(org.apache.commons.io.filefilter.IOFileFilter,org.apache.commons.io.filefilter.IOFileFilter,int)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///org/docx4j/fonts/fop/fonts/autodetect/FontFileFinder/getFileFilter()|",
+      "|java+method:///org/docx4j/fonts/fop/fonts/autodetect/FontFileFinder/getDirectoryFilter()|",
+      "|java+constructor:///org/apache/commons/io/DirectoryWalker/DirectoryWalker(org.apache.commons.io.filefilter.IOFileFilter,org.apache.commons.io.filefilter.IOFileFilter,int)|"
+    ],
+    "affectedLib": "commons-io:commons-io:1.3.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+method:///org/docx4j/openpackaging/parts/DrawingML/DiagramDataPart/addImage(org.docx4j.openpackaging.parts.DrawingML.DiagramDataPart,java.lang.String)|",
+    "called": "|java+method:///org/apache/commons/io/IOUtils/toByteArray(java.io.InputStream)|",
+    "v1Body": [
+      "|java+method:///org/docx4j/utils/ResourceUtils/getResource(java.lang.String)|",
+      "|java+method:///org/docx4j/openpackaging/parts/WordprocessingML/BinaryPartAbstractImage/createImagePart(org.docx4j.openpackaging.packages.OpcPackage,org.docx4j.openpackaging.parts.Part,byte%5B%5D)|",
+      "|java+method:///org/apache/log4j/Logger/info(java.lang.Object)|",
+      "|java+method:///org/docx4j/openpackaging/parts/WordprocessingML/BinaryPartAbstractImage/getSourceRelationships()|",
+      "|java+method:///org/docx4j/openpackaging/parts/DrawingML/DiagramDataPart/getPackage()|",
+      "|java+method:///java/lang/Exception/printStackTrace()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/apache/commons/codec/binary/Base64/decodeBase64(byte%5B%5D)|",
+      "|java+method:///org/apache/log4j/Logger/error(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/log4j/Logger/debug(java.lang.Object)|",
+      "|java+method:///java/lang/String/getBytes(java.lang.String)|",
+      "|java+method:///org/apache/commons/io/IOUtils/toByteArray(java.io.InputStream)|",
+      "|java+method:///org/docx4j/relationships/Relationship/getId()|",
+      "|java+method:///java/util/List/get(int)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+method:///org/docx4j/utils/ResourceUtils/getResource(java.lang.String)|",
+      "|java+method:///org/docx4j/openpackaging/parts/WordprocessingML/BinaryPartAbstractImage/createImagePart(org.docx4j.openpackaging.packages.OpcPackage,org.docx4j.openpackaging.parts.Part,byte%5B%5D)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String)|",
+      "|java+method:///org/docx4j/openpackaging/parts/WordprocessingML/BinaryPartAbstractImage/getSourceRelationships()|",
+      "|java+method:///org/docx4j/openpackaging/parts/DrawingML/DiagramDataPart/getPackage()|",
+      "|java+method:///java/lang/Exception/printStackTrace()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/apache/commons/codec/binary/Base64/decodeBase64(byte%5B%5D)|",
+      "|java+method:///java/lang/String/getBytes(java.lang.String)|",
+      "|java+method:///org/apache/commons/io/IOUtils/toByteArray(java.io.InputStream)|",
+      "|java+method:///org/docx4j/relationships/Relationship/getId()|",
+      "|java+method:///java/util/List/get(int)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/Exception/getMessage()|"
+    ],
+    "affectedLib": "commons-io:commons-io:1.3.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+method:///org/docx4j/fonts/fop/fonts/FontCache/loadFrom(java.io.File)|",
+    "called": "|java+method:///org/apache/commons/io/IOUtils/closeQuietly(java.io.InputStream)|",
+    "v1Body": [
+      "|java+method:///java/lang/ClassNotFoundException/getMessage()|",
+      "|java+method:///org/apache/commons/io/IOUtils/closeQuietly(java.io.InputStream)|",
+      "|java+method:///org/apache/commons/logging/Log/warn(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/io/IOException/getMessage()|",
+      "|java+method:///java/io/File/getAbsolutePath()|",
+      "|java+method:///java/io/File/getCanonicalPath()|",
+      "|java+method:///org/apache/commons/logging/Log/isTraceEnabled()|",
+      "|java+constructor:///java/io/FileInputStream/FileInputStream(java.io.File)|",
+      "|java+method:///java/io/File/delete()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/io/File/exists()|",
+      "|java+method:///java/io/ObjectInputStream/readObject()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/apache/commons/logging/Log/trace(java.lang.Object)|",
+      "|java+constructor:///java/io/BufferedInputStream/BufferedInputStream(java.io.InputStream)|",
+      "|java+constructor:///java/io/ObjectInputStream/ObjectInputStream(java.io.InputStream)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/ClassNotFoundException/getMessage()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/isTraceEnabled()|",
+      "|java+method:///java/io/IOException/getMessage()|",
+      "|java+method:///org/slf4j/Logger/trace(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/io/File/getAbsolutePath()|",
+      "|java+method:///java/io/File/getCanonicalPath()|",
+      "|java+constructor:///java/io/FileInputStream/FileInputStream(java.io.File)|",
+      "|java+method:///java/io/File/delete()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/apache/commons/io/IOUtils/closeQuietly(java.io.InputStream)|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String)|",
+      "|java+method:///java/io/File/exists()|",
+      "|java+method:///java/io/ObjectInputStream/readObject()|",
+      "|java+constructor:///java/io/BufferedInputStream/BufferedInputStream(java.io.InputStream)|",
+      "|java+constructor:///java/io/ObjectInputStream/ObjectInputStream(java.io.InputStream)|"
+    ],
+    "affectedLib": "commons-io:commons-io:1.3.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+initializer:///org/docx4j/fonts/IdentityPlusMapper/IdentityPlusMapper$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/docx4j/fonts/PhysicalFonts/discoverPhysicalFonts()|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.Throwable)|",
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/docx4j/fonts/PhysicalFonts/discoverPhysicalFonts()|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.Throwable)|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+constructor:///org/docx4j/fonts/fop/fonts/autodetect/FontFileFinder/FontFileFinder()|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/docx4j/fonts/fop/fonts/autodetect/FontFileFinder/getFileFilter()|",
+      "|java+method:///org/docx4j/fonts/fop/fonts/autodetect/FontFileFinder/getDirectoryFilter()|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|",
+      "|java+constructor:///org/apache/commons/io/DirectoryWalker/DirectoryWalker(org.apache.commons.io.filefilter.IOFileFilter,org.apache.commons.io.filefilter.IOFileFilter,int)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///org/docx4j/fonts/fop/fonts/autodetect/FontFileFinder/getFileFilter()|",
+      "|java+method:///org/docx4j/fonts/fop/fonts/autodetect/FontFileFinder/getDirectoryFilter()|",
+      "|java+constructor:///org/apache/commons/io/DirectoryWalker/DirectoryWalker(org.apache.commons.io.filefilter.IOFileFilter,org.apache.commons.io.filefilter.IOFileFilter,int)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+initializer:///org/docx4j/openpackaging/parts/WordprocessingML/StyleDefinitionsPart/StyleDefinitionsPart$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+initializer:///org/docx4j/openpackaging/parts/opendope/ConditionsPart/ConditionsPart$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+initializer:///org/docx4j/model/images/WordXmlPictureE10/WordXmlPictureE10$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+initializer:///org/docx4j/TextUtils/TextUtils$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+initializer:///org/docx4j/model/datastorage/BindingTraverserXSLT/BindingTraverserXSLT$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/docx4j/utils/ResourceUtils/getResource(java.lang.String)|",
+      "|java+method:///java/io/IOException/printStackTrace()|",
+      "|java+constructor:///javax/xml/transform/stream/StreamSource/StreamSource(java.io.InputStream)|",
+      "|java+method:///org/docx4j/XmlUtils/getTransformerTemplate(javax.xml.transform.Source)|",
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|",
+      "|java+method:///javax/xml/transform/TransformerConfigurationException/printStackTrace()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/docx4j/utils/ResourceUtils/getResource(java.lang.String)|",
+      "|java+method:///java/io/IOException/printStackTrace()|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+constructor:///javax/xml/transform/stream/StreamSource/StreamSource(java.io.InputStream)|",
+      "|java+method:///org/docx4j/XmlUtils/getTransformerTemplate(javax.xml.transform.Source)|",
+      "|java+method:///javax/xml/transform/TransformerConfigurationException/printStackTrace()|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+initializer:///org/docx4j/convert/in/Doc/Doc$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+initializer:///org/docx4j/openpackaging/parts/opendope/ComponentsPart/ComponentsPart$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+initializer:///org/docx4j/openpackaging/parts/DrawingML/DiagramLayoutHeaderPart/DiagramLayoutHeaderPart$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+initializer:///org/docx4j/fonts/fop/fonts/substitute/FontSubstitutions/FontSubstitutions$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+initializer:///org/docx4j/openpackaging/contenttype/ContentTypeManager/ContentTypeManager$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+constructor:///org/docx4j/openpackaging/contenttype/ObjectFactory/ObjectFactory()|",
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/docx4j/openpackaging/contenttype/ObjectFactory/ObjectFactory()|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+initializer:///org/docx4j/openpackaging/parts/relationships/AlteredParts/AlteredParts$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+initializer:///org/docx4j/convert/out/pdf/viaXSLFO/Conversion/Conversion$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/docx4j/utils/ResourceUtils/getResource(java.lang.String)|",
+      "|java+method:///java/io/IOException/printStackTrace()|",
+      "|java+constructor:///javax/xml/transform/stream/StreamSource/StreamSource(java.io.InputStream)|",
+      "|java+method:///org/docx4j/XmlUtils/getTransformerTemplate(javax.xml.transform.Source)|",
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|",
+      "|java+method:///javax/xml/transform/TransformerConfigurationException/printStackTrace()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+initializer:///org/docx4j/openpackaging/parts/DrawingML/DiagramStylePart/DiagramStylePart$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+initializer:///org/docx4j/convert/out/html/SdtWriter/SdtWriter$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|",
+      "|java+constructor:///org/docx4j/convert/out/html/SdtWriter$IdentityHandler/SdtWriter$IdentityHandler()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+constructor:///org/docx4j/convert/out/html/SdtWriter$IdentityHandler/SdtWriter$IdentityHandler()|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+initializer:///org/docx4j/fonts/PhysicalFonts/PhysicalFonts$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+constructor:///org/docx4j/fonts/fop/fonts/autodetect/FontInfoFinder/FontInfoFinder()|",
+      "|java+method:///org/docx4j/fonts/fop/fonts/FontSetup/createMinimalFontResolver()|",
+      "|java+constructor:///org/docx4j/fonts/fop/fonts/FontCache/FontCache()|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.Throwable)|",
+      "|java+method:///org/docx4j/fonts/fop/fonts/FontCache/load()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/docx4j/fonts/fop/fonts/autodetect/FontInfoFinder/FontInfoFinder()|",
+      "|java+method:///org/docx4j/fonts/fop/fonts/FontSetup/createMinimalFontResolver()|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+method:///java/lang/System/getProperty(java.lang.String)|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.Throwable)|",
+      "|java+method:///org/docx4j/fonts/fop/fonts/FontCache/load()|",
+      "|java+constructor:///org/docx4j/fonts/fop/fonts/FontCache/FontCache()|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+initializer:///org/docx4j/openpackaging/parts/DocPropsCorePart/DocPropsCorePart$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///javax/xml/xpath/XPathFactory/newInstance()|",
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|",
+      "|java+method:///javax/xml/xpath/XPathFactory/newXPath()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/docx4j/utils/XPathFactoryUtil/newXPath()|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+initializer:///org/docx4j/TraversalUtil/TraversalUtil$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+initializer:///org/docx4j/openpackaging/parts/Parts/Parts$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+initializer:///org/docx4j/convert/out/html/TagClass/TagClass$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+initializer:///org/docx4j/model/structure/DocumentModel/DocumentModel$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+initializer:///org/docx4j/fonts/BestMatchingMapper/BestMatchingMapper$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/docx4j/fonts/PhysicalFonts/discoverPhysicalFonts()|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.Throwable)|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+method:///org/docx4j/fonts/BestMatchingMapper/generateKeysForPhysicalFonts()|",
+      "|java+method:///org/docx4j/fonts/BestMatchingMapper/setupExplicitSubstitutionsMap()|",
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|",
+      "|java+method:///org/docx4j/fonts/BestMatchingMapper/setupMicrosoftFontFilenames()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/docx4j/fonts/PhysicalFonts/discoverPhysicalFonts()|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.Throwable)|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+method:///org/docx4j/fonts/BestMatchingMapper/setupMicrosoftFontFilenames()|",
+      "|java+method:///org/docx4j/fonts/BestMatchingMapper/generateKeysForPhysicalFonts()|",
+      "|java+method:///org/docx4j/fonts/BestMatchingMapper/setupExplicitSubstitutionsMap()|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+initializer:///org/docx4j/model/fields/FieldsPreprocessor/FieldsPreprocessor$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///java/io/IOException/printStackTrace()|",
+      "|java+method:///javax/xml/xpath/XPathFactory/newInstance()|",
+      "|java+constructor:///javax/xml/transform/stream/StreamSource/StreamSource(java.io.InputStream)|",
+      "|java+method:///org/docx4j/XmlUtils/getTransformerTemplate(javax.xml.transform.Source)|",
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|",
+      "|java+method:///javax/xml/transform/TransformerConfigurationException/printStackTrace()|",
+      "|java+method:///javax/xml/xpath/XPathFactory/newXPath()|",
+      "|java+constructor:///javax/xml/namespace/QName/QName(java.lang.String,java.lang.String)|",
+      "|java+method:///org/docx4j/utils/ResourceUtils/getResource(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/io/IOException/printStackTrace()|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+constructor:///javax/xml/transform/stream/StreamSource/StreamSource(java.io.InputStream)|",
+      "|java+method:///org/docx4j/XmlUtils/getTransformerTemplate(javax.xml.transform.Source)|",
+      "|java+method:///javax/xml/transform/TransformerConfigurationException/printStackTrace()|",
+      "|java+constructor:///javax/xml/namespace/QName/QName(java.lang.String,java.lang.String)|",
+      "|java+method:///org/docx4j/utils/ResourceUtils/getResource(java.lang.String)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+constructor:///org/docx4j/fonts/fop/fonts/truetype/TTFFile/TTFFile()|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+constructor:///java/util/HashSet/HashSet()|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+constructor:///java/util/HashSet/HashSet()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+initializer:///org/docx4j/model/sdt/QueryString/QueryString$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+initializer:///org/docx4j/openpackaging/Base/Base$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+initializer:///org/docx4j/UnitsOfMeasurement/UnitsOfMeasurement$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+constructor:///java/text/DecimalFormatSymbols/DecimalFormatSymbols(java.util.Locale)|",
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|",
+      "|java+constructor:///java/text/DecimalFormat/DecimalFormat(java.lang.String,java.text.DecimalFormatSymbols)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/text/DecimalFormatSymbols/DecimalFormatSymbols(java.util.Locale)|",
+      "|java+method:///org/docx4j/Docx4jProperties/getProperty(java.lang.String,java.lang.String)|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+constructor:///java/text/DecimalFormat/DecimalFormat(java.lang.String,java.text.DecimalFormatSymbols)|",
+      "|java+method:///java/lang/Integer/parseInt(java.lang.String)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+initializer:///org/docx4j/openpackaging/io/ExternalResourceUtils/ExternalResourceUtils$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///java/util/TreeMap/TreeMap()|",
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+constructor:///java/util/TreeMap/TreeMap()|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+initializer:///org/docx4j/jaxb/NamespacePrefixMapperUtils/NamespacePrefixMapperUtils$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+initializer:///org/docx4j/Docx4jProperties/Docx4jProperties$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+initializer:///org/docx4j/openpackaging/parts/VMLPart/VMLPart$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+initializer:///org/docx4j/openpackaging/URIHelper/URIHelper$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/docx4j/openpackaging/URIHelper/createPartName(java.net.URI)|",
+      "|java+constructor:///java/net/URI/URI(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///org/docx4j/openpackaging/parts/PartName/PartName(java.net.URI,boolean)|",
+      "|java+method:///java/lang/StringBuilder/append(char)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/docx4j/openpackaging/URIHelper/createPartName(java.net.URI)|",
+      "|java+constructor:///java/net/URI/URI(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+constructor:///org/docx4j/openpackaging/parts/PartName/PartName(java.net.URI,boolean)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/append(char)|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+constructor:///org/docx4j/fonts/fop/fonts/type1/PFMFile/PFMFile()|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+initializer:///org/docx4j/openpackaging/parts/WordprocessingML/VbaProjectBinaryPart/VbaProjectBinaryPart$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+initializer:///org/pptx4j/jaxb/Context/Context$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///javax/xml/bind/JAXBException/printStackTrace()|",
+      "|java+method:///org/apache/log4j/Logger/info(java.lang.Object)|",
+      "|java+constructor:///org/pptx4j/jaxb/Context/Context()|",
+      "|java+method:///org/docx4j/jaxb/NamespacePrefixMapperUtils/getPrefixMapper()|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///java/lang/Exception/printStackTrace()|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|",
+      "|java+method:///org/docx4j/utils/Log4jConfigurator/configure()|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///java/lang/Class/getClassLoader()|",
+      "|java+method:///javax/xml/bind/JAXBContext/newInstance(java.lang.String,java.lang.ClassLoader)|",
+      "|java+method:///org/apache/log4j/Logger/error(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/docx4j/utils/ResourceUtils/getResource(java.lang.String)|",
+      "|java+method:///javax/xml/bind/JAXBException/printStackTrace()|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String)|",
+      "|java+method:///org/docx4j/jaxb/Context/searchManifestsForJAXBImplementationInfo(java.lang.ClassLoader)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String)|",
+      "|java+constructor:///java/io/File/File(java.lang.String)|",
+      "|java+method:///org/docx4j/jaxb/NamespacePrefixMapperUtils/getPrefixMapper()|",
+      "|java+method:///java/lang/ClassLoader/getSystemClassLoader()|",
+      "|java+method:///java/lang/Thread/getContextClassLoader()|",
+      "|java+method:///javax/xml/bind/JAXBContext/newInstance(java.lang.String,java.lang.ClassLoader)|",
+      "|java+method:///java/lang/Thread/currentThread()|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///java/io/File/exists()|",
+      "|java+method:///javax/xml/bind/JAXBException/getMessage()|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+method:///java/lang/System/getProperty(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///java/lang/Class/getClassLoader()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/Exception/getMessage()|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+initializer:///org/docx4j/openpackaging/parts/opendope/XPathsPart/XPathsPart$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+initializer:///org/docx4j/convert/out/html/HtmlExporterNonXSLT/HtmlExporterNonXSLT$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+initializer:///org/xlsx4j/jaxb/Context/Context$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///javax/xml/bind/JAXBException/printStackTrace()|",
+      "|java+method:///org/apache/log4j/Logger/info(java.lang.Object)|",
+      "|java+method:///org/docx4j/jaxb/NamespacePrefixMapperUtils/getPrefixMapper()|",
+      "|java+constructor:///org/xlsx4j/jaxb/Context/Context()|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///java/lang/Exception/printStackTrace()|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|",
+      "|java+method:///org/docx4j/utils/Log4jConfigurator/configure()|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///java/lang/Class/getClassLoader()|",
+      "|java+method:///javax/xml/bind/JAXBContext/newInstance(java.lang.String,java.lang.ClassLoader)|",
+      "|java+method:///org/apache/log4j/Logger/error(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/docx4j/utils/ResourceUtils/getResource(java.lang.String)|",
+      "|java+method:///javax/xml/bind/JAXBException/printStackTrace()|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String)|",
+      "|java+method:///org/docx4j/jaxb/Context/searchManifestsForJAXBImplementationInfo(java.lang.ClassLoader)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String)|",
+      "|java+constructor:///java/io/File/File(java.lang.String)|",
+      "|java+method:///org/docx4j/jaxb/NamespacePrefixMapperUtils/getPrefixMapper()|",
+      "|java+method:///java/lang/ClassLoader/getSystemClassLoader()|",
+      "|java+method:///java/lang/Thread/getContextClassLoader()|",
+      "|java+method:///javax/xml/bind/JAXBContext/newInstance(java.lang.String,java.lang.ClassLoader)|",
+      "|java+method:///java/lang/Thread/currentThread()|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///java/io/File/exists()|",
+      "|java+method:///javax/xml/bind/JAXBException/getMessage()|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+method:///java/lang/System/getProperty(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///java/lang/Class/getClassLoader()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/Exception/getMessage()|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+initializer:///org/docx4j/utils/BufferUtil/BufferUtil$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+initializer:///org/docx4j/openpackaging/parts/DrawingML/DiagramLayoutPart/DiagramLayoutPart$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/docx4j/utils/ResourceUtils/getResource(java.lang.String)|",
+      "|java+constructor:///javax/xml/transform/stream/StreamSource/StreamSource(java.io.InputStream)|",
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|",
+      "|java+method:///java/lang/Exception/printStackTrace()|",
+      "|java+method:///org/docx4j/XmlUtils/getTransformerTemplate(javax.xml.transform.Source)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/docx4j/utils/ResourceUtils/getResource(java.lang.String)|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+constructor:///javax/xml/transform/stream/StreamSource/StreamSource(java.io.InputStream)|",
+      "|java+method:///java/lang/Exception/printStackTrace()|",
+      "|java+method:///org/docx4j/XmlUtils/getTransformerTemplate(javax.xml.transform.Source)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+initializer:///org/docx4j/convert/out/html/TagSingleBox/TagSingleBox$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+initializer:///org/docx4j/openpackaging/parts/Part/Part$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+initializer:///org/docx4j/model/listnumbering/NumberFormatLowerLetter/NumberFormatLowerLetter$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+initializer:///org/docx4j/convert/out/html/SdtTagHandler/SdtTagHandler$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+initializer:///org/docx4j/jaxb/Context/Context$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///javax/xml/bind/JAXBException/printStackTrace()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/log4j/Logger/info(java.lang.Object)|",
+      "|java+method:///org/docx4j/jaxb/NamespacePrefixMapperUtils/getPrefixMapper()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+constructor:///org/docx4j/jaxb/Context/Context()|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|",
+      "|java+method:///org/docx4j/utils/Log4jConfigurator/configure()|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///java/lang/Class/getClassLoader()|",
+      "|java+method:///org/apache/log4j/Logger/error(java.lang.Object,java.lang.Throwable)|",
+      "|java+method:///javax/xml/bind/JAXBContext/newInstance(java.lang.String,java.lang.ClassLoader)|",
+      "|java+method:///org/apache/log4j/Logger/error(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+method:///org/docx4j/utils/ResourceUtils/getResource(java.lang.String)|",
+      "|java+method:///javax/xml/bind/JAXBException/printStackTrace()|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String)|",
+      "|java+method:///org/docx4j/jaxb/Context/searchManifestsForJAXBImplementationInfo(java.lang.ClassLoader)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String)|",
+      "|java+constructor:///java/io/File/File(java.lang.String)|",
+      "|java+method:///org/docx4j/jaxb/NamespacePrefixMapperUtils/getPrefixMapper()|",
+      "|java+method:///java/lang/ClassLoader/getSystemClassLoader()|",
+      "|java+method:///java/lang/Thread/getContextClassLoader()|",
+      "|java+method:///javax/xml/bind/JAXBContext/newInstance(java.lang.String,java.lang.ClassLoader)|",
+      "|java+method:///java/lang/Thread/currentThread()|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///java/io/File/exists()|",
+      "|java+method:///javax/xml/bind/JAXBException/getMessage()|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+method:///java/lang/System/getProperty(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///java/lang/Class/getClassLoader()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/Exception/getMessage()|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+initializer:///org/pptx4j/model/TextStyles/TextStyles$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+initializer:///org/docx4j/model/images/WordXmlPictureE20/WordXmlPictureE20$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+initializer:///org/docx4j/wml/SdtContentBlock/SdtContentBlock$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+initializer:///org/docx4j/openpackaging/io/SaveToZipFile/SaveToZipFile$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+initializer:///org/docx4j/openpackaging/parts/XmlPart/XmlPart$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///javax/xml/xpath/XPathFactory/newInstance()|",
+      "|java+method:///javax/xml/xpath/XPathFactory/newXPath()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/docx4j/utils/XPathFactoryUtil/newXPath()|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+initializer:///org/docx4j/model/datastorage/BindingTraverserNonXSLT/BindingTraverserNonXSLT$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+initializer:///org/docx4j/fonts/fop/fonts/FontLoader/FontLoader$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+initializer:///org/docx4j/model/structure/PageDimensions/PageDimensions$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+initializer:///org/docx4j/convert/out/html/HtmlExporterNG2/HtmlExporterNG2$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/docx4j/utils/ResourceUtils/getResource(java.lang.String)|",
+      "|java+method:///java/io/IOException/printStackTrace()|",
+      "|java+constructor:///javax/xml/transform/stream/StreamSource/StreamSource(java.io.InputStream)|",
+      "|java+method:///org/docx4j/XmlUtils/getTransformerTemplate(javax.xml.transform.Source)|",
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|",
+      "|java+method:///javax/xml/transform/TransformerConfigurationException/printStackTrace()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+initializer:///org/docx4j/wml/P/P$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+initializer:///org/docx4j/openpackaging/parts/CustomXmlDataStoragePart/CustomXmlDataStoragePart$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+initializer:///org/docx4j/openpackaging/packages/SpreadsheetMLPackage/SpreadsheetMLPackage$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+initializer:///org/docx4j/fonts/fop/fonts/FontSetup/FontSetup$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+initializer:///org/docx4j/model/styles/Tree/Tree$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+initializer:///org/docx4j/openpackaging/parts/WordprocessingML/ObfuscatedFontPart/ObfuscatedFontPart$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///java/lang/String/subSequence(int,int)|",
+      "|java+constructor:///java/io/File/File(java.io.File,java.lang.String)|",
+      "|java+method:///org/docx4j/openpackaging/parts/WordprocessingML/ObfuscatedFontPart/getUserHome()|",
+      "|java+method:///java/io/File/mkdir()|",
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|",
+      "|java+constructor:///java/lang/String/String(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/String/subSequence(int,int)|",
+      "|java+constructor:///java/io/File/File(java.io.File,java.lang.String)|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///org/docx4j/openpackaging/parts/WordprocessingML/ObfuscatedFontPart/getUserHome()|",
+      "|java+method:///java/io/File/mkdir()|",
+      "|java+constructor:///java/lang/String/String(java.lang.String)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+initializer:///org/docx4j/model/PropertyResolver/PropertyResolver$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+initializer:///org/docx4j/openpackaging/io/LoadFromZipNG/LoadFromZipNG$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+initializer:///org/docx4j/openpackaging/parts/WordprocessingML/FontTablePart/FontTablePart$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+initializer:///org/docx4j/model/structure/SectionWrapper/SectionWrapper$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+initializer:///org/docx4j/openpackaging/parts/DrawingML/DiagramColorsPart/DiagramColorsPart$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+initializer:///org/docx4j/model/structure/HeaderFooterPolicy/HeaderFooterPolicy$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+initializer:///org/docx4j/openpackaging/parts/opendope/QuestionsPart/QuestionsPart$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+initializer:///org/docx4j/fonts/fop/fonts/substitute/FontQualifier/FontQualifier$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+initializer:///org/docx4j/fonts/fop/fonts/SingleByteFont/SingleByteFont$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|",
+      "|java+method:///java/lang/Class/desiredAssertionStatus()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///java/lang/Class/desiredAssertionStatus()|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+initializer:///org/docx4j/model/fields/merge/MailMerger/MailMerger$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+initializer:///org/docx4j/fonts/fop/fonts/Font/Font$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+constructor:///org/docx4j/fonts/fop/fonts/FontTriplet/FontTriplet(java.lang.String,java.lang.String,int,int)|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+constructor:///org/docx4j/fonts/fop/fonts/FontTriplet/FontTriplet(java.lang.String,java.lang.String,int,int)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+initializer:///org/docx4j/openpackaging/parts/JaxbXmlPart/JaxbXmlPart$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+initializer:///org/pptx4j/convert/out/svginhtml/SvgExporter/SvgExporter$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/docx4j/utils/ResourceUtils/getResource(java.lang.String)|",
+      "|java+constructor:///org/plutext/jaxb/svg11/ObjectFactory/ObjectFactory()|",
+      "|java+method:///javax/xml/bind/JAXBContext/newInstance(java.lang.String)|",
+      "|java+constructor:///javax/xml/transform/stream/StreamSource/StreamSource(java.io.InputStream)|",
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|",
+      "|java+method:///java/lang/Exception/printStackTrace()|",
+      "|java+method:///org/docx4j/XmlUtils/getTransformerTemplate(javax.xml.transform.Source)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/docx4j/utils/ResourceUtils/getResource(java.lang.String)|",
+      "|java+constructor:///org/plutext/jaxb/svg11/ObjectFactory/ObjectFactory()|",
+      "|java+method:///javax/xml/bind/JAXBContext/newInstance(java.lang.String)|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+constructor:///javax/xml/transform/stream/StreamSource/StreamSource(java.io.InputStream)|",
+      "|java+method:///java/lang/Exception/printStackTrace()|",
+      "|java+method:///org/docx4j/XmlUtils/getTransformerTemplate(javax.xml.transform.Source)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+constructor:///org/docx4j/fonts/fop/fonts/autodetect/FontFileFinder/FontFileFinder(int)|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/docx4j/fonts/fop/fonts/autodetect/FontFileFinder/getFileFilter()|",
+      "|java+method:///org/docx4j/fonts/fop/fonts/autodetect/FontFileFinder/getDirectoryFilter()|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|",
+      "|java+constructor:///org/apache/commons/io/DirectoryWalker/DirectoryWalker(org.apache.commons.io.filefilter.IOFileFilter,org.apache.commons.io.filefilter.IOFileFilter,int)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///org/docx4j/fonts/fop/fonts/autodetect/FontFileFinder/getFileFilter()|",
+      "|java+method:///org/docx4j/fonts/fop/fonts/autodetect/FontFileFinder/getDirectoryFilter()|",
+      "|java+constructor:///org/apache/commons/io/DirectoryWalker/DirectoryWalker(org.apache.commons.io.filefilter.IOFileFilter,org.apache.commons.io.filefilter.IOFileFilter,int)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+initializer:///org/docx4j/openpackaging/parts/ExternalTarget/ExternalTarget$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+initializer:///org/docx4j/diff/Differencer/Differencer$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///java/io/IOException/printStackTrace()|",
+      "|java+constructor:///javax/xml/transform/stream/StreamSource/StreamSource(java.io.InputStream)|",
+      "|java+method:///org/docx4j/XmlUtils/getTransformerTemplate(javax.xml.transform.Source)|",
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|",
+      "|java+method:///javax/xml/transform/TransformerConfigurationException/printStackTrace()|",
+      "|java+constructor:///org/docx4j/wml/ObjectFactory/ObjectFactory()|",
+      "|java+method:///org/docx4j/utils/ResourceUtils/getResource(java.lang.String)|",
+      "|java+constructor:///java/text/SimpleDateFormat/SimpleDateFormat(java.lang.String)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/io/IOException/printStackTrace()|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+constructor:///javax/xml/transform/stream/StreamSource/StreamSource(java.io.InputStream)|",
+      "|java+method:///org/docx4j/XmlUtils/getTransformerTemplate(javax.xml.transform.Source)|",
+      "|java+method:///javax/xml/transform/TransformerConfigurationException/printStackTrace()|",
+      "|java+constructor:///org/docx4j/wml/ObjectFactory/ObjectFactory()|",
+      "|java+method:///org/docx4j/utils/ResourceUtils/getResource(java.lang.String)|",
+      "|java+constructor:///java/text/SimpleDateFormat/SimpleDateFormat(java.lang.String)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+initializer:///org/docx4j/openpackaging/packages/PresentationMLPackage/PresentationMLPackage$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+initializer:///org/docx4j/openpackaging/parts/WordprocessingML/MainDocumentPart/MainDocumentPart$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+initializer:///org/docx4j/utils/ResourceUtils/ResourceUtils$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+initializer:///org/docx4j/convert/out/html/SymbolWriter/SymbolWriter$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+initializer:///org/pptx4j/model/ShapeWrapper/ShapeWrapper$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+initializer:///org/pptx4j/model/ResolvedLayout/ResolvedLayout$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+initializer:///org/docx4j/model/properties/AdHocProperty/AdHocProperty$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+initializer:///org/docx4j/utils/XPathAwareCloner/XPathAwareCloner$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+initializer:///org/docx4j/openpackaging/parts/WordprocessingML/EmbeddedPackagePart/EmbeddedPackagePart$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+initializer:///org/docx4j/utils/XSLTUtils/XSLTUtils$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+initializer:///org/docx4j/model/datastorage/OpenDoPEIntegrity/OpenDoPEIntegrity$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/docx4j/utils/ResourceUtils/getResource(java.lang.String)|",
+      "|java+method:///java/io/IOException/printStackTrace()|",
+      "|java+method:///javax/xml/xpath/XPathFactory/newInstance()|",
+      "|java+constructor:///javax/xml/transform/stream/StreamSource/StreamSource(java.io.InputStream)|",
+      "|java+method:///org/docx4j/XmlUtils/getTransformerTemplate(javax.xml.transform.Source)|",
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|",
+      "|java+method:///javax/xml/transform/TransformerConfigurationException/printStackTrace()|",
+      "|java+method:///javax/xml/xpath/XPathFactory/newXPath()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/docx4j/utils/ResourceUtils/getResource(java.lang.String)|",
+      "|java+method:///java/io/IOException/printStackTrace()|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+constructor:///javax/xml/transform/stream/StreamSource/StreamSource(java.io.InputStream)|",
+      "|java+method:///org/docx4j/XmlUtils/getTransformerTemplate(javax.xml.transform.Source)|",
+      "|java+method:///javax/xml/transform/TransformerConfigurationException/printStackTrace()|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+initializer:///org/docx4j/model/properties/Property/Property$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+initializer:///org/docx4j/model/images/AbstractWordXmlPicture/AbstractWordXmlPicture$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+initializer:///org/docx4j/convert/out/html/TableWriter/TableWriter$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+initializer:///org/docx4j/model/styles/StyleTree/StyleTree$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+initializer:///org/docx4j/fonts/fop/fonts/substitute/FontWeightRange/FontWeightRange$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.String)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+initializer:///org/docx4j/openpackaging/packages/WordprocessingMLPackage/WordprocessingMLPackage$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+initializer:///org/docx4j/openpackaging/parts/WordprocessingML/DocumentSettingsPart/DocumentSettingsPart$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+initializer:///org/docx4j/model/listnumbering/ListLevel/ListLevel$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+initializer:///org/docx4j/openpackaging/parts/WordprocessingML/FooterPart/FooterPart$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+initializer:///org/docx4j/openpackaging/parts/WordprocessingML/BinaryPartAbstractImage/BinaryPartAbstractImage$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/xmlgraphics/image/loader/impl/DefaultImageContext/DefaultImageContext()|",
+      "|java+constructor:///org/apache/xmlgraphics/image/loader/ImageManager/ImageManager(org.apache.xmlgraphics.image.loader.ImageContext)|",
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+initializer:///org/docx4j/fonts/PhysicalFont/PhysicalFont$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+initializer:///org/docx4j/model/properties/PropertyFactory/PropertyFactory$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+initializer:///org/docx4j/openpackaging/parts/PresentationML/JaxbPmlPart/JaxbPmlPart$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+constructor:///java/util/Random/Random()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+constructor:///java/util/Random/Random()|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+initializer:///org/docx4j/openpackaging/parts/DocPropsCustomPart/DocPropsCustomPart$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+initializer:///org/docx4j/model/datastorage/CustomXmlDataStorageImpl/CustomXmlDataStorageImpl$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+initializer:///org/docx4j/openpackaging/packages/OpcPackage/OpcPackage$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+initializer:///org/docx4j/openpackaging/io/Load/Load$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+initializer:///org/glox4j/openpackaging/packages/GloxPackage/GloxPackage$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+initializer:///org/docx4j/model/datastorage/OpenDoPEHandler/OpenDoPEHandler$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+constructor:///org/docx4j/fonts/fop/fonts/autodetect/FontInfoFinder/FontInfoFinder()|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///java/util/regex/Pattern/compile(java.lang.String)|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/regex/Pattern/compile(java.lang.String)|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+initializer:///org/docx4j/convert/in/FlatOpcXmlImporter/FlatOpcXmlImporter$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+initializer:///org/docx4j/model/datastorage/BindingHandler/BindingHandler$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///javax/xml/xpath/XPathFactory/newInstance()|",
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|",
+      "|java+method:///javax/xml/xpath/XPathFactory/newXPath()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+initializer:///org/docx4j/fonts/fop/fonts/Typeface/Typeface$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+initializer:///org/docx4j/fonts/microsoft/MicrosoftFontsRegistry/MicrosoftFontsRegistry$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.Throwable)|",
+      "|java+method:///org/docx4j/fonts/microsoft/MicrosoftFontsRegistry/setupMicrosoftFontsRegistry()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.Throwable)|",
+      "|java+method:///org/docx4j/fonts/microsoft/MicrosoftFontsRegistry/setupMicrosoftFontsRegistry()|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+initializer:///org/docx4j/openpackaging/parts/DrawingML/DiagramDrawingPart/DiagramDrawingPart$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+initializer:///org/docx4j/openpackaging/parts/WordprocessingML/BibliographyPart/BibliographyPart$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+initializer:///org/docx4j/fonts/fop/fonts/LazyFont/LazyFont$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+initializer:///org/docx4j/wml/SdtPr/SdtPr$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+initializer:///org/docx4j/openpackaging/parts/DrawingML/DiagramDataPart/DiagramDataPart$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+initializer:///org/docx4j/openpackaging/parts/relationships/RelationshipsPart/RelationshipsPart$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+initializer:///org/docx4j/openpackaging/parts/WordprocessingML/GlossaryDocumentPart/GlossaryDocumentPart$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+initializer:///org/docx4j/openpackaging/parts/ThemePart/ThemePart$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+initializer:///org/docx4j/wml/SdtBlock/SdtBlock$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+initializer:///org/docx4j/fonts/fop/fonts/FontCache/FontCache$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+initializer:///org/docx4j/model/listnumbering/Emulator/Emulator$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+initializer:///org/docx4j/model/images/AbstractConversionImageHandler/AbstractConversionImageHandler$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+initializer:///org/docx4j/openpackaging/parts/WordprocessingML/HeaderPart/HeaderPart$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+initializer:///org/docx4j/openpackaging/parts/DocPropsExtendedPart/DocPropsExtendedPart$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///javax/xml/xpath/XPathFactory/newInstance()|",
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|",
+      "|java+method:///javax/xml/xpath/XPathFactory/newXPath()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/docx4j/utils/XPathFactoryUtil/newXPath()|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+initializer:///org/docx4j/model/listnumbering/NumberFormatDecimalZero/NumberFormatDecimalZero$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+initializer:///org/docx4j/fonts/fop/fonts/FontManagerConfigurator/FontManagerConfigurator$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+initializer:///org/docx4j/model/listnumbering/AbstractListNumberingDefinition/AbstractListNumberingDefinition$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+initializer:///org/pptx4j/convert/out/svginhtml/PictureExporter/PictureExporter$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+initializer:///org/docx4j/fonts/Mapper/Mapper$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///java/util/Collections/synchronizedMap(java.util.Map)|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Collections/synchronizedMap(java.util.Map)|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+constructor:///java/util/HashMap/HashMap()|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+initializer:///org/docx4j/jaxb/JaxbValidationEventHandler/JaxbValidationEventHandler$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+initializer:///org/docx4j/XmlUtils/XmlUtils$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/warn(java.lang.Object)|",
+      "|java+method:///org/apache/log4j/Logger/info(java.lang.Object)|",
+      "|java+method:///org/docx4j/Docx4jProperties/getProperty(java.lang.String)|",
+      "|java+method:///org/docx4j/XmlUtils/instantiateTransformerFactory()|",
+      "|java+method:///java/lang/System/setProperty(java.lang.String,java.lang.String)|",
+      "|java+method:///javax/xml/parsers/DocumentBuilderFactory/newInstance()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/log4j/Logger/debug(java.lang.Object)|",
+      "|java+method:///java/lang/System/getProperty(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|",
+      "|java+method:///javax/xml/parsers/DocumentBuilderFactory/setNamespaceAware(boolean)|",
+      "|java+method:///java/lang/String/startsWith(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/docx4j/Docx4jProperties/getProperty(java.lang.String)|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String)|",
+      "|java+method:///org/docx4j/Docx4jProperties/getProperty(java.lang.String,boolean)|",
+      "|java+method:///org/docx4j/XmlUtils/instantiateTransformerFactory()|",
+      "|java+method:///java/lang/System/setProperty(java.lang.String,java.lang.String)|",
+      "|java+method:///javax/xml/parsers/DocumentBuilderFactory/newInstance()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/System/getProperty(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///javax/xml/parsers/DocumentBuilderFactory/setNamespaceAware(boolean)|",
+      "|java+method:///java/lang/String/startsWith(java.lang.String)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+initializer:///org/docx4j/openpackaging/parts/relationships/Patcher/Patcher$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+initializer:///org/docx4j/openpackaging/parts/DrawingML/DiagramDataUnflatten/DiagramDataUnflatten$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+initializer:///org/docx4j/openpackaging/parts/WordprocessingML/OleObjectBinaryPart/OleObjectBinaryPart$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+initializer:///org/docx4j/openpackaging/parts/PartName/PartName$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+initializer:///org/docx4j/model/listnumbering/ListNumberingDefinition/ListNumberingDefinition$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+initializer:///org/docx4j/convert/out/flatOpcXml/FlatOpcXmlCreator/FlatOpcXmlCreator$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|",
+      "|java+constructor:///org/docx4j/xmlPackage/ObjectFactory/ObjectFactory()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+constructor:///org/docx4j/xmlPackage/ObjectFactory/ObjectFactory()|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+initializer:///org/docx4j/fonts/fop/fonts/FontInfo/FontInfo$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+initializer:///org/opendope/conditions/Xpathref/Xpathref$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+initializer:///org/docx4j/openpackaging/parts/WordprocessingML/NumberingDefinitionsPart/NumberingDefinitionsPart$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+method:///org/docx4j/openpackaging/parts/WordprocessingML/BinaryPartAbstractImage/ensureFormatIsSupported(java.net.URL,java.io.File,byte%5B%5D,boolean)|",
+    "called": "|java+method:///org/apache/xmlgraphics/image/loader/cache/ImageCache/clearCache()|",
+    "v1Body": [
+      "|java+method:///org/apache/xmlgraphics/image/loader/ImageManager/getCache()|",
+      "|java+method:///org/apache/xmlgraphics/image/loader/ImageException/getMessage()|",
+      "|java+method:///org/docx4j/openpackaging/parts/WordprocessingML/BinaryPartAbstractImage/getImageInfo(java.net.URL)|",
+      "|java+method:///org/apache/xmlgraphics/image/loader/cache/ImageCache/clearCache()|",
+      "|java+method:///org/apache/log4j/Logger/debug(java.lang.Object)|",
+      "|java+constructor:///org/docx4j/openpackaging/exceptions/Docx4JException/Docx4JException(java.lang.String,java.lang.Exception)|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///org/docx4j/openpackaging/parts/WordprocessingML/BinaryPartAbstractImage/displayImageInfo(org.apache.xmlgraphics.image.loader.ImageInfo)|",
+      "|java+constructor:///org/docx4j/openpackaging/exceptions/Docx4JException/Docx4JException(java.lang.String)|",
+      "|java+method:///java/io/File/createTempFile(java.lang.String,java.lang.String)|",
+      "|java+constructor:///java/io/FileOutputStream/FileOutputStream(java.io.File)|",
+      "|java+method:///org/apache/log4j/Logger/warn(java.lang.Object)|",
+      "|java+method:///org/docx4j/openpackaging/parts/WordprocessingML/BinaryPartAbstractImage/convertToPNG(java.io.InputStream,java.io.OutputStream,int)|",
+      "|java+constructor:///java/io/ByteArrayInputStream/ByteArrayInputStream(byte%5B%5D)|",
+      "|java+constructor:///java/net/URL/URL(java.lang.String)|",
+      "|java+method:///java/io/File/getAbsolutePath()|",
+      "|java+method:///org/apache/xmlgraphics/image/loader/ImageInfo/getMimeType()|",
+      "|java+constructor:///java/io/FileInputStream/FileInputStream(java.io.File)|",
+      "|java+method:///java/io/FileOutputStream/close()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/docx4j/openpackaging/parts/WordprocessingML/BinaryPartAbstractImage/convertToPNG(java.io.InputStream,java.io.OutputStream,int)|",
+      "|java+method:///org/apache/xmlgraphics/image/loader/ImageException/getMessage()|",
+      "|java+method:///org/apache/xmlgraphics/image/loader/cache/ImageCache/clearCache()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///org/docx4j/openpackaging/exceptions/Docx4JException/Docx4JException(java.lang.String,java.lang.Exception)|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/docx4j/openpackaging/parts/WordprocessingML/BinaryPartAbstractImage/displayImageInfo(org.apache.xmlgraphics.image.loader.ImageInfo)|",
+      "|java+method:///java/io/File/createTempFile(java.lang.String,java.lang.String)|",
+      "|java+constructor:///java/io/FileOutputStream/FileOutputStream(java.io.File)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+method:///org/apache/xmlgraphics/image/loader/ImageManager/getCache()|",
+      "|java+method:///org/docx4j/openpackaging/parts/WordprocessingML/BinaryPartAbstractImage/getImageInfo(java.net.URL)|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String)|",
+      "|java+constructor:///java/io/ByteArrayInputStream/ByteArrayInputStream(byte%5B%5D)|",
+      "|java+constructor:///java/net/URL/URL(java.lang.String)|",
+      "|java+method:///java/io/File/getAbsolutePath()|",
+      "|java+method:///org/apache/xmlgraphics/image/loader/ImageInfo/getMimeType()|",
+      "|java+method:///org/docx4j/openpackaging/parts/WordprocessingML/BinaryPartAbstractImage/getImageManager()|",
+      "|java+constructor:///org/docx4j/openpackaging/exceptions/Docx4JException/Docx4JException(java.lang.String)|",
+      "|java+constructor:///java/io/FileInputStream/FileInputStream(java.io.File)|",
+      "|java+method:///java/io/FileOutputStream/close()|"
+    ],
+    "affectedLib": "org.apache.xmlgraphics:xmlgraphics-commons:1.5",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+method:///org/docx4j/openpackaging/parts/WordprocessingML/BinaryPartAbstractImage$CxCy/scale(org.apache.xmlgraphics.image.loader.ImageInfo,org.docx4j.model.structure.PageDimensions)|",
+    "called": "|java+method:///org/apache/xmlgraphics/image/loader/ImageSize/getDimensionPt()|",
+    "v1Body": [
+      "|java+method:///org/apache/xmlgraphics/image/loader/ImageSize/getDimensionPt()|",
+      "|java+method:///java/awt/geom/Dimension2D/getHeight()|",
+      "|java+method:///java/lang/StringBuilder/append(long)|",
+      "|java+method:///org/docx4j/model/structure/PageDimensions/getWritableWidthTwips()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/awt/geom/Dimension2D/getWidth()|",
+      "|java+constructor:///org/docx4j/openpackaging/parts/WordprocessingML/BinaryPartAbstractImage$CxCy/BinaryPartAbstractImage$CxCy(long,long,boolean)|",
+      "|java+method:///java/lang/StringBuilder/append(double)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/docx4j/UnitsOfMeasurement/twipToEMU(double)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/xmlgraphics/image/loader/ImageInfo/getSize()|",
+      "|java+method:///org/apache/log4j/Logger/debug(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+method:///org/apache/xmlgraphics/image/loader/ImageSize/getDimensionPt()|",
+      "|java+method:///java/awt/geom/Dimension2D/getHeight()|",
+      "|java+method:///java/lang/StringBuilder/append(long)|",
+      "|java+method:///org/docx4j/model/structure/PageDimensions/getWritableWidthTwips()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/awt/geom/Dimension2D/getWidth()|",
+      "|java+constructor:///org/docx4j/openpackaging/parts/WordprocessingML/BinaryPartAbstractImage$CxCy/BinaryPartAbstractImage$CxCy(long,long,boolean)|",
+      "|java+method:///java/lang/StringBuilder/append(double)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/docx4j/UnitsOfMeasurement/twipToEMU(double)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/xmlgraphics/image/loader/ImageInfo/getSize()|"
+    ],
+    "affectedLib": "org.apache.xmlgraphics:xmlgraphics-commons:1.5",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+method:///org/docx4j/openpackaging/parts/WordprocessingML/BinaryPartAbstractImage/getImageInfo(java.net.URL)|",
+    "called": "|java+constructor:///org/apache/xmlgraphics/image/loader/impl/DefaultImageSessionContext/DefaultImageSessionContext(org.apache.xmlgraphics.image.loader.ImageContext,java.io.File)|",
+    "v1Body": [
+      "|java+method:///org/apache/xmlgraphics/image/loader/ImageManager/getImageInfo(java.lang.String,org.apache.xmlgraphics.image.loader.ImageSessionContext)|",
+      "|java+constructor:///org/apache/xmlgraphics/image/loader/impl/DefaultImageSessionContext/DefaultImageSessionContext(org.apache.xmlgraphics.image.loader.ImageContext,java.io.File)|",
+      "|java+method:///java/net/URL/toString()|",
+      "|java+method:///org/apache/xmlgraphics/image/loader/ImageManager/getImageContext()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/xmlgraphics/image/loader/ImageManager/getImageInfo(java.lang.String,org.apache.xmlgraphics.image.loader.ImageSessionContext)|",
+      "|java+constructor:///org/apache/xmlgraphics/image/loader/impl/DefaultImageSessionContext/DefaultImageSessionContext(org.apache.xmlgraphics.image.loader.ImageContext,java.io.File)|",
+      "|java+method:///java/net/URL/toString()|",
+      "|java+method:///org/apache/xmlgraphics/image/loader/ImageManager/getImageContext()|",
+      "|java+method:///org/docx4j/openpackaging/parts/WordprocessingML/BinaryPartAbstractImage/getImageManager()|"
+    ],
+    "affectedLib": "org.apache.xmlgraphics:xmlgraphics-commons:1.5",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+method:///org/docx4j/openpackaging/parts/WordprocessingML/BinaryPartAbstractImage/createImageInline(java.lang.String,java.lang.String,int,int,long,boolean)|",
+    "called": "|java+method:///org/apache/xmlgraphics/image/loader/ImageSize/getDimensionPt()|",
+    "v1Body": [
+      "|java+method:///org/apache/xmlgraphics/image/loader/ImageSize/getDimensionPt()|",
+      "|java+method:///java/awt/geom/Dimension2D/getHeight()|",
+      "|java+method:///org/docx4j/openpackaging/parts/WordprocessingML/BinaryPartAbstractImage/createImageInline(java.lang.String,java.lang.String,int,int,long,long,boolean)|",
+      "|java+method:///java/lang/StringBuilder/append(long)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/awt/geom/Dimension2D/getWidth()|",
+      "|java+method:///java/lang/StringBuilder/append(double)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/docx4j/UnitsOfMeasurement/twipToEMU(double)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/xmlgraphics/image/loader/ImageInfo/getSize()|",
+      "|java+method:///org/apache/log4j/Logger/debug(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+method:///org/apache/xmlgraphics/image/loader/ImageSize/getDimensionPt()|",
+      "|java+method:///java/awt/geom/Dimension2D/getHeight()|",
+      "|java+method:///org/docx4j/openpackaging/parts/WordprocessingML/BinaryPartAbstractImage/createImageInline(java.lang.String,java.lang.String,int,int,long,long,boolean)|",
+      "|java+method:///java/lang/StringBuilder/append(long)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/awt/geom/Dimension2D/getWidth()|",
+      "|java+method:///java/lang/StringBuilder/append(double)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/docx4j/UnitsOfMeasurement/twipToEMU(double)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/xmlgraphics/image/loader/ImageInfo/getSize()|"
+    ],
+    "affectedLib": "org.apache.xmlgraphics:xmlgraphics-commons:1.5",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+method:///org/docx4j/fonts/fop/fonts/Typeface/warnMissingGlyph(char)|",
+    "called": "|java+method:///org/apache/xmlgraphics/fonts/Glyphs/charToGlyphName(char)|",
+    "v1Body": [
+      "|java+method:///org/docx4j/fonts/fop/fonts/Typeface/getFontName()|",
+      "|java+method:///org/apache/commons/logging/Log/warn(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+method:///java/lang/Integer/toHexString(int)|",
+      "|java+method:///org/apache/xmlgraphics/fonts/Glyphs/charToGlyphName(char)|",
+      "|java+method:///java/util/Set/contains(java.lang.Object)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/util/Set/add(java.lang.Object)|",
+      "|java+method:///org/docx4j/fonts/fop/fonts/FontEventListener/glyphNotAvailable(java.lang.Object,char,java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/util/Set/size()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///java/lang/Character/Character(char)|",
+      "|java+constructor:///java/util/HashSet/HashSet()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/docx4j/fonts/fop/fonts/Typeface/getFontName()|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+method:///java/lang/Integer/toHexString(int)|",
+      "|java+method:///org/apache/xmlgraphics/fonts/Glyphs/charToGlyphName(char)|",
+      "|java+method:///java/util/Set/contains(java.lang.Object)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/util/Set/add(java.lang.Object)|",
+      "|java+method:///org/docx4j/fonts/fop/fonts/FontEventListener/glyphNotAvailable(java.lang.Object,char,java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/util/Set/size()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///java/lang/Character/Character(char)|",
+      "|java+constructor:///java/util/HashSet/HashSet()|"
+    ],
+    "affectedLib": "org.apache.xmlgraphics:xmlgraphics-commons:1.5",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.docx4j:docx4j:2.8.1",
+    "coordinatesV2": "org.docx4j:docx4j:3.0.0",
+    "caller": "|java+method:///org/docx4j/openpackaging/parts/WordprocessingML/BinaryPartAbstractImage/displayImageInfo(org.apache.xmlgraphics.image.loader.ImageInfo)|",
+    "called": "|java+method:///org/apache/xmlgraphics/image/loader/ImageSize/getDimensionPx()|",
+    "v1Body": [
+      "|java+method:///java/lang/Math/round(double)|",
+      "|java+method:///org/apache/xmlgraphics/image/loader/ImageSize/getDimensionPt()|",
+      "|java+method:///java/awt/geom/Dimension2D/getHeight()|",
+      "|java+method:///org/apache/xmlgraphics/image/loader/ImageSize/getDpiVertical()|",
+      "|java+method:///java/awt/Dimension/getHeight()|",
+      "|java+method:///java/lang/StringBuilder/append(long)|",
+      "|java+method:///java/awt/Dimension/getWidth()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/apache/xmlgraphics/image/loader/ImageInfo/getMimeType()|",
+      "|java+method:///java/awt/geom/Dimension2D/getWidth()|",
+      "|java+method:///org/apache/xmlgraphics/image/loader/ImageSize/getDpiHorizontal()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/xmlgraphics/image/loader/ImageInfo/getSize()|",
+      "|java+method:///org/apache/log4j/Logger/debug(java.lang.Object)|",
+      "|java+method:///org/apache/xmlgraphics/image/loader/ImageSize/getDimensionPx()|",
+      "|java+method:///org/apache/xmlgraphics/image/loader/ImageInfo/getOriginalURI()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+method:///java/lang/Math/round(double)|",
+      "|java+method:///org/apache/xmlgraphics/image/loader/ImageSize/getDimensionPt()|",
+      "|java+method:///java/awt/geom/Dimension2D/getHeight()|",
+      "|java+method:///org/apache/xmlgraphics/image/loader/ImageSize/getDpiVertical()|",
+      "|java+method:///java/awt/Dimension/getHeight()|",
+      "|java+method:///java/lang/StringBuilder/append(long)|",
+      "|java+method:///java/awt/Dimension/getWidth()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/apache/xmlgraphics/image/loader/ImageInfo/getMimeType()|",
+      "|java+method:///java/awt/geom/Dimension2D/getWidth()|",
+      "|java+method:///org/apache/xmlgraphics/image/loader/ImageSize/getDpiHorizontal()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/xmlgraphics/image/loader/ImageInfo/getSize()|",
+      "|java+method:///org/apache/xmlgraphics/image/loader/ImageSize/getDimensionPx()|",
+      "|java+method:///org/apache/xmlgraphics/image/loader/ImageInfo/getOriginalURI()|"
+    ],
+    "affectedLib": "org.apache.xmlgraphics:xmlgraphics-commons:1.5",
+    "change": "UPDATED"
+  }
+]

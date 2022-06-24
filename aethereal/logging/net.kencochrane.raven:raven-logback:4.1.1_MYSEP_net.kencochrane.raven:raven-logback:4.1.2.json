@@ -1,0 +1,59 @@
+[
+  {
+    "coordinatesV1": "net.kencochrane.raven:raven-logback:4.1.1",
+    "coordinatesV2": "net.kencochrane.raven:raven-logback:4.1.2",
+    "caller": "|java+constructor:///net/kencochrane/raven/logback/SentryAppender/SentryAppender(net.kencochrane.raven.Raven)|",
+    "called": "|java+constructor:///ch/qos/logback/core/AppenderBase/AppenderBase()|",
+    "v1Body": [
+      "|java+constructor:///net/kencochrane/raven/logback/SentryAppender/SentryAppender(net.kencochrane.raven.Raven,boolean)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Collections/emptyMap()|",
+      "|java+constructor:///ch/qos/logback/core/AppenderBase/AppenderBase()|"
+    ],
+    "affectedLib": "ch.qos.logback:logback-core:1.0.13",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "net.kencochrane.raven:raven-logback:4.1.1",
+    "coordinatesV2": "net.kencochrane.raven:raven-logback:4.1.2",
+    "caller": "|java+constructor:///net/kencochrane/raven/logback/SentryAppender/SentryAppender()|",
+    "called": "|java+constructor:///ch/qos/logback/core/AppenderBase/AppenderBase()|",
+    "v1Body": [
+      "|java+constructor:///ch/qos/logback/core/AppenderBase/AppenderBase()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Collections/emptyMap()|",
+      "|java+constructor:///ch/qos/logback/core/AppenderBase/AppenderBase()|"
+    ],
+    "affectedLib": "ch.qos.logback:logback-core:1.0.13",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "net.kencochrane.raven:raven-logback:4.1.1",
+    "coordinatesV2": "net.kencochrane.raven:raven-logback:4.1.2",
+    "caller": "|java+method:///net/kencochrane/raven/logback/SentryAppender/append(ch.qos.logback.classic.spi.ILoggingEvent)|",
+    "called": "|java+method:///net/kencochrane/raven/Raven/sendEvent(net.kencochrane.raven.event.Event)|",
+    "v1Body": [
+      "|java+method:///net/kencochrane/raven/logback/SentryAppender/initRaven()|",
+      "|java+method:///net/kencochrane/raven/logback/SentryAppender/addError(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/lang/ThreadLocal/get()|",
+      "|java+method:///net/kencochrane/raven/logback/SentryAppender/buildEvent(ch.qos.logback.classic.spi.ILoggingEvent)|",
+      "|java+method:///net/kencochrane/raven/Raven/sendEvent(net.kencochrane.raven.event.Event)|",
+      "|java+method:///java/lang/Boolean/booleanValue()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/ThreadLocal/remove()|",
+      "|java+method:///java/lang/ThreadLocal/set(java.lang.Object)|",
+      "|java+method:///net/kencochrane/raven/logback/SentryAppender/initRaven()|",
+      "|java+method:///net/kencochrane/raven/logback/SentryAppender/addError(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/lang/ThreadLocal/get()|",
+      "|java+method:///java/lang/Boolean/valueOf(boolean)|",
+      "|java+method:///net/kencochrane/raven/logback/SentryAppender/buildEvent(ch.qos.logback.classic.spi.ILoggingEvent)|",
+      "|java+method:///net/kencochrane/raven/Raven/sendEvent(net.kencochrane.raven.event.Event)|",
+      "|java+method:///java/lang/Boolean/booleanValue()|"
+    ],
+    "affectedLib": "net.kencochrane.raven:raven:4.1.2",
+    "change": "UPDATED"
+  }
+]

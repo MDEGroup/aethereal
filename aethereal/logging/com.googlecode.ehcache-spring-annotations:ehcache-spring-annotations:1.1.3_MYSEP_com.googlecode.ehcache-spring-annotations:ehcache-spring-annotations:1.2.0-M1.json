@@ -1,0 +1,163 @@
+[
+  {
+    "coordinatesV1": "com.googlecode.ehcache-spring-annotations:ehcache-spring-annotations:1.1.3",
+    "coordinatesV2": "com.googlecode.ehcache-spring-annotations:ehcache-spring-annotations:1.2.0-M1",
+    "caller": "|java+constructor:///com/googlecode/ehcache/annotations/key/CachingReflectionHelper/CachingReflectionHelper()|",
+    "called": "|java+constructor:///com/google/common/collect/MapMaker/MapMaker()|",
+    "v1Body": [
+      "|java+constructor:///java/util/concurrent/atomic/AtomicBoolean/AtomicBoolean(boolean)|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///java/lang/Thread/setDaemon(boolean)|",
+      "|java+constructor:///com/googlecode/ehcache/annotations/util/guice/ReferenceMap/ReferenceMap(com.googlecode.ehcache.annotations.util.guice.ReferenceType,com.googlecode.ehcache.annotations.util.guice.ReferenceType,java.lang.ref.ReferenceQueue)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+constructor:///com/googlecode/ehcache/annotations/key/CachingReflectionHelper$1/CachingReflectionHelper$1(com.googlecode.ehcache.annotations.key.CachingReflectionHelper,java.lang.String)|",
+      "|java+constructor:///java/lang/ref/ReferenceQueue/ReferenceQueue()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/common/collect/MapMaker/makeMap()|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///com/google/common/collect/MapMaker/weakKeys()|",
+      "|java+constructor:///com/google/common/collect/MapMaker/MapMaker()|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "com.google.guava:guava:r09",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.googlecode.ehcache-spring-annotations:ehcache-spring-annotations:1.1.3",
+    "coordinatesV2": "com.googlecode.ehcache-spring-annotations:ehcache-spring-annotations:1.2.0-M1",
+    "caller": "|java+method:///com/googlecode/ehcache/annotations/impl/ExpiredElementEvictor/run()|",
+    "called": "|java+method:///net/sf/ehcache/CacheManager/getEhcache(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/util/Set/iterator()|",
+      "|java+method:///net/sf/ehcache/Ehcache/evictExpiredElements()|",
+      "|java+method:///java/lang/System/currentTimeMillis()|",
+      "|java+method:///org/slf4j/Logger/isDebugEnabled()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/util/Set/size()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///net/sf/ehcache/CacheManager/getEhcache(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(long)|",
+      "|java+method:///net/sf/ehcache/Ehcache/getMemoryStoreSize()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///com/googlecode/ehcache/annotations/impl/ExpiredElementEvictor/calculateEvictableCacheNames(java.lang.String%5B%5D)|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+method:///net/sf/ehcache/CacheManager/getCacheNames()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/util/Set/iterator()|",
+      "|java+method:///net/sf/ehcache/Ehcache/evictExpiredElements()|",
+      "|java+method:///java/lang/System/currentTimeMillis()|",
+      "|java+method:///org/slf4j/Logger/isDebugEnabled()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/util/Set/size()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///net/sf/ehcache/CacheManager/getEhcache(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(long)|",
+      "|java+method:///net/sf/ehcache/Ehcache/getMemoryStoreSize()|"
+    ],
+    "affectedLib": "net.sf.ehcache:ehcache-core:2.4.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.googlecode.ehcache-spring-annotations:ehcache-spring-annotations:1.1.3",
+    "coordinatesV2": "com.googlecode.ehcache-spring-annotations:ehcache-spring-annotations:1.2.0-M1",
+    "caller": "|java+method:///com/googlecode/ehcache/annotations/interceptor/EhCacheInterceptor/invokeCacheable(org.aopalliance.intercept.MethodInvocation,com.googlecode.ehcache.annotations.CacheableAttribute)|",
+    "called": "|java+constructor:///net/sf/ehcache/Element/Element(java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///com/googlecode/ehcache/annotations/resolver/CacheableCacheResolver/resolveSelfPopulatingCacheEntryFactory(net.sf.ehcache.Ehcache,java.io.Serializable,org.aopalliance.intercept.MethodInvocation)|",
+      "|java+method:///com/googlecode/ehcache/annotations/interceptor/EhCacheInterceptor/cacheException(com.googlecode.ehcache.annotations.CacheableAttribute,org.aopalliance.intercept.MethodInvocation,java.io.Serializable,java.lang.Throwable)|",
+      "|java+method:///net/sf/ehcache/Ehcache/get(java.io.Serializable)|",
+      "|java+method:///com/googlecode/ehcache/annotations/interceptor/EhCacheInterceptor/invokeSelfPopulatingCacheable(org.aopalliance.intercept.MethodInvocation,com.googlecode.ehcache.annotations.CacheableAttribute,net.sf.ehcache.Ehcache,java.lang.ThreadLocal,java.io.Serializable)|",
+      "|java+method:///com/googlecode/ehcache/annotations/interceptor/EhCacheInterceptor/checkForCachedException(com.googlecode.ehcache.annotations.CacheableAttribute,org.aopalliance.intercept.MethodInvocation,java.io.Serializable)|",
+      "|java+method:///com/googlecode/ehcache/annotations/resolver/CacheableCacheResolver/resolveCache(java.io.Serializable,org.aopalliance.intercept.MethodInvocation)|",
+      "|java+method:///com/googlecode/ehcache/annotations/interceptor/EhCacheInterceptor/generateCacheKey(org.aopalliance.intercept.MethodInvocation,com.googlecode.ehcache.annotations.MethodAttribute)|",
+      "|java+method:///net/sf/ehcache/Ehcache/put(net.sf.ehcache.Element)|",
+      "|java+method:///net/sf/ehcache/Element/getObjectValue()|",
+      "|java+method:///com/googlecode/ehcache/annotations/CacheableAttribute/getCacheResolver()|",
+      "|java+method:///org/aopalliance/intercept/MethodInvocation/proceed()|",
+      "|java+constructor:///net/sf/ehcache/Element/Element(java.lang.Object,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/googlecode/ehcache/annotations/resolver/CacheableCacheResolver/resolveSelfPopulatingCacheEntryFactory(net.sf.ehcache.Ehcache,java.io.Serializable,org.aopalliance.intercept.MethodInvocation)|",
+      "|java+method:///com/googlecode/ehcache/annotations/interceptor/EhCacheInterceptor/cacheException(com.googlecode.ehcache.annotations.CacheableAttribute,org.aopalliance.intercept.MethodInvocation,java.io.Serializable,java.lang.Throwable)|",
+      "|java+method:///com/googlecode/ehcache/annotations/CacheableInterceptor/preInvokeCachable(net.sf.ehcache.Ehcache,org.aopalliance.intercept.MethodInvocation,java.io.Serializable,java.lang.Object)|",
+      "|java+method:///com/googlecode/ehcache/annotations/interceptor/EhCacheInterceptor/invokeSelfPopulatingCacheable(org.aopalliance.intercept.MethodInvocation,com.googlecode.ehcache.annotations.CacheableAttribute,net.sf.ehcache.Ehcache,java.lang.ThreadLocal,java.io.Serializable)|",
+      "|java+method:///com/googlecode/ehcache/annotations/interceptor/EhCacheInterceptor/checkForCachedException(com.googlecode.ehcache.annotations.CacheableAttribute,org.aopalliance.intercept.MethodInvocation,java.io.Serializable)|",
+      "|java+method:///com/googlecode/ehcache/annotations/resolver/CacheableCacheResolver/resolveCache(java.io.Serializable,org.aopalliance.intercept.MethodInvocation)|",
+      "|java+method:///com/googlecode/ehcache/annotations/interceptor/EhCacheInterceptor/generateCacheKey(org.aopalliance.intercept.MethodInvocation,com.googlecode.ehcache.annotations.MethodAttribute)|",
+      "|java+method:///com/googlecode/ehcache/annotations/CacheableAttribute/isCacheNull()|",
+      "|java+method:///net/sf/ehcache/Ehcache/getWithLoader(java.lang.Object,net.sf.ehcache.loader.CacheLoader,java.lang.Object)|",
+      "|java+method:///net/sf/ehcache/Element/getObjectValue()|",
+      "|java+method:///com/googlecode/ehcache/annotations/CacheableAttribute/getCacheResolver()|",
+      "|java+method:///org/aopalliance/intercept/MethodInvocation/proceed()|",
+      "|java+constructor:///net/sf/ehcache/Element/Element(java.lang.Object,java.lang.Object)|",
+      "|java+method:///com/googlecode/ehcache/annotations/CacheableAttribute/getCacheInterceptor()|",
+      "|java+method:///com/googlecode/ehcache/annotations/CacheableInterceptor/postInvokeCacheable(net.sf.ehcache.Ehcache,org.aopalliance.intercept.MethodInvocation,java.io.Serializable,java.lang.Object)|",
+      "|java+method:///net/sf/ehcache/Ehcache/put(net.sf.ehcache.Element)|"
+    ],
+    "affectedLib": "net.sf.ehcache:ehcache-core:2.4.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.googlecode.ehcache-spring-annotations:ehcache-spring-annotations:1.1.3",
+    "coordinatesV2": "com.googlecode.ehcache-spring-annotations:ehcache-spring-annotations:1.2.0-M1",
+    "caller": "|java+method:///com/googlecode/ehcache/annotations/interceptor/EhCacheInterceptor/cacheException(com.googlecode.ehcache.annotations.CacheableAttribute,org.aopalliance.intercept.MethodInvocation,java.io.Serializable,java.lang.Throwable)|",
+    "called": "|java+constructor:///net/sf/ehcache/Element/Element(java.io.Serializable,java.io.Serializable)|",
+    "v1Body": [
+      "|java+method:///com/googlecode/ehcache/annotations/CacheableAttribute/getCacheResolver()|",
+      "|java+method:///com/googlecode/ehcache/annotations/resolver/CacheableCacheResolver/resolveExceptionCache(java.io.Serializable,org.aopalliance.intercept.MethodInvocation,java.lang.Throwable)|",
+      "|java+constructor:///net/sf/ehcache/Element/Element(java.io.Serializable,java.io.Serializable)|",
+      "|java+method:///net/sf/ehcache/Ehcache/put(net.sf.ehcache.Element)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/googlecode/ehcache/annotations/CacheableAttribute/getCacheResolver()|",
+      "|java+constructor:///net/sf/ehcache/Element/Element(java.io.Serializable,java.io.Serializable)|",
+      "|java+method:///com/googlecode/ehcache/annotations/resolver/CacheableCacheResolver/resolveExceptionCache(java.io.Serializable,org.aopalliance.intercept.MethodInvocation,java.lang.Throwable)|",
+      "|java+method:///com/googlecode/ehcache/annotations/CacheableInterceptor/postInvokeCacheableException(net.sf.ehcache.Ehcache,org.aopalliance.intercept.MethodInvocation,java.io.Serializable,java.lang.Throwable)|",
+      "|java+method:///com/googlecode/ehcache/annotations/CacheableAttribute/getCacheInterceptor()|",
+      "|java+method:///net/sf/ehcache/Ehcache/put(net.sf.ehcache.Element)|"
+    ],
+    "affectedLib": "net.sf.ehcache:ehcache-core:2.4.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.googlecode.ehcache-spring-annotations:ehcache-spring-annotations:1.1.3",
+    "coordinatesV2": "com.googlecode.ehcache-spring-annotations:ehcache-spring-annotations:1.2.0-M1",
+    "caller": "|java+method:///com/googlecode/ehcache/annotations/impl/ExpiredElementEvictor/afterPropertiesSet()|",
+    "called": "|java+method:///net/sf/ehcache/CacheManager/getName()|",
+    "v1Body": [
+      "|java+method:///java/util/Timer/schedule(java.util.TimerTask,long,long)|",
+      "|java+constructor:///java/lang/IllegalStateException/IllegalStateException(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///com/googlecode/ehcache/annotations/impl/ExpiredElementEvictor/calculateEvictableCacheNames(java.lang.String%5B%5D)|",
+      "|java+method:///net/sf/ehcache/CacheManager/getCacheNames()|",
+      "|java+method:///net/sf/ehcache/CacheManager/getName()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///java/util/Timer/Timer(java.lang.String,boolean)|",
+      "|java+method:///java/util/Collections/unmodifiableSet(java.util.Set)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Timer/schedule(java.util.TimerTask,long,long)|",
+      "|java+constructor:///java/lang/IllegalStateException/IllegalStateException(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///net/sf/ehcache/CacheManager/getName()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///java/util/Timer/Timer(java.lang.String,boolean)|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "affectedLib": "net.sf.ehcache:ehcache-core:2.4.1",
+    "change": "UPDATED"
+  }
+]

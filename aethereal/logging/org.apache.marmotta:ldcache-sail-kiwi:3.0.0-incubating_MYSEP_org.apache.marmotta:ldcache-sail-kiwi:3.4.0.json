@@ -1,0 +1,60 @@
+[
+  {
+    "coordinatesV1": "org.apache.marmotta:ldcache-sail-kiwi:3.0.0-incubating",
+    "coordinatesV2": "org.apache.marmotta:ldcache-sail-kiwi:3.4.0",
+    "caller": "|java+method:///org/apache/marmotta/ldcache/sail/KiWiLinkedDataSail/initialize()|",
+    "called": "|java+constructor:///org/apache/marmotta/ldcache/backend/kiwi/LDCachingKiWiBackend/LDCachingKiWiBackend(org.openrdf.sail.Sail,java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/marmotta/ldcache/services/LDCache/LDCache(org.apache.marmotta.ldcache.model.CacheConfiguration,org.apache.marmotta.ldcache.api.LDCachingBackend)|",
+      "|java+constructor:///org/apache/marmotta/ldcache/backend/kiwi/LDCachingKiWiBackend/LDCachingKiWiBackend(org.apache.marmotta.kiwi.sail.KiWiStore,java.lang.String)|",
+      "|java+method:///org/apache/marmotta/ldcache/backend/kiwi/LDCachingKiWiBackend/initialize()|",
+      "|java+method:///org/openrdf/sail/helpers/NotifyingSailWrapper/initialize()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/marmotta/ldcache/services/LDCache/LDCache(org.apache.marmotta.ldcache.model.CacheConfiguration,org.apache.marmotta.ldcache.api.LDCachingBackend)|",
+      "|java+method:///org/apache/marmotta/ldcache/backend/kiwi/LDCachingKiWiBackend/initialize()|",
+      "|java+constructor:///org/apache/marmotta/ldcache/backend/kiwi/LDCachingKiWiBackend/LDCachingKiWiBackend(org.openrdf.sail.Sail,java.lang.String)|",
+      "|java+method:///org/openrdf/sail/helpers/NotifyingSailWrapper/initialize()|"
+    ],
+    "affectedLib": "org.apache.marmotta:ldcache-backend-kiwi:3.4.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.marmotta:ldcache-sail-kiwi:3.0.0-incubating",
+    "coordinatesV2": "org.apache.marmotta:ldcache-sail-kiwi:3.4.0",
+    "caller": "|java+method:///org/apache/marmotta/ldcache/sail/KiWiLinkedDataSailConnection/getStatements(org.openrdf.model.Resource,org.openrdf.model.URI,org.openrdf.model.Value,boolean,org.openrdf.model.Resource%5B%5D)|",
+    "called": "|java+method:///org/apache/marmotta/ldcache/services/LDCache/refresh(org.openrdf.model.URI,org.apache.marmotta.ldcache.api.LDCachingService$RefreshOpts%5B%5D)|",
+    "v1Body": [
+      "|java+method:///org/apache/marmotta/ldcache/services/LDCache/refreshResource(org.openrdf.model.URI,boolean)|",
+      "|java+method:///org/openrdf/sail/helpers/NotifyingSailConnectionWrapper/getStatements(org.openrdf.model.Resource,org.openrdf.model.URI,org.openrdf.model.Value,boolean,org.openrdf.model.Resource%5B%5D)|",
+      "|java+method:///org/apache/marmotta/ldcache/sail/KiWiLinkedDataSailConnection/isAcceptable(org.openrdf.model.Resource)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/openrdf/sail/helpers/NotifyingSailConnectionWrapper/getStatements(org.openrdf.model.Resource,org.openrdf.model.URI,org.openrdf.model.Value,boolean,org.openrdf.model.Resource%5B%5D)|",
+      "|java+method:///org/apache/marmotta/ldcache/sail/KiWiLinkedDataSailConnection/isAcceptable(org.openrdf.model.Resource)|",
+      "|java+method:///org/apache/marmotta/ldcache/services/LDCache/refresh(org.openrdf.model.URI,org.apache.marmotta.ldcache.api.LDCachingService$RefreshOpts%5B%5D)|"
+    ],
+    "affectedLib": "org.apache.marmotta:ldcache-core:3.4.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.marmotta:ldcache-sail-kiwi:3.0.0-incubating",
+    "coordinatesV2": "org.apache.marmotta:ldcache-sail-kiwi:3.4.0",
+    "caller": "|java+method:///org/apache/marmotta/ldcache/sail/KiWiLinkedDataSail/initialize()|",
+    "called": "|java+constructor:///org/apache/marmotta/ldcache/services/LDCache/LDCache(org.apache.marmotta.ldcache.model.CacheConfiguration,org.apache.marmotta.ldcache.api.LDCachingBackend)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/marmotta/ldcache/services/LDCache/LDCache(org.apache.marmotta.ldcache.model.CacheConfiguration,org.apache.marmotta.ldcache.api.LDCachingBackend)|",
+      "|java+constructor:///org/apache/marmotta/ldcache/backend/kiwi/LDCachingKiWiBackend/LDCachingKiWiBackend(org.apache.marmotta.kiwi.sail.KiWiStore,java.lang.String)|",
+      "|java+method:///org/apache/marmotta/ldcache/backend/kiwi/LDCachingKiWiBackend/initialize()|",
+      "|java+method:///org/openrdf/sail/helpers/NotifyingSailWrapper/initialize()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/marmotta/ldcache/services/LDCache/LDCache(org.apache.marmotta.ldcache.model.CacheConfiguration,org.apache.marmotta.ldcache.api.LDCachingBackend)|",
+      "|java+method:///org/apache/marmotta/ldcache/backend/kiwi/LDCachingKiWiBackend/initialize()|",
+      "|java+constructor:///org/apache/marmotta/ldcache/backend/kiwi/LDCachingKiWiBackend/LDCachingKiWiBackend(org.openrdf.sail.Sail,java.lang.String)|",
+      "|java+method:///org/openrdf/sail/helpers/NotifyingSailWrapper/initialize()|"
+    ],
+    "affectedLib": "org.apache.marmotta:ldcache-core:3.4.0",
+    "change": "UPDATED"
+  }
+]

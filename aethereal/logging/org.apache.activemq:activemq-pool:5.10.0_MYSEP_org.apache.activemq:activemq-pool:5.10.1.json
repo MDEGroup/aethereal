@@ -1,0 +1,38 @@
+[
+  {
+    "coordinatesV1": "org.apache.activemq:activemq-pool:5.10.0",
+    "coordinatesV2": "org.apache.activemq:activemq-pool:5.10.1",
+    "caller": "|java+method:///org/apache/activemq/pool/PooledConnectionFactory/populateProperties(java.util.Properties)|",
+    "called": "|java+method:///org/apache/activemq/ActiveMQConnectionFactory/populateProperties(java.util.Properties)|",
+    "v1Body": [
+      "|java+method:///org/apache/activemq/ActiveMQConnectionFactory/populateProperties(java.util.Properties)|",
+      "|java+method:///org/apache/activemq/util/IntrospectionSupport/getProperties(java.lang.Object,java.util.Map,java.lang.String)|",
+      "|java+method:///org/apache/activemq/pool/PooledConnectionFactory/getConnectionFactory()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/activemq/ActiveMQConnectionFactory/populateProperties(java.util.Properties)|",
+      "|java+method:///org/apache/activemq/jms/pool/PooledConnectionFactory/populateProperties(java.util.Properties)|",
+      "|java+method:///org/apache/activemq/pool/PooledConnectionFactory/getConnectionFactory()|"
+    ],
+    "affectedLib": "org.apache.activemq:activemq-client:5.10.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.activemq:activemq-pool:5.10.0",
+    "coordinatesV2": "org.apache.activemq:activemq-pool:5.10.1",
+    "caller": "|java+method:///org/apache/activemq/pool/PooledConnectionFactory/populateProperties(java.util.Properties)|",
+    "called": "|java+method:///org/apache/activemq/jms/pool/PooledConnectionFactory/populateProperties(java.util.Properties)|",
+    "v1Body": [
+      "|java+method:///org/apache/activemq/ActiveMQConnectionFactory/populateProperties(java.util.Properties)|",
+      "|java+method:///org/apache/activemq/util/IntrospectionSupport/getProperties(java.lang.Object,java.util.Map,java.lang.String)|",
+      "|java+method:///org/apache/activemq/pool/PooledConnectionFactory/getConnectionFactory()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/activemq/ActiveMQConnectionFactory/populateProperties(java.util.Properties)|",
+      "|java+method:///org/apache/activemq/jms/pool/PooledConnectionFactory/populateProperties(java.util.Properties)|",
+      "|java+method:///org/apache/activemq/pool/PooledConnectionFactory/getConnectionFactory()|"
+    ],
+    "affectedLib": "org.apache.activemq:activemq-jms-pool:5.10.1",
+    "change": "UPDATED"
+  }
+]

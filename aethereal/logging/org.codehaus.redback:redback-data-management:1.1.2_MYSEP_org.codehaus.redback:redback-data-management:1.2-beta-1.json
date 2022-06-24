@@ -1,0 +1,102 @@
+[
+  {
+    "coordinatesV1": "org.codehaus.redback:redback-data-management:1.1.2",
+    "coordinatesV2": "org.codehaus.redback:redback-data-management:1.2-beta-1",
+    "caller": "|java+method:///org/codehaus/plexus/redback/management/JdoDataManagementTool/backupKeyDatabase(org.codehaus.plexus.redback.keys.KeyManager,java.io.File)|",
+    "called": "|java+constructor:///org/codehaus/plexus/redback/keys/jdo/AuthenticationKeyDatabase/AuthenticationKeyDatabase()|",
+    "v1Body": [
+      "|java+constructor:///java/io/File/File(java.io.File,java.lang.String)|",
+      "|java+method:///org/codehaus/plexus/redback/keys/jdo/io/stax/RedbackKeyManagementJdoStaxWriter/write(java.io.Writer,org.codehaus.plexus.redback.keys.jdo.AuthenticationKeyDatabase)|",
+      "|java+constructor:///org/codehaus/plexus/redback/keys/jdo/io/stax/RedbackKeyManagementJdoStaxWriter/RedbackKeyManagementJdoStaxWriter()|",
+      "|java+method:///org/codehaus/plexus/redback/keys/KeyManager/getAllKeys()|",
+      "|java+constructor:///org/codehaus/plexus/redback/keys/jdo/AuthenticationKeyDatabase/AuthenticationKeyDatabase()|",
+      "|java+constructor:///java/io/FileWriter/FileWriter(java.io.File)|",
+      "|java+method:///org/codehaus/plexus/redback/keys/jdo/AuthenticationKeyDatabase/setKeys(java.util.List)|",
+      "|java+method:///org/codehaus/plexus/util/IOUtil/close(java.io.Writer)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/codehaus/plexus/redback/keys/jdo/AuthenticationKeyDatabase/getModelEncoding()|",
+      "|java+method:///org/codehaus/plexus/redback/keys/jdo/io/stax/RedbackKeyManagementJdoStaxWriter/write(java.io.Writer,org.codehaus.plexus.redback.keys.jdo.AuthenticationKeyDatabase)|",
+      "|java+constructor:///org/codehaus/plexus/redback/keys/jdo/io/stax/RedbackKeyManagementJdoStaxWriter/RedbackKeyManagementJdoStaxWriter()|",
+      "|java+method:///org/codehaus/plexus/redback/keys/KeyManager/getAllKeys()|",
+      "|java+constructor:///org/codehaus/plexus/redback/keys/jdo/AuthenticationKeyDatabase/AuthenticationKeyDatabase()|",
+      "|java+method:///org/codehaus/plexus/redback/management/JdoDataManagementTool/createWriter(java.io.File,java.lang.String,java.lang.String)|",
+      "|java+method:///org/codehaus/plexus/redback/keys/jdo/AuthenticationKeyDatabase/setKeys(java.util.List)|",
+      "|java+method:///org/codehaus/plexus/util/IOUtil/close(java.io.Writer)|"
+    ],
+    "affectedLib": "org.codehaus.redback:redback-keys-jdo:1.2-beta-1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.codehaus.redback:redback-data-management:1.1.2",
+    "coordinatesV2": "org.codehaus.redback:redback-data-management:1.2-beta-1",
+    "caller": "|java+method:///org/codehaus/plexus/redback/management/JdoDataManagementTool/backupRBACDatabase(org.codehaus.plexus.redback.rbac.RBACManager,java.io.File)|",
+    "called": "|java+constructor:///org/codehaus/plexus/redback/rbac/jdo/RbacDatabase/RbacDatabase()|",
+    "v1Body": [
+      "|java+method:///org/codehaus/plexus/redback/rbac/jdo/RbacDatabase/setPermissions(java.util.List)|",
+      "|java+method:///org/codehaus/plexus/redback/rbac/jdo/RbacDatabase/setResources(java.util.List)|",
+      "|java+constructor:///org/codehaus/plexus/redback/rbac/jdo/io/stax/RbacJdoModelStaxWriter/RbacJdoModelStaxWriter()|",
+      "|java+constructor:///java/io/File/File(java.io.File,java.lang.String)|",
+      "|java+method:///org/codehaus/plexus/redback/rbac/jdo/RbacDatabase/setOperations(java.util.List)|",
+      "|java+method:///org/codehaus/plexus/util/IOUtil/close(java.io.Writer)|",
+      "|java+method:///org/codehaus/plexus/redback/rbac/RBACManager/getAllOperations()|",
+      "|java+method:///org/codehaus/plexus/redback/rbac/RBACManager/getAllRoles()|",
+      "|java+method:///org/codehaus/plexus/redback/rbac/jdo/RbacDatabase/setUserAssignments(java.util.List)|",
+      "|java+method:///org/codehaus/plexus/redback/rbac/RBACManager/getAllResources()|",
+      "|java+constructor:///java/io/FileWriter/FileWriter(java.io.File)|",
+      "|java+method:///org/codehaus/plexus/redback/rbac/RBACManager/getAllUserAssignments()|",
+      "|java+constructor:///org/codehaus/plexus/redback/rbac/jdo/RbacDatabase/RbacDatabase()|",
+      "|java+method:///org/codehaus/plexus/redback/rbac/jdo/io/stax/RbacJdoModelStaxWriter/write(java.io.Writer,org.codehaus.plexus.redback.rbac.jdo.RbacDatabase)|",
+      "|java+method:///org/codehaus/plexus/redback/rbac/RBACManager/getAllPermissions()|",
+      "|java+method:///org/codehaus/plexus/redback/rbac/jdo/RbacDatabase/setRoles(java.util.List)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/codehaus/plexus/redback/rbac/jdo/RbacDatabase/setPermissions(java.util.List)|",
+      "|java+method:///org/codehaus/plexus/redback/rbac/jdo/RbacDatabase/setResources(java.util.List)|",
+      "|java+method:///org/codehaus/plexus/redback/rbac/jdo/RbacDatabase/setOperations(java.util.List)|",
+      "|java+method:///org/codehaus/plexus/util/IOUtil/close(java.io.Writer)|",
+      "|java+method:///org/codehaus/plexus/redback/rbac/RBACManager/getAllOperations()|",
+      "|java+method:///org/codehaus/plexus/redback/rbac/RBACManager/getAllRoles()|",
+      "|java+method:///org/codehaus/plexus/redback/rbac/jdo/RbacDatabase/setUserAssignments(java.util.List)|",
+      "|java+method:///org/codehaus/plexus/redback/rbac/RBACManager/getAllResources()|",
+      "|java+method:///org/codehaus/plexus/redback/rbac/jdo/RbacDatabase/getModelEncoding()|",
+      "|java+constructor:///org/codehaus/plexus/redback/rbac/jdo/io/stax/RbacJdoModelStaxWriter/RbacJdoModelStaxWriter()|",
+      "|java+method:///org/codehaus/plexus/redback/rbac/RBACManager/getAllUserAssignments()|",
+      "|java+constructor:///org/codehaus/plexus/redback/rbac/jdo/RbacDatabase/RbacDatabase()|",
+      "|java+method:///org/codehaus/plexus/redback/rbac/jdo/io/stax/RbacJdoModelStaxWriter/write(java.io.Writer,org.codehaus.plexus.redback.rbac.jdo.RbacDatabase)|",
+      "|java+method:///org/codehaus/plexus/redback/rbac/RBACManager/getAllPermissions()|",
+      "|java+method:///org/codehaus/plexus/redback/management/JdoDataManagementTool/createWriter(java.io.File,java.lang.String,java.lang.String)|",
+      "|java+method:///org/codehaus/plexus/redback/rbac/jdo/RbacDatabase/setRoles(java.util.List)|"
+    ],
+    "affectedLib": "org.codehaus.redback:redback-rbac-jdo:1.2-beta-1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.codehaus.redback:redback-data-management:1.1.2",
+    "coordinatesV2": "org.codehaus.redback:redback-data-management:1.2-beta-1",
+    "caller": "|java+method:///org/codehaus/plexus/redback/management/JdoDataManagementTool/backupUserDatabase(org.codehaus.plexus.redback.users.UserManager,java.io.File)|",
+    "called": "|java+method:///org/codehaus/plexus/redback/users/jdo/io/stax/UsersManagementStaxWriter/write(java.io.Writer,org.codehaus.plexus.redback.users.jdo.UserDatabase)|",
+    "v1Body": [
+      "|java+constructor:///java/io/File/File(java.io.File,java.lang.String)|",
+      "|java+method:///org/codehaus/plexus/util/IOUtil/close(java.io.Writer)|",
+      "|java+method:///org/codehaus/plexus/redback/users/UserManager/getUsers()|",
+      "|java+constructor:///java/io/FileWriter/FileWriter(java.io.File)|",
+      "|java+method:///org/codehaus/plexus/redback/users/jdo/UserDatabase/setUsers(java.util.List)|",
+      "|java+method:///org/codehaus/plexus/redback/users/jdo/io/stax/UsersManagementStaxWriter/write(java.io.Writer,org.codehaus.plexus.redback.users.jdo.UserDatabase)|",
+      "|java+constructor:///org/codehaus/plexus/redback/users/jdo/io/stax/UsersManagementStaxWriter/UsersManagementStaxWriter()|",
+      "|java+constructor:///org/codehaus/plexus/redback/users/jdo/UserDatabase/UserDatabase()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/codehaus/plexus/util/IOUtil/close(java.io.Writer)|",
+      "|java+method:///org/codehaus/plexus/redback/users/jdo/UserDatabase/getModelEncoding()|",
+      "|java+method:///org/codehaus/plexus/redback/users/UserManager/getUsers()|",
+      "|java+method:///org/codehaus/plexus/redback/management/JdoDataManagementTool/createWriter(java.io.File,java.lang.String,java.lang.String)|",
+      "|java+method:///org/codehaus/plexus/redback/users/jdo/UserDatabase/setUsers(java.util.List)|",
+      "|java+method:///org/codehaus/plexus/redback/users/jdo/io/stax/UsersManagementStaxWriter/write(java.io.Writer,org.codehaus.plexus.redback.users.jdo.UserDatabase)|",
+      "|java+constructor:///org/codehaus/plexus/redback/users/jdo/io/stax/UsersManagementStaxWriter/UsersManagementStaxWriter()|",
+      "|java+constructor:///org/codehaus/plexus/redback/users/jdo/UserDatabase/UserDatabase()|"
+    ],
+    "affectedLib": "org.codehaus.redback:redback-users-jdo:1.2-beta-1",
+    "change": "UPDATED"
+  }
+]

@@ -1,0 +1,111 @@
+[
+  {
+    "coordinatesV1": "org.springframework.ldap:spring-ldap-test:1.3.1.RELEASE",
+    "coordinatesV2": "org.springframework.ldap:spring-ldap-test:1.3.2.RELEASE",
+    "caller": "|java+method:///org/springframework/ldap/test/LdapTestUtils/loadLdif(javax.naming.directory.DirContext,org.springframework.core.io.Resource)|",
+    "called": "|java+method:///org/springframework/ldap/ldif/parser/LdifParser/open()|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/io/IOUtils/copy(java.io.InputStream,java.io.OutputStream)|",
+      "|java+method:///org/springframework/core/io/Resource/getInputStream()|",
+      "|java+method:///java/io/File/getAbsolutePath()|",
+      "|java+method:///org/apache/directory/server/protocol/shared/store/LdifFileLoader/execute()|",
+      "|java+method:///java/io/File/createTempFile(java.lang.String,java.lang.String)|",
+      "|java+constructor:///org/apache/directory/server/protocol/shared/store/LdifFileLoader/LdifFileLoader(javax.naming.directory.DirContext,java.lang.String)|",
+      "|java+method:///java/io/File/delete()|",
+      "|java+constructor:///java/io/FileOutputStream/FileOutputStream(java.io.File)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/springframework/ldap/ldif/parser/LdifParser/open()|",
+      "|java+constructor:///org/springframework/ldap/ldif/parser/LdifParser/LdifParser(org.springframework.core.io.Resource)|",
+      "|java+method:///java/util/Hashtable/get(java.lang.Object)|",
+      "|java+method:///org/springframework/ldap/ldif/parser/LdifParser/hasMoreRecords()|",
+      "|java+method:///org/springframework/ldap/core/DistinguishedName/removeFirst(javax.naming.Name)|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/springframework/ldap/core/LdapAttributes/getDN()|",
+      "|java+method:///org/springframework/ldap/ldif/parser/LdifParser/getRecord()|",
+      "|java+method:///javax/naming/directory/DirContext/getEnvironment()|",
+      "|java+method:///javax/naming/directory/DirContext/bind(javax.naming.Name,java.lang.Object,javax.naming.directory.Attributes)|"
+    ],
+    "affectedLib": "org.springframework.ldap:spring-ldap-ldif-core:1.3.2.RELEASE",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.springframework.ldap:spring-ldap-test:1.3.1.RELEASE",
+    "coordinatesV2": "org.springframework.ldap:spring-ldap-test:1.3.2.RELEASE",
+    "caller": "|java+method:///org/springframework/ldap/test/TestContextSourceFactoryBean/createInstance()|",
+    "called": "|java+constructor:///org/springframework/ldap/core/support/LdapContextSource/LdapContextSource()|",
+    "v1Body": [
+      "|java+method:///org/springframework/ldap/core/support/LdapContextSource/setPooled(boolean)|",
+      "|java+method:///org/springframework/ldap/core/support/LdapContextSource/setDirObjectFactory(java.lang.Class)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///org/springframework/ldap/core/support/LdapContextSource/LdapContextSource()|",
+      "|java+method:///org/springframework/ldap/test/LdapTestUtils/loadLdif(org.springframework.ldap.core.ContextSource,org.springframework.core.io.Resource)|",
+      "|java+method:///org/springframework/ldap/core/support/LdapContextSource/setBase(java.lang.String)|",
+      "|java+method:///org/springframework/ldap/core/support/LdapContextSource/setUserDn(java.lang.String)|",
+      "|java+constructor:///org/apache/directory/server/core/schema/bootstrap/NisSchema/NisSchema()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/springframework/ldap/core/support/LdapContextSource/setPassword(java.lang.String)|",
+      "|java+method:///org/springframework/ldap/test/LdapTestUtils/clearSubContexts(org.springframework.ldap.core.ContextSource,javax.naming.Name)|",
+      "|java+method:///java/util/Set/add(java.lang.Object)|",
+      "|java+method:///org/springframework/ldap/core/support/LdapContextSource/afterPropertiesSet()|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+method:///org/springframework/ldap/test/LdapTestUtils/startApacheDirectoryServer(int,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.util.Set)|",
+      "|java+method:///org/springframework/ldap/core/support/LdapContextSource/setAuthenticationSource(org.springframework.ldap.core.AuthenticationSource)|",
+      "|java+constructor:///org/springframework/ldap/core/DistinguishedName/DistinguishedName(java.lang.String)|",
+      "|java+constructor:///java/util/HashSet/HashSet()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/springframework/ldap/core/support/LdapContextSource/setUrl(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/springframework/ldap/test/LdapTestUtils/startEmbeddedServer(int,java.lang.String,java.lang.String)|",
+      "|java+method:///org/springframework/ldap/core/support/LdapContextSource/setPooled(boolean)|",
+      "|java+method:///org/springframework/ldap/core/support/LdapContextSource/setDirObjectFactory(java.lang.Class)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///org/springframework/ldap/core/support/LdapContextSource/LdapContextSource()|",
+      "|java+method:///org/springframework/ldap/test/LdapTestUtils/loadLdif(org.springframework.ldap.core.ContextSource,org.springframework.core.io.Resource)|",
+      "|java+method:///org/springframework/ldap/core/support/LdapContextSource/setBase(java.lang.String)|",
+      "|java+method:///org/springframework/ldap/core/support/LdapContextSource/setUserDn(java.lang.String)|",
+      "|java+method:///org/springframework/ldap/core/support/LdapContextSource/setAuthenticationSource(org.springframework.ldap.core.AuthenticationSource)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/springframework/ldap/core/support/LdapContextSource/setPassword(java.lang.String)|",
+      "|java+method:///org/springframework/ldap/test/LdapTestUtils/clearSubContexts(org.springframework.ldap.core.ContextSource,javax.naming.Name)|",
+      "|java+constructor:///org/springframework/ldap/core/DistinguishedName/DistinguishedName(java.lang.String)|",
+      "|java+method:///org/springframework/ldap/core/support/LdapContextSource/afterPropertiesSet()|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/springframework/ldap/core/support/LdapContextSource/setUrl(java.lang.String)|"
+    ],
+    "affectedLib": "org.springframework.ldap:spring-ldap-core:1.3.2.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.springframework.ldap:spring-ldap-test:1.3.1.RELEASE",
+    "coordinatesV2": "org.springframework.ldap:spring-ldap-test:1.3.2.RELEASE",
+    "caller": "|java+method:///org/springframework/ldap/test/LdapTestUtils/loadLdif(javax.naming.directory.DirContext,org.springframework.core.io.Resource)|",
+    "called": "|java+method:///org/springframework/ldap/core/DistinguishedName/removeFirst(javax.naming.Name)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/io/IOUtils/copy(java.io.InputStream,java.io.OutputStream)|",
+      "|java+method:///org/springframework/core/io/Resource/getInputStream()|",
+      "|java+method:///java/io/File/getAbsolutePath()|",
+      "|java+method:///org/apache/directory/server/protocol/shared/store/LdifFileLoader/execute()|",
+      "|java+method:///java/io/File/createTempFile(java.lang.String,java.lang.String)|",
+      "|java+constructor:///org/apache/directory/server/protocol/shared/store/LdifFileLoader/LdifFileLoader(javax.naming.directory.DirContext,java.lang.String)|",
+      "|java+method:///java/io/File/delete()|",
+      "|java+constructor:///java/io/FileOutputStream/FileOutputStream(java.io.File)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/springframework/ldap/ldif/parser/LdifParser/open()|",
+      "|java+constructor:///org/springframework/ldap/ldif/parser/LdifParser/LdifParser(org.springframework.core.io.Resource)|",
+      "|java+method:///java/util/Hashtable/get(java.lang.Object)|",
+      "|java+method:///org/springframework/ldap/ldif/parser/LdifParser/hasMoreRecords()|",
+      "|java+method:///org/springframework/ldap/core/DistinguishedName/removeFirst(javax.naming.Name)|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/springframework/ldap/core/LdapAttributes/getDN()|",
+      "|java+method:///org/springframework/ldap/ldif/parser/LdifParser/getRecord()|",
+      "|java+method:///javax/naming/directory/DirContext/getEnvironment()|",
+      "|java+method:///javax/naming/directory/DirContext/bind(javax.naming.Name,java.lang.Object,javax.naming.directory.Attributes)|"
+    ],
+    "affectedLib": "org.springframework.ldap:spring-ldap-core:1.3.2.RELEASE",
+    "change": "UPDATED"
+  }
+]

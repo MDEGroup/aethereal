@@ -1,0 +1,227 @@
+[
+  {
+    "coordinatesV1": "de.otto:hmac-auth-client:1.2.0",
+    "coordinatesV2": "de.otto:hmac-auth-client:1.2.9",
+    "caller": "|java+constructor:///de/otto/hmac/authentication/HMACJerseyClient/HMACJerseyClient(com.sun.jersey.api.client.config.ClientConfig)|",
+    "called": "|java+constructor:///com/sun/jersey/client/apache4/ApacheHttpClient4/ApacheHttpClient4(com.sun.jersey.client.apache4.ApacheHttpClient4Handler)|",
+    "v1Body": [
+      "|java+method:///de/otto/hmac/authentication/HMACJerseyClient/createDefaultClientHander(com.sun.jersey.api.client.config.ClientConfig)|",
+      "|java+constructor:///com/sun/jersey/client/apache/ApacheHttpClient/ApacheHttpClient(com.sun.jersey.client.apache.ApacheHttpClientHandler,com.sun.jersey.core.spi.component.ioc.IoCComponentProviderFactory)|"
+    ],
+    "v2Body": [
+      "|java+method:///de/otto/hmac/authentication/HMACJerseyClient/createDefaultClientHander(com.sun.jersey.api.client.config.ClientConfig)|",
+      "|java+constructor:///com/sun/jersey/client/apache4/ApacheHttpClient4/ApacheHttpClient4(com.sun.jersey.client.apache4.ApacheHttpClient4Handler)|",
+      "|java+method:///com/google/common/io/ByteSource/empty()|"
+    ],
+    "affectedLib": "com.sun.jersey.contribs:jersey-apache-client4:1.18.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "de.otto:hmac-auth-client:1.2.0",
+    "coordinatesV2": "de.otto:hmac-auth-client:1.2.9",
+    "caller": "|java+method:///de/otto/hmac/authentication/HMACJerseyClient/createDefaultClientHander(com.sun.jersey.api.client.config.ClientConfig)|",
+    "called": "|java+constructor:///com/sun/jersey/client/apache4/ApacheHttpClient4Handler/ApacheHttpClient4Handler(org.apache.http.client.HttpClient,org.apache.http.client.CookieStore,boolean)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/commons/httpclient/MultiThreadedHttpConnectionManager/MultiThreadedHttpConnectionManager()|",
+      "|java+constructor:///org/apache/commons/httpclient/HttpClient/HttpClient(org.apache.commons.httpclient.HttpConnectionManager)|",
+      "|java+constructor:///com/sun/jersey/client/apache/ApacheHttpClientHandler/ApacheHttpClientHandler(org.apache.commons.httpclient.HttpClient,com.sun.jersey.api.client.config.ClientConfig)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/http/impl/conn/tsccm/ThreadSafeClientConnManager/setDefaultMaxPerRoute(int)|",
+      "|java+constructor:///com/sun/jersey/client/apache4/ApacheHttpClient4Handler/ApacheHttpClient4Handler(org.apache.http.client.HttpClient,org.apache.http.client.CookieStore,boolean)|",
+      "|java+constructor:///org/apache/http/impl/client/DefaultHttpClient/DefaultHttpClient(org.apache.http.conn.ClientConnectionManager,org.apache.http.params.HttpParams)|",
+      "|java+constructor:///org/apache/http/impl/conn/tsccm/ThreadSafeClientConnManager/ThreadSafeClientConnManager()|",
+      "|java+method:///org/apache/http/impl/conn/tsccm/ThreadSafeClientConnManager/setMaxTotal(int)|",
+      "|java+constructor:///org/apache/http/params/BasicHttpParams/BasicHttpParams()|"
+    ],
+    "affectedLib": "com.sun.jersey.contribs:jersey-apache-client4:1.18.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "de.otto:hmac-auth-client:1.2.0",
+    "coordinatesV2": "de.otto:hmac-auth-client:1.2.9",
+    "caller": "|java+method:///de/otto/hmac/authentication/HMACJerseyClient/create()|",
+    "called": "|java+constructor:///com/sun/jersey/client/apache4/config/DefaultApacheHttpClient4Config/DefaultApacheHttpClient4Config()|",
+    "v1Body": [
+      "|java+method:///de/otto/hmac/authentication/HMACJerseyClient/create(com.sun.jersey.api.client.config.ClientConfig)|",
+      "|java+constructor:///com/sun/jersey/client/apache/config/DefaultApacheHttpClientConfig/DefaultApacheHttpClientConfig()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/sun/jersey/client/apache4/config/DefaultApacheHttpClient4Config/DefaultApacheHttpClient4Config()|",
+      "|java+constructor:///de/otto/hmac/authentication/HMACJerseyClient/HMACJerseyClient(com.sun.jersey.api.client.config.ClientConfig)|"
+    ],
+    "affectedLib": "com.sun.jersey.contribs:jersey-apache-client4:1.18.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "de.otto:hmac-auth-client:1.2.0",
+    "coordinatesV2": "de.otto:hmac-auth-client:1.2.9",
+    "caller": "|java+method:///de/otto/hmac/authentication/HMACJerseyClient/authenticatedResource(java.lang.String)|",
+    "called": "|java+method:///com/sun/jersey/api/client/WebResource/header(java.lang.String,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///de/otto/hmac/authentication/HMACJerseyClient/resource(java.lang.String)|",
+      "|java+method:///de/otto/hmac/authentication/RequestSigningUtil/createRequestSignature(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///de/otto/hmac/authentication/HMACJerseyClient/assertAuthentificationPossible()|",
+      "|java+method:///com/sun/jersey/api/client/WebResource$Builder/header(java.lang.String,java.lang.Object)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder(java.lang.String)|",
+      "|java+constructor:///org/joda/time/DateTime/DateTime()|",
+      "|java+method:///com/sun/jersey/api/client/WebResource/header(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/joda/time/DateTime/toString()|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "v2Body": [
+      "|java+method:///de/otto/hmac/authentication/HMACJerseyClient/resource(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///de/otto/hmac/authentication/HMACJerseyClient/assertAuthentificationPossible()|",
+      "|java+method:///com/sun/jersey/api/client/WebResource$Builder/header(java.lang.String,java.lang.Object)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder(java.lang.String)|",
+      "|java+constructor:///org/joda/time/DateTime/DateTime()|",
+      "|java+method:///de/otto/hmac/authentication/RequestSigningUtil/createRequestSignature(java.lang.String,java.lang.String,java.lang.String,com.google.common.io.ByteSource,java.lang.String)|",
+      "|java+method:///com/sun/jersey/api/client/WebResource/header(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/joda/time/DateTime/toString()|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "affectedLib": "com.sun.jersey:jersey-client:1.18.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "de.otto:hmac-auth-client:1.2.0",
+    "coordinatesV2": "de.otto:hmac-auth-client:1.2.9",
+    "caller": "|java+method:///de/otto/hmac/authentication/HMACJerseyClient/assertAuthentificationPossible()|",
+    "called": "|java+method:///de/otto/hmac/StringUtils/isNullOrEmpty(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/springframework/util/Assert/isTrue(boolean,java.lang.String)|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///de/otto/hmac/StringUtils/isNullOrEmpty(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///de/otto/hmac/authentication/HMACJerseyClient/isNullOrEmpty(com.google.common.io.ByteSource)|",
+      "|java+method:///org/springframework/util/Assert/isTrue(boolean,java.lang.String)|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///de/otto/hmac/StringUtils/isNullOrEmpty(java.lang.String)|"
+    ],
+    "affectedLib": "de.otto:hmac-auth-common:1.2.9",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "de.otto:hmac-auth-client:1.2.0",
+    "coordinatesV2": "de.otto:hmac-auth-client:1.2.9",
+    "caller": "|java+method:///de/otto/hmac/authentication/HMACJerseyClient/authenticatedResource(java.lang.String)|",
+    "called": "|java+method:///de/otto/hmac/authentication/RequestSigningUtil/createRequestSignature(java.lang.String,java.lang.String,java.lang.String,com.google.common.io.ByteSource,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///de/otto/hmac/authentication/HMACJerseyClient/resource(java.lang.String)|",
+      "|java+method:///de/otto/hmac/authentication/RequestSigningUtil/createRequestSignature(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///de/otto/hmac/authentication/HMACJerseyClient/assertAuthentificationPossible()|",
+      "|java+method:///com/sun/jersey/api/client/WebResource$Builder/header(java.lang.String,java.lang.Object)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder(java.lang.String)|",
+      "|java+constructor:///org/joda/time/DateTime/DateTime()|",
+      "|java+method:///com/sun/jersey/api/client/WebResource/header(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/joda/time/DateTime/toString()|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "v2Body": [
+      "|java+method:///de/otto/hmac/authentication/HMACJerseyClient/resource(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///de/otto/hmac/authentication/HMACJerseyClient/assertAuthentificationPossible()|",
+      "|java+method:///com/sun/jersey/api/client/WebResource$Builder/header(java.lang.String,java.lang.Object)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder(java.lang.String)|",
+      "|java+constructor:///org/joda/time/DateTime/DateTime()|",
+      "|java+method:///de/otto/hmac/authentication/RequestSigningUtil/createRequestSignature(java.lang.String,java.lang.String,java.lang.String,com.google.common.io.ByteSource,java.lang.String)|",
+      "|java+method:///com/sun/jersey/api/client/WebResource/header(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/joda/time/DateTime/toString()|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "affectedLib": "de.otto:hmac-auth-common:1.2.9",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "de.otto:hmac-auth-client:1.2.0",
+    "coordinatesV2": "de.otto:hmac-auth-client:1.2.9",
+    "caller": "|java+method:///de/otto/hmac/authentication/jersey/filter/HMACJerseyOutputStreamWrapper/close()|",
+    "called": "|java+constructor:///org/joda/time/Instant/Instant()|",
+    "v1Body": [
+      "|java+method:///java/io/OutputStream/close()|",
+      "|java+constructor:///org/joda/time/Instant/Instant()|",
+      "|java+method:///de/otto/hmac/authentication/jersey/filter/HMACJerseyClientFilter/addHmacHttpRequestHeaders(com.sun.jersey.api.client.ClientRequest,java.lang.String,java.lang.String,org.joda.time.Instant,byte%5B%5D)|",
+      "|java+method:///java/io/ByteArrayOutputStream/toByteArray()|",
+      "|java+method:///java/io/ByteArrayOutputStream/close()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/io/OutputStream/close()|",
+      "|java+method:///com/google/common/io/ByteSource/openBufferedStream()|",
+      "|java+method:///com/google/common/io/ByteStreams/copy(java.io.InputStream,java.io.OutputStream)|",
+      "|java+method:///com/google/common/io/FileBackedOutputStream/asByteSource()|",
+      "|java+method:///java/io/InputStream/close()|",
+      "|java+method:///de/otto/hmac/authentication/jersey/filter/HMACJerseyClientFilter/addHmacHttpRequestHeaders(com.sun.jersey.api.client.ClientRequest,java.lang.String,java.lang.String,org.joda.time.Instant,com.google.common.io.ByteSource)|",
+      "|java+method:///com/google/common/io/FileBackedOutputStream/close()|",
+      "|java+constructor:///org/joda/time/Instant/Instant()|",
+      "|java+method:///java/lang/Throwable/addSuppressed(java.lang.Throwable)|",
+      "|java+method:///java/io/OutputStream/flush()|"
+    ],
+    "affectedLib": "joda-time:joda-time:2.5",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "de.otto:hmac-auth-client:1.2.0",
+    "coordinatesV2": "de.otto:hmac-auth-client:1.2.9",
+    "caller": "|java+method:///de/otto/hmac/authentication/jersey/filter/HMACJerseyClientFilter/handle(com.sun.jersey.api.client.ClientRequest)|",
+    "called": "|java+constructor:///org/joda/time/Instant/Instant()|",
+    "v1Body": [
+      "|java+method:///java/lang/String/equalsIgnoreCase(java.lang.String)|",
+      "|java+method:///com/sun/jersey/api/client/ClientRequest/getMethod()|",
+      "|java+method:///com/sun/jersey/api/client/ClientRequest/setAdapter(com.sun.jersey.api.client.ClientRequestAdapter)|",
+      "|java+method:///com/sun/jersey/api/client/ClientHandler/handle(com.sun.jersey.api.client.ClientRequest)|",
+      "|java+method:///de/otto/hmac/authentication/jersey/filter/HMACJerseyClientFilter/addHmacHttpRequestHeaders(com.sun.jersey.api.client.ClientRequest,java.lang.String,java.lang.String,org.joda.time.Instant,byte%5B%5D)|",
+      "|java+constructor:///de/otto/hmac/authentication/jersey/filter/HMACJerseyClientRequestAdapter/HMACJerseyClientRequestAdapter(java.lang.String,java.lang.String)|",
+      "|java+constructor:///org/joda/time/Instant/Instant()|",
+      "|java+method:///de/otto/hmac/authentication/jersey/filter/HMACJerseyClientFilter/getNext()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/String/equalsIgnoreCase(java.lang.String)|",
+      "|java+method:///com/sun/jersey/api/client/ClientRequest/getMethod()|",
+      "|java+method:///com/sun/jersey/api/client/ClientRequest/setAdapter(com.sun.jersey.api.client.ClientRequestAdapter)|",
+      "|java+method:///com/google/common/io/ByteSource/empty()|",
+      "|java+method:///com/sun/jersey/api/client/ClientHandler/handle(com.sun.jersey.api.client.ClientRequest)|",
+      "|java+method:///de/otto/hmac/authentication/jersey/filter/HMACJerseyClientFilter/addHmacHttpRequestHeaders(com.sun.jersey.api.client.ClientRequest,java.lang.String,java.lang.String,org.joda.time.Instant,com.google.common.io.ByteSource)|",
+      "|java+constructor:///de/otto/hmac/authentication/jersey/filter/HMACJerseyClientRequestAdapter/HMACJerseyClientRequestAdapter(java.lang.String,java.lang.String)|",
+      "|java+constructor:///org/joda/time/Instant/Instant()|",
+      "|java+method:///de/otto/hmac/authentication/jersey/filter/HMACJerseyClientFilter/getNext()|"
+    ],
+    "affectedLib": "joda-time:joda-time:2.5",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "de.otto:hmac-auth-client:1.2.0",
+    "coordinatesV2": "de.otto:hmac-auth-client:1.2.9",
+    "caller": "|java+method:///de/otto/hmac/authentication/HMACJerseyClient/authenticatedResource(java.lang.String)|",
+    "called": "|java+constructor:///org/joda/time/DateTime/DateTime()|",
+    "v1Body": [
+      "|java+method:///de/otto/hmac/authentication/HMACJerseyClient/resource(java.lang.String)|",
+      "|java+method:///de/otto/hmac/authentication/RequestSigningUtil/createRequestSignature(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///de/otto/hmac/authentication/HMACJerseyClient/assertAuthentificationPossible()|",
+      "|java+method:///com/sun/jersey/api/client/WebResource$Builder/header(java.lang.String,java.lang.Object)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder(java.lang.String)|",
+      "|java+constructor:///org/joda/time/DateTime/DateTime()|",
+      "|java+method:///com/sun/jersey/api/client/WebResource/header(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/joda/time/DateTime/toString()|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "v2Body": [
+      "|java+method:///de/otto/hmac/authentication/HMACJerseyClient/resource(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///de/otto/hmac/authentication/HMACJerseyClient/assertAuthentificationPossible()|",
+      "|java+method:///com/sun/jersey/api/client/WebResource$Builder/header(java.lang.String,java.lang.Object)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder(java.lang.String)|",
+      "|java+constructor:///org/joda/time/DateTime/DateTime()|",
+      "|java+method:///de/otto/hmac/authentication/RequestSigningUtil/createRequestSignature(java.lang.String,java.lang.String,java.lang.String,com.google.common.io.ByteSource,java.lang.String)|",
+      "|java+method:///com/sun/jersey/api/client/WebResource/header(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/joda/time/DateTime/toString()|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "affectedLib": "joda-time:joda-time:2.5",
+    "change": "UPDATED"
+  }
+]

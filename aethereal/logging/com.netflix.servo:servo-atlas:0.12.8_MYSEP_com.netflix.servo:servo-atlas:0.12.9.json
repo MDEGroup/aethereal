@@ -1,0 +1,22 @@
+[
+  {
+    "coordinatesV1": "com.netflix.servo:servo-atlas:0.12.8",
+    "coordinatesV2": "com.netflix.servo:servo-atlas:0.12.9",
+    "caller": "|java+constructor:///com/netflix/servo/publish/atlas/AtlasMetricObserver/AtlasMetricObserver(com.netflix.servo.publish.atlas.ServoAtlasConfig,com.netflix.servo.tag.TagList,int)|",
+    "called": "|java+constructor:///iep/com/netflix/iep/http/BasicServerRegistry/BasicServerRegistry()|",
+    "v1Body": [
+      "|java+constructor:///iep/com/netflix/iep/http/RxHttp/RxHttp(iep.com.netflix.iep.http.ServerRegistry)|",
+      "|java+constructor:///iep/com/netflix/iep/http/BasicServerRegistry/BasicServerRegistry()|",
+      "|java+constructor:///com/netflix/servo/publish/atlas/HttpHelper/HttpHelper(iep.com.netflix.iep.http.RxHttp)|",
+      "|java+constructor:///com/netflix/servo/publish/atlas/AtlasMetricObserver/AtlasMetricObserver(com.netflix.servo.publish.atlas.ServoAtlasConfig,com.netflix.servo.tag.TagList,int,com.netflix.servo.publish.atlas.HttpHelper)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///iep/com/netflix/iep/http/BasicServerRegistry/BasicServerRegistry()|",
+      "|java+constructor:///iep/com/netflix/iep/http/RxHttp/RxHttp(com.netflix.archaius.api.Config,iep.com.netflix.iep.http.ServerRegistry)|",
+      "|java+constructor:///com/netflix/servo/publish/atlas/HttpHelper/HttpHelper(iep.com.netflix.iep.http.RxHttp)|",
+      "|java+constructor:///com/netflix/servo/publish/atlas/AtlasMetricObserver/AtlasMetricObserver(com.netflix.servo.publish.atlas.ServoAtlasConfig,com.netflix.servo.tag.TagList,int,com.netflix.servo.publish.atlas.HttpHelper)|"
+    ],
+    "affectedLib": "com.netflix.iep-shadow:iepshadow-iep-rxhttp:0.4.6.26",
+    "change": "UPDATED"
+  }
+]

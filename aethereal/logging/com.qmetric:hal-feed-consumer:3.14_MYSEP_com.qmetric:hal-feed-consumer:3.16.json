@@ -1,0 +1,84 @@
+[
+  {
+    "coordinatesV1": "com.qmetric:hal-feed-consumer:3.16",
+    "coordinatesV2": "com.qmetric:hal-feed-consumer:3.14",
+    "caller": "|java+method:///com/qmetric/feed/consumer/FeedConsumerConfiguration/withAuthenticationCredentials(com.qmetric.feed.consumer.FeedConsumerConfiguration$Credentials)|",
+    "called": "|java+method:///org/glassfish/jersey/client/authentication/HttpAuthenticationFeature/basicBuilder()|",
+    "v1Body": [
+      "|java+method:///org/glassfish/jersey/client/authentication/HttpAuthenticationFeature$BasicBuilder/credentials(java.lang.String,byte%5B%5D)|",
+      "|java+method:///org/glassfish/jersey/client/authentication/HttpAuthenticationFeature/basicBuilder()|",
+      "|java+method:///org/glassfish/jersey/client/authentication/HttpAuthenticationFeature$Builder/build()|",
+      "|java+method:///javax/ws/rs/client/Client/register(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/qmetric/feed/consumer/FeedConsumerConfiguration/updateFeedClient(org.apache.http.client.HttpClient)|",
+      "|java+method:///com/qmetric/feed/consumer/FeedConsumerConfiguration/defaultFeedClientWithBasicAuth(com.qmetric.feed.consumer.FeedConsumerConfiguration$Credentials)|"
+    ],
+    "affectedLib": "org.glassfish.jersey.core:jersey-client:2.17",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.qmetric:hal-feed-consumer:3.14",
+    "coordinatesV2": "com.qmetric:hal-feed-consumer:3.16",
+    "caller": "|java+method:///com/qmetric/feed/consumer/FeedEndpoint/get()|",
+    "called": "|java+constructor:///org/apache/http/client/methods/HttpGet/HttpGet(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///com/google/common/base/Optional/absent()|",
+      "|java+method:///org/apache/commons/lang3/StringUtils/containsIgnoreCase(java.lang.CharSequence,java.lang.CharSequence)|",
+      "|java+method:///com/google/common/base/Optional/of(java.lang.Object)|",
+      "|java+method:///javax/ws/rs/core/Response/getStatus()|",
+      "|java+method:///com/google/common/base/Preconditions/checkState(boolean,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+constructor:///java/io/InputStreamReader/InputStreamReader(java.io.InputStream)|",
+      "|java+method:///javax/ws/rs/core/Response/readEntity(java.lang.Class)|",
+      "|java+method:///javax/ws/rs/core/Response$Status/getStatusCode()|",
+      "|java+method:///com/qmetric/feed/consumer/FeedEndpoint/getResponse()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/common/base/Optional/absent()|",
+      "|java+method:///org/apache/http/HttpResponse/getStatusLine()|",
+      "|java+method:///org/apache/http/util/EntityUtils/consumeQuietly(org.apache.http.HttpEntity)|",
+      "|java+method:///org/apache/http/client/HttpClient/execute(org.apache.http.client.methods.HttpUriRequest)|",
+      "|java+method:///org/apache/commons/lang3/StringUtils/containsIgnoreCase(java.lang.CharSequence,java.lang.CharSequence)|",
+      "|java+method:///org/apache/http/util/EntityUtils/toString(org.apache.http.HttpEntity)|",
+      "|java+method:///com/google/common/base/Optional/of(java.lang.Object)|",
+      "|java+method:///org/apache/http/util/EntityUtils/toString(org.apache.http.HttpEntity,java.nio.charset.Charset)|",
+      "|java+constructor:///java/io/StringReader/StringReader(java.lang.String)|",
+      "|java+method:///com/google/common/base/Preconditions/checkState(boolean,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///com/qmetric/feed/consumer/FeedEndpoint/check(org.apache.http.StatusLine)|",
+      "|java+method:///org/apache/http/StatusLine/getStatusCode()|",
+      "|java+method:///java/nio/charset/Charset/forName(java.lang.String)|",
+      "|java+method:///org/apache/http/HttpResponse/getEntity()|",
+      "|java+constructor:///org/apache/http/client/methods/HttpGet/HttpGet(java.lang.String)|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String,java.lang.Throwable)|"
+    ],
+    "affectedLib": "org.apache.httpcomponents:httpclient:4.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.qmetric:hal-feed-consumer:3.14",
+    "coordinatesV2": "com.qmetric:hal-feed-consumer:3.16",
+    "caller": "|java+method:///com/qmetric/feed/consumer/metrics/FeedConnectivityHealthCheck/check()|",
+    "called": "|java+constructor:///org/apache/http/client/methods/HttpGet/HttpGet(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///com/codahale/metrics/health/HealthCheck$Result/unhealthy(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///com/codahale/metrics/health/HealthCheck$Result/healthy(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///javax/ws/rs/core/Response/getStatus()|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///javax/ws/rs/client/Client/target(java.lang.String)|",
+      "|java+method:///javax/ws/rs/client/Invocation$Builder/get(java.lang.Class)|",
+      "|java+method:///javax/ws/rs/client/WebTarget/request(java.lang.String%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/http/HttpResponse/getStatusLine()|",
+      "|java+method:///org/apache/http/client/HttpClient/execute(org.apache.http.client.methods.HttpUriRequest)|",
+      "|java+method:///com/codahale/metrics/health/HealthCheck$Result/unhealthy(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///com/codahale/metrics/health/HealthCheck$Result/healthy(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///org/apache/http/client/utils/HttpClientUtils/closeQuietly(org.apache.http.HttpResponse)|",
+      "|java+method:///org/apache/http/StatusLine/getStatusCode()|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+constructor:///org/apache/http/client/methods/HttpGet/HttpGet(java.lang.String)|"
+    ],
+    "affectedLib": "org.apache.httpcomponents:httpclient:4.5",
+    "change": "ADDED"
+  }
+]

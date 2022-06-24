@@ -1,0 +1,20 @@
+[
+  {
+    "coordinatesV1": "org.kill-bill.billing:killbill-platform-test:0.0.8",
+    "coordinatesV2": "org.kill-bill.billing:killbill-platform-test:0.0.9",
+    "caller": "|java+method:///org/killbill/billing/platform/test/PlatformDBTestingHelper/getDBI()|",
+    "called": "|java+method:///org/killbill/commons/jdbi/guice/DBIProvider/get()|",
+    "v1Body": [
+      "|java+constructor:///org/killbill/commons/jdbi/guice/DBIProvider/DBIProvider(org.killbill.commons.jdbi.guice.DaoConfig,javax.sql.DataSource)|",
+      "|java+method:///org/killbill/commons/jdbi/guice/DBIProvider/get()|",
+      "|java+method:///org/killbill/billing/platform/test/PlatformDBTestingHelper/getDataSource()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/killbill/commons/jdbi/guice/DBIProvider/get()|",
+      "|java+constructor:///org/killbill/commons/jdbi/guice/DBIProvider/DBIProvider(org.killbill.commons.jdbi.guice.DaoConfig,javax.sql.DataSource,org.skife.jdbi.v2.tweak.TransactionHandler)|",
+      "|java+method:///org/killbill/billing/platform/test/PlatformDBTestingHelper/getDataSource()|"
+    ],
+    "affectedLib": "org.kill-bill.commons:killbill-jdbi:0.2.21",
+    "change": "ADDED"
+  }
+]

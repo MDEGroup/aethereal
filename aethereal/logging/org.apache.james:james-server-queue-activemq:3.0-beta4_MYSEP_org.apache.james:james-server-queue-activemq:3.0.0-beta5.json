@@ -1,0 +1,103 @@
+[
+  {
+    "coordinatesV1": "org.apache.james:james-server-queue-activemq:3.0-beta4",
+    "coordinatesV2": "org.apache.james:james-server-queue-activemq:3.0.0-beta5",
+    "caller": "|java+method:///org/apache/james/queue/activemq/ActiveMQMailQueue/removeWithSelector(java.lang.String)|",
+    "called": "|java+method:///org/apache/activemq/command/ActiveMQBlobMessage/deleteFile()|",
+    "v1Body": [
+      "|java+method:///org/apache/activemq/command/ActiveMQBlobMessage/deleteFile()|",
+      "|java+method:///org/apache/james/queue/jms/JMSMailQueue/removeWithSelector(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/util/List/size()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/util/List/get(int)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/activemq/command/ActiveMQBlobMessage/deleteFile()|",
+      "|java+method:///org/apache/james/queue/jms/JMSMailQueue/removeWithSelector(java.lang.String)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "affectedLib": "org.apache.activemq:activemq-core:5.7.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.james:james-server-queue-activemq:3.0-beta4",
+    "coordinatesV2": "org.apache.james:james-server-queue-activemq:3.0.0-beta5",
+    "caller": "|java+method:///org/apache/james/queue/activemq/FileSystemBlobStrategy/getFile(org.apache.activemq.command.ActiveMQBlobMessage)|",
+    "called": "|java+method:///org/apache/activemq/command/ActiveMQBlobMessage/getURL()|",
+    "v1Body": [
+      "|java+method:///org/apache/activemq/command/ActiveMQBlobMessage/getJMSMessageID()|",
+      "|java+method:///org/apache/activemq/blob/BlobTransferPolicy/getUploadUrl()|",
+      "|java+constructor:///java/io/IOException/IOException(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+method:///java/io/File/exists()|",
+      "|java+method:///java/lang/Math/random()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/io/File/mkdirs()|",
+      "|java+method:///org/apache/james/filesystem/api/FileSystem/getFile(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/net/URL/toString()|",
+      "|java+method:///java/lang/String/replaceAll(java.lang.String,java.lang.String)|",
+      "|java+method:///org/apache/activemq/command/ActiveMQBlobMessage/getURL()|",
+      "|java+method:///java/io/File/getAbsolutePath()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/activemq/command/ActiveMQBlobMessage/getJMSMessageID()|",
+      "|java+method:///org/apache/activemq/blob/BlobTransferPolicy/getUploadUrl()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+method:///org/apache/commons/io/FileUtils/forceMkdir(java.io.File)|",
+      "|java+method:///java/lang/Math/random()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/apache/activemq/command/ActiveMQBlobMessage/getURL()|",
+      "|java+method:///org/apache/james/filesystem/api/FileSystem/getFile(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/net/URL/toString()|",
+      "|java+method:///java/lang/String/replaceAll(java.lang.String,java.lang.String)|"
+    ],
+    "affectedLib": "org.apache.activemq:activemq-core:5.7.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.james:james-server-queue-activemq:3.0-beta4",
+    "coordinatesV2": "org.apache.james:james-server-queue-activemq:3.0.0-beta5",
+    "caller": "|java+method:///org/apache/james/queue/activemq/ActiveMQMailQueue/removeWithSelector(java.lang.String)|",
+    "called": "|java+method:///org/apache/james/queue/jms/JMSMailQueue/removeWithSelector(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/apache/activemq/command/ActiveMQBlobMessage/deleteFile()|",
+      "|java+method:///org/apache/james/queue/jms/JMSMailQueue/removeWithSelector(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/util/List/size()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/util/List/get(int)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/activemq/command/ActiveMQBlobMessage/deleteFile()|",
+      "|java+method:///org/apache/james/queue/jms/JMSMailQueue/removeWithSelector(java.lang.String)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "affectedLib": "org.apache.james:james-server-queue-jms:3.0.0-beta5",
+    "change": "UPDATED"
+  }
+]

@@ -1,0 +1,46 @@
+[
+  {
+    "coordinatesV1": "com.ning.billing:killbill-catalog:0.1.10",
+    "coordinatesV2": "com.ning.billing:killbill-catalog:0.1.12",
+    "caller": "|java+method:///com/ning/billing/catalog/DefaultCatalogService/loadCatalog()|",
+    "called": "|java+constructor:///com/ning/billing/lifecycle/KillbillService$ServiceException/KillbillService$ServiceException(java.lang.Throwable)|",
+    "v1Body": [
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///com/ning/billing/lifecycle/KillbillService$ServiceException/KillbillService$ServiceException(java.lang.Throwable)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///com/ning/billing/config/CatalogConfig/getCatalogURI()|",
+      "|java+method:///com/ning/billing/catalog/io/VersionedCatalogLoader/load(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/io/PrintStream/println(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/ning/billing/lifecycle/KillbillService$ServiceException/KillbillService$ServiceException(java.lang.Throwable)|",
+      "|java+method:///com/ning/billing/config/CatalogConfig/getCatalogURI()|",
+      "|java+method:///com/ning/billing/catalog/io/VersionedCatalogLoader/load(java.lang.String)|"
+    ],
+    "affectedLib": "com.ning.billing:killbill-api:0.1.12",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.ning.billing:killbill-catalog:0.1.10",
+    "coordinatesV2": "com.ning.billing:killbill-catalog:0.1.12",
+    "caller": "|java+method:///com/ning/billing/catalog/StandaloneCatalog/findCurrentPlan(java.lang.String,com.ning.billing.catalog.api.BillingPeriod,java.lang.String)|",
+    "called": "|java+constructor:///com/ning/billing/catalog/api/CatalogApiException/CatalogApiException(com.ning.billing.ErrorCode,java.lang.Object%5B%5D)|",
+    "v1Body": [
+      "|java+method:///com/ning/billing/catalog/DefaultPriceListSet/getPlanListFrom(java.lang.String,com.ning.billing.catalog.api.Product,com.ning.billing.catalog.api.BillingPeriod)|",
+      "|java+constructor:///com/ning/billing/catalog/api/CatalogApiException/CatalogApiException(com.ning.billing.ErrorCode,java.lang.Object%5B%5D)|",
+      "|java+method:///com/ning/billing/catalog/api/BillingPeriod/toString()|",
+      "|java+method:///com/ning/billing/catalog/StandaloneCatalog/findCurrentProduct(java.lang.String)|",
+      "|java+method:///com/ning/billing/catalog/StandaloneCatalog/findCurrentPlan(java.lang.String,com.ning.billing.catalog.api.BillingPeriod,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/ning/billing/catalog/api/CatalogApiException/CatalogApiException(com.ning.billing.ErrorCode,java.lang.Object%5B%5D)|",
+      "|java+method:///com/ning/billing/catalog/StandaloneCatalog/findCurrentProduct(java.lang.String)|",
+      "|java+method:///com/ning/billing/catalog/StandaloneCatalog/findCurrentPlan(java.lang.String,com.ning.billing.catalog.api.BillingPeriod,java.lang.String)|",
+      "|java+method:///com/ning/billing/catalog/api/BillingPeriod/toString()|",
+      "|java+method:///com/ning/billing/catalog/DefaultPriceListSet/getPlanFrom(java.lang.String,com.ning.billing.catalog.api.Product,com.ning.billing.catalog.api.BillingPeriod)|"
+    ],
+    "affectedLib": "com.ning.billing:killbill-api:0.1.12",
+    "change": "UPDATED"
+  }
+]

@@ -1,0 +1,312 @@
+[
+  {
+    "coordinatesV1": "com.rempl.plugins:rempl-maven-plugin:1.1.1",
+    "coordinatesV2": "com.rempl.plugins:rempl-maven-plugin:1.1.2",
+    "caller": "|java+constructor:///com/rempl/maven/MavenResolver/MavenResolver(org.sonatype.aether.RepositorySystem,org.sonatype.aether.RepositorySystemSession,java.util.List)|",
+    "called": "|java+method:///com/ymock/util/Logger/debug(java.lang.Object,java.lang.String,java.lang.Object%5B%5D)|",
+    "v1Body": [
+      "|java+method:///com/rempl/api/Logger/debug(java.lang.Object,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/ymock/util/Logger/debug(java.lang.Object,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "com.ymock:ymock-util:1.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.rempl.plugins:rempl-maven-plugin:1.1.1",
+    "coordinatesV2": "com.rempl.plugins:rempl-maven-plugin:1.1.2",
+    "caller": "|java+method:///com/rempl/maven/MavenClassLoader/addURL(java.net.URL)|",
+    "called": "|java+method:///com/ymock/util/Logger/debug(java.lang.Object,java.lang.String,java.lang.Object%5B%5D)|",
+    "v1Body": [
+      "|java+method:///java/net/URLClassLoader/addURL(java.net.URL)|",
+      "|java+method:///org/apache/commons/lang/ArrayUtils/contains(java.lang.Object%5B%5D,java.lang.Object)|",
+      "|java+method:///com/rempl/maven/MavenClassLoader/getURLs()|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///java/net/URL/toString()|",
+      "|java+method:///com/rempl/api/Logger/debug(java.lang.Object,java.lang.String,java.lang.Object%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/ymock/util/Logger/debug(java.lang.Object,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///com/rempl/ExceptionLogging/aspectOf()|",
+      "|java+method:///com/rempl/ExceptionLogging/ajc$afterThrowing$com_rempl_ExceptionLogging$1$39b00f8(java.lang.Object,java.lang.Throwable)|",
+      "|java+method:///java/net/URL/toString()|",
+      "|java+method:///java/net/URLClassLoader/addURL(java.net.URL)|",
+      "|java+method:///org/apache/commons/lang/ArrayUtils/contains(java.lang.Object%5B%5D,java.lang.Object)|",
+      "|java+method:///com/rempl/maven/MavenClassLoader/getURLs()|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///com/rempl/MethodTracing/ajc$before$com_rempl_MethodTracing$1$39b00f8(java.lang.Object)|",
+      "|java+method:///com/rempl/NullCatcher/ajc$before$com_rempl_NullCatcher$1$39b00f8(java.lang.Object)|",
+      "|java+method:///com/rempl/MethodTracing/aspectOf()|",
+      "|java+method:///com/rempl/NullCatcher/aspectOf()|"
+    ],
+    "affectedLib": "com.ymock:ymock-util:1.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.rempl.plugins:rempl-maven-plugin:1.1.1",
+    "coordinatesV2": "com.rempl.plugins:rempl-maven-plugin:1.1.2",
+    "caller": "|java+method:///com/rempl/maven/MavenResolver/resolve(com.rempl.api.Artifact)|",
+    "called": "|java+method:///com/ymock/util/Logger/debug(java.lang.Object,java.lang.String,java.lang.Object%5B%5D)|",
+    "v1Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///com/rempl/api/Logger/debug(java.lang.Object,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///com/rempl/maven/MavenResolver/artifacts(com.rempl.api.Artifact)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/Collection/add(java.lang.Object)|",
+      "|java+method:///org/sonatype/aether/resolution/ArtifactResult/getArtifact()|",
+      "|java+method:///java/util/Collection/iterator()|",
+      "|java+method:///org/sonatype/aether/artifact/Artifact/getFile()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/ymock/util/Logger/debug(java.lang.Object,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///com/rempl/ExceptionLogging/aspectOf()|",
+      "|java+method:///com/rempl/ExceptionLogging/ajc$afterThrowing$com_rempl_ExceptionLogging$1$39b00f8(java.lang.Object,java.lang.Throwable)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///com/rempl/maven/MavenResolver/artifacts(com.rempl.api.Artifact)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/Collection/add(java.lang.Object)|",
+      "|java+method:///org/sonatype/aether/resolution/ArtifactResult/getArtifact()|",
+      "|java+method:///java/util/Collection/iterator()|",
+      "|java+method:///org/sonatype/aether/artifact/Artifact/getFile()|",
+      "|java+method:///com/rempl/MethodTracing/ajc$before$com_rempl_MethodTracing$1$39b00f8(java.lang.Object)|",
+      "|java+method:///com/rempl/NullCatcher/ajc$before$com_rempl_NullCatcher$1$39b00f8(java.lang.Object)|",
+      "|java+method:///com/rempl/MethodTracing/aspectOf()|",
+      "|java+method:///com/rempl/NullCatcher/aspectOf()|"
+    ],
+    "affectedLib": "com.ymock:ymock-util:1.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.rempl.plugins:rempl-maven-plugin:1.1.1",
+    "coordinatesV2": "com.rempl.plugins:rempl-maven-plugin:1.1.2",
+    "caller": "|java+method:///com/rempl/maven/MavenClassLoader/findClass(java.lang.String)|",
+    "called": "|java+method:///com/ymock/util/Logger/debug(java.lang.Object,java.lang.String,java.lang.Object%5B%5D)|",
+    "v1Body": [
+      "|java+method:///java/net/URLClassLoader/findClass(java.lang.String)|",
+      "|java+method:///com/rempl/api/Logger/debug(java.lang.Object,java.lang.String,java.lang.Object%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/ymock/util/Logger/debug(java.lang.Object,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///java/net/URLClassLoader/findClass(java.lang.String)|",
+      "|java+method:///com/rempl/NullCatcher/ajc$before$com_rempl_NullCatcher$1$39b00f8(java.lang.Object)|",
+      "|java+method:///com/rempl/NullCatcher/aspectOf()|"
+    ],
+    "affectedLib": "com.ymock:ymock-util:1.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.rempl.plugins:rempl-maven-plugin:1.1.1",
+    "coordinatesV2": "com.rempl.plugins:rempl-maven-plugin:1.1.2",
+    "caller": "|java+method:///com/rempl/maven/MavenLoader/inDirectory(java.io.File)|",
+    "called": "|java+method:///com/ymock/util/Logger/debug(java.lang.Object,java.lang.String,java.lang.Object%5B%5D)|",
+    "v1Body": [
+      "|java+constructor:///java/io/File/File(java.io.File,java.lang.String)|",
+      "|java+method:///org/apache/commons/io/FileUtils/readFileToString(java.io.File)|",
+      "|java+method:///com/rempl/api/Logger/debug(java.lang.Object,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///java/lang/String/length()|",
+      "|java+method:///java/io/File/exists()|",
+      "|java+constructor:///com/rempl/api/LoadingException/LoadingException(java.lang.Throwable)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/ymock/util/Logger/debug(java.lang.Object,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+constructor:///java/io/File/File(java.io.File,java.lang.String)|",
+      "|java+method:///org/apache/commons/io/FileUtils/readFileToString(java.io.File)|",
+      "|java+method:///java/lang/String/length()|",
+      "|java+method:///java/io/File/exists()|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///com/rempl/NullCatcher/aspectOf()|",
+      "|java+constructor:///com/rempl/api/LoadingException/LoadingException(java.lang.Throwable)|",
+      "|java+method:///com/rempl/NullCatcher/ajc$before$com_rempl_NullCatcher$1$39b00f8(java.lang.Object)|"
+    ],
+    "affectedLib": "com.ymock:ymock-util:1.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.rempl.plugins:rempl-maven-plugin:1.1.1",
+    "coordinatesV2": "com.rempl.plugins:rempl-maven-plugin:1.1.2",
+    "caller": "|java+constructor:///com/rempl/maven/MavenLoader/MavenLoader(com.rempl.maven.MavenResolver)|",
+    "called": "|java+constructor:///com/rempl/aether/AbstractAetherLoader/AbstractAetherLoader()|",
+    "v1Body": [
+      "|java+method:///java/lang/Thread/setContextClassLoader(java.lang.ClassLoader)|",
+      "|java+constructor:///com/rempl/maven/MavenLoader$Runner/MavenLoader$Runner(com.rempl.maven.MavenLoader$1)|",
+      "|java+method:///java/lang/Thread/currentThread()|",
+      "|java+constructor:///com/rempl/aether/AbstractAetherLoader/AbstractAetherLoader()|",
+      "|java+method:///java/security/AccessController/doPrivileged(java.security.PrivilegedAction)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Thread/setContextClassLoader(java.lang.ClassLoader)|",
+      "|java+constructor:///com/rempl/maven/MavenLoader$Runner/MavenLoader$Runner(com.rempl.maven.MavenLoader$Runner)|",
+      "|java+method:///java/lang/Thread/currentThread()|",
+      "|java+constructor:///com/rempl/aether/AbstractAetherLoader/AbstractAetherLoader()|",
+      "|java+method:///java/security/AccessController/doPrivileged(java.security.PrivilegedAction)|"
+    ],
+    "affectedLib": "com.rempl:rempl-aether:1.1.2",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.rempl.plugins:rempl-maven-plugin:1.1.1",
+    "coordinatesV2": "com.rempl.plugins:rempl-maven-plugin:1.1.2",
+    "caller": "|java+method:///com/rempl/maven/AbstractRemplMojo/rom()|",
+    "called": "|java+constructor:///com/rempl/api/ROM/ROM(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///com/rempl/maven/AbstractRemplMojo/romFile()|",
+      "|java+constructor:///org/apache/maven/plugin/MojoExecutionException/MojoExecutionException(java.lang.String)|",
+      "|java+constructor:///com/rempl/api/ROM/ROM(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///com/rempl/maven/AbstractRemplMojo/substitute(java.io.File)|",
+      "|java+constructor:///org/apache/maven/plugin/MojoExecutionException/MojoExecutionException(java.lang.String,java.lang.Exception)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/apache/maven/plugin/logging/Log/debug(java.lang.CharSequence)|",
+      "|java+method:///com/rempl/maven/AbstractRemplMojo/getLog()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///com/rempl/maven/AbstractRemplMojo/romFile()|",
+      "|java+constructor:///org/apache/maven/plugin/MojoExecutionException/MojoExecutionException(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder(java.lang.String)|",
+      "|java+constructor:///com/rempl/api/ROM/ROM(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///com/rempl/maven/AbstractRemplMojo/substitute(java.io.File)|",
+      "|java+constructor:///org/apache/maven/plugin/MojoExecutionException/MojoExecutionException(java.lang.String,java.lang.Exception)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/apache/maven/plugin/logging/Log/debug(java.lang.CharSequence)|",
+      "|java+method:///com/rempl/maven/AbstractRemplMojo/getLog()|"
+    ],
+    "affectedLib": "com.rempl:rempl-api:1.1.2",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.rempl.plugins:rempl-maven-plugin:1.1.1",
+    "coordinatesV2": "com.rempl.plugins:rempl-maven-plugin:1.1.2",
+    "caller": "|java+method:///com/rempl/maven/MavenResolver/artifacts(com.rempl.api.Artifact)|",
+    "called": "|java+constructor:///com/rempl/api/LoadingException/LoadingException(java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///org/sonatype/aether/util/filter/DependencyFilterUtils/classpathFilter(java.lang.String%5B%5D)|",
+      "|java+constructor:///com/rempl/api/LoadingException/LoadingException(java.lang.Throwable)|",
+      "|java+method:///org/sonatype/aether/RepositorySystem/resolveDependencies(org.sonatype.aether.RepositorySystemSession,org.sonatype.aether.collection.CollectRequest,org.sonatype.aether.graph.DependencyFilter)|",
+      "|java+method:///com/rempl/maven/MavenResolver/request(com.rempl.api.Artifact)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/sonatype/aether/util/filter/DependencyFilterUtils/classpathFilter(java.lang.String%5B%5D)|",
+      "|java+method:///org/sonatype/aether/RepositorySystem/resolveDependencies(org.sonatype.aether.RepositorySystemSession,org.sonatype.aether.collection.CollectRequest,org.sonatype.aether.graph.DependencyFilter)|",
+      "|java+method:///com/rempl/maven/MavenResolver/request(com.rempl.api.Artifact)|",
+      "|java+method:///com/rempl/NullCatcher/aspectOf()|",
+      "|java+constructor:///com/rempl/api/LoadingException/LoadingException(java.lang.Throwable)|",
+      "|java+method:///com/rempl/NullCatcher/ajc$before$com_rempl_NullCatcher$1$39b00f8(java.lang.Object)|"
+    ],
+    "affectedLib": "com.rempl:rempl-api:1.1.2",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.rempl.plugins:rempl-maven-plugin:1.1.1",
+    "coordinatesV2": "com.rempl.plugins:rempl-maven-plugin:1.1.2",
+    "caller": "|java+method:///com/rempl/maven/MavenResolver/request(com.rempl.api.Artifact)|",
+    "called": "|java+method:///com/rempl/api/Artifact/toString()|",
+    "v1Body": [
+      "|java+method:///org/sonatype/aether/collection/CollectRequest/addRepository(org.sonatype.aether.repository.RemoteRepository)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///com/rempl/api/Artifact/toString()|",
+      "|java+constructor:///org/sonatype/aether/collection/CollectRequest/CollectRequest()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+constructor:///org/sonatype/aether/graph/Dependency/Dependency(org.sonatype.aether.artifact.Artifact,java.lang.String)|",
+      "|java+constructor:///org/sonatype/aether/util/artifact/DefaultArtifact/DefaultArtifact(java.lang.String)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///org/sonatype/aether/collection/CollectRequest/setRoot(org.sonatype.aether.graph.Dependency)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/sonatype/aether/collection/CollectRequest/addRepository(org.sonatype.aether.repository.RemoteRepository)|",
+      "|java+method:///com/rempl/ExceptionLogging/aspectOf()|",
+      "|java+method:///com/rempl/ExceptionLogging/ajc$afterThrowing$com_rempl_ExceptionLogging$1$39b00f8(java.lang.Object,java.lang.Throwable)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///com/rempl/api/Artifact/toString()|",
+      "|java+constructor:///org/sonatype/aether/collection/CollectRequest/CollectRequest()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+constructor:///org/sonatype/aether/graph/Dependency/Dependency(org.sonatype.aether.artifact.Artifact,java.lang.String)|",
+      "|java+constructor:///org/sonatype/aether/util/artifact/DefaultArtifact/DefaultArtifact(java.lang.String)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///org/sonatype/aether/collection/CollectRequest/setRoot(org.sonatype.aether.graph.Dependency)|",
+      "|java+method:///com/rempl/MethodTracing/ajc$before$com_rempl_MethodTracing$1$39b00f8(java.lang.Object)|",
+      "|java+method:///com/rempl/NullCatcher/ajc$before$com_rempl_NullCatcher$1$39b00f8(java.lang.Object)|",
+      "|java+method:///com/rempl/MethodTracing/aspectOf()|",
+      "|java+method:///com/rempl/NullCatcher/aspectOf()|"
+    ],
+    "affectedLib": "com.rempl:rempl-api:1.1.2",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.rempl.plugins:rempl-maven-plugin:1.1.1",
+    "coordinatesV2": "com.rempl.plugins:rempl-maven-plugin:1.1.2",
+    "caller": "|java+method:///com/rempl/maven/MavenLoader/rom(java.util.Collection)|",
+    "called": "|java+constructor:///com/rempl/api/LoadingException/LoadingException(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///com/rempl/api/LoadingException/LoadingException(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///com/rempl/maven/MavenLoader/readRomFromJar(java.io.File)|",
+      "|java+method:///java/util/Collection/iterator()|",
+      "|java+method:///org/apache/commons/lang/StringUtils/join(java.util.Collection,java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/io/File/isDirectory()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///com/rempl/maven/MavenLoader/inDirectory(java.io.File)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder(java.lang.String)|",
+      "|java+constructor:///com/rempl/api/LoadingException/LoadingException(java.lang.String)|",
+      "|java+method:///com/rempl/NullCatcher/ajc$before$com_rempl_NullCatcher$1$39b00f8(java.lang.Object)|",
+      "|java+method:///com/rempl/maven/MavenLoader/readRomFromJar(java.io.File)|",
+      "|java+method:///java/util/Collection/iterator()|",
+      "|java+method:///org/apache/commons/lang/StringUtils/join(java.util.Collection,java.lang.String)|",
+      "|java+method:///com/rempl/NullCatcher/aspectOf()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/io/File/isDirectory()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///com/rempl/maven/MavenLoader/inDirectory(java.io.File)|"
+    ],
+    "affectedLib": "com.rempl:rempl-api:1.1.2",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.rempl.plugins:rempl-maven-plugin:1.1.1",
+    "coordinatesV2": "com.rempl.plugins:rempl-maven-plugin:1.1.2",
+    "caller": "|java+method:///com/rempl/maven/MavenLoader/inDirectory(java.io.File)|",
+    "called": "|java+constructor:///com/rempl/api/LoadingException/LoadingException(java.lang.Throwable)|",
+    "v1Body": [
+      "|java+constructor:///java/io/File/File(java.io.File,java.lang.String)|",
+      "|java+method:///org/apache/commons/io/FileUtils/readFileToString(java.io.File)|",
+      "|java+method:///com/rempl/api/Logger/debug(java.lang.Object,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///java/lang/String/length()|",
+      "|java+method:///java/io/File/exists()|",
+      "|java+constructor:///com/rempl/api/LoadingException/LoadingException(java.lang.Throwable)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/ymock/util/Logger/debug(java.lang.Object,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+constructor:///java/io/File/File(java.io.File,java.lang.String)|",
+      "|java+method:///org/apache/commons/io/FileUtils/readFileToString(java.io.File)|",
+      "|java+method:///java/lang/String/length()|",
+      "|java+method:///java/io/File/exists()|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///com/rempl/NullCatcher/aspectOf()|",
+      "|java+constructor:///com/rempl/api/LoadingException/LoadingException(java.lang.Throwable)|",
+      "|java+method:///com/rempl/NullCatcher/ajc$before$com_rempl_NullCatcher$1$39b00f8(java.lang.Object)|"
+    ],
+    "affectedLib": "com.rempl:rempl-api:1.1.2",
+    "change": "UPDATED"
+  }
+]

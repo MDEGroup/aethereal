@@ -1,0 +1,37 @@
+[
+  {
+    "coordinatesV1": "com.github.mongoutils:mongo-lucene:1.0",
+    "coordinatesV2": "com.github.mongoutils:mongo-lucene:1.1",
+    "caller": "|java+constructor:///com/github/mongoutils/lucene/MapDirectoryOutputStream/MapDirectoryOutputStream(com.github.mongoutils.lucene.MapDirectoryEntry,java.lang.String,java.util.concurrent.ConcurrentMap,int)|",
+    "called": "|java+constructor:///org/apache/lucene/store/BufferedChecksum/BufferedChecksum(java.util.zip.Checksum)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/lucene/store/IndexOutput/IndexOutput()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/util/zip/CRC32/CRC32()|",
+      "|java+constructor:///org/apache/lucene/store/IndexOutput/IndexOutput()|",
+      "|java+constructor:///org/apache/lucene/store/BufferedChecksum/BufferedChecksum(java.util.zip.Checksum)|"
+    ],
+    "affectedLib": "org.apache.lucene:lucene-core:4.9.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.github.mongoutils:mongo-lucene:1.0",
+    "coordinatesV2": "com.github.mongoutils:mongo-lucene:1.1",
+    "caller": "|java+constructor:///com/github/mongoutils/lucene/MapDirectory/MapDirectory(java.util.concurrent.ConcurrentMap,int)|",
+    "called": "|java+constructor:///org/apache/lucene/store/SingleInstanceLockFactory/SingleInstanceLockFactory()|",
+    "v1Body": [
+      "|java+constructor:///org/apache/lucene/store/Directory/Directory()|",
+      "|java+method:///com/github/mongoutils/lucene/MapDirectory/setLockFactory(org.apache.lucene.store.LockFactory)|",
+      "|java+constructor:///org/apache/lucene/store/SingleInstanceLockFactory/SingleInstanceLockFactory()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/util/concurrent/atomic/AtomicLong/AtomicLong()|",
+      "|java+constructor:///org/apache/lucene/store/BaseDirectory/BaseDirectory()|",
+      "|java+method:///com/github/mongoutils/lucene/MapDirectory/setLockFactory(org.apache.lucene.store.LockFactory)|",
+      "|java+constructor:///org/apache/lucene/store/SingleInstanceLockFactory/SingleInstanceLockFactory()|"
+    ],
+    "affectedLib": "org.apache.lucene:lucene-core:4.9.0",
+    "change": "UPDATED"
+  }
+]

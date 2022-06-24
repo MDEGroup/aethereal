@@ -1,0 +1,146 @@
+[
+  {
+    "coordinatesV1": "org.spark-project.hive.shims:hive-shims-common:0.13.1a",
+    "coordinatesV2": "org.spark-project.hive.shims:hive-shims-common:1.2.1.spark",
+    "caller": "|java+constructor:///org/apache/hadoop/hive/thrift/HadoopThriftAuthBridge$Server/HadoopThriftAuthBridge$Server()|",
+    "called": "|java+constructor:///org/apache/thrift/transport/TTransportException/TTransportException(java.lang.Throwable)|",
+    "v1Body": [
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/hadoop/security/UserGroupInformation/getCurrentUser()|",
+      "|java+constructor:///org/apache/thrift/transport/TTransportException/TTransportException(java.lang.Throwable)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "org.apache.thrift:libthrift:0.9.2",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.spark-project.hive.shims:hive-shims-common:0.13.1a",
+    "coordinatesV2": "org.spark-project.hive.shims:hive-shims-common:1.2.1.spark",
+    "caller": "|java+method:///org/apache/hadoop/hive/shims/ShimLoader/getMajorVersion()|",
+    "called": "|java+method:///org/apache/hadoop/util/VersionInfo/getVersion()|",
+    "v1Body": [
+      "|java+method:///java/lang/String/split(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/Integer/parseInt(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/Class/forName(java.lang.String)|",
+      "|java+method:///org/apache/hadoop/util/VersionInfo/getVersion()|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/hadoop/util/VersionInfo/getVersion()|",
+      "|java+method:///java/lang/String/split(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/Integer/parseInt(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String)|"
+    ],
+    "affectedLib": "org.apache.hadoop:hadoop-core:1.2.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.spark-project.hive.shims:hive-shims-common:0.13.1a",
+    "coordinatesV2": "org.spark-project.hive.shims:hive-shims-common:1.2.1.spark",
+    "caller": "|java+constructor:///org/apache/hadoop/hive/thrift/HadoopThriftAuthBridge$Server/HadoopThriftAuthBridge$Server()|",
+    "called": "|java+method:///org/apache/hadoop/security/UserGroupInformation/getCurrentUser()|",
+    "v1Body": [
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/hadoop/security/UserGroupInformation/getCurrentUser()|",
+      "|java+constructor:///org/apache/thrift/transport/TTransportException/TTransportException(java.lang.Throwable)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "org.apache.hadoop:hadoop-core:1.2.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.spark-project.hive.shims:hive-shims-common:0.13.1a",
+    "coordinatesV2": "org.spark-project.hive.shims:hive-shims-common:1.2.1.spark",
+    "caller": "|java+method:///org/apache/hadoop/hive/thrift/HadoopThriftAuthBridge/getHadoopSaslProperties(org.apache.hadoop.conf.Configuration)|",
+    "called": "|java+method:///org/apache/hadoop/security/SaslRpcServer/init(org.apache.hadoop.conf.Configuration)|",
+    "v1Body": [
+      "|java+constructor:///java/lang/UnsupportedOperationException/UnsupportedOperationException(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/hadoop/security/SaslRpcServer/init(org.apache.hadoop.conf.Configuration)|"
+    ],
+    "affectedLib": "org.apache.hadoop:hadoop-core:1.2.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.spark-project.hive.shims:hive-shims-common:0.13.1a",
+    "coordinatesV2": "org.spark-project.hive.shims:hive-shims-common:1.2.1.spark",
+    "caller": "|java+method:///org/apache/hadoop/hive/thrift/HadoopThriftAuthBridge/getServerPrincipal(java.lang.String,java.lang.String)|",
+    "called": "|java+method:///org/apache/hadoop/security/SecurityUtil/getServerPrincipal(java.lang.String,java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///java/lang/UnsupportedOperationException/UnsupportedOperationException(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/io/IOException/IOException(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/hadoop/security/SaslRpcServer/splitKerberosName(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/apache/hadoop/security/SecurityUtil/getServerPrincipal(java.lang.String,java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "affectedLib": "org.apache.hadoop:hadoop-core:1.2.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.spark-project.hive.shims:hive-shims-common:0.13.1a",
+    "coordinatesV2": "org.spark-project.hive.shims:hive-shims-common:1.2.1.spark",
+    "caller": "|java+method:///org/apache/hadoop/hive/thrift/HadoopThriftAuthBridge/getCurrentUGIWithConf(java.lang.String)|",
+    "called": "|java+method:///org/apache/hadoop/conf/Configuration/set(java.lang.String,java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///java/lang/UnsupportedOperationException/UnsupportedOperationException(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/logging/Log/debug(java.lang.Object)|",
+      "|java+method:///org/apache/hadoop/security/UserGroupInformation/getCurrentUser()|",
+      "|java+constructor:///org/apache/hadoop/conf/Configuration/Configuration()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/hadoop/security/UserGroupInformation/setConfiguration(org.apache.hadoop.conf.Configuration)|",
+      "|java+method:///org/apache/hadoop/conf/Configuration/set(java.lang.String,java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///java/lang/IllegalStateException/IllegalStateException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/apache/hadoop/hive/thrift/HadoopThriftAuthBridge/loginUserHasCurrentAuthMethod(org.apache.hadoop.security.UserGroupInformation,java.lang.String)|"
+    ],
+    "affectedLib": "org.apache.hadoop:hadoop-core:1.2.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.spark-project.hive.shims:hive-shims-common:0.13.1a",
+    "coordinatesV2": "org.spark-project.hive.shims:hive-shims-common:1.2.1.spark",
+    "caller": "|java+method:///org/apache/hadoop/hive/thrift/HadoopThriftAuthBridge/createClientWithConf(java.lang.String)|",
+    "called": "|java+method:///org/apache/hadoop/conf/Configuration/set(java.lang.String,java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///java/lang/UnsupportedOperationException/UnsupportedOperationException(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/logging/Log/debug(java.lang.Object)|",
+      "|java+constructor:///org/apache/hadoop/conf/Configuration/Configuration()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///org/apache/hadoop/hive/thrift/HadoopThriftAuthBridge$Client/HadoopThriftAuthBridge$Client()|",
+      "|java+method:///org/apache/hadoop/security/UserGroupInformation/setConfiguration(org.apache.hadoop.conf.Configuration)|",
+      "|java+method:///org/apache/hadoop/conf/Configuration/set(java.lang.String,java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///java/lang/IllegalStateException/IllegalStateException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/apache/hadoop/hive/thrift/HadoopThriftAuthBridge/loginUserHasCurrentAuthMethod(org.apache.hadoop.security.UserGroupInformation,java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/apache/hadoop/security/UserGroupInformation/getLoginUser()|"
+    ],
+    "affectedLib": "org.apache.hadoop:hadoop-core:1.2.1",
+    "change": "UPDATED"
+  }
+]

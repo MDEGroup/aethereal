@@ -1,0 +1,92 @@
+[
+  {
+    "coordinatesV1": "org.ops4j.pax.exam:pax-exam-spi:2.0.0-RC1",
+    "coordinatesV2": "org.ops4j.pax.exam:pax-exam-spi:2.0.0-M1",
+    "caller": "|java+method:///org/ops4j/pax/exam/spi/container/PaxExamRuntime/getTestContainerFactory()|",
+    "called": "|java+method:///org/apache/commons/discovery/tools/DiscoverSingleton/find(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/ops4j/pax/exam/spi/container/PaxExamRuntime/sanityCheck(java.lang.ClassLoader)|",
+      "|java+method:///org/apache/commons/discovery/tools/DiscoverSingleton/find(java.lang.Class)|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///java/lang/Class/getClassLoader()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/util/ServiceLoader/iterator()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///java/util/ServiceLoader/load(java.lang.Class)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+method:///org/ops4j/pax/exam/spi/container/PaxExamRuntime/sanityCheck()|"
+    ],
+    "affectedLib": "commons-discovery:commons-discovery:0.4",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.ops4j.pax.exam:pax-exam-spi:2.0.0-RC1",
+    "coordinatesV2": "org.ops4j.pax.exam:pax-exam-spi:2.0.0-M1",
+    "caller": "|java+method:///org/ops4j/pax/exam/spi/container/PaxExamRuntime/getTestTargetFactory()|",
+    "called": "|java+method:///org/apache/commons/discovery/tools/DiscoverSingleton/find(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String)|",
+      "|java+method:///org/apache/commons/discovery/tools/DiscoverSingleton/find(java.lang.Class)|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/ServiceLoader/iterator()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/ServiceLoader/load(java.lang.Class)|"
+    ],
+    "affectedLib": "commons-discovery:commons-discovery:0.4",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.ops4j.pax.exam:pax-exam-spi:2.0.0-M1",
+    "coordinatesV2": "org.ops4j.pax.exam:pax-exam-spi:2.0.0-RC1",
+    "caller": "|java+method:///org/ops4j/pax/exam/spi/driversupport/DefaultExamReactor/stage(org.ops4j.pax.exam.spi.StagedExamReactorFactory)|",
+    "called": "|java+method:///org/ops4j/pax/exam/CoreOptions/options(org.ops4j.pax.exam.Option%5B%5D)|",
+    "v1Body": [
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String)|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/ops4j/pax/exam/spi/StagedExamReactorFactory/create(org.ops4j.pax.exam.TestContainerFactory,java.util.List,java.util.List)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///org/ops4j/pax/exam/CoreOptions/options(org.ops4j.pax.exam.Option%5B%5D)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String)|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///java/util/List/addAll(java.util.Collection)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/ops4j/pax/exam/TestContainerFactory/parse(org.ops4j.pax.exam.Option%5B%5D)|",
+      "|java+method:///java/util/List/isEmpty()|",
+      "|java+method:///java/util/Arrays/asList(java.lang.Object%5B%5D)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///org/ops4j/pax/exam/spi/StagedExamReactorFactory/create(java.util.List,java.util.List)|"
+    ],
+    "affectedLib": "org.ops4j.pax.exam:pax-exam:2.0.0-RC1",
+    "change": "UPDATED"
+  }
+]

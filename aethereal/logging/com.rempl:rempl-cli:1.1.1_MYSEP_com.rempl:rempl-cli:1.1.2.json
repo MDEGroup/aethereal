@@ -1,0 +1,304 @@
+[
+  {
+    "coordinatesV1": "com.rempl:rempl-cli:1.1.1",
+    "coordinatesV2": "com.rempl:rempl-cli:1.1.2",
+    "caller": "|java+method:///com/rempl/cli/Request/dir()|",
+    "called": "|java+method:///com/ymock/util/Logger/info(java.lang.Object,java.lang.String,java.lang.Object%5B%5D)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/cli/CommandLine/hasOption(java.lang.String)|",
+      "|java+method:///com/rempl/api/Logger/info(java.lang.Object,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+constructor:///java/io/File/File(java.lang.String)|",
+      "|java+method:///com/rempl/api/RuntimeProblem/make(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///java/io/File/mkdirs()|",
+      "|java+method:///org/apache/commons/cli/CommandLine/getOptionValue(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/cli/CommandLine/hasOption(java.lang.String)|",
+      "|java+method:///com/ymock/util/RuntimeProblem/make(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///java/io/File/mkdirs()|",
+      "|java+method:///org/apache/commons/cli/CommandLine/getOptionValue(java.lang.String)|",
+      "|java+constructor:///java/io/File/File(java.lang.String)|",
+      "|java+method:///com/ymock/util/Logger/info(java.lang.Object,java.lang.String,java.lang.Object%5B%5D)|"
+    ],
+    "affectedLib": "com.ymock:ymock-util:1.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.rempl:rempl-cli:1.1.1",
+    "coordinatesV2": "com.rempl:rempl-cli:1.1.2",
+    "caller": "|java+method:///com/rempl/cli/Request/read()|",
+    "called": "|java+method:///com/ymock/util/RuntimeProblem/make(java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///com/rempl/api/RuntimeProblem/make(java.lang.Throwable)|",
+      "|java+method:///com/rempl/cli/Request/rempler()|",
+      "|java+method:///java/io/Writer/close()|",
+      "|java+method:///com/rempl/api/Rempler/read()|",
+      "|java+method:///com/rempl/cli/Request/xmi()|",
+      "|java+constructor:///java/io/FileWriter/FileWriter(java.io.File)|",
+      "|java+method:///com/rempl/api/Model/save(java.io.Writer)|",
+      "|java+method:///com/rempl/api/Logger/info(java.lang.Object,java.lang.String,java.lang.Object%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/rempl/cli/Request/rempler()|",
+      "|java+method:///com/rempl/api/Model/save(java.io.Writer)|",
+      "|java+method:///com/ymock/util/Logger/info(java.lang.Object,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///java/io/Writer/close()|",
+      "|java+method:///com/rempl/api/Rempler/read()|",
+      "|java+method:///com/rempl/cli/Request/xmi()|",
+      "|java+method:///com/ymock/util/RuntimeProblem/make(java.lang.Throwable)|",
+      "|java+constructor:///java/io/FileWriter/FileWriter(java.io.File)|"
+    ],
+    "affectedLib": "com.ymock:ymock-util:1.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.rempl:rempl-cli:1.1.1",
+    "coordinatesV2": "com.rempl:rempl-cli:1.1.2",
+    "caller": "|java+method:///com/rempl/cli/Main/execute(java.lang.String%5B%5D)|",
+    "called": "|java+method:///com/ymock/util/RuntimeProblem/make(java.lang.Throwable)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/commons/cli/GnuParser/GnuParser()|",
+      "|java+method:///com/rempl/cli/Version/get()|",
+      "|java+method:///com/rempl/cli/Request/read()|",
+      "|java+constructor:///com/rempl/cli/Request/Request(org.apache.commons.cli.CommandLine)|",
+      "|java+method:///com/rempl/api/Logger/info(java.lang.Object,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///org/apache/commons/cli/CommandLine/getArgs()|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///com/rempl/api/RuntimeProblem/make(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///com/rempl/cli/Main/options()|",
+      "|java+constructor:///com/rempl/cli/Help/Help()|",
+      "|java+method:///com/rempl/api/RuntimeProblem/make(java.lang.Throwable)|",
+      "|java+method:///com/rempl/cli/Request/report()|",
+      "|java+method:///org/apache/commons/cli/GnuParser/parse(org.apache.commons.cli.Options,java.lang.String%5B%5D)|",
+      "|java+method:///org/apache/commons/cli/CommandLine/hasOption(java.lang.String)|",
+      "|java+constructor:///com/rempl/cli/Version/Version()|",
+      "|java+method:///com/rempl/cli/Help/make(org.apache.commons.cli.Options)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/commons/cli/GnuParser/GnuParser()|",
+      "|java+method:///com/rempl/cli/Request/report()|",
+      "|java+method:///com/rempl/cli/Version/get()|",
+      "|java+method:///com/rempl/cli/Request/read()|",
+      "|java+constructor:///com/rempl/cli/Request/Request(org.apache.commons.cli.CommandLine)|",
+      "|java+method:///com/ymock/util/RuntimeProblem/make(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///com/rempl/cli/Main/options()|",
+      "|java+constructor:///com/rempl/cli/Help/Help()|",
+      "|java+method:///com/ymock/util/RuntimeProblem/make(java.lang.Throwable)|",
+      "|java+method:///org/apache/commons/cli/GnuParser/parse(org.apache.commons.cli.Options,java.lang.String%5B%5D)|",
+      "|java+method:///org/apache/commons/cli/CommandLine/hasOption(java.lang.String)|",
+      "|java+constructor:///com/rempl/cli/Version/Version()|",
+      "|java+method:///com/rempl/cli/Help/make(org.apache.commons.cli.Options)|",
+      "|java+method:///org/apache/commons/cli/CommandLine/getArgs()|",
+      "|java+method:///com/ymock/util/Logger/info(java.lang.Object,java.lang.String,java.lang.Object%5B%5D)|"
+    ],
+    "affectedLib": "com.ymock:ymock-util:1.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.rempl:rempl-cli:1.1.1",
+    "coordinatesV2": "com.rempl:rempl-cli:1.1.2",
+    "caller": "|java+method:///com/rempl/cli/Request/rempler()|",
+    "called": "|java+method:///com/ymock/util/RuntimeProblem/make(java.lang.Throwable)|",
+    "v1Body": [
+      "|java+constructor:///com/rempl/api/ROM/ROM(java.io.File)|",
+      "|java+method:///com/rempl/api/Rempl/getFactory()|",
+      "|java+method:///org/apache/commons/cli/CommandLine/hasOption(java.lang.String)|",
+      "|java+constructor:///java/io/File/File(java.lang.String)|",
+      "|java+method:///com/rempl/api/RuntimeProblem/make(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///org/apache/commons/cli/CommandLine/getOptionValue(java.lang.String)|",
+      "|java+constructor:///com/rempl/cli/HomeLoader/HomeLoader()|",
+      "|java+method:///com/rempl/api/RemplFactory/makeRempler(com.rempl.api.ROM)|",
+      "|java+method:///com/rempl/api/RemplFactory/setLoader(com.rempl.api.Loader)|",
+      "|java+method:///com/rempl/api/RuntimeProblem/make(java.lang.Throwable)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/rempl/api/ROM/ROM(java.io.File)|",
+      "|java+method:///com/rempl/api/Rempl/getFactory()|",
+      "|java+method:///com/rempl/api/RemplFactory/setLoader(com.rempl.api.Loader)|",
+      "|java+method:///org/apache/commons/cli/CommandLine/hasOption(java.lang.String)|",
+      "|java+method:///com/ymock/util/RuntimeProblem/make(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+constructor:///java/io/File/File(java.lang.String)|",
+      "|java+method:///org/apache/commons/cli/CommandLine/getOptionValue(java.lang.String)|",
+      "|java+constructor:///com/rempl/cli/HomeLoader/HomeLoader()|",
+      "|java+method:///com/ymock/util/RuntimeProblem/make(java.lang.Throwable)|",
+      "|java+method:///com/rempl/api/RemplFactory/makeRempler(com.rempl.api.ROM)|"
+    ],
+    "affectedLib": "com.ymock:ymock-util:1.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.rempl:rempl-cli:1.1.1",
+    "coordinatesV2": "com.rempl:rempl-cli:1.1.2",
+    "caller": "|java+method:///com/rempl/cli/HomeLoader/rom(java.util.Collection)|",
+    "called": "|java+method:///com/ymock/util/Logger/debug(java.lang.Object,java.lang.String,java.lang.Object%5B%5D)|",
+    "v1Body": [
+      "|java+method:///com/rempl/cli/HomeLoader/readRomFromJar(java.io.File)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///com/rempl/api/Logger/debug(java.lang.Object,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///java/lang/String/length()|",
+      "|java+method:///java/util/Collection/size()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+constructor:///com/rempl/api/LoadingException/LoadingException(java.lang.String)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///java/util/Collection/iterator()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/ymock/util/Logger/debug(java.lang.Object,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///com/rempl/cli/HomeLoader/readRomFromJar(java.io.File)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/lang/String/length()|",
+      "|java+method:///java/util/Collection/size()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+constructor:///com/rempl/api/LoadingException/LoadingException(java.lang.String)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///java/util/Collection/iterator()|"
+    ],
+    "affectedLib": "com.ymock:ymock-util:1.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.rempl:rempl-cli:1.1.1",
+    "coordinatesV2": "com.rempl:rempl-cli:1.1.2",
+    "caller": "|java+method:///com/rempl/cli/Request/xmi()|",
+    "called": "|java+method:///com/ymock/util/RuntimeProblem/make(java.lang.String,java.lang.Object%5B%5D)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/cli/CommandLine/hasOption(java.lang.String)|",
+      "|java+constructor:///java/io/File/File(java.lang.String)|",
+      "|java+method:///com/rempl/api/RuntimeProblem/make(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///org/apache/commons/cli/CommandLine/getOptionValue(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/cli/CommandLine/hasOption(java.lang.String)|",
+      "|java+method:///com/ymock/util/RuntimeProblem/make(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+constructor:///java/io/File/File(java.lang.String)|",
+      "|java+method:///org/apache/commons/cli/CommandLine/getOptionValue(java.lang.String)|"
+    ],
+    "affectedLib": "com.ymock:ymock-util:1.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.rempl:rempl-cli:1.1.1",
+    "coordinatesV2": "com.rempl:rempl-cli:1.1.2",
+    "caller": "|java+method:///com/rempl/cli/Version/get()|",
+    "called": "|java+method:///com/ymock/util/RuntimeProblem/make(java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///com/rempl/api/RuntimeProblem/make(java.lang.Throwable)|",
+      "|java+method:///java/net/URL/openStream()|",
+      "|java+constructor:///java/util/jar/Manifest/Manifest(java.io.InputStream)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///java/lang/Class/getResource(java.lang.String)|",
+      "|java+method:///java/util/jar/Attributes/get(java.lang.Object)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///java/util/jar/Manifest/getMainAttributes()|",
+      "|java+method:///com/rempl/api/RuntimeProblem/make(java.lang.String,java.lang.Object%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/net/URL/openStream()|",
+      "|java+constructor:///java/util/jar/Manifest/Manifest(java.io.InputStream)|",
+      "|java+method:///java/lang/Class/getResource(java.lang.String)|",
+      "|java+method:///java/util/jar/Manifest/getMainAttributes()|",
+      "|java+method:///java/util/jar/Attributes/get(java.lang.Object)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///com/ymock/util/RuntimeProblem/make(java.lang.Throwable)|",
+      "|java+method:///com/ymock/util/RuntimeProblem/make(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|"
+    ],
+    "affectedLib": "com.ymock:ymock-util:1.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.rempl:rempl-cli:1.1.1",
+    "coordinatesV2": "com.rempl:rempl-cli:1.1.2",
+    "caller": "|java+method:///com/rempl/cli/Request/report()|",
+    "called": "|java+method:///com/ymock/util/RuntimeProblem/make(java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///com/rempl/api/Model/load(java.io.Reader)|",
+      "|java+method:///com/rempl/api/RuntimeProblem/make(java.lang.Throwable)|",
+      "|java+method:///com/rempl/cli/Request/rempler()|",
+      "|java+method:///com/rempl/api/Logger/info(java.lang.Object,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///com/rempl/cli/Request/dir()|",
+      "|java+method:///com/rempl/cli/Request/xmi()|",
+      "|java+method:///java/io/Reader/close()|",
+      "|java+method:///com/rempl/api/Rempler/report(com.rempl.api.Model,java.io.File)|",
+      "|java+constructor:///java/io/FileReader/FileReader(java.io.File)|",
+      "|java+method:///com/rempl/api/Rempler/emptyModel()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/rempl/api/Model/load(java.io.Reader)|",
+      "|java+method:///com/rempl/cli/Request/rempler()|",
+      "|java+method:///com/ymock/util/Logger/info(java.lang.Object,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///com/rempl/cli/Request/dir()|",
+      "|java+method:///com/rempl/cli/Request/xmi()|",
+      "|java+method:///com/ymock/util/RuntimeProblem/make(java.lang.Throwable)|",
+      "|java+method:///java/io/Reader/close()|",
+      "|java+method:///com/rempl/api/Rempler/report(com.rempl.api.Model,java.io.File)|",
+      "|java+constructor:///java/io/FileReader/FileReader(java.io.File)|",
+      "|java+method:///com/rempl/api/Rempler/emptyModel()|"
+    ],
+    "affectedLib": "com.ymock:ymock-util:1.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.rempl:rempl-cli:1.1.1",
+    "coordinatesV2": "com.rempl:rempl-cli:1.1.2",
+    "caller": "|java+method:///com/rempl/cli/Request/rempler()|",
+    "called": "|java+constructor:///com/rempl/api/ROM/ROM(java.io.File)|",
+    "v1Body": [
+      "|java+constructor:///com/rempl/api/ROM/ROM(java.io.File)|",
+      "|java+method:///com/rempl/api/Rempl/getFactory()|",
+      "|java+method:///org/apache/commons/cli/CommandLine/hasOption(java.lang.String)|",
+      "|java+constructor:///java/io/File/File(java.lang.String)|",
+      "|java+method:///com/rempl/api/RuntimeProblem/make(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///org/apache/commons/cli/CommandLine/getOptionValue(java.lang.String)|",
+      "|java+constructor:///com/rempl/cli/HomeLoader/HomeLoader()|",
+      "|java+method:///com/rempl/api/RemplFactory/makeRempler(com.rempl.api.ROM)|",
+      "|java+method:///com/rempl/api/RemplFactory/setLoader(com.rempl.api.Loader)|",
+      "|java+method:///com/rempl/api/RuntimeProblem/make(java.lang.Throwable)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/rempl/api/ROM/ROM(java.io.File)|",
+      "|java+method:///com/rempl/api/Rempl/getFactory()|",
+      "|java+method:///com/rempl/api/RemplFactory/setLoader(com.rempl.api.Loader)|",
+      "|java+method:///org/apache/commons/cli/CommandLine/hasOption(java.lang.String)|",
+      "|java+method:///com/ymock/util/RuntimeProblem/make(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+constructor:///java/io/File/File(java.lang.String)|",
+      "|java+method:///org/apache/commons/cli/CommandLine/getOptionValue(java.lang.String)|",
+      "|java+constructor:///com/rempl/cli/HomeLoader/HomeLoader()|",
+      "|java+method:///com/ymock/util/RuntimeProblem/make(java.lang.Throwable)|",
+      "|java+method:///com/rempl/api/RemplFactory/makeRempler(com.rempl.api.ROM)|"
+    ],
+    "affectedLib": "com.rempl:rempl-api:1.1.2",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.rempl:rempl-cli:1.1.1",
+    "coordinatesV2": "com.rempl:rempl-cli:1.1.2",
+    "caller": "|java+method:///com/rempl/cli/HomeLoader/rom(java.util.Collection)|",
+    "called": "|java+constructor:///com/rempl/api/LoadingException/LoadingException(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///com/rempl/cli/HomeLoader/readRomFromJar(java.io.File)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///com/rempl/api/Logger/debug(java.lang.Object,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///java/lang/String/length()|",
+      "|java+method:///java/util/Collection/size()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+constructor:///com/rempl/api/LoadingException/LoadingException(java.lang.String)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///java/util/Collection/iterator()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/ymock/util/Logger/debug(java.lang.Object,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///com/rempl/cli/HomeLoader/readRomFromJar(java.io.File)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/lang/String/length()|",
+      "|java+method:///java/util/Collection/size()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+constructor:///com/rempl/api/LoadingException/LoadingException(java.lang.String)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///java/util/Collection/iterator()|"
+    ],
+    "affectedLib": "com.rempl:rempl-api:1.1.2",
+    "change": "UPDATED"
+  }
+]

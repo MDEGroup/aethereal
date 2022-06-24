@@ -1,0 +1,38 @@
+[
+  {
+    "coordinatesV1": "net.mailjimp:mailjimp-webhook:0.2",
+    "coordinatesV2": "net.mailjimp:mailjimp-webhook:0.3",
+    "caller": "|java+method:///mailjimp/webhook/WebHookController/buildData(org.springframework.web.context.request.WebRequest,mailjimp.dom.WebHookData)|",
+    "called": "|java+constructor:///mailjimp/service/MailJimpException/MailJimpException(java.lang.String,java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///java/text/SimpleDateFormat/parse(java.lang.String)|",
+      "|java+method:///mailjimp/dom/WebHookData/getRawData()|",
+      "|java+method:///mailjimp/dom/WebHookData/setRawData(java.util.Map)|",
+      "|java+method:///mailjimp/dom/WebHookData/getType()|",
+      "|java+method:///org/springframework/web/context/request/WebRequest/getParameter(java.lang.String)|",
+      "|java+method:///mailjimp/dom/WebHookData/setMemberInfo(mailjimp.dom.list.MemberInfo)|",
+      "|java+method:///mailjimp/dom/WebHookData/setFiredAt(java.util.Date)|",
+      "|java+method:///mailjimp/webhook/WebHookController/parseRequest(org.springframework.web.context.request.WebRequest)|",
+      "|java+method:///mailjimp/service/impl/MailJimpParser/parseListMemberInfo(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/text/SimpleDateFormat/parse(java.lang.String)|",
+      "|java+method:///mailjimp/webhook/WebHookController/parseRequest(org.springframework.web.context.request.WebRequest)|",
+      "|java+method:///org/codehaus/jackson/map/ObjectMapper/writeValue(java.io.Writer,java.lang.Object)|",
+      "|java+method:///mailjimp/dom/WebHookData/setRawData(java.util.Map)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///java/io/StringWriter/StringWriter()|",
+      "|java+method:///java/io/StringWriter/toString()|",
+      "|java+method:///mailjimp/dom/WebHookData/getType()|",
+      "|java+method:///mailjimp/dom/WebHookData/setFiredAt(java.util.Date)|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///mailjimp/dom/WebHookData/setMemberInfo(mailjimp.dom.response.list.MemberInfo)|",
+      "|java+method:///mailjimp/dom/WebHookData/getRawData()|",
+      "|java+constructor:///mailjimp/service/MailJimpException/MailJimpException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/codehaus/jackson/map/ObjectMapper/readValue(java.lang.String,java.lang.Class)|",
+      "|java+method:///org/springframework/web/context/request/WebRequest/getParameter(java.lang.String)|"
+    ],
+    "affectedLib": "net.mailjimp:mailjimp-core:0.3",
+    "change": "UPDATED"
+  }
+]

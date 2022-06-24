@@ -1,0 +1,135 @@
+[
+  {
+    "coordinatesV1": "org.openl.rules:org.openl.rules.ruleservice.ws:5.9.0",
+    "coordinatesV2": "org.openl.rules:org.openl.rules.ruleservice.ws:5.9.1",
+    "caller": "|java+constructor:///org/openl/rules/ruleservice/databinding/RootClassNamesBindingFactoryBean/RootClassNamesBindingFactoryBean()|",
+    "called": "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|",
+    "v1Body": [
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:jcl-over-slf4j:1.6.4",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.openl.rules:org.openl.rules.ruleservice.ws:5.9.0",
+    "coordinatesV2": "org.openl.rules:org.openl.rules.ruleservice.ws:5.9.1",
+    "caller": "|java+method:///org/openl/rules/ruleservice/servlet/WSServlet/init()|",
+    "called": "|java+method:///org/openl/rules/ruleservice/management/ServiceManagerImpl/start()|",
+    "v1Body": [
+      "|java+method:///org/openl/rules/ruleservice/servlet/WSServlet/loadBus(javax.servlet.ServletConfig)|",
+      "|java+method:///org/springframework/web/context/WebApplicationContext/containsBean(java.lang.String)|",
+      "|java+method:///org/openl/rules/ruleservice/servlet/WSServlet/getServletContext()|",
+      "|java+constructor:///javax/servlet/ServletException/ServletException(java.lang.String)|",
+      "|java+method:///org/openl/rules/ruleservice/management/ServiceManager/start()|",
+      "|java+method:///org/springframework/web/context/support/WebApplicationContextUtils/getWebApplicationContext(javax.servlet.ServletContext)|",
+      "|java+method:///org/springframework/web/context/WebApplicationContext/getBean(java.lang.String)|",
+      "|java+method:///org/openl/rules/ruleservice/servlet/WSServlet/getServletConfig()|",
+      "|java+method:///org/apache/cxf/transport/servlet/CXFServlet/init()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/openl/rules/ruleservice/servlet/WSServlet/loadBus(javax.servlet.ServletConfig)|",
+      "|java+method:///org/springframework/web/context/WebApplicationContext/containsBean(java.lang.String)|",
+      "|java+method:///org/openl/rules/ruleservice/servlet/WSServlet/getServletContext()|",
+      "|java+constructor:///javax/servlet/ServletException/ServletException(java.lang.String)|",
+      "|java+method:///org/openl/rules/ruleservice/management/ServiceManagerImpl/start()|",
+      "|java+method:///org/springframework/web/context/support/WebApplicationContextUtils/getWebApplicationContext(javax.servlet.ServletContext)|",
+      "|java+method:///org/springframework/web/context/WebApplicationContext/getBean(java.lang.String)|",
+      "|java+method:///org/openl/rules/ruleservice/servlet/WSServlet/getServletConfig()|",
+      "|java+method:///org/apache/cxf/transport/servlet/CXFServlet/init()|"
+    ],
+    "affectedLib": "org.openl.rules:org.openl.rules.ruleservice:5.9.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.openl.rules:org.openl.rules.ruleservice.ws:5.9.0",
+    "coordinatesV2": "org.openl.rules:org.openl.rules.ruleservice.ws:5.9.1",
+    "caller": "|java+method:///org/openl/rules/ruleservice/RuleServiceStarter/startServicesFromClasspath()|",
+    "called": "|java+method:///org/openl/rules/ruleservice/management/ServiceManagerImpl/start()|",
+    "v1Body": [
+      "|java+constructor:///org/springframework/context/support/ClassPathXmlApplicationContext/ClassPathXmlApplicationContext(java.lang.String)|",
+      "|java+method:///java/lang/System/console()|",
+      "|java+method:///java/io/PrintStream/println(java.lang.String)|",
+      "|java+method:///org/openl/rules/ruleservice/management/ServiceManager/start()|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///org/springframework/context/ApplicationContext/getBean(java.lang.String)|",
+      "|java+method:///java/io/Console/readLine()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/springframework/context/support/ClassPathXmlApplicationContext/ClassPathXmlApplicationContext(java.lang.String)|",
+      "|java+method:///java/lang/System/console()|",
+      "|java+method:///java/io/PrintStream/println(java.lang.String)|",
+      "|java+method:///org/openl/rules/ruleservice/management/ServiceManagerImpl/start()|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///org/springframework/context/ApplicationContext/getBean(java.lang.String)|",
+      "|java+method:///java/io/Console/readLine()|"
+    ],
+    "affectedLib": "org.openl.rules:org.openl.rules.ruleservice:5.9.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.openl.rules:org.openl.rules.ruleservice.ws:5.9.0",
+    "coordinatesV2": "org.openl.rules:org.openl.rules.ruleservice.ws:5.9.1",
+    "caller": "|java+method:///org/openl/rules/ruleservice/databinding/AegisDatabindingConfigurableFactoryBean/getObject()|",
+    "called": "|java+constructor:///org/apache/cxf/aegis/databinding/AegisDatabinding/AegisDatabinding()|",
+    "v1Body": [
+      "|java+method:///org/openl/rules/ruleservice/databinding/AegisDatabindingConfigurableFactoryBean/getMtomThreshold()|",
+      "|java+method:///java/lang/Integer/intValue()|",
+      "|java+method:///org/apache/cxf/aegis/databinding/AegisDatabinding/setSchemas(java.util.Collection)|",
+      "|java+method:///org/openl/rules/ruleservice/databinding/AegisDatabindingConfigurableFactoryBean/getWriteXsiTypes()|",
+      "|java+method:///org/apache/cxf/aegis/AegisContext/setWriteXsiTypes(boolean)|",
+      "|java+method:///org/openl/rules/ruleservice/databinding/AegisDatabindingConfigurableFactoryBean/getOverrideTypes()|",
+      "|java+method:///org/apache/cxf/aegis/databinding/AegisDatabinding/setOverrideTypes(java.util.Set)|",
+      "|java+method:///org/apache/cxf/aegis/databinding/AegisDatabinding/setMtomUseXmime(boolean)|",
+      "|java+method:///org/openl/rules/ruleservice/databinding/AegisDatabindingConfigurableFactoryBean/getConfiguration()|",
+      "|java+method:///org/apache/cxf/aegis/databinding/AegisDatabinding/setMtomEnabled(boolean)|",
+      "|java+method:///org/openl/rules/ruleservice/databinding/AegisDatabindingConfigurableFactoryBean/getMtomEnabled()|",
+      "|java+method:///org/openl/rules/ruleservice/databinding/AegisDatabindingConfigurableFactoryBean/getBus()|",
+      "|java+method:///org/openl/rules/ruleservice/databinding/AegisDatabindingConfigurableFactoryBean/getObject()|",
+      "|java+method:///org/apache/cxf/aegis/databinding/AegisDatabinding/setConfiguration(org.apache.cxf.aegis.type.TypeCreationOptions)|",
+      "|java+method:///java/lang/Boolean/booleanValue()|",
+      "|java+method:///org/apache/cxf/aegis/databinding/AegisDatabinding/setNamespaceMap(java.util.Map)|",
+      "|java+method:///org/apache/cxf/aegis/databinding/AegisDatabinding/setMtomThreshold(int)|",
+      "|java+method:///org/apache/cxf/aegis/databinding/AegisDatabinding/setBus(org.apache.cxf.Bus)|",
+      "|java+constructor:///org/apache/cxf/aegis/databinding/AegisDatabinding/AegisDatabinding()|",
+      "|java+method:///org/openl/rules/ruleservice/databinding/AegisDatabindingConfigurableFactoryBean/getMtomUseXmime()|",
+      "|java+method:///org/openl/rules/ruleservice/databinding/AegisDatabindingConfigurableFactoryBean/getSchemas()|",
+      "|java+constructor:///org/openl/rules/ruleservice/context/RuntimeContextBeanType/RuntimeContextBeanType()|",
+      "|java+method:///org/apache/cxf/aegis/type/TypeMapping/register(java.lang.reflect.Type,javax.xml.namespace.QName,org.apache.cxf.aegis.type.AegisType)|",
+      "|java+method:///org/apache/cxf/aegis/AegisContext/getTypeMapping()|",
+      "|java+method:///org/openl/rules/ruleservice/databinding/AegisDatabindingConfigurableFactoryBean/getNamespaceMap()|",
+      "|java+method:///org/apache/cxf/aegis/databinding/AegisDatabinding/getAegisContext()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/openl/rules/ruleservice/databinding/AegisDatabindingConfigurableFactoryBean/getMtomThreshold()|",
+      "|java+method:///java/lang/Integer/intValue()|",
+      "|java+method:///org/apache/cxf/aegis/databinding/AegisDatabinding/setSchemas(java.util.Collection)|",
+      "|java+method:///org/openl/rules/ruleservice/databinding/AegisDatabindingConfigurableFactoryBean/getWriteXsiTypes()|",
+      "|java+method:///org/apache/cxf/aegis/AegisContext/setWriteXsiTypes(boolean)|",
+      "|java+method:///org/openl/rules/ruleservice/databinding/AegisDatabindingConfigurableFactoryBean/getOverrideTypes()|",
+      "|java+method:///org/apache/cxf/aegis/databinding/AegisDatabinding/setOverrideTypes(java.util.Set)|",
+      "|java+method:///org/openl/rules/ruleservice/databinding/AegisDatabindingConfigurableFactoryBean/getSchemas()|",
+      "|java+method:///org/apache/cxf/aegis/databinding/AegisDatabinding/setMtomUseXmime(boolean)|",
+      "|java+method:///org/openl/rules/ruleservice/databinding/AegisDatabindingConfigurableFactoryBean/getConfiguration()|",
+      "|java+method:///org/openl/rules/ruleservice/databinding/AegisDatabindingConfigurableFactoryBean/fillDefaultOpenLTypesMappings(org.apache.cxf.aegis.databinding.AegisDatabinding)|",
+      "|java+method:///org/apache/cxf/aegis/databinding/AegisDatabinding/setMtomEnabled(boolean)|",
+      "|java+method:///org/openl/rules/ruleservice/databinding/AegisDatabindingConfigurableFactoryBean/getMtomEnabled()|",
+      "|java+method:///org/openl/rules/ruleservice/databinding/AegisDatabindingConfigurableFactoryBean/getBus()|",
+      "|java+method:///org/openl/rules/ruleservice/databinding/AegisDatabindingConfigurableFactoryBean/getObject()|",
+      "|java+method:///org/apache/cxf/aegis/databinding/AegisDatabinding/setConfiguration(org.apache.cxf.aegis.type.TypeCreationOptions)|",
+      "|java+method:///java/lang/Boolean/booleanValue()|",
+      "|java+method:///org/apache/cxf/aegis/databinding/AegisDatabinding/setNamespaceMap(java.util.Map)|",
+      "|java+method:///org/apache/cxf/aegis/databinding/AegisDatabinding/setMtomThreshold(int)|",
+      "|java+method:///org/apache/cxf/aegis/databinding/AegisDatabinding/setBus(org.apache.cxf.Bus)|",
+      "|java+constructor:///org/apache/cxf/aegis/databinding/AegisDatabinding/AegisDatabinding()|",
+      "|java+method:///org/openl/rules/ruleservice/databinding/AegisDatabindingConfigurableFactoryBean/getMtomUseXmime()|",
+      "|java+method:///org/openl/rules/ruleservice/databinding/AegisDatabindingConfigurableFactoryBean/getNamespaceMap()|",
+      "|java+method:///org/apache/cxf/aegis/databinding/AegisDatabinding/getAegisContext()|"
+    ],
+    "affectedLib": "org.apache.cxf:cxf-rt-databinding-aegis:2.5.1",
+    "change": "UPDATED"
+  }
+]

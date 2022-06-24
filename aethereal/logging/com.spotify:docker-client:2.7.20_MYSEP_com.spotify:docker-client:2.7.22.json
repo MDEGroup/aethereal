@@ -1,0 +1,51 @@
+[
+  {
+    "coordinatesV1": "com.spotify:docker-client:2.7.20",
+    "coordinatesV2": "com.spotify:docker-client:2.7.22",
+    "caller": "|java+method:///com/spotify/docker/client/DefaultDockerClient/build(java.nio.file.Path,java.lang.String,com.spotify.docker.client.ProgressHandler,com.spotify.docker.client.DockerClient$BuildParameter%5B%5D)|",
+    "called": "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///com/spotify/docker/client/messages/ProgressMessage/buildImageId()|",
+      "|java+method:///java/lang/String/valueOf(boolean)|",
+      "|java+method:///javax/ws/rs/client/WebTarget/request(javax.ws.rs.core.MediaType%5B%5D)|",
+      "|java+method:///com/spotify/docker/client/ProgressStream/hasNextMessage(java.lang.String,java.net.URI)|",
+      "|java+method:///com/spotify/docker/client/CompressedDirectory/create(java.nio.file.Path)|",
+      "|java+method:///com/spotify/docker/client/DefaultDockerClient/request(java.lang.String,java.lang.Class,javax.ws.rs.client.WebTarget,javax.ws.rs.client.Invocation$Builder,javax.ws.rs.client.Entity)|",
+      "|java+method:///com/spotify/docker/client/ProgressHandler/progress(com.spotify.docker.client.messages.ProgressMessage)|",
+      "|java+method:///com/spotify/docker/client/DefaultDockerClient/resource()|",
+      "|java+method:///com/spotify/docker/client/CompressedDirectory/delete(java.io.File)|",
+      "|java+method:///com/spotify/docker/client/ProgressStream/close()|",
+      "|java+method:///com/spotify/docker/client/ProgressStream/nextMessage(java.lang.String,java.net.URI)|",
+      "|java+method:///javax/ws/rs/client/WebTarget/getUri()|",
+      "|java+method:///java/lang/Throwable/addSuppressed(java.lang.Throwable)|",
+      "|java+method:///javax/ws/rs/client/WebTarget/queryParam(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///javax/ws/rs/client/Entity/entity(java.lang.Object,java.lang.String)|",
+      "|java+method:///javax/ws/rs/client/WebTarget/path(java.lang.String)|",
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/spotify/docker/client/messages/ProgressMessage/buildImageId()|",
+      "|java+method:///java/lang/String/valueOf(boolean)|",
+      "|java+method:///com/spotify/docker/client/ProgressStream/close()|",
+      "|java+method:///javax/ws/rs/client/WebTarget/request(javax.ws.rs.core.MediaType%5B%5D)|",
+      "|java+method:///com/spotify/docker/client/ProgressStream/hasNextMessage(java.lang.String,java.net.URI)|",
+      "|java+method:///com/spotify/docker/client/CompressedDirectory/file()|",
+      "|java+method:///java/io/InputStream/close()|",
+      "|java+method:///java/nio/file/Files/newInputStream(java.nio.file.Path,java.nio.file.OpenOption%5B%5D)|",
+      "|java+method:///com/spotify/docker/client/CompressedDirectory/close()|",
+      "|java+method:///com/spotify/docker/client/CompressedDirectory/create(java.nio.file.Path)|",
+      "|java+method:///com/spotify/docker/client/DefaultDockerClient/request(java.lang.String,java.lang.Class,javax.ws.rs.client.WebTarget,javax.ws.rs.client.Invocation$Builder,javax.ws.rs.client.Entity)|",
+      "|java+method:///com/spotify/docker/client/ProgressHandler/progress(com.spotify.docker.client.messages.ProgressMessage)|",
+      "|java+method:///com/spotify/docker/client/DefaultDockerClient/resource()|",
+      "|java+method:///com/spotify/docker/client/ProgressStream/nextMessage(java.lang.String,java.net.URI)|",
+      "|java+method:///javax/ws/rs/client/WebTarget/getUri()|",
+      "|java+method:///java/lang/Throwable/addSuppressed(java.lang.Throwable)|",
+      "|java+method:///javax/ws/rs/client/WebTarget/queryParam(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///javax/ws/rs/client/Entity/entity(java.lang.Object,java.lang.String)|",
+      "|java+method:///javax/ws/rs/client/WebTarget/path(java.lang.String)|",
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|"
+    ],
+    "affectedLib": "com.google.guava:guava:17.0",
+    "change": "ADDED"
+  }
+]

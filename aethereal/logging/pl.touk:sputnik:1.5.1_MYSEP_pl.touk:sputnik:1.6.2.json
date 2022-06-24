@@ -1,0 +1,222 @@
+[
+  {
+    "coordinatesV1": "pl.touk:sputnik:1.6.2",
+    "coordinatesV2": "pl.touk:sputnik:1.5.1",
+    "caller": "|java+method:///pl/touk/sputnik/review/locator/AbstractBuildDirLocator$1/apply(pl.touk.sputnik.review.ReviewFile)|",
+    "called": "|java+method:///org/apache/commons/lang3/StringUtils/substringBeforeLast(java.lang.String,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///pl/touk/sputnik/review/ReviewFile/getSourceDir()|",
+      "|java+method:///pl/touk/sputnik/review/locator/AbstractBuildDirLocator/getMainBuildDir()|",
+      "|java+method:///pl/touk/sputnik/review/ReviewFile/isSourceFile()|",
+      "|java+method:///pl/touk/sputnik/review/ReviewFile/getReviewFilename()|",
+      "|java+method:///org/apache/commons/lang3/StringUtils/substringBeforeLast(java.lang.String,java.lang.String)|",
+      "|java+method:///java/lang/String/concat(java.lang.String)|",
+      "|java+method:///pl/touk/sputnik/review/ReviewFile/isTestFile()|",
+      "|java+method:///pl/touk/sputnik/review/locator/AbstractBuildDirLocator/getTestBuildDir()|",
+      "|java+method:///java/lang/Boolean/booleanValue()|"
+    ],
+    "v2Body": [
+      "|java+method:///pl/touk/sputnik/review/ReviewFile/getSourceDir()|",
+      "|java+method:///pl/touk/sputnik/review/locator/AbstractBuildDirLocator/access$100(pl.touk.sputnik.review.locator.AbstractBuildDirLocator)|",
+      "|java+method:///pl/touk/sputnik/review/ReviewFile/getReviewFilename()|",
+      "|java+method:///org/apache/commons/lang3/StringUtils/substringBeforeLast(java.lang.String,java.lang.String)|",
+      "|java+method:///java/lang/String/concat(java.lang.String)|",
+      "|java+method:///java/lang/String/contains(java.lang.CharSequence)|",
+      "|java+method:///pl/touk/sputnik/review/locator/AbstractBuildDirLocator/getTestBuildDir()|",
+      "|java+method:///pl/touk/sputnik/review/locator/AbstractBuildDirLocator/getMainBuildDir()|",
+      "|java+method:///pl/touk/sputnik/review/locator/AbstractBuildDirLocator/access$000(pl.touk.sputnik.review.locator.AbstractBuildDirLocator)|"
+    ],
+    "affectedLib": "org.apache.commons:commons-lang3:3.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "pl.touk:sputnik:1.6.2",
+    "coordinatesV2": "pl.touk:sputnik:1.5.1",
+    "caller": "|java+method:///pl/touk/sputnik/engine/VisitorBuilder/buildBeforeReviewVisitors(pl.touk.sputnik.configuration.Configuration)|",
+    "called": "|java+method:///org/apache/commons/lang3/BooleanUtils/toBoolean(java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///org/apache/commons/lang3/BooleanUtils/toBoolean(java.lang.String)|",
+      "|java+constructor:///pl/touk/sputnik/engine/visitor/FilterOutTestFilesVisitor/FilterOutTestFilesVisitor()|",
+      "|java+method:///pl/touk/sputnik/configuration/Configuration/getProperty(pl.touk.sputnik.configuration.ConfigurationOption)|",
+      "|java+method:///java/util/List/add(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+constructor:///pl/touk/sputnik/engine/visitor/FilterOutTestFilesVisitor/FilterOutTestFilesVisitor(java.lang.String)|",
+      "|java+method:///org/apache/commons/lang3/BooleanUtils/toBoolean(java.lang.String)|",
+      "|java+method:///pl/touk/sputnik/configuration/Configuration/getProperty(pl.touk.sputnik.configuration.ConfigurationOption)|",
+      "|java+method:///java/util/List/add(java.lang.Object)|"
+    ],
+    "affectedLib": "org.apache.commons:commons-lang3:3.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "pl.touk:sputnik:1.6.2",
+    "coordinatesV2": "pl.touk:sputnik:1.5.1",
+    "caller": "|java+method:///pl/touk/sputnik/review/locator/BuildDirLocatorFactory/create(pl.touk.sputnik.configuration.Configuration)|",
+    "called": "|java+method:///org/apache/commons/lang3/Validate/notBlank(java.lang.CharSequence)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/lang3/Validate/notBlank(java.lang.CharSequence)|",
+      "|java+method:///java/lang/String/toUpperCase()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///pl/touk/sputnik/configuration/Configuration/getProperty(pl.touk.sputnik.configuration.ConfigurationOption)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///pl/touk/sputnik/configuration/BuildTool/valueOf(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///pl/touk/sputnik/configuration/BuildTool/ordinal()|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String)|",
+      "|java+constructor:///pl/touk/sputnik/review/locator/MavenBuildDirLocator/MavenBuildDirLocator()|",
+      "|java+constructor:///pl/touk/sputnik/review/locator/GradleBuildFileLocator/GradleBuildFileLocator()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/String/toUpperCase()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///pl/touk/sputnik/configuration/Configuration/getProperty(pl.touk.sputnik.configuration.ConfigurationOption)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///pl/touk/sputnik/configuration/BuildTool/valueOf(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///pl/touk/sputnik/review/locator/GradleBuildFileLocator/GradleBuildFileLocator(java.lang.String,java.lang.String)|",
+      "|java+method:///org/apache/commons/lang3/Validate/notBlank(java.lang.CharSequence)|",
+      "|java+constructor:///pl/touk/sputnik/review/locator/MavenBuildDirLocator/MavenBuildDirLocator(java.lang.String,java.lang.String)|",
+      "|java+method:///pl/touk/sputnik/configuration/BuildTool/ordinal()|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String)|"
+    ],
+    "affectedLib": "org.apache.commons:commons-lang3:3.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "pl.touk:sputnik:1.6.2",
+    "coordinatesV2": "pl.touk:sputnik:1.5.1",
+    "caller": "|java+method:///pl/touk/sputnik/processor/sonar/SonarRunnerBuilder/prepareRunner(pl.touk.sputnik.review.Review,pl.touk.sputnik.configuration.Configuration)|",
+    "called": "|java+method:///org/sonar/runner/api/EmbeddedRunner/create()|",
+    "v1Body": [
+      "|java+method:///pl/touk/sputnik/review/Review/getFiles()|",
+      "|java+method:///java/io/File/getName()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///pl/touk/sputnik/review/ReviewFile/getReviewFilename()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///com/google/common/collect/Lists/newArrayList()|",
+      "|java+method:///org/sonar/runner/api/EmbeddedRunner/create()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+constructor:///java/io/File/File(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///pl/touk/sputnik/processor/sonar/SonarRunner/SonarRunner(java.util.List,org.sonar.runner.api.EmbeddedRunner,pl.touk.sputnik.configuration.Configuration)|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "v2Body": [
+      "|java+method:///pl/touk/sputnik/review/Review/getFiles()|",
+      "|java+method:///java/io/File/getName()|",
+      "|java+method:///pl/touk/sputnik/review/ReviewFile/getReviewFilename()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///org/sonar/runner/api/StdOutLogOutput/StdOutLogOutput()|",
+      "|java+method:///com/google/common/collect/Lists/newArrayList()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+constructor:///java/io/File/File(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///pl/touk/sputnik/processor/sonar/SonarRunner/SonarRunner(java.util.List,org.sonar.runner.api.EmbeddedRunner,pl.touk.sputnik.configuration.Configuration)|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/sonar/runner/api/EmbeddedRunner/create(org.sonar.runner.api.LogOutput)|"
+    ],
+    "affectedLib": "org.codehaus.sonar.runner:sonar-runner-api:2.4",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "pl.touk:sputnik:1.5.1",
+    "coordinatesV2": "pl.touk:sputnik:1.6.2",
+    "caller": "|java+method:///pl/touk/sputnik/processor/sonar/SonarRunner/run()|",
+    "called": "|java+method:///org/sonar/runner/api/EmbeddedRunner/execute()|",
+    "v1Body": [
+      "|java+method:///java/util/Properties/toString()|",
+      "|java+method:///org/sonar/runner/api/EmbeddedRunner/addProperties(java.util.Properties)|",
+      "|java+method:///pl/touk/sputnik/processor/sonar/SonarRunner/loadBaseProperties()|",
+      "|java+constructor:///java/io/File/File(java.lang.String,java.lang.String)|",
+      "|java+method:///org/sonar/runner/api/EmbeddedRunner/execute()|",
+      "|java+method:///pl/touk/sputnik/processor/sonar/SonarRunner/setAdditionalProperties(java.util.Properties)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Properties/putAll(java.util.Map)|",
+      "|java+method:///java/util/Properties/toString()|",
+      "|java+method:///org/sonar/runner/api/EmbeddedRunner/globalProperties()|",
+      "|java+method:///pl/touk/sputnik/processor/sonar/SonarRunner/loadBaseProperties()|",
+      "|java+constructor:///java/io/File/File(java.lang.String,java.lang.String)|",
+      "|java+method:///org/sonar/runner/api/EmbeddedRunner/execute()|",
+      "|java+method:///pl/touk/sputnik/processor/sonar/SonarRunner/setAdditionalProperties(java.util.Properties)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String,java.lang.Object)|"
+    ],
+    "affectedLib": "org.sonarsource.sonar-runner:sonar-runner-api:2.5.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "pl.touk:sputnik:1.5.1",
+    "coordinatesV2": "pl.touk:sputnik:1.6.2",
+    "caller": "|java+method:///pl/touk/sputnik/processor/sonar/SonarRunnerBuilder/prepareRunner(pl.touk.sputnik.review.Review,pl.touk.sputnik.configuration.Configuration)|",
+    "called": "|java+constructor:///org/sonar/runner/api/StdOutLogOutput/StdOutLogOutput()|",
+    "v1Body": [
+      "|java+method:///pl/touk/sputnik/review/Review/getFiles()|",
+      "|java+method:///java/io/File/getName()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///pl/touk/sputnik/review/ReviewFile/getReviewFilename()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///com/google/common/collect/Lists/newArrayList()|",
+      "|java+method:///org/sonar/runner/api/EmbeddedRunner/create()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+constructor:///java/io/File/File(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///pl/touk/sputnik/processor/sonar/SonarRunner/SonarRunner(java.util.List,org.sonar.runner.api.EmbeddedRunner,pl.touk.sputnik.configuration.Configuration)|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "v2Body": [
+      "|java+method:///pl/touk/sputnik/review/Review/getFiles()|",
+      "|java+method:///java/io/File/getName()|",
+      "|java+method:///pl/touk/sputnik/review/ReviewFile/getReviewFilename()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///org/sonar/runner/api/StdOutLogOutput/StdOutLogOutput()|",
+      "|java+method:///com/google/common/collect/Lists/newArrayList()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+constructor:///java/io/File/File(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///pl/touk/sputnik/processor/sonar/SonarRunner/SonarRunner(java.util.List,org.sonar.runner.api.EmbeddedRunner,pl.touk.sputnik.configuration.Configuration)|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/sonar/runner/api/EmbeddedRunner/create(org.sonar.runner.api.LogOutput)|"
+    ],
+    "affectedLib": "org.sonarsource.sonar-runner:sonar-runner-api:2.5.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "pl.touk:sputnik:1.5.1",
+    "coordinatesV2": "pl.touk:sputnik:1.6.2",
+    "caller": "|java+method:///pl/touk/sputnik/processor/checkstyle/CheckstyleProcessor/innerProcess(pl.touk.sputnik.review.Review,com.puppycrawl.tools.checkstyle.api.AuditListener)|",
+    "called": "|java+method:///com/puppycrawl/tools/checkstyle/Checker/destroy()|",
+    "v1Body": [
+      "|java+method:///pl/touk/sputnik/processor/checkstyle/CheckstyleProcessor/createChecker(com.puppycrawl.tools.checkstyle.api.AuditListener)|",
+      "|java+constructor:///pl/touk/sputnik/review/filter/JavaFilter/JavaFilter()|",
+      "|java+method:///com/puppycrawl/tools/checkstyle/Checker/process(java.util.List)|",
+      "|java+method:///com/puppycrawl/tools/checkstyle/Checker/destroy()|",
+      "|java+constructor:///pl/touk/sputnik/review/transformer/IOFileTransformer/IOFileTransformer()|",
+      "|java+method:///pl/touk/sputnik/review/Review/getFiles(pl.touk.sputnik.review.filter.FileFilter,pl.touk.sputnik.review.transformer.FileTransformer)|"
+    ],
+    "v2Body": [
+      "|java+method:///pl/touk/sputnik/processor/checkstyle/CheckstyleProcessor/createChecker(com.puppycrawl.tools.checkstyle.api.AuditListener)|",
+      "|java+constructor:///pl/touk/sputnik/review/ReviewException/ReviewException(java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///pl/touk/sputnik/review/filter/JavaFilter/JavaFilter()|",
+      "|java+method:///com/puppycrawl/tools/checkstyle/Checker/process(java.util.List)|",
+      "|java+method:///com/puppycrawl/tools/checkstyle/Checker/destroy()|",
+      "|java+constructor:///pl/touk/sputnik/review/transformer/IOFileTransformer/IOFileTransformer()|",
+      "|java+method:///pl/touk/sputnik/review/Review/getFiles(pl.touk.sputnik.review.filter.FileFilter,pl.touk.sputnik.review.transformer.FileTransformer)|"
+    ],
+    "affectedLib": "com.puppycrawl.tools:checkstyle:6.14.1",
+    "change": "UPDATED"
+  }
+]

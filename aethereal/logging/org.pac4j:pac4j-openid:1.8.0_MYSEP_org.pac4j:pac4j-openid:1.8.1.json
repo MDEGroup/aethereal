@@ -1,0 +1,81 @@
+[
+  {
+    "coordinatesV1": "org.pac4j:pac4j-openid:1.8.0",
+    "coordinatesV2": "org.pac4j:pac4j-openid:1.8.1",
+    "caller": "|java+method:///org/pac4j/openid/client/BaseOpenIdClient/retrieveUserProfile(org.pac4j.openid.credentials.OpenIdCredentials,org.pac4j.core.context.WebContext)|",
+    "called": "|java+constructor:///org/pac4j/core/exception/TechnicalException/TechnicalException(java.lang.String,java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/pac4j/openid/credentials/OpenIdCredentials/getDiscoveryInformation()|",
+      "|java+method:///org/pac4j/openid/client/BaseOpenIdClient/getContextualCallbackUrl(org.pac4j.core.context.WebContext)|",
+      "|java+method:///org/pac4j/core/profile/CommonProfile/setId(java.lang.Object)|",
+      "|java+method:///org/pac4j/openid/credentials/OpenIdCredentials/getParameterList()|",
+      "|java+method:///org/openid4java/discovery/Identifier/getIdentifier()|",
+      "|java+constructor:///org/pac4j/core/exception/TechnicalException/TechnicalException(java.lang.String)|",
+      "|java+constructor:///org/pac4j/core/exception/TechnicalException/TechnicalException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/openid4java/consumer/VerificationResult/getVerifiedId()|",
+      "|java+method:///org/openid4java/consumer/ConsumerManager/verify(java.lang.String,org.openid4java.message.ParameterList,org.openid4java.discovery.DiscoveryInformation)|",
+      "|java+method:///org/openid4java/consumer/VerificationResult/getAuthResponse()|",
+      "|java+method:///org/pac4j/openid/client/BaseOpenIdClient/createProfile(org.openid4java.message.AuthSuccess)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/pac4j/openid/credentials/OpenIdCredentials/getDiscoveryInformation()|",
+      "|java+method:///org/pac4j/openid/client/BaseOpenIdClient/computeFinalCallbackUrl(org.pac4j.core.context.WebContext)|",
+      "|java+method:///org/pac4j/core/profile/CommonProfile/setId(java.lang.Object)|",
+      "|java+method:///org/pac4j/openid/credentials/OpenIdCredentials/getParameterList()|",
+      "|java+method:///org/openid4java/discovery/Identifier/getIdentifier()|",
+      "|java+constructor:///org/pac4j/core/exception/TechnicalException/TechnicalException(java.lang.String)|",
+      "|java+constructor:///org/pac4j/core/exception/TechnicalException/TechnicalException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/openid4java/consumer/VerificationResult/getVerifiedId()|",
+      "|java+method:///org/openid4java/consumer/ConsumerManager/verify(java.lang.String,org.openid4java.message.ParameterList,org.openid4java.discovery.DiscoveryInformation)|",
+      "|java+method:///org/openid4java/consumer/VerificationResult/getAuthResponse()|",
+      "|java+method:///org/pac4j/openid/client/BaseOpenIdClient/createProfile(org.openid4java.message.AuthSuccess)|"
+    ],
+    "affectedLib": "org.pac4j:pac4j-core:1.8.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.pac4j:pac4j-openid:1.8.0",
+    "coordinatesV2": "org.pac4j:pac4j-openid:1.8.1",
+    "caller": "|java+method:///org/pac4j/openid/client/BaseOpenIdClient/retrieveRedirectAction(org.pac4j.core.context.WebContext)|",
+    "called": "|java+method:///org/pac4j/core/util/CommonHelper/assertNotBlank(java.lang.String,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/pac4j/openid/client/BaseOpenIdClient/getFetchRequest()|",
+      "|java+method:///org/openid4java/message/AuthRequest/getDestinationUrl(boolean)|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/openid4java/consumer/ConsumerManager/discover(java.lang.String)|",
+      "|java+method:///org/pac4j/core/client/RedirectAction/redirect(java.lang.String)|",
+      "|java+method:///org/openid4java/message/AuthRequest/addExtension(org.openid4java.message.MessageExtension)|",
+      "|java+method:///org/pac4j/openid/client/BaseOpenIdClient/getContextualCallbackUrl(org.pac4j.core.context.WebContext)|",
+      "|java+constructor:///org/pac4j/core/exception/TechnicalException/TechnicalException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/pac4j/core/util/CommonHelper/assertNotBlank(java.lang.String,java.lang.String)|",
+      "|java+method:///org/openid4java/consumer/ConsumerManager/associate(java.util.List)|",
+      "|java+method:///org/pac4j/openid/client/BaseOpenIdClient/getUser(org.pac4j.core.context.WebContext)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/pac4j/openid/client/BaseOpenIdClient/getDiscoveryInformationSessionAttributeName()|",
+      "|java+method:///org/openid4java/consumer/ConsumerManager/authenticate(org.openid4java.discovery.DiscoveryInformation,java.lang.String)|",
+      "|java+method:///org/pac4j/core/context/WebContext/setSessionAttribute(java.lang.String,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/pac4j/openid/client/BaseOpenIdClient/getFetchRequest()|",
+      "|java+method:///org/openid4java/message/AuthRequest/getDestinationUrl(boolean)|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/openid4java/consumer/ConsumerManager/discover(java.lang.String)|",
+      "|java+method:///org/openid4java/message/AuthRequest/addExtension(org.openid4java.message.MessageExtension)|",
+      "|java+constructor:///org/pac4j/core/exception/TechnicalException/TechnicalException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/pac4j/core/util/CommonHelper/assertNotBlank(java.lang.String,java.lang.String)|",
+      "|java+method:///org/openid4java/consumer/ConsumerManager/associate(java.util.List)|",
+      "|java+method:///org/pac4j/openid/client/BaseOpenIdClient/getUser(org.pac4j.core.context.WebContext)|",
+      "|java+method:///org/pac4j/openid/client/BaseOpenIdClient/getDiscoveryInformationSessionAttributeName()|",
+      "|java+method:///org/openid4java/consumer/ConsumerManager/authenticate(org.openid4java.discovery.DiscoveryInformation,java.lang.String)|",
+      "|java+method:///org/pac4j/core/context/WebContext/setSessionAttribute(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/pac4j/openid/client/BaseOpenIdClient/computeFinalCallbackUrl(org.pac4j.core.context.WebContext)|",
+      "|java+method:///org/pac4j/core/client/RedirectAction/redirect(java.lang.String)|"
+    ],
+    "affectedLib": "org.pac4j:pac4j-core:1.8.1",
+    "change": "UPDATED"
+  }
+]

@@ -1,0 +1,130 @@
+[
+  {
+    "coordinatesV1": "org.sonatype.security.realms:security-xml-realm:2.7",
+    "coordinatesV2": "org.sonatype.security.realms:security-xml-realm:2.8",
+    "caller": "|java+method:///org/sonatype/security/realms/tools/EnhancedConfiguration/getUsers()|",
+    "called": "|java+method:///com/google/common/collect/ImmutableList/copyOf(java.util.Collection)|",
+    "v1Body": [
+      "|java+method:///java/util/Collections/unmodifiableList(java.util.List)|",
+      "|java+method:///org/sonatype/security/model/Configuration/getUsers()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/common/collect/ImmutableList/copyOf(java.util.Collection)|",
+      "|java+method:///org/sonatype/security/model/Configuration/getUsers()|"
+    ],
+    "affectedLib": "com.google.guava:guava:10.0.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.sonatype.security.realms:security-xml-realm:2.7",
+    "coordinatesV2": "org.sonatype.security.realms:security-xml-realm:2.8",
+    "caller": "|java+method:///org/sonatype/security/realms/tools/EnhancedConfiguration/getPrivileges()|",
+    "called": "|java+method:///com/google/common/collect/ImmutableList/copyOf(java.util.Collection)|",
+    "v1Body": [
+      "|java+method:///org/sonatype/security/model/Configuration/getPrivileges()|",
+      "|java+method:///java/util/Collections/unmodifiableList(java.util.List)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/sonatype/security/model/Configuration/getPrivileges()|",
+      "|java+method:///com/google/common/collect/ImmutableList/copyOf(java.util.Collection)|"
+    ],
+    "affectedLib": "com.google.guava:guava:10.0.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.sonatype.security.realms:security-xml-realm:2.7",
+    "coordinatesV2": "org.sonatype.security.realms:security-xml-realm:2.8",
+    "caller": "|java+method:///org/sonatype/security/realms/tools/EnhancedConfiguration/getUserRoleMappings()|",
+    "called": "|java+method:///com/google/common/collect/ImmutableList/copyOf(java.util.Collection)|",
+    "v1Body": [
+      "|java+method:///org/sonatype/security/model/Configuration/getUserRoleMappings()|",
+      "|java+method:///java/util/Collections/unmodifiableList(java.util.List)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/sonatype/security/model/Configuration/getUserRoleMappings()|",
+      "|java+method:///com/google/common/collect/ImmutableList/copyOf(java.util.Collection)|"
+    ],
+    "affectedLib": "com.google.guava:guava:10.0.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.sonatype.security.realms:security-xml-realm:2.7",
+    "coordinatesV2": "org.sonatype.security.realms:security-xml-realm:2.8",
+    "caller": "|java+method:///org/sonatype/security/realms/tools/EnhancedConfiguration/getRoles()|",
+    "called": "|java+method:///com/google/common/collect/ImmutableList/copyOf(java.util.Collection)|",
+    "v1Body": [
+      "|java+method:///java/util/Collections/unmodifiableList(java.util.List)|",
+      "|java+method:///org/sonatype/security/model/Configuration/getRoles()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/sonatype/security/model/Configuration/getRoles()|",
+      "|java+method:///com/google/common/collect/ImmutableList/copyOf(java.util.Collection)|"
+    ],
+    "affectedLib": "com.google.guava:guava:10.0.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.sonatype.security.realms:security-xml-realm:2.7",
+    "coordinatesV2": "org.sonatype.security.realms:security-xml-realm:2.8",
+    "caller": "|java+constructor:///org/sonatype/security/realms/tools/EnhancedConfiguration/EnhancedConfiguration(org.sonatype.security.model.Configuration)|",
+    "called": "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/sonatype/security/realms/tools/EnhancedConfiguration/rebuildId2PrivilegesLookupMap()|",
+      "|java+constructor:///org/sonatype/security/model/Configuration/Configuration()|",
+      "|java+method:///org/sonatype/security/realms/tools/EnhancedConfiguration/rebuildId2RoleMappingsLookupMap()|",
+      "|java+method:///org/sonatype/security/realms/tools/EnhancedConfiguration/rebuildId2UsersLookupMap()|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+method:///org/sonatype/security/realms/tools/EnhancedConfiguration/rebuildId2RolesLookupMap()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/sonatype/security/realms/tools/EnhancedConfiguration/rebuildId2PrivilegesLookupMap()|",
+      "|java+constructor:///java/util/concurrent/ConcurrentHashMap/ConcurrentHashMap()|",
+      "|java+method:///org/sonatype/security/realms/tools/EnhancedConfiguration/rebuildId2RoleMappingsLookupMap()|",
+      "|java+method:///org/sonatype/security/realms/tools/EnhancedConfiguration/rebuildId2UsersLookupMap()|",
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object)|",
+      "|java+method:///org/sonatype/security/realms/tools/EnhancedConfiguration/rebuildId2RolesLookupMap()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "com.google.guava:guava:10.0.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.sonatype.security.realms:security-xml-realm:2.7",
+    "coordinatesV2": "org.sonatype.security.realms:security-xml-realm:2.8",
+    "caller": "|java+method:///org/sonatype/security/realms/tools/DefaultConfigurationManager/createUser(org.sonatype.security.model.CUser,java.lang.String,java.util.Set,org.sonatype.security.realms.validator.SecurityValidationContext)|",
+    "called": "|java+method:///org/sonatype/security/usermanagement/StringDigester/getSha1Digest(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/sonatype/security/realms/tools/DefaultConfigurationManager/buildUserRoleMapping(java.lang.String,java.util.Set)|",
+      "|java+method:///org/sonatype/security/realms/tools/EnhancedConfiguration/addUser(org.sonatype.security.model.CUser)|",
+      "|java+method:///java/lang/String/trim()|",
+      "|java+method:///java/lang/String/length()|",
+      "|java+method:///org/sonatype/security/model/CUser/getId()|",
+      "|java+method:///org/sonatype/security/realms/tools/DefaultConfigurationManager/initializeContext()|",
+      "|java+method:///org/sonatype/security/realms/tools/DefaultConfigurationManager/getConfiguration()|",
+      "|java+method:///org/sonatype/security/usermanagement/StringDigester/getSha1Digest(java.lang.String)|",
+      "|java+constructor:///org/sonatype/configuration/validation/InvalidConfigurationException/InvalidConfigurationException(org.sonatype.configuration.validation.ValidationResponse)|",
+      "|java+method:///org/sonatype/security/model/CUser/setPassword(java.lang.String)|",
+      "|java+method:///org/sonatype/configuration/validation/ValidationResponse/isValid()|",
+      "|java+method:///org/sonatype/security/realms/validator/SecurityConfigurationValidator/validateUser(org.sonatype.security.realms.validator.SecurityValidationContext,org.sonatype.security.model.CUser,java.util.Set,boolean)|",
+      "|java+method:///org/sonatype/security/realms/tools/DefaultConfigurationManager/createOrUpdateUserRoleMapping(org.sonatype.security.model.CUserRoleMapping)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/sonatype/security/realms/tools/DefaultConfigurationManager/buildUserRoleMapping(java.lang.String,java.util.Set)|",
+      "|java+method:///org/sonatype/security/realms/tools/EnhancedConfiguration/addUser(org.sonatype.security.model.CUser)|",
+      "|java+method:///java/lang/String/trim()|",
+      "|java+method:///java/lang/String/length()|",
+      "|java+method:///org/sonatype/security/realms/tools/DefaultConfigurationManager/logValidationWarnings(org.sonatype.configuration.validation.ValidationResponse)|",
+      "|java+method:///org/sonatype/security/model/CUser/getId()|",
+      "|java+method:///org/sonatype/security/realms/tools/DefaultConfigurationManager/initializeContext()|",
+      "|java+method:///org/sonatype/security/realms/tools/DefaultConfigurationManager/getConfiguration()|",
+      "|java+method:///org/sonatype/security/usermanagement/StringDigester/getSha1Digest(java.lang.String)|",
+      "|java+constructor:///org/sonatype/configuration/validation/InvalidConfigurationException/InvalidConfigurationException(org.sonatype.configuration.validation.ValidationResponse)|",
+      "|java+method:///org/sonatype/security/model/CUser/setPassword(java.lang.String)|",
+      "|java+method:///org/sonatype/configuration/validation/ValidationResponse/isValid()|",
+      "|java+method:///org/sonatype/security/realms/validator/SecurityConfigurationValidator/validateUser(org.sonatype.security.realms.validator.SecurityValidationContext,org.sonatype.security.model.CUser,java.util.Set,boolean)|",
+      "|java+method:///org/sonatype/security/realms/tools/DefaultConfigurationManager/createOrUpdateUserRoleMapping(org.sonatype.security.model.CUserRoleMapping)|"
+    ],
+    "affectedLib": "org.sonatype.security:security-system:2.8",
+    "change": "UPDATED"
+  }
+]

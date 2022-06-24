@@ -1,0 +1,304 @@
+[
+  {
+    "coordinatesV1": "com.emc.ecs:object-transform:1.1.0",
+    "coordinatesV2": "com.emc.ecs:object-transform:1.0.2",
+    "caller": "|java+initializer:///com/emc/codec/encryption/EncryptionUtil/EncryptionUtil$initializer|",
+    "called": "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "log4j:log4j:1.2.16",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.emc.ecs:object-transform:1.1.0",
+    "coordinatesV2": "com.emc.ecs:object-transform:1.0.2",
+    "caller": "|java+initializer:///com/emc/codec/encryption/EncryptionCodec/EncryptionCodec$initializer|",
+    "called": "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "log4j:log4j:1.2.16",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.emc.ecs:object-transform:1.1.0",
+    "coordinatesV2": "com.emc.ecs:object-transform:1.0.2",
+    "caller": "|java+constructor:///com/emc/codec/encryption/KeystoreKeyProvider/KeystoreKeyProvider(java.security.KeyStore,char%5B%5D,java.lang.String)|",
+    "called": "|java+method:///org/apache/log4j/LogMF/warn(org.apache.log4j.Logger,java.lang.Throwable,java.lang.String,java.lang.Object%5B%5D)|",
+    "v1Body": [
+      "|java+method:///com/emc/codec/encryption/KeystoreKeyProvider/getKeyFromAlias(java.lang.String)|",
+      "|java+method:///com/emc/codec/encryption/KeystoreKeyProvider/addKey(java.security.KeyPair)|",
+      "|java+method:///java/security/KeyStore/aliases()|",
+      "|java+method:///com/emc/codec/encryption/KeystoreKeyProvider/setMasterKeyAlias(java.lang.String)|",
+      "|java+method:///java/util/Enumeration/hasMoreElements()|",
+      "|java+constructor:///com/emc/codec/encryption/BasicKeyProvider/BasicKeyProvider()|",
+      "|java+method:///org/apache/log4j/LogMF/warn(org.apache.log4j.Logger,java.lang.Throwable,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///java/util/Enumeration/nextElement()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/emc/codec/encryption/KeystoreKeyProvider/getKeyFromAlias(java.lang.String)|",
+      "|java+method:///com/emc/codec/encryption/KeystoreKeyProvider/addKey(java.security.KeyPair)|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/security/KeyStore/aliases()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///com/emc/codec/encryption/KeystoreKeyProvider/setMasterKeyAlias(java.lang.String)|",
+      "|java+method:///java/util/Enumeration/hasMoreElements()|",
+      "|java+method:///java/util/Enumeration/nextElement()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///com/emc/codec/encryption/BasicKeyProvider/BasicKeyProvider()|"
+    ],
+    "affectedLib": "log4j:log4j:1.2.16",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.emc.ecs:object-transform:1.1.0",
+    "coordinatesV2": "com.emc.ecs:object-transform:1.0.2",
+    "caller": "|java+initializer:///com/emc/codec/encryption/BasicKeyProvider/BasicKeyProvider$initializer|",
+    "called": "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "log4j:log4j:1.2.16",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.emc.ecs:object-transform:1.1.0",
+    "coordinatesV2": "com.emc.ecs:object-transform:1.0.2",
+    "caller": "|java+method:///com/emc/codec/encryption/EncryptionUtil/signMetadata(java.util.Map,java.security.interfaces.RSAPrivateKey,java.security.Provider)|",
+    "called": "|java+method:///org/apache/log4j/LogMF/debug(org.apache.log4j.Logger,java.lang.String,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/security/Signature/getInstance(java.lang.String)|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+method:///org/apache/log4j/LogMF/debug(org.apache.log4j.Logger,java.lang.String,java.lang.Object)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/util/Set/iterator()|",
+      "|java+method:///java/lang/String/getBytes(java.lang.String)|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///java/lang/String/startsWith(java.lang.String)|",
+      "|java+method:///java/security/Signature/initSign(java.security.PrivateKey)|",
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/lang/String/toLowerCase()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/Collections/sort(java.util.List,java.util.Comparator)|",
+      "|java+method:///java/security/Signature/sign()|",
+      "|java+method:///java/util/Map/keySet()|",
+      "|java+method:///java/security/Signature/update(byte%5B%5D)|",
+      "|java+method:///java/lang/StringBuffer/toString()|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///com/emc/codec/encryption/EncryptionUtil/urlSafeEncodeBase64(byte%5B%5D)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///java/lang/StringBuffer/append(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuffer/StringBuffer()|",
+      "|java+method:///java/security/Signature/getInstance(java.lang.String,java.security.Provider)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///com/emc/codec/encryption/EncryptionUtil$1/EncryptionUtil$1()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/security/Signature/getInstance(java.lang.String)|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/util/Set/iterator()|",
+      "|java+method:///java/lang/String/getBytes(java.lang.String)|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///java/lang/String/startsWith(java.lang.String)|",
+      "|java+method:///java/security/Signature/initSign(java.security.PrivateKey)|",
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/lang/String/toLowerCase()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/Collections/sort(java.util.List,java.util.Comparator)|",
+      "|java+method:///java/security/Signature/sign()|",
+      "|java+method:///java/util/Map/keySet()|",
+      "|java+method:///java/security/Signature/update(byte%5B%5D)|",
+      "|java+method:///java/lang/StringBuffer/toString()|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///com/emc/codec/encryption/EncryptionUtil/urlSafeEncodeBase64(byte%5B%5D)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///java/lang/StringBuffer/append(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuffer/StringBuffer()|",
+      "|java+method:///java/security/Signature/getInstance(java.lang.String,java.security.Provider)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///com/emc/codec/encryption/EncryptionUtil$1/EncryptionUtil$1()|"
+    ],
+    "affectedLib": "log4j:log4j:1.2.16",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.emc.ecs:object-transform:1.1.0",
+    "coordinatesV2": "com.emc.ecs:object-transform:1.0.2",
+    "caller": "|java+method:///com/emc/codec/encryption/EncryptionCodec/canProcess(java.lang.String)|",
+    "called": "|java+method:///org/apache/log4j/LogMF/warn(org.apache.log4j.Logger,java.lang.String,java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/LogMF/warn(org.apache.log4j.Logger,java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///javax/crypto/Cipher/getInstance(java.lang.String)|",
+      "|java+method:///com/emc/codec/encryption/EncryptionUtil/getCipherSpec(java.lang.String)|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///com/emc/codec/util/CodecUtil/getEncodeType(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///javax/crypto/Cipher/getInstance(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///com/emc/codec/encryption/EncryptionUtil/getCipherSpec(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///com/emc/codec/util/CodecUtil/getEncodeType(java.lang.String)|"
+    ],
+    "affectedLib": "log4j:log4j:1.2.16",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.emc.ecs:object-transform:1.1.0",
+    "coordinatesV2": "com.emc.ecs:object-transform:1.0.2",
+    "caller": "|java+initializer:///com/emc/codec/compression/lzma/DecoderThread/DecoderThread$initializer|",
+    "called": "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+constructor:///java/lang/ThreadGroup/ThreadGroup(java.lang.String)|",
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/lang/ThreadGroup/ThreadGroup(java.lang.String)|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "log4j:log4j:1.2.16",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.emc.ecs:object-transform:1.1.0",
+    "coordinatesV2": "com.emc.ecs:object-transform:1.0.2",
+    "caller": "|java+initializer:///com/emc/codec/encryption/KeystoreKeyProvider/KeystoreKeyProvider$initializer|",
+    "called": "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "log4j:log4j:1.2.16",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.emc.ecs:object-transform:1.1.0",
+    "coordinatesV2": "com.emc.ecs:object-transform:1.0.2",
+    "caller": "|java+initializer:///com/emc/codec/compression/lzma/EncoderThread/EncoderThread$initializer|",
+    "called": "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+constructor:///java/lang/ThreadGroup/ThreadGroup(java.lang.String)|",
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/lang/ThreadGroup/ThreadGroup(java.lang.String)|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "log4j:log4j:1.2.16",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.emc.ecs:object-transform:1.0.2",
+    "coordinatesV2": "com.emc.ecs:object-transform:1.1.0",
+    "caller": "|java+initializer:///com/emc/codec/encryption/EncryptionUtil/EncryptionUtil$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.emc.ecs:object-transform:1.0.2",
+    "coordinatesV2": "com.emc.ecs:object-transform:1.1.0",
+    "caller": "|java+initializer:///com/emc/codec/encryption/EncryptionCodec/EncryptionCodec$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.emc.ecs:object-transform:1.0.2",
+    "coordinatesV2": "com.emc.ecs:object-transform:1.1.0",
+    "caller": "|java+initializer:///com/emc/codec/encryption/BasicKeyProvider/BasicKeyProvider$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.emc.ecs:object-transform:1.0.2",
+    "coordinatesV2": "com.emc.ecs:object-transform:1.1.0",
+    "caller": "|java+initializer:///com/emc/codec/compression/lzma/DecoderThread/DecoderThread$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+constructor:///java/lang/ThreadGroup/ThreadGroup(java.lang.String)|",
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/lang/ThreadGroup/ThreadGroup(java.lang.String)|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.emc.ecs:object-transform:1.0.2",
+    "coordinatesV2": "com.emc.ecs:object-transform:1.1.0",
+    "caller": "|java+initializer:///com/emc/codec/encryption/KeystoreKeyProvider/KeystoreKeyProvider$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.emc.ecs:object-transform:1.0.2",
+    "coordinatesV2": "com.emc.ecs:object-transform:1.1.0",
+    "caller": "|java+initializer:///com/emc/codec/compression/lzma/EncoderThread/EncoderThread$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+constructor:///java/lang/ThreadGroup/ThreadGroup(java.lang.String)|",
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/lang/ThreadGroup/ThreadGroup(java.lang.String)|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "ADDED"
+  }
+]

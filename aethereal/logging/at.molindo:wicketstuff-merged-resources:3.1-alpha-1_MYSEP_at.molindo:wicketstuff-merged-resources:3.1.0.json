@@ -1,0 +1,106 @@
+[
+  {
+    "coordinatesV1": "at.molindo:wicketstuff-merged-resources:3.1-alpha-1",
+    "coordinatesV2": "at.molindo:wicketstuff-merged-resources:3.1.0",
+    "caller": "|java+method:///org/wicketstuff/mergedresources/util/YuiCompressorUtil/compress(byte%5B%5D,java.nio.charset.Charset)|",
+    "called": "|java+constructor:///com/yahoo/platform/yui/compressor/CssCompressor/CssCompressor(java.io.Reader)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///java/io/ByteArrayOutputStream/ByteArrayOutputStream(int)|",
+      "|java+constructor:///java/io/ByteArrayInputStream/ByteArrayInputStream(byte%5B%5D)|",
+      "|java+constructor:///java/io/InputStreamReader/InputStreamReader(java.io.InputStream,java.nio.charset.Charset)|",
+      "|java+method:///java/io/OutputStreamWriter/close()|",
+      "|java+constructor:///at/molindo/thirdparty/com/yahoo/platform/yui/compressor/CssCompressor/CssCompressor(java.io.Reader)|",
+      "|java+method:///java/io/OutputStreamWriter/flush()|",
+      "|java+constructor:///java/io/OutputStreamWriter/OutputStreamWriter(java.io.OutputStream)|",
+      "|java+method:///at/molindo/thirdparty/com/yahoo/platform/yui/compressor/CssCompressor/compress(java.io.Writer,int)|",
+      "|java+method:///java/io/ByteArrayOutputStream/toByteArray()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///java/io/ByteArrayOutputStream/ByteArrayOutputStream(int)|",
+      "|java+constructor:///java/io/ByteArrayInputStream/ByteArrayInputStream(byte%5B%5D)|",
+      "|java+constructor:///java/io/InputStreamReader/InputStreamReader(java.io.InputStream,java.nio.charset.Charset)|",
+      "|java+method:///java/io/OutputStreamWriter/close()|",
+      "|java+method:///com/yahoo/platform/yui/compressor/CssCompressor/compress(java.io.Writer,int)|",
+      "|java+constructor:///com/yahoo/platform/yui/compressor/CssCompressor/CssCompressor(java.io.Reader)|",
+      "|java+method:///java/io/OutputStreamWriter/flush()|",
+      "|java+constructor:///java/io/OutputStreamWriter/OutputStreamWriter(java.io.OutputStream)|",
+      "|java+method:///java/io/ByteArrayOutputStream/toByteArray()|"
+    ],
+    "affectedLib": "com.yahoo.platform.yui:yuicompressor:2.4.6",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "at.molindo:wicketstuff-merged-resources:3.1-alpha-1",
+    "coordinatesV2": "at.molindo:wicketstuff-merged-resources:3.1.0",
+    "caller": "|java+method:///org/wicketstuff/mergedresources/util/YuiCompressorUtil/compress(java.lang.String)|",
+    "called": "|java+constructor:///com/yahoo/platform/yui/compressor/CssCompressor/CssCompressor(java.io.Reader)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/lang/String/length()|",
+      "|java+constructor:///java/io/StringWriter/StringWriter(int)|",
+      "|java+constructor:///java/io/StringReader/StringReader(java.lang.String)|",
+      "|java+method:///java/io/StringWriter/toString()|",
+      "|java+method:///at/molindo/thirdparty/com/yahoo/platform/yui/compressor/CssCompressor/compress(java.io.Writer,int)|",
+      "|java+constructor:///at/molindo/thirdparty/com/yahoo/platform/yui/compressor/CssCompressor/CssCompressor(java.io.Reader)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/lang/String/length()|",
+      "|java+constructor:///java/io/StringWriter/StringWriter(int)|",
+      "|java+constructor:///java/io/StringReader/StringReader(java.lang.String)|",
+      "|java+method:///java/io/StringWriter/toString()|",
+      "|java+method:///com/yahoo/platform/yui/compressor/CssCompressor/compress(java.io.Writer,int)|",
+      "|java+constructor:///com/yahoo/platform/yui/compressor/CssCompressor/CssCompressor(java.io.Reader)|"
+    ],
+    "affectedLib": "com.yahoo.platform.yui:yuicompressor:2.4.6",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "at.molindo:wicketstuff-merged-resources:3.1-alpha-1",
+    "coordinatesV2": "at.molindo:wicketstuff-merged-resources:3.1.0",
+    "caller": "|java+method:///org/wicketstuff/mergedresources/urlcoding/RemoteHostUrlCodingStrategy/encode(org.apache.wicket.IRequestTarget)|",
+    "called": "|java+method:///at/molindo/wicketutils/utils/WicketUtils/getHttpServletRequest()|",
+    "v1Body": [
+      "|java+method:///java/lang/Integer/intValue()|",
+      "|java+method:///java/lang/Object/toString()|",
+      "|java+method:///at/molindo/wicketutils/utils/WicketUtils/getHttpServletRequest()|",
+      "|java+method:///java/net/URL/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///at/molindo/utils/data/StringUtils/stripLeading(java.lang.String,java.lang.String)|",
+      "|java+constructor:///java/net/URL/URL(java.lang.String,java.lang.String,int,java.lang.String)|",
+      "|java+method:///org/wicketstuff/mergedresources/urlcoding/RemoteHostUrlCodingStrategy/isUseRequestProtocol()|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/apache/wicket/request/target/coding/AbstractRequestTargetUrlCodingStrategy/encode(org.apache.wicket.IRequestTarget)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///org/wicketstuff/mergedresources/urlcoding/RemoteHostUrlCodingStrategy/isUseRequestPort()|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getServerPort()|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getScheme()|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Integer/intValue()|",
+      "|java+method:///at/molindo/wicketutils/utils/WicketUtils/getHttpServletRequest()|",
+      "|java+method:///java/net/URL/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/CharSequence/toString()|",
+      "|java+method:///at/molindo/utils/data/StringUtils/stripLeading(java.lang.String,java.lang.String)|",
+      "|java+constructor:///java/net/URL/URL(java.lang.String,java.lang.String,int,java.lang.String)|",
+      "|java+method:///org/wicketstuff/mergedresources/urlcoding/RemoteHostUrlCodingStrategy/isUseRequestProtocol()|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/apache/wicket/request/target/coding/AbstractRequestTargetUrlCodingStrategy/encode(org.apache.wicket.IRequestTarget)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///org/wicketstuff/mergedresources/urlcoding/RemoteHostUrlCodingStrategy/isUseRequestPort()|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getServerPort()|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getScheme()|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "affectedLib": "at.molindo:molindo-wicket-utils:1.0.0-alpha-2",
+    "change": "UPDATED"
+  }
+]

@@ -1,0 +1,60 @@
+[
+  {
+    "coordinatesV1": "net.sf.jalarms:jalarms-remote:1.7.2",
+    "coordinatesV2": "net.sf.jalarms:jalarms-remote:1.7.1",
+    "caller": "|java+method:///com/solab/alarms/remote/HttpAlarmListener/run()|",
+    "called": "|java+method:///org/jboss/netty/bootstrap/ServerBootstrap/bind(java.net.SocketAddress)|",
+    "v1Body": [
+      "|java+method:///org/jboss/netty/bootstrap/ServerBootstrap/bind(java.net.SocketAddress)|",
+      "|java+method:///org/jboss/netty/bootstrap/ServerBootstrap/setPipelineFactory(org.jboss.netty.channel.ChannelPipelineFactory)|",
+      "|java+constructor:///java/net/InetSocketAddress/InetSocketAddress(int)|"
+    ],
+    "v2Body": [
+      "|java+method:///io/netty/bootstrap/ServerBootstrap/channel(java.lang.Class)|",
+      "|java+method:///io/netty/channel/ChannelFuture/sync()|",
+      "|java+method:///io/netty/bootstrap/ServerBootstrap/bind(int)|",
+      "|java+constructor:///io/netty/bootstrap/ServerBootstrap/ServerBootstrap()|",
+      "|java+method:///io/netty/channel/ChannelFuture/channel()|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///io/netty/bootstrap/ServerBootstrap/childHandler(io.netty.channel.ChannelHandler)|",
+      "|java+constructor:///com/solab/alarms/remote/HttpAlarmListener$1/HttpAlarmListener$1(com.solab.alarms.remote.HttpAlarmListener)|",
+      "|java+method:///io/netty/bootstrap/ServerBootstrap/group(io.netty.channel.EventLoopGroup,io.netty.channel.EventLoopGroup)|",
+      "|java+method:///io/netty/bootstrap/ServerBootstrap/option(io.netty.channel.ChannelOption,java.lang.Object)|"
+    ],
+    "affectedLib": "org.jboss.netty:netty:3.2.7.Final",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "net.sf.jalarms:jalarms-remote:1.7.2",
+    "coordinatesV2": "net.sf.jalarms:jalarms-remote:1.7.1",
+    "caller": "|java+constructor:///com/solab/alarms/remote/http/HttpRequestHandler/HttpRequestHandler(com.solab.alarms.AlarmSender)|",
+    "called": "|java+constructor:///org/jboss/netty/channel/SimpleChannelUpstreamHandler/SimpleChannelUpstreamHandler()|",
+    "v1Body": [
+      "|java+constructor:///org/jboss/netty/channel/SimpleChannelUpstreamHandler/SimpleChannelUpstreamHandler()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///io/netty/channel/SimpleChannelInboundHandler/SimpleChannelInboundHandler()|"
+    ],
+    "affectedLib": "org.jboss.netty:netty:3.2.7.Final",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "net.sf.jalarms:jalarms-remote:1.7.2",
+    "coordinatesV2": "net.sf.jalarms:jalarms-remote:1.7.1",
+    "caller": "|java+constructor:///com/solab/alarms/remote/HttpAlarmListener/HttpAlarmListener(int)|",
+    "called": "|java+constructor:///org/jboss/netty/channel/socket/nio/NioServerSocketChannelFactory/NioServerSocketChannelFactory(java.util.concurrent.Executor,java.util.concurrent.Executor)|",
+    "v1Body": [
+      "|java+constructor:///com/solab/alarms/remote/AbstractAlarmListener/AbstractAlarmListener()|",
+      "|java+constructor:///org/jboss/netty/channel/socket/nio/NioServerSocketChannelFactory/NioServerSocketChannelFactory(java.util.concurrent.Executor,java.util.concurrent.Executor)|",
+      "|java+constructor:///org/jboss/netty/bootstrap/ServerBootstrap/ServerBootstrap(org.jboss.netty.channel.ChannelFactory)|",
+      "|java+method:///java/util/concurrent/Executors/newCachedThreadPool()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/solab/alarms/remote/AbstractAlarmListener/AbstractAlarmListener()|",
+      "|java+constructor:///io/netty/channel/nio/NioEventLoopGroup/NioEventLoopGroup()|"
+    ],
+    "affectedLib": "org.jboss.netty:netty:3.2.7.Final",
+    "change": "REMOVED"
+  }
+]

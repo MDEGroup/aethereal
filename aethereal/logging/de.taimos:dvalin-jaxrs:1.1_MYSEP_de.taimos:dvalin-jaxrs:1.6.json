@@ -1,0 +1,75 @@
+[
+  {
+    "coordinatesV1": "de.taimos:dvalin-jaxrs:1.1",
+    "coordinatesV2": "de.taimos:dvalin-jaxrs:1.6",
+    "caller": "|java+method:///de/taimos/dvalin/jaxrs/security/RolesFilter/filter(javax.ws.rs.container.ContainerRequestContext)|",
+    "called": "|java+method:///org/apache/cxf/jaxrs/utils/JAXRSUtils/getCurrentMessage()|",
+    "v1Body": [
+      "|java+method:///javax/ws/rs/core/Response$ResponseBuilder/entity(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///com/google/common/base/Joiner/on(java.lang.String)|",
+      "|java+method:///javax/ws/rs/core/Response$ResponseBuilder/build()|",
+      "|java+method:///de/taimos/dvalin/jaxrs/security/RolesFilter/searchRoles(java.lang.reflect.Method)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/apache/cxf/message/Message/get(java.lang.Class)|",
+      "|java+method:///org/apache/cxf/message/Message/get(java.lang.Object)|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+method:///org/apache/cxf/security/SecurityContext/isUserInRole(java.lang.String)|",
+      "|java+method:///javax/ws/rs/core/Response/status(javax.ws.rs.core.Response$Status)|",
+      "|java+method:///com/google/common/base/Joiner/join(java.lang.Object%5B%5D)|",
+      "|java+method:///javax/ws/rs/container/ContainerRequestContext/abortWith(javax.ws.rs.core.Response)|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/apache/cxf/jaxrs/utils/JAXRSUtils/getCurrentMessage()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///javax/ws/rs/core/Response/status(javax.ws.rs.core.Response$Status)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///com/google/common/base/Joiner/on(java.lang.String)|",
+      "|java+method:///java/util/List/isEmpty()|",
+      "|java+method:///javax/ws/rs/core/Response$ResponseBuilder/build()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/apache/cxf/message/Message/get(java.lang.Class)|",
+      "|java+method:///com/google/common/collect/Lists/newArrayList(java.lang.Object%5B%5D)|",
+      "|java+method:///org/apache/cxf/message/Message/get(java.lang.Object)|",
+      "|java+method:///de/taimos/dvalin/jaxrs/JaxRsAnnotationScanner/searchForAnnotation(java.lang.reflect.Method,java.lang.Class)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+method:///org/apache/cxf/security/SecurityContext/isUserInRole(java.lang.String)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///javax/ws/rs/core/Response$ResponseBuilder/entity(java.lang.Object)|",
+      "|java+method:///javax/ws/rs/container/ContainerRequestContext/abortWith(javax.ws.rs.core.Response)|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///javax/annotation/security/RolesAllowed/value()|",
+      "|java+method:///java/util/List/addAll(java.util.Collection)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///com/google/common/base/Joiner/join(java.lang.Iterable)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/apache/cxf/jaxrs/utils/JAXRSUtils/getCurrentMessage()|"
+    ],
+    "affectedLib": "org.apache.cxf:cxf-rt-frontend-jaxrs:3.1.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "de.taimos:dvalin-jaxrs:1.1",
+    "coordinatesV2": "de.taimos:dvalin-jaxrs:1.6",
+    "caller": "|java+method:///de/taimos/dvalin/jaxrs/providers/JacksonProvider/readFrom(java.lang.Class,java.lang.reflect.Type,java.lang.annotation.Annotation%5B%5D,javax.ws.rs.core.MediaType,javax.ws.rs.core.MultivaluedMap,java.io.InputStream)|",
+    "called": "|java+method:///com/fasterxml/jackson/databind/type/TypeFactory/constructType(java.lang.reflect.Type)|",
+    "v1Body": [
+      "|java+method:///com/fasterxml/jackson/databind/type/TypeFactory/constructType(java.lang.reflect.Type)|",
+      "|java+method:///java/lang/Object/equals(java.lang.Object)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/readValue(java.io.InputStream,com.fasterxml.jackson.databind.JavaType)|",
+      "|java+method:///com/fasterxml/jackson/databind/type/TypeFactory/defaultInstance()|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/readValue(java.io.InputStream,java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/readValue(java.io.InputStream,com.fasterxml.jackson.databind.JavaType)|",
+      "|java+method:///com/fasterxml/jackson/databind/type/TypeFactory/constructType(java.lang.reflect.Type)|",
+      "|java+method:///com/fasterxml/jackson/databind/type/TypeFactory/defaultInstance()|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/readValue(java.io.InputStream,java.lang.Class)|"
+    ],
+    "affectedLib": "com.fasterxml.jackson.core:jackson-databind:2.7.4",
+    "change": "UPDATED"
+  }
+]

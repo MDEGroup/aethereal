@@ -1,0 +1,98 @@
+[
+  {
+    "coordinatesV1": "org.rhttpc:rhttpc-client_2.11:0.2.0-RC1",
+    "coordinatesV2": "org.rhttpc:rhttpc-client_2.11:0.1.0",
+    "caller": "|java+method:///rhttpc/client/ReliableHttp$/apply(akka.actor.ActorSystem)|",
+    "called": "|java+method:///rhttpc/api/transport/amqp/AmqpTransportFactory$/create(rhttpc.api.transport.amqp.AmqpTransportCreateData)|",
+    "v1Body": [
+      "|java+method:///scala/reflect/ManifestFactory$/classType(java.lang.Class)|",
+      "|java+constructor:///rhttpc/api/transport/amqp/AmqpTransportCreateData/AmqpTransportCreateData(akka.actor.ActorSystem,int,scala.reflect.Manifest,org.json4s.Formats)|",
+      "|java+constructor:///rhttpc/client/ReliableClient/ReliableClient(rhttpc.client.SubscriptionManager,akka.actor.ActorSystem,rhttpc.api.transport.PubSubTransport)|",
+      "|java+method:///scala/Predef$/wrapRefArray(java.lang.Object%5B%5D)|",
+      "|java+method:///rhttpc/client/SubscriptionManager$/apply(akka.actor.ActorRefFactory,rhttpc.api.transport.PubSubTransport)|",
+      "|java+method:///scala/reflect/ManifestFactory$/classType(java.lang.Class,scala.reflect.Manifest,scala.collection.Seq)|",
+      "|java+method:///rhttpc/api/transport/amqp/AmqpTransportFactory$/create(rhttpc.api.transport.amqp.AmqpTransportCreateData)|",
+      "|java+method:///rhttpc/api/json4s/Json4sSerializer$/formats()|",
+      "|java+method:///rhttpc/api/transport/amqp/AmqpTransportCreateData$/apply$default$2()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///rhttpc/client/ReliableHttp$$anon$1/ReliableHttp$$anon$1(akka.actor.ActorSystem,com.rabbitmq.client.Connection,rhttpc.transport.api.PubSubTransport,rhttpc.client.SubscriptionManager)|",
+      "|java+method:///rhttpc/client/SubscriptionManager$/apply(akka.actor.ActorRefFactory,rhttpc.transport.api.PubSubTransport)|",
+      "|java+method:///rhttpc/transport/amqp/AmqpHttpTransportFactory$/createRequestResponseTransport(com.rabbitmq.client.Connection,scala.concurrent.ExecutionContext)|",
+      "|java+method:///rhttpc/transport/amqp/AmqpConnectionFactory$/create(akka.actor.ActorSystem)|",
+      "|java+method:///akka/actor/ActorSystem/dispatcher()|"
+    ],
+    "affectedLib": "org.rhttpc:rhttpc-api_2.11:0.1.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.rhttpc:rhttpc-client_2.11:0.2.0-RC1",
+    "coordinatesV2": "org.rhttpc:rhttpc-client_2.11:0.1.0",
+    "caller": "|java+method:///rhttpc/client/ReliableClient/send(java.lang.Object,scala.concurrent.ExecutionContext)|",
+    "called": "|java+constructor:///rhttpc/api/Correlated/Correlated(java.lang.Object,java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///rhttpc/api/Correlated/Correlated(java.lang.Object,java.lang.String)|",
+      "|java+constructor:///rhttpc/client/ReliableClient$$anonfun$2/ReliableClient$$anonfun$2(rhttpc.client.ReliableClient,rhttpc.api.Correlated,rhttpc.client.SubscriptionOnResponse)|",
+      "|java+method:///scala/concurrent/duration/package$/DurationInt(int)|",
+      "|java+constructor:///akka/util/Timeout/Timeout(scala.concurrent.duration.FiniteDuration)|",
+      "|java+method:///java/util/UUID/randomUUID()|",
+      "|java+constructor:///rhttpc/client/SubscriptionOnResponse/SubscriptionOnResponse(java.lang.String)|",
+      "|java+method:///scala/concurrent/Future/recover(scala.PartialFunction,scala.concurrent.ExecutionContext)|",
+      "|java+method:///rhttpc/client/ReliableClient/publisher()|",
+      "|java+method:///java/util/UUID/toString()|",
+      "|java+method:///scala/concurrent/duration/package$DurationInt/seconds()|",
+      "|java+constructor:///rhttpc/client/ReplyFuture/ReplyFuture(rhttpc.client.SubscriptionOnResponse,scala.concurrent.Future,java.lang.Object,rhttpc.client.SubscriptionManager)|",
+      "|java+method:///scala/concurrent/Future/map(scala.Function1,scala.concurrent.ExecutionContext)|",
+      "|java+constructor:///rhttpc/client/ReliableClient$$anonfun$3/ReliableClient$$anonfun$3(rhttpc.client.ReliableClient,rhttpc.api.Correlated,rhttpc.client.SubscriptionOnResponse)|",
+      "|java+method:///rhttpc/api/transport/Publisher/publish(java.lang.Object)|",
+      "|java+constructor:///scala/concurrent/duration/package$DurationInt/package$DurationInt(int)|",
+      "|java+method:///rhttpc/client/SubscriptionInternalManagement/registerPromise(rhttpc.client.SubscriptionOnResponse)|"
+    ],
+    "v2Body": [
+      "|java+method:///rhttpc/transport/api/Publisher/publish(java.lang.Object)|",
+      "|java+constructor:///rhttpc/client/ReliableClient$$anonfun$2/ReliableClient$$anonfun$2(rhttpc.client.ReliableClient,rhttpc.transport.api.Correlated,rhttpc.client.SubscriptionOnResponse)|",
+      "|java+constructor:///akka/util/Timeout/Timeout(scala.concurrent.duration.FiniteDuration)|",
+      "|java+method:///java/util/UUID/randomUUID()|",
+      "|java+constructor:///rhttpc/client/SubscriptionOnResponse/SubscriptionOnResponse(java.lang.String)|",
+      "|java+method:///scala/concurrent/Future/recover(scala.PartialFunction,scala.concurrent.ExecutionContext)|",
+      "|java+method:///java/util/UUID/toString()|",
+      "|java+method:///scala/concurrent/duration/package$DurationInt/seconds()|",
+      "|java+constructor:///rhttpc/client/ReplyFuture/ReplyFuture(rhttpc.client.SubscriptionOnResponse,scala.concurrent.Future,java.lang.Object,rhttpc.client.SubscriptionManager)|",
+      "|java+method:///scala/concurrent/Future/map(scala.Function1,scala.concurrent.ExecutionContext)|",
+      "|java+constructor:///scala/concurrent/duration/package$DurationInt/package$DurationInt(int)|",
+      "|java+method:///rhttpc/client/SubscriptionInternalManagement/registerPromise(rhttpc.client.SubscriptionOnResponse)|",
+      "|java+method:///scala/concurrent/duration/package$/DurationInt(int)|",
+      "|java+constructor:///rhttpc/transport/api/Correlated/Correlated(java.lang.Object,java.lang.String)|",
+      "|java+method:///rhttpc/client/ReliableClient/rhttpc$client$ReliableClient$$publisher()|",
+      "|java+constructor:///rhttpc/client/ReliableClient$$anonfun$3/ReliableClient$$anonfun$3(rhttpc.client.ReliableClient,rhttpc.transport.api.Correlated,rhttpc.client.SubscriptionOnResponse)|"
+    ],
+    "affectedLib": "org.rhttpc:rhttpc-api_2.11:0.1.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.rhttpc:rhttpc-client_2.11:0.1.0",
+    "coordinatesV2": "org.rhttpc:rhttpc-client_2.11:0.2.0-RC1",
+    "caller": "|java+method:///rhttpc/client/ReliableHttp$/apply(akka.actor.ActorSystem)|",
+    "called": "|java+method:///rhttpc/transport/amqp/AmqpConnectionFactory$/create(akka.actor.ActorSystem)|",
+    "v1Body": [
+      "|java+method:///scala/reflect/ManifestFactory$/classType(java.lang.Class)|",
+      "|java+constructor:///rhttpc/api/transport/amqp/AmqpTransportCreateData/AmqpTransportCreateData(akka.actor.ActorSystem,int,scala.reflect.Manifest,org.json4s.Formats)|",
+      "|java+constructor:///rhttpc/client/ReliableClient/ReliableClient(rhttpc.client.SubscriptionManager,akka.actor.ActorSystem,rhttpc.api.transport.PubSubTransport)|",
+      "|java+method:///scala/Predef$/wrapRefArray(java.lang.Object%5B%5D)|",
+      "|java+method:///rhttpc/client/SubscriptionManager$/apply(akka.actor.ActorRefFactory,rhttpc.api.transport.PubSubTransport)|",
+      "|java+method:///scala/reflect/ManifestFactory$/classType(java.lang.Class,scala.reflect.Manifest,scala.collection.Seq)|",
+      "|java+method:///rhttpc/api/transport/amqp/AmqpTransportFactory$/create(rhttpc.api.transport.amqp.AmqpTransportCreateData)|",
+      "|java+method:///rhttpc/api/json4s/Json4sSerializer$/formats()|",
+      "|java+method:///rhttpc/api/transport/amqp/AmqpTransportCreateData$/apply$default$2()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///rhttpc/client/ReliableHttp$$anon$1/ReliableHttp$$anon$1(akka.actor.ActorSystem,com.rabbitmq.client.Connection,rhttpc.transport.api.PubSubTransport,rhttpc.client.SubscriptionManager)|",
+      "|java+method:///rhttpc/client/SubscriptionManager$/apply(akka.actor.ActorRefFactory,rhttpc.transport.api.PubSubTransport)|",
+      "|java+method:///rhttpc/transport/amqp/AmqpHttpTransportFactory$/createRequestResponseTransport(com.rabbitmq.client.Connection,scala.concurrent.ExecutionContext)|",
+      "|java+method:///rhttpc/transport/amqp/AmqpConnectionFactory$/create(akka.actor.ActorSystem)|",
+      "|java+method:///akka/actor/ActorSystem/dispatcher()|"
+    ],
+    "affectedLib": "org.rhttpc:rhttpc-amqp_2.11:0.2.0-RC1",
+    "change": "ADDED"
+  }
+]

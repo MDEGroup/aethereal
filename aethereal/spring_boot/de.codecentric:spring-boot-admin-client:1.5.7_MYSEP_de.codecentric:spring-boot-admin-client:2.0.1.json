@@ -1,0 +1,131 @@
+[
+  {
+    "coordinatesV1": "de.codecentric:spring-boot-admin-client:1.5.7",
+    "coordinatesV2": "de.codecentric:spring-boot-admin-client:2.0.1",
+    "caller": "|java+method:///de/codecentric/boot/admin/client/registration/ApplicationRegistrator/deregister()|",
+    "called": "|java+method:///org/springframework/web/client/RestTemplate/delete(java.lang.String,java.lang.Object%5B%5D)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///org/springframework/web/client/RestTemplate/delete(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///de/codecentric/boot/admin/client/config/AdminProperties/getAdminUrl()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/util/concurrent/atomic/AtomicReference/compareAndSet(java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///de/codecentric/boot/admin/client/config/AdminProperties/isRegisterOnce()|",
+      "|java+method:///java/util/concurrent/atomic/AtomicReference/get()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/Exception/getMessage()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///org/springframework/web/client/RestTemplate/delete(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/util/concurrent/atomic/AtomicReference/compareAndSet(java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/util/concurrent/atomic/AtomicReference/get()|",
+      "|java+method:///de/codecentric/boot/admin/client/config/ClientProperties/isRegisterOnce()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/Exception/getMessage()|",
+      "|java+method:///de/codecentric/boot/admin/client/config/ClientProperties/getAdminUrl()|"
+    ],
+    "affectedLib": "org.springframework:spring-web:5.0.7.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "de.codecentric:spring-boot-admin-client:1.5.7",
+    "coordinatesV2": "de.codecentric:spring-boot-admin-client:2.0.1",
+    "caller": "|java+method:///de/codecentric/boot/admin/client/registration/DefaultApplicationFactory/getServiceUrl()|",
+    "called": "|java+method:///org/springframework/web/util/UriComponentsBuilder/fromUriString(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/lang/Integer/intValue()|",
+      "|java+method:///org/springframework/boot/autoconfigure/web/ServerProperties/getSsl()|",
+      "|java+constructor:///java/lang/IllegalStateException/IllegalStateException(java.lang.String)|",
+      "|java+method:///org/springframework/web/util/UriComponentsBuilder/newInstance()|",
+      "|java+method:///org/springframework/web/util/UriComponentsBuilder/port(int)|",
+      "|java+method:///org/springframework/web/util/UriComponentsBuilder/toUriString()|",
+      "|java+method:///org/springframework/util/StringUtils/isEmpty(java.lang.Object)|",
+      "|java+method:///de/codecentric/boot/admin/client/config/AdminClientProperties/getServiceBaseUrl()|",
+      "|java+method:///javax/servlet/ServletContext/getContextPath()|",
+      "|java+method:///org/springframework/web/util/UriComponentsBuilder/fromUriString(java.lang.String)|",
+      "|java+method:///de/codecentric/boot/admin/client/registration/DefaultApplicationFactory/getServiceHost()|",
+      "|java+method:///org/springframework/web/util/UriComponentsBuilder/path(java.lang.String)|",
+      "|java+method:///org/springframework/web/util/UriComponentsBuilder/scheme(java.lang.String)|",
+      "|java+method:///de/codecentric/boot/admin/client/config/AdminClientProperties/getServiceUrl()|",
+      "|java+method:///org/springframework/web/util/UriComponentsBuilder/host(java.lang.String)|",
+      "|java+method:///de/codecentric/boot/admin/client/registration/DefaultApplicationFactory/getLocalServerPort()|",
+      "|java+method:///de/codecentric/boot/admin/client/registration/DefaultApplicationFactory/getScheme(org.springframework.boot.context.embedded.Ssl)|"
+    ],
+    "v2Body": [
+      "|java+method:///de/codecentric/boot/admin/client/config/InstanceProperties/getServiceUrl()|",
+      "|java+method:///org/springframework/web/util/UriComponentsBuilder/path(java.lang.String)|",
+      "|java+method:///org/springframework/web/util/UriComponentsBuilder/toUriString()|",
+      "|java+method:///org/springframework/web/util/UriComponentsBuilder/fromUriString(java.lang.String)|",
+      "|java+method:///de/codecentric/boot/admin/client/registration/DefaultApplicationFactory/getServiceBaseUrl()|"
+    ],
+    "affectedLib": "org.springframework:spring-web:5.0.7.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "de.codecentric:spring-boot-admin-client:1.5.7",
+    "coordinatesV2": "de.codecentric:spring-boot-admin-client:2.0.1",
+    "caller": "|java+method:///de/codecentric/boot/admin/client/registration/DefaultApplicationFactory/getManagementUrl()|",
+    "called": "|java+method:///org/springframework/web/util/UriComponentsBuilder/fromUriString(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///de/codecentric/boot/admin/client/registration/DefaultApplicationFactory/getManagementHost()|",
+      "|java+method:///org/springframework/web/util/UriComponentsBuilder/newInstance()|",
+      "|java+method:///de/codecentric/boot/admin/client/registration/DefaultApplicationFactory/isManagementPortEqual()|",
+      "|java+method:///org/springframework/web/util/UriComponentsBuilder/host(java.lang.String)|",
+      "|java+method:///org/springframework/boot/autoconfigure/web/ServerProperties/getServletPrefix()|",
+      "|java+method:///org/springframework/web/util/UriComponentsBuilder/toUriString()|",
+      "|java+method:///de/codecentric/boot/admin/client/config/AdminClientProperties/getManagementUrl()|",
+      "|java+method:///org/springframework/util/StringUtils/isEmpty(java.lang.Object)|",
+      "|java+method:///org/springframework/boot/actuate/autoconfigure/ManagementServerProperties/getSsl()|",
+      "|java+method:///org/springframework/web/util/UriComponentsBuilder/fromUriString(java.lang.String)|",
+      "|java+method:///java/lang/Integer/intValue()|",
+      "|java+method:///de/codecentric/boot/admin/client/config/AdminClientProperties/getManagementBaseUrl()|",
+      "|java+method:///org/springframework/boot/autoconfigure/web/ServerProperties/getSsl()|",
+      "|java+method:///org/springframework/boot/actuate/autoconfigure/ManagementServerProperties/getContextPath()|",
+      "|java+method:///org/springframework/web/util/UriComponentsBuilder/path(java.lang.String)|",
+      "|java+method:///org/springframework/web/util/UriComponentsBuilder/scheme(java.lang.String)|",
+      "|java+method:///org/springframework/web/util/UriComponentsBuilder/fromHttpUrl(java.lang.String)|",
+      "|java+method:///org/springframework/web/util/UriComponentsBuilder/port(int)|",
+      "|java+method:///de/codecentric/boot/admin/client/registration/DefaultApplicationFactory/getServiceUrl()|",
+      "|java+method:///de/codecentric/boot/admin/client/registration/DefaultApplicationFactory/getLocalManagementPort()|",
+      "|java+method:///de/codecentric/boot/admin/client/registration/DefaultApplicationFactory/getScheme(org.springframework.boot.context.embedded.Ssl)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/springframework/web/util/UriComponentsBuilder/path(java.lang.String)|",
+      "|java+method:///de/codecentric/boot/admin/client/registration/DefaultApplicationFactory/getEndpointsWebPath()|",
+      "|java+method:///org/springframework/web/util/UriComponentsBuilder/toUriString()|",
+      "|java+method:///de/codecentric/boot/admin/client/config/InstanceProperties/getManagementUrl()|",
+      "|java+method:///de/codecentric/boot/admin/client/registration/DefaultApplicationFactory/getManagementBaseUrl()|",
+      "|java+method:///org/springframework/web/util/UriComponentsBuilder/fromUriString(java.lang.String)|"
+    ],
+    "affectedLib": "org.springframework:spring-web:5.0.7.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "de.codecentric:spring-boot-admin-client:1.5.7",
+    "coordinatesV2": "de.codecentric:spring-boot-admin-client:2.0.1",
+    "caller": "|java+method:///de/codecentric/boot/admin/client/registration/DefaultApplicationFactory/getHealthUrl()|",
+    "called": "|java+method:///org/springframework/web/util/UriComponentsBuilder/path(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///de/codecentric/boot/admin/client/registration/DefaultApplicationFactory/getHealthEndpointPath()|",
+      "|java+method:///de/codecentric/boot/admin/client/registration/DefaultApplicationFactory/getManagementUrl()|",
+      "|java+method:///org/springframework/web/util/UriComponentsBuilder/toUriString()|",
+      "|java+method:///de/codecentric/boot/admin/client/config/AdminClientProperties/getHealthUrl()|",
+      "|java+method:///org/springframework/web/util/UriComponentsBuilder/path(java.lang.String)|",
+      "|java+method:///org/springframework/web/util/UriComponentsBuilder/fromHttpUrl(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///de/codecentric/boot/admin/client/config/InstanceProperties/getHealthUrl()|",
+      "|java+method:///de/codecentric/boot/admin/client/registration/DefaultApplicationFactory/getHealthEndpointPath()|",
+      "|java+method:///org/springframework/web/util/UriComponentsBuilder/toUriString()|",
+      "|java+method:///de/codecentric/boot/admin/client/registration/DefaultApplicationFactory/getManagementBaseUrl()|",
+      "|java+method:///org/springframework/web/util/UriComponentsBuilder/path(java.lang.String)|",
+      "|java+method:///org/springframework/web/util/UriComponentsBuilder/fromHttpUrl(java.lang.String)|"
+    ],
+    "affectedLib": "org.springframework:spring-web:5.0.7.RELEASE",
+    "change": "UPDATED"
+  }
+]

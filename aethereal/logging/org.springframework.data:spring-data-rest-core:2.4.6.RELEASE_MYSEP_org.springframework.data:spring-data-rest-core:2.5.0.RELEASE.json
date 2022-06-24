@@ -1,0 +1,95 @@
+[
+  {
+    "coordinatesV1": "org.springframework.data:spring-data-rest-core:2.4.6.RELEASE",
+    "coordinatesV2": "org.springframework.data:spring-data-rest-core:2.5.0.RELEASE",
+    "caller": "|java+method:///org/springframework/data/rest/core/UriToEntityConverter/convert(java.lang.Object,org.springframework.core.convert.TypeDescriptor,org.springframework.core.convert.TypeDescriptor)|",
+    "called": "|java+method:///org/springframework/data/mapping/context/PersistentEntities/getPersistentEntity(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///java/lang/String/split(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/springframework/core/convert/TypeDescriptor/getType()|",
+      "|java+method:///org/springframework/core/convert/ConversionService/convert(java.lang.Object,java.lang.Class)|",
+      "|java+method:///org/springframework/data/mapping/context/PersistentEntities/getPersistentEntity(java.lang.Class)|",
+      "|java+method:///java/net/URI/getPath()|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///org/springframework/core/convert/ConversionFailedException/ConversionFailedException(org.springframework.core.convert.TypeDescriptor,org.springframework.core.convert.TypeDescriptor,java.lang.Object,java.lang.Throwable)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/String/split(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/springframework/core/convert/TypeDescriptor/getType()|",
+      "|java+method:///org/springframework/data/repository/support/RepositoryInvoker/invokeFindOne(java.io.Serializable)|",
+      "|java+method:///org/springframework/data/repository/support/RepositoryInvokerFactory/getInvokerFor(java.lang.Class)|",
+      "|java+method:///org/springframework/data/mapping/context/PersistentEntities/getPersistentEntity(java.lang.Class)|",
+      "|java+method:///java/net/URI/getPath()|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///org/springframework/core/convert/ConversionFailedException/ConversionFailedException(org.springframework.core.convert.TypeDescriptor,org.springframework.core.convert.TypeDescriptor,java.lang.Object,java.lang.Throwable)|"
+    ],
+    "affectedLib": "org.springframework.data:spring-data-commons:1.12.0.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.springframework.data:spring-data-rest-core:2.4.6.RELEASE",
+    "coordinatesV2": "org.springframework.data:spring-data-rest-core:2.5.0.RELEASE",
+    "caller": "|java+method:///org/springframework/data/rest/core/UriToEntityConverter/matches(org.springframework.core.convert.TypeDescriptor,org.springframework.core.convert.TypeDescriptor)|",
+    "called": "|java+method:///org/springframework/data/repository/support/Repositories/getRepositoryInformationFor(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/springframework/core/convert/ConversionService/canConvert(org.springframework.core.convert.TypeDescriptor,org.springframework.core.convert.TypeDescriptor)|",
+      "|java+method:///org/springframework/core/convert/TypeDescriptor/equals(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/springframework/core/convert/TypeDescriptor/equals(java.lang.Object)|",
+      "|java+method:///org/springframework/core/convert/TypeDescriptor/getType()|",
+      "|java+method:///org/springframework/data/repository/support/Repositories/getRepositoryInformationFor(java.lang.Class)|"
+    ],
+    "affectedLib": "org.springframework.data:spring-data-commons:1.12.0.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.springframework.data:spring-data-rest-core:2.4.6.RELEASE",
+    "coordinatesV2": "org.springframework.data:spring-data-rest-core:2.5.0.RELEASE",
+    "caller": "|java+method:///org/springframework/data/rest/core/event/ValidatingRepositoryEventListener/validate(java.lang.String,java.lang.Object)|",
+    "called": "|java+method:///org/springframework/data/mapping/context/PersistentEntities/getPersistentEntity(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/springframework/validation/Errors/getErrorCount()|",
+      "|java+method:///java/lang/Class/getSimpleName()|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/springframework/validation/ValidationUtils/invokeValidator(org.springframework.validation.Validator,java.lang.Object,org.springframework.validation.Errors)|",
+      "|java+method:///org/springframework/beans/factory/ObjectFactory/getObject()|",
+      "|java+method:///org/springframework/data/repository/support/Repositories/getPersistentEntity(java.lang.Class)|",
+      "|java+method:///org/springframework/validation/Validator/supports(java.lang.Class)|",
+      "|java+method:///org/springframework/data/rest/core/event/ValidatingRepositoryEventListener/getValidatorsForEvent(java.lang.String)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///java/util/Collection/iterator()|",
+      "|java+constructor:///org/springframework/data/rest/core/RepositoryConstraintViolationException/RepositoryConstraintViolationException(org.springframework.validation.Errors)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+constructor:///org/springframework/data/rest/core/ValidationErrors/ValidationErrors(java.lang.String,java.lang.Object,org.springframework.data.mapping.PersistentEntity)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/springframework/data/rest/core/ValidationErrors/ValidationErrors(java.lang.Object,org.springframework.data.mapping.PersistentEntity)|",
+      "|java+method:///java/lang/Class/getSimpleName()|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/springframework/validation/Errors/hasErrors()|",
+      "|java+method:///org/springframework/validation/ValidationUtils/invokeValidator(org.springframework.validation.Validator,java.lang.Object,org.springframework.validation.Errors)|",
+      "|java+method:///org/springframework/validation/Validator/supports(java.lang.Class)|",
+      "|java+method:///org/springframework/data/rest/core/event/ValidatingRepositoryEventListener/getValidatorsForEvent(java.lang.String)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///java/util/Collection/iterator()|",
+      "|java+constructor:///org/springframework/data/rest/core/RepositoryConstraintViolationException/RepositoryConstraintViolationException(org.springframework.validation.Errors)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/springframework/data/mapping/context/PersistentEntities/getPersistentEntity(java.lang.Class)|",
+      "|java+method:///org/springframework/beans/factory/ObjectFactory/getObject()|",
+      "|java+constructor:///org/springframework/validation/DirectFieldBindingResult/DirectFieldBindingResult(java.lang.Object,java.lang.String)|"
+    ],
+    "affectedLib": "org.springframework.data:spring-data-commons:1.12.0.RELEASE",
+    "change": "UPDATED"
+  }
+]

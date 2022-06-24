@@ -1,0 +1,84 @@
+[
+  {
+    "coordinatesV1": "io.gravitee.gateway.standalone:gravitee-gateway-standalone-container:0.5.0",
+    "coordinatesV2": "io.gravitee.gateway.standalone:gravitee-gateway-standalone-container:0.11.0",
+    "caller": "|java+method:///io/gravitee/gateway/standalone/vertx/VertxHttpServerRequest/bodyHandler(io.gravitee.gateway.api.handler.Handler)|",
+    "called": "|java+method:///io/vertx/core/http/HttpServerRequest/handler(io.vertx.core.Handler)|",
+    "v1Body": [
+      "|java+method:///io/vertx/core/http/HttpServerRequest/handler(io.vertx.core.Handler)|"
+    ],
+    "v2Body": [
+      "|java+method:///io/vertx/core/http/HttpServerRequest/handler(io.vertx.core.Handler)|",
+      "|java+method:///io/gravitee/gateway/standalone/vertx/VertxHttpServerRequest/bodyHandler(io.gravitee.gateway.api.handler.Handler)|"
+    ],
+    "affectedLib": "io.vertx:vertx-core:3.2.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.gravitee.gateway.standalone:gravitee-gateway-standalone-container:0.5.0",
+    "coordinatesV2": "io.gravitee.gateway.standalone:gravitee-gateway-standalone-container:0.11.0",
+    "caller": "|java+method:///io/gravitee/gateway/standalone/vertx/VertxFactory/getObject()|",
+    "called": "|java+method:///io/vertx/core/Vertx/vertx(io.vertx.core.VertxOptions)|",
+    "v1Body": [
+      "|java+method:///io/vertx/core/Vertx/vertx(io.vertx.core.VertxOptions)|",
+      "|java+method:///io/vertx/core/Vertx/registerVerticleFactory(io.vertx.core.spi.VerticleFactory)|",
+      "|java+method:///io/gravitee/gateway/standalone/vertx/VertxFactory/getObject()|",
+      "|java+constructor:///io/vertx/core/VertxOptions/VertxOptions()|"
+    ],
+    "v2Body": [
+      "|java+method:///io/vertx/core/Vertx/vertx(io.vertx.core.VertxOptions)|",
+      "|java+method:///io/vertx/core/Vertx/registerVerticleFactory(io.vertx.core.spi.VerticleFactory)|",
+      "|java+method:///io/gravitee/gateway/standalone/vertx/VertxFactory/getObject()|",
+      "|java+constructor:///io/vertx/core/VertxOptions/VertxOptions()|",
+      "|java+method:///io/vertx/core/VertxOptions/setWorkerPoolSize(int)|"
+    ],
+    "affectedLib": "io.vertx:vertx-core:3.2.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.gravitee.gateway.standalone:gravitee-gateway-standalone-container:0.5.0",
+    "coordinatesV2": "io.gravitee.gateway.standalone:gravitee-gateway-standalone-container:0.11.0",
+    "caller": "|java+method:///io/gravitee/gateway/standalone/vertx/VertxEmbeddedContainer/doStart()|",
+    "called": "|java+constructor:///io/vertx/core/DeploymentOptions/DeploymentOptions()|",
+    "v1Body": [
+      "|java+constructor:///io/vertx/core/DeploymentOptions/DeploymentOptions()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///io/vertx/core/DeploymentOptions/setInstances(int)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String)|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///io/vertx/core/Vertx/deployVerticle(java.lang.String,io.vertx.core.DeploymentOptions,io.vertx.core.Handler)|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///io/vertx/core/DeploymentOptions/DeploymentOptions()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///io/vertx/core/DeploymentOptions/setInstances(int)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String)|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///io/vertx/core/DeploymentOptions/setWorker(boolean)|",
+      "|java+method:///io/vertx/core/Vertx/deployVerticle(java.lang.String,io.vertx.core.DeploymentOptions,io.vertx.core.Handler)|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "affectedLib": "io.vertx:vertx-core:3.2.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.gravitee.gateway.standalone:gravitee-gateway-standalone-container:0.5.0",
+    "coordinatesV2": "io.gravitee.gateway.standalone:gravitee-gateway-standalone-container:0.11.0",
+    "caller": "|java+method:///io/gravitee/gateway/standalone/vertx/VertxHttpServerRequest/endHandler(io.gravitee.gateway.api.handler.Handler)|",
+    "called": "|java+method:///io/vertx/core/http/HttpServerRequest/endHandler(io.vertx.core.Handler)|",
+    "v1Body": [
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///io/vertx/core/http/HttpServerRequest/endHandler(io.vertx.core.Handler)|"
+    ],
+    "v2Body": [
+      "|java+method:///io/gravitee/gateway/standalone/vertx/VertxHttpServerRequest/endHandler(io.gravitee.gateway.api.handler.Handler)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///io/vertx/core/http/HttpServerRequest/endHandler(io.vertx.core.Handler)|"
+    ],
+    "affectedLib": "io.vertx:vertx-core:3.2.1",
+    "change": "UPDATED"
+  }
+]

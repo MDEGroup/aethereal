@@ -1,0 +1,35 @@
+[
+  {
+    "coordinatesV1": "org.codehaus.redback:redback-rbac-cached:1.2-beta-2",
+    "coordinatesV2": "org.codehaus.redback:redback-rbac-cached:1.2-beta-1",
+    "caller": "|java+method:///org/codehaus/plexus/redback/rbac/cached/CachedRbacManager/eraseDatabase()|",
+    "called": "|java+method:///org/codehaus/plexus/ehcache/EhcacheUtils/clearAllCaches(org.codehaus.plexus.logging.Logger)|",
+    "v1Body": [
+      "|java+method:///org/codehaus/plexus/ehcache/EhcacheUtils/clearAllCaches(org.codehaus.plexus.logging.Logger)|",
+      "|java+method:///org/codehaus/plexus/redback/rbac/RBACManager/eraseDatabase()|",
+      "|java+method:///org/codehaus/plexus/redback/rbac/cached/CachedRbacManager/getLogger()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/codehaus/plexus/redback/rbac/RBACManager/eraseDatabase()|"
+    ],
+    "affectedLib": "org.codehaus.plexus:plexus-ehcache:1.0-alpha-2",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.codehaus.redback:redback-rbac-cached:1.2-beta-2",
+    "coordinatesV2": "org.codehaus.redback:redback-rbac-cached:1.2-beta-1",
+    "caller": "|java+method:///org/codehaus/plexus/redback/rbac/cached/CachedRbacManager/rbacInit(boolean)|",
+    "called": "|java+method:///org/codehaus/plexus/ehcache/EhcacheUtils/clearAllCaches(org.codehaus.plexus.logging.Logger)|",
+    "v1Body": [
+      "|java+method:///org/codehaus/plexus/redback/rbac/cached/CachedRbacManager/getLogger()|",
+      "|java+method:///org/codehaus/plexus/ehcache/EhcacheUtils/clearAllCaches(org.codehaus.plexus.logging.Logger)|",
+      "|java+method:///org/codehaus/plexus/redback/rbac/RBACManagerListener/rbacInit(boolean)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/codehaus/plexus/cache/Cache/clear()|",
+      "|java+method:///org/codehaus/plexus/redback/rbac/RBACManagerListener/rbacInit(boolean)|"
+    ],
+    "affectedLib": "org.codehaus.plexus:plexus-ehcache:1.0-alpha-2",
+    "change": "REMOVED"
+  }
+]

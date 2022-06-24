@@ -1,0 +1,99 @@
+[
+  {
+    "coordinatesV1": "org.grouplens.lenskit:lenskit-data-structures:0.9",
+    "coordinatesV2": "org.grouplens.lenskit:lenskit-data-structures:0.8.1",
+    "caller": "|java+method:///org/grouplens/lenskit/dtree/xml/XMLDataNode/toString()|",
+    "called": "|java+method:///org/codehaus/plexus/util/StringUtils/join(java.util.Iterator,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/codehaus/plexus/util/StringUtils/join(java.util.Iterator,java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/grouplens/lenskit/dtree/xml/XMLDataNode/getPath()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/lang3/StringUtils/join(java.util.Iterator,java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/grouplens/lenskit/dtree/xml/XMLDataNode/getPath()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "affectedLib": "org.codehaus.plexus:plexus-utils:3.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.grouplens.lenskit:lenskit-data-structures:0.9",
+    "coordinatesV2": "org.grouplens.lenskit:lenskit-data-structures:0.8.1",
+    "caller": "|java+method:///org/grouplens/lenskit/vectors/SparseVector/keysByValue(boolean)|",
+    "called": "|java+method:///it/unimi/dsi/fastutil/longs/LongArrayList/wrap(long%5B%5D)|",
+    "v1Body": [
+      "|java+method:///it/unimi/dsi/fastutil/longs/LongArrayList/wrap(long%5B%5D)|",
+      "|java+constructor:///java/lang/IllegalStateException/IllegalStateException()|",
+      "|java+method:///org/grouplens/lenskit/vectors/SparseVector/checkValid()|",
+      "|java+method:///org/grouplens/lenskit/vectors/SparseVector/isComplete()|",
+      "|java+method:///java/util/Arrays/copyOf(long%5B%5D,int)|",
+      "|java+method:///it/unimi/dsi/fastutil/longs/LongArrays/quickSort(long%5B%5D,it.unimi.dsi.fastutil.longs.LongComparator)|",
+      "|java+constructor:///org/grouplens/lenskit/vectors/SparseVector$3/SparseVector$3(org.grouplens.lenskit.vectors.SparseVector)|",
+      "|java+constructor:///org/grouplens/lenskit/vectors/SparseVector$2/SparseVector$2(org.grouplens.lenskit.vectors.SparseVector)|"
+    ],
+    "v2Body": [
+      "|java+method:///it/unimi/dsi/fastutil/longs/LongArrayList/wrap(long%5B%5D)|",
+      "|java+method:///it/unimi/dsi/fastutil/longs/LongSortedSet/toLongArray()|",
+      "|java+method:///org/grouplens/lenskit/vectors/SparseVector/keySet()|",
+      "|java+method:///it/unimi/dsi/fastutil/longs/LongArrays/quickSort(long%5B%5D,it.unimi.dsi.fastutil.longs.LongComparator)|",
+      "|java+constructor:///org/grouplens/lenskit/vectors/SparseVector$3/SparseVector$3(org.grouplens.lenskit.vectors.SparseVector)|",
+      "|java+constructor:///org/grouplens/lenskit/vectors/SparseVector$2/SparseVector$2(org.grouplens.lenskit.vectors.SparseVector)|"
+    ],
+    "affectedLib": "it.unimi.dsi:fastutil:6.2.2",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.grouplens.lenskit:lenskit-data-structures:0.9",
+    "coordinatesV2": "org.grouplens.lenskit:lenskit-data-structures:0.8.1",
+    "caller": "|java+method:///org/grouplens/lenskit/vectors/SparseVector/hashCode()|",
+    "called": "|java+method:///com/google/common/primitives/Doubles/hashCode(double)|",
+    "v1Body": [
+      "|java+method:///java/lang/Integer/intValue()|",
+      "|java+method:///org/grouplens/lenskit/vectors/SparseVector/isValid()|",
+      "|java+method:///org/grouplens/lenskit/vectors/SparseVector/size()|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///com/google/common/primitives/Doubles/hashCode(double)|",
+      "|java+method:///com/google/common/primitives/Longs/hashCode(long)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Integer/intValue()|",
+      "|java+method:///java/lang/Object/hashCode()|",
+      "|java+method:///org/grouplens/lenskit/vectors/SparseVector/values()|",
+      "|java+method:///org/grouplens/lenskit/vectors/SparseVector/keySet()|",
+      "|java+method:///java/lang/Integer/valueOf(int)|"
+    ],
+    "affectedLib": "com.google.guava:guava:r09",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.grouplens.lenskit:lenskit-data-structures:0.8.1",
+    "coordinatesV2": "org.grouplens.lenskit:lenskit-data-structures:0.9",
+    "caller": "|java+method:///org/grouplens/lenskit/dtree/xml/XMLDataNode/toString()|",
+    "called": "|java+method:///org/apache/commons/lang3/StringUtils/join(java.util.Iterator,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/codehaus/plexus/util/StringUtils/join(java.util.Iterator,java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/grouplens/lenskit/dtree/xml/XMLDataNode/getPath()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/lang3/StringUtils/join(java.util.Iterator,java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/grouplens/lenskit/dtree/xml/XMLDataNode/getPath()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "affectedLib": "org.apache.commons:commons-lang3:3.1",
+    "change": "ADDED"
+  }
+]

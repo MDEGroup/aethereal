@@ -1,0 +1,100 @@
+[
+  {
+    "coordinatesV1": "org.apache.beam:beam-sdks-java-extensions-sketching:2.4.0",
+    "coordinatesV2": "org.apache.beam:beam-sdks-java-extensions-sketching:2.5.0",
+    "caller": "|java+method:///org/apache/beam/sdk/extensions/sketching/ApproximateDistinct$GloballyDistinct/expand(org.apache.beam.sdk.values.PCollection)|",
+    "called": "|java+method:///org/apache/beam/sdk/values/PCollection/apply(java.lang.String,org.apache.beam.sdk.transforms.PTransform)|",
+    "v1Body": [
+      "|java+method:///org/apache/beam/sdk/extensions/sketching/ApproximateDistinct$ApproximateDistinctFn/withPrecision(int)|",
+      "|java+method:///org/apache/beam/sdk/extensions/sketching/ApproximateDistinct$ApproximateDistinctFn/withSparseRepresentation(int)|",
+      "|java+method:///org/apache/beam/sdk/transforms/ParDo/of(org.apache.beam.sdk.transforms.DoFn)|",
+      "|java+method:///org/apache/beam/sdk/extensions/sketching/ApproximateDistinct$RetrieveCardinality/globally()|",
+      "|java+method:///org/apache/beam/sdk/extensions/sketching/ApproximateDistinct$ApproximateDistinctFn/create(org.apache.beam.sdk.coders.Coder)|",
+      "|java+method:///org/apache/beam/sdk/transforms/Combine/globally(org.apache.beam.sdk.transforms.CombineFnBase$GlobalCombineFn)|",
+      "|java+method:///org/apache/beam/sdk/extensions/sketching/ApproximateDistinct$GloballyDistinct/precision()|",
+      "|java+method:///org/apache/beam/sdk/extensions/sketching/ApproximateDistinct$GloballyDistinct/sparsePrecision()|",
+      "|java+method:///org/apache/beam/sdk/values/PCollection/apply(java.lang.String,org.apache.beam.sdk.transforms.PTransform)|",
+      "|java+method:///org/apache/beam/sdk/values/PCollection/getCoder()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/beam/sdk/extensions/sketching/ApproximateDistinct$ApproximateDistinctFn/withPrecision(int)|",
+      "|java+method:///org/apache/beam/sdk/extensions/sketching/ApproximateDistinct$ApproximateDistinctFn/withSparseRepresentation(int)|",
+      "|java+method:///org/apache/beam/sdk/transforms/ParDo/of(org.apache.beam.sdk.transforms.DoFn)|",
+      "|java+method:///org/apache/beam/sdk/extensions/sketching/ApproximateDistinct$RetrieveCardinality/access$000()|",
+      "|java+method:///org/apache/beam/sdk/extensions/sketching/ApproximateDistinct$ApproximateDistinctFn/create(org.apache.beam.sdk.coders.Coder)|",
+      "|java+method:///org/apache/beam/sdk/transforms/Combine/globally(org.apache.beam.sdk.transforms.CombineFnBase$GlobalCombineFn)|",
+      "|java+method:///org/apache/beam/sdk/extensions/sketching/ApproximateDistinct$GloballyDistinct/precision()|",
+      "|java+method:///org/apache/beam/sdk/extensions/sketching/ApproximateDistinct$GloballyDistinct/sparsePrecision()|",
+      "|java+method:///org/apache/beam/sdk/values/PCollection/apply(java.lang.String,org.apache.beam.sdk.transforms.PTransform)|",
+      "|java+method:///org/apache/beam/sdk/values/PCollection/getCoder()|"
+    ],
+    "affectedLib": "org.apache.beam:beam-sdks-java-core:2.5.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.beam:beam-sdks-java-extensions-sketching:2.4.0",
+    "coordinatesV2": "org.apache.beam:beam-sdks-java-extensions-sketching:2.5.0",
+    "caller": "|java+method:///org/apache/beam/sdk/extensions/sketching/SketchFrequencies$Sketch/hashElement(java.lang.Object,org.apache.beam.sdk.coders.Coder)|",
+    "called": "|java+method:///org/apache/beam/sdk/util/CoderUtils/encodeToByteArray(org.apache.beam.sdk.coders.Coder,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/apache/beam/sdks/java/extensions/sketching/repackaged/com/google/common/hash/HashFunction/hashBytes(byte%5B%5D)|",
+      "|java+constructor:///java/lang/IllegalStateException/IllegalStateException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/beam/sdk/coders/CoderException/getMessage()|",
+      "|java+method:///org/apache/beam/sdks/java/extensions/sketching/repackaged/com/google/common/hash/Hashing/murmur3_128()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/apache/beam/sdks/java/extensions/sketching/repackaged/com/google/common/hash/HashCode/asLong()|",
+      "|java+method:///org/apache/beam/sdk/util/CoderUtils/encodeToByteArray(org.apache.beam.sdk.coders.Coder,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/beam/sdk/util/CoderUtils/encodeToByteArray(org.apache.beam.sdk.coders.Coder,java.lang.Object)|",
+      "|java+constructor:///java/lang/IllegalStateException/IllegalStateException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/beam/repackaged/beam_sdks_java_extensions_sketching/com/google/common/hash/HashCode/asLong()|",
+      "|java+method:///org/apache/beam/sdk/coders/CoderException/getMessage()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/apache/beam/repackaged/beam_sdks_java_extensions_sketching/com/google/common/hash/Hashing/murmur3_128()|",
+      "|java+method:///org/apache/beam/repackaged/beam_sdks_java_extensions_sketching/com/google/common/hash/HashFunction/hashBytes(byte%5B%5D)|"
+    ],
+    "affectedLib": "org.apache.beam:beam-sdks-java-core:2.5.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.beam:beam-sdks-java-extensions-sketching:2.4.0",
+    "coordinatesV2": "org.apache.beam:beam-sdks-java-extensions-sketching:2.5.0",
+    "caller": "|java+method:///org/apache/beam/sdk/extensions/sketching/ApproximateDistinct$PerKeyDistinct/expand(org.apache.beam.sdk.values.PCollection)|",
+    "called": "|java+method:///org/apache/beam/sdk/values/PCollection/apply(java.lang.String,org.apache.beam.sdk.transforms.PTransform)|",
+    "v1Body": [
+      "|java+method:///org/apache/beam/sdk/extensions/sketching/ApproximateDistinct$RetrieveCardinality/perKey()|",
+      "|java+method:///org/apache/beam/sdk/extensions/sketching/ApproximateDistinct$ApproximateDistinctFn/withPrecision(int)|",
+      "|java+method:///org/apache/beam/sdk/values/PCollection/apply(org.apache.beam.sdk.transforms.PTransform)|",
+      "|java+method:///org/apache/beam/sdk/extensions/sketching/ApproximateDistinct$ApproximateDistinctFn/withSparseRepresentation(int)|",
+      "|java+method:///org/apache/beam/sdk/transforms/Combine/perKey(org.apache.beam.sdk.transforms.CombineFnBase$GlobalCombineFn)|",
+      "|java+method:///org/apache/beam/sdk/transforms/ParDo/of(org.apache.beam.sdk.transforms.DoFn)|",
+      "|java+method:///org/apache/beam/sdk/coders/KvCoder/getValueCoder()|",
+      "|java+method:///org/apache/beam/sdk/extensions/sketching/ApproximateDistinct$ApproximateDistinctFn/create(org.apache.beam.sdk.coders.Coder)|",
+      "|java+method:///org/apache/beam/sdk/extensions/sketching/ApproximateDistinct$PerKeyDistinct/sparsePrecision()|",
+      "|java+method:///org/apache/beam/sdk/extensions/sketching/ApproximateDistinct$PerKeyDistinct/precision()|",
+      "|java+method:///org/apache/beam/sdk/values/PCollection/apply(java.lang.String,org.apache.beam.sdk.transforms.PTransform)|",
+      "|java+method:///org/apache/beam/sdk/values/PCollection/getCoder()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/beam/sdk/extensions/sketching/ApproximateDistinct$ApproximateDistinctFn/withPrecision(int)|",
+      "|java+method:///org/apache/beam/sdk/values/PCollection/apply(org.apache.beam.sdk.transforms.PTransform)|",
+      "|java+method:///org/apache/beam/sdk/extensions/sketching/ApproximateDistinct$ApproximateDistinctFn/withSparseRepresentation(int)|",
+      "|java+method:///org/apache/beam/sdk/transforms/Combine/perKey(org.apache.beam.sdk.transforms.CombineFnBase$GlobalCombineFn)|",
+      "|java+method:///org/apache/beam/sdk/transforms/ParDo/of(org.apache.beam.sdk.transforms.DoFn)|",
+      "|java+method:///org/apache/beam/sdk/coders/KvCoder/getValueCoder()|",
+      "|java+method:///org/apache/beam/sdk/extensions/sketching/ApproximateDistinct$RetrieveCardinality/access$100()|",
+      "|java+method:///org/apache/beam/sdk/extensions/sketching/ApproximateDistinct$ApproximateDistinctFn/create(org.apache.beam.sdk.coders.Coder)|",
+      "|java+method:///org/apache/beam/sdk/extensions/sketching/ApproximateDistinct$PerKeyDistinct/sparsePrecision()|",
+      "|java+method:///org/apache/beam/sdk/extensions/sketching/ApproximateDistinct$PerKeyDistinct/precision()|",
+      "|java+method:///org/apache/beam/sdk/values/PCollection/apply(java.lang.String,org.apache.beam.sdk.transforms.PTransform)|",
+      "|java+method:///org/apache/beam/sdk/values/PCollection/getCoder()|"
+    ],
+    "affectedLib": "org.apache.beam:beam-sdks-java-core:2.5.0",
+    "change": "UPDATED"
+  }
+]

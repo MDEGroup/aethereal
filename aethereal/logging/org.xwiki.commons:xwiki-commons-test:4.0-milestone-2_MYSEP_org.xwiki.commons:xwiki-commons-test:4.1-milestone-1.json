@@ -1,0 +1,132 @@
+[
+  {
+    "coordinatesV1": "org.xwiki.commons:xwiki-commons-test:4.0-milestone-2",
+    "coordinatesV2": "org.xwiki.commons:xwiki-commons-test:4.1-milestone-1",
+    "caller": "|java+method:///org/xwiki/test/XWikiComponentInitializer/initializeExecution()|",
+    "called": "|java+method:///org/xwiki/component/embed/EmbeddableComponentManager/getInstance(java.lang.reflect.Type)|",
+    "v1Body": [
+      "|java+constructor:///org/xwiki/context/ExecutionContext/ExecutionContext()|",
+      "|java+method:///org/xwiki/component/embed/EmbeddableComponentManager/lookup(java.lang.Class)|",
+      "|java+method:///org/xwiki/context/ExecutionContextManager/initialize(org.xwiki.context.ExecutionContext)|",
+      "|java+method:///org/xwiki/test/XWikiComponentInitializer/getComponentManager()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/xwiki/context/ExecutionContext/ExecutionContext()|",
+      "|java+method:///org/xwiki/component/embed/EmbeddableComponentManager/getInstance(java.lang.reflect.Type)|",
+      "|java+method:///org/xwiki/context/ExecutionContextManager/initialize(org.xwiki.context.ExecutionContext)|",
+      "|java+method:///org/xwiki/test/XWikiComponentInitializer/getComponentManager()|"
+    ],
+    "affectedLib": "org.xwiki.commons:xwiki-commons-component-default:4.1-milestone-1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.xwiki.commons:xwiki-commons-test:4.0-milestone-2",
+    "coordinatesV2": "org.xwiki.commons:xwiki-commons-test:4.1-milestone-1",
+    "caller": "|java+method:///org/xwiki/test/XWikiComponentInitializer/shutdown()|",
+    "called": "|java+method:///org/xwiki/component/embed/EmbeddableComponentManager/getInstance(java.lang.reflect.Type)|",
+    "v1Body": [
+      "|java+method:///org/xwiki/component/embed/EmbeddableComponentManager/lookup(java.lang.Class)|",
+      "|java+method:///org/xwiki/test/XWikiComponentInitializer/getComponentManager()|",
+      "|java+method:///org/xwiki/context/Execution/removeContext()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/xwiki/component/embed/EmbeddableComponentManager/getInstance(java.lang.reflect.Type)|",
+      "|java+method:///org/xwiki/test/XWikiComponentInitializer/getComponentManager()|",
+      "|java+method:///org/xwiki/context/Execution/removeContext()|"
+    ],
+    "affectedLib": "org.xwiki.commons:xwiki-commons-component-default:4.1-milestone-1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.xwiki.commons:xwiki-commons-test:4.0-milestone-2",
+    "coordinatesV2": "org.xwiki.commons:xwiki-commons-test:4.1-milestone-1",
+    "caller": "|java+method:///org/xwiki/test/AbstractMockingComponentTestCase/setUp()|",
+    "called": "|java+method:///org/xwiki/component/annotation/ComponentAnnotationLoader/initialize(org.xwiki.component.manager.ComponentManager,java.lang.ClassLoader)|",
+    "v1Body": [
+      "|java+method:///org/xwiki/component/util/ReflectionUtils/setFieldValue(java.lang.Object,java.lang.String,java.lang.Object)|",
+      "|java+method:///org/xwiki/component/descriptor/ComponentDescriptor/getRoleType()|",
+      "|java+method:///java/lang/reflect/Field/getName()|",
+      "|java+method:///org/xwiki/component/annotation/ComponentDescriptorFactory/createComponentDescriptors(java.lang.Class,java.lang.reflect.Type)|",
+      "|java+method:///org/xwiki/component/descriptor/ComponentDescriptor/getRoleHint()|",
+      "|java+method:///org/xwiki/test/annotation/MockingRequirement/exceptions()|",
+      "|java+method:///java/lang/reflect/Field/getType()|",
+      "|java+method:///org/xwiki/test/AbstractMockingComponentTestCase$MockingEmbeddableComponentManager/addMockedComponentClass(java.lang.Class)|",
+      "|java+method:///org/xwiki/component/embed/EmbeddableComponentManager/lookupComponent(java.lang.reflect.Type,java.lang.String)|",
+      "|java+method:///java/util/List/contains(java.lang.Object)|",
+      "|java+method:///org/xwiki/test/AbstractMockingComponentTestCase/registerMockDependencies(org.xwiki.component.descriptor.ComponentDescriptor,java.util.List)|",
+      "|java+method:///org/xwiki/test/AbstractMockingComponentTestCase/findComponentRoleType(java.lang.reflect.Field,java.lang.Class)|",
+      "|java+constructor:///org/xwiki/test/AbstractMockingComponentTestCase$MockingEmbeddableComponentManager/AbstractMockingComponentTestCase$MockingEmbeddableComponentManager(org.xwiki.test.AbstractMockingComponentTestCase,org.xwiki.test.AbstractMockingComponentTestCase$1)|",
+      "|java+method:///org/xwiki/component/embed/EmbeddableComponentManager/registerComponent(org.xwiki.component.descriptor.ComponentDescriptor)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/xwiki/test/AbstractMockingComponentTestCase/configure()|",
+      "|java+method:///org/xwiki/test/AbstractMockingComponentTestCase/getComponentManager()|",
+      "|java+method:///java/lang/String/length()|",
+      "|java+method:///java/util/Arrays/asList(java.lang.Object%5B%5D)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/xwiki/component/util/ReflectionUtils/getAllFields(java.lang.Class)|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///org/xwiki/test/annotation/MockingRequirement/hint()|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///java/lang/Class/getClassLoader()|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///java/util/Collection/iterator()|",
+      "|java+method:///org/xwiki/component/annotation/ComponentAnnotationLoader/initialize(org.xwiki.component.manager.ComponentManager,java.lang.ClassLoader)|",
+      "|java+method:///org/xwiki/test/annotation/MockingRequirement/value()|",
+      "|java+method:///java/lang/reflect/Field/getAnnotation(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/xwiki/component/util/ReflectionUtils/setFieldValue(java.lang.Object,java.lang.String,java.lang.Object)|",
+      "|java+method:///org/xwiki/component/descriptor/ComponentDescriptor/getRoleType()|",
+      "|java+method:///java/lang/reflect/Field/getName()|",
+      "|java+method:///org/xwiki/component/annotation/ComponentDescriptorFactory/createComponentDescriptors(java.lang.Class,java.lang.reflect.Type)|",
+      "|java+method:///org/xwiki/component/descriptor/ComponentDescriptor/getRoleHint()|",
+      "|java+method:///java/lang/reflect/Field/getType()|",
+      "|java+method:///org/xwiki/test/AbstractMockingComponentTestCase$MockingEmbeddableComponentManager/addMockedComponentClass(java.lang.Class)|",
+      "|java+method:///java/util/List/contains(java.lang.Object)|",
+      "|java+method:///org/xwiki/test/AbstractMockingComponentTestCase/registerMockDependencies(org.xwiki.component.descriptor.ComponentDescriptor,java.util.List)|",
+      "|java+method:///org/xwiki/test/AbstractMockingComponentTestCase/findComponentRoleType(java.lang.reflect.Field,java.lang.Class)|",
+      "|java+constructor:///org/xwiki/test/AbstractMockingComponentTestCase$MockingEmbeddableComponentManager/AbstractMockingComponentTestCase$MockingEmbeddableComponentManager(org.xwiki.test.AbstractMockingComponentTestCase,org.xwiki.test.AbstractMockingComponentTestCase$1)|",
+      "|java+method:///org/xwiki/component/embed/EmbeddableComponentManager/registerComponent(org.xwiki.component.descriptor.ComponentDescriptor)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/xwiki/test/AbstractMockingComponentTestCase/configure()|",
+      "|java+method:///org/xwiki/test/AbstractMockingComponentTestCase/getComponentManager()|",
+      "|java+method:///java/lang/String/length()|",
+      "|java+method:///java/util/Arrays/asList(java.lang.Object%5B%5D)|",
+      "|java+method:///org/xwiki/component/embed/EmbeddableComponentManager/getInstance(java.lang.reflect.Type,java.lang.String)|",
+      "|java+method:///org/xwiki/test/annotation/MockingRequirement/exceptions()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/xwiki/component/util/ReflectionUtils/getAllFields(java.lang.Class)|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///org/xwiki/test/annotation/MockingRequirement/hint()|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///java/lang/Class/getClassLoader()|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///java/util/Collection/iterator()|",
+      "|java+method:///org/xwiki/component/annotation/ComponentAnnotationLoader/initialize(org.xwiki.component.manager.ComponentManager,java.lang.ClassLoader)|",
+      "|java+method:///org/xwiki/test/annotation/MockingRequirement/value()|",
+      "|java+method:///java/lang/reflect/Field/getAnnotation(java.lang.Class)|"
+    ],
+    "affectedLib": "org.xwiki.commons:xwiki-commons-component-default:4.1-milestone-1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.xwiki.commons:xwiki-commons-test:4.0-milestone-2",
+    "coordinatesV2": "org.xwiki.commons:xwiki-commons-test:4.1-milestone-1",
+    "caller": "|java+method:///org/xwiki/test/XWikiComponentInitializer/initializeExecution()|",
+    "called": "|java+constructor:///org/xwiki/context/ExecutionContext/ExecutionContext()|",
+    "v1Body": [
+      "|java+constructor:///org/xwiki/context/ExecutionContext/ExecutionContext()|",
+      "|java+method:///org/xwiki/component/embed/EmbeddableComponentManager/lookup(java.lang.Class)|",
+      "|java+method:///org/xwiki/context/ExecutionContextManager/initialize(org.xwiki.context.ExecutionContext)|",
+      "|java+method:///org/xwiki/test/XWikiComponentInitializer/getComponentManager()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/xwiki/context/ExecutionContext/ExecutionContext()|",
+      "|java+method:///org/xwiki/component/embed/EmbeddableComponentManager/getInstance(java.lang.reflect.Type)|",
+      "|java+method:///org/xwiki/context/ExecutionContextManager/initialize(org.xwiki.context.ExecutionContext)|",
+      "|java+method:///org/xwiki/test/XWikiComponentInitializer/getComponentManager()|"
+    ],
+    "affectedLib": "org.xwiki.commons:xwiki-commons-context:4.1-milestone-1",
+    "change": "UPDATED"
+  }
+]

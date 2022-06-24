@@ -1,0 +1,36 @@
+[
+  {
+    "coordinatesV1": "org.codehaus.redback:redback-users-cached:1.2-beta-2",
+    "coordinatesV2": "org.codehaus.redback:redback-users-cached:1.2-beta-1",
+    "caller": "|java+method:///org/codehaus/plexus/redback/users/cached/CachedUserManager/eraseDatabase()|",
+    "called": "|java+method:///org/codehaus/plexus/ehcache/EhcacheUtils/clearAllCaches(org.codehaus.plexus.logging.Logger)|",
+    "v1Body": [
+      "|java+method:///org/codehaus/plexus/redback/users/cached/CachedUserManager/getLogger()|",
+      "|java+method:///org/codehaus/plexus/ehcache/EhcacheUtils/clearAllCaches(org.codehaus.plexus.logging.Logger)|",
+      "|java+method:///org/codehaus/plexus/redback/users/UserManager/eraseDatabase()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/codehaus/plexus/cache/Cache/clear()|",
+      "|java+method:///org/codehaus/plexus/redback/users/UserManager/eraseDatabase()|"
+    ],
+    "affectedLib": "org.codehaus.plexus:plexus-ehcache:1.0-alpha-2",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.codehaus.redback:redback-users-cached:1.2-beta-2",
+    "coordinatesV2": "org.codehaus.redback:redback-users-cached:1.2-beta-1",
+    "caller": "|java+method:///org/codehaus/plexus/redback/users/cached/CachedUserManager/userManagerInit(boolean)|",
+    "called": "|java+method:///org/codehaus/plexus/ehcache/EhcacheUtils/clearAllCaches(org.codehaus.plexus.logging.Logger)|",
+    "v1Body": [
+      "|java+method:///org/codehaus/plexus/redback/users/cached/CachedUserManager/getLogger()|",
+      "|java+method:///org/codehaus/plexus/redback/users/UserManagerListener/userManagerInit(boolean)|",
+      "|java+method:///org/codehaus/plexus/ehcache/EhcacheUtils/clearAllCaches(org.codehaus.plexus.logging.Logger)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/codehaus/plexus/redback/users/UserManagerListener/userManagerInit(boolean)|",
+      "|java+method:///org/codehaus/plexus/cache/Cache/clear()|"
+    ],
+    "affectedLib": "org.codehaus.plexus:plexus-ehcache:1.0-alpha-2",
+    "change": "REMOVED"
+  }
+]

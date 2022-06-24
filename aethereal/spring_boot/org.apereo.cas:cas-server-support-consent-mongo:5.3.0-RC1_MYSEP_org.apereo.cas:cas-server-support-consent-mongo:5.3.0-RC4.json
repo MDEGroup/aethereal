@@ -1,0 +1,26 @@
+[
+  {
+    "coordinatesV1": "org.apereo.cas:cas-server-support-consent-mongo:5.3.0-RC1",
+    "coordinatesV2": "org.apereo.cas:cas-server-support-consent-mongo:5.3.0-RC4",
+    "caller": "|java+method:///org/apereo/cas/consent/MongoDbConsentRepository/deleteConsentDecision(long,java.lang.String)|",
+    "called": "|java+method:///com/mongodb/WriteResult/getN()|",
+    "v1Body": [
+      "|java+method:///org/springframework/data/mongodb/core/query/Criteria/is(java.lang.Object)|",
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///org/springframework/data/mongodb/core/query/Criteria/where(java.lang.String)|",
+      "|java+method:///org/springframework/data/mongodb/core/MongoTemplate/remove(org.springframework.data.mongodb.core.query.Query,java.lang.String)|",
+      "|java+constructor:///org/springframework/data/mongodb/core/query/Query/Query(org.springframework.data.mongodb.core.query.CriteriaDefinition)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/springframework/data/mongodb/core/query/Criteria/is(java.lang.Object)|",
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///org/springframework/data/mongodb/core/MongoTemplate/remove(org.springframework.data.mongodb.core.query.Query,java.lang.Class,java.lang.String)|",
+      "|java+method:///org/springframework/data/mongodb/core/query/Criteria/where(java.lang.String)|",
+      "|java+method:///com/mongodb/WriteResult/getN()|",
+      "|java+constructor:///org/springframework/data/mongodb/core/query/Query/Query(org.springframework.data.mongodb.core.query.CriteriaDefinition)|",
+      "|java+method:///org/springframework/data/mongodb/core/query/Criteria/and(java.lang.String)|"
+    ],
+    "affectedLib": "org.mongodb:mongo-java-driver:3.6.3",
+    "change": "UPDATED"
+  }
+]

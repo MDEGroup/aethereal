@@ -1,0 +1,49 @@
+[
+  {
+    "coordinatesV1": "org.apache.camel:camel-gae:2.1.0",
+    "coordinatesV2": "org.apache.camel:camel-gae:2.2.0",
+    "caller": "|java+method:///org/apache/camel/component/gae/mail/GMailBinding/writeTo(org.apache.camel.component.gae.mail.GMailEndpoint,org.apache.camel.Exchange,com.google.appengine.api.mail.MailService$Message)|",
+    "called": "|java+method:///com/google/appengine/api/mail/MailService$Message/setTo(java.lang.String%5B%5D)|",
+    "v1Body": [
+      "|java+method:///org/apache/camel/Message/getHeader(java.lang.String)|",
+      "|java+method:///com/google/appengine/api/mail/MailService$Message/setTo(java.lang.String%5B%5D)|",
+      "|java+method:///org/apache/camel/Exchange/getIn()|",
+      "|java+method:///org/apache/camel/component/gae/mail/GMailEndpoint/getTo()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/camel/Message/getHeader(java.lang.String)|",
+      "|java+method:///java/lang/String/split(java.lang.String)|",
+      "|java+method:///com/google/appengine/api/mail/MailService$Message/setTo(java.lang.String%5B%5D)|",
+      "|java+method:///org/apache/camel/Exchange/getIn()|",
+      "|java+method:///org/apache/camel/component/gae/mail/GMailEndpoint/getTo()|"
+    ],
+    "affectedLib": "com.google.appengine:appengine-api-1.0-sdk:1.3.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.camel:camel-gae:2.1.0",
+    "coordinatesV2": "org.apache.camel:camel-gae:2.2.0",
+    "caller": "|java+method:///org/apache/camel/component/gae/mail/GMailBinding/writeRequest(org.apache.camel.component.gae.mail.GMailEndpoint,org.apache.camel.Exchange,com.google.appengine.api.mail.MailService$Message)|",
+    "called": "|java+constructor:///com/google/appengine/api/mail/MailService$Message/MailService$Message()|",
+    "v1Body": [
+      "|java+method:///org/apache/camel/component/gae/mail/GMailBinding/writeSubject(org.apache.camel.component.gae.mail.GMailEndpoint,org.apache.camel.Exchange,com.google.appengine.api.mail.MailService$Message)|",
+      "|java+constructor:///com/google/appengine/api/mail/MailService$Message/MailService$Message()|",
+      "|java+method:///org/apache/camel/component/gae/mail/GMailBinding/writeFrom(org.apache.camel.component.gae.mail.GMailEndpoint,org.apache.camel.Exchange,com.google.appengine.api.mail.MailService$Message)|",
+      "|java+method:///org/apache/camel/component/gae/mail/GMailBinding/writeBody(org.apache.camel.component.gae.mail.GMailEndpoint,org.apache.camel.Exchange,com.google.appengine.api.mail.MailService$Message)|",
+      "|java+method:///org/apache/camel/component/gae/mail/GMailBinding/writeAttachments(org.apache.camel.component.gae.mail.GMailEndpoint,org.apache.camel.Exchange,com.google.appengine.api.mail.MailService$Message)|",
+      "|java+method:///org/apache/camel/component/gae/mail/GMailBinding/writeTo(org.apache.camel.component.gae.mail.GMailEndpoint,org.apache.camel.Exchange,com.google.appengine.api.mail.MailService$Message)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/camel/component/gae/mail/GMailBinding/writeSubject(org.apache.camel.component.gae.mail.GMailEndpoint,org.apache.camel.Exchange,com.google.appengine.api.mail.MailService$Message)|",
+      "|java+constructor:///com/google/appengine/api/mail/MailService$Message/MailService$Message()|",
+      "|java+method:///org/apache/camel/component/gae/mail/GMailBinding/writeBcc(org.apache.camel.component.gae.mail.GMailEndpoint,org.apache.camel.Exchange,com.google.appengine.api.mail.MailService$Message)|",
+      "|java+method:///org/apache/camel/component/gae/mail/GMailBinding/writeFrom(org.apache.camel.component.gae.mail.GMailEndpoint,org.apache.camel.Exchange,com.google.appengine.api.mail.MailService$Message)|",
+      "|java+method:///org/apache/camel/component/gae/mail/GMailBinding/writeBody(org.apache.camel.component.gae.mail.GMailEndpoint,org.apache.camel.Exchange,com.google.appengine.api.mail.MailService$Message)|",
+      "|java+method:///org/apache/camel/component/gae/mail/GMailBinding/writeCc(org.apache.camel.component.gae.mail.GMailEndpoint,org.apache.camel.Exchange,com.google.appengine.api.mail.MailService$Message)|",
+      "|java+method:///org/apache/camel/component/gae/mail/GMailBinding/writeAttachments(org.apache.camel.component.gae.mail.GMailEndpoint,org.apache.camel.Exchange,com.google.appengine.api.mail.MailService$Message)|",
+      "|java+method:///org/apache/camel/component/gae/mail/GMailBinding/writeTo(org.apache.camel.component.gae.mail.GMailEndpoint,org.apache.camel.Exchange,com.google.appengine.api.mail.MailService$Message)|"
+    ],
+    "affectedLib": "com.google.appengine:appengine-api-1.0-sdk:1.3.0",
+    "change": "UPDATED"
+  }
+]

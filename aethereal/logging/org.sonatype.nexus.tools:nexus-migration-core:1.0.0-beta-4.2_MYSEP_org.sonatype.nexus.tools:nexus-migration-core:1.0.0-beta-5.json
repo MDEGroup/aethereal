@@ -1,0 +1,50 @@
+[
+  {
+    "coordinatesV1": "org.sonatype.nexus.tools:nexus-migration-core:1.0.0-beta-4.2",
+    "coordinatesV2": "org.sonatype.nexus.tools:nexus-migration-core:1.0.0-beta-5",
+    "caller": "|java+method:///org/sonatype/nexus/tools/migration/DefaultMigrationTool/migrate(org.sonatype.nexus.tools.migration.MigrationRequest,org.sonatype.nexus.tools.migration.MigrationMonitor)|",
+    "called": "|java+method:///org/sonatype/nexus/configuration/model/Configuration/getRepositoryShadows()|",
+    "v1Body": [
+      "|java+constructor:///org/sonatype/nexus/tools/migration/LoggingMigrationMonitor/LoggingMigrationMonitor(org.codehaus.plexus.logging.Logger)|",
+      "|java+method:///org/sonatype/nexus/tools/migration/MigrationRequest/getSourceName()|",
+      "|java+method:///org/sonatype/nexus/tools/migration/MigrationMonitor/migrationRequested(org.sonatype.nexus.tools.migration.MigrationRequest)|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///org/sonatype/nexus/configuration/model/Configuration/setApplicationLogDirectory(java.lang.String)|",
+      "|java+method:///org/sonatype/nexus/configuration/model/Configuration/getRepositoryShadows()|",
+      "|java+method:///org/sonatype/nexus/tools/migration/MigrationSource/migrateConfiguration(org.sonatype.nexus.tools.migration.MigrationRequest,org.sonatype.nexus.tools.migration.MigrationResult,org.sonatype.nexus.tools.migration.MigrationMonitor)|",
+      "|java+method:///java/util/List/clear()|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///org/sonatype/nexus/tools/migration/DefaultMigrationTool/getLogger()|",
+      "|java+method:///org/sonatype/nexus/configuration/source/ConfigurationSource/loadConfiguration()|",
+      "|java+method:///org/sonatype/nexus/tools/migration/MigrationResult/getExceptions()|",
+      "|java+method:///org/sonatype/nexus/configuration/model/Configuration/setWorkingDirectory(java.lang.String)|",
+      "|java+method:///org/sonatype/nexus/tools/migration/MigrationSourceManager/getMigrationSource(java.lang.String)|",
+      "|java+method:///org/sonatype/nexus/tools/migration/MigrationResult/setSuccesful(boolean)|",
+      "|java+constructor:///org/sonatype/nexus/tools/migration/MigrationResult/MigrationResult(org.sonatype.nexus.configuration.model.Configuration)|",
+      "|java+method:///org/sonatype/nexus/tools/migration/MigrationResult/isSuccesful()|",
+      "|java+method:///org/sonatype/nexus/tools/migration/MigrationMonitor/migrationFinished(org.sonatype.nexus.tools.migration.MigrationRequest,boolean,org.sonatype.nexus.tools.migration.MigrationResult)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/sonatype/nexus/tools/migration/LoggingMigrationMonitor/LoggingMigrationMonitor(org.codehaus.plexus.logging.Logger)|",
+      "|java+method:///org/sonatype/nexus/tools/migration/MigrationRequest/getSourceName()|",
+      "|java+method:///org/sonatype/nexus/tools/migration/MigrationMonitor/migrationRequested(org.sonatype.nexus.tools.migration.MigrationRequest)|",
+      "|java+method:///org/sonatype/nexus/configuration/application/source/ApplicationConfigurationSource/loadConfiguration()|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///org/sonatype/nexus/configuration/model/Configuration/setApplicationLogDirectory(java.lang.String)|",
+      "|java+method:///org/sonatype/nexus/configuration/model/Configuration/getRepositoryShadows()|",
+      "|java+method:///org/sonatype/nexus/tools/migration/MigrationSource/migrateConfiguration(org.sonatype.nexus.tools.migration.MigrationRequest,org.sonatype.nexus.tools.migration.MigrationResult,org.sonatype.nexus.tools.migration.MigrationMonitor)|",
+      "|java+method:///java/util/List/clear()|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///org/sonatype/nexus/tools/migration/DefaultMigrationTool/getLogger()|",
+      "|java+method:///org/sonatype/nexus/tools/migration/MigrationResult/getExceptions()|",
+      "|java+method:///org/sonatype/nexus/configuration/model/Configuration/setWorkingDirectory(java.lang.String)|",
+      "|java+method:///org/sonatype/nexus/tools/migration/MigrationSourceManager/getMigrationSource(java.lang.String)|",
+      "|java+method:///org/sonatype/nexus/tools/migration/MigrationResult/setSuccesful(boolean)|",
+      "|java+constructor:///org/sonatype/nexus/tools/migration/MigrationResult/MigrationResult(org.sonatype.nexus.configuration.model.Configuration)|",
+      "|java+method:///org/sonatype/nexus/tools/migration/MigrationResult/isSuccesful()|",
+      "|java+method:///org/sonatype/nexus/tools/migration/MigrationMonitor/migrationFinished(org.sonatype.nexus.tools.migration.MigrationRequest,boolean,org.sonatype.nexus.tools.migration.MigrationResult)|"
+    ],
+    "affectedLib": "org.sonatype.nexus:nexus-configuration:1.0.0-beta-5",
+    "change": "UPDATED"
+  }
+]

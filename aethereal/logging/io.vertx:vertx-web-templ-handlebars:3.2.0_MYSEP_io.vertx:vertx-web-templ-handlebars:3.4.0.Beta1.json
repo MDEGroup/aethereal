@@ -1,0 +1,173 @@
+[
+  {
+    "coordinatesV1": "io.vertx:vertx-web-templ-handlebars:3.2.0",
+    "coordinatesV2": "io.vertx:vertx-web-templ-handlebars:3.4.0.Beta1",
+    "caller": "|java+constructor:///io/vertx/ext/web/templ/impl/HandlebarsTemplateEngineImpl/HandlebarsTemplateEngineImpl()|",
+    "called": "|java+method:///org/apache/commons/lang3/ArrayUtils/addAll(java.lang.Object%5B%5D,java.lang.Object%5B%5D)|",
+    "v1Body": [
+      "|java+constructor:///io/vertx/ext/web/templ/impl/CachingTemplateEngine/CachingTemplateEngine(java.lang.String,int)|",
+      "|java+constructor:///com/github/jknack/handlebars/Handlebars/Handlebars(com.github.jknack.handlebars.io.TemplateLoader)|",
+      "|java+constructor:///io/vertx/ext/web/templ/impl/HandlebarsTemplateEngineImpl$Loader/HandlebarsTemplateEngineImpl$Loader(io.vertx.ext.web.templ.impl.HandlebarsTemplateEngineImpl,io.vertx.ext.web.templ.impl.HandlebarsTemplateEngineImpl$1)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///io/vertx/ext/web/templ/impl/CachingTemplateEngine/CachingTemplateEngine(java.lang.String,int)|",
+      "|java+method:///org/apache/commons/lang3/ArrayUtils/addAll(java.lang.Object%5B%5D,java.lang.Object%5B%5D)|",
+      "|java+constructor:///com/github/jknack/handlebars/Handlebars/Handlebars(com.github.jknack.handlebars.io.TemplateLoader)|",
+      "|java+constructor:///io/vertx/ext/web/templ/impl/HandlebarsTemplateEngineImpl$Loader/HandlebarsTemplateEngineImpl$Loader(io.vertx.ext.web.templ.impl.HandlebarsTemplateEngineImpl,io.vertx.ext.web.templ.impl.HandlebarsTemplateEngineImpl$1)|"
+    ],
+    "affectedLib": "org.apache.commons:commons-lang3:3.4",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "io.vertx:vertx-web-templ-handlebars:3.2.0",
+    "coordinatesV2": "io.vertx:vertx-web-templ-handlebars:3.4.0.Beta1",
+    "caller": "|java+method:///io/vertx/ext/web/templ/impl/HandlebarsTemplateEngineImpl/render(io.vertx.ext.web.RoutingContext,java.lang.String,io.vertx.core.Handler)|",
+    "called": "|java+method:///io/vertx/core/Future/failedFuture(java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///io/vertx/ext/web/impl/ConcurrentLRUCache/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///io/vertx/ext/web/templ/impl/HandlebarsTemplateEngineImpl$Loader/setVertx(io.vertx.core.Vertx)|",
+      "|java+method:///io/vertx/ext/web/impl/ConcurrentLRUCache/get(java.lang.Object)|",
+      "|java+method:///io/vertx/ext/web/RoutingContext/data()|",
+      "|java+method:///io/vertx/core/Future/failedFuture(java.lang.Throwable)|",
+      "|java+method:///io/vertx/core/Handler/handle(java.lang.Object)|",
+      "|java+method:///com/github/jknack/handlebars/Handlebars/compile(java.lang.String)|",
+      "|java+method:///io/vertx/ext/web/RoutingContext/vertx()|",
+      "|java+method:///io/vertx/core/Future/succeededFuture(java.lang.Object)|",
+      "|java+method:///com/github/jknack/handlebars/Template/apply(java.lang.Object)|",
+      "|java+method:///io/vertx/core/buffer/Buffer/buffer(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///io/vertx/ext/web/templ/impl/HandlebarsTemplateEngineImpl/getResolvers()|",
+      "|java+method:///io/vertx/ext/web/impl/ConcurrentLRUCache/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///io/vertx/ext/web/templ/impl/HandlebarsTemplateEngineImpl$Loader/setVertx(io.vertx.core.Vertx)|",
+      "|java+method:///com/github/jknack/handlebars/Template/apply(com.github.jknack.handlebars.Context)|",
+      "|java+method:///io/vertx/ext/web/RoutingContext/data()|",
+      "|java+method:///io/vertx/core/Future/failedFuture(java.lang.Throwable)|",
+      "|java+method:///io/vertx/core/Handler/handle(java.lang.Object)|",
+      "|java+method:///io/vertx/core/buffer/Buffer/buffer(java.lang.String)|",
+      "|java+method:///com/github/jknack/handlebars/Handlebars/compile(java.lang.String)|",
+      "|java+method:///io/vertx/ext/web/RoutingContext/vertx()|",
+      "|java+method:///io/vertx/core/Future/succeededFuture(java.lang.Object)|",
+      "|java+method:///io/vertx/ext/web/impl/ConcurrentLRUCache/get(java.lang.Object)|",
+      "|java+method:///com/github/jknack/handlebars/Context$Builder/build()|",
+      "|java+method:///com/github/jknack/handlebars/Context$Builder/resolver(com.github.jknack.handlebars.ValueResolver%5B%5D)|",
+      "|java+method:///com/github/jknack/handlebars/Context/newBuilder(java.lang.Object)|"
+    ],
+    "affectedLib": "io.vertx:vertx-core:3.4.0.Beta1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.vertx:vertx-web-templ-handlebars:3.2.0",
+    "coordinatesV2": "io.vertx:vertx-web-templ-handlebars:3.4.0.Beta1",
+    "caller": "|java+constructor:///io/vertx/ext/web/templ/impl/HandlebarsTemplateEngineImpl/HandlebarsTemplateEngineImpl()|",
+    "called": "|java+constructor:///com/github/jknack/handlebars/Handlebars/Handlebars(com.github.jknack.handlebars.io.TemplateLoader)|",
+    "v1Body": [
+      "|java+constructor:///io/vertx/ext/web/templ/impl/CachingTemplateEngine/CachingTemplateEngine(java.lang.String,int)|",
+      "|java+constructor:///com/github/jknack/handlebars/Handlebars/Handlebars(com.github.jknack.handlebars.io.TemplateLoader)|",
+      "|java+constructor:///io/vertx/ext/web/templ/impl/HandlebarsTemplateEngineImpl$Loader/HandlebarsTemplateEngineImpl$Loader(io.vertx.ext.web.templ.impl.HandlebarsTemplateEngineImpl,io.vertx.ext.web.templ.impl.HandlebarsTemplateEngineImpl$1)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///io/vertx/ext/web/templ/impl/CachingTemplateEngine/CachingTemplateEngine(java.lang.String,int)|",
+      "|java+method:///org/apache/commons/lang3/ArrayUtils/addAll(java.lang.Object%5B%5D,java.lang.Object%5B%5D)|",
+      "|java+constructor:///com/github/jknack/handlebars/Handlebars/Handlebars(com.github.jknack.handlebars.io.TemplateLoader)|",
+      "|java+constructor:///io/vertx/ext/web/templ/impl/HandlebarsTemplateEngineImpl$Loader/HandlebarsTemplateEngineImpl$Loader(io.vertx.ext.web.templ.impl.HandlebarsTemplateEngineImpl,io.vertx.ext.web.templ.impl.HandlebarsTemplateEngineImpl$1)|"
+    ],
+    "affectedLib": "com.github.jknack:handlebars:4.0.3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.vertx:vertx-web-templ-handlebars:3.2.0",
+    "coordinatesV2": "io.vertx:vertx-web-templ-handlebars:3.4.0.Beta1",
+    "caller": "|java+method:///io/vertx/ext/web/templ/impl/HandlebarsTemplateEngineImpl/render(io.vertx.ext.web.RoutingContext,java.lang.String,io.vertx.core.Handler)|",
+    "called": "|java+method:///com/github/jknack/handlebars/Context$Builder/resolver(com.github.jknack.handlebars.ValueResolver%5B%5D)|",
+    "v1Body": [
+      "|java+method:///io/vertx/ext/web/impl/ConcurrentLRUCache/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///io/vertx/ext/web/templ/impl/HandlebarsTemplateEngineImpl$Loader/setVertx(io.vertx.core.Vertx)|",
+      "|java+method:///io/vertx/ext/web/impl/ConcurrentLRUCache/get(java.lang.Object)|",
+      "|java+method:///io/vertx/ext/web/RoutingContext/data()|",
+      "|java+method:///io/vertx/core/Future/failedFuture(java.lang.Throwable)|",
+      "|java+method:///io/vertx/core/Handler/handle(java.lang.Object)|",
+      "|java+method:///com/github/jknack/handlebars/Handlebars/compile(java.lang.String)|",
+      "|java+method:///io/vertx/ext/web/RoutingContext/vertx()|",
+      "|java+method:///io/vertx/core/Future/succeededFuture(java.lang.Object)|",
+      "|java+method:///com/github/jknack/handlebars/Template/apply(java.lang.Object)|",
+      "|java+method:///io/vertx/core/buffer/Buffer/buffer(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///io/vertx/ext/web/templ/impl/HandlebarsTemplateEngineImpl/getResolvers()|",
+      "|java+method:///io/vertx/ext/web/impl/ConcurrentLRUCache/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///io/vertx/ext/web/templ/impl/HandlebarsTemplateEngineImpl$Loader/setVertx(io.vertx.core.Vertx)|",
+      "|java+method:///com/github/jknack/handlebars/Template/apply(com.github.jknack.handlebars.Context)|",
+      "|java+method:///io/vertx/ext/web/RoutingContext/data()|",
+      "|java+method:///io/vertx/core/Future/failedFuture(java.lang.Throwable)|",
+      "|java+method:///io/vertx/core/Handler/handle(java.lang.Object)|",
+      "|java+method:///io/vertx/core/buffer/Buffer/buffer(java.lang.String)|",
+      "|java+method:///com/github/jknack/handlebars/Handlebars/compile(java.lang.String)|",
+      "|java+method:///io/vertx/ext/web/RoutingContext/vertx()|",
+      "|java+method:///io/vertx/core/Future/succeededFuture(java.lang.Object)|",
+      "|java+method:///io/vertx/ext/web/impl/ConcurrentLRUCache/get(java.lang.Object)|",
+      "|java+method:///com/github/jknack/handlebars/Context$Builder/build()|",
+      "|java+method:///com/github/jknack/handlebars/Context$Builder/resolver(com.github.jknack.handlebars.ValueResolver%5B%5D)|",
+      "|java+method:///com/github/jknack/handlebars/Context/newBuilder(java.lang.Object)|"
+    ],
+    "affectedLib": "com.github.jknack:handlebars:4.0.3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.vertx:vertx-web-templ-handlebars:3.2.0",
+    "coordinatesV2": "io.vertx:vertx-web-templ-handlebars:3.4.0.Beta1",
+    "caller": "|java+constructor:///io/vertx/ext/web/templ/impl/HandlebarsTemplateEngineImpl/HandlebarsTemplateEngineImpl()|",
+    "called": "|java+constructor:///io/vertx/ext/web/templ/impl/CachingTemplateEngine/CachingTemplateEngine(java.lang.String,int)|",
+    "v1Body": [
+      "|java+constructor:///io/vertx/ext/web/templ/impl/CachingTemplateEngine/CachingTemplateEngine(java.lang.String,int)|",
+      "|java+constructor:///com/github/jknack/handlebars/Handlebars/Handlebars(com.github.jknack.handlebars.io.TemplateLoader)|",
+      "|java+constructor:///io/vertx/ext/web/templ/impl/HandlebarsTemplateEngineImpl$Loader/HandlebarsTemplateEngineImpl$Loader(io.vertx.ext.web.templ.impl.HandlebarsTemplateEngineImpl,io.vertx.ext.web.templ.impl.HandlebarsTemplateEngineImpl$1)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///io/vertx/ext/web/templ/impl/CachingTemplateEngine/CachingTemplateEngine(java.lang.String,int)|",
+      "|java+method:///org/apache/commons/lang3/ArrayUtils/addAll(java.lang.Object%5B%5D,java.lang.Object%5B%5D)|",
+      "|java+constructor:///com/github/jknack/handlebars/Handlebars/Handlebars(com.github.jknack.handlebars.io.TemplateLoader)|",
+      "|java+constructor:///io/vertx/ext/web/templ/impl/HandlebarsTemplateEngineImpl$Loader/HandlebarsTemplateEngineImpl$Loader(io.vertx.ext.web.templ.impl.HandlebarsTemplateEngineImpl,io.vertx.ext.web.templ.impl.HandlebarsTemplateEngineImpl$1)|"
+    ],
+    "affectedLib": "io.vertx:vertx-web:3.4.0.Beta1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.vertx:vertx-web-templ-handlebars:3.2.0",
+    "coordinatesV2": "io.vertx:vertx-web-templ-handlebars:3.4.0.Beta1",
+    "caller": "|java+method:///io/vertx/ext/web/templ/impl/HandlebarsTemplateEngineImpl/render(io.vertx.ext.web.RoutingContext,java.lang.String,io.vertx.core.Handler)|",
+    "called": "|java+method:///io/vertx/ext/web/impl/ConcurrentLRUCache/put(java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///io/vertx/ext/web/impl/ConcurrentLRUCache/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///io/vertx/ext/web/templ/impl/HandlebarsTemplateEngineImpl$Loader/setVertx(io.vertx.core.Vertx)|",
+      "|java+method:///io/vertx/ext/web/impl/ConcurrentLRUCache/get(java.lang.Object)|",
+      "|java+method:///io/vertx/ext/web/RoutingContext/data()|",
+      "|java+method:///io/vertx/core/Future/failedFuture(java.lang.Throwable)|",
+      "|java+method:///io/vertx/core/Handler/handle(java.lang.Object)|",
+      "|java+method:///com/github/jknack/handlebars/Handlebars/compile(java.lang.String)|",
+      "|java+method:///io/vertx/ext/web/RoutingContext/vertx()|",
+      "|java+method:///io/vertx/core/Future/succeededFuture(java.lang.Object)|",
+      "|java+method:///com/github/jknack/handlebars/Template/apply(java.lang.Object)|",
+      "|java+method:///io/vertx/core/buffer/Buffer/buffer(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///io/vertx/ext/web/templ/impl/HandlebarsTemplateEngineImpl/getResolvers()|",
+      "|java+method:///io/vertx/ext/web/impl/ConcurrentLRUCache/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///io/vertx/ext/web/templ/impl/HandlebarsTemplateEngineImpl$Loader/setVertx(io.vertx.core.Vertx)|",
+      "|java+method:///com/github/jknack/handlebars/Template/apply(com.github.jknack.handlebars.Context)|",
+      "|java+method:///io/vertx/ext/web/RoutingContext/data()|",
+      "|java+method:///io/vertx/core/Future/failedFuture(java.lang.Throwable)|",
+      "|java+method:///io/vertx/core/Handler/handle(java.lang.Object)|",
+      "|java+method:///io/vertx/core/buffer/Buffer/buffer(java.lang.String)|",
+      "|java+method:///com/github/jknack/handlebars/Handlebars/compile(java.lang.String)|",
+      "|java+method:///io/vertx/ext/web/RoutingContext/vertx()|",
+      "|java+method:///io/vertx/core/Future/succeededFuture(java.lang.Object)|",
+      "|java+method:///io/vertx/ext/web/impl/ConcurrentLRUCache/get(java.lang.Object)|",
+      "|java+method:///com/github/jknack/handlebars/Context$Builder/build()|",
+      "|java+method:///com/github/jknack/handlebars/Context$Builder/resolver(com.github.jknack.handlebars.ValueResolver%5B%5D)|",
+      "|java+method:///com/github/jknack/handlebars/Context/newBuilder(java.lang.Object)|"
+    ],
+    "affectedLib": "io.vertx:vertx-web:3.4.0.Beta1",
+    "change": "UPDATED"
+  }
+]

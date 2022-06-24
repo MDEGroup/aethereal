@@ -1,0 +1,112 @@
+[
+  {
+    "coordinatesV1": "org.grouplens.grapht:grapht:0.5.0",
+    "coordinatesV2": "org.grouplens.grapht:grapht:0.8.1",
+    "caller": "|java+constructor:///org/grouplens/grapht/annotation/AnnotationProxy/AnnotationProxy(java.lang.Class,java.util.Map)|",
+    "called": "|java+method:///com/google/common/collect/ImmutableMap/copyOf(java.util.Map)|",
+    "v1Body": [
+      "|java+constructor:///java/util/HashMap/HashMap(java.util.Map)|",
+      "|java+method:///java/util/Collections/unmodifiableMap(java.util.Map)|",
+      "|java+method:///org/grouplens/grapht/util/ClassProxy/of(java.lang.Class)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/common/collect/ImmutableMap/copyOf(java.util.Map)|",
+      "|java+method:///org/grouplens/grapht/util/ClassProxy/of(java.lang.Class)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "com.google.guava:guava:14.0.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.grouplens.grapht:grapht:0.5.0",
+    "coordinatesV2": "org.grouplens.grapht:grapht:0.8.1",
+    "caller": "|java+constructor:///org/grouplens/grapht/BindingFunctionBuilder/BindingFunctionBuilder(org.grouplens.grapht.BindingFunctionBuilder)|",
+    "called": "|java+method:///com/google/common/collect/ArrayListMultimap/create(com.google.common.collect.Multimap)|",
+    "v1Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+constructor:///org/grouplens/grapht/spi/ElementChainContextMatcher/ElementChainContextMatcher(java.util.List)|",
+      "|java+method:///org/grouplens/grapht/BindingFunctionBuilder/deepCloneRules(java.util.Map)|",
+      "|java+constructor:///org/grouplens/grapht/ContextImpl/ContextImpl(org.grouplens.grapht.BindingFunctionBuilder,org.grouplens.grapht.spi.ElementChainContextMatcher)|",
+      "|java+constructor:///java/util/HashSet/HashSet(java.util.Collection)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/common/collect/ArrayListMultimap/create(com.google.common.collect.Multimap)|",
+      "|java+method:///org/grouplens/grapht/ContextImpl/root(org.grouplens.grapht.BindingFunctionBuilder)|",
+      "|java+constructor:///java/util/HashSet/HashSet(java.util.Collection)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "com.google.guava:guava:14.0.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.grouplens.grapht:grapht:0.5.0",
+    "coordinatesV2": "org.grouplens.grapht:grapht:0.8.1",
+    "caller": "|java+constructor:///org/grouplens/grapht/BindingFunctionBuilder/BindingFunctionBuilder(boolean)|",
+    "called": "|java+method:///com/google/common/collect/ArrayListMultimap/create()|",
+    "v1Body": [
+      "|java+constructor:///org/grouplens/grapht/spi/reflect/ReflectionInjectSPI/ReflectionInjectSPI()|",
+      "|java+constructor:///org/grouplens/grapht/BindingFunctionBuilder/BindingFunctionBuilder(org.grouplens.grapht.spi.InjectSPI,boolean)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/common/collect/ArrayListMultimap/create()|",
+      "|java+method:///org/grouplens/grapht/ContextImpl/root(org.grouplens.grapht.BindingFunctionBuilder)|",
+      "|java+constructor:///java/util/HashSet/HashSet()|",
+      "|java+method:///java/util/Set/add(java.lang.Object)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "com.google.guava:guava:14.0.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.grouplens.grapht:grapht:0.5.0",
+    "coordinatesV2": "org.grouplens.grapht:grapht:0.8.1",
+    "caller": "|java+initializer:///org/grouplens/grapht/solver/RuleBasedBindingFunction/RuleBasedBindingFunction$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/util/WeakHashMap/WeakHashMap()|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.grouplens.grapht:grapht:0.5.0",
+    "coordinatesV2": "org.grouplens.grapht:grapht:0.8.1",
+    "caller": "|java+initializer:///org/grouplens/grapht/util/ClassProxy/ClassProxy$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+constructor:///java/util/WeakHashMap/WeakHashMap()|",
+      "|java+method:///java/nio/charset/Charset/forName(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/util/WeakHashMap/WeakHashMap()|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///java/nio/charset/Charset/forName(java.lang.String)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.grouplens.grapht:grapht:0.5.0",
+    "coordinatesV2": "org.grouplens.grapht:grapht:0.8.1",
+    "caller": "|java+initializer:///org/grouplens/grapht/solver/DependencySolver/DependencySolver$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///java/lang/Class/desiredAssertionStatus()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///org/grouplens/grapht/Component/create(org.grouplens.grapht.reflect.Satisfaction,org.grouplens.grapht.CachePolicy)|",
+      "|java+constructor:///org/grouplens/grapht/reflect/internal/NullSatisfaction/NullSatisfaction(java.lang.Class)|",
+      "|java+method:///java/lang/Class/desiredAssertionStatus()|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "UPDATED"
+  }
+]

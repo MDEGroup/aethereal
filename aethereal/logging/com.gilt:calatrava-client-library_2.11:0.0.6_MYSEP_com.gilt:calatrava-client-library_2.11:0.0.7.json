@@ -1,0 +1,66 @@
+[
+  {
+    "coordinatesV1": "com.gilt:calatrava-client-library_2.11:0.0.7",
+    "coordinatesV2": "com.gilt:calatrava-client-library_2.11:0.0.6",
+    "caller": "|java+method:///com/gilt/calatrava/kinesis/RecordProcessorFactory/fetchChangeEvent(java.lang.String)|",
+    "called": "|java+method:///play/api/libs/json/Json$/parse(java.io.InputStream)|",
+    "v1Body": [
+      "|java+method:///com/gilt/calatrava/kinesis/RecordProcessorFactory/warn(scala.Function0,java.lang.Throwable)|",
+      "|java+constructor:///com/gilt/calatrava/kinesis/RecordProcessorFactory$$anonfun$fetchChangeEvent$1/RecordProcessorFactory$$anonfun$fetchChangeEvent$1(com.gilt.calatrava.kinesis.RecordProcessorFactory,java.lang.String)|",
+      "|java+method:///com/gilt/gfc/util/Retry$/retryWithExponentialDelay$default$2()|",
+      "|java+method:///com/gilt/calatrava/kinesis/RecordProcessorFactory/MaxRetryTimes()|",
+      "|java+method:///com/gilt/gfc/util/Retry$/retryWithExponentialDelay$default$5()|",
+      "|java+method:///com/gilt/calatrava/kinesis/RecordProcessorFactory/InitialDelay()|",
+      "|java+method:///com/gilt/calatrava/kinesis/RecordProcessorFactory/getObjectContent(com.amazonaws.services.s3.model.S3Object)|",
+      "|java+method:///play/api/libs/json/Json$/parse(java.io.InputStream)|",
+      "|java+method:///play/api/libs/json/JsValue/asOpt(play.api.libs.json.Reads)|",
+      "|java+constructor:///com/gilt/calatrava/kinesis/RecordProcessorFactory$$anonfun$1/RecordProcessorFactory$$anonfun$1(com.gilt.calatrava.kinesis.RecordProcessorFactory,java.lang.String)|",
+      "|java+method:///com/gilt/calatrava/v0/models/json/package$/jsonReadsCalatravaChangeEvent()|",
+      "|java+method:///com/gilt/gfc/util/Retry$/retryWithExponentialDelay(long,scala.concurrent.duration.Deadline,scala.concurrent.duration.Duration,scala.concurrent.duration.FiniteDuration,double,scala.Function0,scala.Function1)|",
+      "|java+constructor:///com/gilt/calatrava/kinesis/RecordProcessorFactory$$anonfun$2/RecordProcessorFactory$$anonfun$2(com.gilt.calatrava.kinesis.RecordProcessorFactory)|",
+      "|java+method:///com/gilt/gfc/util/Retry$/retryWithExponentialDelay$default$4()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/gilt/calatrava/kinesis/RecordProcessorFactory/warn(scala.Function0,java.lang.Throwable)|",
+      "|java+constructor:///com/gilt/calatrava/kinesis/RecordProcessorFactory$$anonfun$fetchChangeEvent$1/RecordProcessorFactory$$anonfun$fetchChangeEvent$1(com.gilt.calatrava.kinesis.RecordProcessorFactory,java.lang.String)|",
+      "|java+method:///com/gilt/gfc/util/Retry$/retryWithExponentialDelay$default$2()|",
+      "|java+method:///com/gilt/calatrava/kinesis/RecordProcessorFactory/MaxRetryTimes()|",
+      "|java+method:///com/gilt/gfc/util/Retry$/retryWithExponentialDelay$default$5()|",
+      "|java+method:///com/gilt/calatrava/kinesis/RecordProcessorFactory/InitialDelay()|",
+      "|java+method:///com/gilt/calatrava/kinesis/RecordProcessorFactory/getObjectContent(com.amazonaws.services.s3.model.S3Object)|",
+      "|java+method:///com/gilt/calatrava/kinesis/package$/readChangeEvent()|",
+      "|java+method:///scala/Function1/apply(java.lang.Object)|",
+      "|java+method:///com/gilt/gfc/util/Retry$/retryWithExponentialDelay(long,scala.concurrent.duration.Deadline,scala.concurrent.duration.Duration,scala.concurrent.duration.FiniteDuration,double,scala.Function0,scala.Function1)|",
+      "|java+constructor:///com/gilt/calatrava/kinesis/RecordProcessorFactory$$anonfun$2/RecordProcessorFactory$$anonfun$2(com.gilt.calatrava.kinesis.RecordProcessorFactory)|",
+      "|java+method:///com/gilt/gfc/util/Retry$/retryWithExponentialDelay$default$4()|",
+      "|java+constructor:///com/gilt/calatrava/kinesis/RecordProcessorFactory$$anonfun$1/RecordProcessorFactory$$anonfun$1(com.gilt.calatrava.kinesis.RecordProcessorFactory,java.lang.String)|",
+      "|java+constructor:///scala/Some/Some(java.lang.Object)|"
+    ],
+    "affectedLib": "com.typesafe.play:play-json_2.11:2.4.3",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.gilt:calatrava-client-library_2.11:0.0.7",
+    "coordinatesV2": "com.gilt:calatrava-client-library_2.11:0.0.6",
+    "caller": "|java+method:///com/gilt/calatrava/kinesis/RecordProcessor/com$gilt$calatrava$kinesis$RecordProcessor$$convertRecord(com.amazonaws.services.kinesis.model.Record)|",
+    "called": "|java+method:///play/api/libs/json/Json$/parse(java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///java/lang/String/String(byte%5B%5D,java.lang.String)|",
+      "|java+method:///play/api/libs/json/JsValue/asOpt(play.api.libs.json.Reads)|",
+      "|java+method:///com/amazonaws/services/kinesis/model/Record/getData()|",
+      "|java+method:///play/api/libs/json/Json$/parse(java.lang.String)|",
+      "|java+method:///com/gilt/calatrava/v0/models/json/package$/jsonReadsCalatravaSinkEvent()|",
+      "|java+method:///java/nio/ByteBuffer/array()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/gilt/calatrava/kinesis/package$/readSinkEvent()|",
+      "|java+constructor:///java/lang/String/String(byte%5B%5D,java.lang.String)|",
+      "|java+method:///java/nio/ByteBuffer/array()|",
+      "|java+constructor:///scala/Some/Some(java.lang.Object)|",
+      "|java+method:///com/amazonaws/services/kinesis/model/Record/getData()|",
+      "|java+method:///scala/Function1/apply(java.lang.Object)|"
+    ],
+    "affectedLib": "com.typesafe.play:play-json_2.11:2.4.3",
+    "change": "REMOVED"
+  }
+]

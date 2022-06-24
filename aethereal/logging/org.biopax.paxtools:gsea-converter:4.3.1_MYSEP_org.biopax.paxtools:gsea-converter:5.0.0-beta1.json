@@ -1,0 +1,107 @@
+[
+  {
+    "coordinatesV1": "org.biopax.paxtools:gsea-converter:5.0.0-beta1",
+    "coordinatesV2": "org.biopax.paxtools:gsea-converter:4.3.1",
+    "caller": "|java+initializer:///org/biopax/paxtools/io/gsea/GSEAConverter/GSEAConverter$initializer|",
+    "called": "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "commons-logging:commons-logging:1.1.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.biopax.paxtools:gsea-converter:4.3.1",
+    "coordinatesV2": "org.biopax.paxtools:gsea-converter:5.0.0-beta1",
+    "caller": "|java+initializer:///org/biopax/paxtools/io/gsea/GSEAConverter/GSEAConverter$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.7",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.biopax.paxtools:gsea-converter:4.3.1",
+    "coordinatesV2": "org.biopax.paxtools:gsea-converter:5.0.0-beta1",
+    "caller": "|java+method:///org/biopax/paxtools/io/gsea/GSEAConverter/convert(org.biopax.paxtools.model.Model)|",
+    "called": "|java+method:///org/biopax/paxtools/controller/Traverser/traverse(org.biopax.paxtools.model.BioPAXElement,org.biopax.paxtools.model.Model)|",
+    "v1Body": [
+      "|java+constructor:///org/biopax/paxtools/converter/LevelUpgrader/LevelUpgrader()|",
+      "|java+constructor:///org/biopax/paxtools/io/gsea/GSEAConverter$1/GSEAConverter$1(org.biopax.paxtools.io.gsea.GSEAConverter)|",
+      "|java+method:///org/biopax/paxtools/model/Model/getLevel()|",
+      "|java+method:///org/biopax/paxtools/converter/LevelUpgrader/filter(org.biopax.paxtools.model.Model)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/Set/isEmpty()|",
+      "|java+method:///java/lang/String/isEmpty()|",
+      "|java+method:///java/util/Collections/synchronizedSet(java.util.Set)|",
+      "|java+method:///java/util/Set/iterator()|",
+      "|java+method:///org/biopax/paxtools/io/gsea/GSEAConverter/getDataSource(java.util.Set)|",
+      "|java+method:///java/util/concurrent/Executors/newFixedThreadPool(int)|",
+      "|java+method:///org/biopax/paxtools/model/level3/Pathway/getDisplayName()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+constructor:///java/util/TreeSet/TreeSet(java.util.Comparator)|",
+      "|java+method:///java/util/concurrent/ExecutorService/submit(java.lang.Runnable)|",
+      "|java+method:///org/biopax/paxtools/model/Model/getObjects(java.lang.Class)|",
+      "|java+method:///org/biopax/paxtools/io/gsea/GSEAConverter/shareSomeObjects(java.util.Set,java.util.Set)|",
+      "|java+method:///java/util/Map/isEmpty()|",
+      "|java+method:///org/biopax/paxtools/model/level3/Pathway/getDataSource()|",
+      "|java+constructor:///org/biopax/paxtools/io/gsea/GSEAConverter$2/GSEAConverter$2(org.biopax.paxtools.io.gsea.GSEAConverter,java.lang.String,org.biopax.paxtools.model.level3.Pathway,boolean,java.util.Collection,java.util.Set)|",
+      "|java+method:///org/biopax/paxtools/io/gsea/GSEAConverter/createGseaEntries(java.lang.String,java.lang.String,java.util.Map)|",
+      "|java+method:///java/util/Collection/addAll(java.util.Collection)|",
+      "|java+method:///org/biopax/paxtools/model/level3/Pathway/getStandardName()|",
+      "|java+method:///org/apache/commons/logging/Log/info(java.lang.Object)|",
+      "|java+method:///java/util/concurrent/ExecutorService/shutdown()|",
+      "|java+method:///java/util/concurrent/ExecutorService/awaitTermination(long,java.util.concurrent.TimeUnit)|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String)|",
+      "|java+method:///org/biopax/paxtools/io/gsea/GSEAConverter/organismToProteinRefsMap(java.util.Set)|",
+      "|java+constructor:///java/util/HashSet/HashSet(java.util.Collection)|",
+      "|java+method:///org/biopax/paxtools/model/level3/Pathway/getRDFId()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+constructor:///org/biopax/paxtools/converter/LevelUpgrader/LevelUpgrader()|",
+      "|java+constructor:///org/biopax/paxtools/io/gsea/GSEAConverter$1/GSEAConverter$1(org.biopax.paxtools.io.gsea.GSEAConverter)|",
+      "|java+method:///org/biopax/paxtools/converter/LevelUpgrader/filter(org.biopax.paxtools.model.Model)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/Set/isEmpty()|",
+      "|java+method:///java/lang/String/isEmpty()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/util/Set/iterator()|",
+      "|java+method:///org/biopax/paxtools/io/gsea/GSEAConverter/getDataSource(java.util.Set)|",
+      "|java+method:///org/biopax/paxtools/io/gsea/GSEAConverter/organismToProteinRefsMap(java.util.Set)|",
+      "|java+method:///org/biopax/paxtools/model/level3/Pathway/getUri()|",
+      "|java+constructor:///java/util/HashSet/HashSet(java.util.Collection)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+constructor:///java/util/TreeSet/TreeSet(java.util.Comparator)|",
+      "|java+method:///org/biopax/paxtools/controller/Traverser/traverse(org.biopax.paxtools.model.BioPAXElement,org.biopax.paxtools.model.Model)|",
+      "|java+method:///org/biopax/paxtools/model/Model/getObjects(java.lang.Class)|",
+      "|java+method:///java/util/Set/size()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/biopax/paxtools/io/gsea/GSEAConverter/shareSomeObjects(java.util.Set,java.util.Set)|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+method:///org/biopax/paxtools/model/Model/getLevel()|",
+      "|java+method:///java/util/Map/isEmpty()|",
+      "|java+method:///java/util/Collection/isEmpty()|",
+      "|java+method:///org/biopax/paxtools/model/level3/Pathway/getDataSource()|",
+      "|java+method:///org/biopax/paxtools/io/gsea/GSEAConverter/createGseaEntries(java.lang.String,java.lang.String,java.util.Map)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String)|",
+      "|java+method:///java/util/Collection/size()|",
+      "|java+method:///java/util/Set/removeAll(java.util.Collection)|",
+      "|java+method:///java/util/Collection/addAll(java.util.Collection)|",
+      "|java+method:///org/biopax/paxtools/model/level3/Pathway/getStandardName()|",
+      "|java+method:///org/biopax/paxtools/model/level3/Pathway/getDisplayName()|",
+      "|java+constructor:///org/biopax/paxtools/io/gsea/GSEAConverter$2/GSEAConverter$2(org.biopax.paxtools.io.gsea.GSEAConverter,org.biopax.paxtools.controller.EditorMap,org.biopax.paxtools.util.Filter%5B%5D,java.util.Set,boolean)|",
+      "|java+constructor:///java/util/HashSet/HashSet()|"
+    ],
+    "affectedLib": "org.biopax.paxtools:paxtools-core:5.0.0-beta1",
+    "change": "UPDATED"
+  }
+]

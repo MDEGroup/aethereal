@@ -1,0 +1,288 @@
+[
+  {
+    "coordinatesV1": "org.deephacks.tools4j:tools4j-config-core:0.0.8",
+    "coordinatesV2": "org.deephacks.tools4j:tools4j-config-core:0.10.0",
+    "caller": "|java+method:///org/deephacks/tools4j/config/internal/core/runtime/RuntimeCoreContext/unregister(java.lang.Class%5B%5D)|",
+    "called": "|java+method:///org/deephacks/tools4j/config/spi/Conversion/convert(java.lang.Object,java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/deephacks/tools4j/config/internal/core/runtime/RuntimeCoreContext/doLookup()|",
+      "|java+method:///org/deephacks/tools4j/config/spi/Conversion/convert(java.lang.Object,java.lang.Class)|",
+      "|java+method:///org/deephacks/tools4j/config/model/Schema/getName()|",
+      "|java+method:///org/deephacks/tools4j/config/spi/SchemaManager/removeSchema(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/deephacks/tools4j/config/internal/core/runtime/RuntimeCoreContext/doLookup()|",
+      "|java+method:///org/deephacks/tools4j/config/spi/Conversion/convert(java.lang.Object,java.lang.Class)|",
+      "|java+method:///org/deephacks/tools4j/config/internal/core/ConfigCore/removeIndex(org.deephacks.tools4j.config.model.Schema)|",
+      "|java+method:///org/deephacks/tools4j/config/model/Schema/getName()|",
+      "|java+method:///org/deephacks/tools4j/config/spi/SchemaManager/removeSchema(java.lang.String)|"
+    ],
+    "affectedLib": "org.deephacks.tools4j:tools4j-config-api-provider:0.10.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.deephacks.tools4j:tools4j-config-core:0.0.8",
+    "coordinatesV2": "org.deephacks.tools4j:tools4j-config-core:0.10.0",
+    "caller": "|java+method:///org/deephacks/tools4j/config/internal/core/runtime/FieldToSchemaPropertyConverter/convertSimple(org.deephacks.tools4j.config.internal.core.runtime.ClassIntrospector$FieldWrap)|",
+    "called": "|java+method:///org/deephacks/tools4j/config/spi/Conversion/convert(java.lang.Object,java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/deephacks/tools4j/config/internal/core/runtime/ClassIntrospector$FieldWrap/getDefaultValues()|",
+      "|java+method:///org/deephacks/tools4j/config/internal/core/runtime/ClassIntrospector$FieldWrap/getFieldName()|",
+      "|java+constructor:///java/util/ArrayList/ArrayList(java.util.Collection)|",
+      "|java+method:///org/deephacks/tools4j/config/Config/name()|",
+      "|java+method:///org/deephacks/tools4j/config/internal/core/runtime/ClassIntrospector$FieldWrap/isCollection()|",
+      "|java+method:///org/deephacks/tools4j/config/Config/desc()|",
+      "|java+method:///org/deephacks/tools4j/config/spi/Conversion/convert(java.util.Collection,java.lang.Class)|",
+      "|java+method:///org/deephacks/tools4j/config/internal/core/runtime/FieldToSchemaPropertyConverter/validateField(org.deephacks.tools4j.config.internal.core.runtime.ClassIntrospector$FieldWrap)|",
+      "|java+method:///org/deephacks/tools4j/config/model/Schema$SchemaProperty/create(java.lang.String,java.lang.String,java.lang.String,java.lang.String,boolean,java.util.List,java.lang.String)|",
+      "|java+method:///org/deephacks/tools4j/config/model/Schema$SchemaPropertyList/create(java.lang.String,java.lang.String,java.lang.String,java.lang.String,boolean,java.util.List,java.util.List,java.lang.String)|",
+      "|java+method:///org/deephacks/tools4j/config/internal/core/runtime/ClassIntrospector$FieldWrap/getAnnotation()|",
+      "|java+method:///org/deephacks/tools4j/config/internal/core/runtime/ClassIntrospector$FieldWrap/getDefaultValue()|",
+      "|java+method:///org/deephacks/tools4j/config/spi/Conversion/convert(java.lang.Object,java.lang.Class)|",
+      "|java+method:///org/deephacks/tools4j/config/internal/core/runtime/ClassIntrospector$FieldWrap/getEnums()|",
+      "|java+method:///org/deephacks/tools4j/config/model/Events/CFG104_UNSUPPORTED_PROPERTY(java.lang.Class,java.lang.String,java.lang.Class)|",
+      "|java+method:///org/deephacks/tools4j/config/internal/core/runtime/ClassIntrospector$FieldWrap/isFinal()|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+method:///org/deephacks/tools4j/config/internal/core/runtime/ClassIntrospector$FieldWrap/getCollRawType()|",
+      "|java+method:///org/deephacks/tools4j/config/internal/core/runtime/ClassIntrospector$FieldWrap/getType()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/deephacks/tools4j/config/internal/core/runtime/ClassIntrospector$FieldWrap/getDefaultValues()|",
+      "|java+method:///org/deephacks/tools4j/config/internal/core/runtime/ClassIntrospector$FieldWrap/getFieldName()|",
+      "|java+constructor:///java/util/ArrayList/ArrayList(java.util.Collection)|",
+      "|java+method:///org/deephacks/tools4j/config/internal/core/runtime/ClassIntrospector$FieldWrap/getAnnotation()|",
+      "|java+method:///org/deephacks/tools4j/config/Config/name()|",
+      "|java+method:///org/deephacks/tools4j/config/internal/core/runtime/ClassIntrospector$FieldWrap/isCollection()|",
+      "|java+method:///org/deephacks/tools4j/config/spi/Conversion/convert(java.util.Collection,java.lang.Class)|",
+      "|java+method:///org/deephacks/tools4j/config/internal/core/runtime/FieldToSchemaPropertyConverter/validateField(org.deephacks.tools4j.config.internal.core.runtime.ClassIntrospector$FieldWrap)|",
+      "|java+method:///org/deephacks/tools4j/config/internal/core/runtime/ClassIntrospector$FieldWrap/getDefaultValue()|",
+      "|java+method:///org/deephacks/tools4j/config/spi/Conversion/convert(java.lang.Object,java.lang.Class)|",
+      "|java+method:///org/deephacks/tools4j/config/model/Schema$SchemaProperty/create(java.lang.String,java.lang.String,java.lang.String,java.lang.String,boolean,java.util.List,java.lang.String,boolean)|",
+      "|java+method:///org/deephacks/tools4j/config/model/Schema$SchemaPropertyList/create(java.lang.String,java.lang.String,java.lang.String,java.lang.String,boolean,java.util.List,java.util.List,java.lang.String,boolean)|",
+      "|java+method:///org/deephacks/tools4j/config/internal/core/runtime/ClassIntrospector$FieldWrap/getEnums()|",
+      "|java+method:///org/deephacks/tools4j/config/model/Events/CFG104_UNSUPPORTED_PROPERTY(java.lang.Class,java.lang.String,java.lang.Class)|",
+      "|java+method:///org/deephacks/tools4j/config/internal/core/runtime/ClassIntrospector$FieldWrap/isFinal()|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+method:///org/deephacks/tools4j/config/internal/core/runtime/ClassIntrospector$FieldWrap/getCollRawType()|",
+      "|java+method:///org/deephacks/tools4j/config/internal/core/runtime/ClassIntrospector$FieldWrap/getType()|",
+      "|java+method:///org/deephacks/tools4j/config/internal/core/runtime/ClassIntrospector$FieldWrap/isAnnotationPresent(java.lang.Class)|",
+      "|java+method:///org/deephacks/tools4j/config/Config/desc()|"
+    ],
+    "affectedLib": "org.deephacks.tools4j:tools4j-config-api-provider:0.10.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.deephacks.tools4j:tools4j-config-core:0.0.8",
+    "coordinatesV2": "org.deephacks.tools4j:tools4j-config-core:0.10.0",
+    "caller": "|java+method:///org/deephacks/tools4j/config/internal/core/runtime/RuntimeCoreContext/singleton(java.lang.Class)|",
+    "called": "|java+method:///org/deephacks/tools4j/config/spi/Conversion/convert(java.lang.Object,java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/deephacks/tools4j/config/model/Bean/set(org.deephacks.tools4j.config.model.Schema)|",
+      "|java+method:///org/deephacks/tools4j/config/internal/core/runtime/RuntimeCoreContext/doLookup()|",
+      "|java+method:///org/deephacks/tools4j/config/spi/Conversion/convert(java.lang.Object,java.lang.Class)|",
+      "|java+method:///org/deephacks/tools4j/config/spi/BeanManager/getEager(org.deephacks.tools4j.config.model.Bean$BeanId)|",
+      "|java+method:///org/deephacks/tools4j/config/internal/core/runtime/RuntimeCoreContext/setSingletonReferences(org.deephacks.tools4j.config.model.Bean,java.util.Map)|",
+      "|java+method:///org/deephacks/tools4j/config/spi/SchemaManager/getSchemas()|",
+      "|java+method:///org/deephacks/tools4j/config/internal/core/runtime/RuntimeCoreContext/getSingletonId(org.deephacks.tools4j.config.model.Schema,java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/deephacks/tools4j/config/internal/core/runtime/RuntimeCoreContext/doLookup()|",
+      "|java+method:///org/deephacks/tools4j/config/spi/Conversion/convert(java.lang.Object,java.lang.Class)|",
+      "|java+method:///org/deephacks/tools4j/config/internal/core/ConfigCore/cache(org.deephacks.tools4j.config.model.Bean)|",
+      "|java+method:///org/deephacks/tools4j/config/spi/BeanManager/getEager(org.deephacks.tools4j.config.model.Bean$BeanId)|",
+      "|java+method:///org/deephacks/tools4j/config/internal/core/runtime/RuntimeCoreContext/setSingletonReferences(org.deephacks.tools4j.config.model.Bean,java.util.Map)|",
+      "|java+method:///org/deephacks/tools4j/config/spi/SchemaManager/getSchemas()|",
+      "|java+method:///org/deephacks/tools4j/config/internal/core/runtime/RuntimeCoreContext/getSingletonId(org.deephacks.tools4j.config.model.Schema,java.lang.Class)|",
+      "|java+method:///org/deephacks/tools4j/config/internal/core/ConfigCore/setSchema(org.deephacks.tools4j.config.model.Bean,java.util.Map)|"
+    ],
+    "affectedLib": "org.deephacks.tools4j:tools4j-config-api-provider:0.10.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.deephacks.tools4j:tools4j-config-core:0.0.8",
+    "coordinatesV2": "org.deephacks.tools4j:tools4j-config-core:0.10.0",
+    "caller": "|java+method:///org/deephacks/tools4j/config/internal/core/runtime/ObjectToBeanConverter/convert(java.lang.Object,java.lang.Class)|",
+    "called": "|java+method:///org/deephacks/tools4j/config/spi/Conversion/convert(java.lang.Object,java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/deephacks/tools4j/config/model/Bean/set(org.deephacks.tools4j.config.model.Schema)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/deephacks/tools4j/config/spi/Conversion/convert(java.lang.Object,java.lang.Class)|",
+      "|java+method:///org/deephacks/tools4j/config/internal/core/runtime/ClassIntrospector/getFieldList(java.lang.Class)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/deephacks/tools4j/config/internal/core/runtime/ObjectToBeanConverter/addProperty(java.lang.Object,org.deephacks.tools4j.config.model.Bean,org.deephacks.tools4j.config.internal.core.runtime.ClassIntrospector$FieldWrap)|",
+      "|java+method:///org/deephacks/tools4j/config/model/Bean/create(org.deephacks.tools4j.config.model.Bean$BeanId)|",
+      "|java+method:///org/deephacks/tools4j/config/internal/core/runtime/ObjectToBeanConverter/convert(java.lang.Object,java.lang.Class)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+constructor:///org/deephacks/tools4j/config/internal/core/runtime/ClassIntrospector/ClassIntrospector(java.lang.Class)|",
+      "|java+method:///org/deephacks/tools4j/config/internal/core/runtime/ObjectToBeanConverter/getBeanId(java.lang.Object)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///org/deephacks/tools4j/config/internal/core/runtime/ClassIntrospector$FieldWrap/getValue(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/deephacks/tools4j/config/model/Bean/set(org.deephacks.tools4j.config.model.Schema)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/deephacks/tools4j/config/internal/core/runtime/ClassIntrospector$FieldWrap/checkNotPublic()|",
+      "|java+method:///org/deephacks/tools4j/config/spi/Conversion/convert(java.lang.Object,java.lang.Class)|",
+      "|java+method:///org/deephacks/tools4j/config/internal/core/runtime/ClassIntrospector/getFieldList(java.lang.Class)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/deephacks/tools4j/config/internal/core/runtime/ObjectToBeanConverter/addProperty(java.lang.Object,org.deephacks.tools4j.config.model.Bean,org.deephacks.tools4j.config.internal.core.runtime.ClassIntrospector$FieldWrap)|",
+      "|java+method:///org/deephacks/tools4j/config/model/Bean/create(org.deephacks.tools4j.config.model.Bean$BeanId)|",
+      "|java+method:///org/deephacks/tools4j/config/internal/core/runtime/ObjectToBeanConverter/convert(java.lang.Object,java.lang.Class)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+constructor:///org/deephacks/tools4j/config/internal/core/runtime/ClassIntrospector/ClassIntrospector(java.lang.Class)|",
+      "|java+method:///org/deephacks/tools4j/config/internal/core/runtime/ObjectToBeanConverter/getBeanId(java.lang.Object)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///org/deephacks/tools4j/config/internal/core/runtime/ClassIntrospector$FieldWrap/getValue(java.lang.Object)|"
+    ],
+    "affectedLib": "org.deephacks.tools4j:tools4j-config-api-provider:0.10.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.deephacks.tools4j:tools4j-config-core:0.0.8",
+    "coordinatesV2": "org.deephacks.tools4j:tools4j-config-core:0.10.0",
+    "caller": "|java+method:///org/deephacks/tools4j/config/internal/core/runtime/RuntimeCoreContext/get(java.lang.String,java.lang.Class)|",
+    "called": "|java+method:///org/deephacks/tools4j/config/spi/Conversion/convert(java.lang.Object,java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/deephacks/tools4j/config/internal/core/runtime/RuntimeCoreContext/doLookup()|",
+      "|java+method:///org/deephacks/tools4j/config/spi/Conversion/convert(java.lang.Object,java.lang.Class)|",
+      "|java+method:///org/deephacks/tools4j/config/model/Events/CFG304_BEAN_DOESNT_EXIST(org.deephacks.tools4j.config.model.Bean$BeanId)|",
+      "|java+method:///org/deephacks/tools4j/config/model/Schema/getName()|",
+      "|java+method:///org/deephacks/tools4j/config/internal/core/runtime/RuntimeCoreContext/setSingletonReferences(org.deephacks.tools4j.config.model.Bean,java.util.Map)|",
+      "|java+method:///org/deephacks/tools4j/config/internal/core/runtime/RuntimeCoreContext/getSchema(java.lang.Class)|",
+      "|java+method:///org/deephacks/tools4j/config/spi/SchemaManager/getSchemas()|",
+      "|java+method:///org/deephacks/tools4j/config/internal/core/ConfigCore/setSchema(org.deephacks.tools4j.config.model.Bean,java.util.Map)|",
+      "|java+method:///org/deephacks/tools4j/config/spi/BeanManager/getEager(org.deephacks.tools4j.config.model.Bean$BeanId)|",
+      "|java+method:///org/deephacks/tools4j/config/model/Bean$BeanId/create(java.lang.String,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/deephacks/tools4j/config/internal/core/runtime/RuntimeCoreContext/doLookup()|",
+      "|java+method:///org/deephacks/tools4j/config/spi/Conversion/convert(java.lang.Object,java.lang.Class)|",
+      "|java+method:///org/deephacks/tools4j/config/internal/core/ConfigCore/cache(org.deephacks.tools4j.config.model.Bean)|",
+      "|java+method:///org/deephacks/tools4j/config/model/Events/CFG304_BEAN_DOESNT_EXIST(org.deephacks.tools4j.config.model.Bean$BeanId)|",
+      "|java+method:///org/deephacks/tools4j/config/model/Schema/getName()|",
+      "|java+method:///org/deephacks/tools4j/config/internal/core/runtime/RuntimeCoreContext/setSingletonReferences(org.deephacks.tools4j.config.model.Bean,java.util.Map)|",
+      "|java+method:///org/deephacks/tools4j/config/internal/core/runtime/RuntimeCoreContext/getSchema(java.lang.Class)|",
+      "|java+method:///org/deephacks/tools4j/config/spi/SchemaManager/getSchemas()|",
+      "|java+method:///org/deephacks/tools4j/config/internal/core/ConfigCore/setSchema(org.deephacks.tools4j.config.model.Bean,java.util.Map)|",
+      "|java+method:///org/deephacks/tools4j/config/spi/BeanManager/getEager(org.deephacks.tools4j.config.model.Bean$BeanId)|",
+      "|java+method:///org/deephacks/tools4j/config/model/Bean$BeanId/create(java.lang.String,java.lang.String)|"
+    ],
+    "affectedLib": "org.deephacks.tools4j:tools4j-config-api-provider:0.10.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.deephacks.tools4j:tools4j-config-core:0.0.8",
+    "coordinatesV2": "org.deephacks.tools4j:tools4j-config-core:0.10.0",
+    "caller": "|java+method:///org/deephacks/tools4j/config/internal/core/runtime/RuntimeCoreContext/all(java.lang.Class)|",
+    "called": "|java+method:///org/deephacks/tools4j/config/spi/Conversion/convert(java.util.Collection,java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/deephacks/tools4j/config/spi/BeanManager/list(java.lang.String)|",
+      "|java+method:///java/util/Map/values()|",
+      "|java+method:///org/deephacks/tools4j/config/internal/core/runtime/RuntimeCoreContext/setSingletonReferences(org.deephacks.tools4j.config.model.Bean,java.util.Map)|",
+      "|java+method:///org/deephacks/tools4j/config/internal/core/runtime/RuntimeCoreContext/getSchema(java.lang.Class)|",
+      "|java+method:///org/deephacks/tools4j/config/spi/SchemaManager/getSchemas()|",
+      "|java+method:///java/util/Collection/iterator()|",
+      "|java+method:///org/deephacks/tools4j/config/spi/Conversion/convert(java.util.Collection,java.lang.Class)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///com/google/common/collect/Lists/newArrayList(java.lang.Iterable)|",
+      "|java+method:///org/deephacks/tools4j/config/internal/core/runtime/RuntimeCoreContext/doLookup()|",
+      "|java+method:///org/deephacks/tools4j/config/model/Schema/getName()|",
+      "|java+method:///org/deephacks/tools4j/config/internal/core/ConfigCore/setSchema(java.util.Map,java.util.Map)|",
+      "|java+method:///java/util/Iterator/next()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///org/deephacks/tools4j/config/spi/BeanManager/list(java.lang.String)|",
+      "|java+method:///org/deephacks/tools4j/config/internal/core/ConfigCore/cache(org.deephacks.tools4j.config.model.Bean)|",
+      "|java+method:///java/util/Map/values()|",
+      "|java+method:///org/deephacks/tools4j/config/internal/core/runtime/RuntimeCoreContext/getSchema(java.lang.Class)|",
+      "|java+method:///org/deephacks/tools4j/config/spi/SchemaManager/getSchemas()|",
+      "|java+method:///java/util/Collection/iterator()|",
+      "|java+method:///org/deephacks/tools4j/config/spi/Conversion/convert(java.util.Collection,java.lang.Class)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/deephacks/tools4j/config/internal/core/runtime/RuntimeCoreContext/doLookup()|",
+      "|java+method:///org/deephacks/tools4j/config/model/Schema/getName()|",
+      "|java+method:///org/deephacks/tools4j/config/internal/core/ConfigCore/setSchema(java.util.Map,java.util.Map)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/ArrayList/add(java.lang.Object)|",
+      "|java+method:///org/deephacks/tools4j/config/internal/core/runtime/RuntimeCoreContext/setSingletonReferences(org.deephacks.tools4j.config.model.Bean,java.util.Map)|"
+    ],
+    "affectedLib": "org.deephacks.tools4j:tools4j-config-api-provider:0.10.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.deephacks.tools4j:tools4j-config-core:0.0.8",
+    "coordinatesV2": "org.deephacks.tools4j:tools4j-config-core:0.10.0",
+    "caller": "|java+method:///org/deephacks/tools4j/config/internal/core/runtime/RuntimeCoreContext/doLookup()|",
+    "called": "|java+method:///org/deephacks/tools4j/config/spi/Conversion/register(org.deephacks.tools4j.config.spi.Conversion$Converter)|",
+    "v1Body": [
+      "|java+method:///org/deephacks/tools4j/config/internal/core/ConfigCore/lookupBeanManager()|",
+      "|java+method:///org/deephacks/tools4j/config/internal/core/ConfigCore/lookupSchemaManager()|",
+      "|java+method:///org/deephacks/tools4j/config/spi/Conversion/register(org.deephacks.tools4j.config.spi.Conversion$Converter)|",
+      "|java+constructor:///org/deephacks/tools4j/config/internal/core/runtime/ClassToSchemaConverter/ClassToSchemaConverter()|",
+      "|java+constructor:///org/deephacks/tools4j/config/internal/core/runtime/FieldToSchemaPropertyConverter/FieldToSchemaPropertyConverter()|",
+      "|java+constructor:///org/deephacks/tools4j/config/internal/core/runtime/BeanToObjectConverter/BeanToObjectConverter()|",
+      "|java+constructor:///org/deephacks/tools4j/config/internal/core/runtime/ObjectToBeanConverter/ObjectToBeanConverter()|",
+      "|java+method:///org/deephacks/tools4j/config/spi/Conversion/get()|",
+      "|java+constructor:///org/deephacks/tools4j/config/internal/core/ConfigCore/ConfigCore()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/deephacks/tools4j/config/internal/core/ConfigCore/lookupBeanManager()|",
+      "|java+method:///org/deephacks/tools4j/config/internal/core/ConfigCore/lookupCacheManager()|",
+      "|java+method:///org/deephacks/tools4j/config/internal/core/ConfigCore/lookupSchemaManager()|",
+      "|java+method:///org/deephacks/tools4j/config/spi/Conversion/register(org.deephacks.tools4j.config.spi.Conversion$Converter)|",
+      "|java+constructor:///org/deephacks/tools4j/config/internal/core/runtime/ClassToSchemaConverter/ClassToSchemaConverter()|",
+      "|java+constructor:///org/deephacks/tools4j/config/internal/core/runtime/FieldToSchemaPropertyConverter/FieldToSchemaPropertyConverter()|",
+      "|java+constructor:///org/deephacks/tools4j/config/internal/core/runtime/BeanToObjectConverter/BeanToObjectConverter()|",
+      "|java+constructor:///org/deephacks/tools4j/config/internal/core/runtime/ObjectToBeanConverter/ObjectToBeanConverter()|",
+      "|java+method:///org/deephacks/tools4j/config/spi/Conversion/get()|",
+      "|java+constructor:///org/deephacks/tools4j/config/internal/core/ConfigCore/ConfigCore()|"
+    ],
+    "affectedLib": "org.deephacks.tools4j:tools4j-config-api-provider:0.10.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.deephacks.tools4j:tools4j-config-core:0.0.8",
+    "coordinatesV2": "org.deephacks.tools4j:tools4j-config-core:0.10.0",
+    "caller": "|java+method:///org/deephacks/tools4j/config/internal/core/runtime/RuntimeCoreContext/register(java.lang.Class%5B%5D)|",
+    "called": "|java+method:///org/deephacks/tools4j/config/spi/Conversion/convert(java.lang.Object,java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/deephacks/tools4j/config/internal/core/runtime/RuntimeCoreContext/doLookup()|",
+      "|java+method:///org/deephacks/tools4j/config/spi/Conversion/convert(java.lang.Object,java.lang.Class)|",
+      "|java+method:///org/deephacks/tools4j/config/spi/SchemaManager/regsiterSchema(org.deephacks.tools4j.config.model.Schema%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/deephacks/tools4j/config/internal/core/runtime/RuntimeCoreContext/doLookup()|",
+      "|java+method:///org/deephacks/tools4j/config/spi/Conversion/convert(java.lang.Object,java.lang.Class)|",
+      "|java+method:///org/deephacks/tools4j/config/spi/SchemaManager/regsiterSchema(org.deephacks.tools4j.config.model.Schema%5B%5D)|",
+      "|java+method:///org/deephacks/tools4j/config/internal/core/ConfigCore/putIndex(org.deephacks.tools4j.config.model.Schema)|"
+    ],
+    "affectedLib": "org.deephacks.tools4j:tools4j-config-api-provider:0.10.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.deephacks.tools4j:tools4j-config-core:0.0.8",
+    "coordinatesV2": "org.deephacks.tools4j:tools4j-config-core:0.10.0",
+    "caller": "|java+initializer:///org/deephacks/tools4j/config/internal/core/admin/AdminCoreContext/AdminCoreContext$initializer|",
+    "called": "|java+method:///org/deephacks/tools4j/config/spi/Conversion/register(org.deephacks.tools4j.config.spi.Conversion$Converter)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///org/deephacks/tools4j/config/spi/Conversion/get()|",
+      "|java+method:///org/deephacks/tools4j/config/spi/Conversion/register(org.deephacks.tools4j.config.spi.Conversion$Converter)|",
+      "|java+constructor:///org/deephacks/tools4j/config/internal/core/runtime/BeanToObjectConverter/BeanToObjectConverter()|",
+      "|java+constructor:///org/deephacks/tools4j/config/internal/core/runtime/ObjectToBeanConverter/ObjectToBeanConverter()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/deephacks/tools4j/config/internal/core/runtime/ClassToSchemaConverter/ClassToSchemaConverter()|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///org/deephacks/tools4j/config/spi/Conversion/get()|",
+      "|java+method:///org/deephacks/tools4j/config/spi/Conversion/register(org.deephacks.tools4j.config.spi.Conversion$Converter)|",
+      "|java+constructor:///org/deephacks/tools4j/config/internal/core/runtime/BeanToObjectConverter/BeanToObjectConverter()|",
+      "|java+constructor:///org/deephacks/tools4j/config/internal/core/runtime/ObjectToBeanConverter/ObjectToBeanConverter()|"
+    ],
+    "affectedLib": "org.deephacks.tools4j:tools4j-config-api-provider:0.10.0",
+    "change": "UPDATED"
+  }
+]

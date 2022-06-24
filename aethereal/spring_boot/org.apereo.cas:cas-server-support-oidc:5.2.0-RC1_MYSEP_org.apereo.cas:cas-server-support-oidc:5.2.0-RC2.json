@@ -1,0 +1,112 @@
+[
+  {
+    "coordinatesV1": "org.apereo.cas:cas-server-support-oidc:5.2.0-RC1",
+    "coordinatesV2": "org.apereo.cas:cas-server-support-oidc:5.2.0-RC2",
+    "caller": "|java+method:///org/apereo/cas/oidc/jwks/OidcJsonWebKeystoreGeneratorService/generate()|",
+    "called": "|java+method:///org/jose4j/jwk/JsonWebKeySet/toJson(org.jose4j.jwk.JsonWebKey$OutputControlLevel)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/io/FileUtils/write(java.io.File,java.lang.CharSequence,java.nio.charset.Charset)|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/springframework/core/io/Resource/getFile()|",
+      "|java+constructor:///org/jose4j/jwk/JsonWebKeySet/JsonWebKeySet(org.jose4j.jwk.JsonWebKey%5B%5D)|",
+      "|java+method:///org/jose4j/jwk/JsonWebKeySet/toJson(org.jose4j.jwk.JsonWebKey$OutputControlLevel)|",
+      "|java+method:///org/jose4j/jwk/RsaJwkGenerator/generateJwk(int)|",
+      "|java+method:///org/apereo/cas/configuration/model/support/oidc/OidcProperties/getJwksFile()|",
+      "|java+method:///com/google/common/base/Throwables/propagate(java.lang.Throwable)|",
+      "|java+method:///java/io/File/exists()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/io/FileUtils/write(java.io.File,java.lang.CharSequence,java.nio.charset.Charset)|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/springframework/core/io/Resource/getFile()|",
+      "|java+method:///java/io/File/exists()|",
+      "|java+constructor:///org/jose4j/jwk/JsonWebKeySet/JsonWebKeySet(org.jose4j.jwk.JsonWebKey%5B%5D)|",
+      "|java+method:///org/jose4j/jwk/JsonWebKeySet/toJson(org.jose4j.jwk.JsonWebKey$OutputControlLevel)|",
+      "|java+method:///org/jose4j/jwk/RsaJwkGenerator/generateJwk(int)|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/apereo/cas/configuration/model/support/oidc/OidcProperties/getJwksFile()|",
+      "|java+method:///java/lang/Exception/getMessage()|"
+    ],
+    "affectedLib": "org.bitbucket.b_c:jose4j:0.5.8",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apereo.cas:cas-server-support-oidc:5.2.0-RC1",
+    "coordinatesV2": "org.apereo.cas:cas-server-support-oidc:5.2.0-RC2",
+    "caller": "|java+method:///org/apereo/cas/oidc/token/OidcIdTokenSigningAndEncryptionService/encode(org.apereo.cas.services.OidcRegisteredService,org.jose4j.jwt.JwtClaims)|",
+    "called": "|java+method:///org/jose4j/jws/JsonWebSignature/getCompactSerialization()|",
+    "v1Body": [
+      "|java+method:///org/apereo/cas/services/OidcRegisteredService/isSignIdToken()|",
+      "|java+method:///org/apereo/cas/services/OidcRegisteredService/getIdTokenEncryptionEncoding()|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/jose4j/jws/JsonWebSignature/setAlgorithmConstraints(org.jose4j.jwa.AlgorithmConstraints)|",
+      "|java+constructor:///org/jose4j/jws/JsonWebSignature/JsonWebSignature()|",
+      "|java+method:///org/apache/commons/lang3/StringUtils/isNotBlank(java.lang.CharSequence)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/jose4j/jws/JsonWebSignature/getCompactSerialization()|",
+      "|java+method:///org/apereo/cas/oidc/token/OidcIdTokenSigningAndEncryptionService/encryptIdToken(org.apereo.cas.services.OidcRegisteredService,org.jose4j.jws.JsonWebSignature,java.lang.String)|",
+      "|java+method:///org/jose4j/jws/JsonWebSignature/setPayload(java.lang.String)|",
+      "|java+method:///org/jose4j/jws/JsonWebSignature/setAlgorithmHeaderValue(java.lang.String)|",
+      "|java+method:///org/apereo/cas/services/OidcRegisteredService/isEncryptIdToken()|",
+      "|java+method:///org/apereo/cas/oidc/token/OidcIdTokenSigningAndEncryptionService/signIdToken(org.apereo.cas.services.OidcRegisteredService,org.jose4j.jws.JsonWebSignature)|",
+      "|java+method:///com/google/common/base/Throwables/propagate(java.lang.Throwable)|",
+      "|java+method:///org/jose4j/jwt/JwtClaims/toJson()|",
+      "|java+method:///java/lang/Exception/getMessage()|",
+      "|java+method:///org/apereo/cas/services/OidcRegisteredService/getIdTokenEncryptionAlg()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apereo/cas/services/OidcRegisteredService/isSignIdToken()|",
+      "|java+method:///org/apereo/cas/services/OidcRegisteredService/getIdTokenEncryptionEncoding()|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/jose4j/jws/JsonWebSignature/setAlgorithmConstraints(org.jose4j.jwa.AlgorithmConstraints)|",
+      "|java+method:///org/jose4j/jwt/JwtClaims/toJson()|",
+      "|java+constructor:///org/jose4j/jws/JsonWebSignature/JsonWebSignature()|",
+      "|java+method:///org/apache/commons/lang3/StringUtils/isNotBlank(java.lang.CharSequence)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/jose4j/jws/JsonWebSignature/getCompactSerialization()|",
+      "|java+method:///org/apereo/cas/oidc/token/OidcIdTokenSigningAndEncryptionService/encryptIdToken(org.apereo.cas.services.OidcRegisteredService,org.jose4j.jws.JsonWebSignature,java.lang.String)|",
+      "|java+method:///org/jose4j/jws/JsonWebSignature/setPayload(java.lang.String)|",
+      "|java+method:///org/jose4j/jws/JsonWebSignature/setAlgorithmHeaderValue(java.lang.String)|",
+      "|java+method:///org/apereo/cas/services/OidcRegisteredService/isEncryptIdToken()|",
+      "|java+method:///org/apereo/cas/oidc/token/OidcIdTokenSigningAndEncryptionService/signIdToken(org.apereo.cas.services.OidcRegisteredService,org.jose4j.jws.JsonWebSignature)|",
+      "|java+method:///java/lang/Exception/getMessage()|",
+      "|java+method:///org/apereo/cas/services/OidcRegisteredService/getIdTokenEncryptionAlg()|"
+    ],
+    "affectedLib": "org.bitbucket.b_c:jose4j:0.5.8",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apereo.cas:cas-server-support-oidc:5.2.0-RC1",
+    "coordinatesV2": "org.apereo.cas:cas-server-support-oidc:5.2.0-RC2",
+    "caller": "|java+method:///org/apereo/cas/oidc/profile/OidcProfileScopeToAttributesFilter/filter(org.apereo.cas.authentication.principal.Service,org.apereo.cas.authentication.principal.Principal,org.apereo.cas.services.RegisteredService,org.pac4j.core.context.J2EContext)|",
+    "called": "|java+method:///org/apereo/cas/services/OidcRegisteredService/getScopes()|",
+    "v1Body": [
+      "|java+method:///org/apereo/cas/oidc/profile/OidcProfileScopeToAttributesFilter/filterAttributesByScope(java.util.Collection,java.util.Map,org.apereo.cas.authentication.principal.Principal,org.apereo.cas.authentication.principal.Service,org.apereo.cas.services.RegisteredService)|",
+      "|java+method:///org/apereo/cas/services/OidcRegisteredService/getScopes()|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/apereo/cas/authentication/principal/Principal/getId()|",
+      "|java+method:///org/apereo/cas/support/oauth/util/OAuth20Utils/getRequestedScopes(org.pac4j.core.context.J2EContext)|",
+      "|java+method:///java/util/Collection/addAll(java.util.Collection)|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+method:///org/apereo/cas/authentication/principal/PrincipalFactory/createPrincipal(java.lang.String,java.util.Map)|",
+      "|java+constructor:///java/util/ArrayList/ArrayList(java.util.Collection)|",
+      "|java+method:///org/apereo/cas/support/oauth/profile/DefaultOAuth20ProfileScopeToAttributesFilter/filter(org.apereo.cas.authentication.principal.Service,org.apereo.cas.authentication.principal.Principal,org.apereo.cas.services.RegisteredService,org.pac4j.core.context.J2EContext)|",
+      "|java+method:///java/util/Collection/contains(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apereo/cas/services/OidcRegisteredService/getScopes()|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/apereo/cas/authentication/principal/Principal/getId()|",
+      "|java+method:///org/apereo/cas/support/oauth/util/OAuth20Utils/getRequestedScopes(org.pac4j.core.context.J2EContext)|",
+      "|java+method:///java/util/Collection/addAll(java.util.Collection)|",
+      "|java+method:///org/apereo/cas/oidc/profile/OidcProfileScopeToAttributesFilter/filterAttributesByScope(java.util.Collection,org.apereo.cas.authentication.principal.Principal,org.apereo.cas.authentication.principal.Service,org.apereo.cas.services.RegisteredService)|",
+      "|java+method:///org/apereo/cas/authentication/principal/PrincipalFactory/createPrincipal(java.lang.String,java.util.Map)|",
+      "|java+constructor:///java/util/ArrayList/ArrayList(java.util.Collection)|",
+      "|java+method:///org/apereo/cas/support/oauth/profile/DefaultOAuth20ProfileScopeToAttributesFilter/filter(org.apereo.cas.authentication.principal.Service,org.apereo.cas.authentication.principal.Principal,org.apereo.cas.services.RegisteredService,org.pac4j.core.context.J2EContext)|",
+      "|java+method:///java/util/Collection/contains(java.lang.Object)|"
+    ],
+    "affectedLib": "org.apereo.cas:cas-server-support-oidc-services:5.2.0-RC2",
+    "change": "UPDATED"
+  }
+]

@@ -1,0 +1,484 @@
+[
+  {
+    "coordinatesV1": "org.hawkular.metrics:hawkular-metrics-core-impl:0.7.0.Final",
+    "coordinatesV2": "org.hawkular.metrics:hawkular-metrics-core-impl:0.6.0.Final",
+    "caller": "|java+initializer:///org/hawkular/metrics/core/impl/MetricsServiceImpl/MetricsServiceImpl$initializer|",
+    "called": "|java+method:///org/joda/time/Duration/toStandardSeconds()|",
+    "v1Body": [
+      "|java+method:///org/hawkular/metrics/core/impl/Functions/makeSafe(java.lang.String)|",
+      "|java+method:///org/joda/time/Duration/toStandardSeconds()|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///org/joda/time/Duration/standardDays(long)|",
+      "|java+method:///org/joda/time/Seconds/getSeconds()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/hawkular/metrics/core/impl/Functions/makeSafe(java.lang.String)|",
+      "|java+method:///org/hawkular/metrics/core/impl/log/CoreLogging/getCoreLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "joda-time:joda-time:2.3",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.hawkular.metrics:hawkular-metrics-core-impl:0.7.0.Final",
+    "coordinatesV2": "org.hawkular.metrics:hawkular-metrics-core-impl:0.6.0.Final",
+    "caller": "|java+method:///org/hawkular/metrics/core/impl/MetricsServiceImpl/findRateData(org.hawkular.metrics.core.api.MetricId,long,long)|",
+    "called": "|java+constructor:///org/joda/time/DateTime/DateTime(long)|",
+    "v1Body": [
+      "|java+method:///org/joda/time/DateTime/getMillis()|",
+      "|java+method:///rx/Observable/map(rx.functions.Func1)|",
+      "|java+method:///org/joda/time/Duration/standardMinutes(long)|",
+      "|java+method:///org/hawkular/metrics/core/impl/DateTimeService/getTimeSlice(org.joda.time.DateTime,org.joda.time.Duration)|",
+      "|java+method:///org/hawkular/metrics/core/impl/MetricsServiceImpl/findCounterData(org.hawkular.metrics.core.api.MetricId,long,long)|",
+      "|java+constructor:///org/joda/time/DateTime/DateTime(long)|",
+      "|java+method:///org/hawkular/metrics/core/impl/MetricsServiceImpl/getCounterBuckets(rx.Observable,long,long)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///org/hawkular/metrics/core/impl/MetricsServiceImpl/findDataPoints(org.hawkular.metrics.core.api.MetricId,java.lang.Long,java.lang.Long)|",
+      "|java+method:///rx/Observable/buffer(int,int)|",
+      "|java+method:///rx/Observable/filter(rx.functions.Func1)|",
+      "|java+method:///rx/Observable/map(rx.functions.Func1)|"
+    ],
+    "affectedLib": "joda-time:joda-time:2.3",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.hawkular.metrics:hawkular-metrics-core-impl:0.7.0.Final",
+    "coordinatesV2": "org.hawkular.metrics:hawkular-metrics-core-impl:0.6.0.Final",
+    "caller": "|java+method:///org/hawkular/metrics/core/impl/MetricsServiceImpl/createMetric(org.hawkular.metrics.core.api.Metric)|",
+    "called": "|java+method:///org/hawkular/rx/cassandra/driver/RxUtil/from(com.google.common.util.concurrent.ListenableFuture,java.util.concurrent.Executor)|",
+    "v1Body": [
+      "|java+method:///org/hawkular/metrics/core/impl/DataAccess/insertMetricInMetricsIndex(org.hawkular.metrics.core.api.Metric)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/hawkular/metrics/core/api/Metric/getType()|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///rx/Observable/create(rx.Observable$OnSubscribe)|",
+      "|java+method:///org/hawkular/rx/cassandra/driver/RxUtil/from(com.google.common.util.concurrent.ListenableFuture,java.util.concurrent.Executor)|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/hawkular/metrics/core/impl/DataAccess/insertMetricInMetricsIndex(org.hawkular.metrics.core.api.Metric)|",
+      "|java+method:///org/hawkular/metrics/core/api/MetricType/isUserType()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/hawkular/metrics/core/api/MetricId/getType()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/hawkular/metrics/core/api/Metric/getId()|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///rx/Observable/create(rx.Observable$OnSubscribe)|",
+      "|java+method:///org/hawkular/rx/cassandra/driver/RxUtil/from(com.google.common.util.concurrent.ListenableFuture,java.util.concurrent.Executor)|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "affectedLib": "org.hawkular.metrics:hawkular-rx-java-driver:0.6.0.Final",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.hawkular.metrics:hawkular-metrics-core-impl:0.7.0.Final",
+    "coordinatesV2": "org.hawkular.metrics:hawkular-metrics-core-impl:0.6.0.Final",
+    "caller": "|java+method:///org/hawkular/metrics/core/impl/Functions/getAvailabilityDataPoint(com.datastax.driver.core.Row)|",
+    "called": "|java+method:///com/datastax/driver/core/utils/UUIDs/unixTimestamp(java.util.UUID)|",
+    "v1Body": [
+      "|java+method:///com/datastax/driver/core/Row/getMap(int,java.lang.Class,java.lang.Class)|",
+      "|java+constructor:///org/hawkular/metrics/core/api/DataPoint/DataPoint(long,java.lang.Object,java.util.Map)|",
+      "|java+method:///org/hawkular/metrics/core/api/AvailabilityType/fromBytes(java.nio.ByteBuffer)|",
+      "|java+method:///com/datastax/driver/core/Row/getUUID(int)|",
+      "|java+method:///com/datastax/driver/core/Row/getBytes(int)|",
+      "|java+method:///org/hawkular/metrics/core/impl/Functions$AVAILABILITY_COLS/ordinal()|",
+      "|java+method:///com/datastax/driver/core/utils/UUIDs/unixTimestamp(java.util.UUID)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/hawkular/metrics/core/api/AvailabilityType/fromBytes(java.nio.ByteBuffer)|",
+      "|java+constructor:///org/hawkular/metrics/core/api/DataPoint/DataPoint(long,java.lang.Object)|",
+      "|java+method:///com/datastax/driver/core/Row/getUUID(int)|",
+      "|java+method:///com/datastax/driver/core/Row/getBytes(int)|",
+      "|java+method:///org/hawkular/metrics/core/impl/Functions$AVAILABILITY_COLS/ordinal()|",
+      "|java+method:///com/datastax/driver/core/utils/UUIDs/unixTimestamp(java.util.UUID)|"
+    ],
+    "affectedLib": "com.datastax.cassandra:cassandra-driver-core:2.2.0-rc2",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.hawkular.metrics:hawkular-metrics-core-impl:0.7.0.Final",
+    "coordinatesV2": "org.hawkular.metrics:hawkular-metrics-core-impl:0.6.0.Final",
+    "caller": "|java+method:///org/hawkular/metrics/core/impl/DataAccessImpl/deleteTags(org.hawkular.metrics.core.api.Metric,java.util.Set)|",
+    "called": "|java+method:///com/datastax/driver/core/BatchStatement/add(com.datastax.driver.core.Statement)|",
+    "v1Body": [
+      "|java+method:///org/hawkular/metrics/core/api/Metric/getTenantId()|",
+      "|java+method:///org/hawkular/metrics/core/api/MetricId/getName()|",
+      "|java+method:///org/hawkular/metrics/core/api/MetricType/getCode()|",
+      "|java+method:///org/hawkular/rx/cassandra/driver/RxSession/execute(com.datastax.driver.core.Statement)|",
+      "|java+method:///com/datastax/driver/core/BatchStatement/add(com.datastax.driver.core.Statement)|",
+      "|java+method:///org/hawkular/metrics/core/api/Interval/toString()|",
+      "|java+method:///com/datastax/driver/core/PreparedStatement/bind(java.lang.Object%5B%5D)|",
+      "|java+method:///org/hawkular/metrics/core/api/Metric/getType()|",
+      "|java+method:///org/hawkular/metrics/core/api/Metric/getId()|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///org/hawkular/metrics/core/api/MetricId/getInterval()|",
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+constructor:///com/datastax/driver/core/BatchStatement/BatchStatement(com.datastax.driver.core.BatchStatement$Type)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/hawkular/metrics/core/api/MetricId/getName()|",
+      "|java+method:///org/hawkular/metrics/core/api/MetricType/getCode()|",
+      "|java+method:///org/hawkular/rx/cassandra/driver/RxSession/execute(com.datastax.driver.core.Statement)|",
+      "|java+method:///com/datastax/driver/core/PreparedStatement/bind(java.lang.Object%5B%5D)|",
+      "|java+method:///org/hawkular/metrics/core/api/MetricId/getType()|",
+      "|java+method:///org/hawkular/metrics/core/api/Metric/getId()|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///org/hawkular/metrics/core/api/MetricId/getTenantId()|"
+    ],
+    "affectedLib": "com.datastax.cassandra:cassandra-driver-core:2.2.0-rc2",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.hawkular.metrics:hawkular-metrics-core-impl:0.7.0.Final",
+    "coordinatesV2": "org.hawkular.metrics:hawkular-metrics-core-impl:0.6.0.Final",
+    "caller": "|java+method:///org/hawkular/metrics/core/impl/DataAccessImpl/findAvailabilityData(org.hawkular.metrics.core.api.Metric,long)|",
+    "called": "|java+method:///com/datastax/driver/core/utils/UUIDs/startOf(long)|",
+    "v1Body": [
+      "|java+method:///org/hawkular/metrics/core/api/Metric/getTenantId()|",
+      "|java+method:///org/hawkular/metrics/core/api/MetricId/getName()|",
+      "|java+method:///org/hawkular/metrics/core/api/MetricType/getCode()|",
+      "|java+method:///org/hawkular/rx/cassandra/driver/RxSession/execute(com.datastax.driver.core.Statement)|",
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///org/hawkular/metrics/core/api/Interval/toString()|",
+      "|java+method:///com/datastax/driver/core/PreparedStatement/bind(java.lang.Object%5B%5D)|",
+      "|java+method:///com/datastax/driver/core/utils/UUIDs/endOf(long)|",
+      "|java+method:///org/hawkular/metrics/core/api/Metric/getId()|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///com/datastax/driver/core/utils/UUIDs/startOf(long)|",
+      "|java+method:///org/hawkular/metrics/core/api/MetricId/getInterval()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/hawkular/metrics/core/api/MetricId/getName()|",
+      "|java+method:///org/hawkular/metrics/core/api/MetricType/getCode()|",
+      "|java+method:///org/hawkular/rx/cassandra/driver/RxSession/execute(com.datastax.driver.core.Statement)|",
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///com/datastax/driver/core/PreparedStatement/bind(java.lang.Object%5B%5D)|",
+      "|java+method:///com/datastax/driver/core/utils/UUIDs/endOf(long)|",
+      "|java+method:///org/hawkular/metrics/core/api/Metric/getId()|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///com/datastax/driver/core/utils/UUIDs/startOf(long)|",
+      "|java+method:///org/hawkular/metrics/core/api/MetricId/getTenantId()|"
+    ],
+    "affectedLib": "com.datastax.cassandra:cassandra-driver-core:2.2.0-rc2",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.hawkular.metrics:hawkular-metrics-core-impl:0.7.0.Final",
+    "coordinatesV2": "org.hawkular.metrics:hawkular-metrics-core-impl:0.6.0.Final",
+    "caller": "|java+method:///org/hawkular/metrics/core/impl/Functions/getCounterDataPoint(com.datastax.driver.core.Row)|",
+    "called": "|java+method:///com/datastax/driver/core/utils/UUIDs/unixTimestamp(java.util.UUID)|",
+    "v1Body": [
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///com/datastax/driver/core/Row/getUUID(int)|",
+      "|java+constructor:///org/hawkular/metrics/core/api/DataPoint/DataPoint(long,java.lang.Object,java.util.Map)|",
+      "|java+method:///com/datastax/driver/core/utils/UUIDs/unixTimestamp(java.util.UUID)|",
+      "|java+method:///org/hawkular/metrics/core/impl/Functions$COUNTER_COLS/ordinal()|",
+      "|java+method:///com/datastax/driver/core/Row/getMap(int,java.lang.Class,java.lang.Class)|",
+      "|java+method:///com/datastax/driver/core/Row/getLong(int)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///com/datastax/driver/core/Row/getLong(int)|",
+      "|java+method:///com/datastax/driver/core/Row/getUUID(int)|",
+      "|java+method:///com/datastax/driver/core/utils/UUIDs/unixTimestamp(java.util.UUID)|",
+      "|java+method:///org/hawkular/metrics/core/impl/Functions$COUNTER_COLS/ordinal()|",
+      "|java+constructor:///org/hawkular/metrics/core/api/DataPoint/DataPoint(long,java.lang.Object)|"
+    ],
+    "affectedLib": "com.datastax.cassandra:cassandra-driver-core:2.2.0-rc2",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.hawkular.metrics:hawkular-metrics-core-impl:0.7.0.Final",
+    "coordinatesV2": "org.hawkular.metrics:hawkular-metrics-core-impl:0.6.0.Final",
+    "caller": "|java+method:///org/hawkular/metrics/core/impl/DataAccessImpl/addTags(org.hawkular.metrics.core.api.Metric,java.util.Map)|",
+    "called": "|java+method:///com/datastax/driver/core/BatchStatement/add(com.datastax.driver.core.Statement)|",
+    "v1Body": [
+      "|java+method:///org/hawkular/metrics/core/api/Metric/getTenantId()|",
+      "|java+method:///org/hawkular/metrics/core/api/MetricId/getName()|",
+      "|java+method:///org/hawkular/metrics/core/api/MetricType/getCode()|",
+      "|java+method:///org/hawkular/rx/cassandra/driver/RxSession/execute(com.datastax.driver.core.Statement)|",
+      "|java+method:///com/datastax/driver/core/BatchStatement/add(com.datastax.driver.core.Statement)|",
+      "|java+method:///org/hawkular/metrics/core/api/Interval/toString()|",
+      "|java+method:///com/datastax/driver/core/PreparedStatement/bind(java.lang.Object%5B%5D)|",
+      "|java+method:///org/hawkular/metrics/core/api/Metric/getType()|",
+      "|java+method:///org/hawkular/metrics/core/api/Metric/getId()|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///org/hawkular/metrics/core/api/MetricId/getInterval()|",
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+constructor:///com/datastax/driver/core/BatchStatement/BatchStatement(com.datastax.driver.core.BatchStatement$Type)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/hawkular/metrics/core/api/MetricId/getName()|",
+      "|java+method:///org/hawkular/metrics/core/api/MetricType/getCode()|",
+      "|java+method:///org/hawkular/rx/cassandra/driver/RxSession/execute(com.datastax.driver.core.Statement)|",
+      "|java+method:///com/datastax/driver/core/PreparedStatement/bind(java.lang.Object%5B%5D)|",
+      "|java+method:///org/hawkular/metrics/core/api/MetricId/getType()|",
+      "|java+method:///org/hawkular/metrics/core/api/Metric/getId()|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///org/hawkular/metrics/core/api/MetricId/getTenantId()|"
+    ],
+    "affectedLib": "com.datastax.cassandra:cassandra-driver-core:2.2.0-rc2",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.hawkular.metrics:hawkular-metrics-core-impl:0.7.0.Final",
+    "coordinatesV2": "org.hawkular.metrics:hawkular-metrics-core-impl:0.6.0.Final",
+    "caller": "|java+method:///org/hawkular/metrics/core/impl/Functions/getGaugeDataPoint(com.datastax.driver.core.Row)|",
+    "called": "|java+method:///com/datastax/driver/core/utils/UUIDs/unixTimestamp(java.util.UUID)|",
+    "v1Body": [
+      "|java+method:///java/lang/Double/valueOf(double)|",
+      "|java+method:///com/datastax/driver/core/Row/getMap(int,java.lang.Class,java.lang.Class)|",
+      "|java+method:///com/datastax/driver/core/Row/getUUID(int)|",
+      "|java+constructor:///org/hawkular/metrics/core/api/DataPoint/DataPoint(long,java.lang.Object,java.util.Map)|",
+      "|java+method:///com/datastax/driver/core/utils/UUIDs/unixTimestamp(java.util.UUID)|",
+      "|java+method:///com/datastax/driver/core/Row/getDouble(int)|",
+      "|java+method:///org/hawkular/metrics/core/impl/Functions$GAUGE_COLS/ordinal()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Double/valueOf(double)|",
+      "|java+method:///com/datastax/driver/core/Row/getUUID(int)|",
+      "|java+method:///com/datastax/driver/core/utils/UUIDs/unixTimestamp(java.util.UUID)|",
+      "|java+method:///com/datastax/driver/core/Row/getDouble(int)|",
+      "|java+method:///org/hawkular/metrics/core/impl/Functions$GAUGE_COLS/ordinal()|",
+      "|java+constructor:///org/hawkular/metrics/core/api/DataPoint/DataPoint(long,java.lang.Object)|"
+    ],
+    "affectedLib": "com.datastax.cassandra:cassandra-driver-core:2.2.0-rc2",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.hawkular.metrics:hawkular-metrics-core-impl:0.7.0.Final",
+    "coordinatesV2": "org.hawkular.metrics:hawkular-metrics-core-impl:0.6.0.Final",
+    "caller": "|java+method:///org/hawkular/metrics/core/impl/MetricsServiceImpl/initMetrics()|",
+    "called": "|java+method:///com/codahale/metrics/MetricRegistry/timer(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///com/codahale/metrics/MetricRegistry/timer(java.lang.String)|",
+      "|java+method:///com/codahale/metrics/MetricRegistry/meter(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/common/collect/ImmutableMap/builder()|",
+      "|java+method:///com/google/common/collect/ImmutableMap$Builder/build()|",
+      "|java+method:///com/codahale/metrics/MetricRegistry/timer(java.lang.String)|",
+      "|java+method:///com/google/common/collect/ImmutableMap$Builder/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///com/codahale/metrics/MetricRegistry/meter(java.lang.String)|"
+    ],
+    "affectedLib": "io.dropwizard.metrics:metrics-core:3.1.2",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.hawkular.metrics:hawkular-metrics-core-impl:0.7.0.Final",
+    "coordinatesV2": "org.hawkular.metrics:hawkular-metrics-core-impl:0.6.0.Final",
+    "caller": "|java+method:///org/hawkular/metrics/core/impl/MetricsServiceImpl/startUp(com.datastax.driver.core.Session,java.lang.String,boolean,boolean,com.codahale.metrics.MetricRegistry)|",
+    "called": "|java+method:///org/hawkular/metrics/schema/SchemaManager/dropKeyspace(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/hawkular/metrics/schema/SchemaManager/dropKeyspace(java.lang.String)|",
+      "|java+method:///org/hawkular/metrics/core/impl/MetricsServiceImpl/loadDataRetentions()|",
+      "|java+method:///org/hawkular/metrics/core/impl/MetricsServiceImpl/initSystemTenant()|",
+      "|java+method:///com/datastax/driver/core/Session/execute(java.lang.String)|",
+      "|java+constructor:///org/hawkular/metrics/schema/SchemaManager/SchemaManager(com.datastax.driver.core.Session)|",
+      "|java+method:///org/hawkular/metrics/core/impl/MetricsServiceImpl/initMetrics()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/util/concurrent/Executors/newFixedThreadPool(int,java.util.concurrent.ThreadFactory)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/hawkular/metrics/schema/SchemaManager/createSchema(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///org/hawkular/metrics/core/api/MetricsThreadFactory/MetricsThreadFactory()|",
+      "|java+method:///com/google/common/util/concurrent/MoreExecutors/listeningDecorator(java.util.concurrent.ExecutorService)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/datastax/driver/core/Session/execute(java.lang.String)|",
+      "|java+method:///org/hawkular/metrics/core/impl/MetricsServiceImpl/initMetrics()|",
+      "|java+method:///com/google/common/collect/ImmutableMap$Builder/put(java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///org/hawkular/metrics/core/impl/MetricsThreadFactory/MetricsThreadFactory()|",
+      "|java+method:///java/util/concurrent/Executors/newFixedThreadPool(int,java.util.concurrent.ThreadFactory)|",
+      "|java+method:///com/google/common/util/concurrent/MoreExecutors/listeningDecorator(java.util.concurrent.ExecutorService)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/hawkular/metrics/schema/SchemaManager/dropKeyspace(java.lang.String)|",
+      "|java+method:///com/google/common/collect/ImmutableMap/builder()|",
+      "|java+method:///org/hawkular/metrics/core/impl/MetricsServiceImpl/loadDataRetentions()|",
+      "|java+method:///org/hawkular/metrics/core/impl/log/CoreLogger/infoKeyspaceUsed(java.lang.String)|",
+      "|java+method:///org/hawkular/metrics/schema/SchemaManager/createSchema(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///org/hawkular/metrics/schema/SchemaManager/SchemaManager(com.datastax.driver.core.Session)|",
+      "|java+method:///com/google/common/collect/ImmutableMap$Builder/build()|"
+    ],
+    "affectedLib": "org.hawkular.metrics:schema-manager:0.6.0.Final",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.hawkular.metrics:hawkular-metrics-core-impl:0.6.0.Final",
+    "coordinatesV2": "org.hawkular.metrics:hawkular-metrics-core-impl:0.7.0.Final",
+    "caller": "|java+method:///org/hawkular/metrics/core/impl/MetricsServiceImpl/startUp(com.datastax.driver.core.Session,java.lang.String,boolean,boolean,com.codahale.metrics.MetricRegistry)|",
+    "called": "|java+method:///org/hawkular/metrics/schema/SchemaManager/dropKeyspace(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/hawkular/metrics/schema/SchemaManager/dropKeyspace(java.lang.String)|",
+      "|java+method:///org/hawkular/metrics/core/impl/MetricsServiceImpl/loadDataRetentions()|",
+      "|java+method:///org/hawkular/metrics/core/impl/MetricsServiceImpl/initSystemTenant()|",
+      "|java+method:///com/datastax/driver/core/Session/execute(java.lang.String)|",
+      "|java+constructor:///org/hawkular/metrics/schema/SchemaManager/SchemaManager(com.datastax.driver.core.Session)|",
+      "|java+method:///org/hawkular/metrics/core/impl/MetricsServiceImpl/initMetrics()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/util/concurrent/Executors/newFixedThreadPool(int,java.util.concurrent.ThreadFactory)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/hawkular/metrics/schema/SchemaManager/createSchema(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///org/hawkular/metrics/core/api/MetricsThreadFactory/MetricsThreadFactory()|",
+      "|java+method:///com/google/common/util/concurrent/MoreExecutors/listeningDecorator(java.util.concurrent.ExecutorService)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/datastax/driver/core/Session/execute(java.lang.String)|",
+      "|java+method:///org/hawkular/metrics/core/impl/MetricsServiceImpl/initMetrics()|",
+      "|java+method:///com/google/common/collect/ImmutableMap$Builder/put(java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///org/hawkular/metrics/core/impl/MetricsThreadFactory/MetricsThreadFactory()|",
+      "|java+method:///java/util/concurrent/Executors/newFixedThreadPool(int,java.util.concurrent.ThreadFactory)|",
+      "|java+method:///com/google/common/util/concurrent/MoreExecutors/listeningDecorator(java.util.concurrent.ExecutorService)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/hawkular/metrics/schema/SchemaManager/dropKeyspace(java.lang.String)|",
+      "|java+method:///com/google/common/collect/ImmutableMap/builder()|",
+      "|java+method:///org/hawkular/metrics/core/impl/MetricsServiceImpl/loadDataRetentions()|",
+      "|java+method:///org/hawkular/metrics/core/impl/log/CoreLogger/infoKeyspaceUsed(java.lang.String)|",
+      "|java+method:///org/hawkular/metrics/schema/SchemaManager/createSchema(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///org/hawkular/metrics/schema/SchemaManager/SchemaManager(com.datastax.driver.core.Session)|",
+      "|java+method:///com/google/common/collect/ImmutableMap$Builder/build()|"
+    ],
+    "affectedLib": "org.hawkular.metrics:hawkular-metrics-schema-manager:0.7.0.Final",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.hawkular.metrics:hawkular-metrics-core-impl:0.6.0.Final",
+    "coordinatesV2": "org.hawkular.metrics:hawkular-metrics-core-impl:0.7.0.Final",
+    "caller": "|java+method:///org/hawkular/metrics/core/impl/MetricsServiceImpl/createMetric(org.hawkular.metrics.core.api.Metric)|",
+    "called": "|java+method:///org/hawkular/rx/cassandra/driver/RxUtil/from(com.google.common.util.concurrent.ListenableFuture,java.util.concurrent.Executor)|",
+    "v1Body": [
+      "|java+method:///org/hawkular/metrics/core/impl/DataAccess/insertMetricInMetricsIndex(org.hawkular.metrics.core.api.Metric)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/hawkular/metrics/core/api/Metric/getType()|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///rx/Observable/create(rx.Observable$OnSubscribe)|",
+      "|java+method:///org/hawkular/rx/cassandra/driver/RxUtil/from(com.google.common.util.concurrent.ListenableFuture,java.util.concurrent.Executor)|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/hawkular/metrics/core/impl/DataAccess/insertMetricInMetricsIndex(org.hawkular.metrics.core.api.Metric)|",
+      "|java+method:///org/hawkular/metrics/core/api/MetricType/isUserType()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/hawkular/metrics/core/api/MetricId/getType()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/hawkular/metrics/core/api/Metric/getId()|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///rx/Observable/create(rx.Observable$OnSubscribe)|",
+      "|java+method:///org/hawkular/rx/cassandra/driver/RxUtil/from(com.google.common.util.concurrent.ListenableFuture,java.util.concurrent.Executor)|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "affectedLib": "org.hawkular.metrics:hawkular-metrics-rx-java-driver:0.7.0.Final",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.hawkular.metrics:hawkular-metrics-core-impl:0.6.0.Final",
+    "coordinatesV2": "org.hawkular.metrics:hawkular-metrics-core-impl:0.7.0.Final",
+    "caller": "|java+method:///org/hawkular/metrics/core/impl/Functions/getAvailabilityDataPoint(com.datastax.driver.core.Row)|",
+    "called": "|java+constructor:///org/hawkular/metrics/core/api/DataPoint/DataPoint(long,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///com/datastax/driver/core/Row/getMap(int,java.lang.Class,java.lang.Class)|",
+      "|java+constructor:///org/hawkular/metrics/core/api/DataPoint/DataPoint(long,java.lang.Object,java.util.Map)|",
+      "|java+method:///org/hawkular/metrics/core/api/AvailabilityType/fromBytes(java.nio.ByteBuffer)|",
+      "|java+method:///com/datastax/driver/core/Row/getUUID(int)|",
+      "|java+method:///com/datastax/driver/core/Row/getBytes(int)|",
+      "|java+method:///org/hawkular/metrics/core/impl/Functions$AVAILABILITY_COLS/ordinal()|",
+      "|java+method:///com/datastax/driver/core/utils/UUIDs/unixTimestamp(java.util.UUID)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/hawkular/metrics/core/api/AvailabilityType/fromBytes(java.nio.ByteBuffer)|",
+      "|java+constructor:///org/hawkular/metrics/core/api/DataPoint/DataPoint(long,java.lang.Object)|",
+      "|java+method:///com/datastax/driver/core/Row/getUUID(int)|",
+      "|java+method:///com/datastax/driver/core/Row/getBytes(int)|",
+      "|java+method:///org/hawkular/metrics/core/impl/Functions$AVAILABILITY_COLS/ordinal()|",
+      "|java+method:///com/datastax/driver/core/utils/UUIDs/unixTimestamp(java.util.UUID)|"
+    ],
+    "affectedLib": "org.hawkular.metrics:hawkular-metrics-core-api:0.7.0.Final",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.hawkular.metrics:hawkular-metrics-core-impl:0.6.0.Final",
+    "coordinatesV2": "org.hawkular.metrics:hawkular-metrics-core-impl:0.7.0.Final",
+    "caller": "|java+method:///org/hawkular/metrics/core/impl/Functions/getGaugeDataPoint(com.datastax.driver.core.Row)|",
+    "called": "|java+constructor:///org/hawkular/metrics/core/api/DataPoint/DataPoint(long,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///java/lang/Double/valueOf(double)|",
+      "|java+method:///com/datastax/driver/core/Row/getMap(int,java.lang.Class,java.lang.Class)|",
+      "|java+method:///com/datastax/driver/core/Row/getUUID(int)|",
+      "|java+constructor:///org/hawkular/metrics/core/api/DataPoint/DataPoint(long,java.lang.Object,java.util.Map)|",
+      "|java+method:///com/datastax/driver/core/utils/UUIDs/unixTimestamp(java.util.UUID)|",
+      "|java+method:///com/datastax/driver/core/Row/getDouble(int)|",
+      "|java+method:///org/hawkular/metrics/core/impl/Functions$GAUGE_COLS/ordinal()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Double/valueOf(double)|",
+      "|java+method:///com/datastax/driver/core/Row/getUUID(int)|",
+      "|java+method:///com/datastax/driver/core/utils/UUIDs/unixTimestamp(java.util.UUID)|",
+      "|java+method:///com/datastax/driver/core/Row/getDouble(int)|",
+      "|java+method:///org/hawkular/metrics/core/impl/Functions$GAUGE_COLS/ordinal()|",
+      "|java+constructor:///org/hawkular/metrics/core/api/DataPoint/DataPoint(long,java.lang.Object)|"
+    ],
+    "affectedLib": "org.hawkular.metrics:hawkular-metrics-core-api:0.7.0.Final",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.hawkular.metrics:hawkular-metrics-core-impl:0.6.0.Final",
+    "coordinatesV2": "org.hawkular.metrics:hawkular-metrics-core-impl:0.7.0.Final",
+    "caller": "|java+method:///org/hawkular/metrics/core/impl/Functions/getCounterDataPoint(com.datastax.driver.core.Row)|",
+    "called": "|java+constructor:///org/hawkular/metrics/core/api/DataPoint/DataPoint(long,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///com/datastax/driver/core/Row/getUUID(int)|",
+      "|java+constructor:///org/hawkular/metrics/core/api/DataPoint/DataPoint(long,java.lang.Object,java.util.Map)|",
+      "|java+method:///com/datastax/driver/core/utils/UUIDs/unixTimestamp(java.util.UUID)|",
+      "|java+method:///org/hawkular/metrics/core/impl/Functions$COUNTER_COLS/ordinal()|",
+      "|java+method:///com/datastax/driver/core/Row/getMap(int,java.lang.Class,java.lang.Class)|",
+      "|java+method:///com/datastax/driver/core/Row/getLong(int)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///com/datastax/driver/core/Row/getLong(int)|",
+      "|java+method:///com/datastax/driver/core/Row/getUUID(int)|",
+      "|java+method:///com/datastax/driver/core/utils/UUIDs/unixTimestamp(java.util.UUID)|",
+      "|java+method:///org/hawkular/metrics/core/impl/Functions$COUNTER_COLS/ordinal()|",
+      "|java+constructor:///org/hawkular/metrics/core/api/DataPoint/DataPoint(long,java.lang.Object)|"
+    ],
+    "affectedLib": "org.hawkular.metrics:hawkular-metrics-core-api:0.7.0.Final",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.hawkular.metrics:hawkular-metrics-core-impl:0.6.0.Final",
+    "coordinatesV2": "org.hawkular.metrics:hawkular-metrics-core-impl:0.7.0.Final",
+    "caller": "|java+method:///org/hawkular/metrics/core/impl/MetricsServiceImpl/getPeriods(org.hawkular.metrics.core.api.MetricId,java.util.function.Predicate,long,long)|",
+    "called": "|java+constructor:///org/hawkular/metrics/core/api/Metric/Metric(org.hawkular.metrics.core.api.MetricId)|",
+    "v1Body": [
+      "|java+method:///rx/Observable/map(rx.functions.Func1)|",
+      "|java+method:///rx/Observable/flatMap(rx.functions.Func1)|",
+      "|java+constructor:///org/hawkular/metrics/core/api/Metric/Metric(org.hawkular.metrics.core.api.MetricId)|",
+      "|java+method:///rx/Observable/toList()|",
+      "|java+method:///org/hawkular/metrics/core/impl/DataAccess/findData(org.hawkular.metrics.core.api.Metric,long,long,org.hawkular.metrics.core.impl.Order)|"
+    ],
+    "v2Body": [
+      "|java+method:///rx/Observable/map(rx.functions.Func1)|",
+      "|java+method:///rx/Observable/flatMap(rx.functions.Func1)|",
+      "|java+constructor:///org/hawkular/metrics/core/api/Metric/Metric(org.hawkular.metrics.core.api.MetricId)|",
+      "|java+method:///rx/Observable/toList()|",
+      "|java+method:///org/hawkular/metrics/core/impl/DataAccess/findGaugeData(org.hawkular.metrics.core.api.Metric,long,long,org.hawkular.metrics.core.impl.Order)|"
+    ],
+    "affectedLib": "org.hawkular.metrics:hawkular-metrics-core-api:0.7.0.Final",
+    "change": "UPDATED"
+  }
+]

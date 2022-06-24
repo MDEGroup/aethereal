@@ -1,0 +1,661 @@
+[
+  {
+    "coordinatesV1": "org.jasig.cas.client:cas-client-integration-tomcat-v7:3.4.0",
+    "coordinatesV2": "org.jasig.cas.client:cas-client-integration-tomcat-v7:3.2.1",
+    "caller": "|java+constructor:///org/jasig/cas/client/tomcat/v7/AbstractAuthenticator/AbstractAuthenticator()|",
+    "called": "|java+constructor:///org/apache/catalina/authenticator/AuthenticatorBase/AuthenticatorBase()|",
+    "v1Body": [
+      "|java+constructor:///org/apache/catalina/authenticator/AuthenticatorBase/AuthenticatorBase()|",
+      "|java+constructor:///org/jasig/cas/client/tomcat/AuthenticatorDelegate/AuthenticatorDelegate()|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/catalina/authenticator/AuthenticatorBase/AuthenticatorBase()|",
+      "|java+constructor:///org/jasig/cas/client/tomcat/AuthenticatorDelegate/AuthenticatorDelegate()|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///java/lang/Object/getClass()|"
+    ],
+    "affectedLib": "org.apache.tomcat:tomcat-catalina:7.0.8",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas.client:cas-client-integration-tomcat-v7:3.4.0",
+    "coordinatesV2": "org.jasig.cas.client:cas-client-integration-tomcat-v7:3.2.1",
+    "caller": "|java+method:///org/jasig/cas/client/tomcat/v7/AbstractAuthenticator/startInternal()|",
+    "called": "|java+method:///org/apache/catalina/authenticator/AuthenticatorBase/startInternal()|",
+    "v1Body": [
+      "|java+method:///org/jasig/cas/client/tomcat/v7/AbstractAuthenticator/addLifecycleListener(org.apache.catalina.LifecycleListener)|",
+      "|java+method:///org/jasig/cas/client/util/CommonUtils/assertNotNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///org/jasig/cas/client/tomcat/AuthenticatorDelegate/setRealm(org.jasig.cas.client.tomcat.CasRealm)|",
+      "|java+method:///org/jasig/cas/client/tomcat/v7/AbstractAuthenticator/getName()|",
+      "|java+method:///org/apache/catalina/authenticator/AuthenticatorBase/startInternal()|",
+      "|java+method:///org/jasig/cas/client/tomcat/AuthenticatorDelegate/getCasServerLoginUrl()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/apache/catalina/Realm/getInfo()|",
+      "|java+method:///org/apache/commons/logging/Log/debug(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/jasig/cas/client/tomcat/AuthenticatorDelegate/getServerName()|",
+      "|java+method:///org/apache/catalina/Context/getRealm()|",
+      "|java+method:///org/jasig/cas/client/util/CommonUtils/assertTrue(boolean,java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///org/apache/catalina/LifecycleException/LifecycleException(java.lang.Throwable)|",
+      "|java+method:///org/jasig/cas/client/tomcat/AuthenticatorDelegate/getServiceUrl()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/jasig/cas/client/tomcat/v7/AbstractAuthenticator/addLifecycleListener(org.apache.catalina.LifecycleListener)|",
+      "|java+method:///org/apache/catalina/Realm/getInfo()|",
+      "|java+method:///org/jasig/cas/client/util/CommonUtils/assertNotNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///org/jasig/cas/client/tomcat/v7/AbstractAuthenticator/getName()|",
+      "|java+method:///org/apache/catalina/authenticator/AuthenticatorBase/startInternal()|",
+      "|java+method:///org/jasig/cas/client/tomcat/AuthenticatorDelegate/getCasServerLoginUrl()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/jasig/cas/client/tomcat/AuthenticatorDelegate/setRealm(org.jasig.cas.client.tomcat.CasRealm)|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/jasig/cas/client/tomcat/AuthenticatorDelegate/getServerName()|",
+      "|java+method:///org/apache/catalina/Context/getRealm()|",
+      "|java+method:///org/jasig/cas/client/util/CommonUtils/assertTrue(boolean,java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///org/apache/catalina/LifecycleException/LifecycleException(java.lang.Throwable)|",
+      "|java+method:///org/jasig/cas/client/tomcat/AuthenticatorDelegate/getServiceUrl()|"
+    ],
+    "affectedLib": "org.apache.tomcat:tomcat-catalina:7.0.8",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas.client:cas-client-integration-tomcat-v7:3.4.0",
+    "coordinatesV2": "org.jasig.cas.client:cas-client-integration-tomcat-v7:3.2.1",
+    "caller": "|java+method:///org/jasig/cas/client/tomcat/v7/AbstractLogoutValve/invoke(org.apache.catalina.connector.Request,org.apache.catalina.connector.Response)|",
+    "called": "|java+method:///org/apache/catalina/connector/Request/getRequestURI()|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/logging/Log/debug(java.lang.Object)|",
+      "|java+method:///org/jasig/cas/client/tomcat/LogoutHandler/logout(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)|",
+      "|java+method:///org/jasig/cas/client/tomcat/v7/AbstractLogoutValve/getNext()|",
+      "|java+method:///org/apache/catalina/connector/Request/getRequestURI()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/apache/catalina/Valve/invoke(org.apache.catalina.connector.Request,org.apache.catalina.connector.Response)|",
+      "|java+method:///org/jasig/cas/client/tomcat/v7/AbstractLogoutValve/getLogoutHandler()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/jasig/cas/client/tomcat/LogoutHandler/isLogoutRequest(javax.servlet.http.HttpServletRequest)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/jasig/cas/client/tomcat/LogoutHandler/logout(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/jasig/cas/client/tomcat/LogoutHandler/isLogoutRequest(javax.servlet.http.HttpServletRequest)|",
+      "|java+method:///org/jasig/cas/client/tomcat/v7/AbstractLogoutValve/getNext()|",
+      "|java+method:///org/apache/catalina/connector/Request/getRequestURI()|",
+      "|java+method:///org/apache/catalina/Valve/invoke(org.apache.catalina.connector.Request,org.apache.catalina.connector.Response)|",
+      "|java+method:///org/jasig/cas/client/tomcat/v7/AbstractLogoutValve/getLogoutHandler()|"
+    ],
+    "affectedLib": "org.apache.tomcat:tomcat-catalina:7.0.8",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas.client:cas-client-integration-tomcat-v7:3.4.0",
+    "coordinatesV2": "org.jasig.cas.client:cas-client-integration-tomcat-v7:3.2.1",
+    "caller": "|java+method:///org/jasig/cas/client/tomcat/v7/AbstractAuthenticator/authenticate(org.apache.catalina.connector.Request,javax.servlet.http.HttpServletResponse,org.apache.catalina.deploy.LoginConfig)|",
+    "called": "|java+method:///org/apache/catalina/connector/Request/setUserPrincipal(java.security.Principal)|",
+    "v1Body": [
+      "|java+method:///org/apache/catalina/connector/Request/getUserPrincipal()|",
+      "|java+method:///org/apache/catalina/connector/Request/getRequest()|",
+      "|java+method:///org/jasig/cas/client/tomcat/AuthenticatorDelegate/authenticate(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)|",
+      "|java+method:///org/apache/catalina/connector/Request/setAuthType(java.lang.String)|",
+      "|java+method:///org/jasig/cas/client/tomcat/v7/AbstractAuthenticator/getAuthenticationMethod()|",
+      "|java+method:///org/apache/catalina/connector/Request/setUserPrincipal(java.security.Principal)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/catalina/connector/Request/getUserPrincipal()|",
+      "|java+method:///org/apache/catalina/connector/Request/getRequest()|",
+      "|java+method:///org/jasig/cas/client/tomcat/AuthenticatorDelegate/authenticate(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)|",
+      "|java+method:///org/jasig/cas/client/tomcat/v7/AbstractAuthenticator/getAuthenticationMethod()|",
+      "|java+method:///org/jasig/cas/client/tomcat/v7/AbstractAuthenticator/register(org.apache.catalina.connector.Request,javax.servlet.http.HttpServletResponse,java.security.Principal,java.lang.String,java.lang.String,java.lang.String)|"
+    ],
+    "affectedLib": "org.apache.tomcat:tomcat-catalina:7.0.8",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas.client:cas-client-integration-tomcat-v7:3.4.0",
+    "coordinatesV2": "org.jasig.cas.client:cas-client-integration-tomcat-v7:3.2.1",
+    "caller": "|java+constructor:///org/jasig/cas/client/tomcat/v7/ProxyCallbackValve/ProxyCallbackValve()|",
+    "called": "|java+constructor:///org/apache/catalina/valves/ValveBase/ValveBase()|",
+    "v1Body": [
+      "|java+constructor:///org/apache/catalina/valves/ValveBase/ValveBase()|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/catalina/valves/ValveBase/ValveBase()|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///java/lang/Object/getClass()|"
+    ],
+    "affectedLib": "org.apache.tomcat:tomcat-catalina:7.0.8",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas.client:cas-client-integration-tomcat-v7:3.4.0",
+    "coordinatesV2": "org.jasig.cas.client:cas-client-integration-tomcat-v7:3.2.1",
+    "caller": "|java+method:///org/jasig/cas/client/tomcat/v7/SingleSignOutValve/invoke(org.apache.catalina.connector.Request,org.apache.catalina.connector.Response)|",
+    "called": "|java+method:///org/apache/catalina/connector/Request/getSessionInternal(boolean)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/logging/Log/debug(java.lang.Object)|",
+      "|java+method:///org/jasig/cas/client/session/SingleSignOutHandler/isLogoutRequest(javax.servlet.http.HttpServletRequest)|",
+      "|java+method:///org/apache/catalina/connector/Request/getSessionInternal(boolean)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/jasig/cas/client/session/SingleSignOutHandler/destroySession(javax.servlet.http.HttpServletRequest)|",
+      "|java+method:///org/apache/catalina/connector/Request/getRequestURI()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/apache/catalina/Valve/invoke(org.apache.catalina.connector.Request,org.apache.catalina.connector.Response)|",
+      "|java+method:///org/jasig/cas/client/session/SingleSignOutHandler/recordSession(javax.servlet.http.HttpServletRequest)|",
+      "|java+method:///org/jasig/cas/client/tomcat/v7/SingleSignOutValve/getNext()|",
+      "|java+method:///org/jasig/cas/client/session/SingleSignOutHandler/isTokenRequest(javax.servlet.http.HttpServletRequest)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/apache/catalina/Session/addSessionListener(org.apache.catalina.SessionListener)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/jasig/cas/client/tomcat/v7/SingleSignOutValve/getNext()|",
+      "|java+method:///org/jasig/cas/client/session/SingleSignOutHandler/process(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)|",
+      "|java+method:///org/apache/catalina/Valve/invoke(org.apache.catalina.connector.Request,org.apache.catalina.connector.Response)|"
+    ],
+    "affectedLib": "org.apache.tomcat:tomcat-catalina:7.0.8",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas.client:cas-client-integration-tomcat-v7:3.4.0",
+    "coordinatesV2": "org.jasig.cas.client:cas-client-integration-tomcat-v7:3.2.1",
+    "caller": "|java+method:///org/jasig/cas/client/tomcat/v7/ProxyCallbackValve/startInternal()|",
+    "called": "|java+method:///org/apache/catalina/valves/ValveBase/startInternal()|",
+    "v1Body": [
+      "|java+method:///org/jasig/cas/client/util/CommonUtils/assertNotNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///org/apache/commons/logging/Log/info(java.lang.Object)|",
+      "|java+method:///org/jasig/cas/client/util/CommonUtils/assertTrue(boolean,java.lang.String)|",
+      "|java+method:///org/jasig/cas/client/util/ReflectUtils/newInstance(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+constructor:///org/apache/catalina/LifecycleException/LifecycleException(java.lang.Throwable)|",
+      "|java+method:///java/lang/String/startsWith(java.lang.String)|",
+      "|java+method:///org/apache/catalina/valves/ValveBase/startInternal()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/jasig/cas/client/util/CommonUtils/assertNotNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String)|",
+      "|java+method:///org/jasig/cas/client/util/CommonUtils/assertTrue(boolean,java.lang.String)|",
+      "|java+method:///org/jasig/cas/client/util/ReflectUtils/newInstance(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+constructor:///org/apache/catalina/LifecycleException/LifecycleException(java.lang.Throwable)|",
+      "|java+method:///java/lang/String/startsWith(java.lang.String)|",
+      "|java+method:///org/apache/catalina/valves/ValveBase/startInternal()|"
+    ],
+    "affectedLib": "org.apache.tomcat:tomcat-catalina:7.0.8",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas.client:cas-client-integration-tomcat-v7:3.4.0",
+    "coordinatesV2": "org.jasig.cas.client:cas-client-integration-tomcat-v7:3.2.1",
+    "caller": "|java+constructor:///org/jasig/cas/client/tomcat/v7/AbstractLogoutValve/AbstractLogoutValve()|",
+    "called": "|java+constructor:///org/apache/catalina/valves/ValveBase/ValveBase()|",
+    "v1Body": [
+      "|java+constructor:///org/apache/catalina/valves/ValveBase/ValveBase()|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/catalina/valves/ValveBase/ValveBase()|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///java/lang/Object/getClass()|"
+    ],
+    "affectedLib": "org.apache.tomcat:tomcat-catalina:7.0.8",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas.client:cas-client-integration-tomcat-v7:3.4.0",
+    "coordinatesV2": "org.jasig.cas.client:cas-client-integration-tomcat-v7:3.2.1",
+    "caller": "|java+constructor:///org/jasig/cas/client/tomcat/v7/SingleSignOutValve/SingleSignOutValve()|",
+    "called": "|java+constructor:///org/apache/catalina/valves/ValveBase/ValveBase()|",
+    "v1Body": [
+      "|java+constructor:///org/apache/catalina/valves/ValveBase/ValveBase()|",
+      "|java+constructor:///org/jasig/cas/client/session/SingleSignOutHandler/SingleSignOutHandler()|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/catalina/valves/ValveBase/ValveBase()|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+constructor:///org/jasig/cas/client/session/SingleSignOutHandler/SingleSignOutHandler()|",
+      "|java+method:///java/lang/Object/getClass()|"
+    ],
+    "affectedLib": "org.apache.tomcat:tomcat-catalina:7.0.8",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas.client:cas-client-integration-tomcat-v7:3.4.0",
+    "coordinatesV2": "org.jasig.cas.client:cas-client-integration-tomcat-v7:3.2.1",
+    "caller": "|java+method:///org/jasig/cas/client/tomcat/v7/ProxyCallbackValve/invoke(org.apache.catalina.connector.Request,org.apache.catalina.connector.Response)|",
+    "called": "|java+method:///org/apache/catalina/connector/Request/getRequestURI()|",
+    "v1Body": [
+      "|java+method:///org/jasig/cas/client/tomcat/v7/ProxyCallbackValve/getNext()|",
+      "|java+method:///org/apache/commons/logging/Log/debug(java.lang.Object)|",
+      "|java+method:///org/apache/catalina/connector/Request/getRequestURI()|",
+      "|java+method:///org/jasig/cas/client/util/CommonUtils/readAndRespondToProxyReceptorRequest(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,org.jasig.cas.client.proxy.ProxyGrantingTicketStorage)|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///org/apache/catalina/Valve/invoke(org.apache.catalina.connector.Request,org.apache.catalina.connector.Response)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/catalina/connector/Request/getRequestURI()|",
+      "|java+method:///org/jasig/cas/client/util/CommonUtils/readAndRespondToProxyReceptorRequest(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,org.jasig.cas.client.proxy.ProxyGrantingTicketStorage)|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///org/apache/catalina/Valve/invoke(org.apache.catalina.connector.Request,org.apache.catalina.connector.Response)|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+method:///org/jasig/cas/client/tomcat/v7/ProxyCallbackValve/getNext()|"
+    ],
+    "affectedLib": "org.apache.tomcat:tomcat-catalina:7.0.8",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas.client:cas-client-integration-tomcat-v7:3.4.0",
+    "coordinatesV2": "org.jasig.cas.client:cas-client-integration-tomcat-v7:3.2.1",
+    "caller": "|java+method:///org/jasig/cas/client/tomcat/v7/SingleSignOutValve/startInternal()|",
+    "called": "|java+method:///org/apache/catalina/valves/ValveBase/startInternal()|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/logging/Log/info(java.lang.Object)|",
+      "|java+method:///org/jasig/cas/client/session/SingleSignOutHandler/init()|",
+      "|java+method:///org/apache/catalina/valves/ValveBase/startInternal()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/info(java.lang.String)|",
+      "|java+method:///org/jasig/cas/client/session/SingleSignOutHandler/init()|",
+      "|java+method:///org/apache/catalina/valves/ValveBase/startInternal()|"
+    ],
+    "affectedLib": "org.apache.tomcat:tomcat-catalina:7.0.8",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas.client:cas-client-integration-tomcat-v7:3.4.0",
+    "coordinatesV2": "org.jasig.cas.client:cas-client-integration-tomcat-v7:3.2.1",
+    "caller": "|java+constructor:///org/jasig/cas/client/tomcat/v7/AbstractAuthenticator/AbstractAuthenticator()|",
+    "called": "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/catalina/authenticator/AuthenticatorBase/AuthenticatorBase()|",
+      "|java+constructor:///org/jasig/cas/client/tomcat/AuthenticatorDelegate/AuthenticatorDelegate()|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/catalina/authenticator/AuthenticatorBase/AuthenticatorBase()|",
+      "|java+constructor:///org/jasig/cas/client/tomcat/AuthenticatorDelegate/AuthenticatorDelegate()|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///java/lang/Object/getClass()|"
+    ],
+    "affectedLib": "commons-logging:commons-logging:1.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas.client:cas-client-integration-tomcat-v7:3.4.0",
+    "coordinatesV2": "org.jasig.cas.client:cas-client-integration-tomcat-v7:3.2.1",
+    "caller": "|java+constructor:///org/jasig/cas/client/tomcat/v7/ProxyCallbackValve/ProxyCallbackValve()|",
+    "called": "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/catalina/valves/ValveBase/ValveBase()|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/catalina/valves/ValveBase/ValveBase()|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///java/lang/Object/getClass()|"
+    ],
+    "affectedLib": "commons-logging:commons-logging:1.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas.client:cas-client-integration-tomcat-v7:3.4.0",
+    "coordinatesV2": "org.jasig.cas.client:cas-client-integration-tomcat-v7:3.2.1",
+    "caller": "|java+constructor:///org/jasig/cas/client/tomcat/v7/AbstractLogoutValve/AbstractLogoutValve()|",
+    "called": "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/catalina/valves/ValveBase/ValveBase()|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/catalina/valves/ValveBase/ValveBase()|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///java/lang/Object/getClass()|"
+    ],
+    "affectedLib": "commons-logging:commons-logging:1.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas.client:cas-client-integration-tomcat-v7:3.4.0",
+    "coordinatesV2": "org.jasig.cas.client:cas-client-integration-tomcat-v7:3.2.1",
+    "caller": "|java+constructor:///org/jasig/cas/client/tomcat/v7/SingleSignOutValve/SingleSignOutValve()|",
+    "called": "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/catalina/valves/ValveBase/ValveBase()|",
+      "|java+constructor:///org/jasig/cas/client/session/SingleSignOutHandler/SingleSignOutHandler()|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/catalina/valves/ValveBase/ValveBase()|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+constructor:///org/jasig/cas/client/session/SingleSignOutHandler/SingleSignOutHandler()|",
+      "|java+method:///java/lang/Object/getClass()|"
+    ],
+    "affectedLib": "commons-logging:commons-logging:1.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas.client:cas-client-integration-tomcat-v7:3.2.1",
+    "coordinatesV2": "org.jasig.cas.client:cas-client-integration-tomcat-v7:3.4.0",
+    "caller": "|java+constructor:///org/jasig/cas/client/tomcat/v7/AbstractAuthenticator/AbstractAuthenticator()|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/catalina/authenticator/AuthenticatorBase/AuthenticatorBase()|",
+      "|java+constructor:///org/jasig/cas/client/tomcat/AuthenticatorDelegate/AuthenticatorDelegate()|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/catalina/authenticator/AuthenticatorBase/AuthenticatorBase()|",
+      "|java+constructor:///org/jasig/cas/client/tomcat/AuthenticatorDelegate/AuthenticatorDelegate()|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///java/lang/Object/getClass()|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas.client:cas-client-integration-tomcat-v7:3.2.1",
+    "coordinatesV2": "org.jasig.cas.client:cas-client-integration-tomcat-v7:3.4.0",
+    "caller": "|java+constructor:///org/jasig/cas/client/tomcat/v7/ProxyCallbackValve/ProxyCallbackValve()|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/catalina/valves/ValveBase/ValveBase()|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/catalina/valves/ValveBase/ValveBase()|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///java/lang/Object/getClass()|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas.client:cas-client-integration-tomcat-v7:3.2.1",
+    "coordinatesV2": "org.jasig.cas.client:cas-client-integration-tomcat-v7:3.4.0",
+    "caller": "|java+constructor:///org/jasig/cas/client/tomcat/v7/AbstractLogoutValve/AbstractLogoutValve()|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/catalina/valves/ValveBase/ValveBase()|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/catalina/valves/ValveBase/ValveBase()|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///java/lang/Object/getClass()|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas.client:cas-client-integration-tomcat-v7:3.2.1",
+    "coordinatesV2": "org.jasig.cas.client:cas-client-integration-tomcat-v7:3.4.0",
+    "caller": "|java+constructor:///org/jasig/cas/client/tomcat/v7/SingleSignOutValve/SingleSignOutValve()|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/catalina/valves/ValveBase/ValveBase()|",
+      "|java+constructor:///org/jasig/cas/client/session/SingleSignOutHandler/SingleSignOutHandler()|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/catalina/valves/ValveBase/ValveBase()|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+constructor:///org/jasig/cas/client/session/SingleSignOutHandler/SingleSignOutHandler()|",
+      "|java+method:///java/lang/Object/getClass()|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas.client:cas-client-integration-tomcat-v7:3.2.1",
+    "coordinatesV2": "org.jasig.cas.client:cas-client-integration-tomcat-v7:3.4.0",
+    "caller": "|java+method:///org/jasig/cas/client/tomcat/v7/AbstractAuthenticator/startInternal()|",
+    "called": "|java+method:///org/jasig/cas/client/util/CommonUtils/assertNotNull(java.lang.Object,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/jasig/cas/client/tomcat/v7/AbstractAuthenticator/addLifecycleListener(org.apache.catalina.LifecycleListener)|",
+      "|java+method:///org/jasig/cas/client/util/CommonUtils/assertNotNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///org/jasig/cas/client/tomcat/AuthenticatorDelegate/setRealm(org.jasig.cas.client.tomcat.CasRealm)|",
+      "|java+method:///org/jasig/cas/client/tomcat/v7/AbstractAuthenticator/getName()|",
+      "|java+method:///org/apache/catalina/authenticator/AuthenticatorBase/startInternal()|",
+      "|java+method:///org/jasig/cas/client/tomcat/AuthenticatorDelegate/getCasServerLoginUrl()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/apache/catalina/Realm/getInfo()|",
+      "|java+method:///org/apache/commons/logging/Log/debug(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/jasig/cas/client/tomcat/AuthenticatorDelegate/getServerName()|",
+      "|java+method:///org/apache/catalina/Context/getRealm()|",
+      "|java+method:///org/jasig/cas/client/util/CommonUtils/assertTrue(boolean,java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///org/apache/catalina/LifecycleException/LifecycleException(java.lang.Throwable)|",
+      "|java+method:///org/jasig/cas/client/tomcat/AuthenticatorDelegate/getServiceUrl()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/jasig/cas/client/tomcat/v7/AbstractAuthenticator/addLifecycleListener(org.apache.catalina.LifecycleListener)|",
+      "|java+method:///org/apache/catalina/Realm/getInfo()|",
+      "|java+method:///org/jasig/cas/client/util/CommonUtils/assertNotNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///org/jasig/cas/client/tomcat/v7/AbstractAuthenticator/getName()|",
+      "|java+method:///org/apache/catalina/authenticator/AuthenticatorBase/startInternal()|",
+      "|java+method:///org/jasig/cas/client/tomcat/AuthenticatorDelegate/getCasServerLoginUrl()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/jasig/cas/client/tomcat/AuthenticatorDelegate/setRealm(org.jasig.cas.client.tomcat.CasRealm)|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/jasig/cas/client/tomcat/AuthenticatorDelegate/getServerName()|",
+      "|java+method:///org/apache/catalina/Context/getRealm()|",
+      "|java+method:///org/jasig/cas/client/util/CommonUtils/assertTrue(boolean,java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///org/apache/catalina/LifecycleException/LifecycleException(java.lang.Throwable)|",
+      "|java+method:///org/jasig/cas/client/tomcat/AuthenticatorDelegate/getServiceUrl()|"
+    ],
+    "affectedLib": "org.jasig.cas.client:cas-client-core:3.4.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas.client:cas-client-integration-tomcat-v7:3.2.1",
+    "coordinatesV2": "org.jasig.cas.client:cas-client-integration-tomcat-v7:3.4.0",
+    "caller": "|java+method:///org/jasig/cas/client/tomcat/v7/SingleSignOutValve/invoke(org.apache.catalina.connector.Request,org.apache.catalina.connector.Response)|",
+    "called": "|java+method:///org/jasig/cas/client/session/SingleSignOutHandler/process(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/logging/Log/debug(java.lang.Object)|",
+      "|java+method:///org/jasig/cas/client/session/SingleSignOutHandler/isLogoutRequest(javax.servlet.http.HttpServletRequest)|",
+      "|java+method:///org/apache/catalina/connector/Request/getSessionInternal(boolean)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/jasig/cas/client/session/SingleSignOutHandler/destroySession(javax.servlet.http.HttpServletRequest)|",
+      "|java+method:///org/apache/catalina/connector/Request/getRequestURI()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/apache/catalina/Valve/invoke(org.apache.catalina.connector.Request,org.apache.catalina.connector.Response)|",
+      "|java+method:///org/jasig/cas/client/session/SingleSignOutHandler/recordSession(javax.servlet.http.HttpServletRequest)|",
+      "|java+method:///org/jasig/cas/client/tomcat/v7/SingleSignOutValve/getNext()|",
+      "|java+method:///org/jasig/cas/client/session/SingleSignOutHandler/isTokenRequest(javax.servlet.http.HttpServletRequest)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/apache/catalina/Session/addSessionListener(org.apache.catalina.SessionListener)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/jasig/cas/client/tomcat/v7/SingleSignOutValve/getNext()|",
+      "|java+method:///org/jasig/cas/client/session/SingleSignOutHandler/process(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)|",
+      "|java+method:///org/apache/catalina/Valve/invoke(org.apache.catalina.connector.Request,org.apache.catalina.connector.Response)|"
+    ],
+    "affectedLib": "org.jasig.cas.client:cas-client-core:3.4.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas.client:cas-client-integration-tomcat-v7:3.2.1",
+    "coordinatesV2": "org.jasig.cas.client:cas-client-integration-tomcat-v7:3.4.0",
+    "caller": "|java+method:///org/jasig/cas/client/tomcat/v7/ProxyCallbackValve/startInternal()|",
+    "called": "|java+method:///org/jasig/cas/client/util/ReflectUtils/newInstance(java.lang.String,java.lang.Object%5B%5D)|",
+    "v1Body": [
+      "|java+method:///org/jasig/cas/client/util/CommonUtils/assertNotNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///org/apache/commons/logging/Log/info(java.lang.Object)|",
+      "|java+method:///org/jasig/cas/client/util/CommonUtils/assertTrue(boolean,java.lang.String)|",
+      "|java+method:///org/jasig/cas/client/util/ReflectUtils/newInstance(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+constructor:///org/apache/catalina/LifecycleException/LifecycleException(java.lang.Throwable)|",
+      "|java+method:///java/lang/String/startsWith(java.lang.String)|",
+      "|java+method:///org/apache/catalina/valves/ValveBase/startInternal()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/jasig/cas/client/util/CommonUtils/assertNotNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String)|",
+      "|java+method:///org/jasig/cas/client/util/CommonUtils/assertTrue(boolean,java.lang.String)|",
+      "|java+method:///org/jasig/cas/client/util/ReflectUtils/newInstance(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+constructor:///org/apache/catalina/LifecycleException/LifecycleException(java.lang.Throwable)|",
+      "|java+method:///java/lang/String/startsWith(java.lang.String)|",
+      "|java+method:///org/apache/catalina/valves/ValveBase/startInternal()|"
+    ],
+    "affectedLib": "org.jasig.cas.client:cas-client-core:3.4.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas.client:cas-client-integration-tomcat-v7:3.2.1",
+    "coordinatesV2": "org.jasig.cas.client:cas-client-integration-tomcat-v7:3.4.0",
+    "caller": "|java+constructor:///org/jasig/cas/client/tomcat/v7/SingleSignOutValve/SingleSignOutValve()|",
+    "called": "|java+constructor:///org/jasig/cas/client/session/SingleSignOutHandler/SingleSignOutHandler()|",
+    "v1Body": [
+      "|java+constructor:///org/apache/catalina/valves/ValveBase/ValveBase()|",
+      "|java+constructor:///org/jasig/cas/client/session/SingleSignOutHandler/SingleSignOutHandler()|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/catalina/valves/ValveBase/ValveBase()|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+constructor:///org/jasig/cas/client/session/SingleSignOutHandler/SingleSignOutHandler()|",
+      "|java+method:///java/lang/Object/getClass()|"
+    ],
+    "affectedLib": "org.jasig.cas.client:cas-client-core:3.4.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas.client:cas-client-integration-tomcat-v7:3.2.1",
+    "coordinatesV2": "org.jasig.cas.client:cas-client-integration-tomcat-v7:3.4.0",
+    "caller": "|java+method:///org/jasig/cas/client/tomcat/v7/ProxyCallbackValve/invoke(org.apache.catalina.connector.Request,org.apache.catalina.connector.Response)|",
+    "called": "|java+method:///org/jasig/cas/client/util/CommonUtils/readAndRespondToProxyReceptorRequest(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,org.jasig.cas.client.proxy.ProxyGrantingTicketStorage)|",
+    "v1Body": [
+      "|java+method:///org/jasig/cas/client/tomcat/v7/ProxyCallbackValve/getNext()|",
+      "|java+method:///org/apache/commons/logging/Log/debug(java.lang.Object)|",
+      "|java+method:///org/apache/catalina/connector/Request/getRequestURI()|",
+      "|java+method:///org/jasig/cas/client/util/CommonUtils/readAndRespondToProxyReceptorRequest(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,org.jasig.cas.client.proxy.ProxyGrantingTicketStorage)|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///org/apache/catalina/Valve/invoke(org.apache.catalina.connector.Request,org.apache.catalina.connector.Response)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/catalina/connector/Request/getRequestURI()|",
+      "|java+method:///org/jasig/cas/client/util/CommonUtils/readAndRespondToProxyReceptorRequest(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,org.jasig.cas.client.proxy.ProxyGrantingTicketStorage)|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///org/apache/catalina/Valve/invoke(org.apache.catalina.connector.Request,org.apache.catalina.connector.Response)|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+method:///org/jasig/cas/client/tomcat/v7/ProxyCallbackValve/getNext()|"
+    ],
+    "affectedLib": "org.jasig.cas.client:cas-client-core:3.4.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas.client:cas-client-integration-tomcat-v7:3.2.1",
+    "coordinatesV2": "org.jasig.cas.client:cas-client-integration-tomcat-v7:3.4.0",
+    "caller": "|java+method:///org/jasig/cas/client/tomcat/v7/SingleSignOutValve/startInternal()|",
+    "called": "|java+method:///org/jasig/cas/client/session/SingleSignOutHandler/init()|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/logging/Log/info(java.lang.Object)|",
+      "|java+method:///org/jasig/cas/client/session/SingleSignOutHandler/init()|",
+      "|java+method:///org/apache/catalina/valves/ValveBase/startInternal()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/info(java.lang.String)|",
+      "|java+method:///org/jasig/cas/client/session/SingleSignOutHandler/init()|",
+      "|java+method:///org/apache/catalina/valves/ValveBase/startInternal()|"
+    ],
+    "affectedLib": "org.jasig.cas.client:cas-client-core:3.4.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas.client:cas-client-integration-tomcat-v7:3.2.1",
+    "coordinatesV2": "org.jasig.cas.client:cas-client-integration-tomcat-v7:3.4.0",
+    "caller": "|java+constructor:///org/jasig/cas/client/tomcat/v7/AbstractAuthenticator/AbstractAuthenticator()|",
+    "called": "|java+constructor:///org/jasig/cas/client/tomcat/AuthenticatorDelegate/AuthenticatorDelegate()|",
+    "v1Body": [
+      "|java+constructor:///org/apache/catalina/authenticator/AuthenticatorBase/AuthenticatorBase()|",
+      "|java+constructor:///org/jasig/cas/client/tomcat/AuthenticatorDelegate/AuthenticatorDelegate()|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/catalina/authenticator/AuthenticatorBase/AuthenticatorBase()|",
+      "|java+constructor:///org/jasig/cas/client/tomcat/AuthenticatorDelegate/AuthenticatorDelegate()|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///java/lang/Object/getClass()|"
+    ],
+    "affectedLib": "org.jasig.cas.client:cas-client-integration-tomcat-common:3.4.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas.client:cas-client-integration-tomcat-v7:3.2.1",
+    "coordinatesV2": "org.jasig.cas.client:cas-client-integration-tomcat-v7:3.4.0",
+    "caller": "|java+method:///org/jasig/cas/client/tomcat/v7/AbstractAuthenticator/authenticate(org.apache.catalina.connector.Request,javax.servlet.http.HttpServletResponse,org.apache.catalina.deploy.LoginConfig)|",
+    "called": "|java+method:///org/jasig/cas/client/tomcat/AuthenticatorDelegate/authenticate(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)|",
+    "v1Body": [
+      "|java+method:///org/apache/catalina/connector/Request/getUserPrincipal()|",
+      "|java+method:///org/apache/catalina/connector/Request/getRequest()|",
+      "|java+method:///org/jasig/cas/client/tomcat/AuthenticatorDelegate/authenticate(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)|",
+      "|java+method:///org/apache/catalina/connector/Request/setAuthType(java.lang.String)|",
+      "|java+method:///org/jasig/cas/client/tomcat/v7/AbstractAuthenticator/getAuthenticationMethod()|",
+      "|java+method:///org/apache/catalina/connector/Request/setUserPrincipal(java.security.Principal)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/catalina/connector/Request/getUserPrincipal()|",
+      "|java+method:///org/apache/catalina/connector/Request/getRequest()|",
+      "|java+method:///org/jasig/cas/client/tomcat/AuthenticatorDelegate/authenticate(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)|",
+      "|java+method:///org/jasig/cas/client/tomcat/v7/AbstractAuthenticator/getAuthenticationMethod()|",
+      "|java+method:///org/jasig/cas/client/tomcat/v7/AbstractAuthenticator/register(org.apache.catalina.connector.Request,javax.servlet.http.HttpServletResponse,java.security.Principal,java.lang.String,java.lang.String,java.lang.String)|"
+    ],
+    "affectedLib": "org.jasig.cas.client:cas-client-integration-tomcat-common:3.4.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas.client:cas-client-integration-tomcat-v7:3.2.1",
+    "coordinatesV2": "org.jasig.cas.client:cas-client-integration-tomcat-v7:3.4.0",
+    "caller": "|java+method:///org/jasig/cas/client/tomcat/v7/StaticUriLogoutValve/startInternal()|",
+    "called": "|java+method:///org/jasig/cas/client/tomcat/StaticUriLogoutHandler/init()|",
+    "v1Body": [
+      "|java+method:///org/jasig/cas/client/tomcat/v7/AbstractLogoutValve/startInternal()|",
+      "|java+method:///org/apache/commons/logging/Log/info(java.lang.Object)|",
+      "|java+method:///org/jasig/cas/client/tomcat/StaticUriLogoutHandler/init()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/jasig/cas/client/tomcat/v7/AbstractLogoutValve/startInternal()|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String)|",
+      "|java+method:///org/jasig/cas/client/tomcat/StaticUriLogoutHandler/init()|"
+    ],
+    "affectedLib": "org.jasig.cas.client:cas-client-integration-tomcat-common:3.4.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas.client:cas-client-integration-tomcat-v7:3.2.1",
+    "coordinatesV2": "org.jasig.cas.client:cas-client-integration-tomcat-v7:3.4.0",
+    "caller": "|java+method:///org/jasig/cas/client/tomcat/v7/RegexUriLogoutValve/startInternal()|",
+    "called": "|java+method:///org/jasig/cas/client/tomcat/RegexUriLogoutHandler/init()|",
+    "v1Body": [
+      "|java+method:///org/jasig/cas/client/tomcat/v7/AbstractLogoutValve/startInternal()|",
+      "|java+method:///org/apache/commons/logging/Log/info(java.lang.Object)|",
+      "|java+method:///org/jasig/cas/client/tomcat/RegexUriLogoutHandler/init()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/jasig/cas/client/tomcat/v7/AbstractLogoutValve/startInternal()|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String)|",
+      "|java+method:///org/jasig/cas/client/tomcat/RegexUriLogoutHandler/init()|"
+    ],
+    "affectedLib": "org.jasig.cas.client:cas-client-integration-tomcat-common:3.4.0",
+    "change": "UPDATED"
+  }
+]

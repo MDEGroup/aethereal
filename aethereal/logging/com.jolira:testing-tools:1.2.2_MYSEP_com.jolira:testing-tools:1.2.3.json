@@ -1,0 +1,134 @@
+[
+  {
+    "coordinatesV1": "com.jolira:testing-tools:1.2.3",
+    "coordinatesV2": "com.jolira:testing-tools:1.2.2",
+    "caller": "|java+method:///com/jolira/testing/WebServerEmulator/createServer(int)|",
+    "called": "|java+constructor:///org/mortbay/jetty/Server/Server(int)|",
+    "v1Body": [
+      "|java+constructor:///org/mortbay/jetty/Server/Server(int)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/eclipse/jetty/server/Server/Server(int)|"
+    ],
+    "affectedLib": "org.mortbay.jetty:jetty:6.1.24",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.jolira:testing-tools:1.2.3",
+    "coordinatesV2": "com.jolira:testing-tools:1.2.2",
+    "caller": "|java+method:///com/jolira/testing/SecureWebServerEmulator/createServer(int)|",
+    "called": "|java+method:///org/mortbay/jetty/security/SslSocketConnector/setKeyPassword(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/mortbay/jetty/Server/addConnector(org.mortbay.jetty.Connector)|",
+      "|java+method:///org/mortbay/jetty/security/SslSocketConnector/setTrustPassword(java.lang.String)|",
+      "|java+constructor:///org/mortbay/jetty/security/SslSocketConnector/SslSocketConnector()|",
+      "|java+constructor:///org/mortbay/jetty/Server/Server()|",
+      "|java+method:///org/mortbay/jetty/security/SslSocketConnector/setPort(int)|",
+      "|java+method:///org/mortbay/jetty/security/SslSocketConnector/setKeyPassword(java.lang.String)|",
+      "|java+method:///org/mortbay/jetty/security/SslSocketConnector/setKeystore(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/eclipse/jetty/server/ssl/SslSocketConnector/setKeyPassword(java.lang.String)|",
+      "|java+method:///org/eclipse/jetty/server/Server/addConnector(org.eclipse.jetty.server.Connector)|",
+      "|java+constructor:///org/eclipse/jetty/server/Server/Server()|",
+      "|java+method:///org/eclipse/jetty/server/ssl/SslSocketConnector/setPort(int)|",
+      "|java+method:///org/eclipse/jetty/server/ssl/SslSocketConnector/setTrustPassword(java.lang.String)|",
+      "|java+constructor:///org/eclipse/jetty/server/ssl/SslSocketConnector/SslSocketConnector()|",
+      "|java+method:///org/eclipse/jetty/server/ssl/SslSocketConnector/setKeystore(java.lang.String)|"
+    ],
+    "affectedLib": "org.mortbay.jetty:jetty:6.1.24",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.jolira:testing-tools:1.2.3",
+    "coordinatesV2": "com.jolira:testing-tools:1.2.2",
+    "caller": "|java+method:///com/jolira/testing/WebServerEmulator/start()|",
+    "called": "|java+method:///org/mortbay/jetty/Server/addHandler(org.mortbay.jetty.Handler)|",
+    "v1Body": [
+      "|java+method:///org/mortbay/jetty/Server/start()|",
+      "|java+constructor:///java/lang/IllegalStateException/IllegalStateException()|",
+      "|java+method:///com/jolira/testing/WebServerEmulator/createServer(int)|",
+      "|java+method:///org/mortbay/jetty/Server/addHandler(org.mortbay.jetty.Handler)|",
+      "|java+constructor:///com/jolira/testing/WebServerEmulator$1/WebServerEmulator$1(com.jolira.testing.WebServerEmulator)|",
+      "|java+method:///org/mortbay/jetty/Server/isStarted()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/eclipse/jetty/server/Server/setHandler(org.eclipse.jetty.server.Handler)|",
+      "|java+constructor:///java/lang/IllegalStateException/IllegalStateException()|",
+      "|java+method:///com/jolira/testing/WebServerEmulator/createServer(int)|",
+      "|java+method:///org/eclipse/jetty/server/Server/isStarted()|",
+      "|java+constructor:///com/jolira/testing/WebServerEmulator$1/WebServerEmulator$1(com.jolira.testing.WebServerEmulator)|",
+      "|java+method:///org/eclipse/jetty/server/Server/start()|"
+    ],
+    "affectedLib": "org.mortbay.jetty:jetty:6.1.24",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.jolira:testing-tools:1.2.3",
+    "coordinatesV2": "com.jolira:testing-tools:1.2.2",
+    "caller": "|java+constructor:///com/jolira/testing/WebServerEmulator$1/WebServerEmulator$1(com.jolira.testing.WebServerEmulator)|",
+    "called": "|java+constructor:///org/mortbay/jetty/handler/AbstractHandler/AbstractHandler()|",
+    "v1Body": [
+      "|java+constructor:///org/mortbay/jetty/handler/AbstractHandler/AbstractHandler()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/eclipse/jetty/server/handler/AbstractHandler/AbstractHandler()|"
+    ],
+    "affectedLib": "org.mortbay.jetty:jetty:6.1.24",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.jolira:testing-tools:1.2.2",
+    "coordinatesV2": "com.jolira:testing-tools:1.2.3",
+    "caller": "|java+method:///com/jolira/testing/WebServerEmulator/createServer(int)|",
+    "called": "|java+constructor:///org/eclipse/jetty/server/Server/Server(int)|",
+    "v1Body": [
+      "|java+constructor:///org/mortbay/jetty/Server/Server(int)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/eclipse/jetty/server/Server/Server(int)|"
+    ],
+    "affectedLib": "org.eclipse.jetty:jetty-server:7.1.6.v20100715",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.jolira:testing-tools:1.2.2",
+    "coordinatesV2": "com.jolira:testing-tools:1.2.3",
+    "caller": "|java+method:///com/jolira/testing/SecureWebServerEmulator/createServer(int)|",
+    "called": "|java+method:///org/eclipse/jetty/server/ssl/SslSocketConnector/setTrustPassword(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/mortbay/jetty/Server/addConnector(org.mortbay.jetty.Connector)|",
+      "|java+method:///org/mortbay/jetty/security/SslSocketConnector/setTrustPassword(java.lang.String)|",
+      "|java+constructor:///org/mortbay/jetty/security/SslSocketConnector/SslSocketConnector()|",
+      "|java+constructor:///org/mortbay/jetty/Server/Server()|",
+      "|java+method:///org/mortbay/jetty/security/SslSocketConnector/setPort(int)|",
+      "|java+method:///org/mortbay/jetty/security/SslSocketConnector/setKeyPassword(java.lang.String)|",
+      "|java+method:///org/mortbay/jetty/security/SslSocketConnector/setKeystore(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/eclipse/jetty/server/ssl/SslSocketConnector/setKeyPassword(java.lang.String)|",
+      "|java+method:///org/eclipse/jetty/server/Server/addConnector(org.eclipse.jetty.server.Connector)|",
+      "|java+constructor:///org/eclipse/jetty/server/Server/Server()|",
+      "|java+method:///org/eclipse/jetty/server/ssl/SslSocketConnector/setPort(int)|",
+      "|java+method:///org/eclipse/jetty/server/ssl/SslSocketConnector/setTrustPassword(java.lang.String)|",
+      "|java+constructor:///org/eclipse/jetty/server/ssl/SslSocketConnector/SslSocketConnector()|",
+      "|java+method:///org/eclipse/jetty/server/ssl/SslSocketConnector/setKeystore(java.lang.String)|"
+    ],
+    "affectedLib": "org.eclipse.jetty:jetty-server:7.1.6.v20100715",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.jolira:testing-tools:1.2.2",
+    "coordinatesV2": "com.jolira:testing-tools:1.2.3",
+    "caller": "|java+constructor:///com/jolira/testing/WebServerEmulator$1/WebServerEmulator$1(com.jolira.testing.WebServerEmulator)|",
+    "called": "|java+constructor:///org/eclipse/jetty/server/handler/AbstractHandler/AbstractHandler()|",
+    "v1Body": [
+      "|java+constructor:///org/mortbay/jetty/handler/AbstractHandler/AbstractHandler()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/eclipse/jetty/server/handler/AbstractHandler/AbstractHandler()|"
+    ],
+    "affectedLib": "org.eclipse.jetty:jetty-server:7.1.6.v20100715",
+    "change": "ADDED"
+  }
+]

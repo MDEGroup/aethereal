@@ -1,0 +1,52 @@
+[
+  {
+    "coordinatesV1": "org.codelabor:codelabor-system-web:3.0.3",
+    "coordinatesV2": "org.codelabor:codelabor-system-web:3.0.2",
+    "caller": "|java+method:///org/codelabor/system/web/util/URIPatternMatcherUtils/matchByExtension(java.util.List,java.util.List,java.lang.String)|",
+    "called": "|java+method:///org/apache/commons/lang/StringUtils/isBlank(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/lang/String/toLowerCase()|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/apache/commons/lang/StringUtils/isBlank(java.lang.String)|",
+      "|java+method:///java/lang/Boolean/valueOf(boolean)|",
+      "|java+method:///java/util/List/contains(java.lang.Object)|",
+      "|java+method:///org/codelabor/system/util/FileUtils/getExtension(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/String/toLowerCase()|",
+      "|java+method:///org/apache/commons/lang/StringUtils/isBlank(java.lang.String)|",
+      "|java+method:///org/apache/commons/io/FilenameUtils/getExtension(java.lang.String)|",
+      "|java+method:///java/lang/Boolean/valueOf(boolean)|",
+      "|java+method:///java/util/List/contains(java.lang.Object)|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/apache/commons/io/FilenameUtils/getName(java.lang.String)|"
+    ],
+    "affectedLib": "commons-lang:commons-lang:2.6",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.codelabor:codelabor-system-web:3.0.2",
+    "coordinatesV2": "org.codelabor:codelabor-system-web:3.0.3",
+    "caller": "|java+method:///org/codelabor/system/web/util/URIPatternMatcherUtils/matchByExtension(java.util.List,java.util.List,java.lang.String)|",
+    "called": "|java+method:///org/apache/commons/io/FilenameUtils/getExtension(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/lang/String/toLowerCase()|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/apache/commons/lang/StringUtils/isBlank(java.lang.String)|",
+      "|java+method:///java/lang/Boolean/valueOf(boolean)|",
+      "|java+method:///java/util/List/contains(java.lang.Object)|",
+      "|java+method:///org/codelabor/system/util/FileUtils/getExtension(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/String/toLowerCase()|",
+      "|java+method:///org/apache/commons/lang/StringUtils/isBlank(java.lang.String)|",
+      "|java+method:///org/apache/commons/io/FilenameUtils/getExtension(java.lang.String)|",
+      "|java+method:///java/lang/Boolean/valueOf(boolean)|",
+      "|java+method:///java/util/List/contains(java.lang.Object)|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/apache/commons/io/FilenameUtils/getName(java.lang.String)|"
+    ],
+    "affectedLib": "commons-io:commons-io:2.0.1",
+    "change": "ADDED"
+  }
+]

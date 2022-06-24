@@ -1,0 +1,228 @@
+[
+  {
+    "coordinatesV1": "org.apache.jackrabbit:jackrabbit-text-extractors:1.5.0",
+    "coordinatesV2": "org.apache.jackrabbit:jackrabbit-text-extractors:1.4",
+    "caller": "|java+method:///org/apache/jackrabbit/extractor/MsExcelTextExtractor/extractText(java.io.InputStream,java.lang.String,java.lang.String)|",
+    "called": "|java+method:///org/apache/poi/hssf/usermodel/HSSFCell/getNumericCellValue()|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/lang/String/trim()|",
+      "|java+method:///org/apache/poi/hssf/usermodel/HSSFCell/getNumericCellValue()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+constructor:///java/io/StringReader/StringReader(java.lang.String)|",
+      "|java+method:///java/lang/StringBuffer/toString()|",
+      "|java+method:///java/io/InputStream/close()|",
+      "|java+method:///org/apache/poi/hssf/usermodel/HSSFWorkbook/getNumberOfSheets()|",
+      "|java+constructor:///org/apache/poi/hssf/usermodel/HSSFWorkbook/HSSFWorkbook(org.apache.poi.poifs.filesystem.POIFSFileSystem)|",
+      "|java+method:///java/lang/StringBuffer/append(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuffer/StringBuffer()|",
+      "|java+constructor:///org/apache/poi/poifs/filesystem/POIFSFileSystem/POIFSFileSystem(java.io.InputStream)|",
+      "|java+method:///java/io/CharArrayWriter/write(java.lang.String)|",
+      "|java+method:///java/lang/Double/toString(double)|",
+      "|java+method:///org/apache/poi/hssf/usermodel/HSSFRow/cellIterator()|",
+      "|java+method:///org/apache/poi/hssf/usermodel/HSSFCell/getCellType()|",
+      "|java+constructor:///java/io/CharArrayWriter/CharArrayWriter()|",
+      "|java+method:///java/lang/String/length()|",
+      "|java+constructor:///java/io/CharArrayReader/CharArrayReader(char%5B%5D)|",
+      "|java+method:///org/apache/poi/hssf/usermodel/HSSFCell/getStringCellValue()|",
+      "|java+method:///java/io/CharArrayWriter/toCharArray()|",
+      "|java+method:///org/apache/poi/hssf/usermodel/HSSFSheet/rowIterator()|",
+      "|java+method:///org/apache/poi/hssf/usermodel/HSSFWorkbook/getSheetAt(int)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///java/io/StringReader/StringReader(java.lang.String)|",
+      "|java+method:///org/apache/poi/hssf/extractor/ExcelExtractor/getText()|",
+      "|java+constructor:///org/apache/poi/poifs/filesystem/POIFSFileSystem/POIFSFileSystem(java.io.InputStream)|",
+      "|java+method:///java/io/InputStream/close()|",
+      "|java+constructor:///org/apache/poi/hssf/extractor/ExcelExtractor/ExcelExtractor(org.apache.poi.poifs.filesystem.POIFSFileSystem)|"
+    ],
+    "affectedLib": "poi:poi:2.5.1-final-20040804",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.apache.jackrabbit:jackrabbit-text-extractors:1.5.0",
+    "coordinatesV2": "org.apache.jackrabbit:jackrabbit-text-extractors:1.4",
+    "caller": "|java+method:///org/apache/jackrabbit/extractor/MsPowerPointTextExtractor/extractText(java.io.InputStream,java.lang.String,java.lang.String)|",
+    "called": "|java+constructor:///org/apache/poi/poifs/eventfilesystem/POIFSReader/POIFSReader()|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///org/apache/poi/poifs/eventfilesystem/POIFSReader/POIFSReader()|",
+      "|java+constructor:///java/io/ByteArrayInputStream/ByteArrayInputStream(byte%5B%5D)|",
+      "|java+method:///java/io/InputStream/close()|",
+      "|java+method:///java/io/ByteArrayOutputStream/toByteArray()|",
+      "|java+constructor:///org/apache/jackrabbit/extractor/MsPowerPointTextExtractor$MsPowerPointListener/MsPowerPointTextExtractor$MsPowerPointListener(org.apache.jackrabbit.extractor.MsPowerPointTextExtractor,java.io.OutputStream)|",
+      "|java+constructor:///java/io/ByteArrayOutputStream/ByteArrayOutputStream()|",
+      "|java+constructor:///java/io/StringReader/StringReader(java.lang.String)|",
+      "|java+method:///org/apache/poi/poifs/eventfilesystem/POIFSReader/registerListener(org.apache.poi.poifs.eventfilesystem.POIFSReaderListener)|",
+      "|java+constructor:///java/io/InputStreamReader/InputStreamReader(java.io.InputStream)|",
+      "|java+method:///org/apache/poi/poifs/eventfilesystem/POIFSReader/read(java.io.InputStream)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///java/io/StringReader/StringReader(java.lang.String)|",
+      "|java+constructor:///org/apache/poi/hslf/extractor/PowerPointExtractor/PowerPointExtractor(java.io.InputStream)|",
+      "|java+method:///org/apache/poi/hslf/extractor/PowerPointExtractor/getText(boolean,boolean)|",
+      "|java+method:///java/io/InputStream/close()|"
+    ],
+    "affectedLib": "poi:poi:2.5.1-final-20040804",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.apache.jackrabbit:jackrabbit-text-extractors:1.5.0",
+    "coordinatesV2": "org.apache.jackrabbit:jackrabbit-text-extractors:1.4",
+    "caller": "|java+method:///org/apache/jackrabbit/extractor/MsWordTextExtractor/extractText(java.io.InputStream,java.lang.String,java.lang.String)|",
+    "called": "|java+constructor:///org/textmining/text/extraction/WordExtractor/WordExtractor()|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///java/io/StringReader/StringReader(java.lang.String)|",
+      "|java+method:///org/textmining/text/extraction/WordExtractor/extractText(java.io.InputStream)|",
+      "|java+method:///java/io/InputStream/close()|",
+      "|java+constructor:///org/textmining/text/extraction/WordExtractor/WordExtractor()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/apache/poi/hwpf/extractor/WordExtractor/getText()|",
+      "|java+constructor:///java/io/StringReader/StringReader(java.lang.String)|",
+      "|java+method:///java/io/InputStream/close()|",
+      "|java+constructor:///org/apache/poi/hwpf/extractor/WordExtractor/WordExtractor(java.io.InputStream)|"
+    ],
+    "affectedLib": "org.textmining:tm-extractors:0.4",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.apache.jackrabbit:jackrabbit-text-extractors:1.5.0",
+    "coordinatesV2": "org.apache.jackrabbit:jackrabbit-text-extractors:1.4",
+    "caller": "|java+method:///org/apache/jackrabbit/extractor/MsExcelTextExtractor/extractText(java.io.InputStream,java.lang.String,java.lang.String)|",
+    "called": "|java+constructor:///org/apache/poi/poifs/filesystem/POIFSFileSystem/POIFSFileSystem(java.io.InputStream)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/lang/String/trim()|",
+      "|java+method:///org/apache/poi/hssf/usermodel/HSSFCell/getNumericCellValue()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+constructor:///java/io/StringReader/StringReader(java.lang.String)|",
+      "|java+method:///java/lang/StringBuffer/toString()|",
+      "|java+method:///java/io/InputStream/close()|",
+      "|java+method:///org/apache/poi/hssf/usermodel/HSSFWorkbook/getNumberOfSheets()|",
+      "|java+constructor:///org/apache/poi/hssf/usermodel/HSSFWorkbook/HSSFWorkbook(org.apache.poi.poifs.filesystem.POIFSFileSystem)|",
+      "|java+method:///java/lang/StringBuffer/append(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuffer/StringBuffer()|",
+      "|java+constructor:///org/apache/poi/poifs/filesystem/POIFSFileSystem/POIFSFileSystem(java.io.InputStream)|",
+      "|java+method:///java/io/CharArrayWriter/write(java.lang.String)|",
+      "|java+method:///java/lang/Double/toString(double)|",
+      "|java+method:///org/apache/poi/hssf/usermodel/HSSFRow/cellIterator()|",
+      "|java+method:///org/apache/poi/hssf/usermodel/HSSFCell/getCellType()|",
+      "|java+constructor:///java/io/CharArrayWriter/CharArrayWriter()|",
+      "|java+method:///java/lang/String/length()|",
+      "|java+constructor:///java/io/CharArrayReader/CharArrayReader(char%5B%5D)|",
+      "|java+method:///org/apache/poi/hssf/usermodel/HSSFCell/getStringCellValue()|",
+      "|java+method:///java/io/CharArrayWriter/toCharArray()|",
+      "|java+method:///org/apache/poi/hssf/usermodel/HSSFSheet/rowIterator()|",
+      "|java+method:///org/apache/poi/hssf/usermodel/HSSFWorkbook/getSheetAt(int)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///java/io/StringReader/StringReader(java.lang.String)|",
+      "|java+method:///org/apache/poi/hssf/extractor/ExcelExtractor/getText()|",
+      "|java+constructor:///org/apache/poi/poifs/filesystem/POIFSFileSystem/POIFSFileSystem(java.io.InputStream)|",
+      "|java+method:///java/io/InputStream/close()|",
+      "|java+constructor:///org/apache/poi/hssf/extractor/ExcelExtractor/ExcelExtractor(org.apache.poi.poifs.filesystem.POIFSFileSystem)|"
+    ],
+    "affectedLib": "org.textmining:tm-extractors:0.4",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.apache.jackrabbit:jackrabbit-text-extractors:1.4",
+    "coordinatesV2": "org.apache.jackrabbit:jackrabbit-text-extractors:1.5.0",
+    "caller": "|java+method:///org/apache/jackrabbit/extractor/MsWordTextExtractor/extractText(java.io.InputStream,java.lang.String,java.lang.String)|",
+    "called": "|java+constructor:///org/apache/poi/hwpf/extractor/WordExtractor/WordExtractor(java.io.InputStream)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///java/io/StringReader/StringReader(java.lang.String)|",
+      "|java+method:///org/textmining/text/extraction/WordExtractor/extractText(java.io.InputStream)|",
+      "|java+method:///java/io/InputStream/close()|",
+      "|java+constructor:///org/textmining/text/extraction/WordExtractor/WordExtractor()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/apache/poi/hwpf/extractor/WordExtractor/getText()|",
+      "|java+constructor:///java/io/StringReader/StringReader(java.lang.String)|",
+      "|java+method:///java/io/InputStream/close()|",
+      "|java+constructor:///org/apache/poi/hwpf/extractor/WordExtractor/WordExtractor(java.io.InputStream)|"
+    ],
+    "affectedLib": "org.apache.poi:poi-scratchpad:3.0.2-FINAL",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.jackrabbit:jackrabbit-text-extractors:1.4",
+    "coordinatesV2": "org.apache.jackrabbit:jackrabbit-text-extractors:1.5.0",
+    "caller": "|java+method:///org/apache/jackrabbit/extractor/MsPowerPointTextExtractor/extractText(java.io.InputStream,java.lang.String,java.lang.String)|",
+    "called": "|java+constructor:///org/apache/poi/hslf/extractor/PowerPointExtractor/PowerPointExtractor(java.io.InputStream)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///org/apache/poi/poifs/eventfilesystem/POIFSReader/POIFSReader()|",
+      "|java+constructor:///java/io/ByteArrayInputStream/ByteArrayInputStream(byte%5B%5D)|",
+      "|java+method:///java/io/InputStream/close()|",
+      "|java+method:///java/io/ByteArrayOutputStream/toByteArray()|",
+      "|java+constructor:///org/apache/jackrabbit/extractor/MsPowerPointTextExtractor$MsPowerPointListener/MsPowerPointTextExtractor$MsPowerPointListener(org.apache.jackrabbit.extractor.MsPowerPointTextExtractor,java.io.OutputStream)|",
+      "|java+constructor:///java/io/ByteArrayOutputStream/ByteArrayOutputStream()|",
+      "|java+constructor:///java/io/StringReader/StringReader(java.lang.String)|",
+      "|java+method:///org/apache/poi/poifs/eventfilesystem/POIFSReader/registerListener(org.apache.poi.poifs.eventfilesystem.POIFSReaderListener)|",
+      "|java+constructor:///java/io/InputStreamReader/InputStreamReader(java.io.InputStream)|",
+      "|java+method:///org/apache/poi/poifs/eventfilesystem/POIFSReader/read(java.io.InputStream)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///java/io/StringReader/StringReader(java.lang.String)|",
+      "|java+constructor:///org/apache/poi/hslf/extractor/PowerPointExtractor/PowerPointExtractor(java.io.InputStream)|",
+      "|java+method:///org/apache/poi/hslf/extractor/PowerPointExtractor/getText(boolean,boolean)|",
+      "|java+method:///java/io/InputStream/close()|"
+    ],
+    "affectedLib": "org.apache.poi:poi-scratchpad:3.0.2-FINAL",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.jackrabbit:jackrabbit-text-extractors:1.4",
+    "coordinatesV2": "org.apache.jackrabbit:jackrabbit-text-extractors:1.5.0",
+    "caller": "|java+method:///org/apache/jackrabbit/extractor/MsExcelTextExtractor/extractText(java.io.InputStream,java.lang.String,java.lang.String)|",
+    "called": "|java+constructor:///org/apache/poi/hssf/extractor/ExcelExtractor/ExcelExtractor(org.apache.poi.poifs.filesystem.POIFSFileSystem)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/lang/String/trim()|",
+      "|java+method:///org/apache/poi/hssf/usermodel/HSSFCell/getNumericCellValue()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+constructor:///java/io/StringReader/StringReader(java.lang.String)|",
+      "|java+method:///java/lang/StringBuffer/toString()|",
+      "|java+method:///java/io/InputStream/close()|",
+      "|java+method:///org/apache/poi/hssf/usermodel/HSSFWorkbook/getNumberOfSheets()|",
+      "|java+constructor:///org/apache/poi/hssf/usermodel/HSSFWorkbook/HSSFWorkbook(org.apache.poi.poifs.filesystem.POIFSFileSystem)|",
+      "|java+method:///java/lang/StringBuffer/append(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuffer/StringBuffer()|",
+      "|java+constructor:///org/apache/poi/poifs/filesystem/POIFSFileSystem/POIFSFileSystem(java.io.InputStream)|",
+      "|java+method:///java/io/CharArrayWriter/write(java.lang.String)|",
+      "|java+method:///java/lang/Double/toString(double)|",
+      "|java+method:///org/apache/poi/hssf/usermodel/HSSFRow/cellIterator()|",
+      "|java+method:///org/apache/poi/hssf/usermodel/HSSFCell/getCellType()|",
+      "|java+constructor:///java/io/CharArrayWriter/CharArrayWriter()|",
+      "|java+method:///java/lang/String/length()|",
+      "|java+constructor:///java/io/CharArrayReader/CharArrayReader(char%5B%5D)|",
+      "|java+method:///org/apache/poi/hssf/usermodel/HSSFCell/getStringCellValue()|",
+      "|java+method:///java/io/CharArrayWriter/toCharArray()|",
+      "|java+method:///org/apache/poi/hssf/usermodel/HSSFSheet/rowIterator()|",
+      "|java+method:///org/apache/poi/hssf/usermodel/HSSFWorkbook/getSheetAt(int)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///java/io/StringReader/StringReader(java.lang.String)|",
+      "|java+method:///org/apache/poi/hssf/extractor/ExcelExtractor/getText()|",
+      "|java+constructor:///org/apache/poi/poifs/filesystem/POIFSFileSystem/POIFSFileSystem(java.io.InputStream)|",
+      "|java+method:///java/io/InputStream/close()|",
+      "|java+constructor:///org/apache/poi/hssf/extractor/ExcelExtractor/ExcelExtractor(org.apache.poi.poifs.filesystem.POIFSFileSystem)|"
+    ],
+    "affectedLib": "org.apache.poi:poi:3.0.2-FINAL",
+    "change": "ADDED"
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "coordinatesV1": "org.apache.directory.server:ldap-client-test:2.0.0-M10",
+    "coordinatesV2": "org.apache.directory.server:ldap-client-test:2.0.0-M8",
+    "caller": "|java+method:///org/apache/directory/shared/client/api/LdapApiIntegrationUtils/getPooledAdminConnection(org.apache.directory.server.ldap.LdapServer)|",
+    "called": "|java+method:///org/apache/directory/ldap/client/api/LdapConnectionPool/getConnection()|",
+    "v1Body": [
+      "|java+method:///org/apache/directory/server/core/api/DirectoryService/getSchemaManager()|",
+      "|java+method:///org/apache/directory/server/ldap/LdapServer/getDirectoryService()|",
+      "|java+method:///org/apache/directory/ldap/client/api/LdapConnectionPool/getConnection()|",
+      "|java+constructor:///org/apache/directory/shared/ldap/codec/api/SchemaBinaryAttributeDetector/SchemaBinaryAttributeDetector(org.apache.directory.shared.ldap.model.schema.SchemaManager)|",
+      "|java+method:///org/apache/directory/shared/client/api/LdapApiIntegrationUtils/getAdminPool(org.apache.directory.server.ldap.LdapServer)|",
+      "|java+method:///org/apache/directory/ldap/client/api/LdapConnection/setBinaryAttributeDetector(org.apache.directory.shared.ldap.codec.api.BinaryAttributeDetector)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/directory/server/core/api/DirectoryService/getSchemaManager()|",
+      "|java+method:///org/apache/directory/server/ldap/LdapServer/getDirectoryService()|",
+      "|java+method:///org/apache/directory/shared/client/api/LdapApiIntegrationUtils/getAdminPool(org.apache.directory.server.ldap.LdapServer)|",
+      "|java+method:///org/apache/directory/ldap/client/api/LdapConnection/setBinaryAttributeDetector(org.apache.directory.api.ldap.codec.api.BinaryAttributeDetector)|",
+      "|java+constructor:///org/apache/directory/api/ldap/codec/api/SchemaBinaryAttributeDetector/SchemaBinaryAttributeDetector(org.apache.directory.api.ldap.model.schema.SchemaManager)|",
+      "|java+method:///org/apache/directory/ldap/client/api/LdapConnectionPool/getConnection()|"
+    ],
+    "affectedLib": "org.apache.directory.shared:shared-ldap-client-api:1.0.0-M13",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.apache.directory.server:ldap-client-test:2.0.0-M8",
+    "coordinatesV2": "org.apache.directory.server:ldap-client-test:2.0.0-M10",
+    "caller": "|java+method:///org/apache/directory/shared/client/api/LdapApiIntegrationUtils/getPooledAdminConnection(org.apache.directory.server.ldap.LdapServer)|",
+    "called": "|java+method:///org/apache/directory/ldap/client/api/LdapConnectionPool/getConnection()|",
+    "v1Body": [
+      "|java+method:///org/apache/directory/server/core/api/DirectoryService/getSchemaManager()|",
+      "|java+method:///org/apache/directory/server/ldap/LdapServer/getDirectoryService()|",
+      "|java+method:///org/apache/directory/ldap/client/api/LdapConnectionPool/getConnection()|",
+      "|java+constructor:///org/apache/directory/shared/ldap/codec/api/SchemaBinaryAttributeDetector/SchemaBinaryAttributeDetector(org.apache.directory.shared.ldap.model.schema.SchemaManager)|",
+      "|java+method:///org/apache/directory/shared/client/api/LdapApiIntegrationUtils/getAdminPool(org.apache.directory.server.ldap.LdapServer)|",
+      "|java+method:///org/apache/directory/ldap/client/api/LdapConnection/setBinaryAttributeDetector(org.apache.directory.shared.ldap.codec.api.BinaryAttributeDetector)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/directory/server/core/api/DirectoryService/getSchemaManager()|",
+      "|java+method:///org/apache/directory/server/ldap/LdapServer/getDirectoryService()|",
+      "|java+method:///org/apache/directory/shared/client/api/LdapApiIntegrationUtils/getAdminPool(org.apache.directory.server.ldap.LdapServer)|",
+      "|java+method:///org/apache/directory/ldap/client/api/LdapConnection/setBinaryAttributeDetector(org.apache.directory.api.ldap.codec.api.BinaryAttributeDetector)|",
+      "|java+constructor:///org/apache/directory/api/ldap/codec/api/SchemaBinaryAttributeDetector/SchemaBinaryAttributeDetector(org.apache.directory.api.ldap.model.schema.SchemaManager)|",
+      "|java+method:///org/apache/directory/ldap/client/api/LdapConnectionPool/getConnection()|"
+    ],
+    "affectedLib": "org.apache.directory.api:api-ldap-client-api:1.0.0-M15",
+    "change": "ADDED"
+  }
+]

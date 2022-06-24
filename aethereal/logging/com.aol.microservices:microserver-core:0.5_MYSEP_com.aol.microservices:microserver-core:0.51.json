@@ -1,0 +1,66 @@
+[
+  {
+    "coordinatesV1": "com.aol.microservices:microserver-core:0.51",
+    "coordinatesV2": "com.aol.microservices:microserver-core:0.5",
+    "caller": "|java+method:///com/aol/micro/server/spring/datasource/DataSourceBuilder/getDataSource()|",
+    "called": "|java+method:///org/apache/commons/dbcp/BasicDataSource/setDriverClassName(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///com/aol/micro/server/spring/datasource/JdbcConfig/getUsername()|",
+      "|java+method:///com/aol/micro/server/spring/datasource/DataSourceBuilder/retrySetup(org.apache.commons.dbcp.BasicDataSource,int)|",
+      "|java+method:///com/aol/micro/server/spring/datasource/JdbcConfig/getDriverClassName()|",
+      "|java+method:///org/apache/commons/dbcp/BasicDataSource/setUsername(java.lang.String)|",
+      "|java+constructor:///org/apache/commons/dbcp/BasicDataSource/BasicDataSource()|",
+      "|java+method:///com/aol/micro/server/spring/datasource/JdbcConfig/getUrl()|",
+      "|java+method:///com/aol/micro/server/spring/datasource/JdbcConfig/getPassword()|",
+      "|java+method:///org/apache/commons/dbcp/BasicDataSource/setUrl(java.lang.String)|",
+      "|java+method:///org/apache/commons/dbcp/BasicDataSource/setPassword(java.lang.String)|",
+      "|java+method:///org/apache/commons/dbcp/BasicDataSource/setDriverClassName(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/aol/micro/server/spring/datasource/JdbcConfig/getUsername()|",
+      "|java+method:///com/aol/micro/server/spring/datasource/DataSourceBuilder/retrySetup(org.apache.commons.dbcp2.BasicDataSource,int)|",
+      "|java+method:///com/aol/micro/server/spring/datasource/JdbcConfig/getDriverClassName()|",
+      "|java+method:///org/apache/commons/dbcp2/BasicDataSource/setUsername(java.lang.String)|",
+      "|java+constructor:///org/apache/commons/dbcp2/BasicDataSource/BasicDataSource()|",
+      "|java+method:///com/aol/micro/server/spring/datasource/JdbcConfig/getUrl()|",
+      "|java+method:///com/aol/micro/server/spring/datasource/JdbcConfig/getPassword()|",
+      "|java+method:///org/apache/commons/dbcp2/BasicDataSource/setUrl(java.lang.String)|",
+      "|java+method:///org/apache/commons/dbcp2/BasicDataSource/setDriverClassName(java.lang.String)|",
+      "|java+method:///org/apache/commons/dbcp2/BasicDataSource/setPassword(java.lang.String)|"
+    ],
+    "affectedLib": "commons-dbcp:commons-dbcp:1.4",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.aol.microservices:microserver-core:0.5",
+    "coordinatesV2": "com.aol.microservices:microserver-core:0.51",
+    "caller": "|java+method:///com/aol/micro/server/spring/datasource/DataSourceBuilder/getDataSource()|",
+    "called": "|java+constructor:///org/apache/commons/dbcp2/BasicDataSource/BasicDataSource()|",
+    "v1Body": [
+      "|java+method:///com/aol/micro/server/spring/datasource/JdbcConfig/getUsername()|",
+      "|java+method:///com/aol/micro/server/spring/datasource/DataSourceBuilder/retrySetup(org.apache.commons.dbcp.BasicDataSource,int)|",
+      "|java+method:///com/aol/micro/server/spring/datasource/JdbcConfig/getDriverClassName()|",
+      "|java+method:///org/apache/commons/dbcp/BasicDataSource/setUsername(java.lang.String)|",
+      "|java+constructor:///org/apache/commons/dbcp/BasicDataSource/BasicDataSource()|",
+      "|java+method:///com/aol/micro/server/spring/datasource/JdbcConfig/getUrl()|",
+      "|java+method:///com/aol/micro/server/spring/datasource/JdbcConfig/getPassword()|",
+      "|java+method:///org/apache/commons/dbcp/BasicDataSource/setUrl(java.lang.String)|",
+      "|java+method:///org/apache/commons/dbcp/BasicDataSource/setPassword(java.lang.String)|",
+      "|java+method:///org/apache/commons/dbcp/BasicDataSource/setDriverClassName(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/aol/micro/server/spring/datasource/JdbcConfig/getUsername()|",
+      "|java+method:///com/aol/micro/server/spring/datasource/DataSourceBuilder/retrySetup(org.apache.commons.dbcp2.BasicDataSource,int)|",
+      "|java+method:///com/aol/micro/server/spring/datasource/JdbcConfig/getDriverClassName()|",
+      "|java+method:///org/apache/commons/dbcp2/BasicDataSource/setUsername(java.lang.String)|",
+      "|java+constructor:///org/apache/commons/dbcp2/BasicDataSource/BasicDataSource()|",
+      "|java+method:///com/aol/micro/server/spring/datasource/JdbcConfig/getUrl()|",
+      "|java+method:///com/aol/micro/server/spring/datasource/JdbcConfig/getPassword()|",
+      "|java+method:///org/apache/commons/dbcp2/BasicDataSource/setUrl(java.lang.String)|",
+      "|java+method:///org/apache/commons/dbcp2/BasicDataSource/setDriverClassName(java.lang.String)|",
+      "|java+method:///org/apache/commons/dbcp2/BasicDataSource/setPassword(java.lang.String)|"
+    ],
+    "affectedLib": "org.apache.commons:commons-dbcp2:2.1",
+    "change": "ADDED"
+  }
+]

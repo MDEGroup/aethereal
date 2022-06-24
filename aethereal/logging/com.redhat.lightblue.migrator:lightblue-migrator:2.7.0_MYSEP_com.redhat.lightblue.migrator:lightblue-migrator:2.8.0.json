@@ -1,0 +1,98 @@
+[
+  {
+    "coordinatesV1": "com.redhat.lightblue.migrator:lightblue-migrator:2.7.0",
+    "coordinatesV2": "com.redhat.lightblue.migrator:lightblue-migrator:2.8.0",
+    "caller": "|java+method:///com/redhat/lightblue/migrator/Utils/compareDocs(com.fasterxml.jackson.databind.JsonNode,com.fasterxml.jackson.databind.JsonNode,java.util.List)|",
+    "called": "|java+constructor:///com/redhat/jiff/JsonDiff/JsonDiff()|",
+    "v1Body": [
+      "|java+method:///com/redhat/lightblue/migrator/Utils/reallyDifferent(java.lang.Object,java.lang.Object)|",
+      "|java+method:///com/redhat/lightblue/migrator/Utils/isExcluded(java.util.List,java.lang.String)|",
+      "|java+method:///com/fasterxml/jackson/databind/JsonNode/toString()|",
+      "|java+method:///com/redhat/lightblue/migrator/Utils/toPath(java.lang.String)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/skyscreamer/jsonassert/JSONCompare/compareJSON(java.lang.String,java.lang.String,org.skyscreamer.jsonassert.JSONCompareMode)|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+constructor:///com/redhat/lightblue/migrator/Inconsistency/Inconsistency(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///org/skyscreamer/jsonassert/FieldComparisonFailure/getActual()|",
+      "|java+method:///org/skyscreamer/jsonassert/JSONCompareResult/getFieldFailures()|",
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///org/skyscreamer/jsonassert/FieldComparisonFailure/getField()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/skyscreamer/jsonassert/FieldComparisonFailure/getExpected()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///com/redhat/jiff/JsonDiff/setOption(com.redhat.jiff.JsonDiff$Option)|",
+      "|java+method:///com/redhat/jiff/JsonDelta/getNode2()|",
+      "|java+method:///com/redhat/jiff/JsonDiff/computeDiff(com.fasterxml.jackson.databind.JsonNode,com.fasterxml.jackson.databind.JsonNode)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///com/redhat/jiff/JsonDelta/getField()|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/io/PrintStream/println(java.lang.String)|",
+      "|java+method:///com/redhat/lightblue/migrator/Utils/isExcluded(java.util.List,java.lang.String)|",
+      "|java+method:///com/redhat/jiff/JsonDelta/getNode1()|",
+      "|java+method:///com/redhat/lightblue/migrator/Utils/reallyDifferent(com.fasterxml.jackson.databind.JsonNode,com.fasterxml.jackson.databind.JsonNode)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+constructor:///com/redhat/jiff/JsonDiff/JsonDiff()|",
+      "|java+constructor:///com/redhat/lightblue/migrator/Inconsistency/Inconsistency(java.lang.String,java.lang.Object,java.lang.Object)|"
+    ],
+    "affectedLib": "com.redhat.lightblue.migrator:jiff:2.8.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.redhat.lightblue.migrator:lightblue-migrator:2.7.0",
+    "coordinatesV2": "com.redhat.lightblue.migrator:lightblue-migrator:2.8.0",
+    "caller": "|java+method:///com/redhat/lightblue/migrator/Controller/getLightblueClient()|",
+    "called": "|java+constructor:///com/redhat/lightblue/client/http/LightblueHttpClient/LightblueHttpClient(java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///com/redhat/lightblue/client/hystrix/LightblueHystrixClient/LightblueHystrixClient(com.redhat.lightblue.client.LightblueClient,java.lang.String,java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///com/redhat/lightblue/migrator/MainConfiguration/getClientConfig()|",
+      "|java+constructor:///com/redhat/lightblue/client/http/LightblueHttpClient/LightblueHttpClient(java.lang.String)|",
+      "|java+constructor:///com/redhat/lightblue/client/http/LightblueHttpClient/LightblueHttpClient()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///com/redhat/lightblue/migrator/MainConfiguration/getClientConfig()|",
+      "|java+constructor:///com/redhat/lightblue/client/http/LightblueHttpClient/LightblueHttpClient(java.lang.String)|",
+      "|java+constructor:///com/redhat/lightblue/client/http/LightblueHttpClient/LightblueHttpClient()|"
+    ],
+    "affectedLib": "com.redhat.lightblue.client:lightblue-client-http:1.9.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.redhat.lightblue.migrator:lightblue-migrator:2.7.0",
+    "coordinatesV2": "com.redhat.lightblue.migrator:lightblue-migrator:2.8.0",
+    "caller": "|java+method:///com/redhat/lightblue/migrator/Utils/getLightblueClient(java.lang.String)|",
+    "called": "|java+constructor:///com/redhat/lightblue/client/http/LightblueHttpClient/LightblueHttpClient(com.redhat.lightblue.client.LightblueClientConfiguration)|",
+    "v1Body": [
+      "|java+constructor:///com/redhat/lightblue/client/hystrix/LightblueHystrixClient/LightblueHystrixClient(com.redhat.lightblue.client.LightblueClient,java.lang.String,java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///java/lang/Throwable/addSuppressed(java.lang.Throwable)|",
+      "|java+constructor:///java/io/FileInputStream/FileInputStream(java.lang.String)|",
+      "|java+method:///com/redhat/lightblue/client/PropertiesLightblueClientConfiguration/fromInputStream(java.io.InputStream)|",
+      "|java+method:///java/io/InputStream/close()|",
+      "|java+constructor:///com/redhat/lightblue/client/http/LightblueHttpClient/LightblueHttpClient(com.redhat.lightblue.client.LightblueClientConfiguration)|",
+      "|java+constructor:///com/redhat/lightblue/client/http/LightblueHttpClient/LightblueHttpClient()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///java/lang/Throwable/addSuppressed(java.lang.Throwable)|",
+      "|java+constructor:///java/io/FileInputStream/FileInputStream(java.lang.String)|",
+      "|java+method:///com/redhat/lightblue/client/PropertiesLightblueClientConfiguration/fromInputStream(java.io.InputStream)|",
+      "|java+method:///java/io/InputStream/close()|",
+      "|java+constructor:///com/redhat/lightblue/client/http/LightblueHttpClient/LightblueHttpClient(com.redhat.lightblue.client.LightblueClientConfiguration)|",
+      "|java+constructor:///com/redhat/lightblue/client/http/LightblueHttpClient/LightblueHttpClient()|"
+    ],
+    "affectedLib": "com.redhat.lightblue.client:lightblue-client-http:1.9.0",
+    "change": "UPDATED"
+  }
+]

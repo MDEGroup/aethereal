@@ -1,0 +1,58 @@
+[
+  {
+    "coordinatesV1": "org.zanata:zanata-maven-plugin:2.3.0",
+    "coordinatesV2": "org.zanata:zanata-maven-plugin:3.4.1",
+    "caller": "|java+method:///org/zanata/maven/AbstractPushMojo/getFileTypes()|",
+    "called": "|java+method:///com/google/common/collect/ImmutableList/copyOf(java.lang.Object%5B%5D)|",
+    "v1Body": [
+      "|java+method:///java/util/Arrays/asList(java.lang.Object%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/common/collect/ImmutableList/copyOf(java.lang.Object%5B%5D)|"
+    ],
+    "affectedLib": "com.google.guava:guava:13.0.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.zanata:zanata-maven-plugin:2.3.0",
+    "coordinatesV2": "org.zanata:zanata-maven-plugin:3.4.1",
+    "caller": "|java+method:///org/zanata/maven/AbstractPushPullMojo/getAllModules()|",
+    "called": "|java+method:///com/google/common/collect/ImmutableSet$Builder/build()|",
+    "v1Body": [
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/zanata/maven/AbstractPushPullMojo/toModuleID(org.apache.maven.project.MavenProject)|",
+      "|java+constructor:///java/util/LinkedHashSet/LinkedHashSet()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///java/util/Set/add(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///com/google/common/collect/ImmutableSet/builder()|",
+      "|java+method:///org/zanata/maven/AbstractPushPullMojo/toModuleID(org.apache.maven.project.MavenProject)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///com/google/common/collect/ImmutableSet$Builder/build()|",
+      "|java+method:///com/google/common/collect/ImmutableSet$Builder/add(java.lang.Object)|"
+    ],
+    "affectedLib": "com.google.guava:guava:13.0.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.zanata:zanata-maven-plugin:2.3.0",
+    "coordinatesV2": "org.zanata:zanata-maven-plugin:3.4.1",
+    "caller": "|java+constructor:///org/zanata/maven/ConfigurableProjectMojo/ConfigurableProjectMojo()|",
+    "called": "|java+method:///com/google/common/base/Splitter/trimResults()|",
+    "v1Body": [
+      "|java+constructor:///org/zanata/maven/ConfigurableMojo/ConfigurableMojo()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/common/base/Splitter/trimResults()|",
+      "|java+constructor:///org/zanata/maven/ConfigurableMojo/ConfigurableMojo()|",
+      "|java+method:///com/google/common/base/Splitter/on(java.lang.String)|",
+      "|java+method:///com/google/common/base/Splitter/omitEmptyStrings()|"
+    ],
+    "affectedLib": "com.google.guava:guava:13.0.1",
+    "change": "ADDED"
+  }
+]

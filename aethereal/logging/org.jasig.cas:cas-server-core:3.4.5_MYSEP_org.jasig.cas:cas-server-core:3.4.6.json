@@ -1,0 +1,32 @@
+[
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-core:3.4.5",
+    "coordinatesV2": "org.jasig.cas:cas-server-core:3.4.6",
+    "caller": "|java+method:///org/jasig/cas/audit/spi/TicketOrCredentialPrincipalResolver/resolveFromInternal(org.aspectj.lang.JoinPoint)|",
+    "called": "|java+method:///org/springframework/security/core/context/SecurityContextHolder/getContext()|",
+    "v1Body": [
+      "|java+method:///org/jasig/cas/ticket/TicketGrantingTicket/getAuthentication()|",
+      "|java+method:///java/lang/Object/toString()|",
+      "|java+method:///org/jasig/cas/ticket/registry/TicketRegistry/getTicket(java.lang.String)|",
+      "|java+method:///org/jasig/cas/ticket/ServiceTicket/getGrantingTicket()|",
+      "|java+method:///org/aspectj/lang/JoinPoint/getArgs()|",
+      "|java+method:///org/jasig/cas/authentication/Authentication/getPrincipal()|",
+      "|java+method:///org/jasig/cas/authentication/principal/Principal/getId()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/springframework/security/core/context/SecurityContext/getAuthentication()|",
+      "|java+method:///org/springframework/security/core/Authentication/getPrincipal()|",
+      "|java+method:///org/jasig/cas/ticket/TicketGrantingTicket/getAuthentication()|",
+      "|java+method:///org/springframework/security/core/context/SecurityContextHolder/getContext()|",
+      "|java+method:///org/jasig/cas/ticket/registry/TicketRegistry/getTicket(java.lang.String)|",
+      "|java+method:///java/lang/Object/toString()|",
+      "|java+method:///org/springframework/security/core/userdetails/User/getUsername()|",
+      "|java+method:///org/jasig/cas/ticket/ServiceTicket/getGrantingTicket()|",
+      "|java+method:///org/aspectj/lang/JoinPoint/getArgs()|",
+      "|java+method:///org/jasig/cas/authentication/Authentication/getPrincipal()|",
+      "|java+method:///org/jasig/cas/authentication/principal/Principal/getId()|"
+    ],
+    "affectedLib": "org.springframework.security:spring-security-core:3.0.5.RELEASE",
+    "change": "ADDED"
+  }
+]

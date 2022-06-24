@@ -1,0 +1,184 @@
+[
+  {
+    "coordinatesV1": "org.sonatype.nexus:nexus-security:3.0.0-b2015110601",
+    "coordinatesV2": "org.sonatype.nexus:nexus-security:3.0.0-b2015091801",
+    "caller": "|java+method:///org/sonatype/nexus/security/PasswordHelper/encrypt(java.lang.String,java.lang.String)|",
+    "called": "|java+method:///org/sonatype/sisu/goodies/crypto/maven/MavenCipher/encrypt(java.lang.String,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/sonatype/sisu/goodies/crypto/maven/MavenCipher/isPasswordCipher(java.lang.String)|",
+      "|java+method:///org/sonatype/sisu/goodies/crypto/maven/MavenCipher/encrypt(java.lang.String,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/sonatype/nexus/crypto/maven/MavenCipher/isPasswordCipher(java.lang.String)|",
+      "|java+method:///org/sonatype/nexus/crypto/maven/MavenCipher/encrypt(java.lang.String,java.lang.String)|"
+    ],
+    "affectedLib": "org.sonatype.sisu.goodies:goodies-crypto:1.14",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.sonatype.nexus:nexus-security:3.0.0-b2015110601",
+    "coordinatesV2": "org.sonatype.nexus:nexus-security:3.0.0-b2015091801",
+    "caller": "|java+method:///org/sonatype/nexus/security/PasswordHelper/decrypt(java.lang.String,java.lang.String)|",
+    "called": "|java+method:///org/sonatype/sisu/goodies/crypto/maven/MavenCipher/isPasswordCipher(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/sonatype/sisu/goodies/crypto/maven/MavenCipher/isPasswordCipher(java.lang.String)|",
+      "|java+method:///org/sonatype/sisu/goodies/crypto/maven/MavenCipher/decrypt(java.lang.String,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/sonatype/nexus/crypto/maven/MavenCipher/isPasswordCipher(java.lang.String)|",
+      "|java+method:///org/sonatype/nexus/crypto/maven/MavenCipher/decrypt(java.lang.String,java.lang.String)|"
+    ],
+    "affectedLib": "org.sonatype.sisu.goodies:goodies-crypto:1.14",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.sonatype.nexus:nexus-security:3.0.0-b2015091801",
+    "coordinatesV2": "org.sonatype.nexus:nexus-security:3.0.0-b2015110601",
+    "caller": "|java+method:///org/sonatype/nexus/security/PasswordHelper/encrypt(java.lang.String,java.lang.String)|",
+    "called": "|java+method:///org/sonatype/nexus/crypto/maven/MavenCipher/isPasswordCipher(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/sonatype/sisu/goodies/crypto/maven/MavenCipher/isPasswordCipher(java.lang.String)|",
+      "|java+method:///org/sonatype/sisu/goodies/crypto/maven/MavenCipher/encrypt(java.lang.String,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/sonatype/nexus/crypto/maven/MavenCipher/isPasswordCipher(java.lang.String)|",
+      "|java+method:///org/sonatype/nexus/crypto/maven/MavenCipher/encrypt(java.lang.String,java.lang.String)|"
+    ],
+    "affectedLib": "org.sonatype.nexus:nexus-crypto:3.0.0-b2015110601",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.sonatype.nexus:nexus-security:3.0.0-b2015091801",
+    "coordinatesV2": "org.sonatype.nexus:nexus-security:3.0.0-b2015110601",
+    "caller": "|java+method:///org/sonatype/nexus/security/PasswordHelper/decrypt(java.lang.String,java.lang.String)|",
+    "called": "|java+method:///org/sonatype/nexus/crypto/maven/MavenCipher/decrypt(java.lang.String,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/sonatype/sisu/goodies/crypto/maven/MavenCipher/isPasswordCipher(java.lang.String)|",
+      "|java+method:///org/sonatype/sisu/goodies/crypto/maven/MavenCipher/decrypt(java.lang.String,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/sonatype/nexus/crypto/maven/MavenCipher/isPasswordCipher(java.lang.String)|",
+      "|java+method:///org/sonatype/nexus/crypto/maven/MavenCipher/decrypt(java.lang.String,java.lang.String)|"
+    ],
+    "affectedLib": "org.sonatype.nexus:nexus-crypto:3.0.0-b2015110601",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.sonatype.nexus:nexus-security:3.0.0-b2015091801",
+    "coordinatesV2": "org.sonatype.nexus:nexus-security:3.0.0-b2015110601",
+    "caller": "|java+constructor:///org/sonatype/nexus/security/config/CUser/CUser()|",
+    "called": "|java+constructor:///org/sonatype/nexus/common/entity/Entity/Entity()|",
+    "v1Body": [
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/sonatype/nexus/common/entity/Entity/Entity()|"
+    ],
+    "affectedLib": "org.sonatype.nexus:nexus-common:3.0.0-b2015110601",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.sonatype.nexus:nexus-security:3.0.0-b2015091801",
+    "coordinatesV2": "org.sonatype.nexus:nexus-security:3.0.0-b2015110601",
+    "caller": "|java+method:///org/sonatype/nexus/security/internal/DefaultSecuritySystem/updateUser(org.sonatype.nexus.security.user.User)|",
+    "called": "|java+constructor:///org/sonatype/nexus/common/throwables/ConfigurationException/ConfigurationException(java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///org/sonatype/nexus/security/authz/AuthorizationConfigurationChanged/AuthorizationConfigurationChanged()|",
+      "|java+method:///org/sonatype/nexus/security/user/User/getRoles()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/sonatype/nexus/security/role/RoleIdentifier/getRoleIdentifiersForSource(java.lang.String,java.util.Set)|",
+      "|java+constructor:///org/sonatype/nexus/security/UserPrincipalsExpired/UserPrincipalsExpired(java.lang.String,java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder(java.lang.String)|",
+      "|java+method:///java/lang/Class/isInstance(java.lang.Object)|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///org/sonatype/nexus/security/user/RoleMappingUserManager/setUsersRoles(java.lang.String,java.lang.String,java.util.Set)|",
+      "|java+method:///org/sonatype/sisu/goodies/eventbus/EventBus/post(java.lang.Object)|",
+      "|java+method:///java/util/Collection/iterator()|",
+      "|java+method:///org/sonatype/nexus/security/user/UserManager/getSource()|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/sonatype/nexus/security/user/User/getStatus()|",
+      "|java+method:///org/sonatype/nexus/security/user/UserManager/supportsWrite()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///org/sonatype/nexus/common/throwables/ConfigurationException/ConfigurationException(java.lang.String)|",
+      "|java+method:///org/sonatype/nexus/security/user/User/getSource()|",
+      "|java+method:///org/sonatype/nexus/security/user/UserManager/getUser(java.lang.String)|",
+      "|java+method:///org/sonatype/nexus/security/internal/DefaultSecuritySystem/getUserManager(java.lang.String)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/sonatype/nexus/security/user/User/getUserId()|",
+      "|java+method:///org/sonatype/nexus/security/internal/DefaultSecuritySystem/getUserManagers()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/sonatype/nexus/security/user/UserManager/updateUser(org.sonatype.nexus.security.user.User)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/sonatype/nexus/security/authz/AuthorizationConfigurationChanged/AuthorizationConfigurationChanged()|",
+      "|java+method:///org/sonatype/nexus/common/event/EventBus/post(java.lang.Object)|",
+      "|java+method:///org/sonatype/nexus/security/user/User/getRoles()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/sonatype/nexus/security/role/RoleIdentifier/getRoleIdentifiersForSource(java.lang.String,java.util.Set)|",
+      "|java+constructor:///org/sonatype/nexus/security/UserPrincipalsExpired/UserPrincipalsExpired(java.lang.String,java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder(java.lang.String)|",
+      "|java+method:///java/lang/Class/isInstance(java.lang.Object)|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///org/sonatype/nexus/security/user/RoleMappingUserManager/setUsersRoles(java.lang.String,java.lang.String,java.util.Set)|",
+      "|java+method:///java/util/Collection/iterator()|",
+      "|java+method:///org/sonatype/nexus/security/user/UserManager/getSource()|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/sonatype/nexus/security/user/User/getStatus()|",
+      "|java+method:///org/sonatype/nexus/security/user/UserManager/supportsWrite()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///org/sonatype/nexus/common/throwables/ConfigurationException/ConfigurationException(java.lang.String)|",
+      "|java+method:///org/sonatype/nexus/security/user/User/getSource()|",
+      "|java+method:///org/sonatype/nexus/security/user/UserManager/getUser(java.lang.String)|",
+      "|java+method:///org/sonatype/nexus/security/internal/DefaultSecuritySystem/getUserManager(java.lang.String)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/sonatype/nexus/security/user/User/getUserId()|",
+      "|java+method:///org/sonatype/nexus/security/internal/DefaultSecuritySystem/getUserManagers()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/sonatype/nexus/security/user/UserManager/updateUser(org.sonatype.nexus.security.user.User)|"
+    ],
+    "affectedLib": "org.sonatype.nexus:nexus-common:3.0.0-b2015110601",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.sonatype.nexus:nexus-security:3.0.0-b2015091801",
+    "coordinatesV2": "org.sonatype.nexus:nexus-security:3.0.0-b2015110601",
+    "caller": "|java+constructor:///org/sonatype/nexus/security/config/CPrivilege/CPrivilege()|",
+    "called": "|java+constructor:///org/sonatype/nexus/common/entity/Entity/Entity()|",
+    "v1Body": [
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/sonatype/nexus/common/entity/Entity/Entity()|"
+    ],
+    "affectedLib": "org.sonatype.nexus:nexus-common:3.0.0-b2015110601",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.sonatype.nexus:nexus-security:3.0.0-b2015091801",
+    "coordinatesV2": "org.sonatype.nexus:nexus-security:3.0.0-b2015110601",
+    "caller": "|java+constructor:///org/sonatype/nexus/security/config/CRole/CRole()|",
+    "called": "|java+constructor:///org/sonatype/nexus/common/entity/Entity/Entity()|",
+    "v1Body": [
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/sonatype/nexus/common/entity/Entity/Entity()|"
+    ],
+    "affectedLib": "org.sonatype.nexus:nexus-common:3.0.0-b2015110601",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.sonatype.nexus:nexus-security:3.0.0-b2015091801",
+    "coordinatesV2": "org.sonatype.nexus:nexus-security:3.0.0-b2015110601",
+    "caller": "|java+constructor:///org/sonatype/nexus/security/config/CUserRoleMapping/CUserRoleMapping()|",
+    "called": "|java+constructor:///org/sonatype/nexus/common/entity/Entity/Entity()|",
+    "v1Body": [
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/sonatype/nexus/common/entity/Entity/Entity()|"
+    ],
+    "affectedLib": "org.sonatype.nexus:nexus-common:3.0.0-b2015110601",
+    "change": "UPDATED"
+  }
+]

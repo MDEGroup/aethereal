@@ -1,0 +1,40 @@
+[
+  {
+    "coordinatesV1": "org.grouplens.lenskit:lenskit-slopeone:0.11",
+    "coordinatesV2": "org.grouplens.lenskit:lenskit-slopeone:1.0-M1",
+    "caller": "|java+method:///org/grouplens/lenskit/slopeone/SlopeOneModelProvider/get()|",
+    "called": "|java+method:///org/grouplens/lenskit/knn/model/ItemItemBuildContext/getItemPairs()|",
+    "v1Body": [
+      "|java+method:///org/grouplens/lenskit/slopeone/SlopeOneModelProvider/get()|",
+      "|java+method:///org/grouplens/lenskit/data/snapshot/PreferenceSnapshot/userRatingVector(long)|",
+      "|java+method:///org/grouplens/lenskit/data/snapshot/PreferenceSnapshot/getUserIds()|",
+      "|java+method:///org/grouplens/lenskit/slopeone/SlopeOneModelDataAccumulator/buildCoratingMatrix()|",
+      "|java+constructor:///org/grouplens/lenskit/slopeone/SlopeOneModel/SlopeOneModel(it.unimi.dsi.fastutil.longs.Long2IntOpenHashMap%5B%5D,it.unimi.dsi.fastutil.longs.Long2DoubleOpenHashMap%5B%5D,org.grouplens.lenskit.baseline.BaselinePredictor,org.grouplens.lenskit.util.Index,org.grouplens.lenskit.data.pref.PreferenceDomain)|",
+      "|java+method:///org/grouplens/lenskit/vectors/SparseVector/keySet()|",
+      "|java+method:///it/unimi/dsi/fastutil/longs/LongSortedSet/tailSet(long)|",
+      "|java+method:///org/grouplens/lenskit/data/snapshot/PreferenceSnapshot/itemIndex()|",
+      "|java+method:///it/unimi/dsi/fastutil/longs/LongIterator/nextLong()|",
+      "|java+method:///it/unimi/dsi/fastutil/longs/LongIterator/hasNext()|",
+      "|java+method:///org/grouplens/lenskit/slopeone/SlopeOneModelDataAccumulator/putRatingPair(long,double,long,double)|",
+      "|java+method:///org/grouplens/lenskit/slopeone/SlopeOneModelDataAccumulator/buildDeviationMatrix()|",
+      "|java+method:///it/unimi/dsi/fastutil/longs/LongCollection/iterator()|",
+      "|java+method:///org/grouplens/lenskit/transform/normalize/UserVectorNormalizer/normalize(long,org.grouplens.lenskit.vectors.SparseVector,org.grouplens.lenskit.vectors.MutableSparseVector)|",
+      "|java+method:///it/unimi/dsi/fastutil/longs/LongSortedSet/iterator()|",
+      "|java+method:///org/grouplens/lenskit/vectors/SparseVector/get(long)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/grouplens/lenskit/slopeone/SlopeOneModelProvider/get()|",
+      "|java+method:///org/grouplens/lenskit/knn/model/ItemItemBuildContextFactory/buildContext()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/grouplens/lenskit/slopeone/SlopeOneModelDataAccumulator/buildDeviationMatrix()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+constructor:///org/grouplens/lenskit/slopeone/SlopeOneModel/SlopeOneModel(it.unimi.dsi.fastutil.longs.Long2IntMap%5B%5D,it.unimi.dsi.fastutil.longs.Long2DoubleMap%5B%5D,org.grouplens.lenskit.baseline.BaselinePredictor,org.grouplens.lenskit.util.Index,org.grouplens.lenskit.data.pref.PreferenceDomain)|",
+      "|java+method:///org/grouplens/lenskit/knn/model/ItemItemBuildContext/getItemPairs()|",
+      "|java+method:///org/grouplens/lenskit/slopeone/SlopeOneModelDataAccumulator/putItemPair(long,org.grouplens.lenskit.vectors.SparseVector,long,org.grouplens.lenskit.vectors.SparseVector)|",
+      "|java+method:///org/grouplens/lenskit/slopeone/SlopeOneModelDataAccumulator/buildCoratingMatrix()|",
+      "|java+method:///java/lang/Iterable/iterator()|"
+    ],
+    "affectedLib": "org.grouplens.lenskit:lenskit-knn:1.0-M1",
+    "change": "ADDED"
+  }
+]

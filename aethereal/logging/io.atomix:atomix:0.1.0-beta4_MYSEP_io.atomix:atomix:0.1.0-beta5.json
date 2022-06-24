@@ -1,0 +1,283 @@
+[
+  {
+    "coordinatesV1": "io.atomix:atomix:0.1.0-beta5",
+    "coordinatesV2": "io.atomix:atomix:0.1.0-beta4",
+    "caller": "|java+method:///io/atomix/AtomixReplica$Builder/build()|",
+    "called": "|java+constructor:///io/atomix/catalyst/transport/LocalTransport/LocalTransport(io.atomix.catalyst.transport.LocalServerRegistry)|",
+    "v1Body": [
+      "|java+method:///java/lang/Class/forName(java.lang.String)|",
+      "|java+method:///io/atomix/AtomixReplica$Builder/build()|",
+      "|java+method:///java/lang/Class/newInstance()|",
+      "|java+constructor:///io/atomix/manager/ResourceManager/ResourceManager()|",
+      "|java+method:///io/atomix/copycat/server/CopycatServer$Builder/withStateMachine(io.atomix.copycat.server.StateMachine)|",
+      "|java+method:///io/atomix/copycat/client/CopycatClient$Builder/withConnectionStrategy(io.atomix.copycat.client.ConnectionStrategy)|",
+      "|java+constructor:///io/atomix/AtomixReplica$CombinedTransport/AtomixReplica$CombinedTransport(io.atomix.catalyst.transport.Transport,io.atomix.catalyst.transport.Transport,io.atomix.AtomixReplica$1)|",
+      "|java+constructor:///io/atomix/catalyst/util/ConfigurationException/ConfigurationException(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+constructor:///io/atomix/catalyst/transport/LocalTransport/LocalTransport(io.atomix.catalyst.transport.LocalServerRegistry)|",
+      "|java+method:///io/atomix/copycat/client/CopycatClient$Builder/withTransport(io.atomix.catalyst.transport.Transport)|",
+      "|java+method:///io/atomix/copycat/client/CopycatClient$Builder/build()|",
+      "|java+constructor:///io/atomix/AtomixReplica$CombinedConnectionStrategy/AtomixReplica$CombinedConnectionStrategy(io.atomix.catalyst.transport.Address,io.atomix.AtomixReplica$1)|",
+      "|java+constructor:///io/atomix/AtomixReplica/AtomixReplica(io.atomix.copycat.client.CopycatClient,io.atomix.copycat.server.CopycatServer,io.atomix.catalyst.transport.Transport)|",
+      "|java+method:///io/atomix/copycat/server/CopycatServer$Builder/withTransport(io.atomix.catalyst.transport.Transport)|",
+      "|java+method:///io/atomix/copycat/server/CopycatServer$Builder/build()|"
+    ],
+    "v2Body": [
+      "|java+method:///io/atomix/AtomixReplica$Builder/build()|",
+      "|java+method:///java/lang/Class/newInstance()|",
+      "|java+method:///io/atomix/copycat/client/CopycatClient$Builder/withServerSelectionStrategy(io.atomix.copycat.client.ServerSelectionStrategy)|",
+      "|java+constructor:///io/atomix/AtomixCopycatClient/AtomixCopycatClient(io.atomix.copycat.client.CopycatClient,io.atomix.catalyst.transport.Transport)|",
+      "|java+method:///io/atomix/copycat/server/CopycatServer$Builder/withClientTransport(io.atomix.catalyst.transport.Transport)|",
+      "|java+constructor:///io/atomix/manager/ResourceServer/ResourceServer(io.atomix.copycat.server.CopycatServer)|",
+      "|java+method:///io/atomix/resource/ResourceTypeResolver/resolve(io.atomix.resource.ResourceRegistry)|",
+      "|java+method:///java/lang/Class/forName(java.lang.String)|",
+      "|java+method:///io/atomix/copycat/server/CopycatServer$Builder/withStateMachine(java.util.function.Supplier)|",
+      "|java+constructor:///io/atomix/catalyst/util/ConfigurationException/ConfigurationException(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+constructor:///io/atomix/catalyst/transport/LocalTransport/LocalTransport(io.atomix.catalyst.transport.LocalServerRegistry)|",
+      "|java+method:///io/atomix/copycat/client/CopycatClient$Builder/withTransport(io.atomix.catalyst.transport.Transport)|",
+      "|java+method:///io/atomix/copycat/client/CopycatClient$Builder/build()|",
+      "|java+constructor:///io/atomix/manager/ResourceClient/ResourceClient(io.atomix.copycat.client.CopycatClient,io.atomix.resource.ResourceRegistry)|",
+      "|java+constructor:///io/atomix/resource/ResourceRegistry/ResourceRegistry()|",
+      "|java+constructor:///io/atomix/AtomixReplica$CombinedSelectionStrategy/AtomixReplica$CombinedSelectionStrategy(io.atomix.catalyst.transport.Address,io.atomix.AtomixReplica$1)|",
+      "|java+constructor:///io/atomix/AtomixReplica$CombinedTransport/AtomixReplica$CombinedTransport(io.atomix.catalyst.transport.Transport,io.atomix.catalyst.transport.Transport,io.atomix.AtomixReplica$1)|",
+      "|java+constructor:///io/atomix/AtomixReplica/AtomixReplica(io.atomix.manager.ResourceClient,io.atomix.manager.ResourceServer,int,int,io.atomix.AtomixReplica$1)|",
+      "|java+method:///io/atomix/copycat/server/CopycatServer$Builder/withServerTransport(io.atomix.catalyst.transport.Transport)|",
+      "|java+method:///io/atomix/copycat/server/CopycatServer$Builder/withTransport(io.atomix.catalyst.transport.Transport)|",
+      "|java+method:///io/atomix/copycat/server/CopycatServer$Builder/build()|"
+    ],
+    "affectedLib": "io.atomix.catalyst:catalyst-local:1.0.0-rc4",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "io.atomix:atomix:0.1.0-beta4",
+    "coordinatesV2": "io.atomix:atomix:0.1.0-beta5",
+    "caller": "|java+method:///io/atomix/AtomixReplica/open()|",
+    "called": "|java+method:///io/atomix/manager/ResourceServer/open()|",
+    "v1Body": [
+      "|java+method:///java/util/concurrent/CompletableFuture/thenCompose(java.util.function.Function)|",
+      "|java+method:///io/atomix/copycat/server/CopycatServer/open()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/concurrent/CompletableFuture/thenCompose(java.util.function.Function)|",
+      "|java+method:///java/util/concurrent/CompletableFuture/thenApply(java.util.function.Function)|",
+      "|java+method:///io/atomix/manager/ResourceServer/open()|"
+    ],
+    "affectedLib": "io.atomix:atomix-resource-manager:0.1.0-beta5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "io.atomix:atomix:0.1.0-beta4",
+    "coordinatesV2": "io.atomix:atomix:0.1.0-beta5",
+    "caller": "|java+method:///io/atomix/Atomix/context()|",
+    "called": "|java+method:///io/atomix/manager/ResourceClient/context()|",
+    "v1Body": [
+      "|java+method:///io/atomix/copycat/client/CopycatClient/context()|"
+    ],
+    "v2Body": [
+      "|java+method:///io/atomix/manager/ResourceClient/context()|"
+    ],
+    "affectedLib": "io.atomix:atomix-resource-manager:0.1.0-beta5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "io.atomix:atomix:0.1.0-beta4",
+    "coordinatesV2": "io.atomix:atomix:0.1.0-beta5",
+    "caller": "|java+method:///io/atomix/Atomix/close()|",
+    "called": "|java+method:///io/atomix/manager/ResourceClient/close()|",
+    "v1Body": [
+      "|java+method:///io/atomix/copycat/client/CopycatClient/close()|"
+    ],
+    "v2Body": [
+      "|java+method:///io/atomix/manager/ResourceClient/close()|"
+    ],
+    "affectedLib": "io.atomix:atomix-resource-manager:0.1.0-beta5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "io.atomix:atomix:0.1.0-beta4",
+    "coordinatesV2": "io.atomix:atomix:0.1.0-beta5",
+    "caller": "|java+method:///io/atomix/Atomix/open()|",
+    "called": "|java+method:///io/atomix/manager/ResourceClient/open()|",
+    "v1Body": [
+      "|java+method:///java/util/concurrent/CompletableFuture/thenApply(java.util.function.Function)|",
+      "|java+method:///io/atomix/copycat/client/CopycatClient/open()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/concurrent/CompletableFuture/thenApply(java.util.function.Function)|",
+      "|java+method:///io/atomix/manager/ResourceClient/open()|"
+    ],
+    "affectedLib": "io.atomix:atomix-resource-manager:0.1.0-beta5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "io.atomix:atomix:0.1.0-beta4",
+    "coordinatesV2": "io.atomix:atomix:0.1.0-beta5",
+    "caller": "|java+method:///io/atomix/AtomixClient$Builder/withTransport(io.atomix.catalyst.transport.Transport)|",
+    "called": "|java+method:///io/atomix/manager/ResourceClient$Builder/withTransport(io.atomix.catalyst.transport.Transport)|",
+    "v1Body": [
+      "|java+method:///io/atomix/Atomix$Builder/withTransport(io.atomix.catalyst.transport.Transport)|"
+    ],
+    "v2Body": [
+      "|java+method:///io/atomix/manager/ResourceClient$Builder/withTransport(io.atomix.catalyst.transport.Transport)|"
+    ],
+    "affectedLib": "io.atomix:atomix-resource-manager:0.1.0-beta5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "io.atomix:atomix:0.1.0-beta4",
+    "coordinatesV2": "io.atomix:atomix:0.1.0-beta5",
+    "caller": "|java+method:///io/atomix/Atomix/isOpen()|",
+    "called": "|java+method:///io/atomix/manager/ResourceClient/isOpen()|",
+    "v1Body": [
+      "|java+method:///io/atomix/copycat/client/CopycatClient/isOpen()|"
+    ],
+    "v2Body": [
+      "|java+method:///io/atomix/manager/ResourceClient/isOpen()|"
+    ],
+    "affectedLib": "io.atomix:atomix-resource-manager:0.1.0-beta5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "io.atomix:atomix:0.1.0-beta4",
+    "coordinatesV2": "io.atomix:atomix:0.1.0-beta5",
+    "caller": "|java+method:///io/atomix/AtomixClient/builder(io.atomix.catalyst.transport.Address%5B%5D)|",
+    "called": "|java+method:///io/atomix/manager/ResourceClient/builder(io.atomix.catalyst.transport.Address%5B%5D)|",
+    "v1Body": [
+      "|java+method:///io/atomix/catalyst/util/Assert/notNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///java/util/Arrays/asList(java.lang.Object%5B%5D)|",
+      "|java+constructor:///io/atomix/AtomixClient$Builder/AtomixClient$Builder(java.util.Collection,io.atomix.AtomixClient$1)|"
+    ],
+    "v2Body": [
+      "|java+method:///io/atomix/manager/ResourceClient/builder(io.atomix.catalyst.transport.Address%5B%5D)|",
+      "|java+constructor:///io/atomix/AtomixClient$Builder/AtomixClient$Builder(io.atomix.manager.ResourceClient$Builder,io.atomix.AtomixClient$1)|"
+    ],
+    "affectedLib": "io.atomix:atomix-resource-manager:0.1.0-beta5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "io.atomix:atomix:0.1.0-beta4",
+    "coordinatesV2": "io.atomix:atomix:0.1.0-beta5",
+    "caller": "|java+method:///io/atomix/Atomix/get(java.lang.String,java.lang.Class)|",
+    "called": "|java+method:///io/atomix/manager/ResourceClient/get(java.lang.String,java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///io/atomix/Atomix/get(java.lang.String,java.lang.Class,java.util.function.Function)|"
+    ],
+    "v2Body": [
+      "|java+method:///io/atomix/manager/ResourceClient/get(java.lang.String,java.lang.Class)|"
+    ],
+    "affectedLib": "io.atomix:atomix-resource-manager:0.1.0-beta5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "io.atomix:atomix:0.1.0-beta4",
+    "coordinatesV2": "io.atomix:atomix:0.1.0-beta5",
+    "caller": "|java+method:///io/atomix/Atomix/exists(java.lang.String)|",
+    "called": "|java+method:///io/atomix/manager/ResourceClient/exists(java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///io/atomix/manager/ResourceExists/ResourceExists(java.lang.String)|",
+      "|java+method:///io/atomix/copycat/client/CopycatClient/submit(io.atomix.copycat.client.Query)|"
+    ],
+    "v2Body": [
+      "|java+method:///io/atomix/manager/ResourceClient/exists(java.lang.String)|"
+    ],
+    "affectedLib": "io.atomix:atomix-resource-manager:0.1.0-beta5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "io.atomix:atomix:0.1.0-beta4",
+    "coordinatesV2": "io.atomix:atomix:0.1.0-beta5",
+    "caller": "|java+method:///io/atomix/AtomixClient/builder(java.util.Collection)|",
+    "called": "|java+method:///io/atomix/manager/ResourceClient/builder(java.util.Collection)|",
+    "v1Body": [
+      "|java+constructor:///io/atomix/AtomixClient$Builder/AtomixClient$Builder(java.util.Collection,io.atomix.AtomixClient$1)|"
+    ],
+    "v2Body": [
+      "|java+method:///io/atomix/manager/ResourceClient/builder(java.util.Collection)|",
+      "|java+constructor:///io/atomix/AtomixClient$Builder/AtomixClient$Builder(io.atomix.manager.ResourceClient$Builder,io.atomix.AtomixClient$1)|"
+    ],
+    "affectedLib": "io.atomix:atomix-resource-manager:0.1.0-beta5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "io.atomix:atomix:0.1.0-beta4",
+    "coordinatesV2": "io.atomix:atomix:0.1.0-beta5",
+    "caller": "|java+method:///io/atomix/AtomixReplica$Builder/build()|",
+    "called": "|java+constructor:///io/atomix/resource/ResourceRegistry/ResourceRegistry()|",
+    "v1Body": [
+      "|java+method:///java/lang/Class/forName(java.lang.String)|",
+      "|java+method:///io/atomix/AtomixReplica$Builder/build()|",
+      "|java+method:///java/lang/Class/newInstance()|",
+      "|java+constructor:///io/atomix/manager/ResourceManager/ResourceManager()|",
+      "|java+method:///io/atomix/copycat/server/CopycatServer$Builder/withStateMachine(io.atomix.copycat.server.StateMachine)|",
+      "|java+method:///io/atomix/copycat/client/CopycatClient$Builder/withConnectionStrategy(io.atomix.copycat.client.ConnectionStrategy)|",
+      "|java+constructor:///io/atomix/AtomixReplica$CombinedTransport/AtomixReplica$CombinedTransport(io.atomix.catalyst.transport.Transport,io.atomix.catalyst.transport.Transport,io.atomix.AtomixReplica$1)|",
+      "|java+constructor:///io/atomix/catalyst/util/ConfigurationException/ConfigurationException(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+constructor:///io/atomix/catalyst/transport/LocalTransport/LocalTransport(io.atomix.catalyst.transport.LocalServerRegistry)|",
+      "|java+method:///io/atomix/copycat/client/CopycatClient$Builder/withTransport(io.atomix.catalyst.transport.Transport)|",
+      "|java+method:///io/atomix/copycat/client/CopycatClient$Builder/build()|",
+      "|java+constructor:///io/atomix/AtomixReplica$CombinedConnectionStrategy/AtomixReplica$CombinedConnectionStrategy(io.atomix.catalyst.transport.Address,io.atomix.AtomixReplica$1)|",
+      "|java+constructor:///io/atomix/AtomixReplica/AtomixReplica(io.atomix.copycat.client.CopycatClient,io.atomix.copycat.server.CopycatServer,io.atomix.catalyst.transport.Transport)|",
+      "|java+method:///io/atomix/copycat/server/CopycatServer$Builder/withTransport(io.atomix.catalyst.transport.Transport)|",
+      "|java+method:///io/atomix/copycat/server/CopycatServer$Builder/build()|"
+    ],
+    "v2Body": [
+      "|java+method:///io/atomix/AtomixReplica$Builder/build()|",
+      "|java+method:///java/lang/Class/newInstance()|",
+      "|java+method:///io/atomix/copycat/client/CopycatClient$Builder/withServerSelectionStrategy(io.atomix.copycat.client.ServerSelectionStrategy)|",
+      "|java+constructor:///io/atomix/AtomixCopycatClient/AtomixCopycatClient(io.atomix.copycat.client.CopycatClient,io.atomix.catalyst.transport.Transport)|",
+      "|java+method:///io/atomix/copycat/server/CopycatServer$Builder/withClientTransport(io.atomix.catalyst.transport.Transport)|",
+      "|java+constructor:///io/atomix/manager/ResourceServer/ResourceServer(io.atomix.copycat.server.CopycatServer)|",
+      "|java+method:///io/atomix/resource/ResourceTypeResolver/resolve(io.atomix.resource.ResourceRegistry)|",
+      "|java+method:///java/lang/Class/forName(java.lang.String)|",
+      "|java+method:///io/atomix/copycat/server/CopycatServer$Builder/withStateMachine(java.util.function.Supplier)|",
+      "|java+constructor:///io/atomix/catalyst/util/ConfigurationException/ConfigurationException(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+constructor:///io/atomix/catalyst/transport/LocalTransport/LocalTransport(io.atomix.catalyst.transport.LocalServerRegistry)|",
+      "|java+method:///io/atomix/copycat/client/CopycatClient$Builder/withTransport(io.atomix.catalyst.transport.Transport)|",
+      "|java+method:///io/atomix/copycat/client/CopycatClient$Builder/build()|",
+      "|java+constructor:///io/atomix/manager/ResourceClient/ResourceClient(io.atomix.copycat.client.CopycatClient,io.atomix.resource.ResourceRegistry)|",
+      "|java+constructor:///io/atomix/resource/ResourceRegistry/ResourceRegistry()|",
+      "|java+constructor:///io/atomix/AtomixReplica$CombinedSelectionStrategy/AtomixReplica$CombinedSelectionStrategy(io.atomix.catalyst.transport.Address,io.atomix.AtomixReplica$1)|",
+      "|java+constructor:///io/atomix/AtomixReplica$CombinedTransport/AtomixReplica$CombinedTransport(io.atomix.catalyst.transport.Transport,io.atomix.catalyst.transport.Transport,io.atomix.AtomixReplica$1)|",
+      "|java+constructor:///io/atomix/AtomixReplica/AtomixReplica(io.atomix.manager.ResourceClient,io.atomix.manager.ResourceServer,int,int,io.atomix.AtomixReplica$1)|",
+      "|java+method:///io/atomix/copycat/server/CopycatServer$Builder/withServerTransport(io.atomix.catalyst.transport.Transport)|",
+      "|java+method:///io/atomix/copycat/server/CopycatServer$Builder/withTransport(io.atomix.catalyst.transport.Transport)|",
+      "|java+method:///io/atomix/copycat/server/CopycatServer$Builder/build()|"
+    ],
+    "affectedLib": "io.atomix:atomix-resource-manager:0.1.0-beta5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "io.atomix:atomix:0.1.0-beta4",
+    "coordinatesV2": "io.atomix:atomix:0.1.0-beta5",
+    "caller": "|java+method:///io/atomix/AtomixClient$Builder/build()|",
+    "called": "|java+method:///io/atomix/manager/ResourceClient$Builder/build()|",
+    "v1Body": [
+      "|java+method:///java/lang/Class/forName(java.lang.String)|",
+      "|java+method:///io/atomix/AtomixClient$Builder/build()|",
+      "|java+method:///java/lang/Class/newInstance()|",
+      "|java+method:///io/atomix/copycat/client/CopycatClient$Builder/build()|",
+      "|java+constructor:///io/atomix/catalyst/util/ConfigurationException/ConfigurationException(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+constructor:///io/atomix/AtomixClient/AtomixClient(io.atomix.copycat.client.CopycatClient,io.atomix.catalyst.transport.Transport)|"
+    ],
+    "v2Body": [
+      "|java+method:///io/atomix/AtomixClient$Builder/build()|",
+      "|java+constructor:///io/atomix/AtomixClient/AtomixClient(io.atomix.manager.ResourceClient)|",
+      "|java+method:///io/atomix/manager/ResourceClient$Builder/build()|"
+    ],
+    "affectedLib": "io.atomix:atomix-resource-manager:0.1.0-beta5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "io.atomix:atomix:0.1.0-beta4",
+    "coordinatesV2": "io.atomix:atomix:0.1.0-beta5",
+    "caller": "|java+method:///io/atomix/Atomix/isClosed()|",
+    "called": "|java+method:///io/atomix/manager/ResourceClient/isClosed()|",
+    "v1Body": [
+      "|java+method:///io/atomix/copycat/client/CopycatClient/isClosed()|"
+    ],
+    "v2Body": [
+      "|java+method:///io/atomix/manager/ResourceClient/isClosed()|"
+    ],
+    "affectedLib": "io.atomix:atomix-resource-manager:0.1.0-beta5",
+    "change": "ADDED"
+  }
+]

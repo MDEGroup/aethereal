@@ -1,0 +1,134 @@
+[
+  {
+    "coordinatesV1": "com.ning.jetty:ning-service-skeleton-core:0.1.0",
+    "coordinatesV2": "com.ning.jetty:ning-service-skeleton-core:0.0.22",
+    "caller": "|java+method:///com/ning/jetty/core/modules/ServerModule/installJackson()|",
+    "called": "|java+constructor:///org/codehaus/jackson/jaxrs/JacksonJsonProvider/JacksonJsonProvider(org.codehaus.jackson.map.ObjectMapper,org.codehaus.jackson.jaxrs.Annotations%5B%5D)|",
+    "v1Body": [
+      "|java+method:///com/google/inject/Provider/get()|",
+      "|java+method:///com/google/inject/binder/AnnotatedBindingBuilder/toInstance(java.lang.Object)|",
+      "|java+method:///com/ning/jetty/core/modules/ServerModule/getJacksonProvider()|",
+      "|java+method:///com/ning/jetty/core/modules/ServerModule/bind(java.lang.Class)|",
+      "|java+constructor:///org/codehaus/jackson/jaxrs/JacksonJsonProvider/JacksonJsonProvider(org.codehaus.jackson.map.ObjectMapper,org.codehaus.jackson.jaxrs.Annotations%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/ning/jetty/core/modules/ServerModule/bind(java.lang.Class)|",
+      "|java+method:///com/google/inject/Provider/get()|",
+      "|java+method:///com/google/inject/binder/AnnotatedBindingBuilder/toInstance(java.lang.Object)|",
+      "|java+method:///com/ning/jetty/core/modules/ServerModule/getJacksonProvider()|",
+      "|java+constructor:///com/fasterxml/jackson/jaxrs/json/JacksonJsonProvider/JacksonJsonProvider(com.fasterxml.jackson.databind.ObjectMapper,com.fasterxml.jackson.jaxrs.json.Annotations%5B%5D)|"
+    ],
+    "affectedLib": "org.codehaus.jackson:jackson-jaxrs:1.9.4",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.ning.jetty:ning-service-skeleton-core:0.0.22",
+    "coordinatesV2": "com.ning.jetty:ning-service-skeleton-core:0.1.0",
+    "caller": "|java+method:///com/ning/jetty/core/modules/ServerModule/installJackson()|",
+    "called": "|java+constructor:///com/fasterxml/jackson/jaxrs/json/JacksonJsonProvider/JacksonJsonProvider(com.fasterxml.jackson.databind.ObjectMapper,com.fasterxml.jackson.jaxrs.json.Annotations%5B%5D)|",
+    "v1Body": [
+      "|java+method:///com/google/inject/Provider/get()|",
+      "|java+method:///com/google/inject/binder/AnnotatedBindingBuilder/toInstance(java.lang.Object)|",
+      "|java+method:///com/ning/jetty/core/modules/ServerModule/getJacksonProvider()|",
+      "|java+method:///com/ning/jetty/core/modules/ServerModule/bind(java.lang.Class)|",
+      "|java+constructor:///org/codehaus/jackson/jaxrs/JacksonJsonProvider/JacksonJsonProvider(org.codehaus.jackson.map.ObjectMapper,org.codehaus.jackson.jaxrs.Annotations%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/ning/jetty/core/modules/ServerModule/bind(java.lang.Class)|",
+      "|java+method:///com/google/inject/Provider/get()|",
+      "|java+method:///com/google/inject/binder/AnnotatedBindingBuilder/toInstance(java.lang.Object)|",
+      "|java+method:///com/ning/jetty/core/modules/ServerModule/getJacksonProvider()|",
+      "|java+constructor:///com/fasterxml/jackson/jaxrs/json/JacksonJsonProvider/JacksonJsonProvider(com.fasterxml.jackson.databind.ObjectMapper,com.fasterxml.jackson.jaxrs.json.Annotations%5B%5D)|"
+    ],
+    "affectedLib": "com.fasterxml.jackson.jaxrs:jackson-jaxrs-json-provider:2.0.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.ning.jetty:ning-service-skeleton-core:0.0.22",
+    "coordinatesV2": "com.ning.jetty:ning-service-skeleton-core:0.1.0",
+    "caller": "|java+method:///com/ning/jetty/core/modules/ServerModule$1/get()|",
+    "called": "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/registerModule(com.fasterxml.jackson.databind.Module)|",
+    "v1Body": [
+      "|java+constructor:///org/codehaus/jackson/map/ObjectMapper/ObjectMapper()|",
+      "|java+method:///org/codehaus/jackson/map/ObjectMapper/disable(org.codehaus.jackson.map.SerializationConfig$Feature%5B%5D)|",
+      "|java+method:///com/ning/jetty/core/modules/ServerModule$1/get()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/registerModule(com.fasterxml.jackson.databind.Module)|",
+      "|java+constructor:///com/fasterxml/jackson/datatype/joda/JodaModule/JodaModule()|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/disable(com.fasterxml.jackson.databind.SerializationFeature)|",
+      "|java+constructor:///com/fasterxml/jackson/databind/ObjectMapper/ObjectMapper()|",
+      "|java+method:///com/ning/jetty/core/modules/ServerModule$1/get()|"
+    ],
+    "affectedLib": "com.fasterxml.jackson.core:jackson-databind:2.0.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.ning.jetty:ning-service-skeleton-core:0.0.22",
+    "coordinatesV2": "com.ning.jetty:ning-service-skeleton-core:0.1.0",
+    "caller": "|java+method:///com/ning/jetty/core/modules/ServerModule$1/get()|",
+    "called": "|java+constructor:///com/fasterxml/jackson/datatype/joda/JodaModule/JodaModule()|",
+    "v1Body": [
+      "|java+constructor:///org/codehaus/jackson/map/ObjectMapper/ObjectMapper()|",
+      "|java+method:///org/codehaus/jackson/map/ObjectMapper/disable(org.codehaus.jackson.map.SerializationConfig$Feature%5B%5D)|",
+      "|java+method:///com/ning/jetty/core/modules/ServerModule$1/get()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/registerModule(com.fasterxml.jackson.databind.Module)|",
+      "|java+constructor:///com/fasterxml/jackson/datatype/joda/JodaModule/JodaModule()|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/disable(com.fasterxml.jackson.databind.SerializationFeature)|",
+      "|java+constructor:///com/fasterxml/jackson/databind/ObjectMapper/ObjectMapper()|",
+      "|java+method:///com/ning/jetty/core/modules/ServerModule$1/get()|"
+    ],
+    "affectedLib": "com.fasterxml.jackson.datatype:jackson-datatype-joda:2.0.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.ning.jetty:ning-service-skeleton-core:0.0.22",
+    "coordinatesV2": "com.ning.jetty:ning-service-skeleton-core:0.1.0",
+    "caller": "|java+method:///com/ning/jetty/core/modules/ServerModule/installStats()|",
+    "called": "|java+constructor:///com/ning/jersey/metrics/TimedResourceModule/TimedResourceModule()|",
+    "v1Body": [
+      "|java+constructor:///com/yammer/metrics/reporting/guice/MetricsServletModule/MetricsServletModule(java.lang.String,java.lang.String,java.lang.String,java.lang.String)|",
+      "|java+method:///com/ning/jetty/core/modules/ServerModule/binder()|",
+      "|java+method:///com/ning/jetty/core/modules/ServerModule/install(com.google.inject.Module)|",
+      "|java+constructor:///com/ning/jersey/metrics/TimedResourceModule/TimedResourceModule()|",
+      "|java+method:///com/google/inject/multibindings/Multibinder/newSetBinder(com.google.inject.Binder,java.lang.Class)|",
+      "|java+constructor:///com/yammer/metrics/guice/InstrumentationModule/InstrumentationModule()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/ning/jetty/core/modules/ServerModule/install(com.google.inject.Module)|",
+      "|java+constructor:///com/ning/jersey/metrics/TimedResourceModule/TimedResourceModule()|",
+      "|java+method:///com/google/inject/multibindings/Multibinder/newSetBinder(com.google.inject.Binder,java.lang.Class)|",
+      "|java+constructor:///com/yammer/metrics/guice/InstrumentationModule/InstrumentationModule()|",
+      "|java+method:///com/ning/jetty/core/modules/ServerModule/binder()|",
+      "|java+constructor:///com/yammer/metrics/guice/servlet/AdminServletModule/AdminServletModule(java.lang.String,java.lang.String,java.lang.String,java.lang.String)|"
+    ],
+    "affectedLib": "com.ning.jaxrs:jaxrs-metrics:2.0.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.ning.jetty:ning-service-skeleton-core:0.0.22",
+    "coordinatesV2": "com.ning.jetty:ning-service-skeleton-core:0.1.0",
+    "caller": "|java+method:///com/ning/jetty/core/modules/ServerModule/installStats()|",
+    "called": "|java+constructor:///com/yammer/metrics/guice/InstrumentationModule/InstrumentationModule()|",
+    "v1Body": [
+      "|java+constructor:///com/yammer/metrics/reporting/guice/MetricsServletModule/MetricsServletModule(java.lang.String,java.lang.String,java.lang.String,java.lang.String)|",
+      "|java+method:///com/ning/jetty/core/modules/ServerModule/binder()|",
+      "|java+method:///com/ning/jetty/core/modules/ServerModule/install(com.google.inject.Module)|",
+      "|java+constructor:///com/ning/jersey/metrics/TimedResourceModule/TimedResourceModule()|",
+      "|java+method:///com/google/inject/multibindings/Multibinder/newSetBinder(com.google.inject.Binder,java.lang.Class)|",
+      "|java+constructor:///com/yammer/metrics/guice/InstrumentationModule/InstrumentationModule()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/ning/jetty/core/modules/ServerModule/install(com.google.inject.Module)|",
+      "|java+constructor:///com/ning/jersey/metrics/TimedResourceModule/TimedResourceModule()|",
+      "|java+method:///com/google/inject/multibindings/Multibinder/newSetBinder(com.google.inject.Binder,java.lang.Class)|",
+      "|java+constructor:///com/yammer/metrics/guice/InstrumentationModule/InstrumentationModule()|",
+      "|java+method:///com/ning/jetty/core/modules/ServerModule/binder()|",
+      "|java+constructor:///com/yammer/metrics/guice/servlet/AdminServletModule/AdminServletModule(java.lang.String,java.lang.String,java.lang.String,java.lang.String)|"
+    ],
+    "affectedLib": "com.yammer.metrics:metrics-guice:2.1.1",
+    "change": "UPDATED"
+  }
+]

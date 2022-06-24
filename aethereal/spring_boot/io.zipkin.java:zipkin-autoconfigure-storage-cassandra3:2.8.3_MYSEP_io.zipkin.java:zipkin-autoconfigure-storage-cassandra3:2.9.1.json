@@ -1,0 +1,64 @@
+[
+  {
+    "coordinatesV1": "io.zipkin.java:zipkin-autoconfigure-storage-cassandra3:2.9.1",
+    "coordinatesV2": "io.zipkin.java:zipkin-autoconfigure-storage-cassandra3:2.8.3",
+    "caller": "|java+method:///zipkin/autoconfigure/storage/cassandra3/ZipkinCassandra3StorageAutoConfiguration/storage(zipkin.autoconfigure.storage.cassandra3.ZipkinCassandra3StorageProperties,boolean,boolean)|",
+    "called": "|java+method:///zipkin/internal/V2StorageComponent/create(zipkin2.storage.StorageComponent)|",
+    "v1Body": [
+      "|java+method:///zipkin2/storage/cassandra/CassandraStorage$Builder/build()|",
+      "|java+method:///zipkin2/storage/cassandra/CassandraStorage$Builder/strictTraceId(boolean)|",
+      "|java+method:///zipkin2/storage/cassandra/CassandraStorage$Builder/searchEnabled(boolean)|",
+      "|java+method:///zipkin/autoconfigure/storage/cassandra3/ZipkinCassandra3StorageProperties/toBuilder()|",
+      "|java+method:///zipkin2/storage/cassandra/CassandraStorage$Builder/sessionFactory(zipkin2.storage.cassandra.CassandraStorage$SessionFactory)|",
+      "|java+method:///zipkin/internal/V2StorageComponent/create(zipkin2.storage.StorageComponent)|"
+    ],
+    "v2Body": [
+      "|java+method:///zipkin2/storage/cassandra/CassandraStorage$Builder/build()|",
+      "|java+method:///zipkin2/storage/cassandra/CassandraStorage$Builder/strictTraceId(boolean)|",
+      "|java+method:///zipkin2/storage/cassandra/CassandraStorage$Builder/sessionFactory(zipkin2.storage.cassandra.CassandraStorage$SessionFactory)|",
+      "|java+method:///zipkin2/storage/cassandra/CassandraStorage$Builder/searchEnabled(boolean)|",
+      "|java+method:///zipkin/autoconfigure/storage/cassandra3/ZipkinCassandra3StorageProperties/toBuilder()|"
+    ],
+    "affectedLib": "io.zipkin.java:zipkin:2.8.3",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "io.zipkin.java:zipkin-autoconfigure-storage-cassandra3:2.8.3",
+    "coordinatesV2": "io.zipkin.java:zipkin-autoconfigure-storage-cassandra3:2.9.1",
+    "caller": "|java+method:///zipkin/autoconfigure/storage/cassandra3/TracingZipkinCassandra3StorageAutoConfiguration/lambda$tracingSessionFactory$0(zipkin2.storage.cassandra.CassandraStorage)|",
+    "called": "|java+method:///brave/cassandra/driver/TracingSession/create(brave.Tracing,com.datastax.driver.core.Session)|",
+    "v1Body": [
+      "|java+method:///zipkin2/storage/cassandra/CassandraStorage$SessionFactory/create(zipkin2.storage.cassandra.CassandraStorage)|",
+      "|java+constructor:///zipkin/autoconfigure/storage/cassandra3/TracingSession/TracingSession(brave.Tracing,com.datastax.driver.core.Session)|"
+    ],
+    "v2Body": [
+      "|java+method:///zipkin2/storage/cassandra/CassandraStorage$SessionFactory/create(zipkin2.storage.cassandra.CassandraStorage)|",
+      "|java+method:///brave/cassandra/driver/TracingSession/create(brave.Tracing,com.datastax.driver.core.Session)|"
+    ],
+    "affectedLib": "io.zipkin.brave.cassandra:brave-instrumentation-cassandra-driver:0.7.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "io.zipkin.java:zipkin-autoconfigure-storage-cassandra3:2.8.3",
+    "coordinatesV2": "io.zipkin.java:zipkin-autoconfigure-storage-cassandra3:2.9.1",
+    "caller": "|java+method:///zipkin/autoconfigure/storage/cassandra3/ZipkinCassandra3StorageAutoConfiguration/storage(zipkin.autoconfigure.storage.cassandra3.ZipkinCassandra3StorageProperties,boolean,boolean)|",
+    "called": "|java+method:///zipkin2/storage/cassandra/CassandraStorage$Builder/strictTraceId(boolean)|",
+    "v1Body": [
+      "|java+method:///zipkin2/storage/cassandra/CassandraStorage$Builder/build()|",
+      "|java+method:///zipkin2/storage/cassandra/CassandraStorage$Builder/strictTraceId(boolean)|",
+      "|java+method:///zipkin2/storage/cassandra/CassandraStorage$Builder/searchEnabled(boolean)|",
+      "|java+method:///zipkin/autoconfigure/storage/cassandra3/ZipkinCassandra3StorageProperties/toBuilder()|",
+      "|java+method:///zipkin2/storage/cassandra/CassandraStorage$Builder/sessionFactory(zipkin2.storage.cassandra.CassandraStorage$SessionFactory)|",
+      "|java+method:///zipkin/internal/V2StorageComponent/create(zipkin2.storage.StorageComponent)|"
+    ],
+    "v2Body": [
+      "|java+method:///zipkin2/storage/cassandra/CassandraStorage$Builder/build()|",
+      "|java+method:///zipkin2/storage/cassandra/CassandraStorage$Builder/strictTraceId(boolean)|",
+      "|java+method:///zipkin2/storage/cassandra/CassandraStorage$Builder/sessionFactory(zipkin2.storage.cassandra.CassandraStorage$SessionFactory)|",
+      "|java+method:///zipkin2/storage/cassandra/CassandraStorage$Builder/searchEnabled(boolean)|",
+      "|java+method:///zipkin/autoconfigure/storage/cassandra3/ZipkinCassandra3StorageProperties/toBuilder()|"
+    ],
+    "affectedLib": "io.zipkin.zipkin2:zipkin-storage-cassandra:2.9.1",
+    "change": "UPDATED"
+  }
+]

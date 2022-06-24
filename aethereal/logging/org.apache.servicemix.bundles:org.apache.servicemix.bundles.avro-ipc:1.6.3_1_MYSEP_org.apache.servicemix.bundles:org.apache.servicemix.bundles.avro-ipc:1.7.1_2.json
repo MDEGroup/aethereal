@@ -1,0 +1,46 @@
+[
+  {
+    "coordinatesV1": "org.apache.servicemix.bundles:org.apache.servicemix.bundles.avro-ipc:1.7.1_2",
+    "coordinatesV2": "org.apache.servicemix.bundles:org.apache.servicemix.bundles.avro-ipc:1.6.3_1",
+    "caller": "|java+method:///org/apache/avro/ipc/NettyServer$1/getPipeline()|",
+    "called": "|java+method:///org/jboss/netty/channel/Channels/pipeline()|",
+    "v1Body": [
+      "|java+method:///org/jboss/netty/channel/Channels/pipeline()|",
+      "|java+constructor:///org/apache/avro/ipc/NettyTransportCodec$NettyFrameDecoder/NettyTransportCodec$NettyFrameDecoder()|",
+      "|java+constructor:///org/apache/avro/ipc/NettyServer$NettyServerAvroHandler/NettyServer$NettyServerAvroHandler(org.apache.avro.ipc.NettyServer)|",
+      "|java+constructor:///org/apache/avro/ipc/NettyTransportCodec$NettyFrameEncoder/NettyTransportCodec$NettyFrameEncoder()|",
+      "|java+method:///org/jboss/netty/channel/ChannelPipeline/addLast(java.lang.String,org.jboss.netty.channel.ChannelHandler)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/avro/ipc/NettyTransportCodec$NettyFrameDecoder/NettyTransportCodec$NettyFrameDecoder()|",
+      "|java+method:///org/jboss/netty/channel/ChannelPipelineFactory/getPipeline()|",
+      "|java+constructor:///org/apache/avro/ipc/NettyServer$NettyServerAvroHandler/NettyServer$NettyServerAvroHandler(org.apache.avro.ipc.NettyServer)|",
+      "|java+constructor:///org/apache/avro/ipc/NettyTransportCodec$NettyFrameEncoder/NettyTransportCodec$NettyFrameEncoder()|",
+      "|java+method:///org/jboss/netty/channel/ChannelPipeline/addLast(java.lang.String,org.jboss.netty.channel.ChannelHandler)|"
+    ],
+    "affectedLib": "org.jboss.netty:netty:3.2.7.Final",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.apache.servicemix.bundles:org.apache.servicemix.bundles.avro-ipc:1.7.1_2",
+    "coordinatesV2": "org.apache.servicemix.bundles:org.apache.servicemix.bundles.avro-ipc:1.6.3_1",
+    "caller": "|java+constructor:///org/apache/avro/ipc/NettyServer/NettyServer(org.apache.avro.ipc.Responder,java.net.InetSocketAddress,org.jboss.netty.channel.ChannelFactory,org.jboss.netty.handler.execution.ExecutionHandler)|",
+    "called": "|java+constructor:///org/jboss/netty/channel/group/DefaultChannelGroup/DefaultChannelGroup(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/jboss/netty/channel/group/ChannelGroup/add(java.lang.Object)|",
+      "|java+constructor:///org/apache/avro/ipc/NettyServer$1/NettyServer$1(org.apache.avro.ipc.NettyServer,org.jboss.netty.handler.execution.ExecutionHandler)|",
+      "|java+method:///org/jboss/netty/bootstrap/ServerBootstrap/bind(java.net.SocketAddress)|",
+      "|java+constructor:///java/util/concurrent/CountDownLatch/CountDownLatch(int)|",
+      "|java+method:///org/jboss/netty/bootstrap/ServerBootstrap/setPipelineFactory(org.jboss.netty.channel.ChannelPipelineFactory)|",
+      "|java+constructor:///org/jboss/netty/bootstrap/ServerBootstrap/ServerBootstrap(org.jboss.netty.channel.ChannelFactory)|",
+      "|java+constructor:///org/jboss/netty/channel/group/DefaultChannelGroup/DefaultChannelGroup(java.lang.String)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/avro/ipc/NettyServer$2/NettyServer$2()|",
+      "|java+constructor:///org/apache/avro/ipc/NettyServer/NettyServer(org.apache.avro.ipc.Responder,java.net.InetSocketAddress,org.jboss.netty.channel.ChannelFactory,org.jboss.netty.channel.ChannelPipelineFactory,org.jboss.netty.handler.execution.ExecutionHandler)|"
+    ],
+    "affectedLib": "org.jboss.netty:netty:3.2.7.Final",
+    "change": "REMOVED"
+  }
+]

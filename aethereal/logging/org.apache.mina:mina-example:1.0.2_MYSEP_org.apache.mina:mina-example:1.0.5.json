@@ -1,0 +1,43 @@
+[
+  {
+    "coordinatesV1": "org.apache.mina:mina-example:1.0.2",
+    "coordinatesV2": "org.apache.mina:mina-example:1.0.5",
+    "caller": "|java+method:///org/apache/mina/example/chat/client/ChatClientSupport/connect(org.apache.mina.transport.socket.nio.SocketConnector,java.net.SocketAddress,boolean)|",
+    "called": "|java+constructor:///org/apache/mina/filter/SSLFilter/SSLFilter(javax.net.ssl.SSLContext)|",
+    "v1Body": [
+      "|java+method:///org/apache/mina/common/IoSession/isConnected()|",
+      "|java+method:///org/apache/mina/common/ConnectFuture/join()|",
+      "|java+method:///org/apache/mina/transport/socket/nio/SocketConnectorConfig/getFilterChain()|",
+      "|java+method:///org/apache/mina/common/DefaultIoFilterChainBuilder/addLast(java.lang.String,org.apache.mina.common.IoFilter)|",
+      "|java+method:///org/apache/mina/common/ConnectFuture/getSession()|",
+      "|java+method:///org/apache/mina/example/echoserver/ssl/BogusSSLContextFactory/getInstance(boolean)|",
+      "|java+method:///org/apache/mina/common/ConnectFuture/isConnected()|",
+      "|java+constructor:///org/apache/mina/filter/SSLFilter/SSLFilter(javax.net.ssl.SSLContext)|",
+      "|java+constructor:///java/lang/IllegalStateException/IllegalStateException(java.lang.String)|",
+      "|java+constructor:///org/apache/mina/transport/socket/nio/SocketConnectorConfig/SocketConnectorConfig()|",
+      "|java+method:///org/apache/mina/filter/SSLFilter/setUseClientMode(boolean)|",
+      "|java+method:///org/apache/mina/transport/socket/nio/SocketConnector/connect(java.net.SocketAddress,org.apache.mina.common.IoHandler,org.apache.mina.common.IoServiceConfig)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/mina/common/IoSession/isConnected()|",
+      "|java+method:///org/apache/mina/common/ConnectFuture/join()|",
+      "|java+method:///org/apache/mina/transport/socket/nio/SocketConnectorConfig/getFilterChain()|",
+      "|java+method:///org/apache/mina/common/IoSession/write(java.lang.Object)|",
+      "|java+method:///org/apache/mina/common/DefaultIoFilterChainBuilder/addLast(java.lang.String,org.apache.mina.common.IoFilter)|",
+      "|java+method:///org/apache/mina/common/ConnectFuture/getSession()|",
+      "|java+method:///java/lang/StringBuffer/append(java.lang.String)|",
+      "|java+method:///org/apache/mina/example/echoserver/ssl/BogusSSLContextFactory/getInstance(boolean)|",
+      "|java+method:///org/apache/mina/common/ConnectFuture/isConnected()|",
+      "|java+constructor:///java/lang/StringBuffer/StringBuffer()|",
+      "|java+constructor:///org/apache/mina/filter/SSLFilter/SSLFilter(javax.net.ssl.SSLContext)|",
+      "|java+constructor:///java/lang/IllegalStateException/IllegalStateException(java.lang.String)|",
+      "|java+constructor:///org/apache/mina/transport/socket/nio/SocketConnectorConfig/SocketConnectorConfig()|",
+      "|java+method:///java/lang/Exception/printStackTrace()|",
+      "|java+method:///java/lang/StringBuffer/toString()|",
+      "|java+method:///org/apache/mina/filter/SSLFilter/setUseClientMode(boolean)|",
+      "|java+method:///org/apache/mina/transport/socket/nio/SocketConnector/connect(java.net.SocketAddress,org.apache.mina.common.IoHandler,org.apache.mina.common.IoServiceConfig)|"
+    ],
+    "affectedLib": "org.apache.mina:mina-filter-ssl:1.0.5",
+    "change": "UPDATED"
+  }
+]

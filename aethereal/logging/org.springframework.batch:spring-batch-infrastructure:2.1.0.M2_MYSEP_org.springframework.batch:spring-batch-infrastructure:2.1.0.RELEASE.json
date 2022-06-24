@@ -1,0 +1,79 @@
+[
+  {
+    "coordinatesV1": "org.springframework.batch:spring-batch-infrastructure:2.1.0.M2",
+    "coordinatesV2": "org.springframework.batch:spring-batch-infrastructure:2.1.0.RELEASE",
+    "caller": "|java+method:///org/springframework/batch/item/file/mapping/BeanWrapperFieldSetMapper/mapFieldSet(org.springframework.batch.item.file.transform.FieldSet)|",
+    "called": "|java+method:///org/springframework/validation/DataBinder/getBindingResult()|",
+    "v1Body": [
+      "|java+method:///org/springframework/validation/BindingResult/hasErrors()|",
+      "|java+method:///org/springframework/batch/item/file/mapping/BeanWrapperFieldSetMapper/getBean()|",
+      "|java+method:///org/springframework/validation/BindingResult/getAllErrors()|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///org/springframework/validation/DataBinder/bind(org.springframework.beans.PropertyValues)|",
+      "|java+method:///org/springframework/batch/item/file/mapping/BeanWrapperFieldSetMapper/getBeanProperties(java.lang.Object,java.util.Properties)|",
+      "|java+constructor:///java/util/ArrayList/ArrayList(int)|",
+      "|java+method:///org/springframework/validation/ObjectError/getDefaultMessage()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/springframework/batch/item/file/mapping/BeanWrapperFieldSetMapper/createBinder(java.lang.Object)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/springframework/validation/DataBinder/getBindingResult()|",
+      "|java+method:///org/springframework/batch/item/file/transform/FieldSet/getProperties()|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+constructor:///org/springframework/batch/item/file/mapping/BindingException/BindingException(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///org/springframework/beans/MutablePropertyValues/MutablePropertyValues(java.util.Map)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/springframework/validation/BindingResult/hasErrors()|",
+      "|java+method:///org/springframework/batch/item/file/mapping/BeanWrapperFieldSetMapper/createBinder(java.lang.Object)|",
+      "|java+method:///org/springframework/batch/item/file/mapping/BeanWrapperFieldSetMapper/getBean()|",
+      "|java+constructor:///org/springframework/validation/BindException/BindException(org.springframework.validation.BindingResult)|",
+      "|java+method:///org/springframework/validation/DataBinder/bind(org.springframework.beans.PropertyValues)|",
+      "|java+method:///org/springframework/batch/item/file/mapping/BeanWrapperFieldSetMapper/getBeanProperties(java.lang.Object,java.util.Properties)|",
+      "|java+constructor:///org/springframework/beans/MutablePropertyValues/MutablePropertyValues(java.util.Map)|",
+      "|java+method:///org/springframework/validation/DataBinder/getBindingResult()|",
+      "|java+method:///org/springframework/batch/item/file/transform/FieldSet/getProperties()|"
+    ],
+    "affectedLib": "org.springframework:spring-context:2.5.6",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.springframework.batch:spring-batch-infrastructure:2.1.0.M2",
+    "coordinatesV2": "org.springframework.batch:spring-batch-infrastructure:2.1.0.RELEASE",
+    "caller": "|java+method:///org/springframework/batch/item/validator/SpringValidator/validate(java.lang.Object)|",
+    "called": "|java+constructor:///org/springframework/validation/BeanPropertyBindingResult/BeanPropertyBindingResult(java.lang.Object,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/springframework/validation/BeanPropertyBindingResult/hasErrors()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder(java.lang.String)|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+method:///org/springframework/batch/item/validator/SpringValidator/errorsToString(org.springframework.validation.Errors)|",
+      "|java+constructor:///org/springframework/validation/BeanPropertyBindingResult/BeanPropertyBindingResult(java.lang.Object,java.lang.String)|",
+      "|java+method:///org/springframework/validation/Validator/supports(java.lang.Class)|",
+      "|java+method:///org/springframework/validation/Validator/validate(java.lang.Object,org.springframework.validation.Errors)|",
+      "|java+constructor:///org/springframework/batch/item/validator/ValidationException/ValidationException(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/lang/Object/getClass()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/springframework/validation/BeanPropertyBindingResult/hasErrors()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/springframework/batch/item/validator/SpringValidator/errorsToString(org.springframework.validation.Errors)|",
+      "|java+constructor:///org/springframework/validation/BeanPropertyBindingResult/BeanPropertyBindingResult(java.lang.Object,java.lang.String)|",
+      "|java+method:///org/springframework/validation/Validator/supports(java.lang.Class)|",
+      "|java+method:///org/springframework/validation/Validator/validate(java.lang.Object,org.springframework.validation.Errors)|",
+      "|java+constructor:///org/springframework/batch/item/validator/ValidationException/ValidationException(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/lang/Object/getClass()|"
+    ],
+    "affectedLib": "org.springframework:spring-context:2.5.6",
+    "change": "ADDED"
+  }
+]

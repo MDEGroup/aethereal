@@ -1,0 +1,137 @@
+[
+  {
+    "coordinatesV1": "org.openengsb.core:openengsb-core-common:1.2.0.M5",
+    "coordinatesV2": "org.openengsb.core:openengsb-core-common:1.2.0.M4",
+    "caller": "|java+constructor:///org/openengsb/core/common/util/ContextAware/ContextAware()|",
+    "called": "|java+method:///org/springframework/security/core/context/SecurityContextHolder/getContext()|",
+    "v1Body": [
+      "|java+method:///org/openengsb/core/common/context/ContextHolder/getCurrentContextId()|",
+      "|java+method:///org/springframework/security/core/context/SecurityContextHolder/getContext()|",
+      "|java+method:///org/openengsb/core/common/context/ContextHolder/get()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/openengsb/core/api/context/ContextHolder/get()|",
+      "|java+method:///org/springframework/security/core/context/SecurityContextHolder/getContext()|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///org/openengsb/core/api/context/ContextHolder/getCurrentContextId()|"
+    ],
+    "affectedLib": "org.springframework.security:spring-security-core:3.0.5.RELEASE",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.openengsb.core:openengsb-core-common:1.2.0.M5",
+    "coordinatesV2": "org.openengsb.core:openengsb-core-common:1.2.0.M4",
+    "caller": "|java+method:///org/openengsb/core/common/util/ContextAware/applyContext()|",
+    "called": "|java+method:///org/springframework/security/core/context/SecurityContextHolder/setContext(org.springframework.security.core.context.SecurityContext)|",
+    "v1Body": [
+      "|java+method:///org/openengsb/core/common/context/ContextHolder/setCurrentContextId(java.lang.String)|",
+      "|java+method:///org/openengsb/core/common/context/ContextHolder/get()|",
+      "|java+method:///org/springframework/security/core/context/SecurityContextHolder/setContext(org.springframework.security.core.context.SecurityContext)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/openengsb/core/api/context/ContextHolder/setCurrentContextId(java.lang.String)|",
+      "|java+method:///org/openengsb/core/api/context/ContextHolder/get()|",
+      "|java+method:///org/springframework/security/core/context/SecurityContextHolder/setContext(org.springframework.security.core.context.SecurityContext)|"
+    ],
+    "affectedLib": "org.springframework.security:spring-security-core:3.0.5.RELEASE",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.openengsb.core:openengsb-core-common:1.2.0.M5",
+    "coordinatesV2": "org.openengsb.core:openengsb-core-common:1.2.0.M4",
+    "caller": "|java+constructor:///org/openengsb/core/common/ProxyFactoryBean/ProxyFactoryBean()|",
+    "called": "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|",
+    "v1Body": [
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "org.slf4j:jcl-over-slf4j:1.6.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.openengsb.core:openengsb-core-common:1.2.0.M4",
+    "coordinatesV2": "org.openengsb.core:openengsb-core-common:1.2.0.M5",
+    "caller": "|java+constructor:///org/openengsb/core/common/util/ContextAware/ContextAware()|",
+    "called": "|java+method:///org/openengsb/core/api/context/ContextHolder/getCurrentContextId()|",
+    "v1Body": [
+      "|java+method:///org/openengsb/core/common/context/ContextHolder/getCurrentContextId()|",
+      "|java+method:///org/springframework/security/core/context/SecurityContextHolder/getContext()|",
+      "|java+method:///org/openengsb/core/common/context/ContextHolder/get()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/openengsb/core/api/context/ContextHolder/get()|",
+      "|java+method:///org/springframework/security/core/context/SecurityContextHolder/getContext()|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///org/openengsb/core/api/context/ContextHolder/getCurrentContextId()|"
+    ],
+    "affectedLib": "org.openengsb.core:openengsb-core-api:1.2.0.M5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.openengsb.core:openengsb-core-common:1.2.0.M4",
+    "coordinatesV2": "org.openengsb.core:openengsb-core-common:1.2.0.M5",
+    "caller": "|java+method:///org/openengsb/core/common/AbstractDomainProvider/setBundleContext(org.osgi.framework.BundleContext)|",
+    "called": "|java+constructor:///org/openengsb/core/api/l10n/BundleStrings/BundleStrings(org.osgi.framework.Bundle)|",
+    "v1Body": [
+      "|java+method:///org/osgi/framework/BundleContext/getBundle()|",
+      "|java+constructor:///org/openengsb/core/common/l10n/BundleStrings/BundleStrings(org.osgi.framework.Bundle)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/osgi/framework/BundleContext/getBundle()|",
+      "|java+constructor:///org/openengsb/core/api/l10n/BundleStrings/BundleStrings(org.osgi.framework.Bundle)|"
+    ],
+    "affectedLib": "org.openengsb.core:openengsb-core-api:1.2.0.M5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.openengsb.core:openengsb-core-common:1.2.0.M4",
+    "coordinatesV2": "org.openengsb.core:openengsb-core-common:1.2.0.M5",
+    "caller": "|java+method:///org/openengsb/core/common/AbstractDomainProvider/getDescription()|",
+    "called": "|java+method:///org/openengsb/core/api/l10n/BundleStrings/getString(java.lang.String,java.lang.String%5B%5D)|",
+    "v1Body": [
+      "|java+method:///org/openengsb/core/common/l10n/BundleStrings/getString(java.lang.String,java.lang.String%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/openengsb/core/api/l10n/BundleStrings/getString(java.lang.String,java.lang.String%5B%5D)|"
+    ],
+    "affectedLib": "org.openengsb.core:openengsb-core-api:1.2.0.M5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.openengsb.core:openengsb-core-common:1.2.0.M4",
+    "coordinatesV2": "org.openengsb.core:openengsb-core-common:1.2.0.M5",
+    "caller": "|java+method:///org/openengsb/core/common/util/ContextAware/applyContext()|",
+    "called": "|java+method:///org/openengsb/core/api/context/ContextHolder/setCurrentContextId(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/openengsb/core/common/context/ContextHolder/setCurrentContextId(java.lang.String)|",
+      "|java+method:///org/openengsb/core/common/context/ContextHolder/get()|",
+      "|java+method:///org/springframework/security/core/context/SecurityContextHolder/setContext(org.springframework.security.core.context.SecurityContext)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/openengsb/core/api/context/ContextHolder/setCurrentContextId(java.lang.String)|",
+      "|java+method:///org/openengsb/core/api/context/ContextHolder/get()|",
+      "|java+method:///org/springframework/security/core/context/SecurityContextHolder/setContext(org.springframework.security.core.context.SecurityContext)|"
+    ],
+    "affectedLib": "org.openengsb.core:openengsb-core-api:1.2.0.M5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.openengsb.core:openengsb-core-common:1.2.0.M4",
+    "coordinatesV2": "org.openengsb.core:openengsb-core-common:1.2.0.M5",
+    "caller": "|java+method:///org/openengsb/core/common/AbstractDomainProvider/getName()|",
+    "called": "|java+method:///org/openengsb/core/api/l10n/BundleStrings/getString(java.lang.String,java.lang.String%5B%5D)|",
+    "v1Body": [
+      "|java+method:///org/openengsb/core/common/l10n/BundleStrings/getString(java.lang.String,java.lang.String%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/openengsb/core/api/l10n/BundleStrings/getString(java.lang.String,java.lang.String%5B%5D)|"
+    ],
+    "affectedLib": "org.openengsb.core:openengsb-core-api:1.2.0.M5",
+    "change": "ADDED"
+  }
+]

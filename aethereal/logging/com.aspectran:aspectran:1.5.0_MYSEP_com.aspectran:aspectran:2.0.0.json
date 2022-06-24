@@ -1,0 +1,101 @@
+[
+  {
+    "coordinatesV1": "com.aspectran:aspectran:1.5.0",
+    "coordinatesV2": "com.aspectran:aspectran:2.0.0",
+    "caller": "|java+method:///com/aspectran/core/context/bean/proxy/CglibDynamicBeanProxy/intercept(java.lang.Object,java.lang.reflect.Method,java.lang.Object%5B%5D,net.sf.cglib.proxy.MethodProxy)|",
+    "called": "|java+method:///net/sf/cglib/proxy/MethodProxy/invokeSuper(java.lang.Object,java.lang.Object%5B%5D)|",
+    "v1Body": [
+      "|java+constructor:///com/aspectran/core/context/bean/proxy/CglibDynamicBeanProxy$1/CglibDynamicBeanProxy$1(com.aspectran.core.context.bean.proxy.CglibDynamicBeanProxy,net.sf.cglib.proxy.MethodProxy,java.lang.Object,java.lang.Object%5B%5D)|",
+      "|java+method:///com/aspectran/core/context/bean/proxy/CglibDynamicBeanProxy/dynamicInvoke(java.lang.Object,java.lang.reflect.Method,java.lang.Object%5B%5D,com.aspectran.core.context.bean.proxy.ProxyMethodInvoker)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/aspectran/core/activity/Activity/setRaisedException(java.lang.Exception)|",
+      "|java+method:///com/aspectran/core/activity/Activity/forceExecute(java.util.List)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///net/sf/cglib/proxy/MethodProxy/invokeSuper(java.lang.Object,java.lang.Object%5B%5D)|",
+      "|java+method:///com/aspectran/core/context/aspect/AspectAdviceRuleRegistry/getBeforeAdviceRuleList()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///com/aspectran/core/context/bean/proxy/CglibDynamicBeanProxy/retrieveAspectAdviceRuleRegistry(com.aspectran.core.activity.Activity,java.lang.String,java.lang.String,java.lang.String,java.lang.String)|",
+      "|java+method:///com/aspectran/core/activity/Activity/isActivityEnded()|",
+      "|java+method:///com/aspectran/core/context/rule/BeanRule/getId()|",
+      "|java+method:///java/lang/Object/toString()|",
+      "|java+method:///com/aspectran/core/context/aspect/AspectAdviceRuleRegistry/getFinallyAdviceRuleList()|",
+      "|java+method:///com/aspectran/core/util/logging/Log/isTraceEnabled()|",
+      "|java+method:///com/aspectran/core/util/logging/Log/trace(java.lang.String)|",
+      "|java+method:///com/aspectran/core/context/rule/BeanRule/getClassName()|",
+      "|java+method:///java/lang/reflect/Method/getName()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///com/aspectran/core/activity/Activity/getTransletName()|",
+      "|java+method:///com/aspectran/core/context/ActivityContext/getCurrentActivity()|",
+      "|java+method:///com/aspectran/core/activity/Activity/execute(java.util.List)|",
+      "|java+method:///com/aspectran/core/context/aspect/AspectAdviceRuleRegistry/getExceptionHandlingRuleList()|",
+      "|java+method:///com/aspectran/core/activity/Activity/responseByContentType(java.util.List)|",
+      "|java+method:///com/aspectran/core/context/aspect/AspectAdviceRuleRegistry/getAfterAdviceRuleList()|"
+    ],
+    "affectedLib": "cglib:cglib-nodep:3.2.2",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.aspectran:aspectran:1.5.0",
+    "coordinatesV2": "com.aspectran:aspectran:2.0.0",
+    "caller": "|java+constructor:///com/aspectran/core/util/logging/slf4j/Slf4jImpl/Slf4jImpl(java.lang.String)|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///com/aspectran/core/util/logging/slf4j/Slf4jLoggerImpl/Slf4jLoggerImpl(org.slf4j.Logger)|",
+      "|java+method:///java/lang/Class/getMethod(java.lang.String,java.lang.Class%5B%5D)|",
+      "|java+constructor:///com/aspectran/core/util/logging/slf4j/Slf4jLocationAwareLoggerImpl/Slf4jLocationAwareLoggerImpl(org.slf4j.spi.LocationAwareLogger)|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.String)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/aspectran/core/util/logging/slf4j/Slf4jLocationAwareLoggerImpl/Slf4jLocationAwareLoggerImpl(org.slf4j.spi.LocationAwareLogger)|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.String)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.21",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.aspectran:aspectran:1.5.0",
+    "coordinatesV2": "com.aspectran:aspectran:2.0.0",
+    "caller": "|java+method:///com/aspectran/scheduler/service/QuartzSchedulerService/resume(java.lang.String)|",
+    "called": "|java+method:///org/quartz/impl/matchers/GroupMatcher/jobGroupEquals(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/quartz/impl/matchers/GroupMatcher/jobGroupEquals(java.lang.String)|",
+      "|java+method:///org/quartz/Scheduler/resumeJobs(org.quartz.impl.matchers.GroupMatcher)|",
+      "|java+method:///com/aspectran/scheduler/service/QuartzSchedulerService/getScheduler(java.lang.String)|",
+      "|java+method:///org/quartz/Scheduler/isStarted()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/quartz/impl/matchers/GroupMatcher/jobGroupEquals(java.lang.String)|",
+      "|java+method:///org/quartz/Scheduler/resumeJobs(org.quartz.impl.matchers.GroupMatcher)|",
+      "|java+method:///com/aspectran/scheduler/service/QuartzSchedulerService/getScheduler(java.lang.String)|",
+      "|java+method:///org/quartz/Scheduler/isStarted()|",
+      "|java+constructor:///com/aspectran/scheduler/service/SchedulerServiceException/SchedulerServiceException(java.lang.String,java.lang.Throwable)|"
+    ],
+    "affectedLib": "org.quartz-scheduler:quartz:2.2.3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.aspectran:aspectran:1.5.0",
+    "coordinatesV2": "com.aspectran:aspectran:2.0.0",
+    "caller": "|java+method:///com/aspectran/scheduler/service/QuartzSchedulerService/pause(java.lang.String)|",
+    "called": "|java+method:///org/quartz/impl/matchers/GroupMatcher/jobGroupEquals(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/quartz/Scheduler/pauseJobs(org.quartz.impl.matchers.GroupMatcher)|",
+      "|java+method:///org/quartz/impl/matchers/GroupMatcher/jobGroupEquals(java.lang.String)|",
+      "|java+method:///com/aspectran/scheduler/service/QuartzSchedulerService/getScheduler(java.lang.String)|",
+      "|java+method:///org/quartz/Scheduler/isStarted()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/quartz/Scheduler/pauseJobs(org.quartz.impl.matchers.GroupMatcher)|",
+      "|java+method:///org/quartz/impl/matchers/GroupMatcher/jobGroupEquals(java.lang.String)|",
+      "|java+method:///com/aspectran/scheduler/service/QuartzSchedulerService/getScheduler(java.lang.String)|",
+      "|java+method:///org/quartz/Scheduler/isStarted()|",
+      "|java+constructor:///com/aspectran/scheduler/service/SchedulerServiceException/SchedulerServiceException(java.lang.String,java.lang.Throwable)|"
+    ],
+    "affectedLib": "org.quartz-scheduler:quartz:2.2.3",
+    "change": "UPDATED"
+  }
+]

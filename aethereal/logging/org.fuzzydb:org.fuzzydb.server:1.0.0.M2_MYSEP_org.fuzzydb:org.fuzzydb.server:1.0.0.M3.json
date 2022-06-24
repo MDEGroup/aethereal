@@ -1,0 +1,286 @@
+[
+  {
+    "coordinatesV1": "org.fuzzydb:org.fuzzydb.server:1.0.0.M2",
+    "coordinatesV2": "org.fuzzydb:org.fuzzydb.server:1.0.0.M3",
+    "caller": "|java+method:///com/wwm/db/internal/table/UserTableImpl/create(com.wwm.db.internal.MetaObject)|",
+    "called": "|java+method:///com/wwm/db/internal/MetaObject/getRef()|",
+    "v1Body": [
+      "|java+method:///com/wwm/db/internal/table/Table/create(com.wwm.db.GenericRef,java.lang.Object)|",
+      "|java+constructor:///com/wwm/db/internal/server/VersionedObject/VersionedObject(java.lang.Object)|",
+      "|java+method:///com/wwm/db/internal/MetaObject/getRef()|",
+      "|java+method:///com/wwm/db/internal/MetaObject/getObject()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/wwm/db/internal/table/Table/create(com.wwm.db.Ref,java.lang.Object)|",
+      "|java+constructor:///com/wwm/db/internal/server/VersionedObject/VersionedObject(java.lang.Object)|",
+      "|java+method:///com/wwm/db/internal/MetaObject/getRef()|",
+      "|java+method:///com/wwm/db/internal/MetaObject/getObject()|"
+    ],
+    "affectedLib": "org.fuzzydb:org.fuzzydb.client:1.0.0.M3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.fuzzydb:org.fuzzydb.server:1.0.0.M2",
+    "coordinatesV2": "org.fuzzydb:org.fuzzydb.server:1.0.0.M3",
+    "caller": "|java+method:///com/wwm/db/internal/server/ServerCreateStoreTransaction/doCommitChecks()|",
+    "called": "|java+constructor:///com/wwm/db/exceptions/StoreExistsException/StoreExistsException(java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///com/wwm/db/exceptions/StoreExistsException/StoreExistsException(java.lang.String)|",
+      "|java+method:///com/wwm/db/internal/server/ServerCreateStoreTransaction/getStoreName()|",
+      "|java+method:///com/wwm/db/internal/server/Repository/getStore(java.lang.String)|",
+      "|java+method:///com/wwm/db/internal/server/ServerTransactionCoordinator/getRepository()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/wwm/db/exceptions/StoreExistsException/StoreExistsException(java.lang.String)|",
+      "|java+method:///com/wwm/db/internal/server/Repository/getStore(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder(java.lang.String)|",
+      "|java+method:///com/wwm/db/internal/server/ServerTransactionCoordinator/getRepository()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///com/wwm/db/internal/server/ServerCreateStoreTransaction/getStoreName()|"
+    ],
+    "affectedLib": "org.fuzzydb:org.fuzzydb.client:1.0.0.M3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.fuzzydb:org.fuzzydb.server:1.0.0.M2",
+    "coordinatesV2": "org.fuzzydb:org.fuzzydb.server:1.0.0.M3",
+    "caller": "|java+method:///com/wwm/db/internal/index/WhirlwindIndexManager/getWhirlwindConfig()|",
+    "called": "|java+method:///com/wwm/db/internal/MetaObject/getRef()|",
+    "v1Body": [
+      "|java+method:///com/wwm/db/internal/server/Namespace/getObject(com.wwm.db.internal.RefImpl)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder(java.lang.String)|",
+      "|java+method:///com/wwm/db/internal/MetaObject/getRef()|",
+      "|java+method:///com/wwm/db/internal/server/Namespace/toString()|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///com/wwm/db/internal/server/Namespace/retrieve(java.lang.Class,java.lang.String,java.lang.String)|",
+      "|java+method:///com/wwm/db/internal/table/UserTable/getNamespace()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///com/wwm/db/internal/index/WhirlwindIndexManager/getLog()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///com/wwm/db/internal/server/Namespace/retrieveAll(java.lang.Class)|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String)|",
+      "|java+method:///com/wwm/db/internal/MetaObject/getObject()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+method:///com/wwm/db/internal/server/Namespace/getObject(com.wwm.db.internal.RefImpl)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder(java.lang.String)|",
+      "|java+method:///com/wwm/db/internal/MetaObject/getRef()|",
+      "|java+method:///com/wwm/db/internal/server/Namespaces/getNamespace(java.lang.String)|",
+      "|java+method:///com/wwm/db/internal/server/Namespace/toString()|",
+      "|java+method:///com/wwm/db/internal/server/Namespace/getNamespaces()|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///com/wwm/db/internal/server/Namespace/retrieve(java.lang.Class,java.lang.String,java.lang.String)|",
+      "|java+method:///com/wwm/db/internal/table/UserTable/getNamespace()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///com/wwm/db/internal/index/WhirlwindIndexManager/getLog()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///com/wwm/db/internal/server/Namespace/retrieveAll(java.lang.Class)|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String)|",
+      "|java+method:///com/wwm/db/internal/MetaObject/getObject()|"
+    ],
+    "affectedLib": "org.fuzzydb:org.fuzzydb.client:1.0.0.M3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.fuzzydb:org.fuzzydb.server:1.0.0.M2",
+    "coordinatesV2": "org.fuzzydb:org.fuzzydb.server:1.0.0.M3",
+    "caller": "|java+method:///com/wwm/db/internal/table/UserTableImpl/update(com.wwm.db.internal.MetaObject)|",
+    "called": "|java+method:///com/wwm/db/internal/MetaObject/getRef()|",
+    "v1Body": [
+      "|java+method:///com/wwm/db/internal/MetaObject/getRef()|",
+      "|java+method:///com/wwm/db/internal/MetaObject/getVersion()|",
+      "|java+method:///com/wwm/db/internal/server/VersionedObject/nextVersion(java.lang.Object,int)|",
+      "|java+method:///com/wwm/db/internal/MetaObject/getObject()|",
+      "|java+method:///com/wwm/db/internal/table/Table/update(com.wwm.db.GenericRef,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/wwm/db/internal/table/Table/update(com.wwm.db.Ref,java.lang.Object)|",
+      "|java+method:///com/wwm/db/internal/MetaObject/getRef()|",
+      "|java+method:///com/wwm/db/internal/MetaObject/getVersion()|",
+      "|java+method:///com/wwm/db/internal/server/VersionedObject/nextVersion(java.lang.Object,int)|",
+      "|java+method:///com/wwm/db/internal/MetaObject/getObject()|"
+    ],
+    "affectedLib": "org.fuzzydb:org.fuzzydb.client:1.0.0.M3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.fuzzydb:org.fuzzydb.server:1.0.0.M2",
+    "coordinatesV2": "org.fuzzydb:org.fuzzydb.server:1.0.0.M3",
+    "caller": "|java+method:///com/wwm/db/internal/table/UserTableImpl/getObject(com.wwm.db.internal.RefImpl)|",
+    "called": "|java+constructor:///com/wwm/db/internal/MetaObject/MetaObject(com.wwm.db.internal.RefImpl,int,java.lang.Object)|",
+    "v1Body": [
+      "|java+constructor:///com/wwm/db/internal/MetaObject/MetaObject(com.wwm.db.internal.RefImpl,int,java.lang.Object)|",
+      "|java+method:///com/wwm/db/internal/table/Table/getObject(com.wwm.db.GenericRef)|",
+      "|java+method:///com/wwm/db/internal/server/VersionedObject/getVersion()|",
+      "|java+method:///com/wwm/db/internal/server/VersionedObject/getObject()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/wwm/db/internal/MetaObject/MetaObject(com.wwm.db.internal.RefImpl,int,java.lang.Object)|",
+      "|java+method:///com/wwm/db/internal/table/Table/getObject(com.wwm.db.Ref)|",
+      "|java+method:///com/wwm/db/internal/server/VersionedObject/getVersion()|",
+      "|java+method:///com/wwm/db/internal/server/VersionedObject/getObject()|"
+    ],
+    "affectedLib": "org.fuzzydb:org.fuzzydb.client:1.0.0.M3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.fuzzydb:org.fuzzydb.server:1.0.0.M2",
+    "coordinatesV2": "org.fuzzydb:org.fuzzydb.server:1.0.0.M3",
+    "caller": "|java+method:///com/wwm/db/internal/server/Namespace/testCanCreate(com.wwm.db.internal.MetaObject)|",
+    "called": "|java+method:///com/wwm/db/internal/MetaObject/getRef()|",
+    "v1Body": [
+      "|java+method:///com/wwm/db/internal/table/UserTable/testCanCreate(com.wwm.db.internal.MetaObject)|",
+      "|java+method:///com/wwm/db/internal/MetaObject/getRef()|",
+      "|java+method:///com/wwm/db/internal/server/Namespace/getTable(com.wwm.db.internal.RefImpl)|",
+      "|java+method:///com/wwm/db/internal/server/PublishNamespace/aspectOf()|",
+      "|java+method:///com/wwm/db/internal/server/PublishNamespace/ajc$before$com_wwm_db_internal_server_PublishNamespace$1$de90f1db(com.wwm.db.internal.server.Namespace)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/wwm/db/internal/table/UserTable/testCanCreate(com.wwm.db.internal.MetaObject)|",
+      "|java+method:///com/wwm/db/internal/MetaObject/getRef()|",
+      "|java+method:///com/wwm/db/internal/server/Indexes/testCanAdd(com.wwm.db.internal.MetaObject)|",
+      "|java+method:///com/wwm/db/internal/server/Namespace/getTable(com.wwm.db.internal.RefImpl)|",
+      "|java+method:///com/wwm/db/internal/server/PublishNamespace/aspectOf()|",
+      "|java+method:///com/wwm/db/internal/server/PublishNamespace/ajc$before$com_wwm_db_internal_server_PublishNamespace$1$de90f1db(com.wwm.db.internal.server.Namespace)|"
+    ],
+    "affectedLib": "org.fuzzydb:org.fuzzydb.client:1.0.0.M3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.fuzzydb:org.fuzzydb.server:1.0.0.M2",
+    "coordinatesV2": "org.fuzzydb:org.fuzzydb.server:1.0.0.M3",
+    "caller": "|java+method:///com/wwm/db/internal/index/btree/BTree/insert(com.wwm.db.internal.MetaObject)|",
+    "called": "|java+method:///com/wwm/db/internal/MetaObject/getRef()|",
+    "v1Body": [
+      "|java+method:///com/wwm/db/internal/index/btree/Insertor/flush()|",
+      "|java+method:///com/wwm/db/internal/index/btree/BTree/getFieldValue(java.lang.Object)|",
+      "|java+method:///com/wwm/db/internal/MetaObject/getRef()|",
+      "|java+method:///com/wwm/db/internal/MetaObject/getObject()|",
+      "|java+constructor:///com/wwm/db/internal/index/btree/Insertor/Insertor(com.wwm.db.internal.index.btree.BTree)|",
+      "|java+method:///com/wwm/db/internal/index/btree/Insertor/insert(java.lang.Comparable,com.wwm.db.GenericRef,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/wwm/db/internal/index/btree/Insertor/flush()|",
+      "|java+method:///com/wwm/db/internal/index/btree/BTree/getFieldValue(java.lang.Object)|",
+      "|java+method:///com/wwm/db/internal/MetaObject/getRef()|",
+      "|java+method:///com/wwm/db/internal/MetaObject/getObject()|",
+      "|java+constructor:///com/wwm/db/internal/index/btree/Insertor/Insertor(com.wwm.db.internal.index.btree.BTree)|",
+      "|java+method:///com/wwm/db/internal/index/btree/Insertor/insert(java.lang.Comparable,com.wwm.db.Ref,java.lang.Object)|"
+    ],
+    "affectedLib": "org.fuzzydb:org.fuzzydb.client:1.0.0.M3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.fuzzydb:org.fuzzydb.server:1.0.0.M2",
+    "coordinatesV2": "org.fuzzydb:org.fuzzydb.server:1.0.0.M3",
+    "caller": "|java+method:///com/wwm/db/internal/index/btree/BtreeLookup/get(java.lang.Comparable,com.wwm.db.internal.index.btree.NodeR)|",
+    "called": "|java+method:///com/wwm/db/internal/MetaObject/getRef()|",
+    "v1Body": [
+      "|java+method:///java/util/ArrayList/iterator()|",
+      "|java+method:///java/util/HashSet/contains(java.lang.Object)|",
+      "|java+method:///java/util/Map$Entry/getKey()|",
+      "|java+method:///com/wwm/db/internal/table/Table/getObject(com.wwm.db.GenericRef)|",
+      "|java+method:///com/wwm/db/internal/index/btree/BranchNodeR/getPendingOps()|",
+      "|java+method:///com/wwm/db/internal/index/btree/BranchNodeR/getRightChild()|",
+      "|java+method:///java/util/Set/iterator()|",
+      "|java+method:///java/util/HashSet/addAll(java.util.Collection)|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/util/Map$Entry/getValue()|",
+      "|java+method:///java/util/TreeMap/entrySet()|",
+      "|java+method:///java/util/ArrayList/get(int)|",
+      "|java+method:///java/util/HashMap/get(java.lang.Object)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/lang/Comparable/compareTo(java.lang.Object)|",
+      "|java+method:///java/util/HashSet/remove(java.lang.Object)|",
+      "|java+method:///com/wwm/db/internal/index/btree/BtreeLookup/get(java.lang.Comparable,com.wwm.db.internal.index.btree.NodeR)|",
+      "|java+method:///com/wwm/db/internal/index/btree/PendingOperations/getInserts()|",
+      "|java+method:///com/wwm/db/internal/index/btree/LeafNodeR/getChildren(java.lang.Comparable)|",
+      "|java+method:///com/wwm/db/internal/index/btree/BtreeLookup/convertObject(java.lang.Object)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///com/wwm/db/internal/index/btree/PendingOperations/getRemovals()|",
+      "|java+method:///java/util/ArrayList/size()|",
+      "|java+method:///com/wwm/db/internal/index/btree/BranchNodeR/getChildren()|",
+      "|java+method:///com/wwm/db/internal/MetaObject/getRef()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/ArrayList/iterator()|",
+      "|java+method:///java/util/HashSet/contains(java.lang.Object)|",
+      "|java+method:///java/util/Map$Entry/getKey()|",
+      "|java+method:///com/wwm/db/internal/table/Table/getObject(com.wwm.db.Ref)|",
+      "|java+method:///com/wwm/db/internal/index/btree/BranchNodeR/getPendingOps()|",
+      "|java+method:///com/wwm/db/internal/index/btree/BranchNodeR/getRightChild()|",
+      "|java+method:///java/util/Set/iterator()|",
+      "|java+method:///java/util/HashSet/addAll(java.util.Collection)|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/util/Map$Entry/getValue()|",
+      "|java+method:///java/util/TreeMap/entrySet()|",
+      "|java+method:///java/util/ArrayList/get(int)|",
+      "|java+method:///java/util/HashMap/get(java.lang.Object)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/lang/Comparable/compareTo(java.lang.Object)|",
+      "|java+method:///java/util/HashSet/remove(java.lang.Object)|",
+      "|java+method:///com/wwm/db/internal/index/btree/BtreeLookup/get(java.lang.Comparable,com.wwm.db.internal.index.btree.NodeR)|",
+      "|java+method:///com/wwm/db/internal/index/btree/PendingOperations/getInserts()|",
+      "|java+method:///com/wwm/db/internal/index/btree/LeafNodeR/getChildren(java.lang.Comparable)|",
+      "|java+method:///com/wwm/db/internal/index/btree/BtreeLookup/convertObject(java.lang.Object)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///com/wwm/db/internal/index/btree/PendingOperations/getRemovals()|",
+      "|java+method:///java/util/ArrayList/size()|",
+      "|java+method:///com/wwm/db/internal/index/btree/BranchNodeR/getChildren()|",
+      "|java+method:///com/wwm/db/internal/MetaObject/getRef()|"
+    ],
+    "affectedLib": "org.fuzzydb:org.fuzzydb.client:1.0.0.M3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.fuzzydb:org.fuzzydb.server:1.0.0.M2",
+    "coordinatesV2": "org.fuzzydb:org.fuzzydb.server:1.0.0.M3",
+    "caller": "|java+method:///com/wwm/db/internal/server/PersistentServerTransaction/doSearchFetch(int,int,com.wwm.io.core.MessageSink,com.wwm.db.internal.search.Search,int)|",
+    "called": "|java+constructor:///com/wwm/db/internal/comms/messages/WWSearchOkayRsp/WWSearchOkayRsp(int,int,java.util.ArrayList,java.util.ArrayList,boolean)|",
+    "v1Body": [
+      "|java+method:///java/util/ArrayList/iterator()|",
+      "|java+method:///com/wwm/db/internal/search/NextItem/getScore()|",
+      "|java+constructor:///com/wwm/db/internal/comms/messages/WWSearchNomineeOkayRsp/WWSearchNomineeOkayRsp(int,int,java.util.ArrayList,java.util.ArrayList,boolean)|",
+      "|java+method:///com/wwm/db/marker/IWhirlwindItem/getNominee()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+constructor:///java/lang/AssertionError/AssertionError()|",
+      "|java+method:///com/wwm/db/internal/search/Search/getNextResults(int)|",
+      "|java+method:///com/wwm/db/internal/search/Search/isMoreResults()|",
+      "|java+constructor:///com/wwm/db/internal/comms/messages/WWSearchOkayRsp/WWSearchOkayRsp(int,int,java.util.ArrayList,java.util.ArrayList,boolean)|",
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///com/wwm/io/core/MessageSink/send(com.wwm.io.core.Message)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///com/wwm/db/internal/search/NextItem/getItem()|",
+      "|java+method:///java/util/ArrayList/add(java.lang.Object)|",
+      "|java+method:///com/wwm/db/internal/search/Search/isNominee()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/ArrayList/iterator()|",
+      "|java+method:///com/wwm/db/internal/search/NextItem/getScore()|",
+      "|java+constructor:///com/wwm/db/internal/comms/messages/WWSearchNomineeOkayRsp/WWSearchNomineeOkayRsp(int,int,java.util.ArrayList,java.util.ArrayList,boolean)|",
+      "|java+method:///com/wwm/db/marker/IWhirlwindItem/getNominee()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///com/wwm/db/internal/MetaObject/getObject()|",
+      "|java+constructor:///java/lang/AssertionError/AssertionError()|",
+      "|java+method:///com/wwm/db/internal/search/Search/getNextResults(int)|",
+      "|java+method:///com/wwm/db/internal/search/Search/isMoreResults()|",
+      "|java+constructor:///com/wwm/db/internal/comms/messages/WWSearchOkayRsp/WWSearchOkayRsp(int,int,java.util.ArrayList,java.util.ArrayList,boolean)|",
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///com/wwm/io/core/MessageSink/send(com.wwm.io.core.Message)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///com/wwm/db/internal/search/NextItem/getItem()|",
+      "|java+method:///java/util/ArrayList/add(java.lang.Object)|",
+      "|java+method:///com/wwm/db/internal/search/Search/isNominee()|"
+    ],
+    "affectedLib": "org.fuzzydb:org.fuzzydb.client:1.0.0.M3",
+    "change": "UPDATED"
+  }
+]

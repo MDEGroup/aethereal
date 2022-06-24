@@ -1,0 +1,51 @@
+[
+  {
+    "coordinatesV1": "org.apache.continuum:continuum-commons:1.4.0",
+    "coordinatesV2": "org.apache.continuum:continuum-commons:1.4.1",
+    "caller": "|java+method:///org/apache/maven/continuum/configuration/DefaultConfigurationService/isInitialized()|",
+    "called": "|java+method:///org/apache/maven/continuum/model/system/SystemConfiguration/isInitialized()|",
+    "v1Body": [
+      "|java+method:///org/apache/maven/continuum/model/system/SystemConfiguration/isInitialized()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/continuum/configuration/GeneralConfiguration/isInitialized()|",
+      "|java+method:///org/apache/maven/continuum/model/system/SystemConfiguration/isInitialized()|"
+    ],
+    "affectedLib": "org.apache.continuum:continuum-model:1.4.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.continuum:continuum-commons:1.4.0",
+    "coordinatesV2": "org.apache.continuum:continuum-commons:1.4.1",
+    "caller": "|java+method:///org/apache/maven/continuum/configuration/DefaultConfigurationService/addBuildAgent(org.apache.continuum.configuration.BuildAgentConfiguration)|",
+    "called": "|java+constructor:///org/apache/maven/continuum/configuration/ConfigurationException/ConfigurationException(java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/apache/continuum/configuration/BuildAgentConfiguration/getUrl()|",
+      "|java+method:///org/apache/continuum/configuration/GeneralConfiguration/setBuildAgents(java.util.List)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///org/apache/continuum/configuration/GeneralConfiguration/getBuildAgents()|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+constructor:///org/apache/maven/continuum/configuration/ConfigurationException/ConfigurationException(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/lang/String/trim()|",
+      "|java+method:///org/apache/continuum/configuration/BuildAgentConfiguration/getUrl()|",
+      "|java+method:///org/apache/continuum/configuration/GeneralConfiguration/setBuildAgents(java.util.List)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///org/apache/continuum/configuration/GeneralConfiguration/getBuildAgents()|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///org/apache/continuum/configuration/BuildAgentConfiguration/setUrl(java.lang.String)|",
+      "|java+constructor:///org/apache/maven/continuum/configuration/ConfigurationException/ConfigurationException(java.lang.String)|"
+    ],
+    "affectedLib": "org.apache.continuum:continuum-api:1.4.1",
+    "change": "UPDATED"
+  }
+]

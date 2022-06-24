@@ -1,0 +1,42 @@
+[
+  {
+    "coordinatesV1": "org.apache.mina:mina-filter-ssl:1.0.1",
+    "coordinatesV2": "org.apache.mina:mina-filter-ssl:1.0.2",
+    "caller": "|java+method:///org/apache/mina/filter/SSLFilter/onPostAdd(org.apache.mina.common.IoFilterChain,java.lang.String,org.apache.mina.common.IoFilter$NextFilter)|",
+    "called": "|java+method:///org/apache/mina/filter/SSLFilter/getSSLSessionHandler(org.apache.mina.common.IoSession)|",
+    "v1Body": [
+      "|java+method:///org/apache/mina/common/IoFilterChain/getSession()|",
+      "|java+constructor:///org/apache/mina/filter/support/SSLHandler/SSLHandler(org.apache.mina.filter.SSLFilter,javax.net.ssl.SSLContext,org.apache.mina.common.IoSession)|",
+      "|java+method:///org/apache/mina/filter/support/SSLHandler/handshake(org.apache.mina.common.IoFilter$NextFilter)|",
+      "|java+method:///org/apache/mina/common/IoSession/setAttribute(java.lang.String,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/mina/common/IoFilterChain/getSession()|",
+      "|java+method:///org/apache/mina/filter/SSLFilter/getSSLSessionHandler(org.apache.mina.common.IoSession)|",
+      "|java+method:///org/apache/mina/filter/support/SSLHandler/handshake(org.apache.mina.common.IoFilter$NextFilter)|"
+    ],
+    "affectedLib": "org.apache.directory.mina:mina-filter-ssl:0.9.2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.mina:mina-filter-ssl:1.0.1",
+    "coordinatesV2": "org.apache.mina:mina-filter-ssl:1.0.2",
+    "caller": "|java+method:///org/apache/mina/filter/SSLFilter/onPreAdd(org.apache.mina.common.IoFilterChain,java.lang.String,org.apache.mina.common.IoFilter$NextFilter)|",
+    "called": "|java+method:///org/apache/mina/filter/SSLFilter/class$(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/apache/mina/common/IoFilterChain/contains(java.lang.Class)|",
+      "|java+constructor:///java/lang/IllegalStateException/IllegalStateException(java.lang.String)|",
+      "|java+method:///org/apache/mina/filter/SSLFilter/class$(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/mina/common/IoFilterChain/contains(java.lang.Class)|",
+      "|java+method:///org/apache/mina/common/IoFilterChain/getSession()|",
+      "|java+constructor:///java/lang/IllegalStateException/IllegalStateException(java.lang.String)|",
+      "|java+constructor:///org/apache/mina/filter/support/SSLHandler/SSLHandler(org.apache.mina.filter.SSLFilter,javax.net.ssl.SSLContext,org.apache.mina.common.IoSession)|",
+      "|java+method:///org/apache/mina/filter/SSLFilter/class$(java.lang.String)|",
+      "|java+method:///org/apache/mina/common/IoSession/setAttribute(java.lang.String,java.lang.Object)|"
+    ],
+    "affectedLib": "org.apache.directory.mina:mina-filter-ssl:0.9.2",
+    "change": "ADDED"
+  }
+]

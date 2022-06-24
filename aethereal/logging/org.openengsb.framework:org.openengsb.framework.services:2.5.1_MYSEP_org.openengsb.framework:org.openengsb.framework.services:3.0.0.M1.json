@@ -1,0 +1,603 @@
+[
+  {
+    "coordinatesV1": "org.openengsb.framework:org.openengsb.framework.services:2.5.1",
+    "coordinatesV2": "org.openengsb.framework:org.openengsb.framework.services:3.0.0.M1",
+    "caller": "|java+method:///org/openengsb/core/services/internal/deployer/connector/ConnectorFile/readProperties(java.io.File)|",
+    "called": "|java+method:///org/apache/commons/io/IOUtils/closeQuietly(java.io.Reader)|",
+    "v1Body": [
+      "|java+constructor:///java/lang/IllegalStateException/IllegalStateException(java.lang.Throwable)|",
+      "|java+constructor:///java/util/Properties/Properties()|",
+      "|java+method:///org/apache/commons/io/IOUtils/closeQuietly(java.io.Reader)|",
+      "|java+method:///com/google/common/collect/Maps/fromProperties(java.util.Properties)|",
+      "|java+constructor:///java/io/FileReader/FileReader(java.io.File)|",
+      "|java+method:///java/util/Properties/load(java.io.Reader)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/lang/IllegalStateException/IllegalStateException(java.lang.Throwable)|",
+      "|java+method:///com/google/common/collect/Maps/transformValues(java.util.Map,com.google.common.base.Function)|",
+      "|java+method:///com/google/common/collect/ImmutableMap/copyOf(java.util.Map)|",
+      "|java+method:///org/apache/commons/io/IOUtils/closeQuietly(java.io.Reader)|",
+      "|java+method:///com/google/common/collect/Maps/fromProperties(java.util.Properties)|",
+      "|java+constructor:///java/io/FileReader/FileReader(java.io.File)|",
+      "|java+method:///java/util/Properties/load(java.io.Reader)|",
+      "|java+constructor:///org/openengsb/core/services/internal/deployer/connector/ConnectorFile$TrimFunction/ConnectorFile$TrimFunction(org.openengsb.core.services.internal.deployer.connector.ConnectorFile,org.openengsb.core.services.internal.deployer.connector.ConnectorFile$1)|",
+      "|java+constructor:///java/util/Properties/Properties()|"
+    ],
+    "affectedLib": "org.apache.directory.server:apacheds-all:2.0.0-M8",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.openengsb.framework:org.openengsb.framework.services:2.5.1",
+    "coordinatesV2": "org.openengsb.framework:org.openengsb.framework.services:3.0.0.M1",
+    "caller": "|java+method:///org/openengsb/core/services/internal/deployer/connector/ConnectorDeployerService/doUpdate(java.io.File)|",
+    "called": "|java+method:///org/apache/commons/io/FileUtils/moveFile(java.io.File,java.io.File)|",
+    "v1Body": [
+      "|java+method:///java/io/File/getName()|",
+      "|java+method:///java/util/Properties/store(java.io.Writer,java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/openengsb/core/services/internal/deployer/connector/ConnectorDeployerService/login()|",
+      "|java+method:///org/apache/commons/io/FileUtils/moveFile(java.io.File,java.io.File)|",
+      "|java+method:///org/openengsb/core/api/ConnectorManager/getAttributeValues(org.openengsb.core.api.model.ConnectorId)|",
+      "|java+method:///org/openengsb/core/services/internal/deployer/connector/ConnectorDeployerService/applyChanges(org.openengsb.core.api.model.ConnectorDescription,org.openengsb.core.services.internal.deployer.connector.ConnectorFile$ChangeSet)|",
+      "|java+method:///org/openengsb/core/services/internal/deployer/connector/ConnectorFile/toProperties()|",
+      "|java+method:///org/openengsb/core/services/internal/deployer/connector/ConnectorFile/getConnectorId()|",
+      "|java+method:///org/openengsb/core/services/internal/deployer/connector/ConnectorFile/getChanges(java.io.File)|",
+      "|java+method:///org/openengsb/core/api/ConnectorManager/update(org.openengsb.core.api.model.ConnectorId,org.openengsb.core.api.model.ConnectorDescription)|",
+      "|java+method:///com/google/common/cache/LoadingCache/get(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/openengsb/core/services/internal/deployer/connector/ConnectorFile/update(java.io.File)|",
+      "|java+method:///org/openengsb/core/services/internal/deployer/connector/ConnectorDeployerService/logout()|",
+      "|java+constructor:///java/io/FileWriter/FileWriter(java.io.File)|",
+      "|java+method:///org/openengsb/core/services/internal/deployer/connector/ConnectorDeployerService/getBackupFile(java.io.File)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/io/File/getName()|",
+      "|java+method:///java/util/Properties/store(java.io.Writer,java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/openengsb/core/services/SecurityContext/executeWithSystemPermissions(java.util.concurrent.Callable)|",
+      "|java+method:///org/apache/commons/io/FileUtils/moveFile(java.io.File,java.io.File)|",
+      "|java+method:///org/openengsb/core/services/internal/deployer/connector/ConnectorDeployerService/applyChanges(org.openengsb.core.api.model.ConnectorDescription,org.openengsb.core.services.internal.deployer.connector.ConnectorFile$ChangeSet)|",
+      "|java+method:///org/openengsb/core/services/internal/deployer/connector/ConnectorFile/toProperties()|",
+      "|java+constructor:///org/openengsb/core/services/internal/deployer/connector/ConnectorDeployerService$5/ConnectorDeployerService$5(org.openengsb.core.services.internal.deployer.connector.ConnectorDeployerService,java.lang.String,org.openengsb.core.api.model.ConnectorDescription)|",
+      "|java+method:///org/openengsb/core/services/internal/deployer/connector/ConnectorFile/getChanges(java.io.File)|",
+      "|java+method:///com/google/common/cache/LoadingCache/get(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/openengsb/core/services/internal/deployer/connector/ConnectorFile/getName()|",
+      "|java+method:///org/openengsb/core/services/internal/deployer/connector/ConnectorFile/update(java.io.File)|",
+      "|java+constructor:///java/io/FileWriter/FileWriter(java.io.File)|",
+      "|java+method:///org/openengsb/core/services/internal/deployer/connector/ConnectorDeployerService/getBackupFile(java.io.File)|",
+      "|java+method:///org/openengsb/core/api/ConnectorManager/getAttributeValues(java.lang.String)|"
+    ],
+    "affectedLib": "org.apache.directory.server:apacheds-all:2.0.0-M8",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.openengsb.framework:org.openengsb.framework.services:2.5.1",
+    "coordinatesV2": "org.openengsb.framework:org.openengsb.framework.services:3.0.0.M1",
+    "caller": "|java+method:///org/openengsb/core/services/internal/RequestHandlerImpl/getArgTypes(org.openengsb.core.api.remote.MethodCall)|",
+    "called": "|java+method:///org/apache/commons/lang/ClassUtils/getClass(java.lang.ClassLoader,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/openengsb/core/api/remote/MethodCall/getClasses()|",
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/lang/ClassLoader/loadClass(java.lang.String)|",
+      "|java+method:///java/util/List/toArray(java.lang.Object%5B%5D)|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///java/lang/Class/getClassLoader()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/openengsb/core/api/remote/MethodCall/getClasses()|",
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/List/toArray(java.lang.Object%5B%5D)|",
+      "|java+method:///org/apache/commons/lang/ClassUtils/getClass(java.lang.ClassLoader,java.lang.String)|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///java/lang/Class/getClassLoader()|"
+    ],
+    "affectedLib": "org.apache.directory.server:apacheds-all:2.0.0-M8",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.openengsb.framework:org.openengsb.framework.services:2.5.1",
+    "coordinatesV2": "org.openengsb.framework:org.openengsb.framework.services:3.0.0.M1",
+    "caller": "|java+initializer:///org/openengsb/core/services/internal/deployer/connector/ConnectorDeployerService/ConnectorDeployerService$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "affectedLib": "org.apache.directory.server:apacheds-all:2.0.0-M8",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.openengsb.framework:org.openengsb.framework.services:2.5.1",
+    "coordinatesV2": "org.openengsb.framework:org.openengsb.framework.services:3.0.0.M1",
+    "caller": "|java+constructor:///org/openengsb/core/services/internal/deployer/connector/ConnectorFile/ConnectorFile(java.io.File)|",
+    "called": "|java+method:///org/apache/commons/io/FilenameUtils/removeExtension(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/io/FilenameUtils/removeExtension(java.lang.String)|",
+      "|java+method:///java/io/File/getName()|",
+      "|java+method:///org/openengsb/core/api/model/ConnectorId/fromFullId(java.lang.String)|",
+      "|java+method:///org/openengsb/core/services/internal/deployer/connector/ConnectorFile/update(java.io.File)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/io/FilenameUtils/removeExtension(java.lang.String)|",
+      "|java+method:///java/io/File/getName()|",
+      "|java+method:///org/openengsb/core/services/internal/deployer/connector/ConnectorFile/update(java.io.File)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "org.apache.directory.server:apacheds-all:2.0.0-M8",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.openengsb.framework:org.openengsb.framework.services:2.5.1",
+    "coordinatesV2": "org.openengsb.framework:org.openengsb.framework.services:3.0.0.M1",
+    "caller": "|java+method:///org/openengsb/core/services/internal/deployer/connector/ConnectorFile/readProperties(java.io.File)|",
+    "called": "|java+method:///com/google/common/collect/ImmutableMap/copyOf(java.util.Map)|",
+    "v1Body": [
+      "|java+constructor:///java/lang/IllegalStateException/IllegalStateException(java.lang.Throwable)|",
+      "|java+constructor:///java/util/Properties/Properties()|",
+      "|java+method:///org/apache/commons/io/IOUtils/closeQuietly(java.io.Reader)|",
+      "|java+method:///com/google/common/collect/Maps/fromProperties(java.util.Properties)|",
+      "|java+constructor:///java/io/FileReader/FileReader(java.io.File)|",
+      "|java+method:///java/util/Properties/load(java.io.Reader)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/lang/IllegalStateException/IllegalStateException(java.lang.Throwable)|",
+      "|java+method:///com/google/common/collect/Maps/transformValues(java.util.Map,com.google.common.base.Function)|",
+      "|java+method:///com/google/common/collect/ImmutableMap/copyOf(java.util.Map)|",
+      "|java+method:///org/apache/commons/io/IOUtils/closeQuietly(java.io.Reader)|",
+      "|java+method:///com/google/common/collect/Maps/fromProperties(java.util.Properties)|",
+      "|java+constructor:///java/io/FileReader/FileReader(java.io.File)|",
+      "|java+method:///java/util/Properties/load(java.io.Reader)|",
+      "|java+constructor:///org/openengsb/core/services/internal/deployer/connector/ConnectorFile$TrimFunction/ConnectorFile$TrimFunction(org.openengsb.core.services.internal.deployer.connector.ConnectorFile,org.openengsb.core.services.internal.deployer.connector.ConnectorFile$1)|",
+      "|java+constructor:///java/util/Properties/Properties()|"
+    ],
+    "affectedLib": "com.google.guava:guava:14.0.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.openengsb.framework:org.openengsb.framework.services:2.5.1",
+    "coordinatesV2": "org.openengsb.framework:org.openengsb.framework.services:3.0.0.M1",
+    "caller": "|java+constructor:///org/openengsb/core/services/internal/deployer/connector/ConnectorDeployerService/ConnectorDeployerService()|",
+    "called": "|java+method:///com/google/common/cache/CacheBuilder/build(com.google.common.cache.CacheLoader)|",
+    "v1Body": [
+      "|java+method:///com/google/common/cache/CacheBuilder/newBuilder()|",
+      "|java+constructor:///org/openengsb/core/common/AbstractOpenEngSBService/AbstractOpenEngSBService()|",
+      "|java+method:///com/google/common/cache/CacheBuilder/build(com.google.common.cache.CacheLoader)|",
+      "|java+constructor:///org/openengsb/core/services/internal/deployer/connector/ConnectorDeployerService$2/ConnectorDeployerService$2(org.openengsb.core.services.internal.deployer.connector.ConnectorDeployerService)|",
+      "|java+constructor:///org/openengsb/core/services/internal/deployer/connector/ConnectorDeployerService$1/ConnectorDeployerService$1(org.openengsb.core.services.internal.deployer.connector.ConnectorDeployerService)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/common/cache/CacheBuilder/newBuilder()|",
+      "|java+constructor:///org/openengsb/core/common/AbstractOpenEngSBService/AbstractOpenEngSBService()|",
+      "|java+method:///com/google/common/collect/Sets/newHashSet()|",
+      "|java+method:///com/google/common/cache/CacheBuilder/build(com.google.common.cache.CacheLoader)|",
+      "|java+constructor:///org/openengsb/core/services/internal/deployer/connector/ConnectorDeployerService$2/ConnectorDeployerService$2(org.openengsb.core.services.internal.deployer.connector.ConnectorDeployerService)|",
+      "|java+constructor:///org/openengsb/core/services/internal/deployer/connector/ConnectorDeployerService$1/ConnectorDeployerService$1(org.openengsb.core.services.internal.deployer.connector.ConnectorDeployerService)|"
+    ],
+    "affectedLib": "com.google.guava:guava:14.0.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.openengsb.framework:org.openengsb.framework.services:2.5.1",
+    "coordinatesV2": "org.openengsb.framework:org.openengsb.framework.services:3.0.0.M1",
+    "caller": "|java+method:///org/openengsb/core/services/internal/deployer/connector/ConnectorFile/getChanges(java.io.File)|",
+    "called": "|java+method:///com/google/common/collect/Maps/difference(java.util.Map,java.util.Map)|",
+    "v1Body": [
+      "|java+method:///com/google/common/collect/Maps/difference(java.util.Map,java.util.Map)|",
+      "|java+constructor:///org/openengsb/core/services/internal/deployer/connector/ConnectorFile$ChangeSet/ConnectorFile$ChangeSet(com.google.common.collect.MapDifference,com.google.common.collect.MapDifference)|",
+      "|java+method:///org/openengsb/core/services/internal/deployer/connector/ConnectorFile/getAttributesFromMap(com.google.common.collect.ImmutableMap)|",
+      "|java+method:///org/openengsb/core/services/internal/deployer/connector/ConnectorFile/readProperties(java.io.File)|",
+      "|java+method:///org/openengsb/core/services/internal/deployer/connector/ConnectorFile/getPropertiesFromMap(java.util.Map)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/common/collect/ImmutableMap/get(java.lang.Object)|",
+      "|java+method:///com/google/common/collect/Maps/difference(java.util.Map,java.util.Map)|",
+      "|java+constructor:///org/openengsb/core/services/internal/deployer/connector/ConnectorFile$ChangeSet/ConnectorFile$ChangeSet(java.lang.String,java.lang.String,com.google.common.collect.MapDifference,com.google.common.collect.MapDifference)|",
+      "|java+method:///org/openengsb/core/services/internal/deployer/connector/ConnectorFile/getAttributesFromMap(com.google.common.collect.ImmutableMap)|",
+      "|java+method:///org/openengsb/core/services/internal/deployer/connector/ConnectorFile/readProperties(java.io.File)|",
+      "|java+method:///org/openengsb/core/services/internal/deployer/connector/ConnectorFile/getPropertiesFromMap(java.util.Map)|"
+    ],
+    "affectedLib": "com.google.guava:guava:14.0.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.openengsb.framework:org.openengsb.framework.services:2.5.1",
+    "coordinatesV2": "org.openengsb.framework:org.openengsb.framework.services:3.0.0.M1",
+    "caller": "|java+method:///org/openengsb/core/services/internal/DefaultWiringService/getDomainEndpoints(java.lang.Class,java.lang.String,java.lang.String)|",
+    "called": "|java+method:///org/openengsb/core/util/OsgiUtils/getFilterForLocation(java.lang.Class,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///org/osgi/framework/FrameworkUtil/createFilter(java.lang.String)|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.Throwable)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+method:///org/openengsb/core/api/OsgiUtilsService/getFilterForLocation(java.lang.Class,java.lang.String)|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/osgi/framework/BundleContext/getAllServiceReferences(java.lang.String,java.lang.String)|",
+      "|java+method:///org/osgi/framework/Filter/toString()|",
+      "|java+method:///org/openengsb/core/api/OsgiUtilsService/getOsgiServiceProxy(org.osgi.framework.Filter,java.lang.Class)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///org/osgi/framework/ServiceReference/getProperty(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///org/osgi/framework/FrameworkUtil/createFilter(java.lang.String)|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.Throwable)|",
+      "|java+method:///org/openengsb/core/services/internal/DefaultWiringService/getServiceUtils()|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+method:///org/openengsb/core/util/OsgiUtils/getFilterForLocation(java.lang.Class,java.lang.String)|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/osgi/framework/BundleContext/getAllServiceReferences(java.lang.String,java.lang.String)|",
+      "|java+method:///org/osgi/framework/Filter/toString()|",
+      "|java+method:///org/openengsb/core/api/OsgiUtilsService/getOsgiServiceProxy(org.osgi.framework.Filter,java.lang.Class)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///org/osgi/framework/ServiceReference/getProperty(java.lang.String)|"
+    ],
+    "affectedLib": "org.openengsb.framework:org.openengsb.framework.util:3.0.0.M1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.openengsb.framework:org.openengsb.framework.services:2.5.1",
+    "coordinatesV2": "org.openengsb.framework:org.openengsb.framework.services:3.0.0.M1",
+    "caller": "|java+method:///org/openengsb/core/services/internal/DefaultWiringService/getDomainEndpoint(java.lang.Class,java.lang.String,java.lang.String)|",
+    "called": "|java+method:///org/openengsb/core/util/OsgiUtils/getFilterForLocation(java.lang.Class,java.lang.String,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/openengsb/core/api/OsgiUtilsService/getFilterForLocation(java.lang.Class,java.lang.String,java.lang.String)|",
+      "|java+method:///org/openengsb/core/api/OsgiUtilsService/getOsgiServiceProxy(org.osgi.framework.Filter,java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/openengsb/core/util/OsgiUtils/getFilterForLocation(java.lang.Class,java.lang.String,java.lang.String)|",
+      "|java+method:///org/openengsb/core/services/internal/DefaultWiringService/getServiceUtils()|",
+      "|java+method:///org/openengsb/core/api/OsgiUtilsService/getOsgiServiceProxy(org.osgi.framework.Filter,java.lang.Class)|"
+    ],
+    "affectedLib": "org.openengsb.framework:org.openengsb.framework.util:3.0.0.M1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.openengsb.framework:org.openengsb.framework.services:2.5.1",
+    "coordinatesV2": "org.openengsb.framework:org.openengsb.framework.services:3.0.0.M1",
+    "caller": "|java+method:///org/openengsb/core/services/internal/deployer/connector/ConnectorDeployerService/applyChanges(org.openengsb.core.api.model.ConnectorDescription,org.openengsb.core.services.internal.deployer.connector.ConnectorFile$ChangeSet)|",
+    "called": "|java+method:///org/openengsb/core/util/ConfigUtils/updateMap(java.util.Map,com.google.common.collect.MapDifference)|",
+    "v1Body": [
+      "|java+constructor:///java/util/Hashtable/Hashtable(java.util.Map)|",
+      "|java+method:///org/openengsb/core/services/internal/deployer/connector/ConnectorFile$ChangeSet/getChangedProperties()|",
+      "|java+method:///org/openengsb/core/services/internal/deployer/connector/ConnectorFile$ChangeSet/getChangedAttributes()|",
+      "|java+constructor:///org/openengsb/core/api/model/ConnectorDescription/ConnectorDescription(java.util.Map,java.util.Map)|",
+      "|java+method:///org/openengsb/core/common/util/ConfigUtils/updateMap(java.util.Map,com.google.common.collect.MapDifference)|",
+      "|java+method:///org/openengsb/core/api/model/ConnectorDescription/getProperties()|",
+      "|java+method:///org/openengsb/core/api/model/ConnectorDescription/getAttributes()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/openengsb/core/util/ConfigUtils/updateMap(java.util.Map,com.google.common.collect.MapDifference)|",
+      "|java+constructor:///java/util/Hashtable/Hashtable(java.util.Map)|",
+      "|java+method:///org/openengsb/core/services/internal/deployer/connector/ConnectorFile$ChangeSet/getChangedAttributes()|",
+      "|java+constructor:///org/openengsb/core/api/model/ConnectorDescription/ConnectorDescription(java.lang.String,java.lang.String,java.util.Map,java.util.Map)|",
+      "|java+method:///org/openengsb/core/services/internal/deployer/connector/ConnectorFile$ChangeSet/getDomainType()|",
+      "|java+method:///org/openengsb/core/api/model/ConnectorDescription/getProperties()|",
+      "|java+method:///org/openengsb/core/api/model/ConnectorDescription/getAttributes()|",
+      "|java+method:///org/openengsb/core/services/internal/deployer/connector/ConnectorFile$ChangeSet/getChangedProperties()|",
+      "|java+method:///org/openengsb/core/services/internal/deployer/connector/ConnectorFile$ChangeSet/getConnectorType()|"
+    ],
+    "affectedLib": "org.openengsb.framework:org.openengsb.framework.util:3.0.0.M1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.openengsb.framework:org.openengsb.framework.services:2.5.1",
+    "coordinatesV2": "org.openengsb.framework:org.openengsb.framework.services:3.0.0.M1",
+    "caller": "|java+method:///org/openengsb/core/services/internal/virtual/CompositeConnectorProvider/createFactory(org.openengsb.core.api.DomainProvider)|",
+    "called": "|java+constructor:///org/openengsb/core/util/DefaultOsgiUtilsService/DefaultOsgiUtilsService(org.osgi.framework.BundleContext)|",
+    "v1Body": [
+      "|java+constructor:///org/openengsb/core/common/util/DefaultOsgiUtilsService/DefaultOsgiUtilsService(org.osgi.framework.BundleContext)|",
+      "|java+constructor:///org/openengsb/core/services/internal/virtual/CompositeConnectorFactory/CompositeConnectorFactory(org.openengsb.core.api.DomainProvider,org.openengsb.core.api.OsgiUtilsService)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/openengsb/core/services/internal/virtual/CompositeConnectorFactory/CompositeConnectorFactory(org.openengsb.core.api.DomainProvider,org.openengsb.core.api.OsgiUtilsService)|",
+      "|java+constructor:///org/openengsb/core/util/DefaultOsgiUtilsService/DefaultOsgiUtilsService(org.osgi.framework.BundleContext)|"
+    ],
+    "affectedLib": "org.openengsb.framework:org.openengsb.framework.util:3.0.0.M1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.openengsb.framework:org.openengsb.framework.services:2.5.1",
+    "coordinatesV2": "org.openengsb.framework:org.openengsb.framework.services:3.0.0.M1",
+    "caller": "|java+method:///org/openengsb/core/services/internal/virtual/CompositeConnectorFactory/updateHandlerAttributes(org.openengsb.core.services.internal.virtual.CompositeConnector,java.util.Map)|",
+    "called": "|java+method:///org/openengsb/core/util/FilterUtils/makeFilter(java.lang.Class,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/openengsb/core/services/internal/virtual/CompositeConnector/setCompositeHandler(org.openengsb.core.api.CompositeConnectorStrategy)|",
+      "|java+method:///org/openengsb/core/api/OsgiUtilsService/makeFilter(java.lang.Class,java.lang.String)|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+method:///org/openengsb/core/api/OsgiUtilsService/getOsgiServiceProxy(org.osgi.framework.Filter,java.lang.Class)|",
+      "|java+method:///org/openengsb/core/services/internal/virtual/CompositeConnector/setQueryString(java.lang.String)|",
+      "|java+method:///org/openengsb/core/services/internal/virtual/CompositeConnectorFactory/createStrategyFilterString(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/openengsb/core/services/internal/virtual/CompositeConnector/setCompositeHandler(org.openengsb.core.api.CompositeConnectorStrategy)|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+method:///org/openengsb/core/api/OsgiUtilsService/getOsgiServiceProxy(org.osgi.framework.Filter,java.lang.Class)|",
+      "|java+method:///org/openengsb/core/services/internal/virtual/CompositeConnector/setQueryString(java.lang.String)|",
+      "|java+method:///org/openengsb/core/services/internal/virtual/CompositeConnectorFactory/createStrategyFilterString(java.lang.String)|",
+      "|java+method:///org/openengsb/core/util/FilterUtils/makeFilter(java.lang.Class,java.lang.String)|"
+    ],
+    "affectedLib": "org.openengsb.framework:org.openengsb.framework.util:3.0.0.M1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.openengsb.framework:org.openengsb.framework.services:2.5.1",
+    "coordinatesV2": "org.openengsb.framework:org.openengsb.framework.services:3.0.0.M1",
+    "caller": "|java+method:///org/openengsb/core/services/internal/DefaultWiringService/setBundleContext(org.osgi.framework.BundleContext)|",
+    "called": "|java+constructor:///org/openengsb/core/util/DefaultOsgiUtilsService/DefaultOsgiUtilsService(org.osgi.framework.BundleContext)|",
+    "v1Body": [
+      "|java+constructor:///org/openengsb/core/common/util/DefaultOsgiUtilsService/DefaultOsgiUtilsService(org.osgi.framework.BundleContext)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/openengsb/core/util/DefaultOsgiUtilsService/DefaultOsgiUtilsService(org.osgi.framework.BundleContext)|"
+    ],
+    "affectedLib": "org.openengsb.framework:org.openengsb.framework.util:3.0.0.M1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.openengsb.framework:org.openengsb.framework.services:2.5.1",
+    "coordinatesV2": "org.openengsb.framework:org.openengsb.framework.services:3.0.0.M1",
+    "caller": "|java+method:///org/openengsb/core/services/internal/DefaultWiringService/getDomainEndpoint(java.lang.Class,java.lang.String)|",
+    "called": "|java+method:///org/openengsb/core/util/OsgiUtils/getFilterForLocation(java.lang.Class,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/openengsb/core/api/OsgiUtilsService/getOsgiServiceProxy(org.osgi.framework.Filter,java.lang.Class)|",
+      "|java+method:///org/openengsb/core/api/OsgiUtilsService/getFilterForLocation(java.lang.Class,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/openengsb/core/services/internal/DefaultWiringService/getServiceUtils()|",
+      "|java+method:///org/openengsb/core/api/OsgiUtilsService/getOsgiServiceProxy(org.osgi.framework.Filter,java.lang.Class)|",
+      "|java+method:///org/openengsb/core/util/OsgiUtils/getFilterForLocation(java.lang.Class,java.lang.String)|"
+    ],
+    "affectedLib": "org.openengsb.framework:org.openengsb.framework.util:3.0.0.M1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.openengsb.framework:org.openengsb.framework.services:2.5.1",
+    "coordinatesV2": "org.openengsb.framework:org.openengsb.framework.services:3.0.0.M1",
+    "caller": "|java+constructor:///org/openengsb/core/services/internal/deployer/connector/ConnectorDeployerService/ConnectorDeployerService()|",
+    "called": "|java+constructor:///org/openengsb/core/common/AbstractOpenEngSBService/AbstractOpenEngSBService()|",
+    "v1Body": [
+      "|java+method:///com/google/common/cache/CacheBuilder/newBuilder()|",
+      "|java+constructor:///org/openengsb/core/common/AbstractOpenEngSBService/AbstractOpenEngSBService()|",
+      "|java+method:///com/google/common/cache/CacheBuilder/build(com.google.common.cache.CacheLoader)|",
+      "|java+constructor:///org/openengsb/core/services/internal/deployer/connector/ConnectorDeployerService$2/ConnectorDeployerService$2(org.openengsb.core.services.internal.deployer.connector.ConnectorDeployerService)|",
+      "|java+constructor:///org/openengsb/core/services/internal/deployer/connector/ConnectorDeployerService$1/ConnectorDeployerService$1(org.openengsb.core.services.internal.deployer.connector.ConnectorDeployerService)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/common/cache/CacheBuilder/newBuilder()|",
+      "|java+constructor:///org/openengsb/core/common/AbstractOpenEngSBService/AbstractOpenEngSBService()|",
+      "|java+method:///com/google/common/collect/Sets/newHashSet()|",
+      "|java+method:///com/google/common/cache/CacheBuilder/build(com.google.common.cache.CacheLoader)|",
+      "|java+constructor:///org/openengsb/core/services/internal/deployer/connector/ConnectorDeployerService$2/ConnectorDeployerService$2(org.openengsb.core.services.internal.deployer.connector.ConnectorDeployerService)|",
+      "|java+constructor:///org/openengsb/core/services/internal/deployer/connector/ConnectorDeployerService$1/ConnectorDeployerService$1(org.openengsb.core.services.internal.deployer.connector.ConnectorDeployerService)|"
+    ],
+    "affectedLib": "org.openengsb.framework:org.openengsb.framework.common:3.0.0.M1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.openengsb.framework:org.openengsb.framework.services:2.5.1",
+    "coordinatesV2": "org.openengsb.framework:org.openengsb.framework.services:3.0.0.M1",
+    "caller": "|java+method:///org/openengsb/core/services/internal/DefaultWiringService/getDomainEndpoints(java.lang.Class,java.lang.String,java.lang.String)|",
+    "called": "|java+method:///org/osgi/framework/FrameworkUtil/createFilter(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///org/osgi/framework/FrameworkUtil/createFilter(java.lang.String)|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.Throwable)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+method:///org/openengsb/core/api/OsgiUtilsService/getFilterForLocation(java.lang.Class,java.lang.String)|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/osgi/framework/BundleContext/getAllServiceReferences(java.lang.String,java.lang.String)|",
+      "|java+method:///org/osgi/framework/Filter/toString()|",
+      "|java+method:///org/openengsb/core/api/OsgiUtilsService/getOsgiServiceProxy(org.osgi.framework.Filter,java.lang.Class)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///org/osgi/framework/ServiceReference/getProperty(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///org/osgi/framework/FrameworkUtil/createFilter(java.lang.String)|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.Throwable)|",
+      "|java+method:///org/openengsb/core/services/internal/DefaultWiringService/getServiceUtils()|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+method:///org/openengsb/core/util/OsgiUtils/getFilterForLocation(java.lang.Class,java.lang.String)|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/osgi/framework/BundleContext/getAllServiceReferences(java.lang.String,java.lang.String)|",
+      "|java+method:///org/osgi/framework/Filter/toString()|",
+      "|java+method:///org/openengsb/core/api/OsgiUtilsService/getOsgiServiceProxy(org.osgi.framework.Filter,java.lang.Class)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///org/osgi/framework/ServiceReference/getProperty(java.lang.String)|"
+    ],
+    "affectedLib": "org.osgi:org.osgi.core:4.3.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.openengsb.framework:org.openengsb.framework.services:2.5.1",
+    "coordinatesV2": "org.openengsb.framework:org.openengsb.framework.services:3.0.0.M1",
+    "caller": "|java+method:///org/openengsb/core/services/internal/deployer/connector/ConnectorDeployerService/applyChanges(org.openengsb.core.api.model.ConnectorDescription,org.openengsb.core.services.internal.deployer.connector.ConnectorFile$ChangeSet)|",
+    "called": "|java+constructor:///org/openengsb/core/api/model/ConnectorDescription/ConnectorDescription(java.lang.String,java.lang.String,java.util.Map,java.util.Map)|",
+    "v1Body": [
+      "|java+constructor:///java/util/Hashtable/Hashtable(java.util.Map)|",
+      "|java+method:///org/openengsb/core/services/internal/deployer/connector/ConnectorFile$ChangeSet/getChangedProperties()|",
+      "|java+method:///org/openengsb/core/services/internal/deployer/connector/ConnectorFile$ChangeSet/getChangedAttributes()|",
+      "|java+constructor:///org/openengsb/core/api/model/ConnectorDescription/ConnectorDescription(java.util.Map,java.util.Map)|",
+      "|java+method:///org/openengsb/core/common/util/ConfigUtils/updateMap(java.util.Map,com.google.common.collect.MapDifference)|",
+      "|java+method:///org/openengsb/core/api/model/ConnectorDescription/getProperties()|",
+      "|java+method:///org/openengsb/core/api/model/ConnectorDescription/getAttributes()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/openengsb/core/util/ConfigUtils/updateMap(java.util.Map,com.google.common.collect.MapDifference)|",
+      "|java+constructor:///java/util/Hashtable/Hashtable(java.util.Map)|",
+      "|java+method:///org/openengsb/core/services/internal/deployer/connector/ConnectorFile$ChangeSet/getChangedAttributes()|",
+      "|java+constructor:///org/openengsb/core/api/model/ConnectorDescription/ConnectorDescription(java.lang.String,java.lang.String,java.util.Map,java.util.Map)|",
+      "|java+method:///org/openengsb/core/services/internal/deployer/connector/ConnectorFile$ChangeSet/getDomainType()|",
+      "|java+method:///org/openengsb/core/api/model/ConnectorDescription/getProperties()|",
+      "|java+method:///org/openengsb/core/api/model/ConnectorDescription/getAttributes()|",
+      "|java+method:///org/openengsb/core/services/internal/deployer/connector/ConnectorFile$ChangeSet/getChangedProperties()|",
+      "|java+method:///org/openengsb/core/services/internal/deployer/connector/ConnectorFile$ChangeSet/getConnectorType()|"
+    ],
+    "affectedLib": "org.openengsb.framework:org.openengsb.framework.api:3.0.0.M1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.openengsb.framework:org.openengsb.framework.services:2.5.1",
+    "coordinatesV2": "org.openengsb.framework:org.openengsb.framework.services:3.0.0.M1",
+    "caller": "|java+method:///org/openengsb/core/services/internal/virtual/ProxyConnector/doInvoke(java.lang.Object,java.lang.reflect.Method,java.lang.Object%5B%5D)|",
+    "called": "|java+constructor:///org/openengsb/core/api/remote/MethodCall/MethodCall(java.lang.String,java.lang.Object%5B%5D,java.util.Map,java.util.List)|",
+    "v1Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+constructor:///java/lang/IllegalStateException/IllegalStateException(java.lang.String)|",
+      "|java+method:///java/lang/Object/toString()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/util/Arrays/asList(java.lang.Object%5B%5D)|",
+      "|java+method:///org/openengsb/core/api/remote/OutgoingPortUtilService/sendMethodCallWithResult(java.lang.String,java.lang.String,org.openengsb.core.api.remote.MethodCall)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/openengsb/core/api/remote/MethodResult/getType()|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///java/lang/reflect/Method/getParameterTypes()|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+method:///org/openengsb/core/api/remote/MethodResult/getArg()|",
+      "|java+method:///org/openengsb/core/api/remote/MethodResult$ReturnType/ordinal()|",
+      "|java+method:///java/lang/reflect/Method/getName()|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String)|",
+      "|java+constructor:///org/openengsb/core/api/remote/MethodCall/MethodCall(java.lang.String,java.lang.Object%5B%5D,java.util.Map,java.util.List)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/lang/IllegalStateException/IllegalStateException(java.lang.String)|",
+      "|java+method:///org/openengsb/core/services/internal/TransformationHandler/transformResult(java.lang.Object)|",
+      "|java+method:///java/lang/Class/getMethod(java.lang.String,java.lang.Class%5B%5D)|",
+      "|java+method:///org/openengsb/core/services/internal/virtual/ProxyRegistration/isRegistered()|",
+      "|java+method:///org/openengsb/core/api/remote/OutgoingPortUtilService/sendMethodCallWithResult(java.lang.String,java.lang.String,org.openengsb.core.api.remote.MethodCall)|",
+      "|java+method:///org/openengsb/core/api/remote/MethodResult/getType()|",
+      "|java+method:///java/lang/reflect/Method/getParameterTypes()|",
+      "|java+method:///java/lang/reflect/Method/invoke(java.lang.Object,java.lang.Object%5B%5D)|",
+      "|java+method:///org/openengsb/core/services/internal/virtual/ProxyConnector/getParameterTypenames(java.lang.reflect.Method)|",
+      "|java+method:///java/lang/Object/toString()|",
+      "|java+method:///java/lang/Object/equals(java.lang.Object)|",
+      "|java+method:///org/openengsb/core/services/internal/virtual/ProxyRegistration/getPortId()|",
+      "|java+method:///org/openengsb/core/services/internal/TransformationHandler/newTransformationHandler(org.openengsb.core.ekb.api.TransformationEngine,java.lang.reflect.Method,java.lang.Class)|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///org/openengsb/core/api/remote/MethodResult/getArg()|",
+      "|java+method:///org/openengsb/core/api/remote/MethodResult$ReturnType/ordinal()|",
+      "|java+method:///java/lang/reflect/Method/getName()|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|",
+      "|java+method:///java/lang/reflect/Method/getDeclaringClass()|",
+      "|java+method:///org/openengsb/core/services/internal/TransformationHandler/transformArguments(java.lang.Object%5B%5D)|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String)|",
+      "|java+constructor:///org/openengsb/core/api/remote/MethodCall/MethodCall(java.lang.String,java.lang.Object%5B%5D,java.util.Map,java.util.List)|",
+      "|java+method:///org/openengsb/core/services/internal/virtual/ProxyRegistration/getDestination()|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///org/openengsb/core/services/internal/TransformationHandler/getTargetMethod()|"
+    ],
+    "affectedLib": "org.openengsb.framework:org.openengsb.framework.api:3.0.0.M1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.openengsb.framework:org.openengsb.framework.services:2.5.1",
+    "coordinatesV2": "org.openengsb.framework:org.openengsb.framework.services:3.0.0.M1",
+    "caller": "|java+method:///org/openengsb/core/services/internal/DefaultOutgoingPortUtilService/sendMethodCallWithResult(java.lang.String,java.lang.String,org.openengsb.core.api.remote.MethodCall)|",
+    "called": "|java+constructor:///org/openengsb/core/api/remote/MethodCallMessage/MethodCallMessage(org.openengsb.core.api.remote.MethodCall,boolean)|",
+    "v1Body": [
+      "|java+constructor:///org/openengsb/core/api/remote/MethodCallRequest/MethodCallRequest(org.openengsb.core.api.remote.MethodCall,boolean)|",
+      "|java+method:///org/openengsb/core/api/remote/OutgoingPort/sendSync(org.openengsb.core.api.remote.MethodCallRequest)|",
+      "|java+method:///org/openengsb/core/api/remote/MethodResultMessage/getResult()|",
+      "|java+method:///org/openengsb/core/api/remote/MethodCallRequest/setDestination(java.lang.String)|",
+      "|java+method:///org/openengsb/core/services/internal/DefaultOutgoingPortUtilService/getPort(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/openengsb/core/api/remote/MethodCallMessage/setDestination(java.lang.String)|",
+      "|java+method:///org/openengsb/core/api/remote/MethodResultMessage/getResult()|",
+      "|java+method:///org/openengsb/core/api/remote/OutgoingPort/sendSync(org.openengsb.core.api.remote.MethodCallMessage)|",
+      "|java+constructor:///org/openengsb/core/api/remote/MethodCallMessage/MethodCallMessage(org.openengsb.core.api.remote.MethodCall,boolean)|",
+      "|java+method:///org/openengsb/core/services/internal/DefaultOutgoingPortUtilService/getPort(java.lang.String)|"
+    ],
+    "affectedLib": "org.openengsb.framework:org.openengsb.framework.api:3.0.0.M1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.openengsb.framework:org.openengsb.framework.services:2.5.1",
+    "coordinatesV2": "org.openengsb.framework:org.openengsb.framework.services:3.0.0.M1",
+    "caller": "|java+method:///org/openengsb/core/services/internal/DefaultOutgoingPortUtilService/sendMethodCall(java.lang.String,java.lang.String,org.openengsb.core.api.remote.MethodCall)|",
+    "called": "|java+constructor:///org/openengsb/core/api/remote/MethodCallMessage/MethodCallMessage(org.openengsb.core.api.remote.MethodCall,boolean)|",
+    "v1Body": [
+      "|java+constructor:///org/openengsb/core/api/remote/MethodCallRequest/MethodCallRequest(org.openengsb.core.api.remote.MethodCall,boolean)|",
+      "|java+constructor:///org/openengsb/core/services/internal/DefaultOutgoingPortUtilService$SendMethodCallTask/DefaultOutgoingPortUtilService$SendMethodCallTask(org.openengsb.core.services.internal.DefaultOutgoingPortUtilService,org.openengsb.core.api.remote.OutgoingPort,org.openengsb.core.api.remote.MethodCallRequest,org.openengsb.core.services.internal.DefaultOutgoingPortUtilService$1)|",
+      "|java+method:///java/util/concurrent/ExecutorService/execute(java.lang.Runnable)|",
+      "|java+method:///org/openengsb/core/api/remote/MethodCallRequest/setDestination(java.lang.String)|",
+      "|java+method:///org/openengsb/core/services/internal/DefaultOutgoingPortUtilService/getPort(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/openengsb/core/api/remote/MethodCallMessage/setDestination(java.lang.String)|",
+      "|java+constructor:///org/openengsb/core/api/remote/MethodCallMessage/MethodCallMessage(org.openengsb.core.api.remote.MethodCall,boolean)|",
+      "|java+constructor:///org/openengsb/core/services/internal/DefaultOutgoingPortUtilService$SendMethodCallTask/DefaultOutgoingPortUtilService$SendMethodCallTask(org.openengsb.core.services.internal.DefaultOutgoingPortUtilService,org.openengsb.core.api.remote.OutgoingPort,org.openengsb.core.api.remote.MethodCallMessage,org.openengsb.core.services.internal.DefaultOutgoingPortUtilService$1)|",
+      "|java+method:///java/util/concurrent/ExecutorService/execute(java.lang.Runnable)|",
+      "|java+method:///org/openengsb/core/services/internal/DefaultOutgoingPortUtilService/getPort(java.lang.String)|"
+    ],
+    "affectedLib": "org.openengsb.framework:org.openengsb.framework.api:3.0.0.M1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.openengsb.framework:org.openengsb.framework.services:2.5.1",
+    "coordinatesV2": "org.openengsb.framework:org.openengsb.framework.services:3.0.0.M1",
+    "caller": "|java+method:///org/openengsb/core/services/internal/RequestHandlerImpl/invokeMethod(java.lang.Object,java.lang.reflect.Method,java.lang.Object%5B%5D)|",
+    "called": "|java+constructor:///org/openengsb/core/api/remote/MethodResult/MethodResult()|",
+    "v1Body": [
+      "|java+method:///org/openengsb/core/api/remote/MethodResult/setClassName(java.lang.String)|",
+      "|java+method:///org/openengsb/core/api/remote/MethodResult/setType(org.openengsb.core.api.remote.MethodResult$ReturnType)|",
+      "|java+method:///org/openengsb/core/api/remote/MethodResult/setArg(java.lang.Object)|",
+      "|java+method:///java/lang/reflect/InvocationTargetException/getCause()|",
+      "|java+constructor:///org/openengsb/core/api/remote/MethodResult/MethodResult()|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///java/lang/reflect/Method/invoke(java.lang.Object,java.lang.Object%5B%5D)|",
+      "|java+method:///java/lang/reflect/Method/getReturnType()|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///java/lang/Class/getName()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Exception/getCause()|",
+      "|java+method:///java/lang/Object/equals(java.lang.Object)|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/openengsb/core/api/remote/MethodResult/setClassName(java.lang.String)|",
+      "|java+method:///org/openengsb/core/api/remote/MethodResult/setType(org.openengsb.core.api.remote.MethodResult$ReturnType)|",
+      "|java+method:///org/openengsb/core/api/remote/MethodResult/setArg(java.lang.Object)|",
+      "|java+constructor:///org/openengsb/core/api/remote/MethodResult/MethodResult()|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///java/lang/reflect/Method/invoke(java.lang.Object,java.lang.Object%5B%5D)|",
+      "|java+method:///java/lang/reflect/Method/getReturnType()|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///java/lang/Class/getName()|"
+    ],
+    "affectedLib": "org.openengsb.framework:org.openengsb.framework.api:3.0.0.M1",
+    "change": "UPDATED"
+  }
+]

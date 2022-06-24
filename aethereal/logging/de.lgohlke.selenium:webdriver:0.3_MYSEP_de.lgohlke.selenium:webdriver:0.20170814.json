@@ -1,0 +1,73 @@
+[
+  {
+    "coordinatesV1": "de.lgohlke.selenium:webdriver:0.3",
+    "coordinatesV2": "de.lgohlke.selenium:webdriver:0.20170814",
+    "caller": "|java+initializer:///de/lgohlke/logging/SysStreamsLogger/SysStreamsLogger$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+constructor:///java/util/concurrent/locks/ReentrantLock/ReentrantLock()|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/util/concurrent/locks/ReentrantLock/ReentrantLock()|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.String)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.22",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "de.lgohlke.selenium:webdriver:0.3",
+    "coordinatesV2": "de.lgohlke.selenium:webdriver:0.20170814",
+    "caller": "|java+method:///de/lgohlke/selenium/webdriver/junit/DriverService/before()|",
+    "called": "|java+method:///org/openqa/selenium/remote/service/DriverService/start()|",
+    "v1Body": [
+      "|java+method:///de/lgohlke/selenium/webdriver/DriverServiceFactory/createWebDriver(org.openqa.selenium.remote.service.DriverService)|",
+      "|java+method:///de/lgohlke/selenium/webdriver/DriverServiceFactory/createService(java.lang.String%5B%5D)|",
+      "|java+method:///org/openqa/selenium/support/events/EventFiringWebDriver/register(org.openqa.selenium.support.events.WebDriverEventListener)|",
+      "|java+constructor:///org/openqa/selenium/support/events/EventFiringWebDriver/EventFiringWebDriver(org.openqa.selenium.WebDriver)|",
+      "|java+method:///org/openqa/selenium/remote/service/DriverService/start()|",
+      "|java+method:///de/lgohlke/selenium/webdriver/DriverType/driverServiceFactory()|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///de/lgohlke/selenium/webdriver/DriverType/driverServiceFactory(de.lgohlke.selenium.webdriver.DriverConfiguration)|",
+      "|java+method:///java/util/List/forEach(java.util.function.Consumer)|",
+      "|java+method:///java/util/List/isEmpty()|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String)|",
+      "|java+method:///de/lgohlke/selenium/webdriver/DriverServiceFactory/createWebDriver(org.openqa.selenium.remote.service.DriverService)|",
+      "|java+method:///de/lgohlke/selenium/webdriver/DriverServiceFactory/createService(java.lang.String%5B%5D)|",
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+constructor:///org/openqa/selenium/support/events/EventFiringWebDriver/EventFiringWebDriver(org.openqa.selenium.WebDriver)|",
+      "|java+method:///org/openqa/selenium/remote/service/DriverService/start()|"
+    ],
+    "affectedLib": "org.seleniumhq.selenium:selenium-remote-driver:3.4.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "de.lgohlke.selenium:webdriver:0.3",
+    "coordinatesV2": "de.lgohlke.selenium:webdriver:0.20170814",
+    "caller": "|java+method:///de/lgohlke/junit/HttpServerFromResource$HttpServerFromResourceInner/start(java.lang.String)|",
+    "called": "|java+method:///org/openqa/selenium/net/PortProber/findFreePort()|",
+    "v1Body": [
+      "|java+constructor:///java/net/InetSocketAddress/InetSocketAddress(java.lang.String,int)|",
+      "|java+method:///com/sun/net/httpserver/HttpServer/bind(java.net.InetSocketAddress,int)|",
+      "|java+method:///com/sun/net/httpserver/HttpServer/createContext(java.lang.String,com.sun.net.httpserver.HttpHandler)|",
+      "|java+method:///org/openqa/selenium/net/PortProber/findFreePort()|",
+      "|java+method:///com/sun/net/httpserver/HttpServer/create()|",
+      "|java+method:///com/sun/net/httpserver/HttpServer/start()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/net/InetSocketAddress/InetSocketAddress(java.lang.String,int)|",
+      "|java+method:///com/sun/net/httpserver/HttpServer/bind(java.net.InetSocketAddress,int)|",
+      "|java+method:///de/lgohlke/junit/HttpServerFromResource$HttpServerFromResourceInner/createHttpExchange(java.lang.String)|",
+      "|java+method:///com/sun/net/httpserver/HttpServer/createContext(java.lang.String,com.sun.net.httpserver.HttpHandler)|",
+      "|java+method:///org/openqa/selenium/net/PortProber/findFreePort()|",
+      "|java+method:///com/sun/net/httpserver/HttpServer/create()|",
+      "|java+method:///com/sun/net/httpserver/HttpServer/start()|"
+    ],
+    "affectedLib": "org.seleniumhq.selenium:selenium-remote-driver:3.4.0",
+    "change": "UPDATED"
+  }
+]

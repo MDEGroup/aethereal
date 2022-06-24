@@ -1,0 +1,36 @@
+[
+  {
+    "coordinatesV1": "com.linkedin.gobblin:gobblin-example:0.6.0-hadoop1",
+    "coordinatesV2": "com.linkedin.gobblin:gobblin-example:0.7.0",
+    "caller": "|java+method:///gobblin/example/wikipedia/WikipediaSource/getWorkunits(gobblin.configuration.SourceState)|",
+    "called": "|java+method:///gobblin/source/workunit/WorkUnit/create(gobblin.source.workunit.Extract)|",
+    "v1Body": [
+      "|java+method:///gobblin/configuration/SourceState/createExtract(gobblin.source.workunit.Extract$TableType,java.lang.String,java.lang.String)|",
+      "|java+method:///gobblin/source/workunit/WorkUnit/create(gobblin.source.workunit.Extract)|",
+      "|java+method:///java/util/Arrays/asList(java.lang.Object%5B%5D)|",
+      "|java+method:///gobblin/configuration/SourceState/getProp(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///gobblin/source/workunit/WorkUnit/create(gobblin.source.workunit.Extract)|",
+      "|java+method:///gobblin/example/wikipedia/WikipediaSource/createExtract(gobblin.source.workunit.Extract$TableType,java.lang.String,java.lang.String)|",
+      "|java+method:///java/util/Arrays/asList(java.lang.Object%5B%5D)|",
+      "|java+method:///gobblin/configuration/SourceState/getProp(java.lang.String)|"
+    ],
+    "affectedLib": "com.linkedin.gobblin:gobblin-api:0.7.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.linkedin.gobblin:gobblin-example:0.6.0-hadoop1",
+    "coordinatesV2": "com.linkedin.gobblin:gobblin-example:0.7.0",
+    "caller": "|java+constructor:///gobblin/example/wikipedia/WikipediaSource/WikipediaSource()|",
+    "called": "|java+constructor:///gobblin/source/extractor/extract/AbstractSource/AbstractSource()|",
+    "v1Body": [
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///gobblin/source/extractor/extract/AbstractSource/AbstractSource()|"
+    ],
+    "affectedLib": "com.linkedin.gobblin:gobblin-core:0.7.0",
+    "change": "UPDATED"
+  }
+]

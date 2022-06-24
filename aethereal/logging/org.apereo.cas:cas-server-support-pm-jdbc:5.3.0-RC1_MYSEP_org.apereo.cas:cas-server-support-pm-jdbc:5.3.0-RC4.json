@@ -1,0 +1,59 @@
+[
+  {
+    "coordinatesV1": "org.apereo.cas:cas-server-support-pm-jdbc:5.3.0-RC1",
+    "coordinatesV2": "org.apereo.cas:cas-server-support-pm-jdbc:5.3.0-RC4",
+    "caller": "|java+method:///org/apereo/cas/pm/jdbc/JdbcPasswordManagementService/findEmail(java.lang.String)|",
+    "called": "|java+method:///org/springframework/jdbc/core/JdbcTemplate/queryForObject(java.lang.String,java.lang.Class,java.lang.Object%5B%5D)|",
+    "v1Body": [
+      "|java+method:///org/apereo/cas/configuration/model/support/pm/PasswordManagementProperties/getJdbc()|",
+      "|java+method:///org/apereo/cas/configuration/model/support/pm/PasswordManagementProperties$Jdbc/getSqlFindEmail()|",
+      "|java+method:///org/springframework/jdbc/core/JdbcTemplate/queryForObject(java.lang.String,java.lang.Class,java.lang.Object%5B%5D)|",
+      "|java+method:///org/apache/commons/validator/routines/EmailValidator/isValid(java.lang.String)|",
+      "|java+method:///org/apache/commons/validator/routines/EmailValidator/getInstance()|",
+      "|java+method:///org/apache/commons/lang3/StringUtils/isNotBlank(java.lang.CharSequence)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/apereo/cas/configuration/model/support/pm/PasswordManagementProperties/getJdbc()|",
+      "|java+method:///org/apereo/cas/configuration/model/support/pm/PasswordManagementProperties$Jdbc/getSqlFindEmail()|",
+      "|java+method:///org/springframework/jdbc/core/JdbcTemplate/queryForObject(java.lang.String,java.lang.Class,java.lang.Object%5B%5D)|",
+      "|java+method:///org/apache/commons/validator/routines/EmailValidator/isValid(java.lang.String)|",
+      "|java+method:///org/apache/commons/validator/routines/EmailValidator/getInstance()|",
+      "|java+method:///org/apache/commons/lang3/StringUtils/isNotBlank(java.lang.CharSequence)|"
+    ],
+    "affectedLib": "org.springframework:spring-jdbc:4.3.17.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apereo.cas:cas-server-support-pm-jdbc:5.3.0-RC1",
+    "coordinatesV2": "org.apereo.cas:cas-server-support-pm-jdbc:5.3.0-RC4",
+    "caller": "|java+constructor:///org/apereo/cas/pm/jdbc/JdbcPasswordManagementService/JdbcPasswordManagementService(org.apereo.cas.CipherExecutor,java.lang.String,org.apereo.cas.configuration.model.support.pm.PasswordManagementProperties,javax.sql.DataSource)|",
+    "called": "|java+constructor:///org/springframework/jdbc/core/JdbcTemplate/JdbcTemplate(javax.sql.DataSource)|",
+    "v1Body": [
+      "|java+constructor:///org/apereo/cas/pm/BasePasswordManagementService/BasePasswordManagementService(org.apereo.cas.CipherExecutor,java.lang.String,org.apereo.cas.configuration.model.support.pm.PasswordManagementProperties)|",
+      "|java+constructor:///org/springframework/jdbc/core/JdbcTemplate/JdbcTemplate(javax.sql.DataSource)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/springframework/jdbc/core/JdbcTemplate/JdbcTemplate(javax.sql.DataSource)|",
+      "|java+constructor:///org/apereo/cas/pm/BasePasswordManagementService/BasePasswordManagementService(org.apereo.cas.configuration.model.support.pm.PasswordManagementProperties,org.apereo.cas.CipherExecutor,java.lang.String)|"
+    ],
+    "affectedLib": "org.springframework:spring-jdbc:4.3.17.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apereo.cas:cas-server-support-pm-jdbc:5.3.0-RC1",
+    "coordinatesV2": "org.apereo.cas:cas-server-support-pm-jdbc:5.3.0-RC4",
+    "caller": "|java+constructor:///org/apereo/cas/pm/jdbc/JdbcPasswordManagementService/JdbcPasswordManagementService(org.apereo.cas.CipherExecutor,java.lang.String,org.apereo.cas.configuration.model.support.pm.PasswordManagementProperties,javax.sql.DataSource)|",
+    "called": "|java+constructor:///org/apereo/cas/pm/BasePasswordManagementService/BasePasswordManagementService(org.apereo.cas.configuration.model.support.pm.PasswordManagementProperties,org.apereo.cas.CipherExecutor,java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///org/apereo/cas/pm/BasePasswordManagementService/BasePasswordManagementService(org.apereo.cas.CipherExecutor,java.lang.String,org.apereo.cas.configuration.model.support.pm.PasswordManagementProperties)|",
+      "|java+constructor:///org/springframework/jdbc/core/JdbcTemplate/JdbcTemplate(javax.sql.DataSource)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/springframework/jdbc/core/JdbcTemplate/JdbcTemplate(javax.sql.DataSource)|",
+      "|java+constructor:///org/apereo/cas/pm/BasePasswordManagementService/BasePasswordManagementService(org.apereo.cas.configuration.model.support.pm.PasswordManagementProperties,org.apereo.cas.CipherExecutor,java.lang.String)|"
+    ],
+    "affectedLib": "org.apereo.cas:cas-server-support-pm:5.3.0-RC4",
+    "change": "UPDATED"
+  }
+]

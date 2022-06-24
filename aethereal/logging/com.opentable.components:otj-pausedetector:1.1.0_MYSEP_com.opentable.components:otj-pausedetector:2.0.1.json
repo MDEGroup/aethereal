@@ -1,0 +1,43 @@
+[
+  {
+    "coordinatesV1": "com.opentable.components:otj-pausedetector:2.0.1",
+    "coordinatesV2": "com.opentable.components:otj-pausedetector:1.1.0",
+    "caller": "|java+method:///com/opentable/pausedetector/JvmPauseAlarm/start()|",
+    "called": "|java+method:///com/google/common/util/concurrent/ThreadFactoryBuilder/setDaemon(boolean)|",
+    "v1Body": [
+      "|java+method:///java/util/concurrent/ExecutorService/submit(java.lang.Runnable)|",
+      "|java+method:///com/google/common/util/concurrent/ThreadFactoryBuilder/setNameFormat(java.lang.String)|",
+      "|java+method:///java/util/concurrent/Executors/newSingleThreadExecutor(java.util.concurrent.ThreadFactory)|",
+      "|java+method:///java/util/concurrent/ExecutorService/shutdown()|",
+      "|java+method:///com/google/common/util/concurrent/ThreadFactoryBuilder/build()|",
+      "|java+method:///com/google/common/util/concurrent/ThreadFactoryBuilder/setDaemon(boolean)|",
+      "|java+constructor:///com/google/common/util/concurrent/ThreadFactoryBuilder/ThreadFactoryBuilder()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/opentable/pausedetector/JvmPauseAlarm$1/JvmPauseAlarm$1(com.opentable.pausedetector.JvmPauseAlarm)|",
+      "|java+method:///java/util/concurrent/ExecutorService/submit(java.lang.Runnable)|",
+      "|java+method:///java/util/concurrent/Executors/newSingleThreadExecutor(java.util.concurrent.ThreadFactory)|",
+      "|java+method:///java/util/concurrent/ExecutorService/shutdown()|"
+    ],
+    "affectedLib": "com.google.guava:guava:18.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.opentable.components:otj-pausedetector:2.0.1",
+    "coordinatesV2": "com.opentable.components:otj-pausedetector:1.1.0",
+    "caller": "|java+method:///com/opentable/pausedetector/JvmPauseAlarm/run()|",
+    "called": "|java+method:///com/google/common/base/Throwables/propagate(java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///com/google/common/base/Throwables/propagate(java.lang.Throwable)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///com/opentable/pausedetector/JvmPauseAlarm/safeRun()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.Throwable)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///com/opentable/pausedetector/JvmPauseAlarm/safeRun()|"
+    ],
+    "affectedLib": "com.google.guava:guava:18.0",
+    "change": "REMOVED"
+  }
+]

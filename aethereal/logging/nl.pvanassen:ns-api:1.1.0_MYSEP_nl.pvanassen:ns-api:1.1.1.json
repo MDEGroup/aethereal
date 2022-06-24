@@ -1,0 +1,772 @@
+[
+  {
+    "coordinatesV1": "nl.pvanassen:ns-api:1.1.1",
+    "coordinatesV2": "nl.pvanassen:ns-api:1.1.0",
+    "caller": "|java+method:///nl/pvanassen/ns/HttpConnection/getContent(java.lang.String)|",
+    "called": "|java+constructor:///org/apache/http/client/methods/HttpGet/HttpGet(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/apache/http/HttpResponse/getStatusLine()|",
+      "|java+method:///org/apache/http/client/HttpClient/execute(org.apache.http.client.methods.HttpUriRequest)|",
+      "|java+constructor:///nl/pvanassen/ns/error/NsApiException/NsApiException(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String)|",
+      "|java+method:///org/apache/http/HttpEntity/getContent()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///org/apache/http/client/methods/HttpGet/HttpGet(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///org/apache/http/HttpResponse/getEntity()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///okhttp3/Request$Builder/Request$Builder()|",
+      "|java+method:///okhttp3/Request$Builder/build()|",
+      "|java+method:///okhttp3/Request$Builder/get()|",
+      "|java+method:///okhttp3/Response/body()|",
+      "|java+method:///okhttp3/ResponseBody/byteStream()|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String)|",
+      "|java+method:///okhttp3/Request$Builder/url(java.lang.String)|",
+      "|java+constructor:///nl/pvanassen/ns/error/NsApiException/NsApiException(java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///nl/pvanassen/ns/error/NsApiException/NsApiException(java.lang.String)|",
+      "|java+method:///okhttp3/OkHttpClient/newCall(okhttp3.Request)|",
+      "|java+method:///okhttp3/Call/execute()|"
+    ],
+    "affectedLib": "org.apache.httpcomponents:httpclient:4.3.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "nl.pvanassen:ns-api:1.1.1",
+    "coordinatesV2": "nl.pvanassen:ns-api:1.1.0",
+    "caller": "|java+constructor:///nl/pvanassen/ns/HttpConnection/HttpConnection(java.lang.String,java.lang.String)|",
+    "called": "|java+constructor:///org/apache/http/impl/client/BasicCredentialsProvider/BasicCredentialsProvider()|",
+    "v1Body": [
+      "|java+method:///org/apache/http/impl/client/BasicCredentialsProvider/setCredentials(org.apache.http.auth.AuthScope,org.apache.http.auth.Credentials)|",
+      "|java+constructor:///org/apache/http/auth/UsernamePasswordCredentials/UsernamePasswordCredentials(java.lang.String,java.lang.String)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///org/apache/http/impl/client/HttpClientBuilder/build()|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///org/apache/http/impl/client/HttpClientBuilder/create()|",
+      "|java+method:///org/apache/http/impl/client/HttpClientBuilder/setDefaultCredentialsProvider(org.apache.http.client.CredentialsProvider)|",
+      "|java+constructor:///org/apache/http/auth/AuthScope/AuthScope(java.lang.String,int)|",
+      "|java+constructor:///org/apache/http/impl/client/BasicCredentialsProvider/BasicCredentialsProvider()|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///nl/pvanassen/ns/HttpConnection$1/HttpConnection$1(nl.pvanassen.ns.HttpConnection,java.lang.String,java.lang.String)|",
+      "|java+method:///okhttp3/OkHttpClient$Builder/authenticator(okhttp3.Authenticator)|",
+      "|java+constructor:///okhttp3/OkHttpClient$Builder/OkHttpClient$Builder()|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///okhttp3/OkHttpClient$Builder/build()|"
+    ],
+    "affectedLib": "org.apache.httpcomponents:httpclient:4.3.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "nl.pvanassen:ns-api:1.1.1",
+    "coordinatesV2": "nl.pvanassen:ns-api:1.1.0",
+    "caller": "|java+method:///nl/pvanassen/ns/NsApi/getApiResponse(nl.pvanassen.ns.ApiRequest)|",
+    "called": "|java+method:///org/apache/commons/io/IOUtils/closeQuietly(java.io.InputStream)|",
+    "v1Body": [
+      "|java+method:///nl/pvanassen/ns/HttpConnection/getContent(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///nl/pvanassen/ns/handle/Handle/getModel(java.io.InputStream)|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///nl/pvanassen/ns/ApiRequest/getPath()|",
+      "|java+method:///org/apache/commons/io/IOUtils/closeQuietly(java.io.InputStream)|",
+      "|java+constructor:///nl/pvanassen/ns/error/NsApiException/NsApiException(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///nl/pvanassen/ns/ApiRequest/getRequestString()|"
+    ],
+    "v2Body": [
+      "|java+method:///nl/pvanassen/ns/HttpConnection/getContent(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///nl/pvanassen/ns/handle/Handle/getModel(java.io.InputStream)|",
+      "|java+method:///java/io/InputStream/close()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///nl/pvanassen/ns/ApiRequest/getPath()|",
+      "|java+constructor:///nl/pvanassen/ns/error/NsApiException/NsApiException(java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///nl/pvanassen/ns/error/NsApiException/NsApiException(java.lang.String)|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+method:///java/lang/Throwable/addSuppressed(java.lang.Throwable)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///nl/pvanassen/ns/ApiRequest/getRequestString()|"
+    ],
+    "affectedLib": "commons-io:commons-io:2.4",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "nl.pvanassen:ns-api:1.1.1",
+    "coordinatesV2": "nl.pvanassen:ns-api:1.1.0",
+    "caller": "|java+method:///nl/pvanassen/ns/model/storingen/Storing/toString()|",
+    "called": "|java+method:///org/apache/commons/lang3/builder/ToStringBuilder/reflectionToString(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/lang3/builder/ToStringBuilder/reflectionToString(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///nl/pvanassen/ns/model/storingen/Storing/getId()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///nl/pvanassen/ns/model/storingen/Storing/getAdvies()|",
+      "|java+method:///nl/pvanassen/ns/model/storingen/Storing/getBericht()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///nl/pvanassen/ns/model/storingen/Storing/getReden()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///nl/pvanassen/ns/model/storingen/Storing/getPeriode()|",
+      "|java+method:///nl/pvanassen/ns/model/storingen/Storing/getTraject()|",
+      "|java+method:///nl/pvanassen/ns/model/storingen/Storing/getDatum()|"
+    ],
+    "affectedLib": "org.apache.commons:commons-lang3:3.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "nl.pvanassen:ns-api:1.1.1",
+    "coordinatesV2": "nl.pvanassen:ns-api:1.1.0",
+    "caller": "|java+method:///nl/pvanassen/ns/model/reisadvies/ReisMogelijkheid/toString()|",
+    "called": "|java+method:///org/apache/commons/lang3/builder/ToStringBuilder/reflectionToString(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/lang3/builder/ToStringBuilder/reflectionToString(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///nl/pvanassen/ns/model/reisadvies/ReisMogelijkheid/getGeplandeVertrekTijd()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+method:///nl/pvanassen/ns/model/reisadvies/ReisMogelijkheid/isOptimaal()|",
+      "|java+method:///nl/pvanassen/ns/model/reisadvies/ReisMogelijkheid/getStatus()|",
+      "|java+method:///java/lang/StringBuilder/append(boolean)|",
+      "|java+method:///nl/pvanassen/ns/model/reisadvies/ReisMogelijkheid/getActueleVertrekTijd()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///nl/pvanassen/ns/model/reisadvies/ReisMogelijkheid/getAantalOverstappen()|",
+      "|java+method:///nl/pvanassen/ns/model/reisadvies/ReisMogelijkheid/getActueleReisTijdMinuten()|",
+      "|java+method:///nl/pvanassen/ns/model/reisadvies/ReisMogelijkheid/getReisDelen()|",
+      "|java+method:///nl/pvanassen/ns/model/reisadvies/ReisMogelijkheid/getGeplandeAankomstTijd()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///nl/pvanassen/ns/model/reisadvies/ReisMogelijkheid/getMeldingen()|",
+      "|java+method:///nl/pvanassen/ns/model/reisadvies/ReisMogelijkheid/getAankomstVertraging()|",
+      "|java+method:///nl/pvanassen/ns/model/reisadvies/ReisMogelijkheid/getActueleAankomstTijd()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///nl/pvanassen/ns/model/reisadvies/ReisMogelijkheid/getGeplandeReisTijdMinuten()|"
+    ],
+    "affectedLib": "org.apache.commons:commons-lang3:3.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "nl.pvanassen:ns-api:1.1.1",
+    "coordinatesV2": "nl.pvanassen:ns-api:1.1.0",
+    "caller": "|java+method:///nl/pvanassen/ns/model/storingen/Storingen/toString()|",
+    "called": "|java+method:///org/apache/commons/lang3/builder/ToStringBuilder/reflectionToString(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/lang3/builder/ToStringBuilder/reflectionToString(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///nl/pvanassen/ns/model/storingen/Storingen/getOngeplandeStoringen()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///nl/pvanassen/ns/model/storingen/Storingen/getGeplandeStoringen()|"
+    ],
+    "affectedLib": "org.apache.commons:commons-lang3:3.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "nl.pvanassen:ns-api:1.1.1",
+    "coordinatesV2": "nl.pvanassen:ns-api:1.1.0",
+    "caller": "|java+method:///nl/pvanassen/ns/model/storingen/Storing/hashCode()|",
+    "called": "|java+method:///org/apache/commons/lang3/builder/HashCodeBuilder/reflectionHashCode(java.lang.Object,java.lang.String%5B%5D)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/lang3/builder/HashCodeBuilder/reflectionHashCode(java.lang.Object,java.lang.String%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///nl/pvanassen/ns/model/storingen/Storing/getPeriode()|",
+      "|java+method:///nl/pvanassen/ns/model/storingen/Storing/getId()|",
+      "|java+method:///nl/pvanassen/ns/model/storingen/Storing/getAdvies()|",
+      "|java+method:///nl/pvanassen/ns/model/storingen/Storing/getBericht()|",
+      "|java+method:///nl/pvanassen/ns/model/storingen/Storing/getReden()|",
+      "|java+method:///nl/pvanassen/ns/model/storingen/Storing/getTraject()|",
+      "|java+method:///java/lang/Object/hashCode()|",
+      "|java+method:///nl/pvanassen/ns/model/storingen/Storing/getDatum()|"
+    ],
+    "affectedLib": "org.apache.commons:commons-lang3:3.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "nl.pvanassen:ns-api:1.1.1",
+    "coordinatesV2": "nl.pvanassen:ns-api:1.1.0",
+    "caller": "|java+method:///nl/pvanassen/ns/model/storingen/Storingen/hashCode()|",
+    "called": "|java+method:///org/apache/commons/lang3/builder/HashCodeBuilder/reflectionHashCode(java.lang.Object,java.lang.String%5B%5D)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/lang3/builder/HashCodeBuilder/reflectionHashCode(java.lang.Object,java.lang.String%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Object/hashCode()|",
+      "|java+method:///nl/pvanassen/ns/model/storingen/Storingen/getGeplandeStoringen()|",
+      "|java+method:///nl/pvanassen/ns/model/storingen/Storingen/getOngeplandeStoringen()|"
+    ],
+    "affectedLib": "org.apache.commons:commons-lang3:3.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "nl.pvanassen:ns-api:1.1.1",
+    "coordinatesV2": "nl.pvanassen:ns-api:1.1.0",
+    "caller": "|java+method:///nl/pvanassen/ns/model/storingen/Storing/equals(java.lang.Object)|",
+    "called": "|java+method:///org/apache/commons/lang3/builder/EqualsBuilder/reflectionEquals(java.lang.Object,java.lang.Object,java.lang.String%5B%5D)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/lang3/builder/EqualsBuilder/reflectionEquals(java.lang.Object,java.lang.Object,java.lang.String%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Object/equals(java.lang.Object)|",
+      "|java+method:///nl/pvanassen/ns/model/storingen/Storing/getPeriode()|",
+      "|java+method:///nl/pvanassen/ns/model/storingen/Storing/canEqual(java.lang.Object)|",
+      "|java+method:///nl/pvanassen/ns/model/storingen/Storing/getId()|",
+      "|java+method:///nl/pvanassen/ns/model/storingen/Storing/getAdvies()|",
+      "|java+method:///nl/pvanassen/ns/model/storingen/Storing/getBericht()|",
+      "|java+method:///nl/pvanassen/ns/model/storingen/Storing/getReden()|",
+      "|java+method:///nl/pvanassen/ns/model/storingen/Storing/getTraject()|",
+      "|java+method:///nl/pvanassen/ns/model/storingen/Storing/getDatum()|"
+    ],
+    "affectedLib": "org.apache.commons:commons-lang3:3.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "nl.pvanassen:ns-api:1.1.1",
+    "coordinatesV2": "nl.pvanassen:ns-api:1.1.0",
+    "caller": "|java+method:///nl/pvanassen/ns/model/reisadvies/ReisMogelijkheid/hashCode()|",
+    "called": "|java+method:///org/apache/commons/lang3/builder/HashCodeBuilder/reflectionHashCode(java.lang.Object,java.lang.String%5B%5D)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/lang3/builder/HashCodeBuilder/reflectionHashCode(java.lang.Object,java.lang.String%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///nl/pvanassen/ns/model/reisadvies/ReisMogelijkheid/getGeplandeVertrekTijd()|",
+      "|java+method:///nl/pvanassen/ns/model/reisadvies/ReisMogelijkheid/isOptimaal()|",
+      "|java+method:///nl/pvanassen/ns/model/reisadvies/ReisMogelijkheid/getStatus()|",
+      "|java+method:///java/lang/Object/hashCode()|",
+      "|java+method:///nl/pvanassen/ns/model/reisadvies/ReisMogelijkheid/getActueleVertrekTijd()|",
+      "|java+method:///nl/pvanassen/ns/model/reisadvies/ReisMogelijkheid/getAantalOverstappen()|",
+      "|java+method:///nl/pvanassen/ns/model/reisadvies/ReisMogelijkheid/getActueleReisTijdMinuten()|",
+      "|java+method:///nl/pvanassen/ns/model/reisadvies/ReisMogelijkheid/getReisDelen()|",
+      "|java+method:///nl/pvanassen/ns/model/reisadvies/ReisMogelijkheid/getGeplandeAankomstTijd()|",
+      "|java+method:///nl/pvanassen/ns/model/reisadvies/ReisMogelijkheid/getMeldingen()|",
+      "|java+method:///nl/pvanassen/ns/model/reisadvies/ReisMogelijkheid/getAankomstVertraging()|",
+      "|java+method:///nl/pvanassen/ns/model/reisadvies/ReisMogelijkheid/getGeplandeReisTijdMinuten()|",
+      "|java+method:///nl/pvanassen/ns/model/reisadvies/ReisMogelijkheid/getActueleAankomstTijd()|"
+    ],
+    "affectedLib": "org.apache.commons:commons-lang3:3.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "nl.pvanassen:ns-api:1.1.1",
+    "coordinatesV2": "nl.pvanassen:ns-api:1.1.0",
+    "caller": "|java+method:///nl/pvanassen/ns/model/reisadvies/ReisStop/equals(java.lang.Object)|",
+    "called": "|java+method:///org/apache/commons/lang3/builder/EqualsBuilder/reflectionEquals(java.lang.Object,java.lang.Object,java.lang.String%5B%5D)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/lang3/builder/EqualsBuilder/reflectionEquals(java.lang.Object,java.lang.Object,java.lang.String%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///nl/pvanassen/ns/model/reisadvies/ReisStop/getSpoor()|",
+      "|java+method:///java/lang/Object/equals(java.lang.Object)|",
+      "|java+method:///nl/pvanassen/ns/model/reisadvies/ReisStop/getNaam()|",
+      "|java+method:///nl/pvanassen/ns/model/reisadvies/ReisStop/canEqual(java.lang.Object)|",
+      "|java+method:///nl/pvanassen/ns/model/reisadvies/ReisStop/getTijd()|",
+      "|java+method:///nl/pvanassen/ns/model/reisadvies/ReisStop/isGewijzigdVertrekspoor()|"
+    ],
+    "affectedLib": "org.apache.commons:commons-lang3:3.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "nl.pvanassen:ns-api:1.1.1",
+    "coordinatesV2": "nl.pvanassen:ns-api:1.1.0",
+    "caller": "|java+method:///nl/pvanassen/ns/model/stations/Namen/toString()|",
+    "called": "|java+method:///org/apache/commons/lang3/builder/ToStringBuilder/reflectionToString(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/lang3/builder/ToStringBuilder/reflectionToString(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///nl/pvanassen/ns/model/stations/Namen/getKort()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///nl/pvanassen/ns/model/stations/Namen/getLang()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///nl/pvanassen/ns/model/stations/Namen/getMiddel()|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "affectedLib": "org.apache.commons:commons-lang3:3.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "nl.pvanassen:ns-api:1.1.1",
+    "coordinatesV2": "nl.pvanassen:ns-api:1.1.0",
+    "caller": "|java+method:///nl/pvanassen/ns/model/vertrektijden/VertrekkendeTrein/equals(java.lang.Object)|",
+    "called": "|java+method:///org/apache/commons/lang3/builder/EqualsBuilder/reflectionEquals(java.lang.Object,java.lang.Object,java.lang.String%5B%5D)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/lang3/builder/EqualsBuilder/reflectionEquals(java.lang.Object,java.lang.Object,java.lang.String%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///nl/pvanassen/ns/model/vertrektijden/VertrekkendeTrein/getVertrekVertragingTekst()|",
+      "|java+method:///java/lang/Object/equals(java.lang.Object)|",
+      "|java+method:///nl/pvanassen/ns/model/vertrektijden/VertrekkendeTrein/getReisTip()|",
+      "|java+method:///nl/pvanassen/ns/model/vertrektijden/VertrekkendeTrein/getVertrekVertraging()|",
+      "|java+method:///nl/pvanassen/ns/model/vertrektijden/VertrekkendeTrein/getVervoerder()|",
+      "|java+method:///nl/pvanassen/ns/model/vertrektijden/VertrekkendeTrein/getVertrekSpoor()|",
+      "|java+method:///nl/pvanassen/ns/model/vertrektijden/VertrekkendeTrein/getRouteTekst()|",
+      "|java+method:///nl/pvanassen/ns/model/vertrektijden/VertrekkendeTrein/getRitNummer()|",
+      "|java+method:///nl/pvanassen/ns/model/vertrektijden/VertrekkendeTrein/isGewijzigdVertrekspoor()|",
+      "|java+method:///nl/pvanassen/ns/model/vertrektijden/VertrekkendeTrein/getVertrekTijd()|",
+      "|java+method:///nl/pvanassen/ns/model/vertrektijden/VertrekkendeTrein/getVertrekVertragingMinuten()|",
+      "|java+method:///nl/pvanassen/ns/model/vertrektijden/VertrekkendeTrein/getOpmerkingen()|",
+      "|java+method:///nl/pvanassen/ns/model/vertrektijden/VertrekkendeTrein/getEindBestemming()|",
+      "|java+method:///nl/pvanassen/ns/model/vertrektijden/VertrekkendeTrein/getTreinSoort()|",
+      "|java+method:///nl/pvanassen/ns/model/vertrektijden/VertrekkendeTrein/canEqual(java.lang.Object)|"
+    ],
+    "affectedLib": "org.apache.commons:commons-lang3:3.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "nl.pvanassen:ns-api:1.1.1",
+    "coordinatesV2": "nl.pvanassen:ns-api:1.1.0",
+    "caller": "|java+method:///nl/pvanassen/ns/model/reisadvies/Melding/toString()|",
+    "called": "|java+method:///org/apache/commons/lang3/builder/ToStringBuilder/reflectionToString(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/lang3/builder/ToStringBuilder/reflectionToString(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///nl/pvanassen/ns/model/reisadvies/Melding/getId()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///nl/pvanassen/ns/model/reisadvies/Melding/isErnstig()|",
+      "|java+method:///java/lang/StringBuilder/append(boolean)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///nl/pvanassen/ns/model/reisadvies/Melding/getText()|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "affectedLib": "org.apache.commons:commons-lang3:3.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "nl.pvanassen:ns-api:1.1.1",
+    "coordinatesV2": "nl.pvanassen:ns-api:1.1.0",
+    "caller": "|java+method:///nl/pvanassen/ns/model/stations/Namen/equals(java.lang.Object)|",
+    "called": "|java+method:///org/apache/commons/lang3/builder/EqualsBuilder/reflectionEquals(java.lang.Object,java.lang.Object,java.lang.String%5B%5D)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/lang3/builder/EqualsBuilder/reflectionEquals(java.lang.Object,java.lang.Object,java.lang.String%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///nl/pvanassen/ns/model/stations/Namen/getKort()|",
+      "|java+method:///nl/pvanassen/ns/model/stations/Namen/canEqual(java.lang.Object)|",
+      "|java+method:///java/lang/Object/equals(java.lang.Object)|",
+      "|java+method:///nl/pvanassen/ns/model/stations/Namen/getLang()|",
+      "|java+method:///nl/pvanassen/ns/model/stations/Namen/getMiddel()|"
+    ],
+    "affectedLib": "org.apache.commons:commons-lang3:3.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "nl.pvanassen:ns-api:1.1.1",
+    "coordinatesV2": "nl.pvanassen:ns-api:1.1.0",
+    "caller": "|java+method:///nl/pvanassen/ns/model/reisadvies/Melding/equals(java.lang.Object)|",
+    "called": "|java+method:///org/apache/commons/lang3/builder/EqualsBuilder/reflectionEquals(java.lang.Object,java.lang.Object,java.lang.String%5B%5D)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/lang3/builder/EqualsBuilder/reflectionEquals(java.lang.Object,java.lang.Object,java.lang.String%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Object/equals(java.lang.Object)|",
+      "|java+method:///nl/pvanassen/ns/model/reisadvies/Melding/getId()|",
+      "|java+method:///nl/pvanassen/ns/model/reisadvies/Melding/isErnstig()|",
+      "|java+method:///nl/pvanassen/ns/model/reisadvies/Melding/canEqual(java.lang.Object)|",
+      "|java+method:///nl/pvanassen/ns/model/reisadvies/Melding/getText()|"
+    ],
+    "affectedLib": "org.apache.commons:commons-lang3:3.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "nl.pvanassen:ns-api:1.1.1",
+    "coordinatesV2": "nl.pvanassen:ns-api:1.1.0",
+    "caller": "|java+method:///nl/pvanassen/ns/model/reisadvies/ReisStop/hashCode()|",
+    "called": "|java+method:///org/apache/commons/lang3/builder/HashCodeBuilder/reflectionHashCode(java.lang.Object,java.lang.String%5B%5D)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/lang3/builder/HashCodeBuilder/reflectionHashCode(java.lang.Object,java.lang.String%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///nl/pvanassen/ns/model/reisadvies/ReisStop/getSpoor()|",
+      "|java+method:///nl/pvanassen/ns/model/reisadvies/ReisStop/getNaam()|",
+      "|java+method:///java/lang/Object/hashCode()|",
+      "|java+method:///nl/pvanassen/ns/model/reisadvies/ReisStop/getTijd()|",
+      "|java+method:///nl/pvanassen/ns/model/reisadvies/ReisStop/isGewijzigdVertrekspoor()|"
+    ],
+    "affectedLib": "org.apache.commons:commons-lang3:3.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "nl.pvanassen:ns-api:1.1.1",
+    "coordinatesV2": "nl.pvanassen:ns-api:1.1.0",
+    "caller": "|java+method:///nl/pvanassen/ns/model/storingen/Storingen/equals(java.lang.Object)|",
+    "called": "|java+method:///org/apache/commons/lang3/builder/EqualsBuilder/reflectionEquals(java.lang.Object,java.lang.Object,java.lang.String%5B%5D)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/lang3/builder/EqualsBuilder/reflectionEquals(java.lang.Object,java.lang.Object,java.lang.String%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///nl/pvanassen/ns/model/storingen/Storingen/canEqual(java.lang.Object)|",
+      "|java+method:///java/lang/Object/equals(java.lang.Object)|",
+      "|java+method:///nl/pvanassen/ns/model/storingen/Storingen/getGeplandeStoringen()|",
+      "|java+method:///nl/pvanassen/ns/model/storingen/Storingen/getOngeplandeStoringen()|"
+    ],
+    "affectedLib": "org.apache.commons:commons-lang3:3.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "nl.pvanassen:ns-api:1.1.1",
+    "coordinatesV2": "nl.pvanassen:ns-api:1.1.0",
+    "caller": "|java+method:///nl/pvanassen/ns/model/reisadvies/ReisDeel/toString()|",
+    "called": "|java+method:///org/apache/commons/lang3/builder/ToStringBuilder/reflectionToString(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/lang3/builder/ToStringBuilder/reflectionToString(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///nl/pvanassen/ns/model/reisadvies/ReisDeel/getStatus()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///nl/pvanassen/ns/model/reisadvies/ReisDeel/getReisDetails()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///nl/pvanassen/ns/model/reisadvies/ReisDeel/getVervoerder()|",
+      "|java+method:///nl/pvanassen/ns/model/reisadvies/ReisDeel/getOngeplandeStoringId()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///nl/pvanassen/ns/model/reisadvies/ReisDeel/getReisStops()|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+method:///nl/pvanassen/ns/model/reisadvies/ReisDeel/getVervoerType()|",
+      "|java+method:///nl/pvanassen/ns/model/reisadvies/ReisDeel/getRitNummer()|",
+      "|java+method:///nl/pvanassen/ns/model/reisadvies/ReisDeel/getGeplandeStoringId()|",
+      "|java+method:///nl/pvanassen/ns/model/reisadvies/ReisDeel/getReisSoort()|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "affectedLib": "org.apache.commons:commons-lang3:3.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "nl.pvanassen:ns-api:1.1.1",
+    "coordinatesV2": "nl.pvanassen:ns-api:1.1.0",
+    "caller": "|java+method:///nl/pvanassen/ns/model/reisadvies/ReisStop/toString()|",
+    "called": "|java+method:///org/apache/commons/lang3/builder/ToStringBuilder/reflectionToString(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/lang3/builder/ToStringBuilder/reflectionToString(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///nl/pvanassen/ns/model/reisadvies/ReisStop/getSpoor()|",
+      "|java+method:///java/lang/StringBuilder/append(boolean)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///nl/pvanassen/ns/model/reisadvies/ReisStop/getTijd()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///nl/pvanassen/ns/model/reisadvies/ReisStop/isGewijzigdVertrekspoor()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///nl/pvanassen/ns/model/reisadvies/ReisStop/getNaam()|"
+    ],
+    "affectedLib": "org.apache.commons:commons-lang3:3.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "nl.pvanassen:ns-api:1.1.1",
+    "coordinatesV2": "nl.pvanassen:ns-api:1.1.0",
+    "caller": "|java+method:///nl/pvanassen/ns/model/reisadvies/ReisMogelijkheid/equals(java.lang.Object)|",
+    "called": "|java+method:///org/apache/commons/lang3/builder/EqualsBuilder/reflectionEquals(java.lang.Object,java.lang.Object,java.lang.String%5B%5D)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/lang3/builder/EqualsBuilder/reflectionEquals(java.lang.Object,java.lang.Object,java.lang.String%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///nl/pvanassen/ns/model/reisadvies/ReisMogelijkheid/canEqual(java.lang.Object)|",
+      "|java+method:///java/lang/Object/equals(java.lang.Object)|",
+      "|java+method:///nl/pvanassen/ns/model/reisadvies/ReisMogelijkheid/getGeplandeVertrekTijd()|",
+      "|java+method:///nl/pvanassen/ns/model/reisadvies/ReisMogelijkheid/isOptimaal()|",
+      "|java+method:///nl/pvanassen/ns/model/reisadvies/ReisMogelijkheid/getStatus()|",
+      "|java+method:///nl/pvanassen/ns/model/reisadvies/ReisMogelijkheid/getActueleVertrekTijd()|",
+      "|java+method:///nl/pvanassen/ns/model/reisadvies/ReisMogelijkheid/getAantalOverstappen()|",
+      "|java+method:///nl/pvanassen/ns/model/reisadvies/ReisMogelijkheid/getActueleReisTijdMinuten()|",
+      "|java+method:///nl/pvanassen/ns/model/reisadvies/ReisMogelijkheid/getReisDelen()|",
+      "|java+method:///nl/pvanassen/ns/model/reisadvies/ReisMogelijkheid/getGeplandeAankomstTijd()|",
+      "|java+method:///nl/pvanassen/ns/model/reisadvies/ReisMogelijkheid/getMeldingen()|",
+      "|java+method:///nl/pvanassen/ns/model/reisadvies/ReisMogelijkheid/getAankomstVertraging()|",
+      "|java+method:///nl/pvanassen/ns/model/reisadvies/ReisMogelijkheid/getGeplandeReisTijdMinuten()|",
+      "|java+method:///nl/pvanassen/ns/model/reisadvies/ReisMogelijkheid/getActueleAankomstTijd()|"
+    ],
+    "affectedLib": "org.apache.commons:commons-lang3:3.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "nl.pvanassen:ns-api:1.1.1",
+    "coordinatesV2": "nl.pvanassen:ns-api:1.1.0",
+    "caller": "|java+method:///nl/pvanassen/ns/model/vertrektijden/VertrekkendeTrein/hashCode()|",
+    "called": "|java+method:///org/apache/commons/lang3/builder/HashCodeBuilder/reflectionHashCode(java.lang.Object,java.lang.String%5B%5D)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/lang3/builder/HashCodeBuilder/reflectionHashCode(java.lang.Object,java.lang.String%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///nl/pvanassen/ns/model/vertrektijden/VertrekkendeTrein/getVertrekVertragingTekst()|",
+      "|java+method:///nl/pvanassen/ns/model/vertrektijden/VertrekkendeTrein/getReisTip()|",
+      "|java+method:///nl/pvanassen/ns/model/vertrektijden/VertrekkendeTrein/getVertrekVertraging()|",
+      "|java+method:///nl/pvanassen/ns/model/vertrektijden/VertrekkendeTrein/getVervoerder()|",
+      "|java+method:///nl/pvanassen/ns/model/vertrektijden/VertrekkendeTrein/getVertrekSpoor()|",
+      "|java+method:///nl/pvanassen/ns/model/vertrektijden/VertrekkendeTrein/getRouteTekst()|",
+      "|java+method:///nl/pvanassen/ns/model/vertrektijden/VertrekkendeTrein/getRitNummer()|",
+      "|java+method:///nl/pvanassen/ns/model/vertrektijden/VertrekkendeTrein/isGewijzigdVertrekspoor()|",
+      "|java+method:///nl/pvanassen/ns/model/vertrektijden/VertrekkendeTrein/getVertrekTijd()|",
+      "|java+method:///nl/pvanassen/ns/model/vertrektijden/VertrekkendeTrein/getVertrekVertragingMinuten()|",
+      "|java+method:///nl/pvanassen/ns/model/vertrektijden/VertrekkendeTrein/getOpmerkingen()|",
+      "|java+method:///nl/pvanassen/ns/model/vertrektijden/VertrekkendeTrein/getEindBestemming()|",
+      "|java+method:///nl/pvanassen/ns/model/vertrektijden/VertrekkendeTrein/getTreinSoort()|",
+      "|java+method:///java/lang/Object/hashCode()|"
+    ],
+    "affectedLib": "org.apache.commons:commons-lang3:3.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "nl.pvanassen:ns-api:1.1.1",
+    "coordinatesV2": "nl.pvanassen:ns-api:1.1.0",
+    "caller": "|java+method:///nl/pvanassen/ns/model/stations/Station/equals(java.lang.Object)|",
+    "called": "|java+method:///org/apache/commons/lang3/builder/EqualsBuilder/reflectionEquals(java.lang.Object,java.lang.Object,java.lang.String%5B%5D)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/lang3/builder/EqualsBuilder/reflectionEquals(java.lang.Object,java.lang.Object,java.lang.String%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Object/equals(java.lang.Object)|",
+      "|java+method:///java/lang/Double/compare(double,double)|",
+      "|java+method:///nl/pvanassen/ns/model/stations/Station/getLat()|",
+      "|java+method:///nl/pvanassen/ns/model/stations/Station/getNamen()|",
+      "|java+method:///nl/pvanassen/ns/model/stations/Station/canEqual(java.lang.Object)|",
+      "|java+method:///nl/pvanassen/ns/model/stations/Station/getLon()|",
+      "|java+method:///nl/pvanassen/ns/model/stations/Station/getLand()|",
+      "|java+method:///nl/pvanassen/ns/model/stations/Station/getCode()|",
+      "|java+method:///nl/pvanassen/ns/model/stations/Station/getSynoniemen()|",
+      "|java+method:///nl/pvanassen/ns/model/stations/Station/getUicCode()|",
+      "|java+method:///nl/pvanassen/ns/model/stations/Station/getType()|"
+    ],
+    "affectedLib": "org.apache.commons:commons-lang3:3.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "nl.pvanassen:ns-api:1.1.1",
+    "coordinatesV2": "nl.pvanassen:ns-api:1.1.0",
+    "caller": "|java+method:///nl/pvanassen/ns/model/reisadvies/ReisDeel/hashCode()|",
+    "called": "|java+method:///org/apache/commons/lang3/builder/HashCodeBuilder/reflectionHashCode(java.lang.Object,java.lang.String%5B%5D)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/lang3/builder/HashCodeBuilder/reflectionHashCode(java.lang.Object,java.lang.String%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///nl/pvanassen/ns/model/reisadvies/ReisDeel/getStatus()|",
+      "|java+method:///nl/pvanassen/ns/model/reisadvies/ReisDeel/getVervoerType()|",
+      "|java+method:///nl/pvanassen/ns/model/reisadvies/ReisDeel/getReisDetails()|",
+      "|java+method:///java/lang/Object/hashCode()|",
+      "|java+method:///nl/pvanassen/ns/model/reisadvies/ReisDeel/getVervoerder()|",
+      "|java+method:///nl/pvanassen/ns/model/reisadvies/ReisDeel/getOngeplandeStoringId()|",
+      "|java+method:///nl/pvanassen/ns/model/reisadvies/ReisDeel/getReisStops()|",
+      "|java+method:///nl/pvanassen/ns/model/reisadvies/ReisDeel/getReisSoort()|",
+      "|java+method:///nl/pvanassen/ns/model/reisadvies/ReisDeel/getRitNummer()|",
+      "|java+method:///nl/pvanassen/ns/model/reisadvies/ReisDeel/getGeplandeStoringId()|"
+    ],
+    "affectedLib": "org.apache.commons:commons-lang3:3.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "nl.pvanassen:ns-api:1.1.1",
+    "coordinatesV2": "nl.pvanassen:ns-api:1.1.0",
+    "caller": "|java+method:///nl/pvanassen/ns/model/stations/Station/toString()|",
+    "called": "|java+method:///org/apache/commons/lang3/builder/ToStringBuilder/reflectionToString(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/lang3/builder/ToStringBuilder/reflectionToString(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///nl/pvanassen/ns/model/stations/Station/getLat()|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+method:///nl/pvanassen/ns/model/stations/Station/getNamen()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///nl/pvanassen/ns/model/stations/Station/getLon()|",
+      "|java+method:///nl/pvanassen/ns/model/stations/Station/getLand()|",
+      "|java+method:///nl/pvanassen/ns/model/stations/Station/getCode()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/append(double)|",
+      "|java+method:///nl/pvanassen/ns/model/stations/Station/getUicCode()|",
+      "|java+method:///nl/pvanassen/ns/model/stations/Station/getType()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///nl/pvanassen/ns/model/stations/Station/getSynoniemen()|"
+    ],
+    "affectedLib": "org.apache.commons:commons-lang3:3.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "nl.pvanassen:ns-api:1.1.1",
+    "coordinatesV2": "nl.pvanassen:ns-api:1.1.0",
+    "caller": "|java+method:///nl/pvanassen/ns/model/reisadvies/ReisDeel/equals(java.lang.Object)|",
+    "called": "|java+method:///org/apache/commons/lang3/builder/EqualsBuilder/reflectionEquals(java.lang.Object,java.lang.Object,java.lang.String%5B%5D)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/lang3/builder/EqualsBuilder/reflectionEquals(java.lang.Object,java.lang.Object,java.lang.String%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///nl/pvanassen/ns/model/reisadvies/ReisDeel/getStatus()|",
+      "|java+method:///java/lang/Object/equals(java.lang.Object)|",
+      "|java+method:///nl/pvanassen/ns/model/reisadvies/ReisDeel/getVervoerType()|",
+      "|java+method:///nl/pvanassen/ns/model/reisadvies/ReisDeel/getReisDetails()|",
+      "|java+method:///nl/pvanassen/ns/model/reisadvies/ReisDeel/canEqual(java.lang.Object)|",
+      "|java+method:///nl/pvanassen/ns/model/reisadvies/ReisDeel/getVervoerder()|",
+      "|java+method:///nl/pvanassen/ns/model/reisadvies/ReisDeel/getOngeplandeStoringId()|",
+      "|java+method:///nl/pvanassen/ns/model/reisadvies/ReisDeel/getReisStops()|",
+      "|java+method:///nl/pvanassen/ns/model/reisadvies/ReisDeel/getReisSoort()|",
+      "|java+method:///nl/pvanassen/ns/model/reisadvies/ReisDeel/getRitNummer()|",
+      "|java+method:///nl/pvanassen/ns/model/reisadvies/ReisDeel/getGeplandeStoringId()|"
+    ],
+    "affectedLib": "org.apache.commons:commons-lang3:3.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "nl.pvanassen:ns-api:1.1.1",
+    "coordinatesV2": "nl.pvanassen:ns-api:1.1.0",
+    "caller": "|java+method:///nl/pvanassen/ns/model/stations/Station/hashCode()|",
+    "called": "|java+method:///org/apache/commons/lang3/builder/HashCodeBuilder/reflectionHashCode(java.lang.Object,java.lang.String%5B%5D)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/lang3/builder/HashCodeBuilder/reflectionHashCode(java.lang.Object,java.lang.String%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Double/doubleToLongBits(double)|",
+      "|java+method:///nl/pvanassen/ns/model/stations/Station/getLat()|",
+      "|java+method:///nl/pvanassen/ns/model/stations/Station/getNamen()|",
+      "|java+method:///java/lang/Object/hashCode()|",
+      "|java+method:///nl/pvanassen/ns/model/stations/Station/getLon()|",
+      "|java+method:///nl/pvanassen/ns/model/stations/Station/getLand()|",
+      "|java+method:///nl/pvanassen/ns/model/stations/Station/getCode()|",
+      "|java+method:///nl/pvanassen/ns/model/stations/Station/getSynoniemen()|",
+      "|java+method:///nl/pvanassen/ns/model/stations/Station/getUicCode()|",
+      "|java+method:///nl/pvanassen/ns/model/stations/Station/getType()|"
+    ],
+    "affectedLib": "org.apache.commons:commons-lang3:3.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "nl.pvanassen:ns-api:1.1.1",
+    "coordinatesV2": "nl.pvanassen:ns-api:1.1.0",
+    "caller": "|java+method:///nl/pvanassen/ns/model/vertrektijden/VertrekkendeTrein/toString()|",
+    "called": "|java+method:///org/apache/commons/lang3/builder/ToStringBuilder/reflectionToString(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/lang3/builder/ToStringBuilder/reflectionToString(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///nl/pvanassen/ns/model/vertrektijden/VertrekkendeTrein/getVertrekVertragingTekst()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///nl/pvanassen/ns/model/vertrektijden/VertrekkendeTrein/getVertrekVertraging()|",
+      "|java+method:///java/lang/StringBuilder/append(boolean)|",
+      "|java+method:///nl/pvanassen/ns/model/vertrektijden/VertrekkendeTrein/getVervoerder()|",
+      "|java+method:///nl/pvanassen/ns/model/vertrektijden/VertrekkendeTrein/getTreinSoort()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///nl/pvanassen/ns/model/vertrektijden/VertrekkendeTrein/getVertrekSpoor()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///nl/pvanassen/ns/model/vertrektijden/VertrekkendeTrein/getRouteTekst()|",
+      "|java+method:///nl/pvanassen/ns/model/vertrektijden/VertrekkendeTrein/getRitNummer()|",
+      "|java+method:///nl/pvanassen/ns/model/vertrektijden/VertrekkendeTrein/isGewijzigdVertrekspoor()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///nl/pvanassen/ns/model/vertrektijden/VertrekkendeTrein/getVertrekTijd()|",
+      "|java+method:///nl/pvanassen/ns/model/vertrektijden/VertrekkendeTrein/getVertrekVertragingMinuten()|",
+      "|java+method:///nl/pvanassen/ns/model/vertrektijden/VertrekkendeTrein/getOpmerkingen()|",
+      "|java+method:///nl/pvanassen/ns/model/vertrektijden/VertrekkendeTrein/getEindBestemming()|",
+      "|java+method:///nl/pvanassen/ns/model/vertrektijden/VertrekkendeTrein/getReisTip()|",
+      "|java+method:///java/lang/StringBuilder/append(int)|"
+    ],
+    "affectedLib": "org.apache.commons:commons-lang3:3.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "nl.pvanassen:ns-api:1.1.1",
+    "coordinatesV2": "nl.pvanassen:ns-api:1.1.0",
+    "caller": "|java+method:///nl/pvanassen/ns/model/stations/Namen/hashCode()|",
+    "called": "|java+method:///org/apache/commons/lang3/builder/HashCodeBuilder/reflectionHashCode(java.lang.Object,java.lang.String%5B%5D)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/lang3/builder/HashCodeBuilder/reflectionHashCode(java.lang.Object,java.lang.String%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///nl/pvanassen/ns/model/stations/Namen/getKort()|",
+      "|java+method:///nl/pvanassen/ns/model/stations/Namen/getLang()|",
+      "|java+method:///java/lang/Object/hashCode()|",
+      "|java+method:///nl/pvanassen/ns/model/stations/Namen/getMiddel()|"
+    ],
+    "affectedLib": "org.apache.commons:commons-lang3:3.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "nl.pvanassen:ns-api:1.1.1",
+    "coordinatesV2": "nl.pvanassen:ns-api:1.1.0",
+    "caller": "|java+method:///nl/pvanassen/ns/model/reisadvies/Melding/hashCode()|",
+    "called": "|java+method:///org/apache/commons/lang3/builder/HashCodeBuilder/reflectionHashCode(java.lang.Object,java.lang.String%5B%5D)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/lang3/builder/HashCodeBuilder/reflectionHashCode(java.lang.Object,java.lang.String%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///nl/pvanassen/ns/model/reisadvies/Melding/getId()|",
+      "|java+method:///nl/pvanassen/ns/model/reisadvies/Melding/isErnstig()|",
+      "|java+method:///java/lang/Object/hashCode()|",
+      "|java+method:///nl/pvanassen/ns/model/reisadvies/Melding/getText()|"
+    ],
+    "affectedLib": "org.apache.commons:commons-lang3:3.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "nl.pvanassen:ns-api:1.1.0",
+    "coordinatesV2": "nl.pvanassen:ns-api:1.1.1",
+    "caller": "|java+method:///nl/pvanassen/ns/HttpConnection/getContent(java.lang.String)|",
+    "called": "|java+method:///okhttp3/Request$Builder/build()|",
+    "v1Body": [
+      "|java+method:///org/apache/http/HttpResponse/getStatusLine()|",
+      "|java+method:///org/apache/http/client/HttpClient/execute(org.apache.http.client.methods.HttpUriRequest)|",
+      "|java+constructor:///nl/pvanassen/ns/error/NsApiException/NsApiException(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String)|",
+      "|java+method:///org/apache/http/HttpEntity/getContent()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///org/apache/http/client/methods/HttpGet/HttpGet(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///org/apache/http/HttpResponse/getEntity()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///okhttp3/Request$Builder/Request$Builder()|",
+      "|java+method:///okhttp3/Request$Builder/build()|",
+      "|java+method:///okhttp3/Request$Builder/get()|",
+      "|java+method:///okhttp3/Response/body()|",
+      "|java+method:///okhttp3/ResponseBody/byteStream()|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String)|",
+      "|java+method:///okhttp3/Request$Builder/url(java.lang.String)|",
+      "|java+constructor:///nl/pvanassen/ns/error/NsApiException/NsApiException(java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///nl/pvanassen/ns/error/NsApiException/NsApiException(java.lang.String)|",
+      "|java+method:///okhttp3/OkHttpClient/newCall(okhttp3.Request)|",
+      "|java+method:///okhttp3/Call/execute()|"
+    ],
+    "affectedLib": "com.squareup.okhttp3:okhttp:3.8.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "nl.pvanassen:ns-api:1.1.0",
+    "coordinatesV2": "nl.pvanassen:ns-api:1.1.1",
+    "caller": "|java+constructor:///nl/pvanassen/ns/HttpConnection/HttpConnection(java.lang.String,java.lang.String)|",
+    "called": "|java+constructor:///okhttp3/OkHttpClient$Builder/OkHttpClient$Builder()|",
+    "v1Body": [
+      "|java+method:///org/apache/http/impl/client/BasicCredentialsProvider/setCredentials(org.apache.http.auth.AuthScope,org.apache.http.auth.Credentials)|",
+      "|java+constructor:///org/apache/http/auth/UsernamePasswordCredentials/UsernamePasswordCredentials(java.lang.String,java.lang.String)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///org/apache/http/impl/client/HttpClientBuilder/build()|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///org/apache/http/impl/client/HttpClientBuilder/create()|",
+      "|java+method:///org/apache/http/impl/client/HttpClientBuilder/setDefaultCredentialsProvider(org.apache.http.client.CredentialsProvider)|",
+      "|java+constructor:///org/apache/http/auth/AuthScope/AuthScope(java.lang.String,int)|",
+      "|java+constructor:///org/apache/http/impl/client/BasicCredentialsProvider/BasicCredentialsProvider()|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///nl/pvanassen/ns/HttpConnection$1/HttpConnection$1(nl.pvanassen.ns.HttpConnection,java.lang.String,java.lang.String)|",
+      "|java+method:///okhttp3/OkHttpClient$Builder/authenticator(okhttp3.Authenticator)|",
+      "|java+constructor:///okhttp3/OkHttpClient$Builder/OkHttpClient$Builder()|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///okhttp3/OkHttpClient$Builder/build()|"
+    ],
+    "affectedLib": "com.squareup.okhttp3:okhttp:3.8.0",
+    "change": "ADDED"
+  }
+]

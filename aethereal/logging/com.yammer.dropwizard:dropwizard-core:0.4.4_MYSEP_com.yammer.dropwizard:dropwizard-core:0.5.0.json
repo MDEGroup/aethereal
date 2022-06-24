@@ -1,0 +1,305 @@
+[
+  {
+    "coordinatesV1": "com.yammer.dropwizard:dropwizard-core:0.4.4",
+    "coordinatesV2": "com.yammer.dropwizard:dropwizard-core:0.5.0",
+    "caller": "|java+constructor:///com/yammer/dropwizard/jersey/JacksonMessageBodyProvider/JacksonMessageBodyProvider(com.yammer.dropwizard.json.Json)|",
+    "called": "|java+constructor:///org/codehaus/jackson/jaxrs/JacksonJaxbJsonProvider/JacksonJaxbJsonProvider()|",
+    "v1Body": [
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/codehaus/jackson/jaxrs/JacksonJaxbJsonProvider/JacksonJaxbJsonProvider()|",
+      "|java+method:///com/yammer/dropwizard/json/Json/getObjectMapper()|",
+      "|java+method:///com/yammer/dropwizard/jersey/JacksonMessageBodyProvider/setMapper(org.codehaus.jackson.map.ObjectMapper)|"
+    ],
+    "affectedLib": "org.codehaus.jackson:jackson-jaxrs:1.9.9",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.yammer.dropwizard:dropwizard-core:0.4.4",
+    "coordinatesV2": "com.yammer.dropwizard:dropwizard-core:0.5.0",
+    "caller": "|java+method:///com/yammer/dropwizard/config/RequestLogHandlerFactory/build()|",
+    "called": "|java+method:///org/eclipse/jetty/server/handler/RequestLogHandler/setRequestLog(org.eclipse.jetty.server.RequestLog)|",
+    "v1Body": [
+      "|java+method:///com/google/common/base/Optional/absent()|",
+      "|java+constructor:///ch/qos/logback/core/spi/AppenderAttachableImpl/AppenderAttachableImpl()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///com/yammer/dropwizard/config/LoggingConfiguration$ConsoleConfiguration/isEnabled()|",
+      "|java+method:///com/yammer/dropwizard/logging/LogbackFactory/buildConsoleAppender(com.yammer.dropwizard.config.LoggingConfiguration$ConsoleConfiguration,ch.qos.logback.classic.LoggerContext,com.google.common.base.Optional)|",
+      "|java+method:///ch/qos/logback/classic/Logger/setAdditive(boolean)|",
+      "|java+constructor:///org/eclipse/jetty/server/handler/RequestLogHandler/RequestLogHandler()|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.String)|",
+      "|java+method:///com/yammer/dropwizard/config/RequestLogConfiguration/getFileConfiguration()|",
+      "|java+method:///ch/qos/logback/core/spi/AppenderAttachableImpl/addAppender(ch.qos.logback.core.Appender)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///ch/qos/logback/classic/net/SyslogAppender/stop()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///com/yammer/dropwizard/logging/LogbackFactory/buildSyslogAppender(com.yammer.dropwizard.config.LoggingConfiguration$SyslogConfiguration,ch.qos.logback.classic.LoggerContext,java.lang.String,com.google.common.base.Optional)|",
+      "|java+constructor:///com/yammer/dropwizard/config/RequestLogHandlerFactory$RequestLogLayout/RequestLogHandlerFactory$RequestLogLayout(com.yammer.dropwizard.config.RequestLogHandlerFactory$1)|",
+      "|java+method:///ch/qos/logback/classic/net/SyslogAppender/start()|",
+      "|java+method:///ch/qos/logback/core/ConsoleAppender/start()|",
+      "|java+method:///com/yammer/dropwizard/logging/LogbackFactory/buildFileAppender(com.yammer.dropwizard.config.LoggingConfiguration$FileConfiguration,ch.qos.logback.classic.LoggerContext,com.google.common.base.Optional)|",
+      "|java+method:///ch/qos/logback/core/rolling/RollingFileAppender/start()|",
+      "|java+constructor:///com/yammer/dropwizard/jetty/AsyncRequestLog/AsyncRequestLog(ch.qos.logback.core.spi.AppenderAttachableImpl,java.util.TimeZone)|",
+      "|java+method:///ch/qos/logback/core/rolling/RollingFileAppender/stop()|",
+      "|java+method:///com/yammer/dropwizard/config/LoggingConfiguration$FileConfiguration/isEnabled()|",
+      "|java+method:///ch/qos/logback/core/ConsoleAppender/stop()|",
+      "|java+method:///com/yammer/dropwizard/config/RequestLogConfiguration/getSyslogConfiguration()|",
+      "|java+method:///com/yammer/dropwizard/config/RequestLogConfiguration/getTimeZone()|",
+      "|java+method:///com/yammer/dropwizard/config/RequestLogHandlerFactory$RequestLogLayout/start()|",
+      "|java+method:///ch/qos/logback/classic/net/SyslogAppender/setLayout(ch.qos.logback.core.Layout)|",
+      "|java+method:///com/yammer/dropwizard/config/LoggingConfiguration$SyslogConfiguration/isEnabled()|",
+      "|java+method:///ch/qos/logback/core/rolling/RollingFileAppender/setLayout(ch.qos.logback.core.Layout)|",
+      "|java+method:///ch/qos/logback/core/ConsoleAppender/setLayout(ch.qos.logback.core.Layout)|",
+      "|java+method:///ch/qos/logback/classic/Logger/getLoggerContext()|",
+      "|java+method:///com/yammer/dropwizard/config/RequestLogConfiguration/getConsoleConfiguration()|",
+      "|java+method:///org/eclipse/jetty/server/handler/RequestLogHandler/setRequestLog(org.eclipse.jetty.server.RequestLog)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/common/base/Optional/absent()|",
+      "|java+method:///ch/qos/logback/core/FileAppender/stop()|",
+      "|java+constructor:///ch/qos/logback/core/spi/AppenderAttachableImpl/AppenderAttachableImpl()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///com/yammer/dropwizard/config/LoggingConfiguration$ConsoleConfiguration/isEnabled()|",
+      "|java+method:///com/yammer/dropwizard/logging/LogbackFactory/buildConsoleAppender(com.yammer.dropwizard.config.LoggingConfiguration$ConsoleConfiguration,ch.qos.logback.classic.LoggerContext,com.google.common.base.Optional)|",
+      "|java+constructor:///org/eclipse/jetty/server/handler/RequestLogHandler/RequestLogHandler()|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.String)|",
+      "|java+method:///com/yammer/dropwizard/config/RequestLogConfiguration/getFileConfiguration()|",
+      "|java+method:///ch/qos/logback/core/spi/AppenderAttachableImpl/addAppender(ch.qos.logback.core.Appender)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///ch/qos/logback/classic/net/SyslogAppender/stop()|",
+      "|java+method:///ch/qos/logback/core/FileAppender/start()|",
+      "|java+method:///ch/qos/logback/core/ConsoleAppender/setLayout(ch.qos.logback.core.Layout)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///com/yammer/dropwizard/logging/LogbackFactory/buildSyslogAppender(com.yammer.dropwizard.config.LoggingConfiguration$SyslogConfiguration,ch.qos.logback.classic.LoggerContext,java.lang.String,com.google.common.base.Optional)|",
+      "|java+constructor:///com/yammer/dropwizard/config/RequestLogHandlerFactory$RequestLogLayout/RequestLogHandlerFactory$RequestLogLayout(com.yammer.dropwizard.config.RequestLogHandlerFactory$1)|",
+      "|java+method:///ch/qos/logback/classic/net/SyslogAppender/start()|",
+      "|java+method:///ch/qos/logback/core/ConsoleAppender/start()|",
+      "|java+constructor:///com/yammer/dropwizard/jetty/AsyncRequestLog/AsyncRequestLog(ch.qos.logback.core.spi.AppenderAttachableImpl,java.util.TimeZone)|",
+      "|java+method:///com/yammer/dropwizard/logging/LogbackFactory/buildFileAppender(com.yammer.dropwizard.config.LoggingConfiguration$FileConfiguration,ch.qos.logback.classic.LoggerContext,com.google.common.base.Optional)|",
+      "|java+method:///ch/qos/logback/core/FileAppender/setLayout(ch.qos.logback.core.Layout)|",
+      "|java+method:///ch/qos/logback/classic/Logger/setAdditive(boolean)|",
+      "|java+method:///com/yammer/dropwizard/config/LoggingConfiguration$FileConfiguration/isEnabled()|",
+      "|java+method:///ch/qos/logback/core/ConsoleAppender/stop()|",
+      "|java+method:///com/yammer/dropwizard/config/RequestLogConfiguration/getSyslogConfiguration()|",
+      "|java+method:///com/yammer/dropwizard/config/RequestLogConfiguration/getTimeZone()|",
+      "|java+method:///com/yammer/dropwizard/config/RequestLogHandlerFactory$RequestLogLayout/start()|",
+      "|java+method:///ch/qos/logback/classic/net/SyslogAppender/setLayout(ch.qos.logback.core.Layout)|",
+      "|java+method:///com/yammer/dropwizard/config/LoggingConfiguration$SyslogConfiguration/isEnabled()|",
+      "|java+method:///ch/qos/logback/classic/Logger/getLoggerContext()|",
+      "|java+method:///com/yammer/dropwizard/config/RequestLogConfiguration/getConsoleConfiguration()|",
+      "|java+method:///org/eclipse/jetty/server/handler/RequestLogHandler/setRequestLog(org.eclipse.jetty.server.RequestLog)|"
+    ],
+    "affectedLib": "org.eclipse.jetty:jetty-server:8.1.5.v20120716",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.yammer.dropwizard:dropwizard-core:0.4.4",
+    "coordinatesV2": "com.yammer.dropwizard:dropwizard-core:0.5.0",
+    "caller": "|java+initializer:///com/yammer/dropwizard/bundles/JavaBundle/JavaBundle$initializer|",
+    "called": "|java+method:///com/google/common/collect/ImmutableList/of(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///com/google/common/collect/ImmutableList/of(java.lang.Object)|",
+      "|java+constructor:///com/yammer/dropwizard/jersey/OptionalQueryParamInjectableProvider/OptionalQueryParamInjectableProvider()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/common/collect/ImmutableList/of(java.lang.Object)|"
+    ],
+    "affectedLib": "com.google.guava:guava:13.0-rc2",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.yammer.dropwizard:dropwizard-core:0.4.4",
+    "coordinatesV2": "com.yammer.dropwizard:dropwizard-core:0.5.0",
+    "caller": "|java+method:///com/yammer/dropwizard/jersey/OptionalExtractor/extract(javax.ws.rs.core.MultivaluedMap)|",
+    "called": "|java+method:///com/google/common/base/Optional/fromNullable(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///javax/ws/rs/core/MultivaluedMap/getFirst(java.lang.Object)|",
+      "|java+method:///com/google/common/base/Optional/or(com.google.common.base.Optional)|",
+      "|java+method:///com/google/common/base/Optional/fromNullable(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/sun/jersey/server/impl/model/parameter/multivalued/MultivaluedParameterExtractor/extract(javax.ws.rs.core.MultivaluedMap)|",
+      "|java+method:///com/google/common/base/Optional/fromNullable(java.lang.Object)|"
+    ],
+    "affectedLib": "com.google.guava:guava:13.0-rc2",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.yammer.dropwizard:dropwizard-core:0.4.4",
+    "coordinatesV2": "com.yammer.dropwizard:dropwizard-core:0.5.0",
+    "caller": "|java+method:///com/yammer/dropwizard/config/Environment/logHealthChecks()|",
+    "called": "|java+method:///com/google/common/collect/ImmutableSet/iterator()|",
+    "v1Body": [
+      "|java+method:///com/yammer/dropwizard/logging/Log/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///com/google/common/collect/ImmutableSet/builder()|",
+      "|java+method:///java/lang/Class/getCanonicalName()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///com/google/common/collect/ImmutableSet/iterator()|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///com/google/common/collect/ImmutableSet$Builder/build()|",
+      "|java+method:///com/google/common/collect/ImmutableSet$Builder/add(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/yammer/dropwizard/logging/Log/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///com/yammer/metrics/core/HealthCheck/getName()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///com/google/common/collect/ImmutableSet/builder()|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///java/lang/Class/getCanonicalName()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///com/google/common/collect/ImmutableSet/iterator()|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///com/google/common/collect/ImmutableSet$Builder/build()|",
+      "|java+method:///com/google/common/collect/ImmutableSet$Builder/add(java.lang.Object)|"
+    ],
+    "affectedLib": "com.google.guava:guava:13.0-rc2",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.yammer.dropwizard:dropwizard-core:0.4.4",
+    "coordinatesV2": "com.yammer.dropwizard:dropwizard-core:0.5.0",
+    "caller": "|java+constructor:///com/yammer/dropwizard/servlets/AssetServlet/AssetServlet(java.lang.String,com.google.common.cache.CacheBuilderSpec,java.lang.String)|",
+    "called": "|java+method:///com/google/common/io/Resources/getResource(java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///com/yammer/dropwizard/servlets/AssetServlet$AssetLoader/AssetServlet$AssetLoader(java.lang.String,java.lang.String,java.lang.String,com.yammer.dropwizard.servlets.AssetServlet$1)|",
+      "|java+constructor:///javax/servlet/http/HttpServlet/HttpServlet()|",
+      "|java+method:///com/google/common/cache/CacheBuilder/from(com.google.common.cache.CacheBuilderSpec)|",
+      "|java+constructor:///org/eclipse/jetty/http/MimeTypes/MimeTypes()|",
+      "|java+method:///com/google/common/cache/CacheBuilder/build(com.google.common.cache.CacheLoader)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/common/io/Resources/getResource(java.lang.String)|",
+      "|java+constructor:///com/yammer/dropwizard/servlets/AssetServlet/AssetServlet(java.net.URL,com.google.common.cache.CacheBuilderSpec,java.lang.String,java.lang.String)|",
+      "|java+method:///java/lang/String/substring(int)|"
+    ],
+    "affectedLib": "com.google.guava:guava:13.0-rc2",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.yammer.dropwizard:dropwizard-core:0.4.4",
+    "coordinatesV2": "com.yammer.dropwizard:dropwizard-core:0.5.0",
+    "caller": "|java+method:///com/yammer/dropwizard/servlets/AssetServlet$AssetLoader/load(java.lang.String)|",
+    "called": "|java+method:///com/google/common/io/Resources/toByteArray(java.net.URL)|",
+    "v1Body": [
+      "|java+constructor:///com/yammer/dropwizard/servlets/AssetServlet$CachedAsset/AssetServlet$CachedAsset(byte%5B%5D,com.yammer.dropwizard.servlets.AssetServlet$1)|",
+      "|java+method:///com/google/common/io/Resources/getResource(java.lang.String)|",
+      "|java+method:///com/google/common/io/Resources/toByteArray(java.net.URL)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/String/length()|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/String/substring(int)|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/yammer/dropwizard/util/ResourceURL/resolveRelativeURL(java.net.URL,java.lang.String)|",
+      "|java+method:///com/google/common/io/Resources/toByteArray(java.net.URL)|",
+      "|java+method:///com/yammer/dropwizard/util/ResourceURL/getLastModified(java.net.URL)|",
+      "|java+method:///java/lang/String/length()|",
+      "|java+constructor:///com/yammer/dropwizard/servlets/AssetServlet$CachedAsset/AssetServlet$CachedAsset(byte%5B%5D,long,com.yammer.dropwizard.servlets.AssetServlet$1)|",
+      "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean)|",
+      "|java+method:///java/lang/String/substring(int)|",
+      "|java+method:///java/lang/String/startsWith(java.lang.String)|",
+      "|java+method:///com/yammer/dropwizard/util/ResourceURL/isDirectory(java.net.URL)|",
+      "|java+method:///java/lang/System/currentTimeMillis()|",
+      "|java+method:///com/yammer/dropwizard/util/ResourceURL/appendTrailingSlash(java.net.URL)|"
+    ],
+    "affectedLib": "com.google.guava:guava:13.0-rc2",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.yammer.dropwizard:dropwizard-core:0.4.4",
+    "coordinatesV2": "com.yammer.dropwizard:dropwizard-core:0.5.0",
+    "caller": "|java+constructor:///com/yammer/dropwizard/config/SslConfiguration/SslConfiguration()|",
+    "called": "|java+method:///com/google/common/collect/ImmutableList/of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/common/collect/ImmutableList/of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "com.google.guava:guava:13.0-rc2",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.yammer.dropwizard:dropwizard-core:0.4.4",
+    "coordinatesV2": "com.yammer.dropwizard:dropwizard-core:0.5.0",
+    "caller": "|java+method:///com/yammer/dropwizard/bundles/JavaBundle/initialize(com.yammer.dropwizard.config.Environment)|",
+    "called": "|java+method:///com/google/common/collect/ImmutableList/iterator()|",
+    "v1Body": [
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+constructor:///com/yammer/dropwizard/jersey/JacksonMessageBodyProvider/JacksonMessageBodyProvider(com.yammer.dropwizard.json.Json)|",
+      "|java+method:///com/yammer/dropwizard/Service/getJson()|",
+      "|java+method:///com/google/common/collect/ImmutableList/iterator()|",
+      "|java+method:///com/yammer/dropwizard/config/Environment/addProvider(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+constructor:///com/yammer/dropwizard/jersey/JacksonMessageBodyProvider/JacksonMessageBodyProvider(com.yammer.dropwizard.json.Json)|",
+      "|java+method:///com/yammer/dropwizard/config/Environment/addProvider(java.lang.Class)|",
+      "|java+method:///com/yammer/dropwizard/Service/getJson()|",
+      "|java+method:///com/google/common/collect/ImmutableList/iterator()|",
+      "|java+method:///com/yammer/dropwizard/config/Environment/addProvider(java.lang.Object)|"
+    ],
+    "affectedLib": "com.google.guava:guava:13.0-rc2",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.yammer.dropwizard:dropwizard-core:0.4.4",
+    "coordinatesV2": "com.yammer.dropwizard:dropwizard-core:0.5.0",
+    "caller": "|java+constructor:///com/yammer/dropwizard/AbstractService/AbstractService(java.lang.String)|",
+    "called": "|java+method:///com/google/common/collect/Lists/newArrayList()|",
+    "v1Body": [
+      "|java+constructor:///com/yammer/dropwizard/cli/ServerCommand/ServerCommand(java.lang.Class)|",
+      "|java+method:///com/yammer/dropwizard/AbstractService/addCommand(com.yammer.dropwizard.cli.ConfiguredCommand)|",
+      "|java+method:///com/google/common/collect/Lists/newArrayList()|",
+      "|java+method:///com/yammer/dropwizard/AbstractService/getConfigurationClass()|",
+      "|java+method:///com/google/common/collect/Maps/newTreeMap()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/yammer/dropwizard/AbstractService/addCommand(com.yammer.dropwizard.cli.ConfiguredCommand)|",
+      "|java+method:///com/google/common/collect/Lists/newArrayList()|",
+      "|java+method:///com/yammer/dropwizard/AbstractService/getConfigurationClass()|",
+      "|java+method:///com/google/common/collect/Maps/newTreeMap()|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+constructor:///com/yammer/dropwizard/cli/ServerCommand/ServerCommand(java.lang.Class)|",
+      "|java+method:///java/lang/Class/getSimpleName()|"
+    ],
+    "affectedLib": "com.google.guava:guava:13.0-rc2",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.yammer.dropwizard:dropwizard-core:0.4.4",
+    "coordinatesV2": "com.yammer.dropwizard:dropwizard-core:0.5.0",
+    "caller": "|java+method:///com/yammer/dropwizard/jersey/OptionalQueryParamInjectableProvider/getInjectable(com.sun.jersey.core.spi.component.ComponentContext,javax.ws.rs.QueryParam,com.sun.jersey.api.model.Parameter)|",
+    "called": "|java+method:///com/sun/jersey/server/impl/model/parameter/multivalued/MultivaluedParameterExtractorFactory/get(com.sun.jersey.api.model.Parameter)|",
+    "v1Body": [
+      "|java+method:///java/lang/Class/isAssignableFrom(java.lang.Class)|",
+      "|java+constructor:///com/yammer/dropwizard/jersey/OptionalExtractor/OptionalExtractor(java.lang.String,java.lang.String)|",
+      "|java+constructor:///com/yammer/dropwizard/jersey/MultivaluedParameterExtractorQueryParamInjectable/MultivaluedParameterExtractorQueryParamInjectable(com.sun.jersey.server.impl.model.parameter.multivalued.MultivaluedParameterExtractor,boolean)|",
+      "|java+method:///com/sun/jersey/api/model/Parameter/getSourceName()|",
+      "|java+method:///com/sun/jersey/api/model/Parameter/isEncoded()|",
+      "|java+method:///com/sun/jersey/api/model/Parameter/getParameterClass()|",
+      "|java+method:///com/sun/jersey/api/model/Parameter/getDefaultValue()|",
+      "|java+method:///java/lang/String/isEmpty()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/yammer/dropwizard/jersey/OptionalQueryParamInjectableProvider/unpack(com.sun.jersey.api.model.Parameter)|",
+      "|java+method:///com/sun/jersey/server/impl/model/parameter/multivalued/MultivaluedParameterExtractorFactory/get(com.sun.jersey.api.model.Parameter)|",
+      "|java+method:///com/yammer/dropwizard/jersey/OptionalQueryParamInjectableProvider/getFactory()|",
+      "|java+method:///com/sun/jersey/api/model/Parameter/isEncoded()|",
+      "|java+method:///com/yammer/dropwizard/jersey/OptionalQueryParamInjectableProvider/isExtractable(com.sun.jersey.api.model.Parameter)|",
+      "|java+constructor:///com/yammer/dropwizard/jersey/QueryParamInjectable/QueryParamInjectable(com.sun.jersey.server.impl.model.parameter.multivalued.MultivaluedParameterExtractor,boolean)|",
+      "|java+constructor:///com/yammer/dropwizard/jersey/OptionalExtractor/OptionalExtractor(com.sun.jersey.server.impl.model.parameter.multivalued.MultivaluedParameterExtractor)|"
+    ],
+    "affectedLib": "com.sun.jersey:jersey-server:1.13",
+    "change": "UPDATED"
+  }
+]

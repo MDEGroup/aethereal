@@ -1,0 +1,202 @@
+[
+  {
+    "coordinatesV1": "com.ning.billing:killbill-jaxrs:0.3.3",
+    "coordinatesV2": "com.ning.billing:killbill-jaxrs:0.3.2",
+    "caller": "|java+method:///com/ning/billing/jaxrs/resources/InvoiceResource/createExternalCharge(com.ning.billing.jaxrs.json.InvoiceItemJsonSimple,java.lang.String,java.lang.String,java.lang.String,java.lang.String,javax.ws.rs.core.UriInfo,javax.servlet.http.HttpServletRequest)|",
+    "called": "|java+method:///com/google/common/base/Objects/firstNonNull(java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/joda/time/DateTime/toDateTime(org.joda.time.DateTimeZone)|",
+      "|java+method:///java/util/UUID/fromString(java.lang.String)|",
+      "|java+method:///com/ning/billing/account/api/Account/getCurrency()|",
+      "|java+method:///java/net/URI/toString()|",
+      "|java+method:///org/joda/time/format/DateTimeFormatter/parseDateTime(java.lang.String)|",
+      "|java+method:///com/ning/billing/account/api/AccountUserApi/getAccountById(java.util.UUID,com.ning.billing.util.callcontext.TenantContext)|",
+      "|java+method:///com/ning/billing/account/api/Account/getId()|",
+      "|java+method:///javax/ws/rs/core/UriInfo/getBaseUri()|",
+      "|java+method:///com/ning/billing/jaxrs/json/InvoiceItemJsonSimple/getAmount()|",
+      "|java+method:///com/google/common/base/Objects/firstNonNull(java.lang.Object,java.lang.Object)|",
+      "|java+method:///com/ning/billing/jaxrs/json/InvoiceItemJsonSimple/getBundleId()|",
+      "|java+method:///com/ning/billing/util/clock/Clock/getUTCToday()|",
+      "|java+method:///org/joda/time/DateTime/toLocalDate()|",
+      "|java+method:///com/ning/billing/jaxrs/util/Context/createContext(java.lang.String,java.lang.String,java.lang.String,javax.servlet.ServletRequest)|",
+      "|java+method:///com/ning/billing/invoice/api/InvoiceUserApi/insertExternalChargeForBundle(java.util.UUID,java.util.UUID,java.math.BigDecimal,java.lang.String,org.joda.time.LocalDate,com.ning.billing.catalog.api.Currency,com.ning.billing.util.callcontext.CallContext)|",
+      "|java+method:///com/ning/billing/jaxrs/json/InvoiceItemJsonSimple/getDescription()|",
+      "|java+method:///com/ning/billing/account/api/Account/getTimeZone()|",
+      "|java+method:///com/ning/billing/jaxrs/util/JaxrsUriBuilder/buildResponse(java.lang.Class,java.lang.String,java.lang.Object,java.lang.String)|",
+      "|java+method:///com/ning/billing/jaxrs/json/InvoiceItemJsonSimple/getCurrency()|",
+      "|java+method:///com/ning/billing/invoice/api/InvoiceItem/getInvoiceId()|",
+      "|java+method:///com/ning/billing/invoice/api/InvoiceUserApi/insertExternalCharge(java.util.UUID,java.math.BigDecimal,java.lang.String,org.joda.time.LocalDate,com.ning.billing.catalog.api.Currency,com.ning.billing.util.callcontext.CallContext)|",
+      "|java+method:///com/ning/billing/jaxrs/json/InvoiceItemJsonSimple/getAccountId()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/joda/time/DateTime/toDateTime(org.joda.time.DateTimeZone)|",
+      "|java+method:///com/ning/billing/jaxrs/json/InvoiceItemJsonSimple/getBundleId()|",
+      "|java+method:///java/util/UUID/fromString(java.lang.String)|",
+      "|java+method:///com/ning/billing/account/api/Account/getCurrency()|",
+      "|java+method:///org/joda/time/format/DateTimeFormatter/parseDateTime(java.lang.String)|",
+      "|java+method:///com/ning/billing/account/api/AccountUserApi/getAccountById(java.util.UUID,com.ning.billing.util.callcontext.TenantContext)|",
+      "|java+method:///com/ning/billing/account/api/Account/getId()|",
+      "|java+method:///javax/ws/rs/core/UriInfo/getBaseUri()|",
+      "|java+method:///com/ning/billing/jaxrs/json/InvoiceItemJsonSimple/getAmount()|",
+      "|java+method:///com/google/common/base/Objects/firstNonNull(java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/joda/time/DateTime/toLocalDate()|",
+      "|java+method:///com/ning/billing/jaxrs/util/Context/createContext(java.lang.String,java.lang.String,java.lang.String,javax.servlet.ServletRequest)|",
+      "|java+method:///java/net/URI/toString()|",
+      "|java+method:///com/ning/billing/clock/Clock/getUTCToday()|",
+      "|java+method:///com/ning/billing/invoice/api/InvoiceUserApi/insertExternalChargeForBundle(java.util.UUID,java.util.UUID,java.math.BigDecimal,java.lang.String,org.joda.time.LocalDate,com.ning.billing.catalog.api.Currency,com.ning.billing.util.callcontext.CallContext)|",
+      "|java+method:///com/ning/billing/jaxrs/json/InvoiceItemJsonSimple/getDescription()|",
+      "|java+method:///com/ning/billing/account/api/Account/getTimeZone()|",
+      "|java+method:///com/ning/billing/jaxrs/util/JaxrsUriBuilder/buildResponse(java.lang.Class,java.lang.String,java.lang.Object,java.lang.String)|",
+      "|java+method:///com/ning/billing/jaxrs/json/InvoiceItemJsonSimple/getCurrency()|",
+      "|java+method:///com/ning/billing/invoice/api/InvoiceItem/getInvoiceId()|",
+      "|java+method:///com/ning/billing/invoice/api/InvoiceUserApi/insertExternalCharge(java.util.UUID,java.math.BigDecimal,java.lang.String,org.joda.time.LocalDate,com.ning.billing.catalog.api.Currency,com.ning.billing.util.callcontext.CallContext)|",
+      "|java+method:///com/ning/billing/jaxrs/json/InvoiceItemJsonSimple/getAccountId()|"
+    ],
+    "affectedLib": "com.google.guava:guava:12.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.ning.billing:killbill-jaxrs:0.3.3",
+    "coordinatesV2": "com.ning.billing:killbill-jaxrs:0.3.2",
+    "caller": "|java+method:///com/ning/billing/jaxrs/resources/InvoiceResource/createExternalChargeForInvoice(com.ning.billing.jaxrs.json.InvoiceItemJsonSimple,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,javax.ws.rs.core.UriInfo,javax.servlet.http.HttpServletRequest)|",
+    "called": "|java+method:///com/google/common/base/Objects/firstNonNull(java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/joda/time/DateTime/toDateTime(org.joda.time.DateTimeZone)|",
+      "|java+method:///java/util/UUID/fromString(java.lang.String)|",
+      "|java+method:///com/ning/billing/account/api/Account/getCurrency()|",
+      "|java+method:///java/net/URI/toString()|",
+      "|java+method:///org/joda/time/format/DateTimeFormatter/parseDateTime(java.lang.String)|",
+      "|java+method:///com/ning/billing/account/api/AccountUserApi/getAccountById(java.util.UUID,com.ning.billing.util.callcontext.TenantContext)|",
+      "|java+method:///com/ning/billing/jaxrs/json/InvoiceItemJsonSimple/getDescription()|",
+      "|java+method:///com/ning/billing/account/api/Account/getId()|",
+      "|java+method:///javax/ws/rs/core/UriInfo/getBaseUri()|",
+      "|java+method:///com/ning/billing/invoice/api/InvoiceUserApi/insertExternalChargeForInvoiceAndBundle(java.util.UUID,java.util.UUID,java.util.UUID,java.math.BigDecimal,java.lang.String,org.joda.time.LocalDate,com.ning.billing.catalog.api.Currency,com.ning.billing.util.callcontext.CallContext)|",
+      "|java+method:///com/ning/billing/jaxrs/json/InvoiceItemJsonSimple/getAccountId()|",
+      "|java+method:///com/ning/billing/jaxrs/json/InvoiceItemJsonSimple/getAmount()|",
+      "|java+method:///com/ning/billing/jaxrs/json/InvoiceItemJsonSimple/getBundleId()|",
+      "|java+method:///com/ning/billing/util/clock/Clock/getUTCToday()|",
+      "|java+method:///org/joda/time/DateTime/toLocalDate()|",
+      "|java+method:///com/ning/billing/jaxrs/util/Context/createContext(java.lang.String,java.lang.String,java.lang.String,javax.servlet.ServletRequest)|",
+      "|java+method:///com/ning/billing/account/api/Account/getTimeZone()|",
+      "|java+method:///com/ning/billing/jaxrs/util/JaxrsUriBuilder/buildResponse(java.lang.Class,java.lang.String,java.lang.Object,java.lang.String)|",
+      "|java+method:///com/ning/billing/jaxrs/json/InvoiceItemJsonSimple/getCurrency()|",
+      "|java+method:///com/ning/billing/invoice/api/InvoiceItem/getInvoiceId()|",
+      "|java+method:///com/ning/billing/invoice/api/InvoiceUserApi/insertExternalChargeForInvoice(java.util.UUID,java.util.UUID,java.math.BigDecimal,java.lang.String,org.joda.time.LocalDate,com.ning.billing.catalog.api.Currency,com.ning.billing.util.callcontext.CallContext)|",
+      "|java+method:///com/google/common/base/Objects/firstNonNull(java.lang.Object,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/joda/time/DateTime/toDateTime(org.joda.time.DateTimeZone)|",
+      "|java+method:///com/ning/billing/jaxrs/json/InvoiceItemJsonSimple/getBundleId()|",
+      "|java+method:///java/util/UUID/fromString(java.lang.String)|",
+      "|java+method:///com/ning/billing/account/api/Account/getCurrency()|",
+      "|java+method:///org/joda/time/format/DateTimeFormatter/parseDateTime(java.lang.String)|",
+      "|java+method:///com/ning/billing/account/api/AccountUserApi/getAccountById(java.util.UUID,com.ning.billing.util.callcontext.TenantContext)|",
+      "|java+method:///com/ning/billing/jaxrs/json/InvoiceItemJsonSimple/getDescription()|",
+      "|java+method:///com/ning/billing/account/api/Account/getId()|",
+      "|java+method:///javax/ws/rs/core/UriInfo/getBaseUri()|",
+      "|java+method:///com/ning/billing/invoice/api/InvoiceUserApi/insertExternalChargeForInvoiceAndBundle(java.util.UUID,java.util.UUID,java.util.UUID,java.math.BigDecimal,java.lang.String,org.joda.time.LocalDate,com.ning.billing.catalog.api.Currency,com.ning.billing.util.callcontext.CallContext)|",
+      "|java+method:///com/ning/billing/jaxrs/json/InvoiceItemJsonSimple/getAccountId()|",
+      "|java+method:///com/ning/billing/jaxrs/json/InvoiceItemJsonSimple/getAmount()|",
+      "|java+method:///org/joda/time/DateTime/toLocalDate()|",
+      "|java+method:///com/ning/billing/jaxrs/util/Context/createContext(java.lang.String,java.lang.String,java.lang.String,javax.servlet.ServletRequest)|",
+      "|java+method:///java/net/URI/toString()|",
+      "|java+method:///com/ning/billing/clock/Clock/getUTCToday()|",
+      "|java+method:///com/ning/billing/account/api/Account/getTimeZone()|",
+      "|java+method:///com/ning/billing/jaxrs/util/JaxrsUriBuilder/buildResponse(java.lang.Class,java.lang.String,java.lang.Object,java.lang.String)|",
+      "|java+method:///com/ning/billing/jaxrs/json/InvoiceItemJsonSimple/getCurrency()|",
+      "|java+method:///com/ning/billing/invoice/api/InvoiceItem/getInvoiceId()|",
+      "|java+method:///com/ning/billing/invoice/api/InvoiceUserApi/insertExternalChargeForInvoice(java.util.UUID,java.util.UUID,java.math.BigDecimal,java.lang.String,org.joda.time.LocalDate,com.ning.billing.catalog.api.Currency,com.ning.billing.util.callcontext.CallContext)|",
+      "|java+method:///com/google/common/base/Objects/firstNonNull(java.lang.Object,java.lang.Object)|"
+    ],
+    "affectedLib": "com.google.guava:guava:12.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.ning.billing:killbill-jaxrs:0.3.2",
+    "coordinatesV2": "com.ning.billing:killbill-jaxrs:0.3.3",
+    "caller": "|java+method:///com/ning/billing/jaxrs/json/PaymentJsonSimple/getRequestedDate()|",
+    "called": "|java+method:///com/ning/billing/clock/DefaultClock/toUTCDateTime(org.joda.time.DateTime)|",
+    "v1Body": [
+      "|java+method:///com/ning/billing/util/clock/DefaultClock/toUTCDateTime(org.joda.time.DateTime)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/ning/billing/clock/DefaultClock/toUTCDateTime(org.joda.time.DateTime)|"
+    ],
+    "affectedLib": "com.ning.billing.commons:killbill-clock:0.1.7",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.ning.billing:killbill-jaxrs:0.3.2",
+    "coordinatesV2": "com.ning.billing:killbill-jaxrs:0.3.3",
+    "caller": "|java+constructor:///com/ning/billing/jaxrs/json/PaymentJsonSimple/PaymentJsonSimple(java.math.BigDecimal,java.math.BigDecimal,java.lang.String,java.lang.String,java.lang.String,java.lang.String,org.joda.time.DateTime,org.joda.time.DateTime,java.lang.Integer,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.util.List)|",
+    "called": "|java+method:///com/ning/billing/clock/DefaultClock/toUTCDateTime(org.joda.time.DateTime)|",
+    "v1Body": [
+      "|java+method:///com/ning/billing/util/clock/DefaultClock/toUTCDateTime(org.joda.time.DateTime)|",
+      "|java+constructor:///com/ning/billing/jaxrs/json/JsonBase/JsonBase(java.util.List)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/ning/billing/clock/DefaultClock/toUTCDateTime(org.joda.time.DateTime)|",
+      "|java+constructor:///com/ning/billing/jaxrs/json/JsonBase/JsonBase(java.util.List)|"
+    ],
+    "affectedLib": "com.ning.billing.commons:killbill-clock:0.1.7",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.ning.billing:killbill-jaxrs:0.3.2",
+    "coordinatesV2": "com.ning.billing:killbill-jaxrs:0.3.3",
+    "caller": "|java+constructor:///com/ning/billing/jaxrs/json/SubscriptionJsonWithEvents$SubscriptionBaseEventJson/SubscriptionJsonWithEvents$SubscriptionBaseEventJson(java.lang.String,org.joda.time.DateTime,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.util.List)|",
+    "called": "|java+method:///com/ning/billing/clock/DefaultClock/toUTCDateTime(org.joda.time.DateTime)|",
+    "v1Body": [
+      "|java+method:///com/ning/billing/util/clock/DefaultClock/toUTCDateTime(org.joda.time.DateTime)|",
+      "|java+constructor:///com/ning/billing/jaxrs/json/JsonBase/JsonBase(java.util.List)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/ning/billing/clock/DefaultClock/toUTCDateTime(org.joda.time.DateTime)|",
+      "|java+constructor:///com/ning/billing/jaxrs/json/JsonBase/JsonBase(java.util.List)|"
+    ],
+    "affectedLib": "com.ning.billing.commons:killbill-clock:0.1.7",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.ning.billing:killbill-jaxrs:0.3.2",
+    "coordinatesV2": "com.ning.billing:killbill-jaxrs:0.3.3",
+    "caller": "|java+method:///com/ning/billing/jaxrs/json/SubscriptionJsonWithEvents$SubscriptionBaseEventJson/getRequestedDate()|",
+    "called": "|java+method:///com/ning/billing/clock/DefaultClock/toUTCDateTime(org.joda.time.DateTime)|",
+    "v1Body": [
+      "|java+method:///com/ning/billing/util/clock/DefaultClock/toUTCDateTime(org.joda.time.DateTime)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/ning/billing/clock/DefaultClock/toUTCDateTime(org.joda.time.DateTime)|"
+    ],
+    "affectedLib": "com.ning.billing.commons:killbill-clock:0.1.7",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.ning.billing:killbill-jaxrs:0.3.2",
+    "coordinatesV2": "com.ning.billing:killbill-jaxrs:0.3.3",
+    "caller": "|java+method:///com/ning/billing/jaxrs/json/SubscriptionJsonWithEvents$SubscriptionReadEventJson/getEffectiveDate()|",
+    "called": "|java+method:///com/ning/billing/clock/DefaultClock/toUTCDateTime(org.joda.time.DateTime)|",
+    "v1Body": [
+      "|java+method:///com/ning/billing/util/clock/DefaultClock/toUTCDateTime(org.joda.time.DateTime)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/ning/billing/clock/DefaultClock/toUTCDateTime(org.joda.time.DateTime)|"
+    ],
+    "affectedLib": "com.ning.billing.commons:killbill-clock:0.1.7",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.ning.billing:killbill-jaxrs:0.3.2",
+    "coordinatesV2": "com.ning.billing:killbill-jaxrs:0.3.3",
+    "caller": "|java+method:///com/ning/billing/jaxrs/json/PaymentJsonSimple/getEffectiveDate()|",
+    "called": "|java+method:///com/ning/billing/clock/DefaultClock/toUTCDateTime(org.joda.time.DateTime)|",
+    "v1Body": [
+      "|java+method:///com/ning/billing/util/clock/DefaultClock/toUTCDateTime(org.joda.time.DateTime)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/ning/billing/clock/DefaultClock/toUTCDateTime(org.joda.time.DateTime)|"
+    ],
+    "affectedLib": "com.ning.billing.commons:killbill-clock:0.1.7",
+    "change": "ADDED"
+  }
+]

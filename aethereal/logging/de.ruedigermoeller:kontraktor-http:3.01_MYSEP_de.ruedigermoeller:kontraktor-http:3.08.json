@@ -1,0 +1,270 @@
+[
+  {
+    "coordinatesV1": "de.ruedigermoeller:kontraktor-http:3.01",
+    "coordinatesV2": "de.ruedigermoeller:kontraktor-http:3.08",
+    "caller": "|java+method:///org/nustaq/kontraktor/remoting/http/javascript/DynamicResourceManager/getResource(java.lang.String)|",
+    "called": "|java+method:///org/jsoup/nodes/Element/toString()|",
+    "v1Body": [
+      "|java+method:///org/nustaq/kontraktor/remoting/http/javascript/DynamicResourceManager/mightCache(java.lang.String,io.undertow.server.handlers.resource.Resource)|",
+      "|java+method:///org/nustaq/kontraktor/remoting/http/javascript/DependencyResolver/mergeBinary(java.util.List)|",
+      "|java+method:///java/lang/String/split(java.lang.String)|",
+      "|java+method:///org/nustaq/kontraktor/remoting/http/javascript/DependencyResolver/locateResource(java.lang.String)|",
+      "|java+method:///java/lang/String/length()|",
+      "|java+method:///org/nustaq/kontraktor/remoting/http/javascript/DependencyResolver/createScriptTags(java.util.List)|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///java/lang/String/substring(int)|",
+      "|java+method:///java/lang/String/startsWith(java.lang.String)|",
+      "|java+method:///java/lang/String/endsWith(java.lang.String)|",
+      "|java+method:///org/nustaq/kontraktor/remoting/http/javascript/DependencyResolver/mergeScripts(java.util.List)|",
+      "|java+method:///org/nustaq/kontraktor/remoting/http/javascript/DependencyResolver/findFilesInDirs(java.util.function.BiFunction)|",
+      "|java+method:///org/nustaq/kontraktor/remoting/http/javascript/DependencyResolver/mergeTextSnippets(java.util.List,java.lang.String,java.lang.String)|",
+      "|java+method:///org/nustaq/kontraktor/remoting/http/javascript/DynamicResourceManager/isDevMode()|",
+      "|java+method:///io/undertow/server/handlers/resource/FileResourceManager/getResource(java.lang.String)|",
+      "|java+constructor:///org/nustaq/kontraktor/remoting/http/javascript/DynamicResourceManager$MyResource/DynamicResourceManager$MyResource(java.lang.String,java.lang.String,byte%5B%5D,java.lang.String)|",
+      "|java+method:///java/util/concurrent/ConcurrentHashMap/get(java.lang.Object)|",
+      "|java+constructor:///io/undertow/server/handlers/resource/FileResource/FileResource(java.io.File,io.undertow.server.handlers.resource.FileResourceManager,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/nustaq/kontraktor/remoting/http/javascript/DynamicResourceManager/mightCache(java.lang.String,io.undertow.server.handlers.resource.Resource)|",
+      "|java+method:///org/nustaq/kontraktor/remoting/http/javascript/DependencyResolver/locateResource(java.lang.String)|",
+      "|java+method:///java/nio/file/Files/readAllBytes(java.nio.file.Path)|",
+      "|java+method:///org/nustaq/kontraktor/remoting/http/javascript/HtmlImportShim/shimImports(java.lang.String)|",
+      "|java+method:///org/jsoup/nodes/Element/toString()|",
+      "|java+method:///org/nustaq/kontraktor/remoting/http/javascript/jsmin/JSMin/minify(byte%5B%5D)|",
+      "|java+method:///java/io/File/toPath()|",
+      "|java+method:///java/lang/String/startsWith(java.lang.String)|",
+      "|java+method:///java/lang/String/endsWith(java.lang.String)|",
+      "|java+method:///java/io/IOException/printStackTrace()|",
+      "|java+method:///java/io/File/getName()|",
+      "|java+method:///org/nustaq/kontraktor/remoting/http/javascript/DynamicResourceManager/isDevMode()|",
+      "|java+method:///io/undertow/server/handlers/resource/FileResourceManager/getResource(java.lang.String)|",
+      "|java+constructor:///org/nustaq/kontraktor/remoting/http/javascript/DynamicResourceManager$MyResource/DynamicResourceManager$MyResource(java.lang.String,java.lang.String,byte%5B%5D,java.lang.String)|",
+      "|java+method:///java/util/concurrent/ConcurrentHashMap/get(java.lang.Object)|",
+      "|java+constructor:///io/undertow/server/handlers/resource/FileResource/FileResource(java.io.File,io.undertow.server.handlers.resource.FileResourceManager,java.lang.String)|",
+      "|java+method:///java/lang/String/getBytes(java.lang.String)|",
+      "|java+method:///java/lang/String/substring(int)|"
+    ],
+    "affectedLib": "org.jsoup:jsoup:1.8.2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "de.ruedigermoeller:kontraktor-http:3.01",
+    "coordinatesV2": "de.ruedigermoeller:kontraktor-http:3.08",
+    "caller": "|java+method:///org/nustaq/kontraktor/remoting/http/UndertowHttpServerConnector/handleClientRequest(io.undertow.server.HttpServerExchange,org.nustaq.kontraktor.remoting.http.HttpObjectSocket,byte%5B%5D,java.lang.String)|",
+    "called": "|java+method:///io/undertow/server/HttpServerExchange/getResponseChannel()|",
+    "v1Body": [
+      "|java+method:///org/nustaq/kontraktor/remoting/http/HttpObjectSocket/takeStoredLPMessage(int)|",
+      "|java+method:///org/nustaq/kontraktor/util/Log/Warn(java.lang.Object,java.lang.Throwable)|",
+      "|java+method:///org/nustaq/kontraktor/remoting/http/HttpObjectSocket/cancelLongPoll()|",
+      "|java+method:///org/xnio/channels/StreamSinkChannel/resumeWrites()|",
+      "|java+method:///org/nustaq/kontraktor/remoting/http/UndertowHttpServerConnector/replyFromHistory(io.undertow.server.HttpServerExchange,org.xnio.channels.StreamSinkChannel,byte%5B%5D)|",
+      "|java+method:///org/nustaq/kontraktor/remoting/http/HttpObjectSocket/getConf()|",
+      "|java+method:///org/nustaq/kontraktor/remoting/http/UndertowHttpServerConnector/handleRegularRequest(io.undertow.server.HttpServerExchange,org.nustaq.kontraktor.remoting.http.HttpObjectSocket,java.lang.Object%5B%5D,org.xnio.channels.StreamSinkChannel)|",
+      "|java+method:///org/nustaq/kontraktor/remoting/http/UndertowHttpServerConnector/createLongPollTask(io.undertow.server.HttpServerExchange,org.nustaq.kontraktor.remoting.http.HttpObjectSocket,org.xnio.channels.StreamSinkChannel)|",
+      "|java+method:///org/nustaq/kontraktor/remoting/http/HttpObjectSocket/updateTimeStamp()|",
+      "|java+method:///java/lang/Integer/parseInt(java.lang.String)|",
+      "|java+method:///org/nustaq/serialization/FSTConfiguration/asObject(byte%5B%5D)|",
+      "|java+method:///io/undertow/server/HttpServerExchange/getResponseChannel()|",
+      "|java+method:///org/nustaq/kontraktor/remoting/http/HttpObjectSocket/setLongPollTask(org.nustaq.kontraktor.util.Pair)|"
+    ],
+    "v2Body": [
+      "|java+method:///io/undertow/server/HttpServerExchange/endExchange()|",
+      "|java+method:///org/nustaq/kontraktor/util/Log/Warn(java.lang.Object,java.lang.Throwable)|",
+      "|java+method:///org/nustaq/kontraktor/remoting/http/HttpObjectSocket/cancelLongPoll()|",
+      "|java+method:///org/xnio/channels/StreamSinkChannel/resumeWrites()|",
+      "|java+method:///org/nustaq/kontraktor/remoting/http/UndertowHttpServerConnector/replyFromHistory(io.undertow.server.HttpServerExchange,org.xnio.channels.StreamSinkChannel,byte%5B%5D)|",
+      "|java+method:///org/nustaq/kontraktor/remoting/http/HttpObjectSocket/getConf()|",
+      "|java+method:///org/nustaq/kontraktor/remoting/http/UndertowHttpServerConnector/handleRegularRequest(io.undertow.server.HttpServerExchange,org.nustaq.kontraktor.remoting.http.HttpObjectSocket,java.lang.Object%5B%5D,org.xnio.channels.StreamSinkChannel)|",
+      "|java+method:///org/nustaq/kontraktor/remoting/http/HttpObjectSocket/takeStoredLPMessage(int)|",
+      "|java+method:///org/nustaq/kontraktor/util/Log/Error(java.lang.Object,java.lang.String)|",
+      "|java+method:///org/nustaq/kontraktor/remoting/http/UndertowHttpServerConnector/createLongPollTask(io.undertow.server.HttpServerExchange,org.nustaq.kontraktor.remoting.http.HttpObjectSocket,org.xnio.channels.StreamSinkChannel)|",
+      "|java+method:///org/nustaq/kontraktor/remoting/http/HttpObjectSocket/updateTimeStamp()|",
+      "|java+method:///java/lang/Integer/parseInt(java.lang.String)|",
+      "|java+method:///org/nustaq/serialization/FSTConfiguration/asObject(byte%5B%5D)|",
+      "|java+method:///io/undertow/server/HttpServerExchange/getResponseChannel()|",
+      "|java+method:///org/nustaq/kontraktor/remoting/http/HttpObjectSocket/setLongPollTask(org.nustaq.kontraktor.util.Pair)|"
+    ],
+    "affectedLib": "io.undertow:undertow-core:1.2.8.Final",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "de.ruedigermoeller:kontraktor-http:3.01",
+    "coordinatesV2": "de.ruedigermoeller:kontraktor-http:3.08",
+    "caller": "|java+method:///org/nustaq/kontraktor/remoting/http/javascript/DynamicResourceManager/getResource(java.lang.String)|",
+    "called": "|java+constructor:///io/undertow/server/handlers/resource/FileResource/FileResource(java.io.File,io.undertow.server.handlers.resource.FileResourceManager,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/nustaq/kontraktor/remoting/http/javascript/DynamicResourceManager/mightCache(java.lang.String,io.undertow.server.handlers.resource.Resource)|",
+      "|java+method:///org/nustaq/kontraktor/remoting/http/javascript/DependencyResolver/mergeBinary(java.util.List)|",
+      "|java+method:///java/lang/String/split(java.lang.String)|",
+      "|java+method:///org/nustaq/kontraktor/remoting/http/javascript/DependencyResolver/locateResource(java.lang.String)|",
+      "|java+method:///java/lang/String/length()|",
+      "|java+method:///org/nustaq/kontraktor/remoting/http/javascript/DependencyResolver/createScriptTags(java.util.List)|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///java/lang/String/substring(int)|",
+      "|java+method:///java/lang/String/startsWith(java.lang.String)|",
+      "|java+method:///java/lang/String/endsWith(java.lang.String)|",
+      "|java+method:///org/nustaq/kontraktor/remoting/http/javascript/DependencyResolver/mergeScripts(java.util.List)|",
+      "|java+method:///org/nustaq/kontraktor/remoting/http/javascript/DependencyResolver/findFilesInDirs(java.util.function.BiFunction)|",
+      "|java+method:///org/nustaq/kontraktor/remoting/http/javascript/DependencyResolver/mergeTextSnippets(java.util.List,java.lang.String,java.lang.String)|",
+      "|java+method:///org/nustaq/kontraktor/remoting/http/javascript/DynamicResourceManager/isDevMode()|",
+      "|java+method:///io/undertow/server/handlers/resource/FileResourceManager/getResource(java.lang.String)|",
+      "|java+constructor:///org/nustaq/kontraktor/remoting/http/javascript/DynamicResourceManager$MyResource/DynamicResourceManager$MyResource(java.lang.String,java.lang.String,byte%5B%5D,java.lang.String)|",
+      "|java+method:///java/util/concurrent/ConcurrentHashMap/get(java.lang.Object)|",
+      "|java+constructor:///io/undertow/server/handlers/resource/FileResource/FileResource(java.io.File,io.undertow.server.handlers.resource.FileResourceManager,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/nustaq/kontraktor/remoting/http/javascript/DynamicResourceManager/mightCache(java.lang.String,io.undertow.server.handlers.resource.Resource)|",
+      "|java+method:///org/nustaq/kontraktor/remoting/http/javascript/DependencyResolver/locateResource(java.lang.String)|",
+      "|java+method:///java/nio/file/Files/readAllBytes(java.nio.file.Path)|",
+      "|java+method:///org/nustaq/kontraktor/remoting/http/javascript/HtmlImportShim/shimImports(java.lang.String)|",
+      "|java+method:///org/jsoup/nodes/Element/toString()|",
+      "|java+method:///org/nustaq/kontraktor/remoting/http/javascript/jsmin/JSMin/minify(byte%5B%5D)|",
+      "|java+method:///java/io/File/toPath()|",
+      "|java+method:///java/lang/String/startsWith(java.lang.String)|",
+      "|java+method:///java/lang/String/endsWith(java.lang.String)|",
+      "|java+method:///java/io/IOException/printStackTrace()|",
+      "|java+method:///java/io/File/getName()|",
+      "|java+method:///org/nustaq/kontraktor/remoting/http/javascript/DynamicResourceManager/isDevMode()|",
+      "|java+method:///io/undertow/server/handlers/resource/FileResourceManager/getResource(java.lang.String)|",
+      "|java+constructor:///org/nustaq/kontraktor/remoting/http/javascript/DynamicResourceManager$MyResource/DynamicResourceManager$MyResource(java.lang.String,java.lang.String,byte%5B%5D,java.lang.String)|",
+      "|java+method:///java/util/concurrent/ConcurrentHashMap/get(java.lang.Object)|",
+      "|java+constructor:///io/undertow/server/handlers/resource/FileResource/FileResource(java.io.File,io.undertow.server.handlers.resource.FileResourceManager,java.lang.String)|",
+      "|java+method:///java/lang/String/getBytes(java.lang.String)|",
+      "|java+method:///java/lang/String/substring(int)|"
+    ],
+    "affectedLib": "io.undertow:undertow-core:1.2.8.Final",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "de.ruedigermoeller:kontraktor-http:3.01",
+    "coordinatesV2": "de.ruedigermoeller:kontraktor-http:3.08",
+    "caller": "|java+method:///org/nustaq/kontraktor/remoting/websockets/UndertowWebsocketServerConnector$UTWebObjectSocket/sendBinary(byte%5B%5D)|",
+    "called": "|java+method:///io/undertow/websockets/core/WebSockets/sendBinary(java.nio.ByteBuffer,io.undertow.websockets.core.WebSocketChannel,io.undertow.websockets.core.WebSocketCallback)|",
+    "v1Body": [
+      "|java+method:///java/nio/ByteBuffer/wrap(byte%5B%5D)|",
+      "|java+method:///io/undertow/websockets/core/WebSockets/sendBinary(java.nio.ByteBuffer,io.undertow.websockets.core.WebSocketChannel,io.undertow.websockets.core.WebSocketCallback)|",
+      "|java+constructor:///org/nustaq/kontraktor/remoting/websockets/UndertowWebsocketServerConnector$UTWebObjectSocket$1/UndertowWebsocketServerConnector$UTWebObjectSocket$1(org.nustaq.kontraktor.remoting.websockets.UndertowWebsocketServerConnector$UTWebObjectSocket)|"
+    ],
+    "v2Body": [
+      "|java+method:///io/undertow/websockets/core/WebSockets/sendText(java.nio.ByteBuffer,io.undertow.websockets.core.WebSocketChannel,io.undertow.websockets.core.WebSocketCallback)|",
+      "|java+method:///java/nio/ByteBuffer/wrap(byte%5B%5D)|",
+      "|java+method:///io/undertow/websockets/core/WebSockets/sendBinary(java.nio.ByteBuffer,io.undertow.websockets.core.WebSocketChannel,io.undertow.websockets.core.WebSocketCallback)|",
+      "|java+constructor:///org/nustaq/kontraktor/remoting/websockets/UndertowWebsocketServerConnector$UTWebObjectSocket$1/UndertowWebsocketServerConnector$UTWebObjectSocket$1(org.nustaq.kontraktor.remoting.websockets.UndertowWebsocketServerConnector$UTWebObjectSocket)|"
+    ],
+    "affectedLib": "io.undertow:undertow-core:1.2.8.Final",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "de.ruedigermoeller:kontraktor-http:3.01",
+    "coordinatesV2": "de.ruedigermoeller:kontraktor-http:3.08",
+    "caller": "|java+initializer:///org/nustaq/kontraktor/remoting/http/HttpClientConnector/HttpClientConnector$initializer|",
+    "called": "|java+method:///org/nustaq/kontraktor/Actors/AsActor(java.lang.Class)|",
+    "v1Body": [
+      "|java+constructor:///org/nustaq/kontraktor/remoting/http/HttpClientConnector$2/HttpClientConnector$2()|",
+      "|java+method:///org/nustaq/kontraktor/Actors/AsActor(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/nustaq/kontraktor/remoting/http/HttpClientConnector$2/HttpClientConnector$2()|",
+      "|java+constructor:///java/util/concurrent/atomic/AtomicInteger/AtomicInteger(int)|",
+      "|java+method:///org/nustaq/kontraktor/Actors/AsActor(java.lang.Class)|"
+    ],
+    "affectedLib": "de.ruedigermoeller:kontraktor:3.08",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "de.ruedigermoeller:kontraktor-http:3.01",
+    "coordinatesV2": "de.ruedigermoeller:kontraktor-http:3.08",
+    "caller": "|java+method:///org/nustaq/kontraktor/remoting/websockets/JSR356ClientConnector$WSClientEndpoint/onTextMessage(java.lang.String)|",
+    "called": "|java+method:///org/nustaq/kontraktor/remoting/base/ObjectSink/receiveObject(java.lang.Object,java.util.List)|",
+    "v1Body": [
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/nustaq/kontraktor/util/Log/Warn(java.lang.Object,java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/nustaq/kontraktor/remoting/base/ObjectSink/receiveObject(java.lang.Object,java.util.List)|",
+      "|java+method:///java/io/PrintStream/println(java.lang.String)|",
+      "|java+method:///org/nustaq/serialization/FSTConfiguration/asObject(byte%5B%5D)|",
+      "|java+method:///java/lang/String/getBytes()|"
+    ],
+    "affectedLib": "de.ruedigermoeller:kontraktor:3.08",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "de.ruedigermoeller:kontraktor-http:3.01",
+    "coordinatesV2": "de.ruedigermoeller:kontraktor-http:3.08",
+    "caller": "|java+method:///org/nustaq/kontraktor/remoting/http/UndertowHttpServerConnector/handleClientRequest(io.undertow.server.HttpServerExchange,org.nustaq.kontraktor.remoting.http.HttpObjectSocket,byte%5B%5D,java.lang.String)|",
+    "called": "|java+method:///org/nustaq/kontraktor/util/Log/Error(java.lang.Object,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/nustaq/kontraktor/remoting/http/HttpObjectSocket/takeStoredLPMessage(int)|",
+      "|java+method:///org/nustaq/kontraktor/util/Log/Warn(java.lang.Object,java.lang.Throwable)|",
+      "|java+method:///org/nustaq/kontraktor/remoting/http/HttpObjectSocket/cancelLongPoll()|",
+      "|java+method:///org/xnio/channels/StreamSinkChannel/resumeWrites()|",
+      "|java+method:///org/nustaq/kontraktor/remoting/http/UndertowHttpServerConnector/replyFromHistory(io.undertow.server.HttpServerExchange,org.xnio.channels.StreamSinkChannel,byte%5B%5D)|",
+      "|java+method:///org/nustaq/kontraktor/remoting/http/HttpObjectSocket/getConf()|",
+      "|java+method:///org/nustaq/kontraktor/remoting/http/UndertowHttpServerConnector/handleRegularRequest(io.undertow.server.HttpServerExchange,org.nustaq.kontraktor.remoting.http.HttpObjectSocket,java.lang.Object%5B%5D,org.xnio.channels.StreamSinkChannel)|",
+      "|java+method:///org/nustaq/kontraktor/remoting/http/UndertowHttpServerConnector/createLongPollTask(io.undertow.server.HttpServerExchange,org.nustaq.kontraktor.remoting.http.HttpObjectSocket,org.xnio.channels.StreamSinkChannel)|",
+      "|java+method:///org/nustaq/kontraktor/remoting/http/HttpObjectSocket/updateTimeStamp()|",
+      "|java+method:///java/lang/Integer/parseInt(java.lang.String)|",
+      "|java+method:///org/nustaq/serialization/FSTConfiguration/asObject(byte%5B%5D)|",
+      "|java+method:///io/undertow/server/HttpServerExchange/getResponseChannel()|",
+      "|java+method:///org/nustaq/kontraktor/remoting/http/HttpObjectSocket/setLongPollTask(org.nustaq.kontraktor.util.Pair)|"
+    ],
+    "v2Body": [
+      "|java+method:///io/undertow/server/HttpServerExchange/endExchange()|",
+      "|java+method:///org/nustaq/kontraktor/util/Log/Warn(java.lang.Object,java.lang.Throwable)|",
+      "|java+method:///org/nustaq/kontraktor/remoting/http/HttpObjectSocket/cancelLongPoll()|",
+      "|java+method:///org/xnio/channels/StreamSinkChannel/resumeWrites()|",
+      "|java+method:///org/nustaq/kontraktor/remoting/http/UndertowHttpServerConnector/replyFromHistory(io.undertow.server.HttpServerExchange,org.xnio.channels.StreamSinkChannel,byte%5B%5D)|",
+      "|java+method:///org/nustaq/kontraktor/remoting/http/HttpObjectSocket/getConf()|",
+      "|java+method:///org/nustaq/kontraktor/remoting/http/UndertowHttpServerConnector/handleRegularRequest(io.undertow.server.HttpServerExchange,org.nustaq.kontraktor.remoting.http.HttpObjectSocket,java.lang.Object%5B%5D,org.xnio.channels.StreamSinkChannel)|",
+      "|java+method:///org/nustaq/kontraktor/remoting/http/HttpObjectSocket/takeStoredLPMessage(int)|",
+      "|java+method:///org/nustaq/kontraktor/util/Log/Error(java.lang.Object,java.lang.String)|",
+      "|java+method:///org/nustaq/kontraktor/remoting/http/UndertowHttpServerConnector/createLongPollTask(io.undertow.server.HttpServerExchange,org.nustaq.kontraktor.remoting.http.HttpObjectSocket,org.xnio.channels.StreamSinkChannel)|",
+      "|java+method:///org/nustaq/kontraktor/remoting/http/HttpObjectSocket/updateTimeStamp()|",
+      "|java+method:///java/lang/Integer/parseInt(java.lang.String)|",
+      "|java+method:///org/nustaq/serialization/FSTConfiguration/asObject(byte%5B%5D)|",
+      "|java+method:///io/undertow/server/HttpServerExchange/getResponseChannel()|",
+      "|java+method:///org/nustaq/kontraktor/remoting/http/HttpObjectSocket/setLongPollTask(org.nustaq.kontraktor.util.Pair)|"
+    ],
+    "affectedLib": "de.ruedigermoeller:kontraktor:3.08",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "de.ruedigermoeller:kontraktor-http:3.01",
+    "coordinatesV2": "de.ruedigermoeller:kontraktor-http:3.08",
+    "caller": "|java+constructor:///org/nustaq/kontraktor/remoting/http/HttpObjectSocket/HttpObjectSocket(java.lang.String,java.lang.Runnable)|",
+    "called": "|java+constructor:///org/nustaq/kontraktor/remoting/base/messagestore/HeapMessageStore/HeapMessageStore(int)|",
+    "v1Body": [
+      "|java+constructor:///org/nustaq/kontraktor/remoting/websockets/WebObjectSocket/WebObjectSocket()|",
+      "|java+constructor:///org/nustaq/offheap/BinaryQueue/BinaryQueue(int)|",
+      "|java+constructor:///org/nustaq/kontraktor/remoting/base/messagestore/HeapMessageStore/HeapMessageStore(int)|",
+      "|java+method:///java/lang/System/currentTimeMillis()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/concurrent/atomic/AtomicInteger/incrementAndGet()|",
+      "|java+constructor:///org/nustaq/kontraktor/remoting/websockets/WebObjectSocket/WebObjectSocket()|",
+      "|java+constructor:///org/nustaq/offheap/BinaryQueue/BinaryQueue(int)|",
+      "|java+constructor:///org/nustaq/kontraktor/remoting/base/messagestore/HeapMessageStore/HeapMessageStore(int)|",
+      "|java+method:///java/lang/System/currentTimeMillis()|"
+    ],
+    "affectedLib": "de.ruedigermoeller:kontraktor:3.08",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "de.ruedigermoeller:kontraktor-http:3.01",
+    "coordinatesV2": "de.ruedigermoeller:kontraktor-http:3.08",
+    "caller": "|java+method:///org/nustaq/kontraktor/remoting/websockets/UndertowWebsocketServerConnector$1/onError(io.undertow.websockets.core.WebSocketChannel,java.lang.Throwable)|",
+    "called": "|java+method:///org/nustaq/kontraktor/util/Log/Debug(java.lang.Object,java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///org/nustaq/kontraktor/remoting/base/ObjectSink/sinkClosed()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/nustaq/kontraktor/util/Log/Debug(java.lang.Object,java.lang.Throwable)|",
+      "|java+method:///org/nustaq/kontraktor/remoting/base/ObjectSink/sinkClosed()|"
+    ],
+    "affectedLib": "de.ruedigermoeller:kontraktor:3.08",
+    "change": "UPDATED"
+  }
+]

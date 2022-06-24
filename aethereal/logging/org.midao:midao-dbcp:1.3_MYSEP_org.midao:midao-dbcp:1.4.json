@@ -1,0 +1,21 @@
+[
+  {
+    "coordinatesV1": "org.midao:midao-dbcp:1.3",
+    "coordinatesV2": "org.midao:midao-dbcp:1.4",
+    "caller": "|java+method:///org/midao/core/pool/MidaoFrameworkPoolBinder/createDataSource(java.util.Properties)|",
+    "called": "|java+method:///org/apache/commons/dbcp/BasicDataSourceFactory/createDataSource(java.util.Properties)|",
+    "v1Body": [
+      "|java+method:///org/midao/core/pool/MidaoFrameworkPoolBinder/assertNotNull(java.lang.Object)|",
+      "|java+method:///org/apache/commons/dbcp/BasicDataSourceFactory/createDataSource(java.util.Properties)|",
+      "|java+constructor:///java/sql/SQLException/SQLException(java.lang.String)|",
+      "|java+method:///java/lang/Exception/getMessage()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/midao/core/pool/MidaoFrameworkPoolBinder/assertNotNull(java.lang.Object)|",
+      "|java+constructor:///java/sql/SQLException/SQLException(java.lang.Throwable)|",
+      "|java+method:///org/apache/commons/dbcp/BasicDataSourceFactory/createDataSource(java.util.Properties)|"
+    ],
+    "affectedLib": "commons-dbcp:commons-dbcp:1.4",
+    "change": "UPDATED"
+  }
+]

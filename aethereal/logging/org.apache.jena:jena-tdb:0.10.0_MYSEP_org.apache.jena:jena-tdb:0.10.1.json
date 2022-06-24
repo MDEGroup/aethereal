@@ -1,0 +1,1431 @@
+[
+  {
+    "coordinatesV1": "org.apache.jena:jena-tdb:0.10.0",
+    "coordinatesV2": "org.apache.jena:jena-tdb:0.10.1",
+    "caller": "|java+method:///com/hp/hpl/jena/tdb/TDBBackup/backup(com.hp.hpl.jena.tdb.base.file.Location,java.io.OutputStream)|",
+    "called": "|java+method:///org/apache/jena/riot/RDFDataMgr/write(java.io.OutputStream,com.hp.hpl.jena.sparql.core.DatasetGraph,org.apache.jena.riot.Lang)|",
+    "v1Body": [
+      "|java+method:///com/hp/hpl/jena/tdb/StoreConnection/make(com.hp.hpl.jena.tdb.base.file.Location)|",
+      "|java+method:///com/hp/hpl/jena/tdb/StoreConnection/begin(com.hp.hpl.jena.query.ReadWrite,java.lang.String)|",
+      "|java+method:///com/hp/hpl/jena/tdb/transaction/DatasetGraphTxn/end()|",
+      "|java+method:///org/apache/jena/riot/out/NQuadsWriter/write(java.io.OutputStream,com.hp.hpl.jena.sparql.core.DatasetGraph)|",
+      "|java+method:///com/hp/hpl/jena/tdb/TDBFactory/createDataset(com.hp.hpl.jena.tdb.base.file.Location)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/jena/riot/RDFDataMgr/write(java.io.OutputStream,com.hp.hpl.jena.sparql.core.DatasetGraph,org.apache.jena.riot.Lang)|",
+      "|java+method:///com/hp/hpl/jena/tdb/StoreConnection/make(com.hp.hpl.jena.tdb.base.file.Location)|",
+      "|java+method:///com/hp/hpl/jena/tdb/StoreConnection/begin(com.hp.hpl.jena.query.ReadWrite,java.lang.String)|",
+      "|java+method:///com/hp/hpl/jena/tdb/transaction/DatasetGraphTxn/end()|",
+      "|java+method:///com/hp/hpl/jena/tdb/TDBFactory/createDataset(com.hp.hpl.jena.tdb.base.file.Location)|"
+    ],
+    "affectedLib": "org.apache.jena:jena-arq:2.10.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.jena:jena-tdb:0.10.0",
+    "coordinatesV2": "org.apache.jena:jena-tdb:0.10.1",
+    "caller": "|java+method:///tdb/tools/dumpnodetable/dump(java.io.OutputStream,com.hp.hpl.jena.tdb.nodetable.NodeTable)|",
+    "called": "|java+method:///org/apache/jena/atlas/io/IndentedWriter/flush()|",
+    "v1Body": [
+      "|java+method:///org/apache/jena/atlas/io/IndentedWriter/printf(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/jena/atlas/io/IndentedWriter/flush()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/lang/StringBuilder/append(long)|",
+      "|java+method:///org/apache/jena/atlas/lib/Pair/car()|",
+      "|java+constructor:///org/apache/jena/atlas/io/IndentedWriter/IndentedWriter(java.io.OutputStream)|",
+      "|java+method:///com/hp/hpl/jena/tdb/nodetable/NodeTable/all()|",
+      "|java+method:///org/apache/jena/atlas/lib/Pair/cdr()|",
+      "|java+method:///tdb/tools/dumpnodetable/stringForNode(com.hp.hpl.jena.graph.Node)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/apache/jena/atlas/io/IndentedWriter/println()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/apache/jena/atlas/io/IndentedWriter/print(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/jena/atlas/io/IndentedWriter/printf(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/jena/atlas/io/IndentedWriter/flush()|",
+      "|java+method:///org/apache/jena/atlas/io/IndentedWriter/print(java.lang.String)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/lang/StringBuilder/append(long)|",
+      "|java+constructor:///org/apache/jena/atlas/io/IndentedWriter/IndentedWriter(java.io.OutputStream)|",
+      "|java+method:///com/hp/hpl/jena/tdb/nodetable/NodeTable/all()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/apache/jena/atlas/lib/Pair/cdr()|",
+      "|java+method:///tdb/tools/dumpnodetable/stringForNode(com.hp.hpl.jena.graph.Node)|",
+      "|java+method:///org/apache/jena/atlas/lib/Pair/car()|",
+      "|java+method:///com/hp/hpl/jena/tdb/store/NodeId/toString()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/apache/jena/atlas/io/IndentedWriter/println()|"
+    ],
+    "affectedLib": "org.apache.jena:jena-arq:2.10.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.jena:jena-tdb:0.10.0",
+    "coordinatesV2": "org.apache.jena:jena-tdb:0.10.1",
+    "caller": "|java+method:///com/hp/hpl/jena/tdb/base/recordbuffer/RecordBufferPageBase/output(org.apache.jena.atlas.io.IndentedWriter)|",
+    "called": "|java+method:///org/apache/jena/atlas/io/IndentedWriter/print(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///com/hp/hpl/jena/tdb/base/recordbuffer/RecordBufferPageBase/toString()|",
+      "|java+method:///org/apache/jena/atlas/io/IndentedWriter/print(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/hp/hpl/jena/tdb/base/recordbuffer/RecordBufferPageBase/toString()|",
+      "|java+method:///org/apache/jena/atlas/io/IndentedWriter/print(java.lang.String)|"
+    ],
+    "affectedLib": "org.apache.jena:jena-arq:2.10.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.jena:jena-tdb:0.10.0",
+    "coordinatesV2": "org.apache.jena:jena-tdb:0.10.1",
+    "caller": "|java+method:///com/hp/hpl/jena/tdb/store/DatasetPrefixesTDB/loadPrefixMapping(java.lang.String,com.hp.hpl.jena.shared.PrefixMapping)|",
+    "called": "|java+method:///org/apache/jena/atlas/iterator/Iter/close(java.util.Iterator)|",
+    "v1Body": [
+      "|java+method:///org/apache/jena/atlas/lib/Tuple/get(int)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///com/hp/hpl/jena/shared/PrefixMapping/setNsPrefix(java.lang.String,java.lang.String)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///com/hp/hpl/jena/graph/Node/createURI(java.lang.String)|",
+      "|java+method:///com/hp/hpl/jena/graph/Node/getLiteralLexicalForm()|",
+      "|java+method:///com/hp/hpl/jena/tdb/nodetable/NodeTupleTable/find(com.hp.hpl.jena.graph.Node%5B%5D)|",
+      "|java+method:///com/hp/hpl/jena/graph/Node/getURI()|",
+      "|java+method:///org/apache/jena/atlas/iterator/Iter/close(java.util.Iterator)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/hp/hpl/jena/graph/NodeFactory/createURI(java.lang.String)|",
+      "|java+method:///org/apache/jena/atlas/lib/Tuple/get(int)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///com/hp/hpl/jena/shared/PrefixMapping/setNsPrefix(java.lang.String,java.lang.String)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///com/hp/hpl/jena/graph/Node/getLiteralLexicalForm()|",
+      "|java+method:///com/hp/hpl/jena/tdb/nodetable/NodeTupleTable/find(com.hp.hpl.jena.graph.Node%5B%5D)|",
+      "|java+method:///com/hp/hpl/jena/graph/Node/getURI()|",
+      "|java+method:///org/apache/jena/atlas/iterator/Iter/close(java.util.Iterator)|"
+    ],
+    "affectedLib": "org.apache.jena:jena-arq:2.10.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.jena:jena-tdb:0.10.0",
+    "coordinatesV2": "org.apache.jena:jena-tdb:0.10.1",
+    "caller": "|java+constructor:///tdb/cmdline/ModModel/ModModel(java.lang.String,java.lang.String%5B%5D)|",
+    "called": "|java+method:///arq/cmdline/ArgDecl/addName(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///arq/cmdline/ArgDecl/addName(java.lang.String)|",
+      "|java+constructor:///arq/cmdline/ArgDecl/ArgDecl(boolean,java.lang.String)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///arq/cmdline/ArgDecl/addName(java.lang.String)|",
+      "|java+constructor:///arq/cmdline/ArgDecl/ArgDecl(boolean,java.lang.String,java.lang.String%5B%5D)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "org.apache.jena:jena-arq:2.10.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.jena:jena-tdb:0.10.0",
+    "coordinatesV2": "org.apache.jena:jena-tdb:0.10.1",
+    "caller": "|java+method:///com/hp/hpl/jena/tdb/store/NodeId/inline(com.hp.hpl.jena.graph.Node)|",
+    "called": "|java+method:///org/apache/jena/atlas/logging/Log/warn(java.lang.Class,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///com/hp/hpl/jena/graph/impl/LiteralLabel/getLexicalForm()|",
+      "|java+method:///java/lang/String/length()|",
+      "|java+method:///com/hp/hpl/jena/tdb/store/NodeId/setType(long,int)|",
+      "|java+method:///com/hp/hpl/jena/graph/Node/isLiteral()|",
+      "|java+constructor:///java/math/BigDecimal/BigDecimal(java.lang.String)|",
+      "|java+method:///com/hp/hpl/jena/tdb/store/DecimalNode/pack()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/lang/Boolean/booleanValue()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/Object/equals(java.lang.Object)|",
+      "|java+method:///com/hp/hpl/jena/graph/Node/getLiteral()|",
+      "|java+method:///com/hp/hpl/jena/tdb/store/DateTimeNode/packDate(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/String/trim()|",
+      "|java+method:///com/hp/hpl/jena/graph/Node/getLiteralDatatype()|",
+      "|java+constructor:///com/hp/hpl/jena/tdb/store/NodeId/NodeId(long)|",
+      "|java+method:///com/hp/hpl/jena/tdb/store/IntegerNode/pack(long)|",
+      "|java+method:///com/hp/hpl/jena/graph/impl/LiteralLabel/getValue()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///com/hp/hpl/jena/datatypes/xsd/XSDDatatype/isValidLiteral(com.hp.hpl.jena.graph.impl.LiteralLabel)|",
+      "|java+method:///com/hp/hpl/jena/tdb/store/DateTimeNode/packDateTime(java.lang.String)|",
+      "|java+method:///com/hp/hpl/jena/tdb/store/DecimalNode/valueOf(java.math.BigDecimal)|",
+      "|java+method:///org/apache/jena/atlas/logging/Log/warn(java.lang.Class,java.lang.String)|",
+      "|java+method:///java/lang/Number/longValue()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/hp/hpl/jena/graph/Node/isLiteral()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///com/hp/hpl/jena/tdb/store/NodeId/inline$(com.hp.hpl.jena.graph.Node)|",
+      "|java+method:///org/apache/jena/atlas/logging/Log/warn(java.lang.Class,java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///com/hp/hpl/jena/graph/Node/getLiteralDatatype()|"
+    ],
+    "affectedLib": "org.apache.jena:jena-arq:2.10.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.jena:jena-tdb:0.10.0",
+    "coordinatesV2": "org.apache.jena:jena-tdb:0.10.1",
+    "caller": "|java+method:///com/hp/hpl/jena/tdb/index/bplustree/BPTreeNode/output(org.apache.jena.atlas.io.IndentedWriter)|",
+    "called": "|java+method:///org/apache/jena/atlas/io/IndentedWriter/decIndent()|",
+    "v1Body": [
+      "|java+method:///com/hp/hpl/jena/tdb/index/bplustree/BPTreePage/output(org.apache.jena.atlas.io.IndentedWriter)|",
+      "|java+method:///com/hp/hpl/jena/tdb/index/bplustree/BPTreeNode/get(int,short)|",
+      "|java+method:///org/apache/jena/atlas/io/IndentedWriter/incIndent()|",
+      "|java+method:///org/apache/jena/atlas/io/IndentedWriter/decIndent()|",
+      "|java+method:///org/apache/jena/atlas/io/IndentedWriter/println()|",
+      "|java+method:///com/hp/hpl/jena/tdb/index/bplustree/BPTreePage/release()|",
+      "|java+method:///com/hp/hpl/jena/tdb/index/bplustree/BPTreeNode/toString()|",
+      "|java+method:///org/apache/jena/atlas/io/IndentedWriter/print(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/hp/hpl/jena/tdb/index/bplustree/BPTreePage/output(org.apache.jena.atlas.io.IndentedWriter)|",
+      "|java+method:///com/hp/hpl/jena/tdb/index/bplustree/BPTreeNode/get(int,short)|",
+      "|java+method:///org/apache/jena/atlas/io/IndentedWriter/print(java.lang.String)|",
+      "|java+method:///org/apache/jena/atlas/io/IndentedWriter/incIndent()|",
+      "|java+method:///org/apache/jena/atlas/io/IndentedWriter/decIndent()|",
+      "|java+method:///org/apache/jena/atlas/io/IndentedWriter/println()|",
+      "|java+method:///com/hp/hpl/jena/tdb/index/bplustree/BPTreePage/release()|",
+      "|java+method:///com/hp/hpl/jena/tdb/index/bplustree/BPTreeNode/toString()|"
+    ],
+    "affectedLib": "org.apache.jena:jena-arq:2.10.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.jena:jena-tdb:0.10.0",
+    "coordinatesV2": "org.apache.jena:jena-tdb:0.10.1",
+    "caller": "|java+method:///com/hp/hpl/jena/tdb/nodetable/NodecSSE/decode(java.nio.ByteBuffer,com.hp.hpl.jena.shared.PrefixMapping)|",
+    "called": "|java+method:///org/apache/jena/riot/tokens/Token/asNode()|",
+    "v1Body": [
+      "|java+method:///org/apache/jena/riot/tokens/TokenizerFactory/makeTokenizerString(java.lang.String)|",
+      "|java+method:///org/apache/jena/riot/tokens/Tokenizer/hasNext()|",
+      "|java+method:///org/apache/jena/atlas/io/BlockUTF8/toString(java.nio.ByteBuffer)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/String/length()|",
+      "|java+constructor:///com/hp/hpl/jena/rdf/model/AnonId/AnonId(java.lang.String)|",
+      "|java+method:///com/hp/hpl/jena/graph/Node/createAnon(com.hp.hpl.jena.rdf.model.AnonId)|",
+      "|java+method:///org/apache/jena/riot/tokens/Token/asNode()|",
+      "|java+method:///org/apache/jena/riot/tokens/Tokenizer/next()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///com/hp/hpl/jena/tdb/TDBException/TDBException(java.lang.String)|",
+      "|java+method:///java/lang/String/substring(int,int)|",
+      "|java+method:///java/lang/String/substring(int)|",
+      "|java+method:///com/hp/hpl/jena/graph/Node/createURI(java.lang.String)|",
+      "|java+method:///org/apache/jena/atlas/lib/StrUtils/decodeHex(java.lang.String,char)|",
+      "|java+method:///org/apache/jena/atlas/lib/StrUtils/unescapeString(java.lang.String)|",
+      "|java+method:///java/lang/String/startsWith(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/jena/riot/tokens/TokenizerFactory/makeTokenizerString(java.lang.String)|",
+      "|java+method:///com/hp/hpl/jena/graph/NodeFactory/createURI(java.lang.String)|",
+      "|java+method:///org/apache/jena/atlas/io/BlockUTF8/toString(java.nio.ByteBuffer)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/String/length()|",
+      "|java+constructor:///com/hp/hpl/jena/rdf/model/AnonId/AnonId(java.lang.String)|",
+      "|java+method:///org/apache/jena/riot/tokens/Token/asNode()|",
+      "|java+method:///org/apache/jena/riot/tokens/Tokenizer/next()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/String/substring(int)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/apache/jena/riot/tokens/Tokenizer/hasNext()|",
+      "|java+method:///com/hp/hpl/jena/graph/NodeFactory/createAnon(com.hp.hpl.jena.rdf.model.AnonId)|",
+      "|java+constructor:///com/hp/hpl/jena/tdb/TDBException/TDBException(java.lang.String)|",
+      "|java+method:///java/lang/String/substring(int,int)|",
+      "|java+method:///org/apache/jena/atlas/lib/StrUtils/decodeHex(java.lang.String,char)|",
+      "|java+method:///org/apache/jena/atlas/lib/StrUtils/unescapeString(java.lang.String)|",
+      "|java+method:///java/lang/String/startsWith(java.lang.String)|"
+    ],
+    "affectedLib": "org.apache.jena:jena-arq:2.10.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.jena:jena-tdb:0.10.0",
+    "coordinatesV2": "org.apache.jena:jena-tdb:0.10.1",
+    "caller": "|java+method:///com/hp/hpl/jena/tdb/solver/QueryEngineTDB/eval(com.hp.hpl.jena.sparql.algebra.Op,com.hp.hpl.jena.sparql.core.DatasetGraph,com.hp.hpl.jena.sparql.engine.binding.Binding,com.hp.hpl.jena.sparql.util.Context)|",
+    "called": "|java+method:///com/hp/hpl/jena/sparql/engine/main/QueryEngineMain/eval(com.hp.hpl.jena.sparql.algebra.Op,com.hp.hpl.jena.sparql.core.DatasetGraph,com.hp.hpl.jena.sparql.engine.binding.Binding,com.hp.hpl.jena.sparql.util.Context)|",
+    "v1Body": [
+      "|java+constructor:///com/hp/hpl/jena/tdb/store/GraphNamedTDB/GraphNamedTDB(com.hp.hpl.jena.tdb.store.DatasetGraphTDB,com.hp.hpl.jena.graph.Node)|",
+      "|java+method:///com/hp/hpl/jena/tdb/migrate/A2/unionDefaultGraphQuads(com.hp.hpl.jena.sparql.algebra.Op)|",
+      "|java+method:///com/hp/hpl/jena/tdb/store/DatasetGraphTDB/duplicate()|",
+      "|java+method:///com/hp/hpl/jena/sparql/engine/main/QueryEngineMain/eval(com.hp.hpl.jena.sparql.algebra.Op,com.hp.hpl.jena.sparql.core.DatasetGraph,com.hp.hpl.jena.sparql.engine.binding.Binding,com.hp.hpl.jena.sparql.util.Context)|",
+      "|java+method:///com/hp/hpl/jena/sparql/mgt/Explain/explain(java.lang.String,com.hp.hpl.jena.sparql.algebra.Op,com.hp.hpl.jena.sparql.util.Context)|",
+      "|java+method:///com/hp/hpl/jena/sparql/util/Context/isTrue(com.hp.hpl.jena.sparql.util.Symbol)|",
+      "|java+method:///com/hp/hpl/jena/tdb/store/DatasetGraphTDB/setEffectiveDefaultGraph(com.hp.hpl.jena.tdb.store.GraphTDB)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/hp/hpl/jena/tdb/store/GraphNamedTDB/GraphNamedTDB(com.hp.hpl.jena.tdb.store.DatasetGraphTDB,com.hp.hpl.jena.graph.Node)|",
+      "|java+method:///com/hp/hpl/jena/tdb/migrate/A2/unionDefaultGraphQuads(com.hp.hpl.jena.sparql.algebra.Op)|",
+      "|java+method:///com/hp/hpl/jena/tdb/store/DatasetGraphTDB/duplicate()|",
+      "|java+method:///com/hp/hpl/jena/sparql/engine/main/QueryEngineMain/eval(com.hp.hpl.jena.sparql.algebra.Op,com.hp.hpl.jena.sparql.core.DatasetGraph,com.hp.hpl.jena.sparql.engine.binding.Binding,com.hp.hpl.jena.sparql.util.Context)|",
+      "|java+method:///com/hp/hpl/jena/sparql/util/Context/isTrue(com.hp.hpl.jena.sparql.util.Symbol)|",
+      "|java+method:///com/hp/hpl/jena/tdb/store/DatasetGraphTDB/setEffectiveDefaultGraph(com.hp.hpl.jena.tdb.store.GraphTDB)|",
+      "|java+method:///com/hp/hpl/jena/sparql/mgt/Explain/explain(java.lang.String,com.hp.hpl.jena.sparql.algebra.Op,com.hp.hpl.jena.sparql.util.Context)|",
+      "|java+constructor:///com/hp/hpl/jena/tdb/solver/QueryEngineTDB$QueryIteratorMaterializeBinding/QueryEngineTDB$QueryIteratorMaterializeBinding(com.hp.hpl.jena.sparql.engine.QueryIterator)|"
+    ],
+    "affectedLib": "org.apache.jena:jena-arq:2.10.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.jena:jena-tdb:0.10.0",
+    "coordinatesV2": "org.apache.jena:jena-tdb:0.10.1",
+    "caller": "|java+method:///com/hp/hpl/jena/tdb/store/DatasetPrefixesTDB/readByURI(java.lang.String,java.lang.String)|",
+    "called": "|java+method:///org/apache/jena/atlas/iterator/Iter/close(java.util.Iterator)|",
+    "v1Body": [
+      "|java+method:///org/apache/jena/atlas/iterator/Iter/close(java.util.Iterator)|",
+      "|java+method:///org/apache/jena/atlas/lib/Tuple/get(int)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///com/hp/hpl/jena/graph/Node/createURI(java.lang.String)|",
+      "|java+method:///com/hp/hpl/jena/graph/Node/getLiteralLexicalForm()|",
+      "|java+method:///com/hp/hpl/jena/tdb/nodetable/NodeTupleTable/find(com.hp.hpl.jena.graph.Node%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/jena/atlas/iterator/Iter/close(java.util.Iterator)|",
+      "|java+method:///com/hp/hpl/jena/graph/NodeFactory/createURI(java.lang.String)|",
+      "|java+method:///org/apache/jena/atlas/lib/Tuple/get(int)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///com/hp/hpl/jena/graph/Node/getLiteralLexicalForm()|",
+      "|java+method:///com/hp/hpl/jena/tdb/nodetable/NodeTupleTable/find(com.hp.hpl.jena.graph.Node%5B%5D)|"
+    ],
+    "affectedLib": "org.apache.jena:jena-arq:2.10.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.jena:jena-tdb:0.10.0",
+    "coordinatesV2": "org.apache.jena:jena-tdb:0.10.1",
+    "caller": "|java+method:///com/hp/hpl/jena/tdb/index/bplustree/BPTreeRecords/output(org.apache.jena.atlas.io.IndentedWriter)|",
+    "called": "|java+method:///org/apache/jena/atlas/io/IndentedWriter/print(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///com/hp/hpl/jena/tdb/index/bplustree/BPTreeRecords/toString()|",
+      "|java+method:///org/apache/jena/atlas/io/IndentedWriter/print(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/hp/hpl/jena/tdb/index/bplustree/BPTreeRecords/toString()|",
+      "|java+method:///org/apache/jena/atlas/io/IndentedWriter/print(java.lang.String)|"
+    ],
+    "affectedLib": "org.apache.jena:jena-arq:2.10.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.jena:jena-tdb:0.10.0",
+    "coordinatesV2": "org.apache.jena:jena-tdb:0.10.1",
+    "caller": "|java+initializer:///tdb/cmdline/CmdTDBGraph/CmdTDBGraph$initializer|",
+    "called": "|java+constructor:///arq/cmdline/ArgDecl/ArgDecl(boolean,java.lang.String,java.lang.String%5B%5D)|",
+    "v1Body": [
+      "|java+constructor:///arq/cmdline/ArgDecl/ArgDecl(boolean,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///arq/cmdline/ArgDecl/ArgDecl(boolean,java.lang.String,java.lang.String%5B%5D)|"
+    ],
+    "affectedLib": "org.apache.jena:jena-arq:2.10.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.jena:jena-tdb:0.10.0",
+    "coordinatesV2": "org.apache.jena:jena-tdb:0.10.1",
+    "caller": "|java+method:///com/hp/hpl/jena/tdb/nodetable/NodecSSE/encode(com.hp.hpl.jena.graph.Node,java.nio.ByteBuffer,com.hp.hpl.jena.shared.PrefixMapping)|",
+    "called": "|java+method:///org/apache/jena/atlas/lib/StrUtils/encodeHex(java.lang.String,char,char%5B%5D)|",
+    "v1Body": [
+      "|java+method:///com/hp/hpl/jena/graph/Node/getURI()|",
+      "|java+method:///org/apache/jena/atlas/lib/StrUtils/encodeHex(java.lang.String,char,char%5B%5D)|",
+      "|java+method:///java/nio/ByteBuffer/flip()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///com/hp/hpl/jena/tdb/lib/NodeFmtLib/serialize(com.hp.hpl.jena.graph.Node)|",
+      "|java+method:///com/hp/hpl/jena/graph/Node/isURI()|",
+      "|java+method:///com/hp/hpl/jena/graph/Node/isLiteral()|",
+      "|java+constructor:///com/hp/hpl/jena/tdb/TDBException/TDBException(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/apache/jena/atlas/io/BlockUTF8/fromChars(java.lang.CharSequence,java.nio.ByteBuffer)|",
+      "|java+method:///com/hp/hpl/jena/graph/Node/createURI(java.lang.String)|",
+      "|java+method:///org/apache/jena/riot/web/LangTag/check(java.lang.String)|",
+      "|java+method:///java/nio/ByteBuffer/limit()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///com/hp/hpl/jena/graph/Node/getLiteralLanguage()|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/hp/hpl/jena/graph/Node/getURI()|",
+      "|java+method:///java/nio/ByteBuffer/flip()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///com/hp/hpl/jena/tdb/lib/NodeFmtLib/serialize(com.hp.hpl.jena.graph.Node)|",
+      "|java+method:///com/hp/hpl/jena/graph/Node/isURI()|",
+      "|java+method:///com/hp/hpl/jena/graph/Node/isLiteral()|",
+      "|java+constructor:///com/hp/hpl/jena/tdb/TDBException/TDBException(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/apache/jena/atlas/io/BlockUTF8/fromChars(java.lang.CharSequence,java.nio.ByteBuffer)|",
+      "|java+method:///org/apache/jena/riot/web/LangTag/check(java.lang.String)|",
+      "|java+method:///java/nio/ByteBuffer/limit()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///com/hp/hpl/jena/graph/Node/getLiteralLanguage()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///com/hp/hpl/jena/graph/NodeFactory/createURI(java.lang.String)|",
+      "|java+method:///org/apache/jena/atlas/lib/StrUtils/encodeHex(java.lang.String,char,char%5B%5D)|"
+    ],
+    "affectedLib": "org.apache.jena:jena-arq:2.10.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.jena:jena-tdb:0.10.0",
+    "coordinatesV2": "org.apache.jena:jena-tdb:0.10.1",
+    "caller": "|java+method:///com/hp/hpl/jena/tdb/assembler/IndexAssembler/open(com.hp.hpl.jena.assembler.Assembler,com.hp.hpl.jena.rdf.model.Resource,com.hp.hpl.jena.assembler.Mode)|",
+    "called": "|java+constructor:///org/apache/jena/atlas/lib/ColumnMap/ColumnMap(java.lang.String,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/lang/String/toUpperCase()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/String/length()|",
+      "|java+method:///com/hp/hpl/jena/tdb/assembler/IndexAssembler/open(com.hp.hpl.jena.assembler.Assembler,com.hp.hpl.jena.rdf.model.Resource,com.hp.hpl.jena.assembler.Mode)|",
+      "|java+constructor:///com/hp/hpl/jena/tdb/TDBException/TDBException(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///com/hp/hpl/jena/tdb/index/TupleIndexRecord/TupleIndexRecord(int,org.apache.jena.atlas.lib.ColumnMap,java.lang.String,com.hp.hpl.jena.tdb.base.record.RecordFactory,com.hp.hpl.jena.tdb.index.RangeIndex)|",
+      "|java+method:///com/hp/hpl/jena/sparql/util/graph/GraphUtils/getAsStringValue(com.hp.hpl.jena.rdf.model.Resource,com.hp.hpl.jena.rdf.model.Property)|",
+      "|java+method:///com/hp/hpl/jena/tdb/base/file/Location/absolute(java.lang.String)|",
+      "|java+method:///com/hp/hpl/jena/tdb/index/IndexBuilder/createRangeIndex(com.hp.hpl.jena.tdb.base.file.FileSet,com.hp.hpl.jena.tdb.base.record.RecordFactory)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///org/apache/jena/atlas/lib/ColumnMap/ColumnMap(java.lang.String,java.lang.String)|",
+      "|java+method:///com/hp/hpl/jena/sparql/util/graph/GraphUtils/exactlyOneProperty(com.hp.hpl.jena.rdf.model.Resource,com.hp.hpl.jena.rdf.model.Property)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/String/length()|",
+      "|java+method:///java/lang/String/toUpperCase(java.util.Locale)|",
+      "|java+method:///com/hp/hpl/jena/tdb/assembler/IndexAssembler/open(com.hp.hpl.jena.assembler.Assembler,com.hp.hpl.jena.rdf.model.Resource,com.hp.hpl.jena.assembler.Mode)|",
+      "|java+constructor:///com/hp/hpl/jena/tdb/TDBException/TDBException(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///com/hp/hpl/jena/tdb/index/TupleIndexRecord/TupleIndexRecord(int,org.apache.jena.atlas.lib.ColumnMap,java.lang.String,com.hp.hpl.jena.tdb.base.record.RecordFactory,com.hp.hpl.jena.tdb.index.RangeIndex)|",
+      "|java+method:///com/hp/hpl/jena/sparql/util/graph/GraphUtils/getAsStringValue(com.hp.hpl.jena.rdf.model.Resource,com.hp.hpl.jena.rdf.model.Property)|",
+      "|java+method:///com/hp/hpl/jena/tdb/base/file/Location/absolute(java.lang.String)|",
+      "|java+method:///com/hp/hpl/jena/tdb/index/IndexBuilder/createRangeIndex(com.hp.hpl.jena.tdb.base.file.FileSet,com.hp.hpl.jena.tdb.base.record.RecordFactory)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///org/apache/jena/atlas/lib/ColumnMap/ColumnMap(java.lang.String,java.lang.String)|",
+      "|java+method:///com/hp/hpl/jena/sparql/util/graph/GraphUtils/exactlyOneProperty(com.hp.hpl.jena.rdf.model.Resource,com.hp.hpl.jena.rdf.model.Property)|"
+    ],
+    "affectedLib": "org.apache.jena:jena-arq:2.10.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.jena:jena-tdb:0.10.0",
+    "coordinatesV2": "org.apache.jena:jena-tdb:0.10.1",
+    "caller": "|java+method:///com/hp/hpl/jena/tdb/index/bplustree/RecordBufferPageLinker/hasNext()|",
+    "called": "|java+method:///org/apache/jena/atlas/iterator/PeekIterator/next()|",
+    "v1Body": [
+      "|java+method:///org/apache/jena/atlas/iterator/PeekIterator/next()|",
+      "|java+method:///org/apache/jena/atlas/iterator/PeekIterator/peekOrNull()|",
+      "|java+method:///org/apache/jena/atlas/iterator/PeekIterator/hasNext()|",
+      "|java+method:///com/hp/hpl/jena/tdb/base/recordbuffer/RecordBufferPage/getId()|",
+      "|java+method:///com/hp/hpl/jena/tdb/base/recordbuffer/RecordBufferPage/setLink(int)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/jena/atlas/iterator/PeekIterator/next()|",
+      "|java+method:///org/apache/jena/atlas/iterator/PeekIterator/peek()|",
+      "|java+method:///org/apache/jena/atlas/iterator/PeekIterator/hasNext()|",
+      "|java+method:///com/hp/hpl/jena/tdb/base/recordbuffer/RecordBufferPage/getId()|",
+      "|java+method:///com/hp/hpl/jena/tdb/base/recordbuffer/RecordBufferPage/setLink(int)|"
+    ],
+    "affectedLib": "org.apache.jena:jena-arq:2.10.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.jena:jena-tdb:0.10.0",
+    "coordinatesV2": "org.apache.jena:jena-tdb:0.10.1",
+    "caller": "|java+method:///com/hp/hpl/jena/tdb/store/GraphNamedTDB/countThis()|",
+    "called": "|java+method:///org/apache/jena/atlas/iterator/Iter/distinct(java.util.Iterator)|",
+    "v1Body": [
+      "|java+method:///com/hp/hpl/jena/tdb/store/DatasetGraphTDB/getQuadTable()|",
+      "|java+method:///com/hp/hpl/jena/sparql/core/Quad/isUnionGraph(com.hp.hpl.jena.graph.Node)|",
+      "|java+method:///org/apache/jena/atlas/iterator/Iter/distinct(java.util.Iterator)|",
+      "|java+method:///org/apache/jena/atlas/iterator/Iter/nullIterator()|",
+      "|java+method:///com/hp/hpl/jena/tdb/nodetable/NodeTupleTable/find(com.hp.hpl.jena.tdb.store.NodeId%5B%5D)|",
+      "|java+method:///org/apache/jena/atlas/iterator/Iter/map(java.util.Iterator,org.apache.jena.atlas.iterator.Transform)|",
+      "|java+method:///com/hp/hpl/jena/tdb/store/GraphNamedTDB/getGraphNodeId()|",
+      "|java+method:///com/hp/hpl/jena/tdb/store/NodeId/isDoesNotExist(com.hp.hpl.jena.tdb.store.NodeId)|",
+      "|java+method:///com/hp/hpl/jena/tdb/store/QuadTable/getNodeTupleTable()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/hp/hpl/jena/tdb/store/GraphNamedTDB/isDefaultGraph()|",
+      "|java+method:///com/hp/hpl/jena/tdb/store/DatasetGraphTDB/getQuadTable()|",
+      "|java+method:///com/hp/hpl/jena/sparql/core/Quad/isUnionGraph(com.hp.hpl.jena.graph.Node)|",
+      "|java+method:///org/apache/jena/atlas/iterator/Iter/distinct(java.util.Iterator)|",
+      "|java+method:///com/hp/hpl/jena/tdb/store/DatasetGraphTDB/getTripleTable()|",
+      "|java+method:///com/hp/hpl/jena/tdb/store/TripleTable/getNodeTupleTable()|",
+      "|java+method:///org/apache/jena/atlas/iterator/Iter/nullIterator()|",
+      "|java+method:///com/hp/hpl/jena/tdb/nodetable/NodeTupleTable/findAll()|",
+      "|java+method:///com/hp/hpl/jena/tdb/nodetable/NodeTupleTable/find(com.hp.hpl.jena.tdb.store.NodeId%5B%5D)|",
+      "|java+method:///org/apache/jena/atlas/iterator/Iter/map(java.util.Iterator,org.apache.jena.atlas.iterator.Transform)|",
+      "|java+method:///com/hp/hpl/jena/tdb/store/GraphNamedTDB/getGraphNodeId()|",
+      "|java+method:///com/hp/hpl/jena/tdb/store/NodeId/isDoesNotExist(com.hp.hpl.jena.tdb.store.NodeId)|",
+      "|java+method:///com/hp/hpl/jena/tdb/store/QuadTable/getNodeTupleTable()|"
+    ],
+    "affectedLib": "org.apache.jena:jena-arq:2.10.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.jena:jena-tdb:0.10.0",
+    "coordinatesV2": "org.apache.jena:jena-tdb:0.10.1",
+    "caller": "|java+method:///com/hp/hpl/jena/tdb/store/bulkloader2/CmdNodeTableBuilder/exec()|",
+    "called": "|java+method:///org/apache/jena/riot/RiotReader/parse(java.lang.String,org.apache.jena.riot.system.StreamRDF)|",
+    "v1Body": [
+      "|java+method:///com/hp/hpl/jena/tdb/index/TupleTable/close()|",
+      "|java+method:///com/hp/hpl/jena/tdb/store/bulkloader2/ProgressLogger/getTicks()|",
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///com/hp/hpl/jena/tdb/store/QuadTable/getNodeTupleTable()|",
+      "|java+method:///org/apache/jena/atlas/io/IO/close(java.io.Closeable)|",
+      "|java+method:///com/hp/hpl/jena/tdb/store/DatasetGraphTDB/getTripleTable()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///com/hp/hpl/jena/tdb/base/file/Location/isMem()|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///com/hp/hpl/jena/tdb/store/bulkloader2/CmdNodeTableBuilder$NodeTableBuilder/finishBulk()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///com/hp/hpl/jena/tdb/store/DatasetPrefixesTDB/close()|",
+      "|java+constructor:///org/apache/jena/atlas/AtlasException/AtlasException(java.lang.Throwable)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///com/hp/hpl/jena/tdb/store/DatasetGraphTDB/getQuadTable()|",
+      "|java+method:///com/hp/hpl/jena/tdb/solver/stats/Stats/write(com.hp.hpl.jena.tdb.store.DatasetGraphTDB,com.hp.hpl.jena.tdb.solver.stats.StatsCollectorNodeId)|",
+      "|java+constructor:///com/hp/hpl/jena/tdb/store/bulkloader2/ProgressLogger/ProgressLogger(org.slf4j.Logger,java.lang.String,long,int)|",
+      "|java+method:///com/hp/hpl/jena/tdb/nodetable/NodeTupleTable/getTupleTable()|",
+      "|java+method:///com/hp/hpl/jena/tdb/setup/DatasetBuilderStd/build(com.hp.hpl.jena.tdb.base.file.Location)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///java/lang/Float/valueOf(float)|",
+      "|java+method:///com/hp/hpl/jena/tdb/store/bulkloader2/CmdNodeTableBuilder$NodeTableBuilder/getCollector()|",
+      "|java+method:///java/util/List/size()|",
+      "|java+constructor:///com/hp/hpl/jena/tdb/store/bulkloader2/CmdNodeTableBuilder$NodeTableBuilder/CmdNodeTableBuilder$NodeTableBuilder(com.hp.hpl.jena.tdb.store.DatasetGraphTDB,com.hp.hpl.jena.tdb.store.bulkloader2.ProgressLogger,java.io.OutputStream,java.io.OutputStream)|",
+      "|java+constructor:///java/io/FileOutputStream/FileOutputStream(java.lang.String)|",
+      "|java+method:///org/apache/jena/riot/RiotReader/parse(java.lang.String,org.apache.jena.riot.system.StreamRDF)|",
+      "|java+method:///com/hp/hpl/jena/sparql/util/Utils/nowAsString()|",
+      "|java+method:///com/hp/hpl/jena/tdb/store/TripleTable/getNodeTupleTable()|",
+      "|java+method:///com/hp/hpl/jena/tdb/store/bulkloader2/CmdNodeTableBuilder$NodeTableBuilder/startBulk()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///com/hp/hpl/jena/tdb/store/bulkloader2/ProgressLogger/start()|",
+      "|java+method:///com/hp/hpl/jena/tdb/store/bulkloader2/ProgressLogger/finish()|",
+      "|java+method:///com/hp/hpl/jena/tdb/store/DatasetGraphTDB/getPrefixes()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/hp/hpl/jena/tdb/store/bulkloader2/ProgressLogger/getTicks()|",
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///com/hp/hpl/jena/tdb/store/bulkloader2/ProgressLogger/ProgressLogger(org.slf4j.Logger,java.lang.String,long,int)|",
+      "|java+method:///com/hp/hpl/jena/tdb/store/QuadTable/getNodeTupleTable()|",
+      "|java+method:///org/apache/jena/atlas/io/IO/close(java.io.Closeable)|",
+      "|java+method:///com/hp/hpl/jena/tdb/store/DatasetGraphTDB/getTripleTable()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///com/hp/hpl/jena/tdb/solver/stats/Stats/write(java.lang.String,com.hp.hpl.jena.tdb.solver.stats.StatsResults)|",
+      "|java+method:///com/hp/hpl/jena/tdb/base/file/Location/isMem()|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///com/hp/hpl/jena/tdb/store/bulkloader2/CmdNodeTableBuilder$NodeTableBuilder/finishBulk()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///com/hp/hpl/jena/tdb/solver/stats/StatsCollectorNodeId/results()|",
+      "|java+method:///com/hp/hpl/jena/tdb/index/TupleTable/close()|",
+      "|java+method:///com/hp/hpl/jena/tdb/store/DatasetPrefixesTDB/close()|",
+      "|java+method:///com/hp/hpl/jena/tdb/base/file/Location/getPath(java.lang.String)|",
+      "|java+constructor:///org/apache/jena/atlas/AtlasException/AtlasException(java.lang.Throwable)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///com/hp/hpl/jena/tdb/store/DatasetGraphTDB/getQuadTable()|",
+      "|java+method:///com/hp/hpl/jena/tdb/store/DatasetGraphTDB/getLocation()|",
+      "|java+method:///com/hp/hpl/jena/tdb/nodetable/NodeTupleTable/getTupleTable()|",
+      "|java+method:///com/hp/hpl/jena/tdb/setup/DatasetBuilderStd/build(com.hp.hpl.jena.tdb.base.file.Location)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///java/lang/Float/valueOf(float)|",
+      "|java+method:///com/hp/hpl/jena/tdb/store/bulkloader2/CmdNodeTableBuilder$NodeTableBuilder/getCollector()|",
+      "|java+method:///java/util/List/size()|",
+      "|java+constructor:///com/hp/hpl/jena/tdb/store/bulkloader2/CmdNodeTableBuilder$NodeTableBuilder/CmdNodeTableBuilder$NodeTableBuilder(com.hp.hpl.jena.tdb.store.DatasetGraphTDB,com.hp.hpl.jena.tdb.store.bulkloader2.ProgressLogger,java.io.OutputStream,java.io.OutputStream)|",
+      "|java+constructor:///java/io/FileOutputStream/FileOutputStream(java.lang.String)|",
+      "|java+method:///org/apache/jena/riot/RiotReader/parse(java.lang.String,org.apache.jena.riot.system.StreamRDF)|",
+      "|java+method:///com/hp/hpl/jena/sparql/util/Utils/nowAsString()|",
+      "|java+method:///com/hp/hpl/jena/tdb/store/TripleTable/getNodeTupleTable()|",
+      "|java+method:///com/hp/hpl/jena/tdb/store/bulkloader2/CmdNodeTableBuilder$NodeTableBuilder/startBulk()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///com/hp/hpl/jena/tdb/store/bulkloader2/ProgressLogger/start()|",
+      "|java+method:///com/hp/hpl/jena/tdb/store/bulkloader2/ProgressLogger/finish()|",
+      "|java+method:///com/hp/hpl/jena/tdb/store/DatasetGraphTDB/getPrefixes()|"
+    ],
+    "affectedLib": "org.apache.jena:jena-arq:2.10.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.jena:jena-tdb:0.10.0",
+    "coordinatesV2": "org.apache.jena:jena-tdb:0.10.1",
+    "caller": "|java+method:///com/hp/hpl/jena/tdb/transaction/DatasetBuilderTxn/buildWritable()|",
+    "called": "|java+method:///com/hp/hpl/jena/sparql/util/Context/putAll(com.hp.hpl.jena.sparql.util.Context)|",
+    "v1Body": [
+      "|java+method:///com/hp/hpl/jena/tdb/store/DatasetGraphTDB/getReorderTransform()|",
+      "|java+constructor:///com/hp/hpl/jena/tdb/setup/DatasetBuilderStd/DatasetBuilderStd(com.hp.hpl.jena.tdb.setup.BlockMgrBuilder,com.hp.hpl.jena.tdb.setup.NodeTableBuilder)|",
+      "|java+method:///com/hp/hpl/jena/sparql/util/Context/putAll(com.hp.hpl.jena.sparql.util.Context)|",
+      "|java+method:///com/hp/hpl/jena/tdb/store/DatasetGraphTDB/getLocation()|",
+      "|java+method:///com/hp/hpl/jena/tdb/store/DatasetGraphTDB/getContext()|",
+      "|java+constructor:///com/hp/hpl/jena/tdb/transaction/DatasetBuilderTxn$NodeTableBuilderTx/DatasetBuilderTxn$NodeTableBuilderTx(com.hp.hpl.jena.tdb.transaction.DatasetBuilderTxn)|",
+      "|java+method:///com/hp/hpl/jena/tdb/setup/DatasetBuilderStd/_build(com.hp.hpl.jena.tdb.base.file.Location,com.hp.hpl.jena.tdb.setup.SystemParams,com.hp.hpl.jena.sparql.engine.optimizer.reorder.ReorderTransformation)|",
+      "|java+method:///com/hp/hpl/jena/tdb/store/DatasetGraphTDB/getConfig()|",
+      "|java+constructor:///com/hp/hpl/jena/tdb/transaction/DatasetBuilderTxn$BlockMgrBuilderTx/DatasetBuilderTxn$BlockMgrBuilderTx(com.hp.hpl.jena.tdb.transaction.DatasetBuilderTxn)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/hp/hpl/jena/tdb/store/DatasetGraphTDB/getReorderTransform()|",
+      "|java+constructor:///com/hp/hpl/jena/tdb/setup/DatasetBuilderStd/DatasetBuilderStd(com.hp.hpl.jena.tdb.setup.BlockMgrBuilder,com.hp.hpl.jena.tdb.setup.NodeTableBuilder)|",
+      "|java+method:///com/hp/hpl/jena/sparql/util/Context/putAll(com.hp.hpl.jena.sparql.util.Context)|",
+      "|java+method:///com/hp/hpl/jena/tdb/store/DatasetGraphTDB/getLocation()|",
+      "|java+method:///com/hp/hpl/jena/tdb/store/DatasetGraphTDB/getContext()|",
+      "|java+constructor:///com/hp/hpl/jena/tdb/transaction/DatasetBuilderTxn$NodeTableBuilderTx/DatasetBuilderTxn$NodeTableBuilderTx(com.hp.hpl.jena.tdb.transaction.DatasetBuilderTxn)|",
+      "|java+method:///com/hp/hpl/jena/tdb/setup/DatasetBuilderStd/_build(com.hp.hpl.jena.tdb.base.file.Location,com.hp.hpl.jena.tdb.setup.SystemParams,boolean,com.hp.hpl.jena.sparql.engine.optimizer.reorder.ReorderTransformation)|",
+      "|java+method:///com/hp/hpl/jena/tdb/store/DatasetGraphTDB/getConfig()|",
+      "|java+constructor:///com/hp/hpl/jena/tdb/transaction/DatasetBuilderTxn$BlockMgrBuilderTx/DatasetBuilderTxn$BlockMgrBuilderTx(com.hp.hpl.jena.tdb.transaction.DatasetBuilderTxn)|"
+    ],
+    "affectedLib": "org.apache.jena:jena-arq:2.10.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.jena:jena-tdb:0.10.0",
+    "coordinatesV2": "org.apache.jena:jena-tdb:0.10.1",
+    "caller": "|java+method:///com/hp/hpl/jena/tdb/solver/stats/StatsCollectorBase/record(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)|",
+    "called": "|java+method:///org/apache/jena/atlas/lib/MapUtils/increment(java.util.Map,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/apache/jena/atlas/lib/MapUtils/increment(java.util.Map,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Object/equals(java.lang.Object)|",
+      "|java+method:///org/apache/jena/atlas/lib/MapUtils/increment(java.util.Map,java.lang.Object)|"
+    ],
+    "affectedLib": "org.apache.jena:jena-arq:2.10.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.jena:jena-tdb:0.10.0",
+    "coordinatesV2": "org.apache.jena:jena-tdb:0.10.1",
+    "caller": "|java+method:///com/hp/hpl/jena/tdb/store/DatasetPrefixesTDB/readPrefix(java.lang.String,java.lang.String)|",
+    "called": "|java+method:///org/apache/jena/atlas/iterator/Iter/close(java.util.Iterator)|",
+    "v1Body": [
+      "|java+method:///org/apache/jena/atlas/lib/Tuple/get(int)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///com/hp/hpl/jena/graph/Node/createURI(java.lang.String)|",
+      "|java+method:///com/hp/hpl/jena/graph/Node/createLiteral(java.lang.String)|",
+      "|java+method:///com/hp/hpl/jena/tdb/nodetable/NodeTupleTable/find(com.hp.hpl.jena.graph.Node%5B%5D)|",
+      "|java+method:///com/hp/hpl/jena/graph/Node/getURI()|",
+      "|java+method:///org/apache/jena/atlas/iterator/Iter/close(java.util.Iterator)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/hp/hpl/jena/graph/NodeFactory/createURI(java.lang.String)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///com/hp/hpl/jena/tdb/nodetable/NodeTupleTable/find(com.hp.hpl.jena.graph.Node%5B%5D)|",
+      "|java+method:///com/hp/hpl/jena/graph/Node/getURI()|",
+      "|java+method:///org/apache/jena/atlas/iterator/Iter/close(java.util.Iterator)|",
+      "|java+method:///com/hp/hpl/jena/graph/NodeFactory/createLiteral(java.lang.String)|",
+      "|java+method:///org/apache/jena/atlas/lib/Tuple/get(int)|"
+    ],
+    "affectedLib": "org.apache.jena:jena-arq:2.10.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.jena:jena-tdb:0.10.0",
+    "coordinatesV2": "org.apache.jena:jena-tdb:0.10.1",
+    "caller": "|java+method:///com/hp/hpl/jena/tdb/nodetable/NodecLib/encode(com.hp.hpl.jena.graph.Node,com.hp.hpl.jena.shared.PrefixMapping)|",
+    "called": "|java+method:///org/apache/jena/atlas/lib/StrUtils/encodeHex(java.lang.String,char,char%5B%5D)|",
+    "v1Body": [
+      "|java+method:///com/hp/hpl/jena/graph/Node/getURI()|",
+      "|java+method:///org/apache/jena/atlas/lib/StrUtils/encodeHex(java.lang.String,char,char%5B%5D)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///com/hp/hpl/jena/tdb/lib/NodeFmtLib/serialize(com.hp.hpl.jena.graph.Node)|",
+      "|java+method:///com/hp/hpl/jena/graph/Node/isURI()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///com/hp/hpl/jena/graph/Node/isBlank()|",
+      "|java+method:///com/hp/hpl/jena/graph/Node/createURI(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///com/hp/hpl/jena/graph/Node/getBlankNodeLabel()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/hp/hpl/jena/graph/Node/getURI()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///com/hp/hpl/jena/tdb/lib/NodeFmtLib/serialize(com.hp.hpl.jena.graph.Node)|",
+      "|java+method:///com/hp/hpl/jena/graph/Node/isURI()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///com/hp/hpl/jena/graph/Node/isBlank()|",
+      "|java+method:///com/hp/hpl/jena/graph/NodeFactory/createURI(java.lang.String)|",
+      "|java+method:///org/apache/jena/atlas/lib/StrUtils/encodeHex(java.lang.String,char,char%5B%5D)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///com/hp/hpl/jena/graph/Node/getBlankNodeLabel()|"
+    ],
+    "affectedLib": "org.apache.jena:jena-arq:2.10.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.jena:jena-tdb:0.10.0",
+    "coordinatesV2": "org.apache.jena:jena-tdb:0.10.1",
+    "caller": "|java+method:///com/hp/hpl/jena/tdb/store/DatasetPrefixesTDB/readPrefixMap(java.lang.String)|",
+    "called": "|java+method:///org/apache/jena/atlas/iterator/Iter/close(java.util.Iterator)|",
+    "v1Body": [
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/apache/jena/atlas/lib/Tuple/get(int)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///com/hp/hpl/jena/graph/Node/createURI(java.lang.String)|",
+      "|java+method:///com/hp/hpl/jena/graph/Node/getLiteralLexicalForm()|",
+      "|java+method:///com/hp/hpl/jena/tdb/nodetable/NodeTupleTable/find(com.hp.hpl.jena.graph.Node%5B%5D)|",
+      "|java+method:///com/hp/hpl/jena/graph/Node/getURI()|",
+      "|java+method:///org/apache/jena/atlas/iterator/Iter/close(java.util.Iterator)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+constructor:///java/util/HashMap/HashMap()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/jena/atlas/lib/Tuple/get(int)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///com/hp/hpl/jena/graph/Node/getLiteralLexicalForm()|",
+      "|java+method:///com/hp/hpl/jena/tdb/nodetable/NodeTupleTable/find(com.hp.hpl.jena.graph.Node%5B%5D)|",
+      "|java+method:///com/hp/hpl/jena/graph/Node/getURI()|",
+      "|java+method:///org/apache/jena/atlas/iterator/Iter/close(java.util.Iterator)|",
+      "|java+method:///com/hp/hpl/jena/graph/NodeFactory/createURI(java.lang.String)|",
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+constructor:///java/util/HashMap/HashMap()|"
+    ],
+    "affectedLib": "org.apache.jena:jena-arq:2.10.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.jena:jena-tdb:0.10.0",
+    "coordinatesV2": "org.apache.jena:jena-tdb:0.10.1",
+    "caller": "|java+initializer:///com/hp/hpl/jena/tdb/store/bulkloader2/CmdNodeTableBuilder/CmdNodeTableBuilder$initializer|",
+    "called": "|java+method:///org/apache/jena/atlas/logging/Log/setLog4j()|",
+    "v1Body": [
+      "|java+constructor:///arq/cmdline/ArgDecl/ArgDecl(boolean,java.lang.String,java.lang.String)|",
+      "|java+constructor:///arq/cmdline/ArgDecl/ArgDecl(boolean,java.lang.String)|",
+      "|java+method:///org/apache/jena/atlas/logging/Log/setLog4j()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///arq/cmdline/ArgDecl/ArgDecl(boolean,java.lang.String,java.lang.String%5B%5D)|",
+      "|java+method:///org/apache/jena/atlas/logging/Log/setLog4j()|"
+    ],
+    "affectedLib": "org.apache.jena:jena-arq:2.10.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.jena:jena-tdb:0.10.0",
+    "coordinatesV2": "org.apache.jena:jena-tdb:0.10.1",
+    "caller": "|java+constructor:///tdb/cmdline/ModTDBDataset/ModTDBDataset()|",
+    "called": "|java+constructor:///arq/cmdline/ModDataset/ModDataset()|",
+    "v1Body": [
+      "|java+constructor:///arq/cmdline/ModDataset/ModDataset()|",
+      "|java+constructor:///arq/cmdline/ArgDecl/ArgDecl(boolean,java.lang.String,java.lang.String)|",
+      "|java+constructor:///tdb/cmdline/ModTDBAssembler/ModTDBAssembler()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///arq/cmdline/ModDataset/ModDataset()|",
+      "|java+constructor:///arq/cmdline/ArgDecl/ArgDecl(boolean,java.lang.String,java.lang.String%5B%5D)|",
+      "|java+constructor:///tdb/cmdline/ModTDBAssembler/ModTDBAssembler()|"
+    ],
+    "affectedLib": "org.apache.jena:jena-arq:2.10.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.jena:jena-tdb:0.10.0",
+    "coordinatesV2": "org.apache.jena:jena-tdb:0.10.1",
+    "caller": "|java+constructor:///tdb/cmdline/ModLocation/ModLocation()|",
+    "called": "|java+constructor:///arq/cmdline/ArgDecl/ArgDecl(boolean,java.lang.String,java.lang.String%5B%5D)|",
+    "v1Body": [
+      "|java+constructor:///arq/cmdline/ArgDecl/ArgDecl(boolean,java.lang.String,java.lang.String)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///arq/cmdline/ArgDecl/ArgDecl(boolean,java.lang.String,java.lang.String%5B%5D)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "org.apache.jena:jena-arq:2.10.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.jena:jena-tdb:0.10.0",
+    "coordinatesV2": "org.apache.jena:jena-tdb:0.10.1",
+    "caller": "|java+method:///tdb/tdbconfig$SubHelp/exec()|",
+    "called": "|java+method:///org/apache/jena/atlas/io/IndentedWriter/flush()|",
+    "v1Body": [
+      "|java+method:///org/apache/jena/atlas/io/IndentedWriter/println(java.lang.Object)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/apache/jena/atlas/io/IndentedWriter/flush()|",
+      "|java+method:///tdb/tdbconfig/access$000(tdb.tdbconfig)|",
+      "|java+method:///org/apache/jena/atlas/io/IndentedWriter/incIndent()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/apache/jena/atlas/io/IndentedWriter/decIndent()|",
+      "|java+method:///java/util/Collection/iterator()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/apache/jena/atlas/io/IndentedWriter/flush()|",
+      "|java+method:///tdb/tdbconfig/access$000(tdb.tdbconfig)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/apache/jena/atlas/io/IndentedWriter/decIndent()|",
+      "|java+method:///java/util/Collection/iterator()|",
+      "|java+method:///org/apache/jena/atlas/io/IndentedWriter/println(java.lang.String)|",
+      "|java+method:///org/apache/jena/atlas/io/IndentedWriter/incIndent()|"
+    ],
+    "affectedLib": "org.apache.jena:jena-arq:2.10.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.jena:jena-tdb:0.10.0",
+    "coordinatesV2": "org.apache.jena:jena-tdb:0.10.1",
+    "caller": "|java+initializer:///com/hp/hpl/jena/tdb/solver/stats/Stats/Stats$initializer|",
+    "called": "|java+method:///com/hp/hpl/jena/sparql/util/NodeFactoryExtra/intToNode(int)|",
+    "v1Body": [
+      "|java+method:///com/hp/hpl/jena/sparql/sse/Item/createNode(com.hp.hpl.jena.graph.Node)|",
+      "|java+method:///com/hp/hpl/jena/sparql/util/NodeFactory/intToNode(int)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/hp/hpl/jena/sparql/sse/Item/createNode(com.hp.hpl.jena.graph.Node)|",
+      "|java+method:///com/hp/hpl/jena/sparql/util/NodeFactoryExtra/intToNode(int)|"
+    ],
+    "affectedLib": "org.apache.jena:jena-arq:2.10.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.jena:jena-tdb:0.10.0",
+    "coordinatesV2": "org.apache.jena:jena-tdb:0.10.1",
+    "caller": "|java+method:///com/hp/hpl/jena/tdb/nodetable/NodecLib/decode(java.lang.String,com.hp.hpl.jena.shared.PrefixMapping)|",
+    "called": "|java+method:///org/apache/jena/atlas/logging/Log/fatal(java.lang.Class,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/jena/atlas/logging/Log/fatal(java.lang.Class,java.lang.String)|",
+      "|java+method:///java/lang/String/length()|",
+      "|java+constructor:///com/hp/hpl/jena/rdf/model/AnonId/AnonId(java.lang.String)|",
+      "|java+method:///com/hp/hpl/jena/graph/Node/createAnon(com.hp.hpl.jena.rdf.model.AnonId)|",
+      "|java+method:///java/lang/String/substring(int,int)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///com/hp/hpl/jena/sparql/sse/SSE/parseNode(java.lang.String,com.hp.hpl.jena.shared.PrefixMapping)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/String/substring(int)|",
+      "|java+method:///com/hp/hpl/jena/graph/Node/createURI(java.lang.String)|",
+      "|java+method:///org/apache/jena/atlas/lib/StrUtils/decodeHex(java.lang.String,char)|",
+      "|java+method:///java/lang/String/startsWith(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/hp/hpl/jena/graph/NodeFactory/createURI(java.lang.String)|",
+      "|java+method:///com/hp/hpl/jena/graph/NodeFactory/createAnon(com.hp.hpl.jena.rdf.model.AnonId)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/jena/atlas/logging/Log/fatal(java.lang.Class,java.lang.String)|",
+      "|java+method:///java/lang/String/length()|",
+      "|java+constructor:///com/hp/hpl/jena/rdf/model/AnonId/AnonId(java.lang.String)|",
+      "|java+method:///java/lang/String/substring(int,int)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/String/substring(int)|",
+      "|java+method:///com/hp/hpl/jena/sparql/sse/SSE/parseNode(java.lang.String,com.hp.hpl.jena.shared.PrefixMapping)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/apache/jena/atlas/lib/StrUtils/decodeHex(java.lang.String,char)|",
+      "|java+method:///java/lang/String/startsWith(java.lang.String)|"
+    ],
+    "affectedLib": "org.apache.jena:jena-arq:2.10.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.jena:jena-tdb:0.10.0",
+    "coordinatesV2": "org.apache.jena:jena-tdb:0.10.1",
+    "caller": "|java+method:///com/hp/hpl/jena/tdb/store/NodeId/extract(com.hp.hpl.jena.tdb.store.NodeId)|",
+    "called": "|java+method:///org/apache/jena/atlas/lib/BitsLong/clear(long,int,int)|",
+    "v1Body": [
+      "|java+method:///com/hp/hpl/jena/tdb/store/NodeId/type()|",
+      "|java+method:///com/hp/hpl/jena/tdb/store/IntegerNode/unpack(long)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/Long/toString(long)|",
+      "|java+method:///com/hp/hpl/jena/graph/Node/createLiteral(java.lang.String,java.lang.String,com.hp.hpl.jena.datatypes.RDFDatatype)|",
+      "|java+constructor:///com/hp/hpl/jena/tdb/TDBException/TDBException(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+method:///com/hp/hpl/jena/tdb/store/DateTimeNode/unpackDate(long)|",
+      "|java+method:///org/apache/jena/atlas/lib/BitsLong/clear(long,int,int)|",
+      "|java+method:///java/lang/StringBuilder/append(long)|",
+      "|java+method:///com/hp/hpl/jena/tdb/store/DateTimeNode/unpackDateTime(long)|",
+      "|java+method:///com/hp/hpl/jena/tdb/store/DecimalNode/unpackAsBigDecimal(long)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/math/BigDecimal/toEngineeringString()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/hp/hpl/jena/tdb/store/IntegerNode/unpack(long)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/Long/toString(long)|",
+      "|java+constructor:///com/hp/hpl/jena/tdb/TDBException/TDBException(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///com/hp/hpl/jena/graph/NodeFactory/createLiteral(java.lang.String,java.lang.String,com.hp.hpl.jena.datatypes.RDFDatatype)|",
+      "|java+method:///com/hp/hpl/jena/tdb/store/NodeId/type()|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+method:///com/hp/hpl/jena/tdb/store/DateTimeNode/unpackDate(long)|",
+      "|java+method:///org/apache/jena/atlas/lib/BitsLong/clear(long,int,int)|",
+      "|java+method:///java/lang/StringBuilder/append(long)|",
+      "|java+method:///com/hp/hpl/jena/tdb/store/DateTimeNode/unpackDateTime(long)|",
+      "|java+method:///com/hp/hpl/jena/tdb/store/DecimalNode/unpackAsBigDecimal(long)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/math/BigDecimal/toEngineeringString()|"
+    ],
+    "affectedLib": "org.apache.jena:jena-arq:2.10.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.jena:jena-tdb:0.10.0",
+    "coordinatesV2": "org.apache.jena:jena-tdb:0.10.1",
+    "caller": "|java+method:///com/hp/hpl/jena/tdb/store/DatasetPrefixesTDB/removeFromPrefixMap(java.lang.String,java.lang.String)|",
+    "called": "|java+method:///org/apache/jena/atlas/iterator/Iter/toList(java.util.Iterator)|",
+    "v1Body": [
+      "|java+method:///org/apache/jena/atlas/iterator/Iter/close(java.util.Iterator)|",
+      "|java+method:///org/apache/jena/atlas/lib/Tuple/get(int)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/apache/jena/atlas/iterator/Iter/toList(java.util.Iterator)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///com/hp/hpl/jena/graph/Node/createURI(java.lang.String)|",
+      "|java+method:///com/hp/hpl/jena/graph/Node/createLiteral(java.lang.String)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///com/hp/hpl/jena/tdb/nodetable/NodeTupleTable/find(com.hp.hpl.jena.graph.Node%5B%5D)|",
+      "|java+method:///com/hp/hpl/jena/tdb/nodetable/NodeTupleTable/deleteRow(com.hp.hpl.jena.graph.Node%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/jena/atlas/iterator/Iter/close(java.util.Iterator)|",
+      "|java+method:///com/hp/hpl/jena/graph/NodeFactory/createURI(java.lang.String)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/apache/jena/atlas/iterator/Iter/toList(java.util.Iterator)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///com/hp/hpl/jena/graph/NodeFactory/createLiteral(java.lang.String)|",
+      "|java+method:///org/apache/jena/atlas/lib/Tuple/get(int)|",
+      "|java+method:///com/hp/hpl/jena/tdb/nodetable/NodeTupleTable/find(com.hp.hpl.jena.graph.Node%5B%5D)|",
+      "|java+method:///com/hp/hpl/jena/tdb/nodetable/NodeTupleTable/deleteRow(com.hp.hpl.jena.graph.Node%5B%5D)|"
+    ],
+    "affectedLib": "org.apache.jena:jena-arq:2.10.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.jena:jena-tdb:0.10.0",
+    "coordinatesV2": "org.apache.jena:jena-tdb:0.10.1",
+    "caller": "|java+method:///tdb/tdbdump/exec()|",
+    "called": "|java+method:///org/apache/jena/riot/RDFDataMgr/write(java.io.OutputStream,com.hp.hpl.jena.sparql.core.DatasetGraph,org.apache.jena.riot.Lang)|",
+    "v1Body": [
+      "|java+method:///org/apache/jena/riot/RiotWriter/writeNQuads(java.io.OutputStream,com.hp.hpl.jena.sparql.core.DatasetGraph)|",
+      "|java+method:///tdb/cmdline/CmdTDB/getDatasetGraphTDB()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/jena/riot/RDFDataMgr/write(java.io.OutputStream,com.hp.hpl.jena.sparql.core.DatasetGraph,org.apache.jena.riot.Lang)|",
+      "|java+method:///tdb/cmdline/CmdTDB/getDatasetGraphTDB()|"
+    ],
+    "affectedLib": "org.apache.jena:jena-arq:2.10.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.jena:jena-tdb:0.10.0",
+    "coordinatesV2": "org.apache.jena:jena-tdb:0.10.1",
+    "caller": "|java+initializer:///com/hp/hpl/jena/tdb/solver/SolverLib/SolverLib$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+constructor:///com/hp/hpl/jena/tdb/solver/SolverLib$1/SolverLib$1()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+constructor:///com/hp/hpl/jena/tdb/solver/SolverLib$1/SolverLib$1()|",
+      "|java+constructor:///com/hp/hpl/jena/tdb/solver/SolverLib$5/SolverLib$5()|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.6.4",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.jena:jena-tdb:0.10.0",
+    "coordinatesV2": "org.apache.jena:jena-tdb:0.10.1",
+    "caller": "|java+method:///com/hp/hpl/jena/tdb/store/DatasetPrefixesTDB/readPrefix(java.lang.String,java.lang.String)|",
+    "called": "|java+method:///com/hp/hpl/jena/graph/NodeFactory/createURI(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/apache/jena/atlas/lib/Tuple/get(int)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///com/hp/hpl/jena/graph/Node/createURI(java.lang.String)|",
+      "|java+method:///com/hp/hpl/jena/graph/Node/createLiteral(java.lang.String)|",
+      "|java+method:///com/hp/hpl/jena/tdb/nodetable/NodeTupleTable/find(com.hp.hpl.jena.graph.Node%5B%5D)|",
+      "|java+method:///com/hp/hpl/jena/graph/Node/getURI()|",
+      "|java+method:///org/apache/jena/atlas/iterator/Iter/close(java.util.Iterator)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/hp/hpl/jena/graph/NodeFactory/createURI(java.lang.String)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///com/hp/hpl/jena/tdb/nodetable/NodeTupleTable/find(com.hp.hpl.jena.graph.Node%5B%5D)|",
+      "|java+method:///com/hp/hpl/jena/graph/Node/getURI()|",
+      "|java+method:///org/apache/jena/atlas/iterator/Iter/close(java.util.Iterator)|",
+      "|java+method:///com/hp/hpl/jena/graph/NodeFactory/createLiteral(java.lang.String)|",
+      "|java+method:///org/apache/jena/atlas/lib/Tuple/get(int)|"
+    ],
+    "affectedLib": "org.apache.jena:jena-core:2.10.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.jena:jena-tdb:0.10.0",
+    "coordinatesV2": "org.apache.jena:jena-tdb:0.10.1",
+    "caller": "|java+method:///com/hp/hpl/jena/tdb/nodetable/NodecLib/encode(com.hp.hpl.jena.graph.Node,com.hp.hpl.jena.shared.PrefixMapping)|",
+    "called": "|java+method:///com/hp/hpl/jena/graph/NodeFactory/createURI(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///com/hp/hpl/jena/graph/Node/getURI()|",
+      "|java+method:///org/apache/jena/atlas/lib/StrUtils/encodeHex(java.lang.String,char,char%5B%5D)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///com/hp/hpl/jena/tdb/lib/NodeFmtLib/serialize(com.hp.hpl.jena.graph.Node)|",
+      "|java+method:///com/hp/hpl/jena/graph/Node/isURI()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///com/hp/hpl/jena/graph/Node/isBlank()|",
+      "|java+method:///com/hp/hpl/jena/graph/Node/createURI(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///com/hp/hpl/jena/graph/Node/getBlankNodeLabel()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/hp/hpl/jena/graph/Node/getURI()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///com/hp/hpl/jena/tdb/lib/NodeFmtLib/serialize(com.hp.hpl.jena.graph.Node)|",
+      "|java+method:///com/hp/hpl/jena/graph/Node/isURI()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///com/hp/hpl/jena/graph/Node/isBlank()|",
+      "|java+method:///com/hp/hpl/jena/graph/NodeFactory/createURI(java.lang.String)|",
+      "|java+method:///org/apache/jena/atlas/lib/StrUtils/encodeHex(java.lang.String,char,char%5B%5D)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///com/hp/hpl/jena/graph/Node/getBlankNodeLabel()|"
+    ],
+    "affectedLib": "org.apache.jena:jena-core:2.10.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.jena:jena-tdb:0.10.0",
+    "coordinatesV2": "org.apache.jena:jena-tdb:0.10.1",
+    "caller": "|java+method:///com/hp/hpl/jena/tdb/store/DatasetPrefixesTDB/removeFromPrefixMap(java.lang.String,java.lang.String)|",
+    "called": "|java+method:///com/hp/hpl/jena/graph/NodeFactory/createURI(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/apache/jena/atlas/iterator/Iter/close(java.util.Iterator)|",
+      "|java+method:///org/apache/jena/atlas/lib/Tuple/get(int)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/apache/jena/atlas/iterator/Iter/toList(java.util.Iterator)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///com/hp/hpl/jena/graph/Node/createURI(java.lang.String)|",
+      "|java+method:///com/hp/hpl/jena/graph/Node/createLiteral(java.lang.String)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///com/hp/hpl/jena/tdb/nodetable/NodeTupleTable/find(com.hp.hpl.jena.graph.Node%5B%5D)|",
+      "|java+method:///com/hp/hpl/jena/tdb/nodetable/NodeTupleTable/deleteRow(com.hp.hpl.jena.graph.Node%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/jena/atlas/iterator/Iter/close(java.util.Iterator)|",
+      "|java+method:///com/hp/hpl/jena/graph/NodeFactory/createURI(java.lang.String)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/apache/jena/atlas/iterator/Iter/toList(java.util.Iterator)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///com/hp/hpl/jena/graph/NodeFactory/createLiteral(java.lang.String)|",
+      "|java+method:///org/apache/jena/atlas/lib/Tuple/get(int)|",
+      "|java+method:///com/hp/hpl/jena/tdb/nodetable/NodeTupleTable/find(com.hp.hpl.jena.graph.Node%5B%5D)|",
+      "|java+method:///com/hp/hpl/jena/tdb/nodetable/NodeTupleTable/deleteRow(com.hp.hpl.jena.graph.Node%5B%5D)|"
+    ],
+    "affectedLib": "org.apache.jena:jena-core:2.10.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.jena:jena-tdb:0.10.0",
+    "coordinatesV2": "org.apache.jena:jena-tdb:0.10.1",
+    "caller": "|java+method:///com/hp/hpl/jena/tdb/store/DatasetPrefixesTDB/loadPrefixMapping(java.lang.String,com.hp.hpl.jena.shared.PrefixMapping)|",
+    "called": "|java+method:///com/hp/hpl/jena/graph/Node/getLiteralLexicalForm()|",
+    "v1Body": [
+      "|java+method:///org/apache/jena/atlas/lib/Tuple/get(int)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///com/hp/hpl/jena/shared/PrefixMapping/setNsPrefix(java.lang.String,java.lang.String)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///com/hp/hpl/jena/graph/Node/createURI(java.lang.String)|",
+      "|java+method:///com/hp/hpl/jena/graph/Node/getLiteralLexicalForm()|",
+      "|java+method:///com/hp/hpl/jena/tdb/nodetable/NodeTupleTable/find(com.hp.hpl.jena.graph.Node%5B%5D)|",
+      "|java+method:///com/hp/hpl/jena/graph/Node/getURI()|",
+      "|java+method:///org/apache/jena/atlas/iterator/Iter/close(java.util.Iterator)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/hp/hpl/jena/graph/NodeFactory/createURI(java.lang.String)|",
+      "|java+method:///org/apache/jena/atlas/lib/Tuple/get(int)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///com/hp/hpl/jena/shared/PrefixMapping/setNsPrefix(java.lang.String,java.lang.String)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///com/hp/hpl/jena/graph/Node/getLiteralLexicalForm()|",
+      "|java+method:///com/hp/hpl/jena/tdb/nodetable/NodeTupleTable/find(com.hp.hpl.jena.graph.Node%5B%5D)|",
+      "|java+method:///com/hp/hpl/jena/graph/Node/getURI()|",
+      "|java+method:///org/apache/jena/atlas/iterator/Iter/close(java.util.Iterator)|"
+    ],
+    "affectedLib": "org.apache.jena:jena-core:2.10.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.jena:jena-tdb:0.10.0",
+    "coordinatesV2": "org.apache.jena:jena-tdb:0.10.1",
+    "caller": "|java+method:///com/hp/hpl/jena/tdb/store/DatasetPrefixesTDB/insertPrefix(java.lang.String,java.lang.String,java.lang.String)|",
+    "called": "|java+method:///com/hp/hpl/jena/graph/NodeFactory/createURI(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///com/hp/hpl/jena/graph/Node/createURI(java.lang.String)|",
+      "|java+method:///com/hp/hpl/jena/graph/Node/createLiteral(java.lang.String)|",
+      "|java+method:///com/hp/hpl/jena/tdb/nodetable/NodeTupleTable/addRow(com.hp.hpl.jena.graph.Node%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/hp/hpl/jena/graph/NodeFactory/createURI(java.lang.String)|",
+      "|java+method:///com/hp/hpl/jena/graph/NodeFactory/createLiteral(java.lang.String)|",
+      "|java+method:///com/hp/hpl/jena/tdb/nodetable/NodeTupleTable/addRow(com.hp.hpl.jena.graph.Node%5B%5D)|"
+    ],
+    "affectedLib": "org.apache.jena:jena-core:2.10.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.jena:jena-tdb:0.10.0",
+    "coordinatesV2": "org.apache.jena:jena-tdb:0.10.1",
+    "caller": "|java+method:///com/hp/hpl/jena/tdb/store/GraphNamedTDB/createPrefixMapping()|",
+    "called": "|java+method:///com/hp/hpl/jena/graph/Node/getURI()|",
+    "v1Body": [
+      "|java+method:///com/hp/hpl/jena/graph/Node/getURI()|",
+      "|java+method:///com/hp/hpl/jena/tdb/store/DatasetPrefixesTDB/getPrefixMapping(java.lang.String)|",
+      "|java+method:///com/hp/hpl/jena/tdb/store/DatasetGraphTDB/getPrefixes()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/hp/hpl/jena/tdb/store/DatasetPrefixesTDB/getPrefixMapping(java.lang.String)|",
+      "|java+method:///com/hp/hpl/jena/tdb/store/DatasetPrefixesTDB/getPrefixMapping()|",
+      "|java+method:///com/hp/hpl/jena/tdb/store/DatasetGraphTDB/getPrefixes()|",
+      "|java+method:///com/hp/hpl/jena/tdb/store/GraphNamedTDB/isDefaultGraph()|",
+      "|java+method:///com/hp/hpl/jena/graph/Node/getURI()|"
+    ],
+    "affectedLib": "org.apache.jena:jena-core:2.10.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.jena:jena-tdb:0.10.0",
+    "coordinatesV2": "org.apache.jena:jena-tdb:0.10.1",
+    "caller": "|java+constructor:///com/hp/hpl/jena/tdb/store/GraphNamedTDB/GraphNamedTDB(com.hp.hpl.jena.tdb.store.DatasetGraphTDB,com.hp.hpl.jena.graph.Node)|",
+    "called": "|java+method:///com/hp/hpl/jena/graph/Node/toString()|",
+    "v1Body": [
+      "|java+method:///com/hp/hpl/jena/tdb/store/DatasetGraphTDB/getQuadTable()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///com/hp/hpl/jena/graph/Node/isURI()|",
+      "|java+constructor:///com/hp/hpl/jena/tdb/TDBException/TDBException(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///com/hp/hpl/jena/tdb/store/GraphTDBBase/GraphTDBBase(com.hp.hpl.jena.tdb.store.DatasetGraphTDB,com.hp.hpl.jena.graph.Node)|",
+      "|java+method:///com/hp/hpl/jena/graph/Node/toString()|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///com/hp/hpl/jena/graph/Node/isURI()|",
+      "|java+constructor:///com/hp/hpl/jena/tdb/TDBException/TDBException(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///com/hp/hpl/jena/tdb/store/GraphTDBBase/GraphTDBBase(com.hp.hpl.jena.tdb.store.DatasetGraphTDB,com.hp.hpl.jena.graph.Node)|",
+      "|java+method:///com/hp/hpl/jena/graph/Node/toString()|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "affectedLib": "org.apache.jena:jena-core:2.10.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.jena:jena-tdb:0.10.0",
+    "coordinatesV2": "org.apache.jena:jena-tdb:0.10.1",
+    "caller": "|java+method:///com/hp/hpl/jena/tdb/nodetable/NodecSSE/encode(com.hp.hpl.jena.graph.Node,java.nio.ByteBuffer,com.hp.hpl.jena.shared.PrefixMapping)|",
+    "called": "|java+method:///com/hp/hpl/jena/graph/NodeFactory/createURI(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///com/hp/hpl/jena/graph/Node/getURI()|",
+      "|java+method:///org/apache/jena/atlas/lib/StrUtils/encodeHex(java.lang.String,char,char%5B%5D)|",
+      "|java+method:///java/nio/ByteBuffer/flip()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///com/hp/hpl/jena/tdb/lib/NodeFmtLib/serialize(com.hp.hpl.jena.graph.Node)|",
+      "|java+method:///com/hp/hpl/jena/graph/Node/isURI()|",
+      "|java+method:///com/hp/hpl/jena/graph/Node/isLiteral()|",
+      "|java+constructor:///com/hp/hpl/jena/tdb/TDBException/TDBException(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/apache/jena/atlas/io/BlockUTF8/fromChars(java.lang.CharSequence,java.nio.ByteBuffer)|",
+      "|java+method:///com/hp/hpl/jena/graph/Node/createURI(java.lang.String)|",
+      "|java+method:///org/apache/jena/riot/web/LangTag/check(java.lang.String)|",
+      "|java+method:///java/nio/ByteBuffer/limit()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///com/hp/hpl/jena/graph/Node/getLiteralLanguage()|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/hp/hpl/jena/graph/Node/getURI()|",
+      "|java+method:///java/nio/ByteBuffer/flip()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///com/hp/hpl/jena/tdb/lib/NodeFmtLib/serialize(com.hp.hpl.jena.graph.Node)|",
+      "|java+method:///com/hp/hpl/jena/graph/Node/isURI()|",
+      "|java+method:///com/hp/hpl/jena/graph/Node/isLiteral()|",
+      "|java+constructor:///com/hp/hpl/jena/tdb/TDBException/TDBException(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/apache/jena/atlas/io/BlockUTF8/fromChars(java.lang.CharSequence,java.nio.ByteBuffer)|",
+      "|java+method:///org/apache/jena/riot/web/LangTag/check(java.lang.String)|",
+      "|java+method:///java/nio/ByteBuffer/limit()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///com/hp/hpl/jena/graph/Node/getLiteralLanguage()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///com/hp/hpl/jena/graph/NodeFactory/createURI(java.lang.String)|",
+      "|java+method:///org/apache/jena/atlas/lib/StrUtils/encodeHex(java.lang.String,char,char%5B%5D)|"
+    ],
+    "affectedLib": "org.apache.jena:jena-core:2.10.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.jena:jena-tdb:0.10.0",
+    "coordinatesV2": "org.apache.jena:jena-tdb:0.10.1",
+    "caller": "|java+method:///com/hp/hpl/jena/tdb/TDBFactory/createNamedGraph(java.lang.String,java.lang.String)|",
+    "called": "|java+method:///com/hp/hpl/jena/graph/NodeFactory/createURI(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///com/hp/hpl/jena/tdb/TDBFactory/createDatasetGraph(java.lang.String)|",
+      "|java+method:///com/hp/hpl/jena/sparql/core/DatasetGraph/getGraph(com.hp.hpl.jena.graph.Node)|",
+      "|java+method:///com/hp/hpl/jena/graph/Node/createURI(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/hp/hpl/jena/graph/NodeFactory/createURI(java.lang.String)|",
+      "|java+method:///com/hp/hpl/jena/tdb/TDBFactory/createDatasetGraph(java.lang.String)|",
+      "|java+method:///com/hp/hpl/jena/sparql/core/DatasetGraph/getGraph(com.hp.hpl.jena.graph.Node)|"
+    ],
+    "affectedLib": "org.apache.jena:jena-core:2.10.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.jena:jena-tdb:0.10.0",
+    "coordinatesV2": "org.apache.jena:jena-tdb:0.10.1",
+    "caller": "|java+method:///com/hp/hpl/jena/tdb/store/DatasetPrefixesTDB/readByURI(java.lang.String,java.lang.String)|",
+    "called": "|java+method:///com/hp/hpl/jena/graph/Node/getLiteralLexicalForm()|",
+    "v1Body": [
+      "|java+method:///org/apache/jena/atlas/iterator/Iter/close(java.util.Iterator)|",
+      "|java+method:///org/apache/jena/atlas/lib/Tuple/get(int)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///com/hp/hpl/jena/graph/Node/createURI(java.lang.String)|",
+      "|java+method:///com/hp/hpl/jena/graph/Node/getLiteralLexicalForm()|",
+      "|java+method:///com/hp/hpl/jena/tdb/nodetable/NodeTupleTable/find(com.hp.hpl.jena.graph.Node%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/jena/atlas/iterator/Iter/close(java.util.Iterator)|",
+      "|java+method:///com/hp/hpl/jena/graph/NodeFactory/createURI(java.lang.String)|",
+      "|java+method:///org/apache/jena/atlas/lib/Tuple/get(int)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///com/hp/hpl/jena/graph/Node/getLiteralLexicalForm()|",
+      "|java+method:///com/hp/hpl/jena/tdb/nodetable/NodeTupleTable/find(com.hp.hpl.jena.graph.Node%5B%5D)|"
+    ],
+    "affectedLib": "org.apache.jena:jena-core:2.10.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.jena:jena-tdb:0.10.0",
+    "coordinatesV2": "org.apache.jena:jena-tdb:0.10.1",
+    "caller": "|java+method:///com/hp/hpl/jena/tdb/store/NodeId/inline(com.hp.hpl.jena.graph.Node)|",
+    "called": "|java+method:///com/hp/hpl/jena/graph/Node/getLiteralDatatype()|",
+    "v1Body": [
+      "|java+method:///com/hp/hpl/jena/graph/impl/LiteralLabel/getLexicalForm()|",
+      "|java+method:///java/lang/String/length()|",
+      "|java+method:///com/hp/hpl/jena/tdb/store/NodeId/setType(long,int)|",
+      "|java+method:///com/hp/hpl/jena/graph/Node/isLiteral()|",
+      "|java+constructor:///java/math/BigDecimal/BigDecimal(java.lang.String)|",
+      "|java+method:///com/hp/hpl/jena/tdb/store/DecimalNode/pack()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/lang/Boolean/booleanValue()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/Object/equals(java.lang.Object)|",
+      "|java+method:///com/hp/hpl/jena/graph/Node/getLiteral()|",
+      "|java+method:///com/hp/hpl/jena/tdb/store/DateTimeNode/packDate(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/String/trim()|",
+      "|java+method:///com/hp/hpl/jena/graph/Node/getLiteralDatatype()|",
+      "|java+constructor:///com/hp/hpl/jena/tdb/store/NodeId/NodeId(long)|",
+      "|java+method:///com/hp/hpl/jena/tdb/store/IntegerNode/pack(long)|",
+      "|java+method:///com/hp/hpl/jena/graph/impl/LiteralLabel/getValue()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///com/hp/hpl/jena/datatypes/xsd/XSDDatatype/isValidLiteral(com.hp.hpl.jena.graph.impl.LiteralLabel)|",
+      "|java+method:///com/hp/hpl/jena/tdb/store/DateTimeNode/packDateTime(java.lang.String)|",
+      "|java+method:///com/hp/hpl/jena/tdb/store/DecimalNode/valueOf(java.math.BigDecimal)|",
+      "|java+method:///org/apache/jena/atlas/logging/Log/warn(java.lang.Class,java.lang.String)|",
+      "|java+method:///java/lang/Number/longValue()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/hp/hpl/jena/graph/Node/isLiteral()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///com/hp/hpl/jena/tdb/store/NodeId/inline$(com.hp.hpl.jena.graph.Node)|",
+      "|java+method:///org/apache/jena/atlas/logging/Log/warn(java.lang.Class,java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///com/hp/hpl/jena/graph/Node/getLiteralDatatype()|"
+    ],
+    "affectedLib": "org.apache.jena:jena-core:2.10.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.jena:jena-tdb:0.10.0",
+    "coordinatesV2": "org.apache.jena:jena-tdb:0.10.1",
+    "caller": "|java+method:///com/hp/hpl/jena/tdb/store/DatasetPrefixesTDB/readPrefixMap(java.lang.String)|",
+    "called": "|java+method:///com/hp/hpl/jena/graph/Node/getLiteralLexicalForm()|",
+    "v1Body": [
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/apache/jena/atlas/lib/Tuple/get(int)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///com/hp/hpl/jena/graph/Node/createURI(java.lang.String)|",
+      "|java+method:///com/hp/hpl/jena/graph/Node/getLiteralLexicalForm()|",
+      "|java+method:///com/hp/hpl/jena/tdb/nodetable/NodeTupleTable/find(com.hp.hpl.jena.graph.Node%5B%5D)|",
+      "|java+method:///com/hp/hpl/jena/graph/Node/getURI()|",
+      "|java+method:///org/apache/jena/atlas/iterator/Iter/close(java.util.Iterator)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+constructor:///java/util/HashMap/HashMap()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/jena/atlas/lib/Tuple/get(int)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///com/hp/hpl/jena/graph/Node/getLiteralLexicalForm()|",
+      "|java+method:///com/hp/hpl/jena/tdb/nodetable/NodeTupleTable/find(com.hp.hpl.jena.graph.Node%5B%5D)|",
+      "|java+method:///com/hp/hpl/jena/graph/Node/getURI()|",
+      "|java+method:///org/apache/jena/atlas/iterator/Iter/close(java.util.Iterator)|",
+      "|java+method:///com/hp/hpl/jena/graph/NodeFactory/createURI(java.lang.String)|",
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+constructor:///java/util/HashMap/HashMap()|"
+    ],
+    "affectedLib": "org.apache.jena:jena-core:2.10.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.jena:jena-tdb:0.10.0",
+    "coordinatesV2": "org.apache.jena:jena-tdb:0.10.1",
+    "caller": "|java+method:///com/hp/hpl/jena/tdb/nodetable/NodecSSE/decode(java.nio.ByteBuffer,com.hp.hpl.jena.shared.PrefixMapping)|",
+    "called": "|java+method:///com/hp/hpl/jena/graph/NodeFactory/createAnon(com.hp.hpl.jena.rdf.model.AnonId)|",
+    "v1Body": [
+      "|java+method:///org/apache/jena/riot/tokens/TokenizerFactory/makeTokenizerString(java.lang.String)|",
+      "|java+method:///org/apache/jena/riot/tokens/Tokenizer/hasNext()|",
+      "|java+method:///org/apache/jena/atlas/io/BlockUTF8/toString(java.nio.ByteBuffer)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/String/length()|",
+      "|java+constructor:///com/hp/hpl/jena/rdf/model/AnonId/AnonId(java.lang.String)|",
+      "|java+method:///com/hp/hpl/jena/graph/Node/createAnon(com.hp.hpl.jena.rdf.model.AnonId)|",
+      "|java+method:///org/apache/jena/riot/tokens/Token/asNode()|",
+      "|java+method:///org/apache/jena/riot/tokens/Tokenizer/next()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///com/hp/hpl/jena/tdb/TDBException/TDBException(java.lang.String)|",
+      "|java+method:///java/lang/String/substring(int,int)|",
+      "|java+method:///java/lang/String/substring(int)|",
+      "|java+method:///com/hp/hpl/jena/graph/Node/createURI(java.lang.String)|",
+      "|java+method:///org/apache/jena/atlas/lib/StrUtils/decodeHex(java.lang.String,char)|",
+      "|java+method:///org/apache/jena/atlas/lib/StrUtils/unescapeString(java.lang.String)|",
+      "|java+method:///java/lang/String/startsWith(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/jena/riot/tokens/TokenizerFactory/makeTokenizerString(java.lang.String)|",
+      "|java+method:///com/hp/hpl/jena/graph/NodeFactory/createURI(java.lang.String)|",
+      "|java+method:///org/apache/jena/atlas/io/BlockUTF8/toString(java.nio.ByteBuffer)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/String/length()|",
+      "|java+constructor:///com/hp/hpl/jena/rdf/model/AnonId/AnonId(java.lang.String)|",
+      "|java+method:///org/apache/jena/riot/tokens/Token/asNode()|",
+      "|java+method:///org/apache/jena/riot/tokens/Tokenizer/next()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/String/substring(int)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/apache/jena/riot/tokens/Tokenizer/hasNext()|",
+      "|java+method:///com/hp/hpl/jena/graph/NodeFactory/createAnon(com.hp.hpl.jena.rdf.model.AnonId)|",
+      "|java+constructor:///com/hp/hpl/jena/tdb/TDBException/TDBException(java.lang.String)|",
+      "|java+method:///java/lang/String/substring(int,int)|",
+      "|java+method:///org/apache/jena/atlas/lib/StrUtils/decodeHex(java.lang.String,char)|",
+      "|java+method:///org/apache/jena/atlas/lib/StrUtils/unescapeString(java.lang.String)|",
+      "|java+method:///java/lang/String/startsWith(java.lang.String)|"
+    ],
+    "affectedLib": "org.apache.jena:jena-core:2.10.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.jena:jena-tdb:0.10.0",
+    "coordinatesV2": "org.apache.jena:jena-tdb:0.10.1",
+    "caller": "|java+method:///com/hp/hpl/jena/tdb/TDBFactory/createNamedGraph(java.lang.String,com.hp.hpl.jena.tdb.base.file.Location)|",
+    "called": "|java+method:///com/hp/hpl/jena/graph/NodeFactory/createURI(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///com/hp/hpl/jena/sparql/core/DatasetGraph/getGraph(com.hp.hpl.jena.graph.Node)|",
+      "|java+method:///com/hp/hpl/jena/tdb/TDBFactory/createDatasetGraph(com.hp.hpl.jena.tdb.base.file.Location)|",
+      "|java+method:///com/hp/hpl/jena/graph/Node/createURI(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/hp/hpl/jena/graph/NodeFactory/createURI(java.lang.String)|",
+      "|java+method:///com/hp/hpl/jena/sparql/core/DatasetGraph/getGraph(com.hp.hpl.jena.graph.Node)|",
+      "|java+method:///com/hp/hpl/jena/tdb/TDBFactory/createDatasetGraph(com.hp.hpl.jena.tdb.base.file.Location)|"
+    ],
+    "affectedLib": "org.apache.jena:jena-core:2.10.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.jena:jena-tdb:0.10.0",
+    "coordinatesV2": "org.apache.jena:jena-tdb:0.10.1",
+    "caller": "|java+method:///com/hp/hpl/jena/tdb/nodetable/NodecLib/decode(java.lang.String,com.hp.hpl.jena.shared.PrefixMapping)|",
+    "called": "|java+method:///com/hp/hpl/jena/graph/NodeFactory/createAnon(com.hp.hpl.jena.rdf.model.AnonId)|",
+    "v1Body": [
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/jena/atlas/logging/Log/fatal(java.lang.Class,java.lang.String)|",
+      "|java+method:///java/lang/String/length()|",
+      "|java+constructor:///com/hp/hpl/jena/rdf/model/AnonId/AnonId(java.lang.String)|",
+      "|java+method:///com/hp/hpl/jena/graph/Node/createAnon(com.hp.hpl.jena.rdf.model.AnonId)|",
+      "|java+method:///java/lang/String/substring(int,int)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///com/hp/hpl/jena/sparql/sse/SSE/parseNode(java.lang.String,com.hp.hpl.jena.shared.PrefixMapping)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/String/substring(int)|",
+      "|java+method:///com/hp/hpl/jena/graph/Node/createURI(java.lang.String)|",
+      "|java+method:///org/apache/jena/atlas/lib/StrUtils/decodeHex(java.lang.String,char)|",
+      "|java+method:///java/lang/String/startsWith(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/hp/hpl/jena/graph/NodeFactory/createURI(java.lang.String)|",
+      "|java+method:///com/hp/hpl/jena/graph/NodeFactory/createAnon(com.hp.hpl.jena.rdf.model.AnonId)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/jena/atlas/logging/Log/fatal(java.lang.Class,java.lang.String)|",
+      "|java+method:///java/lang/String/length()|",
+      "|java+constructor:///com/hp/hpl/jena/rdf/model/AnonId/AnonId(java.lang.String)|",
+      "|java+method:///java/lang/String/substring(int,int)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/String/substring(int)|",
+      "|java+method:///com/hp/hpl/jena/sparql/sse/SSE/parseNode(java.lang.String,com.hp.hpl.jena.shared.PrefixMapping)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/apache/jena/atlas/lib/StrUtils/decodeHex(java.lang.String,char)|",
+      "|java+method:///java/lang/String/startsWith(java.lang.String)|"
+    ],
+    "affectedLib": "org.apache.jena:jena-core:2.10.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.jena:jena-tdb:0.10.0",
+    "coordinatesV2": "org.apache.jena:jena-tdb:0.10.1",
+    "caller": "|java+method:///com/hp/hpl/jena/tdb/store/NodeId/extract(com.hp.hpl.jena.tdb.store.NodeId)|",
+    "called": "|java+method:///com/hp/hpl/jena/graph/NodeFactory/createLiteral(java.lang.String,java.lang.String,com.hp.hpl.jena.datatypes.RDFDatatype)|",
+    "v1Body": [
+      "|java+method:///com/hp/hpl/jena/tdb/store/NodeId/type()|",
+      "|java+method:///com/hp/hpl/jena/tdb/store/IntegerNode/unpack(long)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/Long/toString(long)|",
+      "|java+method:///com/hp/hpl/jena/graph/Node/createLiteral(java.lang.String,java.lang.String,com.hp.hpl.jena.datatypes.RDFDatatype)|",
+      "|java+constructor:///com/hp/hpl/jena/tdb/TDBException/TDBException(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+method:///com/hp/hpl/jena/tdb/store/DateTimeNode/unpackDate(long)|",
+      "|java+method:///org/apache/jena/atlas/lib/BitsLong/clear(long,int,int)|",
+      "|java+method:///java/lang/StringBuilder/append(long)|",
+      "|java+method:///com/hp/hpl/jena/tdb/store/DateTimeNode/unpackDateTime(long)|",
+      "|java+method:///com/hp/hpl/jena/tdb/store/DecimalNode/unpackAsBigDecimal(long)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/math/BigDecimal/toEngineeringString()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/hp/hpl/jena/tdb/store/IntegerNode/unpack(long)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/Long/toString(long)|",
+      "|java+constructor:///com/hp/hpl/jena/tdb/TDBException/TDBException(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///com/hp/hpl/jena/graph/NodeFactory/createLiteral(java.lang.String,java.lang.String,com.hp.hpl.jena.datatypes.RDFDatatype)|",
+      "|java+method:///com/hp/hpl/jena/tdb/store/NodeId/type()|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+method:///com/hp/hpl/jena/tdb/store/DateTimeNode/unpackDate(long)|",
+      "|java+method:///org/apache/jena/atlas/lib/BitsLong/clear(long,int,int)|",
+      "|java+method:///java/lang/StringBuilder/append(long)|",
+      "|java+method:///com/hp/hpl/jena/tdb/store/DateTimeNode/unpackDateTime(long)|",
+      "|java+method:///com/hp/hpl/jena/tdb/store/DecimalNode/unpackAsBigDecimal(long)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/math/BigDecimal/toEngineeringString()|"
+    ],
+    "affectedLib": "org.apache.jena:jena-core:2.10.1",
+    "change": "UPDATED"
+  }
+]

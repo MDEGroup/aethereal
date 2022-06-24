@@ -1,0 +1,94 @@
+[
+  {
+    "coordinatesV1": "net.javapla.jawn:jawn-core:0.9.1",
+    "coordinatesV2": "net.javapla.jawn:jawn-core:0.8.10",
+    "caller": "|java+method:///net/javapla/jawn/core/templates/config/TemplateConfigProvider/locateTemplateConfig()|",
+    "called": "|java+method:///org/reflections/Reflections/getSubTypesOf(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/util/Set/iterator()|",
+      "|java+method:///org/reflections/Reflections/getSubTypesOf(java.lang.Class)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/Class/getSimpleName()|",
+      "|java+constructor:///org/reflections/Reflections/Reflections(java.lang.String,org.reflections.scanners.Scanner%5B%5D)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/lang/Class/newInstance()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+method:///java/lang/Class/getSimpleName()|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///net/javapla/jawn/core/reflection/ClassLocator/subtypeOf(java.lang.Class)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/Set/iterator()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/lang/Class/newInstance()|",
+      "|java+constructor:///net/javapla/jawn/core/reflection/ClassLocator/ClassLocator(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|"
+    ],
+    "affectedLib": "org.reflections:reflections:0.9.10",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "net.javapla.jawn:jawn-core:0.8.10",
+    "coordinatesV2": "net.javapla.jawn:jawn-core:0.9.1",
+    "caller": "|java+method:///net/javapla/jawn/core/parsers/JsonMapperProvider/get()|",
+    "called": "|java+constructor:///com/fasterxml/jackson/module/afterburner/AfterburnerModule/AfterburnerModule()|",
+    "v1Body": [
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/registerModule(com.fasterxml.jackson.databind.Module)|",
+      "|java+method:///net/javapla/jawn/core/parsers/JsonMapperProvider/get()|",
+      "|java+constructor:///com/fasterxml/jackson/databind/ObjectMapper/ObjectMapper()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/io/PrintStream/println(java.lang.String)|",
+      "|java+method:///net/javapla/jawn/core/parsers/ParserConfiguration/config(com.fasterxml.jackson.databind.ObjectMapper)|",
+      "|java+constructor:///com/fasterxml/jackson/module/afterburner/AfterburnerModule/AfterburnerModule()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/lang/Object/getClass()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/registerModule(com.fasterxml.jackson.databind.Module)|",
+      "|java+method:///net/javapla/jawn/core/parsers/JsonMapperProvider/get()|",
+      "|java+constructor:///com/fasterxml/jackson/databind/ObjectMapper/ObjectMapper()|",
+      "|java+method:///net/javapla/jawn/core/parsers/ParserConfiguration/config(com.fasterxml.jackson.databind.ObjectMapper)|",
+      "|java+constructor:///com/fasterxml/jackson/module/afterburner/AfterburnerModule/AfterburnerModule()|"
+    ],
+    "affectedLib": "com.fasterxml.jackson.module:jackson-module-afterburner:2.8.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "net.javapla.jawn:jawn-core:0.8.10",
+    "coordinatesV2": "net.javapla.jawn:jawn-core:0.9.1",
+    "caller": "|java+method:///net/javapla/jawn/core/database/DatabaseModule/configure()|",
+    "called": "|java+method:///com/google/inject/util/Providers/of(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///net/javapla/jawn/core/database/DatabaseConnections/getConnection(net.javapla.jawn.core.util.Modes)|",
+      "|java+method:///com/google/inject/binder/AnnotatedBindingBuilder/toInstance(java.lang.Object)|",
+      "|java+method:///net/javapla/jawn/core/database/DatabaseModule/bind(java.lang.Class)|",
+      "|java+method:///com/google/inject/binder/AnnotatedBindingBuilder/toProvider(com.google.inject.Provider)|",
+      "|java+method:///com/google/inject/binder/ScopedBindingBuilder/asEagerSingleton()|",
+      "|java+method:///com/google/inject/util/Providers/of(java.lang.Object)|",
+      "|java+method:///net/javapla/jawn/core/PropertiesImpl/getMode()|"
+    ],
+    "v2Body": [
+      "|java+method:///net/javapla/jawn/core/database/DatabaseConnections/getConnection(net.javapla.jawn.core.util.Modes)|",
+      "|java+method:///com/google/inject/util/Providers/of(java.lang.Object)|",
+      "|java+method:///com/google/inject/binder/AnnotatedBindingBuilder/toInstance(java.lang.Object)|",
+      "|java+method:///net/javapla/jawn/core/database/DatabaseModule/bind(java.lang.Class)|",
+      "|java+method:///com/google/inject/binder/AnnotatedBindingBuilder/toProvider(com.google.inject.Provider)|",
+      "|java+method:///net/javapla/jawn/core/configuration/JawnConfigurations/getMode()|",
+      "|java+method:///com/google/inject/binder/ScopedBindingBuilder/asEagerSingleton()|"
+    ],
+    "affectedLib": "com.google.inject:guice:4.1.0",
+    "change": "UPDATED"
+  }
+]

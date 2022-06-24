@@ -1,0 +1,25 @@
+[
+  {
+    "coordinatesV1": "org.apereo.cas:cas-server-support-yubikey-mongo:5.2.0-RC2",
+    "coordinatesV2": "org.apereo.cas:cas-server-support-yubikey-mongo:5.2.1",
+    "caller": "|java+method:///org/apereo/cas/config/MongoDbYubiKeyConfiguration/mongoYubiKeyTemplate()|",
+    "called": "|java+method:///org/apereo/cas/mongo/MongoDbConnectionFactory/buildMongoTemplate(org.apereo.cas.configuration.model.support.mongo.BaseMongoDbProperties)|",
+    "v1Body": [
+      "|java+method:///org/apereo/cas/config/MongoDbYubiKeyConfiguration/mongoYubiKeyDbFactory()|",
+      "|java+constructor:///org/springframework/data/mongodb/core/MongoTemplate/MongoTemplate(org.springframework.data.mongodb.MongoDbFactory)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apereo/cas/configuration/model/support/mfa/YubiKeyMultifactorProperties/getMongo()|",
+      "|java+method:///org/apereo/cas/configuration/model/support/mfa/YubiKeyMultifactorProperties$MongoDb/getCollection()|",
+      "|java+method:///org/apereo/cas/configuration/model/core/authentication/AuthenticationProperties/getMfa()|",
+      "|java+method:///org/apereo/cas/mongo/MongoDbConnectionFactory/createCollection(org.springframework.data.mongodb.core.MongoOperations,java.lang.String,boolean)|",
+      "|java+method:///org/apereo/cas/configuration/CasConfigurationProperties/getAuthn()|",
+      "|java+method:///org/apereo/cas/configuration/model/support/mfa/MultifactorAuthenticationProperties/getYubikey()|",
+      "|java+constructor:///org/apereo/cas/mongo/MongoDbConnectionFactory/MongoDbConnectionFactory()|",
+      "|java+method:///org/apereo/cas/mongo/MongoDbConnectionFactory/buildMongoTemplate(org.apereo.cas.configuration.model.support.mongo.BaseMongoDbProperties)|",
+      "|java+method:///org/apereo/cas/configuration/model/support/mfa/YubiKeyMultifactorProperties$MongoDb/isDropCollection()|"
+    ],
+    "affectedLib": "org.apereo.cas:cas-server-support-mongo-core:5.2.1",
+    "change": "UPDATED"
+  }
+]

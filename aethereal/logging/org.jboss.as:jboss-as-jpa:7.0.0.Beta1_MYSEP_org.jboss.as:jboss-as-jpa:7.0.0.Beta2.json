@@ -1,0 +1,20 @@
+[
+  {
+    "coordinatesV1": "org.jboss.as:jboss-as-jpa:7.0.0.Beta2",
+    "coordinatesV2": "org.jboss.as:jboss-as-jpa:7.0.0.Beta1",
+    "caller": "|java+method:///org/jboss/as/jpa/transaction/TransactionUtil/verifyInTx()|",
+    "called": "|java+constructor:///javax/persistence/TransactionRequiredException/TransactionRequiredException(java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///javax/persistence/TransactionRequiredException/TransactionRequiredException(java.lang.String)|",
+      "|java+method:///org/jboss/as/jpa/transaction/TransactionLocal/getTransaction()|",
+      "|java+method:///org/jboss/tm/TxUtils/isActive(javax.transaction.Transaction)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///javax/persistence/TransactionRequiredException/TransactionRequiredException(java.lang.String)|",
+      "|java+method:///org/jboss/tm/TxUtils/isActive(javax.transaction.Transaction)|",
+      "|java+method:///org/jboss/as/jpa/transaction/TransactionUtil/getTransaction()|"
+    ],
+    "affectedLib": "org.hibernate.java-persistence:jpa-api:2.0-cr-1",
+    "change": "REMOVED"
+  }
+]

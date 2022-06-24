@@ -1,0 +1,248 @@
+[
+  {
+    "coordinatesV1": "org.neo4j.app:neo4j-server:1.7.2",
+    "coordinatesV2": "org.neo4j.app:neo4j-server:1.8.M02",
+    "caller": "|java+method:///org/neo4j/server/rest/repr/ExceptionRepresentation/serialize(org.neo4j.server.rest.repr.MappingSerializer)|",
+    "called": "|java+method:///org/neo4j/server/rest/repr/MappingSerializer/putList(java.lang.String,org.neo4j.server.rest.repr.ListRepresentation)|",
+    "v1Body": [
+      "|java+method:///java/lang/Throwable/toString()|",
+      "|java+method:///java/lang/StackTraceElement/toString()|",
+      "|java+method:///java/lang/Throwable/getStackTrace()|",
+      "|java+method:///org/neo4j/server/rest/repr/ListRepresentation/strings(java.lang.String%5B%5D)|",
+      "|java+method:///org/neo4j/server/rest/repr/MappingSerializer/putList(java.lang.String,org.neo4j.server.rest.repr.ListRepresentation)|",
+      "|java+method:///java/lang/Throwable/getMessage()|",
+      "|java+method:///org/neo4j/server/rest/repr/MappingSerializer/putString(java.lang.String,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList(int)|",
+      "|java+method:///java/lang/Throwable/toString()|",
+      "|java+method:///java/lang/Throwable/getStackTrace()|",
+      "|java+method:///org/neo4j/server/rest/repr/MappingSerializer/putList(java.lang.String,org.neo4j.server.rest.repr.ListRepresentation)|",
+      "|java+method:///java/util/Collection/add(java.lang.Object)|",
+      "|java+method:///java/lang/String/matches(java.lang.String)|",
+      "|java+method:///java/lang/StackTraceElement/toString()|",
+      "|java+method:///org/neo4j/server/rest/repr/ListRepresentation/string(java.lang.Iterable)|",
+      "|java+method:///java/lang/Throwable/getMessage()|",
+      "|java+method:///org/neo4j/server/rest/repr/MappingSerializer/putString(java.lang.String,java.lang.String)|"
+    ],
+    "affectedLib": "org.neo4j:server-api:1.8.M02",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.neo4j.app:neo4j-server:1.7.2",
+    "coordinatesV2": "org.neo4j.app:neo4j-server:1.8.M02",
+    "caller": "|java+method:///org/neo4j/server/rest/web/DatabaseActions/findPaths(long,long,java.util.Map)|",
+    "called": "|java+constructor:///org/neo4j/server/rest/repr/ListRepresentation/ListRepresentation(org.neo4j.server.rest.repr.RepresentationType,java.lang.Iterable)|",
+    "v1Body": [
+      "|java+method:///org/neo4j/server/rest/web/DatabaseActions$FindParams/getStartNode()|",
+      "|java+constructor:///org/neo4j/server/rest/repr/ListRepresentation/ListRepresentation(org.neo4j.server.rest.repr.RepresentationType,java.lang.Iterable)|",
+      "|java+method:///org/neo4j/server/rest/web/DatabaseActions$FindParams/invoke()|",
+      "|java+method:///org/neo4j/graphalgo/PathFinder/findAllPaths(org.neo4j.graphdb.Node,org.neo4j.graphdb.Node)|",
+      "|java+constructor:///org/neo4j/server/rest/web/DatabaseActions$FindParams/DatabaseActions$FindParams(org.neo4j.server.rest.web.DatabaseActions,long,long,java.util.Map)|",
+      "|java+method:///org/neo4j/server/rest/web/DatabaseActions$FindParams/getFinder()|",
+      "|java+method:///org/neo4j/server/rest/web/DatabaseActions$FindParams/getEndNode()|",
+      "|java+constructor:///org/neo4j/server/rest/web/DatabaseActions$1/DatabaseActions$1(org.neo4j.server.rest.web.DatabaseActions,java.lang.Iterable,org.neo4j.server.rest.web.DatabaseActions$FindParams)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/neo4j/server/rest/web/DatabaseActions$FindParams/getStartNode()|",
+      "|java+constructor:///org/neo4j/server/rest/repr/ListRepresentation/ListRepresentation(org.neo4j.server.rest.repr.RepresentationType,java.lang.Iterable)|",
+      "|java+method:///org/neo4j/server/rest/web/DatabaseActions$FindParams/invoke()|",
+      "|java+method:///org/neo4j/graphalgo/PathFinder/findAllPaths(org.neo4j.graphdb.Node,org.neo4j.graphdb.Node)|",
+      "|java+constructor:///org/neo4j/server/rest/web/DatabaseActions$6/DatabaseActions$6(org.neo4j.server.rest.web.DatabaseActions,java.lang.Iterable,org.neo4j.server.rest.web.DatabaseActions$FindParams)|",
+      "|java+constructor:///org/neo4j/server/rest/web/DatabaseActions$FindParams/DatabaseActions$FindParams(org.neo4j.server.rest.web.DatabaseActions,long,long,java.util.Map)|",
+      "|java+method:///org/neo4j/server/rest/web/DatabaseActions$FindParams/getEndNode()|",
+      "|java+method:///org/neo4j/server/rest/web/DatabaseActions$FindParams/getFinder()|"
+    ],
+    "affectedLib": "org.neo4j:server-api:1.8.M02",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.neo4j.app:neo4j-server:1.7.2",
+    "coordinatesV2": "org.neo4j.app:neo4j-server:1.8.M02",
+    "caller": "|java+method:///org/neo4j/server/rest/repr/ObjectToRepresentationConverter/getIteratorRepresentation(java.util.Iterator)|",
+    "called": "|java+constructor:///org/neo4j/server/rest/repr/ListRepresentation/ListRepresentation(org.neo4j.server.rest.repr.RepresentationType,java.lang.Iterable)|",
+    "v1Body": [
+      "|java+method:///org/neo4j/server/rest/repr/ObjectToRepresentationConverter/convertValuesToRepresentations(java.lang.Iterable)|",
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///java/util/List/addAll(java.util.Collection)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/neo4j/server/rest/repr/ObjectToRepresentationConverter/getSingleRepresentation(java.lang.Object)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+constructor:///org/neo4j/server/rest/repr/ListRepresentation/ListRepresentation(org.neo4j.server.rest.repr.RepresentationType,java.lang.Iterable)|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///org/neo4j/server/rest/repr/ObjectToRepresentationConverter/getType(java.util.List)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/neo4j/server/rest/repr/ListRepresentation/ListRepresentation(org.neo4j.server.rest.repr.RepresentationType,java.lang.Iterable)|",
+      "|java+constructor:///org/neo4j/server/rest/repr/ObjectToRepresentationConverter$1/ObjectToRepresentationConverter$1(java.util.Iterator)|",
+      "|java+constructor:///org/neo4j/helpers/collection/FirstItemIterable/FirstItemIterable(java.util.Iterator)|",
+      "|java+method:///org/neo4j/server/rest/repr/ObjectToRepresentationConverter/getType(org.neo4j.helpers.collection.FirstItemIterable)|"
+    ],
+    "affectedLib": "org.neo4j:server-api:1.8.M02",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.neo4j.app:neo4j-server:1.7.2",
+    "coordinatesV2": "org.neo4j.app:neo4j-server:1.8.M02",
+    "caller": "|java+method:///org/neo4j/server/rest/repr/GremlinTableRepresentation/data()|",
+    "called": "|java+constructor:///org/neo4j/server/rest/repr/ListRepresentation/ListRepresentation(java.lang.String,java.lang.Iterable)|",
+    "v1Body": [
+      "|java+method:///com/tinkerpop/pipes/util/structures/Table/iterator()|",
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/neo4j/server/rest/repr/GremlinTableRepresentation/convertRow(com.tinkerpop.pipes.util.structures.Row)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+constructor:///org/neo4j/server/rest/repr/ListRepresentation/ListRepresentation(java.lang.String,java.lang.Iterable)|",
+      "|java+method:///java/util/List/add(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/neo4j/server/rest/repr/ListRepresentation/ListRepresentation(java.lang.String,java.lang.Iterable)|",
+      "|java+constructor:///org/neo4j/server/rest/repr/GremlinTableRepresentation$1/GremlinTableRepresentation$1(org.neo4j.server.rest.repr.GremlinTableRepresentation,java.lang.Iterable,java.util.List)|",
+      "|java+method:///com/tinkerpop/pipes/util/structures/Table/getColumnNames()|"
+    ],
+    "affectedLib": "org.neo4j:server-api:1.8.M02",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.neo4j.app:neo4j-server:1.7.2",
+    "coordinatesV2": "org.neo4j.app:neo4j-server:1.8.M02",
+    "caller": "|java+method:///org/neo4j/server/rest/web/DatabaseActions/getIndexedRelationships(java.lang.String,java.lang.String,java.lang.String)|",
+    "called": "|java+constructor:///org/neo4j/server/rest/repr/ListRepresentation/ListRepresentation(org.neo4j.server.rest.repr.RepresentationType,java.lang.Iterable)|",
+    "v1Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///org/neo4j/graphdb/index/Index/get(java.lang.String,java.lang.Object)|",
+      "|java+constructor:///org/neo4j/graphdb/NotFoundException/NotFoundException()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/neo4j/kernel/GraphDatabaseAPI/index()|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+constructor:///org/neo4j/server/rest/repr/IndexedEntityRepresentation/IndexedEntityRepresentation(org.neo4j.graphdb.Relationship,java.lang.String,java.lang.String,org.neo4j.server.rest.repr.IndexRepresentation)|",
+      "|java+constructor:///org/neo4j/server/rest/repr/RelationshipIndexRepresentation/RelationshipIndexRepresentation(java.lang.String)|",
+      "|java+method:///org/neo4j/graphdb/Transaction/success()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/neo4j/server/rest/web/DatabaseActions/beginTx()|",
+      "|java+constructor:///org/neo4j/server/rest/repr/ListRepresentation/ListRepresentation(org.neo4j.server.rest.repr.RepresentationType,java.lang.Iterable)|",
+      "|java+method:///org/neo4j/graphdb/index/IndexManager/existsForRelationships(java.lang.String)|",
+      "|java+method:///org/neo4j/graphdb/Transaction/finish()|",
+      "|java+method:///org/neo4j/graphdb/index/IndexHits/iterator()|",
+      "|java+method:///org/neo4j/graphdb/index/IndexManager/forRelationships(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/neo4j/graphdb/index/Index/get(java.lang.String,java.lang.Object)|",
+      "|java+constructor:///org/neo4j/graphdb/NotFoundException/NotFoundException()|",
+      "|java+constructor:///org/neo4j/server/rest/repr/ListRepresentation/ListRepresentation(org.neo4j.server.rest.repr.RepresentationType,java.lang.Iterable)|",
+      "|java+constructor:///org/neo4j/server/rest/web/DatabaseActions$4/DatabaseActions$4(org.neo4j.server.rest.web.DatabaseActions,java.lang.Iterable,java.lang.String,java.lang.String,org.neo4j.server.rest.repr.IndexRepresentation)|",
+      "|java+method:///org/neo4j/graphdb/index/IndexManager/existsForRelationships(java.lang.String)|",
+      "|java+method:///org/neo4j/graphdb/index/IndexManager/forRelationships(java.lang.String)|",
+      "|java+method:///org/neo4j/kernel/GraphDatabaseAPI/index()|",
+      "|java+constructor:///org/neo4j/server/rest/repr/RelationshipIndexRepresentation/RelationshipIndexRepresentation(java.lang.String)|"
+    ],
+    "affectedLib": "org.neo4j:server-api:1.8.M02",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.neo4j.app:neo4j-server:1.7.2",
+    "coordinatesV2": "org.neo4j.app:neo4j-server:1.8.M02",
+    "caller": "|java+method:///org/neo4j/server/rest/repr/CypherResultRepresentation/createResultRepresentation(org.neo4j.cypher.javacompat.ExecutionResult)|",
+    "called": "|java+constructor:///org/neo4j/server/rest/repr/ListRepresentation/ListRepresentation(java.lang.String,java.lang.Iterable)|",
+    "v1Body": [
+      "|java+method:///org/neo4j/server/rest/repr/CypherResultRepresentation/getRepresentation(java.lang.Object)|",
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///org/neo4j/cypher/javacompat/ExecutionResult/iterator()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+constructor:///org/neo4j/server/rest/repr/ListRepresentation/ListRepresentation(java.lang.String,java.lang.Iterable)|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///org/neo4j/cypher/javacompat/ExecutionResult/columns()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/neo4j/server/rest/repr/CypherResultRepresentation$1/CypherResultRepresentation$1(org.neo4j.server.rest.repr.CypherResultRepresentation,java.lang.Iterable,java.util.List)|",
+      "|java+constructor:///org/neo4j/server/rest/repr/ListRepresentation/ListRepresentation(java.lang.String,java.lang.Iterable)|",
+      "|java+method:///org/neo4j/cypher/javacompat/ExecutionResult/columns()|",
+      "|java+constructor:///org/neo4j/server/rest/repr/RepresentationExceptionHandlingIterable/RepresentationExceptionHandlingIterable(java.lang.Iterable)|"
+    ],
+    "affectedLib": "org.neo4j:server-api:1.8.M02",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.neo4j.app:neo4j-server:1.7.2",
+    "coordinatesV2": "org.neo4j.app:neo4j-server:1.8.M02",
+    "caller": "|java+method:///org/neo4j/server/rest/web/DatabaseActions/getIndexedNodes(java.lang.String,java.lang.String,java.lang.String)|",
+    "called": "|java+constructor:///org/neo4j/server/rest/repr/ListRepresentation/ListRepresentation(org.neo4j.server.rest.repr.RepresentationType,java.lang.Iterable)|",
+    "v1Body": [
+      "|java+constructor:///org/neo4j/graphdb/NotFoundException/NotFoundException()|",
+      "|java+method:///org/neo4j/graphdb/index/IndexManager/forNodes(java.lang.String)|",
+      "|java+constructor:///org/neo4j/server/rest/repr/NodeIndexRepresentation/NodeIndexRepresentation(java.lang.String)|",
+      "|java+method:///org/neo4j/graphdb/Transaction/finish()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/neo4j/graphdb/index/IndexHits/iterator()|",
+      "|java+method:///org/neo4j/kernel/GraphDatabaseAPI/index()|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///org/neo4j/graphdb/Transaction/success()|",
+      "|java+constructor:///org/neo4j/server/rest/repr/IndexedEntityRepresentation/IndexedEntityRepresentation(org.neo4j.graphdb.Node,java.lang.String,java.lang.String,org.neo4j.server.rest.repr.IndexRepresentation)|",
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///org/neo4j/graphdb/index/IndexManager/existsForNodes(java.lang.String)|",
+      "|java+method:///org/neo4j/graphdb/index/Index/get(java.lang.String,java.lang.Object)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/neo4j/server/rest/web/DatabaseActions/beginTx()|",
+      "|java+constructor:///org/neo4j/server/rest/repr/ListRepresentation/ListRepresentation(org.neo4j.server.rest.repr.RepresentationType,java.lang.Iterable)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/neo4j/graphdb/NotFoundException/NotFoundException()|",
+      "|java+constructor:///org/neo4j/server/rest/repr/ListRepresentation/ListRepresentation(org.neo4j.server.rest.repr.RepresentationType,java.lang.Iterable)|",
+      "|java+method:///org/neo4j/graphdb/index/IndexManager/forNodes(java.lang.String)|",
+      "|java+constructor:///org/neo4j/server/rest/repr/NodeIndexRepresentation/NodeIndexRepresentation(java.lang.String)|",
+      "|java+constructor:///org/neo4j/server/rest/web/DatabaseActions$1/DatabaseActions$1(org.neo4j.server.rest.web.DatabaseActions,java.lang.Iterable,java.lang.String,java.lang.String,org.neo4j.server.rest.repr.IndexRepresentation)|",
+      "|java+method:///org/neo4j/kernel/GraphDatabaseAPI/index()|",
+      "|java+method:///org/neo4j/graphdb/index/IndexManager/existsForNodes(java.lang.String)|",
+      "|java+method:///org/neo4j/graphdb/index/Index/get(java.lang.String,java.lang.Object)|"
+    ],
+    "affectedLib": "org.neo4j:server-api:1.8.M02",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.neo4j.app:neo4j-server:1.7.2",
+    "coordinatesV2": "org.neo4j.app:neo4j-server:1.8.M02",
+    "caller": "|java+method:///org/neo4j/server/rest/repr/ObjectToRepresentationConverter/getListRepresentation(java.lang.Iterable)|",
+    "called": "|java+constructor:///org/neo4j/server/rest/repr/ListRepresentation/ListRepresentation(org.neo4j.server.rest.repr.RepresentationType,java.lang.Iterable)|",
+    "v1Body": [
+      "|java+method:///org/neo4j/server/rest/repr/ObjectToRepresentationConverter/convertValuesToRepresentations(java.lang.Iterable)|",
+      "|java+constructor:///org/neo4j/server/rest/repr/ListRepresentation/ListRepresentation(org.neo4j.server.rest.repr.RepresentationType,java.lang.Iterable)|",
+      "|java+method:///org/neo4j/server/rest/repr/ObjectToRepresentationConverter/getType(java.util.List)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/neo4j/server/rest/repr/ObjectToRepresentationConverter/convertValuesToRepresentations(java.lang.Iterable)|",
+      "|java+constructor:///org/neo4j/server/rest/repr/ListRepresentation/ListRepresentation(org.neo4j.server.rest.repr.RepresentationType,java.lang.Iterable)|",
+      "|java+method:///org/neo4j/server/rest/repr/ObjectToRepresentationConverter/getType(org.neo4j.helpers.collection.FirstItemIterable)|"
+    ],
+    "affectedLib": "org.neo4j:server-api:1.8.M02",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.neo4j.app:neo4j-server:1.7.2",
+    "coordinatesV2": "org.neo4j.app:neo4j-server:1.8.M02",
+    "caller": "|java+method:///org/neo4j/server/rest/repr/CypherResultRepresentation/createResultRepresentation(org.neo4j.cypher.javacompat.ExecutionResult)|",
+    "called": "|java+method:///org/neo4j/cypher/javacompat/ExecutionResult/columns()|",
+    "v1Body": [
+      "|java+method:///org/neo4j/server/rest/repr/CypherResultRepresentation/getRepresentation(java.lang.Object)|",
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///org/neo4j/cypher/javacompat/ExecutionResult/iterator()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+constructor:///org/neo4j/server/rest/repr/ListRepresentation/ListRepresentation(java.lang.String,java.lang.Iterable)|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///org/neo4j/cypher/javacompat/ExecutionResult/columns()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/neo4j/server/rest/repr/CypherResultRepresentation$1/CypherResultRepresentation$1(org.neo4j.server.rest.repr.CypherResultRepresentation,java.lang.Iterable,java.util.List)|",
+      "|java+constructor:///org/neo4j/server/rest/repr/ListRepresentation/ListRepresentation(java.lang.String,java.lang.Iterable)|",
+      "|java+method:///org/neo4j/cypher/javacompat/ExecutionResult/columns()|",
+      "|java+constructor:///org/neo4j/server/rest/repr/RepresentationExceptionHandlingIterable/RepresentationExceptionHandlingIterable(java.lang.Iterable)|"
+    ],
+    "affectedLib": "org.neo4j:neo4j-cypher:1.8.M02",
+    "change": "UPDATED"
+  }
+]

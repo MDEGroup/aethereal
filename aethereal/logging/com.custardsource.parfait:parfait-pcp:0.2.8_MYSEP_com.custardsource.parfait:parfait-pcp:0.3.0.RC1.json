@@ -1,0 +1,77 @@
+[
+  {
+    "coordinatesV1": "com.custardsource.parfait:parfait-pcp:0.2.8",
+    "coordinatesV2": "com.custardsource.parfait:parfait-pcp:0.3.0.RC1",
+    "caller": "|java+initializer:///com/custardsource/parfait/pcp/PcpMonitorBridge/PcpMonitorBridge$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+constructor:///com/custardsource/parfait/pcp/MetricDescriptionTextSource/MetricDescriptionTextSource()|",
+      "|java+constructor:///com/custardsource/parfait/pcp/EmptyTextSource/EmptyTextSource()|",
+      "|java+method:///com/google/common/collect/ImmutableMap/of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/custardsource/parfait/pcp/MetricDescriptionTextSource/MetricDescriptionTextSource()|",
+      "|java+constructor:///com/custardsource/parfait/pcp/EmptyTextSource/EmptyTextSource()|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///com/google/common/collect/ImmutableMap/of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.6.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.custardsource.parfait:parfait-pcp:0.2.8",
+    "coordinatesV2": "com.custardsource.parfait:parfait-pcp:0.3.0.RC1",
+    "caller": "|java+method:///com/custardsource/parfait/pcp/PcpMonitorBridge/startMonitoring(java.util.Collection)|",
+    "called": "|java+method:///com/custardsource/parfait/dxm/MetricName/getMetric()|",
+    "v1Body": [
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///com/custardsource/parfait/Monitorable/attachMonitor(com.custardsource.parfait.Monitor)|",
+      "|java+method:///org/apache/log4j/Logger/info(java.lang.Object)|",
+      "|java+method:///com/custardsource/parfait/dxm/MetricName/getMetric()|",
+      "|java+method:///com/custardsource/parfait/Monitorable/get()|",
+      "|java+method:///com/custardsource/parfait/dxm/PcpWriter/addMetric(com.custardsource.parfait.dxm.MetricName,com.custardsource.parfait.dxm.semantics.Semantics,javax.measure.unit.Unit,java.lang.Object)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///com/custardsource/parfait/Monitorable/getUnit()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///com/custardsource/parfait/Monitorable/getSemantics()|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/util/Collection/iterator()|",
+      "|java+method:///com/custardsource/parfait/pcp/TextSource/getText(com.custardsource.parfait.Monitorable,com.custardsource.parfait.dxm.MetricName)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///com/custardsource/parfait/pcp/PcpMonitorBridge/convertToPcpSemantics(com.custardsource.parfait.ValueSemantics)|",
+      "|java+method:///com/custardsource/parfait/dxm/PcpWriter/setMetricHelpText(java.lang.String,java.lang.String,java.lang.String)|",
+      "|java+method:///com/custardsource/parfait/Monitorable/getName()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///com/custardsource/parfait/pcp/MetricNameMapper/map(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///com/custardsource/parfait/dxm/PcpWriter/start()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///com/custardsource/parfait/Monitorable/attachMonitor(com.custardsource.parfait.Monitor)|",
+      "|java+method:///com/custardsource/parfait/dxm/MetricName/getMetric()|",
+      "|java+method:///com/custardsource/parfait/dxm/PcpWriter/addMetric(com.custardsource.parfait.dxm.MetricName,com.custardsource.parfait.dxm.semantics.Semantics,javax.measure.unit.Unit,java.lang.Object)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///com/custardsource/parfait/Monitorable/getUnit()|",
+      "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean,java.lang.Object)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///com/custardsource/parfait/Monitorable/getSemantics()|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/util/Collection/iterator()|",
+      "|java+method:///com/custardsource/parfait/pcp/TextSource/getText(com.custardsource.parfait.Monitorable,com.custardsource.parfait.dxm.MetricName)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///com/custardsource/parfait/pcp/PcpMonitorBridge/convertToPcpSemantics(com.custardsource.parfait.ValueSemantics)|",
+      "|java+method:///com/custardsource/parfait/Monitorable/get()|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String)|",
+      "|java+method:///com/custardsource/parfait/dxm/PcpWriter/setMetricHelpText(java.lang.String,java.lang.String,java.lang.String)|",
+      "|java+method:///com/custardsource/parfait/Monitorable/getName()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///com/custardsource/parfait/pcp/MetricNameMapper/map(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///com/custardsource/parfait/dxm/PcpWriter/start()|"
+    ],
+    "affectedLib": "com.custardsource.parfait:dxm:0.3.0.RC1",
+    "change": "UPDATED"
+  }
+]

@@ -1,0 +1,30 @@
+[
+  {
+    "coordinatesV1": "org.springframework.cloud.stream.app:rabbit-app-starters-test-support:1.3.3.RELEASE",
+    "coordinatesV2": "org.springframework.cloud.stream.app:rabbit-app-starters-test-support:2.0.0.RELEASE",
+    "caller": "|java+method:///org/springframework/cloud/stream/app/test/rabbit/RabbitSourceTestConfiguration/rabbitConnectionFactory()|",
+    "called": "|java+method:///org/mockito/Mockito/when(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/mockito/Matchers/anyBoolean()|",
+      "|java+method:///org/mockito/Mockito/mock(java.lang.Class)|",
+      "|java+method:///org/springframework/amqp/rabbit/connection/ConnectionFactory/createConnection()|",
+      "|java+method:///org/mockito/Mockito/when(java.lang.Object)|",
+      "|java+method:///com/rabbitmq/client/Channel/isOpen()|",
+      "|java+method:///org/mockito/stubbing/OngoingStubbing/thenReturn(java.lang.Object)|",
+      "|java+method:///java/lang/Boolean/valueOf(boolean)|",
+      "|java+method:///org/springframework/amqp/rabbit/connection/Connection/createChannel(boolean)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/springframework/amqp/rabbit/connection/ConnectionFactory/createConnection()|",
+      "|java+method:///org/mockito/Mockito/when(java.lang.Object)|",
+      "|java+method:///com/rabbitmq/client/Channel/isOpen()|",
+      "|java+method:///org/mockito/stubbing/OngoingStubbing/thenReturn(java.lang.Object)|",
+      "|java+method:///org/mockito/Mockito/mock(java.lang.Class)|",
+      "|java+method:///org/mockito/ArgumentMatchers/anyBoolean()|",
+      "|java+method:///java/lang/Boolean/valueOf(boolean)|",
+      "|java+method:///org/springframework/amqp/rabbit/connection/Connection/createChannel(boolean)|"
+    ],
+    "affectedLib": "org.mockito:mockito-core:2.15.0",
+    "change": "UPDATED"
+  }
+]

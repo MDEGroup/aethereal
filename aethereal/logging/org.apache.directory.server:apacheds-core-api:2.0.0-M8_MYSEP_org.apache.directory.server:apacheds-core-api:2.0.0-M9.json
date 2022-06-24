@@ -1,0 +1,2027 @@
+[
+  {
+    "coordinatesV1": "org.apache.directory.server:apacheds-core-api:2.0.0-M8",
+    "coordinatesV2": "org.apache.directory.server:apacheds-core-api:2.0.0-M9",
+    "caller": "|java+initializer:///org/apache/directory/server/core/api/schema/registries/synchronizers/RegistrySynchronizerAdaptor/RegistrySynchronizerAdaptor$initializer|",
+    "called": "|java+method:///org/apache/directory/api/util/Strings/toLowerCase(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/apache/directory/shared/util/Strings/toLowerCase(java.lang.String)|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+constructor:///java/util/HashSet/HashSet()|",
+      "|java+method:///java/util/Set/add(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/directory/api/util/Strings/toLowerCase(java.lang.String)|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+constructor:///java/util/HashSet/HashSet()|",
+      "|java+method:///java/util/Set/add(java.lang.Object)|"
+    ],
+    "affectedLib": "org.apache.directory.api:api-util:1.0.0-M14",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.directory.server:apacheds-core-api:2.0.0-M8",
+    "coordinatesV2": "org.apache.directory.server:apacheds-core-api:2.0.0-M9",
+    "caller": "|java+method:///org/apache/directory/server/core/api/schema/SchemaPartition/updateSchemaModificationAttributes(org.apache.directory.server.core.api.interceptor.context.OperationContext)|",
+    "called": "|java+method:///org/apache/directory/api/util/DateUtils/getGeneralizedTime()|",
+    "v1Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList(int)|",
+      "|java+constructor:///org/apache/directory/shared/ldap/model/entry/DefaultModification/DefaultModification(org.apache.directory.shared.ldap.model.entry.ModificationOperation,org.apache.directory.shared.ldap.model.entry.Attribute)|",
+      "|java+method:///org/apache/directory/server/core/api/CoreSession/getEffectivePrincipal()|",
+      "|java+method:///org/apache/directory/server/core/api/CoreSession/getDirectoryService()|",
+      "|java+method:///org/apache/directory/server/core/api/DirectoryService/getPartitionNexus()|",
+      "|java+method:///org/apache/directory/shared/util/DateUtils/getGeneralizedTime()|",
+      "|java+method:///org/apache/directory/server/core/api/partition/PartitionNexus/modify(org.apache.directory.server.core.api.interceptor.context.ModifyOperationContext)|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///org/apache/directory/shared/ldap/model/schema/SchemaManager/lookupAttributeTypeRegistry(java.lang.String)|",
+      "|java+method:///org/apache/directory/server/core/api/LdapPrincipal/getName()|",
+      "|java+constructor:///org/apache/directory/server/core/api/interceptor/context/ModifyOperationContext/ModifyOperationContext(org.apache.directory.server.core.api.CoreSession,org.apache.directory.shared.ldap.model.name.Dn,java.util.List)|",
+      "|java+method:///org/apache/directory/server/core/api/interceptor/context/OperationContext/getSession()|",
+      "|java+constructor:///org/apache/directory/shared/ldap/model/entry/DefaultAttribute/DefaultAttribute(java.lang.String,org.apache.directory.shared.ldap.model.schema.AttributeType,java.lang.String%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/directory/server/core/api/LdapPrincipal/getName()|",
+      "|java+method:///org/apache/directory/server/core/api/interceptor/context/OperationContext/getSession()|",
+      "|java+method:///org/apache/directory/server/core/api/CoreSession/getEffectivePrincipal()|",
+      "|java+method:///org/apache/directory/server/core/api/CoreSession/getDirectoryService()|",
+      "|java+method:///org/apache/directory/server/core/api/DirectoryService/getPartitionNexus()|",
+      "|java+constructor:///org/apache/directory/api/ldap/model/entry/DefaultAttribute/DefaultAttribute(java.lang.String,org.apache.directory.api.ldap.model.schema.AttributeType,java.lang.String%5B%5D)|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+constructor:///org/apache/directory/server/core/api/interceptor/context/ModifyOperationContext/ModifyOperationContext(org.apache.directory.server.core.api.CoreSession,org.apache.directory.api.ldap.model.name.Dn,java.util.List)|",
+      "|java+method:///org/apache/directory/api/ldap/model/schema/SchemaManager/lookupAttributeTypeRegistry(java.lang.String)|",
+      "|java+constructor:///java/util/ArrayList/ArrayList(int)|",
+      "|java+constructor:///org/apache/directory/api/ldap/model/entry/DefaultModification/DefaultModification(org.apache.directory.api.ldap.model.entry.ModificationOperation,org.apache.directory.api.ldap.model.entry.Attribute)|",
+      "|java+method:///org/apache/directory/api/util/DateUtils/getGeneralizedTime()|",
+      "|java+method:///org/apache/directory/server/core/api/partition/PartitionNexus/modify(org.apache.directory.server.core.api.interceptor.context.ModifyOperationContext)|"
+    ],
+    "affectedLib": "org.apache.directory.api:api-util:1.0.0-M14",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.directory.server:apacheds-core-api:2.0.0-M8",
+    "coordinatesV2": "org.apache.directory.server:apacheds-core-api:2.0.0-M9",
+    "caller": "|java+method:///org/apache/directory/server/core/api/entry/ServerEntryUtils/toSearchResultEnum(javax.naming.NamingEnumeration)|",
+    "called": "|java+constructor:///org/apache/directory/api/util/EmptyEnumeration/EmptyEnumeration()|",
+    "v1Body": [
+      "|java+constructor:///org/apache/directory/server/core/api/entry/ServerEntryUtils$1/ServerEntryUtils$1(javax.naming.NamingEnumeration)|",
+      "|java+constructor:///org/apache/directory/shared/util/EmptyEnumeration/EmptyEnumeration()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/directory/server/core/api/entry/ServerEntryUtils$1/ServerEntryUtils$1(javax.naming.NamingEnumeration)|",
+      "|java+constructor:///org/apache/directory/api/util/EmptyEnumeration/EmptyEnumeration()|"
+    ],
+    "affectedLib": "org.apache.directory.api:api-util:1.0.0-M14",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.directory.server:apacheds-core-api:2.0.0-M8",
+    "coordinatesV2": "org.apache.directory.server:apacheds-core-api:2.0.0-M9",
+    "caller": "|java+method:///org/apache/directory/server/core/api/entry/ServerEntryUtils/getOptions(java.lang.String)|",
+    "called": "|java+method:///org/apache/directory/api/util/Strings/isEmpty(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/lang/String/split(java.lang.String)|",
+      "|java+method:///org/apache/directory/shared/util/Strings/isEmpty(java.lang.String)|",
+      "|java+method:///java/lang/String/indexOf(java.lang.String)|",
+      "|java+method:///java/lang/String/substring(int)|",
+      "|java+constructor:///java/util/HashSet/HashSet()|",
+      "|java+method:///java/util/Set/add(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/String/split(java.lang.String)|",
+      "|java+method:///org/apache/directory/api/util/Strings/isEmpty(java.lang.String)|",
+      "|java+method:///java/lang/String/indexOf(java.lang.String)|",
+      "|java+method:///java/lang/String/substring(int)|",
+      "|java+constructor:///java/util/HashSet/HashSet()|",
+      "|java+method:///java/util/Set/add(java.lang.Object)|"
+    ],
+    "affectedLib": "org.apache.directory.api:api-util:1.0.0-M14",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.directory.server:apacheds-core-api:2.0.0-M8",
+    "coordinatesV2": "org.apache.directory.server:apacheds-core-api:2.0.0-M9",
+    "caller": "|java+method:///org/apache/directory/server/core/api/sp/java/JavaStoredProcEngine/invokeProcedure(org.apache.directory.server.core.api.CoreSession,java.lang.String,java.lang.Object%5B%5D)|",
+    "called": "|java+method:///org/apache/directory/api/util/MethodUtils/getAssignmentCompatibleMethod(java.lang.Class,java.lang.String,java.lang.Class%5B%5D)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/directory/shared/ldap/model/exception/LdapException/LdapException(java.lang.Throwable)|",
+      "|java+method:///org/apache/directory/server/core/api/sp/StoredProcUtils/extractStoredProcName(java.lang.String)|",
+      "|java+method:///org/apache/directory/server/core/api/sp/StoredProcUtils/extractStoredProcUnitName(java.lang.String)|",
+      "|java+constructor:///org/apache/directory/server/core/api/sp/java/LdapJavaStoredProcClassLoader/LdapJavaStoredProcClassLoader(org.apache.directory.shared.ldap.model.entry.Attribute)|",
+      "|java+method:///org/apache/directory/shared/ldap/model/entry/Entry/get(java.lang.String)|",
+      "|java+method:///org/apache/directory/server/core/api/sp/java/JavaStoredProcEngine/getTypesFromValues(java.lang.Object%5B%5D)|",
+      "|java+method:///java/lang/reflect/Method/invoke(java.lang.Object,java.lang.Object%5B%5D)|",
+      "|java+method:///java/lang/ClassLoader/loadClass(java.lang.String)|",
+      "|java+method:///org/apache/directory/shared/util/MethodUtils/getAssignmentCompatibleMethod(java.lang.Class,java.lang.String,java.lang.Class%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/directory/server/core/api/sp/StoredProcUtils/extractStoredProcName(java.lang.String)|",
+      "|java+constructor:///org/apache/directory/api/ldap/model/exception/LdapException/LdapException(java.lang.Throwable)|",
+      "|java+method:///org/apache/directory/server/core/api/sp/StoredProcUtils/extractStoredProcUnitName(java.lang.String)|",
+      "|java+method:///org/apache/directory/api/util/MethodUtils/getAssignmentCompatibleMethod(java.lang.Class,java.lang.String,java.lang.Class%5B%5D)|",
+      "|java+method:///java/lang/ClassLoader/loadClass(java.lang.String)|",
+      "|java+method:///org/apache/directory/api/ldap/model/entry/Entry/get(java.lang.String)|",
+      "|java+method:///org/apache/directory/server/core/api/sp/java/JavaStoredProcEngine/getTypesFromValues(java.lang.Object%5B%5D)|",
+      "|java+method:///java/lang/reflect/Method/invoke(java.lang.Object,java.lang.Object%5B%5D)|",
+      "|java+constructor:///org/apache/directory/server/core/api/sp/java/LdapJavaStoredProcClassLoader/LdapJavaStoredProcClassLoader(org.apache.directory.api.ldap.model.entry.Attribute)|"
+    ],
+    "affectedLib": "org.apache.directory.api:api-util:1.0.0-M14",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.directory.server:apacheds-core-api:2.0.0-M8",
+    "coordinatesV2": "org.apache.directory.server:apacheds-core-api:2.0.0-M9",
+    "caller": "|java+initializer:///org/apache/directory/server/core/api/partition/PartitionNexus/PartitionNexus$initializer|",
+    "called": "|java+method:///org/apache/directory/api/util/Strings/getBytesUtf8(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/apache/directory/shared/util/Strings/getBytesUtf8(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/directory/api/util/Strings/getBytesUtf8(java.lang.String)|"
+    ],
+    "affectedLib": "org.apache.directory.api:api-util:1.0.0-M14",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.directory.server:apacheds-core-api:2.0.0-M8",
+    "coordinatesV2": "org.apache.directory.server:apacheds-core-api:2.0.0-M9",
+    "caller": "|java+method:///org/apache/directory/server/core/api/schema/registries/synchronizers/RegistrySynchronizerAdaptor/delete(org.apache.directory.server.core.api.interceptor.context.DeleteOperationContext,boolean)|",
+    "called": "|java+method:///org/apache/directory/api/util/Strings/trim(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/apache/directory/shared/util/Strings/trim(java.lang.String)|",
+      "|java+method:///org/apache/directory/server/core/api/schema/registries/synchronizers/SchemaSynchronizer/delete(org.apache.directory.shared.ldap.model.entry.Entry,boolean)|",
+      "|java+method:///org/apache/directory/shared/ldap/model/entry/Entry/get(org.apache.directory.shared.ldap.model.schema.AttributeType)|",
+      "|java+method:///org/apache/directory/shared/ldap/model/entry/Value/getString()|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/Set/contains(java.lang.Object)|",
+      "|java+method:///org/apache/directory/shared/ldap/model/name/Rdn/getNormValue()|",
+      "|java+method:///org/apache/directory/server/core/api/interceptor/context/DeleteOperationContext/getEntry()|",
+      "|java+method:///org/apache/directory/shared/ldap/model/name/Dn/size()|",
+      "|java+method:///org/apache/directory/server/core/api/interceptor/context/DeleteOperationContext/getDn()|",
+      "|java+method:///org/apache/directory/shared/ldap/model/name/Dn/getRdn()|",
+      "|java+constructor:///org/apache/directory/shared/ldap/model/exception/LdapUnwillingToPerformException/LdapUnwillingToPerformException(org.apache.directory.shared.ldap.model.message.ResultCodeEnum)|",
+      "|java+method:///org/apache/directory/shared/ldap/model/entry/Attribute/contains(java.lang.String%5B%5D)|",
+      "|java+method:///org/apache/directory/shared/util/Strings/toLowerCase(java.lang.String)|",
+      "|java+constructor:///org/apache/directory/shared/ldap/model/exception/LdapUnwillingToPerformException/LdapUnwillingToPerformException(org.apache.directory.shared.ldap.model.message.ResultCodeEnum,java.lang.String)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/apache/directory/server/i18n/I18n/err(org.apache.directory.server.i18n.I18n,java.lang.Object%5B%5D)|",
+      "|java+method:///org/apache/directory/server/core/api/schema/registries/synchronizers/RegistrySynchronizer/delete(org.apache.directory.shared.ldap.model.entry.Entry,boolean)|",
+      "|java+method:///org/apache/directory/shared/ldap/model/schema/registries/ObjectClassRegistry/getOidByName(java.lang.String)|",
+      "|java+method:///org/apache/directory/shared/ldap/model/schema/SchemaManager/getObjectClassRegistry()|",
+      "|java+constructor:///org/apache/directory/shared/ldap/model/exception/LdapInvalidDnException/LdapInvalidDnException(org.apache.directory.shared.ldap.model.message.ResultCodeEnum,java.lang.String)|",
+      "|java+method:///org/apache/directory/shared/ldap/model/entry/Attribute/iterator()|",
+      "|java+method:///java/util/Map/containsKey(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/directory/api/util/Strings/toLowerCase(java.lang.String)|",
+      "|java+method:///org/apache/directory/api/ldap/model/name/Dn/getRdn()|",
+      "|java+method:///org/apache/directory/api/ldap/model/entry/Attribute/contains(java.lang.String%5B%5D)|",
+      "|java+method:///org/apache/directory/api/util/Strings/trim(java.lang.String)|",
+      "|java+constructor:///org/apache/directory/api/ldap/model/exception/LdapInvalidDnException/LdapInvalidDnException(org.apache.directory.api.ldap.model.message.ResultCodeEnum,java.lang.String)|",
+      "|java+method:///org/apache/directory/api/ldap/model/entry/Value/getString()|",
+      "|java+method:///org/apache/directory/api/ldap/model/schema/registries/ObjectClassRegistry/getOidByName(java.lang.String)|",
+      "|java+method:///org/apache/directory/api/ldap/model/entry/Entry/get(org.apache.directory.api.ldap.model.schema.AttributeType)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+constructor:///org/apache/directory/api/ldap/model/exception/LdapUnwillingToPerformException/LdapUnwillingToPerformException(org.apache.directory.api.ldap.model.message.ResultCodeEnum)|",
+      "|java+method:///java/util/Set/contains(java.lang.Object)|",
+      "|java+method:///org/apache/directory/server/core/api/schema/registries/synchronizers/RegistrySynchronizer/delete(org.apache.directory.api.ldap.model.entry.Entry,boolean)|",
+      "|java+method:///java/util/Map/containsKey(java.lang.Object)|",
+      "|java+method:///org/apache/directory/server/core/api/interceptor/context/DeleteOperationContext/getEntry()|",
+      "|java+method:///org/apache/directory/server/core/api/interceptor/context/DeleteOperationContext/getDn()|",
+      "|java+method:///org/apache/directory/api/ldap/model/name/Dn/size()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/apache/directory/server/i18n/I18n/err(org.apache.directory.server.i18n.I18n,java.lang.Object%5B%5D)|",
+      "|java+method:///org/apache/directory/api/ldap/model/schema/SchemaManager/getObjectClassRegistry()|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+method:///org/apache/directory/api/ldap/model/name/Rdn/getNormValue()|",
+      "|java+constructor:///org/apache/directory/api/ldap/model/exception/LdapUnwillingToPerformException/LdapUnwillingToPerformException(org.apache.directory.api.ldap.model.message.ResultCodeEnum,java.lang.String)|",
+      "|java+method:///org/apache/directory/server/core/api/schema/registries/synchronizers/SchemaSynchronizer/delete(org.apache.directory.api.ldap.model.entry.Entry,boolean)|",
+      "|java+method:///org/apache/directory/api/ldap/model/entry/Attribute/iterator()|"
+    ],
+    "affectedLib": "org.apache.directory.api:api-util:1.0.0-M14",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.directory.server:apacheds-core-api:2.0.0-M8",
+    "coordinatesV2": "org.apache.directory.server:apacheds-core-api:2.0.0-M9",
+    "caller": "|java+method:///org/apache/directory/server/core/api/entry/TestServerEntryUtils$3/normalize(java.lang.String)|",
+    "called": "|java+method:///org/apache/directory/api/util/Strings/toLowerCase(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/apache/directory/shared/util/Strings/toLowerCase(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/directory/api/util/Strings/toLowerCase(java.lang.String)|"
+    ],
+    "affectedLib": "org.apache.directory.api:api-util:1.0.0-M14",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.directory.server:apacheds-core-api:2.0.0-M8",
+    "coordinatesV2": "org.apache.directory.server:apacheds-core-api:2.0.0-M9",
+    "caller": "|java+method:///org/apache/directory/server/core/api/partition/AbstractPartition/dumpIndex(java.io.OutputStream,java.lang.String)|",
+    "called": "|java+method:///org/apache/directory/api/util/Strings/getBytesUtf8(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/apache/directory/shared/util/Strings/getBytesUtf8(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/io/OutputStream/write(byte%5B%5D)|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/io/OutputStream/write(byte%5B%5D)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/directory/api/util/Strings/getBytesUtf8(java.lang.String)|"
+    ],
+    "affectedLib": "org.apache.directory.api:api-util:1.0.0-M14",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.directory.server:apacheds-core-api:2.0.0-M8",
+    "coordinatesV2": "org.apache.directory.server:apacheds-core-api:2.0.0-M9",
+    "caller": "|java+method:///org/apache/directory/server/core/api/interceptor/context/BindOperationContext/toString()|",
+    "called": "|java+method:///org/apache/directory/api/util/Strings/dumpBytes(byte%5B%5D)|",
+    "v1Body": [
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/directory/server/core/api/interceptor/context/BindOperationContext/getDn()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/apache/directory/shared/ldap/model/name/Dn/getName()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/apache/directory/shared/util/Strings/dumpBytes(byte%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/directory/server/core/api/interceptor/context/BindOperationContext/getDn()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/apache/directory/api/ldap/model/name/Dn/getName()|",
+      "|java+method:///org/apache/directory/api/util/Strings/dumpBytes(byte%5B%5D)|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "affectedLib": "org.apache.directory.api:api-util:1.0.0-M14",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.directory.server:apacheds-core-api:2.0.0-M8",
+    "coordinatesV2": "org.apache.directory.server:apacheds-core-api:2.0.0-M9",
+    "caller": "|java+method:///org/apache/directory/server/core/api/interceptor/context/CompareOperationContext/toString()|",
+    "called": "|java+method:///org/apache/directory/api/util/Strings/dumpBytes(byte%5B%5D)|",
+    "v1Body": [
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/directory/shared/ldap/model/entry/BinaryValue/getReference()|",
+      "|java+method:///org/apache/directory/shared/ldap/model/entry/Value/getString()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/apache/directory/shared/ldap/model/entry/Value/isHumanReadable()|",
+      "|java+method:///org/apache/directory/server/core/api/interceptor/context/CompareOperationContext/getDn()|",
+      "|java+method:///org/apache/directory/shared/ldap/model/name/Dn/getName()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/apache/directory/shared/util/Strings/dumpBytes(byte%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/directory/api/ldap/model/entry/Value/getString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/directory/api/ldap/model/entry/BinaryValue/getReference()|",
+      "|java+method:///org/apache/directory/api/ldap/model/entry/Value/isHumanReadable()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/apache/directory/api/ldap/model/name/Dn/getName()|",
+      "|java+method:///org/apache/directory/api/util/Strings/dumpBytes(byte%5B%5D)|",
+      "|java+method:///org/apache/directory/server/core/api/interceptor/context/CompareOperationContext/getDn()|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "affectedLib": "org.apache.directory.api:api-util:1.0.0-M14",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.directory.server:apacheds-core-api:2.0.0-M8",
+    "coordinatesV2": "org.apache.directory.server:apacheds-core-api:2.0.0-M9",
+    "caller": "|java+method:///org/apache/directory/server/core/api/schema/registries/synchronizers/RegistrySynchronizerAdaptor/add(org.apache.directory.server.core.api.interceptor.context.AddOperationContext)|",
+    "called": "|java+method:///org/apache/directory/api/util/Strings/trim(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/apache/directory/shared/ldap/model/entry/Attribute/contains(java.lang.String%5B%5D)|",
+      "|java+method:///org/apache/directory/shared/util/Strings/trim(java.lang.String)|",
+      "|java+method:///org/apache/directory/shared/ldap/model/schema/registries/ObjectClassRegistry/getOidByName(java.lang.String)|",
+      "|java+method:///org/apache/directory/shared/ldap/model/entry/Entry/get(org.apache.directory.shared.ldap.model.schema.AttributeType)|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/Set/contains(java.lang.Object)|",
+      "|java+method:///org/apache/directory/shared/ldap/model/name/Rdn/getNormValue()|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String)|",
+      "|java+method:///org/apache/directory/shared/ldap/model/name/Dn/size()|",
+      "|java+method:///org/apache/directory/shared/ldap/model/name/Dn/getRdn()|",
+      "|java+method:///org/apache/directory/shared/util/Strings/toLowerCase(java.lang.String)|",
+      "|java+constructor:///org/apache/directory/shared/ldap/model/exception/LdapUnwillingToPerformException/LdapUnwillingToPerformException(org.apache.directory.shared.ldap.model.message.ResultCodeEnum,java.lang.String)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/apache/directory/server/core/api/schema/registries/synchronizers/RegistrySynchronizer/add(org.apache.directory.shared.ldap.model.entry.Entry)|",
+      "|java+method:///org/apache/directory/server/i18n/I18n/err(org.apache.directory.server.i18n.I18n,java.lang.Object%5B%5D)|",
+      "|java+method:///org/apache/directory/server/core/api/schema/registries/synchronizers/SchemaSynchronizer/add(org.apache.directory.shared.ldap.model.entry.Entry)|",
+      "|java+method:///org/apache/directory/shared/ldap/model/entry/Value/getString()|",
+      "|java+method:///org/apache/directory/shared/ldap/model/schema/SchemaManager/getObjectClassRegistry()|",
+      "|java+constructor:///org/apache/directory/shared/ldap/model/exception/LdapInvalidDnException/LdapInvalidDnException(org.apache.directory.shared.ldap.model.message.ResultCodeEnum,java.lang.String)|",
+      "|java+method:///org/apache/directory/shared/ldap/model/entry/Attribute/iterator()|",
+      "|java+method:///java/util/Map/containsKey(java.lang.Object)|",
+      "|java+method:///org/apache/directory/server/core/api/interceptor/context/AddOperationContext/getEntry()|",
+      "|java+method:///org/apache/directory/server/core/api/interceptor/context/AddOperationContext/getDn()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/directory/api/util/Strings/toLowerCase(java.lang.String)|",
+      "|java+method:///org/apache/directory/api/ldap/model/name/Dn/getRdn()|",
+      "|java+method:///org/apache/directory/api/ldap/model/entry/Attribute/contains(java.lang.String%5B%5D)|",
+      "|java+method:///org/apache/directory/api/util/Strings/trim(java.lang.String)|",
+      "|java+constructor:///org/apache/directory/api/ldap/model/exception/LdapInvalidDnException/LdapInvalidDnException(org.apache.directory.api.ldap.model.message.ResultCodeEnum,java.lang.String)|",
+      "|java+method:///org/apache/directory/api/ldap/model/entry/Value/getString()|",
+      "|java+method:///org/apache/directory/api/ldap/model/entry/Entry/get(org.apache.directory.api.ldap.model.schema.AttributeType)|",
+      "|java+method:///org/apache/directory/server/core/api/schema/registries/synchronizers/RegistrySynchronizer/add(org.apache.directory.api.ldap.model.entry.Entry)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/Set/contains(java.lang.Object)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String)|",
+      "|java+method:///java/util/Map/containsKey(java.lang.Object)|",
+      "|java+method:///org/apache/directory/api/ldap/model/name/Dn/size()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/apache/directory/server/i18n/I18n/err(org.apache.directory.server.i18n.I18n,java.lang.Object%5B%5D)|",
+      "|java+method:///org/apache/directory/api/ldap/model/schema/registries/ObjectClassRegistry/getOidByName(java.lang.String)|",
+      "|java+method:///org/apache/directory/server/core/api/schema/registries/synchronizers/SchemaSynchronizer/add(org.apache.directory.api.ldap.model.entry.Entry)|",
+      "|java+method:///org/apache/directory/api/ldap/model/schema/SchemaManager/getObjectClassRegistry()|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+method:///org/apache/directory/api/ldap/model/name/Rdn/getNormValue()|",
+      "|java+constructor:///org/apache/directory/api/ldap/model/exception/LdapUnwillingToPerformException/LdapUnwillingToPerformException(org.apache.directory.api.ldap.model.message.ResultCodeEnum,java.lang.String)|",
+      "|java+method:///org/apache/directory/server/core/api/interceptor/context/AddOperationContext/getEntry()|",
+      "|java+method:///org/apache/directory/server/core/api/interceptor/context/AddOperationContext/getDn()|",
+      "|java+method:///org/apache/directory/api/ldap/model/entry/Attribute/iterator()|"
+    ],
+    "affectedLib": "org.apache.directory.api:api-util:1.0.0-M14",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.directory.server:apacheds-core-api:2.0.0-M8",
+    "coordinatesV2": "org.apache.directory.server:apacheds-core-api:2.0.0-M9",
+    "caller": "|java+initializer:///org/apache/directory/server/core/api/schema/registries/synchronizers/RegistrySynchronizerAdaptor/RegistrySynchronizerAdaptor$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/directory/shared/util/Strings/toLowerCase(java.lang.String)|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+constructor:///java/util/HashSet/HashSet()|",
+      "|java+method:///java/util/Set/add(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/directory/api/util/Strings/toLowerCase(java.lang.String)|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+constructor:///java/util/HashSet/HashSet()|",
+      "|java+method:///java/util/Set/add(java.lang.Object)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.directory.server:apacheds-core-api:2.0.0-M8",
+    "coordinatesV2": "org.apache.directory.server:apacheds-core-api:2.0.0-M9",
+    "caller": "|java+method:///org/apache/directory/server/core/api/LdapCoreSessionConnection/rename(java.lang.String,java.lang.String,boolean)|",
+    "called": "|java+constructor:///org/apache/directory/api/ldap/model/name/Dn/Dn(org.apache.directory.api.ldap.model.schema.SchemaManager,java.lang.String%5B%5D)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/directory/shared/ldap/model/name/Dn/Dn(org.apache.directory.shared.ldap.model.schema.SchemaManager,java.lang.String%5B%5D)|",
+      "|java+method:///org/apache/directory/server/core/api/LdapCoreSessionConnection/rename(org.apache.directory.shared.ldap.model.name.Dn,org.apache.directory.shared.ldap.model.name.Rdn,boolean)|",
+      "|java+constructor:///org/apache/directory/shared/ldap/model/name/Rdn/Rdn(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/directory/api/ldap/model/name/Rdn/Rdn(java.lang.String)|",
+      "|java+constructor:///org/apache/directory/api/ldap/model/name/Dn/Dn(org.apache.directory.api.ldap.model.schema.SchemaManager,java.lang.String%5B%5D)|",
+      "|java+method:///org/apache/directory/server/core/api/LdapCoreSessionConnection/rename(org.apache.directory.api.ldap.model.name.Dn,org.apache.directory.api.ldap.model.name.Rdn,boolean)|"
+    ],
+    "affectedLib": "org.apache.directory.api:api-ldap-model:1.0.0-M14",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.directory.server:apacheds-core-api:2.0.0-M8",
+    "coordinatesV2": "org.apache.directory.server:apacheds-core-api:2.0.0-M9",
+    "caller": "|java+method:///org/apache/directory/server/core/api/LdapCoreSessionConnection/lookup(java.lang.String)|",
+    "called": "|java+constructor:///org/apache/directory/api/ldap/model/name/Dn/Dn(org.apache.directory.api.ldap.model.schema.SchemaManager,java.lang.String%5B%5D)|",
+    "v1Body": [
+      "|java+method:///org/apache/directory/server/core/api/LdapCoreSessionConnection/_lookup(org.apache.directory.shared.ldap.model.name.Dn,org.apache.directory.shared.ldap.model.message.Control%5B%5D,java.lang.String%5B%5D)|",
+      "|java+constructor:///org/apache/directory/shared/ldap/model/name/Dn/Dn(org.apache.directory.shared.ldap.model.schema.SchemaManager,java.lang.String%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/directory/server/core/api/LdapCoreSessionConnection/lookup(org.apache.directory.api.ldap.model.name.Dn,java.lang.String%5B%5D)|",
+      "|java+constructor:///org/apache/directory/api/ldap/model/name/Dn/Dn(org.apache.directory.api.ldap.model.schema.SchemaManager,java.lang.String%5B%5D)|"
+    ],
+    "affectedLib": "org.apache.directory.api:api-ldap-model:1.0.0-M14",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.directory.server:apacheds-core-api:2.0.0-M8",
+    "coordinatesV2": "org.apache.directory.server:apacheds-core-api:2.0.0-M9",
+    "caller": "|java+method:///org/apache/directory/server/core/api/changelog/ChangeLogEvent/get(java.lang.String)|",
+    "called": "|java+method:///org/apache/directory/api/ldap/model/ldif/LdifEntry/get(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/apache/directory/shared/ldap/model/ldif/LdifEntry/get(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/directory/api/ldap/model/ldif/LdifEntry/get(java.lang.String)|"
+    ],
+    "affectedLib": "org.apache.directory.api:api-ldap-model:1.0.0-M14",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.directory.server:apacheds-core-api:2.0.0-M8",
+    "coordinatesV2": "org.apache.directory.server:apacheds-core-api:2.0.0-M9",
+    "caller": "|java+method:///org/apache/directory/server/core/api/LdapCoreSessionConnection/exists(java.lang.String)|",
+    "called": "|java+constructor:///org/apache/directory/api/ldap/model/name/Dn/Dn(org.apache.directory.api.ldap.model.schema.SchemaManager,java.lang.String%5B%5D)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/directory/shared/ldap/model/name/Dn/Dn(org.apache.directory.shared.ldap.model.schema.SchemaManager,java.lang.String%5B%5D)|",
+      "|java+method:///org/apache/directory/server/core/api/LdapCoreSessionConnection/exists(org.apache.directory.shared.ldap.model.name.Dn)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/directory/server/core/api/LdapCoreSessionConnection/exists(org.apache.directory.api.ldap.model.name.Dn)|",
+      "|java+constructor:///org/apache/directory/api/ldap/model/name/Dn/Dn(org.apache.directory.api.ldap.model.schema.SchemaManager,java.lang.String%5B%5D)|"
+    ],
+    "affectedLib": "org.apache.directory.api:api-ldap-model:1.0.0-M14",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.directory.server:apacheds-core-api:2.0.0-M8",
+    "coordinatesV2": "org.apache.directory.server:apacheds-core-api:2.0.0-M9",
+    "caller": "|java+method:///org/apache/directory/server/core/api/entry/TestServerEntryUtils/getBytesAttributeType()|",
+    "called": "|java+method:///org/apache/directory/api/ldap/model/schema/MutableAttributeType/setSyntax(org.apache.directory.api.ldap.model.schema.LdapSyntax)|",
+    "v1Body": [
+      "|java+method:///org/apache/directory/shared/ldap/model/schema/MutableMatchingRule/setSyntax(org.apache.directory.shared.ldap.model.schema.LdapSyntax)|",
+      "|java+method:///org/apache/directory/shared/ldap/model/schema/LdapSyntax/setSyntaxChecker(org.apache.directory.shared.ldap.model.schema.SyntaxChecker)|",
+      "|java+constructor:///org/apache/directory/shared/ldap/model/schema/LdapSyntax/LdapSyntax(java.lang.String,java.lang.String,boolean)|",
+      "|java+method:///org/apache/directory/shared/ldap/model/schema/MutableAttributeType/setSyntax(org.apache.directory.shared.ldap.model.schema.LdapSyntax)|",
+      "|java+constructor:///org/apache/directory/shared/ldap/model/schema/comparators/ByteArrayComparator/ByteArrayComparator(java.lang.String)|",
+      "|java+method:///org/apache/directory/shared/ldap/model/schema/MutableMatchingRule/setNormalizer(org.apache.directory.shared.ldap.model.schema.Normalizer)|",
+      "|java+method:///org/apache/directory/shared/ldap/model/schema/MutableMatchingRule/setLdapComparator(org.apache.directory.shared.ldap.model.schema.LdapComparator)|",
+      "|java+constructor:///org/apache/directory/shared/ldap/model/schema/MutableMatchingRule/MutableMatchingRule(java.lang.String)|",
+      "|java+constructor:///org/apache/directory/shared/ldap/model/schema/MutableAttributeType/MutableAttributeType(java.lang.String)|",
+      "|java+method:///org/apache/directory/shared/ldap/model/schema/MutableAttributeType/setEquality(org.apache.directory.shared.ldap.model.schema.MatchingRule)|",
+      "|java+constructor:///org/apache/directory/server/core/api/entry/TestServerEntryUtils$7/TestServerEntryUtils$7(java.lang.String)|",
+      "|java+constructor:///org/apache/directory/server/core/api/entry/TestServerEntryUtils$6/TestServerEntryUtils$6(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/directory/api/ldap/model/schema/LdapSyntax/LdapSyntax(java.lang.String,java.lang.String,boolean)|",
+      "|java+method:///org/apache/directory/api/ldap/model/schema/MutableMatchingRule/setSyntax(org.apache.directory.api.ldap.model.schema.LdapSyntax)|",
+      "|java+method:///org/apache/directory/api/ldap/model/schema/MutableMatchingRule/setNormalizer(org.apache.directory.api.ldap.model.schema.Normalizer)|",
+      "|java+method:///org/apache/directory/api/ldap/model/schema/MutableAttributeType/setEquality(org.apache.directory.api.ldap.model.schema.MatchingRule)|",
+      "|java+method:///org/apache/directory/api/ldap/model/schema/MutableMatchingRule/setLdapComparator(org.apache.directory.api.ldap.model.schema.LdapComparator)|",
+      "|java+method:///org/apache/directory/api/ldap/model/schema/MutableAttributeType/setSyntax(org.apache.directory.api.ldap.model.schema.LdapSyntax)|",
+      "|java+constructor:///org/apache/directory/api/ldap/model/schema/comparators/ByteArrayComparator/ByteArrayComparator(java.lang.String)|",
+      "|java+method:///org/apache/directory/api/ldap/model/schema/LdapSyntax/setSyntaxChecker(org.apache.directory.api.ldap.model.schema.SyntaxChecker)|",
+      "|java+constructor:///org/apache/directory/server/core/api/entry/TestServerEntryUtils$7/TestServerEntryUtils$7(java.lang.String)|",
+      "|java+constructor:///org/apache/directory/server/core/api/entry/TestServerEntryUtils$6/TestServerEntryUtils$6(java.lang.String)|",
+      "|java+constructor:///org/apache/directory/api/ldap/model/schema/MutableMatchingRule/MutableMatchingRule(java.lang.String)|",
+      "|java+constructor:///org/apache/directory/api/ldap/model/schema/MutableAttributeType/MutableAttributeType(java.lang.String)|"
+    ],
+    "affectedLib": "org.apache.directory.api:api-ldap-model:1.0.0-M14",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.directory.server:apacheds-core-api:2.0.0-M8",
+    "coordinatesV2": "org.apache.directory.server:apacheds-core-api:2.0.0-M9",
+    "caller": "|java+constructor:///org/apache/directory/server/core/api/entry/TestServerEntryUtils$3/TestServerEntryUtils$3(java.lang.String)|",
+    "called": "|java+constructor:///org/apache/directory/api/ldap/model/schema/Normalizer/Normalizer(java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/directory/shared/ldap/model/schema/Normalizer/Normalizer(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/directory/api/ldap/model/schema/Normalizer/Normalizer(java.lang.String)|"
+    ],
+    "affectedLib": "org.apache.directory.api:api-ldap-model:1.0.0-M14",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.directory.server:apacheds-core-api:2.0.0-M8",
+    "coordinatesV2": "org.apache.directory.server:apacheds-core-api:2.0.0-M9",
+    "caller": "|java+method:///org/apache/directory/server/core/api/filtering/BaseEntryFilteringCursor/previous()|",
+    "called": "|java+constructor:///org/apache/directory/api/ldap/model/exception/OperationAbandonedException/OperationAbandonedException()|",
+    "v1Body": [
+      "|java+method:///org/apache/directory/server/core/api/filtering/BaseEntryFilteringCursor/getOperationContext()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+constructor:///org/apache/directory/server/core/api/entry/ClonedServerEntrySearch/ClonedServerEntrySearch(org.apache.directory.shared.ldap.model.entry.Entry)|",
+      "|java+method:///java/util/List/isEmpty()|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String)|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///org/apache/directory/shared/ldap/model/cursor/Cursor/previous()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/apache/directory/shared/ldap/model/cursor/Cursor/get()|",
+      "|java+method:///java/util/List/get(int)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///org/apache/directory/server/core/api/interceptor/context/SearchingOperationContext/isAbandoned()|",
+      "|java+method:///org/apache/directory/server/core/api/filtering/EntryFilter/accept(org.apache.directory.server.core.api.interceptor.context.SearchingOperationContext,org.apache.directory.shared.ldap.model.entry.Entry)|",
+      "|java+method:///org/apache/directory/server/core/api/filtering/BaseEntryFilteringCursor/filterContents(org.apache.directory.shared.ldap.model.entry.Entry)|",
+      "|java+constructor:///org/apache/directory/shared/ldap/model/exception/OperationAbandonedException/OperationAbandonedException()|",
+      "|java+method:///org/apache/directory/server/core/api/filtering/BaseEntryFilteringCursor/close()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/directory/server/core/api/interceptor/context/SearchOperationContext/isAbandoned()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/apache/directory/server/core/api/entry/ServerEntryUtils/filterContents(org.apache.directory.api.ldap.model.schema.SchemaManager,org.apache.directory.server.core.api.interceptor.context.FilteringOperationContext,org.apache.directory.api.ldap.model.entry.Entry)|",
+      "|java+method:///java/util/List/isEmpty()|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String)|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/apache/directory/api/ldap/model/cursor/Cursor/get()|",
+      "|java+method:///org/apache/directory/api/ldap/model/cursor/Cursor/previous()|",
+      "|java+method:///java/util/List/get(int)|",
+      "|java+method:///org/apache/directory/server/core/api/filtering/BaseEntryFilteringCursor/close()|",
+      "|java+constructor:///org/apache/directory/api/ldap/model/exception/OperationAbandonedException/OperationAbandonedException()|",
+      "|java+method:///org/apache/directory/server/core/api/filtering/EntryFilter/accept(org.apache.directory.server.core.api.interceptor.context.SearchOperationContext,org.apache.directory.api.ldap.model.entry.Entry)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+constructor:///org/apache/directory/server/core/api/entry/ClonedServerEntrySearch/ClonedServerEntrySearch(org.apache.directory.api.ldap.model.entry.Entry)|"
+    ],
+    "affectedLib": "org.apache.directory.api:api-ldap-model:1.0.0-M14",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.directory.server:apacheds-core-api:2.0.0-M8",
+    "coordinatesV2": "org.apache.directory.server:apacheds-core-api:2.0.0-M9",
+    "caller": "|java+constructor:///org/apache/directory/server/core/api/authn/ppolicy/PasswordPolicyException/PasswordPolicyException(int)|",
+    "called": "|java+constructor:///org/apache/directory/api/ldap/model/exception/LdapException/LdapException()|",
+    "v1Body": [
+      "|java+constructor:///org/apache/directory/shared/ldap/model/exception/LdapException/LdapException()|",
+      "|java+method:///org/apache/directory/server/core/api/authn/ppolicy/PasswordPolicyException/validateErrorCode(int)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/directory/api/ldap/model/exception/LdapException/LdapException()|",
+      "|java+method:///org/apache/directory/server/core/api/authn/ppolicy/PasswordPolicyException/validateErrorCode(int)|"
+    ],
+    "affectedLib": "org.apache.directory.api:api-ldap-model:1.0.0-M14",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.directory.server:apacheds-core-api:2.0.0-M8",
+    "coordinatesV2": "org.apache.directory.server:apacheds-core-api:2.0.0-M9",
+    "caller": "|java+method:///org/apache/directory/server/core/api/LdapCoreSessionConnection/delete(java.lang.String)|",
+    "called": "|java+constructor:///org/apache/directory/api/ldap/model/name/Dn/Dn(org.apache.directory.api.ldap.model.schema.SchemaManager,java.lang.String%5B%5D)|",
+    "v1Body": [
+      "|java+method:///org/apache/directory/server/core/api/LdapCoreSessionConnection/delete(org.apache.directory.shared.ldap.model.name.Dn)|",
+      "|java+constructor:///org/apache/directory/shared/ldap/model/name/Dn/Dn(org.apache.directory.shared.ldap.model.schema.SchemaManager,java.lang.String%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/directory/server/core/api/LdapCoreSessionConnection/delete(org.apache.directory.api.ldap.model.name.Dn)|",
+      "|java+constructor:///org/apache/directory/api/ldap/model/name/Dn/Dn(org.apache.directory.api.ldap.model.schema.SchemaManager,java.lang.String%5B%5D)|"
+    ],
+    "affectedLib": "org.apache.directory.api:api-ldap-model:1.0.0-M14",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.directory.server:apacheds-core-api:2.0.0-M8",
+    "coordinatesV2": "org.apache.directory.server:apacheds-core-api:2.0.0-M9",
+    "caller": "|java+constructor:///org/apache/directory/server/core/api/entry/TestServerEntryUtils$2/TestServerEntryUtils$2(java.lang.String)|",
+    "called": "|java+constructor:///org/apache/directory/api/ldap/model/schema/LdapComparator/LdapComparator(java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/directory/shared/ldap/model/schema/LdapComparator/LdapComparator(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/directory/api/ldap/model/schema/LdapComparator/LdapComparator(java.lang.String)|"
+    ],
+    "affectedLib": "org.apache.directory.api:api-ldap-model:1.0.0-M14",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.directory.server:apacheds-core-api:2.0.0-M8",
+    "coordinatesV2": "org.apache.directory.server:apacheds-core-api:2.0.0-M9",
+    "caller": "|java+method:///org/apache/directory/server/core/api/LdapCoreSessionConnection/moveAndRename(java.lang.String,java.lang.String)|",
+    "called": "|java+constructor:///org/apache/directory/api/ldap/model/name/Dn/Dn(org.apache.directory.api.ldap.model.schema.SchemaManager,java.lang.String%5B%5D)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/directory/shared/ldap/model/name/Dn/Dn(org.apache.directory.shared.ldap.model.schema.SchemaManager,java.lang.String%5B%5D)|",
+      "|java+method:///org/apache/directory/server/core/api/LdapCoreSessionConnection/moveAndRename(org.apache.directory.shared.ldap.model.name.Dn,org.apache.directory.shared.ldap.model.name.Dn,boolean)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/directory/server/core/api/LdapCoreSessionConnection/moveAndRename(org.apache.directory.api.ldap.model.name.Dn,org.apache.directory.api.ldap.model.name.Dn,boolean)|",
+      "|java+constructor:///org/apache/directory/api/ldap/model/name/Dn/Dn(org.apache.directory.api.ldap.model.schema.SchemaManager,java.lang.String%5B%5D)|"
+    ],
+    "affectedLib": "org.apache.directory.api:api-ldap-model:1.0.0-M14",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.directory.server:apacheds-core-api:2.0.0-M8",
+    "coordinatesV2": "org.apache.directory.server:apacheds-core-api:2.0.0-M9",
+    "caller": "|java+method:///org/apache/directory/server/core/api/interceptor/context/BindOperationContext/getAuthenticationLevel()|",
+    "called": "|java+method:///org/apache/directory/api/ldap/model/name/Dn/isEmpty()|",
+    "v1Body": [
+      "|java+method:///org/apache/directory/shared/ldap/model/name/Dn/isEmpty()|",
+      "|java+method:///org/apache/directory/shared/util/Strings/isEmpty(byte%5B%5D)|",
+      "|java+constructor:///org/apache/directory/shared/ldap/model/exception/LdapAuthenticationException/LdapAuthenticationException(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/directory/api/util/Strings/isEmpty(byte%5B%5D)|",
+      "|java+constructor:///org/apache/directory/api/ldap/model/exception/LdapAuthenticationException/LdapAuthenticationException(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/apache/directory/api/ldap/model/name/Dn/isEmpty()|"
+    ],
+    "affectedLib": "org.apache.directory.api:api-ldap-model:1.0.0-M14",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.directory.server:apacheds-core-api:2.0.0-M8",
+    "coordinatesV2": "org.apache.directory.server:apacheds-core-api:2.0.0-M9",
+    "caller": "|java+method:///org/apache/directory/server/core/api/filtering/BaseEntryFilteringCursor/get()|",
+    "called": "|java+constructor:///org/apache/directory/api/ldap/model/cursor/InvalidCursorPositionException/InvalidCursorPositionException()|",
+    "v1Body": [
+      "|java+method:///org/apache/directory/server/core/api/filtering/BaseEntryFilteringCursor/available()|",
+      "|java+constructor:///org/apache/directory/shared/ldap/model/cursor/InvalidCursorPositionException/InvalidCursorPositionException()|",
+      "|java+method:///org/apache/directory/server/core/api/filtering/BaseEntryFilteringCursor/get()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/directory/server/core/api/filtering/BaseEntryFilteringCursor/available()|",
+      "|java+method:///org/apache/directory/server/core/api/filtering/BaseEntryFilteringCursor/get()|",
+      "|java+constructor:///org/apache/directory/api/ldap/model/cursor/InvalidCursorPositionException/InvalidCursorPositionException()|"
+    ],
+    "affectedLib": "org.apache.directory.api:api-ldap-model:1.0.0-M14",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.directory.server:apacheds-core-api:2.0.0-M8",
+    "coordinatesV2": "org.apache.directory.server:apacheds-core-api:2.0.0-M9",
+    "caller": "|java+method:///org/apache/directory/server/core/api/LdapCoreSessionConnection/lookup(java.lang.String,java.lang.String%5B%5D)|",
+    "called": "|java+constructor:///org/apache/directory/api/ldap/model/name/Dn/Dn(org.apache.directory.api.ldap.model.schema.SchemaManager,java.lang.String%5B%5D)|",
+    "v1Body": [
+      "|java+method:///org/apache/directory/server/core/api/LdapCoreSessionConnection/_lookup(org.apache.directory.shared.ldap.model.name.Dn,org.apache.directory.shared.ldap.model.message.Control%5B%5D,java.lang.String%5B%5D)|",
+      "|java+constructor:///org/apache/directory/shared/ldap/model/name/Dn/Dn(org.apache.directory.shared.ldap.model.schema.SchemaManager,java.lang.String%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/directory/server/core/api/LdapCoreSessionConnection/lookup(org.apache.directory.api.ldap.model.name.Dn,org.apache.directory.api.ldap.model.message.Control%5B%5D,java.lang.String%5B%5D)|",
+      "|java+constructor:///org/apache/directory/api/ldap/model/name/Dn/Dn(org.apache.directory.api.ldap.model.schema.SchemaManager,java.lang.String%5B%5D)|"
+    ],
+    "affectedLib": "org.apache.directory.api:api-ldap-model:1.0.0-M14",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.directory.server:apacheds-core-api:2.0.0-M8",
+    "coordinatesV2": "org.apache.directory.server:apacheds-core-api:2.0.0-M9",
+    "caller": "|java+method:///org/apache/directory/server/core/api/schema/SchemaPartition/modify(org.apache.directory.server.core.api.interceptor.context.ModifyOperationContext)|",
+    "called": "|java+method:///org/apache/directory/api/ldap/model/name/Dn/equals(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/apache/directory/server/core/api/interceptor/context/ModifyOperationContext/setEntry(org.apache.directory.shared.ldap.model.entry.Entry)|",
+      "|java+method:///org/apache/directory/shared/ldap/model/name/Dn/equals(java.lang.Object)|",
+      "|java+method:///org/apache/directory/shared/ldap/model/schema/SchemaUtils/getTargetEntry(java.util.List,org.apache.directory.shared.ldap.model.entry.Entry)|",
+      "|java+method:///org/apache/directory/server/core/api/schema/registries/synchronizers/RegistrySynchronizerAdaptor/modify(org.apache.directory.server.core.api.interceptor.context.ModifyOperationContext,org.apache.directory.shared.ldap.model.entry.Entry,boolean)|",
+      "|java+method:///org/apache/directory/server/core/api/interceptor/context/ModifyOperationContext/getDn()|",
+      "|java+method:///org/apache/directory/server/core/api/interceptor/context/ModifyOperationContext/getSession()|",
+      "|java+method:///org/apache/directory/server/core/api/interceptor/context/ModifyOperationContext/getModItems()|",
+      "|java+method:///org/apache/directory/server/core/api/interceptor/context/ModifyOperationContext/getEntry()|",
+      "|java+constructor:///org/apache/directory/server/core/api/interceptor/context/LookupOperationContext/LookupOperationContext(org.apache.directory.server.core.api.CoreSession,org.apache.directory.shared.ldap.model.name.Dn)|",
+      "|java+method:///org/apache/directory/server/core/api/interceptor/context/ModifyOperationContext/hasRequestControl(java.lang.String)|",
+      "|java+method:///org/apache/directory/server/core/api/schema/SchemaPartition/updateSchemaModificationAttributes(org.apache.directory.server.core.api.interceptor.context.OperationContext)|",
+      "|java+method:///org/apache/directory/server/core/api/partition/Partition/modify(org.apache.directory.server.core.api.interceptor.context.ModifyOperationContext)|",
+      "|java+method:///org/apache/directory/server/core/api/partition/Partition/lookup(org.apache.directory.server.core.api.interceptor.context.LookupOperationContext)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/directory/server/core/api/interceptor/context/ModifyOperationContext/getDn()|",
+      "|java+method:///org/apache/directory/server/core/api/schema/registries/synchronizers/RegistrySynchronizerAdaptor/modify(org.apache.directory.server.core.api.interceptor.context.ModifyOperationContext,org.apache.directory.api.ldap.model.entry.Entry,boolean)|",
+      "|java+method:///org/apache/directory/server/core/api/interceptor/context/ModifyOperationContext/setEntry(org.apache.directory.api.ldap.model.entry.Entry)|",
+      "|java+method:///org/apache/directory/server/core/api/interceptor/context/ModifyOperationContext/getModItems()|",
+      "|java+method:///org/apache/directory/server/core/api/interceptor/context/ModifyOperationContext/getEntry()|",
+      "|java+method:///org/apache/directory/api/ldap/model/name/Dn/equals(java.lang.Object)|",
+      "|java+method:///org/apache/directory/server/core/api/interceptor/context/ModifyOperationContext/getSession()|",
+      "|java+method:///org/apache/directory/api/ldap/model/schema/SchemaUtils/getTargetEntry(java.util.List,org.apache.directory.api.ldap.model.entry.Entry)|",
+      "|java+constructor:///org/apache/directory/server/core/api/interceptor/context/LookupOperationContext/LookupOperationContext(org.apache.directory.server.core.api.CoreSession,org.apache.directory.api.ldap.model.name.Dn)|",
+      "|java+method:///org/apache/directory/server/core/api/interceptor/context/ModifyOperationContext/hasRequestControl(java.lang.String)|",
+      "|java+method:///org/apache/directory/server/core/api/schema/SchemaPartition/updateSchemaModificationAttributes(org.apache.directory.server.core.api.interceptor.context.OperationContext)|",
+      "|java+method:///org/apache/directory/server/core/api/partition/Partition/modify(org.apache.directory.server.core.api.interceptor.context.ModifyOperationContext)|",
+      "|java+method:///org/apache/directory/server/core/api/partition/Partition/lookup(org.apache.directory.server.core.api.interceptor.context.LookupOperationContext)|"
+    ],
+    "affectedLib": "org.apache.directory.api:api-ldap-model:1.0.0-M14",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.directory.server:apacheds-core-api:2.0.0-M8",
+    "coordinatesV2": "org.apache.directory.server:apacheds-core-api:2.0.0-M9",
+    "caller": "|java+method:///org/apache/directory/server/core/api/EntryToResponseCursor/next()|",
+    "called": "|java+constructor:///org/apache/directory/api/ldap/model/message/SearchResultDoneImpl/SearchResultDoneImpl(int)|",
+    "v1Body": [
+      "|java+method:///org/apache/directory/shared/ldap/model/cursor/Cursor/next()|",
+      "|java+method:///org/apache/directory/shared/ldap/model/message/SearchResultDone/getLdapResult()|",
+      "|java+method:///org/apache/directory/shared/ldap/model/message/LdapResult/setResultCode(org.apache.directory.shared.ldap.model.message.ResultCodeEnum)|",
+      "|java+constructor:///org/apache/directory/shared/ldap/model/message/SearchResultDoneImpl/SearchResultDoneImpl(int)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/directory/api/ldap/model/cursor/Cursor/next()|",
+      "|java+method:///org/apache/directory/api/ldap/model/message/LdapResult/setResultCode(org.apache.directory.api.ldap.model.message.ResultCodeEnum)|",
+      "|java+method:///org/apache/directory/api/ldap/model/message/SearchResultDone/getLdapResult()|",
+      "|java+constructor:///org/apache/directory/api/ldap/model/message/SearchResultDoneImpl/SearchResultDoneImpl(int)|"
+    ],
+    "affectedLib": "org.apache.directory.api:api-ldap-model:1.0.0-M14",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.directory.server:apacheds-core-api:2.0.0-M8",
+    "coordinatesV2": "org.apache.directory.server:apacheds-core-api:2.0.0-M9",
+    "caller": "|java+method:///org/apache/directory/server/core/api/filtering/BaseEntryFilteringCursor/first()|",
+    "called": "|java+constructor:///org/apache/directory/api/ldap/model/exception/OperationAbandonedException/OperationAbandonedException()|",
+    "v1Body": [
+      "|java+method:///org/apache/directory/server/core/api/filtering/BaseEntryFilteringCursor/getOperationContext()|",
+      "|java+method:///org/apache/directory/server/core/api/filtering/BaseEntryFilteringCursor/next()|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String)|",
+      "|java+method:///org/apache/directory/server/core/api/filtering/BaseEntryFilteringCursor/beforeFirst()|",
+      "|java+method:///org/apache/directory/server/core/api/interceptor/context/SearchingOperationContext/isAbandoned()|",
+      "|java+constructor:///org/apache/directory/shared/ldap/model/exception/OperationAbandonedException/OperationAbandonedException()|",
+      "|java+method:///org/apache/directory/server/core/api/filtering/BaseEntryFilteringCursor/close()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/directory/server/core/api/interceptor/context/SearchOperationContext/isAbandoned()|",
+      "|java+method:///org/apache/directory/server/core/api/filtering/BaseEntryFilteringCursor/next()|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String)|",
+      "|java+method:///org/apache/directory/server/core/api/filtering/BaseEntryFilteringCursor/beforeFirst()|",
+      "|java+constructor:///org/apache/directory/api/ldap/model/exception/OperationAbandonedException/OperationAbandonedException()|",
+      "|java+method:///org/apache/directory/server/core/api/filtering/BaseEntryFilteringCursor/close()|"
+    ],
+    "affectedLib": "org.apache.directory.api:api-ldap-model:1.0.0-M14",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.directory.server:apacheds-core-api:2.0.0-M8",
+    "coordinatesV2": "org.apache.directory.server:apacheds-core-api:2.0.0-M9",
+    "caller": "|java+method:///org/apache/directory/server/core/api/filtering/BaseEntryFilteringCursor/next()|",
+    "called": "|java+constructor:///org/apache/directory/api/ldap/model/exception/OperationAbandonedException/OperationAbandonedException()|",
+    "v1Body": [
+      "|java+method:///org/apache/directory/server/core/api/filtering/BaseEntryFilteringCursor/getOperationContext()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+constructor:///org/apache/directory/server/core/api/entry/ClonedServerEntrySearch/ClonedServerEntrySearch(org.apache.directory.shared.ldap.model.entry.Entry)|",
+      "|java+method:///org/apache/directory/shared/ldap/model/cursor/Cursor/next()|",
+      "|java+method:///java/util/List/isEmpty()|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String)|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/apache/directory/shared/ldap/model/cursor/Cursor/get()|",
+      "|java+method:///java/util/List/get(int)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///org/apache/directory/server/core/api/interceptor/context/SearchingOperationContext/isAbandoned()|",
+      "|java+method:///org/apache/directory/server/core/api/filtering/EntryFilter/accept(org.apache.directory.server.core.api.interceptor.context.SearchingOperationContext,org.apache.directory.shared.ldap.model.entry.Entry)|",
+      "|java+method:///org/apache/directory/server/core/api/filtering/BaseEntryFilteringCursor/filterContents(org.apache.directory.shared.ldap.model.entry.Entry)|",
+      "|java+constructor:///org/apache/directory/shared/ldap/model/exception/OperationAbandonedException/OperationAbandonedException()|",
+      "|java+method:///org/apache/directory/server/core/api/filtering/BaseEntryFilteringCursor/close()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/directory/server/core/api/interceptor/context/SearchOperationContext/isAbandoned()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/apache/directory/server/core/api/entry/ServerEntryUtils/filterContents(org.apache.directory.api.ldap.model.schema.SchemaManager,org.apache.directory.server.core.api.interceptor.context.FilteringOperationContext,org.apache.directory.api.ldap.model.entry.Entry)|",
+      "|java+method:///java/util/List/isEmpty()|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/apache/directory/api/ldap/model/cursor/Cursor/get()|",
+      "|java+method:///java/util/List/get(int)|",
+      "|java+method:///org/apache/directory/server/core/api/filtering/BaseEntryFilteringCursor/close()|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///org/apache/directory/api/ldap/model/cursor/Cursor/next()|",
+      "|java+constructor:///org/apache/directory/api/ldap/model/exception/OperationAbandonedException/OperationAbandonedException()|",
+      "|java+method:///org/apache/directory/server/core/api/filtering/EntryFilter/accept(org.apache.directory.server.core.api.interceptor.context.SearchOperationContext,org.apache.directory.api.ldap.model.entry.Entry)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+constructor:///org/apache/directory/server/core/api/entry/ClonedServerEntrySearch/ClonedServerEntrySearch(org.apache.directory.api.ldap.model.entry.Entry)|"
+    ],
+    "affectedLib": "org.apache.directory.api:api-ldap-model:1.0.0-M14",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.directory.server:apacheds-core-api:2.0.0-M8",
+    "coordinatesV2": "org.apache.directory.server:apacheds-core-api:2.0.0-M9",
+    "caller": "|java+method:///org/apache/directory/server/core/api/schema/registries/synchronizers/RegistrySynchronizerAdaptor/delete(org.apache.directory.server.core.api.interceptor.context.DeleteOperationContext,boolean)|",
+    "called": "|java+method:///org/apache/directory/api/ldap/model/name/Dn/getRdn()|",
+    "v1Body": [
+      "|java+method:///org/apache/directory/shared/util/Strings/trim(java.lang.String)|",
+      "|java+method:///org/apache/directory/server/core/api/schema/registries/synchronizers/SchemaSynchronizer/delete(org.apache.directory.shared.ldap.model.entry.Entry,boolean)|",
+      "|java+method:///org/apache/directory/shared/ldap/model/entry/Entry/get(org.apache.directory.shared.ldap.model.schema.AttributeType)|",
+      "|java+method:///org/apache/directory/shared/ldap/model/entry/Value/getString()|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/Set/contains(java.lang.Object)|",
+      "|java+method:///org/apache/directory/shared/ldap/model/name/Rdn/getNormValue()|",
+      "|java+method:///org/apache/directory/server/core/api/interceptor/context/DeleteOperationContext/getEntry()|",
+      "|java+method:///org/apache/directory/shared/ldap/model/name/Dn/size()|",
+      "|java+method:///org/apache/directory/server/core/api/interceptor/context/DeleteOperationContext/getDn()|",
+      "|java+method:///org/apache/directory/shared/ldap/model/name/Dn/getRdn()|",
+      "|java+constructor:///org/apache/directory/shared/ldap/model/exception/LdapUnwillingToPerformException/LdapUnwillingToPerformException(org.apache.directory.shared.ldap.model.message.ResultCodeEnum)|",
+      "|java+method:///org/apache/directory/shared/ldap/model/entry/Attribute/contains(java.lang.String%5B%5D)|",
+      "|java+method:///org/apache/directory/shared/util/Strings/toLowerCase(java.lang.String)|",
+      "|java+constructor:///org/apache/directory/shared/ldap/model/exception/LdapUnwillingToPerformException/LdapUnwillingToPerformException(org.apache.directory.shared.ldap.model.message.ResultCodeEnum,java.lang.String)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/apache/directory/server/i18n/I18n/err(org.apache.directory.server.i18n.I18n,java.lang.Object%5B%5D)|",
+      "|java+method:///org/apache/directory/server/core/api/schema/registries/synchronizers/RegistrySynchronizer/delete(org.apache.directory.shared.ldap.model.entry.Entry,boolean)|",
+      "|java+method:///org/apache/directory/shared/ldap/model/schema/registries/ObjectClassRegistry/getOidByName(java.lang.String)|",
+      "|java+method:///org/apache/directory/shared/ldap/model/schema/SchemaManager/getObjectClassRegistry()|",
+      "|java+constructor:///org/apache/directory/shared/ldap/model/exception/LdapInvalidDnException/LdapInvalidDnException(org.apache.directory.shared.ldap.model.message.ResultCodeEnum,java.lang.String)|",
+      "|java+method:///org/apache/directory/shared/ldap/model/entry/Attribute/iterator()|",
+      "|java+method:///java/util/Map/containsKey(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/directory/api/util/Strings/toLowerCase(java.lang.String)|",
+      "|java+method:///org/apache/directory/api/ldap/model/name/Dn/getRdn()|",
+      "|java+method:///org/apache/directory/api/ldap/model/entry/Attribute/contains(java.lang.String%5B%5D)|",
+      "|java+method:///org/apache/directory/api/util/Strings/trim(java.lang.String)|",
+      "|java+constructor:///org/apache/directory/api/ldap/model/exception/LdapInvalidDnException/LdapInvalidDnException(org.apache.directory.api.ldap.model.message.ResultCodeEnum,java.lang.String)|",
+      "|java+method:///org/apache/directory/api/ldap/model/entry/Value/getString()|",
+      "|java+method:///org/apache/directory/api/ldap/model/schema/registries/ObjectClassRegistry/getOidByName(java.lang.String)|",
+      "|java+method:///org/apache/directory/api/ldap/model/entry/Entry/get(org.apache.directory.api.ldap.model.schema.AttributeType)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+constructor:///org/apache/directory/api/ldap/model/exception/LdapUnwillingToPerformException/LdapUnwillingToPerformException(org.apache.directory.api.ldap.model.message.ResultCodeEnum)|",
+      "|java+method:///java/util/Set/contains(java.lang.Object)|",
+      "|java+method:///org/apache/directory/server/core/api/schema/registries/synchronizers/RegistrySynchronizer/delete(org.apache.directory.api.ldap.model.entry.Entry,boolean)|",
+      "|java+method:///java/util/Map/containsKey(java.lang.Object)|",
+      "|java+method:///org/apache/directory/server/core/api/interceptor/context/DeleteOperationContext/getEntry()|",
+      "|java+method:///org/apache/directory/server/core/api/interceptor/context/DeleteOperationContext/getDn()|",
+      "|java+method:///org/apache/directory/api/ldap/model/name/Dn/size()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/apache/directory/server/i18n/I18n/err(org.apache.directory.server.i18n.I18n,java.lang.Object%5B%5D)|",
+      "|java+method:///org/apache/directory/api/ldap/model/schema/SchemaManager/getObjectClassRegistry()|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+method:///org/apache/directory/api/ldap/model/name/Rdn/getNormValue()|",
+      "|java+constructor:///org/apache/directory/api/ldap/model/exception/LdapUnwillingToPerformException/LdapUnwillingToPerformException(org.apache.directory.api.ldap.model.message.ResultCodeEnum,java.lang.String)|",
+      "|java+method:///org/apache/directory/server/core/api/schema/registries/synchronizers/SchemaSynchronizer/delete(org.apache.directory.api.ldap.model.entry.Entry,boolean)|",
+      "|java+method:///org/apache/directory/api/ldap/model/entry/Attribute/iterator()|"
+    ],
+    "affectedLib": "org.apache.directory.api:api-ldap-model:1.0.0-M14",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.directory.server:apacheds-core-api:2.0.0-M8",
+    "coordinatesV2": "org.apache.directory.server:apacheds-core-api:2.0.0-M9",
+    "caller": "|java+method:///org/apache/directory/server/core/api/EntryToResponseCursor/getIntermediate()|",
+    "called": "|java+constructor:///org/apache/directory/api/ldap/model/exception/LdapException/LdapException()|",
+    "v1Body": [
+      "|java+constructor:///org/apache/directory/shared/ldap/model/exception/LdapException/LdapException()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/directory/api/ldap/model/exception/LdapException/LdapException()|"
+    ],
+    "affectedLib": "org.apache.directory.api:api-ldap-model:1.0.0-M14",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.directory.server:apacheds-core-api:2.0.0-M8",
+    "coordinatesV2": "org.apache.directory.server:apacheds-core-api:2.0.0-M9",
+    "caller": "|java+method:///org/apache/directory/server/core/api/sp/StoredProcExecutionManager/findStoredProcUnit(org.apache.directory.server.core.api.CoreSession,java.lang.String)|",
+    "called": "|java+constructor:///org/apache/directory/api/ldap/model/filter/EqualityNode/EqualityNode(org.apache.directory.api.ldap.model.schema.AttributeType,org.apache.directory.api.ldap.model.entry.Value)|",
+    "v1Body": [
+      "|java+constructor:///javax/naming/directory/SearchControls/SearchControls()|",
+      "|java+method:///org/apache/directory/server/core/api/filtering/EntryFilteringCursor/first()|",
+      "|java+method:///org/apache/directory/server/core/api/CoreSession/search(org.apache.directory.shared.ldap.model.name.Dn,org.apache.directory.shared.ldap.model.message.SearchScope,org.apache.directory.shared.ldap.model.filter.ExprNode,org.apache.directory.shared.ldap.model.message.AliasDerefMode,java.util.Set)|",
+      "|java+method:///org/apache/directory/server/core/api/DirectoryService/getSchemaManager()|",
+      "|java+method:///org/apache/directory/server/core/api/filtering/EntryFilteringCursor/get()|",
+      "|java+method:///org/apache/directory/server/core/api/sp/StoredProcUtils/extractStoredProcUnitName(java.lang.String)|",
+      "|java+method:///org/apache/directory/server/core/api/filtering/EntryFilteringCursor/close()|",
+      "|java+constructor:///org/apache/directory/shared/ldap/model/entry/StringValue/StringValue(org.apache.directory.shared.ldap.model.schema.AttributeType,java.lang.String)|",
+      "|java+method:///org/apache/directory/server/core/api/CoreSession/getDirectoryService()|",
+      "|java+method:///javax/naming/directory/SearchControls/setSearchScope(int)|",
+      "|java+method:///org/apache/directory/server/core/api/DirectoryService/getDnFactory()|",
+      "|java+constructor:///org/apache/directory/shared/ldap/model/filter/EqualityNode/EqualityNode(org.apache.directory.shared.ldap.model.schema.AttributeType,org.apache.directory.shared.ldap.model.entry.Value)|",
+      "|java+method:///org/apache/directory/server/core/api/DnFactory/create(java.lang.String)|",
+      "|java+method:///javax/naming/directory/SearchControls/setReturningAttributes(java.lang.String%5B%5D)|",
+      "|java+method:///org/apache/directory/shared/ldap/model/schema/SchemaManager/lookupAttributeTypeRegistry(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///javax/naming/directory/SearchControls/SearchControls()|",
+      "|java+method:///org/apache/directory/server/core/api/filtering/EntryFilteringCursor/first()|",
+      "|java+method:///org/apache/directory/server/core/api/DirectoryService/getSchemaManager()|",
+      "|java+method:///org/apache/directory/server/core/api/filtering/EntryFilteringCursor/get()|",
+      "|java+method:///org/apache/directory/server/core/api/filtering/EntryFilteringCursor/close()|",
+      "|java+method:///org/apache/directory/server/core/api/CoreSession/getDirectoryService()|",
+      "|java+method:///javax/naming/directory/SearchControls/setSearchScope(int)|",
+      "|java+method:///org/apache/directory/server/core/api/DnFactory/create(java.lang.String)|",
+      "|java+constructor:///org/apache/directory/api/ldap/model/entry/StringValue/StringValue(org.apache.directory.api.ldap.model.schema.AttributeType,java.lang.String)|",
+      "|java+method:///org/apache/directory/server/core/api/DirectoryService/getDnFactory()|",
+      "|java+method:///org/apache/directory/api/ldap/model/schema/SchemaManager/lookupAttributeTypeRegistry(java.lang.String)|",
+      "|java+constructor:///org/apache/directory/api/ldap/model/filter/EqualityNode/EqualityNode(org.apache.directory.api.ldap.model.schema.AttributeType,org.apache.directory.api.ldap.model.entry.Value)|",
+      "|java+method:///org/apache/directory/server/core/api/sp/StoredProcUtils/extractStoredProcUnitName(java.lang.String)|",
+      "|java+method:///javax/naming/directory/SearchControls/setReturningAttributes(java.lang.String%5B%5D)|",
+      "|java+method:///org/apache/directory/server/core/api/CoreSession/search(org.apache.directory.api.ldap.model.name.Dn,org.apache.directory.api.ldap.model.message.SearchScope,org.apache.directory.api.ldap.model.filter.ExprNode,org.apache.directory.api.ldap.model.message.AliasDerefMode,java.lang.String%5B%5D)|"
+    ],
+    "affectedLib": "org.apache.directory.api:api-ldap-model:1.0.0-M14",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.directory.server:apacheds-core-api:2.0.0-M8",
+    "coordinatesV2": "org.apache.directory.server:apacheds-core-api:2.0.0-M9",
+    "caller": "|java+method:///org/apache/directory/server/core/api/authn/ppolicy/PasswordPolicyConfiguration/validate()|",
+    "called": "|java+constructor:///org/apache/directory/api/ldap/model/exception/LdapException/LdapException(java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/directory/shared/ldap/model/exception/LdapException/LdapException(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///org/apache/directory/api/ldap/model/exception/LdapException/LdapException(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "affectedLib": "org.apache.directory.api:api-ldap-model:1.0.0-M14",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.directory.server:apacheds-core-api:2.0.0-M8",
+    "coordinatesV2": "org.apache.directory.server:apacheds-core-api:2.0.0-M9",
+    "caller": "|java+method:///org/apache/directory/server/core/api/EntryToResponseCursor/getEntry()|",
+    "called": "|java+constructor:///org/apache/directory/api/ldap/model/exception/LdapException/LdapException(java.lang.Throwable)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/directory/shared/ldap/model/exception/LdapException/LdapException(java.lang.Throwable)|",
+      "|java+constructor:///org/apache/directory/shared/ldap/model/exception/LdapException/LdapException()|",
+      "|java+method:///org/apache/directory/shared/ldap/model/cursor/Cursor/available()|",
+      "|java+method:///org/apache/directory/shared/ldap/model/cursor/Cursor/get()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/directory/api/ldap/model/exception/LdapException/LdapException()|",
+      "|java+method:///org/apache/directory/api/ldap/model/cursor/Cursor/available()|",
+      "|java+constructor:///org/apache/directory/api/ldap/model/exception/LdapException/LdapException(java.lang.Throwable)|",
+      "|java+method:///org/apache/directory/api/ldap/model/cursor/Cursor/get()|"
+    ],
+    "affectedLib": "org.apache.directory.api:api-ldap-model:1.0.0-M14",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.directory.server:apacheds-core-api:2.0.0-M8",
+    "coordinatesV2": "org.apache.directory.server:apacheds-core-api:2.0.0-M9",
+    "caller": "|java+constructor:///org/apache/directory/server/core/api/entry/TestServerEntryUtils$MR/TestServerEntryUtils$MR(java.lang.String)|",
+    "called": "|java+constructor:///org/apache/directory/api/ldap/model/schema/MatchingRule/MatchingRule(java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/directory/shared/ldap/model/schema/MatchingRule/MatchingRule(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/directory/api/ldap/model/schema/MatchingRule/MatchingRule(java.lang.String)|"
+    ],
+    "affectedLib": "org.apache.directory.api:api-ldap-model:1.0.0-M14",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.directory.server:apacheds-core-api:2.0.0-M8",
+    "coordinatesV2": "org.apache.directory.server:apacheds-core-api:2.0.0-M9",
+    "caller": "|java+constructor:///org/apache/directory/server/core/api/interceptor/InterceptorException/InterceptorException(org.apache.directory.server.core.api.interceptor.Interceptor,java.lang.String,java.lang.Throwable)|",
+    "called": "|java+constructor:///org/apache/directory/api/ldap/model/exception/LdapException/LdapException(java.lang.String,java.lang.Throwable)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/directory/shared/ldap/model/exception/LdapException/LdapException(java.lang.String,java.lang.Throwable)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/directory/api/ldap/model/exception/LdapException/LdapException(java.lang.String,java.lang.Throwable)|"
+    ],
+    "affectedLib": "org.apache.directory.api:api-ldap-model:1.0.0-M14",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.directory.server:apacheds-core-api:2.0.0-M8",
+    "coordinatesV2": "org.apache.directory.server:apacheds-core-api:2.0.0-M9",
+    "caller": "|java+method:///org/apache/directory/server/core/api/LdapCoreSessionConnection/move(java.lang.String,java.lang.String)|",
+    "called": "|java+constructor:///org/apache/directory/api/ldap/model/name/Dn/Dn(org.apache.directory.api.ldap.model.schema.SchemaManager,java.lang.String%5B%5D)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+constructor:///org/apache/directory/shared/ldap/model/name/Dn/Dn(org.apache.directory.shared.ldap.model.schema.SchemaManager,java.lang.String%5B%5D)|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|",
+      "|java+method:///org/apache/directory/server/core/api/LdapCoreSessionConnection/move(org.apache.directory.shared.ldap.model.name.Dn,org.apache.directory.shared.ldap.model.name.Dn)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+constructor:///org/apache/directory/api/ldap/model/name/Dn/Dn(org.apache.directory.api.ldap.model.schema.SchemaManager,java.lang.String%5B%5D)|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|",
+      "|java+method:///org/apache/directory/server/core/api/LdapCoreSessionConnection/move(org.apache.directory.api.ldap.model.name.Dn,org.apache.directory.api.ldap.model.name.Dn)|"
+    ],
+    "affectedLib": "org.apache.directory.api:api-ldap-model:1.0.0-M14",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.directory.server:apacheds-core-api:2.0.0-M8",
+    "coordinatesV2": "org.apache.directory.server:apacheds-core-api:2.0.0-M9",
+    "caller": "|java+method:///org/apache/directory/server/core/api/LdapCoreSessionConnection/anonymousBind()|",
+    "called": "|java+constructor:///org/apache/directory/api/ldap/model/message/BindRequestImpl/BindRequestImpl()|",
+    "v1Body": [
+      "|java+method:///org/apache/directory/shared/ldap/model/message/BindRequest/setName(java.lang.String)|",
+      "|java+method:///org/apache/directory/shared/ldap/model/message/BindRequest/setCredentials(byte%5B%5D)|",
+      "|java+constructor:///org/apache/directory/shared/ldap/model/message/BindRequestImpl/BindRequestImpl()|",
+      "|java+method:///org/apache/directory/server/core/api/LdapCoreSessionConnection/bind(org.apache.directory.shared.ldap.model.message.BindRequest)|",
+      "|java+method:///org/apache/directory/shared/ldap/model/message/ResultCodeEnum/processResponse(org.apache.directory.shared.ldap.model.message.ResultResponse)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/directory/api/ldap/model/message/ResultCodeEnum/processResponse(org.apache.directory.api.ldap.model.message.ResultResponse)|",
+      "|java+constructor:///org/apache/directory/api/ldap/model/message/BindRequestImpl/BindRequestImpl()|",
+      "|java+method:///org/apache/directory/api/ldap/model/message/BindRequest/setCredentials(byte%5B%5D)|",
+      "|java+method:///org/apache/directory/server/core/api/LdapCoreSessionConnection/bind(org.apache.directory.api.ldap.model.message.BindRequest)|",
+      "|java+method:///org/apache/directory/api/ldap/model/message/BindRequest/setName(java.lang.String)|"
+    ],
+    "affectedLib": "org.apache.directory.api:api-ldap-model:1.0.0-M14",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.directory.server:apacheds-core-api:2.0.0-M8",
+    "coordinatesV2": "org.apache.directory.server:apacheds-core-api:2.0.0-M9",
+    "caller": "|java+method:///org/apache/directory/server/core/api/LdapCoreSessionConnection/moveAndRename(java.lang.String,java.lang.String,boolean)|",
+    "called": "|java+constructor:///org/apache/directory/api/ldap/model/name/Dn/Dn(org.apache.directory.api.ldap.model.schema.SchemaManager,java.lang.String%5B%5D)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/directory/shared/ldap/model/name/Dn/Dn(org.apache.directory.shared.ldap.model.schema.SchemaManager,java.lang.String%5B%5D)|",
+      "|java+method:///org/apache/directory/server/core/api/LdapCoreSessionConnection/moveAndRename(org.apache.directory.shared.ldap.model.name.Dn,org.apache.directory.shared.ldap.model.name.Dn,boolean)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/directory/server/core/api/LdapCoreSessionConnection/moveAndRename(org.apache.directory.api.ldap.model.name.Dn,org.apache.directory.api.ldap.model.name.Dn,boolean)|",
+      "|java+constructor:///org/apache/directory/api/ldap/model/name/Dn/Dn(org.apache.directory.api.ldap.model.schema.SchemaManager,java.lang.String%5B%5D)|"
+    ],
+    "affectedLib": "org.apache.directory.api:api-ldap-model:1.0.0-M14",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.directory.server:apacheds-core-api:2.0.0-M8",
+    "coordinatesV2": "org.apache.directory.server:apacheds-core-api:2.0.0-M9",
+    "caller": "|java+method:///org/apache/directory/server/core/api/schema/registries/synchronizers/AbstractRegistrySynchronizer/getOids(java.util.Set)|",
+    "called": "|java+method:///org/apache/directory/api/ldap/model/name/Dn/getRdn()|",
+    "v1Body": [
+      "|java+method:///org/apache/directory/shared/ldap/model/entry/Entry/getDn()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/util/Set/size()|",
+      "|java+constructor:///java/util/HashSet/HashSet(int)|",
+      "|java+method:///org/apache/directory/shared/ldap/model/entry/Value/getString()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/apache/directory/shared/ldap/model/name/Rdn/getNormValue()|",
+      "|java+method:///java/util/Set/iterator()|",
+      "|java+method:///java/util/Set/add(java.lang.Object)|",
+      "|java+method:///org/apache/directory/shared/ldap/model/name/Dn/getRdn()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/directory/api/ldap/model/entry/Entry/getDn()|",
+      "|java+method:///org/apache/directory/api/ldap/model/name/Dn/getRdn()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/apache/directory/api/ldap/model/entry/Value/getString()|",
+      "|java+method:///java/util/Set/size()|",
+      "|java+constructor:///java/util/HashSet/HashSet(int)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/apache/directory/api/ldap/model/name/Rdn/getNormValue()|",
+      "|java+method:///java/util/Set/iterator()|",
+      "|java+method:///java/util/Set/add(java.lang.Object)|"
+    ],
+    "affectedLib": "org.apache.directory.api:api-ldap-model:1.0.0-M14",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.directory.server:apacheds-core-api:2.0.0-M8",
+    "coordinatesV2": "org.apache.directory.server:apacheds-core-api:2.0.0-M9",
+    "caller": "|java+constructor:///org/apache/directory/server/core/api/interceptor/InterceptorException/InterceptorException(org.apache.directory.server.core.api.interceptor.Interceptor,java.lang.String)|",
+    "called": "|java+constructor:///org/apache/directory/api/ldap/model/exception/LdapException/LdapException(java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/directory/shared/ldap/model/exception/LdapException/LdapException(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/directory/api/ldap/model/exception/LdapException/LdapException(java.lang.String)|"
+    ],
+    "affectedLib": "org.apache.directory.api:api-ldap-model:1.0.0-M14",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.directory.server:apacheds-core-api:2.0.0-M8",
+    "coordinatesV2": "org.apache.directory.server:apacheds-core-api:2.0.0-M9",
+    "caller": "|java+constructor:///org/apache/directory/server/core/api/event/NotificationCriteria/NotificationCriteria()|",
+    "called": "|java+constructor:///org/apache/directory/api/ldap/model/filter/PresenceNode/PresenceNode(java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/directory/shared/ldap/model/filter/PresenceNode/PresenceNode(java.lang.String)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/directory/api/ldap/model/filter/PresenceNode/PresenceNode(java.lang.String)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "org.apache.directory.api:api-ldap-model:1.0.0-M14",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.directory.server:apacheds-core-api:2.0.0-M8",
+    "coordinatesV2": "org.apache.directory.server:apacheds-core-api:2.0.0-M9",
+    "caller": "|java+method:///org/apache/directory/server/core/api/schema/registries/synchronizers/ComparatorSynchronizer/checkOidIsUniqueForComparator(java.lang.String)|",
+    "called": "|java+constructor:///org/apache/directory/api/ldap/model/exception/LdapSchemaViolationException/LdapSchemaViolationException(org.apache.directory.api.ldap.model.message.ResultCodeEnum,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/apache/directory/server/i18n/I18n/err(org.apache.directory.server.i18n.I18n,java.lang.Object%5B%5D)|",
+      "|java+method:///org/apache/directory/shared/ldap/model/schema/registries/ComparatorRegistry/contains(java.lang.String)|",
+      "|java+constructor:///org/apache/directory/shared/ldap/model/exception/LdapSchemaViolationException/LdapSchemaViolationException(org.apache.directory.shared.ldap.model.message.ResultCodeEnum,java.lang.String)|",
+      "|java+method:///org/apache/directory/shared/ldap/model/schema/SchemaManager/getComparatorRegistry()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/directory/api/ldap/model/exception/LdapSchemaViolationException/LdapSchemaViolationException(org.apache.directory.api.ldap.model.message.ResultCodeEnum,java.lang.String)|",
+      "|java+method:///org/apache/directory/server/i18n/I18n/err(org.apache.directory.server.i18n.I18n,java.lang.Object%5B%5D)|",
+      "|java+method:///org/apache/directory/api/ldap/model/schema/registries/ComparatorRegistry/contains(java.lang.String)|",
+      "|java+method:///org/apache/directory/api/ldap/model/schema/SchemaManager/getComparatorRegistry()|"
+    ],
+    "affectedLib": "org.apache.directory.api:api-ldap-model:1.0.0-M14",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.directory.server:apacheds-core-api:2.0.0-M8",
+    "coordinatesV2": "org.apache.directory.server:apacheds-core-api:2.0.0-M9",
+    "caller": "|java+method:///org/apache/directory/server/core/api/schema/registries/synchronizers/NormalizerSynchronizer/checkOidIsUniqueForNormalizer(java.lang.String)|",
+    "called": "|java+constructor:///org/apache/directory/api/ldap/model/exception/LdapSchemaViolationException/LdapSchemaViolationException(org.apache.directory.api.ldap.model.message.ResultCodeEnum,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/apache/directory/server/i18n/I18n/err(org.apache.directory.server.i18n.I18n,java.lang.Object%5B%5D)|",
+      "|java+constructor:///org/apache/directory/shared/ldap/model/exception/LdapSchemaViolationException/LdapSchemaViolationException(org.apache.directory.shared.ldap.model.message.ResultCodeEnum,java.lang.String)|",
+      "|java+method:///org/apache/directory/shared/ldap/model/schema/SchemaManager/getNormalizerRegistry()|",
+      "|java+method:///org/apache/directory/shared/ldap/model/schema/registries/NormalizerRegistry/contains(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/directory/api/ldap/model/schema/SchemaManager/getNormalizerRegistry()|",
+      "|java+constructor:///org/apache/directory/api/ldap/model/exception/LdapSchemaViolationException/LdapSchemaViolationException(org.apache.directory.api.ldap.model.message.ResultCodeEnum,java.lang.String)|",
+      "|java+method:///org/apache/directory/server/i18n/I18n/err(org.apache.directory.server.i18n.I18n,java.lang.Object%5B%5D)|",
+      "|java+method:///org/apache/directory/api/ldap/model/schema/registries/NormalizerRegistry/contains(java.lang.String)|"
+    ],
+    "affectedLib": "org.apache.directory.api:api-ldap-model:1.0.0-M14",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.directory.server:apacheds-core-api:2.0.0-M8",
+    "coordinatesV2": "org.apache.directory.server:apacheds-core-api:2.0.0-M9",
+    "caller": "|java+method:///org/apache/directory/server/core/api/entry/TestServerEntryUtils/getCaseIgnoringAttributeNoNumbersType()|",
+    "called": "|java+method:///org/apache/directory/api/ldap/model/schema/MutableAttributeType/setSyntax(org.apache.directory.api.ldap.model.schema.LdapSyntax)|",
+    "v1Body": [
+      "|java+method:///org/apache/directory/shared/ldap/model/schema/MutableMatchingRule/setSyntax(org.apache.directory.shared.ldap.model.schema.LdapSyntax)|",
+      "|java+method:///org/apache/directory/shared/ldap/model/schema/LdapSyntax/setSyntaxChecker(org.apache.directory.shared.ldap.model.schema.SyntaxChecker)|",
+      "|java+constructor:///org/apache/directory/shared/ldap/model/schema/LdapSyntax/LdapSyntax(java.lang.String,java.lang.String,boolean)|",
+      "|java+method:///org/apache/directory/shared/ldap/model/schema/MutableMatchingRule/getOid()|",
+      "|java+method:///org/apache/directory/shared/ldap/model/schema/MutableAttributeType/setSyntax(org.apache.directory.shared.ldap.model.schema.LdapSyntax)|",
+      "|java+method:///org/apache/directory/shared/ldap/model/schema/MutableMatchingRule/setNormalizer(org.apache.directory.shared.ldap.model.schema.Normalizer)|",
+      "|java+method:///org/apache/directory/shared/ldap/model/schema/MutableMatchingRule/setLdapComparator(org.apache.directory.shared.ldap.model.schema.LdapComparator)|",
+      "|java+constructor:///org/apache/directory/shared/ldap/model/schema/MutableMatchingRule/MutableMatchingRule(java.lang.String)|",
+      "|java+constructor:///org/apache/directory/shared/ldap/model/schema/MutableAttributeType/MutableAttributeType(java.lang.String)|",
+      "|java+constructor:///org/apache/directory/server/core/api/entry/TestServerEntryUtils$2/TestServerEntryUtils$2(java.lang.String)|",
+      "|java+constructor:///org/apache/directory/server/core/api/entry/TestServerEntryUtils$1/TestServerEntryUtils$1(java.lang.String)|",
+      "|java+method:///org/apache/directory/shared/ldap/model/schema/MutableAttributeType/setEquality(org.apache.directory.shared.ldap.model.schema.MatchingRule)|",
+      "|java+constructor:///org/apache/directory/server/core/api/entry/TestServerEntryUtils$3/TestServerEntryUtils$3(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/directory/api/ldap/model/schema/LdapSyntax/LdapSyntax(java.lang.String,java.lang.String,boolean)|",
+      "|java+method:///org/apache/directory/api/ldap/model/schema/MutableMatchingRule/getOid()|",
+      "|java+method:///org/apache/directory/api/ldap/model/schema/MutableMatchingRule/setSyntax(org.apache.directory.api.ldap.model.schema.LdapSyntax)|",
+      "|java+method:///org/apache/directory/api/ldap/model/schema/MutableMatchingRule/setNormalizer(org.apache.directory.api.ldap.model.schema.Normalizer)|",
+      "|java+method:///org/apache/directory/api/ldap/model/schema/MutableAttributeType/setEquality(org.apache.directory.api.ldap.model.schema.MatchingRule)|",
+      "|java+method:///org/apache/directory/api/ldap/model/schema/LdapSyntax/setSyntaxChecker(org.apache.directory.api.ldap.model.schema.SyntaxChecker)|",
+      "|java+method:///org/apache/directory/api/ldap/model/schema/MutableMatchingRule/setLdapComparator(org.apache.directory.api.ldap.model.schema.LdapComparator)|",
+      "|java+method:///org/apache/directory/api/ldap/model/schema/MutableAttributeType/setSyntax(org.apache.directory.api.ldap.model.schema.LdapSyntax)|",
+      "|java+constructor:///org/apache/directory/server/core/api/entry/TestServerEntryUtils$2/TestServerEntryUtils$2(java.lang.String)|",
+      "|java+constructor:///org/apache/directory/server/core/api/entry/TestServerEntryUtils$1/TestServerEntryUtils$1(java.lang.String)|",
+      "|java+constructor:///org/apache/directory/server/core/api/entry/TestServerEntryUtils$3/TestServerEntryUtils$3(java.lang.String)|",
+      "|java+constructor:///org/apache/directory/api/ldap/model/schema/MutableMatchingRule/MutableMatchingRule(java.lang.String)|",
+      "|java+constructor:///org/apache/directory/api/ldap/model/schema/MutableAttributeType/MutableAttributeType(java.lang.String)|"
+    ],
+    "affectedLib": "org.apache.directory.api:api-ldap-model:1.0.0-M14",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.directory.server:apacheds-core-api:2.0.0-M8",
+    "coordinatesV2": "org.apache.directory.server:apacheds-core-api:2.0.0-M9",
+    "caller": "|java+method:///org/apache/directory/server/core/api/LdapCoreSessionConnection/compare(java.lang.String,java.lang.String,byte%5B%5D)|",
+    "called": "|java+constructor:///org/apache/directory/api/ldap/model/name/Dn/Dn(org.apache.directory.api.ldap.model.schema.SchemaManager,java.lang.String%5B%5D)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/directory/shared/ldap/model/name/Dn/Dn(org.apache.directory.shared.ldap.model.schema.SchemaManager,java.lang.String%5B%5D)|",
+      "|java+method:///org/apache/directory/server/core/api/LdapCoreSessionConnection/compare(org.apache.directory.shared.ldap.model.name.Dn,java.lang.String,byte%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/directory/server/core/api/LdapCoreSessionConnection/compare(org.apache.directory.api.ldap.model.name.Dn,java.lang.String,byte%5B%5D)|",
+      "|java+constructor:///org/apache/directory/api/ldap/model/name/Dn/Dn(org.apache.directory.api.ldap.model.schema.SchemaManager,java.lang.String%5B%5D)|"
+    ],
+    "affectedLib": "org.apache.directory.api:api-ldap-model:1.0.0-M14",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.directory.server:apacheds-core-api:2.0.0-M8",
+    "coordinatesV2": "org.apache.directory.server:apacheds-core-api:2.0.0-M9",
+    "caller": "|java+method:///org/apache/directory/server/core/api/schema/SchemaPartition/doInit()|",
+    "called": "|java+constructor:///org/apache/directory/api/ldap/model/name/Dn/Dn(org.apache.directory.api.ldap.model.schema.SchemaManager,java.lang.String%5B%5D)|",
+    "v1Body": [
+      "|java+method:///org/apache/directory/server/i18n/I18n/err(org.apache.directory.server.i18n.I18n,java.lang.Object%5B%5D)|",
+      "|java+method:///org/apache/directory/server/core/api/partition/Partition/initialize()|",
+      "|java+method:///org/apache/directory/server/core/api/partition/Partition/setSuffixDn(org.apache.directory.shared.ldap.model.name.Dn)|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.Throwable)|",
+      "|java+method:///org/apache/directory/server/core/api/partition/Partition/setSchemaManager(org.apache.directory.shared.ldap.model.schema.SchemaManager)|",
+      "|java+constructor:///org/apache/directory/shared/ldap/model/name/Dn/Dn(org.apache.directory.shared.ldap.model.schema.SchemaManager,java.lang.String%5B%5D)|",
+      "|java+constructor:///org/apache/directory/server/core/api/schema/registries/synchronizers/RegistrySynchronizerAdaptor/RegistrySynchronizerAdaptor(org.apache.directory.shared.ldap.model.schema.SchemaManager)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/apache/directory/server/core/api/partition/Partition/setId(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/directory/server/core/api/partition/Partition/setSchemaManager(org.apache.directory.api.ldap.model.schema.SchemaManager)|",
+      "|java+method:///org/apache/directory/server/i18n/I18n/err(org.apache.directory.server.i18n.I18n,java.lang.Object%5B%5D)|",
+      "|java+method:///org/apache/directory/server/core/api/partition/Partition/initialize()|",
+      "|java+constructor:///org/apache/directory/server/core/api/schema/registries/synchronizers/RegistrySynchronizerAdaptor/RegistrySynchronizerAdaptor(org.apache.directory.api.ldap.model.schema.SchemaManager)|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.Throwable)|",
+      "|java+constructor:///org/apache/directory/api/ldap/model/name/Dn/Dn(org.apache.directory.api.ldap.model.schema.SchemaManager,java.lang.String%5B%5D)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/apache/directory/server/core/api/partition/Partition/setId(java.lang.String)|",
+      "|java+method:///org/apache/directory/server/core/api/partition/Partition/setSuffixDn(org.apache.directory.api.ldap.model.name.Dn)|"
+    ],
+    "affectedLib": "org.apache.directory.api:api-ldap-model:1.0.0-M14",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.directory.server:apacheds-core-api:2.0.0-M8",
+    "coordinatesV2": "org.apache.directory.server:apacheds-core-api:2.0.0-M9",
+    "caller": "|java+method:///org/apache/directory/server/core/api/filtering/BaseEntryFilteringCursor/last()|",
+    "called": "|java+constructor:///org/apache/directory/api/ldap/model/exception/OperationAbandonedException/OperationAbandonedException()|",
+    "v1Body": [
+      "|java+method:///org/apache/directory/server/core/api/filtering/BaseEntryFilteringCursor/getOperationContext()|",
+      "|java+method:///org/apache/directory/server/core/api/filtering/BaseEntryFilteringCursor/previous()|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String)|",
+      "|java+method:///org/apache/directory/server/core/api/filtering/BaseEntryFilteringCursor/afterLast()|",
+      "|java+method:///org/apache/directory/server/core/api/interceptor/context/SearchingOperationContext/isAbandoned()|",
+      "|java+constructor:///org/apache/directory/shared/ldap/model/exception/OperationAbandonedException/OperationAbandonedException()|",
+      "|java+method:///org/apache/directory/server/core/api/filtering/BaseEntryFilteringCursor/close()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/directory/server/core/api/interceptor/context/SearchOperationContext/isAbandoned()|",
+      "|java+method:///org/apache/directory/server/core/api/filtering/BaseEntryFilteringCursor/previous()|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String)|",
+      "|java+method:///org/apache/directory/server/core/api/filtering/BaseEntryFilteringCursor/afterLast()|",
+      "|java+constructor:///org/apache/directory/api/ldap/model/exception/OperationAbandonedException/OperationAbandonedException()|",
+      "|java+method:///org/apache/directory/server/core/api/filtering/BaseEntryFilteringCursor/close()|"
+    ],
+    "affectedLib": "org.apache.directory.api:api-ldap-model:1.0.0-M14",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.directory.server:apacheds-core-api:2.0.0-M8",
+    "coordinatesV2": "org.apache.directory.server:apacheds-core-api:2.0.0-M9",
+    "caller": "|java+constructor:///org/apache/directory/server/core/api/interceptor/InterceptorException/InterceptorException(org.apache.directory.server.core.api.interceptor.Interceptor,java.lang.Throwable)|",
+    "called": "|java+constructor:///org/apache/directory/api/ldap/model/exception/LdapException/LdapException(java.lang.Throwable)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/directory/shared/ldap/model/exception/LdapException/LdapException(java.lang.Throwable)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/directory/api/ldap/model/exception/LdapException/LdapException(java.lang.Throwable)|"
+    ],
+    "affectedLib": "org.apache.directory.api:api-ldap-model:1.0.0-M14",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.directory.server:apacheds-core-api:2.0.0-M8",
+    "coordinatesV2": "org.apache.directory.server:apacheds-core-api:2.0.0-M9",
+    "caller": "|java+method:///org/apache/directory/server/core/api/entry/TestServerEntryUtils/getIA5StringAttributeType()|",
+    "called": "|java+method:///org/apache/directory/api/ldap/model/schema/MutableAttributeType/setSyntax(org.apache.directory.api.ldap.model.schema.LdapSyntax)|",
+    "v1Body": [
+      "|java+method:///org/apache/directory/shared/ldap/model/schema/MutableMatchingRule/setSyntax(org.apache.directory.shared.ldap.model.schema.LdapSyntax)|",
+      "|java+method:///org/apache/directory/shared/ldap/model/schema/LdapSyntax/setSyntaxChecker(org.apache.directory.shared.ldap.model.schema.SyntaxChecker)|",
+      "|java+constructor:///org/apache/directory/shared/ldap/model/schema/LdapSyntax/LdapSyntax(java.lang.String,java.lang.String,boolean)|",
+      "|java+method:///org/apache/directory/shared/ldap/model/schema/MutableMatchingRule/getOid()|",
+      "|java+method:///org/apache/directory/shared/ldap/model/schema/MutableAttributeType/addName(java.lang.String%5B%5D)|",
+      "|java+method:///org/apache/directory/shared/ldap/model/schema/MutableAttributeType/setSyntax(org.apache.directory.shared.ldap.model.schema.LdapSyntax)|",
+      "|java+constructor:///org/apache/directory/shared/ldap/model/schema/normalizers/DeepTrimToLowerNormalizer/DeepTrimToLowerNormalizer(java.lang.String)|",
+      "|java+method:///org/apache/directory/shared/ldap/model/schema/MutableMatchingRule/setNormalizer(org.apache.directory.shared.ldap.model.schema.Normalizer)|",
+      "|java+method:///org/apache/directory/shared/ldap/model/schema/MutableMatchingRule/setLdapComparator(org.apache.directory.shared.ldap.model.schema.LdapComparator)|",
+      "|java+constructor:///org/apache/directory/shared/ldap/model/schema/MutableMatchingRule/MutableMatchingRule(java.lang.String)|",
+      "|java+constructor:///org/apache/directory/shared/ldap/model/schema/MutableAttributeType/MutableAttributeType(java.lang.String)|",
+      "|java+constructor:///org/apache/directory/server/core/api/entry/TestServerEntryUtils$5/TestServerEntryUtils$5(java.lang.String)|",
+      "|java+constructor:///org/apache/directory/server/core/api/entry/TestServerEntryUtils$4/TestServerEntryUtils$4(java.lang.String)|",
+      "|java+method:///org/apache/directory/shared/ldap/model/schema/MutableAttributeType/setEquality(org.apache.directory.shared.ldap.model.schema.MatchingRule)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/directory/api/ldap/model/schema/LdapSyntax/LdapSyntax(java.lang.String,java.lang.String,boolean)|",
+      "|java+method:///org/apache/directory/api/ldap/model/schema/MutableMatchingRule/getOid()|",
+      "|java+method:///org/apache/directory/api/ldap/model/schema/MutableMatchingRule/setSyntax(org.apache.directory.api.ldap.model.schema.LdapSyntax)|",
+      "|java+method:///org/apache/directory/api/ldap/model/schema/MutableAttributeType/addName(java.lang.String%5B%5D)|",
+      "|java+method:///org/apache/directory/api/ldap/model/schema/MutableMatchingRule/setNormalizer(org.apache.directory.api.ldap.model.schema.Normalizer)|",
+      "|java+constructor:///org/apache/directory/api/ldap/model/schema/normalizers/DeepTrimToLowerNormalizer/DeepTrimToLowerNormalizer(java.lang.String)|",
+      "|java+method:///org/apache/directory/api/ldap/model/schema/MutableAttributeType/setEquality(org.apache.directory.api.ldap.model.schema.MatchingRule)|",
+      "|java+method:///org/apache/directory/api/ldap/model/schema/LdapSyntax/setSyntaxChecker(org.apache.directory.api.ldap.model.schema.SyntaxChecker)|",
+      "|java+method:///org/apache/directory/api/ldap/model/schema/MutableMatchingRule/setLdapComparator(org.apache.directory.api.ldap.model.schema.LdapComparator)|",
+      "|java+method:///org/apache/directory/api/ldap/model/schema/MutableAttributeType/setSyntax(org.apache.directory.api.ldap.model.schema.LdapSyntax)|",
+      "|java+constructor:///org/apache/directory/server/core/api/entry/TestServerEntryUtils$5/TestServerEntryUtils$5(java.lang.String)|",
+      "|java+constructor:///org/apache/directory/server/core/api/entry/TestServerEntryUtils$4/TestServerEntryUtils$4(java.lang.String)|",
+      "|java+constructor:///org/apache/directory/api/ldap/model/schema/MutableMatchingRule/MutableMatchingRule(java.lang.String)|",
+      "|java+constructor:///org/apache/directory/api/ldap/model/schema/MutableAttributeType/MutableAttributeType(java.lang.String)|"
+    ],
+    "affectedLib": "org.apache.directory.api:api-ldap-model:1.0.0-M14",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.directory.server:apacheds-core-api:2.0.0-M8",
+    "coordinatesV2": "org.apache.directory.server:apacheds-core-api:2.0.0-M9",
+    "caller": "|java+constructor:///org/apache/directory/server/core/api/entry/TestServerEntryUtils$S/TestServerEntryUtils$S(java.lang.String,boolean)|",
+    "called": "|java+constructor:///org/apache/directory/api/ldap/model/schema/LdapSyntax/LdapSyntax(java.lang.String,java.lang.String,boolean)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/directory/shared/ldap/model/schema/LdapSyntax/LdapSyntax(java.lang.String,java.lang.String,boolean)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/directory/api/ldap/model/schema/LdapSyntax/LdapSyntax(java.lang.String,java.lang.String,boolean)|"
+    ],
+    "affectedLib": "org.apache.directory.api:api-ldap-model:1.0.0-M14",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.directory.server:apacheds-core-api:2.0.0-M8",
+    "coordinatesV2": "org.apache.directory.server:apacheds-core-api:2.0.0-M9",
+    "caller": "|java+method:///org/apache/directory/server/core/api/schema/registries/synchronizers/SchemaSynchronizer/disableSchema(java.lang.String)|",
+    "called": "|java+constructor:///org/apache/directory/api/ldap/model/exception/LdapUnwillingToPerformException/LdapUnwillingToPerformException(org.apache.directory.api.ldap.model.message.ResultCodeEnum,java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/directory/shared/ldap/model/exception/LdapUnwillingToPerformException/LdapUnwillingToPerformException(org.apache.directory.shared.ldap.model.message.ResultCodeEnum,java.lang.String)|",
+      "|java+method:///org/apache/directory/server/i18n/I18n/err(org.apache.directory.server.i18n.I18n,java.lang.Object%5B%5D)|",
+      "|java+method:///org/apache/directory/shared/ldap/model/schema/SchemaManager/disable(java.lang.String%5B%5D)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String)|",
+      "|java+method:///org/apache/directory/shared/ldap/model/schema/SchemaManager/getLoadedSchema(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/directory/api/ldap/model/schema/SchemaManager/getLoadedSchema(java.lang.String)|",
+      "|java+method:///org/apache/directory/server/i18n/I18n/err(org.apache.directory.server.i18n.I18n,java.lang.Object%5B%5D)|",
+      "|java+method:///org/apache/directory/api/ldap/model/schema/SchemaManager/disable(java.lang.String%5B%5D)|",
+      "|java+constructor:///org/apache/directory/api/ldap/model/exception/LdapUnwillingToPerformException/LdapUnwillingToPerformException(org.apache.directory.api.ldap.model.message.ResultCodeEnum,java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String)|"
+    ],
+    "affectedLib": "org.apache.directory.api:api-ldap-model:1.0.0-M14",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.directory.server:apacheds-core-api:2.0.0-M8",
+    "coordinatesV2": "org.apache.directory.server:apacheds-core-api:2.0.0-M9",
+    "caller": "|java+method:///org/apache/directory/server/core/api/sp/java/JavaStoredProcEngine/invokeProcedure(org.apache.directory.server.core.api.CoreSession,java.lang.String,java.lang.Object%5B%5D)|",
+    "called": "|java+constructor:///org/apache/directory/api/ldap/model/exception/LdapException/LdapException(java.lang.Throwable)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/directory/shared/ldap/model/exception/LdapException/LdapException(java.lang.Throwable)|",
+      "|java+method:///org/apache/directory/server/core/api/sp/StoredProcUtils/extractStoredProcName(java.lang.String)|",
+      "|java+method:///org/apache/directory/server/core/api/sp/StoredProcUtils/extractStoredProcUnitName(java.lang.String)|",
+      "|java+constructor:///org/apache/directory/server/core/api/sp/java/LdapJavaStoredProcClassLoader/LdapJavaStoredProcClassLoader(org.apache.directory.shared.ldap.model.entry.Attribute)|",
+      "|java+method:///org/apache/directory/shared/ldap/model/entry/Entry/get(java.lang.String)|",
+      "|java+method:///org/apache/directory/server/core/api/sp/java/JavaStoredProcEngine/getTypesFromValues(java.lang.Object%5B%5D)|",
+      "|java+method:///java/lang/reflect/Method/invoke(java.lang.Object,java.lang.Object%5B%5D)|",
+      "|java+method:///java/lang/ClassLoader/loadClass(java.lang.String)|",
+      "|java+method:///org/apache/directory/shared/util/MethodUtils/getAssignmentCompatibleMethod(java.lang.Class,java.lang.String,java.lang.Class%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/directory/server/core/api/sp/StoredProcUtils/extractStoredProcName(java.lang.String)|",
+      "|java+constructor:///org/apache/directory/api/ldap/model/exception/LdapException/LdapException(java.lang.Throwable)|",
+      "|java+method:///org/apache/directory/server/core/api/sp/StoredProcUtils/extractStoredProcUnitName(java.lang.String)|",
+      "|java+method:///org/apache/directory/api/util/MethodUtils/getAssignmentCompatibleMethod(java.lang.Class,java.lang.String,java.lang.Class%5B%5D)|",
+      "|java+method:///java/lang/ClassLoader/loadClass(java.lang.String)|",
+      "|java+method:///org/apache/directory/api/ldap/model/entry/Entry/get(java.lang.String)|",
+      "|java+method:///org/apache/directory/server/core/api/sp/java/JavaStoredProcEngine/getTypesFromValues(java.lang.Object%5B%5D)|",
+      "|java+method:///java/lang/reflect/Method/invoke(java.lang.Object,java.lang.Object%5B%5D)|",
+      "|java+constructor:///org/apache/directory/server/core/api/sp/java/LdapJavaStoredProcClassLoader/LdapJavaStoredProcClassLoader(org.apache.directory.api.ldap.model.entry.Attribute)|"
+    ],
+    "affectedLib": "org.apache.directory.api:api-ldap-model:1.0.0-M14",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.directory.server:apacheds-core-api:2.0.0-M8",
+    "coordinatesV2": "org.apache.directory.server:apacheds-core-api:2.0.0-M9",
+    "caller": "|java+method:///org/apache/directory/server/core/api/event/NotificationCriteria/setFilter(java.lang.String)|",
+    "called": "|java+method:///org/apache/directory/api/ldap/model/filter/FilterParser/parse(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/apache/directory/shared/ldap/model/filter/FilterParser/parse(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/directory/api/ldap/model/filter/FilterParser/parse(java.lang.String)|"
+    ],
+    "affectedLib": "org.apache.directory.api:api-ldap-model:1.0.0-M14",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.directory.server:apacheds-core-api:2.0.0-M8",
+    "coordinatesV2": "org.apache.directory.server:apacheds-core-api:2.0.0-M9",
+    "caller": "|java+constructor:///org/apache/directory/server/core/api/authn/ppolicy/PasswordPolicyException/PasswordPolicyException(java.lang.String)|",
+    "called": "|java+constructor:///org/apache/directory/api/ldap/model/exception/LdapException/LdapException(java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/directory/shared/ldap/model/exception/LdapException/LdapException(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/directory/api/ldap/model/exception/LdapException/LdapException(java.lang.String)|"
+    ],
+    "affectedLib": "org.apache.directory.api:api-ldap-model:1.0.0-M14",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.directory.server:apacheds-core-api:2.0.0-M8",
+    "coordinatesV2": "org.apache.directory.server:apacheds-core-api:2.0.0-M9",
+    "caller": "|java+constructor:///org/apache/directory/server/core/api/entry/TestServerEntryUtils$6/TestServerEntryUtils$6(java.lang.String)|",
+    "called": "|java+constructor:///org/apache/directory/api/ldap/model/schema/SyntaxChecker/SyntaxChecker(java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/directory/shared/ldap/model/schema/SyntaxChecker/SyntaxChecker(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/directory/api/ldap/model/schema/SyntaxChecker/SyntaxChecker(java.lang.String)|"
+    ],
+    "affectedLib": "org.apache.directory.api:api-ldap-model:1.0.0-M14",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.directory.server:apacheds-core-api:2.0.0-M8",
+    "coordinatesV2": "org.apache.directory.server:apacheds-core-api:2.0.0-M9",
+    "caller": "|java+constructor:///org/apache/directory/server/core/api/entry/TestServerEntryUtils$7/TestServerEntryUtils$7(java.lang.String)|",
+    "called": "|java+constructor:///org/apache/directory/api/ldap/model/schema/Normalizer/Normalizer(java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/directory/shared/ldap/model/schema/Normalizer/Normalizer(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/directory/api/ldap/model/schema/Normalizer/Normalizer(java.lang.String)|"
+    ],
+    "affectedLib": "org.apache.directory.api:api-ldap-model:1.0.0-M14",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.directory.server:apacheds-core-api:2.0.0-M8",
+    "coordinatesV2": "org.apache.directory.server:apacheds-core-api:2.0.0-M9",
+    "caller": "|java+method:///org/apache/directory/server/core/api/schema/SchemaPartition/delete(org.apache.directory.server.core.api.interceptor.context.DeleteOperationContext)|",
+    "called": "|java+constructor:///org/apache/directory/api/ldap/model/exception/LdapUnwillingToPerformException/LdapUnwillingToPerformException(java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/directory/shared/ldap/model/exception/LdapUnwillingToPerformException/LdapUnwillingToPerformException()|",
+      "|java+method:///org/apache/directory/server/core/api/schema/SchemaPartition/updateSchemaModificationAttributes(org.apache.directory.server.core.api.interceptor.context.OperationContext)|",
+      "|java+method:///org/apache/directory/server/core/api/schema/registries/synchronizers/RegistrySynchronizerAdaptor/delete(org.apache.directory.server.core.api.interceptor.context.DeleteOperationContext,boolean)|",
+      "|java+method:///org/apache/directory/server/core/api/interceptor/context/DeleteOperationContext/hasRequestControl(java.lang.String)|",
+      "|java+method:///org/apache/directory/server/core/api/schema/SchemaPartition/getChildCount(org.apache.directory.server.core.api.interceptor.context.DeleteOperationContext)|",
+      "|java+method:///org/apache/directory/server/core/api/partition/Partition/delete(org.apache.directory.server.core.api.interceptor.context.DeleteOperationContext)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/directory/api/ldap/model/exception/LdapUnwillingToPerformException/LdapUnwillingToPerformException(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/directory/server/core/api/schema/SchemaPartition/updateSchemaModificationAttributes(org.apache.directory.server.core.api.interceptor.context.OperationContext)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/apache/directory/server/core/api/interceptor/context/DeleteOperationContext/hasRequestControl(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///org/apache/directory/server/core/api/schema/SchemaPartition/getChildCount(org.apache.directory.server.core.api.interceptor.context.DeleteOperationContext)|",
+      "|java+method:///org/apache/directory/server/core/api/partition/Partition/delete(org.apache.directory.server.core.api.interceptor.context.DeleteOperationContext)|",
+      "|java+method:///org/apache/directory/server/core/api/schema/registries/synchronizers/RegistrySynchronizerAdaptor/delete(org.apache.directory.server.core.api.interceptor.context.DeleteOperationContext,boolean)|",
+      "|java+method:///org/apache/directory/server/core/api/interceptor/context/DeleteOperationContext/getDn()|"
+    ],
+    "affectedLib": "org.apache.directory.api:api-ldap-model:1.0.0-M14",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.directory.server:apacheds-core-api:2.0.0-M8",
+    "coordinatesV2": "org.apache.directory.server:apacheds-core-api:2.0.0-M9",
+    "caller": "|java+method:///org/apache/directory/server/core/api/entry/TestServerEntryUtils/matchingRuleFactory(java.lang.String)|",
+    "called": "|java+constructor:///org/apache/directory/api/ldap/model/schema/MutableMatchingRule/MutableMatchingRule(java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/directory/shared/ldap/model/schema/MutableMatchingRule/MutableMatchingRule(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/directory/api/ldap/model/schema/MutableMatchingRule/MutableMatchingRule(java.lang.String)|"
+    ],
+    "affectedLib": "org.apache.directory.api:api-ldap-model:1.0.0-M14",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.directory.server:apacheds-core-api:2.0.0-M8",
+    "coordinatesV2": "org.apache.directory.server:apacheds-core-api:2.0.0-M9",
+    "caller": "|java+method:///org/apache/directory/server/core/api/EntryToResponseCursor/get()|",
+    "called": "|java+constructor:///org/apache/directory/api/ldap/model/message/SearchResultEntryImpl/SearchResultEntryImpl(int)|",
+    "v1Body": [
+      "|java+method:///org/apache/directory/shared/ldap/model/message/SearchResultEntry/setEntry(org.apache.directory.shared.ldap.model.entry.Entry)|",
+      "|java+constructor:///org/apache/directory/shared/ldap/model/message/SearchResultEntryImpl/SearchResultEntryImpl(int)|",
+      "|java+method:///org/apache/directory/shared/ldap/model/cursor/Cursor/get()|",
+      "|java+method:///org/apache/directory/server/core/api/EntryToResponseCursor/get()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/directory/api/ldap/model/message/SearchResultEntryImpl/SearchResultEntryImpl(int)|",
+      "|java+method:///org/apache/directory/api/ldap/model/cursor/Cursor/get()|",
+      "|java+method:///org/apache/directory/server/core/api/EntryToResponseCursor/get()|",
+      "|java+method:///org/apache/directory/api/ldap/model/message/SearchResultEntry/setEntry(org.apache.directory.api.ldap.model.entry.Entry)|"
+    ],
+    "affectedLib": "org.apache.directory.api:api-ldap-model:1.0.0-M14",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.directory.server:apacheds-core-api:2.0.0-M8",
+    "coordinatesV2": "org.apache.directory.server:apacheds-core-api:2.0.0-M9",
+    "caller": "|java+method:///org/apache/directory/server/core/api/partition/AbstractPartition/initialize()|",
+    "called": "|java+constructor:///org/apache/directory/api/ldap/model/exception/LdapOtherException/LdapOtherException(java.lang.String,java.lang.Throwable)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/directory/shared/ldap/model/exception/LdapOtherException/LdapOtherException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/apache/directory/server/core/api/partition/AbstractPartition/doInit()|",
+      "|java+method:///org/apache/directory/server/core/api/partition/AbstractPartition/destroy()|",
+      "|java+method:///java/lang/Exception/getMessage()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/directory/api/ldap/model/exception/LdapOtherException/LdapOtherException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/apache/directory/server/core/api/partition/AbstractPartition/doInit()|",
+      "|java+method:///org/apache/directory/server/core/api/partition/AbstractPartition/destroy()|",
+      "|java+method:///java/lang/Exception/getMessage()|"
+    ],
+    "affectedLib": "org.apache.directory.api:api-ldap-model:1.0.0-M14",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.directory.server:apacheds-core-api:2.0.0-M8",
+    "coordinatesV2": "org.apache.directory.server:apacheds-core-api:2.0.0-M9",
+    "caller": "|java+method:///org/apache/directory/server/core/api/LdapCoreSessionConnection/rename(java.lang.String,java.lang.String)|",
+    "called": "|java+constructor:///org/apache/directory/api/ldap/model/name/Dn/Dn(org.apache.directory.api.ldap.model.schema.SchemaManager,java.lang.String%5B%5D)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+constructor:///org/apache/directory/shared/ldap/model/name/Dn/Dn(org.apache.directory.shared.ldap.model.schema.SchemaManager,java.lang.String%5B%5D)|",
+      "|java+method:///org/apache/directory/server/core/api/LdapCoreSessionConnection/rename(org.apache.directory.shared.ldap.model.name.Dn,org.apache.directory.shared.ldap.model.name.Rdn)|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|",
+      "|java+constructor:///org/apache/directory/shared/ldap/model/name/Rdn/Rdn(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+constructor:///org/apache/directory/api/ldap/model/name/Rdn/Rdn(java.lang.String)|",
+      "|java+method:///org/apache/directory/server/core/api/LdapCoreSessionConnection/rename(org.apache.directory.api.ldap.model.name.Dn,org.apache.directory.api.ldap.model.name.Rdn)|",
+      "|java+constructor:///org/apache/directory/api/ldap/model/name/Dn/Dn(org.apache.directory.api.ldap.model.schema.SchemaManager,java.lang.String%5B%5D)|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|"
+    ],
+    "affectedLib": "org.apache.directory.api:api-ldap-model:1.0.0-M14",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.directory.server:apacheds-core-api:2.0.0-M8",
+    "coordinatesV2": "org.apache.directory.server:apacheds-core-api:2.0.0-M9",
+    "caller": "|java+method:///org/apache/directory/server/core/api/LdapCoreSessionConnection/compare(java.lang.String,java.lang.String,java.lang.String)|",
+    "called": "|java+constructor:///org/apache/directory/api/ldap/model/name/Dn/Dn(org.apache.directory.api.ldap.model.schema.SchemaManager,java.lang.String%5B%5D)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/directory/shared/ldap/model/name/Dn/Dn(org.apache.directory.shared.ldap.model.schema.SchemaManager,java.lang.String%5B%5D)|",
+      "|java+method:///org/apache/directory/server/core/api/LdapCoreSessionConnection/compare(org.apache.directory.shared.ldap.model.name.Dn,java.lang.String,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/directory/server/core/api/LdapCoreSessionConnection/compare(org.apache.directory.api.ldap.model.name.Dn,java.lang.String,java.lang.String)|",
+      "|java+constructor:///org/apache/directory/api/ldap/model/name/Dn/Dn(org.apache.directory.api.ldap.model.schema.SchemaManager,java.lang.String%5B%5D)|"
+    ],
+    "affectedLib": "org.apache.directory.api:api-ldap-model:1.0.0-M14",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.directory.server:apacheds-core-api:2.0.0-M8",
+    "coordinatesV2": "org.apache.directory.server:apacheds-core-api:2.0.0-M9",
+    "caller": "|java+method:///org/apache/directory/server/core/api/filtering/CursorList/get()|",
+    "called": "|java+constructor:///org/apache/directory/api/ldap/model/cursor/InvalidCursorPositionException/InvalidCursorPositionException()|",
+    "v1Body": [
+      "|java+constructor:///java/io/IOException/IOException(java.lang.String)|",
+      "|java+method:///org/apache/directory/server/core/api/filtering/EntryFilteringCursor/get()|",
+      "|java+method:///org/apache/directory/shared/i18n/I18n/err(org.apache.directory.shared.i18n.I18n,java.lang.Object%5B%5D)|",
+      "|java+method:///org/apache/directory/server/core/api/filtering/CursorList/get()|",
+      "|java+constructor:///org/apache/directory/shared/ldap/model/cursor/InvalidCursorPositionException/InvalidCursorPositionException()|",
+      "|java+method:///org/apache/directory/server/core/api/filtering/EntryFilteringCursor/available()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/io/IOException/IOException(java.lang.String)|",
+      "|java+method:///org/apache/directory/server/core/api/filtering/EntryFilteringCursor/get()|",
+      "|java+method:///org/apache/directory/server/core/api/filtering/CursorList/get()|",
+      "|java+method:///org/apache/directory/api/i18n/I18n/err(org.apache.directory.api.i18n.I18n,java.lang.Object%5B%5D)|",
+      "|java+constructor:///org/apache/directory/api/ldap/model/cursor/InvalidCursorPositionException/InvalidCursorPositionException()|",
+      "|java+method:///org/apache/directory/server/core/api/filtering/EntryFilteringCursor/available()|"
+    ],
+    "affectedLib": "org.apache.directory.api:api-ldap-model:1.0.0-M14",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.directory.server:apacheds-core-api:2.0.0-M8",
+    "coordinatesV2": "org.apache.directory.server:apacheds-core-api:2.0.0-M9",
+    "caller": "|java+method:///org/apache/directory/server/core/api/schema/SchemaPartition/getChildCount(org.apache.directory.server.core.api.interceptor.context.DeleteOperationContext)|",
+    "called": "|java+constructor:///org/apache/directory/api/ldap/model/filter/PresenceNode/PresenceNode(org.apache.directory.api.ldap.model.schema.AttributeType)|",
+    "v1Body": [
+      "|java+method:///org/apache/directory/server/core/api/partition/Partition/search(org.apache.directory.server.core.api.interceptor.context.SearchOperationContext)|",
+      "|java+method:///org/apache/directory/server/core/api/filtering/EntryFilteringCursor/beforeFirst()|",
+      "|java+method:///org/apache/directory/server/core/api/filtering/EntryFilteringCursor/close()|",
+      "|java+method:///org/apache/directory/shared/ldap/model/message/SearchRequest/setBase(org.apache.directory.shared.ldap.model.name.Dn)|",
+      "|java+method:///org/apache/directory/shared/ldap/model/message/SearchRequest/setScope(org.apache.directory.shared.ldap.model.message.SearchScope)|",
+      "|java+method:///java/lang/Exception/printStackTrace()|",
+      "|java+method:///org/apache/directory/shared/ldap/model/message/SearchRequest/setTypesOnly(boolean)|",
+      "|java+method:///org/apache/directory/server/core/api/filtering/EntryFilteringCursor/next()|",
+      "|java+constructor:///org/apache/directory/shared/ldap/model/filter/PresenceNode/PresenceNode(org.apache.directory.shared.ldap.model.schema.AttributeType)|",
+      "|java+constructor:///org/apache/directory/shared/ldap/model/message/SearchRequestImpl/SearchRequestImpl()|",
+      "|java+method:///org/apache/directory/shared/ldap/model/message/SearchRequest/setFilter(org.apache.directory.shared.ldap.model.filter.ExprNode)|",
+      "|java+constructor:///org/apache/directory/server/core/api/interceptor/context/SearchOperationContext/SearchOperationContext(org.apache.directory.server.core.api.CoreSession,org.apache.directory.shared.ldap.model.message.SearchRequest)|",
+      "|java+method:///org/apache/directory/server/core/api/interceptor/context/DeleteOperationContext/getDn()|",
+      "|java+method:///org/apache/directory/server/core/api/interceptor/context/DeleteOperationContext/getSession()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/directory/server/core/api/partition/Partition/search(org.apache.directory.server.core.api.interceptor.context.SearchOperationContext)|",
+      "|java+method:///org/apache/directory/api/ldap/model/message/SearchRequest/setScope(org.apache.directory.api.ldap.model.message.SearchScope)|",
+      "|java+method:///org/apache/directory/server/core/api/filtering/EntryFilteringCursor/close()|",
+      "|java+method:///org/apache/directory/api/ldap/model/message/SearchRequest/setFilter(org.apache.directory.api.ldap.model.filter.ExprNode)|",
+      "|java+method:///org/apache/directory/server/core/api/filtering/EntryFilteringCursor/next()|",
+      "|java+constructor:///org/apache/directory/api/ldap/model/message/SearchRequestImpl/SearchRequestImpl()|",
+      "|java+constructor:///org/apache/directory/server/core/api/interceptor/context/SearchOperationContext/SearchOperationContext(org.apache.directory.server.core.api.CoreSession,org.apache.directory.api.ldap.model.message.SearchRequest)|",
+      "|java+method:///org/apache/directory/api/ldap/model/message/SearchRequest/setBase(org.apache.directory.api.ldap.model.name.Dn)|",
+      "|java+method:///org/apache/directory/server/core/api/filtering/EntryFilteringCursor/beforeFirst()|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/apache/directory/api/ldap/model/message/SearchRequest/setTypesOnly(boolean)|",
+      "|java+constructor:///org/apache/directory/api/ldap/model/filter/PresenceNode/PresenceNode(org.apache.directory.api.ldap.model.schema.AttributeType)|",
+      "|java+method:///org/apache/directory/server/core/api/interceptor/context/DeleteOperationContext/getDn()|",
+      "|java+method:///org/apache/directory/server/core/api/interceptor/context/DeleteOperationContext/getSession()|"
+    ],
+    "affectedLib": "org.apache.directory.api:api-ldap-model:1.0.0-M14",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.directory.server:apacheds-core-api:2.0.0-M8",
+    "coordinatesV2": "org.apache.directory.server:apacheds-core-api:2.0.0-M9",
+    "caller": "|java+method:///org/apache/directory/server/core/api/schema/registries/synchronizers/AbstractRegistrySynchronizer/checkOidIsUnique(java.lang.String)|",
+    "called": "|java+method:///org/apache/directory/api/ldap/model/schema/registries/OidRegistry/contains(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/apache/directory/shared/ldap/model/schema/registries/OidRegistry/contains(java.lang.String)|",
+      "|java+method:///org/apache/directory/server/i18n/I18n/err(org.apache.directory.server.i18n.I18n,java.lang.Object%5B%5D)|",
+      "|java+constructor:///org/apache/directory/shared/ldap/model/exception/LdapSchemaViolationException/LdapSchemaViolationException(org.apache.directory.shared.ldap.model.message.ResultCodeEnum,java.lang.String)|",
+      "|java+method:///org/apache/directory/shared/ldap/model/schema/SchemaManager/getGlobalOidRegistry()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/directory/api/ldap/model/schema/registries/OidRegistry/contains(java.lang.String)|",
+      "|java+constructor:///org/apache/directory/api/ldap/model/exception/LdapSchemaViolationException/LdapSchemaViolationException(org.apache.directory.api.ldap.model.message.ResultCodeEnum,java.lang.String)|",
+      "|java+method:///org/apache/directory/server/i18n/I18n/err(org.apache.directory.server.i18n.I18n,java.lang.Object%5B%5D)|",
+      "|java+method:///org/apache/directory/api/ldap/model/schema/SchemaManager/getGlobalOidRegistry()|"
+    ],
+    "affectedLib": "org.apache.directory.api:api-ldap-model:1.0.0-M14",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.directory.server:apacheds-core-api:2.0.0-M8",
+    "coordinatesV2": "org.apache.directory.server:apacheds-core-api:2.0.0-M9",
+    "caller": "|java+constructor:///org/apache/directory/server/core/api/authn/ppolicy/PasswordPolicyException/PasswordPolicyException(java.lang.String,int)|",
+    "called": "|java+constructor:///org/apache/directory/api/ldap/model/exception/LdapException/LdapException(java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/directory/shared/ldap/model/exception/LdapException/LdapException(java.lang.String)|",
+      "|java+method:///org/apache/directory/server/core/api/authn/ppolicy/PasswordPolicyException/validateErrorCode(int)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/directory/server/core/api/authn/ppolicy/PasswordPolicyException/validateErrorCode(int)|",
+      "|java+constructor:///org/apache/directory/api/ldap/model/exception/LdapException/LdapException(java.lang.String)|"
+    ],
+    "affectedLib": "org.apache.directory.api:api-ldap-model:1.0.0-M14",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.directory.server:apacheds-core-api:2.0.0-M8",
+    "coordinatesV2": "org.apache.directory.server:apacheds-core-api:2.0.0-M9",
+    "caller": "|java+method:///org/apache/directory/server/core/api/changelog/ChangeLogEventSerializer/serialize(org.apache.directory.server.core.api.changelog.ChangeLogEvent,java.io.ObjectOutput)|",
+    "called": "|java+method:///org/apache/directory/api/ldap/model/ldif/LdifEntry/writeExternal(java.io.ObjectOutput)|",
+    "v1Body": [
+      "|java+method:///org/apache/directory/server/core/api/LdapPrincipalSerializer/serialize(org.apache.directory.server.core.api.LdapPrincipal,java.io.ObjectOutput)|",
+      "|java+method:///java/io/ObjectOutput/flush()|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///org/apache/directory/server/core/api/changelog/ChangeLogEvent/getReverseLdifs()|",
+      "|java+method:///java/io/ObjectOutput/writeUTF(java.lang.String)|",
+      "|java+method:///java/io/ObjectOutput/writeInt(int)|",
+      "|java+method:///org/apache/directory/server/core/api/changelog/ChangeLogEvent/getCommitterPrincipal()|",
+      "|java+method:///org/apache/directory/shared/ldap/model/ldif/LdifEntry/writeExternal(java.io.ObjectOutput)|",
+      "|java+method:///org/apache/directory/server/core/api/changelog/ChangeLogEvent/getZuluTime()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/io/ObjectOutput/writeLong(long)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/apache/directory/server/core/api/changelog/ChangeLogEvent/getRevision()|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///org/apache/directory/server/core/api/changelog/ChangeLogEvent/getForwardLdif()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/directory/server/core/api/LdapPrincipalSerializer/serialize(org.apache.directory.server.core.api.LdapPrincipal,java.io.ObjectOutput)|",
+      "|java+method:///java/io/ObjectOutput/flush()|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///org/apache/directory/server/core/api/changelog/ChangeLogEvent/getReverseLdifs()|",
+      "|java+method:///java/io/ObjectOutput/writeUTF(java.lang.String)|",
+      "|java+method:///java/io/ObjectOutput/writeInt(int)|",
+      "|java+method:///org/apache/directory/server/core/api/changelog/ChangeLogEvent/getCommitterPrincipal()|",
+      "|java+method:///org/apache/directory/api/ldap/model/ldif/LdifEntry/writeExternal(java.io.ObjectOutput)|",
+      "|java+method:///org/apache/directory/server/core/api/changelog/ChangeLogEvent/getZuluTime()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/io/ObjectOutput/writeLong(long)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/apache/directory/server/core/api/changelog/ChangeLogEvent/getRevision()|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///org/apache/directory/server/core/api/changelog/ChangeLogEvent/getForwardLdif()|"
+    ],
+    "affectedLib": "org.apache.directory.api:api-ldap-model:1.0.0-M14",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.directory.server:apacheds-core-api:2.0.0-M8",
+    "coordinatesV2": "org.apache.directory.server:apacheds-core-api:2.0.0-M9",
+    "caller": "|java+method:///org/apache/directory/server/core/api/entry/ClonedServerEntry/toClientEntry()|",
+    "called": "|java+constructor:///org/apache/directory/api/ldap/model/entry/DefaultEntry/DefaultEntry(org.apache.directory.api.ldap.model.name.Dn)|",
+    "v1Body": [
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/apache/directory/shared/ldap/model/entry/Attribute/clone()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/apache/directory/shared/ldap/model/entry/Entry/add(org.apache.directory.shared.ldap.model.entry.Attribute%5B%5D)|",
+      "|java+method:///org/apache/directory/server/core/api/entry/ClonedServerEntry/iterator()|",
+      "|java+method:///org/apache/directory/shared/ldap/model/entry/Entry/getDn()|",
+      "|java+constructor:///org/apache/directory/shared/ldap/model/entry/DefaultEntry/DefaultEntry(org.apache.directory.shared.ldap.model.name.Dn)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/directory/api/ldap/model/entry/Entry/getDn()|",
+      "|java+method:///org/apache/directory/api/ldap/model/entry/Entry/add(org.apache.directory.api.ldap.model.entry.Attribute%5B%5D)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/apache/directory/api/ldap/model/entry/Attribute/clone()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+constructor:///org/apache/directory/api/ldap/model/entry/DefaultEntry/DefaultEntry(org.apache.directory.api.ldap.model.name.Dn)|",
+      "|java+method:///org/apache/directory/server/core/api/entry/ClonedServerEntry/iterator()|"
+    ],
+    "affectedLib": "org.apache.directory.api:api-ldap-model:1.0.0-M14",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.directory.server:apacheds-core-api:2.0.0-M8",
+    "coordinatesV2": "org.apache.directory.server:apacheds-core-api:2.0.0-M9",
+    "caller": "|java+method:///org/apache/directory/server/core/api/schema/registries/synchronizers/RegistrySynchronizerAdaptor/add(org.apache.directory.server.core.api.interceptor.context.AddOperationContext)|",
+    "called": "|java+method:///org/apache/directory/api/ldap/model/name/Dn/getRdn()|",
+    "v1Body": [
+      "|java+method:///org/apache/directory/shared/ldap/model/entry/Attribute/contains(java.lang.String%5B%5D)|",
+      "|java+method:///org/apache/directory/shared/util/Strings/trim(java.lang.String)|",
+      "|java+method:///org/apache/directory/shared/ldap/model/schema/registries/ObjectClassRegistry/getOidByName(java.lang.String)|",
+      "|java+method:///org/apache/directory/shared/ldap/model/entry/Entry/get(org.apache.directory.shared.ldap.model.schema.AttributeType)|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/Set/contains(java.lang.Object)|",
+      "|java+method:///org/apache/directory/shared/ldap/model/name/Rdn/getNormValue()|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String)|",
+      "|java+method:///org/apache/directory/shared/ldap/model/name/Dn/size()|",
+      "|java+method:///org/apache/directory/shared/ldap/model/name/Dn/getRdn()|",
+      "|java+method:///org/apache/directory/shared/util/Strings/toLowerCase(java.lang.String)|",
+      "|java+constructor:///org/apache/directory/shared/ldap/model/exception/LdapUnwillingToPerformException/LdapUnwillingToPerformException(org.apache.directory.shared.ldap.model.message.ResultCodeEnum,java.lang.String)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/apache/directory/server/core/api/schema/registries/synchronizers/RegistrySynchronizer/add(org.apache.directory.shared.ldap.model.entry.Entry)|",
+      "|java+method:///org/apache/directory/server/i18n/I18n/err(org.apache.directory.server.i18n.I18n,java.lang.Object%5B%5D)|",
+      "|java+method:///org/apache/directory/server/core/api/schema/registries/synchronizers/SchemaSynchronizer/add(org.apache.directory.shared.ldap.model.entry.Entry)|",
+      "|java+method:///org/apache/directory/shared/ldap/model/entry/Value/getString()|",
+      "|java+method:///org/apache/directory/shared/ldap/model/schema/SchemaManager/getObjectClassRegistry()|",
+      "|java+constructor:///org/apache/directory/shared/ldap/model/exception/LdapInvalidDnException/LdapInvalidDnException(org.apache.directory.shared.ldap.model.message.ResultCodeEnum,java.lang.String)|",
+      "|java+method:///org/apache/directory/shared/ldap/model/entry/Attribute/iterator()|",
+      "|java+method:///java/util/Map/containsKey(java.lang.Object)|",
+      "|java+method:///org/apache/directory/server/core/api/interceptor/context/AddOperationContext/getEntry()|",
+      "|java+method:///org/apache/directory/server/core/api/interceptor/context/AddOperationContext/getDn()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/directory/api/util/Strings/toLowerCase(java.lang.String)|",
+      "|java+method:///org/apache/directory/api/ldap/model/name/Dn/getRdn()|",
+      "|java+method:///org/apache/directory/api/ldap/model/entry/Attribute/contains(java.lang.String%5B%5D)|",
+      "|java+method:///org/apache/directory/api/util/Strings/trim(java.lang.String)|",
+      "|java+constructor:///org/apache/directory/api/ldap/model/exception/LdapInvalidDnException/LdapInvalidDnException(org.apache.directory.api.ldap.model.message.ResultCodeEnum,java.lang.String)|",
+      "|java+method:///org/apache/directory/api/ldap/model/entry/Value/getString()|",
+      "|java+method:///org/apache/directory/api/ldap/model/entry/Entry/get(org.apache.directory.api.ldap.model.schema.AttributeType)|",
+      "|java+method:///org/apache/directory/server/core/api/schema/registries/synchronizers/RegistrySynchronizer/add(org.apache.directory.api.ldap.model.entry.Entry)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/Set/contains(java.lang.Object)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String)|",
+      "|java+method:///java/util/Map/containsKey(java.lang.Object)|",
+      "|java+method:///org/apache/directory/api/ldap/model/name/Dn/size()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/apache/directory/server/i18n/I18n/err(org.apache.directory.server.i18n.I18n,java.lang.Object%5B%5D)|",
+      "|java+method:///org/apache/directory/api/ldap/model/schema/registries/ObjectClassRegistry/getOidByName(java.lang.String)|",
+      "|java+method:///org/apache/directory/server/core/api/schema/registries/synchronizers/SchemaSynchronizer/add(org.apache.directory.api.ldap.model.entry.Entry)|",
+      "|java+method:///org/apache/directory/api/ldap/model/schema/SchemaManager/getObjectClassRegistry()|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+method:///org/apache/directory/api/ldap/model/name/Rdn/getNormValue()|",
+      "|java+constructor:///org/apache/directory/api/ldap/model/exception/LdapUnwillingToPerformException/LdapUnwillingToPerformException(org.apache.directory.api.ldap.model.message.ResultCodeEnum,java.lang.String)|",
+      "|java+method:///org/apache/directory/server/core/api/interceptor/context/AddOperationContext/getEntry()|",
+      "|java+method:///org/apache/directory/server/core/api/interceptor/context/AddOperationContext/getDn()|",
+      "|java+method:///org/apache/directory/api/ldap/model/entry/Attribute/iterator()|"
+    ],
+    "affectedLib": "org.apache.directory.api:api-ldap-model:1.0.0-M14",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.directory.server:apacheds-core-api:2.0.0-M8",
+    "coordinatesV2": "org.apache.directory.server:apacheds-core-api:2.0.0-M9",
+    "caller": "|java+constructor:///org/apache/directory/server/core/api/interceptor/InterceptorException/InterceptorException(org.apache.directory.server.core.api.interceptor.Interceptor)|",
+    "called": "|java+constructor:///org/apache/directory/api/ldap/model/exception/LdapException/LdapException()|",
+    "v1Body": [
+      "|java+constructor:///org/apache/directory/shared/ldap/model/exception/LdapException/LdapException()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/directory/api/ldap/model/exception/LdapException/LdapException()|"
+    ],
+    "affectedLib": "org.apache.directory.api:api-ldap-model:1.0.0-M14",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.directory.server:apacheds-core-api:2.0.0-M8",
+    "coordinatesV2": "org.apache.directory.server:apacheds-core-api:2.0.0-M9",
+    "caller": "|java+method:///org/apache/directory/server/core/api/schema/SchemaPartition/updateSchemaModificationAttributes(org.apache.directory.server.core.api.interceptor.context.OperationContext)|",
+    "called": "|java+constructor:///org/apache/directory/api/ldap/model/entry/DefaultAttribute/DefaultAttribute(java.lang.String,org.apache.directory.api.ldap.model.schema.AttributeType,java.lang.String%5B%5D)|",
+    "v1Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList(int)|",
+      "|java+constructor:///org/apache/directory/shared/ldap/model/entry/DefaultModification/DefaultModification(org.apache.directory.shared.ldap.model.entry.ModificationOperation,org.apache.directory.shared.ldap.model.entry.Attribute)|",
+      "|java+method:///org/apache/directory/server/core/api/CoreSession/getEffectivePrincipal()|",
+      "|java+method:///org/apache/directory/server/core/api/CoreSession/getDirectoryService()|",
+      "|java+method:///org/apache/directory/server/core/api/DirectoryService/getPartitionNexus()|",
+      "|java+method:///org/apache/directory/shared/util/DateUtils/getGeneralizedTime()|",
+      "|java+method:///org/apache/directory/server/core/api/partition/PartitionNexus/modify(org.apache.directory.server.core.api.interceptor.context.ModifyOperationContext)|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///org/apache/directory/shared/ldap/model/schema/SchemaManager/lookupAttributeTypeRegistry(java.lang.String)|",
+      "|java+method:///org/apache/directory/server/core/api/LdapPrincipal/getName()|",
+      "|java+constructor:///org/apache/directory/server/core/api/interceptor/context/ModifyOperationContext/ModifyOperationContext(org.apache.directory.server.core.api.CoreSession,org.apache.directory.shared.ldap.model.name.Dn,java.util.List)|",
+      "|java+method:///org/apache/directory/server/core/api/interceptor/context/OperationContext/getSession()|",
+      "|java+constructor:///org/apache/directory/shared/ldap/model/entry/DefaultAttribute/DefaultAttribute(java.lang.String,org.apache.directory.shared.ldap.model.schema.AttributeType,java.lang.String%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/directory/server/core/api/LdapPrincipal/getName()|",
+      "|java+method:///org/apache/directory/server/core/api/interceptor/context/OperationContext/getSession()|",
+      "|java+method:///org/apache/directory/server/core/api/CoreSession/getEffectivePrincipal()|",
+      "|java+method:///org/apache/directory/server/core/api/CoreSession/getDirectoryService()|",
+      "|java+method:///org/apache/directory/server/core/api/DirectoryService/getPartitionNexus()|",
+      "|java+constructor:///org/apache/directory/api/ldap/model/entry/DefaultAttribute/DefaultAttribute(java.lang.String,org.apache.directory.api.ldap.model.schema.AttributeType,java.lang.String%5B%5D)|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+constructor:///org/apache/directory/server/core/api/interceptor/context/ModifyOperationContext/ModifyOperationContext(org.apache.directory.server.core.api.CoreSession,org.apache.directory.api.ldap.model.name.Dn,java.util.List)|",
+      "|java+method:///org/apache/directory/api/ldap/model/schema/SchemaManager/lookupAttributeTypeRegistry(java.lang.String)|",
+      "|java+constructor:///java/util/ArrayList/ArrayList(int)|",
+      "|java+constructor:///org/apache/directory/api/ldap/model/entry/DefaultModification/DefaultModification(org.apache.directory.api.ldap.model.entry.ModificationOperation,org.apache.directory.api.ldap.model.entry.Attribute)|",
+      "|java+method:///org/apache/directory/api/util/DateUtils/getGeneralizedTime()|",
+      "|java+method:///org/apache/directory/server/core/api/partition/PartitionNexus/modify(org.apache.directory.server.core.api.interceptor.context.ModifyOperationContext)|"
+    ],
+    "affectedLib": "org.apache.directory.api:api-ldap-model:1.0.0-M14",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.directory.server:apacheds-core-api:2.0.0-M8",
+    "coordinatesV2": "org.apache.directory.server:apacheds-core-api:2.0.0-M9",
+    "caller": "|java+method:///org/apache/directory/server/core/api/schema/registries/synchronizers/RegistrySynchronizerAdaptor/rename(org.apache.directory.server.core.api.interceptor.context.RenameOperationContext,boolean)|",
+    "called": "|java+constructor:///org/apache/directory/api/ldap/model/exception/LdapUnwillingToPerformException/LdapUnwillingToPerformException(org.apache.directory.api.ldap.model.message.ResultCodeEnum)|",
+    "v1Body": [
+      "|java+method:///org/apache/directory/server/core/api/interceptor/context/RenameOperationContext/getEntry()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/apache/directory/shared/ldap/model/schema/registries/ObjectClassRegistry/getOidByName(java.lang.String)|",
+      "|java+method:///org/apache/directory/shared/ldap/model/entry/Entry/get(org.apache.directory.shared.ldap.model.schema.AttributeType)|",
+      "|java+method:///org/apache/directory/shared/ldap/model/entry/Value/getString()|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+method:///org/apache/directory/shared/ldap/model/schema/SchemaManager/getObjectClassRegistry()|",
+      "|java+method:///org/apache/directory/server/core/api/schema/registries/synchronizers/RegistrySynchronizer/rename(org.apache.directory.shared.ldap.model.entry.Entry,org.apache.directory.shared.ldap.model.name.Rdn,boolean)|",
+      "|java+method:///org/apache/directory/server/core/api/entry/ClonedServerEntry/getOriginalEntry()|",
+      "|java+method:///org/apache/directory/server/core/api/interceptor/context/RenameOperationContext/getNewRdn()|",
+      "|java+constructor:///org/apache/directory/shared/ldap/model/exception/LdapUnwillingToPerformException/LdapUnwillingToPerformException(org.apache.directory.shared.ldap.model.message.ResultCodeEnum)|",
+      "|java+method:///org/apache/directory/shared/ldap/model/entry/Attribute/contains(java.lang.String%5B%5D)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/apache/directory/server/core/api/schema/registries/synchronizers/SchemaSynchronizer/rename(org.apache.directory.shared.ldap.model.entry.Entry,org.apache.directory.shared.ldap.model.name.Rdn,boolean)|",
+      "|java+method:///org/apache/directory/shared/ldap/model/entry/Attribute/iterator()|",
+      "|java+method:///java/util/Map/containsKey(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/directory/server/core/api/interceptor/context/RenameOperationContext/getNewRdn()|",
+      "|java+method:///org/apache/directory/server/core/api/schema/registries/synchronizers/SchemaSynchronizer/rename(org.apache.directory.api.ldap.model.entry.Entry,org.apache.directory.api.ldap.model.name.Rdn,boolean)|",
+      "|java+method:///org/apache/directory/api/ldap/model/entry/Attribute/contains(java.lang.String%5B%5D)|",
+      "|java+method:///org/apache/directory/server/core/api/interceptor/context/RenameOperationContext/getEntry()|",
+      "|java+method:///org/apache/directory/api/ldap/model/entry/Value/getString()|",
+      "|java+method:///org/apache/directory/api/ldap/model/schema/registries/ObjectClassRegistry/getOidByName(java.lang.String)|",
+      "|java+method:///org/apache/directory/api/ldap/model/entry/Entry/get(org.apache.directory.api.ldap.model.schema.AttributeType)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+constructor:///org/apache/directory/api/ldap/model/exception/LdapUnwillingToPerformException/LdapUnwillingToPerformException(org.apache.directory.api.ldap.model.message.ResultCodeEnum)|",
+      "|java+method:///java/util/Map/containsKey(java.lang.Object)|",
+      "|java+method:///org/apache/directory/api/ldap/model/entry/Attribute/iterator()|",
+      "|java+method:///org/apache/directory/server/core/api/entry/ClonedServerEntry/getOriginalEntry()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/apache/directory/server/core/api/schema/registries/synchronizers/RegistrySynchronizer/rename(org.apache.directory.api.ldap.model.entry.Entry,org.apache.directory.api.ldap.model.name.Rdn,boolean)|",
+      "|java+method:///org/apache/directory/api/ldap/model/schema/SchemaManager/getObjectClassRegistry()|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|"
+    ],
+    "affectedLib": "org.apache.directory.api:api-ldap-model:1.0.0-M14",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.directory.server:apacheds-core-api:2.0.0-M8",
+    "coordinatesV2": "org.apache.directory.server:apacheds-core-api:2.0.0-M9",
+    "caller": "|java+method:///org/apache/directory/server/core/api/entry/TestServerEntryUtils/syntaxFactory(java.lang.String,boolean)|",
+    "called": "|java+method:///org/apache/directory/api/ldap/model/schema/LdapSyntax/setHumanReadable(boolean)|",
+    "v1Body": [
+      "|java+method:///org/apache/directory/shared/ldap/model/schema/LdapSyntax/setHumanReadable(boolean)|",
+      "|java+constructor:///org/apache/directory/shared/ldap/model/schema/LdapSyntax/LdapSyntax(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/directory/api/ldap/model/schema/LdapSyntax/setHumanReadable(boolean)|",
+      "|java+constructor:///org/apache/directory/api/ldap/model/schema/LdapSyntax/LdapSyntax(java.lang.String)|"
+    ],
+    "affectedLib": "org.apache.directory.api:api-ldap-model:1.0.0-M14",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.directory.server:apacheds-core-api:2.0.0-M8",
+    "coordinatesV2": "org.apache.directory.server:apacheds-core-api:2.0.0-M9",
+    "caller": "|java+constructor:///org/apache/directory/server/core/api/authn/ppolicy/PasswordPolicyException/PasswordPolicyException(java.lang.Throwable)|",
+    "called": "|java+constructor:///org/apache/directory/api/ldap/model/exception/LdapException/LdapException(java.lang.Throwable)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/directory/shared/ldap/model/exception/LdapException/LdapException(java.lang.Throwable)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/directory/api/ldap/model/exception/LdapException/LdapException(java.lang.Throwable)|"
+    ],
+    "affectedLib": "org.apache.directory.api:api-ldap-model:1.0.0-M14",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.directory.server:apacheds-core-api:2.0.0-M8",
+    "coordinatesV2": "org.apache.directory.server:apacheds-core-api:2.0.0-M9",
+    "caller": "|java+constructor:///org/apache/directory/server/core/api/entry/TestServerEntryUtils$5/TestServerEntryUtils$5(java.lang.String)|",
+    "called": "|java+constructor:///org/apache/directory/api/ldap/model/schema/LdapComparator/LdapComparator(java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/directory/shared/ldap/model/schema/LdapComparator/LdapComparator(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/directory/api/ldap/model/schema/LdapComparator/LdapComparator(java.lang.String)|"
+    ],
+    "affectedLib": "org.apache.directory.api:api-ldap-model:1.0.0-M14",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.directory.server:apacheds-core-api:2.0.0-M8",
+    "coordinatesV2": "org.apache.directory.server:apacheds-core-api:2.0.0-M9",
+    "caller": "|java+constructor:///org/apache/directory/server/core/api/entry/TestServerEntryUtils$AT/TestServerEntryUtils$AT(java.lang.String)|",
+    "called": "|java+constructor:///org/apache/directory/api/ldap/model/schema/AttributeType/AttributeType(java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/directory/shared/ldap/model/schema/AttributeType/AttributeType(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/directory/api/ldap/model/schema/AttributeType/AttributeType(java.lang.String)|"
+    ],
+    "affectedLib": "org.apache.directory.api:api-ldap-model:1.0.0-M14",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.directory.server:apacheds-core-api:2.0.0-M8",
+    "coordinatesV2": "org.apache.directory.server:apacheds-core-api:2.0.0-M9",
+    "caller": "|java+constructor:///org/apache/directory/server/core/api/entry/TestServerEntryUtils$4/TestServerEntryUtils$4(java.lang.String)|",
+    "called": "|java+constructor:///org/apache/directory/api/ldap/model/schema/SyntaxChecker/SyntaxChecker(java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/directory/shared/ldap/model/schema/SyntaxChecker/SyntaxChecker(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/directory/api/ldap/model/schema/SyntaxChecker/SyntaxChecker(java.lang.String)|"
+    ],
+    "affectedLib": "org.apache.directory.api:api-ldap-model:1.0.0-M14",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.directory.server:apacheds-core-api:2.0.0-M8",
+    "coordinatesV2": "org.apache.directory.server:apacheds-core-api:2.0.0-M9",
+    "caller": "|java+constructor:///org/apache/directory/server/core/api/entry/TestServerEntryUtils$1/TestServerEntryUtils$1(java.lang.String)|",
+    "called": "|java+constructor:///org/apache/directory/api/ldap/model/schema/SyntaxChecker/SyntaxChecker(java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/directory/shared/ldap/model/schema/SyntaxChecker/SyntaxChecker(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/directory/api/ldap/model/schema/SyntaxChecker/SyntaxChecker(java.lang.String)|"
+    ],
+    "affectedLib": "org.apache.directory.api:api-ldap-model:1.0.0-M14",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.directory.server:apacheds-core-api:2.0.0-M8",
+    "coordinatesV2": "org.apache.directory.server:apacheds-core-api:2.0.0-M9",
+    "caller": "|java+method:///org/apache/directory/server/core/api/LdapPrincipalSerializer/serialize(org.apache.directory.server.core.api.LdapPrincipal,java.io.ObjectOutput)|",
+    "called": "|java+method:///org/apache/directory/api/ldap/model/name/Dn/writeExternal(java.io.ObjectOutput)|",
+    "v1Body": [
+      "|java+method:///org/apache/directory/server/core/api/LdapPrincipal/getDn()|",
+      "|java+method:///org/apache/directory/shared/ldap/model/constants/AuthenticationLevel/getLevel()|",
+      "|java+method:///java/io/ObjectOutput/writeInt(int)|",
+      "|java+method:///org/apache/directory/shared/ldap/model/name/Dn/writeExternal(java.io.ObjectOutput)|",
+      "|java+method:///org/apache/directory/server/core/api/LdapPrincipal/getAuthenticationLevel()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/directory/server/core/api/LdapPrincipal/getDn()|",
+      "|java+method:///org/apache/directory/api/ldap/model/name/Dn/writeExternal(java.io.ObjectOutput)|",
+      "|java+method:///org/apache/directory/server/core/api/LdapPrincipal/getAuthenticationLevel()|",
+      "|java+method:///org/apache/directory/api/ldap/model/constants/AuthenticationLevel/getLevel()|",
+      "|java+method:///java/io/ObjectOutput/writeInt(int)|"
+    ],
+    "affectedLib": "org.apache.directory.api:api-ldap-model:1.0.0-M14",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.directory.server:apacheds-core-api:2.0.0-M8",
+    "coordinatesV2": "org.apache.directory.server:apacheds-core-api:2.0.0-M9",
+    "caller": "|java+method:///org/apache/directory/server/core/api/sp/LdapClassLoader/findClassInDIT(java.util.List,java.lang.String)|",
+    "called": "|java+constructor:///org/apache/directory/api/ldap/model/filter/EqualityNode/EqualityNode(org.apache.directory.api.ldap.model.schema.AttributeType,org.apache.directory.api.ldap.model.entry.Value)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/apache/directory/server/core/api/DirectoryService/getAdminSession()|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/apache/directory/server/core/api/filtering/EntryFilteringCursor/get()|",
+      "|java+method:///org/apache/directory/server/core/api/filtering/EntryFilteringCursor/close()|",
+      "|java+method:///org/apache/directory/shared/ldap/model/schema/SchemaManager/getAttributeType(java.lang.String)|",
+      "|java+constructor:///org/apache/directory/shared/ldap/model/filter/AndNode/AndNode()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+constructor:///org/apache/directory/shared/ldap/model/filter/EqualityNode/EqualityNode(org.apache.directory.shared.ldap.model.schema.AttributeType,org.apache.directory.shared.ldap.model.entry.Value)|",
+      "|java+constructor:///org/apache/directory/shared/ldap/model/entry/StringValue/StringValue(java.lang.String)|",
+      "|java+method:///org/apache/directory/server/core/api/filtering/EntryFilteringCursor/next()|",
+      "|java+method:///org/apache/directory/shared/ldap/model/filter/BranchNode/addNode(org.apache.directory.shared.ldap.model.filter.ExprNode)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///org/apache/directory/shared/ldap/model/entry/Attribute/getBytes()|",
+      "|java+constructor:///java/lang/ClassNotFoundException/ClassNotFoundException()|",
+      "|java+method:///org/apache/directory/server/core/api/filtering/EntryFilteringCursor/beforeFirst()|",
+      "|java+method:///org/apache/directory/server/core/api/CoreSession/search(org.apache.directory.shared.ldap.model.name.Dn,org.apache.directory.shared.ldap.model.message.SearchScope,org.apache.directory.shared.ldap.model.filter.ExprNode,org.apache.directory.shared.ldap.model.message.AliasDerefMode,java.util.Set)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/apache/directory/server/core/api/DirectoryService/getSchemaManager()|",
+      "|java+method:///org/apache/directory/server/i18n/I18n/err(org.apache.directory.server.i18n.I18n,java.lang.Object%5B%5D)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/apache/directory/shared/ldap/model/entry/Entry/get(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/directory/server/core/api/filtering/EntryFilteringCursor/beforeFirst()|",
+      "|java+method:///org/apache/directory/server/core/api/DirectoryService/getAdminSession()|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///org/apache/directory/api/ldap/model/filter/EqualityNode/EqualityNode(org.apache.directory.api.ldap.model.schema.AttributeType,org.apache.directory.api.ldap.model.entry.Value)|",
+      "|java+method:///org/apache/directory/server/core/api/filtering/EntryFilteringCursor/close()|",
+      "|java+constructor:///org/apache/directory/api/ldap/model/filter/AndNode/AndNode()|",
+      "|java+constructor:///org/apache/directory/api/ldap/model/entry/StringValue/StringValue(java.lang.String)|",
+      "|java+method:///org/apache/directory/api/ldap/model/entry/Entry/get(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/apache/directory/server/core/api/filtering/EntryFilteringCursor/next()|",
+      "|java+constructor:///java/lang/ClassNotFoundException/ClassNotFoundException()|",
+      "|java+method:///org/apache/directory/api/ldap/model/entry/Attribute/getBytes()|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/apache/directory/server/core/api/DirectoryService/getSchemaManager()|",
+      "|java+method:///org/apache/directory/server/i18n/I18n/err(org.apache.directory.server.i18n.I18n,java.lang.Object%5B%5D)|",
+      "|java+method:///org/apache/directory/api/ldap/model/schema/SchemaManager/getAttributeType(java.lang.String)|",
+      "|java+method:///org/apache/directory/server/core/api/filtering/EntryFilteringCursor/get()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/apache/directory/api/ldap/model/filter/BranchNode/addNode(org.apache.directory.api.ldap.model.filter.ExprNode)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///org/apache/directory/server/core/api/CoreSession/search(org.apache.directory.api.ldap.model.name.Dn,org.apache.directory.api.ldap.model.message.SearchScope,org.apache.directory.api.ldap.model.filter.ExprNode,org.apache.directory.api.ldap.model.message.AliasDerefMode,java.lang.String%5B%5D)|"
+    ],
+    "affectedLib": "org.apache.directory.api:api-ldap-model:1.0.0-M14",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.directory.server:apacheds-core-api:2.0.0-M8",
+    "coordinatesV2": "org.apache.directory.server:apacheds-core-api:2.0.0-M9",
+    "caller": "|java+method:///org/apache/directory/server/core/api/EntryToResponseCursor/getReferral()|",
+    "called": "|java+constructor:///org/apache/directory/api/ldap/model/exception/LdapException/LdapException()|",
+    "v1Body": [
+      "|java+constructor:///org/apache/directory/shared/ldap/model/exception/LdapException/LdapException()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/directory/api/ldap/model/exception/LdapException/LdapException()|"
+    ],
+    "affectedLib": "org.apache.directory.api:api-ldap-model:1.0.0-M14",
+    "change": "ADDED"
+  }
+]

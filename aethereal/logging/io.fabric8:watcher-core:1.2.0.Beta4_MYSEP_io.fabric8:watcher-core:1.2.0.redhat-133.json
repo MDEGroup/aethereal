@@ -1,0 +1,300 @@
+[
+  {
+    "coordinatesV1": "io.fabric8:watcher-core:1.2.0.Beta4",
+    "coordinatesV2": "io.fabric8:watcher-core:1.2.0.redhat-133",
+    "caller": "|java+method:///io/fabric8/common/util/Files/readBytes(java.io.File)|",
+    "called": "|java+method:///io/fabric8/common/util/Closeables/closeQuietly(java.io.Closeable)|",
+    "v1Body": [
+      "|java+method:///java/io/FileInputStream/read(byte%5B%5D)|",
+      "|java+method:///io/fabric8/common/util/Closeables/closeQuitely(java.io.Closeable)|",
+      "|java+method:///java/io/ByteArrayOutputStream/write(byte%5B%5D,int,int)|",
+      "|java+method:///java/io/ByteArrayOutputStream/toByteArray()|",
+      "|java+constructor:///java/io/FileNotFoundException/FileNotFoundException(java.lang.String)|",
+      "|java+constructor:///java/io/FileInputStream/FileInputStream(java.io.File)|",
+      "|java+constructor:///java/io/ByteArrayOutputStream/ByteArrayOutputStream()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/io/FileInputStream/read(byte%5B%5D)|",
+      "|java+method:///io/fabric8/common/util/Closeables/closeQuietly(java.io.Closeable)|",
+      "|java+method:///java/io/ByteArrayOutputStream/write(byte%5B%5D,int,int)|",
+      "|java+method:///java/io/ByteArrayOutputStream/toByteArray()|",
+      "|java+constructor:///java/io/FileNotFoundException/FileNotFoundException(java.lang.String)|",
+      "|java+constructor:///java/io/FileInputStream/FileInputStream(java.io.File)|",
+      "|java+constructor:///java/io/ByteArrayOutputStream/ByteArrayOutputStream()|"
+    ],
+    "affectedLib": "io.fabric8:common-util:1.2.0.redhat-133",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.fabric8:watcher-core:1.2.0.Beta4",
+    "coordinatesV2": "io.fabric8:watcher-core:1.2.0.redhat-133",
+    "caller": "|java+method:///io/fabric8/common/util/Files/writeToFile(java.io.File,byte%5B%5D)|",
+    "called": "|java+method:///io/fabric8/common/util/Closeables/closeQuietly(java.io.Closeable)|",
+    "v1Body": [
+      "|java+method:///java/io/File/getName()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///io/fabric8/common/util/Closeables/closeQuitely(java.io.Closeable)|",
+      "|java+method:///java/io/File/exists()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/io/File/mkdirs()|",
+      "|java+method:///java/io/FileOutputStream/write(byte%5B%5D)|",
+      "|java+constructor:///java/io/FileNotFoundException/FileNotFoundException(java.lang.String)|",
+      "|java+constructor:///java/io/FileOutputStream/FileOutputStream(java.io.File)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/io/File/getParentFile()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/io/File/getName()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///io/fabric8/common/util/Closeables/closeQuietly(java.io.Closeable)|",
+      "|java+method:///java/io/File/exists()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/io/File/mkdirs()|",
+      "|java+method:///java/io/FileOutputStream/write(byte%5B%5D)|",
+      "|java+constructor:///java/io/FileNotFoundException/FileNotFoundException(java.lang.String)|",
+      "|java+constructor:///java/io/FileOutputStream/FileOutputStream(java.io.File)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/io/File/getParentFile()|"
+    ],
+    "affectedLib": "io.fabric8:common-util:1.2.0.redhat-133",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.fabric8:watcher-core:1.2.0.Beta4",
+    "coordinatesV2": "io.fabric8:watcher-core:1.2.0.redhat-133",
+    "caller": "|java+method:///io/fabric8/common/util/Zips/unzip(java.io.InputStream,java.io.File)|",
+    "called": "|java+method:///io/fabric8/common/util/Closeables/closeQuietly(java.io.Closeable)|",
+    "v1Body": [
+      "|java+constructor:///java/util/zip/ZipInputStream/ZipInputStream(java.io.InputStream)|",
+      "|java+method:///io/fabric8/common/util/Zips/copy(java.io.InputStream,java.io.OutputStream)|",
+      "|java+constructor:///java/io/File/File(java.io.File,java.lang.String)|",
+      "|java+method:///java/util/zip/ZipEntry/isDirectory()|",
+      "|java+method:///java/util/zip/ZipInputStream/closeEntry()|",
+      "|java+method:///java/io/File/mkdirs()|",
+      "|java+constructor:///java/io/BufferedInputStream/BufferedInputStream(java.io.InputStream)|",
+      "|java+method:///java/util/zip/ZipInputStream/getNextEntry()|",
+      "|java+constructor:///java/io/FileOutputStream/FileOutputStream(java.io.File)|",
+      "|java+method:///java/io/File/getParentFile()|",
+      "|java+method:///java/util/zip/ZipEntry/getName()|",
+      "|java+method:///io/fabric8/common/util/Closeables/closeQuitely(java.io.Closeable)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/util/zip/ZipInputStream/ZipInputStream(java.io.InputStream)|",
+      "|java+method:///io/fabric8/common/util/Zips/copy(java.io.InputStream,java.io.OutputStream)|",
+      "|java+constructor:///java/io/File/File(java.io.File,java.lang.String)|",
+      "|java+method:///java/util/zip/ZipEntry/getName()|",
+      "|java+method:///java/util/zip/ZipInputStream/closeEntry()|",
+      "|java+method:///java/io/File/mkdirs()|",
+      "|java+constructor:///java/io/BufferedInputStream/BufferedInputStream(java.io.InputStream)|",
+      "|java+method:///java/util/zip/ZipInputStream/getNextEntry()|",
+      "|java+constructor:///java/io/FileOutputStream/FileOutputStream(java.io.File)|",
+      "|java+method:///java/io/File/getParentFile()|",
+      "|java+method:///java/util/zip/ZipEntry/isDirectory()|",
+      "|java+method:///io/fabric8/common/util/Closeables/closeQuietly(java.io.Closeable)|"
+    ],
+    "affectedLib": "io.fabric8:common-util:1.2.0.redhat-133",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.fabric8:watcher-core:1.2.0.Beta4",
+    "coordinatesV2": "io.fabric8:watcher-core:1.2.0.redhat-133",
+    "caller": "|java+method:///io/fabric8/common/util/Zips/copy(java.io.InputStream,java.io.OutputStream)|",
+    "called": "|java+method:///io/fabric8/common/util/Closeables/closeQuietly(java.io.Closeable)|",
+    "v1Body": [
+      "|java+method:///java/io/InputStream/read(byte%5B%5D)|",
+      "|java+method:///io/fabric8/common/util/Closeables/closeQuitely(java.io.Closeable)|",
+      "|java+method:///java/io/OutputStream/write(byte%5B%5D,int,int)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/io/InputStream/read(byte%5B%5D)|",
+      "|java+method:///io/fabric8/common/util/Closeables/closeQuietly(java.io.Closeable)|",
+      "|java+method:///java/io/OutputStream/write(byte%5B%5D,int,int)|"
+    ],
+    "affectedLib": "io.fabric8:common-util:1.2.0.redhat-133",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.fabric8:watcher-core:1.2.0.Beta4",
+    "coordinatesV2": "io.fabric8:watcher-core:1.2.0.redhat-133",
+    "caller": "|java+method:///io/fabric8/common/util/Files/readBytes(java.io.InputStream)|",
+    "called": "|java+method:///io/fabric8/common/util/Closeables/closeQuietly(java.io.Closeable)|",
+    "v1Body": [
+      "|java+method:///java/io/InputStream/read(byte%5B%5D)|",
+      "|java+method:///io/fabric8/common/util/Closeables/closeQuitely(java.io.Closeable)|",
+      "|java+method:///java/io/ByteArrayOutputStream/write(byte%5B%5D,int,int)|",
+      "|java+method:///java/io/ByteArrayOutputStream/toByteArray()|",
+      "|java+constructor:///java/io/FileNotFoundException/FileNotFoundException(java.lang.String)|",
+      "|java+constructor:///java/io/ByteArrayOutputStream/ByteArrayOutputStream()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/io/InputStream/read(byte%5B%5D)|",
+      "|java+method:///io/fabric8/common/util/Closeables/closeQuietly(java.io.Closeable)|",
+      "|java+method:///java/io/ByteArrayOutputStream/write(byte%5B%5D,int,int)|",
+      "|java+method:///java/io/ByteArrayOutputStream/toByteArray()|",
+      "|java+constructor:///java/io/FileNotFoundException/FileNotFoundException(java.lang.String)|",
+      "|java+constructor:///java/io/ByteArrayOutputStream/ByteArrayOutputStream()|"
+    ],
+    "affectedLib": "io.fabric8:common-util:1.2.0.redhat-133",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.fabric8:watcher-core:1.2.0.Beta4",
+    "coordinatesV2": "io.fabric8:watcher-core:1.2.0.redhat-133",
+    "caller": "|java+method:///io/fabric8/common/util/Zips/createZipFile(org.slf4j.Logger,java.io.File,java.io.File,java.io.FileFilter)|",
+    "called": "|java+method:///io/fabric8/common/util/Closeables/closeQuietly(java.io.Closeable)|",
+    "v1Body": [
+      "|java+method:///io/fabric8/common/util/Closeables/closeQuitely(java.io.Closeable)|",
+      "|java+constructor:///java/util/zip/ZipOutputStream/ZipOutputStream(java.io.OutputStream)|",
+      "|java+method:///java/io/File/mkdirs()|",
+      "|java+method:///java/io/File/getParentFile()|",
+      "|java+method:///io/fabric8/common/util/Zips/zipDirectory(org.slf4j.Logger,java.io.File,java.util.zip.ZipOutputStream,java.lang.String,java.io.FileFilter)|",
+      "|java+constructor:///java/io/FileOutputStream/FileOutputStream(java.io.File)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/io/File/mkdirs()|",
+      "|java+method:///java/io/File/getParentFile()|",
+      "|java+constructor:///java/util/zip/ZipOutputStream/ZipOutputStream(java.io.OutputStream)|",
+      "|java+method:///io/fabric8/common/util/Closeables/closeQuietly(java.io.Closeable)|",
+      "|java+method:///io/fabric8/common/util/Zips/zipDirectory(org.slf4j.Logger,java.io.File,java.util.zip.ZipOutputStream,java.lang.String,java.io.FileFilter)|",
+      "|java+constructor:///java/io/FileOutputStream/FileOutputStream(java.io.File)|"
+    ],
+    "affectedLib": "io.fabric8:common-util:1.2.0.redhat-133",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.fabric8:watcher-core:1.2.0.Beta4",
+    "coordinatesV2": "io.fabric8:watcher-core:1.2.0.redhat-133",
+    "caller": "|java+method:///io/fabric8/common/util/Processes/processOutput(java.io.InputStream,io.fabric8.common.util.Function,java.lang.String)|",
+    "called": "|java+method:///io/fabric8/common/util/Closeables/closeQuietly(java.io.Closeable)|",
+    "v1Body": [
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///io/fabric8/common/util/Closeables/closeQuitely(java.io.Closeable)|",
+      "|java+method:///io/fabric8/common/util/Function/apply(java.lang.Object)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///java/io/InputStreamReader/InputStreamReader(java.io.InputStream)|",
+      "|java+constructor:///java/io/BufferedReader/BufferedReader(java.io.Reader)|",
+      "|java+method:///java/io/BufferedReader/readLine()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///io/fabric8/common/util/Closeables/closeQuietly(java.io.Closeable)|",
+      "|java+method:///io/fabric8/common/util/Function/apply(java.lang.Object)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///java/io/InputStreamReader/InputStreamReader(java.io.InputStream)|",
+      "|java+constructor:///java/io/BufferedReader/BufferedReader(java.io.Reader)|",
+      "|java+method:///java/io/BufferedReader/readLine()|"
+    ],
+    "affectedLib": "io.fabric8:common-util:1.2.0.redhat-133",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.fabric8:watcher-core:1.2.0.Beta4",
+    "coordinatesV2": "io.fabric8:watcher-core:1.2.0.redhat-133",
+    "caller": "|java+method:///io/fabric8/common/util/Files/writeToFile(java.io.File,java.lang.String,java.nio.charset.Charset)|",
+    "called": "|java+method:///io/fabric8/common/util/Closeables/closeQuietly(java.io.Closeable)|",
+    "v1Body": [
+      "|java+method:///java/io/File/getName()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/String/length()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/io/File/mkdirs()|",
+      "|java+constructor:///java/io/FileNotFoundException/FileNotFoundException(java.lang.String)|",
+      "|java+constructor:///java/io/FileOutputStream/FileOutputStream(java.io.File)|",
+      "|java+constructor:///java/io/OutputStreamWriter/OutputStreamWriter(java.io.OutputStream,java.nio.charset.Charset)|",
+      "|java+method:///io/fabric8/common/util/Closeables/closeQuitely(java.io.Closeable)|",
+      "|java+method:///java/io/File/exists()|",
+      "|java+method:///java/io/OutputStreamWriter/write(java.lang.String,int,int)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/io/File/getParentFile()|",
+      "|java+method:///java/io/OutputStreamWriter/flush()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/io/File/getName()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///java/io/OutputStreamWriter/OutputStreamWriter(java.io.OutputStream,java.nio.charset.Charset)|",
+      "|java+method:///java/lang/String/length()|",
+      "|java+method:///io/fabric8/common/util/Closeables/closeQuietly(java.io.Closeable)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/io/File/mkdirs()|",
+      "|java+constructor:///java/io/FileNotFoundException/FileNotFoundException(java.lang.String)|",
+      "|java+constructor:///java/io/FileOutputStream/FileOutputStream(java.io.File)|",
+      "|java+method:///java/io/File/exists()|",
+      "|java+method:///java/io/OutputStreamWriter/write(java.lang.String,int,int)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/io/File/getParentFile()|",
+      "|java+method:///java/io/OutputStreamWriter/flush()|"
+    ],
+    "affectedLib": "io.fabric8:common-util:1.2.0.redhat-133",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.fabric8:watcher-core:1.2.0.Beta4",
+    "coordinatesV2": "io.fabric8:watcher-core:1.2.0.redhat-133",
+    "caller": "|java+method:///io/fabric8/common/util/Processes/parseProcesses(java.io.InputStream,java.util.List,java.lang.String,io.fabric8.common.util.Filter)|",
+    "called": "|java+method:///io/fabric8/common/util/Closeables/closeQuietly(java.io.Closeable)|",
+    "v1Body": [
+      "|java+method:///java/lang/Long/parseLong(java.lang.String)|",
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///io/fabric8/common/util/Closeables/closeQuitely(java.io.Closeable)|",
+      "|java+method:///io/fabric8/common/util/Filter/matches(java.lang.Object)|",
+      "|java+method:///java/util/StringTokenizer/nextToken()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+constructor:///java/util/StringTokenizer/StringTokenizer(java.lang.String)|",
+      "|java+method:///java/util/StringTokenizer/hasMoreTokens()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///java/io/InputStreamReader/InputStreamReader(java.io.InputStream)|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+constructor:///java/io/BufferedReader/BufferedReader(java.io.Reader)|",
+      "|java+method:///java/io/BufferedReader/readLine()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Long/parseLong(java.lang.String)|",
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///io/fabric8/common/util/Closeables/closeQuietly(java.io.Closeable)|",
+      "|java+method:///io/fabric8/common/util/Filter/matches(java.lang.Object)|",
+      "|java+method:///java/util/StringTokenizer/nextToken()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+constructor:///java/util/StringTokenizer/StringTokenizer(java.lang.String)|",
+      "|java+method:///java/util/StringTokenizer/hasMoreTokens()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///java/io/InputStreamReader/InputStreamReader(java.io.InputStream)|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+constructor:///java/io/BufferedReader/BufferedReader(java.io.Reader)|",
+      "|java+method:///java/io/BufferedReader/readLine()|"
+    ],
+    "affectedLib": "io.fabric8:common-util:1.2.0.redhat-133",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.fabric8:watcher-core:1.2.0.Beta4",
+    "coordinatesV2": "io.fabric8:watcher-core:1.2.0.redhat-133",
+    "caller": "|java+method:///io/fabric8/common/util/Files/copy(java.io.InputStream,java.io.OutputStream)|",
+    "called": "|java+method:///io/fabric8/common/util/Closeables/closeQuietly(java.io.Closeable)|",
+    "v1Body": [
+      "|java+method:///java/io/InputStream/read(byte%5B%5D)|",
+      "|java+method:///io/fabric8/common/util/Closeables/closeQuitely(java.io.Closeable)|",
+      "|java+method:///java/io/OutputStream/write(byte%5B%5D,int,int)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/io/InputStream/read(byte%5B%5D)|",
+      "|java+method:///io/fabric8/common/util/Closeables/closeQuietly(java.io.Closeable)|",
+      "|java+method:///java/io/OutputStream/write(byte%5B%5D,int,int)|"
+    ],
+    "affectedLib": "io.fabric8:common-util:1.2.0.redhat-133",
+    "change": "UPDATED"
+  }
+]

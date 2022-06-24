@@ -1,0 +1,141 @@
+[
+  {
+    "coordinatesV1": "org.molgenis:molgenis-data-migrate:1.7.0",
+    "coordinatesV2": "org.molgenis:molgenis-data-migrate:1.8.0",
+    "caller": "|java+method:///org/molgenis/data/version/v1_6/Step7UpgradeMetaDataTo1_6/upgrade()|",
+    "called": "|java+method:///org/molgenis/data/mysql/MysqlRepositoryCollection/getRepository(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/molgenis/security/core/runas/RunAsSystemProxy/runAsSystem(org.molgenis.security.core.runas.RunnableAsSystem)|",
+      "|java+method:///org/molgenis/data/elasticsearch/SearchService/delete(java.lang.String)|",
+      "|java+method:///java/util/List/forEach(java.util.function.Consumer)|",
+      "|java+method:///org/molgenis/data/elasticsearch/SearchService/rebuildIndex(java.lang.Iterable,org.molgenis.data.EntityMetaData)|",
+      "|java+constructor:///org/molgenis/data/version/v1_6/Step7UpgradeMetaDataTo1_6$1/Step7UpgradeMetaDataTo1_6$1(org.molgenis.data.version.v1_6.Step7UpgradeMetaDataTo1_6,org.molgenis.data.support.DataServiceImpl)|",
+      "|java+method:///java/util/Arrays/asList(java.lang.Object%5B%5D)|",
+      "|java+constructor:///java/io/UncheckedIOException/UncheckedIOException(java.io.IOException)|",
+      "|java+constructor:///org/molgenis/data/meta/MetaDataServiceImpl/MetaDataServiceImpl(org.molgenis.data.support.DataServiceImpl)|",
+      "|java+method:///org/molgenis/data/mysql/MysqlRepositoryCollection/getRepository(java.lang.String)|",
+      "|java+constructor:///org/molgenis/data/support/DataServiceImpl/DataServiceImpl()|",
+      "|java+method:///org/molgenis/data/elasticsearch/SearchService/createMappings(org.molgenis.data.EntityMetaData)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String)|",
+      "|java+constructor:///org/molgenis/data/meta/AttributeMetaDataMetaData/AttributeMetaDataMetaData()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/molgenis/security/core/runas/RunAsSystemProxy/runAsSystem(org.molgenis.security.core.runas.RunnableAsSystem)|",
+      "|java+method:///org/molgenis/data/elasticsearch/SearchService/delete(java.lang.String)|",
+      "|java+method:///java/util/List/forEach(java.util.function.Consumer)|",
+      "|java+method:///org/molgenis/data/elasticsearch/SearchService/rebuildIndex(java.lang.Iterable,org.molgenis.data.EntityMetaData)|",
+      "|java+constructor:///org/molgenis/data/version/v1_6/Step7UpgradeMetaDataTo1_6$1/Step7UpgradeMetaDataTo1_6$1(org.molgenis.data.version.v1_6.Step7UpgradeMetaDataTo1_6,org.molgenis.data.support.DataServiceImpl)|",
+      "|java+method:///java/util/Arrays/asList(java.lang.Object%5B%5D)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String)|",
+      "|java+constructor:///org/molgenis/data/meta/MetaDataServiceImpl/MetaDataServiceImpl(org.molgenis.data.support.DataServiceImpl)|",
+      "|java+method:///org/molgenis/data/mysql/MysqlRepositoryCollection/getRepository(java.lang.String)|",
+      "|java+constructor:///org/molgenis/data/support/DataServiceImpl/DataServiceImpl()|",
+      "|java+method:///org/molgenis/data/elasticsearch/SearchService/createMappings(org.molgenis.data.EntityMetaData)|"
+    ],
+    "affectedLib": "org.molgenis:molgenis-data-mysql:1.8.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.molgenis:molgenis-data-migrate:1.7.0",
+    "coordinatesV2": "org.molgenis:molgenis-data-migrate:1.8.0",
+    "caller": "|java+method:///org/molgenis/data/version/v1_5/Step1UpgradeMetaData/recreateElasticSearchMetaDataIndices()|",
+    "called": "|java+method:///org/molgenis/data/mysql/MysqlRepositoryCollection/getRepository(java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///org/molgenis/data/meta/PackageMetaData/PackageMetaData()|",
+      "|java+method:///java/lang/Thread/sleep(long)|",
+      "|java+method:///org/molgenis/data/elasticsearch/SearchService/delete(java.lang.String)|",
+      "|java+method:///org/molgenis/data/elasticsearch/SearchService/rebuildIndex(java.lang.Iterable,org.molgenis.data.EntityMetaData)|",
+      "|java+constructor:///org/molgenis/data/meta/TagMetaData/TagMetaData()|",
+      "|java+method:///org/molgenis/data/elasticsearch/SearchService/refresh()|",
+      "|java+method:///org/molgenis/data/mysql/MysqlRepositoryCollection/getRepository(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///org/molgenis/data/meta/EntityMetaDataMetaData/EntityMetaDataMetaData()|",
+      "|java+method:///org/molgenis/data/elasticsearch/SearchService/createMappings(org.molgenis.data.EntityMetaData)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String)|",
+      "|java+constructor:///org/molgenis/data/meta/AttributeMetaDataMetaData/AttributeMetaDataMetaData()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Thread/sleep(long)|",
+      "|java+method:///org/molgenis/data/elasticsearch/SearchService/delete(java.lang.String)|",
+      "|java+method:///org/molgenis/data/elasticsearch/SearchService/rebuildIndex(java.lang.Iterable,org.molgenis.data.EntityMetaData)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String)|",
+      "|java+method:///org/molgenis/data/elasticsearch/SearchService/refresh()|",
+      "|java+method:///org/molgenis/data/mysql/MysqlRepositoryCollection/getRepository(java.lang.String)|",
+      "|java+method:///org/molgenis/data/elasticsearch/SearchService/createMappings(org.molgenis.data.EntityMetaData)|"
+    ],
+    "affectedLib": "org.molgenis:molgenis-data-mysql:1.8.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.molgenis:molgenis-data-migrate:1.7.0",
+    "coordinatesV2": "org.molgenis:molgenis-data-migrate:1.8.0",
+    "caller": "|java+method:///org/molgenis/data/version/v1_6/Step7UpgradeMetaDataTo1_6/upgrade()|",
+    "called": "|java+method:///org/molgenis/security/core/runas/RunAsSystemProxy/runAsSystem(org.molgenis.security.core.runas.RunnableAsSystem)|",
+    "v1Body": [
+      "|java+method:///org/molgenis/security/core/runas/RunAsSystemProxy/runAsSystem(org.molgenis.security.core.runas.RunnableAsSystem)|",
+      "|java+method:///org/molgenis/data/elasticsearch/SearchService/delete(java.lang.String)|",
+      "|java+method:///java/util/List/forEach(java.util.function.Consumer)|",
+      "|java+method:///org/molgenis/data/elasticsearch/SearchService/rebuildIndex(java.lang.Iterable,org.molgenis.data.EntityMetaData)|",
+      "|java+constructor:///org/molgenis/data/version/v1_6/Step7UpgradeMetaDataTo1_6$1/Step7UpgradeMetaDataTo1_6$1(org.molgenis.data.version.v1_6.Step7UpgradeMetaDataTo1_6,org.molgenis.data.support.DataServiceImpl)|",
+      "|java+method:///java/util/Arrays/asList(java.lang.Object%5B%5D)|",
+      "|java+constructor:///java/io/UncheckedIOException/UncheckedIOException(java.io.IOException)|",
+      "|java+constructor:///org/molgenis/data/meta/MetaDataServiceImpl/MetaDataServiceImpl(org.molgenis.data.support.DataServiceImpl)|",
+      "|java+method:///org/molgenis/data/mysql/MysqlRepositoryCollection/getRepository(java.lang.String)|",
+      "|java+constructor:///org/molgenis/data/support/DataServiceImpl/DataServiceImpl()|",
+      "|java+method:///org/molgenis/data/elasticsearch/SearchService/createMappings(org.molgenis.data.EntityMetaData)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String)|",
+      "|java+constructor:///org/molgenis/data/meta/AttributeMetaDataMetaData/AttributeMetaDataMetaData()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/molgenis/security/core/runas/RunAsSystemProxy/runAsSystem(org.molgenis.security.core.runas.RunnableAsSystem)|",
+      "|java+method:///org/molgenis/data/elasticsearch/SearchService/delete(java.lang.String)|",
+      "|java+method:///java/util/List/forEach(java.util.function.Consumer)|",
+      "|java+method:///org/molgenis/data/elasticsearch/SearchService/rebuildIndex(java.lang.Iterable,org.molgenis.data.EntityMetaData)|",
+      "|java+constructor:///org/molgenis/data/version/v1_6/Step7UpgradeMetaDataTo1_6$1/Step7UpgradeMetaDataTo1_6$1(org.molgenis.data.version.v1_6.Step7UpgradeMetaDataTo1_6,org.molgenis.data.support.DataServiceImpl)|",
+      "|java+method:///java/util/Arrays/asList(java.lang.Object%5B%5D)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String)|",
+      "|java+constructor:///org/molgenis/data/meta/MetaDataServiceImpl/MetaDataServiceImpl(org.molgenis.data.support.DataServiceImpl)|",
+      "|java+method:///org/molgenis/data/mysql/MysqlRepositoryCollection/getRepository(java.lang.String)|",
+      "|java+constructor:///org/molgenis/data/support/DataServiceImpl/DataServiceImpl()|",
+      "|java+method:///org/molgenis/data/elasticsearch/SearchService/createMappings(org.molgenis.data.EntityMetaData)|"
+    ],
+    "affectedLib": "org.molgenis:molgenis-security-core:1.8.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.molgenis:molgenis-data-migrate:1.7.0",
+    "coordinatesV2": "org.molgenis:molgenis-data-migrate:1.8.0",
+    "caller": "|java+method:///org/molgenis/data/version/v1_6/Step7UpgradeMetaDataTo1_6/upgrade()|",
+    "called": "|java+constructor:///org/molgenis/data/support/DataServiceImpl/DataServiceImpl()|",
+    "v1Body": [
+      "|java+method:///org/molgenis/security/core/runas/RunAsSystemProxy/runAsSystem(org.molgenis.security.core.runas.RunnableAsSystem)|",
+      "|java+method:///org/molgenis/data/elasticsearch/SearchService/delete(java.lang.String)|",
+      "|java+method:///java/util/List/forEach(java.util.function.Consumer)|",
+      "|java+method:///org/molgenis/data/elasticsearch/SearchService/rebuildIndex(java.lang.Iterable,org.molgenis.data.EntityMetaData)|",
+      "|java+constructor:///org/molgenis/data/version/v1_6/Step7UpgradeMetaDataTo1_6$1/Step7UpgradeMetaDataTo1_6$1(org.molgenis.data.version.v1_6.Step7UpgradeMetaDataTo1_6,org.molgenis.data.support.DataServiceImpl)|",
+      "|java+method:///java/util/Arrays/asList(java.lang.Object%5B%5D)|",
+      "|java+constructor:///java/io/UncheckedIOException/UncheckedIOException(java.io.IOException)|",
+      "|java+constructor:///org/molgenis/data/meta/MetaDataServiceImpl/MetaDataServiceImpl(org.molgenis.data.support.DataServiceImpl)|",
+      "|java+method:///org/molgenis/data/mysql/MysqlRepositoryCollection/getRepository(java.lang.String)|",
+      "|java+constructor:///org/molgenis/data/support/DataServiceImpl/DataServiceImpl()|",
+      "|java+method:///org/molgenis/data/elasticsearch/SearchService/createMappings(org.molgenis.data.EntityMetaData)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String)|",
+      "|java+constructor:///org/molgenis/data/meta/AttributeMetaDataMetaData/AttributeMetaDataMetaData()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/molgenis/security/core/runas/RunAsSystemProxy/runAsSystem(org.molgenis.security.core.runas.RunnableAsSystem)|",
+      "|java+method:///org/molgenis/data/elasticsearch/SearchService/delete(java.lang.String)|",
+      "|java+method:///java/util/List/forEach(java.util.function.Consumer)|",
+      "|java+method:///org/molgenis/data/elasticsearch/SearchService/rebuildIndex(java.lang.Iterable,org.molgenis.data.EntityMetaData)|",
+      "|java+constructor:///org/molgenis/data/version/v1_6/Step7UpgradeMetaDataTo1_6$1/Step7UpgradeMetaDataTo1_6$1(org.molgenis.data.version.v1_6.Step7UpgradeMetaDataTo1_6,org.molgenis.data.support.DataServiceImpl)|",
+      "|java+method:///java/util/Arrays/asList(java.lang.Object%5B%5D)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String)|",
+      "|java+constructor:///org/molgenis/data/meta/MetaDataServiceImpl/MetaDataServiceImpl(org.molgenis.data.support.DataServiceImpl)|",
+      "|java+method:///org/molgenis/data/mysql/MysqlRepositoryCollection/getRepository(java.lang.String)|",
+      "|java+constructor:///org/molgenis/data/support/DataServiceImpl/DataServiceImpl()|",
+      "|java+method:///org/molgenis/data/elasticsearch/SearchService/createMappings(org.molgenis.data.EntityMetaData)|"
+    ],
+    "affectedLib": "org.molgenis:molgenis-data:1.8.0",
+    "change": "UPDATED"
+  }
+]

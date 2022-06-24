@@ -1,0 +1,38 @@
+[
+  {
+    "coordinatesV1": "org.apache.maven.wagon:wagon-ssh-common-test:2.10",
+    "coordinatesV2": "org.apache.maven.wagon:wagon-ssh-common-test:2.12",
+    "caller": "|java+method:///org/apache/maven/wagon/providers/ssh/TestPublickeyAuthenticator/authenticate(java.lang.String,java.security.PublicKey,org.apache.sshd.server.session.ServerSession)|",
+    "called": "|java+method:///org/codehaus/plexus/util/IOUtil/toString(java.io.InputStream)|",
+    "v1Body": [
+      "|java+method:///org/apache/maven/wagon/providers/ssh/TestPublickeyAuthenticator/decodePublicKey(java.lang.String)|",
+      "|java+method:///java/security/interfaces/RSAPublicKey/getModulus()|",
+      "|java+constructor:///org/apache/maven/wagon/providers/ssh/TestPublickeyAuthenticator$PublickeyAuthenticatorRequest/TestPublickeyAuthenticator$PublickeyAuthenticatorRequest(java.lang.String,java.security.PublicKey)|",
+      "|java+method:///java/lang/Thread/currentThread()|",
+      "|java+method:///java/lang/ClassLoader/getResourceAsStream(java.lang.String)|",
+      "|java+method:///org/codehaus/plexus/util/IOUtil/toString(java.io.InputStream)|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/lang/Thread/getContextClassLoader()|",
+      "|java+method:///java/lang/Exception/getMessage()|",
+      "|java+method:///java/math/BigInteger/equals(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/security/interfaces/RSAPublicKey/getModulus()|",
+      "|java+constructor:///org/apache/maven/wagon/providers/ssh/TestPublickeyAuthenticator$PublickeyAuthenticatorRequest/TestPublickeyAuthenticator$PublickeyAuthenticatorRequest(java.lang.String,java.security.PublicKey)|",
+      "|java+method:///java/lang/Thread/currentThread()|",
+      "|java+method:///java/io/InputStream/close()|",
+      "|java+method:///java/lang/ClassLoader/getResourceAsStream(java.lang.String)|",
+      "|java+method:///org/codehaus/plexus/util/IOUtil/toString(java.io.InputStream)|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/lang/Thread/getContextClassLoader()|",
+      "|java+method:///org/apache/maven/wagon/providers/ssh/TestPublickeyAuthenticator/decodePublicKey(java.lang.String)|",
+      "|java+method:///org/codehaus/plexus/util/IOUtil/close(java.io.InputStream)|",
+      "|java+method:///java/lang/Exception/getMessage()|",
+      "|java+method:///java/math/BigInteger/equals(java.lang.Object)|"
+    ],
+    "affectedLib": "org.codehaus.plexus:plexus-utils:3.0.24",
+    "change": "UPDATED"
+  }
+]

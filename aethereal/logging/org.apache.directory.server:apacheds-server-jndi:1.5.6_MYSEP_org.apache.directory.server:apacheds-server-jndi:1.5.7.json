@@ -1,0 +1,28 @@
+[
+  {
+    "coordinatesV1": "org.apache.directory.server:apacheds-server-jndi:1.5.6",
+    "coordinatesV2": "org.apache.directory.server:apacheds-server-jndi:1.5.7",
+    "caller": "|java+method:///org/apache/directory/server/configuration/ApacheDS/ensureLdifFileBase()|",
+    "called": "|java+constructor:///org/apache/directory/shared/ldap/name/DN/DN(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/info(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/apache/directory/server/core/DirectoryService/getAdminSession()|",
+      "|java+method:///org/apache/directory/server/core/CoreSession/add(org.apache.directory.server.core.entry.ServerEntry)|",
+      "|java+method:///org/apache/directory/server/core/CoreSession/lookup(org.apache.directory.shared.ldap.name.DN)|",
+      "|java+method:///org/apache/directory/server/core/entry/ServerEntry/add(java.lang.String,java.lang.String%5B%5D)|",
+      "|java+constructor:///org/apache/directory/shared/ldap/name/DN/DN(java.lang.String)|",
+      "|java+method:///org/apache/directory/server/core/DirectoryService/newEntry(org.apache.directory.shared.ldap.name.DN)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/directory/server/core/CoreSession/add(org.apache.directory.shared.ldap.entry.ServerEntry)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/apache/directory/server/core/DirectoryService/getAdminSession()|",
+      "|java+method:///org/apache/directory/shared/ldap/entry/ServerEntry/add(java.lang.String,java.lang.String%5B%5D)|",
+      "|java+method:///org/apache/directory/server/core/CoreSession/lookup(org.apache.directory.shared.ldap.name.DN)|",
+      "|java+constructor:///org/apache/directory/shared/ldap/name/DN/DN(java.lang.String)|",
+      "|java+method:///org/apache/directory/server/core/DirectoryService/newEntry(org.apache.directory.shared.ldap.name.DN)|"
+    ],
+    "affectedLib": "org.apache.directory.shared:shared-ldap:0.9.19",
+    "change": "UPDATED"
+  }
+]

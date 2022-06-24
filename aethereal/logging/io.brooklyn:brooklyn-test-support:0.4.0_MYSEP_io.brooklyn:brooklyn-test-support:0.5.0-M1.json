@@ -1,0 +1,79 @@
+[
+  {
+    "coordinatesV1": "io.brooklyn:brooklyn-test-support:0.5.0-M1",
+    "coordinatesV2": "io.brooklyn:brooklyn-test-support:0.4.0",
+    "caller": "|java+initializer:///brooklyn/test/HttpTestUtils/HttpTestUtils$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///java/util/concurrent/Executors/newCachedThreadPool()|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.5.11",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "io.brooklyn:brooklyn-test-support:0.4.0",
+    "coordinatesV2": "io.brooklyn:brooklyn-test-support:0.5.0-M1",
+    "caller": "|java+method:///brooklyn/test/HttpTestUtils/assertUrlUnreachable(java.lang.String)|",
+    "called": "|java+method:///org/testng/Assert/fail(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/testng/Assert/fail(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+method:///brooklyn/test/HttpTestUtils/getFirstThrowableOfType(java.lang.Throwable,java.lang.Class)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///brooklyn/test/HttpTestUtils/getHttpStatusCode(java.lang.String)|",
+      "|java+method:///com/google/common/base/Throwables/propagate(java.lang.Throwable)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/testng/Assert/fail(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///brooklyn/test/HttpTestUtils/getFirstThrowableOfType(java.lang.Throwable,java.lang.Class)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///brooklyn/test/HttpTestUtils/getHttpStatusCode(java.lang.String)|",
+      "|java+method:///java/lang/Thread/currentThread()|",
+      "|java+method:///java/lang/Thread/interrupt()|",
+      "|java+method:///com/google/common/base/Throwables/propagate(java.lang.Throwable)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder(java.lang.String)|"
+    ],
+    "affectedLib": "org.testng:testng:6.8",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.brooklyn:brooklyn-test-support:0.4.0",
+    "coordinatesV2": "io.brooklyn:brooklyn-test-support:0.5.0-M1",
+    "caller": "|java+method:///brooklyn/test/HttpTestUtils/assertHttpStatusCodeEquals(java.lang.String,int)|",
+    "called": "|java+method:///org/testng/Assert/assertEquals(int,int,java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///java/lang/IllegalStateException/IllegalStateException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder(java.lang.String)|",
+      "|java+method:///org/testng/Assert/assertEquals(int,int,java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///brooklyn/test/HttpTestUtils/getHttpStatusCode(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/lang/IllegalStateException/IllegalStateException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder(java.lang.String)|",
+      "|java+method:///org/testng/Assert/assertEquals(int,int,java.lang.String)|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///brooklyn/test/HttpTestUtils/getHttpStatusCode(java.lang.String)|",
+      "|java+method:///java/lang/Thread/currentThread()|",
+      "|java+method:///java/lang/Thread/interrupt()|"
+    ],
+    "affectedLib": "org.testng:testng:6.8",
+    "change": "UPDATED"
+  }
+]

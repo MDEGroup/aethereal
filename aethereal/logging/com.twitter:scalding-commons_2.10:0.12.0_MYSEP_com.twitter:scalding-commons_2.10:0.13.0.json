@@ -1,0 +1,104 @@
+[
+  {
+    "coordinatesV1": "com.twitter:scalding-commons_2.10:0.12.0",
+    "coordinatesV2": "com.twitter:scalding-commons_2.10:0.13.0",
+    "caller": "|java+method:///com/twitter/scalding/commons/source/LongThriftTransformer$$anonfun$transformForRead$1/apply(scala.Tuple2)|",
+    "called": "|java+method:///com/twitter/elephantbird/mapreduce/io/BinaryWritable/setConverter(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///com/twitter/elephantbird/mapreduce/io/BinaryWritable/get()|",
+      "|java+method:///scala/Tuple2/_1()|",
+      "|java+method:///scala/Tuple2/_2()|",
+      "|java+method:///com/twitter/scalding/commons/source/LongThriftTransformer/mt()|",
+      "|java+method:///scala/runtime/BoxesRunTime/boxToLong(long)|",
+      "|java+method:///org/apache/hadoop/io/LongWritable/get()|",
+      "|java+method:///com/twitter/elephantbird/mapreduce/io/BinaryWritable/setConverter(java.lang.Class)|",
+      "|java+method:///scala/reflect/Manifest/erasure()|",
+      "|java+constructor:///scala/Tuple2/Tuple2(java.lang.Object,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///scala/reflect/Manifest/runtimeClass()|",
+      "|java+method:///com/twitter/elephantbird/mapreduce/io/BinaryWritable/get()|",
+      "|java+method:///scala/Tuple2/_1()|",
+      "|java+method:///scala/Tuple2/_2()|",
+      "|java+method:///com/twitter/scalding/commons/source/LongThriftTransformer/mt()|",
+      "|java+method:///scala/runtime/BoxesRunTime/boxToLong(long)|",
+      "|java+method:///org/apache/hadoop/io/LongWritable/get()|",
+      "|java+method:///com/twitter/elephantbird/mapreduce/io/BinaryWritable/setConverter(java.lang.Class)|",
+      "|java+constructor:///scala/Tuple2/Tuple2(java.lang.Object,java.lang.Object)|"
+    ],
+    "affectedLib": "com.twitter.elephantbird:elephant-bird-core:4.6",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.twitter:scalding-commons_2.10:0.12.0",
+    "coordinatesV2": "com.twitter:scalding-commons_2.10:0.13.0",
+    "caller": "|java+method:///com/twitter/scalding/commons/source/LongThriftTransformer$class/typeRef(com.twitter.scalding.commons.source.LongThriftTransformer)|",
+    "called": "|java+method:///com/twitter/elephantbird/util/ThriftUtils/getTypeRef(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///com/twitter/scalding/commons/source/LongThriftTransformer/mt()|",
+      "|java+method:///com/twitter/elephantbird/util/ThriftUtils/getTypeRef(java.lang.Class)|",
+      "|java+method:///scala/reflect/Manifest/erasure()|"
+    ],
+    "v2Body": [
+      "|java+method:///scala/reflect/Manifest/runtimeClass()|",
+      "|java+method:///com/twitter/scalding/commons/source/LongThriftTransformer/mt()|",
+      "|java+method:///com/twitter/elephantbird/util/ThriftUtils/getTypeRef(java.lang.Class)|"
+    ],
+    "affectedLib": "com.twitter.elephantbird:elephant-bird-core:4.6",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.twitter:scalding-commons_2.10:0.12.0",
+    "coordinatesV2": "com.twitter:scalding-commons_2.10:0.13.0",
+    "caller": "|java+method:///com/twitter/scalding/commons/source/LzoTsv$class/hdfsScheme(com.twitter.scalding.commons.source.LzoTsv)|",
+    "called": "|java+constructor:///com/twitter/elephantbird/cascading2/scheme/LzoTextDelimited/LzoTextDelimited(cascading.tuple.Fields,boolean,boolean,java.lang.String,boolean,java.lang.String,java.lang.Class%5B%5D,boolean)|",
+    "v1Body": [
+      "|java+method:///com/twitter/scalding/HadoopSchemeInstance$/apply(cascading.scheme.Scheme)|",
+      "|java+method:///com/twitter/scalding/commons/source/LzoTsv/separator()|",
+      "|java+constructor:///com/twitter/elephantbird/cascading2/scheme/LzoTextDelimited/LzoTextDelimited(cascading.tuple.Fields,java.lang.String,java.lang.Class%5B%5D)|",
+      "|java+method:///com/twitter/scalding/commons/source/LzoTsv/fields()|",
+      "|java+method:///com/twitter/scalding/commons/source/LzoTsv/types()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/twitter/scalding/commons/source/LzoTsv/skipHeader()|",
+      "|java+method:///com/twitter/scalding/commons/source/LzoTsv/safe()|",
+      "|java+method:///com/twitter/scalding/HadoopSchemeInstance$/apply(cascading.scheme.Scheme)|",
+      "|java+method:///com/twitter/scalding/commons/source/LzoTsv/separator()|",
+      "|java+constructor:///com/twitter/elephantbird/cascading2/scheme/LzoTextDelimited/LzoTextDelimited(cascading.tuple.Fields,boolean,boolean,java.lang.String,boolean,java.lang.String,java.lang.Class%5B%5D,boolean)|",
+      "|java+method:///com/twitter/scalding/commons/source/LzoTsv/fields()|",
+      "|java+method:///com/twitter/scalding/commons/source/LzoTsv/writeHeader()|",
+      "|java+method:///com/twitter/scalding/commons/source/LzoTsv/types()|",
+      "|java+method:///com/twitter/scalding/commons/source/LzoTsv/strict()|",
+      "|java+method:///com/twitter/scalding/commons/source/LzoTsv/quote()|"
+    ],
+    "affectedLib": "com.twitter.elephantbird:elephant-bird-cascading2:4.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.twitter:scalding-commons_2.10:0.12.0",
+    "coordinatesV2": "com.twitter:scalding-commons_2.10:0.13.0",
+    "caller": "|java+method:///com/twitter/scalding/commons/source/LzoTypedTsv$class/hdfsScheme(com.twitter.scalding.commons.source.LzoTypedTsv)|",
+    "called": "|java+constructor:///com/twitter/elephantbird/cascading2/scheme/LzoTextDelimited/LzoTextDelimited(cascading.tuple.Fields,boolean,boolean,java.lang.String,boolean,java.lang.String,java.lang.Class%5B%5D,boolean)|",
+    "v1Body": [
+      "|java+method:///com/twitter/scalding/HadoopSchemeInstance$/apply(cascading.scheme.Scheme)|",
+      "|java+constructor:///com/twitter/elephantbird/cascading2/scheme/LzoTextDelimited/LzoTextDelimited(cascading.tuple.Fields,java.lang.String,java.lang.Class%5B%5D)|",
+      "|java+method:///com/twitter/scalding/commons/source/LzoTypedTsv/types()|",
+      "|java+method:///com/twitter/scalding/commons/source/LzoTypedTsv/fields()|",
+      "|java+method:///com/twitter/scalding/commons/source/LzoTypedTsv/separator()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/twitter/scalding/HadoopSchemeInstance$/apply(cascading.scheme.Scheme)|",
+      "|java+method:///com/twitter/scalding/commons/source/LzoTypedTsv/strict()|",
+      "|java+method:///com/twitter/scalding/commons/source/LzoTypedTsv/writeHeader()|",
+      "|java+method:///com/twitter/scalding/commons/source/LzoTypedTsv/skipHeader()|",
+      "|java+method:///com/twitter/scalding/commons/source/LzoTypedTsv/safe()|",
+      "|java+constructor:///com/twitter/elephantbird/cascading2/scheme/LzoTextDelimited/LzoTextDelimited(cascading.tuple.Fields,boolean,boolean,java.lang.String,boolean,java.lang.String,java.lang.Class%5B%5D,boolean)|",
+      "|java+method:///com/twitter/scalding/commons/source/LzoTypedTsv/types()|",
+      "|java+method:///com/twitter/scalding/commons/source/LzoTypedTsv/fields()|",
+      "|java+method:///com/twitter/scalding/commons/source/LzoTypedTsv/quote()|",
+      "|java+method:///com/twitter/scalding/commons/source/LzoTypedTsv/separator()|"
+    ],
+    "affectedLib": "com.twitter.elephantbird:elephant-bird-cascading2:4.6",
+    "change": "UPDATED"
+  }
+]

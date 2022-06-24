@@ -1,0 +1,156 @@
+[
+  {
+    "coordinatesV1": "com.googlecode.genericdao:test-base:1.2.0",
+    "coordinatesV2": "com.googlecode.genericdao:test-base:1.1.0",
+    "caller": "|java+constructor:///test/googlecode/genericdao/BaseTest/BaseTest()|",
+    "called": "|java+constructor:///org/springframework/test/annotation/AbstractAnnotationAwareTransactionalTests/AbstractAnnotationAwareTransactionalTests()|",
+    "v1Body": [
+      "|java+constructor:///org/springframework/test/annotation/AbstractAnnotationAwareTransactionalTests/AbstractAnnotationAwareTransactionalTests()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///test/googlecode/genericdao/databaseinitializer/PersistableTestDataModel/PersistableTestDataModel()|"
+    ],
+    "affectedLib": "org.springframework:spring-mock:2.0.8",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.googlecode.genericdao:test-base:1.2.0",
+    "coordinatesV2": "com.googlecode.genericdao:test-base:1.1.0",
+    "caller": "|java+method:///test/googlecode/genericdao/BaseTest/initDB()|",
+    "called": "|java+method:///org/springframework/jdbc/core/JdbcTemplate/update(java.lang.String,java.lang.Object%5B%5D)|",
+    "v1Body": [
+      "|java+method:///test/googlecode/genericdao/BaseTest/insert(test.googlecode.genericdao.model.Store)|",
+      "|java+method:///test/googlecode/genericdao/BaseTest/getJdbcTemplate()|",
+      "|java+method:///test/googlecode/genericdao/model/Person/getHome()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///test/googlecode/genericdao/model/Pet/getFavoritePlaymate()|",
+      "|java+method:///test/googlecode/genericdao/BaseTest/insert(test.googlecode.genericdao.model.Project)|",
+      "|java+method:///test/googlecode/genericdao/model/Pet/getId()|",
+      "|java+method:///test/googlecode/genericdao/BaseTest/insert(test.googlecode.genericdao.model.Person)|",
+      "|java+method:///test/googlecode/genericdao/BaseTest/insert(test.googlecode.genericdao.model.Address)|",
+      "|java+method:///test/googlecode/genericdao/BaseTest/insert(test.googlecode.genericdao.model.Ingredient)|",
+      "|java+method:///test/googlecode/genericdao/model/Recipe/setIngredients(java.util.Set)|",
+      "|java+method:///java/util/List/get(int)|",
+      "|java+method:///test/googlecode/genericdao/model/Recipe/getIngredients()|",
+      "|java+method:///test/googlecode/genericdao/model/Home/getAddress()|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///test/googlecode/genericdao/model/Store/getIngredientsCarried()|",
+      "|java+method:///test/googlecode/genericdao/BaseTest/insert(test.googlecode.genericdao.model.RecipeIngredient)|",
+      "|java+method:///test/googlecode/genericdao/BaseTest/insert(test.googlecode.genericdao.model.Home)|",
+      "|java+method:///test/googlecode/genericdao/BaseTest/insert(test.googlecode.genericdao.model.Pet)|",
+      "|java+method:///org/springframework/jdbc/core/JdbcTemplate/update(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///test/googlecode/genericdao/BaseTest/insert(test.googlecode.genericdao.model.Recipe)|",
+      "|java+method:///java/util/Set/iterator()|"
+    ],
+    "v2Body": [
+      "|java+method:///test/googlecode/genericdao/BaseTest/persistModelToDatabase()|"
+    ],
+    "affectedLib": "org.springframework:spring:2.5.6",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.googlecode.genericdao:test-base:1.1.0",
+    "coordinatesV2": "com.googlecode.genericdao:test-base:1.2.0",
+    "caller": "|java+method:///test/googlecode/genericdao/BaseTest/assertArrayEqual(java.lang.Object%5B%5D,java.lang.Object%5B%5D)|",
+    "called": "|java+method:///org/junit/Assert/assertEquals(java.lang.String,long,long)|",
+    "v1Body": [
+      "|java+method:///junit/framework/Assert/fail(java.lang.String)|",
+      "|java+method:///junit/framework/Assert/assertEquals(java.lang.String,int,int)|",
+      "|java+constructor:///java/util/LinkedList/LinkedList()|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///java/util/List/remove(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///org/junit/Assert/assertEquals(java.lang.String,long,long)|",
+      "|java+method:///java/util/List/remove(java.lang.Object)|",
+      "|java+method:///org/junit/Assert/fail(java.lang.String)|",
+      "|java+constructor:///java/util/LinkedList/LinkedList()|"
+    ],
+    "affectedLib": "junit:junit:4.11",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.googlecode.genericdao:test-base:1.1.0",
+    "coordinatesV2": "com.googlecode.genericdao:test-base:1.2.0",
+    "caller": "|java+method:///test/googlecode/genericdao/BaseTest/assertListEqual(test.googlecode.genericdao.model.Person%5B%5D,java.util.List)|",
+    "called": "|java+method:///org/junit/Assert/assertEquals(java.lang.String,long,long)|",
+    "v1Body": [
+      "|java+method:///test/googlecode/genericdao/model/Person/getId()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///junit/framework/Assert/assertEquals(java.lang.String,int,int)|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///java/util/HashMap/size()|",
+      "|java+method:///java/util/HashMap/remove(java.lang.Object)|",
+      "|java+method:///junit/framework/Assert/fail(java.lang.String)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+method:///java/util/HashMap/put(java.lang.Object,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///test/googlecode/genericdao/model/Person/getId()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/util/HashMap/remove(java.lang.Object)|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///org/junit/Assert/fail(java.lang.String)|",
+      "|java+method:///org/junit/Assert/assertEquals(java.lang.String,long,long)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///java/util/HashMap/size()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+method:///java/util/HashMap/put(java.lang.Object,java.lang.Object)|"
+    ],
+    "affectedLib": "junit:junit:4.11",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.googlecode.genericdao:test-base:1.1.0",
+    "coordinatesV2": "com.googlecode.genericdao:test-base:1.2.0",
+    "caller": "|java+method:///test/googlecode/genericdao/BaseTest/assertListEqual(java.util.List,java.lang.Object%5B%5D)|",
+    "called": "|java+method:///org/junit/Assert/assertEquals(java.lang.String,long,long)|",
+    "v1Body": [
+      "|java+method:///junit/framework/Assert/fail(java.lang.String)|",
+      "|java+method:///junit/framework/Assert/assertEquals(java.lang.String,int,int)|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///java/util/List/addAll(java.util.Collection)|",
+      "|java+constructor:///java/util/LinkedList/LinkedList()|",
+      "|java+method:///java/util/List/remove(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///java/util/List/addAll(java.util.Collection)|",
+      "|java+method:///org/junit/Assert/assertEquals(java.lang.String,long,long)|",
+      "|java+method:///java/util/List/remove(java.lang.Object)|",
+      "|java+method:///org/junit/Assert/fail(java.lang.String)|",
+      "|java+constructor:///java/util/LinkedList/LinkedList()|"
+    ],
+    "affectedLib": "junit:junit:4.11",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.googlecode.genericdao:test-base:1.1.0",
+    "coordinatesV2": "com.googlecode.genericdao:test-base:1.2.0",
+    "caller": "|java+method:///test/googlecode/genericdao/BaseTest/assertListOrderEqual(test.googlecode.genericdao.model.Person%5B%5D,java.util.List)|",
+    "called": "|java+method:///org/junit/Assert/assertEquals(java.lang.String,long,long)|",
+    "v1Body": [
+      "|java+method:///test/googlecode/genericdao/model/Person/getId()|",
+      "|java+method:///java/lang/Long/equals(java.lang.Object)|",
+      "|java+method:///junit/framework/Assert/fail(java.lang.String)|",
+      "|java+method:///junit/framework/Assert/assertEquals(java.lang.String,int,int)|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///java/util/List/get(int)|"
+    ],
+    "v2Body": [
+      "|java+method:///test/googlecode/genericdao/model/Person/getId()|",
+      "|java+method:///java/lang/Long/equals(java.lang.Object)|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///org/junit/Assert/fail(java.lang.String)|",
+      "|java+method:///java/util/List/get(int)|",
+      "|java+method:///org/junit/Assert/assertEquals(java.lang.String,long,long)|"
+    ],
+    "affectedLib": "junit:junit:4.11",
+    "change": "ADDED"
+  }
+]

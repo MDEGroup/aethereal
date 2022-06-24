@@ -1,0 +1,49 @@
+[
+  {
+    "coordinatesV1": "org.apache.solr:solr-test-framework:4.0.0-BETA",
+    "coordinatesV2": "org.apache.solr:solr-test-framework:4.1.0",
+    "caller": "|java+constructor:///org/apache/solr/util/TestHarness$Initializer$1/TestHarness$Initializer$1(org.apache.solr.util.TestHarness$Initializer,org.apache.solr.core.SolrResourceLoader)|",
+    "called": "|java+constructor:///org/apache/solr/core/CoreContainer/CoreContainer(org.apache.solr.core.SolrResourceLoader)|",
+    "v1Body": [
+      "|java+method:///org/apache/solr/util/TestHarness$Initializer$1/initZooKeeper(java.lang.String,int)|",
+      "|java+method:///java/lang/System/getProperty(java.lang.String)|",
+      "|java+constructor:///org/apache/solr/core/CoreContainer/CoreContainer(org.apache.solr.core.SolrResourceLoader)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/solr/util/TestHarness$Initializer$1/initZooKeeper(java.lang.String,int)|",
+      "|java+method:///java/lang/System/getProperty(java.lang.String)|",
+      "|java+method:///org/apache/solr/util/TestHarness$Initializer$1/initShardHandler(org.apache.solr.core.Config)|",
+      "|java+constructor:///org/apache/solr/core/CoreContainer/CoreContainer(org.apache.solr.core.SolrResourceLoader)|"
+    ],
+    "affectedLib": "org.apache.solr:solr-core:4.1.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.solr:solr-test-framework:4.0.0-BETA",
+    "coordinatesV2": "org.apache.solr:solr-test-framework:4.1.0",
+    "caller": "|java+constructor:///org/apache/solr/core/MockDirectoryFactory/MockDirectoryFactory()|",
+    "called": "|java+constructor:///org/apache/solr/core/EphemeralDirectoryFactory/EphemeralDirectoryFactory()|",
+    "v1Body": [
+      "|java+constructor:///org/apache/solr/core/CachingDirectoryFactory/CachingDirectoryFactory()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/solr/core/EphemeralDirectoryFactory/EphemeralDirectoryFactory()|"
+    ],
+    "affectedLib": "org.apache.solr:solr-core:4.1.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.solr:solr-test-framework:4.0.0-BETA",
+    "coordinatesV2": "org.apache.solr:solr-test-framework:4.1.0",
+    "caller": "|java+constructor:///org/apache/solr/core/MockFSDirectoryFactory/MockFSDirectoryFactory()|",
+    "called": "|java+constructor:///org/apache/solr/core/StandardDirectoryFactory/StandardDirectoryFactory()|",
+    "v1Body": [
+      "|java+constructor:///org/apache/solr/core/CachingDirectoryFactory/CachingDirectoryFactory()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/solr/core/StandardDirectoryFactory/StandardDirectoryFactory()|"
+    ],
+    "affectedLib": "org.apache.solr:solr-core:4.1.0",
+    "change": "UPDATED"
+  }
+]

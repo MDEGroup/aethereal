@@ -1,0 +1,26 @@
+[
+  {
+    "coordinatesV1": "org.apache.karaf.shell:org.apache.karaf.shell.console:2.2.11",
+    "coordinatesV2": "org.apache.karaf.shell:org.apache.karaf.shell.console:2.3.0",
+    "caller": "|java+method:///org/apache/karaf/shell/console/jline/ConsoleFactory/start()|",
+    "called": "|java+constructor:///org/apache/karaf/jaas/boot/principal/UserPrincipal/UserPrincipal(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///javax/security/auth/Subject/getPrincipals()|",
+      "|java+constructor:///org/apache/karaf/jaas/modules/UserPrincipal/UserPrincipal(java.lang.String)|",
+      "|java+constructor:///org/apache/karaf/shell/console/jline/ConsoleFactory$1/ConsoleFactory$1(org.apache.karaf.shell.console.jline.ConsoleFactory)|",
+      "|java+method:///java/util/Set/add(java.lang.Object)|",
+      "|java+constructor:///javax/security/auth/Subject/Subject()|",
+      "|java+method:///javax/security/auth/Subject/doAs(javax.security.auth.Subject,java.security.PrivilegedExceptionAction)|"
+    ],
+    "v2Body": [
+      "|java+method:///javax/security/auth/Subject/getPrincipals()|",
+      "|java+constructor:///org/apache/karaf/shell/console/jline/ConsoleFactory$1/ConsoleFactory$1(org.apache.karaf.shell.console.jline.ConsoleFactory)|",
+      "|java+constructor:///org/apache/karaf/jaas/boot/principal/UserPrincipal/UserPrincipal(java.lang.String)|",
+      "|java+method:///java/util/Set/add(java.lang.Object)|",
+      "|java+constructor:///javax/security/auth/Subject/Subject()|",
+      "|java+method:///javax/security/auth/Subject/doAs(javax.security.auth.Subject,java.security.PrivilegedExceptionAction)|"
+    ],
+    "affectedLib": "org.apache.karaf.jaas:org.apache.karaf.jaas.boot:2.3.0",
+    "change": "ADDED"
+  }
+]

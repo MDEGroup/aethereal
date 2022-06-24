@@ -1,0 +1,938 @@
+[
+  {
+    "coordinatesV1": "com.aol.microservices:microserver-core:0.60",
+    "coordinatesV2": "com.aol.microservices:microserver-core:0.59",
+    "caller": "|java+method:///com/aol/micro/server/module/Module/getListeners(com.aol.micro.server.servers.model.ServerData)|",
+    "called": "|java+method:///com/google/common/collect/ImmutableList/copyOf(java.util.Collection)|",
+    "v1Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+constructor:///org/springframework/web/context/ContextLoaderListener/ContextLoaderListener(org.springframework.web.context.WebApplicationContext)|",
+      "|java+constructor:///com/aol/micro/server/rest/jersey/JerseySpringIntegrationContextListener/JerseySpringIntegrationContextListener(com.aol.micro.server.servers.model.ServerData)|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///com/google/common/collect/ImmutableList/copyOf(java.util.Collection)|",
+      "|java+constructor:///com/aol/micro/server/rest/swagger/SwaggerInitializer/SwaggerInitializer(com.aol.micro.server.servers.model.ServerData)|",
+      "|java+method:///com/aol/micro/server/servers/model/ServerData/getRootContext()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/aol/cyclops/lambda/monads/SequenceM/map(java.util.function.Function)|",
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+constructor:///java/util/ArrayList/ArrayList(java.util.Collection)|",
+      "|java+constructor:///org/springframework/web/context/ContextLoaderListener/ContextLoaderListener(org.springframework.web.context.WebApplicationContext)|",
+      "|java+method:///java/util/function/Supplier/get()|",
+      "|java+method:///com/aol/micro/server/servers/model/ServerData/getRootContext()|",
+      "|java+method:///java/util/List/stream()|",
+      "|java+method:///java/util/List/addAll(java.util.Collection)|",
+      "|java+method:///java/util/Collections/unmodifiableList(java.util.List)|",
+      "|java+method:///com/aol/cyclops/lambda/monads/SequenceM/filter(java.util.function.Predicate)|",
+      "|java+method:///com/aol/cyclops/lambda/monads/SequenceM/fromStream(java.util.stream.Stream)|",
+      "|java+method:///com/aol/cyclops/lambda/monads/SequenceM/toList()|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///com/aol/cyclops/lambda/monads/SequenceM/flatMapCollection(java.util.function.Function)|"
+    ],
+    "affectedLib": "com.google.guava:guava:18.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.aol.microservices:microserver-core:0.60",
+    "coordinatesV2": "com.aol.microservices:microserver-core:0.59",
+    "caller": "|java+method:///com/aol/micro/server/module/ConfigurableModule/getSpringConfigurationClasses()|",
+    "called": "|java+method:///com/google/common/collect/Iterables/concat(java.lang.Iterable,java.lang.Iterable)|",
+    "v1Body": [
+      "|java+method:///com/aol/micro/server/module/Module/getSpringConfigurationClasses()|",
+      "|java+method:///com/google/common/collect/ImmutableSet/copyOf(java.lang.Iterable)|",
+      "|java+method:///com/aol/micro/server/module/ConfigurableModule/extract(java.util.function.Supplier)|",
+      "|java+method:///com/google/common/collect/Iterables/concat(java.lang.Iterable,java.lang.Iterable)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/aol/micro/server/utility/UsefulStaticMethods/concat(java.util.Collection,java.util.Collection)|",
+      "|java+method:///com/aol/micro/server/module/Module/getSpringConfigurationClasses()|",
+      "|java+method:///com/aol/micro/server/module/ConfigurableModule/extract(java.util.function.Supplier)|",
+      "|java+method:///org/pcollections/HashTreePSet/from(java.util.Collection)|"
+    ],
+    "affectedLib": "com.google.guava:guava:18.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.aol.microservices:microserver-core:0.60",
+    "coordinatesV2": "com.aol.microservices:microserver-core:0.59",
+    "caller": "|java+method:///com/aol/micro/server/module/ConfigurableModule/getDefaultResources()|",
+    "called": "|java+method:///com/google/common/collect/Iterables/concat(java.lang.Iterable,java.lang.Iterable)|",
+    "v1Body": [
+      "|java+method:///com/google/common/collect/ImmutableList/copyOf(java.lang.Iterable)|",
+      "|java+method:///com/google/common/collect/Iterables/concat(java.lang.Iterable,java.lang.Iterable)|",
+      "|java+method:///com/aol/micro/server/module/ConfigurableModule/extract(java.util.function.Supplier)|",
+      "|java+method:///com/aol/micro/server/module/Module/getDefaultResources()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/aol/micro/server/utility/UsefulStaticMethods/concat(java.util.Collection,java.util.Collection)|",
+      "|java+method:///org/pcollections/ConsPStack/from(java.util.Collection)|",
+      "|java+method:///com/aol/micro/server/module/ConfigurableModule/extract(java.util.function.Supplier)|",
+      "|java+method:///com/aol/micro/server/module/Module/getDefaultResources()|"
+    ],
+    "affectedLib": "com.google.guava:guava:18.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.aol.microservices:microserver-core:0.60",
+    "coordinatesV2": "com.aol.microservices:microserver-core:0.59",
+    "caller": "|java+constructor:///com/aol/micro/server/servers/model/ServerData/ServerData(int,java.util.List,org.springframework.context.ApplicationContext,java.lang.String,com.aol.micro.server.module.Module)|",
+    "called": "|java+method:///com/google/common/collect/ImmutableList/copyOf(java.util.Collection)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///com/google/common/collect/ImmutableList/copyOf(java.util.Collection)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///org/pcollections/ConsPStack/from(java.util.Collection)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "com.google.guava:guava:18.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.aol.microservices:microserver-core:0.60",
+    "coordinatesV2": "com.aol.microservices:microserver-core:0.59",
+    "caller": "|java+method:///com/aol/micro/server/module/ConfigurableModule/getListeners(com.aol.micro.server.servers.model.ServerData)|",
+    "called": "|java+method:///com/google/common/collect/Iterables/concat(java.lang.Iterable,java.lang.Iterable)|",
+    "v1Body": [
+      "|java+method:///com/aol/micro/server/module/Module/getListeners(com.aol.micro.server.servers.model.ServerData)|",
+      "|java+method:///com/google/common/collect/ImmutableList/copyOf(java.lang.Iterable)|",
+      "|java+method:///com/aol/micro/server/module/ConfigurableModule/extract(java.util.function.Supplier)|",
+      "|java+method:///com/google/common/collect/Iterables/concat(java.lang.Iterable,java.lang.Iterable)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/aol/micro/server/utility/UsefulStaticMethods/concat(java.util.Collection,java.util.Collection)|",
+      "|java+method:///com/aol/micro/server/module/Module/getListeners(com.aol.micro.server.servers.model.ServerData)|",
+      "|java+method:///org/pcollections/ConsPStack/from(java.util.Collection)|",
+      "|java+method:///com/aol/micro/server/module/ConfigurableModule/extract(java.util.function.Supplier)|"
+    ],
+    "affectedLib": "com.google.guava:guava:18.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.aol.microservices:microserver-core:0.60",
+    "coordinatesV2": "com.aol.microservices:microserver-core:0.59",
+    "caller": "|java+constructor:///com/aol/micro/server/servers/ServerRunner/ServerRunner(com.aol.micro.server.servers.ApplicationRegister,java.util.List,java.util.concurrent.CompletableFuture)|",
+    "called": "|java+method:///com/google/common/collect/ImmutableList/copyOf(java.util.Collection)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///java/util/Optional/of(java.lang.Object)|",
+      "|java+method:///com/google/common/collect/ImmutableList/copyOf(java.util.Collection)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///org/pcollections/ConsPStack/from(java.util.Collection)|",
+      "|java+method:///java/util/Optional/of(java.lang.Object)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "com.google.guava:guava:18.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.aol.microservices:microserver-core:0.60",
+    "coordinatesV2": "com.aol.microservices:microserver-core:0.59",
+    "caller": "|java+method:///com/aol/micro/server/auto/discovery/ServletConfiguration/getInitParameters()|",
+    "called": "|java+method:///com/google/common/collect/ImmutableMap/of()|",
+    "v1Body": [
+      "|java+method:///com/google/common/collect/ImmutableMap/of()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/pcollections/HashTreePMap/empty()|"
+    ],
+    "affectedLib": "com.google.guava:guava:18.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.aol.microservices:microserver-core:0.60",
+    "coordinatesV2": "com.aol.microservices:microserver-core:0.59",
+    "caller": "|java+constructor:///com/aol/micro/server/servers/model/AllData/AllData(com.aol.micro.server.servers.model.ServerData,java.util.List,java.util.List,java.util.List,java.util.List)|",
+    "called": "|java+method:///com/google/common/collect/ImmutableList/copyOf(java.util.Collection)|",
+    "v1Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///com/aol/micro/server/utility/UsefulStaticMethods/either(java.lang.Object,java.lang.Object)|",
+      "|java+method:///com/google/common/collect/ImmutableList/copyOf(java.util.Collection)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///org/pcollections/ConsPStack/from(java.util.Collection)|",
+      "|java+method:///com/aol/micro/server/utility/UsefulStaticMethods/either(java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "com.google.guava:guava:18.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.aol.microservices:microserver-core:0.60",
+    "coordinatesV2": "com.aol.microservices:microserver-core:0.59",
+    "caller": "|java+method:///com/aol/micro/server/module/ConfigurableModule/getRestAnnotationClasses()|",
+    "called": "|java+method:///com/google/common/collect/Iterables/concat(java.lang.Iterable,java.lang.Iterable)|",
+    "v1Body": [
+      "|java+method:///com/aol/micro/server/module/Module/getRestAnnotationClasses()|",
+      "|java+method:///com/google/common/collect/ImmutableList/copyOf(java.lang.Iterable)|",
+      "|java+method:///com/aol/micro/server/module/ConfigurableModule/extract(java.util.function.Supplier)|",
+      "|java+method:///com/google/common/collect/Iterables/concat(java.lang.Iterable,java.lang.Iterable)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/aol/micro/server/module/Module/getRestAnnotationClasses()|",
+      "|java+method:///com/aol/micro/server/module/ConfigurableModule/extract(java.util.function.Supplier)|",
+      "|java+method:///com/aol/micro/server/utility/UsefulStaticMethods/concat(java.util.Collection,java.util.Collection)|",
+      "|java+constructor:///java/util/ArrayList/ArrayList(java.util.Collection)|"
+    ],
+    "affectedLib": "com.google.guava:guava:18.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.aol.microservices:microserver-core:0.60",
+    "coordinatesV2": "com.aol.microservices:microserver-core:0.59",
+    "caller": "|java+constructor:///com/aol/micro/server/spring/SpringContextFactory/SpringContextFactory(com.aol.micro.server.config.Config,java.lang.Class,java.util.Set)|",
+    "called": "|java+method:///com/google/common/collect/ImmutableSet/copyOf(java.util.Collection)|",
+    "v1Body": [
+      "|java+constructor:///com/aol/micro/server/spring/SpringApplicationConfigurator/SpringApplicationConfigurator()|",
+      "|java+method:///com/google/common/collect/Sets/newHashSet(java.lang.Iterable)|",
+      "|java+method:///java/util/Set/addAll(java.util.Collection)|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///com/aol/micro/server/config/Config/getClasses()|",
+      "|java+method:///com/aol/simple/react/exceptions/ExceptionSoftener$singleton/getInstance()|",
+      "|java+method:///com/google/common/collect/ImmutableSet/copyOf(java.util.Collection)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///java/util/Set/add(java.lang.Object)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/aol/micro/server/spring/SpringApplicationConfigurator/SpringApplicationConfigurator()|",
+      "|java+method:///java/util/Set/addAll(java.util.Collection)|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///com/aol/micro/server/config/Config/getClasses()|",
+      "|java+method:///com/aol/simple/react/exceptions/ExceptionSoftener$singleton/getInstance()|",
+      "|java+method:///org/pcollections/HashTreePSet/from(java.util.Collection)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///java/util/Set/add(java.lang.Object)|",
+      "|java+constructor:///java/util/HashSet/HashSet(java.util.Collection)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "com.google.guava:guava:18.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.aol.microservices:microserver-core:0.60",
+    "coordinatesV2": "com.aol.microservices:microserver-core:0.59",
+    "caller": "|java+method:///com/aol/micro/server/module/Module/getFilters(com.aol.micro.server.servers.model.ServerData)|",
+    "called": "|java+method:///com/google/common/collect/ImmutableMap/of(java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///com/google/common/collect/ImmutableMap/of(java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///com/aol/micro/server/web/filter/QueryIPRetriever/QueryIPRetriever()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/aol/cyclops/lambda/monads/SequenceM/map(java.util.function.Function)|",
+      "|java+method:///java/util/function/Supplier/get()|",
+      "|java+method:///java/util/List/stream()|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+method:///com/aol/cyclops/lambda/monads/SequenceM/filter(java.util.function.Predicate)|",
+      "|java+method:///com/aol/cyclops/lambda/monads/SequenceM/fromStream(java.util.stream.Stream)|",
+      "|java+method:///com/aol/cyclops/lambda/monads/SequenceM/forEach(java.util.function.Consumer)|"
+    ],
+    "affectedLib": "com.google.guava:guava:18.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.aol.microservices:microserver-core:0.60",
+    "coordinatesV2": "com.aol.microservices:microserver-core:0.59",
+    "caller": "|java+method:///com/aol/micro/server/module/ConfigurableModule/extractMap(java.util.function.Supplier)|",
+    "called": "|java+method:///com/google/common/collect/ImmutableMap/of()|",
+    "v1Body": [
+      "|java+method:///java/util/function/Supplier/get()|",
+      "|java+method:///com/google/common/collect/ImmutableMap/of()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/function/Supplier/get()|",
+      "|java+method:///com/aol/micro/server/utility/HashMapBuilder/of()|"
+    ],
+    "affectedLib": "com.google.guava:guava:18.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.aol.microservices:microserver-core:0.60",
+    "coordinatesV2": "com.aol.microservices:microserver-core:0.59",
+    "caller": "|java+method:///com/aol/micro/server/module/RestResourceTagBuilder/restResourceTags(java.lang.String%5B%5D)|",
+    "called": "|java+method:///com/google/common/collect/Iterables/concat(java.lang.Iterable,java.lang.Iterable)|",
+    "v1Body": [
+      "|java+method:///java/util/stream/Stream/map(java.util.function.Function)|",
+      "|java+method:///java/util/stream/Stream/collect(java.util.stream.Collector)|",
+      "|java+method:///java/util/stream/Collectors/toList()|",
+      "|java+method:///com/google/common/collect/ImmutableList/copyOf(java.lang.Iterable)|",
+      "|java+method:///java/util/stream/Stream/of(java.lang.Object%5B%5D)|",
+      "|java+method:///com/google/common/collect/Iterables/concat(java.lang.Iterable,java.lang.Iterable)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/stream/Stream/map(java.util.function.Function)|",
+      "|java+method:///com/aol/micro/server/utility/UsefulStaticMethods/concat(java.util.Collection,java.util.Collection)|",
+      "|java+method:///java/util/stream/Stream/collect(java.util.stream.Collector)|",
+      "|java+method:///java/util/stream/Stream/of(java.lang.Object%5B%5D)|",
+      "|java+method:///org/pcollections/ConsPStack/from(java.util.Collection)|",
+      "|java+method:///java/util/stream/Collectors/toList()|"
+    ],
+    "affectedLib": "com.google.guava:guava:18.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.aol.microservices:microserver-core:0.60",
+    "coordinatesV2": "com.aol.microservices:microserver-core:0.59",
+    "caller": "|java+constructor:///com/aol/micro/server/module/Environment/Environment(java.util.Properties)|",
+    "called": "|java+method:///com/google/common/collect/ImmutableMap/of()|",
+    "v1Body": [
+      "|java+method:///com/google/common/collect/ImmutableMap/of()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/pcollections/HashTreePMap/empty()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "com.google.guava:guava:18.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.aol.microservices:microserver-core:0.60",
+    "coordinatesV2": "com.aol.microservices:microserver-core:0.59",
+    "caller": "|java+constructor:///com/aol/micro/server/servers/ServerRunner/ServerRunner(java.util.List,java.util.concurrent.CompletableFuture)|",
+    "called": "|java+method:///com/google/common/collect/ImmutableList/copyOf(java.util.Collection)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///java/util/Optional/empty()|",
+      "|java+method:///com/google/common/collect/ImmutableList/copyOf(java.util.Collection)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///org/pcollections/ConsPStack/from(java.util.Collection)|",
+      "|java+method:///java/util/Optional/empty()|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "com.google.guava:guava:18.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.aol.microservices:microserver-core:0.60",
+    "coordinatesV2": "com.aol.microservices:microserver-core:0.59",
+    "caller": "|java+method:///com/aol/micro/server/config/Config/withDefaultDataSource(java.lang.Class%5B%5D)|",
+    "called": "|java+method:///com/google/common/collect/ImmutableSet/copyOf(java.util.Collection)|",
+    "v1Body": [
+      "|java+method:///java/util/List/addAll(java.util.Collection)|",
+      "|java+method:///java/util/stream/Stream/forEach(java.util.function.Consumer)|",
+      "|java+method:///com/google/common/collect/Lists/newArrayList(java.lang.Object%5B%5D)|",
+      "|java+method:///com/google/common/collect/ImmutableSet/copyOf(java.util.Collection)|",
+      "|java+method:///com/aol/micro/server/config/Config/withClasses(com.google.common.collect.ImmutableSet)|",
+      "|java+method:///java/util/stream/Stream/of(java.lang.Object%5B%5D)|",
+      "|java+method:///com/aol/micro/server/config/Classes/getClasses()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Arrays/asList(java.lang.Object%5B%5D)|",
+      "|java+method:///java/util/List/addAll(java.util.Collection)|",
+      "|java+method:///java/util/stream/Stream/forEach(java.util.function.Consumer)|",
+      "|java+method:///org/pcollections/HashTreePSet/from(java.util.Collection)|",
+      "|java+method:///java/util/stream/Stream/of(java.lang.Object%5B%5D)|",
+      "|java+method:///com/aol/micro/server/config/Config/withClasses(org.pcollections.PSet)|",
+      "|java+method:///com/aol/micro/server/config/Classes/getClasses()|"
+    ],
+    "affectedLib": "com.google.guava:guava:18.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.aol.microservices:microserver-core:0.60",
+    "coordinatesV2": "com.aol.microservices:microserver-core:0.59",
+    "caller": "|java+initializer:///com/aol/micro/server/module/RestResourceTagBuilder/RestResourceTagBuilder$initializer|",
+    "called": "|java+method:///com/google/common/collect/ImmutableList/of(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///com/google/common/collect/ImmutableList/of(java.lang.Object)|",
+      "|java+method:///com/aol/simple/react/exceptions/ExceptionSoftener$singleton/getInstance()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///org/pcollections/ConsPStack/singleton(java.lang.Object)|",
+      "|java+method:///com/aol/simple/react/exceptions/ExceptionSoftener$singleton/getInstance()|"
+    ],
+    "affectedLib": "com.google.guava:guava:18.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.aol.microservices:microserver-core:0.60",
+    "coordinatesV2": "com.aol.microservices:microserver-core:0.59",
+    "caller": "|java+method:///com/aol/micro/server/module/RestResourceTagBuilder/restResourceTags(java.lang.Class%5B%5D)|",
+    "called": "|java+method:///com/google/common/collect/Iterables/concat(java.lang.Iterable,java.lang.Iterable)|",
+    "v1Body": [
+      "|java+method:///java/util/stream/Stream/collect(java.util.stream.Collector)|",
+      "|java+method:///java/util/stream/Collectors/toList()|",
+      "|java+method:///com/google/common/collect/ImmutableList/copyOf(java.lang.Iterable)|",
+      "|java+method:///java/util/stream/Stream/of(java.lang.Object%5B%5D)|",
+      "|java+method:///com/google/common/collect/Iterables/concat(java.lang.Iterable,java.lang.Iterable)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/aol/micro/server/utility/UsefulStaticMethods/concat(java.util.Collection,java.util.Collection)|",
+      "|java+method:///java/util/stream/Stream/collect(java.util.stream.Collector)|",
+      "|java+method:///java/util/stream/Stream/of(java.lang.Object%5B%5D)|",
+      "|java+method:///org/pcollections/ConsPStack/from(java.util.Collection)|",
+      "|java+method:///java/util/stream/Collectors/toList()|"
+    ],
+    "affectedLib": "com.google.guava:guava:18.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.aol.microservices:microserver-core:0.60",
+    "coordinatesV2": "com.aol.microservices:microserver-core:0.59",
+    "caller": "|java+constructor:///com/aol/micro/server/MicroserverApp/MicroserverApp(java.lang.Class,com.aol.micro.server.module.Module%5B%5D)|",
+    "called": "|java+method:///com/google/common/collect/Lists/newArrayList(java.lang.Object%5B%5D)|",
+    "v1Body": [
+      "|java+method:///com/aol/micro/server/module/Module/getSpringConfigurationClasses()|",
+      "|java+constructor:///com/aol/micro/server/config/MicroserverConfigurer/MicroserverConfigurer()|",
+      "|java+method:///com/aol/simple/react/exceptions/ExceptionSoftener$singleton/getInstance()|",
+      "|java+method:///com/google/common/collect/Lists/newArrayList(java.lang.Object%5B%5D)|",
+      "|java+method:///com/aol/micro/server/spring/SpringContextFactory/createSpringContext()|",
+      "|java+method:///com/aol/micro/server/config/MicroserverConfigurer/buildConfig(java.lang.Class)|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+constructor:///java/util/concurrent/CompletableFuture/CompletableFuture()|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+constructor:///com/aol/micro/server/spring/SpringContextFactory/SpringContextFactory(com.aol.micro.server.config.Config,java.lang.Class,java.util.Set)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/aol/micro/server/module/Module/getSpringConfigurationClasses()|",
+      "|java+constructor:///com/aol/micro/server/config/MicroserverConfigurer/MicroserverConfigurer()|",
+      "|java+method:///com/aol/simple/react/exceptions/ExceptionSoftener$singleton/getInstance()|",
+      "|java+method:///com/aol/micro/server/spring/SpringContextFactory/createSpringContext()|",
+      "|java+method:///com/aol/micro/server/config/MicroserverConfigurer/buildConfig(java.lang.Class)|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///java/util/Arrays/asList(java.lang.Object%5B%5D)|",
+      "|java+constructor:///java/util/concurrent/CompletableFuture/CompletableFuture()|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+constructor:///com/aol/micro/server/spring/SpringContextFactory/SpringContextFactory(com.aol.micro.server.config.Config,java.lang.Class,java.util.Set)|"
+    ],
+    "affectedLib": "com.google.guava:guava:18.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.aol.microservices:microserver-core:0.60",
+    "coordinatesV2": "com.aol.microservices:microserver-core:0.59",
+    "caller": "|java+method:///com/aol/micro/server/config/Config/withEntityScanDataSource(java.lang.String,java.lang.String%5B%5D)|",
+    "called": "|java+method:///com/google/common/collect/ImmutableMap/copyOf(java.util.Map)|",
+    "v1Body": [
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///com/aol/micro/server/config/Config/withDataSources(com.google.common.collect.ImmutableMap)|",
+      "|java+constructor:///java/util/HashMap/HashMap(java.util.Map)|",
+      "|java+method:///java/util/Arrays/asList(java.lang.Object%5B%5D)|",
+      "|java+method:///com/google/common/collect/ImmutableMap/copyOf(java.util.Map)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///java/util/HashMap/HashMap(java.util.Map)|",
+      "|java+method:///java/util/Arrays/asList(java.lang.Object%5B%5D)|",
+      "|java+method:///org/pcollections/HashTreePMap/from(java.util.Map)|",
+      "|java+method:///com/aol/micro/server/config/Config/withDataSources(org.pcollections.PMap)|"
+    ],
+    "affectedLib": "com.google.guava:guava:18.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.aol.microservices:microserver-core:0.60",
+    "coordinatesV2": "com.aol.microservices:microserver-core:0.59",
+    "caller": "|java+constructor:///com/aol/micro/server/config/Config/Config()|",
+    "called": "|java+method:///com/google/common/collect/ImmutableMap/of()|",
+    "v1Body": [
+      "|java+method:///com/google/common/collect/ImmutableSet/of()|",
+      "|java+method:///com/google/common/collect/ImmutableMap/of()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/pcollections/HashTreePMap/empty()|",
+      "|java+method:///org/pcollections/HashTreePSet/empty()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "com.google.guava:guava:18.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.aol.microservices:microserver-core:0.60",
+    "coordinatesV2": "com.aol.microservices:microserver-core:0.59",
+    "caller": "|java+constructor:///com/aol/micro/server/spring/SpringContextFactory/SpringContextFactory(com.aol.micro.server.config.Config,java.util.Set)|",
+    "called": "|java+method:///com/google/common/collect/ImmutableSet/copyOf(java.util.Collection)|",
+    "v1Body": [
+      "|java+constructor:///com/aol/micro/server/spring/SpringApplicationConfigurator/SpringApplicationConfigurator()|",
+      "|java+method:///com/google/common/collect/Sets/newHashSet(java.lang.Iterable)|",
+      "|java+method:///java/util/Set/addAll(java.util.Collection)|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///com/aol/micro/server/config/Config/getClasses()|",
+      "|java+method:///com/aol/simple/react/exceptions/ExceptionSoftener$singleton/getInstance()|",
+      "|java+method:///com/google/common/collect/ImmutableSet/copyOf(java.util.Collection)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/aol/micro/server/spring/SpringApplicationConfigurator/SpringApplicationConfigurator()|",
+      "|java+method:///java/util/Set/addAll(java.util.Collection)|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///com/aol/micro/server/config/Config/getClasses()|",
+      "|java+method:///com/aol/simple/react/exceptions/ExceptionSoftener$singleton/getInstance()|",
+      "|java+method:///org/pcollections/HashTreePSet/from(java.util.Collection)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+constructor:///java/util/HashSet/HashSet(java.util.Collection)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "com.google.guava:guava:18.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.aol.microservices:microserver-core:0.60",
+    "coordinatesV2": "com.aol.microservices:microserver-core:0.59",
+    "caller": "|java+constructor:///com/aol/micro/server/MicroserverApp/MicroserverApp(com.aol.micro.server.module.Module%5B%5D)|",
+    "called": "|java+method:///com/google/common/collect/Lists/newArrayList(java.lang.Object%5B%5D)|",
+    "v1Body": [
+      "|java+method:///com/aol/micro/server/MicroserverApp/extractClass()|",
+      "|java+method:///com/aol/micro/server/module/Module/getSpringConfigurationClasses()|",
+      "|java+constructor:///com/aol/micro/server/config/MicroserverConfigurer/MicroserverConfigurer()|",
+      "|java+method:///com/aol/simple/react/exceptions/ExceptionSoftener$singleton/getInstance()|",
+      "|java+method:///com/google/common/collect/Lists/newArrayList(java.lang.Object%5B%5D)|",
+      "|java+method:///com/aol/micro/server/spring/SpringContextFactory/createSpringContext()|",
+      "|java+method:///com/aol/micro/server/config/MicroserverConfigurer/buildConfig(java.lang.Class)|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+constructor:///java/util/concurrent/CompletableFuture/CompletableFuture()|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+constructor:///com/aol/micro/server/spring/SpringContextFactory/SpringContextFactory(com.aol.micro.server.config.Config,java.lang.Class,java.util.Set)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/aol/micro/server/MicroserverApp/extractClass()|",
+      "|java+method:///com/aol/micro/server/module/Module/getSpringConfigurationClasses()|",
+      "|java+constructor:///com/aol/micro/server/config/MicroserverConfigurer/MicroserverConfigurer()|",
+      "|java+method:///com/aol/simple/react/exceptions/ExceptionSoftener$singleton/getInstance()|",
+      "|java+method:///com/aol/micro/server/spring/SpringContextFactory/createSpringContext()|",
+      "|java+method:///com/aol/micro/server/config/MicroserverConfigurer/buildConfig(java.lang.Class)|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///java/util/Arrays/asList(java.lang.Object%5B%5D)|",
+      "|java+constructor:///java/util/concurrent/CompletableFuture/CompletableFuture()|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+constructor:///com/aol/micro/server/spring/SpringContextFactory/SpringContextFactory(com.aol.micro.server.config.Config,java.lang.Class,java.util.Set)|"
+    ],
+    "affectedLib": "com.google.guava:guava:18.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.aol.microservices:microserver-core:0.60",
+    "coordinatesV2": "com.aol.microservices:microserver-core:0.59",
+    "caller": "|java+method:///com/aol/micro/server/servers/ServerRunner/run()|",
+    "called": "|java+method:///com/google/common/collect/Maps/newHashMap()|",
+    "v1Body": [
+      "|java+method:///java/util/stream/Stream/map(java.util.function.Function)|",
+      "|java+method:///com/google/common/collect/Maps/newHashMap()|",
+      "|java+method:///com/google/common/collect/ImmutableList/stream()|",
+      "|java+method:///com/google/common/collect/ImmutableList/size()|",
+      "|java+method:///java/util/stream/Collectors/toList()|",
+      "|java+method:///java/util/Map/values()|",
+      "|java+method:///java/util/Optional/ifPresent(java.util.function.Consumer)|",
+      "|java+method:///java/util/stream/Stream/forEach(java.util.function.Consumer)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String,java.lang.Object)|",
+      "|java+method:///java/util/Collection/forEach(java.util.function.Consumer)|",
+      "|java+method:///java/util/stream/Stream/collect(java.util.stream.Collector)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/stream/Stream/map(java.util.function.Function)|",
+      "|java+method:///java/util/stream/Collectors/toList()|",
+      "|java+method:///java/util/Map/values()|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+method:///java/util/Optional/ifPresent(java.util.function.Consumer)|",
+      "|java+method:///org/pcollections/PStack/stream()|",
+      "|java+method:///org/pcollections/PStack/size()|",
+      "|java+method:///java/util/stream/Stream/forEach(java.util.function.Consumer)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String,java.lang.Object)|",
+      "|java+method:///java/util/Collection/forEach(java.util.function.Consumer)|",
+      "|java+method:///java/util/stream/Stream/collect(java.util.stream.Collector)|"
+    ],
+    "affectedLib": "com.google.guava:guava:18.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.aol.microservices:microserver-core:0.60",
+    "coordinatesV2": "com.aol.microservices:microserver-core:0.59",
+    "caller": "|java+method:///com/aol/micro/server/auto/discovery/FilterConfiguration/getInitParameters()|",
+    "called": "|java+method:///com/google/common/collect/ImmutableMap/of()|",
+    "v1Body": [
+      "|java+method:///com/google/common/collect/ImmutableMap/of()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/pcollections/HashTreePMap/empty()|"
+    ],
+    "affectedLib": "com.google.guava:guava:18.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.aol.microservices:microserver-core:0.60",
+    "coordinatesV2": "com.aol.microservices:microserver-core:0.59",
+    "caller": "|java+method:///com/aol/micro/server/spring/properties/PropertyFileConfig/loadPropertyResource()|",
+    "called": "|java+method:///com/google/common/collect/Lists/newArrayList()|",
+    "v1Body": [
+      "|java+method:///com/aol/micro/server/config/Config/getInstancePropertiesName()|",
+      "|java+method:///java/lang/ClassLoader/getResource(java.lang.String)|",
+      "|java+constructor:///com/aol/micro/server/config/ConfigAccessor/ConfigAccessor()|",
+      "|java+method:///com/google/common/collect/Lists/newArrayList()|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String)|",
+      "|java+method:///java/util/Optional/ifPresent(java.util.function.Consumer)|",
+      "|java+method:///com/aol/micro/server/spring/properties/PropertyFileConfig/loadProperties()|",
+      "|java+method:///com/aol/micro/server/config/ConfigAccessor/get()|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+constructor:///org/springframework/core/io/UrlResource/UrlResource(java.net.URL)|",
+      "|java+method:///java/lang/Class/getClassLoader()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/aol/micro/server/config/Config/getInstancePropertiesName()|",
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///java/lang/ClassLoader/getResource(java.lang.String)|",
+      "|java+constructor:///com/aol/micro/server/config/ConfigAccessor/ConfigAccessor()|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String)|",
+      "|java+method:///java/util/Optional/ifPresent(java.util.function.Consumer)|",
+      "|java+method:///com/aol/micro/server/spring/properties/PropertyFileConfig/loadProperties()|",
+      "|java+method:///com/aol/micro/server/config/ConfigAccessor/get()|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+constructor:///org/springframework/core/io/UrlResource/UrlResource(java.net.URL)|",
+      "|java+method:///java/lang/Class/getClassLoader()|"
+    ],
+    "affectedLib": "com.google.guava:guava:18.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.aol.microservices:microserver-core:0.60",
+    "coordinatesV2": "com.aol.microservices:microserver-core:0.59",
+    "caller": "|java+method:///com/aol/micro/server/module/ConfigurableModule/getDefaultJaxRsPackages()|",
+    "called": "|java+method:///com/google/common/collect/Iterables/concat(java.lang.Iterable,java.lang.Iterable)|",
+    "v1Body": [
+      "|java+method:///com/google/common/collect/ImmutableList/copyOf(java.lang.Iterable)|",
+      "|java+method:///com/aol/micro/server/module/ConfigurableModule/extract(java.util.function.Supplier)|",
+      "|java+method:///com/aol/micro/server/module/Module/getDefaultJaxRsPackages()|",
+      "|java+method:///com/google/common/collect/Iterables/concat(java.lang.Iterable,java.lang.Iterable)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/aol/micro/server/utility/UsefulStaticMethods/concat(java.util.Collection,java.util.Collection)|",
+      "|java+method:///org/pcollections/ConsPStack/from(java.util.Collection)|",
+      "|java+method:///com/aol/micro/server/module/ConfigurableModule/extract(java.util.function.Supplier)|",
+      "|java+method:///com/aol/micro/server/module/Module/getDefaultJaxRsPackages()|"
+    ],
+    "affectedLib": "com.google.guava:guava:18.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.aol.microservices:microserver-core:0.60",
+    "coordinatesV2": "com.aol.microservices:microserver-core:0.59",
+    "caller": "|java+method:///com/aol/micro/server/module/Module/getServlets(com.aol.micro.server.servers.model.ServerData)|",
+    "called": "|java+method:///com/google/common/collect/ImmutableMap/of()|",
+    "v1Body": [
+      "|java+method:///com/google/common/collect/ImmutableMap/of()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/aol/cyclops/lambda/monads/SequenceM/map(java.util.function.Function)|",
+      "|java+method:///java/util/function/Supplier/get()|",
+      "|java+method:///java/util/List/stream()|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+method:///com/aol/cyclops/lambda/monads/SequenceM/filter(java.util.function.Predicate)|",
+      "|java+method:///com/aol/cyclops/lambda/monads/SequenceM/fromStream(java.util.stream.Stream)|",
+      "|java+method:///com/aol/cyclops/lambda/monads/SequenceM/forEach(java.util.function.Consumer)|"
+    ],
+    "affectedLib": "com.google.guava:guava:18.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.aol.microservices:microserver-core:0.60",
+    "coordinatesV2": "com.aol.microservices:microserver-core:0.59",
+    "caller": "|java+method:///com/aol/micro/server/config/MicroserverConfigurer/buildConfig(java.lang.Class)|",
+    "called": "|java+method:///com/google/common/collect/ImmutableMap/copyOf(java.util.Map)|",
+    "v1Body": [
+      "|java+method:///java/lang/Class/getAnnotation(java.lang.Class)|",
+      "|java+method:///com/aol/micro/server/config/Microserver/entityScan()|",
+      "|java+method:///com/google/common/collect/ImmutableMap/copyOf(java.util.Map)|",
+      "|java+method:///com/aol/micro/server/config/MicroserverConfigurer/buildProperties(com.aol.micro.server.config.Microserver)|",
+      "|java+method:///com/aol/micro/server/config/Config/withInstancePropertiesName(java.lang.String)|",
+      "|java+method:///com/aol/micro/server/config/Config/instance()|",
+      "|java+method:///java/lang/Class/getPackage()|",
+      "|java+method:///com/aol/micro/server/config/MicroserverConfigurer/buildClasses(java.lang.Class,com.aol.micro.server.config.Microserver)|",
+      "|java+method:///com/google/common/collect/ImmutableSet/copyOf(java.util.Collection)|",
+      "|java+method:///com/aol/micro/server/config/Config/withClasses(com.google.common.collect.ImmutableSet)|",
+      "|java+method:///com/aol/micro/server/config/Config/withBasePackages(java.lang.String%5B%5D)|",
+      "|java+method:///com/aol/micro/server/config/Config/withAllowCircularReferences(boolean)|",
+      "|java+method:///com/aol/micro/server/config/Config/withProperties(com.google.common.collect.ImmutableMap)|",
+      "|java+method:///java/lang/Package/getName()|",
+      "|java+method:///com/aol/micro/server/config/Microserver/instancePropertiesName()|",
+      "|java+method:///com/aol/micro/server/config/Microserver/propertiesName()|",
+      "|java+method:///com/aol/micro/server/config/Microserver/basePackages()|",
+      "|java+method:///com/aol/micro/server/config/Microserver/allowCircularDependencies()|",
+      "|java+method:///com/aol/micro/server/config/Config/set()|",
+      "|java+method:///com/aol/micro/server/config/Config/withPropertiesName(java.lang.String)|",
+      "|java+method:///com/aol/micro/server/config/Config/withEntityScan(java.lang.String%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/aol/micro/server/config/Config/withProperties(org.pcollections.PMap)|",
+      "|java+method:///java/lang/Class/getAnnotation(java.lang.Class)|",
+      "|java+method:///com/aol/micro/server/config/Microserver/entityScan()|",
+      "|java+method:///org/pcollections/HashTreePMap/from(java.util.Map)|",
+      "|java+method:///com/aol/micro/server/config/MicroserverConfigurer/buildProperties(com.aol.micro.server.config.Microserver)|",
+      "|java+method:///com/aol/micro/server/config/Config/withInstancePropertiesName(java.lang.String)|",
+      "|java+method:///com/aol/micro/server/config/Config/instance()|",
+      "|java+method:///java/lang/Class/getPackage()|",
+      "|java+method:///com/aol/micro/server/config/MicroserverConfigurer/buildClasses(java.lang.Class,com.aol.micro.server.config.Microserver)|",
+      "|java+method:///org/pcollections/HashTreePSet/from(java.util.Collection)|",
+      "|java+method:///com/aol/micro/server/config/Config/withBasePackages(java.lang.String%5B%5D)|",
+      "|java+method:///com/aol/micro/server/config/Config/withAllowCircularReferences(boolean)|",
+      "|java+method:///java/lang/Package/getName()|",
+      "|java+method:///com/aol/micro/server/config/Microserver/instancePropertiesName()|",
+      "|java+method:///com/aol/micro/server/config/Microserver/propertiesName()|",
+      "|java+method:///com/aol/micro/server/config/Microserver/basePackages()|",
+      "|java+method:///com/aol/micro/server/config/Microserver/allowCircularDependencies()|",
+      "|java+method:///com/aol/micro/server/config/Config/set()|",
+      "|java+method:///com/aol/micro/server/config/Config/withPropertiesName(java.lang.String)|",
+      "|java+method:///com/aol/micro/server/config/Config/withEntityScan(java.lang.String%5B%5D)|",
+      "|java+method:///com/aol/micro/server/config/Config/withClasses(org.pcollections.PSet)|"
+    ],
+    "affectedLib": "com.google.guava:guava:18.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.aol.microservices:microserver-core:0.60",
+    "coordinatesV2": "com.aol.microservices:microserver-core:0.59",
+    "caller": "|java+method:///nonautoscan/com/aol/micro/server/ScheduleAndAsyncConfig/taskExecutor()|",
+    "called": "|java+method:///com/google/common/util/concurrent/MoreExecutors/listeningDecorator(java.util.concurrent.ExecutorService)|",
+    "v1Body": [
+      "|java+method:///java/util/concurrent/Executors/newFixedThreadPool(int)|",
+      "|java+method:///com/google/common/util/concurrent/MoreExecutors/listeningDecorator(java.util.concurrent.ExecutorService)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/concurrent/Executors/newFixedThreadPool(int)|"
+    ],
+    "affectedLib": "com.google.guava:guava:18.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.aol.microservices:microserver-core:0.60",
+    "coordinatesV2": "com.aol.microservices:microserver-core:0.59",
+    "caller": "|java+method:///com/aol/micro/server/module/ModuleDataExtractor/getRestResources(org.springframework.context.ApplicationContext)|",
+    "called": "|java+method:///com/google/common/collect/ImmutableList/copyOf(java.util.Collection)|",
+    "v1Body": [
+      "|java+method:///java/util/List/forEach(java.util.function.Consumer)|",
+      "|java+method:///com/aol/micro/server/module/Module/getRestAnnotationClasses()|",
+      "|java+method:///com/google/common/collect/ImmutableList/copyOf(java.util.Collection)|",
+      "|java+method:///com/aol/micro/server/module/Module/getRestResourceClasses()|",
+      "|java+method:///com/google/common/collect/Lists/newArrayList()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///java/util/List/forEach(java.util.function.Consumer)|",
+      "|java+method:///com/aol/micro/server/module/Module/getRestAnnotationClasses()|",
+      "|java+method:///com/aol/micro/server/module/Module/getRestResourceClasses()|",
+      "|java+method:///org/pcollections/ConsPStack/from(java.util.Collection)|"
+    ],
+    "affectedLib": "com.google.guava:guava:18.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.aol.microservices:microserver-core:0.60",
+    "coordinatesV2": "com.aol.microservices:microserver-core:0.59",
+    "caller": "|java+method:///com/aol/micro/server/module/Module/getSpringConfigurationClasses()|",
+    "called": "|java+method:///com/google/common/collect/Sets/newHashSet(java.lang.Object%5B%5D)|",
+    "v1Body": [
+      "|java+method:///com/google/common/collect/Sets/newHashSet(java.lang.Object%5B%5D)|",
+      "|java+method:///com/aol/micro/server/config/Classes/getClasses()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Arrays/asList(java.lang.Object%5B%5D)|",
+      "|java+method:///com/aol/micro/server/config/Classes/getClasses()|",
+      "|java+constructor:///java/util/HashSet/HashSet(java.util.Collection)|"
+    ],
+    "affectedLib": "com.google.guava:guava:18.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.aol.microservices:microserver-core:0.60",
+    "coordinatesV2": "com.aol.microservices:microserver-core:0.59",
+    "caller": "|java+method:///com/aol/micro/server/config/Config/withEntityScan(java.lang.String%5B%5D)|",
+    "called": "|java+method:///com/google/common/collect/ImmutableMap/copyOf(java.util.Map)|",
+    "v1Body": [
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///com/aol/micro/server/config/Config/withDataSources(com.google.common.collect.ImmutableMap)|",
+      "|java+constructor:///java/util/HashMap/HashMap(java.util.Map)|",
+      "|java+method:///java/util/Arrays/asList(java.lang.Object%5B%5D)|",
+      "|java+method:///com/google/common/collect/ImmutableMap/copyOf(java.util.Map)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///java/util/HashMap/HashMap(java.util.Map)|",
+      "|java+method:///java/util/Arrays/asList(java.lang.Object%5B%5D)|",
+      "|java+method:///org/pcollections/HashTreePMap/from(java.util.Map)|",
+      "|java+method:///com/aol/micro/server/config/Config/withDataSources(org.pcollections.PMap)|"
+    ],
+    "affectedLib": "com.google.guava:guava:18.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.aol.microservices:microserver-core:0.60",
+    "coordinatesV2": "com.aol.microservices:microserver-core:0.59",
+    "caller": "|java+method:///com/aol/micro/server/module/Module/getPropertyOverrides()|",
+    "called": "|java+method:///com/google/common/collect/Maps/newHashMap()|",
+    "v1Body": [
+      "|java+method:///com/google/common/collect/Maps/newHashMap()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/util/HashMap/HashMap()|"
+    ],
+    "affectedLib": "com.google.guava:guava:18.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.aol.microservices:microserver-core:0.60",
+    "coordinatesV2": "com.aol.microservices:microserver-core:0.59",
+    "caller": "|java+method:///com/aol/micro/server/module/ConfigurableModule/getRequestListeners(com.aol.micro.server.servers.model.ServerData)|",
+    "called": "|java+method:///com/google/common/collect/Iterables/concat(java.lang.Iterable,java.lang.Iterable)|",
+    "v1Body": [
+      "|java+method:///com/google/common/collect/ImmutableList/copyOf(java.lang.Iterable)|",
+      "|java+method:///com/aol/micro/server/module/ConfigurableModule/extract(java.util.function.Supplier)|",
+      "|java+method:///com/aol/micro/server/module/Module/getRequestListeners(com.aol.micro.server.servers.model.ServerData)|",
+      "|java+method:///com/google/common/collect/Iterables/concat(java.lang.Iterable,java.lang.Iterable)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/aol/micro/server/utility/UsefulStaticMethods/concat(java.util.Collection,java.util.Collection)|",
+      "|java+method:///org/pcollections/ConsPStack/from(java.util.Collection)|",
+      "|java+method:///com/aol/micro/server/module/ConfigurableModule/extract(java.util.function.Supplier)|",
+      "|java+method:///com/aol/micro/server/module/Module/getRequestListeners(com.aol.micro.server.servers.model.ServerData)|"
+    ],
+    "affectedLib": "com.google.guava:guava:18.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.aol.microservices:microserver-core:0.60",
+    "coordinatesV2": "com.aol.microservices:microserver-core:0.59",
+    "caller": "|java+method:///com/aol/micro/server/module/ConfigurableModule/getRestResourceClasses()|",
+    "called": "|java+method:///com/google/common/collect/Iterables/concat(java.lang.Iterable,java.lang.Iterable)|",
+    "v1Body": [
+      "|java+method:///com/aol/micro/server/module/Module/getRestResourceClasses()|",
+      "|java+method:///com/google/common/collect/ImmutableList/copyOf(java.lang.Iterable)|",
+      "|java+method:///com/aol/micro/server/module/ConfigurableModule/extract(java.util.function.Supplier)|",
+      "|java+method:///com/google/common/collect/Iterables/concat(java.lang.Iterable,java.lang.Iterable)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/aol/micro/server/utility/UsefulStaticMethods/concat(java.util.Collection,java.util.Collection)|",
+      "|java+method:///com/aol/micro/server/module/Module/getRestResourceClasses()|",
+      "|java+method:///org/pcollections/ConsPStack/from(java.util.Collection)|",
+      "|java+method:///com/aol/micro/server/module/ConfigurableModule/extract(java.util.function.Supplier)|"
+    ],
+    "affectedLib": "com.google.guava:guava:18.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.aol.microservices:microserver-core:0.60",
+    "coordinatesV2": "com.aol.microservices:microserver-core:0.59",
+    "caller": "|java+method:///com/aol/micro/server/module/Environment/assureModule(com.aol.micro.server.module.Module)|",
+    "called": "|java+method:///com/google/common/collect/ImmutableMap/copyOf(java.util.Map)|",
+    "v1Body": [
+      "|java+method:///com/google/common/collect/Maps/newHashMap()|",
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/util/Map/putAll(java.util.Map)|",
+      "|java+method:///com/aol/micro/server/module/Environment/getPort(com.aol.micro.server.module.Module)|",
+      "|java+method:///com/google/common/collect/ImmutableMap/copyOf(java.util.Map)|",
+      "|java+method:///com/aol/micro/server/module/ModuleBean$ModuleBeanBuilder/build()|",
+      "|java+method:///com/aol/micro/server/module/Environment/getHost(com.aol.micro.server.module.Module)|",
+      "|java+method:///com/aol/micro/server/module/Module/getContext()|",
+      "|java+method:///com/aol/micro/server/module/ModuleBean$ModuleBeanBuilder/port(int)|",
+      "|java+method:///com/aol/micro/server/module/ModuleBean/builder()|",
+      "|java+method:///com/aol/micro/server/module/ModuleBean$ModuleBeanBuilder/host(java.lang.String)|",
+      "|java+method:///java/util/Map/containsKey(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/util/Map/putAll(java.util.Map)|",
+      "|java+method:///com/aol/micro/server/module/Environment/getPort(com.aol.micro.server.module.Module)|",
+      "|java+method:///org/pcollections/HashTreePMap/from(java.util.Map)|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+method:///com/aol/micro/server/module/ModuleBean$ModuleBeanBuilder/build()|",
+      "|java+method:///com/aol/micro/server/module/Environment/getHost(com.aol.micro.server.module.Module)|",
+      "|java+method:///com/aol/micro/server/module/Module/getContext()|",
+      "|java+method:///com/aol/micro/server/module/ModuleBean$ModuleBeanBuilder/port(int)|",
+      "|java+method:///com/aol/micro/server/module/ModuleBean/builder()|",
+      "|java+method:///com/aol/micro/server/module/ModuleBean$ModuleBeanBuilder/host(java.lang.String)|",
+      "|java+method:///java/util/Map/containsKey(java.lang.Object)|"
+    ],
+    "affectedLib": "com.google.guava:guava:18.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.aol.microservices:microserver-core:0.60",
+    "coordinatesV2": "com.aol.microservices:microserver-core:0.59",
+    "caller": "|java+method:///com/aol/micro/server/spring/SpringApplicationConfigurator/createSpringApp(com.aol.micro.server.config.Config,java.lang.Class%5B%5D)|",
+    "called": "|java+method:///com/google/common/collect/ImmutableMap/keySet()|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+method:///org/springframework/web/context/support/AnnotationConfigWebApplicationContext/scan(java.lang.String%5B%5D)|",
+      "|java+method:///org/springframework/web/context/support/AnnotationConfigWebApplicationContext/setAllowCircularReferences(boolean)|",
+      "|java+method:///org/springframework/web/context/support/AnnotationConfigWebApplicationContext/refresh()|",
+      "|java+method:///com/google/common/collect/ImmutableSet/stream()|",
+      "|java+method:///com/aol/micro/server/config/Config/getBasePackages()|",
+      "|java+method:///org/springframework/context/ConfigurableApplicationContext/getBeanFactory()|",
+      "|java+method:///java/util/stream/Stream/filter(java.util.function.Predicate)|",
+      "|java+method:///org/springframework/web/context/support/AnnotationConfigWebApplicationContext/register(java.lang.Class%5B%5D)|",
+      "|java+method:///com/google/common/collect/ImmutableMap/keySet()|",
+      "|java+method:///com/aol/micro/server/config/Config/getDataSources()|",
+      "|java+method:///com/aol/micro/server/config/Config/isAllowCircularReferences()|",
+      "|java+constructor:///org/springframework/web/context/support/AnnotationConfigWebApplicationContext/AnnotationConfigWebApplicationContext()|",
+      "|java+method:///java/util/stream/Stream/forEach(java.util.function.Consumer)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+method:///org/springframework/web/context/support/AnnotationConfigWebApplicationContext/setAllowCircularReferences(boolean)|",
+      "|java+method:///org/springframework/web/context/support/AnnotationConfigWebApplicationContext/refresh()|",
+      "|java+method:///java/util/Set/stream()|",
+      "|java+method:///com/aol/micro/server/config/Config/getBasePackages()|",
+      "|java+method:///org/springframework/context/ConfigurableApplicationContext/getBeanFactory()|",
+      "|java+method:///java/util/stream/Stream/filter(java.util.function.Predicate)|",
+      "|java+method:///org/springframework/web/context/support/AnnotationConfigWebApplicationContext/register(java.lang.Class%5B%5D)|",
+      "|java+method:///com/aol/micro/server/config/Config/getDataSources()|",
+      "|java+method:///com/aol/micro/server/config/Config/isAllowCircularReferences()|",
+      "|java+method:///org/springframework/web/context/support/AnnotationConfigWebApplicationContext/scan(java.lang.String%5B%5D)|",
+      "|java+method:///org/pcollections/PMap/keySet()|",
+      "|java+constructor:///org/springframework/web/context/support/AnnotationConfigWebApplicationContext/AnnotationConfigWebApplicationContext()|",
+      "|java+method:///java/util/stream/Stream/forEach(java.util.function.Consumer)|"
+    ],
+    "affectedLib": "com.google.guava:guava:18.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.aol.microservices:microserver-core:0.59",
+    "coordinatesV2": "com.aol.microservices:microserver-core:0.60",
+    "caller": "|java+method:///com/aol/micro/server/spring/SpringContextFactory/createSpringContext()|",
+    "called": "|java+method:///com/aol/simple/react/exceptions/ExceptionSoftener/throwSoftenedException(java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///com/aol/micro/server/ErrorCode/toString()|",
+      "|java+method:///com/aol/simple/react/exceptions/ExceptionSoftener/throwSoftenedException(java.lang.Throwable)|",
+      "|java+method:///com/aol/micro/server/spring/SpringBuilder/createSpringApp(com.aol.micro.server.config.Config,java.lang.Class%5B%5D)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Object)|",
+      "|java+method:///com/google/common/collect/ImmutableSet/toArray(java.lang.Object%5B%5D)|",
+      "|java+method:///java/lang/Exception/getMessage()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/aol/micro/server/ErrorCode/toString()|",
+      "|java+method:///org/pcollections/PSet/toArray(java.lang.Object%5B%5D)|",
+      "|java+method:///com/aol/simple/react/exceptions/ExceptionSoftener/throwSoftenedException(java.lang.Throwable)|",
+      "|java+method:///com/aol/micro/server/spring/SpringBuilder/createSpringApp(com.aol.micro.server.config.Config,java.lang.Class%5B%5D)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Object)|",
+      "|java+method:///java/lang/Exception/getMessage()|"
+    ],
+    "affectedLib": "com.aol.simplereact:simple-react:0.98",
+    "change": "UPDATED"
+  }
+]

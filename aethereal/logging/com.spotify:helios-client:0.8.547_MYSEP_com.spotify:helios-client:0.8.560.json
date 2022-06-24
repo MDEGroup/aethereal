@@ -1,0 +1,74 @@
+[
+  {
+    "coordinatesV1": "com.spotify:helios-client:0.8.547",
+    "coordinatesV2": "com.spotify:helios-client:0.8.560",
+    "caller": "|java+method:///com/spotify/helios/client/HeliosClient/uri(java.lang.String,java.util.Map)|",
+    "called": "|java+constructor:///org/apache/http/client/utils/URIBuilder/URIBuilder()|",
+    "v1Body": [
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///java/net/URI/URI(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)|",
+      "|java+method:///com/google/common/collect/Maps/newHashMap(java.util.Map)|",
+      "|java+method:///com/google/common/base/Joiner/withKeyValueSeparator(java.lang.String)|",
+      "|java+method:///com/google/common/base/Throwables/propagate(java.lang.Throwable)|",
+      "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean)|",
+      "|java+method:///java/lang/String/startsWith(java.lang.String)|",
+      "|java+method:///com/google/common/base/Joiner/on(char)|",
+      "|java+method:///com/google/common/base/Joiner$MapJoiner/join(java.util.Map)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/util/Map$Entry/getKey()|",
+      "|java+method:///org/apache/http/client/utils/URIBuilder/addParameter(java.lang.String,java.lang.String)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/apache/http/client/utils/URIBuilder/setHost(java.lang.String)|",
+      "|java+method:///java/lang/String/startsWith(java.lang.String)|",
+      "|java+method:///java/util/Map$Entry/getValue()|",
+      "|java+method:///org/apache/http/client/utils/URIBuilder/build()|",
+      "|java+method:///java/util/Map/entrySet()|",
+      "|java+constructor:///org/apache/http/client/utils/URIBuilder/URIBuilder()|",
+      "|java+method:///com/google/common/base/Throwables/propagate(java.lang.Throwable)|",
+      "|java+method:///org/apache/http/client/utils/URIBuilder/setPath(java.lang.String)|",
+      "|java+method:///org/apache/http/client/utils/URIBuilder/setScheme(java.lang.String)|",
+      "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean)|",
+      "|java+method:///java/util/Set/iterator()|"
+    ],
+    "affectedLib": "org.apache.httpcomponents:httpclient:4.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.spotify:helios-client:0.8.547",
+    "coordinatesV2": "com.spotify:helios-client:0.8.560",
+    "caller": "|java+initializer:///com/spotify/helios/common/Resolver/Resolver$initializer|",
+    "called": "|java+method:///com/spotify/dns/DnsSrvResolvers$DnsSrvResolverBuilder/build()|",
+    "v1Body": [
+      "|java+method:///com/spotify/helios/common/Resolver/env(java.lang.String,java.lang.String)|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/spotify/helios/common/Resolver/env(java.lang.String,java.lang.String)|",
+      "|java+method:///com/spotify/dns/DnsSrvResolvers/newBuilder()|",
+      "|java+method:///com/spotify/dns/DnsSrvResolvers$DnsSrvResolverBuilder/build()|"
+    ],
+    "affectedLib": "com.spotify:dns:3.0.2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.spotify:helios-client:0.8.547",
+    "coordinatesV2": "com.spotify:helios-client:0.8.560",
+    "caller": "|java+initializer:///com/spotify/helios/client/HeliosClient/HeliosClient$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///java/util/concurrent/TimeUnit/toMillis(long)|",
+      "|java+method:///com/google/common/base/Joiner/on(java.lang.String)|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///com/google/common/base/Joiner/join(java.lang.Iterable)|",
+      "|java+method:///com/google/common/collect/ImmutableList/of(java.lang.Object,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.7",
+    "change": "UPDATED"
+  }
+]

@@ -1,0 +1,322 @@
+[
+  {
+    "coordinatesV1": "net.sf.ehcache:ehcache-jgroupsreplication:1.4",
+    "coordinatesV2": "net.sf.ehcache:ehcache-jgroupsreplication:1.3",
+    "caller": "|java+method:///net/sf/ehcache/distribution/jgroups/JGroupsCacheManagerPeerProviderFactory/createCachePeerProvider(net.sf.ehcache.CacheManager,java.util.Properties)|",
+    "called": "|java+method:///net/sf/ehcache/util/PropertyUtil/extractAndLogProperty(java.lang.String,java.util.Properties)|",
+    "v1Body": [
+      "|java+method:///java/util/logging/Logger/fine(java.lang.String)|",
+      "|java+method:///java/lang/String/replaceAll(java.lang.String,java.lang.String)|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+constructor:///net/sf/ehcache/distribution/jgroups/JGroupManager/JGroupManager(net.sf.ehcache.CacheManager,java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/String/trim()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///net/sf/ehcache/util/PropertyUtil/extractAndLogProperty(java.lang.String,java.util.Properties)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/lang/ClassLoader/getResource(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String)|",
+      "|java+method:///net/sf/ehcache/distribution/jgroups/JGroupsCacheManagerPeerProviderFactory/getProperty(java.lang.String,java.util.Properties)|",
+      "|java+method:///net/sf/ehcache/util/ClassLoaderUtil/getStandardClassLoader()|",
+      "|java+constructor:///net/sf/ehcache/distribution/jgroups/JGroupsCacheManagerPeerProvider/JGroupsCacheManagerPeerProvider(net.sf.ehcache.CacheManager,java.net.URL)|",
+      "|java+method:///org/slf4j/Logger/trace(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///net/sf/ehcache/CacheManager/getName()|",
+      "|java+constructor:///net/sf/ehcache/distribution/jgroups/JGroupsCacheManagerPeerProvider/JGroupsCacheManagerPeerProvider(net.sf.ehcache.CacheManager,java.lang.String)|"
+    ],
+    "affectedLib": "net.sf.ehcache:ehcache:2.10.5",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "net.sf.ehcache:ehcache-jgroupsreplication:1.4",
+    "coordinatesV2": "net.sf.ehcache:ehcache-jgroupsreplication:1.3",
+    "caller": "|java+method:///net/sf/ehcache/distribution/jgroups/JGroupsBootstrapCacheLoaderFactory/extractMaximumChunkSizeBytes(java.util.Properties)|",
+    "called": "|java+method:///net/sf/ehcache/util/PropertyUtil/extractAndLogProperty(java.lang.String,java.util.Properties)|",
+    "v1Body": [
+      "|java+method:///java/util/logging/Logger/warning(java.lang.String)|",
+      "|java+method:///net/sf/ehcache/util/PropertyUtil/extractAndLogProperty(java.lang.String,java.util.Properties)|",
+      "|java+method:///java/lang/Integer/parseInt(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Object)|",
+      "|java+method:///net/sf/ehcache/util/PropertyUtil/extractAndLogProperty(java.lang.String,java.util.Properties)|",
+      "|java+method:///java/lang/Integer/parseInt(java.lang.String)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|"
+    ],
+    "affectedLib": "net.sf.ehcache:ehcache:2.10.5",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "net.sf.ehcache:ehcache-jgroupsreplication:1.4",
+    "coordinatesV2": "net.sf.ehcache:ehcache-jgroupsreplication:1.3",
+    "caller": "|java+method:///net/sf/ehcache/distribution/jgroups/JGroupsBootstrapCacheLoaderFactory/extractAndValidateBootstrapAsynchronously(java.util.Properties)|",
+    "called": "|java+method:///net/sf/ehcache/util/PropertyUtil/parseBoolean(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///net/sf/ehcache/util/PropertyUtil/parseBoolean(java.lang.String)|",
+      "|java+method:///net/sf/ehcache/util/PropertyUtil/extractAndLogProperty(java.lang.String,java.util.Properties)|",
+      "|java+constructor:///java/lang/UnsupportedOperationException/UnsupportedOperationException(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Boolean/parseBoolean(java.lang.String)|",
+      "|java+method:///net/sf/ehcache/util/PropertyUtil/extractAndLogProperty(java.lang.String,java.util.Properties)|"
+    ],
+    "affectedLib": "net.sf.ehcache:ehcache:2.10.5",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "net.sf.ehcache:ehcache-jgroupsreplication:1.4",
+    "coordinatesV2": "net.sf.ehcache:ehcache-jgroupsreplication:1.3",
+    "caller": "|java+method:///net/sf/ehcache/distribution/jgroups/JGroupsCacheReplicator/sendNotification(net.sf.ehcache.Ehcache,net.sf.ehcache.distribution.jgroups.JGroupEventMessage)|",
+    "called": "|java+method:///net/sf/ehcache/CacheManager/getCacheManagerPeerProvider(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///net/sf/ehcache/distribution/CachePeer/send(java.util.List)|",
+      "|java+method:///net/sf/ehcache/CacheManager/getCacheManagerPeerProvider(java.lang.String)|",
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///net/sf/ehcache/distribution/CacheManagerPeerProvider/listRemoteCachePeers(net.sf.ehcache.Ehcache)|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///net/sf/ehcache/Ehcache/getCacheManager()|",
+      "|java+method:///java/util/ArrayList/add(java.lang.Object)|",
+      "|java+method:///java/util/List/get(int)|",
+      "|java+method:///net/sf/ehcache/distribution/jgroups/JGroupsCacheReplicator/addMessageToQueue(net.sf.ehcache.distribution.jgroups.JGroupEventMessage)|"
+    ],
+    "v2Body": [
+      "|java+method:///net/sf/ehcache/distribution/CachePeer/send(java.util.List)|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/util/Arrays/asList(java.lang.Object%5B%5D)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///net/sf/ehcache/distribution/jgroups/JGroupsCacheReplicator/listRemoteCachePeers(net.sf.ehcache.Ehcache)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "affectedLib": "net.sf.ehcache:ehcache:2.10.5",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "net.sf.ehcache:ehcache-jgroupsreplication:1.4",
+    "coordinatesV2": "net.sf.ehcache:ehcache-jgroupsreplication:1.3",
+    "caller": "|java+method:///net/sf/ehcache/distribution/jgroups/JGroupsCacheReplicator/replicatePutNotification(net.sf.ehcache.Ehcache,net.sf.ehcache.Element)|",
+    "called": "|java+method:///net/sf/ehcache/Element/isSerializable()|",
+    "v1Body": [
+      "|java+method:///net/sf/ehcache/Element/isKeySerializable()|",
+      "|java+method:///java/util/logging/Logger/warning(java.lang.String)|",
+      "|java+method:///net/sf/ehcache/distribution/jgroups/JGroupsCacheReplicator/sendNotification(net.sf.ehcache.Ehcache,net.sf.ehcache.distribution.jgroups.JGroupEventMessage)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///net/sf/ehcache/distribution/jgroups/JGroupEventMessage/JGroupEventMessage(int,java.io.Serializable,net.sf.ehcache.Element,net.sf.ehcache.Ehcache,java.lang.String)|",
+      "|java+method:///net/sf/ehcache/Ehcache/getName()|",
+      "|java+method:///net/sf/ehcache/Element/isSerializable()|",
+      "|java+method:///net/sf/ehcache/Element/getObjectKey()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "v2Body": [
+      "|java+method:///net/sf/ehcache/Element/isKeySerializable()|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Object)|",
+      "|java+method:///net/sf/ehcache/distribution/jgroups/JGroupsCacheReplicator/sendNotification(net.sf.ehcache.Ehcache,net.sf.ehcache.distribution.jgroups.JGroupEventMessage)|",
+      "|java+method:///net/sf/ehcache/Ehcache/getName()|",
+      "|java+method:///net/sf/ehcache/Element/isSerializable()|",
+      "|java+method:///net/sf/ehcache/Element/getObjectKey()|",
+      "|java+constructor:///net/sf/ehcache/distribution/jgroups/JGroupEventMessage/JGroupEventMessage(int,java.io.Serializable,net.sf.ehcache.Element,java.lang.String,long)|"
+    ],
+    "affectedLib": "net.sf.ehcache:ehcache:2.10.5",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "net.sf.ehcache:ehcache-jgroupsreplication:1.4",
+    "coordinatesV2": "net.sf.ehcache:ehcache-jgroupsreplication:1.3",
+    "caller": "|java+method:///net/sf/ehcache/distribution/jgroups/JGroupsCacheReplicatorFactory/extractBooleanProperty(java.util.Properties,java.lang.String,boolean)|",
+    "called": "|java+method:///net/sf/ehcache/util/PropertyUtil/parseBoolean(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///net/sf/ehcache/util/PropertyUtil/parseBoolean(java.lang.String)|",
+      "|java+method:///net/sf/ehcache/util/PropertyUtil/extractAndLogProperty(java.lang.String,java.util.Properties)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Boolean/parseBoolean(java.lang.String)|",
+      "|java+method:///net/sf/ehcache/util/PropertyUtil/extractAndLogProperty(java.lang.String,java.util.Properties)|"
+    ],
+    "affectedLib": "net.sf.ehcache:ehcache:2.10.5",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "net.sf.ehcache:ehcache-jgroupsreplication:1.3",
+    "coordinatesV2": "net.sf.ehcache:ehcache-jgroupsreplication:1.4",
+    "caller": "|java+initializer:///net/sf/ehcache/distribution/jgroups/JGroupsCacheManagerPeerProviderFactory/JGroupsCacheManagerPeerProviderFactory$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/util/logging/Logger/getLogger(java.lang.String)|",
+      "|java+method:///java/lang/Class/getName()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.String)|",
+      "|java+method:///java/lang/Class/getName()|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.5.8",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "net.sf.ehcache:ehcache-jgroupsreplication:1.3",
+    "coordinatesV2": "net.sf.ehcache:ehcache-jgroupsreplication:1.4",
+    "caller": "|java+initializer:///net/sf/ehcache/distribution/jgroups/JGroupsCacheReplicatorFactory/JGroupsCacheReplicatorFactory$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/util/logging/Logger/getLogger(java.lang.String)|",
+      "|java+method:///java/lang/Class/getName()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.String)|",
+      "|java+method:///java/lang/Class/getName()|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.5.8",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "net.sf.ehcache:ehcache-jgroupsreplication:1.3",
+    "coordinatesV2": "net.sf.ehcache:ehcache-jgroupsreplication:1.4",
+    "caller": "|java+initializer:///net/sf/ehcache/distribution/jgroups/JGroupsBootstrapCacheLoaderFactory/JGroupsBootstrapCacheLoaderFactory$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/util/logging/Logger/getLogger(java.lang.String)|",
+      "|java+method:///java/lang/Class/getName()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.String)|",
+      "|java+method:///java/lang/Class/getName()|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.5.8",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "net.sf.ehcache:ehcache-jgroupsreplication:1.3",
+    "coordinatesV2": "net.sf.ehcache:ehcache-jgroupsreplication:1.4",
+    "caller": "|java+initializer:///net/sf/ehcache/distribution/jgroups/JGroupsCacheReplicator/JGroupsCacheReplicator$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/util/logging/Logger/getLogger(java.lang.String)|",
+      "|java+method:///java/lang/Class/getName()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.String)|",
+      "|java+method:///java/lang/Class/getName()|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.5.8",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "net.sf.ehcache:ehcache-jgroupsreplication:1.3",
+    "coordinatesV2": "net.sf.ehcache:ehcache-jgroupsreplication:1.4",
+    "caller": "|java+method:///net/sf/ehcache/distribution/jgroups/JGroupsCacheManagerPeerProviderFactory/createCachePeerProvider(net.sf.ehcache.CacheManager,java.util.Properties)|",
+    "called": "|java+method:///net/sf/ehcache/util/ClassLoaderUtil/getStandardClassLoader()|",
+    "v1Body": [
+      "|java+method:///java/util/logging/Logger/fine(java.lang.String)|",
+      "|java+method:///java/lang/String/replaceAll(java.lang.String,java.lang.String)|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+constructor:///net/sf/ehcache/distribution/jgroups/JGroupManager/JGroupManager(net.sf.ehcache.CacheManager,java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/String/trim()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///net/sf/ehcache/util/PropertyUtil/extractAndLogProperty(java.lang.String,java.util.Properties)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/lang/ClassLoader/getResource(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String)|",
+      "|java+method:///net/sf/ehcache/distribution/jgroups/JGroupsCacheManagerPeerProviderFactory/getProperty(java.lang.String,java.util.Properties)|",
+      "|java+method:///net/sf/ehcache/util/ClassLoaderUtil/getStandardClassLoader()|",
+      "|java+constructor:///net/sf/ehcache/distribution/jgroups/JGroupsCacheManagerPeerProvider/JGroupsCacheManagerPeerProvider(net.sf.ehcache.CacheManager,java.net.URL)|",
+      "|java+method:///org/slf4j/Logger/trace(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///net/sf/ehcache/CacheManager/getName()|",
+      "|java+constructor:///net/sf/ehcache/distribution/jgroups/JGroupsCacheManagerPeerProvider/JGroupsCacheManagerPeerProvider(net.sf.ehcache.CacheManager,java.lang.String)|"
+    ],
+    "affectedLib": "net.sf.ehcache:ehcache-core:2.3.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "net.sf.ehcache:ehcache-jgroupsreplication:1.3",
+    "coordinatesV2": "net.sf.ehcache:ehcache-jgroupsreplication:1.4",
+    "caller": "|java+method:///net/sf/ehcache/distribution/jgroups/JGroupsBootstrapCacheLoaderFactory/extractMaximumChunkSizeBytes(java.util.Properties)|",
+    "called": "|java+method:///net/sf/ehcache/util/PropertyUtil/extractAndLogProperty(java.lang.String,java.util.Properties)|",
+    "v1Body": [
+      "|java+method:///java/util/logging/Logger/warning(java.lang.String)|",
+      "|java+method:///net/sf/ehcache/util/PropertyUtil/extractAndLogProperty(java.lang.String,java.util.Properties)|",
+      "|java+method:///java/lang/Integer/parseInt(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Object)|",
+      "|java+method:///net/sf/ehcache/util/PropertyUtil/extractAndLogProperty(java.lang.String,java.util.Properties)|",
+      "|java+method:///java/lang/Integer/parseInt(java.lang.String)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|"
+    ],
+    "affectedLib": "net.sf.ehcache:ehcache-core:2.3.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "net.sf.ehcache:ehcache-jgroupsreplication:1.3",
+    "coordinatesV2": "net.sf.ehcache:ehcache-jgroupsreplication:1.4",
+    "caller": "|java+method:///net/sf/ehcache/distribution/jgroups/JGroupsBootstrapCacheLoaderFactory/extractAndValidateBootstrapAsynchronously(java.util.Properties)|",
+    "called": "|java+method:///net/sf/ehcache/util/PropertyUtil/extractAndLogProperty(java.lang.String,java.util.Properties)|",
+    "v1Body": [
+      "|java+method:///net/sf/ehcache/util/PropertyUtil/parseBoolean(java.lang.String)|",
+      "|java+method:///net/sf/ehcache/util/PropertyUtil/extractAndLogProperty(java.lang.String,java.util.Properties)|",
+      "|java+constructor:///java/lang/UnsupportedOperationException/UnsupportedOperationException(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Boolean/parseBoolean(java.lang.String)|",
+      "|java+method:///net/sf/ehcache/util/PropertyUtil/extractAndLogProperty(java.lang.String,java.util.Properties)|"
+    ],
+    "affectedLib": "net.sf.ehcache:ehcache-core:2.3.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "net.sf.ehcache:ehcache-jgroupsreplication:1.3",
+    "coordinatesV2": "net.sf.ehcache:ehcache-jgroupsreplication:1.4",
+    "caller": "|java+method:///net/sf/ehcache/distribution/jgroups/JGroupsCacheReplicator/replicatePutNotification(net.sf.ehcache.Ehcache,net.sf.ehcache.Element)|",
+    "called": "|java+method:///net/sf/ehcache/Element/isSerializable()|",
+    "v1Body": [
+      "|java+method:///net/sf/ehcache/Element/isKeySerializable()|",
+      "|java+method:///java/util/logging/Logger/warning(java.lang.String)|",
+      "|java+method:///net/sf/ehcache/distribution/jgroups/JGroupsCacheReplicator/sendNotification(net.sf.ehcache.Ehcache,net.sf.ehcache.distribution.jgroups.JGroupEventMessage)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///net/sf/ehcache/distribution/jgroups/JGroupEventMessage/JGroupEventMessage(int,java.io.Serializable,net.sf.ehcache.Element,net.sf.ehcache.Ehcache,java.lang.String)|",
+      "|java+method:///net/sf/ehcache/Ehcache/getName()|",
+      "|java+method:///net/sf/ehcache/Element/isSerializable()|",
+      "|java+method:///net/sf/ehcache/Element/getObjectKey()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "v2Body": [
+      "|java+method:///net/sf/ehcache/Element/isKeySerializable()|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Object)|",
+      "|java+method:///net/sf/ehcache/distribution/jgroups/JGroupsCacheReplicator/sendNotification(net.sf.ehcache.Ehcache,net.sf.ehcache.distribution.jgroups.JGroupEventMessage)|",
+      "|java+method:///net/sf/ehcache/Ehcache/getName()|",
+      "|java+method:///net/sf/ehcache/Element/isSerializable()|",
+      "|java+method:///net/sf/ehcache/Element/getObjectKey()|",
+      "|java+constructor:///net/sf/ehcache/distribution/jgroups/JGroupEventMessage/JGroupEventMessage(int,java.io.Serializable,net.sf.ehcache.Element,java.lang.String,long)|"
+    ],
+    "affectedLib": "net.sf.ehcache:ehcache-core:2.3.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "net.sf.ehcache:ehcache-jgroupsreplication:1.3",
+    "coordinatesV2": "net.sf.ehcache:ehcache-jgroupsreplication:1.4",
+    "caller": "|java+method:///net/sf/ehcache/distribution/jgroups/JGroupsCacheReplicatorFactory/extractBooleanProperty(java.util.Properties,java.lang.String,boolean)|",
+    "called": "|java+method:///net/sf/ehcache/util/PropertyUtil/extractAndLogProperty(java.lang.String,java.util.Properties)|",
+    "v1Body": [
+      "|java+method:///net/sf/ehcache/util/PropertyUtil/parseBoolean(java.lang.String)|",
+      "|java+method:///net/sf/ehcache/util/PropertyUtil/extractAndLogProperty(java.lang.String,java.util.Properties)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Boolean/parseBoolean(java.lang.String)|",
+      "|java+method:///net/sf/ehcache/util/PropertyUtil/extractAndLogProperty(java.lang.String,java.util.Properties)|"
+    ],
+    "affectedLib": "net.sf.ehcache:ehcache-core:2.3.0",
+    "change": "ADDED"
+  }
+]

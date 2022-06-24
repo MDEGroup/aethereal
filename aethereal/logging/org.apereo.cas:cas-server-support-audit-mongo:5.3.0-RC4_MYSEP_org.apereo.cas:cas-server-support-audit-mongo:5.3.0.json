@@ -1,0 +1,29 @@
+[
+  {
+    "coordinatesV1": "org.apereo.cas:cas-server-support-audit-mongo:5.3.0-RC4",
+    "coordinatesV2": "org.apereo.cas:cas-server-support-audit-mongo:5.3.0",
+    "caller": "|java+method:///org/apereo/cas/audit/MongoDbAuditTrailManager/getAuditRecordsSince(java.time.LocalDate)|",
+    "called": "|java+method:///org/apereo/cas/util/DateTimeUtils/dateOf(java.time.LocalDate)|",
+    "v1Body": [
+      "|java+constructor:///org/springframework/data/mongodb/core/query/Query/Query()|",
+      "|java+method:///org/springframework/data/mongodb/core/query/Query/addCriteria(org.springframework.data.mongodb.core.query.CriteriaDefinition)|",
+      "|java+method:///org/springframework/data/mongodb/core/query/Criteria/where(java.lang.String)|",
+      "|java+constructor:///java/util/LinkedHashSet/LinkedHashSet(java.util.Collection)|",
+      "|java+method:///org/springframework/data/mongodb/core/query/Criteria/lte(java.lang.Object)|",
+      "|java+method:///org/apereo/cas/util/DateTimeUtils/dateOf(java.time.LocalDate)|",
+      "|java+method:///org/springframework/data/mongodb/core/MongoTemplate/find(org.springframework.data.mongodb.core.query.Query,java.lang.Class,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///org/springframework/data/mongodb/core/query/Query/Query()|",
+      "|java+method:///org/springframework/data/mongodb/core/query/Query/addCriteria(org.springframework.data.mongodb.core.query.CriteriaDefinition)|",
+      "|java+method:///org/springframework/data/mongodb/core/query/Criteria/where(java.lang.String)|",
+      "|java+constructor:///java/util/LinkedHashSet/LinkedHashSet(java.util.Collection)|",
+      "|java+method:///org/springframework/data/mongodb/core/query/Criteria/gte(java.lang.Object)|",
+      "|java+method:///org/apereo/cas/util/DateTimeUtils/dateOf(java.time.LocalDate)|",
+      "|java+method:///org/springframework/data/mongodb/core/MongoTemplate/find(org.springframework.data.mongodb.core.query.Query,java.lang.Class,java.lang.String)|"
+    ],
+    "affectedLib": "org.apereo.cas:cas-server-core-util-api:5.3.0",
+    "change": "UPDATED"
+  }
+]

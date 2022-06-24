@@ -1,0 +1,73 @@
+[
+  {
+    "coordinatesV1": "org.eobjects.analyzerbeans:AnalyzerBeans-core:0.8",
+    "coordinatesV2": "org.eobjects.analyzerbeans:AnalyzerBeans-core:0.9",
+    "caller": "|java+method:///org/eobjects/analyzer/connection/XmlDatastore/createDatastoreConnection()|",
+    "called": "|java+constructor:///org/eobjects/metamodel/xml/XmlSaxDataContext/XmlSaxDataContext(java.io.File,org.eobjects.metamodel.xml.XmlSaxTableDef%5B%5D)|",
+    "v1Body": [
+      "|java+constructor:///org/eobjects/analyzer/connection/DatastoreConnectionImpl/DatastoreConnectionImpl(org.eobjects.metamodel.DataContext,org.eobjects.analyzer.connection.Datastore,java.io.Closeable%5B%5D)|",
+      "|java+constructor:///org/eobjects/metamodel/xml/XmlSaxDataContext/XmlSaxDataContext(java.io.File,org.eobjects.metamodel.xml.XmlSaxTableDef%5B%5D)|",
+      "|java+constructor:///java/io/File/File(java.lang.String)|",
+      "|java+method:///org/eobjects/metamodel/DataContextFactory/createXmlDataContext(java.io.File,boolean,boolean)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/eobjects/analyzer/connection/DatastoreConnectionImpl/DatastoreConnectionImpl(org.eobjects.metamodel.DataContext,org.eobjects.analyzer.connection.Datastore,java.io.Closeable%5B%5D)|",
+      "|java+constructor:///org/eobjects/metamodel/xml/XmlSaxDataContext/XmlSaxDataContext(java.io.File,org.eobjects.metamodel.xml.XmlSaxTableDef%5B%5D)|",
+      "|java+constructor:///java/io/File/File(java.lang.String)|",
+      "|java+method:///org/eobjects/metamodel/DataContextFactory/createXmlDataContext(java.io.File,boolean)|"
+    ],
+    "affectedLib": "org.eobjects.metamodel:MetaModel-xml:2.2",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.eobjects.analyzerbeans:AnalyzerBeans-core:0.8",
+    "coordinatesV2": "org.eobjects.analyzerbeans:AnalyzerBeans-core:0.9",
+    "caller": "|java+method:///org/eobjects/analyzer/connection/JdbcDatastore/createDatastoreConnection()|",
+    "called": "|java+method:///org/eobjects/metamodel/DataContextFactory/createJdbcDataContext(javax.sql.DataSource)|",
+    "v1Body": [
+      "|java+constructor:///java/lang/IllegalStateException/IllegalStateException(java.lang.Throwable)|",
+      "|java+constructor:///org/eobjects/analyzer/connection/UpdateableDatastoreConnectionImpl/UpdateableDatastoreConnectionImpl(org.eobjects.metamodel.UpdateableDataContext,org.eobjects.analyzer.connection.Datastore,java.io.Closeable%5B%5D)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/eobjects/analyzer/connection/JdbcDatastore/getJndiNamingContext()|",
+      "|java+constructor:///org/eobjects/analyzer/connection/DataSourceDatastoreConnection/DataSourceDatastoreConnection(javax.sql.DataSource,org.eobjects.analyzer.connection.Datastore)|",
+      "|java+method:///org/eobjects/metamodel/DataContextFactory/createJdbcDataContext(java.sql.Connection)|",
+      "|java+method:///org/eobjects/analyzer/connection/JdbcDatastore/createConnection()|",
+      "|java+method:///org/eobjects/analyzer/util/StringUtils/isNullOrEmpty(java.lang.String)|",
+      "|java+method:///javax/naming/Context/lookup(java.lang.String)|",
+      "|java+constructor:///org/eobjects/analyzer/connection/CloseableJdbcConnection/CloseableJdbcConnection(java.sql.Connection)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/lang/IllegalStateException/IllegalStateException(java.lang.Throwable)|",
+      "|java+method:///org/eobjects/metamodel/DataContextFactory/createJdbcDataContext(javax.sql.DataSource)|",
+      "|java+method:///org/eobjects/analyzer/util/StringUtils/isNullOrEmpty(java.lang.String)|",
+      "|java+constructor:///org/eobjects/analyzer/connection/UpdateableDatastoreConnectionImpl/UpdateableDatastoreConnectionImpl(org.eobjects.metamodel.UpdateableDataContext,org.eobjects.analyzer.connection.Datastore,java.io.Closeable%5B%5D)|",
+      "|java+method:///org/eobjects/analyzer/connection/JdbcDatastore/createDataSource()|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/eobjects/analyzer/connection/JdbcDatastore/getJndiNamingContext()|",
+      "|java+constructor:///org/eobjects/analyzer/connection/DataSourceDatastoreConnection/DataSourceDatastoreConnection(javax.sql.DataSource,org.eobjects.analyzer.connection.Datastore)|",
+      "|java+method:///javax/naming/Context/lookup(java.lang.String)|"
+    ],
+    "affectedLib": "org.eobjects.metamodel:MetaModel-full:2.2",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.eobjects.analyzerbeans:AnalyzerBeans-core:0.8",
+    "coordinatesV2": "org.eobjects.analyzerbeans:AnalyzerBeans-core:0.9",
+    "caller": "|java+method:///org/eobjects/analyzer/connection/XmlDatastore/createDatastoreConnection()|",
+    "called": "|java+method:///org/eobjects/metamodel/DataContextFactory/createXmlDataContext(java.io.File,boolean)|",
+    "v1Body": [
+      "|java+constructor:///org/eobjects/analyzer/connection/DatastoreConnectionImpl/DatastoreConnectionImpl(org.eobjects.metamodel.DataContext,org.eobjects.analyzer.connection.Datastore,java.io.Closeable%5B%5D)|",
+      "|java+constructor:///org/eobjects/metamodel/xml/XmlSaxDataContext/XmlSaxDataContext(java.io.File,org.eobjects.metamodel.xml.XmlSaxTableDef%5B%5D)|",
+      "|java+constructor:///java/io/File/File(java.lang.String)|",
+      "|java+method:///org/eobjects/metamodel/DataContextFactory/createXmlDataContext(java.io.File,boolean,boolean)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/eobjects/analyzer/connection/DatastoreConnectionImpl/DatastoreConnectionImpl(org.eobjects.metamodel.DataContext,org.eobjects.analyzer.connection.Datastore,java.io.Closeable%5B%5D)|",
+      "|java+constructor:///org/eobjects/metamodel/xml/XmlSaxDataContext/XmlSaxDataContext(java.io.File,org.eobjects.metamodel.xml.XmlSaxTableDef%5B%5D)|",
+      "|java+constructor:///java/io/File/File(java.lang.String)|",
+      "|java+method:///org/eobjects/metamodel/DataContextFactory/createXmlDataContext(java.io.File,boolean)|"
+    ],
+    "affectedLib": "org.eobjects.metamodel:MetaModel-full:2.2",
+    "change": "UPDATED"
+  }
+]

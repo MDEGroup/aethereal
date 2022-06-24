@@ -1,0 +1,65 @@
+[
+  {
+    "coordinatesV1": "org.apache.solr:solr-solrj:4.1.0",
+    "coordinatesV2": "org.apache.solr:solr-solrj:4.2.0",
+    "caller": "|java+method:///org/apache/solr/client/solrj/impl/HttpClientUtil/createClient(org.apache.solr.common.params.SolrParams)|",
+    "called": "|java+constructor:///org/apache/http/impl/client/SystemDefaultHttpClient/SystemDefaultHttpClient()|",
+    "v1Body": [
+      "|java+constructor:///org/apache/http/impl/client/DefaultHttpClient/DefaultHttpClient(org.apache.http.conn.ClientConnectionManager)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String)|",
+      "|java+constructor:///org/apache/solr/common/params/ModifiableSolrParams/ModifiableSolrParams(org.apache.solr.common.params.SolrParams)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///org/apache/http/impl/conn/tsccm/ThreadSafeClientConnManager/ThreadSafeClientConnManager()|",
+      "|java+method:///org/apache/solr/client/solrj/impl/HttpClientUtil/configureClient(org.apache.http.impl.client.DefaultHttpClient,org.apache.solr.common.params.SolrParams)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/solr/client/solrj/impl/HttpClientUtil/configureClient(org.apache.http.impl.client.DefaultHttpClient,org.apache.solr.common.params.SolrParams)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String)|",
+      "|java+constructor:///org/apache/solr/common/params/ModifiableSolrParams/ModifiableSolrParams(org.apache.solr.common.params.SolrParams)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///org/apache/http/impl/client/SystemDefaultHttpClient/SystemDefaultHttpClient()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "affectedLib": "org.apache.httpcomponents:httpclient:4.2.3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.solr:solr-solrj:4.1.0",
+    "coordinatesV2": "org.apache.solr:solr-solrj:4.2.0",
+    "caller": "|java+method:///org/apache/solr/client/solrj/impl/HttpClientUtil/setMaxConnections(org.apache.http.client.HttpClient,int)|",
+    "called": "|java+method:///org/apache/http/impl/conn/tsccm/ThreadSafeClientConnManager/setMaxTotal(int)|",
+    "v1Body": [
+      "|java+method:///org/apache/http/impl/conn/tsccm/ThreadSafeClientConnManager/setMaxTotal(int)|",
+      "|java+method:///org/apache/http/client/HttpClient/getConnectionManager()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/http/impl/conn/PoolingClientConnectionManager/setMaxTotal(int)|",
+      "|java+method:///org/apache/http/impl/conn/tsccm/ThreadSafeClientConnManager/setMaxTotal(int)|",
+      "|java+method:///org/apache/http/client/HttpClient/getConnectionManager()|"
+    ],
+    "affectedLib": "org.apache.httpcomponents:httpclient:4.2.3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.solr:solr-solrj:4.1.0",
+    "coordinatesV2": "org.apache.solr:solr-solrj:4.2.0",
+    "caller": "|java+method:///org/apache/solr/client/solrj/impl/HttpClientUtil/setMaxConnectionsPerHost(org.apache.http.client.HttpClient,int)|",
+    "called": "|java+method:///org/apache/http/impl/conn/tsccm/ThreadSafeClientConnManager/setDefaultMaxPerRoute(int)|",
+    "v1Body": [
+      "|java+method:///org/apache/http/impl/conn/tsccm/ThreadSafeClientConnManager/setDefaultMaxPerRoute(int)|",
+      "|java+method:///org/apache/http/client/HttpClient/getConnectionManager()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/http/impl/conn/tsccm/ThreadSafeClientConnManager/setDefaultMaxPerRoute(int)|",
+      "|java+method:///org/apache/http/impl/conn/PoolingClientConnectionManager/setDefaultMaxPerRoute(int)|",
+      "|java+method:///org/apache/http/client/HttpClient/getConnectionManager()|"
+    ],
+    "affectedLib": "org.apache.httpcomponents:httpclient:4.2.3",
+    "change": "UPDATED"
+  }
+]

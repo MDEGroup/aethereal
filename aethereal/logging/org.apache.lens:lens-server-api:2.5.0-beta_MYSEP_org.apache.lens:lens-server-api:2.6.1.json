@@ -1,0 +1,224 @@
+[
+  {
+    "coordinatesV1": "org.apache.lens:lens-server-api:2.5.0-beta",
+    "coordinatesV2": "org.apache.lens:lens-server-api:2.6.1",
+    "caller": "|java+method:///org/apache/lens/server/api/error/LensException/buildLensErrorResponse(org.apache.lens.api.error.ErrorCollection,java.lang.String,java.lang.String)|",
+    "called": "|java+method:///org/apache/lens/api/result/LensAPIResult/composedOf(java.lang.String,java.lang.String,org.apache.lens.api.result.LensErrorTO,javax.ws.rs.core.Response$StatusType)|",
+    "v1Body": [
+      "|java+method:///org/apache/lens/api/error/ErrorCollection/getLensError(int)|",
+      "|java+method:///org/apache/lens/server/api/error/LensException/buildLensErrorTO(org.apache.lens.api.error.ErrorCollection,org.apache.lens.api.error.LensError)|",
+      "|java+method:///org/apache/lens/api/error/LensError/getHttpStatusCode()|",
+      "|java+method:///org/apache/lens/server/api/error/LensException/getErrorCode()|",
+      "|java+method:///org/apache/lens/api/result/LensAPIResult/composedOf(java.lang.String,java.lang.String,org.apache.lens.api.result.LensErrorTO,javax.ws.rs.core.Response$Status)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/lens/server/api/error/LensException/getErrorCode()|",
+      "|java+method:///org/apache/lens/api/error/ErrorCollection/getLensError(int)|",
+      "|java+method:///org/apache/lens/api/error/LensError/getHttpStatusCode()|",
+      "|java+method:///org/apache/lens/server/api/error/LensException/buildLensErrorTO(org.apache.lens.api.error.ErrorCollection,org.apache.lens.api.error.LensError)|",
+      "|java+method:///org/apache/lens/api/result/LensAPIResult/composedOf(java.lang.String,java.lang.String,org.apache.lens.api.result.LensErrorTO,javax.ws.rs.core.Response$StatusType)|"
+    ],
+    "affectedLib": "org.apache.lens:lens-api:2.6.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.lens:lens-server-api:2.5.0-beta",
+    "coordinatesV2": "org.apache.lens:lens-server-api:2.6.1",
+    "caller": "|java+method:///org/apache/lens/server/api/query/constraint/MaxConcurrentDriverQueriesConstraintFactory/create(org.apache.hadoop.conf.Configuration)|",
+    "called": "|java+method:///org/apache/lens/api/util/CommonUtils/parseMapFromString(java.lang.String,org.apache.lens.api.util.CommonUtils$EntryParser)|",
+    "v1Body": [
+      "|java+method:///org/apache/lens/server/api/query/constraint/MaxConcurrentDriverQueriesConstraintFactory/create(org.apache.hadoop.conf.Configuration)|",
+      "|java+method:///org/apache/commons/lang3/StringUtils/isBlank(java.lang.CharSequence)|",
+      "|java+method:///org/apache/lens/api/util/CommonUtils/parseMapFromString(java.lang.String,org.apache.lens.api.util.CommonUtils$EntryParser)|",
+      "|java+method:///java/lang/Integer/parseInt(java.lang.String)|",
+      "|java+constructor:///org/apache/lens/server/api/query/constraint/MaxConcurrentDriverQueriesConstraint/MaxConcurrentDriverQueriesConstraint(int,java.util.Map,java.util.Map)|",
+      "|java+method:///org/apache/hadoop/conf/Configuration/get(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/lens/server/api/query/constraint/MaxConcurrentDriverQueriesConstraintFactory/create(org.apache.hadoop.conf.Configuration)|",
+      "|java+method:///org/apache/lens/api/util/CommonUtils/parseMapFromString(java.lang.String,org.apache.lens.api.util.CommonUtils$EntryParser)|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+constructor:///org/apache/lens/server/api/query/constraint/MaxConcurrentDriverQueriesConstraint/MaxConcurrentDriverQueriesConstraint(int,java.util.Map,java.util.Map,java.lang.Integer,int)|",
+      "|java+method:///org/apache/hadoop/conf/Configuration/get(java.lang.String)|",
+      "|java+method:///org/apache/hadoop/conf/Configuration/getInt(java.lang.String,int)|"
+    ],
+    "affectedLib": "org.apache.lens:lens-api:2.6.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.lens:lens-server-api:2.5.0-beta",
+    "coordinatesV2": "org.apache.lens:lens-server-api:2.6.1",
+    "caller": "|java+method:///org/apache/lens/server/api/driver/InMemoryResultSet/toQueryResult()|",
+    "called": "|java+constructor:///org/apache/lens/api/query/InMemoryQueryResult/InMemoryQueryResult(java.util.List)|",
+    "v1Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///org/apache/lens/server/api/driver/InMemoryResultSet/toQueryResult()|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///org/apache/lens/server/api/driver/InMemoryResultSet/hasNext()|",
+      "|java+constructor:///org/apache/lens/api/query/InMemoryQueryResult/InMemoryQueryResult(java.util.List)|",
+      "|java+method:///org/apache/lens/server/api/driver/InMemoryResultSet/next()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///org/apache/lens/server/api/driver/InMemoryResultSet/setFullyAccessed(boolean)|",
+      "|java+method:///org/apache/lens/server/api/driver/InMemoryResultSet/toQueryResult()|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///org/apache/lens/server/api/driver/InMemoryResultSet/hasNext()|",
+      "|java+constructor:///org/apache/lens/api/query/InMemoryQueryResult/InMemoryQueryResult(java.util.List)|",
+      "|java+method:///org/apache/lens/server/api/driver/InMemoryResultSet/next()|"
+    ],
+    "affectedLib": "org.apache.lens:lens-api:2.6.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.lens:lens-server-api:2.5.0-beta",
+    "coordinatesV2": "org.apache.lens:lens-server-api:2.6.1",
+    "caller": "|java+constructor:///org/apache/lens/server/api/query/QueryContext/QueryContext(java.lang.String,java.lang.String,org.apache.lens.api.LensConf,org.apache.hadoop.conf.Configuration,java.util.Collection,org.apache.lens.server.api.driver.LensDriver,long,boolean)|",
+    "called": "|java+constructor:///org/apache/lens/api/query/QueryHandle/QueryHandle(java.util.UUID)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/lens/api/query/QueryHandle/QueryHandle(java.util.UUID)|",
+      "|java+method:///java/util/UUID/randomUUID()|",
+      "|java+constructor:///org/apache/lens/api/query/QueryStatus/QueryStatus(double,java.lang.Integer,org.apache.lens.api.query.QueryStatus$Status,java.lang.String,boolean,java.lang.String,java.lang.String,org.apache.lens.api.result.LensErrorTO)|",
+      "|java+constructor:///org/apache/lens/server/api/driver/DriverQueryStatus/DriverQueryStatus()|",
+      "|java+constructor:///org/apache/lens/server/api/query/AbstractQueryContext/AbstractQueryContext(java.lang.String,java.lang.String,org.apache.lens.api.LensConf,org.apache.hadoop.conf.Configuration,java.util.Collection,boolean)|",
+      "|java+method:///org/apache/hadoop/conf/Configuration/getBoolean(java.lang.String,boolean)|",
+      "|java+method:///org/apache/lens/server/api/query/QueryContext/setSelectedDriver(org.apache.lens.server.api.driver.LensDriver)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/lens/api/query/QueryHandle/QueryHandle(java.util.UUID)|",
+      "|java+method:///java/util/UUID/randomUUID()|",
+      "|java+constructor:///org/apache/lens/server/api/common/FailureContext/FailureContext()|",
+      "|java+constructor:///org/apache/lens/api/query/QueryStatus/QueryStatus(double,java.lang.Integer,org.apache.lens.api.query.QueryStatus$Status,java.lang.String,boolean,java.lang.String,java.lang.String,org.apache.lens.api.result.LensErrorTO)|",
+      "|java+constructor:///org/apache/lens/server/api/driver/DriverQueryStatus/DriverQueryStatus()|",
+      "|java+constructor:///org/apache/lens/server/api/query/AbstractQueryContext/AbstractQueryContext(java.lang.String,java.lang.String,org.apache.lens.api.LensConf,org.apache.hadoop.conf.Configuration,java.util.Collection,boolean)|",
+      "|java+method:///org/apache/hadoop/conf/Configuration/getBoolean(java.lang.String,boolean)|",
+      "|java+method:///org/apache/lens/server/api/query/QueryContext/setSelectedDriver(org.apache.lens.server.api.driver.LensDriver)|"
+    ],
+    "affectedLib": "org.apache.lens:lens-api:2.6.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.lens:lens-server-api:2.5.0-beta",
+    "coordinatesV2": "org.apache.lens:lens-server-api:2.6.1",
+    "caller": "|java+method:///org/apache/lens/server/api/query/QueryContext/toLensQuery()|",
+    "called": "|java+constructor:///org/apache/lens/api/query/LensQuery/LensQuery(org.apache.lens.api.query.QueryHandle,java.lang.String,java.lang.String,org.apache.lens.api.Priority,boolean,java.lang.String,java.lang.String,org.apache.lens.api.query.QueryStatus,java.lang.String,java.lang.String,org.apache.lens.api.LensConf,long,long,long,long,long,long,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/apache/lens/server/api/query/AbstractQueryContext/getSubmittedUser()|",
+      "|java+method:///org/apache/lens/server/api/driver/LensDriver/getFullyQualifiedName()|",
+      "|java+method:///org/apache/lens/server/api/driver/DriverQueryStatus/getDriverStartTime()|",
+      "|java+method:///java/lang/Long/longValue()|",
+      "|java+method:///org/apache/lens/server/api/query/QueryContext/getSelectedDriver()|",
+      "|java+method:///org/apache/lens/server/api/driver/DriverQueryStatus/getDriverFinishTime()|",
+      "|java+method:///org/apache/lens/server/api/query/QueryContext/getSelectedDriverQuery()|",
+      "|java+constructor:///org/apache/lens/api/query/LensQuery/LensQuery(org.apache.lens.api.query.QueryHandle,java.lang.String,java.lang.String,org.apache.lens.api.Priority,boolean,java.lang.String,java.lang.String,org.apache.lens.api.query.QueryStatus,java.lang.String,java.lang.String,org.apache.lens.api.LensConf,long,long,long,long,long,long,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/lens/server/api/query/AbstractQueryContext/getSubmittedUser()|",
+      "|java+method:///org/apache/lens/server/api/driver/LensDriver/getFullyQualifiedName()|",
+      "|java+method:///org/apache/lens/server/api/driver/DriverQueryStatus/getDriverStartTime()|",
+      "|java+method:///java/lang/Long/longValue()|",
+      "|java+method:///org/apache/lens/server/api/query/QueryContext/getSelectedDriver()|",
+      "|java+method:///org/apache/lens/server/api/query/QueryContext/getPriority()|",
+      "|java+method:///org/apache/lens/server/api/driver/DriverQueryStatus/getDriverFinishTime()|",
+      "|java+method:///org/apache/lens/server/api/query/QueryContext/getSelectedDriverQuery()|",
+      "|java+constructor:///org/apache/lens/api/query/LensQuery/LensQuery(org.apache.lens.api.query.QueryHandle,java.lang.String,java.lang.String,org.apache.lens.api.Priority,boolean,java.lang.String,java.lang.String,org.apache.lens.api.query.QueryStatus,java.lang.String,java.lang.String,org.apache.lens.api.LensConf,long,long,long,long,long,long,java.lang.String)|"
+    ],
+    "affectedLib": "org.apache.lens:lens-api:2.6.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.lens:lens-server-api:2.5.0-beta",
+    "coordinatesV2": "org.apache.lens:lens-server-api:2.6.1",
+    "caller": "|java+method:///org/apache/lens/server/api/driver/LensResultSetMetadata/toQueryResultSetMetadata()|",
+    "called": "|java+constructor:///org/apache/lens/api/query/QueryResultSetMetadata/QueryResultSetMetadata(java.util.List)|",
+    "v1Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///org/apache/hive/service/cli/ColumnDescriptor/getName()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+constructor:///org/apache/lens/api/query/ResultColumn/ResultColumn(java.lang.String,java.lang.String)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/apache/hive/service/cli/ColumnDescriptor/getType()|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///org/apache/hive/service/cli/Type/getName()|",
+      "|java+constructor:///org/apache/lens/api/query/QueryResultSetMetadata/QueryResultSetMetadata(java.util.List)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///org/apache/lens/server/api/driver/LensResultSetMetadata/getColumns()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///org/apache/hive/service/cli/ColumnDescriptor/getName()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/apache/hadoop/hive/serde2/thrift/Type/getName()|",
+      "|java+constructor:///org/apache/lens/api/query/ResultColumn/ResultColumn(java.lang.String,java.lang.String)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/apache/hive/service/cli/ColumnDescriptor/getType()|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+constructor:///org/apache/lens/api/query/QueryResultSetMetadata/QueryResultSetMetadata(java.util.List)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///org/apache/lens/server/api/driver/LensResultSetMetadata/getColumns()|"
+    ],
+    "affectedLib": "org.apache.lens:lens-api:2.6.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.lens:lens-server-api:2.5.0-beta",
+    "coordinatesV2": "org.apache.lens:lens-server-api:2.6.1",
+    "caller": "|java+method:///org/apache/lens/server/api/query/FinishedLensQuery/toQueryContext(org.apache.hadoop.conf.Configuration,java.util.Collection)|",
+    "called": "|java+method:///org/apache/lens/api/query/QueryHandle/fromString(java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/lens/api/LensConf/LensConf()|",
+      "|java+constructor:///org/apache/lens/server/api/query/QueryContext/QueryContext(java.lang.String,java.lang.String,org.apache.lens.api.LensConf,org.apache.hadoop.conf.Configuration,java.util.Collection,org.apache.lens.server.api.driver.LensDriver,long,boolean)|",
+      "|java+method:///org/apache/lens/api/query/QueryHandle/fromString(java.lang.String)|",
+      "|java+method:///org/apache/lens/server/api/query/FinishedLensQuery/getResult()|",
+      "|java+method:///org/apache/lens/server/api/query/FinishedLensQuery/getDriverEndTime()|",
+      "|java+method:///org/apache/lens/server/api/driver/DriverQueryStatus/setDriverStartTime(java.lang.Long)|",
+      "|java+method:///org/apache/lens/server/api/query/FinishedLensQuery/getEndTime()|",
+      "|java+method:///org/apache/lens/server/api/query/QueryContext/setStatusSkippingTransitionTest(org.apache.lens.api.query.QueryStatus)|",
+      "|java+constructor:///org/apache/lens/api/query/QueryStatus/QueryStatus(double,java.lang.Integer,org.apache.lens.api.query.QueryStatus$Status,java.lang.String,boolean,java.lang.String,java.lang.String,org.apache.lens.api.result.LensErrorTO)|",
+      "|java+method:///org/apache/lens/server/api/query/FinishedLensQuery/getQueryName()|",
+      "|java+method:///org/apache/lens/server/api/query/FinishedLensQuery/getStatus()|",
+      "|java+method:///org/apache/lens/server/api/query/QueryContext/setEndTime(long)|",
+      "|java+method:///org/apache/lens/api/query/QueryStatus$Status/valueOf(java.lang.String)|",
+      "|java+method:///org/apache/lens/server/api/query/QueryContext/setQueryName(java.lang.String)|",
+      "|java+method:///org/apache/lens/server/api/query/QueryContext/setLaunchTime(long)|",
+      "|java+method:///org/apache/lens/server/api/query/QueryContext/setQueryHandle(org.apache.lens.api.query.QueryHandle)|",
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///org/apache/lens/server/api/query/FinishedLensQuery/getDriverFromName(java.util.Collection)|",
+      "|java+method:///org/apache/lens/server/api/query/FinishedLensQuery/getErrorMessage()|",
+      "|java+method:///org/apache/lens/server/api/query/QueryContext/getDriverStatus()|",
+      "|java+method:///org/apache/lens/server/api/query/FinishedLensQuery/getDriverStartTime()|",
+      "|java+method:///org/apache/lens/server/api/query/QueryContext/setResultSetPath(java.lang.String)|",
+      "|java+method:///org/apache/lens/server/api/driver/DriverQueryStatus/setDriverFinishTime(java.lang.Long)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/lens/server/api/query/QueryContext/QueryContext(java.lang.String,java.lang.String,org.apache.lens.api.LensConf,org.apache.hadoop.conf.Configuration,java.util.Collection,org.apache.lens.server.api.driver.LensDriver,long,boolean)|",
+      "|java+method:///org/apache/lens/api/query/QueryHandle/fromString(java.lang.String)|",
+      "|java+method:///org/apache/lens/server/api/query/FinishedLensQuery/getResult()|",
+      "|java+method:///org/apache/lens/server/api/query/FinishedLensQuery/getDriverEndTime()|",
+      "|java+method:///org/apache/lens/server/api/driver/DriverQueryStatus/setDriverStartTime(java.lang.Long)|",
+      "|java+method:///org/apache/lens/server/api/query/FinishedLensQuery/getPriority()|",
+      "|java+method:///org/apache/lens/server/api/query/FinishedLensQuery/getEndTime()|",
+      "|java+method:///org/apache/lens/server/api/query/QueryContext/setStatusSkippingTransitionTest(org.apache.lens.api.query.QueryStatus)|",
+      "|java+method:///org/apache/lens/server/api/query/FinishedLensQuery/getQueryName()|",
+      "|java+method:///org/apache/lens/server/api/query/FinishedLensQuery/getStatus()|",
+      "|java+method:///org/apache/lens/server/api/query/QueryContext/setEndTime(long)|",
+      "|java+method:///org/apache/lens/api/query/QueryStatus$Status/valueOf(java.lang.String)|",
+      "|java+method:///org/apache/lens/server/api/query/QueryContext/setQueryName(java.lang.String)|",
+      "|java+constructor:///org/apache/lens/api/LensConf/LensConf()|",
+      "|java+method:///org/apache/lens/api/Priority/valueOf(java.lang.String)|",
+      "|java+method:///org/apache/lens/server/api/query/QueryContext/setLaunchTime(long)|",
+      "|java+method:///org/apache/lens/server/api/query/QueryContext/setQueryHandle(org.apache.lens.api.query.QueryHandle)|",
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///org/apache/lens/server/api/query/FinishedLensQuery/getDriverFromName(java.util.Collection)|",
+      "|java+method:///org/apache/lens/server/api/query/FinishedLensQuery/getErrorMessage()|",
+      "|java+method:///org/apache/lens/server/api/query/QueryContext/getDriverStatus()|",
+      "|java+method:///org/apache/lens/server/api/query/FinishedLensQuery/getDriverStartTime()|",
+      "|java+method:///org/apache/lens/server/api/query/QueryContext/setPriority(org.apache.lens.api.Priority)|",
+      "|java+constructor:///org/apache/lens/api/query/QueryStatus/QueryStatus(double,java.lang.Integer,org.apache.lens.api.query.QueryStatus$Status,java.lang.String,boolean,java.lang.String,java.lang.String,org.apache.lens.api.result.LensErrorTO)|",
+      "|java+method:///org/apache/lens/server/api/query/QueryContext/setResultSetPath(java.lang.String)|",
+      "|java+method:///org/apache/lens/server/api/driver/DriverQueryStatus/setDriverFinishTime(java.lang.Long)|"
+    ],
+    "affectedLib": "org.apache.lens:lens-api:2.6.1",
+    "change": "UPDATED"
+  }
+]

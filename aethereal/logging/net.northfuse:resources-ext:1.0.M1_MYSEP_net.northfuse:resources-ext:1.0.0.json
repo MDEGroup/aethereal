@@ -1,0 +1,66 @@
+[
+  {
+    "coordinatesV1": "net.northfuse:resources-ext:1.0.M1",
+    "coordinatesV2": "net.northfuse:resources-ext:1.0.0",
+    "caller": "|java+constructor:///net/northfuse/resources/ScriptResourceHandler/ScriptResourceHandler()|",
+    "called": "|java+constructor:///org/springframework/http/MediaType/MediaType(java.lang.String,java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///net/northfuse/resources/ResourceHandler/ResourceHandler(org.springframework.http.MediaType)|",
+      "|java+constructor:///org/springframework/http/MediaType/MediaType(java.lang.String,java.lang.String)|",
+      "|java+constructor:///net/northfuse/resources/ScriptResourceHandler$1/ScriptResourceHandler$1(net.northfuse.resources.ScriptResourceHandler)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///net/northfuse/resources/ResourceHandlerImpl/ResourceHandlerImpl(org.springframework.http.MediaType)|",
+      "|java+constructor:///org/springframework/http/MediaType/MediaType(java.lang.String,java.lang.String)|",
+      "|java+constructor:///net/northfuse/resources/ScriptResourceHandler$1/ScriptResourceHandler$1(net.northfuse.resources.ScriptResourceHandler)|"
+    ],
+    "affectedLib": "org.springframework:spring-web:3.0.6.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "net.northfuse:resources-ext:1.0.M1",
+    "coordinatesV2": "net.northfuse:resources-ext:1.0.0",
+    "caller": "|java+method:///net/northfuse/resources/ResourceHandlerAdapter/handle(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.Object)|",
+    "called": "|java+constructor:///org/springframework/web/context/request/ServletWebRequest/ServletWebRequest(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+constructor:///org/springframework/web/context/request/ServletWebRequest/ServletWebRequest(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)|",
+      "|java+method:///net/northfuse/resources/ResourceHandlerAdapter/setHeaders(javax.servlet.http.HttpServletResponse,org.springframework.core.io.Resource,org.springframework.http.MediaType)|",
+      "|java+method:///net/northfuse/resources/ResourceHandlerAdapter/checkAndPrepare(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,boolean)|",
+      "|java+method:///net/northfuse/resources/ResourceHandlerAdapter/writeContent(javax.servlet.http.HttpServletResponse,org.springframework.core.io.Resource)|",
+      "|java+method:///net/northfuse/resources/ResourceHandler/aggregatedResource()|",
+      "|java+method:///org/springframework/web/context/request/ServletWebRequest/checkNotModified(long)|",
+      "|java+method:///net/northfuse/resources/ResourceHandler/getMediaType()|",
+      "|java+method:///org/springframework/core/io/Resource/lastModified()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+constructor:///org/springframework/web/context/request/ServletWebRequest/ServletWebRequest(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)|",
+      "|java+method:///org/springframework/web/context/request/ServletWebRequest/checkNotModified(long)|",
+      "|java+method:///net/northfuse/resources/ResourceHandlerAdapter/checkAndPrepare(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,boolean)|",
+      "|java+method:///net/northfuse/resources/ResourceHandlerAdapter/writeContent(javax.servlet.http.HttpServletResponse,org.springframework.core.io.Resource)|",
+      "|java+method:///net/northfuse/resources/ResourceHandlerAdapter/setHeaders(javax.servlet.http.HttpServletResponse,org.springframework.core.io.Resource,org.springframework.http.MediaType)|",
+      "|java+method:///net/northfuse/resources/ResourceHandler/getAggregatedResource()|",
+      "|java+method:///net/northfuse/resources/ResourceHandler/getMediaType()|",
+      "|java+method:///org/springframework/core/io/Resource/lastModified()|"
+    ],
+    "affectedLib": "org.springframework:spring-web:3.0.6.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "net.northfuse:resources-ext:1.0.M1",
+    "coordinatesV2": "net.northfuse:resources-ext:1.0.0",
+    "caller": "|java+constructor:///net/northfuse/resources/StyleResourceHandler/StyleResourceHandler()|",
+    "called": "|java+constructor:///org/springframework/http/MediaType/MediaType(java.lang.String,java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///net/northfuse/resources/ResourceHandler/ResourceHandler(org.springframework.http.MediaType)|",
+      "|java+constructor:///org/springframework/http/MediaType/MediaType(java.lang.String,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///net/northfuse/resources/ResourceHandlerImpl/ResourceHandlerImpl(org.springframework.http.MediaType)|",
+      "|java+constructor:///org/springframework/http/MediaType/MediaType(java.lang.String,java.lang.String)|"
+    ],
+    "affectedLib": "org.springframework:spring-web:3.0.6.RELEASE",
+    "change": "UPDATED"
+  }
+]

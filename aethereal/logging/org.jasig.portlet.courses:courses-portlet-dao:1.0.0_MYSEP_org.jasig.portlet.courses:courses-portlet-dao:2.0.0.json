@@ -1,0 +1,345 @@
+[
+  {
+    "coordinatesV1": "org.jasig.portlet.courses:courses-portlet-dao:2.0.0",
+    "coordinatesV2": "org.jasig.portlet.courses:courses-portlet-dao:1.0.0",
+    "caller": "|java+constructor:///org/jasig/portlet/courses/dao/CachingCoursesDao/CachingCoursesDao()|",
+    "called": "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "commons-logging:commons-logging:1.1.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.jasig.portlet.courses:courses-portlet-dao:1.0.0",
+    "coordinatesV2": "org.jasig.portlet.courses:courses-portlet-dao:2.0.0",
+    "caller": "|java+method:///org/jasig/portlet/courses/dao/xml/HttpClientCourseOfferingDaoImpl/getCourseOfferings(java.lang.String,java.lang.String,java.lang.String)|",
+    "called": "|java+method:///org/springframework/web/client/RestTemplate/getForObject(java.lang.String,java.lang.Class,java.util.Map)|",
+    "v1Body": [
+      "|java+method:///org/springframework/web/client/RestTemplate/getForObject(java.lang.String,java.lang.Class,java.util.Map)|",
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///net/sf/ehcache/Element/getValue()|",
+      "|java+method:///net/sf/ehcache/Cache/get(java.io.Serializable)|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+method:///java/lang/String/concat(java.lang.String)|",
+      "|java+constructor:///net/sf/ehcache/Element/Element(java.io.Serializable,java.io.Serializable)|",
+      "|java+method:///net/sf/ehcache/Cache/put(net.sf.ehcache.Element)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/springframework/web/client/RestTemplate/getForObject(java.lang.String,java.lang.Class,java.util.Map)|",
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///net/sf/ehcache/Element/getObjectValue()|",
+      "|java+method:///net/sf/ehcache/Ehcache/get(java.io.Serializable)|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+method:///java/lang/String/concat(java.lang.String)|",
+      "|java+constructor:///net/sf/ehcache/Element/Element(java.io.Serializable,java.io.Serializable)|",
+      "|java+method:///net/sf/ehcache/Ehcache/put(net.sf.ehcache.Element)|"
+    ],
+    "affectedLib": "org.springframework:spring-web:3.2.3.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jasig.portlet.courses:courses-portlet-dao:1.0.0",
+    "coordinatesV2": "org.jasig.portlet.courses:courses-portlet-dao:2.0.0",
+    "caller": "|java+method:///org/jasig/portlet/courses/dao/xml/HttpClientCourseOfferingDaoImpl/getDepartments(java.lang.String,java.lang.String)|",
+    "called": "|java+method:///org/springframework/web/client/RestTemplate/getForObject(java.lang.String,java.lang.Class,java.util.Map)|",
+    "v1Body": [
+      "|java+method:///org/springframework/web/client/RestTemplate/getForObject(java.lang.String,java.lang.Class,java.util.Map)|",
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///net/sf/ehcache/Element/getValue()|",
+      "|java+method:///net/sf/ehcache/Cache/get(java.io.Serializable)|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+method:///java/lang/String/concat(java.lang.String)|",
+      "|java+constructor:///net/sf/ehcache/Element/Element(java.io.Serializable,java.io.Serializable)|",
+      "|java+method:///net/sf/ehcache/Cache/put(net.sf.ehcache.Element)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/springframework/web/client/RestTemplate/getForObject(java.lang.String,java.lang.Class,java.util.Map)|",
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///net/sf/ehcache/Element/getObjectValue()|",
+      "|java+method:///net/sf/ehcache/Ehcache/get(java.io.Serializable)|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+method:///java/lang/String/concat(java.lang.String)|",
+      "|java+constructor:///net/sf/ehcache/Element/Element(java.io.Serializable,java.io.Serializable)|",
+      "|java+method:///net/sf/ehcache/Ehcache/put(net.sf.ehcache.Element)|"
+    ],
+    "affectedLib": "org.springframework:spring-web:3.2.3.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jasig.portlet.courses:courses-portlet-dao:1.0.0",
+    "coordinatesV2": "org.jasig.portlet.courses:courses-portlet-dao:2.0.0",
+    "caller": "|java+method:///org/jasig/portlet/courses/dao/xml/HttpClientCourseOfferingDaoImpl/getTerms(java.lang.String)|",
+    "called": "|java+method:///org/springframework/web/client/RestTemplate/getForObject(java.lang.String,java.lang.Class,java.util.Map)|",
+    "v1Body": [
+      "|java+method:///org/springframework/web/client/RestTemplate/getForObject(java.lang.String,java.lang.Class,java.util.Map)|",
+      "|java+method:///net/sf/ehcache/Element/getValue()|",
+      "|java+method:///net/sf/ehcache/Cache/get(java.io.Serializable)|",
+      "|java+constructor:///net/sf/ehcache/Element/Element(java.io.Serializable,java.io.Serializable)|",
+      "|java+method:///net/sf/ehcache/Cache/put(net.sf.ehcache.Element)|",
+      "|java+method:///java/lang/String/concat(java.lang.String)|",
+      "|java+method:///java/util/Collections/singletonMap(java.lang.Object,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/springframework/web/client/RestTemplate/getForObject(java.lang.String,java.lang.Class,java.util.Map)|",
+      "|java+method:///net/sf/ehcache/Element/getObjectValue()|",
+      "|java+method:///net/sf/ehcache/Ehcache/get(java.io.Serializable)|",
+      "|java+constructor:///net/sf/ehcache/Element/Element(java.io.Serializable,java.io.Serializable)|",
+      "|java+method:///net/sf/ehcache/Ehcache/put(net.sf.ehcache.Element)|",
+      "|java+method:///java/lang/String/concat(java.lang.String)|",
+      "|java+method:///java/util/Collections/singletonMap(java.lang.Object,java.lang.Object)|"
+    ],
+    "affectedLib": "org.springframework:spring-web:3.2.3.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jasig.portlet.courses:courses-portlet-dao:1.0.0",
+    "coordinatesV2": "org.jasig.portlet.courses:courses-portlet-dao:2.0.0",
+    "caller": "|java+method:///org/jasig/portlet/courses/dao/xml/HttpClientCourseOfferingDaoImpl/getSchools()|",
+    "called": "|java+method:///org/springframework/web/client/RestTemplate/getForObject(java.lang.String,java.lang.Class,java.lang.Object%5B%5D)|",
+    "v1Body": [
+      "|java+method:///net/sf/ehcache/Element/getValue()|",
+      "|java+method:///net/sf/ehcache/Cache/get(java.io.Serializable)|",
+      "|java+method:///org/springframework/web/client/RestTemplate/getForObject(java.lang.String,java.lang.Class,java.lang.Object%5B%5D)|",
+      "|java+constructor:///net/sf/ehcache/Element/Element(java.io.Serializable,java.io.Serializable)|",
+      "|java+method:///net/sf/ehcache/Cache/put(net.sf.ehcache.Element)|"
+    ],
+    "v2Body": [
+      "|java+method:///net/sf/ehcache/Element/getObjectValue()|",
+      "|java+method:///net/sf/ehcache/Ehcache/get(java.io.Serializable)|",
+      "|java+method:///org/springframework/web/client/RestTemplate/getForObject(java.lang.String,java.lang.Class,java.lang.Object%5B%5D)|",
+      "|java+constructor:///net/sf/ehcache/Element/Element(java.io.Serializable,java.io.Serializable)|",
+      "|java+method:///net/sf/ehcache/Ehcache/put(net.sf.ehcache.Element)|"
+    ],
+    "affectedLib": "org.springframework:spring-web:3.2.3.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jasig.portlet.courses:courses-portlet-dao:1.0.0",
+    "coordinatesV2": "org.jasig.portlet.courses:courses-portlet-dao:2.0.0",
+    "caller": "|java+method:///org/jasig/portlet/courses/dao/MergingCoursesDaoImpl/mergeCourse(org.jasig.portlet.courses.model.xml.personal.Course,org.jasig.portlet.courses.model.xml.personal.Course)|",
+    "called": "|java+method:///org/jasig/portlet/courses/model/xml/personal/Course/getCourseUpdates()|",
+    "v1Body": [
+      "|java+method:///org/jasig/portlet/courses/model/xml/personal/Course/getInstructors()|",
+      "|java+method:///org/jasig/portlet/courses/model/xml/personal/Course/getGrade()|",
+      "|java+method:///org/jasig/portlet/courses/model/xml/personal/Course/getTitle()|",
+      "|java+method:///org/jasig/portlet/courses/model/xml/personal/Course/getCredits()|",
+      "|java+method:///java/util/List/addAll(java.util.Collection)|",
+      "|java+method:///org/jasig/portlet/courses/model/xml/personal/Course/setUrl(java.lang.String)|",
+      "|java+method:///org/jasig/portlet/courses/model/xml/personal/Course/getCourseMeetings()|",
+      "|java+method:///org/jasig/portlet/courses/model/xml/personal/Course/getSchool()|",
+      "|java+method:///org/jasig/portlet/courses/model/xml/personal/Course/setGrade(java.lang.String)|",
+      "|java+method:///org/jasig/portlet/courses/model/xml/personal/Course/setTitle(java.lang.String)|",
+      "|java+method:///org/jasig/portlet/courses/model/xml/personal/Course/setCredits(java.lang.Double)|",
+      "|java+method:///org/jasig/portlet/courses/model/xml/personal/Course/setSchool(java.lang.String)|",
+      "|java+method:///org/jasig/portlet/courses/model/xml/personal/Course/getUrl()|",
+      "|java+method:///org/jasig/portlet/courses/model/xml/personal/Course/getCourseUpdates()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/jasig/portlet/courses/model/xml/personal/Course/getCourseUpdates()|",
+      "|java+method:///org/jasig/portlet/courses/model/xml/personal/Course/getInstructors()|",
+      "|java+method:///org/jasig/portlet/courses/model/xml/personal/Course/getGrade()|",
+      "|java+method:///org/jasig/portlet/courses/model/xml/personal/Course/getTitle()|",
+      "|java+method:///org/jasig/portlet/courses/model/xml/personal/Course/getCredits()|",
+      "|java+method:///java/util/List/addAll(java.util.Collection)|",
+      "|java+method:///org/jasig/portlet/courses/model/xml/personal/Course/getCourseMeetings()|",
+      "|java+method:///org/jasig/portlet/courses/model/xml/personal/Course/getSchool()|",
+      "|java+method:///org/jasig/portlet/courses/model/xml/personal/Course/setGrade(java.lang.String)|",
+      "|java+method:///org/jasig/portlet/courses/model/xml/personal/Course/setTitle(java.lang.String)|",
+      "|java+method:///org/jasig/portlet/courses/model/xml/personal/Course/setCredits(java.lang.Double)|",
+      "|java+method:///org/jasig/portlet/courses/model/xml/personal/Course/setSchool(java.lang.String)|"
+    ],
+    "affectedLib": "org.jasig.portlet.courses:courses-portlet-api:2.0.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jasig.portlet.courses:courses-portlet-dao:1.0.0",
+    "coordinatesV2": "org.jasig.portlet.courses:courses-portlet-dao:2.0.0",
+    "caller": "|java+method:///org/jasig/portlet/courses/dao/xml/HttpClientCourseOfferingDaoImpl/getDepartment(java.lang.String,java.lang.String,java.lang.String)|",
+    "called": "|java+method:///org/jasig/portlet/courses/model/catalog/xml/DepartmentList/getDepartments()|",
+    "v1Body": [
+      "|java+method:///org/jasig/portlet/courses/model/catalog/xml/Department/getCode()|",
+      "|java+method:///org/jasig/portlet/courses/dao/xml/HttpClientCourseOfferingDaoImpl/getDepartments(java.lang.String,java.lang.String)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///org/jasig/portlet/courses/model/catalog/xml/DepartmentList/getDepartments()|",
+      "|java+method:///java/util/Iterator/hasNext()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/jasig/portlet/courses/dao/xml/HttpClientCourseOfferingDaoImpl/getDepartments(java.lang.String,java.lang.String)|",
+      "|java+method:///org/jasig/portlet/courses/model/xml/Department/getCode()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///org/jasig/portlet/courses/model/catalog/xml/DepartmentList/getDepartments()|",
+      "|java+method:///java/util/Iterator/hasNext()|"
+    ],
+    "affectedLib": "org.jasig.portlet.courses:courses-portlet-api:2.0.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jasig.portlet.courses:courses-portlet-dao:1.0.0",
+    "coordinatesV2": "org.jasig.portlet.courses:courses-portlet-dao:2.0.0",
+    "caller": "|java+method:///org/jasig/portlet/courses/dao/xml/HttpClientCourseOfferingDaoImpl/getCurrentTerm(java.lang.String)|",
+    "called": "|java+method:///org/jasig/portlet/courses/model/xml/Term/isCurrent()|",
+    "v1Body": [
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/jasig/portlet/courses/model/xml/TermList/getTerms()|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///java/lang/Boolean/booleanValue()|",
+      "|java+method:///org/jasig/portlet/courses/dao/xml/HttpClientCourseOfferingDaoImpl/getTerms(java.lang.String)|",
+      "|java+method:///org/jasig/portlet/courses/model/xml/Term/getCurrent()|",
+      "|java+method:///java/util/List/get(int)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/jasig/portlet/courses/model/xml/TermList/getTerms()|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///org/jasig/portlet/courses/model/xml/Term/isCurrent()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/jasig/portlet/courses/dao/xml/HttpClientCourseOfferingDaoImpl/getTerms(java.lang.String)|",
+      "|java+method:///java/util/List/get(int)|"
+    ],
+    "affectedLib": "org.jasig.portlet.courses:courses-portlet-api:2.0.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jasig.portlet.courses:courses-portlet-dao:1.0.0",
+    "coordinatesV2": "org.jasig.portlet.courses:courses-portlet-dao:2.0.0",
+    "caller": "|java+method:///org/jasig/portlet/courses/dao/xml/HttpClientCourseOfferingDaoImpl/getCourseSectionOffering(java.lang.String,java.lang.String,java.lang.String)|",
+    "called": "|java+method:///org/jasig/portlet/courses/model/catalog/xml/FullCourseOffering/getCourseSections()|",
+    "v1Body": [
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///org/jasig/portlet/courses/dao/xml/HttpClientCourseOfferingDaoImpl/getCourseOffering(java.lang.String,java.lang.String)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///org/jasig/portlet/courses/model/catalog/xml/CourseSection/getCode()|",
+      "|java+method:///org/jasig/portlet/courses/model/catalog/xml/FullCourseOffering/getCourseSections()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///org/jasig/portlet/courses/dao/xml/HttpClientCourseOfferingDaoImpl/getCourseOffering(java.lang.String,java.lang.String)|",
+      "|java+method:///org/jasig/portlet/courses/model/catalog/xml/FullCourseOffering/getCourseSections()|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/jasig/portlet/courses/model/xml/CourseSection/getCode()|"
+    ],
+    "affectedLib": "org.jasig.portlet.courses:courses-portlet-api:2.0.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jasig.portlet.courses:courses-portlet-dao:1.0.0",
+    "coordinatesV2": "org.jasig.portlet.courses:courses-portlet-dao:2.0.0",
+    "caller": "|java+method:///org/jasig/portlet/courses/dao/xml/HttpClientCourseOfferingDaoImpl/getCourseOfferings(java.lang.String,java.lang.String,java.lang.String)|",
+    "called": "|java+constructor:///net/sf/ehcache/Element/Element(java.io.Serializable,java.io.Serializable)|",
+    "v1Body": [
+      "|java+method:///org/springframework/web/client/RestTemplate/getForObject(java.lang.String,java.lang.Class,java.util.Map)|",
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///net/sf/ehcache/Element/getValue()|",
+      "|java+method:///net/sf/ehcache/Cache/get(java.io.Serializable)|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+method:///java/lang/String/concat(java.lang.String)|",
+      "|java+constructor:///net/sf/ehcache/Element/Element(java.io.Serializable,java.io.Serializable)|",
+      "|java+method:///net/sf/ehcache/Cache/put(net.sf.ehcache.Element)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/springframework/web/client/RestTemplate/getForObject(java.lang.String,java.lang.Class,java.util.Map)|",
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///net/sf/ehcache/Element/getObjectValue()|",
+      "|java+method:///net/sf/ehcache/Ehcache/get(java.io.Serializable)|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+method:///java/lang/String/concat(java.lang.String)|",
+      "|java+constructor:///net/sf/ehcache/Element/Element(java.io.Serializable,java.io.Serializable)|",
+      "|java+method:///net/sf/ehcache/Ehcache/put(net.sf.ehcache.Element)|"
+    ],
+    "affectedLib": "net.sf.ehcache:ehcache-core:2.6.5",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jasig.portlet.courses:courses-portlet-dao:1.0.0",
+    "coordinatesV2": "org.jasig.portlet.courses:courses-portlet-dao:2.0.0",
+    "caller": "|java+method:///org/jasig/portlet/courses/dao/xml/HttpClientCourseOfferingDaoImpl/getDepartments(java.lang.String,java.lang.String)|",
+    "called": "|java+constructor:///net/sf/ehcache/Element/Element(java.io.Serializable,java.io.Serializable)|",
+    "v1Body": [
+      "|java+method:///org/springframework/web/client/RestTemplate/getForObject(java.lang.String,java.lang.Class,java.util.Map)|",
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///net/sf/ehcache/Element/getValue()|",
+      "|java+method:///net/sf/ehcache/Cache/get(java.io.Serializable)|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+method:///java/lang/String/concat(java.lang.String)|",
+      "|java+constructor:///net/sf/ehcache/Element/Element(java.io.Serializable,java.io.Serializable)|",
+      "|java+method:///net/sf/ehcache/Cache/put(net.sf.ehcache.Element)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/springframework/web/client/RestTemplate/getForObject(java.lang.String,java.lang.Class,java.util.Map)|",
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///net/sf/ehcache/Element/getObjectValue()|",
+      "|java+method:///net/sf/ehcache/Ehcache/get(java.io.Serializable)|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+method:///java/lang/String/concat(java.lang.String)|",
+      "|java+constructor:///net/sf/ehcache/Element/Element(java.io.Serializable,java.io.Serializable)|",
+      "|java+method:///net/sf/ehcache/Ehcache/put(net.sf.ehcache.Element)|"
+    ],
+    "affectedLib": "net.sf.ehcache:ehcache-core:2.6.5",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jasig.portlet.courses:courses-portlet-dao:1.0.0",
+    "coordinatesV2": "org.jasig.portlet.courses:courses-portlet-dao:2.0.0",
+    "caller": "|java+method:///org/jasig/portlet/courses/dao/xml/HttpClientCourseOfferingDaoImpl/getTerms(java.lang.String)|",
+    "called": "|java+constructor:///net/sf/ehcache/Element/Element(java.io.Serializable,java.io.Serializable)|",
+    "v1Body": [
+      "|java+method:///org/springframework/web/client/RestTemplate/getForObject(java.lang.String,java.lang.Class,java.util.Map)|",
+      "|java+method:///net/sf/ehcache/Element/getValue()|",
+      "|java+method:///net/sf/ehcache/Cache/get(java.io.Serializable)|",
+      "|java+constructor:///net/sf/ehcache/Element/Element(java.io.Serializable,java.io.Serializable)|",
+      "|java+method:///net/sf/ehcache/Cache/put(net.sf.ehcache.Element)|",
+      "|java+method:///java/lang/String/concat(java.lang.String)|",
+      "|java+method:///java/util/Collections/singletonMap(java.lang.Object,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/springframework/web/client/RestTemplate/getForObject(java.lang.String,java.lang.Class,java.util.Map)|",
+      "|java+method:///net/sf/ehcache/Element/getObjectValue()|",
+      "|java+method:///net/sf/ehcache/Ehcache/get(java.io.Serializable)|",
+      "|java+constructor:///net/sf/ehcache/Element/Element(java.io.Serializable,java.io.Serializable)|",
+      "|java+method:///net/sf/ehcache/Ehcache/put(net.sf.ehcache.Element)|",
+      "|java+method:///java/lang/String/concat(java.lang.String)|",
+      "|java+method:///java/util/Collections/singletonMap(java.lang.Object,java.lang.Object)|"
+    ],
+    "affectedLib": "net.sf.ehcache:ehcache-core:2.6.5",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jasig.portlet.courses:courses-portlet-dao:1.0.0",
+    "coordinatesV2": "org.jasig.portlet.courses:courses-portlet-dao:2.0.0",
+    "caller": "|java+method:///org/jasig/portlet/courses/dao/xml/HttpClientCourseOfferingDaoImpl/getSchools()|",
+    "called": "|java+constructor:///net/sf/ehcache/Element/Element(java.io.Serializable,java.io.Serializable)|",
+    "v1Body": [
+      "|java+method:///net/sf/ehcache/Element/getValue()|",
+      "|java+method:///net/sf/ehcache/Cache/get(java.io.Serializable)|",
+      "|java+method:///org/springframework/web/client/RestTemplate/getForObject(java.lang.String,java.lang.Class,java.lang.Object%5B%5D)|",
+      "|java+constructor:///net/sf/ehcache/Element/Element(java.io.Serializable,java.io.Serializable)|",
+      "|java+method:///net/sf/ehcache/Cache/put(net.sf.ehcache.Element)|"
+    ],
+    "v2Body": [
+      "|java+method:///net/sf/ehcache/Element/getObjectValue()|",
+      "|java+method:///net/sf/ehcache/Ehcache/get(java.io.Serializable)|",
+      "|java+method:///org/springframework/web/client/RestTemplate/getForObject(java.lang.String,java.lang.Class,java.lang.Object%5B%5D)|",
+      "|java+constructor:///net/sf/ehcache/Element/Element(java.io.Serializable,java.io.Serializable)|",
+      "|java+method:///net/sf/ehcache/Ehcache/put(net.sf.ehcache.Element)|"
+    ],
+    "affectedLib": "net.sf.ehcache:ehcache-core:2.6.5",
+    "change": "UPDATED"
+  }
+]

@@ -1,0 +1,113 @@
+[
+  {
+    "coordinatesV1": "org.sonatype.nexus.client:nexus-client-core:2.4.0-09",
+    "coordinatesV2": "org.sonatype.nexus.client:nexus-client-core:2.3.0",
+    "caller": "|java+method:///org/sonatype/nexus/client/internal/rest/jersey/subsystem/JerseyContent/download(org.sonatype.nexus.client.core.subsystem.content.Location,java.io.File)|",
+    "called": "|java+method:///com/google/common/base/Preconditions/checkState(boolean,java.lang.String,java.lang.Object%5B%5D)|",
+    "v1Body": [
+      "|java+method:///java/io/File/canWrite()|",
+      "|java+method:///java/io/File/isDirectory()|",
+      "|java+method:///com/sun/jersey/api/client/WebResource$Builder/get(java.lang.Class)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/sonatype/nexus/client/rest/jersey/JerseyNexusClient/convert(com.sun.jersey.api.client.ClientHandlerException)|",
+      "|java+method:///org/sonatype/nexus/client/rest/jersey/JerseyNexusClient/uri(java.lang.String)|",
+      "|java+method:///org/sonatype/nexus/client/core/subsystem/content/Location/toContentPath()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/io/File/getAbsolutePath()|",
+      "|java+constructor:///org/sonatype/nexus/client/internal/rest/jersey/subsystem/JerseyContent$1/JerseyContent$1(org.sonatype.nexus.client.internal.rest.jersey.subsystem.JerseyContent,com.sun.jersey.api.client.ClientResponse,org.sonatype.nexus.client.core.subsystem.content.Location)|",
+      "|java+method:///java/io/File/mkdirs()|",
+      "|java+method:///java/io/File/isFile()|",
+      "|java+method:///org/codehaus/plexus/util/IOUtil/close(java.io.OutputStream)|",
+      "|java+constructor:///java/io/FileOutputStream/FileOutputStream(java.io.File)|",
+      "|java+method:///com/sun/jersey/api/client/ClientResponse/getClientResponseStatus()|",
+      "|java+method:///com/sun/jersey/api/client/ClientResponse$Status/equals(java.lang.Object)|",
+      "|java+method:///java/io/File/exists()|",
+      "|java+method:///com/sun/jersey/api/client/ClientResponse/getEntityInputStream()|",
+      "|java+method:///com/sun/jersey/api/client/ClientResponse/close()|",
+      "|java+method:///org/codehaus/plexus/util/IOUtil/copy(java.io.InputStream,java.io.OutputStream)|",
+      "|java+method:///org/sonatype/nexus/client/internal/rest/jersey/subsystem/JerseyContent/getNexusClient()|",
+      "|java+method:///com/google/common/base/Preconditions/checkState(boolean,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/sonatype/nexus/client/rest/jersey/JerseyNexusClient/convert(com.sun.jersey.api.client.UniformInterfaceException)|",
+      "|java+method:///java/io/File/getParentFile()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/sonatype/nexus/client/internal/rest/jersey/subsystem/JerseyContent/toUri(org.sonatype.nexus.client.core.subsystem.content.Location,org.sonatype.nexus.client.core.subsystem.content.Content$Directive)|",
+      "|java+method:///org/sonatype/nexus/client/internal/rest/jersey/subsystem/JerseyContent/download(org.sonatype.nexus.client.core.subsystem.content.Location,java.lang.String,java.io.File)|"
+    ],
+    "affectedLib": "com.google.guava:guava:13.0.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.sonatype.nexus.client:nexus-client-core:2.4.0-09",
+    "coordinatesV2": "org.sonatype.nexus.client:nexus-client-core:2.3.0",
+    "caller": "|java+method:///org/sonatype/nexus/client/internal/rest/jersey/subsystem/JerseyContent/download(org.sonatype.nexus.client.core.subsystem.content.Location,java.io.File)|",
+    "called": "|java+method:///org/codehaus/plexus/util/IOUtil/copy(java.io.InputStream,java.io.OutputStream)|",
+    "v1Body": [
+      "|java+method:///java/io/File/canWrite()|",
+      "|java+method:///java/io/File/isDirectory()|",
+      "|java+method:///com/sun/jersey/api/client/WebResource$Builder/get(java.lang.Class)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/sonatype/nexus/client/rest/jersey/JerseyNexusClient/convert(com.sun.jersey.api.client.ClientHandlerException)|",
+      "|java+method:///org/sonatype/nexus/client/rest/jersey/JerseyNexusClient/uri(java.lang.String)|",
+      "|java+method:///org/sonatype/nexus/client/core/subsystem/content/Location/toContentPath()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/io/File/getAbsolutePath()|",
+      "|java+constructor:///org/sonatype/nexus/client/internal/rest/jersey/subsystem/JerseyContent$1/JerseyContent$1(org.sonatype.nexus.client.internal.rest.jersey.subsystem.JerseyContent,com.sun.jersey.api.client.ClientResponse,org.sonatype.nexus.client.core.subsystem.content.Location)|",
+      "|java+method:///java/io/File/mkdirs()|",
+      "|java+method:///java/io/File/isFile()|",
+      "|java+method:///org/codehaus/plexus/util/IOUtil/close(java.io.OutputStream)|",
+      "|java+constructor:///java/io/FileOutputStream/FileOutputStream(java.io.File)|",
+      "|java+method:///com/sun/jersey/api/client/ClientResponse/getClientResponseStatus()|",
+      "|java+method:///com/sun/jersey/api/client/ClientResponse$Status/equals(java.lang.Object)|",
+      "|java+method:///java/io/File/exists()|",
+      "|java+method:///com/sun/jersey/api/client/ClientResponse/getEntityInputStream()|",
+      "|java+method:///com/sun/jersey/api/client/ClientResponse/close()|",
+      "|java+method:///org/codehaus/plexus/util/IOUtil/copy(java.io.InputStream,java.io.OutputStream)|",
+      "|java+method:///org/sonatype/nexus/client/internal/rest/jersey/subsystem/JerseyContent/getNexusClient()|",
+      "|java+method:///com/google/common/base/Preconditions/checkState(boolean,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/sonatype/nexus/client/rest/jersey/JerseyNexusClient/convert(com.sun.jersey.api.client.UniformInterfaceException)|",
+      "|java+method:///java/io/File/getParentFile()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/sonatype/nexus/client/internal/rest/jersey/subsystem/JerseyContent/toUri(org.sonatype.nexus.client.core.subsystem.content.Location,org.sonatype.nexus.client.core.subsystem.content.Content$Directive)|",
+      "|java+method:///org/sonatype/nexus/client/internal/rest/jersey/subsystem/JerseyContent/download(org.sonatype.nexus.client.core.subsystem.content.Location,java.lang.String,java.io.File)|"
+    ],
+    "affectedLib": "org.codehaus.plexus:plexus-utils:3.0.8",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.sonatype.nexus.client:nexus-client-core:2.3.0",
+    "coordinatesV2": "org.sonatype.nexus.client:nexus-client-core:2.4.0-09",
+    "caller": "|java+method:///org/sonatype/nexus/client/internal/rest/jersey/subsystem/security/JerseyUser/doCreate()|",
+    "called": "|java+constructor:///org/sonatype/security/rest/model/UserResourceRequest/UserResourceRequest()|",
+    "v1Body": [
+      "|java+method:///org/sonatype/nexus/client/internal/rest/jersey/subsystem/security/JerseyUser/doCreate()|",
+      "|java+method:///org/sonatype/nexus/client/rest/jersey/JerseyNexusClient/serviceResource(java.lang.String)|",
+      "|java+method:///org/sonatype/nexus/client/rest/jersey/JerseyNexusClient/convert(com.sun.jersey.api.client.ClientHandlerException)|",
+      "|java+constructor:///org/sonatype/security/rest/model/UserResourceRequest/UserResourceRequest()|",
+      "|java+method:///org/sonatype/nexus/client/internal/rest/jersey/subsystem/security/JerseyUser/getNexusClient()|",
+      "|java+method:///org/sonatype/security/rest/model/UserResourceResponse/getData()|",
+      "|java+method:///com/sun/jersey/api/client/WebResource$Builder/post(java.lang.Class,java.lang.Object)|",
+      "|java+method:///org/sonatype/nexus/client/rest/jersey/JerseyNexusClient/convert(com.sun.jersey.api.client.UniformInterfaceException)|",
+      "|java+method:///org/sonatype/security/rest/model/UserResourceRequest/setData(org.sonatype.security.rest.model.UserResource)|",
+      "|java+method:///org/sonatype/nexus/client/internal/rest/jersey/subsystem/security/JerseyUser/settings()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/sonatype/nexus/client/internal/rest/jersey/subsystem/security/JerseyUser/doCreate()|",
+      "|java+method:///org/sonatype/nexus/client/rest/jersey/JerseyNexusClient/serviceResource(java.lang.String)|",
+      "|java+method:///org/sonatype/security/rest/model/UserResource/setPassword(java.lang.String)|",
+      "|java+method:///org/sonatype/nexus/client/rest/jersey/JerseyNexusClient/convert(com.sun.jersey.api.client.ClientHandlerException)|",
+      "|java+constructor:///org/sonatype/security/rest/model/UserResourceRequest/UserResourceRequest()|",
+      "|java+method:///org/sonatype/nexus/client/internal/rest/jersey/subsystem/security/JerseyUser/getNexusClient()|",
+      "|java+method:///org/sonatype/security/rest/model/UserResourceResponse/getData()|",
+      "|java+method:///com/sun/jersey/api/client/WebResource$Builder/post(java.lang.Class,java.lang.Object)|",
+      "|java+method:///org/sonatype/nexus/client/rest/jersey/JerseyNexusClient/convert(com.sun.jersey.api.client.UniformInterfaceException)|",
+      "|java+method:///org/sonatype/security/rest/model/UserResourceRequest/setData(org.sonatype.security.rest.model.UserResource)|",
+      "|java+method:///org/sonatype/nexus/client/internal/rest/jersey/subsystem/security/JerseyUser/settings()|"
+    ],
+    "affectedLib": "org.sonatype.nexus.plugins:nexus-restlet1x-model:2.4.0-09",
+    "change": "UPDATED"
+  }
+]

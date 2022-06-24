@@ -1,0 +1,39 @@
+[
+  {
+    "coordinatesV1": "sk.seges.acris:acris-security-openid:1.1.0",
+    "coordinatesV2": "sk.seges.acris:acris-security-openid:1.1.1",
+    "caller": "|java+method:///sk/seges/acris/security/client/presenter/LoginPresenter/doLogin(sk.seges.acris.security.shared.user_management.domain.api.LoginToken,com.google.gwt.user.client.rpc.AsyncCallback)|",
+    "called": "|java+constructor:///sk/seges/acris/security/shared/user_management/service/UserServiceBroadcaster$BroadcastingException/UserServiceBroadcaster$BroadcastingException(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///sk/seges/acris/security/shared/user_management/service/UserServiceBroadcaster/login(sk.seges.acris.security.shared.user_management.domain.api.LoginToken,com.google.gwt.user.client.rpc.AsyncCallback)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/gwt/user/client/rpc/AsyncCallback/onFailure(java.lang.Throwable)|",
+      "|java+constructor:///sk/seges/acris/security/shared/user_management/service/UserServiceBroadcaster$BroadcastingException/UserServiceBroadcaster$BroadcastingException(java.lang.String)|",
+      "|java+method:///java/lang/String/isEmpty()|",
+      "|java+method:///sk/seges/acris/security/shared/user_management/service/IUserServiceAsync/login(sk.seges.acris.security.shared.user_management.domain.api.LoginToken,com.google.gwt.user.client.rpc.AsyncCallback)|",
+      "|java+method:///sk/seges/acris/security/shared/user_management/service/IUserServiceAsync/authenticate(sk.seges.acris.security.shared.user_management.domain.api.LoginToken,com.google.gwt.user.client.rpc.AsyncCallback)|"
+    ],
+    "affectedLib": "sk.seges.acris:acris-security-core:1.1.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "sk.seges.acris:acris-security-openid:1.1.0",
+    "coordinatesV2": "sk.seges.acris:acris-security-openid:1.1.1",
+    "caller": "|java+method:///sk/seges/acris/security/client/presenter/OpenIDLoginPresenter/authenticate(java.lang.String)|",
+    "called": "|java+method:///sk/seges/acris/security/shared/util/LoginUtils/getLoginModule()|",
+    "v1Body": [
+      "|java+method:///sk/seges/acris/security/shared/IOpenIDConsumerServiceAsync/authenticate(java.lang.String,java.lang.String,com.google.gwt.user.client.rpc.AsyncCallback)|",
+      "|java+constructor:///sk/seges/acris/security/client/presenter/OpenIDLoginPresenter$1/OpenIDLoginPresenter$1(sk.seges.acris.security.client.presenter.OpenIDLoginPresenter)|",
+      "|java+method:///sk/seges/acris/security/client/presenter/OpenIDLoginPresenter/getModuleUrl()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///sk/seges/acris/security/client/presenter/OpenIDLoginPresenter$4/OpenIDLoginPresenter$4(sk.seges.acris.security.client.presenter.OpenIDLoginPresenter)|",
+      "|java+method:///sk/seges/acris/security/shared/util/LoginUtils/getLoginModule()|",
+      "|java+method:///sk/seges/acris/security/shared/service/IOpenIDConsumerServiceAsync/authenticate(java.lang.String,java.lang.String,java.lang.String,com.google.gwt.user.client.rpc.AsyncCallback)|",
+      "|java+method:///sk/seges/acris/security/client/presenter/OpenIDLoginPresenter/getModuleURL()|"
+    ],
+    "affectedLib": "sk.seges.acris:acris-security-core:1.1.1",
+    "change": "UPDATED"
+  }
+]

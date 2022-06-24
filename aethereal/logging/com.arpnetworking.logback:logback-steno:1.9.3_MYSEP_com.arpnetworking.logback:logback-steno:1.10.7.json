@@ -1,0 +1,106 @@
+[
+  {
+    "coordinatesV1": "com.arpnetworking.logback:logback-steno:1.9.3",
+    "coordinatesV2": "com.arpnetworking.logback:logback-steno:1.10.7",
+    "caller": "|java+method:///com/arpnetworking/logback/StenoEncoder/setRedactNull(boolean)|",
+    "called": "|java+constructor:///com/fasterxml/jackson/databind/ser/impl/SimpleFilterProvider/SimpleFilterProvider()|",
+    "v1Body": [
+      "|java+constructor:///com/arpnetworking/logback/jackson/RedactionFilter/RedactionFilter(boolean)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/setFilters(com.fasterxml.jackson.databind.ser.FilterProvider)|",
+      "|java+method:///com/fasterxml/jackson/databind/ser/impl/SimpleFilterProvider/addFilter(java.lang.String,com.fasterxml.jackson.databind.ser.impl.SimpleBeanPropertyFilter)|",
+      "|java+constructor:///com/fasterxml/jackson/databind/ser/impl/SimpleFilterProvider/SimpleFilterProvider()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/arpnetworking/logback/jackson/RedactionFilter/RedactionFilter(boolean)|",
+      "|java+method:///com/fasterxml/jackson/databind/ser/impl/SimpleFilterProvider/addFilter(java.lang.String,com.fasterxml.jackson.databind.ser.impl.SimpleBeanPropertyFilter)|",
+      "|java+constructor:///com/fasterxml/jackson/databind/ser/impl/SimpleFilterProvider/SimpleFilterProvider()|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/setFilterProvider(com.fasterxml.jackson.databind.ser.FilterProvider)|"
+    ],
+    "affectedLib": "com.fasterxml.jackson.core:jackson-databind:2.6.3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.arpnetworking.logback:logback-steno:1.9.3",
+    "coordinatesV2": "com.arpnetworking.logback:logback-steno:1.10.7",
+    "caller": "|java+method:///com/arpnetworking/logback/StenoEncoder/setRedactEnabled(boolean)|",
+    "called": "|java+constructor:///com/fasterxml/jackson/databind/ser/impl/SimpleFilterProvider/SimpleFilterProvider()|",
+    "v1Body": [
+      "|java+constructor:///com/arpnetworking/logback/jackson/RedactionFilter/RedactionFilter(boolean)|",
+      "|java+method:///java/util/Collections/emptySet()|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/setFilters(com.fasterxml.jackson.databind.ser.FilterProvider)|",
+      "|java+method:///com/fasterxml/jackson/databind/ser/impl/SimpleFilterProvider/addFilter(java.lang.String,com.fasterxml.jackson.databind.ser.impl.SimpleBeanPropertyFilter)|",
+      "|java+constructor:///com/fasterxml/jackson/databind/ser/impl/SimpleFilterProvider/SimpleFilterProvider()|",
+      "|java+method:///com/fasterxml/jackson/databind/ser/impl/SimpleBeanPropertyFilter/serializeAllExcept(java.util.Set)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/arpnetworking/logback/jackson/RedactionFilter/RedactionFilter(boolean)|",
+      "|java+method:///java/util/Collections/emptySet()|",
+      "|java+method:///com/fasterxml/jackson/databind/ser/impl/SimpleFilterProvider/addFilter(java.lang.String,com.fasterxml.jackson.databind.ser.impl.SimpleBeanPropertyFilter)|",
+      "|java+constructor:///com/fasterxml/jackson/databind/ser/impl/SimpleFilterProvider/SimpleFilterProvider()|",
+      "|java+method:///com/fasterxml/jackson/databind/ser/impl/SimpleBeanPropertyFilter/serializeAllExcept(java.util.Set)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/setFilterProvider(com.fasterxml.jackson.databind.ser.FilterProvider)|"
+    ],
+    "affectedLib": "com.fasterxml.jackson.core:jackson-databind:2.6.3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.arpnetworking.logback:logback-steno:1.9.3",
+    "coordinatesV2": "com.arpnetworking.logback:logback-steno:1.10.7",
+    "caller": "|java+constructor:///com/arpnetworking/logback/StenoEncoder/StenoEncoder(com.fasterxml.jackson.core.JsonFactory,com.fasterxml.jackson.databind.ObjectMapper)|",
+    "called": "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/setDateFormat(java.text.DateFormat)|",
+    "v1Body": [
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/registerModule(com.fasterxml.jackson.databind.Module)|",
+      "|java+method:///com/fasterxml/jackson/databind/module/SimpleModule/setSerializerModifier(com.fasterxml.jackson.databind.ser.BeanSerializerModifier)|",
+      "|java+constructor:///com/arpnetworking/logback/serialization/steno/ObjectAsJsonSerialziationStrategy/ObjectAsJsonSerialziationStrategy(com.arpnetworking.logback.StenoEncoder,com.fasterxml.jackson.core.JsonFactory,com.fasterxml.jackson.databind.ObjectMapper)|",
+      "|java+constructor:///java/util/LinkedHashSet/LinkedHashSet()|",
+      "|java+constructor:///com/fasterxml/jackson/databind/module/SimpleModule/SimpleModule()|",
+      "|java+method:///com/fasterxml/jackson/databind/ser/impl/SimpleFilterProvider/addFilter(java.lang.String,com.fasterxml.jackson.databind.ser.impl.SimpleBeanPropertyFilter)|",
+      "|java+constructor:///com/arpnetworking/logback/jackson/StenoAnnotationIntrospector/StenoAnnotationIntrospector()|",
+      "|java+constructor:///com/fasterxml/jackson/databind/util/ISO8601DateFormat/ISO8601DateFormat()|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/setDateFormat(java.text.DateFormat)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/setAnnotationIntrospector(com.fasterxml.jackson.databind.AnnotationIntrospector)|",
+      "|java+constructor:///com/arpnetworking/logback/serialization/steno/ArrayOfJsonSerialziationStrategy/ArrayOfJsonSerialziationStrategy(com.arpnetworking.logback.StenoEncoder,com.fasterxml.jackson.core.JsonFactory,com.fasterxml.jackson.databind.ObjectMapper)|",
+      "|java+constructor:///com/arpnetworking/logback/serialization/steno/ListsSerialziationStrategy/ListsSerialziationStrategy(com.arpnetworking.logback.StenoEncoder,com.fasterxml.jackson.core.JsonFactory,com.fasterxml.jackson.databind.ObjectMapper)|",
+      "|java+constructor:///com/arpnetworking/logback/serialization/steno/MapOfJsonSerialziationStrategy/MapOfJsonSerialziationStrategy(com.arpnetworking.logback.StenoEncoder,com.fasterxml.jackson.core.JsonFactory,com.fasterxml.jackson.databind.ObjectMapper)|",
+      "|java+constructor:///com/arpnetworking/logback/serialization/steno/MapSerialziationStrategy/MapSerialziationStrategy(com.arpnetworking.logback.StenoEncoder,com.fasterxml.jackson.core.JsonFactory,com.fasterxml.jackson.databind.ObjectMapper)|",
+      "|java+constructor:///com/arpnetworking/logback/serialization/steno/ArraySerialziationStrategy/ArraySerialziationStrategy(com.arpnetworking.logback.StenoEncoder,com.fasterxml.jackson.core.JsonFactory,com.fasterxml.jackson.databind.ObjectMapper)|",
+      "|java+constructor:///com/arpnetworking/logback/jackson/RedactionFilter/RedactionFilter(boolean)|",
+      "|java+constructor:///com/arpnetworking/logback/jackson/StenoBeanSerializerModifier/StenoBeanSerializerModifier(com.arpnetworking.logback.StenoEncoder)|",
+      "|java+constructor:///com/arpnetworking/logback/BaseLoggingEncoder/BaseLoggingEncoder()|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/setFilters(com.fasterxml.jackson.databind.ser.FilterProvider)|",
+      "|java+constructor:///com/fasterxml/jackson/module/afterburner/AfterburnerModule/AfterburnerModule()|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/disable(com.fasterxml.jackson.databind.SerializationFeature)|",
+      "|java+constructor:///com/fasterxml/jackson/databind/ser/impl/SimpleFilterProvider/SimpleFilterProvider()|",
+      "|java+constructor:///com/arpnetworking/logback/serialization/steno/StandardSerializationStrategy/StandardSerializationStrategy(com.arpnetworking.logback.StenoEncoder,com.fasterxml.jackson.core.JsonFactory,com.fasterxml.jackson.databind.ObjectMapper)|",
+      "|java+constructor:///com/arpnetworking/logback/serialization/steno/ObjectSerialziationStrategy/ObjectSerialziationStrategy(com.arpnetworking.logback.StenoEncoder,com.fasterxml.jackson.core.JsonFactory,com.fasterxml.jackson.databind.ObjectMapper)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/registerModule(com.fasterxml.jackson.databind.Module)|",
+      "|java+method:///com/fasterxml/jackson/databind/module/SimpleModule/setSerializerModifier(com.fasterxml.jackson.databind.ser.BeanSerializerModifier)|",
+      "|java+constructor:///com/arpnetworking/logback/serialization/steno/ObjectAsJsonSerialziationStrategy/ObjectAsJsonSerialziationStrategy(com.arpnetworking.logback.StenoEncoder,com.fasterxml.jackson.core.JsonFactory,com.fasterxml.jackson.databind.ObjectMapper)|",
+      "|java+constructor:///java/util/LinkedHashSet/LinkedHashSet()|",
+      "|java+constructor:///com/fasterxml/jackson/module/afterburner/AfterburnerModule/AfterburnerModule()|",
+      "|java+constructor:///com/fasterxml/jackson/databind/module/SimpleModule/SimpleModule()|",
+      "|java+method:///com/fasterxml/jackson/databind/ser/impl/SimpleFilterProvider/addFilter(java.lang.String,com.fasterxml.jackson.databind.ser.impl.SimpleBeanPropertyFilter)|",
+      "|java+constructor:///com/arpnetworking/logback/jackson/StenoAnnotationIntrospector/StenoAnnotationIntrospector()|",
+      "|java+constructor:///com/fasterxml/jackson/databind/util/ISO8601DateFormat/ISO8601DateFormat()|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/setDateFormat(java.text.DateFormat)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/setFilterProvider(com.fasterxml.jackson.databind.ser.FilterProvider)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/setAnnotationIntrospector(com.fasterxml.jackson.databind.AnnotationIntrospector)|",
+      "|java+constructor:///com/arpnetworking/logback/serialization/steno/ArrayOfJsonSerialziationStrategy/ArrayOfJsonSerialziationStrategy(com.arpnetworking.logback.StenoEncoder,com.fasterxml.jackson.core.JsonFactory,com.fasterxml.jackson.databind.ObjectMapper)|",
+      "|java+constructor:///com/arpnetworking/logback/serialization/steno/ListsSerialziationStrategy/ListsSerialziationStrategy(com.arpnetworking.logback.StenoEncoder,com.fasterxml.jackson.core.JsonFactory,com.fasterxml.jackson.databind.ObjectMapper)|",
+      "|java+constructor:///com/arpnetworking/logback/serialization/steno/MapOfJsonSerialziationStrategy/MapOfJsonSerialziationStrategy(com.arpnetworking.logback.StenoEncoder,com.fasterxml.jackson.core.JsonFactory,com.fasterxml.jackson.databind.ObjectMapper)|",
+      "|java+constructor:///com/arpnetworking/logback/serialization/steno/MapSerialziationStrategy/MapSerialziationStrategy(com.arpnetworking.logback.StenoEncoder,com.fasterxml.jackson.core.JsonFactory,com.fasterxml.jackson.databind.ObjectMapper)|",
+      "|java+constructor:///com/arpnetworking/logback/serialization/steno/ArraySerialziationStrategy/ArraySerialziationStrategy(com.arpnetworking.logback.StenoEncoder,com.fasterxml.jackson.core.JsonFactory,com.fasterxml.jackson.databind.ObjectMapper)|",
+      "|java+constructor:///com/arpnetworking/logback/jackson/RedactionFilter/RedactionFilter(boolean)|",
+      "|java+constructor:///com/arpnetworking/logback/jackson/StenoBeanSerializerModifier/StenoBeanSerializerModifier(com.arpnetworking.logback.StenoEncoder)|",
+      "|java+constructor:///com/arpnetworking/logback/BaseLoggingEncoder/BaseLoggingEncoder()|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/disable(com.fasterxml.jackson.databind.SerializationFeature)|",
+      "|java+constructor:///com/fasterxml/jackson/databind/ser/impl/SimpleFilterProvider/SimpleFilterProvider()|",
+      "|java+constructor:///com/arpnetworking/logback/serialization/steno/StandardSerializationStrategy/StandardSerializationStrategy(com.arpnetworking.logback.StenoEncoder,com.fasterxml.jackson.core.JsonFactory,com.fasterxml.jackson.databind.ObjectMapper)|",
+      "|java+constructor:///com/arpnetworking/logback/serialization/steno/ObjectSerialziationStrategy/ObjectSerialziationStrategy(com.arpnetworking.logback.StenoEncoder,com.fasterxml.jackson.core.JsonFactory,com.fasterxml.jackson.databind.ObjectMapper)|"
+    ],
+    "affectedLib": "com.fasterxml.jackson.core:jackson-databind:2.6.3",
+    "change": "UPDATED"
+  }
+]

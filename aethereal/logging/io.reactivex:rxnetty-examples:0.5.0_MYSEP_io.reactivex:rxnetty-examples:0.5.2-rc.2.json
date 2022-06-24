@@ -1,0 +1,94 @@
+[
+  {
+    "coordinatesV1": "io.reactivex:rxnetty-examples:0.5.2-rc.2",
+    "coordinatesV2": "io.reactivex:rxnetty-examples:0.5.0",
+    "caller": "|java+initializer:///io/reactivex/netty/examples/ExamplesEnvironment/ExamplesEnvironment$initializer|",
+    "called": "|java+constructor:///io/reactivex/netty/servo/ServoEventsListenerFactory/ServoEventsListenerFactory(java.lang.String,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///io/reactivex/netty/RxNetty/useMetricListenersFactory(io.reactivex.netty.metrics.MetricEventsListenerFactory)|",
+      "|java+constructor:///io/reactivex/netty/servo/ServoEventsListenerFactory/ServoEventsListenerFactory(java.lang.String,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/util/concurrent/ConcurrentHashMap/ConcurrentHashMap()|"
+    ],
+    "affectedLib": "io.reactivex:rxnetty-servo:0.5.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "io.reactivex:rxnetty-examples:0.5.0",
+    "coordinatesV2": "io.reactivex:rxnetty-examples:0.5.2-rc.2",
+    "caller": "|java+method:///io/reactivex/netty/examples/http/helloworld/HelloWorldClient/main(java.lang.String%5B%5D)|",
+    "called": "|java+method:///io/reactivex/netty/protocol/http/client/HttpClient/newClient(java.net.SocketAddress)|",
+    "v1Body": [
+      "|java+method:///java/io/PrintStream/println(java.lang.String)|",
+      "|java+method:///java/lang/Integer/parseInt(java.lang.String)|",
+      "|java+constructor:///io/reactivex/netty/examples/http/helloworld/HelloWorldClient/HelloWorldClient(int)|",
+      "|java+method:///io/reactivex/netty/examples/http/helloworld/HelloWorldClient/sendHelloRequest()|"
+    ],
+    "v2Body": [
+      "|java+method:///io/reactivex/netty/protocol/http/client/HttpClient/createGet(java.lang.String)|",
+      "|java+method:///rx/Observable/flatMap(rx.functions.Func1)|",
+      "|java+method:///io/reactivex/netty/examples/ExamplesEnvironment/getServerAddress(java.lang.Class,java.lang.String%5B%5D)|",
+      "|java+method:///rx/Observable/toBlocking()|",
+      "|java+method:///io/reactivex/netty/examples/ExamplesEnvironment/newEnvironment(java.lang.Class)|",
+      "|java+method:///io/reactivex/netty/protocol/http/client/HttpClient/newClient(java.net.SocketAddress)|",
+      "|java+method:///rx/observables/BlockingObservable/forEach(rx.functions.Action1)|",
+      "|java+method:///io/reactivex/netty/protocol/http/client/HttpClientRequest/doOnNext(rx.functions.Action1)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///io/reactivex/netty/protocol/http/client/HttpClient/enableWireLogging(io.netty.handler.logging.LogLevel)|",
+      "|java+method:///io/reactivex/netty/examples/ExamplesEnvironment/getLogger()|"
+    ],
+    "affectedLib": "io.reactivex:rxnetty-http:0.5.2-rc.2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "io.reactivex:rxnetty-examples:0.5.0",
+    "coordinatesV2": "io.reactivex:rxnetty-examples:0.5.2-rc.2",
+    "caller": "|java+method:///io/reactivex/netty/examples/http/helloworld/HelloWorldServer/main(java.lang.String%5B%5D)|",
+    "called": "|java+method:///io/reactivex/netty/protocol/http/server/HttpServer/newServer()|",
+    "v1Body": [
+      "|java+method:///java/io/PrintStream/println(java.lang.String)|",
+      "|java+method:///io/reactivex/netty/protocol/http/server/HttpServer/startAndWait()|",
+      "|java+constructor:///io/reactivex/netty/examples/http/helloworld/HelloWorldServer/HelloWorldServer(int)|",
+      "|java+method:///io/reactivex/netty/examples/http/helloworld/HelloWorldServer/createServer()|"
+    ],
+    "v2Body": [
+      "|java+method:///io/reactivex/netty/examples/ExamplesEnvironment/registerServerAddress(java.net.SocketAddress)|",
+      "|java+method:///io/reactivex/netty/protocol/http/server/HttpServer/getServerAddress()|",
+      "|java+method:///io/reactivex/netty/examples/ExamplesEnvironment/shouldWaitForShutdown(java.lang.String%5B%5D)|",
+      "|java+method:///io/reactivex/netty/protocol/http/server/HttpServer/newServer()|",
+      "|java+method:///io/reactivex/netty/examples/ExamplesEnvironment/newEnvironment(java.lang.Class)|",
+      "|java+method:///io/reactivex/netty/protocol/http/server/HttpServer/awaitShutdown()|",
+      "|java+method:///io/reactivex/netty/protocol/http/server/HttpServer/start(io.reactivex.netty.protocol.http.server.RequestHandler)|"
+    ],
+    "affectedLib": "io.reactivex:rxnetty-http:0.5.2-rc.2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "io.reactivex:rxnetty-examples:0.5.0",
+    "coordinatesV2": "io.reactivex:rxnetty-examples:0.5.2-rc.2",
+    "caller": "|java+method:///io/reactivex/netty/examples/http/helloworld/HelloWorldClient/main(java.lang.String%5B%5D)|",
+    "called": "|java+method:///rx/Observable/toBlocking()|",
+    "v1Body": [
+      "|java+method:///java/io/PrintStream/println(java.lang.String)|",
+      "|java+method:///java/lang/Integer/parseInt(java.lang.String)|",
+      "|java+constructor:///io/reactivex/netty/examples/http/helloworld/HelloWorldClient/HelloWorldClient(int)|",
+      "|java+method:///io/reactivex/netty/examples/http/helloworld/HelloWorldClient/sendHelloRequest()|"
+    ],
+    "v2Body": [
+      "|java+method:///io/reactivex/netty/protocol/http/client/HttpClient/createGet(java.lang.String)|",
+      "|java+method:///rx/Observable/flatMap(rx.functions.Func1)|",
+      "|java+method:///io/reactivex/netty/examples/ExamplesEnvironment/getServerAddress(java.lang.Class,java.lang.String%5B%5D)|",
+      "|java+method:///rx/Observable/toBlocking()|",
+      "|java+method:///io/reactivex/netty/examples/ExamplesEnvironment/newEnvironment(java.lang.Class)|",
+      "|java+method:///io/reactivex/netty/protocol/http/client/HttpClient/newClient(java.net.SocketAddress)|",
+      "|java+method:///rx/observables/BlockingObservable/forEach(rx.functions.Action1)|",
+      "|java+method:///io/reactivex/netty/protocol/http/client/HttpClientRequest/doOnNext(rx.functions.Action1)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///io/reactivex/netty/protocol/http/client/HttpClient/enableWireLogging(io.netty.handler.logging.LogLevel)|",
+      "|java+method:///io/reactivex/netty/examples/ExamplesEnvironment/getLogger()|"
+    ],
+    "affectedLib": "io.reactivex:rxjava:1.1.5",
+    "change": "UPDATED"
+  }
+]

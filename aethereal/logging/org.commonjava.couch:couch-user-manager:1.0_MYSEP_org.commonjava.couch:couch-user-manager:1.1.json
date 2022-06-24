@@ -1,0 +1,571 @@
+[
+  {
+    "coordinatesV1": "org.commonjava.couch:couch-user-manager:1.0",
+    "coordinatesV2": "org.commonjava.couch:couch-user-manager:1.1",
+    "caller": "|java+method:///org/commonjava/auth/couch/data/UserDataManager/createRole(java.lang.String,java.util.Collection)|",
+    "called": "|java+constructor:///org/commonjava/couch/rbac/Role/Role(java.lang.String,java.util.Collection)|",
+    "v1Body": [
+      "|java+method:///org/commonjava/auth/couch/data/UserDataManager/storeRole(org.commonjava.auth.couch.model.Role,boolean)|",
+      "|java+constructor:///org/commonjava/auth/couch/model/Role/Role(java.lang.String,java.util.Collection)|",
+      "|java+method:///org/commonjava/auth/couch/data/UserDataManager/getRole(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/commonjava/couch/rbac/Role/Role(java.lang.String,java.util.Collection)|",
+      "|java+method:///org/commonjava/auth/couch/data/UserDataManager/storeRole(org.commonjava.couch.rbac.Role,boolean)|",
+      "|java+method:///org/commonjava/auth/couch/data/UserDataManager/getRole(java.lang.String)|"
+    ],
+    "affectedLib": "org.commonjava.couch:rbac-api:1.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.commonjava.couch:couch-user-manager:1.0",
+    "coordinatesV2": "org.commonjava.couch:couch-user-manager:1.1",
+    "caller": "|java+method:///org/commonjava/auth/couch/data/UserDataManager/setupAdminInformation()|",
+    "called": "|java+constructor:///org/commonjava/couch/rbac/Role/Role(java.lang.String,org.commonjava.couch.rbac.Permission%5B%5D)|",
+    "v1Body": [
+      "|java+method:///org/commonjava/auth/couch/model/Role/addPermission(java.lang.String)|",
+      "|java+constructor:///org/commonjava/auth/couch/model/Permission/Permission(java.lang.String,java.lang.String%5B%5D)|",
+      "|java+constructor:///org/commonjava/auth/couch/model/Role/Role(java.lang.String,org.commonjava.auth.couch.model.Permission%5B%5D)|",
+      "|java+method:///org/commonjava/auth/couch/conf/UserManagerConfiguration/createInitialAdminUser(org.commonjava.auth.couch.data.PasswordManager)|",
+      "|java+method:///org/commonjava/auth/couch/data/UserDataManager/storePermission(org.commonjava.auth.couch.model.Permission)|",
+      "|java+method:///org/commonjava/auth/couch/model/User/addRole(java.lang.String)|",
+      "|java+method:///org/commonjava/auth/couch/data/UserDataManager/storeUser(org.commonjava.auth.couch.model.User,boolean)|",
+      "|java+method:///org/commonjava/auth/couch/data/UserDataManager/storeRole(org.commonjava.auth.couch.model.Role,boolean)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/commonjava/couch/rbac/Role/Role(java.lang.String,org.commonjava.couch.rbac.Permission%5B%5D)|",
+      "|java+method:///org/commonjava/auth/couch/data/UserDataManager/storePermission(org.commonjava.couch.rbac.Permission)|",
+      "|java+method:///org/commonjava/couch/rbac/User/addRole(java.lang.String)|",
+      "|java+method:///org/commonjava/auth/couch/conf/UserManagerConfiguration/createInitialAdminUser(org.commonjava.auth.couch.data.PasswordManager)|",
+      "|java+method:///org/commonjava/couch/rbac/Role/addPermission(java.lang.String)|",
+      "|java+constructor:///org/commonjava/couch/rbac/Permission/Permission(java.lang.String,java.lang.String%5B%5D)|",
+      "|java+method:///org/commonjava/auth/couch/data/UserDataManager/storeUser(org.commonjava.couch.rbac.User,boolean)|",
+      "|java+method:///org/commonjava/auth/couch/data/UserDataManager/storeRole(org.commonjava.couch.rbac.Role,boolean)|"
+    ],
+    "affectedLib": "org.commonjava.couch:rbac-api:1.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.commonjava.couch:couch-user-manager:1.0",
+    "coordinatesV2": "org.commonjava.couch:couch-user-manager:1.1",
+    "caller": "|java+method:///org/commonjava/auth/couch/conf/DefaultUserManagerConfig/createInitialAdminUser(org.commonjava.auth.couch.data.PasswordManager)|",
+    "called": "|java+constructor:///org/commonjava/couch/rbac/User/User(java.lang.String,org.commonjava.couch.rbac.Role%5B%5D)|",
+    "v1Body": [
+      "|java+constructor:///org/commonjava/auth/couch/model/User/User(java.lang.String,org.commonjava.auth.couch.model.Role%5B%5D)|",
+      "|java+method:///org/commonjava/auth/couch/data/PasswordManager/digestPassword(java.lang.String)|",
+      "|java+method:///org/commonjava/auth/couch/model/User/setPasswordDigest(java.lang.String)|",
+      "|java+method:///org/commonjava/auth/couch/model/User/setLastName(java.lang.String)|",
+      "|java+method:///org/commonjava/auth/couch/model/User/setFirstName(java.lang.String)|",
+      "|java+method:///org/commonjava/auth/couch/model/User/setEmail(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/commonjava/couch/rbac/User/User(java.lang.String,org.commonjava.couch.rbac.Role%5B%5D)|",
+      "|java+method:///org/commonjava/auth/couch/data/PasswordManager/digestPassword(java.lang.String)|",
+      "|java+method:///org/commonjava/couch/rbac/User/setFirstName(java.lang.String)|",
+      "|java+method:///org/commonjava/couch/rbac/User/setEmail(java.lang.String)|",
+      "|java+method:///org/commonjava/couch/rbac/User/setPasswordDigest(java.lang.String)|",
+      "|java+method:///org/commonjava/couch/rbac/User/setLastName(java.lang.String)|"
+    ],
+    "affectedLib": "org.commonjava.couch:rbac-api:1.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.commonjava.couch:couch-user-manager:1.0",
+    "coordinatesV2": "org.commonjava.couch:couch-user-manager:1.1",
+    "caller": "|java+method:///org/commonjava/auth/couch/data/UserDataManager/createPermissions(java.lang.String,java.lang.String,java.lang.String%5B%5D)|",
+    "called": "|java+constructor:///org/commonjava/couch/rbac/Permission/Permission(java.lang.String,java.lang.String%5B%5D)|",
+    "v1Body": [
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///org/commonjava/auth/couch/model/Permission/Permission(java.lang.String,java.lang.String%5B%5D)|",
+      "|java+method:///org/commonjava/auth/couch/data/UserDataManager/getPermission(java.lang.String)|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+method:///org/commonjava/auth/couch/model/Permission/getName()|",
+      "|java+method:///org/commonjava/auth/couch/data/UserDataManager/storePermission(org.commonjava.auth.couch.model.Permission)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/commonjava/couch/rbac/Permission/getName()|",
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/commonjava/auth/couch/data/UserDataManager/storePermission(org.commonjava.couch.rbac.Permission)|",
+      "|java+method:///org/commonjava/auth/couch/data/UserDataManager/getPermission(java.lang.String)|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+constructor:///org/commonjava/couch/rbac/Permission/Permission(java.lang.String,java.lang.String%5B%5D)|"
+    ],
+    "affectedLib": "org.commonjava.couch:rbac-api:1.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.commonjava.couch:couch-user-manager:1.0",
+    "coordinatesV2": "org.commonjava.couch:couch-user-manager:1.1",
+    "caller": "|java+method:///org/commonjava/auth/couch/data/UserDataManager/getAllUsers()|",
+    "called": "|java+method:///org/commonjava/couch/db/CouchManager/getViewListing(org.commonjava.couch.db.model.ViewRequest,java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/commonjava/couch/db/CouchDBException/getMessage()|",
+      "|java+constructor:///org/commonjava/auth/couch/data/UserViewRequest/UserViewRequest(org.commonjava.auth.couch.conf.UserManagerConfiguration,org.commonjava.auth.couch.data.UserAppDescription$View)|",
+      "|java+constructor:///java/util/HashSet/HashSet(java.util.Collection)|",
+      "|java+constructor:///org/commonjava/auth/couch/data/UserDataException/UserDataException(java.lang.String,java.lang.Throwable,java.lang.Object%5B%5D)|",
+      "|java+method:///org/commonjava/couch/db/CouchManager/getViewListing(org.commonjava.couch.db.model.ViewRequest,java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/commonjava/couch/db/CouchDBException/getMessage()|",
+      "|java+method:///org/commonjava/auth/couch/model/UserDoc/toUserSet(java.util.List)|",
+      "|java+constructor:///org/commonjava/auth/couch/data/UserViewRequest/UserViewRequest(org.commonjava.auth.couch.conf.UserManagerConfiguration,org.commonjava.auth.couch.data.UserAppDescription$View)|",
+      "|java+constructor:///org/commonjava/auth/couch/data/UserDataException/UserDataException(java.lang.String,java.lang.Throwable,java.lang.Object%5B%5D)|",
+      "|java+method:///org/commonjava/couch/db/CouchManager/getViewListing(org.commonjava.couch.db.model.ViewRequest,java.lang.Class)|"
+    ],
+    "affectedLib": "org.commonjava.couch:couch-app-support:1.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.commonjava.couch:couch-user-manager:1.0",
+    "coordinatesV2": "org.commonjava.couch:couch-user-manager:1.1",
+    "caller": "|java+method:///org/commonjava/auth/couch/data/UserDataManager/deletePermission(java.lang.String)|",
+    "called": "|java+constructor:///org/commonjava/couch/model/CouchDocRef/CouchDocRef(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/commonjava/couch/db/CouchDBException/getMessage()|",
+      "|java+constructor:///org/commonjava/couch/model/CouchDocRef/CouchDocRef(java.lang.String)|",
+      "|java+constructor:///org/commonjava/auth/couch/data/UserDataException/UserDataException(java.lang.String,java.lang.Throwable,java.lang.Object%5B%5D)|",
+      "|java+method:///org/commonjava/couch/db/CouchManager/delete(org.commonjava.couch.model.CouchDocument)|",
+      "|java+method:///org/commonjava/couch/util/IdUtils/namespaceId(java.lang.String,java.lang.String)|",
+      "|java+method:///org/commonjava/auth/couch/data/UserDataManager/fireDeleteEvent(org.commonjava.auth.couch.change.event.UserManagerDeleteEvent$Type,java.lang.String%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/commonjava/couch/db/CouchDBException/getMessage()|",
+      "|java+constructor:///org/commonjava/couch/model/CouchDocRef/CouchDocRef(java.lang.String)|",
+      "|java+method:///org/commonjava/couch/db/CouchManager/delete(org.commonjava.couch.model.CouchDocument)|",
+      "|java+method:///org/commonjava/auth/couch/data/UserDataManager/fireDeleteEvent(org.commonjava.auth.couch.change.event.UserManagerDeleteEvent$Type,java.lang.String%5B%5D)|",
+      "|java+method:///org/commonjava/couch/util/IdUtils/namespaceId(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+constructor:///org/commonjava/auth/couch/data/UserDataException/UserDataException(java.lang.String,java.lang.Throwable,java.lang.Object%5B%5D)|"
+    ],
+    "affectedLib": "org.commonjava.couch:couch-app-support:1.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.commonjava.couch:couch-user-manager:1.0",
+    "coordinatesV2": "org.commonjava.couch:couch-user-manager:1.1",
+    "caller": "|java+method:///org/commonjava/auth/couch/change/PermissionDeletionListener/documentChanged(org.commonjava.couch.change.CouchDocChange)|",
+    "called": "|java+method:///org/commonjava/couch/util/ChangeSynchronizer/setChanged()|",
+    "v1Body": [
+      "|java+method:///org/commonjava/util/logging/Logger/error(java.lang.String,java.lang.Throwable,java.lang.Object%5B%5D)|",
+      "|java+method:///org/commonjava/auth/couch/data/UserDataManager/storeRoles(java.util.Collection)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/commonjava/couch/util/IdUtils/nonNamespaceId(java.lang.String,java.lang.String)|",
+      "|java+method:///org/commonjava/auth/couch/model/Role/removePermission(java.lang.String)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/Set/iterator()|",
+      "|java+method:///org/commonjava/auth/couch/data/UserDataManager/getRolesForPermission(java.lang.String)|",
+      "|java+method:///org/commonjava/couch/change/CouchDocChange/getId()|",
+      "|java+method:///org/commonjava/couch/util/ChangeSynchronizer/setChanged()|",
+      "|java+method:///org/commonjava/auth/couch/data/UserDataException/getMessage()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/commonjava/couch/util/IdUtils/nonNamespaceId(java.lang.String,java.lang.String)|",
+      "|java+method:///org/commonjava/couch/change/CouchDocChange/getId()|",
+      "|java+method:///org/commonjava/couch/util/ChangeSynchronizer/setChanged()|",
+      "|java+method:///org/commonjava/auth/couch/change/PermissionDeletionListener/processRemoved(java.lang.String)|"
+    ],
+    "affectedLib": "org.commonjava.couch:couch-app-support:1.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.commonjava.couch:couch-user-manager:1.0",
+    "coordinatesV2": "org.commonjava.couch:couch-user-manager:1.1",
+    "caller": "|java+method:///org/commonjava/auth/couch/data/UserDataManager/storeUsers(java.util.Collection)|",
+    "called": "|java+method:///org/commonjava/couch/db/CouchManager/store(java.util.Collection,boolean,boolean)|",
+    "v1Body": [
+      "|java+method:///org/commonjava/couch/db/CouchDBException/getMessage()|",
+      "|java+method:///org/commonjava/auth/couch/data/UserDataManager/fireUserEvent(org.commonjava.auth.couch.change.event.UpdateType,java.util.Collection)|",
+      "|java+constructor:///org/commonjava/auth/couch/data/UserDataException/UserDataException(java.lang.String,java.lang.Throwable,java.lang.Object%5B%5D)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///java/util/Collection/size()|",
+      "|java+method:///org/commonjava/couch/db/CouchManager/store(java.util.Collection,boolean,boolean)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/commonjava/couch/db/CouchDBException/getMessage()|",
+      "|java+method:///org/commonjava/auth/couch/model/UserDoc/toDocuments(java.util.Collection)|",
+      "|java+method:///org/commonjava/auth/couch/data/UserDataManager/fireUserEvent(org.commonjava.auth.couch.change.event.UpdateType,java.util.Collection)|",
+      "|java+constructor:///org/commonjava/auth/couch/data/UserDataException/UserDataException(java.lang.String,java.lang.Throwable,java.lang.Object%5B%5D)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///java/util/Collection/size()|",
+      "|java+method:///org/commonjava/couch/db/CouchManager/store(java.util.Collection,boolean,boolean)|"
+    ],
+    "affectedLib": "org.commonjava.couch:couch-app-support:1.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.commonjava.couch:couch-user-manager:1.0",
+    "coordinatesV2": "org.commonjava.couch:couch-user-manager:1.1",
+    "caller": "|java+method:///org/commonjava/auth/couch/data/UserDataManager/getAllRoles()|",
+    "called": "|java+method:///org/commonjava/couch/db/CouchManager/getViewListing(org.commonjava.couch.db.model.ViewRequest,java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/commonjava/couch/db/CouchDBException/getMessage()|",
+      "|java+constructor:///org/commonjava/auth/couch/data/UserViewRequest/UserViewRequest(org.commonjava.auth.couch.conf.UserManagerConfiguration,org.commonjava.auth.couch.data.UserAppDescription$View)|",
+      "|java+constructor:///java/util/HashSet/HashSet(java.util.Collection)|",
+      "|java+constructor:///org/commonjava/auth/couch/data/UserDataException/UserDataException(java.lang.String,java.lang.Throwable,java.lang.Object%5B%5D)|",
+      "|java+method:///org/commonjava/couch/db/CouchManager/getViewListing(org.commonjava.couch.db.model.ViewRequest,java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/commonjava/couch/db/CouchDBException/getMessage()|",
+      "|java+method:///org/commonjava/auth/couch/model/RoleDoc/toRoleSet(java.util.List)|",
+      "|java+constructor:///org/commonjava/auth/couch/data/UserViewRequest/UserViewRequest(org.commonjava.auth.couch.conf.UserManagerConfiguration,org.commonjava.auth.couch.data.UserAppDescription$View)|",
+      "|java+constructor:///org/commonjava/auth/couch/data/UserDataException/UserDataException(java.lang.String,java.lang.Throwable,java.lang.Object%5B%5D)|",
+      "|java+method:///org/commonjava/couch/db/CouchManager/getViewListing(org.commonjava.couch.db.model.ViewRequest,java.lang.Class)|"
+    ],
+    "affectedLib": "org.commonjava.couch:couch-app-support:1.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.commonjava.couch:couch-user-manager:1.0",
+    "coordinatesV2": "org.commonjava.couch:couch-user-manager:1.1",
+    "caller": "|java+method:///org/commonjava/auth/couch/data/UserDataManager/getRolesForPermission(java.lang.String)|",
+    "called": "|java+method:///org/commonjava/couch/db/CouchManager/getViewListing(org.commonjava.couch.db.model.ViewRequest,java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/commonjava/couch/db/CouchDBException/getMessage()|",
+      "|java+method:///org/commonjava/auth/couch/data/UserViewRequest/setParameter(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+constructor:///org/commonjava/auth/couch/data/UserViewRequest/UserViewRequest(org.commonjava.auth.couch.conf.UserManagerConfiguration,org.commonjava.auth.couch.data.UserAppDescription$View)|",
+      "|java+constructor:///java/util/HashSet/HashSet(java.util.Collection)|",
+      "|java+constructor:///org/commonjava/auth/couch/data/UserDataException/UserDataException(java.lang.String,java.lang.Throwable,java.lang.Object%5B%5D)|",
+      "|java+method:///org/commonjava/couch/db/CouchManager/getViewListing(org.commonjava.couch.db.model.ViewRequest,java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/commonjava/couch/db/CouchDBException/getMessage()|",
+      "|java+method:///org/commonjava/auth/couch/data/UserViewRequest/setParameter(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///org/commonjava/auth/couch/model/RoleDoc/toRoleSet(java.util.List)|",
+      "|java+constructor:///org/commonjava/auth/couch/data/UserViewRequest/UserViewRequest(org.commonjava.auth.couch.conf.UserManagerConfiguration,org.commonjava.auth.couch.data.UserAppDescription$View,java.lang.String)|",
+      "|java+constructor:///org/commonjava/auth/couch/data/UserDataException/UserDataException(java.lang.String,java.lang.Throwable,java.lang.Object%5B%5D)|",
+      "|java+method:///org/commonjava/couch/db/CouchManager/getViewListing(org.commonjava.couch.db.model.ViewRequest,java.lang.Class)|"
+    ],
+    "affectedLib": "org.commonjava.couch:couch-app-support:1.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.commonjava.couch:couch-user-manager:1.0",
+    "coordinatesV2": "org.commonjava.couch:couch-user-manager:1.1",
+    "caller": "|java+method:///org/commonjava/auth/couch/data/UserDataManager/getAllPermissions()|",
+    "called": "|java+method:///org/commonjava/couch/db/CouchManager/getViewListing(org.commonjava.couch.db.model.ViewRequest,java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/commonjava/couch/db/CouchDBException/getMessage()|",
+      "|java+constructor:///org/commonjava/auth/couch/data/UserViewRequest/UserViewRequest(org.commonjava.auth.couch.conf.UserManagerConfiguration,org.commonjava.auth.couch.data.UserAppDescription$View)|",
+      "|java+constructor:///java/util/HashSet/HashSet(java.util.Collection)|",
+      "|java+constructor:///org/commonjava/auth/couch/data/UserDataException/UserDataException(java.lang.String,java.lang.Throwable,java.lang.Object%5B%5D)|",
+      "|java+method:///org/commonjava/couch/db/CouchManager/getViewListing(org.commonjava.couch.db.model.ViewRequest,java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/commonjava/couch/db/CouchDBException/getMessage()|",
+      "|java+constructor:///org/commonjava/auth/couch/data/UserViewRequest/UserViewRequest(org.commonjava.auth.couch.conf.UserManagerConfiguration,org.commonjava.auth.couch.data.UserAppDescription$View)|",
+      "|java+method:///org/commonjava/auth/couch/model/PermissionDoc/toPermissionSet(java.util.List)|",
+      "|java+constructor:///org/commonjava/auth/couch/data/UserDataException/UserDataException(java.lang.String,java.lang.Throwable,java.lang.Object%5B%5D)|",
+      "|java+method:///org/commonjava/couch/db/CouchManager/getViewListing(org.commonjava.couch.db.model.ViewRequest,java.lang.Class)|"
+    ],
+    "affectedLib": "org.commonjava.couch:couch-app-support:1.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.commonjava.couch:couch-user-manager:1.0",
+    "coordinatesV2": "org.commonjava.couch:couch-user-manager:1.1",
+    "caller": "|java+method:///org/commonjava/auth/couch/data/UserDataManager/getUsersForRole(java.lang.String)|",
+    "called": "|java+method:///org/commonjava/couch/db/CouchManager/getViewListing(org.commonjava.couch.db.model.ViewRequest,java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/commonjava/couch/db/CouchDBException/getMessage()|",
+      "|java+method:///org/commonjava/auth/couch/data/UserViewRequest/setParameter(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+constructor:///org/commonjava/auth/couch/data/UserViewRequest/UserViewRequest(org.commonjava.auth.couch.conf.UserManagerConfiguration,org.commonjava.auth.couch.data.UserAppDescription$View)|",
+      "|java+constructor:///java/util/HashSet/HashSet(java.util.Collection)|",
+      "|java+constructor:///org/commonjava/auth/couch/data/UserDataException/UserDataException(java.lang.String,java.lang.Throwable,java.lang.Object%5B%5D)|",
+      "|java+method:///org/commonjava/couch/db/CouchManager/getViewListing(org.commonjava.couch.db.model.ViewRequest,java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/commonjava/couch/db/CouchDBException/getMessage()|",
+      "|java+method:///org/commonjava/auth/couch/model/UserDoc/toUserSet(java.util.List)|",
+      "|java+method:///org/commonjava/auth/couch/data/UserViewRequest/setParameter(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+constructor:///org/commonjava/auth/couch/data/UserViewRequest/UserViewRequest(org.commonjava.auth.couch.conf.UserManagerConfiguration,org.commonjava.auth.couch.data.UserAppDescription$View,java.lang.String)|",
+      "|java+constructor:///org/commonjava/auth/couch/data/UserDataException/UserDataException(java.lang.String,java.lang.Throwable,java.lang.Object%5B%5D)|",
+      "|java+method:///org/commonjava/couch/db/CouchManager/getViewListing(org.commonjava.couch.db.model.ViewRequest,java.lang.Class)|"
+    ],
+    "affectedLib": "org.commonjava.couch:couch-app-support:1.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.commonjava.couch:couch-user-manager:1.0",
+    "coordinatesV2": "org.commonjava.couch:couch-user-manager:1.1",
+    "caller": "|java+method:///org/commonjava/auth/couch/data/UserDataManager/deleteUser(java.lang.String)|",
+    "called": "|java+constructor:///org/commonjava/couch/model/CouchDocRef/CouchDocRef(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/commonjava/couch/db/CouchDBException/getMessage()|",
+      "|java+constructor:///org/commonjava/couch/model/CouchDocRef/CouchDocRef(java.lang.String)|",
+      "|java+constructor:///org/commonjava/auth/couch/data/UserDataException/UserDataException(java.lang.String,java.lang.Throwable,java.lang.Object%5B%5D)|",
+      "|java+method:///org/commonjava/couch/db/CouchManager/delete(org.commonjava.couch.model.CouchDocument)|",
+      "|java+method:///org/commonjava/couch/util/IdUtils/namespaceId(java.lang.String,java.lang.String)|",
+      "|java+method:///org/commonjava/auth/couch/data/UserDataManager/fireDeleteEvent(org.commonjava.auth.couch.change.event.UserManagerDeleteEvent$Type,java.lang.String%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/commonjava/couch/db/CouchDBException/getMessage()|",
+      "|java+constructor:///org/commonjava/couch/model/CouchDocRef/CouchDocRef(java.lang.String)|",
+      "|java+method:///org/commonjava/couch/db/CouchManager/delete(org.commonjava.couch.model.CouchDocument)|",
+      "|java+method:///org/commonjava/auth/couch/data/UserDataManager/fireDeleteEvent(org.commonjava.auth.couch.change.event.UserManagerDeleteEvent$Type,java.lang.String%5B%5D)|",
+      "|java+method:///org/commonjava/couch/util/IdUtils/namespaceId(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+constructor:///org/commonjava/auth/couch/data/UserDataException/UserDataException(java.lang.String,java.lang.Throwable,java.lang.Object%5B%5D)|"
+    ],
+    "affectedLib": "org.commonjava.couch:couch-app-support:1.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.commonjava.couch:couch-user-manager:1.0",
+    "coordinatesV2": "org.commonjava.couch:couch-user-manager:1.1",
+    "caller": "|java+method:///org/commonjava/auth/couch/data/UserDataManager/getUser(java.lang.String)|",
+    "called": "|java+constructor:///org/commonjava/couch/model/CouchDocRef/CouchDocRef(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/commonjava/couch/db/CouchDBException/getMessage()|",
+      "|java+constructor:///org/commonjava/couch/model/CouchDocRef/CouchDocRef(java.lang.String)|",
+      "|java+constructor:///org/commonjava/auth/couch/data/UserDataException/UserDataException(java.lang.String,java.lang.Throwable,java.lang.Object%5B%5D)|",
+      "|java+method:///org/commonjava/couch/db/CouchManager/getDocument(org.commonjava.couch.model.CouchDocRef,java.lang.Class)|",
+      "|java+method:///org/commonjava/couch/util/IdUtils/namespaceId(java.lang.String,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/commonjava/couch/db/CouchDBException/getMessage()|",
+      "|java+constructor:///org/commonjava/couch/model/CouchDocRef/CouchDocRef(java.lang.String)|",
+      "|java+method:///org/commonjava/couch/db/CouchManager/getDocument(org.commonjava.couch.model.CouchDocRef,java.lang.Class)|",
+      "|java+method:///org/commonjava/auth/couch/model/UserDoc/toUser()|",
+      "|java+method:///org/commonjava/couch/util/IdUtils/namespaceId(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+constructor:///org/commonjava/auth/couch/data/UserDataException/UserDataException(java.lang.String,java.lang.Throwable,java.lang.Object%5B%5D)|"
+    ],
+    "affectedLib": "org.commonjava.couch:couch-app-support:1.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.commonjava.couch:couch-user-manager:1.0",
+    "coordinatesV2": "org.commonjava.couch:couch-user-manager:1.1",
+    "caller": "|java+method:///org/commonjava/auth/couch/change/RoleDeletionListener/documentChanged(org.commonjava.couch.change.CouchDocChange)|",
+    "called": "|java+method:///org/commonjava/couch/util/IdUtils/nonNamespaceId(java.lang.String,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/commonjava/util/logging/Logger/error(java.lang.String,java.lang.Throwable,java.lang.Object%5B%5D)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/commonjava/couch/util/IdUtils/nonNamespaceId(java.lang.String,java.lang.String)|",
+      "|java+method:///java/util/Set/iterator()|",
+      "|java+method:///org/commonjava/auth/couch/data/UserDataManager/getUsersForRole(java.lang.String)|",
+      "|java+method:///org/commonjava/couch/change/CouchDocChange/getId()|",
+      "|java+method:///org/commonjava/auth/couch/model/User/removeRole(java.lang.String)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/commonjava/auth/couch/data/UserDataManager/storeUsers(java.util.Collection)|",
+      "|java+method:///org/commonjava/couch/util/ChangeSynchronizer/setChanged()|",
+      "|java+method:///org/commonjava/auth/couch/data/UserDataException/getMessage()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/commonjava/couch/util/IdUtils/nonNamespaceId(java.lang.String,java.lang.String)|",
+      "|java+method:///org/commonjava/auth/couch/change/RoleDeletionListener/processRemoved(java.lang.String)|",
+      "|java+method:///org/commonjava/couch/change/CouchDocChange/getId()|"
+    ],
+    "affectedLib": "org.commonjava.couch:couch-app-support:1.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.commonjava.couch:couch-user-manager:1.0",
+    "coordinatesV2": "org.commonjava.couch:couch-user-manager:1.1",
+    "caller": "|java+method:///org/commonjava/auth/couch/data/UserDataManager/storePermissions(java.util.Collection)|",
+    "called": "|java+method:///org/commonjava/couch/db/CouchManager/store(java.util.Collection,boolean,boolean)|",
+    "v1Body": [
+      "|java+constructor:///org/commonjava/auth/couch/data/UserDataException/UserDataException(java.lang.String,java.lang.Throwable,java.lang.Object%5B%5D)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///org/commonjava/couch/db/CouchDBException/getMessage()|",
+      "|java+method:///org/commonjava/auth/couch/data/UserDataManager/firePermissionEvent(org.commonjava.auth.couch.change.event.UpdateType,java.util.Collection)|",
+      "|java+method:///java/util/Collection/size()|",
+      "|java+method:///org/commonjava/couch/db/CouchManager/store(java.util.Collection,boolean,boolean)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/commonjava/auth/couch/data/UserDataException/UserDataException(java.lang.String,java.lang.Throwable,java.lang.Object%5B%5D)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///org/commonjava/auth/couch/model/PermissionDoc/toDocuments(java.util.Collection)|",
+      "|java+method:///org/commonjava/couch/db/CouchDBException/getMessage()|",
+      "|java+method:///org/commonjava/auth/couch/data/UserDataManager/firePermissionEvent(org.commonjava.auth.couch.change.event.UpdateType,java.util.Collection)|",
+      "|java+method:///java/util/Collection/size()|",
+      "|java+method:///org/commonjava/couch/db/CouchManager/store(java.util.Collection,boolean,boolean)|"
+    ],
+    "affectedLib": "org.commonjava.couch:couch-app-support:1.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.commonjava.couch:couch-user-manager:1.0",
+    "coordinatesV2": "org.commonjava.couch:couch-user-manager:1.1",
+    "caller": "|java+method:///org/commonjava/auth/couch/data/UserDataManager/getRole(java.lang.String)|",
+    "called": "|java+constructor:///org/commonjava/couch/model/CouchDocRef/CouchDocRef(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/commonjava/couch/db/CouchDBException/getMessage()|",
+      "|java+constructor:///org/commonjava/couch/model/CouchDocRef/CouchDocRef(java.lang.String)|",
+      "|java+constructor:///org/commonjava/auth/couch/data/UserDataException/UserDataException(java.lang.String,java.lang.Throwable,java.lang.Object%5B%5D)|",
+      "|java+method:///org/commonjava/couch/db/CouchManager/getDocument(org.commonjava.couch.model.CouchDocRef,java.lang.Class)|",
+      "|java+method:///org/commonjava/couch/util/IdUtils/namespaceId(java.lang.String,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/commonjava/couch/db/CouchDBException/getMessage()|",
+      "|java+constructor:///org/commonjava/couch/model/CouchDocRef/CouchDocRef(java.lang.String)|",
+      "|java+method:///org/commonjava/couch/util/IdUtils/namespaceId(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+constructor:///org/commonjava/auth/couch/data/UserDataException/UserDataException(java.lang.String,java.lang.Throwable,java.lang.Object%5B%5D)|",
+      "|java+method:///org/commonjava/couch/db/CouchManager/getDocument(org.commonjava.couch.model.CouchDocRef,java.lang.Class)|",
+      "|java+method:///org/commonjava/auth/couch/model/RoleDoc/toRole()|"
+    ],
+    "affectedLib": "org.commonjava.couch:couch-app-support:1.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.commonjava.couch:couch-user-manager:1.0",
+    "coordinatesV2": "org.commonjava.couch:couch-user-manager:1.1",
+    "caller": "|java+method:///org/commonjava/auth/couch/data/UserDataManager/deleteRole(java.lang.String)|",
+    "called": "|java+constructor:///org/commonjava/couch/model/CouchDocRef/CouchDocRef(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/commonjava/couch/db/CouchDBException/getMessage()|",
+      "|java+constructor:///org/commonjava/couch/model/CouchDocRef/CouchDocRef(java.lang.String)|",
+      "|java+constructor:///org/commonjava/auth/couch/data/UserDataException/UserDataException(java.lang.String,java.lang.Throwable,java.lang.Object%5B%5D)|",
+      "|java+method:///org/commonjava/couch/db/CouchManager/delete(org.commonjava.couch.model.CouchDocument)|",
+      "|java+method:///org/commonjava/couch/util/IdUtils/namespaceId(java.lang.String,java.lang.String)|",
+      "|java+method:///org/commonjava/auth/couch/data/UserDataManager/fireDeleteEvent(org.commonjava.auth.couch.change.event.UserManagerDeleteEvent$Type,java.lang.String%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/commonjava/couch/db/CouchDBException/getMessage()|",
+      "|java+constructor:///org/commonjava/couch/model/CouchDocRef/CouchDocRef(java.lang.String)|",
+      "|java+method:///org/commonjava/couch/db/CouchManager/delete(org.commonjava.couch.model.CouchDocument)|",
+      "|java+method:///org/commonjava/auth/couch/data/UserDataManager/fireDeleteEvent(org.commonjava.auth.couch.change.event.UserManagerDeleteEvent$Type,java.lang.String%5B%5D)|",
+      "|java+method:///org/commonjava/couch/util/IdUtils/namespaceId(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+constructor:///org/commonjava/auth/couch/data/UserDataException/UserDataException(java.lang.String,java.lang.Throwable,java.lang.Object%5B%5D)|"
+    ],
+    "affectedLib": "org.commonjava.couch:couch-app-support:1.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.commonjava.couch:couch-user-manager:1.0",
+    "coordinatesV2": "org.commonjava.couch:couch-user-manager:1.1",
+    "caller": "|java+method:///org/commonjava/auth/couch/data/UserDataManager/install()|",
+    "called": "|java+method:///org/commonjava/couch/db/CouchManager/initialize(org.commonjava.couch.db.model.AppDescription)|",
+    "v1Body": [
+      "|java+method:///org/commonjava/couch/db/CouchDBException/getMessage()|",
+      "|java+constructor:///org/commonjava/auth/couch/data/UserDataException/UserDataException(java.lang.String,java.lang.Throwable,java.lang.Object%5B%5D)|",
+      "|java+method:///org/commonjava/couch/db/CouchManager/initialize(org.commonjava.couch.db.model.AppDescription)|",
+      "|java+method:///org/commonjava/couch/conf/CouchDBConfiguration/getDatabaseUrl()|",
+      "|java+constructor:///org/commonjava/auth/couch/data/UserAppDescription/UserAppDescription()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/commonjava/couch/db/CouchDBException/getMessage()|",
+      "|java+constructor:///org/commonjava/auth/couch/data/UserDataException/UserDataException(java.lang.String,java.lang.Throwable,java.lang.Object%5B%5D)|",
+      "|java+method:///org/commonjava/couch/db/CouchManager/initialize(org.commonjava.couch.db.model.AppDescription)|",
+      "|java+constructor:///org/commonjava/auth/couch/data/UserAppDescription/UserAppDescription()|"
+    ],
+    "affectedLib": "org.commonjava.couch:couch-app-support:1.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.commonjava.couch:couch-user-manager:1.0",
+    "coordinatesV2": "org.commonjava.couch:couch-user-manager:1.1",
+    "caller": "|java+constructor:///org/commonjava/auth/couch/conf/DefaultUserManagerConfig/DefaultUserManagerConfig()|",
+    "called": "|java+constructor:///org/commonjava/couch/conf/DefaultCouchDBConfiguration/DefaultCouchDBConfiguration()|",
+    "v1Body": [
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/commonjava/couch/conf/DefaultCouchDBConfiguration/DefaultCouchDBConfiguration()|"
+    ],
+    "affectedLib": "org.commonjava.couch:couch-app-support:1.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.commonjava.couch:couch-user-manager:1.0",
+    "coordinatesV2": "org.commonjava.couch:couch-user-manager:1.1",
+    "caller": "|java+method:///org/commonjava/auth/couch/data/UserDataManager/storeRoles(java.util.Collection)|",
+    "called": "|java+method:///org/commonjava/couch/db/CouchManager/store(java.util.Collection,boolean,boolean)|",
+    "v1Body": [
+      "|java+method:///org/commonjava/couch/db/CouchDBException/getMessage()|",
+      "|java+constructor:///org/commonjava/auth/couch/data/UserDataException/UserDataException(java.lang.String,java.lang.Throwable,java.lang.Object%5B%5D)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///org/commonjava/auth/couch/data/UserDataManager/fireRoleEvent(org.commonjava.auth.couch.change.event.UpdateType,java.util.Collection)|",
+      "|java+method:///java/util/Collection/size()|",
+      "|java+method:///org/commonjava/couch/db/CouchManager/store(java.util.Collection,boolean,boolean)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/commonjava/couch/db/CouchDBException/getMessage()|",
+      "|java+constructor:///org/commonjava/auth/couch/data/UserDataException/UserDataException(java.lang.String,java.lang.Throwable,java.lang.Object%5B%5D)|",
+      "|java+method:///org/commonjava/auth/couch/model/RoleDoc/toDocuments(java.util.Collection)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///org/commonjava/auth/couch/data/UserDataManager/fireRoleEvent(org.commonjava.auth.couch.change.event.UpdateType,java.util.Collection)|",
+      "|java+method:///java/util/Collection/size()|",
+      "|java+method:///org/commonjava/couch/db/CouchManager/store(java.util.Collection,boolean,boolean)|"
+    ],
+    "affectedLib": "org.commonjava.couch:couch-app-support:1.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.commonjava.couch:couch-user-manager:1.0",
+    "coordinatesV2": "org.commonjava.couch:couch-user-manager:1.1",
+    "caller": "|java+method:///org/commonjava/auth/couch/data/UserDataManager/getPermission(java.lang.String)|",
+    "called": "|java+constructor:///org/commonjava/couch/model/CouchDocRef/CouchDocRef(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/commonjava/couch/db/CouchDBException/getMessage()|",
+      "|java+constructor:///org/commonjava/couch/model/CouchDocRef/CouchDocRef(java.lang.String)|",
+      "|java+constructor:///org/commonjava/auth/couch/data/UserDataException/UserDataException(java.lang.String,java.lang.Throwable,java.lang.Object%5B%5D)|",
+      "|java+method:///org/commonjava/couch/db/CouchManager/getDocument(org.commonjava.couch.model.CouchDocRef,java.lang.Class)|",
+      "|java+method:///org/commonjava/couch/util/IdUtils/namespaceId(java.lang.String,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/commonjava/couch/db/CouchDBException/getMessage()|",
+      "|java+method:///org/commonjava/util/logging/Logger/info(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///org/commonjava/couch/db/CouchManager/getDocument(org.commonjava.couch.model.CouchDocRef,java.lang.Class)|",
+      "|java+constructor:///org/commonjava/couch/model/CouchDocRef/CouchDocRef(java.lang.String)|",
+      "|java+method:///org/commonjava/auth/couch/model/PermissionDoc/toPermission()|",
+      "|java+method:///org/commonjava/couch/util/IdUtils/namespaceId(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+constructor:///org/commonjava/auth/couch/data/UserDataException/UserDataException(java.lang.String,java.lang.Throwable,java.lang.Object%5B%5D)|"
+    ],
+    "affectedLib": "org.commonjava.couch:couch-app-support:1.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.commonjava.couch:couch-user-manager:1.0",
+    "coordinatesV2": "org.commonjava.couch:couch-user-manager:1.1",
+    "caller": "|java+method:///org/commonjava/auth/couch/data/UserDataManager/getPermission(java.lang.String)|",
+    "called": "|java+method:///org/commonjava/util/logging/Logger/info(java.lang.String,java.lang.Object%5B%5D)|",
+    "v1Body": [
+      "|java+method:///org/commonjava/couch/db/CouchDBException/getMessage()|",
+      "|java+constructor:///org/commonjava/couch/model/CouchDocRef/CouchDocRef(java.lang.String)|",
+      "|java+constructor:///org/commonjava/auth/couch/data/UserDataException/UserDataException(java.lang.String,java.lang.Throwable,java.lang.Object%5B%5D)|",
+      "|java+method:///org/commonjava/couch/db/CouchManager/getDocument(org.commonjava.couch.model.CouchDocRef,java.lang.Class)|",
+      "|java+method:///org/commonjava/couch/util/IdUtils/namespaceId(java.lang.String,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/commonjava/couch/db/CouchDBException/getMessage()|",
+      "|java+method:///org/commonjava/util/logging/Logger/info(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///org/commonjava/couch/db/CouchManager/getDocument(org.commonjava.couch.model.CouchDocRef,java.lang.Class)|",
+      "|java+constructor:///org/commonjava/couch/model/CouchDocRef/CouchDocRef(java.lang.String)|",
+      "|java+method:///org/commonjava/auth/couch/model/PermissionDoc/toPermission()|",
+      "|java+method:///org/commonjava/couch/util/IdUtils/namespaceId(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+constructor:///org/commonjava/auth/couch/data/UserDataException/UserDataException(java.lang.String,java.lang.Throwable,java.lang.Object%5B%5D)|"
+    ],
+    "affectedLib": "org.commonjava.util:logging:1.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.commonjava.couch:couch-user-manager:1.0",
+    "coordinatesV2": "org.commonjava.couch:couch-user-manager:1.1",
+    "caller": "|java+constructor:///org/commonjava/auth/couch/data/UserDataManager/UserDataManager(org.commonjava.auth.couch.conf.UserManagerConfiguration,org.commonjava.auth.couch.data.PasswordManager,org.commonjava.couch.db.CouchManager)|",
+    "called": "|java+constructor:///org/commonjava/util/logging/Logger/Logger(java.lang.Class)|",
+    "v1Body": [
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/commonjava/util/logging/Logger/Logger(java.lang.Class)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "org.commonjava.util:logging:1.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.commonjava.couch:couch-user-manager:1.0",
+    "coordinatesV2": "org.commonjava.couch:couch-user-manager:1.1",
+    "caller": "|java+constructor:///org/commonjava/auth/couch/data/UserDataManager/UserDataManager()|",
+    "called": "|java+constructor:///org/commonjava/util/logging/Logger/Logger(java.lang.Class)|",
+    "v1Body": [
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/commonjava/util/logging/Logger/Logger(java.lang.Class)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "org.commonjava.util:logging:1.1",
+    "change": "UPDATED"
+  }
+]

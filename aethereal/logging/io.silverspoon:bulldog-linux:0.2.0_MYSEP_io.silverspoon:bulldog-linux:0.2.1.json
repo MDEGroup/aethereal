@@ -1,0 +1,116 @@
+[
+  {
+    "coordinatesV1": "io.silverspoon:bulldog-linux:0.2.0",
+    "coordinatesV2": "io.silverspoon:bulldog-linux:0.2.1",
+    "caller": "|java+initializer:///io/silverspoon/bulldog/linux/sysinfo/CpuInfo/CpuInfo$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///java/lang/String/split(java.lang.String)|",
+      "|java+method:///java/lang/String/trim()|",
+      "|java+method:///io/silverspoon/bulldog/linux/sysinfo/CpuInfo/readFile(java.lang.String)|",
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+method:///java/util/HashMap/put(java.lang.Object,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/String/split(java.lang.String)|",
+      "|java+method:///java/lang/String/trim()|",
+      "|java+method:///io/silverspoon/bulldog/linux/sysinfo/CpuInfo/readFile(java.lang.String)|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+method:///java/util/HashMap/put(java.lang.Object,java.lang.Object)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "io.silverspoon:bulldog-linux:0.2.0",
+    "coordinatesV2": "io.silverspoon:bulldog-linux:0.2.1",
+    "caller": "|java+method:///io/silverspoon/bulldog/linux/io/LinuxSpiBus/selectSlaves(java.lang.Integer%5B%5D)|",
+    "called": "|java+method:///io/silverspoon/bulldog/core/pin/Pin/as(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///java/lang/Integer/intValue()|",
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///io/silverspoon/bulldog/core/platform/Board/getPin(int)|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///io/silverspoon/bulldog/core/gpio/Pin/as(java.lang.Class)|",
+      "|java+method:///java/util/List/toArray(java.lang.Object%5B%5D)|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///io/silverspoon/bulldog/linux/io/LinuxSpiBus/selectSlaves(io.silverspoon.bulldog.core.gpio.DigitalOutput%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Integer/intValue()|",
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///io/silverspoon/bulldog/core/pin/Pin/as(java.lang.Class)|",
+      "|java+method:///io/silverspoon/bulldog/core/platform/Board/getPin(int)|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///java/util/List/toArray(java.lang.Object%5B%5D)|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///io/silverspoon/bulldog/linux/io/LinuxSpiBus/selectSlaves(io.silverspoon.bulldog.core.gpio.DigitalOutput%5B%5D)|"
+    ],
+    "affectedLib": "io.silverspoon:bulldog-core:0.2.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.silverspoon:bulldog-linux:0.2.0",
+    "coordinatesV2": "io.silverspoon:bulldog-linux:0.2.1",
+    "caller": "|java+method:///io/silverspoon/bulldog/linux/io/LinuxSpiBus/createSpiConnection(io.silverspoon.bulldog.core.gpio.DigitalOutput)|",
+    "called": "|java+constructor:///io/silverspoon/bulldog/core/io/bus/spi/SpiConnection/SpiConnection(io.silverspoon.bulldog.core.io.bus.spi.SpiBus,int)|",
+    "v1Body": [
+      "|java+method:///io/silverspoon/bulldog/core/gpio/DigitalOutput/getPin()|",
+      "|java+constructor:///io/silverspoon/bulldog/core/io/bus/spi/SpiConnection/SpiConnection(io.silverspoon.bulldog.core.io.bus.spi.SpiBus,int)|",
+      "|java+method:///io/silverspoon/bulldog/core/gpio/Pin/getAddress()|"
+    ],
+    "v2Body": [
+      "|java+method:///io/silverspoon/bulldog/core/pin/Pin/getAddress()|",
+      "|java+method:///io/silverspoon/bulldog/core/gpio/DigitalOutput/getPin()|",
+      "|java+constructor:///io/silverspoon/bulldog/core/io/bus/spi/SpiConnection/SpiConnection(io.silverspoon.bulldog.core.io.bus.spi.SpiBus,int)|"
+    ],
+    "affectedLib": "io.silverspoon:bulldog-core:0.2.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.silverspoon:bulldog-linux:0.2.0",
+    "coordinatesV2": "io.silverspoon:bulldog-linux:0.2.1",
+    "caller": "|java+method:///io/silverspoon/bulldog/linux/io/LinuxSpiBus/selectSlave(int)|",
+    "called": "|java+method:///io/silverspoon/bulldog/core/pin/Pin/as(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///io/silverspoon/bulldog/linux/io/LinuxSpiBus/selectSlave(io.silverspoon.bulldog.core.gpio.DigitalOutput)|",
+      "|java+method:///io/silverspoon/bulldog/core/platform/Board/getPin(int)|",
+      "|java+method:///io/silverspoon/bulldog/core/gpio/Pin/as(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///io/silverspoon/bulldog/linux/io/LinuxSpiBus/selectSlave(io.silverspoon.bulldog.core.gpio.DigitalOutput)|",
+      "|java+method:///io/silverspoon/bulldog/core/pin/Pin/as(java.lang.Class)|",
+      "|java+method:///io/silverspoon/bulldog/core/platform/Board/getPin(int)|"
+    ],
+    "affectedLib": "io.silverspoon:bulldog-core:0.2.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.silverspoon:bulldog-linux:0.2.0",
+    "coordinatesV2": "io.silverspoon:bulldog-linux:0.2.1",
+    "caller": "|java+method:///io/silverspoon/bulldog/linux/gpio/LinuxDigitalInput/processEpollResults(io.silverspoon.bulldog.linux.jni.NativePollResult%5B%5D)|",
+    "called": "|java+constructor:///io/silverspoon/bulldog/core/event/InterruptEventArgs/InterruptEventArgs(io.silverspoon.bulldog.core.pin.Pin,io.silverspoon.bulldog.core.Edge)|",
+    "v1Body": [
+      "|java+method:///io/silverspoon/bulldog/core/Edge/equals(java.lang.Object)|",
+      "|java+method:///io/silverspoon/bulldog/linux/gpio/LinuxDigitalInput/getInterruptDebounceMs()|",
+      "|java+method:///io/silverspoon/bulldog/linux/gpio/LinuxDigitalInput/getPin()|",
+      "|java+constructor:///io/silverspoon/bulldog/core/gpio/event/InterruptEventArgs/InterruptEventArgs(io.silverspoon.bulldog.core.gpio.Pin,io.silverspoon.bulldog.core.Edge)|",
+      "|java+method:///java/lang/System/currentTimeMillis()|",
+      "|java+method:///io/silverspoon/bulldog/linux/gpio/LinuxDigitalInput/fireInterruptEvent(io.silverspoon.bulldog.core.gpio.event.InterruptEventArgs)|",
+      "|java+method:///io/silverspoon/bulldog/linux/gpio/LinuxDigitalInput/getEdge(io.silverspoon.bulldog.linux.jni.NativePollResult)|"
+    ],
+    "v2Body": [
+      "|java+method:///io/silverspoon/bulldog/core/Edge/equals(java.lang.Object)|",
+      "|java+method:///io/silverspoon/bulldog/linux/gpio/LinuxDigitalInput/getPin()|",
+      "|java+method:///java/lang/System/currentTimeMillis()|",
+      "|java+method:///io/silverspoon/bulldog/linux/gpio/LinuxDigitalInput/fireInterruptEvent(io.silverspoon.bulldog.core.event.InterruptEventArgs)|",
+      "|java+method:///io/silverspoon/bulldog/linux/gpio/LinuxDigitalInput/getEdge(io.silverspoon.bulldog.linux.jni.NativePollResult)|",
+      "|java+method:///io/silverspoon/bulldog/linux/gpio/LinuxDigitalInput/getInterruptDebounceMs()|",
+      "|java+constructor:///io/silverspoon/bulldog/core/event/InterruptEventArgs/InterruptEventArgs(io.silverspoon.bulldog.core.pin.Pin,io.silverspoon.bulldog.core.Edge)|"
+    ],
+    "affectedLib": "io.silverspoon:bulldog-core:0.2.1",
+    "change": "UPDATED"
+  }
+]

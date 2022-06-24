@@ -1,0 +1,19 @@
+[
+  {
+    "coordinatesV1": "org.apereo.cas:cas-server-support-actions-aup-ldap:5.0.10",
+    "coordinatesV2": "org.apereo.cas:cas-server-support-actions-aup-ldap:5.1.0-RC4",
+    "caller": "|java+method:///org/apereo/cas/web/flow/LdapAcceptableUsagePolicyRepository/searchForId(java.lang.String)|",
+    "called": "|java+method:///org/apereo/cas/util/LdapUtils/executeSearchOperation(org.ldaptive.ConnectionFactory,java.lang.String,org.ldaptive.SearchFilter)|",
+    "v1Body": [
+      "|java+method:///org/apereo/cas/configuration/support/Beans/newSearchFilter(java.lang.String,java.lang.String%5B%5D)|",
+      "|java+method:///org/apereo/cas/util/LdapUtils/executeSearchOperation(org.ldaptive.ConnectionFactory,java.lang.String,org.ldaptive.SearchFilter)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apereo/cas/configuration/support/Beans/newLdaptiveSearchFilter(java.lang.String,java.lang.String,java.util.List)|",
+      "|java+method:///java/util/Arrays/asList(java.lang.Object%5B%5D)|",
+      "|java+method:///org/apereo/cas/util/LdapUtils/executeSearchOperation(org.ldaptive.ConnectionFactory,java.lang.String,org.ldaptive.SearchFilter)|"
+    ],
+    "affectedLib": "org.apereo.cas:cas-server-support-ldap-core:5.1.0-RC4",
+    "change": "UPDATED"
+  }
+]

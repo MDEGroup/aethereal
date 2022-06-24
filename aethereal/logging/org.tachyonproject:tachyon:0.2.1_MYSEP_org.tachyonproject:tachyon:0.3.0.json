@@ -1,0 +1,140 @@
+[
+  {
+    "coordinatesV1": "org.tachyonproject:tachyon:0.3.0",
+    "coordinatesV2": "org.tachyonproject:tachyon:0.2.1",
+    "caller": "|java+method:///tachyon/hadoop/Utils/getPathWithoutScheme(org.apache.hadoop.fs.Path)|",
+    "called": "|java+method:///org/apache/hadoop/fs/Path/getName()|",
+    "v1Body": [
+      "|java+method:///org/apache/hadoop/fs/Path/getParent()|",
+      "|java+method:///org/apache/hadoop/fs/Path/getName()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/log4j/Logger/info(java.lang.Object)|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/hadoop/fs/Path/getParent()|",
+      "|java+method:///org/apache/hadoop/fs/Path/getName()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/log4j/Logger/info(java.lang.Object)|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///java/lang/String/isEmpty()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "affectedLib": "org.apache.hadoop:hadoop-core:1.0.4",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.tachyonproject:tachyon:0.3.0",
+    "coordinatesV2": "org.tachyonproject:tachyon:0.2.1",
+    "caller": "|java+constructor:///tachyon/UnderFileSystemHdfs/UnderFileSystemHdfs(java.lang.String)|",
+    "called": "|java+method:///org/apache/hadoop/conf/Configuration/set(java.lang.String,java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/hadoop/conf/Configuration/Configuration()|",
+      "|java+method:///tachyon/CommonUtils/runtimeException(java.lang.Exception)|",
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.String)|",
+      "|java+method:///org/apache/hadoop/conf/Configuration/set(java.lang.String,java.lang.String)|",
+      "|java+constructor:///tachyon/UnderFileSystem/UnderFileSystem()|",
+      "|java+method:///org/apache/hadoop/fs/FileSystem/get(org.apache.hadoop.conf.Configuration)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/hadoop/fs/Path/getFileSystem(org.apache.hadoop.conf.Configuration)|",
+      "|java+constructor:///org/apache/hadoop/conf/Configuration/Configuration()|",
+      "|java+method:///tachyon/CommonUtils/runtimeException(java.lang.Exception)|",
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.String)|",
+      "|java+method:///org/apache/hadoop/conf/Configuration/set(java.lang.String,java.lang.String)|",
+      "|java+constructor:///tachyon/UnderFileSystem/UnderFileSystem()|",
+      "|java+method:///java/lang/System/getProperty(java.lang.String)|",
+      "|java+constructor:///org/apache/hadoop/fs/Path/Path(java.lang.String)|"
+    ],
+    "affectedLib": "org.apache.hadoop:hadoop-core:1.0.4",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.tachyonproject:tachyon:0.3.0",
+    "coordinatesV2": "org.tachyonproject:tachyon:0.2.1",
+    "caller": "|java+method:///tachyon/UnderFileSystemHdfs/mkdirs(java.lang.String,boolean)|",
+    "called": "|java+constructor:///org/apache/hadoop/fs/Path/Path(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/apache/hadoop/fs/FileSystem/exists(org.apache.hadoop.fs.Path)|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+method:///java/io/IOException/getMessage()|",
+      "|java+method:///org/apache/hadoop/fs/FileSystem/mkdirs(org.apache.hadoop.fs.Path,org.apache.hadoop.fs.permission.FsPermission)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///tachyon/CommonUtils/runtimeException(java.lang.Exception)|",
+      "|java+method:///org/apache/log4j/Logger/error(java.lang.Object,java.lang.Throwable)|",
+      "|java+constructor:///org/apache/hadoop/fs/Path/Path(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/hadoop/fs/FileSystem/exists(org.apache.hadoop.fs.Path)|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+method:///java/io/IOException/getMessage()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///tachyon/CommonUtils/runtimeException(java.lang.Exception)|",
+      "|java+method:///org/apache/log4j/Logger/error(java.lang.Object,java.lang.Throwable)|",
+      "|java+constructor:///org/apache/hadoop/fs/Path/Path(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/apache/hadoop/fs/FileSystem/mkdirs(org.apache.hadoop.fs.Path)|"
+    ],
+    "affectedLib": "org.apache.hadoop:hadoop-core:1.0.4",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.tachyonproject:tachyon:0.3.0",
+    "coordinatesV2": "org.tachyonproject:tachyon:0.2.1",
+    "caller": "|java+method:///tachyon/UnderFileSystemHdfs/create(java.lang.String)|",
+    "called": "|java+constructor:///org/apache/hadoop/fs/Path/Path(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/apache/hadoop/fs/FileSystem/create(org.apache.hadoop.fs.Path)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+method:///java/io/IOException/getMessage()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///tachyon/UnderFileSystemHdfs/create(java.lang.String)|",
+      "|java+method:///org/apache/log4j/Logger/error(java.lang.Object,java.lang.Throwable)|",
+      "|java+constructor:///org/apache/hadoop/fs/Path/Path(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/hadoop/fs/FileSystem/create(org.apache.hadoop.fs.Path)|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+method:///java/io/IOException/getMessage()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/log4j/Logger/debug(java.lang.Object)|",
+      "|java+method:///tachyon/UnderFileSystemHdfs/create(java.lang.String)|",
+      "|java+method:///org/apache/log4j/Logger/error(java.lang.Object,java.lang.Throwable)|",
+      "|java+constructor:///org/apache/hadoop/fs/Path/Path(java.lang.String)|"
+    ],
+    "affectedLib": "org.apache.hadoop:hadoop-core:1.0.4",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.tachyonproject:tachyon:0.3.0",
+    "coordinatesV2": "org.tachyonproject:tachyon:0.2.1",
+    "caller": "|java+method:///tachyon/UnderFileSystemHdfs/getFileLocations(java.lang.String)|",
+    "called": "|java+method:///org/apache/hadoop/fs/FileSystem/getFileBlockLocations(org.apache.hadoop.fs.FileStatus,long,long)|",
+    "v1Body": [
+      "|java+method:///org/apache/hadoop/fs/FileSystem/getFileBlockLocations(org.apache.hadoop.fs.FileStatus,long,long)|",
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///org/apache/hadoop/fs/FileSystem/getFileStatus(org.apache.hadoop.fs.Path)|",
+      "|java+method:///org/apache/hadoop/fs/BlockLocation/getHosts()|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+constructor:///org/apache/hadoop/fs/Path/Path(java.lang.String)|",
+      "|java+method:///org/apache/log4j/Logger/error(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///tachyon/UnderFileSystemHdfs/getFileLocations(java.lang.String,long)|"
+    ],
+    "affectedLib": "org.apache.hadoop:hadoop-core:1.0.4",
+    "change": "REMOVED"
+  }
+]

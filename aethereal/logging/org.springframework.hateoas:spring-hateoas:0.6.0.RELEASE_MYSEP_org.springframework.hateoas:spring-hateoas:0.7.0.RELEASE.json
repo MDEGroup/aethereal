@@ -1,0 +1,138 @@
+[
+  {
+    "coordinatesV1": "org.springframework.hateoas:spring-hateoas:0.6.0.RELEASE",
+    "coordinatesV2": "org.springframework.hateoas:spring-hateoas:0.7.0.RELEASE",
+    "caller": "|java+method:///org/springframework/hateoas/mvc/ControllerLinkBuilder/getBuilder()|",
+    "called": "|java+method:///org/springframework/web/servlet/support/ServletUriComponentsBuilder/fromServletMapping(javax.servlet.http.HttpServletRequest)|",
+    "v1Body": [
+      "|java+method:///javax/servlet/http/HttpServletRequest/getHeader(java.lang.String)|",
+      "|java+method:///org/springframework/web/servlet/support/ServletUriComponentsBuilder/fromServletMapping(javax.servlet.http.HttpServletRequest)|",
+      "|java+method:///org/springframework/hateoas/mvc/ControllerLinkBuilder/getCurrentRequest()|",
+      "|java+method:///org/springframework/util/StringUtils/hasText(java.lang.String)|",
+      "|java+method:///org/springframework/web/servlet/support/ServletUriComponentsBuilder/host(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///javax/servlet/http/HttpServletRequest/getHeader(java.lang.String)|",
+      "|java+method:///org/springframework/web/servlet/support/ServletUriComponentsBuilder/fromServletMapping(javax.servlet.http.HttpServletRequest)|",
+      "|java+method:///org/springframework/hateoas/mvc/ControllerLinkBuilder/getCurrentRequest()|",
+      "|java+method:///org/springframework/util/StringUtils/hasText(java.lang.String)|",
+      "|java+method:///org/springframework/util/StringUtils/commaDelimitedListToStringArray(java.lang.String)|",
+      "|java+method:///java/lang/Integer/parseInt(java.lang.String)|",
+      "|java+method:///org/springframework/util/StringUtils/split(java.lang.String,java.lang.String)|",
+      "|java+method:///java/lang/String/contains(java.lang.CharSequence)|",
+      "|java+method:///org/springframework/web/servlet/support/ServletUriComponentsBuilder/host(java.lang.String)|",
+      "|java+method:///org/springframework/web/servlet/support/ServletUriComponentsBuilder/port(int)|"
+    ],
+    "affectedLib": "org.springframework:spring-webmvc:3.2.3.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.springframework.hateoas:spring-hateoas:0.6.0.RELEASE",
+    "coordinatesV2": "org.springframework.hateoas:spring-hateoas:0.7.0.RELEASE",
+    "caller": "|java+method:///org/springframework/hateoas/mvc/ControllerLinkBuilderFactory/linkTo(java.lang.Object)|",
+    "called": "|java+method:///org/springframework/util/Assert/isInstanceOf(java.lang.Class,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/springframework/web/util/UriComponentsBuilder/buildAndExpand(java.util.Map)|",
+      "|java+method:///org/aopalliance/intercept/MethodInvocation/getMethod()|",
+      "|java+method:///org/springframework/web/util/UriTemplate/getVariableNames()|",
+      "|java+method:///org/springframework/hateoas/core/DummyInvocationUtils$LastInvocationAware/getLastInvocation()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/springframework/web/util/UriComponentsBuilder/path(java.lang.String)|",
+      "|java+method:///org/springframework/hateoas/mvc/ControllerLinkBuilderFactory/linkTo(java.lang.Object)|",
+      "|java+method:///org/springframework/hateoas/mvc/ControllerLinkBuilderFactory/applyUriComponentsContributer(org.springframework.web.util.UriComponentsBuilder,org.aopalliance.intercept.MethodInvocation)|",
+      "|java+method:///org/springframework/hateoas/mvc/AnnotatedParametersParameterAccessor$BoundMethodParameter/getVariableName()|",
+      "|java+method:///org/springframework/web/util/UriComponents/toUri()|",
+      "|java+method:///org/springframework/hateoas/mvc/AnnotatedParametersParameterAccessor/getBoundParameters(org.aopalliance.intercept.MethodInvocation)|",
+      "|java+method:///org/springframework/web/util/UriComponentsBuilder/queryParam(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///org/springframework/hateoas/mvc/ControllerLinkBuilder/getBuilder()|",
+      "|java+method:///org/springframework/hateoas/mvc/AnnotatedParametersParameterAccessor$BoundMethodParameter/asString()|",
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/springframework/web/util/UriComponentsBuilder/fromUri(java.net.URI)|",
+      "|java+constructor:///org/springframework/hateoas/mvc/ControllerLinkBuilder/ControllerLinkBuilder(org.springframework.web.util.UriComponentsBuilder)|",
+      "|java+method:///org/springframework/hateoas/core/DummyInvocationUtils$LastInvocationAware/getObjectParameters()|",
+      "|java+method:///org/springframework/hateoas/core/MappingDiscoverer/getMapping(java.lang.reflect.Method)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+constructor:///org/springframework/web/util/UriTemplate/UriTemplate(java.lang.String)|",
+      "|java+method:///org/springframework/hateoas/mvc/AnnotatedParametersParameterAccessor$BoundMethodParameter/getValue()|",
+      "|java+method:///org/springframework/util/Assert/isInstanceOf(java.lang.Class,java.lang.Object)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///java/util/Collection/iterator()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/springframework/web/util/UriComponentsBuilder/buildAndExpand(java.util.Map)|",
+      "|java+method:///org/springframework/hateoas/core/DummyInvocationUtils$LastInvocationAware/getLastInvocation()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/springframework/web/util/UriComponentsBuilder/path(java.lang.String)|",
+      "|java+method:///org/springframework/hateoas/mvc/AnnotatedParametersParameterAccessor/getBoundParameters(org.springframework.hateoas.core.DummyInvocationUtils$MethodInvocation)|",
+      "|java+method:///org/springframework/hateoas/core/DummyInvocationUtils$MethodInvocation/getMethod()|",
+      "|java+method:///org/springframework/hateoas/mvc/ControllerLinkBuilderFactory/linkTo(java.lang.Object)|",
+      "|java+method:///org/springframework/hateoas/mvc/AnnotatedParametersParameterAccessor$BoundMethodParameter/getVariableName()|",
+      "|java+method:///org/springframework/web/util/UriComponents/toUri()|",
+      "|java+method:///org/springframework/web/util/UriComponentsBuilder/queryParam(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///org/springframework/hateoas/mvc/ControllerLinkBuilder/getBuilder()|",
+      "|java+method:///org/springframework/hateoas/mvc/AnnotatedParametersParameterAccessor$BoundMethodParameter/asString()|",
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/springframework/web/util/UriComponentsBuilder/fromUri(java.net.URI)|",
+      "|java+method:///org/springframework/hateoas/mvc/ControllerLinkBuilderFactory/applyUriComponentsContributer(org.springframework.web.util.UriComponentsBuilder,org.springframework.hateoas.core.DummyInvocationUtils$MethodInvocation)|",
+      "|java+method:///org/springframework/web/util/UriTemplate/getVariableNames()|",
+      "|java+constructor:///org/springframework/hateoas/mvc/ControllerLinkBuilder/ControllerLinkBuilder(org.springframework.web.util.UriComponentsBuilder)|",
+      "|java+method:///org/springframework/hateoas/core/DummyInvocationUtils$LastInvocationAware/getObjectParameters()|",
+      "|java+method:///org/springframework/hateoas/core/MappingDiscoverer/getMapping(java.lang.reflect.Method)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+constructor:///org/springframework/web/util/UriTemplate/UriTemplate(java.lang.String)|",
+      "|java+method:///org/springframework/hateoas/mvc/AnnotatedParametersParameterAccessor$BoundMethodParameter/getValue()|",
+      "|java+method:///org/springframework/util/Assert/isInstanceOf(java.lang.Class,java.lang.Object)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///java/util/Collection/iterator()|"
+    ],
+    "affectedLib": "org.springframework:spring-core:3.2.3.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.springframework.hateoas:spring-hateoas:0.6.0.RELEASE",
+    "coordinatesV2": "org.springframework.hateoas:spring-hateoas:0.7.0.RELEASE",
+    "caller": "|java+method:///org/springframework/hateoas/core/DummyInvocationUtils/methodOn(java.lang.Class,java.lang.Object%5B%5D)|",
+    "called": "|java+method:///org/springframework/util/Assert/notNull(java.lang.Object,java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///org/springframework/hateoas/core/DummyInvocationUtils$InvocationRecordingMethodInterceptor/DummyInvocationUtils$InvocationRecordingMethodInterceptor(java.lang.Object%5B%5D)|",
+      "|java+method:///org/springframework/util/Assert/notNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///org/springframework/hateoas/core/DummyInvocationUtils/getProxyWithInterceptor(java.lang.Class,org.aopalliance.intercept.MethodInterceptor)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/springframework/hateoas/core/DummyInvocationUtils$InvocationRecordingMethodInterceptor/DummyInvocationUtils$InvocationRecordingMethodInterceptor(java.lang.Object%5B%5D)|",
+      "|java+method:///org/springframework/hateoas/core/DummyInvocationUtils/getProxyWithInterceptor(java.lang.Class,org.springframework.hateoas.core.DummyInvocationUtils$InvocationRecordingMethodInterceptor)|",
+      "|java+method:///org/springframework/util/Assert/notNull(java.lang.Object,java.lang.String)|"
+    ],
+    "affectedLib": "org.springframework:spring-core:3.2.3.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.springframework.hateoas:spring-hateoas:0.6.0.RELEASE",
+    "coordinatesV2": "org.springframework.hateoas:spring-hateoas:0.7.0.RELEASE",
+    "caller": "|java+method:///org/springframework/hateoas/mvc/ControllerLinkBuilder/getBuilder()|",
+    "called": "|java+method:///org/springframework/util/StringUtils/split(java.lang.String,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///javax/servlet/http/HttpServletRequest/getHeader(java.lang.String)|",
+      "|java+method:///org/springframework/web/servlet/support/ServletUriComponentsBuilder/fromServletMapping(javax.servlet.http.HttpServletRequest)|",
+      "|java+method:///org/springframework/hateoas/mvc/ControllerLinkBuilder/getCurrentRequest()|",
+      "|java+method:///org/springframework/util/StringUtils/hasText(java.lang.String)|",
+      "|java+method:///org/springframework/web/servlet/support/ServletUriComponentsBuilder/host(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///javax/servlet/http/HttpServletRequest/getHeader(java.lang.String)|",
+      "|java+method:///org/springframework/web/servlet/support/ServletUriComponentsBuilder/fromServletMapping(javax.servlet.http.HttpServletRequest)|",
+      "|java+method:///org/springframework/hateoas/mvc/ControllerLinkBuilder/getCurrentRequest()|",
+      "|java+method:///org/springframework/util/StringUtils/hasText(java.lang.String)|",
+      "|java+method:///org/springframework/util/StringUtils/commaDelimitedListToStringArray(java.lang.String)|",
+      "|java+method:///java/lang/Integer/parseInt(java.lang.String)|",
+      "|java+method:///org/springframework/util/StringUtils/split(java.lang.String,java.lang.String)|",
+      "|java+method:///java/lang/String/contains(java.lang.CharSequence)|",
+      "|java+method:///org/springframework/web/servlet/support/ServletUriComponentsBuilder/host(java.lang.String)|",
+      "|java+method:///org/springframework/web/servlet/support/ServletUriComponentsBuilder/port(int)|"
+    ],
+    "affectedLib": "org.springframework:spring-core:3.2.3.RELEASE",
+    "change": "UPDATED"
+  }
+]

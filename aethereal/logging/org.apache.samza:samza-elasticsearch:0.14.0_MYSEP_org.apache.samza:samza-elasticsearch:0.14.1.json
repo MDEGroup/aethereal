@@ -1,0 +1,46 @@
+[
+  {
+    "coordinatesV1": "org.apache.samza:samza-elasticsearch:0.14.1",
+    "coordinatesV2": "org.apache.samza:samza-elasticsearch:0.14.0",
+    "caller": "|java+method:///org/apache/samza/system/elasticsearch/ElasticsearchSystemFactory/getIndexRequestFactory(org.apache.samza.config.ElasticsearchConfig)|",
+    "called": "|java+method:///org/apache/samza/util/Util/getObj(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///com/google/common/base/Optional/isPresent()|",
+      "|java+method:///com/google/common/base/Optional/get()|",
+      "|java+method:///org/apache/samza/config/ElasticsearchConfig/getIndexRequestFactoryClassName()|",
+      "|java+constructor:///org/apache/samza/system/elasticsearch/indexrequest/DefaultIndexRequestFactory/DefaultIndexRequestFactory()|",
+      "|java+method:///org/apache/samza/util/Util/getObj(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/common/base/Optional/isPresent()|",
+      "|java+method:///com/google/common/base/Optional/get()|",
+      "|java+method:///org/apache/samza/config/ElasticsearchConfig/getIndexRequestFactoryClassName()|",
+      "|java+constructor:///org/apache/samza/system/elasticsearch/indexrequest/DefaultIndexRequestFactory/DefaultIndexRequestFactory()|",
+      "|java+method:///org/apache/samza/util/Util/getObj(java.lang.String,java.lang.Class)|"
+    ],
+    "affectedLib": "org.apache.samza:samza-core_2.12:0.14.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.apache.samza:samza-elasticsearch:0.14.0",
+    "coordinatesV2": "org.apache.samza:samza-elasticsearch:0.14.1",
+    "caller": "|java+method:///org/apache/samza/system/elasticsearch/ElasticsearchSystemFactory/getIndexRequestFactory(org.apache.samza.config.ElasticsearchConfig)|",
+    "called": "|java+method:///org/apache/samza/util/Util/getObj(java.lang.String,java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///com/google/common/base/Optional/isPresent()|",
+      "|java+method:///com/google/common/base/Optional/get()|",
+      "|java+method:///org/apache/samza/config/ElasticsearchConfig/getIndexRequestFactoryClassName()|",
+      "|java+constructor:///org/apache/samza/system/elasticsearch/indexrequest/DefaultIndexRequestFactory/DefaultIndexRequestFactory()|",
+      "|java+method:///org/apache/samza/util/Util/getObj(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/common/base/Optional/isPresent()|",
+      "|java+method:///com/google/common/base/Optional/get()|",
+      "|java+method:///org/apache/samza/config/ElasticsearchConfig/getIndexRequestFactoryClassName()|",
+      "|java+constructor:///org/apache/samza/system/elasticsearch/indexrequest/DefaultIndexRequestFactory/DefaultIndexRequestFactory()|",
+      "|java+method:///org/apache/samza/util/Util/getObj(java.lang.String,java.lang.Class)|"
+    ],
+    "affectedLib": "org.apache.samza:samza-core_2.11:0.14.1",
+    "change": "ADDED"
+  }
+]

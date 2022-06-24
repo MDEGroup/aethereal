@@ -1,0 +1,50 @@
+[
+  {
+    "coordinatesV1": "com.softwaremill.reactivekafka:reactive-kafka-core_2.10:0.8.4",
+    "coordinatesV2": "com.softwaremill.reactivekafka:reactive-kafka-core_2.10:0.9.0",
+    "caller": "|java+method:///com/softwaremill/react/kafka/commit/OffsetMap$$anonfun$toCommitRequestInfo$1/apply(long)|",
+    "called": "|java+constructor:///org/apache/kafka/clients/consumer/OffsetAndMetadata/OffsetAndMetadata(long)|",
+    "v1Body": [
+      "|java+constructor:///kafka/common/OffsetAndMetadata/OffsetAndMetadata(long,java.lang.String,long)|",
+      "|java+method:///kafka/common/OffsetAndMetadata$/apply$default$2()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/kafka/clients/consumer/OffsetAndMetadata/OffsetAndMetadata(long)|"
+    ],
+    "affectedLib": "org.apache.kafka:kafka-clients:0.9.0.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.softwaremill.reactivekafka:reactive-kafka-core_2.10:0.8.4",
+    "coordinatesV2": "com.softwaremill.reactivekafka:reactive-kafka-core_2.10:0.9.0",
+    "caller": "|java+method:///com/softwaremill/react/kafka/KafkaActorPublisher/com$softwaremill$react$kafka$KafkaActorPublisher$$cleanupResources()|",
+    "called": "|java+method:///org/apache/kafka/clients/consumer/KafkaConsumer/close()|",
+    "v1Body": [
+      "|java+method:///kafka/consumer/KafkaConsumer/close()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/softwaremill/react/kafka/KafkaActorPublisher/consumer()|",
+      "|java+method:///org/apache/kafka/clients/consumer/KafkaConsumer/close()|"
+    ],
+    "affectedLib": "org.apache.kafka:kafka-clients:0.9.0.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.softwaremill.reactivekafka:reactive-kafka-core_2.10:0.8.4",
+    "coordinatesV2": "com.softwaremill.reactivekafka:reactive-kafka-core_2.10:0.9.0",
+    "caller": "|java+method:///com/softwaremill/react/kafka/KafkaActorSubscriber/cleanupResources()|",
+    "called": "|java+method:///org/apache/kafka/clients/producer/KafkaProducer/close(long,java.util.concurrent.TimeUnit)|",
+    "v1Body": [
+      "|java+method:///kafka/producer/KafkaProducer/close()|",
+      "|java+method:///com/softwaremill/react/kafka/KafkaActorSubscriber/producer()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/softwaremill/react/kafka/KafkaActorSubscriber/richProducer()|",
+      "|java+method:///com/softwaremill/react/kafka/KafkaActorSubscriber/closeTimeoutMs()|",
+      "|java+method:///org/apache/kafka/clients/producer/KafkaProducer/close(long,java.util.concurrent.TimeUnit)|",
+      "|java+method:///kafka/producer/ReactiveKafkaProducer/producer()|"
+    ],
+    "affectedLib": "org.apache.kafka:kafka-clients:0.9.0.0",
+    "change": "ADDED"
+  }
+]

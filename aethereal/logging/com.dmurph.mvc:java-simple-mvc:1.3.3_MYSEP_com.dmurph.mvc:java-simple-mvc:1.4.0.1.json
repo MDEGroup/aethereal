@@ -1,0 +1,88 @@
+[
+  {
+    "coordinatesV1": "com.dmurph.mvc:java-simple-mvc:1.3.3",
+    "coordinatesV2": "com.dmurph.mvc:java-simple-mvc:1.4.0.1",
+    "caller": "|java+initializer:///com/dmurph/mvc/MVC/MVC$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+constructor:///java/lang/ThreadGroup/ThreadGroup(java.lang.String)|",
+      "|java+constructor:///com/dmurph/mvc/MVC/MVC()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+constructor:///com/dmurph/mvc/monitor/LoggingMonitor/LoggingMonitor()|",
+      "|java+constructor:///java/lang/ThreadGroup/ThreadGroup(java.lang.String)|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+constructor:///java/util/LinkedList/LinkedList()|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.6.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.dmurph.mvc:java-simple-mvc:1.3.3",
+    "coordinatesV2": "com.dmurph.mvc:java-simple-mvc:1.4.0.1",
+    "caller": "|java+initializer:///com/dmurph/mvc/I18n/I18n$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///java/io/PrintStream/println(java.lang.String)|",
+      "|java+method:///java/util/ResourceBundle/getBundle(java.lang.String)|",
+      "|java+method:///java/util/MissingResourceException/printStackTrace()|",
+      "|java+constructor:///com/dmurph/mvc/I18n$1/I18n$1()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///java/util/ResourceBundle/getBundle(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///com/dmurph/mvc/I18n$1/I18n$1()|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.6.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.dmurph.mvc:java-simple-mvc:1.3.3",
+    "coordinatesV2": "com.dmurph.mvc:java-simple-mvc:1.4.0.1",
+    "caller": "|java+method:///com/dmurph/mvc/MVC/internalDispatchEvent(com.dmurph.mvc.MVCEvent)|",
+    "called": "|java+method:///com/dmurph/tracking/JGoogleAnalyticsTracker/trackEvent(java.lang.String,java.lang.String,java.lang.String,java.lang.Integer)|",
+    "v1Body": [
+      "|java+method:///com/dmurph/mvc/MVCEvent/isPropagating()|",
+      "|java+method:///java/util/LinkedList/iterator()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///com/dmurph/mvc/tracking/ITrackable/getTrackingCategory()|",
+      "|java+method:///com/dmurph/mvc/tracking/ITrackable/getTrackingValue()|",
+      "|java+method:///com/dmurph/tracking/JGoogleAnalyticsTracker/trackEvent(java.lang.String,java.lang.String,java.lang.String,java.lang.Integer)|",
+      "|java+method:///com/dmurph/mvc/tracking/ITrackable/getTrackingLabel()|",
+      "|java+method:///com/dmurph/mvc/IGlobalEventMonitor/afterDispatch(com.dmurph.mvc.MVCEvent)|",
+      "|java+method:///com/dmurph/mvc/IGlobalEventMonitor/beforeDispatch(com.dmurph.mvc.MVCEvent)|",
+      "|java+method:///com/dmurph/mvc/IGlobalEventMonitor/exceptionThrown(com.dmurph.mvc.MVCEvent,java.lang.Exception)|",
+      "|java+method:///com/dmurph/mvc/tracking/ITrackable/getTrackingAction()|",
+      "|java+method:///com/dmurph/mvc/IEventListener/eventReceived(com.dmurph.mvc.MVCEvent)|",
+      "|java+method:///java/util/HashMap/get(java.lang.Object)|",
+      "|java+method:///com/dmurph/mvc/tracking/ICustomTracker/getCustomTracker()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///com/dmurph/mvc/tracking/ITrackable/getTrackingCategory()|",
+      "|java+method:///com/dmurph/mvc/tracking/ITrackable/getTrackingValue()|",
+      "|java+method:///com/dmurph/mvc/tracking/ITrackable/getTrackingLabel()|",
+      "|java+method:///com/dmurph/mvc/IGlobalEventMonitor/afterDispatch(com.dmurph.mvc.MVCEvent)|",
+      "|java+method:///com/dmurph/mvc/IGlobalEventMonitor/beforeDispatch(com.dmurph.mvc.MVCEvent)|",
+      "|java+method:///java/util/Iterator/remove()|",
+      "|java+method:///com/dmurph/mvc/MVCEvent/isPropagating()|",
+      "|java+method:///java/util/LinkedList/iterator()|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Object)|",
+      "|java+method:///com/dmurph/mvc/IGlobalEventMonitor/exceptionThrown(com.dmurph.mvc.MVCEvent,java.lang.Exception)|",
+      "|java+method:///com/dmurph/mvc/tracking/ITrackable/getTrackingAction()|",
+      "|java+method:///com/dmurph/mvc/IEventListener/eventReceived(com.dmurph.mvc.MVCEvent)|",
+      "|java+method:///com/dmurph/tracking/JGoogleAnalyticsTracker/trackEvent(java.lang.String,java.lang.String,java.lang.String,java.lang.Integer)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/util/HashMap/get(java.lang.Object)|",
+      "|java+method:///com/dmurph/mvc/tracking/ICustomTracker/getCustomTracker()|"
+    ],
+    "affectedLib": "com.dmurph:JGoogleAnalyticsTracker:1.2.0",
+    "change": "UPDATED"
+  }
+]

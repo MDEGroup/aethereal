@@ -1,0 +1,57 @@
+[
+  {
+    "coordinatesV1": "org.apereo.cas:cas-server-support-mongo-service-registry:5.0.10",
+    "coordinatesV2": "org.apereo.cas:cas-server-support-mongo-service-registry:5.1.0-RC4",
+    "caller": "|java+constructor:///org/apereo/cas/services/MongoServiceRegistryDao/MongoServiceRegistryDao(org.springframework.data.mongodb.core.MongoOperations,java.lang.String,boolean)|",
+    "called": "|java+method:///org/springframework/util/Assert/notNull(java.lang.Object)|",
+    "v1Body": [
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/springframework/data/mongodb/core/MongoOperations/dropCollection(java.lang.String)|",
+      "|java+method:///org/springframework/data/mongodb/core/MongoOperations/createCollection(java.lang.String)|",
+      "|java+method:///org/springframework/data/mongodb/core/MongoOperations/collectionExists(java.lang.String)|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///org/springframework/util/Assert/notNull(java.lang.Object)|"
+    ],
+    "affectedLib": "org.springframework:spring-core:4.3.8.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apereo.cas:cas-server-support-mongo-service-registry:5.0.10",
+    "coordinatesV2": "org.apereo.cas:cas-server-support-mongo-service-registry:5.1.0-RC4",
+    "caller": "|java+method:///org/apereo/cas/config/MongoDbServiceRegistryConfiguration/customConversions()|",
+    "called": "|java+constructor:///org/springframework/data/mongodb/core/convert/CustomConversions/CustomConversions(java.util.List)|",
+    "v1Body": [
+      "|java+constructor:///org/apereo/cas/services/convert/BaseConverters$ClassConverter/BaseConverters$ClassConverter()|",
+      "|java+constructor:///org/apereo/cas/services/convert/BaseConverters$CacheLoaderConverter/BaseConverters$CacheLoaderConverter()|",
+      "|java+method:///com/google/common/collect/Lists/newArrayList(java.lang.Object%5B%5D)|",
+      "|java+constructor:///org/apereo/cas/services/convert/BaseConverters$CacheConverter/BaseConverters$CacheConverter()|",
+      "|java+constructor:///org/springframework/data/mongodb/core/convert/CustomConversions/CustomConversions(java.util.List)|",
+      "|java+constructor:///org/apereo/cas/services/convert/BaseConverters$RunnableConverter/BaseConverters$RunnableConverter()|",
+      "|java+constructor:///org/apereo/cas/services/convert/BaseConverters$ReferenceQueueConverter/BaseConverters$ReferenceQueueConverter()|",
+      "|java+constructor:///org/apereo/cas/services/convert/BaseConverters$CertPathConverter/BaseConverters$CertPathConverter()|",
+      "|java+constructor:///org/apereo/cas/services/convert/BaseConverters$ThreadLocalConverter/BaseConverters$ThreadLocalConverter()|",
+      "|java+constructor:///org/apereo/cas/services/convert/BaseConverters$PersonAttributesConverter/BaseConverters$PersonAttributesConverter()|",
+      "|java+constructor:///org/apereo/cas/services/convert/BaseConverters$CommonsLogConverter/BaseConverters$CommonsLogConverter()|",
+      "|java+constructor:///org/apereo/cas/services/convert/BaseConverters$LoggerConverter/BaseConverters$LoggerConverter()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Arrays/asList(java.lang.Object%5B%5D)|",
+      "|java+constructor:///org/apereo/cas/services/convert/BaseConverters$ClassConverter/BaseConverters$ClassConverter()|",
+      "|java+constructor:///org/apereo/cas/services/convert/BaseConverters$CacheLoaderConverter/BaseConverters$CacheLoaderConverter()|",
+      "|java+constructor:///org/apereo/cas/services/convert/BaseConverters$CacheConverter/BaseConverters$CacheConverter()|",
+      "|java+constructor:///org/springframework/data/mongodb/core/convert/CustomConversions/CustomConversions(java.util.List)|",
+      "|java+constructor:///org/apereo/cas/services/convert/BaseConverters$RunnableConverter/BaseConverters$RunnableConverter()|",
+      "|java+constructor:///org/apereo/cas/services/convert/BaseConverters$ReferenceQueueConverter/BaseConverters$ReferenceQueueConverter()|",
+      "|java+constructor:///org/apereo/cas/services/convert/BaseConverters$CertPathConverter/BaseConverters$CertPathConverter()|",
+      "|java+constructor:///org/apereo/cas/services/convert/BaseConverters$ThreadLocalConverter/BaseConverters$ThreadLocalConverter()|",
+      "|java+constructor:///org/apereo/cas/services/convert/BaseConverters$PersonAttributesConverter/BaseConverters$PersonAttributesConverter()|",
+      "|java+constructor:///org/apereo/cas/services/convert/BaseConverters$CommonsLogConverter/BaseConverters$CommonsLogConverter()|",
+      "|java+constructor:///org/apereo/cas/services/convert/BaseConverters$LoggerConverter/BaseConverters$LoggerConverter()|"
+    ],
+    "affectedLib": "org.springframework.data:spring-data-mongodb:1.10.1.RELEASE",
+    "change": "UPDATED"
+  }
+]

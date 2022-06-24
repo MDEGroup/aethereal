@@ -1,0 +1,121 @@
+[
+  {
+    "coordinatesV1": "com.github.davidcarboni:restolino:0.1.12",
+    "coordinatesV2": "com.github.davidcarboni:restolino:0.1.13",
+    "caller": "|java+initializer:///com/github/davidcarboni/restolino/reload/Scanner/Scanner$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+constructor:///java/util/concurrent/ConcurrentHashMap/ConcurrentHashMap()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/util/concurrent/ConcurrentHashMap/ConcurrentHashMap()|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.github.davidcarboni:restolino:0.1.12",
+    "coordinatesV2": "com.github.davidcarboni:restolino:0.1.13",
+    "caller": "|java+method:///com/github/davidcarboni/restolino/Main/main(java.lang.String%5B%5D)|",
+    "called": "|java+constructor:///org/eclipse/jetty/server/handler/StatisticsHandler/StatisticsHandler()|",
+    "v1Body": [
+      "|java+constructor:///com/github/davidcarboni/restolino/Configuration/Configuration()|",
+      "|java+method:///java/lang/Runtime/getRuntime()|",
+      "|java+method:///org/eclipse/jetty/server/handler/gzip/GzipHandler/setHandler(org.eclipse.jetty.server.Handler)|",
+      "|java+constructor:///org/eclipse/jetty/server/handler/gzip/GzipHandler/GzipHandler()|",
+      "|java+constructor:///com/github/davidcarboni/restolino/jetty/BasicAuth/BasicAuth()|",
+      "|java+method:///org/eclipse/jetty/security/SecurityHandler/setHandler(org.eclipse.jetty.server.Handler)|",
+      "|java+method:///org/eclipse/jetty/server/handler/StatisticsHandler/setHandler(org.eclipse.jetty.server.Handler)|",
+      "|java+constructor:///org/eclipse/jetty/server/Server/Server(int)|",
+      "|java+method:///org/eclipse/jetty/server/Server/setHandler(org.eclipse.jetty.server.Handler)|",
+      "|java+constructor:///com/github/davidcarboni/restolino/jetty/MainHandler/MainHandler()|",
+      "|java+method:///org/eclipse/jetty/server/Server/join()|",
+      "|java+method:///java/io/PrintStream/println(java.lang.String)|",
+      "|java+constructor:///java/lang/Thread/Thread(java.lang.Runnable)|",
+      "|java+method:///java/lang/Runtime/addShutdownHook(java.lang.Thread)|",
+      "|java+constructor:///com/github/davidcarboni/restolino/Main$1/Main$1()|",
+      "|java+constructor:///org/eclipse/jetty/server/handler/StatisticsHandler/StatisticsHandler()|",
+      "|java+method:///java/io/PrintStream/println(java.lang.Object)|",
+      "|java+method:///org/eclipse/jetty/server/Server/start()|",
+      "|java+method:///com/github/davidcarboni/restolino/reload/ClassReloader/shutdown()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/github/davidcarboni/restolino/Configuration/Configuration()|",
+      "|java+method:///java/lang/Runtime/getRuntime()|",
+      "|java+method:///org/eclipse/jetty/server/Server/join()|",
+      "|java+method:///org/eclipse/jetty/server/handler/gzip/GzipHandler/setHandler(org.eclipse.jetty.server.Handler)|",
+      "|java+constructor:///org/eclipse/jetty/server/handler/gzip/GzipHandler/GzipHandler()|",
+      "|java+constructor:///com/github/davidcarboni/restolino/jetty/BasicAuth/BasicAuth()|",
+      "|java+method:///org/eclipse/jetty/security/SecurityHandler/setHandler(org.eclipse.jetty.server.Handler)|",
+      "|java+method:///org/eclipse/jetty/server/handler/StatisticsHandler/setHandler(org.eclipse.jetty.server.Handler)|",
+      "|java+constructor:///org/eclipse/jetty/server/Server/Server(int)|",
+      "|java+method:///org/eclipse/jetty/server/Server/setHandler(org.eclipse.jetty.server.Handler)|",
+      "|java+constructor:///com/github/davidcarboni/restolino/jetty/MainHandler/MainHandler()|",
+      "|java+constructor:///java/lang/Thread/Thread(java.lang.Runnable)|",
+      "|java+method:///java/lang/Runtime/addShutdownHook(java.lang.Thread)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String)|",
+      "|java+constructor:///com/github/davidcarboni/restolino/Main$1/Main$1()|",
+      "|java+constructor:///org/eclipse/jetty/server/handler/StatisticsHandler/StatisticsHandler()|",
+      "|java+method:///java/io/PrintStream/println(java.lang.Object)|",
+      "|java+method:///org/eclipse/jetty/server/Server/start()|",
+      "|java+method:///com/github/davidcarboni/restolino/reload/ClassReloader/shutdown()|"
+    ],
+    "affectedLib": "org.eclipse.jetty:jetty-server:9.3.8.v20160314",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.github.davidcarboni:restolino:0.1.12",
+    "coordinatesV2": "com.github.davidcarboni:restolino:0.1.13",
+    "caller": "|java+constructor:///com/github/davidcarboni/restolino/jetty/ApiHandler/ApiHandler()|",
+    "called": "|java+constructor:///org/eclipse/jetty/server/handler/AbstractHandler/AbstractHandler()|",
+    "v1Body": [
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///org/eclipse/jetty/server/handler/AbstractHandler/AbstractHandler()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/io/PrintStream/println(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///org/eclipse/jetty/server/handler/AbstractHandler/AbstractHandler()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "affectedLib": "org.eclipse.jetty:jetty-server:9.3.8.v20160314",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.github.davidcarboni:restolino:0.1.12",
+    "coordinatesV2": "com.github.davidcarboni:restolino:0.1.13",
+    "caller": "|java+method:///com/github/davidcarboni/restolino/jetty/MainHandler/setupFilesHandler(org.reflections.Reflections)|",
+    "called": "|java+constructor:///org/eclipse/jetty/server/handler/ResourceHandler/ResourceHandler()|",
+    "v1Body": [
+      "|java+method:///org/eclipse/jetty/util/resource/Resource/newResource(java.net.URL)|",
+      "|java+method:///com/github/davidcarboni/restolino/jetty/MainHandler/getFilesUrl(org.reflections.Reflections)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/eclipse/jetty/server/handler/ResourceHandler/setBaseResource(org.eclipse.jetty.util.resource.Resource)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+constructor:///org/eclipse/jetty/server/handler/ResourceHandler/ResourceHandler()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/io/PrintStream/println(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///com/github/davidcarboni/restolino/jetty/MainHandler/getFilesUrl(org.reflections.Reflections)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/eclipse/jetty/server/handler/ResourceHandler/setBaseResource(org.eclipse.jetty.util.resource.Resource)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+constructor:///org/eclipse/jetty/server/handler/ResourceHandler/ResourceHandler()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/eclipse/jetty/util/resource/Resource/newResource(java.net.URL)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String)|"
+    ],
+    "affectedLib": "org.eclipse.jetty:jetty-server:9.3.8.v20160314",
+    "change": "UPDATED"
+  }
+]

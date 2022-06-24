@@ -1,0 +1,30 @@
+[
+  {
+    "coordinatesV1": "org.ops4j.pax.exam:pax-exam-container-forked:3.0.0.RC1",
+    "coordinatesV2": "org.ops4j.pax.exam:pax-exam-container-forked:3.0.0",
+    "caller": "|java+method:///org/ops4j/pax/exam/forked/ForkedTestContainer/createSystemProperties()|",
+    "called": "|java+method:///org/ops4j/pax/exam/options/SystemPropertyOption/getValue()|",
+    "v1Body": [
+      "|java+method:///org/ops4j/pax/exam/options/SystemPropertyOption/getValue()|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+method:///org/ops4j/pax/exam/options/SystemPropertyOption/getKey()|",
+      "|java+method:///org/ops4j/pax/exam/forked/ForkedTestContainer/buildString(org.ops4j.pax.exam.options.ValueOption%5B%5D)|",
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/ops4j/pax/exam/ExamSystem/getOptions(java.lang.Class)|",
+      "|java+method:///java/lang/System/setProperty(java.lang.String,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/ops4j/pax/exam/options/SystemPropertyOption/getValue()|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+method:///org/ops4j/pax/exam/options/SystemPropertyOption/getKey()|",
+      "|java+method:///java/lang/System/getProperty(java.lang.String)|",
+      "|java+method:///org/ops4j/pax/exam/options/PropagateSystemPropertyOption/getKey()|",
+      "|java+method:///org/ops4j/pax/exam/forked/ForkedTestContainer/buildString(org.ops4j.pax.exam.options.ValueOption%5B%5D)|",
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/ops4j/pax/exam/ExamSystem/getOptions(java.lang.Class)|",
+      "|java+method:///java/lang/System/setProperty(java.lang.String,java.lang.String)|"
+    ],
+    "affectedLib": "org.ops4j.pax.exam:pax-exam:3.0.0",
+    "change": "UPDATED"
+  }
+]

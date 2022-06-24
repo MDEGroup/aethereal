@@ -1,0 +1,64 @@
+[
+  {
+    "coordinatesV1": "org.apereo.cas:cas-server-support-redis-ticket-registry:5.2.0-RC2",
+    "coordinatesV2": "org.apereo.cas:cas-server-support-redis-ticket-registry:5.2.1",
+    "caller": "|java+method:///org/apereo/cas/config/RedisTicketRegistryConfiguration/redisConnectionFactory()|",
+    "called": "|java+method:///org/apereo/cas/redis/core/RedisObjectFactory/newRedisConnectionFactory(org.apereo.cas.configuration.model.support.redis.BaseRedisProperties)|",
+    "v1Body": [
+      "|java+constructor:///org/springframework/data/redis/connection/jedis/JedisConnectionFactory/JedisConnectionFactory(redis.clients.jedis.JedisPoolConfig)|",
+      "|java+method:///org/apereo/cas/configuration/model/support/redis/RedisTicketRegistryProperties/getPool()|",
+      "|java+method:///org/apereo/cas/configuration/model/support/redis/RedisTicketRegistryProperties/getTimeout()|",
+      "|java+method:///org/apereo/cas/configuration/model/core/ticket/registry/TicketRegistryProperties/getRedis()|",
+      "|java+method:///org/apereo/cas/configuration/model/support/redis/RedisTicketRegistryProperties/getPort()|",
+      "|java+method:///org/springframework/data/redis/connection/jedis/JedisConnectionFactory/setHostName(java.lang.String)|",
+      "|java+method:///org/apereo/cas/configuration/CasConfigurationProperties/getTicket()|",
+      "|java+method:///org/apereo/cas/configuration/model/support/redis/RedisTicketRegistryProperties/getHost()|",
+      "|java+constructor:///redis/clients/jedis/JedisPoolConfig/JedisPoolConfig()|",
+      "|java+method:///org/springframework/data/redis/connection/jedis/JedisConnectionFactory/setTimeout(int)|",
+      "|java+method:///org/apereo/cas/config/RedisTicketRegistryConfiguration/jedisPoolConfig()|",
+      "|java+method:///org/apereo/cas/configuration/model/support/redis/RedisTicketRegistryProperties/getDatabase()|",
+      "|java+method:///org/apereo/cas/configuration/model/support/redis/RedisTicketRegistryProperties/getPassword()|",
+      "|java+method:///org/springframework/data/redis/connection/jedis/JedisConnectionFactory/setPort(int)|",
+      "|java+method:///org/apereo/cas/configuration/model/core/util/TicketProperties/getRegistry()|",
+      "|java+method:///org/springframework/data/redis/connection/jedis/JedisConnectionFactory/setPassword(java.lang.String)|",
+      "|java+method:///org/springframework/data/redis/connection/jedis/JedisConnectionFactory/setDatabase(int)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apereo/cas/configuration/model/core/ticket/registry/TicketRegistryProperties/getRedis()|",
+      "|java+constructor:///org/apereo/cas/redis/core/RedisObjectFactory/RedisObjectFactory()|",
+      "|java+method:///org/apereo/cas/configuration/model/core/util/TicketProperties/getRegistry()|",
+      "|java+method:///org/apereo/cas/configuration/CasConfigurationProperties/getTicket()|",
+      "|java+method:///org/apereo/cas/redis/core/RedisObjectFactory/newRedisConnectionFactory(org.apereo.cas.configuration.model.support.redis.BaseRedisProperties)|"
+    ],
+    "affectedLib": "org.apereo.cas:cas-server-support-redis-core:5.2.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apereo.cas:cas-server-support-redis-ticket-registry:5.2.0-RC2",
+    "coordinatesV2": "org.apereo.cas:cas-server-support-redis-ticket-registry:5.2.1",
+    "caller": "|java+method:///org/apereo/cas/config/RedisTicketRegistryConfiguration/ticketRegistry()|",
+    "called": "|java+method:///org/apereo/cas/configuration/support/Beans/newTicketRegistryCipherExecutor(org.apereo.cas.configuration.model.core.util.EncryptionRandomizedSigningJwtCryptographyProperties,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/apereo/cas/ticket/registry/RedisTicketRegistry/setCipherExecutor(org.apereo.cas.CipherExecutor)|",
+      "|java+method:///org/apereo/cas/configuration/model/core/ticket/registry/TicketRegistryProperties/getRedis()|",
+      "|java+method:///org/apereo/cas/configuration/model/support/redis/RedisTicketRegistryProperties/getCrypto()|",
+      "|java+constructor:///org/apereo/cas/ticket/registry/RedisTicketRegistry/RedisTicketRegistry(org.apereo.cas.ticket.registry.TicketRedisTemplate)|",
+      "|java+method:///org/apereo/cas/configuration/model/core/util/TicketProperties/getRegistry()|",
+      "|java+method:///org/apereo/cas/configuration/CasConfigurationProperties/getTicket()|",
+      "|java+method:///org/apereo/cas/configuration/support/Beans/newTicketRegistryCipherExecutor(org.apereo.cas.configuration.model.core.util.EncryptionRandomizedSigningJwtCryptographyProperties)|",
+      "|java+method:///org/apereo/cas/config/RedisTicketRegistryConfiguration/ticketRedisTemplate()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apereo/cas/ticket/registry/RedisTicketRegistry/setCipherExecutor(org.apereo.cas.CipherExecutor)|",
+      "|java+constructor:///org/apereo/cas/ticket/registry/RedisTicketRegistry/RedisTicketRegistry(org.springframework.data.redis.core.RedisTemplate)|",
+      "|java+method:///org/apereo/cas/configuration/model/core/ticket/registry/TicketRegistryProperties/getRedis()|",
+      "|java+method:///org/apereo/cas/configuration/model/support/redis/RedisTicketRegistryProperties/getCrypto()|",
+      "|java+method:///org/apereo/cas/configuration/model/core/util/TicketProperties/getRegistry()|",
+      "|java+method:///org/apereo/cas/configuration/CasConfigurationProperties/getTicket()|",
+      "|java+method:///org/apereo/cas/configuration/support/Beans/newTicketRegistryCipherExecutor(org.apereo.cas.configuration.model.core.util.EncryptionRandomizedSigningJwtCryptographyProperties,java.lang.String)|",
+      "|java+method:///org/apereo/cas/config/RedisTicketRegistryConfiguration/ticketRedisTemplate()|"
+    ],
+    "affectedLib": "org.apereo.cas:cas-server-core-configuration:5.2.1",
+    "change": "UPDATED"
+  }
+]

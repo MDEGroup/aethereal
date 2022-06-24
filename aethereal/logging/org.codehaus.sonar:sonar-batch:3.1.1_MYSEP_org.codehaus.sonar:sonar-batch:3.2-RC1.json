@@ -1,0 +1,142 @@
+[
+  {
+    "coordinatesV1": "org.codehaus.sonar:sonar-batch:3.1.1",
+    "coordinatesV2": "org.codehaus.sonar:sonar-batch:3.2-RC1",
+    "caller": "|java+method:///org/sonar/batch/index/MeasurePersister/dump()|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///java/util/Map$Entry/getKey()|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///org/sonar/api/database/DatabaseSession/commit()|",
+      "|java+method:///org/sonar/batch/index/ResourcePersister/getSnapshot(org.sonar.api.resources.Resource)|",
+      "|java+method:///org/sonar/batch/index/MeasurePersister/createModel(org.sonar.api.measures.Measure)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///org/sonar/api/database/model/MeasureModel/save(org.sonar.api.database.DatabaseSession)|",
+      "|java+method:///java/util/Map/entrySet()|",
+      "|java+method:///com/google/common/collect/SetMultimap/clear()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///com/google/common/collect/SetMultimap/size()|",
+      "|java+method:///org/sonar/api/database/model/Snapshot/getId()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/sonar/batch/index/MeasurePersister/shouldPersistMeasure(org.sonar.api.resources.Resource,org.sonar.api.measures.Measure)|",
+      "|java+method:///org/sonar/api/database/model/MeasureModel/setSnapshotId(java.lang.Integer)|",
+      "|java+method:///java/util/Set/iterator()|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///java/util/Map$Entry/getValue()|",
+      "|java+method:///com/google/common/collect/SetMultimap/asMap()|",
+      "|java+method:///java/util/Collection/iterator()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/common/collect/SetMultimap/size()|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///org/sonar/batch/index/MeasurePersister/insert(java.lang.Iterable)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///org/sonar/batch/index/MeasurePersister/getMeasuresToSave()|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.6.2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.codehaus.sonar:sonar-batch:3.1.1",
+    "coordinatesV2": "org.codehaus.sonar:sonar-batch:3.2-RC1",
+    "caller": "|java+method:///org/sonar/batch/components/TimeMachineConfiguration/buildProjectSnapshot()|",
+    "called": "|java+constructor:///org/sonar/api/database/model/Snapshot/Snapshot()|",
+    "v1Body": [
+      "|java+method:///org/sonar/api/database/model/Snapshot/setBuildDate(java.util.Date)|",
+      "|java+method:///org/sonar/api/database/DatabaseSession/createNativeQuery(java.lang.String)|",
+      "|java+method:///org/sonar/api/resources/Project/getKey()|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///org/sonar/api/database/model/Snapshot/setCreatedAt(java.util.Date)|",
+      "|java+constructor:///org/sonar/api/database/model/Snapshot/Snapshot()|",
+      "|java+method:///org/sonar/api/resources/Project/getAnalysisDate()|",
+      "|java+method:///java/lang/Number/intValue()|",
+      "|java+constructor:///java/util/Date/Date()|",
+      "|java+method:///org/sonar/api/database/model/Snapshot/setResourceId(java.lang.Integer)|",
+      "|java+method:///javax/persistence/Query/setParameter(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/sonar/api/database/DatabaseSession/getSingleResult(javax.persistence.Query,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/sonar/api/database/model/Snapshot/setBuildDate(java.util.Date)|",
+      "|java+method:///org/sonar/api/database/model/Snapshot/setVersion(java.lang.String)|",
+      "|java+method:///org/sonar/api/resources/Project/getAnalysisVersion()|",
+      "|java+method:///org/sonar/api/database/DatabaseSession/createNativeQuery(java.lang.String)|",
+      "|java+method:///org/sonar/api/resources/Project/getKey()|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///org/sonar/api/database/model/Snapshot/setCreatedAt(java.util.Date)|",
+      "|java+constructor:///org/sonar/api/database/model/Snapshot/Snapshot()|",
+      "|java+method:///org/sonar/api/resources/Project/getAnalysisDate()|",
+      "|java+method:///java/lang/Number/intValue()|",
+      "|java+constructor:///java/util/Date/Date()|",
+      "|java+method:///org/sonar/api/database/model/Snapshot/setResourceId(java.lang.Integer)|",
+      "|java+method:///javax/persistence/Query/setParameter(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/sonar/api/database/DatabaseSession/getSingleResult(javax.persistence.Query,java.lang.Object)|"
+    ],
+    "affectedLib": "org.codehaus.sonar:sonar-plugin-api:3.2-RC1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.codehaus.sonar:sonar-batch:3.1.1",
+    "coordinatesV2": "org.codehaus.sonar:sonar-batch:3.2-RC1",
+    "caller": "|java+method:///org/sonar/batch/index/MeasurePersister/shouldPersistMeasure(org.sonar.api.resources.Resource,org.sonar.api.measures.Measure)|",
+    "called": "|java+method:///org/sonar/api/measures/Measure/isBestValue()|",
+    "v1Body": [
+      "|java+method:///org/sonar/api/measures/Measure/getPersistenceMode()|",
+      "|java+method:///org/sonar/api/resources/ResourceUtils/isEntity(org.sonar.api.resources.Resource)|",
+      "|java+method:///org/sonar/batch/index/MeasurePersister/isBestValueMeasure(org.sonar.api.measures.Measure,org.sonar.api.measures.Metric)|",
+      "|java+method:///org/sonar/api/measures/PersistenceMode/useDatabase()|",
+      "|java+method:///org/sonar/api/measures/Measure/getMetric()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/sonar/api/measures/PersistenceMode/useDatabase()|",
+      "|java+method:///org/sonar/api/measures/Measure/getPersistenceMode()|",
+      "|java+method:///org/sonar/api/resources/ResourceUtils/isEntity(org.sonar.api.resources.Resource)|",
+      "|java+method:///org/sonar/api/measures/Measure/isBestValue()|"
+    ],
+    "affectedLib": "org.codehaus.sonar:sonar-plugin-api:3.2-RC1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.codehaus.sonar:sonar-batch:3.1.1",
+    "coordinatesV2": "org.codehaus.sonar:sonar-batch:3.2-RC1",
+    "caller": "|java+method:///org/sonar/batch/index/DefaultIndex/addViolation(org.sonar.api.rules.Violation,boolean)|",
+    "called": "|java+method:///org/sonar/api/resources/Scopes/isHigherThanOrEquals(org.sonar.api.resources.Resource,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/sonar/api/resources/Scopes/isHigherThanOrEquals(org.sonar.api.resources.Resource,java.lang.String)|",
+      "|java+method:///org/sonar/api/rules/ActiveRule/getSeverity()|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/sonar/batch/index/DefaultIndex/doAddViolation(org.sonar.api.rules.Violation,org.sonar.batch.index.Bucket)|",
+      "|java+method:///org/sonar/api/rules/Violation/setSeverity(org.sonar.api.rules.RulePriority)|",
+      "|java+method:///org/sonar/api/rules/Violation/getResource()|",
+      "|java+method:///org/sonar/api/profiles/RulesProfile/getActiveRule(org.sonar.api.rules.Rule)|",
+      "|java+method:///org/sonar/api/rules/Violation/isManual()|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|",
+      "|java+method:///org/sonar/api/resources/Project/getReuseExistingRulesConfig()|",
+      "|java+method:///org/sonar/api/rules/Violation/getRule()|",
+      "|java+method:///org/sonar/batch/ViolationFilters/isIgnored(org.sonar.api.rules.Violation)|",
+      "|java+method:///org/sonar/batch/index/Bucket/isExcluded()|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///org/sonar/batch/index/DefaultIndex/checkIndexed(org.sonar.api.resources.Resource)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///org/sonar/api/rules/Violation/setResource(org.sonar.api.resources.Resource)|",
+      "|java+method:///org/sonar/api/rules/Rule/getSeverity()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/sonar/api/rules/Violation/getRule()|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/sonar/api/resources/Scopes/isHigherThanOrEquals(org.sonar.api.resources.Resource,java.lang.String)|",
+      "|java+method:///org/sonar/api/rules/Violation/getResource()|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|",
+      "|java+method:///org/sonar/batch/index/DefaultIndex/checkIndexed(org.sonar.api.resources.Resource)|",
+      "|java+method:///org/sonar/api/rules/Violation/setResource(org.sonar.api.resources.Resource)|",
+      "|java+method:///org/sonar/batch/index/DefaultIndex/addViolation(org.sonar.api.rules.Violation,org.sonar.batch.index.Bucket)|",
+      "|java+method:///org/sonar/batch/ViolationFilters/isIgnored(org.sonar.api.rules.Violation)|",
+      "|java+method:///org/sonar/batch/index/Bucket/isExcluded()|"
+    ],
+    "affectedLib": "org.codehaus.sonar:sonar-plugin-api:3.2-RC1",
+    "change": "UPDATED"
+  }
+]

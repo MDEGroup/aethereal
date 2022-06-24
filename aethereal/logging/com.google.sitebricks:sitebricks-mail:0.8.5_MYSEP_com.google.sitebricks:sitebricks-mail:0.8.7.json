@@ -1,0 +1,97 @@
+[
+  {
+    "coordinatesV1": "com.google.sitebricks:sitebricks-mail:0.8.5",
+    "coordinatesV2": "com.google.sitebricks:sitebricks-mail:0.8.7",
+    "caller": "|java+method:///com/google/sitebricks/mail/MailClientHandler/awaitLogin()|",
+    "called": "|java+method:///com/google/sitebricks/util/BoundedDiscardingList/list()|",
+    "v1Body": [
+      "|java+method:///java/util/concurrent/CountDownLatch/await()|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String,java.lang.Throwable)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/sitebricks/util/BoundedDiscardingList/list()|",
+      "|java+constructor:///com/google/sitebricks/mail/MailClientHandler$Error/MailClientHandler$Error(com.google.sitebricks.mail.CommandCompletion,java.lang.String,java.util.List)|",
+      "|java+method:///java/util/concurrent/CountDownLatch/await(long,java.util.concurrent.TimeUnit)|",
+      "|java+method:///java/util/concurrent/LinkedBlockingDeque/push(java.lang.Object)|",
+      "|java+method:///java/lang/InterruptedException/getMessage()|",
+      "|java+method:///com/google/sitebricks/mail/MailClientHandler/isLoggedIn()|",
+      "|java+method:///com/google/sitebricks/mail/MailClientHandler/disconnectAbnormally(java.lang.String)|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String)|"
+    ],
+    "affectedLib": "com.google.sitebricks:sitebricks:0.8.7",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.google.sitebricks:sitebricks-mail:0.8.5",
+    "coordinatesV2": "com.google.sitebricks:sitebricks-mail:0.8.7",
+    "caller": "|java+method:///com/google/sitebricks/mail/MailClientHandler/complete(java.lang.String)|",
+    "called": "|java+method:///com/google/sitebricks/util/BoundedDiscardingList/list()|",
+    "v1Body": [
+      "|java+method:///com/google/sitebricks/mail/CommandCompletion/complete(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Object)|",
+      "|java+method:///java/util/Queue/peek()|",
+      "|java+method:///java/util/Queue/poll()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+constructor:///com/google/sitebricks/mail/MailHandlingException/MailHandlingException(java.util.List,java.lang.String,java.lang.Exception)|",
+      "|java+method:///com/google/sitebricks/mail/MailClientConfig/getUsername()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///com/google/sitebricks/util/BoundedDiscardingList/list()|",
+      "|java+method:///com/google/sitebricks/mail/Idler/idleStart()|",
+      "|java+method:///java/util/Queue/peek()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/util/concurrent/LinkedBlockingDeque/push(java.lang.Object)|",
+      "|java+method:///java/util/concurrent/atomic/AtomicBoolean/set(boolean)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///com/google/sitebricks/mail/CommandCompletion/complete(java.lang.String)|",
+      "|java+method:///java/lang/String/equalsIgnoreCase(java.lang.String)|",
+      "|java+method:///java/util/regex/Matcher/matches()|",
+      "|java+constructor:///com/google/sitebricks/mail/MailClientHandler$Error/MailClientHandler$Error(com.google.sitebricks.mail.CommandCompletion,java.lang.String,java.util.List)|",
+      "|java+method:///org/slf4j/Logger/trace(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Object)|",
+      "|java+method:///java/util/Queue/poll()|",
+      "|java+method:///com/google/sitebricks/mail/MailClientHandler/getWireTrace()|",
+      "|java+method:///com/google/sitebricks/mail/MailClientHandler/getCommandTrace()|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String)|",
+      "|java+method:///com/google/sitebricks/mail/CommandCompletion/error(java.lang.String,java.lang.Exception)|",
+      "|java+method:///java/util/regex/Pattern/matcher(java.lang.CharSequence)|"
+    ],
+    "affectedLib": "com.google.sitebricks:sitebricks:0.8.7",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.google.sitebricks:sitebricks-mail:0.8.5",
+    "coordinatesV2": "com.google.sitebricks:sitebricks-mail:0.8.7",
+    "caller": "|java+initializer:///com/google/sitebricks/mail/NettyImapClient/NettyImapClient$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/util/concurrent/ConcurrentHashMap/ConcurrentHashMap()|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///java/lang/System/setProperty(java.lang.String,java.lang.String)|",
+      "|java+constructor:///java/text/SimpleDateFormat/SimpleDateFormat(java.lang.String)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.6.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.google.sitebricks:sitebricks-mail:0.8.5",
+    "coordinatesV2": "com.google.sitebricks:sitebricks-mail:0.8.7",
+    "caller": "|java+initializer:///com/google/sitebricks/mail/MailClientHandler/MailClientHandler$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/regex/Pattern/compile(java.lang.String,int)|",
+      "|java+constructor:///java/util/concurrent/ConcurrentHashMap/ConcurrentHashMap()|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.6.1",
+    "change": "UPDATED"
+  }
+]

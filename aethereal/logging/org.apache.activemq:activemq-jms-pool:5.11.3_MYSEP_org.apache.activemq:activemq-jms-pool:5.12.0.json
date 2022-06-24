@@ -1,0 +1,565 @@
+[
+  {
+    "coordinatesV1": "org.apache.activemq:activemq-jms-pool:5.12.0",
+    "coordinatesV2": "org.apache.activemq:activemq-jms-pool:5.11.3",
+    "caller": "|java+method:///org/apache/activemq/jms/pool/ConnectionPool/setBlockIfSessionPoolIsFullTimeout(long)|",
+    "called": "|java+method:///org/apache/commons/pool/impl/GenericKeyedObjectPool/setMaxWait(long)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/pool/impl/GenericKeyedObjectPool/setMaxWait(long)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/pool2/impl/GenericKeyedObjectPool/setMaxWaitMillis(long)|"
+    ],
+    "affectedLib": "commons-pool:commons-pool:1.6",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.apache.activemq:activemq-jms-pool:5.12.0",
+    "coordinatesV2": "org.apache.activemq:activemq-jms-pool:5.11.3",
+    "caller": "|java+method:///org/apache/activemq/jms/pool/PooledConnectionFactory/createConnection(java.lang.String,java.lang.String)|",
+    "called": "|java+method:///org/apache/commons/pool/impl/GenericKeyedObjectPool/getNumIdle(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/apache/activemq/jms/pool/PooledConnectionFactory/createJmsException(java.lang.String,java.lang.Exception)|",
+      "|java+method:///java/util/concurrent/atomic/AtomicBoolean/get()|",
+      "|java+method:///org/apache/commons/pool/impl/GenericKeyedObjectPool/addObject(java.lang.Object)|",
+      "|java+method:///org/apache/activemq/jms/pool/PooledConnectionFactory/newPooledConnection(org.apache.activemq.jms.pool.ConnectionPool)|",
+      "|java+constructor:///org/apache/activemq/jms/pool/ConnectionKey/ConnectionKey(java.lang.String,java.lang.String)|",
+      "|java+method:///org/apache/activemq/jms/pool/PooledConnectionFactory/getConnectionsPool()|",
+      "|java+method:///org/apache/commons/pool/impl/GenericKeyedObjectPool/returnObject(java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/apache/activemq/jms/pool/PooledConnectionFactory/getMaxConnections()|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+method:///org/apache/activemq/jms/pool/ConnectionPool/getConnection()|",
+      "|java+method:///org/apache/commons/pool/impl/GenericKeyedObjectPool/borrowObject(java.lang.Object)|",
+      "|java+method:///java/util/concurrent/atomic/AtomicReference/getAndSet(java.lang.Object)|",
+      "|java+method:///org/apache/commons/pool/impl/GenericKeyedObjectPool/getNumIdle(java.lang.Object)|",
+      "|java+method:///org/apache/activemq/jms/pool/ConnectionPool/incrementReferenceCount()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/pool2/impl/GenericKeyedObjectPool/getNumIdle(java.lang.Object)|",
+      "|java+method:///org/apache/activemq/jms/pool/PooledConnectionFactory/createJmsException(java.lang.String,java.lang.Exception)|",
+      "|java+method:///java/util/concurrent/atomic/AtomicReference/getAndSet(java.lang.Object)|",
+      "|java+method:///org/apache/commons/pool2/impl/GenericKeyedObjectPool/borrowObject(java.lang.Object)|",
+      "|java+method:///org/apache/commons/pool2/impl/GenericKeyedObjectPool/addObject(java.lang.Object)|",
+      "|java+method:///java/util/concurrent/atomic/AtomicBoolean/get()|",
+      "|java+method:///org/apache/activemq/jms/pool/PooledConnectionFactory/newPooledConnection(org.apache.activemq.jms.pool.ConnectionPool)|",
+      "|java+constructor:///org/apache/activemq/jms/pool/ConnectionKey/ConnectionKey(java.lang.String,java.lang.String)|",
+      "|java+method:///org/apache/activemq/jms/pool/PooledConnectionFactory/getConnectionsPool()|",
+      "|java+method:///org/apache/commons/pool2/impl/GenericKeyedObjectPool/returnObject(java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/apache/activemq/jms/pool/PooledConnectionFactory/getMaxConnections()|",
+      "|java+method:///org/apache/activemq/jms/pool/ConnectionPool/incrementReferenceCount()|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+method:///org/apache/activemq/jms/pool/ConnectionPool/getConnection()|"
+    ],
+    "affectedLib": "commons-pool:commons-pool:1.6",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.apache.activemq:activemq-jms-pool:5.12.0",
+    "coordinatesV2": "org.apache.activemq:activemq-jms-pool:5.11.3",
+    "caller": "|java+method:///org/apache/activemq/jms/pool/PooledConnectionFactory/clear()|",
+    "called": "|java+method:///org/apache/commons/pool/impl/GenericKeyedObjectPool/clear()|",
+    "v1Body": [
+      "|java+method:///java/util/concurrent/atomic/AtomicBoolean/get()|",
+      "|java+method:///org/apache/commons/pool/impl/GenericKeyedObjectPool/clear()|",
+      "|java+method:///org/apache/activemq/jms/pool/PooledConnectionFactory/getConnectionsPool()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/pool2/impl/GenericKeyedObjectPool/clear()|",
+      "|java+method:///java/util/concurrent/atomic/AtomicBoolean/get()|",
+      "|java+method:///org/apache/activemq/jms/pool/PooledConnectionFactory/getConnectionsPool()|"
+    ],
+    "affectedLib": "commons-pool:commons-pool:1.6",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.apache.activemq:activemq-jms-pool:5.12.0",
+    "coordinatesV2": "org.apache.activemq:activemq-jms-pool:5.11.3",
+    "caller": "|java+method:///org/apache/activemq/jms/pool/ConnectionPool/createSession(boolean,int)|",
+    "called": "|java+method:///org/apache/commons/pool/impl/GenericKeyedObjectPool/borrowObject(java.lang.Object)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/activemq/jms/pool/ConnectionPool$2/ConnectionPool$2(org.apache.activemq.jms.pool.ConnectionPool)|",
+      "|java+method:///org/apache/activemq/jms/pool/SessionKey/isTransacted()|",
+      "|java+method:///org/apache/commons/pool/impl/GenericKeyedObjectPool/borrowObject(java.lang.Object)|",
+      "|java+method:///org/apache/activemq/jms/pool/PooledSession/addSessionEventListener(org.apache.activemq.jms.pool.PooledSessionEventListener)|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///javax/jms/IllegalStateException/initCause(java.lang.Throwable)|",
+      "|java+method:///java/lang/Exception/toString()|",
+      "|java+constructor:///org/apache/activemq/jms/pool/PooledSession/PooledSession(org.apache.activemq.jms.pool.SessionKey,org.apache.activemq.jms.pool.SessionHolder,org.apache.commons.pool.KeyedObjectPool,boolean,boolean)|",
+      "|java+constructor:///org/apache/activemq/jms/pool/SessionKey/SessionKey(boolean,int)|",
+      "|java+constructor:///javax/jms/IllegalStateException/IllegalStateException(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/activemq/jms/pool/PooledSession/PooledSession(org.apache.activemq.jms.pool.SessionKey,org.apache.activemq.jms.pool.SessionHolder,org.apache.commons.pool2.KeyedObjectPool,boolean,boolean)|",
+      "|java+constructor:///org/apache/activemq/jms/pool/ConnectionPool$2/ConnectionPool$2(org.apache.activemq.jms.pool.ConnectionPool)|",
+      "|java+method:///org/apache/activemq/jms/pool/SessionKey/isTransacted()|",
+      "|java+method:///org/apache/commons/pool2/impl/GenericKeyedObjectPool/borrowObject(java.lang.Object)|",
+      "|java+method:///org/apache/activemq/jms/pool/PooledSession/addSessionEventListener(org.apache.activemq.jms.pool.PooledSessionEventListener)|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///javax/jms/IllegalStateException/initCause(java.lang.Throwable)|",
+      "|java+method:///java/lang/Exception/toString()|",
+      "|java+constructor:///org/apache/activemq/jms/pool/SessionKey/SessionKey(boolean,int)|",
+      "|java+constructor:///javax/jms/IllegalStateException/IllegalStateException(java.lang.String)|"
+    ],
+    "affectedLib": "commons-pool:commons-pool:1.6",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.apache.activemq:activemq-jms-pool:5.12.0",
+    "coordinatesV2": "org.apache.activemq:activemq-jms-pool:5.11.3",
+    "caller": "|java+method:///org/apache/activemq/jms/pool/ConnectionPool/setBlockIfSessionPoolIsFull(boolean)|",
+    "called": "|java+method:///org/apache/commons/pool/impl/GenericKeyedObjectPool/setWhenExhaustedAction(byte)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/pool/impl/GenericKeyedObjectPool/setWhenExhaustedAction(byte)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/pool2/impl/GenericKeyedObjectPool/setBlockWhenExhausted(boolean)|"
+    ],
+    "affectedLib": "commons-pool:commons-pool:1.6",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.apache.activemq:activemq-jms-pool:5.12.0",
+    "coordinatesV2": "org.apache.activemq:activemq-jms-pool:5.11.3",
+    "caller": "|java+method:///org/apache/activemq/jms/pool/PooledConnectionFactory/initConnectionsPool()|",
+    "called": "|java+method:///org/apache/commons/pool/impl/GenericKeyedObjectPool/setMaxIdle(int)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/commons/pool/impl/GenericKeyedObjectPool/GenericKeyedObjectPool(org.apache.commons.pool.KeyedPoolableObjectFactory)|",
+      "|java+method:///org/apache/commons/pool/impl/GenericKeyedObjectPool/setMaxIdle(int)|",
+      "|java+constructor:///org/apache/activemq/jms/pool/PooledConnectionFactory$1/PooledConnectionFactory$1(org.apache.activemq.jms.pool.PooledConnectionFactory)|",
+      "|java+method:///org/apache/commons/pool/impl/GenericKeyedObjectPool/setTestWhileIdle(boolean)|",
+      "|java+method:///org/apache/commons/pool/impl/GenericKeyedObjectPool/setLifo(boolean)|",
+      "|java+method:///org/apache/commons/pool/impl/GenericKeyedObjectPool/setTestOnBorrow(boolean)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/pool2/impl/GenericKeyedObjectPool/setMaxIdlePerKey(int)|",
+      "|java+constructor:///org/apache/commons/pool2/impl/GenericKeyedObjectPool/GenericKeyedObjectPool(org.apache.commons.pool2.KeyedPooledObjectFactory)|",
+      "|java+method:///org/apache/commons/pool2/impl/GenericKeyedObjectPool/setTestWhileIdle(boolean)|",
+      "|java+constructor:///org/apache/activemq/jms/pool/PooledConnectionFactory$1/PooledConnectionFactory$1(org.apache.activemq.jms.pool.PooledConnectionFactory)|",
+      "|java+method:///org/apache/commons/pool2/impl/GenericKeyedObjectPool/setTestOnBorrow(boolean)|",
+      "|java+method:///org/apache/commons/pool2/impl/GenericKeyedObjectPool/setLifo(boolean)|"
+    ],
+    "affectedLib": "commons-pool:commons-pool:1.6",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.apache.activemq:activemq-jms-pool:5.12.0",
+    "coordinatesV2": "org.apache.activemq:activemq-jms-pool:5.11.3",
+    "caller": "|java+method:///org/apache/activemq/jms/pool/PooledConnectionFactory/setMaxConnections(int)|",
+    "called": "|java+method:///org/apache/commons/pool/impl/GenericKeyedObjectPool/setMaxIdle(int)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/pool/impl/GenericKeyedObjectPool/setMaxIdle(int)|",
+      "|java+method:///org/apache/activemq/jms/pool/PooledConnectionFactory/getConnectionsPool()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/pool2/impl/GenericKeyedObjectPool/setMaxTotalPerKey(int)|",
+      "|java+method:///org/apache/commons/pool2/impl/GenericKeyedObjectPool/setMaxIdlePerKey(int)|",
+      "|java+method:///org/apache/activemq/jms/pool/PooledConnectionFactory/getConnectionsPool()|"
+    ],
+    "affectedLib": "commons-pool:commons-pool:1.6",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.apache.activemq:activemq-jms-pool:5.12.0",
+    "coordinatesV2": "org.apache.activemq:activemq-jms-pool:5.11.3",
+    "caller": "|java+method:///org/apache/activemq/jms/pool/ConnectionPool/close()|",
+    "called": "|java+method:///org/apache/commons/pool/impl/GenericKeyedObjectPool/close()|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/pool/impl/GenericKeyedObjectPool/close()|",
+      "|java+method:///javax/jms/Connection/close()|"
+    ],
+    "v2Body": [
+      "|java+method:///javax/jms/Connection/close()|",
+      "|java+method:///org/apache/commons/pool2/impl/GenericKeyedObjectPool/close()|"
+    ],
+    "affectedLib": "commons-pool:commons-pool:1.6",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.apache.activemq:activemq-jms-pool:5.12.0",
+    "coordinatesV2": "org.apache.activemq:activemq-jms-pool:5.11.3",
+    "caller": "|java+method:///org/apache/activemq/jms/pool/PooledConnectionFactory/setTimeBetweenExpirationCheckMillis(long)|",
+    "called": "|java+method:///org/apache/commons/pool/impl/GenericKeyedObjectPool/setTimeBetweenEvictionRunsMillis(long)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/pool/impl/GenericKeyedObjectPool/setTimeBetweenEvictionRunsMillis(long)|",
+      "|java+method:///org/apache/activemq/jms/pool/PooledConnectionFactory/getConnectionsPool()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/pool2/impl/GenericKeyedObjectPool/setTimeBetweenEvictionRunsMillis(long)|",
+      "|java+method:///org/apache/activemq/jms/pool/PooledConnectionFactory/getConnectionsPool()|"
+    ],
+    "affectedLib": "commons-pool:commons-pool:1.6",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.apache.activemq:activemq-jms-pool:5.12.0",
+    "coordinatesV2": "org.apache.activemq:activemq-jms-pool:5.11.3",
+    "caller": "|java+method:///org/apache/activemq/jms/pool/PooledConnectionFactory/stop()|",
+    "called": "|java+method:///org/apache/commons/pool/impl/GenericKeyedObjectPool/close()|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/pool/impl/GenericKeyedObjectPool/close()|",
+      "|java+method:///org/apache/commons/pool/impl/GenericKeyedObjectPool/getNumActive()|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///java/util/concurrent/atomic/AtomicBoolean/compareAndSet(boolean,boolean)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/pool2/impl/GenericKeyedObjectPool/getNumActive()|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///java/util/concurrent/atomic/AtomicBoolean/compareAndSet(boolean,boolean)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///org/apache/commons/pool2/impl/GenericKeyedObjectPool/close()|"
+    ],
+    "affectedLib": "commons-pool:commons-pool:1.6",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.apache.activemq:activemq-jms-pool:5.12.0",
+    "coordinatesV2": "org.apache.activemq:activemq-jms-pool:5.11.3",
+    "caller": "|java+constructor:///org/apache/activemq/jms/pool/ConnectionPool/ConnectionPool(javax.jms.Connection)|",
+    "called": "|java+constructor:///org/apache/commons/pool/impl/GenericKeyedObjectPool/GenericKeyedObjectPool(org.apache.commons.pool.KeyedPoolableObjectFactory)|",
+    "v1Body": [
+      "|java+method:///org/apache/activemq/jms/pool/ConnectionPool/wrap(javax.jms.Connection)|",
+      "|java+constructor:///org/apache/activemq/jms/pool/ConnectionPool$1/ConnectionPool$1(org.apache.activemq.jms.pool.ConnectionPool)|",
+      "|java+constructor:///java/util/concurrent/CopyOnWriteArrayList/CopyOnWriteArrayList()|",
+      "|java+method:///java/lang/System/currentTimeMillis()|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+constructor:///java/util/concurrent/atomic/AtomicBoolean/AtomicBoolean(boolean)|",
+      "|java+constructor:///org/apache/commons/pool/impl/GenericKeyedObjectPool/GenericKeyedObjectPool(org.apache.commons.pool.KeyedPoolableObjectFactory)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/activemq/jms/pool/ConnectionPool/wrap(javax.jms.Connection)|",
+      "|java+constructor:///org/apache/activemq/jms/pool/ConnectionPool$1/ConnectionPool$1(org.apache.activemq.jms.pool.ConnectionPool)|",
+      "|java+constructor:///java/util/concurrent/atomic/AtomicBoolean/AtomicBoolean(boolean)|",
+      "|java+constructor:///org/apache/commons/pool2/impl/GenericKeyedObjectPool/GenericKeyedObjectPool(org.apache.commons.pool2.KeyedPooledObjectFactory)|",
+      "|java+constructor:///java/util/concurrent/CopyOnWriteArrayList/CopyOnWriteArrayList()|",
+      "|java+method:///java/lang/System/currentTimeMillis()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "commons-pool:commons-pool:1.6",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.apache.activemq:activemq-jms-pool:5.12.0",
+    "coordinatesV2": "org.apache.activemq:activemq-jms-pool:5.11.3",
+    "caller": "|java+method:///org/apache/activemq/jms/pool/ConnectionPool/setMaximumActiveSessionPerConnection(int)|",
+    "called": "|java+method:///org/apache/commons/pool/impl/GenericKeyedObjectPool/setMaxActive(int)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/pool/impl/GenericKeyedObjectPool/setMaxActive(int)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/pool2/impl/GenericKeyedObjectPool/setMaxTotalPerKey(int)|"
+    ],
+    "affectedLib": "commons-pool:commons-pool:1.6",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.apache.activemq:activemq-jms-pool:5.11.3",
+    "coordinatesV2": "org.apache.activemq:activemq-jms-pool:5.12.0",
+    "caller": "|java+method:///org/apache/activemq/jms/pool/PooledConnectionFactory/createConnection(java.lang.String,java.lang.String)|",
+    "called": "|java+method:///org/apache/commons/pool2/impl/GenericKeyedObjectPool/borrowObject(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/apache/activemq/jms/pool/PooledConnectionFactory/createJmsException(java.lang.String,java.lang.Exception)|",
+      "|java+method:///java/util/concurrent/atomic/AtomicBoolean/get()|",
+      "|java+method:///org/apache/commons/pool/impl/GenericKeyedObjectPool/addObject(java.lang.Object)|",
+      "|java+method:///org/apache/activemq/jms/pool/PooledConnectionFactory/newPooledConnection(org.apache.activemq.jms.pool.ConnectionPool)|",
+      "|java+constructor:///org/apache/activemq/jms/pool/ConnectionKey/ConnectionKey(java.lang.String,java.lang.String)|",
+      "|java+method:///org/apache/activemq/jms/pool/PooledConnectionFactory/getConnectionsPool()|",
+      "|java+method:///org/apache/commons/pool/impl/GenericKeyedObjectPool/returnObject(java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/apache/activemq/jms/pool/PooledConnectionFactory/getMaxConnections()|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+method:///org/apache/activemq/jms/pool/ConnectionPool/getConnection()|",
+      "|java+method:///org/apache/commons/pool/impl/GenericKeyedObjectPool/borrowObject(java.lang.Object)|",
+      "|java+method:///java/util/concurrent/atomic/AtomicReference/getAndSet(java.lang.Object)|",
+      "|java+method:///org/apache/commons/pool/impl/GenericKeyedObjectPool/getNumIdle(java.lang.Object)|",
+      "|java+method:///org/apache/activemq/jms/pool/ConnectionPool/incrementReferenceCount()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/pool2/impl/GenericKeyedObjectPool/getNumIdle(java.lang.Object)|",
+      "|java+method:///org/apache/activemq/jms/pool/PooledConnectionFactory/createJmsException(java.lang.String,java.lang.Exception)|",
+      "|java+method:///java/util/concurrent/atomic/AtomicReference/getAndSet(java.lang.Object)|",
+      "|java+method:///org/apache/commons/pool2/impl/GenericKeyedObjectPool/borrowObject(java.lang.Object)|",
+      "|java+method:///org/apache/commons/pool2/impl/GenericKeyedObjectPool/addObject(java.lang.Object)|",
+      "|java+method:///java/util/concurrent/atomic/AtomicBoolean/get()|",
+      "|java+method:///org/apache/activemq/jms/pool/PooledConnectionFactory/newPooledConnection(org.apache.activemq.jms.pool.ConnectionPool)|",
+      "|java+constructor:///org/apache/activemq/jms/pool/ConnectionKey/ConnectionKey(java.lang.String,java.lang.String)|",
+      "|java+method:///org/apache/activemq/jms/pool/PooledConnectionFactory/getConnectionsPool()|",
+      "|java+method:///org/apache/commons/pool2/impl/GenericKeyedObjectPool/returnObject(java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/apache/activemq/jms/pool/PooledConnectionFactory/getMaxConnections()|",
+      "|java+method:///org/apache/activemq/jms/pool/ConnectionPool/incrementReferenceCount()|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+method:///org/apache/activemq/jms/pool/ConnectionPool/getConnection()|"
+    ],
+    "affectedLib": "org.apache.commons:commons-pool2:2.3",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.activemq:activemq-jms-pool:5.11.3",
+    "coordinatesV2": "org.apache.activemq:activemq-jms-pool:5.12.0",
+    "caller": "|java+method:///org/apache/activemq/jms/pool/ConnectionPool/createSession(boolean,int)|",
+    "called": "|java+method:///org/apache/commons/pool2/impl/GenericKeyedObjectPool/borrowObject(java.lang.Object)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/activemq/jms/pool/ConnectionPool$2/ConnectionPool$2(org.apache.activemq.jms.pool.ConnectionPool)|",
+      "|java+method:///org/apache/activemq/jms/pool/SessionKey/isTransacted()|",
+      "|java+method:///org/apache/commons/pool/impl/GenericKeyedObjectPool/borrowObject(java.lang.Object)|",
+      "|java+method:///org/apache/activemq/jms/pool/PooledSession/addSessionEventListener(org.apache.activemq.jms.pool.PooledSessionEventListener)|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///javax/jms/IllegalStateException/initCause(java.lang.Throwable)|",
+      "|java+method:///java/lang/Exception/toString()|",
+      "|java+constructor:///org/apache/activemq/jms/pool/PooledSession/PooledSession(org.apache.activemq.jms.pool.SessionKey,org.apache.activemq.jms.pool.SessionHolder,org.apache.commons.pool.KeyedObjectPool,boolean,boolean)|",
+      "|java+constructor:///org/apache/activemq/jms/pool/SessionKey/SessionKey(boolean,int)|",
+      "|java+constructor:///javax/jms/IllegalStateException/IllegalStateException(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/activemq/jms/pool/PooledSession/PooledSession(org.apache.activemq.jms.pool.SessionKey,org.apache.activemq.jms.pool.SessionHolder,org.apache.commons.pool2.KeyedObjectPool,boolean,boolean)|",
+      "|java+constructor:///org/apache/activemq/jms/pool/ConnectionPool$2/ConnectionPool$2(org.apache.activemq.jms.pool.ConnectionPool)|",
+      "|java+method:///org/apache/activemq/jms/pool/SessionKey/isTransacted()|",
+      "|java+method:///org/apache/commons/pool2/impl/GenericKeyedObjectPool/borrowObject(java.lang.Object)|",
+      "|java+method:///org/apache/activemq/jms/pool/PooledSession/addSessionEventListener(org.apache.activemq.jms.pool.PooledSessionEventListener)|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///javax/jms/IllegalStateException/initCause(java.lang.Throwable)|",
+      "|java+method:///java/lang/Exception/toString()|",
+      "|java+constructor:///org/apache/activemq/jms/pool/SessionKey/SessionKey(boolean,int)|",
+      "|java+constructor:///javax/jms/IllegalStateException/IllegalStateException(java.lang.String)|"
+    ],
+    "affectedLib": "org.apache.commons:commons-pool2:2.3",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.activemq:activemq-jms-pool:5.11.3",
+    "coordinatesV2": "org.apache.activemq:activemq-jms-pool:5.12.0",
+    "caller": "|java+method:///org/apache/activemq/jms/pool/ConnectionPool/getNumSessions()|",
+    "called": "|java+method:///org/apache/commons/pool2/impl/GenericKeyedObjectPool/getNumActive()|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/pool/impl/GenericKeyedObjectPool/getNumActive()|",
+      "|java+method:///org/apache/commons/pool/impl/GenericKeyedObjectPool/getNumIdle()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/pool2/impl/GenericKeyedObjectPool/getNumActive()|",
+      "|java+method:///org/apache/commons/pool2/impl/GenericKeyedObjectPool/getNumIdle()|"
+    ],
+    "affectedLib": "org.apache.commons:commons-pool2:2.3",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.activemq:activemq-jms-pool:5.11.3",
+    "coordinatesV2": "org.apache.activemq:activemq-jms-pool:5.12.0",
+    "caller": "|java+method:///org/apache/activemq/jms/pool/ConnectionPool$1/makeObject(org.apache.activemq.jms.pool.SessionKey)|",
+    "called": "|java+constructor:///org/apache/commons/pool2/impl/DefaultPooledObject/DefaultPooledObject(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/apache/activemq/jms/pool/ConnectionPool/makeSession(org.apache.activemq.jms.pool.SessionKey)|",
+      "|java+constructor:///org/apache/activemq/jms/pool/SessionHolder/SessionHolder(javax.jms.Session)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/commons/pool2/impl/DefaultPooledObject/DefaultPooledObject(java.lang.Object)|",
+      "|java+method:///org/apache/activemq/jms/pool/ConnectionPool/makeSession(org.apache.activemq.jms.pool.SessionKey)|",
+      "|java+constructor:///org/apache/activemq/jms/pool/SessionHolder/SessionHolder(javax.jms.Session)|"
+    ],
+    "affectedLib": "org.apache.commons:commons-pool2:2.3",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.activemq:activemq-jms-pool:5.11.3",
+    "coordinatesV2": "org.apache.activemq:activemq-jms-pool:5.12.0",
+    "caller": "|java+method:///org/apache/activemq/jms/pool/PooledConnectionFactory/stop()|",
+    "called": "|java+method:///org/apache/commons/pool2/impl/GenericKeyedObjectPool/getNumActive()|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/pool/impl/GenericKeyedObjectPool/close()|",
+      "|java+method:///org/apache/commons/pool/impl/GenericKeyedObjectPool/getNumActive()|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///java/util/concurrent/atomic/AtomicBoolean/compareAndSet(boolean,boolean)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/pool2/impl/GenericKeyedObjectPool/getNumActive()|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///java/util/concurrent/atomic/AtomicBoolean/compareAndSet(boolean,boolean)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///org/apache/commons/pool2/impl/GenericKeyedObjectPool/close()|"
+    ],
+    "affectedLib": "org.apache.commons:commons-pool2:2.3",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.activemq:activemq-jms-pool:5.11.3",
+    "coordinatesV2": "org.apache.activemq:activemq-jms-pool:5.12.0",
+    "caller": "|java+constructor:///org/apache/activemq/jms/pool/ConnectionPool/ConnectionPool(javax.jms.Connection)|",
+    "called": "|java+constructor:///org/apache/commons/pool2/impl/GenericKeyedObjectPool/GenericKeyedObjectPool(org.apache.commons.pool2.KeyedPooledObjectFactory)|",
+    "v1Body": [
+      "|java+method:///org/apache/activemq/jms/pool/ConnectionPool/wrap(javax.jms.Connection)|",
+      "|java+constructor:///org/apache/activemq/jms/pool/ConnectionPool$1/ConnectionPool$1(org.apache.activemq.jms.pool.ConnectionPool)|",
+      "|java+constructor:///java/util/concurrent/CopyOnWriteArrayList/CopyOnWriteArrayList()|",
+      "|java+method:///java/lang/System/currentTimeMillis()|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+constructor:///java/util/concurrent/atomic/AtomicBoolean/AtomicBoolean(boolean)|",
+      "|java+constructor:///org/apache/commons/pool/impl/GenericKeyedObjectPool/GenericKeyedObjectPool(org.apache.commons.pool.KeyedPoolableObjectFactory)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/activemq/jms/pool/ConnectionPool/wrap(javax.jms.Connection)|",
+      "|java+constructor:///org/apache/activemq/jms/pool/ConnectionPool$1/ConnectionPool$1(org.apache.activemq.jms.pool.ConnectionPool)|",
+      "|java+constructor:///java/util/concurrent/atomic/AtomicBoolean/AtomicBoolean(boolean)|",
+      "|java+constructor:///org/apache/commons/pool2/impl/GenericKeyedObjectPool/GenericKeyedObjectPool(org.apache.commons.pool2.KeyedPooledObjectFactory)|",
+      "|java+constructor:///java/util/concurrent/CopyOnWriteArrayList/CopyOnWriteArrayList()|",
+      "|java+method:///java/lang/System/currentTimeMillis()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "org.apache.commons:commons-pool2:2.3",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.activemq:activemq-jms-pool:5.11.3",
+    "coordinatesV2": "org.apache.activemq:activemq-jms-pool:5.12.0",
+    "caller": "|java+method:///org/apache/activemq/jms/pool/PooledConnectionFactory$1/makeObject(org.apache.activemq.jms.pool.ConnectionKey)|",
+    "called": "|java+constructor:///org/apache/commons/pool2/impl/DefaultPooledObject/DefaultPooledObject(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/apache/activemq/jms/pool/PooledConnectionFactory/createConnectionPool(javax.jms.Connection)|",
+      "|java+method:///org/apache/activemq/jms/pool/ConnectionPool/setMaximumActiveSessionPerConnection(int)|",
+      "|java+method:///org/apache/activemq/jms/pool/PooledConnectionFactory/access$100(org.apache.activemq.jms.pool.PooledConnectionFactory)|",
+      "|java+method:///org/apache/activemq/jms/pool/PooledConnectionFactory/isUseAnonymousProducers()|",
+      "|java+method:///org/apache/activemq/jms/pool/PooledConnectionFactory/getBlockIfSessionPoolIsFullTimeout()|",
+      "|java+method:///org/apache/activemq/jms/pool/ConnectionPool/setBlockIfSessionPoolIsFullTimeout(long)|",
+      "|java+method:///java/util/concurrent/atomic/AtomicReference/set(java.lang.Object)|",
+      "|java+method:///org/apache/activemq/jms/pool/PooledConnectionFactory/getMaximumActiveSessionPerConnection()|",
+      "|java+method:///org/slf4j/Logger/trace(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/apache/activemq/jms/pool/PooledConnectionFactory/getIdleTimeout()|",
+      "|java+method:///org/apache/activemq/jms/pool/ConnectionPool/setExpiryTimeout(long)|",
+      "|java+method:///org/apache/activemq/jms/pool/ConnectionPool/setUseAnonymousProducers(boolean)|",
+      "|java+method:///org/apache/activemq/jms/pool/PooledConnectionFactory/createConnection(org.apache.activemq.jms.pool.ConnectionKey)|",
+      "|java+method:///org/apache/activemq/jms/pool/ConnectionPool/setIdleTimeout(int)|",
+      "|java+method:///org/apache/activemq/jms/pool/PooledConnectionFactory/isReconnectOnException()|",
+      "|java+method:///org/slf4j/Logger/isTraceEnabled()|",
+      "|java+method:///org/apache/activemq/jms/pool/PooledConnectionFactory/isBlockIfSessionPoolIsFull()|",
+      "|java+method:///org/apache/activemq/jms/pool/ConnectionPool/setBlockIfSessionPoolIsFull(boolean)|",
+      "|java+method:///org/apache/activemq/jms/pool/PooledConnectionFactory/access$000()|",
+      "|java+method:///org/apache/activemq/jms/pool/PooledConnectionFactory/getExpiryTimeout()|",
+      "|java+method:///org/apache/activemq/jms/pool/ConnectionPool/setReconnectOnException(boolean)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/activemq/jms/pool/PooledConnectionFactory/createConnectionPool(javax.jms.Connection)|",
+      "|java+method:///org/apache/activemq/jms/pool/ConnectionPool/setMaximumActiveSessionPerConnection(int)|",
+      "|java+method:///org/apache/activemq/jms/pool/PooledConnectionFactory/access$100(org.apache.activemq.jms.pool.PooledConnectionFactory)|",
+      "|java+method:///org/apache/activemq/jms/pool/PooledConnectionFactory/isUseAnonymousProducers()|",
+      "|java+method:///org/apache/activemq/jms/pool/PooledConnectionFactory/getBlockIfSessionPoolIsFullTimeout()|",
+      "|java+method:///org/apache/activemq/jms/pool/ConnectionPool/setBlockIfSessionPoolIsFullTimeout(long)|",
+      "|java+method:///java/util/concurrent/atomic/AtomicReference/set(java.lang.Object)|",
+      "|java+method:///org/apache/activemq/jms/pool/PooledConnectionFactory/getMaximumActiveSessionPerConnection()|",
+      "|java+method:///org/slf4j/Logger/trace(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/apache/activemq/jms/pool/PooledConnectionFactory/getIdleTimeout()|",
+      "|java+method:///org/apache/activemq/jms/pool/ConnectionPool/setExpiryTimeout(long)|",
+      "|java+method:///org/apache/activemq/jms/pool/ConnectionPool/setUseAnonymousProducers(boolean)|",
+      "|java+method:///org/apache/activemq/jms/pool/ConnectionPool/setIdleTimeout(int)|",
+      "|java+method:///org/apache/activemq/jms/pool/PooledConnectionFactory/isReconnectOnException()|",
+      "|java+method:///org/slf4j/Logger/isTraceEnabled()|",
+      "|java+method:///org/apache/activemq/jms/pool/PooledConnectionFactory/isBlockIfSessionPoolIsFull()|",
+      "|java+method:///org/apache/activemq/jms/pool/ConnectionPool/setBlockIfSessionPoolIsFull(boolean)|",
+      "|java+method:///org/apache/activemq/jms/pool/PooledConnectionFactory/access$000()|",
+      "|java+method:///org/apache/activemq/jms/pool/PooledConnectionFactory/getExpiryTimeout()|",
+      "|java+method:///org/apache/activemq/jms/pool/ConnectionPool/setReconnectOnException(boolean)|",
+      "|java+constructor:///org/apache/commons/pool2/impl/DefaultPooledObject/DefaultPooledObject(java.lang.Object)|",
+      "|java+method:///org/apache/activemq/jms/pool/PooledConnectionFactory/createConnection(org.apache.activemq.jms.pool.ConnectionKey)|"
+    ],
+    "affectedLib": "org.apache.commons:commons-pool2:2.3",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.activemq:activemq-jms-pool:5.11.3",
+    "coordinatesV2": "org.apache.activemq:activemq-jms-pool:5.12.0",
+    "caller": "|java+method:///org/apache/activemq/jms/pool/PooledConnectionFactory/clear()|",
+    "called": "|java+method:///org/apache/commons/pool2/impl/GenericKeyedObjectPool/clear()|",
+    "v1Body": [
+      "|java+method:///java/util/concurrent/atomic/AtomicBoolean/get()|",
+      "|java+method:///org/apache/commons/pool/impl/GenericKeyedObjectPool/clear()|",
+      "|java+method:///org/apache/activemq/jms/pool/PooledConnectionFactory/getConnectionsPool()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/pool2/impl/GenericKeyedObjectPool/clear()|",
+      "|java+method:///java/util/concurrent/atomic/AtomicBoolean/get()|",
+      "|java+method:///org/apache/activemq/jms/pool/PooledConnectionFactory/getConnectionsPool()|"
+    ],
+    "affectedLib": "org.apache.commons:commons-pool2:2.3",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.activemq:activemq-jms-pool:5.11.3",
+    "coordinatesV2": "org.apache.activemq:activemq-jms-pool:5.12.0",
+    "caller": "|java+method:///org/apache/activemq/jms/pool/PooledConnectionFactory/initConnectionsPool()|",
+    "called": "|java+constructor:///org/apache/commons/pool2/impl/GenericKeyedObjectPool/GenericKeyedObjectPool(org.apache.commons.pool2.KeyedPooledObjectFactory)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/commons/pool/impl/GenericKeyedObjectPool/GenericKeyedObjectPool(org.apache.commons.pool.KeyedPoolableObjectFactory)|",
+      "|java+method:///org/apache/commons/pool/impl/GenericKeyedObjectPool/setMaxIdle(int)|",
+      "|java+constructor:///org/apache/activemq/jms/pool/PooledConnectionFactory$1/PooledConnectionFactory$1(org.apache.activemq.jms.pool.PooledConnectionFactory)|",
+      "|java+method:///org/apache/commons/pool/impl/GenericKeyedObjectPool/setTestWhileIdle(boolean)|",
+      "|java+method:///org/apache/commons/pool/impl/GenericKeyedObjectPool/setLifo(boolean)|",
+      "|java+method:///org/apache/commons/pool/impl/GenericKeyedObjectPool/setTestOnBorrow(boolean)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/pool2/impl/GenericKeyedObjectPool/setMaxIdlePerKey(int)|",
+      "|java+constructor:///org/apache/commons/pool2/impl/GenericKeyedObjectPool/GenericKeyedObjectPool(org.apache.commons.pool2.KeyedPooledObjectFactory)|",
+      "|java+method:///org/apache/commons/pool2/impl/GenericKeyedObjectPool/setTestWhileIdle(boolean)|",
+      "|java+constructor:///org/apache/activemq/jms/pool/PooledConnectionFactory$1/PooledConnectionFactory$1(org.apache.activemq.jms.pool.PooledConnectionFactory)|",
+      "|java+method:///org/apache/commons/pool2/impl/GenericKeyedObjectPool/setTestOnBorrow(boolean)|",
+      "|java+method:///org/apache/commons/pool2/impl/GenericKeyedObjectPool/setLifo(boolean)|"
+    ],
+    "affectedLib": "org.apache.commons:commons-pool2:2.3",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.activemq:activemq-jms-pool:5.11.3",
+    "coordinatesV2": "org.apache.activemq:activemq-jms-pool:5.12.0",
+    "caller": "|java+method:///org/apache/activemq/jms/pool/ConnectionPool/close()|",
+    "called": "|java+method:///org/apache/commons/pool2/impl/GenericKeyedObjectPool/close()|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/pool/impl/GenericKeyedObjectPool/close()|",
+      "|java+method:///javax/jms/Connection/close()|"
+    ],
+    "v2Body": [
+      "|java+method:///javax/jms/Connection/close()|",
+      "|java+method:///org/apache/commons/pool2/impl/GenericKeyedObjectPool/close()|"
+    ],
+    "affectedLib": "org.apache.commons:commons-pool2:2.3",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.activemq:activemq-jms-pool:5.11.3",
+    "coordinatesV2": "org.apache.activemq:activemq-jms-pool:5.12.0",
+    "caller": "|java+method:///org/apache/activemq/jms/pool/PooledConnectionFactory/getNumConnections()|",
+    "called": "|java+method:///org/apache/commons/pool2/impl/GenericKeyedObjectPool/getNumIdle()|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/pool/impl/GenericKeyedObjectPool/getNumIdle()|",
+      "|java+method:///org/apache/activemq/jms/pool/PooledConnectionFactory/getConnectionsPool()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/pool2/impl/GenericKeyedObjectPool/getNumIdle()|",
+      "|java+method:///org/apache/activemq/jms/pool/PooledConnectionFactory/getConnectionsPool()|"
+    ],
+    "affectedLib": "org.apache.commons:commons-pool2:2.3",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.activemq:activemq-jms-pool:5.11.3",
+    "coordinatesV2": "org.apache.activemq:activemq-jms-pool:5.12.0",
+    "caller": "|java+method:///org/apache/activemq/jms/pool/ConnectionPool/getNumIdleSessions()|",
+    "called": "|java+method:///org/apache/commons/pool2/impl/GenericKeyedObjectPool/getNumIdle()|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/pool/impl/GenericKeyedObjectPool/getNumIdle()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/pool2/impl/GenericKeyedObjectPool/getNumIdle()|"
+    ],
+    "affectedLib": "org.apache.commons:commons-pool2:2.3",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.activemq:activemq-jms-pool:5.11.3",
+    "coordinatesV2": "org.apache.activemq:activemq-jms-pool:5.12.0",
+    "caller": "|java+method:///org/apache/activemq/jms/pool/ConnectionPool/getNumActiveSessions()|",
+    "called": "|java+method:///org/apache/commons/pool2/impl/GenericKeyedObjectPool/getNumActive()|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/pool/impl/GenericKeyedObjectPool/getNumActive()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/pool2/impl/GenericKeyedObjectPool/getNumActive()|"
+    ],
+    "affectedLib": "org.apache.commons:commons-pool2:2.3",
+    "change": "ADDED"
+  }
+]

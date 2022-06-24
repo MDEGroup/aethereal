@@ -1,0 +1,52 @@
+[
+  {
+    "coordinatesV1": "org.graylog2:graylog2-plugin:0.10.11",
+    "coordinatesV2": "org.graylog2:graylog2-plugin:0.90.0",
+    "caller": "|java+initializer:///org/graylog2/plugin/Tools/Tools$initializer|",
+    "called": "|java+method:///org/joda/time/format/DateTimeFormat/forPattern(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/util/Calendar/getInstance()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/joda/time/format/DateTimeFormat/forPattern(java.lang.String)|",
+      "|java+method:///org/joda/time/format/DateTimeFormatter/withZoneUTC()|"
+    ],
+    "affectedLib": "joda-time:joda-time:2.4",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.graylog2:graylog2-plugin:0.10.11",
+    "coordinatesV2": "org.graylog2:graylog2-plugin:0.90.0",
+    "caller": "|java+method:///org/graylog2/plugin/Tools/encodeBase64(java.lang.String)|",
+    "called": "|java+method:///com/google/common/io/BaseEncoding/encode(byte%5B%5D)|",
+    "v1Body": [
+      "|java+method:///org/drools/util/codec/Base64/encodeBase64(byte%5B%5D)|",
+      "|java+constructor:///java/lang/String/String(byte%5B%5D)|",
+      "|java+method:///java/lang/String/getBytes()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/common/io/BaseEncoding/encode(byte%5B%5D)|",
+      "|java+method:///com/google/common/io/BaseEncoding/base64()|",
+      "|java+method:///java/lang/String/getBytes(java.nio.charset.Charset)|"
+    ],
+    "affectedLib": "com.google.guava:guava:17.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.graylog2:graylog2-plugin:0.10.11",
+    "coordinatesV2": "org.graylog2:graylog2-plugin:0.90.0",
+    "caller": "|java+method:///org/graylog2/plugin/Tools/decodeBase64(java.lang.String)|",
+    "called": "|java+method:///com/google/common/io/BaseEncoding/decode(java.lang.CharSequence)|",
+    "v1Body": [
+      "|java+constructor:///java/lang/String/String(byte%5B%5D)|",
+      "|java+method:///org/drools/util/codec/Base64/decodeBase64(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/common/io/BaseEncoding/base64()|",
+      "|java+constructor:///java/lang/String/String(byte%5B%5D,java.nio.charset.Charset)|",
+      "|java+method:///com/google/common/io/BaseEncoding/decode(java.lang.CharSequence)|"
+    ],
+    "affectedLib": "com.google.guava:guava:17.0",
+    "change": "UPDATED"
+  }
+]

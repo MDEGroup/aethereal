@@ -1,0 +1,134 @@
+[
+  {
+    "coordinatesV1": "org.apache.directory.server:apacheds-protocol-dns:1.5.2",
+    "coordinatesV2": "org.apache.directory.server:apacheds-protocol-dns:1.5.1",
+    "caller": "|java+method:///org/apache/directory/server/dns/Main/main(java.lang.String%5B%5D)|",
+    "called": "|java+constructor:///org/apache/mina/transport/socket/nio/SocketAcceptor/SocketAcceptor()|",
+    "v1Body": [
+      "|java+method:///org/apache/mina/common/ExecutorThreadModel/setExecutor(java.util.concurrent.Executor)|",
+      "|java+constructor:///org/apache/directory/server/dns/Main/Main()|",
+      "|java+constructor:///java/util/concurrent/ThreadPoolExecutor/ThreadPoolExecutor(int,int,long,java.util.concurrent.TimeUnit,java.util.concurrent.BlockingQueue)|",
+      "|java+method:///org/apache/directory/server/dns/Main/go()|",
+      "|java+constructor:///java/util/concurrent/LinkedBlockingQueue/LinkedBlockingQueue()|",
+      "|java+constructor:///org/apache/mina/transport/socket/nio/SocketAcceptor/SocketAcceptor()|",
+      "|java+constructor:///org/apache/mina/transport/socket/nio/DatagramAcceptor/DatagramAcceptor()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/directory/server/dns/Main/go()|",
+      "|java+constructor:///org/apache/directory/server/dns/Main/Main()|"
+    ],
+    "affectedLib": "org.apache.mina:mina-core:1.1.2",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.apache.directory.server:apacheds-protocol-dns:1.5.2",
+    "coordinatesV2": "org.apache.directory.server:apacheds-protocol-dns:1.5.1",
+    "caller": "|java+initializer:///org/apache/directory/server/dns/Main/Main$initializer|",
+    "called": "|java+method:///org/apache/mina/common/ExecutorThreadModel/getInstance(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/apache/mina/common/ExecutorThreadModel/getInstance(java.lang.String)|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.apache.mina:mina-core:1.1.2",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.apache.directory.server:apacheds-protocol-dns:1.5.1",
+    "coordinatesV2": "org.apache.directory.server:apacheds-protocol-dns:1.5.2",
+    "caller": "|java+method:///org/apache/directory/server/dns/Main/go()|",
+    "called": "|java+constructor:///org/apache/directory/server/core/DefaultDirectoryService/DefaultDirectoryService()|",
+    "v1Body": [
+      "|java+constructor:///org/apache/directory/server/dns/store/RecordStoreStub/RecordStoreStub()|",
+      "|java+method:///org/apache/directory/server/dns/Main/startup(org.apache.directory.server.dns.DnsConfiguration,org.apache.directory.server.dns.store.RecordStore)|",
+      "|java+constructor:///org/apache/directory/server/dns/DnsConfiguration/DnsConfiguration()|",
+      "|java+method:///org/apache/directory/server/dns/DnsConfiguration/setEnabled(boolean)|",
+      "|java+method:///org/apache/directory/server/dns/DnsConfiguration/setIpPort(int)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+method:///org/apache/directory/server/dns/DnsServer/start()|",
+      "|java+method:///org/apache/directory/server/dns/DnsServer/setIpPort(int)|",
+      "|java+constructor:///org/apache/directory/server/dns/DnsServer/DnsServer()|",
+      "|java+constructor:///org/apache/directory/server/core/DefaultDirectoryService/DefaultDirectoryService()|",
+      "|java+method:///org/apache/directory/server/dns/DnsServer/setEnabled(boolean)|",
+      "|java+method:///org/apache/directory/server/dns/DnsServer/setDatagramAcceptor(org.apache.directory.server.protocol.shared.DatagramAcceptor)|",
+      "|java+method:///org/apache/directory/server/dns/DnsServer/setDirectoryService(org.apache.directory.server.core.DirectoryService)|",
+      "|java+method:///org/apache/directory/server/dns/DnsServer/setSocketAcceptor(org.apache.directory.server.protocol.shared.SocketAcceptor)|",
+      "|java+constructor:///org/apache/directory/server/protocol/shared/DatagramAcceptor/DatagramAcceptor(java.util.concurrent.Executor)|",
+      "|java+constructor:///org/apache/directory/server/protocol/shared/SocketAcceptor/SocketAcceptor(java.util.concurrent.Executor)|"
+    ],
+    "affectedLib": "org.apache.directory.server:apacheds-core:1.5.2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.directory.server:apacheds-protocol-dns:1.5.1",
+    "coordinatesV2": "org.apache.directory.server:apacheds-protocol-dns:1.5.2",
+    "caller": "|java+method:///org/apache/directory/server/dns/store/jndi/MultiBaseSearch/getRecords(org.apache.directory.server.dns.messages.QuestionRecord)|",
+    "called": "|java+constructor:///org/apache/directory/server/protocol/shared/ServiceConfigurationException/ServiceConfigurationException(java.lang.String,java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///javax/naming/NamingException/getMessage()|",
+      "|java+constructor:///org/apache/directory/server/protocol/shared/ServiceConfigurationException/ServiceConfigurationException(java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///org/apache/directory/server/dns/DnsException/DnsException(org.apache.directory.server.dns.messages.ResponseCode)|",
+      "|java+constructor:///org/apache/directory/server/dns/store/jndi/operations/GetRecords/GetRecords(org.apache.directory.server.dns.messages.QuestionRecord)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///javax/naming/spi/InitialContextFactory/getInitialContext(java.util.Hashtable)|",
+      "|java+method:///org/apache/directory/server/dns/messages/QuestionRecord/getDomainName()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/util/Hashtable/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/apache/directory/server/dns/store/jndi/MultiBaseSearch/execute(javax.naming.directory.DirContext,org.apache.directory.server.dns.store.jndi.DnsOperation)|",
+      "|java+method:///java/util/Hashtable/get(java.lang.Object)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/apache/directory/server/protocol/shared/catalog/Catalog/getBaseDn(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///javax/naming/NamingException/getMessage()|",
+      "|java+constructor:///org/apache/directory/server/protocol/shared/ServiceConfigurationException/ServiceConfigurationException(java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///org/apache/directory/server/dns/DnsException/DnsException(org.apache.directory.server.dns.messages.ResponseCode)|",
+      "|java+constructor:///org/apache/directory/server/dns/store/jndi/operations/GetRecords/GetRecords(org.apache.directory.server.dns.messages.QuestionRecord)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/directory/server/core/DirectoryService/getJndiContext(java.lang.String)|",
+      "|java+method:///org/apache/directory/server/dns/messages/QuestionRecord/getDomainName()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/apache/directory/server/dns/store/jndi/operations/GetRecords/execute(javax.naming.directory.DirContext,javax.naming.Name)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/apache/directory/server/protocol/shared/catalog/Catalog/getBaseDn(java.lang.String)|"
+    ],
+    "affectedLib": "org.apache.directory.server:apacheds-protocol-shared:1.5.2",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.directory.server:apacheds-protocol-dns:1.5.1",
+    "coordinatesV2": "org.apache.directory.server:apacheds-protocol-dns:1.5.2",
+    "caller": "|java+method:///org/apache/directory/server/dns/Main/go()|",
+    "called": "|java+constructor:///org/apache/directory/server/protocol/shared/DatagramAcceptor/DatagramAcceptor(java.util.concurrent.Executor)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/directory/server/dns/store/RecordStoreStub/RecordStoreStub()|",
+      "|java+method:///org/apache/directory/server/dns/Main/startup(org.apache.directory.server.dns.DnsConfiguration,org.apache.directory.server.dns.store.RecordStore)|",
+      "|java+constructor:///org/apache/directory/server/dns/DnsConfiguration/DnsConfiguration()|",
+      "|java+method:///org/apache/directory/server/dns/DnsConfiguration/setEnabled(boolean)|",
+      "|java+method:///org/apache/directory/server/dns/DnsConfiguration/setIpPort(int)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+method:///org/apache/directory/server/dns/DnsServer/start()|",
+      "|java+method:///org/apache/directory/server/dns/DnsServer/setIpPort(int)|",
+      "|java+constructor:///org/apache/directory/server/dns/DnsServer/DnsServer()|",
+      "|java+constructor:///org/apache/directory/server/core/DefaultDirectoryService/DefaultDirectoryService()|",
+      "|java+method:///org/apache/directory/server/dns/DnsServer/setEnabled(boolean)|",
+      "|java+method:///org/apache/directory/server/dns/DnsServer/setDatagramAcceptor(org.apache.directory.server.protocol.shared.DatagramAcceptor)|",
+      "|java+method:///org/apache/directory/server/dns/DnsServer/setDirectoryService(org.apache.directory.server.core.DirectoryService)|",
+      "|java+method:///org/apache/directory/server/dns/DnsServer/setSocketAcceptor(org.apache.directory.server.protocol.shared.SocketAcceptor)|",
+      "|java+constructor:///org/apache/directory/server/protocol/shared/DatagramAcceptor/DatagramAcceptor(java.util.concurrent.Executor)|",
+      "|java+constructor:///org/apache/directory/server/protocol/shared/SocketAcceptor/SocketAcceptor(java.util.concurrent.Executor)|"
+    ],
+    "affectedLib": "org.apache.directory.server:apacheds-protocol-shared:1.5.2",
+    "change": "UPDATED"
+  }
+]

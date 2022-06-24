@@ -1,0 +1,199 @@
+[
+  {
+    "coordinatesV1": "org.coderu:coderu-core:1.0.1",
+    "coordinatesV2": "org.coderu:coderu-core:1.1.4",
+    "caller": "|java+method:///org/coderu/core/impl/explorer/parser/impl/DependencyParser$5/apply(org.coderu.core.impl.explorer.parser.impl.loader.types.ByteCodeProvider)|",
+    "called": "|java+method:///com/google/common/base/Predicates/compose(com.google.common.base.Predicate,com.google.common.base.Function)|",
+    "v1Body": [
+      "|java+method:///org/coderu/core/impl/explorer/parser/impl/loader/types/ByteCodeProvider/getName()|",
+      "|java+method:///java/lang/String/length()|",
+      "|java+constructor:///org/coderu/core/api/Clazz/Clazz(java.lang.String)|",
+      "|java+method:///java/lang/String/substring(int,int)|",
+      "|java+method:///java/lang/String/replace(char,char)|",
+      "|java+method:///org/coderu/core/impl/explorer/parser/impl/DependencyParser/access$1()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/coderu/common/utils/CollectionUtils/filter(java.util.Collection,com.google.common.base.Predicate)|",
+      "|java+constructor:///org/coderu/core/impl/common/types/ClassDependencies/ClassDependencies(org.coderu.core.api.Clazz,java.util.Collection)|",
+      "|java+method:///org/coderu/core/impl/explorer/parser/impl/DependencyParser/access$000()|",
+      "|java+method:///org/coderu/core/impl/explorer/parser/impl/DependencyParser/access$100()|",
+      "|java+method:///com/google/common/base/Predicates/compose(com.google.common.base.Predicate,com.google.common.base.Function)|",
+      "|java+method:///com/google/common/base/Function/apply(java.lang.Object)|",
+      "|java+method:///org/coderu/core/impl/explorer/parser/impl/ClassParser/apply(com.google.common.base.Supplier)|"
+    ],
+    "affectedLib": "com.google.guava:guava:17.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.coderu:coderu-core:1.0.1",
+    "coordinatesV2": "org.coderu:coderu-core:1.1.4",
+    "caller": "|java+method:///org/coderu/core/impl/explorer/rules/AccessRightsFactory/createCommonRight(org.coderu.core.impl.common.types.Package)|",
+    "called": "|java+method:///com/google/common/collect/Collections2/filter(java.util.Collection,com.google.common.base.Predicate)|",
+    "v1Body": [
+      "|java+method:///org/coderu/core/impl/explorer/rules/AccessRightsFactory/createRights(java.util.Collection,java.util.Collection)|",
+      "|java+method:///org/coderu/core/impl/explorer/rules/AccessRightsFactory/getAllNodes(org.coderu.core.impl.common.types.Package,com.google.common.base.Predicate,org.coderu.core.impl.explorer.rules.AccessRightsFactory$TraversingType)|",
+      "|java+method:///com/google/common/collect/Collections2/filter(java.util.Collection,com.google.common.base.Predicate)|",
+      "|java+method:///org/coderu/core/impl/explorer/rules/AccessRightsFactory/getAllNodes(java.util.Collection,com.google.common.base.Predicate,org.coderu.core.impl.explorer.rules.AccessRightsFactory$TraversingType)|",
+      "|java+method:///org/coderu/core/impl/common/types/Package/getSiblings()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/common/collect/Collections2/filter(java.util.Collection,com.google.common.base.Predicate)|",
+      "|java+method:///org/coderu/core/impl/explorer/rules/AccessRightsFactory/getAllNodes(java.util.Collection,com.google.common.base.Predicate,org.coderu.core.impl.explorer.rules.AccessRightsFactory$TraversingType)|",
+      "|java+method:///org/coderu/core/impl/common/types/Package/getSiblings()|",
+      "|java+method:///org/coderu/core/impl/explorer/rules/AccessRightsFactory/createRights(java.util.Collection,java.util.Collection)|",
+      "|java+method:///java/util/Collections/singletonList(java.lang.Object)|"
+    ],
+    "affectedLib": "com.google.guava:guava:17.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.coderu:coderu-core:1.0.1",
+    "coordinatesV2": "org.coderu:coderu-core:1.1.4",
+    "caller": "|java+method:///org/coderu/core/impl/explorer/rules/AccessRightsFactory/removeAccessToParentAndSelf(java.util.Collection)|",
+    "called": "|java+method:///com/google/common/collect/Collections2/filter(java.util.Collection,com.google.common.base.Predicate)|",
+    "v1Body": [
+      "|java+method:///com/google/common/collect/Collections2/filter(java.util.Collection,com.google.common.base.Predicate)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/coderu/core/impl/explorer/rules/AccessRightsFactory/NOT_ACCESS_TO_PARENT_OR_SIBLING_UNDER_API_OR_SELF()|",
+      "|java+method:///com/google/common/collect/Collections2/filter(java.util.Collection,com.google.common.base.Predicate)|"
+    ],
+    "affectedLib": "com.google.guava:guava:17.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.coderu:coderu-core:1.0.1",
+    "coordinatesV2": "org.coderu:coderu-core:1.1.4",
+    "caller": "|java+method:///org/coderu/core/impl/explorer/helpers/PackageToClassDependency/create(java.util.Collection)|",
+    "called": "|java+method:///com/google/common/base/Functions/forMap(java.util.Map)|",
+    "v1Body": [
+      "|java+method:///com/google/common/base/Functions/forMap(java.util.Map)|",
+      "|java+constructor:///org/coderu/core/impl/explorer/helpers/PackageToClassDependency$2/PackageToClassDependency$2(com.google.common.base.Function)|",
+      "|java+method:///org/coderu/common/utils/MapUtils/mapBy(java.util.Collection,com.google.common.base.Function)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/common/base/Functions/forMap(java.util.Map)|",
+      "|java+constructor:///org/coderu/core/impl/explorer/helpers/PackageToClassDependency$1/PackageToClassDependency$1(com.google.common.base.Function)|",
+      "|java+method:///org/coderu/common/utils/MapUtils/mapBy(java.util.Collection,com.google.common.base.Function)|"
+    ],
+    "affectedLib": "com.google.guava:guava:17.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.coderu:coderu-core:1.0.1",
+    "coordinatesV2": "org.coderu:coderu-core:1.1.4",
+    "caller": "|java+method:///org/coderu/core/impl/explorer/parser/impl/PackageFilterFactory/createFilter(java.util.Collection,java.util.Collection)|",
+    "called": "|java+method:///com/google/common/base/Predicates/not(com.google.common.base.Predicate)|",
+    "v1Body": [
+      "|java+constructor:///org/coderu/core/impl/explorer/parser/impl/PackageFilterFactory$2/PackageFilterFactory$2(com.google.common.base.Predicate)|",
+      "|java+method:///org/coderu/common/utils/FunctionFactory/concat(com.google.common.base.Function,com.google.common.base.Function)|",
+      "|java+method:///com/google/common/base/Predicates/or(java.lang.Iterable)|",
+      "|java+method:///com/google/common/base/Predicates/not(com.google.common.base.Predicate)|",
+      "|java+method:///org/coderu/common/utils/CollectionUtils/transform(java.util.Collection,com.google.common.base.Function)|",
+      "|java+method:///com/google/common/base/Predicates/and(com.google.common.base.Predicate,com.google.common.base.Predicate)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/coderu/core/impl/explorer/parser/impl/PackageFilterFactory$1/PackageFilterFactory$1(com.google.common.base.Predicate)|",
+      "|java+method:///org/coderu/common/utils/FunctionFactory/concat(com.google.common.base.Function,com.google.common.base.Function)|",
+      "|java+method:///com/google/common/base/Predicates/or(java.lang.Iterable)|",
+      "|java+method:///com/google/common/base/Predicates/not(com.google.common.base.Predicate)|",
+      "|java+method:///org/coderu/common/utils/CollectionUtils/transform(java.util.Collection,com.google.common.base.Function)|",
+      "|java+method:///com/google/common/base/Predicates/and(com.google.common.base.Predicate,com.google.common.base.Predicate)|"
+    ],
+    "affectedLib": "com.google.guava:guava:17.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.coderu:coderu-core:1.0.1",
+    "coordinatesV2": "org.coderu:coderu-core:1.1.4",
+    "caller": "|java+initializer:///org/coderu/core/impl/explorer/rules/AccessRightsFactory/AccessRightsFactory$initializer|",
+    "called": "|java+method:///com/google/common/base/Predicates/alwaysTrue()|",
+    "v1Body": [
+      "|java+constructor:///org/coderu/core/impl/explorer/rules/AccessRightsFactory$6/AccessRightsFactory$6()|",
+      "|java+method:///org/coderu/common/utils/PairUtils/pair2second()|",
+      "|java+constructor:///org/coderu/core/impl/explorer/rules/AccessRightsFactory$7/AccessRightsFactory$7()|",
+      "|java+constructor:///org/coderu/core/impl/explorer/rules/AccessRightsFactory$8/AccessRightsFactory$8()|",
+      "|java+method:///com/google/common/base/Predicates/not(com.google.common.base.Predicate)|",
+      "|java+method:///java/util/Arrays/asList(java.lang.Object%5B%5D)|",
+      "|java+constructor:///org/coderu/core/impl/explorer/rules/AccessRightsFactory$1/AccessRightsFactory$1()|",
+      "|java+method:///org/coderu/common/utils/PairUtils/pair2first()|",
+      "|java+constructor:///org/coderu/core/impl/explorer/rules/AccessRightsFactory$2/AccessRightsFactory$2()|",
+      "|java+constructor:///org/coderu/core/impl/explorer/rules/AccessRightsFactory$3/AccessRightsFactory$3()|",
+      "|java+constructor:///org/coderu/core/impl/explorer/rules/AccessRightsFactory$4/AccessRightsFactory$4()|",
+      "|java+method:///com/google/common/base/Predicates/or(java.lang.Iterable)|",
+      "|java+method:///com/google/common/base/Predicates/alwaysTrue()|",
+      "|java+method:///org/coderu/core/impl/explorer/rules/AccessRightsFactory/isTypeOf(org.coderu.core.impl.common.types.PackageType%5B%5D)|",
+      "|java+constructor:///org/coderu/core/impl/explorer/rules/AccessRightsFactory$5/AccessRightsFactory$5()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/coderu/core/impl/explorer/rules/AccessRightsFactory$6/AccessRightsFactory$6()|",
+      "|java+method:///org/coderu/common/utils/PairUtils/pair2second()|",
+      "|java+constructor:///org/coderu/core/impl/explorer/rules/AccessRightsFactory$8/AccessRightsFactory$8()|",
+      "|java+constructor:///org/coderu/core/impl/explorer/rules/AccessRightsFactory$9/AccessRightsFactory$9()|",
+      "|java+method:///com/google/common/base/Predicates/alwaysTrue()|",
+      "|java+method:///org/coderu/common/utils/PairUtils/pair2first()|"
+    ],
+    "affectedLib": "com.google.guava:guava:17.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.coderu:coderu-core:1.0.1",
+    "coordinatesV2": "org.coderu:coderu-core:1.1.4",
+    "caller": "|java+method:///org/coderu/common/utils/FunctionFactory$5/apply(java.lang.Object)|",
+    "called": "|java+method:///org/apache/commons/lang3/Validate/isTrue(boolean,java.lang.String,java.lang.Object%5B%5D)|",
+    "v1Body": [
+      "|java+method:///org/coderu/common/utils/FunctionFactory$5/apply(java.util.Collection)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/lang3/Validate/isTrue(boolean,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///java/util/Collection/isEmpty()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/Collection/iterator()|"
+    ],
+    "affectedLib": "org.apache.commons:commons-lang3:3.3.2",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.coderu:coderu-core:1.0.1",
+    "coordinatesV2": "org.coderu:coderu-core:1.1.4",
+    "caller": "|java+method:///org/coderu/common/utils/FunctionFactory/sorter(java.util.Comparator)|",
+    "called": "|java+method:///org/apache/commons/lang3/Validate/isTrue(boolean,java.lang.String,java.lang.Object%5B%5D)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/lang3/Validate/isTrue(boolean,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+constructor:///org/coderu/common/utils/FunctionFactory$5/FunctionFactory$5(java.util.Comparator)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/lang3/Validate/isTrue(boolean,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+constructor:///org/coderu/common/utils/FunctionFactory$2/FunctionFactory$2(java.util.Comparator)|"
+    ],
+    "affectedLib": "org.apache.commons:commons-lang3:3.3.2",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.coderu:coderu-core:1.0.1",
+    "coordinatesV2": "org.coderu:coderu-core:1.1.4",
+    "caller": "|java+method:///org/coderu/core/impl/explorer/parser/impl/ClassParser/apply(com.google.common.base.Supplier)|",
+    "called": "|java+method:///org/apache/commons/io/IOUtils/closeQuietly(java.io.InputStream)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/io/IOUtils/closeQuietly(java.io.InputStream)|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.Throwable)|",
+      "|java+method:///com/google/common/base/Supplier/get()|",
+      "|java+method:///org/coderu/common/utils/CollectionUtils/removeDuplicates(java.util.Collection)|",
+      "|java+constructor:///org/objectweb/asm/ClassReader/ClassReader(java.io.InputStream)|",
+      "|java+constructor:///org/coderu/core/impl/explorer/parser/impl/loader/bytecode/ByteCodeParser/ByteCodeParser()|",
+      "|java+method:///org/objectweb/asm/ClassReader/accept(org.objectweb.asm.ClassVisitor,int)|",
+      "|java+method:///org/coderu/core/impl/explorer/parser/impl/loader/bytecode/ByteCodeParser/getTypes()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/io/IOUtils/closeQuietly(java.io.InputStream)|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.Throwable)|",
+      "|java+method:///com/google/common/base/Supplier/get()|",
+      "|java+constructor:///org/objectweb/asm/ClassReader/ClassReader(java.io.InputStream)|",
+      "|java+constructor:///org/coderu/core/impl/explorer/parser/impl/loader/bytecode/ByteCodeParser/ByteCodeParser()|",
+      "|java+method:///org/objectweb/asm/ClassReader/accept(org.objectweb.asm.ClassVisitor,int)|",
+      "|java+method:///org/coderu/core/impl/explorer/parser/impl/loader/bytecode/ByteCodeParser/getTypes()|"
+    ],
+    "affectedLib": "commons-io:commons-io:2.4",
+    "change": "UPDATED"
+  }
+]

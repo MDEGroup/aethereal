@@ -1,0 +1,265 @@
+[
+  {
+    "coordinatesV1": "org.switchyard.components:switchyard-component-test-mixin-http:1.1.0.M4",
+    "coordinatesV2": "org.switchyard.components:switchyard-component-test-mixin-http:0.8.0.Final",
+    "caller": "|java+method:///org/switchyard/component/test/mixins/http/HTTPMixIn/postResource(java.lang.String,java.lang.String)|",
+    "called": "|java+constructor:///org/apache/commons/httpclient/methods/PostMethod/PostMethod(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/io/InputStream/read(byte%5B%5D)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/log4j/Logger/info(java.lang.Object)|",
+      "|java+method:///java/io/ByteArrayOutputStream/toByteArray()|",
+      "|java+constructor:///java/io/ByteArrayOutputStream/ByteArrayOutputStream()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/apache/commons/httpclient/methods/PostMethod/releaseConnection()|",
+      "|java+method:///org/switchyard/test/SwitchYardTestKit/getResourceAsStream(java.lang.String)|",
+      "|java+method:///org/apache/commons/httpclient/methods/PostMethod/setRequestEntity(org.apache.commons.httpclient.methods.RequestEntity)|",
+      "|java+constructor:///org/apache/commons/httpclient/methods/PostMethod/PostMethod(java.lang.String)|",
+      "|java+method:///java/io/ByteArrayOutputStream/write(byte%5B%5D,int,int)|",
+      "|java+method:///org/junit/Assert/fail(java.lang.String)|",
+      "|java+method:///java/io/InputStream/close()|",
+      "|java+constructor:///org/apache/commons/httpclient/methods/InputStreamRequestEntity/InputStreamRequestEntity(java.io.InputStream,java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///java/lang/String/String(byte%5B%5D)|",
+      "|java+method:///org/switchyard/component/test/mixins/http/HTTPMixIn/execute(org.apache.commons.httpclient.HttpMethod)|",
+      "|java+method:///org/apache/log4j/Logger/error(java.lang.Object,java.lang.Throwable)|",
+      "|java+method:///org/switchyard/component/test/mixins/http/HTTPMixIn/getTestKit()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/http/HttpResponse/getStatusLine()|",
+      "|java+method:///org/apache/http/util/EntityUtils/toString(org.apache.http.HttpEntity)|",
+      "|java+method:///org/apache/http/StatusLine/getStatusCode()|",
+      "|java+method:///org/apache/http/HttpResponse/getEntity()|",
+      "|java+method:///org/apache/log4j/Logger/error(java.lang.Object,java.lang.Throwable)|",
+      "|java+method:///org/switchyard/component/test/mixins/http/HTTPMixIn/postResourceAndGetMethod(java.lang.String,java.lang.String)|"
+    ],
+    "affectedLib": "commons-httpclient:commons-httpclient:3.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.switchyard.components:switchyard-component-test-mixin-http:1.1.0.M4",
+    "coordinatesV2": "org.switchyard.components:switchyard-component-test-mixin-http:0.8.0.Final",
+    "caller": "|java+method:///org/switchyard/component/test/mixins/http/HTTPMixIn/initialize()|",
+    "called": "|java+constructor:///org/apache/commons/httpclient/HttpClient/HttpClient()|",
+    "v1Body": [
+      "|java+constructor:///org/apache/commons/httpclient/HttpClient/HttpClient()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/http/impl/client/DefaultHttpClient/DefaultHttpClient()|"
+    ],
+    "affectedLib": "commons-httpclient:commons-httpclient:3.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.switchyard.components:switchyard-component-test-mixin-http:1.1.0.M4",
+    "coordinatesV2": "org.switchyard.components:switchyard-component-test-mixin-http:0.8.0.Final",
+    "caller": "|java+method:///org/switchyard/component/test/mixins/http/HTTPMixIn/postString(java.lang.String,java.lang.String)|",
+    "called": "|java+constructor:///org/apache/commons/httpclient/methods/StringRequestEntity/StringRequestEntity(java.lang.String,java.lang.String,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/log4j/Logger/info(java.lang.Object)|",
+      "|java+method:///org/apache/commons/httpclient/methods/PostMethod/releaseConnection()|",
+      "|java+constructor:///org/apache/commons/httpclient/methods/StringRequestEntity/StringRequestEntity(java.lang.String,java.lang.String,java.lang.String)|",
+      "|java+method:///org/apache/log4j/Logger/error(java.lang.Object,java.lang.Throwable)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/apache/commons/httpclient/methods/PostMethod/setRequestEntity(org.apache.commons.httpclient.methods.RequestEntity)|",
+      "|java+constructor:///org/apache/commons/httpclient/methods/PostMethod/PostMethod(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/switchyard/component/test/mixins/http/HTTPMixIn/execute(org.apache.commons.httpclient.HttpMethod)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/log4j/Logger/info(java.lang.Object)|",
+      "|java+method:///org/apache/http/util/EntityUtils/toString(org.apache.http.HttpEntity)|",
+      "|java+method:///org/apache/http/client/methods/HttpPost/setEntity(org.apache.http.HttpEntity)|",
+      "|java+constructor:///org/apache/http/entity/StringEntity/StringEntity(java.lang.String,java.lang.String,java.lang.String)|",
+      "|java+method:///org/switchyard/component/test/mixins/http/HTTPMixIn/execute(org.apache.http.client.methods.HttpRequestBase)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///org/apache/http/client/methods/HttpPost/HttpPost(java.lang.String)|",
+      "|java+method:///org/apache/log4j/Logger/error(java.lang.Object,java.lang.Throwable)|",
+      "|java+method:///org/apache/http/HttpResponse/getEntity()|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "affectedLib": "commons-httpclient:commons-httpclient:3.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.switchyard.components:switchyard-component-test-mixin-http:1.1.0.M4",
+    "coordinatesV2": "org.switchyard.components:switchyard-component-test-mixin-http:0.8.0.Final",
+    "caller": "|java+method:///org/switchyard/component/test/mixins/http/HTTPMixIn/sendString(java.lang.String,java.lang.String,java.lang.String)|",
+    "called": "|java+constructor:///org/apache/commons/httpclient/methods/GetMethod/GetMethod(java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/commons/httpclient/methods/GetMethod/GetMethod(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/log4j/Logger/info(java.lang.Object)|",
+      "|java+method:///org/apache/commons/httpclient/methods/PutMethod/setRequestEntity(org.apache.commons.httpclient.methods.RequestEntity)|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+constructor:///org/apache/commons/httpclient/methods/PutMethod/PutMethod(java.lang.String)|",
+      "|java+constructor:///org/apache/commons/httpclient/methods/StringRequestEntity/StringRequestEntity(java.lang.String,java.lang.String,java.lang.String)|",
+      "|java+method:///org/apache/log4j/Logger/error(java.lang.Object,java.lang.Throwable)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///org/apache/commons/httpclient/methods/OptionsMethod/OptionsMethod(java.lang.String)|",
+      "|java+method:///org/apache/commons/httpclient/methods/PostMethod/setRequestEntity(org.apache.commons.httpclient.methods.RequestEntity)|",
+      "|java+constructor:///org/apache/commons/httpclient/methods/DeleteMethod/DeleteMethod(java.lang.String)|",
+      "|java+constructor:///org/apache/commons/httpclient/methods/HeadMethod/HeadMethod(java.lang.String)|",
+      "|java+constructor:///org/apache/commons/httpclient/methods/PostMethod/PostMethod(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/switchyard/component/test/mixins/http/HTTPMixIn/execute(org.apache.commons.httpclient.HttpMethod)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/switchyard/component/test/mixins/http/HTTPMixIn/sendStringAndGetMethod(java.lang.String,java.lang.String,java.lang.String)|",
+      "|java+method:///org/apache/http/util/EntityUtils/toString(org.apache.http.HttpEntity)|",
+      "|java+method:///org/apache/log4j/Logger/error(java.lang.Object,java.lang.Throwable)|",
+      "|java+method:///org/apache/http/HttpResponse/getEntity()|"
+    ],
+    "affectedLib": "commons-httpclient:commons-httpclient:3.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.switchyard.components:switchyard-component-test-mixin-http:1.1.0.M4",
+    "coordinatesV2": "org.switchyard.components:switchyard-component-test-mixin-http:0.8.0.Final",
+    "caller": "|java+method:///org/switchyard/component/test/mixins/http/HTTPMixIn/uninitialize()|",
+    "called": "|java+method:///org/apache/commons/httpclient/MultiThreadedHttpConnectionManager/shutdown()|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/httpclient/HttpClient/getHttpConnectionManager()|",
+      "|java+method:///org/apache/commons/httpclient/HttpConnectionManager/closeIdleConnections(long)|",
+      "|java+method:///org/apache/commons/httpclient/MultiThreadedHttpConnectionManager/shutdown()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/http/conn/ClientConnectionManager/closeIdleConnections(long,java.util.concurrent.TimeUnit)|",
+      "|java+method:///org/apache/http/conn/ClientConnectionManager/shutdown()|",
+      "|java+method:///org/apache/http/client/HttpClient/getConnectionManager()|"
+    ],
+    "affectedLib": "commons-httpclient:commons-httpclient:3.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.switchyard.components:switchyard-component-test-mixin-http:1.1.0.M4",
+    "coordinatesV2": "org.switchyard.components:switchyard-component-test-mixin-http:0.8.0.Final",
+    "caller": "|java+method:///org/switchyard/component/test/mixins/http/HTTPMixIn/postFile(java.lang.String,java.lang.String)|",
+    "called": "|java+constructor:///org/apache/commons/httpclient/methods/PostMethod/PostMethod(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/httpclient/methods/FileRequestEntity/writeRequest(java.io.OutputStream)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/log4j/Logger/info(java.lang.Object)|",
+      "|java+method:///org/apache/commons/httpclient/methods/PostMethod/releaseConnection()|",
+      "|java+constructor:///org/apache/commons/httpclient/methods/FileRequestEntity/FileRequestEntity(java.io.File,java.lang.String)|",
+      "|java+constructor:///java/io/ByteArrayOutputStream/ByteArrayOutputStream()|",
+      "|java+method:///org/apache/log4j/Logger/error(java.lang.Object,java.lang.Throwable)|",
+      "|java+method:///org/apache/commons/httpclient/methods/PostMethod/setRequestEntity(org.apache.commons.httpclient.methods.RequestEntity)|",
+      "|java+constructor:///org/apache/commons/httpclient/methods/PostMethod/PostMethod(java.lang.String)|",
+      "|java+constructor:///java/io/File/File(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/switchyard/component/test/mixins/http/HTTPMixIn/execute(org.apache.commons.httpclient.HttpMethod)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/io/ByteArrayOutputStream/toString()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/http/entity/FileEntity/writeTo(java.io.OutputStream)|",
+      "|java+constructor:///org/apache/http/entity/FileEntity/FileEntity(java.io.File,java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/log4j/Logger/info(java.lang.Object)|",
+      "|java+method:///org/apache/http/util/EntityUtils/toString(org.apache.http.HttpEntity)|",
+      "|java+method:///org/apache/http/client/methods/HttpPost/setEntity(org.apache.http.HttpEntity)|",
+      "|java+constructor:///java/io/File/File(java.lang.String)|",
+      "|java+method:///org/switchyard/component/test/mixins/http/HTTPMixIn/execute(org.apache.http.client.methods.HttpRequestBase)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///org/apache/http/client/methods/HttpPost/HttpPost(java.lang.String)|",
+      "|java+constructor:///java/io/ByteArrayOutputStream/ByteArrayOutputStream()|",
+      "|java+method:///org/apache/log4j/Logger/error(java.lang.Object,java.lang.Throwable)|",
+      "|java+method:///org/apache/http/HttpResponse/getEntity()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/io/ByteArrayOutputStream/toString()|"
+    ],
+    "affectedLib": "commons-httpclient:commons-httpclient:3.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.switchyard.components:switchyard-component-test-mixin-http:0.8.0.Final",
+    "coordinatesV2": "org.switchyard.components:switchyard-component-test-mixin-http:1.1.0.M4",
+    "caller": "|java+method:///org/switchyard/component/test/mixins/http/HTTPMixIn/initialize()|",
+    "called": "|java+constructor:///org/apache/http/impl/client/DefaultHttpClient/DefaultHttpClient()|",
+    "v1Body": [
+      "|java+constructor:///org/apache/commons/httpclient/HttpClient/HttpClient()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/http/impl/client/DefaultHttpClient/DefaultHttpClient()|"
+    ],
+    "affectedLib": "org.apache.httpcomponents:httpclient:4.2.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.switchyard.components:switchyard-component-test-mixin-http:0.8.0.Final",
+    "coordinatesV2": "org.switchyard.components:switchyard-component-test-mixin-http:1.1.0.M4",
+    "caller": "|java+method:///org/switchyard/component/test/mixins/http/HTTPMixIn/postString(java.lang.String,java.lang.String)|",
+    "called": "|java+constructor:///org/apache/http/client/methods/HttpPost/HttpPost(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/log4j/Logger/info(java.lang.Object)|",
+      "|java+method:///org/apache/commons/httpclient/methods/PostMethod/releaseConnection()|",
+      "|java+constructor:///org/apache/commons/httpclient/methods/StringRequestEntity/StringRequestEntity(java.lang.String,java.lang.String,java.lang.String)|",
+      "|java+method:///org/apache/log4j/Logger/error(java.lang.Object,java.lang.Throwable)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/apache/commons/httpclient/methods/PostMethod/setRequestEntity(org.apache.commons.httpclient.methods.RequestEntity)|",
+      "|java+constructor:///org/apache/commons/httpclient/methods/PostMethod/PostMethod(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/switchyard/component/test/mixins/http/HTTPMixIn/execute(org.apache.commons.httpclient.HttpMethod)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/log4j/Logger/info(java.lang.Object)|",
+      "|java+method:///org/apache/http/util/EntityUtils/toString(org.apache.http.HttpEntity)|",
+      "|java+method:///org/apache/http/client/methods/HttpPost/setEntity(org.apache.http.HttpEntity)|",
+      "|java+constructor:///org/apache/http/entity/StringEntity/StringEntity(java.lang.String,java.lang.String,java.lang.String)|",
+      "|java+method:///org/switchyard/component/test/mixins/http/HTTPMixIn/execute(org.apache.http.client.methods.HttpRequestBase)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///org/apache/http/client/methods/HttpPost/HttpPost(java.lang.String)|",
+      "|java+method:///org/apache/log4j/Logger/error(java.lang.Object,java.lang.Throwable)|",
+      "|java+method:///org/apache/http/HttpResponse/getEntity()|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "affectedLib": "org.apache.httpcomponents:httpclient:4.2.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.switchyard.components:switchyard-component-test-mixin-http:0.8.0.Final",
+    "coordinatesV2": "org.switchyard.components:switchyard-component-test-mixin-http:1.1.0.M4",
+    "caller": "|java+method:///org/switchyard/component/test/mixins/http/HTTPMixIn/postFile(java.lang.String,java.lang.String)|",
+    "called": "|java+constructor:///org/apache/http/client/methods/HttpPost/HttpPost(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/httpclient/methods/FileRequestEntity/writeRequest(java.io.OutputStream)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/log4j/Logger/info(java.lang.Object)|",
+      "|java+method:///org/apache/commons/httpclient/methods/PostMethod/releaseConnection()|",
+      "|java+constructor:///org/apache/commons/httpclient/methods/FileRequestEntity/FileRequestEntity(java.io.File,java.lang.String)|",
+      "|java+constructor:///java/io/ByteArrayOutputStream/ByteArrayOutputStream()|",
+      "|java+method:///org/apache/log4j/Logger/error(java.lang.Object,java.lang.Throwable)|",
+      "|java+method:///org/apache/commons/httpclient/methods/PostMethod/setRequestEntity(org.apache.commons.httpclient.methods.RequestEntity)|",
+      "|java+constructor:///org/apache/commons/httpclient/methods/PostMethod/PostMethod(java.lang.String)|",
+      "|java+constructor:///java/io/File/File(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/switchyard/component/test/mixins/http/HTTPMixIn/execute(org.apache.commons.httpclient.HttpMethod)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/io/ByteArrayOutputStream/toString()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/http/entity/FileEntity/writeTo(java.io.OutputStream)|",
+      "|java+constructor:///org/apache/http/entity/FileEntity/FileEntity(java.io.File,java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/log4j/Logger/info(java.lang.Object)|",
+      "|java+method:///org/apache/http/util/EntityUtils/toString(org.apache.http.HttpEntity)|",
+      "|java+method:///org/apache/http/client/methods/HttpPost/setEntity(org.apache.http.HttpEntity)|",
+      "|java+constructor:///java/io/File/File(java.lang.String)|",
+      "|java+method:///org/switchyard/component/test/mixins/http/HTTPMixIn/execute(org.apache.http.client.methods.HttpRequestBase)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///org/apache/http/client/methods/HttpPost/HttpPost(java.lang.String)|",
+      "|java+constructor:///java/io/ByteArrayOutputStream/ByteArrayOutputStream()|",
+      "|java+method:///org/apache/log4j/Logger/error(java.lang.Object,java.lang.Throwable)|",
+      "|java+method:///org/apache/http/HttpResponse/getEntity()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/io/ByteArrayOutputStream/toString()|"
+    ],
+    "affectedLib": "org.apache.httpcomponents:httpclient:4.2.1",
+    "change": "ADDED"
+  }
+]

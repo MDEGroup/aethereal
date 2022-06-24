@@ -1,0 +1,238 @@
+[
+  {
+    "coordinatesV1": "fr.lirmm.graphik:graal-store-openrdf:1.0.0",
+    "coordinatesV2": "fr.lirmm.graphik:graal-store-openrdf:0.9.0",
+    "caller": "|java+constructor:///fr/lirmm/graphik/graal/store/triplestore/SailStore/SailStore()|",
+    "called": "|java+constructor:///fr/lirmm/graphik/graal/store/AbstractTripleStore/AbstractTripleStore()|",
+    "v1Body": [
+      "|java+method:///org/openrdf/repository/Repository/getConnection()|",
+      "|java+constructor:///fr/lirmm/graphik/graal/core/atomset/AtomSetException/AtomSetException(java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///org/openrdf/repository/sail/SailRepository/SailRepository(org.openrdf.sail.Sail)|",
+      "|java+constructor:///org/openrdf/sail/memory/MemoryStore/MemoryStore()|",
+      "|java+method:///org/openrdf/repository/Repository/initialize()|",
+      "|java+method:///org/openrdf/repository/Repository/getValueFactory()|",
+      "|java+constructor:///fr/lirmm/graphik/graal/store/AbstractTripleStore/AbstractTripleStore()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/openrdf/repository/Repository/getConnection()|",
+      "|java+constructor:///fr/lirmm/graphik/graal/api/store/AbstractTripleStore/AbstractTripleStore()|",
+      "|java+constructor:///org/openrdf/repository/sail/SailRepository/SailRepository(org.openrdf.sail.Sail)|",
+      "|java+constructor:///org/openrdf/sail/memory/MemoryStore/MemoryStore()|",
+      "|java+method:///org/openrdf/repository/Repository/initialize()|",
+      "|java+method:///org/openrdf/repository/Repository/getValueFactory()|",
+      "|java+constructor:///fr/lirmm/graphik/graal/api/core/AtomSetException/AtomSetException(java.lang.String,java.lang.Throwable)|"
+    ],
+    "affectedLib": "fr.lirmm.graphik:graal-store-api:0.9.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "fr.lirmm.graphik:graal-store-openrdf:0.9.0",
+    "coordinatesV2": "fr.lirmm.graphik:graal-store-openrdf:1.0.0",
+    "caller": "|java+method:///fr/lirmm/graphik/graal/store/triplestore/SailStore/getTermsQuery()|",
+    "called": "|java+constructor:///fr/lirmm/graphik/graal/api/core/AtomSetException/AtomSetException(java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/isErrorEnabled()|",
+      "|java+method:///org/openrdf/repository/RepositoryConnection/prepareTupleQuery(org.openrdf.query.QueryLanguage,java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///fr/lirmm/graphik/graal/core/atomset/AtomSetException/AtomSetException(java.lang.Throwable)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/openrdf/repository/RepositoryConnection/prepareTupleQuery(org.openrdf.query.QueryLanguage,java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///fr/lirmm/graphik/graal/api/core/AtomSetException/AtomSetException(java.lang.Throwable)|",
+      "|java+method:///org/slf4j/Logger/isErrorEnabled()|"
+    ],
+    "affectedLib": "fr.lirmm.graphik:graal-api:1.0.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "fr.lirmm.graphik:graal-store-openrdf:0.9.0",
+    "coordinatesV2": "fr.lirmm.graphik:graal-store-openrdf:1.0.0",
+    "caller": "|java+method:///fr/lirmm/graphik/graal/store/triplestore/SailStore/clear()|",
+    "called": "|java+constructor:///fr/lirmm/graphik/graal/api/core/AtomSetException/AtomSetException(java.lang.String,java.lang.Throwable)|",
+    "v1Body": [
+      "|java+constructor:///fr/lirmm/graphik/graal/core/atomset/AtomSetException/AtomSetException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/openrdf/repository/RepositoryConnection/clear(org.openrdf.model.Resource%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/openrdf/repository/RepositoryConnection/clear(org.openrdf.model.Resource%5B%5D)|",
+      "|java+constructor:///fr/lirmm/graphik/graal/api/core/AtomSetException/AtomSetException(java.lang.String,java.lang.Throwable)|"
+    ],
+    "affectedLib": "fr.lirmm.graphik:graal-api:1.0.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "fr.lirmm.graphik:graal-store-openrdf:0.9.0",
+    "coordinatesV2": "fr.lirmm.graphik:graal-store-openrdf:1.0.0",
+    "caller": "|java+method:///fr/lirmm/graphik/graal/store/triplestore/SailStore/addAll(java.util.Iterator)|",
+    "called": "|java+constructor:///fr/lirmm/graphik/graal/api/core/AtomSetException/AtomSetException(java.lang.String,java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///fr/lirmm/graphik/graal/core/atomset/AtomSetException/AtomSetException(java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///fr/lirmm/graphik/graal/store/triplestore/SailStore$StatementIterator/SailStore$StatementIterator(fr.lirmm.graphik.graal.store.triplestore.SailStore,java.util.Iterator)|",
+      "|java+method:///org/openrdf/repository/RepositoryConnection/add(info.aduna.iteration.Iteration,org.openrdf.model.Resource%5B%5D)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///fr/lirmm/graphik/graal/store/triplestore/SailStore$StatementIterator/SailStore$StatementIterator(fr.lirmm.graphik.graal.store.triplestore.SailStore,java.util.Iterator)|",
+      "|java+method:///org/openrdf/repository/RepositoryConnection/add(info.aduna.iteration.Iteration,org.openrdf.model.Resource%5B%5D)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+constructor:///fr/lirmm/graphik/graal/api/core/AtomSetException/AtomSetException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "affectedLib": "fr.lirmm.graphik:graal-api:1.0.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "fr.lirmm.graphik:graal-store-openrdf:0.9.0",
+    "coordinatesV2": "fr.lirmm.graphik:graal-store-openrdf:1.0.0",
+    "caller": "|java+method:///fr/lirmm/graphik/graal/store/triplestore/SailStore/predicatesIterator()|",
+    "called": "|java+constructor:///fr/lirmm/graphik/graal/api/core/AtomSetException/AtomSetException(java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///org/openrdf/query/TupleQuery/evaluate()|",
+      "|java+method:///fr/lirmm/graphik/graal/store/triplestore/SailStore/getPredicatesQuery()|",
+      "|java+constructor:///fr/lirmm/graphik/graal/core/atomset/AtomSetException/AtomSetException(java.lang.Throwable)|",
+      "|java+constructor:///fr/lirmm/graphik/graal/store/triplestore/SailStore$PredicatesIterator/SailStore$PredicatesIterator(fr.lirmm.graphik.graal.store.triplestore.SailStore,org.openrdf.query.TupleQueryResult)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///fr/lirmm/graphik/graal/api/core/AtomSetException/AtomSetException(java.lang.Throwable)|",
+      "|java+method:///org/openrdf/query/TupleQuery/evaluate()|",
+      "|java+method:///fr/lirmm/graphik/graal/store/triplestore/SailStore/getPredicatesQuery()|",
+      "|java+constructor:///fr/lirmm/graphik/graal/store/triplestore/SailStore$PredicatesIterator/SailStore$PredicatesIterator(fr.lirmm.graphik.graal.store.triplestore.SailStore,org.openrdf.query.TupleQueryResult)|"
+    ],
+    "affectedLib": "fr.lirmm.graphik:graal-api:1.0.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "fr.lirmm.graphik:graal-store-openrdf:0.9.0",
+    "coordinatesV2": "fr.lirmm.graphik:graal-store-openrdf:1.0.0",
+    "caller": "|java+method:///fr/lirmm/graphik/graal/store/triplestore/SailStore/valueToPredicate(org.openrdf.model.Value)|",
+    "called": "|java+constructor:///fr/lirmm/graphik/graal/api/core/Predicate/Predicate(java.lang.Object,int)|",
+    "v1Body": [
+      "|java+method:///java/lang/Object/toString()|",
+      "|java+constructor:///fr/lirmm/graphik/graal/core/Predicate/Predicate(java.lang.Object,int)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Object/toString()|",
+      "|java+constructor:///fr/lirmm/graphik/graal/api/core/Predicate/Predicate(java.lang.Object,int)|"
+    ],
+    "affectedLib": "fr.lirmm.graphik:graal-api:1.0.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "fr.lirmm.graphik:graal-store-openrdf:0.9.0",
+    "coordinatesV2": "fr.lirmm.graphik:graal-store-openrdf:1.0.0",
+    "caller": "|java+method:///fr/lirmm/graphik/graal/store/triplestore/SailStore/removeAll(java.util.Iterator)|",
+    "called": "|java+constructor:///fr/lirmm/graphik/graal/api/core/AtomSetException/AtomSetException(java.lang.String,java.lang.Throwable)|",
+    "v1Body": [
+      "|java+constructor:///fr/lirmm/graphik/graal/core/atomset/AtomSetException/AtomSetException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/openrdf/repository/RepositoryConnection/remove(info.aduna.iteration.Iteration,org.openrdf.model.Resource%5B%5D)|",
+      "|java+constructor:///fr/lirmm/graphik/graal/store/triplestore/SailStore$StatementIterator/SailStore$StatementIterator(fr.lirmm.graphik.graal.store.triplestore.SailStore,java.util.Iterator)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/openrdf/repository/RepositoryConnection/remove(info.aduna.iteration.Iteration,org.openrdf.model.Resource%5B%5D)|",
+      "|java+constructor:///fr/lirmm/graphik/graal/store/triplestore/SailStore$StatementIterator/SailStore$StatementIterator(fr.lirmm.graphik.graal.store.triplestore.SailStore,java.util.Iterator)|",
+      "|java+constructor:///fr/lirmm/graphik/graal/api/core/AtomSetException/AtomSetException(java.lang.String,java.lang.Throwable)|"
+    ],
+    "affectedLib": "fr.lirmm.graphik:graal-api:1.0.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "fr.lirmm.graphik:graal-store-openrdf:0.9.0",
+    "coordinatesV2": "fr.lirmm.graphik:graal-store-openrdf:1.0.0",
+    "caller": "|java+method:///fr/lirmm/graphik/graal/store/triplestore/SailStore/termsIterator()|",
+    "called": "|java+constructor:///fr/lirmm/graphik/graal/api/core/AtomSetException/AtomSetException(java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///org/openrdf/query/TupleQuery/evaluate()|",
+      "|java+method:///fr/lirmm/graphik/graal/store/triplestore/SailStore/getTermsQuery()|",
+      "|java+constructor:///fr/lirmm/graphik/graal/store/triplestore/SailStore$TermsIterator/SailStore$TermsIterator(fr.lirmm.graphik.graal.store.triplestore.SailStore,org.openrdf.query.TupleQueryResult)|",
+      "|java+constructor:///fr/lirmm/graphik/graal/core/atomset/AtomSetException/AtomSetException(java.lang.Throwable)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///fr/lirmm/graphik/graal/api/core/AtomSetException/AtomSetException(java.lang.Throwable)|",
+      "|java+method:///org/openrdf/query/TupleQuery/evaluate()|",
+      "|java+method:///fr/lirmm/graphik/graal/store/triplestore/SailStore/getTermsQuery()|",
+      "|java+constructor:///fr/lirmm/graphik/graal/store/triplestore/SailStore$TermsIterator/SailStore$TermsIterator(fr.lirmm.graphik.graal.store.triplestore.SailStore,org.openrdf.query.TupleQueryResult)|"
+    ],
+    "affectedLib": "fr.lirmm.graphik:graal-api:1.0.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "fr.lirmm.graphik:graal-store-openrdf:0.9.0",
+    "coordinatesV2": "fr.lirmm.graphik:graal-store-openrdf:1.0.0",
+    "caller": "|java+constructor:///fr/lirmm/graphik/graal/store/triplestore/SailStore/SailStore()|",
+    "called": "|java+constructor:///fr/lirmm/graphik/graal/api/store/AbstractTripleStore/AbstractTripleStore()|",
+    "v1Body": [
+      "|java+method:///org/openrdf/repository/Repository/getConnection()|",
+      "|java+constructor:///fr/lirmm/graphik/graal/core/atomset/AtomSetException/AtomSetException(java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///org/openrdf/repository/sail/SailRepository/SailRepository(org.openrdf.sail.Sail)|",
+      "|java+constructor:///org/openrdf/sail/memory/MemoryStore/MemoryStore()|",
+      "|java+method:///org/openrdf/repository/Repository/initialize()|",
+      "|java+method:///org/openrdf/repository/Repository/getValueFactory()|",
+      "|java+constructor:///fr/lirmm/graphik/graal/store/AbstractTripleStore/AbstractTripleStore()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/openrdf/repository/Repository/getConnection()|",
+      "|java+constructor:///fr/lirmm/graphik/graal/api/store/AbstractTripleStore/AbstractTripleStore()|",
+      "|java+constructor:///org/openrdf/repository/sail/SailRepository/SailRepository(org.openrdf.sail.Sail)|",
+      "|java+constructor:///org/openrdf/sail/memory/MemoryStore/MemoryStore()|",
+      "|java+method:///org/openrdf/repository/Repository/initialize()|",
+      "|java+method:///org/openrdf/repository/Repository/getValueFactory()|",
+      "|java+constructor:///fr/lirmm/graphik/graal/api/core/AtomSetException/AtomSetException(java.lang.String,java.lang.Throwable)|"
+    ],
+    "affectedLib": "fr.lirmm.graphik:graal-api:1.0.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "fr.lirmm.graphik:graal-store-openrdf:0.9.0",
+    "coordinatesV2": "fr.lirmm.graphik:graal-store-openrdf:1.0.0",
+    "caller": "|java+method:///fr/lirmm/graphik/graal/store/triplestore/SailStore/getPredicatesQuery()|",
+    "called": "|java+constructor:///fr/lirmm/graphik/graal/api/core/AtomSetException/AtomSetException(java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/isErrorEnabled()|",
+      "|java+method:///org/openrdf/repository/RepositoryConnection/prepareTupleQuery(org.openrdf.query.QueryLanguage,java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///fr/lirmm/graphik/graal/core/atomset/AtomSetException/AtomSetException(java.lang.Throwable)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/openrdf/repository/RepositoryConnection/prepareTupleQuery(org.openrdf.query.QueryLanguage,java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///fr/lirmm/graphik/graal/api/core/AtomSetException/AtomSetException(java.lang.Throwable)|",
+      "|java+method:///org/slf4j/Logger/isErrorEnabled()|"
+    ],
+    "affectedLib": "fr.lirmm.graphik:graal-api:1.0.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "fr.lirmm.graphik:graal-store-openrdf:0.9.0",
+    "coordinatesV2": "fr.lirmm.graphik:graal-store-openrdf:1.0.0",
+    "caller": "|java+method:///fr/lirmm/graphik/graal/store/triplestore/SailStore/statementToAtom(org.openrdf.model.Statement)|",
+    "called": "|java+constructor:///fr/lirmm/graphik/graal/core/DefaultAtom/DefaultAtom(fr.lirmm.graphik.graal.api.core.Predicate,fr.lirmm.graphik.graal.api.core.Term%5B%5D)|",
+    "v1Body": [
+      "|java+method:///org/openrdf/model/Statement/getSubject()|",
+      "|java+method:///org/openrdf/model/Statement/getPredicate()|",
+      "|java+method:///fr/lirmm/graphik/graal/core/term/TermFactory/createConstant(java.lang.Object)|",
+      "|java+method:///org/openrdf/model/Statement/getObject()|",
+      "|java+method:///java/lang/Object/toString()|",
+      "|java+method:///fr/lirmm/graphik/graal/core/term/DefaultTermFactory/instance()|",
+      "|java+method:///fr/lirmm/graphik/graal/store/triplestore/SailStore/valueToPredicate(org.openrdf.model.Value)|",
+      "|java+constructor:///fr/lirmm/graphik/graal/core/impl/DefaultAtom/DefaultAtom(fr.lirmm.graphik.graal.core.Predicate,fr.lirmm.graphik.graal.core.term.Term%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///fr/lirmm/graphik/graal/core/DefaultAtom/DefaultAtom(fr.lirmm.graphik.graal.api.core.Predicate,fr.lirmm.graphik.graal.api.core.Term%5B%5D)|",
+      "|java+method:///org/openrdf/model/Statement/getSubject()|",
+      "|java+method:///org/openrdf/model/Statement/getPredicate()|",
+      "|java+method:///org/openrdf/model/Statement/getObject()|",
+      "|java+method:///java/lang/Object/toString()|",
+      "|java+method:///fr/lirmm/graphik/graal/core/term/DefaultTermFactory/instance()|",
+      "|java+method:///fr/lirmm/graphik/graal/api/factory/TermFactory/createConstant(java.lang.Object)|",
+      "|java+method:///fr/lirmm/graphik/graal/store/triplestore/SailStore/valueToPredicate(org.openrdf.model.Value)|"
+    ],
+    "affectedLib": "fr.lirmm.graphik:graal-core:1.0.0",
+    "change": "UPDATED"
+  }
+]

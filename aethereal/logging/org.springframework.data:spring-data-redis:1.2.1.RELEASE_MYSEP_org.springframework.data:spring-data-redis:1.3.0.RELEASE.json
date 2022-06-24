@@ -1,0 +1,795 @@
+[
+  {
+    "coordinatesV1": "org.springframework.data:spring-data-redis:1.3.0.RELEASE",
+    "coordinatesV2": "org.springframework.data:spring-data-redis:1.2.1.RELEASE",
+    "caller": "|java+constructor:///org/springframework/data/redis/connection/jredis/JredisPool/JredisPool(java.lang.String,int)|",
+    "called": "|java+constructor:///org/apache/commons/pool/impl/GenericObjectPool$Config/GenericObjectPool$Config()|",
+    "v1Body": [
+      "|java+constructor:///org/apache/commons/pool/impl/GenericObjectPool$Config/GenericObjectPool$Config()|",
+      "|java+constructor:///org/springframework/data/redis/connection/jredis/JredisPool/JredisPool(java.lang.String,int,int,java.lang.String,int,org.apache.commons.pool.impl.GenericObjectPool$Config)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/commons/pool2/impl/GenericObjectPoolConfig/GenericObjectPoolConfig()|",
+      "|java+constructor:///org/springframework/data/redis/connection/jredis/JredisPool/JredisPool(java.lang.String,int,int,java.lang.String,int,org.apache.commons.pool2.impl.GenericObjectPoolConfig)|"
+    ],
+    "affectedLib": "commons-pool:commons-pool:1.5.6",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.springframework.data:spring-data-redis:1.3.0.RELEASE",
+    "coordinatesV2": "org.springframework.data:spring-data-redis:1.2.1.RELEASE",
+    "caller": "|java+method:///org/springframework/data/redis/connection/jredis/JredisPool/returnResource(org.jredis.JRedis)|",
+    "called": "|java+method:///org/apache/commons/pool/impl/GenericObjectPool/returnObject(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/pool/impl/GenericObjectPool/returnObject(java.lang.Object)|",
+      "|java+constructor:///org/springframework/data/redis/connection/PoolException/PoolException(java.lang.String,java.lang.Throwable)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/pool2/impl/GenericObjectPool/returnObject(java.lang.Object)|",
+      "|java+constructor:///org/springframework/data/redis/connection/PoolException/PoolException(java.lang.String,java.lang.Throwable)|"
+    ],
+    "affectedLib": "commons-pool:commons-pool:1.5.6",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.springframework.data:spring-data-redis:1.3.0.RELEASE",
+    "coordinatesV2": "org.springframework.data:spring-data-redis:1.2.1.RELEASE",
+    "caller": "|java+method:///org/springframework/data/redis/connection/jredis/JredisPool/getResource()|",
+    "called": "|java+method:///org/apache/commons/pool/impl/GenericObjectPool/borrowObject()|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/pool/impl/GenericObjectPool/borrowObject()|",
+      "|java+constructor:///org/springframework/data/redis/connection/PoolException/PoolException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/springframework/data/redis/connection/jredis/JredisPool/getResource()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/pool2/impl/GenericObjectPool/borrowObject()|",
+      "|java+constructor:///org/springframework/data/redis/connection/PoolException/PoolException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/springframework/data/redis/connection/jredis/JredisPool/getResource()|"
+    ],
+    "affectedLib": "commons-pool:commons-pool:1.5.6",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.springframework.data:spring-data-redis:1.3.0.RELEASE",
+    "coordinatesV2": "org.springframework.data:spring-data-redis:1.2.1.RELEASE",
+    "caller": "|java+method:///org/springframework/data/redis/connection/jredis/JredisPool/returnBrokenResource(org.jredis.JRedis)|",
+    "called": "|java+method:///org/apache/commons/pool/impl/GenericObjectPool/invalidateObject(java.lang.Object)|",
+    "v1Body": [
+      "|java+constructor:///org/springframework/data/redis/connection/PoolException/PoolException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/apache/commons/pool/impl/GenericObjectPool/invalidateObject(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/springframework/data/redis/connection/PoolException/PoolException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/apache/commons/pool2/impl/GenericObjectPool/invalidateObject(java.lang.Object)|"
+    ],
+    "affectedLib": "commons-pool:commons-pool:1.5.6",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.springframework.data:spring-data-redis:1.3.0.RELEASE",
+    "coordinatesV2": "org.springframework.data:spring-data-redis:1.2.1.RELEASE",
+    "caller": "|java+method:///org/springframework/data/redis/connection/lettuce/DefaultLettucePool/destroy()|",
+    "called": "|java+method:///org/apache/commons/pool/impl/GenericObjectPool/close()|",
+    "v1Body": [
+      "|java+method:///com/lambdaworks/redis/RedisClient/shutdown()|",
+      "|java+constructor:///org/springframework/data/redis/connection/PoolException/PoolException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/apache/commons/pool/impl/GenericObjectPool/close()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/lambdaworks/redis/RedisClient/shutdown()|",
+      "|java+constructor:///org/springframework/data/redis/connection/PoolException/PoolException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/apache/commons/pool2/impl/GenericObjectPool/close()|"
+    ],
+    "affectedLib": "commons-pool:commons-pool:1.5.6",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.springframework.data:spring-data-redis:1.3.0.RELEASE",
+    "coordinatesV2": "org.springframework.data:spring-data-redis:1.2.1.RELEASE",
+    "caller": "|java+constructor:///org/springframework/data/redis/connection/lettuce/DefaultLettucePool$LettuceFactory/DefaultLettucePool$LettuceFactory(com.lambdaworks.redis.RedisClient,int)|",
+    "called": "|java+constructor:///org/apache/commons/pool/BasePoolableObjectFactory/BasePoolableObjectFactory()|",
+    "v1Body": [
+      "|java+constructor:///org/apache/commons/pool/BasePoolableObjectFactory/BasePoolableObjectFactory()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/commons/pool2/BasePooledObjectFactory/BasePooledObjectFactory()|"
+    ],
+    "affectedLib": "commons-pool:commons-pool:1.5.6",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.springframework.data:spring-data-redis:1.3.0.RELEASE",
+    "coordinatesV2": "org.springframework.data:spring-data-redis:1.2.1.RELEASE",
+    "caller": "|java+method:///org/springframework/data/redis/connection/jredis/JredisPool/destroy()|",
+    "called": "|java+method:///org/apache/commons/pool/impl/GenericObjectPool/close()|",
+    "v1Body": [
+      "|java+constructor:///org/springframework/data/redis/connection/PoolException/PoolException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/apache/commons/pool/impl/GenericObjectPool/close()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/springframework/data/redis/connection/PoolException/PoolException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/apache/commons/pool2/impl/GenericObjectPool/close()|"
+    ],
+    "affectedLib": "commons-pool:commons-pool:1.5.6",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.springframework.data:spring-data-redis:1.3.0.RELEASE",
+    "coordinatesV2": "org.springframework.data:spring-data-redis:1.2.1.RELEASE",
+    "caller": "|java+method:///org/springframework/data/redis/connection/lettuce/DefaultLettucePool/getResource()|",
+    "called": "|java+method:///org/apache/commons/pool/impl/GenericObjectPool/borrowObject()|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/pool/impl/GenericObjectPool/borrowObject()|",
+      "|java+constructor:///org/springframework/data/redis/connection/PoolException/PoolException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/springframework/data/redis/connection/lettuce/DefaultLettucePool/getResource()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/pool2/impl/GenericObjectPool/borrowObject()|",
+      "|java+constructor:///org/springframework/data/redis/connection/PoolException/PoolException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/springframework/data/redis/connection/lettuce/DefaultLettucePool/getResource()|"
+    ],
+    "affectedLib": "commons-pool:commons-pool:1.5.6",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.springframework.data:spring-data-redis:1.3.0.RELEASE",
+    "coordinatesV2": "org.springframework.data:spring-data-redis:1.2.1.RELEASE",
+    "caller": "|java+method:///org/springframework/data/redis/connection/lettuce/DefaultLettucePool/afterPropertiesSet()|",
+    "called": "|java+constructor:///org/apache/commons/pool/impl/GenericObjectPool/GenericObjectPool(org.apache.commons.pool.PoolableObjectFactory,org.apache.commons.pool.impl.GenericObjectPool$Config)|",
+    "v1Body": [
+      "|java+constructor:///org/springframework/data/redis/connection/lettuce/AuthenticatingRedisClient/AuthenticatingRedisClient(java.lang.String,int,java.lang.String)|",
+      "|java+constructor:///com/lambdaworks/redis/RedisClient/RedisClient(java.lang.String,int)|",
+      "|java+method:///com/lambdaworks/redis/RedisClient/setDefaultTimeout(long,java.util.concurrent.TimeUnit)|",
+      "|java+constructor:///org/springframework/data/redis/connection/lettuce/DefaultLettucePool$LettuceFactory/DefaultLettucePool$LettuceFactory(com.lambdaworks.redis.RedisClient,int)|",
+      "|java+constructor:///org/apache/commons/pool/impl/GenericObjectPool/GenericObjectPool(org.apache.commons.pool.PoolableObjectFactory,org.apache.commons.pool.impl.GenericObjectPool$Config)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/springframework/data/redis/connection/lettuce/AuthenticatingRedisClient/AuthenticatingRedisClient(java.lang.String,int,java.lang.String)|",
+      "|java+constructor:///com/lambdaworks/redis/RedisClient/RedisClient(java.lang.String,int)|",
+      "|java+method:///com/lambdaworks/redis/RedisClient/setDefaultTimeout(long,java.util.concurrent.TimeUnit)|",
+      "|java+constructor:///org/springframework/data/redis/connection/lettuce/DefaultLettucePool$LettuceFactory/DefaultLettucePool$LettuceFactory(com.lambdaworks.redis.RedisClient,int)|",
+      "|java+constructor:///org/apache/commons/pool2/impl/GenericObjectPool/GenericObjectPool(org.apache.commons.pool2.PooledObjectFactory,org.apache.commons.pool2.impl.GenericObjectPoolConfig)|"
+    ],
+    "affectedLib": "commons-pool:commons-pool:1.5.6",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.springframework.data:spring-data-redis:1.3.0.RELEASE",
+    "coordinatesV2": "org.springframework.data:spring-data-redis:1.2.1.RELEASE",
+    "caller": "|java+constructor:///org/springframework/data/redis/connection/lettuce/DefaultLettucePool/DefaultLettucePool(java.lang.String,int)|",
+    "called": "|java+constructor:///org/apache/commons/pool/impl/GenericObjectPool$Config/GenericObjectPool$Config()|",
+    "v1Body": [
+      "|java+method:///java/util/concurrent/TimeUnit/convert(long,java.util.concurrent.TimeUnit)|",
+      "|java+constructor:///org/apache/commons/pool/impl/GenericObjectPool$Config/GenericObjectPool$Config()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/commons/pool2/impl/GenericObjectPoolConfig/GenericObjectPoolConfig()|",
+      "|java+method:///java/util/concurrent/TimeUnit/convert(long,java.util.concurrent.TimeUnit)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "commons-pool:commons-pool:1.5.6",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.springframework.data:spring-data-redis:1.3.0.RELEASE",
+    "coordinatesV2": "org.springframework.data:spring-data-redis:1.2.1.RELEASE",
+    "caller": "|java+method:///org/springframework/data/redis/connection/lettuce/DefaultLettucePool/returnBrokenResource(com.lambdaworks.redis.RedisAsyncConnection)|",
+    "called": "|java+method:///org/apache/commons/pool/impl/GenericObjectPool/invalidateObject(java.lang.Object)|",
+    "v1Body": [
+      "|java+constructor:///org/springframework/data/redis/connection/PoolException/PoolException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/apache/commons/pool/impl/GenericObjectPool/invalidateObject(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/springframework/data/redis/connection/PoolException/PoolException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/apache/commons/pool2/impl/GenericObjectPool/invalidateObject(java.lang.Object)|"
+    ],
+    "affectedLib": "commons-pool:commons-pool:1.5.6",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.springframework.data:spring-data-redis:1.3.0.RELEASE",
+    "coordinatesV2": "org.springframework.data:spring-data-redis:1.2.1.RELEASE",
+    "caller": "|java+constructor:///org/springframework/data/redis/connection/jredis/JredisPool$JredisFactory/JredisPool$JredisFactory(org.jredis.connector.ConnectionSpec)|",
+    "called": "|java+constructor:///org/apache/commons/pool/BasePoolableObjectFactory/BasePoolableObjectFactory()|",
+    "v1Body": [
+      "|java+constructor:///org/apache/commons/pool/BasePoolableObjectFactory/BasePoolableObjectFactory()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/commons/pool2/BasePooledObjectFactory/BasePooledObjectFactory()|"
+    ],
+    "affectedLib": "commons-pool:commons-pool:1.5.6",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.springframework.data:spring-data-redis:1.3.0.RELEASE",
+    "coordinatesV2": "org.springframework.data:spring-data-redis:1.2.1.RELEASE",
+    "caller": "|java+method:///org/springframework/data/redis/connection/lettuce/DefaultLettucePool/returnResource(com.lambdaworks.redis.RedisAsyncConnection)|",
+    "called": "|java+method:///org/apache/commons/pool/impl/GenericObjectPool/returnObject(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/pool/impl/GenericObjectPool/returnObject(java.lang.Object)|",
+      "|java+constructor:///org/springframework/data/redis/connection/PoolException/PoolException(java.lang.String,java.lang.Throwable)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/pool2/impl/GenericObjectPool/returnObject(java.lang.Object)|",
+      "|java+constructor:///org/springframework/data/redis/connection/PoolException/PoolException(java.lang.String,java.lang.Throwable)|"
+    ],
+    "affectedLib": "commons-pool:commons-pool:1.5.6",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.springframework.data:spring-data-redis:1.3.0.RELEASE",
+    "coordinatesV2": "org.springframework.data:spring-data-redis:1.2.1.RELEASE",
+    "caller": "|java+constructor:///org/springframework/data/redis/connection/lettuce/DefaultLettucePool/DefaultLettucePool()|",
+    "called": "|java+constructor:///org/apache/commons/pool/impl/GenericObjectPool$Config/GenericObjectPool$Config()|",
+    "v1Body": [
+      "|java+method:///java/util/concurrent/TimeUnit/convert(long,java.util.concurrent.TimeUnit)|",
+      "|java+constructor:///org/apache/commons/pool/impl/GenericObjectPool$Config/GenericObjectPool$Config()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/commons/pool2/impl/GenericObjectPoolConfig/GenericObjectPoolConfig()|",
+      "|java+method:///java/util/concurrent/TimeUnit/convert(long,java.util.concurrent.TimeUnit)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "commons-pool:commons-pool:1.5.6",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.springframework.data:spring-data-redis:1.3.0.RELEASE",
+    "coordinatesV2": "org.springframework.data:spring-data-redis:1.2.1.RELEASE",
+    "caller": "|java+constructor:///org/springframework/data/redis/connection/jredis/JredisPool/JredisPool(org.jredis.connector.ConnectionSpec)|",
+    "called": "|java+constructor:///org/apache/commons/pool/impl/GenericObjectPool/GenericObjectPool(org.apache.commons.pool.PoolableObjectFactory,org.apache.commons.pool.impl.GenericObjectPool$Config)|",
+    "v1Body": [
+      "|java+constructor:///org/springframework/data/redis/connection/jredis/JredisPool$JredisFactory/JredisPool$JredisFactory(org.jredis.connector.ConnectionSpec)|",
+      "|java+constructor:///org/apache/commons/pool/impl/GenericObjectPool$Config/GenericObjectPool$Config()|",
+      "|java+constructor:///org/apache/commons/pool/impl/GenericObjectPool/GenericObjectPool(org.apache.commons.pool.PoolableObjectFactory,org.apache.commons.pool.impl.GenericObjectPool$Config)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/commons/pool2/impl/GenericObjectPoolConfig/GenericObjectPoolConfig()|",
+      "|java+constructor:///org/springframework/data/redis/connection/jredis/JredisPool$JredisFactory/JredisPool$JredisFactory(org.jredis.connector.ConnectionSpec)|",
+      "|java+constructor:///org/apache/commons/pool2/impl/GenericObjectPool/GenericObjectPool(org.apache.commons.pool2.PooledObjectFactory,org.apache.commons.pool2.impl.GenericObjectPoolConfig)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "commons-pool:commons-pool:1.5.6",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.springframework.data:spring-data-redis:1.3.0.RELEASE",
+    "coordinatesV2": "org.springframework.data:spring-data-redis:1.2.1.RELEASE",
+    "caller": "|java+constructor:///org/springframework/data/redis/connection/jredis/JredisPool/JredisPool(java.lang.String,int,int,java.lang.String,int)|",
+    "called": "|java+constructor:///org/apache/commons/pool/impl/GenericObjectPool$Config/GenericObjectPool$Config()|",
+    "v1Body": [
+      "|java+constructor:///org/apache/commons/pool/impl/GenericObjectPool$Config/GenericObjectPool$Config()|",
+      "|java+constructor:///org/springframework/data/redis/connection/jredis/JredisPool/JredisPool(java.lang.String,int,int,java.lang.String,int,org.apache.commons.pool.impl.GenericObjectPool$Config)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/commons/pool2/impl/GenericObjectPoolConfig/GenericObjectPoolConfig()|",
+      "|java+constructor:///org/springframework/data/redis/connection/jredis/JredisPool/JredisPool(java.lang.String,int,int,java.lang.String,int,org.apache.commons.pool2.impl.GenericObjectPoolConfig)|"
+    ],
+    "affectedLib": "commons-pool:commons-pool:1.5.6",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.springframework.data:spring-data-redis:1.3.0.RELEASE",
+    "coordinatesV2": "org.springframework.data:spring-data-redis:1.2.1.RELEASE",
+    "caller": "|java+constructor:///org/springframework/data/redis/connection/PoolConfig/PoolConfig()|",
+    "called": "|java+constructor:///org/apache/commons/pool/impl/GenericObjectPool$Config/GenericObjectPool$Config()|",
+    "v1Body": [
+      "|java+constructor:///org/apache/commons/pool/impl/GenericObjectPool$Config/GenericObjectPool$Config()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/commons/pool2/impl/GenericObjectPoolConfig/GenericObjectPoolConfig()|"
+    ],
+    "affectedLib": "commons-pool:commons-pool:1.5.6",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.springframework.data:spring-data-redis:1.2.1.RELEASE",
+    "coordinatesV2": "org.springframework.data:spring-data-redis:1.3.0.RELEASE",
+    "caller": "|java+constructor:///org/springframework/data/redis/connection/jredis/JredisPool/JredisPool(java.lang.String,int)|",
+    "called": "|java+constructor:///org/apache/commons/pool2/impl/GenericObjectPoolConfig/GenericObjectPoolConfig()|",
+    "v1Body": [
+      "|java+constructor:///org/apache/commons/pool/impl/GenericObjectPool$Config/GenericObjectPool$Config()|",
+      "|java+constructor:///org/springframework/data/redis/connection/jredis/JredisPool/JredisPool(java.lang.String,int,int,java.lang.String,int,org.apache.commons.pool.impl.GenericObjectPool$Config)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/commons/pool2/impl/GenericObjectPoolConfig/GenericObjectPoolConfig()|",
+      "|java+constructor:///org/springframework/data/redis/connection/jredis/JredisPool/JredisPool(java.lang.String,int,int,java.lang.String,int,org.apache.commons.pool2.impl.GenericObjectPoolConfig)|"
+    ],
+    "affectedLib": "org.apache.commons:commons-pool2:2.2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.springframework.data:spring-data-redis:1.2.1.RELEASE",
+    "coordinatesV2": "org.springframework.data:spring-data-redis:1.3.0.RELEASE",
+    "caller": "|java+method:///org/springframework/data/redis/connection/jredis/JredisPool/returnResource(org.jredis.JRedis)|",
+    "called": "|java+method:///org/apache/commons/pool2/impl/GenericObjectPool/returnObject(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/pool/impl/GenericObjectPool/returnObject(java.lang.Object)|",
+      "|java+constructor:///org/springframework/data/redis/connection/PoolException/PoolException(java.lang.String,java.lang.Throwable)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/pool2/impl/GenericObjectPool/returnObject(java.lang.Object)|",
+      "|java+constructor:///org/springframework/data/redis/connection/PoolException/PoolException(java.lang.String,java.lang.Throwable)|"
+    ],
+    "affectedLib": "org.apache.commons:commons-pool2:2.2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.springframework.data:spring-data-redis:1.2.1.RELEASE",
+    "coordinatesV2": "org.springframework.data:spring-data-redis:1.3.0.RELEASE",
+    "caller": "|java+method:///org/springframework/data/redis/connection/jredis/JredisPool/getResource()|",
+    "called": "|java+method:///org/apache/commons/pool2/impl/GenericObjectPool/borrowObject()|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/pool/impl/GenericObjectPool/borrowObject()|",
+      "|java+constructor:///org/springframework/data/redis/connection/PoolException/PoolException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/springframework/data/redis/connection/jredis/JredisPool/getResource()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/pool2/impl/GenericObjectPool/borrowObject()|",
+      "|java+constructor:///org/springframework/data/redis/connection/PoolException/PoolException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/springframework/data/redis/connection/jredis/JredisPool/getResource()|"
+    ],
+    "affectedLib": "org.apache.commons:commons-pool2:2.2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.springframework.data:spring-data-redis:1.2.1.RELEASE",
+    "coordinatesV2": "org.springframework.data:spring-data-redis:1.3.0.RELEASE",
+    "caller": "|java+method:///org/springframework/data/redis/connection/jredis/JredisPool/returnBrokenResource(org.jredis.JRedis)|",
+    "called": "|java+method:///org/apache/commons/pool2/impl/GenericObjectPool/invalidateObject(java.lang.Object)|",
+    "v1Body": [
+      "|java+constructor:///org/springframework/data/redis/connection/PoolException/PoolException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/apache/commons/pool/impl/GenericObjectPool/invalidateObject(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/springframework/data/redis/connection/PoolException/PoolException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/apache/commons/pool2/impl/GenericObjectPool/invalidateObject(java.lang.Object)|"
+    ],
+    "affectedLib": "org.apache.commons:commons-pool2:2.2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.springframework.data:spring-data-redis:1.2.1.RELEASE",
+    "coordinatesV2": "org.springframework.data:spring-data-redis:1.3.0.RELEASE",
+    "caller": "|java+method:///org/springframework/data/redis/connection/lettuce/DefaultLettucePool/destroy()|",
+    "called": "|java+method:///org/apache/commons/pool2/impl/GenericObjectPool/close()|",
+    "v1Body": [
+      "|java+method:///com/lambdaworks/redis/RedisClient/shutdown()|",
+      "|java+constructor:///org/springframework/data/redis/connection/PoolException/PoolException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/apache/commons/pool/impl/GenericObjectPool/close()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/lambdaworks/redis/RedisClient/shutdown()|",
+      "|java+constructor:///org/springframework/data/redis/connection/PoolException/PoolException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/apache/commons/pool2/impl/GenericObjectPool/close()|"
+    ],
+    "affectedLib": "org.apache.commons:commons-pool2:2.2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.springframework.data:spring-data-redis:1.2.1.RELEASE",
+    "coordinatesV2": "org.springframework.data:spring-data-redis:1.3.0.RELEASE",
+    "caller": "|java+constructor:///org/springframework/data/redis/connection/lettuce/DefaultLettucePool$LettuceFactory/DefaultLettucePool$LettuceFactory(com.lambdaworks.redis.RedisClient,int)|",
+    "called": "|java+constructor:///org/apache/commons/pool2/BasePooledObjectFactory/BasePooledObjectFactory()|",
+    "v1Body": [
+      "|java+constructor:///org/apache/commons/pool/BasePoolableObjectFactory/BasePoolableObjectFactory()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/commons/pool2/BasePooledObjectFactory/BasePooledObjectFactory()|"
+    ],
+    "affectedLib": "org.apache.commons:commons-pool2:2.2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.springframework.data:spring-data-redis:1.2.1.RELEASE",
+    "coordinatesV2": "org.springframework.data:spring-data-redis:1.3.0.RELEASE",
+    "caller": "|java+method:///org/springframework/data/redis/connection/jredis/JredisPool/destroy()|",
+    "called": "|java+method:///org/apache/commons/pool2/impl/GenericObjectPool/close()|",
+    "v1Body": [
+      "|java+constructor:///org/springframework/data/redis/connection/PoolException/PoolException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/apache/commons/pool/impl/GenericObjectPool/close()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/springframework/data/redis/connection/PoolException/PoolException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/apache/commons/pool2/impl/GenericObjectPool/close()|"
+    ],
+    "affectedLib": "org.apache.commons:commons-pool2:2.2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.springframework.data:spring-data-redis:1.2.1.RELEASE",
+    "coordinatesV2": "org.springframework.data:spring-data-redis:1.3.0.RELEASE",
+    "caller": "|java+method:///org/springframework/data/redis/connection/lettuce/DefaultLettucePool/afterPropertiesSet()|",
+    "called": "|java+constructor:///org/apache/commons/pool2/impl/GenericObjectPool/GenericObjectPool(org.apache.commons.pool2.PooledObjectFactory,org.apache.commons.pool2.impl.GenericObjectPoolConfig)|",
+    "v1Body": [
+      "|java+constructor:///org/springframework/data/redis/connection/lettuce/AuthenticatingRedisClient/AuthenticatingRedisClient(java.lang.String,int,java.lang.String)|",
+      "|java+constructor:///com/lambdaworks/redis/RedisClient/RedisClient(java.lang.String,int)|",
+      "|java+method:///com/lambdaworks/redis/RedisClient/setDefaultTimeout(long,java.util.concurrent.TimeUnit)|",
+      "|java+constructor:///org/springframework/data/redis/connection/lettuce/DefaultLettucePool$LettuceFactory/DefaultLettucePool$LettuceFactory(com.lambdaworks.redis.RedisClient,int)|",
+      "|java+constructor:///org/apache/commons/pool/impl/GenericObjectPool/GenericObjectPool(org.apache.commons.pool.PoolableObjectFactory,org.apache.commons.pool.impl.GenericObjectPool$Config)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/springframework/data/redis/connection/lettuce/AuthenticatingRedisClient/AuthenticatingRedisClient(java.lang.String,int,java.lang.String)|",
+      "|java+constructor:///com/lambdaworks/redis/RedisClient/RedisClient(java.lang.String,int)|",
+      "|java+method:///com/lambdaworks/redis/RedisClient/setDefaultTimeout(long,java.util.concurrent.TimeUnit)|",
+      "|java+constructor:///org/springframework/data/redis/connection/lettuce/DefaultLettucePool$LettuceFactory/DefaultLettucePool$LettuceFactory(com.lambdaworks.redis.RedisClient,int)|",
+      "|java+constructor:///org/apache/commons/pool2/impl/GenericObjectPool/GenericObjectPool(org.apache.commons.pool2.PooledObjectFactory,org.apache.commons.pool2.impl.GenericObjectPoolConfig)|"
+    ],
+    "affectedLib": "org.apache.commons:commons-pool2:2.2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.springframework.data:spring-data-redis:1.2.1.RELEASE",
+    "coordinatesV2": "org.springframework.data:spring-data-redis:1.3.0.RELEASE",
+    "caller": "|java+method:///org/springframework/data/redis/connection/lettuce/DefaultLettucePool/getResource()|",
+    "called": "|java+method:///org/apache/commons/pool2/impl/GenericObjectPool/borrowObject()|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/pool/impl/GenericObjectPool/borrowObject()|",
+      "|java+constructor:///org/springframework/data/redis/connection/PoolException/PoolException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/springframework/data/redis/connection/lettuce/DefaultLettucePool/getResource()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/pool2/impl/GenericObjectPool/borrowObject()|",
+      "|java+constructor:///org/springframework/data/redis/connection/PoolException/PoolException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/springframework/data/redis/connection/lettuce/DefaultLettucePool/getResource()|"
+    ],
+    "affectedLib": "org.apache.commons:commons-pool2:2.2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.springframework.data:spring-data-redis:1.2.1.RELEASE",
+    "coordinatesV2": "org.springframework.data:spring-data-redis:1.3.0.RELEASE",
+    "caller": "|java+constructor:///org/springframework/data/redis/connection/lettuce/DefaultLettucePool/DefaultLettucePool(java.lang.String,int)|",
+    "called": "|java+constructor:///org/apache/commons/pool2/impl/GenericObjectPoolConfig/GenericObjectPoolConfig()|",
+    "v1Body": [
+      "|java+method:///java/util/concurrent/TimeUnit/convert(long,java.util.concurrent.TimeUnit)|",
+      "|java+constructor:///org/apache/commons/pool/impl/GenericObjectPool$Config/GenericObjectPool$Config()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/commons/pool2/impl/GenericObjectPoolConfig/GenericObjectPoolConfig()|",
+      "|java+method:///java/util/concurrent/TimeUnit/convert(long,java.util.concurrent.TimeUnit)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "org.apache.commons:commons-pool2:2.2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.springframework.data:spring-data-redis:1.2.1.RELEASE",
+    "coordinatesV2": "org.springframework.data:spring-data-redis:1.3.0.RELEASE",
+    "caller": "|java+method:///org/springframework/data/redis/connection/lettuce/DefaultLettucePool/returnBrokenResource(com.lambdaworks.redis.RedisAsyncConnection)|",
+    "called": "|java+method:///org/apache/commons/pool2/impl/GenericObjectPool/invalidateObject(java.lang.Object)|",
+    "v1Body": [
+      "|java+constructor:///org/springframework/data/redis/connection/PoolException/PoolException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/apache/commons/pool/impl/GenericObjectPool/invalidateObject(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/springframework/data/redis/connection/PoolException/PoolException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/apache/commons/pool2/impl/GenericObjectPool/invalidateObject(java.lang.Object)|"
+    ],
+    "affectedLib": "org.apache.commons:commons-pool2:2.2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.springframework.data:spring-data-redis:1.2.1.RELEASE",
+    "coordinatesV2": "org.springframework.data:spring-data-redis:1.3.0.RELEASE",
+    "caller": "|java+constructor:///org/springframework/data/redis/connection/jredis/JredisPool$JredisFactory/JredisPool$JredisFactory(org.jredis.connector.ConnectionSpec)|",
+    "called": "|java+constructor:///org/apache/commons/pool2/BasePooledObjectFactory/BasePooledObjectFactory()|",
+    "v1Body": [
+      "|java+constructor:///org/apache/commons/pool/BasePoolableObjectFactory/BasePoolableObjectFactory()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/commons/pool2/BasePooledObjectFactory/BasePooledObjectFactory()|"
+    ],
+    "affectedLib": "org.apache.commons:commons-pool2:2.2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.springframework.data:spring-data-redis:1.2.1.RELEASE",
+    "coordinatesV2": "org.springframework.data:spring-data-redis:1.3.0.RELEASE",
+    "caller": "|java+method:///org/springframework/data/redis/connection/lettuce/DefaultLettucePool/returnResource(com.lambdaworks.redis.RedisAsyncConnection)|",
+    "called": "|java+method:///org/apache/commons/pool2/impl/GenericObjectPool/returnObject(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/pool/impl/GenericObjectPool/returnObject(java.lang.Object)|",
+      "|java+constructor:///org/springframework/data/redis/connection/PoolException/PoolException(java.lang.String,java.lang.Throwable)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/pool2/impl/GenericObjectPool/returnObject(java.lang.Object)|",
+      "|java+constructor:///org/springframework/data/redis/connection/PoolException/PoolException(java.lang.String,java.lang.Throwable)|"
+    ],
+    "affectedLib": "org.apache.commons:commons-pool2:2.2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.springframework.data:spring-data-redis:1.2.1.RELEASE",
+    "coordinatesV2": "org.springframework.data:spring-data-redis:1.3.0.RELEASE",
+    "caller": "|java+constructor:///org/springframework/data/redis/connection/lettuce/DefaultLettucePool/DefaultLettucePool()|",
+    "called": "|java+constructor:///org/apache/commons/pool2/impl/GenericObjectPoolConfig/GenericObjectPoolConfig()|",
+    "v1Body": [
+      "|java+method:///java/util/concurrent/TimeUnit/convert(long,java.util.concurrent.TimeUnit)|",
+      "|java+constructor:///org/apache/commons/pool/impl/GenericObjectPool$Config/GenericObjectPool$Config()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/commons/pool2/impl/GenericObjectPoolConfig/GenericObjectPoolConfig()|",
+      "|java+method:///java/util/concurrent/TimeUnit/convert(long,java.util.concurrent.TimeUnit)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "org.apache.commons:commons-pool2:2.2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.springframework.data:spring-data-redis:1.2.1.RELEASE",
+    "coordinatesV2": "org.springframework.data:spring-data-redis:1.3.0.RELEASE",
+    "caller": "|java+constructor:///org/springframework/data/redis/connection/jredis/JredisPool/JredisPool(org.jredis.connector.ConnectionSpec)|",
+    "called": "|java+constructor:///org/apache/commons/pool2/impl/GenericObjectPool/GenericObjectPool(org.apache.commons.pool2.PooledObjectFactory,org.apache.commons.pool2.impl.GenericObjectPoolConfig)|",
+    "v1Body": [
+      "|java+constructor:///org/springframework/data/redis/connection/jredis/JredisPool$JredisFactory/JredisPool$JredisFactory(org.jredis.connector.ConnectionSpec)|",
+      "|java+constructor:///org/apache/commons/pool/impl/GenericObjectPool$Config/GenericObjectPool$Config()|",
+      "|java+constructor:///org/apache/commons/pool/impl/GenericObjectPool/GenericObjectPool(org.apache.commons.pool.PoolableObjectFactory,org.apache.commons.pool.impl.GenericObjectPool$Config)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/commons/pool2/impl/GenericObjectPoolConfig/GenericObjectPoolConfig()|",
+      "|java+constructor:///org/springframework/data/redis/connection/jredis/JredisPool$JredisFactory/JredisPool$JredisFactory(org.jredis.connector.ConnectionSpec)|",
+      "|java+constructor:///org/apache/commons/pool2/impl/GenericObjectPool/GenericObjectPool(org.apache.commons.pool2.PooledObjectFactory,org.apache.commons.pool2.impl.GenericObjectPoolConfig)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "org.apache.commons:commons-pool2:2.2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.springframework.data:spring-data-redis:1.2.1.RELEASE",
+    "coordinatesV2": "org.springframework.data:spring-data-redis:1.3.0.RELEASE",
+    "caller": "|java+constructor:///org/springframework/data/redis/connection/jredis/JredisPool/JredisPool(java.lang.String,int,int,java.lang.String,int)|",
+    "called": "|java+constructor:///org/apache/commons/pool2/impl/GenericObjectPoolConfig/GenericObjectPoolConfig()|",
+    "v1Body": [
+      "|java+constructor:///org/apache/commons/pool/impl/GenericObjectPool$Config/GenericObjectPool$Config()|",
+      "|java+constructor:///org/springframework/data/redis/connection/jredis/JredisPool/JredisPool(java.lang.String,int,int,java.lang.String,int,org.apache.commons.pool.impl.GenericObjectPool$Config)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/commons/pool2/impl/GenericObjectPoolConfig/GenericObjectPoolConfig()|",
+      "|java+constructor:///org/springframework/data/redis/connection/jredis/JredisPool/JredisPool(java.lang.String,int,int,java.lang.String,int,org.apache.commons.pool2.impl.GenericObjectPoolConfig)|"
+    ],
+    "affectedLib": "org.apache.commons:commons-pool2:2.2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.springframework.data:spring-data-redis:1.2.1.RELEASE",
+    "coordinatesV2": "org.springframework.data:spring-data-redis:1.3.0.RELEASE",
+    "caller": "|java+constructor:///org/springframework/data/redis/connection/PoolConfig/PoolConfig()|",
+    "called": "|java+constructor:///org/apache/commons/pool2/impl/GenericObjectPoolConfig/GenericObjectPoolConfig()|",
+    "v1Body": [
+      "|java+constructor:///org/apache/commons/pool/impl/GenericObjectPool$Config/GenericObjectPool$Config()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/commons/pool2/impl/GenericObjectPoolConfig/GenericObjectPoolConfig()|"
+    ],
+    "affectedLib": "org.apache.commons:commons-pool2:2.2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.springframework.data:spring-data-redis:1.2.1.RELEASE",
+    "coordinatesV2": "org.springframework.data:spring-data-redis:1.3.0.RELEASE",
+    "caller": "|java+method:///org/springframework/data/redis/core/RedisConnectionUtils/releaseConnection(org.springframework.data.redis.connection.RedisConnection,org.springframework.data.redis.connection.RedisConnectionFactory)|",
+    "called": "|java+method:///org/springframework/transaction/support/TransactionSynchronizationManager/getResource(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/springframework/data/redis/core/RedisConnectionUtils/isConnectionTransactional(org.springframework.data.redis.connection.RedisConnection,org.springframework.data.redis.connection.RedisConnectionFactory)|",
+      "|java+method:///org/apache/commons/logging/Log/debug(java.lang.Object)|",
+      "|java+method:///org/apache/commons/logging/Log/isDebugEnabled()|",
+      "|java+method:///org/springframework/data/redis/connection/RedisConnection/close()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/springframework/data/redis/core/RedisConnectionUtils/isConnectionTransactional(org.springframework.data.redis.connection.RedisConnection,org.springframework.data.redis.connection.RedisConnectionFactory)|",
+      "|java+method:///org/apache/commons/logging/Log/debug(java.lang.Object)|",
+      "|java+method:///org/apache/commons/logging/Log/isDebugEnabled()|",
+      "|java+method:///org/springframework/transaction/support/TransactionSynchronizationManager/getResource(java.lang.Object)|",
+      "|java+method:///org/springframework/data/redis/core/RedisConnectionUtils$RedisConnectionHolder/isTransactionSyncronisationActive()|",
+      "|java+method:///org/springframework/data/redis/connection/RedisConnection/close()|"
+    ],
+    "affectedLib": "org.springframework:spring-tx:3.2.9.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.springframework.data:spring-data-redis:1.2.1.RELEASE",
+    "coordinatesV2": "org.springframework.data:spring-data-redis:1.3.0.RELEASE",
+    "caller": "|java+method:///org/springframework/data/redis/core/RedisTemplate/execute(org.springframework.data.redis.core.RedisCallback,boolean,boolean)|",
+    "called": "|java+method:///org/springframework/transaction/support/TransactionSynchronizationManager/hasResource(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/springframework/data/redis/core/RedisConnectionUtils/releaseConnection(org.springframework.data.redis.connection.RedisConnection,org.springframework.data.redis.connection.RedisConnectionFactory)|",
+      "|java+method:///org/springframework/data/redis/core/RedisConnectionUtils/getConnection(org.springframework.data.redis.connection.RedisConnectionFactory)|",
+      "|java+method:///org/springframework/data/redis/core/RedisTemplate/createRedisConnectionProxy(org.springframework.data.redis.connection.RedisConnection)|",
+      "|java+method:///org/springframework/data/redis/core/RedisTemplate/getConnectionFactory()|",
+      "|java+method:///org/springframework/util/Assert/isTrue(boolean,java.lang.String)|",
+      "|java+method:///org/springframework/data/redis/core/RedisTemplate/postProcessResult(java.lang.Object,org.springframework.data.redis.connection.RedisConnection,boolean)|",
+      "|java+method:///org/springframework/data/redis/core/RedisCallback/doInRedis(org.springframework.data.redis.connection.RedisConnection)|",
+      "|java+method:///org/springframework/util/Assert/notNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///org/springframework/data/redis/connection/RedisConnection/closePipeline()|",
+      "|java+method:///org/springframework/transaction/support/TransactionSynchronizationManager/hasResource(java.lang.Object)|",
+      "|java+method:///org/springframework/data/redis/core/RedisTemplate/preProcessConnection(org.springframework.data.redis.connection.RedisConnection,boolean)|",
+      "|java+method:///org/springframework/data/redis/connection/RedisConnection/isPipelined()|",
+      "|java+method:///org/springframework/data/redis/connection/RedisConnection/openPipeline()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/springframework/data/redis/core/RedisConnectionUtils/bindConnection(org.springframework.data.redis.connection.RedisConnectionFactory,boolean)|",
+      "|java+method:///org/springframework/data/redis/core/RedisConnectionUtils/releaseConnection(org.springframework.data.redis.connection.RedisConnection,org.springframework.data.redis.connection.RedisConnectionFactory)|",
+      "|java+method:///org/springframework/data/redis/core/RedisConnectionUtils/getConnection(org.springframework.data.redis.connection.RedisConnectionFactory)|",
+      "|java+method:///org/springframework/data/redis/core/RedisTemplate/createRedisConnectionProxy(org.springframework.data.redis.connection.RedisConnection)|",
+      "|java+method:///org/springframework/data/redis/core/RedisTemplate/getConnectionFactory()|",
+      "|java+method:///org/springframework/util/Assert/isTrue(boolean,java.lang.String)|",
+      "|java+method:///org/springframework/data/redis/core/RedisTemplate/postProcessResult(java.lang.Object,org.springframework.data.redis.connection.RedisConnection,boolean)|",
+      "|java+method:///org/springframework/data/redis/core/RedisCallback/doInRedis(org.springframework.data.redis.connection.RedisConnection)|",
+      "|java+method:///org/springframework/data/redis/core/RedisConnectionUtils/unbindConnection(org.springframework.data.redis.connection.RedisConnectionFactory)|",
+      "|java+method:///org/springframework/util/Assert/notNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///org/springframework/data/redis/connection/RedisConnection/closePipeline()|",
+      "|java+method:///org/springframework/transaction/support/TransactionSynchronizationManager/hasResource(java.lang.Object)|",
+      "|java+method:///org/springframework/data/redis/core/RedisTemplate/preProcessConnection(org.springframework.data.redis.connection.RedisConnection,boolean)|",
+      "|java+method:///org/springframework/data/redis/connection/RedisConnection/isPipelined()|",
+      "|java+method:///org/springframework/data/redis/connection/RedisConnection/openPipeline()|"
+    ],
+    "affectedLib": "org.springframework:spring-tx:3.2.9.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.springframework.data:spring-data-redis:1.2.1.RELEASE",
+    "coordinatesV2": "org.springframework.data:spring-data-redis:1.3.0.RELEASE",
+    "caller": "|java+method:///org/springframework/data/redis/core/RedisConnectionUtils/unbindConnection(org.springframework.data.redis.connection.RedisConnectionFactory)|",
+    "called": "|java+method:///org/springframework/transaction/support/TransactionSynchronizationManager/unbindResourceIfPossible(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/springframework/transaction/support/TransactionSynchronizationManager/unbindResourceIfPossible(java.lang.Object)|",
+      "|java+method:///org/springframework/data/redis/core/RedisConnectionUtils$RedisConnectionHolder/getConnection()|",
+      "|java+method:///org/springframework/data/redis/connection/RedisConnection/close()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/logging/Log/debug(java.lang.Object)|",
+      "|java+method:///org/apache/commons/logging/Log/isDebugEnabled()|",
+      "|java+method:///org/springframework/data/redis/core/RedisConnectionUtils$RedisConnectionHolder/isTransactionSyncronisationActive()|",
+      "|java+method:///org/springframework/transaction/support/TransactionSynchronizationManager/unbindResourceIfPossible(java.lang.Object)|",
+      "|java+method:///org/springframework/data/redis/core/RedisConnectionUtils$RedisConnectionHolder/getConnection()|",
+      "|java+method:///org/springframework/data/redis/connection/RedisConnection/close()|"
+    ],
+    "affectedLib": "org.springframework:spring-tx:3.2.9.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.springframework.data:spring-data-redis:1.2.1.RELEASE",
+    "coordinatesV2": "org.springframework.data:spring-data-redis:1.3.0.RELEASE",
+    "caller": "|java+method:///org/springframework/data/redis/core/RedisTemplate/execute(org.springframework.data.redis.core.SessionCallback)|",
+    "called": "|java+method:///org/springframework/util/Assert/isTrue(boolean,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/springframework/data/redis/core/SessionCallback/execute(org.springframework.data.redis.core.RedisOperations)|",
+      "|java+method:///org/springframework/data/redis/core/RedisTemplate/getConnectionFactory()|",
+      "|java+method:///org/springframework/util/Assert/isTrue(boolean,java.lang.String)|",
+      "|java+method:///org/springframework/data/redis/core/RedisConnectionUtils/unbindConnection(org.springframework.data.redis.connection.RedisConnectionFactory)|",
+      "|java+method:///org/springframework/util/Assert/notNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///org/springframework/data/redis/core/RedisConnectionUtils/bindConnection(org.springframework.data.redis.connection.RedisConnectionFactory)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/springframework/data/redis/core/RedisTemplate/getConnectionFactory()|",
+      "|java+method:///org/springframework/util/Assert/isTrue(boolean,java.lang.String)|",
+      "|java+method:///org/springframework/data/redis/core/RedisConnectionUtils/unbindConnection(org.springframework.data.redis.connection.RedisConnectionFactory)|",
+      "|java+method:///org/springframework/util/Assert/notNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///org/springframework/data/redis/core/SessionCallback/execute(org.springframework.data.redis.core.RedisOperations)|",
+      "|java+method:///org/springframework/data/redis/core/RedisConnectionUtils/bindConnection(org.springframework.data.redis.connection.RedisConnectionFactory,boolean)|"
+    ],
+    "affectedLib": "org.springframework:spring-core:3.2.9.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.springframework.data:spring-data-redis:1.2.1.RELEASE",
+    "coordinatesV2": "org.springframework.data:spring-data-redis:1.3.0.RELEASE",
+    "caller": "|java+method:///org/springframework/data/redis/core/RedisTemplate/execute(org.springframework.data.redis.core.RedisCallback,boolean,boolean)|",
+    "called": "|java+method:///org/springframework/util/Assert/isTrue(boolean,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/springframework/data/redis/core/RedisConnectionUtils/releaseConnection(org.springframework.data.redis.connection.RedisConnection,org.springframework.data.redis.connection.RedisConnectionFactory)|",
+      "|java+method:///org/springframework/data/redis/core/RedisConnectionUtils/getConnection(org.springframework.data.redis.connection.RedisConnectionFactory)|",
+      "|java+method:///org/springframework/data/redis/core/RedisTemplate/createRedisConnectionProxy(org.springframework.data.redis.connection.RedisConnection)|",
+      "|java+method:///org/springframework/data/redis/core/RedisTemplate/getConnectionFactory()|",
+      "|java+method:///org/springframework/util/Assert/isTrue(boolean,java.lang.String)|",
+      "|java+method:///org/springframework/data/redis/core/RedisTemplate/postProcessResult(java.lang.Object,org.springframework.data.redis.connection.RedisConnection,boolean)|",
+      "|java+method:///org/springframework/data/redis/core/RedisCallback/doInRedis(org.springframework.data.redis.connection.RedisConnection)|",
+      "|java+method:///org/springframework/util/Assert/notNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///org/springframework/data/redis/connection/RedisConnection/closePipeline()|",
+      "|java+method:///org/springframework/transaction/support/TransactionSynchronizationManager/hasResource(java.lang.Object)|",
+      "|java+method:///org/springframework/data/redis/core/RedisTemplate/preProcessConnection(org.springframework.data.redis.connection.RedisConnection,boolean)|",
+      "|java+method:///org/springframework/data/redis/connection/RedisConnection/isPipelined()|",
+      "|java+method:///org/springframework/data/redis/connection/RedisConnection/openPipeline()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/springframework/data/redis/core/RedisConnectionUtils/bindConnection(org.springframework.data.redis.connection.RedisConnectionFactory,boolean)|",
+      "|java+method:///org/springframework/data/redis/core/RedisConnectionUtils/releaseConnection(org.springframework.data.redis.connection.RedisConnection,org.springframework.data.redis.connection.RedisConnectionFactory)|",
+      "|java+method:///org/springframework/data/redis/core/RedisConnectionUtils/getConnection(org.springframework.data.redis.connection.RedisConnectionFactory)|",
+      "|java+method:///org/springframework/data/redis/core/RedisTemplate/createRedisConnectionProxy(org.springframework.data.redis.connection.RedisConnection)|",
+      "|java+method:///org/springframework/data/redis/core/RedisTemplate/getConnectionFactory()|",
+      "|java+method:///org/springframework/util/Assert/isTrue(boolean,java.lang.String)|",
+      "|java+method:///org/springframework/data/redis/core/RedisTemplate/postProcessResult(java.lang.Object,org.springframework.data.redis.connection.RedisConnection,boolean)|",
+      "|java+method:///org/springframework/data/redis/core/RedisCallback/doInRedis(org.springframework.data.redis.connection.RedisConnection)|",
+      "|java+method:///org/springframework/data/redis/core/RedisConnectionUtils/unbindConnection(org.springframework.data.redis.connection.RedisConnectionFactory)|",
+      "|java+method:///org/springframework/util/Assert/notNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///org/springframework/data/redis/connection/RedisConnection/closePipeline()|",
+      "|java+method:///org/springframework/transaction/support/TransactionSynchronizationManager/hasResource(java.lang.Object)|",
+      "|java+method:///org/springframework/data/redis/core/RedisTemplate/preProcessConnection(org.springframework.data.redis.connection.RedisConnection,boolean)|",
+      "|java+method:///org/springframework/data/redis/connection/RedisConnection/isPipelined()|",
+      "|java+method:///org/springframework/data/redis/connection/RedisConnection/openPipeline()|"
+    ],
+    "affectedLib": "org.springframework:spring-core:3.2.9.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.springframework.data:spring-data-redis:1.2.1.RELEASE",
+    "coordinatesV2": "org.springframework.data:spring-data-redis:1.3.0.RELEASE",
+    "caller": "|java+method:///org/springframework/data/redis/connection/lettuce/LettuceConnection/execute(java.lang.String,com.lambdaworks.redis.protocol.CommandOutput,byte%5B%5D%5B%5D)|",
+    "called": "|java+method:///org/springframework/util/Assert/hasText(java.lang.String,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/springframework/data/redis/connection/lettuce/LettuceConnection/pipeline(org.springframework.data.redis.connection.lettuce.LettuceConnection$LettuceResult)|",
+      "|java+method:///org/springframework/data/redis/connection/lettuce/LettuceConnection/getAsyncConnection()|",
+      "|java+method:///org/springframework/data/redis/connection/lettuce/LettuceConnection/await(com.lambdaworks.redis.protocol.Command)|",
+      "|java+method:///java/lang/String/trim()|",
+      "|java+method:///org/springframework/data/redis/connection/lettuce/LettuceConnection/isPipelined()|",
+      "|java+method:///org/springframework/data/redis/connection/lettuce/LettuceConnection/convertLettuceAccessException(java.lang.Exception)|",
+      "|java+method:///org/springframework/data/redis/connection/lettuce/LettuceConnection/transaction(org.springframework.data.redis.connection.FutureResult)|",
+      "|java+constructor:///com/lambdaworks/redis/protocol/CommandArgs/CommandArgs(com.lambdaworks.redis.codec.RedisCodec)|",
+      "|java+method:///org/springframework/util/Assert/hasText(java.lang.String,java.lang.String)|",
+      "|java+method:///java/lang/String/toUpperCase()|",
+      "|java+method:///org/springframework/util/ObjectUtils/isEmpty(java.lang.Object%5B%5D)|",
+      "|java+method:///com/lambdaworks/redis/protocol/CommandType/valueOf(java.lang.String)|",
+      "|java+constructor:///org/springframework/data/redis/connection/lettuce/LettuceConnection$LettuceResult/LettuceConnection$LettuceResult(org.springframework.data.redis.connection.lettuce.LettuceConnection,java.util.concurrent.Future)|",
+      "|java+method:///com/lambdaworks/redis/protocol/CommandArgs/addKeys(java.lang.Object%5B%5D)|",
+      "|java+method:///com/lambdaworks/redis/RedisAsyncConnection/dispatch(com.lambdaworks.redis.protocol.CommandType,com.lambdaworks.redis.protocol.CommandOutput,com.lambdaworks.redis.protocol.CommandArgs)|",
+      "|java+method:///org/springframework/data/redis/connection/lettuce/LettuceConnection$TypeHints/getTypeHint(com.lambdaworks.redis.protocol.CommandType)|",
+      "|java+method:///org/springframework/data/redis/connection/lettuce/LettuceConnection/isQueueing()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/springframework/data/redis/connection/lettuce/LettuceConnection/pipeline(org.springframework.data.redis.connection.lettuce.LettuceConnection$LettuceResult)|",
+      "|java+method:///org/springframework/data/redis/connection/lettuce/LettuceConnection/getAsyncConnection()|",
+      "|java+method:///org/springframework/data/redis/connection/lettuce/LettuceConnection/await(com.lambdaworks.redis.protocol.Command)|",
+      "|java+method:///java/lang/String/trim()|",
+      "|java+method:///org/springframework/data/redis/connection/lettuce/LettuceConnection/validateCommandIfRunningInTransactionMode(com.lambdaworks.redis.protocol.CommandType,byte%5B%5D%5B%5D)|",
+      "|java+method:///org/springframework/data/redis/connection/lettuce/LettuceConnection/isPipelined()|",
+      "|java+method:///org/springframework/data/redis/connection/lettuce/LettuceConnection/convertLettuceAccessException(java.lang.Exception)|",
+      "|java+method:///org/springframework/data/redis/connection/lettuce/LettuceConnection/transaction(org.springframework.data.redis.connection.FutureResult)|",
+      "|java+constructor:///com/lambdaworks/redis/protocol/CommandArgs/CommandArgs(com.lambdaworks.redis.codec.RedisCodec)|",
+      "|java+method:///org/springframework/util/Assert/hasText(java.lang.String,java.lang.String)|",
+      "|java+constructor:///org/springframework/data/redis/connection/lettuce/LettuceConnection$LettuceTxResult/LettuceConnection$LettuceTxResult(org.springframework.data.redis.connection.lettuce.LettuceConnection,java.lang.Object)|",
+      "|java+method:///java/lang/String/toUpperCase()|",
+      "|java+method:///org/springframework/util/ObjectUtils/isEmpty(java.lang.Object%5B%5D)|",
+      "|java+method:///com/lambdaworks/redis/protocol/CommandType/valueOf(java.lang.String)|",
+      "|java+constructor:///org/springframework/data/redis/connection/lettuce/LettuceConnection$LettuceResult/LettuceConnection$LettuceResult(org.springframework.data.redis.connection.lettuce.LettuceConnection,java.util.concurrent.Future)|",
+      "|java+method:///com/lambdaworks/redis/protocol/CommandArgs/addKeys(java.lang.Object%5B%5D)|",
+      "|java+method:///com/lambdaworks/redis/RedisAsyncConnection/dispatch(com.lambdaworks.redis.protocol.CommandType,com.lambdaworks.redis.protocol.CommandOutput,com.lambdaworks.redis.protocol.CommandArgs)|",
+      "|java+method:///org/springframework/data/redis/connection/lettuce/LettuceConnection$TypeHints/getTypeHint(com.lambdaworks.redis.protocol.CommandType)|",
+      "|java+method:///org/springframework/data/redis/connection/lettuce/LettuceConnection/isQueueing()|"
+    ],
+    "affectedLib": "org.springframework:spring-core:3.2.9.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.springframework.data:spring-data-redis:1.2.1.RELEASE",
+    "coordinatesV2": "org.springframework.data:spring-data-redis:1.3.0.RELEASE",
+    "caller": "|java+method:///org/springframework/data/redis/core/RedisTemplate/executePipelined(org.springframework.data.redis.core.SessionCallback,org.springframework.data.redis.serializer.RedisSerializer)|",
+    "called": "|java+method:///org/springframework/util/Assert/isTrue(boolean,java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///org/springframework/data/redis/core/RedisTemplate$1/RedisTemplate$1(org.springframework.data.redis.core.RedisTemplate,org.springframework.data.redis.core.SessionCallback,org.springframework.data.redis.serializer.RedisSerializer)|",
+      "|java+method:///org/springframework/data/redis/core/RedisTemplate/getConnectionFactory()|",
+      "|java+method:///org/springframework/data/redis/core/RedisConnectionUtils/unbindConnection(org.springframework.data.redis.connection.RedisConnectionFactory)|",
+      "|java+method:///org/springframework/util/Assert/notNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///org/springframework/data/redis/core/RedisConnectionUtils/bindConnection(org.springframework.data.redis.connection.RedisConnectionFactory)|",
+      "|java+method:///org/springframework/data/redis/core/RedisTemplate/execute(org.springframework.data.redis.core.RedisCallback)|",
+      "|java+method:///org/springframework/util/Assert/isTrue(boolean,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/springframework/data/redis/core/RedisTemplate/getConnectionFactory()|",
+      "|java+method:///org/springframework/data/redis/core/RedisConnectionUtils/unbindConnection(org.springframework.data.redis.connection.RedisConnectionFactory)|",
+      "|java+method:///org/springframework/util/Assert/notNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///org/springframework/data/redis/core/RedisConnectionUtils/bindConnection(org.springframework.data.redis.connection.RedisConnectionFactory,boolean)|",
+      "|java+constructor:///org/springframework/data/redis/core/RedisTemplate$1/RedisTemplate$1(org.springframework.data.redis.core.RedisTemplate,org.springframework.data.redis.core.SessionCallback,org.springframework.data.redis.serializer.RedisSerializer)|",
+      "|java+method:///org/springframework/data/redis/core/RedisTemplate/execute(org.springframework.data.redis.core.RedisCallback)|",
+      "|java+method:///org/springframework/util/Assert/isTrue(boolean,java.lang.String)|"
+    ],
+    "affectedLib": "org.springframework:spring-core:3.2.9.RELEASE",
+    "change": "UPDATED"
+  }
+]

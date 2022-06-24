@@ -1,0 +1,40 @@
+[
+  {
+    "coordinatesV1": "com.google.code.geocoder-java:geocoder-java:0.15",
+    "coordinatesV2": "com.google.code.geocoder-java:geocoder-java:0.16",
+    "caller": "|java+initializer:///com/google/code/geocoder/Geocoder/Geocoder$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.7",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.google.code.geocoder-java:geocoder-java:0.15",
+    "coordinatesV2": "com.google.code.geocoder-java:geocoder-java:0.16",
+    "caller": "|java+method:///com/google/code/geocoder/Geocoder/geocode(com.google.code.geocoder.model.GeocoderRequest)|",
+    "called": "|java+constructor:///com/google/gson/GsonBuilder/GsonBuilder()|",
+    "v1Body": [
+      "|java+method:///com/google/gson/GsonBuilder/setFieldNamingPolicy(com.google.gson.FieldNamingPolicy)|",
+      "|java+method:///com/google/code/geocoder/Geocoder/request(com.google.gson.Gson,java.lang.String)|",
+      "|java+method:///com/google/gson/GsonBuilder/create()|",
+      "|java+method:///org/apache/commons/logging/Log/error(java.lang.Object,java.lang.Throwable)|",
+      "|java+method:///java/lang/Exception/getMessage()|",
+      "|java+constructor:///com/google/gson/GsonBuilder/GsonBuilder()|",
+      "|java+method:///com/google/code/geocoder/Geocoder/getURL(com.google.code.geocoder.model.GeocoderRequest)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/gson/GsonBuilder/setFieldNamingPolicy(com.google.gson.FieldNamingPolicy)|",
+      "|java+method:///com/google/code/geocoder/Geocoder/request(com.google.gson.Gson,java.lang.String)|",
+      "|java+method:///com/google/gson/GsonBuilder/create()|",
+      "|java+constructor:///com/google/gson/GsonBuilder/GsonBuilder()|",
+      "|java+method:///com/google/code/geocoder/Geocoder/getURL(com.google.code.geocoder.model.GeocoderRequest)|"
+    ],
+    "affectedLib": "com.google.code.gson:gson:2.2.4",
+    "change": "UPDATED"
+  }
+]

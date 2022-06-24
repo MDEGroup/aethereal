@@ -1,0 +1,392 @@
+[
+  {
+    "coordinatesV1": "org.ektorp:org.ektorp:1.1.1",
+    "coordinatesV2": "org.ektorp:org.ektorp:1.2.0",
+    "caller": "|java+method:///org/ektorp/http/StdHttpClient$Builder/build()|",
+    "called": "|java+constructor:///org/apache/http/impl/client/cache/CachingHttpClient/CachingHttpClient(org.apache.http.client.HttpClient,org.apache.http.impl.client.cache.CacheConfig)|",
+    "v1Body": [
+      "|java+method:///org/ektorp/http/StdHttpClient$Builder/configureClient()|",
+      "|java+constructor:///org/ektorp/http/StdHttpClient/StdHttpClient(org.apache.http.client.HttpClient)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/http/impl/client/cache/CachingHttpClient/CachingHttpClient(org.apache.http.client.HttpClient,org.apache.http.impl.client.cache.CacheConfig)|",
+      "|java+method:///org/apache/http/impl/client/cache/CacheConfig/setMaxCacheEntries(int)|",
+      "|java+method:///org/apache/http/impl/client/cache/CacheConfig/setMaxObjectSizeBytes(int)|",
+      "|java+constructor:///org/ektorp/http/StdHttpClient/StdHttpClient(org.apache.http.client.HttpClient,org.apache.http.client.HttpClient)|",
+      "|java+method:///org/ektorp/http/StdHttpClient$Builder/configureClient()|",
+      "|java+constructor:///org/apache/http/impl/client/cache/CacheConfig/CacheConfig()|"
+    ],
+    "affectedLib": "org.apache.httpcomponents:httpclient-cache:4.1.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.ektorp:org.ektorp:1.1.1",
+    "coordinatesV2": "org.ektorp:org.ektorp:1.2.0",
+    "caller": "|java+method:///org/ektorp/support/SimpleViewGenerator/loadViewFromFile(java.util.Map,org.ektorp.support.View,java.lang.Class)|",
+    "called": "|java+method:///org/codehaus/jackson/map/ObjectMapper/readValue(java.lang.String,java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///java/lang/Class/getResourceAsStream(java.lang.String)|",
+      "|java+method:///java/lang/String/replaceAll(java.lang.String,java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/commons/io/IOUtils/toString(java.io.InputStream,java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/ektorp/support/SimpleViewGenerator/mapper()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/ektorp/util/Exceptions/propagate(java.lang.Throwable)|",
+      "|java+method:///org/codehaus/jackson/map/ObjectMapper/readValue(java.lang.String,java.lang.Class)|",
+      "|java+constructor:///java/io/FileNotFoundException/FileNotFoundException(java.lang.String)|",
+      "|java+method:///org/ektorp/support/View/file()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/String/replaceAll(java.lang.String,java.lang.String)|",
+      "|java+method:///org/ektorp/support/SimpleViewGenerator/loadResourceFromClasspath(java.lang.Class,java.lang.String)|",
+      "|java+method:///org/ektorp/support/SimpleViewGenerator/mapper()|",
+      "|java+method:///org/ektorp/support/View/file()|",
+      "|java+method:///org/ektorp/util/Exceptions/propagate(java.lang.Throwable)|",
+      "|java+method:///org/codehaus/jackson/map/ObjectMapper/readValue(java.lang.String,java.lang.Class)|"
+    ],
+    "affectedLib": "org.codehaus.jackson:jackson-mapper-asl:1.8.4",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.ektorp:org.ektorp:1.1.1",
+    "coordinatesV2": "org.ektorp:org.ektorp:1.2.0",
+    "caller": "|java+method:///org/ektorp/impl/StdCouchDbInstance/replicate(org.ektorp.ReplicationCommand)|",
+    "called": "|java+method:///org/codehaus/jackson/map/ObjectMapper/writeValueAsString(java.lang.Object)|",
+    "v1Body": [
+      "|java+constructor:///org/ektorp/impl/StdCouchDbInstance$3/StdCouchDbInstance$3(org.ektorp.impl.StdCouchDbInstance)|",
+      "|java+method:///org/ektorp/http/RestTemplate/post(java.lang.String,java.lang.String,org.ektorp.http.ResponseCallback)|",
+      "|java+method:///org/ektorp/util/Exceptions/propagate(java.lang.Throwable)|",
+      "|java+method:///org/codehaus/jackson/map/ObjectMapper/writeValueAsString(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/ektorp/impl/StdCouchDbInstance$4/StdCouchDbInstance$4(org.ektorp.impl.StdCouchDbInstance)|",
+      "|java+method:///org/ektorp/http/RestTemplate/post(java.lang.String,java.lang.String,org.ektorp.http.ResponseCallback)|",
+      "|java+method:///org/ektorp/util/Exceptions/propagate(java.lang.Throwable)|",
+      "|java+method:///org/codehaus/jackson/map/ObjectMapper/writeValueAsString(java.lang.Object)|"
+    ],
+    "affectedLib": "org.codehaus.jackson:jackson-mapper-asl:1.8.4",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.ektorp:org.ektorp:1.1.1",
+    "coordinatesV2": "org.ektorp:org.ektorp:1.2.0",
+    "caller": "|java+method:///org/ektorp/impl/docref/BackReferencedBeanSerializer/serialize(java.lang.Object,org.codehaus.jackson.JsonGenerator,org.codehaus.jackson.map.SerializerProvider)|",
+    "called": "|java+method:///org/codehaus/jackson/map/ser/BeanPropertyWriter/get(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/codehaus/jackson/map/SerializationConfig/introspect(org.codehaus.jackson.type.JavaType)|",
+      "|java+method:///org/codehaus/jackson/map/JsonSerializer/serialize(java.lang.Object,org.codehaus.jackson.JsonGenerator,org.codehaus.jackson.map.SerializerProvider)|",
+      "|java+method:///org/codehaus/jackson/map/ser/BeanPropertyWriter/getName()|",
+      "|java+constructor:///java/io/IOException/IOException(java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///java/util/LinkedHashSet/LinkedHashSet()|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/codehaus/jackson/map/SerializerProvider/getConfig()|",
+      "|java+method:///org/ektorp/impl/docref/BackReferencedBeanSerializer/cascadeUpdates(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/ektorp/CouchDbConnector/executeBulk(java.util.Collection)|",
+      "|java+method:///java/lang/Exception/getMessage()|",
+      "|java+method:///org/ektorp/impl/docref/BackReferencedBeanSerializer/throwBulkUpdateError(java.util.List)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/codehaus/jackson/map/ser/BeanPropertyWriter/get(java.lang.Object)|",
+      "|java+method:///org/ektorp/impl/docref/BackReferencedBeanSerializer/findDocumentsToSave(java.lang.Object,java.lang.String,java.util.Set,org.codehaus.jackson.map.introspect.BasicBeanDescription,org.codehaus.jackson.map.ser.BeanPropertyWriter,java.lang.Object)|",
+      "|java+method:///java/util/Set/size()|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///org/codehaus/jackson/map/type/TypeFactory/type(java.lang.reflect.Type)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///org/ektorp/util/Documents/getId(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/codehaus/jackson/map/JsonSerializer/serialize(java.lang.Object,org.codehaus.jackson.JsonGenerator,org.codehaus.jackson.map.SerializerProvider)|",
+      "|java+method:///org/codehaus/jackson/map/ser/BeanPropertyWriter/getName()|",
+      "|java+constructor:///java/io/IOException/IOException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/util/Set/size()|",
+      "|java+constructor:///java/util/LinkedHashSet/LinkedHashSet()|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/ektorp/impl/docref/BackReferencedBeanSerializer/findDocumentsToSave(java.util.Set,java.lang.Object)|",
+      "|java+method:///org/ektorp/impl/docref/BackReferencedBeanSerializer/cascadeUpdates(java.lang.String,java.lang.Object)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///org/ektorp/CouchDbConnector/executeBulk(java.util.Collection)|",
+      "|java+method:///java/lang/Exception/getMessage()|",
+      "|java+method:///org/ektorp/impl/docref/BackReferencedBeanSerializer/throwBulkUpdateError(java.util.List)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/codehaus/jackson/map/ser/BeanPropertyWriter/get(java.lang.Object)|"
+    ],
+    "affectedLib": "org.codehaus.jackson:jackson-mapper-asl:1.8.4",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.ektorp:org.ektorp:1.1.1",
+    "coordinatesV2": "org.ektorp:org.ektorp:1.2.0",
+    "caller": "|java+method:///org/ektorp/util/Documents$ObjectNodeAccessor/setField(java.lang.Object,java.lang.String,java.lang.String)|",
+    "called": "|java+method:///org/codehaus/jackson/node/ObjectNode/put(java.lang.String,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/codehaus/jackson/node/ObjectNode/put(java.lang.String,java.lang.String)|",
+      "|java+method:///org/ektorp/util/Documents$ObjectNodeAccessor/cast(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/codehaus/jackson/node/ObjectNode/put(java.lang.String,java.lang.String)|"
+    ],
+    "affectedLib": "org.codehaus.jackson:jackson-mapper-asl:1.8.4",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.ektorp:org.ektorp:1.1.1",
+    "coordinatesV2": "org.ektorp:org.ektorp:1.2.0",
+    "caller": "|java+method:///org/ektorp/impl/StdObjectMapperFactory/createObjectMapper(org.ektorp.CouchDbConnector)|",
+    "called": "|java+constructor:///org/codehaus/jackson/map/ObjectMapper/ObjectMapper()|",
+    "v1Body": [
+      "|java+constructor:///org/codehaus/jackson/map/ObjectMapper/ObjectMapper()|",
+      "|java+method:///org/codehaus/jackson/map/ObjectMapper/setSerializerFactory(org.codehaus.jackson.map.SerializerFactory)|",
+      "|java+constructor:///org/ektorp/impl/docref/DocumentReferenceDeserializerFactory/DocumentReferenceDeserializerFactory(org.ektorp.CouchDbConnector,org.codehaus.jackson.map.ObjectMapper)|",
+      "|java+constructor:///org/ektorp/impl/docref/DocumentReferenceSerializerFactory/DocumentReferenceSerializerFactory(org.ektorp.CouchDbConnector)|",
+      "|java+method:///org/codehaus/jackson/map/ObjectMapper/setDeserializerProvider(org.codehaus.jackson.map.DeserializerProvider)|",
+      "|java+method:///org/codehaus/jackson/map/ObjectMapper/getSerializationConfig()|",
+      "|java+constructor:///org/codehaus/jackson/map/deser/StdDeserializerProvider/StdDeserializerProvider(org.codehaus.jackson.map.DeserializerFactory)|",
+      "|java+constructor:///org/ektorp/impl/docref/DocumentReferenceSerializerProvider/DocumentReferenceSerializerProvider(org.codehaus.jackson.map.SerializationConfig,org.ektorp.impl.docref.DocumentReferenceSerializerFactory,org.codehaus.jackson.map.SerializerProvider)|",
+      "|java+method:///org/codehaus/jackson/map/ObjectMapper/setSerializerProvider(org.codehaus.jackson.map.SerializerProvider)|",
+      "|java+method:///org/codehaus/jackson/map/ObjectMapper/getSerializerProvider()|",
+      "|java+method:///org/ektorp/util/Exceptions/propagate(java.lang.Throwable)|",
+      "|java+method:///org/ektorp/impl/StdObjectMapperFactory/applyDefaultConfiguration(org.codehaus.jackson.map.ObjectMapper)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/codehaus/jackson/map/ObjectMapper/ObjectMapper()|",
+      "|java+method:///org/codehaus/jackson/map/ObjectMapper/registerModule(org.codehaus.jackson.map.Module)|",
+      "|java+method:///org/ektorp/impl/StdObjectMapperFactory/applyDefaultConfiguration(org.codehaus.jackson.map.ObjectMapper)|",
+      "|java+constructor:///org/ektorp/impl/jackson/EktorpJacksonModule/EktorpJacksonModule(org.ektorp.CouchDbConnector,org.codehaus.jackson.map.ObjectMapper)|"
+    ],
+    "affectedLib": "org.codehaus.jackson:jackson-mapper-asl:1.8.4",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.ektorp:org.ektorp:1.1.1",
+    "coordinatesV2": "org.ektorp:org.ektorp:1.2.0",
+    "caller": "|java+method:///org/ektorp/impl/changes/ContinuousChangesFeed/handleChange(java.lang.String)|",
+    "called": "|java+method:///org/codehaus/jackson/map/ObjectMapper/readTree(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/codehaus/jackson/map/ObjectMapper/readTree(java.lang.String)|",
+      "|java+constructor:///org/ektorp/impl/changes/StdDocumentChange/StdDocumentChange(org.codehaus.jackson.JsonNode)|",
+      "|java+method:///java/util/concurrent/BlockingQueue/add(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/codehaus/jackson/map/ObjectMapper/readTree(java.lang.String)|",
+      "|java+method:///java/util/concurrent/BlockingQueue/put(java.lang.Object)|",
+      "|java+constructor:///org/ektorp/impl/changes/StdDocumentChange/StdDocumentChange(org.codehaus.jackson.JsonNode)|"
+    ],
+    "affectedLib": "org.codehaus.jackson:jackson-mapper-asl:1.8.4",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.ektorp:org.ektorp:1.1.1",
+    "coordinatesV2": "org.ektorp:org.ektorp:1.2.0",
+    "caller": "|java+method:///org/ektorp/impl/StdCouchDbInstance$3/success(org.ektorp.http.HttpResponse)|",
+    "called": "|java+method:///org/codehaus/jackson/map/ObjectMapper/readValue(java.io.InputStream,org.codehaus.jackson.type.TypeReference)|",
+    "v1Body": [
+      "|java+method:///org/ektorp/http/HttpResponse/getContent()|",
+      "|java+method:///org/codehaus/jackson/map/ObjectMapper/readValue(java.io.InputStream,java.lang.Class)|",
+      "|java+method:///org/ektorp/impl/StdCouchDbInstance/access$100(org.ektorp.impl.StdCouchDbInstance)|",
+      "|java+method:///org/ektorp/impl/StdCouchDbInstance$3/success(org.ektorp.http.HttpResponse)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/ektorp/http/HttpResponse/getContent()|",
+      "|java+method:///org/ektorp/impl/StdCouchDbInstance/access$100(org.ektorp.impl.StdCouchDbInstance)|",
+      "|java+method:///org/ektorp/impl/StdCouchDbInstance/access$000()|",
+      "|java+method:///org/codehaus/jackson/map/ObjectMapper/readValue(java.io.InputStream,org.codehaus.jackson.type.TypeReference)|",
+      "|java+method:///org/ektorp/impl/StdCouchDbInstance$3/success(org.ektorp.http.HttpResponse)|"
+    ],
+    "affectedLib": "org.codehaus.jackson:jackson-mapper-asl:1.8.4",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.ektorp:org.ektorp:1.1.1",
+    "coordinatesV2": "org.ektorp:org.ektorp:1.2.0",
+    "caller": "|java+method:///org/ektorp/impl/StdCouchDbConnector$2/success(org.ektorp.http.HttpResponse)|",
+    "called": "|java+method:///org/codehaus/jackson/map/ObjectMapper/readValue(java.io.InputStream,java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/ektorp/http/HttpResponse/getContent()|",
+      "|java+method:///org/codehaus/jackson/map/ObjectMapper/readValue(java.io.InputStream,java.lang.Class)|",
+      "|java+method:///org/ektorp/impl/StdCouchDbConnector/access$000(org.ektorp.impl.StdCouchDbConnector)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/ektorp/http/HttpResponse/getContent()|",
+      "|java+method:///org/codehaus/jackson/map/ObjectMapper/readValue(java.io.InputStream,java.lang.Class)|",
+      "|java+method:///org/ektorp/impl/StdCouchDbConnector/access$000(org.ektorp.impl.StdCouchDbConnector)|",
+      "|java+method:///org/ektorp/impl/StdCouchDbConnector$2/success(org.ektorp.http.HttpResponse)|"
+    ],
+    "affectedLib": "org.codehaus.jackson:jackson-mapper-asl:1.8.4",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.ektorp:org.ektorp:1.1.1",
+    "coordinatesV2": "org.ektorp:org.ektorp:1.2.0",
+    "caller": "|java+method:///org/ektorp/http/StdHttpClient$Builder/configureConnectionManager(org.apache.http.params.HttpParams)|",
+    "called": "|java+method:///org/apache/http/conn/scheme/SchemeRegistry/register(org.apache.http.conn.scheme.Scheme)|",
+    "v1Body": [
+      "|java+method:///org/ektorp/http/StdHttpClient$Builder/configureScheme()|",
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///org/apache/http/conn/params/ConnManagerParams/setMaxConnectionsPerRoute(org.apache.http.params.HttpParams,org.apache.http.conn.params.ConnPerRoute)|",
+      "|java+constructor:///org/apache/http/conn/params/ConnPerRouteBean/ConnPerRouteBean(int)|",
+      "|java+constructor:///org/apache/http/impl/conn/tsccm/ThreadSafeClientConnManager/ThreadSafeClientConnManager(org.apache.http.params.HttpParams,org.apache.http.conn.scheme.SchemeRegistry)|",
+      "|java+method:///java/lang/Long/longValue()|",
+      "|java+method:///org/apache/http/conn/params/ConnManagerParams/setMaxTotalConnections(org.apache.http.params.HttpParams,int)|",
+      "|java+method:///org/apache/http/conn/params/ConnManagerParams/setTimeout(org.apache.http.params.HttpParams,long)|",
+      "|java+method:///org/apache/http/conn/scheme/SchemeRegistry/register(org.apache.http.conn.scheme.Scheme)|",
+      "|java+constructor:///org/apache/http/conn/scheme/SchemeRegistry/SchemeRegistry()|",
+      "|java+method:///org/ektorp/http/IdleConnectionMonitor/monitor(org.apache.http.conn.ClientConnectionManager)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/http/impl/conn/tsccm/ThreadSafeClientConnManager/setDefaultMaxPerRoute(int)|",
+      "|java+method:///org/ektorp/http/StdHttpClient$Builder/configureScheme()|",
+      "|java+method:///org/apache/http/impl/conn/tsccm/ThreadSafeClientConnManager/setMaxTotal(int)|",
+      "|java+constructor:///org/apache/http/impl/conn/tsccm/ThreadSafeClientConnManager/ThreadSafeClientConnManager(org.apache.http.conn.scheme.SchemeRegistry)|",
+      "|java+method:///org/apache/http/conn/scheme/SchemeRegistry/register(org.apache.http.conn.scheme.Scheme)|",
+      "|java+constructor:///org/apache/http/conn/scheme/SchemeRegistry/SchemeRegistry()|",
+      "|java+method:///org/ektorp/http/IdleConnectionMonitor/monitor(org.apache.http.conn.ClientConnectionManager)|"
+    ],
+    "affectedLib": "org.apache.httpcomponents:httpclient:4.1.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.ektorp:org.ektorp:1.1.1",
+    "coordinatesV2": "org.ektorp:org.ektorp:1.2.0",
+    "caller": "|java+method:///org/ektorp/http/StdHttpClient/put(java.lang.String,java.lang.String)|",
+    "called": "|java+constructor:///org/apache/http/client/methods/HttpPut/HttpPut(java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/http/client/methods/HttpPut/HttpPut(java.lang.String)|",
+      "|java+method:///org/ektorp/http/StdHttpClient/executePutPost(org.apache.http.client.methods.HttpEntityEnclosingRequestBase,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/http/client/methods/HttpPut/HttpPut(java.lang.String)|",
+      "|java+method:///org/ektorp/http/StdHttpClient/executePutPost(org.apache.http.client.methods.HttpEntityEnclosingRequestBase,java.lang.String,boolean)|"
+    ],
+    "affectedLib": "org.apache.httpcomponents:httpclient:4.1.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.ektorp:org.ektorp:1.1.1",
+    "coordinatesV2": "org.ektorp:org.ektorp:1.2.0",
+    "caller": "|java+method:///org/ektorp/http/StdHttpClient$Builder/configureScheme()|",
+    "called": "|java+constructor:///org/apache/http/conn/ssl/SSLSocketFactory/SSLSocketFactory(javax.net.ssl.SSLContext,org.apache.http.conn.ssl.X509HostnameVerifier)|",
+    "v1Body": [
+      "|java+method:///org/apache/http/conn/scheme/PlainSocketFactory/getSocketFactory()|",
+      "|java+method:///org/apache/http/conn/ssl/SSLSocketFactory/setHostnameVerifier(org.apache.http.conn.ssl.X509HostnameVerifier)|",
+      "|java+constructor:///org/apache/http/conn/ssl/SSLSocketFactory/SSLSocketFactory(javax.net.ssl.SSLContext)|",
+      "|java+method:///org/ektorp/http/AndroidSSLSocketFactory/setHostnameVerifier(org.apache.http.conn.ssl.X509HostnameVerifier)|",
+      "|java+method:///javax/net/ssl/SSLContext/init(javax.net.ssl.KeyManager%5B%5D,javax.net.ssl.TrustManager%5B%5D,java.security.SecureRandom)|",
+      "|java+method:///org/ektorp/util/Exceptions/propagate(java.lang.Throwable)|",
+      "|java+constructor:///org/apache/http/conn/scheme/Scheme/Scheme(java.lang.String,org.apache.http.conn.scheme.SocketFactory,int)|",
+      "|java+constructor:///org/ektorp/http/AndroidSSLSocketFactory/AndroidSSLSocketFactory(java.security.KeyStore)|",
+      "|java+constructor:///org/ektorp/http/StdHttpClient$Builder$1/StdHttpClient$Builder$1(org.ektorp.http.StdHttpClient$Builder)|",
+      "|java+method:///javax/net/ssl/SSLContext/getInstance(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/http/conn/scheme/Scheme/Scheme(java.lang.String,int,org.apache.http.conn.scheme.SchemeSocketFactory)|",
+      "|java+method:///org/apache/http/conn/scheme/PlainSocketFactory/getSocketFactory()|",
+      "|java+constructor:///org/apache/http/conn/ssl/SSLSocketFactory/SSLSocketFactory(javax.net.ssl.SSLContext)|",
+      "|java+method:///org/ektorp/http/AndroidSSLSocketFactory/setHostnameVerifier(org.apache.http.conn.ssl.X509HostnameVerifier)|",
+      "|java+method:///javax/net/ssl/SSLContext/init(javax.net.ssl.KeyManager%5B%5D,javax.net.ssl.TrustManager%5B%5D,java.security.SecureRandom)|",
+      "|java+constructor:///org/apache/http/conn/ssl/SSLSocketFactory/SSLSocketFactory(javax.net.ssl.SSLContext,org.apache.http.conn.ssl.X509HostnameVerifier)|",
+      "|java+method:///org/ektorp/util/Exceptions/propagate(java.lang.Throwable)|",
+      "|java+constructor:///org/apache/http/conn/scheme/Scheme/Scheme(java.lang.String,org.apache.http.conn.scheme.SocketFactory,int)|",
+      "|java+constructor:///org/ektorp/http/AndroidSSLSocketFactory/AndroidSSLSocketFactory(java.security.KeyStore)|",
+      "|java+constructor:///org/ektorp/http/StdHttpClient$Builder$1/StdHttpClient$Builder$1(org.ektorp.http.StdHttpClient$Builder)|",
+      "|java+method:///javax/net/ssl/SSLContext/getInstance(java.lang.String)|"
+    ],
+    "affectedLib": "org.apache.httpcomponents:httpclient:4.1.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.ektorp:org.ektorp:1.1.1",
+    "coordinatesV2": "org.ektorp:org.ektorp:1.2.0",
+    "caller": "|java+method:///org/ektorp/http/StdHttpClient/post(java.lang.String,java.lang.String)|",
+    "called": "|java+constructor:///org/apache/http/client/methods/HttpPost/HttpPost(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/ektorp/http/StdHttpClient/executePutPost(org.apache.http.client.methods.HttpEntityEnclosingRequestBase,java.lang.String)|",
+      "|java+constructor:///org/apache/http/client/methods/HttpPost/HttpPost(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/ektorp/http/StdHttpClient/executePutPost(org.apache.http.client.methods.HttpEntityEnclosingRequestBase,java.lang.String,boolean)|",
+      "|java+constructor:///org/apache/http/client/methods/HttpPost/HttpPost(java.lang.String)|"
+    ],
+    "affectedLib": "org.apache.httpcomponents:httpclient:4.1.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.ektorp:org.ektorp:1.1.1",
+    "coordinatesV2": "org.ektorp:org.ektorp:1.2.0",
+    "caller": "|java+constructor:///org/ektorp/ViewResult/ViewResult(org.codehaus.jackson.JsonNode)|",
+    "called": "|java+method:///org/codehaus/jackson/JsonNode/iterator()|",
+    "v1Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList(int)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/codehaus/jackson/JsonNode/getIntValue()|",
+      "|java+method:///org/ektorp/util/Assert/isTrue(boolean,java.lang.String)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/codehaus/jackson/JsonNode/iterator()|",
+      "|java+method:///org/ektorp/util/Assert/notNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///org/codehaus/jackson/JsonNode/findPath(java.lang.String)|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///org/codehaus/jackson/JsonNode/isArray()|",
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+constructor:///org/ektorp/ViewResult$Row/ViewResult$Row(org.codehaus.jackson.JsonNode)|",
+      "|java+method:///org/codehaus/jackson/JsonNode/get(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/codehaus/jackson/JsonNode/isArray()|",
+      "|java+constructor:///java/util/ArrayList/ArrayList(int)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/codehaus/jackson/JsonNode/getIntValue()|",
+      "|java+method:///org/ektorp/util/Assert/isTrue(boolean,java.lang.String)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/codehaus/jackson/JsonNode/iterator()|",
+      "|java+method:///org/ektorp/util/Assert/notNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///org/codehaus/jackson/JsonNode/findPath(java.lang.String)|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///org/codehaus/jackson/JsonNode/get(java.lang.String)|",
+      "|java+method:///org/codehaus/jackson/JsonNode/size()|",
+      "|java+constructor:///org/ektorp/ViewResult$Row/ViewResult$Row(org.codehaus.jackson.JsonNode)|"
+    ],
+    "affectedLib": "org.codehaus.jackson:jackson-core-asl:1.8.4",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.ektorp:org.ektorp:1.1.1",
+    "coordinatesV2": "org.ektorp:org.ektorp:1.2.0",
+    "caller": "|java+method:///org/ektorp/impl/DocIdResponseHandler/success(org.ektorp.http.HttpResponse)|",
+    "called": "|java+method:///org/codehaus/jackson/JsonFactory/createJsonParser(java.io.InputStream)|",
+    "v1Body": [
+      "|java+method:///org/ektorp/impl/DocIdResponseHandler/success(org.ektorp.http.HttpResponse)|",
+      "|java+method:///org/codehaus/jackson/JsonParser/getCurrentToken()|",
+      "|java+method:///org/codehaus/jackson/JsonParser/getIntValue()|",
+      "|java+method:///org/codehaus/jackson/JsonFactory/createJsonParser(java.io.InputStream)|",
+      "|java+method:///org/codehaus/jackson/JsonToken/ordinal()|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///org/codehaus/jackson/JsonParser/getText()|",
+      "|java+method:///org/codehaus/jackson/JsonParser/getCurrentName()|",
+      "|java+method:///org/codehaus/jackson/JsonParser/nextToken()|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String)|",
+      "|java+constructor:///java/util/ArrayList/ArrayList(int)|",
+      "|java+method:///org/ektorp/http/HttpResponse/getContent()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/ektorp/DbAccessException/DbAccessException(java.lang.String)|",
+      "|java+method:///org/ektorp/impl/DocIdResponseHandler/success(org.ektorp.http.HttpResponse)|",
+      "|java+method:///org/codehaus/jackson/JsonParser/getCurrentToken()|",
+      "|java+method:///org/codehaus/jackson/JsonParser/getIntValue()|",
+      "|java+method:///org/codehaus/jackson/JsonFactory/createJsonParser(java.io.InputStream)|",
+      "|java+method:///org/codehaus/jackson/JsonToken/ordinal()|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///org/codehaus/jackson/JsonParser/getText()|",
+      "|java+method:///org/codehaus/jackson/JsonParser/getCurrentName()|",
+      "|java+method:///org/codehaus/jackson/JsonParser/nextToken()|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+constructor:///java/util/ArrayList/ArrayList(int)|",
+      "|java+method:///org/ektorp/http/HttpResponse/getContent()|"
+    ],
+    "affectedLib": "org.codehaus.jackson:jackson-core-asl:1.8.4",
+    "change": "UPDATED"
+  }
+]

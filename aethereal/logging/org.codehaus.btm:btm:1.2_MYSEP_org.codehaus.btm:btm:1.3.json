@@ -1,0 +1,149 @@
+[
+  {
+    "coordinatesV1": "org.codehaus.btm:btm:1.2",
+    "coordinatesV2": "org.codehaus.btm:btm:1.3",
+    "caller": "|java+method:///bitronix/tm/BitronixTransactionManager/begin()|",
+    "called": "|java+constructor:///javax/transaction/NotSupportedException/NotSupportedException(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+method:///bitronix/tm/BitronixTransactionManager/getCurrentTransaction()|",
+      "|java+method:///bitronix/tm/BitronixTransaction/setActive()|",
+      "|java+method:///bitronix/tm/BitronixTransactionManager/createTransaction()|",
+      "|java+constructor:///javax/transaction/NotSupportedException/NotSupportedException(java.lang.String)|",
+      "|java+constructor:///bitronix/tm/internal/BitronixSystemException/BitronixSystemException(java.lang.String)|",
+      "|java+method:///bitronix/tm/BitronixTransactionManager/dumpTransactionContexts()|",
+      "|java+method:///org/slf4j/Logger/isDebugEnabled()|",
+      "|java+method:///bitronix/tm/BitronixTransactionManager/isShuttingDown()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+method:///bitronix/tm/BitronixTransactionManager/getCurrentTransaction()|",
+      "|java+method:///bitronix/tm/BitronixTransaction/setActive()|",
+      "|java+method:///bitronix/tm/BitronixTransactionManager/createTransaction()|",
+      "|java+constructor:///javax/transaction/NotSupportedException/NotSupportedException(java.lang.String)|",
+      "|java+method:///bitronix/tm/BitronixTransactionManager/dumpTransactionContexts()|",
+      "|java+constructor:///bitronix/tm/BitronixTransactionManager$ClearContextSynchronization/BitronixTransactionManager$ClearContextSynchronization(bitronix.tm.BitronixTransactionManager,bitronix.tm.BitronixTransaction)|",
+      "|java+method:///bitronix/tm/utils/Scheduler/add(java.lang.Object,int)|",
+      "|java+method:///org/slf4j/Logger/isDebugEnabled()|",
+      "|java+method:///bitronix/tm/BitronixTransactionManager/isShuttingDown()|",
+      "|java+constructor:///bitronix/tm/internal/BitronixSystemException/BitronixSystemException(java.lang.String)|",
+      "|java+method:///bitronix/tm/BitronixTransaction/getSynchronizationScheduler()|"
+    ],
+    "affectedLib": "org.apache.geronimo.specs:geronimo-jta_1.0.1B_spec:1.0.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.codehaus.btm:btm:1.2",
+    "coordinatesV2": "org.codehaus.btm:btm:1.3",
+    "caller": "|java+method:///bitronix/tm/BitronixTransactionManager/resume(javax.transaction.Transaction)|",
+    "called": "|java+constructor:///javax/transaction/InvalidTransactionException/InvalidTransactionException(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+method:///bitronix/tm/BitronixTransaction/getResourceManager()|",
+      "|java+method:///bitronix/tm/BitronixTransactionManager/getCurrentTransaction()|",
+      "|java+constructor:///java/lang/IllegalStateException/IllegalStateException(java.lang.String)|",
+      "|java+constructor:///bitronix/tm/internal/ThreadContext/ThreadContext()|",
+      "|java+method:///java/lang/StringBuffer/append(java.lang.Object)|",
+      "|java+constructor:///bitronix/tm/internal/BitronixSystemException/BitronixSystemException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///bitronix/tm/BitronixTransactionManager/setCurrentContext(bitronix.tm.internal.ThreadContext)|",
+      "|java+method:///java/lang/StringBuffer/toString()|",
+      "|java+method:///bitronix/tm/internal/Decoder/decodeXAExceptionErrorCode(javax.transaction.xa.XAException)|",
+      "|java+constructor:///javax/transaction/InvalidTransactionException/InvalidTransactionException(java.lang.String)|",
+      "|java+method:///bitronix/tm/internal/XAResourceManager/resume()|",
+      "|java+method:///org/slf4j/Logger/isDebugEnabled()|",
+      "|java+constructor:///java/lang/StringBuffer/StringBuffer()|",
+      "|java+method:///bitronix/tm/internal/ThreadContext/setTransaction(bitronix.tm.BitronixTransaction)|",
+      "|java+method:///java/lang/StringBuffer/append(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+method:///bitronix/tm/BitronixTransaction/getResourceManager()|",
+      "|java+method:///bitronix/tm/BitronixTransactionManager/getCurrentTransaction()|",
+      "|java+constructor:///java/lang/IllegalStateException/IllegalStateException(java.lang.String)|",
+      "|java+constructor:///bitronix/tm/internal/ThreadContext/ThreadContext()|",
+      "|java+method:///java/lang/StringBuffer/append(java.lang.Object)|",
+      "|java+constructor:///bitronix/tm/internal/BitronixSystemException/BitronixSystemException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/lang/StringBuffer/toString()|",
+      "|java+constructor:///javax/transaction/InvalidTransactionException/InvalidTransactionException(java.lang.String)|",
+      "|java+method:///bitronix/tm/internal/XAResourceManager/resume()|",
+      "|java+method:///org/slf4j/Logger/isDebugEnabled()|",
+      "|java+constructor:///java/lang/StringBuffer/StringBuffer()|",
+      "|java+method:///bitronix/tm/BitronixTransactionManager/setCurrentContext(bitronix.tm.internal.ThreadContext)|",
+      "|java+method:///bitronix/tm/utils/Decoder/decodeXAExceptionErrorCode(javax.transaction.xa.XAException)|",
+      "|java+method:///bitronix/tm/internal/ThreadContext/setTransaction(bitronix.tm.BitronixTransaction)|",
+      "|java+method:///java/lang/StringBuffer/append(java.lang.String)|"
+    ],
+    "affectedLib": "org.apache.geronimo.specs:geronimo-jta_1.0.1B_spec:1.0.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.codehaus.btm:btm:1.2",
+    "coordinatesV2": "org.codehaus.btm:btm:1.3",
+    "caller": "|java+method:///bitronix/tm/resource/jms/DualSessionWrapper/getSession(boolean)|",
+    "called": "|java+constructor:///javax/jms/JMSException/JMSException(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+method:///bitronix/tm/BitronixTransactionManager/getCurrentTransaction()|",
+      "|java+method:///bitronix/tm/resource/jms/DualSessionWrapper/getState()|",
+      "|java+method:///bitronix/tm/resource/jms/DualSessionWrapper/createNonXASession()|",
+      "|java+constructor:///javax/jms/JMSException/JMSException(java.lang.String)|",
+      "|java+method:///bitronix/tm/TransactionManagerServices/getTransactionManager()|",
+      "|java+method:///org/slf4j/Logger/isDebugEnabled()|",
+      "|java+method:///bitronix/tm/resource/jms/DualSessionWrapper/createXASession()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+method:///bitronix/tm/resource/jms/DualSessionWrapper/getState()|",
+      "|java+method:///bitronix/tm/resource/jms/DualSessionWrapper/createNonXASession()|",
+      "|java+method:///bitronix/tm/resource/common/TransactionContextHelper/currentTransaction()|",
+      "|java+constructor:///javax/jms/JMSException/JMSException(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/isDebugEnabled()|",
+      "|java+method:///bitronix/tm/resource/jms/DualSessionWrapper/createXASession()|"
+    ],
+    "affectedLib": "org.apache.geronimo.specs:geronimo-jms_1.1_spec:1.0.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.codehaus.btm:btm:1.2",
+    "coordinatesV2": "org.codehaus.btm:btm:1.3",
+    "caller": "|java+initializer:///bitronix/tm/TransactionManagerServices/TransactionManagerServices$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+method:///java/lang/System/getProperty(java.lang.String,java.lang.String)|",
+      "|java+method:///java/lang/String/equalsIgnoreCase(java.lang.String)|",
+      "|java+constructor:///bitronix/tm/TransactionManagerServices$ShutdownHandler/TransactionManagerServices$ShutdownHandler(bitronix.tm.TransactionManagerServices$1)|",
+      "|java+method:///java/lang/Runtime/getRuntime()|",
+      "|java+method:///bitronix/tm/TransactionManagerServices/class$(java.lang.String)|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///java/lang/Runtime/addShutdownHook(java.lang.Thread)|",
+      "|java+method:///org/slf4j/Logger/isDebugEnabled()|"
+    ],
+    "v2Body": [
+      "|java+method:///bitronix/tm/TransactionManagerServices/class$(java.lang.String)|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.5.2",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.codehaus.btm:btm:1.2",
+    "coordinatesV2": "org.codehaus.btm:btm:1.3",
+    "caller": "|java+initializer:///bitronix/tm/BitronixTransaction/BitronixTransaction$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+constructor:///bitronix/tm/twopc/Committer/Committer(bitronix.tm.twopc.executor.Executor)|",
+      "|java+method:///bitronix/tm/TransactionManagerServices/getExecutor()|",
+      "|java+method:///bitronix/tm/BitronixTransaction/class$(java.lang.String)|",
+      "|java+constructor:///bitronix/tm/twopc/Preparer/Preparer(bitronix.tm.twopc.executor.Executor)|",
+      "|java+constructor:///bitronix/tm/twopc/Rollbacker/Rollbacker(bitronix.tm.twopc.executor.Executor)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///bitronix/tm/BitronixTransaction/class$(java.lang.String)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.5.2",
+    "change": "UPDATED"
+  }
+]

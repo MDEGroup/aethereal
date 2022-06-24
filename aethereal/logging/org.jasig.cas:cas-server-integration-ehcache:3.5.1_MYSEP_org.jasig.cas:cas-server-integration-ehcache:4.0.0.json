@@ -1,0 +1,283 @@
+[
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-integration-ehcache:4.0.0",
+    "coordinatesV2": "org.jasig.cas:cas-server-integration-ehcache:3.5.1",
+    "caller": "|java+method:///org/jasig/cas/ticket/registry/EhCacheTicketRegistry/addTicket(org.jasig.cas.ticket.Ticket)|",
+    "called": "|java+constructor:///net/sf/ehcache/Element/Element(java.io.Serializable,java.io.Serializable)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder(java.lang.String)|",
+      "|java+method:///org/jasig/cas/ticket/Ticket/getId()|",
+      "|java+method:///net/sf/ehcache/Cache/getName()|",
+      "|java+constructor:///net/sf/ehcache/Element/Element(java.io.Serializable,java.io.Serializable)|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///net/sf/ehcache/Cache/put(net.sf.ehcache.Element)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/jasig/cas/ticket/Ticket/getId()|",
+      "|java+constructor:///net/sf/ehcache/Element/Element(java.io.Serializable,java.io.Serializable)|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///net/sf/ehcache/Cache/getName()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///net/sf/ehcache/Cache/put(net.sf.ehcache.Element)|"
+    ],
+    "affectedLib": "net.sf.ehcache:ehcache-core:2.6.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-integration-ehcache:4.0.0",
+    "coordinatesV2": "org.jasig.cas:cas-server-integration-ehcache:3.5.1",
+    "caller": "|java+method:///org/jasig/cas/ticket/registry/EhCacheTicketRegistry/afterPropertiesSet()|",
+    "called": "|java+method:///net/sf/ehcache/config/CacheConfiguration/isOverflowToDisk()|",
+    "v1Body": [
+      "|java+method:///net/sf/ehcache/config/CacheConfiguration/getMaxElementsOnDisk()|",
+      "|java+method:///net/sf/ehcache/config/CacheConfiguration/isOverflowToDisk()|",
+      "|java+constructor:///org/springframework/beans/BeanInstantiationException/BeanInstantiationException(java.lang.Class,java.lang.String)|",
+      "|java+method:///net/sf/ehcache/config/CacheConfiguration/getTimeToIdleSeconds()|",
+      "|java+method:///java/lang/Boolean/valueOf(boolean)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///org/slf4j/Logger/isDebugEnabled()|",
+      "|java+method:///net/sf/ehcache/Cache/getCacheConfiguration()|",
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///net/sf/ehcache/config/CacheConfiguration/getTimeToLiveSeconds()|",
+      "|java+method:///net/sf/ehcache/config/CacheConfiguration/getMaxEntriesLocalHeap()|"
+    ],
+    "v2Body": [
+      "|java+method:///net/sf/ehcache/config/CacheConfiguration/getMaxElementsOnDisk()|",
+      "|java+method:///net/sf/ehcache/config/CacheConfiguration/isOverflowToDisk()|",
+      "|java+constructor:///org/springframework/beans/BeanInstantiationException/BeanInstantiationException(java.lang.Class,java.lang.String)|",
+      "|java+method:///net/sf/ehcache/config/CacheConfiguration/getTimeToIdleSeconds()|",
+      "|java+method:///net/sf/ehcache/CacheManager/getName()|",
+      "|java+method:///net/sf/ehcache/Cache/getCacheManager()|",
+      "|java+method:///java/lang/Boolean/valueOf(boolean)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///org/slf4j/Logger/isDebugEnabled()|",
+      "|java+method:///net/sf/ehcache/Cache/getCacheConfiguration()|",
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///net/sf/ehcache/config/CacheConfiguration/getTimeToLiveSeconds()|",
+      "|java+method:///net/sf/ehcache/config/CacheConfiguration/getMaxEntriesLocalHeap()|"
+    ],
+    "affectedLib": "net.sf.ehcache:ehcache-core:2.6.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-integration-ehcache:4.0.0",
+    "coordinatesV2": "org.jasig.cas:cas-server-integration-ehcache:3.5.1",
+    "caller": "|java+method:///org/jasig/cas/ticket/registry/EhCacheTicketRegistry/getTicket(java.lang.String)|",
+    "called": "|java+method:///net/sf/ehcache/Element/getValue()|",
+    "v1Body": [
+      "|java+method:///net/sf/ehcache/Element/getValue()|",
+      "|java+method:///net/sf/ehcache/Cache/get(java.io.Serializable)|",
+      "|java+method:///org/jasig/cas/ticket/registry/EhCacheTicketRegistry/getProxiedTicketInstance(org.jasig.cas.ticket.Ticket)|"
+    ],
+    "v2Body": [
+      "|java+method:///net/sf/ehcache/Element/getObjectValue()|",
+      "|java+method:///net/sf/ehcache/Cache/get(java.io.Serializable)|",
+      "|java+method:///org/jasig/cas/ticket/registry/EhCacheTicketRegistry/getProxiedTicketInstance(org.jasig.cas.ticket.Ticket)|"
+    ],
+    "affectedLib": "net.sf.ehcache:ehcache-core:2.6.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-integration-ehcache:4.0.0",
+    "coordinatesV2": "org.jasig.cas:cas-server-integration-ehcache:3.5.1",
+    "caller": "|java+method:///org/jasig/cas/monitor/EhCacheStatistics/getSize()|",
+    "called": "|java+method:///net/sf/ehcache/Cache/getLiveCacheStatistics()|",
+    "v1Body": [
+      "|java+method:///net/sf/ehcache/statistics/LiveCacheStatistics/getLocalOffHeapSizeInBytes()|",
+      "|java+method:///net/sf/ehcache/Cache/getLiveCacheStatistics()|",
+      "|java+method:///net/sf/ehcache/statistics/LiveCacheStatistics/getLocalDiskSizeInBytes()|",
+      "|java+method:///net/sf/ehcache/Cache/getMemoryStoreSize()|",
+      "|java+method:///net/sf/ehcache/Cache/getDiskStoreSize()|",
+      "|java+method:///net/sf/ehcache/statistics/LiveCacheStatistics/getLocalHeapSizeInBytes()|"
+    ],
+    "v2Body": [
+      "|java+method:///net/sf/ehcache/statistics/StatisticsGateway/getLocalHeapSizeInBytes()|",
+      "|java+method:///net/sf/ehcache/Cache/getStatistics()|",
+      "|java+method:///net/sf/ehcache/Cache/getMemoryStoreSize()|",
+      "|java+method:///net/sf/ehcache/statistics/StatisticsGateway/getLocalDiskSizeInBytes()|",
+      "|java+method:///net/sf/ehcache/Cache/getDiskStoreSize()|",
+      "|java+method:///net/sf/ehcache/statistics/StatisticsGateway/getLocalOffHeapSizeInBytes()|"
+    ],
+    "affectedLib": "net.sf.ehcache:ehcache-core:2.6.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-integration-ehcache:4.0.0",
+    "coordinatesV2": "org.jasig.cas:cas-server-integration-ehcache:3.5.1",
+    "caller": "|java+method:///org/jasig/cas/monitor/EhCacheStatistics/getEvictions()|",
+    "called": "|java+method:///net/sf/ehcache/Cache/getLiveCacheStatistics()|",
+    "v1Body": [
+      "|java+method:///net/sf/ehcache/Cache/getLiveCacheStatistics()|",
+      "|java+method:///net/sf/ehcache/statistics/LiveCacheStatistics/getEvictedCount()|"
+    ],
+    "v2Body": [
+      "|java+method:///net/sf/ehcache/statistics/StatisticsGateway/cacheEvictedCount()|",
+      "|java+method:///net/sf/ehcache/Cache/getStatistics()|"
+    ],
+    "affectedLib": "net.sf.ehcache:ehcache-core:2.6.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-integration-ehcache:3.5.1",
+    "coordinatesV2": "org.jasig.cas:cas-server-integration-ehcache:4.0.0",
+    "caller": "|java+method:///org/jasig/cas/ticket/registry/EhCacheTicketRegistry/addTicket(org.jasig.cas.ticket.Ticket)|",
+    "called": "|java+constructor:///net/sf/ehcache/Element/Element(java.io.Serializable,java.io.Serializable)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder(java.lang.String)|",
+      "|java+method:///org/jasig/cas/ticket/Ticket/getId()|",
+      "|java+method:///net/sf/ehcache/Cache/getName()|",
+      "|java+constructor:///net/sf/ehcache/Element/Element(java.io.Serializable,java.io.Serializable)|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///net/sf/ehcache/Cache/put(net.sf.ehcache.Element)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/jasig/cas/ticket/Ticket/getId()|",
+      "|java+constructor:///net/sf/ehcache/Element/Element(java.io.Serializable,java.io.Serializable)|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///net/sf/ehcache/Cache/getName()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///net/sf/ehcache/Cache/put(net.sf.ehcache.Element)|"
+    ],
+    "affectedLib": "net.sf.ehcache:ehcache:2.7.2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-integration-ehcache:3.5.1",
+    "coordinatesV2": "org.jasig.cas:cas-server-integration-ehcache:4.0.0",
+    "caller": "|java+method:///org/jasig/cas/ticket/registry/EhCacheTicketRegistry/afterPropertiesSet()|",
+    "called": "|java+method:///net/sf/ehcache/config/CacheConfiguration/isOverflowToDisk()|",
+    "v1Body": [
+      "|java+method:///net/sf/ehcache/config/CacheConfiguration/getMaxElementsOnDisk()|",
+      "|java+method:///net/sf/ehcache/config/CacheConfiguration/isOverflowToDisk()|",
+      "|java+constructor:///org/springframework/beans/BeanInstantiationException/BeanInstantiationException(java.lang.Class,java.lang.String)|",
+      "|java+method:///net/sf/ehcache/config/CacheConfiguration/getTimeToIdleSeconds()|",
+      "|java+method:///java/lang/Boolean/valueOf(boolean)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///org/slf4j/Logger/isDebugEnabled()|",
+      "|java+method:///net/sf/ehcache/Cache/getCacheConfiguration()|",
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///net/sf/ehcache/config/CacheConfiguration/getTimeToLiveSeconds()|",
+      "|java+method:///net/sf/ehcache/config/CacheConfiguration/getMaxEntriesLocalHeap()|"
+    ],
+    "v2Body": [
+      "|java+method:///net/sf/ehcache/config/CacheConfiguration/getMaxElementsOnDisk()|",
+      "|java+method:///net/sf/ehcache/config/CacheConfiguration/isOverflowToDisk()|",
+      "|java+constructor:///org/springframework/beans/BeanInstantiationException/BeanInstantiationException(java.lang.Class,java.lang.String)|",
+      "|java+method:///net/sf/ehcache/config/CacheConfiguration/getTimeToIdleSeconds()|",
+      "|java+method:///net/sf/ehcache/CacheManager/getName()|",
+      "|java+method:///net/sf/ehcache/Cache/getCacheManager()|",
+      "|java+method:///java/lang/Boolean/valueOf(boolean)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///org/slf4j/Logger/isDebugEnabled()|",
+      "|java+method:///net/sf/ehcache/Cache/getCacheConfiguration()|",
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///net/sf/ehcache/config/CacheConfiguration/getTimeToLiveSeconds()|",
+      "|java+method:///net/sf/ehcache/config/CacheConfiguration/getMaxEntriesLocalHeap()|"
+    ],
+    "affectedLib": "net.sf.ehcache:ehcache:2.7.2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-integration-ehcache:3.5.1",
+    "coordinatesV2": "org.jasig.cas:cas-server-integration-ehcache:4.0.0",
+    "caller": "|java+method:///org/jasig/cas/ticket/registry/EhCacheTicketRegistry/getTicket(java.lang.String)|",
+    "called": "|java+method:///net/sf/ehcache/Cache/get(java.io.Serializable)|",
+    "v1Body": [
+      "|java+method:///net/sf/ehcache/Element/getValue()|",
+      "|java+method:///net/sf/ehcache/Cache/get(java.io.Serializable)|",
+      "|java+method:///org/jasig/cas/ticket/registry/EhCacheTicketRegistry/getProxiedTicketInstance(org.jasig.cas.ticket.Ticket)|"
+    ],
+    "v2Body": [
+      "|java+method:///net/sf/ehcache/Element/getObjectValue()|",
+      "|java+method:///net/sf/ehcache/Cache/get(java.io.Serializable)|",
+      "|java+method:///org/jasig/cas/ticket/registry/EhCacheTicketRegistry/getProxiedTicketInstance(org.jasig.cas.ticket.Ticket)|"
+    ],
+    "affectedLib": "net.sf.ehcache:ehcache:2.7.2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-integration-ehcache:3.5.1",
+    "coordinatesV2": "org.jasig.cas:cas-server-integration-ehcache:4.0.0",
+    "caller": "|java+method:///org/jasig/cas/ticket/registry/EhCacheTicketRegistry/getTickets()|",
+    "called": "|java+method:///net/sf/ehcache/Cache/getKeysWithExpiryCheck()|",
+    "v1Body": [
+      "|java+constructor:///java/lang/UnsupportedOperationException/UnsupportedOperationException(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///net/sf/ehcache/Element/getObjectValue()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///net/sf/ehcache/Cache/getKeysWithExpiryCheck()|",
+      "|java+constructor:///java/util/HashSet/HashSet(int)|",
+      "|java+method:///java/util/Collection/size()|",
+      "|java+method:///java/util/Map/values()|",
+      "|java+method:///java/util/Collection/add(java.lang.Object)|",
+      "|java+method:///java/util/Collection/iterator()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///net/sf/ehcache/Cache/getAll(java.util.Collection)|"
+    ],
+    "affectedLib": "net.sf.ehcache:ehcache:2.7.2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-integration-ehcache:3.5.1",
+    "coordinatesV2": "org.jasig.cas:cas-server-integration-ehcache:4.0.0",
+    "caller": "|java+method:///org/jasig/cas/monitor/EhCacheStatistics/getSize()|",
+    "called": "|java+method:///net/sf/ehcache/statistics/StatisticsGateway/getLocalOffHeapSizeInBytes()|",
+    "v1Body": [
+      "|java+method:///net/sf/ehcache/statistics/LiveCacheStatistics/getLocalOffHeapSizeInBytes()|",
+      "|java+method:///net/sf/ehcache/Cache/getLiveCacheStatistics()|",
+      "|java+method:///net/sf/ehcache/statistics/LiveCacheStatistics/getLocalDiskSizeInBytes()|",
+      "|java+method:///net/sf/ehcache/Cache/getMemoryStoreSize()|",
+      "|java+method:///net/sf/ehcache/Cache/getDiskStoreSize()|",
+      "|java+method:///net/sf/ehcache/statistics/LiveCacheStatistics/getLocalHeapSizeInBytes()|"
+    ],
+    "v2Body": [
+      "|java+method:///net/sf/ehcache/statistics/StatisticsGateway/getLocalHeapSizeInBytes()|",
+      "|java+method:///net/sf/ehcache/Cache/getStatistics()|",
+      "|java+method:///net/sf/ehcache/Cache/getMemoryStoreSize()|",
+      "|java+method:///net/sf/ehcache/statistics/StatisticsGateway/getLocalDiskSizeInBytes()|",
+      "|java+method:///net/sf/ehcache/Cache/getDiskStoreSize()|",
+      "|java+method:///net/sf/ehcache/statistics/StatisticsGateway/getLocalOffHeapSizeInBytes()|"
+    ],
+    "affectedLib": "net.sf.ehcache:ehcache:2.7.2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-integration-ehcache:3.5.1",
+    "coordinatesV2": "org.jasig.cas:cas-server-integration-ehcache:4.0.0",
+    "caller": "|java+method:///org/jasig/cas/monitor/EhCacheStatistics/getEvictions()|",
+    "called": "|java+method:///net/sf/ehcache/Cache/getStatistics()|",
+    "v1Body": [
+      "|java+method:///net/sf/ehcache/Cache/getLiveCacheStatistics()|",
+      "|java+method:///net/sf/ehcache/statistics/LiveCacheStatistics/getEvictedCount()|"
+    ],
+    "v2Body": [
+      "|java+method:///net/sf/ehcache/statistics/StatisticsGateway/cacheEvictedCount()|",
+      "|java+method:///net/sf/ehcache/Cache/getStatistics()|"
+    ],
+    "affectedLib": "net.sf.ehcache:ehcache:2.7.2",
+    "change": "ADDED"
+  }
+]

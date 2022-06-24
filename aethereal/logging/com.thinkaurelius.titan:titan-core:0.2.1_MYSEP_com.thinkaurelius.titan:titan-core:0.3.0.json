@@ -1,0 +1,1273 @@
+[
+  {
+    "coordinatesV1": "com.thinkaurelius.titan:titan-core:0.3.0",
+    "coordinatesV2": "com.thinkaurelius.titan:titan-core:0.2.1",
+    "caller": "|java+method:///com/thinkaurelius/titan/graphdb/query/VertexArrayList/toLongList(java.util.List)|",
+    "called": "|java+method:///cern/colt/list/AbstractLongList/add(long)|",
+    "v1Body": [
+      "|java+constructor:///com/thinkaurelius/titan/core/InvalidElementException/InvalidElementException(java.lang.String,com.thinkaurelius.titan.core.TitanVertex)|",
+      "|java+constructor:///cern/colt/list/LongArrayList/LongArrayList(int)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///com/thinkaurelius/titan/core/TitanVertex/getID()|",
+      "|java+method:///com/thinkaurelius/titan/core/TitanVertex/hasID()|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///cern/colt/list/AbstractLongList/add(long)|",
+      "|java+method:///java/util/List/iterator()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///cern/colt/list/LongArrayList/LongArrayList(int)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///com/thinkaurelius/titan/core/TitanVertex/getID()|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///cern/colt/list/AbstractLongList/add(long)|",
+      "|java+method:///java/util/List/iterator()|"
+    ],
+    "affectedLib": "colt:colt:1.2.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.thinkaurelius.titan:titan-core:0.3.0",
+    "coordinatesV2": "com.thinkaurelius.titan:titan-core:0.2.1",
+    "caller": "|java+constructor:///com/thinkaurelius/titan/graphdb/database/idassigner/VertexIDAssigner/VertexIDAssigner(org.apache.commons.configuration.Configuration,com.thinkaurelius.titan.diskstorage.IDAuthority,com.thinkaurelius.titan.diskstorage.keycolumnvalue.StoreFeatures)|",
+    "called": "|java+constructor:///cern/colt/map/OpenIntObjectHashMap/OpenIntObjectHashMap()|",
+    "v1Body": [
+      "|java+constructor:///com/thinkaurelius/titan/graphdb/database/idassigner/VertexIDAssigner$SimpleVertexIDBlockSizer/VertexIDAssigner$SimpleVertexIDBlockSizer(long)|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String)|",
+      "|java+method:///org/apache/commons/configuration/Configuration/getLong(java.lang.String,long)|",
+      "|java+method:///com/thinkaurelius/titan/diskstorage/IDAuthority/setIDBlockSizer(com.thinkaurelius.titan.graphdb.database.idassigner.IDBlockSizer)|",
+      "|java+method:///com/thinkaurelius/titan/diskstorage/keycolumnvalue/StoreFeatures/isDistributed()|",
+      "|java+method:///com/thinkaurelius/titan/graphdb/database/idassigner/VertexIDAssigner/setLocalPartitions()|",
+      "|java+constructor:///com/thinkaurelius/titan/graphdb/database/idassigner/placement/DefaultPlacementStrategy/DefaultPlacementStrategy(int)|",
+      "|java+method:///com/thinkaurelius/titan/graphdb/idmanagement/IDManager/getMaxPartitionID()|",
+      "|java+constructor:///com/thinkaurelius/titan/graphdb/idmanagement/IDManager/IDManager(long,long)|",
+      "|java+method:///com/thinkaurelius/titan/diskstorage/keycolumnvalue/StoreFeatures/isKeyOrdered()|",
+      "|java+method:///org/apache/commons/configuration/Configuration/getBoolean(java.lang.String,boolean)|",
+      "|java+constructor:///com/thinkaurelius/titan/graphdb/database/idassigner/placement/SimpleBulkPlacementStrategy/SimpleBulkPlacementStrategy(org.apache.commons.configuration.Configuration)|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///com/thinkaurelius/titan/diskstorage/keycolumnvalue/StoreFeatures/hasLocalKeyPartition()|",
+      "|java+constructor:///java/util/concurrent/locks/ReentrantReadWriteLock/ReentrantReadWriteLock()|",
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object)|",
+      "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean)|",
+      "|java+constructor:///cern/colt/map/OpenIntObjectHashMap/OpenIntObjectHashMap()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///com/thinkaurelius/titan/graphdb/database/idassigner/VertexIDAssigner$SimpleVertexIDBlockSizer/VertexIDAssigner$SimpleVertexIDBlockSizer(long)|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String)|",
+      "|java+method:///org/apache/commons/configuration/Configuration/getLong(java.lang.String,long)|",
+      "|java+method:///com/thinkaurelius/titan/diskstorage/IDAuthority/setIDBlockSizer(com.thinkaurelius.titan.graphdb.database.idassigner.IDBlockSizer)|",
+      "|java+method:///com/thinkaurelius/titan/diskstorage/keycolumnvalue/StoreFeatures/isDistributed()|",
+      "|java+method:///com/thinkaurelius/titan/graphdb/database/idassigner/VertexIDAssigner/setLocalPartitions()|",
+      "|java+constructor:///com/thinkaurelius/titan/graphdb/database/idassigner/placement/DefaultPlacementStrategy/DefaultPlacementStrategy(int)|",
+      "|java+method:///com/thinkaurelius/titan/graphdb/idmanagement/IDManager/getMaxPartitionID()|",
+      "|java+constructor:///com/thinkaurelius/titan/graphdb/idmanagement/IDManager/IDManager(long,long)|",
+      "|java+method:///com/thinkaurelius/titan/diskstorage/keycolumnvalue/StoreFeatures/isKeyOrdered()|",
+      "|java+method:///org/apache/commons/configuration/Configuration/getBoolean(java.lang.String,boolean)|",
+      "|java+constructor:///com/thinkaurelius/titan/graphdb/database/idassigner/placement/SimpleBulkPlacementStrategy/SimpleBulkPlacementStrategy(org.apache.commons.configuration.Configuration)|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///com/thinkaurelius/titan/diskstorage/keycolumnvalue/StoreFeatures/hasLocalKeyPartition()|",
+      "|java+constructor:///java/util/concurrent/locks/ReentrantReadWriteLock/ReentrantReadWriteLock()|",
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object)|",
+      "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean)|",
+      "|java+method:///java/lang/Boolean/valueOf(boolean)|",
+      "|java+constructor:///cern/colt/map/OpenIntObjectHashMap/OpenIntObjectHashMap()|"
+    ],
+    "affectedLib": "colt:colt:1.2.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.thinkaurelius.titan:titan-core:0.3.0",
+    "coordinatesV2": "com.thinkaurelius.titan:titan-core:0.2.1",
+    "caller": "|java+method:///com/thinkaurelius/titan/graphdb/query/VertexLongList/add(com.thinkaurelius.titan.core.TitanVertex)|",
+    "called": "|java+method:///cern/colt/list/AbstractLongList/add(long)|",
+    "v1Body": [
+      "|java+constructor:///com/thinkaurelius/titan/core/InvalidElementException/InvalidElementException(java.lang.String,com.thinkaurelius.titan.core.TitanVertex)|",
+      "|java+method:///cern/colt/list/AbstractLongList/size()|",
+      "|java+method:///com/thinkaurelius/titan/core/TitanVertex/getID()|",
+      "|java+method:///com/thinkaurelius/titan/core/TitanVertex/hasID()|",
+      "|java+method:///cern/colt/list/AbstractLongList/get(int)|",
+      "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean,java.lang.Object)|",
+      "|java+method:///cern/colt/list/AbstractLongList/add(long)|"
+    ],
+    "v2Body": [
+      "|java+method:///cern/colt/list/AbstractLongList/size()|",
+      "|java+method:///com/thinkaurelius/titan/core/TitanVertex/getID()|",
+      "|java+method:///cern/colt/list/AbstractLongList/get(int)|",
+      "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean,java.lang.Object)|",
+      "|java+method:///cern/colt/list/AbstractLongList/add(long)|"
+    ],
+    "affectedLib": "colt:colt:1.2.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.thinkaurelius.titan:titan-core:0.3.0",
+    "coordinatesV2": "com.thinkaurelius.titan:titan-core:0.2.1",
+    "caller": "|java+constructor:///com/thinkaurelius/titan/graphdb/database/serialize/kryo/KryoSerializer/KryoSerializer(boolean)|",
+    "called": "|java+constructor:///com/esotericsoftware/kryo/serialize/ClassSerializer/ClassSerializer(com.esotericsoftware.kryo.Kryo)|",
+    "v1Body": [
+      "|java+constructor:///com/esotericsoftware/kryo/Kryo/Kryo()|",
+      "|java+method:///com/thinkaurelius/titan/graphdb/database/serialize/kryo/KryoSerializer/registerClass(java.lang.Class)|",
+      "|java+method:///com/thinkaurelius/titan/graphdb/database/serialize/kryo/KryoSerializer/register(java.lang.Class,com.esotericsoftware.kryo.Serializer)|",
+      "|java+constructor:///com/esotericsoftware/kryo/serialize/ClassSerializer/ClassSerializer(com.esotericsoftware.kryo.Kryo)|",
+      "|java+method:///com/thinkaurelius/titan/graphdb/database/serialize/kryo/KryoSerializer/setRegistrationOptional(boolean)|",
+      "|java+method:///com/thinkaurelius/titan/graphdb/database/serialize/SerializerInitialization/initialize(com.thinkaurelius.titan.graphdb.database.serialize.Serializer)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/common/cache/CacheBuilder/newBuilder()|",
+      "|java+constructor:///com/thinkaurelius/titan/graphdb/database/serialize/kryo/KryoSerializer$1/KryoSerializer$1(com.thinkaurelius.titan.graphdb.database.serialize.kryo.KryoSerializer)|",
+      "|java+method:///com/thinkaurelius/titan/graphdb/database/serialize/SerializerInitialization/initialize(com.thinkaurelius.titan.graphdb.database.serialize.Serializer)|",
+      "|java+method:///com/google/common/cache/CacheBuilder/initialCapacity(int)|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+method:///com/google/common/cache/CacheBuilder/maximumSize(long)|",
+      "|java+method:///com/google/common/cache/CacheBuilder/build()|",
+      "|java+method:///com/google/common/cache/CacheBuilder/concurrencyLevel(int)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "com.googlecode:kryo:1.04",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.thinkaurelius.titan:titan-core:0.3.0",
+    "coordinatesV2": "com.thinkaurelius.titan:titan-core:0.2.1",
+    "caller": "|java+method:///com/thinkaurelius/titan/graphdb/database/serialize/kryo/KryoSerializer/readObjectNotNull(java.nio.ByteBuffer,java.lang.Class)|",
+    "called": "|java+method:///com/esotericsoftware/kryo/Kryo/readObjectData(java.nio.ByteBuffer,java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///com/esotericsoftware/kryo/Kryo/readObjectData(java.nio.ByteBuffer,java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/thinkaurelius/titan/graphdb/database/serialize/kryo/KryoSerializer/getKryo()|",
+      "|java+method:///com/thinkaurelius/titan/graphdb/database/serialize/kryo/KryoSerializer/updateBBPosition(com.esotericsoftware.kryo.io.Input,java.nio.ByteBuffer)|",
+      "|java+method:///com/esotericsoftware/kryo/Kryo/readObject(com.esotericsoftware.kryo.io.Input,java.lang.Class)|",
+      "|java+method:///com/thinkaurelius/titan/graphdb/database/serialize/kryo/KryoSerializer/getInput(java.nio.ByteBuffer)|"
+    ],
+    "affectedLib": "com.googlecode:kryo:1.04",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.thinkaurelius.titan:titan-core:0.3.0",
+    "coordinatesV2": "com.thinkaurelius.titan:titan-core:0.2.1",
+    "caller": "|java+method:///com/thinkaurelius/titan/graphdb/database/serialize/kryo/KryoDataOutput/writeClassAndObject(java.lang.Object)|",
+    "called": "|java+method:///com/esotericsoftware/kryo/ObjectBuffer/writeClassAndObject(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///com/esotericsoftware/kryo/ObjectBuffer/writeClassAndObject(java.lang.Object)|",
+      "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean,java.lang.Object)|",
+      "|java+method:///com/thinkaurelius/titan/graphdb/database/serialize/kryo/KryoDataOutput/append(byte%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///com/thinkaurelius/titan/graphdb/database/serialize/kryo/KryoSerializer/isValidObject(com.esotericsoftware.kryo.Kryo,java.lang.Object)|",
+      "|java+method:///com/esotericsoftware/kryo/Kryo/writeClassAndObject(com.esotericsoftware.kryo.io.Output,java.lang.Object)|",
+      "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean,java.lang.Object)|"
+    ],
+    "affectedLib": "com.googlecode:kryo:1.04",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.thinkaurelius.titan:titan-core:0.3.0",
+    "coordinatesV2": "com.thinkaurelius.titan:titan-core:0.2.1",
+    "caller": "|java+method:///com/thinkaurelius/titan/graphdb/database/serialize/kryo/KryoDataOutput/writeObjectNotNull(java.lang.Object)|",
+    "called": "|java+method:///com/esotericsoftware/kryo/ObjectBuffer/writeObjectData(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///com/esotericsoftware/kryo/ObjectBuffer/writeObjectData(java.lang.Object)|",
+      "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean,java.lang.Object)|",
+      "|java+method:///com/thinkaurelius/titan/graphdb/database/serialize/kryo/KryoDataOutput/append(byte%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///com/thinkaurelius/titan/graphdb/database/serialize/kryo/KryoSerializer/isValidObject(com.esotericsoftware.kryo.Kryo,java.lang.Object)|",
+      "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean,java.lang.Object)|",
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object)|",
+      "|java+method:///com/esotericsoftware/kryo/Kryo/writeObject(com.esotericsoftware.kryo.io.Output,java.lang.Object)|"
+    ],
+    "affectedLib": "com.googlecode:kryo:1.04",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.thinkaurelius.titan:titan-core:0.2.1",
+    "coordinatesV2": "com.thinkaurelius.titan:titan-core:0.3.0",
+    "caller": "|java+method:///com/thinkaurelius/titan/graphdb/database/serialize/kryo/KryoSerializer/readObjectNotNull(java.nio.ByteBuffer,java.lang.Class)|",
+    "called": "|java+method:///com/esotericsoftware/kryo/Kryo/readObject(com.esotericsoftware.kryo.io.Input,java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///com/esotericsoftware/kryo/Kryo/readObjectData(java.nio.ByteBuffer,java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/thinkaurelius/titan/graphdb/database/serialize/kryo/KryoSerializer/getKryo()|",
+      "|java+method:///com/thinkaurelius/titan/graphdb/database/serialize/kryo/KryoSerializer/updateBBPosition(com.esotericsoftware.kryo.io.Input,java.nio.ByteBuffer)|",
+      "|java+method:///com/esotericsoftware/kryo/Kryo/readObject(com.esotericsoftware.kryo.io.Input,java.lang.Class)|",
+      "|java+method:///com/thinkaurelius/titan/graphdb/database/serialize/kryo/KryoSerializer/getInput(java.nio.ByteBuffer)|"
+    ],
+    "affectedLib": "com.esotericsoftware.kryo:kryo:2.21",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.thinkaurelius.titan:titan-core:0.2.1",
+    "coordinatesV2": "com.thinkaurelius.titan:titan-core:0.3.0",
+    "caller": "|java+method:///com/thinkaurelius/titan/graphdb/database/serialize/kryo/KryoDataOutput/putInt(int)|",
+    "called": "|java+method:///com/esotericsoftware/kryo/io/Output/writeInt(int)|",
+    "v1Body": [
+      "|java+method:///com/thinkaurelius/titan/graphdb/database/serialize/kryo/KryoDataOutput/ensureCapacity(int)|",
+      "|java+method:///java/nio/ByteBuffer/putInt(int)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/esotericsoftware/kryo/io/Output/writeInt(int)|"
+    ],
+    "affectedLib": "com.esotericsoftware.kryo:kryo:2.21",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.thinkaurelius.titan:titan-core:0.2.1",
+    "coordinatesV2": "com.thinkaurelius.titan:titan-core:0.3.0",
+    "caller": "|java+method:///com/thinkaurelius/titan/graphdb/database/serialize/kryo/KryoDataOutput/putShort(short)|",
+    "called": "|java+method:///com/esotericsoftware/kryo/io/Output/writeShort(int)|",
+    "v1Body": [
+      "|java+method:///java/nio/ByteBuffer/putShort(short)|",
+      "|java+method:///com/thinkaurelius/titan/graphdb/database/serialize/kryo/KryoDataOutput/ensureCapacity(int)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/esotericsoftware/kryo/io/Output/writeShort(int)|"
+    ],
+    "affectedLib": "com.esotericsoftware.kryo:kryo:2.21",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.thinkaurelius.titan:titan-core:0.2.1",
+    "coordinatesV2": "com.thinkaurelius.titan:titan-core:0.3.0",
+    "caller": "|java+method:///com/thinkaurelius/titan/graphdb/database/serialize/kryo/KryoDataOutput/writeClassAndObject(java.lang.Object)|",
+    "called": "|java+method:///com/esotericsoftware/kryo/Kryo/writeClassAndObject(com.esotericsoftware.kryo.io.Output,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///com/esotericsoftware/kryo/ObjectBuffer/writeClassAndObject(java.lang.Object)|",
+      "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean,java.lang.Object)|",
+      "|java+method:///com/thinkaurelius/titan/graphdb/database/serialize/kryo/KryoDataOutput/append(byte%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///com/thinkaurelius/titan/graphdb/database/serialize/kryo/KryoSerializer/isValidObject(com.esotericsoftware.kryo.Kryo,java.lang.Object)|",
+      "|java+method:///com/esotericsoftware/kryo/Kryo/writeClassAndObject(com.esotericsoftware.kryo.io.Output,java.lang.Object)|",
+      "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean,java.lang.Object)|"
+    ],
+    "affectedLib": "com.esotericsoftware.kryo:kryo:2.21",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.thinkaurelius.titan:titan-core:0.2.1",
+    "coordinatesV2": "com.thinkaurelius.titan:titan-core:0.3.0",
+    "caller": "|java+method:///com/thinkaurelius/titan/graphdb/database/serialize/kryo/KryoSerializer/getDataOutput(int,boolean)|",
+    "called": "|java+constructor:///com/esotericsoftware/kryo/io/Output/Output(int,int)|",
+    "v1Body": [
+      "|java+constructor:///com/thinkaurelius/titan/graphdb/database/serialize/kryo/KryoDataOutput/KryoDataOutput(int,com.esotericsoftware.kryo.Kryo)|",
+      "|java+constructor:///com/thinkaurelius/titan/graphdb/database/serialize/kryo/KryoDataOutput/KryoDataOutput(int)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/thinkaurelius/titan/graphdb/database/serialize/kryo/KryoDataOutput/KryoDataOutput(com.esotericsoftware.kryo.io.Output)|",
+      "|java+constructor:///com/esotericsoftware/kryo/io/Output/Output(int,int)|",
+      "|java+constructor:///com/thinkaurelius/titan/graphdb/database/serialize/kryo/KryoDataOutput/KryoDataOutput(com.esotericsoftware.kryo.io.Output,com.thinkaurelius.titan.graphdb.database.serialize.kryo.KryoSerializer)|"
+    ],
+    "affectedLib": "com.esotericsoftware.kryo:kryo:2.21",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.thinkaurelius.titan:titan-core:0.2.1",
+    "coordinatesV2": "com.thinkaurelius.titan:titan-core:0.3.0",
+    "caller": "|java+method:///com/thinkaurelius/titan/graphdb/database/serialize/kryo/KryoDataOutput/putLong(long)|",
+    "called": "|java+method:///com/esotericsoftware/kryo/io/Output/writeLong(long)|",
+    "v1Body": [
+      "|java+method:///java/nio/ByteBuffer/putLong(long)|",
+      "|java+method:///com/thinkaurelius/titan/graphdb/database/serialize/kryo/KryoDataOutput/ensureCapacity(int)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/esotericsoftware/kryo/io/Output/writeLong(long)|"
+    ],
+    "affectedLib": "com.esotericsoftware.kryo:kryo:2.21",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.thinkaurelius.titan:titan-core:0.2.1",
+    "coordinatesV2": "com.thinkaurelius.titan:titan-core:0.3.0",
+    "caller": "|java+method:///com/thinkaurelius/titan/graphdb/database/serialize/kryo/KryoDataOutput/putByte(byte)|",
+    "called": "|java+method:///com/esotericsoftware/kryo/io/Output/writeByte(byte)|",
+    "v1Body": [
+      "|java+method:///java/nio/ByteBuffer/put(byte)|",
+      "|java+method:///com/thinkaurelius/titan/graphdb/database/serialize/kryo/KryoDataOutput/ensureCapacity(int)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/esotericsoftware/kryo/io/Output/writeByte(byte)|"
+    ],
+    "affectedLib": "com.esotericsoftware.kryo:kryo:2.21",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.thinkaurelius.titan:titan-core:0.2.1",
+    "coordinatesV2": "com.thinkaurelius.titan:titan-core:0.3.0",
+    "caller": "|java+method:///com/thinkaurelius/titan/graphdb/database/serialize/kryo/KryoDataOutput/writeObjectNotNull(java.lang.Object)|",
+    "called": "|java+method:///com/esotericsoftware/kryo/Kryo/writeObject(com.esotericsoftware.kryo.io.Output,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///com/esotericsoftware/kryo/ObjectBuffer/writeObjectData(java.lang.Object)|",
+      "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean,java.lang.Object)|",
+      "|java+method:///com/thinkaurelius/titan/graphdb/database/serialize/kryo/KryoDataOutput/append(byte%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///com/thinkaurelius/titan/graphdb/database/serialize/kryo/KryoSerializer/isValidObject(com.esotericsoftware.kryo.Kryo,java.lang.Object)|",
+      "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean,java.lang.Object)|",
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object)|",
+      "|java+method:///com/esotericsoftware/kryo/Kryo/writeObject(com.esotericsoftware.kryo.io.Output,java.lang.Object)|"
+    ],
+    "affectedLib": "com.esotericsoftware.kryo:kryo:2.21",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.thinkaurelius.titan:titan-core:0.2.1",
+    "coordinatesV2": "com.thinkaurelius.titan:titan-core:0.3.0",
+    "caller": "|java+method:///com/thinkaurelius/titan/graphdb/types/system/SystemTypeManager/getSystemEdgeType(long)|",
+    "called": "|java+method:///com/google/common/collect/ImmutableMap$Builder/build()|",
+    "v1Body": [
+      "|java+method:///com/google/common/collect/ImmutableMap/builder()|",
+      "|java+method:///com/thinkaurelius/titan/graphdb/types/system/SystemType/getID()|",
+      "|java+method:///com/thinkaurelius/titan/graphdb/types/system/SystemLabel/values()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///com/google/common/collect/ImmutableMap$Builder/build()|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+method:///com/google/common/collect/ImmutableMap$Builder/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/lang/StringBuilder/append(long)|",
+      "|java+method:///java/lang/Iterable/iterator()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///com/thinkaurelius/titan/graphdb/types/system/SystemKey/values()|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/common/collect/ImmutableMap/builder()|",
+      "|java+method:///com/thinkaurelius/titan/graphdb/types/system/SystemType/getID()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///com/google/common/collect/ImmutableMap$Builder/build()|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+method:///com/google/common/collect/ImmutableMap$Builder/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/lang/StringBuilder/append(long)|",
+      "|java+method:///java/lang/Iterable/iterator()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///com/thinkaurelius/titan/graphdb/types/system/SystemKey/values()|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "affectedLib": "com.google.guava:guava:13.0.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.thinkaurelius.titan:titan-core:0.2.1",
+    "coordinatesV2": "com.thinkaurelius.titan:titan-core:0.3.0",
+    "caller": "|java+method:///com/thinkaurelius/titan/graphdb/types/StandardTypeMaker/group(com.thinkaurelius.titan.core.TypeGroup)|",
+    "called": "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///com/thinkaurelius/titan/graphdb/types/StandardTypeMaker/group(com.thinkaurelius.titan.core.TypeGroup)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean,java.lang.Object)|",
+      "|java+method:///com/thinkaurelius/titan/graphdb/types/StandardTypeMaker/group(com.thinkaurelius.titan.core.TypeGroup)|"
+    ],
+    "affectedLib": "com.google.guava:guava:13.0.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.thinkaurelius.titan:titan-core:0.2.1",
+    "coordinatesV2": "com.thinkaurelius.titan:titan-core:0.3.0",
+    "caller": "|java+constructor:///com/thinkaurelius/titan/graphdb/configuration/RegisteredAttributeClass/RegisteredAttributeClass(java.lang.Class,com.thinkaurelius.titan.core.AttributeSerializer,int)|",
+    "called": "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean,java.lang.String,java.lang.Object%5B%5D)|",
+    "v1Body": [
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "com.google.guava:guava:13.0.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.thinkaurelius.titan:titan-core:0.2.1",
+    "coordinatesV2": "com.thinkaurelius.titan:titan-core:0.3.0",
+    "caller": "|java+method:///com/thinkaurelius/titan/graphdb/types/StandardTypeMaker/makeEdgeLabel()|",
+    "called": "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///com/thinkaurelius/titan/graphdb/types/StandardTypeMaker/checkGeneralArguments()|",
+      "|java+method:///com/thinkaurelius/titan/graphdb/types/manager/TypeManager/createEdgeLabel(com.thinkaurelius.titan.graphdb.transaction.InternalTitanTransaction,java.lang.String,com.thinkaurelius.titan.graphdb.types.TypeCategory,com.thinkaurelius.titan.graphdb.types.Directionality,com.thinkaurelius.titan.graphdb.types.TypeVisibility,com.thinkaurelius.titan.graphdb.types.FunctionalType,com.thinkaurelius.titan.core.TitanType%5B%5D,com.thinkaurelius.titan.core.TitanType%5B%5D,com.thinkaurelius.titan.core.TypeGroup)|",
+      "|java+method:///com/thinkaurelius/titan/graphdb/types/StandardTypeMaker/checkSignature(java.util.List)|",
+      "|java+method:///com/thinkaurelius/titan/graphdb/types/StandardTypeMaker/checkPrimarySignature(java.util.List)|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/thinkaurelius/titan/graphdb/types/StandardTypeMaker/checkGeneralArguments()|",
+      "|java+method:///com/thinkaurelius/titan/graphdb/types/StandardTypeMaker/checkPrimaryKey(java.util.List)|",
+      "|java+method:///java/util/Set/isEmpty()|",
+      "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean,java.lang.Object)|",
+      "|java+method:///com/thinkaurelius/titan/graphdb/types/StandardTypeMaker/checkSignature(java.util.List)|",
+      "|java+method:///com/thinkaurelius/titan/graphdb/transaction/StandardTitanTx/makeEdgeLabel(com.thinkaurelius.titan.graphdb.types.EdgeLabelDefinition)|",
+      "|java+method:///com/thinkaurelius/titan/graphdb/relations/EdgeDirection/position(com.tinkerpop.blueprints.Direction)|",
+      "|java+constructor:///com/thinkaurelius/titan/graphdb/types/StandardLabelDefinition/StandardLabelDefinition(java.lang.String,com.thinkaurelius.titan.core.TypeGroup,boolean%5B%5D,boolean%5B%5D,boolean%5B%5D,boolean,boolean,long%5B%5D,long%5B%5D,boolean)|"
+    ],
+    "affectedLib": "com.google.guava:guava:13.0.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.thinkaurelius.titan:titan-core:0.2.1",
+    "coordinatesV2": "com.thinkaurelius.titan:titan-core:0.3.0",
+    "caller": "|java+method:///com/thinkaurelius/titan/diskstorage/idmanagement/TransactionalIDManager/getIDBlock(int)|",
+    "called": "|java+method:///com/google/common/collect/ImmutableList/of(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///com/thinkaurelius/titan/diskstorage/idmanagement/TransactionalIDManager/getPartitionKey(int)|",
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+method:///com/thinkaurelius/titan/diskstorage/keycolumnvalue/StoreTransaction/commit()|",
+      "|java+method:///com/thinkaurelius/titan/diskstorage/keycolumnvalue/StoreTransaction/abort()|",
+      "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean,java.lang.Object)|",
+      "|java+method:///com/thinkaurelius/titan/diskstorage/idmanagement/TransactionalIDManager/getBlockSize(int)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/System/currentTimeMillis()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///com/thinkaurelius/titan/diskstorage/idmanagement/TransactionalIDManager/getCurrentID(java.nio.ByteBuffer,com.thinkaurelius.titan.diskstorage.keycolumnvalue.StoreTransaction)|",
+      "|java+constructor:///com/thinkaurelius/titan/diskstorage/keycolumnvalue/Entry/Entry(java.nio.ByteBuffer,java.nio.ByteBuffer)|",
+      "|java+method:///com/thinkaurelius/titan/diskstorage/util/ByteBufferUtil/getLongByteBuffer(long)|",
+      "|java+method:///com/thinkaurelius/titan/diskstorage/keycolumnvalue/StoreManager/beginTransaction(com.thinkaurelius.titan.diskstorage.keycolumnvalue.ConsistencyLevel)|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///com/thinkaurelius/titan/diskstorage/keycolumnvalue/KeyColumnValueStore/mutate(java.nio.ByteBuffer,java.util.List,java.util.List,com.thinkaurelius.titan.diskstorage.keycolumnvalue.StoreTransaction)|",
+      "|java+constructor:///com/thinkaurelius/titan/diskstorage/locking/TemporaryLockingException/TemporaryLockingException(java.lang.String)|",
+      "|java+method:///com/thinkaurelius/titan/diskstorage/util/TimeUtility/sleepUntil(long,org.slf4j.Logger)|",
+      "|java+method:///com/google/common/collect/ImmutableList/of(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/thinkaurelius/titan/diskstorage/idmanagement/TransactionalIDManager/getPartitionKey(int)|",
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+method:///com/thinkaurelius/titan/diskstorage/keycolumnvalue/StoreTransaction/commit()|",
+      "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean,java.lang.Object)|",
+      "|java+method:///com/thinkaurelius/titan/diskstorage/idmanagement/TransactionalIDManager/getBlockSize(int)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///com/thinkaurelius/titan/diskstorage/idmanagement/TransactionalIDManager/getCurrentID(java.nio.ByteBuffer,com.thinkaurelius.titan.diskstorage.keycolumnvalue.StoreTransaction)|",
+      "|java+constructor:///com/thinkaurelius/titan/diskstorage/keycolumnvalue/Entry/Entry(java.nio.ByteBuffer,java.nio.ByteBuffer)|",
+      "|java+method:///com/thinkaurelius/titan/diskstorage/util/ByteBufferUtil/getLongByteBuffer(long)|",
+      "|java+method:///com/thinkaurelius/titan/diskstorage/keycolumnvalue/StoreManager/beginTransaction(com.thinkaurelius.titan.diskstorage.keycolumnvalue.ConsistencyLevel)|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///com/thinkaurelius/titan/diskstorage/keycolumnvalue/KeyColumnValueStore/mutate(java.nio.ByteBuffer,java.util.List,java.util.List,com.thinkaurelius.titan.diskstorage.keycolumnvalue.StoreTransaction)|",
+      "|java+constructor:///com/thinkaurelius/titan/diskstorage/locking/TemporaryLockingException/TemporaryLockingException(java.lang.String)|",
+      "|java+method:///com/thinkaurelius/titan/diskstorage/util/TimeUtility/sleepUntil(long,org.slf4j.Logger)|",
+      "|java+method:///com/google/common/collect/ImmutableList/of(java.lang.Object)|",
+      "|java+method:///com/thinkaurelius/titan/diskstorage/keycolumnvalue/StoreTransaction/rollback()|",
+      "|java+method:///java/lang/System/currentTimeMillis()|"
+    ],
+    "affectedLib": "com.google.guava:guava:13.0.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.thinkaurelius.titan:titan-core:0.2.1",
+    "coordinatesV2": "com.thinkaurelius.titan:titan-core:0.3.0",
+    "caller": "|java+method:///com/thinkaurelius/titan/diskstorage/idmanagement/ConsistentKeyIDManager/getIDBlock(int)|",
+    "called": "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///com/thinkaurelius/titan/diskstorage/idmanagement/ConsistentKeyIDManager/getBlockApplication(long)|",
+      "|java+constructor:///com/thinkaurelius/titan/diskstorage/keycolumnvalue/Entry/Entry(java.nio.ByteBuffer,java.nio.ByteBuffer)|",
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+method:///org/apache/commons/codec/binary/Hex/encodeHex(byte%5B%5D)|",
+      "|java+method:///com/thinkaurelius/titan/diskstorage/keycolumnvalue/StoreTransaction/commit()|",
+      "|java+method:///com/thinkaurelius/titan/diskstorage/util/TimeUtility/sleepUntil(long,org.slf4j.Logger)|",
+      "|java+method:///com/thinkaurelius/titan/diskstorage/idmanagement/ConsistentKeyIDManager/getBlockSize(int)|",
+      "|java+method:///com/thinkaurelius/titan/diskstorage/keycolumnvalue/StoreTransaction/abort()|",
+      "|java+method:///java/lang/StringBuilder/append(long)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///com/thinkaurelius/titan/diskstorage/PermanentStorageException/PermanentStorageException(java.lang.String)|",
+      "|java+method:///java/lang/System/currentTimeMillis()|",
+      "|java+constructor:///java/lang/AssertionError/AssertionError()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///com/thinkaurelius/titan/diskstorage/idmanagement/ConsistentKeyIDManager/getCurrentID(java.nio.ByteBuffer,com.thinkaurelius.titan.diskstorage.keycolumnvalue.StoreTransaction)|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///com/thinkaurelius/titan/diskstorage/idmanagement/ConsistentKeyIDManager/getBlockSlice(long)|",
+      "|java+method:///java/nio/ByteBuffer/equals(java.lang.Object)|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///com/thinkaurelius/titan/diskstorage/keycolumnvalue/StoreManager/beginTransaction(com.thinkaurelius.titan.diskstorage.keycolumnvalue.ConsistencyLevel)|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///java/lang/String/String(char%5B%5D)|",
+      "|java+method:///com/thinkaurelius/titan/diskstorage/idmanagement/ConsistentKeyIDManager/getPartitionKey(int)|",
+      "|java+method:///com/thinkaurelius/titan/diskstorage/keycolumnvalue/KeyColumnValueStore/mutate(java.nio.ByteBuffer,java.util.List,java.util.List,com.thinkaurelius.titan.diskstorage.keycolumnvalue.StoreTransaction)|",
+      "|java+method:///java/util/List/isEmpty()|",
+      "|java+method:///java/util/Arrays/asList(java.lang.Object%5B%5D)|",
+      "|java+constructor:///com/thinkaurelius/titan/diskstorage/locking/TemporaryLockingException/TemporaryLockingException(java.lang.String)|",
+      "|java+method:///com/thinkaurelius/titan/diskstorage/keycolumnvalue/KeyColumnValueStore/getSlice(java.nio.ByteBuffer,java.nio.ByteBuffer,java.nio.ByteBuffer,com.thinkaurelius.titan.diskstorage.keycolumnvalue.StoreTransaction)|",
+      "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean,java.lang.Object)|",
+      "|java+method:///com/thinkaurelius/titan/diskstorage/keycolumnvalue/Entry/getColumn()|",
+      "|java+method:///java/nio/ByteBuffer/remaining()|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///java/util/List/get(int)|",
+      "|java+constructor:///com/thinkaurelius/titan/diskstorage/TemporaryStorageException/TemporaryStorageException(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/isDebugEnabled()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/nio/ByteBuffer/allocate(int)|",
+      "|java+method:///com/thinkaurelius/titan/diskstorage/idmanagement/ConsistentKeyIDManager/getBlockApplication(long)|",
+      "|java+constructor:///com/thinkaurelius/titan/diskstorage/keycolumnvalue/Entry/Entry(java.nio.ByteBuffer,java.nio.ByteBuffer)|",
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+method:///org/apache/commons/codec/binary/Hex/encodeHex(byte%5B%5D)|",
+      "|java+method:///com/thinkaurelius/titan/diskstorage/keycolumnvalue/StoreTransaction/commit()|",
+      "|java+method:///com/thinkaurelius/titan/diskstorage/util/TimeUtility/sleepUntil(long,org.slf4j.Logger)|",
+      "|java+method:///com/thinkaurelius/titan/diskstorage/idmanagement/ConsistentKeyIDManager/getBlockSize(int)|",
+      "|java+method:///java/lang/StringBuilder/append(long)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///com/thinkaurelius/titan/diskstorage/PermanentStorageException/PermanentStorageException(java.lang.String)|",
+      "|java+constructor:///java/lang/AssertionError/AssertionError()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///com/thinkaurelius/titan/diskstorage/idmanagement/ConsistentKeyIDManager/getCurrentID(java.nio.ByteBuffer,com.thinkaurelius.titan.diskstorage.keycolumnvalue.StoreTransaction)|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///com/thinkaurelius/titan/diskstorage/idmanagement/ConsistentKeyIDManager/getBlockSlice(long)|",
+      "|java+method:///java/nio/ByteBuffer/equals(java.lang.Object)|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///com/thinkaurelius/titan/diskstorage/keycolumnvalue/StoreManager/beginTransaction(com.thinkaurelius.titan.diskstorage.keycolumnvalue.ConsistencyLevel)|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///java/lang/String/String(char%5B%5D)|",
+      "|java+method:///com/thinkaurelius/titan/diskstorage/idmanagement/ConsistentKeyIDManager/getPartitionKey(int)|",
+      "|java+method:///com/thinkaurelius/titan/diskstorage/keycolumnvalue/KeyColumnValueStore/mutate(java.nio.ByteBuffer,java.util.List,java.util.List,com.thinkaurelius.titan.diskstorage.keycolumnvalue.StoreTransaction)|",
+      "|java+method:///java/util/List/isEmpty()|",
+      "|java+method:///java/util/Arrays/asList(java.lang.Object%5B%5D)|",
+      "|java+constructor:///com/thinkaurelius/titan/diskstorage/locking/TemporaryLockingException/TemporaryLockingException(java.lang.String)|",
+      "|java+method:///com/thinkaurelius/titan/diskstorage/keycolumnvalue/KeyColumnValueStore/getSlice(com.thinkaurelius.titan.diskstorage.keycolumnvalue.KeySliceQuery,com.thinkaurelius.titan.diskstorage.keycolumnvalue.StoreTransaction)|",
+      "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean,java.lang.Object)|",
+      "|java+method:///com/thinkaurelius/titan/diskstorage/keycolumnvalue/Entry/getColumn()|",
+      "|java+method:///java/nio/ByteBuffer/remaining()|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///java/util/List/get(int)|",
+      "|java+method:///com/thinkaurelius/titan/diskstorage/keycolumnvalue/StoreTransaction/rollback()|",
+      "|java+method:///java/lang/System/currentTimeMillis()|",
+      "|java+constructor:///com/thinkaurelius/titan/diskstorage/TemporaryStorageException/TemporaryStorageException(java.lang.String)|",
+      "|java+constructor:///com/thinkaurelius/titan/diskstorage/keycolumnvalue/KeySliceQuery/KeySliceQuery(java.nio.ByteBuffer,java.nio.ByteBuffer,java.nio.ByteBuffer)|",
+      "|java+method:///org/slf4j/Logger/isDebugEnabled()|"
+    ],
+    "affectedLib": "com.google.guava:guava:13.0.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.thinkaurelius.titan:titan-core:0.2.1",
+    "coordinatesV2": "com.thinkaurelius.titan:titan-core:0.3.0",
+    "caller": "|java+initializer:///com/thinkaurelius/titan/graphdb/types/system/SystemTypeManager/SystemTypeManager$initializer|",
+    "called": "|java+method:///com/google/common/collect/ImmutableSet/of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///com/google/common/collect/ImmutableSet/of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///com/thinkaurelius/titan/graphdb/types/group/StandardTypeGroup/StandardTypeGroup(short,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/thinkaurelius/titan/graphdb/types/StandardTypeGroup/StandardTypeGroup(short,java.lang.String)|",
+      "|java+method:///com/google/common/collect/ImmutableSet/of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)|"
+    ],
+    "affectedLib": "com.google.guava:guava:13.0.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.thinkaurelius.titan:titan-core:0.2.1",
+    "coordinatesV2": "com.thinkaurelius.titan:titan-core:0.3.0",
+    "caller": "|java+method:///com/thinkaurelius/titan/graphdb/database/idassigner/VertexIDAssigner/setLocalPartitions()|",
+    "called": "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/nio/ByteBuffer/mark()|",
+      "|java+method:///java/nio/ByteBuffer/order(java.nio.ByteOrder)|",
+      "|java+method:///java/nio/ByteBuffer/reset()|",
+      "|java+method:///com/thinkaurelius/titan/graphdb/database/idassigner/placement/IDPlacementStrategy/setLocalPartitionBounds(int,int,int)|",
+      "|java+method:///java/nio/ByteBuffer/remaining()|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///java/nio/ByteBuffer/getInt()|",
+      "|java+method:///com/thinkaurelius/titan/diskstorage/IDAuthority/getLocalIDPartition()|",
+      "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/nio/ByteBuffer/mark()|",
+      "|java+method:///java/nio/ByteBuffer/order(java.nio.ByteOrder)|",
+      "|java+method:///java/nio/ByteBuffer/reset()|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///com/thinkaurelius/titan/graphdb/database/idassigner/placement/IDPlacementStrategy/setLocalPartitionBounds(int,int,int)|",
+      "|java+method:///java/nio/ByteBuffer/remaining()|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///java/nio/ByteBuffer/getInt()|",
+      "|java+method:///com/thinkaurelius/titan/diskstorage/IDAuthority/getLocalIDPartition()|",
+      "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|"
+    ],
+    "affectedLib": "com.google.guava:guava:13.0.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.thinkaurelius.titan:titan-core:0.2.1",
+    "coordinatesV2": "com.thinkaurelius.titan:titan-core:0.3.0",
+    "caller": "|java+constructor:///com/thinkaurelius/titan/graphdb/database/serialize/kryo/KryoSerializer/KryoSerializer(boolean)|",
+    "called": "|java+method:///com/google/common/cache/CacheBuilder/initialCapacity(int)|",
+    "v1Body": [
+      "|java+constructor:///com/esotericsoftware/kryo/Kryo/Kryo()|",
+      "|java+method:///com/thinkaurelius/titan/graphdb/database/serialize/kryo/KryoSerializer/registerClass(java.lang.Class)|",
+      "|java+method:///com/thinkaurelius/titan/graphdb/database/serialize/kryo/KryoSerializer/register(java.lang.Class,com.esotericsoftware.kryo.Serializer)|",
+      "|java+constructor:///com/esotericsoftware/kryo/serialize/ClassSerializer/ClassSerializer(com.esotericsoftware.kryo.Kryo)|",
+      "|java+method:///com/thinkaurelius/titan/graphdb/database/serialize/kryo/KryoSerializer/setRegistrationOptional(boolean)|",
+      "|java+method:///com/thinkaurelius/titan/graphdb/database/serialize/SerializerInitialization/initialize(com.thinkaurelius.titan.graphdb.database.serialize.Serializer)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/common/cache/CacheBuilder/newBuilder()|",
+      "|java+constructor:///com/thinkaurelius/titan/graphdb/database/serialize/kryo/KryoSerializer$1/KryoSerializer$1(com.thinkaurelius.titan.graphdb.database.serialize.kryo.KryoSerializer)|",
+      "|java+method:///com/thinkaurelius/titan/graphdb/database/serialize/SerializerInitialization/initialize(com.thinkaurelius.titan.graphdb.database.serialize.Serializer)|",
+      "|java+method:///com/google/common/cache/CacheBuilder/initialCapacity(int)|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+method:///com/google/common/cache/CacheBuilder/maximumSize(long)|",
+      "|java+method:///com/google/common/cache/CacheBuilder/build()|",
+      "|java+method:///com/google/common/cache/CacheBuilder/concurrencyLevel(int)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "com.google.guava:guava:13.0.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.thinkaurelius.titan:titan-core:0.2.1",
+    "coordinatesV2": "com.thinkaurelius.titan:titan-core:0.3.0",
+    "caller": "|java+method:///com/thinkaurelius/titan/diskstorage/Backend/getBufferStore(java.lang.String)|",
+    "called": "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean)|",
+    "v1Body": [
+      "|java+constructor:///com/thinkaurelius/titan/diskstorage/keycolumnvalue/BufferedKeyColumnValueStore/BufferedKeyColumnValueStore(com.thinkaurelius.titan.diskstorage.keycolumnvalue.KeyColumnValueStore,boolean)|",
+      "|java+method:///com/thinkaurelius/titan/diskstorage/keycolumnvalue/StoreManager/getFeatures()|",
+      "|java+method:///com/thinkaurelius/titan/diskstorage/keycolumnvalue/keyvalue/KeyValueStoreManager/openDatabase(java.lang.String)|",
+      "|java+method:///com/thinkaurelius/titan/diskstorage/keycolumnvalue/KeyColumnValueStoreManager/openDatabase(java.lang.String)|",
+      "|java+method:///com/thinkaurelius/titan/diskstorage/keycolumnvalue/keyvalue/KeyValueStoreManagerAdapter/wrapKeyValueStore(com.thinkaurelius.titan.diskstorage.keycolumnvalue.keyvalue.KeyValueStore,java.util.Map)|",
+      "|java+method:///com/thinkaurelius/titan/diskstorage/keycolumnvalue/StoreFeatures/supportsBatchMutation()|",
+      "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean)|",
+      "|java+constructor:///java/lang/AssertionError/AssertionError()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/thinkaurelius/titan/diskstorage/keycolumnvalue/BufferedKeyColumnValueStore/BufferedKeyColumnValueStore(com.thinkaurelius.titan.diskstorage.keycolumnvalue.KeyColumnValueStore,boolean)|",
+      "|java+method:///com/thinkaurelius/titan/diskstorage/keycolumnvalue/StoreManager/getFeatures()|",
+      "|java+method:///com/thinkaurelius/titan/diskstorage/keycolumnvalue/keyvalue/KeyValueStoreManager/openDatabase(java.lang.String)|",
+      "|java+method:///com/thinkaurelius/titan/diskstorage/keycolumnvalue/KeyColumnValueStoreManager/openDatabase(java.lang.String)|",
+      "|java+method:///com/thinkaurelius/titan/diskstorage/keycolumnvalue/keyvalue/KeyValueStoreManagerAdapter/wrapKeyValueStore(com.thinkaurelius.titan.diskstorage.keycolumnvalue.keyvalue.KeyValueStore,java.util.Map)|",
+      "|java+method:///com/thinkaurelius/titan/diskstorage/keycolumnvalue/StoreFeatures/supportsBatchMutation()|",
+      "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean)|",
+      "|java+constructor:///com/thinkaurelius/titan/diskstorage/keycolumnvalue/CachedKeyColumnValueStore/CachedKeyColumnValueStore(com.thinkaurelius.titan.diskstorage.keycolumnvalue.KeyColumnValueStore)|",
+      "|java+constructor:///java/lang/AssertionError/AssertionError()|"
+    ],
+    "affectedLib": "com.google.guava:guava:13.0.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.thinkaurelius.titan:titan-core:0.2.1",
+    "coordinatesV2": "com.thinkaurelius.titan:titan-core:0.3.0",
+    "caller": "|java+method:///com/thinkaurelius/titan/graphdb/database/serialize/kryo/KryoDataOutput/writeClassAndObject(java.lang.Object)|",
+    "called": "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean,java.lang.String,java.lang.Object%5B%5D)|",
+    "v1Body": [
+      "|java+method:///com/esotericsoftware/kryo/ObjectBuffer/writeClassAndObject(java.lang.Object)|",
+      "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean,java.lang.Object)|",
+      "|java+method:///com/thinkaurelius/titan/graphdb/database/serialize/kryo/KryoDataOutput/append(byte%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///com/thinkaurelius/titan/graphdb/database/serialize/kryo/KryoSerializer/isValidObject(com.esotericsoftware.kryo.Kryo,java.lang.Object)|",
+      "|java+method:///com/esotericsoftware/kryo/Kryo/writeClassAndObject(com.esotericsoftware.kryo.io.Output,java.lang.Object)|",
+      "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean,java.lang.Object)|"
+    ],
+    "affectedLib": "com.google.guava:guava:13.0.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.thinkaurelius.titan:titan-core:0.2.1",
+    "coordinatesV2": "com.thinkaurelius.titan:titan-core:0.3.0",
+    "caller": "|java+method:///com/thinkaurelius/titan/graphdb/database/serialize/SerializerInitialization/initialize(com.thinkaurelius.titan.graphdb.database.serialize.Serializer)|",
+    "called": "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean,java.lang.Object)|",
+    "v1Body": [
+      "|java+constructor:///com/thinkaurelius/titan/graphdb/database/serialize/attribute/FloatSerializer/FloatSerializer()|",
+      "|java+constructor:///com/thinkaurelius/titan/graphdb/database/serialize/attribute/IntegerSerializer/IntegerSerializer()|",
+      "|java+method:///com/thinkaurelius/titan/graphdb/database/serialize/Serializer/registerClass(java.lang.Class,com.thinkaurelius.titan.core.AttributeSerializer)|",
+      "|java+method:///com/thinkaurelius/titan/graphdb/database/serialize/Serializer/registerClass(java.lang.Class)|",
+      "|java+constructor:///com/thinkaurelius/titan/graphdb/database/serialize/attribute/LongSerializer/LongSerializer()|",
+      "|java+constructor:///com/thinkaurelius/titan/graphdb/database/serialize/attribute/DoubleSerializer/DoubleSerializer()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/thinkaurelius/titan/graphdb/database/serialize/attribute/FloatSerializer/FloatSerializer()|",
+      "|java+constructor:///com/thinkaurelius/titan/graphdb/database/serialize/attribute/IntegerSerializer/IntegerSerializer()|",
+      "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean,java.lang.Object)|",
+      "|java+method:///com/thinkaurelius/titan/graphdb/database/serialize/Serializer/registerClass(java.lang.Class,com.thinkaurelius.titan.core.AttributeSerializer,int)|",
+      "|java+method:///com/thinkaurelius/titan/graphdb/database/serialize/Serializer/registerClass(java.lang.Class,int)|",
+      "|java+constructor:///com/thinkaurelius/titan/graphdb/database/serialize/attribute/LongSerializer/LongSerializer()|",
+      "|java+constructor:///com/thinkaurelius/titan/graphdb/database/serialize/attribute/DoubleSerializer/DoubleSerializer()|",
+      "|java+constructor:///com/thinkaurelius/titan/graphdb/database/serialize/attribute/DateSerializer/DateSerializer()|"
+    ],
+    "affectedLib": "com.google.guava:guava:13.0.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.thinkaurelius.titan:titan-core:0.2.1",
+    "coordinatesV2": "com.thinkaurelius.titan:titan-core:0.3.0",
+    "caller": "|java+method:///com/thinkaurelius/titan/graphdb/database/idassigner/VertexIDAssigner/assignIDs(java.lang.Iterable)|",
+    "called": "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean)|",
+    "v1Body": [
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///java/lang/Iterable/iterator()|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///com/thinkaurelius/titan/graphdb/database/idassigner/placement/IDPlacementStrategy/supportsBulkPlacement()|",
+      "|java+method:///java/util/Map/entrySet()|",
+      "|java+method:///com/thinkaurelius/titan/graphdb/database/idassigner/VertexIDAssigner/assignID(com.thinkaurelius.titan.graphdb.vertices.InternalTitanVertex,long)|",
+      "|java+method:///com/thinkaurelius/titan/graphdb/relations/InternalRelation/hasID()|",
+      "|java+method:///com/thinkaurelius/titan/graphdb/vertices/InternalTitanVertex/getID()|",
+      "|java+method:///java/util/Map$Entry/getKey()|",
+      "|java+method:///java/util/Map/isEmpty()|",
+      "|java+method:///com/thinkaurelius/titan/graphdb/vertices/InternalTitanVertex/hasID()|",
+      "|java+method:///com/thinkaurelius/titan/graphdb/idmanagement/IDManager/getPartitionID(long)|",
+      "|java+method:///java/util/Map/size()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+method:///com/thinkaurelius/titan/graphdb/relations/InternalRelation/getVertex(int)|",
+      "|java+method:///com/thinkaurelius/titan/graphdb/relations/InternalRelation/getArity()|",
+      "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean)|",
+      "|java+method:///org/slf4j/Logger/trace(java.lang.String,java.lang.Object)|",
+      "|java+method:///java/util/Set/iterator()|",
+      "|java+method:///java/util/Map$Entry/getValue()|",
+      "|java+constructor:///com/thinkaurelius/titan/graphdb/database/idassigner/IDPoolExhaustedException/IDPoolExhaustedException(java.lang.String)|",
+      "|java+method:///com/thinkaurelius/titan/graphdb/database/idassigner/VertexIDAssigner/assignID(com.thinkaurelius.titan.graphdb.vertices.InternalTitanVertex)|",
+      "|java+method:///com/thinkaurelius/titan/graphdb/database/idassigner/placement/IDPlacementStrategy/getPartitions(java.util.Map)|",
+      "|java+method:///com/thinkaurelius/titan/graphdb/database/idassigner/placement/PartitionAssignment/getPartitionID()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///java/util/Map$Entry/getKey()|",
+      "|java+method:///java/util/Map/isEmpty()|",
+      "|java+method:///java/lang/Iterable/iterator()|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///com/thinkaurelius/titan/graphdb/database/idassigner/placement/IDPlacementStrategy/supportsBulkPlacement()|",
+      "|java+method:///java/util/Map/entrySet()|",
+      "|java+method:///com/thinkaurelius/titan/graphdb/internal/InternalVertex/getID()|",
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///com/thinkaurelius/titan/graphdb/internal/InternalVertex/hasId()|",
+      "|java+method:///com/thinkaurelius/titan/graphdb/idmanagement/IDManager/getPartitionID(long)|",
+      "|java+method:///com/thinkaurelius/titan/graphdb/database/idassigner/VertexIDAssigner/assignID(com.thinkaurelius.titan.graphdb.internal.InternalElement)|",
+      "|java+method:///java/util/Map/size()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+method:///com/thinkaurelius/titan/graphdb/database/idassigner/VertexIDAssigner/assignID(com.thinkaurelius.titan.graphdb.internal.InternalElement,long)|",
+      "|java+method:///com/thinkaurelius/titan/graphdb/internal/InternalRelation/getArity()|",
+      "|java+method:///com/thinkaurelius/titan/graphdb/internal/InternalRelation/getVertex(int)|",
+      "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean)|",
+      "|java+method:///org/slf4j/Logger/trace(java.lang.String,java.lang.Object)|",
+      "|java+method:///java/util/Set/iterator()|",
+      "|java+method:///java/util/Map$Entry/getValue()|",
+      "|java+constructor:///com/thinkaurelius/titan/graphdb/database/idassigner/IDPoolExhaustedException/IDPoolExhaustedException(java.lang.String)|",
+      "|java+method:///com/thinkaurelius/titan/graphdb/database/idassigner/placement/IDPlacementStrategy/getPartitions(java.util.Map)|",
+      "|java+method:///com/thinkaurelius/titan/graphdb/internal/InternalRelation/hasId()|",
+      "|java+method:///com/thinkaurelius/titan/graphdb/database/idassigner/placement/PartitionAssignment/getPartitionID()|"
+    ],
+    "affectedLib": "com.google.guava:guava:13.0.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.thinkaurelius.titan:titan-core:0.2.1",
+    "coordinatesV2": "com.thinkaurelius.titan:titan-core:0.3.0",
+    "caller": "|java+method:///com/thinkaurelius/titan/graphdb/types/system/SystemKey/values()|",
+    "called": "|java+method:///com/google/common/collect/ImmutableList/of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///com/google/common/collect/ImmutableList/of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/common/collect/ImmutableList/of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)|"
+    ],
+    "affectedLib": "com.google.guava:guava:13.0.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.thinkaurelius.titan:titan-core:0.2.1",
+    "coordinatesV2": "com.thinkaurelius.titan:titan-core:0.3.0",
+    "caller": "|java+constructor:///com/thinkaurelius/titan/tinkerpop/rexster/RexsterTitanServer/RexsterTitanServer(org.apache.commons.configuration.XMLConfiguration,org.apache.commons.configuration.Configuration)|",
+    "called": "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/apache/commons/configuration/XMLConfiguration/addProperty(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/apache/commons/configuration/Configuration/getKeys()|",
+      "|java+constructor:///com/tinkerpop/rexster/server/RexProRexsterServer/RexProRexsterServer(org.apache.commons.configuration.XMLConfiguration)|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object)|",
+      "|java+method:///org/apache/commons/configuration/XMLConfiguration/subset(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/apache/commons/configuration/XMLConfiguration/setProperty(java.lang.String,java.lang.Object)|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object)|",
+      "|java+method:///org/apache/commons/configuration/XMLConfiguration/subset(java.lang.String)|",
+      "|java+method:///java/lang/Boolean/valueOf(boolean)|",
+      "|java+method:///org/apache/commons/configuration/Configuration/getKeys()|",
+      "|java+constructor:///com/tinkerpop/rexster/server/HttpRexsterServer/HttpRexsterServer(org.apache.commons.configuration.XMLConfiguration)|",
+      "|java+constructor:///com/tinkerpop/rexster/server/RexProRexsterServer/RexProRexsterServer(org.apache.commons.configuration.XMLConfiguration)|"
+    ],
+    "affectedLib": "com.google.guava:guava:13.0.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.thinkaurelius.titan:titan-core:0.2.1",
+    "coordinatesV2": "com.thinkaurelius.titan:titan-core:0.3.0",
+    "caller": "|java+method:///com/thinkaurelius/titan/graphdb/types/StandardTypeMaker/checkGeneralArguments()|",
+    "called": "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean,java.lang.String,java.lang.Object%5B%5D)|",
+    "v1Body": [
+      "|java+method:///java/lang/String/toLowerCase()|",
+      "|java+method:///com/google/common/collect/Sets/newHashSet(java.lang.Iterable)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/util/Set/retainAll(java.util.Collection)|",
+      "|java+method:///java/util/Set/isEmpty()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///com/thinkaurelius/titan/graphdb/types/StandardTypeMaker/checkPrimarySignature(java.util.List)|",
+      "|java+method:///java/lang/String/startsWith(java.lang.String)|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/util/List/isEmpty()|",
+      "|java+method:///java/lang/String/length()|",
+      "|java+method:///com/thinkaurelius/titan/graphdb/types/StandardTypeMaker/checkSignature(java.util.List)|",
+      "|java+method:///java/util/Set/contains(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/common/collect/Sets$SetView/isEmpty()|",
+      "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///java/lang/String/toLowerCase()|",
+      "|java+method:///com/google/common/collect/Sets/newHashSet(java.lang.Iterable)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean,java.lang.Object)|",
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/lang/String/startsWith(java.lang.String)|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|",
+      "|java+method:///com/thinkaurelius/titan/graphdb/types/StandardTypeMaker/checkPrimaryKey(java.util.List)|",
+      "|java+method:///java/lang/String/indexOf(int)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/util/List/isEmpty()|",
+      "|java+method:///com/google/common/collect/Sets/intersection(java.util.Set,java.util.Set)|",
+      "|java+method:///com/thinkaurelius/titan/graphdb/types/StandardTypeMaker/checkSignature(java.util.List)|",
+      "|java+method:///org/apache/commons/lang/StringUtils/isNotBlank(java.lang.String)|",
+      "|java+method:///java/util/Set/contains(java.lang.Object)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/Character/valueOf(char)|"
+    ],
+    "affectedLib": "com.google.guava:guava:13.0.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.thinkaurelius.titan:titan-core:0.2.1",
+    "coordinatesV2": "com.thinkaurelius.titan:titan-core:0.3.0",
+    "caller": "|java+method:///com/thinkaurelius/titan/diskstorage/keycolumnvalue/BufferTransaction/mutate(java.lang.String,java.nio.ByteBuffer,java.util.List,java.util.List)|",
+    "called": "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///com/thinkaurelius/titan/diskstorage/keycolumnvalue/Mutation/merge(com.thinkaurelius.titan.diskstorage.keycolumnvalue.Mutation)|",
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object)|",
+      "|java+method:///com/thinkaurelius/titan/diskstorage/keycolumnvalue/BufferTransaction/flushInternal()|",
+      "|java+method:///java/util/List/isEmpty()|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+method:///java/util/List/size()|",
+      "|java+constructor:///com/thinkaurelius/titan/diskstorage/keycolumnvalue/Mutation/Mutation(java.util.List,java.util.List)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/util/List/size()|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object)|",
+      "|java+method:///com/thinkaurelius/titan/diskstorage/keycolumnvalue/KCVMutation/merge(com.thinkaurelius.titan.diskstorage.Mutation)|",
+      "|java+method:///com/thinkaurelius/titan/diskstorage/keycolumnvalue/BufferTransaction/flushInternal()|",
+      "|java+constructor:///com/thinkaurelius/titan/diskstorage/keycolumnvalue/KCVMutation/KCVMutation(java.util.List,java.util.List)|",
+      "|java+method:///java/util/List/isEmpty()|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|"
+    ],
+    "affectedLib": "com.google.guava:guava:13.0.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.thinkaurelius.titan:titan-core:0.2.1",
+    "coordinatesV2": "com.thinkaurelius.titan:titan-core:0.3.0",
+    "caller": "|java+method:///com/thinkaurelius/titan/core/TypeGroup/of(int,java.lang.String)|",
+    "called": "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean,java.lang.Object)|",
+      "|java+constructor:///com/thinkaurelius/titan/graphdb/types/group/StandardTypeGroup/StandardTypeGroup(short,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/thinkaurelius/titan/graphdb/types/StandardTypeGroup/StandardTypeGroup(short,java.lang.String)|",
+      "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean,java.lang.Object)|"
+    ],
+    "affectedLib": "com.google.guava:guava:13.0.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.thinkaurelius.titan:titan-core:0.2.1",
+    "coordinatesV2": "com.thinkaurelius.titan:titan-core:0.3.0",
+    "caller": "|java+method:///com/thinkaurelius/titan/graphdb/blueprints/TitanBlueprintsTransaction/getIndexedKeys(java.lang.Class)|",
+    "called": "|java+method:///com/google/common/collect/Iterables/isEmpty(java.lang.Iterable)|",
+    "v1Body": [
+      "|java+method:///java/lang/Object/equals(java.lang.Object)|",
+      "|java+method:///com/thinkaurelius/titan/core/TitanKey/getName()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///com/thinkaurelius/titan/graphdb/blueprints/TitanBlueprintsTransaction/getVertices(com.thinkaurelius.titan.core.TitanKey,java.lang.Object)|",
+      "|java+method:///com/thinkaurelius/titan/core/TitanKey/hasIndex()|",
+      "|java+method:///com/google/common/collect/Sets/newHashSet()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/lang/Iterable/iterator()|",
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///java/util/HashSet/HashSet()|",
+      "|java+method:///java/util/Set/add(java.lang.Object)|",
+      "|java+constructor:///java/lang/AssertionError/AssertionError()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/thinkaurelius/titan/core/TitanKey/getName()|",
+      "|java+method:///com/thinkaurelius/titan/graphdb/blueprints/TitanBlueprintsTransaction/getVertices(com.thinkaurelius.titan.core.TitanKey,java.lang.Object)|",
+      "|java+method:///com/google/common/collect/Iterables/isEmpty(java.lang.Iterable)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean,java.lang.Object)|",
+      "|java+method:///java/lang/Iterable/iterator()|",
+      "|java+constructor:///java/util/HashSet/HashSet()|",
+      "|java+method:///java/util/Set/add(java.lang.Object)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///com/thinkaurelius/titan/core/TitanKey/getIndexes(java.lang.Class)|"
+    ],
+    "affectedLib": "com.google.guava:guava:13.0.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.thinkaurelius.titan:titan-core:0.2.1",
+    "coordinatesV2": "com.thinkaurelius.titan:titan-core:0.3.0",
+    "caller": "|java+method:///com/thinkaurelius/titan/graphdb/query/VertexLongList/add(com.thinkaurelius.titan.core.TitanVertex)|",
+    "called": "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean,java.lang.Object)|",
+    "v1Body": [
+      "|java+constructor:///com/thinkaurelius/titan/core/InvalidElementException/InvalidElementException(java.lang.String,com.thinkaurelius.titan.core.TitanVertex)|",
+      "|java+method:///cern/colt/list/AbstractLongList/size()|",
+      "|java+method:///com/thinkaurelius/titan/core/TitanVertex/getID()|",
+      "|java+method:///com/thinkaurelius/titan/core/TitanVertex/hasID()|",
+      "|java+method:///cern/colt/list/AbstractLongList/get(int)|",
+      "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean,java.lang.Object)|",
+      "|java+method:///cern/colt/list/AbstractLongList/add(long)|"
+    ],
+    "v2Body": [
+      "|java+method:///cern/colt/list/AbstractLongList/size()|",
+      "|java+method:///com/thinkaurelius/titan/core/TitanVertex/getID()|",
+      "|java+method:///cern/colt/list/AbstractLongList/get(int)|",
+      "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean,java.lang.Object)|",
+      "|java+method:///cern/colt/list/AbstractLongList/add(long)|"
+    ],
+    "affectedLib": "com.google.guava:guava:13.0.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.thinkaurelius.titan:titan-core:0.2.1",
+    "coordinatesV2": "com.thinkaurelius.titan:titan-core:0.3.0",
+    "caller": "|java+constructor:///com/thinkaurelius/titan/diskstorage/keycolumnvalue/Entry/Entry(java.nio.ByteBuffer,java.nio.ByteBuffer)|",
+    "called": "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object)|",
+    "v1Body": [
+      "|java+constructor:///java/lang/AssertionError/AssertionError()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "com.google.guava:guava:13.0.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.thinkaurelius.titan:titan-core:0.2.1",
+    "coordinatesV2": "com.thinkaurelius.titan:titan-core:0.3.0",
+    "caller": "|java+constructor:///com/thinkaurelius/titan/graphdb/database/idassigner/VertexIDAssigner/VertexIDAssigner(org.apache.commons.configuration.Configuration,com.thinkaurelius.titan.diskstorage.IDAuthority,com.thinkaurelius.titan.diskstorage.keycolumnvalue.StoreFeatures)|",
+    "called": "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean)|",
+    "v1Body": [
+      "|java+constructor:///com/thinkaurelius/titan/graphdb/database/idassigner/VertexIDAssigner$SimpleVertexIDBlockSizer/VertexIDAssigner$SimpleVertexIDBlockSizer(long)|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String)|",
+      "|java+method:///org/apache/commons/configuration/Configuration/getLong(java.lang.String,long)|",
+      "|java+method:///com/thinkaurelius/titan/diskstorage/IDAuthority/setIDBlockSizer(com.thinkaurelius.titan.graphdb.database.idassigner.IDBlockSizer)|",
+      "|java+method:///com/thinkaurelius/titan/diskstorage/keycolumnvalue/StoreFeatures/isDistributed()|",
+      "|java+method:///com/thinkaurelius/titan/graphdb/database/idassigner/VertexIDAssigner/setLocalPartitions()|",
+      "|java+constructor:///com/thinkaurelius/titan/graphdb/database/idassigner/placement/DefaultPlacementStrategy/DefaultPlacementStrategy(int)|",
+      "|java+method:///com/thinkaurelius/titan/graphdb/idmanagement/IDManager/getMaxPartitionID()|",
+      "|java+constructor:///com/thinkaurelius/titan/graphdb/idmanagement/IDManager/IDManager(long,long)|",
+      "|java+method:///com/thinkaurelius/titan/diskstorage/keycolumnvalue/StoreFeatures/isKeyOrdered()|",
+      "|java+method:///org/apache/commons/configuration/Configuration/getBoolean(java.lang.String,boolean)|",
+      "|java+constructor:///com/thinkaurelius/titan/graphdb/database/idassigner/placement/SimpleBulkPlacementStrategy/SimpleBulkPlacementStrategy(org.apache.commons.configuration.Configuration)|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///com/thinkaurelius/titan/diskstorage/keycolumnvalue/StoreFeatures/hasLocalKeyPartition()|",
+      "|java+constructor:///java/util/concurrent/locks/ReentrantReadWriteLock/ReentrantReadWriteLock()|",
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object)|",
+      "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean)|",
+      "|java+constructor:///cern/colt/map/OpenIntObjectHashMap/OpenIntObjectHashMap()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///com/thinkaurelius/titan/graphdb/database/idassigner/VertexIDAssigner$SimpleVertexIDBlockSizer/VertexIDAssigner$SimpleVertexIDBlockSizer(long)|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String)|",
+      "|java+method:///org/apache/commons/configuration/Configuration/getLong(java.lang.String,long)|",
+      "|java+method:///com/thinkaurelius/titan/diskstorage/IDAuthority/setIDBlockSizer(com.thinkaurelius.titan.graphdb.database.idassigner.IDBlockSizer)|",
+      "|java+method:///com/thinkaurelius/titan/diskstorage/keycolumnvalue/StoreFeatures/isDistributed()|",
+      "|java+method:///com/thinkaurelius/titan/graphdb/database/idassigner/VertexIDAssigner/setLocalPartitions()|",
+      "|java+constructor:///com/thinkaurelius/titan/graphdb/database/idassigner/placement/DefaultPlacementStrategy/DefaultPlacementStrategy(int)|",
+      "|java+method:///com/thinkaurelius/titan/graphdb/idmanagement/IDManager/getMaxPartitionID()|",
+      "|java+constructor:///com/thinkaurelius/titan/graphdb/idmanagement/IDManager/IDManager(long,long)|",
+      "|java+method:///com/thinkaurelius/titan/diskstorage/keycolumnvalue/StoreFeatures/isKeyOrdered()|",
+      "|java+method:///org/apache/commons/configuration/Configuration/getBoolean(java.lang.String,boolean)|",
+      "|java+constructor:///com/thinkaurelius/titan/graphdb/database/idassigner/placement/SimpleBulkPlacementStrategy/SimpleBulkPlacementStrategy(org.apache.commons.configuration.Configuration)|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///com/thinkaurelius/titan/diskstorage/keycolumnvalue/StoreFeatures/hasLocalKeyPartition()|",
+      "|java+constructor:///java/util/concurrent/locks/ReentrantReadWriteLock/ReentrantReadWriteLock()|",
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object)|",
+      "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean)|",
+      "|java+method:///java/lang/Boolean/valueOf(boolean)|",
+      "|java+constructor:///cern/colt/map/OpenIntObjectHashMap/OpenIntObjectHashMap()|"
+    ],
+    "affectedLib": "com.google.guava:guava:13.0.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.thinkaurelius.titan:titan-core:0.2.1",
+    "coordinatesV2": "com.thinkaurelius.titan:titan-core:0.3.0",
+    "caller": "|java+method:///com/thinkaurelius/titan/graphdb/types/StandardTypeMaker/checkSignature(java.util.List)|",
+    "called": "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean,java.lang.String,java.lang.Object%5B%5D)|",
+    "v1Body": [
+      "|java+method:///java/lang/Object/equals(java.lang.Object)|",
+      "|java+method:///com/thinkaurelius/titan/core/TitanType/isSimple()|",
+      "|java+method:///com/thinkaurelius/titan/core/TitanLabel/isUnidirected()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///com/thinkaurelius/titan/core/TitanType/isPropertyKey()|",
+      "|java+method:///java/util/List/size()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///com/thinkaurelius/titan/core/TitanType/isFunctional()|",
+      "|java+method:///java/util/List/get(int)|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|",
+      "|java+method:///com/thinkaurelius/titan/core/TitanKey/getDataType()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///com/thinkaurelius/titan/core/TitanType/isEdgeLabel()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Object/equals(java.lang.Object)|",
+      "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///com/thinkaurelius/titan/core/TitanType/isUnique(com.tinkerpop.blueprints.Direction)|",
+      "|java+method:///com/thinkaurelius/titan/core/TitanType/isPropertyKey()|",
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object)|",
+      "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean,java.lang.Object)|",
+      "|java+method:///java/util/HashSet/size()|",
+      "|java+method:///java/util/List/get(int)|",
+      "|java+method:///com/thinkaurelius/titan/core/TitanType/isEdgeLabel()|",
+      "|java+method:///com/google/common/collect/Sets/newHashSet(java.lang.Iterable)|",
+      "|java+method:///com/thinkaurelius/titan/core/TitanLabel/isUnidirected()|",
+      "|java+method:///com/thinkaurelius/titan/core/TitanType/getName()|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///com/thinkaurelius/titan/core/TitanType/getID()|",
+      "|java+method:///com/thinkaurelius/titan/core/TitanKey/getDataType()|"
+    ],
+    "affectedLib": "com.google.guava:guava:13.0.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.thinkaurelius.titan:titan-core:0.2.1",
+    "coordinatesV2": "com.thinkaurelius.titan:titan-core:0.3.0",
+    "caller": "|java+method:///com/thinkaurelius/titan/graphdb/relations/AttributeUtil/prepareAttribute(java.lang.Object,java.lang.Class)|",
+    "called": "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///java/lang/Integer/intValue()|",
+      "|java+method:///java/lang/Object/equals(java.lang.Object)|",
+      "|java+method:///java/lang/Double/valueOf(double)|",
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/lang/Float/floatValue()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Integer/intValue()|",
+      "|java+method:///java/lang/Number/floatValue()|",
+      "|java+method:///java/lang/Object/equals(java.lang.Object)|",
+      "|java+method:///java/lang/Number/doubleValue()|",
+      "|java+method:///java/lang/Float/valueOf(float)|",
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/lang/Double/valueOf(double)|",
+      "|java+method:///java/lang/Long/valueOf(long)|"
+    ],
+    "affectedLib": "com.google.guava:guava:13.0.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.thinkaurelius.titan:titan-core:0.2.1",
+    "coordinatesV2": "com.thinkaurelius.titan:titan-core:0.3.0",
+    "caller": "|java+method:///com/thinkaurelius/titan/graphdb/database/serialize/kryo/KryoDataOutput/writeObjectNotNull(java.lang.Object)|",
+    "called": "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean,java.lang.String,java.lang.Object%5B%5D)|",
+    "v1Body": [
+      "|java+method:///com/esotericsoftware/kryo/ObjectBuffer/writeObjectData(java.lang.Object)|",
+      "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean,java.lang.Object)|",
+      "|java+method:///com/thinkaurelius/titan/graphdb/database/serialize/kryo/KryoDataOutput/append(byte%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///com/thinkaurelius/titan/graphdb/database/serialize/kryo/KryoSerializer/isValidObject(com.esotericsoftware.kryo.Kryo,java.lang.Object)|",
+      "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean,java.lang.Object)|",
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object)|",
+      "|java+method:///com/esotericsoftware/kryo/Kryo/writeObject(com.esotericsoftware.kryo.io.Output,java.lang.Object)|"
+    ],
+    "affectedLib": "com.google.guava:guava:13.0.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.thinkaurelius.titan:titan-core:0.2.1",
+    "coordinatesV2": "com.thinkaurelius.titan:titan-core:0.3.0",
+    "caller": "|java+method:///com/thinkaurelius/titan/graphdb/types/StandardTypeMaker/makePropertyKey()|",
+    "called": "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///com/thinkaurelius/titan/graphdb/types/StandardTypeMaker/checkGeneralArguments()|",
+      "|java+method:///com/thinkaurelius/titan/graphdb/types/manager/TypeManager/createPropertyKey(com.thinkaurelius.titan.graphdb.transaction.InternalTitanTransaction,java.lang.String,com.thinkaurelius.titan.graphdb.types.TypeCategory,com.thinkaurelius.titan.graphdb.types.Directionality,com.thinkaurelius.titan.graphdb.types.TypeVisibility,com.thinkaurelius.titan.graphdb.types.FunctionalType,com.thinkaurelius.titan.core.TitanType%5B%5D,com.thinkaurelius.titan.core.TitanType%5B%5D,com.thinkaurelius.titan.core.TypeGroup,boolean,boolean,java.lang.Class)|",
+      "|java+method:///com/thinkaurelius/titan/graphdb/types/StandardTypeMaker/checkSignature(java.util.List)|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/thinkaurelius/titan/graphdb/transaction/StandardTitanTx/makePropertyKey(com.thinkaurelius.titan.graphdb.types.PropertyKeyDefinition)|",
+      "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean,java.lang.Object)|",
+      "|java+method:///com/thinkaurelius/titan/graphdb/types/StandardTypeMaker/checkPrimaryKey(java.util.List)|",
+      "|java+method:///com/thinkaurelius/titan/graphdb/relations/EdgeDirection/position(com.tinkerpop.blueprints.Direction)|",
+      "|java+constructor:///com/thinkaurelius/titan/graphdb/types/StandardKeyDefinition/StandardKeyDefinition(java.lang.String,com.thinkaurelius.titan.core.TypeGroup,boolean%5B%5D,boolean%5B%5D,boolean%5B%5D,boolean,boolean,long%5B%5D,long%5B%5D,com.thinkaurelius.titan.graphdb.types.IndexType%5B%5D,java.lang.Class)|",
+      "|java+method:///com/thinkaurelius/titan/graphdb/types/IndexType/of(java.lang.Class)|",
+      "|java+method:///com/thinkaurelius/titan/graphdb/types/StandardTypeMaker/checkIndexes(java.util.Set)|",
+      "|java+method:///com/thinkaurelius/titan/graphdb/types/StandardTypeMaker/checkGeneralArguments()|",
+      "|java+method:///com/thinkaurelius/titan/graphdb/types/StandardTypeMaker/checkSignature(java.util.List)|",
+      "|java+method:///java/util/Set/contains(java.lang.Object)|"
+    ],
+    "affectedLib": "com.google.guava:guava:13.0.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.thinkaurelius.titan:titan-core:0.2.1",
+    "coordinatesV2": "com.thinkaurelius.titan:titan-core:0.3.0",
+    "caller": "|java+constructor:///com/thinkaurelius/titan/diskstorage/Backend/Backend(org.apache.commons.configuration.Configuration)|",
+    "called": "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+method:///com/thinkaurelius/titan/diskstorage/keycolumnvalue/StoreManager/getFeatures()|",
+      "|java+method:///java/lang/Object/toString()|",
+      "|java+method:///com/thinkaurelius/titan/diskstorage/keycolumnvalue/StoreFeatures/supportsLocking()|",
+      "|java+method:///com/thinkaurelius/titan/diskstorage/keycolumnvalue/StoreFeatures/supportsConsistentKeyOperations()|",
+      "|java+method:///com/thinkaurelius/titan/diskstorage/keycolumnvalue/StoreFeatures/isDistributed()|",
+      "|java+method:///com/thinkaurelius/titan/diskstorage/keycolumnvalue/StoreFeatures/isKeyOrdered()|",
+      "|java+method:///org/apache/commons/configuration/Configuration/getInt(java.lang.String,int)|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+constructor:///com/thinkaurelius/titan/diskstorage/locking/consistentkey/ConsistentKeyLockConfiguration/ConsistentKeyLockConfiguration(org.apache.commons.configuration.Configuration,java.lang.String)|",
+      "|java+method:///com/thinkaurelius/titan/diskstorage/Backend/getStorageManager(org.apache.commons.configuration.Configuration)|",
+      "|java+method:///com/thinkaurelius/titan/diskstorage/keycolumnvalue/StoreFeatures/supportsBatchMutation()|",
+      "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+method:///com/thinkaurelius/titan/diskstorage/keycolumnvalue/StoreManager/getFeatures()|",
+      "|java+method:///java/lang/Object/toString()|",
+      "|java+method:///com/thinkaurelius/titan/diskstorage/keycolumnvalue/StoreFeatures/supportsLocking()|",
+      "|java+method:///com/thinkaurelius/titan/diskstorage/keycolumnvalue/StoreFeatures/supportsConsistentKeyOperations()|",
+      "|java+method:///com/thinkaurelius/titan/diskstorage/keycolumnvalue/StoreFeatures/isDistributed()|",
+      "|java+method:///com/thinkaurelius/titan/diskstorage/Backend/getIndexes(org.apache.commons.configuration.Configuration)|",
+      "|java+method:///com/thinkaurelius/titan/diskstorage/keycolumnvalue/StoreFeatures/isKeyOrdered()|",
+      "|java+method:///org/apache/commons/configuration/Configuration/getInt(java.lang.String,int)|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+constructor:///com/thinkaurelius/titan/diskstorage/locking/consistentkey/ConsistentKeyLockConfiguration/ConsistentKeyLockConfiguration(org.apache.commons.configuration.Configuration,java.lang.String)|",
+      "|java+method:///com/thinkaurelius/titan/diskstorage/Backend/getStorageManager(org.apache.commons.configuration.Configuration)|",
+      "|java+method:///com/thinkaurelius/titan/diskstorage/keycolumnvalue/StoreFeatures/supportsBatchMutation()|",
+      "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean,java.lang.Object)|"
+    ],
+    "affectedLib": "com.google.guava:guava:13.0.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.thinkaurelius.titan:titan-core:0.2.1",
+    "coordinatesV2": "com.thinkaurelius.titan:titan-core:0.3.0",
+    "caller": "|java+constructor:///com/thinkaurelius/titan/diskstorage/common/DistributedStoreManager/DistributedStoreManager(org.apache.commons.configuration.Configuration,int)|",
+    "called": "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/configuration/Configuration/getString(java.lang.String,java.lang.String)|",
+      "|java+method:///com/thinkaurelius/titan/diskstorage/common/DistributedStoreManager/getRid(org.apache.commons.configuration.Configuration)|",
+      "|java+method:///org/apache/commons/configuration/Configuration/getInt(java.lang.String,int)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/configuration/Configuration/containsKey(java.lang.String)|",
+      "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean,java.lang.Object)|",
+      "|java+method:///org/apache/commons/configuration/Configuration/getInt(java.lang.String,int)|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///com/thinkaurelius/titan/diskstorage/common/DistributedStoreManager/getRid(org.apache.commons.configuration.Configuration)|",
+      "|java+method:///org/apache/commons/configuration/Configuration/getStringArray(java.lang.String)|"
+    ],
+    "affectedLib": "com.google.guava:guava:13.0.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.thinkaurelius.titan:titan-core:0.2.1",
+    "coordinatesV2": "com.thinkaurelius.titan:titan-core:0.3.0",
+    "caller": "|java+method:///com/thinkaurelius/titan/graphdb/types/StandardTypeMaker/dataType(java.lang.Class)|",
+    "called": "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///com/thinkaurelius/titan/graphdb/types/StandardTypeMaker/dataType(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean,java.lang.Object)|",
+      "|java+method:///com/thinkaurelius/titan/graphdb/types/StandardTypeMaker/dataType(java.lang.Class)|"
+    ],
+    "affectedLib": "com.google.guava:guava:13.0.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.thinkaurelius.titan:titan-core:0.2.1",
+    "coordinatesV2": "com.thinkaurelius.titan:titan-core:0.3.0",
+    "caller": "|java+method:///com/thinkaurelius/titan/graphdb/blueprints/TitanBlueprintsTransaction/createKeyIndex(java.lang.String,java.lang.Class,com.tinkerpop.blueprints.Parameter%5B%5D)|",
+    "called": "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///com/thinkaurelius/titan/core/TypeMaker/indexed()|",
+      "|java+method:///java/lang/Object/equals(java.lang.Object)|",
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object)|",
+      "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean,java.lang.Object)|",
+      "|java+constructor:///java/lang/UnsupportedOperationException/UnsupportedOperationException(java.lang.String)|",
+      "|java+method:///com/thinkaurelius/titan/core/TypeMaker/functional(boolean)|",
+      "|java+method:///com/thinkaurelius/titan/graphdb/blueprints/TitanBlueprintsTransaction/makeType()|",
+      "|java+method:///com/thinkaurelius/titan/core/TitanKey/hasIndex()|",
+      "|java+method:///com/thinkaurelius/titan/graphdb/blueprints/TitanBlueprintsTransaction/getType(java.lang.String)|",
+      "|java+method:///com/thinkaurelius/titan/core/TypeMaker/name(java.lang.String)|",
+      "|java+method:///com/thinkaurelius/titan/graphdb/blueprints/TitanBlueprintsTransaction/containsType(java.lang.String)|",
+      "|java+method:///com/thinkaurelius/titan/core/TypeMaker/makePropertyKey()|",
+      "|java+method:///com/thinkaurelius/titan/core/TitanType/isPropertyKey()|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|",
+      "|java+method:///com/thinkaurelius/titan/core/TypeMaker/dataType(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList(int)|",
+      "|java+method:///com/thinkaurelius/titan/graphdb/blueprints/TitanBlueprintsTransaction/hasIndexes(com.thinkaurelius.titan.core.TitanKey,java.lang.Class,java.util.List)|",
+      "|java+method:///com/thinkaurelius/titan/core/TypeMaker/indexed(java.lang.String,java.lang.Class)|",
+      "|java+method:///com/thinkaurelius/titan/graphdb/blueprints/TitanBlueprintsTransaction/getType(java.lang.String)|",
+      "|java+method:///com/tinkerpop/blueprints/Parameter/getKey()|",
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object)|",
+      "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean,java.lang.Object)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///java/lang/UnsupportedOperationException/UnsupportedOperationException(java.lang.String)|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+constructor:///com/tinkerpop/blueprints/Parameter/Parameter(java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///com/thinkaurelius/titan/core/TypeMaker/name(java.lang.String)|",
+      "|java+method:///com/thinkaurelius/titan/graphdb/blueprints/TitanBlueprintsTransaction/containsType(java.lang.String)|",
+      "|java+method:///com/thinkaurelius/titan/core/TypeMaker/makePropertyKey()|",
+      "|java+method:///com/thinkaurelius/titan/core/TitanType/isPropertyKey()|",
+      "|java+method:///com/thinkaurelius/titan/core/TitanType/getName()|",
+      "|java+method:///com/thinkaurelius/titan/core/TypeMaker/unique(com.tinkerpop.blueprints.Direction,com.thinkaurelius.titan.core.TypeMaker$UniquenessConsistency)|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|",
+      "|java+method:///com/thinkaurelius/titan/core/TypeMaker/dataType(java.lang.Class)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///com/thinkaurelius/titan/graphdb/blueprints/TitanBlueprintsTransaction/makeType()|"
+    ],
+    "affectedLib": "com.google.guava:guava:13.0.1",
+    "change": "UPDATED"
+  }
+]

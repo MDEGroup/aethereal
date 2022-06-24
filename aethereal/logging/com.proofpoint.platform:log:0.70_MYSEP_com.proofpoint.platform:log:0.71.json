@@ -1,0 +1,175 @@
+[
+  {
+    "coordinatesV1": "com.proofpoint.platform:log:0.70",
+    "coordinatesV2": "com.proofpoint.platform:log:0.71",
+    "caller": "|java+constructor:///com/proofpoint/log/LoggingConfiguration/LoggingConfiguration()|",
+    "called": "|java+constructor:///com/proofpoint/units/DataSize/DataSize(double,com.proofpoint.units.DataSize$Unit)|",
+    "v1Body": [
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/proofpoint/units/DataSize/DataSize(double,com.proofpoint.units.DataSize$Unit)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "com.proofpoint.platform:units:0.71",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.proofpoint.platform:log:0.70",
+    "coordinatesV2": "com.proofpoint.platform:log:0.71",
+    "caller": "|java+method:///com/proofpoint/log/LogJmxModule/configure(com.google.inject.Binder)|",
+    "called": "|java+method:///org/weakref/jmx/guice/ExportBinder/export(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/weakref/jmx/guice/ExportBuilder/export(java.lang.Class)|",
+      "|java+method:///org/weakref/jmx/guice/MBeanModule/newExporter(com.google.inject.Binder)|",
+      "|java+method:///com/google/inject/Binder/disableCircularProxies()|",
+      "|java+method:///com/google/inject/Binder/requireExplicitBindings()|",
+      "|java+method:///com/google/inject/binder/AnnotatedBindingBuilder/in(com.google.inject.Scope)|",
+      "|java+method:///com/google/inject/Binder/bind(java.lang.Class)|",
+      "|java+method:///org/weakref/jmx/guice/AnnotatedExportBuilder/as(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/weakref/jmx/guice/AnnotatedExportBinder/as(java.lang.String)|",
+      "|java+method:///org/weakref/jmx/guice/ExportBinder/export(java.lang.Class)|",
+      "|java+method:///com/google/inject/Binder/disableCircularProxies()|",
+      "|java+method:///com/google/inject/Binder/requireExplicitBindings()|",
+      "|java+method:///com/google/inject/Binder/bind(java.lang.Class)|",
+      "|java+method:///com/google/inject/binder/AnnotatedBindingBuilder/in(com.google.inject.Scope)|",
+      "|java+method:///org/weakref/jmx/guice/ExportBinder/newExporter(com.google.inject.Binder)|"
+    ],
+    "affectedLib": "org.weakref:jmxutils:1.13",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.proofpoint.platform:log:0.70",
+    "coordinatesV2": "com.proofpoint.platform:log:0.71",
+    "caller": "|java+constructor:///com/proofpoint/log/Logging/Logging()|",
+    "called": "|java+method:///ch/qos/logback/classic/Logger/setLevel(ch.qos.logback.classic.Level)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.String)|",
+      "|java+method:///ch/qos/logback/classic/Logger/setLevel(ch.qos.logback.classic.Level)|",
+      "|java+method:///org/slf4j/LoggerFactory/getILoggerFactory()|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///com/proofpoint/log/Logger/get(java.lang.Class)|",
+      "|java+method:///com/proofpoint/log/Logging/redirectJULToSLF4j()|",
+      "|java+method:///ch/qos/logback/classic/LoggerContext/reset()|",
+      "|java+method:///com/proofpoint/log/Logging/rewireStdStreams()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/proofpoint/log/Logging/redirectJULToSLF4j()|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.String)|",
+      "|java+method:///ch/qos/logback/classic/Logger/setLevel(ch.qos.logback.classic.Level)|",
+      "|java+method:///org/slf4j/LoggerFactory/getILoggerFactory()|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///ch/qos/logback/classic/LoggerContext/reset()|",
+      "|java+method:///com/proofpoint/log/Logging/rewireStdStreams()|"
+    ],
+    "affectedLib": "ch.qos.logback:logback-classic:1.0.11",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.proofpoint.platform:log:0.70",
+    "coordinatesV2": "com.proofpoint.platform:log:0.71",
+    "caller": "|java+method:///com/proofpoint/log/Logging/logToFile(java.lang.String,int,long)|",
+    "called": "|java+method:///ch/qos/logback/classic/encoder/PatternLayoutEncoder/start()|",
+    "v1Body": [
+      "|java+constructor:///ch/qos/logback/core/rolling/TimeBasedRollingPolicy/TimeBasedRollingPolicy()|",
+      "|java+method:///ch/qos/logback/core/rolling/RollingFileAppender/setContext(ch.qos.logback.core.Context)|",
+      "|java+method:///ch/qos/logback/core/rolling/SizeAndTimeBasedFNATP/start()|",
+      "|java+method:///com/proofpoint/log/Logger/info(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///com/proofpoint/log/Logging/recoverTempFiles(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///ch/qos/logback/classic/encoder/PatternLayoutEncoder/start()|",
+      "|java+method:///ch/qos/logback/core/rolling/TimeBasedRollingPolicy/setFileNamePattern(java.lang.String)|",
+      "|java+method:///java/lang/Long/toString(long)|",
+      "|java+method:///ch/qos/logback/core/rolling/TimeBasedRollingPolicy/setParent(ch.qos.logback.core.FileAppender)|",
+      "|java+method:///ch/qos/logback/core/rolling/SizeAndTimeBasedFNATP/setTimeBasedRollingPolicy(ch.qos.logback.core.rolling.TimeBasedRollingPolicy)|",
+      "|java+constructor:///ch/qos/logback/core/rolling/RollingFileAppender/RollingFileAppender()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///ch/qos/logback/core/rolling/TimeBasedRollingPolicy/setMaxHistory(int)|",
+      "|java+method:///ch/qos/logback/core/rolling/RollingFileAppender/setRollingPolicy(ch.qos.logback.core.rolling.RollingPolicy)|",
+      "|java+method:///ch/qos/logback/core/rolling/RollingFileAppender/setFile(java.lang.String)|",
+      "|java+method:///ch/qos/logback/core/rolling/TimeBasedRollingPolicy/setTimeBasedFileNamingAndTriggeringPolicy(ch.qos.logback.core.rolling.TimeBasedFileNamingAndTriggeringPolicy)|",
+      "|java+method:///ch/qos/logback/core/rolling/SizeAndTimeBasedFNATP/setContext(ch.qos.logback.core.Context)|",
+      "|java+method:///ch/qos/logback/classic/encoder/PatternLayoutEncoder/setContext(ch.qos.logback.core.Context)|",
+      "|java+method:///ch/qos/logback/core/rolling/RollingFileAppender/start()|",
+      "|java+constructor:///ch/qos/logback/core/rolling/SizeAndTimeBasedFNATP/SizeAndTimeBasedFNATP()|",
+      "|java+method:///ch/qos/logback/core/rolling/TimeBasedRollingPolicy/setContext(ch.qos.logback.core.Context)|",
+      "|java+method:///ch/qos/logback/core/rolling/SizeAndTimeBasedFNATP/setMaxFileSize(java.lang.String)|",
+      "|java+method:///ch/qos/logback/core/rolling/TimeBasedRollingPolicy/start()|",
+      "|java+method:///ch/qos/logback/classic/encoder/PatternLayoutEncoder/setPattern(java.lang.String)|",
+      "|java+constructor:///ch/qos/logback/classic/encoder/PatternLayoutEncoder/PatternLayoutEncoder()|",
+      "|java+method:///ch/qos/logback/classic/Logger/addAppender(ch.qos.logback.core.Appender)|",
+      "|java+method:///ch/qos/logback/core/rolling/RollingFileAppender/setEncoder(ch.qos.logback.core.encoder.Encoder)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///ch/qos/logback/core/rolling/RollingFileAppender/setAppend(boolean)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/proofpoint/log/Logger/info(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///ch/qos/logback/classic/encoder/PatternLayoutEncoder/setContext(ch.qos.logback.core.Context)|",
+      "|java+method:///ch/qos/logback/classic/encoder/PatternLayoutEncoder/start()|",
+      "|java+method:///com/proofpoint/log/Logging/createFileAppender(java.lang.String,int,long,ch.qos.logback.core.encoder.Encoder,ch.qos.logback.classic.LoggerContext)|",
+      "|java+method:///ch/qos/logback/classic/Logger/addAppender(ch.qos.logback.core.Appender)|",
+      "|java+method:///ch/qos/logback/classic/encoder/PatternLayoutEncoder/setPattern(java.lang.String)|",
+      "|java+constructor:///ch/qos/logback/classic/encoder/PatternLayoutEncoder/PatternLayoutEncoder()|"
+    ],
+    "affectedLib": "ch.qos.logback:logback-classic:1.0.11",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.proofpoint.platform:log:0.70",
+    "coordinatesV2": "com.proofpoint.platform:log:0.71",
+    "caller": "|java+method:///com/proofpoint/log/Logging/putMDC(java.lang.String,java.lang.Object)|",
+    "called": "|java+method:///org/slf4j/MDC/put(java.lang.String,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/MDC/put(java.lang.String,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Object/toString()|",
+      "|java+method:///org/slf4j/MDC/put(java.lang.String,java.lang.String)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.proofpoint.platform:log:0.70",
+    "coordinatesV2": "com.proofpoint.platform:log:0.71",
+    "caller": "|java+constructor:///com/proofpoint/log/Logging/Logging()|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.String)|",
+      "|java+method:///ch/qos/logback/classic/Logger/setLevel(ch.qos.logback.classic.Level)|",
+      "|java+method:///org/slf4j/LoggerFactory/getILoggerFactory()|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///com/proofpoint/log/Logger/get(java.lang.Class)|",
+      "|java+method:///com/proofpoint/log/Logging/redirectJULToSLF4j()|",
+      "|java+method:///ch/qos/logback/classic/LoggerContext/reset()|",
+      "|java+method:///com/proofpoint/log/Logging/rewireStdStreams()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/proofpoint/log/Logging/redirectJULToSLF4j()|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.String)|",
+      "|java+method:///ch/qos/logback/classic/Logger/setLevel(ch.qos.logback.classic.Level)|",
+      "|java+method:///org/slf4j/LoggerFactory/getILoggerFactory()|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///ch/qos/logback/classic/LoggerContext/reset()|",
+      "|java+method:///com/proofpoint/log/Logging/rewireStdStreams()|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.proofpoint.platform:log:0.70",
+    "coordinatesV2": "com.proofpoint.platform:log:0.71",
+    "caller": "|java+method:///com/proofpoint/log/Logging/removeMDC(java.lang.String)|",
+    "called": "|java+method:///org/slf4j/MDC/remove(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/MDC/remove(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/MDC/remove(java.lang.String)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.5",
+    "change": "UPDATED"
+  }
+]

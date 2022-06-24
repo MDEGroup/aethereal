@@ -1,0 +1,608 @@
+[
+  {
+    "coordinatesV1": "org.sejda:sejda-core:1.0.0.BETA2",
+    "coordinatesV2": "org.sejda:sejda-core:1.0.0-BETA",
+    "caller": "|java+method:///org/sejda/core/context/XmlConfigurationStrategy/initializeFromInputStream(java.io.InputStream)|",
+    "called": "|java+constructor:///org/dom4j/io/SAXReader/SAXReader(org.xml.sax.XMLReader)|",
+    "v1Body": [
+      "|java+constructor:///org/sejda/core/exception/ConfigurationException/ConfigurationException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///javax/xml/validation/SchemaFactory/newSchema(javax.xml.transform.Source%5B%5D)|",
+      "|java+method:///org/sejda/core/context/XmlConfigurationStrategy/getNotificationStrategy(org.dom4j.Document)|",
+      "|java+method:///javax/xml/parsers/SAXParserFactory/newSAXParser()|",
+      "|java+method:///javax/xml/parsers/SAXParserFactory/newInstance()|",
+      "|java+method:///javax/xml/parsers/SAXParser/getXMLReader()|",
+      "|java+constructor:///javax/xml/transform/stream/StreamSource/StreamSource(java.io.InputStream)|",
+      "|java+method:///org/dom4j/io/SAXReader/setValidation(boolean)|",
+      "|java+method:///org/sejda/core/context/XmlConfigurationStrategy/getTasksMap(org.dom4j.Document)|",
+      "|java+constructor:///org/dom4j/io/SAXReader/SAXReader(org.xml.sax.XMLReader)|",
+      "|java+method:///org/dom4j/io/SAXReader/read(java.io.InputStream)|",
+      "|java+method:///javax/xml/validation/SchemaFactory/newInstance(java.lang.String)|",
+      "|java+method:///java/lang/ClassLoader/getSystemResourceAsStream(java.lang.String)|",
+      "|java+method:///org/sejda/core/context/XmlConfigurationStrategy/getBooleanValueFromXPath(java.lang.String,org.dom4j.Document)|",
+      "|java+method:///javax/xml/parsers/SAXParserFactory/setSchema(javax.xml.validation.Schema)|"
+    ],
+    "v2Body": [
+      "|java+method:///javax/xml/parsers/DocumentBuilder/parse(java.io.InputStream)|",
+      "|java+method:///org/sejda/core/context/XmlConfigurationStrategy/getNotificationStrategy(org.w3c.dom.Document)|",
+      "|java+method:///java/lang/Thread/currentThread()|",
+      "|java+constructor:///javax/xml/transform/stream/StreamSource/StreamSource(java.io.InputStream)|",
+      "|java+method:///javax/xml/parsers/DocumentBuilderFactory/setNamespaceAware(boolean)|",
+      "|java+method:///javax/xml/validation/SchemaFactory/newInstance(java.lang.String)|",
+      "|java+constructor:///org/sejda/model/exception/ConfigurationException/ConfigurationException(java.lang.Throwable)|",
+      "|java+method:///org/sejda/core/context/XmlConfigurationStrategy/getValidation(org.w3c.dom.Document)|",
+      "|java+constructor:///org/sejda/model/exception/ConfigurationException/ConfigurationException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///javax/xml/validation/SchemaFactory/newSchema(javax.xml.transform.Source%5B%5D)|",
+      "|java+method:///java/lang/ClassLoader/getResourceAsStream(java.lang.String)|",
+      "|java+method:///javax/xml/parsers/DocumentBuilderFactory/newDocumentBuilder()|",
+      "|java+method:///javax/xml/parsers/DocumentBuilderFactory/newInstance()|",
+      "|java+method:///org/sejda/core/context/XmlConfigurationStrategy/getTasksMap(org.w3c.dom.Document)|",
+      "|java+method:///javax/xml/parsers/DocumentBuilderFactory/setSchema(javax.xml.validation.Schema)|",
+      "|java+method:///java/lang/Thread/getContextClassLoader()|"
+    ],
+    "affectedLib": "dom4j:dom4j:1.6.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.sejda:sejda-core:1.0.0-BETA",
+    "coordinatesV2": "org.sejda:sejda-core:1.0.0.BETA2",
+    "caller": "|java+method:///org/sejda/core/support/io/IOUtils/createTemporaryBuffer(java.lang.String)|",
+    "called": "|java+constructor:///org/sejda/model/exception/TaskIOException/TaskIOException(java.lang.String,java.lang.Throwable)|",
+    "v1Body": [
+      "|java+constructor:///org/sejda/core/exception/TaskIOException/TaskIOException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/io/File/createTempFile(java.lang.String,java.lang.String)|",
+      "|java+method:///java/io/File/deleteOnExit()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/sejda/model/exception/TaskIOException/TaskIOException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/io/File/createTempFile(java.lang.String,java.lang.String)|",
+      "|java+method:///java/io/File/deleteOnExit()|"
+    ],
+    "affectedLib": "org.sejda:sejda-model:1.0.0.BETA2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.sejda:sejda-core:1.0.0-BETA",
+    "coordinatesV2": "org.sejda:sejda-core:1.0.0.BETA2",
+    "caller": "|java+method:///org/sejda/core/context/GlobalConfiguration/initialize()|",
+    "called": "|java+constructor:///org/sejda/model/exception/SejdaRuntimeException/SejdaRuntimeException(java.lang.String,java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///org/sejda/core/context/XmlConfigurationStrategy/newInstance(org.sejda.core.context.ConfigurationStreamProvider)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/util/Map$Entry/getKey()|",
+      "|java+method:///org/sejda/core/context/ConfigurationStrategy/getTasksMap()|",
+      "|java+method:///org/sejda/core/context/TasksRegistry/addTask(java.lang.Class,java.lang.Class)|",
+      "|java+constructor:///org/sejda/core/context/DefaultTasksRegistry/DefaultTasksRegistry()|",
+      "|java+constructor:///org/sejda/core/context/XmlConfigurationStreamProvider/XmlConfigurationStreamProvider()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/sejda/core/context/ConfigurationStrategy/isValidation()|",
+      "|java+method:///java/lang/Boolean/valueOf(boolean)|",
+      "|java+method:///org/slf4j/Logger/trace(java.lang.String,java.lang.Object)|",
+      "|java+method:///java/util/Set/iterator()|",
+      "|java+method:///java/util/Map$Entry/getValue()|",
+      "|java+constructor:///org/sejda/core/exception/SejdaRuntimeException/SejdaRuntimeException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/util/Map/entrySet()|",
+      "|java+method:///org/sejda/core/context/ConfigurationStrategy/getNotificationStrategy()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/sejda/core/context/XmlConfigurationStrategy/newInstance(org.sejda.core.context.ConfigurationStreamProvider)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/util/Map$Entry/getKey()|",
+      "|java+method:///org/sejda/core/context/ConfigurationStrategy/getTasksMap()|",
+      "|java+method:///org/sejda/core/context/TasksRegistry/addTask(java.lang.Class,java.lang.Class)|",
+      "|java+method:///java/util/Map$Entry/getValue()|",
+      "|java+constructor:///org/sejda/model/exception/SejdaRuntimeException/SejdaRuntimeException(java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///org/sejda/core/context/DefaultTasksRegistry/DefaultTasksRegistry()|",
+      "|java+constructor:///org/sejda/core/context/XmlConfigurationStreamProvider/XmlConfigurationStreamProvider()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/sejda/core/context/ConfigurationStrategy/isValidation()|",
+      "|java+method:///java/lang/Boolean/valueOf(boolean)|",
+      "|java+method:///org/slf4j/Logger/trace(java.lang.String,java.lang.Object)|",
+      "|java+method:///java/util/Set/iterator()|",
+      "|java+method:///java/util/Map/entrySet()|",
+      "|java+method:///org/sejda/core/context/ConfigurationStrategy/getNotificationStrategy()|"
+    ],
+    "affectedLib": "org.sejda:sejda-model:1.0.0.BETA2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.sejda:sejda-core:1.0.0-BETA",
+    "coordinatesV2": "org.sejda:sejda-core:1.0.0.BETA2",
+    "caller": "|java+method:///org/sejda/core/support/io/OutputWriterHelper/copyFile(java.io.File,java.io.File,boolean)|",
+    "called": "|java+constructor:///org/sejda/model/exception/TaskIOException/TaskIOException(java.lang.String,java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/apache/commons/io/FileUtils/copyFile(java.io.File,java.io.File)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///java/io/File/exists()|",
+      "|java+method:///org/sejda/core/support/io/OutputWriterHelper/delete(java.io.File)|",
+      "|java+constructor:///org/sejda/core/exception/TaskIOException/TaskIOException(java.lang.String)|",
+      "|java+constructor:///org/sejda/core/exception/TaskIOException/TaskIOException(java.lang.String,java.lang.Throwable)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/apache/commons/io/FileUtils/copyFile(java.io.File,java.io.File)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///java/io/File/exists()|",
+      "|java+method:///org/sejda/core/support/io/OutputWriterHelper/delete(java.io.File)|",
+      "|java+constructor:///org/sejda/model/exception/TaskIOException/TaskIOException(java.lang.String)|",
+      "|java+constructor:///org/sejda/model/exception/TaskIOException/TaskIOException(java.lang.String,java.lang.Throwable)|"
+    ],
+    "affectedLib": "org.sejda:sejda-model:1.0.0.BETA2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.sejda:sejda-core:1.0.0-BETA",
+    "coordinatesV2": "org.sejda:sejda-core:1.0.0.BETA2",
+    "caller": "|java+method:///org/sejda/core/notification/dsl/ApplicationEventsNotifier/outOf(java.math.BigDecimal)|",
+    "called": "|java+constructor:///org/sejda/model/notification/event/PercentageOfWorkDoneChangedEvent/PercentageOfWorkDoneChangedEvent(java.math.BigDecimal,org.sejda.model.task.NotifiableTaskMetadata)|",
+    "v1Body": [
+      "|java+method:///java/math/BigDecimal/divide(java.math.BigDecimal,int)|",
+      "|java+method:///org/sejda/core/notification/dsl/ApplicationEventsNotifier/notifyListeners(org.sejda.core.notification.event.AbstractNotificationEvent)|",
+      "|java+method:///java/math/BigDecimal/multiply(java.math.BigDecimal)|",
+      "|java+constructor:///org/sejda/core/notification/event/PercentageOfWorkDoneChangedEvent/PercentageOfWorkDoneChangedEvent(java.math.BigDecimal)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/sejda/core/notification/dsl/ApplicationEventsNotifier/notifyListeners(org.sejda.model.notification.event.AbstractNotificationEvent)|",
+      "|java+method:///java/math/BigDecimal/divide(java.math.BigDecimal,int)|",
+      "|java+method:///java/math/BigDecimal/multiply(java.math.BigDecimal)|",
+      "|java+constructor:///org/sejda/model/notification/event/PercentageOfWorkDoneChangedEvent/PercentageOfWorkDoneChangedEvent(java.math.BigDecimal,org.sejda.model.task.NotifiableTaskMetadata)|"
+    ],
+    "affectedLib": "org.sejda:sejda-model:1.0.0.BETA2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.sejda:sejda-core:1.0.0-BETA",
+    "coordinatesV2": "org.sejda:sejda-core:1.0.0.BETA2",
+    "caller": "|java+method:///org/sejda/core/support/io/OutputWriterHelper/executeCopyAndDelete(java.util.Map,org.sejda.core.support.io.Destination)|",
+    "called": "|java+constructor:///org/sejda/model/exception/TaskIOException/TaskIOException(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/sejda/core/support/io/OutputWriterHelper/copyToDirectory(java.util.Map,java.io.File,boolean)|",
+      "|java+constructor:///org/sejda/core/exception/TaskIOException/TaskIOException(java.lang.String)|",
+      "|java+method:///org/sejda/core/support/io/OutputWriterHelper/copyToStream(java.util.Map,java.io.OutputStream)|",
+      "|java+method:///org/sejda/core/support/io/Destination/getOutputDestination()|",
+      "|java+method:///org/sejda/core/support/io/OutputWriterHelper/copyToFile(java.util.Map,java.io.File,boolean)|",
+      "|java+method:///org/sejda/core/manipulation/model/output/DirectoryOutput/getDirectory()|",
+      "|java+method:///org/sejda/core/manipulation/model/output/OutputType/equals(java.lang.Object)|",
+      "|java+method:///org/sejda/core/manipulation/model/output/FileOutput/getFile()|",
+      "|java+method:///org/sejda/core/support/io/Destination/isOverwrite()|",
+      "|java+method:///org/sejda/core/manipulation/model/output/StreamOutput/getStream()|",
+      "|java+method:///org/sejda/core/manipulation/model/output/TaskOutput/getOutputType()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/sejda/core/support/io/OutputWriterHelper/copyToDirectory(java.util.Map,java.io.File,boolean)|",
+      "|java+method:///org/sejda/model/output/TaskOutput/getOutputType()|",
+      "|java+method:///org/sejda/model/output/TaskOutput/getFile()|",
+      "|java+method:///org/sejda/core/support/io/OutputWriterHelper/copyToStream(java.util.Map,java.io.OutputStream)|",
+      "|java+method:///org/sejda/core/support/io/Destination/getOutputDestination()|",
+      "|java+method:///org/sejda/core/support/io/OutputWriterHelper/copyToFile(java.util.Map,java.io.File,boolean)|",
+      "|java+method:///org/sejda/core/support/io/Destination/isOverwrite()|",
+      "|java+method:///org/sejda/model/output/TaskOutput/getStream()|",
+      "|java+constructor:///org/sejda/model/exception/TaskIOException/TaskIOException(java.lang.String)|",
+      "|java+method:///org/sejda/model/output/TaskOutput/getDirectory()|",
+      "|java+method:///org/sejda/model/output/OutputType/equals(java.lang.Object)|"
+    ],
+    "affectedLib": "org.sejda:sejda-model:1.0.0.BETA2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.sejda:sejda-core:1.0.0-BETA",
+    "coordinatesV2": "org.sejda:sejda-core:1.0.0.BETA2",
+    "caller": "|java+method:///org/sejda/core/notification/context/SimpleEventListenerHoldingStrategy/size()|",
+    "called": "|java+method:///org/sejda/common/collection/ListValueMap/size()|",
+    "v1Body": [
+      "|java+method:///org/sejda/core/support/ListValueMap/size()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/sejda/common/collection/ListValueMap/size()|"
+    ],
+    "affectedLib": "org.sejda:sejda-model:1.0.0.BETA2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.sejda:sejda-core:1.0.0-BETA",
+    "coordinatesV2": "org.sejda:sejda-core:1.0.0.BETA2",
+    "caller": "|java+method:///org/sejda/core/notification/dsl/ApplicationEventsNotifier/taskStarted()|",
+    "called": "|java+constructor:///org/sejda/model/notification/event/TaskExecutionStartedEvent/TaskExecutionStartedEvent(org.sejda.model.task.NotifiableTaskMetadata)|",
+    "v1Body": [
+      "|java+method:///org/sejda/core/notification/dsl/ApplicationEventsNotifier/notifyListeners(org.sejda.core.notification.event.AbstractNotificationEvent)|",
+      "|java+constructor:///org/sejda/core/notification/event/TaskExecutionStartedEvent/TaskExecutionStartedEvent()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/sejda/core/notification/dsl/ApplicationEventsNotifier/notifyListeners(org.sejda.model.notification.event.AbstractNotificationEvent)|",
+      "|java+constructor:///org/sejda/model/notification/event/TaskExecutionStartedEvent/TaskExecutionStartedEvent(org.sejda.model.task.NotifiableTaskMetadata)|"
+    ],
+    "affectedLib": "org.sejda:sejda-model:1.0.0.BETA2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.sejda:sejda-core:1.0.0-BETA",
+    "coordinatesV2": "org.sejda:sejda-core:1.0.0.BETA2",
+    "caller": "|java+constructor:///org/sejda/core/notification/context/SimpleEventListenerHoldingStrategy/SimpleEventListenerHoldingStrategy()|",
+    "called": "|java+constructor:///org/sejda/common/collection/ListValueMap/ListValueMap()|",
+    "v1Body": [
+      "|java+constructor:///org/sejda/core/support/ListValueMap/ListValueMap()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/sejda/common/collection/ListValueMap/ListValueMap()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "org.sejda:sejda-model:1.0.0.BETA2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.sejda:sejda-core:1.0.0-BETA",
+    "coordinatesV2": "org.sejda:sejda-core:1.0.0.BETA2",
+    "caller": "|java+method:///org/sejda/core/support/prefix/processor/PrefixTypesChain/processChain(java.lang.String,org.sejda.core.support.prefix.model.NameGenerationRequest,java.util.Set)|",
+    "called": "|java+constructor:///org/sejda/model/exception/SejdaRuntimeException/SejdaRuntimeException(java.lang.String,java.lang.Throwable)|",
+    "v1Body": [
+      "|java+constructor:///org/sejda/core/support/prefix/processor/LoggingPrefixProcessorDecorator/LoggingPrefixProcessorDecorator(org.sejda.core.support.prefix.processor.PrefixProcessor)|",
+      "|java+method:///org/sejda/core/support/prefix/processor/PrefixType/getProcessor()|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/Set/iterator()|",
+      "|java+constructor:///org/sejda/core/exception/SejdaRuntimeException/SejdaRuntimeException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/sejda/core/support/prefix/processor/PrefixProcessor/process(java.lang.String,org.sejda.core.support.prefix.model.NameGenerationRequest)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/lang/Class/newInstance()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/sejda/core/support/prefix/processor/LoggingPrefixProcessorDecorator/LoggingPrefixProcessorDecorator(org.sejda.core.support.prefix.processor.PrefixProcessor)|",
+      "|java+method:///org/sejda/core/support/prefix/processor/PrefixType/getProcessor()|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/Set/iterator()|",
+      "|java+constructor:///org/sejda/model/exception/SejdaRuntimeException/SejdaRuntimeException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/sejda/core/support/prefix/processor/PrefixProcessor/process(java.lang.String,org.sejda.core.support.prefix.model.NameGenerationRequest)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/lang/Class/newInstance()|"
+    ],
+    "affectedLib": "org.sejda:sejda-model:1.0.0.BETA2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.sejda:sejda-core:1.0.0-BETA",
+    "coordinatesV2": "org.sejda:sejda-core:1.0.0.BETA2",
+    "caller": "|java+method:///org/sejda/core/support/io/OutputWriterHelper/copyToFile(java.util.Map,java.io.File,boolean)|",
+    "called": "|java+constructor:///org/sejda/model/exception/TaskIOException/TaskIOException(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/sejda/core/support/io/OutputWriterHelper/copyFile(java.io.File,java.io.File,boolean)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+constructor:///org/sejda/core/exception/TaskIOException/TaskIOException(java.lang.String)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///java/util/Map/size()|",
+      "|java+method:///java/io/File/exists()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/Set/iterator()|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///java/io/File/isFile()|",
+      "|java+method:///java/util/Map$Entry/getValue()|",
+      "|java+method:///java/util/Map/entrySet()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/sejda/core/support/io/OutputWriterHelper/copyFile(java.io.File,java.io.File,boolean)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+constructor:///org/sejda/model/exception/TaskIOException/TaskIOException(java.lang.String)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///java/util/Map/size()|",
+      "|java+method:///java/io/File/exists()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/Set/iterator()|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///java/io/File/isFile()|",
+      "|java+method:///java/util/Map$Entry/getValue()|",
+      "|java+method:///java/util/Map/entrySet()|"
+    ],
+    "affectedLib": "org.sejda:sejda-model:1.0.0.BETA2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.sejda:sejda-core:1.0.0-BETA",
+    "coordinatesV2": "org.sejda:sejda-core:1.0.0.BETA2",
+    "caller": "|java+method:///org/sejda/core/notification/context/SimpleEventListenerHoldingStrategy/clear()|",
+    "called": "|java+method:///org/sejda/common/collection/ListValueMap/clear()|",
+    "v1Body": [
+      "|java+method:///org/sejda/core/support/ListValueMap/clear()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/sejda/common/collection/ListValueMap/clear()|"
+    ],
+    "affectedLib": "org.sejda:sejda-model:1.0.0.BETA2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.sejda:sejda-core:1.0.0-BETA",
+    "coordinatesV2": "org.sejda:sejda-core:1.0.0.BETA2",
+    "caller": "|java+method:///org/sejda/core/context/XmlConfigurationStreamProvider/getConfigurationStream()|",
+    "called": "|java+constructor:///org/sejda/model/exception/ConfigurationException/ConfigurationException(java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///org/sejda/core/exception/ConfigurationException/ConfigurationException(java.lang.String)|",
+      "|java+method:///org/sejda/core/context/XmlConfigurationStreamProvider/getConfiguration()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/sejda/model/exception/ConfigurationException/ConfigurationException(java.lang.String)|",
+      "|java+method:///org/sejda/core/context/XmlConfigurationStreamProvider/getConfiguration()|"
+    ],
+    "affectedLib": "org.sejda:sejda-model:1.0.0.BETA2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.sejda:sejda-core:1.0.0-BETA",
+    "coordinatesV2": "org.sejda:sejda-core:1.0.0.BETA2",
+    "caller": "|java+method:///org/sejda/core/support/io/OutputWriterHelper/copyToDirectory(java.util.Map,java.io.File,boolean)|",
+    "called": "|java+constructor:///org/sejda/model/exception/TaskIOException/TaskIOException(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/sejda/core/support/io/OutputWriterHelper/copyFile(java.io.File,java.io.File,boolean)|",
+      "|java+method:///org/apache/commons/lang3/StringUtils/isBlank(java.lang.CharSequence)|",
+      "|java+constructor:///java/io/File/File(java.io.File,java.lang.String)|",
+      "|java+method:///java/util/Map$Entry/getKey()|",
+      "|java+constructor:///org/sejda/core/exception/TaskIOException/TaskIOException(java.lang.String)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///java/io/File/exists()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/Set/iterator()|",
+      "|java+method:///java/io/File/mkdirs()|",
+      "|java+method:///java/util/Map$Entry/getValue()|",
+      "|java+method:///java/util/Map/entrySet()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/io/File/isDirectory()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/sejda/core/support/io/OutputWriterHelper/copyFile(java.io.File,java.io.File,boolean)|",
+      "|java+method:///org/apache/commons/lang3/StringUtils/isBlank(java.lang.CharSequence)|",
+      "|java+constructor:///java/io/File/File(java.io.File,java.lang.String)|",
+      "|java+method:///java/util/Map$Entry/getKey()|",
+      "|java+constructor:///org/sejda/model/exception/TaskIOException/TaskIOException(java.lang.String)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///java/io/File/exists()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/Set/iterator()|",
+      "|java+method:///java/io/File/mkdirs()|",
+      "|java+method:///java/util/Map$Entry/getValue()|",
+      "|java+method:///java/util/Map/entrySet()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/io/File/isDirectory()|"
+    ],
+    "affectedLib": "org.sejda:sejda-model:1.0.0.BETA2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.sejda:sejda-core:1.0.0-BETA",
+    "coordinatesV2": "org.sejda:sejda-core:1.0.0.BETA2",
+    "caller": "|java+method:///org/sejda/core/context/XmlConfigurationStrategy/initializeFromInputStream(java.io.InputStream)|",
+    "called": "|java+constructor:///org/sejda/model/exception/ConfigurationException/ConfigurationException(java.lang.String,java.lang.Throwable)|",
+    "v1Body": [
+      "|java+constructor:///org/sejda/core/exception/ConfigurationException/ConfigurationException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///javax/xml/validation/SchemaFactory/newSchema(javax.xml.transform.Source%5B%5D)|",
+      "|java+method:///org/sejda/core/context/XmlConfigurationStrategy/getNotificationStrategy(org.dom4j.Document)|",
+      "|java+method:///javax/xml/parsers/SAXParserFactory/newSAXParser()|",
+      "|java+method:///javax/xml/parsers/SAXParserFactory/newInstance()|",
+      "|java+method:///javax/xml/parsers/SAXParser/getXMLReader()|",
+      "|java+constructor:///javax/xml/transform/stream/StreamSource/StreamSource(java.io.InputStream)|",
+      "|java+method:///org/dom4j/io/SAXReader/setValidation(boolean)|",
+      "|java+method:///org/sejda/core/context/XmlConfigurationStrategy/getTasksMap(org.dom4j.Document)|",
+      "|java+constructor:///org/dom4j/io/SAXReader/SAXReader(org.xml.sax.XMLReader)|",
+      "|java+method:///org/dom4j/io/SAXReader/read(java.io.InputStream)|",
+      "|java+method:///javax/xml/validation/SchemaFactory/newInstance(java.lang.String)|",
+      "|java+method:///java/lang/ClassLoader/getSystemResourceAsStream(java.lang.String)|",
+      "|java+method:///org/sejda/core/context/XmlConfigurationStrategy/getBooleanValueFromXPath(java.lang.String,org.dom4j.Document)|",
+      "|java+method:///javax/xml/parsers/SAXParserFactory/setSchema(javax.xml.validation.Schema)|"
+    ],
+    "v2Body": [
+      "|java+method:///javax/xml/parsers/DocumentBuilder/parse(java.io.InputStream)|",
+      "|java+method:///org/sejda/core/context/XmlConfigurationStrategy/getNotificationStrategy(org.w3c.dom.Document)|",
+      "|java+method:///java/lang/Thread/currentThread()|",
+      "|java+constructor:///javax/xml/transform/stream/StreamSource/StreamSource(java.io.InputStream)|",
+      "|java+method:///javax/xml/parsers/DocumentBuilderFactory/setNamespaceAware(boolean)|",
+      "|java+method:///javax/xml/validation/SchemaFactory/newInstance(java.lang.String)|",
+      "|java+constructor:///org/sejda/model/exception/ConfigurationException/ConfigurationException(java.lang.Throwable)|",
+      "|java+method:///org/sejda/core/context/XmlConfigurationStrategy/getValidation(org.w3c.dom.Document)|",
+      "|java+constructor:///org/sejda/model/exception/ConfigurationException/ConfigurationException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///javax/xml/validation/SchemaFactory/newSchema(javax.xml.transform.Source%5B%5D)|",
+      "|java+method:///java/lang/ClassLoader/getResourceAsStream(java.lang.String)|",
+      "|java+method:///javax/xml/parsers/DocumentBuilderFactory/newDocumentBuilder()|",
+      "|java+method:///javax/xml/parsers/DocumentBuilderFactory/newInstance()|",
+      "|java+method:///org/sejda/core/context/XmlConfigurationStrategy/getTasksMap(org.w3c.dom.Document)|",
+      "|java+method:///javax/xml/parsers/DocumentBuilderFactory/setSchema(javax.xml.validation.Schema)|",
+      "|java+method:///java/lang/Thread/getContextClassLoader()|"
+    ],
+    "affectedLib": "org.sejda:sejda-model:1.0.0.BETA2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.sejda:sejda-core:1.0.0-BETA",
+    "coordinatesV2": "org.sejda:sejda-core:1.0.0.BETA2",
+    "caller": "|java+method:///org/sejda/core/support/io/OutputWriterHelper/copyToStream(java.util.Map,java.io.OutputStream)|",
+    "called": "|java+constructor:///org/sejda/model/exception/TaskIOException/TaskIOException(java.lang.String,java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/apache/commons/lang3/StringUtils/isBlank(java.lang.CharSequence)|",
+      "|java+method:///org/apache/commons/io/IOUtils/copy(java.io.InputStream,java.io.OutputStream)|",
+      "|java+method:///org/apache/commons/io/IOUtils/closeQuietly(java.io.InputStream)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/util/zip/ZipOutputStream/putNextEntry(java.util.zip.ZipEntry)|",
+      "|java+method:///java/util/Map$Entry/getKey()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/Set/iterator()|",
+      "|java+method:///org/apache/commons/io/IOUtils/closeQuietly(java.io.OutputStream)|",
+      "|java+method:///java/util/Map$Entry/getValue()|",
+      "|java+constructor:///java/io/FileInputStream/FileInputStream(java.io.File)|",
+      "|java+method:///java/util/Map/entrySet()|",
+      "|java+method:///org/sejda/core/support/io/OutputWriterHelper/delete(java.io.File)|",
+      "|java+constructor:///java/util/zip/ZipEntry/ZipEntry(java.lang.String)|",
+      "|java+constructor:///org/sejda/core/exception/TaskIOException/TaskIOException(java.lang.String)|",
+      "|java+constructor:///org/sejda/core/exception/TaskIOException/TaskIOException(java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///java/util/zip/ZipOutputStream/ZipOutputStream(java.io.OutputStream)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/apache/commons/lang3/StringUtils/isBlank(java.lang.CharSequence)|",
+      "|java+method:///org/apache/commons/io/IOUtils/copy(java.io.InputStream,java.io.OutputStream)|",
+      "|java+method:///org/apache/commons/io/IOUtils/closeQuietly(java.io.InputStream)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/util/zip/ZipOutputStream/putNextEntry(java.util.zip.ZipEntry)|",
+      "|java+method:///java/util/Map$Entry/getKey()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/Set/iterator()|",
+      "|java+method:///org/apache/commons/io/IOUtils/closeQuietly(java.io.OutputStream)|",
+      "|java+method:///java/util/Map$Entry/getValue()|",
+      "|java+constructor:///java/io/FileInputStream/FileInputStream(java.io.File)|",
+      "|java+method:///java/util/Map/entrySet()|",
+      "|java+method:///org/sejda/core/support/io/OutputWriterHelper/delete(java.io.File)|",
+      "|java+constructor:///java/util/zip/ZipEntry/ZipEntry(java.lang.String)|",
+      "|java+constructor:///org/sejda/model/exception/TaskIOException/TaskIOException(java.lang.String)|",
+      "|java+constructor:///org/sejda/model/exception/TaskIOException/TaskIOException(java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///java/util/zip/ZipOutputStream/ZipOutputStream(java.io.OutputStream)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|"
+    ],
+    "affectedLib": "org.sejda:sejda-model:1.0.0.BETA2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.sejda:sejda-core:1.0.0-BETA",
+    "coordinatesV2": "org.sejda:sejda-core:1.0.0.BETA2",
+    "caller": "|java+method:///org/sejda/core/context/XmlConfigurationStreamProvider/getCustomConfigurationStream(java.lang.String)|",
+    "called": "|java+constructor:///org/sejda/model/exception/ConfigurationException/ConfigurationException(java.lang.String,java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///java/lang/ClassLoader/getSystemResourceAsStream(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+constructor:///java/io/FileInputStream/FileInputStream(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+constructor:///org/sejda/core/exception/ConfigurationException/ConfigurationException(java.lang.String,java.lang.Throwable)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+constructor:///org/sejda/model/exception/ConfigurationException/ConfigurationException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/lang/ClassLoader/getSystemResourceAsStream(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+constructor:///java/io/FileInputStream/FileInputStream(java.lang.String)|"
+    ],
+    "affectedLib": "org.sejda:sejda-model:1.0.0.BETA2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.sejda:sejda-core:1.0.0-BETA",
+    "coordinatesV2": "org.sejda:sejda-core:1.0.0.BETA2",
+    "caller": "|java+method:///org/sejda/core/notification/dsl/ApplicationEventsNotifier/taskCompleted(long)|",
+    "called": "|java+constructor:///org/sejda/model/notification/event/TaskExecutionCompletedEvent/TaskExecutionCompletedEvent(long,org.sejda.model.task.NotifiableTaskMetadata)|",
+    "v1Body": [
+      "|java+constructor:///org/sejda/core/notification/event/TaskExecutionCompletedEvent/TaskExecutionCompletedEvent(long)|",
+      "|java+method:///org/sejda/core/notification/dsl/ApplicationEventsNotifier/notifyListeners(org.sejda.core.notification.event.AbstractNotificationEvent)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/sejda/core/notification/dsl/ApplicationEventsNotifier/notifyListeners(org.sejda.model.notification.event.AbstractNotificationEvent)|",
+      "|java+constructor:///org/sejda/model/notification/event/TaskExecutionCompletedEvent/TaskExecutionCompletedEvent(long,org.sejda.model.task.NotifiableTaskMetadata)|"
+    ],
+    "affectedLib": "org.sejda:sejda-model:1.0.0.BETA2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.sejda:sejda-core:1.0.0-BETA",
+    "coordinatesV2": "org.sejda:sejda-core:1.0.0.BETA2",
+    "caller": "|java+method:///org/sejda/core/notification/dsl/ApplicationEventsNotifier/taskFailed(java.lang.Exception)|",
+    "called": "|java+constructor:///org/sejda/model/notification/event/TaskExecutionFailedEvent/TaskExecutionFailedEvent(java.lang.Exception,org.sejda.model.task.NotifiableTaskMetadata)|",
+    "v1Body": [
+      "|java+constructor:///org/sejda/core/notification/event/TaskExecutionFailedEvent/TaskExecutionFailedEvent(java.lang.Exception)|",
+      "|java+method:///org/sejda/core/notification/dsl/ApplicationEventsNotifier/notifyListeners(org.sejda.core.notification.event.AbstractNotificationEvent)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/sejda/core/notification/dsl/ApplicationEventsNotifier/notifyListeners(org.sejda.model.notification.event.AbstractNotificationEvent)|",
+      "|java+constructor:///org/sejda/model/notification/event/TaskExecutionFailedEvent/TaskExecutionFailedEvent(java.lang.Exception,org.sejda.model.task.NotifiableTaskMetadata)|"
+    ],
+    "affectedLib": "org.sejda:sejda-model:1.0.0.BETA2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.sejda:sejda-core:1.0.0-BETA",
+    "coordinatesV2": "org.sejda:sejda-core:1.0.0.BETA2",
+    "caller": "|java+method:///org/sejda/core/support/io/OutputWriterHelper/copyToDirectory(java.util.Map,java.io.File,boolean)|",
+    "called": "|java+method:///org/apache/commons/lang3/StringUtils/isBlank(java.lang.CharSequence)|",
+    "v1Body": [
+      "|java+method:///org/sejda/core/support/io/OutputWriterHelper/copyFile(java.io.File,java.io.File,boolean)|",
+      "|java+method:///org/apache/commons/lang3/StringUtils/isBlank(java.lang.CharSequence)|",
+      "|java+constructor:///java/io/File/File(java.io.File,java.lang.String)|",
+      "|java+method:///java/util/Map$Entry/getKey()|",
+      "|java+constructor:///org/sejda/core/exception/TaskIOException/TaskIOException(java.lang.String)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///java/io/File/exists()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/Set/iterator()|",
+      "|java+method:///java/io/File/mkdirs()|",
+      "|java+method:///java/util/Map$Entry/getValue()|",
+      "|java+method:///java/util/Map/entrySet()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/io/File/isDirectory()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/sejda/core/support/io/OutputWriterHelper/copyFile(java.io.File,java.io.File,boolean)|",
+      "|java+method:///org/apache/commons/lang3/StringUtils/isBlank(java.lang.CharSequence)|",
+      "|java+constructor:///java/io/File/File(java.io.File,java.lang.String)|",
+      "|java+method:///java/util/Map$Entry/getKey()|",
+      "|java+constructor:///org/sejda/model/exception/TaskIOException/TaskIOException(java.lang.String)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///java/io/File/exists()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/Set/iterator()|",
+      "|java+method:///java/io/File/mkdirs()|",
+      "|java+method:///java/util/Map$Entry/getValue()|",
+      "|java+method:///java/util/Map/entrySet()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/io/File/isDirectory()|"
+    ],
+    "affectedLib": "org.apache.commons:commons-lang3:3.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.sejda:sejda-core:1.0.0-BETA",
+    "coordinatesV2": "org.sejda:sejda-core:1.0.0.BETA2",
+    "caller": "|java+method:///org/sejda/core/support/io/OutputWriterHelper/copyToStream(java.util.Map,java.io.OutputStream)|",
+    "called": "|java+method:///org/apache/commons/lang3/StringUtils/isBlank(java.lang.CharSequence)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/apache/commons/lang3/StringUtils/isBlank(java.lang.CharSequence)|",
+      "|java+method:///org/apache/commons/io/IOUtils/copy(java.io.InputStream,java.io.OutputStream)|",
+      "|java+method:///org/apache/commons/io/IOUtils/closeQuietly(java.io.InputStream)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/util/zip/ZipOutputStream/putNextEntry(java.util.zip.ZipEntry)|",
+      "|java+method:///java/util/Map$Entry/getKey()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/Set/iterator()|",
+      "|java+method:///org/apache/commons/io/IOUtils/closeQuietly(java.io.OutputStream)|",
+      "|java+method:///java/util/Map$Entry/getValue()|",
+      "|java+constructor:///java/io/FileInputStream/FileInputStream(java.io.File)|",
+      "|java+method:///java/util/Map/entrySet()|",
+      "|java+method:///org/sejda/core/support/io/OutputWriterHelper/delete(java.io.File)|",
+      "|java+constructor:///java/util/zip/ZipEntry/ZipEntry(java.lang.String)|",
+      "|java+constructor:///org/sejda/core/exception/TaskIOException/TaskIOException(java.lang.String)|",
+      "|java+constructor:///org/sejda/core/exception/TaskIOException/TaskIOException(java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///java/util/zip/ZipOutputStream/ZipOutputStream(java.io.OutputStream)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/apache/commons/lang3/StringUtils/isBlank(java.lang.CharSequence)|",
+      "|java+method:///org/apache/commons/io/IOUtils/copy(java.io.InputStream,java.io.OutputStream)|",
+      "|java+method:///org/apache/commons/io/IOUtils/closeQuietly(java.io.InputStream)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/util/zip/ZipOutputStream/putNextEntry(java.util.zip.ZipEntry)|",
+      "|java+method:///java/util/Map$Entry/getKey()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/Set/iterator()|",
+      "|java+method:///org/apache/commons/io/IOUtils/closeQuietly(java.io.OutputStream)|",
+      "|java+method:///java/util/Map$Entry/getValue()|",
+      "|java+constructor:///java/io/FileInputStream/FileInputStream(java.io.File)|",
+      "|java+method:///java/util/Map/entrySet()|",
+      "|java+method:///org/sejda/core/support/io/OutputWriterHelper/delete(java.io.File)|",
+      "|java+constructor:///java/util/zip/ZipEntry/ZipEntry(java.lang.String)|",
+      "|java+constructor:///org/sejda/model/exception/TaskIOException/TaskIOException(java.lang.String)|",
+      "|java+constructor:///org/sejda/model/exception/TaskIOException/TaskIOException(java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///java/util/zip/ZipOutputStream/ZipOutputStream(java.io.OutputStream)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|"
+    ],
+    "affectedLib": "org.apache.commons:commons-lang3:3.1",
+    "change": "UPDATED"
+  }
+]

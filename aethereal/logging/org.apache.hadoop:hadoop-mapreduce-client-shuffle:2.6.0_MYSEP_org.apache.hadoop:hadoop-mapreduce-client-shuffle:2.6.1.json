@@ -1,0 +1,24 @@
+[
+  {
+    "coordinatesV1": "org.apache.hadoop:hadoop-mapreduce-client-shuffle:2.6.0",
+    "coordinatesV2": "org.apache.hadoop:hadoop-mapreduce-client-shuffle:2.6.1",
+    "caller": "|java+method:///org/apache/hadoop/mapred/ShuffleHandler/loadVersion()|",
+    "called": "|java+constructor:///org/apache/hadoop/yarn/server/records/impl/pb/VersionPBImpl/VersionPBImpl(org.apache.hadoop.yarn.proto.YarnServerCommonProtos$VersionProto)|",
+    "v1Body": [
+      "|java+method:///org/iq80/leveldb/DB/get(byte%5B%5D)|",
+      "|java+method:///org/apache/hadoop/yarn/proto/YarnServerCommonProtos$VersionProto/parseFrom(byte%5B%5D)|",
+      "|java+constructor:///org/apache/hadoop/yarn/server/records/impl/pb/VersionPBImpl/VersionPBImpl(org.apache.hadoop.yarn.proto.YarnServerCommonProtos$VersionProto)|",
+      "|java+method:///org/apache/hadoop/yarn/server/records/Version/newInstance(int,int)|",
+      "|java+method:///org/fusesource/leveldbjni/JniDBFactory/bytes(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/iq80/leveldb/DB/get(byte%5B%5D)|",
+      "|java+method:///org/apache/hadoop/yarn/proto/YarnServerCommonProtos$VersionProto/parseFrom(byte%5B%5D)|",
+      "|java+method:///org/apache/hadoop/mapred/ShuffleHandler/getCurrentVersion()|",
+      "|java+method:///org/fusesource/leveldbjni/JniDBFactory/bytes(java.lang.String)|",
+      "|java+constructor:///org/apache/hadoop/yarn/server/records/impl/pb/VersionPBImpl/VersionPBImpl(org.apache.hadoop.yarn.proto.YarnServerCommonProtos$VersionProto)|"
+    ],
+    "affectedLib": "org.apache.hadoop:hadoop-yarn-server-common:2.6.1",
+    "change": "UPDATED"
+  }
+]

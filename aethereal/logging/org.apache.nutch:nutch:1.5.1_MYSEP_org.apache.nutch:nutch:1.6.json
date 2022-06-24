@@ -1,0 +1,25 @@
+[
+  {
+    "coordinatesV1": "org.apache.nutch:nutch:1.5.1",
+    "coordinatesV2": "org.apache.nutch:nutch:1.6",
+    "caller": "|java+constructor:///org/apache/nutch/parse/ParseUtil/ParseUtil(org.apache.hadoop.conf.Configuration)|",
+    "called": "|java+method:///com/google/common/util/concurrent/ThreadFactoryBuilder/setDaemon(boolean)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/nutch/parse/ParserFactory/ParserFactory(org.apache.hadoop.conf.Configuration)|",
+      "|java+method:///org/apache/hadoop/conf/Configuration/getInt(java.lang.String,int)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/common/util/concurrent/ThreadFactoryBuilder/setNameFormat(java.lang.String)|",
+      "|java+method:///java/util/concurrent/Executors/newCachedThreadPool(java.util.concurrent.ThreadFactory)|",
+      "|java+constructor:///org/apache/nutch/parse/ParserFactory/ParserFactory(org.apache.hadoop.conf.Configuration)|",
+      "|java+method:///com/google/common/util/concurrent/ThreadFactoryBuilder/build()|",
+      "|java+method:///org/apache/hadoop/conf/Configuration/getInt(java.lang.String,int)|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///com/google/common/util/concurrent/ThreadFactoryBuilder/setDaemon(boolean)|",
+      "|java+constructor:///com/google/common/util/concurrent/ThreadFactoryBuilder/ThreadFactoryBuilder()|"
+    ],
+    "affectedLib": "com.google.guava:guava:11.0.2",
+    "change": "ADDED"
+  }
+]

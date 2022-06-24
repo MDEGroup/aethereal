@@ -1,0 +1,1423 @@
+[
+  {
+    "coordinatesV1": "org.eclipse.scout.rt:org.eclipse.scout.rt.platform:5.2.0.M4",
+    "coordinatesV2": "org.eclipse.scout.rt:org.eclipse.scout.rt.platform:5.2.0.M3",
+    "caller": "|java+method:///org/eclipse/scout/rt/platform/internal/BeanManagerImplementor/optBean(java.lang.Class)|",
+    "called": "|java+method:///org/eclipse/scout/commons/Assertions/fail(java.lang.String,java.lang.Object%5B%5D)|",
+    "v1Body": [
+      "|java+method:///java/util/List/isEmpty()|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///java/util/List/get(int)|",
+      "|java+method:///org/eclipse/scout/commons/Assertions/fail(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///org/eclipse/scout/rt/platform/internal/BeanManagerImplementor/querySingle(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/List/isEmpty()|",
+      "|java+method:///java/util/List/get(int)|",
+      "|java+method:///org/eclipse/scout/rt/platform/internal/BeanManagerImplementor/querySingle(java.lang.Class)|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///org/eclipse/scout/rt/platform/util/Assertions/fail(java.lang.String,java.lang.Object%5B%5D)|"
+    ],
+    "affectedLib": "org.eclipse.scout.rt:org.eclipse.scout.commons:5.2.0.M3",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.eclipse.scout.rt:org.eclipse.scout.rt.platform:5.2.0.M4",
+    "coordinatesV2": "org.eclipse.scout.rt:org.eclipse.scout.rt.platform:5.2.0.M3",
+    "caller": "|java+method:///org/eclipse/scout/rt/platform/internal/BeanManagerImplementor/unregisterBean(org.eclipse.scout.rt.platform.IBean)|",
+    "called": "|java+method:///org/eclipse/scout/commons/Assertions/assertNotNull(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/eclipse/scout/rt/platform/internal/BeanHierarchy/removeBean(org.eclipse.scout.rt.platform.IBean)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/eclipse/scout/rt/platform/internal/BeanManagerImplementor/listImplementedTypes(org.eclipse.scout.rt.platform.IBean)|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/Collection/iterator()|",
+      "|java+method:///java/util/concurrent/locks/ReentrantReadWriteLock/writeLock()|",
+      "|java+method:///java/util/concurrent/locks/ReentrantReadWriteLock$WriteLock/unlock()|",
+      "|java+method:///org/eclipse/scout/rt/platform/internal/BeanImplementor/dispose()|",
+      "|java+method:///java/util/concurrent/locks/ReentrantReadWriteLock$WriteLock/lock()|",
+      "|java+method:///org/eclipse/scout/commons/Assertions/assertNotNull(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/eclipse/scout/rt/platform/internal/BeanHierarchy/removeBean(org.eclipse.scout.rt.platform.IBean)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/eclipse/scout/rt/platform/internal/BeanManagerImplementor/listImplementedTypes(org.eclipse.scout.rt.platform.IBean)|",
+      "|java+method:///java/util/concurrent/locks/ReentrantReadWriteLock$WriteLock/lock()|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/eclipse/scout/rt/platform/util/Assertions/assertNotNull(java.lang.Object)|",
+      "|java+method:///java/util/Collection/iterator()|",
+      "|java+method:///java/util/concurrent/locks/ReentrantReadWriteLock/writeLock()|",
+      "|java+method:///java/util/concurrent/locks/ReentrantReadWriteLock$WriteLock/unlock()|",
+      "|java+method:///org/eclipse/scout/rt/platform/internal/BeanImplementor/dispose()|"
+    ],
+    "affectedLib": "org.eclipse.scout.rt:org.eclipse.scout.commons:5.2.0.M3",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.eclipse.scout.rt:org.eclipse.scout.rt.platform:5.2.0.M4",
+    "coordinatesV2": "org.eclipse.scout.rt:org.eclipse.scout.rt.platform:5.2.0.M3",
+    "caller": "|java+method:///org/eclipse/scout/rt/platform/config/AbstractLongConfigProperty/parse(java.lang.String)|",
+    "called": "|java+method:///org/eclipse/scout/commons/StringUtility/hasText(java.lang.CharSequence)|",
+    "v1Body": [
+      "|java+method:///java/lang/Long/parseLong(java.lang.String)|",
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///org/eclipse/scout/rt/platform/config/AbstractLongConfigProperty/parse(java.lang.String)|",
+      "|java+method:///org/eclipse/scout/commons/StringUtility/hasText(java.lang.CharSequence)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Long/parseLong(java.lang.String)|",
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///org/eclipse/scout/rt/platform/util/StringUtility/hasText(java.lang.CharSequence)|",
+      "|java+method:///org/eclipse/scout/rt/platform/config/AbstractLongConfigProperty/parse(java.lang.String)|"
+    ],
+    "affectedLib": "org.eclipse.scout.rt:org.eclipse.scout.commons:5.2.0.M3",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.eclipse.scout.rt:org.eclipse.scout.rt.platform:5.2.0.M4",
+    "coordinatesV2": "org.eclipse.scout.rt:org.eclipse.scout.rt.platform:5.2.0.M3",
+    "caller": "|java+method:///org/eclipse/scout/rt/platform/config/AbstractStringConfigProperty/parse(java.lang.String)|",
+    "called": "|java+method:///org/eclipse/scout/commons/StringUtility/hasText(java.lang.CharSequence)|",
+    "v1Body": [
+      "|java+method:///org/eclipse/scout/commons/StringUtility/hasText(java.lang.CharSequence)|",
+      "|java+method:///org/eclipse/scout/rt/platform/config/AbstractStringConfigProperty/parse(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/eclipse/scout/rt/platform/util/StringUtility/hasText(java.lang.CharSequence)|",
+      "|java+method:///org/eclipse/scout/rt/platform/config/AbstractStringConfigProperty/parse(java.lang.String)|"
+    ],
+    "affectedLib": "org.eclipse.scout.rt:org.eclipse.scout.commons:5.2.0.M3",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.eclipse.scout.rt:org.eclipse.scout.rt.platform:5.2.0.M4",
+    "coordinatesV2": "org.eclipse.scout.rt:org.eclipse.scout.rt.platform:5.2.0.M3",
+    "caller": "|java+method:///org/eclipse/scout/rt/platform/context/PropertyMap/contains(java.lang.Object)|",
+    "called": "|java+method:///org/eclipse/scout/commons/Assertions/assertNotNull(java.lang.Object,java.lang.String,java.lang.Object%5B%5D)|",
+    "v1Body": [
+      "|java+method:///java/util/Map/containsKey(java.lang.Object)|",
+      "|java+method:///org/eclipse/scout/commons/Assertions/assertNotNull(java.lang.Object,java.lang.String,java.lang.Object%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/eclipse/scout/rt/platform/util/Assertions/assertNotNull(java.lang.Object,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///java/util/Map/containsKey(java.lang.Object)|"
+    ],
+    "affectedLib": "org.eclipse.scout.rt:org.eclipse.scout.commons:5.2.0.M3",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.eclipse.scout.rt:org.eclipse.scout.rt.platform:5.2.0.M4",
+    "coordinatesV2": "org.eclipse.scout.rt:org.eclipse.scout.rt.platform:5.2.0.M3",
+    "caller": "|java+method:///org/eclipse/scout/rt/platform/internal/BeanManagerImplementor/getBean(java.lang.Class)|",
+    "called": "|java+method:///org/eclipse/scout/commons/Assertions/fail(java.lang.String,java.lang.Object%5B%5D)|",
+    "v1Body": [
+      "|java+method:///org/eclipse/scout/rt/platform/internal/BeanManagerImplementor/optBean(java.lang.Class)|",
+      "|java+method:///org/eclipse/scout/commons/Assertions/fail(java.lang.String,java.lang.Object%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/eclipse/scout/rt/platform/internal/BeanManagerImplementor/optBean(java.lang.Class)|",
+      "|java+method:///org/eclipse/scout/rt/platform/util/Assertions/fail(java.lang.String,java.lang.Object%5B%5D)|"
+    ],
+    "affectedLib": "org.eclipse.scout.rt:org.eclipse.scout.commons:5.2.0.M3",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.eclipse.scout.rt:org.eclipse.scout.rt.platform:5.2.0.M4",
+    "coordinatesV2": "org.eclipse.scout.rt:org.eclipse.scout.rt.platform:5.2.0.M3",
+    "caller": "|java+method:///org/eclipse/scout/rt/platform/context/RunContext/withRunMonitor(org.eclipse.scout.rt.platform.context.RunMonitor)|",
+    "called": "|java+method:///org/eclipse/scout/commons/Assertions/assertNotNull(java.lang.Object,java.lang.String,java.lang.Object%5B%5D)|",
+    "v1Body": [
+      "|java+method:///org/eclipse/scout/commons/Assertions/assertNotNull(java.lang.Object,java.lang.String,java.lang.Object%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/eclipse/scout/rt/platform/util/Assertions/assertNotNull(java.lang.Object,java.lang.String,java.lang.Object%5B%5D)|"
+    ],
+    "affectedLib": "org.eclipse.scout.rt:org.eclipse.scout.commons:5.2.0.M3",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.eclipse.scout.rt:org.eclipse.scout.rt.platform:5.2.0.M4",
+    "coordinatesV2": "org.eclipse.scout.rt:org.eclipse.scout.rt.platform:5.2.0.M3",
+    "caller": "|java+method:///org/eclipse/scout/rt/platform/exception/ExceptionHandler/handleThrowable(java.lang.Throwable)|",
+    "called": "|java+method:///org/eclipse/scout/commons/StringUtility/nvl(java.lang.Object,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/lang/Class/getSimpleName()|",
+      "|java+method:///org/eclipse/scout/commons/StringUtility/nvl(java.lang.Object,java.lang.String)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///java/lang/Throwable/getMessage()|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/lang/Object/getClass()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Class/getSimpleName()|",
+      "|java+method:///java/lang/Throwable/getMessage()|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///org/eclipse/scout/rt/platform/util/StringUtility/nvl(java.lang.Object,java.lang.String)|",
+      "|java+method:///java/lang/Object/getClass()|"
+    ],
+    "affectedLib": "org.eclipse.scout.rt:org.eclipse.scout.commons:5.2.0.M3",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.eclipse.scout.rt:org.eclipse.scout.rt.platform:5.2.0.M4",
+    "coordinatesV2": "org.eclipse.scout.rt:org.eclipse.scout.rt.platform:5.2.0.M3",
+    "caller": "|java+method:///org/eclipse/scout/rt/platform/util/FormattingUtility/formatObject(java.lang.Object)|",
+    "called": "|java+method:///org/eclipse/scout/commons/nls/NlsLocale/get()|",
+    "v1Body": [
+      "|java+method:///java/util/Calendar/setTime(java.util.Date)|",
+      "|java+method:///org/eclipse/scout/rt/platform/util/NumberFormatProvider/getNumberInstance(java.util.Locale)|",
+      "|java+method:///java/util/Calendar/getInstance()|",
+      "|java+method:///java/text/DateFormat/format(java.lang.Object)|",
+      "|java+method:///java/util/Calendar/get(int)|",
+      "|java+method:///java/text/NumberFormat/setMaximumFractionDigits(int)|",
+      "|java+method:///java/lang/Boolean/booleanValue()|",
+      "|java+method:///org/eclipse/scout/rt/platform/util/DateFormatProvider/getDateInstance(int,java.util.Locale)|",
+      "|java+method:///java/text/NumberFormat/setMinimumFractionDigits(int)|",
+      "|java+method:///org/eclipse/scout/commons/nls/NlsLocale/get()|",
+      "|java+method:///org/eclipse/scout/rt/platform/util/DateFormatProvider/getDateTimeInstance(int,int,java.util.Locale)|",
+      "|java+method:///org/eclipse/scout/rt/platform/BEANS/get(java.lang.Class)|",
+      "|java+method:///java/text/DecimalFormat/format(java.lang.Object)|",
+      "|java+method:///java/text/NumberFormat/format(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/eclipse/scout/rt/platform/nls/NlsLocale/get()|",
+      "|java+method:///java/text/NumberFormat/setMinimumFractionDigits(int)|",
+      "|java+method:///org/eclipse/scout/rt/platform/BEANS/get(java.lang.Class)|",
+      "|java+method:///org/eclipse/scout/rt/platform/util/NumberFormatProvider/getNumberInstance(java.util.Locale)|",
+      "|java+method:///java/util/Calendar/getInstance()|",
+      "|java+method:///java/text/DateFormat/format(java.lang.Object)|",
+      "|java+method:///java/util/Calendar/get(int)|",
+      "|java+method:///java/text/NumberFormat/setMaximumFractionDigits(int)|",
+      "|java+method:///java/lang/Boolean/booleanValue()|",
+      "|java+method:///java/util/Calendar/setTime(java.util.Date)|",
+      "|java+method:///org/eclipse/scout/rt/platform/util/date/DateFormatProvider/getDateInstance(int,java.util.Locale)|",
+      "|java+method:///java/text/DecimalFormat/format(java.lang.Object)|",
+      "|java+method:///java/text/NumberFormat/format(java.lang.Object)|",
+      "|java+method:///org/eclipse/scout/rt/platform/util/date/DateFormatProvider/getDateTimeInstance(int,int,java.util.Locale)|"
+    ],
+    "affectedLib": "org.eclipse.scout.rt:org.eclipse.scout.commons:5.2.0.M3",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.eclipse.scout.rt:org.eclipse.scout.rt.platform:5.2.0.M4",
+    "coordinatesV2": "org.eclipse.scout.rt:org.eclipse.scout.rt.platform:5.2.0.M3",
+    "caller": "|java+method:///org/eclipse/scout/rt/platform/internal/DefaultBeanInstanceProducer/checkInstanciationInProgress(org.eclipse.scout.rt.platform.IBean)|",
+    "called": "|java+method:///org/eclipse/scout/commons/CollectionUtility/format(java.util.Collection,java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///org/eclipse/scout/rt/platform/BeanCreationException/BeanCreationException(java.lang.String,java.lang.String)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///java/lang/ThreadLocal/get()|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+method:///org/eclipse/scout/commons/CollectionUtility/format(java.util.Collection,java.lang.String)|",
+      "|java+method:///java/util/Deque/contains(java.lang.Object)|",
+      "|java+method:///org/eclipse/scout/rt/platform/IBean/getBeanClazz()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/eclipse/scout/rt/platform/util/CollectionUtility/format(java.util.Collection,java.lang.String)|",
+      "|java+constructor:///org/eclipse/scout/rt/platform/BeanCreationException/BeanCreationException(java.lang.String,java.lang.String)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///java/lang/ThreadLocal/get()|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+method:///java/util/Deque/contains(java.lang.Object)|",
+      "|java+method:///org/eclipse/scout/rt/platform/IBean/getBeanClazz()|"
+    ],
+    "affectedLib": "org.eclipse.scout.rt:org.eclipse.scout.commons:5.2.0.M3",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.eclipse.scout.rt:org.eclipse.scout.rt.platform:5.2.0.M4",
+    "coordinatesV2": "org.eclipse.scout.rt:org.eclipse.scout.rt.platform:5.2.0.M3",
+    "caller": "|java+constructor:///org/eclipse/scout/rt/platform/BeanMetaData/BeanMetaData(org.eclipse.scout.rt.platform.IBean)|",
+    "called": "|java+method:///org/eclipse/scout/commons/Assertions/assertNotNull(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/eclipse/scout/rt/platform/IBean/getBeanInstanceProducer()|",
+      "|java+method:///org/eclipse/scout/rt/platform/IBean/getBeanAnnotations()|",
+      "|java+method:///org/eclipse/scout/rt/platform/IBean/getInitialInstance()|",
+      "|java+method:///org/eclipse/scout/rt/platform/IBean/getBeanClazz()|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///org/eclipse/scout/commons/Assertions/assertNotNull(java.lang.Object)|",
+      "|java+constructor:///java/util/HashMap/HashMap(java.util.Map)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/eclipse/scout/rt/platform/IBean/getBeanInstanceProducer()|",
+      "|java+method:///org/eclipse/scout/rt/platform/IBean/getBeanAnnotations()|",
+      "|java+method:///org/eclipse/scout/rt/platform/IBean/getInitialInstance()|",
+      "|java+constructor:///java/util/HashMap/HashMap(java.util.Map)|",
+      "|java+method:///org/eclipse/scout/rt/platform/IBean/getBeanClazz()|",
+      "|java+method:///org/eclipse/scout/rt/platform/util/Assertions/assertNotNull(java.lang.Object)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "org.eclipse.scout.rt:org.eclipse.scout.commons:5.2.0.M3",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.eclipse.scout.rt:org.eclipse.scout.rt.platform:5.2.0.M4",
+    "coordinatesV2": "org.eclipse.scout.rt:org.eclipse.scout.rt.platform:5.2.0.M3",
+    "caller": "|java+method:///org/eclipse/scout/rt/platform/internal/DefaultBeanInstanceProducer/getApplicationScopedInstance(org.eclipse.scout.rt.platform.IBean)|",
+    "called": "|java+method:///org/eclipse/scout/commons/FinalValue/setIfAbsent(java.util.concurrent.Callable)|",
+    "v1Body": [
+      "|java+constructor:///org/eclipse/scout/rt/platform/internal/DefaultBeanInstanceProducer$1/DefaultBeanInstanceProducer$1(org.eclipse.scout.rt.platform.internal.DefaultBeanInstanceProducer,org.eclipse.scout.rt.platform.IBean)|",
+      "|java+method:///org/eclipse/scout/commons/FinalValue/setIfAbsent(java.util.concurrent.Callable)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/eclipse/scout/rt/platform/internal/DefaultBeanInstanceProducer$1/DefaultBeanInstanceProducer$1(org.eclipse.scout.rt.platform.internal.DefaultBeanInstanceProducer,org.eclipse.scout.rt.platform.IBean)|",
+      "|java+method:///org/eclipse/scout/rt/platform/util/FinalValue/setIfAbsent(java.util.concurrent.Callable)|"
+    ],
+    "affectedLib": "org.eclipse.scout.rt:org.eclipse.scout.commons:5.2.0.M3",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.eclipse.scout.rt:org.eclipse.scout.rt.platform:5.2.0.M4",
+    "coordinatesV2": "org.eclipse.scout.rt:org.eclipse.scout.rt.platform:5.2.0.M3",
+    "caller": "|java+constructor:///org/eclipse/scout/rt/platform/job/internal/DelayedExecutor/DelayedExecutor(java.util.concurrent.ExecutorService,java.lang.String,int)|",
+    "called": "|java+method:///org/eclipse/scout/commons/Assertions/assertGreater(java.lang.Comparable,java.lang.Comparable)|",
+    "v1Body": [
+      "|java+constructor:///java/util/concurrent/atomic/AtomicLong/AtomicLong()|",
+      "|java+method:///java/util/concurrent/ExecutorService/execute(java.lang.Runnable)|",
+      "|java+method:///org/eclipse/scout/commons/Assertions/assertGreater(java.lang.Comparable,java.lang.Comparable)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+constructor:///java/util/concurrent/DelayQueue/DelayQueue()|",
+      "|java+constructor:///org/eclipse/scout/rt/platform/job/internal/DelayedExecutor$P_DispatchLoop/DelayedExecutor$P_DispatchLoop(org.eclipse.scout.rt.platform.job.internal.DelayedExecutor,org.eclipse.scout.rt.platform.job.internal.DelayedExecutor$P_DispatchLoop)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/util/concurrent/atomic/AtomicLong/AtomicLong()|",
+      "|java+method:///org/eclipse/scout/rt/platform/util/Assertions/assertGreater(java.lang.Comparable,java.lang.Comparable)|",
+      "|java+method:///java/util/concurrent/ExecutorService/execute(java.lang.Runnable)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+constructor:///java/util/concurrent/DelayQueue/DelayQueue()|",
+      "|java+constructor:///org/eclipse/scout/rt/platform/job/internal/DelayedExecutor$P_DispatchLoop/DelayedExecutor$P_DispatchLoop(org.eclipse.scout.rt.platform.job.internal.DelayedExecutor,org.eclipse.scout.rt.platform.job.internal.DelayedExecutor$P_DispatchLoop)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "org.eclipse.scout.rt:org.eclipse.scout.commons:5.2.0.M3",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.eclipse.scout.rt:org.eclipse.scout.rt.platform:5.2.0.M4",
+    "coordinatesV2": "org.eclipse.scout.rt:org.eclipse.scout.rt.platform:5.2.0.M3",
+    "caller": "|java+method:///org/eclipse/scout/rt/platform/internal/BeanManagerImplementor/getRegisteredBeans(java.lang.Class)|",
+    "called": "|java+method:///org/eclipse/scout/commons/CollectionUtility/emptyArrayList()|",
+    "v1Body": [
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+method:///org/eclipse/scout/rt/platform/internal/BeanHierarchy/getBeans()|",
+      "|java+method:///java/util/concurrent/locks/ReentrantReadWriteLock$ReadLock/lock()|",
+      "|java+method:///java/util/concurrent/locks/ReentrantReadWriteLock/readLock()|",
+      "|java+constructor:///java/util/ArrayList/ArrayList(java.util.Collection)|",
+      "|java+method:///org/eclipse/scout/commons/CollectionUtility/emptyArrayList()|",
+      "|java+method:///java/util/concurrent/locks/ReentrantReadWriteLock$ReadLock/unlock()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/eclipse/scout/rt/platform/util/CollectionUtility/emptyArrayList()|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+method:///java/util/concurrent/locks/ReentrantReadWriteLock$ReadLock/unlock()|",
+      "|java+method:///org/eclipse/scout/rt/platform/internal/BeanHierarchy/getBeans()|",
+      "|java+method:///java/util/concurrent/locks/ReentrantReadWriteLock$ReadLock/lock()|",
+      "|java+method:///java/util/concurrent/locks/ReentrantReadWriteLock/readLock()|",
+      "|java+constructor:///java/util/ArrayList/ArrayList(java.util.Collection)|"
+    ],
+    "affectedLib": "org.eclipse.scout.rt:org.eclipse.scout.commons:5.2.0.M3",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.eclipse.scout.rt:org.eclipse.scout.rt.platform:5.2.0.M4",
+    "coordinatesV2": "org.eclipse.scout.rt:org.eclipse.scout.rt.platform:5.2.0.M3",
+    "caller": "|java+method:///org/eclipse/scout/rt/platform/BeanMetaData/initProducerAnnotation()|",
+    "called": "|java+constructor:///org/eclipse/scout/commons/Assertions$AssertionException/Assertions$AssertionException(java.lang.String,java.lang.Object%5B%5D)|",
+    "v1Body": [
+      "|java+method:///java/lang/Class/newInstance()|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+constructor:///org/eclipse/scout/commons/Assertions$AssertionException/Assertions$AssertionException(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///org/eclipse/scout/rt/platform/BeanMetaData/getBeanAnnotation(java.lang.Class)|",
+      "|java+method:///org/eclipse/scout/rt/platform/BeanProducer/value()|",
+      "|java+method:///java/lang/ReflectiveOperationException/getMessage()|",
+      "|java+method:///org/eclipse/scout/rt/platform/BeanMetaData/withProducer(org.eclipse.scout.rt.platform.IBeanInstanceProducer)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/eclipse/scout/rt/platform/util/Assertions$AssertionException/Assertions$AssertionException(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///java/lang/Class/newInstance()|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///org/eclipse/scout/rt/platform/BeanMetaData/getBeanAnnotation(java.lang.Class)|",
+      "|java+method:///org/eclipse/scout/rt/platform/BeanProducer/value()|",
+      "|java+method:///java/lang/ReflectiveOperationException/getMessage()|",
+      "|java+method:///org/eclipse/scout/rt/platform/BeanMetaData/withProducer(org.eclipse.scout.rt.platform.IBeanInstanceProducer)|"
+    ],
+    "affectedLib": "org.eclipse.scout.rt:org.eclipse.scout.commons:5.2.0.M3",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.eclipse.scout.rt:org.eclipse.scout.rt.platform:5.2.0.M4",
+    "coordinatesV2": "org.eclipse.scout.rt:org.eclipse.scout.rt.platform:5.2.0.M3",
+    "caller": "|java+method:///org/eclipse/scout/rt/platform/context/RunContextRunner$1/call()|",
+    "called": "|java+method:///org/eclipse/scout/commons/chain/InvocationChain$Chain/continueChain()|",
+    "v1Body": [
+      "|java+method:///org/eclipse/scout/commons/chain/InvocationChain$Chain/continueChain()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/eclipse/scout/rt/platform/chain/callable/CallableChain$Chain/continueChain()|"
+    ],
+    "affectedLib": "org.eclipse.scout.rt:org.eclipse.scout.commons:5.2.0.M3",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.eclipse.scout.rt:org.eclipse.scout.rt.platform:5.2.0.M4",
+    "coordinatesV2": "org.eclipse.scout.rt:org.eclipse.scout.rt.platform:5.2.0.M3",
+    "caller": "|java+method:///org/eclipse/scout/rt/platform/job/internal/JobFutureTask/toString()|",
+    "called": "|java+method:///org/eclipse/scout/commons/ToStringBuilder/attr(java.lang.String,boolean)|",
+    "v1Body": [
+      "|java+method:///org/eclipse/scout/commons/ToStringBuilder/toString()|",
+      "|java+constructor:///org/eclipse/scout/commons/ToStringBuilder/ToStringBuilder(java.lang.Object)|",
+      "|java+method:///org/eclipse/scout/commons/ToStringBuilder/attr(java.lang.String,boolean)|",
+      "|java+method:///org/eclipse/scout/commons/ToStringBuilder/attr(java.lang.String,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/eclipse/scout/rt/platform/util/ToStringBuilder/toString()|",
+      "|java+constructor:///org/eclipse/scout/rt/platform/util/ToStringBuilder/ToStringBuilder(java.lang.Object)|",
+      "|java+method:///org/eclipse/scout/rt/platform/util/ToStringBuilder/attr(java.lang.String,java.lang.Object)|"
+    ],
+    "affectedLib": "org.eclipse.scout.rt:org.eclipse.scout.commons:5.2.0.M3",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.eclipse.scout.rt:org.eclipse.scout.rt.platform:5.2.0.M4",
+    "coordinatesV2": "org.eclipse.scout.rt:org.eclipse.scout.rt.platform:5.2.0.M3",
+    "caller": "|java+method:///org/eclipse/scout/rt/platform/internal/BeanManagerImplementor/startCreateImmediatelyBeans()|",
+    "called": "|java+constructor:///org/eclipse/scout/commons/exception/InitializationException/InitializationException(java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///org/eclipse/scout/commons/exception/InitializationException/InitializationException(java.lang.String)|",
+      "|java+method:///java/lang/Class/getSimpleName()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///org/eclipse/scout/rt/platform/internal/BeanManagerImplementor/isApplicationScoped(org.eclipse.scout.rt.platform.IBean)|",
+      "|java+method:///org/eclipse/scout/rt/platform/internal/BeanManagerImplementor/getBeans(java.lang.Class)|",
+      "|java+method:///org/eclipse/scout/rt/platform/IBean/getBeanClazz()|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///org/eclipse/scout/rt/platform/IBean/getInstance()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/eclipse/scout/rt/platform/internal/BeanManagerImplementor/isCreateImmediately(org.eclipse.scout.rt.platform.IBean)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Class/getSimpleName()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///org/eclipse/scout/rt/platform/internal/BeanManagerImplementor/isApplicationScoped(org.eclipse.scout.rt.platform.IBean)|",
+      "|java+method:///org/eclipse/scout/rt/platform/internal/BeanManagerImplementor/getBeans(java.lang.Class)|",
+      "|java+method:///org/eclipse/scout/rt/platform/IBean/getBeanClazz()|",
+      "|java+constructor:///org/eclipse/scout/rt/platform/exception/InitializationException/InitializationException(java.lang.String)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///org/eclipse/scout/rt/platform/IBean/getInstance()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/eclipse/scout/rt/platform/internal/BeanManagerImplementor/isCreateImmediately(org.eclipse.scout.rt.platform.IBean)|"
+    ],
+    "affectedLib": "org.eclipse.scout.rt:org.eclipse.scout.commons:5.2.0.M3",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.eclipse.scout.rt:org.eclipse.scout.rt.platform:5.2.0.M4",
+    "coordinatesV2": "org.eclipse.scout.rt:org.eclipse.scout.rt.platform:5.2.0.M3",
+    "caller": "|java+constructor:///org/eclipse/scout/rt/platform/job/internal/JobManager/JobManager()|",
+    "called": "|java+method:///org/eclipse/scout/commons/Assertions/assertNotNull(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///java/lang/Integer/intValue()|",
+      "|java+method:///org/eclipse/scout/rt/platform/job/internal/FutureSet/init(org.eclipse.scout.rt.platform.job.IJobManager)|",
+      "|java+method:///org/eclipse/scout/commons/Assertions/assertNotNull(java.lang.Object)|",
+      "|java+method:///org/eclipse/scout/rt/platform/job/internal/JobManager/createExecutor()|",
+      "|java+constructor:///org/eclipse/scout/rt/platform/job/internal/DelayedExecutor/DelayedExecutor(java.util.concurrent.ExecutorService,java.lang.String,int)|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///org/eclipse/scout/rt/platform/config/CONFIG/getPropertyValue(java.lang.Class)|",
+      "|java+method:///org/eclipse/scout/rt/platform/BEANS/get(java.lang.Class)|",
+      "|java+method:///org/eclipse/scout/rt/platform/job/internal/MutexSemaphores/init(java.util.concurrent.ExecutorService)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Integer/intValue()|",
+      "|java+method:///org/eclipse/scout/rt/platform/job/internal/FutureSet/init(org.eclipse.scout.rt.platform.job.IJobManager)|",
+      "|java+method:///org/eclipse/scout/rt/platform/util/Assertions/assertNotNull(java.lang.Object)|",
+      "|java+method:///org/eclipse/scout/rt/platform/job/internal/JobManager/createExecutor()|",
+      "|java+constructor:///org/eclipse/scout/rt/platform/job/internal/DelayedExecutor/DelayedExecutor(java.util.concurrent.ExecutorService,java.lang.String,int)|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///org/eclipse/scout/rt/platform/config/CONFIG/getPropertyValue(java.lang.Class)|",
+      "|java+method:///org/eclipse/scout/rt/platform/BEANS/get(java.lang.Class)|"
+    ],
+    "affectedLib": "org.eclipse.scout.rt:org.eclipse.scout.commons:5.2.0.M3",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.eclipse.scout.rt:org.eclipse.scout.rt.platform:5.2.0.M4",
+    "coordinatesV2": "org.eclipse.scout.rt:org.eclipse.scout.rt.platform:5.2.0.M3",
+    "caller": "|java+method:///org/eclipse/scout/rt/platform/context/PropertyMap/getOrDefault(java.lang.Object,java.lang.Object)|",
+    "called": "|java+method:///org/eclipse/scout/commons/Assertions/assertNotNull(java.lang.Object,java.lang.String,java.lang.Object%5B%5D)|",
+    "v1Body": [
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+method:///java/util/Map/containsKey(java.lang.Object)|",
+      "|java+method:///org/eclipse/scout/commons/Assertions/assertNotNull(java.lang.Object,java.lang.String,java.lang.Object%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/eclipse/scout/rt/platform/util/Assertions/assertNotNull(java.lang.Object,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+method:///java/util/Map/containsKey(java.lang.Object)|"
+    ],
+    "affectedLib": "org.eclipse.scout.rt:org.eclipse.scout.commons:5.2.0.M3",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.eclipse.scout.rt:org.eclipse.scout.rt.platform:5.2.0.M4",
+    "coordinatesV2": "org.eclipse.scout.rt:org.eclipse.scout.rt.platform:5.2.0.M3",
+    "caller": "|java+method:///org/eclipse/scout/rt/platform/util/NumberUtility/parseInt(java.lang.String)|",
+    "called": "|java+method:///org/eclipse/scout/commons/StringUtility/isNullOrEmpty(java.lang.CharSequence)|",
+    "v1Body": [
+      "|java+method:///java/lang/Integer/intValue()|",
+      "|java+method:///org/eclipse/scout/commons/StringUtility/isNullOrEmpty(java.lang.CharSequence)|",
+      "|java+method:///org/eclipse/scout/commons/TypeCastUtility/castValue(java.lang.Object,java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Integer/intValue()|",
+      "|java+method:///org/eclipse/scout/rt/platform/util/TypeCastUtility/castValue(java.lang.Object,java.lang.Class)|",
+      "|java+method:///org/eclipse/scout/rt/platform/util/StringUtility/isNullOrEmpty(java.lang.CharSequence)|"
+    ],
+    "affectedLib": "org.eclipse.scout.rt:org.eclipse.scout.commons:5.2.0.M3",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.eclipse.scout.rt:org.eclipse.scout.rt.platform:5.2.0.M4",
+    "coordinatesV2": "org.eclipse.scout.rt:org.eclipse.scout.rt.platform:5.2.0.M3",
+    "caller": "|java+method:///org/eclipse/scout/rt/platform/inventory/internal/JandexClassInventory/getClassInfo(java.lang.Class)|",
+    "called": "|java+method:///org/eclipse/scout/commons/Assertions/assertNotNull(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/eclipse/scout/commons/Assertions/assertNotNull(java.lang.Object)|",
+      "|java+method:///org/jboss/jandex/DotName/createSimple(java.lang.String)|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+constructor:///org/eclipse/scout/rt/platform/inventory/internal/JandexClassInfo/JandexClassInfo(org.jboss.jandex.ClassInfo)|",
+      "|java+method:///org/jboss/jandex/IndexView/getClassByName(org.jboss.jandex.DotName)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/jboss/jandex/DotName/createSimple(java.lang.String)|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+method:///org/jboss/jandex/IndexView/getClassByName(org.jboss.jandex.DotName)|",
+      "|java+method:///org/eclipse/scout/rt/platform/util/Assertions/assertNotNull(java.lang.Object)|",
+      "|java+constructor:///org/eclipse/scout/rt/platform/inventory/internal/JandexClassInfo/JandexClassInfo(org.jboss.jandex.ClassInfo)|"
+    ],
+    "affectedLib": "org.eclipse.scout.rt:org.eclipse.scout.commons:5.2.0.M3",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.eclipse.scout.rt:org.eclipse.scout.rt.platform:5.2.0.M4",
+    "coordinatesV2": "org.eclipse.scout.rt:org.eclipse.scout.rt.platform:5.2.0.M3",
+    "caller": "|java+method:///org/eclipse/scout/rt/platform/job/internal/JobFutureTask$1/call()|",
+    "called": "|java+method:///org/eclipse/scout/commons/chain/InvocationChain/invoke(java.util.concurrent.Callable)|",
+    "v1Body": [
+      "|java+method:///org/eclipse/scout/commons/chain/InvocationChain/invoke(java.util.concurrent.Callable)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/eclipse/scout/rt/platform/chain/callable/CallableChain/call(java.util.concurrent.Callable)|"
+    ],
+    "affectedLib": "org.eclipse.scout.rt:org.eclipse.scout.commons:5.2.0.M3",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.eclipse.scout.rt:org.eclipse.scout.rt.platform:5.2.0.M4",
+    "coordinatesV2": "org.eclipse.scout.rt:org.eclipse.scout.rt.platform:5.2.0.M3",
+    "caller": "|java+method:///org/eclipse/scout/rt/platform/internal/BeanInstanceUtil/overrideDistinctiveMethodName(java.lang.reflect.Method)|",
+    "called": "|java+method:///org/eclipse/scout/commons/Assertions/assertNotNull(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///java/lang/String/valueOf(java.lang.Object)|",
+      "|java+method:///java/lang/reflect/Method/getModifiers()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder(java.lang.String)|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+method:///java/lang/reflect/Method/getName()|",
+      "|java+method:///java/lang/reflect/Modifier/isPrivate(int)|",
+      "|java+method:///java/lang/reflect/Method/getDeclaringClass()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/eclipse/scout/commons/Assertions/assertNotNull(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/String/valueOf(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/reflect/Method/getModifiers()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder(java.lang.String)|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+method:///java/lang/reflect/Method/getName()|",
+      "|java+method:///java/lang/reflect/Modifier/isPrivate(int)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/eclipse/scout/rt/platform/util/Assertions/assertNotNull(java.lang.Object)|",
+      "|java+method:///java/lang/reflect/Method/getDeclaringClass()|"
+    ],
+    "affectedLib": "org.eclipse.scout.rt:org.eclipse.scout.commons:5.2.0.M3",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.eclipse.scout.rt:org.eclipse.scout.rt.platform:5.2.0.M4",
+    "coordinatesV2": "org.eclipse.scout.rt:org.eclipse.scout.rt.platform:5.2.0.M3",
+    "caller": "|java+method:///org/eclipse/scout/rt/platform/context/RunContext/toString()|",
+    "called": "|java+constructor:///org/eclipse/scout/commons/ToStringBuilder/ToStringBuilder(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/eclipse/scout/rt/platform/context/RunContext/getRunMonitor()|",
+      "|java+method:///org/eclipse/scout/commons/ToStringBuilder/ref(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/eclipse/scout/rt/platform/context/RunContext/getSubject()|",
+      "|java+method:///org/eclipse/scout/commons/ToStringBuilder/toString()|",
+      "|java+method:///org/eclipse/scout/rt/platform/context/RunContext/getLocale()|",
+      "|java+constructor:///org/eclipse/scout/commons/ToStringBuilder/ToStringBuilder(java.lang.Object)|",
+      "|java+method:///org/eclipse/scout/commons/ToStringBuilder/attr(java.lang.String,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/eclipse/scout/rt/platform/util/ToStringBuilder/toString()|",
+      "|java+constructor:///org/eclipse/scout/rt/platform/util/ToStringBuilder/ToStringBuilder(java.lang.Object)|",
+      "|java+method:///org/eclipse/scout/rt/platform/util/ToStringBuilder/attr(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/eclipse/scout/rt/platform/context/RunContext/getRunMonitor()|",
+      "|java+method:///org/eclipse/scout/rt/platform/context/RunContext/getIdentifiers()|",
+      "|java+method:///org/eclipse/scout/rt/platform/context/RunContext/getSubject()|",
+      "|java+method:///org/eclipse/scout/rt/platform/util/CollectionUtility/format(java.util.Collection)|",
+      "|java+method:///org/eclipse/scout/rt/platform/context/RunContext/getLocale()|",
+      "|java+method:///org/eclipse/scout/rt/platform/util/ToStringBuilder/attr(java.lang.String,java.lang.String)|",
+      "|java+method:///org/eclipse/scout/rt/platform/util/ToStringBuilder/ref(java.lang.String,java.lang.Object)|"
+    ],
+    "affectedLib": "org.eclipse.scout.rt:org.eclipse.scout.commons:5.2.0.M3",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.eclipse.scout.rt:org.eclipse.scout.rt.platform:5.2.0.M4",
+    "coordinatesV2": "org.eclipse.scout.rt:org.eclipse.scout.rt.platform:5.2.0.M3",
+    "caller": "|java+method:///org/eclipse/scout/rt/platform/internal/PlatformImplementor/validateBeanManager()|",
+    "called": "|java+method:///org/eclipse/scout/commons/BeanUtility/getInterfacesHierarchy(java.lang.Class,java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///java/lang/Class/isAssignableFrom(java.lang.Class)|",
+      "|java+method:///java/util/HashSet/iterator()|",
+      "|java+method:///java/lang/Object/equals(java.lang.Object)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/eclipse/scout/rt/platform/internal/BeanHierarchy/orderOf(org.eclipse.scout.rt.platform.IBean)|",
+      "|java+method:///org/eclipse/scout/commons/BeanUtility/getInterfacesHierarchy(java.lang.Class,java.lang.Class)|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/eclipse/scout/rt/platform/IBeanManager/getBeans(java.lang.Class)|",
+      "|java+method:///org/eclipse/scout/rt/platform/IBeanManager/getRegisteredBeans(java.lang.Class)|",
+      "|java+method:///org/eclipse/scout/rt/platform/IBean/getBeanClazz()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///org/eclipse/scout/rt/platform/internal/PlatformImplementor/getBeanManager()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/io/PrintStream/println(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder(java.lang.String)|",
+      "|java+method:///java/util/HashSet/add(java.lang.Object)|",
+      "|java+method:///java/lang/Exception/printStackTrace()|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+method:///java/lang/StringBuilder/append(double)|",
+      "|java+constructor:///java/util/HashSet/HashSet()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Class/isAssignableFrom(java.lang.Class)|",
+      "|java+method:///java/util/HashSet/iterator()|",
+      "|java+method:///java/lang/Object/equals(java.lang.Object)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/eclipse/scout/rt/platform/internal/BeanHierarchy/orderOf(org.eclipse.scout.rt.platform.IBean)|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/eclipse/scout/rt/platform/IBeanManager/getBeans(java.lang.Class)|",
+      "|java+method:///org/eclipse/scout/rt/platform/IBeanManager/getRegisteredBeans(java.lang.Class)|",
+      "|java+method:///org/eclipse/scout/rt/platform/IBean/getBeanClazz()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///org/eclipse/scout/rt/platform/internal/PlatformImplementor/getBeanManager()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/io/PrintStream/println(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder(java.lang.String)|",
+      "|java+method:///java/util/HashSet/add(java.lang.Object)|",
+      "|java+method:///java/lang/Exception/printStackTrace()|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+method:///org/eclipse/scout/rt/platform/util/BeanUtility/getInterfacesHierarchy(java.lang.Class,java.lang.Class)|",
+      "|java+method:///java/lang/StringBuilder/append(double)|",
+      "|java+constructor:///java/util/HashSet/HashSet()|"
+    ],
+    "affectedLib": "org.eclipse.scout.rt:org.eclipse.scout.commons:5.2.0.M3",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.eclipse.scout.rt:org.eclipse.scout.rt.platform:5.2.0.M4",
+    "coordinatesV2": "org.eclipse.scout.rt:org.eclipse.scout.rt.platform:5.2.0.M3",
+    "caller": "|java+method:///org/eclipse/scout/rt/platform/context/PropertyMap/put(java.lang.Object,java.lang.Object)|",
+    "called": "|java+method:///org/eclipse/scout/commons/Assertions/assertNotNull(java.lang.Object,java.lang.String,java.lang.Object%5B%5D)|",
+    "v1Body": [
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/eclipse/scout/commons/Assertions/assertNotNull(java.lang.Object,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///java/util/Map/remove(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/eclipse/scout/rt/platform/util/Assertions/assertNotNull(java.lang.Object,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///java/util/Map/remove(java.lang.Object)|"
+    ],
+    "affectedLib": "org.eclipse.scout.rt:org.eclipse.scout.commons:5.2.0.M3",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.eclipse.scout.rt:org.eclipse.scout.rt.platform:5.2.0.M4",
+    "coordinatesV2": "org.eclipse.scout.rt:org.eclipse.scout.rt.platform:5.2.0.M3",
+    "caller": "|java+method:///org/eclipse/scout/rt/platform/job/listener/JobEvent/toString()|",
+    "called": "|java+method:///org/eclipse/scout/commons/ToStringBuilder/attr(java.lang.String,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/eclipse/scout/commons/ToStringBuilder/attr(java.lang.String,java.lang.String)|",
+      "|java+method:///org/eclipse/scout/rt/platform/job/listener/JobEventType/name()|",
+      "|java+method:///org/eclipse/scout/commons/ToStringBuilder/ref(java.lang.String,java.lang.Object)|",
+      "|java+constructor:///org/eclipse/scout/commons/ToStringBuilder/ToStringBuilder(java.lang.Object)|",
+      "|java+method:///org/eclipse/scout/commons/ToStringBuilder/attr(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/eclipse/scout/rt/platform/job/listener/JobEvent/getSource()|",
+      "|java+method:///org/eclipse/scout/commons/ToStringBuilder/toString()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/eclipse/scout/rt/platform/util/ToStringBuilder/toString()|",
+      "|java+constructor:///org/eclipse/scout/rt/platform/util/ToStringBuilder/ToStringBuilder(java.lang.Object)|",
+      "|java+method:///org/eclipse/scout/rt/platform/util/ToStringBuilder/attr(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/eclipse/scout/rt/platform/job/listener/JobEventType/name()|",
+      "|java+method:///org/eclipse/scout/rt/platform/job/listener/JobEvent/getSource()|",
+      "|java+method:///org/eclipse/scout/rt/platform/util/ToStringBuilder/attr(java.lang.String,java.lang.String)|",
+      "|java+method:///org/eclipse/scout/rt/platform/util/ToStringBuilder/ref(java.lang.String,java.lang.Object)|"
+    ],
+    "affectedLib": "org.eclipse.scout.rt:org.eclipse.scout.commons:5.2.0.M3",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.eclipse.scout.rt:org.eclipse.scout.rt.platform:5.2.0.M4",
+    "coordinatesV2": "org.eclipse.scout.rt:org.eclipse.scout.rt.platform:5.2.0.M3",
+    "caller": "|java+method:///org/eclipse/scout/rt/platform/internal/PlatformImplementor/validateConfiguration()|",
+    "called": "|java+method:///org/eclipse/scout/commons/ConfigUtility/isInitialized()|",
+    "v1Body": [
+      "|java+method:///org/eclipse/scout/rt/platform/config/IConfigProperty/getValue()|",
+      "|java+method:///org/eclipse/scout/rt/platform/BEANS/all(java.lang.Class)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String)|",
+      "|java+method:///org/eclipse/scout/rt/platform/config/IConfigProperty/getKey()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder(java.lang.String)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+constructor:///org/eclipse/scout/rt/platform/exception/PlatformException/PlatformException(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/eclipse/scout/commons/ConfigUtility/isInitialized()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///org/slf4j/Logger/isInfoEnabled()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/eclipse/scout/rt/platform/config/IConfigProperty/getValue()|",
+      "|java+method:///org/eclipse/scout/rt/platform/BEANS/all(java.lang.Class)|",
+      "|java+method:///org/eclipse/scout/rt/platform/config/ConfigUtility/isInitialized()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+method:///org/eclipse/scout/rt/platform/config/IConfigProperty/getKey()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder(java.lang.String)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String,java.lang.Object)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///org/eclipse/scout/rt/platform/exception/PlatformException/PlatformException(java.lang.String,java.lang.Object%5B%5D)|"
+    ],
+    "affectedLib": "org.eclipse.scout.rt:org.eclipse.scout.commons:5.2.0.M3",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.eclipse.scout.rt:org.eclipse.scout.rt.platform:5.2.0.M4",
+    "coordinatesV2": "org.eclipse.scout.rt:org.eclipse.scout.rt.platform:5.2.0.M3",
+    "caller": "|java+method:///org/eclipse/scout/rt/platform/util/NumberUtility/parseDouble(java.lang.String)|",
+    "called": "|java+method:///org/eclipse/scout/commons/StringUtility/isNullOrEmpty(java.lang.CharSequence)|",
+    "v1Body": [
+      "|java+method:///org/eclipse/scout/commons/StringUtility/isNullOrEmpty(java.lang.CharSequence)|",
+      "|java+method:///java/lang/Double/doubleValue()|",
+      "|java+method:///org/eclipse/scout/commons/TypeCastUtility/castValue(java.lang.Object,java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/eclipse/scout/rt/platform/util/TypeCastUtility/castValue(java.lang.Object,java.lang.Class)|",
+      "|java+method:///java/lang/Double/doubleValue()|",
+      "|java+method:///org/eclipse/scout/rt/platform/util/StringUtility/isNullOrEmpty(java.lang.CharSequence)|"
+    ],
+    "affectedLib": "org.eclipse.scout.rt:org.eclipse.scout.commons:5.2.0.M3",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.eclipse.scout.rt:org.eclipse.scout.rt.platform:5.2.0.M4",
+    "coordinatesV2": "org.eclipse.scout.rt:org.eclipse.scout.rt.platform:5.2.0.M3",
+    "caller": "|java+method:///org/eclipse/scout/rt/platform/config/AbstractBinaryConfigProperty/parse(java.lang.String)|",
+    "called": "|java+method:///org/eclipse/scout/commons/Base64Utility/decode(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/eclipse/scout/commons/Base64Utility/decode(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///org/eclipse/scout/rt/platform/exception/PlatformException/PlatformException(java.lang.String)|",
+      "|java+method:///org/eclipse/scout/commons/StringUtility/hasText(java.lang.CharSequence)|",
+      "|java+method:///org/eclipse/scout/rt/platform/config/AbstractBinaryConfigProperty/getKey()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/eclipse/scout/rt/platform/config/AbstractBinaryConfigProperty/parse(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/eclipse/scout/rt/platform/util/Base64Utility/decode(java.lang.String)|",
+      "|java+method:///org/eclipse/scout/rt/platform/config/AbstractBinaryConfigProperty/getKey()|",
+      "|java+method:///org/eclipse/scout/rt/platform/util/StringUtility/hasText(java.lang.CharSequence)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/eclipse/scout/rt/platform/config/AbstractBinaryConfigProperty/parse(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///org/eclipse/scout/rt/platform/exception/PlatformException/PlatformException(java.lang.String,java.lang.Object%5B%5D)|"
+    ],
+    "affectedLib": "org.eclipse.scout.rt:org.eclipse.scout.commons:5.2.0.M3",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.eclipse.scout.rt:org.eclipse.scout.rt.platform:5.2.0.M4",
+    "coordinatesV2": "org.eclipse.scout.rt:org.eclipse.scout.rt.platform:5.2.0.M3",
+    "caller": "|java+initializer:///org/eclipse/scout/rt/platform/inventory/ClassInventory/ClassInventory$initializer|",
+    "called": "|java+method:///org/eclipse/scout/commons/StringUtility/formatNanos(long)|",
+    "v1Body": [
+      "|java+method:///org/eclipse/scout/rt/platform/inventory/internal/JandexInventoryBuilder/scanAllModules()|",
+      "|java+constructor:///org/eclipse/scout/rt/platform/inventory/internal/JandexInventoryBuilder/JandexInventoryBuilder()|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///org/eclipse/scout/rt/platform/inventory/internal/JandexInventoryBuilder/finish()|",
+      "|java+constructor:///org/eclipse/scout/rt/platform/exception/PlatformException/PlatformException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/eclipse/scout/commons/StringUtility/formatNanos(long)|",
+      "|java+method:///java/lang/System/nanoTime()|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String,java.lang.Object)|",
+      "|java+constructor:///org/eclipse/scout/rt/platform/inventory/internal/JandexClassInventory/JandexClassInventory(org.jboss.jandex.IndexView)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/eclipse/scout/rt/platform/inventory/internal/JandexInventoryBuilder/scanAllModules()|",
+      "|java+constructor:///org/eclipse/scout/rt/platform/inventory/internal/JandexInventoryBuilder/JandexInventoryBuilder()|",
+      "|java+method:///java/lang/System/nanoTime()|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///org/eclipse/scout/rt/platform/inventory/internal/JandexInventoryBuilder/finish()|",
+      "|java+method:///org/eclipse/scout/rt/platform/util/StringUtility/formatNanos(long)|",
+      "|java+constructor:///org/eclipse/scout/rt/platform/exception/PlatformException/PlatformException(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String,java.lang.Object)|",
+      "|java+constructor:///org/eclipse/scout/rt/platform/inventory/internal/JandexClassInventory/JandexClassInventory(org.jboss.jandex.IndexView)|"
+    ],
+    "affectedLib": "org.eclipse.scout.rt:org.eclipse.scout.commons:5.2.0.M3",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.eclipse.scout.rt:org.eclipse.scout.rt.platform:5.2.0.M4",
+    "coordinatesV2": "org.eclipse.scout.rt:org.eclipse.scout.rt.platform:5.2.0.M3",
+    "caller": "|java+constructor:///org/eclipse/scout/rt/platform/BeanMetaData/BeanMetaData(java.lang.Class,java.lang.Object)|",
+    "called": "|java+method:///org/eclipse/scout/commons/Assertions/assertNotNull(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/eclipse/scout/commons/Assertions/assertNotNull(java.lang.Object)|",
+      "|java+method:///org/eclipse/scout/rt/platform/BeanMetaData/readStaticAnnotations(java.lang.Class,boolean)|",
+      "|java+method:///org/eclipse/scout/rt/platform/BeanMetaData/initProducerAnnotation()|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+method:///org/eclipse/scout/rt/platform/BeanMetaData/inheritOrderIfRequired(java.lang.Class)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/eclipse/scout/rt/platform/BeanMetaData/readStaticAnnotations(java.lang.Class,boolean)|",
+      "|java+method:///org/eclipse/scout/rt/platform/BeanMetaData/initProducerAnnotation()|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+method:///org/eclipse/scout/rt/platform/util/Assertions/assertNotNull(java.lang.Object)|",
+      "|java+method:///org/eclipse/scout/rt/platform/BeanMetaData/inheritOrderIfRequired(java.lang.Class)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "org.eclipse.scout.rt:org.eclipse.scout.commons:5.2.0.M3",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.eclipse.scout.rt:org.eclipse.scout.rt.platform:5.2.0.M4",
+    "coordinatesV2": "org.eclipse.scout.rt:org.eclipse.scout.rt.platform:5.2.0.M3",
+    "caller": "|java+method:///org/eclipse/scout/rt/platform/job/JobInput/toString()|",
+    "called": "|java+method:///org/eclipse/scout/commons/ToStringBuilder/attr(java.lang.String,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/eclipse/scout/rt/platform/job/JobInput/getMutex()|",
+      "|java+method:///org/eclipse/scout/commons/ToStringBuilder/attr(java.lang.String,java.lang.String)|",
+      "|java+method:///org/eclipse/scout/commons/ToStringBuilder/attr(java.lang.String,long)|",
+      "|java+method:///org/eclipse/scout/commons/ToStringBuilder/toString()|",
+      "|java+constructor:///org/eclipse/scout/commons/ToStringBuilder/ToStringBuilder(java.lang.Object)|",
+      "|java+method:///org/eclipse/scout/commons/ToStringBuilder/attr(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/eclipse/scout/rt/platform/job/JobInput/getRunContext()|",
+      "|java+method:///org/eclipse/scout/rt/platform/job/JobInput/getName()|",
+      "|java+method:///org/eclipse/scout/rt/platform/job/JobInput/getThreadName()|",
+      "|java+method:///org/eclipse/scout/commons/ToStringBuilder/ref(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/eclipse/scout/rt/platform/job/JobInput/isLogOnError()|",
+      "|java+method:///org/eclipse/scout/rt/platform/job/JobInput/getExpirationTimeMillis()|",
+      "|java+method:///org/eclipse/scout/commons/ToStringBuilder/attr(java.lang.String,boolean)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/eclipse/scout/rt/platform/util/ToStringBuilder/toString()|",
+      "|java+constructor:///org/eclipse/scout/rt/platform/util/ToStringBuilder/ToStringBuilder(java.lang.Object)|",
+      "|java+method:///org/eclipse/scout/rt/platform/util/ToStringBuilder/attr(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/eclipse/scout/rt/platform/util/ToStringBuilder/attr(java.lang.String,boolean)|",
+      "|java+method:///org/eclipse/scout/rt/platform/util/ToStringBuilder/attr(java.lang.String,java.lang.String)|",
+      "|java+method:///org/eclipse/scout/rt/platform/util/ToStringBuilder/ref(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/eclipse/scout/rt/platform/util/ToStringBuilder/attr(java.lang.String,java.util.Collection)|",
+      "|java+method:///org/eclipse/scout/rt/platform/util/ToStringBuilder/attr(java.lang.String,long)|",
+      "|java+method:///org/eclipse/scout/rt/platform/util/ToStringBuilder/attr(java.lang.String,int)|"
+    ],
+    "affectedLib": "org.eclipse.scout.rt:org.eclipse.scout.commons:5.2.0.M3",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.eclipse.scout.rt:org.eclipse.scout.rt.platform:5.2.0.M4",
+    "coordinatesV2": "org.eclipse.scout.rt:org.eclipse.scout.rt.platform:5.2.0.M3",
+    "caller": "|java+method:///org/eclipse/scout/rt/platform/BEANS/get(java.lang.Class)|",
+    "called": "|java+method:///org/eclipse/scout/commons/Assertions/assertNotNull(java.lang.Object,java.lang.String,java.lang.Object%5B%5D)|",
+    "v1Body": [
+      "|java+method:///org/eclipse/scout/rt/platform/BEANS/opt(java.lang.Class)|",
+      "|java+method:///org/eclipse/scout/commons/Assertions/assertNotNull(java.lang.Object,java.lang.String,java.lang.Object%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/eclipse/scout/rt/platform/util/Assertions/assertNotNull(java.lang.Object,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///org/eclipse/scout/rt/platform/BEANS/opt(java.lang.Class)|"
+    ],
+    "affectedLib": "org.eclipse.scout.rt:org.eclipse.scout.commons:5.2.0.M3",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.eclipse.scout.rt:org.eclipse.scout.rt.platform:5.2.0.M4",
+    "coordinatesV2": "org.eclipse.scout.rt:org.eclipse.scout.rt.platform:5.2.0.M3",
+    "caller": "|java+method:///org/eclipse/scout/rt/platform/config/AbstractPositiveLongConfigProperty/parse(java.lang.String)|",
+    "called": "|java+method:///org/eclipse/scout/commons/StringUtility/hasText(java.lang.CharSequence)|",
+    "v1Body": [
+      "|java+method:///org/eclipse/scout/rt/platform/config/AbstractPositiveLongConfigProperty/parse(java.lang.String)|",
+      "|java+method:///java/lang/Long/parseLong(java.lang.String)|",
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder(java.lang.String)|",
+      "|java+constructor:///org/eclipse/scout/rt/platform/exception/PlatformException/PlatformException(java.lang.String)|",
+      "|java+method:///org/eclipse/scout/commons/StringUtility/hasText(java.lang.CharSequence)|",
+      "|java+method:///java/util/regex/Pattern/matcher(java.lang.CharSequence)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/util/regex/Matcher/matches()|",
+      "|java+method:///org/eclipse/scout/rt/platform/config/AbstractPositiveLongConfigProperty/getKey()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/eclipse/scout/rt/platform/config/AbstractPositiveLongConfigProperty/parse(java.lang.String)|",
+      "|java+method:///java/lang/Long/parseLong(java.lang.String)|",
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder(java.lang.String)|",
+      "|java+method:///java/util/regex/Pattern/matcher(java.lang.CharSequence)|",
+      "|java+method:///org/eclipse/scout/rt/platform/util/StringUtility/hasText(java.lang.CharSequence)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/util/regex/Matcher/matches()|",
+      "|java+method:///org/eclipse/scout/rt/platform/config/AbstractPositiveLongConfigProperty/getKey()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///org/eclipse/scout/rt/platform/exception/PlatformException/PlatformException(java.lang.String,java.lang.Object%5B%5D)|"
+    ],
+    "affectedLib": "org.eclipse.scout.rt:org.eclipse.scout.commons:5.2.0.M3",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.eclipse.scout.rt:org.eclipse.scout.rt.platform:5.2.0.M4",
+    "coordinatesV2": "org.eclipse.scout.rt:org.eclipse.scout.rt.platform:5.2.0.M3",
+    "caller": "|java+method:///org/eclipse/scout/rt/platform/config/AbstractPositiveIntegerConfigProperty/parse(java.lang.String)|",
+    "called": "|java+method:///org/eclipse/scout/commons/StringUtility/hasText(java.lang.CharSequence)|",
+    "v1Body": [
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/util/regex/Matcher/matches()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder(java.lang.String)|",
+      "|java+method:///java/lang/Integer/parseInt(java.lang.String)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///java/util/regex/Pattern/matcher(java.lang.CharSequence)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///org/eclipse/scout/rt/platform/exception/PlatformException/PlatformException(java.lang.String)|",
+      "|java+method:///org/eclipse/scout/rt/platform/config/AbstractPositiveIntegerConfigProperty/getKey()|",
+      "|java+method:///org/eclipse/scout/rt/platform/config/AbstractPositiveIntegerConfigProperty/parse(java.lang.String)|",
+      "|java+method:///org/eclipse/scout/commons/StringUtility/hasText(java.lang.CharSequence)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/regex/Matcher/matches()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder(java.lang.String)|",
+      "|java+method:///org/eclipse/scout/rt/platform/config/AbstractPositiveIntegerConfigProperty/getKey()|",
+      "|java+method:///java/lang/Integer/parseInt(java.lang.String)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///org/eclipse/scout/rt/platform/config/AbstractPositiveIntegerConfigProperty/parse(java.lang.String)|",
+      "|java+method:///java/util/regex/Pattern/matcher(java.lang.CharSequence)|",
+      "|java+method:///org/eclipse/scout/rt/platform/util/StringUtility/hasText(java.lang.CharSequence)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///org/eclipse/scout/rt/platform/exception/PlatformException/PlatformException(java.lang.String,java.lang.Object%5B%5D)|"
+    ],
+    "affectedLib": "org.eclipse.scout.rt:org.eclipse.scout.commons:5.2.0.M3",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.eclipse.scout.rt:org.eclipse.scout.rt.platform:5.2.0.M4",
+    "coordinatesV2": "org.eclipse.scout.rt:org.eclipse.scout.rt.platform:5.2.0.M3",
+    "caller": "|java+method:///org/eclipse/scout/rt/platform/context/PropertyMap/get(java.lang.Object)|",
+    "called": "|java+method:///org/eclipse/scout/commons/Assertions/assertNotNull(java.lang.Object,java.lang.String,java.lang.Object%5B%5D)|",
+    "v1Body": [
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+method:///org/eclipse/scout/commons/Assertions/assertNotNull(java.lang.Object,java.lang.String,java.lang.Object%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/eclipse/scout/rt/platform/util/Assertions/assertNotNull(java.lang.Object,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|"
+    ],
+    "affectedLib": "org.eclipse.scout.rt:org.eclipse.scout.commons:5.2.0.M3",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.eclipse.scout.rt:org.eclipse.scout.rt.platform:5.2.0.M4",
+    "coordinatesV2": "org.eclipse.scout.rt:org.eclipse.scout.rt.platform:5.2.0.M3",
+    "caller": "|java+method:///org/eclipse/scout/rt/platform/util/NumberUtility/parseLong(java.lang.String)|",
+    "called": "|java+method:///org/eclipse/scout/commons/StringUtility/isNullOrEmpty(java.lang.CharSequence)|",
+    "v1Body": [
+      "|java+method:///org/eclipse/scout/commons/StringUtility/isNullOrEmpty(java.lang.CharSequence)|",
+      "|java+method:///java/lang/Long/longValue()|",
+      "|java+method:///org/eclipse/scout/commons/TypeCastUtility/castValue(java.lang.Object,java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/eclipse/scout/rt/platform/util/TypeCastUtility/castValue(java.lang.Object,java.lang.Class)|",
+      "|java+method:///java/lang/Long/longValue()|",
+      "|java+method:///org/eclipse/scout/rt/platform/util/StringUtility/isNullOrEmpty(java.lang.CharSequence)|"
+    ],
+    "affectedLib": "org.eclipse.scout.rt:org.eclipse.scout.commons:5.2.0.M3",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.eclipse.scout.rt:org.eclipse.scout.rt.platform:5.2.0.M4",
+    "coordinatesV2": "org.eclipse.scout.rt:org.eclipse.scout.rt.platform:5.2.0.M3",
+    "caller": "|java+method:///org/eclipse/scout/rt/platform/util/NumberUtility/sum(java.util.Collection)|",
+    "called": "|java+method:///org/eclipse/scout/commons/CollectionUtility/hasElements(java.util.Collection)|",
+    "v1Body": [
+      "|java+method:///org/eclipse/scout/commons/CollectionUtility/hasElements(java.util.Collection)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/math/BigDecimal/add(java.math.BigDecimal)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/eclipse/scout/rt/platform/util/NumberUtility/numberToBigDecimal(java.lang.Number)|",
+      "|java+method:///java/util/Collection/iterator()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/math/BigDecimal/add(java.math.BigDecimal)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/eclipse/scout/rt/platform/util/CollectionUtility/hasElements(java.util.Collection)|",
+      "|java+method:///org/eclipse/scout/rt/platform/util/NumberUtility/numberToBigDecimal(java.lang.Number)|",
+      "|java+method:///java/util/Collection/iterator()|"
+    ],
+    "affectedLib": "org.eclipse.scout.rt:org.eclipse.scout.commons:5.2.0.M3",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.eclipse.scout.rt:org.eclipse.scout.rt.platform:5.2.0.M4",
+    "coordinatesV2": "org.eclipse.scout.rt:org.eclipse.scout.rt.platform:5.2.0.M3",
+    "caller": "|java+method:///org/eclipse/scout/rt/platform/job/internal/BlockingCondition/toString()|",
+    "called": "|java+method:///org/eclipse/scout/commons/ToStringBuilder/attr(java.lang.String,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/eclipse/scout/commons/ToStringBuilder/attr(java.lang.String,java.lang.String)|",
+      "|java+method:///org/eclipse/scout/commons/ToStringBuilder/toString()|",
+      "|java+constructor:///org/eclipse/scout/commons/ToStringBuilder/ToStringBuilder(java.lang.Object)|",
+      "|java+method:///org/eclipse/scout/commons/ToStringBuilder/attr(java.lang.String,boolean)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/eclipse/scout/rt/platform/util/ToStringBuilder/toString()|",
+      "|java+constructor:///org/eclipse/scout/rt/platform/util/ToStringBuilder/ToStringBuilder(java.lang.Object)|",
+      "|java+method:///org/eclipse/scout/rt/platform/util/ToStringBuilder/attr(java.lang.String,boolean)|"
+    ],
+    "affectedLib": "org.eclipse.scout.rt:org.eclipse.scout.commons:5.2.0.M3",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.eclipse.scout.rt:org.eclipse.scout.rt.platform:5.2.0.M4",
+    "coordinatesV2": "org.eclipse.scout.rt:org.eclipse.scout.rt.platform:5.2.0.M3",
+    "caller": "|java+method:///org/eclipse/scout/rt/platform/job/internal/JobFutureTask/awaitDone(long,java.util.concurrent.TimeUnit)|",
+    "called": "|java+method:///org/eclipse/scout/commons/exception/ProcessingException/isInterruption()|",
+    "v1Body": [
+      "|java+method:///org/eclipse/scout/rt/platform/job/internal/JobFutureTask/awaitDoneAndGet(long,java.util.concurrent.TimeUnit)|",
+      "|java+method:///org/eclipse/scout/commons/exception/ProcessingException/isInterruption()|",
+      "|java+method:///org/eclipse/scout/commons/exception/ProcessingException/isTimeout()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/eclipse/scout/rt/platform/job/internal/JobFutureTask/restoreInterruptionStatus()|",
+      "|java+method:///org/eclipse/scout/rt/platform/job/internal/JobExceptionTranslator/translateTimeoutException(java.util.concurrent.TimeoutException,java.lang.String,long,java.util.concurrent.TimeUnit)|",
+      "|java+method:///org/eclipse/scout/rt/platform/BEANS/get(java.lang.Class)|",
+      "|java+method:///org/eclipse/scout/rt/platform/job/internal/JobFutureTask/interceptException(java.lang.Throwable)|",
+      "|java+method:///org/eclipse/scout/rt/platform/job/internal/JobFutureTask/assertNotSameMutex()|",
+      "|java+method:///org/eclipse/scout/rt/platform/job/internal/DonePromise/get(long,java.util.concurrent.TimeUnit)|",
+      "|java+method:///org/eclipse/scout/rt/platform/job/internal/JobExceptionTranslator/translateInterruptedException(java.lang.InterruptedException,java.lang.String)|"
+    ],
+    "affectedLib": "org.eclipse.scout.rt:org.eclipse.scout.commons:5.2.0.M3",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.eclipse.scout.rt:org.eclipse.scout.rt.platform:5.2.0.M4",
+    "coordinatesV2": "org.eclipse.scout.rt:org.eclipse.scout.rt.platform:5.2.0.M3",
+    "caller": "|java+method:///org/eclipse/scout/rt/platform/config/AbstractSubjectConfigProperty/convertToSubject(java.lang.String)|",
+    "called": "|java+constructor:///org/eclipse/scout/commons/security/SimplePrincipal/SimplePrincipal(java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///org/eclipse/scout/commons/security/SimplePrincipal/SimplePrincipal(java.lang.String)|",
+      "|java+method:///javax/security/auth/Subject/getPrincipals()|",
+      "|java+method:///javax/security/auth/Subject/setReadOnly()|",
+      "|java+constructor:///javax/security/auth/Subject/Subject()|",
+      "|java+method:///java/util/Set/add(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///javax/security/auth/Subject/getPrincipals()|",
+      "|java+constructor:///org/eclipse/scout/rt/platform/security/SimplePrincipal/SimplePrincipal(java.lang.String)|",
+      "|java+method:///javax/security/auth/Subject/setReadOnly()|",
+      "|java+constructor:///javax/security/auth/Subject/Subject()|",
+      "|java+method:///java/util/Set/add(java.lang.Object)|"
+    ],
+    "affectedLib": "org.eclipse.scout.rt:org.eclipse.scout.commons:5.2.0.M3",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.eclipse.scout.rt:org.eclipse.scout.rt.platform:5.2.0.M4",
+    "coordinatesV2": "org.eclipse.scout.rt:org.eclipse.scout.rt.platform:5.2.0.M3",
+    "caller": "|java+method:///org/eclipse/scout/rt/platform/inventory/FilteredClassInventory/getClasses()|",
+    "called": "|java+method:///org/eclipse/scout/commons/CollectionUtility/hashSet(java.util.Collection)|",
+    "v1Body": [
+      "|java+method:///java/util/Set/size()|",
+      "|java+constructor:///java/util/HashSet/HashSet(int)|",
+      "|java+method:///org/eclipse/scout/commons/filter/IFilter/accept(java.lang.Object)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/eclipse/scout/rt/platform/inventory/IClassInfo/resolveClass()|",
+      "|java+method:///org/eclipse/scout/rt/platform/inventory/FilteredClassInventory/findClasses()|",
+      "|java+method:///java/util/Set/add(java.lang.Object)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/eclipse/scout/commons/CollectionUtility/hashSet(java.util.Collection)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/util/Set/iterator()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/eclipse/scout/rt/platform/filter/IFilter/accept(java.lang.Object)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/util/Set/size()|",
+      "|java+constructor:///java/util/HashSet/HashSet(int)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/eclipse/scout/rt/platform/inventory/IClassInfo/resolveClass()|",
+      "|java+method:///org/eclipse/scout/rt/platform/inventory/FilteredClassInventory/findClasses()|",
+      "|java+method:///java/util/Set/add(java.lang.Object)|",
+      "|java+method:///org/eclipse/scout/rt/platform/util/CollectionUtility/hashSet(java.util.Collection)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/util/Set/iterator()|"
+    ],
+    "affectedLib": "org.eclipse.scout.rt:org.eclipse.scout.commons:5.2.0.M3",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.eclipse.scout.rt:org.eclipse.scout.rt.platform:5.2.0.M4",
+    "coordinatesV2": "org.eclipse.scout.rt:org.eclipse.scout.rt.platform:5.2.0.M3",
+    "caller": "|java+method:///org/eclipse/scout/rt/platform/job/internal/JobFutureTask/assertNotSameMutex()|",
+    "called": "|java+method:///org/eclipse/scout/commons/Assertions/assertFalse(boolean,java.lang.String,java.lang.Object%5B%5D)|",
+    "v1Body": [
+      "|java+method:///org/eclipse/scout/rt/platform/job/JobInput/getMutex()|",
+      "|java+method:///java/lang/Object/equals(java.lang.Object)|",
+      "|java+method:///org/eclipse/scout/commons/Assertions/assertFalse(boolean,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///java/lang/ThreadLocal/get()|",
+      "|java+method:///org/eclipse/scout/rt/platform/job/IFuture/getJobInput()|",
+      "|java+method:///org/eclipse/scout/rt/platform/job/internal/JobFutureTask/getMutexObject()|",
+      "|java+method:///org/eclipse/scout/rt/platform/job/internal/JobFutureTask/isDone()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/eclipse/scout/rt/platform/job/JobInput/getMutex()|",
+      "|java+method:///org/eclipse/scout/rt/platform/job/IMutex/isMutexOwner(org.eclipse.scout.rt.platform.job.IFuture)|",
+      "|java+method:///java/lang/ThreadLocal/get()|",
+      "|java+method:///org/eclipse/scout/rt/platform/job/IFuture/getJobInput()|",
+      "|java+method:///org/eclipse/scout/rt/platform/job/internal/JobFutureTask/getMutex()|",
+      "|java+method:///org/eclipse/scout/rt/platform/util/Assertions/assertNotSame(java.lang.Object,java.lang.Object,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///org/eclipse/scout/rt/platform/job/internal/JobFutureTask/isDone()|"
+    ],
+    "affectedLib": "org.eclipse.scout.rt:org.eclipse.scout.commons:5.2.0.M3",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.eclipse.scout.rt:org.eclipse.scout.rt.platform:5.2.0.M4",
+    "coordinatesV2": "org.eclipse.scout.rt:org.eclipse.scout.rt.platform:5.2.0.M3",
+    "caller": "|java+method:///org/eclipse/scout/rt/platform/config/AbstractBooleanConfigProperty/parse(java.lang.String)|",
+    "called": "|java+method:///org/eclipse/scout/commons/StringUtility/hasText(java.lang.CharSequence)|",
+    "v1Body": [
+      "|java+method:///java/lang/String/equalsIgnoreCase(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder(java.lang.String)|",
+      "|java+method:///org/eclipse/scout/rt/platform/config/AbstractBooleanConfigProperty/getKey()|",
+      "|java+constructor:///org/eclipse/scout/rt/platform/exception/PlatformException/PlatformException(java.lang.String)|",
+      "|java+method:///org/eclipse/scout/commons/StringUtility/hasText(java.lang.CharSequence)|",
+      "|java+method:///org/eclipse/scout/rt/platform/config/AbstractBooleanConfigProperty/parse(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/String/equalsIgnoreCase(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder(java.lang.String)|",
+      "|java+method:///org/eclipse/scout/rt/platform/config/AbstractBooleanConfigProperty/getKey()|",
+      "|java+method:///org/eclipse/scout/rt/platform/config/AbstractBooleanConfigProperty/parse(java.lang.String)|",
+      "|java+method:///org/eclipse/scout/rt/platform/util/StringUtility/hasText(java.lang.CharSequence)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///org/eclipse/scout/rt/platform/exception/PlatformException/PlatformException(java.lang.String,java.lang.Object%5B%5D)|"
+    ],
+    "affectedLib": "org.eclipse.scout.rt:org.eclipse.scout.commons:5.2.0.M3",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.eclipse.scout.rt:org.eclipse.scout.rt.platform:5.2.0.M4",
+    "coordinatesV2": "org.eclipse.scout.rt:org.eclipse.scout.rt.platform:5.2.0.M3",
+    "caller": "|java+method:///org/eclipse/scout/rt/platform/inventory/internal/JandexClassInventory/getKnownAnnotatedTypes(java.lang.Class)|",
+    "called": "|java+method:///org/eclipse/scout/commons/Assertions/assertNotNull(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/jboss/jandex/IndexView/getAnnotations(org.jboss.jandex.DotName)|",
+      "|java+method:///org/eclipse/scout/commons/Assertions/assertNotNull(java.lang.Object)|",
+      "|java+method:///org/eclipse/scout/commons/Assertions/assertTrue(boolean,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///org/jboss/jandex/DotName/createSimple(java.lang.String)|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+method:///org/eclipse/scout/rt/platform/inventory/internal/JandexClassInventory/convertAnnotationInstance(java.util.Collection)|",
+      "|java+method:///java/lang/Class/isAnnotation()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/jboss/jandex/IndexView/getAnnotations(org.jboss.jandex.DotName)|",
+      "|java+method:///org/jboss/jandex/DotName/createSimple(java.lang.String)|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+method:///org/eclipse/scout/rt/platform/inventory/internal/JandexClassInventory/convertAnnotationInstance(java.util.Collection)|",
+      "|java+method:///org/eclipse/scout/rt/platform/util/Assertions/assertNotNull(java.lang.Object)|",
+      "|java+method:///org/eclipse/scout/rt/platform/util/Assertions/assertTrue(boolean,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///java/lang/Class/isAnnotation()|"
+    ],
+    "affectedLib": "org.eclipse.scout.rt:org.eclipse.scout.commons:5.2.0.M3",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.eclipse.scout.rt:org.eclipse.scout.rt.platform:5.2.0.M4",
+    "coordinatesV2": "org.eclipse.scout.rt:org.eclipse.scout.rt.platform:5.2.0.M3",
+    "caller": "|java+constructor:///org/eclipse/scout/rt/platform/internal/DefaultBeanInstanceProducer/DefaultBeanInstanceProducer()|",
+    "called": "|java+constructor:///org/eclipse/scout/commons/FinalValue/FinalValue()|",
+    "v1Body": [
+      "|java+constructor:///org/eclipse/scout/commons/FinalValue/FinalValue()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/eclipse/scout/rt/platform/util/FinalValue/FinalValue()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "org.eclipse.scout.rt:org.eclipse.scout.commons:5.2.0.M3",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.eclipse.scout.rt:org.eclipse.scout.rt.platform:5.2.0.M4",
+    "coordinatesV2": "org.eclipse.scout.rt:org.eclipse.scout.rt.platform:5.2.0.M3",
+    "caller": "|java+method:///org/eclipse/scout/rt/platform/job/internal/JobFutureTask/cancel(boolean)|",
+    "called": "|java+method:///org/eclipse/scout/commons/CollectionUtility/hashSet(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/eclipse/scout/rt/platform/job/internal/JobFutureTask/isCancelled()|",
+      "|java+method:///org/eclipse/scout/commons/CollectionUtility/hashSet(java.lang.Object)|",
+      "|java+method:///org/eclipse/scout/rt/platform/job/internal/JobFutureTask/access$0(org.eclipse.scout.rt.platform.job.internal.JobFutureTask,boolean)|",
+      "|java+method:///org/eclipse/scout/rt/platform/context/RunMonitor/isCancelled()|",
+      "|java+method:///java/lang/Boolean/valueOf(boolean)|",
+      "|java+method:///java/util/Collections/singleton(java.lang.Object)|",
+      "|java+method:///org/eclipse/scout/rt/platform/context/RunMonitor/cancel(boolean)|",
+      "|java+method:///java/util/Set/add(java.lang.Object)|",
+      "|java+method:///org/eclipse/scout/rt/platform/job/internal/JobFutureTask/isDone()|",
+      "|java+method:///java/util/Set/equals(java.lang.Object)|",
+      "|java+method:///org/eclipse/scout/rt/platform/context/RunMonitor/unregisterCancellable(org.eclipse.scout.commons.ICancellable)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/eclipse/scout/rt/platform/util/CollectionUtility/hashSet(java.lang.Object)|",
+      "|java+method:///org/eclipse/scout/rt/platform/job/internal/JobFutureTask/isCancelled()|",
+      "|java+method:///org/eclipse/scout/rt/platform/job/internal/JobFutureTask/access$0(org.eclipse.scout.rt.platform.job.internal.JobFutureTask,boolean)|",
+      "|java+method:///java/util/Set/equals(java.lang.Object)|",
+      "|java+method:///org/eclipse/scout/rt/platform/context/RunMonitor/isCancelled()|",
+      "|java+method:///java/lang/Boolean/valueOf(boolean)|",
+      "|java+method:///java/util/Collections/singleton(java.lang.Object)|",
+      "|java+method:///org/eclipse/scout/rt/platform/context/RunMonitor/cancel(boolean)|",
+      "|java+method:///java/util/Set/add(java.lang.Object)|",
+      "|java+method:///org/eclipse/scout/rt/platform/context/RunMonitor/unregisterCancellable(org.eclipse.scout.rt.platform.util.concurrent.ICancellable)|",
+      "|java+method:///org/eclipse/scout/rt/platform/job/internal/JobFutureTask/isDone()|"
+    ],
+    "affectedLib": "org.eclipse.scout.rt:org.eclipse.scout.commons:5.2.0.M3",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.eclipse.scout.rt:org.eclipse.scout.rt.platform:5.2.0.M4",
+    "coordinatesV2": "org.eclipse.scout.rt:org.eclipse.scout.rt.platform:5.2.0.M3",
+    "caller": "|java+method:///org/eclipse/scout/rt/platform/job/internal/JobFutureTask/awaitDone()|",
+    "called": "|java+method:///org/eclipse/scout/commons/exception/ProcessingException/isInterruption()|",
+    "v1Body": [
+      "|java+method:///org/eclipse/scout/commons/exception/ProcessingException/isInterruption()|",
+      "|java+method:///org/eclipse/scout/rt/platform/job/internal/JobFutureTask/awaitDoneAndGet()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/eclipse/scout/rt/platform/job/internal/JobFutureTask/restoreInterruptionStatus()|",
+      "|java+method:///org/eclipse/scout/rt/platform/job/internal/DonePromise/get()|",
+      "|java+method:///org/eclipse/scout/rt/platform/BEANS/get(java.lang.Class)|",
+      "|java+method:///org/eclipse/scout/rt/platform/job/internal/JobExceptionTranslator/translateInterruptedException(java.lang.InterruptedException,java.lang.String)|",
+      "|java+method:///org/eclipse/scout/rt/platform/job/internal/JobFutureTask/interceptException(java.lang.Throwable)|",
+      "|java+method:///org/eclipse/scout/rt/platform/job/internal/JobFutureTask/assertNotSameMutex()|"
+    ],
+    "affectedLib": "org.eclipse.scout.rt:org.eclipse.scout.commons:5.2.0.M3",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.eclipse.scout.rt:org.eclipse.scout.rt.platform:5.2.0.M4",
+    "coordinatesV2": "org.eclipse.scout.rt:org.eclipse.scout.rt.platform:5.2.0.M3",
+    "caller": "|java+method:///org/eclipse/scout/rt/platform/config/AbstractConfigProperty/createValue()|",
+    "called": "|java+method:///org/eclipse/scout/commons/ConfigUtility/hasProperty(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/eclipse/scout/rt/platform/config/AbstractConfigProperty/getDefaultValue()|",
+      "|java+method:///org/eclipse/scout/rt/platform/config/AbstractConfigProperty/parse(java.lang.String)|",
+      "|java+method:///org/eclipse/scout/commons/ConfigUtility/getProperty(java.lang.String)|",
+      "|java+method:///org/eclipse/scout/commons/ConfigUtility/hasProperty(java.lang.String)|",
+      "|java+method:///org/eclipse/scout/rt/platform/config/AbstractConfigProperty/getKey()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/eclipse/scout/rt/platform/config/ConfigUtility/getProperty(java.lang.String)|",
+      "|java+method:///org/eclipse/scout/rt/platform/config/ConfigUtility/hasProperty(java.lang.String)|",
+      "|java+method:///org/eclipse/scout/rt/platform/config/AbstractConfigProperty/getDefaultValue()|",
+      "|java+method:///org/eclipse/scout/rt/platform/config/AbstractConfigProperty/parse(java.lang.String)|",
+      "|java+method:///org/eclipse/scout/rt/platform/config/AbstractConfigProperty/getKey()|"
+    ],
+    "affectedLib": "org.eclipse.scout.rt:org.eclipse.scout.commons:5.2.0.M3",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.eclipse.scout.rt:org.eclipse.scout.rt.platform:5.2.0.M4",
+    "coordinatesV2": "org.eclipse.scout.rt:org.eclipse.scout.rt.platform:5.2.0.M3",
+    "caller": "|java+method:///org/eclipse/scout/rt/platform/internal/BeanInstanceUtil/create(java.lang.Class)|",
+    "called": "|java+method:///org/eclipse/scout/commons/Assertions/assertNotNull(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/isWarnEnabled()|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/eclipse/scout/commons/Assertions/assertNotNull(java.lang.Object)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+method:///org/eclipse/scout/rt/platform/internal/BeanInstanceUtil/initializeInstance(java.lang.Object)|",
+      "|java+method:///org/eclipse/scout/rt/platform/internal/BeanInstanceUtil/newInstance(java.lang.Class)|",
+      "|java+constructor:///org/eclipse/scout/rt/platform/BeanCreationException/BeanCreationException(java.lang.String,java.lang.Throwable)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+method:///org/eclipse/scout/rt/platform/internal/BeanInstanceUtil/initializeInstance(java.lang.Object)|",
+      "|java+method:///org/eclipse/scout/rt/platform/util/Assertions/assertNotNull(java.lang.Object)|",
+      "|java+method:///org/eclipse/scout/rt/platform/internal/BeanInstanceUtil/newInstance(java.lang.Class)|",
+      "|java+constructor:///org/eclipse/scout/rt/platform/BeanCreationException/BeanCreationException(java.lang.String,java.lang.Throwable)|"
+    ],
+    "affectedLib": "org.eclipse.scout.rt:org.eclipse.scout.commons:5.2.0.M3",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.eclipse.scout.rt:org.eclipse.scout.rt.platform:5.2.0.M4",
+    "coordinatesV2": "org.eclipse.scout.rt:org.eclipse.scout.rt.platform:5.2.0.M3",
+    "caller": "|java+method:///org/eclipse/scout/rt/platform/internal/BeanManagerImplementor/listImplementedTypes(org.eclipse.scout.rt.platform.IBean)|",
+    "called": "|java+method:///org/eclipse/scout/commons/BeanUtility/getInterfacesHierarchy(java.lang.Class,java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///java/lang/Class/getSuperclass()|",
+      "|java+constructor:///java/util/LinkedHashSet/LinkedHashSet()|",
+      "|java+method:///org/eclipse/scout/commons/BeanUtility/getInterfacesHierarchy(java.lang.Class,java.lang.Class)|",
+      "|java+method:///java/util/LinkedHashSet/addAll(java.util.Collection)|",
+      "|java+method:///org/eclipse/scout/rt/platform/IBean/getBeanClazz()|",
+      "|java+method:///java/util/LinkedHashSet/add(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Class/getSuperclass()|",
+      "|java+method:///java/util/Set/addAll(java.util.Collection)|",
+      "|java+constructor:///java/util/LinkedHashSet/LinkedHashSet()|",
+      "|java+method:///org/eclipse/scout/rt/platform/IBean/getBeanClazz()|",
+      "|java+method:///org/eclipse/scout/rt/platform/util/BeanUtility/getInterfacesHierarchy(java.lang.Class,java.lang.Class)|",
+      "|java+method:///java/util/Set/add(java.lang.Object)|"
+    ],
+    "affectedLib": "org.eclipse.scout.rt:org.eclipse.scout.commons:5.2.0.M3",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.eclipse.scout.rt:org.eclipse.scout.rt.platform:5.2.0.M4",
+    "coordinatesV2": "org.eclipse.scout.rt:org.eclipse.scout.rt.platform:5.2.0.M3",
+    "caller": "|java+method:///org/eclipse/scout/rt/platform/inventory/internal/JandexClassInventory/getAllKnownSubClasses(java.lang.Class)|",
+    "called": "|java+method:///org/eclipse/scout/commons/Assertions/assertNotNull(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///java/lang/Class/isInterface()|",
+      "|java+method:///org/eclipse/scout/commons/Assertions/assertNotNull(java.lang.Object)|",
+      "|java+method:///org/jboss/jandex/DotName/createSimple(java.lang.String)|",
+      "|java+method:///org/jboss/jandex/IndexView/getAllKnownSubclasses(org.jboss.jandex.DotName)|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+method:///org/jboss/jandex/IndexView/getAllKnownImplementors(org.jboss.jandex.DotName)|",
+      "|java+method:///org/eclipse/scout/rt/platform/inventory/internal/JandexClassInventory/convertClassInfos(java.util.Collection)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Class/isInterface()|",
+      "|java+method:///org/jboss/jandex/DotName/createSimple(java.lang.String)|",
+      "|java+method:///org/jboss/jandex/IndexView/getAllKnownSubclasses(org.jboss.jandex.DotName)|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+method:///org/jboss/jandex/IndexView/getAllKnownImplementors(org.jboss.jandex.DotName)|",
+      "|java+method:///org/eclipse/scout/rt/platform/util/Assertions/assertNotNull(java.lang.Object)|",
+      "|java+method:///org/eclipse/scout/rt/platform/inventory/internal/JandexClassInventory/convertClassInfos(java.util.Collection)|"
+    ],
+    "affectedLib": "org.eclipse.scout.rt:org.eclipse.scout.commons:5.2.0.M3",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.eclipse.scout.rt:org.eclipse.scout.rt.platform:5.2.0.M4",
+    "coordinatesV2": "org.eclipse.scout.rt:org.eclipse.scout.rt.platform:5.2.0.M3",
+    "caller": "|java+method:///org/eclipse/scout/rt/platform/util/NumberUtility/format(java.lang.Number)|",
+    "called": "|java+method:///org/eclipse/scout/commons/nls/NlsLocale/get()|",
+    "v1Body": [
+      "|java+method:///org/eclipse/scout/commons/nls/NlsLocale/get()|",
+      "|java+method:///org/eclipse/scout/rt/platform/BEANS/get(java.lang.Class)|",
+      "|java+method:///org/eclipse/scout/rt/platform/util/NumberFormatProvider/getNumberInstance(java.util.Locale)|",
+      "|java+method:///java/text/DecimalFormat/format(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/eclipse/scout/rt/platform/nls/NlsLocale/get()|",
+      "|java+method:///org/eclipse/scout/rt/platform/BEANS/get(java.lang.Class)|",
+      "|java+method:///org/eclipse/scout/rt/platform/util/NumberFormatProvider/getNumberInstance(java.util.Locale)|",
+      "|java+method:///java/text/DecimalFormat/format(java.lang.Object)|"
+    ],
+    "affectedLib": "org.eclipse.scout.rt:org.eclipse.scout.commons:5.2.0.M3",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.eclipse.scout.rt:org.eclipse.scout.rt.platform:5.2.0.M4",
+    "coordinatesV2": "org.eclipse.scout.rt:org.eclipse.scout.rt.platform:5.2.0.M3",
+    "caller": "|java+constructor:///org/eclipse/scout/rt/platform/inventory/internal/JandexClassInfo/JandexClassInfo(org.jboss.jandex.ClassInfo)|",
+    "called": "|java+method:///org/eclipse/scout/commons/Assertions/assertNotNull(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/eclipse/scout/commons/Assertions/assertNotNull(java.lang.Object)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/eclipse/scout/rt/platform/util/Assertions/assertNotNull(java.lang.Object)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "org.eclipse.scout.rt:org.eclipse.scout.commons:5.2.0.M3",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.eclipse.scout.rt:org.eclipse.scout.rt.platform:5.2.0.M3",
+    "coordinatesV2": "org.eclipse.scout.rt:org.eclipse.scout.rt.platform:5.2.0.M4",
+    "caller": "|java+initializer:///org/eclipse/scout/rt/platform/inventory/ClassInventory/ClassInventory$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/eclipse/scout/rt/platform/inventory/internal/JandexInventoryBuilder/scanAllModules()|",
+      "|java+constructor:///org/eclipse/scout/rt/platform/inventory/internal/JandexInventoryBuilder/JandexInventoryBuilder()|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///org/eclipse/scout/rt/platform/inventory/internal/JandexInventoryBuilder/finish()|",
+      "|java+constructor:///org/eclipse/scout/rt/platform/exception/PlatformException/PlatformException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/eclipse/scout/commons/StringUtility/formatNanos(long)|",
+      "|java+method:///java/lang/System/nanoTime()|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String,java.lang.Object)|",
+      "|java+constructor:///org/eclipse/scout/rt/platform/inventory/internal/JandexClassInventory/JandexClassInventory(org.jboss.jandex.IndexView)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/eclipse/scout/rt/platform/inventory/internal/JandexInventoryBuilder/scanAllModules()|",
+      "|java+constructor:///org/eclipse/scout/rt/platform/inventory/internal/JandexInventoryBuilder/JandexInventoryBuilder()|",
+      "|java+method:///java/lang/System/nanoTime()|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///org/eclipse/scout/rt/platform/inventory/internal/JandexInventoryBuilder/finish()|",
+      "|java+method:///org/eclipse/scout/rt/platform/util/StringUtility/formatNanos(long)|",
+      "|java+constructor:///org/eclipse/scout/rt/platform/exception/PlatformException/PlatformException(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String,java.lang.Object)|",
+      "|java+constructor:///org/eclipse/scout/rt/platform/inventory/internal/JandexClassInventory/JandexClassInventory(org.jboss.jandex.IndexView)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.12",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.eclipse.scout.rt:org.eclipse.scout.rt.platform:5.2.0.M3",
+    "coordinatesV2": "org.eclipse.scout.rt:org.eclipse.scout.rt.platform:5.2.0.M4",
+    "caller": "|java+method:///org/eclipse/scout/rt/platform/job/JobInput/withName(java.lang.String,java.lang.Object%5B%5D)|",
+    "called": "|java+method:///org/slf4j/helpers/MessageFormatter/arrayFormat(java.lang.String,java.lang.Object%5B%5D)|",
+    "v1Body": [
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/helpers/MessageFormatter/arrayFormat(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///org/slf4j/helpers/FormattingTuple/getMessage()|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.12",
+    "change": "ADDED"
+  }
+]

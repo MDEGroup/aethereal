@@ -1,0 +1,80 @@
+[
+  {
+    "coordinatesV1": "com.hmsonline:storm-cassandra:0.3.0",
+    "coordinatesV2": "com.hmsonline:storm-cassandra:0.1.3",
+    "caller": "|java+method:///backtype/storm/contrib/cassandra/bolt/CassandraBolt/initCassandraConnection()|",
+    "called": "|java+constructor:///me/prettyprint/cassandra/service/CassandraHostConfigurator/CassandraHostConfigurator(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///me/prettyprint/hector/api/factory/HFactory/getOrCreateCluster(java.lang.String,me.prettyprint.cassandra.service.CassandraHostConfigurator)|",
+      "|java+constructor:///java/lang/IllegalStateException/IllegalStateException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///me/prettyprint/cassandra/service/CassandraHostConfigurator/CassandraHostConfigurator(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///me/prettyprint/hector/api/factory/HFactory/createKeyspace(java.lang.String,me.prettyprint.hector.api.Cluster)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/netflix/astyanax/connectionpool/impl/ConnectionPoolConfigurationImpl/ConnectionPoolConfigurationImpl(java.lang.String)|",
+      "|java+constructor:///java/lang/IllegalStateException/IllegalStateException(java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///com/netflix/astyanax/impl/AstyanaxConfigurationImpl/AstyanaxConfigurationImpl()|",
+      "|java+method:///com/netflix/astyanax/Keyspace/describeKeyspace()|",
+      "|java+method:///com/netflix/astyanax/impl/AstyanaxConfigurationImpl/setDiscoveryType(com.netflix.astyanax.connectionpool.NodeDiscoveryType)|",
+      "|java+method:///com/netflix/astyanax/connectionpool/impl/ConnectionPoolConfigurationImpl/setSeeds(java.lang.String)|",
+      "|java+method:///com/netflix/astyanax/AstyanaxContext/getEntity()|",
+      "|java+method:///com/netflix/astyanax/AstyanaxContext$Builder/forCluster(java.lang.String)|",
+      "|java+method:///com/netflix/astyanax/AstyanaxContext$Builder/buildKeyspace(com.netflix.astyanax.AstyanaxTypeFactory)|",
+      "|java+constructor:///com/netflix/astyanax/AstyanaxContext$Builder/AstyanaxContext$Builder()|",
+      "|java+method:///com/netflix/astyanax/connectionpool/impl/ConnectionPoolConfigurationImpl/setMaxConnsPerHost(int)|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///com/netflix/astyanax/AstyanaxContext$Builder/withConnectionPoolMonitor(com.netflix.astyanax.connectionpool.ConnectionPoolMonitor)|",
+      "|java+constructor:///com/netflix/astyanax/connectionpool/impl/CountingConnectionPoolMonitor/CountingConnectionPoolMonitor()|",
+      "|java+method:///com/netflix/astyanax/AstyanaxContext$Builder/withConnectionPoolConfiguration(com.netflix.astyanax.connectionpool.ConnectionPoolConfiguration)|",
+      "|java+method:///com/netflix/astyanax/AstyanaxContext$Builder/withAstyanaxConfiguration(com.netflix.astyanax.AstyanaxConfiguration)|",
+      "|java+method:///com/netflix/astyanax/thrift/ThriftFamilyFactory/getInstance()|",
+      "|java+method:///com/netflix/astyanax/AstyanaxContext/start()|",
+      "|java+method:///com/netflix/astyanax/AstyanaxContext$Builder/forKeyspace(java.lang.String)|"
+    ],
+    "affectedLib": "me.prettyprint:hector-core:1.0-1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.hmsonline:storm-cassandra:0.1.3",
+    "coordinatesV2": "com.hmsonline:storm-cassandra:0.3.0",
+    "caller": "|java+method:///backtype/storm/contrib/cassandra/bolt/CassandraBolt/initCassandraConnection()|",
+    "called": "|java+method:///com/netflix/astyanax/AstyanaxContext/start()|",
+    "v1Body": [
+      "|java+method:///me/prettyprint/hector/api/factory/HFactory/getOrCreateCluster(java.lang.String,me.prettyprint.cassandra.service.CassandraHostConfigurator)|",
+      "|java+constructor:///java/lang/IllegalStateException/IllegalStateException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///me/prettyprint/cassandra/service/CassandraHostConfigurator/CassandraHostConfigurator(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///me/prettyprint/hector/api/factory/HFactory/createKeyspace(java.lang.String,me.prettyprint.hector.api.Cluster)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/netflix/astyanax/connectionpool/impl/ConnectionPoolConfigurationImpl/ConnectionPoolConfigurationImpl(java.lang.String)|",
+      "|java+constructor:///java/lang/IllegalStateException/IllegalStateException(java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///com/netflix/astyanax/impl/AstyanaxConfigurationImpl/AstyanaxConfigurationImpl()|",
+      "|java+method:///com/netflix/astyanax/Keyspace/describeKeyspace()|",
+      "|java+method:///com/netflix/astyanax/impl/AstyanaxConfigurationImpl/setDiscoveryType(com.netflix.astyanax.connectionpool.NodeDiscoveryType)|",
+      "|java+method:///com/netflix/astyanax/connectionpool/impl/ConnectionPoolConfigurationImpl/setSeeds(java.lang.String)|",
+      "|java+method:///com/netflix/astyanax/AstyanaxContext/getEntity()|",
+      "|java+method:///com/netflix/astyanax/AstyanaxContext$Builder/forCluster(java.lang.String)|",
+      "|java+method:///com/netflix/astyanax/AstyanaxContext$Builder/buildKeyspace(com.netflix.astyanax.AstyanaxTypeFactory)|",
+      "|java+constructor:///com/netflix/astyanax/AstyanaxContext$Builder/AstyanaxContext$Builder()|",
+      "|java+method:///com/netflix/astyanax/connectionpool/impl/ConnectionPoolConfigurationImpl/setMaxConnsPerHost(int)|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///com/netflix/astyanax/AstyanaxContext$Builder/withConnectionPoolMonitor(com.netflix.astyanax.connectionpool.ConnectionPoolMonitor)|",
+      "|java+constructor:///com/netflix/astyanax/connectionpool/impl/CountingConnectionPoolMonitor/CountingConnectionPoolMonitor()|",
+      "|java+method:///com/netflix/astyanax/AstyanaxContext$Builder/withConnectionPoolConfiguration(com.netflix.astyanax.connectionpool.ConnectionPoolConfiguration)|",
+      "|java+method:///com/netflix/astyanax/AstyanaxContext$Builder/withAstyanaxConfiguration(com.netflix.astyanax.AstyanaxConfiguration)|",
+      "|java+method:///com/netflix/astyanax/thrift/ThriftFamilyFactory/getInstance()|",
+      "|java+method:///com/netflix/astyanax/AstyanaxContext/start()|",
+      "|java+method:///com/netflix/astyanax/AstyanaxContext$Builder/forKeyspace(java.lang.String)|"
+    ],
+    "affectedLib": "com.netflix.astyanax:astyanax:1.0.1",
+    "change": "ADDED"
+  }
+]

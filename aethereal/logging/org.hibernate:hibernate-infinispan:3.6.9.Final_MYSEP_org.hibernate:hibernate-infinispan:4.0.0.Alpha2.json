@@ -1,0 +1,104 @@
+[
+  {
+    "coordinatesV1": "org.hibernate:hibernate-infinispan:3.6.9.Final",
+    "coordinatesV2": "org.hibernate:hibernate-infinispan:4.0.0.Alpha2",
+    "caller": "|java+method:///org/hibernate/cache/infinispan/JndiInfinispanRegionFactory/createCacheManager(java.util.Properties)|",
+    "called": "|java+constructor:///org/hibernate/cache/CacheException/CacheException(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/hibernate/util/PropertiesHelper/getString(java.lang.String,java.util.Properties,java.lang.String)|",
+      "|java+method:///org/hibernate/util/NamingHelper/getJndiProperties(java.util.Properties)|",
+      "|java+method:///org/hibernate/cache/infinispan/JndiInfinispanRegionFactory/locateCacheManager(java.lang.String,java.util.Properties)|",
+      "|java+constructor:///org/hibernate/cache/CacheException/CacheException(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/hibernate/internal/util/jndi/JndiHelper/extractJndiProperties(java.util.Map)|",
+      "|java+method:///org/hibernate/cache/infinispan/JndiInfinispanRegionFactory/locateCacheManager(java.lang.String,java.util.Properties)|",
+      "|java+constructor:///org/hibernate/cache/CacheException/CacheException(java.lang.String)|",
+      "|java+method:///org/hibernate/internal/util/config/ConfigurationHelper/getString(java.lang.String,java.util.Map,java.lang.String)|"
+    ],
+    "affectedLib": "org.hibernate:hibernate-core:4.0.0.Alpha2",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.hibernate:hibernate-infinispan:3.6.9.Final",
+    "coordinatesV2": "org.hibernate:hibernate-infinispan:4.0.0.Alpha2",
+    "caller": "|java+method:///org/hibernate/cache/infinispan/InfinispanRegionFactory/createCacheManager(java.util.Properties)|",
+    "called": "|java+constructor:///org/hibernate/cache/CacheException/CacheException(java.lang.String,java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///java/lang/Boolean/parseBoolean(java.lang.String)|",
+      "|java+method:///org/hibernate/util/PropertiesHelper/extractPropertyValue(java.lang.String,java.util.Properties)|",
+      "|java+constructor:///org/infinispan/manager/DefaultCacheManager/DefaultCacheManager(java.lang.String,boolean)|",
+      "|java+method:///org/infinispan/manager/EmbeddedCacheManager/start()|",
+      "|java+method:///org/infinispan/config/GlobalConfiguration/setExposeGlobalJmxStatistics(boolean)|",
+      "|java+method:///org/hibernate/util/PropertiesHelper/getString(java.lang.String,java.util.Properties,java.lang.String)|",
+      "|java+method:///org/infinispan/manager/EmbeddedCacheManager/getGlobalConfiguration()|",
+      "|java+constructor:///org/hibernate/cache/CacheException/CacheException(java.lang.String,java.lang.Throwable)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/hibernate/internal/util/config/ConfigurationHelper/extractPropertyValue(java.lang.String,java.util.Properties)|",
+      "|java+method:///org/infinispan/config/GlobalConfiguration/setExposeGlobalJmxStatistics(boolean)|",
+      "|java+method:///java/lang/Boolean/parseBoolean(java.lang.String)|",
+      "|java+constructor:///org/infinispan/manager/DefaultCacheManager/DefaultCacheManager(java.lang.String,boolean)|",
+      "|java+method:///org/infinispan/manager/EmbeddedCacheManager/start()|",
+      "|java+method:///org/hibernate/internal/util/config/ConfigurationHelper/getString(java.lang.String,java.util.Map,java.lang.String)|",
+      "|java+method:///org/infinispan/manager/EmbeddedCacheManager/getGlobalConfiguration()|",
+      "|java+constructor:///org/hibernate/cache/CacheException/CacheException(java.lang.String,java.lang.Throwable)|"
+    ],
+    "affectedLib": "org.hibernate:hibernate-core:4.0.0.Alpha2",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.hibernate:hibernate-infinispan:3.6.9.Final",
+    "coordinatesV2": "org.hibernate:hibernate-infinispan:4.0.0.Alpha2",
+    "caller": "|java+method:///org/hibernate/cache/infinispan/InfinispanRegionFactory/overrideStatisticsIfPresent(org.hibernate.cache.infinispan.TypeOverrides,java.util.Properties)|",
+    "called": "|java+method:///org/hibernate/internal/util/config/ConfigurationHelper/extractPropertyValue(java.lang.String,java.util.Properties)|",
+    "v1Body": [
+      "|java+method:///java/lang/Boolean/parseBoolean(java.lang.String)|",
+      "|java+method:///org/hibernate/cache/infinispan/TypeOverrides/setExposeStatistics(boolean)|",
+      "|java+method:///org/hibernate/util/PropertiesHelper/extractPropertyValue(java.lang.String,java.util.Properties)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/hibernate/internal/util/config/ConfigurationHelper/extractPropertyValue(java.lang.String,java.util.Properties)|",
+      "|java+method:///java/lang/Boolean/parseBoolean(java.lang.String)|",
+      "|java+method:///org/hibernate/cache/infinispan/TypeOverrides/setExposeStatistics(boolean)|"
+    ],
+    "affectedLib": "org.hibernate:hibernate-core:4.0.0.Alpha2",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.hibernate:hibernate-infinispan:3.6.9.Final",
+    "coordinatesV2": "org.hibernate:hibernate-infinispan:4.0.0.Alpha2",
+    "caller": "|java+method:///org/hibernate/cache/infinispan/InfinispanRegionFactory/dissectProperty(int,java.lang.String,java.util.Properties)|",
+    "called": "|java+method:///org/hibernate/internal/util/config/ConfigurationHelper/extractPropertyValue(java.lang.String,java.util.Properties)|",
+    "v1Body": [
+      "|java+method:///java/lang/Long/parseLong(java.lang.String)|",
+      "|java+method:///org/hibernate/cache/infinispan/TypeOverrides/setExpirationLifespan(long)|",
+      "|java+method:///org/hibernate/util/PropertiesHelper/getInt(java.lang.String,java.util.Properties,int)|",
+      "|java+method:///org/hibernate/util/PropertiesHelper/extractPropertyValue(java.lang.String,java.util.Properties)|",
+      "|java+method:///org/hibernate/cache/infinispan/TypeOverrides/setCacheName(java.lang.String)|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///org/hibernate/cache/infinispan/TypeOverrides/setExpirationMaxIdle(long)|",
+      "|java+method:///org/hibernate/cache/infinispan/InfinispanRegionFactory/getOrCreateConfig(int,java.lang.String,int)|",
+      "|java+method:///org/hibernate/cache/infinispan/TypeOverrides/setEvictionStrategy(java.lang.String)|",
+      "|java+method:///org/hibernate/cache/infinispan/TypeOverrides/setEvictionMaxEntries(int)|",
+      "|java+method:///java/lang/String/indexOf(java.lang.String)|",
+      "|java+method:///org/hibernate/cache/infinispan/TypeOverrides/setEvictionWakeUpInterval(long)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/hibernate/internal/util/config/ConfigurationHelper/extractPropertyValue(java.lang.String,java.util.Properties)|",
+      "|java+method:///java/lang/Long/parseLong(java.lang.String)|",
+      "|java+method:///org/hibernate/cache/infinispan/TypeOverrides/setExpirationLifespan(long)|",
+      "|java+method:///org/hibernate/cache/infinispan/TypeOverrides/setCacheName(java.lang.String)|",
+      "|java+method:///org/hibernate/cache/infinispan/TypeOverrides/setExpirationMaxIdle(long)|",
+      "|java+method:///org/hibernate/cache/infinispan/InfinispanRegionFactory/getOrCreateConfig(int,java.lang.String,int)|",
+      "|java+method:///org/hibernate/cache/infinispan/TypeOverrides/setEvictionStrategy(java.lang.String)|",
+      "|java+method:///org/hibernate/cache/infinispan/TypeOverrides/setEvictionMaxEntries(int)|",
+      "|java+method:///org/hibernate/internal/util/config/ConfigurationHelper/getInt(java.lang.String,java.util.Map,int)|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///java/lang/String/indexOf(java.lang.String)|",
+      "|java+method:///org/hibernate/cache/infinispan/TypeOverrides/setEvictionWakeUpInterval(long)|"
+    ],
+    "affectedLib": "org.hibernate:hibernate-core:4.0.0.Alpha2",
+    "change": "UPDATED"
+  }
+]

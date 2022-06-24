@@ -1,0 +1,108 @@
+[
+  {
+    "coordinatesV1": "org.twdata.maven:mojo-executor:2.2.0",
+    "coordinatesV2": "org.twdata.maven:mojo-executor:2.3.0",
+    "caller": "|java+initializer:///org/twdata/maven/mojoexecutor/MavenCompatibilityHelper/MavenCompatibilityHelper$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///java/lang/Class/getMethods()|",
+      "|java+constructor:///java/lang/ExceptionInInitializerError/ExceptionInInitializerError(java.lang.String)|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///java/lang/reflect/Method/getName()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Class/getMethods()|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+constructor:///java/lang/ExceptionInInitializerError/ExceptionInInitializerError(java.lang.String)|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///java/lang/reflect/Method/getName()|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.22",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.twdata.maven:mojo-executor:2.2.0",
+    "coordinatesV2": "org.twdata.maven:mojo-executor:2.3.0",
+    "caller": "|java+method:///org/twdata/maven/mojoexecutor/MavenCompatibilityHelper/loadPluginDescriptor(org.apache.maven.model.Plugin,org.twdata.maven.mojoexecutor.MojoExecutor$ExecutionEnvironment,org.apache.maven.execution.MavenSession)|",
+    "called": "|java+constructor:///org/apache/maven/plugin/MojoExecutionException/MojoExecutionException(java.lang.String,java.lang.Exception)|",
+    "v1Body": [
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.Throwable)|",
+      "|java+method:///org/apache/maven/project/MavenProject/getRemotePluginRepositories()|",
+      "|java+method:///org/twdata/maven/mojoexecutor/MojoExecutor$ExecutionEnvironment/getPluginManager()|",
+      "|java+method:///java/lang/reflect/Method/invoke(java.lang.Object,java.lang.Object%5B%5D)|",
+      "|java+method:///org/twdata/maven/mojoexecutor/MojoExecutor$ExecutionEnvironment/getMavenProject()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+constructor:///org/apache/maven/plugin/MojoExecutionException/MojoExecutionException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/lang/reflect/InvocationTargetException/getCause()|",
+      "|java+method:///org/apache/maven/execution/MavenSession/getCurrentProject()|",
+      "|java+method:///org/apache/maven/project/MavenProject/getRemotePluginRepositories()|",
+      "|java+method:///org/twdata/maven/mojoexecutor/MojoExecutor$ExecutionEnvironment/getPluginManager()|",
+      "|java+method:///java/lang/reflect/Method/invoke(java.lang.Object,java.lang.Object%5B%5D)|",
+      "|java+constructor:///org/apache/maven/plugin/MojoExecutionException/MojoExecutionException(java.lang.String,java.lang.Exception)|"
+    ],
+    "affectedLib": "org.apache.maven:maven-plugin-api:3.0.5",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.twdata.maven:mojo-executor:2.2.0",
+    "coordinatesV2": "org.twdata.maven:mojo-executor:2.3.0",
+    "caller": "|java+method:///org/twdata/maven/mojoexecutor/MojoExecutor/executeMojo(org.apache.maven.model.Plugin,java.lang.String,org.codehaus.plexus.util.xml.Xpp3Dom,org.twdata.maven.mojoexecutor.MojoExecutor$ExecutionEnvironment)|",
+    "called": "|java+constructor:///org/apache/maven/plugin/MojoExecutionException/MojoExecutionException(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/apache/maven/plugin/descriptor/PluginDescriptor/getMojo(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///org/apache/maven/plugin/MojoExecutionException/MojoExecutionException(java.lang.String)|",
+      "|java+method:///java/lang/String/length()|",
+      "|java+method:///java/lang/String/substring(int,int)|",
+      "|java+method:///java/lang/String/substring(int)|",
+      "|java+method:///org/apache/maven/model/Plugin/getVersion()|",
+      "|java+method:///org/apache/maven/model/Plugin/getGroupId()|",
+      "|java+constructor:///org/apache/maven/plugin/MojoExecutionException/MojoExecutionException(java.lang.String,java.lang.Exception)|",
+      "|java+method:///java/lang/String/indexOf(int)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/twdata/maven/mojoexecutor/MavenCompatibilityHelper/loadPluginDescriptor(org.apache.maven.model.Plugin,org.twdata.maven.mojoexecutor.MojoExecutor$ExecutionEnvironment,org.apache.maven.execution.MavenSession)|",
+      "|java+method:///org/twdata/maven/mojoexecutor/MojoExecutor$ExecutionEnvironment/getPluginManager()|",
+      "|java+method:///org/twdata/maven/mojoexecutor/MojoExecutor/mojoExecution(org.apache.maven.plugin.descriptor.MojoDescriptor,java.lang.String,org.codehaus.plexus.util.xml.Xpp3Dom)|",
+      "|java+method:///org/apache/maven/model/Plugin/getArtifactId()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/apache/maven/plugin/BuildPluginManager/executeMojo(org.apache.maven.execution.MavenSession,org.apache.maven.plugin.MojoExecution)|",
+      "|java+method:///org/twdata/maven/mojoexecutor/MojoExecutor$ExecutionEnvironment/getMavenSession()|",
+      "|java+constructor:///java/lang/NullPointerException/NullPointerException(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/maven/plugin/descriptor/PluginDescriptor/getMojo(java.lang.String)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///org/apache/maven/plugin/MojoExecutionException/MojoExecutionException(java.lang.String)|",
+      "|java+method:///java/lang/String/length()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///java/lang/String/substring(int,int)|",
+      "|java+method:///java/lang/String/substring(int)|",
+      "|java+method:///org/apache/maven/project/MavenProject/getPluginManagement()|",
+      "|java+method:///org/apache/maven/model/Plugin/getVersion()|",
+      "|java+method:///org/apache/maven/model/Plugin/getGroupId()|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+constructor:///org/apache/maven/plugin/MojoExecutionException/MojoExecutionException(java.lang.String,java.lang.Exception)|",
+      "|java+method:///org/apache/maven/model/PluginManagement/getPlugins()|",
+      "|java+method:///java/lang/String/indexOf(int)|",
+      "|java+method:///org/twdata/maven/mojoexecutor/MavenCompatibilityHelper/loadPluginDescriptor(org.apache.maven.model.Plugin,org.twdata.maven.mojoexecutor.MojoExecutor$ExecutionEnvironment,org.apache.maven.execution.MavenSession)|",
+      "|java+method:///org/twdata/maven/mojoexecutor/MojoExecutor$ExecutionEnvironment/getPluginManager()|",
+      "|java+method:///org/twdata/maven/mojoexecutor/MojoExecutor/mojoExecution(org.apache.maven.plugin.descriptor.MojoDescriptor,java.lang.String,org.codehaus.plexus.util.xml.Xpp3Dom)|",
+      "|java+method:///org/apache/maven/model/Plugin/getArtifactId()|",
+      "|java+method:///org/apache/maven/model/Plugin/setVersion(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/apache/maven/plugin/BuildPluginManager/executeMojo(org.apache.maven.execution.MavenSession,org.apache.maven.plugin.MojoExecution)|",
+      "|java+method:///org/twdata/maven/mojoexecutor/MojoExecutor$ExecutionEnvironment/getMavenSession()|",
+      "|java+constructor:///java/lang/NullPointerException/NullPointerException(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/apache/maven/execution/MavenSession/getCurrentProject()|"
+    ],
+    "affectedLib": "org.apache.maven:maven-plugin-api:3.0.5",
+    "change": "UPDATED"
+  }
+]

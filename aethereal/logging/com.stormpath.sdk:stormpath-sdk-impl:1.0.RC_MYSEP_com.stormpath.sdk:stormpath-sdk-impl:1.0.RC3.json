@@ -1,0 +1,696 @@
+[
+  {
+    "coordinatesV1": "com.stormpath.sdk:stormpath-sdk-impl:1.0.RC3",
+    "coordinatesV2": "com.stormpath.sdk:stormpath-sdk-impl:1.0.RC",
+    "caller": "|java+method:///com/stormpath/sdk/impl/ds/JacksonMapMarshaller/marshal(java.util.Map)|",
+    "called": "|java+method:///org/codehaus/jackson/map/ObjectMapper/writeValueAsString(java.lang.Object)|",
+    "v1Body": [
+      "|java+constructor:///com/stormpath/sdk/impl/ds/MarshalingException/MarshalingException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/codehaus/jackson/map/ObjectMapper/writeValueAsString(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/writeValueAsString(java.lang.Object)|",
+      "|java+constructor:///com/stormpath/sdk/impl/ds/MarshalingException/MarshalingException(java.lang.String,java.lang.Throwable)|"
+    ],
+    "affectedLib": "org.codehaus.jackson:jackson-mapper-asl:1.9.11",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.stormpath.sdk:stormpath-sdk-impl:1.0.RC3",
+    "coordinatesV2": "com.stormpath.sdk:stormpath-sdk-impl:1.0.RC",
+    "caller": "|java+method:///com/stormpath/sdk/impl/ds/JacksonMapMarshaller/unmarshal(java.lang.String)|",
+    "called": "|java+method:///org/codehaus/jackson/map/ObjectMapper/readValue(java.lang.String,org.codehaus.jackson.type.TypeReference)|",
+    "v1Body": [
+      "|java+method:///org/codehaus/jackson/map/ObjectMapper/readValue(java.lang.String,org.codehaus.jackson.type.TypeReference)|",
+      "|java+constructor:///com/stormpath/sdk/impl/ds/JacksonMapMarshaller$1/JacksonMapMarshaller$1(com.stormpath.sdk.impl.ds.JacksonMapMarshaller)|",
+      "|java+constructor:///com/stormpath/sdk/impl/ds/MarshalingException/MarshalingException(java.lang.String,java.lang.Throwable)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/stormpath/sdk/impl/ds/JacksonMapMarshaller$1/JacksonMapMarshaller$1(com.stormpath.sdk.impl.ds.JacksonMapMarshaller)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/readValue(java.lang.String,com.fasterxml.jackson.core.type.TypeReference)|",
+      "|java+constructor:///com/stormpath/sdk/impl/ds/MarshalingException/MarshalingException(java.lang.String,java.lang.Throwable)|"
+    ],
+    "affectedLib": "org.codehaus.jackson:jackson-mapper-asl:1.9.11",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.stormpath.sdk:stormpath-sdk-impl:1.0.RC3",
+    "coordinatesV2": "com.stormpath.sdk:stormpath-sdk-impl:1.0.RC",
+    "caller": "|java+initializer:///com/stormpath/sdk/impl/resource/AbstractResource/AbstractResource$initializer|",
+    "called": "|java+constructor:///org/codehaus/jackson/map/util/ISO8601DateFormat/ISO8601DateFormat()|",
+    "v1Body": [
+      "|java+constructor:///org/codehaus/jackson/map/util/ISO8601DateFormat/ISO8601DateFormat()|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+constructor:///com/fasterxml/jackson/databind/util/ISO8601DateFormat/ISO8601DateFormat()|"
+    ],
+    "affectedLib": "org.codehaus.jackson:jackson-mapper-asl:1.9.11",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.stormpath.sdk:stormpath-sdk-impl:1.0.RC3",
+    "coordinatesV2": "com.stormpath.sdk:stormpath-sdk-impl:1.0.RC",
+    "caller": "|java+constructor:///com/stormpath/sdk/impl/ds/JacksonMapMarshaller/JacksonMapMarshaller()|",
+    "called": "|java+method:///org/codehaus/jackson/map/ObjectMapper/configure(org.codehaus.jackson.map.DeserializationConfig$Feature,boolean)|",
+    "v1Body": [
+      "|java+constructor:///org/codehaus/jackson/map/ObjectMapper/ObjectMapper()|",
+      "|java+method:///org/codehaus/jackson/map/ObjectMapper/configure(org.codehaus.jackson.map.DeserializationConfig$Feature,boolean)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/fasterxml/jackson/databind/ObjectMapper/ObjectMapper()|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/configure(com.fasterxml.jackson.databind.DeserializationFeature,boolean)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "org.codehaus.jackson:jackson-mapper-asl:1.9.11",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.stormpath.sdk:stormpath-sdk-impl:1.0.RC3",
+    "coordinatesV2": "com.stormpath.sdk:stormpath-sdk-impl:1.0.RC",
+    "caller": "|java+initializer:///com/stormpath/sdk/impl/jwt/signer/DefaultJwtSigner/DefaultJwtSigner$initializer|",
+    "called": "|java+constructor:///org/codehaus/jackson/map/ObjectMapper/ObjectMapper()|",
+    "v1Body": [
+      "|java+constructor:///org/codehaus/jackson/map/ObjectMapper/ObjectMapper()|",
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///java/lang/IllegalStateException/IllegalStateException(java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+method:///java/lang/String/getBytes(java.nio.charset.Charset)|",
+      "|java+method:///com/stormpath/sdk/impl/util/Base64/encodeBase64URLSafeString(byte%5B%5D)|",
+      "|java+method:///java/nio/charset/Charset/forName(java.lang.String)|",
+      "|java+method:///org/codehaus/jackson/map/ObjectMapper/writeValueAsString(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/String/getBytes(java.nio.charset.Charset)|",
+      "|java+method:///com/stormpath/sdk/impl/util/Base64/encodeBase64URLSafeString(byte%5B%5D)|",
+      "|java+method:///java/nio/charset/Charset/forName(java.lang.String)|"
+    ],
+    "affectedLib": "org.codehaus.jackson:jackson-mapper-asl:1.9.11",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.stormpath.sdk:stormpath-sdk-impl:1.0.RC3",
+    "coordinatesV2": "com.stormpath.sdk:stormpath-sdk-impl:1.0.RC",
+    "caller": "|java+method:///com/stormpath/sdk/impl/ds/JacksonMapMarshaller/setPrettyPrint(boolean)|",
+    "called": "|java+method:///org/codehaus/jackson/map/SerializationConfig/with(org.codehaus.jackson.map.SerializationConfig$Feature%5B%5D)|",
+    "v1Body": [
+      "|java+method:///org/codehaus/jackson/map/ObjectMapper/setSerializationConfig(org.codehaus.jackson.map.SerializationConfig)|",
+      "|java+method:///org/codehaus/jackson/map/SerializationConfig/with(org.codehaus.jackson.map.SerializationConfig$Feature%5B%5D)|",
+      "|java+method:///org/codehaus/jackson/map/ObjectMapper/getSerializationConfig()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/configure(com.fasterxml.jackson.databind.SerializationFeature,boolean)|"
+    ],
+    "affectedLib": "org.codehaus.jackson:jackson-mapper-asl:1.9.11",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.stormpath.sdk:stormpath-sdk-impl:1.0.RC3",
+    "coordinatesV2": "com.stormpath.sdk:stormpath-sdk-impl:1.0.RC",
+    "caller": "|java+method:///com/stormpath/sdk/impl/ds/JacksonMapMarshaller/isPrettyPrint()|",
+    "called": "|java+method:///org/codehaus/jackson/map/SerializationConfig/isEnabled(org.codehaus.jackson.map.SerializationConfig$Feature)|",
+    "v1Body": [
+      "|java+method:///org/codehaus/jackson/map/SerializationConfig/isEnabled(org.codehaus.jackson.map.SerializationConfig$Feature)|",
+      "|java+method:///org/codehaus/jackson/map/ObjectMapper/getSerializationConfig()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/getSerializationConfig()|",
+      "|java+method:///com/fasterxml/jackson/databind/SerializationConfig/isEnabled(com.fasterxml.jackson.databind.SerializationFeature)|"
+    ],
+    "affectedLib": "org.codehaus.jackson:jackson-mapper-asl:1.9.11",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.stormpath.sdk:stormpath-sdk-impl:1.0.RC",
+    "coordinatesV2": "com.stormpath.sdk:stormpath-sdk-impl:1.0.RC3",
+    "caller": "|java+method:///com/stormpath/sdk/impl/ds/JacksonMapMarshaller/marshal(java.util.Map)|",
+    "called": "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/writeValueAsString(java.lang.Object)|",
+    "v1Body": [
+      "|java+constructor:///com/stormpath/sdk/impl/ds/MarshalingException/MarshalingException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/codehaus/jackson/map/ObjectMapper/writeValueAsString(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/writeValueAsString(java.lang.Object)|",
+      "|java+constructor:///com/stormpath/sdk/impl/ds/MarshalingException/MarshalingException(java.lang.String,java.lang.Throwable)|"
+    ],
+    "affectedLib": "com.fasterxml.jackson.core:jackson-databind:2.4.3",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.stormpath.sdk:stormpath-sdk-impl:1.0.RC",
+    "coordinatesV2": "com.stormpath.sdk:stormpath-sdk-impl:1.0.RC3",
+    "caller": "|java+method:///com/stormpath/sdk/impl/ds/JacksonMapMarshaller/unmarshal(java.lang.String)|",
+    "called": "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/readValue(java.lang.String,com.fasterxml.jackson.core.type.TypeReference)|",
+    "v1Body": [
+      "|java+method:///org/codehaus/jackson/map/ObjectMapper/readValue(java.lang.String,org.codehaus.jackson.type.TypeReference)|",
+      "|java+constructor:///com/stormpath/sdk/impl/ds/JacksonMapMarshaller$1/JacksonMapMarshaller$1(com.stormpath.sdk.impl.ds.JacksonMapMarshaller)|",
+      "|java+constructor:///com/stormpath/sdk/impl/ds/MarshalingException/MarshalingException(java.lang.String,java.lang.Throwable)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/stormpath/sdk/impl/ds/JacksonMapMarshaller$1/JacksonMapMarshaller$1(com.stormpath.sdk.impl.ds.JacksonMapMarshaller)|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/readValue(java.lang.String,com.fasterxml.jackson.core.type.TypeReference)|",
+      "|java+constructor:///com/stormpath/sdk/impl/ds/MarshalingException/MarshalingException(java.lang.String,java.lang.Throwable)|"
+    ],
+    "affectedLib": "com.fasterxml.jackson.core:jackson-databind:2.4.3",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.stormpath.sdk:stormpath-sdk-impl:1.0.RC",
+    "coordinatesV2": "com.stormpath.sdk:stormpath-sdk-impl:1.0.RC3",
+    "caller": "|java+initializer:///com/stormpath/sdk/impl/resource/AbstractResource/AbstractResource$initializer|",
+    "called": "|java+constructor:///com/fasterxml/jackson/databind/util/ISO8601DateFormat/ISO8601DateFormat()|",
+    "v1Body": [
+      "|java+constructor:///org/codehaus/jackson/map/util/ISO8601DateFormat/ISO8601DateFormat()|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+constructor:///com/fasterxml/jackson/databind/util/ISO8601DateFormat/ISO8601DateFormat()|"
+    ],
+    "affectedLib": "com.fasterxml.jackson.core:jackson-databind:2.4.3",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.stormpath.sdk:stormpath-sdk-impl:1.0.RC",
+    "coordinatesV2": "com.stormpath.sdk:stormpath-sdk-impl:1.0.RC3",
+    "caller": "|java+constructor:///com/stormpath/sdk/impl/ds/JacksonMapMarshaller/JacksonMapMarshaller()|",
+    "called": "|java+constructor:///com/fasterxml/jackson/databind/ObjectMapper/ObjectMapper()|",
+    "v1Body": [
+      "|java+constructor:///org/codehaus/jackson/map/ObjectMapper/ObjectMapper()|",
+      "|java+method:///org/codehaus/jackson/map/ObjectMapper/configure(org.codehaus.jackson.map.DeserializationConfig$Feature,boolean)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/fasterxml/jackson/databind/ObjectMapper/ObjectMapper()|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/configure(com.fasterxml.jackson.databind.DeserializationFeature,boolean)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "com.fasterxml.jackson.core:jackson-databind:2.4.3",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.stormpath.sdk:stormpath-sdk-impl:1.0.RC",
+    "coordinatesV2": "com.stormpath.sdk:stormpath-sdk-impl:1.0.RC3",
+    "caller": "|java+method:///com/stormpath/sdk/impl/ds/JacksonMapMarshaller/setPrettyPrint(boolean)|",
+    "called": "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/configure(com.fasterxml.jackson.databind.SerializationFeature,boolean)|",
+    "v1Body": [
+      "|java+method:///org/codehaus/jackson/map/ObjectMapper/setSerializationConfig(org.codehaus.jackson.map.SerializationConfig)|",
+      "|java+method:///org/codehaus/jackson/map/SerializationConfig/with(org.codehaus.jackson.map.SerializationConfig$Feature%5B%5D)|",
+      "|java+method:///org/codehaus/jackson/map/ObjectMapper/getSerializationConfig()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/configure(com.fasterxml.jackson.databind.SerializationFeature,boolean)|"
+    ],
+    "affectedLib": "com.fasterxml.jackson.core:jackson-databind:2.4.3",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.stormpath.sdk:stormpath-sdk-impl:1.0.RC",
+    "coordinatesV2": "com.stormpath.sdk:stormpath-sdk-impl:1.0.RC3",
+    "caller": "|java+method:///com/stormpath/sdk/impl/ds/JacksonMapMarshaller/isPrettyPrint()|",
+    "called": "|java+method:///com/fasterxml/jackson/databind/SerializationConfig/isEnabled(com.fasterxml.jackson.databind.SerializationFeature)|",
+    "v1Body": [
+      "|java+method:///org/codehaus/jackson/map/SerializationConfig/isEnabled(org.codehaus.jackson.map.SerializationConfig$Feature)|",
+      "|java+method:///org/codehaus/jackson/map/ObjectMapper/getSerializationConfig()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/getSerializationConfig()|",
+      "|java+method:///com/fasterxml/jackson/databind/SerializationConfig/isEnabled(com.fasterxml.jackson.databind.SerializationFeature)|"
+    ],
+    "affectedLib": "com.fasterxml.jackson.core:jackson-databind:2.4.3",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.stormpath.sdk:stormpath-sdk-impl:1.0.RC",
+    "coordinatesV2": "com.stormpath.sdk:stormpath-sdk-impl:1.0.RC3",
+    "caller": "|java+method:///com/stormpath/sdk/impl/ds/DefaultDataStore/retrieveResponseValue(java.lang.String,java.lang.Class,com.stormpath.sdk.impl.http.QueryString)|",
+    "called": "|java+method:///com/stormpath/sdk/lang/Collections/isEmpty(java.util.Map)|",
+    "v1Body": [
+      "|java+method:///java/lang/Integer/intValue()|",
+      "|java+method:///com/stormpath/sdk/impl/ds/DefaultDataStore/isCacheUpdateEnabled(java.lang.Class)|",
+      "|java+method:///com/stormpath/sdk/impl/resource/CollectionProperties$Builder/setItemsMap(java.util.Map)|",
+      "|java+method:///com/stormpath/sdk/impl/ds/DefaultDataStore/cache(java.lang.Class,java.util.Map,com.stormpath.sdk.impl.http.QueryString)|",
+      "|java+method:///com/stormpath/sdk/impl/ds/DefaultDataStore/isCacheRetrievalEnabled(java.lang.Class)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///com/stormpath/sdk/impl/resource/IntegerProperty/getName()|",
+      "|java+method:///com/stormpath/sdk/impl/http/QueryString/get(java.lang.Object)|",
+      "|java+method:///com/stormpath/sdk/impl/api/ApiKeyParameter/getName()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///com/stormpath/sdk/impl/ds/DefaultDataStore/isApiKeyCollectionQuery(java.lang.Class,com.stormpath.sdk.impl.http.QueryString)|",
+      "|java+method:///com/stormpath/sdk/impl/ds/PropertiesFilterProcessor/addTransitoryFilter(com.stormpath.sdk.impl.ds.PropertiesFilter)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///com/stormpath/sdk/impl/ds/PropertiesFilterProcessor/process(java.lang.Class,java.util.Map)|",
+      "|java+method:///com/stormpath/sdk/lang/Collections/isEmpty(java.util.Map)|",
+      "|java+method:///com/stormpath/sdk/impl/resource/CollectionProperties$Builder/setHref(java.lang.String)|",
+      "|java+method:///com/stormpath/sdk/impl/resource/CollectionProperties$Builder/setLimit(int)|",
+      "|java+method:///com/stormpath/sdk/impl/ds/DefaultDataStore/executeRequest(com.stormpath.sdk.impl.http.Request)|",
+      "|java+method:///com/stormpath/sdk/impl/ds/DefaultDataStore/createRequest(com.stormpath.sdk.http.HttpMethod,java.lang.String,java.util.Map)|",
+      "|java+method:///com/stormpath/sdk/impl/http/QueryString/containsKey(java.lang.Object)|",
+      "|java+method:///com/stormpath/sdk/impl/resource/CollectionProperties$Builder/build()|",
+      "|java+method:///com/stormpath/sdk/impl/resource/CollectionProperties$Builder/setOffset(int)|",
+      "|java+constructor:///java/lang/String/String(java.lang.String)|",
+      "|java+method:///java/lang/Integer/valueOf(java.lang.String)|",
+      "|java+constructor:///com/stormpath/sdk/impl/ds/api/ApiKeyResourcePropertiesFilter/ApiKeyResourcePropertiesFilter(com.stormpath.sdk.api.ApiKey,com.stormpath.sdk.impl.http.QueryString)|",
+      "|java+constructor:///com/stormpath/sdk/impl/resource/CollectionProperties$Builder/CollectionProperties$Builder()|",
+      "|java+method:///com/stormpath/sdk/impl/ds/DefaultDataStore/getCachedValue(java.lang.String,java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Integer/intValue()|",
+      "|java+method:///com/stormpath/sdk/impl/ds/DefaultDataStore/isCacheUpdateEnabled(java.lang.Class)|",
+      "|java+method:///com/stormpath/sdk/impl/resource/CollectionProperties$Builder/setItemsMap(java.util.Map)|",
+      "|java+method:///com/stormpath/sdk/impl/ds/DefaultDataStore/cache(java.lang.Class,java.util.Map,com.stormpath.sdk.impl.http.QueryString)|",
+      "|java+method:///com/stormpath/sdk/impl/ds/DefaultDataStore/isCacheRetrievalEnabled(java.lang.Class)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///com/stormpath/sdk/impl/resource/IntegerProperty/getName()|",
+      "|java+method:///com/stormpath/sdk/impl/http/QueryString/get(java.lang.Object)|",
+      "|java+method:///com/stormpath/sdk/impl/api/ApiKeyParameter/getName()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///com/stormpath/sdk/impl/ds/DefaultDataStore/isApiKeyCollectionQuery(java.lang.Class,com.stormpath.sdk.impl.http.QueryString)|",
+      "|java+method:///com/stormpath/sdk/impl/ds/PropertiesFilterProcessor/process(java.lang.Class,java.util.Map)|",
+      "|java+constructor:///java/util/ArrayList/ArrayList(java.util.Collection)|",
+      "|java+method:///com/stormpath/sdk/lang/Collections/isEmpty(java.util.Map)|",
+      "|java+method:///com/stormpath/sdk/impl/resource/CollectionProperties$Builder/setHref(java.lang.String)|",
+      "|java+method:///com/stormpath/sdk/impl/resource/CollectionProperties$Builder/setLimit(int)|",
+      "|java+method:///com/stormpath/sdk/impl/ds/DefaultDataStore/executeRequest(com.stormpath.sdk.impl.http.Request)|",
+      "|java+method:///com/stormpath/sdk/impl/ds/DefaultDataStore/createRequest(com.stormpath.sdk.http.HttpMethod,java.lang.String,java.util.Map)|",
+      "|java+method:///com/stormpath/sdk/impl/http/QueryString/containsKey(java.lang.Object)|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///com/stormpath/sdk/impl/resource/CollectionProperties$Builder/build()|",
+      "|java+method:///com/stormpath/sdk/impl/resource/CollectionProperties$Builder/setOffset(int)|",
+      "|java+constructor:///java/lang/String/String(java.lang.String)|",
+      "|java+method:///java/lang/Integer/valueOf(java.lang.String)|",
+      "|java+constructor:///com/stormpath/sdk/impl/ds/api/ApiKeyResourcePropertiesFilter/ApiKeyResourcePropertiesFilter(com.stormpath.sdk.api.ApiKey,com.stormpath.sdk.impl.http.QueryString)|",
+      "|java+constructor:///com/stormpath/sdk/impl/resource/CollectionProperties$Builder/CollectionProperties$Builder()|",
+      "|java+method:///com/stormpath/sdk/impl/ds/PropertiesFilterProcessor/getFilters()|",
+      "|java+method:///com/stormpath/sdk/impl/ds/DefaultDataStore/getCachedValue(java.lang.String,java.lang.Class)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///com/stormpath/sdk/impl/ds/DefaultPropertiesFilterProcessor/DefaultPropertiesFilterProcessor(java.util.List)|"
+    ],
+    "affectedLib": "com.stormpath.sdk:stormpath-sdk-api:1.0.RC3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.stormpath.sdk:stormpath-sdk-impl:1.0.RC",
+    "coordinatesV2": "com.stormpath.sdk:stormpath-sdk-impl:1.0.RC3",
+    "caller": "|java+method:///com/stormpath/sdk/impl/ds/DefaultDataStore/save(java.lang.String,com.stormpath.sdk.resource.Resource,java.lang.Class,com.stormpath.sdk.impl.http.QueryString)|",
+    "called": "|java+method:///com/stormpath/sdk/lang/Assert/isInstanceOf(java.lang.Class,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///java/lang/Class/isAssignableFrom(java.lang.Class)|",
+      "|java+method:///com/stormpath/sdk/impl/ds/DefaultDataStore/cache(java.lang.Class,java.util.Map,com.stormpath.sdk.impl.http.QueryString)|",
+      "|java+constructor:///com/stormpath/sdk/impl/http/support/DefaultRequest/DefaultRequest(com.stormpath.sdk.http.HttpMethod,java.lang.String,com.stormpath.sdk.impl.http.QueryString,com.stormpath.sdk.impl.http.HttpHeaders,java.io.InputStream,long)|",
+      "|java+method:///java/util/Map/isEmpty()|",
+      "|java+method:///com/stormpath/sdk/impl/util/StringInputStream/available()|",
+      "|java+method:///com/stormpath/sdk/impl/ds/DefaultDataStore/executeRequestGetFullResponse(com.stormpath.sdk.impl.http.Request)|",
+      "|java+method:///com/stormpath/sdk/impl/ds/DefaultDataStore/getBodyFromSuccessfulResponse(com.stormpath.sdk.impl.http.Response)|",
+      "|java+constructor:///com/stormpath/sdk/impl/ds/api/ApiKeyResourcePropertiesFilter/ApiKeyResourcePropertiesFilter(com.stormpath.sdk.api.ApiKey,com.stormpath.sdk.impl.http.QueryString)|",
+      "|java+method:///com/stormpath/sdk/impl/ds/MapMarshaller/marshal(java.util.Map)|",
+      "|java+constructor:///com/stormpath/sdk/impl/util/StringInputStream/StringInputStream(java.lang.String)|",
+      "|java+method:///com/stormpath/sdk/impl/ds/ResourceFactory/instantiate(java.lang.Class,java.lang.Object%5B%5D)|",
+      "|java+method:///com/stormpath/sdk/lang/Assert/isInstanceOf(java.lang.Class,java.lang.Object)|",
+      "|java+method:///com/stormpath/sdk/impl/ds/DefaultDataStore/isCacheUpdateEnabled(java.lang.Class)|",
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///com/stormpath/sdk/impl/ds/PropertiesFilterProcessor/process(java.lang.Class,java.util.Map)|",
+      "|java+method:///com/stormpath/sdk/lang/Collections/isEmpty(java.util.Map)|",
+      "|java+constructor:///java/lang/AssertionError/AssertionError(java.lang.Object)|",
+      "|java+method:///com/stormpath/sdk/impl/ds/DefaultDataStore/ensureFullyQualified(java.lang.String)|",
+      "|java+method:///java/lang/Boolean/valueOf(boolean)|",
+      "|java+method:///com/stormpath/sdk/impl/ds/DefaultDataStore/cacheNestedCustomData(java.lang.String,java.util.Map)|",
+      "|java+method:///com/stormpath/sdk/impl/http/Response/getHttpStatus()|",
+      "|java+method:///com/stormpath/sdk/impl/ds/DefaultDataStore/toMap(com.stormpath.sdk.impl.resource.AbstractResource,boolean)|",
+      "|java+method:///com/stormpath/sdk/impl/ds/PropertiesFilterProcessor/addTransitoryFilter(com.stormpath.sdk.impl.ds.PropertiesFilter)|",
+      "|java+method:///com/stormpath/sdk/lang/Assert/notNull(java.lang.Object,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Class/isAssignableFrom(java.lang.Class)|",
+      "|java+method:///com/stormpath/sdk/impl/ds/DefaultDataStore/cache(java.lang.Class,java.util.Map,com.stormpath.sdk.impl.http.QueryString)|",
+      "|java+constructor:///com/stormpath/sdk/impl/http/support/DefaultRequest/DefaultRequest(com.stormpath.sdk.http.HttpMethod,java.lang.String,com.stormpath.sdk.impl.http.QueryString,com.stormpath.sdk.impl.http.HttpHeaders,java.io.InputStream,long)|",
+      "|java+method:///com/stormpath/sdk/impl/ds/DefaultDataStore/toEnlistment(java.util.Map)|",
+      "|java+method:///com/stormpath/sdk/impl/util/StringInputStream/available()|",
+      "|java+method:///com/stormpath/sdk/impl/ds/DefaultDataStore/executeRequestGetFullResponse(com.stormpath.sdk.impl.http.Request)|",
+      "|java+method:///com/stormpath/sdk/lang/Strings/hasText(java.lang.String)|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///com/stormpath/sdk/impl/ds/DefaultDataStore/getBodyFromSuccessfulResponse(com.stormpath.sdk.impl.http.Response)|",
+      "|java+constructor:///com/stormpath/sdk/impl/ds/api/ApiKeyResourcePropertiesFilter/ApiKeyResourcePropertiesFilter(com.stormpath.sdk.api.ApiKey,com.stormpath.sdk.impl.http.QueryString)|",
+      "|java+method:///com/stormpath/sdk/impl/ds/PropertiesFilterProcessor/getFilters()|",
+      "|java+method:///com/stormpath/sdk/impl/ds/MapMarshaller/marshal(java.util.Map)|",
+      "|java+method:///com/stormpath/sdk/lang/Assert/notNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///com/stormpath/sdk/impl/ds/ResourceFactory/instantiate(java.lang.Class,java.lang.Object%5B%5D)|",
+      "|java+method:///com/stormpath/sdk/lang/Assert/isInstanceOf(java.lang.Class,java.lang.Object)|",
+      "|java+method:///com/stormpath/sdk/impl/ds/DefaultDataStore/isCacheUpdateEnabled(java.lang.Class)|",
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///com/stormpath/sdk/impl/ds/PropertiesFilterProcessor/process(java.lang.Class,java.util.Map)|",
+      "|java+method:///java/lang/Object/equals(java.lang.Object)|",
+      "|java+constructor:///java/util/ArrayList/ArrayList(java.util.Collection)|",
+      "|java+method:///com/stormpath/sdk/lang/Collections/isEmpty(java.util.Map)|",
+      "|java+constructor:///java/lang/AssertionError/AssertionError(java.lang.Object)|",
+      "|java+method:///com/stormpath/sdk/impl/ds/DefaultDataStore/ensureFullyQualified(java.lang.String)|",
+      "|java+method:///java/util/Map/isEmpty()|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+method:///java/lang/Boolean/valueOf(boolean)|",
+      "|java+method:///com/stormpath/sdk/impl/ds/DefaultDataStore/cacheNestedCustomData(java.lang.String,java.util.Map)|",
+      "|java+method:///com/stormpath/sdk/impl/http/Response/getHttpStatus()|",
+      "|java+method:///com/stormpath/sdk/impl/ds/DefaultDataStore/toMap(com.stormpath.sdk.impl.resource.AbstractResource,boolean)|",
+      "|java+constructor:///com/stormpath/sdk/impl/ds/DefaultPropertiesFilterProcessor/DefaultPropertiesFilterProcessor(java.util.List)|",
+      "|java+constructor:///com/stormpath/sdk/impl/util/StringInputStream/StringInputStream(java.lang.String)|"
+    ],
+    "affectedLib": "com.stormpath.sdk:stormpath-sdk-api:1.0.RC3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.stormpath.sdk:stormpath-sdk-impl:1.0.RC",
+    "coordinatesV2": "com.stormpath.sdk:stormpath-sdk-impl:1.0.RC3",
+    "caller": "|java+method:///com/stormpath/sdk/impl/ds/DefaultDataStore/create(java.lang.String,com.stormpath.sdk.resource.Resource,com.stormpath.sdk.query.Options)|",
+    "called": "|java+method:///com/stormpath/sdk/lang/Collections/isEmpty(java.util.Map)|",
+    "v1Body": [
+      "|java+method:///com/stormpath/sdk/impl/resource/AbstractResource/setProperties(java.util.Map)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///com/stormpath/sdk/impl/ds/DefaultDataStore/save(java.lang.String,com.stormpath.sdk.resource.Resource,java.lang.Class,com.stormpath.sdk.impl.http.QueryString)|",
+      "|java+method:///com/stormpath/sdk/impl/http/QueryStringFactory/createQueryString(java.lang.String,com.stormpath.sdk.impl.query.DefaultOptions)|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+method:///com/stormpath/sdk/impl/ds/DefaultDataStore/toMap(com.stormpath.sdk.impl.resource.AbstractResource,boolean)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///com/stormpath/sdk/lang/Assert/isInstanceOf(java.lang.Class,java.lang.Object,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Class/isAssignableFrom(java.lang.Class)|",
+      "|java+method:///java/util/LinkedHashMap/get(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///com/stormpath/sdk/impl/ds/DefaultDataStore/toEnlistment(java.util.Map)|",
+      "|java+method:///com/stormpath/sdk/impl/ds/DefaultDataStore/save(java.lang.String,com.stormpath.sdk.resource.Resource,java.lang.Class,com.stormpath.sdk.impl.http.QueryString)|",
+      "|java+method:///com/stormpath/sdk/impl/http/QueryStringFactory/createQueryString(java.lang.String,com.stormpath.sdk.impl.query.DefaultOptions)|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+method:///com/stormpath/sdk/impl/ds/DefaultDataStore/toMap(com.stormpath.sdk.impl.resource.AbstractResource,boolean)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///com/stormpath/sdk/impl/resource/AbstractResource/setProperties(java.util.Map)|",
+      "|java+method:///com/stormpath/sdk/lang/Collections/isEmpty(java.util.Map)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///com/stormpath/sdk/lang/Assert/isInstanceOf(java.lang.Class,java.lang.Object,java.lang.String)|"
+    ],
+    "affectedLib": "com.stormpath.sdk:stormpath-sdk-api:1.0.RC3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.stormpath.sdk:stormpath-sdk-impl:1.0.RC",
+    "coordinatesV2": "com.stormpath.sdk:stormpath-sdk-impl:1.0.RC3",
+    "caller": "|java+method:///com/stormpath/sdk/impl/api/ClientApiKeyBuilder/build()|",
+    "called": "|java+method:///com/stormpath/sdk/lang/Strings/hasText(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///com/stormpath/sdk/impl/api/ClientApiKeyBuilder/build()|",
+      "|java+method:///com/stormpath/sdk/impl/api/ClientApiKeyBuilder/loadApiKey()|",
+      "|java+method:///com/stormpath/sdk/lang/Strings/hasText(java.lang.String)|",
+      "|java+constructor:///com/stormpath/sdk/impl/api/ClientApiKey/ClientApiKey(java.lang.String,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Properties/isEmpty()|",
+      "|java+method:///com/stormpath/sdk/impl/api/ClientApiKeyBuilder/getPropertyValue(java.util.Properties,java.lang.String)|",
+      "|java+constructor:///java/lang/IllegalStateException/IllegalStateException(java.lang.String)|",
+      "|java+method:///com/stormpath/sdk/impl/api/ClientApiKeyBuilder/getEnvironmentVariableProperties()|",
+      "|java+method:///com/stormpath/sdk/impl/api/ClientApiKeyBuilder/getSystemProperties()|",
+      "|java+method:///com/stormpath/sdk/impl/api/ClientApiKeyBuilder/toProperties(java.io.Reader)|",
+      "|java+method:///com/stormpath/sdk/lang/Strings/hasText(java.lang.String)|",
+      "|java+method:///com/stormpath/sdk/impl/api/ClientApiKeyBuilder/getPropertyValue(java.util.Properties,java.lang.String,java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///com/stormpath/sdk/impl/api/ClientApiKeyBuilder/createFileReader(java.lang.String)|",
+      "|java+method:///com/stormpath/sdk/impl/api/ClientApiKeyBuilder/toReader(java.io.InputStream)|",
+      "|java+method:///com/stormpath/sdk/impl/api/ClientApiKeyBuilder/valueOf(java.lang.String,java.lang.String)|",
+      "|java+method:///java/lang/Class/getSimpleName()|",
+      "|java+method:///com/stormpath/sdk/impl/api/ClientApiKeyBuilder/build()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///com/stormpath/sdk/impl/api/ClientApiKeyBuilder/getEnvironmentVariableFileProperties()|",
+      "|java+method:///com/stormpath/sdk/impl/api/ClientApiKeyBuilder/createApiKey(java.lang.String,java.lang.String)|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///com/stormpath/sdk/impl/api/ClientApiKeyBuilder/getDefaultApiKeyFileProperties()|",
+      "|java+method:///com/stormpath/sdk/impl/api/ClientApiKeyBuilder/getSystemPropertyFileProperties()|"
+    ],
+    "affectedLib": "com.stormpath.sdk:stormpath-sdk-api:1.0.RC3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.stormpath.sdk:stormpath-sdk-impl:1.0.RC",
+    "coordinatesV2": "com.stormpath.sdk:stormpath-sdk-impl:1.0.RC3",
+    "caller": "|java+constructor:///com/stormpath/sdk/impl/ds/DefaultDataStore/DefaultDataStore(com.stormpath.sdk.impl.http.RequestExecutor,java.lang.String,com.stormpath.sdk.api.ApiKey)|",
+    "called": "|java+method:///com/stormpath/sdk/lang/Assert/notNull(java.lang.Object,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///com/stormpath/sdk/impl/ds/DefaultDataStore/initFilterProcessors()|",
+      "|java+constructor:///com/stormpath/sdk/impl/ds/DefaultResourceFactory/DefaultResourceFactory(com.stormpath.sdk.impl.ds.InternalDataStore)|",
+      "|java+constructor:///com/stormpath/sdk/impl/http/QueryStringFactory/QueryStringFactory()|",
+      "|java+constructor:///com/stormpath/sdk/impl/cache/DisabledCacheManager/DisabledCacheManager()|",
+      "|java+constructor:///com/stormpath/sdk/impl/resource/ReferenceFactory/ReferenceFactory()|",
+      "|java+constructor:///com/stormpath/sdk/impl/ds/DefaultPropertiesFilterProcessor/DefaultPropertiesFilterProcessor()|",
+      "|java+constructor:///com/stormpath/sdk/impl/ds/DefaultCacheMapInitializer/DefaultCacheMapInitializer()|",
+      "|java+constructor:///com/stormpath/sdk/impl/ds/DefaultCacheRegionNameResolver/DefaultCacheRegionNameResolver()|",
+      "|java+constructor:///com/stormpath/sdk/impl/ds/JacksonMapMarshaller/JacksonMapMarshaller()|",
+      "|java+method:///com/stormpath/sdk/lang/Assert/notNull(java.lang.Object,java.lang.String)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/stormpath/sdk/impl/ds/api/ApiKeyCachePropertiesFilter/ApiKeyCachePropertiesFilter(com.stormpath.sdk.api.ApiKey)|",
+      "|java+constructor:///com/stormpath/sdk/impl/ds/api/ApiKeyQueryPropertiesFilter/ApiKeyQueryPropertiesFilter()|",
+      "|java+constructor:///com/stormpath/sdk/impl/ds/DefaultResourceFactory/DefaultResourceFactory(com.stormpath.sdk.impl.ds.InternalDataStore)|",
+      "|java+constructor:///com/stormpath/sdk/impl/http/QueryStringFactory/QueryStringFactory()|",
+      "|java+method:///com/stormpath/sdk/lang/Collections/toList(java.lang.Object%5B%5D)|",
+      "|java+constructor:///com/stormpath/sdk/impl/cache/DisabledCacheManager/DisabledCacheManager()|",
+      "|java+constructor:///com/stormpath/sdk/impl/util/SoftHashMap/SoftHashMap()|",
+      "|java+constructor:///com/stormpath/sdk/impl/resource/ReferenceFactory/ReferenceFactory()|",
+      "|java+constructor:///com/stormpath/sdk/impl/ds/DefaultPropertiesFilterProcessor/DefaultPropertiesFilterProcessor(java.util.List)|",
+      "|java+constructor:///com/stormpath/sdk/impl/ds/DefaultCacheMapInitializer/DefaultCacheMapInitializer()|",
+      "|java+constructor:///com/stormpath/sdk/impl/ds/DefaultCacheRegionNameResolver/DefaultCacheRegionNameResolver()|",
+      "|java+constructor:///com/stormpath/sdk/impl/ds/JacksonMapMarshaller/JacksonMapMarshaller()|",
+      "|java+method:///com/stormpath/sdk/lang/Assert/notNull(java.lang.Object,java.lang.String)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "com.stormpath.sdk:stormpath-sdk-api:1.0.RC3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.stormpath.sdk:stormpath-sdk-impl:1.0.RC",
+    "coordinatesV2": "com.stormpath.sdk:stormpath-sdk-impl:1.0.RC3",
+    "caller": "|java+method:///com/stormpath/sdk/impl/authc/DefaultApiRequestAuthenticator/execute()|",
+    "called": "|java+method:///com/stormpath/sdk/lang/Assert/isInstanceOf(java.lang.Class,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///com/stormpath/sdk/impl/authc/ApiAuthenticationRequestFactory/createFrom(com.stormpath.sdk.impl.authc.HttpServletRequestWrapper)|",
+      "|java+constructor:///com/stormpath/sdk/impl/authc/ApiAuthenticationRequestFactory/ApiAuthenticationRequestFactory()|",
+      "|java+method:///com/stormpath/sdk/application/Application/authenticateAccount(com.stormpath.sdk.authc.AuthenticationRequest)|",
+      "|java+method:///com/stormpath/sdk/lang/Assert/isInstanceOf(java.lang.Class,java.lang.Object)|",
+      "|java+method:///com/stormpath/sdk/impl/authc/ApiAuthenticationRequestFactory/createFrom(com.stormpath.sdk.http.HttpRequest)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/stormpath/sdk/application/Application/authenticateAccount(com.stormpath.sdk.authc.AuthenticationRequest)|",
+      "|java+method:///com/stormpath/sdk/lang/Assert/isInstanceOf(java.lang.Class,java.lang.Object)|",
+      "|java+method:///com/stormpath/sdk/impl/authc/ApiAuthenticationRequestFactory/createFrom(com.stormpath.sdk.http.HttpRequest)|"
+    ],
+    "affectedLib": "com.stormpath.sdk:stormpath-sdk-api:1.0.RC3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.stormpath.sdk:stormpath-sdk-impl:1.0.RC",
+    "coordinatesV2": "com.stormpath.sdk:stormpath-sdk-impl:1.0.RC3",
+    "caller": "|java+method:///com/stormpath/sdk/impl/client/DefaultClientBuilder/build()|",
+    "called": "|java+method:///com/stormpath/sdk/cache/Caches/newCacheManager()|",
+    "v1Body": [
+      "|java+constructor:///com/stormpath/sdk/impl/client/DefaultClient/DefaultClient(com.stormpath.sdk.api.ApiKey,java.lang.String,com.stormpath.sdk.client.Proxy,com.stormpath.sdk.cache.CacheManager,com.stormpath.sdk.client.AuthenticationScheme)|",
+      "|java+method:///com/stormpath/sdk/lang/Assert/state(boolean,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+method:///com/stormpath/sdk/cache/CacheManagerBuilder/withDefaultTimeToLive(long,java.util.concurrent.TimeUnit)|",
+      "|java+constructor:///com/stormpath/sdk/impl/client/DefaultClient/DefaultClient(com.stormpath.sdk.api.ApiKey,java.lang.String,com.stormpath.sdk.client.Proxy,com.stormpath.sdk.cache.CacheManager,com.stormpath.sdk.client.AuthenticationScheme,int)|",
+      "|java+method:///com/stormpath/sdk/cache/CacheManagerBuilder/withDefaultTimeToIdle(long,java.util.concurrent.TimeUnit)|",
+      "|java+method:///com/stormpath/sdk/cache/CacheManagerBuilder/build()|",
+      "|java+method:///com/stormpath/sdk/api/ApiKeys/builder()|",
+      "|java+method:///com/stormpath/sdk/cache/Caches/newCacheManager()|",
+      "|java+method:///com/stormpath/sdk/api/ApiKeyBuilder/build()|",
+      "|java+method:///com/stormpath/sdk/lang/Assert/state(boolean,java.lang.String)|"
+    ],
+    "affectedLib": "com.stormpath.sdk:stormpath-sdk-api:1.0.RC3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.stormpath.sdk:stormpath-sdk-impl:1.0.RC",
+    "coordinatesV2": "com.stormpath.sdk:stormpath-sdk-impl:1.0.RC3",
+    "caller": "|java+method:///com/stormpath/sdk/impl/ds/DefaultDataStore/getResource(java.lang.String,java.lang.Class,com.stormpath.sdk.impl.http.QueryString)|",
+    "called": "|java+method:///com/stormpath/sdk/lang/Collections/isEmpty(java.util.Map)|",
+    "v1Body": [
+      "|java+method:///java/lang/Class/isAssignableFrom(java.lang.Class)|",
+      "|java+method:///com/stormpath/sdk/impl/ds/ResourceFactory/instantiate(java.lang.Class,java.lang.Object%5B%5D)|",
+      "|java+method:///com/stormpath/sdk/impl/ds/DefaultDataStore/ensureFullyQualified(java.lang.String)|",
+      "|java+method:///com/stormpath/sdk/impl/ds/DefaultDataStore/retrieveResponseValue(java.lang.String,java.lang.Class,com.stormpath.sdk.impl.http.QueryString)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Class/isAssignableFrom(java.lang.Class)|",
+      "|java+method:///com/stormpath/sdk/impl/ds/ResourceFactory/instantiate(java.lang.Class,java.lang.Object%5B%5D)|",
+      "|java+method:///com/stormpath/sdk/lang/Collections/isEmpty(java.util.Map)|",
+      "|java+method:///com/stormpath/sdk/impl/ds/DefaultDataStore/toEnlistment(java.util.Map)|",
+      "|java+method:///com/stormpath/sdk/impl/ds/DefaultDataStore/ensureFullyQualified(java.lang.String)|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+method:///com/stormpath/sdk/impl/ds/DefaultDataStore/retrieveResponseValue(java.lang.String,java.lang.Class,com.stormpath.sdk.impl.http.QueryString)|"
+    ],
+    "affectedLib": "com.stormpath.sdk:stormpath-sdk-api:1.0.RC3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.stormpath.sdk:stormpath-sdk-impl:1.0.RC",
+    "coordinatesV2": "com.stormpath.sdk:stormpath-sdk-impl:1.0.RC3",
+    "caller": "|java+method:///com/stormpath/sdk/impl/ds/DefaultDataStore/create(java.lang.String,com.stormpath.sdk.resource.Resource)|",
+    "called": "|java+method:///com/stormpath/sdk/lang/Collections/isEmpty(java.util.Map)|",
+    "v1Body": [
+      "|java+method:///com/stormpath/sdk/impl/resource/AbstractResource/setProperties(java.util.Map)|",
+      "|java+method:///com/stormpath/sdk/impl/ds/DefaultDataStore/toMap(com.stormpath.sdk.impl.resource.AbstractResource,boolean)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///com/stormpath/sdk/impl/ds/DefaultDataStore/create(java.lang.String,com.stormpath.sdk.resource.Resource,java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Class/isAssignableFrom(java.lang.Class)|",
+      "|java+method:///java/util/LinkedHashMap/get(java.lang.Object)|",
+      "|java+method:///com/stormpath/sdk/impl/ds/DefaultDataStore/toEnlistment(java.util.Map)|",
+      "|java+method:///com/stormpath/sdk/impl/ds/DefaultDataStore/toMap(com.stormpath.sdk.impl.resource.AbstractResource,boolean)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///com/stormpath/sdk/impl/ds/DefaultDataStore/create(java.lang.String,com.stormpath.sdk.resource.Resource,java.lang.Class)|",
+      "|java+method:///com/stormpath/sdk/impl/resource/AbstractResource/setProperties(java.util.Map)|",
+      "|java+method:///com/stormpath/sdk/lang/Collections/isEmpty(java.util.Map)|"
+    ],
+    "affectedLib": "com.stormpath.sdk:stormpath-sdk-api:1.0.RC3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.stormpath.sdk:stormpath-sdk-impl:1.0.RC",
+    "coordinatesV2": "com.stormpath.sdk:stormpath-sdk-impl:1.0.RC3",
+    "caller": "|java+constructor:///com/stormpath/sdk/impl/authc/DefaultApiRequestAuthenticator/DefaultApiRequestAuthenticator(com.stormpath.sdk.application.Application,java.lang.Object)|",
+    "called": "|java+method:///com/stormpath/sdk/lang/Classes/isAvailable(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/lang/Class/isAssignableFrom(java.lang.Class)|",
+      "|java+method:///com/stormpath/sdk/lang/Classes/getConstructor(java.lang.Class,java.lang.Class%5B%5D)|",
+      "|java+method:///com/stormpath/sdk/lang/Classes/instantiate(java.lang.reflect.Constructor,java.lang.Object%5B%5D)|",
+      "|java+method:///com/stormpath/sdk/lang/Assert/notNull(java.lang.Object)|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///com/stormpath/sdk/lang/Assert/notNull(java.lang.Object,java.lang.String)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Class/isAssignableFrom(java.lang.Class)|",
+      "|java+constructor:///com/stormpath/sdk/impl/http/ServletHttpRequest/ServletHttpRequest(javax.servlet.http.HttpServletRequest)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///com/stormpath/sdk/lang/Classes/isAvailable(java.lang.String)|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+method:///com/stormpath/sdk/lang/Assert/isTrue(boolean,java.lang.String)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///com/stormpath/sdk/lang/Assert/isInstanceOf(java.lang.Class,java.lang.Object,java.lang.String)|",
+      "|java+method:///com/stormpath/sdk/lang/Assert/notNull(java.lang.Object,java.lang.String)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "com.stormpath.sdk:stormpath-sdk-api:1.0.RC3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.stormpath.sdk:stormpath-sdk-impl:1.0.RC",
+    "coordinatesV2": "com.stormpath.sdk:stormpath-sdk-impl:1.0.RC3",
+    "caller": "|java+method:///com/stormpath/sdk/impl/provider/ProviderAccountResolver/resolveProviderAccount(java.lang.String,com.stormpath.sdk.provider.ProviderAccountRequest)|",
+    "called": "|java+method:///com/stormpath/sdk/lang/Assert/notNull(java.lang.Object,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///com/stormpath/sdk/impl/ds/InternalDataStore/create(java.lang.String,com.stormpath.sdk.resource.Resource,java.lang.Class)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///com/stormpath/sdk/provider/ProviderAccountRequest/getProviderData()|",
+      "|java+constructor:///com/stormpath/sdk/impl/provider/DefaultProviderAccountAccess/DefaultProviderAccountAccess(com.stormpath.sdk.impl.ds.InternalDataStore)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///com/stormpath/sdk/lang/Assert/notNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///com/stormpath/sdk/impl/provider/ProviderAccountAccess/setProviderData(com.stormpath.sdk.provider.ProviderData)|",
+      "|java+method:///com/stormpath/sdk/impl/provider/ProviderAccountResultHelper/getProviderAccountResult()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/stormpath/sdk/impl/ds/InternalDataStore/create(java.lang.String,com.stormpath.sdk.resource.Resource,java.lang.Class)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///com/stormpath/sdk/provider/ProviderAccountRequest/getProviderData()|",
+      "|java+constructor:///com/stormpath/sdk/impl/provider/DefaultProviderAccountAccess/DefaultProviderAccountAccess(com.stormpath.sdk.impl.ds.InternalDataStore)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///com/stormpath/sdk/impl/provider/ProviderAccountAccess/setProviderData(com.stormpath.sdk.provider.ProviderData)|",
+      "|java+method:///com/stormpath/sdk/lang/Assert/notNull(java.lang.Object,java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "affectedLib": "com.stormpath.sdk:stormpath-sdk-api:1.0.RC3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.stormpath.sdk:stormpath-sdk-impl:1.0.RC",
+    "coordinatesV2": "com.stormpath.sdk:stormpath-sdk-impl:1.0.RC3",
+    "caller": "|java+method:///com/stormpath/sdk/impl/ds/DefaultDataStore/getResource(java.lang.String,java.lang.Class,com.stormpath.sdk.impl.http.QueryString,java.lang.String,java.util.Map)|",
+    "called": "|java+method:///com/stormpath/sdk/lang/Collections/isEmpty(java.util.Map)|",
+    "v1Body": [
+      "|java+method:///java/lang/Class/isAssignableFrom(java.lang.Class)|",
+      "|java+method:///com/stormpath/sdk/impl/ds/ResourceFactory/instantiate(java.lang.Class,java.lang.Object%5B%5D)|",
+      "|java+constructor:///java/lang/IllegalStateException/IllegalStateException(java.lang.String)|",
+      "|java+method:///com/stormpath/sdk/lang/Collections/isEmpty(java.util.Map)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///com/stormpath/sdk/impl/ds/DefaultDataStore/ensureFullyQualified(java.lang.String)|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///com/stormpath/sdk/impl/ds/DefaultDataStore/retrieveResponseValue(java.lang.String,java.lang.Class,com.stormpath.sdk.impl.http.QueryString)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Class/isAssignableFrom(java.lang.Class)|",
+      "|java+method:///com/stormpath/sdk/impl/ds/ResourceFactory/instantiate(java.lang.Class,java.lang.Object%5B%5D)|",
+      "|java+constructor:///java/lang/IllegalStateException/IllegalStateException(java.lang.String)|",
+      "|java+method:///com/stormpath/sdk/lang/Collections/isEmpty(java.util.Map)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///com/stormpath/sdk/impl/ds/DefaultDataStore/toEnlistment(java.util.Map)|",
+      "|java+method:///com/stormpath/sdk/impl/ds/DefaultDataStore/ensureFullyQualified(java.lang.String)|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///com/stormpath/sdk/impl/ds/DefaultDataStore/retrieveResponseValue(java.lang.String,java.lang.Class,com.stormpath.sdk.impl.http.QueryString)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "affectedLib": "com.stormpath.sdk:stormpath-sdk-api:1.0.RC3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.stormpath.sdk:stormpath-sdk-impl:1.0.RC",
+    "coordinatesV2": "com.stormpath.sdk:stormpath-sdk-impl:1.0.RC3",
+    "caller": "|java+constructor:///com/stormpath/sdk/impl/api/ClientApiKey/ClientApiKey(java.lang.String,java.lang.String)|",
+    "called": "|java+method:///com/stormpath/sdk/lang/Strings/hasText(java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/stormpath/sdk/lang/Strings/hasText(java.lang.String)|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "com.stormpath.sdk:stormpath-sdk-api:1.0.RC3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.stormpath.sdk:stormpath-sdk-impl:1.0.RC",
+    "coordinatesV2": "com.stormpath.sdk:stormpath-sdk-impl:1.0.RC3",
+    "caller": "|java+method:///com/stormpath/sdk/impl/authc/ApiAuthenticationRequestFactory/hasContentType(java.lang.String,java.lang.String)|",
+    "called": "|java+method:///com/stormpath/sdk/lang/Strings/hasText(java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///java/util/StringTokenizer/StringTokenizer(java.lang.String,java.lang.String)|",
+      "|java+method:///java/util/StringTokenizer/nextToken()|",
+      "|java+method:///java/util/StringTokenizer/hasMoreTokens()|",
+      "|java+method:///com/stormpath/sdk/lang/Strings/hasText(java.lang.String)|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/String/equalsIgnoreCase(java.lang.String)|",
+      "|java+constructor:///java/util/StringTokenizer/StringTokenizer(java.lang.String,java.lang.String)|",
+      "|java+method:///com/stormpath/sdk/lang/Strings/hasText(java.lang.String)|",
+      "|java+method:///java/util/StringTokenizer/nextToken()|",
+      "|java+method:///java/util/StringTokenizer/hasMoreTokens()|"
+    ],
+    "affectedLib": "com.stormpath.sdk:stormpath-sdk-api:1.0.RC3",
+    "change": "UPDATED"
+  }
+]

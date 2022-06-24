@@ -1,0 +1,181 @@
+[
+  {
+    "coordinatesV1": "org.apache.james:zookeeper-sequence-provider:0.5",
+    "coordinatesV2": "org.apache.james:zookeeper-sequence-provider:3.0.0-RC1",
+    "caller": "|java+method:///org/apache/james/mailbox/store/mail/ZooUidProvider/lastUid(org.apache.james.mailbox.MailboxSession,org.apache.james.mailbox.store.mail.model.Mailbox)|",
+    "called": "|java+method:///com/google/common/base/Optional/of(java.lang.Object)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/james/mailbox/exception/MailboxException/MailboxException(java.lang.String,java.lang.Exception)|",
+      "|java+method:///org/apache/james/mailbox/store/mail/ZooUidProvider/pathForMailbox(org.apache.james.mailbox.store.mail.model.Mailbox)|",
+      "|java+method:///com/netflix/curator/framework/recipes/atomic/DistributedAtomicLong/get()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///com/netflix/curator/framework/recipes/atomic/AtomicValue/succeeded()|",
+      "|java+constructor:///com/netflix/curator/framework/recipes/atomic/DistributedAtomicLong/DistributedAtomicLong(com.netflix.curator.framework.CuratorFramework,java.lang.String,com.netflix.curator.RetryPolicy)|",
+      "|java+constructor:///org/apache/james/mailbox/exception/MailboxException/MailboxException(java.lang.String)|",
+      "|java+method:///java/lang/Long/longValue()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///com/netflix/curator/framework/recipes/atomic/AtomicValue/postValue()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///com/netflix/curator/framework/CuratorFramework/isStarted()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/common/base/Optional/absent()|",
+      "|java+method:///org/apache/james/mailbox/store/mail/ZooUidProvider/pathForMailbox(org.apache.james.mailbox.store.mail.model.Mailbox)|",
+      "|java+method:///com/netflix/curator/framework/recipes/atomic/DistributedAtomicLong/get()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///com/netflix/curator/framework/CuratorFramework/getState()|",
+      "|java+method:///com/google/common/base/Optional/of(java.lang.Object)|",
+      "|java+method:///com/netflix/curator/framework/recipes/atomic/AtomicValue/succeeded()|",
+      "|java+constructor:///com/netflix/curator/framework/recipes/atomic/DistributedAtomicLong/DistributedAtomicLong(com.netflix.curator.framework.CuratorFramework,java.lang.String,com.netflix.curator.RetryPolicy)|",
+      "|java+method:///java/lang/Long/longValue()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///com/netflix/curator/framework/recipes/atomic/AtomicValue/postValue()|",
+      "|java+constructor:///org/apache/james/mailbox/exception/MailboxException/MailboxException(java.lang.String)|",
+      "|java+constructor:///org/apache/james/mailbox/exception/MailboxException/MailboxException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/apache/james/mailbox/MessageUid/of(long)|"
+    ],
+    "affectedLib": "com.google.guava:guava:13.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.james:zookeeper-sequence-provider:0.5",
+    "coordinatesV2": "org.apache.james:zookeeper-sequence-provider:3.0.0-RC1",
+    "caller": "|java+method:///org/apache/james/mailbox/store/mail/AbstractLockingUidProvider$1/execute()|",
+    "called": "|java+method:///org/apache/james/mailbox/store/mail/AbstractLockingUidProvider$1/execute()|",
+    "v1Body": [
+      "|java+method:///org/apache/james/mailbox/store/mail/AbstractLockingUidProvider/lockedNextUid(org.apache.james.mailbox.MailboxSession,org.apache.james.mailbox.store.mail.model.Mailbox)|",
+      "|java+method:///org/apache/james/mailbox/store/mail/AbstractLockingUidProvider$1/execute()|",
+      "|java+method:///java/lang/Long/valueOf(long)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/james/mailbox/store/mail/AbstractLockingUidProvider$1/execute()|",
+      "|java+method:///org/apache/james/mailbox/store/mail/AbstractLockingUidProvider/lockedNextUid(org.apache.james.mailbox.MailboxSession,org.apache.james.mailbox.store.mail.model.Mailbox)|"
+    ],
+    "affectedLib": "org.apache.james:apache-james-mailbox-store:3.0.0-RC1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.james:zookeeper-sequence-provider:0.5",
+    "coordinatesV2": "org.apache.james:zookeeper-sequence-provider:3.0.0-RC1",
+    "caller": "|java+method:///org/apache/james/mailbox/store/mail/AbstractLockingModSeqProvider/nextModSeq(org.apache.james.mailbox.MailboxSession,org.apache.james.mailbox.store.mail.model.Mailbox)|",
+    "called": "|java+constructor:///org/apache/james/mailbox/store/mail/AbstractLockingModSeqProvider$1/AbstractLockingModSeqProvider$1(org.apache.james.mailbox.store.mail.AbstractLockingModSeqProvider,org.apache.james.mailbox.MailboxSession,org.apache.james.mailbox.store.mail.model.Mailbox)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/james/mailbox/store/StoreMailboxPath/StoreMailboxPath(org.apache.james.mailbox.store.mail.model.Mailbox)|",
+      "|java+method:///java/lang/Long/longValue()|",
+      "|java+method:///org/apache/james/mailbox/MailboxPathLocker/executeWithLock(org.apache.james.mailbox.MailboxSession,org.apache.james.mailbox.model.MailboxPath,org.apache.james.mailbox.MailboxPathLocker$LockAwareExecution)|",
+      "|java+constructor:///org/apache/james/mailbox/store/mail/AbstractLockingModSeqProvider$1/AbstractLockingModSeqProvider$1(org.apache.james.mailbox.store.mail.AbstractLockingModSeqProvider,org.apache.james.mailbox.MailboxSession,org.apache.james.mailbox.store.mail.model.Mailbox)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/james/mailbox/store/StoreMailboxPath/StoreMailboxPath(org.apache.james.mailbox.store.mail.model.Mailbox)|",
+      "|java+method:///java/lang/Long/longValue()|",
+      "|java+constructor:///org/apache/james/mailbox/store/mail/AbstractLockingModSeqProvider$1/AbstractLockingModSeqProvider$1(org.apache.james.mailbox.store.mail.AbstractLockingModSeqProvider,org.apache.james.mailbox.MailboxSession,org.apache.james.mailbox.store.mail.model.Mailbox)|",
+      "|java+method:///org/apache/james/mailbox/MailboxPathLocker/executeWithLock(org.apache.james.mailbox.MailboxSession,org.apache.james.mailbox.model.MailboxPath,org.apache.james.mailbox.MailboxPathLocker$LockAwareExecution,boolean)|"
+    ],
+    "affectedLib": "org.apache.james:apache-james-mailbox-store:3.0.0-RC1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.james:zookeeper-sequence-provider:0.5",
+    "coordinatesV2": "org.apache.james:zookeeper-sequence-provider:3.0.0-RC1",
+    "caller": "|java+method:///org/apache/james/mailbox/store/mail/AbstractLockingUidProvider/nextUid(org.apache.james.mailbox.MailboxSession,org.apache.james.mailbox.store.mail.model.Mailbox)|",
+    "called": "|java+constructor:///org/apache/james/mailbox/store/StoreMailboxPath/StoreMailboxPath(org.apache.james.mailbox.store.mail.model.Mailbox)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/james/mailbox/store/mail/AbstractLockingUidProvider$1/AbstractLockingUidProvider$1(org.apache.james.mailbox.store.mail.AbstractLockingUidProvider,org.apache.james.mailbox.MailboxSession,org.apache.james.mailbox.store.mail.model.Mailbox)|",
+      "|java+constructor:///org/apache/james/mailbox/store/StoreMailboxPath/StoreMailboxPath(org.apache.james.mailbox.store.mail.model.Mailbox)|",
+      "|java+method:///java/lang/Long/longValue()|",
+      "|java+method:///org/apache/james/mailbox/MailboxPathLocker/executeWithLock(org.apache.james.mailbox.MailboxSession,org.apache.james.mailbox.model.MailboxPath,org.apache.james.mailbox.MailboxPathLocker$LockAwareExecution)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/james/mailbox/store/mail/AbstractLockingUidProvider$1/AbstractLockingUidProvider$1(org.apache.james.mailbox.store.mail.AbstractLockingUidProvider,org.apache.james.mailbox.MailboxSession,org.apache.james.mailbox.store.mail.model.Mailbox)|",
+      "|java+constructor:///org/apache/james/mailbox/store/StoreMailboxPath/StoreMailboxPath(org.apache.james.mailbox.store.mail.model.Mailbox)|",
+      "|java+method:///org/apache/james/mailbox/MailboxPathLocker/executeWithLock(org.apache.james.mailbox.MailboxSession,org.apache.james.mailbox.model.MailboxPath,org.apache.james.mailbox.MailboxPathLocker$LockAwareExecution,boolean)|"
+    ],
+    "affectedLib": "org.apache.james:apache-james-mailbox-store:3.0.0-RC1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.james:zookeeper-sequence-provider:0.5",
+    "coordinatesV2": "org.apache.james:zookeeper-sequence-provider:3.0.0-RC1",
+    "caller": "|java+method:///org/apache/james/mailbox/store/mail/ZooUidProvider/nextUid(org.apache.james.mailbox.MailboxSession,org.apache.james.mailbox.store.mail.model.Mailbox)|",
+    "called": "|java+constructor:///org/apache/james/mailbox/exception/MailboxException/MailboxException(java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/james/mailbox/exception/MailboxException/MailboxException(java.lang.String,java.lang.Exception)|",
+      "|java+method:///org/apache/james/mailbox/store/mail/ZooUidProvider/pathForMailbox(org.apache.james.mailbox.store.mail.model.Mailbox)|",
+      "|java+method:///com/netflix/curator/framework/recipes/atomic/DistributedAtomicLong/get()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///com/netflix/curator/framework/recipes/atomic/AtomicValue/succeeded()|",
+      "|java+constructor:///com/netflix/curator/framework/recipes/atomic/DistributedAtomicLong/DistributedAtomicLong(com.netflix.curator.framework.CuratorFramework,java.lang.String,com.netflix.curator.RetryPolicy)|",
+      "|java+constructor:///org/apache/james/mailbox/exception/MailboxException/MailboxException(java.lang.String)|",
+      "|java+method:///java/lang/Long/longValue()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///com/netflix/curator/framework/recipes/atomic/AtomicValue/postValue()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///com/netflix/curator/framework/recipes/atomic/DistributedAtomicLong/increment()|",
+      "|java+method:///com/netflix/curator/framework/CuratorFramework/isStarted()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/james/mailbox/store/mail/ZooUidProvider/pathForMailbox(org.apache.james.mailbox.store.mail.model.Mailbox)|",
+      "|java+method:///com/netflix/curator/framework/recipes/atomic/DistributedAtomicLong/get()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///com/netflix/curator/framework/CuratorFramework/getState()|",
+      "|java+method:///com/netflix/curator/framework/recipes/atomic/AtomicValue/succeeded()|",
+      "|java+constructor:///com/netflix/curator/framework/recipes/atomic/DistributedAtomicLong/DistributedAtomicLong(com.netflix.curator.framework.CuratorFramework,java.lang.String,com.netflix.curator.RetryPolicy)|",
+      "|java+method:///java/lang/Long/longValue()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///com/netflix/curator/framework/recipes/atomic/AtomicValue/postValue()|",
+      "|java+constructor:///org/apache/james/mailbox/exception/MailboxException/MailboxException(java.lang.String)|",
+      "|java+constructor:///org/apache/james/mailbox/exception/MailboxException/MailboxException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///com/netflix/curator/framework/recipes/atomic/DistributedAtomicLong/increment()|",
+      "|java+method:///org/apache/james/mailbox/MessageUid/of(long)|"
+    ],
+    "affectedLib": "org.apache.james:apache-james-mailbox-api:3.0.0-RC1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.james:zookeeper-sequence-provider:0.5",
+    "coordinatesV2": "org.apache.james:zookeeper-sequence-provider:3.0.0-RC1",
+    "caller": "|java+method:///org/apache/james/mailbox/store/mail/ZooUidProvider/lastUid(org.apache.james.mailbox.MailboxSession,org.apache.james.mailbox.store.mail.model.Mailbox)|",
+    "called": "|java+constructor:///org/apache/james/mailbox/exception/MailboxException/MailboxException(java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/james/mailbox/exception/MailboxException/MailboxException(java.lang.String,java.lang.Exception)|",
+      "|java+method:///org/apache/james/mailbox/store/mail/ZooUidProvider/pathForMailbox(org.apache.james.mailbox.store.mail.model.Mailbox)|",
+      "|java+method:///com/netflix/curator/framework/recipes/atomic/DistributedAtomicLong/get()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///com/netflix/curator/framework/recipes/atomic/AtomicValue/succeeded()|",
+      "|java+constructor:///com/netflix/curator/framework/recipes/atomic/DistributedAtomicLong/DistributedAtomicLong(com.netflix.curator.framework.CuratorFramework,java.lang.String,com.netflix.curator.RetryPolicy)|",
+      "|java+constructor:///org/apache/james/mailbox/exception/MailboxException/MailboxException(java.lang.String)|",
+      "|java+method:///java/lang/Long/longValue()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///com/netflix/curator/framework/recipes/atomic/AtomicValue/postValue()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///com/netflix/curator/framework/CuratorFramework/isStarted()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/common/base/Optional/absent()|",
+      "|java+method:///org/apache/james/mailbox/store/mail/ZooUidProvider/pathForMailbox(org.apache.james.mailbox.store.mail.model.Mailbox)|",
+      "|java+method:///com/netflix/curator/framework/recipes/atomic/DistributedAtomicLong/get()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///com/netflix/curator/framework/CuratorFramework/getState()|",
+      "|java+method:///com/google/common/base/Optional/of(java.lang.Object)|",
+      "|java+method:///com/netflix/curator/framework/recipes/atomic/AtomicValue/succeeded()|",
+      "|java+constructor:///com/netflix/curator/framework/recipes/atomic/DistributedAtomicLong/DistributedAtomicLong(com.netflix.curator.framework.CuratorFramework,java.lang.String,com.netflix.curator.RetryPolicy)|",
+      "|java+method:///java/lang/Long/longValue()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///com/netflix/curator/framework/recipes/atomic/AtomicValue/postValue()|",
+      "|java+constructor:///org/apache/james/mailbox/exception/MailboxException/MailboxException(java.lang.String)|",
+      "|java+constructor:///org/apache/james/mailbox/exception/MailboxException/MailboxException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/apache/james/mailbox/MessageUid/of(long)|"
+    ],
+    "affectedLib": "org.apache.james:apache-james-mailbox-api:3.0.0-RC1",
+    "change": "UPDATED"
+  }
+]

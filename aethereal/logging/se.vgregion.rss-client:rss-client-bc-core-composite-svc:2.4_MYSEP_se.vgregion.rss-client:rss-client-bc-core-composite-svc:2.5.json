@@ -1,0 +1,38 @@
+[
+  {
+    "coordinatesV1": "se.vgregion.rss-client:rss-client-bc-core-composite-svc:2.4",
+    "coordinatesV2": "se.vgregion.rss-client:rss-client-bc-core-composite-svc:2.5",
+    "caller": "|java+method:///se/vgregion/portal/rss/client/service/RssFetcherServiceImpl/getRssFeeds(java.util.Set)|",
+    "called": "|java+method:///org/apache/commons/lang/StringUtils/isBlank(java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+constructor:///java/net/URL/URL(java.lang.String)|",
+      "|java+method:///org/apache/commons/lang/StringUtils/isBlank(java.lang.String)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/net/ConnectException/getMessage()|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///se/vgregion/portal/rss/blacklist/BlackList/contains(java.lang.Object)|",
+      "|java+method:///se/vgregion/portal/rss/blacklist/BlackList/add(java.lang.Object)|",
+      "|java+method:///com/sun/syndication/fetcher/FeedFetcher/retrieveFeed(java.net.URL)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/util/Set/iterator()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///org/rometools/fetcher/FeedFetcher/retrieveFeed(java.net.URL)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+constructor:///java/net/URL/URL(java.lang.String)|",
+      "|java+method:///org/apache/commons/lang/StringUtils/isBlank(java.lang.String)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///se/vgregion/portal/rss/blacklist/BlackList/add(java.lang.Object)|",
+      "|java+method:///java/net/ConnectException/getMessage()|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///se/vgregion/portal/rss/blacklist/BlackList/contains(java.lang.Object)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/util/Set/iterator()|"
+    ],
+    "affectedLib": "commons-lang:commons-lang:2.4",
+    "change": "ADDED"
+  }
+]

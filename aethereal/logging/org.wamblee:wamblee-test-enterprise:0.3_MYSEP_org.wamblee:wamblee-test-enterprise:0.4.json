@@ -1,0 +1,64 @@
+[
+  {
+    "coordinatesV1": "org.wamblee:wamblee-test-enterprise:0.3",
+    "coordinatesV2": "org.wamblee:wamblee-test-enterprise:0.4",
+    "caller": "|java+method:///org/wamblee/test/transactions/SimpleTransactionManager$1/transactionFinished()|",
+    "called": "|java+method:///org/wamblee/general/ThreadSpecificProxyFactory/set(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/wamblee/general/ThreadSpecificProxyFactory/set(java.lang.Object)|",
+      "|java+method:///org/wamblee/test/transactions/SimpleTransactionManager/access$000(org.wamblee.test.transactions.SimpleTransactionManager)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/wamblee/general/ThreadSpecificProxyFactory/set(java.lang.Object)|",
+      "|java+method:///org/wamblee/test/transactions/SimpleTransactionManager/access$000(org.wamblee.test.transactions.SimpleTransactionManager)|",
+      "|java+method:///org/wamblee/test/transactions/SimpleTransactionManager/access$100(org.wamblee.test.transactions.SimpleTransactionManager)|",
+      "|java+method:///org/wamblee/test/transactions/SimpleTransactionManager/access$200(org.wamblee.test.transactions.SimpleTransactionManager)|",
+      "|java+method:///org/wamblee/test/transactions/UserTransactionFactory/create(org.wamblee.test.transactions.UserTransactionCallback,java.util.List)|"
+    ],
+    "affectedLib": "org.wamblee:wamblee-support-general:0.4",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.wamblee:wamblee-test-enterprise:0.3",
+    "coordinatesV2": "org.wamblee:wamblee-test-enterprise:0.4",
+    "caller": "|java+constructor:///org/wamblee/test/transactions/SimpleTransactionManager/SimpleTransactionManager(org.wamblee.test.transactions.UserTransactionFactory)|",
+    "called": "|java+constructor:///org/wamblee/general/ThreadSpecificProxyFactory/ThreadSpecificProxyFactory(java.lang.Class,org.wamblee.general.ThreadSpecificProxyFactory$CreationCallback)|",
+    "v1Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+constructor:///org/wamblee/general/ThreadSpecificProxyFactory/ThreadSpecificProxyFactory(java.lang.Class)|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+constructor:///org/wamblee/test/transactions/SimpleTransactionManager$1/SimpleTransactionManager$1(org.wamblee.test.transactions.SimpleTransactionManager)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+constructor:///org/wamblee/general/ThreadSpecificProxyFactory/ThreadSpecificProxyFactory(java.lang.Class,org.wamblee.general.ThreadSpecificProxyFactory$CreationCallback)|",
+      "|java+constructor:///org/wamblee/test/transactions/SimpleTransactionManager$2/SimpleTransactionManager$2(org.wamblee.test.transactions.SimpleTransactionManager)|",
+      "|java+constructor:///org/wamblee/test/transactions/SimpleTransactionManager$1/SimpleTransactionManager$1(org.wamblee.test.transactions.SimpleTransactionManager)|"
+    ],
+    "affectedLib": "org.wamblee:wamblee-support-general:0.4",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.wamblee:wamblee-test-enterprise:0.3",
+    "coordinatesV2": "org.wamblee:wamblee-test-enterprise:0.4",
+    "caller": "|java+method:///org/wamblee/test/persistence/JpaBuilder/rollback(javax.persistence.EntityManager)|",
+    "called": "|java+method:///org/wamblee/general/ThreadSpecificProxyFactory/set(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///javax/persistence/EntityManager/getTransaction()|",
+      "|java+method:///javax/persistence/EntityTransaction/rollback()|",
+      "|java+method:///org/wamblee/general/ThreadSpecificProxyFactory/set(java.lang.Object)|",
+      "|java+method:///javax/persistence/EntityManager/close()|"
+    ],
+    "v2Body": [
+      "|java+method:///javax/persistence/EntityTransaction/isActive()|",
+      "|java+method:///javax/persistence/EntityManager/getTransaction()|",
+      "|java+method:///javax/persistence/EntityTransaction/rollback()|",
+      "|java+method:///javax/persistence/EntityManager/isOpen()|",
+      "|java+method:///org/wamblee/general/ThreadSpecificProxyFactory/set(java.lang.Object)|",
+      "|java+method:///javax/persistence/EntityManager/close()|"
+    ],
+    "affectedLib": "org.wamblee:wamblee-support-general:0.4",
+    "change": "UPDATED"
+  }
+]

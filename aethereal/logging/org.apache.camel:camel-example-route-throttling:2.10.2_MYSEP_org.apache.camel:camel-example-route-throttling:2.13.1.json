@@ -1,0 +1,66 @@
+[
+  {
+    "coordinatesV1": "org.apache.camel:camel-example-route-throttling:2.10.2",
+    "coordinatesV2": "org.apache.camel:camel-example-route-throttling:2.13.1",
+    "caller": "|java+method:///org/apache/camel/example/client/CamelFileClient/main(java.lang.String%5B%5D)|",
+    "called": "|java+method:///org/apache/camel/util/IOHelper/close(java.io.Closeable)|",
+    "v1Body": [
+      "|java+constructor:///org/springframework/context/support/ClassPathXmlApplicationContext/ClassPathXmlApplicationContext(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+method:///java/lang/System/exit(int)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/io/PrintStream/println(java.lang.String)|",
+      "|java+method:///org/springframework/context/ApplicationContext/getBean(java.lang.String,java.lang.Class)|",
+      "|java+method:///org/apache/camel/ProducerTemplate/sendBodyAndHeader(java.lang.String,java.lang.Object,java.lang.String,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/springframework/context/support/ClassPathXmlApplicationContext/ClassPathXmlApplicationContext(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/apache/camel/util/IOHelper/close(java.io.Closeable)|",
+      "|java+method:///org/apache/camel/ProducerTemplate/sendBodyAndHeader(java.lang.String,java.lang.Object,java.lang.String,java.lang.Object)|",
+      "|java+method:///org/springframework/context/support/AbstractApplicationContext/getBean(java.lang.String,java.lang.Class)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/io/PrintStream/println(java.lang.String)|"
+    ],
+    "affectedLib": "org.apache.camel:camel-core:2.13.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.camel:camel-example-route-throttling:2.10.2",
+    "coordinatesV2": "org.apache.camel:camel-example-route-throttling:2.13.1",
+    "caller": "|java+method:///org/apache/camel/example/client/CamelClient/main(java.lang.String%5B%5D)|",
+    "called": "|java+method:///org/apache/camel/util/IOHelper/close(java.io.Closeable)|",
+    "v1Body": [
+      "|java+constructor:///org/springframework/context/support/ClassPathXmlApplicationContext/ClassPathXmlApplicationContext(java.lang.String)|",
+      "|java+method:///java/io/PrintStream/println(java.lang.String)|",
+      "|java+constructor:///java/util/concurrent/CountDownLatch/CountDownLatch(int)|",
+      "|java+method:///java/lang/System/exit(int)|",
+      "|java+method:///java/util/concurrent/ExecutorService/shutdownNow()|",
+      "|java+method:///java/util/concurrent/CountDownLatch/await(long,java.util.concurrent.TimeUnit)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///java/util/concurrent/ExecutorService/execute(java.lang.Runnable)|",
+      "|java+method:///java/util/concurrent/Executors/newFixedThreadPool(int)|",
+      "|java+method:///org/springframework/context/ApplicationContext/getBean(java.lang.String,java.lang.Class)|",
+      "|java+constructor:///org/apache/camel/example/client/CamelClient$1/CamelClient$1(org.apache.camel.ProducerTemplate,java.lang.Integer,java.util.concurrent.CountDownLatch)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/springframework/context/support/ClassPathXmlApplicationContext/ClassPathXmlApplicationContext(java.lang.String)|",
+      "|java+method:///java/io/PrintStream/println(java.lang.String)|",
+      "|java+constructor:///java/util/concurrent/CountDownLatch/CountDownLatch(int)|",
+      "|java+method:///java/util/concurrent/ExecutorService/shutdownNow()|",
+      "|java+method:///java/util/concurrent/CountDownLatch/await(long,java.util.concurrent.TimeUnit)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///java/util/concurrent/ExecutorService/execute(java.lang.Runnable)|",
+      "|java+method:///java/util/concurrent/Executors/newFixedThreadPool(int)|",
+      "|java+method:///org/apache/camel/util/IOHelper/close(java.io.Closeable)|",
+      "|java+constructor:///org/apache/camel/example/client/CamelClient$1/CamelClient$1(org.apache.camel.ProducerTemplate,java.lang.Integer,java.util.concurrent.CountDownLatch)|",
+      "|java+method:///org/springframework/context/support/AbstractApplicationContext/getBean(java.lang.String,java.lang.Class)|"
+    ],
+    "affectedLib": "org.apache.camel:camel-core:2.13.1",
+    "change": "UPDATED"
+  }
+]

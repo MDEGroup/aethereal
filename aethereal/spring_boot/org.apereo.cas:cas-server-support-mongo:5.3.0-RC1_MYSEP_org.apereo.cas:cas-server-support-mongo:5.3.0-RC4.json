@@ -1,0 +1,48 @@
+[
+  {
+    "coordinatesV1": "org.apereo.cas:cas-server-support-mongo:5.3.0-RC1",
+    "coordinatesV2": "org.apereo.cas:cas-server-support-mongo:5.3.0-RC4",
+    "caller": "|java+method:///org/apereo/cas/authentication/config/CasMongoAuthenticationConfiguration/mongoAuthenticationHandler()|",
+    "called": "|java+method:///org/apereo/cas/authentication/principal/PrincipalNameTransformerUtils/newPrincipalNameTransformer(org.apereo.cas.configuration.model.core.authentication.PrincipalTransformationProperties)|",
+    "v1Body": [
+      "|java+method:///org/apereo/cas/authentication/config/CasMongoAuthenticationConfiguration/mongoAuthenticatorProfileService()|",
+      "|java+method:///org/apereo/cas/authentication/MongoAuthenticationHandler/setPrincipalNameTransformer(org.apereo.cas.authentication.handler.PrincipalNameTransformer)|",
+      "|java+constructor:///org/apereo/cas/authentication/MongoAuthenticationHandler/MongoAuthenticationHandler(java.lang.String,org.apereo.cas.services.ServicesManager,org.apereo.cas.authentication.principal.PrincipalFactory)|",
+      "|java+method:///org/apereo/cas/authentication/config/CasMongoAuthenticationConfiguration/mongoPrincipalFactory()|",
+      "|java+method:///org/apereo/cas/authentication/principal/PrincipalNameTransformerUtils/newPrincipalNameTransformer(org.apereo.cas.configuration.model.core.authentication.PrincipalTransformationProperties)|",
+      "|java+method:///org/apereo/cas/configuration/CasConfigurationProperties/getAuthn()|",
+      "|java+method:///org/apereo/cas/authentication/MongoAuthenticationHandler/setAuthenticator(org.pac4j.core.credentials.authenticator.Authenticator)|",
+      "|java+method:///org/apereo/cas/configuration/model/support/mongo/MongoAuthenticationProperties/getName()|",
+      "|java+method:///org/apereo/cas/configuration/model/core/authentication/AuthenticationProperties/getMongo()|",
+      "|java+method:///org/apereo/cas/configuration/model/support/mongo/MongoAuthenticationProperties/getPrincipalTransformation()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apereo/cas/authentication/config/CasMongoAuthenticationConfiguration/mongoAuthenticatorProfileService()|",
+      "|java+method:///org/apereo/cas/authentication/config/CasMongoAuthenticationConfiguration/mongoPrincipalFactory()|",
+      "|java+method:///org/apereo/cas/authentication/principal/PrincipalNameTransformerUtils/newPrincipalNameTransformer(org.apereo.cas.configuration.model.core.authentication.PrincipalTransformationProperties)|",
+      "|java+method:///org/apereo/cas/configuration/CasConfigurationProperties/getAuthn()|",
+      "|java+method:///org/apereo/cas/authentication/MongoDbAuthenticationHandler/setAuthenticator(org.pac4j.core.credentials.authenticator.Authenticator)|",
+      "|java+method:///org/apereo/cas/configuration/model/support/mongo/MongoAuthenticationProperties/getName()|",
+      "|java+method:///org/apereo/cas/configuration/model/core/authentication/AuthenticationProperties/getMongo()|",
+      "|java+method:///org/apereo/cas/configuration/model/support/mongo/MongoAuthenticationProperties/getPrincipalTransformation()|",
+      "|java+constructor:///org/apereo/cas/authentication/MongoDbAuthenticationHandler/MongoDbAuthenticationHandler(java.lang.String,org.apereo.cas.services.ServicesManager,org.apereo.cas.authentication.principal.PrincipalFactory)|",
+      "|java+method:///org/apereo/cas/authentication/MongoDbAuthenticationHandler/setPrincipalNameTransformer(org.apereo.cas.authentication.handler.PrincipalNameTransformer)|"
+    ],
+    "affectedLib": "org.apereo.cas:cas-server-core-authentication-api:5.3.0-RC4",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apereo.cas:cas-server-support-mongo:5.3.0-RC1",
+    "coordinatesV2": "org.apereo.cas:cas-server-support-mongo:5.3.0-RC4",
+    "caller": "|java+method:///org/apereo/cas/authentication/config/CasMongoAuthenticationConfiguration/mongoPrincipalFactory()|",
+    "called": "|java+method:///org/apereo/cas/authentication/principal/PrincipalFactoryUtils/newPrincipalFactory()|",
+    "v1Body": [
+      "|java+constructor:///org/apereo/cas/authentication/principal/DefaultPrincipalFactory/DefaultPrincipalFactory()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apereo/cas/authentication/principal/PrincipalFactoryUtils/newPrincipalFactory()|"
+    ],
+    "affectedLib": "org.apereo.cas:cas-server-core-authentication-api:5.3.0-RC4",
+    "change": "UPDATED"
+  }
+]

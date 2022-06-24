@@ -1,0 +1,22 @@
+[
+  {
+    "coordinatesV1": "org.appfuse:appfuse-web-common:2.1.0-M1",
+    "coordinatesV2": "org.appfuse:appfuse-web-common:2.1.0-M2",
+    "caller": "|java+method:///org/appfuse/webapp/listener/UserCounterListener/isAnonymous()|",
+    "called": "|java+constructor:///org/springframework/security/authentication/AuthenticationTrustResolverImpl/AuthenticationTrustResolverImpl()|",
+    "v1Body": [
+      "|java+method:///org/springframework/security/context/SecurityContext/getAuthentication()|",
+      "|java+method:///org/springframework/security/context/SecurityContextHolder/getContext()|",
+      "|java+constructor:///org/springframework/security/AuthenticationTrustResolverImpl/AuthenticationTrustResolverImpl()|",
+      "|java+method:///org/springframework/security/AuthenticationTrustResolver/isAnonymous(org.springframework.security.Authentication)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/springframework/security/core/context/SecurityContext/getAuthentication()|",
+      "|java+method:///org/springframework/security/authentication/AuthenticationTrustResolver/isAnonymous(org.springframework.security.core.Authentication)|",
+      "|java+constructor:///org/springframework/security/authentication/AuthenticationTrustResolverImpl/AuthenticationTrustResolverImpl()|",
+      "|java+method:///org/springframework/security/core/context/SecurityContextHolder/getContext()|"
+    ],
+    "affectedLib": "org.springframework.security:spring-security-core:3.0.4.RELEASE",
+    "change": "ADDED"
+  }
+]

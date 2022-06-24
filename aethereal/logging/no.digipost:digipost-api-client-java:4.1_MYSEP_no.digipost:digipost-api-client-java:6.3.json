@@ -1,0 +1,514 @@
+[
+  {
+    "coordinatesV1": "no.digipost:digipost-api-client-java:6.3",
+    "coordinatesV2": "no.digipost:digipost-api-client-java:4.1",
+    "caller": "|java+initializer:///no/digipost/api/client/util/JerseyClientProvider/JerseyClientProvider$initializer|",
+    "called": "|java+constructor:///com/sun/jersey/client/apache/ApacheHttpClient/ApacheHttpClient(com.sun.jersey.client.apache.ApacheHttpClientHandler)|",
+    "v1Body": [
+      "|java+constructor:///com/sun/jersey/client/apache/ApacheHttpClient/ApacheHttpClient(com.sun.jersey.client.apache.ApacheHttpClientHandler)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///no/digipost/api/client/util/JerseyClientProvider/opprettClientConfig()|",
+      "|java+method:///no/digipost/api/client/util/JerseyClientProvider/opprettMultiThreadedHttpClient()|",
+      "|java+constructor:///com/sun/jersey/client/apache/ApacheHttpClientHandler/ApacheHttpClientHandler(org.apache.commons.httpclient.HttpClient,com.sun.jersey.api.client.config.ClientConfig)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Integer/valueOf(int)|"
+    ],
+    "affectedLib": "com.sun.jersey.contribs:jersey-apache-client:1.12",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "no.digipost:digipost-api-client-java:6.3",
+    "coordinatesV2": "no.digipost:digipost-api-client-java:4.1",
+    "caller": "|java+method:///no/digipost/api/client/MessageSender/send(no.digipost.api.client.representations.MessageDelivery)|",
+    "called": "|java+method:///com/sun/jersey/api/client/ClientResponse/getEntity(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///no/digipost/api/client/ApiService/send(no.digipost.api.client.representations.MessageDelivery)|",
+      "|java+method:///no/digipost/api/client/MessageSender/verifyCorrectStatus(no.digipost.api.client.representations.MessageDelivery,no.digipost.api.client.representations.MessageStatus)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///com/sun/jersey/api/client/ClientResponse/toString()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///no/digipost/api/client/MessageSender/check404Error(com.sun.jersey.api.client.ClientResponse,no.digipost.api.client.ErrorType)|",
+      "|java+method:///no/digipost/api/client/MessageSender/checkResponse(com.sun.jersey.api.client.ClientResponse)|",
+      "|java+method:///com/sun/jersey/api/client/ClientResponse/getEntity(java.lang.Class)|",
+      "|java+method:///no/digipost/api/client/MessageSender/log(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///no/digipost/api/client/ApiService/send(no.digipost.api.client.representations.MessageDelivery)|",
+      "|java+method:///java/lang/Object/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///no/digipost/api/client/MessageSender/checkResponse(javax.ws.rs.core.Response)|",
+      "|java+method:///no/digipost/api/client/MessageSender/log(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///javax/ws/rs/core/Response/readEntity(java.lang.Class)|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "affectedLib": "com.sun.jersey:jersey-client:1.12",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "no.digipost:digipost-api-client-java:6.3",
+    "coordinatesV2": "no.digipost:digipost-api-client-java:4.1",
+    "caller": "|java+method:///no/digipost/api/client/MessageSender/createOrFetchMessage(no.digipost.api.client.representations.Message)|",
+    "called": "|java+method:///com/sun/jersey/api/client/ClientResponse/getEntity(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///com/sun/jersey/api/client/ClientResponse/getLocation()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///com/sun/jersey/api/client/ClientResponse/toString()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///no/digipost/api/client/MessageSender/checkThatMessageHasNotAlreadyBeenDelivered(no.digipost.api.client.representations.MessageDelivery)|",
+      "|java+method:///no/digipost/api/client/MessageSender/checkThatExistingMessageIsIdenticalToNewMessage(no.digipost.api.client.representations.MessageDelivery,no.digipost.api.client.representations.Message)|",
+      "|java+method:///no/digipost/api/client/ApiService/createMessage(no.digipost.api.client.representations.Message)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///no/digipost/api/client/ApiService/fetchExistingMessage(java.net.URI)|",
+      "|java+method:///no/digipost/api/client/MessageSender/resourceAlreadyExists(com.sun.jersey.api.client.ClientResponse)|",
+      "|java+method:///no/digipost/api/client/MessageSender/check404Error(com.sun.jersey.api.client.ClientResponse,no.digipost.api.client.ErrorType)|",
+      "|java+method:///no/digipost/api/client/MessageSender/checkResponse(com.sun.jersey.api.client.ClientResponse)|",
+      "|java+method:///com/sun/jersey/api/client/ClientResponse/getEntity(java.lang.Class)|",
+      "|java+method:///no/digipost/api/client/MessageSender/log(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Object/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///no/digipost/api/client/ApiService/fetchExistingMessage(java.net.URI)|",
+      "|java+method:///no/digipost/api/client/MessageSender/checkResponse(javax.ws.rs.core.Response)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///javax/ws/rs/core/Response/getLocation()|",
+      "|java+method:///no/digipost/api/client/MessageSender/checkThatMessageHasNotAlreadyBeenDelivered(no.digipost.api.client.representations.MessageDelivery)|",
+      "|java+method:///no/digipost/api/client/MessageSender/checkThatExistingMessageIsIdenticalToNewMessage(no.digipost.api.client.representations.MessageDelivery,no.digipost.api.client.representations.Message)|",
+      "|java+method:///javax/ws/rs/core/Response/readEntity(java.lang.Class)|",
+      "|java+method:///no/digipost/api/client/ApiService/createMessage(no.digipost.api.client.representations.Message)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///no/digipost/api/client/MessageSender/resourceAlreadyExists(javax.ws.rs.core.Response)|",
+      "|java+method:///no/digipost/api/client/MessageSender/log(java.lang.String)|"
+    ],
+    "affectedLib": "com.sun.jersey:jersey-client:1.12",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "no.digipost:digipost-api-client-java:6.3",
+    "coordinatesV2": "no.digipost:digipost-api-client-java:4.1",
+    "caller": "|java+method:///no/digipost/api/client/security/ClientRequestToSign/getHeaders()|",
+    "called": "|java+method:///com/sun/jersey/api/client/ClientRequest/getHeaderValue(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///com/sun/jersey/api/client/ClientRequest/getHeaderValue(java.lang.Object)|",
+      "|java+method:///javax/ws/rs/core/MultivaluedMap/getFirst(java.lang.Object)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/util/Set/iterator()|",
+      "|java+method:///com/sun/jersey/api/client/ClientRequest/getHeaders()|",
+      "|java+method:///javax/ws/rs/core/MultivaluedMap/keySet()|",
+      "|java+method:///java/util/TreeMap/put(java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///java/util/TreeMap/TreeMap()|",
+      "|java+method:///java/util/Iterator/next()|"
+    ],
+    "v2Body": [
+      "|java+method:///javax/ws/rs/core/MultivaluedMap/getFirst(java.lang.Object)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///javax/ws/rs/client/ClientRequestContext/getStringHeaders()|",
+      "|java+method:///java/util/Set/iterator()|",
+      "|java+method:///javax/ws/rs/core/MultivaluedMap/keySet()|",
+      "|java+method:///java/util/TreeMap/put(java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///java/util/TreeMap/TreeMap()|",
+      "|java+method:///java/util/Iterator/next()|"
+    ],
+    "affectedLib": "com.sun.jersey:jersey-client:1.12",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "no.digipost:digipost-api-client-java:6.3",
+    "coordinatesV2": "no.digipost:digipost-api-client-java:4.1",
+    "caller": "|java+method:///no/digipost/api/client/representations/PrintRecipient/trimEquals(java.lang.String,java.lang.String)|",
+    "called": "|java+method:///org/apache/commons/lang/StringUtils/trimToEmpty(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///org/apache/commons/lang/StringUtils/trimToEmpty(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/lang3/StringUtils/trimToEmpty(java.lang.String)|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|"
+    ],
+    "affectedLib": "commons-lang:commons-lang:2.6",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "no.digipost:digipost-api-client-java:6.3",
+    "coordinatesV2": "no.digipost:digipost-api-client-java:4.1",
+    "caller": "|java+method:///no/digipost/api/client/representations/Link/hashCode()|",
+    "called": "|java+constructor:///org/apache/commons/lang/builder/HashCodeBuilder/HashCodeBuilder(int,int)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/commons/lang/builder/HashCodeBuilder/HashCodeBuilder(int,int)|",
+      "|java+method:///org/apache/commons/lang/builder/HashCodeBuilder/append(java.lang.Object)|",
+      "|java+method:///org/apache/commons/lang/builder/HashCodeBuilder/toHashCode()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/commons/lang3/builder/HashCodeBuilder/HashCodeBuilder(int,int)|",
+      "|java+method:///org/apache/commons/lang3/builder/HashCodeBuilder/append(java.lang.Object)|",
+      "|java+method:///org/apache/commons/lang3/builder/HashCodeBuilder/toHashCode()|"
+    ],
+    "affectedLib": "commons-lang:commons-lang:2.6",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "no.digipost:digipost-api-client-java:6.3",
+    "coordinatesV2": "no.digipost:digipost-api-client-java:4.1",
+    "caller": "|java+method:///no/digipost/api/client/representations/ErrorMessage/equals(java.lang.Object)|",
+    "called": "|java+method:///org/apache/commons/lang/builder/EqualsBuilder/append(java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/lang/builder/EqualsBuilder/isEquals()|",
+      "|java+constructor:///org/apache/commons/lang/builder/EqualsBuilder/EqualsBuilder()|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///org/apache/commons/lang/builder/EqualsBuilder/append(java.lang.Object,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/commons/lang3/builder/EqualsBuilder/EqualsBuilder()|",
+      "|java+method:///org/apache/commons/lang3/builder/EqualsBuilder/isEquals()|",
+      "|java+method:///org/apache/commons/lang3/builder/EqualsBuilder/append(java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/lang/Object/getClass()|"
+    ],
+    "affectedLib": "commons-lang:commons-lang:2.6",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "no.digipost:digipost-api-client-java:6.3",
+    "coordinatesV2": "no.digipost:digipost-api-client-java:4.1",
+    "caller": "|java+method:///no/digipost/api/client/representations/Link/equals(java.lang.Object)|",
+    "called": "|java+method:///org/apache/commons/lang/builder/EqualsBuilder/append(java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/lang/builder/EqualsBuilder/isEquals()|",
+      "|java+constructor:///org/apache/commons/lang/builder/EqualsBuilder/EqualsBuilder()|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///org/apache/commons/lang/builder/EqualsBuilder/append(java.lang.Object,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/commons/lang3/builder/EqualsBuilder/EqualsBuilder()|",
+      "|java+method:///org/apache/commons/lang3/builder/EqualsBuilder/isEquals()|",
+      "|java+method:///org/apache/commons/lang3/builder/EqualsBuilder/append(java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/lang/Object/getClass()|"
+    ],
+    "affectedLib": "commons-lang:commons-lang:2.6",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "no.digipost:digipost-api-client-java:6.3",
+    "coordinatesV2": "no.digipost:digipost-api-client-java:4.1",
+    "caller": "|java+method:///no/digipost/api/client/representations/NorwegianAddress/trimEquals(java.lang.String,java.lang.String)|",
+    "called": "|java+method:///org/apache/commons/lang/StringUtils/trimToEmpty(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///org/apache/commons/lang/StringUtils/trimToEmpty(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/lang3/StringUtils/trimToEmpty(java.lang.String)|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|"
+    ],
+    "affectedLib": "commons-lang:commons-lang:2.6",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "no.digipost:digipost-api-client-java:6.3",
+    "coordinatesV2": "no.digipost:digipost-api-client-java:4.1",
+    "caller": "|java+constructor:///no/digipost/api/client/representations/DigipostAddress/DigipostAddress(java.lang.String)|",
+    "called": "|java+method:///org/apache/commons/lang/StringUtils/isEmpty(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/lang/StringUtils/isEmpty(java.lang.String)|",
+      "|java+constructor:///java/lang/AssertionError/AssertionError(java.lang.Object)|",
+      "|java+constructor:///no/digipost/api/client/representations/RecipientIdentifier/RecipientIdentifier(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/lang/AssertionError/AssertionError(java.lang.Object)|",
+      "|java+constructor:///no/digipost/api/client/representations/RecipientIdentifier/RecipientIdentifier(java.lang.String)|",
+      "|java+method:///org/apache/commons/lang3/StringUtils/isEmpty(java.lang.CharSequence)|"
+    ],
+    "affectedLib": "commons-lang:commons-lang:2.6",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "no.digipost:digipost-api-client-java:6.3",
+    "coordinatesV2": "no.digipost:digipost-api-client-java:4.1",
+    "caller": "|java+method:///no/digipost/api/client/representations/ForeignAddress/trimEquals(java.lang.String,java.lang.String)|",
+    "called": "|java+method:///org/apache/commons/lang/StringUtils/trimToEmpty(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///org/apache/commons/lang/StringUtils/trimToEmpty(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/lang3/StringUtils/trimToEmpty(java.lang.String)|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|"
+    ],
+    "affectedLib": "commons-lang:commons-lang:2.6",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "no.digipost:digipost-api-client-java:6.3",
+    "coordinatesV2": "no.digipost:digipost-api-client-java:4.1",
+    "caller": "|java+method:///no/digipost/api/client/representations/ErrorMessage/hashCode()|",
+    "called": "|java+method:///org/apache/commons/lang/builder/HashCodeBuilder/append(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/lang/builder/HashCodeBuilder/append(java.lang.Object)|",
+      "|java+method:///org/apache/commons/lang/builder/HashCodeBuilder/toHashCode()|",
+      "|java+constructor:///org/apache/commons/lang/builder/HashCodeBuilder/HashCodeBuilder()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/lang3/builder/HashCodeBuilder/append(java.lang.Object)|",
+      "|java+constructor:///org/apache/commons/lang3/builder/HashCodeBuilder/HashCodeBuilder()|",
+      "|java+method:///org/apache/commons/lang3/builder/HashCodeBuilder/toHashCode()|"
+    ],
+    "affectedLib": "commons-lang:commons-lang:2.6",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "no.digipost:digipost-api-client-java:6.3",
+    "coordinatesV2": "no.digipost:digipost-api-client-java:4.1",
+    "caller": "|java+method:///no/digipost/api/client/representations/Link/toString()|",
+    "called": "|java+method:///org/apache/commons/lang/builder/ToStringBuilder/reflectionToString(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/lang/builder/ToStringBuilder/reflectionToString(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/lang3/builder/ToStringBuilder/reflectionToString(java.lang.Object)|"
+    ],
+    "affectedLib": "commons-lang:commons-lang:2.6",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "no.digipost:digipost-api-client-java:4.1",
+    "coordinatesV2": "no.digipost:digipost-api-client-java:6.3",
+    "caller": "|java+method:///no/digipost/api/client/representations/Link/hashCode()|",
+    "called": "|java+constructor:///org/apache/commons/lang3/builder/HashCodeBuilder/HashCodeBuilder(int,int)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/commons/lang/builder/HashCodeBuilder/HashCodeBuilder(int,int)|",
+      "|java+method:///org/apache/commons/lang/builder/HashCodeBuilder/append(java.lang.Object)|",
+      "|java+method:///org/apache/commons/lang/builder/HashCodeBuilder/toHashCode()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/commons/lang3/builder/HashCodeBuilder/HashCodeBuilder(int,int)|",
+      "|java+method:///org/apache/commons/lang3/builder/HashCodeBuilder/append(java.lang.Object)|",
+      "|java+method:///org/apache/commons/lang3/builder/HashCodeBuilder/toHashCode()|"
+    ],
+    "affectedLib": "org.apache.commons:commons-lang3:3.3.2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "no.digipost:digipost-api-client-java:4.1",
+    "coordinatesV2": "no.digipost:digipost-api-client-java:6.3",
+    "caller": "|java+method:///no/digipost/api/client/representations/Link/equals(java.lang.Object)|",
+    "called": "|java+constructor:///org/apache/commons/lang3/builder/EqualsBuilder/EqualsBuilder()|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/lang/builder/EqualsBuilder/isEquals()|",
+      "|java+constructor:///org/apache/commons/lang/builder/EqualsBuilder/EqualsBuilder()|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///org/apache/commons/lang/builder/EqualsBuilder/append(java.lang.Object,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/commons/lang3/builder/EqualsBuilder/EqualsBuilder()|",
+      "|java+method:///org/apache/commons/lang3/builder/EqualsBuilder/isEquals()|",
+      "|java+method:///org/apache/commons/lang3/builder/EqualsBuilder/append(java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/lang/Object/getClass()|"
+    ],
+    "affectedLib": "org.apache.commons:commons-lang3:3.3.2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "no.digipost:digipost-api-client-java:4.1",
+    "coordinatesV2": "no.digipost:digipost-api-client-java:6.3",
+    "caller": "|java+constructor:///no/digipost/api/client/representations/DigipostAddress/DigipostAddress(java.lang.String)|",
+    "called": "|java+method:///org/apache/commons/lang3/StringUtils/isEmpty(java.lang.CharSequence)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/lang/StringUtils/isEmpty(java.lang.String)|",
+      "|java+constructor:///java/lang/AssertionError/AssertionError(java.lang.Object)|",
+      "|java+constructor:///no/digipost/api/client/representations/RecipientIdentifier/RecipientIdentifier(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/lang/AssertionError/AssertionError(java.lang.Object)|",
+      "|java+constructor:///no/digipost/api/client/representations/RecipientIdentifier/RecipientIdentifier(java.lang.String)|",
+      "|java+method:///org/apache/commons/lang3/StringUtils/isEmpty(java.lang.CharSequence)|"
+    ],
+    "affectedLib": "org.apache.commons:commons-lang3:3.3.2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "no.digipost:digipost-api-client-java:4.1",
+    "coordinatesV2": "no.digipost:digipost-api-client-java:6.3",
+    "caller": "|java+method:///no/digipost/api/client/representations/ErrorMessage/hashCode()|",
+    "called": "|java+constructor:///org/apache/commons/lang3/builder/HashCodeBuilder/HashCodeBuilder()|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/lang/builder/HashCodeBuilder/append(java.lang.Object)|",
+      "|java+method:///org/apache/commons/lang/builder/HashCodeBuilder/toHashCode()|",
+      "|java+constructor:///org/apache/commons/lang/builder/HashCodeBuilder/HashCodeBuilder()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/lang3/builder/HashCodeBuilder/append(java.lang.Object)|",
+      "|java+constructor:///org/apache/commons/lang3/builder/HashCodeBuilder/HashCodeBuilder()|",
+      "|java+method:///org/apache/commons/lang3/builder/HashCodeBuilder/toHashCode()|"
+    ],
+    "affectedLib": "org.apache.commons:commons-lang3:3.3.2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "no.digipost:digipost-api-client-java:4.1",
+    "coordinatesV2": "no.digipost:digipost-api-client-java:6.3",
+    "caller": "|java+method:///no/digipost/api/client/representations/ErrorMessage/equals(java.lang.Object)|",
+    "called": "|java+constructor:///org/apache/commons/lang3/builder/EqualsBuilder/EqualsBuilder()|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/lang/builder/EqualsBuilder/isEquals()|",
+      "|java+constructor:///org/apache/commons/lang/builder/EqualsBuilder/EqualsBuilder()|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///org/apache/commons/lang/builder/EqualsBuilder/append(java.lang.Object,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/commons/lang3/builder/EqualsBuilder/EqualsBuilder()|",
+      "|java+method:///org/apache/commons/lang3/builder/EqualsBuilder/isEquals()|",
+      "|java+method:///org/apache/commons/lang3/builder/EqualsBuilder/append(java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/lang/Object/getClass()|"
+    ],
+    "affectedLib": "org.apache.commons:commons-lang3:3.3.2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "no.digipost:digipost-api-client-java:4.1",
+    "coordinatesV2": "no.digipost:digipost-api-client-java:6.3",
+    "caller": "|java+method:///no/digipost/api/client/representations/NorwegianAddress/trimEquals(java.lang.String,java.lang.String)|",
+    "called": "|java+method:///org/apache/commons/lang3/StringUtils/trimToEmpty(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///org/apache/commons/lang/StringUtils/trimToEmpty(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/lang3/StringUtils/trimToEmpty(java.lang.String)|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|"
+    ],
+    "affectedLib": "org.apache.commons:commons-lang3:3.3.2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "no.digipost:digipost-api-client-java:4.1",
+    "coordinatesV2": "no.digipost:digipost-api-client-java:6.3",
+    "caller": "|java+method:///no/digipost/api/client/representations/ForeignAddress/trimEquals(java.lang.String,java.lang.String)|",
+    "called": "|java+method:///org/apache/commons/lang3/StringUtils/trimToEmpty(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///org/apache/commons/lang/StringUtils/trimToEmpty(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/lang3/StringUtils/trimToEmpty(java.lang.String)|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|"
+    ],
+    "affectedLib": "org.apache.commons:commons-lang3:3.3.2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "no.digipost:digipost-api-client-java:4.1",
+    "coordinatesV2": "no.digipost:digipost-api-client-java:6.3",
+    "caller": "|java+method:///no/digipost/api/client/representations/PrintRecipient/trimEquals(java.lang.String,java.lang.String)|",
+    "called": "|java+method:///org/apache/commons/lang3/StringUtils/trimToEmpty(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///org/apache/commons/lang/StringUtils/trimToEmpty(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/lang3/StringUtils/trimToEmpty(java.lang.String)|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|"
+    ],
+    "affectedLib": "org.apache.commons:commons-lang3:3.3.2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "no.digipost:digipost-api-client-java:4.1",
+    "coordinatesV2": "no.digipost:digipost-api-client-java:6.3",
+    "caller": "|java+method:///no/digipost/api/client/representations/Link/toString()|",
+    "called": "|java+method:///org/apache/commons/lang3/builder/ToStringBuilder/reflectionToString(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/lang/builder/ToStringBuilder/reflectionToString(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/lang3/builder/ToStringBuilder/reflectionToString(java.lang.Object)|"
+    ],
+    "affectedLib": "org.apache.commons:commons-lang3:3.3.2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "no.digipost:digipost-api-client-java:4.1",
+    "coordinatesV2": "no.digipost:digipost-api-client-java:6.3",
+    "caller": "|java+method:///no/digipost/api/client/swing/DigipostSwingClient$11/actionPerformed(java.awt.event.ActionEvent)|",
+    "called": "|java+constructor:///org/joda/time/LocalDate/LocalDate(int,int,int)|",
+    "v1Body": [
+      "|java+method:///javax/swing/JButton/setEnabled(boolean)|",
+      "|java+method:///no/digipost/api/client/swing/DigipostSwingClient/access$800(no.digipost.api.client.swing.DigipostSwingClient)|",
+      "|java+method:///no/digipost/api/client/swing/DigipostSwingClient/access$2500(no.digipost.api.client.swing.DigipostSwingClient)|",
+      "|java+method:///no/digipost/api/client/swing/DigipostSwingClient/access$2400(no.digipost.api.client.swing.DigipostSwingClient,boolean)|",
+      "|java+method:///no/digipost/api/client/swing/DigipostSwingClient/access$702(no.digipost.api.client.swing.DigipostSwingClient,no.digipost.api.client.representations.MessageDelivery)|",
+      "|java+method:///no/digipost/api/client/DigipostClient/sendMessage(no.digipost.api.client.representations.MessageDelivery)|",
+      "|java+method:///no/digipost/api/client/EventLogger/log(java.lang.String)|",
+      "|java+method:///no/digipost/api/client/swing/DigipostSwingClient/access$1000(no.digipost.api.client.swing.DigipostSwingClient)|",
+      "|java+method:///no/digipost/api/client/swing/DigipostSwingClient/access$700(no.digipost.api.client.swing.DigipostSwingClient)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///no/digipost/api/client/representations/PrintDetails/PrintDetails(no.digipost.api.client.representations.PrintRecipient,no.digipost.api.client.representations.PrintRecipient,no.digipost.api.client.representations.PrintDetails$PostType)|",
+      "|java+method:///no/digipost/api/client/representations/Message$MessageBuilder/recipient(no.digipost.api.client.representations.MessageRecipient)|",
+      "|java+method:///javax/swing/JRadioButton/isSelected()|",
+      "|java+method:///no/digipost/api/client/errorhandling/DigipostClientException/getErrorCode()|",
+      "|java+method:///no/digipost/api/client/errorhandling/DigipostClientException/getErrorMessage()|",
+      "|java+method:///no/digipost/api/client/swing/DigipostSwingClient/access$1800(no.digipost.api.client.swing.DigipostSwingClient)|",
+      "|java+method:///java/lang/String/substring(int,int)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///no/digipost/api/client/DigipostClient/createMessage(no.digipost.api.client.representations.Message)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///javax/swing/JTextField/getText()|",
+      "|java+constructor:///no/digipost/api/client/representations/MessageRecipient/MessageRecipient(no.digipost.api.client.representations.NameAndAddress)|",
+      "|java+method:///no/digipost/api/client/representations/FileType/fromFilename(java.lang.String)|",
+      "|java+method:///no/digipost/api/client/representations/Message$MessageBuilder/personalIdentificationNumber(no.digipost.api.client.representations.PersonalIdentificationNumber)|",
+      "|java+method:///no/digipost/api/client/swing/DigipostSwingClient/access$600(no.digipost.api.client.swing.DigipostSwingClient)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///javax/swing/JButton/setEnabled(boolean)|",
+      "|java+method:///no/digipost/api/client/swing/DigipostSwingClient/access$2000(no.digipost.api.client.swing.DigipostSwingClient)|",
+      "|java+method:///no/digipost/api/client/representations/Message$MessageBuilder/organisationNumber(no.digipost.api.client.representations.OrganisationNumber)|",
+      "|java+method:///no/digipost/api/client/swing/DigipostSwingClient/access$2100(no.digipost.api.client.swing.DigipostSwingClient)|",
+      "|java+constructor:///no/digipost/api/client/representations/DigipostAddress/DigipostAddress(java.lang.String)|",
+      "|java+method:///no/digipost/api/client/swing/DigipostSwingClient/access$800(no.digipost.api.client.swing.DigipostSwingClient)|",
+      "|java+method:///no/digipost/api/client/representations/Message$MessageBuilder/build()|",
+      "|java+method:///no/digipost/api/client/swing/DigipostSwingClient/access$702(no.digipost.api.client.swing.DigipostSwingClient,no.digipost.api.client.delivery.OngoingDelivery$SendableWithPrintFallback)|",
+      "|java+method:///no/digipost/api/client/swing/DigipostSwingClient/access$1100(no.digipost.api.client.swing.DigipostSwingClient)|",
+      "|java+method:///no/digipost/api/client/swing/DigipostSwingClient/access$2200(no.digipost.api.client.swing.DigipostSwingClient)|",
+      "|java+method:///javax/swing/JCheckBox/isSelected()|",
+      "|java+method:///no/digipost/api/client/swing/DigipostSwingClient/access$1200(no.digipost.api.client.swing.DigipostSwingClient)|",
+      "|java+method:///no/digipost/api/client/swing/DigipostSwingClient/access$2300(no.digipost.api.client.swing.DigipostSwingClient)|",
+      "|java+method:///no/digipost/api/client/swing/DigipostSwingClient/access$1300(no.digipost.api.client.swing.DigipostSwingClient)|",
+      "|java+method:///no/digipost/api/client/swing/DigipostSwingClient/access$2400(no.digipost.api.client.swing.DigipostSwingClient)|",
+      "|java+constructor:///no/digipost/api/client/representations/OrganisationNumber/OrganisationNumber(java.lang.String)|",
+      "|java+method:///java/io/IOException/getMessage()|",
+      "|java+method:///no/digipost/api/client/swing/DigipostSwingClient/access$1400(no.digipost.api.client.swing.DigipostSwingClient)|",
+      "|java+method:///no/digipost/api/client/swing/DigipostSwingClient/access$2500(no.digipost.api.client.swing.DigipostSwingClient)|",
+      "|java+constructor:///no/digipost/api/client/representations/PersonalIdentificationNumber/PersonalIdentificationNumber(java.lang.String)|",
+      "|java+method:///no/digipost/api/client/swing/DigipostSwingClient/access$1500(no.digipost.api.client.swing.DigipostSwingClient)|",
+      "|java+method:///java/util/UUID/randomUUID()|",
+      "|java+method:///no/digipost/api/client/swing/DigipostSwingClient/access$1600(no.digipost.api.client.swing.DigipostSwingClient)|",
+      "|java+method:///no/digipost/api/client/swing/DigipostSwingClient/access$2700(no.digipost.api.client.swing.DigipostSwingClient)|",
+      "|java+method:///no/digipost/api/client/representations/Message$MessageBuilder/newMessage(java.lang.String,no.digipost.api.client.representations.Document)|",
+      "|java+method:///no/digipost/api/client/swing/DigipostSwingClient/access$1700(no.digipost.api.client.swing.DigipostSwingClient)|",
+      "|java+constructor:///no/digipost/api/client/representations/MessageRecipient/MessageRecipient(no.digipost.api.client.representations.PrintDetails)|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///no/digipost/api/client/swing/DigipostSwingClient/access$1900(no.digipost.api.client.swing.DigipostSwingClient)|",
+      "|java+method:///no/digipost/api/client/swing/DigipostSwingClient/access$2600(no.digipost.api.client.swing.DigipostSwingClient,boolean)|",
+      "|java+method:///java/nio/file/Paths/get(java.lang.String,java.lang.String%5B%5D)|",
+      "|java+constructor:///no/digipost/api/client/representations/Document/Document(java.lang.String,java.lang.String,no.digipost.api.client.representations.FileType,java.lang.String,no.digipost.api.client.representations.SmsNotification,no.digipost.api.client.representations.EmailNotification,no.digipost.api.client.representations.AuthenticationLevel,no.digipost.api.client.representations.SensitivityLevel)|",
+      "|java+constructor:///no/digipost/api/client/representations/PrintRecipient/PrintRecipient(java.lang.String,no.digipost.api.client.representations.NorwegianAddress)|",
+      "|java+method:///java/lang/String/substring(int)|",
+      "|java+method:///java/lang/Integer/parseInt(java.lang.String)|",
+      "|java+constructor:///no/digipost/api/client/representations/NorwegianAddress/NorwegianAddress(java.lang.String,java.lang.String,java.lang.String,java.lang.String)|",
+      "|java+constructor:///no/digipost/api/client/representations/MessageRecipient/MessageRecipient(no.digipost.api.client.representations.NameAndAddress,no.digipost.api.client.representations.PrintDetails)|",
+      "|java+method:///java/nio/file/Files/newInputStream(java.nio.file.Path,java.nio.file.OpenOption%5B%5D)|",
+      "|java+method:///no/digipost/api/client/delivery/OngoingDelivery$WithPrintFallback/addContent(no.digipost.api.client.representations.Document,java.io.InputStream)|",
+      "|java+constructor:///org/joda/time/LocalDate/LocalDate(int,int,int)|",
+      "|java+method:///no/digipost/api/client/representations/Message$MessageBuilder/digipostAddress(no.digipost.api.client.representations.DigipostAddress)|",
+      "|java+method:///java/util/UUID/toString()|",
+      "|java+constructor:///no/digipost/api/client/representations/SmsNotification/SmsNotification()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///no/digipost/api/client/EventLogger/log(java.lang.String)|",
+      "|java+constructor:///no/digipost/api/client/representations/NameAndAddress/NameAndAddress(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,org.joda.time.LocalDate,java.lang.String,java.lang.String)|"
+    ],
+    "affectedLib": "joda-time:joda-time:2.6",
+    "change": "UPDATED"
+  }
+]

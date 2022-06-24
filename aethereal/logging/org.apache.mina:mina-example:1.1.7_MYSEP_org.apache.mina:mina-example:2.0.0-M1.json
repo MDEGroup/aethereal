@@ -1,0 +1,871 @@
+[
+  {
+    "coordinatesV1": "org.apache.mina:mina-example:2.0.0-M1",
+    "coordinatesV2": "org.apache.mina:mina-example:1.1.7",
+    "caller": "|java+method:///org/apache/mina/example/chat/SpringMain/main(java.lang.String%5B%5D)|",
+    "called": "|java+constructor:///org/springframework/context/support/ClassPathXmlApplicationContext/ClassPathXmlApplicationContext(java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///org/springframework/context/support/ClassPathXmlApplicationContext/ClassPathXmlApplicationContext(java.lang.String%5B%5D)|",
+      "|java+constructor:///org/springframework/context/support/ClassPathXmlApplicationContext/ClassPathXmlApplicationContext(java.lang.String)|",
+      "|java+method:///java/io/PrintStream/println(java.lang.String)|",
+      "|java+method:///java/lang/System/getProperty(java.lang.String)|",
+      "|java+method:///org/apache/mina/example/chat/SpringMain/getJmxApplicationContexts()|",
+      "|java+method:///org/apache/mina/example/chat/SpringMain/getApplicationContext()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/io/PrintStream/println(java.lang.String)|",
+      "|java+method:///org/apache/mina/example/chat/SpringMain/getApplicationContext()|",
+      "|java+method:///java/lang/System/getProperty(java.lang.String)|"
+    ],
+    "affectedLib": "org.springframework:spring-context:2.0.6",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.apache.mina:mina-example:2.0.0-M1",
+    "coordinatesV2": "org.apache.mina:mina-example:1.1.7",
+    "caller": "|java+method:///org/apache/mina/example/chat/Main/addSSLSupport(org.apache.mina.common.DefaultIoFilterChainBuilder)|",
+    "called": "|java+constructor:///org/apache/mina/filter/SSLFilter/SSLFilter(javax.net.ssl.SSLContext)|",
+    "v1Body": [
+      "|java+method:///java/io/PrintStream/println(java.lang.String)|",
+      "|java+method:///org/apache/mina/common/DefaultIoFilterChainBuilder/addLast(java.lang.String,org.apache.mina.common.IoFilter)|",
+      "|java+method:///org/apache/mina/example/echoserver/ssl/BogusSSLContextFactory/getInstance(boolean)|",
+      "|java+constructor:///org/apache/mina/filter/SSLFilter/SSLFilter(javax.net.ssl.SSLContext)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/io/PrintStream/println(java.lang.String)|",
+      "|java+method:///org/apache/mina/common/DefaultIoFilterChainBuilder/addLast(java.lang.String,org.apache.mina.common.IoFilter)|",
+      "|java+method:///org/apache/mina/example/echoserver/ssl/BogusSslContextFactory/getInstance(boolean)|",
+      "|java+constructor:///org/apache/mina/filter/ssl/SslFilter/SslFilter(javax.net.ssl.SSLContext)|"
+    ],
+    "affectedLib": "org.apache.mina:mina-filter-ssl:1.1.7",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.apache.mina:mina-example:2.0.0-M1",
+    "coordinatesV2": "org.apache.mina:mina-example:1.1.7",
+    "caller": "|java+method:///org/apache/mina/example/echoserver/Main/addSSLSupport(org.apache.mina.common.DefaultIoFilterChainBuilder)|",
+    "called": "|java+constructor:///org/apache/mina/filter/SSLFilter/SSLFilter(javax.net.ssl.SSLContext)|",
+    "v1Body": [
+      "|java+method:///java/io/PrintStream/println(java.lang.String)|",
+      "|java+method:///org/apache/mina/common/DefaultIoFilterChainBuilder/addLast(java.lang.String,org.apache.mina.common.IoFilter)|",
+      "|java+method:///org/apache/mina/example/echoserver/ssl/BogusSSLContextFactory/getInstance(boolean)|",
+      "|java+constructor:///org/apache/mina/filter/SSLFilter/SSLFilter(javax.net.ssl.SSLContext)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/io/PrintStream/println(java.lang.String)|",
+      "|java+method:///org/apache/mina/common/DefaultIoFilterChainBuilder/addLast(java.lang.String,org.apache.mina.common.IoFilter)|",
+      "|java+method:///org/apache/mina/example/echoserver/ssl/BogusSslContextFactory/getInstance(boolean)|",
+      "|java+constructor:///org/apache/mina/filter/ssl/SslFilter/SslFilter(javax.net.ssl.SSLContext)|"
+    ],
+    "affectedLib": "org.apache.mina:mina-filter-ssl:1.1.7",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.apache.mina:mina-example:1.1.7",
+    "coordinatesV2": "org.apache.mina:mina-example:2.0.0-M1",
+    "caller": "|java+method:///org/apache/mina/example/netcat/Main/main(java.lang.String%5B%5D)|",
+    "called": "|java+constructor:///org/apache/mina/transport/socket/nio/NioSocketConnector/NioSocketConnector()|",
+    "v1Body": [
+      "|java+method:///org/apache/mina/common/ConnectFuture/join()|",
+      "|java+method:///org/apache/mina/common/IoConnectorConfig/setConnectTimeout(int)|",
+      "|java+method:///org/apache/mina/transport/socket/nio/SocketConnector/connect(java.net.SocketAddress,org.apache.mina.common.IoHandler)|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/Integer/parseInt(java.lang.String)|",
+      "|java+method:///org/apache/mina/common/ConnectFuture/getSession()|",
+      "|java+constructor:///org/apache/mina/example/netcat/NetCatProtocolHandler/NetCatProtocolHandler()|",
+      "|java+constructor:///java/net/InetSocketAddress/InetSocketAddress(java.lang.String,int)|",
+      "|java+method:///org/apache/mina/transport/socket/nio/SocketConnector/getDefaultConfig()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/io/PrintStream/println(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///org/apache/mina/transport/socket/nio/SocketConnector/SocketConnector()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/mina/transport/socket/nio/NioSocketConnector/connect(java.net.SocketAddress)|",
+      "|java+constructor:///java/net/InetSocketAddress/InetSocketAddress(java.lang.String,int)|",
+      "|java+constructor:///org/apache/mina/transport/socket/nio/NioSocketConnector/NioSocketConnector()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/Integer/parseInt(java.lang.String)|",
+      "|java+method:///org/apache/mina/common/ConnectFuture/getSession()|",
+      "|java+method:///org/apache/mina/transport/socket/nio/NioSocketConnector/dispose()|",
+      "|java+constructor:///org/apache/mina/example/netcat/NetCatProtocolHandler/NetCatProtocolHandler()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/apache/mina/transport/socket/nio/NioSocketConnector/setConnectTimeout(int)|",
+      "|java+method:///org/apache/mina/common/CloseFuture/awaitUninterruptibly()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/io/PrintStream/println(java.lang.String)|",
+      "|java+method:///org/apache/mina/common/ConnectFuture/awaitUninterruptibly()|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+method:///org/apache/mina/common/IoSession/getCloseFuture()|",
+      "|java+method:///org/apache/mina/transport/socket/nio/NioSocketConnector/setHandler(org.apache.mina.common.IoHandler)|"
+    ],
+    "affectedLib": "org.apache.mina:mina-core:2.0.0-M1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.mina:mina-example:1.1.7",
+    "coordinatesV2": "org.apache.mina:mina-example:2.0.0-M1",
+    "caller": "|java+method:///org/apache/mina/example/chat/Main/addSSLSupport(org.apache.mina.common.DefaultIoFilterChainBuilder)|",
+    "called": "|java+constructor:///org/apache/mina/filter/ssl/SslFilter/SslFilter(javax.net.ssl.SSLContext)|",
+    "v1Body": [
+      "|java+method:///java/io/PrintStream/println(java.lang.String)|",
+      "|java+method:///org/apache/mina/common/DefaultIoFilterChainBuilder/addLast(java.lang.String,org.apache.mina.common.IoFilter)|",
+      "|java+method:///org/apache/mina/example/echoserver/ssl/BogusSSLContextFactory/getInstance(boolean)|",
+      "|java+constructor:///org/apache/mina/filter/SSLFilter/SSLFilter(javax.net.ssl.SSLContext)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/io/PrintStream/println(java.lang.String)|",
+      "|java+method:///org/apache/mina/common/DefaultIoFilterChainBuilder/addLast(java.lang.String,org.apache.mina.common.IoFilter)|",
+      "|java+method:///org/apache/mina/example/echoserver/ssl/BogusSslContextFactory/getInstance(boolean)|",
+      "|java+constructor:///org/apache/mina/filter/ssl/SslFilter/SslFilter(javax.net.ssl.SSLContext)|"
+    ],
+    "affectedLib": "org.apache.mina:mina-core:2.0.0-M1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.mina:mina-example:1.1.7",
+    "coordinatesV2": "org.apache.mina:mina-example:2.0.0-M1",
+    "caller": "|java+method:///org/apache/mina/example/sumup/Server/main(java.lang.String%5B%5D)|",
+    "called": "|java+constructor:///org/apache/mina/filter/codec/ProtocolCodecFilter/ProtocolCodecFilter(org.apache.mina.filter.codec.ProtocolCodecFactory)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/mina/example/sumup/codec/SumUpProtocolCodecFactory/SumUpProtocolCodecFactory(boolean)|",
+      "|java+method:///org/apache/mina/common/IoAcceptor/bind(java.net.SocketAddress,org.apache.mina.common.IoHandler,org.apache.mina.common.IoServiceConfig)|",
+      "|java+constructor:///org/apache/mina/filter/codec/ProtocolCodecFilter/ProtocolCodecFilter(org.apache.mina.filter.codec.ProtocolCodecFactory)|",
+      "|java+method:///org/apache/mina/common/DefaultIoFilterChainBuilder/addLast(java.lang.String,org.apache.mina.common.IoFilter)|",
+      "|java+constructor:///org/apache/mina/filter/LoggingFilter/LoggingFilter()|",
+      "|java+method:///org/apache/mina/transport/socket/nio/SocketAcceptorConfig/getFilterChain()|",
+      "|java+constructor:///java/net/InetSocketAddress/InetSocketAddress(int)|",
+      "|java+constructor:///org/apache/mina/example/sumup/ServerSessionHandler/ServerSessionHandler()|",
+      "|java+method:///org/apache/mina/transport/socket/nio/SocketAcceptorConfig/setReuseAddress(boolean)|",
+      "|java+method:///java/io/PrintStream/println(java.lang.String)|",
+      "|java+constructor:///org/apache/mina/transport/socket/nio/SocketAcceptor/SocketAcceptor()|",
+      "|java+constructor:///org/apache/mina/transport/socket/nio/SocketAcceptorConfig/SocketAcceptorConfig()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/mina/filter/logging/LoggingFilter/LoggingFilter()|",
+      "|java+constructor:///org/apache/mina/example/sumup/codec/SumUpProtocolCodecFactory/SumUpProtocolCodecFactory(boolean)|",
+      "|java+method:///java/io/PrintStream/println(java.lang.String)|",
+      "|java+constructor:///org/apache/mina/filter/codec/ProtocolCodecFilter/ProtocolCodecFilter(org.apache.mina.filter.codec.ProtocolCodecFactory)|",
+      "|java+constructor:///org/apache/mina/transport/socket/nio/NioSocketAcceptor/NioSocketAcceptor()|",
+      "|java+method:///org/apache/mina/common/DefaultIoFilterChainBuilder/addLast(java.lang.String,org.apache.mina.common.IoFilter)|",
+      "|java+method:///org/apache/mina/transport/socket/nio/NioSocketAcceptor/getFilterChain()|",
+      "|java+constructor:///java/net/InetSocketAddress/InetSocketAddress(int)|",
+      "|java+method:///org/apache/mina/transport/socket/nio/NioSocketAcceptor/bind(java.net.SocketAddress)|",
+      "|java+constructor:///org/apache/mina/example/sumup/ServerSessionHandler/ServerSessionHandler()|",
+      "|java+method:///org/apache/mina/transport/socket/nio/NioSocketAcceptor/setHandler(org.apache.mina.common.IoHandler)|"
+    ],
+    "affectedLib": "org.apache.mina:mina-core:2.0.0-M1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.mina:mina-example:1.1.7",
+    "coordinatesV2": "org.apache.mina:mina-example:2.0.0-M1",
+    "caller": "|java+method:///org/apache/mina/example/proxy/Main/main(java.lang.String%5B%5D)|",
+    "called": "|java+constructor:///org/apache/mina/transport/socket/nio/NioSocketAcceptor/NioSocketAcceptor()|",
+    "v1Body": [
+      "|java+constructor:///org/apache/mina/example/proxy/ServerToProxyIoHandler/ServerToProxyIoHandler()|",
+      "|java+method:///org/apache/mina/common/IoConnectorConfig/setConnectTimeout(int)|",
+      "|java+constructor:///java/net/InetSocketAddress/InetSocketAddress(java.lang.String,int)|",
+      "|java+constructor:///org/apache/mina/transport/socket/nio/SocketAcceptor/SocketAcceptor()|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/Integer/parseInt(java.lang.String)|",
+      "|java+constructor:///java/net/InetSocketAddress/InetSocketAddress(int)|",
+      "|java+method:///org/apache/mina/common/IoAcceptor/bind(java.net.SocketAddress,org.apache.mina.common.IoHandler)|",
+      "|java+constructor:///org/apache/mina/example/proxy/ClientToProxyIoHandler/ClientToProxyIoHandler(org.apache.mina.example.proxy.ServerToProxyIoHandler,org.apache.mina.common.IoConnector,java.net.InetSocketAddress)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/mina/transport/socket/nio/SocketAcceptorConfig/setReuseAddress(boolean)|",
+      "|java+method:///java/io/PrintStream/println(java.lang.String)|",
+      "|java+method:///org/apache/mina/common/IoAcceptor/getDefaultConfig()|",
+      "|java+method:///org/apache/mina/common/IoConnector/getDefaultConfig()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///org/apache/mina/transport/socket/nio/SocketConnector/SocketConnector()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/net/InetSocketAddress/InetSocketAddress(java.lang.String,int)|",
+      "|java+method:///org/apache/mina/common/IoConnector/setConnectTimeout(int)|",
+      "|java+constructor:///org/apache/mina/transport/socket/nio/NioSocketConnector/NioSocketConnector()|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/Integer/parseInt(java.lang.String)|",
+      "|java+constructor:///java/net/InetSocketAddress/InetSocketAddress(int)|",
+      "|java+method:///org/apache/mina/transport/socket/nio/NioSocketAcceptor/bind(java.net.SocketAddress)|",
+      "|java+method:///org/apache/mina/transport/socket/nio/NioSocketAcceptor/setHandler(org.apache.mina.common.IoHandler)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/io/PrintStream/println(java.lang.String)|",
+      "|java+constructor:///org/apache/mina/transport/socket/nio/NioSocketAcceptor/NioSocketAcceptor()|",
+      "|java+constructor:///org/apache/mina/example/proxy/ClientToProxyIoHandler/ClientToProxyIoHandler(org.apache.mina.common.IoConnector,java.net.SocketAddress)|"
+    ],
+    "affectedLib": "org.apache.mina:mina-core:2.0.0-M1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.mina:mina-example:1.1.7",
+    "coordinatesV2": "org.apache.mina:mina-example:2.0.0-M1",
+    "caller": "|java+method:///org/apache/mina/example/proxy/AbstractProxyIoHandler/messageReceived(org.apache.mina.common.IoSession,java.lang.Object)|",
+    "called": "|java+method:///org/apache/mina/common/IoBuffer/allocate(int)|",
+    "v1Body": [
+      "|java+method:///org/apache/mina/common/ByteBuffer/put(org.apache.mina.common.ByteBuffer)|",
+      "|java+method:///org/apache/mina/common/IoSession/write(java.lang.Object)|",
+      "|java+method:///java/nio/charset/Charset/newDecoder()|",
+      "|java+method:///org/apache/mina/common/ByteBuffer/getString(java.nio.charset.CharsetDecoder)|",
+      "|java+method:///org/apache/mina/common/ByteBuffer/allocate(int)|",
+      "|java+method:///org/apache/mina/common/IoSession/getAttachment()|",
+      "|java+method:///org/apache/mina/common/ByteBuffer/reset()|",
+      "|java+method:///org/apache/mina/util/SessionLog/info(org.apache.mina.common.IoSession,java.lang.String)|",
+      "|java+method:///org/apache/mina/common/ByteBuffer/remaining()|",
+      "|java+method:///org/apache/mina/common/ByteBuffer/mark()|",
+      "|java+method:///org/apache/mina/common/ByteBuffer/flip()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/mina/common/IoBuffer/remaining()|",
+      "|java+method:///org/apache/mina/common/IoSession/getAttribute(java.lang.Object)|",
+      "|java+method:///org/apache/mina/common/IoBuffer/put(org.apache.mina.common.IoBuffer)|",
+      "|java+method:///java/nio/charset/Charset/newDecoder()|",
+      "|java+method:///org/apache/mina/common/IoBuffer/allocate(int)|",
+      "|java+method:///org/apache/mina/common/IoBuffer/getString(java.nio.charset.CharsetDecoder)|",
+      "|java+method:///org/apache/mina/common/IoBuffer/reset()|",
+      "|java+method:///org/apache/mina/common/IoSession/write(java.lang.Object)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String)|",
+      "|java+method:///org/apache/mina/common/IoBuffer/mark()|",
+      "|java+method:///org/apache/mina/common/IoBuffer/flip()|"
+    ],
+    "affectedLib": "org.apache.mina:mina-core:2.0.0-M1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.mina:mina-example:1.1.7",
+    "coordinatesV2": "org.apache.mina:mina-example:2.0.0-M1",
+    "caller": "|java+method:///org/apache/mina/example/chat/Main/addLogger(org.apache.mina.common.DefaultIoFilterChainBuilder)|",
+    "called": "|java+method:///org/apache/mina/common/DefaultIoFilterChainBuilder/addLast(java.lang.String,org.apache.mina.common.IoFilter)|",
+    "v1Body": [
+      "|java+method:///java/io/PrintStream/println(java.lang.String)|",
+      "|java+method:///org/apache/mina/common/DefaultIoFilterChainBuilder/addLast(java.lang.String,org.apache.mina.common.IoFilter)|",
+      "|java+constructor:///org/apache/mina/filter/LoggingFilter/LoggingFilter()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/mina/filter/logging/LoggingFilter/LoggingFilter()|",
+      "|java+method:///java/io/PrintStream/println(java.lang.String)|",
+      "|java+method:///org/apache/mina/common/DefaultIoFilterChainBuilder/addLast(java.lang.String,org.apache.mina.common.IoFilter)|"
+    ],
+    "affectedLib": "org.apache.mina:mina-core:2.0.0-M1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.mina:mina-example:1.1.7",
+    "coordinatesV2": "org.apache.mina:mina-example:2.0.0-M1",
+    "caller": "|java+method:///org/apache/mina/example/tennis/Main/main(java.lang.String%5B%5D)|",
+    "called": "|java+constructor:///org/apache/mina/transport/vmpipe/VmPipeAddress/VmPipeAddress(int)|",
+    "v1Body": [
+      "|java+method:///org/apache/mina/common/ConnectFuture/join()|",
+      "|java+constructor:///org/apache/mina/transport/vmpipe/VmPipeConnector/VmPipeConnector()|",
+      "|java+constructor:///org/apache/mina/example/tennis/TennisPlayer/TennisPlayer()|",
+      "|java+method:///org/apache/mina/common/IoSession/write(java.lang.Object)|",
+      "|java+constructor:///org/apache/mina/transport/vmpipe/VmPipeAddress/VmPipeAddress(int)|",
+      "|java+method:///org/apache/mina/common/IoAcceptor/unbind(java.net.SocketAddress)|",
+      "|java+method:///org/apache/mina/transport/vmpipe/VmPipeConnector/connect(java.net.SocketAddress,org.apache.mina.common.IoHandler)|",
+      "|java+method:///org/apache/mina/common/CloseFuture/join()|",
+      "|java+constructor:///org/apache/mina/transport/vmpipe/VmPipeAcceptor/VmPipeAcceptor()|",
+      "|java+method:///org/apache/mina/common/ConnectFuture/getSession()|",
+      "|java+method:///org/apache/mina/common/IoAcceptor/bind(java.net.SocketAddress,org.apache.mina.common.IoHandler)|",
+      "|java+constructor:///org/apache/mina/example/tennis/TennisBall/TennisBall(int)|",
+      "|java+method:///org/apache/mina/common/IoSession/getCloseFuture()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/mina/common/CloseFuture/awaitUninterruptibly()|",
+      "|java+constructor:///org/apache/mina/transport/vmpipe/VmPipeConnector/VmPipeConnector()|",
+      "|java+constructor:///org/apache/mina/example/tennis/TennisPlayer/TennisPlayer()|",
+      "|java+method:///org/apache/mina/common/IoSession/write(java.lang.Object)|",
+      "|java+constructor:///org/apache/mina/transport/vmpipe/VmPipeAddress/VmPipeAddress(int)|",
+      "|java+method:///org/apache/mina/common/ConnectFuture/awaitUninterruptibly()|",
+      "|java+method:///org/apache/mina/common/IoAcceptor/unbind()|",
+      "|java+constructor:///org/apache/mina/transport/vmpipe/VmPipeAcceptor/VmPipeAcceptor()|",
+      "|java+method:///org/apache/mina/common/IoAcceptor/bind(java.net.SocketAddress)|",
+      "|java+method:///org/apache/mina/common/ConnectFuture/getSession()|",
+      "|java+method:///org/apache/mina/transport/vmpipe/VmPipeConnector/setHandler(org.apache.mina.common.IoHandler)|",
+      "|java+method:///org/apache/mina/common/IoAcceptor/setHandler(org.apache.mina.common.IoHandler)|",
+      "|java+method:///org/apache/mina/transport/vmpipe/VmPipeConnector/connect(java.net.SocketAddress)|",
+      "|java+constructor:///org/apache/mina/example/tennis/TennisBall/TennisBall(int)|",
+      "|java+method:///org/apache/mina/common/IoSession/getCloseFuture()|"
+    ],
+    "affectedLib": "org.apache.mina:mina-core:2.0.0-M1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.mina:mina-example:1.1.7",
+    "coordinatesV2": "org.apache.mina:mina-example:2.0.0-M1",
+    "caller": "|java+method:///org/apache/mina/example/echoserver/Main/main(java.lang.String%5B%5D)|",
+    "called": "|java+constructor:///org/apache/mina/transport/socket/nio/NioSocketAcceptor/NioSocketAcceptor()|",
+    "v1Body": [
+      "|java+method:///java/io/PrintStream/println(java.lang.String)|",
+      "|java+method:///org/apache/mina/common/IoAcceptor/bind(java.net.SocketAddress,org.apache.mina.common.IoHandler,org.apache.mina.common.IoServiceConfig)|",
+      "|java+method:///org/apache/mina/common/IoAcceptorConfig/getFilterChain()|",
+      "|java+method:///org/apache/mina/example/echoserver/Main/addLogger(org.apache.mina.common.DefaultIoFilterChainBuilder)|",
+      "|java+constructor:///org/apache/mina/example/echoserver/EchoProtocolHandler/EchoProtocolHandler()|",
+      "|java+constructor:///java/net/InetSocketAddress/InetSocketAddress(int)|",
+      "|java+constructor:///org/apache/mina/transport/socket/nio/SocketAcceptor/SocketAcceptor()|",
+      "|java+constructor:///org/apache/mina/transport/socket/nio/SocketAcceptorConfig/SocketAcceptorConfig()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Thread/sleep(long)|",
+      "|java+method:///org/apache/mina/transport/socket/SocketAcceptor/getWrittenBytesThroughput()|",
+      "|java+constructor:///org/apache/mina/transport/socket/nio/NioSocketAcceptor/NioSocketAcceptor()|",
+      "|java+method:///org/apache/mina/transport/socket/SocketAcceptor/getFilterChain()|",
+      "|java+method:///java/lang/StringBuilder/append(double)|",
+      "|java+method:///org/apache/mina/transport/socket/SocketAcceptor/setHandler(org.apache.mina.common.IoHandler)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/io/PrintStream/println(java.lang.String)|",
+      "|java+method:///org/apache/mina/transport/socket/SocketAcceptor/getReadBytesThroughput()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///org/apache/mina/example/echoserver/EchoProtocolHandler/EchoProtocolHandler()|",
+      "|java+method:///org/apache/mina/transport/socket/SocketAcceptor/bind(java.net.SocketAddress)|",
+      "|java+constructor:///java/net/InetSocketAddress/InetSocketAddress(int)|"
+    ],
+    "affectedLib": "org.apache.mina:mina-core:2.0.0-M1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.mina:mina-example:1.1.7",
+    "coordinatesV2": "org.apache.mina:mina-example:2.0.0-M1",
+    "caller": "|java+method:///org/apache/mina/example/echoserver/Main/addLogger(org.apache.mina.common.DefaultIoFilterChainBuilder)|",
+    "called": "|java+method:///org/apache/mina/common/DefaultIoFilterChainBuilder/addLast(java.lang.String,org.apache.mina.common.IoFilter)|",
+    "v1Body": [
+      "|java+method:///java/io/PrintStream/println(java.lang.String)|",
+      "|java+method:///org/apache/mina/common/DefaultIoFilterChainBuilder/addLast(java.lang.String,org.apache.mina.common.IoFilter)|",
+      "|java+constructor:///org/apache/mina/filter/LoggingFilter/LoggingFilter()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/mina/filter/logging/LoggingFilter/LoggingFilter()|",
+      "|java+method:///java/io/PrintStream/println(java.lang.String)|",
+      "|java+method:///org/apache/mina/common/DefaultIoFilterChainBuilder/addLast(java.lang.String,org.apache.mina.common.IoFilter)|"
+    ],
+    "affectedLib": "org.apache.mina:mina-core:2.0.0-M1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.mina:mina-example:1.1.7",
+    "coordinatesV2": "org.apache.mina:mina-example:2.0.0-M1",
+    "caller": "|java+constructor:///org/apache/mina/example/sumup/codec/SumUpProtocolCodecFactory/SumUpProtocolCodecFactory(boolean)|",
+    "called": "|java+constructor:///org/apache/mina/filter/codec/demux/DemuxingProtocolCodecFactory/DemuxingProtocolCodecFactory()|",
+    "v1Body": [
+      "|java+constructor:///org/apache/mina/filter/codec/demux/DemuxingProtocolCodecFactory/DemuxingProtocolCodecFactory()|",
+      "|java+method:///org/apache/mina/filter/codec/demux/DemuxingProtocolCodecFactory/register(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/mina/filter/codec/demux/DemuxingProtocolCodecFactory/addMessageEncoder(java.lang.Class,java.lang.Class)|",
+      "|java+constructor:///org/apache/mina/filter/codec/demux/DemuxingProtocolCodecFactory/DemuxingProtocolCodecFactory()|",
+      "|java+method:///org/apache/mina/filter/codec/demux/DemuxingProtocolCodecFactory/addMessageDecoder(java.lang.Class)|"
+    ],
+    "affectedLib": "org.apache.mina:mina-core:2.0.0-M1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.mina:mina-example:1.1.7",
+    "coordinatesV2": "org.apache.mina:mina-example:2.0.0-M1",
+    "caller": "|java+method:///org/apache/mina/example/reverser/Main/main(java.lang.String%5B%5D)|",
+    "called": "|java+constructor:///org/apache/mina/filter/codec/ProtocolCodecFilter/ProtocolCodecFilter(org.apache.mina.filter.codec.ProtocolCodecFactory)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/mina/example/reverser/ReverseProtocolHandler/ReverseProtocolHandler()|",
+      "|java+constructor:///org/apache/mina/filter/codec/textline/TextLineCodecFactory/TextLineCodecFactory(java.nio.charset.Charset)|",
+      "|java+method:///org/apache/mina/common/IoAcceptor/bind(java.net.SocketAddress,org.apache.mina.common.IoHandler,org.apache.mina.common.IoServiceConfig)|",
+      "|java+constructor:///org/apache/mina/filter/codec/ProtocolCodecFilter/ProtocolCodecFilter(org.apache.mina.filter.codec.ProtocolCodecFactory)|",
+      "|java+method:///org/apache/mina/common/DefaultIoFilterChainBuilder/addLast(java.lang.String,org.apache.mina.common.IoFilter)|",
+      "|java+constructor:///org/apache/mina/filter/LoggingFilter/LoggingFilter()|",
+      "|java+method:///org/apache/mina/transport/socket/nio/SocketAcceptorConfig/getFilterChain()|",
+      "|java+constructor:///java/net/InetSocketAddress/InetSocketAddress(int)|",
+      "|java+method:///java/nio/charset/Charset/forName(java.lang.String)|",
+      "|java+method:///org/apache/mina/transport/socket/nio/SocketAcceptorConfig/setReuseAddress(boolean)|",
+      "|java+method:///java/io/PrintStream/println(java.lang.String)|",
+      "|java+constructor:///org/apache/mina/transport/socket/nio/SocketAcceptor/SocketAcceptor()|",
+      "|java+constructor:///org/apache/mina/transport/socket/nio/SocketAcceptorConfig/SocketAcceptorConfig()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/mina/example/reverser/ReverseProtocolHandler/ReverseProtocolHandler()|",
+      "|java+constructor:///org/apache/mina/filter/logging/LoggingFilter/LoggingFilter()|",
+      "|java+constructor:///org/apache/mina/filter/codec/textline/TextLineCodecFactory/TextLineCodecFactory(java.nio.charset.Charset)|",
+      "|java+method:///java/io/PrintStream/println(java.lang.String)|",
+      "|java+constructor:///org/apache/mina/filter/codec/ProtocolCodecFilter/ProtocolCodecFilter(org.apache.mina.filter.codec.ProtocolCodecFactory)|",
+      "|java+constructor:///org/apache/mina/transport/socket/nio/NioSocketAcceptor/NioSocketAcceptor()|",
+      "|java+method:///org/apache/mina/common/DefaultIoFilterChainBuilder/addLast(java.lang.String,org.apache.mina.common.IoFilter)|",
+      "|java+method:///org/apache/mina/transport/socket/nio/NioSocketAcceptor/getFilterChain()|",
+      "|java+constructor:///java/net/InetSocketAddress/InetSocketAddress(int)|",
+      "|java+method:///org/apache/mina/transport/socket/nio/NioSocketAcceptor/bind(java.net.SocketAddress)|",
+      "|java+method:///java/nio/charset/Charset/forName(java.lang.String)|",
+      "|java+method:///org/apache/mina/transport/socket/nio/NioSocketAcceptor/setHandler(org.apache.mina.common.IoHandler)|"
+    ],
+    "affectedLib": "org.apache.mina:mina-core:2.0.0-M1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.mina:mina-example:1.1.7",
+    "coordinatesV2": "org.apache.mina:mina-example:2.0.0-M1",
+    "caller": "|java+method:///org/apache/mina/example/chat/Main/main(java.lang.String%5B%5D)|",
+    "called": "|java+constructor:///org/apache/mina/filter/codec/ProtocolCodecFilter/ProtocolCodecFilter(org.apache.mina.filter.codec.ProtocolCodecFactory)|",
+    "v1Body": [
+      "|java+method:///org/apache/mina/example/chat/Main/addLogger(org.apache.mina.common.DefaultIoFilterChainBuilder)|",
+      "|java+method:///java/io/PrintStream/println(java.lang.String)|",
+      "|java+constructor:///org/apache/mina/filter/codec/ProtocolCodecFilter/ProtocolCodecFilter(org.apache.mina.filter.codec.ProtocolCodecFactory)|",
+      "|java+method:///org/apache/mina/common/IoAcceptorConfig/getFilterChain()|",
+      "|java+method:///org/apache/mina/common/DefaultIoFilterChainBuilder/addLast(java.lang.String,org.apache.mina.common.IoFilter)|",
+      "|java+constructor:///java/net/InetSocketAddress/InetSocketAddress(int)|",
+      "|java+constructor:///org/apache/mina/example/chat/ChatProtocolHandler/ChatProtocolHandler()|",
+      "|java+constructor:///org/apache/mina/transport/socket/nio/SocketAcceptor/SocketAcceptor()|",
+      "|java+constructor:///org/apache/mina/transport/socket/nio/SocketAcceptorConfig/SocketAcceptorConfig()|",
+      "|java+constructor:///org/apache/mina/filter/codec/textline/TextLineCodecFactory/TextLineCodecFactory()|",
+      "|java+method:///org/apache/mina/common/IoAcceptor/bind(java.net.SocketAddress,org.apache.mina.common.IoHandler,org.apache.mina.common.IoServiceConfig)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/mina/example/chat/Main/addLogger(org.apache.mina.common.DefaultIoFilterChainBuilder)|",
+      "|java+method:///java/io/PrintStream/println(java.lang.String)|",
+      "|java+constructor:///org/apache/mina/filter/codec/textline/TextLineCodecFactory/TextLineCodecFactory()|",
+      "|java+constructor:///org/apache/mina/filter/codec/ProtocolCodecFilter/ProtocolCodecFilter(org.apache.mina.filter.codec.ProtocolCodecFactory)|",
+      "|java+constructor:///org/apache/mina/transport/socket/nio/NioSocketAcceptor/NioSocketAcceptor()|",
+      "|java+method:///org/apache/mina/common/DefaultIoFilterChainBuilder/addLast(java.lang.String,org.apache.mina.common.IoFilter)|",
+      "|java+constructor:///java/net/InetSocketAddress/InetSocketAddress(int)|",
+      "|java+method:///org/apache/mina/transport/socket/nio/NioSocketAcceptor/bind(java.net.SocketAddress)|",
+      "|java+constructor:///org/apache/mina/filter/logging/MdcInjectionFilter/MdcInjectionFilter()|",
+      "|java+method:///org/apache/mina/transport/socket/nio/NioSocketAcceptor/getFilterChain()|",
+      "|java+method:///org/apache/mina/transport/socket/nio/NioSocketAcceptor/setHandler(org.apache.mina.common.IoHandler)|",
+      "|java+constructor:///org/apache/mina/example/chat/ChatProtocolHandler/ChatProtocolHandler()|"
+    ],
+    "affectedLib": "org.apache.mina:mina-core:2.0.0-M1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.mina:mina-example:1.1.7",
+    "coordinatesV2": "org.apache.mina:mina-example:2.0.0-M1",
+    "caller": "|java+method:///org/apache/mina/example/echoserver/Main/addSSLSupport(org.apache.mina.common.DefaultIoFilterChainBuilder)|",
+    "called": "|java+constructor:///org/apache/mina/filter/ssl/SslFilter/SslFilter(javax.net.ssl.SSLContext)|",
+    "v1Body": [
+      "|java+method:///java/io/PrintStream/println(java.lang.String)|",
+      "|java+method:///org/apache/mina/common/DefaultIoFilterChainBuilder/addLast(java.lang.String,org.apache.mina.common.IoFilter)|",
+      "|java+method:///org/apache/mina/example/echoserver/ssl/BogusSSLContextFactory/getInstance(boolean)|",
+      "|java+constructor:///org/apache/mina/filter/SSLFilter/SSLFilter(javax.net.ssl.SSLContext)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/io/PrintStream/println(java.lang.String)|",
+      "|java+method:///org/apache/mina/common/DefaultIoFilterChainBuilder/addLast(java.lang.String,org.apache.mina.common.IoFilter)|",
+      "|java+method:///org/apache/mina/example/echoserver/ssl/BogusSslContextFactory/getInstance(boolean)|",
+      "|java+constructor:///org/apache/mina/filter/ssl/SslFilter/SslFilter(javax.net.ssl.SSLContext)|"
+    ],
+    "affectedLib": "org.apache.mina:mina-core:2.0.0-M1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.mina:mina-example:1.1.7",
+    "coordinatesV2": "org.apache.mina:mina-example:2.0.0-M1",
+    "caller": "|java+constructor:///org/apache/mina/example/echoserver/EchoProtocolHandler/EchoProtocolHandler()|",
+    "called": "|java+constructor:///org/apache/mina/common/IoHandlerAdapter/IoHandlerAdapter()|",
+    "v1Body": [
+      "|java+constructor:///org/apache/mina/common/IoHandlerAdapter/IoHandlerAdapter()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+constructor:///org/apache/mina/common/IoHandlerAdapter/IoHandlerAdapter()|",
+      "|java+method:///java/lang/Object/getClass()|"
+    ],
+    "affectedLib": "org.apache.mina:mina-core:2.0.0-M1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.mina:mina-example:1.1.7",
+    "coordinatesV2": "org.apache.mina:mina-example:2.0.0-M1",
+    "caller": "|java+constructor:///org/apache/mina/example/chat/client/SwingChatClient/SwingChatClient()|",
+    "called": "|java+constructor:///org/apache/mina/transport/socket/nio/NioSocketConnector/NioSocketConnector()|",
+    "v1Body": [
+      "|java+constructor:///javax/swing/JButton/JButton(javax.swing.Action)|",
+      "|java+method:///javax/swing/JButton/setText(java.lang.String)|",
+      "|java+constructor:///javax/swing/BoxLayout/BoxLayout(java.awt.Container,int)|",
+      "|java+method:///javax/swing/JTextField/setAction(javax.swing.Action)|",
+      "|java+method:///javax/swing/JPanel/setLayout(java.awt.LayoutManager)|",
+      "|java+method:///javax/swing/JTextArea/setLineWrap(boolean)|",
+      "|java+constructor:///org/apache/mina/transport/socket/nio/SocketConnector/SocketConnector()|",
+      "|java+method:///javax/swing/JTextField/setEditable(boolean)|",
+      "|java+method:///javax/swing/Box/createRigidArea(java.awt.Dimension)|",
+      "|java+method:///javax/swing/JButton/addActionListener(java.awt.event.ActionListener)|",
+      "|java+constructor:///java/awt/Dimension/Dimension(int,int)|",
+      "|java+method:///javax/swing/JPanel/setBorder(javax.swing.border.Border)|",
+      "|java+constructor:///javax/swing/JLabel/JLabel(java.lang.String)|",
+      "|java+constructor:///javax/swing/JFrame/JFrame(java.lang.String)|",
+      "|java+constructor:///org/apache/mina/example/chat/client/SwingChatClient$BroadcastAction/SwingChatClient$BroadcastAction(org.apache.mina.example.chat.client.SwingChatClient,org.apache.mina.example.chat.client.SwingChatClient$1)|",
+      "|java+method:///org/apache/mina/example/chat/client/SwingChatClient/setDefaultCloseOperation(int)|",
+      "|java+constructor:///javax/swing/JPanel/JPanel()|",
+      "|java+constructor:///javax/swing/JScrollBar/JScrollBar()|",
+      "|java+method:///org/apache/mina/example/chat/client/SwingChatClient/setLoggedOut()|",
+      "|java+method:///java/awt/Container/add(java.awt.Component)|",
+      "|java+constructor:///org/apache/mina/example/chat/client/SwingChatClient$QuitAction/SwingChatClient$QuitAction(org.apache.mina.example.chat.client.SwingChatClient,org.apache.mina.example.chat.client.SwingChatClient$1)|",
+      "|java+method:///javax/swing/JPanel/add(java.awt.Component)|",
+      "|java+constructor:///org/apache/mina/example/chat/client/SwingChatClient$LogoutAction/SwingChatClient$LogoutAction(org.apache.mina.example.chat.client.SwingChatClient,org.apache.mina.example.chat.client.SwingChatClient$1)|",
+      "|java+method:///org/apache/mina/example/chat/client/SwingChatClient/getContentPane()|",
+      "|java+method:///javax/swing/BorderFactory/createEmptyBorder(int,int,int,int)|",
+      "|java+constructor:///javax/swing/JTextArea/JTextArea(int,int)|",
+      "|java+method:///javax/swing/JScrollBar/add(java.awt.Component)|",
+      "|java+constructor:///javax/swing/border/EmptyBorder/EmptyBorder(int,int,int,int)|",
+      "|java+method:///javax/swing/JTextArea/setEditable(boolean)|",
+      "|java+constructor:///org/apache/mina/example/chat/client/SwingChatClient$1/SwingChatClient$1(org.apache.mina.example.chat.client.SwingChatClient)|",
+      "|java+method:///java/awt/Container/add(java.awt.Component,java.lang.Object)|",
+      "|java+method:///javax/swing/Box/createHorizontalGlue()|",
+      "|java+constructor:///org/apache/mina/example/chat/client/SwingChatClient$LoginAction/SwingChatClient$LoginAction(org.apache.mina.example.chat.client.SwingChatClient)|",
+      "|java+constructor:///javax/swing/JTextField/JTextField(int)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///javax/swing/JButton/JButton(javax.swing.Action)|",
+      "|java+constructor:///javax/swing/BoxLayout/BoxLayout(java.awt.Container,int)|",
+      "|java+method:///javax/swing/JTextField/setAction(javax.swing.Action)|",
+      "|java+method:///javax/swing/JPanel/setLayout(java.awt.LayoutManager)|",
+      "|java+method:///javax/swing/JTextArea/setLineWrap(boolean)|",
+      "|java+method:///javax/swing/JTextField/setEditable(boolean)|",
+      "|java+method:///javax/swing/Box/createRigidArea(java.awt.Dimension)|",
+      "|java+method:///javax/swing/JButton/addActionListener(java.awt.event.ActionListener)|",
+      "|java+constructor:///java/awt/Dimension/Dimension(int,int)|",
+      "|java+method:///javax/swing/JPanel/setBorder(javax.swing.border.Border)|",
+      "|java+constructor:///javax/swing/JLabel/JLabel(java.lang.String)|",
+      "|java+constructor:///javax/swing/JFrame/JFrame(java.lang.String)|",
+      "|java+constructor:///org/apache/mina/example/chat/client/SwingChatClient$BroadcastAction/SwingChatClient$BroadcastAction(org.apache.mina.example.chat.client.SwingChatClient,org.apache.mina.example.chat.client.SwingChatClient$1)|",
+      "|java+method:///org/apache/mina/example/chat/client/SwingChatClient/setDefaultCloseOperation(int)|",
+      "|java+constructor:///javax/swing/JPanel/JPanel()|",
+      "|java+constructor:///javax/swing/JScrollBar/JScrollBar()|",
+      "|java+constructor:///org/apache/mina/transport/socket/nio/NioSocketConnector/NioSocketConnector()|",
+      "|java+method:///javax/swing/JButton/setText(java.lang.String)|",
+      "|java+method:///org/apache/mina/example/chat/client/SwingChatClient/setLoggedOut()|",
+      "|java+method:///java/awt/Container/add(java.awt.Component)|",
+      "|java+constructor:///org/apache/mina/example/chat/client/SwingChatClient$QuitAction/SwingChatClient$QuitAction(org.apache.mina.example.chat.client.SwingChatClient,org.apache.mina.example.chat.client.SwingChatClient$1)|",
+      "|java+method:///javax/swing/JPanel/add(java.awt.Component)|",
+      "|java+constructor:///org/apache/mina/example/chat/client/SwingChatClient$LogoutAction/SwingChatClient$LogoutAction(org.apache.mina.example.chat.client.SwingChatClient,org.apache.mina.example.chat.client.SwingChatClient$1)|",
+      "|java+method:///org/apache/mina/example/chat/client/SwingChatClient/getContentPane()|",
+      "|java+method:///javax/swing/BorderFactory/createEmptyBorder(int,int,int,int)|",
+      "|java+constructor:///javax/swing/JTextArea/JTextArea(int,int)|",
+      "|java+method:///javax/swing/JScrollBar/add(java.awt.Component)|",
+      "|java+constructor:///javax/swing/border/EmptyBorder/EmptyBorder(int,int,int,int)|",
+      "|java+method:///javax/swing/JTextArea/setEditable(boolean)|",
+      "|java+constructor:///org/apache/mina/example/chat/client/SwingChatClient$1/SwingChatClient$1(org.apache.mina.example.chat.client.SwingChatClient)|",
+      "|java+method:///java/awt/Container/add(java.awt.Component,java.lang.Object)|",
+      "|java+method:///javax/swing/Box/createHorizontalGlue()|",
+      "|java+constructor:///org/apache/mina/example/chat/client/SwingChatClient$LoginAction/SwingChatClient$LoginAction(org.apache.mina.example.chat.client.SwingChatClient)|",
+      "|java+constructor:///javax/swing/JTextField/JTextField(int)|"
+    ],
+    "affectedLib": "org.apache.mina:mina-core:2.0.0-M1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.mina:mina-example:1.1.7",
+    "coordinatesV2": "org.apache.mina:mina-example:2.0.0-M1",
+    "caller": "|java+initializer:///org/apache/mina/example/chat/client/SwingChatClientHandler/SwingChatClientHandler$initializer|",
+    "called": "|java+constructor:///org/apache/mina/filter/codec/ProtocolCodecFilter/ProtocolCodecFilter(org.apache.mina.filter.codec.ProtocolCodecFactory)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/mina/filter/codec/textline/TextLineCodecFactory/TextLineCodecFactory()|",
+      "|java+constructor:///org/apache/mina/filter/codec/ProtocolCodecFilter/ProtocolCodecFilter(org.apache.mina.filter.codec.ProtocolCodecFactory)|",
+      "|java+constructor:///org/apache/mina/filter/LoggingFilter/LoggingFilter()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/mina/filter/logging/LoggingFilter/LoggingFilter()|",
+      "|java+constructor:///org/apache/mina/filter/codec/textline/TextLineCodecFactory/TextLineCodecFactory()|",
+      "|java+constructor:///org/apache/mina/filter/codec/ProtocolCodecFilter/ProtocolCodecFilter(org.apache.mina.filter.codec.ProtocolCodecFactory)|"
+    ],
+    "affectedLib": "org.apache.mina:mina-core:2.0.0-M1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.mina:mina-example:1.1.7",
+    "coordinatesV2": "org.apache.mina:mina-example:2.0.0-M1",
+    "caller": "|java+constructor:///org/apache/mina/example/sumup/ServerSessionHandler/ServerSessionHandler()|",
+    "called": "|java+constructor:///org/apache/mina/common/IoHandlerAdapter/IoHandlerAdapter()|",
+    "v1Body": [
+      "|java+constructor:///org/apache/mina/common/IoHandlerAdapter/IoHandlerAdapter()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+constructor:///org/apache/mina/common/IoHandlerAdapter/IoHandlerAdapter()|",
+      "|java+method:///java/lang/Object/getClass()|"
+    ],
+    "affectedLib": "org.apache.mina:mina-core:2.0.0-M1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.mina:mina-example:1.1.7",
+    "coordinatesV2": "org.apache.mina:mina-example:2.0.0-M1",
+    "caller": "|java+constructor:///org/apache/mina/example/proxy/AbstractProxyIoHandler/AbstractProxyIoHandler()|",
+    "called": "|java+constructor:///org/apache/mina/common/IoHandlerAdapter/IoHandlerAdapter()|",
+    "v1Body": [
+      "|java+constructor:///org/apache/mina/common/IoHandlerAdapter/IoHandlerAdapter()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+constructor:///org/apache/mina/common/IoHandlerAdapter/IoHandlerAdapter()|",
+      "|java+method:///java/lang/Object/getClass()|"
+    ],
+    "affectedLib": "org.apache.mina:mina-core:2.0.0-M1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.mina:mina-example:1.1.7",
+    "coordinatesV2": "org.apache.mina:mina-example:2.0.0-M1",
+    "caller": "|java+constructor:///org/apache/mina/example/chat/ChatProtocolHandler/ChatProtocolHandler()|",
+    "called": "|java+constructor:///org/apache/mina/common/IoHandlerAdapter/IoHandlerAdapter()|",
+    "v1Body": [
+      "|java+method:///java/util/Collections/synchronizedSet(java.util.Set)|",
+      "|java+constructor:///org/apache/mina/common/IoHandlerAdapter/IoHandlerAdapter()|",
+      "|java+constructor:///java/util/HashSet/HashSet()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///java/util/Collections/synchronizedSet(java.util.Set)|",
+      "|java+constructor:///org/apache/mina/common/IoHandlerAdapter/IoHandlerAdapter()|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+constructor:///java/util/HashSet/HashSet()|"
+    ],
+    "affectedLib": "org.apache.mina:mina-core:2.0.0-M1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.mina:mina-example:1.1.7",
+    "coordinatesV2": "org.apache.mina:mina-example:2.0.0-M1",
+    "caller": "|java+method:///org/apache/mina/example/chat/ChatProtocolHandler/messageReceived(org.apache.mina.common.IoSession,java.lang.Object)|",
+    "called": "|java+method:///org/apache/mina/filter/logging/MdcInjectionFilter/setProperty(org.apache.mina.common.IoSession,java.lang.String,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/lang/String/split(java.lang.String,int)|",
+      "|java+method:///org/apache/mina/util/SessionLog/info(org.apache.mina.common.IoSession,java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/mina/example/chat/ChatCommand/toInt()|",
+      "|java+method:///java/lang/IllegalArgumentException/getMessage()|",
+      "|java+method:///org/apache/mina/common/IoSession/write(java.lang.Object)|",
+      "|java+method:///java/util/Set/contains(java.lang.Object)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/apache/mina/common/IoSession/getAttribute(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/apache/mina/example/chat/ChatProtocolHandler/broadcast(java.lang.String)|",
+      "|java+method:///org/apache/mina/example/chat/ChatCommand/valueOf(java.lang.String)|",
+      "|java+method:///org/apache/mina/common/IoSession/close()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///org/apache/mina/util/SessionLog/debug(org.apache.mina.common.IoSession,java.lang.String)|",
+      "|java+method:///java/util/Set/add(java.lang.Object)|",
+      "|java+method:///org/apache/mina/common/IoSession/setAttribute(java.lang.String,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/lang/String/split(java.lang.String,int)|",
+      "|java+method:///org/apache/mina/example/chat/ChatCommand/toInt()|",
+      "|java+method:///org/apache/mina/common/IoSession/setAttribute(java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///org/apache/mina/filter/logging/MdcInjectionFilter/setProperty(org.apache.mina.common.IoSession,java.lang.String,java.lang.String)|",
+      "|java+method:///java/util/Set/contains(java.lang.Object)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/util/Set/add(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/apache/mina/common/IoSession/getAttribute(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/mina/common/IoSession/write(java.lang.Object)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String)|",
+      "|java+method:///org/apache/mina/example/chat/ChatProtocolHandler/broadcast(java.lang.String)|",
+      "|java+method:///org/apache/mina/example/chat/ChatCommand/valueOf(java.lang.String)|",
+      "|java+method:///org/apache/mina/common/IoSession/close()|"
+    ],
+    "affectedLib": "org.apache.mina:mina-core:2.0.0-M1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.mina:mina-example:1.1.7",
+    "coordinatesV2": "org.apache.mina:mina-example:2.0.0-M1",
+    "caller": "|java+method:///org/apache/mina/example/sumup/Client/main(java.lang.String%5B%5D)|",
+    "called": "|java+constructor:///org/apache/mina/filter/codec/ProtocolCodecFilter/ProtocolCodecFilter(org.apache.mina.filter.codec.ProtocolCodecFactory)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/mina/transport/socket/nio/SocketConnectorConfig/SocketConnectorConfig()|",
+      "|java+method:///java/lang/Thread/sleep(long)|",
+      "|java+method:///java/io/PrintStream/println(java.lang.String)|",
+      "|java+constructor:///org/apache/mina/filter/codec/ProtocolCodecFilter/ProtocolCodecFilter(org.apache.mina.filter.codec.ProtocolCodecFactory)|",
+      "|java+method:///org/apache/mina/common/DefaultIoFilterChainBuilder/addLast(java.lang.String,org.apache.mina.common.IoFilter)|",
+      "|java+constructor:///org/apache/mina/filter/LoggingFilter/LoggingFilter()|",
+      "|java+method:///org/apache/mina/common/CloseFuture/join()|",
+      "|java+method:///java/lang/Integer/parseInt(java.lang.String)|",
+      "|java+method:///org/apache/mina/transport/socket/nio/SocketConnector/connect(java.net.SocketAddress,org.apache.mina.common.IoHandler,org.apache.mina.common.IoServiceConfig)|",
+      "|java+method:///org/apache/mina/common/ConnectFuture/getSession()|",
+      "|java+method:///org/apache/mina/common/IoSession/getCloseFuture()|",
+      "|java+constructor:///org/apache/mina/transport/socket/nio/SocketConnector/SocketConnector()|",
+      "|java+method:///org/apache/mina/common/RuntimeIOException/printStackTrace()|",
+      "|java+method:///org/apache/mina/common/ConnectFuture/join()|",
+      "|java+constructor:///org/apache/mina/example/sumup/codec/SumUpProtocolCodecFactory/SumUpProtocolCodecFactory(boolean)|",
+      "|java+constructor:///java/net/InetSocketAddress/InetSocketAddress(java.lang.String,int)|",
+      "|java+constructor:///org/apache/mina/example/sumup/ClientSessionHandler/ClientSessionHandler(int%5B%5D)|",
+      "|java+method:///org/apache/mina/transport/socket/nio/SocketConnectorConfig/getFilterChain()|",
+      "|java+method:///org/apache/mina/transport/socket/nio/SocketConnector/setWorkerTimeout(int)|",
+      "|java+method:///org/apache/mina/transport/socket/nio/SocketConnectorConfig/setConnectTimeout(int)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/mina/transport/socket/nio/NioSocketConnector/connect(java.net.SocketAddress)|",
+      "|java+method:///org/apache/mina/common/RuntimeIoException/printStackTrace()|",
+      "|java+constructor:///org/apache/mina/filter/logging/LoggingFilter/LoggingFilter()|",
+      "|java+method:///java/io/PrintStream/println(java.lang.String)|",
+      "|java+constructor:///org/apache/mina/filter/codec/ProtocolCodecFilter/ProtocolCodecFilter(org.apache.mina.filter.codec.ProtocolCodecFactory)|",
+      "|java+method:///org/apache/mina/transport/socket/nio/NioSocketConnector/getFilterChain()|",
+      "|java+method:///org/apache/mina/common/DefaultIoFilterChainBuilder/addLast(java.lang.String,org.apache.mina.common.IoFilter)|",
+      "|java+method:///org/apache/mina/common/ConnectFuture/awaitUninterruptibly()|",
+      "|java+method:///java/lang/Integer/parseInt(java.lang.String)|",
+      "|java+method:///org/apache/mina/common/ConnectFuture/getSession()|",
+      "|java+method:///org/apache/mina/transport/socket/nio/NioSocketConnector/dispose()|",
+      "|java+method:///java/lang/Thread/sleep(long)|",
+      "|java+method:///org/apache/mina/transport/socket/nio/NioSocketConnector/setConnectTimeout(int)|",
+      "|java+method:///org/apache/mina/common/CloseFuture/awaitUninterruptibly()|",
+      "|java+constructor:///org/apache/mina/example/sumup/codec/SumUpProtocolCodecFactory/SumUpProtocolCodecFactory(boolean)|",
+      "|java+constructor:///java/net/InetSocketAddress/InetSocketAddress(java.lang.String,int)|",
+      "|java+constructor:///org/apache/mina/transport/socket/nio/NioSocketConnector/NioSocketConnector()|",
+      "|java+constructor:///org/apache/mina/example/sumup/ClientSessionHandler/ClientSessionHandler(int%5B%5D)|",
+      "|java+method:///org/apache/mina/common/IoSession/getCloseFuture()|",
+      "|java+method:///org/apache/mina/transport/socket/nio/NioSocketConnector/setHandler(org.apache.mina.common.IoHandler)|"
+    ],
+    "affectedLib": "org.apache.mina:mina-core:2.0.0-M1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.mina:mina-example:1.1.7",
+    "coordinatesV2": "org.apache.mina:mina-example:2.0.0-M1",
+    "caller": "|java+constructor:///org/apache/mina/example/sumup/ClientSessionHandler/ClientSessionHandler(int%5B%5D)|",
+    "called": "|java+constructor:///org/apache/mina/common/IoHandlerAdapter/IoHandlerAdapter()|",
+    "v1Body": [
+      "|java+constructor:///org/apache/mina/common/IoHandlerAdapter/IoHandlerAdapter()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+constructor:///org/apache/mina/common/IoHandlerAdapter/IoHandlerAdapter()|",
+      "|java+method:///java/lang/Object/getClass()|"
+    ],
+    "affectedLib": "org.apache.mina:mina-core:2.0.0-M1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.mina:mina-example:1.1.7",
+    "coordinatesV2": "org.apache.mina:mina-example:2.0.0-M1",
+    "caller": "|java+constructor:///org/apache/mina/example/echoserver/EchoProtocolHandler/EchoProtocolHandler()|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/mina/common/IoHandlerAdapter/IoHandlerAdapter()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+constructor:///org/apache/mina/common/IoHandlerAdapter/IoHandlerAdapter()|",
+      "|java+method:///java/lang/Object/getClass()|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.5.0-M0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.mina:mina-example:1.1.7",
+    "coordinatesV2": "org.apache.mina:mina-example:2.0.0-M1",
+    "caller": "|java+constructor:///org/apache/mina/example/sumup/ServerSessionHandler/ServerSessionHandler()|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/mina/common/IoHandlerAdapter/IoHandlerAdapter()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+constructor:///org/apache/mina/common/IoHandlerAdapter/IoHandlerAdapter()|",
+      "|java+method:///java/lang/Object/getClass()|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.5.0-M0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.mina:mina-example:1.1.7",
+    "coordinatesV2": "org.apache.mina:mina-example:2.0.0-M1",
+    "caller": "|java+constructor:///org/apache/mina/example/proxy/AbstractProxyIoHandler/AbstractProxyIoHandler()|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/mina/common/IoHandlerAdapter/IoHandlerAdapter()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+constructor:///org/apache/mina/common/IoHandlerAdapter/IoHandlerAdapter()|",
+      "|java+method:///java/lang/Object/getClass()|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.5.0-M0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.mina:mina-example:1.1.7",
+    "coordinatesV2": "org.apache.mina:mina-example:2.0.0-M1",
+    "caller": "|java+constructor:///org/apache/mina/example/chat/ChatProtocolHandler/ChatProtocolHandler()|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///java/util/Collections/synchronizedSet(java.util.Set)|",
+      "|java+constructor:///org/apache/mina/common/IoHandlerAdapter/IoHandlerAdapter()|",
+      "|java+constructor:///java/util/HashSet/HashSet()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///java/util/Collections/synchronizedSet(java.util.Set)|",
+      "|java+constructor:///org/apache/mina/common/IoHandlerAdapter/IoHandlerAdapter()|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+constructor:///java/util/HashSet/HashSet()|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.5.0-M0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.mina:mina-example:1.1.7",
+    "coordinatesV2": "org.apache.mina:mina-example:2.0.0-M1",
+    "caller": "|java+method:///org/apache/mina/example/chat/ChatProtocolHandler/messageReceived(org.apache.mina.common.IoSession,java.lang.Object)|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///java/lang/String/split(java.lang.String,int)|",
+      "|java+method:///org/apache/mina/util/SessionLog/info(org.apache.mina.common.IoSession,java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/mina/example/chat/ChatCommand/toInt()|",
+      "|java+method:///java/lang/IllegalArgumentException/getMessage()|",
+      "|java+method:///org/apache/mina/common/IoSession/write(java.lang.Object)|",
+      "|java+method:///java/util/Set/contains(java.lang.Object)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/apache/mina/common/IoSession/getAttribute(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/apache/mina/example/chat/ChatProtocolHandler/broadcast(java.lang.String)|",
+      "|java+method:///org/apache/mina/example/chat/ChatCommand/valueOf(java.lang.String)|",
+      "|java+method:///org/apache/mina/common/IoSession/close()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///org/apache/mina/util/SessionLog/debug(org.apache.mina.common.IoSession,java.lang.String)|",
+      "|java+method:///java/util/Set/add(java.lang.Object)|",
+      "|java+method:///org/apache/mina/common/IoSession/setAttribute(java.lang.String,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/lang/String/split(java.lang.String,int)|",
+      "|java+method:///org/apache/mina/example/chat/ChatCommand/toInt()|",
+      "|java+method:///org/apache/mina/common/IoSession/setAttribute(java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///org/apache/mina/filter/logging/MdcInjectionFilter/setProperty(org.apache.mina.common.IoSession,java.lang.String,java.lang.String)|",
+      "|java+method:///java/util/Set/contains(java.lang.Object)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/util/Set/add(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/apache/mina/common/IoSession/getAttribute(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/mina/common/IoSession/write(java.lang.Object)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String)|",
+      "|java+method:///org/apache/mina/example/chat/ChatProtocolHandler/broadcast(java.lang.String)|",
+      "|java+method:///org/apache/mina/example/chat/ChatCommand/valueOf(java.lang.String)|",
+      "|java+method:///org/apache/mina/common/IoSession/close()|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.5.0-M0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.mina:mina-example:1.1.7",
+    "coordinatesV2": "org.apache.mina:mina-example:2.0.0-M1",
+    "caller": "|java+constructor:///org/apache/mina/example/sumup/ClientSessionHandler/ClientSessionHandler(int%5B%5D)|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/mina/common/IoHandlerAdapter/IoHandlerAdapter()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+constructor:///org/apache/mina/common/IoHandlerAdapter/IoHandlerAdapter()|",
+      "|java+method:///java/lang/Object/getClass()|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.5.0-M0",
+    "change": "ADDED"
+  }
+]

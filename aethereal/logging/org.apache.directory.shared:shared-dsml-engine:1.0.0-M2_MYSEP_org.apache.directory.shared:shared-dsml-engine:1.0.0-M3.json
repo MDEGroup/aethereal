@@ -1,0 +1,120 @@
+[
+  {
+    "coordinatesV1": "org.apache.directory.shared:shared-dsml-engine:1.0.0-M3",
+    "coordinatesV2": "org.apache.directory.shared:shared-dsml-engine:1.0.0-M2",
+    "caller": "|java+method:///org/apache/directory/shared/dsmlv2/engine/Dsmlv2Engine/processDSML()|",
+    "called": "|java+method:///org/apache/directory/shared/dsmlv2/engine/Dsmlv2Engine/bind(int)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/directory/shared/dsmlv2/reponse/ErrorResponse/ErrorResponse(int,org.apache.directory.shared.dsmlv2.reponse.ErrorResponse$ErrorResponseType,java.lang.String)|",
+      "|java+method:///org/apache/directory/shared/dsmlv2/reponse/BatchResponseDsml/addResponse(org.apache.directory.shared.dsmlv2.DsmlDecorator)|",
+      "|java+constructor:///org/apache/directory/shared/dsmlv2/reponse/BatchResponseDsml/BatchResponseDsml()|",
+      "|java+method:///org/apache/directory/shared/dsmlv2/DsmlDecorator/getDecorated()|",
+      "|java+method:///org/apache/directory/shared/dsmlv2/Dsmlv2Parser/getNextRequest()|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///org/xmlpull/v1/XmlPullParserException/getLocalizedMessage()|",
+      "|java+method:///org/apache/directory/shared/i18n/I18n/err(org.apache.directory.shared.i18n.I18n,java.lang.Object%5B%5D)|",
+      "|java+method:///org/apache/directory/shared/dsmlv2/engine/Dsmlv2Engine/processRequest(org.apache.directory.shared.dsmlv2.DsmlDecorator)|",
+      "|java+method:///java/lang/Exception/getLocalizedMessage()|",
+      "|java+method:///org/apache/directory/shared/dsmlv2/request/BatchRequestDsml/getResponseOrder()|",
+      "|java+method:///org/xmlpull/v1/XmlPullParserException/getLineNumber()|",
+      "|java+method:///org/xmlpull/v1/XmlPullParserException/getColumnNumber()|",
+      "|java+method:///org/apache/directory/shared/dsmlv2/request/BatchRequestDsml/getProcessing()|",
+      "|java+method:///org/apache/directory/shared/ldap/model/message/Request/getMessageId()|",
+      "|java+method:///org/apache/directory/shared/dsmlv2/engine/Dsmlv2Engine/processBatchRequest()|",
+      "|java+method:///org/apache/directory/shared/dsmlv2/engine/Dsmlv2Engine/bind(int)|",
+      "|java+method:///org/apache/directory/shared/dsmlv2/request/BatchRequestDsml$ResponseOrder/equals(java.lang.Object)|",
+      "|java+method:///org/apache/directory/shared/dsmlv2/request/BatchRequestDsml$Processing/equals(java.lang.Object)|",
+      "|java+method:///java/lang/Exception/getMessage()|",
+      "|java+method:///org/apache/directory/shared/dsmlv2/reponse/BatchResponseDsml/toDsml()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/lang/String/String(byte%5B%5D,java.lang.String)|",
+      "|java+method:///org/apache/directory/shared/dsmlv2/engine/Dsmlv2Engine/processDSML(java.io.OutputStream)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/io/ByteArrayOutputStream/toByteArray()|",
+      "|java+constructor:///java/io/ByteArrayOutputStream/ByteArrayOutputStream()|"
+    ],
+    "affectedLib": "org.apache.directory.shared:shared-dsml-engine:1.0.0-M1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.apache.directory.shared:shared-dsml-engine:1.0.0-M2",
+    "coordinatesV2": "org.apache.directory.shared:shared-dsml-engine:1.0.0-M3",
+    "caller": "|java+method:///org/apache/directory/shared/dsmlv2/engine/Dsmlv2Engine/bind(int)|",
+    "called": "|java+constructor:///org/apache/directory/shared/ldap/model/name/Dn/Dn(java.lang.String%5B%5D)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/directory/shared/ldap/model/name/Dn/Dn(java.lang.String%5B%5D)|",
+      "|java+method:///org/apache/directory/shared/util/Strings/getBytesUtf8(java.lang.String)|",
+      "|java+method:///org/apache/directory/ldap/client/api/LdapConnection/bind(org.apache.directory.shared.ldap.model.message.BindRequest)|",
+      "|java+method:///org/apache/directory/shared/ldap/model/message/BindResponse/getLdapResult()|",
+      "|java+method:///org/apache/directory/shared/ldap/model/message/LdapResult/getErrorMessage()|",
+      "|java+method:///org/apache/directory/shared/ldap/model/message/BindRequest/setCredentials(byte%5B%5D)|",
+      "|java+method:///org/apache/directory/shared/ldap/model/message/BindRequest/setSimple(boolean)|",
+      "|java+constructor:///org/apache/directory/shared/ldap/model/message/BindRequestImpl/BindRequestImpl()|",
+      "|java+method:///org/apache/directory/shared/ldap/model/message/BindRequest/setName(org.apache.directory.shared.ldap.model.name.Dn)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/apache/directory/shared/ldap/model/message/LdapResult/getResultCode()|",
+      "|java+method:///org/apache/directory/shared/ldap/model/message/BindRequest/setMessageId(int)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/directory/shared/ldap/model/message/BindRequest/setVersion3(boolean)|",
+      "|java+method:///java/io/PrintStream/println(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/directory/ldap/client/api/LdapConnection/isAuthenticated()|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Object)|",
+      "|java+constructor:///org/apache/directory/shared/ldap/model/name/Dn/Dn(java.lang.String%5B%5D)|",
+      "|java+method:///org/apache/directory/shared/util/Strings/getBytesUtf8(java.lang.String)|",
+      "|java+method:///org/apache/directory/ldap/client/api/LdapConnection/bind(org.apache.directory.shared.ldap.model.message.BindRequest)|",
+      "|java+method:///org/apache/directory/shared/ldap/model/message/BindRequest/setVersion3(boolean)|",
+      "|java+method:///org/apache/directory/shared/ldap/model/message/BindResponse/getLdapResult()|",
+      "|java+method:///org/apache/directory/shared/ldap/model/message/LdapResult/getErrorMessage()|",
+      "|java+method:///org/apache/directory/shared/ldap/model/message/BindRequest/setCredentials(byte%5B%5D)|",
+      "|java+method:///org/apache/directory/shared/ldap/model/message/BindRequest/setSimple(boolean)|",
+      "|java+constructor:///org/apache/directory/shared/ldap/model/message/BindRequestImpl/BindRequestImpl()|",
+      "|java+method:///org/apache/directory/shared/ldap/model/message/BindRequest/setName(org.apache.directory.shared.ldap.model.name.Dn)|",
+      "|java+method:///org/apache/directory/shared/ldap/model/message/LdapResult/getResultCode()|",
+      "|java+method:///org/apache/directory/shared/ldap/model/message/BindRequest/setMessageId(int)|"
+    ],
+    "affectedLib": "org.apache.directory.shared:shared-ldap-model:1.0.0-M8",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.directory.shared:shared-dsml-engine:1.0.0-M2",
+    "coordinatesV2": "org.apache.directory.shared:shared-dsml-engine:1.0.0-M3",
+    "caller": "|java+constructor:///org/apache/directory/shared/dsmlv2/engine/Dsmlv2Engine/Dsmlv2Engine(java.lang.String,int,java.lang.String,java.lang.String)|",
+    "called": "|java+constructor:///org/apache/directory/ldap/client/api/LdapNetworkConnection/LdapNetworkConnection(java.lang.String,int)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/directory/ldap/client/api/LdapNetworkConnection/LdapNetworkConnection(java.lang.String,int)|",
+      "|java+constructor:///org/apache/directory/shared/dsmlv2/request/Dsmlv2Grammar/Dsmlv2Grammar()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/directory/ldap/client/api/LdapNetworkConnection/LdapNetworkConnection(java.lang.String,int)|",
+      "|java+constructor:///org/apache/directory/shared/dsmlv2/reponse/BatchResponseDsml/BatchResponseDsml()|",
+      "|java+constructor:///org/apache/directory/shared/dsmlv2/request/Dsmlv2Grammar/Dsmlv2Grammar()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "org.apache.directory.shared:shared-ldap-client-api:1.0.0-M3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.directory.shared:shared-dsml-engine:1.0.0-M2",
+    "coordinatesV2": "org.apache.directory.shared:shared-dsml-engine:1.0.0-M3",
+    "caller": "|java+constructor:///org/apache/directory/shared/dsmlv2/engine/Dsmlv2Engine/Dsmlv2Engine(java.lang.String,int,java.lang.String,java.lang.String)|",
+    "called": "|java+constructor:///org/apache/directory/shared/dsmlv2/request/Dsmlv2Grammar/Dsmlv2Grammar()|",
+    "v1Body": [
+      "|java+constructor:///org/apache/directory/ldap/client/api/LdapNetworkConnection/LdapNetworkConnection(java.lang.String,int)|",
+      "|java+constructor:///org/apache/directory/shared/dsmlv2/request/Dsmlv2Grammar/Dsmlv2Grammar()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/directory/ldap/client/api/LdapNetworkConnection/LdapNetworkConnection(java.lang.String,int)|",
+      "|java+constructor:///org/apache/directory/shared/dsmlv2/reponse/BatchResponseDsml/BatchResponseDsml()|",
+      "|java+constructor:///org/apache/directory/shared/dsmlv2/request/Dsmlv2Grammar/Dsmlv2Grammar()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "org.apache.directory.shared:shared-dsml-parser:1.0.0-M3",
+    "change": "UPDATED"
+  }
+]

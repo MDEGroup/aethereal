@@ -1,0 +1,34 @@
+[
+  {
+    "coordinatesV1": "io.airlift:log:0.72",
+    "coordinatesV2": "io.airlift:log:0.69",
+    "caller": "|java+method:///io/airlift/log/Logger/get(java.lang.Class)|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+constructor:///io/airlift/log/Logger/Logger(org.slf4j.Logger)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+method:///io/airlift/log/Logger/get(java.lang.String)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.6.2",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "io.airlift:log:0.72",
+    "coordinatesV2": "io.airlift:log:0.69",
+    "caller": "|java+method:///io/airlift/log/Logger/get(java.lang.String)|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.String)|",
+      "|java+constructor:///io/airlift/log/Logger/Logger(org.slf4j.Logger)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///io/airlift/log/Logger/Logger(java.util.logging.Logger)|",
+      "|java+method:///java/util/logging/Logger/getLogger(java.lang.String)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.6.2",
+    "change": "REMOVED"
+  }
+]

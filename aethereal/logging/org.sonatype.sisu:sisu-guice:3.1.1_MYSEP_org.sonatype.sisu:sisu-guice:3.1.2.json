@@ -1,0 +1,431 @@
+[
+  {
+    "coordinatesV1": "org.sonatype.sisu:sisu-guice:3.1.2",
+    "coordinatesV2": "org.sonatype.sisu:sisu-guice:3.1.1",
+    "caller": "|java+method:///com/google/inject/internal/InjectorOptionsProcessor/getOptions(com.google.inject.Stage,com.google.inject.internal.InjectorImpl$InjectorOptions)|",
+    "called": "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///com/google/common/base/Preconditions/checkState(boolean,java.lang.Object)|",
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///com/google/inject/internal/InjectorImpl$InjectorOptions/InjectorImpl$InjectorOptions(com.google.inject.Stage,boolean,boolean)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/google/inject/internal/InjectorImpl$InjectorOptions/InjectorImpl$InjectorOptions(com.google.inject.Stage,boolean,boolean,boolean)|",
+      "|java+method:///com/google/common/base/Preconditions/checkState(boolean,java.lang.Object)|",
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|"
+    ],
+    "affectedLib": "org.sonatype.sisu:sisu-guava:0.11.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.sonatype.sisu:sisu-guice:3.1.2",
+    "coordinatesV2": "org.sonatype.sisu:sisu-guice:3.1.1",
+    "caller": "|java+method:///com/google/inject/internal/ProvidedByInternalFactory/get(com.google.inject.internal.Errors,com.google.inject.internal.InternalContext,com.google.inject.spi.Dependency,boolean)|",
+    "called": "|java+method:///com/google/common/base/Preconditions/checkState(boolean,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///com/google/inject/internal/InternalContext/pushState(com.google.inject.Key,java.lang.Object)|",
+      "|java+method:///com/google/common/base/Preconditions/checkState(boolean,java.lang.Object)|",
+      "|java+method:///com/google/inject/internal/Errors/withSource(java.lang.Object)|",
+      "|java+method:///com/google/inject/internal/ProvidedByInternalFactory/circularGet(javax.inject.Provider,com.google.inject.internal.Errors,com.google.inject.internal.InternalContext,com.google.inject.spi.Dependency,boolean)|",
+      "|java+method:///com/google/inject/internal/InternalContext/popState()|",
+      "|java+method:///com/google/inject/internal/BindingImpl/getInternalFactory()|",
+      "|java+method:///com/google/inject/internal/InternalFactory/get(com.google.inject.internal.Errors,com.google.inject.internal.InternalContext,com.google.inject.spi.Dependency,boolean)|",
+      "|java+method:///com/google/inject/internal/BindingImpl/getSource()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/inject/internal/ProvidedByInternalFactory/circularGet(javax.inject.Provider,com.google.inject.internal.Errors,com.google.inject.internal.InternalContext,com.google.inject.spi.Dependency,boolean,com.google.inject.internal.ProvisionListenerStackCallback)|",
+      "|java+method:///com/google/inject/internal/InternalContext/pushState(com.google.inject.Key,java.lang.Object)|",
+      "|java+method:///com/google/common/base/Preconditions/checkState(boolean,java.lang.Object)|",
+      "|java+method:///com/google/inject/internal/Errors/withSource(java.lang.Object)|",
+      "|java+method:///com/google/inject/internal/InternalContext/popState()|",
+      "|java+method:///com/google/inject/internal/BindingImpl/getInternalFactory()|",
+      "|java+method:///com/google/inject/internal/InternalFactory/get(com.google.inject.internal.Errors,com.google.inject.internal.InternalContext,com.google.inject.spi.Dependency,boolean)|",
+      "|java+method:///com/google/inject/internal/BindingImpl/getSource()|"
+    ],
+    "affectedLib": "org.sonatype.sisu:sisu-guava:0.11.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.sonatype.sisu:sisu-guice:3.1.2",
+    "coordinatesV2": "org.sonatype.sisu:sisu-guice:3.1.1",
+    "caller": "|java+method:///com/google/inject/internal/ProxyFactory/create()|",
+    "called": "|java+method:///com/google/common/collect/ImmutableMap/isEmpty()|",
+    "v1Body": [
+      "|java+method:///com/google/inject/internal/cglib/proxy/$Enhancer/setCallbackTypes(java.lang.Class%5B%5D)|",
+      "|java+method:///com/google/inject/internal/Errors/toException()|",
+      "|java+constructor:///com/google/inject/internal/ProxyFactory$IndicesCallbackFilter/ProxyFactory$IndicesCallbackFilter(java.lang.Class,java.util.List)|",
+      "|java+method:///com/google/inject/internal/cglib/proxy/$Enhancer/setCallbackFilter(com.google.inject.internal.cglib.proxy.$CallbackFilter)|",
+      "|java+constructor:///com/google/inject/internal/Errors/Errors()|",
+      "|java+method:///com/google/inject/internal/DefaultConstructionProxyFactory/create()|",
+      "|java+method:///com/google/inject/internal/Errors/errorEnhancingClass(java.lang.Class,java.lang.Throwable)|",
+      "|java+constructor:///com/google/inject/internal/ProxyFactory$ProxyConstructor/ProxyFactory$ProxyConstructor(com.google.inject.internal.cglib.proxy.$Enhancer,com.google.inject.spi.InjectionPoint,com.google.inject.internal.cglib.proxy.$Callback%5B%5D,com.google.common.collect.ImmutableMap)|",
+      "|java+constructor:///com/google/inject/internal/DefaultConstructionProxyFactory/DefaultConstructionProxyFactory(com.google.inject.spi.InjectionPoint)|",
+      "|java+method:///com/google/inject/internal/BytecodeGen/newEnhancer(java.lang.Class,com.google.inject.internal.BytecodeGen$Visibility)|",
+      "|java+method:///com/google/common/collect/ImmutableMap/isEmpty()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/inject/internal/cglib/proxy/$Enhancer/setCallbackTypes(java.lang.Class%5B%5D)|",
+      "|java+method:///com/google/inject/internal/Errors/toException()|",
+      "|java+method:///com/google/inject/internal/cglib/proxy/$Enhancer/setCallbackFilter(com.google.inject.internal.cglib.proxy.$CallbackFilter)|",
+      "|java+constructor:///com/google/inject/internal/Errors/Errors()|",
+      "|java+method:///com/google/inject/internal/DefaultConstructionProxyFactory/create()|",
+      "|java+constructor:///com/google/inject/internal/ProxyFactory$IndicesCallbackFilter/ProxyFactory$IndicesCallbackFilter(java.util.List)|",
+      "|java+method:///com/google/inject/internal/Errors/errorEnhancingClass(java.lang.Class,java.lang.Throwable)|",
+      "|java+constructor:///com/google/inject/internal/ProxyFactory$ProxyConstructor/ProxyFactory$ProxyConstructor(com.google.inject.internal.cglib.proxy.$Enhancer,com.google.inject.spi.InjectionPoint,com.google.inject.internal.cglib.proxy.$Callback%5B%5D,com.google.common.collect.ImmutableMap)|",
+      "|java+constructor:///com/google/inject/internal/DefaultConstructionProxyFactory/DefaultConstructionProxyFactory(com.google.inject.spi.InjectionPoint)|",
+      "|java+method:///com/google/inject/internal/BytecodeGen/newEnhancer(java.lang.Class,com.google.inject.internal.BytecodeGen$Visibility)|",
+      "|java+method:///com/google/common/collect/ImmutableMap/isEmpty()|"
+    ],
+    "affectedLib": "org.sonatype.sisu:sisu-guava:0.11.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.sonatype.sisu:sisu-guice:3.1.2",
+    "coordinatesV2": "org.sonatype.sisu:sisu-guice:3.1.1",
+    "caller": "|java+constructor:///com/google/inject/internal/InternalFactoryToInitializableAdapter/InternalFactoryToInitializableAdapter(com.google.inject.internal.Initializable,java.lang.Object,boolean,com.google.inject.internal.ProvisionListenerStackCallback)|",
+    "called": "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+constructor:///com/google/inject/internal/ProviderInternalFactory/ProviderInternalFactory(java.lang.Object,boolean,com.google.inject.internal.ProvisionListenerStackCallback)|",
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///com/google/inject/internal/ProviderInternalFactory/ProviderInternalFactory(java.lang.Object,boolean)|"
+    ],
+    "affectedLib": "org.sonatype.sisu:sisu-guava:0.11.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.sonatype.sisu:sisu-guice:3.1.1",
+    "coordinatesV2": "org.sonatype.sisu:sisu-guice:3.1.2",
+    "caller": "|java+method:///com/google/inject/internal/InjectorOptionsProcessor/getOptions(com.google.inject.Stage,com.google.inject.internal.InjectorImpl$InjectorOptions)|",
+    "called": "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///com/google/common/base/Preconditions/checkState(boolean,java.lang.Object)|",
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///com/google/inject/internal/InjectorImpl$InjectorOptions/InjectorImpl$InjectorOptions(com.google.inject.Stage,boolean,boolean)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/google/inject/internal/InjectorImpl$InjectorOptions/InjectorImpl$InjectorOptions(com.google.inject.Stage,boolean,boolean,boolean)|",
+      "|java+method:///com/google/common/base/Preconditions/checkState(boolean,java.lang.Object)|",
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|"
+    ],
+    "affectedLib": "com.google.guava:guava:13.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.sonatype.sisu:sisu-guice:3.1.1",
+    "coordinatesV2": "org.sonatype.sisu:sisu-guice:3.1.2",
+    "caller": "|java+method:///com/google/inject/internal/ProvidedByInternalFactory/get(com.google.inject.internal.Errors,com.google.inject.internal.InternalContext,com.google.inject.spi.Dependency,boolean)|",
+    "called": "|java+method:///com/google/common/base/Preconditions/checkState(boolean,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///com/google/inject/internal/InternalContext/pushState(com.google.inject.Key,java.lang.Object)|",
+      "|java+method:///com/google/common/base/Preconditions/checkState(boolean,java.lang.Object)|",
+      "|java+method:///com/google/inject/internal/Errors/withSource(java.lang.Object)|",
+      "|java+method:///com/google/inject/internal/ProvidedByInternalFactory/circularGet(javax.inject.Provider,com.google.inject.internal.Errors,com.google.inject.internal.InternalContext,com.google.inject.spi.Dependency,boolean)|",
+      "|java+method:///com/google/inject/internal/InternalContext/popState()|",
+      "|java+method:///com/google/inject/internal/BindingImpl/getInternalFactory()|",
+      "|java+method:///com/google/inject/internal/InternalFactory/get(com.google.inject.internal.Errors,com.google.inject.internal.InternalContext,com.google.inject.spi.Dependency,boolean)|",
+      "|java+method:///com/google/inject/internal/BindingImpl/getSource()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/inject/internal/ProvidedByInternalFactory/circularGet(javax.inject.Provider,com.google.inject.internal.Errors,com.google.inject.internal.InternalContext,com.google.inject.spi.Dependency,boolean,com.google.inject.internal.ProvisionListenerStackCallback)|",
+      "|java+method:///com/google/inject/internal/InternalContext/pushState(com.google.inject.Key,java.lang.Object)|",
+      "|java+method:///com/google/common/base/Preconditions/checkState(boolean,java.lang.Object)|",
+      "|java+method:///com/google/inject/internal/Errors/withSource(java.lang.Object)|",
+      "|java+method:///com/google/inject/internal/InternalContext/popState()|",
+      "|java+method:///com/google/inject/internal/BindingImpl/getInternalFactory()|",
+      "|java+method:///com/google/inject/internal/InternalFactory/get(com.google.inject.internal.Errors,com.google.inject.internal.InternalContext,com.google.inject.spi.Dependency,boolean)|",
+      "|java+method:///com/google/inject/internal/BindingImpl/getSource()|"
+    ],
+    "affectedLib": "com.google.guava:guava:13.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.sonatype.sisu:sisu-guice:3.1.1",
+    "coordinatesV2": "org.sonatype.sisu:sisu-guice:3.1.2",
+    "caller": "|java+method:///com/google/inject/internal/ProxyFactory/create()|",
+    "called": "|java+method:///com/google/common/collect/ImmutableMap/isEmpty()|",
+    "v1Body": [
+      "|java+method:///com/google/inject/internal/cglib/proxy/$Enhancer/setCallbackTypes(java.lang.Class%5B%5D)|",
+      "|java+method:///com/google/inject/internal/Errors/toException()|",
+      "|java+constructor:///com/google/inject/internal/ProxyFactory$IndicesCallbackFilter/ProxyFactory$IndicesCallbackFilter(java.lang.Class,java.util.List)|",
+      "|java+method:///com/google/inject/internal/cglib/proxy/$Enhancer/setCallbackFilter(com.google.inject.internal.cglib.proxy.$CallbackFilter)|",
+      "|java+constructor:///com/google/inject/internal/Errors/Errors()|",
+      "|java+method:///com/google/inject/internal/DefaultConstructionProxyFactory/create()|",
+      "|java+method:///com/google/inject/internal/Errors/errorEnhancingClass(java.lang.Class,java.lang.Throwable)|",
+      "|java+constructor:///com/google/inject/internal/ProxyFactory$ProxyConstructor/ProxyFactory$ProxyConstructor(com.google.inject.internal.cglib.proxy.$Enhancer,com.google.inject.spi.InjectionPoint,com.google.inject.internal.cglib.proxy.$Callback%5B%5D,com.google.common.collect.ImmutableMap)|",
+      "|java+constructor:///com/google/inject/internal/DefaultConstructionProxyFactory/DefaultConstructionProxyFactory(com.google.inject.spi.InjectionPoint)|",
+      "|java+method:///com/google/inject/internal/BytecodeGen/newEnhancer(java.lang.Class,com.google.inject.internal.BytecodeGen$Visibility)|",
+      "|java+method:///com/google/common/collect/ImmutableMap/isEmpty()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/inject/internal/cglib/proxy/$Enhancer/setCallbackTypes(java.lang.Class%5B%5D)|",
+      "|java+method:///com/google/inject/internal/Errors/toException()|",
+      "|java+method:///com/google/inject/internal/cglib/proxy/$Enhancer/setCallbackFilter(com.google.inject.internal.cglib.proxy.$CallbackFilter)|",
+      "|java+constructor:///com/google/inject/internal/Errors/Errors()|",
+      "|java+method:///com/google/inject/internal/DefaultConstructionProxyFactory/create()|",
+      "|java+constructor:///com/google/inject/internal/ProxyFactory$IndicesCallbackFilter/ProxyFactory$IndicesCallbackFilter(java.util.List)|",
+      "|java+method:///com/google/inject/internal/Errors/errorEnhancingClass(java.lang.Class,java.lang.Throwable)|",
+      "|java+constructor:///com/google/inject/internal/ProxyFactory$ProxyConstructor/ProxyFactory$ProxyConstructor(com.google.inject.internal.cglib.proxy.$Enhancer,com.google.inject.spi.InjectionPoint,com.google.inject.internal.cglib.proxy.$Callback%5B%5D,com.google.common.collect.ImmutableMap)|",
+      "|java+constructor:///com/google/inject/internal/DefaultConstructionProxyFactory/DefaultConstructionProxyFactory(com.google.inject.spi.InjectionPoint)|",
+      "|java+method:///com/google/inject/internal/BytecodeGen/newEnhancer(java.lang.Class,com.google.inject.internal.BytecodeGen$Visibility)|",
+      "|java+method:///com/google/common/collect/ImmutableMap/isEmpty()|"
+    ],
+    "affectedLib": "com.google.guava:guava:13.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.sonatype.sisu:sisu-guice:3.1.1",
+    "coordinatesV2": "org.sonatype.sisu:sisu-guice:3.1.2",
+    "caller": "|java+constructor:///com/google/inject/internal/BoundProviderFactory/BoundProviderFactory(com.google.inject.internal.InjectorImpl,com.google.inject.Key,java.lang.Object,boolean,com.google.inject.internal.ProvisionListenerStackCallback)|",
+    "called": "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+constructor:///com/google/inject/internal/ProviderInternalFactory/ProviderInternalFactory(java.lang.Object,boolean,com.google.inject.internal.ProvisionListenerStackCallback)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///com/google/inject/internal/ProviderInternalFactory/ProviderInternalFactory(java.lang.Object,boolean)|"
+    ],
+    "affectedLib": "com.google.guava:guava:13.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.sonatype.sisu:sisu-guice:3.1.1",
+    "coordinatesV2": "org.sonatype.sisu:sisu-guice:3.1.2",
+    "caller": "|java+constructor:///com/google/inject/internal/InternalFactoryToInitializableAdapter/InternalFactoryToInitializableAdapter(com.google.inject.internal.Initializable,java.lang.Object,boolean,com.google.inject.internal.ProvisionListenerStackCallback)|",
+    "called": "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+constructor:///com/google/inject/internal/ProviderInternalFactory/ProviderInternalFactory(java.lang.Object,boolean,com.google.inject.internal.ProvisionListenerStackCallback)|",
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///com/google/inject/internal/ProviderInternalFactory/ProviderInternalFactory(java.lang.Object,boolean)|"
+    ],
+    "affectedLib": "com.google.guava:guava:13.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.sonatype.sisu:sisu-guice:3.1.1",
+    "coordinatesV2": "org.sonatype.sisu:sisu-guice:3.1.2",
+    "caller": "|java+method:///com/google/inject/internal/InjectorOptionsProcessor/getOptions(com.google.inject.Stage,com.google.inject.internal.InjectorImpl$InjectorOptions)|",
+    "called": "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///com/google/common/base/Preconditions/checkState(boolean,java.lang.Object)|",
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///com/google/inject/internal/InjectorImpl$InjectorOptions/InjectorImpl$InjectorOptions(com.google.inject.Stage,boolean,boolean)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/google/inject/internal/InjectorImpl$InjectorOptions/InjectorImpl$InjectorOptions(com.google.inject.Stage,boolean,boolean,boolean)|",
+      "|java+method:///com/google/common/base/Preconditions/checkState(boolean,java.lang.Object)|",
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|"
+    ],
+    "affectedLib": "com.google.guava:guava:13.0.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.sonatype.sisu:sisu-guice:3.1.1",
+    "coordinatesV2": "org.sonatype.sisu:sisu-guice:3.1.2",
+    "caller": "|java+method:///com/google/inject/internal/ProvidedByInternalFactory/get(com.google.inject.internal.Errors,com.google.inject.internal.InternalContext,com.google.inject.spi.Dependency,boolean)|",
+    "called": "|java+method:///com/google/common/base/Preconditions/checkState(boolean,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///com/google/inject/internal/InternalContext/pushState(com.google.inject.Key,java.lang.Object)|",
+      "|java+method:///com/google/common/base/Preconditions/checkState(boolean,java.lang.Object)|",
+      "|java+method:///com/google/inject/internal/Errors/withSource(java.lang.Object)|",
+      "|java+method:///com/google/inject/internal/ProvidedByInternalFactory/circularGet(javax.inject.Provider,com.google.inject.internal.Errors,com.google.inject.internal.InternalContext,com.google.inject.spi.Dependency,boolean)|",
+      "|java+method:///com/google/inject/internal/InternalContext/popState()|",
+      "|java+method:///com/google/inject/internal/BindingImpl/getInternalFactory()|",
+      "|java+method:///com/google/inject/internal/InternalFactory/get(com.google.inject.internal.Errors,com.google.inject.internal.InternalContext,com.google.inject.spi.Dependency,boolean)|",
+      "|java+method:///com/google/inject/internal/BindingImpl/getSource()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/inject/internal/ProvidedByInternalFactory/circularGet(javax.inject.Provider,com.google.inject.internal.Errors,com.google.inject.internal.InternalContext,com.google.inject.spi.Dependency,boolean,com.google.inject.internal.ProvisionListenerStackCallback)|",
+      "|java+method:///com/google/inject/internal/InternalContext/pushState(com.google.inject.Key,java.lang.Object)|",
+      "|java+method:///com/google/common/base/Preconditions/checkState(boolean,java.lang.Object)|",
+      "|java+method:///com/google/inject/internal/Errors/withSource(java.lang.Object)|",
+      "|java+method:///com/google/inject/internal/InternalContext/popState()|",
+      "|java+method:///com/google/inject/internal/BindingImpl/getInternalFactory()|",
+      "|java+method:///com/google/inject/internal/InternalFactory/get(com.google.inject.internal.Errors,com.google.inject.internal.InternalContext,com.google.inject.spi.Dependency,boolean)|",
+      "|java+method:///com/google/inject/internal/BindingImpl/getSource()|"
+    ],
+    "affectedLib": "com.google.guava:guava:13.0.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.sonatype.sisu:sisu-guice:3.1.1",
+    "coordinatesV2": "org.sonatype.sisu:sisu-guice:3.1.2",
+    "caller": "|java+method:///com/google/inject/internal/ProxyFactory/create()|",
+    "called": "|java+method:///com/google/common/collect/ImmutableMap/isEmpty()|",
+    "v1Body": [
+      "|java+method:///com/google/inject/internal/cglib/proxy/$Enhancer/setCallbackTypes(java.lang.Class%5B%5D)|",
+      "|java+method:///com/google/inject/internal/Errors/toException()|",
+      "|java+constructor:///com/google/inject/internal/ProxyFactory$IndicesCallbackFilter/ProxyFactory$IndicesCallbackFilter(java.lang.Class,java.util.List)|",
+      "|java+method:///com/google/inject/internal/cglib/proxy/$Enhancer/setCallbackFilter(com.google.inject.internal.cglib.proxy.$CallbackFilter)|",
+      "|java+constructor:///com/google/inject/internal/Errors/Errors()|",
+      "|java+method:///com/google/inject/internal/DefaultConstructionProxyFactory/create()|",
+      "|java+method:///com/google/inject/internal/Errors/errorEnhancingClass(java.lang.Class,java.lang.Throwable)|",
+      "|java+constructor:///com/google/inject/internal/ProxyFactory$ProxyConstructor/ProxyFactory$ProxyConstructor(com.google.inject.internal.cglib.proxy.$Enhancer,com.google.inject.spi.InjectionPoint,com.google.inject.internal.cglib.proxy.$Callback%5B%5D,com.google.common.collect.ImmutableMap)|",
+      "|java+constructor:///com/google/inject/internal/DefaultConstructionProxyFactory/DefaultConstructionProxyFactory(com.google.inject.spi.InjectionPoint)|",
+      "|java+method:///com/google/inject/internal/BytecodeGen/newEnhancer(java.lang.Class,com.google.inject.internal.BytecodeGen$Visibility)|",
+      "|java+method:///com/google/common/collect/ImmutableMap/isEmpty()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/inject/internal/cglib/proxy/$Enhancer/setCallbackTypes(java.lang.Class%5B%5D)|",
+      "|java+method:///com/google/inject/internal/Errors/toException()|",
+      "|java+method:///com/google/inject/internal/cglib/proxy/$Enhancer/setCallbackFilter(com.google.inject.internal.cglib.proxy.$CallbackFilter)|",
+      "|java+constructor:///com/google/inject/internal/Errors/Errors()|",
+      "|java+method:///com/google/inject/internal/DefaultConstructionProxyFactory/create()|",
+      "|java+constructor:///com/google/inject/internal/ProxyFactory$IndicesCallbackFilter/ProxyFactory$IndicesCallbackFilter(java.util.List)|",
+      "|java+method:///com/google/inject/internal/Errors/errorEnhancingClass(java.lang.Class,java.lang.Throwable)|",
+      "|java+constructor:///com/google/inject/internal/ProxyFactory$ProxyConstructor/ProxyFactory$ProxyConstructor(com.google.inject.internal.cglib.proxy.$Enhancer,com.google.inject.spi.InjectionPoint,com.google.inject.internal.cglib.proxy.$Callback%5B%5D,com.google.common.collect.ImmutableMap)|",
+      "|java+constructor:///com/google/inject/internal/DefaultConstructionProxyFactory/DefaultConstructionProxyFactory(com.google.inject.spi.InjectionPoint)|",
+      "|java+method:///com/google/inject/internal/BytecodeGen/newEnhancer(java.lang.Class,com.google.inject.internal.BytecodeGen$Visibility)|",
+      "|java+method:///com/google/common/collect/ImmutableMap/isEmpty()|"
+    ],
+    "affectedLib": "com.google.guava:guava:13.0.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.sonatype.sisu:sisu-guice:3.1.1",
+    "coordinatesV2": "org.sonatype.sisu:sisu-guice:3.1.2",
+    "caller": "|java+constructor:///com/google/inject/internal/BoundProviderFactory/BoundProviderFactory(com.google.inject.internal.InjectorImpl,com.google.inject.Key,java.lang.Object,boolean,com.google.inject.internal.ProvisionListenerStackCallback)|",
+    "called": "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+constructor:///com/google/inject/internal/ProviderInternalFactory/ProviderInternalFactory(java.lang.Object,boolean,com.google.inject.internal.ProvisionListenerStackCallback)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///com/google/inject/internal/ProviderInternalFactory/ProviderInternalFactory(java.lang.Object,boolean)|"
+    ],
+    "affectedLib": "com.google.guava:guava:13.0.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.sonatype.sisu:sisu-guice:3.1.1",
+    "coordinatesV2": "org.sonatype.sisu:sisu-guice:3.1.2",
+    "caller": "|java+constructor:///com/google/inject/internal/InternalFactoryToInitializableAdapter/InternalFactoryToInitializableAdapter(com.google.inject.internal.Initializable,java.lang.Object,boolean,com.google.inject.internal.ProvisionListenerStackCallback)|",
+    "called": "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+constructor:///com/google/inject/internal/ProviderInternalFactory/ProviderInternalFactory(java.lang.Object,boolean,com.google.inject.internal.ProvisionListenerStackCallback)|",
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///com/google/inject/internal/ProviderInternalFactory/ProviderInternalFactory(java.lang.Object,boolean)|"
+    ],
+    "affectedLib": "com.google.guava:guava:13.0.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.sonatype.sisu:sisu-guice:3.1.1",
+    "coordinatesV2": "org.sonatype.sisu:sisu-guice:3.1.2",
+    "caller": "|java+method:///com/google/inject/internal/InjectorOptionsProcessor/getOptions(com.google.inject.Stage,com.google.inject.internal.InjectorImpl$InjectorOptions)|",
+    "called": "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///com/google/common/base/Preconditions/checkState(boolean,java.lang.Object)|",
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///com/google/inject/internal/InjectorImpl$InjectorOptions/InjectorImpl$InjectorOptions(com.google.inject.Stage,boolean,boolean)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/google/inject/internal/InjectorImpl$InjectorOptions/InjectorImpl$InjectorOptions(com.google.inject.Stage,boolean,boolean,boolean)|",
+      "|java+method:///com/google/common/base/Preconditions/checkState(boolean,java.lang.Object)|",
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|"
+    ],
+    "affectedLib": "com.google.guava:guava:12.0.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.sonatype.sisu:sisu-guice:3.1.1",
+    "coordinatesV2": "org.sonatype.sisu:sisu-guice:3.1.2",
+    "caller": "|java+method:///com/google/inject/internal/ProvidedByInternalFactory/get(com.google.inject.internal.Errors,com.google.inject.internal.InternalContext,com.google.inject.spi.Dependency,boolean)|",
+    "called": "|java+method:///com/google/common/base/Preconditions/checkState(boolean,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///com/google/inject/internal/InternalContext/pushState(com.google.inject.Key,java.lang.Object)|",
+      "|java+method:///com/google/common/base/Preconditions/checkState(boolean,java.lang.Object)|",
+      "|java+method:///com/google/inject/internal/Errors/withSource(java.lang.Object)|",
+      "|java+method:///com/google/inject/internal/ProvidedByInternalFactory/circularGet(javax.inject.Provider,com.google.inject.internal.Errors,com.google.inject.internal.InternalContext,com.google.inject.spi.Dependency,boolean)|",
+      "|java+method:///com/google/inject/internal/InternalContext/popState()|",
+      "|java+method:///com/google/inject/internal/BindingImpl/getInternalFactory()|",
+      "|java+method:///com/google/inject/internal/InternalFactory/get(com.google.inject.internal.Errors,com.google.inject.internal.InternalContext,com.google.inject.spi.Dependency,boolean)|",
+      "|java+method:///com/google/inject/internal/BindingImpl/getSource()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/inject/internal/ProvidedByInternalFactory/circularGet(javax.inject.Provider,com.google.inject.internal.Errors,com.google.inject.internal.InternalContext,com.google.inject.spi.Dependency,boolean,com.google.inject.internal.ProvisionListenerStackCallback)|",
+      "|java+method:///com/google/inject/internal/InternalContext/pushState(com.google.inject.Key,java.lang.Object)|",
+      "|java+method:///com/google/common/base/Preconditions/checkState(boolean,java.lang.Object)|",
+      "|java+method:///com/google/inject/internal/Errors/withSource(java.lang.Object)|",
+      "|java+method:///com/google/inject/internal/InternalContext/popState()|",
+      "|java+method:///com/google/inject/internal/BindingImpl/getInternalFactory()|",
+      "|java+method:///com/google/inject/internal/InternalFactory/get(com.google.inject.internal.Errors,com.google.inject.internal.InternalContext,com.google.inject.spi.Dependency,boolean)|",
+      "|java+method:///com/google/inject/internal/BindingImpl/getSource()|"
+    ],
+    "affectedLib": "com.google.guava:guava:12.0.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.sonatype.sisu:sisu-guice:3.1.1",
+    "coordinatesV2": "org.sonatype.sisu:sisu-guice:3.1.2",
+    "caller": "|java+method:///com/google/inject/internal/ProxyFactory/create()|",
+    "called": "|java+method:///com/google/common/collect/ImmutableMap/isEmpty()|",
+    "v1Body": [
+      "|java+method:///com/google/inject/internal/cglib/proxy/$Enhancer/setCallbackTypes(java.lang.Class%5B%5D)|",
+      "|java+method:///com/google/inject/internal/Errors/toException()|",
+      "|java+constructor:///com/google/inject/internal/ProxyFactory$IndicesCallbackFilter/ProxyFactory$IndicesCallbackFilter(java.lang.Class,java.util.List)|",
+      "|java+method:///com/google/inject/internal/cglib/proxy/$Enhancer/setCallbackFilter(com.google.inject.internal.cglib.proxy.$CallbackFilter)|",
+      "|java+constructor:///com/google/inject/internal/Errors/Errors()|",
+      "|java+method:///com/google/inject/internal/DefaultConstructionProxyFactory/create()|",
+      "|java+method:///com/google/inject/internal/Errors/errorEnhancingClass(java.lang.Class,java.lang.Throwable)|",
+      "|java+constructor:///com/google/inject/internal/ProxyFactory$ProxyConstructor/ProxyFactory$ProxyConstructor(com.google.inject.internal.cglib.proxy.$Enhancer,com.google.inject.spi.InjectionPoint,com.google.inject.internal.cglib.proxy.$Callback%5B%5D,com.google.common.collect.ImmutableMap)|",
+      "|java+constructor:///com/google/inject/internal/DefaultConstructionProxyFactory/DefaultConstructionProxyFactory(com.google.inject.spi.InjectionPoint)|",
+      "|java+method:///com/google/inject/internal/BytecodeGen/newEnhancer(java.lang.Class,com.google.inject.internal.BytecodeGen$Visibility)|",
+      "|java+method:///com/google/common/collect/ImmutableMap/isEmpty()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/inject/internal/cglib/proxy/$Enhancer/setCallbackTypes(java.lang.Class%5B%5D)|",
+      "|java+method:///com/google/inject/internal/Errors/toException()|",
+      "|java+method:///com/google/inject/internal/cglib/proxy/$Enhancer/setCallbackFilter(com.google.inject.internal.cglib.proxy.$CallbackFilter)|",
+      "|java+constructor:///com/google/inject/internal/Errors/Errors()|",
+      "|java+method:///com/google/inject/internal/DefaultConstructionProxyFactory/create()|",
+      "|java+constructor:///com/google/inject/internal/ProxyFactory$IndicesCallbackFilter/ProxyFactory$IndicesCallbackFilter(java.util.List)|",
+      "|java+method:///com/google/inject/internal/Errors/errorEnhancingClass(java.lang.Class,java.lang.Throwable)|",
+      "|java+constructor:///com/google/inject/internal/ProxyFactory$ProxyConstructor/ProxyFactory$ProxyConstructor(com.google.inject.internal.cglib.proxy.$Enhancer,com.google.inject.spi.InjectionPoint,com.google.inject.internal.cglib.proxy.$Callback%5B%5D,com.google.common.collect.ImmutableMap)|",
+      "|java+constructor:///com/google/inject/internal/DefaultConstructionProxyFactory/DefaultConstructionProxyFactory(com.google.inject.spi.InjectionPoint)|",
+      "|java+method:///com/google/inject/internal/BytecodeGen/newEnhancer(java.lang.Class,com.google.inject.internal.BytecodeGen$Visibility)|",
+      "|java+method:///com/google/common/collect/ImmutableMap/isEmpty()|"
+    ],
+    "affectedLib": "com.google.guava:guava:12.0.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.sonatype.sisu:sisu-guice:3.1.1",
+    "coordinatesV2": "org.sonatype.sisu:sisu-guice:3.1.2",
+    "caller": "|java+constructor:///com/google/inject/internal/BoundProviderFactory/BoundProviderFactory(com.google.inject.internal.InjectorImpl,com.google.inject.Key,java.lang.Object,boolean,com.google.inject.internal.ProvisionListenerStackCallback)|",
+    "called": "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+constructor:///com/google/inject/internal/ProviderInternalFactory/ProviderInternalFactory(java.lang.Object,boolean,com.google.inject.internal.ProvisionListenerStackCallback)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///com/google/inject/internal/ProviderInternalFactory/ProviderInternalFactory(java.lang.Object,boolean)|"
+    ],
+    "affectedLib": "com.google.guava:guava:12.0.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.sonatype.sisu:sisu-guice:3.1.1",
+    "coordinatesV2": "org.sonatype.sisu:sisu-guice:3.1.2",
+    "caller": "|java+constructor:///com/google/inject/internal/InternalFactoryToInitializableAdapter/InternalFactoryToInitializableAdapter(com.google.inject.internal.Initializable,java.lang.Object,boolean,com.google.inject.internal.ProvisionListenerStackCallback)|",
+    "called": "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+constructor:///com/google/inject/internal/ProviderInternalFactory/ProviderInternalFactory(java.lang.Object,boolean,com.google.inject.internal.ProvisionListenerStackCallback)|",
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///com/google/inject/internal/ProviderInternalFactory/ProviderInternalFactory(java.lang.Object,boolean)|"
+    ],
+    "affectedLib": "com.google.guava:guava:12.0.1",
+    "change": "ADDED"
+  }
+]

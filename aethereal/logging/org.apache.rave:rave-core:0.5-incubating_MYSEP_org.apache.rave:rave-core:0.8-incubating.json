@@ -1,0 +1,25 @@
+[
+  {
+    "coordinatesV1": "org.apache.rave:rave-core:0.5-incubating",
+    "coordinatesV2": "org.apache.rave:rave-core:0.8-incubating",
+    "caller": "|java+method:///org/apache/rave/portal/service/impl/DefaultWidgetService/registerNewWidget(org.apache.rave.portal.model.Widget)|",
+    "called": "|java+constructor:///org/apache/rave/exception/DuplicateItemException/DuplicateItemException(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/apache/rave/portal/repository/WidgetRepository/save(java.lang.Object)|",
+      "|java+method:///org/apache/rave/portal/model/Widget/getUrl()|",
+      "|java+method:///org/apache/rave/portal/service/impl/DefaultWidgetService/getWidgetByUrl(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/rave/portal/service/impl/DefaultWidgetService/getWidgetByUrl(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/rave/portal/repository/WidgetRepository/save(java.lang.Object)|",
+      "|java+method:///org/apache/rave/portal/model/Widget/getUrl()|",
+      "|java+constructor:///org/apache/rave/exception/DuplicateItemException/DuplicateItemException(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "affectedLib": "org.apache.rave:rave-commons:0.8-incubating",
+    "change": "UPDATED"
+  }
+]

@@ -1,0 +1,76 @@
+[
+  {
+    "coordinatesV1": "org.mobicents.media.resources:player:3.0.2.FINAL",
+    "coordinatesV2": "org.mobicents.media.resources:player:5.1.0.19",
+    "caller": "|java+initializer:///org/mobicents/media/server/impl/resource/mediaplayer/audio/AudioPlayerImpl/AudioPlayerImpl$initializer|",
+    "called": "|java+method:///org/mobicents/media/server/spi/format/FormatFactory/createAudioFormat(java.lang.String,int,int,int)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|",
+      "|java+method:///org/mobicents/media/server/spi/format/FormatFactory/createAudioFormat(java.lang.String,int,int,int)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/mobicents/media/server/spi/format/AudioFormat/getSampleRate()|",
+      "|java+method:///org/mobicents/media/server/spi/format/AudioFormat/getSampleSize()|",
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|",
+      "|java+method:///org/mobicents/media/server/spi/format/FormatFactory/createAudioFormat(java.lang.String,int,int,int)|"
+    ],
+    "affectedLib": "org.mobicents.media:spi:5.1.0.19",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.mobicents.media.resources:player:3.0.2.FINAL",
+    "coordinatesV2": "org.mobicents.media.resources:player:5.1.0.19",
+    "caller": "|java+method:///org/mobicents/media/server/impl/resource/mediaplayer/audio/AudioPlayerImpl/setURL(java.lang.String)|",
+    "called": "|java+constructor:///org/mobicents/media/server/spi/ResourceUnavailableException/ResourceUnavailableException(java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///org/mobicents/media/server/impl/resource/mediaplayer/audio/tts/TtsTrackImpl/TtsTrackImpl(java.net.URL,java.lang.String,org.mobicents.media.server.impl.resource.mediaplayer.audio.tts.VoicesCache)|",
+      "|java+method:///java/lang/String/toLowerCase()|",
+      "|java+constructor:///java/net/URL/URL(java.lang.String)|",
+      "|java+method:///org/mobicents/media/server/impl/resource/mediaplayer/audio/AudioPlayerImpl/getEndpoint()|",
+      "|java+constructor:///org/mobicents/media/server/impl/resource/mediaplayer/audio/gsm/GsmTrackImpl/GsmTrackImpl(java.net.URL)|",
+      "|java+constructor:///org/mobicents/media/server/impl/resource/mediaplayer/audio/tone/ToneTrackImpl/ToneTrackImpl(java.net.URL)|",
+      "|java+method:///java/lang/String/substring(int)|",
+      "|java+method:///org/mobicents/media/server/impl/resource/mediaplayer/Track/getDuration()|",
+      "|java+method:///java/lang/String/matches(java.lang.String)|",
+      "|java+constructor:///java/lang/IllegalStateException/IllegalStateException(java.lang.String)|",
+      "|java+method:///org/mobicents/media/server/impl/resource/mediaplayer/audio/AudioPlayerImpl/isConnected()|",
+      "|java+constructor:///org/mobicents/media/server/spi/ResourceUnavailableException/ResourceUnavailableException(java.lang.Throwable)|",
+      "|java+constructor:///java/net/MalformedURLException/MalformedURLException(java.lang.String)|",
+      "|java+method:///org/mobicents/media/server/spi/Endpoint/getLocalName()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/log4j/Logger/info(java.lang.Object)|",
+      "|java+method:///org/mobicents/media/server/impl/resource/mediaplayer/Track/close()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///org/mobicents/media/server/impl/resource/mediaplayer/audio/mpeg/AMRTrackImpl/AMRTrackImpl(java.net.URL)|",
+      "|java+method:///java/lang/String/lastIndexOf(int)|",
+      "|java+method:///org/apache/log4j/Logger/error(java.lang.Object,java.lang.Throwable)|",
+      "|java+constructor:///org/mobicents/media/server/impl/resource/mediaplayer/audio/wav/WavTrackImpl/WavTrackImpl(java.net.URL)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///org/mobicents/media/server/spi/ResourceUnavailableException/ResourceUnavailableException(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/mobicents/media/server/impl/resource/mediaplayer/audio/tts/TtsTrackImpl/TtsTrackImpl(java.net.URL,java.lang.String,org.mobicents.media.server.impl.resource.mediaplayer.audio.tts.VoicesCache)|",
+      "|java+method:///java/lang/String/toLowerCase()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/mobicents/media/server/impl/resource/mediaplayer/Track/close()|",
+      "|java+constructor:///java/net/URL/URL(java.lang.String)|",
+      "|java+constructor:///org/mobicents/media/server/impl/resource/mediaplayer/audio/gsm/GsmTrackImpl/GsmTrackImpl(java.net.URL)|",
+      "|java+constructor:///org/mobicents/media/server/impl/resource/mediaplayer/audio/tone/ToneTrackImpl/ToneTrackImpl(java.net.URL)|",
+      "|java+method:///java/lang/String/substring(int)|",
+      "|java+method:///org/mobicents/media/server/impl/resource/mediaplayer/Track/getDuration()|",
+      "|java+method:///java/lang/String/matches(java.lang.String)|",
+      "|java+constructor:///java/lang/IllegalStateException/IllegalStateException(java.lang.String)|",
+      "|java+method:///org/mobicents/media/server/impl/resource/mediaplayer/audio/AudioPlayerImpl/isConnected()|",
+      "|java+constructor:///org/mobicents/media/server/spi/ResourceUnavailableException/ResourceUnavailableException(java.lang.Throwable)|",
+      "|java+constructor:///java/net/MalformedURLException/MalformedURLException(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///org/mobicents/media/server/impl/resource/mediaplayer/audio/mpeg/AMRTrackImpl/AMRTrackImpl(java.net.URL)|",
+      "|java+constructor:///org/mobicents/media/server/impl/resource/mediaplayer/audio/wav/WavTrackImpl/WavTrackImpl(java.net.URL,org.mobicents.media.server.impl.resource.mediaplayer.audio.RemoteStreamProvider)|",
+      "|java+method:///java/lang/String/lastIndexOf(int)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///org/mobicents/media/server/spi/ResourceUnavailableException/ResourceUnavailableException(java.lang.String)|"
+    ],
+    "affectedLib": "org.mobicents.media:spi:5.1.0.19",
+    "change": "UPDATED"
+  }
+]

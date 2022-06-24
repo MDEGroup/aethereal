@@ -1,0 +1,128 @@
+[
+  {
+    "coordinatesV1": "ch.qos.logback:logback-classic:0.9.20",
+    "coordinatesV2": "ch.qos.logback:logback-classic:0.9.21",
+    "caller": "|java+method:///ch/qos/logback/classic/spi/LoggingEvent/getFormattedMessage()|",
+    "called": "|java+method:///org/slf4j/helpers/MessageFormatter/arrayFormat(java.lang.String,java.lang.Object%5B%5D)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/helpers/MessageFormatter/arrayFormat(java.lang.String,java.lang.Object%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/helpers/MessageFormatter/arrayFormat(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///org/slf4j/helpers/FormattingTuple/getMessage()|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.6.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "ch.qos.logback:logback-classic:0.9.20",
+    "coordinatesV2": "ch.qos.logback:logback-classic:0.9.21",
+    "caller": "|java+method:///ch/qos/logback/classic/spi/LoggingEventVO/getFormattedMessage()|",
+    "called": "|java+method:///org/slf4j/helpers/MessageFormatter/arrayFormat(java.lang.String,java.lang.Object%5B%5D)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/helpers/MessageFormatter/arrayFormat(java.lang.String,java.lang.Object%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/helpers/MessageFormatter/arrayFormat(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///org/slf4j/helpers/FormattingTuple/getMessage()|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.6.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "ch.qos.logback:logback-classic:0.9.20",
+    "coordinatesV2": "ch.qos.logback:logback-classic:0.9.21",
+    "caller": "|java+method:///org/slf4j/impl/StaticLoggerBinder/init()|",
+    "called": "|java+method:///org/slf4j/helpers/Util/report(java.lang.String,java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///ch/qos/logback/classic/util/ContextInitializer/autoConfig()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///ch/qos/logback/classic/util/ContextSelectorStaticBinder/init(ch.qos.logback.classic.LoggerContext,java.lang.Object)|",
+      "|java+constructor:///ch/qos/logback/classic/util/ContextInitializer/ContextInitializer(ch.qos.logback.classic.LoggerContext)|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///ch/qos/logback/core/util/StatusPrinter/printInCaseOfErrorsOrWarnings(ch.qos.logback.core.Context)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/slf4j/helpers/Util/reportFailure(java.lang.String,java.lang.Throwable)|"
+    ],
+    "v2Body": [
+      "|java+method:///ch/qos/logback/classic/util/ContextInitializer/autoConfig()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///ch/qos/logback/classic/util/ContextSelectorStaticBinder/init(ch.qos.logback.classic.LoggerContext,java.lang.Object)|",
+      "|java+constructor:///ch/qos/logback/classic/util/ContextInitializer/ContextInitializer(ch.qos.logback.classic.LoggerContext)|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///ch/qos/logback/core/util/StatusPrinter/printInCaseOfErrorsOrWarnings(ch.qos.logback.core.Context)|",
+      "|java+method:///org/slf4j/helpers/Util/report(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.6.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "ch.qos.logback:logback-classic:0.9.20",
+    "coordinatesV2": "ch.qos.logback:logback-classic:0.9.21",
+    "caller": "|java+constructor:///ch/qos/logback/classic/spi/LoggingEvent/LoggingEvent(java.lang.String,ch.qos.logback.classic.Logger,ch.qos.logback.classic.Level,java.lang.String,java.lang.Throwable,java.lang.Object%5B%5D)|",
+    "called": "|java+method:///org/slf4j/helpers/MessageFormatter/arrayFormat(java.lang.String,java.lang.Object%5B%5D)|",
+    "v1Body": [
+      "|java+constructor:///ch/qos/logback/classic/spi/ThrowableProxy/ThrowableProxy(java.lang.Throwable)|",
+      "|java+method:///ch/qos/logback/classic/Logger/getName()|",
+      "|java+method:///ch/qos/logback/classic/LoggerContext/getLoggerContextRemoteView()|",
+      "|java+method:///ch/qos/logback/classic/LoggerContext/isPackagingDataEnabled()|",
+      "|java+method:///ch/qos/logback/classic/util/LogbackMDCAdapter/getPropertyMap()|",
+      "|java+method:///org/slf4j/MDC/getMDCAdapter()|",
+      "|java+method:///ch/qos/logback/classic/Logger/getLoggerContext()|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///java/lang/System/currentTimeMillis()|",
+      "|java+method:///ch/qos/logback/classic/spi/ThrowableProxy/calculatePackagingData()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///ch/qos/logback/classic/spi/ThrowableProxy/ThrowableProxy(java.lang.Throwable)|",
+      "|java+method:///ch/qos/logback/classic/Logger/getName()|",
+      "|java+method:///ch/qos/logback/classic/LoggerContext/getLoggerContextRemoteView()|",
+      "|java+method:///org/slf4j/helpers/FormattingTuple/getArgArray()|",
+      "|java+method:///org/slf4j/helpers/MessageFormatter/arrayFormat(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///ch/qos/logback/classic/LoggerContext/isPackagingDataEnabled()|",
+      "|java+method:///org/slf4j/helpers/FormattingTuple/getThrowable()|",
+      "|java+method:///ch/qos/logback/classic/util/LogbackMDCAdapter/getPropertyMap()|",
+      "|java+method:///org/slf4j/helpers/FormattingTuple/getMessage()|",
+      "|java+method:///org/slf4j/MDC/getMDCAdapter()|",
+      "|java+method:///ch/qos/logback/classic/Logger/getLoggerContext()|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///java/lang/System/currentTimeMillis()|",
+      "|java+method:///ch/qos/logback/classic/spi/ThrowableProxy/calculatePackagingData()|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.6.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "ch.qos.logback:logback-classic:0.9.20",
+    "coordinatesV2": "ch.qos.logback:logback-classic:0.9.21",
+    "caller": "|java+method:///org/slf4j/impl/StaticLoggerBinder/init()|",
+    "called": "|java+method:///ch/qos/logback/core/util/StatusPrinter/printInCaseOfErrorsOrWarnings(ch.qos.logback.core.Context)|",
+    "v1Body": [
+      "|java+method:///ch/qos/logback/classic/util/ContextInitializer/autoConfig()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///ch/qos/logback/classic/util/ContextSelectorStaticBinder/init(ch.qos.logback.classic.LoggerContext,java.lang.Object)|",
+      "|java+constructor:///ch/qos/logback/classic/util/ContextInitializer/ContextInitializer(ch.qos.logback.classic.LoggerContext)|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///ch/qos/logback/core/util/StatusPrinter/printInCaseOfErrorsOrWarnings(ch.qos.logback.core.Context)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/slf4j/helpers/Util/reportFailure(java.lang.String,java.lang.Throwable)|"
+    ],
+    "v2Body": [
+      "|java+method:///ch/qos/logback/classic/util/ContextInitializer/autoConfig()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///ch/qos/logback/classic/util/ContextSelectorStaticBinder/init(ch.qos.logback.classic.LoggerContext,java.lang.Object)|",
+      "|java+constructor:///ch/qos/logback/classic/util/ContextInitializer/ContextInitializer(ch.qos.logback.classic.LoggerContext)|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///ch/qos/logback/core/util/StatusPrinter/printInCaseOfErrorsOrWarnings(ch.qos.logback.core.Context)|",
+      "|java+method:///org/slf4j/helpers/Util/report(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "affectedLib": "ch.qos.logback:logback-core:0.9.21",
+    "change": "UPDATED"
+  }
+]

@@ -1,0 +1,112 @@
+[
+  {
+    "coordinatesV1": "org.apache.jena:jena-sdb:3.0.1",
+    "coordinatesV2": "org.apache.jena:jena-sdb:3.1.0",
+    "caller": "|java+method:///org/apache/jena/sdb/store/DatasetGraphSDB/findInDftGraph(org.apache.jena.graph.Node,org.apache.jena.graph.Node,org.apache.jena.graph.Node)|",
+    "called": "|java+method:///org/apache/jena/sparql/util/graph/GraphUtils/triples2quadsDftGraph(java.util.Iterator)|",
+    "v1Body": [
+      "|java+method:///org/apache/jena/sdb/store/DatasetGraphSDB$Helper/findInDftGraph(org.apache.jena.sparql.core.DatasetGraph,org.apache.jena.graph.Node,org.apache.jena.graph.Node,org.apache.jena.graph.Node)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/jena/sdb/store/LibSDB/findTriplesInDftGraph(org.apache.jena.sparql.core.DatasetGraph,org.apache.jena.graph.Node,org.apache.jena.graph.Node,org.apache.jena.graph.Node)|",
+      "|java+method:///org/apache/jena/sparql/util/graph/GraphUtils/triples2quadsDftGraph(java.util.Iterator)|"
+    ],
+    "affectedLib": "org.apache.jena:jena-arq:3.1.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.jena:jena-sdb:3.0.1",
+    "coordinatesV2": "org.apache.jena:jena-sdb:3.1.0",
+    "caller": "|java+method:///sdb/sdbdump/execCmd(java.util.List)|",
+    "called": "|java+method:///org/apache/jena/riot/RDFLanguages/nameToLang(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/lang/Exception/printStackTrace(java.io.PrintStream)|",
+      "|java+method:///jena/cmd/Arg/getValue()|",
+      "|java+method:///org/apache/jena/rdf/model/Model/write(java.io.OutputStream,java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///sdb/sdbdump/contains(jena.cmd.ArgDecl)|",
+      "|java+method:///sdb/sdbdump/getArg(jena.cmd.ArgDecl)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///sdb/sdbdump/isDebug()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/io/PrintStream/println(java.lang.String)|",
+      "|java+method:///sdb/sdbdump/getStore()|",
+      "|java+method:///sdb/cmd/ModGraph/getModel(org.apache.jena.sdb.Store)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/Exception/getMessage()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Exception/printStackTrace(java.io.PrintStream)|",
+      "|java+method:///jena/cmd/Arg/getValue()|",
+      "|java+method:///org/apache/jena/riot/RDFDataMgr/write(java.io.OutputStream,org.apache.jena.query.Dataset,org.apache.jena.riot.Lang)|",
+      "|java+method:///org/apache/jena/riot/RDFLanguages/isQuads(org.apache.jena.riot.Lang)|",
+      "|java+method:///org/apache/jena/riot/RDFDataMgr/write(java.io.OutputStream,org.apache.jena.rdf.model.Model,org.apache.jena.riot.Lang)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///sdb/sdbdump/contains(jena.cmd.ArgDecl)|",
+      "|java+method:///sdb/sdbdump/getArg(jena.cmd.ArgDecl)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///sdb/cmd/ModStore/getDataset()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/io/PrintStream/println(java.lang.String)|",
+      "|java+method:///sdb/sdbdump/getModStore()|",
+      "|java+method:///org/apache/jena/riot/RDFLanguages/nameToLang(java.lang.String)|",
+      "|java+method:///sdb/sdbdump/getStore()|",
+      "|java+method:///sdb/cmd/ModGraph/getModel(org.apache.jena.sdb.Store)|",
+      "|java+method:///sdb/sdbdump/cmdError(java.lang.String,boolean)|",
+      "|java+method:///sdb/cmd/ModGraph/getGraphName()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/Exception/getMessage()|"
+    ],
+    "affectedLib": "org.apache.jena:jena-arq:3.1.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.jena:jena-sdb:3.0.1",
+    "coordinatesV2": "org.apache.jena:jena-sdb:3.1.0",
+    "caller": "|java+method:///org/apache/jena/sdb/SDB/init()|",
+    "called": "|java+method:///org/apache/jena/sparql/util/Context/setIfUndef(org.apache.jena.sparql.util.Symbol,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/apache/jena/sdb/engine/QueryEngineSDB/register()|",
+      "|java+method:///org/apache/jena/sparql/util/Context/set(org.apache.jena.sparql.util.Symbol,boolean)|",
+      "|java+method:///java/io/PrintStream/println(java.lang.String)|",
+      "|java+method:///java/lang/Boolean/valueOf(boolean)|",
+      "|java+method:///org/apache/jena/sparql/util/Context/setIfUndef(org.apache.jena.sparql.util.Symbol,java.lang.Object)|",
+      "|java+method:///org/apache/jena/sdb/assembler/AssemblerVocab/init()|",
+      "|java+method:///org/apache/jena/sdb/SDB/getContext()|",
+      "|java+method:///org/apache/jena/sparql/util/MappingRegistry/addPrefixMapping(java.lang.String,java.lang.String)|",
+      "|java+method:///org/apache/jena/sdb/util/DerbyUtils/setDerbyPageCacheSize(int)|",
+      "|java+method:///org/apache/jena/query/ARQ/getContext()|",
+      "|java+method:///org/apache/jena/sdb/modify/UpdateEngineSDB/register()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/jena/sdb/engine/QueryEngineSDB/register()|",
+      "|java+method:///org/apache/jena/system/JenaSystem/logLifecycle(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///org/apache/jena/sdb/modify/UpdateEngineSDB/register()|",
+      "|java+method:///java/lang/Boolean/valueOf(boolean)|",
+      "|java+method:///org/apache/jena/sparql/util/Context/setIfUndef(org.apache.jena.sparql.util.Symbol,java.lang.Object)|",
+      "|java+method:///org/apache/jena/sdb/assembler/AssemblerVocab/init()|",
+      "|java+method:///org/apache/jena/sdb/SDB/getContext()|",
+      "|java+method:///org/apache/jena/sparql/util/MappingRegistry/addPrefixMapping(java.lang.String,java.lang.String)|",
+      "|java+method:///org/apache/jena/sdb/util/DerbyUtils/setDerbyPageCacheSize(int)|"
+    ],
+    "affectedLib": "org.apache.jena:jena-arq:3.1.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.jena:jena-sdb:3.0.1",
+    "coordinatesV2": "org.apache.jena:jena-sdb:3.1.0",
+    "caller": "|java+constructor:///org/apache/jena/sdb/store/DatasetGraphSDB/DatasetGraphSDB(org.apache.jena.sdb.Store,org.apache.jena.sdb.graph.GraphSDB,org.apache.jena.sparql.util.Context)|",
+    "called": "|java+constructor:///org/apache/jena/sparql/core/TransactionalNotSupported/TransactionalNotSupported()|",
+    "v1Body": [
+      "|java+constructor:///org/apache/jena/shared/LockMRSW/LockMRSW()|",
+      "|java+constructor:///org/apache/jena/sparql/core/DatasetGraphTriplesQuads/DatasetGraphTriplesQuads()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/jena/sparql/core/TransactionalNotSupported/TransactionalNotSupported()|",
+      "|java+constructor:///org/apache/jena/shared/LockMRSW/LockMRSW()|",
+      "|java+constructor:///org/apache/jena/sparql/core/DatasetGraphTriplesQuads/DatasetGraphTriplesQuads()|"
+    ],
+    "affectedLib": "org.apache.jena:jena-arq:3.1.0",
+    "change": "UPDATED"
+  }
+]

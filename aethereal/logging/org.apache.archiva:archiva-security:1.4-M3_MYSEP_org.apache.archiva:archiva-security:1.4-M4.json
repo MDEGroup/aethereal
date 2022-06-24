@@ -1,0 +1,74 @@
+[
+  {
+    "coordinatesV1": "org.apache.archiva:archiva-security:1.4-M3",
+    "coordinatesV2": "org.apache.archiva:archiva-security:1.4-M4",
+    "caller": "|java+method:///org/apache/archiva/security/DefaultUserRepositories/createSession(java.lang.String)|",
+    "called": "|java+constructor:///org/apache/archiva/redback/system/DefaultSecuritySession/DefaultSecuritySession(org.apache.archiva.redback.authentication.AuthenticationResult,org.apache.archiva.redback.users.User)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/archiva/redback/system/DefaultSecuritySession/DefaultSecuritySession(org.apache.archiva.redback.authentication.AuthenticationResult,org.apache.archiva.redback.users.User)|",
+      "|java+method:///org/apache/archiva/redback/system/SecuritySystem/getUserManager()|",
+      "|java+constructor:///org/apache/archiva/security/AccessDeniedException/AccessDeniedException(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///org/apache/archiva/redback/authentication/AuthenticationResult/AuthenticationResult(boolean,java.lang.Object,java.lang.Exception)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///org/apache/archiva/security/ArchivaSecurityException/ArchivaSecurityException(java.lang.String)|",
+      "|java+constructor:///org/apache/archiva/security/PrincipalNotFoundException/PrincipalNotFoundException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/apache/archiva/redback/users/User/getFullName()|",
+      "|java+method:///org/apache/archiva/redback/users/UserManager/findUser(java.lang.String)|",
+      "|java+method:///org/apache/archiva/redback/users/User/isLocked()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/archiva/redback/system/DefaultSecuritySession/DefaultSecuritySession(org.apache.archiva.redback.authentication.AuthenticationResult,org.apache.archiva.redback.users.User)|",
+      "|java+constructor:///org/apache/archiva/redback/authentication/AuthenticationResult/AuthenticationResult(boolean,java.lang.String,java.lang.Exception)|",
+      "|java+method:///org/apache/archiva/redback/system/SecuritySystem/getUserManager()|",
+      "|java+constructor:///org/apache/archiva/security/AccessDeniedException/AccessDeniedException(java.lang.String)|",
+      "|java+method:///org/apache/archiva/redback/authentication/AuthenticationResult/setUser(org.apache.archiva.redback.users.User)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///org/apache/archiva/security/ArchivaSecurityException/ArchivaSecurityException(java.lang.String)|",
+      "|java+constructor:///org/apache/archiva/security/PrincipalNotFoundException/PrincipalNotFoundException(java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///org/apache/archiva/security/ArchivaSecurityException/ArchivaSecurityException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/archiva/redback/users/UserManagerException/getMessage()|",
+      "|java+method:///org/apache/archiva/redback/users/User/getFullName()|",
+      "|java+method:///org/apache/archiva/redback/users/UserManager/findUser(java.lang.String)|",
+      "|java+method:///org/apache/archiva/redback/users/User/isLocked()|"
+    ],
+    "affectedLib": "org.apache.archiva.redback:redback-system:2.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.archiva:archiva-security:1.4-M3",
+    "coordinatesV2": "org.apache.archiva:archiva-security:1.4-M4",
+    "caller": "|java+method:///org/apache/archiva/security/ArchivaServletAuthenticator/isAuthorized(java.lang.String,java.lang.String,java.lang.String)|",
+    "called": "|java+constructor:///org/apache/archiva/redback/system/DefaultSecuritySession/DefaultSecuritySession(org.apache.archiva.redback.authentication.AuthenticationResult,org.apache.archiva.redback.users.User)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/archiva/redback/system/DefaultSecuritySession/DefaultSecuritySession(org.apache.archiva.redback.authentication.AuthenticationResult,org.apache.archiva.redback.users.User)|",
+      "|java+method:///org/apache/archiva/redback/system/SecuritySystem/getUserManager()|",
+      "|java+method:///org/apache/archiva/redback/users/UserNotFoundException/getMessage()|",
+      "|java+method:///org/apache/archiva/redback/authorization/AuthorizationException/getMessage()|",
+      "|java+constructor:///org/apache/archiva/redback/authentication/AuthenticationResult/AuthenticationResult(boolean,java.lang.Object,java.lang.Exception)|",
+      "|java+method:///org/apache/archiva/redback/system/SecuritySystem/isAuthorized(org.apache.archiva.redback.system.SecuritySession,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/apache/archiva/redback/users/UserManager/findUser(java.lang.String)|",
+      "|java+method:///org/apache/archiva/redback/users/User/isLocked()|",
+      "|java+constructor:///org/apache/archiva/redback/authorization/UnauthorizedException/UnauthorizedException(java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///org/apache/archiva/redback/authorization/UnauthorizedException/UnauthorizedException(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/archiva/redback/system/DefaultSecuritySession/DefaultSecuritySession(org.apache.archiva.redback.authentication.AuthenticationResult,org.apache.archiva.redback.users.User)|",
+      "|java+constructor:///org/apache/archiva/redback/authentication/AuthenticationResult/AuthenticationResult(boolean,java.lang.String,java.lang.Exception)|",
+      "|java+method:///org/apache/archiva/redback/system/SecuritySystem/getUserManager()|",
+      "|java+method:///org/apache/archiva/redback/users/UserManagerException/getMessage()|",
+      "|java+method:///org/apache/archiva/redback/users/UserNotFoundException/getMessage()|",
+      "|java+method:///org/apache/archiva/redback/authorization/AuthorizationException/getMessage()|",
+      "|java+method:///org/apache/archiva/redback/system/SecuritySystem/isAuthorized(org.apache.archiva.redback.system.SecuritySession,java.lang.String,java.lang.String)|",
+      "|java+method:///org/apache/archiva/redback/users/UserManager/findUser(java.lang.String)|",
+      "|java+method:///org/apache/archiva/redback/users/User/isLocked()|",
+      "|java+constructor:///org/apache/archiva/redback/authorization/UnauthorizedException/UnauthorizedException(java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///org/apache/archiva/redback/authorization/UnauthorizedException/UnauthorizedException(java.lang.String)|"
+    ],
+    "affectedLib": "org.apache.archiva.redback:redback-system:2.1",
+    "change": "UPDATED"
+  }
+]

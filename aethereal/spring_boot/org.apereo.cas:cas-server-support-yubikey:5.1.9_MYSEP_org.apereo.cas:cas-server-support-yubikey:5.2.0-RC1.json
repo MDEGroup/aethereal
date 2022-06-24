@@ -1,0 +1,76 @@
+[
+  {
+    "coordinatesV1": "org.apereo.cas:cas-server-support-yubikey:5.1.9",
+    "coordinatesV2": "org.apereo.cas:cas-server-support-yubikey:5.2.0-RC1",
+    "caller": "|java+method:///org/apereo/cas/config/support/authentication/YubiKeyAuthenticationEventExecutionPlanConfiguration/yubikeyAuthenticationHandler()|",
+    "called": "|java+constructor:///org/apereo/cas/adaptors/yubikey/YubiKeyAuthenticationHandler/YubiKeyAuthenticationHandler(java.lang.String,org.apereo.cas.services.ServicesManager,org.apereo.cas.authentication.principal.PrincipalFactory,com.yubico.client.v2.YubicoClient,org.apereo.cas.adaptors.yubikey.YubiKeyAccountRegistry)|",
+    "v1Body": [
+      "|java+method:///java/lang/Integer/intValue()|",
+      "|java+method:///org/apereo/cas/config/support/authentication/YubiKeyAuthenticationEventExecutionPlanConfiguration/yubikeyPrincipalFactory()|",
+      "|java+method:///org/apache/commons/lang3/StringUtils/isBlank(java.lang.CharSequence)|",
+      "|java+constructor:///org/apereo/cas/adaptors/yubikey/YubiKeyAuthenticationHandler/YubiKeyAuthenticationHandler(java.lang.String,org.apereo.cas.services.ServicesManager,org.apereo.cas.authentication.principal.PrincipalFactory,java.lang.Integer,java.lang.String,org.apereo.cas.adaptors.yubikey.YubiKeyAccountRegistry)|",
+      "|java+method:///org/apereo/cas/configuration/model/support/mfa/MultifactorAuthenticationProperties$YubiKey/getApiUrls()|",
+      "|java+method:///com/yubico/client/v2/YubicoClient/setWsapiUrls(java.lang.String%5B%5D)|",
+      "|java+method:///java/util/List/isEmpty()|",
+      "|java+method:///org/apereo/cas/configuration/model/support/mfa/MultifactorAuthenticationProperties$YubiKey/getSecretKey()|",
+      "|java+method:///org/apereo/cas/configuration/model/support/mfa/MultifactorAuthenticationProperties/getYubikey()|",
+      "|java+method:///org/apereo/cas/adaptors/yubikey/YubiKeyAuthenticationHandler/getClient()|",
+      "|java+method:///java/util/List/toArray(java.lang.Object%5B%5D)|",
+      "|java+method:///org/apereo/cas/configuration/model/core/authentication/AuthenticationProperties/getMfa()|",
+      "|java+method:///org/apereo/cas/configuration/model/support/mfa/MultifactorAuthenticationProperties$YubiKey/getClientId()|",
+      "|java+method:///org/apereo/cas/configuration/CasConfigurationProperties/getAuthn()|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|",
+      "|java+method:///org/apereo/cas/configuration/model/support/mfa/MultifactorAuthenticationProperties$YubiKey/getName()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apereo/cas/config/support/authentication/YubiKeyAuthenticationEventExecutionPlanConfiguration/yubikeyPrincipalFactory()|",
+      "|java+method:///org/apereo/cas/config/support/authentication/YubiKeyAuthenticationEventExecutionPlanConfiguration/yubicoClient()|",
+      "|java+constructor:///org/apereo/cas/adaptors/yubikey/YubiKeyAuthenticationHandler/YubiKeyAuthenticationHandler(java.lang.String,org.apereo.cas.services.ServicesManager,org.apereo.cas.authentication.principal.PrincipalFactory,com.yubico.client.v2.YubicoClient,org.apereo.cas.adaptors.yubikey.YubiKeyAccountRegistry)|",
+      "|java+method:///org/apereo/cas/configuration/model/core/authentication/AuthenticationProperties/getMfa()|",
+      "|java+method:///org/apereo/cas/configuration/CasConfigurationProperties/getAuthn()|",
+      "|java+method:///org/apereo/cas/configuration/model/support/mfa/MultifactorAuthenticationProperties$YubiKey/getName()|",
+      "|java+method:///org/apereo/cas/config/support/authentication/YubiKeyAuthenticationEventExecutionPlanConfiguration/yubiKeyAccountRegistry()|",
+      "|java+method:///org/apereo/cas/configuration/model/support/mfa/MultifactorAuthenticationProperties/getYubikey()|"
+    ],
+    "affectedLib": "org.apereo.cas:cas-server-support-yubikey-core:5.2.0-RC1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apereo.cas:cas-server-support-yubikey:5.1.9",
+    "coordinatesV2": "org.apereo.cas:cas-server-support-yubikey:5.2.0-RC1",
+    "caller": "|java+method:///org/apereo/cas/config/support/authentication/YubiKeyAuthenticationEventExecutionPlanConfiguration/yubikeyAuthenticationProvider()|",
+    "called": "|java+constructor:///org/apereo/cas/adaptors/yubikey/YubiKeyMultifactorAuthenticationProvider/YubiKeyMultifactorAuthenticationProvider(com.yubico.client.v2.YubicoClient,org.apereo.cas.util.http.HttpClient)|",
+    "v1Body": [
+      "|java+method:///org/apereo/cas/config/support/authentication/YubiKeyAuthenticationEventExecutionPlanConfiguration/yubikeyAuthenticationHandler()|",
+      "|java+method:///org/apereo/cas/adaptors/yubikey/YubiKeyMultifactorAuthenticationProvider/setBypassEvaluator(org.apereo.cas.services.MultifactorAuthenticationProviderBypass)|",
+      "|java+method:///org/apereo/cas/configuration/model/support/mfa/MultifactorAuthenticationProperties$YubiKey/getId()|",
+      "|java+method:///org/apereo/cas/configuration/model/support/mfa/MultifactorAuthenticationProperties/getGlobalFailureMode()|",
+      "|java+constructor:///org/apereo/cas/adaptors/yubikey/YubiKeyMultifactorAuthenticationProvider/YubiKeyMultifactorAuthenticationProvider(org.apereo.cas.adaptors.yubikey.YubiKeyAuthenticationHandler,org.apereo.cas.util.http.HttpClient)|",
+      "|java+method:///org/apereo/cas/adaptors/yubikey/YubiKeyMultifactorAuthenticationProvider/setOrder(int)|",
+      "|java+method:///org/apereo/cas/configuration/model/core/authentication/AuthenticationProperties/getMfa()|",
+      "|java+method:///org/apereo/cas/config/support/authentication/YubiKeyAuthenticationEventExecutionPlanConfiguration/yubikeyBypassEvaluator()|",
+      "|java+method:///org/apereo/cas/configuration/model/support/mfa/MultifactorAuthenticationProperties$YubiKey/getRank()|",
+      "|java+method:///org/apereo/cas/configuration/model/support/mfa/MultifactorAuthenticationProperties/getYubikey()|",
+      "|java+method:///org/apereo/cas/adaptors/yubikey/YubiKeyMultifactorAuthenticationProvider/setGlobalFailureMode(java.lang.String)|",
+      "|java+method:///org/apereo/cas/adaptors/yubikey/YubiKeyMultifactorAuthenticationProvider/setId(java.lang.String)|",
+      "|java+method:///org/apereo/cas/configuration/CasConfigurationProperties/getAuthn()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apereo/cas/config/support/authentication/YubiKeyAuthenticationEventExecutionPlanConfiguration/yubicoClient()|",
+      "|java+method:///org/apereo/cas/adaptors/yubikey/YubiKeyMultifactorAuthenticationProvider/setBypassEvaluator(org.apereo.cas.services.MultifactorAuthenticationProviderBypass)|",
+      "|java+method:///org/apereo/cas/configuration/model/support/mfa/MultifactorAuthenticationProperties$YubiKey/getId()|",
+      "|java+method:///org/apereo/cas/configuration/model/support/mfa/MultifactorAuthenticationProperties/getGlobalFailureMode()|",
+      "|java+constructor:///org/apereo/cas/adaptors/yubikey/YubiKeyMultifactorAuthenticationProvider/YubiKeyMultifactorAuthenticationProvider(com.yubico.client.v2.YubicoClient,org.apereo.cas.util.http.HttpClient)|",
+      "|java+method:///org/apereo/cas/adaptors/yubikey/YubiKeyMultifactorAuthenticationProvider/setOrder(int)|",
+      "|java+method:///org/apereo/cas/configuration/model/core/authentication/AuthenticationProperties/getMfa()|",
+      "|java+method:///org/apereo/cas/config/support/authentication/YubiKeyAuthenticationEventExecutionPlanConfiguration/yubikeyBypassEvaluator()|",
+      "|java+method:///org/apereo/cas/configuration/model/support/mfa/MultifactorAuthenticationProperties$YubiKey/getRank()|",
+      "|java+method:///org/apereo/cas/configuration/model/support/mfa/MultifactorAuthenticationProperties/getYubikey()|",
+      "|java+method:///org/apereo/cas/adaptors/yubikey/YubiKeyMultifactorAuthenticationProvider/setGlobalFailureMode(java.lang.String)|",
+      "|java+method:///org/apereo/cas/adaptors/yubikey/YubiKeyMultifactorAuthenticationProvider/setId(java.lang.String)|",
+      "|java+method:///org/apereo/cas/configuration/CasConfigurationProperties/getAuthn()|"
+    ],
+    "affectedLib": "org.apereo.cas:cas-server-support-yubikey-core:5.2.0-RC1",
+    "change": "UPDATED"
+  }
+]

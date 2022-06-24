@@ -1,0 +1,482 @@
+[
+  {
+    "coordinatesV1": "me.prettyprint:hector-core:0.7.0-28",
+    "coordinatesV2": "me.prettyprint:hector-core:0.7.0-29",
+    "caller": "|java+method:///me/prettyprint/cassandra/connection/LeastActiveBalancingPolicy/getPool(java.util.Collection,java.util.Set)|",
+    "called": "|java+method:///com/google/common/collect/Lists/newArrayList(java.lang.Iterable)|",
+    "v1Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList(java.util.Collection)|",
+      "|java+method:///java/util/Set/size()|",
+      "|java+method:///java/util/Set/contains(java.lang.Object)|",
+      "|java+constructor:///me/prettyprint/cassandra/connection/LeastActiveBalancingPolicy$ShufflingCompare/LeastActiveBalancingPolicy$ShufflingCompare(me.prettyprint.cassandra.connection.LeastActiveBalancingPolicy,me.prettyprint.cassandra.connection.LeastActiveBalancingPolicy$1)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///java/util/Collections/shuffle(java.util.List)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///me/prettyprint/cassandra/connection/ConcurrentHClientPool/getCassandraHost()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/Collections/sort(java.util.List,java.util.Comparator)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Set/size()|",
+      "|java+method:///me/prettyprint/cassandra/connection/HClientPool/getCassandraHost()|",
+      "|java+method:///java/util/Set/contains(java.lang.Object)|",
+      "|java+constructor:///me/prettyprint/cassandra/connection/LeastActiveBalancingPolicy$ShufflingCompare/LeastActiveBalancingPolicy$ShufflingCompare(me.prettyprint.cassandra.connection.LeastActiveBalancingPolicy,me.prettyprint.cassandra.connection.LeastActiveBalancingPolicy$1)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///java/util/Collections/shuffle(java.util.List)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///com/google/common/collect/Lists/newArrayList(java.lang.Iterable)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/Collections/sort(java.util.List,java.util.Comparator)|"
+    ],
+    "affectedLib": "com.google.guava:guava:r08",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "me.prettyprint:hector-core:0.7.0-28",
+    "coordinatesV2": "me.prettyprint:hector-core:0.7.0-29",
+    "caller": "|java+method:///me/prettyprint/cassandra/model/HColumnImpl/clear()|",
+    "called": "|java+method:///org/apache/cassandra/thrift/Column/setTimestampIsSet(boolean)|",
+    "v1Body": [
+      "|java+method:///org/apache/cassandra/thrift/Column/setTimestampIsSet(boolean)|",
+      "|java+method:///org/apache/cassandra/thrift/Column/setTtlIsSet(boolean)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/cassandra/thrift/Column/setTimestampIsSet(boolean)|",
+      "|java+method:///org/apache/cassandra/thrift/Column/setTtlIsSet(boolean)|",
+      "|java+method:///org/apache/cassandra/thrift/Column/setValueIsSet(boolean)|"
+    ],
+    "affectedLib": "org.apache.cassandra:cassandra-all:0.7.4",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "me.prettyprint:hector-core:0.7.0-28",
+    "coordinatesV2": "me.prettyprint:hector-core:0.7.0-29",
+    "caller": "|java+method:///me/prettyprint/cassandra/service/AbstractCluster$5/execute(org.apache.cassandra.thrift.Cassandra$Client)|",
+    "called": "|java+method:///org/apache/cassandra/thrift/Cassandra$Client/system_drop_keyspace(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///me/prettyprint/cassandra/service/AbstractCluster/access$000(me.prettyprint.cassandra.service.AbstractCluster)|",
+      "|java+method:///org/apache/cassandra/thrift/Cassandra$Client/describe_cluster_name()|",
+      "|java+method:///me/prettyprint/cassandra/service/ExceptionsTranslator/translate(java.lang.Throwable)|",
+      "|java+method:///me/prettyprint/cassandra/service/AbstractCluster$5/execute(org.apache.cassandra.thrift.Cassandra$Client)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/cassandra/thrift/Cassandra$Client/system_drop_keyspace(java.lang.String)|",
+      "|java+method:///me/prettyprint/cassandra/service/ExceptionsTranslator/translate(java.lang.Throwable)|",
+      "|java+method:///me/prettyprint/cassandra/service/AbstractCluster$5/execute(org.apache.cassandra.thrift.Cassandra$Client)|"
+    ],
+    "affectedLib": "org.apache.cassandra:cassandra-all:0.7.4",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "me.prettyprint:hector-core:0.7.0-28",
+    "coordinatesV2": "me.prettyprint:hector-core:0.7.0-29",
+    "caller": "|java+constructor:///me/prettyprint/cassandra/service/HColumnFamilyImpl/HColumnFamilyImpl(me.prettyprint.hector.api.Keyspace,java.lang.String,me.prettyprint.hector.api.Serializer,me.prettyprint.hector.api.Serializer)|",
+    "called": "|java+constructor:///org/apache/cassandra/thrift/ColumnParent/ColumnParent(java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///me/prettyprint/cassandra/service/ExceptionsTranslatorImpl/ExceptionsTranslatorImpl()|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.String)|",
+      "|java+constructor:///me/prettyprint/cassandra/model/HSlicePredicate/HSlicePredicate(me.prettyprint.hector.api.Serializer)|",
+      "|java+constructor:///java/util/HashSet/HashSet()|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+constructor:///org/apache/cassandra/thrift/ColumnParent/ColumnParent(java.lang.String)|",
+      "|java+constructor:///me/prettyprint/cassandra/model/ConfigurableConsistencyLevel/ConfigurableConsistencyLevel()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///me/prettyprint/cassandra/service/ExceptionsTranslatorImpl/ExceptionsTranslatorImpl()|",
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.String)|",
+      "|java+constructor:///me/prettyprint/cassandra/model/HSlicePredicate/HSlicePredicate(me.prettyprint.hector.api.Serializer)|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+constructor:///org/apache/cassandra/thrift/ColumnParent/ColumnParent(java.lang.String)|",
+      "|java+constructor:///me/prettyprint/cassandra/model/ConfigurableConsistencyLevel/ConfigurableConsistencyLevel()|"
+    ],
+    "affectedLib": "org.apache.cassandra:cassandra-all:0.7.4",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "me.prettyprint:hector-core:0.7.0-28",
+    "coordinatesV2": "me.prettyprint:hector-core:0.7.0-29",
+    "caller": "|java+method:///me/prettyprint/cassandra/service/AbstractCluster$7/execute(org.apache.cassandra.thrift.Cassandra$Client)|",
+    "called": "|java+method:///org/apache/cassandra/thrift/Cassandra$Client/system_drop_column_family(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///me/prettyprint/cassandra/service/AbstractCluster/access$000(me.prettyprint.cassandra.service.AbstractCluster)|",
+      "|java+method:///org/apache/cassandra/thrift/Cassandra$Client/describe_partitioner()|",
+      "|java+method:///me/prettyprint/cassandra/service/ExceptionsTranslator/translate(java.lang.Throwable)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String,java.lang.Object)|",
+      "|java+method:///me/prettyprint/cassandra/service/AbstractCluster$7/execute(org.apache.cassandra.thrift.Cassandra$Client)|",
+      "|java+method:///org/slf4j/Logger/isInfoEnabled()|"
+    ],
+    "v2Body": [
+      "|java+method:///me/prettyprint/cassandra/service/ExceptionsTranslator/translate(java.lang.Throwable)|",
+      "|java+method:///org/apache/cassandra/thrift/Cassandra$Client/system_drop_column_family(java.lang.String)|",
+      "|java+method:///me/prettyprint/cassandra/service/AbstractCluster$7/execute(org.apache.cassandra.thrift.Cassandra$Client)|"
+    ],
+    "affectedLib": "org.apache.cassandra:cassandra-all:0.7.4",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "me.prettyprint:hector-core:0.7.0-28",
+    "coordinatesV2": "me.prettyprint:hector-core:0.7.0-29",
+    "caller": "|java+method:///me/prettyprint/cassandra/service/ThriftCluster$5/execute(org.apache.cassandra.thrift.Cassandra$Client)|",
+    "called": "|java+method:///org/apache/cassandra/thrift/Cassandra$Client/system_update_column_family(org.apache.cassandra.thrift.CfDef)|",
+    "v1Body": [
+      "|java+method:///me/prettyprint/cassandra/service/ThriftKsDef/toThrift()|",
+      "|java+method:///me/prettyprint/cassandra/service/ExceptionsTranslator/translate(java.lang.Throwable)|",
+      "|java+method:///org/apache/cassandra/thrift/Cassandra$Client/system_add_keyspace(org.apache.cassandra.thrift.KsDef)|",
+      "|java+method:///me/prettyprint/cassandra/service/ThriftCluster$5/execute(org.apache.cassandra.thrift.Cassandra$Client)|"
+    ],
+    "v2Body": [
+      "|java+method:///me/prettyprint/cassandra/service/ThriftCluster$5/execute(org.apache.cassandra.thrift.Cassandra$Client)|",
+      "|java+method:///me/prettyprint/cassandra/service/ThriftCfDef/toThrift()|",
+      "|java+method:///org/apache/cassandra/thrift/Cassandra$Client/system_update_column_family(org.apache.cassandra.thrift.CfDef)|",
+      "|java+method:///me/prettyprint/cassandra/service/ExceptionsTranslator/translate(java.lang.Throwable)|"
+    ],
+    "affectedLib": "org.apache.cassandra:cassandra-all:0.7.4",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "me.prettyprint:hector-core:0.7.0-28",
+    "coordinatesV2": "me.prettyprint:hector-core:0.7.0-29",
+    "caller": "|java+method:///me/prettyprint/cassandra/service/ThriftCluster$2/execute(org.apache.cassandra.thrift.Cassandra$Client)|",
+    "called": "|java+method:///org/apache/cassandra/thrift/Cassandra$Client/describe_schema_versions()|",
+    "v1Body": [
+      "|java+method:///org/apache/cassandra/thrift/Cassandra$Client/system_update_keyspace(org.apache.cassandra.thrift.KsDef)|",
+      "|java+method:///me/prettyprint/cassandra/service/ThriftKsDef/toThrift()|",
+      "|java+method:///me/prettyprint/cassandra/service/ExceptionsTranslator/translate(java.lang.Throwable)|",
+      "|java+method:///me/prettyprint/cassandra/service/ThriftCluster$2/execute(org.apache.cassandra.thrift.Cassandra$Client)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/cassandra/thrift/Cassandra$Client/describe_schema_versions()|",
+      "|java+method:///me/prettyprint/cassandra/service/ExceptionsTranslator/translate(java.lang.Throwable)|",
+      "|java+method:///me/prettyprint/cassandra/service/ThriftCluster$2/execute(org.apache.cassandra.thrift.Cassandra$Client)|"
+    ],
+    "affectedLib": "org.apache.cassandra:cassandra-all:0.7.4",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "me.prettyprint:hector-core:0.7.0-28",
+    "coordinatesV2": "me.prettyprint:hector-core:0.7.0-29",
+    "caller": "|java+method:///me/prettyprint/cassandra/service/ThriftCluster$3/execute(org.apache.cassandra.thrift.Cassandra$Client)|",
+    "called": "|java+method:///org/apache/cassandra/thrift/Cassandra$Client/system_update_keyspace(org.apache.cassandra.thrift.KsDef)|",
+    "v1Body": [
+      "|java+method:///me/prettyprint/cassandra/service/ThriftCluster$3/execute(org.apache.cassandra.thrift.Cassandra$Client)|",
+      "|java+method:///me/prettyprint/cassandra/service/ThriftCfDef/toThrift()|",
+      "|java+method:///me/prettyprint/cassandra/service/ExceptionsTranslator/translate(java.lang.Throwable)|",
+      "|java+method:///org/apache/cassandra/thrift/Cassandra$Client/system_add_column_family(org.apache.cassandra.thrift.CfDef)|"
+    ],
+    "v2Body": [
+      "|java+method:///me/prettyprint/cassandra/service/ThriftCluster$3/execute(org.apache.cassandra.thrift.Cassandra$Client)|",
+      "|java+method:///org/apache/cassandra/thrift/Cassandra$Client/system_update_keyspace(org.apache.cassandra.thrift.KsDef)|",
+      "|java+method:///me/prettyprint/cassandra/service/ThriftKsDef/toThrift()|",
+      "|java+method:///me/prettyprint/cassandra/service/ExceptionsTranslator/translate(java.lang.Throwable)|"
+    ],
+    "affectedLib": "org.apache.cassandra:cassandra-all:0.7.4",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "me.prettyprint:hector-core:0.7.0-28",
+    "coordinatesV2": "me.prettyprint:hector-core:0.7.0-29",
+    "caller": "|java+method:///me/prettyprint/cassandra/service/HColumnFamilyImpl$2/execute(org.apache.cassandra.thrift.Cassandra$Client)|",
+    "called": "|java+method:///org/apache/cassandra/thrift/Cassandra$Client/multiget_slice(java.util.List,org.apache.cassandra.thrift.ColumnParent,org.apache.cassandra.thrift.SlicePredicate,org.apache.cassandra.thrift.ConsistencyLevel)|",
+    "v1Body": [
+      "|java+method:///me/prettyprint/cassandra/service/HColumnFamilyImpl$2/execute(org.apache.cassandra.thrift.Cassandra$Client)|"
+    ],
+    "v2Body": [
+      "|java+method:///me/prettyprint/cassandra/service/HColumnFamilyImpl$2/getCassandraHost()|",
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///me/prettyprint/cassandra/service/HColumnFamilyImpl/access$1102(me.prettyprint.cassandra.service.HColumnFamilyImpl,boolean)|",
+      "|java+method:///me/prettyprint/cassandra/service/HColumnFamilyImpl/access$000(me.prettyprint.cassandra.service.HColumnFamilyImpl)|",
+      "|java+method:///me/prettyprint/cassandra/service/HColumnFamilyImpl/access$100(me.prettyprint.cassandra.service.HColumnFamilyImpl)|",
+      "|java+method:///me/prettyprint/cassandra/service/HColumnFamilyImpl/access$200(me.prettyprint.cassandra.service.HColumnFamilyImpl)|",
+      "|java+method:///me/prettyprint/cassandra/service/HColumnFamilyImpl/access$300(me.prettyprint.cassandra.service.HColumnFamilyImpl)|",
+      "|java+method:///me/prettyprint/cassandra/service/HColumnFamilyImpl/access$400(me.prettyprint.cassandra.service.HColumnFamilyImpl)|",
+      "|java+method:///me/prettyprint/cassandra/service/HColumnFamilyImpl/access$500(me.prettyprint.cassandra.service.HColumnFamilyImpl)|",
+      "|java+method:///me/prettyprint/cassandra/service/HColumnFamilyImpl/access$1202(me.prettyprint.cassandra.service.HColumnFamilyImpl,java.util.Map)|",
+      "|java+method:///me/prettyprint/cassandra/service/HColumnFamilyImpl/access$800(me.prettyprint.cassandra.service.HColumnFamilyImpl)|",
+      "|java+method:///org/apache/cassandra/thrift/Cassandra$Client/multiget_slice(java.util.List,org.apache.cassandra.thrift.ColumnParent,org.apache.cassandra.thrift.SlicePredicate,org.apache.cassandra.thrift.ConsistencyLevel)|",
+      "|java+method:///me/prettyprint/cassandra/service/HColumnFamilyImpl$2/execute(org.apache.cassandra.thrift.Cassandra$Client)|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///me/prettyprint/cassandra/service/HColumnFamilyImpl/access$1000(me.prettyprint.cassandra.service.HColumnFamilyImpl)|",
+      "|java+method:///me/prettyprint/cassandra/model/HSlicePredicate/toString()|",
+      "|java+method:///me/prettyprint/hector/api/ConsistencyLevelPolicy/get(me.prettyprint.cassandra.service.OperationType)|",
+      "|java+method:///me/prettyprint/cassandra/model/HSlicePredicate/toThrift()|",
+      "|java+method:///me/prettyprint/cassandra/model/thrift/ThriftConverter/consistencyLevel(me.prettyprint.hector.api.HConsistencyLevel)|",
+      "|java+method:///me/prettyprint/cassandra/service/HColumnFamilyImpl/access$600(me.prettyprint.cassandra.service.HColumnFamilyImpl,long,me.prettyprint.cassandra.service.CassandraHost)|",
+      "|java+method:///me/prettyprint/hector/api/Serializer/toBytesList(java.util.List)|",
+      "|java+method:///me/prettyprint/cassandra/service/ExceptionsTranslator/translate(java.lang.Throwable)|",
+      "|java+method:///me/prettyprint/cassandra/service/HColumnFamilyImpl/access$900(me.prettyprint.cassandra.service.HColumnFamilyImpl)|",
+      "|java+method:///org/slf4j/Logger/isDebugEnabled()|"
+    ],
+    "affectedLib": "org.apache.cassandra:cassandra-all:0.7.4",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "me.prettyprint:hector-core:0.7.0-28",
+    "coordinatesV2": "me.prettyprint:hector-core:0.7.0-29",
+    "caller": "|java+method:///me/prettyprint/cassandra/service/AbstractCluster$6/execute(org.apache.cassandra.thrift.Cassandra$Client)|",
+    "called": "|java+method:///org/apache/cassandra/thrift/Cassandra$Client/describe_partitioner()|",
+    "v1Body": [
+      "|java+method:///org/apache/cassandra/thrift/Cassandra$Client/system_drop_keyspace(java.lang.String)|",
+      "|java+method:///me/prettyprint/cassandra/service/ExceptionsTranslator/translate(java.lang.Throwable)|",
+      "|java+method:///me/prettyprint/cassandra/service/AbstractCluster$6/execute(org.apache.cassandra.thrift.Cassandra$Client)|"
+    ],
+    "v2Body": [
+      "|java+method:///me/prettyprint/cassandra/service/AbstractCluster/access$000(me.prettyprint.cassandra.service.AbstractCluster)|",
+      "|java+method:///org/apache/cassandra/thrift/Cassandra$Client/describe_partitioner()|",
+      "|java+method:///me/prettyprint/cassandra/service/ExceptionsTranslator/translate(java.lang.Throwable)|",
+      "|java+method:///org/slf4j/Logger/isInfoEnabled()|",
+      "|java+method:///me/prettyprint/cassandra/service/AbstractCluster$6/execute(org.apache.cassandra.thrift.Cassandra$Client)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String,java.lang.Object)|"
+    ],
+    "affectedLib": "org.apache.cassandra:cassandra-all:0.7.4",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "me.prettyprint:hector-core:0.7.0-28",
+    "coordinatesV2": "me.prettyprint:hector-core:0.7.0-29",
+    "caller": "|java+method:///me/prettyprint/cassandra/service/HColumnFamilyImpl$1/execute(org.apache.cassandra.thrift.Cassandra$Client)|",
+    "called": "|java+method:///org/apache/cassandra/thrift/Cassandra$Client/get_slice(java.nio.ByteBuffer,org.apache.cassandra.thrift.ColumnParent,org.apache.cassandra.thrift.SlicePredicate,org.apache.cassandra.thrift.ConsistencyLevel)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///me/prettyprint/cassandra/serializers/ByteBufferSerializer/get()|",
+      "|java+constructor:///me/prettyprint/cassandra/model/HColumnImpl/HColumnImpl(org.apache.cassandra.thrift.Column,me.prettyprint.hector.api.Serializer,me.prettyprint.hector.api.Serializer)|",
+      "|java+method:///me/prettyprint/hector/api/Serializer/toByteBuffer(java.lang.Object)|",
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///java/nio/ByteBuffer/duplicate()|",
+      "|java+method:///java/lang/System/nanoTime()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///me/prettyprint/cassandra/service/HColumnFamilyImpl/access$000(me.prettyprint.cassandra.service.HColumnFamilyImpl)|",
+      "|java+method:///me/prettyprint/cassandra/service/HColumnFamilyImpl/access$100(me.prettyprint.cassandra.service.HColumnFamilyImpl)|",
+      "|java+method:///me/prettyprint/cassandra/service/HColumnFamilyImpl/access$200(me.prettyprint.cassandra.service.HColumnFamilyImpl)|",
+      "|java+method:///me/prettyprint/cassandra/service/HColumnFamilyImpl/access$400(me.prettyprint.cassandra.service.HColumnFamilyImpl)|",
+      "|java+method:///me/prettyprint/cassandra/service/HColumnFamilyImpl/access$600(me.prettyprint.cassandra.service.HColumnFamilyImpl)|",
+      "|java+method:///me/prettyprint/cassandra/service/HColumnFamilyImpl/access$700(me.prettyprint.cassandra.service.HColumnFamilyImpl)|",
+      "|java+method:///org/slf4j/Logger/isDebugEnabled()|",
+      "|java+method:///me/prettyprint/cassandra/service/HColumnFamilyImpl$1/execute(org.apache.cassandra.thrift.Cassandra$Client)|",
+      "|java+method:///me/prettyprint/cassandra/service/HColumnFamilyImpl/access$902(me.prettyprint.cassandra.service.HColumnFamilyImpl,boolean)|",
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///me/prettyprint/cassandra/model/HSlicePredicate/toString()|",
+      "|java+method:///me/prettyprint/cassandra/service/HColumnFamilyImpl$1/getCassandraHost()|",
+      "|java+method:///me/prettyprint/cassandra/model/HColumnImpl/apply(org.apache.cassandra.thrift.Column)|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+method:///me/prettyprint/hector/api/ConsistencyLevelPolicy/get(me.prettyprint.cassandra.service.OperationType)|",
+      "|java+method:///me/prettyprint/cassandra/model/HSlicePredicate/toThrift()|",
+      "|java+method:///me/prettyprint/cassandra/model/thrift/ThriftConverter/consistencyLevel(me.prettyprint.hector.api.HConsistencyLevel)|",
+      "|java+method:///me/prettyprint/hector/api/Serializer/fromByteBuffer(java.nio.ByteBuffer)|",
+      "|java+method:///me/prettyprint/cassandra/service/ExceptionsTranslator/translate(java.lang.Throwable)|",
+      "|java+method:///org/apache/cassandra/thrift/Cassandra$Client/get_slice(java.nio.ByteBuffer,org.apache.cassandra.thrift.ColumnParent,org.apache.cassandra.thrift.SlicePredicate,org.apache.cassandra.thrift.ConsistencyLevel)|",
+      "|java+method:///me/prettyprint/cassandra/service/HColumnFamilyImpl/access$300(me.prettyprint.cassandra.service.HColumnFamilyImpl)|",
+      "|java+method:///me/prettyprint/cassandra/service/HColumnFamilyImpl/access$500(me.prettyprint.cassandra.service.HColumnFamilyImpl)|",
+      "|java+method:///org/apache/cassandra/thrift/ColumnOrSuperColumn/getColumn()|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///me/prettyprint/cassandra/service/HColumnFamilyImpl/access$800(me.prettyprint.cassandra.service.HColumnFamilyImpl)|",
+      "|java+method:///java/util/Collection/iterator()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///me/prettyprint/hector/api/Serializer/toByteBuffer(java.lang.Object)|",
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///me/prettyprint/cassandra/service/HColumnFamilyImpl/access$1102(me.prettyprint.cassandra.service.HColumnFamilyImpl,boolean)|",
+      "|java+method:///me/prettyprint/cassandra/service/HColumnFamilyImpl/access$700(me.prettyprint.cassandra.service.HColumnFamilyImpl,java.lang.Object,java.util.List)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///me/prettyprint/cassandra/service/HColumnFamilyImpl/access$000(me.prettyprint.cassandra.service.HColumnFamilyImpl)|",
+      "|java+method:///me/prettyprint/cassandra/service/HColumnFamilyImpl/access$100(me.prettyprint.cassandra.service.HColumnFamilyImpl)|",
+      "|java+method:///me/prettyprint/cassandra/service/HColumnFamilyImpl/access$200(me.prettyprint.cassandra.service.HColumnFamilyImpl)|",
+      "|java+method:///me/prettyprint/cassandra/service/HColumnFamilyImpl/access$400(me.prettyprint.cassandra.service.HColumnFamilyImpl)|",
+      "|java+method:///me/prettyprint/cassandra/service/HColumnFamilyImpl/access$500(me.prettyprint.cassandra.service.HColumnFamilyImpl)|",
+      "|java+method:///me/prettyprint/cassandra/service/HColumnFamilyImpl$1/execute(org.apache.cassandra.thrift.Cassandra$Client)|",
+      "|java+method:///me/prettyprint/cassandra/service/HColumnFamilyImpl/access$1000(me.prettyprint.cassandra.service.HColumnFamilyImpl)|",
+      "|java+method:///me/prettyprint/cassandra/model/HSlicePredicate/toString()|",
+      "|java+method:///me/prettyprint/cassandra/service/HColumnFamilyImpl$1/getCassandraHost()|",
+      "|java+method:///me/prettyprint/hector/api/ConsistencyLevelPolicy/get(me.prettyprint.cassandra.service.OperationType)|",
+      "|java+method:///me/prettyprint/cassandra/model/HSlicePredicate/toThrift()|",
+      "|java+method:///me/prettyprint/cassandra/model/thrift/ThriftConverter/consistencyLevel(me.prettyprint.hector.api.HConsistencyLevel)|",
+      "|java+method:///me/prettyprint/cassandra/service/HColumnFamilyImpl/access$600(me.prettyprint.cassandra.service.HColumnFamilyImpl,long,me.prettyprint.cassandra.service.CassandraHost)|",
+      "|java+method:///me/prettyprint/cassandra/service/ExceptionsTranslator/translate(java.lang.Throwable)|",
+      "|java+method:///org/apache/cassandra/thrift/Cassandra$Client/get_slice(java.nio.ByteBuffer,org.apache.cassandra.thrift.ColumnParent,org.apache.cassandra.thrift.SlicePredicate,org.apache.cassandra.thrift.ConsistencyLevel)|",
+      "|java+method:///me/prettyprint/cassandra/service/HColumnFamilyImpl/access$300(me.prettyprint.cassandra.service.HColumnFamilyImpl)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///me/prettyprint/cassandra/service/HColumnFamilyImpl/access$800(me.prettyprint.cassandra.service.HColumnFamilyImpl)|",
+      "|java+method:///me/prettyprint/cassandra/service/HColumnFamilyImpl/access$900(me.prettyprint.cassandra.service.HColumnFamilyImpl)|",
+      "|java+method:///org/slf4j/Logger/isDebugEnabled()|"
+    ],
+    "affectedLib": "org.apache.cassandra:cassandra-all:0.7.4",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "me.prettyprint:hector-core:0.7.0-28",
+    "coordinatesV2": "me.prettyprint:hector-core:0.7.0-29",
+    "caller": "|java+method:///me/prettyprint/cassandra/service/AbstractCluster$8/execute(org.apache.cassandra.thrift.Cassandra$Client)|",
+    "called": "|java+method:///org/apache/cassandra/thrift/Cassandra$Client/truncate(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///me/prettyprint/cassandra/service/ExceptionsTranslator/translate(java.lang.Throwable)|",
+      "|java+method:///org/apache/cassandra/thrift/Cassandra$Client/system_drop_column_family(java.lang.String)|",
+      "|java+method:///me/prettyprint/cassandra/service/AbstractCluster$8/execute(org.apache.cassandra.thrift.Cassandra$Client)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/cassandra/thrift/Cassandra$Client/truncate(java.lang.String)|",
+      "|java+method:///me/prettyprint/cassandra/service/ExceptionsTranslator/translate(java.lang.Throwable)|",
+      "|java+method:///me/prettyprint/cassandra/service/AbstractCluster$8/execute(org.apache.cassandra.thrift.Cassandra$Client)|"
+    ],
+    "affectedLib": "org.apache.cassandra:cassandra-all:0.7.4",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "me.prettyprint:hector-core:0.7.0-28",
+    "coordinatesV2": "me.prettyprint:hector-core:0.7.0-29",
+    "caller": "|java+method:///me/prettyprint/cassandra/service/ThriftCluster$4/execute(org.apache.cassandra.thrift.Cassandra$Client)|",
+    "called": "|java+method:///org/apache/cassandra/thrift/Cassandra$Client/system_add_column_family(org.apache.cassandra.thrift.CfDef)|",
+    "v1Body": [
+      "|java+method:///me/prettyprint/cassandra/service/ThriftCluster$4/execute(org.apache.cassandra.thrift.Cassandra$Client)|",
+      "|java+method:///me/prettyprint/cassandra/service/ThriftCfDef/toThrift()|",
+      "|java+method:///org/apache/cassandra/thrift/Cassandra$Client/system_update_column_family(org.apache.cassandra.thrift.CfDef)|",
+      "|java+method:///me/prettyprint/cassandra/service/ExceptionsTranslator/translate(java.lang.Throwable)|"
+    ],
+    "v2Body": [
+      "|java+method:///me/prettyprint/cassandra/service/ThriftCluster$4/execute(org.apache.cassandra.thrift.Cassandra$Client)|",
+      "|java+method:///me/prettyprint/cassandra/service/ThriftCfDef/toThrift()|",
+      "|java+method:///me/prettyprint/cassandra/service/ExceptionsTranslator/translate(java.lang.Throwable)|",
+      "|java+method:///org/apache/cassandra/thrift/Cassandra$Client/system_add_column_family(org.apache.cassandra.thrift.CfDef)|"
+    ],
+    "affectedLib": "org.apache.cassandra:cassandra-all:0.7.4",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "me.prettyprint:hector-core:0.7.0-28",
+    "coordinatesV2": "me.prettyprint:hector-core:0.7.0-29",
+    "caller": "|java+method:///me/prettyprint/cassandra/model/HColumnImpl/apply(java.lang.Object,long,int)|",
+    "called": "|java+method:///org/apache/cassandra/thrift/Column/setTimestamp(long)|",
+    "v1Body": [
+      "|java+method:///me/prettyprint/hector/api/Serializer/toByteBuffer(java.lang.Object)|",
+      "|java+method:///org/apache/cassandra/thrift/Column/setTtl(int)|",
+      "|java+method:///org/apache/cassandra/thrift/Column/setTimestamp(long)|"
+    ],
+    "v2Body": [
+      "|java+method:///me/prettyprint/cassandra/model/HColumnImpl/setValue(java.lang.Object)|",
+      "|java+method:///org/apache/cassandra/thrift/Column/setTtl(int)|",
+      "|java+method:///org/apache/cassandra/thrift/Column/setTimestamp(long)|"
+    ],
+    "affectedLib": "org.apache.cassandra:cassandra-all:0.7.4",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "me.prettyprint:hector-core:0.7.0-28",
+    "coordinatesV2": "me.prettyprint:hector-core:0.7.0-29",
+    "caller": "|java+method:///me/prettyprint/cassandra/connection/HConnectionManager/operateWithFailover(me.prettyprint.cassandra.service.Operation)|",
+    "called": "|java+method:///org/apache/cassandra/thrift/Cassandra$Client/login(org.apache.cassandra.thrift.AuthenticationRequest)|",
+    "v1Body": [
+      "|java+method:///org/perf4j/StopWatch/stop(java.lang.String)|",
+      "|java+method:///me/prettyprint/cassandra/connection/HConnectionManager/getClientFromLBPolicy(java.util.Set)|",
+      "|java+method:///me/prettyprint/cassandra/connection/ConcurrentHClientPool/getCassandraHost()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///me/prettyprint/cassandra/service/CassandraClientMonitor/incCounter(me.prettyprint.cassandra.service.CassandraClientMonitor$Counter)|",
+      "|java+method:///me/prettyprint/cassandra/connection/HConnectionManager/sleepBetweenHostSkips(me.prettyprint.cassandra.service.FailoverPolicy)|",
+      "|java+constructor:///org/apache/cassandra/thrift/AuthenticationRequest/AuthenticationRequest(java.util.Map)|",
+      "|java+method:///me/prettyprint/cassandra/service/ExceptionsTranslator/translate(java.lang.Throwable)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///me/prettyprint/cassandra/connection/HThriftClient/close()|",
+      "|java+method:///me/prettyprint/cassandra/connection/HConnectionManager/releaseClient(me.prettyprint.cassandra.connection.HThriftClient)|",
+      "|java+constructor:///org/perf4j/slf4j/Slf4JStopWatch/Slf4JStopWatch(org.slf4j.Logger)|",
+      "|java+method:///java/lang/Math/min(int,int)|",
+      "|java+constructor:///java/util/HashSet/HashSet()|",
+      "|java+method:///java/util/Set/add(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/cliffc/high_scale_lib/NonBlockingHashMap/size()|",
+      "|java+method:///me/prettyprint/cassandra/connection/HConnectionManager/markHostAsDown(me.prettyprint.cassandra.connection.HThriftClient)|",
+      "|java+method:///me/prettyprint/cassandra/connection/HThriftClient/getCassandra(java.lang.String)|",
+      "|java+method:///java/util/Map/isEmpty()|",
+      "|java+method:///me/prettyprint/cassandra/connection/ConcurrentHClientPool/borrowClient()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/apache/cassandra/thrift/Cassandra$Client/login(org.apache.cassandra.thrift.AuthenticationRequest)|",
+      "|java+method:///me/prettyprint/cassandra/service/Operation/executeAndSetResult(org.apache.cassandra.thrift.Cassandra$Client,me.prettyprint.cassandra.service.CassandraHost)|",
+      "|java+method:///me/prettyprint/cassandra/connection/HConnectionManager/doTimeoutCheck(me.prettyprint.cassandra.service.CassandraHost)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/perf4j/StopWatch/stop(java.lang.String)|",
+      "|java+method:///me/prettyprint/cassandra/connection/HConnectionManager/getClientFromLBPolicy(java.util.Set)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///me/prettyprint/cassandra/service/CassandraClientMonitor/incCounter(me.prettyprint.cassandra.service.CassandraClientMonitor$Counter)|",
+      "|java+method:///java/util/Map/isEmpty()|",
+      "|java+method:///me/prettyprint/cassandra/service/ExceptionsTranslator/translate(java.lang.Throwable)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Object)|",
+      "|java+method:///me/prettyprint/cassandra/connection/HThriftClient/close()|",
+      "|java+method:///me/prettyprint/cassandra/connection/HConnectionManager/releaseClient(me.prettyprint.cassandra.connection.HThriftClient)|",
+      "|java+constructor:///org/perf4j/slf4j/Slf4JStopWatch/Slf4JStopWatch(org.slf4j.Logger)|",
+      "|java+method:///java/lang/Math/min(int,int)|",
+      "|java+constructor:///java/util/HashSet/HashSet()|",
+      "|java+method:///java/util/Set/add(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/cliffc/high_scale_lib/NonBlockingHashMap/size()|",
+      "|java+method:///me/prettyprint/cassandra/connection/HThriftClient/getCassandra(java.lang.String)|",
+      "|java+method:///me/prettyprint/cassandra/connection/HConnectionManager/markHostAsDown(me.prettyprint.cassandra.service.CassandraHost)|",
+      "|java+method:///me/prettyprint/cassandra/connection/HConnectionManager/sleepBetweenHostSkips(me.prettyprint.cassandra.service.FailoverPolicy)|",
+      "|java+constructor:///org/apache/cassandra/thrift/AuthenticationRequest/AuthenticationRequest(java.util.Map)|",
+      "|java+method:///me/prettyprint/cassandra/connection/HClientPool/getCassandraHost()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/apache/cassandra/thrift/Cassandra$Client/login(org.apache.cassandra.thrift.AuthenticationRequest)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///me/prettyprint/cassandra/connection/HClientPool/borrowClient()|",
+      "|java+method:///me/prettyprint/cassandra/service/Operation/executeAndSetResult(org.apache.cassandra.thrift.Cassandra$Client,me.prettyprint.cassandra.service.CassandraHost)|",
+      "|java+method:///me/prettyprint/cassandra/connection/HConnectionManager/doTimeoutCheck(me.prettyprint.cassandra.service.CassandraHost)|"
+    ],
+    "affectedLib": "org.apache.cassandra:cassandra-all:0.7.4",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "me.prettyprint:hector-core:0.7.0-28",
+    "coordinatesV2": "me.prettyprint:hector-core:0.7.0-29",
+    "caller": "|java+method:///me/prettyprint/cassandra/service/ThriftCfDef/toThrift()|",
+    "called": "|java+method:///org/apache/cassandra/thrift/CfDef/setRead_repair_chance(double)|",
+    "v1Body": [
+      "|java+method:///org/apache/cassandra/thrift/CfDef/setDefault_validation_class(java.lang.String)|",
+      "|java+method:///org/apache/cassandra/thrift/CfDef/setKey_cache_size(double)|",
+      "|java+constructor:///org/apache/cassandra/thrift/CfDef/CfDef(java.lang.String,java.lang.String)|",
+      "|java+method:///me/prettyprint/hector/api/ddl/ColumnType/getValue()|",
+      "|java+method:///org/apache/cassandra/thrift/CfDef/setMax_compaction_threshold(int)|",
+      "|java+method:///org/apache/cassandra/thrift/CfDef/setMemtable_flush_after_mins(int)|",
+      "|java+method:///org/apache/cassandra/thrift/CfDef/setSubcomparator_type(java.lang.String)|",
+      "|java+method:///org/apache/cassandra/thrift/CfDef/setMin_compaction_threshold(int)|",
+      "|java+method:///org/apache/cassandra/thrift/CfDef/setMemtable_operations_in_millions(double)|",
+      "|java+method:///me/prettyprint/hector/api/ddl/ComparatorType/getClassName()|",
+      "|java+method:///org/apache/cassandra/thrift/CfDef/setId(int)|",
+      "|java+method:///org/apache/cassandra/thrift/CfDef/setRead_repair_chance(double)|",
+      "|java+method:///org/apache/cassandra/thrift/CfDef/setRow_cache_size(double)|",
+      "|java+method:///org/apache/cassandra/thrift/CfDef/setGc_grace_seconds(int)|",
+      "|java+method:///org/apache/cassandra/thrift/CfDef/setComment(java.lang.String)|",
+      "|java+method:///org/apache/cassandra/thrift/CfDef/setColumn_metadata(java.util.List)|",
+      "|java+method:///org/apache/cassandra/thrift/CfDef/setMemtable_throughput_in_mb(int)|",
+      "|java+method:///me/prettyprint/cassandra/service/ThriftColumnDef/toThriftList(java.util.List)|",
+      "|java+method:///org/apache/cassandra/thrift/CfDef/setColumn_type(java.lang.String)|",
+      "|java+method:///org/apache/cassandra/thrift/CfDef/setComparator_type(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/cassandra/thrift/CfDef/setDefault_validation_class(java.lang.String)|",
+      "|java+method:///org/apache/cassandra/thrift/CfDef/setKey_cache_size(double)|",
+      "|java+constructor:///org/apache/cassandra/thrift/CfDef/CfDef(java.lang.String,java.lang.String)|",
+      "|java+method:///me/prettyprint/hector/api/ddl/ColumnType/getValue()|",
+      "|java+method:///org/apache/cassandra/thrift/CfDef/setMax_compaction_threshold(int)|",
+      "|java+method:///org/apache/cassandra/thrift/CfDef/setMemtable_flush_after_mins(int)|",
+      "|java+method:///org/apache/cassandra/thrift/CfDef/setSubcomparator_type(java.lang.String)|",
+      "|java+method:///org/apache/cassandra/thrift/CfDef/setKey_cache_save_period_in_seconds(int)|",
+      "|java+method:///org/apache/cassandra/thrift/CfDef/setMin_compaction_threshold(int)|",
+      "|java+method:///org/apache/cassandra/thrift/CfDef/setMemtable_operations_in_millions(double)|",
+      "|java+method:///me/prettyprint/hector/api/ddl/ComparatorType/getClassName()|",
+      "|java+method:///org/apache/cassandra/thrift/CfDef/setId(int)|",
+      "|java+method:///org/apache/cassandra/thrift/CfDef/setRead_repair_chance(double)|",
+      "|java+method:///org/apache/cassandra/thrift/CfDef/setRow_cache_size(double)|",
+      "|java+method:///org/apache/cassandra/thrift/CfDef/setGc_grace_seconds(int)|",
+      "|java+method:///org/apache/cassandra/thrift/CfDef/setComment(java.lang.String)|",
+      "|java+method:///org/apache/cassandra/thrift/CfDef/setColumn_metadata(java.util.List)|",
+      "|java+method:///org/apache/cassandra/thrift/CfDef/setMemtable_throughput_in_mb(int)|",
+      "|java+method:///me/prettyprint/cassandra/service/ThriftColumnDef/toThriftList(java.util.List)|",
+      "|java+method:///org/apache/cassandra/thrift/CfDef/setColumn_type(java.lang.String)|",
+      "|java+method:///org/apache/cassandra/thrift/CfDef/setComparator_type(java.lang.String)|"
+    ],
+    "affectedLib": "org.apache.cassandra:cassandra-all:0.7.4",
+    "change": "UPDATED"
+  }
+]

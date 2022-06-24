@@ -1,0 +1,61 @@
+[
+  {
+    "coordinatesV1": "de.otto.edison:edison-cache:1.0.0.RC1",
+    "coordinatesV2": "de.otto.edison:edison-cache:0.82.2",
+    "caller": "|java+method:///de/otto/edison/cache/configuration/CaffeineCacheConfig/toMap()|",
+    "called": "|java+method:///com/google/common/base/Splitter/split(java.lang.CharSequence)|",
+    "v1Body": [
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///com/google/common/base/Splitter/split(java.lang.CharSequence)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean,java.lang.String,java.lang.Object)|",
+      "|java+method:///java/util/List/isEmpty()|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean,java.lang.Object)|",
+      "|java+method:///java/lang/Iterable/iterator()|",
+      "|java+method:///java/util/List/get(int)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///com/google/common/collect/ImmutableList/copyOf(java.lang.Iterable)|",
+      "|java+constructor:///java/util/LinkedHashMap/LinkedHashMap()|",
+      "|java+method:///com/github/benmanes/caffeine/cache/CaffeineSpec/toParsableString()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///java/lang/IllegalStateException/IllegalStateException(java.lang.String)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/util/List/isEmpty()|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///de/otto/edison/cache/configuration/CaffeineCacheConfig/split(java.lang.String,java.lang.String)|",
+      "|java+method:///java/util/List/get(int)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+constructor:///java/util/LinkedHashMap/LinkedHashMap()|",
+      "|java+method:///com/github/benmanes/caffeine/cache/CaffeineSpec/toParsableString()|"
+    ],
+    "affectedLib": "com.google.guava:guava:20.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "de.otto.edison:edison-cache:1.0.0.RC1",
+    "coordinatesV2": "de.otto.edison:edison-cache:0.82.2",
+    "caller": "|java+constructor:///de/otto/edison/cache/configuration/DefaultCacheRegistry/DefaultCacheRegistry(java.util.List)|",
+    "called": "|java+method:///com/google/common/collect/Maps/newConcurrentMap()|",
+    "v1Body": [
+      "|java+method:///java/util/stream/Stream/map(java.util.function.Function)|",
+      "|java+method:///java/util/List/stream()|",
+      "|java+method:///java/util/stream/Stream/forEach(java.util.function.Consumer)|",
+      "|java+method:///com/google/common/collect/Maps/newConcurrentMap()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/stream/Stream/map(java.util.function.Function)|",
+      "|java+constructor:///java/util/concurrent/ConcurrentHashMap/ConcurrentHashMap()|",
+      "|java+method:///java/util/List/stream()|",
+      "|java+method:///java/util/stream/Stream/forEach(java.util.function.Consumer)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "com.google.guava:guava:20.0",
+    "change": "REMOVED"
+  }
+]

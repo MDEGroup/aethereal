@@ -1,0 +1,111 @@
+[
+  {
+    "coordinatesV1": "org.apache.tiles:tiles-servlet:2.2.2",
+    "coordinatesV2": "org.apache.tiles:tiles-servlet:3.0.0",
+    "caller": "|java+method:///org/apache/tiles/web/util/TilesDispatchServlet/doGet(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)|",
+    "called": "|java+constructor:///org/apache/tiles/request/servlet/ServletRequest/ServletRequest(org.apache.tiles.request.ApplicationContext,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)|",
+    "v1Body": [
+      "|java+method:///org/apache/tiles/web/util/TilesDispatchServlet/getServletContext()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/apache/tiles/web/util/TilesDispatchServlet/getDefinitionName(javax.servlet.http.HttpServletRequest)|",
+      "|java+method:///org/slf4j/Logger/isDebugEnabled()|",
+      "|java+method:///org/apache/tiles/TilesContainer/getAttributeContext(java.lang.Object%5B%5D)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/apache/tiles/TilesContainer/render(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///org/apache/tiles/servlet/context/ServletUtil/getContainer(javax.servlet.ServletContext,java.lang.String)|",
+      "|java+method:///org/apache/tiles/web/util/AttributeContextMutator/mutate(org.apache.tiles.AttributeContext,javax.servlet.ServletRequest)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/tiles/TilesContainer/getAttributeContext(org.apache.tiles.request.Request)|",
+      "|java+method:///org/apache/tiles/access/TilesAccess/getContainer(org.apache.tiles.request.ApplicationContext,java.lang.String)|",
+      "|java+method:///org/apache/tiles/web/util/TilesDispatchServlet/getServletContext()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///org/apache/tiles/request/servlet/ServletRequest/ServletRequest(org.apache.tiles.request.ApplicationContext,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)|",
+      "|java+method:///org/apache/tiles/TilesContainer/render(java.lang.String,org.apache.tiles.request.Request)|",
+      "|java+method:///org/apache/tiles/request/servlet/ServletUtil/getApplicationContext(javax.servlet.ServletContext)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/apache/tiles/web/util/TilesDispatchServlet/getDefinitionName(javax.servlet.http.HttpServletRequest)|",
+      "|java+method:///org/slf4j/Logger/isDebugEnabled()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/apache/tiles/web/util/AttributeContextMutator/mutate(org.apache.tiles.AttributeContext,javax.servlet.ServletRequest)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String)|"
+    ],
+    "affectedLib": "org.apache.tiles:tiles-request-servlet:1.0.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.tiles:tiles-servlet:2.2.2",
+    "coordinatesV2": "org.apache.tiles:tiles-servlet:3.0.0",
+    "caller": "|java+method:///org/apache/tiles/web/startup/AbstractTilesListener/contextInitialized(javax.servlet.ServletContextEvent)|",
+    "called": "|java+constructor:///org/apache/tiles/request/servlet/ServletApplicationContext/ServletApplicationContext(javax.servlet.ServletContext)|",
+    "v1Body": [
+      "|java+method:///org/apache/tiles/startup/TilesInitializer/initialize(org.apache.tiles.TilesApplicationContext)|",
+      "|java+constructor:///org/apache/tiles/servlet/context/ServletTilesApplicationContext/ServletTilesApplicationContext(javax.servlet.ServletContext)|",
+      "|java+method:///javax/servlet/ServletContextEvent/getServletContext()|",
+      "|java+method:///org/apache/tiles/web/startup/AbstractTilesListener/createTilesInitializer()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/tiles/request/servlet/ServletApplicationContext/ServletApplicationContext(javax.servlet.ServletContext)|",
+      "|java+method:///org/apache/tiles/startup/TilesInitializer/initialize(org.apache.tiles.request.ApplicationContext)|",
+      "|java+method:///javax/servlet/ServletContextEvent/getServletContext()|",
+      "|java+method:///org/apache/tiles/web/startup/AbstractTilesListener/createTilesInitializer()|"
+    ],
+    "affectedLib": "org.apache.tiles:tiles-request-servlet:1.0.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.tiles:tiles-servlet:2.2.2",
+    "coordinatesV2": "org.apache.tiles:tiles-servlet:3.0.0",
+    "caller": "|java+method:///org/apache/tiles/web/startup/AbstractTilesInitializerServlet/init()|",
+    "called": "|java+constructor:///org/apache/tiles/request/servlet/ServletApplicationContext/ServletApplicationContext(javax.servlet.ServletContext)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/tiles/web/util/ServletContextAdapter/ServletContextAdapter(javax.servlet.ServletConfig)|",
+      "|java+method:///org/apache/tiles/web/startup/AbstractTilesInitializerServlet/getServletConfig()|",
+      "|java+method:///org/apache/tiles/startup/TilesInitializer/initialize(org.apache.tiles.TilesApplicationContext)|",
+      "|java+method:///org/apache/tiles/web/startup/AbstractTilesInitializerServlet/createTilesInitializer()|",
+      "|java+constructor:///org/apache/tiles/servlet/context/ServletTilesApplicationContext/ServletTilesApplicationContext(javax.servlet.ServletContext)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/tiles/web/util/ServletContextAdapter/ServletContextAdapter(javax.servlet.ServletConfig)|",
+      "|java+method:///org/apache/tiles/web/startup/AbstractTilesInitializerServlet/getServletConfig()|",
+      "|java+constructor:///org/apache/tiles/request/servlet/ServletApplicationContext/ServletApplicationContext(javax.servlet.ServletContext)|",
+      "|java+method:///org/apache/tiles/web/startup/AbstractTilesInitializerServlet/createTilesInitializer()|",
+      "|java+method:///org/apache/tiles/startup/TilesInitializer/initialize(org.apache.tiles.request.ApplicationContext)|"
+    ],
+    "affectedLib": "org.apache.tiles:tiles-request-servlet:1.0.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.tiles:tiles-servlet:2.2.2",
+    "coordinatesV2": "org.apache.tiles:tiles-servlet:3.0.0",
+    "caller": "|java+method:///org/apache/tiles/web/util/TilesDecorationFilter/doFilter(javax.servlet.ServletRequest,javax.servlet.ServletResponse,javax.servlet.FilterChain)|",
+    "called": "|java+constructor:///org/apache/tiles/request/servlet/ServletRequest/ServletRequest(org.apache.tiles.request.ApplicationContext,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)|",
+    "v1Body": [
+      "|java+method:///javax/servlet/FilterChain/doFilter(javax.servlet.ServletRequest,javax.servlet.ServletResponse)|",
+      "|java+method:///org/apache/tiles/web/util/TilesDecorationFilter/getServletContext()|",
+      "|java+method:///org/apache/tiles/web/util/TilesDecorationFilter/getDefinitionForRequest(javax.servlet.ServletRequest)|",
+      "|java+method:///javax/servlet/ServletRequest/setAttribute(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/apache/tiles/TilesContainer/getAttributeContext(java.lang.Object%5B%5D)|",
+      "|java+method:///org/apache/tiles/TilesContainer/render(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///org/apache/tiles/servlet/context/ServletUtil/getContainer(javax.servlet.ServletContext,java.lang.String)|",
+      "|java+method:///org/apache/tiles/web/util/AttributeContextMutator/mutate(org.apache.tiles.AttributeContext,javax.servlet.ServletRequest)|",
+      "|java+method:///org/apache/tiles/web/util/TilesDecorationFilter/isPreventTokenPresent(javax.servlet.ServletRequest)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/tiles/TilesContainer/getAttributeContext(org.apache.tiles.request.Request)|",
+      "|java+constructor:///org/apache/tiles/request/servlet/ServletRequest/ServletRequest(org.apache.tiles.request.ApplicationContext,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)|",
+      "|java+method:///org/apache/tiles/TilesContainer/render(java.lang.String,org.apache.tiles.request.Request)|",
+      "|java+method:///org/apache/tiles/web/util/TilesDecorationFilter/getDefinitionForRequest(javax.servlet.ServletRequest)|",
+      "|java+method:///org/apache/tiles/request/servlet/ServletUtil/getApplicationContext(javax.servlet.ServletContext)|",
+      "|java+method:///javax/servlet/ServletRequest/setAttribute(java.lang.String,java.lang.Object)|",
+      "|java+method:///javax/servlet/FilterChain/doFilter(javax.servlet.ServletRequest,javax.servlet.ServletResponse)|",
+      "|java+method:///org/apache/tiles/access/TilesAccess/getContainer(org.apache.tiles.request.ApplicationContext,java.lang.String)|",
+      "|java+method:///org/apache/tiles/web/util/AttributeContextMutator/mutate(org.apache.tiles.AttributeContext,javax.servlet.ServletRequest)|",
+      "|java+method:///org/apache/tiles/web/util/TilesDecorationFilter/isPreventTokenPresent(javax.servlet.ServletRequest)|"
+    ],
+    "affectedLib": "org.apache.tiles:tiles-request-servlet:1.0.0",
+    "change": "ADDED"
+  }
+]

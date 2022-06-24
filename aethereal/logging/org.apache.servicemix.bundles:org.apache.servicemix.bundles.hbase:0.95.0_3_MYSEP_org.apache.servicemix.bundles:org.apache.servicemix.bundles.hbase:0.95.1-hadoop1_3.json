@@ -1,0 +1,141 @@
+[
+  {
+    "coordinatesV1": "org.apache.servicemix.bundles:org.apache.servicemix.bundles.hbase:0.95.0_3",
+    "coordinatesV2": "org.apache.servicemix.bundles:org.apache.servicemix.bundles.hbase:0.95.1-hadoop1_3",
+    "caller": "|java+constructor:///org/apache/hadoop/hbase/regionserver/MetricsRegionAggregateSourceImpl/MetricsRegionAggregateSourceImpl(java.lang.String,java.lang.String,java.lang.String,java.lang.String)|",
+    "called": "|java+constructor:///org/apache/hadoop/hbase/metrics/BaseSourceImpl/BaseSourceImpl(java.lang.String,java.lang.String,java.lang.String,java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/hadoop/hbase/metrics/BaseSourceImpl/BaseSourceImpl(java.lang.String,java.lang.String,java.lang.String,java.lang.String)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+constructor:///java/util/TreeSet/TreeSet()|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/hadoop/hbase/metrics/BaseSourceImpl/BaseSourceImpl(java.lang.String,java.lang.String,java.lang.String,java.lang.String)|",
+      "|java+constructor:///java/util/concurrent/locks/ReentrantReadWriteLock/ReentrantReadWriteLock()|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+constructor:///java/util/TreeSet/TreeSet()|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "affectedLib": "org.apache.hbase:hbase-hadoop1-compat:0.95.1-hadoop1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.servicemix.bundles:org.apache.servicemix.bundles.hbase:0.95.0_3",
+    "coordinatesV2": "org.apache.servicemix.bundles:org.apache.servicemix.bundles.hbase:0.95.1-hadoop1_3",
+    "caller": "|java+method:///org/apache/hadoop/hbase/master/MetricsMasterSourceImpl/init()|",
+    "called": "|java+method:///org/apache/hadoop/metrics2/lib/DynamicMetricsRegistry/newStat(java.lang.String,java.lang.String,java.lang.String,java.lang.String,boolean)|",
+    "v1Body": [
+      "|java+method:///org/apache/hadoop/metrics2/lib/DynamicMetricsRegistry/newHistogram(java.lang.String,java.lang.String)|",
+      "|java+method:///org/apache/hadoop/metrics2/lib/DynamicMetricsRegistry/newGauge(java.lang.String,java.lang.String,long)|",
+      "|java+method:///org/apache/hadoop/metrics2/lib/DynamicMetricsRegistry/newCounter(java.lang.String,java.lang.String,long)|",
+      "|java+method:///org/apache/hadoop/hbase/metrics/BaseSourceImpl/init()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/hadoop/metrics2/lib/DynamicMetricsRegistry/newHistogram(java.lang.String,java.lang.String)|",
+      "|java+method:///org/apache/hadoop/metrics2/lib/DynamicMetricsRegistry/newStat(java.lang.String,java.lang.String,java.lang.String,java.lang.String,boolean)|",
+      "|java+method:///org/apache/hadoop/metrics2/lib/DynamicMetricsRegistry/newGauge(java.lang.String,java.lang.String,long)|",
+      "|java+method:///org/apache/hadoop/metrics2/lib/DynamicMetricsRegistry/newCounter(java.lang.String,java.lang.String,long)|",
+      "|java+method:///org/apache/hadoop/hbase/metrics/BaseSourceImpl/init()|"
+    ],
+    "affectedLib": "org.apache.hbase:hbase-hadoop1-compat:0.95.1-hadoop1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.servicemix.bundles:org.apache.servicemix.bundles.hbase:0.95.0_3",
+    "coordinatesV2": "org.apache.servicemix.bundles:org.apache.servicemix.bundles.hbase:0.95.1-hadoop1_3",
+    "caller": "|java+method:///org/apache/hadoop/hbase/regionserver/MetricsRegionServerSourceFactoryImpl/getAggregate()|",
+    "called": "|java+constructor:///org/apache/hadoop/hbase/regionserver/MetricsRegionAggregateSourceImpl/MetricsRegionAggregateSourceImpl()|",
+    "v1Body": [
+      "|java+constructor:///org/apache/hadoop/hbase/regionserver/MetricsRegionAggregateSourceImpl/MetricsRegionAggregateSourceImpl()|",
+      "|java+method:///org/apache/hadoop/hbase/regionserver/MetricsRegionServerSourceFactoryImpl$FactoryStorage/access$002(org.apache.hadoop.hbase.regionserver.MetricsRegionServerSourceFactoryImpl$FactoryStorage,org.apache.hadoop.hbase.regionserver.MetricsRegionAggregateSourceImpl)|",
+      "|java+method:///org/apache/hadoop/hbase/regionserver/MetricsRegionServerSourceFactoryImpl$FactoryStorage/access$000(org.apache.hadoop.hbase.regionserver.MetricsRegionServerSourceFactoryImpl$FactoryStorage)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/hadoop/hbase/regionserver/MetricsRegionAggregateSourceImpl/MetricsRegionAggregateSourceImpl()|",
+      "|java+method:///org/apache/hadoop/hbase/regionserver/MetricsRegionServerSourceFactoryImpl$FactoryStorage/access$102(org.apache.hadoop.hbase.regionserver.MetricsRegionServerSourceFactoryImpl$FactoryStorage,org.apache.hadoop.hbase.regionserver.MetricsRegionAggregateSourceImpl)|",
+      "|java+method:///org/apache/hadoop/hbase/regionserver/MetricsRegionServerSourceFactoryImpl$FactoryStorage/access$000(org.apache.hadoop.hbase.regionserver.MetricsRegionServerSourceFactoryImpl$FactoryStorage)|",
+      "|java+method:///org/apache/hadoop/hbase/regionserver/MetricsRegionServerSourceFactoryImpl$FactoryStorage/access$100(org.apache.hadoop.hbase.regionserver.MetricsRegionServerSourceFactoryImpl$FactoryStorage)|"
+    ],
+    "affectedLib": "org.apache.hbase:hbase-hadoop1-compat:0.95.1-hadoop1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.servicemix.bundles:org.apache.servicemix.bundles.hbase:0.95.0_3",
+    "coordinatesV2": "org.apache.servicemix.bundles:org.apache.servicemix.bundles.hbase:0.95.1-hadoop1_3",
+    "caller": "|java+method:///org/apache/hadoop/hbase/regionserver/MetricsRegionAggregateSourceImpl/getMetrics(org.apache.hadoop.metrics2.MetricsBuilder,boolean)|",
+    "called": "|java+method:///org/apache/hadoop/metrics2/lib/DynamicMetricsRegistry/snapshot(org.apache.hadoop.metrics2.MetricsRecordBuilder,boolean)|",
+    "v1Body": [
+      "|java+method:///org/apache/hadoop/metrics2/lib/DynamicMetricsRegistry/snapshot(org.apache.hadoop.metrics2.MetricsRecordBuilder,boolean)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/apache/hadoop/hbase/regionserver/MetricsRegionSourceImpl/snapshot(org.apache.hadoop.metrics2.MetricsRecordBuilder,boolean)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/TreeSet/iterator()|",
+      "|java+method:///org/apache/hadoop/metrics2/MetricsRecordBuilder/setContext(java.lang.String)|",
+      "|java+method:///org/apache/hadoop/metrics2/MetricsBuilder/addRecord(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/hadoop/metrics2/lib/DynamicMetricsRegistry/snapshot(org.apache.hadoop.metrics2.MetricsRecordBuilder,boolean)|",
+      "|java+method:///java/util/concurrent/locks/ReentrantReadWriteLock/readLock()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/apache/hadoop/hbase/regionserver/MetricsRegionSourceImpl/snapshot(org.apache.hadoop.metrics2.MetricsRecordBuilder,boolean)|",
+      "|java+method:///java/util/TreeSet/iterator()|",
+      "|java+method:///java/util/concurrent/locks/ReentrantReadWriteLock$ReadLock/lock()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/concurrent/locks/ReentrantReadWriteLock$ReadLock/unlock()|",
+      "|java+method:///org/apache/hadoop/metrics2/MetricsRecordBuilder/setContext(java.lang.String)|",
+      "|java+method:///org/apache/hadoop/metrics2/MetricsBuilder/addRecord(java.lang.String)|"
+    ],
+    "affectedLib": "org.apache.hbase:hbase-hadoop1-compat:0.95.1-hadoop1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.servicemix.bundles:org.apache.servicemix.bundles.hbase:0.95.0_3",
+    "coordinatesV2": "org.apache.servicemix.bundles:org.apache.servicemix.bundles.hbase:0.95.1-hadoop1_3",
+    "caller": "|java+constructor:///org/apache/hadoop/hbase/regionserver/MetricsRegionSourceImpl/MetricsRegionSourceImpl(org.apache.hadoop.hbase.regionserver.MetricsRegionWrapper,org.apache.hadoop.hbase.regionserver.MetricsRegionAggregateSourceImpl)|",
+    "called": "|java+method:///org/apache/hadoop/hbase/regionserver/MetricsRegionAggregateSourceImpl/register(org.apache.hadoop.hbase.regionserver.MetricsRegionSource)|",
+    "v1Body": [
+      "|java+method:///org/apache/hadoop/metrics2/lib/DynamicMetricsRegistry/getLongCounter(java.lang.String,long)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/hadoop/hbase/regionserver/MetricsRegionWrapper/getRegionName()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/apache/hadoop/hbase/regionserver/MetricsRegionAggregateSourceImpl/register(org.apache.hadoop.hbase.regionserver.MetricsRegionSource)|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/apache/hadoop/hbase/regionserver/MetricsRegionAggregateSourceImpl/getMetricsRegistry()|",
+      "|java+method:///org/apache/commons/logging/Log/debug(java.lang.Object)|",
+      "|java+method:///org/apache/hadoop/hbase/regionserver/MetricsRegionWrapper/getTableName()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/hadoop/metrics2/lib/DynamicMetricsRegistry/getLongCounter(java.lang.String,long)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/hadoop/hbase/regionserver/MetricsRegionWrapper/getRegionName()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/apache/hadoop/hbase/regionserver/MetricsRegionAggregateSourceImpl/register(org.apache.hadoop.hbase.regionserver.MetricsRegionSource)|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/apache/hadoop/hbase/regionserver/MetricsRegionAggregateSourceImpl/getMetricsRegistry()|",
+      "|java+method:///org/apache/hadoop/metrics2/lib/DynamicMetricsRegistry/newStat(java.lang.String,java.lang.String,java.lang.String,java.lang.String)|",
+      "|java+method:///org/apache/commons/logging/Log/debug(java.lang.Object)|",
+      "|java+method:///org/apache/hadoop/hbase/regionserver/MetricsRegionWrapper/getTableName()|"
+    ],
+    "affectedLib": "org.apache.hbase:hbase-hadoop1-compat:0.95.1-hadoop1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.servicemix.bundles:org.apache.servicemix.bundles.hbase:0.95.0_3",
+    "coordinatesV2": "org.apache.servicemix.bundles:org.apache.servicemix.bundles.hbase:0.95.1-hadoop1_3",
+    "caller": "|java+method:///org/apache/hadoop/hbase/regionserver/MetricsRegionServerSourceFactoryImpl/createServer(org.apache.hadoop.hbase.regionserver.MetricsRegionServerWrapper)|",
+    "called": "|java+constructor:///org/apache/hadoop/hbase/regionserver/MetricsRegionServerSourceImpl/MetricsRegionServerSourceImpl(org.apache.hadoop.hbase.regionserver.MetricsRegionServerWrapper)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/hadoop/hbase/regionserver/MetricsRegionServerSourceImpl/MetricsRegionServerSourceImpl(org.apache.hadoop.hbase.regionserver.MetricsRegionServerWrapper)|",
+      "|java+method:///org/apache/hadoop/hbase/regionserver/MetricsRegionServerSourceFactoryImpl$FactoryStorage/access$100(org.apache.hadoop.hbase.regionserver.MetricsRegionServerSourceFactoryImpl$FactoryStorage)|",
+      "|java+method:///org/apache/hadoop/hbase/regionserver/MetricsRegionServerSourceFactoryImpl$FactoryStorage/access$102(org.apache.hadoop.hbase.regionserver.MetricsRegionServerSourceFactoryImpl$FactoryStorage,org.apache.hadoop.hbase.regionserver.MetricsRegionServerSource)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/hadoop/hbase/regionserver/MetricsRegionServerSourceImpl/MetricsRegionServerSourceImpl(org.apache.hadoop.hbase.regionserver.MetricsRegionServerWrapper)|"
+    ],
+    "affectedLib": "org.apache.hbase:hbase-hadoop1-compat:0.95.1-hadoop1",
+    "change": "UPDATED"
+  }
+]

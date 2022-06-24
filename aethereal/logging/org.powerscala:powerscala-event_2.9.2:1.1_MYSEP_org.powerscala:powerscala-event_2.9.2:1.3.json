@@ -1,0 +1,127 @@
+[
+  {
+    "coordinatesV1": "org.powerscala:powerscala-event_2.9.2:1.1",
+    "coordinatesV2": "org.powerscala:powerscala-event_2.9.2:1.3",
+    "caller": "|java+method:///org/powerscala/event/Listenable$class/addListener(org.powerscala.event.Listenable,org.powerscala.event.Listener,org.powerscala.ref.ReferenceType)|",
+    "called": "|java+method:///org/powerscala/bus/Bus/add(org.powerscala.bus.Node,org.powerscala.ref.ReferenceType)|",
+    "v1Body": [
+      "|java+method:///org/powerscala/event/Listenable/listenersList_$eq(scala.collection.immutable.List)|",
+      "|java+method:///scala/collection/immutable/List/reverse()|",
+      "|java+method:///org/powerscala/event/Listenable/listenersList()|",
+      "|java+method:///org/powerscala/bus/Bus$/add(org.powerscala.bus.Node,org.powerscala.ref.ReferenceType)|",
+      "|java+method:///scala/collection/immutable/List/$colon$colon(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/powerscala/event/Listenable/listenersList_$eq(scala.collection.immutable.List)|",
+      "|java+method:///scala/collection/immutable/List/reverse()|",
+      "|java+method:///org/powerscala/event/Listenable/listenersList()|",
+      "|java+method:///org/powerscala/event/Listenable/bus()|",
+      "|java+method:///scala/collection/immutable/List/$colon$colon(java.lang.Object)|",
+      "|java+method:///org/powerscala/bus/Bus/add(org.powerscala.bus.Node,org.powerscala.ref.ReferenceType)|"
+    ],
+    "affectedLib": "org.powerscala:powerscala-core_2.9.2:1.3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.powerscala:powerscala-event_2.9.2:1.1",
+    "coordinatesV2": "org.powerscala:powerscala-event_2.9.2:1.3",
+    "caller": "|java+method:///org/powerscala/event/Event$/fire(org.powerscala.event.Event,org.powerscala.event.Listenable)|",
+    "called": "|java+method:///org/powerscala/bus/Bus/apply(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/powerscala/event/Event$/_current()|",
+      "|java+method:///org/powerscala/event/Event$/current()|",
+      "|java+method:///java/lang/ThreadLocal/set(java.lang.Object)|",
+      "|java+method:///org/powerscala/event/Event/org$powerscala$event$Event$$_target_$eq(org.powerscala.event.Listenable)|",
+      "|java+method:///org/powerscala/event/Event/org$powerscala$event$Event$$_cause_$eq(org.powerscala.event.Event)|",
+      "|java+method:///org/powerscala/event/Event/org$powerscala$event$Event$$_target()|",
+      "|java+method:///org/powerscala/event/Event/cause()|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String)|",
+      "|java+method:///org/powerscala/event/Event/singleThreaded()|",
+      "|java+method:///org/powerscala/bus/Bus$/apply(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/powerscala/event/Event$/_current()|",
+      "|java+method:///org/powerscala/event/Listenable/bus()|",
+      "|java+method:///org/powerscala/event/Event$/current()|",
+      "|java+method:///java/lang/ThreadLocal/set(java.lang.Object)|",
+      "|java+method:///org/powerscala/event/Event/org$powerscala$event$Event$$_target_$eq(org.powerscala.event.Listenable)|",
+      "|java+method:///org/powerscala/event/Event/org$powerscala$event$Event$$_cause_$eq(org.powerscala.event.Event)|",
+      "|java+method:///org/powerscala/event/Event/org$powerscala$event$Event$$_target()|",
+      "|java+method:///org/powerscala/bus/Bus/apply(java.lang.Object)|",
+      "|java+method:///org/powerscala/event/Event/cause()|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String)|",
+      "|java+method:///org/powerscala/event/Event/singleThreaded()|"
+    ],
+    "affectedLib": "org.powerscala:powerscala-core_2.9.2:1.3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.powerscala:powerscala-event_2.9.2:1.1",
+    "coordinatesV2": "org.powerscala:powerscala-event_2.9.2:1.3",
+    "caller": "|java+method:///org/powerscala/event/Listenable$class/removeListener(org.powerscala.event.Listenable,org.powerscala.event.Listener)|",
+    "called": "|java+method:///org/powerscala/bus/Bus/remove(org.powerscala.bus.Node)|",
+    "v1Body": [
+      "|java+method:///org/powerscala/event/Listenable/listenersList_$eq(scala.collection.immutable.List)|",
+      "|java+method:///org/powerscala/event/Listenable/listenersList()|",
+      "|java+constructor:///org/powerscala/event/Listenable$$anonfun$removeListener$1/Listenable$$anonfun$removeListener$1(org.powerscala.event.Listenable,org.powerscala.event.Listener)|",
+      "|java+method:///scala/collection/TraversableLike/filterNot(scala.Function1)|",
+      "|java+method:///org/powerscala/bus/Bus$/remove(org.powerscala.bus.Node)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/powerscala/event/Listenable/listenersList_$eq(scala.collection.immutable.List)|",
+      "|java+method:///org/powerscala/event/Listenable/listenersList()|",
+      "|java+constructor:///org/powerscala/event/Listenable$$anonfun$removeListener$1/Listenable$$anonfun$removeListener$1(org.powerscala.event.Listenable,org.powerscala.event.Listener)|",
+      "|java+method:///org/powerscala/event/Listenable/bus()|",
+      "|java+method:///org/powerscala/bus/Bus/remove(org.powerscala.bus.Node)|",
+      "|java+method:///scala/collection/TraversableLike/filterNot(scala.Function1)|"
+    ],
+    "affectedLib": "org.powerscala:powerscala-core_2.9.2:1.3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.powerscala:powerscala-event_2.9.2:1.1",
+    "coordinatesV2": "org.powerscala:powerscala-event_2.9.2:1.3",
+    "caller": "|java+method:///org/powerscala/event/EventListener/apply(org.powerscala.event.Event)|",
+    "called": "|java+method:///org/powerscala/concurrent/Executor$/invoke(scala.Function0)|",
+    "v1Body": [
+      "|java+method:///org/powerscala/event/EventListener/gd3$1(org.powerscala.event.Event)|",
+      "|java+method:///org/powerscala/event/EventListener/gd4$1(org.powerscala.event.Event)|",
+      "|java+method:///org/powerscala/ProcessingMode$/Asynchronous()|",
+      "|java+method:///org/powerscala/event/EventListener/processingMode()|",
+      "|java+method:///org/powerscala/event/EventListener/function()|",
+      "|java+method:///org/powerscala/event/EventListener/count()|",
+      "|java+method:///org/powerscala/concurrent/Executor$/invoke(scala.Function0)|",
+      "|java+method:///org/powerscala/event/EventListener/maxInvocation()|",
+      "|java+method:///org/powerscala/ProcessingMode$/Concurrent()|",
+      "|java+method:///scala/Function1/apply(java.lang.Object)|",
+      "|java+method:///org/powerscala/ProcessingMode$/Synchronous()|",
+      "|java+constructor:///org/powerscala/event/EventListener$$anonfun$2/EventListener$$anonfun$2(org.powerscala.event.EventListener,org.powerscala.event.Event)|",
+      "|java+method:///java/lang/Object/equals(java.lang.Object)|",
+      "|java+constructor:///org/powerscala/event/EventListener$$anonfun$1/EventListener$$anonfun$1(org.powerscala.event.EventListener,org.powerscala.event.Event)|",
+      "|java+method:///org/powerscala/event/Listenable/removeListener(org.powerscala.event.Listener)|",
+      "|java+method:///org/powerscala/event/Listenable/asynchronousActor()|",
+      "|java+method:///org/powerscala/event/EventListener/count_$eq(int)|",
+      "|java+method:///scala/actors/ReplyReactor/$bang(java.lang.Object)|",
+      "|java+method:///org/powerscala/event/EventListener/listenable()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/powerscala/event/EventListener/gd3$1(org.powerscala.event.Event)|",
+      "|java+method:///org/powerscala/event/EventListener/processingMode()|",
+      "|java+method:///org/powerscala/event/EventListener/function()|",
+      "|java+method:///org/powerscala/event/EventListener/count()|",
+      "|java+method:///org/powerscala/concurrent/Executor$/invoke(scala.Function0)|",
+      "|java+method:///org/powerscala/event/Listenable/removeListener(org.powerscala.event.Listener)|",
+      "|java+method:///org/powerscala/event/EventListener/maxInvocation()|",
+      "|java+method:///org/powerscala/ProcessingMode$/Concurrent()|",
+      "|java+method:///scala/Function1/apply(java.lang.Object)|",
+      "|java+method:///org/powerscala/ProcessingMode$/Synchronous()|",
+      "|java+method:///java/lang/Object/equals(java.lang.Object)|",
+      "|java+constructor:///org/powerscala/event/EventListener$$anonfun$1/EventListener$$anonfun$1(org.powerscala.event.EventListener,org.powerscala.event.Event)|",
+      "|java+constructor:///scala/MatchError/MatchError(java.lang.Object)|",
+      "|java+method:///org/powerscala/event/EventListener/count_$eq(int)|",
+      "|java+method:///org/powerscala/event/EventListener/listenable()|"
+    ],
+    "affectedLib": "org.powerscala:powerscala-concurrent_2.9.2:1.3",
+    "change": "UPDATED"
+  }
+]

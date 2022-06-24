@@ -1,0 +1,364 @@
+[
+  {
+    "coordinatesV1": "com.sirika.pymager:pymager-java-api:0.14",
+    "coordinatesV2": "com.sirika.pymager:pymager-java-api:0.13",
+    "caller": "|java+constructor:///com/sirika/pymager/api/internal/UploadImageCommand/UploadImageCommand(org.apache.http.client.HttpClient,com.sirika.pymager.api.UrlGenerator,com.sirika.pymager.api.ImageId,com.sirika.pymager.api.ImageFormat,com.google.common.io.InputSupplier)|",
+    "called": "|java+constructor:///com/sirika/hchelpers/client/HttpClientTemplate/HttpClientTemplate(org.apache.http.client.HttpClient)|",
+    "v1Body": [
+      "|java+constructor:///com/sirika/hchelpers/client/HttpClientTemplate/HttpClientTemplate(org.apache.http.client.HttpClient)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/sirika/hchelpers/java/HttpClientTemplate/HttpClientTemplate(org.apache.http.client.HttpClient)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "com.sirika.hchelpers:hchelpers-core:0.8",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.sirika.pymager:pymager-java-api:0.14",
+    "coordinatesV2": "com.sirika.pymager:pymager-java-api:0.13",
+    "caller": "|java+method:///com/sirika/pymager/api/internal/UploadImageCommand/conflictErrorHandler()|",
+    "called": "|java+method:///com/sirika/hchelpers/client/HttpErrorMatchers/statusCodeEquals(int)|",
+    "v1Body": [
+      "|java+method:///com/sirika/hchelpers/client/HttpErrorMatchers/statusCodeEquals(int)|",
+      "|java+constructor:///com/sirika/pymager/api/internal/UploadImageCommand$1/UploadImageCommand$1(com.sirika.pymager.api.internal.UploadImageCommand)|",
+      "|java+constructor:///com/sirika/hchelpers/client/DelegatingHttpErrorHandler/DelegatingHttpErrorHandler(com.sirika.hchelpers.client.HttpErrorMatcher,com.sirika.hchelpers.client.HttpResponseCallback)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/sirika/hchelpers/java/DelegatingHttpErrorHandler/DelegatingHttpErrorHandler(com.sirika.hchelpers.java.HttpErrorMatcher,com.sirika.hchelpers.java.HttpResponseCallback)|",
+      "|java+method:///com/sirika/hchelpers/java/HttpErrorMatchers/statusCodeEquals(int)|",
+      "|java+constructor:///com/sirika/pymager/api/internal/UploadImageCommand$1/UploadImageCommand$1(com.sirika.pymager.api.internal.UploadImageCommand)|"
+    ],
+    "affectedLib": "com.sirika.hchelpers:hchelpers-core:0.8",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.sirika.pymager:pymager-java-api:0.14",
+    "coordinatesV2": "com.sirika.pymager:pymager-java-api:0.13",
+    "caller": "|java+constructor:///com/sirika/pymager/api/impl/HttpImageServer/HttpImageServer(java.lang.String)|",
+    "called": "|java+method:///com/sirika/hchelpers/client/DefaultHttpClientFactory/defaultHttpClient()|",
+    "v1Body": [
+      "|java+constructor:///com/sirika/pymager/api/impl/HttpImageServer/HttpImageServer(org.apache.http.client.HttpClient,com.sirika.pymager.api.UrlGenerator)|",
+      "|java+method:///com/sirika/pymager/api/impl/HttpImageServer/defaultUrlGeneratorFor(java.lang.String)|",
+      "|java+method:///com/sirika/hchelpers/client/DefaultHttpClientFactory/defaultHttpClient()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/sirika/hchelpers/core/DefaultHttpClientFactory/defaultHttpClient()|",
+      "|java+constructor:///com/sirika/pymager/api/impl/HttpImageServer/HttpImageServer(org.apache.http.client.HttpClient,com.sirika.pymager.api.UrlGenerator)|",
+      "|java+method:///com/sirika/pymager/api/impl/HttpImageServer/defaultUrlGeneratorFor(java.lang.String)|"
+    ],
+    "affectedLib": "com.sirika.hchelpers:hchelpers-core:0.8",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.sirika.pymager:pymager-java-api:0.14",
+    "coordinatesV2": "com.sirika.pymager:pymager-java-api:0.13",
+    "caller": "|java+method:///com/sirika/pymager/api/internal/DeleteImageCommand/execute()|",
+    "called": "|java+method:///com/sirika/hchelpers/client/HttpClientTemplate/executeWithoutResult(org.apache.http.client.methods.HttpUriRequest,java.lang.Iterable)|",
+    "v1Body": [
+      "|java+method:///com/sirika/pymager/api/ImageId/toString()|",
+      "|java+method:///com/sirika/pymager/api/ImageReference/originalImage(java.lang.String)|",
+      "|java+method:///com/sirika/pymager/api/internal/DeleteImageCommand/httpErrorHandlers()|",
+      "|java+constructor:///org/apache/http/client/methods/HttpDelete/HttpDelete(java.lang.String)|",
+      "|java+method:///com/sirika/pymager/api/UrlGenerator/getImageResourceUrl(com.sirika.pymager.api.ImageReference)|",
+      "|java+method:///com/sirika/hchelpers/client/HttpClientTemplate/executeWithoutResult(org.apache.http.client.methods.HttpUriRequest,java.lang.Iterable)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/sirika/pymager/api/ImageReference/originalImage(java.lang.String)|",
+      "|java+method:///com/sirika/pymager/api/UrlGenerator/getImageResourceUrl(com.sirika.pymager.api.ImageReference)|",
+      "|java+method:///com/sirika/pymager/api/internal/DeleteImageCommand/httpErrorHandlers()|",
+      "|java+constructor:///org/apache/http/client/methods/HttpDelete/HttpDelete(java.lang.String)|",
+      "|java+method:///com/sirika/pymager/api/ImageId/toString()|",
+      "|java+method:///com/sirika/hchelpers/java/HttpClientTemplate/executeWithoutResult(org.apache.http.client.methods.HttpUriRequest,java.lang.Iterable)|"
+    ],
+    "affectedLib": "com.sirika.hchelpers:hchelpers-core:0.8",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.sirika.pymager:pymager-java-api:0.14",
+    "coordinatesV2": "com.sirika.pymager:pymager-java-api:0.13",
+    "caller": "|java+method:///com/sirika/pymager/api/internal/UploadImageCommand/defaultHandler()|",
+    "called": "|java+method:///com/sirika/hchelpers/client/HttpErrorMatchers/statusCodeGreaterOrEquals(int)|",
+    "v1Body": [
+      "|java+method:///com/sirika/hchelpers/client/HttpErrorMatchers/statusCodeGreaterOrEquals(int)|",
+      "|java+constructor:///com/sirika/pymager/api/internal/UploadImageCommand$3/UploadImageCommand$3(com.sirika.pymager.api.internal.UploadImageCommand)|",
+      "|java+constructor:///com/sirika/hchelpers/client/DelegatingHttpErrorHandler/DelegatingHttpErrorHandler(com.sirika.hchelpers.client.HttpErrorMatcher,com.sirika.hchelpers.client.HttpResponseCallback)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/sirika/hchelpers/java/DelegatingHttpErrorHandler/DelegatingHttpErrorHandler(com.sirika.hchelpers.java.HttpErrorMatcher,com.sirika.hchelpers.java.HttpResponseCallback)|",
+      "|java+constructor:///com/sirika/pymager/api/internal/UploadImageCommand$3/UploadImageCommand$3(com.sirika.pymager.api.internal.UploadImageCommand)|",
+      "|java+method:///com/sirika/hchelpers/java/HttpErrorMatchers/statusCodeGreaterOrEquals(int)|"
+    ],
+    "affectedLib": "com.sirika.hchelpers:hchelpers-core:0.8",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.sirika.pymager:pymager-java-api:0.14",
+    "coordinatesV2": "com.sirika.pymager:pymager-java-api:0.13",
+    "caller": "|java+constructor:///com/sirika/pymager/api/impl/HttpImageServer/HttpImageServer(com.sirika.pymager.api.UrlGenerator)|",
+    "called": "|java+method:///com/sirika/hchelpers/client/DefaultHttpClientFactory/defaultHttpClient()|",
+    "v1Body": [
+      "|java+constructor:///com/sirika/pymager/api/impl/HttpImageServer/HttpImageServer(org.apache.http.client.HttpClient,com.sirika.pymager.api.UrlGenerator)|",
+      "|java+method:///com/sirika/hchelpers/client/DefaultHttpClientFactory/defaultHttpClient()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/sirika/hchelpers/core/DefaultHttpClientFactory/defaultHttpClient()|",
+      "|java+constructor:///com/sirika/pymager/api/impl/HttpImageServer/HttpImageServer(org.apache.http.client.HttpClient,com.sirika.pymager.api.UrlGenerator)|"
+    ],
+    "affectedLib": "com.sirika.hchelpers:hchelpers-core:0.8",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.sirika.pymager:pymager-java-api:0.14",
+    "coordinatesV2": "com.sirika.pymager:pymager-java-api:0.13",
+    "caller": "|java+method:///com/sirika/pymager/api/internal/UploadImageCommand/uploadStreamEntity(com.google.common.io.InputSupplier,com.sirika.pymager.api.ImageFormat)|",
+    "called": "|java+constructor:///com/sirika/hchelpers/mime/InputSupplierSourceBody/InputSupplierSourceBody(com.google.common.io.InputSupplier,java.lang.String,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///com/sirika/pymager/api/ImageFormat/mimeType()|",
+      "|java+constructor:///com/sirika/hchelpers/mime/InputSupplierSourceBody/InputSupplierSourceBody(com.google.common.io.InputSupplier,java.lang.String,java.lang.String)|",
+      "|java+constructor:///com/sirika/hchelpers/mime/RepeatableMultipartEntity/RepeatableMultipartEntity()|",
+      "|java+method:///org/apache/http/entity/mime/MultipartEntity/addPart(java.lang.String,org.apache.http.entity.mime.content.ContentBody)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/sirika/hchelpers/core/mime/InputSupplierSourceBody/InputSupplierSourceBody(com.google.common.io.InputSupplier,java.lang.String,java.lang.String)|",
+      "|java+method:///org/apache/http/entity/mime/MultipartEntity/addPart(java.lang.String,org.apache.http.entity.mime.content.ContentBody)|",
+      "|java+method:///com/sirika/pymager/api/ImageFormat/mimeType()|",
+      "|java+constructor:///com/sirika/hchelpers/core/mime/RepeatableMultipartEntity/RepeatableMultipartEntity()|"
+    ],
+    "affectedLib": "com.sirika.hchelpers:hchelpers-core:0.8",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.sirika.pymager:pymager-java-api:0.14",
+    "coordinatesV2": "com.sirika.pymager:pymager-java-api:0.13",
+    "caller": "|java+method:///com/sirika/pymager/api/internal/DeleteImageCommand/defaultHandler()|",
+    "called": "|java+method:///com/sirika/hchelpers/client/HttpErrorMatchers/statusCodeGreaterOrEquals(int)|",
+    "v1Body": [
+      "|java+constructor:///com/sirika/pymager/api/internal/DeleteImageCommand$1/DeleteImageCommand$1(com.sirika.pymager.api.internal.DeleteImageCommand)|",
+      "|java+method:///com/sirika/hchelpers/client/HttpErrorMatchers/statusCodeGreaterOrEquals(int)|",
+      "|java+constructor:///com/sirika/hchelpers/client/DelegatingHttpErrorHandler/DelegatingHttpErrorHandler(com.sirika.hchelpers.client.HttpErrorMatcher,com.sirika.hchelpers.client.HttpResponseCallback)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/sirika/hchelpers/java/DelegatingHttpErrorHandler/DelegatingHttpErrorHandler(com.sirika.hchelpers.java.HttpErrorMatcher,com.sirika.hchelpers.java.HttpResponseCallback)|",
+      "|java+constructor:///com/sirika/pymager/api/internal/DeleteImageCommand$1/DeleteImageCommand$1(com.sirika.pymager.api.internal.DeleteImageCommand)|",
+      "|java+method:///com/sirika/hchelpers/java/HttpErrorMatchers/statusCodeGreaterOrEquals(int)|"
+    ],
+    "affectedLib": "com.sirika.hchelpers:hchelpers-core:0.8",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.sirika.pymager:pymager-java-api:0.14",
+    "coordinatesV2": "com.sirika.pymager:pymager-java-api:0.13",
+    "caller": "|java+method:///com/sirika/pymager/api/internal/UploadImageCommand/execute()|",
+    "called": "|java+method:///com/sirika/hchelpers/client/HttpClientTemplate/executeWithoutResult(org.apache.http.client.methods.HttpUriRequest,java.lang.Iterable)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///com/sirika/pymager/api/internal/UploadImageCommand/createHttpPostFor(com.sirika.pymager.api.ImageFormat,com.google.common.io.InputSupplier,com.sirika.pymager.api.ImageReference)|",
+      "|java+method:///com/sirika/pymager/api/ImageReference/originalImage(java.lang.String)|",
+      "|java+method:///com/sirika/hchelpers/client/HttpClientTemplate/executeWithoutResult(org.apache.http.client.methods.HttpUriRequest,java.lang.Iterable)|",
+      "|java+constructor:///com/sirika/pymager/api/UnknownUploadFailureException/UnknownUploadFailureException(com.sirika.pymager.api.ImageId,com.sirika.pymager.api.ImageFormat,java.lang.Exception)|",
+      "|java+method:///com/sirika/pymager/api/ImageId/toString()|",
+      "|java+method:///com/sirika/pymager/api/internal/UploadImageCommand/httpErrorHandlers()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///com/sirika/pymager/api/internal/UploadImageCommand/createHttpPostFor(com.sirika.pymager.api.ImageFormat,com.google.common.io.InputSupplier,com.sirika.pymager.api.ImageReference)|",
+      "|java+method:///com/sirika/pymager/api/ImageReference/originalImage(java.lang.String)|",
+      "|java+constructor:///com/sirika/pymager/api/UnknownUploadFailureException/UnknownUploadFailureException(com.sirika.pymager.api.ImageId,com.sirika.pymager.api.ImageFormat,java.lang.Exception)|",
+      "|java+method:///com/sirika/pymager/api/ImageId/toString()|",
+      "|java+method:///com/sirika/pymager/api/internal/UploadImageCommand/httpErrorHandlers()|",
+      "|java+method:///com/sirika/hchelpers/java/HttpClientTemplate/executeWithoutResult(org.apache.http.client.methods.HttpUriRequest,java.lang.Iterable)|"
+    ],
+    "affectedLib": "com.sirika.hchelpers:hchelpers-core:0.8",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.sirika.pymager:pymager-java-api:0.14",
+    "coordinatesV2": "com.sirika.pymager:pymager-java-api:0.13",
+    "caller": "|java+constructor:///com/sirika/pymager/api/internal/DeleteImageCommand/DeleteImageCommand(org.apache.http.client.HttpClient,com.sirika.pymager.api.UrlGenerator,com.sirika.pymager.api.ImageId)|",
+    "called": "|java+constructor:///com/sirika/hchelpers/client/HttpClientTemplate/HttpClientTemplate(org.apache.http.client.HttpClient)|",
+    "v1Body": [
+      "|java+constructor:///com/sirika/hchelpers/client/HttpClientTemplate/HttpClientTemplate(org.apache.http.client.HttpClient)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/sirika/hchelpers/java/HttpClientTemplate/HttpClientTemplate(org.apache.http.client.HttpClient)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "com.sirika.hchelpers:hchelpers-core:0.8",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.sirika.pymager:pymager-java-api:0.14",
+    "coordinatesV2": "com.sirika.pymager:pymager-java-api:0.13",
+    "caller": "|java+method:///com/sirika/pymager/api/internal/UploadImageCommand/badUploadRequestErrorHandler()|",
+    "called": "|java+method:///com/sirika/hchelpers/client/HttpErrorMatchers/statusCodeEquals(int)|",
+    "v1Body": [
+      "|java+method:///com/sirika/hchelpers/client/HttpErrorMatchers/statusCodeEquals(int)|",
+      "|java+constructor:///com/sirika/pymager/api/internal/UploadImageCommand$2/UploadImageCommand$2(com.sirika.pymager.api.internal.UploadImageCommand)|",
+      "|java+constructor:///com/sirika/hchelpers/client/DelegatingHttpErrorHandler/DelegatingHttpErrorHandler(com.sirika.hchelpers.client.HttpErrorMatcher,com.sirika.hchelpers.client.HttpResponseCallback)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/sirika/hchelpers/java/DelegatingHttpErrorHandler/DelegatingHttpErrorHandler(com.sirika.hchelpers.java.HttpErrorMatcher,com.sirika.hchelpers.java.HttpResponseCallback)|",
+      "|java+method:///com/sirika/hchelpers/java/HttpErrorMatchers/statusCodeEquals(int)|",
+      "|java+constructor:///com/sirika/pymager/api/internal/UploadImageCommand$2/UploadImageCommand$2(com.sirika.pymager.api.internal.UploadImageCommand)|"
+    ],
+    "affectedLib": "com.sirika.hchelpers:hchelpers-core:0.8",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.sirika.pymager:pymager-java-api:0.13",
+    "coordinatesV2": "com.sirika.pymager:pymager-java-api:0.14",
+    "caller": "|java+method:///com/sirika/pymager/api/internal/DeleteImageCommand/defaultHandler()|",
+    "called": "|java+method:///com/sirika/hchelpers/java/HttpErrorMatchers/statusCodeGreaterOrEquals(int)|",
+    "v1Body": [
+      "|java+constructor:///com/sirika/pymager/api/internal/DeleteImageCommand$1/DeleteImageCommand$1(com.sirika.pymager.api.internal.DeleteImageCommand)|",
+      "|java+method:///com/sirika/hchelpers/client/HttpErrorMatchers/statusCodeGreaterOrEquals(int)|",
+      "|java+constructor:///com/sirika/hchelpers/client/DelegatingHttpErrorHandler/DelegatingHttpErrorHandler(com.sirika.hchelpers.client.HttpErrorMatcher,com.sirika.hchelpers.client.HttpResponseCallback)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/sirika/hchelpers/java/DelegatingHttpErrorHandler/DelegatingHttpErrorHandler(com.sirika.hchelpers.java.HttpErrorMatcher,com.sirika.hchelpers.java.HttpResponseCallback)|",
+      "|java+constructor:///com/sirika/pymager/api/internal/DeleteImageCommand$1/DeleteImageCommand$1(com.sirika.pymager.api.internal.DeleteImageCommand)|",
+      "|java+method:///com/sirika/hchelpers/java/HttpErrorMatchers/statusCodeGreaterOrEquals(int)|"
+    ],
+    "affectedLib": "com.sirika.hchelpers:hchelpers-java:0.9",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.sirika.pymager:pymager-java-api:0.13",
+    "coordinatesV2": "com.sirika.pymager:pymager-java-api:0.14",
+    "caller": "|java+method:///com/sirika/pymager/api/internal/UploadImageCommand/execute()|",
+    "called": "|java+method:///com/sirika/hchelpers/java/HttpClientTemplate/executeWithoutResult(org.apache.http.client.methods.HttpUriRequest,java.lang.Iterable)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///com/sirika/pymager/api/internal/UploadImageCommand/createHttpPostFor(com.sirika.pymager.api.ImageFormat,com.google.common.io.InputSupplier,com.sirika.pymager.api.ImageReference)|",
+      "|java+method:///com/sirika/pymager/api/ImageReference/originalImage(java.lang.String)|",
+      "|java+method:///com/sirika/hchelpers/client/HttpClientTemplate/executeWithoutResult(org.apache.http.client.methods.HttpUriRequest,java.lang.Iterable)|",
+      "|java+constructor:///com/sirika/pymager/api/UnknownUploadFailureException/UnknownUploadFailureException(com.sirika.pymager.api.ImageId,com.sirika.pymager.api.ImageFormat,java.lang.Exception)|",
+      "|java+method:///com/sirika/pymager/api/ImageId/toString()|",
+      "|java+method:///com/sirika/pymager/api/internal/UploadImageCommand/httpErrorHandlers()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///com/sirika/pymager/api/internal/UploadImageCommand/createHttpPostFor(com.sirika.pymager.api.ImageFormat,com.google.common.io.InputSupplier,com.sirika.pymager.api.ImageReference)|",
+      "|java+method:///com/sirika/pymager/api/ImageReference/originalImage(java.lang.String)|",
+      "|java+constructor:///com/sirika/pymager/api/UnknownUploadFailureException/UnknownUploadFailureException(com.sirika.pymager.api.ImageId,com.sirika.pymager.api.ImageFormat,java.lang.Exception)|",
+      "|java+method:///com/sirika/pymager/api/ImageId/toString()|",
+      "|java+method:///com/sirika/pymager/api/internal/UploadImageCommand/httpErrorHandlers()|",
+      "|java+method:///com/sirika/hchelpers/java/HttpClientTemplate/executeWithoutResult(org.apache.http.client.methods.HttpUriRequest,java.lang.Iterable)|"
+    ],
+    "affectedLib": "com.sirika.hchelpers:hchelpers-java:0.9",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.sirika.pymager:pymager-java-api:0.13",
+    "coordinatesV2": "com.sirika.pymager:pymager-java-api:0.14",
+    "caller": "|java+constructor:///com/sirika/pymager/api/internal/DeleteImageCommand/DeleteImageCommand(org.apache.http.client.HttpClient,com.sirika.pymager.api.UrlGenerator,com.sirika.pymager.api.ImageId)|",
+    "called": "|java+constructor:///com/sirika/hchelpers/java/HttpClientTemplate/HttpClientTemplate(org.apache.http.client.HttpClient)|",
+    "v1Body": [
+      "|java+constructor:///com/sirika/hchelpers/client/HttpClientTemplate/HttpClientTemplate(org.apache.http.client.HttpClient)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/sirika/hchelpers/java/HttpClientTemplate/HttpClientTemplate(org.apache.http.client.HttpClient)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "com.sirika.hchelpers:hchelpers-java:0.9",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.sirika.pymager:pymager-java-api:0.13",
+    "coordinatesV2": "com.sirika.pymager:pymager-java-api:0.14",
+    "caller": "|java+constructor:///com/sirika/pymager/api/internal/UploadImageCommand/UploadImageCommand(org.apache.http.client.HttpClient,com.sirika.pymager.api.UrlGenerator,com.sirika.pymager.api.ImageId,com.sirika.pymager.api.ImageFormat,com.google.common.io.InputSupplier)|",
+    "called": "|java+constructor:///com/sirika/hchelpers/java/HttpClientTemplate/HttpClientTemplate(org.apache.http.client.HttpClient)|",
+    "v1Body": [
+      "|java+constructor:///com/sirika/hchelpers/client/HttpClientTemplate/HttpClientTemplate(org.apache.http.client.HttpClient)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/sirika/hchelpers/java/HttpClientTemplate/HttpClientTemplate(org.apache.http.client.HttpClient)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "com.sirika.hchelpers:hchelpers-java:0.9",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.sirika.pymager:pymager-java-api:0.13",
+    "coordinatesV2": "com.sirika.pymager:pymager-java-api:0.14",
+    "caller": "|java+method:///com/sirika/pymager/api/internal/UploadImageCommand/badUploadRequestErrorHandler()|",
+    "called": "|java+method:///com/sirika/hchelpers/java/HttpErrorMatchers/statusCodeEquals(int)|",
+    "v1Body": [
+      "|java+method:///com/sirika/hchelpers/client/HttpErrorMatchers/statusCodeEquals(int)|",
+      "|java+constructor:///com/sirika/pymager/api/internal/UploadImageCommand$2/UploadImageCommand$2(com.sirika.pymager.api.internal.UploadImageCommand)|",
+      "|java+constructor:///com/sirika/hchelpers/client/DelegatingHttpErrorHandler/DelegatingHttpErrorHandler(com.sirika.hchelpers.client.HttpErrorMatcher,com.sirika.hchelpers.client.HttpResponseCallback)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/sirika/hchelpers/java/DelegatingHttpErrorHandler/DelegatingHttpErrorHandler(com.sirika.hchelpers.java.HttpErrorMatcher,com.sirika.hchelpers.java.HttpResponseCallback)|",
+      "|java+method:///com/sirika/hchelpers/java/HttpErrorMatchers/statusCodeEquals(int)|",
+      "|java+constructor:///com/sirika/pymager/api/internal/UploadImageCommand$2/UploadImageCommand$2(com.sirika.pymager.api.internal.UploadImageCommand)|"
+    ],
+    "affectedLib": "com.sirika.hchelpers:hchelpers-java:0.9",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.sirika.pymager:pymager-java-api:0.13",
+    "coordinatesV2": "com.sirika.pymager:pymager-java-api:0.14",
+    "caller": "|java+method:///com/sirika/pymager/api/internal/UploadImageCommand/conflictErrorHandler()|",
+    "called": "|java+method:///com/sirika/hchelpers/java/HttpErrorMatchers/statusCodeEquals(int)|",
+    "v1Body": [
+      "|java+method:///com/sirika/hchelpers/client/HttpErrorMatchers/statusCodeEquals(int)|",
+      "|java+constructor:///com/sirika/pymager/api/internal/UploadImageCommand$1/UploadImageCommand$1(com.sirika.pymager.api.internal.UploadImageCommand)|",
+      "|java+constructor:///com/sirika/hchelpers/client/DelegatingHttpErrorHandler/DelegatingHttpErrorHandler(com.sirika.hchelpers.client.HttpErrorMatcher,com.sirika.hchelpers.client.HttpResponseCallback)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/sirika/hchelpers/java/DelegatingHttpErrorHandler/DelegatingHttpErrorHandler(com.sirika.hchelpers.java.HttpErrorMatcher,com.sirika.hchelpers.java.HttpResponseCallback)|",
+      "|java+method:///com/sirika/hchelpers/java/HttpErrorMatchers/statusCodeEquals(int)|",
+      "|java+constructor:///com/sirika/pymager/api/internal/UploadImageCommand$1/UploadImageCommand$1(com.sirika.pymager.api.internal.UploadImageCommand)|"
+    ],
+    "affectedLib": "com.sirika.hchelpers:hchelpers-java:0.9",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.sirika.pymager:pymager-java-api:0.13",
+    "coordinatesV2": "com.sirika.pymager:pymager-java-api:0.14",
+    "caller": "|java+method:///com/sirika/pymager/api/internal/DeleteImageCommand/execute()|",
+    "called": "|java+method:///com/sirika/hchelpers/java/HttpClientTemplate/executeWithoutResult(org.apache.http.client.methods.HttpUriRequest,java.lang.Iterable)|",
+    "v1Body": [
+      "|java+method:///com/sirika/pymager/api/ImageId/toString()|",
+      "|java+method:///com/sirika/pymager/api/ImageReference/originalImage(java.lang.String)|",
+      "|java+method:///com/sirika/pymager/api/internal/DeleteImageCommand/httpErrorHandlers()|",
+      "|java+constructor:///org/apache/http/client/methods/HttpDelete/HttpDelete(java.lang.String)|",
+      "|java+method:///com/sirika/pymager/api/UrlGenerator/getImageResourceUrl(com.sirika.pymager.api.ImageReference)|",
+      "|java+method:///com/sirika/hchelpers/client/HttpClientTemplate/executeWithoutResult(org.apache.http.client.methods.HttpUriRequest,java.lang.Iterable)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/sirika/pymager/api/ImageReference/originalImage(java.lang.String)|",
+      "|java+method:///com/sirika/pymager/api/UrlGenerator/getImageResourceUrl(com.sirika.pymager.api.ImageReference)|",
+      "|java+method:///com/sirika/pymager/api/internal/DeleteImageCommand/httpErrorHandlers()|",
+      "|java+constructor:///org/apache/http/client/methods/HttpDelete/HttpDelete(java.lang.String)|",
+      "|java+method:///com/sirika/pymager/api/ImageId/toString()|",
+      "|java+method:///com/sirika/hchelpers/java/HttpClientTemplate/executeWithoutResult(org.apache.http.client.methods.HttpUriRequest,java.lang.Iterable)|"
+    ],
+    "affectedLib": "com.sirika.hchelpers:hchelpers-java:0.9",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.sirika.pymager:pymager-java-api:0.13",
+    "coordinatesV2": "com.sirika.pymager:pymager-java-api:0.14",
+    "caller": "|java+method:///com/sirika/pymager/api/internal/UploadImageCommand/defaultHandler()|",
+    "called": "|java+method:///com/sirika/hchelpers/java/HttpErrorMatchers/statusCodeGreaterOrEquals(int)|",
+    "v1Body": [
+      "|java+method:///com/sirika/hchelpers/client/HttpErrorMatchers/statusCodeGreaterOrEquals(int)|",
+      "|java+constructor:///com/sirika/pymager/api/internal/UploadImageCommand$3/UploadImageCommand$3(com.sirika.pymager.api.internal.UploadImageCommand)|",
+      "|java+constructor:///com/sirika/hchelpers/client/DelegatingHttpErrorHandler/DelegatingHttpErrorHandler(com.sirika.hchelpers.client.HttpErrorMatcher,com.sirika.hchelpers.client.HttpResponseCallback)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/sirika/hchelpers/java/DelegatingHttpErrorHandler/DelegatingHttpErrorHandler(com.sirika.hchelpers.java.HttpErrorMatcher,com.sirika.hchelpers.java.HttpResponseCallback)|",
+      "|java+constructor:///com/sirika/pymager/api/internal/UploadImageCommand$3/UploadImageCommand$3(com.sirika.pymager.api.internal.UploadImageCommand)|",
+      "|java+method:///com/sirika/hchelpers/java/HttpErrorMatchers/statusCodeGreaterOrEquals(int)|"
+    ],
+    "affectedLib": "com.sirika.hchelpers:hchelpers-java:0.9",
+    "change": "ADDED"
+  }
+]

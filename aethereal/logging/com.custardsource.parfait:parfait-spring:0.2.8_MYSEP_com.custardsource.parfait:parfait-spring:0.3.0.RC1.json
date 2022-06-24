@@ -1,0 +1,50 @@
+[
+  {
+    "coordinatesV1": "com.custardsource.parfait:parfait-spring:0.2.8",
+    "coordinatesV2": "com.custardsource.parfait:parfait-spring:0.3.0.RC1",
+    "caller": "|java+initializer:///com/custardsource/parfait/spring/AdviceNotifier/AdviceNotifier$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.6.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.custardsource.parfait:parfait-spring:0.2.8",
+    "coordinatesV2": "com.custardsource.parfait:parfait-spring:0.3.0.RC1",
+    "caller": "|java+method:///com/custardsource/parfait/spring/SelfStartingMonitoringView/stop()|",
+    "called": "|java+method:///com/custardsource/parfait/MonitorableRegistry/removeRegistryListener(com.custardsource.parfait.MonitorableRegistryListener)|",
+    "v1Body": [
+      "|java+method:///com/custardsource/parfait/MonitoringView/stop()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/custardsource/parfait/MonitoringView/stopMonitoring(java.util.Collection)|",
+      "|java+method:///com/custardsource/parfait/QuiescentRegistryListener/stop()|",
+      "|java+method:///com/custardsource/parfait/MonitorableRegistry/removeRegistryListener(com.custardsource.parfait.MonitorableRegistryListener)|"
+    ],
+    "affectedLib": "com.custardsource.parfait:parfait-core:0.3.0.RC1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.custardsource.parfait:parfait-spring:0.2.8",
+    "coordinatesV2": "com.custardsource.parfait:parfait-spring:0.3.0.RC1",
+    "caller": "|java+method:///com/custardsource/parfait/spring/SelfStartingMonitoringView/start()|",
+    "called": "|java+method:///com/custardsource/parfait/MonitorableRegistry/addRegistryListener(com.custardsource.parfait.MonitorableRegistryListener)|",
+    "v1Body": [
+      "|java+method:///com/custardsource/parfait/MonitoringView/start()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/custardsource/parfait/MonitorableRegistry/addRegistryListener(com.custardsource.parfait.MonitorableRegistryListener)|",
+      "|java+method:///com/custardsource/parfait/MonitoringView/startMonitoring(java.util.Collection)|",
+      "|java+constructor:///com/custardsource/parfait/QuiescentRegistryListener/QuiescentRegistryListener(java.lang.Runnable,long)|",
+      "|java+method:///com/custardsource/parfait/MonitorableRegistry/getMonitorables()|",
+      "|java+constructor:///com/custardsource/parfait/spring/SelfStartingMonitoringView$1/SelfStartingMonitoringView$1(com.custardsource.parfait.spring.SelfStartingMonitoringView)|"
+    ],
+    "affectedLib": "com.custardsource.parfait:parfait-core:0.3.0.RC1",
+    "change": "UPDATED"
+  }
+]

@@ -1,0 +1,391 @@
+[
+  {
+    "coordinatesV1": "org.springframework.batch:spring-batch-core:2.1.0.RELEASE",
+    "coordinatesV2": "org.springframework.batch:spring-batch-core:2.1.0.M2",
+    "caller": "|java+method:///org/springframework/batch/core/repository/dao/MapExecutionContextDao/copy(org.springframework.batch.item.ExecutionContext)|",
+    "called": "|java+method:///org/apache/commons/lang/SerializationUtils/deserialize(byte%5B%5D)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/lang/SerializationUtils/deserialize(byte%5B%5D)|",
+      "|java+method:///org/apache/commons/lang/SerializationUtils/serialize(java.io.Serializable)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/springframework/batch/support/SerializationUtils/serialize(java.lang.Object)|",
+      "|java+method:///org/springframework/batch/support/SerializationUtils/deserialize(byte%5B%5D)|"
+    ],
+    "affectedLib": "commons-lang:commons-lang:2.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.springframework.batch:spring-batch-core:2.1.0.RELEASE",
+    "coordinatesV2": "org.springframework.batch:spring-batch-core:2.1.0.M2",
+    "caller": "|java+method:///org/springframework/batch/core/repository/dao/MapJobExecutionDao/copy(org.springframework.batch.core.JobExecution)|",
+    "called": "|java+method:///org/apache/commons/lang/SerializationUtils/deserialize(byte%5B%5D)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/lang/SerializationUtils/deserialize(byte%5B%5D)|",
+      "|java+method:///org/apache/commons/lang/SerializationUtils/serialize(java.io.Serializable)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/springframework/batch/support/SerializationUtils/serialize(java.lang.Object)|",
+      "|java+method:///org/springframework/batch/support/SerializationUtils/deserialize(byte%5B%5D)|"
+    ],
+    "affectedLib": "commons-lang:commons-lang:2.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.springframework.batch:spring-batch-core:2.1.0.RELEASE",
+    "coordinatesV2": "org.springframework.batch:spring-batch-core:2.1.0.M2",
+    "caller": "|java+method:///org/springframework/batch/core/repository/dao/MapStepExecutionDao/copy(org.springframework.batch.core.StepExecution)|",
+    "called": "|java+method:///org/apache/commons/lang/SerializationUtils/deserialize(byte%5B%5D)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/lang/SerializationUtils/deserialize(byte%5B%5D)|",
+      "|java+method:///org/apache/commons/lang/SerializationUtils/serialize(java.io.Serializable)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/springframework/batch/support/SerializationUtils/serialize(java.lang.Object)|",
+      "|java+method:///org/springframework/batch/support/SerializationUtils/deserialize(byte%5B%5D)|"
+    ],
+    "affectedLib": "commons-lang:commons-lang:2.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.springframework.batch:spring-batch-core:2.1.0.M2",
+    "coordinatesV2": "org.springframework.batch:spring-batch-core:2.1.0.RELEASE",
+    "caller": "|java+method:///org/springframework/batch/core/repository/dao/MapExecutionContextDao/copy(org.springframework.batch.item.ExecutionContext)|",
+    "called": "|java+method:///org/springframework/batch/support/SerializationUtils/serialize(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/lang/SerializationUtils/deserialize(byte%5B%5D)|",
+      "|java+method:///org/apache/commons/lang/SerializationUtils/serialize(java.io.Serializable)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/springframework/batch/support/SerializationUtils/serialize(java.lang.Object)|",
+      "|java+method:///org/springframework/batch/support/SerializationUtils/deserialize(byte%5B%5D)|"
+    ],
+    "affectedLib": "org.springframework.batch:spring-batch-infrastructure:2.1.0.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.springframework.batch:spring-batch-core:2.1.0.M2",
+    "coordinatesV2": "org.springframework.batch:spring-batch-core:2.1.0.RELEASE",
+    "caller": "|java+method:///org/springframework/batch/core/repository/dao/MapJobExecutionDao/copy(org.springframework.batch.core.JobExecution)|",
+    "called": "|java+method:///org/springframework/batch/support/SerializationUtils/serialize(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/lang/SerializationUtils/deserialize(byte%5B%5D)|",
+      "|java+method:///org/apache/commons/lang/SerializationUtils/serialize(java.io.Serializable)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/springframework/batch/support/SerializationUtils/serialize(java.lang.Object)|",
+      "|java+method:///org/springframework/batch/support/SerializationUtils/deserialize(byte%5B%5D)|"
+    ],
+    "affectedLib": "org.springframework.batch:spring-batch-infrastructure:2.1.0.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.springframework.batch:spring-batch-core:2.1.0.M2",
+    "coordinatesV2": "org.springframework.batch:spring-batch-core:2.1.0.RELEASE",
+    "caller": "|java+method:///org/springframework/batch/core/step/item/FaultTolerantChunkProcessor/transform(org.springframework.batch.core.StepContribution,org.springframework.batch.core.step.item.Chunk)|",
+    "called": "|java+constructor:///org/springframework/batch/retry/support/DefaultRetryState/DefaultRetryState(java.lang.Object,org.springframework.batch.classify.Classifier)|",
+    "v1Body": [
+      "|java+constructor:///org/springframework/batch/core/step/item/Chunk/Chunk()|",
+      "|java+method:///org/springframework/batch/core/step/item/Chunk$ChunkIterator/next()|",
+      "|java+method:///org/springframework/batch/core/step/item/FaultTolerantChunkProcessor/getInputKey(java.lang.Object)|",
+      "|java+constructor:///org/springframework/batch/retry/support/DefaultRetryState/DefaultRetryState(java.lang.Object,org.springframework.batch.classify.Classifier)|",
+      "|java+constructor:///org/springframework/batch/core/step/item/FaultTolerantChunkProcessor$1/FaultTolerantChunkProcessor$1(org.springframework.batch.core.step.item.FaultTolerantChunkProcessor,java.util.concurrent.atomic.AtomicInteger,org.springframework.batch.core.step.item.Chunk$ChunkIterator,java.lang.Object,org.springframework.batch.core.StepContribution,org.springframework.batch.core.step.item.Chunk$ChunkIterator)|",
+      "|java+method:///org/springframework/batch/core/step/item/Chunk/isEmpty()|",
+      "|java+constructor:///org/springframework/batch/core/step/item/FaultTolerantChunkProcessor$2/FaultTolerantChunkProcessor$2(org.springframework.batch.core.step.item.FaultTolerantChunkProcessor,org.springframework.batch.core.StepContribution,org.springframework.batch.core.step.item.Chunk$ChunkIterator)|",
+      "|java+method:///org/springframework/batch/core/step/item/BatchRetryTemplate/execute(org.springframework.batch.retry.RetryCallback,org.springframework.batch.retry.RecoveryCallback,org.springframework.batch.retry.RetryState)|",
+      "|java+method:///org/springframework/batch/core/step/item/Chunk/getUserData()|",
+      "|java+method:///org/springframework/batch/core/step/item/Chunk/add(java.lang.Object)|",
+      "|java+method:///org/springframework/batch/core/step/item/Chunk$ChunkIterator/hasNext()|",
+      "|java+method:///org/springframework/batch/core/step/item/FaultTolerantChunkProcessor$UserData/getOutputs()|",
+      "|java+method:///org/springframework/batch/core/step/item/Chunk/iterator()|",
+      "|java+constructor:///java/util/concurrent/atomic/AtomicInteger/AtomicInteger(int)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/ArrayList/iterator()|",
+      "|java+constructor:///org/springframework/batch/core/step/item/Chunk/Chunk()|",
+      "|java+method:///org/springframework/batch/core/step/item/Chunk$ChunkIterator/next()|",
+      "|java+method:///org/springframework/batch/core/step/item/FaultTolerantChunkProcessor/getInputKey(java.lang.Object)|",
+      "|java+constructor:///org/springframework/batch/retry/support/DefaultRetryState/DefaultRetryState(java.lang.Object,org.springframework.batch.classify.Classifier)|",
+      "|java+method:///org/springframework/batch/core/step/item/Chunk/isEmpty()|",
+      "|java+method:///org/springframework/batch/core/step/item/Chunk/getItems()|",
+      "|java+constructor:///org/springframework/batch/core/step/item/FaultTolerantChunkProcessor$2/FaultTolerantChunkProcessor$2(org.springframework.batch.core.step.item.FaultTolerantChunkProcessor,org.springframework.batch.core.StepContribution,org.springframework.batch.core.step.item.Chunk$ChunkIterator)|",
+      "|java+method:///org/springframework/batch/core/step/item/BatchRetryTemplate/execute(org.springframework.batch.retry.RetryCallback,org.springframework.batch.retry.RecoveryCallback,org.springframework.batch.retry.RetryState)|",
+      "|java+method:///org/springframework/batch/core/step/item/Chunk/getUserData()|",
+      "|java+method:///org/springframework/batch/core/step/item/Chunk/add(java.lang.Object)|",
+      "|java+constructor:///org/springframework/batch/core/step/item/FaultTolerantChunkProcessor$1/FaultTolerantChunkProcessor$1(org.springframework.batch.core.step.item.FaultTolerantChunkProcessor,java.util.concurrent.atomic.AtomicInteger,java.util.Iterator,int,java.lang.Object,org.springframework.batch.core.step.item.Chunk,org.springframework.batch.core.StepContribution,org.springframework.batch.core.step.item.Chunk$ChunkIterator,org.springframework.batch.core.step.item.FaultTolerantChunkProcessor$UserData)|",
+      "|java+constructor:///java/util/ArrayList/ArrayList(java.util.Collection)|",
+      "|java+method:///org/springframework/batch/core/step/item/Chunk$ChunkIterator/hasNext()|",
+      "|java+method:///org/springframework/batch/core/step/item/FaultTolerantChunkProcessor$UserData/getOutputs()|",
+      "|java+method:///org/springframework/batch/core/step/item/Chunk/iterator()|",
+      "|java+constructor:///java/util/concurrent/atomic/AtomicInteger/AtomicInteger(int)|"
+    ],
+    "affectedLib": "org.springframework.batch:spring-batch-infrastructure:2.1.0.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.springframework.batch:spring-batch-core:2.1.0.M2",
+    "coordinatesV2": "org.springframework.batch:spring-batch-core:2.1.0.RELEASE",
+    "caller": "|java+constructor:///org/springframework/batch/core/repository/dao/MapJobExecutionDao/MapJobExecutionDao()|",
+    "called": "|java+method:///org/springframework/batch/support/transaction/TransactionAwareProxyFactory/createTransactionalMap()|",
+    "v1Body": [
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/springframework/batch/support/transaction/TransactionAwareProxyFactory/createTransactionalMap()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "org.springframework.batch:spring-batch-infrastructure:2.1.0.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.springframework.batch:spring-batch-core:2.1.0.M2",
+    "coordinatesV2": "org.springframework.batch:spring-batch-core:2.1.0.RELEASE",
+    "caller": "|java+constructor:///org/springframework/batch/core/repository/dao/MapJobInstanceDao/MapJobInstanceDao()|",
+    "called": "|java+method:///org/springframework/batch/support/transaction/TransactionAwareProxyFactory/createTransactionalSet()|",
+    "v1Body": [
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/springframework/batch/support/transaction/TransactionAwareProxyFactory/createTransactionalSet()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "org.springframework.batch:spring-batch-infrastructure:2.1.0.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.springframework.batch:spring-batch-core:2.1.0.M2",
+    "coordinatesV2": "org.springframework.batch:spring-batch-core:2.1.0.RELEASE",
+    "caller": "|java+constructor:///org/springframework/batch/core/repository/dao/MapExecutionContextDao/MapExecutionContextDao()|",
+    "called": "|java+method:///org/springframework/batch/support/transaction/TransactionAwareProxyFactory/createTransactionalMap()|",
+    "v1Body": [
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/springframework/batch/support/transaction/TransactionAwareProxyFactory/createTransactionalMap()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "org.springframework.batch:spring-batch-infrastructure:2.1.0.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.springframework.batch:spring-batch-core:2.1.0.M2",
+    "coordinatesV2": "org.springframework.batch:spring-batch-core:2.1.0.RELEASE",
+    "caller": "|java+method:///org/springframework/batch/core/step/item/FaultTolerantChunkProcessor$2/recover(org.springframework.batch.retry.RetryContext)|",
+    "called": "|java+constructor:///org/springframework/batch/retry/RetryException/RetryException(java.lang.String,java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/logging/Log/debug(java.lang.Object,java.lang.Throwable)|",
+      "|java+method:///org/springframework/batch/core/step/item/Chunk$ChunkIterator/remove(java.lang.Throwable)|",
+      "|java+constructor:///org/springframework/batch/retry/RetryException/RetryException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/springframework/batch/core/StepContribution/getStepSkipCount()|",
+      "|java+method:///org/springframework/batch/core/StepContribution/incrementProcessSkipCount()|",
+      "|java+method:///org/springframework/batch/core/step/skip/SkipPolicy/shouldSkip(java.lang.Throwable,int)|",
+      "|java+method:///org/springframework/batch/retry/RetryContext/getLastThrowable()|",
+      "|java+method:///org/springframework/batch/core/step/item/FaultTolerantChunkProcessor/access$100(org.springframework.batch.core.step.item.FaultTolerantChunkProcessor)|",
+      "|java+method:///org/springframework/batch/core/step/item/FaultTolerantChunkProcessor/access$200(org.springframework.batch.core.step.item.FaultTolerantChunkProcessor)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/logging/Log/debug(java.lang.Object,java.lang.Throwable)|",
+      "|java+method:///org/springframework/batch/core/step/item/Chunk$ChunkIterator/remove(java.lang.Throwable)|",
+      "|java+constructor:///org/springframework/batch/retry/RetryException/RetryException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/springframework/batch/core/StepContribution/getStepSkipCount()|",
+      "|java+method:///org/springframework/batch/core/StepContribution/incrementProcessSkipCount()|",
+      "|java+method:///org/springframework/batch/core/step/skip/SkipPolicy/shouldSkip(java.lang.Throwable,int)|",
+      "|java+method:///org/springframework/batch/retry/RetryContext/getLastThrowable()|",
+      "|java+method:///org/springframework/batch/core/step/item/FaultTolerantChunkProcessor/access$400(org.springframework.batch.core.step.item.FaultTolerantChunkProcessor)|",
+      "|java+method:///org/springframework/batch/core/step/item/FaultTolerantChunkProcessor/access$500(org.springframework.batch.core.step.item.FaultTolerantChunkProcessor)|"
+    ],
+    "affectedLib": "org.springframework.batch:spring-batch-infrastructure:2.1.0.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.springframework.batch:spring-batch-core:2.1.0.M2",
+    "coordinatesV2": "org.springframework.batch:spring-batch-core:2.1.0.RELEASE",
+    "caller": "|java+method:///org/springframework/batch/core/configuration/xml/StepParserStepFactoryBean/configureTaskletStep(org.springframework.batch.core.step.tasklet.TaskletStep)|",
+    "called": "|java+constructor:///org/springframework/batch/classify/BinaryExceptionClassifier/BinaryExceptionClassifier(java.util.Collection,boolean)|",
+    "v1Body": [
+      "|java+method:///java/lang/Integer/intValue()|",
+      "|java+method:///org/springframework/transaction/annotation/Propagation/value()|",
+      "|java+method:///org/springframework/transaction/annotation/Isolation/value()|",
+      "|java+method:///org/springframework/batch/core/step/tasklet/TaskletStep/setTransactionAttribute(org.springframework.transaction.interceptor.TransactionAttribute)|",
+      "|java+method:///org/springframework/batch/core/step/tasklet/TaskletStep/setAllowStartIfComplete(boolean)|",
+      "|java+constructor:///org/springframework/batch/classify/BinaryExceptionClassifier/BinaryExceptionClassifier(java.util.Collection,boolean)|",
+      "|java+method:///org/springframework/transaction/interceptor/DefaultTransactionAttribute/setTimeout(int)|",
+      "|java+method:///org/springframework/batch/core/step/tasklet/TaskletStep/setStepExecutionListeners(org.springframework.batch.core.StepExecutionListener%5B%5D)|",
+      "|java+constructor:///org/springframework/transaction/interceptor/DefaultTransactionAttribute/DefaultTransactionAttribute()|",
+      "|java+method:///org/springframework/batch/core/step/tasklet/TaskletStep/setTasklet(org.springframework.batch.core.step.tasklet.Tasklet)|",
+      "|java+method:///org/springframework/batch/core/step/tasklet/TaskletStep/setJobRepository(org.springframework.batch.core.repository.JobRepository)|",
+      "|java+constructor:///java/util/HashSet/HashSet()|",
+      "|java+method:///org/springframework/batch/core/step/tasklet/TaskletStep/setTransactionManager(org.springframework.transaction.PlatformTransactionManager)|",
+      "|java+method:///java/lang/Boolean/booleanValue()|",
+      "|java+method:///org/springframework/transaction/interceptor/DefaultTransactionAttribute/setPropagationBehavior(int)|",
+      "|java+method:///org/springframework/batch/core/step/tasklet/TaskletStep/setName(java.lang.String)|",
+      "|java+constructor:///org/springframework/batch/core/configuration/xml/StepParserStepFactoryBean$1/StepParserStepFactoryBean$1(org.springframework.batch.core.configuration.xml.StepParserStepFactoryBean,org.springframework.transaction.interceptor.TransactionAttribute,org.springframework.batch.classify.BinaryExceptionClassifier)|",
+      "|java+method:///org/springframework/batch/core/step/tasklet/TaskletStep/setStartLimit(int)|",
+      "|java+method:///org/springframework/transaction/interceptor/DefaultTransactionAttribute/setIsolationLevel(int)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Integer/intValue()|",
+      "|java+method:///org/springframework/transaction/annotation/Propagation/value()|",
+      "|java+method:///org/springframework/batch/core/configuration/xml/StepParserStepFactoryBean/configureAbstractStep(org.springframework.batch.core.step.AbstractStep)|",
+      "|java+method:///org/springframework/transaction/annotation/Isolation/value()|",
+      "|java+method:///org/springframework/batch/core/step/tasklet/TaskletStep/setTransactionAttribute(org.springframework.transaction.interceptor.TransactionAttribute)|",
+      "|java+constructor:///org/springframework/batch/classify/BinaryExceptionClassifier/BinaryExceptionClassifier(java.util.Collection,boolean)|",
+      "|java+method:///org/springframework/transaction/interceptor/DefaultTransactionAttribute/setTimeout(int)|",
+      "|java+constructor:///org/springframework/transaction/interceptor/DefaultTransactionAttribute/DefaultTransactionAttribute()|",
+      "|java+method:///org/springframework/batch/core/step/tasklet/TaskletStep/setTasklet(org.springframework.batch.core.step.tasklet.Tasklet)|",
+      "|java+method:///org/springframework/transaction/interceptor/DefaultTransactionAttribute/setIsolationLevel(int)|",
+      "|java+constructor:///java/util/HashSet/HashSet()|",
+      "|java+method:///org/springframework/batch/core/step/tasklet/TaskletStep/setTransactionManager(org.springframework.transaction.PlatformTransactionManager)|",
+      "|java+method:///org/springframework/transaction/interceptor/DefaultTransactionAttribute/setPropagationBehavior(int)|",
+      "|java+constructor:///org/springframework/batch/core/configuration/xml/StepParserStepFactoryBean$1/StepParserStepFactoryBean$1(org.springframework.batch.core.configuration.xml.StepParserStepFactoryBean,org.springframework.transaction.interceptor.TransactionAttribute,org.springframework.batch.classify.BinaryExceptionClassifier)|"
+    ],
+    "affectedLib": "org.springframework.batch:spring-batch-infrastructure:2.1.0.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.springframework.batch:spring-batch-core:2.1.0.M2",
+    "coordinatesV2": "org.springframework.batch:spring-batch-core:2.1.0.RELEASE",
+    "caller": "|java+method:///org/springframework/batch/core/step/item/FaultTolerantChunkProcessor$4/recover(org.springframework.batch.retry.RetryContext)|",
+    "called": "|java+constructor:///org/springframework/batch/retry/RetryException/RetryException(java.lang.String,java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///org/springframework/batch/core/step/item/Chunk$ChunkIterator/next()|",
+      "|java+constructor:///org/springframework/batch/retry/RetryException/RetryException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/springframework/batch/core/step/item/Chunk/size()|",
+      "|java+method:///org/springframework/batch/classify/Classifier/classify(java.lang.Object)|",
+      "|java+method:///org/springframework/batch/core/step/item/Chunk$ChunkIterator/hasNext()|",
+      "|java+method:///org/springframework/batch/core/step/item/FaultTolerantChunkProcessor/access$600(org.springframework.batch.core.step.item.FaultTolerantChunkProcessor,org.springframework.batch.core.step.item.Chunk$ChunkIterator,org.springframework.batch.core.step.item.Chunk$ChunkIterator,java.lang.Throwable,org.springframework.batch.core.StepContribution)|",
+      "|java+method:///org/springframework/batch/core/step/item/Chunk/iterator()|",
+      "|java+method:///java/lang/Boolean/booleanValue()|",
+      "|java+method:///org/springframework/batch/retry/RetryContext/getLastThrowable()|",
+      "|java+method:///org/springframework/batch/core/step/item/FaultTolerantChunkProcessor/access$000(org.springframework.batch.core.step.item.FaultTolerantChunkProcessor)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/springframework/batch/core/step/item/Chunk$ChunkIterator/next()|",
+      "|java+constructor:///org/springframework/batch/retry/RetryException/RetryException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/springframework/batch/core/step/item/Chunk/size()|",
+      "|java+method:///org/springframework/batch/classify/Classifier/classify(java.lang.Object)|",
+      "|java+method:///org/springframework/batch/core/step/item/Chunk$ChunkIterator/hasNext()|",
+      "|java+method:///org/springframework/batch/retry/RetryContext/getLastThrowable()|",
+      "|java+method:///org/springframework/batch/core/step/item/FaultTolerantChunkProcessor/access$300(org.springframework.batch.core.step.item.FaultTolerantChunkProcessor)|",
+      "|java+method:///org/springframework/batch/core/step/item/Chunk/iterator()|",
+      "|java+method:///org/springframework/batch/core/step/item/FaultTolerantChunkProcessor/access$900(org.springframework.batch.core.step.item.FaultTolerantChunkProcessor,org.springframework.batch.core.step.item.Chunk$ChunkIterator,org.springframework.batch.core.step.item.Chunk$ChunkIterator,java.lang.Throwable,org.springframework.batch.core.StepContribution)|",
+      "|java+method:///java/lang/Boolean/booleanValue()|"
+    ],
+    "affectedLib": "org.springframework.batch:spring-batch-infrastructure:2.1.0.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.springframework.batch:spring-batch-core:2.1.0.M2",
+    "coordinatesV2": "org.springframework.batch:spring-batch-core:2.1.0.RELEASE",
+    "caller": "|java+method:///org/springframework/batch/core/step/item/FaultTolerantStepFactoryBean/configureRetry()|",
+    "called": "|java+constructor:///org/springframework/batch/retry/policy/MapRetryContextCache/MapRetryContextCache(int)|",
+    "v1Body": [
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///java/util/HashMap/HashMap(java.util.Map)|",
+      "|java+method:///org/springframework/batch/core/step/item/FaultTolerantStepFactoryBean/getStepOperations()|",
+      "|java+constructor:///org/springframework/batch/retry/policy/SimpleRetryPolicy/SimpleRetryPolicy(int,java.util.Map)|",
+      "|java+method:///org/springframework/batch/core/step/item/FaultTolerantStepFactoryBean/getExceptionHandler()|",
+      "|java+constructor:///org/springframework/batch/retry/policy/MapRetryContextCache/MapRetryContextCache(int)|",
+      "|java+method:///org/springframework/batch/core/step/item/BatchRetryTemplate/setRetryContextCache(org.springframework.batch.retry.policy.RetryContextCache)|",
+      "|java+method:///java/lang/Boolean/valueOf(boolean)|",
+      "|java+method:///org/springframework/batch/core/step/item/BatchRetryTemplate/setListeners(org.springframework.batch.retry.RetryListener%5B%5D)|",
+      "|java+method:///org/springframework/batch/core/step/item/FaultTolerantStepFactoryBean/fatalExceptionAwareProxy(org.springframework.batch.retry.RetryPolicy)|",
+      "|java+constructor:///org/springframework/batch/core/step/item/SimpleRetryExceptionHandler/SimpleRetryExceptionHandler(org.springframework.batch.retry.RetryPolicy,org.springframework.batch.repeat.exception.ExceptionHandler,java.util.Collection)|",
+      "|java+method:///org/springframework/batch/core/step/item/BatchRetryTemplate/setBackOffPolicy(org.springframework.batch.retry.backoff.BackOffPolicy)|",
+      "|java+constructor:///org/springframework/batch/core/step/item/BatchRetryTemplate/BatchRetryTemplate()|",
+      "|java+method:///org/springframework/batch/core/step/item/BatchRetryTemplate/setRetryPolicy(org.springframework.batch.retry.RetryPolicy)|",
+      "|java+method:///org/springframework/batch/repeat/support/RepeatTemplate/setExceptionHandler(org.springframework.batch.repeat.exception.ExceptionHandler)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/springframework/batch/core/step/item/FaultTolerantStepFactoryBean/getFatalExceptionAwareProxy(org.springframework.batch.retry.RetryPolicy)|",
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///java/util/HashMap/HashMap(java.util.Map)|",
+      "|java+method:///org/springframework/batch/core/step/item/FaultTolerantStepFactoryBean/getStepOperations()|",
+      "|java+constructor:///org/springframework/batch/retry/policy/SimpleRetryPolicy/SimpleRetryPolicy(int,java.util.Map)|",
+      "|java+method:///org/springframework/batch/core/step/item/FaultTolerantStepFactoryBean/getExceptionHandler()|",
+      "|java+constructor:///org/springframework/batch/retry/policy/MapRetryContextCache/MapRetryContextCache(int)|",
+      "|java+method:///org/springframework/batch/core/step/item/BatchRetryTemplate/setRetryContextCache(org.springframework.batch.retry.policy.RetryContextCache)|",
+      "|java+method:///java/lang/Boolean/valueOf(boolean)|",
+      "|java+method:///org/springframework/batch/core/step/item/BatchRetryTemplate/setListeners(org.springframework.batch.retry.RetryListener%5B%5D)|",
+      "|java+constructor:///org/springframework/batch/core/step/item/SimpleRetryExceptionHandler/SimpleRetryExceptionHandler(org.springframework.batch.retry.RetryPolicy,org.springframework.batch.repeat.exception.ExceptionHandler,java.util.Collection)|",
+      "|java+method:///org/springframework/batch/core/step/item/BatchRetryTemplate/setBackOffPolicy(org.springframework.batch.retry.backoff.BackOffPolicy)|",
+      "|java+constructor:///org/springframework/batch/core/step/item/BatchRetryTemplate/BatchRetryTemplate()|",
+      "|java+method:///org/springframework/batch/core/step/item/BatchRetryTemplate/setRetryPolicy(org.springframework.batch.retry.RetryPolicy)|",
+      "|java+method:///org/springframework/batch/repeat/support/RepeatTemplate/setExceptionHandler(org.springframework.batch.repeat.exception.ExceptionHandler)|"
+    ],
+    "affectedLib": "org.springframework.batch:spring-batch-infrastructure:2.1.0.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.springframework.batch:spring-batch-core:2.1.0.M2",
+    "coordinatesV2": "org.springframework.batch:spring-batch-core:2.1.0.RELEASE",
+    "caller": "|java+method:///org/springframework/batch/core/repository/dao/MapStepExecutionDao/copy(org.springframework.batch.core.StepExecution)|",
+    "called": "|java+method:///org/springframework/batch/support/SerializationUtils/serialize(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/lang/SerializationUtils/deserialize(byte%5B%5D)|",
+      "|java+method:///org/apache/commons/lang/SerializationUtils/serialize(java.io.Serializable)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/springframework/batch/support/SerializationUtils/serialize(java.lang.Object)|",
+      "|java+method:///org/springframework/batch/support/SerializationUtils/deserialize(byte%5B%5D)|"
+    ],
+    "affectedLib": "org.springframework.batch:spring-batch-infrastructure:2.1.0.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.springframework.batch:spring-batch-core:2.1.0.M2",
+    "coordinatesV2": "org.springframework.batch:spring-batch-core:2.1.0.RELEASE",
+    "caller": "|java+constructor:///org/springframework/batch/core/repository/support/MapJobRepositoryFactoryBean/MapJobRepositoryFactoryBean()|",
+    "called": "|java+constructor:///org/springframework/batch/support/transaction/ResourcelessTransactionManager/ResourcelessTransactionManager()|",
+    "v1Body": [
+      "|java+constructor:///org/springframework/batch/core/repository/support/AbstractJobRepositoryFactoryBean/AbstractJobRepositoryFactoryBean()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/springframework/batch/support/transaction/ResourcelessTransactionManager/ResourcelessTransactionManager()|",
+      "|java+constructor:///org/springframework/batch/core/repository/support/MapJobRepositoryFactoryBean/MapJobRepositoryFactoryBean(org.springframework.transaction.PlatformTransactionManager)|"
+    ],
+    "affectedLib": "org.springframework.batch:spring-batch-infrastructure:2.1.0.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.springframework.batch:spring-batch-core:2.1.0.M2",
+    "coordinatesV2": "org.springframework.batch:spring-batch-core:2.1.0.RELEASE",
+    "caller": "|java+method:///org/springframework/batch/core/step/item/FaultTolerantChunkProcessor$5/recover(org.springframework.batch.retry.RetryContext)|",
+    "called": "|java+constructor:///org/springframework/batch/retry/ExhaustedRetryException/ExhaustedRetryException(java.lang.String,java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///org/springframework/batch/core/step/item/FaultTolerantChunkProcessor/access$500(org.springframework.batch.core.step.item.FaultTolerantChunkProcessor,org.springframework.batch.core.StepContribution,org.springframework.batch.core.step.item.Chunk,org.springframework.batch.core.step.item.Chunk,org.springframework.batch.core.step.item.ChunkMonitor)|",
+      "|java+constructor:///org/springframework/batch/retry/ExhaustedRetryException/ExhaustedRetryException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/springframework/batch/core/step/skip/SkipPolicy/shouldSkip(java.lang.Throwable,int)|",
+      "|java+method:///org/springframework/batch/retry/RetryContext/getLastThrowable()|",
+      "|java+method:///org/springframework/batch/core/step/item/Chunk/setBusy(boolean)|",
+      "|java+method:///org/springframework/batch/core/step/item/FaultTolerantChunkProcessor/access$400(org.springframework.batch.core.step.item.FaultTolerantChunkProcessor)|",
+      "|java+method:///org/springframework/batch/core/step/item/FaultTolerantChunkProcessor/access$700(org.springframework.batch.core.step.item.FaultTolerantChunkProcessor)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/springframework/batch/core/step/item/FaultTolerantChunkProcessor/access$800(org.springframework.batch.core.step.item.FaultTolerantChunkProcessor,org.springframework.batch.core.StepContribution,org.springframework.batch.core.step.item.Chunk,org.springframework.batch.core.step.item.Chunk,org.springframework.batch.core.step.item.ChunkMonitor)|",
+      "|java+constructor:///org/springframework/batch/retry/ExhaustedRetryException/ExhaustedRetryException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/springframework/batch/retry/RetryContext/getLastThrowable()|",
+      "|java+method:///org/springframework/batch/core/step/item/Chunk/setBusy(boolean)|",
+      "|java+method:///org/springframework/batch/core/step/item/FaultTolerantChunkProcessor/access$700(org.springframework.batch.core.step.item.FaultTolerantChunkProcessor)|",
+      "|java+method:///org/springframework/batch/core/step/item/FaultTolerantChunkProcessor/access$1000(org.springframework.batch.core.step.item.FaultTolerantChunkProcessor)|",
+      "|java+method:///org/springframework/batch/core/step/skip/SkipPolicy/shouldSkip(java.lang.Throwable,int)|"
+    ],
+    "affectedLib": "org.springframework.batch:spring-batch-infrastructure:2.1.0.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.springframework.batch:spring-batch-core:2.1.0.M2",
+    "coordinatesV2": "org.springframework.batch:spring-batch-core:2.1.0.RELEASE",
+    "caller": "|java+constructor:///org/springframework/batch/core/repository/dao/MapStepExecutionDao/MapStepExecutionDao()|",
+    "called": "|java+method:///org/springframework/batch/support/transaction/TransactionAwareProxyFactory/createTransactionalMap()|",
+    "v1Body": [
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/springframework/batch/support/transaction/TransactionAwareProxyFactory/createTransactionalMap()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "org.springframework.batch:spring-batch-infrastructure:2.1.0.RELEASE",
+    "change": "UPDATED"
+  }
+]

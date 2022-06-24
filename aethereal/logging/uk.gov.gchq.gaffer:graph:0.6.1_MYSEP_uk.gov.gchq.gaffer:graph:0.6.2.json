@@ -1,0 +1,64 @@
+[
+  {
+    "coordinatesV1": "uk.gov.gchq.gaffer:graph:0.6.1",
+    "coordinatesV2": "uk.gov.gchq.gaffer:graph:0.6.2",
+    "caller": "|java+method:///uk/gov/gchq/gaffer/graph/Graph$Builder/updateStore()|",
+    "called": "|java+method:///uk/gov/gchq/gaffer/store/Store/validateSchemas()|",
+    "v1Body": [
+      "|java+method:///uk/gov/gchq/gaffer/store/Store/validateSchemas()|",
+      "|java+method:///uk/gov/gchq/gaffer/graph/Graph$Builder/createStore(uk.gov.gchq.gaffer.store.StoreProperties,uk.gov.gchq.gaffer.store.schema.Schema)|",
+      "|java+method:///uk/gov/gchq/gaffer/graph/Graph$Builder/cloneSchema(uk.gov.gchq.gaffer.store.schema.Schema)|",
+      "|java+method:///uk/gov/gchq/gaffer/store/Store/initialise(uk.gov.gchq.gaffer.store.schema.Schema,uk.gov.gchq.gaffer.store.StoreProperties)|",
+      "|java+method:///uk/gov/gchq/gaffer/store/Store/optimiseSchema()|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///uk/gov/gchq/gaffer/store/Store/getSchema()|"
+    ],
+    "v2Body": [
+      "|java+method:///uk/gov/gchq/gaffer/store/Store/validateSchemas()|",
+      "|java+method:///uk/gov/gchq/gaffer/graph/Graph$Builder/createStore(uk.gov.gchq.gaffer.store.StoreProperties,uk.gov.gchq.gaffer.store.schema.Schema)|",
+      "|java+method:///uk/gov/gchq/gaffer/graph/Graph$Builder/cloneSchema(uk.gov.gchq.gaffer.store.schema.Schema)|",
+      "|java+method:///uk/gov/gchq/gaffer/store/Store/initialise(uk.gov.gchq.gaffer.store.schema.Schema,uk.gov.gchq.gaffer.store.StoreProperties)|",
+      "|java+method:///uk/gov/gchq/gaffer/store/Store/getProperties()|",
+      "|java+method:///uk/gov/gchq/gaffer/store/Store/optimiseSchema()|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///uk/gov/gchq/gaffer/store/Store/getSchema()|"
+    ],
+    "affectedLib": "uk.gov.gchq.gaffer:store:0.6.2",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "uk.gov.gchq.gaffer:graph:0.6.1",
+    "coordinatesV2": "uk.gov.gchq.gaffer:graph:0.6.2",
+    "caller": "|java+method:///uk/gov/gchq/gaffer/graph/Graph/execute(uk.gov.gchq.gaffer.operation.OperationChain,uk.gov.gchq.gaffer.user.User)|",
+    "called": "|java+method:///uk/gov/gchq/gaffer/store/Store/execute(uk.gov.gchq.gaffer.operation.OperationChain,uk.gov.gchq.gaffer.user.User)|",
+    "v1Body": [
+      "|java+method:///uk/gov/gchq/gaffer/graph/hook/GraphHook/postExecute(java.lang.Object,uk.gov.gchq.gaffer.operation.OperationChain,uk.gov.gchq.gaffer.user.User)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///uk/gov/gchq/gaffer/data/elementdefinition/view/View$Builder/merge(uk.gov.gchq.gaffer.data.elementdefinition.view.View)|",
+      "|java+method:///uk/gov/gchq/gaffer/operation/OperationChain/getOperations()|",
+      "|java+method:///uk/gov/gchq/gaffer/operation/Operation/setView(uk.gov.gchq.gaffer.data.elementdefinition.view.View)|",
+      "|java+method:///uk/gov/gchq/gaffer/operation/Operation/getView()|",
+      "|java+method:///uk/gov/gchq/gaffer/store/Store/execute(uk.gov.gchq.gaffer.operation.OperationChain,uk.gov.gchq.gaffer.user.User)|",
+      "|java+constructor:///uk/gov/gchq/gaffer/data/elementdefinition/view/View$Builder/View$Builder()|",
+      "|java+method:///uk/gov/gchq/gaffer/data/elementdefinition/view/View$Builder/build()|",
+      "|java+method:///uk/gov/gchq/gaffer/data/elementdefinition/view/View/getEdgeGroups()|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///uk/gov/gchq/gaffer/data/elementdefinition/view/View/getEntityGroups()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///uk/gov/gchq/gaffer/graph/hook/GraphHook/preExecute(uk.gov.gchq.gaffer.operation.OperationChain,uk.gov.gchq.gaffer.user.User)|",
+      "|java+method:///java/util/Set/isEmpty()|",
+      "|java+method:///uk/gov/gchq/gaffer/data/elementdefinition/view/View/expandGlobalDefinitions()|"
+    ],
+    "v2Body": [
+      "|java+method:///uk/gov/gchq/gaffer/graph/hook/GraphHook/postExecute(java.lang.Object,uk.gov.gchq.gaffer.operation.OperationChain,uk.gov.gchq.gaffer.user.User)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///uk/gov/gchq/gaffer/store/Store/execute(uk.gov.gchq.gaffer.operation.OperationChain,uk.gov.gchq.gaffer.user.User)|",
+      "|java+method:///uk/gov/gchq/gaffer/graph/Graph/updateOperationChainView(uk.gov.gchq.gaffer.operation.OperationChain)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///uk/gov/gchq/gaffer/graph/hook/GraphHook/preExecute(uk.gov.gchq.gaffer.operation.OperationChain,uk.gov.gchq.gaffer.user.User)|"
+    ],
+    "affectedLib": "uk.gov.gchq.gaffer:store:0.6.2",
+    "change": "UPDATED"
+  }
+]

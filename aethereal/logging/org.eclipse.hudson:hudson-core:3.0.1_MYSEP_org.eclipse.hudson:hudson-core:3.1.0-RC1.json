@@ -1,0 +1,289 @@
+[
+  {
+    "coordinatesV1": "org.eclipse.hudson:hudson-core:3.0.1",
+    "coordinatesV2": "org.eclipse.hudson:hudson-core:3.1.0-RC1",
+    "caller": "|java+method:///hudson/model/RunMap/tailMap(java.lang.Integer)|",
+    "called": "|java+method:///com/google/common/collect/Maps/transformValues(java.util.SortedMap,com.google.common.base.Function)|",
+    "v1Body": [
+      "|java+method:///java/util/SortedMap/tailMap(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/SortedMap/tailMap(java.lang.Object)|",
+      "|java+method:///com/google/common/collect/Maps/transformValues(java.util.SortedMap,com.google.common.base.Function)|"
+    ],
+    "affectedLib": "com.google.guava:guava:14.0.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.eclipse.hudson:hudson-core:3.0.1",
+    "coordinatesV2": "org.eclipse.hudson:hudson-core:3.1.0-RC1",
+    "caller": "|java+method:///hudson/model/RunMap/headMap(java.lang.Integer)|",
+    "called": "|java+method:///com/google/common/collect/Maps/transformValues(java.util.SortedMap,com.google.common.base.Function)|",
+    "v1Body": [
+      "|java+method:///java/util/SortedMap/headMap(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/common/collect/Maps/transformValues(java.util.SortedMap,com.google.common.base.Function)|",
+      "|java+method:///java/util/SortedMap/headMap(java.lang.Object)|"
+    ],
+    "affectedLib": "com.google.guava:guava:14.0.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.eclipse.hudson:hudson-core:3.0.1",
+    "coordinatesV2": "org.eclipse.hudson:hudson-core:3.1.0-RC1",
+    "caller": "|java+method:///hudson/model/RunMap/entrySet()|",
+    "called": "|java+method:///com/google/common/collect/Maps/transformValues(java.util.SortedMap,com.google.common.base.Function)|",
+    "v1Body": [
+      "|java+method:///java/util/SortedMap/entrySet()|",
+      "|java+method:///java/util/Collections/unmodifiableSet(java.util.Set)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/common/collect/Maps/transformValues(java.util.SortedMap,com.google.common.base.Function)|",
+      "|java+method:///java/util/SortedMap/entrySet()|"
+    ],
+    "affectedLib": "com.google.guava:guava:14.0.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.eclipse.hudson:hudson-core:3.0.1",
+    "coordinatesV2": "org.eclipse.hudson:hudson-core:3.1.0-RC1",
+    "caller": "|java+method:///hudson/model/RunMap/subMap(java.lang.Integer,java.lang.Integer)|",
+    "called": "|java+method:///com/google/common/collect/Maps/transformValues(java.util.SortedMap,com.google.common.base.Function)|",
+    "v1Body": [
+      "|java+method:///java/util/SortedMap/subMap(java.lang.Object,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/common/collect/Maps/transformValues(java.util.SortedMap,com.google.common.base.Function)|",
+      "|java+method:///java/util/SortedMap/subMap(java.lang.Object,java.lang.Object)|"
+    ],
+    "affectedLib": "com.google.guava:guava:14.0.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.eclipse.hudson:hudson-core:3.0.1",
+    "coordinatesV2": "org.eclipse.hudson:hudson-core:3.1.0-RC1",
+    "caller": "|java+method:///hudson/markup/RawHtmlMarkupFormatter/translate(java.lang.String,java.io.Writer)|",
+    "called": "|java+method:///org/owasp/html/HtmlStreamRenderer/create(java.lang.Appendable,org.owasp.html.Handler,org.owasp.html.Handler)|",
+    "v1Body": [
+      "|java+method:///java/io/Writer/write(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/owasp/html/HtmlSanitizer/sanitize(java.lang.String,org.owasp.html.HtmlSanitizer$Policy)|",
+      "|java+method:///org/owasp/html/HtmlStreamRenderer/create(java.lang.Appendable,org.owasp.html.Handler,org.owasp.html.Handler)|",
+      "|java+method:///org/owasp/html/PolicyFactory/apply(org.owasp.html.HtmlStreamEventReceiver)|",
+      "|java+constructor:///hudson/markup/RawHtmlMarkupFormatter$1/RawHtmlMarkupFormatter$1(hudson.markup.RawHtmlMarkupFormatter)|",
+      "|java+constructor:///hudson/markup/RawHtmlMarkupFormatter$2/RawHtmlMarkupFormatter$2(hudson.markup.RawHtmlMarkupFormatter)|"
+    ],
+    "affectedLib": "com.googlecode.owasp-java-html-sanitizer:owasp-java-html-sanitizer:r173",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.eclipse.hudson:hudson-core:3.0.1",
+    "coordinatesV2": "org.eclipse.hudson:hudson-core:3.1.0-RC1",
+    "caller": "|java+method:///hudson/cli/handlers/AbstractProjectOptionHandler/parseArguments(org.kohsuke.args4j.spi.Parameters)|",
+    "called": "|java+constructor:///org/kohsuke/args4j/CmdLineException/CmdLineException(org.kohsuke.args4j.CmdLineParser,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/kohsuke/args4j/spi/Setter/addValue(java.lang.Object)|",
+      "|java+method:///org/kohsuke/args4j/spi/Parameters/getParameter(int)|",
+      "|java+method:///hudson/model/Hudson/getInstance()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///hudson/model/AbstractProject/findNearest(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///hudson/model/Hudson/getItemByFullName(java.lang.String,java.lang.Class)|",
+      "|java+constructor:///org/kohsuke/args4j/CmdLineException/CmdLineException(org.kohsuke.args4j.CmdLineParser,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/kohsuke/args4j/spi/Setter/addValue(java.lang.Object)|",
+      "|java+method:///org/kohsuke/args4j/spi/Parameters/getParameter(int)|",
+      "|java+method:///hudson/model/Hudson/getInstance()|",
+      "|java+method:///hudson/cli/handlers/AbstractProjectOptionHandler/isAuthenticated()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///hudson/model/AbstractProject/findNearest(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///hudson/model/Hudson/getItemByFullName(java.lang.String,java.lang.Class)|",
+      "|java+constructor:///org/kohsuke/args4j/CmdLineException/CmdLineException(org.kohsuke.args4j.CmdLineParser,java.lang.String)|"
+    ],
+    "affectedLib": "org.eclipse.hudson:hudson-remoting:3.0.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.eclipse.hudson:hudson-core:3.0.1",
+    "coordinatesV2": "org.eclipse.hudson:hudson-core:3.1.0-RC1",
+    "caller": "|java+method:///hudson/FilePath/copyRecursiveTo(java.lang.String,java.lang.String,hudson.FilePath,hudson.FilePath$TarCompression)|",
+    "called": "|java+method:///hudson/remoting/Pipe/createRemoteToLocal()|",
+    "v1Body": [
+      "|java+method:///hudson/FilePath$TarCompression/compress(java.io.OutputStream)|",
+      "|java+method:///hudson/Functions/printThrowable(java.lang.Throwable)|",
+      "|java+method:///hudson/remoting/Future/get(long,java.util.concurrent.TimeUnit)|",
+      "|java+constructor:///hudson/FilePath$33/FilePath$33(hudson.FilePath,java.lang.String,java.lang.String,hudson.FilePath$TarCompression,hudson.remoting.Pipe)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///hudson/remoting/Pipe/getIn()|",
+      "|java+constructor:///hudson/util/IOException2/IOException2(java.lang.Throwable)|",
+      "|java+constructor:///java/io/File/File(java.lang.String)|",
+      "|java+method:///hudson/FilePath/writeToTar(java.io.File,java.lang.String,java.lang.String,java.io.OutputStream)|",
+      "|java+method:///java/lang/StringBuilder/append(char)|",
+      "|java+constructor:///hudson/FilePath$31/FilePath$31(hudson.FilePath,hudson.FilePath,java.lang.String,java.lang.String)|",
+      "|java+method:///hudson/FilePath/actAsync(hudson.FilePath$FileCallable)|",
+      "|java+method:///hudson/remoting/Pipe/getOut()|",
+      "|java+method:///hudson/FilePath/readFromTar(java.lang.String,java.io.File,java.io.InputStream)|",
+      "|java+method:///hudson/remoting/Pipe/createLocalToRemote()|",
+      "|java+method:///java/lang/Integer/intValue()|",
+      "|java+method:///hudson/FilePath/act(hudson.FilePath$FileCallable)|",
+      "|java+constructor:///hudson/FilePath$32/FilePath$32(hudson.FilePath,java.lang.String,hudson.FilePath$TarCompression,hudson.remoting.Pipe)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///hudson/util/IOException2/IOException2(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///hudson/remoting/Future/get()|",
+      "|java+method:///hudson/FilePath$TarCompression/extract(java.io.InputStream)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///hudson/remoting/Pipe/createRemoteToLocal()|"
+    ],
+    "v2Body": [
+      "|java+method:///hudson/FilePath$TarCompression/compress(java.io.OutputStream)|",
+      "|java+method:///hudson/Functions/printThrowable(java.lang.Throwable)|",
+      "|java+method:///hudson/remoting/Future/get(long,java.util.concurrent.TimeUnit)|",
+      "|java+constructor:///hudson/FilePath$33/FilePath$33(hudson.FilePath,java.lang.String,java.lang.String,hudson.FilePath$TarCompression,hudson.remoting.Pipe)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///hudson/remoting/Pipe/getIn()|",
+      "|java+constructor:///hudson/util/IOException2/IOException2(java.lang.Throwable)|",
+      "|java+method:///hudson/FilePath/act(hudson.FilePath$FileCallable)|",
+      "|java+method:///hudson/FilePath/readFromTar(java.lang.String,java.io.File,java.io.InputStream,org.eclipse.hudson.jna.NativeUtils)|",
+      "|java+method:///hudson/FilePath/writeToTar(java.io.File,java.lang.String,java.lang.String,java.io.OutputStream)|",
+      "|java+method:///java/lang/StringBuilder/append(char)|",
+      "|java+constructor:///hudson/FilePath$31/FilePath$31(hudson.FilePath,hudson.FilePath,java.lang.String,java.lang.String)|",
+      "|java+method:///hudson/FilePath/actAsync(hudson.FilePath$FileCallable)|",
+      "|java+method:///hudson/remoting/Pipe/createLocalToRemote()|",
+      "|java+method:///java/lang/Integer/intValue()|",
+      "|java+constructor:///hudson/FilePath$32/FilePath$32(hudson.FilePath,java.lang.String,hudson.FilePath$TarCompression,hudson.remoting.Pipe,org.eclipse.hudson.jna.NativeUtils)|",
+      "|java+constructor:///java/io/File/File(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///hudson/util/IOException2/IOException2(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///hudson/remoting/Future/get()|",
+      "|java+method:///hudson/FilePath$TarCompression/extract(java.io.InputStream)|",
+      "|java+method:///hudson/remoting/Pipe/getOut()|",
+      "|java+method:///org/eclipse/hudson/jna/NativeUtils/getInstance()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///hudson/remoting/Pipe/createRemoteToLocal()|"
+    ],
+    "affectedLib": "org.eclipse.hudson:hudson-remoting:3.0.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.eclipse.hudson:hudson-core:3.0.1",
+    "coordinatesV2": "org.eclipse.hudson:hudson-core:3.1.0-RC1",
+    "caller": "|java+method:///hudson/FilePath/untarFrom(java.io.InputStream,hudson.FilePath$TarCompression)|",
+    "called": "|java+constructor:///hudson/remoting/RemoteInputStream/RemoteInputStream(java.io.InputStream)|",
+    "v1Body": [
+      "|java+constructor:///hudson/remoting/RemoteInputStream/RemoteInputStream(java.io.InputStream)|",
+      "|java+method:///hudson/FilePath/act(hudson.FilePath$FileCallable)|",
+      "|java+constructor:///hudson/FilePath$6/FilePath$6(hudson.FilePath,hudson.FilePath$TarCompression,java.io.InputStream)|",
+      "|java+method:///hudson/util/IOUtils/closeQuietly(java.io.InputStream)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///hudson/remoting/RemoteInputStream/RemoteInputStream(java.io.InputStream)|",
+      "|java+method:///hudson/util/IOUtils/closeQuietly(java.io.InputStream)|",
+      "|java+method:///org/eclipse/hudson/jna/NativeUtils/getInstance()|",
+      "|java+constructor:///hudson/FilePath$6/FilePath$6(hudson.FilePath,hudson.FilePath$TarCompression,java.io.InputStream,org.eclipse.hudson.jna.NativeUtils)|",
+      "|java+method:///hudson/FilePath/act(hudson.FilePath$FileCallable)|"
+    ],
+    "affectedLib": "org.eclipse.hudson:hudson-remoting:3.0.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.eclipse.hudson:hudson-core:3.0.1",
+    "coordinatesV2": "org.eclipse.hudson:hudson-core:3.1.0-RC1",
+    "caller": "|java+method:///hudson/cli/CLICommand/main(java.util.List,java.util.Locale,java.io.InputStream,java.io.PrintStream,java.io.PrintStream)|",
+    "called": "|java+constructor:///org/kohsuke/args4j/CmdLineParser/CmdLineParser(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/springframework/security/context/SecurityContext/getAuthentication()|",
+      "|java+method:///java/lang/Exception/printStackTrace(java.io.PrintStream)|",
+      "|java+method:///hudson/cli/CLICommand/run()|",
+      "|java+method:///hudson/AbortException/getMessage()|",
+      "|java+method:///java/io/PrintStream/println(java.lang.String)|",
+      "|java+method:///hudson/cli/CLICommand/printUsage(java.io.PrintStream,org.kohsuke.args4j.CmdLineParser)|",
+      "|java+method:///hudson/model/Hudson/getInstance()|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///org/kohsuke/args4j/ClassParser/parse(java.lang.Object,org.kohsuke.args4j.CmdLineParser)|",
+      "|java+method:///hudson/security/SecurityRealm/createCliAuthenticator(hudson.cli.CLICommand)|",
+      "|java+constructor:///java/io/BufferedInputStream/BufferedInputStream(java.io.InputStream)|",
+      "|java+method:///org/springframework/security/context/SecurityContext/setAuthentication(org.springframework.security.Authentication)|",
+      "|java+method:///org/kohsuke/args4j/CmdLineParser/parseArgument(java.lang.String%5B%5D)|",
+      "|java+method:///org/springframework/security/context/SecurityContextHolder/getContext()|",
+      "|java+method:///hudson/model/Hudson/checkPermission(hudson.security.Permission)|",
+      "|java+method:///org/eclipse/hudson/security/HudsonSecurityEntitiesHolder/getHudsonSecurityManager()|",
+      "|java+method:///hudson/remoting/Channel/current()|",
+      "|java+method:///java/util/List/toArray(java.lang.Object%5B%5D)|",
+      "|java+method:///hudson/security/CliAuthenticator/authenticate()|",
+      "|java+constructor:///org/kohsuke/args4j/CmdLineParser/CmdLineParser(java.lang.Object)|",
+      "|java+method:///org/kohsuke/args4j/CmdLineException/getMessage()|",
+      "|java+method:///hudson/cli/CLICommand/loadStoredAuthentication()|",
+      "|java+method:///hudson/cli/CLICommand/registerOptionHandlers()|",
+      "|java+constructor:///org/kohsuke/args4j/ClassParser/ClassParser()|",
+      "|java+method:///org/eclipse/hudson/security/HudsonSecurityManager/getSecurityRealm()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/springframework/security/context/SecurityContext/getAuthentication()|",
+      "|java+method:///java/lang/Exception/printStackTrace(java.io.PrintStream)|",
+      "|java+method:///hudson/cli/CLICommand/run()|",
+      "|java+method:///hudson/AbortException/getMessage()|",
+      "|java+method:///java/io/PrintStream/println(java.lang.String)|",
+      "|java+method:///hudson/cli/CLICommand/printUsage(java.io.PrintStream,org.kohsuke.args4j.CmdLineParser)|",
+      "|java+method:///hudson/cli/CLICommand/parseArguments(org.kohsuke.args4j.CmdLineParser,java.util.List,boolean)|",
+      "|java+method:///hudson/model/Hudson/getInstance()|",
+      "|java+method:///org/kohsuke/args4j/ClassParser/parse(java.lang.Object,org.kohsuke.args4j.CmdLineParser)|",
+      "|java+method:///hudson/security/CliAuthenticator/authenticate()|",
+      "|java+method:///hudson/security/SecurityRealm/createCliAuthenticator(hudson.cli.CLICommand)|",
+      "|java+constructor:///java/io/BufferedInputStream/BufferedInputStream(java.io.InputStream)|",
+      "|java+method:///org/springframework/security/context/SecurityContext/setAuthentication(org.springframework.security.Authentication)|",
+      "|java+method:///org/springframework/security/context/SecurityContextHolder/getContext()|",
+      "|java+method:///hudson/model/Hudson/checkPermission(hudson.security.Permission)|",
+      "|java+method:///org/eclipse/hudson/security/HudsonSecurityEntitiesHolder/getHudsonSecurityManager()|",
+      "|java+method:///hudson/remoting/Channel/current()|",
+      "|java+constructor:///org/kohsuke/args4j/CmdLineParser/CmdLineParser(java.lang.Object)|",
+      "|java+method:///org/kohsuke/args4j/CmdLineException/getMessage()|",
+      "|java+method:///hudson/cli/CLICommand/loadStoredAuthentication()|",
+      "|java+method:///hudson/cli/CLICommand/registerOptionHandlers()|",
+      "|java+constructor:///org/kohsuke/args4j/ClassParser/ClassParser()|",
+      "|java+method:///org/eclipse/hudson/security/HudsonSecurityManager/getSecurityRealm()|"
+    ],
+    "affectedLib": "org.eclipse.hudson:hudson-remoting:3.0.1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.eclipse.hudson:hudson-core:3.0.1",
+    "coordinatesV2": "org.eclipse.hudson:hudson-core:3.1.0-RC1",
+    "caller": "|java+method:///hudson/cli/handlers/TopLevelItemOptionHandler/parseArguments(org.kohsuke.args4j.spi.Parameters)|",
+    "called": "|java+constructor:///org/kohsuke/args4j/CmdLineException/CmdLineException(org.kohsuke.args4j.CmdLineParser,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/kohsuke/args4j/spi/Setter/addValue(java.lang.Object)|",
+      "|java+method:///hudson/model/Hudson/getItem(java.lang.String)|",
+      "|java+method:///org/kohsuke/args4j/spi/Parameters/getParameter(int)|",
+      "|java+method:///hudson/model/Hudson/getInstance()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///hudson/model/AbstractProject/findNearest(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///org/kohsuke/args4j/CmdLineException/CmdLineException(org.kohsuke.args4j.CmdLineParser,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///hudson/model/Hudson/getItem(java.lang.String)|",
+      "|java+method:///org/kohsuke/args4j/spi/Parameters/getParameter(int)|",
+      "|java+method:///hudson/model/Hudson/getInstance()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///hudson/cli/handlers/TopLevelItemOptionHandler/isAuthenticated()|",
+      "|java+method:///org/kohsuke/args4j/spi/Setter/addValue(java.lang.Object)|",
+      "|java+method:///hudson/model/AbstractProject/findNearest(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///org/kohsuke/args4j/CmdLineException/CmdLineException(org.kohsuke.args4j.CmdLineParser,java.lang.String)|"
+    ],
+    "affectedLib": "org.eclipse.hudson:hudson-remoting:3.0.1",
+    "change": "UPDATED"
+  }
+]

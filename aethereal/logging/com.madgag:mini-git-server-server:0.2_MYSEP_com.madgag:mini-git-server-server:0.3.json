@@ -1,0 +1,74 @@
+[
+  {
+    "coordinatesV1": "com.madgag:mini-git-server-server:0.2",
+    "coordinatesV2": "com.madgag:mini-git-server-server:0.3",
+    "caller": "|java+constructor:///com/google/gerrit/server/git/LocalDiskRepositoryManager/LocalDiskRepositoryManager(com.google.gerrit.server.config.SitePaths,org.eclipse.jgit.lib.Config)|",
+    "called": "|java+method:///org/apache/commons/io/FileUtils/openInputStream(java.io.File)|",
+    "v1Body": [
+      "|java+constructor:///java/lang/IllegalStateException/IllegalStateException(java.lang.String)|",
+      "|java+method:///org/eclipse/jgit/lib/Config/getString(java.lang.String,java.lang.String,java.lang.String)|",
+      "|java+method:///com/google/gerrit/server/config/SitePaths/resolve(java.lang.String)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/io/FileUtils/listFiles(java.io.File,java.lang.String%5B%5D,boolean)|",
+      "|java+method:///org/apache/commons/io/FilenameUtils/removeExtension(java.lang.String)|",
+      "|java+constructor:///java/lang/IllegalStateException/IllegalStateException(java.lang.String)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String)|",
+      "|java+method:///org/eclipse/jgit/lib/Config/getString(java.lang.String,java.lang.String,java.lang.String)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+constructor:///java/io/File/File(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/util/Collection/iterator()|",
+      "|java+method:///com/google/gerrit/server/config/SitePaths/resolve(java.lang.String)|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.Throwable)|",
+      "|java+method:///com/madgag/compress/CompressUtil/unzip(java.io.InputStream,java.io.File)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/apache/commons/io/FileUtils/deleteQuietly(java.io.File)|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///org/apache/commons/io/FileUtils/openInputStream(java.io.File)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/io/File/toString()|"
+    ],
+    "affectedLib": "commons-io:commons-io:2.0.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.madgag:mini-git-server-server:0.2",
+    "coordinatesV2": "com.madgag:mini-git-server-server:0.3",
+    "caller": "|java+constructor:///com/google/gerrit/server/git/LocalDiskRepositoryManager/LocalDiskRepositoryManager(com.google.gerrit.server.config.SitePaths,org.eclipse.jgit.lib.Config)|",
+    "called": "|java+method:///com/madgag/compress/CompressUtil/unzip(java.io.InputStream,java.io.File)|",
+    "v1Body": [
+      "|java+constructor:///java/lang/IllegalStateException/IllegalStateException(java.lang.String)|",
+      "|java+method:///org/eclipse/jgit/lib/Config/getString(java.lang.String,java.lang.String,java.lang.String)|",
+      "|java+method:///com/google/gerrit/server/config/SitePaths/resolve(java.lang.String)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/io/FileUtils/listFiles(java.io.File,java.lang.String%5B%5D,boolean)|",
+      "|java+method:///org/apache/commons/io/FilenameUtils/removeExtension(java.lang.String)|",
+      "|java+constructor:///java/lang/IllegalStateException/IllegalStateException(java.lang.String)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String)|",
+      "|java+method:///org/eclipse/jgit/lib/Config/getString(java.lang.String,java.lang.String,java.lang.String)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+constructor:///java/io/File/File(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/util/Collection/iterator()|",
+      "|java+method:///com/google/gerrit/server/config/SitePaths/resolve(java.lang.String)|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.Throwable)|",
+      "|java+method:///com/madgag/compress/CompressUtil/unzip(java.io.InputStream,java.io.File)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/apache/commons/io/FileUtils/deleteQuietly(java.io.File)|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///org/apache/commons/io/FileUtils/openInputStream(java.io.File)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/io/File/toString()|"
+    ],
+    "affectedLib": "com.madgag:util-compress:1.28",
+    "change": "ADDED"
+  }
+]

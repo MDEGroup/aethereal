@@ -1,0 +1,44 @@
+[
+  {
+    "coordinatesV1": "info.archinnov:achilles-core:2.0.13-dse",
+    "coordinatesV2": "info.archinnov:achilles-core:3.0.0",
+    "caller": "|java+method:///info/archinnov/achilles/configuration/ArgumentExtractor/initEntityPackages(java.util.Map)|",
+    "called": "|java+method:///org/apache/commons/lang/StringUtils/isNotBlank(java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///org/apache/commons/lang/StringUtils/isNotBlank(java.lang.String)|",
+      "|java+method:///org/apache/commons/lang/StringUtils/split(java.lang.String,java.lang.String)|",
+      "|java+method:///java/util/Arrays/asList(java.lang.Object%5B%5D)|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///org/slf4j/Logger/trace(java.lang.String)|",
+      "|java+method:///org/apache/commons/lang/StringUtils/isNotBlank(java.lang.String)|",
+      "|java+method:///org/apache/commons/lang/StringUtils/split(java.lang.String,java.lang.String)|",
+      "|java+method:///java/util/Arrays/asList(java.lang.Object%5B%5D)|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|"
+    ],
+    "affectedLib": "commons-lang:commons-lang:2.6",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "info.archinnov:achilles-core:2.0.13-dse",
+    "coordinatesV2": "info.archinnov:achilles-core:3.0.0",
+    "caller": "|java+method:///info/archinnov/achilles/type/Options/toString()|",
+    "called": "|java+method:///com/google/common/base/Objects/toStringHelper(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/common/base/Objects$ToStringHelper/toString()|",
+      "|java+method:///com/google/common/base/Objects/toStringHelper(java.lang.Class)|",
+      "|java+method:///com/google/common/base/Objects$ToStringHelper/add(java.lang.String,java.lang.Object)|"
+    ],
+    "affectedLib": "com.google.guava:guava:13.0",
+    "change": "UPDATED"
+  }
+]

@@ -1,0 +1,56 @@
+[
+  {
+    "coordinatesV1": "org.apache.directory.server:apacheds-server-integ:2.0.0-M1",
+    "coordinatesV2": "org.apache.directory.server:apacheds-server-integ:1.5.7",
+    "caller": "|java+method:///org/apache/directory/server/integ/ServerIntegrationUtils/getClientApiConnection(org.apache.directory.server.ldap.LdapServer)|",
+    "called": "|java+constructor:///org/apache/directory/ldap/client/api/LdapConnection/LdapConnection(java.lang.String,int)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/directory/ldap/client/api/LdapConnection/LdapConnection(java.lang.String,int)|",
+      "|java+method:///org/apache/directory/ldap/client/api/LdapConnection/bind(java.lang.String,java.lang.String)|",
+      "|java+method:///org/apache/directory/server/ldap/LdapServer/getPort()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/directory/ldap/client/api/LdapNetworkConnection/LdapNetworkConnection(java.lang.String,int)|",
+      "|java+method:///org/apache/directory/ldap/client/api/LdapConnection/bind(java.lang.String,java.lang.String)|",
+      "|java+method:///org/apache/directory/server/ldap/LdapServer/getPort()|"
+    ],
+    "affectedLib": "org.apache.directory.client.ldap:ldap-client-api:0.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.apache.directory.server:apacheds-server-integ:1.5.7",
+    "coordinatesV2": "org.apache.directory.server:apacheds-server-integ:2.0.0-M1",
+    "caller": "|java+method:///org/apache/directory/server/integ/ServerIntegrationUtils/getClientApiConnection(org.apache.directory.server.ldap.LdapServer)|",
+    "called": "|java+constructor:///org/apache/directory/ldap/client/api/LdapNetworkConnection/LdapNetworkConnection(java.lang.String,int)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/directory/ldap/client/api/LdapConnection/LdapConnection(java.lang.String,int)|",
+      "|java+method:///org/apache/directory/ldap/client/api/LdapConnection/bind(java.lang.String,java.lang.String)|",
+      "|java+method:///org/apache/directory/server/ldap/LdapServer/getPort()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/directory/ldap/client/api/LdapNetworkConnection/LdapNetworkConnection(java.lang.String,int)|",
+      "|java+method:///org/apache/directory/ldap/client/api/LdapConnection/bind(java.lang.String,java.lang.String)|",
+      "|java+method:///org/apache/directory/server/ldap/LdapServer/getPort()|"
+    ],
+    "affectedLib": "org.apache.directory.shared:shared-ldap-client-api:1.0.0-M5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.directory.server:apacheds-server-integ:1.5.7",
+    "coordinatesV2": "org.apache.directory.server:apacheds-server-integ:2.0.0-M1",
+    "caller": "|java+method:///org/apache/directory/server/integ/ServerIntegrationUtils/getClientApiConnection(org.apache.directory.server.ldap.LdapServer)|",
+    "called": "|java+method:///org/apache/directory/server/ldap/LdapServer/getPort()|",
+    "v1Body": [
+      "|java+constructor:///org/apache/directory/ldap/client/api/LdapConnection/LdapConnection(java.lang.String,int)|",
+      "|java+method:///org/apache/directory/ldap/client/api/LdapConnection/bind(java.lang.String,java.lang.String)|",
+      "|java+method:///org/apache/directory/server/ldap/LdapServer/getPort()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/directory/ldap/client/api/LdapNetworkConnection/LdapNetworkConnection(java.lang.String,int)|",
+      "|java+method:///org/apache/directory/ldap/client/api/LdapConnection/bind(java.lang.String,java.lang.String)|",
+      "|java+method:///org/apache/directory/server/ldap/LdapServer/getPort()|"
+    ],
+    "affectedLib": "org.apache.directory.server:apacheds-protocol-ldap:2.0.0-M1",
+    "change": "ADDED"
+  }
+]

@@ -1,0 +1,103 @@
+[
+  {
+    "coordinatesV1": "org.codehaus.sonar.sslr:sslr-testing-harness:1.13",
+    "coordinatesV2": "org.codehaus.sonar.sslr:sslr-testing-harness:1.17",
+    "caller": "|java+constructor:///com/sonar/sslr/test/miniC/MiniCGrammar/MiniCGrammar()|",
+    "called": "|java+method:///com/sonar/sslr/impl/matcher/GrammarFunctions$Standard/firstOf(java.lang.Object%5B%5D)|",
+    "v1Body": [
+      "|java+method:///com/sonar/sslr/impl/matcher/GrammarFunctions$Standard/or(java.lang.Object%5B%5D)|",
+      "|java+method:///com/sonar/sslr/impl/matcher/GrammarFunctions$Standard/one2n(java.lang.Object%5B%5D)|",
+      "|java+method:///com/sonar/sslr/impl/matcher/GrammarFunctions$Standard/o2n(java.lang.Object%5B%5D)|",
+      "|java+constructor:///com/sonar/sslr/api/Grammar/Grammar()|",
+      "|java+method:///com/sonar/sslr/api/Rule/is(java.lang.Object%5B%5D)|",
+      "|java+method:///com/sonar/sslr/impl/matcher/GrammarFunctions$Standard/and(java.lang.Object%5B%5D)|",
+      "|java+method:///com/sonar/sslr/api/Rule/skipIfOneChild()|",
+      "|java+method:///com/sonar/sslr/impl/matcher/GrammarFunctions$Standard/opt(java.lang.Object%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/sonar/sslr/impl/matcher/GrammarFunctions$Standard/one2n(java.lang.Object%5B%5D)|",
+      "|java+method:///com/sonar/sslr/impl/matcher/GrammarFunctions$Standard/firstOf(java.lang.Object%5B%5D)|",
+      "|java+method:///com/sonar/sslr/impl/matcher/GrammarFunctions$Standard/o2n(java.lang.Object%5B%5D)|",
+      "|java+constructor:///com/sonar/sslr/api/Grammar/Grammar()|",
+      "|java+method:///com/sonar/sslr/api/Rule/is(java.lang.Object%5B%5D)|",
+      "|java+method:///com/sonar/sslr/impl/matcher/GrammarFunctions$Standard/and(java.lang.Object%5B%5D)|",
+      "|java+method:///com/sonar/sslr/api/Rule/skipIfOneChild()|",
+      "|java+method:///com/sonar/sslr/impl/matcher/GrammarFunctions$Standard/opt(java.lang.Object%5B%5D)|"
+    ],
+    "affectedLib": "org.codehaus.sonar.sslr:sslr-core:1.17",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.codehaus.sonar.sslr:sslr-testing-harness:1.13",
+    "coordinatesV2": "org.codehaus.sonar.sslr:sslr-testing-harness:1.17",
+    "caller": "|java+method:///com/sonar/sslr/test/lexer/MockHelper/mockTokenBuilder(com.sonar.sslr.api.TokenType,java.lang.String)|",
+    "called": "|java+method:///com/sonar/sslr/api/Token$Builder/setType(com.sonar.sslr.api.TokenType)|",
+    "v1Body": [
+      "|java+method:///com/sonar/sslr/api/Token$Builder/setType(com.sonar.sslr.api.TokenType)|",
+      "|java+constructor:///java/net/URI/URI(java.lang.String)|",
+      "|java+method:///com/sonar/sslr/api/Token$Builder/setColumn(int)|",
+      "|java+method:///com/sonar/sslr/api/Token$Builder/setValueAndOriginalValue(java.lang.String)|",
+      "|java+method:///com/sonar/sslr/api/Token$Builder/setURI(java.net.URI)|",
+      "|java+method:///com/sonar/sslr/api/Token/builder()|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.Throwable)|",
+      "|java+method:///com/sonar/sslr/api/Token$Builder/setLine(int)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/sonar/sslr/api/Token$Builder/setType(com.sonar.sslr.api.TokenType)|",
+      "|java+constructor:///java/net/URI/URI(java.lang.String)|",
+      "|java+method:///com/sonar/sslr/api/Token$Builder/setColumn(int)|",
+      "|java+method:///com/sonar/sslr/api/Token$Builder/setLine(int)|",
+      "|java+method:///com/google/common/base/Throwables/propagate(java.lang.Throwable)|",
+      "|java+method:///com/sonar/sslr/api/Token$Builder/setValueAndOriginalValue(java.lang.String)|",
+      "|java+method:///com/sonar/sslr/api/Token$Builder/setURI(java.net.URI)|",
+      "|java+method:///com/sonar/sslr/api/Token/builder()|"
+    ],
+    "affectedLib": "org.codehaus.sonar.sslr:sslr-core:1.17",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.codehaus.sonar.sslr:sslr-testing-harness:1.13",
+    "coordinatesV2": "org.codehaus.sonar.sslr:sslr-testing-harness:1.17",
+    "caller": "|java+method:///com/sonar/sslr/test/parser/ParseMatcher/matches(java.lang.Object)|",
+    "called": "|java+method:///com/sonar/sslr/impl/Parser/builder(com.sonar.sslr.impl.Parser)|",
+    "v1Body": [
+      "|java+constructor:///java/lang/IllegalStateException/IllegalStateException(java.lang.String)|",
+      "|java+method:///com/sonar/sslr/impl/ParsingState/readToken(int)|",
+      "|java+constructor:///java/lang/AssertionError/AssertionError(java.lang.Object)|",
+      "|java+method:///java/lang/String/length()|",
+      "|java+method:///com/sonar/sslr/api/Token/getType()|",
+      "|java+constructor:///java/io/PrintStream/PrintStream(java.io.OutputStream)|",
+      "|java+method:///com/sonar/sslr/impl/ParsingState/hasNextToken()|",
+      "|java+method:///com/sonar/sslr/impl/Parser/parse(java.lang.String)|",
+      "|java+constructor:///java/io/ByteArrayOutputStream/ByteArrayOutputStream()|",
+      "|java+method:///java/io/ByteArrayOutputStream/toString()|",
+      "|java+method:///com/sonar/sslr/impl/Parser/printStackTrace(java.io.PrintStream)|",
+      "|java+method:///com/sonar/sslr/impl/Parser/getParsingState()|",
+      "|java+method:///com/sonar/sslr/impl/Parser/getRootRule()|",
+      "|java+method:///com/sonar/sslr/api/RecognitionException/getMessage()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/sonar/sslr/impl/Parser$Builder/setExtendedStackTrace(com.sonar.sslr.impl.events.ExtendedStackTrace)|",
+      "|java+method:///com/sonar/sslr/impl/Parser/getParsingState()|",
+      "|java+constructor:///java/lang/IllegalStateException/IllegalStateException(java.lang.String)|",
+      "|java+method:///com/sonar/sslr/impl/matcher/RuleMatcher/getName()|",
+      "|java+method:///com/sonar/sslr/impl/matcher/RuleDefinition/getRule()|",
+      "|java+method:///com/sonar/sslr/impl/Parser$Builder/build()|",
+      "|java+method:///com/sonar/sslr/api/Token/getType()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///com/sonar/sslr/impl/ParsingState/hasNextToken()|",
+      "|java+constructor:///com/sonar/sslr/impl/events/ExtendedStackTrace/ExtendedStackTrace()|",
+      "|java+method:///com/sonar/sslr/impl/Parser/setRootRule(com.sonar.sslr.api.Rule)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///com/sonar/sslr/impl/ParsingState/readToken(int)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///com/sonar/sslr/impl/Parser/builder(com.sonar.sslr.impl.Parser)|",
+      "|java+constructor:///org/sonar/sslr/tests/ParsingResultComparisonFailure/ParsingResultComparisonFailure(java.lang.String,java.lang.String)|",
+      "|java+method:///com/sonar/sslr/impl/Parser/parse(java.lang.String)|",
+      "|java+method:///com/sonar/sslr/impl/Parser/getRootRule()|",
+      "|java+method:///com/sonar/sslr/api/RecognitionException/getMessage()|"
+    ],
+    "affectedLib": "org.codehaus.sonar.sslr:sslr-core:1.17",
+    "change": "UPDATED"
+  }
+]

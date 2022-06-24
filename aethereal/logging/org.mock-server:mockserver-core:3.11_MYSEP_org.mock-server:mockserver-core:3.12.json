@@ -1,0 +1,34 @@
+[
+  {
+    "coordinatesV1": "org.mock-server:mockserver-core:3.12",
+    "coordinatesV2": "org.mock-server:mockserver-core:3.11",
+    "caller": "|java+method:///org/mockserver/matchers/StringToXmlDocumentParser/prettyPrintXmlDocument(org.w3c.dom.Document)|",
+    "called": "|java+constructor:///org/apache/xml/serialize/OutputFormat/OutputFormat(java.lang.String,java.lang.String,boolean)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/xml/serialize/XMLSerializer/XMLSerializer(java.io.OutputStream,org.apache.xml.serialize.OutputFormat)|",
+      "|java+method:///java/nio/charset/Charset/name()|",
+      "|java+constructor:///org/apache/xml/serialize/OutputFormat/OutputFormat(java.lang.String,java.lang.String,boolean)|",
+      "|java+method:///java/io/ByteArrayOutputStream/toString(java.lang.String)|",
+      "|java+constructor:///java/io/ByteArrayOutputStream/ByteArrayOutputStream()|",
+      "|java+method:///org/apache/xml/serialize/XMLSerializer/serialize(org.w3c.dom.Document)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/w3c/dom/DOMImplementation/getFeature(java.lang.String,java.lang.String)|",
+      "|java+method:///org/w3c/dom/ls/LSSerializer/write(org.w3c.dom.Node,org.w3c.dom.ls.LSOutput)|",
+      "|java+method:///org/w3c/dom/DOMImplementation/hasFeature(java.lang.String,java.lang.String)|",
+      "|java+method:///org/w3c/dom/ls/LSOutput/setCharacterStream(java.io.Writer)|",
+      "|java+method:///java/io/StringWriter/toString()|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String)|",
+      "|java+method:///org/w3c/dom/ls/DOMImplementationLS/createLSOutput()|",
+      "|java+method:///org/w3c/dom/ls/LSOutput/setEncoding(java.lang.String)|",
+      "|java+method:///org/w3c/dom/ls/DOMImplementationLS/createLSSerializer()|",
+      "|java+method:///org/w3c/dom/Document/getImplementation()|",
+      "|java+method:///org/w3c/dom/DOMConfiguration/setParameter(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/w3c/dom/DOMConfiguration/canSetParameter(java.lang.String,java.lang.Object)|",
+      "|java+constructor:///java/io/StringWriter/StringWriter()|",
+      "|java+method:///org/w3c/dom/ls/LSSerializer/getDomConfig()|"
+    ],
+    "affectedLib": "xerces:xercesImpl:2.4.0",
+    "change": "REMOVED"
+  }
+]

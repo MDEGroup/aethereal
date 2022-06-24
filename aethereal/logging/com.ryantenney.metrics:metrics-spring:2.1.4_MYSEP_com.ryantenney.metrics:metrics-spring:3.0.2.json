@@ -1,0 +1,82 @@
+[
+  {
+    "coordinatesV1": "com.ryantenney.metrics:metrics-spring:3.0.2",
+    "coordinatesV2": "com.ryantenney.metrics:metrics-spring:2.1.4",
+    "caller": "|java+method:///com/ryantenney/metrics/spring/HealthCheckBeanPostProcessor/postProcessAfterInitialization(java.lang.Object,java.lang.String)|",
+    "called": "|java+method:///com/yammer/metrics/core/HealthCheckRegistry/register(com.yammer.metrics.core.HealthCheck)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///com/yammer/metrics/core/HealthCheckRegistry/register(com.yammer.metrics.core.HealthCheck)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/codahale/metrics/health/HealthCheckRegistry/register(java.lang.String,com.codahale.metrics.health.HealthCheck)|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|"
+    ],
+    "affectedLib": "com.yammer.metrics:metrics-core:2.1.4",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.ryantenney.metrics:metrics-spring:2.1.4",
+    "coordinatesV2": "com.ryantenney.metrics:metrics-spring:3.0.2",
+    "caller": "|java+method:///com/ryantenney/metrics/spring/HealthCheckBeanPostProcessor/postProcessAfterInitialization(java.lang.Object,java.lang.String)|",
+    "called": "|java+method:///com/codahale/metrics/health/HealthCheckRegistry/register(java.lang.String,com.codahale.metrics.health.HealthCheck)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///com/yammer/metrics/core/HealthCheckRegistry/register(com.yammer.metrics.core.HealthCheck)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/codahale/metrics/health/HealthCheckRegistry/register(java.lang.String,com.codahale.metrics.health.HealthCheck)|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|"
+    ],
+    "affectedLib": "com.codahale.metrics:metrics-healthchecks:3.0.2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.ryantenney.metrics:metrics-spring:2.1.4",
+    "coordinatesV2": "com.ryantenney.metrics:metrics-spring:3.0.2",
+    "caller": "|java+initializer:///com/ryantenney/metrics/spring/TimedMethodInterceptor/TimedMethodInterceptor$initializer|",
+    "called": "|java+constructor:///org/springframework/aop/support/annotation/AnnotationMatchingPointcut/AnnotationMatchingPointcut(java.lang.Class,java.lang.Class)|",
+    "v1Body": [
+      "|java+constructor:///com/ryantenney/metrics/spring/AnnotationFilter/AnnotationFilter(java.lang.Class)|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/ryantenney/metrics/spring/AnnotationFilter/AnnotationFilter(java.lang.Class,int)|",
+      "|java+constructor:///org/springframework/aop/support/annotation/AnnotationMatchingPointcut/AnnotationMatchingPointcut(java.lang.Class,java.lang.Class)|"
+    ],
+    "affectedLib": "org.springframework:spring-aop:3.2.8.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.ryantenney.metrics:metrics-spring:2.1.4",
+    "coordinatesV2": "com.ryantenney.metrics:metrics-spring:3.0.2",
+    "caller": "|java+initializer:///com/ryantenney/metrics/spring/ExceptionMeteredMethodInterceptor/ExceptionMeteredMethodInterceptor$initializer|",
+    "called": "|java+constructor:///org/springframework/aop/support/annotation/AnnotationMatchingPointcut/AnnotationMatchingPointcut(java.lang.Class,java.lang.Class)|",
+    "v1Body": [
+      "|java+constructor:///com/ryantenney/metrics/spring/AnnotationFilter/AnnotationFilter(java.lang.Class)|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/ryantenney/metrics/spring/AnnotationFilter/AnnotationFilter(java.lang.Class,int)|",
+      "|java+constructor:///org/springframework/aop/support/annotation/AnnotationMatchingPointcut/AnnotationMatchingPointcut(java.lang.Class,java.lang.Class)|"
+    ],
+    "affectedLib": "org.springframework:spring-aop:3.2.8.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.ryantenney.metrics:metrics-spring:2.1.4",
+    "coordinatesV2": "com.ryantenney.metrics:metrics-spring:3.0.2",
+    "caller": "|java+initializer:///com/ryantenney/metrics/spring/MeteredMethodInterceptor/MeteredMethodInterceptor$initializer|",
+    "called": "|java+constructor:///org/springframework/aop/support/annotation/AnnotationMatchingPointcut/AnnotationMatchingPointcut(java.lang.Class,java.lang.Class)|",
+    "v1Body": [
+      "|java+constructor:///com/ryantenney/metrics/spring/AnnotationFilter/AnnotationFilter(java.lang.Class)|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/ryantenney/metrics/spring/AnnotationFilter/AnnotationFilter(java.lang.Class,int)|",
+      "|java+constructor:///org/springframework/aop/support/annotation/AnnotationMatchingPointcut/AnnotationMatchingPointcut(java.lang.Class,java.lang.Class)|"
+    ],
+    "affectedLib": "org.springframework:spring-aop:3.2.8.RELEASE",
+    "change": "UPDATED"
+  }
+]

@@ -1,0 +1,44 @@
+[
+  {
+    "coordinatesV1": "net.myrrix:myrrix-common:0.6",
+    "coordinatesV2": "net.myrrix:myrrix-common:0.7",
+    "caller": "|java+method:///net/myrrix/common/LangUtils/parseDouble(java.lang.String)|",
+    "called": "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean,java.lang.String,java.lang.Object%5B%5D)|",
+    "v1Body": [
+      "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///java/lang/Double/valueOf(double)|",
+      "|java+method:///java/lang/Double/parseDouble(java.lang.String)|",
+      "|java+method:///java/lang/Double/isNaN(double)|",
+      "|java+method:///java/lang/Double/isInfinite(double)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///java/lang/Double/valueOf(double)|",
+      "|java+method:///java/lang/Double/parseDouble(java.lang.String)|",
+      "|java+method:///net/myrrix/common/LangUtils/isFinite(double)|"
+    ],
+    "affectedLib": "com.google.guava:guava:13.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "net.myrrix:myrrix-common:0.6",
+    "coordinatesV2": "net.myrrix:myrrix-common:0.7",
+    "caller": "|java+method:///net/myrrix/common/LangUtils/parseFloat(java.lang.String)|",
+    "called": "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean,java.lang.String,java.lang.Object%5B%5D)|",
+    "v1Body": [
+      "|java+method:///java/lang/Float/isNaN(float)|",
+      "|java+method:///java/lang/Float/isInfinite(float)|",
+      "|java+method:///java/lang/Float/valueOf(float)|",
+      "|java+method:///java/lang/Float/parseFloat(java.lang.String)|",
+      "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean,java.lang.String,java.lang.Object%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///net/myrrix/common/LangUtils/isFinite(float)|",
+      "|java+method:///java/lang/Float/valueOf(float)|",
+      "|java+method:///java/lang/Float/parseFloat(java.lang.String)|",
+      "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean,java.lang.String,java.lang.Object%5B%5D)|"
+    ],
+    "affectedLib": "com.google.guava:guava:13.0",
+    "change": "UPDATED"
+  }
+]

@@ -1,0 +1,105 @@
+[
+  {
+    "coordinatesV1": "org.knowm.xchange:xchange-quoine:4.2.1",
+    "coordinatesV2": "org.knowm.xchange:xchange-quoine:4.2.2",
+    "caller": "|java+method:///org/knowm/xchange/quoine/service/QuoineAccountService/requestDepositAddress(org.knowm.xchange.currency.Currency,java.lang.String%5B%5D)|",
+    "called": "|java+method:///org/knowm/xchange/currency/Currency/getInstance(java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///org/knowm/xchange/exceptions/NotAvailableFromExchangeException/NotAvailableFromExchangeException()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/knowm/xchange/currency/Currency/getInstance(java.lang.String)|",
+      "|java+method:///org/knowm/xchange/currency/Currency/equals(java.lang.Object)|",
+      "|java+method:///org/knowm/xchange/quoine/service/QuoineAccountService/getQuoineCryptoAccountInfo()|",
+      "|java+method:///org/knowm/xchange/quoine/dto/account/BitcoinAccount/getAddress()|",
+      "|java+method:///org/knowm/xchange/quoine/dto/account/BitcoinAccount/getCurrency()|"
+    ],
+    "affectedLib": "org.knowm.xchange:xchange-core:4.2.2",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.knowm.xchange:xchange-quoine:4.2.1",
+    "coordinatesV2": "org.knowm.xchange:xchange-quoine:4.2.2",
+    "caller": "|java+method:///org/knowm/xchange/quoine/service/QuoineAccountService/getAccountInfo()|",
+    "called": "|java+constructor:///org/knowm/xchange/dto/account/AccountInfo/AccountInfo(java.util.Collection)|",
+    "v1Body": [
+      "|java+method:///org/knowm/xchange/quoine/service/QuoineAccountService/getQuoineFiatAccountInfo()|",
+      "|java+constructor:///org/knowm/xchange/dto/account/AccountInfo/AccountInfo(org.knowm.xchange.dto.account.Wallet%5B%5D)|",
+      "|java+method:///org/knowm/xchange/quoine/QuoineAdapters/adaptFiatAccountWallet(org.knowm.xchange.quoine.dto.account.FiatAccount%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///org/knowm/xchange/quoine/QuoineAdapters/adapt(org.knowm.xchange.quoine.dto.account.BitcoinAccount%5B%5D)|",
+      "|java+method:///org/knowm/xchange/quoine/service/QuoineAccountService/getQuoineCryptoAccountInfo()|",
+      "|java+method:///java/util/List/addAll(java.util.Collection)|",
+      "|java+method:///org/knowm/xchange/quoine/service/QuoineAccountService/getQuoineFiatAccountInfo()|",
+      "|java+method:///org/knowm/xchange/quoine/QuoineAdapters/adapt(org.knowm.xchange.quoine.dto.account.FiatAccount%5B%5D)|",
+      "|java+constructor:///org/knowm/xchange/dto/account/AccountInfo/AccountInfo(java.util.Collection)|"
+    ],
+    "affectedLib": "org.knowm.xchange:xchange-core:4.2.2",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.knowm.xchange:xchange-quoine:4.2.1",
+    "coordinatesV2": "org.knowm.xchange:xchange-quoine:4.2.2",
+    "caller": "|java+method:///org/knowm/xchange/quoine/service/QuoineAccountService/getFundingHistory(org.knowm.xchange.service.trade.params.TradeHistoryParams)|",
+    "called": "|java+constructor:///org/knowm/xchange/exceptions/NotAvailableFromExchangeException/NotAvailableFromExchangeException()|",
+    "v1Body": [
+      "|java+constructor:///org/knowm/xchange/exceptions/NotYetImplementedForExchangeException/NotYetImplementedForExchangeException()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/knowm/xchange/exceptions/NotAvailableFromExchangeException/NotAvailableFromExchangeException()|"
+    ],
+    "affectedLib": "org.knowm.xchange:xchange-core:4.2.2",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.knowm.xchange:xchange-quoine:4.2.1",
+    "coordinatesV2": "org.knowm.xchange:xchange-quoine:4.2.2",
+    "caller": "|java+method:///org/knowm/xchange/quoine/service/QuoineTradeService/getTradeHistory(org.knowm.xchange.service.trade.params.TradeHistoryParams)|",
+    "called": "|java+constructor:///org/knowm/xchange/dto/trade/UserTrades/UserTrades(java.util.List,org.knowm.xchange.dto.marketdata.Trades$TradeSortType)|",
+    "v1Body": [
+      "|java+constructor:///org/knowm/xchange/exceptions/NotAvailableFromExchangeException/NotAvailableFromExchangeException()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/knowm/xchange/dto/trade/UserTrades/UserTrades(java.util.List,org.knowm.xchange.dto.marketdata.Trades$TradeSortType)|",
+      "|java+constructor:///java/lang/IllegalStateException/IllegalStateException(java.lang.String)|",
+      "|java+method:///org/knowm/xchange/quoine/QuoineAdapters/adapt(java.util.List,org.knowm.xchange.currency.CurrencyPair)|",
+      "|java+method:///org/knowm/xchange/service/trade/params/TradeHistoryParamCurrencyPair/getCurrencyPair()|",
+      "|java+method:///org/knowm/xchange/quoine/service/QuoineTradeService/executions(org.knowm.xchange.currency.CurrencyPair,java.lang.Integer,java.lang.Integer)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///org/knowm/xchange/service/trade/params/TradeHistoryParamPaging/getPageLength()|",
+      "|java+method:///org/knowm/xchange/service/trade/params/TradeHistoryParamPaging/getPageNumber()|"
+    ],
+    "affectedLib": "org.knowm.xchange:xchange-core:4.2.2",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.knowm.xchange:xchange-quoine:4.2.1",
+    "coordinatesV2": "org.knowm.xchange:xchange-quoine:4.2.2",
+    "caller": "|java+constructor:///org/knowm/xchange/quoine/service/QuoineBaseService/QuoineBaseService(org.knowm.xchange.Exchange)|",
+    "called": "|java+constructor:///org/knowm/xchange/service/BaseExchangeService/BaseExchangeService(org.knowm.xchange.Exchange)|",
+    "v1Body": [
+      "|java+method:///org/knowm/xchange/ExchangeSpecification/getExchangeSpecificParameters()|",
+      "|java+method:///org/knowm/xchange/ExchangeSpecification/getSslUri()|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+constructor:///org/knowm/xchange/quoine/service/QuoineSignatureDigest/QuoineSignatureDigest(java.lang.String,java.lang.String,si.mazi.rescu.SynchronizedValueFactory)|",
+      "|java+method:///si/mazi/rescu/RestProxyFactory/createProxy(java.lang.Class,java.lang.String)|",
+      "|java+method:///org/knowm/xchange/Exchange/getExchangeSpecification()|",
+      "|java+constructor:///org/knowm/xchange/service/BaseExchangeService/BaseExchangeService(org.knowm.xchange.Exchange)|",
+      "|java+method:///org/knowm/xchange/Exchange/getNonceFactory()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/knowm/xchange/ExchangeSpecification/getSecretKey()|",
+      "|java+method:///org/knowm/xchange/ExchangeSpecification/getSslUri()|",
+      "|java+method:///org/knowm/xchange/ExchangeSpecification/getApiKey()|",
+      "|java+constructor:///org/knowm/xchange/quoine/service/QuoineSignatureDigest/QuoineSignatureDigest(java.lang.String,java.lang.String,si.mazi.rescu.SynchronizedValueFactory)|",
+      "|java+method:///si/mazi/rescu/RestProxyFactory/createProxy(java.lang.Class,java.lang.String)|",
+      "|java+method:///org/knowm/xchange/Exchange/getExchangeSpecification()|",
+      "|java+constructor:///org/knowm/xchange/service/BaseExchangeService/BaseExchangeService(org.knowm.xchange.Exchange)|",
+      "|java+method:///org/knowm/xchange/Exchange/getNonceFactory()|"
+    ],
+    "affectedLib": "org.knowm.xchange:xchange-core:4.2.2",
+    "change": "UPDATED"
+  }
+]

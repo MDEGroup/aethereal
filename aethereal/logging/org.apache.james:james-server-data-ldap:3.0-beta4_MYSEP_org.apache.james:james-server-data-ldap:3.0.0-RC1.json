@@ -1,0 +1,115 @@
+[
+  {
+    "coordinatesV1": "org.apache.james:james-server-data-ldap:3.0-beta4",
+    "coordinatesV2": "org.apache.james:james-server-data-ldap:3.0.0-RC1",
+    "caller": "|java+method:///org/apache/james/user/ldap/ReadOnlyUsersLDAPRepository/getUserByName(java.lang.String)|",
+    "called": "|java+constructor:///org/apache/james/user/api/UsersRepositoryException/UsersRepositoryException(java.lang.String,java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/james/user/ldap/ReadOnlyUsersLDAPRepository/buildUser(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///org/apache/james/user/api/UsersRepositoryException/UsersRepositoryException(java.lang.String,java.lang.Throwable)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/james/user/ldap/ReadOnlyUsersLDAPRepository/searchAndBuildUser(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///org/apache/james/user/api/UsersRepositoryException/UsersRepositoryException(java.lang.String,java.lang.Throwable)|"
+    ],
+    "affectedLib": "org.apache.james:james-server-data-api:3.0.0-RC1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.james:james-server-data-ldap:3.0-beta4",
+    "coordinatesV2": "org.apache.james:james-server-data-ldap:3.0.0-RC1",
+    "caller": "|java+method:///org/apache/james/user/ldap/ReadOnlyUsersLDAPRepository/configure(org.apache.commons.configuration.HierarchicalConfiguration)|",
+    "called": "|java+method:///org/apache/commons/configuration/HierarchicalConfiguration/containsKey(java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/james/util/retry/DoublingRetrySchedule/DoublingRetrySchedule(long,long,int)|",
+      "|java+method:///org/apache/commons/configuration/HierarchicalConfiguration/getString(java.lang.String)|",
+      "|java+method:///org/apache/commons/configuration/HierarchicalConfiguration/configurationAt(java.lang.String)|",
+      "|java+method:///org/apache/commons/configuration/HierarchicalConfiguration/getLong(java.lang.String,long)|",
+      "|java+method:///org/apache/commons/configuration/HierarchicalConfiguration/getString(java.lang.String,java.lang.String)|",
+      "|java+constructor:///org/apache/james/user/ldap/ReadOnlyLDAPGroupRestriction/ReadOnlyLDAPGroupRestriction(org.apache.commons.configuration.HierarchicalConfiguration)|",
+      "|java+method:///org/apache/commons/configuration/HierarchicalConfiguration/containsKey(java.lang.String)|",
+      "|java+method:///org/apache/commons/configuration/HierarchicalConfiguration/getBoolean(java.lang.String,boolean)|",
+      "|java+method:///org/apache/commons/configuration/HierarchicalConfiguration/getInt(java.lang.String,int)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/configuration/HierarchicalConfiguration/getString(java.lang.String)|",
+      "|java+method:///org/apache/commons/configuration/HierarchicalConfiguration/configurationAt(java.lang.String)|",
+      "|java+method:///org/apache/commons/configuration/HierarchicalConfiguration/getLong(java.lang.String,long)|",
+      "|java+method:///org/apache/commons/configuration/HierarchicalConfiguration/getString(java.lang.String,java.lang.String)|",
+      "|java+constructor:///org/apache/james/user/ldap/ReadOnlyLDAPGroupRestriction/ReadOnlyLDAPGroupRestriction(org.apache.commons.configuration.HierarchicalConfiguration)|",
+      "|java+method:///org/apache/commons/configuration/HierarchicalConfiguration/containsKey(java.lang.String)|",
+      "|java+method:///com/google/common/base/Optional/fromNullable(java.lang.Object)|",
+      "|java+constructor:///org/apache/james/util/retry/DoublingRetrySchedule/DoublingRetrySchedule(long,long,int)|",
+      "|java+method:///org/apache/james/user/ldap/ReadOnlyUsersLDAPRepository/checkState()|",
+      "|java+method:///org/apache/commons/configuration/HierarchicalConfiguration/getBoolean(java.lang.String,boolean)|",
+      "|java+method:///org/apache/commons/configuration/HierarchicalConfiguration/getInt(java.lang.String,int)|"
+    ],
+    "affectedLib": "commons-configuration:commons-configuration:1.9",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.james:james-server-data-ldap:3.0-beta4",
+    "coordinatesV2": "org.apache.james:james-server-data-ldap:3.0.0-RC1",
+    "caller": "|java+constructor:///org/apache/james/user/ldap/ReadOnlyLDAPGroupRestriction/ReadOnlyLDAPGroupRestriction(org.apache.commons.configuration.HierarchicalConfiguration)|",
+    "called": "|java+method:///org/apache/commons/configuration/HierarchicalConfiguration/getKeys(java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///org/apache/commons/configuration/HierarchicalConfiguration/getString(java.lang.String)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/apache/commons/configuration/HierarchicalConfiguration/getKeys(java.lang.String)|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///org/apache/commons/configuration/HierarchicalConfiguration/getList(java.lang.String)|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///java/util/List/get(int)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/configuration/HierarchicalConfiguration/getStringArray(java.lang.String)|",
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///org/apache/commons/configuration/HierarchicalConfiguration/getString(java.lang.String)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/apache/commons/configuration/HierarchicalConfiguration/getKeys(java.lang.String)|",
+      "|java+method:///java/util/Collections/addAll(java.util.Collection,java.lang.Object%5B%5D)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "commons-configuration:commons-configuration:1.9",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.james:james-server-data-ldap:3.0-beta4",
+    "coordinatesV2": "org.apache.james:james-server-data-ldap:3.0.0-RC1",
+    "caller": "|java+method:///org/apache/james/user/ldap/ReadOnlyUsersLDAPRepository/configure(org.apache.commons.configuration.HierarchicalConfiguration)|",
+    "called": "|java+constructor:///org/apache/james/util/retry/DoublingRetrySchedule/DoublingRetrySchedule(long,long,int)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/james/util/retry/DoublingRetrySchedule/DoublingRetrySchedule(long,long,int)|",
+      "|java+method:///org/apache/commons/configuration/HierarchicalConfiguration/getString(java.lang.String)|",
+      "|java+method:///org/apache/commons/configuration/HierarchicalConfiguration/configurationAt(java.lang.String)|",
+      "|java+method:///org/apache/commons/configuration/HierarchicalConfiguration/getLong(java.lang.String,long)|",
+      "|java+method:///org/apache/commons/configuration/HierarchicalConfiguration/getString(java.lang.String,java.lang.String)|",
+      "|java+constructor:///org/apache/james/user/ldap/ReadOnlyLDAPGroupRestriction/ReadOnlyLDAPGroupRestriction(org.apache.commons.configuration.HierarchicalConfiguration)|",
+      "|java+method:///org/apache/commons/configuration/HierarchicalConfiguration/containsKey(java.lang.String)|",
+      "|java+method:///org/apache/commons/configuration/HierarchicalConfiguration/getBoolean(java.lang.String,boolean)|",
+      "|java+method:///org/apache/commons/configuration/HierarchicalConfiguration/getInt(java.lang.String,int)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/configuration/HierarchicalConfiguration/getString(java.lang.String)|",
+      "|java+method:///org/apache/commons/configuration/HierarchicalConfiguration/configurationAt(java.lang.String)|",
+      "|java+method:///org/apache/commons/configuration/HierarchicalConfiguration/getLong(java.lang.String,long)|",
+      "|java+method:///org/apache/commons/configuration/HierarchicalConfiguration/getString(java.lang.String,java.lang.String)|",
+      "|java+constructor:///org/apache/james/user/ldap/ReadOnlyLDAPGroupRestriction/ReadOnlyLDAPGroupRestriction(org.apache.commons.configuration.HierarchicalConfiguration)|",
+      "|java+method:///org/apache/commons/configuration/HierarchicalConfiguration/containsKey(java.lang.String)|",
+      "|java+method:///com/google/common/base/Optional/fromNullable(java.lang.Object)|",
+      "|java+constructor:///org/apache/james/util/retry/DoublingRetrySchedule/DoublingRetrySchedule(long,long,int)|",
+      "|java+method:///org/apache/james/user/ldap/ReadOnlyUsersLDAPRepository/checkState()|",
+      "|java+method:///org/apache/commons/configuration/HierarchicalConfiguration/getBoolean(java.lang.String,boolean)|",
+      "|java+method:///org/apache/commons/configuration/HierarchicalConfiguration/getInt(java.lang.String,int)|"
+    ],
+    "affectedLib": "org.apache.james:james-server-util:3.0.0-RC1",
+    "change": "UPDATED"
+  }
+]

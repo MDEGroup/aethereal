@@ -1,0 +1,48 @@
+[
+  {
+    "coordinatesV1": "org.polyforms:polyforms-util:0.6.1",
+    "coordinatesV2": "org.polyforms:polyforms-util:0.7",
+    "caller": "|java+method:///org/polyforms/util/ConversionUtils/convertArguments(org.springframework.core.convert.ConversionService,java.lang.Class,java.lang.reflect.Method,java.lang.Object%5B%5D)|",
+    "called": "|java+method:///org/springframework/core/convert/TypeDescriptor/forObject(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/springframework/core/convert/ConversionService/convert(java.lang.Object,org.springframework.core.convert.TypeDescriptor,org.springframework.core.convert.TypeDescriptor)|",
+      "|java+method:///org/springframework/core/convert/TypeDescriptor/forObject(java.lang.Object)|",
+      "|java+constructor:///org/springframework/core/MethodParameter/MethodParameter(java.lang.reflect.Method,int)|",
+      "|java+constructor:///org/springframework/core/convert/TypeDescriptor/TypeDescriptor(org.springframework.core.MethodParameter,java.lang.Class)|",
+      "|java+method:///java/lang/reflect/Method/getParameterTypes()|",
+      "|java+method:///org/springframework/core/GenericTypeResolver/resolveParameterType(org.springframework.core.MethodParameter,java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/springframework/core/convert/ConversionService/convert(java.lang.Object,org.springframework.core.convert.TypeDescriptor,org.springframework.core.convert.TypeDescriptor)|",
+      "|java+method:///org/polyforms/util/ConversionUtils/createTypeDescriptor(java.lang.reflect.Method,int,java.lang.Class)|",
+      "|java+method:///org/springframework/core/convert/TypeDescriptor/forObject(java.lang.Object)|",
+      "|java+method:///java/lang/reflect/Method/getParameterTypes()|"
+    ],
+    "affectedLib": "org.springframework:spring-core:3.1.0.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.polyforms:polyforms-util:0.6.1",
+    "coordinatesV2": "org.polyforms:polyforms-util:0.7",
+    "caller": "|java+method:///org/polyforms/util/ConversionUtils/convertReturnValue(org.springframework.core.convert.ConversionService,java.lang.Class,java.lang.reflect.Method,java.lang.Object)|",
+    "called": "|java+method:///org/springframework/core/convert/TypeDescriptor/forObject(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/springframework/core/convert/ConversionService/convert(java.lang.Object,org.springframework.core.convert.TypeDescriptor,org.springframework.core.convert.TypeDescriptor)|",
+      "|java+method:///org/springframework/core/convert/TypeDescriptor/forObject(java.lang.Object)|",
+      "|java+method:///org/springframework/core/GenericTypeResolver/resolveReturnType(java.lang.reflect.Method,java.lang.Class)|",
+      "|java+constructor:///org/springframework/core/convert/TypeDescriptor/TypeDescriptor(org.springframework.core.MethodParameter,java.lang.Class)|",
+      "|java+method:///org/polyforms/util/DefaultValue/get(java.lang.Class)|",
+      "|java+method:///java/lang/reflect/Method/getReturnType()|",
+      "|java+constructor:///org/springframework/core/MethodParameter/MethodParameter(java.lang.reflect.Method,int)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/springframework/core/convert/ConversionService/convert(java.lang.Object,org.springframework.core.convert.TypeDescriptor,org.springframework.core.convert.TypeDescriptor)|",
+      "|java+method:///org/polyforms/util/ConversionUtils/createTypeDescriptor(java.lang.reflect.Method,int,java.lang.Class)|",
+      "|java+method:///org/springframework/core/convert/TypeDescriptor/forObject(java.lang.Object)|",
+      "|java+method:///java/lang/reflect/Method/getReturnType()|",
+      "|java+method:///org/polyforms/util/DefaultValue/get(java.lang.Class)|"
+    ],
+    "affectedLib": "org.springframework:spring-core:3.1.0.RELEASE",
+    "change": "UPDATED"
+  }
+]

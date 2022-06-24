@@ -1,0 +1,38 @@
+[
+  {
+    "coordinatesV1": "com.madgag:mini-git-server-sshd:0.3",
+    "coordinatesV2": "com.madgag:mini-git-server-sshd:0.4",
+    "caller": "|java+method:///com/google/gerrit/sshd/ToyPubKeyAuth/authenticate(java.lang.String,java.security.PublicKey,org.apache.sshd.server.session.ServerSession)|",
+    "called": "|java+method:///com/google/gerrit/server/IdentifiedUser$GenericFactory/create(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/apache/sshd/server/session/ServerSession/getAttribute(org.apache.sshd.common.Session$AttributeKey)|",
+      "|java+method:///com/google/gerrit/sshd/SshSession/authenticationSuccess(java.lang.String,com.google.gerrit.server.CurrentUser)|",
+      "|java+method:///com/google/gerrit/server/IdentifiedUser$GenericFactory/create(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/io/FileUtils/listFiles(java.io.File,java.lang.String%5B%5D,boolean)|",
+      "|java+method:///java/lang/Object/equals(java.lang.Object)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String)|",
+      "|java+method:///com/google/gerrit/sshd/SshSession/authenticationSuccess(java.lang.String,com.google.gerrit.server.CurrentUser)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/util/Collection/iterator()|",
+      "|java+constructor:///java/io/File/File(java.io.File,java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/io/File/isDirectory()|",
+      "|java+method:///org/apache/commons/io/FileUtils/readFileToString(java.io.File)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/sshd/server/session/ServerSession/getAttribute(org.apache.sshd.common.Session$AttributeKey)|",
+      "|java+method:///java/io/File/exists()|",
+      "|java+method:///com/google/gerrit/sshd/SshUtil/parseOpenSSHKey(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///com/google/gerrit/sshd/SshSession/authenticationError(java.lang.String,java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///com/google/gerrit/server/IdentifiedUser$GenericFactory/create(java.lang.String)|"
+    ],
+    "affectedLib": "com.madgag:mini-git-server-server:0.4",
+    "change": "UPDATED"
+  }
+]

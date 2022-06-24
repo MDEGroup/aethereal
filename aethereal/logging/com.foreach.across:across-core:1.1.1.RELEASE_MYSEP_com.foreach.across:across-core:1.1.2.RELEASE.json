@@ -1,0 +1,57 @@
+[
+  {
+    "coordinatesV1": "com.foreach.across:across-core:1.1.1.RELEASE",
+    "coordinatesV2": "com.foreach.across:across-core:1.1.2.RELEASE",
+    "caller": "|java+constructor:///com/foreach/across/core/context/support/AcrossModuleMessageSource/AcrossModuleMessageSource()|",
+    "called": "|java+constructor:///org/springframework/context/support/ReloadableResourceBundleMessageSource/ReloadableResourceBundleMessageSource()|",
+    "v1Body": [
+      "|java+constructor:///org/springframework/context/support/ReloadableResourceBundleMessageSource/ReloadableResourceBundleMessageSource()|",
+      "|java+method:///com/foreach/across/core/context/support/AcrossModuleMessageSource/setUseCodeAsDefaultMessage(boolean)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/springframework/context/support/ReloadableResourceBundleMessageSource/ReloadableResourceBundleMessageSource()|",
+      "|java+method:///com/foreach/across/core/context/support/AcrossModuleMessageSource/setUseCodeAsDefaultMessage(boolean)|",
+      "|java+method:///com/foreach/across/core/context/support/AcrossModuleMessageSource/setDefaultEncoding(java.lang.String)|"
+    ],
+    "affectedLib": "org.springframework:spring-context:4.1.9.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.foreach.across:across-core:1.1.1.RELEASE",
+    "coordinatesV2": "com.foreach.across:across-core:1.1.2.RELEASE",
+    "caller": "|java+method:///com/foreach/across/core/annotations/conditions/AcrossConditionCondition/evaluate(java.lang.String,org.springframework.beans.factory.config.ConfigurableListableBeanFactory,org.springframework.core.env.Environment)|",
+    "called": "|java+constructor:///org/springframework/context/expression/StandardBeanExpressionResolver/StandardBeanExpressionResolver()|",
+    "v1Body": [
+      "|java+constructor:///org/springframework/context/expression/StandardBeanExpressionResolver/StandardBeanExpressionResolver()|",
+      "|java+method:///org/springframework/beans/factory/config/ConfigurableListableBeanFactory/getBeanExpressionResolver()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/isTraceEnabled()|",
+      "|java+method:///org/springframework/beans/factory/config/BeanExpressionResolver/evaluate(java.lang.String,org.springframework.beans.factory.config.BeanExpressionContext)|",
+      "|java+method:///org/slf4j/Logger/trace(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/Boolean/valueOf(boolean)|",
+      "|java+method:///java/lang/String/startsWith(java.lang.String)|",
+      "|java+constructor:///com/foreach/across/core/annotations/conditions/AcrossConditionCondition$CurrentModuleBeanExpressionContext/AcrossConditionCondition$CurrentModuleBeanExpressionContext(org.springframework.beans.factory.config.ConfigurableListableBeanFactory,org.springframework.beans.factory.config.Scope,com.foreach.across.core.annotations.conditions.AcrossConditionCondition$1)|",
+      "|java+method:///org/springframework/core/env/Environment/resolvePlaceholders(java.lang.String)|",
+      "|java+method:///java/lang/Boolean/booleanValue()|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/springframework/context/expression/StandardBeanExpressionResolver/StandardBeanExpressionResolver()|",
+      "|java+method:///org/springframework/beans/factory/config/ConfigurableListableBeanFactory/getBeanExpressionResolver()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/isTraceEnabled()|",
+      "|java+method:///org/slf4j/Logger/trace(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/Boolean/valueOf(boolean)|",
+      "|java+method:///java/lang/String/startsWith(java.lang.String)|",
+      "|java+method:///org/springframework/core/env/Environment/resolvePlaceholders(java.lang.String)|",
+      "|java+method:///java/lang/Boolean/booleanValue()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/springframework/beans/factory/config/BeanExpressionResolver/evaluate(java.lang.String,org.springframework.beans.factory.config.BeanExpressionContext)|",
+      "|java+constructor:///com/foreach/across/core/annotations/conditions/AcrossConditionCondition$CurrentModuleBeanExpressionContext/AcrossConditionCondition$CurrentModuleBeanExpressionContext(org.springframework.beans.factory.config.ConfigurableListableBeanFactory,org.springframework.beans.factory.config.Scope,org.springframework.core.env.Environment,com.foreach.across.core.annotations.conditions.AcrossConditionCondition$1)|"
+    ],
+    "affectedLib": "org.springframework:spring-context:4.1.9.RELEASE",
+    "change": "UPDATED"
+  }
+]

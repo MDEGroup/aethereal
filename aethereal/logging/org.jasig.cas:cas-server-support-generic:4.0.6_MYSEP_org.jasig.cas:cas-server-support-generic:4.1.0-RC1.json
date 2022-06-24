@@ -1,0 +1,67 @@
+[
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-support-generic:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-support-generic:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/adaptors/generic/FileAuthenticationHandler/authenticateUsernamePasswordInternal(org.jasig.cas.authentication.UsernamePasswordCredential)|",
+    "called": "|java+method:///org/jasig/cas/authentication/UsernamePasswordCredential/getPassword()|",
+    "v1Body": [
+      "|java+method:///org/jasig/cas/authentication/UsernamePasswordCredential/getPassword()|",
+      "|java+method:///java/lang/String/valueOf(java.lang.Object)|",
+      "|java+constructor:///org/jasig/cas/authentication/principal/SimplePrincipal/SimplePrincipal(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///org/jasig/cas/authentication/PreventedException/PreventedException(java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder(java.lang.String)|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///org/jasig/cas/adaptors/generic/FileAuthenticationHandler/createHandlerResult(org.jasig.cas.authentication.Credential,org.jasig.cas.authentication.principal.Principal,java.util.List)|",
+      "|java+constructor:///javax/security/auth/login/AccountNotFoundException/AccountNotFoundException(java.lang.String)|",
+      "|java+constructor:///javax/security/auth/login/FailedLoginException/FailedLoginException()|",
+      "|java+method:///org/jasig/cas/authentication/handler/PasswordEncoder/encode(java.lang.String)|",
+      "|java+method:///org/jasig/cas/adaptors/generic/FileAuthenticationHandler/getPasswordOnRecord(java.lang.String)|",
+      "|java+method:///org/jasig/cas/authentication/UsernamePasswordCredential/getUsername()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/jasig/cas/adaptors/generic/FileAuthenticationHandler/getPasswordEncoder()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///org/jasig/cas/authentication/PreventedException/PreventedException(java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///javax/security/auth/login/AccountNotFoundException/AccountNotFoundException(java.lang.String)|",
+      "|java+constructor:///javax/security/auth/login/FailedLoginException/FailedLoginException()|",
+      "|java+method:///org/jasig/cas/authentication/handler/PasswordEncoder/encode(java.lang.String)|",
+      "|java+method:///org/apache/commons/lang3/StringUtils/isBlank(java.lang.CharSequence)|",
+      "|java+method:///org/jasig/cas/authentication/UsernamePasswordCredential/getPassword()|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///org/apache/commons/lang3/StringUtils/isNotBlank(java.lang.CharSequence)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/jasig/cas/adaptors/generic/FileAuthenticationHandler/createHandlerResult(org.jasig.cas.authentication.Credential,org.jasig.cas.authentication.principal.Principal,java.util.List)|",
+      "|java+method:///org/jasig/cas/authentication/principal/PrincipalFactory/createPrincipal(java.lang.String)|",
+      "|java+method:///org/jasig/cas/adaptors/generic/FileAuthenticationHandler/getPasswordOnRecord(java.lang.String)|",
+      "|java+method:///org/jasig/cas/authentication/UsernamePasswordCredential/getUsername()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/jasig/cas/adaptors/generic/FileAuthenticationHandler/getPasswordEncoder()|"
+    ],
+    "affectedLib": "org.jasig.cas:cas-server-core:4.1.0-RC1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-support-generic:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-support-generic:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/adaptors/generic/RejectUsersAuthenticationHandler/authenticateUsernamePasswordInternal(org.jasig.cas.authentication.UsernamePasswordCredential)|",
+    "called": "|java+method:///org/jasig/cas/authentication/UsernamePasswordCredential/getUsername()|",
+    "v1Body": [
+      "|java+method:///org/jasig/cas/adaptors/generic/RejectUsersAuthenticationHandler/createHandlerResult(org.jasig.cas.authentication.Credential,org.jasig.cas.authentication.principal.Principal,java.util.List)|",
+      "|java+constructor:///org/jasig/cas/authentication/principal/SimplePrincipal/SimplePrincipal(java.lang.String)|",
+      "|java+method:///java/util/List/contains(java.lang.Object)|",
+      "|java+constructor:///javax/security/auth/login/FailedLoginException/FailedLoginException()|",
+      "|java+method:///org/jasig/cas/authentication/UsernamePasswordCredential/getUsername()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/jasig/cas/adaptors/generic/RejectUsersAuthenticationHandler/createHandlerResult(org.jasig.cas.authentication.Credential,org.jasig.cas.authentication.principal.Principal,java.util.List)|",
+      "|java+method:///java/util/Set/contains(java.lang.Object)|",
+      "|java+method:///org/jasig/cas/authentication/principal/PrincipalFactory/createPrincipal(java.lang.String)|",
+      "|java+constructor:///javax/security/auth/login/FailedLoginException/FailedLoginException()|",
+      "|java+method:///org/jasig/cas/authentication/UsernamePasswordCredential/getUsername()|"
+    ],
+    "affectedLib": "org.jasig.cas:cas-server-core:4.1.0-RC1",
+    "change": "UPDATED"
+  }
+]

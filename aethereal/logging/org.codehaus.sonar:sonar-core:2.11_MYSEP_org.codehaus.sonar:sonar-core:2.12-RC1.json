@@ -1,0 +1,96 @@
+[
+  {
+    "coordinatesV1": "org.codehaus.sonar:sonar-core:2.11",
+    "coordinatesV2": "org.codehaus.sonar:sonar-core:2.12-RC1",
+    "caller": "|java+initializer:///org/sonar/jpa/session/AbstractDatabaseConnector/AbstractDatabaseConnector$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.6.2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.codehaus.sonar:sonar-core:2.11",
+    "coordinatesV2": "org.codehaus.sonar:sonar-core:2.12-RC1",
+    "caller": "|java+method:///org/sonar/core/plugins/PluginClassloaders/export(org.codehaus.plexus.classworlds.realm.ClassRealm,java.lang.String%5B%5D)|",
+    "called": "|java+constructor:///org/sonar/api/utils/SonarException/SonarException(java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/codehaus/plexus/classworlds/realm/ClassRealm/getId()|",
+      "|java+method:///org/apache/commons/lang/StringUtils/equals(java.lang.String,java.lang.String)|",
+      "|java+method:///org/codehaus/plexus/classworlds/realm/ClassRealm/importFrom(java.lang.String,java.lang.String)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/codehaus/plexus/classworlds/ClassWorld/getRealms()|",
+      "|java+method:///java/util/Collection/iterator()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+constructor:///org/sonar/api/utils/SonarException/SonarException(java.lang.Throwable)|",
+      "|java+method:///java/util/Arrays/toString(java.lang.Object%5B%5D)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/sonar/api/utils/SonarException/SonarException(java.lang.Throwable)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/codehaus/plexus/classworlds/realm/ClassRealm/getId()|",
+      "|java+method:///org/apache/commons/lang/StringUtils/equals(java.lang.String,java.lang.String)|",
+      "|java+method:///org/codehaus/plexus/classworlds/realm/ClassRealm/importFrom(java.lang.String,java.lang.String)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/codehaus/plexus/classworlds/ClassWorld/getRealms()|",
+      "|java+method:///java/util/Collection/iterator()|"
+    ],
+    "affectedLib": "org.codehaus.sonar:sonar-plugin-api:2.12-RC1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.codehaus.sonar:sonar-core:2.11",
+    "coordinatesV2": "org.codehaus.sonar:sonar-core:2.12-RC1",
+    "caller": "|java+method:///org/sonar/core/plugins/PluginClassloaders/extend(org.sonar.api.platform.PluginMetadata)|",
+    "called": "|java+constructor:///org/sonar/api/utils/SonarException/SonarException(java.lang.Throwable)|",
+    "v1Body": [
+      "|java+constructor:///java/lang/IllegalStateException/IllegalStateException(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/net/URI/toURL()|",
+      "|java+method:///org/codehaus/plexus/classworlds/ClassWorld/getRealm(java.lang.String)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/sonar/api/platform/PluginMetadata/getDeployedFiles()|",
+      "|java+method:///org/codehaus/plexus/classworlds/realm/ClassRealm/addURL(java.net.URL)|",
+      "|java+method:///org/sonar/api/platform/PluginMetadata/getBasePlugin()|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+method:///org/sonar/api/platform/PluginMetadata/getKey()|",
+      "|java+constructor:///org/sonar/api/utils/SonarException/SonarException(java.lang.Throwable)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/codehaus/plexus/classworlds/realm/ClassRealm/createChildRealm(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/io/File/toURI()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/lang/IllegalStateException/IllegalStateException(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/net/URI/toURL()|",
+      "|java+method:///org/codehaus/plexus/classworlds/ClassWorld/getRealm(java.lang.String)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/sonar/api/platform/PluginMetadata/getDeployedFiles()|",
+      "|java+method:///org/codehaus/plexus/classworlds/realm/ClassRealm/addURL(java.net.URL)|",
+      "|java+method:///org/sonar/api/platform/PluginMetadata/getBasePlugin()|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/sonar/api/platform/PluginMetadata/getKey()|",
+      "|java+constructor:///org/sonar/api/utils/SonarException/SonarException(java.lang.Throwable)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/codehaus/plexus/classworlds/realm/ClassRealm/createChildRealm(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/io/File/toURI()|"
+    ],
+    "affectedLib": "org.codehaus.sonar:sonar-plugin-api:2.12-RC1",
+    "change": "UPDATED"
+  }
+]

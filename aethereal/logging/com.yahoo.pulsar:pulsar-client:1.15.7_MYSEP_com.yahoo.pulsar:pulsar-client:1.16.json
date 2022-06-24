@@ -1,0 +1,776 @@
+[
+  {
+    "coordinatesV1": "com.yahoo.pulsar:pulsar-client:1.16",
+    "coordinatesV2": "com.yahoo.pulsar:pulsar-client:1.15.7",
+    "caller": "|java+method:///com/yahoo/pulsar/client/impl/ConsumerStats/updateNumMsgsReceived(com.yahoo.pulsar.client.api.Message)|",
+    "called": "|java+method:///com/ning/http/client/providers/netty/chmv8/LongAdder/add(long)|",
+    "v1Body": [
+      "|java+method:///com/ning/http/client/providers/netty/chmv8/LongAdder/increment()|",
+      "|java+method:///com/yahoo/pulsar/client/api/Message/getData()|",
+      "|java+method:///com/ning/http/client/providers/netty/chmv8/LongAdder/add(long)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/concurrent/atomic/LongAdder/increment()|",
+      "|java+method:///com/yahoo/pulsar/client/api/Message/getData()|",
+      "|java+method:///java/util/concurrent/atomic/LongAdder/add(long)|"
+    ],
+    "affectedLib": "com.ning:async-http-client:1.9.38",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.yahoo.pulsar:pulsar-client:1.16",
+    "coordinatesV2": "com.yahoo.pulsar:pulsar-client:1.15.7",
+    "caller": "|java+method:///com/yahoo/pulsar/client/impl/ConsumerStats/updateCumulativeStats(com.yahoo.pulsar.client.impl.ConsumerStats)|",
+    "called": "|java+method:///com/ning/http/client/providers/netty/chmv8/LongAdder/add(long)|",
+    "v1Body": [
+      "|java+method:///com/ning/http/client/providers/netty/chmv8/LongAdder/longValue()|",
+      "|java+method:///com/ning/http/client/providers/netty/chmv8/LongAdder/add(long)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/concurrent/atomic/LongAdder/longValue()|",
+      "|java+method:///java/util/concurrent/atomic/LongAdder/add(long)|"
+    ],
+    "affectedLib": "com.ning:async-http-client:1.9.38",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.yahoo.pulsar:pulsar-client:1.16",
+    "coordinatesV2": "com.yahoo.pulsar:pulsar-client:1.15.7",
+    "caller": "|java+method:///com/yahoo/pulsar/client/impl/HttpClient/close()|",
+    "called": "|java+method:///com/ning/http/client/AsyncHttpClient/close()|",
+    "v1Body": [
+      "|java+method:///com/ning/http/client/AsyncHttpClient/close()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/asynchttpclient/AsyncHttpClient/close()|"
+    ],
+    "affectedLib": "com.ning:async-http-client:1.9.38",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.yahoo.pulsar:pulsar-client:1.16",
+    "coordinatesV2": "com.yahoo.pulsar:pulsar-client:1.15.7",
+    "caller": "|java+method:///com/yahoo/pulsar/client/impl/ConsumerStats/getNumAcksSent()|",
+    "called": "|java+method:///com/ning/http/client/providers/netty/chmv8/LongAdder/longValue()|",
+    "v1Body": [
+      "|java+method:///com/ning/http/client/providers/netty/chmv8/LongAdder/longValue()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/concurrent/atomic/LongAdder/longValue()|"
+    ],
+    "affectedLib": "com.ning:async-http-client:1.9.38",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.yahoo.pulsar:pulsar-client:1.16",
+    "coordinatesV2": "com.yahoo.pulsar:pulsar-client:1.15.7",
+    "caller": "|java+method:///com/yahoo/pulsar/client/impl/ConsumerStats/incrementNumAcksSent(long)|",
+    "called": "|java+method:///com/ning/http/client/providers/netty/chmv8/LongAdder/add(long)|",
+    "v1Body": [
+      "|java+method:///com/ning/http/client/providers/netty/chmv8/LongAdder/add(long)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/concurrent/atomic/LongAdder/add(long)|"
+    ],
+    "affectedLib": "com.ning:async-http-client:1.9.38",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.yahoo.pulsar:pulsar-client:1.16",
+    "coordinatesV2": "com.yahoo.pulsar:pulsar-client:1.15.7",
+    "caller": "|java+constructor:///com/yahoo/pulsar/client/impl/HttpClient$1/HttpClient$1(com.yahoo.pulsar.client.impl.HttpClient,java.lang.String,java.util.concurrent.CompletableFuture)|",
+    "called": "|java+constructor:///com/ning/http/client/AsyncCompletionHandler/AsyncCompletionHandler()|",
+    "v1Body": [
+      "|java+constructor:///com/ning/http/client/AsyncCompletionHandler/AsyncCompletionHandler()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/asynchttpclient/AsyncCompletionHandler/AsyncCompletionHandler()|"
+    ],
+    "affectedLib": "com.ning:async-http-client:1.9.38",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.yahoo.pulsar:pulsar-client:1.16",
+    "coordinatesV2": "com.yahoo.pulsar:pulsar-client:1.15.7",
+    "caller": "|java+constructor:///com/yahoo/pulsar/client/impl/ConsumerStats/ConsumerStats(com.yahoo.pulsar.client.impl.PulsarClientImpl,com.yahoo.pulsar.client.api.ConsumerConfiguration,com.yahoo.pulsar.client.impl.ConsumerImpl)|",
+    "called": "|java+constructor:///com/ning/http/client/providers/netty/chmv8/LongAdder/LongAdder()|",
+    "v1Body": [
+      "|java+method:///com/yahoo/pulsar/client/impl/PulsarClientImpl/getConfiguration()|",
+      "|java+method:///com/yahoo/pulsar/client/api/ClientConfiguration/getStatsIntervalSeconds()|",
+      "|java+constructor:///java/text/DecimalFormat/DecimalFormat(java.lang.String)|",
+      "|java+constructor:///com/ning/http/client/providers/netty/chmv8/LongAdder/LongAdder()|",
+      "|java+method:///com/yahoo/pulsar/client/impl/ConsumerStats/init(com.yahoo.pulsar.client.api.ConsumerConfiguration)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/yahoo/pulsar/client/impl/PulsarClientImpl/getConfiguration()|",
+      "|java+method:///com/yahoo/pulsar/client/api/ClientConfiguration/getStatsIntervalSeconds()|",
+      "|java+constructor:///java/text/DecimalFormat/DecimalFormat(java.lang.String)|",
+      "|java+constructor:///java/util/concurrent/atomic/LongAdder/LongAdder()|",
+      "|java+method:///com/yahoo/pulsar/client/impl/ConsumerStats/init(com.yahoo.pulsar.client.api.ConsumerConfiguration)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "com.ning:async-http-client:1.9.38",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.yahoo.pulsar:pulsar-client:1.16",
+    "coordinatesV2": "com.yahoo.pulsar:pulsar-client:1.15.7",
+    "caller": "|java+method:///com/yahoo/pulsar/client/impl/HttpClient/get(java.lang.String,java.lang.Class)|",
+    "called": "|java+method:///com/ning/http/client/AsyncHttpClient$BoundRequestBuilder/execute(com.ning.http.client.AsyncHandler)|",
+    "v1Body": [
+      "|java+constructor:///java/net/URL/URL(java.net.URL,java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/net/URL/toString()|",
+      "|java+constructor:///com/yahoo/pulsar/client/api/PulsarClientException/PulsarClientException(java.lang.Throwable)|",
+      "|java+constructor:///java/util/concurrent/CompletableFuture/CompletableFuture()|",
+      "|java+method:///com/yahoo/pulsar/client/api/Authentication/getAuthData()|",
+      "|java+method:///java/util/Map$Entry/getValue()|",
+      "|java+method:///com/yahoo/pulsar/client/api/AuthenticationDataProvider/getHttpHeaders()|",
+      "|java+method:///java/lang/Exception/getMessage()|",
+      "|java+method:///com/ning/http/client/ListenableFuture/addListener(java.lang.Runnable,java.util.concurrent.Executor)|",
+      "|java+method:///com/yahoo/pulsar/client/api/AuthenticationDataProvider/hasDataForHttp()|",
+      "|java+method:///com/ning/http/client/AsyncHttpClient$BoundRequestBuilder/execute(com.ning.http.client.AsyncHandler)|",
+      "|java+constructor:///com/yahoo/pulsar/client/impl/HttpClient$1/HttpClient$1(com.yahoo.pulsar.client.impl.HttpClient,java.lang.String,java.util.concurrent.CompletableFuture)|",
+      "|java+method:///java/util/Map$Entry/getKey()|",
+      "|java+method:///com/google/common/util/concurrent/MoreExecutors/sameThreadExecutor()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/concurrent/CompletableFuture/completeExceptionally(java.lang.Throwable)|",
+      "|java+method:///com/ning/http/client/AsyncHttpClient/prepareGet(java.lang.String)|",
+      "|java+method:///com/ning/http/client/AsyncHttpClient$BoundRequestBuilder/setHeader(java.lang.String,java.lang.String)|",
+      "|java+method:///java/util/Set/iterator()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/asynchttpclient/ListenableFuture/addListener(java.lang.Runnable,java.util.concurrent.Executor)|",
+      "|java+method:///com/yahoo/pulsar/client/api/AuthenticationDataProvider/hasDataForHttp()|",
+      "|java+constructor:///com/yahoo/pulsar/client/impl/HttpClient$1/HttpClient$1(com.yahoo.pulsar.client.impl.HttpClient,java.lang.String,java.util.concurrent.CompletableFuture)|",
+      "|java+constructor:///java/net/URL/URL(java.net.URL,java.lang.String)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/net/URL/toString()|",
+      "|java+constructor:///java/util/concurrent/CompletableFuture/CompletableFuture()|",
+      "|java+method:///java/util/Set/iterator()|",
+      "|java+method:///java/util/Map$Entry/getValue()|",
+      "|java+method:///com/yahoo/pulsar/client/api/AuthenticationDataProvider/getHttpHeaders()|",
+      "|java+method:///java/lang/Exception/getMessage()|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/asynchttpclient/BoundRequestBuilder/setHeader(java.lang.CharSequence,java.lang.String)|",
+      "|java+method:///java/util/Map$Entry/getKey()|",
+      "|java+method:///com/google/common/util/concurrent/MoreExecutors/sameThreadExecutor()|",
+      "|java+constructor:///com/yahoo/pulsar/client/api/PulsarClientException/PulsarClientException(java.lang.Throwable)|",
+      "|java+method:///org/asynchttpclient/BoundRequestBuilder/execute(org.asynchttpclient.AsyncHandler)|",
+      "|java+method:///com/yahoo/pulsar/client/api/Authentication/getAuthData()|",
+      "|java+method:///org/asynchttpclient/AsyncHttpClient/prepareGet(java.lang.String)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/concurrent/CompletableFuture/completeExceptionally(java.lang.Throwable)|"
+    ],
+    "affectedLib": "com.ning:async-http-client:1.9.38",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.yahoo.pulsar:pulsar-client:1.16",
+    "coordinatesV2": "com.yahoo.pulsar:pulsar-client:1.15.7",
+    "caller": "|java+method:///com/yahoo/pulsar/client/impl/ProducerStats/getTotalMsgsSent()|",
+    "called": "|java+method:///com/ning/http/client/providers/netty/chmv8/LongAdder/longValue()|",
+    "v1Body": [
+      "|java+method:///com/ning/http/client/providers/netty/chmv8/LongAdder/longValue()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/concurrent/atomic/LongAdder/longValue()|"
+    ],
+    "affectedLib": "com.ning:async-http-client:1.9.38",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.yahoo.pulsar:pulsar-client:1.16",
+    "coordinatesV2": "com.yahoo.pulsar:pulsar-client:1.15.7",
+    "caller": "|java+method:///com/yahoo/pulsar/client/impl/ConsumerStats/getTotalAcksSent()|",
+    "called": "|java+method:///com/ning/http/client/providers/netty/chmv8/LongAdder/longValue()|",
+    "v1Body": [
+      "|java+method:///com/ning/http/client/providers/netty/chmv8/LongAdder/longValue()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/concurrent/atomic/LongAdder/longValue()|"
+    ],
+    "affectedLib": "com.ning:async-http-client:1.9.38",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.yahoo.pulsar:pulsar-client:1.16",
+    "coordinatesV2": "com.yahoo.pulsar:pulsar-client:1.15.7",
+    "caller": "|java+method:///com/yahoo/pulsar/client/impl/ConsumerStats/getNumMsgsReceived()|",
+    "called": "|java+method:///com/ning/http/client/providers/netty/chmv8/LongAdder/longValue()|",
+    "v1Body": [
+      "|java+method:///com/ning/http/client/providers/netty/chmv8/LongAdder/longValue()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/concurrent/atomic/LongAdder/longValue()|"
+    ],
+    "affectedLib": "com.ning:async-http-client:1.9.38",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.yahoo.pulsar:pulsar-client:1.16",
+    "coordinatesV2": "com.yahoo.pulsar:pulsar-client:1.15.7",
+    "caller": "|java+method:///com/yahoo/pulsar/client/impl/ProducerStats/incrementSendFailed(long)|",
+    "called": "|java+method:///com/ning/http/client/providers/netty/chmv8/LongAdder/add(long)|",
+    "v1Body": [
+      "|java+method:///com/ning/http/client/providers/netty/chmv8/LongAdder/add(long)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/concurrent/atomic/LongAdder/add(long)|"
+    ],
+    "affectedLib": "com.ning:async-http-client:1.9.38",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.yahoo.pulsar:pulsar-client:1.16",
+    "coordinatesV2": "com.yahoo.pulsar:pulsar-client:1.15.7",
+    "caller": "|java+constructor:///com/yahoo/pulsar/client/impl/ProducerStats/ProducerStats(com.yahoo.pulsar.client.impl.PulsarClientImpl,com.yahoo.pulsar.client.api.ProducerConfiguration,com.yahoo.pulsar.client.impl.ProducerImpl)|",
+    "called": "|java+constructor:///com/ning/http/client/providers/netty/chmv8/LongAdder/LongAdder()|",
+    "v1Body": [
+      "|java+method:///com/yahoo/pulsar/client/api/ClientConfiguration/getStatsIntervalSeconds()|",
+      "|java+constructor:///java/text/DecimalFormat/DecimalFormat(java.lang.String)|",
+      "|java+constructor:///com/ning/http/client/providers/netty/chmv8/LongAdder/LongAdder()|",
+      "|java+method:///com/yahoo/pulsar/client/impl/ProducerStats/init(com.yahoo.pulsar.client.api.ProducerConfiguration)|",
+      "|java+method:///com/yahoo/sketches/quantiles/DoublesSketchBuilder/build(int)|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///com/yahoo/sketches/quantiles/DoublesSketch/builder()|",
+      "|java+method:///com/yahoo/pulsar/client/impl/PulsarClientImpl/getConfiguration()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/yahoo/pulsar/client/api/ClientConfiguration/getStatsIntervalSeconds()|",
+      "|java+constructor:///java/text/DecimalFormat/DecimalFormat(java.lang.String)|",
+      "|java+constructor:///java/util/concurrent/atomic/LongAdder/LongAdder()|",
+      "|java+method:///com/yahoo/pulsar/client/impl/ProducerStats/init(com.yahoo.pulsar.client.api.ProducerConfiguration)|",
+      "|java+method:///com/yahoo/sketches/quantiles/DoublesSketchBuilder/build(int)|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///com/yahoo/sketches/quantiles/DoublesSketch/builder()|",
+      "|java+method:///com/yahoo/pulsar/client/impl/PulsarClientImpl/getConfiguration()|"
+    ],
+    "affectedLib": "com.ning:async-http-client:1.9.38",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.yahoo.pulsar:pulsar-client:1.16",
+    "coordinatesV2": "com.yahoo.pulsar:pulsar-client:1.15.7",
+    "caller": "|java+method:///com/yahoo/pulsar/client/impl/ProducerStats/getNumMsgsSent()|",
+    "called": "|java+method:///com/ning/http/client/providers/netty/chmv8/LongAdder/longValue()|",
+    "v1Body": [
+      "|java+method:///com/ning/http/client/providers/netty/chmv8/LongAdder/longValue()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/concurrent/atomic/LongAdder/longValue()|"
+    ],
+    "affectedLib": "com.ning:async-http-client:1.9.38",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.yahoo.pulsar:pulsar-client:1.16",
+    "coordinatesV2": "com.yahoo.pulsar:pulsar-client:1.15.7",
+    "caller": "|java+method:///com/yahoo/pulsar/client/impl/ProducerStats/getNumAcksReceived()|",
+    "called": "|java+method:///com/ning/http/client/providers/netty/chmv8/LongAdder/longValue()|",
+    "v1Body": [
+      "|java+method:///com/ning/http/client/providers/netty/chmv8/LongAdder/longValue()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/concurrent/atomic/LongAdder/longValue()|"
+    ],
+    "affectedLib": "com.ning:async-http-client:1.9.38",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.yahoo.pulsar:pulsar-client:1.16",
+    "coordinatesV2": "com.yahoo.pulsar:pulsar-client:1.15.7",
+    "caller": "|java+method:///com/yahoo/pulsar/client/impl/ConsumerStats/getTotalReceivedFailed()|",
+    "called": "|java+method:///com/ning/http/client/providers/netty/chmv8/LongAdder/longValue()|",
+    "v1Body": [
+      "|java+method:///com/ning/http/client/providers/netty/chmv8/LongAdder/longValue()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/concurrent/atomic/LongAdder/longValue()|"
+    ],
+    "affectedLib": "com.ning:async-http-client:1.9.38",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.yahoo.pulsar:pulsar-client:1.16",
+    "coordinatesV2": "com.yahoo.pulsar:pulsar-client:1.15.7",
+    "caller": "|java+method:///com/yahoo/pulsar/client/impl/ProducerStats/incrementNumAcksReceived(long)|",
+    "called": "|java+method:///com/ning/http/client/providers/netty/chmv8/LongAdder/increment()|",
+    "v1Body": [
+      "|java+method:///com/ning/http/client/providers/netty/chmv8/LongAdder/increment()|",
+      "|java+method:///com/yahoo/sketches/quantiles/DoublesSketch/update(double)|",
+      "|java+method:///java/util/concurrent/TimeUnit/toMicros(long)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/concurrent/atomic/LongAdder/increment()|",
+      "|java+method:///com/yahoo/sketches/quantiles/DoublesSketch/update(double)|",
+      "|java+method:///java/util/concurrent/TimeUnit/toMicros(long)|"
+    ],
+    "affectedLib": "com.ning:async-http-client:1.9.38",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.yahoo.pulsar:pulsar-client:1.16",
+    "coordinatesV2": "com.yahoo.pulsar:pulsar-client:1.15.7",
+    "caller": "|java+method:///com/yahoo/pulsar/client/impl/ProducerStats/getTotalBytesSent()|",
+    "called": "|java+method:///com/ning/http/client/providers/netty/chmv8/LongAdder/longValue()|",
+    "v1Body": [
+      "|java+method:///com/ning/http/client/providers/netty/chmv8/LongAdder/longValue()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/concurrent/atomic/LongAdder/longValue()|"
+    ],
+    "affectedLib": "com.ning:async-http-client:1.9.38",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.yahoo.pulsar:pulsar-client:1.16",
+    "coordinatesV2": "com.yahoo.pulsar:pulsar-client:1.15.7",
+    "caller": "|java+method:///com/yahoo/pulsar/client/impl/ProducerStats/getTotalAcksReceived()|",
+    "called": "|java+method:///com/ning/http/client/providers/netty/chmv8/LongAdder/longValue()|",
+    "v1Body": [
+      "|java+method:///com/ning/http/client/providers/netty/chmv8/LongAdder/longValue()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/concurrent/atomic/LongAdder/longValue()|"
+    ],
+    "affectedLib": "com.ning:async-http-client:1.9.38",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.yahoo.pulsar:pulsar-client:1.16",
+    "coordinatesV2": "com.yahoo.pulsar:pulsar-client:1.15.7",
+    "caller": "|java+method:///com/yahoo/pulsar/client/impl/ConsumerStats/getTotalBytesReceived()|",
+    "called": "|java+method:///com/ning/http/client/providers/netty/chmv8/LongAdder/longValue()|",
+    "v1Body": [
+      "|java+method:///com/ning/http/client/providers/netty/chmv8/LongAdder/longValue()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/concurrent/atomic/LongAdder/longValue()|"
+    ],
+    "affectedLib": "com.ning:async-http-client:1.9.38",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.yahoo.pulsar:pulsar-client:1.16",
+    "coordinatesV2": "com.yahoo.pulsar:pulsar-client:1.15.7",
+    "caller": "|java+method:///com/yahoo/pulsar/client/impl/ProducerStats/updateCumulativeStats(com.yahoo.pulsar.client.impl.ProducerStats)|",
+    "called": "|java+method:///com/ning/http/client/providers/netty/chmv8/LongAdder/add(long)|",
+    "v1Body": [
+      "|java+method:///com/ning/http/client/providers/netty/chmv8/LongAdder/longValue()|",
+      "|java+method:///com/ning/http/client/providers/netty/chmv8/LongAdder/add(long)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/concurrent/atomic/LongAdder/longValue()|",
+      "|java+method:///java/util/concurrent/atomic/LongAdder/add(long)|"
+    ],
+    "affectedLib": "com.ning:async-http-client:1.9.38",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.yahoo.pulsar:pulsar-client:1.16",
+    "coordinatesV2": "com.yahoo.pulsar:pulsar-client:1.15.7",
+    "caller": "|java+method:///com/yahoo/pulsar/client/impl/ConsumerStats/getNumAcksFailed()|",
+    "called": "|java+method:///com/ning/http/client/providers/netty/chmv8/LongAdder/longValue()|",
+    "v1Body": [
+      "|java+method:///com/ning/http/client/providers/netty/chmv8/LongAdder/longValue()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/concurrent/atomic/LongAdder/longValue()|"
+    ],
+    "affectedLib": "com.ning:async-http-client:1.9.38",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.yahoo.pulsar:pulsar-client:1.16",
+    "coordinatesV2": "com.yahoo.pulsar:pulsar-client:1.15.7",
+    "caller": "|java+method:///com/yahoo/pulsar/client/impl/ProducerStats/updateNumMsgsSent(long,long)|",
+    "called": "|java+method:///com/ning/http/client/providers/netty/chmv8/LongAdder/add(long)|",
+    "v1Body": [
+      "|java+method:///com/ning/http/client/providers/netty/chmv8/LongAdder/add(long)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/concurrent/atomic/LongAdder/add(long)|"
+    ],
+    "affectedLib": "com.ning:async-http-client:1.9.38",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.yahoo.pulsar:pulsar-client:1.16",
+    "coordinatesV2": "com.yahoo.pulsar:pulsar-client:1.15.7",
+    "caller": "|java+method:///com/yahoo/pulsar/client/impl/ProducerStats/getNumSendFailed()|",
+    "called": "|java+method:///com/ning/http/client/providers/netty/chmv8/LongAdder/longValue()|",
+    "v1Body": [
+      "|java+method:///com/ning/http/client/providers/netty/chmv8/LongAdder/longValue()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/concurrent/atomic/LongAdder/longValue()|"
+    ],
+    "affectedLib": "com.ning:async-http-client:1.9.38",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.yahoo.pulsar:pulsar-client:1.16",
+    "coordinatesV2": "com.yahoo.pulsar:pulsar-client:1.15.7",
+    "caller": "|java+method:///com/yahoo/pulsar/client/impl/ProducerStats/getNumBytesSent()|",
+    "called": "|java+method:///com/ning/http/client/providers/netty/chmv8/LongAdder/longValue()|",
+    "v1Body": [
+      "|java+method:///com/ning/http/client/providers/netty/chmv8/LongAdder/longValue()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/concurrent/atomic/LongAdder/longValue()|"
+    ],
+    "affectedLib": "com.ning:async-http-client:1.9.38",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.yahoo.pulsar:pulsar-client:1.16",
+    "coordinatesV2": "com.yahoo.pulsar:pulsar-client:1.15.7",
+    "caller": "|java+method:///com/yahoo/pulsar/client/impl/ConsumerStats/getNumBytesReceived()|",
+    "called": "|java+method:///com/ning/http/client/providers/netty/chmv8/LongAdder/longValue()|",
+    "v1Body": [
+      "|java+method:///com/ning/http/client/providers/netty/chmv8/LongAdder/longValue()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/concurrent/atomic/LongAdder/longValue()|"
+    ],
+    "affectedLib": "com.ning:async-http-client:1.9.38",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.yahoo.pulsar:pulsar-client:1.16",
+    "coordinatesV2": "com.yahoo.pulsar:pulsar-client:1.15.7",
+    "caller": "|java+method:///com/yahoo/pulsar/client/impl/ConsumerStats/getTotalMsgsReceived()|",
+    "called": "|java+method:///com/ning/http/client/providers/netty/chmv8/LongAdder/longValue()|",
+    "v1Body": [
+      "|java+method:///com/ning/http/client/providers/netty/chmv8/LongAdder/longValue()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/concurrent/atomic/LongAdder/longValue()|"
+    ],
+    "affectedLib": "com.ning:async-http-client:1.9.38",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.yahoo.pulsar:pulsar-client:1.16",
+    "coordinatesV2": "com.yahoo.pulsar:pulsar-client:1.15.7",
+    "caller": "|java+method:///com/yahoo/pulsar/client/impl/ProducerStats/incrementSendFailed()|",
+    "called": "|java+method:///com/ning/http/client/providers/netty/chmv8/LongAdder/increment()|",
+    "v1Body": [
+      "|java+method:///com/ning/http/client/providers/netty/chmv8/LongAdder/increment()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/concurrent/atomic/LongAdder/increment()|"
+    ],
+    "affectedLib": "com.ning:async-http-client:1.9.38",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.yahoo.pulsar:pulsar-client:1.16",
+    "coordinatesV2": "com.yahoo.pulsar:pulsar-client:1.15.7",
+    "caller": "|java+method:///com/yahoo/pulsar/client/impl/ProducerStats/getTotalSendFailed()|",
+    "called": "|java+method:///com/ning/http/client/providers/netty/chmv8/LongAdder/longValue()|",
+    "v1Body": [
+      "|java+method:///com/ning/http/client/providers/netty/chmv8/LongAdder/longValue()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/concurrent/atomic/LongAdder/longValue()|"
+    ],
+    "affectedLib": "com.ning:async-http-client:1.9.38",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.yahoo.pulsar:pulsar-client:1.16",
+    "coordinatesV2": "com.yahoo.pulsar:pulsar-client:1.15.7",
+    "caller": "|java+method:///com/yahoo/pulsar/client/impl/ConsumerStats/reset()|",
+    "called": "|java+method:///com/ning/http/client/providers/netty/chmv8/LongAdder/reset()|",
+    "v1Body": [
+      "|java+method:///com/ning/http/client/providers/netty/chmv8/LongAdder/reset()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/concurrent/atomic/LongAdder/reset()|"
+    ],
+    "affectedLib": "com.ning:async-http-client:1.9.38",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.yahoo.pulsar:pulsar-client:1.16",
+    "coordinatesV2": "com.yahoo.pulsar:pulsar-client:1.15.7",
+    "caller": "|java+method:///com/yahoo/pulsar/client/impl/ConsumerStats/incrementNumReceiveFailed()|",
+    "called": "|java+method:///com/ning/http/client/providers/netty/chmv8/LongAdder/increment()|",
+    "v1Body": [
+      "|java+method:///com/ning/http/client/providers/netty/chmv8/LongAdder/increment()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/concurrent/atomic/LongAdder/increment()|"
+    ],
+    "affectedLib": "com.ning:async-http-client:1.9.38",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.yahoo.pulsar:pulsar-client:1.16",
+    "coordinatesV2": "com.yahoo.pulsar:pulsar-client:1.15.7",
+    "caller": "|java+method:///com/yahoo/pulsar/client/impl/ConsumerStats/incrementNumAcksFailed()|",
+    "called": "|java+method:///com/ning/http/client/providers/netty/chmv8/LongAdder/increment()|",
+    "v1Body": [
+      "|java+method:///com/ning/http/client/providers/netty/chmv8/LongAdder/increment()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/concurrent/atomic/LongAdder/increment()|"
+    ],
+    "affectedLib": "com.ning:async-http-client:1.9.38",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.yahoo.pulsar:pulsar-client:1.16",
+    "coordinatesV2": "com.yahoo.pulsar:pulsar-client:1.15.7",
+    "caller": "|java+method:///com/yahoo/pulsar/client/impl/ProducerStats/reset()|",
+    "called": "|java+method:///com/ning/http/client/providers/netty/chmv8/LongAdder/reset()|",
+    "v1Body": [
+      "|java+method:///com/ning/http/client/providers/netty/chmv8/LongAdder/reset()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/concurrent/atomic/LongAdder/reset()|"
+    ],
+    "affectedLib": "com.ning:async-http-client:1.9.38",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.yahoo.pulsar:pulsar-client:1.16",
+    "coordinatesV2": "com.yahoo.pulsar:pulsar-client:1.15.7",
+    "caller": "|java+method:///com/yahoo/pulsar/client/impl/ProducerStats/lambda$init$0(io.netty.util.Timeout)|",
+    "called": "|java+method:///com/ning/http/client/providers/netty/chmv8/LongAdder/add(long)|",
+    "v1Body": [
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///io/netty/util/Timer/newTimeout(io.netty.util.TimerTask,long,java.util.concurrent.TimeUnit)|",
+      "|java+method:///com/yahoo/pulsar/client/impl/ProducerImpl/getProducerName()|",
+      "|java+method:///com/yahoo/sketches/quantiles/DoublesSketch/reset()|",
+      "|java+method:///com/ning/http/client/providers/netty/chmv8/LongAdder/add(long)|",
+      "|java+method:///com/yahoo/pulsar/client/impl/PulsarClientImpl/timer()|",
+      "|java+method:///com/yahoo/sketches/quantiles/DoublesSketch/getQuantiles(double%5B%5D)|",
+      "|java+method:///java/text/DecimalFormat/format(double)|",
+      "|java+method:///io/netty/util/Timeout/isCancelled()|",
+      "|java+method:///java/lang/Exception/getMessage()|",
+      "|java+method:///java/lang/System/nanoTime()|",
+      "|java+method:///com/ning/http/client/providers/netty/chmv8/LongAdder/sumThenReset()|",
+      "|java+method:///com/yahoo/pulsar/client/impl/ProducerImpl/getTopic()|",
+      "|java+method:///com/yahoo/pulsar/client/impl/ProducerImpl/getPendingQueueSize()|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String,java.lang.Object%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///java/lang/System/nanoTime()|",
+      "|java+method:///com/yahoo/pulsar/client/impl/ProducerImpl/getProducerName()|",
+      "|java+method:///com/yahoo/sketches/quantiles/DoublesSketch/reset()|",
+      "|java+method:///com/yahoo/pulsar/client/impl/PulsarClientImpl/timer()|",
+      "|java+method:///com/yahoo/sketches/quantiles/DoublesSketch/getQuantiles(double%5B%5D)|",
+      "|java+method:///java/text/DecimalFormat/format(double)|",
+      "|java+method:///io/netty/util/Timeout/isCancelled()|",
+      "|java+method:///java/lang/Exception/getMessage()|",
+      "|java+method:///io/netty/util/Timer/newTimeout(io.netty.util.TimerTask,long,java.util.concurrent.TimeUnit)|",
+      "|java+method:///java/util/concurrent/atomic/LongAdder/sumThenReset()|",
+      "|java+method:///com/yahoo/pulsar/client/impl/ProducerImpl/getTopic()|",
+      "|java+method:///com/yahoo/pulsar/client/impl/ProducerImpl/getPendingQueueSize()|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///java/util/concurrent/atomic/LongAdder/add(long)|"
+    ],
+    "affectedLib": "com.ning:async-http-client:1.9.38",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.yahoo.pulsar:pulsar-client:1.16",
+    "coordinatesV2": "com.yahoo.pulsar:pulsar-client:1.15.7",
+    "caller": "|java+method:///com/yahoo/pulsar/client/impl/ConsumerStats/getNumReceiveFailed()|",
+    "called": "|java+method:///com/ning/http/client/providers/netty/chmv8/LongAdder/longValue()|",
+    "v1Body": [
+      "|java+method:///com/ning/http/client/providers/netty/chmv8/LongAdder/longValue()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/concurrent/atomic/LongAdder/longValue()|"
+    ],
+    "affectedLib": "com.ning:async-http-client:1.9.38",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.yahoo.pulsar:pulsar-client:1.16",
+    "coordinatesV2": "com.yahoo.pulsar:pulsar-client:1.15.7",
+    "caller": "|java+method:///com/yahoo/pulsar/client/impl/ConsumerStats/getTotalAcksFailed()|",
+    "called": "|java+method:///com/ning/http/client/providers/netty/chmv8/LongAdder/longValue()|",
+    "v1Body": [
+      "|java+method:///com/ning/http/client/providers/netty/chmv8/LongAdder/longValue()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/concurrent/atomic/LongAdder/longValue()|"
+    ],
+    "affectedLib": "com.ning:async-http-client:1.9.38",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.yahoo.pulsar:pulsar-client:1.15.7",
+    "coordinatesV2": "com.yahoo.pulsar:pulsar-client:1.16",
+    "caller": "|java+constructor:///com/yahoo/pulsar/client/impl/HttpClient$1/HttpClient$1(com.yahoo.pulsar.client.impl.HttpClient,java.lang.String,java.util.concurrent.CompletableFuture)|",
+    "called": "|java+constructor:///org/asynchttpclient/AsyncCompletionHandler/AsyncCompletionHandler()|",
+    "v1Body": [
+      "|java+constructor:///com/ning/http/client/AsyncCompletionHandler/AsyncCompletionHandler()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/asynchttpclient/AsyncCompletionHandler/AsyncCompletionHandler()|"
+    ],
+    "affectedLib": "org.asynchttpclient:async-http-client:2.0.19",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.yahoo.pulsar:pulsar-client:1.15.7",
+    "coordinatesV2": "com.yahoo.pulsar:pulsar-client:1.16",
+    "caller": "|java+method:///com/yahoo/pulsar/client/impl/HttpClient/get(java.lang.String,java.lang.Class)|",
+    "called": "|java+method:///org/asynchttpclient/BoundRequestBuilder/execute(org.asynchttpclient.AsyncHandler)|",
+    "v1Body": [
+      "|java+constructor:///java/net/URL/URL(java.net.URL,java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/net/URL/toString()|",
+      "|java+constructor:///com/yahoo/pulsar/client/api/PulsarClientException/PulsarClientException(java.lang.Throwable)|",
+      "|java+constructor:///java/util/concurrent/CompletableFuture/CompletableFuture()|",
+      "|java+method:///com/yahoo/pulsar/client/api/Authentication/getAuthData()|",
+      "|java+method:///java/util/Map$Entry/getValue()|",
+      "|java+method:///com/yahoo/pulsar/client/api/AuthenticationDataProvider/getHttpHeaders()|",
+      "|java+method:///java/lang/Exception/getMessage()|",
+      "|java+method:///com/ning/http/client/ListenableFuture/addListener(java.lang.Runnable,java.util.concurrent.Executor)|",
+      "|java+method:///com/yahoo/pulsar/client/api/AuthenticationDataProvider/hasDataForHttp()|",
+      "|java+method:///com/ning/http/client/AsyncHttpClient$BoundRequestBuilder/execute(com.ning.http.client.AsyncHandler)|",
+      "|java+constructor:///com/yahoo/pulsar/client/impl/HttpClient$1/HttpClient$1(com.yahoo.pulsar.client.impl.HttpClient,java.lang.String,java.util.concurrent.CompletableFuture)|",
+      "|java+method:///java/util/Map$Entry/getKey()|",
+      "|java+method:///com/google/common/util/concurrent/MoreExecutors/sameThreadExecutor()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/concurrent/CompletableFuture/completeExceptionally(java.lang.Throwable)|",
+      "|java+method:///com/ning/http/client/AsyncHttpClient/prepareGet(java.lang.String)|",
+      "|java+method:///com/ning/http/client/AsyncHttpClient$BoundRequestBuilder/setHeader(java.lang.String,java.lang.String)|",
+      "|java+method:///java/util/Set/iterator()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/asynchttpclient/ListenableFuture/addListener(java.lang.Runnable,java.util.concurrent.Executor)|",
+      "|java+method:///com/yahoo/pulsar/client/api/AuthenticationDataProvider/hasDataForHttp()|",
+      "|java+constructor:///com/yahoo/pulsar/client/impl/HttpClient$1/HttpClient$1(com.yahoo.pulsar.client.impl.HttpClient,java.lang.String,java.util.concurrent.CompletableFuture)|",
+      "|java+constructor:///java/net/URL/URL(java.net.URL,java.lang.String)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/net/URL/toString()|",
+      "|java+constructor:///java/util/concurrent/CompletableFuture/CompletableFuture()|",
+      "|java+method:///java/util/Set/iterator()|",
+      "|java+method:///java/util/Map$Entry/getValue()|",
+      "|java+method:///com/yahoo/pulsar/client/api/AuthenticationDataProvider/getHttpHeaders()|",
+      "|java+method:///java/lang/Exception/getMessage()|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/asynchttpclient/BoundRequestBuilder/setHeader(java.lang.CharSequence,java.lang.String)|",
+      "|java+method:///java/util/Map$Entry/getKey()|",
+      "|java+method:///com/google/common/util/concurrent/MoreExecutors/sameThreadExecutor()|",
+      "|java+constructor:///com/yahoo/pulsar/client/api/PulsarClientException/PulsarClientException(java.lang.Throwable)|",
+      "|java+method:///org/asynchttpclient/BoundRequestBuilder/execute(org.asynchttpclient.AsyncHandler)|",
+      "|java+method:///com/yahoo/pulsar/client/api/Authentication/getAuthData()|",
+      "|java+method:///org/asynchttpclient/AsyncHttpClient/prepareGet(java.lang.String)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/concurrent/CompletableFuture/completeExceptionally(java.lang.Throwable)|"
+    ],
+    "affectedLib": "org.asynchttpclient:async-http-client:2.0.19",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.yahoo.pulsar:pulsar-client:1.15.7",
+    "coordinatesV2": "com.yahoo.pulsar:pulsar-client:1.16",
+    "caller": "|java+method:///com/yahoo/pulsar/client/impl/ClientCnx/handleError(com.yahoo.pulsar.common.api.proto.PulsarApi$CommandError)|",
+    "called": "|java+method:///com/yahoo/pulsar/common/util/collections/ConcurrentLongHashMap/remove(long)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///com/yahoo/pulsar/common/api/proto/PulsarApi$CommandError/getMessage()|",
+      "|java+method:///com/yahoo/pulsar/common/api/proto/PulsarApi$CommandError/getError()|",
+      "|java+method:///com/yahoo/pulsar/client/impl/ClientCnx/getPulsarClientException(com.yahoo.pulsar.common.api.proto.PulsarApi$CommandError)|",
+      "|java+method:///io/netty/channel/ChannelHandlerContext/channel()|",
+      "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean)|",
+      "|java+method:///com/yahoo/pulsar/common/util/collections/ConcurrentLongHashMap/remove(long)|",
+      "|java+method:///java/util/concurrent/CompletableFuture/completeExceptionally(java.lang.Throwable)|",
+      "|java+method:///com/yahoo/pulsar/common/api/proto/PulsarApi$CommandError/getRequestId()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/yahoo/pulsar/client/impl/ClientCnx/getPulsarClientException(com.yahoo.pulsar.common.api.proto.PulsarApi$ServerError,java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///com/yahoo/pulsar/common/api/proto/PulsarApi$CommandError/getMessage()|",
+      "|java+method:///com/yahoo/pulsar/common/api/proto/PulsarApi$CommandError/getError()|",
+      "|java+method:///io/netty/channel/ChannelHandlerContext/channel()|",
+      "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean)|",
+      "|java+method:///com/yahoo/pulsar/common/util/collections/ConcurrentLongHashMap/remove(long)|",
+      "|java+method:///java/util/concurrent/CompletableFuture/completeExceptionally(java.lang.Throwable)|",
+      "|java+method:///com/yahoo/pulsar/common/api/proto/PulsarApi$CommandError/getRequestId()|"
+    ],
+    "affectedLib": "com.yahoo.pulsar:pulsar-common:1.16",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.yahoo.pulsar:pulsar-client:1.15.7",
+    "coordinatesV2": "com.yahoo.pulsar:pulsar-client:1.16",
+    "caller": "|java+method:///com/yahoo/pulsar/client/impl/PulsarClientImpl/getPartitionedTopicMetadata(java.lang.String)|",
+    "called": "|java+method:///com/yahoo/pulsar/common/naming/DestinationName/get(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///com/yahoo/pulsar/client/util/FutureUtil/failedFuture(java.lang.Throwable)|",
+      "|java+method:///com/yahoo/pulsar/client/impl/PartitionMetadataLookupService/getPartitionedTopicMetadata(com.yahoo.pulsar.common.naming.DestinationName)|",
+      "|java+method:///com/yahoo/pulsar/common/naming/DestinationName/get(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/yahoo/pulsar/client/impl/LookupService/getPartitionedTopicMetadata(com.yahoo.pulsar.common.naming.DestinationName)|",
+      "|java+method:///com/yahoo/pulsar/client/util/FutureUtil/failedFuture(java.lang.Throwable)|",
+      "|java+method:///com/yahoo/pulsar/common/naming/DestinationName/get(java.lang.String)|"
+    ],
+    "affectedLib": "com.yahoo.pulsar:pulsar-common:1.16",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.yahoo.pulsar:pulsar-client:1.15.7",
+    "coordinatesV2": "com.yahoo.pulsar:pulsar-client:1.16",
+    "caller": "|java+method:///com/yahoo/pulsar/client/impl/UnAckedMessageTracker$1/run(io.netty.util.Timeout)|",
+    "called": "|java+method:///com/yahoo/pulsar/common/util/collections/ConcurrentOpenHashSet/size()|",
+    "v1Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///com/yahoo/pulsar/common/util/collections/ConcurrentOpenHashSet/size()|",
+      "|java+method:///com/yahoo/pulsar/common/util/collections/ConcurrentOpenHashSet/clear()|",
+      "|java+method:///com/yahoo/pulsar/client/impl/ConsumerBase/redeliverUnacknowledgedMessages(java.util.List)|",
+      "|java+method:///com/yahoo/pulsar/client/impl/UnAckedMessageTracker/access$100(com.yahoo.pulsar.client.impl.UnAckedMessageTracker)|",
+      "|java+method:///com/yahoo/pulsar/client/impl/UnAckedMessageTracker/toggle()|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///com/yahoo/pulsar/client/impl/UnAckedMessageTracker/access$402(com.yahoo.pulsar.client.impl.UnAckedMessageTracker,io.netty.util.Timeout)|",
+      "|java+method:///io/netty/util/Timer/newTimeout(io.netty.util.TimerTask,long,java.util.concurrent.TimeUnit)|",
+      "|java+method:///com/yahoo/pulsar/common/util/collections/ConcurrentOpenHashSet/forEach(java.util.function.Consumer)|",
+      "|java+method:///com/yahoo/pulsar/client/impl/PulsarClientImpl/timer()|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///com/yahoo/pulsar/client/impl/UnAckedMessageTracker/access$300()|",
+      "|java+method:///com/yahoo/pulsar/client/impl/UnAckedMessageTracker/access$200(com.yahoo.pulsar.client.impl.UnAckedMessageTracker)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///com/yahoo/pulsar/common/util/collections/ConcurrentOpenHashSet/clear()|",
+      "|java+constructor:///java/util/HashSet/HashSet()|",
+      "|java+method:///com/yahoo/pulsar/client/impl/UnAckedMessageTracker/access$100(com.yahoo.pulsar.client.impl.UnAckedMessageTracker)|",
+      "|java+method:///com/yahoo/pulsar/client/impl/UnAckedMessageTracker/toggle()|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///com/yahoo/pulsar/client/impl/UnAckedMessageTracker/access$402(com.yahoo.pulsar.client.impl.UnAckedMessageTracker,io.netty.util.Timeout)|",
+      "|java+method:///io/netty/util/Timer/newTimeout(io.netty.util.TimerTask,long,java.util.concurrent.TimeUnit)|",
+      "|java+method:///com/yahoo/pulsar/common/util/collections/ConcurrentOpenHashSet/forEach(java.util.function.Consumer)|",
+      "|java+method:///com/yahoo/pulsar/common/util/collections/ConcurrentOpenHashSet/size()|",
+      "|java+method:///com/yahoo/pulsar/client/impl/ConsumerBase/redeliverUnacknowledgedMessages(java.util.Set)|",
+      "|java+method:///com/yahoo/pulsar/client/impl/PulsarClientImpl/timer()|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///com/yahoo/pulsar/client/impl/UnAckedMessageTracker/access$300()|",
+      "|java+method:///com/yahoo/pulsar/client/impl/UnAckedMessageTracker/access$200(com.yahoo.pulsar.client.impl.UnAckedMessageTracker)|"
+    ],
+    "affectedLib": "com.yahoo.pulsar:pulsar-common:1.16",
+    "change": "UPDATED"
+  }
+]

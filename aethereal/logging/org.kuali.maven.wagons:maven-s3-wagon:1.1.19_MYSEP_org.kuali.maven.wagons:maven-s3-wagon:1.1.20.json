@@ -1,0 +1,328 @@
+[
+  {
+    "coordinatesV1": "org.kuali.maven.wagons:maven-s3-wagon:1.1.19",
+    "coordinatesV2": "org.kuali.maven.wagons:maven-s3-wagon:1.1.20",
+    "caller": "|java+method:///org/kuali/maven/wagon/S3Wagon/getUploadStartMsg(int,long)|",
+    "called": "|java+method:///org/kuali/common/aws/s3/SimpleFormatter/getSize(long)|",
+    "v1Body": [
+      "|java+method:///org/kuali/maven/wagon/SimpleFormatter/getSize(long)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/kuali/common/aws/s3/SimpleFormatter/getSize(long)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "affectedLib": "org.kuali.common:kuali-s3:1.0.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.kuali.maven.wagons:maven-s3-wagon:1.1.19",
+    "coordinatesV2": "org.kuali.maven.wagons:maven-s3-wagon:1.1.20",
+    "caller": "|java+constructor:///org/kuali/maven/wagon/S3Wagon/S3Wagon()|",
+    "called": "|java+constructor:///org/kuali/common/aws/s3/SimpleFormatter/SimpleFormatter()|",
+    "v1Body": [
+      "|java+method:///com/amazonaws/services/s3/internal/Mimetypes/getInstance()|",
+      "|java+constructor:///org/kuali/common/threads/ThreadInvoker/ThreadInvoker()|",
+      "|java+method:///org/kuali/maven/wagon/AbstractWagon/addSessionListener(org.apache.maven.wagon.events.SessionListener)|",
+      "|java+method:///org/kuali/maven/wagon/S3Wagon/getDivisor()|",
+      "|java+constructor:///org/kuali/maven/wagon/S3Listener/S3Listener()|",
+      "|java+method:///org/kuali/maven/wagon/S3Wagon/getMinThreads()|",
+      "|java+method:///org/kuali/maven/wagon/AbstractWagon/addTransferListener(org.apache.maven.wagon.events.TransferListener)|",
+      "|java+constructor:///org/kuali/maven/wagon/AbstractWagon/AbstractWagon(boolean)|",
+      "|java+method:///org/kuali/maven/wagon/S3Wagon/getMaxThreads()|",
+      "|java+constructor:///org/kuali/maven/wagon/SimpleFormatter/SimpleFormatter()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/kuali/common/aws/s3/SimpleFormatter/SimpleFormatter()|",
+      "|java+method:///org/kuali/maven/wagon/S3Wagon/getMaxThreads()|",
+      "|java+method:///com/amazonaws/services/s3/internal/Mimetypes/getInstance()|",
+      "|java+constructor:///org/kuali/common/threads/ThreadInvoker/ThreadInvoker()|",
+      "|java+method:///org/kuali/maven/wagon/AbstractWagon/addSessionListener(org.apache.maven.wagon.events.SessionListener)|",
+      "|java+method:///org/kuali/maven/wagon/S3Wagon/getMinThreads()|",
+      "|java+method:///org/kuali/maven/wagon/AbstractWagon/addTransferListener(org.apache.maven.wagon.events.TransferListener)|",
+      "|java+constructor:///org/kuali/maven/wagon/AbstractWagon/AbstractWagon(boolean)|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///org/kuali/maven/wagon/S3Wagon/getDivisor()|",
+      "|java+method:///org/kuali/maven/wagon/S3Wagon/getValue(java.lang.String,java.lang.String)|",
+      "|java+constructor:///org/kuali/maven/wagon/S3Listener/S3Listener()|"
+    ],
+    "affectedLib": "org.kuali.common:kuali-s3:1.0.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.kuali.maven.wagons:maven-s3-wagon:1.1.19",
+    "coordinatesV2": "org.kuali.maven.wagons:maven-s3-wagon:1.1.20",
+    "caller": "|java+method:///org/kuali/maven/wagon/S3Wagon/getUploadCompleteMsg(long,long,long)|",
+    "called": "|java+method:///org/kuali/common/aws/s3/SimpleFormatter/getRate(long,long)|",
+    "v1Body": [
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/kuali/maven/wagon/SimpleFormatter/getTime(long)|",
+      "|java+method:///java/lang/StringBuilder/append(long)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/kuali/maven/wagon/SimpleFormatter/getRate(long,long)|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/kuali/common/aws/s3/SimpleFormatter/getTime(long)|",
+      "|java+method:///java/lang/StringBuilder/append(long)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/kuali/common/aws/s3/SimpleFormatter/getRate(long,long)|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "affectedLib": "org.kuali.common:kuali-s3:1.0.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.kuali.maven.wagons:maven-s3-wagon:1.1.19",
+    "coordinatesV2": "org.kuali.maven.wagons:maven-s3-wagon:1.1.20",
+    "caller": "|java+constructor:///org/kuali/maven/wagon/S3Listener/S3Listener()|",
+    "called": "|java+constructor:///org/kuali/common/aws/s3/SimpleFormatter/SimpleFormatter()|",
+    "v1Body": [
+      "|java+constructor:///org/kuali/maven/wagon/SimpleFormatter/SimpleFormatter()|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+constructor:///org/kuali/maven/wagon/SessionTracker/SessionTracker()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/kuali/common/aws/s3/SimpleFormatter/SimpleFormatter()|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+constructor:///org/kuali/maven/wagon/SessionTracker/SessionTracker()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "org.kuali.common:kuali-s3:1.0.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.kuali.maven.wagons:maven-s3-wagon:1.1.19",
+    "coordinatesV2": "org.kuali.maven.wagons:maven-s3-wagon:1.1.20",
+    "caller": "|java+constructor:///org/kuali/maven/wagon/SessionTracker/SessionTracker()|",
+    "called": "|java+constructor:///org/kuali/common/aws/s3/SimpleFormatter/SimpleFormatter()|",
+    "v1Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+constructor:///org/kuali/maven/wagon/SimpleFormatter/SimpleFormatter()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+constructor:///org/kuali/common/aws/s3/SimpleFormatter/SimpleFormatter()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "org.kuali.common:kuali-s3:1.0.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.kuali.maven.wagons:maven-s3-wagon:1.1.19",
+    "coordinatesV2": "org.kuali.maven.wagons:maven-s3-wagon:1.1.20",
+    "caller": "|java+method:///org/kuali/maven/wagon/TransferTracker/toString()|",
+    "called": "|java+method:///org/kuali/common/aws/s3/SimpleFormatter/getSize(long)|",
+    "v1Body": [
+      "|java+method:///org/kuali/maven/wagon/SimpleFormatter/getSize(long)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/kuali/maven/wagon/SimpleFormatter/getTime(long)|",
+      "|java+method:///java/lang/StringBuffer/toString()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuffer/append(java.lang.String)|",
+      "|java+method:///org/kuali/maven/wagon/SimpleFormatter/getRate(long,long)|",
+      "|java+constructor:///java/lang/StringBuffer/StringBuffer()|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/kuali/common/aws/s3/SimpleFormatter/getSize(long)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/kuali/common/aws/s3/SimpleFormatter/getTime(long)|",
+      "|java+method:///java/lang/StringBuffer/toString()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuffer/append(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/kuali/common/aws/s3/SimpleFormatter/getRate(long,long)|",
+      "|java+constructor:///java/lang/StringBuffer/StringBuffer()|"
+    ],
+    "affectedLib": "org.kuali.common:kuali-s3:1.0.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.kuali.maven.wagons:maven-s3-wagon:1.1.19",
+    "coordinatesV2": "org.kuali.maven.wagons:maven-s3-wagon:1.1.20",
+    "caller": "|java+constructor:///org/kuali/maven/wagon/TransferTracker/TransferTracker()|",
+    "called": "|java+constructor:///org/kuali/common/aws/s3/SimpleFormatter/SimpleFormatter()|",
+    "v1Body": [
+      "|java+constructor:///org/kuali/maven/wagon/SimpleFormatter/SimpleFormatter()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/kuali/common/aws/s3/SimpleFormatter/SimpleFormatter()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "org.kuali.common:kuali-s3:1.0.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.kuali.maven.wagons:maven-s3-wagon:1.1.19",
+    "coordinatesV2": "org.kuali.maven.wagons:maven-s3-wagon:1.1.20",
+    "caller": "|java+method:///org/kuali/maven/wagon/FileHandler/handleElement(org.kuali.common.threads.ListIteratorContext,int,org.kuali.maven.wagon.PutFileContext)|",
+    "called": "|java+method:///org/kuali/common/aws/s3/S3Utils/getInstance()|",
+    "v1Body": [
+      "|java+method:///org/kuali/maven/wagon/S3Utils/upload(java.io.File,com.amazonaws.services.s3.model.PutObjectRequest,com.amazonaws.services.s3.AmazonS3Client,com.amazonaws.services.s3.transfer.TransferManager)|",
+      "|java+method:///org/kuali/maven/wagon/PutFileContext/getClient()|",
+      "|java+method:///org/kuali/maven/wagon/PutFileContext/getTransferManager()|",
+      "|java+method:///org/kuali/maven/wagon/PutFileContext/getFactory()|",
+      "|java+method:///org/kuali/maven/wagon/RequestFactory/getPutObjectRequest(org.kuali.maven.wagon.PutFileContext)|",
+      "|java+method:///org/kuali/maven/wagon/PutFileContext/getSource()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/kuali/common/aws/s3/S3Utils/upload(java.io.File,com.amazonaws.services.s3.model.PutObjectRequest,com.amazonaws.services.s3.AmazonS3Client,com.amazonaws.services.s3.transfer.TransferManager)|",
+      "|java+method:///org/kuali/common/aws/s3/S3Utils/getInstance()|",
+      "|java+method:///org/kuali/maven/wagon/PutFileContext/getClient()|",
+      "|java+method:///org/kuali/maven/wagon/PutFileContext/getTransferManager()|",
+      "|java+method:///org/kuali/maven/wagon/PutFileContext/getFactory()|",
+      "|java+method:///org/kuali/maven/wagon/RequestFactory/getPutObjectRequest(org.kuali.maven.wagon.PutFileContext)|",
+      "|java+method:///org/kuali/maven/wagon/PutFileContext/getSource()|"
+    ],
+    "affectedLib": "org.kuali.common:kuali-s3:1.0.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.kuali.maven.wagons:maven-s3-wagon:1.1.19",
+    "coordinatesV2": "org.kuali.maven.wagons:maven-s3-wagon:1.1.20",
+    "caller": "|java+method:///org/kuali/maven/wagon/S3Listener/sessionDisconnected(org.apache.maven.wagon.events.SessionEvent)|",
+    "called": "|java+method:///org/kuali/common/aws/s3/SimpleFormatter/getSize(long)|",
+    "v1Body": [
+      "|java+method:///org/kuali/maven/wagon/SessionTracker/addSessionEvent(org.apache.maven.wagon.events.SessionEvent)|",
+      "|java+method:///org/kuali/maven/wagon/SimpleFormatter/getSize(long)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/kuali/maven/wagon/SessionTracker/getOpened()|",
+      "|java+method:///org/kuali/maven/wagon/SessionTracker/setDisconnected(long)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String)|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///org/kuali/maven/wagon/SimpleFormatter/getTime(long)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/System/currentTimeMillis()|",
+      "|java+method:///org/kuali/maven/wagon/SimpleFormatter/getRate(long,long)|",
+      "|java+method:///org/kuali/maven/wagon/SessionTracker/getTransfers()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/kuali/maven/wagon/TransferTracker/getByteCount()|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///org/kuali/maven/wagon/SessionTracker/getDisconnected()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/kuali/maven/wagon/SessionTracker/getOpened()|",
+      "|java+method:///org/kuali/maven/wagon/SessionTracker/setDisconnected(long)|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/System/currentTimeMillis()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/kuali/maven/wagon/SessionTracker/addSessionEvent(org.apache.maven.wagon.events.SessionEvent)|",
+      "|java+method:///org/kuali/common/aws/s3/SimpleFormatter/getSize(long)|",
+      "|java+method:///org/kuali/maven/wagon/TransferTracker/getByteCount()|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+method:///org/kuali/common/aws/s3/SimpleFormatter/getTime(long)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///org/kuali/maven/wagon/SessionTracker/getDisconnected()|",
+      "|java+method:///org/kuali/common/aws/s3/SimpleFormatter/getRate(long,long)|",
+      "|java+method:///org/kuali/maven/wagon/SessionTracker/getTransfers()|"
+    ],
+    "affectedLib": "org.kuali.common:kuali-s3:1.0.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.kuali.maven.wagons:maven-s3-wagon:1.1.19",
+    "coordinatesV2": "org.kuali.maven.wagons:maven-s3-wagon:1.1.20",
+    "caller": "|java+method:///org/kuali/maven/wagon/S3Wagon/putResource(java.io.File,java.lang.String,org.kuali.maven.wagon.TransferProgress)|",
+    "called": "|java+method:///org/kuali/common/aws/s3/S3Utils/getInstance()|",
+    "v1Body": [
+      "|java+method:///org/kuali/maven/wagon/S3Utils/upload(java.io.File,com.amazonaws.services.s3.model.PutObjectRequest,com.amazonaws.services.s3.AmazonS3Client,com.amazonaws.services.s3.transfer.TransferManager)|",
+      "|java+method:///org/kuali/maven/wagon/S3Wagon/getPutObjectRequest(java.io.File,java.lang.String,org.kuali.maven.wagon.TransferProgress)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/kuali/common/aws/s3/S3Utils/upload(java.io.File,com.amazonaws.services.s3.model.PutObjectRequest,com.amazonaws.services.s3.AmazonS3Client,com.amazonaws.services.s3.transfer.TransferManager)|",
+      "|java+method:///org/kuali/common/aws/s3/S3Utils/getInstance()|",
+      "|java+method:///org/kuali/maven/wagon/S3Wagon/getPutObjectRequest(java.io.File,java.lang.String,org.kuali.maven.wagon.TransferProgress)|"
+    ],
+    "affectedLib": "org.kuali.common:kuali-s3:1.0.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.kuali.maven.wagons:maven-s3-wagon:1.1.19",
+    "coordinatesV2": "org.kuali.maven.wagons:maven-s3-wagon:1.1.20",
+    "caller": "|java+method:///org/kuali/maven/wagon/S3Wagon/connectToRepository(org.apache.maven.wagon.repository.Repository,org.apache.maven.wagon.authentication.AuthenticationInfo,org.apache.maven.wagon.proxy.ProxyInfo)|",
+    "called": "|java+constructor:///com/amazonaws/services/s3/transfer/TransferManager/TransferManager(com.amazonaws.auth.AWSCredentials)|",
+    "v1Body": [
+      "|java+constructor:///com/amazonaws/services/s3/AmazonS3Client/AmazonS3Client(com.amazonaws.auth.AWSCredentials)|",
+      "|java+method:///com/amazonaws/services/s3/model/CannedAccessControlList/name()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/maven/wagon/repository/Repository/getHost()|",
+      "|java+method:///org/kuali/maven/wagon/S3Wagon/getAclFromRepository(org.apache.maven.wagon.repository.Repository)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/kuali/maven/wagon/S3Wagon/ensureBucketExists(com.amazonaws.services.s3.AmazonS3Client,java.lang.String)|",
+      "|java+constructor:///com/amazonaws/services/s3/transfer/TransferManager/TransferManager(com.amazonaws.auth.AWSCredentials)|",
+      "|java+method:///org/kuali/maven/wagon/S3Wagon/getBaseDir(org.apache.maven.wagon.repository.Repository)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/kuali/maven/wagon/S3Wagon/getCredentials(org.apache.maven.wagon.authentication.AuthenticationInfo)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/amazonaws/services/s3/model/CannedAccessControlList/name()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/maven/wagon/repository/Repository/getHost()|",
+      "|java+method:///org/kuali/maven/wagon/S3Wagon/getAclFromRepository(org.apache.maven.wagon.repository.Repository)|",
+      "|java+method:///org/kuali/maven/wagon/S3Wagon/getAmazonS3Client(com.amazonaws.auth.AWSCredentials)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/kuali/maven/wagon/S3Wagon/validateBucket(com.amazonaws.services.s3.AmazonS3Client,java.lang.String)|",
+      "|java+constructor:///com/amazonaws/services/s3/transfer/TransferManager/TransferManager(com.amazonaws.auth.AWSCredentials)|",
+      "|java+method:///org/kuali/maven/wagon/S3Wagon/getBaseDir(org.apache.maven.wagon.repository.Repository)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/kuali/maven/wagon/S3Wagon/getCredentials(org.apache.maven.wagon.authentication.AuthenticationInfo)|"
+    ],
+    "affectedLib": "com.amazonaws:aws-java-sdk:1.4.2",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.kuali.maven.wagons:maven-s3-wagon:1.1.19",
+    "coordinatesV2": "org.kuali.maven.wagons:maven-s3-wagon:1.1.20",
+    "caller": "|java+constructor:///org/kuali/maven/wagon/S3Wagon/S3Wagon()|",
+    "called": "|java+method:///com/amazonaws/services/s3/internal/Mimetypes/getInstance()|",
+    "v1Body": [
+      "|java+method:///com/amazonaws/services/s3/internal/Mimetypes/getInstance()|",
+      "|java+constructor:///org/kuali/common/threads/ThreadInvoker/ThreadInvoker()|",
+      "|java+method:///org/kuali/maven/wagon/AbstractWagon/addSessionListener(org.apache.maven.wagon.events.SessionListener)|",
+      "|java+method:///org/kuali/maven/wagon/S3Wagon/getDivisor()|",
+      "|java+constructor:///org/kuali/maven/wagon/S3Listener/S3Listener()|",
+      "|java+method:///org/kuali/maven/wagon/S3Wagon/getMinThreads()|",
+      "|java+method:///org/kuali/maven/wagon/AbstractWagon/addTransferListener(org.apache.maven.wagon.events.TransferListener)|",
+      "|java+constructor:///org/kuali/maven/wagon/AbstractWagon/AbstractWagon(boolean)|",
+      "|java+method:///org/kuali/maven/wagon/S3Wagon/getMaxThreads()|",
+      "|java+constructor:///org/kuali/maven/wagon/SimpleFormatter/SimpleFormatter()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/kuali/common/aws/s3/SimpleFormatter/SimpleFormatter()|",
+      "|java+method:///org/kuali/maven/wagon/S3Wagon/getMaxThreads()|",
+      "|java+method:///com/amazonaws/services/s3/internal/Mimetypes/getInstance()|",
+      "|java+constructor:///org/kuali/common/threads/ThreadInvoker/ThreadInvoker()|",
+      "|java+method:///org/kuali/maven/wagon/AbstractWagon/addSessionListener(org.apache.maven.wagon.events.SessionListener)|",
+      "|java+method:///org/kuali/maven/wagon/S3Wagon/getMinThreads()|",
+      "|java+method:///org/kuali/maven/wagon/AbstractWagon/addTransferListener(org.apache.maven.wagon.events.TransferListener)|",
+      "|java+constructor:///org/kuali/maven/wagon/AbstractWagon/AbstractWagon(boolean)|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///org/kuali/maven/wagon/S3Wagon/getDivisor()|",
+      "|java+method:///org/kuali/maven/wagon/S3Wagon/getValue(java.lang.String,java.lang.String)|",
+      "|java+constructor:///org/kuali/maven/wagon/S3Listener/S3Listener()|"
+    ],
+    "affectedLib": "com.amazonaws:aws-java-sdk:1.4.2",
+    "change": "UPDATED"
+  }
+]

@@ -1,0 +1,49 @@
+[
+  {
+    "coordinatesV1": "io.apigee.trireme:trireme-net:0.8.6",
+    "coordinatesV2": "io.apigee.trireme:trireme-net:0.8.8",
+    "caller": "|java+method:///io/apigee/trireme/container/netty/NettyHttpRequest/resume()|",
+    "called": "|java+method:///io/apigee/trireme/net/spi/PauseHelper/resume()|",
+    "v1Body": [
+      "|java+method:///io/netty/channel/socket/SocketChannelConfig/setAutoRead(boolean)|",
+      "|java+method:///io/netty/channel/socket/SocketChannel/config()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+method:///io/apigee/trireme/net/spi/PauseHelper/resume()|"
+    ],
+    "affectedLib": "io.apigee.trireme:trireme-core:0.8.8",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.apigee.trireme:trireme-net:0.8.6",
+    "coordinatesV2": "io.apigee.trireme:trireme-net:0.8.8",
+    "caller": "|java+method:///io/apigee/trireme/container/netty/NettyHttpRequest/pause()|",
+    "called": "|java+method:///io/apigee/trireme/net/spi/PauseHelper/pause()|",
+    "v1Body": [
+      "|java+method:///io/netty/channel/socket/SocketChannelConfig/setAutoRead(boolean)|",
+      "|java+method:///io/netty/channel/socket/SocketChannel/config()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+method:///io/apigee/trireme/net/spi/PauseHelper/pause()|"
+    ],
+    "affectedLib": "io.apigee.trireme:trireme-core:0.8.8",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.apigee.trireme:trireme-net:0.8.6",
+    "coordinatesV2": "io.apigee.trireme:trireme-net:0.8.8",
+    "caller": "|java+constructor:///io/apigee/trireme/container/netty/NettyHttpRequest/NettyHttpRequest(io.netty.handler.codec.http.HttpRequest,io.netty.channel.socket.SocketChannel)|",
+    "called": "|java+constructor:///io/apigee/trireme/net/spi/PauseHelper/PauseHelper(io.apigee.trireme.net.spi.PauseHelper$FlowControl,int)|",
+    "v1Body": [
+      "|java+constructor:///io/apigee/trireme/container/netty/NettyHttpMessage/NettyHttpMessage(io.netty.handler.codec.http.HttpMessage,io.netty.channel.socket.SocketChannel)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///io/apigee/trireme/net/spi/PauseHelper/PauseHelper(io.apigee.trireme.net.spi.PauseHelper$FlowControl,int)|",
+      "|java+constructor:///io/apigee/trireme/container/netty/NettyHttpMessage/NettyHttpMessage(io.netty.handler.codec.http.HttpMessage,io.netty.channel.socket.SocketChannel)|"
+    ],
+    "affectedLib": "io.apigee.trireme:trireme-core:0.8.8",
+    "change": "UPDATED"
+  }
+]

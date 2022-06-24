@@ -1,0 +1,29 @@
+[
+  {
+    "coordinatesV1": "org.sonatype.nexus:nexus-logging-extras:2.1.2",
+    "coordinatesV2": "org.sonatype.nexus:nexus-logging-extras:2.2",
+    "caller": "|java+method:///org/sonatype/nexus/log/internal/LogbackLogManager/injectAppenders()|",
+    "called": "|java+method:///org/sonatype/nexus/logback/ForwardingAppender/installEventTarget(org.sonatype.nexus.logback.EventTarget)|",
+    "v1Body": [
+      "|java+method:///ch/qos/logback/classic/Logger/iteratorForAppenders()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///ch/qos/logback/classic/LoggerContext/getLoggerList()|",
+      "|java+method:///com/google/inject/Injector/injectMembers(java.lang.Object)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/slf4j/LoggerFactory/getILoggerFactory()|",
+      "|java+method:///java/util/List/iterator()|"
+    ],
+    "v2Body": [
+      "|java+method:///ch/qos/logback/classic/Logger/iteratorForAppenders()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/sonatype/nexus/logback/ForwardingAppender/installEventTarget(org.sonatype.nexus.logback.EventTarget)|",
+      "|java+method:///ch/qos/logback/classic/LoggerContext/getLoggerList()|",
+      "|java+method:///com/google/inject/Injector/injectMembers(java.lang.Object)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/slf4j/LoggerFactory/getILoggerFactory()|",
+      "|java+method:///java/util/List/iterator()|"
+    ],
+    "affectedLib": "org.sonatype.nexus:nexus-logging-extras-appender:2.2",
+    "change": "ADDED"
+  }
+]

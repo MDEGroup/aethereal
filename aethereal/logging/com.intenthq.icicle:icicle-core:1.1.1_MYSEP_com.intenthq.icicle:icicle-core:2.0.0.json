@@ -1,0 +1,192 @@
+[
+  {
+    "coordinatesV1": "com.intenthq.icicle:icicle-core:2.0.0",
+    "coordinatesV2": "com.intenthq.icicle:icicle-core:1.1.1",
+    "caller": "|java+constructor:///com/intenthq/icicle/redis/IcicleRedisResponse/IcicleRedisResponse(java.util.List)|",
+    "called": "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///java/lang/Long/longValue()|",
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object)|",
+      "|java+method:///java/util/List/get(int)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Long/longValue()|",
+      "|java+method:///java/util/List/get(int)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "com.google.guava:guava:17.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.intenthq.icicle:icicle-core:2.0.0",
+    "coordinatesV2": "com.intenthq.icicle:icicle-core:1.1.1",
+    "caller": "|java+method:///com/intenthq/icicle/IcicleIdGenerator/generateId()|",
+    "called": "|java+method:///com/google/common/base/Optional/of(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///com/google/common/base/Optional/get()|",
+      "|java+method:///com/google/common/base/Optional/of(java.lang.Object)|",
+      "|java+method:///java/util/List/get(int)|",
+      "|java+method:///com/google/common/base/Optional/absent()|",
+      "|java+method:///com/google/common/base/Optional/isPresent()|",
+      "|java+method:///com/intenthq/icicle/IcicleIdGenerator/generateIdBatch(long)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/intenthq/icicle/IcicleIdGenerator/generateIdBatch(long)|",
+      "|java+method:///java/util/Optional/get()|",
+      "|java+method:///java/util/Optional/of(java.lang.Object)|",
+      "|java+method:///java/util/Optional/isPresent()|",
+      "|java+method:///java/util/Optional/empty()|",
+      "|java+method:///java/util/List/get(int)|"
+    ],
+    "affectedLib": "com.google.guava:guava:17.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.intenthq.icicle:icicle-core:2.0.0",
+    "coordinatesV2": "com.intenthq.icicle:icicle-core:1.1.1",
+    "caller": "|java+constructor:///com/intenthq/icicle/redis/RoundRobinRedisPool/RoundRobinRedisPool(java.util.List)|",
+    "called": "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object)|",
+      "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/List/isEmpty()|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "com.google.guava:guava:17.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.intenthq.icicle:icicle-core:2.0.0",
+    "coordinatesV2": "com.intenthq.icicle:icicle-core:1.1.1",
+    "caller": "|java+method:///com/intenthq/icicle/IcicleIdGenerator/generateIdsUsingRedis(com.intenthq.icicle.redis.Redis,long)|",
+    "called": "|java+method:///com/google/common/base/Optional/of(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///com/intenthq/icicle/redis/IcicleRedisResponse/getStartSequence()|",
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///com/intenthq/icicle/IcicleIdGenerator/executeOrLoadLuaScript(com.intenthq.icicle.redis.Redis,long)|",
+      "|java+method:///com/google/common/base/Optional/get()|",
+      "|java+method:///com/intenthq/icicle/redis/IcicleRedisResponse/getLogicalShardId()|",
+      "|java+method:///com/google/common/base/Optional/of(java.lang.Object)|",
+      "|java+method:///com/intenthq/icicle/IcicleIdGenerator/validateLogicalShardId(long)|",
+      "|java+method:///com/intenthq/icicle/redis/IcicleRedisResponse/getTimeSeconds()|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///com/intenthq/icicle/redis/IcicleRedisResponse/getEndSequence()|",
+      "|java+constructor:///com/intenthq/icicle/Id/Id(long,long)|",
+      "|java+method:///com/google/common/base/Optional/absent()|",
+      "|java+method:///com/google/common/base/Optional/isPresent()|",
+      "|java+method:///com/intenthq/icicle/redis/IcicleRedisResponse/getTimeMicroseconds()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/intenthq/icicle/redis/IcicleRedisResponse/getTimeMicroseconds()|",
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///com/intenthq/icicle/IcicleIdGenerator/executeOrLoadLuaScript(com.intenthq.icicle.redis.Redis,long)|",
+      "|java+method:///com/intenthq/icicle/redis/IcicleRedisResponse/getLogicalShardId()|",
+      "|java+method:///com/intenthq/icicle/IcicleIdGenerator/validateLogicalShardId(long)|",
+      "|java+method:///java/util/Optional/of(java.lang.Object)|",
+      "|java+method:///com/intenthq/icicle/redis/IcicleRedisResponse/getTimeSeconds()|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///java/util/Optional/empty()|",
+      "|java+method:///com/intenthq/icicle/redis/IcicleRedisResponse/getEndSequence()|",
+      "|java+method:///java/util/Optional/get()|",
+      "|java+method:///com/intenthq/icicle/redis/IcicleRedisResponse/getStartSequence()|",
+      "|java+constructor:///com/intenthq/icicle/Id/Id(long,long)|",
+      "|java+method:///java/util/Optional/isPresent()|"
+    ],
+    "affectedLib": "com.google.guava:guava:17.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.intenthq.icicle:icicle-core:2.0.0",
+    "coordinatesV2": "com.intenthq.icicle:icicle-core:1.1.1",
+    "caller": "|java+method:///com/intenthq/icicle/IcicleIdGenerator/generateIdBatch(long)|",
+    "called": "|java+method:///com/google/common/base/Optional/absent()|",
+    "v1Body": [
+      "|java+method:///java/lang/Thread/sleep(long)|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///com/intenthq/icicle/IcicleIdGenerator/generateIdsUsingRedis(com.intenthq.icicle.redis.Redis,long)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Object)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///com/intenthq/icicle/redis/RoundRobinRedisPool/getNextRedis()|",
+      "|java+method:///com/intenthq/icicle/IcicleIdGenerator/validateBatchSize(long)|",
+      "|java+method:///com/google/common/base/Optional/absent()|",
+      "|java+method:///com/google/common/base/Optional/isPresent()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Thread/sleep(long)|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///com/intenthq/icicle/IcicleIdGenerator/generateIdsUsingRedis(com.intenthq.icicle.redis.Redis,long)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Object)|",
+      "|java+method:///com/intenthq/icicle/redis/RoundRobinRedisPool/getNextRedis()|",
+      "|java+method:///com/intenthq/icicle/IcicleIdGenerator/validateBatchSize(long)|",
+      "|java+method:///java/util/Optional/isPresent()|",
+      "|java+method:///java/util/Optional/empty()|",
+      "|java+method:///java/lang/Integer/valueOf(int)|"
+    ],
+    "affectedLib": "com.google.guava:guava:17.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.intenthq.icicle:icicle-core:2.0.0",
+    "coordinatesV2": "com.intenthq.icicle:icicle-core:1.1.1",
+    "caller": "|java+method:///com/intenthq/icicle/redis/IcicleRedisResponse/equals(java.lang.Object)|",
+    "called": "|java+method:///org/apache/commons/lang3/builder/EqualsBuilder/reflectionEquals(java.lang.Object,java.lang.Object,java.lang.String%5B%5D)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/lang3/builder/EqualsBuilder/reflectionEquals(java.lang.Object,java.lang.Object,java.lang.String%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/intenthq/icicle/redis/IcicleRedisResponse/getTimeMicroseconds()|",
+      "|java+method:///com/intenthq/icicle/redis/IcicleRedisResponse/getStartSequence()|",
+      "|java+method:///java/util/Objects/equals(java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///com/intenthq/icicle/redis/IcicleRedisResponse/getLogicalShardId()|",
+      "|java+method:///com/intenthq/icicle/redis/IcicleRedisResponse/getTimeSeconds()|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///com/intenthq/icicle/redis/IcicleRedisResponse/getEndSequence()|"
+    ],
+    "affectedLib": "org.apache.commons:commons-lang3:3.0.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.intenthq.icicle:icicle-core:2.0.0",
+    "coordinatesV2": "com.intenthq.icicle:icicle-core:1.1.1",
+    "caller": "|java+method:///com/intenthq/icicle/redis/IcicleRedisResponse/hashCode()|",
+    "called": "|java+method:///org/apache/commons/lang3/builder/HashCodeBuilder/reflectionHashCode(java.lang.Object,java.lang.String%5B%5D)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/lang3/builder/HashCodeBuilder/reflectionHashCode(java.lang.Object,java.lang.String%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///java/util/Objects/hash(java.lang.Object%5B%5D)|"
+    ],
+    "affectedLib": "org.apache.commons:commons-lang3:3.0.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.intenthq.icicle:icicle-core:2.0.0",
+    "coordinatesV2": "com.intenthq.icicle:icicle-core:1.1.1",
+    "caller": "|java+constructor:///com/intenthq/icicle/IcicleIdGenerator/IcicleIdGenerator(com.intenthq.icicle.redis.RoundRobinRedisPool,int)|",
+    "called": "|java+method:///org/apache/commons/io/IOUtils/toString(java.io.InputStream,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/lang/Class/getResourceAsStream(java.lang.String)|",
+      "|java+constructor:///com/intenthq/icicle/exception/LuaScriptFailedToLoadException/LuaScriptFailedToLoadException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/apache/commons/codec/digest/DigestUtils/sha(java.lang.String)|",
+      "|java+method:///org/apache/commons/io/IOUtils/toString(java.io.InputStream,java.lang.String)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///org/apache/commons/codec/binary/Hex/encodeHexString(byte%5B%5D)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/intenthq/icicle/IcicleIdGenerator/IcicleIdGenerator(com.intenthq.icicle.redis.RoundRobinRedisPool,int,long)|"
+    ],
+    "affectedLib": "commons-io:commons-io:2.4",
+    "change": "REMOVED"
+  }
+]

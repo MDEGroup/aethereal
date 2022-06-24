@@ -1,0 +1,123 @@
+[
+  {
+    "coordinatesV1": "org.broadleafcommerce:broadleaf-common:1.6.2-GA",
+    "coordinatesV2": "org.broadleafcommerce:broadleaf-common:2.0.0-GA",
+    "caller": "|java+constructor:///org/broadleafcommerce/common/config/RuntimeEnvironmentPropertiesConfigurer/RuntimeEnvironmentPropertiesConfigurer()|",
+    "called": "|java+constructor:///org/springframework/beans/factory/config/PropertyPlaceholderConfigurer/PropertyPlaceholderConfigurer()|",
+    "v1Body": [
+      "|java+method:///java/util/Collections/emptySet()|",
+      "|java+constructor:///org/springframework/beans/factory/config/PropertyPlaceholderConfigurer/PropertyPlaceholderConfigurer()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Collections/emptySet()|",
+      "|java+method:///org/broadleafcommerce/common/config/RuntimeEnvironmentPropertiesConfigurer/setIgnoreUnresolvablePlaceholders(boolean)|",
+      "|java+constructor:///org/springframework/beans/factory/config/PropertyPlaceholderConfigurer/PropertyPlaceholderConfigurer()|"
+    ],
+    "affectedLib": "org.springframework:spring-beans:3.1.1.RELEASE",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.broadleafcommerce:broadleaf-common:1.6.2-GA",
+    "coordinatesV2": "org.broadleafcommerce:broadleaf-common:2.0.0-GA",
+    "caller": "|java+method:///org/broadleafcommerce/common/email/service/message/MessageCreator$1/prepare(javax.mail.internet.MimeMessage)|",
+    "called": "|java+constructor:///org/springframework/mail/javamail/MimeMessageHelper/MimeMessageHelper(javax.mail.internet.MimeMessage,boolean)|",
+    "v1Body": [
+      "|java+method:///org/broadleafcommerce/common/email/service/info/EmailInfo/getMessageBody()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/broadleafcommerce/common/email/service/message/Attachment/getFilename()|",
+      "|java+method:///org/broadleafcommerce/common/email/service/message/EmailPropertyType/getType()|",
+      "|java+method:///org/springframework/mail/javamail/MimeMessageHelper/addAttachment(java.lang.String,javax.activation.DataSource)|",
+      "|java+method:///org/broadleafcommerce/common/email/service/message/MessageCreator/access$000(org.broadleafcommerce.common.email.service.message.MessageCreator)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/springframework/mail/javamail/MimeMessageHelper/setSubject(java.lang.String)|",
+      "|java+method:///java/util/HashMap/clone()|",
+      "|java+method:///java/util/HashMap/get(java.lang.Object)|",
+      "|java+method:///org/springframework/mail/javamail/MimeMessageHelper/setTo(java.lang.String)|",
+      "|java+method:///org/broadleafcommerce/common/email/service/info/EmailInfo/getFromAddress()|",
+      "|java+method:///org/springframework/mail/javamail/MimeMessageHelper/setCc(java.lang.String%5B%5D)|",
+      "|java+constructor:///org/springframework/mail/javamail/MimeMessageHelper/MimeMessageHelper(javax.mail.internet.MimeMessage,boolean)|",
+      "|java+method:///org/broadleafcommerce/common/email/service/info/EmailInfo/getSubject()|",
+      "|java+method:///org/broadleafcommerce/common/email/service/info/EmailInfo/getAttachments()|",
+      "|java+method:///org/springframework/mail/javamail/MimeMessageHelper/setBcc(java.lang.String%5B%5D)|",
+      "|java+method:///org/broadleafcommerce/common/email/service/message/Attachment/getData()|",
+      "|java+method:///org/springframework/ui/velocity/VelocityEngineUtils/mergeTemplateIntoString(org.apache.velocity.app.VelocityEngine,java.lang.String,java.util.Map)|",
+      "|java+method:///org/broadleafcommerce/common/email/service/message/MessageCreator/access$100(org.broadleafcommerce.common.email.service.message.MessageCreator)|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///org/broadleafcommerce/common/email/service/info/EmailInfo/getEmailTemplate()|",
+      "|java+method:///org/springframework/mail/javamail/MimeMessageHelper/setFrom(java.lang.String)|",
+      "|java+method:///org/broadleafcommerce/common/email/service/message/Attachment/getMimeType()|",
+      "|java+method:///org/broadleafcommerce/common/email/domain/EmailTarget/getEmailAddress()|",
+      "|java+method:///org/springframework/mail/javamail/MimeMessageHelper/setText(java.lang.String,boolean)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+constructor:///javax/mail/util/ByteArrayDataSource/ByteArrayDataSource(byte%5B%5D,java.lang.String)|",
+      "|java+method:///org/broadleafcommerce/common/email/domain/EmailTarget/getCCAddresses()|",
+      "|java+method:///java/util/HashMap/putAll(java.util.Map)|",
+      "|java+method:///org/broadleafcommerce/common/email/domain/EmailTarget/getBCCAddresses()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/broadleafcommerce/common/email/service/info/EmailInfo/getMessageBody()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/broadleafcommerce/common/email/service/message/Attachment/getFilename()|",
+      "|java+method:///org/broadleafcommerce/common/email/service/message/Attachment/getData()|",
+      "|java+method:///org/broadleafcommerce/common/email/service/message/EmailPropertyType/getType()|",
+      "|java+method:///org/springframework/mail/javamail/MimeMessageHelper/addAttachment(java.lang.String,javax.activation.DataSource)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/springframework/mail/javamail/MimeMessageHelper/setSubject(java.lang.String)|",
+      "|java+method:///org/broadleafcommerce/common/email/domain/EmailTarget/getBCCAddresses()|",
+      "|java+method:///java/util/HashMap/get(java.lang.Object)|",
+      "|java+method:///org/springframework/mail/javamail/MimeMessageHelper/setTo(java.lang.String)|",
+      "|java+method:///org/broadleafcommerce/common/email/service/info/EmailInfo/getFromAddress()|",
+      "|java+method:///org/springframework/mail/javamail/MimeMessageHelper/setCc(java.lang.String%5B%5D)|",
+      "|java+constructor:///org/springframework/mail/javamail/MimeMessageHelper/MimeMessageHelper(javax.mail.internet.MimeMessage,boolean)|",
+      "|java+method:///org/broadleafcommerce/common/email/service/message/MessageCreator/buildMessageBody(org.broadleafcommerce.common.email.service.info.EmailInfo,java.util.HashMap)|",
+      "|java+method:///org/broadleafcommerce/common/email/service/info/EmailInfo/getSubject()|",
+      "|java+method:///org/broadleafcommerce/common/email/service/info/EmailInfo/getAttachments()|",
+      "|java+method:///org/springframework/mail/javamail/MimeMessageHelper/setBcc(java.lang.String%5B%5D)|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///org/springframework/mail/javamail/MimeMessageHelper/setFrom(java.lang.String)|",
+      "|java+method:///org/broadleafcommerce/common/email/service/message/Attachment/getMimeType()|",
+      "|java+method:///org/broadleafcommerce/common/email/domain/EmailTarget/getEmailAddress()|",
+      "|java+method:///org/springframework/mail/javamail/MimeMessageHelper/setText(java.lang.String,boolean)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+constructor:///javax/mail/util/ByteArrayDataSource/ByteArrayDataSource(byte%5B%5D,java.lang.String)|",
+      "|java+method:///org/broadleafcommerce/common/email/domain/EmailTarget/getCCAddresses()|"
+    ],
+    "affectedLib": "org.springframework:spring-context-support:3.1.1.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.broadleafcommerce:broadleaf-common:1.6.2-GA",
+    "coordinatesV2": "org.broadleafcommerce:broadleaf-common:2.0.0-GA",
+    "caller": "|java+method:///org/broadleafcommerce/common/persistence/IdOverrideTableGenerator/configure(org.hibernate.type.Type,java.util.Properties,org.hibernate.dialect.Dialect)|",
+    "called": "|java+method:///org/hibernate/id/enhanced/TableGenerator/configure(org.hibernate.type.Type,java.util.Properties,org.hibernate.dialect.Dialect)|",
+    "v1Body": [
+      "|java+method:///org/hibernate/id/enhanced/TableGenerator/configure(org.hibernate.type.Type,java.util.Properties,org.hibernate.dialect.Dialect)|",
+      "|java+method:///java/util/Properties/get(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/hibernate/id/enhanced/TableGenerator/configure(org.hibernate.type.Type,java.util.Properties,org.hibernate.dialect.Dialect)|",
+      "|java+method:///java/util/Properties/get(java.lang.Object)|",
+      "|java+method:///java/util/Properties/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|"
+    ],
+    "affectedLib": "org.hibernate:hibernate-core:3.6.10.Final",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.broadleafcommerce:broadleaf-common:1.6.2-GA",
+    "coordinatesV2": "org.broadleafcommerce:broadleaf-common:2.0.0-GA",
+    "caller": "|java+initializer:///org/broadleafcommerce/common/config/RuntimeEnvironmentPropertiesConfigurer/RuntimeEnvironmentPropertiesConfigurer$initializer|",
+    "called": "|java+constructor:///org/springframework/core/io/ClassPathResource/ClassPathResource(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/springframework/core/io/ClassPathResource/ClassPathResource(java.lang.String)|",
+      "|java+constructor:///java/util/LinkedHashSet/LinkedHashSet()|",
+      "|java+method:///java/util/Set/add(java.lang.Object)|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "affectedLib": "org.springframework:spring-core:3.1.1.RELEASE",
+    "change": "UPDATED"
+  }
+]

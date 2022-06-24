@@ -1,0 +1,532 @@
+[
+  {
+    "coordinatesV1": "fr.lirmm.graphik:graal-store-rdbms:0.9.0",
+    "coordinatesV2": "fr.lirmm.graphik:graal-store-rdbms:1.0.0",
+    "caller": "|java+method:///fr/lirmm/graphik/graal/store/rdbms/AbstractRdbmsStore/createStatement()|",
+    "called": "|java+constructor:///fr/lirmm/graphik/graal/api/core/AtomSetException/AtomSetException(java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///fr/lirmm/graphik/graal/store/rdbms/driver/RdbmsDriver/createStatement()|",
+      "|java+constructor:///fr/lirmm/graphik/graal/core/atomset/AtomSetException/AtomSetException(java.lang.Throwable)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///fr/lirmm/graphik/graal/api/core/AtomSetException/AtomSetException(java.lang.Throwable)|",
+      "|java+method:///fr/lirmm/graphik/graal/store/rdbms/driver/RdbmsDriver/createStatement()|"
+    ],
+    "affectedLib": "fr.lirmm.graphik:graal-api:1.0.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "fr.lirmm.graphik:graal-store-rdbms:0.9.0",
+    "coordinatesV2": "fr.lirmm.graphik:graal-store-rdbms:1.0.0",
+    "caller": "|java+method:///fr/lirmm/graphik/graal/store/rdbms/driver/PostgreSQLDriver/openConnection(java.lang.String,java.lang.String,java.lang.String,java.lang.String)|",
+    "called": "|java+constructor:///fr/lirmm/graphik/graal/api/core/AtomSetException/AtomSetException(java.lang.String,java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///fr/lirmm/graphik/graal/core/atomset/AtomSetException/AtomSetException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/sql/SQLException/getMessage()|",
+      "|java+method:///java/sql/DriverManager/getConnection(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/sql/SQLException/getMessage()|",
+      "|java+method:///java/sql/DriverManager/getConnection(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///fr/lirmm/graphik/graal/api/core/AtomSetException/AtomSetException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "affectedLib": "fr.lirmm.graphik:graal-api:1.0.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "fr.lirmm.graphik:graal-store-rdbms:0.9.0",
+    "coordinatesV2": "fr.lirmm.graphik:graal-store-rdbms:1.0.0",
+    "caller": "|java+constructor:///fr/lirmm/graphik/graal/store/rdbms/DefaultRdbmsStore/DefaultRdbmsStore(fr.lirmm.graphik.graal.store.rdbms.driver.RdbmsDriver)|",
+    "called": "|java+constructor:///fr/lirmm/graphik/graal/api/core/AtomSetException/AtomSetException(java.lang.String,java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///java/sql/Connection/prepareStatement(java.lang.String)|",
+      "|java+constructor:///fr/lirmm/graphik/graal/core/atomset/AtomSetException/AtomSetException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/sql/SQLException/getMessage()|",
+      "|java+constructor:///java/util/TreeMap/TreeMap()|",
+      "|java+constructor:///fr/lirmm/graphik/graal/store/rdbms/AbstractRdbmsStore/AbstractRdbmsStore(fr.lirmm.graphik.graal.store.rdbms.driver.RdbmsDriver)|",
+      "|java+method:///fr/lirmm/graphik/graal/store/rdbms/DefaultRdbmsStore/getConnection()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/sql/Connection/prepareStatement(java.lang.String)|",
+      "|java+method:///java/sql/SQLException/getMessage()|",
+      "|java+constructor:///java/util/TreeMap/TreeMap()|",
+      "|java+constructor:///fr/lirmm/graphik/graal/store/rdbms/AbstractRdbmsStore/AbstractRdbmsStore(fr.lirmm.graphik.graal.store.rdbms.driver.RdbmsDriver)|",
+      "|java+method:///fr/lirmm/graphik/graal/store/rdbms/DefaultRdbmsStore/getConnection()|",
+      "|java+constructor:///fr/lirmm/graphik/graal/api/core/AtomSetException/AtomSetException(java.lang.String,java.lang.Throwable)|"
+    ],
+    "affectedLib": "fr.lirmm.graphik:graal-api:1.0.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "fr.lirmm.graphik:graal-store-rdbms:0.9.0",
+    "coordinatesV2": "fr.lirmm.graphik:graal-store-rdbms:1.0.0",
+    "caller": "|java+constructor:///fr/lirmm/graphik/graal/store/rdbms/homomorphism/SqlHomomorphismChecker/SqlHomomorphismChecker()|",
+    "called": "|java+constructor:///fr/lirmm/graphik/graal/api/homomorphism/AbstractChecker/AbstractChecker()|",
+    "v1Body": [
+      "|java+constructor:///fr/lirmm/graphik/graal/homomorphism/checker/AbstractChecker/AbstractChecker()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///fr/lirmm/graphik/graal/api/homomorphism/AbstractChecker/AbstractChecker()|"
+    ],
+    "affectedLib": "fr.lirmm.graphik:graal-api:1.0.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "fr.lirmm.graphik:graal-store-rdbms:0.9.0",
+    "coordinatesV2": "fr.lirmm.graphik:graal-store-rdbms:1.0.0",
+    "caller": "|java+constructor:///fr/lirmm/graphik/graal/store/rdbms/AbstractRdbmsStore/AbstractRdbmsStore(fr.lirmm.graphik.graal.store.rdbms.driver.RdbmsDriver)|",
+    "called": "|java+constructor:///fr/lirmm/graphik/graal/api/core/AtomSetException/AtomSetException(java.lang.String,java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///fr/lirmm/graphik/graal/store/rdbms/AbstractRdbmsStore/createDatabaseSchema()|",
+      "|java+constructor:///fr/lirmm/graphik/graal/core/atomset/AbstractAtomSet/AbstractAtomSet()|",
+      "|java+method:///fr/lirmm/graphik/graal/store/rdbms/AbstractRdbmsStore/testDatabaseSchema()|",
+      "|java+method:///java/sql/Connection/setAutoCommit(boolean)|",
+      "|java+constructor:///fr/lirmm/graphik/graal/core/atomset/AtomSetException/AtomSetException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///fr/lirmm/graphik/graal/store/rdbms/driver/RdbmsDriver/getConnection()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///fr/lirmm/graphik/graal/api/core/AbstractAtomSet/AbstractAtomSet()|",
+      "|java+method:///fr/lirmm/graphik/graal/store/rdbms/AbstractRdbmsStore/createDatabaseSchema()|",
+      "|java+method:///fr/lirmm/graphik/graal/store/rdbms/driver/RdbmsDriver/getConnection()|",
+      "|java+method:///fr/lirmm/graphik/graal/store/rdbms/AbstractRdbmsStore/testDatabaseSchema()|",
+      "|java+constructor:///fr/lirmm/graphik/graal/api/core/AtomSetException/AtomSetException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/sql/Connection/setAutoCommit(boolean)|"
+    ],
+    "affectedLib": "fr.lirmm.graphik:graal-api:1.0.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "fr.lirmm.graphik:graal-store-rdbms:0.9.0",
+    "coordinatesV2": "fr.lirmm.graphik:graal-store-rdbms:1.0.0",
+    "caller": "|java+method:///fr/lirmm/graphik/graal/store/rdbms/driver/HSQLDBDriver/openConnection(java.lang.String)|",
+    "called": "|java+constructor:///fr/lirmm/graphik/graal/api/core/AtomSetException/AtomSetException(java.lang.String,java.lang.Throwable)|",
+    "v1Body": [
+      "|java+constructor:///fr/lirmm/graphik/graal/core/atomset/AtomSetException/AtomSetException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/sql/SQLException/getMessage()|",
+      "|java+method:///java/sql/DriverManager/getConnection(java.lang.String)|",
+      "|java+method:///java/lang/IllegalAccessException/getMessage()|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/lang/Class/forName(java.lang.String)|",
+      "|java+method:///java/lang/ClassNotFoundException/getMessage()|",
+      "|java+method:///java/lang/Class/newInstance()|",
+      "|java+method:///java/lang/InstantiationException/getMessage()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/sql/SQLException/getMessage()|",
+      "|java+method:///java/sql/DriverManager/getConnection(java.lang.String)|",
+      "|java+method:///java/lang/IllegalAccessException/getMessage()|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///fr/lirmm/graphik/graal/api/core/AtomSetException/AtomSetException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/lang/Class/forName(java.lang.String)|",
+      "|java+method:///java/lang/ClassNotFoundException/getMessage()|",
+      "|java+method:///java/lang/Class/newInstance()|",
+      "|java+method:///java/lang/InstantiationException/getMessage()|"
+    ],
+    "affectedLib": "fr.lirmm.graphik:graal-api:1.0.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "fr.lirmm.graphik:graal-store-rdbms:0.9.0",
+    "coordinatesV2": "fr.lirmm.graphik:graal-store-rdbms:1.0.0",
+    "caller": "|java+constructor:///fr/lirmm/graphik/graal/store/rdbms/homomorphism/SqlUCQHomomorphismChecker/SqlUCQHomomorphismChecker()|",
+    "called": "|java+constructor:///fr/lirmm/graphik/graal/api/homomorphism/AbstractChecker/AbstractChecker()|",
+    "v1Body": [
+      "|java+constructor:///fr/lirmm/graphik/graal/homomorphism/checker/AbstractChecker/AbstractChecker()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///fr/lirmm/graphik/graal/api/homomorphism/AbstractChecker/AbstractChecker()|"
+    ],
+    "affectedLib": "fr.lirmm.graphik:graal-api:1.0.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "fr.lirmm.graphik:graal-store-rdbms:0.9.0",
+    "coordinatesV2": "fr.lirmm.graphik:graal-store-rdbms:1.0.0",
+    "caller": "|java+method:///fr/lirmm/graphik/graal/store/rdbms/DefaultRdbmsStore/testDatabaseSchema()|",
+    "called": "|java+constructor:///fr/lirmm/graphik/graal/api/core/AtomSetException/AtomSetException(java.lang.String,java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///java/sql/Connection/rollback()|",
+      "|java+method:///java/sql/Statement/close()|",
+      "|java+constructor:///fr/lirmm/graphik/graal/core/atomset/AtomSetException/AtomSetException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/sql/Statement/executeQuery(java.lang.String)|",
+      "|java+method:///fr/lirmm/graphik/graal/store/rdbms/DefaultRdbmsStore/createStatement()|",
+      "|java+method:///fr/lirmm/graphik/graal/store/rdbms/DefaultRdbmsStore/getConnection()|",
+      "|java+constructor:///fr/lirmm/graphik/graal/core/atomset/AtomSetException/AtomSetException(java.lang.Throwable)|",
+      "|java+method:///fr/lirmm/graphik/graal/core/atomset/AtomSetException/getMessage()|",
+      "|java+method:///java/sql/ResultSet/close()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/sql/Connection/rollback()|",
+      "|java+method:///java/sql/Statement/close()|",
+      "|java+constructor:///fr/lirmm/graphik/graal/api/core/AtomSetException/AtomSetException(java.lang.Throwable)|",
+      "|java+method:///fr/lirmm/graphik/graal/api/core/AtomSetException/getMessage()|",
+      "|java+method:///java/sql/Statement/executeQuery(java.lang.String)|",
+      "|java+method:///fr/lirmm/graphik/graal/store/rdbms/DefaultRdbmsStore/createStatement()|",
+      "|java+constructor:///fr/lirmm/graphik/graal/api/core/AtomSetException/AtomSetException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///fr/lirmm/graphik/graal/store/rdbms/DefaultRdbmsStore/getConnection()|",
+      "|java+method:///java/sql/ResultSet/close()|"
+    ],
+    "affectedLib": "fr.lirmm.graphik:graal-api:1.0.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "fr.lirmm.graphik:graal-store-rdbms:0.9.0",
+    "coordinatesV2": "fr.lirmm.graphik:graal-store-rdbms:1.0.0",
+    "caller": "|java+method:///fr/lirmm/graphik/graal/store/rdbms/NoConstraintRdbmsStore/createDatabaseSchema()|",
+    "called": "|java+constructor:///fr/lirmm/graphik/graal/api/core/AtomSetException/AtomSetException(java.lang.String,java.lang.Throwable)|",
+    "v1Body": [
+      "|java+constructor:///fr/lirmm/graphik/graal/core/atomset/AtomSetException/AtomSetException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/sql/SQLException/getMessage()|",
+      "|java+method:///fr/lirmm/graphik/graal/store/rdbms/NoConstraintRdbmsStore/createStatement()|",
+      "|java+method:///java/sql/Statement/execute(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/sql/SQLException/getMessage()|",
+      "|java+method:///fr/lirmm/graphik/graal/store/rdbms/NoConstraintRdbmsStore/createStatement()|",
+      "|java+method:///java/sql/Statement/execute(java.lang.String)|",
+      "|java+constructor:///fr/lirmm/graphik/graal/api/core/AtomSetException/AtomSetException(java.lang.String,java.lang.Throwable)|"
+    ],
+    "affectedLib": "fr.lirmm.graphik:graal-api:1.0.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "fr.lirmm.graphik:graal-store-rdbms:0.9.0",
+    "coordinatesV2": "fr.lirmm.graphik:graal-store-rdbms:1.0.0",
+    "caller": "|java+constructor:///fr/lirmm/graphik/graal/store/rdbms/DefaultRdbmsPredicateReader/DefaultRdbmsPredicateReader(fr.lirmm.graphik.graal.store.rdbms.driver.RdbmsDriver)|",
+    "called": "|java+constructor:///fr/lirmm/graphik/graal/api/core/AtomSetException/AtomSetException(java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///fr/lirmm/graphik/graal/store/rdbms/driver/RdbmsDriver/createStatement()|",
+      "|java+constructor:///fr/lirmm/graphik/util/stream/AbstractReader/AbstractReader()|",
+      "|java+method:///java/sql/Statement/executeQuery(java.lang.String)|",
+      "|java+constructor:///fr/lirmm/graphik/graal/core/atomset/AtomSetException/AtomSetException(java.lang.Throwable)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///fr/lirmm/graphik/graal/api/core/AtomSetException/AtomSetException(java.lang.Throwable)|",
+      "|java+method:///fr/lirmm/graphik/graal/store/rdbms/driver/RdbmsDriver/createStatement()|",
+      "|java+constructor:///fr/lirmm/graphik/util/stream/AbstractReader/AbstractReader()|",
+      "|java+method:///java/sql/Statement/executeQuery(java.lang.String)|"
+    ],
+    "affectedLib": "fr.lirmm.graphik:graal-api:1.0.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "fr.lirmm.graphik:graal-store-rdbms:0.9.0",
+    "coordinatesV2": "fr.lirmm.graphik:graal-store-rdbms:1.0.0",
+    "caller": "|java+method:///fr/lirmm/graphik/graal/store/rdbms/DefaultRdbmsStore/createDatabaseSchema()|",
+    "called": "|java+constructor:///fr/lirmm/graphik/graal/api/core/AtomSetException/AtomSetException(java.lang.String,java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///fr/lirmm/graphik/graal/core/term/Term$Type/toString()|",
+      "|java+method:///java/sql/Statement/close()|",
+      "|java+method:///java/sql/Statement/executeUpdate(java.lang.String)|",
+      "|java+method:///java/sql/PreparedStatement/close()|",
+      "|java+constructor:///fr/lirmm/graphik/graal/core/atomset/AtomSetException/AtomSetException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/sql/SQLException/getMessage()|",
+      "|java+method:///java/sql/PreparedStatement/executeBatch()|",
+      "|java+method:///java/sql/Connection/commit()|",
+      "|java+method:///fr/lirmm/graphik/graal/core/term/Term$Type/values()|",
+      "|java+method:///fr/lirmm/graphik/graal/store/rdbms/DefaultRdbmsStore/createStatement()|",
+      "|java+method:///org/slf4j/Logger/isDebugEnabled()|",
+      "|java+method:///java/sql/PreparedStatement/setString(int,java.lang.String)|",
+      "|java+method:///java/sql/PreparedStatement/addBatch()|",
+      "|java+method:///java/sql/Connection/prepareStatement(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+method:///fr/lirmm/graphik/graal/store/rdbms/DefaultRdbmsStore/getConnection()|",
+      "|java+constructor:///fr/lirmm/graphik/graal/core/atomset/AtomSetException/AtomSetException(java.lang.Throwable)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/sql/Statement/close()|",
+      "|java+method:///java/sql/Statement/executeUpdate(java.lang.String)|",
+      "|java+method:///fr/lirmm/graphik/graal/api/core/Term$Type/values()|",
+      "|java+method:///java/sql/SQLException/getMessage()|",
+      "|java+method:///java/sql/PreparedStatement/executeBatch()|",
+      "|java+method:///fr/lirmm/graphik/graal/store/rdbms/DefaultRdbmsStore/createStatement()|",
+      "|java+method:///fr/lirmm/graphik/graal/store/rdbms/DefaultRdbmsStore/getConnection()|",
+      "|java+method:///java/sql/PreparedStatement/setString(int,java.lang.String)|",
+      "|java+method:///java/sql/PreparedStatement/addBatch()|",
+      "|java+method:///java/sql/Connection/prepareStatement(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+constructor:///fr/lirmm/graphik/graal/api/core/AtomSetException/AtomSetException(java.lang.Throwable)|",
+      "|java+method:///java/sql/PreparedStatement/close()|",
+      "|java+method:///fr/lirmm/graphik/graal/api/core/Term$Type/toString()|",
+      "|java+method:///java/sql/Connection/commit()|",
+      "|java+constructor:///fr/lirmm/graphik/graal/api/core/AtomSetException/AtomSetException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/slf4j/Logger/isDebugEnabled()|"
+    ],
+    "affectedLib": "fr.lirmm.graphik:graal-api:1.0.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "fr.lirmm.graphik:graal-store-rdbms:0.9.0",
+    "coordinatesV2": "fr.lirmm.graphik:graal-store-rdbms:1.0.0",
+    "caller": "|java+method:///fr/lirmm/graphik/graal/store/rdbms/DefaultRdbmsStore/getTerms()|",
+    "called": "|java+constructor:///fr/lirmm/graphik/graal/api/core/AtomSetException/AtomSetException(java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///fr/lirmm/graphik/graal/core/term/TermFactory/createTerm(java.lang.Object,fr.lirmm.graphik.graal.core.term.Term$Type)|",
+      "|java+method:///fr/lirmm/graphik/graal/core/term/Term$Type/valueOf(java.lang.String)|",
+      "|java+method:///java/sql/ResultSet/next()|",
+      "|java+method:///java/sql/ResultSet/getString(int)|",
+      "|java+method:///java/sql/Statement/executeQuery(java.lang.String)|",
+      "|java+method:///fr/lirmm/graphik/graal/store/rdbms/DefaultRdbmsStore/createStatement()|",
+      "|java+constructor:///java/util/TreeSet/TreeSet()|",
+      "|java+method:///java/util/Set/add(java.lang.Object)|",
+      "|java+method:///java/sql/Statement/close()|",
+      "|java+method:///fr/lirmm/graphik/graal/core/term/DefaultTermFactory/instance()|",
+      "|java+constructor:///fr/lirmm/graphik/graal/core/atomset/AtomSetException/AtomSetException(java.lang.Throwable)|",
+      "|java+method:///java/sql/ResultSet/close()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/sql/ResultSet/getString(int)|",
+      "|java+method:///fr/lirmm/graphik/graal/api/core/Term$Type/valueOf(java.lang.String)|",
+      "|java+method:///fr/lirmm/graphik/graal/api/factory/TermFactory/createTerm(java.lang.Object,fr.lirmm.graphik.graal.api.core.Term$Type)|",
+      "|java+method:///java/sql/Statement/executeQuery(java.lang.String)|",
+      "|java+method:///fr/lirmm/graphik/graal/store/rdbms/DefaultRdbmsStore/createStatement()|",
+      "|java+method:///java/sql/ResultSet/close()|",
+      "|java+constructor:///java/util/TreeSet/TreeSet()|",
+      "|java+method:///java/util/Set/add(java.lang.Object)|",
+      "|java+method:///java/sql/Statement/close()|",
+      "|java+method:///fr/lirmm/graphik/graal/core/term/DefaultTermFactory/instance()|",
+      "|java+method:///java/sql/ResultSet/next()|",
+      "|java+constructor:///fr/lirmm/graphik/graal/api/core/AtomSetException/AtomSetException(java.lang.Throwable)|"
+    ],
+    "affectedLib": "fr.lirmm.graphik:graal-api:1.0.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "fr.lirmm.graphik:graal-store-rdbms:0.9.0",
+    "coordinatesV2": "fr.lirmm.graphik:graal-store-rdbms:1.0.0",
+    "caller": "|java+method:///fr/lirmm/graphik/graal/store/rdbms/driver/MysqlDriver/openConnection(java.lang.String)|",
+    "called": "|java+constructor:///fr/lirmm/graphik/graal/api/core/AtomSetException/AtomSetException(java.lang.String,java.lang.Throwable)|",
+    "v1Body": [
+      "|java+constructor:///fr/lirmm/graphik/graal/core/atomset/AtomSetException/AtomSetException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/sql/SQLException/getMessage()|",
+      "|java+method:///java/sql/DriverManager/getConnection(java.lang.String)|",
+      "|java+method:///java/lang/IllegalAccessException/getMessage()|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/lang/Class/forName(java.lang.String)|",
+      "|java+method:///java/lang/ClassNotFoundException/getMessage()|",
+      "|java+method:///java/lang/Class/newInstance()|",
+      "|java+method:///java/lang/InstantiationException/getMessage()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/sql/SQLException/getMessage()|",
+      "|java+method:///java/sql/DriverManager/getConnection(java.lang.String)|",
+      "|java+method:///java/lang/IllegalAccessException/getMessage()|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///fr/lirmm/graphik/graal/api/core/AtomSetException/AtomSetException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/lang/Class/forName(java.lang.String)|",
+      "|java+method:///java/lang/ClassNotFoundException/getMessage()|",
+      "|java+method:///java/lang/Class/newInstance()|",
+      "|java+method:///java/lang/InstantiationException/getMessage()|"
+    ],
+    "affectedLib": "fr.lirmm.graphik:graal-api:1.0.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "fr.lirmm.graphik:graal-store-rdbms:0.9.0",
+    "coordinatesV2": "fr.lirmm.graphik:graal-store-rdbms:1.0.0",
+    "caller": "|java+method:///fr/lirmm/graphik/graal/store/rdbms/DefaultRdbmsStore/getTerm(java.lang.String)|",
+    "called": "|java+constructor:///fr/lirmm/graphik/graal/api/core/AtomSetException/AtomSetException(java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///java/sql/PreparedStatement/setString(int,java.lang.String)|",
+      "|java+method:///fr/lirmm/graphik/graal/core/term/TermFactory/createTerm(java.lang.Object,fr.lirmm.graphik.graal.core.term.Term$Type)|",
+      "|java+method:///fr/lirmm/graphik/graal/core/term/Term$Type/valueOf(java.lang.String)|",
+      "|java+method:///fr/lirmm/graphik/graal/core/term/DefaultTermFactory/instance()|",
+      "|java+method:///java/sql/ResultSet/next()|",
+      "|java+method:///java/sql/ResultSet/getString(int)|",
+      "|java+constructor:///fr/lirmm/graphik/graal/core/atomset/AtomSetException/AtomSetException(java.lang.Throwable)|",
+      "|java+method:///java/sql/ResultSet/close()|",
+      "|java+method:///java/sql/PreparedStatement/executeQuery()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/sql/PreparedStatement/setString(int,java.lang.String)|",
+      "|java+method:///fr/lirmm/graphik/graal/core/term/DefaultTermFactory/instance()|",
+      "|java+method:///java/sql/ResultSet/getString(int)|",
+      "|java+method:///fr/lirmm/graphik/graal/api/core/Term$Type/valueOf(java.lang.String)|",
+      "|java+method:///fr/lirmm/graphik/graal/api/factory/TermFactory/createTerm(java.lang.Object,fr.lirmm.graphik.graal.api.core.Term$Type)|",
+      "|java+method:///java/sql/ResultSet/next()|",
+      "|java+constructor:///fr/lirmm/graphik/graal/api/core/AtomSetException/AtomSetException(java.lang.Throwable)|",
+      "|java+method:///java/sql/ResultSet/close()|",
+      "|java+method:///java/sql/PreparedStatement/executeQuery()|"
+    ],
+    "affectedLib": "fr.lirmm.graphik:graal-api:1.0.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "fr.lirmm.graphik:graal-store-rdbms:0.9.0",
+    "coordinatesV2": "fr.lirmm.graphik:graal-store-rdbms:1.0.0",
+    "caller": "|java+method:///fr/lirmm/graphik/graal/store/rdbms/DefaultRdbmsPredicateReader/readPredicate(java.sql.ResultSet)|",
+    "called": "|java+constructor:///fr/lirmm/graphik/graal/api/core/Predicate/Predicate(java.lang.Object,int)|",
+    "v1Body": [
+      "|java+constructor:///fr/lirmm/graphik/graal/core/Predicate/Predicate(java.lang.Object,int)|",
+      "|java+method:///java/sql/ResultSet/getInt(int)|",
+      "|java+method:///java/sql/ResultSet/getString(int)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/sql/ResultSet/getInt(int)|",
+      "|java+method:///java/sql/ResultSet/getString(int)|",
+      "|java+constructor:///fr/lirmm/graphik/graal/api/core/Predicate/Predicate(java.lang.Object,int)|"
+    ],
+    "affectedLib": "fr.lirmm.graphik:graal-api:1.0.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "fr.lirmm.graphik:graal-store-rdbms:0.9.0",
+    "coordinatesV2": "fr.lirmm.graphik:graal-store-rdbms:1.0.0",
+    "caller": "|java+initializer:///fr/lirmm/graphik/graal/store/rdbms/AbstractRdbmsStore/AbstractRdbmsStore$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+constructor:///fr/lirmm/graphik/graal/store/rdbms/homomorphism/SqlUCQHomomorphismChecker/SqlUCQHomomorphismChecker()|",
+      "|java+constructor:///fr/lirmm/graphik/graal/store/rdbms/homomorphism/SqlHomomorphismChecker/SqlHomomorphismChecker()|",
+      "|java+method:///fr/lirmm/graphik/graal/homomorphism/DefaultHomomorphismFactory/addChecker(fr.lirmm.graphik.graal.homomorphism.checker.HomomorphismChecker)|",
+      "|java+method:///fr/lirmm/graphik/graal/homomorphism/DefaultHomomorphismFactory/instance()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///fr/lirmm/graphik/graal/store/rdbms/homomorphism/SqlUCQHomomorphismChecker/SqlUCQHomomorphismChecker()|",
+      "|java+constructor:///fr/lirmm/graphik/graal/store/rdbms/homomorphism/SqlHomomorphismChecker/SqlHomomorphismChecker()|",
+      "|java+method:///fr/lirmm/graphik/graal/homomorphism/DefaultHomomorphismFactory/instance()|",
+      "|java+method:///fr/lirmm/graphik/graal/homomorphism/DefaultHomomorphismFactory/addChecker(fr.lirmm.graphik.graal.api.homomorphism.HomomorphismChecker)|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.7",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "fr.lirmm.graphik:graal-store-rdbms:0.9.0",
+    "coordinatesV2": "fr.lirmm.graphik:graal-store-rdbms:1.0.0",
+    "caller": "|java+method:///fr/lirmm/graphik/graal/store/rdbms/DefaultRdbmsIterator/hasNext()|",
+    "called": "|java+constructor:///fr/lirmm/graphik/graal/core/atomset/LinkedListAtomSet/LinkedListAtomSet()|",
+    "v1Body": [
+      "|java+method:///fr/lirmm/graphik/graal/core/factory/ConjunctiveQueryFactory/instance()|",
+      "|java+constructor:///fr/lirmm/graphik/graal/core/stream/SubstitutionReader2AtomReader/SubstitutionReader2AtomReader(fr.lirmm.graphik.graal.core.Atom,fr.lirmm.graphik.graal.core.stream.SubstitutionReader)|",
+      "|java+method:///fr/lirmm/graphik/graal/store/rdbms/homomorphism/SqlHomomorphism/execute(fr.lirmm.graphik.graal.core.ConjunctiveQuery,fr.lirmm.graphik.graal.store.rdbms.RdbmsStore)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+method:///fr/lirmm/graphik/graal/core/term/TermFactory/createVariable(java.lang.Object)|",
+      "|java+constructor:///fr/lirmm/graphik/graal/core/impl/DefaultAtom/DefaultAtom(fr.lirmm.graphik.graal.core.Predicate,java.util.List)|",
+      "|java+constructor:///java/util/LinkedList/LinkedList()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///fr/lirmm/graphik/graal/core/factory/ConjunctiveQueryFactory/create(fr.lirmm.graphik.graal.core.atomset.InMemoryAtomSet)|",
+      "|java+method:///fr/lirmm/graphik/graal/core/atomset/InMemoryAtomSet/add(fr.lirmm.graphik.graal.core.Atom)|",
+      "|java+method:///fr/lirmm/graphik/graal/core/term/DefaultTermFactory/instance()|",
+      "|java+constructor:///fr/lirmm/graphik/graal/core/atomset/LinkedListAtomSet/LinkedListAtomSet()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///fr/lirmm/graphik/graal/store/rdbms/homomorphism/SqlHomomorphism/instance()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///fr/lirmm/graphik/graal/homomorphism/HomomorphismException/getMessage()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///fr/lirmm/graphik/graal/core/Predicate/getArity()|"
+    ],
+    "v2Body": [
+      "|java+method:///fr/lirmm/graphik/graal/core/factory/ConjunctiveQueryFactory/instance()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+constructor:///java/util/LinkedList/LinkedList()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///fr/lirmm/graphik/graal/api/factory/TermFactory/createVariable(java.lang.Object)|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///fr/lirmm/graphik/graal/store/rdbms/homomorphism/SqlHomomorphism/execute(fr.lirmm.graphik.graal.api.core.ConjunctiveQuery,fr.lirmm.graphik.graal.store.rdbms.RdbmsStore)|",
+      "|java+method:///fr/lirmm/graphik/graal/api/homomorphism/HomomorphismException/getMessage()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///fr/lirmm/graphik/graal/core/stream/SubstitutionReader2AtomReader/SubstitutionReader2AtomReader(fr.lirmm.graphik.graal.api.core.Atom,fr.lirmm.graphik.graal.api.core.stream.SubstitutionReader)|",
+      "|java+method:///fr/lirmm/graphik/graal/api/core/InMemoryAtomSet/add(fr.lirmm.graphik.graal.api.core.Atom)|",
+      "|java+method:///fr/lirmm/graphik/graal/core/term/DefaultTermFactory/instance()|",
+      "|java+constructor:///fr/lirmm/graphik/graal/core/atomset/LinkedListAtomSet/LinkedListAtomSet()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///fr/lirmm/graphik/graal/store/rdbms/homomorphism/SqlHomomorphism/instance()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///fr/lirmm/graphik/graal/core/factory/ConjunctiveQueryFactory/create(fr.lirmm.graphik.graal.api.core.InMemoryAtomSet)|",
+      "|java+constructor:///fr/lirmm/graphik/graal/core/DefaultAtom/DefaultAtom(fr.lirmm.graphik.graal.api.core.Predicate,java.util.List)|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+method:///fr/lirmm/graphik/graal/api/core/Predicate/getArity()|"
+    ],
+    "affectedLib": "fr.lirmm.graphik:graal-core:1.0.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "fr.lirmm.graphik:graal-store-rdbms:0.9.0",
+    "coordinatesV2": "fr.lirmm.graphik:graal-store-rdbms:1.0.0",
+    "caller": "|java+method:///fr/lirmm/graphik/graal/store/rdbms/ResultSetSubstitutionReader/next()|",
+    "called": "|java+constructor:///fr/lirmm/graphik/graal/core/HashMapSubstitution/HashMapSubstitution()|",
+    "v1Body": [
+      "|java+method:///fr/lirmm/graphik/graal/core/term/DefaultTermFactory/instance()|",
+      "|java+method:///fr/lirmm/graphik/graal/store/rdbms/RdbmsStore/getTerm(java.lang.String)|",
+      "|java+method:///java/sql/ResultSetMetaData/getColumnCount()|",
+      "|java+method:///fr/lirmm/graphik/graal/core/Substitution/put(fr.lirmm.graphik.graal.core.term.Term,fr.lirmm.graphik.graal.core.term.Term)|",
+      "|java+method:///fr/lirmm/graphik/graal/store/rdbms/ResultSetSubstitutionReader/hasNext()|",
+      "|java+method:///java/sql/ResultSet/getString(int)|",
+      "|java+method:///fr/lirmm/graphik/graal/core/term/TermFactory/createVariable(java.lang.Object)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///fr/lirmm/graphik/graal/core/impl/HashMapSubstitution/HashMapSubstitution()|",
+      "|java+method:///java/sql/ResultSetMetaData/getColumnLabel(int)|",
+      "|java+method:///fr/lirmm/graphik/graal/store/rdbms/ResultSetSubstitutionReader/next()|"
+    ],
+    "v2Body": [
+      "|java+method:///fr/lirmm/graphik/graal/store/rdbms/RdbmsStore/getTerm(java.lang.String)|",
+      "|java+method:///java/sql/ResultSetMetaData/getColumnCount()|",
+      "|java+method:///fr/lirmm/graphik/graal/store/rdbms/ResultSetSubstitutionReader/hasNext()|",
+      "|java+method:///java/sql/ResultSet/getString(int)|",
+      "|java+method:///fr/lirmm/graphik/graal/api/core/Substitution/put(fr.lirmm.graphik.graal.api.core.Term,fr.lirmm.graphik.graal.api.core.Term)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///fr/lirmm/graphik/graal/api/factory/TermFactory/createVariable(java.lang.Object)|",
+      "|java+constructor:///fr/lirmm/graphik/graal/core/HashMapSubstitution/HashMapSubstitution()|",
+      "|java+method:///fr/lirmm/graphik/graal/core/term/DefaultTermFactory/instance()|",
+      "|java+method:///java/sql/ResultSetMetaData/getColumnLabel(int)|",
+      "|java+method:///fr/lirmm/graphik/graal/store/rdbms/ResultSetSubstitutionReader/next()|"
+    ],
+    "affectedLib": "fr.lirmm.graphik:graal-core:1.0.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "fr.lirmm.graphik:graal-store-rdbms:0.9.0",
+    "coordinatesV2": "fr.lirmm.graphik:graal-store-rdbms:1.0.0",
+    "caller": "|java+initializer:///fr/lirmm/graphik/graal/store/rdbms/AbstractRdbmsStore/AbstractRdbmsStore$initializer|",
+    "called": "|java+method:///fr/lirmm/graphik/graal/homomorphism/DefaultHomomorphismFactory/instance()|",
+    "v1Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+constructor:///fr/lirmm/graphik/graal/store/rdbms/homomorphism/SqlUCQHomomorphismChecker/SqlUCQHomomorphismChecker()|",
+      "|java+constructor:///fr/lirmm/graphik/graal/store/rdbms/homomorphism/SqlHomomorphismChecker/SqlHomomorphismChecker()|",
+      "|java+method:///fr/lirmm/graphik/graal/homomorphism/DefaultHomomorphismFactory/addChecker(fr.lirmm.graphik.graal.homomorphism.checker.HomomorphismChecker)|",
+      "|java+method:///fr/lirmm/graphik/graal/homomorphism/DefaultHomomorphismFactory/instance()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///fr/lirmm/graphik/graal/store/rdbms/homomorphism/SqlUCQHomomorphismChecker/SqlUCQHomomorphismChecker()|",
+      "|java+constructor:///fr/lirmm/graphik/graal/store/rdbms/homomorphism/SqlHomomorphismChecker/SqlHomomorphismChecker()|",
+      "|java+method:///fr/lirmm/graphik/graal/homomorphism/DefaultHomomorphismFactory/instance()|",
+      "|java+method:///fr/lirmm/graphik/graal/homomorphism/DefaultHomomorphismFactory/addChecker(fr.lirmm.graphik.graal.api.homomorphism.HomomorphismChecker)|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "fr.lirmm.graphik:graal-homomorphism:1.0.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "fr.lirmm.graphik:graal-store-rdbms:0.9.0",
+    "coordinatesV2": "fr.lirmm.graphik:graal-store-rdbms:1.0.0",
+    "caller": "|java+constructor:///fr/lirmm/graphik/graal/store/rdbms/DefaultRdbmsPredicateReader/DefaultRdbmsPredicateReader(fr.lirmm.graphik.graal.store.rdbms.driver.RdbmsDriver)|",
+    "called": "|java+constructor:///fr/lirmm/graphik/util/stream/AbstractReader/AbstractReader()|",
+    "v1Body": [
+      "|java+method:///fr/lirmm/graphik/graal/store/rdbms/driver/RdbmsDriver/createStatement()|",
+      "|java+constructor:///fr/lirmm/graphik/util/stream/AbstractReader/AbstractReader()|",
+      "|java+method:///java/sql/Statement/executeQuery(java.lang.String)|",
+      "|java+constructor:///fr/lirmm/graphik/graal/core/atomset/AtomSetException/AtomSetException(java.lang.Throwable)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///fr/lirmm/graphik/graal/api/core/AtomSetException/AtomSetException(java.lang.Throwable)|",
+      "|java+method:///fr/lirmm/graphik/graal/store/rdbms/driver/RdbmsDriver/createStatement()|",
+      "|java+constructor:///fr/lirmm/graphik/util/stream/AbstractReader/AbstractReader()|",
+      "|java+method:///java/sql/Statement/executeQuery(java.lang.String)|"
+    ],
+    "affectedLib": "fr.lirmm.graphik:graal-util:1.0.0",
+    "change": "UPDATED"
+  }
+]

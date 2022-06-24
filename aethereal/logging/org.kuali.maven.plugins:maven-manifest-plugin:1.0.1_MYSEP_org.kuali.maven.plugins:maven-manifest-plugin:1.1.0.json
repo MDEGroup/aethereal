@@ -1,0 +1,64 @@
+[
+  {
+    "coordinatesV1": "org.kuali.maven.plugins:maven-manifest-plugin:1.1.0",
+    "coordinatesV2": "org.kuali.maven.plugins:maven-manifest-plugin:1.0.1",
+    "caller": "|java+method:///org/kuali/maven/plugins/GetAttributeMojo/execute()|",
+    "called": "|java+constructor:///org/apache/maven/plugin/MojoExecutionException/MojoExecutionException(java.lang.String,java.lang.Exception)|",
+    "v1Body": [
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/kuali/maven/plugins/GetAttributeMojo/getManifest(java.lang.String)|",
+      "|java+method:///org/kuali/maven/plugins/GetAttributeMojo/getLog()|",
+      "|java+method:///java/lang/System/setProperty(java.lang.String,java.lang.String)|",
+      "|java+method:///java/util/jar/Attributes/getValue(java.lang.String)|",
+      "|java+method:///org/apache/maven/plugin/logging/Log/info(java.lang.CharSequence)|",
+      "|java+constructor:///org/apache/maven/plugin/MojoExecutionException/MojoExecutionException(java.lang.String,java.lang.Exception)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/util/jar/Manifest/getMainAttributes()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/kuali/maven/plugins/GetAttributeMojo/getLog()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/System/setProperty(java.lang.String,java.lang.String)|",
+      "|java+method:///org/kuali/maven/plugins/GetAttributeMojo/validate(java.lang.String)|",
+      "|java+method:///org/apache/maven/plugin/logging/Log/info(java.lang.CharSequence)|",
+      "|java+method:///org/kuali/maven/plugins/GetAttributeMojo/process(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/kuali/maven/plugins/GetAttributeMojo/getManifestAttribute()|",
+      "|java+constructor:///org/apache/maven/plugin/MojoExecutionException/MojoExecutionException(java.lang.String,java.lang.Exception)|"
+    ],
+    "affectedLib": "org.apache.maven:maven-plugin-api:2.0.6",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.kuali.maven.plugins:maven-manifest-plugin:1.0.1",
+    "coordinatesV2": "org.kuali.maven.plugins:maven-manifest-plugin:1.1.0",
+    "caller": "|java+method:///org/kuali/maven/plugins/GetAttributeMojo/getManifest(java.lang.String)|",
+    "called": "|java+method:///org/apache/commons/io/IOUtils/closeQuietly(java.io.InputStream)|",
+    "v1Body": [
+      "|java+constructor:///java/io/File/File(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///java/io/FileNotFoundException/FileNotFoundException(java.lang.String)|",
+      "|java+constructor:///java/io/FileInputStream/FileInputStream(java.io.File)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///java/util/jar/Manifest/Manifest(java.io.InputStream)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/io/File/exists()|",
+      "|java+method:///org/kuali/maven/plugins/GetAttributeMojo/close(java.io.InputStream)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/io/IOUtils/closeQuietly(java.io.InputStream)|",
+      "|java+method:///java/io/File/exists()|",
+      "|java+constructor:///java/io/File/File(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///java/io/FileNotFoundException/FileNotFoundException(java.lang.String)|",
+      "|java+constructor:///java/io/FileInputStream/FileInputStream(java.io.File)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///java/util/jar/Manifest/Manifest(java.io.InputStream)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|"
+    ],
+    "affectedLib": "commons-io:commons-io:2.3",
+    "change": "ADDED"
+  }
+]

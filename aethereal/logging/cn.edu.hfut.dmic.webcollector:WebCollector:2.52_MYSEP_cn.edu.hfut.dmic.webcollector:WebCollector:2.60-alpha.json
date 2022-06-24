@@ -1,0 +1,503 @@
+[
+  {
+    "coordinatesV1": "cn.edu.hfut.dmic.webcollector:WebCollector:2.60-alpha",
+    "coordinatesV2": "cn.edu.hfut.dmic.webcollector:WebCollector:2.52",
+    "caller": "|java+constructor:///cn/edu/hfut/dmic/webcollector/util/MysqlHelper/MysqlHelper(java.lang.String,java.lang.String,java.lang.String,int,int)|",
+    "called": "|java+method:///org/apache/commons/dbcp/BasicDataSource/setMaxActive(int)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/dbcp/BasicDataSource/setUrl(java.lang.String)|",
+      "|java+method:///org/apache/commons/dbcp/BasicDataSource/setUsername(java.lang.String)|",
+      "|java+constructor:///org/springframework/jdbc/core/JdbcTemplate/JdbcTemplate(javax.sql.DataSource)|",
+      "|java+method:///org/apache/commons/dbcp/BasicDataSource/setMaxActive(int)|",
+      "|java+constructor:///org/apache/commons/dbcp/BasicDataSource/BasicDataSource()|",
+      "|java+method:///org/apache/commons/dbcp/BasicDataSource/setInitialSize(int)|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///org/apache/commons/dbcp/BasicDataSource/setPassword(java.lang.String)|",
+      "|java+method:///org/apache/commons/dbcp/BasicDataSource/setDriverClassName(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/springframework/jdbc/core/JdbcTemplate/JdbcTemplate(javax.sql.DataSource)|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///cn/edu/hfut/dmic/webcollector/util/MysqlHelper/createDataSource(java.lang.String,java.lang.String,java.lang.String,int,int)|"
+    ],
+    "affectedLib": "commons-dbcp:commons-dbcp:1.4",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "cn.edu.hfut.dmic.webcollector:WebCollector:2.60-alpha",
+    "coordinatesV2": "cn.edu.hfut.dmic.webcollector:WebCollector:2.52",
+    "caller": "|java+method:///cn/edu/hfut/dmic/webcollector/util/CrawlDatumFormater/datumToJsonStr(cn.edu.hfut.dmic.webcollector.model.CrawlDatum)|",
+    "called": "|java+constructor:///org/json/JSONArray/JSONArray()|",
+    "v1Body": [
+      "|java+method:///cn/edu/hfut/dmic/webcollector/model/CrawlDatum/getStatus()|",
+      "|java+method:///org/json/JSONArray/toString()|",
+      "|java+constructor:///org/json/JSONObject/JSONObject(java.util.Map)|",
+      "|java+method:///cn/edu/hfut/dmic/webcollector/model/CrawlDatum/url()|",
+      "|java+method:///cn/edu/hfut/dmic/webcollector/model/CrawlDatum/getExecuteTime()|",
+      "|java+method:///org/json/JSONArray/put(long)|",
+      "|java+constructor:///org/json/JSONArray/JSONArray()|",
+      "|java+method:///org/json/JSONArray/put(java.lang.Object)|",
+      "|java+method:///cn/edu/hfut/dmic/webcollector/model/CrawlDatum/getMetaData()|",
+      "|java+method:///java/util/HashMap/isEmpty()|",
+      "|java+method:///cn/edu/hfut/dmic/webcollector/model/CrawlDatum/getExecuteCount()|",
+      "|java+method:///org/json/JSONArray/put(int)|"
+    ],
+    "v2Body": [
+      "|java+method:///cn/edu/hfut/dmic/webcollector/model/CrawlDatum/meta()|",
+      "|java+method:///com/google/gson/JsonArray/add(java.lang.Number)|",
+      "|java+method:///cn/edu/hfut/dmic/webcollector/model/CrawlDatum/getExecuteCount()|",
+      "|java+method:///com/google/gson/JsonObject/size()|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+constructor:///com/google/gson/JsonArray/JsonArray()|",
+      "|java+method:///com/google/gson/JsonArray/add(java.lang.String)|",
+      "|java+method:///cn/edu/hfut/dmic/webcollector/model/CrawlDatum/getStatus()|",
+      "|java+method:///com/google/gson/JsonArray/toString()|",
+      "|java+method:///cn/edu/hfut/dmic/webcollector/model/CrawlDatum/url()|",
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///cn/edu/hfut/dmic/webcollector/model/CrawlDatum/getExecuteTime()|",
+      "|java+method:///com/google/gson/JsonArray/add(com.google.gson.JsonElement)|"
+    ],
+    "affectedLib": "org.json:json:20140107",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "cn.edu.hfut.dmic.webcollector:WebCollector:2.60-alpha",
+    "coordinatesV2": "cn.edu.hfut.dmic.webcollector:WebCollector:2.52",
+    "caller": "|java+method:///cn/edu/hfut/dmic/webcollector/util/CrawlDatumFormater/jsonStrToDatum(java.lang.String,java.lang.String)|",
+    "called": "|java+method:///org/json/JSONArray/getString(int)|",
+    "v1Body": [
+      "|java+method:///cn/edu/hfut/dmic/webcollector/model/CrawlDatum/setExecuteCount(int)|",
+      "|java+method:///java/lang/Object/toString()|",
+      "|java+method:///org/json/JSONArray/getLong(int)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/json/JSONArray/getInt(int)|",
+      "|java+method:///org/json/JSONObject/keySet()|",
+      "|java+method:///cn/edu/hfut/dmic/webcollector/model/CrawlDatum/setStatus(int)|",
+      "|java+constructor:///cn/edu/hfut/dmic/webcollector/model/CrawlDatum/CrawlDatum()|",
+      "|java+constructor:///org/json/JSONArray/JSONArray(java.lang.String)|",
+      "|java+method:///java/util/Set/iterator()|",
+      "|java+method:///cn/edu/hfut/dmic/webcollector/model/CrawlDatum/meta(java.lang.String,java.lang.String)|",
+      "|java+method:///org/json/JSONArray/getJSONObject(int)|",
+      "|java+method:///org/json/JSONArray/length()|",
+      "|java+method:///cn/edu/hfut/dmic/webcollector/model/CrawlDatum/url(java.lang.String)|",
+      "|java+method:///cn/edu/hfut/dmic/webcollector/model/CrawlDatum/setExecuteTime(long)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/json/JSONArray/getString(int)|",
+      "|java+method:///org/json/JSONObject/getString(java.lang.String)|",
+      "|java+method:///cn/edu/hfut/dmic/webcollector/model/CrawlDatum/key(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///cn/edu/hfut/dmic/webcollector/model/CrawlDatum/meta(com.google.gson.JsonObject)|",
+      "|java+method:///cn/edu/hfut/dmic/webcollector/model/CrawlDatum/setExecuteCount(int)|",
+      "|java+method:///com/google/gson/JsonElement/getAsLong()|",
+      "|java+method:///cn/edu/hfut/dmic/webcollector/model/CrawlDatum/setStatus(int)|",
+      "|java+constructor:///cn/edu/hfut/dmic/webcollector/model/CrawlDatum/CrawlDatum()|",
+      "|java+method:///cn/edu/hfut/dmic/webcollector/util/GsonUtils/parse(java.lang.String)|",
+      "|java+method:///cn/edu/hfut/dmic/webcollector/model/CrawlDatum/key(java.lang.String)|",
+      "|java+method:///com/google/gson/JsonElement/getAsJsonObject()|",
+      "|java+method:///com/google/gson/JsonArray/size()|",
+      "|java+method:///com/google/gson/JsonElement/getAsInt()|",
+      "|java+method:///com/google/gson/JsonElement/getAsJsonArray()|",
+      "|java+method:///com/google/gson/JsonElement/getAsString()|",
+      "|java+method:///com/google/gson/JsonArray/get(int)|",
+      "|java+method:///cn/edu/hfut/dmic/webcollector/model/CrawlDatum/url(java.lang.String)|",
+      "|java+method:///cn/edu/hfut/dmic/webcollector/model/CrawlDatum/setExecuteTime(long)|"
+    ],
+    "affectedLib": "org.json:json:20140107",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "cn.edu.hfut.dmic.webcollector:WebCollector:2.60-alpha",
+    "coordinatesV2": "cn.edu.hfut.dmic.webcollector:WebCollector:2.52",
+    "caller": "|java+method:///cn/edu/hfut/dmic/webcollector/example/DemoPostCrawler/visit(cn.edu.hfut.dmic.webcollector.model.Page,cn.edu.hfut.dmic.webcollector.model.CrawlDatums)|",
+    "called": "|java+constructor:///org/json/JSONObject/JSONObject(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///cn/edu/hfut/dmic/webcollector/model/Page/html()|",
+      "|java+constructor:///org/json/JSONObject/JSONObject(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/io/PrintStream/println(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///cn/edu/hfut/dmic/webcollector/model/Page/jsonObject()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/io/PrintStream/println(java.lang.String)|"
+    ],
+    "affectedLib": "org.json:json:20140107",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "cn.edu.hfut.dmic.webcollector:WebCollector:2.52",
+    "coordinatesV2": "cn.edu.hfut.dmic.webcollector:WebCollector:2.60-alpha",
+    "caller": "|java+method:///cn/edu/hfut/dmic/webcollector/util/CrawlDatumFormater/datumToJsonStr(cn.edu.hfut.dmic.webcollector.model.CrawlDatum)|",
+    "called": "|java+method:///com/google/gson/JsonArray/add(java.lang.Number)|",
+    "v1Body": [
+      "|java+method:///cn/edu/hfut/dmic/webcollector/model/CrawlDatum/getStatus()|",
+      "|java+method:///org/json/JSONArray/toString()|",
+      "|java+constructor:///org/json/JSONObject/JSONObject(java.util.Map)|",
+      "|java+method:///cn/edu/hfut/dmic/webcollector/model/CrawlDatum/url()|",
+      "|java+method:///cn/edu/hfut/dmic/webcollector/model/CrawlDatum/getExecuteTime()|",
+      "|java+method:///org/json/JSONArray/put(long)|",
+      "|java+constructor:///org/json/JSONArray/JSONArray()|",
+      "|java+method:///org/json/JSONArray/put(java.lang.Object)|",
+      "|java+method:///cn/edu/hfut/dmic/webcollector/model/CrawlDatum/getMetaData()|",
+      "|java+method:///java/util/HashMap/isEmpty()|",
+      "|java+method:///cn/edu/hfut/dmic/webcollector/model/CrawlDatum/getExecuteCount()|",
+      "|java+method:///org/json/JSONArray/put(int)|"
+    ],
+    "v2Body": [
+      "|java+method:///cn/edu/hfut/dmic/webcollector/model/CrawlDatum/meta()|",
+      "|java+method:///com/google/gson/JsonArray/add(java.lang.Number)|",
+      "|java+method:///cn/edu/hfut/dmic/webcollector/model/CrawlDatum/getExecuteCount()|",
+      "|java+method:///com/google/gson/JsonObject/size()|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+constructor:///com/google/gson/JsonArray/JsonArray()|",
+      "|java+method:///com/google/gson/JsonArray/add(java.lang.String)|",
+      "|java+method:///cn/edu/hfut/dmic/webcollector/model/CrawlDatum/getStatus()|",
+      "|java+method:///com/google/gson/JsonArray/toString()|",
+      "|java+method:///cn/edu/hfut/dmic/webcollector/model/CrawlDatum/url()|",
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///cn/edu/hfut/dmic/webcollector/model/CrawlDatum/getExecuteTime()|",
+      "|java+method:///com/google/gson/JsonArray/add(com.google.gson.JsonElement)|"
+    ],
+    "affectedLib": "com.google.code.gson:gson:2.8.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "cn.edu.hfut.dmic.webcollector:WebCollector:2.52",
+    "coordinatesV2": "cn.edu.hfut.dmic.webcollector:WebCollector:2.60-alpha",
+    "caller": "|java+constructor:///cn/edu/hfut/dmic/webcollector/model/CrawlDatum/CrawlDatum(java.lang.String)|",
+    "called": "|java+constructor:///com/google/gson/JsonObject/JsonObject()|",
+    "v1Body": [
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+method:///java/lang/System/currentTimeMillis()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/google/gson/JsonObject/JsonObject()|",
+      "|java+method:///java/lang/System/currentTimeMillis()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "com.google.code.gson:gson:2.8.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "cn.edu.hfut.dmic.webcollector:WebCollector:2.52",
+    "coordinatesV2": "cn.edu.hfut.dmic.webcollector:WebCollector:2.60-alpha",
+    "caller": "|java+method:///cn/edu/hfut/dmic/webcollector/util/CrawlDatumFormater/jsonStrToDatum(java.lang.String,java.lang.String)|",
+    "called": "|java+method:///com/google/gson/JsonElement/getAsInt()|",
+    "v1Body": [
+      "|java+method:///cn/edu/hfut/dmic/webcollector/model/CrawlDatum/setExecuteCount(int)|",
+      "|java+method:///java/lang/Object/toString()|",
+      "|java+method:///org/json/JSONArray/getLong(int)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/json/JSONArray/getInt(int)|",
+      "|java+method:///org/json/JSONObject/keySet()|",
+      "|java+method:///cn/edu/hfut/dmic/webcollector/model/CrawlDatum/setStatus(int)|",
+      "|java+constructor:///cn/edu/hfut/dmic/webcollector/model/CrawlDatum/CrawlDatum()|",
+      "|java+constructor:///org/json/JSONArray/JSONArray(java.lang.String)|",
+      "|java+method:///java/util/Set/iterator()|",
+      "|java+method:///cn/edu/hfut/dmic/webcollector/model/CrawlDatum/meta(java.lang.String,java.lang.String)|",
+      "|java+method:///org/json/JSONArray/getJSONObject(int)|",
+      "|java+method:///org/json/JSONArray/length()|",
+      "|java+method:///cn/edu/hfut/dmic/webcollector/model/CrawlDatum/url(java.lang.String)|",
+      "|java+method:///cn/edu/hfut/dmic/webcollector/model/CrawlDatum/setExecuteTime(long)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/json/JSONArray/getString(int)|",
+      "|java+method:///org/json/JSONObject/getString(java.lang.String)|",
+      "|java+method:///cn/edu/hfut/dmic/webcollector/model/CrawlDatum/key(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///cn/edu/hfut/dmic/webcollector/model/CrawlDatum/meta(com.google.gson.JsonObject)|",
+      "|java+method:///cn/edu/hfut/dmic/webcollector/model/CrawlDatum/setExecuteCount(int)|",
+      "|java+method:///com/google/gson/JsonElement/getAsLong()|",
+      "|java+method:///cn/edu/hfut/dmic/webcollector/model/CrawlDatum/setStatus(int)|",
+      "|java+constructor:///cn/edu/hfut/dmic/webcollector/model/CrawlDatum/CrawlDatum()|",
+      "|java+method:///cn/edu/hfut/dmic/webcollector/util/GsonUtils/parse(java.lang.String)|",
+      "|java+method:///cn/edu/hfut/dmic/webcollector/model/CrawlDatum/key(java.lang.String)|",
+      "|java+method:///com/google/gson/JsonElement/getAsJsonObject()|",
+      "|java+method:///com/google/gson/JsonArray/size()|",
+      "|java+method:///com/google/gson/JsonElement/getAsInt()|",
+      "|java+method:///com/google/gson/JsonElement/getAsJsonArray()|",
+      "|java+method:///com/google/gson/JsonElement/getAsString()|",
+      "|java+method:///com/google/gson/JsonArray/get(int)|",
+      "|java+method:///cn/edu/hfut/dmic/webcollector/model/CrawlDatum/url(java.lang.String)|",
+      "|java+method:///cn/edu/hfut/dmic/webcollector/model/CrawlDatum/setExecuteTime(long)|"
+    ],
+    "affectedLib": "com.google.code.gson:gson:2.8.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "cn.edu.hfut.dmic.webcollector:WebCollector:2.52",
+    "coordinatesV2": "cn.edu.hfut.dmic.webcollector:WebCollector:2.60-alpha",
+    "caller": "|java+method:///cn/edu/hfut/dmic/webcollector/model/CrawlDatum/meta(java.lang.String)|",
+    "called": "|java+method:///com/google/gson/JsonObject/get(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/util/HashMap/get(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/gson/JsonElement/getAsString()|",
+      "|java+method:///com/google/gson/JsonObject/get(java.lang.String)|"
+    ],
+    "affectedLib": "com.google.code.gson:gson:2.8.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "cn.edu.hfut.dmic.webcollector:WebCollector:2.52",
+    "coordinatesV2": "cn.edu.hfut.dmic.webcollector:WebCollector:2.60-alpha",
+    "caller": "|java+constructor:///cn/edu/hfut/dmic/webcollector/model/CrawlDatum/CrawlDatum()|",
+    "called": "|java+constructor:///com/google/gson/JsonObject/JsonObject()|",
+    "v1Body": [
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+method:///java/lang/System/currentTimeMillis()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/google/gson/JsonObject/JsonObject()|",
+      "|java+method:///java/lang/System/currentTimeMillis()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "com.google.code.gson:gson:2.8.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "cn.edu.hfut.dmic.webcollector:WebCollector:2.52",
+    "coordinatesV2": "cn.edu.hfut.dmic.webcollector:WebCollector:2.60-alpha",
+    "caller": "|java+method:///cn/edu/hfut/dmic/webcollector/model/CrawlDatum/meta(java.lang.String,java.lang.String)|",
+    "called": "|java+method:///com/google/gson/JsonObject/addProperty(java.lang.String,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/util/HashMap/put(java.lang.Object,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/gson/JsonObject/addProperty(java.lang.String,java.lang.String)|",
+      "|java+method:///cn/edu/hfut/dmic/webcollector/model/CrawlDatum/meta(java.lang.String,java.lang.String)|"
+    ],
+    "affectedLib": "com.google.code.gson:gson:2.8.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "cn.edu.hfut.dmic.webcollector:WebCollector:2.52",
+    "coordinatesV2": "cn.edu.hfut.dmic.webcollector:WebCollector:2.60-alpha",
+    "caller": "|java+constructor:///cn/edu/hfut/dmic/webcollector/model/CrawlDatum/CrawlDatum(java.lang.String,java.lang.String)|",
+    "called": "|java+constructor:///com/google/gson/JsonObject/JsonObject()|",
+    "v1Body": [
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+method:///cn/edu/hfut/dmic/webcollector/model/CrawlDatum/type(java.lang.String)|",
+      "|java+method:///java/lang/System/currentTimeMillis()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///cn/edu/hfut/dmic/webcollector/model/CrawlDatum/type(java.lang.String)|",
+      "|java+constructor:///com/google/gson/JsonObject/JsonObject()|",
+      "|java+method:///java/lang/System/currentTimeMillis()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "com.google.code.gson:gson:2.8.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "cn.edu.hfut.dmic.webcollector:WebCollector:2.52",
+    "coordinatesV2": "cn.edu.hfut.dmic.webcollector:WebCollector:2.60-alpha",
+    "caller": "|java+method:///cn/edu/hfut/dmic/webcollector/util/CrawlDatumFormater/datumToString(cn.edu.hfut.dmic.webcollector.model.CrawlDatum)|",
+    "called": "|java+method:///com/google/gson/JsonObject/entrySet()|",
+    "v1Body": [
+      "|java+method:///cn/edu/hfut/dmic/webcollector/model/CrawlDatum/getStatus()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///cn/edu/hfut/dmic/webcollector/model/CrawlDatum/url()|",
+      "|java+method:///java/util/HashMap/entrySet()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/util/Set/iterator()|",
+      "|java+constructor:///java/util/Date/Date(long)|",
+      "|java+method:///cn/edu/hfut/dmic/webcollector/model/CrawlDatum/key()|",
+      "|java+method:///java/util/Map$Entry/getValue()|",
+      "|java+method:///cn/edu/hfut/dmic/webcollector/model/CrawlDatum/getMetaData()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///cn/edu/hfut/dmic/webcollector/model/CrawlDatum/getExecuteCount()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/text/SimpleDateFormat/format(java.util.Date)|",
+      "|java+method:///java/util/Map$Entry/getKey()|",
+      "|java+method:///cn/edu/hfut/dmic/webcollector/model/CrawlDatum/getExecuteTime()|",
+      "|java+method:///java/lang/StringBuilder/append(int)|"
+    ],
+    "v2Body": [
+      "|java+method:///cn/edu/hfut/dmic/webcollector/model/CrawlDatum/getStatus()|",
+      "|java+method:///cn/edu/hfut/dmic/webcollector/model/CrawlDatum/meta()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///cn/edu/hfut/dmic/webcollector/model/CrawlDatum/url()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/util/Set/iterator()|",
+      "|java+constructor:///java/util/Date/Date(long)|",
+      "|java+method:///cn/edu/hfut/dmic/webcollector/model/CrawlDatum/key()|",
+      "|java+method:///com/google/gson/JsonObject/entrySet()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///cn/edu/hfut/dmic/webcollector/model/CrawlDatum/getExecuteCount()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/text/SimpleDateFormat/format(java.util.Date)|",
+      "|java+method:///java/util/Map$Entry/getKey()|",
+      "|java+method:///cn/edu/hfut/dmic/webcollector/model/CrawlDatum/getExecuteTime()|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/util/Map$Entry/getValue()|"
+    ],
+    "affectedLib": "com.google.code.gson:gson:2.8.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "cn.edu.hfut.dmic.webcollector:WebCollector:2.52",
+    "coordinatesV2": "cn.edu.hfut.dmic.webcollector:WebCollector:2.60-alpha",
+    "caller": "|java+method:///cn/edu/hfut/dmic/webcollector/example/DemoBingCrawler/visit(cn.edu.hfut.dmic.webcollector.model.Page,cn.edu.hfut.dmic.webcollector.model.CrawlDatums)|",
+    "called": "|java+method:///org/jsoup/nodes/Document/title()|",
+    "v1Body": [
+      "|java+method:///java/lang/Integer/intValue()|",
+      "|java+method:///org/jsoup/select/Elements/get(int)|",
+      "|java+method:///cn/edu/hfut/dmic/webcollector/model/CrawlDatums/add(cn.edu.hfut.dmic.webcollector.model.CrawlDatum)|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///org/jsoup/nodes/Element/attr(java.lang.String)|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/jsoup/nodes/Document/title()|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///org/jsoup/select/Elements/size()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/io/PrintStream/println(java.lang.String)|",
+      "|java+constructor:///cn/edu/hfut/dmic/webcollector/model/CrawlDatum/CrawlDatum(java.lang.String)|",
+      "|java+method:///cn/edu/hfut/dmic/webcollector/model/Page/url()|",
+      "|java+method:///cn/edu/hfut/dmic/webcollector/model/Page/select(java.lang.String)|",
+      "|java+method:///cn/edu/hfut/dmic/webcollector/model/Page/doc()|",
+      "|java+method:///cn/edu/hfut/dmic/webcollector/model/CrawlDatum/meta(java.lang.String,java.lang.String)|",
+      "|java+method:///cn/edu/hfut/dmic/webcollector/model/Page/meta(java.lang.String)|",
+      "|java+method:///java/lang/Integer/valueOf(java.lang.String)|",
+      "|java+method:///cn/edu/hfut/dmic/webcollector/model/Page/getContent()|"
+    ],
+    "v2Body": [
+      "|java+method:///cn/edu/hfut/dmic/webcollector/model/CrawlDatums/meta(java.lang.String,int)|",
+      "|java+method:///org/jsoup/select/Elements/get(int)|",
+      "|java+method:///cn/edu/hfut/dmic/webcollector/model/CrawlDatums/add(cn.edu.hfut.dmic.webcollector.model.CrawlDatum)|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///org/jsoup/nodes/Element/attr(java.lang.String)|",
+      "|java+method:///cn/edu/hfut/dmic/webcollector/model/CrawlDatum/type(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/jsoup/nodes/Document/title()|",
+      "|java+method:///cn/edu/hfut/dmic/webcollector/model/CrawlDatum/meta(java.lang.String,int)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/io/PrintStream/println(java.lang.String)|",
+      "|java+constructor:///cn/edu/hfut/dmic/webcollector/model/CrawlDatum/CrawlDatum(java.lang.String)|",
+      "|java+method:///cn/edu/hfut/dmic/webcollector/model/Page/url()|",
+      "|java+method:///cn/edu/hfut/dmic/webcollector/model/Page/select(java.lang.String)|",
+      "|java+method:///cn/edu/hfut/dmic/webcollector/model/CrawlDatums/meta(java.lang.String,java.lang.String)|",
+      "|java+method:///cn/edu/hfut/dmic/webcollector/model/Page/metaAsInt(java.lang.String)|",
+      "|java+method:///cn/edu/hfut/dmic/webcollector/model/Page/doc()|",
+      "|java+method:///cn/edu/hfut/dmic/webcollector/model/CrawlDatum/meta(java.lang.String,java.lang.String)|",
+      "|java+method:///cn/edu/hfut/dmic/webcollector/model/Page/meta(java.lang.String)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///cn/edu/hfut/dmic/webcollector/model/Page/content()|",
+      "|java+method:///org/jsoup/select/Elements/size()|",
+      "|java+method:///cn/edu/hfut/dmic/webcollector/model/Page/matchType(java.lang.String)|"
+    ],
+    "affectedLib": "org.jsoup:jsoup:1.10.3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "cn.edu.hfut.dmic.webcollector:WebCollector:2.52",
+    "coordinatesV2": "cn.edu.hfut.dmic.webcollector:WebCollector:2.60-alpha",
+    "caller": "|java+method:///cn/edu/hfut/dmic/webcollector/example/DemoMetaCrawler/visit(cn.edu.hfut.dmic.webcollector.model.Page,cn.edu.hfut.dmic.webcollector.model.CrawlDatums)|",
+    "called": "|java+method:///org/jsoup/nodes/Element/text()|",
+    "v1Body": [
+      "|java+method:///org/jsoup/nodes/Element/text()|",
+      "|java+method:///cn/edu/hfut/dmic/webcollector/model/Page/links(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///cn/edu/hfut/dmic/webcollector/model/Page/meta(java.lang.String)|",
+      "|java+method:///cn/edu/hfut/dmic/webcollector/model/CrawlDatums/add(cn.edu.hfut.dmic.webcollector.model.Links)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/io/PrintStream/println(java.lang.String)|",
+      "|java+method:///org/jsoup/select/Elements/first()|",
+      "|java+method:///cn/edu/hfut/dmic/webcollector/model/Page/select(java.lang.String)|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///cn/edu/hfut/dmic/webcollector/model/CrawlDatums/meta(java.lang.String,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/jsoup/nodes/Element/text()|",
+      "|java+method:///cn/edu/hfut/dmic/webcollector/model/Page/links(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///cn/edu/hfut/dmic/webcollector/model/Page/meta(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/io/PrintStream/println(java.lang.String)|",
+      "|java+method:///org/jsoup/select/Elements/first()|",
+      "|java+method:///cn/edu/hfut/dmic/webcollector/model/CrawlDatums/add(java.lang.Iterable)|",
+      "|java+method:///cn/edu/hfut/dmic/webcollector/model/Page/select(java.lang.String)|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///cn/edu/hfut/dmic/webcollector/model/CrawlDatums/meta(java.lang.String,java.lang.String)|"
+    ],
+    "affectedLib": "org.jsoup:jsoup:1.10.3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "cn.edu.hfut.dmic.webcollector:WebCollector:2.52",
+    "coordinatesV2": "cn.edu.hfut.dmic.webcollector:WebCollector:2.60-alpha",
+    "caller": "|java+method:///cn/edu/hfut/dmic/webcollector/example/DemoTypeCrawler/visit(cn.edu.hfut.dmic.webcollector.model.Page,cn.edu.hfut.dmic.webcollector.model.CrawlDatums)|",
+    "called": "|java+method:///org/jsoup/nodes/Element/text()|",
+    "v1Body": [
+      "|java+method:///org/jsoup/nodes/Element/text()|",
+      "|java+method:///cn/edu/hfut/dmic/webcollector/model/Page/links(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///cn/edu/hfut/dmic/webcollector/model/CrawlDatums/add(cn.edu.hfut.dmic.webcollector.model.Links,java.lang.String)|",
+      "|java+method:///cn/edu/hfut/dmic/webcollector/model/Page/matchType(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/io/PrintStream/println(java.lang.String)|",
+      "|java+method:///org/jsoup/select/Elements/first()|",
+      "|java+method:///cn/edu/hfut/dmic/webcollector/model/Page/select(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///cn/edu/hfut/dmic/webcollector/model/CrawlDatums/add(java.lang.Iterable,java.lang.String)|",
+      "|java+method:///org/jsoup/nodes/Element/text()|",
+      "|java+method:///cn/edu/hfut/dmic/webcollector/model/Page/links(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///cn/edu/hfut/dmic/webcollector/model/Page/matchType(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/io/PrintStream/println(java.lang.String)|",
+      "|java+method:///org/jsoup/select/Elements/first()|",
+      "|java+method:///cn/edu/hfut/dmic/webcollector/model/Page/select(java.lang.String)|"
+    ],
+    "affectedLib": "org.jsoup:jsoup:1.10.3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "cn.edu.hfut.dmic.webcollector:WebCollector:2.52",
+    "coordinatesV2": "cn.edu.hfut.dmic.webcollector:WebCollector:2.60-alpha",
+    "caller": "|java+constructor:///cn/edu/hfut/dmic/webcollector/util/MysqlHelper/MysqlHelper(java.lang.String,java.lang.String,java.lang.String,int,int)|",
+    "called": "|java+constructor:///org/springframework/jdbc/core/JdbcTemplate/JdbcTemplate(javax.sql.DataSource)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/dbcp/BasicDataSource/setUrl(java.lang.String)|",
+      "|java+method:///org/apache/commons/dbcp/BasicDataSource/setUsername(java.lang.String)|",
+      "|java+constructor:///org/springframework/jdbc/core/JdbcTemplate/JdbcTemplate(javax.sql.DataSource)|",
+      "|java+method:///org/apache/commons/dbcp/BasicDataSource/setMaxActive(int)|",
+      "|java+constructor:///org/apache/commons/dbcp/BasicDataSource/BasicDataSource()|",
+      "|java+method:///org/apache/commons/dbcp/BasicDataSource/setInitialSize(int)|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///org/apache/commons/dbcp/BasicDataSource/setPassword(java.lang.String)|",
+      "|java+method:///org/apache/commons/dbcp/BasicDataSource/setDriverClassName(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/springframework/jdbc/core/JdbcTemplate/JdbcTemplate(javax.sql.DataSource)|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///cn/edu/hfut/dmic/webcollector/util/MysqlHelper/createDataSource(java.lang.String,java.lang.String,java.lang.String,int,int)|"
+    ],
+    "affectedLib": "org.springframework:spring-jdbc:4.3.10.RELEASE",
+    "change": "UPDATED"
+  }
+]

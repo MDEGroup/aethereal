@@ -1,0 +1,62 @@
+[
+  {
+    "coordinatesV1": "org.fcrepo:fcrepo-jms:4.0.0-beta-01",
+    "coordinatesV2": "org.fcrepo:fcrepo-jms:4.0.0-alpha-5",
+    "caller": "|java+method:///org/fcrepo/jms/headers/DefaultMessageFactory/getMessage(org.fcrepo.kernel.observer.FedoraEvent,javax.jms.Session)|",
+    "called": "|java+method:///org/fcrepo/kernel/observer/FedoraEvent/getPath()|",
+    "v1Body": [
+      "|java+method:///org/fcrepo/kernel/observer/FedoraEvent/getTypes()|",
+      "|java+method:///org/fcrepo/kernel/observer/FedoraEvent/getPath()|",
+      "|java+method:///org/fcrepo/jms/headers/DefaultMessageFactory/getEventURIs(java.util.Set)|",
+      "|java+method:///javax/jms/Message/setLongProperty(java.lang.String,long)|",
+      "|java+method:///org/fcrepo/kernel/observer/FedoraEvent/getDate()|",
+      "|java+method:///javax/jms/Session/createMessage()|",
+      "|java+method:///javax/jms/Message/setStringProperty(java.lang.String,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/fcrepo/kernel/observer/FedoraEvent/getTypes()|",
+      "|java+method:///org/fcrepo/kernel/observer/FedoraEvent/getPath()|",
+      "|java+method:///javax/jms/Message/setLongProperty(java.lang.String,long)|",
+      "|java+method:///org/fcrepo/kernel/observer/FedoraEvent/getDate()|",
+      "|java+method:///com/google/common/base/Joiner/join(java.lang.Iterable)|",
+      "|java+method:///org/fcrepo/jms/headers/DefaultMessageFactory/getEventURIs(java.util.Set)|",
+      "|java+method:///org/slf4j/Logger/trace(java.lang.String,java.lang.Object)|",
+      "|java+method:///javax/jms/Session/createMessage()|",
+      "|java+method:///javax/jms/Message/setStringProperty(java.lang.String,java.lang.String)|",
+      "|java+method:///org/fcrepo/kernel/observer/FedoraEvent/getProperties()|",
+      "|java+method:///com/google/common/base/Joiner/on(char)|"
+    ],
+    "affectedLib": "org.fcrepo:fcrepo-kernel:4.0.0-alpha-5",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.fcrepo:fcrepo-jms:4.0.0-alpha-5",
+    "coordinatesV2": "org.fcrepo:fcrepo-jms:4.0.0-beta-01",
+    "caller": "|java+method:///org/fcrepo/jms/headers/DefaultMessageFactory/getMessage(org.fcrepo.kernel.observer.FedoraEvent,javax.jms.Session)|",
+    "called": "|java+method:///com/google/common/base/Joiner/on(char)|",
+    "v1Body": [
+      "|java+method:///org/fcrepo/kernel/observer/FedoraEvent/getTypes()|",
+      "|java+method:///org/fcrepo/kernel/observer/FedoraEvent/getPath()|",
+      "|java+method:///org/fcrepo/jms/headers/DefaultMessageFactory/getEventURIs(java.util.Set)|",
+      "|java+method:///javax/jms/Message/setLongProperty(java.lang.String,long)|",
+      "|java+method:///org/fcrepo/kernel/observer/FedoraEvent/getDate()|",
+      "|java+method:///javax/jms/Session/createMessage()|",
+      "|java+method:///javax/jms/Message/setStringProperty(java.lang.String,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/fcrepo/kernel/observer/FedoraEvent/getTypes()|",
+      "|java+method:///org/fcrepo/kernel/observer/FedoraEvent/getPath()|",
+      "|java+method:///javax/jms/Message/setLongProperty(java.lang.String,long)|",
+      "|java+method:///org/fcrepo/kernel/observer/FedoraEvent/getDate()|",
+      "|java+method:///com/google/common/base/Joiner/join(java.lang.Iterable)|",
+      "|java+method:///org/fcrepo/jms/headers/DefaultMessageFactory/getEventURIs(java.util.Set)|",
+      "|java+method:///org/slf4j/Logger/trace(java.lang.String,java.lang.Object)|",
+      "|java+method:///javax/jms/Session/createMessage()|",
+      "|java+method:///javax/jms/Message/setStringProperty(java.lang.String,java.lang.String)|",
+      "|java+method:///org/fcrepo/kernel/observer/FedoraEvent/getProperties()|",
+      "|java+method:///com/google/common/base/Joiner/on(char)|"
+    ],
+    "affectedLib": "com.google.guava:guava:17.0",
+    "change": "UPDATED"
+  }
+]

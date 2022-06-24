@@ -1,0 +1,377 @@
+[
+  {
+    "coordinatesV1": "org.openengsb.core:openengsb-core-services:1.3.0.M2",
+    "coordinatesV2": "org.openengsb.core:openengsb-core-services:1.3.0.M3",
+    "caller": "|java+method:///org/openengsb/core/services/internal/ConnectorRegistrationManagerImpl/finishCreatingInstance(org.openengsb.core.api.model.ConnectorId,org.openengsb.core.api.model.ConnectorDescription,org.openengsb.core.api.DomainProvider,org.openengsb.core.api.ConnectorInstanceFactory)|",
+    "called": "|java+method:///org/openengsb/core/api/model/ConnectorId/toString()|",
+    "v1Body": [
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/openengsb/core/api/model/ConnectorId/toString()|",
+      "|java+method:///org/openengsb/core/api/DomainProvider/getDomainInterface()|",
+      "|java+method:///org/osgi/framework/BundleContext/registerService(java.lang.String%5B%5D,java.lang.Object,java.util.Dictionary)|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+method:///org/openengsb/core/api/ConnectorInstanceFactory/createNewInstance(java.lang.String)|",
+      "|java+method:///org/openengsb/core/api/model/ConnectorDescription/getProperties()|",
+      "|java+method:///org/openengsb/core/services/internal/ConnectorRegistrationManagerImpl/populatePropertiesWithRequiredAttributes(java.util.Dictionary,org.openengsb.core.api.model.ConnectorId)|",
+      "|java+method:///org/openengsb/core/api/ConnectorInstanceFactory/applyAttributes(org.openengsb.core.api.Domain,java.util.Map)|",
+      "|java+method:///org/openengsb/core/api/model/ConnectorDescription/getAttributes()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/openengsb/core/api/DomainProvider/getDomainInterface()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/osgi/framework/BundleContext/registerService(java.lang.String%5B%5D,java.lang.Object,java.util.Dictionary)|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/openengsb/core/api/model/ConnectorDescription/getProperties()|",
+      "|java+method:///org/openengsb/core/api/model/ConnectorDescription/getAttributes()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///java/lang/IllegalStateException/IllegalStateException(java.lang.String)|",
+      "|java+method:///org/openengsb/core/api/model/ConnectorId/toString()|",
+      "|java+method:///org/openengsb/core/api/ConnectorInstanceFactory/createNewInstance(java.lang.String)|",
+      "|java+method:///org/openengsb/core/common/util/MapAsDictionary/wrap(java.util.Map)|",
+      "|java+method:///org/openengsb/core/services/internal/ConnectorRegistrationManagerImpl/populatePropertiesWithRequiredAttributes(java.util.Map,org.openengsb.core.api.model.ConnectorId)|",
+      "|java+method:///org/openengsb/core/api/ConnectorInstanceFactory/applyAttributes(org.openengsb.core.api.Domain,java.util.Map)|"
+    ],
+    "affectedLib": "org.openengsb.core:openengsb-core-api:1.3.0.M3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.openengsb.core:openengsb-core-services:1.3.0.M2",
+    "coordinatesV2": "org.openengsb.core:openengsb-core-services:1.3.0.M3",
+    "caller": "|java+method:///org/openengsb/core/services/internal/ContextServiceImpl/getAvailableContexts()|",
+    "called": "|java+method:///org/openengsb/core/api/model/ContextId/getContextIdWildCard()|",
+    "v1Body": [
+      "|java+method:///org/openengsb/core/api/context/Context/getChildren()|",
+      "|java+constructor:///java/util/ArrayList/ArrayList(java.util.Collection)|",
+      "|java+method:///java/util/Map/keySet()|",
+      "|java+method:///java/util/Collections/sort(java.util.List)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///org/openengsb/core/api/model/ContextId/getContextIdWildCard()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/openengsb/core/services/internal/ContextServiceImpl/getContextConfigurationsOrEmptyOnError(java.util.Map)|",
+      "|java+method:///org/openengsb/core/api/model/ContextConfiguration/getMetaData()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/openengsb/core/api/model/ContextId/getId()|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///org/openengsb/core/api/model/ContextId/fromMetaData(java.util.Map)|"
+    ],
+    "affectedLib": "org.openengsb.core:openengsb-core-api:1.3.0.M3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.openengsb.core:openengsb-core-services:1.3.0.M2",
+    "coordinatesV2": "org.openengsb.core:openengsb-core-services:1.3.0.M3",
+    "caller": "|java+method:///org/openengsb/core/services/internal/ContextServiceImpl/createContext(java.lang.String)|",
+    "called": "|java+constructor:///org/openengsb/core/api/model/ContextId/ContextId(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/openengsb/core/api/context/Context/createChild(java.lang.String)|",
+      "|java+method:///org/openengsb/core/services/internal/ContextServiceImpl/storeContext()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///org/openengsb/core/api/model/ContextConfiguration/ContextConfiguration(java.util.Map,java.util.Map)|",
+      "|java+constructor:///org/openengsb/core/api/model/ContextId/ContextId(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/openengsb/core/services/internal/ContextServiceImpl/getConfigPersistenceService()|",
+      "|java+method:///org/openengsb/core/api/persistence/ConfigPersistenceService/persist(org.openengsb.core.api.model.ConfigItem)|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/openengsb/core/api/model/ContextId/toMetaData()|"
+    ],
+    "affectedLib": "org.openengsb.core:openengsb-core-api:1.3.0.M3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.openengsb.core:openengsb-core-services:1.3.0.M2",
+    "coordinatesV2": "org.openengsb.core:openengsb-core-services:1.3.0.M3",
+    "caller": "|java+method:///org/openengsb/core/services/internal/ContextFilePersistenceService/getFileNameForMetaData(java.util.Map)|",
+    "called": "|java+method:///org/openengsb/core/api/model/ContextId/fromMetaData(java.util.Map)|",
+    "v1Body": [
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///org/openengsb/core/services/internal/ContextFilePersistenceService/getContextIdFromMetaData(java.util.Map)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///org/openengsb/core/api/model/ContextId/getId()|",
+      "|java+method:///org/openengsb/core/api/model/ContextId/fromMetaData(java.util.Map)|"
+    ],
+    "affectedLib": "org.openengsb.core:openengsb-core-api:1.3.0.M3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.openengsb.core:openengsb-core-services:1.3.0.M2",
+    "coordinatesV2": "org.openengsb.core:openengsb-core-services:1.3.0.M3",
+    "caller": "|java+method:///org/openengsb/core/services/internal/deployer/connector/ConnectorDeployerService/install(java.io.File)|",
+    "called": "|java+constructor:///org/openengsb/core/api/model/ConnectorDescription/ConnectorDescription(java.util.Map,java.util.Map)|",
+    "v1Body": [
+      "|java+method:///org/openengsb/core/services/internal/deployer/connector/ConnectorFile/getAttributes()|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+constructor:///java/util/HashMap/HashMap(java.util.Map)|",
+      "|java+method:///java/util/Dictionary/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/openengsb/core/services/internal/deployer/connector/ConnectorDeployerService/login()|",
+      "|java+constructor:///org/openengsb/core/api/model/ConnectorDescription/ConnectorDescription(java.util.Map,java.util.Dictionary)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/openengsb/core/services/internal/deployer/connector/ConnectorFile/getProperties()|",
+      "|java+method:///org/openengsb/core/services/internal/deployer/connector/ConnectorFile/isRootService(java.io.File)|",
+      "|java+constructor:///java/util/Hashtable/Hashtable(java.util.Map)|",
+      "|java+method:///java/util/Dictionary/get(java.lang.Object)|",
+      "|java+method:///org/openengsb/core/api/ConnectorManager/create(org.openengsb.core.api.model.ConnectorId,org.openengsb.core.api.model.ConnectorDescription)|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+method:///java/io/File/getAbsolutePath()|",
+      "|java+method:///org/openengsb/core/services/internal/deployer/connector/ConnectorFile/getConnectorId()|",
+      "|java+method:///org/openengsb/core/services/internal/deployer/connector/ConnectorDeployerService/logout()|",
+      "|java+method:///java/lang/Boolean/booleanValue()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/openengsb/core/services/internal/deployer/connector/ConnectorFile/getAttributes()|",
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+constructor:///java/util/HashMap/HashMap(java.util.Map)|",
+      "|java+method:///org/openengsb/core/services/internal/deployer/connector/ConnectorDeployerService/login()|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/openengsb/core/services/internal/deployer/connector/ConnectorFile/getProperties()|",
+      "|java+method:///org/openengsb/core/services/internal/deployer/connector/ConnectorFile/isRootService(java.io.File)|",
+      "|java+constructor:///java/util/Hashtable/Hashtable(java.util.Map)|",
+      "|java+method:///org/openengsb/core/api/ConnectorManager/create(org.openengsb.core.api.model.ConnectorId,org.openengsb.core.api.model.ConnectorDescription)|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+constructor:///org/openengsb/core/api/model/ConnectorDescription/ConnectorDescription(java.util.Map,java.util.Map)|",
+      "|java+method:///java/io/File/getAbsolutePath()|",
+      "|java+method:///org/openengsb/core/services/internal/deployer/connector/ConnectorFile/getConnectorId()|",
+      "|java+method:///org/openengsb/core/services/internal/deployer/connector/ConnectorDeployerService/logout()|",
+      "|java+method:///java/lang/Boolean/booleanValue()|"
+    ],
+    "affectedLib": "org.openengsb.core:openengsb-core-api:1.3.0.M3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.openengsb.core:openengsb-core-services:1.3.0.M2",
+    "coordinatesV2": "org.openengsb.core:openengsb-core-services:1.3.0.M3",
+    "caller": "|java+method:///org/openengsb/core/services/internal/ContextServiceImpl/getContext()|",
+    "called": "|java+method:///org/openengsb/core/api/context/ContextHolder/getCurrentContextId()|",
+    "v1Body": [
+      "|java+method:///org/openengsb/core/api/context/Context/getChild(java.lang.String)|",
+      "|java+method:///org/openengsb/core/api/context/ContextHolder/get()|",
+      "|java+method:///org/openengsb/core/api/context/ContextHolder/getCurrentContextId()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/openengsb/core/api/context/ContextHolder/get()|",
+      "|java+method:///org/openengsb/core/services/internal/ContextServiceImpl/getContextById(java.lang.String)|",
+      "|java+method:///org/openengsb/core/api/context/ContextHolder/getCurrentContextId()|"
+    ],
+    "affectedLib": "org.openengsb.core:openengsb-core-api:1.3.0.M3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.openengsb.core:openengsb-core-services:1.3.0.M2",
+    "coordinatesV2": "org.openengsb.core:openengsb-core-services:1.3.0.M3",
+    "caller": "|java+method:///org/openengsb/core/services/internal/deployer/connector/ConnectorDeployerService/applyChanges(org.openengsb.core.api.model.ConnectorDescription,org.openengsb.core.services.internal.deployer.connector.ConnectorFile$ChangeSet)|",
+    "called": "|java+constructor:///org/openengsb/core/api/model/ConnectorDescription/ConnectorDescription(java.util.Map,java.util.Map)|",
+    "v1Body": [
+      "|java+constructor:///java/util/Hashtable/Hashtable(java.util.Map)|",
+      "|java+method:///org/openengsb/core/services/internal/deployer/connector/ConnectorFile$ChangeSet/getChangedProperties()|",
+      "|java+method:///org/openengsb/core/services/internal/deployer/connector/ConnectorFile$ChangeSet/getChangedAttributes()|",
+      "|java+method:///org/openengsb/core/common/util/DictionaryAsMap/wrap(java.util.Dictionary)|",
+      "|java+method:///org/openengsb/core/common/util/ConfigUtils/updateMap(java.util.Map,com.google.common.collect.MapDifference)|",
+      "|java+constructor:///org/openengsb/core/api/model/ConnectorDescription/ConnectorDescription(java.util.Map,java.util.Dictionary)|",
+      "|java+method:///org/openengsb/core/api/model/ConnectorDescription/getProperties()|",
+      "|java+method:///org/openengsb/core/api/model/ConnectorDescription/getAttributes()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/util/Hashtable/Hashtable(java.util.Map)|",
+      "|java+method:///org/openengsb/core/services/internal/deployer/connector/ConnectorFile$ChangeSet/getChangedProperties()|",
+      "|java+method:///org/openengsb/core/services/internal/deployer/connector/ConnectorFile$ChangeSet/getChangedAttributes()|",
+      "|java+constructor:///org/openengsb/core/api/model/ConnectorDescription/ConnectorDescription(java.util.Map,java.util.Map)|",
+      "|java+method:///org/openengsb/core/common/util/ConfigUtils/updateMap(java.util.Map,com.google.common.collect.MapDifference)|",
+      "|java+method:///org/openengsb/core/api/model/ConnectorDescription/getProperties()|",
+      "|java+method:///org/openengsb/core/api/model/ConnectorDescription/getAttributes()|"
+    ],
+    "affectedLib": "org.openengsb.core:openengsb-core-api:1.3.0.M3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.openengsb.core:openengsb-core-services:1.3.0.M2",
+    "coordinatesV2": "org.openengsb.core:openengsb-core-services:1.3.0.M3",
+    "caller": "|java+method:///org/openengsb/core/services/internal/WorkflowEditorServiceImpl/createWorkflow(java.lang.String)|",
+    "called": "|java+constructor:///org/openengsb/core/api/workflow/model/WorkflowRepresentation/WorkflowRepresentation()|",
+    "v1Body": [
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/openengsb/core/api/workflow/model/WorkflowRepresentation/setName(java.lang.String)|",
+      "|java+constructor:///org/openengsb/core/api/workflow/model/WorkflowRepresentation/WorkflowRepresentation()|",
+      "|java+method:///java/util/Map/containsKey(java.lang.Object)|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/openengsb/core/api/workflow/model/WorkflowRepresentation/setName(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///org/openengsb/core/api/workflow/model/WorkflowRepresentation/WorkflowRepresentation()|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/util/Map/containsKey(java.lang.Object)|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "affectedLib": "org.openengsb.core:openengsb-core-api:1.3.0.M3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.openengsb.core:openengsb-core-services:1.3.0.M2",
+    "coordinatesV2": "org.openengsb.core:openengsb-core-services:1.3.0.M3",
+    "caller": "|java+method:///org/openengsb/core/services/internal/ContextFilePersistenceService/loadContextConfigurationFromFile(java.io.File)|",
+    "called": "|java+constructor:///org/openengsb/core/api/model/ContextId/ContextId(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/io/FilenameUtils/removeExtension(java.lang.String)|",
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/io/File/getName()|",
+      "|java+constructor:///org/openengsb/core/api/model/ContextConfiguration/ContextConfiguration(java.util.Map,java.util.Map)|",
+      "|java+constructor:///java/util/HashMap/HashMap()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/io/FilenameUtils/removeExtension(java.lang.String)|",
+      "|java+method:///java/io/File/getName()|",
+      "|java+constructor:///org/openengsb/core/api/model/ContextConfiguration/ContextConfiguration(java.util.Map,java.util.Map)|",
+      "|java+constructor:///org/openengsb/core/api/model/ContextId/ContextId(java.lang.String)|",
+      "|java+method:///org/openengsb/core/api/model/ContextId/toMetaData()|"
+    ],
+    "affectedLib": "org.openengsb.core:openengsb-core-api:1.3.0.M3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.openengsb.core:openengsb-core-services:1.3.0.M2",
+    "coordinatesV2": "org.openengsb.core:openengsb-core-services:1.3.0.M3",
+    "caller": "|java+method:///org/openengsb/core/services/internal/ProxyConnector/invoke(java.lang.Object,java.lang.reflect.Method,java.lang.Object%5B%5D)|",
+    "called": "|java+constructor:///org/openengsb/core/api/remote/MethodCall/MethodCall(java.lang.String,java.lang.Object%5B%5D,java.util.Map,java.util.List)|",
+    "v1Body": [
+      "|java+method:///com/google/common/collect/Lists/transform(java.util.List,com.google.common.base.Function)|",
+      "|java+constructor:///java/lang/IllegalStateException/IllegalStateException(java.lang.String)|",
+      "|java+method:///java/lang/Object/toString()|",
+      "|java+method:///java/util/Arrays/asList(java.lang.Object%5B%5D)|",
+      "|java+method:///org/openengsb/core/api/remote/OutgoingPortUtilService/sendMethodCallWithResult(java.lang.String,java.lang.String,org.openengsb.core.api.remote.MethodCall)|",
+      "|java+method:///org/openengsb/core/api/remote/MethodResult/getArg()|",
+      "|java+method:///org/openengsb/core/api/remote/MethodResult/getType()|",
+      "|java+method:///com/google/common/base/Functions/toStringFunction()|",
+      "|java+method:///java/lang/reflect/Method/getParameterTypes()|",
+      "|java+method:///java/lang/reflect/Method/invoke(java.lang.Object,java.lang.Object%5B%5D)|",
+      "|java+method:///org/openengsb/core/api/remote/MethodResult$ReturnType/ordinal()|",
+      "|java+method:///java/lang/reflect/Method/getName()|",
+      "|java+method:///java/util/List/contains(java.lang.Object)|",
+      "|java+method:///java/lang/reflect/Method/getDeclaringClass()|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String)|",
+      "|java+constructor:///org/openengsb/core/api/remote/MethodCall/MethodCall(java.lang.String,java.lang.Object%5B%5D,java.util.Map,java.util.List)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+constructor:///java/lang/IllegalStateException/IllegalStateException(java.lang.String)|",
+      "|java+method:///java/lang/Object/toString()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/util/Arrays/asList(java.lang.Object%5B%5D)|",
+      "|java+method:///org/openengsb/core/api/remote/OutgoingPortUtilService/sendMethodCallWithResult(java.lang.String,java.lang.String,org.openengsb.core.api.remote.MethodCall)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/openengsb/core/api/remote/MethodResult/getType()|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///java/lang/reflect/Method/getParameterTypes()|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///java/lang/reflect/Method/invoke(java.lang.Object,java.lang.Object%5B%5D)|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+method:///org/openengsb/core/api/remote/MethodResult/getArg()|",
+      "|java+method:///org/openengsb/core/api/remote/MethodResult$ReturnType/ordinal()|",
+      "|java+method:///java/lang/reflect/Method/getName()|",
+      "|java+method:///java/util/List/contains(java.lang.Object)|",
+      "|java+method:///java/lang/reflect/Method/getDeclaringClass()|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String)|",
+      "|java+constructor:///org/openengsb/core/api/remote/MethodCall/MethodCall(java.lang.String,java.lang.Object%5B%5D,java.util.Map,java.util.List)|"
+    ],
+    "affectedLib": "org.openengsb.core:openengsb-core-api:1.3.0.M3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.openengsb.core:openengsb-core-services:1.3.0.M2",
+    "coordinatesV2": "org.openengsb.core:openengsb-core-services:1.3.0.M3",
+    "caller": "|java+method:///org/openengsb/core/services/internal/ConnectorRegistrationManagerImpl/finishCreatingInstance(org.openengsb.core.api.model.ConnectorId,org.openengsb.core.api.model.ConnectorDescription,org.openengsb.core.api.DomainProvider,org.openengsb.core.api.ConnectorInstanceFactory)|",
+    "called": "|java+method:///org/openengsb/core/common/util/MapAsDictionary/wrap(java.util.Map)|",
+    "v1Body": [
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/openengsb/core/api/model/ConnectorId/toString()|",
+      "|java+method:///org/openengsb/core/api/DomainProvider/getDomainInterface()|",
+      "|java+method:///org/osgi/framework/BundleContext/registerService(java.lang.String%5B%5D,java.lang.Object,java.util.Dictionary)|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+method:///org/openengsb/core/api/ConnectorInstanceFactory/createNewInstance(java.lang.String)|",
+      "|java+method:///org/openengsb/core/api/model/ConnectorDescription/getProperties()|",
+      "|java+method:///org/openengsb/core/services/internal/ConnectorRegistrationManagerImpl/populatePropertiesWithRequiredAttributes(java.util.Dictionary,org.openengsb.core.api.model.ConnectorId)|",
+      "|java+method:///org/openengsb/core/api/ConnectorInstanceFactory/applyAttributes(org.openengsb.core.api.Domain,java.util.Map)|",
+      "|java+method:///org/openengsb/core/api/model/ConnectorDescription/getAttributes()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/openengsb/core/api/DomainProvider/getDomainInterface()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/osgi/framework/BundleContext/registerService(java.lang.String%5B%5D,java.lang.Object,java.util.Dictionary)|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/openengsb/core/api/model/ConnectorDescription/getProperties()|",
+      "|java+method:///org/openengsb/core/api/model/ConnectorDescription/getAttributes()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///java/lang/IllegalStateException/IllegalStateException(java.lang.String)|",
+      "|java+method:///org/openengsb/core/api/model/ConnectorId/toString()|",
+      "|java+method:///org/openengsb/core/api/ConnectorInstanceFactory/createNewInstance(java.lang.String)|",
+      "|java+method:///org/openengsb/core/common/util/MapAsDictionary/wrap(java.util.Map)|",
+      "|java+method:///org/openengsb/core/services/internal/ConnectorRegistrationManagerImpl/populatePropertiesWithRequiredAttributes(java.util.Map,org.openengsb.core.api.model.ConnectorId)|",
+      "|java+method:///org/openengsb/core/api/ConnectorInstanceFactory/applyAttributes(org.openengsb.core.api.Domain,java.util.Map)|"
+    ],
+    "affectedLib": "org.openengsb.core:openengsb-core-common:1.3.0.M3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.openengsb.core:openengsb-core-services:1.3.0.M2",
+    "coordinatesV2": "org.openengsb.core:openengsb-core-services:1.3.0.M3",
+    "caller": "|java+method:///org/openengsb/core/services/internal/deployer/connector/ConnectorDeployerService/applyChanges(org.openengsb.core.api.model.ConnectorDescription,org.openengsb.core.services.internal.deployer.connector.ConnectorFile$ChangeSet)|",
+    "called": "|java+method:///org/openengsb/core/common/util/ConfigUtils/updateMap(java.util.Map,com.google.common.collect.MapDifference)|",
+    "v1Body": [
+      "|java+constructor:///java/util/Hashtable/Hashtable(java.util.Map)|",
+      "|java+method:///org/openengsb/core/services/internal/deployer/connector/ConnectorFile$ChangeSet/getChangedProperties()|",
+      "|java+method:///org/openengsb/core/services/internal/deployer/connector/ConnectorFile$ChangeSet/getChangedAttributes()|",
+      "|java+method:///org/openengsb/core/common/util/DictionaryAsMap/wrap(java.util.Dictionary)|",
+      "|java+method:///org/openengsb/core/common/util/ConfigUtils/updateMap(java.util.Map,com.google.common.collect.MapDifference)|",
+      "|java+constructor:///org/openengsb/core/api/model/ConnectorDescription/ConnectorDescription(java.util.Map,java.util.Dictionary)|",
+      "|java+method:///org/openengsb/core/api/model/ConnectorDescription/getProperties()|",
+      "|java+method:///org/openengsb/core/api/model/ConnectorDescription/getAttributes()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/util/Hashtable/Hashtable(java.util.Map)|",
+      "|java+method:///org/openengsb/core/services/internal/deployer/connector/ConnectorFile$ChangeSet/getChangedProperties()|",
+      "|java+method:///org/openengsb/core/services/internal/deployer/connector/ConnectorFile$ChangeSet/getChangedAttributes()|",
+      "|java+constructor:///org/openengsb/core/api/model/ConnectorDescription/ConnectorDescription(java.util.Map,java.util.Map)|",
+      "|java+method:///org/openengsb/core/common/util/ConfigUtils/updateMap(java.util.Map,com.google.common.collect.MapDifference)|",
+      "|java+method:///org/openengsb/core/api/model/ConnectorDescription/getProperties()|",
+      "|java+method:///org/openengsb/core/api/model/ConnectorDescription/getAttributes()|"
+    ],
+    "affectedLib": "org.openengsb.core:openengsb-core-common:1.3.0.M3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.openengsb.core:openengsb-core-services:1.3.0.M2",
+    "coordinatesV2": "org.openengsb.core:openengsb-core-services:1.3.0.M3",
+    "caller": "|java+method:///org/openengsb/core/services/internal/RequestHandlerImpl/retrieveOpenEngSBService(org.openengsb.core.api.remote.MethodCall)|",
+    "called": "|java+method:///org/openengsb/core/common/OpenEngSBCoreServices/getServiceUtilsService()|",
+    "v1Body": [
+      "|java+method:///org/openengsb/core/services/internal/RequestHandlerImpl/createFilterForServiceId(java.lang.String)|",
+      "|java+method:///org/openengsb/core/api/OsgiUtilsService/getService(org.osgi.framework.Filter)|",
+      "|java+method:///org/openengsb/core/common/OpenEngSBCoreServices/getServiceUtilsService()|",
+      "|java+method:///org/openengsb/core/services/internal/RequestHandlerImpl/retrieveServiceId(org.openengsb.core.api.remote.MethodCall)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/openengsb/core/services/internal/RequestHandlerImpl/createFilterString(java.lang.String,java.lang.String)|",
+      "|java+method:///org/openengsb/core/api/remote/MethodCall/getMetaData()|",
+      "|java+method:///org/openengsb/core/api/OsgiUtilsService/getService(java.lang.String)|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+method:///org/openengsb/core/common/OpenEngSBCoreServices/getServiceUtilsService()|"
+    ],
+    "affectedLib": "org.openengsb.core:openengsb-core-common:1.3.0.M3",
+    "change": "UPDATED"
+  }
+]

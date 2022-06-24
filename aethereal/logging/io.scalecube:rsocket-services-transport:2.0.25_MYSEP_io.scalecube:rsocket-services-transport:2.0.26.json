@@ -1,0 +1,194 @@
+[
+  {
+    "coordinatesV1": "io.scalecube:rsocket-services-transport:2.0.25",
+    "coordinatesV2": "io.scalecube:rsocket-services-transport:2.0.26",
+    "caller": "|java+method:///io/scalecube/services/transport/rsocket/client/RSocketClientTransport/connect(io.scalecube.transport.Address,java.util.Map)|",
+    "called": "|java+method:///reactor/ipc/netty/tcp/TcpClient/create(java.util.function.Consumer)|",
+    "v1Body": [
+      "|java+method:///reactor/ipc/netty/tcp/TcpClient/create(java.util.function.Consumer)|",
+      "|java+method:///io/rsocket/RSocketFactory$ClientRSocketFactory/transport(io.rsocket.transport.ClientTransport)|",
+      "|java+method:///reactor/core/publisher/Mono/subscribe(java.util.function.Consumer,java.util.function.Consumer)|",
+      "|java+method:///reactor/core/publisher/MonoProcessor/create()|",
+      "|java+method:///io/rsocket/RSocketFactory/connect()|",
+      "|java+method:///io/rsocket/RSocketFactory$Start/start()|",
+      "|java+method:///io/rsocket/transport/netty/client/TcpClientTransport/create(reactor.ipc.netty.tcp.TcpClient)|"
+    ],
+    "v2Body": [
+      "|java+method:///reactor/ipc/netty/tcp/TcpClient/create(java.util.function.Consumer)|",
+      "|java+method:///io/rsocket/RSocketFactory/connect()|",
+      "|java+method:///reactor/core/publisher/Mono/doOnError(java.util.function.Consumer)|",
+      "|java+method:///reactor/core/publisher/Mono/doOnSuccess(java.util.function.Consumer)|",
+      "|java+method:///io/rsocket/RSocketFactory$Start/start()|",
+      "|java+method:///io/rsocket/transport/netty/client/TcpClientTransport/create(reactor.ipc.netty.tcp.TcpClient)|",
+      "|java+method:///io/rsocket/RSocketFactory$ClientRSocketFactory/transport(io.rsocket.transport.ClientTransport)|",
+      "|java+method:///reactor/core/publisher/Mono/cache()|"
+    ],
+    "affectedLib": "io.projectreactor.ipc:reactor-netty:0.7.8.RELEASE",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "io.scalecube:rsocket-services-transport:2.0.25",
+    "coordinatesV2": "io.scalecube:rsocket-services-transport:2.0.26",
+    "caller": "|java+method:///io/scalecube/services/transport/rsocket/server/RSocketServerTransport/bindAwait(java.net.InetSocketAddress,io.scalecube.services.api.ServiceMessageHandler)|",
+    "called": "|java+method:///reactor/ipc/netty/tcp/TcpServer/create(java.util.function.Consumer)|",
+    "v1Body": [
+      "|java+method:///io/rsocket/transport/netty/server/NettyContextCloseable/address()|",
+      "|java+method:///io/rsocket/RSocketFactory$Start/start()|",
+      "|java+method:///io/rsocket/RSocketFactory/receive()|",
+      "|java+method:///io/rsocket/RSocketFactory$ServerTransportAcceptor/transport(io.rsocket.transport.ServerTransport)|",
+      "|java+method:///io/rsocket/transport/netty/server/TcpServerTransport/create(java.net.InetSocketAddress)|",
+      "|java+method:///reactor/core/publisher/Mono/block()|",
+      "|java+method:///io/rsocket/RSocketFactory$ServerRSocketFactory/acceptor(io.rsocket.SocketAcceptor)|",
+      "|java+constructor:///io/scalecube/services/transport/rsocket/server/RSocketServiceAcceptor/RSocketServiceAcceptor(io.scalecube.services.api.ServiceMessageHandler,io.scalecube.services.codec.ServiceMessageCodec)|"
+    ],
+    "v2Body": [
+      "|java+method:///io/rsocket/transport/netty/server/NettyContextCloseable/address()|",
+      "|java+method:///io/rsocket/RSocketFactory$Start/start()|",
+      "|java+method:///io/rsocket/RSocketFactory/receive()|",
+      "|java+method:///io/rsocket/RSocketFactory$ServerTransportAcceptor/transport(io.rsocket.transport.ServerTransport)|",
+      "|java+method:///reactor/core/publisher/Mono/block()|",
+      "|java+method:///io/rsocket/RSocketFactory$ServerRSocketFactory/acceptor(io.rsocket.SocketAcceptor)|",
+      "|java+constructor:///io/scalecube/services/transport/rsocket/server/RSocketServiceAcceptor/RSocketServiceAcceptor(io.scalecube.services.api.ServiceMessageHandler,io.scalecube.services.codec.ServiceMessageCodec)|",
+      "|java+method:///io/rsocket/transport/netty/server/TcpServerTransport/create(reactor.ipc.netty.tcp.TcpServer)|",
+      "|java+method:///reactor/ipc/netty/tcp/TcpServer/create(java.util.function.Consumer)|"
+    ],
+    "affectedLib": "io.projectreactor.ipc:reactor-netty:0.7.8.RELEASE",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "io.scalecube:rsocket-services-transport:2.0.25",
+    "coordinatesV2": "io.scalecube:rsocket-services-transport:2.0.26",
+    "caller": "|java+method:///io/scalecube/services/transport/rsocket/client/RSocketClientTransport/connect(io.scalecube.transport.Address,java.util.Map)|",
+    "called": "|java+method:///io/rsocket/transport/netty/client/TcpClientTransport/create(reactor.ipc.netty.tcp.TcpClient)|",
+    "v1Body": [
+      "|java+method:///reactor/ipc/netty/tcp/TcpClient/create(java.util.function.Consumer)|",
+      "|java+method:///io/rsocket/RSocketFactory$ClientRSocketFactory/transport(io.rsocket.transport.ClientTransport)|",
+      "|java+method:///reactor/core/publisher/Mono/subscribe(java.util.function.Consumer,java.util.function.Consumer)|",
+      "|java+method:///reactor/core/publisher/MonoProcessor/create()|",
+      "|java+method:///io/rsocket/RSocketFactory/connect()|",
+      "|java+method:///io/rsocket/RSocketFactory$Start/start()|",
+      "|java+method:///io/rsocket/transport/netty/client/TcpClientTransport/create(reactor.ipc.netty.tcp.TcpClient)|"
+    ],
+    "v2Body": [
+      "|java+method:///reactor/ipc/netty/tcp/TcpClient/create(java.util.function.Consumer)|",
+      "|java+method:///io/rsocket/RSocketFactory/connect()|",
+      "|java+method:///reactor/core/publisher/Mono/doOnError(java.util.function.Consumer)|",
+      "|java+method:///reactor/core/publisher/Mono/doOnSuccess(java.util.function.Consumer)|",
+      "|java+method:///io/rsocket/RSocketFactory$Start/start()|",
+      "|java+method:///io/rsocket/transport/netty/client/TcpClientTransport/create(reactor.ipc.netty.tcp.TcpClient)|",
+      "|java+method:///io/rsocket/RSocketFactory$ClientRSocketFactory/transport(io.rsocket.transport.ClientTransport)|",
+      "|java+method:///reactor/core/publisher/Mono/cache()|"
+    ],
+    "affectedLib": "io.rsocket:rsocket-transport-netty:0.11.3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.scalecube:rsocket-services-transport:2.0.25",
+    "coordinatesV2": "io.scalecube:rsocket-services-transport:2.0.26",
+    "caller": "|java+method:///io/scalecube/services/transport/rsocket/server/RSocketServerTransport/bindAwait(java.net.InetSocketAddress,io.scalecube.services.api.ServiceMessageHandler)|",
+    "called": "|java+method:///io/rsocket/transport/netty/server/NettyContextCloseable/address()|",
+    "v1Body": [
+      "|java+method:///io/rsocket/transport/netty/server/NettyContextCloseable/address()|",
+      "|java+method:///io/rsocket/RSocketFactory$Start/start()|",
+      "|java+method:///io/rsocket/RSocketFactory/receive()|",
+      "|java+method:///io/rsocket/RSocketFactory$ServerTransportAcceptor/transport(io.rsocket.transport.ServerTransport)|",
+      "|java+method:///io/rsocket/transport/netty/server/TcpServerTransport/create(java.net.InetSocketAddress)|",
+      "|java+method:///reactor/core/publisher/Mono/block()|",
+      "|java+method:///io/rsocket/RSocketFactory$ServerRSocketFactory/acceptor(io.rsocket.SocketAcceptor)|",
+      "|java+constructor:///io/scalecube/services/transport/rsocket/server/RSocketServiceAcceptor/RSocketServiceAcceptor(io.scalecube.services.api.ServiceMessageHandler,io.scalecube.services.codec.ServiceMessageCodec)|"
+    ],
+    "v2Body": [
+      "|java+method:///io/rsocket/transport/netty/server/NettyContextCloseable/address()|",
+      "|java+method:///io/rsocket/RSocketFactory$Start/start()|",
+      "|java+method:///io/rsocket/RSocketFactory/receive()|",
+      "|java+method:///io/rsocket/RSocketFactory$ServerTransportAcceptor/transport(io.rsocket.transport.ServerTransport)|",
+      "|java+method:///reactor/core/publisher/Mono/block()|",
+      "|java+method:///io/rsocket/RSocketFactory$ServerRSocketFactory/acceptor(io.rsocket.SocketAcceptor)|",
+      "|java+constructor:///io/scalecube/services/transport/rsocket/server/RSocketServiceAcceptor/RSocketServiceAcceptor(io.scalecube.services.api.ServiceMessageHandler,io.scalecube.services.codec.ServiceMessageCodec)|",
+      "|java+method:///io/rsocket/transport/netty/server/TcpServerTransport/create(reactor.ipc.netty.tcp.TcpServer)|",
+      "|java+method:///reactor/ipc/netty/tcp/TcpServer/create(java.util.function.Consumer)|"
+    ],
+    "affectedLib": "io.rsocket:rsocket-transport-netty:0.11.3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.scalecube:rsocket-services-transport:2.0.25",
+    "coordinatesV2": "io.scalecube:rsocket-services-transport:2.0.26",
+    "caller": "|java+method:///io/scalecube/services/transport/rsocket/server/RSocketServerTransport/stop()|",
+    "called": "|java+method:///io/rsocket/transport/netty/server/NettyContextCloseable/onClose()|",
+    "v1Body": [
+      "|java+method:///io/rsocket/transport/netty/server/NettyContextCloseable/onClose()|",
+      "|java+method:///io/rsocket/transport/netty/server/NettyContextCloseable/dispose()|",
+      "|java+method:///reactor/core/publisher/Mono/empty()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/stream/Stream/map(java.util.function.Function)|",
+      "|java+method:///reactor/core/publisher/Mono/then(reactor.core.publisher.Mono)|",
+      "|java+method:///reactor/core/publisher/Mono/when(java.lang.Iterable)|",
+      "|java+method:///io/rsocket/transport/netty/server/NettyContextCloseable/onClose()|",
+      "|java+method:///java/util/stream/Stream/collect(java.util.stream.Collector)|",
+      "|java+method:///io/rsocket/transport/netty/server/NettyContextCloseable/dispose()|",
+      "|java+method:///reactor/core/publisher/Mono/empty()|",
+      "|java+method:///java/util/stream/Collectors/toList()|",
+      "|java+method:///java/util/List/stream()|"
+    ],
+    "affectedLib": "io.rsocket:rsocket-transport-netty:0.11.3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.scalecube:rsocket-services-transport:2.0.25",
+    "coordinatesV2": "io.scalecube:rsocket-services-transport:2.0.26",
+    "caller": "|java+method:///io/scalecube/services/transport/rsocket/client/RSocketClientTransport/connect(io.scalecube.transport.Address,java.util.Map)|",
+    "called": "|java+method:///io/rsocket/RSocketFactory/connect()|",
+    "v1Body": [
+      "|java+method:///reactor/ipc/netty/tcp/TcpClient/create(java.util.function.Consumer)|",
+      "|java+method:///io/rsocket/RSocketFactory$ClientRSocketFactory/transport(io.rsocket.transport.ClientTransport)|",
+      "|java+method:///reactor/core/publisher/Mono/subscribe(java.util.function.Consumer,java.util.function.Consumer)|",
+      "|java+method:///reactor/core/publisher/MonoProcessor/create()|",
+      "|java+method:///io/rsocket/RSocketFactory/connect()|",
+      "|java+method:///io/rsocket/RSocketFactory$Start/start()|",
+      "|java+method:///io/rsocket/transport/netty/client/TcpClientTransport/create(reactor.ipc.netty.tcp.TcpClient)|"
+    ],
+    "v2Body": [
+      "|java+method:///reactor/ipc/netty/tcp/TcpClient/create(java.util.function.Consumer)|",
+      "|java+method:///io/rsocket/RSocketFactory/connect()|",
+      "|java+method:///reactor/core/publisher/Mono/doOnError(java.util.function.Consumer)|",
+      "|java+method:///reactor/core/publisher/Mono/doOnSuccess(java.util.function.Consumer)|",
+      "|java+method:///io/rsocket/RSocketFactory$Start/start()|",
+      "|java+method:///io/rsocket/transport/netty/client/TcpClientTransport/create(reactor.ipc.netty.tcp.TcpClient)|",
+      "|java+method:///io/rsocket/RSocketFactory$ClientRSocketFactory/transport(io.rsocket.transport.ClientTransport)|",
+      "|java+method:///reactor/core/publisher/Mono/cache()|"
+    ],
+    "affectedLib": "io.rsocket:rsocket-core:0.11.3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.scalecube:rsocket-services-transport:2.0.25",
+    "coordinatesV2": "io.scalecube:rsocket-services-transport:2.0.26",
+    "caller": "|java+method:///io/scalecube/services/transport/rsocket/server/RSocketServerTransport/bindAwait(java.net.InetSocketAddress,io.scalecube.services.api.ServiceMessageHandler)|",
+    "called": "|java+method:///io/rsocket/RSocketFactory/receive()|",
+    "v1Body": [
+      "|java+method:///io/rsocket/transport/netty/server/NettyContextCloseable/address()|",
+      "|java+method:///io/rsocket/RSocketFactory$Start/start()|",
+      "|java+method:///io/rsocket/RSocketFactory/receive()|",
+      "|java+method:///io/rsocket/RSocketFactory$ServerTransportAcceptor/transport(io.rsocket.transport.ServerTransport)|",
+      "|java+method:///io/rsocket/transport/netty/server/TcpServerTransport/create(java.net.InetSocketAddress)|",
+      "|java+method:///reactor/core/publisher/Mono/block()|",
+      "|java+method:///io/rsocket/RSocketFactory$ServerRSocketFactory/acceptor(io.rsocket.SocketAcceptor)|",
+      "|java+constructor:///io/scalecube/services/transport/rsocket/server/RSocketServiceAcceptor/RSocketServiceAcceptor(io.scalecube.services.api.ServiceMessageHandler,io.scalecube.services.codec.ServiceMessageCodec)|"
+    ],
+    "v2Body": [
+      "|java+method:///io/rsocket/transport/netty/server/NettyContextCloseable/address()|",
+      "|java+method:///io/rsocket/RSocketFactory$Start/start()|",
+      "|java+method:///io/rsocket/RSocketFactory/receive()|",
+      "|java+method:///io/rsocket/RSocketFactory$ServerTransportAcceptor/transport(io.rsocket.transport.ServerTransport)|",
+      "|java+method:///reactor/core/publisher/Mono/block()|",
+      "|java+method:///io/rsocket/RSocketFactory$ServerRSocketFactory/acceptor(io.rsocket.SocketAcceptor)|",
+      "|java+constructor:///io/scalecube/services/transport/rsocket/server/RSocketServiceAcceptor/RSocketServiceAcceptor(io.scalecube.services.api.ServiceMessageHandler,io.scalecube.services.codec.ServiceMessageCodec)|",
+      "|java+method:///io/rsocket/transport/netty/server/TcpServerTransport/create(reactor.ipc.netty.tcp.TcpServer)|",
+      "|java+method:///reactor/ipc/netty/tcp/TcpServer/create(java.util.function.Consumer)|"
+    ],
+    "affectedLib": "io.rsocket:rsocket-core:0.11.3",
+    "change": "UPDATED"
+  }
+]

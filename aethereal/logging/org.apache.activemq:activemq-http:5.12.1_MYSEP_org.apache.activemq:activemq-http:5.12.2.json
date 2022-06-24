@@ -1,0 +1,51 @@
+[
+  {
+    "coordinatesV1": "org.apache.activemq:activemq-http:5.12.2",
+    "coordinatesV2": "org.apache.activemq:activemq-http:5.12.1",
+    "caller": "|java+method:///org/apache/activemq/transport/xstream/XStreamWireFormat/unmarshalText(java.io.Reader)|",
+    "called": "|java+method:///com/thoughtworks/xstream/XStream/fromXML(java.io.Reader)|",
+    "v1Body": [
+      "|java+method:///com/thoughtworks/xstream/XStream/fromXML(java.io.Reader)|",
+      "|java+method:///org/apache/activemq/transport/xstream/XStreamWireFormat/getXStream()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/thoughtworks/xstream/XStream/fromXML(java.io.Reader)|",
+      "|java+method:///org/apache/activemq/transport/xstream/XStreamWireFormat/getXStream()|",
+      "|java+method:///org/apache/activemq/command/TransientInitializer/initTransients()|"
+    ],
+    "affectedLib": "com.thoughtworks.xstream:xstream:1.4.8",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.apache.activemq:activemq-http:5.12.2",
+    "coordinatesV2": "org.apache.activemq:activemq-http:5.12.1",
+    "caller": "|java+method:///org/apache/activemq/transport/xstream/XStreamWireFormat/createXStream()|",
+    "called": "|java+constructor:///com/thoughtworks/xstream/XStream/XStream()|",
+    "v1Body": [
+      "|java+method:///com/thoughtworks/xstream/XStream/ignoreUnknownElements()|",
+      "|java+constructor:///com/thoughtworks/xstream/XStream/XStream()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/thoughtworks/xstream/XStream/ignoreUnknownElements()|",
+      "|java+method:///org/apache/activemq/transport/stomp/XStreamSupport/createXStream()|"
+    ],
+    "affectedLib": "com.thoughtworks.xstream:xstream:1.4.8",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.apache.activemq:activemq-http:5.12.1",
+    "coordinatesV2": "org.apache.activemq:activemq-http:5.12.2",
+    "caller": "|java+method:///org/apache/activemq/transport/xstream/XStreamWireFormat/createXStream()|",
+    "called": "|java+method:///org/apache/activemq/transport/stomp/XStreamSupport/createXStream()|",
+    "v1Body": [
+      "|java+method:///com/thoughtworks/xstream/XStream/ignoreUnknownElements()|",
+      "|java+constructor:///com/thoughtworks/xstream/XStream/XStream()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/thoughtworks/xstream/XStream/ignoreUnknownElements()|",
+      "|java+method:///org/apache/activemq/transport/stomp/XStreamSupport/createXStream()|"
+    ],
+    "affectedLib": "org.apache.activemq:activemq-stomp:5.12.2",
+    "change": "UPDATED"
+  }
+]

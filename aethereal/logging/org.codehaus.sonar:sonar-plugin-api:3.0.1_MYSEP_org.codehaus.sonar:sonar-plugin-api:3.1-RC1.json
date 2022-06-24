@@ -1,0 +1,89 @@
+[
+  {
+    "coordinatesV1": "org.codehaus.sonar:sonar-plugin-api:3.1-RC1",
+    "coordinatesV2": "org.codehaus.sonar:sonar-plugin-api:3.0.1",
+    "caller": "|java+method:///org/sonar/api/profiles/XMLProfileParser/parseResource(java.lang.ClassLoader,java.lang.String,org.sonar.api.utils.ValidationMessages)|",
+    "called": "|java+method:///org/apache/commons/io/IOUtils/closeQuietly(java.io.Reader)|",
+    "v1Body": [
+      "|java+method:///org/sonar/api/profiles/XMLProfileParser/parse(java.io.Reader,org.sonar.api.utils.ValidationMessages)|",
+      "|java+constructor:///java/io/InputStreamReader/InputStreamReader(java.io.InputStream,java.nio.charset.Charset)|",
+      "|java+method:///org/apache/commons/io/IOUtils/closeQuietly(java.io.Reader)|",
+      "|java+method:///java/lang/ClassLoader/getResourceAsStream(java.lang.String)|",
+      "|java+method:///java/nio/charset/Charset/forName(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/sonar/api/profiles/XMLProfileParser/parse(java.io.Reader,org.sonar.api.utils.ValidationMessages)|",
+      "|java+constructor:///java/io/InputStreamReader/InputStreamReader(java.io.InputStream,java.nio.charset.Charset)|",
+      "|java+method:///org/apache/commons/io/IOUtils/closeQuietly(java.io.Reader)|",
+      "|java+method:///java/lang/ClassLoader/getResourceAsStream(java.lang.String)|"
+    ],
+    "affectedLib": "commons-io:commons-io:2.0.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.codehaus.sonar:sonar-plugin-api:3.1-RC1",
+    "coordinatesV2": "org.codehaus.sonar:sonar-plugin-api:3.0.1",
+    "caller": "|java+method:///org/sonar/api/checks/AnnotationCheckFactory/getRuleKey(java.lang.Object)|",
+    "called": "|java+method:///org/apache/commons/lang/StringUtils/defaultIfEmpty(java.lang.String,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/sonar/check/Rule/key()|",
+      "|java+method:///java/lang/Class/getCanonicalName()|",
+      "|java+method:///org/sonar/check/Check/key()|",
+      "|java+method:///org/sonar/api/utils/AnnotationUtils/getClassAnnotation(java.lang.Object,java.lang.Class)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///org/apache/commons/lang/StringUtils/defaultIfEmpty(java.lang.String,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/sonar/check/Rule/key()|",
+      "|java+method:///java/lang/Class/getCanonicalName()|",
+      "|java+method:///org/sonar/check/Check/key()|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///org/apache/commons/lang/StringUtils/defaultIfEmpty(java.lang.String,java.lang.String)|",
+      "|java+method:///org/sonar/api/utils/AnnotationUtils/getAnnotation(java.lang.Object,java.lang.Class)|"
+    ],
+    "affectedLib": "commons-lang:commons-lang:2.6",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.codehaus.sonar:sonar-plugin-api:3.1-RC1",
+    "coordinatesV2": "org.codehaus.sonar:sonar-plugin-api:3.0.1",
+    "caller": "|java+method:///org/sonar/api/utils/AnnotationUtils/getClassAnnotation(java.lang.Object,java.lang.Class)|",
+    "called": "|java+method:///org/apache/commons/lang/ClassUtils/getAllInterfaces(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///java/lang/Class/getSuperclass()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/lang/Class/getAnnotation(java.lang.Class)|",
+      "|java+method:///org/apache/commons/lang/ClassUtils/getAllInterfaces(java.lang.Class)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///java/util/List/iterator()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/sonar/api/utils/AnnotationUtils/getAnnotation(java.lang.Object,java.lang.Class)|"
+    ],
+    "affectedLib": "commons-lang:commons-lang:2.6",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.codehaus.sonar:sonar-plugin-api:3.1-RC1",
+    "coordinatesV2": "org.codehaus.sonar:sonar-plugin-api:3.0.1",
+    "caller": "|java+method:///org/sonar/api/rules/RuleAnnotationUtils/getRuleKey(java.lang.Class)|",
+    "called": "|java+method:///org/apache/commons/lang/StringUtils/defaultIfEmpty(java.lang.String,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/sonar/check/Rule/key()|",
+      "|java+method:///java/lang/Class/getCanonicalName()|",
+      "|java+method:///org/sonar/check/Check/key()|",
+      "|java+method:///org/sonar/api/utils/AnnotationUtils/getClassAnnotation(java.lang.Object,java.lang.Class)|",
+      "|java+method:///org/apache/commons/lang/StringUtils/defaultIfEmpty(java.lang.String,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/sonar/check/Rule/key()|",
+      "|java+method:///java/lang/Class/getCanonicalName()|",
+      "|java+method:///org/sonar/check/Check/key()|",
+      "|java+method:///org/apache/commons/lang/StringUtils/defaultIfEmpty(java.lang.String,java.lang.String)|",
+      "|java+method:///org/sonar/api/utils/AnnotationUtils/getAnnotation(java.lang.Object,java.lang.Class)|"
+    ],
+    "affectedLib": "commons-lang:commons-lang:2.6",
+    "change": "REMOVED"
+  }
+]

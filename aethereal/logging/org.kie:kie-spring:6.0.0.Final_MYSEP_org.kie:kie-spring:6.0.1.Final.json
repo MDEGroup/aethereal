@@ -1,0 +1,28 @@
+[
+  {
+    "coordinatesV1": "org.kie:kie-spring:6.0.0.Final",
+    "coordinatesV2": "org.kie:kie-spring:6.0.1.Final",
+    "caller": "|java+method:///org/kie/spring/persistence/KieSpringJpaManager/getApplicationScopedPersistenceContext()|",
+    "called": "|java+constructor:///org/drools/persistence/jpa/JpaPersistenceContext/JpaPersistenceContext(javax.persistence.EntityManager,boolean)|",
+    "v1Body": [
+      "|java+constructor:///org/drools/persistence/jpa/JpaPersistenceContext/JpaPersistenceContext(javax.persistence.EntityManager,boolean)|",
+      "|java+method:///org/springframework/transaction/support/TransactionSynchronizationManager/isActualTransactionActive()|",
+      "|java+method:///org/springframework/transaction/support/TransactionSynchronizationManager/getResource(java.lang.Object)|",
+      "|java+method:///org/kie/api/runtime/Environment/get(java.lang.String)|",
+      "|java+constructor:///org/springframework/orm/jpa/EntityManagerHolder/EntityManagerHolder(javax.persistence.EntityManager)|",
+      "|java+method:///org/springframework/transaction/support/TransactionSynchronizationManager/bindResource(java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String)|",
+      "|java+method:///javax/persistence/EntityManager/isOpen()|",
+      "|java+method:///javax/persistence/EntityManagerFactory/createEntityManager()|",
+      "|java+method:///javax/persistence/EntityManager/joinTransaction()|",
+      "|java+method:///org/kie/api/runtime/Environment/set(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/springframework/orm/jpa/EntityManagerHolder/getEntityManager()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/drools/persistence/jpa/JpaPersistenceContext/JpaPersistenceContext(javax.persistence.EntityManager,boolean)|",
+      "|java+method:///org/kie/spring/persistence/KieSpringJpaManager/getApplicationScopedEntityManager()|"
+    ],
+    "affectedLib": "org.drools:drools-persistence-jpa:6.0.1.Final",
+    "change": "UPDATED"
+  }
+]

@@ -1,0 +1,340 @@
+[
+  {
+    "coordinatesV1": "org.apereo.cas:cas-server-core-services-api:5.3.0-RC1",
+    "coordinatesV2": "org.apereo.cas:cas-server-core-services-api:5.3.0-RC4",
+    "caller": "|java+method:///org/apereo/cas/services/RemoteEndpointServiceAccessStrategy/doPrincipalAttributesAllowServiceAccess(java.lang.String,java.util.Map)|",
+    "called": "|java+method:///org/springframework/util/StringUtils/commaDelimitedListToSet(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/apereo/cas/services/DefaultRegisteredServiceAccessStrategy/doPrincipalAttributesAllowServiceAccess(java.lang.String,java.util.Map)|",
+      "|java+method:///org/springframework/util/StringUtils/commaDelimitedListToSet(java.lang.String)|",
+      "|java+method:///org/apache/http/client/utils/URIBuilder/addParameter(java.lang.String,java.lang.String)|",
+      "|java+method:///java/net/URI/toURL()|",
+      "|java+method:///org/apereo/cas/util/http/HttpClient/sendMessageToEndPoint(java.net.URL)|",
+      "|java+method:///java/util/Set/contains(java.lang.Object)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///org/apache/http/client/utils/URIBuilder/URIBuilder(java.lang.String)|",
+      "|java+method:///org/apache/http/client/utils/URIBuilder/build()|",
+      "|java+method:///org/apereo/cas/util/http/HttpMessage/getResponseCode()|",
+      "|java+method:///org/springframework/context/ApplicationContext/getBean(java.lang.String,java.lang.Class)|",
+      "|java+method:///org/apereo/cas/util/spring/ApplicationContextProvider/getApplicationContext()|",
+      "|java+method:///java/lang/String/valueOf(int)|",
+      "|java+method:///java/lang/Exception/getMessage()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apereo/cas/services/DefaultRegisteredServiceAccessStrategy/doPrincipalAttributesAllowServiceAccess(java.lang.String,java.util.Map)|",
+      "|java+method:///org/springframework/util/StringUtils/commaDelimitedListToSet(java.lang.String)|",
+      "|java+method:///java/util/Set/contains(java.lang.Object)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/apereo/cas/util/HttpUtils/executeGet(java.lang.String,java.util.Map)|",
+      "|java+method:///org/apache/http/HttpResponse/getStatusLine()|",
+      "|java+method:///org/apache/http/StatusLine/getStatusCode()|",
+      "|java+method:///org/apereo/cas/util/CollectionUtils/wrap(java.lang.String,java.lang.Object)|",
+      "|java+method:///java/lang/String/valueOf(int)|",
+      "|java+method:///java/lang/Exception/getMessage()|"
+    ],
+    "affectedLib": "org.springframework:spring-core:4.3.17.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apereo.cas:cas-server-core-services-api:5.3.0-RC1",
+    "coordinatesV2": "org.apereo.cas:cas-server-core-services-api:5.3.0-RC4",
+    "caller": "|java+method:///org/apereo/cas/services/RegisteredServicePublicKeyImpl/createInstance()|",
+    "called": "|java+constructor:///org/springframework/core/io/ClassPathResource/ClassPathResource(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/lang/reflect/Constructor/newInstance(java.lang.Object%5B%5D)|",
+      "|java+constructor:///org/springframework/core/io/ClassPathResource/ClassPathResource(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/apereo/cas/util/crypto/PublicKeyFactoryBean/setSingleton(boolean)|",
+      "|java+constructor:///org/springframework/core/io/FileSystemResource/FileSystemResource(java.lang.String)|",
+      "|java+method:///java/lang/Class/getDeclaredConstructor(java.lang.Class%5B%5D)|",
+      "|java+method:///org/apereo/cas/util/crypto/PublicKeyFactoryBean/setLocation(org.springframework.core.io.Resource)|",
+      "|java+method:///org/apereo/cas/util/crypto/PublicKeyFactoryBean/setAlgorithm(java.lang.String)|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/apache/commons/lang3/StringUtils/removeStart(java.lang.String,java.lang.String)|",
+      "|java+method:///java/lang/String/startsWith(java.lang.String)|",
+      "|java+method:///java/lang/Exception/getMessage()|",
+      "|java+method:///org/apereo/cas/util/crypto/PublicKeyFactoryBean/getObject()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/reflect/Constructor/newInstance(java.lang.Object%5B%5D)|",
+      "|java+constructor:///org/springframework/core/io/ClassPathResource/ClassPathResource(java.lang.String)|",
+      "|java+method:///org/apereo/cas/util/crypto/PublicKeyFactoryBean/setSingleton(boolean)|",
+      "|java+constructor:///org/springframework/core/io/FileSystemResource/FileSystemResource(java.lang.String)|",
+      "|java+method:///org/apereo/cas/util/crypto/PublicKeyFactoryBean/setResource(org.springframework.core.io.Resource)|",
+      "|java+method:///java/lang/Class/getDeclaredConstructor(java.lang.Class%5B%5D)|",
+      "|java+method:///org/apereo/cas/util/crypto/PublicKeyFactoryBean/setAlgorithm(java.lang.String)|",
+      "|java+method:///org/apereo/cas/util/crypto/PublicKeyFactoryBean/getObject()|",
+      "|java+method:///org/apache/commons/lang3/StringUtils/removeStart(java.lang.String,java.lang.String)|",
+      "|java+method:///java/lang/String/startsWith(java.lang.String)|"
+    ],
+    "affectedLib": "org.springframework:spring-core:4.3.17.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apereo.cas:cas-server-core-services-api:5.3.0-RC1",
+    "coordinatesV2": "org.apereo.cas:cas-server-core-services-api:5.3.0-RC4",
+    "caller": "|java+method:///org/apereo/cas/services/GroovyRegisteredServiceAccessStrategy/buildGroovyAccessStrategyInstanceIfNeeded()|",
+    "called": "|java+method:///org/apereo/cas/util/ScriptingUtils/getObjectInstanceFromGroovyResource(org.springframework.core.io.Resource,java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/lang/Exception/getMessage()|",
+      "|java+method:///org/apereo/cas/util/ResourceUtils/getResourceFrom(java.lang.String)|",
+      "|java+method:///org/apereo/cas/util/ScriptingUtils/getObjectInstanceFromGroovyResource(org.springframework.core.io.Resource,java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apereo/cas/util/ResourceUtils/getResourceFrom(java.lang.String)|",
+      "|java+method:///org/apereo/cas/util/ScriptingUtils/getObjectInstanceFromGroovyResource(org.springframework.core.io.Resource,java.lang.Class)|"
+    ],
+    "affectedLib": "org.apereo.cas:cas-server-core-util-api:5.3.0-RC4",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apereo.cas:cas-server-core-services-api:5.3.0-RC1",
+    "coordinatesV2": "org.apereo.cas:cas-server-core-services-api:5.3.0-RC4",
+    "caller": "|java+method:///org/apereo/cas/services/support/RegisteredServiceMappedRegexAttributeFilter/lambda$filter$1(java.util.Map,java.util.Map$Entry)|",
+    "called": "|java+method:///org/apereo/cas/util/CollectionUtils/toCollection(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///java/util/Map$Entry/getKey()|",
+      "|java+method:///org/apereo/cas/util/CollectionUtils/toCollection(java.lang.Object)|",
+      "|java+method:///java/util/Map/containsKey(java.lang.Object)|",
+      "|java+method:///org/apereo/cas/util/RegexUtils/createPattern(java.lang.String)|",
+      "|java+method:///java/util/Map$Entry/getValue()|",
+      "|java+method:///java/util/regex/Pattern/pattern()|",
+      "|java+method:///org/apereo/cas/services/support/RegisteredServiceMappedRegexAttributeFilter/filterAttributeValuesByPattern(java.util.Set,java.util.regex.Pattern)|",
+      "|java+method:///java/util/List/isEmpty()|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/util/Collection/forEach(java.util.function.Consumer)|",
+      "|java+method:///java/util/Map$Entry/getKey()|",
+      "|java+method:///org/apereo/cas/services/support/RegisteredServiceMappedRegexAttributeFilter/handleUnmappedAttribute(java.util.Map,java.lang.String,java.lang.Object)|",
+      "|java+method:///org/apereo/cas/util/CollectionUtils/toCollection(java.lang.Object)|",
+      "|java+method:///java/util/Map$Entry/getValue()|",
+      "|java+method:///java/util/Map/containsKey(java.lang.Object)|",
+      "|java+method:///org/apereo/cas/services/support/RegisteredServiceMappedRegexAttributeFilter/createPatternForMappedAttribute(java.lang.String)|"
+    ],
+    "affectedLib": "org.apereo.cas:cas-server-core-util-api:5.3.0-RC4",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apereo.cas:cas-server-core-services-api:5.3.0-RC1",
+    "coordinatesV2": "org.apereo.cas:cas-server-core-services-api:5.3.0-RC4",
+    "caller": "|java+method:///org/apereo/cas/services/ScriptedRegisteredServiceUsernameProvider/resolveUsernameInternal(org.apereo.cas.authentication.principal.Principal,org.apereo.cas.authentication.principal.Service,org.apereo.cas.services.RegisteredService)|",
+    "called": "|java+method:///org/apereo/cas/util/ScriptingUtils/executeScriptEngine(java.lang.String,java.lang.Object%5B%5D,java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///java/lang/Object/toString()|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/apereo/cas/authentication/principal/Principal/getId()|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/lang/Exception/getMessage()|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/apereo/cas/util/ScriptingUtils/executeGroovyScriptEngine(java.lang.String,java.lang.Object%5B%5D,java.lang.Class)|",
+      "|java+method:///org/apereo/cas/authentication/principal/Principal/getAttributes()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Object/toString()|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/apereo/cas/authentication/principal/Principal/getAttributes()|",
+      "|java+method:///org/apereo/cas/authentication/principal/Principal/getId()|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/apereo/cas/util/ScriptingUtils/executeScriptEngine(java.lang.String,java.lang.Object%5B%5D,java.lang.Class)|",
+      "|java+method:///java/lang/Exception/getMessage()|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object,java.lang.Object)|"
+    ],
+    "affectedLib": "org.apereo.cas:cas-server-core-util-api:5.3.0-RC4",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apereo.cas:cas-server-core-services-api:5.3.0-RC1",
+    "coordinatesV2": "org.apereo.cas:cas-server-core-services-api:5.3.0-RC4",
+    "caller": "|java+method:///org/apereo/cas/authentication/principal/ShibbolethCompatiblePersistentIdGenerator/generate(java.lang.String,java.lang.String)|",
+    "called": "|java+constructor:///org/apereo/cas/util/gen/DefaultRandomStringGenerator/DefaultRandomStringGenerator(int)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/apache/commons/lang3/StringUtils/isBlank(java.lang.CharSequence)|",
+      "|java+method:///org/apache/commons/lang3/StringUtils/remove(java.lang.String,java.lang.String)|",
+      "|java+constructor:///org/apereo/cas/util/gen/DefaultRandomStringGenerator/DefaultRandomStringGenerator(int)|",
+      "|java+method:///java/lang/String/join(java.lang.CharSequence,java.lang.CharSequence%5B%5D)|",
+      "|java+method:///org/apereo/cas/util/DigestUtils/shaBase64(java.lang.String,java.lang.String,java.lang.String)|",
+      "|java+method:///java/lang/System/getProperty(java.lang.String)|",
+      "|java+method:///org/apereo/cas/util/gen/DefaultRandomStringGenerator/getNewString()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/apache/commons/lang3/StringUtils/isBlank(java.lang.CharSequence)|",
+      "|java+method:///org/apereo/cas/authentication/principal/ShibbolethCompatiblePersistentIdGenerator/digestAndEncodeWithSalt(java.security.MessageDigest)|",
+      "|java+constructor:///org/apereo/cas/util/gen/DefaultRandomStringGenerator/DefaultRandomStringGenerator(int)|",
+      "|java+method:///org/apereo/cas/authentication/principal/ShibbolethCompatiblePersistentIdGenerator/prepareMessageDigest(java.lang.String,java.lang.String)|",
+      "|java+method:///org/apereo/cas/util/gen/DefaultRandomStringGenerator/getNewString()|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/lang/Exception/getMessage()|"
+    ],
+    "affectedLib": "org.apereo.cas:cas-server-core-util-api:5.3.0-RC4",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apereo.cas:cas-server-core-services-api:5.3.0-RC1",
+    "coordinatesV2": "org.apereo.cas:cas-server-core-services-api:5.3.0-RC4",
+    "caller": "|java+method:///org/apereo/cas/services/GroovyRegisteredServiceMultifactorPolicy/buildGroovyMultifactorPolicyInstanceIfNeeded()|",
+    "called": "|java+method:///org/apereo/cas/util/ScriptingUtils/getObjectInstanceFromGroovyResource(org.springframework.core.io.Resource,java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/lang/Exception/getMessage()|",
+      "|java+method:///org/apereo/cas/util/ResourceUtils/getResourceFrom(java.lang.String)|",
+      "|java+method:///org/apereo/cas/util/ScriptingUtils/getObjectInstanceFromGroovyResource(org.springframework.core.io.Resource,java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apereo/cas/util/ResourceUtils/getResourceFrom(java.lang.String)|",
+      "|java+method:///org/apereo/cas/util/ScriptingUtils/getObjectInstanceFromGroovyResource(org.springframework.core.io.Resource,java.lang.Class)|"
+    ],
+    "affectedLib": "org.apereo.cas:cas-server-core-util-api:5.3.0-RC4",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apereo.cas:cas-server-core-services-api:5.3.0-RC1",
+    "coordinatesV2": "org.apereo.cas:cas-server-core-services-api:5.3.0-RC4",
+    "caller": "|java+method:///org/apereo/cas/services/RemoteEndpointServiceAccessStrategy/doPrincipalAttributesAllowServiceAccess(java.lang.String,java.util.Map)|",
+    "called": "|java+method:///org/apereo/cas/util/HttpUtils/executeGet(java.lang.String,java.util.Map)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/apereo/cas/services/DefaultRegisteredServiceAccessStrategy/doPrincipalAttributesAllowServiceAccess(java.lang.String,java.util.Map)|",
+      "|java+method:///org/springframework/util/StringUtils/commaDelimitedListToSet(java.lang.String)|",
+      "|java+method:///org/apache/http/client/utils/URIBuilder/addParameter(java.lang.String,java.lang.String)|",
+      "|java+method:///java/net/URI/toURL()|",
+      "|java+method:///org/apereo/cas/util/http/HttpClient/sendMessageToEndPoint(java.net.URL)|",
+      "|java+method:///java/util/Set/contains(java.lang.Object)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///org/apache/http/client/utils/URIBuilder/URIBuilder(java.lang.String)|",
+      "|java+method:///org/apache/http/client/utils/URIBuilder/build()|",
+      "|java+method:///org/apereo/cas/util/http/HttpMessage/getResponseCode()|",
+      "|java+method:///org/springframework/context/ApplicationContext/getBean(java.lang.String,java.lang.Class)|",
+      "|java+method:///org/apereo/cas/util/spring/ApplicationContextProvider/getApplicationContext()|",
+      "|java+method:///java/lang/String/valueOf(int)|",
+      "|java+method:///java/lang/Exception/getMessage()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apereo/cas/services/DefaultRegisteredServiceAccessStrategy/doPrincipalAttributesAllowServiceAccess(java.lang.String,java.util.Map)|",
+      "|java+method:///org/springframework/util/StringUtils/commaDelimitedListToSet(java.lang.String)|",
+      "|java+method:///java/util/Set/contains(java.lang.Object)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/apereo/cas/util/HttpUtils/executeGet(java.lang.String,java.util.Map)|",
+      "|java+method:///org/apache/http/HttpResponse/getStatusLine()|",
+      "|java+method:///org/apache/http/StatusLine/getStatusCode()|",
+      "|java+method:///org/apereo/cas/util/CollectionUtils/wrap(java.lang.String,java.lang.Object)|",
+      "|java+method:///java/lang/String/valueOf(int)|",
+      "|java+method:///java/lang/Exception/getMessage()|"
+    ],
+    "affectedLib": "org.apereo.cas:cas-server-core-util-api:5.3.0-RC4",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apereo.cas:cas-server-core-services-api:5.3.0-RC1",
+    "coordinatesV2": "org.apereo.cas:cas-server-core-services-api:5.3.0-RC4",
+    "caller": "|java+method:///org/apereo/cas/services/RegisteredServiceAccessStrategyUtils/ensurePrincipalAccessIsAllowedForService(org.apereo.cas.authentication.principal.Service,org.apereo.cas.services.RegisteredService,java.lang.String,java.util.Map)|",
+    "called": "|java+constructor:///org/apereo/cas/services/UnauthorizedServiceForPrincipalException/UnauthorizedServiceForPrincipalException(java.lang.String,org.apereo.cas.services.RegisteredService,java.lang.String,java.util.Map)|",
+    "v1Body": [
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/lang/Class/getSimpleName()|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///org/apereo/cas/authentication/PrincipalException/PrincipalException(java.lang.String,java.util.Map,java.util.Map)|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+method:///org/apereo/cas/services/RegisteredServiceAccessStrategy/doPrincipalAttributesAllowServiceAccess(java.lang.String,java.util.Map)|",
+      "|java+method:///org/apereo/cas/authentication/principal/Service/getId()|",
+      "|java+method:///org/apereo/cas/services/RegisteredServiceAccessStrategyUtils/ensureServiceAccessIsAllowed(org.apereo.cas.authentication.principal.Service,org.apereo.cas.services.RegisteredService)|",
+      "|java+method:///org/apereo/cas/services/RegisteredService/getAccessStrategy()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/lang/Class/getSimpleName()|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///org/apereo/cas/authentication/PrincipalException/PrincipalException(java.lang.String,java.util.Map,java.util.Map)|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+constructor:///org/apereo/cas/services/UnauthorizedServiceForPrincipalException/UnauthorizedServiceForPrincipalException(java.lang.String,org.apereo.cas.services.RegisteredService,java.lang.String,java.util.Map)|",
+      "|java+method:///org/apereo/cas/services/RegisteredServiceAccessStrategy/doPrincipalAttributesAllowServiceAccess(java.lang.String,java.util.Map)|",
+      "|java+method:///org/apereo/cas/authentication/principal/Service/getId()|",
+      "|java+method:///org/apereo/cas/services/RegisteredServiceAccessStrategyUtils/ensureServiceAccessIsAllowed(org.apereo.cas.authentication.principal.Service,org.apereo.cas.services.RegisteredService)|",
+      "|java+method:///org/apereo/cas/services/RegisteredService/getAccessStrategy()|"
+    ],
+    "affectedLib": "org.apereo.cas:cas-server-core-api-services:5.3.0-RC4",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apereo.cas:cas-server-core-services-api:5.3.0-RC1",
+    "coordinatesV2": "org.apereo.cas:cas-server-core-services-api:5.3.0-RC4",
+    "caller": "|java+method:///org/apereo/cas/services/util/JasigRegisteredServiceDeserializationProblemHandler/handleUnknownTypeId(com.fasterxml.jackson.databind.DeserializationContext,com.fasterxml.jackson.databind.JavaType,java.lang.String,com.fasterxml.jackson.databind.jsontype.TypeIdResolver,java.lang.String)|",
+    "called": "|java+method:///com/fasterxml/jackson/databind/type/SimpleType/construct(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/apache/commons/lang3/ClassUtils/getClass(java.lang.String)|",
+      "|java+method:///java/lang/String/replaceAll(java.lang.String,java.lang.String)|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/lang/String/contains(java.lang.CharSequence)|",
+      "|java+method:///com/fasterxml/jackson/databind/type/SimpleType/construct(java.lang.Class)|",
+      "|java+method:///java/lang/Exception/getMessage()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/apache/commons/lang3/ClassUtils/getClass(java.lang.String)|",
+      "|java+method:///java/lang/String/replaceAll(java.lang.String,java.lang.String)|",
+      "|java+method:///java/lang/String/contains(java.lang.CharSequence)|",
+      "|java+method:///com/fasterxml/jackson/databind/type/SimpleType/construct(java.lang.Class)|"
+    ],
+    "affectedLib": "com.fasterxml.jackson.core:jackson-databind:2.9.5",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apereo.cas:cas-server-core-services-api:5.3.0-RC1",
+    "coordinatesV2": "org.apereo.cas:cas-server-core-services-api:5.3.0-RC4",
+    "caller": "|java+method:///org/apereo/cas/services/util/CasAddonsRegisteredServicesJsonSerializer/load(java.io.InputStream)|",
+    "called": "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/readValue(java.io.InputStream,java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/jooq/lambda/Unchecked/consumer(org.jooq.lambda.fi.util.function.CheckedConsumer)|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+method:///java/util/List/stream()|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/stream/Stream/forEach(java.util.function.Consumer)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///java/lang/Exception/getMessage()|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Object)|",
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///org/apereo/cas/services/util/CasAddonsRegisteredServicesJsonSerializer/convertServiceProperties(java.util.Map)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/readValue(java.io.InputStream,java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/jooq/lambda/Unchecked/consumer(org.jooq.lambda.fi.util.function.CheckedConsumer)|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///java/lang/Exception/getMessage()|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Object)|",
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///java/util/List/forEach(java.util.function.Consumer)|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///org/apereo/cas/services/util/CasAddonsRegisteredServicesJsonSerializer/convertServiceProperties(java.util.Map)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/readValue(java.io.InputStream,java.lang.Class)|"
+    ],
+    "affectedLib": "com.fasterxml.jackson.core:jackson-databind:2.9.5",
+    "change": "UPDATED"
+  }
+]

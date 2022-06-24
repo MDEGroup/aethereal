@@ -1,0 +1,35 @@
+[
+  {
+    "coordinatesV1": "org.kie.server:kie-server-controller-impl:7.1.0.Beta1",
+    "coordinatesV2": "org.kie.server:kie-server-controller-impl:7.1.0.Beta2",
+    "caller": "|java+method:///org/kie/server/controller/impl/service/SpecManagementServiceImpl/saveServerTemplate(org.kie.server.controller.api.model.spec.ServerTemplate)|",
+    "called": "|java+method:///org/kie/server/controller/api/model/spec/ServerTemplate/getContainersSpec()|",
+    "v1Body": [
+      "|java+method:///org/kie/server/controller/api/storage/KieServerTemplateStorage/store(org.kie.server.controller.api.model.spec.ServerTemplate)|",
+      "|java+method:///org/kie/server/controller/api/storage/KieServerTemplateStorage/update(org.kie.server.controller.api.model.spec.ServerTemplate)|",
+      "|java+method:///org/kie/server/controller/api/service/NotificationService/notify(org.kie.server.controller.api.model.events.ServerTemplateUpdated)|",
+      "|java+method:///org/kie/server/controller/api/model/spec/ServerTemplate/getId()|",
+      "|java+method:///org/kie/server/controller/api/storage/KieServerTemplateStorage/exists(java.lang.String)|",
+      "|java+constructor:///org/kie/server/controller/api/model/events/ServerTemplateUpdated/ServerTemplateUpdated(org.kie.server.controller.api.model.spec.ServerTemplate)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/kie/server/controller/api/storage/KieServerTemplateStorage/store(org.kie.server.controller.api.model.spec.ServerTemplate)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/kie/server/controller/api/storage/KieServerTemplateStorage/update(org.kie.server.controller.api.model.spec.ServerTemplate)|",
+      "|java+method:///org/kie/server/controller/api/service/NotificationService/notify(org.kie.server.controller.api.model.spec.ServerTemplate,org.kie.server.controller.api.model.spec.ContainerSpec,java.util.List)|",
+      "|java+method:///org/kie/server/api/model/KieContainerStatus/equals(java.lang.Object)|",
+      "|java+method:///org/kie/server/controller/api/service/NotificationService/notify(org.kie.server.controller.api.model.events.ServerTemplateUpdated)|",
+      "|java+method:///org/kie/server/controller/api/model/spec/ServerTemplate/getId()|",
+      "|java+method:///java/util/Collection/iterator()|",
+      "|java+method:///org/kie/server/controller/impl/KieServerInstanceManager/startContainer(org.kie.server.controller.api.model.spec.ServerTemplate,org.kie.server.controller.api.model.spec.ContainerSpec)|",
+      "|java+method:///org/kie/server/controller/api/storage/KieServerTemplateStorage/exists(java.lang.String)|",
+      "|java+constructor:///org/kie/server/controller/api/model/events/ServerTemplateUpdated/ServerTemplateUpdated(org.kie.server.controller.api.model.spec.ServerTemplate)|",
+      "|java+method:///java/util/Collection/isEmpty()|",
+      "|java+method:///org/kie/server/controller/api/model/spec/ServerTemplate/getContainersSpec()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/kie/server/controller/api/model/spec/ContainerSpec/getStatus()|"
+    ],
+    "affectedLib": "org.kie.server:kie-server-controller-api:7.1.0.Beta2",
+    "change": "UPDATED"
+  }
+]

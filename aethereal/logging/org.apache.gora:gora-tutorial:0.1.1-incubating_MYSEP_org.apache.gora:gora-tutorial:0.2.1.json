@@ -1,0 +1,124 @@
+[
+  {
+    "coordinatesV1": "org.apache.gora:gora-tutorial:0.1.1-incubating",
+    "coordinatesV2": "org.apache.gora:gora-tutorial:0.2.1",
+    "caller": "|java+method:///org/apache/gora/tutorial/log/LogManager/init()|",
+    "called": "|java+method:///org/apache/gora/store/DataStoreFactory/getDataStore(java.lang.Class,java.lang.Class,org.apache.hadoop.conf.Configuration)|",
+    "v1Body": [
+      "|java+method:///org/apache/gora/store/DataStoreFactory/getDataStore(java.lang.Class,java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/hadoop/conf/Configuration/Configuration()|",
+      "|java+method:///org/apache/gora/store/DataStoreFactory/getDataStore(java.lang.Class,java.lang.Class,org.apache.hadoop.conf.Configuration)|"
+    ],
+    "affectedLib": "org.apache.gora:gora-core:0.2.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.gora:gora-tutorial:0.1.1-incubating",
+    "coordinatesV2": "org.apache.gora:gora-tutorial:0.2.1",
+    "caller": "|java+method:///org/apache/gora/tutorial/log/LogAnalytics/run(java.lang.String%5B%5D)|",
+    "called": "|java+method:///org/apache/gora/store/DataStoreFactory/getDataStore(java.lang.String,java.lang.Class,java.lang.Class,org.apache.hadoop.conf.Configuration)|",
+    "v1Body": [
+      "|java+method:///org/apache/gora/store/DataStoreFactory/getDataStore(java.lang.Class,java.lang.Class)|",
+      "|java+method:///org/apache/hadoop/mapreduce/Job/waitForCompletion(boolean)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/gora/store/DataStore/close()|",
+      "|java+method:///org/apache/commons/logging/Log/info(java.lang.Object)|",
+      "|java+method:///org/apache/gora/tutorial/log/LogAnalytics/createJob(org.apache.gora.store.DataStore,org.apache.gora.store.DataStore,int)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/apache/gora/store/DataStoreFactory/getDataStore(java.lang.String,java.lang.Class,java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/hadoop/mapreduce/Job/waitForCompletion(boolean)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/gora/store/DataStore/close()|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String)|",
+      "|java+method:///org/apache/gora/tutorial/log/LogAnalytics/createJob(org.apache.gora.store.DataStore,org.apache.gora.store.DataStore,int)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/apache/gora/store/DataStoreFactory/getDataStore(java.lang.Class,java.lang.Class,org.apache.hadoop.conf.Configuration)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/apache/gora/store/DataStoreFactory/getDataStore(java.lang.String,java.lang.Class,java.lang.Class,org.apache.hadoop.conf.Configuration)|",
+      "|java+constructor:///org/apache/hadoop/conf/Configuration/Configuration()|"
+    ],
+    "affectedLib": "org.apache.gora:gora-core:0.2.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.gora:gora-tutorial:0.1.1-incubating",
+    "coordinatesV2": "org.apache.gora:gora-tutorial:0.2.1",
+    "caller": "|java+method:///org/apache/gora/tutorial/log/LogManager/init()|",
+    "called": "|java+constructor:///org/apache/hadoop/conf/Configuration/Configuration()|",
+    "v1Body": [
+      "|java+method:///org/apache/gora/store/DataStoreFactory/getDataStore(java.lang.Class,java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/hadoop/conf/Configuration/Configuration()|",
+      "|java+method:///org/apache/gora/store/DataStoreFactory/getDataStore(java.lang.Class,java.lang.Class,org.apache.hadoop.conf.Configuration)|"
+    ],
+    "affectedLib": "org.apache.hadoop:hadoop-core:1.0.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.gora:gora-tutorial:0.1.1-incubating",
+    "coordinatesV2": "org.apache.gora:gora-tutorial:0.2.1",
+    "caller": "|java+method:///org/apache/gora/tutorial/log/LogAnalytics/run(java.lang.String%5B%5D)|",
+    "called": "|java+method:///org/apache/hadoop/mapreduce/Job/waitForCompletion(boolean)|",
+    "v1Body": [
+      "|java+method:///org/apache/gora/store/DataStoreFactory/getDataStore(java.lang.Class,java.lang.Class)|",
+      "|java+method:///org/apache/hadoop/mapreduce/Job/waitForCompletion(boolean)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/gora/store/DataStore/close()|",
+      "|java+method:///org/apache/commons/logging/Log/info(java.lang.Object)|",
+      "|java+method:///org/apache/gora/tutorial/log/LogAnalytics/createJob(org.apache.gora.store.DataStore,org.apache.gora.store.DataStore,int)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/apache/gora/store/DataStoreFactory/getDataStore(java.lang.String,java.lang.Class,java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/hadoop/mapreduce/Job/waitForCompletion(boolean)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/gora/store/DataStore/close()|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String)|",
+      "|java+method:///org/apache/gora/tutorial/log/LogAnalytics/createJob(org.apache.gora.store.DataStore,org.apache.gora.store.DataStore,int)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/apache/gora/store/DataStoreFactory/getDataStore(java.lang.Class,java.lang.Class,org.apache.hadoop.conf.Configuration)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/apache/gora/store/DataStoreFactory/getDataStore(java.lang.String,java.lang.Class,java.lang.Class,org.apache.hadoop.conf.Configuration)|",
+      "|java+constructor:///org/apache/hadoop/conf/Configuration/Configuration()|"
+    ],
+    "affectedLib": "org.apache.hadoop:hadoop-core:1.0.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.gora:gora-tutorial:0.1.1-incubating",
+    "coordinatesV2": "org.apache.gora:gora-tutorial:0.2.1",
+    "caller": "|java+initializer:///org/apache/gora/tutorial/log/LogManager/LogManager$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+constructor:///java/text/SimpleDateFormat/SimpleDateFormat(java.lang.String)|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+constructor:///java/text/SimpleDateFormat/SimpleDateFormat(java.lang.String)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.6.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.gora:gora-tutorial:0.1.1-incubating",
+    "coordinatesV2": "org.apache.gora:gora-tutorial:0.2.1",
+    "caller": "|java+initializer:///org/apache/gora/tutorial/log/LogAnalytics/LogAnalytics$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.6.1",
+    "change": "ADDED"
+  }
+]

@@ -1,0 +1,1494 @@
+[
+  {
+    "coordinatesV1": "com.twitter.elephantbird:elephant-bird-core:4.0",
+    "coordinatesV2": "com.twitter.elephantbird:elephant-bird-core:3.0.9",
+    "caller": "|java+method:///com/twitter/elephantbird/mapreduce/input/LzoInputFormat/listStatus(org.apache.hadoop.mapreduce.JobContext)|",
+    "called": "|java+method:///org/apache/hadoop/mapreduce/lib/input/FileInputFormat/listStatus(org.apache.hadoop.mapreduce.JobContext)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+method:///org/apache/hadoop/fs/Path/getFileSystem(org.apache.hadoop.conf.Configuration)|",
+      "|java+method:///org/apache/hadoop/fs/FileStatus/getPath()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+method:///com/google/common/collect/Lists/newArrayList()|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/apache/hadoop/mapreduce/JobContext/getConfiguration()|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///org/apache/hadoop/conf/Configuration/getBoolean(java.lang.String,boolean)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///com/twitter/elephantbird/mapreduce/input/LzoInputFormat/addInputPath(java.util.List,org.apache.hadoop.fs.FileSystem,org.apache.hadoop.fs.FileStatus,boolean)|",
+      "|java+method:///org/apache/hadoop/mapreduce/lib/input/FileInputFormat/listStatus(org.apache.hadoop.mapreduce.JobContext)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+method:///com/twitter/elephantbird/util/HadoopCompat/getConfiguration(org.apache.hadoop.mapreduce.JobContext)|",
+      "|java+method:///org/apache/hadoop/fs/Path/getFileSystem(org.apache.hadoop.conf.Configuration)|",
+      "|java+method:///org/apache/hadoop/fs/FileStatus/getPath()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+method:///com/google/common/collect/Lists/newArrayList()|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///org/apache/hadoop/conf/Configuration/getBoolean(java.lang.String,boolean)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///com/twitter/elephantbird/mapreduce/input/LzoInputFormat/addInputPath(java.util.List,org.apache.hadoop.fs.FileSystem,org.apache.hadoop.fs.FileStatus,boolean)|",
+      "|java+method:///org/apache/hadoop/mapreduce/lib/input/FileInputFormat/listStatus(org.apache.hadoop.mapreduce.JobContext)|"
+    ],
+    "affectedLib": "org.apache.hadoop:hadoop-core:0.20.2",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.twitter.elephantbird:elephant-bird-core:4.0",
+    "coordinatesV2": "com.twitter.elephantbird:elephant-bird-core:3.0.9",
+    "caller": "|java+method:///com/twitter/elephantbird/mapreduce/input/MultiInputFormat/setInputFormatClass(java.lang.Class,org.apache.hadoop.mapreduce.Job)|",
+    "called": "|java+method:///org/apache/hadoop/mapreduce/Job/setInputFormatClass(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/hadoop/mapreduce/Job/setInputFormatClass(java.lang.Class)|",
+      "|java+method:///com/twitter/elephantbird/mapreduce/input/MultiInputFormat/setClassConf(java.lang.Class,org.apache.hadoop.conf.Configuration)|",
+      "|java+method:///org/apache/hadoop/mapreduce/Job/getConfiguration()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/hadoop/mapreduce/Job/setInputFormatClass(java.lang.Class)|",
+      "|java+method:///com/twitter/elephantbird/util/HadoopCompat/getConfiguration(org.apache.hadoop.mapreduce.JobContext)|",
+      "|java+method:///com/twitter/elephantbird/mapreduce/input/MultiInputFormat/setClassConf(java.lang.Class,org.apache.hadoop.conf.Configuration)|"
+    ],
+    "affectedLib": "org.apache.hadoop:hadoop-core:0.20.2",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.twitter.elephantbird:elephant-bird-core:4.0",
+    "coordinatesV2": "com.twitter.elephantbird:elephant-bird-core:3.0.9",
+    "caller": "|java+method:///com/twitter/elephantbird/util/HadoopUtils/getCounter(org.apache.hadoop.mapreduce.JobContext,java.lang.String,java.lang.String)|",
+    "called": "|java+method:///org/apache/hadoop/mapreduce/TaskInputOutputContext/getCounter(java.lang.String,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/hadoop/mapreduce/TaskInputOutputContext/getCounter(java.lang.String,java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///com/twitter/elephantbird/util/HadoopUtils$1/HadoopUtils$1(java.lang.String,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///com/twitter/elephantbird/util/HadoopCompat/newGenericCounter(java.lang.String,java.lang.String,long)|",
+      "|java+method:///com/twitter/elephantbird/util/HadoopCompat/getCounter(org.apache.hadoop.mapreduce.TaskInputOutputContext,java.lang.String,java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "affectedLib": "org.apache.hadoop:hadoop-core:0.20.2",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.twitter.elephantbird:elephant-bird-core:4.0",
+    "coordinatesV2": "com.twitter.elephantbird:elephant-bird-core:3.0.9",
+    "caller": "|java+method:///com/twitter/elephantbird/mapreduce/output/LzoTextOutputFormat/getRecordWriter(org.apache.hadoop.mapreduce.TaskAttemptContext)|",
+    "called": "|java+constructor:///org/apache/hadoop/mapreduce/lib/output/TextOutputFormat$LineRecordWriter/TextOutputFormat$LineRecordWriter(java.io.DataOutputStream,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/apache/hadoop/mapreduce/TaskAttemptContext/getConfiguration()|",
+      "|java+constructor:///org/apache/hadoop/mapreduce/lib/output/TextOutputFormat$LineRecordWriter/TextOutputFormat$LineRecordWriter(java.io.DataOutputStream,java.lang.String)|",
+      "|java+method:///com/twitter/elephantbird/util/LzoUtils/getIndexedLzoOutputStream(org.apache.hadoop.conf.Configuration,org.apache.hadoop.fs.Path)|",
+      "|java+method:///com/twitter/elephantbird/mapreduce/output/LzoTextOutputFormat/getDefaultWorkFile(org.apache.hadoop.mapreduce.TaskAttemptContext,java.lang.String)|",
+      "|java+method:///org/apache/hadoop/conf/Configuration/get(java.lang.String,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/twitter/elephantbird/util/HadoopCompat/getConfiguration(org.apache.hadoop.mapreduce.JobContext)|",
+      "|java+constructor:///org/apache/hadoop/mapreduce/lib/output/TextOutputFormat$LineRecordWriter/TextOutputFormat$LineRecordWriter(java.io.DataOutputStream,java.lang.String)|",
+      "|java+method:///com/twitter/elephantbird/util/LzoUtils/getIndexedLzoOutputStream(org.apache.hadoop.conf.Configuration,org.apache.hadoop.fs.Path)|",
+      "|java+method:///com/twitter/elephantbird/mapreduce/output/LzoTextOutputFormat/getDefaultWorkFile(org.apache.hadoop.mapreduce.TaskAttemptContext,java.lang.String)|",
+      "|java+method:///org/apache/hadoop/conf/Configuration/get(java.lang.String,java.lang.String)|"
+    ],
+    "affectedLib": "org.apache.hadoop:hadoop-core:0.20.2",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.twitter.elephantbird:elephant-bird-core:4.0",
+    "coordinatesV2": "com.twitter.elephantbird:elephant-bird-core:3.0.9",
+    "caller": "|java+method:///com/twitter/elephantbird/mapreduce/input/MapReduceInputFormatWrapper$RecordReaderWrapper$1/getCounter(java.lang.String,java.lang.String)|",
+    "called": "|java+method:///org/apache/hadoop/mapreduce/TaskInputOutputContext/getCounter(java.lang.String,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/apache/hadoop/mapreduce/TaskInputOutputContext/getCounter(java.lang.String,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/twitter/elephantbird/util/HadoopCompat/getCounter(org.apache.hadoop.mapreduce.TaskInputOutputContext,java.lang.String,java.lang.String)|"
+    ],
+    "affectedLib": "org.apache.hadoop:hadoop-core:0.20.2",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.twitter.elephantbird:elephant-bird-core:4.0",
+    "coordinatesV2": "com.twitter.elephantbird:elephant-bird-core:3.0.9",
+    "caller": "|java+method:///com/twitter/elephantbird/mapreduce/input/LzoInputFormat/getSplits(org.apache.hadoop.mapreduce.JobContext)|",
+    "called": "|java+constructor:///org/apache/hadoop/mapreduce/lib/input/FileSplit/FileSplit(org.apache.hadoop.fs.Path,long,long,java.lang.String%5B%5D)|",
+    "v1Body": [
+      "|java+method:///org/apache/hadoop/mapreduce/lib/input/FileSplit/getLocations()|",
+      "|java+constructor:///java/io/IOException/IOException(java.lang.String)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/apache/hadoop/mapreduce/lib/input/FileSplit/getStart()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/hadoop/fs/FileSystem/getFileStatus(org.apache.hadoop.fs.Path)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/lang/StringBuilder/append(long)|",
+      "|java+method:///com/hadoop/compression/lzo/LzoIndex/alignSliceStartToIndex(long,long)|",
+      "|java+method:///org/apache/hadoop/mapreduce/lib/input/FileSplit/getPath()|",
+      "|java+method:///org/apache/hadoop/mapreduce/JobContext/getConfiguration()|",
+      "|java+method:///com/hadoop/compression/lzo/LzoIndex/readIndex(org.apache.hadoop.fs.FileSystem,org.apache.hadoop.fs.Path)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+method:///org/apache/hadoop/mapreduce/lib/input/FileInputFormat/getSplits(org.apache.hadoop.mapreduce.JobContext)|",
+      "|java+constructor:///org/apache/hadoop/mapreduce/lib/input/FileSplit/FileSplit(org.apache.hadoop.fs.Path,long,long,java.lang.String%5B%5D)|",
+      "|java+method:///org/apache/hadoop/fs/Path/getFileSystem(org.apache.hadoop.conf.Configuration)|",
+      "|java+method:///org/apache/hadoop/fs/Path/equals(java.lang.Object)|",
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///org/apache/hadoop/fs/FileStatus/getLen()|",
+      "|java+method:///com/hadoop/compression/lzo/LzoIndex/alignSliceEndToIndex(long,long)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///com/hadoop/compression/lzo/LzoIndex/isEmpty()|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///org/apache/hadoop/mapreduce/lib/input/FileSplit/getLength()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/twitter/elephantbird/util/HadoopCompat/getConfiguration(org.apache.hadoop.mapreduce.JobContext)|",
+      "|java+method:///org/apache/hadoop/mapreduce/lib/input/FileSplit/getLocations()|",
+      "|java+constructor:///java/io/IOException/IOException(java.lang.String)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/apache/hadoop/mapreduce/lib/input/FileSplit/getStart()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/hadoop/fs/FileSystem/getFileStatus(org.apache.hadoop.fs.Path)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/lang/StringBuilder/append(long)|",
+      "|java+method:///com/hadoop/compression/lzo/LzoIndex/alignSliceStartToIndex(long,long)|",
+      "|java+method:///org/apache/hadoop/mapreduce/lib/input/FileSplit/getPath()|",
+      "|java+method:///com/hadoop/compression/lzo/LzoIndex/readIndex(org.apache.hadoop.fs.FileSystem,org.apache.hadoop.fs.Path)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+method:///org/apache/hadoop/mapreduce/lib/input/FileInputFormat/getSplits(org.apache.hadoop.mapreduce.JobContext)|",
+      "|java+constructor:///org/apache/hadoop/mapreduce/lib/input/FileSplit/FileSplit(org.apache.hadoop.fs.Path,long,long,java.lang.String%5B%5D)|",
+      "|java+method:///org/apache/hadoop/fs/Path/getFileSystem(org.apache.hadoop.conf.Configuration)|",
+      "|java+method:///org/apache/hadoop/fs/Path/equals(java.lang.Object)|",
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///org/apache/hadoop/fs/FileStatus/getLen()|",
+      "|java+method:///com/hadoop/compression/lzo/LzoIndex/alignSliceEndToIndex(long,long)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///com/hadoop/compression/lzo/LzoIndex/isEmpty()|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///org/apache/hadoop/mapreduce/lib/input/FileSplit/getLength()|"
+    ],
+    "affectedLib": "org.apache.hadoop:hadoop-core:0.20.2",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.twitter.elephantbird:elephant-bird-core:4.0",
+    "coordinatesV2": "com.twitter.elephantbird:elephant-bird-core:3.0.9",
+    "caller": "|java+method:///com/twitter/elephantbird/mapreduce/input/LzoBinaryB64LineRecordReader/nextKeyValue()|",
+    "called": "|java+method:///org/apache/hadoop/util/LineReader/readLine(org.apache.hadoop.io.Text)|",
+    "v1Body": [
+      "|java+method:///org/apache/hadoop/util/LineReader/readLine(org.apache.hadoop.io.Text)|",
+      "|java+method:///com/twitter/elephantbird/mapreduce/io/BinaryConverter/fromBytes(byte%5B%5D)|",
+      "|java+method:///org/apache/hadoop/io/LongWritable/set(long)|",
+      "|java+method:///org/apache/hadoop/io/Text/charAt(int)|",
+      "|java+method:///org/apache/hadoop/io/Text/getLength()|",
+      "|java+method:///com/twitter/elephantbird/mapreduce/input/LzoBinaryB64LineRecordReader/getLzoFilePos()|",
+      "|java+method:///java/util/Arrays/copyOf(byte%5B%5D,int)|",
+      "|java+method:///com/twitter/elephantbird/mapreduce/input/LzoRecordReader$InputErrorTracker/incRecords()|",
+      "|java+method:///org/apache/hadoop/mapreduce/Counter/increment(long)|",
+      "|java+method:///com/twitter/elephantbird/mapreduce/input/LzoRecordReader$InputErrorTracker/incErrors(java.lang.Throwable)|",
+      "|java+method:///org/apache/commons/codec/binary/Base64/decode(byte%5B%5D)|",
+      "|java+method:///org/apache/hadoop/io/Text/getBytes()|",
+      "|java+method:///com/twitter/elephantbird/mapreduce/io/BinaryWritable/set(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/hadoop/util/LineReader/readLine(org.apache.hadoop.io.Text)|",
+      "|java+method:///com/twitter/elephantbird/mapreduce/io/BinaryConverter/fromBytes(byte%5B%5D)|",
+      "|java+method:///org/apache/hadoop/io/LongWritable/set(long)|",
+      "|java+method:///org/apache/hadoop/io/Text/charAt(int)|",
+      "|java+method:///org/apache/hadoop/io/Text/getLength()|",
+      "|java+method:///com/twitter/elephantbird/mapreduce/input/LzoBinaryB64LineRecordReader/getLzoFilePos()|",
+      "|java+method:///java/util/Arrays/copyOf(byte%5B%5D,int)|",
+      "|java+method:///com/twitter/elephantbird/mapreduce/input/LzoRecordReader$InputErrorTracker/incRecords()|",
+      "|java+method:///com/twitter/elephantbird/util/HadoopCompat/incrementCounter(org.apache.hadoop.mapreduce.Counter,long)|",
+      "|java+method:///com/twitter/elephantbird/mapreduce/input/LzoRecordReader$InputErrorTracker/incErrors(java.lang.Throwable)|",
+      "|java+method:///org/apache/commons/codec/binary/Base64/decode(byte%5B%5D)|",
+      "|java+method:///org/apache/hadoop/io/Text/getBytes()|",
+      "|java+method:///com/twitter/elephantbird/mapreduce/io/BinaryWritable/set(java.lang.Object)|"
+    ],
+    "affectedLib": "org.apache.hadoop:hadoop-core:0.20.2",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.twitter.elephantbird:elephant-bird-core:4.0",
+    "coordinatesV2": "com.twitter.elephantbird:elephant-bird-core:3.0.9",
+    "caller": "|java+method:///com/twitter/elephantbird/mapreduce/input/RawSequenceFileRecordReader/initialize(org.apache.hadoop.mapreduce.InputSplit,org.apache.hadoop.mapreduce.TaskAttemptContext)|",
+    "called": "|java+method:///org/apache/hadoop/io/SequenceFile$Reader/getPosition()|",
+    "v1Body": [
+      "|java+method:///org/apache/hadoop/fs/Path/getFileSystem(org.apache.hadoop.conf.Configuration)|",
+      "|java+method:///org/apache/hadoop/mapreduce/TaskAttemptContext/getConfiguration()|",
+      "|java+method:///org/apache/hadoop/mapreduce/lib/input/FileSplit/getStart()|",
+      "|java+method:///org/apache/hadoop/io/SequenceFile$Reader/createValueBytes()|",
+      "|java+method:///org/apache/hadoop/io/SequenceFile$Reader/sync(long)|",
+      "|java+method:///org/apache/hadoop/mapreduce/lib/input/FileSplit/getLength()|",
+      "|java+constructor:///com/twitter/elephantbird/mapreduce/input/RawSequenceFileRecordReader$1/RawSequenceFileRecordReader$1(com.twitter.elephantbird.mapreduce.input.RawSequenceFileRecordReader,org.apache.hadoop.fs.FileSystem,org.apache.hadoop.fs.Path,org.apache.hadoop.conf.Configuration)|",
+      "|java+method:///org/apache/hadoop/io/SequenceFile$Reader/getPosition()|",
+      "|java+method:///org/apache/hadoop/mapreduce/lib/input/FileSplit/getPath()|",
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/twitter/elephantbird/util/HadoopCompat/getConfiguration(org.apache.hadoop.mapreduce.JobContext)|",
+      "|java+method:///org/apache/hadoop/fs/Path/getFileSystem(org.apache.hadoop.conf.Configuration)|",
+      "|java+method:///org/apache/hadoop/mapreduce/lib/input/FileSplit/getStart()|",
+      "|java+method:///org/apache/hadoop/io/SequenceFile$Reader/createValueBytes()|",
+      "|java+method:///org/apache/hadoop/io/SequenceFile$Reader/sync(long)|",
+      "|java+method:///org/apache/hadoop/mapreduce/lib/input/FileSplit/getLength()|",
+      "|java+constructor:///com/twitter/elephantbird/mapreduce/input/RawSequenceFileRecordReader$1/RawSequenceFileRecordReader$1(com.twitter.elephantbird.mapreduce.input.RawSequenceFileRecordReader,org.apache.hadoop.fs.FileSystem,org.apache.hadoop.fs.Path,org.apache.hadoop.conf.Configuration)|",
+      "|java+method:///org/apache/hadoop/io/SequenceFile$Reader/getPosition()|",
+      "|java+method:///org/apache/hadoop/mapreduce/lib/input/FileSplit/getPath()|",
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|"
+    ],
+    "affectedLib": "org.apache.hadoop:hadoop-core:0.20.2",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.twitter.elephantbird:elephant-bird-core:4.0",
+    "coordinatesV2": "com.twitter.elephantbird:elephant-bird-core:3.0.9",
+    "caller": "|java+method:///com/twitter/elephantbird/mapreduce/input/MapReduceInputFormatWrapper$RecordReaderWrapper$1/incrCounter(java.lang.String,java.lang.String,long)|",
+    "called": "|java+method:///org/apache/hadoop/mapreduce/TaskInputOutputContext/getCounter(java.lang.String,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/apache/hadoop/mapreduce/TaskInputOutputContext/getCounter(java.lang.String,java.lang.String)|",
+      "|java+method:///org/apache/hadoop/mapreduce/Counter/increment(long)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/hadoop/mapreduce/TaskInputOutputContext/getCounter(java.lang.String,java.lang.String)|",
+      "|java+method:///com/twitter/elephantbird/util/HadoopCompat/incrementCounter(org.apache.hadoop.mapreduce.Counter,long)|"
+    ],
+    "affectedLib": "org.apache.hadoop:hadoop-core:0.20.2",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.twitter.elephantbird:elephant-bird-core:4.0",
+    "coordinatesV2": "com.twitter.elephantbird:elephant-bird-core:3.0.9",
+    "caller": "|java+method:///com/twitter/elephantbird/mapred/input/DeprecatedInputFormatWrapper/getSplits(org.apache.hadoop.mapred.JobConf,int)|",
+    "called": "|java+constructor:///org/apache/hadoop/mapred/FileSplit/FileSplit(org.apache.hadoop.fs.Path,long,long,java.lang.String%5B%5D)|",
+    "v1Body": [
+      "|java+method:///org/apache/hadoop/mapreduce/lib/input/FileSplit/getLocations()|",
+      "|java+constructor:///org/apache/hadoop/mapreduce/JobContext/JobContext(org.apache.hadoop.conf.Configuration,org.apache.hadoop.mapreduce.JobID)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/apache/hadoop/mapreduce/lib/input/FileSplit/getStart()|",
+      "|java+constructor:///org/apache/hadoop/mapred/FileSplit/FileSplit(org.apache.hadoop.fs.Path,long,long,java.lang.String%5B%5D)|",
+      "|java+method:///com/twitter/elephantbird/mapred/input/DeprecatedInputFormatWrapper/initInputFormat(org.apache.hadoop.mapred.JobConf)|",
+      "|java+method:///org/apache/hadoop/mapreduce/InputFormat/getSplits(org.apache.hadoop.mapreduce.JobContext)|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/apache/hadoop/mapreduce/lib/input/FileSplit/getPath()|",
+      "|java+method:///org/apache/hadoop/mapreduce/lib/input/FileSplit/getLength()|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+constructor:///java/io/IOException/IOException(java.lang.Throwable)|",
+      "|java+constructor:///com/twitter/elephantbird/mapred/input/DeprecatedInputFormatWrapper$InputSplitWrapper/DeprecatedInputFormatWrapper$InputSplitWrapper(org.apache.hadoop.mapreduce.InputSplit)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/hadoop/mapreduce/lib/input/FileSplit/getLocations()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/apache/hadoop/mapreduce/lib/input/FileSplit/getStart()|",
+      "|java+constructor:///org/apache/hadoop/mapred/FileSplit/FileSplit(org.apache.hadoop.fs.Path,long,long,java.lang.String%5B%5D)|",
+      "|java+method:///org/apache/hadoop/mapreduce/InputFormat/getSplits(org.apache.hadoop.mapreduce.JobContext)|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/apache/hadoop/mapreduce/lib/input/FileSplit/getPath()|",
+      "|java+method:///org/apache/hadoop/mapreduce/lib/input/FileSplit/getLength()|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+constructor:///java/io/IOException/IOException(java.lang.Throwable)|",
+      "|java+constructor:///com/twitter/elephantbird/mapred/input/DeprecatedInputFormatWrapper$InputSplitWrapper/DeprecatedInputFormatWrapper$InputSplitWrapper(org.apache.hadoop.mapreduce.InputSplit)|",
+      "|java+method:///com/twitter/elephantbird/util/HadoopCompat/newJobContext(org.apache.hadoop.conf.Configuration,org.apache.hadoop.mapreduce.JobID)|",
+      "|java+method:///com/twitter/elephantbird/mapred/input/DeprecatedInputFormatWrapper/initInputFormat(org.apache.hadoop.mapred.JobConf)|"
+    ],
+    "affectedLib": "org.apache.hadoop:hadoop-core:0.20.2",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.twitter.elephantbird:elephant-bird-core:4.0",
+    "coordinatesV2": "com.twitter.elephantbird:elephant-bird-core:3.0.9",
+    "caller": "|java+method:///com/twitter/elephantbird/mapred/output/DeprecatedOutputFormatWrapper/checkOutputSpecs(org.apache.hadoop.fs.FileSystem,org.apache.hadoop.mapred.JobConf)|",
+    "called": "|java+constructor:///org/apache/hadoop/mapreduce/JobContext/JobContext(org.apache.hadoop.conf.Configuration,org.apache.hadoop.mapreduce.JobID)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/hadoop/mapreduce/JobContext/JobContext(org.apache.hadoop.conf.Configuration,org.apache.hadoop.mapreduce.JobID)|",
+      "|java+method:///org/apache/hadoop/mapreduce/OutputFormat/checkOutputSpecs(org.apache.hadoop.mapreduce.JobContext)|",
+      "|java+constructor:///java/io/IOException/IOException(java.lang.Throwable)|",
+      "|java+method:///com/twitter/elephantbird/mapred/output/DeprecatedOutputFormatWrapper/initOutputFormat(org.apache.hadoop.mapred.JobConf)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/twitter/elephantbird/util/HadoopCompat/newJobContext(org.apache.hadoop.conf.Configuration,org.apache.hadoop.mapreduce.JobID)|",
+      "|java+method:///org/apache/hadoop/mapreduce/OutputFormat/checkOutputSpecs(org.apache.hadoop.mapreduce.JobContext)|",
+      "|java+constructor:///java/io/IOException/IOException(java.lang.Throwable)|",
+      "|java+method:///com/twitter/elephantbird/mapred/output/DeprecatedOutputFormatWrapper/initOutputFormat(org.apache.hadoop.mapred.JobConf)|"
+    ],
+    "affectedLib": "org.apache.hadoop:hadoop-core:0.20.2",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.twitter.elephantbird:elephant-bird-core:4.0",
+    "coordinatesV2": "com.twitter.elephantbird:elephant-bird-core:3.0.9",
+    "caller": "|java+method:///com/twitter/elephantbird/mapreduce/input/LzoInputFormat/isSplitable(org.apache.hadoop.mapreduce.JobContext,org.apache.hadoop.fs.Path)|",
+    "called": "|java+method:///org/apache/hadoop/fs/Path/suffix(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/apache/hadoop/fs/FileSystem/exists(org.apache.hadoop.fs.Path)|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.Throwable)|",
+      "|java+method:///org/apache/hadoop/mapreduce/JobContext/getConfiguration()|",
+      "|java+method:///org/apache/hadoop/fs/Path/getFileSystem(org.apache.hadoop.conf.Configuration)|",
+      "|java+method:///org/apache/hadoop/fs/Path/suffix(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/twitter/elephantbird/util/HadoopCompat/getConfiguration(org.apache.hadoop.mapreduce.JobContext)|",
+      "|java+method:///org/apache/hadoop/fs/FileSystem/exists(org.apache.hadoop.fs.Path)|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.Throwable)|",
+      "|java+method:///org/apache/hadoop/fs/Path/getFileSystem(org.apache.hadoop.conf.Configuration)|",
+      "|java+method:///org/apache/hadoop/fs/Path/suffix(java.lang.String)|"
+    ],
+    "affectedLib": "org.apache.hadoop:hadoop-core:0.20.2",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.twitter.elephantbird:elephant-bird-core:4.0",
+    "coordinatesV2": "com.twitter.elephantbird:elephant-bird-core:3.0.9",
+    "caller": "|java+method:///com/twitter/elephantbird/mapreduce/input/MapReduceInputFormatWrapper$RecordReaderWrapper$1/incrCounter(java.lang.Enum,long)|",
+    "called": "|java+method:///org/apache/hadoop/mapreduce/TaskInputOutputContext/getCounter(java.lang.Enum)|",
+    "v1Body": [
+      "|java+method:///org/apache/hadoop/mapreduce/TaskInputOutputContext/getCounter(java.lang.Enum)|",
+      "|java+method:///org/apache/hadoop/mapreduce/Counter/increment(long)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/hadoop/mapreduce/TaskInputOutputContext/getCounter(java.lang.Enum)|",
+      "|java+method:///com/twitter/elephantbird/util/HadoopCompat/incrementCounter(org.apache.hadoop.mapreduce.Counter,long)|"
+    ],
+    "affectedLib": "org.apache.hadoop:hadoop-core:0.20.2",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.twitter.elephantbird:elephant-bird-core:4.0",
+    "coordinatesV2": "com.twitter.elephantbird:elephant-bird-core:3.0.9",
+    "caller": "|java+method:///com/twitter/elephantbird/mapreduce/input/MapReduceInputFormatWrapper$RecordReaderWrapper$1/setStatus(java.lang.String)|",
+    "called": "|java+method:///org/apache/hadoop/mapreduce/TaskInputOutputContext/setStatus(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/apache/hadoop/mapreduce/TaskInputOutputContext/setStatus(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/twitter/elephantbird/util/HadoopCompat/setStatus(org.apache.hadoop.mapreduce.TaskAttemptContext,java.lang.String)|"
+    ],
+    "affectedLib": "org.apache.hadoop:hadoop-core:0.20.2",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.twitter.elephantbird:elephant-bird-core:4.0",
+    "coordinatesV2": "com.twitter.elephantbird:elephant-bird-core:3.0.9",
+    "caller": "|java+method:///com/twitter/elephantbird/mapreduce/input/MapReduceInputFormatWrapper/getSplits(org.apache.hadoop.mapreduce.JobContext)|",
+    "called": "|java+constructor:///org/apache/hadoop/mapreduce/lib/input/FileSplit/FileSplit(org.apache.hadoop.fs.Path,long,long,java.lang.String%5B%5D)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/hadoop/mapreduce/lib/input/FileSplit/FileSplit(org.apache.hadoop.fs.Path,long,long,java.lang.String%5B%5D)|",
+      "|java+constructor:///java/util/ArrayList/ArrayList(int)|",
+      "|java+method:///com/twitter/elephantbird/mapreduce/input/MapReduceInputFormatWrapper/initInputFormat(org.apache.hadoop.conf.Configuration)|",
+      "|java+method:///org/apache/hadoop/mapred/JobConf/getNumMapTasks()|",
+      "|java+constructor:///com/twitter/elephantbird/mapreduce/input/MapReduceInputFormatWrapper$InputSplitWrapper/MapReduceInputFormatWrapper$InputSplitWrapper(org.apache.hadoop.mapred.InputSplit)|",
+      "|java+method:///org/apache/hadoop/mapreduce/JobContext/getConfiguration()|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///org/apache/hadoop/mapred/FileSplit/getLocations()|",
+      "|java+method:///org/apache/hadoop/mapred/FileSplit/getPath()|",
+      "|java+method:///org/apache/hadoop/mapred/InputFormat/getSplits(org.apache.hadoop.mapred.JobConf,int)|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///org/apache/hadoop/mapred/FileSplit/getLength()|",
+      "|java+method:///org/apache/hadoop/mapred/FileSplit/getStart()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/hadoop/mapreduce/lib/input/FileSplit/FileSplit(org.apache.hadoop.fs.Path,long,long,java.lang.String%5B%5D)|",
+      "|java+method:///com/twitter/elephantbird/util/HadoopCompat/getConfiguration(org.apache.hadoop.mapreduce.JobContext)|",
+      "|java+constructor:///java/util/ArrayList/ArrayList(int)|",
+      "|java+method:///com/twitter/elephantbird/mapreduce/input/MapReduceInputFormatWrapper/initInputFormat(org.apache.hadoop.conf.Configuration)|",
+      "|java+method:///org/apache/hadoop/mapred/JobConf/getNumMapTasks()|",
+      "|java+constructor:///com/twitter/elephantbird/mapreduce/input/MapReduceInputFormatWrapper$InputSplitWrapper/MapReduceInputFormatWrapper$InputSplitWrapper(org.apache.hadoop.mapred.InputSplit)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///org/apache/hadoop/mapred/FileSplit/getLocations()|",
+      "|java+method:///org/apache/hadoop/mapred/FileSplit/getPath()|",
+      "|java+method:///org/apache/hadoop/mapred/InputFormat/getSplits(org.apache.hadoop.mapred.JobConf,int)|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///org/apache/hadoop/mapred/FileSplit/getLength()|",
+      "|java+method:///org/apache/hadoop/mapred/FileSplit/getStart()|"
+    ],
+    "affectedLib": "org.apache.hadoop:hadoop-core:0.20.2",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.twitter.elephantbird:elephant-bird-core:4.0",
+    "coordinatesV2": "com.twitter.elephantbird:elephant-bird-core:3.0.9",
+    "caller": "|java+method:///com/twitter/elephantbird/mapreduce/input/MapReduceInputFormatWrapper/setInputFormat(java.lang.Class,org.apache.hadoop.mapreduce.Job)|",
+    "called": "|java+method:///org/apache/hadoop/mapreduce/Job/setInputFormatClass(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/hadoop/mapreduce/Job/setInputFormatClass(java.lang.Class)|",
+      "|java+method:///org/apache/hadoop/mapreduce/Job/getConfiguration()|",
+      "|java+method:///com/twitter/elephantbird/util/HadoopUtils/setClassConf(org.apache.hadoop.conf.Configuration,java.lang.String,java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/hadoop/mapreduce/Job/setInputFormatClass(java.lang.Class)|",
+      "|java+method:///com/twitter/elephantbird/util/HadoopCompat/getConfiguration(org.apache.hadoop.mapreduce.JobContext)|",
+      "|java+method:///com/twitter/elephantbird/util/HadoopUtils/setClassConf(org.apache.hadoop.conf.Configuration,java.lang.String,java.lang.Class)|"
+    ],
+    "affectedLib": "org.apache.hadoop:hadoop-core:0.20.2",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.twitter.elephantbird:elephant-bird-core:4.0",
+    "coordinatesV2": "com.twitter.elephantbird:elephant-bird-core:3.0.9",
+    "caller": "|java+method:///com/twitter/elephantbird/mapreduce/input/LzoRecordReader/initialize(org.apache.hadoop.mapreduce.InputSplit,org.apache.hadoop.mapreduce.TaskAttemptContext)|",
+    "called": "|java+constructor:///org/apache/hadoop/io/compress/CompressionCodecFactory/CompressionCodecFactory(org.apache.hadoop.conf.Configuration)|",
+    "v1Body": [
+      "|java+method:///org/apache/hadoop/fs/FSDataInputStream/getPos()|",
+      "|java+constructor:///java/io/IOException/IOException(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/hadoop/io/compress/CompressionCodecFactory/getCodec(org.apache.hadoop.fs.Path)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/apache/hadoop/mapreduce/lib/input/FileSplit/getPath()|",
+      "|java+method:///org/apache/hadoop/fs/FileSystem/open(org.apache.hadoop.fs.Path)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+constructor:///com/twitter/elephantbird/mapreduce/input/LzoRecordReader$InputErrorTracker/LzoRecordReader$InputErrorTracker(org.apache.hadoop.conf.Configuration)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/apache/hadoop/fs/Path/getFileSystem(org.apache.hadoop.conf.Configuration)|",
+      "|java+method:///org/apache/hadoop/fs/FSDataInputStream/seek(long)|",
+      "|java+method:///com/twitter/elephantbird/mapreduce/input/LzoRecordReader/skipToNextSyncPoint(boolean)|",
+      "|java+method:///org/apache/hadoop/mapreduce/TaskAttemptContext/getConfiguration()|",
+      "|java+method:///org/apache/hadoop/mapreduce/lib/input/FileSplit/getStart()|",
+      "|java+method:///com/twitter/elephantbird/mapreduce/input/LzoRecordReader/createInputReader(java.io.InputStream,org.apache.hadoop.conf.Configuration)|",
+      "|java+constructor:///org/apache/hadoop/io/compress/CompressionCodecFactory/CompressionCodecFactory(org.apache.hadoop.conf.Configuration)|",
+      "|java+method:///java/lang/StringBuilder/append(long)|",
+      "|java+method:///org/apache/hadoop/io/compress/CompressionCodec/createInputStream(java.io.InputStream)|",
+      "|java+method:///org/apache/hadoop/mapreduce/lib/input/FileSplit/getLength()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/twitter/elephantbird/util/HadoopCompat/getConfiguration(org.apache.hadoop.mapreduce.JobContext)|",
+      "|java+method:///com/twitter/elephantbird/mapreduce/input/LzoRecordReader/skipToNextSyncPoint(boolean)|",
+      "|java+method:///org/apache/hadoop/fs/FSDataInputStream/getPos()|",
+      "|java+constructor:///java/io/IOException/IOException(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/hadoop/io/compress/CompressionCodecFactory/getCodec(org.apache.hadoop.fs.Path)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/apache/hadoop/mapreduce/lib/input/FileSplit/getPath()|",
+      "|java+method:///org/apache/hadoop/fs/FileSystem/open(org.apache.hadoop.fs.Path)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+constructor:///com/twitter/elephantbird/mapreduce/input/LzoRecordReader$InputErrorTracker/LzoRecordReader$InputErrorTracker(org.apache.hadoop.conf.Configuration)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/apache/hadoop/fs/Path/getFileSystem(org.apache.hadoop.conf.Configuration)|",
+      "|java+method:///org/apache/hadoop/fs/FSDataInputStream/seek(long)|",
+      "|java+method:///org/apache/hadoop/mapreduce/lib/input/FileSplit/getStart()|",
+      "|java+method:///com/twitter/elephantbird/mapreduce/input/LzoRecordReader/createInputReader(java.io.InputStream,org.apache.hadoop.conf.Configuration)|",
+      "|java+constructor:///org/apache/hadoop/io/compress/CompressionCodecFactory/CompressionCodecFactory(org.apache.hadoop.conf.Configuration)|",
+      "|java+method:///java/lang/StringBuilder/append(long)|",
+      "|java+method:///org/apache/hadoop/io/compress/CompressionCodec/createInputStream(java.io.InputStream)|",
+      "|java+method:///org/apache/hadoop/mapreduce/lib/input/FileSplit/getLength()|"
+    ],
+    "affectedLib": "org.apache.hadoop:hadoop-core:0.20.2",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.twitter.elephantbird:elephant-bird-core:4.0",
+    "coordinatesV2": "com.twitter.elephantbird:elephant-bird-core:3.0.9",
+    "caller": "|java+method:///com/twitter/elephantbird/mapreduce/input/MapReduceInputFormatWrapper$RecordReaderWrapper/initialize(org.apache.hadoop.mapreduce.InputSplit,org.apache.hadoop.mapreduce.TaskAttemptContext)|",
+    "called": "|java+constructor:///org/apache/hadoop/mapred/FileSplit/FileSplit(org.apache.hadoop.fs.Path,long,long,java.lang.String%5B%5D)|",
+    "v1Body": [
+      "|java+method:///org/apache/hadoop/mapreduce/InputSplit/getLocations()|",
+      "|java+method:///org/apache/hadoop/mapreduce/TaskAttemptContext/getConfiguration()|",
+      "|java+method:///org/apache/hadoop/mapred/InputFormat/getRecordReader(org.apache.hadoop.mapred.InputSplit,org.apache.hadoop.mapred.JobConf,org.apache.hadoop.mapred.Reporter)|",
+      "|java+method:///org/apache/hadoop/mapreduce/lib/input/FileSplit/getStart()|",
+      "|java+method:///org/apache/hadoop/mapred/RecordReader/createKey()|",
+      "|java+method:///org/apache/hadoop/mapreduce/lib/input/FileSplit/getPath()|",
+      "|java+method:///org/apache/hadoop/mapreduce/lib/input/FileSplit/getLength()|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///org/apache/hadoop/mapred/RecordReader/createValue()|",
+      "|java+constructor:///org/apache/hadoop/mapred/FileSplit/FileSplit(org.apache.hadoop.fs.Path,long,long,java.lang.String%5B%5D)|",
+      "|java+constructor:///com/twitter/elephantbird/mapreduce/input/MapReduceInputFormatWrapper$RecordReaderWrapper$1/MapReduceInputFormatWrapper$RecordReaderWrapper$1(com.twitter.elephantbird.mapreduce.input.MapReduceInputFormatWrapper$RecordReaderWrapper,org.apache.hadoop.mapreduce.TaskAttemptContext)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/twitter/elephantbird/util/HadoopCompat/getConfiguration(org.apache.hadoop.mapreduce.JobContext)|",
+      "|java+method:///org/apache/hadoop/mapreduce/InputSplit/getLocations()|",
+      "|java+method:///org/apache/hadoop/mapred/InputFormat/getRecordReader(org.apache.hadoop.mapred.InputSplit,org.apache.hadoop.mapred.JobConf,org.apache.hadoop.mapred.Reporter)|",
+      "|java+method:///org/apache/hadoop/mapreduce/lib/input/FileSplit/getStart()|",
+      "|java+method:///org/apache/hadoop/mapred/RecordReader/createKey()|",
+      "|java+method:///org/apache/hadoop/mapreduce/lib/input/FileSplit/getPath()|",
+      "|java+method:///org/apache/hadoop/mapreduce/lib/input/FileSplit/getLength()|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///org/apache/hadoop/mapred/RecordReader/createValue()|",
+      "|java+constructor:///org/apache/hadoop/mapred/FileSplit/FileSplit(org.apache.hadoop.fs.Path,long,long,java.lang.String%5B%5D)|",
+      "|java+constructor:///com/twitter/elephantbird/mapreduce/input/MapReduceInputFormatWrapper$RecordReaderWrapper$1/MapReduceInputFormatWrapper$RecordReaderWrapper$1(com.twitter.elephantbird.mapreduce.input.MapReduceInputFormatWrapper$RecordReaderWrapper,org.apache.hadoop.mapreduce.TaskAttemptContext)|"
+    ],
+    "affectedLib": "org.apache.hadoop:hadoop-core:0.20.2",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.twitter.elephantbird:elephant-bird-core:4.0",
+    "coordinatesV2": "com.twitter.elephantbird:elephant-bird-core:3.0.9",
+    "caller": "|java+constructor:///com/twitter/elephantbird/mapred/output/DeprecatedOutputFormatWrapper$RecordWriterWrapper/DeprecatedOutputFormatWrapper$RecordWriterWrapper(org.apache.hadoop.mapreduce.OutputFormat,org.apache.hadoop.mapred.JobConf,java.lang.String,org.apache.hadoop.util.Progressable)|",
+    "called": "|java+method:///org/apache/hadoop/mapreduce/TaskAttemptID/forName(java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///com/twitter/elephantbird/mapred/output/DeprecatedOutputFormatWrapper$RecordWriterWrapper$1/DeprecatedOutputFormatWrapper$RecordWriterWrapper$1(com.twitter.elephantbird.mapred.output.DeprecatedOutputFormatWrapper$RecordWriterWrapper,org.apache.hadoop.conf.Configuration,org.apache.hadoop.mapreduce.TaskAttemptID,org.apache.hadoop.mapreduce.RecordWriter,org.apache.hadoop.mapreduce.OutputCommitter,org.apache.hadoop.mapreduce.StatusReporter)|",
+      "|java+method:///org/apache/hadoop/mapred/JobConf/get(java.lang.String)|",
+      "|java+method:///org/apache/hadoop/mapreduce/OutputFormat/getRecordWriter(org.apache.hadoop.mapreduce.TaskAttemptContext)|",
+      "|java+method:///org/apache/hadoop/mapreduce/TaskAttemptID/forName(java.lang.String)|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+constructor:///java/io/IOException/IOException(java.lang.Throwable)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/twitter/elephantbird/util/HadoopCompat/newMapContext(org.apache.hadoop.conf.Configuration,org.apache.hadoop.mapreduce.TaskAttemptID,org.apache.hadoop.mapreduce.RecordReader,org.apache.hadoop.mapreduce.RecordWriter,org.apache.hadoop.mapreduce.OutputCommitter,org.apache.hadoop.mapreduce.StatusReporter,org.apache.hadoop.mapreduce.InputSplit)|",
+      "|java+method:///org/apache/hadoop/mapred/JobConf/get(java.lang.String)|",
+      "|java+method:///org/apache/hadoop/mapreduce/OutputFormat/getRecordWriter(org.apache.hadoop.mapreduce.TaskAttemptContext)|",
+      "|java+method:///org/apache/hadoop/mapreduce/TaskAttemptID/forName(java.lang.String)|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+constructor:///java/io/IOException/IOException(java.lang.Throwable)|"
+    ],
+    "affectedLib": "org.apache.hadoop:hadoop-core:0.20.2",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.twitter.elephantbird:elephant-bird-core:4.0",
+    "coordinatesV2": "com.twitter.elephantbird:elephant-bird-core:3.0.9",
+    "caller": "|java+constructor:///com/twitter/elephantbird/mapred/input/DeprecatedInputFormatWrapper$RecordReaderWrapper/DeprecatedInputFormatWrapper$RecordReaderWrapper(org.apache.hadoop.mapreduce.InputFormat,org.apache.hadoop.mapred.InputSplit,org.apache.hadoop.mapred.JobConf,org.apache.hadoop.mapred.Reporter)|",
+    "called": "|java+constructor:///org/apache/hadoop/mapreduce/TaskAttemptID/TaskAttemptID()|",
+    "v1Body": [
+      "|java+constructor:///org/apache/hadoop/mapreduce/lib/input/FileSplit/FileSplit(org.apache.hadoop.fs.Path,long,long,java.lang.String%5B%5D)|",
+      "|java+method:///org/apache/hadoop/mapreduce/InputFormat/createRecordReader(org.apache.hadoop.mapreduce.InputSplit,org.apache.hadoop.mapreduce.TaskAttemptContext)|",
+      "|java+method:///org/apache/hadoop/mapreduce/RecordReader/getCurrentValue()|",
+      "|java+constructor:///com/twitter/elephantbird/mapred/input/DeprecatedInputFormatWrapper$RecordReaderWrapper$1/DeprecatedInputFormatWrapper$RecordReaderWrapper$1(com.twitter.elephantbird.mapred.input.DeprecatedInputFormatWrapper$RecordReaderWrapper,org.apache.hadoop.conf.Configuration,org.apache.hadoop.mapreduce.TaskAttemptID,org.apache.hadoop.mapreduce.RecordWriter,org.apache.hadoop.mapreduce.OutputCommitter,org.apache.hadoop.mapreduce.StatusReporter)|",
+      "|java+method:///org/apache/hadoop/mapred/JobConf/get(java.lang.String)|",
+      "|java+constructor:///org/apache/hadoop/mapreduce/TaskAttemptID/TaskAttemptID()|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///org/apache/hadoop/mapreduce/RecordReader/getCurrentKey()|",
+      "|java+method:///org/apache/hadoop/mapreduce/RecordReader/initialize(org.apache.hadoop.mapreduce.InputSplit,org.apache.hadoop.mapreduce.TaskAttemptContext)|",
+      "|java+method:///org/apache/hadoop/mapred/InputSplit/getLocations()|",
+      "|java+method:///org/apache/hadoop/mapreduce/RecordReader/nextKeyValue()|",
+      "|java+method:///org/apache/hadoop/mapreduce/TaskAttemptID/forName(java.lang.String)|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+constructor:///java/io/IOException/IOException(java.lang.Throwable)|",
+      "|java+method:///org/apache/hadoop/mapred/FileSplit/getPath()|",
+      "|java+method:///org/apache/hadoop/mapred/InputSplit/getLength()|",
+      "|java+method:///org/apache/hadoop/mapred/FileSplit/getLength()|",
+      "|java+method:///org/apache/hadoop/mapred/FileSplit/getStart()|",
+      "|java+constructor:///com/twitter/elephantbird/mapred/input/DeprecatedInputFormatWrapper$ReporterWrapper/DeprecatedInputFormatWrapper$ReporterWrapper(org.apache.hadoop.mapred.Reporter)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/hadoop/mapreduce/lib/input/FileSplit/FileSplit(org.apache.hadoop.fs.Path,long,long,java.lang.String%5B%5D)|",
+      "|java+method:///org/apache/hadoop/mapreduce/InputFormat/createRecordReader(org.apache.hadoop.mapreduce.InputSplit,org.apache.hadoop.mapreduce.TaskAttemptContext)|",
+      "|java+method:///org/apache/hadoop/mapreduce/RecordReader/getCurrentValue()|",
+      "|java+method:///com/twitter/elephantbird/util/HadoopCompat/newMapContext(org.apache.hadoop.conf.Configuration,org.apache.hadoop.mapreduce.TaskAttemptID,org.apache.hadoop.mapreduce.RecordReader,org.apache.hadoop.mapreduce.RecordWriter,org.apache.hadoop.mapreduce.OutputCommitter,org.apache.hadoop.mapreduce.StatusReporter,org.apache.hadoop.mapreduce.InputSplit)|",
+      "|java+method:///org/apache/hadoop/mapred/JobConf/get(java.lang.String)|",
+      "|java+constructor:///org/apache/hadoop/mapreduce/TaskAttemptID/TaskAttemptID()|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///org/apache/hadoop/mapreduce/RecordReader/getCurrentKey()|",
+      "|java+method:///org/apache/hadoop/mapreduce/RecordReader/initialize(org.apache.hadoop.mapreduce.InputSplit,org.apache.hadoop.mapreduce.TaskAttemptContext)|",
+      "|java+method:///org/apache/hadoop/mapred/InputSplit/getLocations()|",
+      "|java+method:///org/apache/hadoop/mapreduce/RecordReader/nextKeyValue()|",
+      "|java+method:///org/apache/hadoop/mapreduce/TaskAttemptID/forName(java.lang.String)|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+constructor:///java/io/IOException/IOException(java.lang.Throwable)|",
+      "|java+method:///org/apache/hadoop/mapred/FileSplit/getPath()|",
+      "|java+method:///org/apache/hadoop/mapred/InputSplit/getLength()|",
+      "|java+method:///org/apache/hadoop/mapred/FileSplit/getLength()|",
+      "|java+method:///org/apache/hadoop/mapred/FileSplit/getStart()|",
+      "|java+constructor:///com/twitter/elephantbird/mapred/input/DeprecatedInputFormatWrapper$ReporterWrapper/DeprecatedInputFormatWrapper$ReporterWrapper(org.apache.hadoop.mapred.Reporter)|"
+    ],
+    "affectedLib": "org.apache.hadoop:hadoop-core:0.20.2",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.twitter.elephantbird:elephant-bird-core:4.0",
+    "coordinatesV2": "com.twitter.elephantbird:elephant-bird-core:3.0.9",
+    "caller": "|java+method:///com/twitter/elephantbird/util/ExecuteOnClusterTool$ExecuteOnClusterMapper/map(org.apache.hadoop.io.NullWritable,org.apache.hadoop.io.NullWritable,org.apache.hadoop.mapreduce.Mapper$Context)|",
+    "called": "|java+method:///org/apache/hadoop/conf/Configuration/get(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/lang/Class/forName(java.lang.String)|",
+      "|java+constructor:///com/twitter/elephantbird/util/ExecuteOnClusterTool$ExecuteOnClusterMapper$1/ExecuteOnClusterTool$ExecuteOnClusterMapper$1(com.twitter.elephantbird.util.ExecuteOnClusterTool$ExecuteOnClusterMapper,org.apache.hadoop.mapreduce.TaskAttemptContext)|",
+      "|java+method:///com/twitter/elephantbird/util/ExecuteOnClusterTool/execute(org.apache.hadoop.mapreduce.Mapper$Context)|",
+      "|java+method:///java/lang/Class/newInstance()|",
+      "|java+method:///com/twitter/elephantbird/util/ExecuteOnClusterTool/access$000()|",
+      "|java+method:///org/apache/hadoop/conf/Configuration/get(java.lang.String)|",
+      "|java+method:///com/twitter/elephantbird/util/TaskHeartbeatThread/stop()|",
+      "|java+method:///org/apache/hadoop/mapreduce/Mapper$Context/getConfiguration()|",
+      "|java+constructor:///java/io/IOException/IOException(java.lang.Throwable)|",
+      "|java+method:///com/twitter/elephantbird/util/TaskHeartbeatThread/start()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Class/forName(java.lang.String)|",
+      "|java+method:///com/twitter/elephantbird/util/ExecuteOnClusterTool/execute(org.apache.hadoop.mapreduce.Mapper$Context)|",
+      "|java+method:///java/lang/Class/newInstance()|",
+      "|java+method:///com/twitter/elephantbird/util/ExecuteOnClusterTool/access$000()|",
+      "|java+method:///org/apache/hadoop/conf/Configuration/get(java.lang.String)|",
+      "|java+method:///com/twitter/elephantbird/util/TaskHeartbeatThread/stop()|",
+      "|java+constructor:///com/twitter/elephantbird/util/ExecuteOnClusterTool$ExecuteOnClusterMapper$1/ExecuteOnClusterTool$ExecuteOnClusterMapper$1(com.twitter.elephantbird.util.ExecuteOnClusterTool$ExecuteOnClusterMapper,org.apache.hadoop.mapreduce.TaskAttemptContext)|",
+      "|java+method:///com/twitter/elephantbird/util/HadoopCompat/getConfiguration(org.apache.hadoop.mapreduce.JobContext)|",
+      "|java+constructor:///java/io/IOException/IOException(java.lang.Throwable)|",
+      "|java+method:///com/twitter/elephantbird/util/TaskHeartbeatThread/start()|"
+    ],
+    "affectedLib": "org.apache.hadoop:hadoop-core:0.20.2",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.twitter.elephantbird:elephant-bird-core:3.0.9",
+    "coordinatesV2": "com.twitter.elephantbird:elephant-bird-core:4.0",
+    "caller": "|java+method:///com/twitter/elephantbird/mapreduce/output/LzoProtobufBlockOutputFormat/getRecordWriter(org.apache.hadoop.mapreduce.TaskAttemptContext)|",
+    "called": "|java+method:///com/twitter/elephantbird/util/HadoopCompat/getConfiguration(org.apache.hadoop.mapreduce.JobContext)|",
+    "v1Body": [
+      "|java+method:///org/apache/hadoop/mapreduce/TaskAttemptContext/getConfiguration()|",
+      "|java+constructor:///com/twitter/elephantbird/mapreduce/io/ProtobufBlockWriter/ProtobufBlockWriter(java.io.OutputStream,java.lang.Class)|",
+      "|java+constructor:///com/twitter/elephantbird/mapreduce/output/LzoBinaryBlockRecordWriter/LzoBinaryBlockRecordWriter(com.twitter.elephantbird.mapreduce.io.BinaryBlockWriter)|",
+      "|java+method:///com/twitter/elephantbird/util/TypeRef/getRawClass()|",
+      "|java+method:///com/twitter/elephantbird/mapreduce/output/LzoProtobufBlockOutputFormat/getOutputStream(org.apache.hadoop.mapreduce.TaskAttemptContext)|",
+      "|java+method:///com/twitter/elephantbird/util/Protobufs/getTypeRef(org.apache.hadoop.conf.Configuration,java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/twitter/elephantbird/util/HadoopCompat/getConfiguration(org.apache.hadoop.mapreduce.JobContext)|",
+      "|java+constructor:///com/twitter/elephantbird/mapreduce/io/ProtobufBlockWriter/ProtobufBlockWriter(java.io.OutputStream,java.lang.Class)|",
+      "|java+constructor:///com/twitter/elephantbird/mapreduce/output/LzoBinaryBlockRecordWriter/LzoBinaryBlockRecordWriter(com.twitter.elephantbird.mapreduce.io.BinaryBlockWriter)|",
+      "|java+method:///com/twitter/elephantbird/util/TypeRef/getRawClass()|",
+      "|java+method:///com/twitter/elephantbird/mapreduce/output/LzoProtobufBlockOutputFormat/getOutputStream(org.apache.hadoop.mapreduce.TaskAttemptContext)|",
+      "|java+method:///com/twitter/elephantbird/util/Protobufs/getTypeRef(org.apache.hadoop.conf.Configuration,java.lang.Class)|"
+    ],
+    "affectedLib": "com.twitter.elephantbird:elephant-bird-hadoop-compat:4.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.twitter.elephantbird:elephant-bird-core:3.0.9",
+    "coordinatesV2": "com.twitter.elephantbird:elephant-bird-core:4.0",
+    "caller": "|java+method:///com/twitter/elephantbird/mapreduce/input/LzoInputFormat/listStatus(org.apache.hadoop.mapreduce.JobContext)|",
+    "called": "|java+method:///com/twitter/elephantbird/util/HadoopCompat/getConfiguration(org.apache.hadoop.mapreduce.JobContext)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+method:///org/apache/hadoop/fs/Path/getFileSystem(org.apache.hadoop.conf.Configuration)|",
+      "|java+method:///org/apache/hadoop/fs/FileStatus/getPath()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+method:///com/google/common/collect/Lists/newArrayList()|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/apache/hadoop/mapreduce/JobContext/getConfiguration()|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///org/apache/hadoop/conf/Configuration/getBoolean(java.lang.String,boolean)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///com/twitter/elephantbird/mapreduce/input/LzoInputFormat/addInputPath(java.util.List,org.apache.hadoop.fs.FileSystem,org.apache.hadoop.fs.FileStatus,boolean)|",
+      "|java+method:///org/apache/hadoop/mapreduce/lib/input/FileInputFormat/listStatus(org.apache.hadoop.mapreduce.JobContext)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+method:///com/twitter/elephantbird/util/HadoopCompat/getConfiguration(org.apache.hadoop.mapreduce.JobContext)|",
+      "|java+method:///org/apache/hadoop/fs/Path/getFileSystem(org.apache.hadoop.conf.Configuration)|",
+      "|java+method:///org/apache/hadoop/fs/FileStatus/getPath()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+method:///com/google/common/collect/Lists/newArrayList()|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///org/apache/hadoop/conf/Configuration/getBoolean(java.lang.String,boolean)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///com/twitter/elephantbird/mapreduce/input/LzoInputFormat/addInputPath(java.util.List,org.apache.hadoop.fs.FileSystem,org.apache.hadoop.fs.FileStatus,boolean)|",
+      "|java+method:///org/apache/hadoop/mapreduce/lib/input/FileInputFormat/listStatus(org.apache.hadoop.mapreduce.JobContext)|"
+    ],
+    "affectedLib": "com.twitter.elephantbird:elephant-bird-hadoop-compat:4.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.twitter.elephantbird:elephant-bird-core:3.0.9",
+    "coordinatesV2": "com.twitter.elephantbird:elephant-bird-core:4.0",
+    "caller": "|java+method:///com/twitter/elephantbird/mapreduce/input/MultiInputFormat/createRecordReader(org.apache.hadoop.mapreduce.InputSplit,org.apache.hadoop.mapreduce.TaskAttemptContext)|",
+    "called": "|java+method:///com/twitter/elephantbird/util/HadoopCompat/getConfiguration(org.apache.hadoop.mapreduce.JobContext)|",
+    "v1Body": [
+      "|java+method:///org/apache/hadoop/mapreduce/TaskAttemptContext/getConfiguration()|",
+      "|java+method:///java/lang/Object/equals(java.lang.Object)|",
+      "|java+constructor:///java/io/IOException/IOException(java.lang.String)|",
+      "|java+method:///com/twitter/elephantbird/mapreduce/input/MultiInputFormat/isSubclass(java.lang.Class,java.lang.String)|",
+      "|java+constructor:///com/twitter/elephantbird/mapreduce/input/MultiInputFormat$2/MultiInputFormat$2(com.twitter.elephantbird.mapreduce.input.MultiInputFormat,com.twitter.elephantbird.util.TypeRef,com.twitter.elephantbird.mapreduce.io.BinaryBlockReader,com.twitter.elephantbird.mapreduce.io.BinaryWritable)|",
+      "|java+constructor:///com/twitter/elephantbird/mapreduce/io/RawBytesWritable/RawBytesWritable()|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///com/twitter/elephantbird/mapreduce/io/IdentityBinaryConverter/IdentityBinaryConverter()|",
+      "|java+method:///org/apache/hadoop/mapreduce/lib/input/FileSplit/getPath()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///com/twitter/elephantbird/mapreduce/input/MultiInputFormat$Format/ordinal()|",
+      "|java+method:///com/twitter/elephantbird/mapreduce/input/MultiInputFormat/determineFileFormat(org.apache.hadoop.mapreduce.InputSplit,org.apache.hadoop.conf.Configuration)|",
+      "|java+constructor:///com/twitter/elephantbird/mapreduce/input/LzoThriftBlockRecordReader/LzoThriftBlockRecordReader(com.twitter.elephantbird.util.TypeRef)|",
+      "|java+constructor:///com/twitter/elephantbird/mapreduce/input/LzoProtobufBlockRecordReader/LzoProtobufBlockRecordReader(com.twitter.elephantbird.util.TypeRef)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///com/twitter/elephantbird/mapreduce/input/MultiInputFormat$1/MultiInputFormat$1(com.twitter.elephantbird.mapreduce.input.MultiInputFormat,java.io.InputStream,com.twitter.elephantbird.mapreduce.io.BinaryConverter)|",
+      "|java+constructor:///com/twitter/elephantbird/mapreduce/input/LzoProtobufB64LineRecordReader/LzoProtobufB64LineRecordReader(com.twitter.elephantbird.util.TypeRef)|",
+      "|java+constructor:///com/twitter/elephantbird/mapreduce/input/LzoThriftB64LineRecordReader/LzoThriftB64LineRecordReader(com.twitter.elephantbird.util.TypeRef)|",
+      "|java+constructor:///com/twitter/elephantbird/mapreduce/input/LzoBinaryB64LineRecordReader/LzoBinaryB64LineRecordReader(com.twitter.elephantbird.util.TypeRef,com.twitter.elephantbird.mapreduce.io.BinaryWritable,com.twitter.elephantbird.mapreduce.io.BinaryConverter)|",
+      "|java+method:///com/twitter/elephantbird/mapreduce/input/MultiInputFormat/setTypeRef(org.apache.hadoop.conf.Configuration)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///com/twitter/elephantbird/util/TypeRef/getRawClass()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/twitter/elephantbird/util/HadoopCompat/getConfiguration(org.apache.hadoop.mapreduce.JobContext)|",
+      "|java+method:///java/lang/Object/equals(java.lang.Object)|",
+      "|java+constructor:///java/io/IOException/IOException(java.lang.String)|",
+      "|java+method:///com/twitter/elephantbird/mapreduce/input/MultiInputFormat/isSubclass(java.lang.Class,java.lang.String)|",
+      "|java+constructor:///com/twitter/elephantbird/mapreduce/input/MultiInputFormat$2/MultiInputFormat$2(com.twitter.elephantbird.mapreduce.input.MultiInputFormat,com.twitter.elephantbird.util.TypeRef,com.twitter.elephantbird.mapreduce.io.BinaryBlockReader,com.twitter.elephantbird.mapreduce.io.BinaryWritable)|",
+      "|java+constructor:///com/twitter/elephantbird/mapreduce/io/RawBytesWritable/RawBytesWritable()|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///com/twitter/elephantbird/mapreduce/io/IdentityBinaryConverter/IdentityBinaryConverter()|",
+      "|java+method:///org/apache/hadoop/mapreduce/lib/input/FileSplit/getPath()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///com/twitter/elephantbird/mapreduce/input/MultiInputFormat$Format/ordinal()|",
+      "|java+method:///com/twitter/elephantbird/mapreduce/input/MultiInputFormat/determineFileFormat(org.apache.hadoop.mapreduce.InputSplit,org.apache.hadoop.conf.Configuration)|",
+      "|java+constructor:///com/twitter/elephantbird/mapreduce/input/LzoThriftBlockRecordReader/LzoThriftBlockRecordReader(com.twitter.elephantbird.util.TypeRef)|",
+      "|java+constructor:///com/twitter/elephantbird/mapreduce/input/LzoProtobufBlockRecordReader/LzoProtobufBlockRecordReader(com.twitter.elephantbird.util.TypeRef)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///com/twitter/elephantbird/mapreduce/input/MultiInputFormat$1/MultiInputFormat$1(com.twitter.elephantbird.mapreduce.input.MultiInputFormat,java.io.InputStream,com.twitter.elephantbird.mapreduce.io.BinaryConverter)|",
+      "|java+constructor:///com/twitter/elephantbird/mapreduce/input/LzoProtobufB64LineRecordReader/LzoProtobufB64LineRecordReader(com.twitter.elephantbird.util.TypeRef)|",
+      "|java+constructor:///com/twitter/elephantbird/mapreduce/input/LzoThriftB64LineRecordReader/LzoThriftB64LineRecordReader(com.twitter.elephantbird.util.TypeRef)|",
+      "|java+constructor:///com/twitter/elephantbird/mapreduce/input/LzoBinaryB64LineRecordReader/LzoBinaryB64LineRecordReader(com.twitter.elephantbird.util.TypeRef,com.twitter.elephantbird.mapreduce.io.BinaryWritable,com.twitter.elephantbird.mapreduce.io.BinaryConverter)|",
+      "|java+method:///com/twitter/elephantbird/mapreduce/input/MultiInputFormat/setTypeRef(org.apache.hadoop.conf.Configuration)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///com/twitter/elephantbird/util/TypeRef/getRawClass()|"
+    ],
+    "affectedLib": "com.twitter.elephantbird:elephant-bird-hadoop-compat:4.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.twitter.elephantbird:elephant-bird-core:3.0.9",
+    "coordinatesV2": "com.twitter.elephantbird:elephant-bird-core:4.0",
+    "caller": "|java+method:///com/twitter/elephantbird/mapreduce/input/LzoInputFormat/isSplitable(org.apache.hadoop.mapreduce.JobContext,org.apache.hadoop.fs.Path)|",
+    "called": "|java+method:///com/twitter/elephantbird/util/HadoopCompat/getConfiguration(org.apache.hadoop.mapreduce.JobContext)|",
+    "v1Body": [
+      "|java+method:///org/apache/hadoop/fs/FileSystem/exists(org.apache.hadoop.fs.Path)|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.Throwable)|",
+      "|java+method:///org/apache/hadoop/mapreduce/JobContext/getConfiguration()|",
+      "|java+method:///org/apache/hadoop/fs/Path/getFileSystem(org.apache.hadoop.conf.Configuration)|",
+      "|java+method:///org/apache/hadoop/fs/Path/suffix(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/twitter/elephantbird/util/HadoopCompat/getConfiguration(org.apache.hadoop.mapreduce.JobContext)|",
+      "|java+method:///org/apache/hadoop/fs/FileSystem/exists(org.apache.hadoop.fs.Path)|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.Throwable)|",
+      "|java+method:///org/apache/hadoop/fs/Path/getFileSystem(org.apache.hadoop.conf.Configuration)|",
+      "|java+method:///org/apache/hadoop/fs/Path/suffix(java.lang.String)|"
+    ],
+    "affectedLib": "com.twitter.elephantbird:elephant-bird-hadoop-compat:4.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.twitter.elephantbird:elephant-bird-core:3.0.9",
+    "coordinatesV2": "com.twitter.elephantbird:elephant-bird-core:4.0",
+    "caller": "|java+method:///com/twitter/elephantbird/mapreduce/input/MultiInputFormat/setInputFormatClass(java.lang.Class,org.apache.hadoop.mapreduce.Job)|",
+    "called": "|java+method:///com/twitter/elephantbird/util/HadoopCompat/getConfiguration(org.apache.hadoop.mapreduce.JobContext)|",
+    "v1Body": [
+      "|java+method:///org/apache/hadoop/mapreduce/Job/setInputFormatClass(java.lang.Class)|",
+      "|java+method:///com/twitter/elephantbird/mapreduce/input/MultiInputFormat/setClassConf(java.lang.Class,org.apache.hadoop.conf.Configuration)|",
+      "|java+method:///org/apache/hadoop/mapreduce/Job/getConfiguration()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/hadoop/mapreduce/Job/setInputFormatClass(java.lang.Class)|",
+      "|java+method:///com/twitter/elephantbird/util/HadoopCompat/getConfiguration(org.apache.hadoop.mapreduce.JobContext)|",
+      "|java+method:///com/twitter/elephantbird/mapreduce/input/MultiInputFormat/setClassConf(java.lang.Class,org.apache.hadoop.conf.Configuration)|"
+    ],
+    "affectedLib": "com.twitter.elephantbird:elephant-bird-hadoop-compat:4.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.twitter.elephantbird:elephant-bird-core:3.0.9",
+    "coordinatesV2": "com.twitter.elephantbird:elephant-bird-core:4.0",
+    "caller": "|java+constructor:///com/twitter/elephantbird/mapred/output/DeprecatedOutputFormatWrapper$RecordWriterWrapper/DeprecatedOutputFormatWrapper$RecordWriterWrapper(org.apache.hadoop.mapreduce.OutputFormat,org.apache.hadoop.mapred.JobConf,java.lang.String,org.apache.hadoop.util.Progressable)|",
+    "called": "|java+method:///com/twitter/elephantbird/util/HadoopCompat/newMapContext(org.apache.hadoop.conf.Configuration,org.apache.hadoop.mapreduce.TaskAttemptID,org.apache.hadoop.mapreduce.RecordReader,org.apache.hadoop.mapreduce.RecordWriter,org.apache.hadoop.mapreduce.OutputCommitter,org.apache.hadoop.mapreduce.StatusReporter,org.apache.hadoop.mapreduce.InputSplit)|",
+    "v1Body": [
+      "|java+constructor:///com/twitter/elephantbird/mapred/output/DeprecatedOutputFormatWrapper$RecordWriterWrapper$1/DeprecatedOutputFormatWrapper$RecordWriterWrapper$1(com.twitter.elephantbird.mapred.output.DeprecatedOutputFormatWrapper$RecordWriterWrapper,org.apache.hadoop.conf.Configuration,org.apache.hadoop.mapreduce.TaskAttemptID,org.apache.hadoop.mapreduce.RecordWriter,org.apache.hadoop.mapreduce.OutputCommitter,org.apache.hadoop.mapreduce.StatusReporter)|",
+      "|java+method:///org/apache/hadoop/mapred/JobConf/get(java.lang.String)|",
+      "|java+method:///org/apache/hadoop/mapreduce/OutputFormat/getRecordWriter(org.apache.hadoop.mapreduce.TaskAttemptContext)|",
+      "|java+method:///org/apache/hadoop/mapreduce/TaskAttemptID/forName(java.lang.String)|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+constructor:///java/io/IOException/IOException(java.lang.Throwable)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/twitter/elephantbird/util/HadoopCompat/newMapContext(org.apache.hadoop.conf.Configuration,org.apache.hadoop.mapreduce.TaskAttemptID,org.apache.hadoop.mapreduce.RecordReader,org.apache.hadoop.mapreduce.RecordWriter,org.apache.hadoop.mapreduce.OutputCommitter,org.apache.hadoop.mapreduce.StatusReporter,org.apache.hadoop.mapreduce.InputSplit)|",
+      "|java+method:///org/apache/hadoop/mapred/JobConf/get(java.lang.String)|",
+      "|java+method:///org/apache/hadoop/mapreduce/OutputFormat/getRecordWriter(org.apache.hadoop.mapreduce.TaskAttemptContext)|",
+      "|java+method:///org/apache/hadoop/mapreduce/TaskAttemptID/forName(java.lang.String)|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+constructor:///java/io/IOException/IOException(java.lang.Throwable)|"
+    ],
+    "affectedLib": "com.twitter.elephantbird:elephant-bird-hadoop-compat:4.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.twitter.elephantbird:elephant-bird-core:3.0.9",
+    "coordinatesV2": "com.twitter.elephantbird:elephant-bird-core:4.0",
+    "caller": "|java+constructor:///com/twitter/elephantbird/mapred/input/DeprecatedInputFormatWrapper$RecordReaderWrapper/DeprecatedInputFormatWrapper$RecordReaderWrapper(org.apache.hadoop.mapreduce.InputFormat,org.apache.hadoop.mapred.InputSplit,org.apache.hadoop.mapred.JobConf,org.apache.hadoop.mapred.Reporter)|",
+    "called": "|java+method:///com/twitter/elephantbird/util/HadoopCompat/newMapContext(org.apache.hadoop.conf.Configuration,org.apache.hadoop.mapreduce.TaskAttemptID,org.apache.hadoop.mapreduce.RecordReader,org.apache.hadoop.mapreduce.RecordWriter,org.apache.hadoop.mapreduce.OutputCommitter,org.apache.hadoop.mapreduce.StatusReporter,org.apache.hadoop.mapreduce.InputSplit)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/hadoop/mapreduce/lib/input/FileSplit/FileSplit(org.apache.hadoop.fs.Path,long,long,java.lang.String%5B%5D)|",
+      "|java+method:///org/apache/hadoop/mapreduce/InputFormat/createRecordReader(org.apache.hadoop.mapreduce.InputSplit,org.apache.hadoop.mapreduce.TaskAttemptContext)|",
+      "|java+method:///org/apache/hadoop/mapreduce/RecordReader/getCurrentValue()|",
+      "|java+constructor:///com/twitter/elephantbird/mapred/input/DeprecatedInputFormatWrapper$RecordReaderWrapper$1/DeprecatedInputFormatWrapper$RecordReaderWrapper$1(com.twitter.elephantbird.mapred.input.DeprecatedInputFormatWrapper$RecordReaderWrapper,org.apache.hadoop.conf.Configuration,org.apache.hadoop.mapreduce.TaskAttemptID,org.apache.hadoop.mapreduce.RecordWriter,org.apache.hadoop.mapreduce.OutputCommitter,org.apache.hadoop.mapreduce.StatusReporter)|",
+      "|java+method:///org/apache/hadoop/mapred/JobConf/get(java.lang.String)|",
+      "|java+constructor:///org/apache/hadoop/mapreduce/TaskAttemptID/TaskAttemptID()|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///org/apache/hadoop/mapreduce/RecordReader/getCurrentKey()|",
+      "|java+method:///org/apache/hadoop/mapreduce/RecordReader/initialize(org.apache.hadoop.mapreduce.InputSplit,org.apache.hadoop.mapreduce.TaskAttemptContext)|",
+      "|java+method:///org/apache/hadoop/mapred/InputSplit/getLocations()|",
+      "|java+method:///org/apache/hadoop/mapreduce/RecordReader/nextKeyValue()|",
+      "|java+method:///org/apache/hadoop/mapreduce/TaskAttemptID/forName(java.lang.String)|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+constructor:///java/io/IOException/IOException(java.lang.Throwable)|",
+      "|java+method:///org/apache/hadoop/mapred/FileSplit/getPath()|",
+      "|java+method:///org/apache/hadoop/mapred/InputSplit/getLength()|",
+      "|java+method:///org/apache/hadoop/mapred/FileSplit/getLength()|",
+      "|java+method:///org/apache/hadoop/mapred/FileSplit/getStart()|",
+      "|java+constructor:///com/twitter/elephantbird/mapred/input/DeprecatedInputFormatWrapper$ReporterWrapper/DeprecatedInputFormatWrapper$ReporterWrapper(org.apache.hadoop.mapred.Reporter)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/hadoop/mapreduce/lib/input/FileSplit/FileSplit(org.apache.hadoop.fs.Path,long,long,java.lang.String%5B%5D)|",
+      "|java+method:///org/apache/hadoop/mapreduce/InputFormat/createRecordReader(org.apache.hadoop.mapreduce.InputSplit,org.apache.hadoop.mapreduce.TaskAttemptContext)|",
+      "|java+method:///org/apache/hadoop/mapreduce/RecordReader/getCurrentValue()|",
+      "|java+method:///com/twitter/elephantbird/util/HadoopCompat/newMapContext(org.apache.hadoop.conf.Configuration,org.apache.hadoop.mapreduce.TaskAttemptID,org.apache.hadoop.mapreduce.RecordReader,org.apache.hadoop.mapreduce.RecordWriter,org.apache.hadoop.mapreduce.OutputCommitter,org.apache.hadoop.mapreduce.StatusReporter,org.apache.hadoop.mapreduce.InputSplit)|",
+      "|java+method:///org/apache/hadoop/mapred/JobConf/get(java.lang.String)|",
+      "|java+constructor:///org/apache/hadoop/mapreduce/TaskAttemptID/TaskAttemptID()|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///org/apache/hadoop/mapreduce/RecordReader/getCurrentKey()|",
+      "|java+method:///org/apache/hadoop/mapreduce/RecordReader/initialize(org.apache.hadoop.mapreduce.InputSplit,org.apache.hadoop.mapreduce.TaskAttemptContext)|",
+      "|java+method:///org/apache/hadoop/mapred/InputSplit/getLocations()|",
+      "|java+method:///org/apache/hadoop/mapreduce/RecordReader/nextKeyValue()|",
+      "|java+method:///org/apache/hadoop/mapreduce/TaskAttemptID/forName(java.lang.String)|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+constructor:///java/io/IOException/IOException(java.lang.Throwable)|",
+      "|java+method:///org/apache/hadoop/mapred/FileSplit/getPath()|",
+      "|java+method:///org/apache/hadoop/mapred/InputSplit/getLength()|",
+      "|java+method:///org/apache/hadoop/mapred/FileSplit/getLength()|",
+      "|java+method:///org/apache/hadoop/mapred/FileSplit/getStart()|",
+      "|java+constructor:///com/twitter/elephantbird/mapred/input/DeprecatedInputFormatWrapper$ReporterWrapper/DeprecatedInputFormatWrapper$ReporterWrapper(org.apache.hadoop.mapred.Reporter)|"
+    ],
+    "affectedLib": "com.twitter.elephantbird:elephant-bird-hadoop-compat:4.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.twitter.elephantbird:elephant-bird-core:3.0.9",
+    "coordinatesV2": "com.twitter.elephantbird:elephant-bird-core:4.0",
+    "caller": "|java+method:///com/twitter/elephantbird/util/ExecuteOnClusterTool$ExecuteOnClusterMapper/map(org.apache.hadoop.io.NullWritable,org.apache.hadoop.io.NullWritable,org.apache.hadoop.mapreduce.Mapper$Context)|",
+    "called": "|java+method:///com/twitter/elephantbird/util/HadoopCompat/getConfiguration(org.apache.hadoop.mapreduce.JobContext)|",
+    "v1Body": [
+      "|java+method:///java/lang/Class/forName(java.lang.String)|",
+      "|java+constructor:///com/twitter/elephantbird/util/ExecuteOnClusterTool$ExecuteOnClusterMapper$1/ExecuteOnClusterTool$ExecuteOnClusterMapper$1(com.twitter.elephantbird.util.ExecuteOnClusterTool$ExecuteOnClusterMapper,org.apache.hadoop.mapreduce.TaskAttemptContext)|",
+      "|java+method:///com/twitter/elephantbird/util/ExecuteOnClusterTool/execute(org.apache.hadoop.mapreduce.Mapper$Context)|",
+      "|java+method:///java/lang/Class/newInstance()|",
+      "|java+method:///com/twitter/elephantbird/util/ExecuteOnClusterTool/access$000()|",
+      "|java+method:///org/apache/hadoop/conf/Configuration/get(java.lang.String)|",
+      "|java+method:///com/twitter/elephantbird/util/TaskHeartbeatThread/stop()|",
+      "|java+method:///org/apache/hadoop/mapreduce/Mapper$Context/getConfiguration()|",
+      "|java+constructor:///java/io/IOException/IOException(java.lang.Throwable)|",
+      "|java+method:///com/twitter/elephantbird/util/TaskHeartbeatThread/start()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Class/forName(java.lang.String)|",
+      "|java+method:///com/twitter/elephantbird/util/ExecuteOnClusterTool/execute(org.apache.hadoop.mapreduce.Mapper$Context)|",
+      "|java+method:///java/lang/Class/newInstance()|",
+      "|java+method:///com/twitter/elephantbird/util/ExecuteOnClusterTool/access$000()|",
+      "|java+method:///org/apache/hadoop/conf/Configuration/get(java.lang.String)|",
+      "|java+method:///com/twitter/elephantbird/util/TaskHeartbeatThread/stop()|",
+      "|java+constructor:///com/twitter/elephantbird/util/ExecuteOnClusterTool$ExecuteOnClusterMapper$1/ExecuteOnClusterTool$ExecuteOnClusterMapper$1(com.twitter.elephantbird.util.ExecuteOnClusterTool$ExecuteOnClusterMapper,org.apache.hadoop.mapreduce.TaskAttemptContext)|",
+      "|java+method:///com/twitter/elephantbird/util/HadoopCompat/getConfiguration(org.apache.hadoop.mapreduce.JobContext)|",
+      "|java+constructor:///java/io/IOException/IOException(java.lang.Throwable)|",
+      "|java+method:///com/twitter/elephantbird/util/TaskHeartbeatThread/start()|"
+    ],
+    "affectedLib": "com.twitter.elephantbird:elephant-bird-hadoop-compat:4.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.twitter.elephantbird:elephant-bird-core:3.0.9",
+    "coordinatesV2": "com.twitter.elephantbird:elephant-bird-core:4.0",
+    "caller": "|java+method:///com/twitter/elephantbird/mapreduce/output/LzoProtobufB64LineOutputFormat/getRecordWriter(org.apache.hadoop.mapreduce.TaskAttemptContext)|",
+    "called": "|java+method:///com/twitter/elephantbird/util/HadoopCompat/getConfiguration(org.apache.hadoop.mapreduce.JobContext)|",
+    "v1Body": [
+      "|java+method:///com/twitter/elephantbird/mapreduce/output/LzoProtobufB64LineOutputFormat/getOutputStream(org.apache.hadoop.mapreduce.TaskAttemptContext)|",
+      "|java+method:///org/apache/hadoop/mapreduce/TaskAttemptContext/getConfiguration()|",
+      "|java+method:///com/twitter/elephantbird/mapreduce/io/ProtobufConverter/newInstance(com.twitter.elephantbird.util.TypeRef)|",
+      "|java+constructor:///com/twitter/elephantbird/mapreduce/output/LzoBinaryB64LineRecordWriter/LzoBinaryB64LineRecordWriter(com.twitter.elephantbird.mapreduce.io.BinaryConverter,java.io.DataOutputStream)|",
+      "|java+method:///com/twitter/elephantbird/util/Protobufs/getTypeRef(org.apache.hadoop.conf.Configuration,java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/twitter/elephantbird/util/HadoopCompat/getConfiguration(org.apache.hadoop.mapreduce.JobContext)|",
+      "|java+method:///com/twitter/elephantbird/mapreduce/output/LzoProtobufB64LineOutputFormat/getOutputStream(org.apache.hadoop.mapreduce.TaskAttemptContext)|",
+      "|java+method:///com/twitter/elephantbird/mapreduce/io/ProtobufConverter/newInstance(com.twitter.elephantbird.util.TypeRef)|",
+      "|java+constructor:///com/twitter/elephantbird/mapreduce/output/LzoBinaryB64LineRecordWriter/LzoBinaryB64LineRecordWriter(com.twitter.elephantbird.mapreduce.io.BinaryConverter,java.io.DataOutputStream)|",
+      "|java+method:///com/twitter/elephantbird/util/Protobufs/getTypeRef(org.apache.hadoop.conf.Configuration,java.lang.Class)|"
+    ],
+    "affectedLib": "com.twitter.elephantbird:elephant-bird-hadoop-compat:4.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.twitter.elephantbird:elephant-bird-core:3.0.9",
+    "coordinatesV2": "com.twitter.elephantbird:elephant-bird-core:4.0",
+    "caller": "|java+method:///com/twitter/elephantbird/mapreduce/input/LzoBinaryB64LineRecordReader/nextKeyValue()|",
+    "called": "|java+method:///com/twitter/elephantbird/util/HadoopCompat/incrementCounter(org.apache.hadoop.mapreduce.Counter,long)|",
+    "v1Body": [
+      "|java+method:///org/apache/hadoop/util/LineReader/readLine(org.apache.hadoop.io.Text)|",
+      "|java+method:///com/twitter/elephantbird/mapreduce/io/BinaryConverter/fromBytes(byte%5B%5D)|",
+      "|java+method:///org/apache/hadoop/io/LongWritable/set(long)|",
+      "|java+method:///org/apache/hadoop/io/Text/charAt(int)|",
+      "|java+method:///org/apache/hadoop/io/Text/getLength()|",
+      "|java+method:///com/twitter/elephantbird/mapreduce/input/LzoBinaryB64LineRecordReader/getLzoFilePos()|",
+      "|java+method:///java/util/Arrays/copyOf(byte%5B%5D,int)|",
+      "|java+method:///com/twitter/elephantbird/mapreduce/input/LzoRecordReader$InputErrorTracker/incRecords()|",
+      "|java+method:///org/apache/hadoop/mapreduce/Counter/increment(long)|",
+      "|java+method:///com/twitter/elephantbird/mapreduce/input/LzoRecordReader$InputErrorTracker/incErrors(java.lang.Throwable)|",
+      "|java+method:///org/apache/commons/codec/binary/Base64/decode(byte%5B%5D)|",
+      "|java+method:///org/apache/hadoop/io/Text/getBytes()|",
+      "|java+method:///com/twitter/elephantbird/mapreduce/io/BinaryWritable/set(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/hadoop/util/LineReader/readLine(org.apache.hadoop.io.Text)|",
+      "|java+method:///com/twitter/elephantbird/mapreduce/io/BinaryConverter/fromBytes(byte%5B%5D)|",
+      "|java+method:///org/apache/hadoop/io/LongWritable/set(long)|",
+      "|java+method:///org/apache/hadoop/io/Text/charAt(int)|",
+      "|java+method:///org/apache/hadoop/io/Text/getLength()|",
+      "|java+method:///com/twitter/elephantbird/mapreduce/input/LzoBinaryB64LineRecordReader/getLzoFilePos()|",
+      "|java+method:///java/util/Arrays/copyOf(byte%5B%5D,int)|",
+      "|java+method:///com/twitter/elephantbird/mapreduce/input/LzoRecordReader$InputErrorTracker/incRecords()|",
+      "|java+method:///com/twitter/elephantbird/util/HadoopCompat/incrementCounter(org.apache.hadoop.mapreduce.Counter,long)|",
+      "|java+method:///com/twitter/elephantbird/mapreduce/input/LzoRecordReader$InputErrorTracker/incErrors(java.lang.Throwable)|",
+      "|java+method:///org/apache/commons/codec/binary/Base64/decode(byte%5B%5D)|",
+      "|java+method:///org/apache/hadoop/io/Text/getBytes()|",
+      "|java+method:///com/twitter/elephantbird/mapreduce/io/BinaryWritable/set(java.lang.Object)|"
+    ],
+    "affectedLib": "com.twitter.elephantbird:elephant-bird-hadoop-compat:4.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.twitter.elephantbird:elephant-bird-core:3.0.9",
+    "coordinatesV2": "com.twitter.elephantbird:elephant-bird-core:4.0",
+    "caller": "|java+method:///com/twitter/elephantbird/mapreduce/input/MapReduceInputFormatWrapper$RecordReaderWrapper$1/incrCounter(java.lang.Enum,long)|",
+    "called": "|java+method:///com/twitter/elephantbird/util/HadoopCompat/incrementCounter(org.apache.hadoop.mapreduce.Counter,long)|",
+    "v1Body": [
+      "|java+method:///org/apache/hadoop/mapreduce/TaskInputOutputContext/getCounter(java.lang.Enum)|",
+      "|java+method:///org/apache/hadoop/mapreduce/Counter/increment(long)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/hadoop/mapreduce/TaskInputOutputContext/getCounter(java.lang.Enum)|",
+      "|java+method:///com/twitter/elephantbird/util/HadoopCompat/incrementCounter(org.apache.hadoop.mapreduce.Counter,long)|"
+    ],
+    "affectedLib": "com.twitter.elephantbird:elephant-bird-hadoop-compat:4.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.twitter.elephantbird:elephant-bird-core:3.0.9",
+    "coordinatesV2": "com.twitter.elephantbird:elephant-bird-core:4.0",
+    "caller": "|java+method:///com/twitter/elephantbird/mapreduce/input/MapReduceInputFormatWrapper/createRecordReader(org.apache.hadoop.mapreduce.InputSplit,org.apache.hadoop.mapreduce.TaskAttemptContext)|",
+    "called": "|java+method:///com/twitter/elephantbird/util/HadoopCompat/getConfiguration(org.apache.hadoop.mapreduce.JobContext)|",
+    "v1Body": [
+      "|java+method:///org/apache/hadoop/mapreduce/TaskAttemptContext/getConfiguration()|",
+      "|java+method:///com/twitter/elephantbird/mapreduce/input/MapReduceInputFormatWrapper/initInputFormat(org.apache.hadoop.conf.Configuration)|",
+      "|java+constructor:///com/twitter/elephantbird/mapreduce/input/MapReduceInputFormatWrapper$RecordReaderWrapper/MapReduceInputFormatWrapper$RecordReaderWrapper(org.apache.hadoop.mapred.InputFormat)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/twitter/elephantbird/util/HadoopCompat/getConfiguration(org.apache.hadoop.mapreduce.JobContext)|",
+      "|java+method:///com/twitter/elephantbird/mapreduce/input/MapReduceInputFormatWrapper/initInputFormat(org.apache.hadoop.conf.Configuration)|",
+      "|java+constructor:///com/twitter/elephantbird/mapreduce/input/MapReduceInputFormatWrapper$RecordReaderWrapper/MapReduceInputFormatWrapper$RecordReaderWrapper(org.apache.hadoop.mapred.InputFormat)|"
+    ],
+    "affectedLib": "com.twitter.elephantbird:elephant-bird-hadoop-compat:4.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.twitter.elephantbird:elephant-bird-core:3.0.9",
+    "coordinatesV2": "com.twitter.elephantbird:elephant-bird-core:4.0",
+    "caller": "|java+method:///com/twitter/elephantbird/mapreduce/output/LzoOutputFormat/getOutputStream(org.apache.hadoop.mapreduce.TaskAttemptContext)|",
+    "called": "|java+method:///com/twitter/elephantbird/util/HadoopCompat/getConfiguration(org.apache.hadoop.mapreduce.JobContext)|",
+    "v1Body": [
+      "|java+method:///org/apache/hadoop/mapreduce/TaskAttemptContext/getConfiguration()|",
+      "|java+method:///com/twitter/elephantbird/mapreduce/output/LzoOutputFormat/getDefaultWorkFile(org.apache.hadoop.mapreduce.TaskAttemptContext,java.lang.String)|",
+      "|java+method:///com/twitter/elephantbird/util/LzoUtils/getIndexedLzoOutputStream(org.apache.hadoop.conf.Configuration,org.apache.hadoop.fs.Path)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/twitter/elephantbird/util/HadoopCompat/getConfiguration(org.apache.hadoop.mapreduce.JobContext)|",
+      "|java+method:///com/twitter/elephantbird/mapreduce/output/LzoOutputFormat/getDefaultWorkFile(org.apache.hadoop.mapreduce.TaskAttemptContext,java.lang.String)|",
+      "|java+method:///com/twitter/elephantbird/util/LzoUtils/getIndexedLzoOutputStream(org.apache.hadoop.conf.Configuration,org.apache.hadoop.fs.Path)|"
+    ],
+    "affectedLib": "com.twitter.elephantbird:elephant-bird-hadoop-compat:4.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.twitter.elephantbird:elephant-bird-core:3.0.9",
+    "coordinatesV2": "com.twitter.elephantbird:elephant-bird-core:4.0",
+    "caller": "|java+method:///com/twitter/elephantbird/util/HadoopUtils/getCounter(org.apache.hadoop.mapreduce.JobContext,java.lang.String,java.lang.String)|",
+    "called": "|java+method:///com/twitter/elephantbird/util/HadoopCompat/newGenericCounter(java.lang.String,java.lang.String,long)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/hadoop/mapreduce/TaskInputOutputContext/getCounter(java.lang.String,java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///com/twitter/elephantbird/util/HadoopUtils$1/HadoopUtils$1(java.lang.String,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///com/twitter/elephantbird/util/HadoopCompat/newGenericCounter(java.lang.String,java.lang.String,long)|",
+      "|java+method:///com/twitter/elephantbird/util/HadoopCompat/getCounter(org.apache.hadoop.mapreduce.TaskInputOutputContext,java.lang.String,java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "affectedLib": "com.twitter.elephantbird:elephant-bird-hadoop-compat:4.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.twitter.elephantbird:elephant-bird-core:3.0.9",
+    "coordinatesV2": "com.twitter.elephantbird:elephant-bird-core:4.0",
+    "caller": "|java+method:///com/twitter/elephantbird/mapreduce/input/MapReduceInputFormatWrapper$RecordReaderWrapper$1/getCounter(java.lang.String,java.lang.String)|",
+    "called": "|java+method:///com/twitter/elephantbird/util/HadoopCompat/getCounter(org.apache.hadoop.mapreduce.TaskInputOutputContext,java.lang.String,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/apache/hadoop/mapreduce/TaskInputOutputContext/getCounter(java.lang.String,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/twitter/elephantbird/util/HadoopCompat/getCounter(org.apache.hadoop.mapreduce.TaskInputOutputContext,java.lang.String,java.lang.String)|"
+    ],
+    "affectedLib": "com.twitter.elephantbird:elephant-bird-hadoop-compat:4.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.twitter.elephantbird:elephant-bird-core:3.0.9",
+    "coordinatesV2": "com.twitter.elephantbird:elephant-bird-core:4.0",
+    "caller": "|java+method:///com/twitter/elephantbird/mapreduce/output/LzoThriftB64LineOutputFormat/getRecordWriter(org.apache.hadoop.mapreduce.TaskAttemptContext)|",
+    "called": "|java+method:///com/twitter/elephantbird/util/HadoopCompat/getConfiguration(org.apache.hadoop.mapreduce.JobContext)|",
+    "v1Body": [
+      "|java+method:///org/apache/hadoop/mapreduce/TaskAttemptContext/getConfiguration()|",
+      "|java+constructor:///com/twitter/elephantbird/mapreduce/io/ThriftConverter/ThriftConverter(com.twitter.elephantbird.util.TypeRef)|",
+      "|java+method:///com/twitter/elephantbird/util/ThriftUtils/getTypeRef(org.apache.hadoop.conf.Configuration,java.lang.Class)|",
+      "|java+method:///com/twitter/elephantbird/mapreduce/output/LzoThriftB64LineOutputFormat/getOutputStream(org.apache.hadoop.mapreduce.TaskAttemptContext)|",
+      "|java+constructor:///com/twitter/elephantbird/mapreduce/output/LzoBinaryB64LineRecordWriter/LzoBinaryB64LineRecordWriter(com.twitter.elephantbird.mapreduce.io.BinaryConverter,java.io.DataOutputStream)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/twitter/elephantbird/util/HadoopCompat/getConfiguration(org.apache.hadoop.mapreduce.JobContext)|",
+      "|java+constructor:///com/twitter/elephantbird/mapreduce/io/ThriftConverter/ThriftConverter(com.twitter.elephantbird.util.TypeRef)|",
+      "|java+method:///com/twitter/elephantbird/util/ThriftUtils/getTypeRef(org.apache.hadoop.conf.Configuration,java.lang.Class)|",
+      "|java+method:///com/twitter/elephantbird/mapreduce/output/LzoThriftB64LineOutputFormat/getOutputStream(org.apache.hadoop.mapreduce.TaskAttemptContext)|",
+      "|java+constructor:///com/twitter/elephantbird/mapreduce/output/LzoBinaryB64LineRecordWriter/LzoBinaryB64LineRecordWriter(com.twitter.elephantbird.mapreduce.io.BinaryConverter,java.io.DataOutputStream)|"
+    ],
+    "affectedLib": "com.twitter.elephantbird:elephant-bird-hadoop-compat:4.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.twitter.elephantbird:elephant-bird-core:3.0.9",
+    "coordinatesV2": "com.twitter.elephantbird:elephant-bird-core:4.0",
+    "caller": "|java+method:///com/twitter/elephantbird/mapreduce/output/LzoTextOutputFormat/getRecordWriter(org.apache.hadoop.mapreduce.TaskAttemptContext)|",
+    "called": "|java+method:///com/twitter/elephantbird/util/HadoopCompat/getConfiguration(org.apache.hadoop.mapreduce.JobContext)|",
+    "v1Body": [
+      "|java+method:///org/apache/hadoop/mapreduce/TaskAttemptContext/getConfiguration()|",
+      "|java+constructor:///org/apache/hadoop/mapreduce/lib/output/TextOutputFormat$LineRecordWriter/TextOutputFormat$LineRecordWriter(java.io.DataOutputStream,java.lang.String)|",
+      "|java+method:///com/twitter/elephantbird/util/LzoUtils/getIndexedLzoOutputStream(org.apache.hadoop.conf.Configuration,org.apache.hadoop.fs.Path)|",
+      "|java+method:///com/twitter/elephantbird/mapreduce/output/LzoTextOutputFormat/getDefaultWorkFile(org.apache.hadoop.mapreduce.TaskAttemptContext,java.lang.String)|",
+      "|java+method:///org/apache/hadoop/conf/Configuration/get(java.lang.String,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/twitter/elephantbird/util/HadoopCompat/getConfiguration(org.apache.hadoop.mapreduce.JobContext)|",
+      "|java+constructor:///org/apache/hadoop/mapreduce/lib/output/TextOutputFormat$LineRecordWriter/TextOutputFormat$LineRecordWriter(java.io.DataOutputStream,java.lang.String)|",
+      "|java+method:///com/twitter/elephantbird/util/LzoUtils/getIndexedLzoOutputStream(org.apache.hadoop.conf.Configuration,org.apache.hadoop.fs.Path)|",
+      "|java+method:///com/twitter/elephantbird/mapreduce/output/LzoTextOutputFormat/getDefaultWorkFile(org.apache.hadoop.mapreduce.TaskAttemptContext,java.lang.String)|",
+      "|java+method:///org/apache/hadoop/conf/Configuration/get(java.lang.String,java.lang.String)|"
+    ],
+    "affectedLib": "com.twitter.elephantbird:elephant-bird-hadoop-compat:4.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.twitter.elephantbird:elephant-bird-core:3.0.9",
+    "coordinatesV2": "com.twitter.elephantbird:elephant-bird-core:4.0",
+    "caller": "|java+method:///com/twitter/elephantbird/mapreduce/input/RawSequenceFileRecordReader/initialize(org.apache.hadoop.mapreduce.InputSplit,org.apache.hadoop.mapreduce.TaskAttemptContext)|",
+    "called": "|java+method:///com/twitter/elephantbird/util/HadoopCompat/getConfiguration(org.apache.hadoop.mapreduce.JobContext)|",
+    "v1Body": [
+      "|java+method:///org/apache/hadoop/fs/Path/getFileSystem(org.apache.hadoop.conf.Configuration)|",
+      "|java+method:///org/apache/hadoop/mapreduce/TaskAttemptContext/getConfiguration()|",
+      "|java+method:///org/apache/hadoop/mapreduce/lib/input/FileSplit/getStart()|",
+      "|java+method:///org/apache/hadoop/io/SequenceFile$Reader/createValueBytes()|",
+      "|java+method:///org/apache/hadoop/io/SequenceFile$Reader/sync(long)|",
+      "|java+method:///org/apache/hadoop/mapreduce/lib/input/FileSplit/getLength()|",
+      "|java+constructor:///com/twitter/elephantbird/mapreduce/input/RawSequenceFileRecordReader$1/RawSequenceFileRecordReader$1(com.twitter.elephantbird.mapreduce.input.RawSequenceFileRecordReader,org.apache.hadoop.fs.FileSystem,org.apache.hadoop.fs.Path,org.apache.hadoop.conf.Configuration)|",
+      "|java+method:///org/apache/hadoop/io/SequenceFile$Reader/getPosition()|",
+      "|java+method:///org/apache/hadoop/mapreduce/lib/input/FileSplit/getPath()|",
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/twitter/elephantbird/util/HadoopCompat/getConfiguration(org.apache.hadoop.mapreduce.JobContext)|",
+      "|java+method:///org/apache/hadoop/fs/Path/getFileSystem(org.apache.hadoop.conf.Configuration)|",
+      "|java+method:///org/apache/hadoop/mapreduce/lib/input/FileSplit/getStart()|",
+      "|java+method:///org/apache/hadoop/io/SequenceFile$Reader/createValueBytes()|",
+      "|java+method:///org/apache/hadoop/io/SequenceFile$Reader/sync(long)|",
+      "|java+method:///org/apache/hadoop/mapreduce/lib/input/FileSplit/getLength()|",
+      "|java+constructor:///com/twitter/elephantbird/mapreduce/input/RawSequenceFileRecordReader$1/RawSequenceFileRecordReader$1(com.twitter.elephantbird.mapreduce.input.RawSequenceFileRecordReader,org.apache.hadoop.fs.FileSystem,org.apache.hadoop.fs.Path,org.apache.hadoop.conf.Configuration)|",
+      "|java+method:///org/apache/hadoop/io/SequenceFile$Reader/getPosition()|",
+      "|java+method:///org/apache/hadoop/mapreduce/lib/input/FileSplit/getPath()|",
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object,java.lang.Object)|"
+    ],
+    "affectedLib": "com.twitter.elephantbird:elephant-bird-hadoop-compat:4.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.twitter.elephantbird:elephant-bird-core:3.0.9",
+    "coordinatesV2": "com.twitter.elephantbird:elephant-bird-core:4.0",
+    "caller": "|java+method:///com/twitter/elephantbird/mapreduce/input/MapReduceInputFormatWrapper$RecordReaderWrapper$1/setStatus(java.lang.String)|",
+    "called": "|java+method:///com/twitter/elephantbird/util/HadoopCompat/setStatus(org.apache.hadoop.mapreduce.TaskAttemptContext,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/apache/hadoop/mapreduce/TaskInputOutputContext/setStatus(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/twitter/elephantbird/util/HadoopCompat/setStatus(org.apache.hadoop.mapreduce.TaskAttemptContext,java.lang.String)|"
+    ],
+    "affectedLib": "com.twitter.elephantbird:elephant-bird-hadoop-compat:4.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.twitter.elephantbird:elephant-bird-core:3.0.9",
+    "coordinatesV2": "com.twitter.elephantbird:elephant-bird-core:4.0",
+    "caller": "|java+method:///com/twitter/elephantbird/mapreduce/output/LzoThriftBlockOutputFormat/getRecordWriter(org.apache.hadoop.mapreduce.TaskAttemptContext)|",
+    "called": "|java+method:///com/twitter/elephantbird/util/HadoopCompat/getConfiguration(org.apache.hadoop.mapreduce.JobContext)|",
+    "v1Body": [
+      "|java+method:///org/apache/hadoop/mapreduce/TaskAttemptContext/getConfiguration()|",
+      "|java+constructor:///com/twitter/elephantbird/mapreduce/output/LzoBinaryBlockRecordWriter/LzoBinaryBlockRecordWriter(com.twitter.elephantbird.mapreduce.io.BinaryBlockWriter)|",
+      "|java+constructor:///com/twitter/elephantbird/mapreduce/io/ThriftBlockWriter/ThriftBlockWriter(java.io.OutputStream,java.lang.Class)|",
+      "|java+method:///com/twitter/elephantbird/mapreduce/output/LzoThriftBlockOutputFormat/getOutputStream(org.apache.hadoop.mapreduce.TaskAttemptContext)|",
+      "|java+method:///com/twitter/elephantbird/util/ThriftUtils/getTypeRef(org.apache.hadoop.conf.Configuration,java.lang.Class)|",
+      "|java+method:///com/twitter/elephantbird/util/TypeRef/getRawClass()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/twitter/elephantbird/util/HadoopCompat/getConfiguration(org.apache.hadoop.mapreduce.JobContext)|",
+      "|java+constructor:///com/twitter/elephantbird/mapreduce/output/LzoBinaryBlockRecordWriter/LzoBinaryBlockRecordWriter(com.twitter.elephantbird.mapreduce.io.BinaryBlockWriter)|",
+      "|java+constructor:///com/twitter/elephantbird/mapreduce/io/ThriftBlockWriter/ThriftBlockWriter(java.io.OutputStream,java.lang.Class)|",
+      "|java+method:///com/twitter/elephantbird/mapreduce/output/LzoThriftBlockOutputFormat/getOutputStream(org.apache.hadoop.mapreduce.TaskAttemptContext)|",
+      "|java+method:///com/twitter/elephantbird/util/ThriftUtils/getTypeRef(org.apache.hadoop.conf.Configuration,java.lang.Class)|",
+      "|java+method:///com/twitter/elephantbird/util/TypeRef/getRawClass()|"
+    ],
+    "affectedLib": "com.twitter.elephantbird:elephant-bird-hadoop-compat:4.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.twitter.elephantbird:elephant-bird-core:3.0.9",
+    "coordinatesV2": "com.twitter.elephantbird:elephant-bird-core:4.0",
+    "caller": "|java+method:///com/twitter/elephantbird/mapreduce/input/MapReduceInputFormatWrapper$RecordReaderWrapper$1/incrCounter(java.lang.String,java.lang.String,long)|",
+    "called": "|java+method:///com/twitter/elephantbird/util/HadoopCompat/incrementCounter(org.apache.hadoop.mapreduce.Counter,long)|",
+    "v1Body": [
+      "|java+method:///org/apache/hadoop/mapreduce/TaskInputOutputContext/getCounter(java.lang.String,java.lang.String)|",
+      "|java+method:///org/apache/hadoop/mapreduce/Counter/increment(long)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/hadoop/mapreduce/TaskInputOutputContext/getCounter(java.lang.String,java.lang.String)|",
+      "|java+method:///com/twitter/elephantbird/util/HadoopCompat/incrementCounter(org.apache.hadoop.mapreduce.Counter,long)|"
+    ],
+    "affectedLib": "com.twitter.elephantbird:elephant-bird-hadoop-compat:4.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.twitter.elephantbird:elephant-bird-core:3.0.9",
+    "coordinatesV2": "com.twitter.elephantbird:elephant-bird-core:4.0",
+    "caller": "|java+method:///com/twitter/elephantbird/mapreduce/input/MapReduceInputFormatWrapper/getSplits(org.apache.hadoop.mapreduce.JobContext)|",
+    "called": "|java+method:///com/twitter/elephantbird/util/HadoopCompat/getConfiguration(org.apache.hadoop.mapreduce.JobContext)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/hadoop/mapreduce/lib/input/FileSplit/FileSplit(org.apache.hadoop.fs.Path,long,long,java.lang.String%5B%5D)|",
+      "|java+constructor:///java/util/ArrayList/ArrayList(int)|",
+      "|java+method:///com/twitter/elephantbird/mapreduce/input/MapReduceInputFormatWrapper/initInputFormat(org.apache.hadoop.conf.Configuration)|",
+      "|java+method:///org/apache/hadoop/mapred/JobConf/getNumMapTasks()|",
+      "|java+constructor:///com/twitter/elephantbird/mapreduce/input/MapReduceInputFormatWrapper$InputSplitWrapper/MapReduceInputFormatWrapper$InputSplitWrapper(org.apache.hadoop.mapred.InputSplit)|",
+      "|java+method:///org/apache/hadoop/mapreduce/JobContext/getConfiguration()|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///org/apache/hadoop/mapred/FileSplit/getLocations()|",
+      "|java+method:///org/apache/hadoop/mapred/FileSplit/getPath()|",
+      "|java+method:///org/apache/hadoop/mapred/InputFormat/getSplits(org.apache.hadoop.mapred.JobConf,int)|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///org/apache/hadoop/mapred/FileSplit/getLength()|",
+      "|java+method:///org/apache/hadoop/mapred/FileSplit/getStart()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/hadoop/mapreduce/lib/input/FileSplit/FileSplit(org.apache.hadoop.fs.Path,long,long,java.lang.String%5B%5D)|",
+      "|java+method:///com/twitter/elephantbird/util/HadoopCompat/getConfiguration(org.apache.hadoop.mapreduce.JobContext)|",
+      "|java+constructor:///java/util/ArrayList/ArrayList(int)|",
+      "|java+method:///com/twitter/elephantbird/mapreduce/input/MapReduceInputFormatWrapper/initInputFormat(org.apache.hadoop.conf.Configuration)|",
+      "|java+method:///org/apache/hadoop/mapred/JobConf/getNumMapTasks()|",
+      "|java+constructor:///com/twitter/elephantbird/mapreduce/input/MapReduceInputFormatWrapper$InputSplitWrapper/MapReduceInputFormatWrapper$InputSplitWrapper(org.apache.hadoop.mapred.InputSplit)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///org/apache/hadoop/mapred/FileSplit/getLocations()|",
+      "|java+method:///org/apache/hadoop/mapred/FileSplit/getPath()|",
+      "|java+method:///org/apache/hadoop/mapred/InputFormat/getSplits(org.apache.hadoop.mapred.JobConf,int)|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///org/apache/hadoop/mapred/FileSplit/getLength()|",
+      "|java+method:///org/apache/hadoop/mapred/FileSplit/getStart()|"
+    ],
+    "affectedLib": "com.twitter.elephantbird:elephant-bird-hadoop-compat:4.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.twitter.elephantbird:elephant-bird-core:3.0.9",
+    "coordinatesV2": "com.twitter.elephantbird:elephant-bird-core:4.0",
+    "caller": "|java+method:///com/twitter/elephantbird/mapred/input/DeprecatedInputFormatWrapper/getSplits(org.apache.hadoop.mapred.JobConf,int)|",
+    "called": "|java+method:///com/twitter/elephantbird/util/HadoopCompat/newJobContext(org.apache.hadoop.conf.Configuration,org.apache.hadoop.mapreduce.JobID)|",
+    "v1Body": [
+      "|java+method:///org/apache/hadoop/mapreduce/lib/input/FileSplit/getLocations()|",
+      "|java+constructor:///org/apache/hadoop/mapreduce/JobContext/JobContext(org.apache.hadoop.conf.Configuration,org.apache.hadoop.mapreduce.JobID)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/apache/hadoop/mapreduce/lib/input/FileSplit/getStart()|",
+      "|java+constructor:///org/apache/hadoop/mapred/FileSplit/FileSplit(org.apache.hadoop.fs.Path,long,long,java.lang.String%5B%5D)|",
+      "|java+method:///com/twitter/elephantbird/mapred/input/DeprecatedInputFormatWrapper/initInputFormat(org.apache.hadoop.mapred.JobConf)|",
+      "|java+method:///org/apache/hadoop/mapreduce/InputFormat/getSplits(org.apache.hadoop.mapreduce.JobContext)|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/apache/hadoop/mapreduce/lib/input/FileSplit/getPath()|",
+      "|java+method:///org/apache/hadoop/mapreduce/lib/input/FileSplit/getLength()|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+constructor:///java/io/IOException/IOException(java.lang.Throwable)|",
+      "|java+constructor:///com/twitter/elephantbird/mapred/input/DeprecatedInputFormatWrapper$InputSplitWrapper/DeprecatedInputFormatWrapper$InputSplitWrapper(org.apache.hadoop.mapreduce.InputSplit)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/hadoop/mapreduce/lib/input/FileSplit/getLocations()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/apache/hadoop/mapreduce/lib/input/FileSplit/getStart()|",
+      "|java+constructor:///org/apache/hadoop/mapred/FileSplit/FileSplit(org.apache.hadoop.fs.Path,long,long,java.lang.String%5B%5D)|",
+      "|java+method:///org/apache/hadoop/mapreduce/InputFormat/getSplits(org.apache.hadoop.mapreduce.JobContext)|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/apache/hadoop/mapreduce/lib/input/FileSplit/getPath()|",
+      "|java+method:///org/apache/hadoop/mapreduce/lib/input/FileSplit/getLength()|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+constructor:///java/io/IOException/IOException(java.lang.Throwable)|",
+      "|java+constructor:///com/twitter/elephantbird/mapred/input/DeprecatedInputFormatWrapper$InputSplitWrapper/DeprecatedInputFormatWrapper$InputSplitWrapper(org.apache.hadoop.mapreduce.InputSplit)|",
+      "|java+method:///com/twitter/elephantbird/util/HadoopCompat/newJobContext(org.apache.hadoop.conf.Configuration,org.apache.hadoop.mapreduce.JobID)|",
+      "|java+method:///com/twitter/elephantbird/mapred/input/DeprecatedInputFormatWrapper/initInputFormat(org.apache.hadoop.mapred.JobConf)|"
+    ],
+    "affectedLib": "com.twitter.elephantbird:elephant-bird-hadoop-compat:4.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.twitter.elephantbird:elephant-bird-core:3.0.9",
+    "coordinatesV2": "com.twitter.elephantbird:elephant-bird-core:4.0",
+    "caller": "|java+method:///com/twitter/elephantbird/mapred/output/DeprecatedOutputFormatWrapper/checkOutputSpecs(org.apache.hadoop.fs.FileSystem,org.apache.hadoop.mapred.JobConf)|",
+    "called": "|java+method:///com/twitter/elephantbird/util/HadoopCompat/newJobContext(org.apache.hadoop.conf.Configuration,org.apache.hadoop.mapreduce.JobID)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/hadoop/mapreduce/JobContext/JobContext(org.apache.hadoop.conf.Configuration,org.apache.hadoop.mapreduce.JobID)|",
+      "|java+method:///org/apache/hadoop/mapreduce/OutputFormat/checkOutputSpecs(org.apache.hadoop.mapreduce.JobContext)|",
+      "|java+constructor:///java/io/IOException/IOException(java.lang.Throwable)|",
+      "|java+method:///com/twitter/elephantbird/mapred/output/DeprecatedOutputFormatWrapper/initOutputFormat(org.apache.hadoop.mapred.JobConf)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/twitter/elephantbird/util/HadoopCompat/newJobContext(org.apache.hadoop.conf.Configuration,org.apache.hadoop.mapreduce.JobID)|",
+      "|java+method:///org/apache/hadoop/mapreduce/OutputFormat/checkOutputSpecs(org.apache.hadoop.mapreduce.JobContext)|",
+      "|java+constructor:///java/io/IOException/IOException(java.lang.Throwable)|",
+      "|java+method:///com/twitter/elephantbird/mapred/output/DeprecatedOutputFormatWrapper/initOutputFormat(org.apache.hadoop.mapred.JobConf)|"
+    ],
+    "affectedLib": "com.twitter.elephantbird:elephant-bird-hadoop-compat:4.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.twitter.elephantbird:elephant-bird-core:3.0.9",
+    "coordinatesV2": "com.twitter.elephantbird:elephant-bird-core:4.0",
+    "caller": "|java+method:///com/twitter/elephantbird/mapreduce/input/MapReduceInputFormatWrapper/setInputFormat(java.lang.Class,org.apache.hadoop.mapreduce.Job)|",
+    "called": "|java+method:///com/twitter/elephantbird/util/HadoopCompat/getConfiguration(org.apache.hadoop.mapreduce.JobContext)|",
+    "v1Body": [
+      "|java+method:///org/apache/hadoop/mapreduce/Job/setInputFormatClass(java.lang.Class)|",
+      "|java+method:///org/apache/hadoop/mapreduce/Job/getConfiguration()|",
+      "|java+method:///com/twitter/elephantbird/util/HadoopUtils/setClassConf(org.apache.hadoop.conf.Configuration,java.lang.String,java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/hadoop/mapreduce/Job/setInputFormatClass(java.lang.Class)|",
+      "|java+method:///com/twitter/elephantbird/util/HadoopCompat/getConfiguration(org.apache.hadoop.mapreduce.JobContext)|",
+      "|java+method:///com/twitter/elephantbird/util/HadoopUtils/setClassConf(org.apache.hadoop.conf.Configuration,java.lang.String,java.lang.Class)|"
+    ],
+    "affectedLib": "com.twitter.elephantbird:elephant-bird-hadoop-compat:4.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.twitter.elephantbird:elephant-bird-core:3.0.9",
+    "coordinatesV2": "com.twitter.elephantbird:elephant-bird-core:4.0",
+    "caller": "|java+method:///com/twitter/elephantbird/mapreduce/input/LzoInputFormat/getSplits(org.apache.hadoop.mapreduce.JobContext)|",
+    "called": "|java+method:///com/twitter/elephantbird/util/HadoopCompat/getConfiguration(org.apache.hadoop.mapreduce.JobContext)|",
+    "v1Body": [
+      "|java+method:///org/apache/hadoop/mapreduce/lib/input/FileSplit/getLocations()|",
+      "|java+constructor:///java/io/IOException/IOException(java.lang.String)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/apache/hadoop/mapreduce/lib/input/FileSplit/getStart()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/hadoop/fs/FileSystem/getFileStatus(org.apache.hadoop.fs.Path)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/lang/StringBuilder/append(long)|",
+      "|java+method:///com/hadoop/compression/lzo/LzoIndex/alignSliceStartToIndex(long,long)|",
+      "|java+method:///org/apache/hadoop/mapreduce/lib/input/FileSplit/getPath()|",
+      "|java+method:///org/apache/hadoop/mapreduce/JobContext/getConfiguration()|",
+      "|java+method:///com/hadoop/compression/lzo/LzoIndex/readIndex(org.apache.hadoop.fs.FileSystem,org.apache.hadoop.fs.Path)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+method:///org/apache/hadoop/mapreduce/lib/input/FileInputFormat/getSplits(org.apache.hadoop.mapreduce.JobContext)|",
+      "|java+constructor:///org/apache/hadoop/mapreduce/lib/input/FileSplit/FileSplit(org.apache.hadoop.fs.Path,long,long,java.lang.String%5B%5D)|",
+      "|java+method:///org/apache/hadoop/fs/Path/getFileSystem(org.apache.hadoop.conf.Configuration)|",
+      "|java+method:///org/apache/hadoop/fs/Path/equals(java.lang.Object)|",
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///org/apache/hadoop/fs/FileStatus/getLen()|",
+      "|java+method:///com/hadoop/compression/lzo/LzoIndex/alignSliceEndToIndex(long,long)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///com/hadoop/compression/lzo/LzoIndex/isEmpty()|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///org/apache/hadoop/mapreduce/lib/input/FileSplit/getLength()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/twitter/elephantbird/util/HadoopCompat/getConfiguration(org.apache.hadoop.mapreduce.JobContext)|",
+      "|java+method:///org/apache/hadoop/mapreduce/lib/input/FileSplit/getLocations()|",
+      "|java+constructor:///java/io/IOException/IOException(java.lang.String)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/apache/hadoop/mapreduce/lib/input/FileSplit/getStart()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/hadoop/fs/FileSystem/getFileStatus(org.apache.hadoop.fs.Path)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/lang/StringBuilder/append(long)|",
+      "|java+method:///com/hadoop/compression/lzo/LzoIndex/alignSliceStartToIndex(long,long)|",
+      "|java+method:///org/apache/hadoop/mapreduce/lib/input/FileSplit/getPath()|",
+      "|java+method:///com/hadoop/compression/lzo/LzoIndex/readIndex(org.apache.hadoop.fs.FileSystem,org.apache.hadoop.fs.Path)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+method:///org/apache/hadoop/mapreduce/lib/input/FileInputFormat/getSplits(org.apache.hadoop.mapreduce.JobContext)|",
+      "|java+constructor:///org/apache/hadoop/mapreduce/lib/input/FileSplit/FileSplit(org.apache.hadoop.fs.Path,long,long,java.lang.String%5B%5D)|",
+      "|java+method:///org/apache/hadoop/fs/Path/getFileSystem(org.apache.hadoop.conf.Configuration)|",
+      "|java+method:///org/apache/hadoop/fs/Path/equals(java.lang.Object)|",
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///org/apache/hadoop/fs/FileStatus/getLen()|",
+      "|java+method:///com/hadoop/compression/lzo/LzoIndex/alignSliceEndToIndex(long,long)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///com/hadoop/compression/lzo/LzoIndex/isEmpty()|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///org/apache/hadoop/mapreduce/lib/input/FileSplit/getLength()|"
+    ],
+    "affectedLib": "com.twitter.elephantbird:elephant-bird-hadoop-compat:4.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.twitter.elephantbird:elephant-bird-core:3.0.9",
+    "coordinatesV2": "com.twitter.elephantbird:elephant-bird-core:4.0",
+    "caller": "|java+method:///com/twitter/elephantbird/mapreduce/input/LzoBinaryBlockRecordReader/nextKeyValue()|",
+    "called": "|java+method:///com/twitter/elephantbird/util/HadoopCompat/incrementCounter(org.apache.hadoop.mapreduce.Counter,long)|",
+    "v1Body": [
+      "|java+method:///org/apache/hadoop/io/LongWritable/set(long)|",
+      "|java+method:///com/twitter/elephantbird/mapreduce/input/LzoBinaryBlockRecordReader/getLzoFilePos()|",
+      "|java+method:///com/twitter/elephantbird/mapreduce/input/LzoRecordReader$InputErrorTracker/incErrors(java.lang.Throwable)|",
+      "|java+method:///com/twitter/elephantbird/mapreduce/input/LzoRecordReader$InputErrorTracker/incRecords()|",
+      "|java+method:///org/apache/hadoop/mapreduce/Counter/increment(long)|",
+      "|java+method:///com/twitter/elephantbird/mapreduce/io/BinaryWritable/set(java.lang.Object)|",
+      "|java+method:///com/twitter/elephantbird/mapreduce/io/BinaryBlockReader/markNoMoreNewBlocks()|",
+      "|java+method:///com/twitter/elephantbird/mapreduce/io/BinaryBlockReader/readNext(com.twitter.elephantbird.mapreduce.io.BinaryWritable)|",
+      "|java+method:///com/twitter/elephantbird/mapreduce/io/BinaryWritable/get()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/hadoop/io/LongWritable/set(long)|",
+      "|java+method:///com/twitter/elephantbird/mapreduce/input/LzoBinaryBlockRecordReader/getLzoFilePos()|",
+      "|java+method:///com/twitter/elephantbird/mapreduce/input/LzoRecordReader$InputErrorTracker/incErrors(java.lang.Throwable)|",
+      "|java+method:///com/twitter/elephantbird/mapreduce/input/LzoRecordReader$InputErrorTracker/incRecords()|",
+      "|java+method:///com/twitter/elephantbird/util/HadoopCompat/incrementCounter(org.apache.hadoop.mapreduce.Counter,long)|",
+      "|java+method:///com/twitter/elephantbird/mapreduce/io/BinaryWritable/set(java.lang.Object)|",
+      "|java+method:///com/twitter/elephantbird/mapreduce/io/BinaryBlockReader/markNoMoreNewBlocks()|",
+      "|java+method:///com/twitter/elephantbird/mapreduce/io/BinaryBlockReader/readNext(com.twitter.elephantbird.mapreduce.io.BinaryWritable)|",
+      "|java+method:///com/twitter/elephantbird/mapreduce/io/BinaryWritable/get()|"
+    ],
+    "affectedLib": "com.twitter.elephantbird:elephant-bird-hadoop-compat:4.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.twitter.elephantbird:elephant-bird-core:3.0.9",
+    "coordinatesV2": "com.twitter.elephantbird:elephant-bird-core:4.0",
+    "caller": "|java+method:///com/twitter/elephantbird/mapreduce/input/LzoRecordReader/initialize(org.apache.hadoop.mapreduce.InputSplit,org.apache.hadoop.mapreduce.TaskAttemptContext)|",
+    "called": "|java+method:///com/twitter/elephantbird/util/HadoopCompat/getConfiguration(org.apache.hadoop.mapreduce.JobContext)|",
+    "v1Body": [
+      "|java+method:///org/apache/hadoop/fs/FSDataInputStream/getPos()|",
+      "|java+constructor:///java/io/IOException/IOException(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/hadoop/io/compress/CompressionCodecFactory/getCodec(org.apache.hadoop.fs.Path)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/apache/hadoop/mapreduce/lib/input/FileSplit/getPath()|",
+      "|java+method:///org/apache/hadoop/fs/FileSystem/open(org.apache.hadoop.fs.Path)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+constructor:///com/twitter/elephantbird/mapreduce/input/LzoRecordReader$InputErrorTracker/LzoRecordReader$InputErrorTracker(org.apache.hadoop.conf.Configuration)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/apache/hadoop/fs/Path/getFileSystem(org.apache.hadoop.conf.Configuration)|",
+      "|java+method:///org/apache/hadoop/fs/FSDataInputStream/seek(long)|",
+      "|java+method:///com/twitter/elephantbird/mapreduce/input/LzoRecordReader/skipToNextSyncPoint(boolean)|",
+      "|java+method:///org/apache/hadoop/mapreduce/TaskAttemptContext/getConfiguration()|",
+      "|java+method:///org/apache/hadoop/mapreduce/lib/input/FileSplit/getStart()|",
+      "|java+method:///com/twitter/elephantbird/mapreduce/input/LzoRecordReader/createInputReader(java.io.InputStream,org.apache.hadoop.conf.Configuration)|",
+      "|java+constructor:///org/apache/hadoop/io/compress/CompressionCodecFactory/CompressionCodecFactory(org.apache.hadoop.conf.Configuration)|",
+      "|java+method:///java/lang/StringBuilder/append(long)|",
+      "|java+method:///org/apache/hadoop/io/compress/CompressionCodec/createInputStream(java.io.InputStream)|",
+      "|java+method:///org/apache/hadoop/mapreduce/lib/input/FileSplit/getLength()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/twitter/elephantbird/util/HadoopCompat/getConfiguration(org.apache.hadoop.mapreduce.JobContext)|",
+      "|java+method:///com/twitter/elephantbird/mapreduce/input/LzoRecordReader/skipToNextSyncPoint(boolean)|",
+      "|java+method:///org/apache/hadoop/fs/FSDataInputStream/getPos()|",
+      "|java+constructor:///java/io/IOException/IOException(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/hadoop/io/compress/CompressionCodecFactory/getCodec(org.apache.hadoop.fs.Path)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/apache/hadoop/mapreduce/lib/input/FileSplit/getPath()|",
+      "|java+method:///org/apache/hadoop/fs/FileSystem/open(org.apache.hadoop.fs.Path)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+constructor:///com/twitter/elephantbird/mapreduce/input/LzoRecordReader$InputErrorTracker/LzoRecordReader$InputErrorTracker(org.apache.hadoop.conf.Configuration)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/apache/hadoop/fs/Path/getFileSystem(org.apache.hadoop.conf.Configuration)|",
+      "|java+method:///org/apache/hadoop/fs/FSDataInputStream/seek(long)|",
+      "|java+method:///org/apache/hadoop/mapreduce/lib/input/FileSplit/getStart()|",
+      "|java+method:///com/twitter/elephantbird/mapreduce/input/LzoRecordReader/createInputReader(java.io.InputStream,org.apache.hadoop.conf.Configuration)|",
+      "|java+constructor:///org/apache/hadoop/io/compress/CompressionCodecFactory/CompressionCodecFactory(org.apache.hadoop.conf.Configuration)|",
+      "|java+method:///java/lang/StringBuilder/append(long)|",
+      "|java+method:///org/apache/hadoop/io/compress/CompressionCodec/createInputStream(java.io.InputStream)|",
+      "|java+method:///org/apache/hadoop/mapreduce/lib/input/FileSplit/getLength()|"
+    ],
+    "affectedLib": "com.twitter.elephantbird:elephant-bird-hadoop-compat:4.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.twitter.elephantbird:elephant-bird-core:3.0.9",
+    "coordinatesV2": "com.twitter.elephantbird:elephant-bird-core:4.0",
+    "caller": "|java+method:///com/twitter/elephantbird/mapreduce/input/MapReduceInputFormatWrapper$RecordReaderWrapper/initialize(org.apache.hadoop.mapreduce.InputSplit,org.apache.hadoop.mapreduce.TaskAttemptContext)|",
+    "called": "|java+method:///com/twitter/elephantbird/util/HadoopCompat/getConfiguration(org.apache.hadoop.mapreduce.JobContext)|",
+    "v1Body": [
+      "|java+method:///org/apache/hadoop/mapreduce/InputSplit/getLocations()|",
+      "|java+method:///org/apache/hadoop/mapreduce/TaskAttemptContext/getConfiguration()|",
+      "|java+method:///org/apache/hadoop/mapred/InputFormat/getRecordReader(org.apache.hadoop.mapred.InputSplit,org.apache.hadoop.mapred.JobConf,org.apache.hadoop.mapred.Reporter)|",
+      "|java+method:///org/apache/hadoop/mapreduce/lib/input/FileSplit/getStart()|",
+      "|java+method:///org/apache/hadoop/mapred/RecordReader/createKey()|",
+      "|java+method:///org/apache/hadoop/mapreduce/lib/input/FileSplit/getPath()|",
+      "|java+method:///org/apache/hadoop/mapreduce/lib/input/FileSplit/getLength()|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///org/apache/hadoop/mapred/RecordReader/createValue()|",
+      "|java+constructor:///org/apache/hadoop/mapred/FileSplit/FileSplit(org.apache.hadoop.fs.Path,long,long,java.lang.String%5B%5D)|",
+      "|java+constructor:///com/twitter/elephantbird/mapreduce/input/MapReduceInputFormatWrapper$RecordReaderWrapper$1/MapReduceInputFormatWrapper$RecordReaderWrapper$1(com.twitter.elephantbird.mapreduce.input.MapReduceInputFormatWrapper$RecordReaderWrapper,org.apache.hadoop.mapreduce.TaskAttemptContext)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/twitter/elephantbird/util/HadoopCompat/getConfiguration(org.apache.hadoop.mapreduce.JobContext)|",
+      "|java+method:///org/apache/hadoop/mapreduce/InputSplit/getLocations()|",
+      "|java+method:///org/apache/hadoop/mapred/InputFormat/getRecordReader(org.apache.hadoop.mapred.InputSplit,org.apache.hadoop.mapred.JobConf,org.apache.hadoop.mapred.Reporter)|",
+      "|java+method:///org/apache/hadoop/mapreduce/lib/input/FileSplit/getStart()|",
+      "|java+method:///org/apache/hadoop/mapred/RecordReader/createKey()|",
+      "|java+method:///org/apache/hadoop/mapreduce/lib/input/FileSplit/getPath()|",
+      "|java+method:///org/apache/hadoop/mapreduce/lib/input/FileSplit/getLength()|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///org/apache/hadoop/mapred/RecordReader/createValue()|",
+      "|java+constructor:///org/apache/hadoop/mapred/FileSplit/FileSplit(org.apache.hadoop.fs.Path,long,long,java.lang.String%5B%5D)|",
+      "|java+constructor:///com/twitter/elephantbird/mapreduce/input/MapReduceInputFormatWrapper$RecordReaderWrapper$1/MapReduceInputFormatWrapper$RecordReaderWrapper$1(com.twitter.elephantbird.mapreduce.input.MapReduceInputFormatWrapper$RecordReaderWrapper,org.apache.hadoop.mapreduce.TaskAttemptContext)|"
+    ],
+    "affectedLib": "com.twitter.elephantbird:elephant-bird-hadoop-compat:4.0",
+    "change": "ADDED"
+  }
+]

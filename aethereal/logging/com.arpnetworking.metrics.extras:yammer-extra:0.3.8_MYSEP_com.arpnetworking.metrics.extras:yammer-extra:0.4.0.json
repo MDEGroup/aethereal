@@ -1,0 +1,78 @@
+[
+  {
+    "coordinatesV1": "com.arpnetworking.metrics.extras:yammer-extra:0.3.8",
+    "coordinatesV2": "com.arpnetworking.metrics.extras:yammer-extra:0.4.0",
+    "caller": "|java+initializer:///com/arpnetworking/metrics/yammer/YammerMetricsSink/YammerMetricsSink$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+constructor:///java/util/HashMap/HashMap()|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.10",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.arpnetworking.metrics.extras:yammer-extra:0.3.8",
+    "coordinatesV2": "com.arpnetworking.metrics.extras:yammer-extra:0.4.0",
+    "caller": "|java+constructor:///com/arpnetworking/metrics/yammer/MetricsRegistry/MetricsRegistry()|",
+    "called": "|java+method:///com/arpnetworking/metrics/impl/TsdMetricsFactory$Builder/build()|",
+    "v1Body": [
+      "|java+method:///com/yammer/metrics/core/Clock/defaultClock()|",
+      "|java+method:///com/arpnetworking/metrics/impl/TsdMetricsFactory$Builder/setSinks(java.util.List)|",
+      "|java+method:///com/arpnetworking/metrics/impl/TsdMetricsFactory$Builder/build()|",
+      "|java+constructor:///com/arpnetworking/metrics/yammer/MetricsRegistry/MetricsRegistry(com.arpnetworking.metrics.MetricsFactory,com.yammer.metrics.core.Clock)|",
+      "|java+method:///com/arpnetworking/metrics/impl/TsdQueryLogSink$Builder/build()|",
+      "|java+constructor:///com/arpnetworking/metrics/impl/TsdQueryLogSink$Builder/TsdQueryLogSink$Builder()|",
+      "|java+method:///java/util/Collections/singletonList(java.lang.Object)|",
+      "|java+constructor:///com/arpnetworking/metrics/impl/TsdMetricsFactory$Builder/TsdMetricsFactory$Builder()|",
+      "|java+method:///com/arpnetworking/metrics/impl/TsdQueryLogSink$Builder/setPath(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/yammer/metrics/core/Clock/defaultClock()|",
+      "|java+method:///com/arpnetworking/metrics/impl/TsdMetricsFactory$Builder/build()|",
+      "|java+constructor:///com/arpnetworking/metrics/yammer/MetricsRegistry/MetricsRegistry(com.arpnetworking.metrics.MetricsFactory,com.yammer.metrics.core.Clock)|",
+      "|java+constructor:///java/io/File/File(java.lang.String)|",
+      "|java+constructor:///com/arpnetworking/metrics/impl/TsdLogSink$Builder/TsdLogSink$Builder()|",
+      "|java+method:///java/util/Collections/singletonList(java.lang.Object)|",
+      "|java+method:///com/arpnetworking/metrics/impl/TsdLogSink$Builder/build()|",
+      "|java+method:///java/lang/System/getProperty(java.lang.String,java.lang.String)|",
+      "|java+method:///com/arpnetworking/metrics/impl/TsdMetricsFactory$Builder/setSinks(java.util.List)|",
+      "|java+method:///com/arpnetworking/metrics/impl/TsdMetricsFactory$Builder/setServiceName(java.lang.String)|",
+      "|java+method:///com/arpnetworking/metrics/impl/TsdLogSink$Builder/setDirectory(java.io.File)|",
+      "|java+constructor:///com/arpnetworking/metrics/impl/TsdMetricsFactory$Builder/TsdMetricsFactory$Builder()|",
+      "|java+method:///com/arpnetworking/metrics/impl/TsdMetricsFactory$Builder/setClusterName(java.lang.String)|"
+    ],
+    "affectedLib": "com.arpnetworking.metrics:metrics-client:0.4.2",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.arpnetworking.metrics.extras:yammer-extra:0.3.8",
+    "coordinatesV2": "com.arpnetworking.metrics.extras:yammer-extra:0.4.0",
+    "caller": "|java+constructor:///com/arpnetworking/metrics/yammer/MetricsRegistry/MetricsRegistry(com.yammer.metrics.core.Clock)|",
+    "called": "|java+method:///com/arpnetworking/metrics/impl/TsdMetricsFactory$Builder/build()|",
+    "v1Body": [
+      "|java+method:///com/arpnetworking/metrics/impl/TsdMetricsFactory$Builder/setSinks(java.util.List)|",
+      "|java+method:///com/arpnetworking/metrics/impl/TsdMetricsFactory$Builder/build()|",
+      "|java+constructor:///com/arpnetworking/metrics/yammer/MetricsRegistry/MetricsRegistry(com.arpnetworking.metrics.MetricsFactory,com.yammer.metrics.core.Clock)|",
+      "|java+method:///com/arpnetworking/metrics/impl/TsdQueryLogSink$Builder/build()|",
+      "|java+constructor:///com/arpnetworking/metrics/impl/TsdQueryLogSink$Builder/TsdQueryLogSink$Builder()|",
+      "|java+method:///java/util/Collections/singletonList(java.lang.Object)|",
+      "|java+constructor:///com/arpnetworking/metrics/impl/TsdMetricsFactory$Builder/TsdMetricsFactory$Builder()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/arpnetworking/metrics/impl/TsdMetricsFactory$Builder/setSinks(java.util.List)|",
+      "|java+method:///com/arpnetworking/metrics/impl/TsdMetricsFactory$Builder/build()|",
+      "|java+constructor:///com/arpnetworking/metrics/yammer/MetricsRegistry/MetricsRegistry(com.arpnetworking.metrics.MetricsFactory,com.yammer.metrics.core.Clock)|",
+      "|java+constructor:///com/arpnetworking/metrics/impl/TsdLogSink$Builder/TsdLogSink$Builder()|",
+      "|java+method:///java/util/Collections/singletonList(java.lang.Object)|",
+      "|java+method:///com/arpnetworking/metrics/impl/TsdLogSink$Builder/build()|",
+      "|java+constructor:///com/arpnetworking/metrics/impl/TsdMetricsFactory$Builder/TsdMetricsFactory$Builder()|"
+    ],
+    "affectedLib": "com.arpnetworking.metrics:metrics-client:0.4.2",
+    "change": "UPDATED"
+  }
+]

@@ -1,0 +1,37 @@
+[
+  {
+    "coordinatesV1": "org.apache.portals.jetspeed-2:jetspeed-search:2.2.1",
+    "coordinatesV2": "org.apache.portals.jetspeed-2:jetspeed-search:2.2.2",
+    "caller": "|java+method:///org/apache/jetspeed/search/lucene/SearchEngineImpl/remove(java.util.Collection)|",
+    "called": "|java+constructor:///org/apache/lucene/index/Term/Term(java.lang.String,java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/lucene/index/Term/Term(java.lang.String,java.lang.String)|",
+      "|java+method:///org/apache/jetspeed/search/lucene/SearchEngineImpl/optimize()|",
+      "|java+method:///org/apache/jetspeed/search/HandlerFactory/getHandler(java.lang.Object)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/apache/jetspeed/search/ObjectHandler/parseObject(java.lang.Object)|",
+      "|java+method:///org/apache/lucene/index/IndexReader/open(java.io.File)|",
+      "|java+method:///java/util/Collection/iterator()|",
+      "|java+method:///org/apache/lucene/index/IndexReader/deleteDocuments(org.apache.lucene.index.Term)|",
+      "|java+method:///org/apache/lucene/index/IndexReader/close()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/apache/jetspeed/search/ParsedObject/getKey()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/lucene/index/Term/Term(java.lang.String,java.lang.String)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/apache/jetspeed/search/ObjectHandler/parseObject(java.lang.Object)|",
+      "|java+method:///org/apache/lucene/index/IndexReader/deleteDocuments(org.apache.lucene.index.Term)|",
+      "|java+method:///org/apache/lucene/index/IndexReader/close()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/apache/jetspeed/search/ParsedObject/getKey()|",
+      "|java+method:///org/apache/jetspeed/search/HandlerFactory/getHandler(java.lang.Object)|",
+      "|java+method:///org/apache/lucene/index/IndexReader/open(org.apache.lucene.store.Directory,boolean)|",
+      "|java+method:///java/util/Collection/iterator()|",
+      "|java+method:///org/apache/jetspeed/search/lucene/SearchEngineImpl/optimizeIndex()|"
+    ],
+    "affectedLib": "org.apache.lucene:lucene-core:3.1.0",
+    "change": "UPDATED"
+  }
+]

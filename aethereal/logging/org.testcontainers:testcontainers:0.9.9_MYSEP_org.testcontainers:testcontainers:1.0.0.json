@@ -1,0 +1,166 @@
+[
+  {
+    "coordinatesV1": "org.testcontainers:testcontainers:1.0.0",
+    "coordinatesV2": "org.testcontainers:testcontainers:0.9.9",
+    "caller": "|java+method:///org/testcontainers/containers/GenericContainer/addFileSystemBind(java.lang.String,java.lang.String,org.testcontainers.containers.BindMode)|",
+    "called": "|java+constructor:///com/github/dockerjava/api/model/Volume/Volume(java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///com/github/dockerjava/api/model/Volume/Volume(java.lang.String)|",
+      "|java+constructor:///com/github/dockerjava/api/model/Bind/Bind(java.lang.String,com.github.dockerjava.api.model.Volume,com.github.dockerjava.api.model.AccessMode)|",
+      "|java+method:///java/util/List/add(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/testcontainers/shaded/com/github/dockerjava/api/model/Volume/Volume(java.lang.String)|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+constructor:///org/testcontainers/shaded/com/github/dockerjava/api/model/Bind/Bind(java.lang.String,org.testcontainers.shaded.com.github.dockerjava.api.model.Volume,org.testcontainers.shaded.com.github.dockerjava.api.model.AccessMode)|"
+    ],
+    "affectedLib": "com.github.docker-java:docker-java:2.1.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.testcontainers:testcontainers:1.0.0",
+    "coordinatesV2": "org.testcontainers:testcontainers:0.9.9",
+    "caller": "|java+method:///org/testcontainers/DockerClientFactory/client()|",
+    "called": "|java+method:///com/github/dockerjava/core/DockerClientBuilder/getInstance(com.github.dockerjava.core.DockerClientConfig)|",
+    "v1Body": [
+      "|java+method:///com/github/dockerjava/api/DockerClient/pingCmd()|",
+      "|java+method:///com/github/dockerjava/core/DockerClientBuilder/build()|",
+      "|java+method:///org/testcontainers/DockerClientFactory/determineConfiguration()|",
+      "|java+method:///com/github/dockerjava/core/DockerClientBuilder/getInstance(com.github.dockerjava.core.DockerClientConfig)|",
+      "|java+method:///com/github/dockerjava/api/command/PingCmd/exec()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/testcontainers/shaded/com/github/dockerjava/core/DockerClientBuilder/build()|",
+      "|java+method:///org/testcontainers/shaded/com/github/dockerjava/api/DockerClient/versionCmd()|",
+      "|java+method:///org/testcontainers/DockerClientFactory/checkDiskSpaceAndHandleExceptions(org.testcontainers.shaded.com.github.dockerjava.api.DockerClient)|",
+      "|java+method:///org/testcontainers/shaded/com/github/dockerjava/api/model/Version/getVersion()|",
+      "|java+method:///org/testcontainers/DockerClientFactory/checkVersion(java.lang.String)|",
+      "|java+method:///org/testcontainers/dockerclient/DockerConfigurationStrategy/getFirstValidConfig(java.util.List)|",
+      "|java+method:///org/testcontainers/shaded/com/github/dockerjava/api/command/PingCmd/exec()|",
+      "|java+method:///org/testcontainers/shaded/com/github/dockerjava/core/DockerClientBuilder/getInstance(org.testcontainers.shaded.com.github.dockerjava.core.DockerClientConfig)|",
+      "|java+method:///org/testcontainers/shaded/com/github/dockerjava/api/DockerClient/pingCmd()|",
+      "|java+method:///org/testcontainers/shaded/com/github/dockerjava/api/command/VersionCmd/exec()|"
+    ],
+    "affectedLib": "com.github.docker-java:docker-java:2.1.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.testcontainers:testcontainers:1.0.0",
+    "coordinatesV2": "org.testcontainers:testcontainers:0.9.9",
+    "caller": "|java+method:///org/testcontainers/containers/GenericContainer/pullImageIfNeeded(java.lang.String,org.slf4j.profiler.Profiler)|",
+    "called": "|java+constructor:///com/github/dockerjava/core/command/PullImageResultCallback/PullImageResultCallback()|",
+    "v1Body": [
+      "|java+method:///org/slf4j/profiler/Profiler/start(java.lang.String)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/util/Collections/addAll(java.util.Collection,java.lang.Object%5B%5D)|",
+      "|java+method:///java/util/Set/contains(java.lang.Object)|",
+      "|java+method:///org/testcontainers/containers/GenericContainer/logger()|",
+      "|java+constructor:///com/github/dockerjava/core/command/PullImageResultCallback/PullImageResultCallback()|",
+      "|java+method:///com/github/dockerjava/api/model/Image/getRepoTags()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///com/github/dockerjava/core/command/PullImageResultCallback/awaitCompletion()|",
+      "|java+method:///com/github/dockerjava/api/command/PullImageCmd/exec(com.github.dockerjava.api.async.ResultCallback)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String,java.lang.Object)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///com/github/dockerjava/api/DockerClient/pullImageCmd(java.lang.String)|",
+      "|java+method:///com/github/dockerjava/api/DockerClient/listImagesCmd()|",
+      "|java+method:///com/github/dockerjava/api/command/ListImagesCmd/exec()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/profiler/Profiler/start(java.lang.String)|",
+      "|java+method:///org/testcontainers/shaded/com/github/dockerjava/api/DockerClient/pullImageCmd(java.lang.String)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/testcontainers/shaded/com/github/dockerjava/api/model/Image/getRepoTags()|",
+      "|java+method:///org/testcontainers/shaded/com/github/dockerjava/core/command/PullImageResultCallback/awaitCompletion()|",
+      "|java+method:///org/testcontainers/shaded/com/github/dockerjava/api/command/PullImageCmd/exec(org.testcontainers.shaded.com.github.dockerjava.api.async.ResultCallback)|",
+      "|java+method:///java/util/Collections/addAll(java.util.Collection,java.lang.Object%5B%5D)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/Set/contains(java.lang.Object)|",
+      "|java+method:///org/testcontainers/containers/GenericContainer/logger()|",
+      "|java+constructor:///org/testcontainers/shaded/com/github/dockerjava/core/command/PullImageResultCallback/PullImageResultCallback()|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String,java.lang.Object)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///org/testcontainers/shaded/com/github/dockerjava/api/DockerClient/listImagesCmd()|",
+      "|java+method:///org/testcontainers/shaded/com/github/dockerjava/api/command/ListImagesCmd/exec()|"
+    ],
+    "affectedLib": "com.github.docker-java:docker-java:2.1.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.testcontainers:testcontainers:1.0.0",
+    "coordinatesV2": "org.testcontainers:testcontainers:0.9.9",
+    "caller": "|java+constructor:///org/testcontainers/LogContainerCallback/LogContainerCallback()|",
+    "called": "|java+constructor:///com/github/dockerjava/core/command/LogContainerResultCallback/LogContainerResultCallback()|",
+    "v1Body": [
+      "|java+constructor:///com/github/dockerjava/core/command/LogContainerResultCallback/LogContainerResultCallback()|",
+      "|java+constructor:///java/lang/StringBuffer/StringBuffer()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/testcontainers/shaded/com/github/dockerjava/core/command/LogContainerResultCallback/LogContainerResultCallback()|",
+      "|java+constructor:///java/lang/StringBuffer/StringBuffer()|"
+    ],
+    "affectedLib": "com.github.docker-java:docker-java:2.1.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.testcontainers:testcontainers:1.0.0",
+    "coordinatesV2": "org.testcontainers:testcontainers:0.9.9",
+    "caller": "|java+method:///org/testcontainers/containers/GenericContainer/getMappedPort(int)|",
+    "called": "|java+constructor:///com/github/dockerjava/api/model/ExposedPort/ExposedPort(int)|",
+    "v1Body": [
+      "|java+method:///com/github/dockerjava/api/command/InspectContainerResponse$NetworkSettings/getPorts()|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+method:///com/github/dockerjava/api/command/InspectContainerResponse/getNetworkSettings()|",
+      "|java+method:///com/github/dockerjava/api/model/Ports$Binding/getHostPort()|",
+      "|java+constructor:///com/github/dockerjava/api/model/ExposedPort/ExposedPort(int)|",
+      "|java+method:///com/github/dockerjava/api/model/Ports/getBindings()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/testcontainers/shaded/com/github/dockerjava/api/model/Ports/getBindings()|",
+      "|java+constructor:///org/testcontainers/shaded/com/github/dockerjava/api/model/ExposedPort/ExposedPort(int)|",
+      "|java+method:///org/testcontainers/shaded/com/github/dockerjava/api/command/InspectContainerResponse/getNetworkSettings()|",
+      "|java+method:///org/testcontainers/shaded/com/github/dockerjava/api/model/Ports$Binding/getHostPort()|",
+      "|java+method:///org/testcontainers/shaded/com/github/dockerjava/api/command/InspectContainerResponse$NetworkSettings/getPorts()|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|"
+    ],
+    "affectedLib": "com.github.docker-java:docker-java:2.1.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.testcontainers:testcontainers:1.0.0",
+    "coordinatesV2": "org.testcontainers:testcontainers:0.9.9",
+    "caller": "|java+method:///org/testcontainers/containers/GenericContainer/lambda$applyConfiguration$7(java.util.Map$Entry)|",
+    "called": "|java+constructor:///com/github/dockerjava/api/model/Link/Link(java.lang.String,java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///com/github/dockerjava/api/model/Link/Link(java.lang.String,java.lang.String)|",
+      "|java+method:///org/testcontainers/containers/traits/LinkableContainer/getContainerName()|",
+      "|java+method:///java/util/Map$Entry/getKey()|",
+      "|java+method:///java/util/Map$Entry/getValue()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/testcontainers/containers/traits/LinkableContainer/getContainerName()|",
+      "|java+method:///java/util/Map$Entry/getKey()|",
+      "|java+constructor:///org/testcontainers/shaded/com/github/dockerjava/api/model/Link/Link(java.lang.String,java.lang.String)|",
+      "|java+method:///java/util/Map$Entry/getValue()|"
+    ],
+    "affectedLib": "com.github.docker-java:docker-java:2.1.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.testcontainers:testcontainers:0.9.9",
+    "coordinatesV2": "org.testcontainers:testcontainers:1.0.0",
+    "caller": "|java+initializer:///org/testcontainers/DockerClientFactory/DockerClientFactory$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/testcontainers/dockerclient/DockerMachineConfigurationStrategy/DockerMachineConfigurationStrategy()|",
+      "|java+constructor:///org/testcontainers/dockerclient/EnvironmentAndSystemPropertyConfigurationStrategy/EnvironmentAndSystemPropertyConfigurationStrategy()|",
+      "|java+method:///java/util/Arrays/asList(java.lang.Object%5B%5D)|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.7",
+    "change": "ADDED"
+  }
+]

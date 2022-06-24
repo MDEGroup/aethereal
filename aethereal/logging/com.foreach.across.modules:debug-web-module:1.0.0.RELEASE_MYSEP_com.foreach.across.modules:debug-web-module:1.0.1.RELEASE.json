@@ -1,0 +1,58 @@
+[
+  {
+    "coordinatesV1": "com.foreach.across.modules:debug-web-module:1.0.0.RELEASE",
+    "coordinatesV2": "com.foreach.across.modules:debug-web-module:1.0.1.RELEASE",
+    "caller": "|java+method:///com/foreach/across/modules/debugweb/config/DebugWebInterceptorsConfiguration/debugWeb()|",
+    "called": "|java+method:///com/foreach/across/modules/web/context/PrefixingPathRegistry/add(java.lang.String,com.foreach.across.modules.web.context.PrefixingPathContext)|",
+    "v1Body": [
+      "|java+constructor:///com/foreach/across/modules/debugweb/DebugWeb/DebugWeb(java.lang.String)|",
+      "|java+method:///com/foreach/across/modules/web/context/PrefixingPathRegistry/add(java.lang.String,com.foreach.across.modules.web.context.PrefixingPathContext)|",
+      "|java+method:///com/foreach/across/modules/debugweb/DebugWebModule/getRootPath()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/foreach/across/modules/debugweb/DebugWebModuleSettings/getRootPath()|",
+      "|java+constructor:///com/foreach/across/modules/debugweb/DebugWeb/DebugWeb(java.lang.String)|",
+      "|java+method:///com/foreach/across/modules/web/context/PrefixingPathRegistry/add(java.lang.String,com.foreach.across.modules.web.context.PrefixingPathContext)|"
+    ],
+    "affectedLib": "com.foreach.across:across-web:1.1.2.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.foreach.across.modules:debug-web-module:1.0.0.RELEASE",
+    "coordinatesV2": "com.foreach.across.modules:debug-web-module:1.0.1.RELEASE",
+    "caller": "|java+method:///com/foreach/across/modules/debugweb/controllers/ServletContextInfoController/showFilters(org.springframework.ui.Model)|",
+    "called": "|java+constructor:///com/foreach/across/modules/web/table/Table/Table(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///com/foreach/across/modules/web/table/Table/addRow(java.lang.Object%5B%5D)|",
+      "|java+method:///javax/servlet/FilterRegistration/getClassName()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///javax/servlet/ServletContext/getFilterRegistrations()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/Set/iterator()|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///java/util/Map$Entry/getValue()|",
+      "|java+method:///java/util/Map$Entry/getKey()|",
+      "|java+constructor:///com/foreach/across/modules/web/table/Table/Table(java.lang.String)|",
+      "|java+method:///java/util/Map/entrySet()|",
+      "|java+method:///org/springframework/ui/Model/addAttribute(java.lang.String,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/foreach/across/modules/web/table/Table/addRow(java.lang.Object%5B%5D)|",
+      "|java+method:///javax/servlet/FilterRegistration/getClassName()|",
+      "|java+method:///com/foreach/across/modules/debugweb/controllers/ServletContextInfoController/getFilterMaps()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///javax/servlet/ServletContext/getFilterRegistrations()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/Set/iterator()|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///java/util/Map$Entry/getValue()|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///java/util/Map$Entry/getKey()|",
+      "|java+constructor:///com/foreach/across/modules/web/table/Table/Table(java.lang.String)|",
+      "|java+method:///java/util/Map/entrySet()|",
+      "|java+method:///org/springframework/ui/Model/addAttribute(java.lang.String,java.lang.Object)|"
+    ],
+    "affectedLib": "com.foreach.across:across-web:1.1.2.RELEASE",
+    "change": "UPDATED"
+  }
+]

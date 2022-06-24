@@ -1,0 +1,40 @@
+[
+  {
+    "coordinatesV1": "org.apache.aries.jpa:org.apache.aries.jpa.container:1.0.3",
+    "coordinatesV2": "org.apache.aries.jpa:org.apache.aries.jpa.container:2.0.0",
+    "caller": "|java+method:///org/apache/aries/jpa/container/impl/Activator/stop(org.osgi.framework.BundleContext)|",
+    "called": "|java+method:///org/osgi/util/tracker/BundleTracker/close()|",
+    "v1Body": [
+      "|java+method:///org/apache/aries/jpa/container/tx/impl/OSGiTransactionManager/destroy()|",
+      "|java+method:///org/apache/aries/jpa/container/tx/impl/OSGiTransactionManager/get()|",
+      "|java+method:///org/apache/aries/jpa/container/impl/PersistenceBundleManager/close()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/osgi/util/tracker/BundleTracker/close()|"
+    ],
+    "affectedLib": "org.osgi:org.osgi.compendium:4.3.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.aries.jpa:org.apache.aries.jpa.container:1.0.3",
+    "coordinatesV2": "org.apache.aries.jpa:org.apache.aries.jpa.container:2.0.0",
+    "caller": "|java+method:///org/apache/aries/jpa/container/impl/Activator/start(org.osgi.framework.BundleContext)|",
+    "called": "|java+method:///org/osgi/util/tracker/BundleTracker/open()|",
+    "v1Body": [
+      "|java+method:///org/osgi/framework/BundleContext/registerService(java.lang.String,java.lang.Object,java.util.Dictionary)|",
+      "|java+method:///org/apache/aries/jpa/container/impl/PersistenceBundleManager/open()|",
+      "|java+constructor:///org/apache/aries/jpa/container/parsing/impl/PersistenceDescriptorParserImpl/PersistenceDescriptorParserImpl()|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+constructor:///org/apache/aries/jpa/container/impl/PersistenceBundleManager/PersistenceBundleManager(org.osgi.framework.BundleContext,org.apache.aries.jpa.container.parsing.PersistenceDescriptorParser)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/aries/jpa/container/impl/PersistenceBundleTracker/PersistenceBundleTracker(org.osgi.framework.BundleContext)|",
+      "|java+method:///org/apache/aries/jpa/container/impl/Activator/registerWeavingHook(org.osgi.framework.BundleContext,org.apache.aries.jpa.container.weaving.impl.TransformerRegistry)|",
+      "|java+method:///org/apache/aries/jpa/container/weaving/impl/TransformerRegistrySingleton/get()|",
+      "|java+constructor:///org/osgi/util/tracker/BundleTracker/BundleTracker(org.osgi.framework.BundleContext,int,org.osgi.util.tracker.BundleTrackerCustomizer)|",
+      "|java+method:///org/osgi/util/tracker/BundleTracker/open()|"
+    ],
+    "affectedLib": "org.osgi:org.osgi.compendium:4.3.1",
+    "change": "ADDED"
+  }
+]

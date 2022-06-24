@@ -1,0 +1,182 @@
+[
+  {
+    "coordinatesV1": "net.anotheria:moskito-cdi:2.5.5",
+    "coordinatesV2": "net.anotheria:moskito-cdi:2.2.5",
+    "caller": "|java+constructor:///net/anotheria/moskito/integration/cdi/CallInterceptor/CallInterceptor()|",
+    "called": "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+constructor:///net/anotheria/moskito/integration/cdi/BaseInterceptor/BaseInterceptor()|",
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+constructor:///net/anotheria/moskito/integration/cdi/BaseInterceptor/BaseInterceptor()|"
+    ],
+    "affectedLib": "log4j:log4j:1.2.17",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "net.anotheria:moskito-cdi:2.5.5",
+    "coordinatesV2": "net.anotheria:moskito-cdi:2.2.5",
+    "caller": "|java+constructor:///net/anotheria/moskito/integration/cdi/CountInterceptor/CountInterceptor()|",
+    "called": "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+constructor:///net/anotheria/moskito/integration/cdi/BaseInterceptor/BaseInterceptor()|",
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+constructor:///net/anotheria/moskito/integration/cdi/BaseInterceptor/BaseInterceptor()|"
+    ],
+    "affectedLib": "log4j:log4j:1.2.17",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "net.anotheria:moskito-cdi:2.2.5",
+    "coordinatesV2": "net.anotheria:moskito-cdi:2.5.5",
+    "caller": "|java+constructor:///net/anotheria/moskito/integration/cdi/CallInterceptor/CallInterceptor()|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+constructor:///net/anotheria/moskito/integration/cdi/BaseInterceptor/BaseInterceptor()|",
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+constructor:///net/anotheria/moskito/integration/cdi/BaseInterceptor/BaseInterceptor()|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.6",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "net.anotheria:moskito-cdi:2.2.5",
+    "coordinatesV2": "net.anotheria:moskito-cdi:2.5.5",
+    "caller": "|java+constructor:///net/anotheria/moskito/integration/cdi/CountInterceptor/CountInterceptor()|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+constructor:///net/anotheria/moskito/integration/cdi/BaseInterceptor/BaseInterceptor()|",
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+constructor:///net/anotheria/moskito/integration/cdi/BaseInterceptor/BaseInterceptor()|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.6",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "net.anotheria:moskito-cdi:2.2.5",
+    "coordinatesV2": "net.anotheria:moskito-cdi:2.5.5",
+    "caller": "|java+method:///net/anotheria/moskito/integration/cdi/CallInterceptor/aroundInvoke(javax.interceptor.InvocationContext)|",
+    "called": "|java+method:///net/anotheria/moskito/core/dynamic/OnDemandStatsProducer/getStats(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///javax/interceptor/InvocationContext/getMethod()|",
+      "|java+method:///net/anotheria/moskito/integration/cdi/CallInterceptor/getProducer(net.anotheria.moskito.integration.cdi.ProducerRuntimeDefinition)|",
+      "|java+method:///net/anotheria/moskito/core/calltrace/RunningTraceContainer/getCurrentlyTracedCall()|",
+      "|java+method:///net/anotheria/moskito/core/predefined/ServiceStats/addRequest()|",
+      "|java+method:///net/anotheria/moskito/integration/cdi/CallInterceptor/getClassName(javax.interceptor.InvocationContext)|",
+      "|java+method:///java/lang/Throwable/getMessage()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder(java.lang.String)|",
+      "|java+method:///java/lang/reflect/Method/getName()|",
+      "|java+method:///net/anotheria/moskito/core/calltrace/TraceStep/appendToCall(java.lang.String)|",
+      "|java+method:///net/anotheria/moskito/core/predefined/ServiceStats/notifyError()|",
+      "|java+method:///net/anotheria/moskito/integration/cdi/CallInterceptor/extractProducerDefinition(javax.interceptor.InvocationContext)|",
+      "|java+method:///net/anotheria/moskito/core/calltrace/TracedCall/callTraced()|",
+      "|java+method:///net/anotheria/moskito/core/dynamic/OnDemandStatsProducer/getStats(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///net/anotheria/moskito/integration/cdi/CallInterceptor/extractCaseName(javax.interceptor.InvocationContext)|",
+      "|java+method:///net/anotheria/moskito/core/predefined/ServiceStats/addExecutionTime(long)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///net/anotheria/moskito/core/calltrace/CurrentlyTracedCall/endStep()|",
+      "|java+method:///net/anotheria/moskito/core/calltrace/TraceStep/setDuration(long)|",
+      "|java+method:///org/apache/log4j/Logger/info(java.lang.Object)|",
+      "|java+method:///javax/interceptor/InvocationContext/getParameters()|",
+      "|java+method:///java/lang/System/nanoTime()|",
+      "|java+method:///net/anotheria/moskito/core/dynamic/OnDemandStatsProducer/getDefaultStats()|",
+      "|java+method:///net/anotheria/moskito/core/predefined/ServiceStats/notifyRequestFinished()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///net/anotheria/moskito/core/calltrace/TraceStep/setAborted()|",
+      "|java+method:///java/lang/reflect/InvocationTargetException/getCause()|",
+      "|java+method:///javax/interceptor/InvocationContext/proceed()|",
+      "|java+method:///java/lang/StringBuilder/append(char)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///net/anotheria/moskito/core/calltrace/CurrentlyTracedCall/startStep(java.lang.String,net.anotheria.moskito.core.producers.IStatsProducer)|"
+    ],
+    "v2Body": [
+      "|java+method:///javax/interceptor/InvocationContext/getMethod()|",
+      "|java+method:///net/anotheria/moskito/integration/cdi/CallInterceptor/getProducer(net.anotheria.moskito.integration.cdi.ProducerRuntimeDefinition)|",
+      "|java+method:///net/anotheria/moskito/core/calltrace/RunningTraceContainer/getCurrentlyTracedCall()|",
+      "|java+method:///net/anotheria/moskito/core/predefined/ServiceStats/addRequest()|",
+      "|java+method:///net/anotheria/moskito/integration/cdi/CallInterceptor/getClassName(javax.interceptor.InvocationContext)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String)|",
+      "|java+method:///java/lang/Throwable/getMessage()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder(java.lang.String)|",
+      "|java+method:///java/lang/reflect/Method/getName()|",
+      "|java+method:///net/anotheria/moskito/core/calltrace/TraceStep/appendToCall(java.lang.String)|",
+      "|java+method:///net/anotheria/moskito/core/predefined/ServiceStats/notifyError()|",
+      "|java+method:///net/anotheria/moskito/integration/cdi/CallInterceptor/extractProducerDefinition(javax.interceptor.InvocationContext)|",
+      "|java+method:///net/anotheria/moskito/core/calltrace/TracedCall/callTraced()|",
+      "|java+method:///net/anotheria/moskito/core/dynamic/OnDemandStatsProducer/getStats(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///net/anotheria/moskito/integration/cdi/CallInterceptor/extractCaseName(javax.interceptor.InvocationContext)|",
+      "|java+method:///net/anotheria/moskito/core/predefined/ServiceStats/addExecutionTime(long)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///net/anotheria/moskito/core/calltrace/CurrentlyTracedCall/endStep()|",
+      "|java+method:///net/anotheria/moskito/core/calltrace/TraceStep/setDuration(long)|",
+      "|java+method:///javax/interceptor/InvocationContext/getParameters()|",
+      "|java+method:///java/lang/System/nanoTime()|",
+      "|java+method:///net/anotheria/moskito/core/dynamic/OnDemandStatsProducer/getDefaultStats()|",
+      "|java+method:///net/anotheria/moskito/core/predefined/ServiceStats/notifyRequestFinished()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///net/anotheria/moskito/core/calltrace/TraceStep/setAborted()|",
+      "|java+method:///java/lang/reflect/InvocationTargetException/getCause()|",
+      "|java+method:///javax/interceptor/InvocationContext/proceed()|",
+      "|java+method:///java/lang/StringBuilder/append(char)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///net/anotheria/moskito/core/calltrace/CurrentlyTracedCall/startStep(java.lang.String,net.anotheria.moskito.core.producers.IStatsProducer)|"
+    ],
+    "affectedLib": "net.anotheria:moskito-core:2.5.5",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "net.anotheria:moskito-cdi:2.2.5",
+    "coordinatesV2": "net.anotheria:moskito-cdi:2.5.5",
+    "caller": "|java+method:///net/anotheria/moskito/integration/cdi/CountInterceptor/aroundInvoke(javax.interceptor.InvocationContext)|",
+    "called": "|java+method:///net/anotheria/moskito/core/counter/CounterStats/inc()|",
+    "v1Body": [
+      "|java+method:///javax/interceptor/InvocationContext/getMethod()|",
+      "|java+method:///net/anotheria/moskito/core/counter/CounterStats/inc()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///net/anotheria/moskito/core/dynamic/OnDemandStatsProducer/getDefaultStats()|",
+      "|java+method:///javax/interceptor/InvocationContext/proceed()|",
+      "|java+method:///net/anotheria/moskito/core/dynamic/OnDemandStatsProducer/getStats(java.lang.String)|",
+      "|java+method:///net/anotheria/moskito/integration/cdi/CountInterceptor/extractCaseName(javax.interceptor.InvocationContext)|",
+      "|java+method:///org/apache/log4j/Logger/info(java.lang.Object)|",
+      "|java+method:///javax/interceptor/InvocationContext/getParameters()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///net/anotheria/moskito/integration/cdi/CountInterceptor/extractProducerDefinition(javax.interceptor.InvocationContext)|",
+      "|java+method:///java/lang/reflect/InvocationTargetException/getCause()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///net/anotheria/moskito/integration/cdi/CountInterceptor/getProducer(net.anotheria.moskito.integration.cdi.ProducerRuntimeDefinition)|"
+    ],
+    "v2Body": [
+      "|java+method:///javax/interceptor/InvocationContext/getMethod()|",
+      "|java+method:///net/anotheria/moskito/core/counter/CounterStats/inc()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///javax/interceptor/InvocationContext/getParameters()|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String)|",
+      "|java+method:///net/anotheria/moskito/core/dynamic/OnDemandStatsProducer/getDefaultStats()|",
+      "|java+method:///javax/interceptor/InvocationContext/proceed()|",
+      "|java+method:///net/anotheria/moskito/core/dynamic/OnDemandStatsProducer/getStats(java.lang.String)|",
+      "|java+method:///net/anotheria/moskito/integration/cdi/CountInterceptor/extractCaseName(javax.interceptor.InvocationContext)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///net/anotheria/moskito/integration/cdi/CountInterceptor/extractProducerDefinition(javax.interceptor.InvocationContext)|",
+      "|java+method:///java/lang/reflect/InvocationTargetException/getCause()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///net/anotheria/moskito/integration/cdi/CountInterceptor/getProducer(net.anotheria.moskito.integration.cdi.ProducerRuntimeDefinition)|"
+    ],
+    "affectedLib": "net.anotheria:moskito-core:2.5.5",
+    "change": "UPDATED"
+  }
+]

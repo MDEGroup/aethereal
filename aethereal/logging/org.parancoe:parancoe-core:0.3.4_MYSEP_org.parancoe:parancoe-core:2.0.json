@@ -1,0 +1,236 @@
+[
+  {
+    "coordinatesV1": "org.parancoe:parancoe-core:2.0",
+    "coordinatesV2": "org.parancoe:parancoe-core:0.3.4",
+    "caller": "|java+method:///org/parancoe/persistence/dao/generic/HibernateGenericDao/read(java.io.Serializable)|",
+    "called": "|java+method:///org/springframework/orm/hibernate3/HibernateTemplate/get(java.lang.Class,java.io.Serializable)|",
+    "v1Body": [
+      "|java+method:///org/parancoe/persistence/dao/generic/HibernateGenericDao/getHibernateTemplate()|",
+      "|java+method:///org/springframework/orm/hibernate3/HibernateTemplate/get(java.lang.Class,java.io.Serializable)|",
+      "|java+method:///org/parancoe/persistence/dao/generic/HibernateGenericDao/getType()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/springframework/orm/hibernate3/HibernateTemplate/load(java.lang.Class,java.io.Serializable)|",
+      "|java+method:///org/parancoe/persistence/dao/generic/HibernateGenericDao/getType()|",
+      "|java+method:///org/parancoe/persistence/dao/generic/HibernateGenericDao/getHibernateTemplate()|"
+    ],
+    "affectedLib": "org.springframework:spring-hibernate3:2.0.7",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.parancoe:parancoe-core:2.0",
+    "coordinatesV2": "org.parancoe:parancoe-core:0.3.4",
+    "caller": "|java+method:///org/parancoe/persistence/dao/generic/HibernateGenericDao/deleteAll()|",
+    "called": "|java+method:///org/springframework/orm/hibernate3/HibernateTemplate/bulkUpdate(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/parancoe/persistence/dao/generic/HibernateGenericDao/getType()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/springframework/orm/hibernate3/HibernateTemplate/bulkUpdate(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/parancoe/persistence/dao/generic/HibernateGenericDao/getHibernateTemplate()|",
+      "|java+method:///java/lang/Class/getName()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/parancoe/persistence/dao/generic/HibernateGenericDao/findAll()|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///org/springframework/orm/hibernate3/HibernateTemplate/deleteAll(java.util.Collection)|",
+      "|java+method:///org/parancoe/persistence/dao/generic/HibernateGenericDao/getHibernateTemplate()|"
+    ],
+    "affectedLib": "org.springframework:spring-hibernate3:2.0.7",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.parancoe:parancoe-core:2.0",
+    "coordinatesV2": "org.parancoe:parancoe-core:0.3.4",
+    "caller": "|java+method:///org/parancoe/persistence/dao/generic/HibernateGenericDao/create(java.lang.Object)|",
+    "called": "|java+method:///org/springframework/orm/hibernate3/HibernateTemplate/save(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/springframework/orm/hibernate3/HibernateTemplate/save(java.lang.Object)|",
+      "|java+method:///org/parancoe/persistence/dao/generic/HibernateGenericDao/getHibernateTemplate()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/parancoe/persistence/dao/generic/HibernateGenericDao/getHibernateTemplate()|",
+      "|java+method:///org/springframework/orm/hibernate3/HibernateTemplate/persist(java.lang.Object)|"
+    ],
+    "affectedLib": "org.springframework:spring-hibernate3:2.0.7",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.parancoe:parancoe-core:0.3.4",
+    "coordinatesV2": "org.parancoe:parancoe-core:2.0",
+    "caller": "|java+constructor:///org/parancoe/test/EnhancedTestCase/EnhancedTestCase()|",
+    "called": "|java+constructor:///org/springframework/test/AbstractTransactionalDataSourceSpringContextTests/AbstractTransactionalDataSourceSpringContextTests()|",
+    "v1Body": [
+      "|java+constructor:///junit/framework/TestCase/TestCase()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/springframework/test/AbstractTransactionalDataSourceSpringContextTests/AbstractTransactionalDataSourceSpringContextTests()|"
+    ],
+    "affectedLib": "org.springframework:spring-test:2.5.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.parancoe:parancoe-core:0.3.4",
+    "coordinatesV2": "org.parancoe:parancoe-core:2.0",
+    "caller": "|java+method:///org/parancoe/persistence/dao/generic/HibernateGenericDao/deleteAll()|",
+    "called": "|java+method:///org/springframework/orm/hibernate3/HibernateTemplate/deleteAll(java.util.Collection)|",
+    "v1Body": [
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/parancoe/persistence/dao/generic/HibernateGenericDao/getType()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/springframework/orm/hibernate3/HibernateTemplate/bulkUpdate(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/parancoe/persistence/dao/generic/HibernateGenericDao/getHibernateTemplate()|",
+      "|java+method:///java/lang/Class/getName()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/parancoe/persistence/dao/generic/HibernateGenericDao/findAll()|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///org/springframework/orm/hibernate3/HibernateTemplate/deleteAll(java.util.Collection)|",
+      "|java+method:///org/parancoe/persistence/dao/generic/HibernateGenericDao/getHibernateTemplate()|"
+    ],
+    "affectedLib": "org.springframework:spring-orm:2.5.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.parancoe:parancoe-core:0.3.4",
+    "coordinatesV2": "org.parancoe:parancoe-core:2.0",
+    "caller": "|java+method:///org/parancoe/persistence/dao/generic/HibernateGenericDao/create(java.lang.Object)|",
+    "called": "|java+method:///org/springframework/orm/hibernate3/HibernateTemplate/persist(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/springframework/orm/hibernate3/HibernateTemplate/save(java.lang.Object)|",
+      "|java+method:///org/parancoe/persistence/dao/generic/HibernateGenericDao/getHibernateTemplate()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/parancoe/persistence/dao/generic/HibernateGenericDao/getHibernateTemplate()|",
+      "|java+method:///org/springframework/orm/hibernate3/HibernateTemplate/persist(java.lang.Object)|"
+    ],
+    "affectedLib": "org.springframework:spring-orm:2.5.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.parancoe:parancoe-core:0.3.4",
+    "coordinatesV2": "org.parancoe:parancoe-core:2.0",
+    "caller": "|java+method:///org/parancoe/persistence/dao/generic/HibernateGenericDao/read(java.io.Serializable)|",
+    "called": "|java+method:///org/springframework/orm/hibernate3/HibernateTemplate/load(java.lang.Class,java.io.Serializable)|",
+    "v1Body": [
+      "|java+method:///org/parancoe/persistence/dao/generic/HibernateGenericDao/getHibernateTemplate()|",
+      "|java+method:///org/springframework/orm/hibernate3/HibernateTemplate/get(java.lang.Class,java.io.Serializable)|",
+      "|java+method:///org/parancoe/persistence/dao/generic/HibernateGenericDao/getType()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/springframework/orm/hibernate3/HibernateTemplate/load(java.lang.Class,java.io.Serializable)|",
+      "|java+method:///org/parancoe/persistence/dao/generic/HibernateGenericDao/getType()|",
+      "|java+method:///org/parancoe/persistence/dao/generic/HibernateGenericDao/getHibernateTemplate()|"
+    ],
+    "affectedLib": "org.springframework:spring-orm:2.5.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.parancoe:parancoe-core:0.3.4",
+    "coordinatesV2": "org.parancoe:parancoe-core:2.0",
+    "caller": "|java+method:///org/parancoe/persistence/dao/generic/HibernateGenericDao/count()|",
+    "called": "|java+method:///org/springframework/orm/hibernate3/HibernateTemplate/find(java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Class/getSimpleName()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/parancoe/persistence/dao/generic/HibernateGenericDao/getType()|",
+      "|java+method:///org/parancoe/persistence/dao/generic/HibernateGenericDao/getHibernateTemplate()|",
+      "|java+method:///org/springframework/orm/hibernate3/HibernateTemplate/find(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/springframework/dao/support/DataAccessUtils/intResult(java.util.Collection)|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "affectedLib": "org.springframework:spring-orm:2.5.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.parancoe:parancoe-core:0.3.4",
+    "coordinatesV2": "org.parancoe:parancoe-core:2.0",
+    "caller": "|java+method:///org/parancoe/persistence/dao/generic/HibernateGenericDao/count()|",
+    "called": "|java+method:///org/springframework/dao/support/DataAccessUtils/intResult(java.util.Collection)|",
+    "v1Body": [
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Class/getSimpleName()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/parancoe/persistence/dao/generic/HibernateGenericDao/getType()|",
+      "|java+method:///org/parancoe/persistence/dao/generic/HibernateGenericDao/getHibernateTemplate()|",
+      "|java+method:///org/springframework/orm/hibernate3/HibernateTemplate/find(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/springframework/dao/support/DataAccessUtils/intResult(java.util.Collection)|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "affectedLib": "org.springframework:spring-tx:2.5.5",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.parancoe:parancoe-core:0.3.4",
+    "coordinatesV2": "org.parancoe:parancoe-core:2.0",
+    "caller": "|java+method:///org/parancoe/util/Utils/unsafeLoadString(java.io.InputStream)|",
+    "called": "|java+method:///org/apache/commons/io/IOUtils/toByteArray(java.io.InputStream)|",
+    "v1Body": [
+      "|java+constructor:///java/lang/String/String(byte%5B%5D,java.lang.String)|",
+      "|java+method:///org/apache/commons/io/IOUtils/toByteArray(java.io.Reader,java.lang.String)|",
+      "|java+constructor:///java/io/InputStreamReader/InputStreamReader(java.io.InputStream)|",
+      "|java+method:///org/parancoe/util/Utils/stripUTF8preamble(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/lang/String/String(byte%5B%5D,java.lang.String)|",
+      "|java+method:///org/apache/commons/io/IOUtils/toByteArray(java.io.InputStream)|",
+      "|java+method:///org/parancoe/util/Utils/stripUTF8preamble(java.lang.String)|"
+    ],
+    "affectedLib": "commons-io:commons-io:1.4",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.parancoe:parancoe-core:0.3.4",
+    "coordinatesV2": "org.parancoe:parancoe-core:2.0",
+    "caller": "|java+method:///org/parancoe/persistence/dao/DaoUtils/isDaoFor(java.lang.Object,java.lang.Class)|",
+    "called": "|java+method:///org/springframework/core/annotation/AnnotationUtils/findAnnotation(java.lang.Class,java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///java/lang/Class/getInterfaces()|",
+      "|java+method:///java/lang/Class/getAnnotation(java.lang.Class)|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///org/parancoe/persistence/dao/generic/Dao/entity()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Class/getInterfaces()|",
+      "|java+method:///org/springframework/core/annotation/AnnotationUtils/findAnnotation(java.lang.Class,java.lang.Class)|",
+      "|java+method:///org/parancoe/persistence/dao/generic/HibernateGenericBusinessDao/getPersistentClass()|",
+      "|java+method:///java/lang/Class/getAnnotation(java.lang.Class)|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///org/parancoe/persistence/dao/generic/Dao/entity()|"
+    ],
+    "affectedLib": "org.springframework:spring-core:2.5.5",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.parancoe:parancoe-core:0.3.4",
+    "coordinatesV2": "org.parancoe:parancoe-core:2.0",
+    "caller": "|java+method:///org/parancoe/persistence/dao/DaoUtils/isDao(java.lang.Object)|",
+    "called": "|java+method:///org/springframework/core/annotation/AnnotationUtils/findAnnotation(java.lang.Class,java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///java/lang/Class/getInterfaces()|",
+      "|java+method:///java/lang/Class/getAnnotation(java.lang.Class)|",
+      "|java+method:///java/lang/Object/getClass()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Class/getInterfaces()|",
+      "|java+method:///org/springframework/core/annotation/AnnotationUtils/findAnnotation(java.lang.Class,java.lang.Class)|",
+      "|java+method:///java/lang/Class/getAnnotation(java.lang.Class)|",
+      "|java+method:///java/lang/Object/getClass()|"
+    ],
+    "affectedLib": "org.springframework:spring-core:2.5.5",
+    "change": "UPDATED"
+  }
+]

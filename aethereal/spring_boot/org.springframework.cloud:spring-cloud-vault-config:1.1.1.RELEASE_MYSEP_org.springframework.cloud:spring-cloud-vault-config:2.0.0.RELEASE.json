@@ -1,0 +1,134 @@
+[
+  {
+    "coordinatesV1": "org.springframework.cloud:spring-cloud-vault-config:1.1.1.RELEASE",
+    "coordinatesV2": "org.springframework.cloud:spring-cloud-vault-config:2.0.0.RELEASE",
+    "caller": "|java+method:///org/springframework/cloud/vault/config/VaultBootstrapConfiguration/clientHttpRequestFactoryWrapper()|",
+    "called": "|java+method:///org/springframework/vault/support/SslConfiguration$KeyStoreConfiguration/of(org.springframework.core.io.Resource)|",
+    "v1Body": [
+      "|java+method:///org/springframework/cloud/vault/config/VaultProperties/getConnectionTimeout()|",
+      "|java+method:///org/springframework/cloud/vault/config/VaultProperties$Ssl/getKeyStore()|",
+      "|java+method:///org/springframework/cloud/vault/config/VaultProperties$Ssl/getTrustStorePassword()|",
+      "|java+method:///org/springframework/cloud/vault/config/VaultProperties/getReadTimeout()|",
+      "|java+method:///org/springframework/cloud/vault/config/VaultProperties/getSsl()|",
+      "|java+method:///org/springframework/cloud/vault/config/VaultProperties$Ssl/getTrustStore()|",
+      "|java+method:///org/springframework/vault/config/ClientHttpRequestFactoryFactory/create(org.springframework.vault.support.ClientOptions,org.springframework.vault.support.SslConfiguration)|",
+      "|java+constructor:///org/springframework/vault/config/AbstractVaultConfiguration$ClientFactoryWrapper/AbstractVaultConfiguration$ClientFactoryWrapper(org.springframework.http.client.ClientHttpRequestFactory)|",
+      "|java+method:///org/springframework/cloud/vault/config/VaultProperties$Ssl/getKeyStorePassword()|",
+      "|java+constructor:///org/springframework/vault/support/ClientOptions/ClientOptions(int,int)|",
+      "|java+constructor:///org/springframework/vault/support/SslConfiguration/SslConfiguration(org.springframework.core.io.Resource,java.lang.String,org.springframework.core.io.Resource,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/springframework/cloud/vault/config/VaultProperties/getConnectionTimeout()|",
+      "|java+method:///org/springframework/vault/support/SslConfiguration$KeyStoreConfiguration/unconfigured()|",
+      "|java+method:///org/springframework/cloud/vault/config/VaultProperties$Ssl/getTrustStorePassword()|",
+      "|java+method:///org/springframework/cloud/vault/config/VaultProperties/getReadTimeout()|",
+      "|java+method:///org/springframework/cloud/vault/config/VaultProperties$Ssl/getTrustStore()|",
+      "|java+method:///org/springframework/vault/config/ClientHttpRequestFactoryFactory/create(org.springframework.vault.support.ClientOptions,org.springframework.vault.support.SslConfiguration)|",
+      "|java+method:///org/springframework/vault/support/SslConfiguration$KeyStoreConfiguration/of(org.springframework.core.io.Resource,char%5B%5D)|",
+      "|java+method:///org/springframework/vault/support/SslConfiguration/unconfigured()|",
+      "|java+method:///java/lang/String/toCharArray()|",
+      "|java+constructor:///org/springframework/vault/support/SslConfiguration/SslConfiguration(org.springframework.vault.support.SslConfiguration$KeyStoreConfiguration,org.springframework.vault.support.SslConfiguration$KeyStoreConfiguration)|",
+      "|java+constructor:///org/springframework/vault/config/AbstractVaultConfiguration$ClientFactoryWrapper/AbstractVaultConfiguration$ClientFactoryWrapper(org.springframework.http.client.ClientHttpRequestFactory)|",
+      "|java+method:///org/springframework/cloud/vault/config/VaultProperties$Ssl/getKeyStorePassword()|",
+      "|java+method:///java/time/Duration/ofMillis(long)|",
+      "|java+method:///org/springframework/cloud/vault/config/VaultProperties$Ssl/getKeyStore()|",
+      "|java+method:///org/springframework/util/StringUtils/hasText(java.lang.String)|",
+      "|java+method:///org/springframework/cloud/vault/config/VaultProperties/getSsl()|",
+      "|java+constructor:///org/springframework/vault/support/ClientOptions/ClientOptions(java.time.Duration,java.time.Duration)|",
+      "|java+method:///org/springframework/vault/support/SslConfiguration$KeyStoreConfiguration/of(org.springframework.core.io.Resource)|"
+    ],
+    "affectedLib": "org.springframework.vault:spring-vault-core:2.0.1.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.springframework.cloud:spring-cloud-vault-config:1.1.1.RELEASE",
+    "coordinatesV2": "org.springframework.cloud:spring-cloud-vault-config:2.0.0.RELEASE",
+    "caller": "|java+method:///org/springframework/cloud/vault/config/LeasingVaultPropertySourceLocator/createVaultPropertySourceFailFast(org.springframework.vault.core.lease.domain.RequestedSecret,org.springframework.cloud.vault.config.SecretBackendMetadata)|",
+    "called": "|java+constructor:///org/springframework/vault/VaultException/VaultException(java.lang.String,java.lang.Throwable)|",
+    "v1Body": [
+      "|java+method:///org/springframework/vault/core/lease/SecretLeaseContainer/addErrorListener(org.springframework.vault.core.lease.event.LeaseErrorListener)|",
+      "|java+constructor:///org/springframework/vault/VaultException/VaultException(java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///java/util/concurrent/atomic/AtomicReference/AtomicReference()|",
+      "|java+constructor:///org/springframework/cloud/vault/config/LeasingVaultPropertySourceLocator$1/LeasingVaultPropertySourceLocator$1(org.springframework.cloud.vault.config.LeasingVaultPropertySourceLocator,org.springframework.vault.core.lease.domain.RequestedSecret,java.util.concurrent.atomic.AtomicReference)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///org/springframework/cloud/vault/config/LeasingVaultPropertySourceLocator/createVaultPropertySource(org.springframework.vault.core.lease.domain.RequestedSecret,org.springframework.cloud.vault.config.SecretBackendMetadata)|",
+      "|java+method:///org/springframework/vault/core/lease/domain/RequestedSecret/getPath()|",
+      "|java+method:///org/springframework/vault/core/lease/SecretLeaseContainer/removeLeaseErrorListener(org.springframework.vault.core.lease.event.LeaseErrorListener)|",
+      "|java+method:///java/util/concurrent/atomic/AtomicReference/get()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/springframework/vault/core/lease/SecretLeaseContainer/addErrorListener(org.springframework.vault.core.lease.event.LeaseErrorListener)|",
+      "|java+constructor:///org/springframework/vault/VaultException/VaultException(java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///java/util/concurrent/atomic/AtomicReference/AtomicReference()|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///org/springframework/cloud/vault/config/LeasingVaultPropertySourceLocator/createVaultPropertySource(org.springframework.vault.core.lease.domain.RequestedSecret,org.springframework.cloud.vault.config.SecretBackendMetadata)|",
+      "|java+method:///org/springframework/vault/core/lease/domain/RequestedSecret/getPath()|",
+      "|java+method:///org/springframework/vault/core/lease/SecretLeaseContainer/removeLeaseErrorListener(org.springframework.vault.core.lease.event.LeaseErrorListener)|",
+      "|java+method:///java/util/concurrent/atomic/AtomicReference/get()|"
+    ],
+    "affectedLib": "org.springframework.vault:spring-vault-core:2.0.1.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.springframework.cloud:spring-cloud-vault-config:1.1.1.RELEASE",
+    "coordinatesV2": "org.springframework.cloud:spring-cloud-vault-config:2.0.0.RELEASE",
+    "caller": "|java+method:///org/springframework/cloud/vault/config/ClientAuthenticationFactory/kubernetesAuthentication(org.springframework.cloud.vault.config.VaultProperties)|",
+    "called": "|java+method:///org/springframework/vault/authentication/KubernetesAuthenticationOptions$KubernetesAuthenticationOptionsBuilder/path(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/springframework/cloud/vault/config/KubernetesAuthenticationOptions$KubernetesAuthenticationOptionsBuilder/build()|",
+      "|java+method:///org/springframework/cloud/vault/config/VaultProperties$KubernetesProperties/getServiceAccountTokenFile()|",
+      "|java+method:///org/springframework/cloud/vault/config/KubernetesAuthenticationOptions$KubernetesAuthenticationOptionsBuilder/jwtSupplier(org.springframework.cloud.vault.config.KubernetesJwtSupplier)|",
+      "|java+method:///org/springframework/cloud/vault/config/VaultProperties$KubernetesProperties/getKubernetesPath()|",
+      "|java+method:///org/springframework/cloud/vault/config/KubernetesAuthenticationOptions/builder()|",
+      "|java+method:///org/springframework/util/Assert/hasText(java.lang.String,java.lang.String)|",
+      "|java+method:///org/springframework/cloud/vault/config/VaultProperties$KubernetesProperties/getRole()|",
+      "|java+method:///org/springframework/cloud/vault/config/VaultProperties/getKubernetes()|",
+      "|java+method:///org/springframework/cloud/vault/config/KubernetesAuthenticationOptions$KubernetesAuthenticationOptionsBuilder/role(java.lang.String)|",
+      "|java+constructor:///org/springframework/cloud/vault/config/KubernetesServiceAccountTokenFile/KubernetesServiceAccountTokenFile(java.lang.String)|",
+      "|java+constructor:///org/springframework/cloud/vault/config/KubernetesAuthentication/KubernetesAuthentication(org.springframework.cloud.vault.config.KubernetesAuthenticationOptions,org.springframework.web.client.RestOperations)|",
+      "|java+method:///org/springframework/cloud/vault/config/KubernetesAuthenticationOptions$KubernetesAuthenticationOptionsBuilder/path(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/springframework/cloud/vault/config/VaultProperties$KubernetesProperties/getKubernetesPath()|",
+      "|java+method:///org/springframework/vault/authentication/KubernetesAuthenticationOptions$KubernetesAuthenticationOptionsBuilder/jwtSupplier(java.util.function.Supplier)|",
+      "|java+method:///org/springframework/vault/authentication/KubernetesAuthenticationOptions/builder()|",
+      "|java+method:///org/springframework/vault/authentication/KubernetesAuthenticationOptions$KubernetesAuthenticationOptionsBuilder/path(java.lang.String)|",
+      "|java+method:///org/springframework/cloud/vault/config/VaultProperties$KubernetesProperties/getRole()|",
+      "|java+method:///org/springframework/cloud/vault/config/VaultProperties/getKubernetes()|",
+      "|java+method:///org/springframework/vault/authentication/KubernetesAuthenticationOptions$KubernetesAuthenticationOptionsBuilder/role(java.lang.String)|",
+      "|java+constructor:///org/springframework/vault/authentication/KubernetesServiceAccountTokenFile/KubernetesServiceAccountTokenFile(java.lang.String)|",
+      "|java+method:///org/springframework/vault/authentication/KubernetesAuthenticationOptions$KubernetesAuthenticationOptionsBuilder/build()|",
+      "|java+method:///org/springframework/cloud/vault/config/VaultProperties$KubernetesProperties/getServiceAccountTokenFile()|",
+      "|java+constructor:///org/springframework/vault/authentication/KubernetesAuthentication/KubernetesAuthentication(org.springframework.vault.authentication.KubernetesAuthenticationOptions,org.springframework.web.client.RestOperations)|",
+      "|java+method:///org/springframework/util/Assert/hasText(java.lang.String,java.lang.String)|"
+    ],
+    "affectedLib": "org.springframework.vault:spring-vault-core:2.0.1.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.springframework.cloud:spring-cloud-vault-config:1.1.1.RELEASE",
+    "coordinatesV2": "org.springframework.cloud:spring-cloud-vault-config:2.0.0.RELEASE",
+    "caller": "|java+method:///org/springframework/cloud/vault/config/ClientAuthenticationFactory/appRoleAuthentication(org.springframework.cloud.vault.config.VaultProperties)|",
+    "called": "|java+constructor:///org/springframework/vault/authentication/AppRoleAuthentication/AppRoleAuthentication(org.springframework.vault.authentication.AppRoleAuthenticationOptions,org.springframework.web.client.RestOperations)|",
+    "v1Body": [
+      "|java+method:///org/springframework/vault/authentication/AppRoleAuthenticationOptions$AppRoleAuthenticationOptionsBuilder/path(java.lang.String)|",
+      "|java+method:///org/springframework/vault/authentication/AppRoleAuthenticationOptions$AppRoleAuthenticationOptionsBuilder/build()|",
+      "|java+method:///org/springframework/vault/authentication/AppRoleAuthenticationOptions$AppRoleAuthenticationOptionsBuilder/secretId(java.lang.String)|",
+      "|java+method:///org/springframework/vault/authentication/AppRoleAuthenticationOptions/builder()|",
+      "|java+method:///org/springframework/util/StringUtils/hasText(java.lang.String)|",
+      "|java+method:///org/springframework/cloud/vault/config/VaultProperties$AppRoleProperties/getSecretId()|",
+      "|java+method:///org/springframework/vault/authentication/AppRoleAuthenticationOptions$AppRoleAuthenticationOptionsBuilder/roleId(java.lang.String)|",
+      "|java+method:///org/springframework/cloud/vault/config/VaultProperties$AppRoleProperties/getRoleId()|",
+      "|java+method:///org/springframework/cloud/vault/config/VaultProperties$AppRoleProperties/getAppRolePath()|",
+      "|java+method:///org/springframework/cloud/vault/config/VaultProperties/getAppRole()|",
+      "|java+method:///org/springframework/util/Assert/hasText(java.lang.String,java.lang.String)|",
+      "|java+constructor:///org/springframework/vault/authentication/AppRoleAuthentication/AppRoleAuthentication(org.springframework.vault.authentication.AppRoleAuthenticationOptions,org.springframework.web.client.RestOperations)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/springframework/cloud/vault/config/ClientAuthenticationFactory/getAppRoleAuthenticationOptions(org.springframework.cloud.vault.config.VaultProperties)|",
+      "|java+constructor:///org/springframework/vault/authentication/AppRoleAuthentication/AppRoleAuthentication(org.springframework.vault.authentication.AppRoleAuthenticationOptions,org.springframework.web.client.RestOperations)|"
+    ],
+    "affectedLib": "org.springframework.vault:spring-vault-core:2.0.1.RELEASE",
+    "change": "UPDATED"
+  }
+]

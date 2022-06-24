@@ -1,0 +1,29 @@
+[
+  {
+    "coordinatesV1": "org.sonatype.nexus:nexus-app:2.0.3",
+    "coordinatesV2": "org.sonatype.nexus:nexus-app:2.0.4",
+    "caller": "|java+method:///org/sonatype/nexus/error/reporting/DefaultErrorReportingManager/initializeConfiguration()|",
+    "called": "|java+constructor:///org/codehaus/plexus/swizzle/jira/authentication/DefaultAuthenticationSource/DefaultAuthenticationSource(java.lang.String,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/sonatype/nexus/error/reporting/DefaultErrorReportingManager/getApplicationConfiguration()|",
+      "|java+method:///org/sonatype/nexus/error/reporting/DefaultErrorReportingManager/configure(java.lang.Object)|",
+      "|java+method:///org/sonatype/nexus/configuration/application/ApplicationConfiguration/getConfigurationModel()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/sonatype/sisu/issue/IssueRetriever/setServerUrl(java.lang.String)|",
+      "|java+method:///org/sonatype/nexus/error/reporting/DefaultErrorReportingManager/getApplicationConfiguration()|",
+      "|java+method:///org/sonatype/nexus/error/reporting/DefaultErrorReportingManager/getCurrentConfiguration(boolean)|",
+      "|java+method:///org/codehaus/plexus/swizzle/IssueSubmitter/setCredentials(org.codehaus.plexus.swizzle.jira.authentication.AuthenticationSource)|",
+      "|java+method:///org/codehaus/plexus/swizzle/IssueSubmitter/setServerUrl(java.lang.String)|",
+      "|java+constructor:///org/codehaus/plexus/swizzle/jira/authentication/DefaultAuthenticationSource/DefaultAuthenticationSource(java.lang.String,java.lang.String)|",
+      "|java+method:///org/sonatype/nexus/configuration/model/CErrorReporting/getJiraUrl()|",
+      "|java+method:///org/sonatype/nexus/error/reporting/DefaultErrorReportingManager/configure(java.lang.Object)|",
+      "|java+method:///org/sonatype/nexus/error/reporting/DefaultErrorReportingManager/getValidJIRAUsername()|",
+      "|java+method:///org/sonatype/sisu/issue/IssueRetriever/setCredentials(org.codehaus.plexus.swizzle.jira.authentication.AuthenticationSource)|",
+      "|java+method:///org/sonatype/nexus/configuration/application/ApplicationConfiguration/getConfigurationModel()|",
+      "|java+method:///org/sonatype/nexus/error/reporting/DefaultErrorReportingManager/getValidJIRAPassword()|"
+    ],
+    "affectedLib": "org.sonatype.sisu.pr:sisu-problem-reporter:1.5.1",
+    "change": "ADDED"
+  }
+]

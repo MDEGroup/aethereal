@@ -1,0 +1,202 @@
+[
+  {
+    "coordinatesV1": "org.sonatype.sisu:sisu-inject-plexus:2.3.4",
+    "coordinatesV2": "org.sonatype.sisu:sisu-inject-plexus:2.4.0",
+    "caller": "|java+constructor:///org/sonatype/guice/plexus/binders/PlexusXmlBeanModule/PlexusXmlBeanModule(org.sonatype.guice.bean.reflect.ClassSpace,java.util.Map)|",
+    "called": "|java+constructor:///org/eclipse/sisu/plexus/PlexusXmlBeanModule/PlexusXmlBeanModule(org.eclipse.sisu.space.ClassSpace,java.util.Map)|",
+    "v1Body": [
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/eclipse/sisu/plexus/PlexusXmlBeanModule/PlexusXmlBeanModule(org.eclipse.sisu.space.ClassSpace,java.util.Map)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "org.eclipse.sisu:org.eclipse.sisu.plexus:0.0.0.M3",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.sonatype.sisu:sisu-inject-plexus:2.3.4",
+    "coordinatesV2": "org.sonatype.sisu:sisu-inject-plexus:2.4.0",
+    "caller": "|java+method:///org/sonatype/guice/plexus/shim/PlexusSpaceModule/configure(com.google.inject.Binder)|",
+    "called": "|java+constructor:///org/eclipse/sisu/plexus/PlexusSpaceModule/PlexusSpaceModule(org.eclipse.sisu.space.ClassSpace)|",
+    "v1Body": [
+      "|java+method:///com/google/inject/Binder/requestInjection(java.lang.Object)|",
+      "|java+constructor:///org/sonatype/guice/plexus/binders/PlexusXmlBeanModule/PlexusXmlBeanModule(org.sonatype.guice.bean.reflect.ClassSpace,java.util.Map)|",
+      "|java+method:///com/google/inject/Binder/install(com.google.inject.Module)|",
+      "|java+constructor:///org/sonatype/guice/plexus/binders/PlexusBindingModule/PlexusBindingModule(org.sonatype.guice.plexus.binders.PlexusBeanManager,org.sonatype.guice.plexus.config.PlexusBeanModule%5B%5D)|",
+      "|java+method:///com/google/inject/binder/AnnotatedBindingBuilder/toInstance(java.lang.Object)|",
+      "|java+constructor:///org/sonatype/guice/plexus/lifecycles/PlexusLifecycleManager/PlexusLifecycleManager(javax.inject.Provider,javax.inject.Provider,javax.inject.Provider)|",
+      "|java+method:///com/google/inject/Binder/getProvider(java.lang.Class)|",
+      "|java+method:///org/sonatype/guice/bean/reflect/ClassSpace/deferLoadClass(java.lang.String)|",
+      "|java+method:///org/sonatype/guice/bean/reflect/DeferredClass/asProvider()|",
+      "|java+method:///com/google/inject/Binder/bind(java.lang.Class)|",
+      "|java+method:///com/google/inject/binder/AnnotatedBindingBuilder/to(java.lang.Class)|",
+      "|java+constructor:///org/codehaus/plexus/context/ContextMapAdapter/ContextMapAdapter(org.codehaus.plexus.context.Context)|",
+      "|java+constructor:///org/sonatype/guice/plexus/shim/PlexusSpaceModule$ParameterizedContext/PlexusSpaceModule$ParameterizedContext()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/inject/Binder/install(com.google.inject.Module)|",
+      "|java+constructor:///org/eclipse/sisu/plexus/PlexusSpaceModule/PlexusSpaceModule(org.eclipse.sisu.space.ClassSpace)|"
+    ],
+    "affectedLib": "org.eclipse.sisu:org.eclipse.sisu.plexus:0.0.0.M3",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.sonatype.sisu:sisu-inject-plexus:2.3.4",
+    "coordinatesV2": "org.sonatype.sisu:sisu-inject-plexus:2.4.0",
+    "caller": "|java+method:///org/sonatype/guice/plexus/binders/PlexusTypeBinder/hear(org.codehaus.plexus.component.annotations.Component,org.sonatype.guice.bean.reflect.DeferredClass,java.lang.Object)|",
+    "called": "|java+method:///org/eclipse/sisu/plexus/PlexusTypeBinder/hear(org.codehaus.plexus.component.annotations.Component,org.eclipse.sisu.inject.DeferredClass,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/codehaus/plexus/component/annotations/Component/role()|",
+      "|java+method:///org/sonatype/guice/bean/reflect/DeferredClass/getName()|",
+      "|java+method:///org/codehaus/plexus/component/annotations/Component/description()|",
+      "|java+method:///org/sonatype/guice/plexus/binders/PlexusTypeBinder/componentBinder(java.lang.Object,java.lang.String)|",
+      "|java+method:///org/codehaus/plexus/component/annotations/Component/instantiationStrategy()|",
+      "|java+method:///com/google/inject/binder/ScopedBindingBuilder/in(com.google.inject.Scope)|",
+      "|java+method:///com/google/inject/binder/LinkedBindingBuilder/toProvider(com.google.inject.Provider)|",
+      "|java+method:///com/google/inject/Binder/bind(com.google.inject.Key)|",
+      "|java+method:///org/sonatype/guice/bean/reflect/DeferredClass/asProvider()|",
+      "|java+method:///com/google/inject/binder/ScopedBindingBuilder/asEagerSingleton()|",
+      "|java+method:///org/sonatype/guice/bean/reflect/DeferredClass/load()|",
+      "|java+method:///com/google/inject/Key/getAnnotation()|",
+      "|java+method:///com/google/inject/binder/LinkedBindingBuilder/to(java.lang.Class)|",
+      "|java+method:///org/sonatype/guice/plexus/config/Roles/componentKey(org.codehaus.plexus.component.annotations.Component)|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///java/lang/Class/getName()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/eclipse/sisu/plexus/PlexusTypeBinder/hear(org.codehaus.plexus.component.annotations.Component,org.eclipse.sisu.inject.DeferredClass,java.lang.Object)|"
+    ],
+    "affectedLib": "org.eclipse.sisu:org.eclipse.sisu.plexus:0.0.0.M3",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.sonatype.sisu:sisu-inject-plexus:2.3.4",
+    "coordinatesV2": "org.sonatype.sisu:sisu-inject-plexus:2.4.0",
+    "caller": "|java+constructor:///org/sonatype/guice/plexus/binders/PlexusXmlBeanModule/PlexusXmlBeanModule(org.sonatype.guice.bean.reflect.ClassSpace,java.util.Map,java.net.URL)|",
+    "called": "|java+constructor:///org/eclipse/sisu/plexus/PlexusXmlBeanModule/PlexusXmlBeanModule(org.eclipse.sisu.space.ClassSpace,java.util.Map,java.net.URL)|",
+    "v1Body": [
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/eclipse/sisu/plexus/PlexusXmlBeanModule/PlexusXmlBeanModule(org.eclipse.sisu.space.ClassSpace,java.util.Map,java.net.URL)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "org.eclipse.sisu:org.eclipse.sisu.plexus:0.0.0.M3",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.sonatype.sisu:sisu-inject-plexus:2.3.4",
+    "coordinatesV2": "org.sonatype.sisu:sisu-inject-plexus:2.4.0",
+    "caller": "|java+method:///org/sonatype/guice/plexus/scanners/PlexusTypeVisitor/visitClass(java.net.URL)|",
+    "called": "|java+method:///org/eclipse/sisu/plexus/PlexusTypeVisitor/visitClass(java.net.URL)|",
+    "v1Body": [
+      "|java+method:///org/sonatype/guice/plexus/scanners/PlexusTypeVisitor$ComponentAnnotationVisitor/reset()|",
+      "|java+method:///org/sonatype/guice/bean/scanners/QualifiedTypeVisitor/visitClass(java.net.URL)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/sonatype/guice/plexus/scanners/PlexusTypeVisitor/adapt(org.eclipse.sisu.space.ClassVisitor)|",
+      "|java+method:///org/eclipse/sisu/plexus/PlexusTypeVisitor/visitClass(java.net.URL)|"
+    ],
+    "affectedLib": "org.eclipse.sisu:org.eclipse.sisu.plexus:0.0.0.M3",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.sonatype.sisu:sisu-inject-plexus:2.3.4",
+    "coordinatesV2": "org.sonatype.sisu:sisu-inject-plexus:2.4.0",
+    "caller": "|java+constructor:///org/sonatype/guice/plexus/binders/PlexusTypeBinder/PlexusTypeBinder(com.google.inject.Binder)|",
+    "called": "|java+constructor:///org/eclipse/sisu/plexus/PlexusTypeBinder/PlexusTypeBinder(com.google.inject.Binder)|",
+    "v1Body": [
+      "|java+constructor:///org/sonatype/guice/bean/binders/QualifiedTypeBinder/QualifiedTypeBinder(com.google.inject.Binder)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/eclipse/sisu/plexus/PlexusTypeBinder/PlexusTypeBinder(com.google.inject.Binder)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "org.eclipse.sisu:org.eclipse.sisu.plexus:0.0.0.M3",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.sonatype.sisu:sisu-inject-plexus:2.3.4",
+    "coordinatesV2": "org.sonatype.sisu:sisu-inject-plexus:2.4.0",
+    "caller": "|java+method:///org/sonatype/guice/plexus/scanners/PlexusTypeVisitor/visit(org.sonatype.guice.bean.reflect.ClassSpace)|",
+    "called": "|java+method:///org/eclipse/sisu/plexus/PlexusTypeVisitor/enter(org.eclipse.sisu.space.ClassSpace)|",
+    "v1Body": [
+      "|java+method:///java/lang/Object/toString()|",
+      "|java+method:///org/sonatype/guice/bean/scanners/QualifiedTypeVisitor/visit(org.sonatype.guice.bean.reflect.ClassSpace)|",
+      "|java+method:///org/sonatype/guice/bean/scanners/ClassSpaceScanner/verify(org.sonatype.guice.bean.reflect.ClassSpace,java.lang.Class%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/eclipse/sisu/plexus/PlexusTypeVisitor/enter(org.eclipse.sisu.space.ClassSpace)|"
+    ],
+    "affectedLib": "org.eclipse.sisu:org.eclipse.sisu.plexus:0.0.0.M3",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.sonatype.sisu:sisu-inject-plexus:2.3.4",
+    "coordinatesV2": "org.sonatype.sisu:sisu-inject-plexus:2.4.0",
+    "caller": "|java+method:///org/sonatype/guice/plexus/binders/PlexusTypeBinder/hear(java.lang.annotation.Annotation,java.lang.Class,java.lang.Object)|",
+    "called": "|java+method:///org/eclipse/sisu/plexus/PlexusTypeBinder/hear(java.lang.annotation.Annotation,java.lang.Class,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/sonatype/guice/bean/scanners/QualifiedTypeListener/hear(java.lang.annotation.Annotation,java.lang.Class,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/eclipse/sisu/plexus/PlexusTypeBinder/hear(java.lang.annotation.Annotation,java.lang.Class,java.lang.Object)|"
+    ],
+    "affectedLib": "org.eclipse.sisu:org.eclipse.sisu.plexus:0.0.0.M3",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.sonatype.sisu:sisu-inject-plexus:2.3.4",
+    "coordinatesV2": "org.sonatype.sisu:sisu-inject-plexus:2.4.0",
+    "caller": "|java+constructor:///org/sonatype/guice/plexus/scanners/PlexusTypeVisitor/PlexusTypeVisitor(org.sonatype.guice.plexus.scanners.PlexusTypeListener)|",
+    "called": "|java+constructor:///org/eclipse/sisu/plexus/PlexusTypeVisitor/PlexusTypeVisitor(org.eclipse.sisu.plexus.PlexusTypeListener)|",
+    "v1Body": [
+      "|java+constructor:///org/sonatype/guice/bean/scanners/QualifiedTypeVisitor/QualifiedTypeVisitor(org.sonatype.guice.bean.scanners.QualifiedTypeListener)|",
+      "|java+constructor:///org/sonatype/guice/plexus/scanners/PlexusTypeVisitor$ComponentAnnotationVisitor/PlexusTypeVisitor$ComponentAnnotationVisitor()|",
+      "|java+constructor:///org/sonatype/guice/bean/scanners/EmptyClassVisitor/EmptyClassVisitor()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/eclipse/sisu/plexus/PlexusTypeVisitor/PlexusTypeVisitor(org.eclipse.sisu.plexus.PlexusTypeListener)|",
+      "|java+method:///org/sonatype/guice/plexus/scanners/PlexusTypeVisitor/adapt(org.sonatype.guice.plexus.scanners.PlexusTypeListener)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "org.eclipse.sisu:org.eclipse.sisu.plexus:0.0.0.M3",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.sonatype.sisu:sisu-inject-plexus:2.3.4",
+    "coordinatesV2": "org.sonatype.sisu:sisu-inject-plexus:2.4.0",
+    "caller": "|java+constructor:///org/sonatype/guice/plexus/scanners/PlexusAnnotatedMetadata/PlexusAnnotatedMetadata(java.util.Map)|",
+    "called": "|java+constructor:///org/eclipse/sisu/plexus/PlexusAnnotatedMetadata/PlexusAnnotatedMetadata(java.util.Map)|",
+    "v1Body": [
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/eclipse/sisu/plexus/PlexusAnnotatedMetadata/PlexusAnnotatedMetadata(java.util.Map)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "org.eclipse.sisu:org.eclipse.sisu.plexus:0.0.0.M3",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.sonatype.sisu:sisu-inject-plexus:2.3.4",
+    "coordinatesV2": "org.sonatype.sisu:sisu-inject-plexus:2.4.0",
+    "caller": "|java+method:///org/sonatype/guice/plexus/scanners/PlexusTypeVisitor/visitEnd()|",
+    "called": "|java+method:///org/eclipse/sisu/plexus/PlexusTypeVisitor/leave()|",
+    "v1Body": [
+      "|java+method:///org/sonatype/guice/plexus/scanners/PlexusTypeListener/hear(org.codehaus.plexus.component.annotations.Component,org.sonatype.guice.bean.reflect.DeferredClass,java.lang.Object)|",
+      "|java+method:///org/sonatype/guice/bean/reflect/ClassSpace/loadClass(java.lang.String)|",
+      "|java+method:///org/sonatype/guice/bean/scanners/QualifiedTypeVisitor/visitEnd()|",
+      "|java+constructor:///org/sonatype/guice/bean/reflect/LoadedClass/LoadedClass(java.lang.Class)|",
+      "|java+method:///org/sonatype/guice/plexus/scanners/PlexusTypeVisitor$ComponentAnnotationVisitor/getComponent(org.sonatype.guice.bean.reflect.ClassSpace)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/sonatype/guice/bean/scanners/asm/ClassVisitor/visitEnd()|",
+      "|java+method:///org/eclipse/sisu/plexus/PlexusTypeVisitor/leave()|"
+    ],
+    "affectedLib": "org.eclipse.sisu:org.eclipse.sisu.plexus:0.0.0.M3",
+    "change": "ADDED"
+  }
+]

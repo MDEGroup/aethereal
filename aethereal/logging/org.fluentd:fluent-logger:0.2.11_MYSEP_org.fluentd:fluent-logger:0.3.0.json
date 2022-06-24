@@ -1,0 +1,92 @@
+[
+  {
+    "coordinatesV1": "org.fluentd:fluent-logger:0.2.11",
+    "coordinatesV2": "org.fluentd:fluent-logger:0.3.0",
+    "caller": "|java+initializer:///org/fluentd/logger/sender/ConstantDelayReconnector/ConstantDelayReconnector$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///java/util/logging/Logger/getLogger(java.lang.String)|",
+      "|java+method:///java/lang/Class/getName()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.6",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.fluentd:fluent-logger:0.2.11",
+    "coordinatesV2": "org.fluentd:fluent-logger:0.3.0",
+    "caller": "|java+initializer:///org/fluentd/logger/sender/RawSocketSender/RawSocketSender$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///java/util/logging/Logger/getLogger(java.lang.String)|",
+      "|java+method:///java/lang/Class/getName()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.6",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.fluentd:fluent-logger:0.2.11",
+    "coordinatesV2": "org.fluentd:fluent-logger:0.3.0",
+    "caller": "|java+constructor:///org/fluentd/logger/sender/RawSocketSender/RawSocketSender(java.lang.String,int,int,int,org.fluentd.logger.sender.Reconnector)|",
+    "called": "|java+method:///org/msgpack/MessagePack/register(java.lang.Class,org.msgpack.template.Template)|",
+    "v1Body": [
+      "|java+method:///java/nio/ByteBuffer/allocate(int)|",
+      "|java+constructor:///java/net/InetSocketAddress/InetSocketAddress(java.lang.String,int)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///org/fluentd/logger/sender/RawSocketSender/open()|",
+      "|java+method:///org/msgpack/MessagePack/register(java.lang.Class,org.msgpack.template.Template)|",
+      "|java+constructor:///org/msgpack/MessagePack/MessagePack()|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/nio/ByteBuffer/allocate(int)|",
+      "|java+constructor:///java/net/InetSocketAddress/InetSocketAddress(java.lang.String,int)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///org/msgpack/MessagePack/register(java.lang.Class,org.msgpack.template.Template)|",
+      "|java+constructor:///org/msgpack/MessagePack/MessagePack()|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "org.msgpack:msgpack:0.6.8",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.fluentd:fluent-logger:0.2.11",
+    "coordinatesV2": "org.fluentd:fluent-logger:0.3.0",
+    "caller": "|java+method:///org/fluentd/logger/sender/RawSocketSender/emit(org.fluentd.logger.sender.Event)|",
+    "called": "|java+method:///org/msgpack/MessagePack/write(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///java/util/logging/Logger/fine(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/msgpack/MessagePack/write(java.lang.Object)|",
+      "|java+method:///org/fluentd/logger/sender/RawSocketSender/send(byte%5B%5D)|",
+      "|java+method:///java/io/IOException/printStackTrace()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/util/logging/Logger/severe(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/util/logging/Logger/isLoggable(java.util.logging.Level)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/fluentd/logger/sender/RawSocketSender/send(byte%5B%5D)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/isTraceEnabled()|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///org/slf4j/Logger/trace(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/msgpack/MessagePack/write(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "affectedLib": "org.msgpack:msgpack:0.6.8",
+    "change": "UPDATED"
+  }
+]

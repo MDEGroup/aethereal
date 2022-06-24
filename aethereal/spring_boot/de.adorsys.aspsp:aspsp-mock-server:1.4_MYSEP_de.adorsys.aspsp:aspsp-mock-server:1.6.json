@@ -1,0 +1,47 @@
+[
+  {
+    "coordinatesV1": "de.adorsys.aspsp:aspsp-mock-server:1.4",
+    "coordinatesV2": "de.adorsys.aspsp:aspsp-mock-server:1.6",
+    "caller": "|java+method:///de/adorsys/aspsp/aspspmockserver/service/PsuService/createPsuAndReturnId(de.adorsys.aspsp.xs2a.spi.domain.psu.Psu)|",
+    "called": "|java+method:///de/adorsys/aspsp/xs2a/spi/domain/psu/Psu/isValid()|",
+    "v1Body": [
+      "|java+method:///de/adorsys/aspsp/xs2a/spi/domain/psu/Psu/getId()|",
+      "|java+method:///de/adorsys/aspsp/xs2a/spi/domain/psu/Psu/isValid()|",
+      "|java+method:///de/adorsys/aspsp/aspspmockserver/repository/PsuRepository/save(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///de/adorsys/aspsp/xs2a/spi/domain/psu/Psu/isValid()|",
+      "|java+method:///de/adorsys/aspsp/xs2a/spi/domain/psu/Psu/getEmail()|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Object)|",
+      "|java+method:///de/adorsys/aspsp/xs2a/spi/domain/psu/Psu/getName()|",
+      "|java+method:///de/adorsys/aspsp/aspspmockserver/keycloak/KeycloakService/registerClient(java.lang.String,java.lang.String,java.lang.String)|",
+      "|java+method:///java/util/Optional/isPresent()|",
+      "|java+method:///de/adorsys/aspsp/xs2a/spi/domain/psu/Psu/getPassword()|",
+      "|java+method:///de/adorsys/aspsp/xs2a/spi/domain/psu/Psu/getId()|",
+      "|java+method:///de/adorsys/aspsp/aspspmockserver/repository/PsuRepository/findPsuByName(java.lang.String)|",
+      "|java+method:///de/adorsys/aspsp/aspspmockserver/repository/PsuRepository/save(java.lang.Object)|"
+    ],
+    "affectedLib": "de.adorsys.aspsp:spi-api:1.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "de.adorsys.aspsp:aspsp-mock-server:1.4",
+    "coordinatesV2": "de.adorsys.aspsp:aspsp-mock-server:1.6",
+    "caller": "|java+method:///de/adorsys/aspsp/aspspmockserver/data/test/AccountMockServerData/fillPsu()|",
+    "called": "|java+constructor:///de/adorsys/aspsp/xs2a/spi/domain/psu/Psu/Psu(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.util.List,java.util.List)|",
+    "v1Body": [
+      "|java+method:///de/adorsys/aspsp/aspspmockserver/repository/PsuRepository/save(java.lang.Object)|",
+      "|java+method:///java/util/Arrays/asList(java.lang.Object%5B%5D)|",
+      "|java+method:///java/util/List/get(int)|",
+      "|java+constructor:///de/adorsys/aspsp/xs2a/spi/domain/psu/Psu/Psu(java.lang.String,java.lang.String,java.util.List,java.util.List)|"
+    ],
+    "v2Body": [
+      "|java+method:///de/adorsys/aspsp/aspspmockserver/repository/PsuRepository/save(java.lang.Object)|",
+      "|java+method:///java/util/Arrays/asList(java.lang.Object%5B%5D)|",
+      "|java+method:///java/util/List/get(int)|",
+      "|java+constructor:///de/adorsys/aspsp/xs2a/spi/domain/psu/Psu/Psu(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.util.List,java.util.List)|"
+    ],
+    "affectedLib": "de.adorsys.aspsp:spi-api:1.6",
+    "change": "UPDATED"
+  }
+]

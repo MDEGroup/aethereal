@@ -1,0 +1,100 @@
+[
+  {
+    "coordinatesV1": "info.archinnov:achilles-embedded:4.0.1",
+    "coordinatesV2": "info.archinnov:achilles-embedded:4.2.0",
+    "caller": "|java+method:///info/archinnov/achilles/embedded/ServerStarter$1/run()|",
+    "called": "|java+method:///org/apache/cassandra/service/CassandraDaemon/stop()|",
+    "v1Body": [
+      "|java+method:///info/archinnov/achilles/embedded/OrderedShutdownHook/callShutDown()|",
+      "|java+method:///org/apache/cassandra/service/CassandraDaemon/stop()|",
+      "|java+method:///info/archinnov/achilles/embedded/ServerStarter/access$000(info.archinnov.achilles.embedded.ServerStarter)|",
+      "|java+method:///info/archinnov/achilles/embedded/ServerStarter/access$100()|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String)|",
+      "|java+method:///java/util/concurrent/ExecutorService/shutdown()|",
+      "|java+method:///java/util/concurrent/atomic/AtomicReference/get()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/concurrent/ExecutorService/shutdownNow()|",
+      "|java+method:///info/archinnov/achilles/embedded/OrderedShutdownHook/callShutDown()|",
+      "|java+method:///java/util/concurrent/atomic/AtomicReference/get()|",
+      "|java+method:///org/apache/cassandra/service/CassandraDaemon/stop()|",
+      "|java+method:///info/archinnov/achilles/embedded/ServerStarter/access$000(info.archinnov.achilles.embedded.ServerStarter)|",
+      "|java+method:///info/archinnov/achilles/embedded/ServerStarter/access$100()|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String)|"
+    ],
+    "affectedLib": "org.apache.cassandra:cassandra-all:3.5",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "info.archinnov:achilles-embedded:4.0.1",
+    "coordinatesV2": "info.archinnov:achilles-embedded:4.2.0",
+    "caller": "|java+method:///info/archinnov/achilles/embedded/AchillesCassandraConfig/loadConfig()|",
+    "called": "|java+constructor:///org/apache/cassandra/config/Config/Config()|",
+    "v1Body": [
+      "|java+constructor:///org/apache/cassandra/config/ParameterizedClass/ParameterizedClass(java.lang.String,java.util.Map)|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+method:///java/lang/System/getProperty(java.lang.String)|",
+      "|java+method:///java/lang/Boolean/valueOf(boolean)|",
+      "|java+method:///java/lang/Integer/parseInt(java.lang.String)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+constructor:///org/apache/cassandra/config/Config/Config()|",
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/lang/Double/valueOf(double)|",
+      "|java+method:///java/lang/Long/valueOf(long)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/System/getProperty(java.lang.String,java.lang.String)|",
+      "|java+constructor:///org/apache/cassandra/config/ParameterizedClass/ParameterizedClass(java.lang.String,java.util.Map)|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+method:///java/lang/System/getProperty(java.lang.String)|",
+      "|java+method:///java/lang/Boolean/valueOf(boolean)|",
+      "|java+method:///java/lang/Integer/parseInt(java.lang.String)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+constructor:///org/apache/cassandra/config/Config/Config()|",
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/lang/Double/valueOf(double)|",
+      "|java+method:///java/lang/Long/valueOf(long)|"
+    ],
+    "affectedLib": "org.apache.cassandra:cassandra-all:3.5",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "info.archinnov:achilles-embedded:4.0.1",
+    "coordinatesV2": "info.archinnov:achilles-embedded:4.2.0",
+    "caller": "|java+method:///info/archinnov/achilles/script/ScriptExecutor/buildStatements(java.util.List)|",
+    "called": "|java+constructor:///com/datastax/driver/core/SimpleStatement/SimpleStatement(java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///com/datastax/driver/core/Session/newSimpleStatement(java.lang.String)|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///java/lang/String/startsWith(java.lang.String)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/String/trim()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/String/endsWith(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///java/lang/String/startsWith(java.lang.String)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///java/lang/String/matches(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/String/trim()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/String/endsWith(java.lang.String)|",
+      "|java+constructor:///com/datastax/driver/core/SimpleStatement/SimpleStatement(java.lang.String)|"
+    ],
+    "affectedLib": "com.datastax.cassandra:cassandra-driver-core:3.0.0",
+    "change": "UPDATED"
+  }
+]

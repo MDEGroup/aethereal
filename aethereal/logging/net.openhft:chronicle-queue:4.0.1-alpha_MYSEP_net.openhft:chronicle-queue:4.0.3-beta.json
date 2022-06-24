@@ -1,0 +1,98 @@
+[
+  {
+    "coordinatesV1": "net.openhft:chronicle-queue:4.0.1-alpha",
+    "coordinatesV2": "net.openhft:chronicle-queue:4.0.3-beta",
+    "caller": "|java+constructor:///net/openhft/chronicle/queue/impl/single/SingleChronicleQueueStore/SingleChronicleQueueStore()|",
+    "called": "|java+method:///net/openhft/chronicle/core/ReferenceCounter/onReleased(java.lang.Runnable)|",
+    "v1Body": [
+      "|java+constructor:///net/openhft/chronicle/queue/impl/single/SingleChronicleQueueStore/SingleChronicleQueueStore(net.openhft.chronicle.queue.RollCycle)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///net/openhft/chronicle/queue/impl/single/SingleChronicleQueueStore$Bounds/SingleChronicleQueueStore$Bounds(net.openhft.chronicle.queue.impl.single.SingleChronicleQueueStore)|",
+      "|java+method:///net/openhft/chronicle/core/ReferenceCounter/onReleased(java.lang.Runnable)|",
+      "|java+constructor:///net/openhft/chronicle/queue/impl/single/SingleChronicleQueueStore$Roll/SingleChronicleQueueStore$Roll(net.openhft.chronicle.queue.impl.single.SingleChronicleQueueStore,net.openhft.chronicle.queue.RollCycle,long)|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "net.openhft:chronicle-core:1.2.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "net.openhft:chronicle-queue:4.0.1-alpha",
+    "coordinatesV2": "net.openhft:chronicle-queue:4.0.3-beta",
+    "caller": "|java+method:///net/openhft/chronicle/queue/impl/single/SingleChronicleQueueStore/writeMarshallable(net.openhft.chronicle.wire.WireOut)|",
+    "called": "|java+method:///net/openhft/chronicle/wire/ValueOut/object(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///net/openhft/chronicle/wire/ValueOut/typedMarshallable(net.openhft.chronicle.wire.WriteMarshallable)|",
+      "|java+method:///net/openhft/chronicle/wire/WireOut/write(net.openhft.chronicle.wire.WireKey)|"
+    ],
+    "v2Body": [
+      "|java+method:///net/openhft/chronicle/wire/ValueOut/int64(long)|",
+      "|java+method:///net/openhft/chronicle/bytes/MappedFile/overlapSize()|",
+      "|java+method:///net/openhft/chronicle/wire/ValueOut/marshallable(net.openhft.chronicle.wire.WriteMarshallable)|",
+      "|java+method:///net/openhft/chronicle/bytes/MappedFile/chunkSize()|",
+      "|java+method:///net/openhft/chronicle/wire/ValueOut/object(java.lang.Object)|",
+      "|java+method:///net/openhft/chronicle/wire/WireOut/write(net.openhft.chronicle.wire.WireKey)|"
+    ],
+    "affectedLib": "net.openhft:chronicle-wire:1.2.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "net.openhft:chronicle-queue:4.0.1-alpha",
+    "coordinatesV2": "net.openhft:chronicle-queue:4.0.3-beta",
+    "caller": "|java+method:///net/openhft/chronicle/queue/impl/single/SingleChronicleQueueStore$Roll/readMarshallable(net.openhft.chronicle.wire.WireIn)|",
+    "called": "|java+method:///net/openhft/chronicle/wire/ValueIn/text(java.lang.Object,java.util.function.BiConsumer)|",
+    "v1Body": [
+      "|java+method:///net/openhft/chronicle/wire/ValueIn/text(java.lang.Object,java.util.function.BiConsumer)|",
+      "|java+method:///net/openhft/chronicle/wire/ValueIn/int64(net.openhft.chronicle.core.values.LongValue,java.lang.Object,java.util.function.BiConsumer)|",
+      "|java+method:///net/openhft/chronicle/wire/WireIn/read(net.openhft.chronicle.wire.WireKey)|",
+      "|java+method:///net/openhft/chronicle/wire/ValueIn/int32(java.lang.Object,java.util.function.ObjIntConsumer)|"
+    ],
+    "v2Body": [
+      "|java+method:///net/openhft/chronicle/wire/ValueIn/text(java.lang.Object,java.util.function.BiConsumer)|",
+      "|java+method:///net/openhft/chronicle/wire/ValueIn/int64(java.lang.Object,java.util.function.ObjLongConsumer)|",
+      "|java+method:///net/openhft/chronicle/wire/ValueIn/int64(net.openhft.chronicle.core.values.LongValue,java.lang.Object,java.util.function.BiConsumer)|",
+      "|java+method:///net/openhft/chronicle/wire/WireIn/read(net.openhft.chronicle.wire.WireKey)|",
+      "|java+method:///net/openhft/chronicle/wire/ValueIn/int32(java.lang.Object,java.util.function.ObjIntConsumer)|"
+    ],
+    "affectedLib": "net.openhft:chronicle-wire:1.2.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "net.openhft:chronicle-queue:4.0.1-alpha",
+    "coordinatesV2": "net.openhft:chronicle-queue:4.0.3-beta",
+    "caller": "|java+method:///net/openhft/chronicle/queue/impl/single/SingleChronicleQueueStore/readMarshallable(net.openhft.chronicle.wire.WireIn)|",
+    "called": "|java+method:///net/openhft/chronicle/wire/ValueIn/object(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///net/openhft/chronicle/wire/WireIn/read(net.openhft.chronicle.wire.WireKey)|",
+      "|java+method:///net/openhft/chronicle/wire/ValueIn/marshallable(net.openhft.chronicle.wire.ReadMarshallable)|"
+    ],
+    "v2Body": [
+      "|java+method:///net/openhft/chronicle/wire/WireIn/bytes()|",
+      "|java+constructor:///net/openhft/chronicle/queue/impl/single/SingleChronicleQueueStore$Indexing/SingleChronicleQueueStore$Indexing(net.openhft.chronicle.queue.impl.single.SingleChronicleQueueStore,net.openhft.chronicle.wire.WireType)|",
+      "|java+method:///net/openhft/chronicle/wire/WireIn/read(net.openhft.chronicle.wire.WireKey)|",
+      "|java+method:///net/openhft/chronicle/wire/ValueIn/marshallable(net.openhft.chronicle.wire.ReadMarshallable)|",
+      "|java+method:///net/openhft/chronicle/bytes/MappedBytes/mappedFile()|",
+      "|java+method:///net/openhft/chronicle/wire/ValueIn/int64()|",
+      "|java+method:///net/openhft/chronicle/wire/ValueIn/object(java.lang.Class)|"
+    ],
+    "affectedLib": "net.openhft:chronicle-wire:1.2.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "net.openhft:chronicle-queue:4.0.1-alpha",
+    "coordinatesV2": "net.openhft:chronicle-queue:4.0.3-beta",
+    "caller": "|java+method:///net/openhft/chronicle/queue/impl/single/SingleChronicleQueueBuilder/build()|",
+    "called": "|java+constructor:///net/openhft/chronicle/threads/EventGroup/EventGroup(boolean,java.util.function.Consumer)|",
+    "v1Body": [
+      "|java+method:///net/openhft/chronicle/queue/impl/single/SingleChronicleQueueBuilder/clone()|",
+      "|java+constructor:///net/openhft/chronicle/queue/impl/single/SingleChronicleQueue/SingleChronicleQueue(net.openhft.chronicle.queue.impl.single.SingleChronicleQueueBuilder)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///net/openhft/chronicle/threads/EventGroup/EventGroup(boolean,java.util.function.Consumer)|",
+      "|java+method:///net/openhft/chronicle/queue/impl/single/SingleChronicleQueueBuilder/clone()|",
+      "|java+constructor:///net/openhft/chronicle/queue/impl/single/SingleChronicleQueue/SingleChronicleQueue(net.openhft.chronicle.queue.impl.single.SingleChronicleQueueBuilder)|"
+    ],
+    "affectedLib": "net.openhft:chronicle-threads:1.2.0",
+    "change": "ADDED"
+  }
+]

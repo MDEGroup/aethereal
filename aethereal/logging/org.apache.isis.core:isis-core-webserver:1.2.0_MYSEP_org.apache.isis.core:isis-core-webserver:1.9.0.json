@@ -1,0 +1,151 @@
+[
+  {
+    "coordinatesV1": "org.apache.isis.core:isis-core-webserver:1.9.0",
+    "coordinatesV2": "org.apache.isis.core:isis-core-webserver:1.2.0",
+    "caller": "|java+initializer:///org/apache/isis/core/webserver/WebServerBootstrapper/WebServerBootstrapper$initializer|",
+    "called": "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "log4j:log4j:1.2.17",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.apache.isis.core:isis-core-webserver:1.9.0",
+    "coordinatesV2": "org.apache.isis.core:isis-core-webserver:1.2.0",
+    "caller": "|java+method:///org/apache/isis/core/webserver/WebServerBootstrapper/bootstrap(com.google.inject.Injector)|",
+    "called": "|java+method:///org/mortbay/jetty/Server/join()|",
+    "v1Body": [
+      "|java+method:///org/apache/isis/core/commons/config/IsisConfiguration/getInteger(java.lang.String,int)|",
+      "|java+method:///org/mortbay/jetty/Server/start()|",
+      "|java+method:///org/apache/log4j/Logger/info(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+constructor:///org/apache/isis/core/commons/exceptions/IsisException/IsisException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/apache/isis/core/webserver/WebServer$StartupMode/lookup(java.lang.String)|",
+      "|java+method:///org/mortbay/jetty/Server/setHandler(org.mortbay.jetty.Handler)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/apache/isis/core/commons/config/IsisConfigurationBuilder/getConfiguration()|",
+      "|java+method:///org/apache/isis/core/runtime/runner/IsisRunner/getStartupConfiguration()|",
+      "|java+method:///org/mortbay/jetty/Server/join()|",
+      "|java+method:///org/apache/isis/core/webserver/WebServerBootstrapper/copyConfigurationPrimersIntoServletContext(org.mortbay.jetty.webapp.WebAppContext)|",
+      "|java+constructor:///org/mortbay/jetty/Server/Server(int)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/isis/core/webserver/WebServer$StartupMode/isForeground()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/apache/isis/core/commons/config/IsisConfiguration/getString(java.lang.String,java.lang.String)|",
+      "|java+constructor:///org/mortbay/jetty/webapp/WebAppContext/WebAppContext(java.lang.String,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/eclipse/jetty/server/Server/stop()|",
+      "|java+method:///org/apache/isis/core/commons/config/IsisConfiguration/getInteger(java.lang.String,int)|",
+      "|java+method:///org/eclipse/jetty/server/Server/setHandler(org.eclipse.jetty.server.Handler)|",
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+constructor:///org/apache/isis/core/commons/exceptions/IsisException/IsisException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/apache/isis/core/webserver/WebServerBootstrapper/copyConfigurationPrimersIntoServletContext(org.eclipse.jetty.webapp.WebAppContext)|",
+      "|java+method:///java/io/InputStream/read()|",
+      "|java+method:///org/eclipse/jetty/server/Server/getConnectors()|",
+      "|java+method:///org/apache/isis/core/commons/config/IsisConfigurationBuilder/getConfiguration()|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///org/apache/isis/core/runtime/runner/IsisRunner/getStartupConfiguration()|",
+      "|java+constructor:///org/eclipse/jetty/server/Server/Server(int)|",
+      "|java+method:///org/apache/isis/core/commons/config/IsisConfiguration/getString(java.lang.String,java.lang.String)|",
+      "|java+method:///org/eclipse/jetty/server/Server/join()|",
+      "|java+method:///org/apache/isis/core/webserver/WebServer$StartupMode/isForeground()|",
+      "|java+method:///java/io/PrintStream/println(java.lang.String)|",
+      "|java+method:///org/apache/isis/core/webserver/WebServer$StartupMode/lookup(java.lang.String)|",
+      "|java+constructor:///org/eclipse/jetty/webapp/WebAppContext/WebAppContext(java.lang.String,java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String,java.lang.Object)|",
+      "|java+method:///java/lang/System/currentTimeMillis()|",
+      "|java+method:///org/eclipse/jetty/server/Server/start()|"
+    ],
+    "affectedLib": "org.mortbay.jetty:jetty:6.1.26",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.apache.isis.core:isis-core-webserver:1.2.0",
+    "coordinatesV2": "org.apache.isis.core:isis-core-webserver:1.9.0",
+    "caller": "|java+method:///org/apache/isis/core/webserver/WebServerBootstrapper/bootstrap(com.google.inject.Injector)|",
+    "called": "|java+method:///org/eclipse/jetty/server/Server/getConnectors()|",
+    "v1Body": [
+      "|java+method:///org/apache/isis/core/commons/config/IsisConfiguration/getInteger(java.lang.String,int)|",
+      "|java+method:///org/mortbay/jetty/Server/start()|",
+      "|java+method:///org/apache/log4j/Logger/info(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+constructor:///org/apache/isis/core/commons/exceptions/IsisException/IsisException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/apache/isis/core/webserver/WebServer$StartupMode/lookup(java.lang.String)|",
+      "|java+method:///org/mortbay/jetty/Server/setHandler(org.mortbay.jetty.Handler)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/apache/isis/core/commons/config/IsisConfigurationBuilder/getConfiguration()|",
+      "|java+method:///org/apache/isis/core/runtime/runner/IsisRunner/getStartupConfiguration()|",
+      "|java+method:///org/mortbay/jetty/Server/join()|",
+      "|java+method:///org/apache/isis/core/webserver/WebServerBootstrapper/copyConfigurationPrimersIntoServletContext(org.mortbay.jetty.webapp.WebAppContext)|",
+      "|java+constructor:///org/mortbay/jetty/Server/Server(int)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/isis/core/webserver/WebServer$StartupMode/isForeground()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/apache/isis/core/commons/config/IsisConfiguration/getString(java.lang.String,java.lang.String)|",
+      "|java+constructor:///org/mortbay/jetty/webapp/WebAppContext/WebAppContext(java.lang.String,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/eclipse/jetty/server/Server/stop()|",
+      "|java+method:///org/apache/isis/core/commons/config/IsisConfiguration/getInteger(java.lang.String,int)|",
+      "|java+method:///org/eclipse/jetty/server/Server/setHandler(org.eclipse.jetty.server.Handler)|",
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+constructor:///org/apache/isis/core/commons/exceptions/IsisException/IsisException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/apache/isis/core/webserver/WebServerBootstrapper/copyConfigurationPrimersIntoServletContext(org.eclipse.jetty.webapp.WebAppContext)|",
+      "|java+method:///java/io/InputStream/read()|",
+      "|java+method:///org/eclipse/jetty/server/Server/getConnectors()|",
+      "|java+method:///org/apache/isis/core/commons/config/IsisConfigurationBuilder/getConfiguration()|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///org/apache/isis/core/runtime/runner/IsisRunner/getStartupConfiguration()|",
+      "|java+constructor:///org/eclipse/jetty/server/Server/Server(int)|",
+      "|java+method:///org/apache/isis/core/commons/config/IsisConfiguration/getString(java.lang.String,java.lang.String)|",
+      "|java+method:///org/eclipse/jetty/server/Server/join()|",
+      "|java+method:///org/apache/isis/core/webserver/WebServer$StartupMode/isForeground()|",
+      "|java+method:///java/io/PrintStream/println(java.lang.String)|",
+      "|java+method:///org/apache/isis/core/webserver/WebServer$StartupMode/lookup(java.lang.String)|",
+      "|java+constructor:///org/eclipse/jetty/webapp/WebAppContext/WebAppContext(java.lang.String,java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String,java.lang.Object)|",
+      "|java+method:///java/lang/System/currentTimeMillis()|",
+      "|java+method:///org/eclipse/jetty/server/Server/start()|"
+    ],
+    "affectedLib": "org.eclipse.jetty.aggregate:jetty-all:9.2.11.v20150529",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.isis.core:isis-core-webserver:1.2.0",
+    "coordinatesV2": "org.apache.isis.core:isis-core-webserver:1.9.0",
+    "caller": "|java+initializer:///org/apache/isis/core/webserver/WebServerBootstrapper/WebServerBootstrapper$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.10",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.isis.core:isis-core-webserver:1.2.0",
+    "coordinatesV2": "org.apache.isis.core:isis-core-webserver:1.9.0",
+    "caller": "|java+method:///org/apache/isis/core/webserver/WebServer/addOptionHandlersAndValidators(org.apache.isis.core.runtime.runner.IsisRunner)|",
+    "called": "|java+method:///org/apache/isis/core/runtime/runner/IsisRunner/addOptionHandler(org.apache.isis.core.runtime.optionhandler.OptionHandler)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/isis/core/webserver/internal/OptionHandlerResourceBase/OptionHandlerResourceBase()|",
+      "|java+constructor:///org/apache/isis/core/webserver/internal/OptionHandlerPort/OptionHandlerPort()|",
+      "|java+constructor:///org/apache/isis/core/webserver/internal/OptionHandlerAddress/OptionHandlerAddress()|",
+      "|java+method:///org/apache/isis/core/runtime/runner/IsisRunner/addOptionHandler(org.apache.isis.core.runtime.optionhandler.OptionHandler)|",
+      "|java+constructor:///org/apache/isis/core/webserver/internal/OptionHandlerStartupMode/OptionHandlerStartupMode()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/isis/core/runtime/runner/IsisRunner/addOptionHandler(org.apache.isis.core.runtime.optionhandler.OptionHandler)|",
+      "|java+constructor:///org/apache/isis/core/webserver/internal/OptionHandlerPort/OptionHandlerPort()|"
+    ],
+    "affectedLib": "org.apache.isis.core:isis-core-runtime:1.9.0",
+    "change": "UPDATED"
+  }
+]

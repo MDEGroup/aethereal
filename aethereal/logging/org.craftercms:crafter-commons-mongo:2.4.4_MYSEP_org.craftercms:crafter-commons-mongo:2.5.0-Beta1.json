@@ -1,0 +1,51 @@
+[
+  {
+    "coordinatesV1": "org.craftercms:crafter-commons-mongo:2.4.4",
+    "coordinatesV2": "org.craftercms:crafter-commons-mongo:2.5.0-Beta1",
+    "caller": "|java+constructor:///org/craftercms/commons/mongo/JongoQueries/JongoQueries()|",
+    "called": "|java+constructor:///org/craftercms/commons/properties/OverrideProperties/OverrideProperties()|",
+    "v1Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+constructor:///java/util/Properties/Properties()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/craftercms/commons/properties/OverrideProperties/OverrideProperties()|"
+    ],
+    "affectedLib": "org.craftercms:crafter-commons-utilities:2.5.0-Beta1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.craftercms:crafter-commons-mongo:2.4.4",
+    "coordinatesV2": "org.craftercms:crafter-commons-mongo:2.5.0-Beta1",
+    "caller": "|java+method:///org/craftercms/commons/mongo/JongoFactoryBean/createInstance()|",
+    "called": "|java+method:///org/craftercms/commons/jackson/JacksonUtils/createModule(java.util.List,java.util.Map)|",
+    "v1Body": [
+      "|java+constructor:///org/craftercms/commons/mongo/MongoDataException/MongoDataException(java.lang.String)|",
+      "|java+method:///org/apache/commons/lang3/StringUtils/isBlank(java.lang.CharSequence)|",
+      "|java+constructor:///org/jongo/Jongo/Jongo(com.mongodb.DB)|",
+      "|java+method:///org/craftercms/commons/mongo/JongoFactoryBean/createInstance()|",
+      "|java+method:///java/lang/String/toCharArray()|",
+      "|java+method:///com/mongodb/MongoClient/getDB(java.lang.String)|",
+      "|java+method:///com/mongodb/DB/authenticate(java.lang.String,char%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/craftercms/commons/mongo/MongoDataException/MongoDataException(java.lang.String)|",
+      "|java+method:///com/mongodb/Mongo/getDB(java.lang.String)|",
+      "|java+method:///org/craftercms/commons/mongo/JongoFactoryBean/createInstance()|",
+      "|java+method:///org/jongo/marshall/jackson/JacksonMapper$Builder/enable(com.fasterxml.jackson.databind.DeserializationFeature)|",
+      "|java+method:///org/apache/commons/collections4/CollectionUtils/isNotEmpty(java.util.Collection)|",
+      "|java+constructor:///org/jongo/marshall/jackson/JacksonMapper$Builder/JacksonMapper$Builder()|",
+      "|java+method:///org/apache/commons/lang3/StringUtils/isBlank(java.lang.CharSequence)|",
+      "|java+method:///org/apache/commons/collections4/MapUtils/isNotEmpty(java.util.Map)|",
+      "|java+method:///com/mongodb/DB/authenticate(java.lang.String,char%5B%5D)|",
+      "|java+method:///org/jongo/marshall/jackson/JacksonMapper$Builder/build()|",
+      "|java+method:///org/jongo/marshall/jackson/JacksonMapper$Builder/registerModule(com.fasterxml.jackson.databind.Module)|",
+      "|java+method:///java/lang/String/toCharArray()|",
+      "|java+method:///org/craftercms/commons/jackson/JacksonUtils/createModule(java.util.List,java.util.Map)|",
+      "|java+constructor:///org/jongo/Jongo/Jongo(com.mongodb.DB,org.jongo.Mapper)|"
+    ],
+    "affectedLib": "org.craftercms:crafter-commons-utilities:2.5.0-Beta1",
+    "change": "ADDED"
+  }
+]

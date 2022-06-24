@@ -1,0 +1,115 @@
+[
+  {
+    "coordinatesV1": "com.elastisys.scale:commons.logreplayer:2.2.0",
+    "coordinatesV2": "com.elastisys.scale:commons.logreplayer:2.1.0",
+    "caller": "|java+method:///com/elastisys/scale/commons/logreplayer/BurstingApacheLogReplayer/createHttpClient()|",
+    "called": "|java+method:///org/apache/http/impl/nio/client/HttpAsyncClientBuilder/build()|",
+    "v1Body": [
+      "|java+method:///org/apache/http/impl/nio/client/HttpAsyncClientBuilder/build()|",
+      "|java+method:///org/apache/http/impl/nio/client/HttpAsyncClientBuilder/setConnectionReuseStrategy(org.apache.http.ConnectionReuseStrategy)|",
+      "|java+constructor:///org/apache/http/impl/NoConnectionReuseStrategy/NoConnectionReuseStrategy()|",
+      "|java+method:///org/apache/http/impl/nio/client/CloseableHttpAsyncClient/start()|",
+      "|java+method:///org/apache/http/client/config/RequestConfig$Builder/build()|",
+      "|java+method:///org/apache/http/client/config/RequestConfig$Builder/setSocketTimeout(int)|",
+      "|java+method:///org/apache/http/impl/nio/client/HttpAsyncClients/custom()|",
+      "|java+method:///org/apache/http/client/config/RequestConfig/custom()|",
+      "|java+method:///org/apache/http/client/config/RequestConfig$Builder/setConnectTimeout(int)|",
+      "|java+method:///org/apache/http/client/config/RequestConfig$Builder/setConnectionRequestTimeout(int)|",
+      "|java+method:///org/apache/http/impl/nio/client/HttpAsyncClientBuilder/setDefaultRequestConfig(org.apache.http.client.config.RequestConfig)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/ning/http/client/AsyncHttpClientConfig$Builder/setAcceptAnyCertificate(boolean)|",
+      "|java+method:///com/ning/http/client/AsyncHttpClientConfig$Builder/setReadTimeout(int)|",
+      "|java+method:///com/ning/http/client/AsyncHttpClientConfig$Builder/setConnectTimeout(int)|",
+      "|java+method:///com/ning/http/client/AsyncHttpClientConfig$Builder/build()|",
+      "|java+constructor:///com/ning/http/client/AsyncHttpClientConfig$Builder/AsyncHttpClientConfig$Builder()|",
+      "|java+constructor:///com/ning/http/client/AsyncHttpClient/AsyncHttpClient(com.ning.http.client.AsyncHttpClientConfig)|"
+    ],
+    "affectedLib": "org.apache.httpcomponents:httpasyncclient:4.0.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.elastisys.scale:commons.logreplayer:2.1.0",
+    "coordinatesV2": "com.elastisys.scale:commons.logreplayer:2.2.0",
+    "caller": "|java+method:///com/elastisys/scale/commons/logreplayer/BurstingApacheLogReplayer/createHttpClient()|",
+    "called": "|java+constructor:///com/ning/http/client/AsyncHttpClientConfig$Builder/AsyncHttpClientConfig$Builder()|",
+    "v1Body": [
+      "|java+method:///org/apache/http/impl/nio/client/HttpAsyncClientBuilder/build()|",
+      "|java+method:///org/apache/http/impl/nio/client/HttpAsyncClientBuilder/setConnectionReuseStrategy(org.apache.http.ConnectionReuseStrategy)|",
+      "|java+constructor:///org/apache/http/impl/NoConnectionReuseStrategy/NoConnectionReuseStrategy()|",
+      "|java+method:///org/apache/http/impl/nio/client/CloseableHttpAsyncClient/start()|",
+      "|java+method:///org/apache/http/client/config/RequestConfig$Builder/build()|",
+      "|java+method:///org/apache/http/client/config/RequestConfig$Builder/setSocketTimeout(int)|",
+      "|java+method:///org/apache/http/impl/nio/client/HttpAsyncClients/custom()|",
+      "|java+method:///org/apache/http/client/config/RequestConfig/custom()|",
+      "|java+method:///org/apache/http/client/config/RequestConfig$Builder/setConnectTimeout(int)|",
+      "|java+method:///org/apache/http/client/config/RequestConfig$Builder/setConnectionRequestTimeout(int)|",
+      "|java+method:///org/apache/http/impl/nio/client/HttpAsyncClientBuilder/setDefaultRequestConfig(org.apache.http.client.config.RequestConfig)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/ning/http/client/AsyncHttpClientConfig$Builder/setAcceptAnyCertificate(boolean)|",
+      "|java+method:///com/ning/http/client/AsyncHttpClientConfig$Builder/setReadTimeout(int)|",
+      "|java+method:///com/ning/http/client/AsyncHttpClientConfig$Builder/setConnectTimeout(int)|",
+      "|java+method:///com/ning/http/client/AsyncHttpClientConfig$Builder/build()|",
+      "|java+constructor:///com/ning/http/client/AsyncHttpClientConfig$Builder/AsyncHttpClientConfig$Builder()|",
+      "|java+constructor:///com/ning/http/client/AsyncHttpClient/AsyncHttpClient(com.ning.http.client.AsyncHttpClientConfig)|"
+    ],
+    "affectedLib": "com.ning:async-http-client:1.9.31",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.elastisys.scale:commons.logreplayer:2.1.0",
+    "coordinatesV2": "com.elastisys.scale:commons.logreplayer:2.2.0",
+    "caller": "|java+method:///com/elastisys/scale/commons/logreplayer/BurstingApacheLogReplayer/run()|",
+    "called": "|java+method:///com/ning/http/client/AsyncHttpClient/close()|",
+    "v1Body": [
+      "|java+method:///com/elastisys/scale/commons/logreplayer/BurstingApacheLogReplayer/replayLog(org.apache.http.nio.client.HttpAsyncClient)|",
+      "|java+method:///java/lang/Throwable/addSuppressed(java.lang.Throwable)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///com/elastisys/scale/commons/logreplayer/BurstingApacheLogReplayer/createHttpClient()|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/apache/http/impl/nio/client/CloseableHttpAsyncClient/close()|",
+      "|java+method:///java/lang/Exception/getMessage()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/ning/http/client/AsyncHttpClient/close()|",
+      "|java+method:///com/elastisys/scale/commons/logreplayer/BurstingApacheLogReplayer/replayLog(com.ning.http.client.AsyncHttpClient)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///com/elastisys/scale/commons/logreplayer/BurstingApacheLogReplayer/createHttpClient()|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///java/lang/Exception/getMessage()|"
+    ],
+    "affectedLib": "com.ning:async-http-client:1.9.31",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.elastisys.scale:commons.logreplayer:2.1.0",
+    "coordinatesV2": "com.elastisys.scale:commons.logreplayer:2.2.0",
+    "caller": "|java+method:///com/elastisys/scale/commons/util/file/FileUtils/deleteRecursively(java.io.File)|",
+    "called": "|java+method:///com/elastisys/scale/commons/util/file/FileUtils/deleteRecursively(java.io.File)|",
+    "v1Body": [
+      "|java+constructor:///java/io/IOException/IOException(java.lang.String)|",
+      "|java+method:///java/io/File/isDirectory()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///com/elastisys/scale/commons/util/file/FileUtils/deleteRecursively(java.io.File)|",
+      "|java+method:///java/io/File/exists()|",
+      "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean,java.lang.Object)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/io/File/getAbsolutePath()|",
+      "|java+method:///java/io/File/listFiles()|",
+      "|java+method:///java/io/File/delete()|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/io/File/isDirectory()|",
+      "|java+method:///com/elastisys/scale/commons/util/file/FileUtils/deleteRecursively(java.io.File)|",
+      "|java+method:///java/io/File/exists()|",
+      "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean,java.lang.Object)|",
+      "|java+method:///java/io/File/toPath()|",
+      "|java+method:///java/nio/file/Files/delete(java.nio.file.Path)|",
+      "|java+method:///java/io/File/listFiles()|"
+    ],
+    "affectedLib": "com.elastisys.scale:commons.util:2.2.0",
+    "change": "UPDATED"
+  }
+]

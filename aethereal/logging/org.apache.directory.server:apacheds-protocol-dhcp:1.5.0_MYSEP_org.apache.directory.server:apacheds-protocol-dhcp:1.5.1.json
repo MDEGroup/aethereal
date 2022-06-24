@@ -1,0 +1,104 @@
+[
+  {
+    "coordinatesV1": "org.apache.directory.server:apacheds-protocol-dhcp:1.5.0",
+    "coordinatesV2": "org.apache.directory.server:apacheds-protocol-dhcp:1.5.1",
+    "caller": "|java+method:///org/apache/directory/server/dhcp/protocol/DhcpProtocolHandler/sessionCreated(org.apache.mina.common.IoSession)|",
+    "called": "|java+constructor:///org/apache/mina/filter/codec/ProtocolCodecFilter/ProtocolCodecFilter(org.apache.mina.filter.codec.ProtocolCodecFactory)|",
+    "v1Body": [
+      "|java+method:///org/apache/mina/common/IoFilterChain/addFirst(java.lang.String,org.apache.mina.common.IoFilter)|",
+      "|java+constructor:///org/apache/directory/server/dhcp/protocol/DhcpProtocolCodecFactory/DhcpProtocolCodecFactory()|",
+      "|java+constructor:///org/apache/mina/filter/codec/ProtocolCodecFilter/ProtocolCodecFilter(org.apache.mina.filter.codec.ProtocolCodecFactory)|",
+      "|java+method:///org/apache/mina/common/IoSession/getRemoteAddress()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/io/PrintStream/println(java.lang.String)|",
+      "|java+method:///org/apache/mina/common/IoSession/getFilterChain()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/mina/common/IoFilterChain/addFirst(java.lang.String,org.apache.mina.common.IoFilter)|",
+      "|java+constructor:///org/apache/directory/server/dhcp/protocol/DhcpProtocolCodecFactory/DhcpProtocolCodecFactory()|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/apache/mina/common/IoSession/getFilterChain()|",
+      "|java+constructor:///org/apache/mina/filter/codec/ProtocolCodecFilter/ProtocolCodecFilter(org.apache.mina.filter.codec.ProtocolCodecFactory)|",
+      "|java+method:///org/apache/mina/common/IoSession/getRemoteAddress()|"
+    ],
+    "affectedLib": "org.apache.mina:mina-core:1.1.2",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.directory.server:apacheds-protocol-dhcp:1.5.0",
+    "coordinatesV2": "org.apache.directory.server:apacheds-protocol-dhcp:1.5.1",
+    "caller": "|java+method:///org/apache/directory/server/dhcp/protocol/DhcpProtocolHandler/messageReceived(org.apache.mina.common.IoSession,java.lang.Object)|",
+    "called": "|java+constructor:///org/apache/mina/transport/socket/nio/DatagramConnector/DatagramConnector()|",
+    "v1Body": [
+      "|java+method:///org/apache/mina/common/ConnectFuture/join()|",
+      "|java+constructor:///org/apache/mina/transport/socket/nio/DatagramConnector/DatagramConnector()|",
+      "|java+constructor:///java/net/InetSocketAddress/InetSocketAddress(java.net.InetAddress,int)|",
+      "|java+constructor:///org/apache/directory/server/dhcp/protocol/DhcpProtocolHandler/DhcpProtocolHandler()|",
+      "|java+method:///org/apache/directory/server/dhcp/messages/DhcpMessage/getOpCode()|",
+      "|java+method:///org/apache/directory/server/dhcp/DhcpService/getReplyFor(org.apache.directory.server.dhcp.messages.DhcpMessage)|",
+      "|java+method:///org/apache/mina/common/IoConnector/connect(java.net.SocketAddress,org.apache.mina.common.IoHandler)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///org/apache/directory/server/dhcp/service/DhcpServiceImpl/DhcpServiceImpl()|",
+      "|java+method:///org/apache/mina/common/ConnectFuture/getSession()|",
+      "|java+method:///org/apache/mina/common/IoSession/close()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/io/PrintStream/println(java.lang.String)|",
+      "|java+method:///org/apache/mina/common/IoSession/getRemoteAddress()|",
+      "|java+method:///org/apache/mina/common/IoSession/write(java.lang.Object)|",
+      "|java+method:///org/apache/mina/common/WriteFuture/join()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/net/InetAddress/getByName(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/apache/mina/common/ConnectFuture/join()|",
+      "|java+constructor:///org/apache/mina/transport/socket/nio/DatagramConnector/DatagramConnector()|",
+      "|java+constructor:///java/net/InetSocketAddress/InetSocketAddress(java.net.InetAddress,int)|",
+      "|java+constructor:///org/apache/directory/server/dhcp/protocol/DhcpProtocolHandler/DhcpProtocolHandler()|",
+      "|java+method:///org/apache/directory/server/dhcp/messages/DhcpMessage/getOpCode()|",
+      "|java+method:///org/apache/directory/server/dhcp/DhcpService/getReplyFor(org.apache.directory.server.dhcp.messages.DhcpMessage)|",
+      "|java+method:///org/apache/mina/common/IoConnector/connect(java.net.SocketAddress,org.apache.mina.common.IoHandler)|",
+      "|java+constructor:///org/apache/directory/server/dhcp/service/DhcpServiceImpl/DhcpServiceImpl()|",
+      "|java+method:///org/apache/mina/common/ConnectFuture/getSession()|",
+      "|java+method:///org/apache/mina/common/IoSession/close()|",
+      "|java+method:///java/net/InetAddress/getByName(java.lang.String)|",
+      "|java+method:///org/apache/mina/common/IoSession/getRemoteAddress()|",
+      "|java+method:///org/apache/mina/common/IoSession/write(java.lang.Object)|",
+      "|java+method:///org/apache/mina/common/WriteFuture/join()|"
+    ],
+    "affectedLib": "org.apache.mina:mina-core:1.1.2",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.directory.server:apacheds-protocol-dhcp:1.5.0",
+    "coordinatesV2": "org.apache.directory.server:apacheds-protocol-dhcp:1.5.1",
+    "caller": "|java+constructor:///org/apache/directory/server/dhcp/protocol/DhcpEncoder/DhcpEncoder()|",
+    "called": "|java+constructor:///org/apache/mina/filter/codec/ProtocolEncoderAdapter/ProtocolEncoderAdapter()|",
+    "v1Body": [
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/mina/filter/codec/ProtocolEncoderAdapter/ProtocolEncoderAdapter()|"
+    ],
+    "affectedLib": "org.apache.mina:mina-core:1.1.2",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.directory.server:apacheds-protocol-dhcp:1.5.0",
+    "coordinatesV2": "org.apache.directory.server:apacheds-protocol-dhcp:1.5.1",
+    "caller": "|java+constructor:///org/apache/directory/server/dhcp/protocol/DhcpDecoder/DhcpDecoder()|",
+    "called": "|java+constructor:///org/apache/mina/filter/codec/ProtocolDecoderAdapter/ProtocolDecoderAdapter()|",
+    "v1Body": [
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/mina/filter/codec/ProtocolDecoderAdapter/ProtocolDecoderAdapter()|"
+    ],
+    "affectedLib": "org.apache.mina:mina-core:1.1.2",
+    "change": "UPDATED"
+  }
+]

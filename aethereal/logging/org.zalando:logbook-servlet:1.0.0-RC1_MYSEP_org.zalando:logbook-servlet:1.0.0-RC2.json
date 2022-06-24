@@ -1,0 +1,242 @@
+[
+  {
+    "coordinatesV1": "org.zalando:logbook-servlet:1.0.0-RC2",
+    "coordinatesV2": "org.zalando:logbook-servlet:1.0.0-RC1",
+    "caller": "|java+method:///org/zalando/logbook/servlet/HttpFilter/doFilter(javax.servlet.ServletRequest,javax.servlet.ServletResponse,javax.servlet.FilterChain)|",
+    "called": "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean,java.lang.String,java.lang.Object%5B%5D)|",
+    "v1Body": [
+      "|java+method:///java/lang/Class/getSimpleName()|",
+      "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///org/zalando/logbook/servlet/HttpFilter/doFilter(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,javax.servlet.FilterChain)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Class/getSimpleName()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///org/zalando/logbook/servlet/HttpFilter/doFilter(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,javax.servlet.FilterChain)|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "affectedLib": "com.google.guava:guava:18.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.zalando:logbook-servlet:1.0.0-RC2",
+    "coordinatesV2": "org.zalando:logbook-servlet:1.0.0-RC1",
+    "caller": "|java+method:///org/zalando/logbook/servlet/LocalResponse/getHeaders()|",
+    "called": "|java+method:///com/google/common/collect/Multimaps/unmodifiableListMultimap(com.google.common.collect.ListMultimap)|",
+    "v1Body": [
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/zalando/logbook/servlet/LocalResponse/getHeaderNames()|",
+      "|java+method:///com/google/common/collect/ListMultimap/putAll(java.lang.Object,java.lang.Iterable)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/zalando/logbook/servlet/LocalResponse/getHeaders(java.lang.String)|",
+      "|java+method:///org/zalando/logbook/BaseHttpMessage$Headers/create()|",
+      "|java+method:///com/google/common/collect/Multimaps/unmodifiableListMultimap(com.google.common.collect.ListMultimap)|",
+      "|java+method:///java/util/Collection/iterator()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/zalando/logbook/BaseHttpMessage$HeadersBuilder/build()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/zalando/logbook/servlet/LocalResponse/getHeaderNames()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/zalando/logbook/servlet/LocalResponse/getHeaders(java.lang.String)|",
+      "|java+constructor:///org/zalando/logbook/BaseHttpMessage$HeadersBuilder/BaseHttpMessage$HeadersBuilder()|",
+      "|java+method:///org/zalando/logbook/BaseHttpMessage$HeadersBuilder/put(java.lang.String,java.lang.Iterable)|",
+      "|java+method:///java/util/Collection/iterator()|"
+    ],
+    "affectedLib": "com.google.guava:guava:18.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.zalando:logbook-servlet:1.0.0-RC2",
+    "coordinatesV2": "org.zalando:logbook-servlet:1.0.0-RC1",
+    "caller": "|java+constructor:///org/zalando/logbook/servlet/RemoteRequest/RemoteRequest(javax.servlet.http.HttpServletRequest)|",
+    "called": "|java+method:///com/google/common/io/ByteStreams/newDataOutput()|",
+    "v1Body": [
+      "|java+constructor:///javax/servlet/http/HttpServletRequestWrapper/HttpServletRequestWrapper(javax.servlet.http.HttpServletRequest)|",
+      "|java+method:///com/google/common/io/ByteStreams/newDataOutput()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///javax/servlet/http/HttpServletRequestWrapper/HttpServletRequestWrapper(javax.servlet.http.HttpServletRequest)|"
+    ],
+    "affectedLib": "com.google.guava:guava:18.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.zalando:logbook-servlet:1.0.0-RC2",
+    "coordinatesV2": "org.zalando:logbook-servlet:1.0.0-RC1",
+    "caller": "|java+method:///org/zalando/logbook/servlet/RemoteRequest/getHeaders()|",
+    "called": "|java+method:///com/google/common/collect/Iterators/addAll(java.util.Collection,java.util.Iterator)|",
+    "v1Body": [
+      "|java+method:///com/google/common/collect/UnmodifiableIterator/hasNext()|",
+      "|java+method:///com/google/common/collect/Iterators/addAll(java.util.Collection,java.util.Iterator)|",
+      "|java+method:///org/zalando/logbook/servlet/RemoteRequest/getHeaderNames()|",
+      "|java+method:///com/google/common/collect/ListMultimap/get(java.lang.Object)|",
+      "|java+method:///com/google/common/collect/UnmodifiableIterator/next()|",
+      "|java+method:///com/google/common/collect/Multimaps/unmodifiableListMultimap(com.google.common.collect.ListMultimap)|",
+      "|java+method:///com/google/common/collect/Iterators/forEnumeration(java.util.Enumeration)|",
+      "|java+method:///org/zalando/logbook/servlet/RemoteRequest/getHeaders(java.lang.String)|",
+      "|java+method:///org/zalando/logbook/BaseHttpMessage$Headers/create()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/zalando/logbook/BaseHttpMessage$HeadersBuilder/build()|",
+      "|java+method:///java/util/Collections/list(java.util.Enumeration)|",
+      "|java+method:///org/zalando/logbook/servlet/RemoteRequest/getHeaderNames()|",
+      "|java+constructor:///org/zalando/logbook/BaseHttpMessage$HeadersBuilder/BaseHttpMessage$HeadersBuilder()|",
+      "|java+method:///org/zalando/logbook/servlet/RemoteRequest/getHeaders(java.lang.String)|",
+      "|java+method:///org/zalando/logbook/BaseHttpMessage$HeadersBuilder/put(java.lang.String,java.lang.Iterable)|",
+      "|java+method:///java/util/Enumeration/hasMoreElements()|",
+      "|java+method:///java/util/Enumeration/nextElement()|"
+    ],
+    "affectedLib": "com.google.guava:guava:18.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.zalando:logbook-servlet:1.0.0-RC2",
+    "coordinatesV2": "org.zalando:logbook-servlet:1.0.0-RC1",
+    "caller": "|java+method:///org/zalando/logbook/servlet/RemoteRequest/getQuery()|",
+    "called": "|java+method:///com/google/common/base/MoreObjects/firstNonNull(java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///com/google/common/base/MoreObjects/firstNonNull(java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/zalando/logbook/servlet/RemoteRequest/getQueryString()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/zalando/logbook/servlet/RemoteRequest/getQueryString()|",
+      "|java+method:///java/util/Optional/ofNullable(java.lang.Object)|",
+      "|java+method:///java/util/Optional/orElse(java.lang.Object)|"
+    ],
+    "affectedLib": "com.google.guava:guava:18.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.zalando:logbook-servlet:1.0.0-RC2",
+    "coordinatesV2": "org.zalando:logbook-servlet:1.0.0-RC1",
+    "caller": "|java+method:///org/zalando/logbook/servlet/RemoteRequest/withBody()|",
+    "called": "|java+method:///com/google/common/io/ByteStreams/toByteArray(java.io.InputStream)|",
+    "v1Body": [
+      "|java+method:///com/google/common/io/ByteArrayDataOutput/write(byte%5B%5D)|",
+      "|java+method:///com/google/common/io/ByteStreams/toByteArray(java.io.InputStream)|",
+      "|java+method:///org/zalando/logbook/servlet/RemoteRequest/getInputStream()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/zalando/logbook/servlet/ByteStreams/toByteArray(java.io.InputStream)|",
+      "|java+method:///org/zalando/logbook/servlet/RemoteRequest/getInputStream()|"
+    ],
+    "affectedLib": "com.google.guava:guava:18.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.zalando:logbook-servlet:1.0.0-RC2",
+    "coordinatesV2": "org.zalando:logbook-servlet:1.0.0-RC1",
+    "caller": "|java+constructor:///org/zalando/logbook/servlet/LocalResponse/LocalResponse(javax.servlet.http.HttpServletResponse,java.lang.String)|",
+    "called": "|java+method:///com/google/common/io/ByteStreams/newDataOutput()|",
+    "v1Body": [
+      "|java+constructor:///org/zalando/logbook/servlet/LocalResponse$TeePrintWriter/LocalResponse$TeePrintWriter(org.zalando.logbook.servlet.LocalResponse)|",
+      "|java+constructor:///javax/servlet/http/HttpServletResponseWrapper/HttpServletResponseWrapper(javax.servlet.http.HttpServletResponse)|",
+      "|java+method:///com/google/common/io/ByteStreams/newDataOutput()|",
+      "|java+constructor:///org/zalando/logbook/servlet/LocalResponse$TeeServletOutputStream/LocalResponse$TeeServletOutputStream(org.zalando.logbook.servlet.LocalResponse,org.zalando.logbook.servlet.LocalResponse$1)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/zalando/logbook/servlet/LocalResponse$TeePrintWriter/LocalResponse$TeePrintWriter(org.zalando.logbook.servlet.LocalResponse)|",
+      "|java+constructor:///javax/servlet/http/HttpServletResponseWrapper/HttpServletResponseWrapper(javax.servlet.http.HttpServletResponse)|",
+      "|java+constructor:///org/zalando/logbook/servlet/LocalResponse$TeeServletOutputStream/LocalResponse$TeeServletOutputStream(org.zalando.logbook.servlet.LocalResponse,org.zalando.logbook.servlet.LocalResponse$1)|",
+      "|java+constructor:///java/io/ByteArrayOutputStream/ByteArrayOutputStream()|"
+    ],
+    "affectedLib": "com.google.guava:guava:18.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.zalando:logbook-servlet:1.0.0-RC2",
+    "coordinatesV2": "org.zalando:logbook-servlet:1.0.0-RC1",
+    "caller": "|java+method:///org/zalando/logbook/servlet/LocalResponse/getContentType()|",
+    "called": "|java+method:///com/google/common/base/MoreObjects/firstNonNull(java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///com/google/common/base/MoreObjects/firstNonNull(java.lang.Object,java.lang.Object)|",
+      "|java+method:///javax/servlet/http/HttpServletResponseWrapper/getContentType()|"
+    ],
+    "v2Body": [
+      "|java+method:///javax/servlet/http/HttpServletResponseWrapper/getContentType()|",
+      "|java+method:///java/util/Optional/ofNullable(java.lang.Object)|",
+      "|java+method:///java/util/Optional/orElse(java.lang.Object)|"
+    ],
+    "affectedLib": "com.google.guava:guava:18.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.zalando:logbook-servlet:1.0.0-RC2",
+    "coordinatesV2": "org.zalando:logbook-servlet:1.0.0-RC1",
+    "caller": "|java+method:///org/zalando/logbook/servlet/RemoteRequest/getContentType()|",
+    "called": "|java+method:///com/google/common/base/MoreObjects/firstNonNull(java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///com/google/common/base/MoreObjects/firstNonNull(java.lang.Object,java.lang.Object)|",
+      "|java+method:///javax/servlet/http/HttpServletRequestWrapper/getContentType()|"
+    ],
+    "v2Body": [
+      "|java+method:///javax/servlet/http/HttpServletRequestWrapper/getContentType()|",
+      "|java+method:///java/util/Optional/ofNullable(java.lang.Object)|",
+      "|java+method:///java/util/Optional/orElse(java.lang.Object)|"
+    ],
+    "affectedLib": "com.google.guava:guava:18.0",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.zalando:logbook-servlet:1.0.0-RC1",
+    "coordinatesV2": "org.zalando:logbook-servlet:1.0.0-RC2",
+    "caller": "|java+method:///org/zalando/logbook/servlet/LocalResponse/getHeaders()|",
+    "called": "|java+constructor:///org/zalando/logbook/BaseHttpMessage$HeadersBuilder/BaseHttpMessage$HeadersBuilder()|",
+    "v1Body": [
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/zalando/logbook/servlet/LocalResponse/getHeaderNames()|",
+      "|java+method:///com/google/common/collect/ListMultimap/putAll(java.lang.Object,java.lang.Iterable)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/zalando/logbook/servlet/LocalResponse/getHeaders(java.lang.String)|",
+      "|java+method:///org/zalando/logbook/BaseHttpMessage$Headers/create()|",
+      "|java+method:///com/google/common/collect/Multimaps/unmodifiableListMultimap(com.google.common.collect.ListMultimap)|",
+      "|java+method:///java/util/Collection/iterator()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/zalando/logbook/BaseHttpMessage$HeadersBuilder/build()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/zalando/logbook/servlet/LocalResponse/getHeaderNames()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/zalando/logbook/servlet/LocalResponse/getHeaders(java.lang.String)|",
+      "|java+constructor:///org/zalando/logbook/BaseHttpMessage$HeadersBuilder/BaseHttpMessage$HeadersBuilder()|",
+      "|java+method:///org/zalando/logbook/BaseHttpMessage$HeadersBuilder/put(java.lang.String,java.lang.Iterable)|",
+      "|java+method:///java/util/Collection/iterator()|"
+    ],
+    "affectedLib": "org.zalando:logbook-api:1.0.0-RC2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.zalando:logbook-servlet:1.0.0-RC1",
+    "coordinatesV2": "org.zalando:logbook-servlet:1.0.0-RC2",
+    "caller": "|java+method:///org/zalando/logbook/servlet/RemoteRequest/getHeaders()|",
+    "called": "|java+constructor:///org/zalando/logbook/BaseHttpMessage$HeadersBuilder/BaseHttpMessage$HeadersBuilder()|",
+    "v1Body": [
+      "|java+method:///com/google/common/collect/UnmodifiableIterator/hasNext()|",
+      "|java+method:///com/google/common/collect/Iterators/addAll(java.util.Collection,java.util.Iterator)|",
+      "|java+method:///org/zalando/logbook/servlet/RemoteRequest/getHeaderNames()|",
+      "|java+method:///com/google/common/collect/ListMultimap/get(java.lang.Object)|",
+      "|java+method:///com/google/common/collect/UnmodifiableIterator/next()|",
+      "|java+method:///com/google/common/collect/Multimaps/unmodifiableListMultimap(com.google.common.collect.ListMultimap)|",
+      "|java+method:///com/google/common/collect/Iterators/forEnumeration(java.util.Enumeration)|",
+      "|java+method:///org/zalando/logbook/servlet/RemoteRequest/getHeaders(java.lang.String)|",
+      "|java+method:///org/zalando/logbook/BaseHttpMessage$Headers/create()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/zalando/logbook/BaseHttpMessage$HeadersBuilder/build()|",
+      "|java+method:///java/util/Collections/list(java.util.Enumeration)|",
+      "|java+method:///org/zalando/logbook/servlet/RemoteRequest/getHeaderNames()|",
+      "|java+constructor:///org/zalando/logbook/BaseHttpMessage$HeadersBuilder/BaseHttpMessage$HeadersBuilder()|",
+      "|java+method:///org/zalando/logbook/servlet/RemoteRequest/getHeaders(java.lang.String)|",
+      "|java+method:///org/zalando/logbook/BaseHttpMessage$HeadersBuilder/put(java.lang.String,java.lang.Iterable)|",
+      "|java+method:///java/util/Enumeration/hasMoreElements()|",
+      "|java+method:///java/util/Enumeration/nextElement()|"
+    ],
+    "affectedLib": "org.zalando:logbook-api:1.0.0-RC2",
+    "change": "ADDED"
+  }
+]

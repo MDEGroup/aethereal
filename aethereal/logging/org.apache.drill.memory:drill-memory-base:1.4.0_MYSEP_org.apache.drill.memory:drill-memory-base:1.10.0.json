@@ -1,0 +1,138 @@
+[
+  {
+    "coordinatesV1": "org.apache.drill.memory:drill-memory-base:1.4.0",
+    "coordinatesV2": "org.apache.drill.memory:drill-memory-base:1.10.0",
+    "caller": "|java+method:///io/netty/buffer/DrillBuf/checkIndexD(int,int)|",
+    "called": "|java+method:///org/apache/drill/common/HistoricalLog/logHistory(org.slf4j.Logger)|",
+    "v1Body": [
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///java/lang/IndexOutOfBoundsException/IndexOutOfBoundsException(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///io/netty/buffer/DrillBuf/ensureAccessible()|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///io/netty/buffer/DrillBuf/capacity()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///java/lang/IndexOutOfBoundsException/IndexOutOfBoundsException(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///io/netty/buffer/DrillBuf/ensureAccessible()|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///io/netty/buffer/DrillBuf/capacity()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/apache/drill/common/HistoricalLog/logHistory(org.slf4j.Logger)|"
+    ],
+    "affectedLib": "org.apache.drill:drill-common:1.10.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.drill.memory:drill-memory-base:1.4.0",
+    "coordinatesV2": "org.apache.drill.memory:drill-memory-base:1.10.0",
+    "caller": "|java+method:///io/netty/buffer/DrillBuf/retain(int)|",
+    "called": "|java+method:///org/apache/drill/common/HistoricalLog/recordEvent(java.lang.String,java.lang.Object%5B%5D)|",
+    "v1Body": [
+      "|java+method:///java/util/concurrent/atomic/AtomicLong/addAndGet(long)|",
+      "|java+method:///io/netty/buffer/DrillBuf/retain(int)|",
+      "|java+method:///io/netty/buffer/ByteBuf/retain(int)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/concurrent/atomic/AtomicInteger/getAndAdd(int)|",
+      "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///org/apache/drill/common/HistoricalLog/recordEvent(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///io/netty/buffer/DrillBuf/retain(int)|"
+    ],
+    "affectedLib": "org.apache.drill:drill-common:1.10.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.drill.memory:drill-memory-base:1.4.0",
+    "coordinatesV2": "org.apache.drill.memory:drill-memory-base:1.10.0",
+    "caller": "|java+method:///io/netty/buffer/DrillBuf/release(int)|",
+    "called": "|java+method:///org/apache/drill/common/HistoricalLog/recordEvent(java.lang.String,java.lang.Object%5B%5D)|",
+    "v1Body": [
+      "|java+method:///java/util/concurrent/atomic/AtomicLong/addAndGet(long)|",
+      "|java+method:///org/apache/drill/exec/memory/Accountor/release(io.netty.buffer.DrillBuf,long)|",
+      "|java+method:///io/netty/buffer/ByteBuf/release(int)|",
+      "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/lang/IllegalStateException/IllegalStateException(java.lang.String)|",
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///org/apache/drill/exec/memory/AllocationManager$BufferLedger/decrement(int)|",
+      "|java+method:///org/apache/drill/common/HistoricalLog/recordEvent(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///io/netty/buffer/DrillBuf/toVerboseString()|"
+    ],
+    "affectedLib": "org.apache.drill:drill-common:1.10.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.drill.memory:drill-memory-base:1.4.0",
+    "coordinatesV2": "org.apache.drill.memory:drill-memory-base:1.10.0",
+    "caller": "|java+method:///io/netty/buffer/DrillBuf/retain(int)|",
+    "called": "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean,java.lang.String,java.lang.Object%5B%5D)|",
+    "v1Body": [
+      "|java+method:///java/util/concurrent/atomic/AtomicLong/addAndGet(long)|",
+      "|java+method:///io/netty/buffer/DrillBuf/retain(int)|",
+      "|java+method:///io/netty/buffer/ByteBuf/retain(int)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/concurrent/atomic/AtomicInteger/getAndAdd(int)|",
+      "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean,java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///org/apache/drill/common/HistoricalLog/recordEvent(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|",
+      "|java+method:///io/netty/buffer/DrillBuf/retain(int)|"
+    ],
+    "affectedLib": "com.google.guava:guava:18.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.drill.memory:drill-memory-base:1.4.0",
+    "coordinatesV2": "org.apache.drill.memory:drill-memory-base:1.10.0",
+    "caller": "|java+method:///io/netty/buffer/DrillBuf/reallocIfNeeded(int)|",
+    "called": "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/apache/drill/exec/ops/BufferManager/replace(io.netty.buffer.DrillBuf,int)|",
+      "|java+method:///io/netty/buffer/DrillBuf/capacity()|",
+      "|java+constructor:///java/lang/UnsupportedOperationException/UnsupportedOperationException(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/drill/exec/ops/BufferManager/replace(io.netty.buffer.DrillBuf,int)|",
+      "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean,java.lang.Object)|",
+      "|java+method:///io/netty/buffer/DrillBuf/capacity()|",
+      "|java+constructor:///java/lang/UnsupportedOperationException/UnsupportedOperationException(java.lang.String)|"
+    ],
+    "affectedLib": "com.google.guava:guava:18.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.drill.memory:drill-memory-base:1.4.0",
+    "coordinatesV2": "org.apache.drill.memory:drill-memory-base:1.10.0",
+    "caller": "|java+method:///io/netty/buffer/DrillBuf/capacity(int)|",
+    "called": "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean)|",
+    "v1Body": [
+      "|java+method:///org/apache/drill/exec/memory/Accountor/releasePartial(io.netty.buffer.DrillBuf,long)|",
+      "|java+method:///io/netty/buffer/ByteBuf/capacity(int)|",
+      "|java+method:///io/netty/buffer/ByteBuf/capacity()|",
+      "|java+constructor:///java/lang/UnsupportedOperationException/UnsupportedOperationException(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///io/netty/buffer/DrillBuf/capacity(int)|",
+      "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean)|",
+      "|java+constructor:///java/lang/UnsupportedOperationException/UnsupportedOperationException(java.lang.String)|"
+    ],
+    "affectedLib": "com.google.guava:guava:18.0",
+    "change": "UPDATED"
+  }
+]

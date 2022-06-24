@@ -1,0 +1,53 @@
+[
+  {
+    "coordinatesV1": "com.github.cwilper.fcrepo-misc:fcrepo-dto-core:0.1.0",
+    "coordinatesV2": "com.github.cwilper.fcrepo-misc:fcrepo-dto-core:0.0.0",
+    "caller": "|java+method:///com/github/cwilper/fcrepo/dto/core/io/XMLUtil/canonicalize(byte%5B%5D)|",
+    "called": "|java+constructor:///org/apache/axiom/c14n/impl/Canonicalizer20010315ExclOmitComments/Canonicalizer20010315ExclOmitComments()|",
+    "v1Body": [
+      "|java+constructor:///java/io/IOException/IOException(java.lang.Throwable)|",
+      "|java+method:///org/apache/axiom/c14n/CanonicalizerSpi/engineCanonicalize(byte%5B%5D)|",
+      "|java+constructor:///org/apache/axiom/c14n/impl/Canonicalizer20010315ExclOmitComments/Canonicalizer20010315ExclOmitComments()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/xml/security/c14n/Canonicalizer/canonicalize(byte%5B%5D)|",
+      "|java+method:///org/apache/xml/security/c14n/Canonicalizer/getInstance(java.lang.String)|",
+      "|java+constructor:///java/io/IOException/IOException(java.lang.Throwable)|"
+    ],
+    "affectedLib": "org.apache.ws.commons.axiom:axiom-c14n:1.2.10",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.github.cwilper.fcrepo-misc:fcrepo-dto-core:0.0.0",
+    "coordinatesV2": "com.github.cwilper.fcrepo-misc:fcrepo-dto-core:0.1.0",
+    "caller": "|java+initializer:///com/github/cwilper/fcrepo/dto/core/io/XMLUtil/XMLUtil$initializer|",
+    "called": "|java+method:///org/apache/xml/security/Init/init()|",
+    "v1Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/xml/security/Init/init()|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.apache.santuario:xmlsec:1.4.3",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.github.cwilper.fcrepo-misc:fcrepo-dto-core:0.0.0",
+    "coordinatesV2": "com.github.cwilper.fcrepo-misc:fcrepo-dto-core:0.1.0",
+    "caller": "|java+method:///com/github/cwilper/fcrepo/dto/core/io/XMLUtil/canonicalize(byte%5B%5D)|",
+    "called": "|java+method:///org/apache/xml/security/c14n/Canonicalizer/canonicalize(byte%5B%5D)|",
+    "v1Body": [
+      "|java+constructor:///java/io/IOException/IOException(java.lang.Throwable)|",
+      "|java+method:///org/apache/axiom/c14n/CanonicalizerSpi/engineCanonicalize(byte%5B%5D)|",
+      "|java+constructor:///org/apache/axiom/c14n/impl/Canonicalizer20010315ExclOmitComments/Canonicalizer20010315ExclOmitComments()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/xml/security/c14n/Canonicalizer/canonicalize(byte%5B%5D)|",
+      "|java+method:///org/apache/xml/security/c14n/Canonicalizer/getInstance(java.lang.String)|",
+      "|java+constructor:///java/io/IOException/IOException(java.lang.Throwable)|"
+    ],
+    "affectedLib": "org.apache.santuario:xmlsec:1.4.3",
+    "change": "ADDED"
+  }
+]

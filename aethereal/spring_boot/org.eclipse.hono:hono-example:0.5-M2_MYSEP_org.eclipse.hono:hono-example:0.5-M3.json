@@ -1,0 +1,45 @@
+[
+  {
+    "coordinatesV1": "org.eclipse.hono:hono-example:0.5-M2",
+    "coordinatesV2": "org.eclipse.hono:hono-example:0.5-M3",
+    "caller": "|java+method:///org/eclipse/hono/example/ExampleSender/lambda$null$6(io.vertx.core.Future,java.lang.Void)|",
+    "called": "|java+method:///org/eclipse/hono/client/HonoClient/getOrCreateTelemetrySender(java.lang.String,io.vertx.core.Handler)|",
+    "v1Body": [
+      "|java+method:///io/vertx/core/Future/completer()|",
+      "|java+method:///org/eclipse/hono/client/HonoClient/createTelemetrySender(java.lang.String,io.vertx.core.Handler)|"
+    ],
+    "v2Body": [
+      "|java+method:///io/vertx/core/Future/completer()|",
+      "|java+method:///java/util/List/contains(java.lang.Object)|",
+      "|java+method:///org/eclipse/hono/client/HonoClient/getOrCreateTelemetrySender(java.lang.String,io.vertx.core.Handler)|",
+      "|java+method:///org/eclipse/hono/client/HonoClient/getOrCreateEventSender(java.lang.String,io.vertx.core.Handler)|"
+    ],
+    "affectedLib": "org.eclipse.hono:hono-client:0.5-M3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.eclipse.hono:hono-example:0.5-M2",
+    "coordinatesV2": "org.eclipse.hono:hono-example:0.5-M3",
+    "caller": "|java+method:///org/eclipse/hono/example/ExampleSender/lambda$start$7(io.vertx.core.Future,java.lang.Void)|",
+    "called": "|java+method:///org/eclipse/hono/client/HonoClient/connect(io.vertx.proton.ProtonClientOptions,io.vertx.core.Handler)|",
+    "v1Body": [
+      "|java+method:///io/vertx/core/Future/completer()|",
+      "|java+method:///io/vertx/core/Future/future()|",
+      "|java+constructor:///io/vertx/proton/ProtonClientOptions/ProtonClientOptions()|",
+      "|java+method:///io/vertx/core/Future/compose(java.util.function.Function)|",
+      "|java+method:///io/vertx/core/Future/compose(io.vertx.core.Handler,io.vertx.core.Future)|",
+      "|java+method:///org/eclipse/hono/client/HonoClient/connect(io.vertx.proton.ProtonClientOptions,io.vertx.core.Handler)|"
+    ],
+    "v2Body": [
+      "|java+method:///io/vertx/core/Future/completer()|",
+      "|java+method:///io/vertx/core/Future/future()|",
+      "|java+constructor:///io/vertx/proton/ProtonClientOptions/ProtonClientOptions()|",
+      "|java+method:///io/vertx/core/Future/compose(java.util.function.Function)|",
+      "|java+method:///io/vertx/core/Future/compose(io.vertx.core.Handler,io.vertx.core.Future)|",
+      "|java+method:///org/eclipse/hono/client/HonoClient/connect(io.vertx.proton.ProtonClientOptions,io.vertx.core.Handler)|",
+      "|java+method:///io/vertx/proton/ProtonClientOptions/setConnectTimeout(int)|"
+    ],
+    "affectedLib": "org.eclipse.hono:hono-client:0.5-M3",
+    "change": "UPDATED"
+  }
+]

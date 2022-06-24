@@ -1,0 +1,72 @@
+[
+  {
+    "coordinatesV1": "com.m3:method-cache-interceptor:1.0.0",
+    "coordinatesV2": "com.m3:method-cache-interceptor:1.0.1",
+    "caller": "|java+constructor:///com/m3/methodcache/interceptor/MemcachedCacheResultInterceptor/MemcachedCacheResultInterceptor()|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///com/m3/methodcache/interceptor/MemcachedCacheResultInterceptor/getConfiguration()|",
+      "|java+constructor:///com/m3/methodcache/interceptor/AbstractCacheResultInterceptor/AbstractCacheResultInterceptor()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/m3/methodcache/interceptor/MemcachedCacheResultInterceptor/getConfiguration()|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+constructor:///com/m3/methodcache/interceptor/AbstractCacheResultInterceptor/AbstractCacheResultInterceptor()|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.6.6",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.m3:method-cache-interceptor:1.0.0",
+    "coordinatesV2": "com.m3:method-cache-interceptor:1.0.1",
+    "caller": "|java+constructor:///com/m3/methodcache/interceptor/AbstractCacheResultInterceptor/AbstractCacheResultInterceptor()|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.6.6",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.m3:method-cache-interceptor:1.0.0",
+    "coordinatesV2": "com.m3:method-cache-interceptor:1.0.1",
+    "caller": "|java+method:///com/m3/methodcache/interceptor/MemcachedCacheResultInterceptor/invoke(org.aopalliance.intercept.MethodInvocation)|",
+    "called": "|java+method:///com/m3/memcached/facade/MemcachedClientPool/getMemcachedClient(com.m3.memcached.facade.Configuration)|",
+    "v1Body": [
+      "|java+method:///com/m3/memcached/facade/MemcachedClient/set(java.lang.String,int,java.lang.Object)|",
+      "|java+method:///com/m3/methodcache/interceptor/MemcachedCacheResultInterceptor/getCacheKey(org.aopalliance.intercept.MethodInvocation)|",
+      "|java+method:///com/m3/methodcache/annotation/CacheResult/secondsToExpire()|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///org/aopalliance/intercept/MethodInvocation/proceed()|",
+      "|java+method:///com/m3/memcached/facade/MemcachedClientPool/getMemcachedClient(com.m3.memcached.facade.Configuration)|",
+      "|java+method:///com/m3/methodcache/interceptor/MemcachedCacheResultInterceptor/getCacheResultAnnotation(org.aopalliance.intercept.MethodInvocation)|",
+      "|java+method:///com/m3/memcached/facade/MemcachedClient/get(java.lang.String)|",
+      "|java+method:///com/m3/methodcache/annotation/CacheResult/cacheKey()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/m3/methodcache/interceptor/MemcachedCacheResultInterceptor/isUsingRawKey()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///com/m3/methodcache/annotation/CacheResult/secondsToExpire()|",
+      "|java+method:///com/m3/methodcache/interceptor/MemcachedCacheResultInterceptor/getCacheKey(org.aopalliance.intercept.MethodInvocation,boolean)|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/aopalliance/intercept/MethodInvocation/proceed()|",
+      "|java+method:///com/m3/memcached/facade/MemcachedClientPool/getMemcachedClient(com.m3.memcached.facade.Configuration)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///org/slf4j/Logger/isDebugEnabled()|",
+      "|java+method:///com/m3/methodcache/interceptor/MemcachedCacheResultInterceptor/getCacheResultAnnotation(org.aopalliance.intercept.MethodInvocation)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///com/m3/memcached/facade/MemcachedClient/set(java.lang.String,int,java.lang.Object)|",
+      "|java+method:///com/m3/memcached/facade/MemcachedClient/get(java.lang.String)|",
+      "|java+method:///com/m3/methodcache/annotation/CacheResult/cacheKey()|"
+    ],
+    "affectedLib": "com.m3:memcached-client-facade:1.0.1",
+    "change": "UPDATED"
+  }
+]

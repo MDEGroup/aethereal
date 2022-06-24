@@ -1,0 +1,39 @@
+[
+  {
+    "coordinatesV1": "io.joynr.java.common:infrastructure-common:0.12.3",
+    "coordinatesV2": "io.joynr.java.common:infrastructure-common:0.13.0",
+    "caller": "|java+constructor:///io/joynr/capabilities/AbstractLocalCapabilitiesDirectory/AbstractLocalCapabilitiesDirectory()|",
+    "called": "|java+constructor:///joynr/system/DiscoveryAbstractProvider/DiscoveryAbstractProvider()|",
+    "v1Body": [
+      "|java+method:///com/google/common/collect/Lists/newArrayList()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/common/collect/Lists/newArrayList()|",
+      "|java+constructor:///joynr/system/DiscoveryAbstractProvider/DiscoveryAbstractProvider()|"
+    ],
+    "affectedLib": "io.joynr.java:javaapi:0.13.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "io.joynr.java.common:infrastructure-common:0.12.3",
+    "coordinatesV2": "io.joynr.java.common:infrastructure-common:0.13.0",
+    "caller": "|java+method:///io/joynr/capabilities/DummyCapabilitiesDirectory/add(joynr.types.DiscoveryEntry)|",
+    "called": "|java+method:///io/joynr/provider/DeferredVoid/resolve()|",
+    "v1Body": [
+      "|java+method:///io/joynr/capabilities/DummyCapabilitiesDirectory/notifyCapabilityAdded(joynr.types.DiscoveryEntry)|",
+      "|java+constructor:///io/joynr/capabilities/RegistrationFuture/RegistrationFuture(io.joynr.capabilities.RegistrationStatus,java.lang.String)|",
+      "|java+method:///java/util/ArrayList/add(java.lang.Object)|",
+      "|java+method:///joynr/types/DiscoveryEntry/getParticipantId()|"
+    ],
+    "v2Body": [
+      "|java+method:///io/joynr/capabilities/DummyCapabilitiesDirectory/notifyCapabilityAdded(joynr.types.DiscoveryEntry)|",
+      "|java+method:///io/joynr/provider/DeferredVoid/resolve()|",
+      "|java+constructor:///io/joynr/provider/Promise/Promise(io.joynr.provider.AbstractDeferred)|",
+      "|java+method:///java/util/ArrayList/add(java.lang.Object)|",
+      "|java+constructor:///io/joynr/provider/DeferredVoid/DeferredVoid()|"
+    ],
+    "affectedLib": "io.joynr.java:javaapi:0.13.0",
+    "change": "UPDATED"
+  }
+]

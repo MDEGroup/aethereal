@@ -1,0 +1,189 @@
+[
+  {
+    "coordinatesV1": "org.apache.james:james-server-queue-file:3.0.0-RC1",
+    "coordinatesV2": "org.apache.james:james-server-queue-file:3.0-beta4",
+    "caller": "|java+method:///org/apache/james/queue/file/FileMailQueue$FileMimeMessageSource/dispose()|",
+    "called": "|java+method:///javax/mail/util/SharedFileInputStream/close()|",
+    "v1Body": [
+      "|java+method:///javax/mail/util/SharedFileInputStream/close()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/io/IOUtils/closeQuietly(java.io.InputStream)|"
+    ],
+    "affectedLib": "javax.mail:mail:1.4.4",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.apache.james:james-server-queue-file:3.0-beta4",
+    "coordinatesV2": "org.apache.james:james-server-queue-file:3.0.0-RC1",
+    "caller": "|java+method:///org/apache/james/queue/file/FileMailQueue$4/done(boolean)|",
+    "called": "|java+method:///org/apache/james/lifecycle/api/LifecycleUtil/dispose(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///java/util/concurrent/BlockingQueue/put(java.lang.Object)|",
+      "|java+method:///org/apache/james/queue/file/FileMailQueue$FileItem/delete()|",
+      "|java+method:///org/apache/james/queue/file/FileMailQueue/access$000(org.apache.james.queue.file.FileMailQueue)|",
+      "|java+constructor:///org/apache/james/queue/api/MailQueue$MailQueueException/MailQueue$MailQueueException(java.lang.String,java.lang.Exception)|",
+      "|java+method:///org/apache/james/lifecycle/api/LifecycleUtil/dispose(java.lang.Object)|",
+      "|java+method:///java/lang/Thread/currentThread()|",
+      "|java+method:///java/lang/Thread/interrupt()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/concurrent/BlockingQueue/put(java.lang.Object)|",
+      "|java+method:///org/apache/james/queue/file/FileMailQueue/access$000(org.apache.james.queue.file.FileMailQueue)|",
+      "|java+method:///java/util/concurrent/ConcurrentHashMap/remove(java.lang.Object)|",
+      "|java+constructor:///org/apache/james/queue/api/MailQueue$MailQueueException/MailQueue$MailQueueException(java.lang.String,java.lang.Exception)|",
+      "|java+method:///org/apache/james/lifecycle/api/LifecycleUtil/dispose(java.lang.Object)|",
+      "|java+method:///java/lang/Thread/currentThread()|",
+      "|java+method:///java/lang/Thread/interrupt()|",
+      "|java+method:///org/apache/james/queue/file/FileMailQueue$FileItem/delete()|",
+      "|java+method:///org/apache/james/queue/file/FileMailQueue/access$100(org.apache.james.queue.file.FileMailQueue)|"
+    ],
+    "affectedLib": "org.apache.james:james-server-lifecycle-api:3.0.0-RC1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.james:james-server-queue-file:3.0-beta4",
+    "coordinatesV2": "org.apache.james:james-server-queue-file:3.0.0-RC1",
+    "caller": "|java+method:///org/apache/james/queue/file/FileMailQueue/deQueue()|",
+    "called": "|java+constructor:///org/apache/james/core/MimeMessageCopyOnWriteProxy/MimeMessageCopyOnWriteProxy(org.apache.james.core.MimeMessageSource)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/james/core/MimeMessageCopyOnWriteProxy/MimeMessageCopyOnWriteProxy(org.apache.james.core.MimeMessageSource)|",
+      "|java+method:///org/apache/james/queue/file/FileMailQueue$FileItem/getObjectFile()|",
+      "|java+constructor:///org/apache/james/queue/api/MailQueue$MailQueueException/MailQueue$MailQueueException(java.lang.String,java.lang.Exception)|",
+      "|java+constructor:///org/apache/james/queue/file/FileMailQueue$4/FileMailQueue$4(org.apache.james.queue.file.FileMailQueue,org.apache.mailet.Mail,java.lang.String,org.apache.james.queue.file.FileMailQueue$FileItem)|",
+      "|java+method:///java/util/concurrent/ConcurrentHashMap/get(java.lang.Object)|",
+      "|java+method:///java/util/concurrent/BlockingQueue/take()|",
+      "|java+constructor:///java/io/File/File(java.lang.String)|",
+      "|java+method:///java/io/ObjectInputStream/close()|",
+      "|java+constructor:///java/io/ObjectInputStream/ObjectInputStream(java.io.InputStream)|",
+      "|java+method:///org/apache/mailet/Mail/setMessage(javax.mail.internet.MimeMessage)|",
+      "|java+constructor:///java/io/FileInputStream/FileInputStream(java.io.File)|",
+      "|java+constructor:///org/apache/james/queue/file/FileMailQueue$FileMimeMessageSource/FileMailQueue$FileMimeMessageSource(org.apache.james.queue.file.FileMailQueue,java.io.File)|",
+      "|java+method:///java/lang/Thread/currentThread()|",
+      "|java+method:///java/lang/Thread/interrupt()|",
+      "|java+method:///org/apache/james/queue/file/FileMailQueue$FileItem/getMessageFile()|",
+      "|java+method:///java/io/ObjectInputStream/readObject()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/james/core/MimeMessageCopyOnWriteProxy/MimeMessageCopyOnWriteProxy(org.apache.james.core.MimeMessageSource)|",
+      "|java+method:///org/apache/james/queue/file/FileMailQueue$FileItem/getObjectFile()|",
+      "|java+constructor:///org/apache/james/queue/api/MailQueue$MailQueueException/MailQueue$MailQueueException(java.lang.String,java.lang.Exception)|",
+      "|java+constructor:///org/apache/james/queue/file/FileMailQueue$4/FileMailQueue$4(org.apache.james.queue.file.FileMailQueue,org.apache.mailet.Mail,java.lang.String,org.apache.james.queue.file.FileMailQueue$FileItem)|",
+      "|java+method:///java/util/concurrent/ConcurrentHashMap/get(java.lang.Object)|",
+      "|java+method:///java/util/concurrent/BlockingQueue/take()|",
+      "|java+constructor:///java/io/File/File(java.lang.String)|",
+      "|java+method:///java/io/ObjectInputStream/close()|",
+      "|java+constructor:///java/io/ObjectInputStream/ObjectInputStream(java.io.InputStream)|",
+      "|java+method:///org/apache/mailet/Mail/setMessage(javax.mail.internet.MimeMessage)|",
+      "|java+constructor:///java/io/FileInputStream/FileInputStream(java.io.File)|",
+      "|java+constructor:///org/apache/james/queue/file/FileMailQueue$FileMimeMessageSource/FileMailQueue$FileMimeMessageSource(org.apache.james.queue.file.FileMailQueue,java.io.File)|",
+      "|java+method:///org/apache/james/queue/api/MailQueueItemDecoratorFactory/decorate(org.apache.james.queue.api.MailQueue$MailQueueItem)|",
+      "|java+method:///java/lang/Thread/currentThread()|",
+      "|java+method:///java/lang/Thread/interrupt()|",
+      "|java+method:///org/apache/james/queue/file/FileMailQueue$FileItem/getMessageFile()|",
+      "|java+method:///java/io/ObjectInputStream/readObject()|"
+    ],
+    "affectedLib": "org.apache.james:james-server-core:3.0.0-RC1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.james:james-server-queue-file:3.0-beta4",
+    "coordinatesV2": "org.apache.james:james-server-queue-file:3.0.0-RC1",
+    "caller": "|java+method:///org/apache/james/queue/file/FileMailQueue/deQueue()|",
+    "called": "|java+constructor:///org/apache/james/queue/api/MailQueue$MailQueueException/MailQueue$MailQueueException(java.lang.String,java.lang.Exception)|",
+    "v1Body": [
+      "|java+constructor:///org/apache/james/core/MimeMessageCopyOnWriteProxy/MimeMessageCopyOnWriteProxy(org.apache.james.core.MimeMessageSource)|",
+      "|java+method:///org/apache/james/queue/file/FileMailQueue$FileItem/getObjectFile()|",
+      "|java+constructor:///org/apache/james/queue/api/MailQueue$MailQueueException/MailQueue$MailQueueException(java.lang.String,java.lang.Exception)|",
+      "|java+constructor:///org/apache/james/queue/file/FileMailQueue$4/FileMailQueue$4(org.apache.james.queue.file.FileMailQueue,org.apache.mailet.Mail,java.lang.String,org.apache.james.queue.file.FileMailQueue$FileItem)|",
+      "|java+method:///java/util/concurrent/ConcurrentHashMap/get(java.lang.Object)|",
+      "|java+method:///java/util/concurrent/BlockingQueue/take()|",
+      "|java+constructor:///java/io/File/File(java.lang.String)|",
+      "|java+method:///java/io/ObjectInputStream/close()|",
+      "|java+constructor:///java/io/ObjectInputStream/ObjectInputStream(java.io.InputStream)|",
+      "|java+method:///org/apache/mailet/Mail/setMessage(javax.mail.internet.MimeMessage)|",
+      "|java+constructor:///java/io/FileInputStream/FileInputStream(java.io.File)|",
+      "|java+constructor:///org/apache/james/queue/file/FileMailQueue$FileMimeMessageSource/FileMailQueue$FileMimeMessageSource(org.apache.james.queue.file.FileMailQueue,java.io.File)|",
+      "|java+method:///java/lang/Thread/currentThread()|",
+      "|java+method:///java/lang/Thread/interrupt()|",
+      "|java+method:///org/apache/james/queue/file/FileMailQueue$FileItem/getMessageFile()|",
+      "|java+method:///java/io/ObjectInputStream/readObject()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/james/core/MimeMessageCopyOnWriteProxy/MimeMessageCopyOnWriteProxy(org.apache.james.core.MimeMessageSource)|",
+      "|java+method:///org/apache/james/queue/file/FileMailQueue$FileItem/getObjectFile()|",
+      "|java+constructor:///org/apache/james/queue/api/MailQueue$MailQueueException/MailQueue$MailQueueException(java.lang.String,java.lang.Exception)|",
+      "|java+constructor:///org/apache/james/queue/file/FileMailQueue$4/FileMailQueue$4(org.apache.james.queue.file.FileMailQueue,org.apache.mailet.Mail,java.lang.String,org.apache.james.queue.file.FileMailQueue$FileItem)|",
+      "|java+method:///java/util/concurrent/ConcurrentHashMap/get(java.lang.Object)|",
+      "|java+method:///java/util/concurrent/BlockingQueue/take()|",
+      "|java+constructor:///java/io/File/File(java.lang.String)|",
+      "|java+method:///java/io/ObjectInputStream/close()|",
+      "|java+constructor:///java/io/ObjectInputStream/ObjectInputStream(java.io.InputStream)|",
+      "|java+method:///org/apache/mailet/Mail/setMessage(javax.mail.internet.MimeMessage)|",
+      "|java+constructor:///java/io/FileInputStream/FileInputStream(java.io.File)|",
+      "|java+constructor:///org/apache/james/queue/file/FileMailQueue$FileMimeMessageSource/FileMailQueue$FileMimeMessageSource(org.apache.james.queue.file.FileMailQueue,java.io.File)|",
+      "|java+method:///org/apache/james/queue/api/MailQueueItemDecoratorFactory/decorate(org.apache.james.queue.api.MailQueue$MailQueueItem)|",
+      "|java+method:///java/lang/Thread/currentThread()|",
+      "|java+method:///java/lang/Thread/interrupt()|",
+      "|java+method:///org/apache/james/queue/file/FileMailQueue$FileItem/getMessageFile()|",
+      "|java+method:///java/io/ObjectInputStream/readObject()|"
+    ],
+    "affectedLib": "org.apache.james:james-server-queue-api:3.0.0-RC1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.james:james-server-queue-file:3.0-beta4",
+    "coordinatesV2": "org.apache.james:james-server-queue-file:3.0.0-RC1",
+    "caller": "|java+method:///org/apache/james/queue/file/FileMailQueue$FileItem/delete()|",
+    "called": "|java+constructor:///org/apache/james/queue/api/MailQueue$MailQueueException/MailQueue$MailQueueException(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+method:///org/apache/james/queue/file/FileMailQueue$FileItem/getObjectFile()|",
+      "|java+method:///org/apache/james/queue/file/FileMailQueue/access$100(org.apache.james.queue.file.FileMailQueue)|",
+      "|java+constructor:///java/io/File/File(java.lang.String)|",
+      "|java+constructor:///org/apache/james/queue/api/MailQueue$MailQueueException/MailQueue$MailQueueException(java.lang.String)|",
+      "|java+method:///java/io/File/delete()|",
+      "|java+method:///java/io/File/exists()|",
+      "|java+method:///org/apache/james/queue/file/FileMailQueue$FileItem/getMessageFile()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+method:///org/apache/james/queue/file/FileMailQueue$FileItem/getObjectFile()|",
+      "|java+method:///org/apache/james/queue/file/FileMailQueue/access$200(org.apache.james.queue.file.FileMailQueue)|",
+      "|java+method:///org/apache/james/queue/file/FileMailQueue$FileItem/getMessageFile()|",
+      "|java+constructor:///java/io/File/File(java.lang.String)|",
+      "|java+method:///org/apache/commons/io/FileUtils/forceDelete(java.io.File)|",
+      "|java+constructor:///org/apache/james/queue/api/MailQueue$MailQueueException/MailQueue$MailQueueException(java.lang.String)|"
+    ],
+    "affectedLib": "org.apache.james:james-server-queue-api:3.0.0-RC1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.james:james-server-queue-file:3.0-beta4",
+    "coordinatesV2": "org.apache.james:james-server-queue-file:3.0.0-RC1",
+    "caller": "|java+method:///org/apache/james/queue/file/FileMailQueue$4/done(boolean)|",
+    "called": "|java+constructor:///org/apache/james/queue/api/MailQueue$MailQueueException/MailQueue$MailQueueException(java.lang.String,java.lang.Exception)|",
+    "v1Body": [
+      "|java+method:///java/util/concurrent/BlockingQueue/put(java.lang.Object)|",
+      "|java+method:///org/apache/james/queue/file/FileMailQueue$FileItem/delete()|",
+      "|java+method:///org/apache/james/queue/file/FileMailQueue/access$000(org.apache.james.queue.file.FileMailQueue)|",
+      "|java+constructor:///org/apache/james/queue/api/MailQueue$MailQueueException/MailQueue$MailQueueException(java.lang.String,java.lang.Exception)|",
+      "|java+method:///org/apache/james/lifecycle/api/LifecycleUtil/dispose(java.lang.Object)|",
+      "|java+method:///java/lang/Thread/currentThread()|",
+      "|java+method:///java/lang/Thread/interrupt()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/concurrent/BlockingQueue/put(java.lang.Object)|",
+      "|java+method:///org/apache/james/queue/file/FileMailQueue/access$000(org.apache.james.queue.file.FileMailQueue)|",
+      "|java+method:///java/util/concurrent/ConcurrentHashMap/remove(java.lang.Object)|",
+      "|java+constructor:///org/apache/james/queue/api/MailQueue$MailQueueException/MailQueue$MailQueueException(java.lang.String,java.lang.Exception)|",
+      "|java+method:///org/apache/james/lifecycle/api/LifecycleUtil/dispose(java.lang.Object)|",
+      "|java+method:///java/lang/Thread/currentThread()|",
+      "|java+method:///java/lang/Thread/interrupt()|",
+      "|java+method:///org/apache/james/queue/file/FileMailQueue$FileItem/delete()|",
+      "|java+method:///org/apache/james/queue/file/FileMailQueue/access$100(org.apache.james.queue.file.FileMailQueue)|"
+    ],
+    "affectedLib": "org.apache.james:james-server-queue-api:3.0.0-RC1",
+    "change": "UPDATED"
+  }
+]

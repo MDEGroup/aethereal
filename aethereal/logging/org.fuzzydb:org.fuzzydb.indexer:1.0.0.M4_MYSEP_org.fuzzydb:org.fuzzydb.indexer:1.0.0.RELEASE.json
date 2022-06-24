@@ -1,0 +1,646 @@
+[
+  {
+    "coordinatesV1": "org.fuzzydb:org.fuzzydb.indexer:1.0.0.M4",
+    "coordinatesV2": "org.fuzzydb:org.fuzzydb.indexer:1.0.0.RELEASE",
+    "caller": "|java+method:///com/wwm/indexer/IndexerFactory/getCurrentStore()|",
+    "called": "|java+method:///org/fuzzydb/client/StoreMgr/getStore(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///com/wwm/context/SessionContext/get(java.lang.String)|",
+      "|java+method:///com/wwm/db/StoreMgr/getInstance()|",
+      "|java+method:///com/wwm/db/StoreMgr/getStore(java.lang.String)|",
+      "|java+method:///com/wwm/context/ContextManager/getCurrentSessionContext()|",
+      "|java+constructor:///java/lang/AssertionError/AssertionError()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/fuzzydb/client/StoreMgr/getInstance()|",
+      "|java+method:///org/fuzzydb/client/StoreMgr/getStore(java.lang.String)|",
+      "|java+method:///org/fuzzydb/util/context/ContextManager/getCurrentSessionContext()|",
+      "|java+method:///org/fuzzydb/util/context/SessionContext/get(java.lang.String)|",
+      "|java+constructor:///java/lang/AssertionError/AssertionError()|"
+    ],
+    "affectedLib": "org.fuzzydb:org.fuzzydb.client:1.0.0.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.fuzzydb:org.fuzzydb.indexer:1.0.0.M4",
+    "coordinatesV2": "org.fuzzydb:org.fuzzydb.indexer:1.0.0.RELEASE",
+    "caller": "|java+method:///com/wwm/indexer/internal/IndexerImpl/addRecord(com.wwm.indexer.Record)|",
+    "called": "|java+constructor:///org/fuzzydb/attrs/userobjects/StandaloneWWIndexData/StandaloneWWIndexData(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///com/wwm/db/Store/getStoreName()|",
+      "|java+method:///com/wwm/db/Transaction/update(java.lang.Object)|",
+      "|java+method:///com/wwm/db/Transaction/commit()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String)|",
+      "|java+method:///com/wwm/db/Store/getAuthStore()|",
+      "|java+method:///com/wwm/db/Transaction/retrieve(java.lang.Class,java.lang.String,java.lang.Comparable)|",
+      "|java+method:///com/wwm/db/Transaction/create(java.lang.Object)|",
+      "|java+constructor:///com/wwm/attrs/userobjects/StandaloneWWIndexData/StandaloneWWIndexData(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///com/wwm/indexer/Record/getPrivateId()|",
+      "|java+method:///com/wwm/indexer/internal/RecordConverter/convertRecordToInternal(com.wwm.attrs.userobjects.StandaloneWWIndexData,com.wwm.indexer.Record)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///com/wwm/indexer/IndexerFactory/getCurrentStore()|",
+      "|java+method:///com/wwm/db/Store/begin()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/wwm/indexer/internal/RecordConverter/convertRecordToInternal(org.fuzzydb.attrs.userobjects.StandaloneWWIndexData,com.wwm.indexer.Record)|",
+      "|java+method:///com/wwm/indexer/Record/getPrivateId()|",
+      "|java+method:///org/fuzzydb/client/Store/begin()|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String)|",
+      "|java+method:///org/fuzzydb/client/Store/getStoreName()|",
+      "|java+method:///org/fuzzydb/client/Transaction/update(java.lang.Object)|",
+      "|java+method:///org/fuzzydb/client/Transaction/commit()|",
+      "|java+constructor:///org/fuzzydb/attrs/userobjects/StandaloneWWIndexData/StandaloneWWIndexData(java.lang.String)|",
+      "|java+method:///org/fuzzydb/client/Transaction/retrieve(java.lang.Class,java.lang.String,java.lang.Comparable)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/fuzzydb/client/Transaction/create(java.lang.Object)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///com/wwm/indexer/IndexerFactory/getCurrentStore()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/fuzzydb/client/Store/getAuthStore()|"
+    ],
+    "affectedLib": "org.fuzzydb.attrs:org.fuzzydb.attrs:1.0.0.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.fuzzydb:org.fuzzydb.indexer:1.0.0.M4",
+    "coordinatesV2": "org.fuzzydb:org.fuzzydb.indexer:1.0.0.RELEASE",
+    "caller": "|java+method:///com/wwm/indexer/db/converters/ConversionFactory/getEnumConverterFromAttrType(int)|",
+    "called": "|java+method:///org/fuzzydb/attrs/internal/AttrDefinitionMgr/getAttrType(int)|",
+    "v1Body": [
+      "|java+method:///com/wwm/indexer/db/converters/MultiEnumConverter/getInstance()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///java/lang/Error/Error(java.lang.String)|",
+      "|java+method:///com/wwm/attrs/internal/AttrDefinitionMgr$AttrType/ordinal()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///com/wwm/indexer/db/converters/EnumConverter/getInstance()|",
+      "|java+method:///com/wwm/attrs/internal/AttrDefinitionMgr/getAttrType(int)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/wwm/indexer/db/converters/MultiEnumConverter/getInstance()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/fuzzydb/attrs/internal/AttrDefinitionMgr/getAttrType(int)|",
+      "|java+constructor:///java/lang/Error/Error(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///com/wwm/indexer/db/converters/EnumConverter/getInstance()|",
+      "|java+method:///org/fuzzydb/attrs/internal/AttrDefinitionMgr$AttrType/ordinal()|"
+    ],
+    "affectedLib": "org.fuzzydb.attrs:org.fuzzydb.attrs:1.0.0.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.fuzzydb:org.fuzzydb.indexer:1.0.0.M4",
+    "coordinatesV2": "org.fuzzydb:org.fuzzydb.indexer:1.0.0.RELEASE",
+    "caller": "|java+method:///com/wwm/indexer/internal/IndexerImpl/addRecords(java.util.ArrayList)|",
+    "called": "|java+constructor:///org/fuzzydb/attrs/userobjects/StandaloneWWIndexData/StandaloneWWIndexData(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/util/ArrayList/iterator()|",
+      "|java+method:///com/wwm/db/Store/getStoreName()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+method:///com/wwm/db/Transaction/create(java.util.Collection)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String)|",
+      "|java+method:///com/wwm/db/Store/getAuthStore()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/ArrayList/size()|",
+      "|java+method:///java/util/Collection/add(java.lang.Object)|",
+      "|java+constructor:///com/wwm/attrs/userobjects/StandaloneWWIndexData/StandaloneWWIndexData(java.lang.String)|",
+      "|java+method:///com/wwm/indexer/exceptions/AttributeException/getMessage()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///com/wwm/indexer/Record/getPrivateId()|",
+      "|java+method:///com/wwm/indexer/internal/RecordConverter/convertRecordToInternal(com.wwm.attrs.userobjects.StandaloneWWIndexData,com.wwm.indexer.Record)|",
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///com/wwm/db/Transaction/commit()|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///com/wwm/indexer/IndexerFactory/getCurrentStore()|",
+      "|java+method:///com/wwm/db/Store/begin()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/fuzzydb/client/Store/begin()|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/fuzzydb/client/Store/getStoreName()|",
+      "|java+method:///java/util/ArrayList/size()|",
+      "|java+method:///org/fuzzydb/client/Transaction/commit()|",
+      "|java+method:///java/util/Collection/add(java.lang.Object)|",
+      "|java+constructor:///org/fuzzydb/attrs/userobjects/StandaloneWWIndexData/StandaloneWWIndexData(java.lang.String)|",
+      "|java+method:///com/wwm/indexer/exceptions/AttributeException/getMessage()|",
+      "|java+method:///org/fuzzydb/client/Transaction/create(java.util.Collection)|",
+      "|java+method:///com/wwm/indexer/internal/RecordConverter/convertRecordToInternal(org.fuzzydb.attrs.userobjects.StandaloneWWIndexData,com.wwm.indexer.Record)|",
+      "|java+method:///java/util/ArrayList/iterator()|",
+      "|java+method:///com/wwm/indexer/Record/getPrivateId()|",
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///com/wwm/indexer/IndexerFactory/getCurrentStore()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/fuzzydb/client/Store/getAuthStore()|"
+    ],
+    "affectedLib": "org.fuzzydb.attrs:org.fuzzydb.attrs:1.0.0.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.fuzzydb:org.fuzzydb.indexer:1.0.0.M4",
+    "coordinatesV2": "org.fuzzydb:org.fuzzydb.indexer:1.0.0.RELEASE",
+    "caller": "|java+constructor:///com/wwm/indexer/internal/SearchParamsConverter/SearchParamsConverter()|",
+    "called": "|java+method:///org/fuzzydb/attrs/internal/SyncedAttrDefinitionMgr/getInstance(org.fuzzydb.client.Store)|",
+    "v1Body": [
+      "|java+method:///java/lang/Class/getSimpleName()|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///com/wwm/attrs/internal/SyncedAttrDefinitionMgr/getInstance(com.wwm.db.Store)|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///com/wwm/indexer/db/converters/UKPostcodeToVectorDerivation/UKPostcodeToVectorDerivation(java.lang.String)|",
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/io/PrintStream/println(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///com/wwm/indexer/IndexerFactory/getCurrentStore()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Class/getSimpleName()|",
+      "|java+method:///org/fuzzydb/attrs/internal/SyncedAttrDefinitionMgr/getInstance(org.fuzzydb.client.Store)|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///com/wwm/indexer/db/converters/UKPostcodeToVectorDerivation/UKPostcodeToVectorDerivation(java.lang.String)|",
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/io/PrintStream/println(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///com/wwm/indexer/IndexerFactory/getCurrentStore()|"
+    ],
+    "affectedLib": "org.fuzzydb.attrs:org.fuzzydb.attrs:1.0.0.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.fuzzydb:org.fuzzydb.indexer:1.0.0.M4",
+    "coordinatesV2": "org.fuzzydb:org.fuzzydb.indexer:1.0.0.RELEASE",
+    "caller": "|java+method:///com/wwm/indexer/internal/IndexerImpl/searchRecords(java.util.Map,java.lang.String,int,int,float)|",
+    "called": "|java+method:///org/fuzzydb/attrs/AttrsFactory/createSearchSpec(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///com/wwm/indexer/internal/SearchParamsConverter/buildSearchAttributes(com.wwm.db.whirlwind.SearchSpec,java.util.Map)|",
+      "|java+method:///com/wwm/indexer/internal/IndexerImpl/doSearch(java.lang.String,int,int,com.wwm.db.whirlwind.SearchSpec)|",
+      "|java+method:///com/wwm/attrs/AttrsFactory/createSearchSpec(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/wwm/indexer/internal/SearchParamsConverter/buildSearchAttributes(org.fuzzydb.core.whirlwind.SearchSpec,java.util.Map)|",
+      "|java+method:///com/wwm/indexer/internal/IndexerImpl/doSearch(java.lang.String,int,int,org.fuzzydb.core.whirlwind.SearchSpec)|",
+      "|java+method:///org/fuzzydb/attrs/AttrsFactory/createSearchSpec(java.lang.Class)|"
+    ],
+    "affectedLib": "org.fuzzydb.attrs:org.fuzzydb.attrs:1.0.0.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.fuzzydb:org.fuzzydb.indexer:1.0.0.M4",
+    "coordinatesV2": "org.fuzzydb:org.fuzzydb.indexer:1.0.0.RELEASE",
+    "caller": "|java+method:///com/wwm/indexer/internal/IndexerImpl/searchRecords(com.wwm.indexer.Record,java.lang.String,int,int,float)|",
+    "called": "|java+constructor:///org/fuzzydb/attrs/userobjects/StandaloneWWIndexData/StandaloneWWIndexData(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///com/wwm/db/whirlwind/SearchSpec/setAttributes(com.wwm.db.marker.IAttributeContainer)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///com/wwm/indexer/internal/IndexerImpl/doSearch(java.lang.String,int,int,com.wwm.db.whirlwind.SearchSpec)|",
+      "|java+constructor:///com/wwm/attrs/userobjects/StandaloneWWIndexData/StandaloneWWIndexData(java.lang.String)|",
+      "|java+method:///com/wwm/indexer/exceptions/AttributeException/getMessage()|",
+      "|java+method:///com/wwm/attrs/AttrsFactory/createSearchSpec(java.lang.Class)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///com/wwm/indexer/Record/getPrivateId()|",
+      "|java+method:///com/wwm/indexer/internal/RecordConverter/convertRecordToInternal(com.wwm.attrs.userobjects.StandaloneWWIndexData,com.wwm.indexer.Record)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/wwm/indexer/internal/RecordConverter/convertRecordToInternal(org.fuzzydb.attrs.userobjects.StandaloneWWIndexData,com.wwm.indexer.Record)|",
+      "|java+method:///com/wwm/indexer/Record/getPrivateId()|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/fuzzydb/core/whirlwind/SearchSpec/setAttributes(org.fuzzydb.core.marker.IAttributeContainer)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///org/fuzzydb/attrs/userobjects/StandaloneWWIndexData/StandaloneWWIndexData(java.lang.String)|",
+      "|java+method:///com/wwm/indexer/internal/IndexerImpl/doSearch(java.lang.String,int,int,org.fuzzydb.core.whirlwind.SearchSpec)|",
+      "|java+method:///com/wwm/indexer/exceptions/AttributeException/getMessage()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/fuzzydb/attrs/AttrsFactory/createSearchSpec(java.lang.Class)|"
+    ],
+    "affectedLib": "org.fuzzydb.attrs:org.fuzzydb.attrs:1.0.0.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.fuzzydb:org.fuzzydb.indexer:1.0.0.M4",
+    "coordinatesV2": "org.fuzzydb:org.fuzzydb.indexer:1.0.0.RELEASE",
+    "caller": "|java+constructor:///com/wwm/indexer/internal/RecordConverter/RecordConverter()|",
+    "called": "|java+method:///org/fuzzydb/attrs/internal/SyncedAttrDefinitionMgr/getInstance(org.fuzzydb.client.Store)|",
+    "v1Body": [
+      "|java+constructor:///com/wwm/indexer/db/converters/UKPostcodeToPlaceDerivation/UKPostcodeToPlaceDerivation(java.lang.String)|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+constructor:///java/util/LinkedList/LinkedList()|",
+      "|java+method:///com/wwm/indexer/IndexerFactory/getCurrentStore()|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///com/wwm/attrs/internal/SyncedAttrDefinitionMgr/getInstance(com.wwm.db.Store)|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+constructor:///com/wwm/indexer/db/converters/UKPostcodeToVectorDerivation/UKPostcodeToVectorDerivation(java.lang.String)|",
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/wwm/indexer/db/converters/UKPostcodeToPlaceDerivation/UKPostcodeToPlaceDerivation(java.lang.String)|",
+      "|java+method:///org/fuzzydb/attrs/internal/SyncedAttrDefinitionMgr/getInstance(org.fuzzydb.client.Store)|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+constructor:///java/util/LinkedList/LinkedList()|",
+      "|java+method:///com/wwm/indexer/IndexerFactory/getCurrentStore()|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+constructor:///com/wwm/indexer/db/converters/UKPostcodeToVectorDerivation/UKPostcodeToVectorDerivation(java.lang.String)|",
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|"
+    ],
+    "affectedLib": "org.fuzzydb.attrs:org.fuzzydb.attrs:1.0.0.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.fuzzydb:org.fuzzydb.indexer:1.0.0.M4",
+    "coordinatesV2": "org.fuzzydb:org.fuzzydb.indexer:1.0.0.RELEASE",
+    "caller": "|java+method:///com/wwm/indexer/db/converters/UKPostcodeToVectorDerivation/convertToInternal(int,java.lang.Object)|",
+    "called": "|java+method:///org/fuzzydb/attrs/location/EcefVector/fromDegs(int,double,double)|",
+    "v1Body": [
+      "|java+constructor:///com/wwm/indexer/exceptions/AttributeException/AttributeException(java.lang.String)|",
+      "|java+method:///com/wwm/model/attributes/NonIndexStringAttribute/getValue()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///com/wwm/indexer/db/converters/UKPostcodeToVectorDerivation/convertToInternal(int,java.lang.Object)|",
+      "|java+method:///com/wwm/model/attributes/NonIndexStringAttribute/getName()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///com/wwm/postcode/PostcodeConvertor/lookupFull(java.lang.String)|",
+      "|java+method:///com/wwm/geo/GeoInformation/getLongitude()|",
+      "|java+method:///com/wwm/geo/GeoInformation/getLatitude()|",
+      "|java+method:///com/wwm/attrs/location/EcefVector/fromDegs(int,double,double)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///com/wwm/postcode/PostcodeConvertor/lookupShort(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/wwm/indexer/exceptions/AttributeException/AttributeException(java.lang.String)|",
+      "|java+method:///org/fuzzydb/postcode/PostcodeConvertor/lookupShort(java.lang.String)|",
+      "|java+method:///org/fuzzydb/util/geo/GeoInformation/getLatitude()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///com/wwm/indexer/db/converters/UKPostcodeToVectorDerivation/convertToInternal(int,java.lang.Object)|",
+      "|java+method:///org/fuzzydb/util/geo/GeoInformation/getLongitude()|",
+      "|java+method:///org/fuzzydb/dto/attributes/NonIndexStringAttribute/getName()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/fuzzydb/attrs/location/EcefVector/fromDegs(int,double,double)|",
+      "|java+method:///org/fuzzydb/postcode/PostcodeConvertor/lookupFull(java.lang.String)|",
+      "|java+method:///org/fuzzydb/dto/attributes/NonIndexStringAttribute/getValue()|"
+    ],
+    "affectedLib": "org.fuzzydb.attrs:org.fuzzydb.attrs:1.0.0.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.fuzzydb:org.fuzzydb.indexer:1.0.0.M4",
+    "coordinatesV2": "org.fuzzydb:org.fuzzydb.indexer:1.0.0.RELEASE",
+    "caller": "|java+method:///com/wwm/indexer/db/converters/UKPostcodeToVectorDerivation/convertStringToInternal(int,java.lang.String)|",
+    "called": "|java+method:///org/fuzzydb/attrs/location/EcefVector/fromDegs(int,double,double)|",
+    "v1Body": [
+      "|java+constructor:///com/wwm/indexer/exceptions/AttributeException/AttributeException(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///com/wwm/postcode/PostcodeConvertor/lookupFull(java.lang.String)|",
+      "|java+method:///com/wwm/geo/GeoInformation/getLongitude()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///com/wwm/indexer/db/converters/UKPostcodeToVectorDerivation/convertStringToInternal(int,java.lang.String)|",
+      "|java+method:///com/wwm/geo/GeoInformation/getLatitude()|",
+      "|java+method:///com/wwm/attrs/location/EcefVector/fromDegs(int,double,double)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///com/wwm/postcode/PostcodeConvertor/lookupShort(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/wwm/indexer/exceptions/AttributeException/AttributeException(java.lang.String)|",
+      "|java+method:///org/fuzzydb/postcode/PostcodeConvertor/lookupShort(java.lang.String)|",
+      "|java+method:///org/fuzzydb/util/geo/GeoInformation/getLatitude()|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+method:///org/fuzzydb/util/geo/GeoInformation/getLongitude()|",
+      "|java+method:///org/fuzzydb/postcode/PostcodeConvertor/lookupFull(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///com/wwm/indexer/db/converters/UKPostcodeToVectorDerivation/convertStringToInternal(int,java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/fuzzydb/attrs/location/EcefVector/fromDegs(int,double,double)|"
+    ],
+    "affectedLib": "org.fuzzydb.attrs:org.fuzzydb.attrs:1.0.0.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.fuzzydb:org.fuzzydb.indexer:1.0.0.M4",
+    "coordinatesV2": "org.fuzzydb:org.fuzzydb.indexer:1.0.0.RELEASE",
+    "caller": "|java+method:///com/wwm/indexer/db/converters/ConversionFactory/getConverterFromAttrType(int)|",
+    "called": "|java+method:///org/fuzzydb/attrs/internal/AttrDefinitionMgr/getAttrType(int)|",
+    "v1Body": [
+      "|java+method:///com/wwm/indexer/db/converters/FloatConverter/getInstance()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///java/lang/Error/Error(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///com/wwm/indexer/db/converters/BooleanConverter/getInstance()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///com/wwm/indexer/db/converters/StringConverter/getInstance()|",
+      "|java+method:///com/wwm/indexer/db/converters/FloatRangeConverter/getInstance()|",
+      "|java+method:///com/wwm/attrs/internal/AttrDefinitionMgr/getAttrType(int)|",
+      "|java+method:///com/wwm/attrs/internal/AttrDefinitionMgr$AttrType/ordinal()|",
+      "|java+method:///com/wwm/indexer/db/converters/EcefConverter/getInstance()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///com/wwm/indexer/db/converters/DateConverter/getInstance()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/wwm/indexer/db/converters/FloatConverter/getInstance()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/fuzzydb/attrs/internal/AttrDefinitionMgr/getAttrType(int)|",
+      "|java+constructor:///java/lang/Error/Error(java.lang.String)|",
+      "|java+method:///com/wwm/indexer/db/converters/EcefConverter/getInstance()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///com/wwm/indexer/db/converters/BooleanConverter/getInstance()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///com/wwm/indexer/db/converters/StringConverter/getInstance()|",
+      "|java+method:///com/wwm/indexer/db/converters/FloatRangeConverter/getInstance()|",
+      "|java+method:///org/fuzzydb/attrs/internal/AttrDefinitionMgr$AttrType/ordinal()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///com/wwm/indexer/db/converters/DateConverter/getInstance()|"
+    ],
+    "affectedLib": "org.fuzzydb.attrs:org.fuzzydb.attrs:1.0.0.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.fuzzydb:org.fuzzydb.indexer:1.0.0.M4",
+    "coordinatesV2": "org.fuzzydb:org.fuzzydb.indexer:1.0.0.RELEASE",
+    "caller": "|java+method:///com/wwm/indexer/internal/random/PostcodeConverter/convertToInternal(int,java.lang.Object)|",
+    "called": "|java+method:///org/fuzzydb/attrs/location/EcefVector/fromDegs(int,double,double)|",
+    "v1Body": [
+      "|java+constructor:///com/wwm/indexer/exceptions/AttributeException/AttributeException(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///com/wwm/model/attributes/LocationAttribute/getName()|",
+      "|java+method:///com/wwm/model/attributes/LocationAttribute/getPostcode()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/springframework/core/convert/converter/Converter/convert(java.lang.Object)|",
+      "|java+method:///com/wwm/geo/GeoInformation/getLongitude()|",
+      "|java+method:///com/wwm/geo/GeoInformation/getLatitude()|",
+      "|java+method:///com/wwm/attrs/location/EcefVector/fromDegs(int,double,double)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/String/valueOf(int)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/wwm/indexer/exceptions/AttributeException/AttributeException(java.lang.String)|",
+      "|java+method:///org/fuzzydb/util/geo/GeoInformation/getLatitude()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/fuzzydb/util/geo/GeoInformation/getLongitude()|",
+      "|java+method:///org/springframework/core/convert/converter/Converter/convert(java.lang.Object)|",
+      "|java+method:///org/fuzzydb/dto/attributes/LocationAttribute/getName()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/fuzzydb/attrs/location/EcefVector/fromDegs(int,double,double)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/fuzzydb/dto/attributes/LocationAttribute/getPostcode()|",
+      "|java+method:///java/lang/String/valueOf(int)|"
+    ],
+    "affectedLib": "org.fuzzydb.attrs:org.fuzzydb.attrs:1.0.0.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.fuzzydb:org.fuzzydb.indexer:1.0.0.M4",
+    "coordinatesV2": "org.fuzzydb:org.fuzzydb.indexer:1.0.0.RELEASE",
+    "caller": "|java+method:///com/wwm/indexer/internal/random/RandomFullPostcode/next(java.lang.String)|",
+    "called": "|java+method:///org/fuzzydb/postcode/RandomPostcodeGenerator/nextFullPostcode()|",
+    "v1Body": [
+      "|java+method:///com/wwm/indexer/internal/random/RandomFullPostcode/next(java.lang.String)|",
+      "|java+method:///com/wwm/postcode/RandomPostcodeGenerator/nextFullPostcode()|",
+      "|java+method:///com/wwm/indexer/internal/random/RandomFullPostcode/getGen()|",
+      "|java+constructor:///com/wwm/model/attributes/NonIndexStringAttribute/NonIndexStringAttribute(java.lang.String,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/fuzzydb/postcode/RandomPostcodeGenerator/nextFullPostcode()|",
+      "|java+method:///com/wwm/indexer/internal/random/RandomFullPostcode/getGen()|",
+      "|java+method:///com/wwm/indexer/internal/random/RandomFullPostcode/next(java.lang.String)|",
+      "|java+constructor:///org/fuzzydb/dto/attributes/NonIndexStringAttribute/NonIndexStringAttribute(java.lang.String,java.lang.String)|"
+    ],
+    "affectedLib": "org.fuzzydb:org.fuzzydb.postcode:1.0.0.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.fuzzydb:org.fuzzydb.indexer:1.0.0.M4",
+    "coordinatesV2": "org.fuzzydb:org.fuzzydb.indexer:1.0.0.RELEASE",
+    "caller": "|java+method:///com/wwm/indexer/internal/random/RandomLocation/getGen()|",
+    "called": "|java+constructor:///org/fuzzydb/postcode/RandomPostcodeGenerator/RandomPostcodeGenerator(java.util.Random)|",
+    "v1Body": [
+      "|java+constructor:///com/wwm/postcode/RandomPostcodeGenerator/RandomPostcodeGenerator(java.util.Random)|",
+      "|java+method:///com/wwm/util/MTRandom/getInstance()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/fuzzydb/postcode/RandomPostcodeGenerator/RandomPostcodeGenerator(java.util.Random)|",
+      "|java+method:///org/fuzzydb/util/MTRandom/getInstance()|"
+    ],
+    "affectedLib": "org.fuzzydb:org.fuzzydb.postcode:1.0.0.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.fuzzydb:org.fuzzydb.indexer:1.0.0.M4",
+    "coordinatesV2": "org.fuzzydb:org.fuzzydb.indexer:1.0.0.RELEASE",
+    "caller": "|java+initializer:///com/wwm/indexer/db/converters/TempFactory/TempFactory$initializer|",
+    "called": "|java+constructor:///org/fuzzydb/postcode/PostcodeConvertor/PostcodeConvertor()|",
+    "v1Body": [
+      "|java+constructor:///com/wwm/postcode/PostcodeConvertor/PostcodeConvertor()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/fuzzydb/postcode/PostcodeConvertor/PostcodeConvertor()|"
+    ],
+    "affectedLib": "org.fuzzydb:org.fuzzydb.postcode:1.0.0.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.fuzzydb:org.fuzzydb.indexer:1.0.0.M4",
+    "coordinatesV2": "org.fuzzydb:org.fuzzydb.indexer:1.0.0.RELEASE",
+    "caller": "|java+method:///com/wwm/indexer/db/converters/UKPostcodeToVectorDerivation/convertStringToInternal(int,java.lang.String)|",
+    "called": "|java+method:///org/fuzzydb/postcode/PostcodeConvertor/lookupFull(java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///com/wwm/indexer/exceptions/AttributeException/AttributeException(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///com/wwm/postcode/PostcodeConvertor/lookupFull(java.lang.String)|",
+      "|java+method:///com/wwm/geo/GeoInformation/getLongitude()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///com/wwm/indexer/db/converters/UKPostcodeToVectorDerivation/convertStringToInternal(int,java.lang.String)|",
+      "|java+method:///com/wwm/geo/GeoInformation/getLatitude()|",
+      "|java+method:///com/wwm/attrs/location/EcefVector/fromDegs(int,double,double)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///com/wwm/postcode/PostcodeConvertor/lookupShort(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/wwm/indexer/exceptions/AttributeException/AttributeException(java.lang.String)|",
+      "|java+method:///org/fuzzydb/postcode/PostcodeConvertor/lookupShort(java.lang.String)|",
+      "|java+method:///org/fuzzydb/util/geo/GeoInformation/getLatitude()|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+method:///org/fuzzydb/util/geo/GeoInformation/getLongitude()|",
+      "|java+method:///org/fuzzydb/postcode/PostcodeConvertor/lookupFull(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///com/wwm/indexer/db/converters/UKPostcodeToVectorDerivation/convertStringToInternal(int,java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/fuzzydb/attrs/location/EcefVector/fromDegs(int,double,double)|"
+    ],
+    "affectedLib": "org.fuzzydb:org.fuzzydb.postcode:1.0.0.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.fuzzydb:org.fuzzydb.indexer:1.0.0.M4",
+    "coordinatesV2": "org.fuzzydb:org.fuzzydb.indexer:1.0.0.RELEASE",
+    "caller": "|java+method:///com/wwm/indexer/internal/random/RandomLocation/next(java.lang.String)|",
+    "called": "|java+method:///org/fuzzydb/postcode/RandomPostcodeGenerator/nextFullPostcode()|",
+    "v1Body": [
+      "|java+method:///com/wwm/indexer/internal/random/PostcodeConverter/convertToInternal(int,java.lang.Object)|",
+      "|java+method:///com/wwm/indexer/internal/random/RandomLocation/getConverter()|",
+      "|java+method:///com/wwm/postcode/RandomPostcodeGenerator/nextFullPostcode()|",
+      "|java+constructor:///com/wwm/model/attributes/Point3DAttribute/Point3DAttribute(java.lang.String,com.wwm.model.dimensions.IPoint3D)|",
+      "|java+method:///com/wwm/indexer/internal/random/RandomLocation/getGen()|",
+      "|java+constructor:///java/lang/Error/Error(java.lang.Throwable)|",
+      "|java+method:///com/wwm/util/MTRandom/getInstance()|",
+      "|java+method:///com/wwm/indexer/internal/random/RandomLocation/next(java.lang.String)|",
+      "|java+method:///com/wwm/util/MTRandom/nextInt(int)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/wwm/indexer/internal/random/PostcodeConverter/convertToInternal(int,java.lang.Object)|",
+      "|java+method:///com/wwm/indexer/internal/random/RandomLocation/getConverter()|",
+      "|java+method:///org/fuzzydb/util/MTRandom/nextInt(int)|",
+      "|java+method:///com/wwm/indexer/internal/random/RandomLocation/getGen()|",
+      "|java+constructor:///java/lang/Error/Error(java.lang.Throwable)|",
+      "|java+method:///org/fuzzydb/util/MTRandom/getInstance()|",
+      "|java+method:///org/fuzzydb/postcode/RandomPostcodeGenerator/nextFullPostcode()|",
+      "|java+method:///com/wwm/indexer/internal/random/RandomLocation/next(java.lang.String)|",
+      "|java+constructor:///org/fuzzydb/dto/attributes/Point3DAttribute/Point3DAttribute(java.lang.String,org.fuzzydb.dto.dimensions.IPoint3D)|"
+    ],
+    "affectedLib": "org.fuzzydb:org.fuzzydb.postcode:1.0.0.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.fuzzydb:org.fuzzydb.indexer:1.0.0.M4",
+    "coordinatesV2": "org.fuzzydb:org.fuzzydb.indexer:1.0.0.RELEASE",
+    "caller": "|java+method:///com/wwm/indexer/internal/random/RandomFullPostcode/getGen()|",
+    "called": "|java+constructor:///org/fuzzydb/postcode/RandomPostcodeGenerator/RandomPostcodeGenerator(java.util.Random)|",
+    "v1Body": [
+      "|java+constructor:///com/wwm/postcode/RandomPostcodeGenerator/RandomPostcodeGenerator(java.util.Random)|",
+      "|java+method:///com/wwm/util/MTRandom/getInstance()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/fuzzydb/postcode/RandomPostcodeGenerator/RandomPostcodeGenerator(java.util.Random)|",
+      "|java+method:///org/fuzzydb/util/MTRandom/getInstance()|"
+    ],
+    "affectedLib": "org.fuzzydb:org.fuzzydb.postcode:1.0.0.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.fuzzydb:org.fuzzydb.indexer:1.0.0.M4",
+    "coordinatesV2": "org.fuzzydb:org.fuzzydb.indexer:1.0.0.RELEASE",
+    "caller": "|java+method:///com/wwm/indexer/db/converters/UKPostcodeToVectorDerivation/convertToInternal(int,java.lang.Object)|",
+    "called": "|java+method:///org/fuzzydb/postcode/PostcodeConvertor/lookupFull(java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///com/wwm/indexer/exceptions/AttributeException/AttributeException(java.lang.String)|",
+      "|java+method:///com/wwm/model/attributes/NonIndexStringAttribute/getValue()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///com/wwm/indexer/db/converters/UKPostcodeToVectorDerivation/convertToInternal(int,java.lang.Object)|",
+      "|java+method:///com/wwm/model/attributes/NonIndexStringAttribute/getName()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///com/wwm/postcode/PostcodeConvertor/lookupFull(java.lang.String)|",
+      "|java+method:///com/wwm/geo/GeoInformation/getLongitude()|",
+      "|java+method:///com/wwm/geo/GeoInformation/getLatitude()|",
+      "|java+method:///com/wwm/attrs/location/EcefVector/fromDegs(int,double,double)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///com/wwm/postcode/PostcodeConvertor/lookupShort(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/wwm/indexer/exceptions/AttributeException/AttributeException(java.lang.String)|",
+      "|java+method:///org/fuzzydb/postcode/PostcodeConvertor/lookupShort(java.lang.String)|",
+      "|java+method:///org/fuzzydb/util/geo/GeoInformation/getLatitude()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///com/wwm/indexer/db/converters/UKPostcodeToVectorDerivation/convertToInternal(int,java.lang.Object)|",
+      "|java+method:///org/fuzzydb/util/geo/GeoInformation/getLongitude()|",
+      "|java+method:///org/fuzzydb/dto/attributes/NonIndexStringAttribute/getName()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/fuzzydb/attrs/location/EcefVector/fromDegs(int,double,double)|",
+      "|java+method:///org/fuzzydb/postcode/PostcodeConvertor/lookupFull(java.lang.String)|",
+      "|java+method:///org/fuzzydb/dto/attributes/NonIndexStringAttribute/getValue()|"
+    ],
+    "affectedLib": "org.fuzzydb:org.fuzzydb.postcode:1.0.0.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.fuzzydb:org.fuzzydb.indexer:1.0.0.M4",
+    "coordinatesV2": "org.fuzzydb:org.fuzzydb.indexer:1.0.0.RELEASE",
+    "caller": "|java+method:///com/wwm/indexer/internal/random/RandomShortPostcode/next(java.lang.String)|",
+    "called": "|java+method:///org/fuzzydb/postcode/RandomPostcodeGenerator/nextShortPostcode()|",
+    "v1Body": [
+      "|java+method:///com/wwm/indexer/internal/random/RandomShortPostcode/next(java.lang.String)|",
+      "|java+constructor:///com/wwm/model/attributes/NonIndexStringAttribute/NonIndexStringAttribute(java.lang.String,java.lang.String)|",
+      "|java+method:///com/wwm/postcode/RandomPostcodeGenerator/nextShortPostcode()|",
+      "|java+method:///com/wwm/indexer/internal/random/RandomShortPostcode/getGen()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/fuzzydb/dto/attributes/NonIndexStringAttribute/NonIndexStringAttribute(java.lang.String,java.lang.String)|",
+      "|java+method:///com/wwm/indexer/internal/random/RandomShortPostcode/next(java.lang.String)|",
+      "|java+method:///org/fuzzydb/postcode/RandomPostcodeGenerator/nextShortPostcode()|",
+      "|java+method:///com/wwm/indexer/internal/random/RandomShortPostcode/getGen()|"
+    ],
+    "affectedLib": "org.fuzzydb:org.fuzzydb.postcode:1.0.0.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.fuzzydb:org.fuzzydb.indexer:1.0.0.M4",
+    "coordinatesV2": "org.fuzzydb:org.fuzzydb.indexer:1.0.0.RELEASE",
+    "caller": "|java+method:///com/wwm/indexer/db/converters/UKPostcodeToPlaceDerivation/convertToInternal(int,java.lang.Object)|",
+    "called": "|java+method:///org/fuzzydb/postcode/PostcodeConvertor/lookupFull(java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///com/wwm/indexer/exceptions/AttributeException/AttributeException(java.lang.String)|",
+      "|java+method:///com/wwm/model/attributes/NonIndexStringAttribute/getValue()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///com/wwm/model/attributes/NonIndexStringAttribute/getName()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///com/wwm/postcode/PostcodeConvertor/lookupFull(java.lang.String)|",
+      "|java+method:///com/wwm/geo/GeoInformation/getTown()|",
+      "|java+method:///com/wwm/indexer/db/converters/UKPostcodeToPlaceDerivation/convertToInternal(int,java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///com/wwm/postcode/PostcodeConvertor/lookupShort(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/wwm/indexer/exceptions/AttributeException/AttributeException(java.lang.String)|",
+      "|java+method:///org/fuzzydb/postcode/PostcodeConvertor/lookupShort(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/fuzzydb/util/geo/GeoInformation/getTown()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/fuzzydb/dto/attributes/NonIndexStringAttribute/getName()|",
+      "|java+method:///com/wwm/indexer/db/converters/UKPostcodeToPlaceDerivation/convertToInternal(int,java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/fuzzydb/postcode/PostcodeConvertor/lookupFull(java.lang.String)|",
+      "|java+method:///org/fuzzydb/dto/attributes/NonIndexStringAttribute/getValue()|"
+    ],
+    "affectedLib": "org.fuzzydb:org.fuzzydb.postcode:1.0.0.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.fuzzydb:org.fuzzydb.indexer:1.0.0.M4",
+    "coordinatesV2": "org.fuzzydb:org.fuzzydb.indexer:1.0.0.RELEASE",
+    "caller": "|java+method:///com/wwm/indexer/internal/random/RandomShortPostcode/getGen()|",
+    "called": "|java+constructor:///org/fuzzydb/postcode/RandomPostcodeGenerator/RandomPostcodeGenerator(java.util.Random)|",
+    "v1Body": [
+      "|java+constructor:///com/wwm/postcode/RandomPostcodeGenerator/RandomPostcodeGenerator(java.util.Random)|",
+      "|java+method:///com/wwm/util/MTRandom/getInstance()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/fuzzydb/postcode/RandomPostcodeGenerator/RandomPostcodeGenerator(java.util.Random)|",
+      "|java+method:///org/fuzzydb/util/MTRandom/getInstance()|"
+    ],
+    "affectedLib": "org.fuzzydb:org.fuzzydb.postcode:1.0.0.RELEASE",
+    "change": "UPDATED"
+  }
+]

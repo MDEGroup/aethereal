@@ -1,0 +1,44 @@
+[
+  {
+    "coordinatesV1": "io.dropwizard:dropwizard-servlets:0.7.0",
+    "coordinatesV2": "io.dropwizard:dropwizard-servlets:0.7.1",
+    "caller": "|java+method:///io/dropwizard/servlets/tasks/TaskServlet/add(io.dropwizard.servlets.tasks.Task)|",
+    "called": "|java+method:///com/codahale/metrics/MetricRegistry/meter(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///io/dropwizard/servlets/tasks/Task/getName()|",
+      "|java+method:///java/util/concurrent/ConcurrentMap/put(java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/append(char)|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///io/dropwizard/servlets/tasks/TaskServlet$ExceptionMeteredTask/TaskServlet$ExceptionMeteredTask(io.dropwizard.servlets.tasks.TaskServlet$TaskExecutor,com.codahale.metrics.Meter,java.lang.Class,io.dropwizard.servlets.tasks.TaskServlet$1)|",
+      "|java+method:///com/codahale/metrics/annotation/Metered/absolute()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///com/codahale/metrics/MetricRegistry/timer(java.lang.String)|",
+      "|java+method:///com/codahale/metrics/annotation/ExceptionMetered/name()|",
+      "|java+method:///com/codahale/metrics/MetricRegistry/meter(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///io/dropwizard/servlets/tasks/TaskServlet$MeteredTask/TaskServlet$MeteredTask(io.dropwizard.servlets.tasks.TaskServlet$TaskExecutor,com.codahale.metrics.Meter,io.dropwizard.servlets.tasks.TaskServlet$1)|",
+      "|java+method:///io/dropwizard/servlets/tasks/TaskServlet/chooseName(java.lang.String,boolean,io.dropwizard.servlets.tasks.Task,java.lang.String%5B%5D)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///io/dropwizard/servlets/tasks/Task/getName()|",
+      "|java+method:///java/lang/Class/getMethod(java.lang.String,java.lang.Class%5B%5D)|",
+      "|java+method:///java/lang/reflect/Method/getAnnotation(java.lang.Class)|",
+      "|java+method:///com/codahale/metrics/annotation/Timed/name()|",
+      "|java+constructor:///io/dropwizard/servlets/tasks/TaskServlet$TaskExecutor/TaskServlet$TaskExecutor(io.dropwizard.servlets.tasks.Task,io.dropwizard.servlets.tasks.TaskServlet$1)|",
+      "|java+method:///java/lang/reflect/Method/isAnnotationPresent(java.lang.Class)|",
+      "|java+method:///java/util/concurrent/ConcurrentMap/put(java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///io/dropwizard/servlets/tasks/TaskServlet$TimedTask/TaskServlet$TimedTask(io.dropwizard.servlets.tasks.TaskServlet$TaskExecutor,com.codahale.metrics.Timer,io.dropwizard.servlets.tasks.TaskServlet$1)|",
+      "|java+method:///com/codahale/metrics/annotation/Timed/absolute()|",
+      "|java+method:///java/lang/StringBuilder/append(char)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///com/codahale/metrics/annotation/Metered/name()|",
+      "|java+method:///com/codahale/metrics/annotation/ExceptionMetered/absolute()|",
+      "|java+method:///com/codahale/metrics/annotation/ExceptionMetered/cause()|"
+    ],
+    "affectedLib": "com.codahale.metrics:metrics-core:3.0.2",
+    "change": "ADDED"
+  }
+]

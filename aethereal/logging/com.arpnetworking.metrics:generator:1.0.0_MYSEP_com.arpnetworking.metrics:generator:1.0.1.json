@@ -1,0 +1,157 @@
+[
+  {
+    "coordinatesV1": "com.arpnetworking.metrics:generator:1.0.1",
+    "coordinatesV2": "com.arpnetworking.metrics:generator:1.0.0",
+    "caller": "|java+initializer:///com/arpnetworking/metrics/generator/util/TestFileGenerator/TestFileGenerator$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/arpnetworking/steno/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.12",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.arpnetworking.metrics:generator:1.0.1",
+    "coordinatesV2": "com.arpnetworking.metrics:generator:1.0.0",
+    "caller": "|java+initializer:///com/arpnetworking/metrics/generator/Generator/Generator$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/arpnetworking/steno/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.12",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.arpnetworking.metrics:generator:1.0.0",
+    "coordinatesV2": "com.arpnetworking.metrics:generator:1.0.1",
+    "caller": "|java+initializer:///com/arpnetworking/metrics/generator/util/TestFileGenerator/TestFileGenerator$initializer|",
+    "called": "|java+method:///com/arpnetworking/steno/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/arpnetworking/steno/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "com.arpnetworking.logback:logback-steno:1.11.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.arpnetworking.metrics:generator:1.0.0",
+    "coordinatesV2": "com.arpnetworking.metrics:generator:1.0.1",
+    "caller": "|java+method:///com/arpnetworking/metrics/generator/Generator/run()|",
+    "called": "|java+method:///com/arpnetworking/steno/Logger/error()|",
+    "v1Body": [
+      "|java+method:///com/arpnetworking/metrics/generator/Generator/generateTestFiles(org.apache.commons.math3.random.RandomGenerator)|",
+      "|java+constructor:///org/apache/commons/math3/random/MersenneTwister/MersenneTwister(int)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///com/arpnetworking/metrics/generator/Generator/generateContinuous(org.apache.commons.math3.random.RandomGenerator)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/arpnetworking/steno/LogBuilder/setMessage(java.lang.String)|",
+      "|java+method:///com/arpnetworking/metrics/generator/Generator/generateTestFiles(org.apache.commons.math3.random.RandomGenerator)|",
+      "|java+constructor:///org/apache/commons/math3/random/MersenneTwister/MersenneTwister(int)|",
+      "|java+method:///com/arpnetworking/metrics/generator/Generator/generateContinuous(org.apache.commons.math3.random.RandomGenerator)|",
+      "|java+method:///com/arpnetworking/steno/Logger/error()|",
+      "|java+method:///com/arpnetworking/steno/LogBuilder/log()|",
+      "|java+method:///com/arpnetworking/steno/LogBuilder/setThrowable(java.lang.Throwable)|"
+    ],
+    "affectedLib": "com.arpnetworking.logback:logback-steno:1.11.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.arpnetworking.metrics:generator:1.0.0",
+    "coordinatesV2": "com.arpnetworking.metrics:generator:1.0.1",
+    "caller": "|java+initializer:///com/arpnetworking/metrics/generator/Generator/Generator$initializer|",
+    "called": "|java+method:///com/arpnetworking/steno/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/arpnetworking/steno/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "com.arpnetworking.logback:logback-steno:1.11.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.arpnetworking.metrics:generator:1.0.0",
+    "coordinatesV2": "com.arpnetworking.metrics:generator:1.0.1",
+    "caller": "|java+method:///com/arpnetworking/metrics/generator/util/TestFileGenerator/generate()|",
+    "called": "|java+method:///com/arpnetworking/steno/Logger/warn()|",
+    "v1Body": [
+      "|java+method:///java/lang/Integer/intValue()|",
+      "|java+constructor:///com/arpnetworking/metrics/generator/metric/GaussianMetricGenerator/GaussianMetricGenerator(double,double,com.arpnetworking.metrics.generator.name.NameGenerator)|",
+      "|java+constructor:///com/arpnetworking/metrics/generator/schedule/ConstantTimeScheduler/ConstantTimeScheduler(long)|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///org/joda/time/Duration/Duration(org.joda.time.ReadableInstant,org.joda.time.ReadableInstant)|",
+      "|java+method:///com/google/common/collect/Lists/newArrayList()|",
+      "|java+method:///com/google/common/base/Throwables/propagate(java.lang.Throwable)|",
+      "|java+method:///java/nio/file/Path/toAbsolutePath()|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///org/joda/time/Duration/getMillis()|",
+      "|java+method:///java/nio/file/Files/readAttributes(java.nio.file.Path,java.lang.Class,java.nio.file.LinkOption%5B%5D)|",
+      "|java+constructor:///com/arpnetworking/metrics/generator/uow/UnitOfWorkGenerator/UnitOfWorkGenerator(java.util.List)|",
+      "|java+constructor:///com/arpnetworking/metrics/generator/util/IntervalExecutor/IntervalExecutor(org.joda.time.DateTime,org.joda.time.DateTime,java.util.List,java.nio.file.Path,java.lang.String,java.lang.String)|",
+      "|java+constructor:///com/arpnetworking/metrics/generator/schedule/ConstantTimeScheduler/ConstantTimeScheduler(org.joda.time.Period)|",
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///java/nio/file/attribute/BasicFileAttributes/size()|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///org/joda/time/Duration/plus(org.joda.time.ReadableDuration)|",
+      "|java+constructor:///com/arpnetworking/metrics/generator/metric/ConstantMetricGenerator/ConstantMetricGenerator(long,com.arpnetworking.metrics.generator.name.NameGenerator)|",
+      "|java+method:///java/nio/file/Files/deleteIfExists(java.nio.file.Path)|",
+      "|java+constructor:///com/arpnetworking/metrics/generator/name/SingleNameGenerator/SingleNameGenerator(org.apache.commons.math3.random.RandomGenerator)|",
+      "|java+constructor:///com/arpnetworking/metrics/generator/name/SpecifiedName/SpecifiedName(java.lang.String)|",
+      "|java+method:///java/util/concurrent/TimeUnit/convert(long,java.util.concurrent.TimeUnit)|",
+      "|java+method:///org/joda/time/Duration/toPeriod()|",
+      "|java+constructor:///com/arpnetworking/metrics/generator/metric/ConstantCountMetricGenerator/ConstantCountMetricGenerator(int,com.arpnetworking.metrics.generator.metric.MetricGenerator)|",
+      "|java+method:///com/arpnetworking/metrics/generator/util/IntervalExecutor/execute()|",
+      "|java+method:///org/joda/time/Duration/standardHours(long)|",
+      "|java+constructor:///com/arpnetworking/metrics/generator/uow/UnitOfWorkSchedule/UnitOfWorkSchedule(com.arpnetworking.metrics.generator.uow.UnitOfWorkGenerator,com.arpnetworking.metrics.generator.schedule.Scheduler)|",
+      "|java+method:///java/util/Collections/singletonList(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Integer/intValue()|",
+      "|java+constructor:///com/arpnetworking/metrics/generator/metric/GaussianMetricGenerator/GaussianMetricGenerator(double,double,com.arpnetworking.metrics.generator.name.NameGenerator)|",
+      "|java+constructor:///com/arpnetworking/metrics/generator/schedule/ConstantTimeScheduler/ConstantTimeScheduler(long)|",
+      "|java+constructor:///org/joda/time/Duration/Duration(org.joda.time.ReadableInstant,org.joda.time.ReadableInstant)|",
+      "|java+method:///com/arpnetworking/steno/LogBuilder/addData(java.lang.String,java.lang.Object)|",
+      "|java+method:///com/google/common/collect/Lists/newArrayList()|",
+      "|java+method:///com/arpnetworking/steno/Logger/warn()|",
+      "|java+method:///com/google/common/base/Throwables/propagate(java.lang.Throwable)|",
+      "|java+method:///java/nio/file/Path/toAbsolutePath()|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///com/arpnetworking/steno/LogBuilder/log()|",
+      "|java+method:///org/joda/time/Duration/getMillis()|",
+      "|java+constructor:///com/arpnetworking/metrics/generator/uow/UnitOfWorkGenerator/UnitOfWorkGenerator(java.util.List)|",
+      "|java+constructor:///com/arpnetworking/metrics/generator/util/IntervalExecutor/IntervalExecutor(org.joda.time.DateTime,org.joda.time.DateTime,java.util.List,java.nio.file.Path,java.lang.String,java.lang.String)|",
+      "|java+constructor:///com/arpnetworking/metrics/generator/schedule/ConstantTimeScheduler/ConstantTimeScheduler(org.joda.time.Period)|",
+      "|java+method:///com/arpnetworking/steno/LogBuilder/setMessage(java.lang.String)|",
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///java/nio/file/attribute/BasicFileAttributes/size()|",
+      "|java+method:///org/joda/time/Duration/plus(org.joda.time.ReadableDuration)|",
+      "|java+constructor:///com/arpnetworking/metrics/generator/metric/ConstantMetricGenerator/ConstantMetricGenerator(long,com.arpnetworking.metrics.generator.name.NameGenerator)|",
+      "|java+method:///java/nio/file/Files/deleteIfExists(java.nio.file.Path)|",
+      "|java+constructor:///com/arpnetworking/metrics/generator/name/SingleNameGenerator/SingleNameGenerator(org.apache.commons.math3.random.RandomGenerator)|",
+      "|java+constructor:///com/arpnetworking/metrics/generator/name/SpecifiedName/SpecifiedName(java.lang.String)|",
+      "|java+method:///java/util/concurrent/TimeUnit/convert(long,java.util.concurrent.TimeUnit)|",
+      "|java+constructor:///com/arpnetworking/metrics/generator/metric/ConstantCountMetricGenerator/ConstantCountMetricGenerator(int,com.arpnetworking.metrics.generator.metric.MetricGenerator)|",
+      "|java+method:///com/arpnetworking/steno/LogBuilder/setEvent(java.lang.String)|",
+      "|java+method:///org/joda/time/Duration/toPeriod()|",
+      "|java+method:///com/arpnetworking/metrics/generator/util/IntervalExecutor/execute()|",
+      "|java+method:///com/arpnetworking/steno/Logger/info()|",
+      "|java+method:///org/joda/time/Duration/standardHours(long)|",
+      "|java+constructor:///com/arpnetworking/metrics/generator/uow/UnitOfWorkSchedule/UnitOfWorkSchedule(com.arpnetworking.metrics.generator.uow.UnitOfWorkGenerator,com.arpnetworking.metrics.generator.schedule.Scheduler)|",
+      "|java+method:///java/util/Collections/singletonList(java.lang.Object)|",
+      "|java+method:///java/nio/file/Files/readAttributes(java.nio.file.Path,java.lang.Class,java.nio.file.LinkOption%5B%5D)|",
+      "|java+method:///com/arpnetworking/steno/LogBuilder/setThrowable(java.lang.Throwable)|"
+    ],
+    "affectedLib": "com.arpnetworking.logback:logback-steno:1.11.1",
+    "change": "ADDED"
+  }
+]

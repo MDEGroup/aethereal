@@ -1,0 +1,100 @@
+[
+  {
+    "coordinatesV1": "com.github.yamingd.argo:argo-db:2.3.0",
+    "coordinatesV2": "com.github.yamingd.argo:argo-db:2.2.7",
+    "caller": "|java+method:///com/argo/db/datasource/JdbcDatasourceFactoryBean/afterPropertiesSet()|",
+    "called": "|java+constructor:///com/jolbox/bonecp/BoneCPDataSource/BoneCPDataSource(com.jolbox.bonecp.BoneCPConfig)|",
+    "v1Body": [
+      "|java+method:///com/jolbox/bonecp/BoneCPConfig/setJdbcUrl(java.lang.String)|",
+      "|java+method:///com/argo/db/datasource/JdbcDatasourceFactoryBean/getConfName()|",
+      "|java+method:///org/apache/commons/lang3/StringUtils/isNotBlank(java.lang.CharSequence)|",
+      "|java+method:///com/argo/db/BoneCPConfigBuilder/build(java.lang.String)|",
+      "|java+constructor:///com/jolbox/bonecp/BoneCPDataSource/BoneCPDataSource(com.jolbox.bonecp.BoneCPConfig)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/argo/db/JdbcConfig/load(java.lang.String)|",
+      "|java+method:///com/argo/db/datasource/JdbcDatasourceFactoryBean/getConfName()|",
+      "|java+method:///com/argo/db/JdbcConfig/setUrl(java.lang.String)|",
+      "|java+method:///com/argo/db/datasource/MySqlMSDataSource/init()|",
+      "|java+method:///org/apache/commons/lang3/StringUtils/isNotBlank(java.lang.CharSequence)|",
+      "|java+constructor:///com/argo/db/datasource/MySqlMSDataSource/MySqlMSDataSource(com.argo.db.JdbcConfig,java.lang.String)|"
+    ],
+    "affectedLib": "com.jolbox:bonecp:0.8.0.RELEASE",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.github.yamingd.argo:argo-db:2.3.0",
+    "coordinatesV2": "com.github.yamingd.argo:argo-db:2.2.7",
+    "caller": "|java+method:///com/argo/db/datasource/MySqlMSDataSourceFactoryBean/afterPropertiesSet()|",
+    "called": "|java+method:///com/jolbox/bonecp/BoneCPConfig/setPoolName(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///com/argo/db/datasource/MySqlMSRoutingDataSource/setTargetDataSources(java.util.List)|",
+      "|java+method:///com/jolbox/bonecp/BoneCPConfig/setPoolName(java.lang.String)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///com/argo/db/datasource/MySqlMSDataSourceFactoryBean/getRole()|",
+      "|java+method:///com/argo/db/datasource/MySqlMSDataSource/setRole(java.lang.String)|",
+      "|java+constructor:///com/argo/db/datasource/MySqlMSDataSource/MySqlMSDataSource(com.jolbox.bonecp.BoneCPConfig,java.lang.String)|",
+      "|java+method:///com/google/common/collect/Lists/newArrayList()|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///java/util/List/size()|",
+      "|java+constructor:///com/argo/db/datasource/MySqlMSRoutingDataSource/MySqlMSRoutingDataSource()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object)|",
+      "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean,java.lang.Object)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///com/argo/db/datasource/MySqlMSRoutingDataSource/setName(java.lang.String)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///com/argo/db/datasource/MySqlMSDataSourceFactoryBean/getName()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///com/jolbox/bonecp/BoneCPConfig/setJdbcUrl(java.lang.String)|",
+      "|java+method:///com/argo/db/datasource/MySqlMSRoutingDataSource/setRole(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///com/argo/db/datasource/MySqlMSDataSource/setDriverClass(java.lang.String)|",
+      "|java+method:///com/argo/db/BoneCPConfigBuilder/build(java.lang.String)|",
+      "|java+method:///com/argo/db/datasource/MySqlMSDataSourceFactoryBean/getServers()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/argo/db/datasource/MySqlMSRoutingDataSource/setTargetDataSources(java.util.List)|",
+      "|java+method:///com/argo/db/datasource/MySqlMSRoutingDataSource/setRole(java.lang.String)|",
+      "|java+method:///com/argo/db/datasource/MySqlMSDataSourceFactoryBean/getRole()|",
+      "|java+method:///com/argo/db/datasource/MySqlMSDataSource/setRole(java.lang.String)|",
+      "|java+method:///com/google/common/collect/Lists/newArrayList()|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///com/google/common/base/Preconditions/checkNotNull(java.lang.Object)|",
+      "|java+method:///com/google/common/base/Preconditions/checkArgument(boolean,java.lang.Object)|",
+      "|java+method:///com/argo/db/datasource/MySqlMSDataSource/setDriverClassName(java.lang.String)|",
+      "|java+method:///com/argo/db/datasource/MySqlMSDataSourceFactoryBean/getServers()|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///com/argo/db/datasource/MySqlMSRoutingDataSource/setName(java.lang.String)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///com/argo/db/datasource/MySqlMSDataSourceFactoryBean/getName()|",
+      "|java+constructor:///com/argo/db/datasource/MySqlMSDataSource/MySqlMSDataSource(com.argo.db.JdbcConfig,java.lang.String)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///com/argo/db/JdbcConfig/load(java.lang.String)|",
+      "|java+method:///com/argo/db/JdbcConfig/setUrl(java.lang.String)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+constructor:///com/argo/db/datasource/MySqlMSRoutingDataSource/MySqlMSRoutingDataSource()|",
+      "|java+method:///com/argo/db/datasource/MySqlMSDataSource/init()|"
+    ],
+    "affectedLib": "com.jolbox:bonecp:0.8.0.RELEASE",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "com.github.yamingd.argo:argo-db:2.3.0",
+    "coordinatesV2": "com.github.yamingd.argo:argo-db:2.2.7",
+    "caller": "|java+method:///com/argo/db/datasource/JdbcDatasourceFactoryBean/destroy()|",
+    "called": "|java+method:///com/jolbox/bonecp/BoneCPDataSource/close()|",
+    "v1Body": [
+      "|java+method:///com/jolbox/bonecp/BoneCPDataSource/close()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/argo/db/datasource/MySqlMSDataSource/close()|"
+    ],
+    "affectedLib": "com.jolbox:bonecp:0.8.0.RELEASE",
+    "change": "REMOVED"
+  }
+]

@@ -1,0 +1,660 @@
+[
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-support-openid:4.1.0-RC1",
+    "coordinatesV2": "org.jasig.cas:cas-server-support-openid:4.0.6",
+    "caller": "|java+method:///org/jasig/cas/support/openid/authentication/principal/OpenIdService/getResponse(java.lang.String)|",
+    "called": "|java+method:///org/openid4java/message/AuthRequest/createAuthRequest(org.openid4java.message.ParameterList,org.openid4java.server.RealmVerifier)|",
+    "v1Body": [
+      "|java+method:///org/openid4java/message/MessageException/getMessage()|",
+      "|java+method:///org/openid4java/server/ServerAssociationStore/load(java.lang.String)|",
+      "|java+method:///org/jasig/cas/util/ApplicationContextProvider/getApplicationContext()|",
+      "|java+method:///org/openid4java/server/ServerManager/authResponse(org.openid4java.message.ParameterList,java.lang.String,java.lang.String,boolean,boolean)|",
+      "|java+method:///org/jasig/cas/support/openid/authentication/principal/OpenIdService/getOriginalUrl()|",
+      "|java+method:///java/util/Map/putAll(java.util.Map)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String)|",
+      "|java+method:///java/util/Map/size()|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+method:///org/jasig/cas/CentralAuthenticationService/validateServiceTicket(java.lang.String,org.jasig.cas.authentication.principal.Service)|",
+      "|java+method:///org/openid4java/server/ServerManager/getRealmVerifier()|",
+      "|java+method:///org/springframework/context/ApplicationContext/getBean(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/openid4java/message/AuthRequest/createAuthRequest(org.openid4java.message.ParameterList,org.openid4java.server.RealmVerifier)|",
+      "|java+method:///org/openid4java/server/ServerManager/getSharedAssociations()|",
+      "|java+method:///org/jasig/cas/ticket/TicketException/getMessage()|",
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/openid4java/association/Association/hasExpired()|",
+      "|java+method:///org/jasig/cas/authentication/principal/Response/getRedirectResponse(java.lang.String,java.util.Map)|",
+      "|java+method:///org/openid4java/message/AuthRequest/getParameterMap()|",
+      "|java+method:///org/openid4java/message/Message/getParameterMap()|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+constructor:///org/jasig/cas/support/openid/authentication/principal/OpenIdService$AjcClosure1/OpenIdService$AjcClosure1(java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.openid4java:openid4java-nodeps:0.9.6",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-support-openid:4.1.0-RC1",
+    "coordinatesV2": "org.jasig.cas:cas-server-support-openid:4.0.6",
+    "caller": "|java+method:///org/jasig/cas/support/openid/web/mvc/SmartOpenIdController/getAssociationResponse(javax.servlet.http.HttpServletRequest)|",
+    "called": "|java+method:///org/openid4java/message/Message/getParameterMap()|",
+    "v1Body": [
+      "|java+constructor:///org/openid4java/message/ParameterList/ParameterList(java.util.Map)|",
+      "|java+method:///java/util/Map/putAll(java.util.Map)|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///org/openid4java/server/ServerManager/associationResponse(org.openid4java.message.ParameterList)|",
+      "|java+method:///org/openid4java/message/ParameterList/getParameterValue(java.lang.String)|",
+      "|java+method:///org/openid4java/message/ParameterList/hasParameter(java.lang.String)|",
+      "|java+method:///org/openid4java/message/Message/getParameterMap()|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getParameterMap()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+constructor:///org/jasig/cas/support/openid/web/mvc/SmartOpenIdController$AjcClosure1/SmartOpenIdController$AjcClosure1(java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.openid4java:openid4java-nodeps:0.9.6",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-support-openid:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-support-openid:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/support/openid/web/support/DefaultOpenIdUserNameExtractor/extractLocalUsernameFromUri(java.lang.String)|",
+    "called": "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|",
+    "v1Body": [
+      "|java+method:///java/lang/String/substring(int)|",
+      "|java+method:///java/lang/String/contains(java.lang.CharSequence)|",
+      "|java+method:///java/lang/String/lastIndexOf(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+constructor:///org/jasig/cas/support/openid/web/support/DefaultOpenIdUserNameExtractor$AjcClosure1/DefaultOpenIdUserNameExtractor$AjcClosure1(java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.jasig.inspektr:inspektr-aspects:1.2.GA",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-support-openid:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-support-openid:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/support/openid/authentication/handler/support/OpenIdCredentialsAuthenticationHandler/authenticate(org.jasig.cas.authentication.Credential)|",
+    "called": "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|",
+    "v1Body": [
+      "|java+constructor:///org/jasig/cas/authentication/BasicCredentialMetaData/BasicCredentialMetaData(org.jasig.cas.authentication.Credential)|",
+      "|java+method:///org/jasig/cas/ticket/TicketGrantingTicket/isExpired()|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+constructor:///javax/security/auth/login/FailedLoginException/FailedLoginException(java.lang.String)|",
+      "|java+method:///org/jasig/cas/support/openid/authentication/principal/OpenIdCredential/getUsername()|",
+      "|java+method:///org/jasig/cas/support/openid/authentication/principal/OpenIdCredential/getTicketGrantingTicketId()|",
+      "|java+constructor:///org/jasig/cas/authentication/HandlerResult/HandlerResult(org.jasig.cas.authentication.AuthenticationHandler,org.jasig.cas.authentication.CredentialMetaData,org.jasig.cas.authentication.principal.Principal)|",
+      "|java+method:///org/jasig/cas/ticket/TicketGrantingTicket/getAuthentication()|",
+      "|java+method:///org/jasig/cas/ticket/registry/TicketRegistry/getTicket(java.lang.String,java.lang.Class)|",
+      "|java+method:///org/jasig/cas/authentication/Authentication/getPrincipal()|",
+      "|java+method:///org/jasig/cas/authentication/principal/Principal/getId()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+constructor:///org/jasig/cas/support/openid/authentication/handler/support/OpenIdCredentialsAuthenticationHandler$AjcClosure1/OpenIdCredentialsAuthenticationHandler$AjcClosure1(java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.jasig.inspektr:inspektr-aspects:1.2.GA",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-support-openid:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-support-openid:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/support/openid/web/mvc/SmartOpenIdController/getAssociationResponse(javax.servlet.http.HttpServletRequest)|",
+    "called": "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|",
+    "v1Body": [
+      "|java+constructor:///org/openid4java/message/ParameterList/ParameterList(java.util.Map)|",
+      "|java+method:///java/util/Map/putAll(java.util.Map)|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///org/openid4java/server/ServerManager/associationResponse(org.openid4java.message.ParameterList)|",
+      "|java+method:///org/openid4java/message/ParameterList/getParameterValue(java.lang.String)|",
+      "|java+method:///org/openid4java/message/ParameterList/hasParameter(java.lang.String)|",
+      "|java+method:///org/openid4java/message/Message/getParameterMap()|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getParameterMap()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+constructor:///org/jasig/cas/support/openid/web/mvc/SmartOpenIdController$AjcClosure1/SmartOpenIdController$AjcClosure1(java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.jasig.inspektr:inspektr-aspects:1.2.GA",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-support-openid:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-support-openid:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/support/openid/web/mvc/SmartOpenIdController/canHandle(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)|",
+    "called": "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|",
+    "v1Body": [
+      "|java+method:///javax/servlet/http/HttpServletRequest/getParameter(java.lang.String)|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///org/jasig/cas/support/openid/web/mvc/SmartOpenIdController$AjcClosure3/SmartOpenIdController$AjcClosure3(java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+method:///org/aspectj/runtime/internal/Conversions/booleanValue(java.lang.Object)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.jasig.inspektr:inspektr-aspects:1.2.GA",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-support-openid:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-support-openid:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/support/openid/authentication/principal/OpenIdService/getResponse(java.lang.String)|",
+    "called": "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|",
+    "v1Body": [
+      "|java+method:///org/openid4java/message/MessageException/getMessage()|",
+      "|java+method:///org/openid4java/server/ServerAssociationStore/load(java.lang.String)|",
+      "|java+method:///org/jasig/cas/util/ApplicationContextProvider/getApplicationContext()|",
+      "|java+method:///org/openid4java/server/ServerManager/authResponse(org.openid4java.message.ParameterList,java.lang.String,java.lang.String,boolean,boolean)|",
+      "|java+method:///org/jasig/cas/support/openid/authentication/principal/OpenIdService/getOriginalUrl()|",
+      "|java+method:///java/util/Map/putAll(java.util.Map)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String)|",
+      "|java+method:///java/util/Map/size()|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+method:///org/jasig/cas/CentralAuthenticationService/validateServiceTicket(java.lang.String,org.jasig.cas.authentication.principal.Service)|",
+      "|java+method:///org/openid4java/server/ServerManager/getRealmVerifier()|",
+      "|java+method:///org/springframework/context/ApplicationContext/getBean(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/openid4java/message/AuthRequest/createAuthRequest(org.openid4java.message.ParameterList,org.openid4java.server.RealmVerifier)|",
+      "|java+method:///org/openid4java/server/ServerManager/getSharedAssociations()|",
+      "|java+method:///org/jasig/cas/ticket/TicketException/getMessage()|",
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/openid4java/association/Association/hasExpired()|",
+      "|java+method:///org/jasig/cas/authentication/principal/Response/getRedirectResponse(java.lang.String,java.util.Map)|",
+      "|java+method:///org/openid4java/message/AuthRequest/getParameterMap()|",
+      "|java+method:///org/openid4java/message/Message/getParameterMap()|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+constructor:///org/jasig/cas/support/openid/authentication/principal/OpenIdService$AjcClosure1/OpenIdService$AjcClosure1(java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.jasig.inspektr:inspektr-aspects:1.2.GA",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-support-openid:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-support-openid:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/support/openid/authentication/principal/OpenIdService/equals(java.lang.Object)|",
+    "called": "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|",
+    "v1Body": [
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///org/jasig/cas/authentication/principal/AbstractWebApplicationService/equals(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+method:///org/aspectj/runtime/internal/Conversions/booleanValue(java.lang.Object)|",
+      "|java+constructor:///org/jasig/cas/support/openid/authentication/principal/OpenIdService$AjcClosure9/OpenIdService$AjcClosure9(java.lang.Object%5B%5D)|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.jasig.inspektr:inspektr-aspects:1.2.GA",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-support-openid:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-support-openid:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/support/openid/authentication/principal/OpenIdService/hashCode()|",
+    "called": "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|",
+    "v1Body": [
+      "|java+method:///java/lang/String/hashCode()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/aspectj/runtime/internal/Conversions/intValue(java.lang.Object)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+constructor:///org/jasig/cas/support/openid/authentication/principal/OpenIdService$AjcClosure7/OpenIdService$AjcClosure7(java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.jasig.inspektr:inspektr-aspects:1.2.GA",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-support-openid:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-support-openid:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/support/openid/authentication/handler/support/OpenIdCredentialsAuthenticationHandler/authenticate(org.jasig.cas.authentication.Credential)|",
+    "called": "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+constructor:///org/jasig/cas/authentication/BasicCredentialMetaData/BasicCredentialMetaData(org.jasig.cas.authentication.Credential)|",
+      "|java+method:///org/jasig/cas/ticket/TicketGrantingTicket/isExpired()|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+constructor:///javax/security/auth/login/FailedLoginException/FailedLoginException(java.lang.String)|",
+      "|java+method:///org/jasig/cas/support/openid/authentication/principal/OpenIdCredential/getUsername()|",
+      "|java+method:///org/jasig/cas/support/openid/authentication/principal/OpenIdCredential/getTicketGrantingTicketId()|",
+      "|java+constructor:///org/jasig/cas/authentication/HandlerResult/HandlerResult(org.jasig.cas.authentication.AuthenticationHandler,org.jasig.cas.authentication.CredentialMetaData,org.jasig.cas.authentication.principal.Principal)|",
+      "|java+method:///org/jasig/cas/ticket/TicketGrantingTicket/getAuthentication()|",
+      "|java+method:///org/jasig/cas/ticket/registry/TicketRegistry/getTicket(java.lang.String,java.lang.Class)|",
+      "|java+method:///org/jasig/cas/authentication/Authentication/getPrincipal()|",
+      "|java+method:///org/jasig/cas/authentication/principal/Principal/getId()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+constructor:///org/jasig/cas/support/openid/authentication/handler/support/OpenIdCredentialsAuthenticationHandler$AjcClosure1/OpenIdCredentialsAuthenticationHandler$AjcClosure1(java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.aspectj:aspectjrt:1.8.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-support-openid:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-support-openid:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/support/openid/authentication/principal/OpenIdService/equals(java.lang.Object)|",
+    "called": "|java+method:///org/aspectj/runtime/internal/Conversions/booleanValue(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///org/jasig/cas/authentication/principal/AbstractWebApplicationService/equals(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+method:///org/aspectj/runtime/internal/Conversions/booleanValue(java.lang.Object)|",
+      "|java+constructor:///org/jasig/cas/support/openid/authentication/principal/OpenIdService$AjcClosure9/OpenIdService$AjcClosure9(java.lang.Object%5B%5D)|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.aspectj:aspectjrt:1.8.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-support-openid:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-support-openid:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/support/openid/authentication/principal/OpenIdService/hashCode()|",
+    "called": "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///java/lang/String/hashCode()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/aspectj/runtime/internal/Conversions/intValue(java.lang.Object)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+constructor:///org/jasig/cas/support/openid/authentication/principal/OpenIdService$AjcClosure7/OpenIdService$AjcClosure7(java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.aspectj:aspectjrt:1.8.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-support-openid:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-support-openid:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/support/openid/web/mvc/SmartOpenIdController/getAssociationResponse(javax.servlet.http.HttpServletRequest)|",
+    "called": "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+constructor:///org/openid4java/message/ParameterList/ParameterList(java.util.Map)|",
+      "|java+method:///java/util/Map/putAll(java.util.Map)|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///org/openid4java/server/ServerManager/associationResponse(org.openid4java.message.ParameterList)|",
+      "|java+method:///org/openid4java/message/ParameterList/getParameterValue(java.lang.String)|",
+      "|java+method:///org/openid4java/message/ParameterList/hasParameter(java.lang.String)|",
+      "|java+method:///org/openid4java/message/Message/getParameterMap()|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getParameterMap()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+constructor:///org/jasig/cas/support/openid/web/mvc/SmartOpenIdController$AjcClosure1/SmartOpenIdController$AjcClosure1(java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.aspectj:aspectjrt:1.8.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-support-openid:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-support-openid:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/support/openid/web/mvc/SmartOpenIdController/canHandle(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)|",
+    "called": "|java+method:///org/aspectj/runtime/internal/Conversions/booleanValue(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///javax/servlet/http/HttpServletRequest/getParameter(java.lang.String)|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///org/jasig/cas/support/openid/web/mvc/SmartOpenIdController$AjcClosure3/SmartOpenIdController$AjcClosure3(java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+method:///org/aspectj/runtime/internal/Conversions/booleanValue(java.lang.Object)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.aspectj:aspectjrt:1.8.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-support-openid:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-support-openid:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/support/openid/authentication/principal/OpenIdService/getResponse(java.lang.String)|",
+    "called": "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/openid4java/message/MessageException/getMessage()|",
+      "|java+method:///org/openid4java/server/ServerAssociationStore/load(java.lang.String)|",
+      "|java+method:///org/jasig/cas/util/ApplicationContextProvider/getApplicationContext()|",
+      "|java+method:///org/openid4java/server/ServerManager/authResponse(org.openid4java.message.ParameterList,java.lang.String,java.lang.String,boolean,boolean)|",
+      "|java+method:///org/jasig/cas/support/openid/authentication/principal/OpenIdService/getOriginalUrl()|",
+      "|java+method:///java/util/Map/putAll(java.util.Map)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String)|",
+      "|java+method:///java/util/Map/size()|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+method:///org/jasig/cas/CentralAuthenticationService/validateServiceTicket(java.lang.String,org.jasig.cas.authentication.principal.Service)|",
+      "|java+method:///org/openid4java/server/ServerManager/getRealmVerifier()|",
+      "|java+method:///org/springframework/context/ApplicationContext/getBean(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/openid4java/message/AuthRequest/createAuthRequest(org.openid4java.message.ParameterList,org.openid4java.server.RealmVerifier)|",
+      "|java+method:///org/openid4java/server/ServerManager/getSharedAssociations()|",
+      "|java+method:///org/jasig/cas/ticket/TicketException/getMessage()|",
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/openid4java/association/Association/hasExpired()|",
+      "|java+method:///org/jasig/cas/authentication/principal/Response/getRedirectResponse(java.lang.String,java.util.Map)|",
+      "|java+method:///org/openid4java/message/AuthRequest/getParameterMap()|",
+      "|java+method:///org/openid4java/message/Message/getParameterMap()|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+constructor:///org/jasig/cas/support/openid/authentication/principal/OpenIdService$AjcClosure1/OpenIdService$AjcClosure1(java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.aspectj:aspectjrt:1.8.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-support-openid:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-support-openid:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/support/openid/web/support/DefaultOpenIdUserNameExtractor/extractLocalUsernameFromUri(java.lang.String)|",
+    "called": "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///java/lang/String/substring(int)|",
+      "|java+method:///java/lang/String/contains(java.lang.CharSequence)|",
+      "|java+method:///java/lang/String/lastIndexOf(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+constructor:///org/jasig/cas/support/openid/web/support/DefaultOpenIdUserNameExtractor$AjcClosure1/DefaultOpenIdUserNameExtractor$AjcClosure1(java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.aspectj:aspectjrt:1.8.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-support-openid:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-support-openid:4.1.0-RC1",
+    "caller": "|java+initializer:///org/jasig/cas/support/openid/authentication/principal/OpenIdService/OpenIdService$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/jasig/cas/support/openid/authentication/principal/OpenIdService/ajc$preClinit()|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.12",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-support-openid:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-support-openid:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/support/openid/web/flow/OpenIdSingleSignOnAction/constructCredentialsFromRequest(org.springframework.webflow.execution.RequestContext)|",
+    "called": "|java+method:///org/jasig/cas/web/support/WebUtils/getService(org.springframework.webflow.execution.RequestContext)|",
+    "v1Body": [
+      "|java+method:///org/springframework/webflow/execution/RequestContext/getRequestParameters()|",
+      "|java+method:///org/jasig/cas/web/support/WebUtils/getTicketGrantingTicketId(org.springframework.webflow.execution.RequestContext)|",
+      "|java+method:///org/springframework/webflow/execution/RequestContext/getExternalContext()|",
+      "|java+method:///org/springframework/webflow/execution/RequestContext/getFlowScope()|",
+      "|java+method:///org/jasig/cas/web/support/WebUtils/getService(org.springframework.webflow.execution.RequestContext)|",
+      "|java+method:///org/springframework/webflow/core/collection/SharedAttributeMap/put(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/springframework/webflow/context/ExternalContext/getSessionMap()|",
+      "|java+method:///org/springframework/webflow/core/collection/MutableAttributeMap/remove(java.lang.String)|",
+      "|java+constructor:///org/jasig/cas/support/openid/authentication/principal/OpenIdCredential/OpenIdCredential(java.lang.String,java.lang.String)|",
+      "|java+method:///org/springframework/webflow/core/collection/ParameterMap/get(java.lang.String)|",
+      "|java+method:///org/jasig/cas/support/openid/web/support/OpenIdUserNameExtractor/extractLocalUsernameFromUri(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/springframework/webflow/execution/RequestContext/getRequestParameters()|",
+      "|java+method:///org/jasig/cas/ticket/TicketGrantingTicket/getAuthentication()|",
+      "|java+method:///org/jasig/cas/web/support/WebUtils/getTicketGrantingTicketId(org.springframework.webflow.execution.RequestContext)|",
+      "|java+method:///org/jasig/cas/web/support/WebUtils/getService(org.springframework.webflow.execution.RequestContext)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/springframework/webflow/core/collection/SharedAttributeMap/put(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/springframework/webflow/context/ExternalContext/getSessionMap()|",
+      "|java+method:///org/springframework/webflow/core/collection/MutableAttributeMap/remove(java.lang.String)|",
+      "|java+method:///org/springframework/webflow/core/collection/ParameterMap/get(java.lang.String)|",
+      "|java+method:///org/jasig/cas/support/openid/web/support/OpenIdUserNameExtractor/extractLocalUsernameFromUri(java.lang.String)|",
+      "|java+method:///org/jasig/cas/authentication/Authentication/getPrincipal()|",
+      "|java+method:///org/springframework/webflow/execution/RequestContext/getExternalContext()|",
+      "|java+method:///org/jasig/cas/authentication/principal/Principal/getId()|",
+      "|java+method:///org/springframework/webflow/execution/RequestContext/getFlowScope()|",
+      "|java+method:///org/springframework/webflow/core/collection/SharedAttributeMap/remove(java.lang.String)|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///org/jasig/cas/CentralAuthenticationService/getTicket(java.lang.String,java.lang.Class)|",
+      "|java+method:///org/jasig/cas/support/openid/web/flow/OpenIdSingleSignOnAction/getCentralAuthenticationService()|",
+      "|java+constructor:///org/jasig/cas/support/openid/authentication/principal/OpenIdCredential/OpenIdCredential(java.lang.String,java.lang.String)|"
+    ],
+    "affectedLib": "org.jasig.cas:cas-server-core:4.1.0-RC1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-support-openid:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-support-openid:4.1.0-RC1",
+    "caller": "|java+constructor:///org/jasig/cas/support/openid/web/support/OpenIdArgumentExtractor/OpenIdArgumentExtractor()|",
+    "called": "|java+constructor:///org/jasig/cas/web/support/AbstractArgumentExtractor/AbstractArgumentExtractor()|",
+    "v1Body": [
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/jasig/cas/web/support/AbstractArgumentExtractor/AbstractArgumentExtractor()|"
+    ],
+    "affectedLib": "org.jasig.cas:cas-server-core:4.1.0-RC1",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-support-openid:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-support-openid:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/support/openid/authentication/handler/support/OpenIdCredentialsAuthenticationHandler/authenticate(org.jasig.cas.authentication.Credential)|",
+    "called": "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+constructor:///org/jasig/cas/authentication/BasicCredentialMetaData/BasicCredentialMetaData(org.jasig.cas.authentication.Credential)|",
+      "|java+method:///org/jasig/cas/ticket/TicketGrantingTicket/isExpired()|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+constructor:///javax/security/auth/login/FailedLoginException/FailedLoginException(java.lang.String)|",
+      "|java+method:///org/jasig/cas/support/openid/authentication/principal/OpenIdCredential/getUsername()|",
+      "|java+method:///org/jasig/cas/support/openid/authentication/principal/OpenIdCredential/getTicketGrantingTicketId()|",
+      "|java+constructor:///org/jasig/cas/authentication/HandlerResult/HandlerResult(org.jasig.cas.authentication.AuthenticationHandler,org.jasig.cas.authentication.CredentialMetaData,org.jasig.cas.authentication.principal.Principal)|",
+      "|java+method:///org/jasig/cas/ticket/TicketGrantingTicket/getAuthentication()|",
+      "|java+method:///org/jasig/cas/ticket/registry/TicketRegistry/getTicket(java.lang.String,java.lang.Class)|",
+      "|java+method:///org/jasig/cas/authentication/Authentication/getPrincipal()|",
+      "|java+method:///org/jasig/cas/authentication/principal/Principal/getId()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+constructor:///org/jasig/cas/support/openid/authentication/handler/support/OpenIdCredentialsAuthenticationHandler$AjcClosure1/OpenIdCredentialsAuthenticationHandler$AjcClosure1(java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.aspectj:aspectjweaver:1.8.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-support-openid:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-support-openid:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/support/openid/authentication/principal/OpenIdService/equals(java.lang.Object)|",
+    "called": "|java+method:///org/aspectj/runtime/internal/Conversions/booleanValue(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///org/jasig/cas/authentication/principal/AbstractWebApplicationService/equals(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+method:///org/aspectj/runtime/internal/Conversions/booleanValue(java.lang.Object)|",
+      "|java+constructor:///org/jasig/cas/support/openid/authentication/principal/OpenIdService$AjcClosure9/OpenIdService$AjcClosure9(java.lang.Object%5B%5D)|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.aspectj:aspectjweaver:1.8.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-support-openid:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-support-openid:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/support/openid/authentication/principal/OpenIdService/hashCode()|",
+    "called": "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///java/lang/String/hashCode()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/aspectj/runtime/internal/Conversions/intValue(java.lang.Object)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+constructor:///org/jasig/cas/support/openid/authentication/principal/OpenIdService$AjcClosure7/OpenIdService$AjcClosure7(java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.aspectj:aspectjweaver:1.8.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-support-openid:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-support-openid:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/support/openid/web/mvc/SmartOpenIdController/getAssociationResponse(javax.servlet.http.HttpServletRequest)|",
+    "called": "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+constructor:///org/openid4java/message/ParameterList/ParameterList(java.util.Map)|",
+      "|java+method:///java/util/Map/putAll(java.util.Map)|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///org/openid4java/server/ServerManager/associationResponse(org.openid4java.message.ParameterList)|",
+      "|java+method:///org/openid4java/message/ParameterList/getParameterValue(java.lang.String)|",
+      "|java+method:///org/openid4java/message/ParameterList/hasParameter(java.lang.String)|",
+      "|java+method:///org/openid4java/message/Message/getParameterMap()|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getParameterMap()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+constructor:///org/jasig/cas/support/openid/web/mvc/SmartOpenIdController$AjcClosure1/SmartOpenIdController$AjcClosure1(java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.aspectj:aspectjweaver:1.8.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-support-openid:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-support-openid:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/support/openid/web/mvc/SmartOpenIdController/canHandle(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)|",
+    "called": "|java+method:///org/aspectj/runtime/internal/Conversions/booleanValue(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///javax/servlet/http/HttpServletRequest/getParameter(java.lang.String)|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///org/jasig/cas/support/openid/web/mvc/SmartOpenIdController$AjcClosure3/SmartOpenIdController$AjcClosure3(java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+method:///org/aspectj/runtime/internal/Conversions/booleanValue(java.lang.Object)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.aspectj:aspectjweaver:1.8.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-support-openid:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-support-openid:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/support/openid/authentication/principal/OpenIdService/getResponse(java.lang.String)|",
+    "called": "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/openid4java/message/MessageException/getMessage()|",
+      "|java+method:///org/openid4java/server/ServerAssociationStore/load(java.lang.String)|",
+      "|java+method:///org/jasig/cas/util/ApplicationContextProvider/getApplicationContext()|",
+      "|java+method:///org/openid4java/server/ServerManager/authResponse(org.openid4java.message.ParameterList,java.lang.String,java.lang.String,boolean,boolean)|",
+      "|java+method:///org/jasig/cas/support/openid/authentication/principal/OpenIdService/getOriginalUrl()|",
+      "|java+method:///java/util/Map/putAll(java.util.Map)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String)|",
+      "|java+method:///java/util/Map/size()|",
+      "|java+constructor:///java/util/HashMap/HashMap()|",
+      "|java+method:///org/jasig/cas/CentralAuthenticationService/validateServiceTicket(java.lang.String,org.jasig.cas.authentication.principal.Service)|",
+      "|java+method:///org/openid4java/server/ServerManager/getRealmVerifier()|",
+      "|java+method:///org/springframework/context/ApplicationContext/getBean(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/openid4java/message/AuthRequest/createAuthRequest(org.openid4java.message.ParameterList,org.openid4java.server.RealmVerifier)|",
+      "|java+method:///org/openid4java/server/ServerManager/getSharedAssociations()|",
+      "|java+method:///org/jasig/cas/ticket/TicketException/getMessage()|",
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/openid4java/association/Association/hasExpired()|",
+      "|java+method:///org/jasig/cas/authentication/principal/Response/getRedirectResponse(java.lang.String,java.util.Map)|",
+      "|java+method:///org/openid4java/message/AuthRequest/getParameterMap()|",
+      "|java+method:///org/openid4java/message/Message/getParameterMap()|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+constructor:///org/jasig/cas/support/openid/authentication/principal/OpenIdService$AjcClosure1/OpenIdService$AjcClosure1(java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.aspectj:aspectjweaver:1.8.6",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.jasig.cas:cas-server-support-openid:4.0.6",
+    "coordinatesV2": "org.jasig.cas:cas-server-support-openid:4.1.0-RC1",
+    "caller": "|java+method:///org/jasig/cas/support/openid/web/support/DefaultOpenIdUserNameExtractor/extractLocalUsernameFromUri(java.lang.String)|",
+    "called": "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///java/lang/String/substring(int)|",
+      "|java+method:///java/lang/String/contains(java.lang.CharSequence)|",
+      "|java+method:///java/lang/String/lastIndexOf(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/aspectj/runtime/internal/AroundClosure/linkClosureAndJoinPoint(int)|",
+      "|java+constructor:///org/jasig/cas/support/openid/web/support/DefaultOpenIdUserNameExtractor$AjcClosure1/DefaultOpenIdUserNameExtractor$AjcClosure1(java.lang.Object%5B%5D)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/aspectOf()|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/jasig/inspektr/aspect/TraceLogAspect/traceMethod(org.aspectj.lang.ProceedingJoinPoint)|"
+    ],
+    "affectedLib": "org.aspectj:aspectjweaver:1.8.6",
+    "change": "UPDATED"
+  }
+]

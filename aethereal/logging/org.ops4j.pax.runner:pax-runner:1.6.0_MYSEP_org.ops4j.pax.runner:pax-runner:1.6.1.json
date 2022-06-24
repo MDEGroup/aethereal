@@ -1,0 +1,29 @@
+[
+  {
+    "coordinatesV1": "org.ops4j.pax.runner:pax-runner:1.6.0",
+    "coordinatesV2": "org.ops4j.pax.runner:pax-runner:1.6.1",
+    "caller": "|java+initializer:///org/slf4j/MDC/MDC$initializer|",
+    "called": "|java+method:///org/slf4j/impl/StaticMDCBinder/getMDCA()|",
+    "v1Body": [
+      "|java+method:///org/slf4j/impl/StaticMDCBinder/getMDCA()|",
+      "|java+method:///org/slf4j/impl/StaticMDCBinder/getMDCAdapterClassStr()|",
+      "|java+method:///java/lang/StringBuffer/toString()|",
+      "|java+method:///java/lang/StringBuffer/append(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuffer/StringBuffer()|",
+      "|java+method:///java/lang/String/indexOf(java.lang.String)|",
+      "|java+method:///java/lang/NoClassDefFoundError/getMessage()|",
+      "|java+method:///org/slf4j/helpers/Util/reportFailure(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/slf4j/helpers/Util/reportFailure(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/impl/StaticMDCBinder/getMDCA()|",
+      "|java+method:///java/lang/String/indexOf(java.lang.String)|",
+      "|java+method:///java/lang/NoClassDefFoundError/getMessage()|",
+      "|java+constructor:///org/slf4j/helpers/NOPMDCAdapter/NOPMDCAdapter()|",
+      "|java+method:///org/slf4j/helpers/Util/report(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/slf4j/helpers/Util/report(java.lang.String)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-simple:1.6.1",
+    "change": "ADDED"
+  }
+]

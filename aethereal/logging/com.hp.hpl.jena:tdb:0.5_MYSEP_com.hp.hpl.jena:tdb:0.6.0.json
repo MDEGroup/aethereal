@@ -1,0 +1,665 @@
+[
+  {
+    "coordinatesV1": "com.hp.hpl.jena:tdb:0.5",
+    "coordinatesV2": "com.hp.hpl.jena:tdb:0.6.0",
+    "caller": "|java+method:///com/hp/hpl/jena/tdb/TDB/initWorker()|",
+    "called": "|java+method:///com/hp/hpl/jena/rdf/model/impl/RDFReaderFImpl/setBaseReaderClassName(java.lang.String,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+method:///com/hp/hpl/jena/rdf/model/impl/RDFReaderFImpl/setBaseReaderClassName(java.lang.String,java.lang.String)|",
+      "|java+method:///com/hp/hpl/jena/query/ARQ/getContext()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///com/hp/hpl/jena/sparql/util/Context/set(com.hp.hpl.jena.sparql.util.Symbol,java.lang.Object)|",
+      "|java+method:///com/hp/hpl/jena/tdb/pgraph/assembler/PGraphAssemblerVocab/init()|",
+      "|java+constructor:///com/hp/hpl/jena/tdb/solver/StageGeneratorPGraphBGP/StageGeneratorPGraphBGP(com.hp.hpl.jena.sparql.engine.main.StageGenerator)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///org/slf4j/Logger/isDebugEnabled()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+method:///com/hp/hpl/jena/sparql/util/Context/get(com.hp.hpl.jena.sparql.util.Symbol)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+method:///com/hp/hpl/jena/sparql/util/Context/set(com.hp.hpl.jena.sparql.util.Symbol,boolean)|",
+      "|java+method:///com/hp/hpl/jena/rdf/model/impl/RDFReaderFImpl/setBaseReaderClassName(java.lang.String,java.lang.String)|",
+      "|java+method:///com/hp/hpl/jena/query/ARQ/getContext()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///com/hp/hpl/jena/tdb/TDB/wireIntoExecution()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///org/slf4j/Logger/isDebugEnabled()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///com/hp/hpl/jena/tdb/TDB/getContext()|",
+      "|java+method:///com/hp/hpl/jena/tdb/pgraph/assembler/PGraphAssemblerVocab/init()|"
+    ],
+    "affectedLib": "com.hp.hpl.jena:jena:2.5.6",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.hp.hpl.jena:tdb:0.5",
+    "coordinatesV2": "com.hp.hpl.jena:tdb:0.6.0",
+    "caller": "|java+constructor:///com/hp/hpl/jena/tdb/pgraph/GraphTDB/GraphTDB()|",
+    "called": "|java+constructor:///com/hp/hpl/jena/graph/impl/GraphBase/GraphBase()|",
+    "v1Body": [
+      "|java+constructor:///com/hp/hpl/jena/tdb/pgraph/GraphTDBQueryHandler/GraphTDBQueryHandler(com.hp.hpl.jena.graph.Graph)|",
+      "|java+constructor:///com/hp/hpl/jena/graph/impl/GraphBase/GraphBase()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///com/hp/hpl/jena/tdb/graph/GraphTDBTransactionHandler/GraphTDBTransactionHandler(com.hp.hpl.jena.tdb.pgraph.GraphTDB)|",
+      "|java+constructor:///com/hp/hpl/jena/tdb/graph/GraphTDBQueryHandler/GraphTDBQueryHandler(com.hp.hpl.jena.graph.Graph)|",
+      "|java+constructor:///com/hp/hpl/jena/graph/impl/GraphBase/GraphBase()|"
+    ],
+    "affectedLib": "com.hp.hpl.jena:jena:2.5.6",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.hp.hpl.jena:tdb:0.5",
+    "coordinatesV2": "com.hp.hpl.jena:tdb:0.6.0",
+    "caller": "|java+method:///com/hp/hpl/jena/tdb/pgraph/BulkLoader/load(java.util.List)|",
+    "called": "|java+method:///com/hp/hpl/jena/rdf/model/ModelFactory/createModelForGraph(com.hp.hpl.jena.graph.Graph)|",
+    "v1Body": [
+      "|java+method:///com/hp/hpl/jena/tdb/pgraph/GraphTDB/close()|",
+      "|java+method:///com/hp/hpl/jena/tdb/pgraph/BulkLoader/printf(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///com/hp/hpl/jena/tdb/pgraph/BulkLoader/loadOne(com.hp.hpl.jena.rdf.model.Model,java.lang.String)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///com/hp/hpl/jena/tdb/pgraph/BulkLoader/dropSecondaryIndexes()|",
+      "|java+method:///com/hp/hpl/jena/tdb/pgraph/BulkLoader/createSecondaryIndexes(boolean)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///com/hp/hpl/jena/sparql/util/Timer/endTimer()|",
+      "|java+method:///com/hp/hpl/jena/tdb/pgraph/BulkLoader/println(java.lang.String)|",
+      "|java+method:///com/hp/hpl/jena/tdb/pgraph/GraphTDB/sync(boolean)|",
+      "|java+method:///com/hp/hpl/jena/sparql/util/Timer/getTimeInterval()|",
+      "|java+method:///com/hp/hpl/jena/tdb/pgraph/BulkLoader/println()|",
+      "|java+method:///com/hp/hpl/jena/rdf/model/ModelFactory/createModelForGraph(com.hp.hpl.jena.graph.Graph)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///java/lang/Double/valueOf(double)|",
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///com/hp/hpl/jena/tdb/pgraph/GraphTDB/isEmpty()|",
+      "|java+method:///com/hp/hpl/jena/sparql/util/Timer/startTimer()|",
+      "|java+constructor:///com/hp/hpl/jena/sparql/util/Timer/Timer()|",
+      "|java+method:///com/hp/hpl/jena/tdb/pgraph/BulkLoader/now(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/hp/hpl/jena/tdb/pgraph/GraphTDB/close()|",
+      "|java+method:///com/hp/hpl/jena/tdb/pgraph/BulkLoader/printf(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///com/hp/hpl/jena/tdb/pgraph/BulkLoader/loadOne(com.hp.hpl.jena.rdf.model.Model,java.lang.String)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///com/hp/hpl/jena/tdb/pgraph/BulkLoader/dropSecondaryIndexes()|",
+      "|java+method:///java/io/PrintStream/println()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///com/hp/hpl/jena/sparql/util/Timer/endTimer()|",
+      "|java+method:///com/hp/hpl/jena/tdb/pgraph/BulkLoader/println(java.lang.String)|",
+      "|java+method:///com/hp/hpl/jena/tdb/pgraph/GraphTDB/sync(boolean)|",
+      "|java+method:///com/hp/hpl/jena/sparql/util/Timer/getTimeInterval()|",
+      "|java+method:///com/hp/hpl/jena/tdb/pgraph/BulkLoader/println()|",
+      "|java+method:///com/hp/hpl/jena/rdf/model/ModelFactory/createModelForGraph(com.hp.hpl.jena.graph.Graph)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///com/hp/hpl/jena/tdb/pgraph/GraphTDB/setIndexSPO(com.hp.hpl.jena.tdb.index.TripleIndex)|",
+      "|java+method:///com/hp/hpl/jena/tdb/pgraph/BulkLoader/statsFinish(com.hp.hpl.jena.rdf.model.Model)|",
+      "|java+method:///java/lang/Double/valueOf(double)|",
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///com/hp/hpl/jena/tdb/pgraph/BulkLoader/statsStart(com.hp.hpl.jena.rdf.model.Model)|",
+      "|java+method:///com/hp/hpl/jena/tdb/pgraph/BulkLoader/createSecondaryIndexes(boolean)|",
+      "|java+method:///com/hp/hpl/jena/tdb/pgraph/GraphTDB/isEmpty()|",
+      "|java+method:///com/hp/hpl/jena/sparql/util/Timer/startTimer()|",
+      "|java+constructor:///com/hp/hpl/jena/sparql/util/Timer/Timer()|",
+      "|java+method:///java/io/PrintStream/println(java.lang.Object)|",
+      "|java+method:///com/hp/hpl/jena/tdb/pgraph/BulkLoader/now(java.lang.String)|"
+    ],
+    "affectedLib": "com.hp.hpl.jena:jena:2.5.6",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.hp.hpl.jena:tdb:0.5",
+    "coordinatesV2": "com.hp.hpl.jena:tdb:0.6.0",
+    "caller": "|java+method:///com/hp/hpl/jena/tdb/pgraph/assembler/PGraphAssembler/open(com.hp.hpl.jena.assembler.Assembler,com.hp.hpl.jena.rdf.model.Resource,com.hp.hpl.jena.assembler.Mode)|",
+    "called": "|java+constructor:///com/hp/hpl/jena/assembler/exceptions/AssemblerException/AssemblerException(com.hp.hpl.jena.rdf.model.Resource,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///com/hp/hpl/jena/tdb/TDBFactory/createModel(com.hp.hpl.jena.tdb.base.file.Location)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///java/util/Map/size()|",
+      "|java+method:///com/hp/hpl/jena/tdb/index/TripleIndex/getDescription()|",
+      "|java+method:///com/hp/hpl/jena/tdb/pgraph/assembler/PGraphAssembler/open(com.hp.hpl.jena.assembler.Assembler,com.hp.hpl.jena.rdf.model.Resource,com.hp.hpl.jena.assembler.Mode)|",
+      "|java+method:///com/hp/hpl/jena/rdf/model/Resource/hasProperty(com.hp.hpl.jena.rdf.model.Property)|",
+      "|java+method:///java/util/Map/containsKey(java.lang.Object)|",
+      "|java+method:///com/hp/hpl/jena/rdf/model/ModelFactory/createModelForGraph(com.hp.hpl.jena.graph.Graph)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+constructor:///com/hp/hpl/jena/assembler/exceptions/AssemblerException/AssemblerException(com.hp.hpl.jena.rdf.model.Resource,java.lang.String)|",
+      "|java+constructor:///com/hp/hpl/jena/tdb/pgraph/GraphTDB/GraphTDB(com.hp.hpl.jena.tdb.index.TripleIndex,com.hp.hpl.jena.tdb.index.TripleIndex,com.hp.hpl.jena.tdb.index.TripleIndex,com.hp.hpl.jena.tdb.pgraph.NodeTable)|",
+      "|java+constructor:///com/hp/hpl/jena/tdb/base/file/Location/Location(java.lang.String)|",
+      "|java+method:///com/hp/hpl/jena/tdb/TDB/init()|",
+      "|java+method:///com/hp/hpl/jena/sparql/util/graph/GraphUtils/exactlyOneProperty(com.hp.hpl.jena.rdf.model.Resource,com.hp.hpl.jena.rdf.model.Property)|",
+      "|java+method:///com/hp/hpl/jena/tdb/index/IndexBuilder/get()|",
+      "|java+method:///java/lang/String/equalsIgnoreCase(java.lang.String)|",
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///com/hp/hpl/jena/sparql/util/graph/GraphUtils/getStringValue(com.hp.hpl.jena.rdf.model.Resource,com.hp.hpl.jena.rdf.model.Property)|",
+      "|java+method:///com/hp/hpl/jena/sparql/util/graph/GraphUtils/multiValueResource(com.hp.hpl.jena.rdf.model.Resource,com.hp.hpl.jena.rdf.model.Property)|",
+      "|java+constructor:///com/hp/hpl/jena/tdb/pgraph/NodeTableIndex/NodeTableIndex(com.hp.hpl.jena.tdb.index.IndexBuilder,com.hp.hpl.jena.tdb.base.file.Location)|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+method:///com/hp/hpl/jena/tdb/pgraph/assembler/TripleIndexAssembler/open(com.hp.hpl.jena.assembler.Assembler,com.hp.hpl.jena.rdf.model.Resource,com.hp.hpl.jena.assembler.Mode)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+constructor:///java/util/HashMap/HashMap()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/io/PrintStream/flush()|",
+      "|java+method:///com/hp/hpl/jena/rdf/model/Literal/getString()|",
+      "|java+method:///com/hp/hpl/jena/sparql/util/graph/GraphUtils/getStringValue(com.hp.hpl.jena.rdf.model.Resource,com.hp.hpl.jena.rdf.model.Property)|",
+      "|java+method:///com/hp/hpl/jena/tdb/TDBFactory/createModel(com.hp.hpl.jena.tdb.base.file.Location)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///com/hp/hpl/jena/rdf/model/RDFNode/isLiteral()|",
+      "|java+method:///com/hp/hpl/jena/sparql/util/FmtUtils/stringForRDFNode(com.hp.hpl.jena.rdf.model.RDFNode)|",
+      "|java+method:///com/hp/hpl/jena/rdf/model/StmtIterator/hasNext()|",
+      "|java+method:///com/hp/hpl/jena/rdf/model/Resource/hasProperty(com.hp.hpl.jena.rdf.model.Property)|",
+      "|java+method:///java/io/PrintStream/printf(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///com/hp/hpl/jena/rdf/model/StmtIterator/nextStatement()|",
+      "|java+constructor:///com/hp/hpl/jena/assembler/exceptions/AssemblerException/AssemblerException(com.hp.hpl.jena.rdf.model.Resource,java.lang.String)|",
+      "|java+constructor:///com/hp/hpl/jena/tdb/base/file/Location/Location(java.lang.String)|",
+      "|java+method:///com/hp/hpl/jena/tdb/TDB/init()|",
+      "|java+method:///com/hp/hpl/jena/sparql/util/graph/GraphUtils/exactlyOneProperty(com.hp.hpl.jena.rdf.model.Resource,com.hp.hpl.jena.rdf.model.Property)|",
+      "|java+constructor:///com/hp/hpl/jena/tdb/TDBException/TDBException(java.lang.String)|",
+      "|java+method:///com/hp/hpl/jena/rdf/model/Statement/getObject()|",
+      "|java+method:///com/hp/hpl/jena/tdb/pgraph/assembler/PGraphAssembler/open(com.hp.hpl.jena.assembler.Assembler,com.hp.hpl.jena.rdf.model.Resource,com.hp.hpl.jena.assembler.Mode)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///com/hp/hpl/jena/rdf/model/Resource/listProperties(com.hp.hpl.jena.rdf.model.Property)|"
+    ],
+    "affectedLib": "com.hp.hpl.jena:jena:2.5.6",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.hp.hpl.jena:tdb:0.5",
+    "coordinatesV2": "com.hp.hpl.jena:tdb:0.6.0",
+    "caller": "|java+method:///com/hp/hpl/jena/tdb/lib/TupleLib/triple(com.hp.hpl.jena.tdb.pgraph.NodeTable,com.hp.hpl.jena.tdb.pgraph.NodeId,com.hp.hpl.jena.tdb.pgraph.NodeId,com.hp.hpl.jena.tdb.pgraph.NodeId)|",
+    "called": "|java+constructor:///com/hp/hpl/jena/graph/Triple/Triple(com.hp.hpl.jena.graph.Node,com.hp.hpl.jena.graph.Node,com.hp.hpl.jena.graph.Node)|",
+    "v1Body": [
+      "|java+constructor:///com/hp/hpl/jena/graph/Triple/Triple(com.hp.hpl.jena.graph.Node,com.hp.hpl.jena.graph.Node,com.hp.hpl.jena.graph.Node)|",
+      "|java+method:///com/hp/hpl/jena/tdb/pgraph/NodeTable/retrieveNode(com.hp.hpl.jena.tdb.pgraph.NodeId)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/hp/hpl/jena/tdb/pgraph/NodeTable/retrieveNodeByNodeId(com.hp.hpl.jena.tdb.pgraph.NodeId)|",
+      "|java+constructor:///com/hp/hpl/jena/graph/Triple/Triple(com.hp.hpl.jena.graph.Node,com.hp.hpl.jena.graph.Node,com.hp.hpl.jena.graph.Node)|"
+    ],
+    "affectedLib": "com.hp.hpl.jena:jena:2.5.6",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.hp.hpl.jena:tdb:0.5",
+    "coordinatesV2": "com.hp.hpl.jena:tdb:0.6.0",
+    "caller": "|java+method:///tdb/tdbcheck/main(java.lang.String%5B%5D)|",
+    "called": "|java+method:///com/hp/hpl/jena/rdf/model/impl/RDFReaderFImpl/setBaseReaderClassName(java.lang.String,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///com/hp/hpl/jena/rdf/model/impl/RDFReaderFImpl/setBaseReaderClassName(java.lang.String,java.lang.String)|",
+      "|java+method:///arq/cmd/CmdUtils/setLog4j()|",
+      "|java+constructor:///tdb/tdbcheck/tdbcheck(java.lang.String%5B%5D)|",
+      "|java+method:///tdb/tdbcheck/main()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/hp/hpl/jena/rdf/model/impl/RDFReaderFImpl/setBaseReaderClassName(java.lang.String,java.lang.String)|",
+      "|java+method:///arq/cmd/CmdUtils/setLog4j()|",
+      "|java+constructor:///tdb/tdbcheck/tdbcheck(java.lang.String%5B%5D)|",
+      "|java+method:///tdb/tdbcheck/mainRun()|"
+    ],
+    "affectedLib": "com.hp.hpl.jena:jena:2.5.6",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "com.hp.hpl.jena:tdb:0.5",
+    "coordinatesV2": "com.hp.hpl.jena:tdb:0.6.0",
+    "caller": "|java+method:///tdb/tdbdump/main(java.lang.String%5B%5D)|",
+    "called": "|java+method:///arq/cmd/CmdUtils/setLog4j()|",
+    "v1Body": [
+      "|java+method:///arq/cmd/CmdUtils/setLog4j()|",
+      "|java+method:///tdb/tdbdump/main()|",
+      "|java+constructor:///tdb/tdbdump/tdbdump(java.lang.String%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///tdb/tdbdump/tdbdump(java.lang.String%5B%5D)|",
+      "|java+method:///arq/cmd/CmdUtils/setLog4j()|",
+      "|java+method:///tdb/tdbdump/mainRun()|"
+    ],
+    "affectedLib": "com.hp.hpl.jena:arq-extra:2.5.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.hp.hpl.jena:tdb:0.5",
+    "coordinatesV2": "com.hp.hpl.jena:tdb:0.6.0",
+    "caller": "|java+method:///tdb/tdbclean/main(java.lang.String%5B%5D)|",
+    "called": "|java+method:///arq/cmd/CmdUtils/setLog4j()|",
+    "v1Body": [
+      "|java+method:///arq/cmd/CmdUtils/setLog4j()|",
+      "|java+constructor:///tdb/tdbclean/tdbclean(java.lang.String%5B%5D)|",
+      "|java+method:///tdb/tdbclean/main()|"
+    ],
+    "v2Body": [
+      "|java+method:///arq/cmd/CmdUtils/setLog4j()|",
+      "|java+constructor:///tdb/tdbclean/tdbclean(java.lang.String%5B%5D)|",
+      "|java+method:///tdb/tdbclean/mainRun()|"
+    ],
+    "affectedLib": "com.hp.hpl.jena:arq-extra:2.5.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.hp.hpl.jena:tdb:0.5",
+    "coordinatesV2": "com.hp.hpl.jena:tdb:0.6.0",
+    "caller": "|java+method:///tdb/tdbloader/main(java.lang.String%5B%5D)|",
+    "called": "|java+method:///arq/cmd/CmdUtils/setLog4j()|",
+    "v1Body": [
+      "|java+method:///arq/cmd/CmdUtils/setLog4j()|",
+      "|java+constructor:///tdb/tdbloader/tdbloader(java.lang.String%5B%5D)|",
+      "|java+method:///tdb/tdbloader/main()|"
+    ],
+    "v2Body": [
+      "|java+method:///tdb/tdbloader/mainRun()|",
+      "|java+method:///arq/cmd/CmdUtils/setLog4j()|",
+      "|java+constructor:///tdb/tdbloader/tdbloader(java.lang.String%5B%5D)|"
+    ],
+    "affectedLib": "com.hp.hpl.jena:arq-extra:2.5.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.hp.hpl.jena:tdb:0.5",
+    "coordinatesV2": "com.hp.hpl.jena:tdb:0.6.0",
+    "caller": "|java+method:///tdb/cmdline/ModTDBAssembler/processArgs(arq.cmdline.CmdArgModule)|",
+    "called": "|java+constructor:///arq/cmd/CmdException/CmdException(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///arq/cmdline/ModAssembler/getAssemblerFile()|",
+      "|java+constructor:///arq/cmd/CmdException/CmdException(java.lang.String)|",
+      "|java+method:///tdb/cmdline/ModLocation/getLocation()|",
+      "|java+method:///tdb/cmdline/ModLocation/processArgs(arq.cmdline.CmdArgModule)|"
+    ],
+    "v2Body": [
+      "|java+method:///arq/cmdline/ModAssembler/getAssemblerFile()|",
+      "|java+constructor:///arq/cmd/CmdException/CmdException(java.lang.String)|",
+      "|java+method:///arq/cmdline/ModAssembler/processArgs(arq.cmdline.CmdArgModule)|",
+      "|java+method:///tdb/cmdline/ModLocation/getLocation()|",
+      "|java+method:///tdb/cmdline/ModLocation/processArgs(arq.cmdline.CmdArgModule)|"
+    ],
+    "affectedLib": "com.hp.hpl.jena:arq-extra:2.5.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.hp.hpl.jena:tdb:0.5",
+    "coordinatesV2": "com.hp.hpl.jena:tdb:0.6.0",
+    "caller": "|java+method:///tdb/cmdline/ModTDBDataset/createDataset()|",
+    "called": "|java+constructor:///arq/cmd/CmdException/CmdException(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///com/hp/hpl/jena/tdb/TDBFactory/createModel(com.hp.hpl.jena.tdb.base.file.Location)|",
+      "|java+method:///com/hp/hpl/jena/query/DatasetFactory/create(com.hp.hpl.jena.rdf.model.Model)|",
+      "|java+constructor:///arq/cmd/CmdException/CmdException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///tdb/cmdline/ModTDBAssembler/getLocation()|",
+      "|java+method:///com/hp/hpl/jena/sparql/core/assembler/AssemblerUtils/build(java.lang.String,com.hp.hpl.jena.rdf.model.Resource)|",
+      "|java+method:///com/hp/hpl/jena/rdf/model/Model/getGraph()|",
+      "|java+method:///tdb/cmdline/ModTDBAssembler/getAssemblerFile()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/hp/hpl/jena/tdb/TDBFactory/createModel(com.hp.hpl.jena.tdb.base.file.Location)|",
+      "|java+method:///com/hp/hpl/jena/query/DatasetFactory/create(com.hp.hpl.jena.rdf.model.Model)|",
+      "|java+method:///tdb/cmdline/ModTDBAssembler/getLocation()|",
+      "|java+method:///com/hp/hpl/jena/sparql/core/assembler/AssemblerUtils/build(java.lang.String,com.hp.hpl.jena.rdf.model.Resource)|",
+      "|java+method:///com/hp/hpl/jena/rdf/model/Model/getGraph()|",
+      "|java+method:///tdb/cmdline/ModTDBAssembler/getAssemblerFile()|",
+      "|java+constructor:///arq/cmd/CmdException/CmdException(java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///arq/cmd/CmdException/CmdException(java.lang.String)|"
+    ],
+    "affectedLib": "com.hp.hpl.jena:arq-extra:2.5.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.hp.hpl.jena:tdb:0.5",
+    "coordinatesV2": "com.hp.hpl.jena:tdb:0.6.0",
+    "caller": "|java+method:///tdb/tdbcheck/main(java.lang.String%5B%5D)|",
+    "called": "|java+method:///arq/cmd/CmdUtils/setLog4j()|",
+    "v1Body": [
+      "|java+method:///com/hp/hpl/jena/rdf/model/impl/RDFReaderFImpl/setBaseReaderClassName(java.lang.String,java.lang.String)|",
+      "|java+method:///arq/cmd/CmdUtils/setLog4j()|",
+      "|java+constructor:///tdb/tdbcheck/tdbcheck(java.lang.String%5B%5D)|",
+      "|java+method:///tdb/tdbcheck/main()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/hp/hpl/jena/rdf/model/impl/RDFReaderFImpl/setBaseReaderClassName(java.lang.String,java.lang.String)|",
+      "|java+method:///arq/cmd/CmdUtils/setLog4j()|",
+      "|java+constructor:///tdb/tdbcheck/tdbcheck(java.lang.String%5B%5D)|",
+      "|java+method:///tdb/tdbcheck/mainRun()|"
+    ],
+    "affectedLib": "com.hp.hpl.jena:arq-extra:2.5.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.hp.hpl.jena:tdb:0.5",
+    "coordinatesV2": "com.hp.hpl.jena:tdb:0.6.0",
+    "caller": "|java+method:///tdb/tdbnode/main(java.lang.String%5B%5D)|",
+    "called": "|java+method:///arq/cmd/CmdUtils/setLog4j()|",
+    "v1Body": [
+      "|java+method:///arq/cmd/CmdUtils/setLog4j()|",
+      "|java+method:///tdb/tdbnode/main()|",
+      "|java+constructor:///tdb/tdbnode/tdbnode(java.lang.String%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///arq/cmd/CmdUtils/setLog4j()|",
+      "|java+method:///tdb/tdbnode/mainRun()|",
+      "|java+constructor:///tdb/tdbnode/tdbnode(java.lang.String%5B%5D)|"
+    ],
+    "affectedLib": "com.hp.hpl.jena:arq-extra:2.5.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.hp.hpl.jena:tdb:0.5",
+    "coordinatesV2": "com.hp.hpl.jena:tdb:0.6.0",
+    "caller": "|java+constructor:///tdb/tdbquery/tdbquery(java.lang.String%5B%5D)|",
+    "called": "|java+constructor:///arq/query/query(java.lang.String%5B%5D)|",
+    "v1Body": [
+      "|java+method:///tdb/cmdline/CmdTDB/init()|",
+      "|java+constructor:///arq/query/query(java.lang.String%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///tdb/cmdline/CmdTDB/init()|",
+      "|java+method:///arq/cmdline/ModVersion/addClass(java.lang.Class)|",
+      "|java+constructor:///arq/query/query(java.lang.String%5B%5D)|"
+    ],
+    "affectedLib": "com.hp.hpl.jena:arq-extra:2.5.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.hp.hpl.jena:tdb:0.5",
+    "coordinatesV2": "com.hp.hpl.jena:tdb:0.6.0",
+    "caller": "|java+constructor:///tdb/cmdline/CmdTDB/CmdTDB(java.lang.String%5B%5D)|",
+    "called": "|java+method:///arq/cmdline/ModVersion/addClass(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///tdb/cmdline/CmdTDB/init()|",
+      "|java+constructor:///tdb/cmdline/ModTDBDataset/ModTDBDataset()|",
+      "|java+method:///arq/cmdline/CmdARQ/addModule(arq.cmdline.ArgModuleGeneral)|",
+      "|java+constructor:///arq/cmdline/CmdARQ/CmdARQ(java.lang.String%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///tdb/cmdline/CmdTDB/init()|",
+      "|java+method:///arq/cmdline/CmdARQ/addModule(arq.cmdline.ArgModuleGeneral)|",
+      "|java+constructor:///arq/cmdline/CmdARQ/CmdARQ(java.lang.String%5B%5D)|",
+      "|java+constructor:///tdb/cmdline/ModTDBDataset/ModTDBDataset()|",
+      "|java+method:///arq/cmdline/ModVersion/addClass(java.lang.Class)|"
+    ],
+    "affectedLib": "com.hp.hpl.jena:arq-extra:2.5.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.hp.hpl.jena:tdb:0.5",
+    "coordinatesV2": "com.hp.hpl.jena:tdb:0.6.0",
+    "caller": "|java+method:///com/hp/hpl/jena/tdb/TDB/initWorker()|",
+    "called": "|java+method:///com/hp/hpl/jena/sparql/util/Context/set(com.hp.hpl.jena.sparql.util.Symbol,boolean)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+method:///com/hp/hpl/jena/rdf/model/impl/RDFReaderFImpl/setBaseReaderClassName(java.lang.String,java.lang.String)|",
+      "|java+method:///com/hp/hpl/jena/query/ARQ/getContext()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///com/hp/hpl/jena/sparql/util/Context/set(com.hp.hpl.jena.sparql.util.Symbol,java.lang.Object)|",
+      "|java+method:///com/hp/hpl/jena/tdb/pgraph/assembler/PGraphAssemblerVocab/init()|",
+      "|java+constructor:///com/hp/hpl/jena/tdb/solver/StageGeneratorPGraphBGP/StageGeneratorPGraphBGP(com.hp.hpl.jena.sparql.engine.main.StageGenerator)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///org/slf4j/Logger/isDebugEnabled()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+method:///com/hp/hpl/jena/sparql/util/Context/get(com.hp.hpl.jena.sparql.util.Symbol)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+method:///com/hp/hpl/jena/sparql/util/Context/set(com.hp.hpl.jena.sparql.util.Symbol,boolean)|",
+      "|java+method:///com/hp/hpl/jena/rdf/model/impl/RDFReaderFImpl/setBaseReaderClassName(java.lang.String,java.lang.String)|",
+      "|java+method:///com/hp/hpl/jena/query/ARQ/getContext()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///com/hp/hpl/jena/tdb/TDB/wireIntoExecution()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///org/slf4j/Logger/isDebugEnabled()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///com/hp/hpl/jena/tdb/TDB/getContext()|",
+      "|java+method:///com/hp/hpl/jena/tdb/pgraph/assembler/PGraphAssemblerVocab/init()|"
+    ],
+    "affectedLib": "com.hp.hpl.jena:arq:2.5.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.hp.hpl.jena:tdb:0.5",
+    "coordinatesV2": "com.hp.hpl.jena:tdb:0.6.0",
+    "caller": "|java+method:///tdb/cmdline/ModTDBDataset/createDataset()|",
+    "called": "|java+method:///com/hp/hpl/jena/query/DatasetFactory/create(com.hp.hpl.jena.rdf.model.Model)|",
+    "v1Body": [
+      "|java+method:///com/hp/hpl/jena/tdb/TDBFactory/createModel(com.hp.hpl.jena.tdb.base.file.Location)|",
+      "|java+method:///com/hp/hpl/jena/query/DatasetFactory/create(com.hp.hpl.jena.rdf.model.Model)|",
+      "|java+constructor:///arq/cmd/CmdException/CmdException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///tdb/cmdline/ModTDBAssembler/getLocation()|",
+      "|java+method:///com/hp/hpl/jena/sparql/core/assembler/AssemblerUtils/build(java.lang.String,com.hp.hpl.jena.rdf.model.Resource)|",
+      "|java+method:///com/hp/hpl/jena/rdf/model/Model/getGraph()|",
+      "|java+method:///tdb/cmdline/ModTDBAssembler/getAssemblerFile()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/hp/hpl/jena/tdb/TDBFactory/createModel(com.hp.hpl.jena.tdb.base.file.Location)|",
+      "|java+method:///com/hp/hpl/jena/query/DatasetFactory/create(com.hp.hpl.jena.rdf.model.Model)|",
+      "|java+method:///tdb/cmdline/ModTDBAssembler/getLocation()|",
+      "|java+method:///com/hp/hpl/jena/sparql/core/assembler/AssemblerUtils/build(java.lang.String,com.hp.hpl.jena.rdf.model.Resource)|",
+      "|java+method:///com/hp/hpl/jena/rdf/model/Model/getGraph()|",
+      "|java+method:///tdb/cmdline/ModTDBAssembler/getAssemblerFile()|",
+      "|java+constructor:///arq/cmd/CmdException/CmdException(java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///arq/cmd/CmdException/CmdException(java.lang.String)|"
+    ],
+    "affectedLib": "com.hp.hpl.jena:arq:2.5.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.hp.hpl.jena:tdb:0.5",
+    "coordinatesV2": "com.hp.hpl.jena:tdb:0.6.0",
+    "caller": "|java+method:///com/hp/hpl/jena/tdb/pgraph/BulkLoader/createSecondaryIndexesInterleaved(boolean)|",
+    "called": "|java+method:///com/hp/hpl/jena/sparql/util/Timer/readTimer()|",
+    "v1Body": [
+      "|java+method:///com/hp/hpl/jena/tdb/pgraph/GraphTDB/setIndexOSP(com.hp.hpl.jena.tdb.index.TripleIndex)|",
+      "|java+method:///com/hp/hpl/jena/tdb/pgraph/BulkLoader/printf(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///java/lang/Double/valueOf(double)|",
+      "|java+method:///com/hp/hpl/jena/sparql/util/Timer/startTimer()|",
+      "|java+method:///com/hp/hpl/jena/tdb/pgraph/BulkLoader/copyIndex(com.hp.hpl.jena.tdb.index.TripleIndex,com.hp.hpl.jena.tdb.index.TripleIndex%5B%5D,java.lang.String,boolean)|",
+      "|java+constructor:///com/hp/hpl/jena/sparql/util/Timer/Timer()|",
+      "|java+method:///com/hp/hpl/jena/tdb/pgraph/GraphTDB/setIndexPOS(com.hp.hpl.jena.tdb.index.TripleIndex)|",
+      "|java+method:///com/hp/hpl/jena/sparql/util/Timer/readTimer()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/hp/hpl/jena/tdb/pgraph/GraphTDB/setIndexOSP(com.hp.hpl.jena.tdb.index.TripleIndex)|",
+      "|java+method:///com/hp/hpl/jena/tdb/pgraph/BulkLoader/printf(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///java/lang/Double/valueOf(double)|",
+      "|java+method:///com/hp/hpl/jena/tdb/pgraph/BulkLoader/copyIndex(java.util.Iterator,com.hp.hpl.jena.tdb.index.TripleIndex%5B%5D,java.lang.String,boolean)|",
+      "|java+constructor:///com/hp/hpl/jena/sparql/util/Timer/Timer()|",
+      "|java+method:///com/hp/hpl/jena/tdb/pgraph/GraphTDB/setIndexPOS(com.hp.hpl.jena.tdb.index.TripleIndex)|",
+      "|java+method:///com/hp/hpl/jena/sparql/util/Timer/readTimer()|",
+      "|java+method:///com/hp/hpl/jena/tdb/index/TripleIndex/all()|",
+      "|java+method:///com/hp/hpl/jena/sparql/util/Timer/startTimer()|"
+    ],
+    "affectedLib": "com.hp.hpl.jena:arq:2.5.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.hp.hpl.jena:tdb:0.5",
+    "coordinatesV2": "com.hp.hpl.jena:tdb:0.6.0",
+    "caller": "|java+method:///com/hp/hpl/jena/tdb/pgraph/BulkLoader/createSecondaryIndexesSequential(boolean)|",
+    "called": "|java+method:///com/hp/hpl/jena/sparql/util/Timer/endTimer()|",
+    "v1Body": [
+      "|java+method:///com/hp/hpl/jena/tdb/pgraph/GraphTDB/setIndexOSP(com.hp.hpl.jena.tdb.index.TripleIndex)|",
+      "|java+method:///com/hp/hpl/jena/tdb/pgraph/BulkLoader/printf(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///java/lang/Double/valueOf(double)|",
+      "|java+method:///com/hp/hpl/jena/sparql/util/Timer/startTimer()|",
+      "|java+method:///com/hp/hpl/jena/tdb/pgraph/BulkLoader/copyIndex(com.hp.hpl.jena.tdb.index.TripleIndex,com.hp.hpl.jena.tdb.index.TripleIndex%5B%5D,java.lang.String,boolean)|",
+      "|java+method:///com/hp/hpl/jena/sparql/util/Timer/endTimer()|",
+      "|java+constructor:///com/hp/hpl/jena/sparql/util/Timer/Timer()|",
+      "|java+method:///com/hp/hpl/jena/tdb/pgraph/GraphTDB/setIndexPOS(com.hp.hpl.jena.tdb.index.TripleIndex)|",
+      "|java+method:///com/hp/hpl/jena/sparql/util/Timer/readTimer()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/hp/hpl/jena/tdb/pgraph/GraphTDB/setIndexOSP(com.hp.hpl.jena.tdb.index.TripleIndex)|",
+      "|java+method:///com/hp/hpl/jena/tdb/pgraph/BulkLoader/printf(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///java/lang/Double/valueOf(double)|",
+      "|java+method:///com/hp/hpl/jena/sparql/util/Timer/endTimer()|",
+      "|java+method:///com/hp/hpl/jena/tdb/pgraph/BulkLoader/copyIndex(java.util.Iterator,com.hp.hpl.jena.tdb.index.TripleIndex%5B%5D,java.lang.String,boolean)|",
+      "|java+constructor:///com/hp/hpl/jena/sparql/util/Timer/Timer()|",
+      "|java+method:///com/hp/hpl/jena/tdb/pgraph/GraphTDB/setIndexPOS(com.hp.hpl.jena.tdb.index.TripleIndex)|",
+      "|java+method:///com/hp/hpl/jena/sparql/util/Timer/readTimer()|",
+      "|java+method:///com/hp/hpl/jena/tdb/index/TripleIndex/all()|",
+      "|java+method:///com/hp/hpl/jena/sparql/util/Timer/startTimer()|"
+    ],
+    "affectedLib": "com.hp.hpl.jena:arq:2.5.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.hp.hpl.jena:tdb:0.5",
+    "coordinatesV2": "com.hp.hpl.jena:tdb:0.6.0",
+    "caller": "|java+method:///tdb/tdbloader/exec()|",
+    "called": "|java+method:///com/hp/hpl/jena/query/ARQ/getContext()|",
+    "v1Body": [
+      "|java+method:///com/hp/hpl/jena/query/ARQ/getContext()|",
+      "|java+constructor:///com/hp/hpl/jena/tdb/pgraph/BulkLoader/BulkLoader(com.hp.hpl.jena.tdb.pgraph.GraphTDB,boolean,boolean,boolean)|",
+      "|java+method:///tdb/tdbloader/isVerbose()|",
+      "|java+method:///java/util/List/size()|",
+      "|java+method:///com/hp/hpl/jena/tdb/pgraph/BulkLoader/load(java.util.List)|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///tdb/tdbloader/getGraph()|",
+      "|java+method:///java/io/PrintStream/println(java.lang.Object)|",
+      "|java+method:///tdb/tdbloader/isQuiet()|",
+      "|java+method:///tdb/tdbloader/getPositional()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/hp/hpl/jena/query/ARQ/getContext()|",
+      "|java+method:///java/lang/Runtime/getRuntime()|",
+      "|java+method:///tdb/tdbloader/isVerbose()|",
+      "|java+method:///java/util/List/size()|",
+      "|java+constructor:///com/hp/hpl/jena/tdb/pgraph/BulkLoader/BulkLoader(com.hp.hpl.jena.tdb.pgraph.GraphTDB,boolean,boolean,boolean,boolean)|",
+      "|java+method:///java/lang/StringBuilder/append(long)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///com/hp/hpl/jena/tdb/pgraph/BulkLoader/load(java.util.List)|",
+      "|java+method:///java/lang/Runtime/maxMemory()|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///tdb/tdbloader/getGraph()|",
+      "|java+method:///java/io/PrintStream/println(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/io/PrintStream/println(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///tdb/tdbloader/isQuiet()|",
+      "|java+method:///tdb/tdbloader/getPositional()|"
+    ],
+    "affectedLib": "com.hp.hpl.jena:arq:2.5.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.hp.hpl.jena:tdb:0.5",
+    "coordinatesV2": "com.hp.hpl.jena:tdb:0.6.0",
+    "caller": "|java+method:///com/hp/hpl/jena/tdb/pgraph/BulkLoader/load(java.util.List)|",
+    "called": "|java+method:///com/hp/hpl/jena/sparql/util/Timer/getTimeInterval()|",
+    "v1Body": [
+      "|java+method:///com/hp/hpl/jena/tdb/pgraph/GraphTDB/close()|",
+      "|java+method:///com/hp/hpl/jena/tdb/pgraph/BulkLoader/printf(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///com/hp/hpl/jena/tdb/pgraph/BulkLoader/loadOne(com.hp.hpl.jena.rdf.model.Model,java.lang.String)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///com/hp/hpl/jena/tdb/pgraph/BulkLoader/dropSecondaryIndexes()|",
+      "|java+method:///com/hp/hpl/jena/tdb/pgraph/BulkLoader/createSecondaryIndexes(boolean)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///com/hp/hpl/jena/sparql/util/Timer/endTimer()|",
+      "|java+method:///com/hp/hpl/jena/tdb/pgraph/BulkLoader/println(java.lang.String)|",
+      "|java+method:///com/hp/hpl/jena/tdb/pgraph/GraphTDB/sync(boolean)|",
+      "|java+method:///com/hp/hpl/jena/sparql/util/Timer/getTimeInterval()|",
+      "|java+method:///com/hp/hpl/jena/tdb/pgraph/BulkLoader/println()|",
+      "|java+method:///com/hp/hpl/jena/rdf/model/ModelFactory/createModelForGraph(com.hp.hpl.jena.graph.Graph)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///java/lang/Double/valueOf(double)|",
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///com/hp/hpl/jena/tdb/pgraph/GraphTDB/isEmpty()|",
+      "|java+method:///com/hp/hpl/jena/sparql/util/Timer/startTimer()|",
+      "|java+constructor:///com/hp/hpl/jena/sparql/util/Timer/Timer()|",
+      "|java+method:///com/hp/hpl/jena/tdb/pgraph/BulkLoader/now(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/hp/hpl/jena/tdb/pgraph/GraphTDB/close()|",
+      "|java+method:///com/hp/hpl/jena/tdb/pgraph/BulkLoader/printf(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///com/hp/hpl/jena/tdb/pgraph/BulkLoader/loadOne(com.hp.hpl.jena.rdf.model.Model,java.lang.String)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///com/hp/hpl/jena/tdb/pgraph/BulkLoader/dropSecondaryIndexes()|",
+      "|java+method:///java/io/PrintStream/println()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///com/hp/hpl/jena/sparql/util/Timer/endTimer()|",
+      "|java+method:///com/hp/hpl/jena/tdb/pgraph/BulkLoader/println(java.lang.String)|",
+      "|java+method:///com/hp/hpl/jena/tdb/pgraph/GraphTDB/sync(boolean)|",
+      "|java+method:///com/hp/hpl/jena/sparql/util/Timer/getTimeInterval()|",
+      "|java+method:///com/hp/hpl/jena/tdb/pgraph/BulkLoader/println()|",
+      "|java+method:///com/hp/hpl/jena/rdf/model/ModelFactory/createModelForGraph(com.hp.hpl.jena.graph.Graph)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///com/hp/hpl/jena/tdb/pgraph/GraphTDB/setIndexSPO(com.hp.hpl.jena.tdb.index.TripleIndex)|",
+      "|java+method:///com/hp/hpl/jena/tdb/pgraph/BulkLoader/statsFinish(com.hp.hpl.jena.rdf.model.Model)|",
+      "|java+method:///java/lang/Double/valueOf(double)|",
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///com/hp/hpl/jena/tdb/pgraph/BulkLoader/statsStart(com.hp.hpl.jena.rdf.model.Model)|",
+      "|java+method:///com/hp/hpl/jena/tdb/pgraph/BulkLoader/createSecondaryIndexes(boolean)|",
+      "|java+method:///com/hp/hpl/jena/tdb/pgraph/GraphTDB/isEmpty()|",
+      "|java+method:///com/hp/hpl/jena/sparql/util/Timer/startTimer()|",
+      "|java+constructor:///com/hp/hpl/jena/sparql/util/Timer/Timer()|",
+      "|java+method:///java/io/PrintStream/println(java.lang.Object)|",
+      "|java+method:///com/hp/hpl/jena/tdb/pgraph/BulkLoader/now(java.lang.String)|"
+    ],
+    "affectedLib": "com.hp.hpl.jena:arq:2.5.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "com.hp.hpl.jena:tdb:0.5",
+    "coordinatesV2": "com.hp.hpl.jena:tdb:0.6.0",
+    "caller": "|java+method:///com/hp/hpl/jena/tdb/pgraph/assembler/PGraphAssembler/open(com.hp.hpl.jena.assembler.Assembler,com.hp.hpl.jena.rdf.model.Resource,com.hp.hpl.jena.assembler.Mode)|",
+    "called": "|java+method:///com/hp/hpl/jena/sparql/util/graph/GraphUtils/getStringValue(com.hp.hpl.jena.rdf.model.Resource,com.hp.hpl.jena.rdf.model.Property)|",
+    "v1Body": [
+      "|java+method:///com/hp/hpl/jena/tdb/TDBFactory/createModel(com.hp.hpl.jena.tdb.base.file.Location)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///java/util/Map/size()|",
+      "|java+method:///com/hp/hpl/jena/tdb/index/TripleIndex/getDescription()|",
+      "|java+method:///com/hp/hpl/jena/tdb/pgraph/assembler/PGraphAssembler/open(com.hp.hpl.jena.assembler.Assembler,com.hp.hpl.jena.rdf.model.Resource,com.hp.hpl.jena.assembler.Mode)|",
+      "|java+method:///com/hp/hpl/jena/rdf/model/Resource/hasProperty(com.hp.hpl.jena.rdf.model.Property)|",
+      "|java+method:///java/util/Map/containsKey(java.lang.Object)|",
+      "|java+method:///com/hp/hpl/jena/rdf/model/ModelFactory/createModelForGraph(com.hp.hpl.jena.graph.Graph)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+constructor:///com/hp/hpl/jena/assembler/exceptions/AssemblerException/AssemblerException(com.hp.hpl.jena.rdf.model.Resource,java.lang.String)|",
+      "|java+constructor:///com/hp/hpl/jena/tdb/pgraph/GraphTDB/GraphTDB(com.hp.hpl.jena.tdb.index.TripleIndex,com.hp.hpl.jena.tdb.index.TripleIndex,com.hp.hpl.jena.tdb.index.TripleIndex,com.hp.hpl.jena.tdb.pgraph.NodeTable)|",
+      "|java+constructor:///com/hp/hpl/jena/tdb/base/file/Location/Location(java.lang.String)|",
+      "|java+method:///com/hp/hpl/jena/tdb/TDB/init()|",
+      "|java+method:///com/hp/hpl/jena/sparql/util/graph/GraphUtils/exactlyOneProperty(com.hp.hpl.jena.rdf.model.Resource,com.hp.hpl.jena.rdf.model.Property)|",
+      "|java+method:///com/hp/hpl/jena/tdb/index/IndexBuilder/get()|",
+      "|java+method:///java/lang/String/equalsIgnoreCase(java.lang.String)|",
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///com/hp/hpl/jena/sparql/util/graph/GraphUtils/getStringValue(com.hp.hpl.jena.rdf.model.Resource,com.hp.hpl.jena.rdf.model.Property)|",
+      "|java+method:///com/hp/hpl/jena/sparql/util/graph/GraphUtils/multiValueResource(com.hp.hpl.jena.rdf.model.Resource,com.hp.hpl.jena.rdf.model.Property)|",
+      "|java+constructor:///com/hp/hpl/jena/tdb/pgraph/NodeTableIndex/NodeTableIndex(com.hp.hpl.jena.tdb.index.IndexBuilder,com.hp.hpl.jena.tdb.base.file.Location)|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+method:///com/hp/hpl/jena/tdb/pgraph/assembler/TripleIndexAssembler/open(com.hp.hpl.jena.assembler.Assembler,com.hp.hpl.jena.rdf.model.Resource,com.hp.hpl.jena.assembler.Mode)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+constructor:///java/util/HashMap/HashMap()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/io/PrintStream/flush()|",
+      "|java+method:///com/hp/hpl/jena/rdf/model/Literal/getString()|",
+      "|java+method:///com/hp/hpl/jena/sparql/util/graph/GraphUtils/getStringValue(com.hp.hpl.jena.rdf.model.Resource,com.hp.hpl.jena.rdf.model.Property)|",
+      "|java+method:///com/hp/hpl/jena/tdb/TDBFactory/createModel(com.hp.hpl.jena.tdb.base.file.Location)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///com/hp/hpl/jena/rdf/model/RDFNode/isLiteral()|",
+      "|java+method:///com/hp/hpl/jena/sparql/util/FmtUtils/stringForRDFNode(com.hp.hpl.jena.rdf.model.RDFNode)|",
+      "|java+method:///com/hp/hpl/jena/rdf/model/StmtIterator/hasNext()|",
+      "|java+method:///com/hp/hpl/jena/rdf/model/Resource/hasProperty(com.hp.hpl.jena.rdf.model.Property)|",
+      "|java+method:///java/io/PrintStream/printf(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///com/hp/hpl/jena/rdf/model/StmtIterator/nextStatement()|",
+      "|java+constructor:///com/hp/hpl/jena/assembler/exceptions/AssemblerException/AssemblerException(com.hp.hpl.jena.rdf.model.Resource,java.lang.String)|",
+      "|java+constructor:///com/hp/hpl/jena/tdb/base/file/Location/Location(java.lang.String)|",
+      "|java+method:///com/hp/hpl/jena/tdb/TDB/init()|",
+      "|java+method:///com/hp/hpl/jena/sparql/util/graph/GraphUtils/exactlyOneProperty(com.hp.hpl.jena.rdf.model.Resource,com.hp.hpl.jena.rdf.model.Property)|",
+      "|java+constructor:///com/hp/hpl/jena/tdb/TDBException/TDBException(java.lang.String)|",
+      "|java+method:///com/hp/hpl/jena/rdf/model/Statement/getObject()|",
+      "|java+method:///com/hp/hpl/jena/tdb/pgraph/assembler/PGraphAssembler/open(com.hp.hpl.jena.assembler.Assembler,com.hp.hpl.jena.rdf.model.Resource,com.hp.hpl.jena.assembler.Mode)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///com/hp/hpl/jena/rdf/model/Resource/listProperties(com.hp.hpl.jena.rdf.model.Property)|"
+    ],
+    "affectedLib": "com.hp.hpl.jena:arq:2.5.0",
+    "change": "UPDATED"
+  }
+]

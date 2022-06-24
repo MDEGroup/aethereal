@@ -1,0 +1,162 @@
+[
+  {
+    "coordinatesV1": "org.apache.flink:flink-test-utils:0.9.1-hadoop1",
+    "coordinatesV2": "org.apache.flink:flink-test-utils:0.10.0",
+    "caller": "|java+method:///org/apache/flink/test/util/ForkableFlinkMiniCluster/startTaskManager(int,akka.actor.ActorSystem)|",
+    "called": "|java+method:///org/apache/flink/runtime/taskmanager/TaskManager$/startTaskManagerComponentsAndActor(org.apache.flink.configuration.Configuration,akka.actor.ActorSystem,java.lang.String,scala.Option,scala.Option,boolean,org.apache.flink.runtime.StreamingMode,java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/flink/configuration/Configuration/clone()|",
+      "|java+method:///org/apache/flink/runtime/taskmanager/TaskManager$/TASK_MANAGER_NAME()|",
+      "|java+method:///java/lang/Object/toString()|",
+      "|java+method:///org/apache/flink/test/util/ForkableFlinkMiniCluster/jobManagerActor()|",
+      "|java+method:///org/apache/flink/test/util/ForkableFlinkMiniCluster/hostname()|",
+      "|java+method:///org/apache/flink/runtime/taskmanager/TaskManager$/startTaskManagerComponentsAndActor(org.apache.flink.configuration.Configuration,akka.actor.ActorSystem,java.lang.String,scala.Option,scala.Option,boolean,org.apache.flink.runtime.StreamingMode,java.lang.Class)|",
+      "|java+method:///org/apache/flink/test/util/ForkableFlinkMiniCluster/numTaskManagers()|",
+      "|java+method:///org/apache/flink/runtime/minicluster/FlinkMiniCluster/singleActorSystem()|",
+      "|java+constructor:///scala/collection/mutable/StringBuilder/StringBuilder()|",
+      "|java+constructor:///scala/Some/Some(java.lang.Object)|",
+      "|java+method:///org/apache/flink/test/util/ForkableFlinkMiniCluster/configuration()|",
+      "|java+method:///scala/collection/mutable/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///org/apache/flink/runtime/minicluster/FlinkMiniCluster/streamingMode()|",
+      "|java+method:///scala/collection/mutable/StringBuilder/toString()|",
+      "|java+method:///org/apache/flink/configuration/Configuration/setInteger(java.lang.String,int)|",
+      "|java+method:///akka/actor/ActorRef/path()|",
+      "|java+method:///scala/runtime/BoxesRunTime/boxToInteger(int)|",
+      "|java+method:///org/apache/flink/configuration/Configuration/getInteger(java.lang.String,int)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/flink/configuration/Configuration/clone()|",
+      "|java+method:///org/apache/flink/runtime/taskmanager/TaskManager$/TASK_MANAGER_NAME()|",
+      "|java+method:///org/apache/flink/configuration/Configuration/setInteger(java.lang.String,int)|",
+      "|java+method:///org/apache/flink/test/util/ForkableFlinkMiniCluster/hostname()|",
+      "|java+method:///org/apache/flink/runtime/taskmanager/TaskManager$/startTaskManagerComponentsAndActor(org.apache.flink.configuration.Configuration,akka.actor.ActorSystem,java.lang.String,scala.Option,scala.Option,boolean,org.apache.flink.runtime.StreamingMode,java.lang.Class)|",
+      "|java+method:///org/apache/flink/test/util/ForkableFlinkMiniCluster/numTaskManagers()|",
+      "|java+constructor:///scala/collection/mutable/StringBuilder/StringBuilder()|",
+      "|java+constructor:///scala/Some/Some(java.lang.Object)|",
+      "|java+method:///org/apache/flink/test/util/ForkableFlinkMiniCluster/configuration()|",
+      "|java+method:///scala/collection/mutable/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///org/apache/flink/test/util/ForkableFlinkMiniCluster/createLeaderRetrievalService()|",
+      "|java+method:///org/apache/flink/runtime/minicluster/FlinkMiniCluster/streamingMode()|",
+      "|java+method:///scala/collection/mutable/StringBuilder/toString()|",
+      "|java+method:///scala/runtime/BoxesRunTime/boxToInteger(int)|",
+      "|java+method:///org/apache/flink/configuration/Configuration/getInteger(java.lang.String,int)|"
+    ],
+    "affectedLib": "org.apache.flink:flink-runtime:0.10.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.flink:flink-test-utils:0.9.1-hadoop1",
+    "coordinatesV2": "org.apache.flink:flink-test-utils:0.10.0",
+    "caller": "|java+method:///org/apache/flink/test/util/TestEnvironment/execute(java.lang.String)|",
+    "called": "|java+method:///org/apache/flink/optimizer/plantranslate/JobGraphGenerator/compileJobGraph(org.apache.flink.optimizer.plan.OptimizedPlan)|",
+    "v1Body": [
+      "|java+method:///java/io/PrintStream/println(java.lang.String)|",
+      "|java+method:///org/apache/flink/test/util/TestEnvironment/compileProgram(java.lang.String)|",
+      "|java+method:///org/apache/flink/test/util/ForkableFlinkMiniCluster/submitJobAndWait(org.apache.flink.runtime.jobgraph.JobGraph,boolean)|",
+      "|java+constructor:///org/apache/flink/optimizer/plantranslate/JobGraphGenerator/JobGraphGenerator()|",
+      "|java+method:///org/apache/flink/runtime/client/SerializedJobExecutionResult/toJobExecutionResult(java.lang.ClassLoader)|",
+      "|java+method:///org/apache/flink/optimizer/plantranslate/JobGraphGenerator/compileJobGraph(org.apache.flink.optimizer.plan.OptimizedPlan)|",
+      "|java+method:///java/lang/Exception/getMessage()|",
+      "|java+method:///org/junit/Assert/fail(java.lang.String)|",
+      "|java+method:///java/lang/Exception/printStackTrace()|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///java/lang/Class/getClassLoader()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/flink/test/util/TestEnvironment/compileProgram(java.lang.String)|",
+      "|java+method:///org/apache/flink/test/util/ForkableFlinkMiniCluster/submitJobAndWait(org.apache.flink.runtime.jobgraph.JobGraph,boolean)|",
+      "|java+constructor:///org/apache/flink/optimizer/plantranslate/JobGraphGenerator/JobGraphGenerator()|",
+      "|java+method:///org/apache/flink/optimizer/plantranslate/JobGraphGenerator/compileJobGraph(org.apache.flink.optimizer.plan.OptimizedPlan)|"
+    ],
+    "affectedLib": "org.apache.flink:flink-optimizer:0.10.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.flink:flink-test-utils:0.9.1-hadoop1",
+    "coordinatesV2": "org.apache.flink:flink-test-utils:0.10.0",
+    "caller": "|java+method:///org/apache/flink/test/util/TestEnvironment/compileProgram(java.lang.String)|",
+    "called": "|java+method:///org/apache/flink/optimizer/Optimizer/compile(org.apache.flink.api.common.Plan)|",
+    "v1Body": [
+      "|java+method:///org/apache/flink/optimizer/Optimizer/compile(org.apache.flink.api.common.Plan)|",
+      "|java+constructor:///org/apache/flink/optimizer/Optimizer/Optimizer(org.apache.flink.optimizer.DataStatistics,org.apache.flink.configuration.Configuration)|",
+      "|java+method:///org/apache/flink/test/util/TestEnvironment/createProgramPlan(java.lang.String)|",
+      "|java+constructor:///org/apache/flink/optimizer/DataStatistics/DataStatistics()|",
+      "|java+method:///org/apache/flink/test/util/ForkableFlinkMiniCluster/getConfiguration()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/flink/optimizer/Optimizer/compile(org.apache.flink.api.common.Plan)|",
+      "|java+constructor:///org/apache/flink/optimizer/Optimizer/Optimizer(org.apache.flink.optimizer.DataStatistics,org.apache.flink.configuration.Configuration)|",
+      "|java+method:///org/apache/flink/test/util/TestEnvironment/createProgramPlan(java.lang.String)|",
+      "|java+constructor:///org/apache/flink/optimizer/DataStatistics/DataStatistics()|",
+      "|java+method:///org/apache/flink/test/util/ForkableFlinkMiniCluster/configuration()|"
+    ],
+    "affectedLib": "org.apache.flink:flink-optimizer:0.10.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.flink:flink-test-utils:0.9.1-hadoop1",
+    "coordinatesV2": "org.apache.flink:flink-test-utils:0.10.0",
+    "caller": "|java+method:///org/apache/flink/test/util/ForkableFlinkMiniCluster/startTaskManager(int,akka.actor.ActorSystem)|",
+    "called": "|java+method:///org/apache/flink/configuration/Configuration/clone()|",
+    "v1Body": [
+      "|java+method:///org/apache/flink/configuration/Configuration/clone()|",
+      "|java+method:///org/apache/flink/runtime/taskmanager/TaskManager$/TASK_MANAGER_NAME()|",
+      "|java+method:///java/lang/Object/toString()|",
+      "|java+method:///org/apache/flink/test/util/ForkableFlinkMiniCluster/jobManagerActor()|",
+      "|java+method:///org/apache/flink/test/util/ForkableFlinkMiniCluster/hostname()|",
+      "|java+method:///org/apache/flink/runtime/taskmanager/TaskManager$/startTaskManagerComponentsAndActor(org.apache.flink.configuration.Configuration,akka.actor.ActorSystem,java.lang.String,scala.Option,scala.Option,boolean,org.apache.flink.runtime.StreamingMode,java.lang.Class)|",
+      "|java+method:///org/apache/flink/test/util/ForkableFlinkMiniCluster/numTaskManagers()|",
+      "|java+method:///org/apache/flink/runtime/minicluster/FlinkMiniCluster/singleActorSystem()|",
+      "|java+constructor:///scala/collection/mutable/StringBuilder/StringBuilder()|",
+      "|java+constructor:///scala/Some/Some(java.lang.Object)|",
+      "|java+method:///org/apache/flink/test/util/ForkableFlinkMiniCluster/configuration()|",
+      "|java+method:///scala/collection/mutable/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///org/apache/flink/runtime/minicluster/FlinkMiniCluster/streamingMode()|",
+      "|java+method:///scala/collection/mutable/StringBuilder/toString()|",
+      "|java+method:///org/apache/flink/configuration/Configuration/setInteger(java.lang.String,int)|",
+      "|java+method:///akka/actor/ActorRef/path()|",
+      "|java+method:///scala/runtime/BoxesRunTime/boxToInteger(int)|",
+      "|java+method:///org/apache/flink/configuration/Configuration/getInteger(java.lang.String,int)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/flink/configuration/Configuration/clone()|",
+      "|java+method:///org/apache/flink/runtime/taskmanager/TaskManager$/TASK_MANAGER_NAME()|",
+      "|java+method:///org/apache/flink/configuration/Configuration/setInteger(java.lang.String,int)|",
+      "|java+method:///org/apache/flink/test/util/ForkableFlinkMiniCluster/hostname()|",
+      "|java+method:///org/apache/flink/runtime/taskmanager/TaskManager$/startTaskManagerComponentsAndActor(org.apache.flink.configuration.Configuration,akka.actor.ActorSystem,java.lang.String,scala.Option,scala.Option,boolean,org.apache.flink.runtime.StreamingMode,java.lang.Class)|",
+      "|java+method:///org/apache/flink/test/util/ForkableFlinkMiniCluster/numTaskManagers()|",
+      "|java+constructor:///scala/collection/mutable/StringBuilder/StringBuilder()|",
+      "|java+constructor:///scala/Some/Some(java.lang.Object)|",
+      "|java+method:///org/apache/flink/test/util/ForkableFlinkMiniCluster/configuration()|",
+      "|java+method:///scala/collection/mutable/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///org/apache/flink/test/util/ForkableFlinkMiniCluster/createLeaderRetrievalService()|",
+      "|java+method:///org/apache/flink/runtime/minicluster/FlinkMiniCluster/streamingMode()|",
+      "|java+method:///scala/collection/mutable/StringBuilder/toString()|",
+      "|java+method:///scala/runtime/BoxesRunTime/boxToInteger(int)|",
+      "|java+method:///org/apache/flink/configuration/Configuration/getInteger(java.lang.String,int)|"
+    ],
+    "affectedLib": "org.apache.flink:flink-core:0.10.0",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.apache.flink:flink-test-utils:0.9.1-hadoop1",
+    "coordinatesV2": "org.apache.flink:flink-test-utils:0.10.0",
+    "caller": "|java+method:///org/apache/flink/test/util/ForkableFlinkMiniCluster$/startCluster(int,int,java.lang.String)|",
+    "called": "|java+constructor:///org/apache/flink/configuration/Configuration/Configuration()|",
+    "v1Body": [
+      "|java+constructor:///org/apache/flink/configuration/Configuration/Configuration()|",
+      "|java+constructor:///org/apache/flink/test/util/ForkableFlinkMiniCluster/ForkableFlinkMiniCluster(org.apache.flink.configuration.Configuration)|",
+      "|java+method:///org/apache/flink/configuration/Configuration/setString(java.lang.String,java.lang.String)|",
+      "|java+method:///org/apache/flink/configuration/Configuration/setInteger(java.lang.String,int)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/flink/configuration/Configuration/Configuration()|",
+      "|java+constructor:///org/apache/flink/test/util/ForkableFlinkMiniCluster/ForkableFlinkMiniCluster(org.apache.flink.configuration.Configuration)|",
+      "|java+method:///org/apache/flink/test/util/ForkableFlinkMiniCluster/start()|",
+      "|java+method:///org/apache/flink/configuration/Configuration/setString(java.lang.String,java.lang.String)|",
+      "|java+method:///org/apache/flink/configuration/Configuration/setInteger(java.lang.String,int)|"
+    ],
+    "affectedLib": "org.apache.flink:flink-core:0.10.0",
+    "change": "UPDATED"
+  }
+]

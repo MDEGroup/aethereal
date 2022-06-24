@@ -1,0 +1,848 @@
+[
+  {
+    "coordinatesV1": "org.extrema-sistemas:simpleds:1.0_RC1",
+    "coordinatesV2": "org.extrema-sistemas:simpleds:1.0",
+    "caller": "|java+method:///org/simpleds/cache/CacheManagerImpl/delete(com.google.appengine.api.datastore.Key)|",
+    "called": "|java+method:///com/google/common/collect/ImmutableList/of(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///com/google/common/collect/ImmutableList/of(java.lang.Object)|",
+      "|java+method:///org/simpleds/cache/CacheManagerImpl/delete(java.util.Collection)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/simpleds/cache/Level1Cache/getCacheInstance()|",
+      "|java+method:///org/simpleds/cache/Level1Cache/delete(com.google.appengine.api.datastore.Key)|",
+      "|java+method:///com/google/appengine/api/memcache/MemcacheService/delete(java.lang.Object)|"
+    ],
+    "affectedLib": "com.google.guava:guava:r05",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.extrema-sistemas:simpleds:1.0_RC1",
+    "coordinatesV2": "org.extrema-sistemas:simpleds:1.0",
+    "caller": "|java+method:///org/simpleds/SimpleQuery/in(java.lang.String,java.util.Collection)|",
+    "called": "|java+method:///com/google/common/collect/Lists/newArrayListWithCapacity(int)|",
+    "v1Body": [
+      "|java+method:///org/simpleds/SimpleQuery/in(java.lang.String,java.util.Collection)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/util/Collection/size()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/simpleds/metadata/PropertyMetadata/convertQueryParam(java.lang.Object)|",
+      "|java+method:///org/simpleds/SimpleQuery/getPropertyMetadata(java.lang.String)|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///java/util/Collection/iterator()|",
+      "|java+method:///com/google/common/collect/Lists/newArrayListWithCapacity(int)|",
+      "|java+method:///com/google/appengine/api/datastore/Query/addFilter(java.lang.String,com.google.appengine.api.datastore.Query$FilterOperator,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/util/Collection/size()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/simpleds/metadata/PropertyMetadata/convertQueryParam(java.lang.Object)|",
+      "|java+method:///org/simpleds/SimpleQuery/getPropertyMetadata(java.lang.String)|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///java/util/Collection/iterator()|",
+      "|java+method:///com/google/common/collect/Lists/newArrayListWithCapacity(int)|",
+      "|java+method:///com/google/appengine/api/datastore/Query/addFilter(java.lang.String,com.google.appengine.api.datastore.Query$FilterOperator,java.lang.Object)|"
+    ],
+    "affectedLib": "com.google.guava:guava:r05",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.extrema-sistemas:simpleds:1.0_RC1",
+    "coordinatesV2": "org.extrema-sistemas:simpleds:1.0",
+    "caller": "|java+method:///org/simpleds/cache/Level1Cache/get(java.util.Collection)|",
+    "called": "|java+method:///com/google/common/collect/Maps/newHashMapWithExpectedSize(int)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/util/Collection/size()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///com/google/common/collect/Maps/newHashMapWithExpectedSize(int)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/util/Collection/iterator()|",
+      "|java+method:///org/slf4j/Logger/isDebugEnabled()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/util/Map/isEmpty()|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/Map/keySet()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/util/Collection/size()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///com/google/common/collect/Maps/newHashMapWithExpectedSize(int)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/util/Collection/iterator()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/apache/commons/logging/Log/debug(java.lang.Object)|",
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/apache/commons/logging/Log/isDebugEnabled()|",
+      "|java+method:///java/util/Map/isEmpty()|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/Map/keySet()|"
+    ],
+    "affectedLib": "com.google.guava:guava:r05",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.extrema-sistemas:simpleds:1.0_RC1",
+    "coordinatesV2": "org.extrema-sistemas:simpleds:1.0",
+    "caller": "|java+method:///org/simpleds/KeyFactory2/create(com.google.appengine.api.datastore.Key,java.lang.Class,java.util.Collection)|",
+    "called": "|java+method:///com/google/common/collect/Collections2/transform(java.util.Collection,com.google.common.base.Function)|",
+    "v1Body": [
+      "|java+method:///com/google/common/collect/Collections2/transform(java.util.Collection,com.google.common.base.Function)|",
+      "|java+method:///org/simpleds/functions/IdToKeyFunction/withParent(com.google.appengine.api.datastore.Key)|",
+      "|java+constructor:///org/simpleds/functions/IdToKeyFunction/IdToKeyFunction(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Class/getSimpleName()|",
+      "|java+method:///org/simpleds/KeyFactory2/create(com.google.appengine.api.datastore.Key,java.lang.String,java.util.Collection)|"
+    ],
+    "affectedLib": "com.google.guava:guava:r05",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.extrema-sistemas:simpleds:1.0_RC1",
+    "coordinatesV2": "org.extrema-sistemas:simpleds:1.0",
+    "caller": "|java+method:///org/simpleds/cache/CacheManagerImpl/get(java.util.Collection,org.simpleds.metadata.ClassMetadata)|",
+    "called": "|java+method:///com/google/common/collect/Maps/newHashMapWithExpectedSize(int)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/simpleds/cache/Level1Cache/put(java.io.Serializable,java.lang.Object)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+constructor:///org/simpleds/cache/NonCachedPredicate/NonCachedPredicate(java.util.Set)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/util/Set/iterator()|",
+      "|java+method:///com/google/common/collect/Maps/newHashMapWithExpectedSize(int)|",
+      "|java+method:///org/slf4j/Logger/isDebugEnabled()|",
+      "|java+method:///java/util/Map/entrySet()|",
+      "|java+method:///com/google/common/collect/Collections2/filter(java.util.Collection,com.google.common.base.Predicate)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/simpleds/cache/Level1Cache/getCacheInstance()|",
+      "|java+method:///com/google/appengine/api/memcache/MemcacheService/getAll(java.util.Collection)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/simpleds/cache/Level1Cache/get(java.util.Collection)|",
+      "|java+method:///java/util/Map$Entry/getKey()|",
+      "|java+method:///org/simpleds/metadata/ClassMetadata/useLevel2Cache()|",
+      "|java+method:///java/util/Map/isEmpty()|",
+      "|java+method:///java/util/Collection/size()|",
+      "|java+method:///com/google/appengine/api/datastore/Entity/getKey()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/Map/keySet()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/util/Map$Entry/getValue()|",
+      "|java+method:///org/simpleds/metadata/ClassMetadata/datastoreToJava(com.google.appengine.api.datastore.Entity)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/simpleds/cache/Level1Cache/put(com.google.appengine.api.datastore.Key,java.lang.Object)|",
+      "|java+constructor:///org/simpleds/cache/NonCachedPredicate/NonCachedPredicate(java.util.Set)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/util/Set/iterator()|",
+      "|java+method:///com/google/common/collect/Maps/newHashMapWithExpectedSize(int)|",
+      "|java+method:///java/util/Map/entrySet()|",
+      "|java+method:///com/google/common/collect/Collections2/filter(java.util.Collection,com.google.common.base.Predicate)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/apache/commons/logging/Log/debug(java.lang.Object)|",
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/simpleds/cache/Level1Cache/getCacheInstance()|",
+      "|java+method:///com/google/appengine/api/memcache/MemcacheService/getAll(java.util.Collection)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/simpleds/cache/Level1Cache/get(java.util.Collection)|",
+      "|java+method:///java/util/Map$Entry/getKey()|",
+      "|java+method:///org/simpleds/metadata/ClassMetadata/useLevel2Cache()|",
+      "|java+method:///org/apache/commons/logging/Log/isDebugEnabled()|",
+      "|java+method:///java/util/Map/isEmpty()|",
+      "|java+method:///java/util/Collection/size()|",
+      "|java+method:///com/google/appengine/api/datastore/Entity/getKey()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/Map/keySet()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/util/Map$Entry/getValue()|",
+      "|java+method:///org/simpleds/metadata/ClassMetadata/datastoreToJava(com.google.appengine.api.datastore.Entity)|"
+    ],
+    "affectedLib": "com.google.guava:guava:r05",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.extrema-sistemas:simpleds:1.0_RC1",
+    "coordinatesV2": "org.extrema-sistemas:simpleds:1.0",
+    "caller": "|java+constructor:///org/simpleds/metadata/PersistenceMetadataRepository/PersistenceMetadataRepository()|",
+    "called": "|java+method:///com/google/common/collect/Maps/newHashMap()|",
+    "v1Body": [
+      "|java+method:///com/google/common/collect/Maps/newHashMap()|",
+      "|java+constructor:///org/simpleds/metadata/ClassMetadataFactory/ClassMetadataFactory()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/common/collect/Maps/newHashMap()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "com.google.guava:guava:r05",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.extrema-sistemas:simpleds:1.0_RC1",
+    "coordinatesV2": "org.extrema-sistemas:simpleds:1.0",
+    "caller": "|java+method:///org/simpleds/KeyFactory2/create(com.google.appengine.api.datastore.Key,java.lang.String,java.util.Collection)|",
+    "called": "|java+method:///com/google/common/collect/Collections2/transform(java.util.Collection,com.google.common.base.Function)|",
+    "v1Body": [
+      "|java+method:///com/google/common/collect/Collections2/transform(java.util.Collection,com.google.common.base.Function)|",
+      "|java+method:///org/simpleds/functions/IdToKeyFunction/withParent(com.google.appengine.api.datastore.Key)|",
+      "|java+constructor:///org/simpleds/functions/IdToKeyFunction/IdToKeyFunction(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/appengine/api/datastore/KeyFactory/createKey(com.google.appengine.api.datastore.Key,java.lang.String,long)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///com/google/common/collect/Lists/newArrayListWithCapacity(int)|",
+      "|java+method:///java/util/Collection/size()|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///java/util/Collection/iterator()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/lang/Long/longValue()|"
+    ],
+    "affectedLib": "com.google.guava:guava:r05",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.extrema-sistemas:simpleds:1.0_RC1",
+    "coordinatesV2": "org.extrema-sistemas:simpleds:1.0",
+    "caller": "|java+method:///org/simpleds/KeyFactory2/create(java.lang.Class,java.util.Collection)|",
+    "called": "|java+method:///com/google/common/collect/Collections2/transform(java.util.Collection,com.google.common.base.Function)|",
+    "v1Body": [
+      "|java+method:///com/google/common/collect/Collections2/transform(java.util.Collection,com.google.common.base.Function)|",
+      "|java+constructor:///org/simpleds/functions/IdToKeyFunction/IdToKeyFunction(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Class/getSimpleName()|",
+      "|java+method:///org/simpleds/KeyFactory2/create(java.lang.String,java.util.Collection)|"
+    ],
+    "affectedLib": "com.google.guava:guava:r05",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.extrema-sistemas:simpleds:1.0_RC1",
+    "coordinatesV2": "org.extrema-sistemas:simpleds:1.0",
+    "caller": "|java+method:///org/simpleds/bg/TaskStats/start(org.simpleds.bg.BackgroundTask)|",
+    "called": "|java+method:///com/google/common/collect/ImmutableList/of(java.lang.Object,java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/simpleds/bg/TaskStats/getMemcache()|",
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String)|",
+      "|java+method:///com/google/common/collect/ImmutableList/of(java.lang.Object,java.lang.Object,java.lang.Object)|",
+      "|java+method:///com/google/appengine/api/memcache/MemcacheService/put(java.lang.Object,java.lang.Object,com.google.appengine.api.memcache.Expiration,com.google.appengine.api.memcache.MemcacheService$SetPolicy)|",
+      "|java+method:///org/simpleds/bg/BackgroundTask/getId()|",
+      "|java+method:///java/lang/System/currentTimeMillis()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///com/google/appengine/api/memcache/MemcacheService/deleteAll(java.util.Collection)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/simpleds/bg/TaskStats/getMemcache()|",
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///com/google/common/collect/ImmutableList/of(java.lang.Object,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/apache/commons/logging/Log/info(java.lang.Object)|",
+      "|java+method:///com/google/appengine/api/memcache/MemcacheService/put(java.lang.Object,java.lang.Object,com.google.appengine.api.memcache.Expiration,com.google.appengine.api.memcache.MemcacheService$SetPolicy)|",
+      "|java+method:///org/simpleds/bg/BackgroundTask/getId()|",
+      "|java+method:///java/lang/System/currentTimeMillis()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///com/google/appengine/api/memcache/MemcacheService/deleteAll(java.util.Collection)|"
+    ],
+    "affectedLib": "com.google.guava:guava:r05",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.extrema-sistemas:simpleds:1.0_RC1",
+    "coordinatesV2": "org.extrema-sistemas:simpleds:1.0",
+    "caller": "|java+method:///org/simpleds/KeyFactory2/create(java.lang.String,java.util.Collection)|",
+    "called": "|java+method:///com/google/common/collect/Collections2/transform(java.util.Collection,com.google.common.base.Function)|",
+    "v1Body": [
+      "|java+method:///com/google/common/collect/Collections2/transform(java.util.Collection,com.google.common.base.Function)|",
+      "|java+constructor:///org/simpleds/functions/IdToKeyFunction/IdToKeyFunction(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/simpleds/KeyFactory2/create(com.google.appengine.api.datastore.Key,java.lang.String,java.util.Collection)|"
+    ],
+    "affectedLib": "com.google.guava:guava:r05",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.extrema-sistemas:simpleds:1.0_RC1",
+    "coordinatesV2": "org.extrema-sistemas:simpleds:1.0",
+    "caller": "|java+initializer:///org/simpleds/metadata/PropertyMetadataFactory/PropertyMetadataFactory$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.6.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.extrema-sistemas:simpleds:1.0_RC1",
+    "coordinatesV2": "org.extrema-sistemas:simpleds:1.0",
+    "caller": "|java+initializer:///org/simpleds/metadata/ClassMetadata/ClassMetadata$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.6.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.extrema-sistemas:simpleds:1.0_RC1",
+    "coordinatesV2": "org.extrema-sistemas:simpleds:1.0",
+    "caller": "|java+initializer:///org/simpleds/cache/Level1Cache/Level1Cache$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+constructor:///java/lang/ThreadLocal/ThreadLocal()|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/lang/ThreadLocal/ThreadLocal()|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.6.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.extrema-sistemas:simpleds:1.0_RC1",
+    "coordinatesV2": "org.extrema-sistemas:simpleds:1.0",
+    "caller": "|java+constructor:///org/simpleds/bg/AbstractBackgroundTask/AbstractBackgroundTask(java.lang.String)|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///com/google/appengine/api/datastore/DatastoreServiceFactory/getDatastoreService()|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/appengine/api/datastore/DatastoreServiceFactory/getDatastoreService()|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.6.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.extrema-sistemas:simpleds:1.0_RC1",
+    "coordinatesV2": "org.extrema-sistemas:simpleds:1.0",
+    "caller": "|java+initializer:///org/simpleds/metadata/PersistenceMetadataRepository/PersistenceMetadataRepository$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.6.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.extrema-sistemas:simpleds:1.0_RC1",
+    "coordinatesV2": "org.extrema-sistemas:simpleds:1.0",
+    "caller": "|java+initializer:///org/simpleds/tx/TransactionManagerImpl/TransactionManagerImpl$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.6.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.extrema-sistemas:simpleds:1.0_RC1",
+    "coordinatesV2": "org.extrema-sistemas:simpleds:1.0",
+    "caller": "|java+initializer:///org/simpleds/bg/TaskLauncher/TaskLauncher$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.6.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.extrema-sistemas:simpleds:1.0_RC1",
+    "coordinatesV2": "org.extrema-sistemas:simpleds:1.0",
+    "caller": "|java+initializer:///org/simpleds/metadata/ClassMetadataFactory/ClassMetadataFactory$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.6.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.extrema-sistemas:simpleds:1.0_RC1",
+    "coordinatesV2": "org.extrema-sistemas:simpleds:1.0",
+    "caller": "|java+initializer:///org/simpleds/bg/TaskStats/TaskStats$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.6.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.extrema-sistemas:simpleds:1.0",
+    "coordinatesV2": "org.extrema-sistemas:simpleds:1.0_RC1",
+    "caller": "|java+method:///org/simpleds/SimpleQuery/in(java.lang.String,java.util.Collection)|",
+    "called": "|java+method:///com/google/common/collect/Lists/newArrayListWithCapacity(int)|",
+    "v1Body": [
+      "|java+method:///org/simpleds/SimpleQuery/in(java.lang.String,java.util.Collection)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/util/Collection/size()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/simpleds/metadata/PropertyMetadata/convertQueryParam(java.lang.Object)|",
+      "|java+method:///org/simpleds/SimpleQuery/getPropertyMetadata(java.lang.String)|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///java/util/Collection/iterator()|",
+      "|java+method:///com/google/common/collect/Lists/newArrayListWithCapacity(int)|",
+      "|java+method:///com/google/appengine/api/datastore/Query/addFilter(java.lang.String,com.google.appengine.api.datastore.Query$FilterOperator,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/util/Collection/size()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/simpleds/metadata/PropertyMetadata/convertQueryParam(java.lang.Object)|",
+      "|java+method:///org/simpleds/SimpleQuery/getPropertyMetadata(java.lang.String)|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///java/util/Collection/iterator()|",
+      "|java+method:///com/google/common/collect/Lists/newArrayListWithCapacity(int)|",
+      "|java+method:///com/google/appengine/api/datastore/Query/addFilter(java.lang.String,com.google.appengine.api.datastore.Query$FilterOperator,java.lang.Object)|"
+    ],
+    "affectedLib": "com.google.collections:google-collections:1.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.extrema-sistemas:simpleds:1.0",
+    "coordinatesV2": "org.extrema-sistemas:simpleds:1.0_RC1",
+    "caller": "|java+method:///org/simpleds/cache/Level1Cache/get(java.util.Collection)|",
+    "called": "|java+method:///com/google/common/collect/Maps/newHashMapWithExpectedSize(int)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/util/Collection/size()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///com/google/common/collect/Maps/newHashMapWithExpectedSize(int)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/util/Collection/iterator()|",
+      "|java+method:///org/slf4j/Logger/isDebugEnabled()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/util/Map/isEmpty()|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/Map/keySet()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/util/Collection/size()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///com/google/common/collect/Maps/newHashMapWithExpectedSize(int)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/util/Collection/iterator()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/apache/commons/logging/Log/debug(java.lang.Object)|",
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/apache/commons/logging/Log/isDebugEnabled()|",
+      "|java+method:///java/util/Map/isEmpty()|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/Map/keySet()|"
+    ],
+    "affectedLib": "com.google.collections:google-collections:1.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.extrema-sistemas:simpleds:1.0",
+    "coordinatesV2": "org.extrema-sistemas:simpleds:1.0_RC1",
+    "caller": "|java+method:///org/simpleds/cache/CacheManagerImpl/get(java.util.Collection,org.simpleds.metadata.ClassMetadata)|",
+    "called": "|java+method:///com/google/common/collect/Collections2/filter(java.util.Collection,com.google.common.base.Predicate)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/simpleds/cache/Level1Cache/put(java.io.Serializable,java.lang.Object)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+constructor:///org/simpleds/cache/NonCachedPredicate/NonCachedPredicate(java.util.Set)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/util/Set/iterator()|",
+      "|java+method:///com/google/common/collect/Maps/newHashMapWithExpectedSize(int)|",
+      "|java+method:///org/slf4j/Logger/isDebugEnabled()|",
+      "|java+method:///java/util/Map/entrySet()|",
+      "|java+method:///com/google/common/collect/Collections2/filter(java.util.Collection,com.google.common.base.Predicate)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/simpleds/cache/Level1Cache/getCacheInstance()|",
+      "|java+method:///com/google/appengine/api/memcache/MemcacheService/getAll(java.util.Collection)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/simpleds/cache/Level1Cache/get(java.util.Collection)|",
+      "|java+method:///java/util/Map$Entry/getKey()|",
+      "|java+method:///org/simpleds/metadata/ClassMetadata/useLevel2Cache()|",
+      "|java+method:///java/util/Map/isEmpty()|",
+      "|java+method:///java/util/Collection/size()|",
+      "|java+method:///com/google/appengine/api/datastore/Entity/getKey()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/Map/keySet()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/util/Map$Entry/getValue()|",
+      "|java+method:///org/simpleds/metadata/ClassMetadata/datastoreToJava(com.google.appengine.api.datastore.Entity)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/simpleds/cache/Level1Cache/put(com.google.appengine.api.datastore.Key,java.lang.Object)|",
+      "|java+constructor:///org/simpleds/cache/NonCachedPredicate/NonCachedPredicate(java.util.Set)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/util/Set/iterator()|",
+      "|java+method:///com/google/common/collect/Maps/newHashMapWithExpectedSize(int)|",
+      "|java+method:///java/util/Map/entrySet()|",
+      "|java+method:///com/google/common/collect/Collections2/filter(java.util.Collection,com.google.common.base.Predicate)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/apache/commons/logging/Log/debug(java.lang.Object)|",
+      "|java+method:///java/util/Map/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/simpleds/cache/Level1Cache/getCacheInstance()|",
+      "|java+method:///com/google/appengine/api/memcache/MemcacheService/getAll(java.util.Collection)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/simpleds/cache/Level1Cache/get(java.util.Collection)|",
+      "|java+method:///java/util/Map$Entry/getKey()|",
+      "|java+method:///org/simpleds/metadata/ClassMetadata/useLevel2Cache()|",
+      "|java+method:///org/apache/commons/logging/Log/isDebugEnabled()|",
+      "|java+method:///java/util/Map/isEmpty()|",
+      "|java+method:///java/util/Collection/size()|",
+      "|java+method:///com/google/appengine/api/datastore/Entity/getKey()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/Map/keySet()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/util/Map$Entry/getValue()|",
+      "|java+method:///org/simpleds/metadata/ClassMetadata/datastoreToJava(com.google.appengine.api.datastore.Entity)|"
+    ],
+    "affectedLib": "com.google.collections:google-collections:1.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.extrema-sistemas:simpleds:1.0",
+    "coordinatesV2": "org.extrema-sistemas:simpleds:1.0_RC1",
+    "caller": "|java+constructor:///org/simpleds/metadata/PersistenceMetadataRepository/PersistenceMetadataRepository()|",
+    "called": "|java+method:///com/google/common/collect/Maps/newHashMap()|",
+    "v1Body": [
+      "|java+method:///com/google/common/collect/Maps/newHashMap()|",
+      "|java+constructor:///org/simpleds/metadata/ClassMetadataFactory/ClassMetadataFactory()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/common/collect/Maps/newHashMap()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "com.google.collections:google-collections:1.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.extrema-sistemas:simpleds:1.0",
+    "coordinatesV2": "org.extrema-sistemas:simpleds:1.0_RC1",
+    "caller": "|java+method:///org/simpleds/EntityManagerImpl/find(org.simpleds.SimpleQuery)|",
+    "called": "|java+method:///com/google/common/collect/Lists/newArrayList()|",
+    "v1Body": [
+      "|java+method:///org/simpleds/SimpleQuery/asList()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///com/google/common/collect/Lists/newArrayList()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/simpleds/EntityManagerImpl/asIterable(org.simpleds.SimpleQuery)|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///org/simpleds/SimpleQueryResultIterable/iterator()|"
+    ],
+    "affectedLib": "com.google.collections:google-collections:1.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.extrema-sistemas:simpleds:1.0",
+    "coordinatesV2": "org.extrema-sistemas:simpleds:1.0_RC1",
+    "caller": "|java+method:///org/simpleds/KeyFactory2/create(com.google.appengine.api.datastore.Key,java.lang.String,java.util.Collection)|",
+    "called": "|java+method:///com/google/common/collect/Lists/newArrayListWithCapacity(int)|",
+    "v1Body": [
+      "|java+method:///com/google/common/collect/Collections2/transform(java.util.Collection,com.google.common.base.Function)|",
+      "|java+method:///org/simpleds/functions/IdToKeyFunction/withParent(com.google.appengine.api.datastore.Key)|",
+      "|java+constructor:///org/simpleds/functions/IdToKeyFunction/IdToKeyFunction(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/appengine/api/datastore/KeyFactory/createKey(com.google.appengine.api.datastore.Key,java.lang.String,long)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///com/google/common/collect/Lists/newArrayListWithCapacity(int)|",
+      "|java+method:///java/util/Collection/size()|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///java/util/Collection/iterator()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/lang/Long/longValue()|"
+    ],
+    "affectedLib": "com.google.collections:google-collections:1.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.extrema-sistemas:simpleds:1.0",
+    "coordinatesV2": "org.extrema-sistemas:simpleds:1.0_RC1",
+    "caller": "|java+method:///org/simpleds/metadata/PersistenceMetadataRepositoryFactory/initialize()|",
+    "called": "|java+method:///com/google/common/collect/Sets/newTreeSet()|",
+    "v1Body": [
+      "|java+method:///org/springframework/core/type/classreading/MetadataReader/getAnnotationMetadata()|",
+      "|java+constructor:///org/springframework/core/type/classreading/CachingMetadataReaderFactory/CachingMetadataReaderFactory()|",
+      "|java+constructor:///org/simpleds/metadata/PersistenceMetadataRepository/PersistenceMetadataRepository()|",
+      "|java+method:///org/springframework/core/type/AnnotationMetadata/getClassName()|",
+      "|java+method:///org/springframework/core/io/support/ResourcePatternResolver/getResources(java.lang.String)|",
+      "|java+method:///org/springframework/core/type/classreading/MetadataReaderFactory/getMetadataReader(org.springframework.core.io.Resource)|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+method:///org/springframework/core/io/Resource/isReadable()|",
+      "|java+method:///org/springframework/core/type/AnnotationMetadata/hasAnnotation(java.lang.String)|",
+      "|java+method:///org/springframework/util/ClassUtils/getDefaultClassLoader()|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.Throwable)|",
+      "|java+method:///org/simpleds/metadata/PersistenceMetadataRepository/setClassMetadataFactory(org.simpleds.metadata.ClassMetadataFactory)|",
+      "|java+method:///org/springframework/util/ClassUtils/forName(java.lang.String,java.lang.ClassLoader)|",
+      "|java+method:///org/simpleds/metadata/PersistenceMetadataRepository/add(java.lang.Class)|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/springframework/core/type/classreading/MetadataReader/getAnnotationMetadata()|",
+      "|java+method:///org/simpleds/metadata/ClassMetadata/getKind()|",
+      "|java+method:///org/simpleds/annotations/Entity/parent()|",
+      "|java+constructor:///org/springframework/core/type/classreading/CachingMetadataReaderFactory/CachingMetadataReaderFactory()|",
+      "|java+method:///org/simpleds/metadata/PersistenceMetadataRepository/get(java.lang.Class)|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+constructor:///org/simpleds/metadata/PersistenceMetadataRepository/PersistenceMetadataRepository()|",
+      "|java+method:///org/springframework/core/io/support/ResourcePatternResolver/getResources(java.lang.String)|",
+      "|java+method:///org/springframework/util/ClassUtils/forName(java.lang.String,java.lang.ClassLoader)|",
+      "|java+method:///org/simpleds/metadata/PropertyMetadata/getAnnotation(java.lang.Class)|",
+      "|java+method:///org/springframework/core/io/Resource/isReadable()|",
+      "|java+method:///org/simpleds/metadata/ClassMetadata/setParents(java.util.Set)|",
+      "|java+method:///org/springframework/util/ClassUtils/getDefaultClassLoader()|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.Throwable)|",
+      "|java+method:///org/simpleds/metadata/ClassMetadata/getPersistentClass()|",
+      "|java+method:///org/simpleds/annotations/Id/parent()|",
+      "|java+method:///java/lang/Class/getAnnotation(java.lang.Class)|",
+      "|java+method:///org/simpleds/metadata/ClassMetadataFactory/createMetadata(java.lang.Class)|",
+      "|java+method:///org/springframework/core/type/AnnotationMetadata/getClassName()|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///org/springframework/core/type/classreading/MetadataReaderFactory/getMetadataReader(org.springframework.core.io.Resource)|",
+      "|java+method:///org/simpleds/metadata/PersistenceMetadataRepository/add(org.simpleds.metadata.ClassMetadata)|",
+      "|java+method:///java/lang/Class/getName()|",
+      "|java+constructor:///java/lang/IllegalArgumentException/IllegalArgumentException(java.lang.String)|",
+      "|java+method:///org/simpleds/metadata/PersistenceMetadataRepository/getAll()|",
+      "|java+method:///java/util/Collection/iterator()|",
+      "|java+method:///org/springframework/core/type/AnnotationMetadata/hasAnnotation(java.lang.String)|",
+      "|java+method:///org/simpleds/metadata/ClassMetadata/getKeyProperty()|",
+      "|java+method:///com/google/common/collect/Sets/newTreeSet()|",
+      "|java+method:///java/util/Set/add(java.lang.Object)|"
+    ],
+    "affectedLib": "com.google.collections:google-collections:1.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.extrema-sistemas:simpleds:1.0",
+    "coordinatesV2": "org.extrema-sistemas:simpleds:1.0_RC1",
+    "caller": "|java+method:///org/simpleds/bg/TaskStats/start(org.simpleds.bg.BackgroundTask)|",
+    "called": "|java+method:///com/google/common/collect/ImmutableList/of(java.lang.Object,java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/simpleds/bg/TaskStats/getMemcache()|",
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String)|",
+      "|java+method:///com/google/common/collect/ImmutableList/of(java.lang.Object,java.lang.Object,java.lang.Object)|",
+      "|java+method:///com/google/appengine/api/memcache/MemcacheService/put(java.lang.Object,java.lang.Object,com.google.appengine.api.memcache.Expiration,com.google.appengine.api.memcache.MemcacheService$SetPolicy)|",
+      "|java+method:///org/simpleds/bg/BackgroundTask/getId()|",
+      "|java+method:///java/lang/System/currentTimeMillis()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///com/google/appengine/api/memcache/MemcacheService/deleteAll(java.util.Collection)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/simpleds/bg/TaskStats/getMemcache()|",
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///com/google/common/collect/ImmutableList/of(java.lang.Object,java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/apache/commons/logging/Log/info(java.lang.Object)|",
+      "|java+method:///com/google/appengine/api/memcache/MemcacheService/put(java.lang.Object,java.lang.Object,com.google.appengine.api.memcache.Expiration,com.google.appengine.api.memcache.MemcacheService$SetPolicy)|",
+      "|java+method:///org/simpleds/bg/BackgroundTask/getId()|",
+      "|java+method:///java/lang/System/currentTimeMillis()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///com/google/appengine/api/memcache/MemcacheService/deleteAll(java.util.Collection)|"
+    ],
+    "affectedLib": "com.google.collections:google-collections:1.0",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.extrema-sistemas:simpleds:1.0",
+    "coordinatesV2": "org.extrema-sistemas:simpleds:1.0_RC1",
+    "caller": "|java+initializer:///org/simpleds/metadata/PropertyMetadataFactory/PropertyMetadataFactory$initializer|",
+    "called": "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "affectedLib": "commons-logging:commons-logging:1.1.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.extrema-sistemas:simpleds:1.0",
+    "coordinatesV2": "org.extrema-sistemas:simpleds:1.0_RC1",
+    "caller": "|java+constructor:///org/simpleds/cache/CacheManagerImpl/CacheManagerImpl()|",
+    "called": "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|",
+    "v1Body": [
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "affectedLib": "commons-logging:commons-logging:1.1.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.extrema-sistemas:simpleds:1.0",
+    "coordinatesV2": "org.extrema-sistemas:simpleds:1.0_RC1",
+    "caller": "|java+initializer:///org/simpleds/metadata/ClassMetadata/ClassMetadata$initializer|",
+    "called": "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "affectedLib": "commons-logging:commons-logging:1.1.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.extrema-sistemas:simpleds:1.0",
+    "coordinatesV2": "org.extrema-sistemas:simpleds:1.0_RC1",
+    "caller": "|java+constructor:///org/simpleds/bg/AbstractBackgroundTask/AbstractBackgroundTask(java.lang.String)|",
+    "called": "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///com/google/appengine/api/datastore/DatastoreServiceFactory/getDatastoreService()|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///com/google/appengine/api/datastore/DatastoreServiceFactory/getDatastoreService()|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "affectedLib": "commons-logging:commons-logging:1.1.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.extrema-sistemas:simpleds:1.0",
+    "coordinatesV2": "org.extrema-sistemas:simpleds:1.0_RC1",
+    "caller": "|java+initializer:///org/simpleds/metadata/PersistenceMetadataRepository/PersistenceMetadataRepository$initializer|",
+    "called": "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "affectedLib": "commons-logging:commons-logging:1.1.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.extrema-sistemas:simpleds:1.0",
+    "coordinatesV2": "org.extrema-sistemas:simpleds:1.0_RC1",
+    "caller": "|java+initializer:///org/simpleds/tx/TransactionManagerImpl/TransactionManagerImpl$initializer|",
+    "called": "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "affectedLib": "commons-logging:commons-logging:1.1.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.extrema-sistemas:simpleds:1.0",
+    "coordinatesV2": "org.extrema-sistemas:simpleds:1.0_RC1",
+    "caller": "|java+initializer:///org/simpleds/bg/TaskLauncher/TaskLauncher$initializer|",
+    "called": "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "affectedLib": "commons-logging:commons-logging:1.1.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.extrema-sistemas:simpleds:1.0",
+    "coordinatesV2": "org.extrema-sistemas:simpleds:1.0_RC1",
+    "caller": "|java+initializer:///org/simpleds/metadata/ClassMetadataFactory/ClassMetadataFactory$initializer|",
+    "called": "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "affectedLib": "commons-logging:commons-logging:1.1.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.extrema-sistemas:simpleds:1.0",
+    "coordinatesV2": "org.extrema-sistemas:simpleds:1.0_RC1",
+    "caller": "|java+initializer:///org/simpleds/bg/TaskStats/TaskStats$initializer|",
+    "called": "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "affectedLib": "commons-logging:commons-logging:1.1.1",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.extrema-sistemas:simpleds:1.0",
+    "coordinatesV2": "org.extrema-sistemas:simpleds:1.0_RC1",
+    "caller": "|java+constructor:///org/simpleds/cache/Level1Cache/Level1Cache()|",
+    "called": "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|",
+    "v1Body": [
+      "|java+constructor:///java/util/WeakHashMap/WeakHashMap()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/util/WeakHashMap/WeakHashMap()|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "affectedLib": "commons-logging:commons-logging:1.1.1",
+    "change": "ADDED"
+  }
+]

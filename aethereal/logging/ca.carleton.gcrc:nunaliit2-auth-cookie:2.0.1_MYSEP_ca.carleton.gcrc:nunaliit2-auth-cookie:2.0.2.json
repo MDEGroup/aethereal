@@ -1,0 +1,152 @@
+[
+  {
+    "coordinatesV1": "ca.carleton.gcrc:nunaliit2-auth-cookie:2.0.2",
+    "coordinatesV2": "ca.carleton.gcrc:nunaliit2-auth-cookie:2.0.1",
+    "caller": "|java+constructor:///ca/carleton/gcrc/auth/cookie/AuthFilter/AuthFilter()|",
+    "called": "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "log4j:log4j:1.2.14",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "ca.carleton.gcrc:nunaliit2-auth-cookie:2.0.2",
+    "coordinatesV2": "ca.carleton.gcrc:nunaliit2-auth-cookie:2.0.1",
+    "caller": "|java+constructor:///ca/carleton/gcrc/auth/cookie/AuthServlet/AuthServlet()|",
+    "called": "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+constructor:///javax/servlet/http/HttpServlet/HttpServlet()|",
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|",
+      "|java+method:///java/lang/Object/getClass()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///javax/servlet/http/HttpServlet/HttpServlet()|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///java/lang/Object/getClass()|"
+    ],
+    "affectedLib": "log4j:log4j:1.2.14",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "ca.carleton.gcrc:nunaliit2-auth-cookie:2.0.1",
+    "coordinatesV2": "ca.carleton.gcrc:nunaliit2-auth-cookie:2.0.2",
+    "caller": "|java+constructor:///ca/carleton/gcrc/auth/cookie/AuthFilter/AuthFilter()|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "ca.carleton.gcrc:nunaliit2-auth-cookie:2.0.1",
+    "coordinatesV2": "ca.carleton.gcrc:nunaliit2-auth-cookie:2.0.2",
+    "caller": "|java+constructor:///ca/carleton/gcrc/auth/cookie/AuthServlet/AuthServlet()|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+constructor:///javax/servlet/http/HttpServlet/HttpServlet()|",
+      "|java+method:///org/apache/log4j/Logger/getLogger(java.lang.Class)|",
+      "|java+method:///java/lang/Object/getClass()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///javax/servlet/http/HttpServlet/HttpServlet()|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///java/lang/Object/getClass()|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.2",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "ca.carleton.gcrc:nunaliit2-auth-cookie:2.0.1",
+    "coordinatesV2": "ca.carleton.gcrc:nunaliit2-auth-cookie:2.0.2",
+    "caller": "|java+method:///ca/carleton/gcrc/auth/cookie/AuthFilter/doFilter(javax.servlet.ServletRequest,javax.servlet.ServletResponse,javax.servlet.FilterChain)|",
+    "called": "|java+method:///ca/carleton/gcrc/auth/common/AuthenticationUtils/userToCookieString(boolean,ca.carleton.gcrc.auth.common.User)|",
+    "v1Body": [
+      "|java+method:///javax/servlet/FilterChain/doFilter(javax.servlet.ServletRequest,javax.servlet.ServletResponse)|",
+      "|java+method:///ca/carleton/gcrc/auth/common/AuthenticationUtils/userToCookieString(boolean,ca.carleton.gcrc.auth.common.User)|",
+      "|java+method:///ca/carleton/gcrc/auth/cookie/impl/CookieAuthentication/verifyCookieString(ca.carleton.gcrc.auth.common.UserRepository,java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///javax/servlet/ServletException/ServletException(java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///ca/carleton/gcrc/auth/common/AuthHttpServletRequest/AuthHttpServletRequest(javax.servlet.http.HttpServletRequest,ca.carleton.gcrc.auth.common.User)|",
+      "|java+method:///ca/carleton/gcrc/auth/common/AuthenticationUtils/getUserFromRequest(javax.servlet.http.HttpServletRequest)|",
+      "|java+method:///javax/servlet/http/HttpServletResponse/addCookie(javax.servlet.http.Cookie)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///javax/servlet/http/Cookie/setPath(java.lang.String)|",
+      "|java+method:///ca/carleton/gcrc/auth/common/AuthenticationUtils/sendAuthRequiredError(javax.servlet.http.HttpServletResponse,java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///org/apache/log4j/Logger/info(java.lang.Object)|",
+      "|java+method:///ca/carleton/gcrc/auth/cookie/AuthFilter/getCookieFromRequest(javax.servlet.http.HttpServletRequest)|",
+      "|java+constructor:///javax/servlet/http/Cookie/Cookie(java.lang.String,java.lang.String)|",
+      "|java+method:///javax/servlet/http/Cookie/getValue()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///ca/carleton/gcrc/auth/cookie/AuthFilter/checkAndDispatch(ca.carleton.gcrc.auth.common.User,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,javax.servlet.FilterChain)|"
+    ],
+    "v2Body": [
+      "|java+method:///javax/servlet/FilterChain/doFilter(javax.servlet.ServletRequest,javax.servlet.ServletResponse)|",
+      "|java+method:///ca/carleton/gcrc/auth/common/AuthenticationUtils/userToCookieString(boolean,ca.carleton.gcrc.auth.common.User)|",
+      "|java+method:///ca/carleton/gcrc/auth/cookie/impl/CookieAuthentication/verifyCookieString(ca.carleton.gcrc.auth.common.UserRepository,java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///ca/carleton/gcrc/auth/cookie/AuthFilter/getCookieFromRequest(javax.servlet.http.HttpServletRequest)|",
+      "|java+constructor:///javax/servlet/ServletException/ServletException(java.lang.String,java.lang.Throwable)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String)|",
+      "|java+constructor:///ca/carleton/gcrc/auth/common/AuthHttpServletRequest/AuthHttpServletRequest(javax.servlet.http.HttpServletRequest,ca.carleton.gcrc.auth.common.User)|",
+      "|java+method:///ca/carleton/gcrc/auth/common/AuthenticationUtils/getUserFromRequest(javax.servlet.http.HttpServletRequest)|",
+      "|java+method:///javax/servlet/http/HttpServletResponse/addCookie(javax.servlet.http.Cookie)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///javax/servlet/http/Cookie/setPath(java.lang.String)|",
+      "|java+method:///ca/carleton/gcrc/auth/common/AuthenticationUtils/sendAuthRequiredError(javax.servlet.http.HttpServletResponse,java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+constructor:///javax/servlet/http/Cookie/Cookie(java.lang.String,java.lang.String)|",
+      "|java+method:///javax/servlet/http/Cookie/getValue()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///ca/carleton/gcrc/auth/cookie/AuthFilter/checkAndDispatch(ca.carleton.gcrc.auth.common.User,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,javax.servlet.FilterChain)|"
+    ],
+    "affectedLib": "ca.carleton.gcrc:nunaliit2-auth-common:2.0.2",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "ca.carleton.gcrc:nunaliit2-auth-cookie:2.0.1",
+    "coordinatesV2": "ca.carleton.gcrc:nunaliit2-auth-cookie:2.0.2",
+    "caller": "|java+method:///ca/carleton/gcrc/auth/cookie/AuthFilter/checkAndDispatch(ca.carleton.gcrc.auth.common.User,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,javax.servlet.FilterChain)|",
+    "called": "|java+method:///ca/carleton/gcrc/auth/common/AuthenticationUtils/sendAuthRequiredError(javax.servlet.http.HttpServletResponse,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///ca/carleton/gcrc/auth/common/User/isAdmin()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/log4j/Logger/info(java.lang.Object)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///ca/carleton/gcrc/auth/common/AuthenticationUtils/sendAuthRequiredError(javax.servlet.http.HttpServletResponse,java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///javax/servlet/FilterChain/doFilter(javax.servlet.ServletRequest,javax.servlet.ServletResponse)|",
+      "|java+method:///ca/carleton/gcrc/auth/common/User/isAnonymous()|"
+    ],
+    "v2Body": [
+      "|java+method:///ca/carleton/gcrc/auth/common/User/isAdmin()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///ca/carleton/gcrc/auth/common/AuthenticationUtils/sendAuthRequiredError(javax.servlet.http.HttpServletResponse,java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///javax/servlet/FilterChain/doFilter(javax.servlet.ServletRequest,javax.servlet.ServletResponse)|",
+      "|java+method:///ca/carleton/gcrc/auth/common/User/isAnonymous()|"
+    ],
+    "affectedLib": "ca.carleton.gcrc:nunaliit2-auth-common:2.0.2",
+    "change": "UPDATED"
+  }
+]

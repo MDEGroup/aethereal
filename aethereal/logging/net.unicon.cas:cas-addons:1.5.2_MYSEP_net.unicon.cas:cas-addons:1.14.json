@@ -1,0 +1,351 @@
+[
+  {
+    "coordinatesV1": "net.unicon.cas:cas-addons:1.5.2",
+    "coordinatesV2": "net.unicon.cas:cas-addons:1.14",
+    "caller": "|java+constructor:///net/unicon/cas/addons/authentication/strong/yubikey/YubiKeyAuthenticationHandler/YubiKeyAuthenticationHandler(java.lang.Integer,java.lang.String)|",
+    "called": "|java+constructor:///org/jasig/cas/authentication/handler/support/AbstractUsernamePasswordAuthenticationHandler/AbstractUsernamePasswordAuthenticationHandler()|",
+    "v1Body": [
+      "|java+method:///com/yubico/client/v2/YubicoClient/setKey(java.lang.String)|",
+      "|java+constructor:///org/jasig/cas/authentication/handler/support/AbstractUsernamePasswordAuthenticationHandler/AbstractUsernamePasswordAuthenticationHandler()|",
+      "|java+method:///com/yubico/client/v2/YubicoClient/getClient(java.lang.Integer)|",
+      "|java+constructor:///net/unicon/cas/addons/authentication/strong/yubikey/YubiKeyAuthenticationHandler$WhitelistYubiKeyAccountRegistry/YubiKeyAuthenticationHandler$WhitelistYubiKeyAccountRegistry(net.unicon.cas.addons.authentication.strong.yubikey.YubiKeyAuthenticationHandler$WhitelistYubiKeyAccountRegistry)|"
+    ],
+    "v2Body": [
+      "|java+method:///com/yubico/client/v2/YubicoClient/setKey(java.lang.String)|",
+      "|java+constructor:///org/jasig/cas/authentication/handler/support/AbstractUsernamePasswordAuthenticationHandler/AbstractUsernamePasswordAuthenticationHandler()|",
+      "|java+method:///com/yubico/client/v2/YubicoClient/getClient(java.lang.Integer)|",
+      "|java+constructor:///net/unicon/cas/addons/authentication/strong/yubikey/YubiKeyAuthenticationHandler$AcceptAnyYubiKeyAccountRegistry/YubiKeyAuthenticationHandler$AcceptAnyYubiKeyAccountRegistry(net.unicon.cas.addons.authentication.strong.yubikey.YubiKeyAuthenticationHandler$AcceptAnyYubiKeyAccountRegistry)|"
+    ],
+    "affectedLib": "org.jasig.cas:cas-server-core:3.5.3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "net.unicon.cas:cas-addons:1.5.2",
+    "coordinatesV2": "net.unicon.cas:cas-addons:1.14",
+    "caller": "|java+method:///net/unicon/cas/addons/web/support/ServiceInitiatingWebSsoAwareCookieGenerator/addCookie(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String)|",
+    "called": "|java+method:///org/jasig/cas/web/support/CookieRetrievingCookieGenerator/addCookie(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String)|",
+    "v1Body": [
+      "|java+method:///net/unicon/cas/addons/web/support/ServiceInitiatingWebSsoAwareCookieGenerator/addCookie_aroundBody1$advice(net.unicon.cas.addons.web.support.ServiceInitiatingWebSsoAwareCookieGenerator,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String,org.aspectj.lang.JoinPoint,org.jasig.cas.aspect.LogAspect,org.aspectj.lang.ProceedingJoinPoint)|",
+      "|java+method:///org/jasig/cas/aspect/LogAspect/aspectOf()|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object%5B%5D)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/jasig/cas/services/ServicesManager/findServiceBy(org.jasig.cas.authentication.principal.Service)|",
+      "|java+method:///org/jasig/cas/web/support/WebUtils/getService(java.util.List,javax.servlet.http.HttpServletRequest)|",
+      "|java+method:///net/unicon/cas/addons/serviceregistry/services/RegisteredServicesPolicies/ssoSessionInitiating(net.unicon.cas.addons.serviceregistry.RegisteredServiceWithAttributes)|",
+      "|java+method:///java/lang/Class/cast(java.lang.Object)|",
+      "|java+method:///org/jasig/cas/web/support/CookieRetrievingCookieGenerator/addCookie(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String)|"
+    ],
+    "affectedLib": "org.jasig.cas:cas-server-core:3.5.3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "net.unicon.cas:cas-addons:1.5.2",
+    "coordinatesV2": "net.unicon.cas:cas-addons:1.14",
+    "caller": "|java+method:///net/unicon/cas/addons/serviceregistry/JsonServiceRegistryDao/findServiceById(long)|",
+    "called": "|java+method:///org/jasig/cas/services/InMemoryServiceRegistryDaoImpl/findServiceById(long)|",
+    "v1Body": [
+      "|java+method:///org/aspectj/runtime/internal/Conversions/longObject(long)|",
+      "|java+method:///net/unicon/cas/addons/serviceregistry/JsonServiceRegistryDao/findServiceById_aroundBody5$advice(net.unicon.cas.addons.serviceregistry.JsonServiceRegistryDao,long,org.aspectj.lang.JoinPoint,org.jasig.cas.aspect.LogAspect,org.aspectj.lang.ProceedingJoinPoint)|",
+      "|java+method:///org/jasig/cas/aspect/LogAspect/aspectOf()|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/jasig/cas/services/InMemoryServiceRegistryDaoImpl/findServiceById(long)|"
+    ],
+    "affectedLib": "org.jasig.cas:cas-server-core:3.5.3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "net.unicon.cas:cas-addons:1.5.2",
+    "coordinatesV2": "net.unicon.cas:cas-addons:1.14",
+    "caller": "|java+constructor:///net/unicon/cas/addons/serviceregistry/JsonServiceRegistryDao/JsonServiceRegistryDao(org.springframework.core.io.Resource)|",
+    "called": "|java+constructor:///org/jasig/cas/services/InMemoryServiceRegistryDaoImpl/InMemoryServiceRegistryDaoImpl()|",
+    "v1Body": [
+      "|java+constructor:///com/fasterxml/jackson/databind/ObjectMapper/ObjectMapper()|",
+      "|java+constructor:///org/jasig/cas/services/InMemoryServiceRegistryDaoImpl/InMemoryServiceRegistryDaoImpl()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+constructor:///com/fasterxml/jackson/databind/ObjectMapper/ObjectMapper()|",
+      "|java+constructor:///org/jasig/cas/services/InMemoryServiceRegistryDaoImpl/InMemoryServiceRegistryDaoImpl()|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "org.jasig.cas:cas-server-core:3.5.3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "net.unicon.cas:cas-addons:1.5.2",
+    "coordinatesV2": "net.unicon.cas:cas-addons:1.14",
+    "caller": "|java+method:///net/unicon/cas/addons/serviceregistry/services/authorization/ServiceAuthorizationAction/doExecute(org.springframework.webflow.execution.RequestContext)|",
+    "called": "|java+method:///org/jasig/cas/web/support/WebUtils/getService(org.springframework.webflow.execution.RequestContext)|",
+    "v1Body": [
+      "|java+method:///org/springframework/webflow/core/collection/MutableAttributeMap/put(java.lang.String,java.lang.Object)|",
+      "|java+method:///net/unicon/cas/addons/serviceregistry/services/authorization/ServiceAuthorizationAction/error()|",
+      "|java+method:///org/jasig/cas/web/support/WebUtils/getTicketGrantingTicketId(org.springframework.webflow.execution.RequestContext)|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String)|",
+      "|java+method:///net/unicon/cas/addons/serviceregistry/RegisteredServiceWithAttributes/getServiceId()|",
+      "|java+method:///org/jasig/cas/authentication/principal/Principal/getAttributes()|",
+      "|java+method:///org/jasig/cas/web/support/WebUtils/getService(org.springframework.webflow.execution.RequestContext)|",
+      "|java+method:///net/unicon/cas/addons/serviceregistry/RegisteredServiceWithAttributes/getExtraAttributes()|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+method:///org/jasig/cas/services/ServicesManager/findServiceBy(org.jasig.cas.authentication.principal.Service)|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+method:///org/jasig/cas/authentication/principal/Principal/getId()|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///org/springframework/webflow/execution/RequestContext/getRequestScope()|",
+      "|java+method:///org/jasig/cas/authentication/principal/Service/getId()|",
+      "|java+method:///net/unicon/cas/addons/authentication/AuthenticationSupport/getAuthenticatedPrincipalFrom(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/isDebugEnabled()|",
+      "|java+method:///net/unicon/cas/addons/serviceregistry/services/authorization/RegisteredServiceAuthorizer/authorized(java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///net/unicon/cas/addons/serviceregistry/services/authorization/RoleBasedServiceAuthorizationException/RoleBasedServiceAuthorizationException()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/springframework/webflow/core/collection/MutableAttributeMap/put(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/jasig/cas/web/support/WebUtils/getTicketGrantingTicketId(org.springframework.webflow.execution.RequestContext)|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String)|",
+      "|java+method:///net/unicon/cas/addons/serviceregistry/RegisteredServiceWithAttributes/getServiceId()|",
+      "|java+method:///org/jasig/cas/authentication/principal/Principal/getAttributes()|",
+      "|java+method:///org/jasig/cas/web/support/WebUtils/getService(org.springframework.webflow.execution.RequestContext)|",
+      "|java+constructor:///org/jasig/cas/services/UnauthorizedServiceException/UnauthorizedServiceException()|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+method:///org/jasig/cas/services/ServicesManager/findServiceBy(org.jasig.cas.authentication.principal.Service)|",
+      "|java+method:///net/unicon/cas/addons/serviceregistry/services/authorization/ServiceAuthorizationAction/error()|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Object)|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+method:///org/jasig/cas/authentication/principal/Principal/getId()|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/lang/String/format(java.lang.String,java.lang.Object%5B%5D)|",
+      "|java+method:///org/springframework/webflow/execution/RequestContext/getRequestScope()|",
+      "|java+method:///org/jasig/cas/authentication/principal/Service/getId()|",
+      "|java+method:///net/unicon/cas/addons/authentication/AuthenticationSupport/getAuthenticatedPrincipalFrom(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/isDebugEnabled()|",
+      "|java+method:///net/unicon/cas/addons/serviceregistry/services/authorization/RegisteredServiceAuthorizer/authorized(java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///net/unicon/cas/addons/serviceregistry/services/authorization/RoleBasedServiceAuthorizationException/RoleBasedServiceAuthorizationException()|",
+      "|java+method:///org/jasig/cas/services/RegisteredService/isEnabled()|",
+      "|java+method:///net/unicon/cas/addons/serviceregistry/RegisteredServiceWithAttributes/getExtraAttributes()|"
+    ],
+    "affectedLib": "org.jasig.cas:cas-server-core:3.5.3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "net.unicon.cas:cas-addons:1.5.2",
+    "coordinatesV2": "net.unicon.cas:cas-addons:1.14",
+    "caller": "|java+method:///net/unicon/cas/addons/serviceregistry/JsonServiceRegistryDao/load()|",
+    "called": "|java+method:///org/jasig/cas/services/InMemoryServiceRegistryDaoImpl/load()|",
+    "v1Body": [
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object)|",
+      "|java+method:///net/unicon/cas/addons/serviceregistry/JsonServiceRegistryDao/load_aroundBody7$advice(net.unicon.cas.addons.serviceregistry.JsonServiceRegistryDao,org.aspectj.lang.JoinPoint,org.jasig.cas.aspect.LogAspect,org.aspectj.lang.ProceedingJoinPoint)|",
+      "|java+method:///org/jasig/cas/aspect/LogAspect/aspectOf()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/jasig/cas/services/InMemoryServiceRegistryDaoImpl/load()|"
+    ],
+    "affectedLib": "org.jasig.cas:cas-server-core:3.5.3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "net.unicon.cas:cas-addons:1.5.2",
+    "coordinatesV2": "net.unicon.cas:cas-addons:1.14",
+    "caller": "|java+method:///net/unicon/cas/addons/authentication/strong/oath/totp/TotpAuthenticationHandler/authenticate(org.jasig.cas.authentication.principal.Credentials)|",
+    "called": "|java+method:///org/jasig/cas/authentication/principal/UsernamePasswordCredentials/getPassword()|",
+    "v1Body": [
+      "|java+method:///net/unicon/cas/addons/authentication/strong/oath/totp/TotpAuthenticationHandler/authenticate_aroundBody1$advice(net.unicon.cas.addons.authentication.strong.oath.totp.TotpAuthenticationHandler,org.jasig.cas.authentication.principal.Credentials,org.aspectj.lang.JoinPoint,org.jasig.cas.aspect.LogAspect,org.aspectj.lang.ProceedingJoinPoint)|",
+      "|java+method:///org/aspectj/runtime/internal/Conversions/booleanValue(java.lang.Object)|",
+      "|java+method:///org/jasig/cas/aspect/LogAspect/aspectOf()|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Integer/intValue()|",
+      "|java+method:///org/jasig/cas/authentication/principal/UsernamePasswordCredentials/getUsername()|",
+      "|java+method:///net/unicon/cas/addons/authentication/strong/oath/totp/TOTPUtils/checkCode(java.lang.String,long,int,int)|",
+      "|java+method:///org/jasig/cas/authentication/principal/UsernamePasswordCredentials/getPassword()|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+method:///java/lang/Long/longValue()|",
+      "|java+method:///java/security/NoSuchAlgorithmException/getMessage()|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String,java.lang.Object)|",
+      "|java+method:///net/unicon/cas/addons/authentication/strong/oath/totp/TotpOathDetailsSource/getOtpAttributesForPrincipal(java.lang.String)|",
+      "|java+method:///java/lang/Long/valueOf(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String)|",
+      "|java+method:///java/security/InvalidKeyException/getMessage()|"
+    ],
+    "affectedLib": "org.jasig.cas:cas-server-core:3.5.3",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "net.unicon.cas:cas-addons:1.5.2",
+    "coordinatesV2": "net.unicon.cas:cas-addons:1.14",
+    "caller": "|java+initializer:///net/unicon/cas/addons/serviceregistry/mongodb/MongoServiceRegistryDao/MongoServiceRegistryDao$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///net/unicon/cas/addons/serviceregistry/mongodb/MongoServiceRegistryDao/ajc$preClinit()|",
+      "|java+method:///java/lang/Class/getSimpleName()|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Class/getSimpleName()|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.10",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "net.unicon.cas:cas-addons:1.5.2",
+    "coordinatesV2": "net.unicon.cas:cas-addons:1.14",
+    "caller": "|java+initializer:///net/unicon/cas/addons/authentication/strong/oath/totp/TotpAuthenticationHandler/TotpAuthenticationHandler$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///net/unicon/cas/addons/authentication/strong/oath/totp/TotpAuthenticationHandler/ajc$preClinit()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.10",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "net.unicon.cas:cas-addons:1.5.2",
+    "coordinatesV2": "net.unicon.cas:cas-addons:1.14",
+    "caller": "|java+initializer:///net/unicon/cas/addons/authentication/principal/StormpathPrincipalResolver/StormpathPrincipalResolver$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///net/unicon/cas/addons/authentication/principal/StormpathPrincipalResolver/ajc$preClinit()|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.10",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "net.unicon.cas:cas-addons:1.5.2",
+    "coordinatesV2": "net.unicon.cas:cas-addons:1.14",
+    "caller": "|java+constructor:///net/unicon/cas/addons/serviceregistry/JsonServiceRegistryDao/JsonServiceRegistryDao(org.springframework.core.io.Resource)|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+constructor:///com/fasterxml/jackson/databind/ObjectMapper/ObjectMapper()|",
+      "|java+constructor:///org/jasig/cas/services/InMemoryServiceRegistryDaoImpl/InMemoryServiceRegistryDaoImpl()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+constructor:///com/fasterxml/jackson/databind/ObjectMapper/ObjectMapper()|",
+      "|java+constructor:///org/jasig/cas/services/InMemoryServiceRegistryDaoImpl/InMemoryServiceRegistryDaoImpl()|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.10",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "net.unicon.cas:cas-addons:1.5.2",
+    "coordinatesV2": "net.unicon.cas:cas-addons:1.14",
+    "caller": "|java+method:///net/unicon/cas/addons/serviceregistry/JsonServiceRegistryDao/loadServices()|",
+    "called": "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/convertValue(java.lang.Object,java.lang.Class)|",
+    "v1Body": [
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///org/aspectj/runtime/internal/CFlowCounter/inc()|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.Throwable)|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+method:///org/jasig/cas/services/InMemoryServiceRegistryDaoImpl/setRegisteredServices(java.util.List)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/readValue(java.io.File,java.lang.Class)|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///java/lang/String/startsWith(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String,java.lang.Object)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/convertValue(java.lang.Object,java.lang.Class)|",
+      "|java+method:///org/aspectj/runtime/internal/CFlowCounter/dec()|",
+      "|java+method:///org/springframework/core/io/Resource/getFile()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object,java.lang.Object)|",
+      "|java+constructor:///java/util/ArrayList/ArrayList()|",
+      "|java+method:///java/lang/Class/getSimpleName()|",
+      "|java+method:///java/util/Iterator/hasNext()|",
+      "|java+constructor:///java/lang/RuntimeException/RuntimeException(java.lang.Throwable)|",
+      "|java+method:///java/util/Map/get(java.lang.Object)|",
+      "|java+method:///org/jasig/cas/services/InMemoryServiceRegistryDaoImpl/setRegisteredServices(java.util.List)|",
+      "|java+method:///java/util/Iterator/next()|",
+      "|java+method:///java/util/List/add(java.lang.Object)|",
+      "|java+method:///java/util/List/iterator()|",
+      "|java+method:///net/unicon/cas/addons/serviceregistry/JsonServiceRegistryDao/getRegisteredServiceInstance(java.lang.String)|",
+      "|java+method:///net/unicon/cas/addons/serviceregistry/JsonServiceRegistryDao/unmarshalServicesRegistryResourceIntoMap()|",
+      "|java+method:///com/fasterxml/jackson/databind/ObjectMapper/convertValue(java.lang.Object,java.lang.Class)|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String,java.lang.Object)|"
+    ],
+    "affectedLib": "com.fasterxml.jackson.core:jackson-databind:2.2.2",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "net.unicon.cas:cas-addons:1.5.2",
+    "coordinatesV2": "net.unicon.cas:cas-addons:1.14",
+    "caller": "|java+constructor:///net/unicon/cas/addons/serviceregistry/JsonServiceRegistryDao/JsonServiceRegistryDao(org.springframework.core.io.Resource)|",
+    "called": "|java+constructor:///com/fasterxml/jackson/databind/ObjectMapper/ObjectMapper()|",
+    "v1Body": [
+      "|java+constructor:///com/fasterxml/jackson/databind/ObjectMapper/ObjectMapper()|",
+      "|java+constructor:///org/jasig/cas/services/InMemoryServiceRegistryDaoImpl/InMemoryServiceRegistryDaoImpl()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+constructor:///com/fasterxml/jackson/databind/ObjectMapper/ObjectMapper()|",
+      "|java+constructor:///org/jasig/cas/services/InMemoryServiceRegistryDaoImpl/InMemoryServiceRegistryDaoImpl()|",
+      "|java+method:///java/lang/Object/getClass()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "com.fasterxml.jackson.core:jackson-databind:2.2.2",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "net.unicon.cas:cas-addons:1.5.2",
+    "coordinatesV2": "net.unicon.cas:cas-addons:1.14",
+    "caller": "|java+method:///net/unicon/cas/addons/serviceregistry/mongodb/MongoServiceRegistryDao/findServiceById(long)|",
+    "called": "|java+constructor:///org/springframework/data/mongodb/core/query/Query/Query(org.springframework.data.mongodb.core.query.CriteriaDefinition)|",
+    "v1Body": [
+      "|java+method:///org/aspectj/runtime/internal/Conversions/longObject(long)|",
+      "|java+method:///net/unicon/cas/addons/serviceregistry/mongodb/MongoServiceRegistryDao/findServiceById_aroundBody3$advice(net.unicon.cas.addons.serviceregistry.mongodb.MongoServiceRegistryDao,long,org.aspectj.lang.JoinPoint,org.jasig.cas.aspect.LogAspect,org.aspectj.lang.ProceedingJoinPoint)|",
+      "|java+method:///org/jasig/cas/aspect/LogAspect/aspectOf()|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/springframework/data/mongodb/core/query/Criteria/is(java.lang.Object)|",
+      "|java+method:///java/lang/Long/valueOf(long)|",
+      "|java+method:///org/springframework/data/mongodb/core/query/Criteria/where(java.lang.String)|",
+      "|java+method:///org/springframework/data/mongodb/core/MongoOperations/findOne(org.springframework.data.mongodb.core.query.Query,java.lang.Class,java.lang.String)|",
+      "|java+constructor:///org/springframework/data/mongodb/core/query/Query/Query(org.springframework.data.mongodb.core.query.CriteriaDefinition)|"
+    ],
+    "affectedLib": "org.springframework.data:spring-data-mongodb:1.6.2.RELEASE",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "net.unicon.cas:cas-addons:1.5.2",
+    "coordinatesV2": "net.unicon.cas:cas-addons:1.14",
+    "caller": "|java+method:///net/unicon/cas/addons/authentication/handler/ShiroHashServicePasswordEncoder/encode(java.lang.String)|",
+    "called": "|java+method:///org/apache/shiro/crypto/hash/HashRequest$Builder/setSource(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///net/unicon/cas/addons/authentication/handler/ShiroHashServicePasswordEncoder/encode_aroundBody1$advice(net.unicon.cas.addons.authentication.handler.ShiroHashServicePasswordEncoder,java.lang.String,org.aspectj.lang.JoinPoint,org.jasig.cas.aspect.LogAspect,org.aspectj.lang.ProceedingJoinPoint)|",
+      "|java+method:///org/jasig/cas/aspect/LogAspect/aspectOf()|",
+      "|java+method:///org/aspectj/runtime/reflect/Factory/makeJP(org.aspectj.lang.JoinPoint$StaticPart,java.lang.Object,java.lang.Object,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/shiro/crypto/hash/HashRequest$Builder/setSalt(java.lang.Object)|",
+      "|java+method:///org/apache/shiro/crypto/hash/Hash/toHex()|",
+      "|java+method:///org/apache/shiro/crypto/hash/HashRequest$Builder/setSource(java.lang.Object)|",
+      "|java+method:///org/apache/shiro/crypto/hash/HashRequest$Builder/build()|",
+      "|java+constructor:///org/apache/shiro/crypto/hash/HashRequest$Builder/HashRequest$Builder()|",
+      "|java+method:///org/apache/shiro/crypto/hash/ConfigurableHashService/computeHash(org.apache.shiro.crypto.hash.HashRequest)|"
+    ],
+    "affectedLib": "org.apache.shiro:shiro-core:1.2.3",
+    "change": "UPDATED"
+  }
+]

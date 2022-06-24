@@ -1,0 +1,496 @@
+[
+  {
+    "coordinatesV1": "org.silvertunnel-ng:netlib:0.0.3",
+    "coordinatesV2": "org.silvertunnel-ng:netlib:0.0.2",
+    "caller": "|java+method:///org/silvertunnel_ng/netlib/layer/tor/util/Encryption/extractRSAKeyPair(java.lang.String)|",
+    "called": "|java+method:///org/bouncycastle/openssl/PEMReader/readObject()|",
+    "v1Body": [
+      "|java+method:///org/bouncycastle/openssl/PEMReader/close()|",
+      "|java+method:///org/bouncycastle/openssl/PEMReader/readObject()|",
+      "|java+method:///java/security/KeyPair/getPublic()|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///org/bouncycastle/openssl/PEMReader/PEMReader(java.io.Reader)|",
+      "|java+constructor:///java/io/StringReader/StringReader(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///org/silvertunnel_ng/netlib/layer/tor/util/RSAKeyPair/RSAKeyPair(java.security.interfaces.RSAPublicKey,java.security.interfaces.RSAPrivateCrtKey)|",
+      "|java+constructor:///java/io/IOException/IOException(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/security/KeyPair/getPrivate()|",
+      "|java+method:///java/lang/Exception/getMessage()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/bouncycastle/openssl/PEMParser/PEMParser(java.io.Reader)|",
+      "|java+method:///org/bouncycastle/openssl/PEMParser/readObject()|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/bouncycastle/openssl/PEMKeyPair/getPrivateKeyInfo()|",
+      "|java+constructor:///java/io/StringReader/StringReader(java.lang.String)|",
+      "|java+method:///org/bouncycastle/openssl/PEMParser/close()|",
+      "|java+constructor:///org/silvertunnel_ng/netlib/layer/tor/util/RSAKeyPair/RSAKeyPair(java.security.interfaces.RSAPublicKey,java.security.interfaces.RSAPrivateCrtKey)|",
+      "|java+constructor:///java/io/IOException/IOException(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///org/silvertunnel_ng/netlib/layer/tor/util/TempJCERSAPublicKey/TempJCERSAPublicKey(org.bouncycastle.asn1.x509.SubjectPublicKeyInfo)|",
+      "|java+method:///org/bouncycastle/openssl/PEMKeyPair/getPublicKeyInfo()|",
+      "|java+constructor:///org/silvertunnel_ng/netlib/layer/tor/util/TempJCERSAPrivateCrtKey/TempJCERSAPrivateCrtKey(org.bouncycastle.asn1.pkcs.PrivateKeyInfo)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/Exception/getMessage()|"
+    ],
+    "affectedLib": "bouncycastle:bcprov-jdk16:140",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.silvertunnel-ng:netlib:0.0.3",
+    "coordinatesV2": "org.silvertunnel-ng:netlib:0.0.2",
+    "caller": "|java+method:///org/silvertunnel_ng/netlib/layer/tor/util/Encryption/asymDecrypt(java.security.interfaces.RSAPrivateKey,byte%5B%5D)|",
+    "called": "|java+constructor:///org/bouncycastle/crypto/params/RSAKeyParameters/RSAKeyParameters(boolean,java.math.BigInteger,java.math.BigInteger)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+constructor:///org/silvertunnel_ng/netlib/layer/tor/util/AESCounterMode/AESCounterMode(byte%5B%5D)|",
+      "|java+method:///org/bouncycastle/crypto/encodings/OAEPEncoding/getInputBlockSize()|",
+      "|java+method:///java/security/interfaces/RSAPrivateKey/getModulus()|",
+      "|java+constructor:///org/silvertunnel_ng/netlib/layer/tor/util/TorException/TorException(java.lang.String)|",
+      "|java+method:///org/silvertunnel_ng/netlib/layer/tor/util/Encoding/toHexString(byte%5B%5D,int)|",
+      "|java+constructor:///org/bouncycastle/crypto/encodings/OAEPEncoding/OAEPEncoding(org.bouncycastle.crypto.AsymmetricBlockCipher)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String)|",
+      "|java+method:///org/bouncycastle/crypto/encodings/OAEPEncoding/decodeBlock(byte%5B%5D,int,int)|",
+      "|java+constructor:///java/lang/NullPointerException/NullPointerException(java.lang.String)|",
+      "|java+method:///java/lang/System/arraycopy(java.lang.Object,int,java.lang.Object,int,int)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/silvertunnel_ng/netlib/layer/tor/util/AESCounterMode/processStream(byte%5B%5D)|",
+      "|java+constructor:///org/bouncycastle/crypto/params/RSAKeyParameters/RSAKeyParameters(boolean,java.math.BigInteger,java.math.BigInteger)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/bouncycastle/crypto/encodings/OAEPEncoding/init(boolean,org.bouncycastle.crypto.CipherParameters)|",
+      "|java+constructor:///org/bouncycastle/crypto/engines/RSAEngine/RSAEngine()|",
+      "|java+method:///org/slf4j/Logger/isDebugEnabled()|",
+      "|java+method:///java/security/interfaces/RSAPrivateKey/getPrivateExponent()|",
+      "|java+method:///org/bouncycastle/crypto/InvalidCipherTextException/getMessage()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/silvertunnel_ng/netlib/layer/tor/util/AESCounterMode/AESCounterMode(byte%5B%5D)|",
+      "|java+method:///org/bouncycastle/crypto/encodings/OAEPEncoding/getInputBlockSize()|",
+      "|java+method:///java/security/interfaces/RSAPrivateKey/getModulus()|",
+      "|java+constructor:///org/silvertunnel_ng/netlib/layer/tor/util/TorException/TorException(java.lang.String)|",
+      "|java+constructor:///org/bouncycastle/crypto/encodings/OAEPEncoding/OAEPEncoding(org.bouncycastle.crypto.AsymmetricBlockCipher)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String)|",
+      "|java+method:///org/bouncycastle/crypto/encodings/OAEPEncoding/decodeBlock(byte%5B%5D,int,int)|",
+      "|java+constructor:///java/lang/NullPointerException/NullPointerException(java.lang.String)|",
+      "|java+method:///java/lang/System/arraycopy(java.lang.Object,int,java.lang.Object,int,int)|",
+      "|java+constructor:///org/bouncycastle/crypto/engines/RSAEngine/RSAEngine()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/silvertunnel_ng/netlib/layer/tor/util/AESCounterMode/processStream(byte%5B%5D)|",
+      "|java+constructor:///org/bouncycastle/crypto/params/RSAKeyParameters/RSAKeyParameters(boolean,java.math.BigInteger,java.math.BigInteger)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/bouncycastle/crypto/encodings/OAEPEncoding/init(boolean,org.bouncycastle.crypto.CipherParameters)|",
+      "|java+method:///java/security/interfaces/RSAPrivateKey/getPrivateExponent()|",
+      "|java+method:///org/bouncycastle/crypto/InvalidCipherTextException/getMessage()|"
+    ],
+    "affectedLib": "bouncycastle:bcprov-jdk16:140",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.silvertunnel-ng:netlib:0.0.3",
+    "coordinatesV2": "org.silvertunnel-ng:netlib:0.0.2",
+    "caller": "|java+method:///org/silvertunnel_ng/netlib/layer/tor/util/Encryption/getPKCS1EncodingFromRSAPublicKey(java.security.interfaces.RSAPublicKey)|",
+    "called": "|java+method:///org/bouncycastle/asn1/x509/RSAPublicKeyStructure/toASN1Object()|",
+    "v1Body": [
+      "|java+method:///java/security/interfaces/RSAPublicKey/getModulus()|",
+      "|java+method:///org/bouncycastle/asn1/ASN1OutputStream/close()|",
+      "|java+method:///java/security/interfaces/RSAPublicKey/getPublicExponent()|",
+      "|java+constructor:///org/bouncycastle/asn1/ASN1OutputStream/ASN1OutputStream(java.io.OutputStream)|",
+      "|java+method:///org/bouncycastle/asn1/ASN1OutputStream/writeObject(java.lang.Object)|",
+      "|java+method:///java/io/ByteArrayOutputStream/toByteArray()|",
+      "|java+constructor:///org/bouncycastle/asn1/x509/RSAPublicKeyStructure/RSAPublicKeyStructure(java.math.BigInteger,java.math.BigInteger)|",
+      "|java+constructor:///java/io/ByteArrayOutputStream/ByteArrayOutputStream()|",
+      "|java+method:///org/bouncycastle/asn1/x509/RSAPublicKeyStructure/toASN1Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/security/interfaces/RSAPublicKey/getModulus()|",
+      "|java+method:///org/bouncycastle/asn1/ASN1OutputStream/close()|",
+      "|java+method:///java/security/interfaces/RSAPublicKey/getPublicExponent()|",
+      "|java+constructor:///org/bouncycastle/asn1/ASN1OutputStream/ASN1OutputStream(java.io.OutputStream)|",
+      "|java+method:///org/bouncycastle/asn1/ASN1OutputStream/writeObject(org.bouncycastle.asn1.ASN1Encodable)|",
+      "|java+method:///java/io/ByteArrayOutputStream/toByteArray()|",
+      "|java+constructor:///org/bouncycastle/asn1/x509/RSAPublicKeyStructure/RSAPublicKeyStructure(java.math.BigInteger,java.math.BigInteger)|",
+      "|java+constructor:///java/io/ByteArrayOutputStream/ByteArrayOutputStream()|",
+      "|java+method:///org/bouncycastle/asn1/x509/RSAPublicKeyStructure/toASN1Object()|"
+    ],
+    "affectedLib": "bouncycastle:bcprov-jdk16:140",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.silvertunnel-ng:netlib:0.0.3",
+    "coordinatesV2": "org.silvertunnel-ng:netlib:0.0.2",
+    "caller": "|java+method:///org/silvertunnel_ng/netlib/layer/tor/util/Encryption/extractPublicRSAKey(java.lang.String)|",
+    "called": "|java+method:///org/bouncycastle/openssl/PEMReader/readObject()|",
+    "v1Body": [
+      "|java+method:///org/bouncycastle/openssl/PEMReader/close()|",
+      "|java+method:///org/bouncycastle/openssl/PEMReader/readObject()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///org/bouncycastle/openssl/PEMReader/PEMReader(java.io.Reader)|",
+      "|java+constructor:///java/io/StringReader/StringReader(java.lang.String)|",
+      "|java+method:///org/bouncycastle/jce/provider/JCERSAPublicKey/getPublicExponent()|",
+      "|java+method:///org/bouncycastle/jce/provider/JCERSAPublicKey/getModulus()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/silvertunnel_ng/netlib/layer/tor/util/Encryption/getRSAPublicKey(java.math.BigInteger,java.math.BigInteger)|",
+      "|java+constructor:///java/io/IOException/IOException(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/Exception/getMessage()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String,java.lang.Throwable)|",
+      "|java+constructor:///org/silvertunnel_ng/netlib/layer/tor/util/RSAKeyEncoder/RSAKeyEncoder()|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/silvertunnel_ng/netlib/layer/tor/util/RSAKeyEncoder/parsePEMPublicKey(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/Exception/getMessage()|"
+    ],
+    "affectedLib": "bouncycastle:bcprov-jdk16:140",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.silvertunnel-ng:netlib:0.0.3",
+    "coordinatesV2": "org.silvertunnel-ng:netlib:0.0.2",
+    "caller": "|java+method:///org/silvertunnel_ng/netlib/layer/tor/clientimpl/Tor/initLocalSystem(boolean)|",
+    "called": "|java+constructor:///org/bouncycastle/jce/provider/BouncyCastleProvider/BouncyCastleProvider()|",
+    "v1Body": [
+      "|java+method:///org/silvertunnel_ng/netlib/layer/tor/common/TorConfig/getStartupDelay()|",
+      "|java+constructor:///org/bouncycastle/jce/provider/BouncyCastleProvider/BouncyCastleProvider()|",
+      "|java+constructor:///org/silvertunnel_ng/netlib/layer/tor/util/PrivateKeyHandler/PrivateKeyHandler()|",
+      "|java+method:///java/security/Security/addProvider(java.security.Provider)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String)|",
+      "|java+method:///java/security/Security/getProvider(java.lang.String)|",
+      "|java+method:///java/lang/System/currentTimeMillis()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/silvertunnel_ng/netlib/layer/tor/common/TorConfig/getStartupDelay()|",
+      "|java+constructor:///org/bouncycastle/jce/provider/BouncyCastleProvider/BouncyCastleProvider()|",
+      "|java+method:///java/security/Security/addProvider(java.security.Provider)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String)|",
+      "|java+method:///java/security/Security/getProvider(java.lang.String)|",
+      "|java+method:///java/lang/System/currentTimeMillis()|"
+    ],
+    "affectedLib": "bouncycastle:bcprov-jdk16:140",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.silvertunnel-ng:netlib:0.0.2",
+    "coordinatesV2": "org.silvertunnel-ng:netlib:0.0.3",
+    "caller": "|java+method:///org/silvertunnel_ng/netlib/layer/tor/util/Encryption/asymDecrypt(java.security.interfaces.RSAPrivateKey,byte%5B%5D)|",
+    "called": "|java+constructor:///org/bouncycastle/crypto/params/RSAKeyParameters/RSAKeyParameters(boolean,java.math.BigInteger,java.math.BigInteger)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+constructor:///org/silvertunnel_ng/netlib/layer/tor/util/AESCounterMode/AESCounterMode(byte%5B%5D)|",
+      "|java+method:///org/bouncycastle/crypto/encodings/OAEPEncoding/getInputBlockSize()|",
+      "|java+method:///java/security/interfaces/RSAPrivateKey/getModulus()|",
+      "|java+constructor:///org/silvertunnel_ng/netlib/layer/tor/util/TorException/TorException(java.lang.String)|",
+      "|java+method:///org/silvertunnel_ng/netlib/layer/tor/util/Encoding/toHexString(byte%5B%5D,int)|",
+      "|java+constructor:///org/bouncycastle/crypto/encodings/OAEPEncoding/OAEPEncoding(org.bouncycastle.crypto.AsymmetricBlockCipher)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String)|",
+      "|java+method:///org/bouncycastle/crypto/encodings/OAEPEncoding/decodeBlock(byte%5B%5D,int,int)|",
+      "|java+constructor:///java/lang/NullPointerException/NullPointerException(java.lang.String)|",
+      "|java+method:///java/lang/System/arraycopy(java.lang.Object,int,java.lang.Object,int,int)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/silvertunnel_ng/netlib/layer/tor/util/AESCounterMode/processStream(byte%5B%5D)|",
+      "|java+constructor:///org/bouncycastle/crypto/params/RSAKeyParameters/RSAKeyParameters(boolean,java.math.BigInteger,java.math.BigInteger)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/bouncycastle/crypto/encodings/OAEPEncoding/init(boolean,org.bouncycastle.crypto.CipherParameters)|",
+      "|java+constructor:///org/bouncycastle/crypto/engines/RSAEngine/RSAEngine()|",
+      "|java+method:///org/slf4j/Logger/isDebugEnabled()|",
+      "|java+method:///java/security/interfaces/RSAPrivateKey/getPrivateExponent()|",
+      "|java+method:///org/bouncycastle/crypto/InvalidCipherTextException/getMessage()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/silvertunnel_ng/netlib/layer/tor/util/AESCounterMode/AESCounterMode(byte%5B%5D)|",
+      "|java+method:///org/bouncycastle/crypto/encodings/OAEPEncoding/getInputBlockSize()|",
+      "|java+method:///java/security/interfaces/RSAPrivateKey/getModulus()|",
+      "|java+constructor:///org/silvertunnel_ng/netlib/layer/tor/util/TorException/TorException(java.lang.String)|",
+      "|java+constructor:///org/bouncycastle/crypto/encodings/OAEPEncoding/OAEPEncoding(org.bouncycastle.crypto.AsymmetricBlockCipher)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///org/slf4j/Logger/error(java.lang.String)|",
+      "|java+method:///org/bouncycastle/crypto/encodings/OAEPEncoding/decodeBlock(byte%5B%5D,int,int)|",
+      "|java+constructor:///java/lang/NullPointerException/NullPointerException(java.lang.String)|",
+      "|java+method:///java/lang/System/arraycopy(java.lang.Object,int,java.lang.Object,int,int)|",
+      "|java+constructor:///org/bouncycastle/crypto/engines/RSAEngine/RSAEngine()|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/silvertunnel_ng/netlib/layer/tor/util/AESCounterMode/processStream(byte%5B%5D)|",
+      "|java+constructor:///org/bouncycastle/crypto/params/RSAKeyParameters/RSAKeyParameters(boolean,java.math.BigInteger,java.math.BigInteger)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/bouncycastle/crypto/encodings/OAEPEncoding/init(boolean,org.bouncycastle.crypto.CipherParameters)|",
+      "|java+method:///java/security/interfaces/RSAPrivateKey/getPrivateExponent()|",
+      "|java+method:///org/bouncycastle/crypto/InvalidCipherTextException/getMessage()|"
+    ],
+    "affectedLib": "org.bouncycastle:bcprov-jdk15on:1.50",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.silvertunnel-ng:netlib:0.0.2",
+    "coordinatesV2": "org.silvertunnel-ng:netlib:0.0.3",
+    "caller": "|java+method:///org/silvertunnel_ng/netlib/layer/tor/util/Encryption/getPKCS1EncodingFromRSAPublicKey(java.security.interfaces.RSAPublicKey)|",
+    "called": "|java+method:///org/bouncycastle/asn1/ASN1OutputStream/writeObject(org.bouncycastle.asn1.ASN1Encodable)|",
+    "v1Body": [
+      "|java+method:///java/security/interfaces/RSAPublicKey/getModulus()|",
+      "|java+method:///org/bouncycastle/asn1/ASN1OutputStream/close()|",
+      "|java+method:///java/security/interfaces/RSAPublicKey/getPublicExponent()|",
+      "|java+constructor:///org/bouncycastle/asn1/ASN1OutputStream/ASN1OutputStream(java.io.OutputStream)|",
+      "|java+method:///org/bouncycastle/asn1/ASN1OutputStream/writeObject(java.lang.Object)|",
+      "|java+method:///java/io/ByteArrayOutputStream/toByteArray()|",
+      "|java+constructor:///org/bouncycastle/asn1/x509/RSAPublicKeyStructure/RSAPublicKeyStructure(java.math.BigInteger,java.math.BigInteger)|",
+      "|java+constructor:///java/io/ByteArrayOutputStream/ByteArrayOutputStream()|",
+      "|java+method:///org/bouncycastle/asn1/x509/RSAPublicKeyStructure/toASN1Object()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/security/interfaces/RSAPublicKey/getModulus()|",
+      "|java+method:///org/bouncycastle/asn1/ASN1OutputStream/close()|",
+      "|java+method:///java/security/interfaces/RSAPublicKey/getPublicExponent()|",
+      "|java+constructor:///org/bouncycastle/asn1/ASN1OutputStream/ASN1OutputStream(java.io.OutputStream)|",
+      "|java+method:///org/bouncycastle/asn1/ASN1OutputStream/writeObject(org.bouncycastle.asn1.ASN1Encodable)|",
+      "|java+method:///java/io/ByteArrayOutputStream/toByteArray()|",
+      "|java+constructor:///org/bouncycastle/asn1/x509/RSAPublicKeyStructure/RSAPublicKeyStructure(java.math.BigInteger,java.math.BigInteger)|",
+      "|java+constructor:///java/io/ByteArrayOutputStream/ByteArrayOutputStream()|",
+      "|java+method:///org/bouncycastle/asn1/x509/RSAPublicKeyStructure/toASN1Object()|"
+    ],
+    "affectedLib": "org.bouncycastle:bcprov-jdk15on:1.50",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.silvertunnel-ng:netlib:0.0.2",
+    "coordinatesV2": "org.silvertunnel-ng:netlib:0.0.3",
+    "caller": "|java+method:///org/silvertunnel_ng/netlib/layer/tor/clientimpl/Tor/initLocalSystem(boolean)|",
+    "called": "|java+constructor:///org/bouncycastle/jce/provider/BouncyCastleProvider/BouncyCastleProvider()|",
+    "v1Body": [
+      "|java+method:///org/silvertunnel_ng/netlib/layer/tor/common/TorConfig/getStartupDelay()|",
+      "|java+constructor:///org/bouncycastle/jce/provider/BouncyCastleProvider/BouncyCastleProvider()|",
+      "|java+constructor:///org/silvertunnel_ng/netlib/layer/tor/util/PrivateKeyHandler/PrivateKeyHandler()|",
+      "|java+method:///java/security/Security/addProvider(java.security.Provider)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String)|",
+      "|java+method:///java/security/Security/getProvider(java.lang.String)|",
+      "|java+method:///java/lang/System/currentTimeMillis()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/silvertunnel_ng/netlib/layer/tor/common/TorConfig/getStartupDelay()|",
+      "|java+constructor:///org/bouncycastle/jce/provider/BouncyCastleProvider/BouncyCastleProvider()|",
+      "|java+method:///java/security/Security/addProvider(java.security.Provider)|",
+      "|java+method:///org/slf4j/Logger/info(java.lang.String)|",
+      "|java+method:///java/security/Security/getProvider(java.lang.String)|",
+      "|java+method:///java/lang/System/currentTimeMillis()|"
+    ],
+    "affectedLib": "org.bouncycastle:bcprov-jdk15on:1.50",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.silvertunnel-ng:netlib:0.0.2",
+    "coordinatesV2": "org.silvertunnel-ng:netlib:0.0.3",
+    "caller": "|java+method:///org/silvertunnel_ng/netlib/layer/tor/util/Encryption/extractRSAKeyPair(java.lang.String)|",
+    "called": "|java+method:///org/bouncycastle/openssl/PEMParser/readObject()|",
+    "v1Body": [
+      "|java+method:///org/bouncycastle/openssl/PEMReader/close()|",
+      "|java+method:///org/bouncycastle/openssl/PEMReader/readObject()|",
+      "|java+method:///java/security/KeyPair/getPublic()|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///org/bouncycastle/openssl/PEMReader/PEMReader(java.io.Reader)|",
+      "|java+constructor:///java/io/StringReader/StringReader(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///org/silvertunnel_ng/netlib/layer/tor/util/RSAKeyPair/RSAKeyPair(java.security.interfaces.RSAPublicKey,java.security.interfaces.RSAPrivateCrtKey)|",
+      "|java+constructor:///java/io/IOException/IOException(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/security/KeyPair/getPrivate()|",
+      "|java+method:///java/lang/Exception/getMessage()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/bouncycastle/openssl/PEMParser/PEMParser(java.io.Reader)|",
+      "|java+method:///org/bouncycastle/openssl/PEMParser/readObject()|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/bouncycastle/openssl/PEMKeyPair/getPrivateKeyInfo()|",
+      "|java+constructor:///java/io/StringReader/StringReader(java.lang.String)|",
+      "|java+method:///org/bouncycastle/openssl/PEMParser/close()|",
+      "|java+constructor:///org/silvertunnel_ng/netlib/layer/tor/util/RSAKeyPair/RSAKeyPair(java.security.interfaces.RSAPublicKey,java.security.interfaces.RSAPrivateCrtKey)|",
+      "|java+constructor:///java/io/IOException/IOException(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/warn(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+constructor:///org/silvertunnel_ng/netlib/layer/tor/util/TempJCERSAPublicKey/TempJCERSAPublicKey(org.bouncycastle.asn1.x509.SubjectPublicKeyInfo)|",
+      "|java+method:///org/bouncycastle/openssl/PEMKeyPair/getPublicKeyInfo()|",
+      "|java+constructor:///org/silvertunnel_ng/netlib/layer/tor/util/TempJCERSAPrivateCrtKey/TempJCERSAPrivateCrtKey(org.bouncycastle.asn1.pkcs.PrivateKeyInfo)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///java/lang/Exception/getMessage()|"
+    ],
+    "affectedLib": "org.bouncycastle:bcpkix-jdk15on:1.50",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.silvertunnel-ng:netlib:0.0.2",
+    "coordinatesV2": "org.silvertunnel-ng:netlib:0.0.3",
+    "caller": "|java+initializer:///org/silvertunnel_ng/netlib/layer/tor/hiddenservice/HiddenServiceDescriptorCache/HiddenServiceDescriptorCache$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+constructor:///java/util/HashMap/HashMap()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+constructor:///java/util/HashMap/HashMap()|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.7",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.silvertunnel-ng:netlib:0.0.2",
+    "coordinatesV2": "org.silvertunnel-ng:netlib:0.0.3",
+    "caller": "|java+initializer:///org/silvertunnel_ng/netlib/layer/tor/util/Util/Util$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///java/util/TimeZone/getTimeZone(java.lang.String)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.7",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.silvertunnel-ng:netlib:0.0.2",
+    "coordinatesV2": "org.silvertunnel-ng:netlib:0.0.3",
+    "caller": "|java+initializer:///org/silvertunnel_ng/netlib/adapter/httpclient/HttpClientUtil/HttpClientUtil$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+constructor:///org/apache/http/params/BasicHttpParams/BasicHttpParams()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.7",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.silvertunnel-ng:netlib:0.0.2",
+    "coordinatesV2": "org.silvertunnel-ng:netlib:0.0.3",
+    "caller": "|java+initializer:///org/silvertunnel_ng/netlib/util/TempfileStringStorage/TempfileStringStorage$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///java/util/regex/Pattern/compile(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+constructor:///org/silvertunnel_ng/netlib/util/TempfileStringStorage/TempfileStringStorage()|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///org/silvertunnel_ng/netlib/util/FileUtil/getInstance()|",
+      "|java+method:///java/lang/System/getProperty(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/regex/Pattern/compile(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String,java.lang.Object)|",
+      "|java+constructor:///org/silvertunnel_ng/netlib/util/TempfileStringStorage/TempfileStringStorage()|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///org/silvertunnel_ng/netlib/layer/tor/common/TorConfig/getTempDirectory()|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.7",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.silvertunnel-ng:netlib:0.0.2",
+    "coordinatesV2": "org.silvertunnel-ng:netlib:0.0.3",
+    "caller": "|java+initializer:///org/silvertunnel_ng/netlib/api/impl/NetSocket2SocketImpl/NetSocket2SocketImpl$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///java/lang/Boolean/valueOf(boolean)|",
+      "|java+method:///java/lang/Integer/valueOf(int)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.7",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.silvertunnel-ng:netlib:0.0.2",
+    "coordinatesV2": "org.silvertunnel-ng:netlib:0.0.3",
+    "caller": "|java+initializer:///org/silvertunnel_ng/netlib/layer/tor/directory/RouterImpl/RouterImpl$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/regex/Pattern/compile(java.lang.String,int)|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.7",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.silvertunnel-ng:netlib:0.0.2",
+    "coordinatesV2": "org.silvertunnel-ng:netlib:0.0.3",
+    "caller": "|java+initializer:///org/silvertunnel_ng/netlib/layer/tor/TorNetLayerUtil/TorNetLayerUtil$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+constructor:///org/silvertunnel_ng/netlib/layer/tor/TorNetLayerUtil/TorNetLayerUtil()|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///org/silvertunnel_ng/netlib/util/FileUtil/getInstance()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/silvertunnel_ng/netlib/layer/tor/TorNetLayerUtil/TorNetLayerUtil()|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.7",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.silvertunnel-ng:netlib:0.0.2",
+    "coordinatesV2": "org.silvertunnel-ng:netlib:0.0.3",
+    "caller": "|java+initializer:///com/maxmind/geoip/LookupService/LookupService$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+constructor:///com/maxmind/geoip/Country/Country(java.lang.String,java.lang.String)|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+constructor:///java/util/HashMap/HashMap(int)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.7",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.silvertunnel-ng:netlib:0.0.2",
+    "coordinatesV2": "org.silvertunnel-ng:netlib:0.0.3",
+    "caller": "|java+initializer:///org/silvertunnel_ng/netlib/layer/tor/common/TorConfig/TorConfig$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/silvertunnel_ng/netlib/layer/tor/common/TorConfig/reloadConfigFromProperties()|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/silvertunnel_ng/netlib/layer/tor/common/TorConfig/reloadConfigFromProperties()|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///org/silvertunnel_ng/netlib/layer/tor/common/TorConfig/reset()|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.7",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "org.silvertunnel-ng:netlib:0.0.2",
+    "coordinatesV2": "org.silvertunnel-ng:netlib:0.0.3",
+    "caller": "|java+initializer:///org/silvertunnel_ng/netlib/layer/tor/directory/Directory/Directory$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///org/silvertunnel_ng/netlib/layer/tor/util/Parsing/compileRegexPattern(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/regex/Pattern/compile(java.lang.String,int)|",
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+      "|java+method:///org/silvertunnel_ng/netlib/layer/tor/util/Parsing/compileRegexPattern(java.lang.String)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.7.7",
+    "change": "UPDATED"
+  }
+]

@@ -1,0 +1,104 @@
+[
+  {
+    "coordinatesV1": "org.apache.myfaces.tobago:tobago-security:1.0.38",
+    "coordinatesV2": "org.apache.myfaces.tobago:tobago-security:1.5.0-alpha-2",
+    "caller": "|java+method:///org/apache/myfaces/tobago/security/UISecuredLinkCommand/isDisabled()|",
+    "called": "|java+method:///javax/faces/context/FacesContext/getCurrentInstance()|",
+    "v1Body": [
+      "|java+method:///org/apache/myfaces/tobago/security/UISecuredLinkCommand/getAction()|",
+      "|java+method:///org/apache/myfaces/tobago/component/UILinkCommand/isDisabled()|",
+      "|java+method:///javax/faces/context/FacesContext/getCurrentInstance()|",
+      "|java+method:///org/apache/myfaces/tobago/security/CheckAuthorisationMethodBinding/isAuthorized(javax.faces.context.FacesContext)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/myfaces/tobago/security/UISecuredLinkCommand/getAction()|",
+      "|java+method:///javax/faces/context/FacesContext/getCurrentInstance()|",
+      "|java+method:///org/apache/myfaces/tobago/security/CheckAuthorisationMethodBinding/isAuthorized(javax.faces.context.FacesContext)|",
+      "|java+method:///org/apache/myfaces/tobago/component/UILink/isDisabled()|"
+    ],
+    "affectedLib": "org.apache.myfaces.core:myfaces-api:1.2.9",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.myfaces.tobago:tobago-security:1.0.38",
+    "coordinatesV2": "org.apache.myfaces.tobago:tobago-security:1.5.0-alpha-2",
+    "caller": "|java+constructor:///org/apache/myfaces/tobago/security/ApplicationFactoryImpl/ApplicationFactoryImpl(javax.faces.application.ApplicationFactory)|",
+    "called": "|java+constructor:///javax/faces/application/ApplicationFactory/ApplicationFactory()|",
+    "v1Body": [
+      "|java+constructor:///javax/faces/application/ApplicationFactory/ApplicationFactory()|",
+      "|java+method:///org/apache/commons/logging/Log/debug(java.lang.Object)|",
+      "|java+method:///org/apache/commons/logging/Log/isDebugEnabled()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+constructor:///javax/faces/application/ApplicationFactory/ApplicationFactory()|",
+      "|java+method:///org/slf4j/Logger/isDebugEnabled()|"
+    ],
+    "affectedLib": "org.apache.myfaces.core:myfaces-api:1.2.9",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.myfaces.tobago:tobago-security:1.0.38",
+    "coordinatesV2": "org.apache.myfaces.tobago:tobago-security:1.5.0-alpha-2",
+    "caller": "|java+constructor:///org/apache/myfaces/tobago/security/ApplicationImpl/ApplicationImpl(javax.faces.application.Application)|",
+    "called": "|java+constructor:///javax/faces/application/Application/Application()|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/logging/Log/debug(java.lang.Object)|",
+      "|java+constructor:///javax/faces/application/Application/Application()|",
+      "|java+method:///org/apache/commons/logging/Log/isDebugEnabled()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+constructor:///javax/faces/application/Application/Application()|",
+      "|java+method:///org/slf4j/Logger/isDebugEnabled()|"
+    ],
+    "affectedLib": "org.apache.myfaces.core:myfaces-api:1.2.9",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.myfaces.tobago:tobago-security:1.0.38",
+    "coordinatesV2": "org.apache.myfaces.tobago:tobago-security:1.5.0-alpha-2",
+    "caller": "|java+method:///org/apache/myfaces/tobago/security/CheckAuthorisationMethodBinding/invoke(javax.faces.context.FacesContext,java.lang.Object%5B%5D)|",
+    "called": "|java+constructor:///javax/faces/application/FacesMessage/FacesMessage(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/logging/Log/debug(java.lang.Object)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///org/apache/commons/logging/Log/isDebugEnabled()|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///javax/faces/el/MethodBinding/invoke(javax.faces.context.FacesContext,java.lang.Object%5B%5D)|",
+      "|java+method:///javax/faces/context/FacesContext/addMessage(java.lang.String,javax.faces.application.FacesMessage)|",
+      "|java+constructor:///javax/faces/application/FacesMessage/FacesMessage(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/apache/myfaces/tobago/security/CheckAuthorisationMethodBinding/getExpressionString()|",
+      "|java+method:///org/apache/myfaces/tobago/security/CheckAuthorisationMethodBinding/isAuthorized(javax.faces.context.FacesContext)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/Logger/debug(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///javax/faces/el/MethodBinding/invoke(javax.faces.context.FacesContext,java.lang.Object%5B%5D)|",
+      "|java+method:///javax/faces/context/FacesContext/addMessage(java.lang.String,javax.faces.application.FacesMessage)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///org/apache/myfaces/tobago/security/CheckAuthorisationMethodBinding/getExpressionString()|",
+      "|java+method:///org/apache/myfaces/tobago/security/CheckAuthorisationMethodBinding/isAuthorized(javax.faces.context.FacesContext)|",
+      "|java+constructor:///javax/faces/application/FacesMessage/FacesMessage(java.lang.String)|",
+      "|java+method:///org/slf4j/Logger/isDebugEnabled()|"
+    ],
+    "affectedLib": "org.apache.myfaces.core:myfaces-api:1.2.9",
+    "change": "ADDED"
+  },
+  {
+    "coordinatesV1": "org.apache.myfaces.tobago:tobago-security:1.0.38",
+    "coordinatesV2": "org.apache.myfaces.tobago:tobago-security:1.5.0-alpha-2",
+    "caller": "|java+constructor:///org/apache/myfaces/tobago/security/UISecuredLinkCommand/UISecuredLinkCommand()|",
+    "called": "|java+constructor:///org/apache/myfaces/tobago/component/UILink/UILink()|",
+    "v1Body": [
+      "|java+constructor:///org/apache/myfaces/tobago/component/UILinkCommand/UILinkCommand()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///org/apache/myfaces/tobago/component/UILink/UILink()|"
+    ],
+    "affectedLib": "org.apache.myfaces.tobago:tobago-core:1.5.0-alpha-2",
+    "change": "UPDATED"
+  }
+]

@@ -1,0 +1,404 @@
+[
+  {
+    "coordinatesV1": "org.apache.bval:bval-core:0.3-incubating",
+    "coordinatesV2": "org.apache.bval:bval-core:0.2-incubating",
+    "caller": "|java+initializer:///org/apache/bval/MetaBeanBuilder/MetaBeanBuilder$initializer|",
+    "called": "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "commons-logging:commons-logging:1.1.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.apache.bval:bval-core:0.3-incubating",
+    "coordinatesV2": "org.apache.bval:bval-core:0.2-incubating",
+    "caller": "|java+method:///org/apache/bval/model/FeaturesCapable/getFeature(java.lang.String,java.lang.Object)|",
+    "called": "|java+method:///org/apache/commons/collections/FastHashMap/containsKey(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/collections/FastHashMap/get(java.lang.Object)|",
+      "|java+method:///org/apache/commons/collections/FastHashMap/containsKey(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/concurrent/ConcurrentMap/containsKey(java.lang.Object)|",
+      "|java+method:///org/apache/bval/model/FeaturesCapable/acquireLockIfNeeded()|",
+      "|java+method:///java/util/concurrent/locks/ReentrantLock/unlock()|",
+      "|java+method:///java/util/concurrent/ConcurrentMap/get(java.lang.Object)|"
+    ],
+    "affectedLib": "commons-beanutils:commons-beanutils:1.8.3",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.apache.bval:bval-core:0.3-incubating",
+    "coordinatesV2": "org.apache.bval:bval-core:0.2-incubating",
+    "caller": "|java+method:///org/apache/bval/model/FeaturesCapable/putFeature(java.lang.String,java.lang.Object)|",
+    "called": "|java+method:///org/apache/commons/collections/FastHashMap/put(java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/collections/FastHashMap/put(java.lang.Object,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/bval/model/FeaturesCapable/acquireLockIfNeeded()|",
+      "|java+method:///java/util/concurrent/ConcurrentMap/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/util/concurrent/locks/ReentrantLock/unlock()|"
+    ],
+    "affectedLib": "commons-beanutils:commons-beanutils:1.8.3",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.apache.bval:bval-core:0.3-incubating",
+    "coordinatesV2": "org.apache.bval:bval-core:0.2-incubating",
+    "caller": "|java+constructor:///org/apache/bval/MetaBeanCache/MetaBeanCache()|",
+    "called": "|java+constructor:///org/apache/commons/collections/FastHashMap/FastHashMap()|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/collections/FastHashMap/setFast(boolean)|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+constructor:///org/apache/commons/collections/FastHashMap/FastHashMap()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/util/concurrent/ConcurrentHashMap/ConcurrentHashMap()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "commons-beanutils:commons-beanutils:1.8.3",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.apache.bval:bval-core:0.3-incubating",
+    "coordinatesV2": "org.apache.bval:bval-core:0.2-incubating",
+    "caller": "|java+method:///org/apache/bval/MetaBeanCache/clear()|",
+    "called": "|java+method:///org/apache/commons/collections/FastHashMap/clear()|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/collections/FastHashMap/clear()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/concurrent/ConcurrentMap/clear()|"
+    ],
+    "affectedLib": "commons-beanutils:commons-beanutils:1.8.3",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.apache.bval:bval-core:0.3-incubating",
+    "coordinatesV2": "org.apache.bval:bval-core:0.2-incubating",
+    "caller": "|java+method:///org/apache/bval/MetaBeanCache/findForId(java.lang.String)|",
+    "called": "|java+method:///org/apache/commons/collections/FastHashMap/get(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/collections/FastHashMap/get(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/concurrent/ConcurrentMap/get(java.lang.Object)|"
+    ],
+    "affectedLib": "commons-beanutils:commons-beanutils:1.8.3",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.apache.bval:bval-core:0.3-incubating",
+    "coordinatesV2": "org.apache.bval:bval-core:0.2-incubating",
+    "caller": "|java+method:///org/apache/bval/MetaBeanCache/removeFromCache(org.apache.bval.model.MetaBean)|",
+    "called": "|java+method:///org/apache/commons/collections/FastHashMap/remove(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/collections/FastHashMap/remove(java.lang.Object)|",
+      "|java+method:///org/apache/bval/model/MetaBean/getBeanClass()|",
+      "|java+method:///org/apache/bval/model/MetaBean/getId()|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///java/lang/Class/getName()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/bval/model/MetaBean/getBeanClass()|",
+      "|java+method:///java/util/concurrent/ConcurrentMap/remove(java.lang.Object)|",
+      "|java+method:///org/apache/bval/model/MetaBean/getId()|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///java/lang/Class/getName()|"
+    ],
+    "affectedLib": "commons-beanutils:commons-beanutils:1.8.3",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.apache.bval:bval-core:0.3-incubating",
+    "coordinatesV2": "org.apache.bval:bval-core:0.2-incubating",
+    "caller": "|java+method:///org/apache/bval/MetaBeanCache/cache(org.apache.bval.model.MetaBean)|",
+    "called": "|java+method:///org/apache/commons/collections/FastHashMap/put(java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/collections/FastHashMap/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/apache/bval/model/MetaBean/getBeanClass()|",
+      "|java+method:///org/apache/bval/model/MetaBean/getId()|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///java/lang/Class/getName()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/bval/model/MetaBean/getBeanClass()|",
+      "|java+method:///org/apache/bval/model/MetaBean/getId()|",
+      "|java+method:///java/util/concurrent/ConcurrentMap/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/util/concurrent/ConcurrentMap/putIfAbsent(java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///java/lang/Class/getName()|"
+    ],
+    "affectedLib": "commons-beanutils:commons-beanutils:1.8.3",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.apache.bval:bval-core:0.3-incubating",
+    "coordinatesV2": "org.apache.bval:bval-core:0.2-incubating",
+    "caller": "|java+constructor:///org/apache/bval/model/FeaturesCapable/FeaturesCapable()|",
+    "called": "|java+constructor:///org/apache/commons/collections/FastHashMap/FastHashMap()|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/collections/FastHashMap/setFast(boolean)|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+constructor:///org/apache/commons/collections/FastHashMap/FastHashMap()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/util/concurrent/locks/ReentrantLock/ReentrantLock(boolean)|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///org/apache/bval/model/FeaturesCapable/createFeaturesMap()|"
+    ],
+    "affectedLib": "commons-beanutils:commons-beanutils:1.8.3",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.apache.bval:bval-core:0.3-incubating",
+    "coordinatesV2": "org.apache.bval:bval-core:0.2-incubating",
+    "caller": "|java+method:///org/apache/bval/MetaBeanCache/findForClass(java.lang.Class)|",
+    "called": "|java+method:///org/apache/commons/collections/FastHashMap/get(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/collections/FastHashMap/get(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/concurrent/ConcurrentMap/get(java.lang.Object)|"
+    ],
+    "affectedLib": "commons-beanutils:commons-beanutils:1.8.3",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.apache.bval:bval-core:0.3-incubating",
+    "coordinatesV2": "org.apache.bval:bval-core:0.2-incubating",
+    "caller": "|java+method:///org/apache/bval/model/FeaturesCapable/getFeature(java.lang.String)|",
+    "called": "|java+method:///org/apache/commons/collections/FastHashMap/get(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/collections/FastHashMap/get(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/bval/model/FeaturesCapable/getFeature(java.lang.String,java.lang.Object)|"
+    ],
+    "affectedLib": "commons-beanutils:commons-beanutils:1.8.3",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.apache.bval:bval-core:0.3-incubating",
+    "coordinatesV2": "org.apache.bval:bval-core:0.2-incubating",
+    "caller": "|java+method:///org/apache/bval/model/FeaturesCapable/copyInto(org.apache.bval.model.FeaturesCapable)|",
+    "called": "|java+method:///org/apache/commons/collections/FastHashMap/clone()|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/collections/FastHashMap/clone()|",
+      "|java+method:///%5BLorg/apache/bval/model/Validation;/clone()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/concurrent/ConcurrentMap/putAll(java.util.Map)|",
+      "|java+method:///%5BLorg/apache/bval/model/Validation;/clone()|",
+      "|java+method:///org/apache/bval/model/FeaturesCapable/createFeaturesMap()|"
+    ],
+    "affectedLib": "commons-beanutils:commons-beanutils:1.8.3",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.apache.bval:bval-core:0.3-incubating",
+    "coordinatesV2": "org.apache.bval:bval-core:0.2-incubating",
+    "caller": "|java+method:///org/apache/bval/MetaBeanCache/cache(org.apache.bval.model.MetaBean)|",
+    "called": "|java+method:///org/apache/commons/collections/FastHashMap/put(java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/collections/FastHashMap/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///org/apache/bval/model/MetaBean/getBeanClass()|",
+      "|java+method:///org/apache/bval/model/MetaBean/getId()|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///java/lang/Class/getName()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/bval/model/MetaBean/getBeanClass()|",
+      "|java+method:///org/apache/bval/model/MetaBean/getId()|",
+      "|java+method:///java/util/concurrent/ConcurrentMap/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/util/concurrent/ConcurrentMap/putIfAbsent(java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///java/lang/Class/getName()|"
+    ],
+    "affectedLib": "commons-collections:commons-collections:3.2.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.apache.bval:bval-core:0.3-incubating",
+    "coordinatesV2": "org.apache.bval:bval-core:0.2-incubating",
+    "caller": "|java+constructor:///org/apache/bval/model/FeaturesCapable/FeaturesCapable()|",
+    "called": "|java+constructor:///org/apache/commons/collections/FastHashMap/FastHashMap()|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/collections/FastHashMap/setFast(boolean)|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+constructor:///org/apache/commons/collections/FastHashMap/FastHashMap()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/util/concurrent/locks/ReentrantLock/ReentrantLock(boolean)|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+method:///org/apache/bval/model/FeaturesCapable/createFeaturesMap()|"
+    ],
+    "affectedLib": "commons-collections:commons-collections:3.2.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.apache.bval:bval-core:0.3-incubating",
+    "coordinatesV2": "org.apache.bval:bval-core:0.2-incubating",
+    "caller": "|java+method:///org/apache/bval/MetaBeanCache/findForClass(java.lang.Class)|",
+    "called": "|java+method:///org/apache/commons/collections/FastHashMap/get(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/collections/FastHashMap/get(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/concurrent/ConcurrentMap/get(java.lang.Object)|"
+    ],
+    "affectedLib": "commons-collections:commons-collections:3.2.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.apache.bval:bval-core:0.3-incubating",
+    "coordinatesV2": "org.apache.bval:bval-core:0.2-incubating",
+    "caller": "|java+method:///org/apache/bval/model/FeaturesCapable/getFeature(java.lang.String,java.lang.Object)|",
+    "called": "|java+method:///org/apache/commons/collections/FastHashMap/containsKey(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/collections/FastHashMap/get(java.lang.Object)|",
+      "|java+method:///org/apache/commons/collections/FastHashMap/containsKey(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/concurrent/ConcurrentMap/containsKey(java.lang.Object)|",
+      "|java+method:///org/apache/bval/model/FeaturesCapable/acquireLockIfNeeded()|",
+      "|java+method:///java/util/concurrent/locks/ReentrantLock/unlock()|",
+      "|java+method:///java/util/concurrent/ConcurrentMap/get(java.lang.Object)|"
+    ],
+    "affectedLib": "commons-collections:commons-collections:3.2.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.apache.bval:bval-core:0.3-incubating",
+    "coordinatesV2": "org.apache.bval:bval-core:0.2-incubating",
+    "caller": "|java+method:///org/apache/bval/model/FeaturesCapable/putFeature(java.lang.String,java.lang.Object)|",
+    "called": "|java+method:///org/apache/commons/collections/FastHashMap/put(java.lang.Object,java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/collections/FastHashMap/put(java.lang.Object,java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/bval/model/FeaturesCapable/acquireLockIfNeeded()|",
+      "|java+method:///java/util/concurrent/ConcurrentMap/put(java.lang.Object,java.lang.Object)|",
+      "|java+method:///java/util/concurrent/locks/ReentrantLock/unlock()|"
+    ],
+    "affectedLib": "commons-collections:commons-collections:3.2.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.apache.bval:bval-core:0.3-incubating",
+    "coordinatesV2": "org.apache.bval:bval-core:0.2-incubating",
+    "caller": "|java+constructor:///org/apache/bval/MetaBeanCache/MetaBeanCache()|",
+    "called": "|java+constructor:///org/apache/commons/collections/FastHashMap/FastHashMap()|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/collections/FastHashMap/setFast(boolean)|",
+      "|java+constructor:///java/lang/Object/Object()|",
+      "|java+constructor:///org/apache/commons/collections/FastHashMap/FastHashMap()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/util/concurrent/ConcurrentHashMap/ConcurrentHashMap()|",
+      "|java+constructor:///java/lang/Object/Object()|"
+    ],
+    "affectedLib": "commons-collections:commons-collections:3.2.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.apache.bval:bval-core:0.3-incubating",
+    "coordinatesV2": "org.apache.bval:bval-core:0.2-incubating",
+    "caller": "|java+method:///org/apache/bval/MetaBeanCache/clear()|",
+    "called": "|java+method:///org/apache/commons/collections/FastHashMap/clear()|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/collections/FastHashMap/clear()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/concurrent/ConcurrentMap/clear()|"
+    ],
+    "affectedLib": "commons-collections:commons-collections:3.2.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.apache.bval:bval-core:0.3-incubating",
+    "coordinatesV2": "org.apache.bval:bval-core:0.2-incubating",
+    "caller": "|java+method:///org/apache/bval/MetaBeanCache/findForId(java.lang.String)|",
+    "called": "|java+method:///org/apache/commons/collections/FastHashMap/get(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/collections/FastHashMap/get(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/concurrent/ConcurrentMap/get(java.lang.Object)|"
+    ],
+    "affectedLib": "commons-collections:commons-collections:3.2.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.apache.bval:bval-core:0.3-incubating",
+    "coordinatesV2": "org.apache.bval:bval-core:0.2-incubating",
+    "caller": "|java+method:///org/apache/bval/model/FeaturesCapable/getFeature(java.lang.String)|",
+    "called": "|java+method:///org/apache/commons/collections/FastHashMap/get(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/collections/FastHashMap/get(java.lang.Object)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/bval/model/FeaturesCapable/getFeature(java.lang.String,java.lang.Object)|"
+    ],
+    "affectedLib": "commons-collections:commons-collections:3.2.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.apache.bval:bval-core:0.3-incubating",
+    "coordinatesV2": "org.apache.bval:bval-core:0.2-incubating",
+    "caller": "|java+method:///org/apache/bval/MetaBeanCache/removeFromCache(org.apache.bval.model.MetaBean)|",
+    "called": "|java+method:///org/apache/commons/collections/FastHashMap/remove(java.lang.Object)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/collections/FastHashMap/remove(java.lang.Object)|",
+      "|java+method:///org/apache/bval/model/MetaBean/getBeanClass()|",
+      "|java+method:///org/apache/bval/model/MetaBean/getId()|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///java/lang/Class/getName()|"
+    ],
+    "v2Body": [
+      "|java+method:///org/apache/bval/model/MetaBean/getBeanClass()|",
+      "|java+method:///java/util/concurrent/ConcurrentMap/remove(java.lang.Object)|",
+      "|java+method:///org/apache/bval/model/MetaBean/getId()|",
+      "|java+method:///java/lang/String/equals(java.lang.Object)|",
+      "|java+method:///java/lang/Class/getName()|"
+    ],
+    "affectedLib": "commons-collections:commons-collections:3.2.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.apache.bval:bval-core:0.3-incubating",
+    "coordinatesV2": "org.apache.bval:bval-core:0.2-incubating",
+    "caller": "|java+method:///org/apache/bval/model/FeaturesCapable/copyInto(org.apache.bval.model.FeaturesCapable)|",
+    "called": "|java+method:///org/apache/commons/collections/FastHashMap/clone()|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/collections/FastHashMap/clone()|",
+      "|java+method:///%5BLorg/apache/bval/model/Validation;/clone()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/util/concurrent/ConcurrentMap/putAll(java.util.Map)|",
+      "|java+method:///%5BLorg/apache/bval/model/Validation;/clone()|",
+      "|java+method:///org/apache/bval/model/FeaturesCapable/createFeaturesMap()|"
+    ],
+    "affectedLib": "commons-collections:commons-collections:3.2.1",
+    "change": "REMOVED"
+  },
+  {
+    "coordinatesV1": "org.apache.bval:bval-core:0.2-incubating",
+    "coordinatesV2": "org.apache.bval:bval-core:0.3-incubating",
+    "caller": "|java+initializer:///org/apache/bval/MetaBeanBuilder/MetaBeanBuilder$initializer|",
+    "called": "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|",
+    "v1Body": [
+      "|java+method:///org/apache/commons/logging/LogFactory/getLog(java.lang.Class)|"
+    ],
+    "v2Body": [
+      "|java+method:///org/slf4j/LoggerFactory/getLogger(java.lang.Class)|"
+    ],
+    "affectedLib": "org.slf4j:slf4j-api:1.6.1",
+    "change": "ADDED"
+  }
+]

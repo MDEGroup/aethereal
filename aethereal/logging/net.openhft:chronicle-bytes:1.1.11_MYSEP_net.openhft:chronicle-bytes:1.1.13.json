@@ -1,0 +1,186 @@
+[
+  {
+    "coordinatesV1": "net.openhft:chronicle-bytes:1.1.11",
+    "coordinatesV2": "net.openhft:chronicle-bytes:1.1.13",
+    "caller": "|java+method:///net/openhft/chronicle/bytes/MappedBytes/readCheckOffset(long,long)|",
+    "called": "|java+constructor:///net/openhft/chronicle/core/io/IORuntimeException/IORuntimeException(java.lang.Throwable)|",
+    "v1Body": [
+      "|java+constructor:///java/nio/BufferUnderflowException/BufferUnderflowException()|",
+      "|java+method:///net/openhft/chronicle/bytes/BytesStore/inside(long)|",
+      "|java+method:///net/openhft/chronicle/bytes/BytesStore/release()|",
+      "|java+method:///net/openhft/chronicle/bytes/MappedFile/acquireByteStore(long)|",
+      "|java+constructor:///net/openhft/chronicle/bytes/IORuntimeException/IORuntimeException(java.lang.Throwable)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/nio/BufferUnderflowException/BufferUnderflowException()|",
+      "|java+method:///net/openhft/chronicle/bytes/BytesStore/inside(long)|",
+      "|java+method:///net/openhft/chronicle/bytes/BytesStore/release()|",
+      "|java+constructor:///net/openhft/chronicle/core/io/IORuntimeException/IORuntimeException(java.lang.Throwable)|",
+      "|java+method:///net/openhft/chronicle/bytes/MappedFile/acquireByteStore(long)|"
+    ],
+    "affectedLib": "net.openhft:chronicle-core:1.1.8",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "net.openhft:chronicle-bytes:1.1.11",
+    "coordinatesV2": "net.openhft:chronicle-bytes:1.1.13",
+    "caller": "|java+method:///net/openhft/chronicle/bytes/RandomDataInput/readUtf8Limited(long,java.lang.Appendable,int)|",
+    "called": "|java+constructor:///net/openhft/chronicle/core/io/IORuntimeException/IORuntimeException(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///net/openhft/chronicle/bytes/BytesInternal/parseUTF(net.openhft.chronicle.bytes.RandomDataInput,long,java.lang.Appendable,int)|",
+      "|java+constructor:///java/lang/IllegalStateException/IllegalStateException(java.lang.String)|",
+      "|java+constructor:///net/openhft/chronicle/bytes/IORuntimeException/IORuntimeException(java.lang.String)|",
+      "|java+method:///net/openhft/chronicle/bytes/AppendableUtil/setLength(java.lang.Appendable,int)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+method:///java/lang/StringBuilder/append(long)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///net/openhft/chronicle/bytes/RandomDataInput/readByte(long)|",
+      "|java+method:///java/lang/StringBuilder/toString()|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/lang/IllegalStateException/IllegalStateException(java.lang.String)|",
+      "|java+method:///net/openhft/chronicle/bytes/AppendableUtil/setLength(java.lang.Appendable,int)|",
+      "|java+method:///java/lang/StringBuilder/append(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/append(int)|",
+      "|java+method:///java/lang/StringBuilder/append(long)|",
+      "|java+constructor:///java/lang/StringBuilder/StringBuilder()|",
+      "|java+method:///net/openhft/chronicle/bytes/RandomDataInput/readByte(long)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///net/openhft/chronicle/bytes/BytesInternal/parseUtf8(net.openhft.chronicle.bytes.RandomDataInput,long,java.lang.Appendable,int)|",
+      "|java+constructor:///net/openhft/chronicle/core/io/IORuntimeException/IORuntimeException(java.lang.String)|"
+    ],
+    "affectedLib": "net.openhft:chronicle-core:1.1.8",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "net.openhft:chronicle-bytes:1.1.11",
+    "coordinatesV2": "net.openhft:chronicle-bytes:1.1.13",
+    "caller": "|java+method:///net/openhft/chronicle/bytes/util/UTF8StringInterner/intern(net.openhft.chronicle.bytes.Bytes)|",
+    "called": "|java+method:///net/openhft/chronicle/core/pool/StringBuilderPool/acquireStringBuilder()|",
+    "v1Body": [
+      "|java+method:///net/openhft/chronicle/bytes/algo/BytesStoreHash/hash32(net.openhft.chronicle.bytes.Bytes)|",
+      "|java+method:///net/openhft/chronicle/core/Maths/toInt32(long)|",
+      "|java+method:///net/openhft/chronicle/bytes/Bytes/readPosition()|",
+      "|java+method:///net/openhft/chronicle/bytes/Bytes/readPosition(long)|",
+      "|java+method:///net/openhft/chronicle/bytes/Bytes/readRemaining()|",
+      "|java+method:///net/openhft/chronicle/bytes/Bytes/parseUTF(java.lang.Appendable,int)|",
+      "|java+method:///net/openhft/chronicle/bytes/Bytes/isEqual(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///net/openhft/chronicle/core/pool/StringBuilderPool/acquireStringBuilder()|"
+    ],
+    "v2Body": [
+      "|java+method:///net/openhft/chronicle/bytes/algo/BytesStoreHash/hash32(net.openhft.chronicle.bytes.Bytes)|",
+      "|java+method:///net/openhft/chronicle/core/Maths/toInt32(long)|",
+      "|java+method:///net/openhft/chronicle/bytes/Bytes/readPosition()|",
+      "|java+method:///net/openhft/chronicle/bytes/Bytes/parseUtf8(java.lang.Appendable,int)|",
+      "|java+method:///net/openhft/chronicle/bytes/Bytes/readPosition(long)|",
+      "|java+method:///net/openhft/chronicle/bytes/Bytes/readRemaining()|",
+      "|java+method:///net/openhft/chronicle/bytes/Bytes/isEqual(java.lang.String)|",
+      "|java+method:///java/lang/StringBuilder/toString()|",
+      "|java+method:///net/openhft/chronicle/core/pool/StringBuilderPool/acquireStringBuilder()|"
+    ],
+    "affectedLib": "net.openhft:chronicle-core:1.1.8",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "net.openhft:chronicle-bytes:1.1.11",
+    "coordinatesV2": "net.openhft:chronicle-bytes:1.1.13",
+    "caller": "|java+constructor:///net/openhft/chronicle/bytes/ConnectionDroppedException/ConnectionDroppedException(java.lang.String,java.lang.Throwable)|",
+    "called": "|java+constructor:///net/openhft/chronicle/core/io/IORuntimeException/IORuntimeException(java.lang.String,java.lang.Throwable)|",
+    "v1Body": [
+      "|java+constructor:///net/openhft/chronicle/bytes/IORuntimeException/IORuntimeException(java.lang.String,java.lang.Throwable)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///net/openhft/chronicle/core/io/IORuntimeException/IORuntimeException(java.lang.String,java.lang.Throwable)|"
+    ],
+    "affectedLib": "net.openhft:chronicle-core:1.1.8",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "net.openhft:chronicle-bytes:1.1.11",
+    "coordinatesV2": "net.openhft:chronicle-bytes:1.1.13",
+    "caller": "|java+method:///net/openhft/chronicle/bytes/MappedBytes/writeCheckOffset(long,long)|",
+    "called": "|java+constructor:///net/openhft/chronicle/core/io/IORuntimeException/IORuntimeException(java.lang.Throwable)|",
+    "v1Body": [
+      "|java+constructor:///java/nio/BufferOverflowException/BufferOverflowException()|",
+      "|java+method:///net/openhft/chronicle/bytes/BytesStore/inside(long)|",
+      "|java+method:///net/openhft/chronicle/bytes/BytesStore/release()|",
+      "|java+method:///net/openhft/chronicle/bytes/MappedFile/acquireByteStore(long)|",
+      "|java+constructor:///net/openhft/chronicle/bytes/IORuntimeException/IORuntimeException(java.lang.Throwable)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///java/nio/BufferOverflowException/BufferOverflowException()|",
+      "|java+method:///net/openhft/chronicle/bytes/BytesStore/inside(long)|",
+      "|java+method:///net/openhft/chronicle/bytes/BytesStore/release()|",
+      "|java+constructor:///net/openhft/chronicle/core/io/IORuntimeException/IORuntimeException(java.lang.Throwable)|",
+      "|java+method:///net/openhft/chronicle/bytes/MappedFile/acquireByteStore(long)|"
+    ],
+    "affectedLib": "net.openhft:chronicle-core:1.1.8",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "net.openhft:chronicle-bytes:1.1.11",
+    "coordinatesV2": "net.openhft:chronicle-bytes:1.1.13",
+    "caller": "|java+constructor:///net/openhft/chronicle/bytes/ConnectionDroppedException/ConnectionDroppedException(java.lang.String)|",
+    "called": "|java+constructor:///net/openhft/chronicle/core/io/IORuntimeException/IORuntimeException(java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///net/openhft/chronicle/bytes/IORuntimeException/IORuntimeException(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///net/openhft/chronicle/core/io/IORuntimeException/IORuntimeException(java.lang.String)|"
+    ],
+    "affectedLib": "net.openhft:chronicle-core:1.1.8",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "net.openhft:chronicle-bytes:1.1.11",
+    "coordinatesV2": "net.openhft:chronicle-bytes:1.1.13",
+    "caller": "|java+method:///net/openhft/chronicle/bytes/RandomDataInput/readUtf8(long,java.lang.Appendable)|",
+    "called": "|java+constructor:///net/openhft/chronicle/core/io/IORuntimeException/IORuntimeException(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///net/openhft/chronicle/bytes/BytesInternal/parseUTF(net.openhft.chronicle.bytes.RandomDataInput,long,java.lang.Appendable,int)|",
+      "|java+method:///net/openhft/chronicle/core/Maths/toUInt31(long)|",
+      "|java+constructor:///net/openhft/chronicle/bytes/IORuntimeException/IORuntimeException(java.lang.String)|",
+      "|java+method:///net/openhft/chronicle/bytes/AppendableUtil/setLength(java.lang.Appendable,int)|",
+      "|java+method:///net/openhft/chronicle/bytes/RandomDataInput/readByte(long)|"
+    ],
+    "v2Body": [
+      "|java+method:///net/openhft/chronicle/core/Maths/toUInt31(long)|",
+      "|java+method:///net/openhft/chronicle/bytes/AppendableUtil/setLength(java.lang.Appendable,int)|",
+      "|java+method:///net/openhft/chronicle/bytes/RandomDataInput/readByte(long)|",
+      "|java+method:///net/openhft/chronicle/bytes/BytesInternal/parseUtf8(net.openhft.chronicle.bytes.RandomDataInput,long,java.lang.Appendable,int)|",
+      "|java+constructor:///net/openhft/chronicle/core/io/IORuntimeException/IORuntimeException(java.lang.String)|"
+    ],
+    "affectedLib": "net.openhft:chronicle-core:1.1.8",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "net.openhft:chronicle-bytes:1.1.11",
+    "coordinatesV2": "net.openhft:chronicle-bytes:1.1.13",
+    "caller": "|java+constructor:///net/openhft/chronicle/bytes/UTFDataFormatRuntimeException/UTFDataFormatRuntimeException(java.lang.String)|",
+    "called": "|java+constructor:///net/openhft/chronicle/core/io/IORuntimeException/IORuntimeException(java.lang.String)|",
+    "v1Body": [
+      "|java+constructor:///net/openhft/chronicle/bytes/IORuntimeException/IORuntimeException(java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///net/openhft/chronicle/core/io/IORuntimeException/IORuntimeException(java.lang.String)|"
+    ],
+    "affectedLib": "net.openhft:chronicle-core:1.1.8",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "net.openhft:chronicle-bytes:1.1.11",
+    "coordinatesV2": "net.openhft:chronicle-bytes:1.1.13",
+    "caller": "|java+constructor:///net/openhft/chronicle/bytes/ConnectionDroppedException/ConnectionDroppedException(java.lang.Throwable)|",
+    "called": "|java+constructor:///net/openhft/chronicle/core/io/IORuntimeException/IORuntimeException(java.lang.Throwable)|",
+    "v1Body": [
+      "|java+constructor:///net/openhft/chronicle/bytes/IORuntimeException/IORuntimeException(java.lang.Throwable)|"
+    ],
+    "v2Body": [
+      "|java+constructor:///net/openhft/chronicle/core/io/IORuntimeException/IORuntimeException(java.lang.Throwable)|"
+    ],
+    "affectedLib": "net.openhft:chronicle-core:1.1.8",
+    "change": "UPDATED"
+  }
+]

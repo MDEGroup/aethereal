@@ -1,0 +1,134 @@
+[
+  {
+    "coordinatesV1": "ru.circumflex:circumflex-web:2.3",
+    "coordinatesV2": "ru.circumflex:circumflex-web:2.4",
+    "caller": "|java+method:///ru/circumflex/web/HttpRequest/originalUri()|",
+    "called": "|java+method:///ru/circumflex/core/package$/decodeURI(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///ru/circumflex/web/HttpRequest/raw()|",
+      "|java+method:///java/lang/String/length()|",
+      "|java+method:///ru/circumflex/web/HttpRequest/sessionId()|",
+      "|java+method:///java/lang/String/substring(int,int)|",
+      "|java+method:///java/lang/String/indexOf(java.lang.String)|",
+      "|java+constructor:///scala/collection/mutable/StringBuilder/StringBuilder()|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getRequestURI()|",
+      "|java+method:///java/net/URLDecoder/decode(java.lang.String,java.lang.String)|",
+      "|java+method:///scala/collection/mutable/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///scala/collection/mutable/StringBuilder/toString()|"
+    ],
+    "v2Body": [
+      "|java+method:///ru/circumflex/web/HttpRequest/raw()|",
+      "|java+method:///java/lang/String/length()|",
+      "|java+method:///ru/circumflex/web/HttpRequest/sessionId()|",
+      "|java+method:///java/lang/String/substring(int,int)|",
+      "|java+method:///java/lang/String/indexOf(java.lang.String)|",
+      "|java+constructor:///scala/collection/mutable/StringBuilder/StringBuilder()|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getRequestURI()|",
+      "|java+method:///scala/collection/mutable/StringBuilder/toString()|",
+      "|java+method:///scala/collection/mutable/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///ru/circumflex/core/package$/decodeURI(java.lang.String)|"
+    ],
+    "affectedLib": "ru.circumflex:circumflex-core:2.4",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "ru.circumflex:circumflex-web:2.3",
+    "coordinatesV2": "ru.circumflex:circumflex-web:2.4",
+    "caller": "|java+method:///ru/circumflex/web/HttpRequest/queryString()|",
+    "called": "|java+method:///ru/circumflex/core/package$/decodeURI(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///ru/circumflex/web/HttpRequest/raw()|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getQueryString()|",
+      "|java+method:///java/net/URLDecoder/decode(java.lang.String,java.lang.String)|"
+    ],
+    "v2Body": [
+      "|java+method:///ru/circumflex/web/HttpRequest/raw()|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getQueryString()|",
+      "|java+method:///ru/circumflex/core/package$/decodeURI(java.lang.String)|"
+    ],
+    "affectedLib": "ru.circumflex:circumflex-core:2.4",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "ru.circumflex:circumflex-web:2.3",
+    "coordinatesV2": "ru.circumflex:circumflex-web:2.4",
+    "caller": "|java+method:///ru/circumflex/web/HttpRequest/url()|",
+    "called": "|java+method:///ru/circumflex/core/package$/decodeURI(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///ru/circumflex/web/HttpRequest/raw()|",
+      "|java+method:///java/lang/StringBuffer/toString()|",
+      "|java+method:///java/net/URLDecoder/decode(java.lang.String,java.lang.String)|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getRequestURL()|"
+    ],
+    "v2Body": [
+      "|java+method:///ru/circumflex/web/HttpRequest/raw()|",
+      "|java+method:///java/lang/StringBuffer/toString()|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getRequestURL()|",
+      "|java+method:///ru/circumflex/core/package$/decodeURI(java.lang.String)|"
+    ],
+    "affectedLib": "ru.circumflex:circumflex-core:2.4",
+    "change": "UPDATED"
+  },
+  {
+    "coordinatesV1": "ru.circumflex:circumflex-web:2.3",
+    "coordinatesV2": "ru.circumflex:circumflex-web:2.4",
+    "caller": "|java+method:///ru/circumflex/web/CircumflexFilter/serveStatic(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,javax.servlet.FilterChain)|",
+    "called": "|java+method:///ru/circumflex/core/package$/decodeURI(java.lang.String)|",
+    "v1Body": [
+      "|java+method:///java/lang/Object/toString()|",
+      "|java+method:///javax/servlet/FilterConfig/getServletContext()|",
+      "|java+constructor:///ru/circumflex/web/CircumflexFilter$$anonfun$1/CircumflexFilter$$anonfun$1(ru.circumflex.web.CircumflexFilter)|",
+      "|java+method:///ru/circumflex/core/package$/cx()|",
+      "|java+constructor:///scala/collection/mutable/StringBuilder/StringBuilder()|",
+      "|java+method:///java/net/URLDecoder/decode(java.lang.String,java.lang.String)|",
+      "|java+method:///java/lang/String/startsWith(java.lang.String)|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getMethod()|",
+      "|java+method:///javax/servlet/ServletContext/getContextPath()|",
+      "|java+method:///scala/collection/mutable/StringBuilder/toString()|",
+      "|java+method:///java/lang/String/endsWith(java.lang.String)|",
+      "|java+method:///javax/servlet/RequestDispatcher/forward(javax.servlet.ServletRequest,javax.servlet.ServletResponse)|",
+      "|java+method:///ru/circumflex/web/package$/servletContext()|",
+      "|java+method:///javax/servlet/FilterChain/doFilter(javax.servlet.ServletRequest,javax.servlet.ServletResponse)|",
+      "|java+method:///java/lang/String/equalsIgnoreCase(java.lang.String)|",
+      "|java+method:///javax/servlet/ServletContext/getRealPath(java.lang.String)|",
+      "|java+method:///java/lang/String/length()|",
+      "|java+method:///ru/circumflex/web/package$/filterConfig()|",
+      "|java+method:///scala/collection/MapLike/getOrElse(java.lang.Object,scala.Function0)|",
+      "|java+constructor:///java/io/File/File(java.lang.String)|",
+      "|java+method:///java/lang/String/substring(int)|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getRequestURI()|",
+      "|java+method:///scala/collection/mutable/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///javax/servlet/ServletRequest/getRequestDispatcher(java.lang.String)|",
+      "|java+method:///java/io/File/isFile()|"
+    ],
+    "v2Body": [
+      "|java+method:///java/lang/Object/toString()|",
+      "|java+method:///javax/servlet/FilterConfig/getServletContext()|",
+      "|java+constructor:///ru/circumflex/web/CircumflexFilter$$anonfun$1/CircumflexFilter$$anonfun$1(ru.circumflex.web.CircumflexFilter)|",
+      "|java+method:///ru/circumflex/core/package$/cx()|",
+      "|java+constructor:///scala/collection/mutable/StringBuilder/StringBuilder()|",
+      "|java+method:///java/lang/String/startsWith(java.lang.String)|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getMethod()|",
+      "|java+method:///javax/servlet/ServletContext/getContextPath()|",
+      "|java+method:///scala/collection/mutable/StringBuilder/toString()|",
+      "|java+method:///java/lang/String/endsWith(java.lang.String)|",
+      "|java+method:///javax/servlet/RequestDispatcher/forward(javax.servlet.ServletRequest,javax.servlet.ServletResponse)|",
+      "|java+method:///ru/circumflex/web/package$/servletContext()|",
+      "|java+method:///javax/servlet/FilterChain/doFilter(javax.servlet.ServletRequest,javax.servlet.ServletResponse)|",
+      "|java+method:///java/lang/String/equalsIgnoreCase(java.lang.String)|",
+      "|java+method:///javax/servlet/ServletContext/getRealPath(java.lang.String)|",
+      "|java+method:///java/lang/String/length()|",
+      "|java+method:///ru/circumflex/web/package$/filterConfig()|",
+      "|java+method:///scala/collection/MapLike/getOrElse(java.lang.Object,scala.Function0)|",
+      "|java+constructor:///java/io/File/File(java.lang.String)|",
+      "|java+method:///java/lang/String/substring(int)|",
+      "|java+method:///javax/servlet/http/HttpServletRequest/getRequestURI()|",
+      "|java+method:///scala/collection/mutable/StringBuilder/append(java.lang.Object)|",
+      "|java+method:///javax/servlet/ServletRequest/getRequestDispatcher(java.lang.String)|",
+      "|java+method:///java/io/File/isFile()|",
+      "|java+method:///ru/circumflex/core/package$/decodeURI(java.lang.String)|"
+    ],
+    "affectedLib": "ru.circumflex:circumflex-core:2.4",
+    "change": "UPDATED"
+  }
+]
